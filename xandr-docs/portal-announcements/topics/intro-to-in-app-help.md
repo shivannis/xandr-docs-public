@@ -4,19 +4,19 @@ In some of our products, you can get help without leaving the application. Do yo
 
 Hover over the question mark in the top navigation bar and click **Open Documentation**.
 
-![Open Documentation](intro-to-in-app-help.dita)
+![Open Documentation](../images/intro-to-in-app-help/open-help.png)
 
 
 
 This opens a pop-up window that shows a list of topics related to where you are within the product. For example, in the image below we're on the **Create a New Line Item** screen, and the window is showing the topics "Create an Augmented Line Item," "Working with Line Items," and "Augmented Line Items \(ALI\)."
 
-![Help window with context-sensitive menu options](intro-to-in-app-help.dita)
+![Help window with context-sensitive menu options](../images/intro-to-in-app-help/csh-menu.png)
 
 
 
 Select a topic, then hover over the window to see options for viewing and navigating through the information.
 
-![Viewing and navigation options](intro-to-in-app-help.dita)
+![Viewing and navigation options](../images/intro-to-in-app-help/navigation.png)
 
 
 
@@ -24,13 +24,13 @@ There are three different window sizes: the smaller Default view, a slightly wid
 
 Use the search box to find help on anything within the product you're currently logged into. For example, if you're in Invest DSP, the search will be limited to Invest documentation. As you begin to type, you'll be presented with suggested topics. Or press **Enter** to see a full set of matching search results.
 
-![Search for help topics](intro-to-in-app-help.dita)
+![Search for help topics](../images/intro-to-in-app-help/search.png)
 
 
 
 If the window is hiding parts of the screen you can always close it, or simply drag it out of the way.
 
-![Move the help window](intro-to-in-app-help.dita)
+![Move the help window](../images/intro-to-in-app-help/move-window.gif)
 
 
 
