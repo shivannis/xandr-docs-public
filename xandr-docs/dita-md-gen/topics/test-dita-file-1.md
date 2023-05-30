@@ -70,7 +70,7 @@ Conditionalised Paragraph for product "Curate"
 
 |Sample HTTP Method|Sample Endpoint|Sample Description|
 |------------------|---------------|------------------|
-|GET|Sample endpoint|Sample description|
+|GET|Sample endpoint|Sample description `test paragraph`|
 |POST|Sample endpoint|Sample description|
 |PUT|Sample endpoint|Sample description**Default**: No<br>|
 
