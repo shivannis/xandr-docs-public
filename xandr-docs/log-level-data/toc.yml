@@ -5,11 +5,6 @@ items:
     href: log-level-data-feeds.md
   - name: Batch Log Level Data
     href: batch-log-level-data.md
-      items:
-      - name: Log Level Data - Protocol Buffers
-        href: log-level-data-protocol-buffers.md
-      - name: Log Level Data - Cloud Export
-        href: log-level-data-cloud-export.md
   - name: Auction Categories Feed
     href: auction-categories-feed.md
   - name: Auction Segment Feed
