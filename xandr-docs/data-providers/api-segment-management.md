@@ -1,0 +1,111 @@
+# API Segment Management
+
+<div class="body">
+
+<div class="section">
+
+## API Segment Management
+
+Data providers will need to use <span class="ph">Xandr</span>'s
+impression bus API (api.<span class="ph">adnxs</span>.com) to create,
+modify and delete segments. For any API interaction, you will need the
+following:
+
+1.  Authorization: see <a
+    href="https://docs.xandr.com/bundle/xandr-api/page/authentication-service.html"
+    class="xref" target="_blank">Authentication Service</a> 
+2.  Segment creation or modification: see <a
+    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    class="xref" target="_blank">Segment Service</a> 
+
+</div>
+
+<div class="section">
+
+## Best Practices
+
+When managing the data provider segments, the following best practices
+should be adhered to:
+
+- **Use codes**: Integration codes (the "code" field on the segment
+  service) allows a data provider to inject their own identifiers into
+  the <span class="ph">Xandr</span> backend. This allows users to be
+  added to segments using an alternative syntax, specifying the
+  integration code rather than the <span class="ph">Xandr</span> ID. The
+  primary benefit to using codes is that the API enforces unique code
+  values within a single member. If integration codes are utilized for
+  all data provider segments in a given
+  <span class="ph">Xandr</span> member's account, the uniqueness check
+  will ensure that duplicate segments are not created.
+- **Keep segment names consistent**: In general, data provider segments
+  use a consistent naming convention. This makes data provider segments
+  easier to find by allowing the user to search in
+  <span class="ph"></span> by data provider name or hierarchy structure.
+  The details of the naming convention are below:
+  - The name of the data provider is appended in parentheses, e.g.,
+    "Segment 1 (Data Provider Name)"
+  - Hierarchies are denoted using the greater than symbol ("\>"), e.g.,
+    "Parent Group \> Child Group (Data Provider Name)"
+  - The segment name must not be longer 255 characters, including the
+    data provider name. If a segment name with the data provider name
+    appended is longer than 255 characters, the segment name should be
+    truncated to fit the data provider name.
+    <div class="note tip">
+
+    <span class="tiptitle">Tip:</span> The "segment name" here
+    corresponds to the value of the `short_name` field in the JSON used
+    to create the segment (see <a
+    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    class="xref" target="_blank">Segment Service</a> for more
+    information).
+
+    </div>
+- **Specify an expiry time**: Many integrations will only consist of
+  adding users to segments and not removing users from segments. For
+  this reason, it is necessary to specify a period of time after which a
+  user will drop out of a segment if they are not added to that segment
+  prior to the expiration. If no expiration time is specified, a user
+  remains in the segment until they are explicitly removed or they purge
+  their cookies.
+- **Set max usersync pixels to 0**: (This is only relevant for audience
+  segments that are being placed on a page.) By default, all client-side
+  segment pixel calls will result in redirecting the user to a usersync
+  pixel for at least one of <span class="ph">Xandr</span>'s supply,
+  demand or data partners depending on the pixel rotation and the number
+  of times the user has already been synced in recent history. In order
+  to avoid this usersyncing process, set the "max_usersync_pixels"
+  parameter on the segment service to 0. This prevents the user from
+  being redirected from the segment pixel to the usersync pixel. Please
+  note that by setting this parameter to 0, it may limit the overlap
+  between available inventory and users in the data provider segments.
+  The usersync process enables communication about each user across
+  multiple platforms outside of <span class="ph">Xandr</span>, giving a
+  unified view of the user across a larger portion of internet traffic.
+  For more information, see "User ID Syncing" in
+  <span class="ph"></span> documentation (client login required).
+- **Make sure clients are targeting just your segments on a single
+  campaign**: Campaigns that are actively targeting segments belonging
+  to multiple data providers may have data billing issues down the line
+  because currently buyers only have visibility into campaign level
+  spend and impressions rather than segment level visibility into spend
+  and impressions within a campaign.
+
+</div>
+
+</div>
+
+<div class="related-links">
+
+<div class="familylinks">
+
+<div class="parentlink">
+
+**Parent topic:**
+<a href="creating-and-managing-segments.html" class="link">Creating and
+Managing Segments</a>
+
+</div>
+
+</div>
+
+</div>
