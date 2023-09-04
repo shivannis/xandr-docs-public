@@ -1,0 +1,14 @@
+- name: Get started
+  items:
+  - name: Overview
+    href: seller-tag.md
+  - name: Benefits of AST
+    href: benefits-of-ast.md
+  - name: Set Up Placements with AST
+    href: set-up-placements-with-ast.md
+  - name: Set Up AST Tags for Native Ad Types
+    href: set-up-ast-tags-for-native-ad-types.md
+  - name: Support Portal Documentation Integration
+    href: support-portal-integration.md
+- name: Ad-Tech References
+  href: ../ad-tech-references/TOC.yml
