@@ -2,7 +2,7 @@
   items:
    - name: Overview
      href: welcome-industry-reference.md
-   - name: Introduction to Ad Serving
+   - name: Ad Serving
      href: introduction-to-ad-serving.md
    - name: Ad Tags
      href: ad-tags.md
