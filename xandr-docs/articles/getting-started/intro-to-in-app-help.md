@@ -10,13 +10,13 @@ Hover over the question mark in the top navigation bar and click **Open Document
 
 This opens a pop-up window that shows a list of topics related to where you are within the product. For example, in the image below we're on the **Create a New Line Item** screen, and the window is showing the topics "Create an Augmented Line Item," "Working with Line Items," and "Augmented Line Items \(ALI\)."
 
-![Help window with context-sensitive menu options](../media/intro-to-in-app-help/csh-menu.png)
+![Help window with context-sensitive menu options](media/intro-to-in-app-help/csh-menu.png)
 
 
 
 Select a topic, then hover over the window to see options for viewing and navigating through the information.
 
-![Viewing and navigation options](../media/intro-to-in-app-help/navigation.png)
+![Viewing and navigation options](media/intro-to-in-app-help/navigation.png)
 
 
 
@@ -24,13 +24,13 @@ There are three different window sizes: the smaller Default view, a slightly wid
 
 Use the search box to find help on anything within the product you're currently logged into. For example, if you're in Invest DSP, the search will be limited to Invest documentation. As you begin to type, you'll be presented with suggested topics. Or press **Enter** to see a full set of matching search results.
 
-![Search for help topics](../media/intro-to-in-app-help/search.png)
+![Search for help topics](media/intro-to-in-app-help/search.png)
 
 
 
 If the window is hiding parts of the screen you can always close it, or simply drag it out of the way.
 
-![Move the help window](../media/intro-to-in-app-help/move-window.gif)
+![Move the help window](media/intro-to-in-app-help/move-window.gif)
 
 
 
