@@ -1,6 +1,5 @@
-- name: Getting Started
   items:
-  - name: Welcome to the Xandr Documentation Center
+  - name: Getting Started
     href: welcome-to-the-xandr-documentation-center.md
     items:
     - name: Tips on Finding What You Need
