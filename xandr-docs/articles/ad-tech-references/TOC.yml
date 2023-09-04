@@ -1,1 +1,7 @@
-
+- name: Getting Started
+    href: welcome-industry-reference.md
+    items:
+  - name: Seller Best Practices
+    href: seller-best-practices.md
+  - name: Publisher Best Practices for The Trade Desk
+    href: publisher-best-practices-for-the-trade-desk.md
