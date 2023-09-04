@@ -2,7 +2,6 @@
   items:
   - name: Getting Started
     href: welcome-to-the-xandr-documentation-center.md
-    expanded: true
     items:
     - name: Tips on Finding What You Need
       href: inding-content.md
