@@ -1,3 +1,11 @@
+---
+title: Creative Tutorial
+description: Understand the concepts regarding creatives.
+author: rupambaruah-xandr
+ms.author: rupambaruah
+ms.topic: article
+ms.date: 09/04/2023
+---
 # Creatives
 
 <div class="body">
