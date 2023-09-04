@@ -1,6 +1,6 @@
-- name: Overview
+- name: Get started
   items:
-  - name: Getting Started
+  - name: Overview
     href: welcome-to-the-xandr-documentation-center.md
   - name: Tips on Finding What You Need
     href: finding-content.md
