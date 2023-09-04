@@ -1,6 +1,6 @@
 - name: Getting Started
-    items:
-    - name: Overview
+  items:
+   - name: Overview
       href: welcome-industry-reference.md
     - name: Introduction to Ad Serving
       href: introduction-to-ad-serving.md
@@ -21,7 +21,7 @@
     - name: Mobile Advertising
       href: introduction-to-mobile-advertising.md
 - name: About Creatives
-    items:
+  items:
     - name: Overview
       href: creatives.md
     - name: Add a Microsoft Outlook Versatile Creative
@@ -39,19 +39,26 @@
     - name: Build an HTML5 Xandr Creative in Adobe Animate CC
       href: build-an-html5-xandr-creative-in-adobe-animate-cc.md
 - name: Video Inventory and Formats
-    items:
+  items:
     - name: Overview
       href: introduction-to-video-inventory-and-formats.md
     - name: MRAID and Mobile Video Tutorial
       href: mraid-and-mobile-video-tutorial.md
 - name: Online Advertising and Ad Tech Glossary
-    href: online-advertising-and-ad-tech-glossary.md
+  href: online-advertising-and-ad-tech-glossary.md
 - name: Online Advertising Self-Regulatory Organizations
-    href: online-advertising-self-regulatory-organizations.md
+  href: online-advertising-self-regulatory-organizations.md
 - name: Best Practices
-    items:
+  items:
     - name: Seller Best Practices
       href: seller-best-practices.md
     - name: Publisher Best Practices for The Trade Desk
       href: publisher-best-practices-for-the-trade-desk.md
-    
+- name: Industry Initiatives and Xandr
+  items:
+    - name: Xandr Support for Ads.txt and App-Ads.txt
+      href: xandr-support-for-ads-txt-and-app-ads-txt.md
+    - name: Ads.txt / App-Ads.txt FAQ for Buyers
+      href: ads-txt---app-ads-txt-faq-for-buyers.md
+    - name: Ads.txt / App-Ads.txt FAQ for Sellers
+      href: ads-txt---app-ads-txt-faq-for-sellers.md
