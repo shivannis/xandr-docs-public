@@ -1,25 +1,25 @@
 - name: Getting Started
   items:
    - name: Overview
-      href: welcome-industry-reference.md
-    - name: Introduction to Ad Serving
-      href: introduction-to-ad-serving.md
-    - name: Ad Tags
-      href: ad-tags.md
-    - name: Ways of Buying Ad Inventory
-      href: ways-of-buying-ad-inventory.md
-    - name: Under the Hood of Your Browser
-      href: under-the-hood-of-your-browser.md
-    - name: Impression Counting
-      href: impression-counting.md
-    - name: Viewability
-      href: introduction-to-viewability.md
-    - name: Cookies
-      href: cookies.md
-    - name: Header Requests
-      href: header-requests.md
-    - name: Mobile Advertising
-      href: introduction-to-mobile-advertising.md
+     href: welcome-industry-reference.md
+   - name: Introduction to Ad Serving
+     href: introduction-to-ad-serving.md
+   - name: Ad Tags
+     href: ad-tags.md
+   - name: Ways of Buying Ad Inventory
+     href: ways-of-buying-ad-inventory.md
+   - name: Under the Hood of Your Browser
+     href: under-the-hood-of-your-browser.md
+   - name: Impression Counting
+     href: impression-counting.md
+   - name: Viewability
+     href: introduction-to-viewability.md
+   - name: Cookies
+     href: cookies.md
+   - name: Header Requests
+     href: header-requests.md
+   - name: Mobile Advertising
+     href: introduction-to-mobile-advertising.md
 - name: About Creatives
   items:
     - name: Overview
