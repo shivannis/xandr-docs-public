@@ -4,7 +4,7 @@ In some of our products, you can get help without leaving the application. Do yo
 
 Hover over the question mark in the top navigation bar and click **Open Documentation**.
 
-![Open Documentation](../media/intro-to-in-app-help/open-help.png)
+![Open Documentation](media/intro-to-in-app-help/open-help.png)
 
 
 
