@@ -1,3 +1,11 @@
+---
+title: Xandr Documentation Center
+description: Find Xandr's public documentation on Invest DSP, Monetize SSP, Curate, Bidders, Digital Platform API, Mobile SDK, etc.
+ms.topic: article
+ms.date: 09/04/2016
+author: rupambaruah-xandr
+ms.author: rupambaruah
+---
 # Welcome to the Xandr Documentation Center 
 
 Welcome to the home of Xandr product documentation. Our goal is to deliver the most complete, accurate, and reliable information about Xandr and the ad tech industry while exceeding expectations related to customer experience, accessibility, quality, and innovation.
