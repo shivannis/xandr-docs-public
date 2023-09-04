@@ -2,6 +2,13 @@
 
 title: Xandr Platform Documentation
 summary: You will find here Xandr's public documentation on Invest DSP, Monetize SSP, Curate, Bidders, Digital Platform API, Mobile SDK, and much more.
+metadata:
+  title: Xandr Platform Documentation
+  description: Product and developer documentation of Xandr platform offerings.
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 09/04/2023
 
 landingContent:
   - title: Welcome to the Xandr Documentation Center
