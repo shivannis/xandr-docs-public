@@ -1,0 +1,43 @@
+### YamlMime:Landing
+
+title: Xandr Platform Documentation
+summary:You will find here Xandr's public documentation on Invest DSP, Monetize SSP, Curate, Bidders, Digital Platform API, Mobile SDK, and much more.
+
+landingContent:
+  - title: Welcome to the Xandr Documentation Center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Welcome to the Xandr Documentation Center
+            url: welcome-to-the-xandr-documentation-center.md
+      - linkListType: tutorial
+        links:            
+          - text: Tips on Finding What You Need
+            url: finding-content.md
+          - text: Introduction to Xandr In-App Help
+            url: intro-to-in-app-help.md
+          - text: Support Portal Documentation
+            url: support-portal-integration.md
+      - linkListType: whats-new
+        links:
+          - text: Platform updates
+            url: https://dummy-url.microsoft.com/updates/?product=app-service
+
+  - title: Ad Tech References
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Serving
+            url: ../ad-tech-references/introduction-to-ad-serving.md
+          - text: Ad Tags
+            url: ../ad-tech-references/ad-tags.md
+          - text: Cookies
+            url: ../ad-tech-references/cookies.md
+          - text: Mobile Advertising
+            url: ../ad-tech-references/introduction-to-mobile-advertising.md
+      - linkListType: tutorial
+        links:            
+          - text: Creatives
+            url: ../ad-tech-references/creatives.md
+          - text: Video Inventory and Formats
+            url: ../ad-tech-references/introduction-to-video-inventory-and-formats.md
