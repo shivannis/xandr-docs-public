@@ -75,7 +75,7 @@ See "I'm Not Finding What I'm Looking for When I Search" above for more informat
 
 ## Where are Support and Training? 
 
-We've provided links to them under the [Additional Resources](/category/more-info) tile. As this Documentation Center grows, we'll be adding more resources. Be sure to keep coming back to see what we've added!
+We've provided links to them under the [Additional Resources](https://docs.xandr.com/category/more-info) tile. As this Documentation Center grows, we'll be adding more resources. Be sure to keep coming back to see what we've added!
 
 ## Why Can't I Log In? 
 
