@@ -16,48 +16,16 @@ metadata:
   ms.date: 09/05/2023
   featureFlags:
   - clicktale
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
-  items:
-    # Card
-    - title: Get started for Azure developers
-      itemType: get-started
-      url: /azure/developer/
-    # Card
-    - title: Design your app using the Azure Architecture Center
-      itemType: architecture
-      url: /azure/architecture/
-    # Card
-    - title: Prepare your org with the Cloud Adoption Framework
-      itemType: overview
-      url: /azure/cloud-adoption-framework/
-    # Card
-    - title: Build your skills with Microsoft Learn training
-      itemType: learn
-      url: /training/browse/?products=azure&resource_type=learning%20path
-
 productDirectory:
   title: Browse Xandr Platform Offerings
   items:
-    # Card
-    # - title: Azure Percept
-      # summary: Edge intelligence from silicon to service
-      # imageSrc: ./media/index/azure-percept.svg
-      # azureCategories:
-       #  - iot
-     #  url: azure-percept/index.yml
-    # Card
     - title: Getting started
       summary: How to get started with using the new Xandr Platform Documentation Portal
       imageSrc: ai-services/media/service-icons/cognitive-services.svg
-      azureCategories:
-        - featured
-        - ai-machine-learning
-        - mobile
       url: getting-started/index.yml
     # Card
-    - title: Microsoft Invest
-      summary: Apply advanced coding and language models to a variety of use cases
+    - title: Microsoft Invest (*Powered by Xandr)
+      summary: Product documentation of Microsoft Invest (*Powered by Xandr)
       imageSrc: ai-services/openai/media/icon/azure-openai-dark.svg
       azureCategories:
         - featured
