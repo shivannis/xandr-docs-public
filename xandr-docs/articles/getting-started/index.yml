@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Xandr Platform Documentation
-summary: Here you will find documentation of Xandr’s platform offerings, products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences. The documentation includes concepts, how to guides and other artefacts about Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder UI, Digital Platform API, Mobile SDK, Seller Tag and much more.
+title: Getting started with Xandr Platform Documentation
+summary: How to navigate and maximum utilize the new and improved documentation portal.
 metadata:
-  title: Xandr Platform Documentation
-  description: Product and developer documentation of Xandr platform offerings.
+  title: Getting started
+  description: Getting started with Xandr Platform Documentation
   ms.topic: landing-page
   ms.author: rupambaruah
   ms.service: app-service
