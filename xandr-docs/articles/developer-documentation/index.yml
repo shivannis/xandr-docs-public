@@ -7,6 +7,7 @@ brand: azure
 metadata:
   title: Developer Documentation
   description: Developer Documentation help developers and organizations rapidly understand the technology behind the offerings of Xandr Platform by its product and services.
+  ms.service: cognitive-services
   ms.topic: hub-page
   author: rupambaruah-xandr
   ms.author: rupambaruah
