@@ -39,7 +39,7 @@ productDirectory:
     - title: Seller Tag
       imageSrc: ./media/001.jpeg
       summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
-      url: seller-tag/index.yml
+      url: ../seller-tag/index.yml
       # Card
     - title: Supply Partners
       imageSrc: ./media/001.jpeg
