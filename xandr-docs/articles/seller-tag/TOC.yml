@@ -1,3 +1,5 @@
+- name: Seller Tag
+  href: index.yml
 - name: Get started
   items:
   - name: Overview
@@ -10,5 +12,27 @@
     href: set-up-ast-tags-for-native-ad-types.md
   - name: Support Portal Documentation Integration
     href: support-portal-integration.md
-- name: Ad-Tech References
-  href: ../ad-tech-references/TOC.yml
+- name: AST API Reference
+  items:
+  - name: Overview
+    href: ast-api-reference.md
+  - name: Ad Object API
+    href: ad-object-api.md
+  - name: Attach Click Trackers
+    href: attach-click-trackers.md
+  - name: User Agent Client Hints
+    href: ast-client-hints-for-adserver.md
+  - name: Fire Impression Trackers
+    href: fire-impression-trackers.md
+- name: AST Video Capabilities
+  items:
+  - name: Overview
+    href: ast-video-capabilities.md
+  - name: Set Up On-Page Tags for Outstream Video
+    href: set-up-on-page-tags-for-outstream-video.md
+  - name: Publisher Page-Level Options for Outstream
+    href: publisher-page-level-options-for-outstream.md
+  - name: User Agent Client Hints
+    href: ast-client-hints-for-adserver.md
+  - name: Fire Impression Trackers
+    href: fire-impression-trackers.md
