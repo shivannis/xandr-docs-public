@@ -27,9 +27,8 @@ landingContent:
             url: support-portal-integration.md
       - linkListType: whats-new
         links:
-          - text: Platform updates
-            url: https://dummy-url.microsoft.com/updates/?product=app-service
-
+          - text: Xandr Insights
+            url: https://about.ads.microsoft.com/en-us/solutions/xandr/insights-case-studies-reports-spotlights
   - title: Ad Tech References
     linkLists:
       - linkListType: concept
