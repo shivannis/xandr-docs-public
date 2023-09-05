@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Xandr Platform Developer Documentation
-summary: Developer docs for Digital Platform, Impression BUS and Yield Analytics REST APIs, Mobile SDK, Seller Tag, Log Level Data, Supply Partners, Data Providers, Data Science Toolkit, etc.
+summary: Developer docs for Digital Platform, Impression Bus and Yield Analytics REST APIs, Mobile SDK, Seller Tag, Log Level Data, Supply Partners, Data Providers, Data Science Toolkit, etc.
 brand: azure
 
 metadata:
@@ -26,12 +26,37 @@ productDirectory:
       summary: Knowledge base for the REST API services of Xandr's Digital Platform APIs
       url: https://docs.xandr.com/bundle/xandr-api/page/digital-platform-api-home.html
     # Card
+    - title: Impression Bus API
+      imageSrc: media/001.jpeg
+      summary: Knowledge base for the REST API services of Xandr's Bidder APIs
+      url: https://docs.xandr.com/bundle/xandr-bidders/page/impression-bus-api.html
+      # Card
     - title: Impression BUS API
       imageSrc: media/001.jpeg
       summary: Knowledge base for the REST API services of Xandr's Bidder APIs
       url: https://docs.xandr.com/bundle/xandr-bidders/page/impression-bus-api.html
     # Card
     - title: Seller Tag
+      imageSrc: ./media/001.jpeg
+      summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
+      url: ./language-service/index.yml
+      # Card
+    - title: Supply Partners
+      imageSrc: ./media/001.jpeg
+      summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
+      url: ./language-service/index.yml
+      # Card
+    - title: Mobile SDK
+      imageSrc: ./media/001.jpeg
+      summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
+      url: ./language-service/index.yml
+      # Card
+    - title: Log Level Data Feeds
+      imageSrc: ./media/001.jpeg
+      summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
+      url: ./language-service/index.yml
+      # Card
+    - title: Data Providers
       imageSrc: ./media/001.jpeg
       summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
       url: ./language-service/index.yml
