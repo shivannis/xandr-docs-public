@@ -22,7 +22,6 @@ productDirectory:
   items:
     # Card
     - title: Digital Platform API
-      imageSrc: ./media/001.jpeg
       summary: Knowledge base for the REST API services of Xandr's Digital Platform APIs
       url: ./openai/index.yml
     # Card
