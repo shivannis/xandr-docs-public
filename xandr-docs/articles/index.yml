@@ -21,7 +21,7 @@ productDirectory:
   items:
     - title: Getting started
       summary: How to get started with using the new Xandr Platform Documentation Portal
-      imageSrc: ai-services/media/service-icons/cognitive-services.svg
+      imageSrc: media/001.jpeg
       url: getting-started/index.yml
     # Card
     - title: Microsoft Invest (*Powered by Xandr)
