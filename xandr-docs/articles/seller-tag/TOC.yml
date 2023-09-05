@@ -20,6 +20,8 @@
     href: ad-object-api.md
   - name: Attach Click Trackers
     href: attach-click-trackers.md
+  - name: Define Tag
+    href: define-tag.md
   - name: User Agent Client Hints
     href: ast-client-hints-for-adserver.md
   - name: Fire Impression Trackers
