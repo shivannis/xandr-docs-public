@@ -21,25 +21,19 @@ productDirectory:
   items:
     # Card
     - title: Digital Platform API
+      imageSrc: ./media/001.jpeg
       summary: Knowledge base for the REST API services of Xandr's Digital Platform APIs
       url: ./openai/index.yml
     # Card
     - title: Impression BUS API
+      imageSrc: ./media/001.jpeg
       summary: Knowledge base for the REST API services of Xandr's Bidder APIs
       url: ./speech-service/index.yml
     # Card
     - title: Seller Tag
-      imageSrc: ./media/service-icons/language.svg
+      imageSrc: ./media/001.jpeg
       summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
       url: ./language-service/index.yml
-    # Card
-    - title: Mobile SDK
-      summary: Guidebook about the Mobile SDKs that give app developers a fast, convenient way to monetize their apps.
-      url: ./translator/index.yml
-    # Card
-    - title: Log Level Data
-      summary: Technical content about Log Level Data (LLD) feeds that contain event-level data that enables you to build custom reporting and conduct in-depth analysis.
-      url: ./computer-vision/index.yml
 
 additionalContent:
   sections:
