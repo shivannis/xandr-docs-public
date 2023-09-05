@@ -31,7 +31,7 @@ productDirectory:
       summary: Knowledge base for the REST API services of Xandr's Bidder APIs
       url: https://docs.xandr.com/bundle/xandr-bidders/page/impression-bus-api.html
       # Card
-    - title: Impression BUS API
+    - title: Yield Analytics API
       imageSrc: media/001.jpeg
       summary: Knowledge base for the REST API services of Xandr's Bidder APIs
       url: https://docs.xandr.com/bundle/xandr-bidders/page/impression-bus-api.html
