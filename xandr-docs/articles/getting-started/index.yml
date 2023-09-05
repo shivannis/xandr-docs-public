@@ -47,9 +47,9 @@ landingContent:
             url: ../ad-tech-references/creatives.md
           - text: Video Inventory and Formats
             url: ../ad-tech-references/introduction-to-video-inventory-and-formats.md
-      - title: Xandr and Ad Tech Industry
+    - title: Xandr and Ad Tech Industry
         linkLists:
-          - linkListType: reference
+          - linkListType: concept
             links:            
               - text: Support for Ads.txt and App-Ads.txt
                 url: ../ad-tech-references/xandr-support-for-ads-txt-and-app-ads-txt.md
