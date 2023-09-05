@@ -47,21 +47,21 @@ landingContent:
             url: ../ad-tech-references/creatives.md
           - text: Video Inventory and Formats
             url: ../ad-tech-references/introduction-to-video-inventory-and-formats.md
-    - title: Industry Initiatives and Xandr
-    linkLists:
-      - linkListType: concept
-        links:            
-          - text: Support for Ads.txt and App-Ads.txt
-            url: ../ad-tech-references/xandr-support-for-ads-txt-and-app-ads-txt.md
-          - text: Online Advertising and Ad Tech Glossary
-            url: ../ad-tech-references/online-advertising-and-ad-tech-glossary.md
-          - text: Cookies
-            url: ../ad-tech-references/cookies.md
-          - text: Online Advertising Self-Regulatory Organizations
-            url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
-      - linkListType: concept
-        links:            
-          - text: Seller Best Practices
-            url: ../ad-tech-references/seller-best-practices.md
-          - text: Publisher Best Practices for The Trade Desk
-            url: ../ad-tech-references/publisher-best-practices-for-the-trade-desk.md
+      - title: Industry Initiatives and Xandr
+        linkLists:
+          - linkListType: concept
+            links:            
+              - text: Support for Ads.txt and App-Ads.txt
+                url: ../ad-tech-references/xandr-support-for-ads-txt-and-app-ads-txt.md
+              - text: Online Advertising and Ad Tech Glossary
+                url: ../ad-tech-references/online-advertising-and-ad-tech-glossary.md
+              - text: Cookies
+                url: ../ad-tech-references/cookies.md
+              - text: Online Advertising Self-Regulatory Organizations
+                url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
+          - linkListType: tutorial
+            links:            
+               - text: Seller Best Practices
+                 url: ../ad-tech-references/seller-best-practices.md
+               - text: Publisher Best Practices for The Trade Desk
+                 url: ../ad-tech-references/publisher-best-practices-for-the-trade-desk.md
