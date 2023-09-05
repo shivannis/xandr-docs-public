@@ -1,0 +1,69 @@
+### YamlMime:Hub
+
+title: Developer Documentation
+summary: Developer docs for Digital Platform, Impression BUS and Yield Analytics REST APIs, Mobile SDK, Seller Tag, Log Level Data, Supply Partners, Data Providers, Data Science Toolkit, etc.
+brand: azure
+
+metadata:
+  title: Developer Documentation
+  description: Developer Documentation help developers and organizations rapidly understand the technology behind the offerings of Xandr Platform by its product and services.
+  ms.topic: hub-page
+  author: rupambaruah-xandr
+  ms.author: rupambaruah
+  manager: prasenjitdey
+  ms.date: 7/18/2023
+
+# productDirectory section 
+productDirectory:
+  #title:  # < 60 chars (optional)
+  #summary:  # < 160 chars (optional)
+  # imageSrc should be square in ratio with no whitespace
+  items:
+    # Card
+    - title: Digital Platform API
+      summary: Knowledge base for the REST API services of Xandr's Digital Platform APIs
+      url: ./openai/index.yml
+    # Card
+    - title: Impression BUS API
+      summary: Knowledge base for the REST API services of Xandr's Bidder APIs
+      url: ./speech-service/index.yml
+    # Card
+    - title: Seller Tag
+      imageSrc: ./media/service-icons/language.svg
+      summary: Technical documentation of AST, a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page.
+      url: ./language-service/index.yml
+    # Card
+    - title: Mobile SDK
+      summary: Guidebook about the Mobile SDKs that give app developers a fast, convenient way to monetize their apps.
+      url: ./translator/index.yml
+    # Card
+    - title: Log Level Data
+      summary: Technical content about Log Level Data (LLD) feeds that contain event-level data that enables you to build custom reporting and conduct in-depth analysis.
+      url: ./computer-vision/index.yml
+
+additionalContent:
+  sections:
+    - title: Additional resources
+      items:
+        - title: OTT and CTV Video Integrations
+          links:
+            - text: AppleTV SDK Integration Guide
+              url: https://oai.azure.com/
+        - title: Data Science Toolkit
+          links:
+            - text: Custom Model
+              url: ../machine-learning/index.yml
+            - text: The Bonsai Language
+              url: /semantic-kernel/
+            - text: Incrementality
+              url: /ai-builder/
+        - title: Customer Support
+          links:
+            - text: Client Services
+              url: /ai/
+            - text: Email Communications
+              url: /training/paths/responsible-ai-business-principles/
+            - text: Customer Support Portal Guide
+              url: /training/browse/?resource_type=learning%20path&expanded=data-ai&subjects=artificial-intelligence
+            - text: AI Engineer career path
+              url: /training/career-paths/ai-engineer
