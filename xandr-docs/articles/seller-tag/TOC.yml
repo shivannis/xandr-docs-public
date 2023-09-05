@@ -12,7 +12,7 @@
     href: set-up-ast-tags-for-native-ad-types.md
   - name: Support Portal Documentation Integration
     href: support-portal-integration.md
-- name: AST API Reference
+- name: API Reference Documentation
   items:
   - name: Overview
     href: ast-api-reference.md
@@ -24,7 +24,7 @@
     href: ast-client-hints-for-adserver.md
   - name: Fire Impression Trackers
     href: fire-impression-trackers.md
-- name: AST Video Capabilities
+- name: Video Capabilities
   items:
   - name: Overview
     href: ast-video-capabilities.md
