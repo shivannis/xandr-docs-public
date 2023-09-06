@@ -80,10 +80,3 @@ productDirectory:
       azureCategories:
         - ai-machine-learning
       url: ai-services/anomaly-detector/index.yml
-productDirectory:
-  title: Browse Xandr Platform Offerings
-  items:
-    - title: Getting started
-      summary: How to get started with using the new Xandr Platform Documentation Portal
-      imageSrc: media/001.jpeg
-      url: getting-started/index.yml
