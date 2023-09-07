@@ -73,7 +73,7 @@ additionalContent:
           summary: lorem ipsum
           url: /azure/china/
     - title: Policies and Regulations
-     - items: 
+      items: 
         # Card
         - title: Service Policies
           summary: lorem ipsum
