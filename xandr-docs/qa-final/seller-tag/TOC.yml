@@ -1,0 +1,88 @@
+- name: Seller Tag
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    href: seller-tag.md
+  - name: Benefits of AST
+    href: benefits-of-ast.md
+  - name: Set Up Placements with AST
+    href: set-up-placements-with-ast.md
+  - name: Set Up AST Tags for Native Ad Types
+    href: set-up-ast-tags-for-native-ad-types.md
+  - name: AST Browser Support
+    href: ast-browser-support.md
+  - name: SafeFrame API Reference
+    href: safeframe-api-reference.md
+- name: API Reference Documentation
+  items:
+  - name: Overview
+    href: ast-api-reference.md
+  - name: Ad Object API
+    href: ad-object-api.md
+  - name: Attach Click Trackers
+    href: attach-click-trackers.md
+  - name: Clear Request
+    href: clear-request.md
+  - name: Define Tag
+    href: define-tag.md
+  - name: Enable Cookie Set
+    href: enable-cookie-set.md
+  - name: Fire Impression Trackers
+    href: fire-impression-trackers.md
+  - name: Get AST Version
+    href: get-ast-version.md
+  - name: Get Tag
+    href: get-tag.md
+  - name: Load Tags
+    href: load-tags.md
+  - name: Modify Tag
+    href: modify-tag.md
+  - name: Notify
+    href: notify.md
+  - name: Off Event
+    href: off-event.md
+  - name: On Event
+    href: on-event.md
+  - name: Push
+    href: push.md
+  - name: Refresh
+    href: refresh.md
+  - name: Resize Ad
+    href: resize-ad.md
+  - name: Set Endpoint
+    href: set-endpoint.md
+  - name: Resize Ad
+    href: resize-ad.md
+  - name: Set Keywords
+    href: set-keywords.md
+  - name: Set Page Options
+    href: set-page-options.md
+  - name: Set SafeFrame Configuration
+    href: set-safeframe-configuration.md
+  - name: Show Tag
+    href: show-tag.md
+  - name: User Agent Client Hints
+    href: ast-client-hints-for-adserver.md
+  - name: User Sync
+    href: user-sync.md
+- name: Video Capabilities
+  items:
+  - name: Overview
+    href: ast-video-capabilities.md
+  - name: Set Up On-Page Tags for Outstream Video
+    href: set-up-on-page-tags-for-outstream-video.md
+  - name: Set Up On-Page Tags for Bannerstream Video
+    href: set-up-on-page-tags-for-bannerstream-video.md
+  - name: Publisher Page-Level Options for Outstream
+    href: publisher-page-level-options-for-outstream.md
+  - name: Native Video with AST
+    href: native-video-with-ast.md
+  - name: Native Ad Video Player
+    href: native-ad-video-player.md
+- name: Release History and Breaking Changes
+  items:
+  - name: AST Release History
+    href: ast-release-history.md
+  - name: Breaking Changes
+    href: breaking-changes-ast-api.md
