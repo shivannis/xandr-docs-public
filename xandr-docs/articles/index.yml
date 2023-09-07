@@ -52,4 +52,34 @@ productDirectory:
       azureCategories:
         - ai-machine-learning
       url: ai-services/translator/index.yml
+additionalContent:
+  sections:
+    - title: Developer Documentation
+      items:
+        # Card
+        - title: Digital Platform API
+          summary: Developer documentation for Digital Platform REST APIs.
+          url: azure-government/index.yml
+        # Card
+        - title: Impression Bus API
+          summary: lorem ipsum
+          url: /azure/china/
+        # Card
+        - title: Seller Tag
+          summary: lorem ipsum
+          url: /azure/china/
+        # Card
+        - title: Mobile SDK
+          summary: lorem ipsum
+          url: /azure/china/
+    - title: Policies and Regulations
+     - items: 
+        # Card
+        - title: Service Policies
+          summary: lorem ipsum
+          url: ./partner-solutions/index.yml
+        # Card
+        - title: Disclosures
+          summary: lorem ipsum
+          url: ./marketplace/index.yml
     
