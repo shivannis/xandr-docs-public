@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Xandr Platform Documentation
-summary: Here you will find documentation of Xandr’s platform offerings, products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
+summary: Find documentation of Xandr’s platform offerings, products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
 ### brand: azure
 
 metadata:
@@ -26,60 +26,102 @@ productDirectory:
     # Card
     - title: Microsoft Invest
       summary: Product documentation of Microsoft Invest (*Powered by Xandr)
-      imageSrc: ai-services/openai/media/icon/azure-openai-dark.svg
-      azureCategories:
-        - featured
-        - ai-machine-learning
-      url: ai-services/openai/index.yml
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
     # Card
     - title: Microsoft Monetize
       summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
-      imageSrc: ai-services/media/service-icons/speech.svg
-      azureCategories:
-        - ai-machine-learning
-      url: ./ai-services/speech-service/index.yml
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
     # Card
     - title: Microsoft Curate
       summary: Product documentation of Microsoft Curate (*Powered by Xandr)
-      imageSrc: ai-services/media/service-icons/language.svg
-      azureCategories:
-        - ai-machine-learning
-      url: ai-services/language-service/index.yml
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
     # Card
     - title: Release Notes
-      summary: Documentation outlining latest updates and product features releases for Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
-      imageSrc: ai-services/media/service-icons/translator.svg
-      azureCategories:
-        - ai-machine-learning
-      url: ai-services/translator/index.yml
+      summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
 additionalContent:
   sections:
-    - title: Developer Documentation
+    - title: Bidder UI
+      items:
+        # Card
+        - title: Bidder Platform User Interface
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Platform Operations
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Integrate a Bidder
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+    - title: Developer Resources
       items:
         # Card
         - title: Digital Platform API
-          summary: Developer documentation for Digital Platform REST APIs.
-          url: azure-government/index.yml
+          summary: Developer documentation about Digital Platform REST API services used by Miceosoft Invest, Monetize and Curate
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
         # Card
         - title: Impression Bus API
-          summary: lorem ipsum
-          url: /azure/china/
+          summary: Developer documentation about Impression Bus REST API services used by Bidders
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Yield Analytics API
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
         # Card
         - title: Seller Tag
-          summary: lorem ipsum
-          url: /azure/china/
+          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
         # Card
         - title: Mobile SDK
-          summary: lorem ipsum
-          url: /azure/china/
+          summary: Developer documentation for app developers to facilitate a fast, convenient way to monetize their apps
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Log Level Data Feeds
+          summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Supply Partners
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
+        # Card
+        - title: Data Providers
+          summary: Lorem Ipsum
+          imageSrc: media/001.jpeg
+          url: getting-started/index.yml
     - title: Policies and Regulations
       items: 
         # Card
         - title: Service Policies
           summary: lorem ipsum
-          url: ./partner-solutions/index.yml
+          url: getting-started/index.yml
         # Card
         - title: Disclosures
           summary: lorem ipsum
-          url: ./marketplace/index.yml
+          url: getting-started/index.yml
+    - title: Customer Support, Training and Enablement
+      items: 
+        # Card
+        - title: Customer Support Portal Guide
+          summary: lorem ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: Training and Enablement
+          summary: lorem ipsum
+          url: getting-started/index.yml
     
