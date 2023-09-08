@@ -122,13 +122,3 @@ additionalContent:
         - title: Disclosures
           summary: lorem ipsum
           url: getting-started/index.yml
-    - title: Customer Support, Training and Enablement
-      items: 
-        # Card
-        - title: Customer Support Portal Guide
-          summary: lorem ipsum
-          url: getting-started/index.yml
-        # Card
-        - title: Training and Enablement
-          summary: lorem ipsum
-          url: getting-started/index.yml
