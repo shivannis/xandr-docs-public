@@ -43,9 +43,10 @@ productDirectory:
       summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
       imageSrc: media/001.jpeg
       url: getting-started/index.yml
+      
 tools:
   title: Bidder UI
-      items:
+  items:
         # Card
         - title: Bidder Platform User Interface
           summary: Lorem Ipsum
