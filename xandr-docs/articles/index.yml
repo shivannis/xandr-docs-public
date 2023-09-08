@@ -45,20 +45,15 @@ productDirectory:
       url: getting-started/index.yml
       
 tools:
-  title: Bidder UI
+  title: Languages and tools
   items:
-        # Card
-        - title: Bidder Platform User Interface
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Platform Operations
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Integrate a Bidder
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
+    # Card
+    - title: Bidder Platform User Interface
+      summary: Lorem Ipsum
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
+    # Card
+    - title: Platform Operations
+      summary: Lorem Ipsum
+      imageSrc: media/001.jpeg
+      url: getting-started/index.yml
