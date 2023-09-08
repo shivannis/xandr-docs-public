@@ -19,17 +19,17 @@ metadata:
 highlightedContent:
   items:
     # Card
-    - title: Getting started
+    - title: Welcome to Xandr Platform Documentation
       itemType: get-started
       url: getting-started/index.yml
     # Card
-    - title: What's new
-      itemType: whats-new
-      url: get-started/whats-new/whats-new-home-page.md
-    # Card
-    - title: Training
+    - title: Training and Enablement
       itemType: training
-      url: etting-started/index.yml
+      url: getting-started/index.yml
+    # Card
+    - title: Customer Support Portal Guide
+      itemType: tutorial
+      url: getting-started/index.yml
 productDirectory:
   title: Browse Product Offerings
   items:
