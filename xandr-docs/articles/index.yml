@@ -43,9 +43,8 @@ productDirectory:
       summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
       imageSrc: media/001.jpeg
       url: getting-started/index.yml
-additionalContent:
-  sections:
-    - title: Bidder UI
+tools:
+  title: Bidder UI
       items:
         # Card
         - title: Bidder Platform User Interface
@@ -62,66 +61,3 @@ additionalContent:
           summary: Lorem Ipsum
           imageSrc: media/001.jpeg
           url: getting-started/index.yml
-    - title: Developer Resources
-      items:
-        # Card
-        - title: Digital Platform API
-          summary: Developer documentation about Digital Platform REST API services used by Miceosoft Invest, Monetize and Curate
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Impression Bus API
-          summary: Developer documentation about Impression Bus REST API services used by Bidders
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Yield Analytics API
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Seller Tag
-          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Mobile SDK
-          summary: Developer documentation for app developers to facilitate a fast, convenient way to monetize their apps
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Log Level Data Feeds
-          summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Supply Partners
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-        # Card
-        - title: Data Providers
-          summary: Lorem Ipsum
-          imageSrc: media/001.jpeg
-          url: getting-started/index.yml
-    - title: Policies and Regulations
-      items: 
-        # Card
-        - title: Service Policies
-          summary: lorem ipsum
-          url: getting-started/index.yml
-        # Card
-        - title: Disclosures
-          summary: lorem ipsum
-          url: getting-started/index.yml
-    - title: Customer Support, Training and Enablement
-      items: 
-        # Card
-        - title: Customer Support Portal Guide
-          summary: lorem ipsum
-          url: getting-started/index.yml
-        # Card
-        - title: Training and Enablement
-          summary: lorem ipsum
-          url: getting-started/index.yml
-    
