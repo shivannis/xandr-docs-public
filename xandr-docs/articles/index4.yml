@@ -87,9 +87,13 @@ additionalContent:
         # Card
         - title: Digital Platform API
           links:
+            - text: API Getting Started
+              url: getting-started/index.yml
             - text: Process Guides
               url: getting-started/index.yml
             - text: References
+              url: getting-started/index.yml
+            - text: Xandr API Support
               url: getting-started/index.yml
         # Card
         - title: Impression Bus API
