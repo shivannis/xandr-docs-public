@@ -106,11 +106,21 @@ additionalContent:
         - title: Log Level Data Feeds
           summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
           url: getting-started/index.yml
+    - title: Additional Resources
+      items:
         # Card
         - title: Supply Partners
           summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
         - title: Data Providers
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: Data Science Toolkit
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: OTT and CTV Video Integrations
           summary: Lorem Ipsum
           url: getting-started/index.yml
