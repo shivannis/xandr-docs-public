@@ -45,7 +45,7 @@ productDirectory:
     # Card
     - title: Microsoft Monetize
       summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
-      imageSrc: media/001.jpeg
+      imageSrc: media/cognitive-services.svg
       url: getting-started/index.yml
     # Card
     - title: Microsoft Curate
