@@ -37,10 +37,6 @@ highlightedContent:
 productDirectory:
   title: Browse Product Offerings
   items:
-    - title: Getting started
-      summary: How to get started with using the new Xandr Platform Documentation Portal
-      imageSrc: media/001.jpeg
-      url: getting-started/index.yml
     # Card
     - title: Microsoft Invest
       summary: Product documentation of Microsoft Invest (*Powered by Xandr)
