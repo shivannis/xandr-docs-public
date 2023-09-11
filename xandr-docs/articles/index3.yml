@@ -92,6 +92,10 @@ additionalContent:
         - title: Yield Analytics API
           summary: Lorem Ipsum
           url: getting-started/index.yml
+        # Card
+        - title: API Release Notes
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
     - title: Developer Documentation
       items:
         # Card
