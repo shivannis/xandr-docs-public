@@ -45,17 +45,17 @@ productDirectory:
     # Card
     - title: Microsoft Monetize
       summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
-      imageSrc: media/cognitive-services.svg
+      imageSrc: https://static.docs.com/ui/media/product/azure/functions.svg
       url: getting-started/index.yml
     # Card
     - title: Microsoft Curate
       summary: Product documentation of Microsoft Curate (*Powered by Xandr)
-      imageSrc: media/001.jpeg
+      imageSrc: https://static.docs.com/ui/media/product/azure/logic-apps.svg
       url: getting-started/index.yml
     # Card
     - title: Release Notes
       summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
-      imageSrc: media/001.jpeg
+      imageSrc: https://static.docs.com/ui/media/product/azure/cloud-services.svg
       url: getting-started/index.yml
       
 additionalContent:
