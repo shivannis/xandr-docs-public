@@ -78,7 +78,7 @@ additionalContent:
         - title: Integrate a Bidder
           summary: Lorem Ipsum
           url: getting-started/index.yml
-    - title: API Reference Documentation
+    - title: API References
       items:
         # Card
         - title: Digital Platform API
@@ -106,8 +106,6 @@ additionalContent:
         - title: Log Level Data Feeds
           summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
           url: getting-started/index.yml
-    - title: Additional Resources
-      items:
         # Card
         - title: Supply Partners
           summary: Lorem Ipsum
