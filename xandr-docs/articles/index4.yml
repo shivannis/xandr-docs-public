@@ -68,19 +68,19 @@ additionalContent:
       items:
         # Card
         - title: Bidder Platform User Interface
-          summary: Documentation explaining how to use Bidder UI tool to manage bidder integrations.
+          summary: Documentation explaining how to use Bidder UI tool to manage bidder integrations
           url: getting-started/index.yml
         # Card
         - title: Platform Operations
-          summary: Lorem Ipsum
+          summary: Documentation outlining platform operations that ensure the integrity of the auction and creates policies and standards around inventory and creatives to ensure a safe and productive experience
           url: getting-started/index.yml
         # Card
         - title: Integrate a Bidder/Bidding Protocol
-          summary: Lorem Ipsum
+          summary: Documentation specifying the integration process of a bidder with Xandr
           url: getting-started/index.yml
         # Card
         - title: Bidding Protocol
-          summary: Lorem Ipsum
+          summary: Documention describing the implementation of OpenRTB 2.4 bidding protocol for bidders integrating with the impression bus
           url: getting-started/index.yml
     - title: API References
       items:
