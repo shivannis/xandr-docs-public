@@ -116,7 +116,7 @@ additionalContent:
             - text: Using Postman with Yield Analytics API
               url: getting-started/index.yml
         # Card
-        - title: API Release Notes
+        - title: Release Notes
           links:
             - text: Digital Platform API Release Notes
               url: getting-started/index.yml
