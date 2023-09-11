@@ -75,7 +75,11 @@ additionalContent:
           summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
-        - title: Integrate a Bidder
+        - title: Integrate a Bidder/Bidding Protocol
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: Bidding Protocol
           summary: Lorem Ipsum
           url: getting-started/index.yml
     - title: API References
