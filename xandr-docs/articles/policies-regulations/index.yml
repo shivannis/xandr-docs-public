@@ -23,47 +23,51 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx
           - text: Policies for Curating
             url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Curating.aspx
-      - linkListType: tutorial
-        links:            
-          - text: Tips on Finding What You Need
-            url: finding-content.md
-          - text: Introduction to Xandr In-App Help
-            url: intro-to-in-app-help.md
-          - text: Support Portal Documentation
-            url: support-portal-integration.md
-      - linkListType: whats-new
-        links:
-          - text: Xandr Insights
-            url: https://about.ads.microsoft.com/en-us/solutions/xandr/insights-case-studies-reports-spotlights
-  - title: Ad Tech References
+  - title: Privacy Regulations (Password Protected)
     linkLists:
-      - linkListType: concept
+      - linkListType: reference
         links:            
-          - text: Ad Serving
-            url: ../ad-tech-references/introduction-to-ad-serving.md
-          - text: Ad Tags
-            url: ../ad-tech-references/ad-tags.md
-          - text: Cookies
-            url: ../ad-tech-references/cookies.md
-          - text: Mobile Advertising
-            url: ../ad-tech-references/introduction-to-mobile-advertising.md
-      - linkListType: tutorial
-        links:            
-          - text: Creatives
-            url: ../ad-tech-references/creatives.md
-          - text: Video Inventory and Formats
-            url: ../ad-tech-references/introduction-to-video-inventory-and-formats.md
-  - title: Industry Initiatives and Xandr
+          - text: Overview
+            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations
+          - text: Xandr Privacy Agreements
+            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Privacy-Agreements.aspx
+          - text: Xandr Platform Data Processing Addendum - Terms and Conditions
+            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Platform-Data-Processing-Addendum---Terms-and-Conditions.aspx
+          - text: Privacy Docs:U.S. Privacy Laws, GDPR, and ePrivacy (ePR)
+            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Privacy-Documentation--including-U.S.-Privacy-Laws,-General-Data-Protection-Regulation-(GDPR),-and-ePrivacy-(e.aspx
+ - title: Xandr Platform Terms of Service (Password Protected)
     linkLists:
-      - linkListType: concept
+      - linkListType: reference
         links:            
+          - text: Overview
+            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService
+          - text: Xandr Platform Terms of Service
+            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService/SitePages/Xandr-Platform-Terms-of-Service.aspx
+  - title: Online Terms (Password Protected)
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Overview
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms
+          - text: Seller Additional Terms
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
+          - text: Buyer Additional Terms
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Buyer-Additional-Terms.aspx
+            - title: Online Terms (Password Protected)
+  - title: Regulation Information
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Industry Initiatives and Xandr
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms
+          - text: Online Advertising Self-Regulatory Organizations
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
           - text: Support for Ads.txt and App-Ads.txt
-            url: ../ad-tech-references/xandr-support-for-ads-txt-and-app-ads-txt.md
-          - text: Online Advertising and Ad Tech Glossary
-            url: ../ad-tech-references/online-advertising-and-ad-tech-glossary.md
-      - linkListType: tutorial
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Buyer-Additional-Terms.aspx
+            - title: Regulation Information
+  - title: Disclosures
+    linkLists:
+      - linkListType: reference
         links:            
-          - text: Seller Best Practices
-            url: ../ad-tech-references/seller-best-practices.md
-          - text: Publisher Best Practices for The Trade Desk
-            url: ../ad-tech-references/publisher-best-practices-for-the-trade-desk.md
+          - text: Third Party Providers
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms
