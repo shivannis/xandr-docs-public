@@ -29,7 +29,7 @@ highlightedContent:
     # Card
     - title: Policies and Regulations
       itemType: reference
-      url: getting-started/index.yml
+      url: policies-regulations/index.yml
     # Card
     - title: Training and Enablement
       itemType: training
