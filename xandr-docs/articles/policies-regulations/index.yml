@@ -53,7 +53,6 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
           - text: Buyer Additional Terms
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Buyer-Additional-Terms.aspx
-            - title: Online Terms (Password Protected)
   - title: Regulation Information
     linkLists:
       - linkListType: reference
