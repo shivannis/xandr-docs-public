@@ -33,14 +33,6 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Privacy-Agreements.aspx
           - text: Privacy Docs:U.S. Privacy Laws, GDPR, and ePrivacy (ePR)
             url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Privacy-Documentation--including-U.S.-Privacy-Laws,-General-Data-Protection-Regulation-(GDPR),-and-ePrivacy-(e.aspx
-  - title: Xandr Platform Terms of Service (Password Protected)
-    linkLists:
-      - linkListType: reference
-        links:            
-          - text: Overview
-            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService
-          - text: Xandr Platform Terms of Service
-            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService/SitePages/Xandr-Platform-Terms-of-Service.aspx
   - title: Online Terms (Password Protected)
     linkLists:
       - linkListType: reference
@@ -51,6 +43,14 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
           - text: Buyer Additional Terms
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Buyer-Additional-Terms.aspx
+  - title: Xandr Platform Terms of Service (Password Protected)
+    linkLists:
+      - linkListType: reference
+        links:            
+          - text: Overview
+            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService
+          - text: Xandr Platform Terms of Service
+            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService/SitePages/Xandr-Platform-Terms-of-Service.aspx
   - title: Regulation Information
     linkLists:
       - linkListType: reference
