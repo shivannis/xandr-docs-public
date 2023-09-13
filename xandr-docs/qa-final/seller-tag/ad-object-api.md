@@ -1,6 +1,6 @@
 # Ad Object API
 
-<div class="body">
+
 
 <div class="tablenoborder">
 
