@@ -46,7 +46,11 @@
       "feedback_system": "None",
       "permissioned-type": "public"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.service": {
+        "articles/invest/*.md": "microsoft-invest"
+      }
+    },
     "template": [],
     "dest": "xandr-docs"
   }
