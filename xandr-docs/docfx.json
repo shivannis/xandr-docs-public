@@ -49,6 +49,12 @@
     "fileMetadata": {
       "ms.service": {
         "articles/invest/*.md": "microsoft-invest"
+      },
+      "author": {
+        "articles/invest/*.md": "rupambaruah-xandr"
+      },
+      "ms.author": {
+        "articles/invest/*.md": "rupambaruah"
       }
     },
     "template": [],
