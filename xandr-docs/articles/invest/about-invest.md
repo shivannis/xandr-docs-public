@@ -1,8 +1,8 @@
 ---
-title: About Invest DSP
+title: About Microsoft Invest DSP
 description: Xandr Invest is an advertising platform tailored for modern advertisers, offering Invest DSP for effective upper-funnel buying. It provides seamless integration, direct access to premium supply, reduced discrepancies, and built-in fraud protection. The platform employs real-time bidding, data overlays, and a proprietary bidder for optimized ad serving.
 ---
-# About Invest DSP
+# About Microsoft Invest DSP
 
 Xandr Invest is a strategic buying platform
 built for the needs of today’s advertisers looking to invest in
@@ -75,7 +75,7 @@ creative to the partner who will ultimately serve the ad.
 ## Get Started
 
 <a href="https://www.xandr.com/contact-us/" class="xref"
-target="_blank">Get in touch</a> with aXandr
+target="_blank">Get in touch</a> with a Xandr
 representative today so you can get started! Already have an account?
 <a href="https://invest.xandr.com/login" class="xref"
 target="_blank">Log in toInvest DSP</a>.
@@ -88,8 +88,7 @@ target="_blank">Log in toInvest DSP</a>.
 
 
 
-**Parent topic:**
-<a href="../topics/home.html" class="link">Help Center</a>
+
 
 
 
