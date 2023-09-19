@@ -72,13 +72,8 @@ creative to the partner who will ultimately serve the ad.
 
 
 
-**Note**
-
-<a href="https://www.Microsoft.com/contact-us/" class="xref"
-target="_blank">Get in touch</a> with a Microsoft
-representative today so you can get started! Already have an account?
-<a href="https://invest.Microsoft.com/login" class="xref"
-target="_blank">Log in toInvest DSP</a>.
+**Note**: Get in touch with a Microsoft
+representative today so you can get started! Already have an account? Log in to [Microsoft Invest DSP](https://invest.xandr.com/login).
 
 
 
