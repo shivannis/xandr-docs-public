@@ -72,7 +72,7 @@ creative to the partner who will ultimately serve the ad.
 
 
 
-**Note
+**Note**
 
 <a href="https://www.Microsoft.com/contact-us/" class="xref"
 target="_blank">Get in touch</a> with a Microsoft
