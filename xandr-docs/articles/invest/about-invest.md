@@ -33,7 +33,7 @@ users, including:
 
 ## Technical Details
 
-TheMicrosoft platform is a real-time bidding system
+The Xandr platform is a real-time bidding system
 and ad server. The main processing system is called the "impression
 bus". The impression bus receives ad requests, applies data to the
 request, receives bids, makes decisions, serves creatives, logs
