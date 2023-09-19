@@ -10,8 +10,7 @@ This page introduces the main objects that you work with to buy media.
 
 Buy-Side Hierarchy
 
-![Buy Side Object Hirerchy]<img src="media/buy-side-object-hierarchy.png"
-class="image"/>
+![Buy Side Object Hirerchy](media/buy-side-object-hierarchy.png)
 
 
 Member
