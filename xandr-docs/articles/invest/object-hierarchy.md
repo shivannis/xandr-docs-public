@@ -1,3 +1,7 @@
+---
+title: Object Hierarchy
+description: This page introduces the main objects that you work with to buy media.
+---
 # Object Hierarchy
 
 
