@@ -1,0 +1,14 @@
+- name: Microsoft Invest Product Documentation
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    href: about-invest.md
+    - name: Object Hierarchy
+      href: object-hierarchy.md
+- name: lorem ipsum
+  href: lorem ipsum
+- name: lorem ipsum
+  href: lorem ipsum
+- name: lorem ipsum
+  href: lorem ipsum
