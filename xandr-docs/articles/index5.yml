@@ -58,8 +58,8 @@ productDirectory:
       url: getting-started/index.yml
     # Card
     - title: Release Notes
-      summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
-      imageSrc: https://static.docs.com/ui/media/product/azure/cloud-services.svg
+      summary: Docs outlining latest updates and features releases for Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
+      imageSrc: media/icon-release.svg
       url: getting-started/index.yml
       
 tools:
