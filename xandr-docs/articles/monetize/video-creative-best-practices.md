@@ -1,0 +1,122 @@
+---
+Title : Video Creative Best Practices
+Description : This page provides you with a list of best practices, in a
+question-answer format, to ensure maximum delivery and success for your
+VAST creatives on the Xandr platform.
+---
+
+
+# Video Creative Best Practices
+
+
+
+This page provides you with a list of best practices, in a
+question-answer format, to ensure maximum delivery and success for your
+VAST creatives on the Xandr platform.
+
+Has the creative passed the Xandr platform
+audit?
+
+If not, the creative will be ineligible to serve on any SSP inventory.
+See <a href="creative-standards.html" class="xref"
+title="Xandr has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.">Creative
+Standards</a> for more information about audit.
+
+Has the creative passed SSL audit?
+
+If not, the creative will not serve on Google Ad Manager inventory and
+will see limited delivery other SSP inventory. See
+<a href="creative-standards.html" class="xref"
+title="Xandr has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.">Creative
+Standards</a> for more information about audit.
+
+Is the creative duration longer than 60 seconds?
+
+This can limit reach because most supply sources will cap at 30 or 60
+seconds. However, if your creative must be longer than 60 seconds,
+please reach out to your Xandr representative.
+
+Are you using the correct tags?
+
+Make sure to use a **ptv** tag instead of a **tt** tag while running a
+debug auction for video creatives. For more information
+regarding debug auctions, see
+<a href="understanding-the-debug-auction.html"
+class="xref">Understanding the Debug Auction</a>.
+
+``` pre
+https://secure.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
+```
+
+Are your video files transcoded into a variety of bitrates?
+
+It is recommended that you transcode video files into a variety of
+bitrates to ensure there is no latency in uploading the file. Some
+exchanges (for example, Google Ad Manager) have latency requirements and
+will fail creatives that are too large to support slower internet
+connections. For more information, see
+<a href="video-creative-guidelines-and-specifications.html" class="xref"
+title="To serve on the Xandr platform and other third-party platforms, all video creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.">Video
+Creative Guidelines and Specifications</a>.
+
+Is your creative VPAID?
+
+Xandr will only match VPAID creatives to
+VPAID-enabled placements, limiting reach.
+
+Are you using both VAST and in-banner creatives in the same
+line item or campaign?
+
+Avoid using both VAST creatives and in-banner or interstitial video
+creatives within the same video line item or
+campaign. An in-banner or interstitial video creative will not
+serve when you target by position: Pre-Roll, Mid-Roll, or Post-Roll.
+
+Have you included all the recommended formats in your VAST XML file?
+
+Ensure that any VAST XML includes at least three formats -- FLV, MP4,
+and WebM. Not including the recommended formats will limit delivery.
+
+Does your ad server allow Xandr VAST check
+domains?
+
+Ensure that your ad server allows Xandr VAST
+check domains. VAST check may fail otherwise. Please reach out to your
+Xandr representative for additional domain
+detail if necessary.
+
+Have you included all necessary query string macros in your VAST tag?
+
+Xandr automatically inserts the click URL into
+the XML wrapper of all VAST creatives. You are not required to add the
+click macro and click testing is not required. However, you should
+manually insert the Xandr CACHEBUSTER macro.
+
+What does the error message "Heavy ad intervention" mean?
+
+This error message signifies that the resource use for a creative
+exceeds one or more threshold(s) set by <a
+href="https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/"
+class="xref" target="_blank">browser intervention</a> introduced by
+Chrome. Since September 2020, Chrome has introduced a new <a
+href="https://iabtechlab.com/blog/chrome-will-block-heavy-ads-soon-get-vast-video-ads-ready/"
+class="xref" target="_blank">browser intervention</a> that monitors ad
+iframes and may redirect them to an error page (Heavy ad intervention)
+if resource use exceeds specified criteria. Video advertisements, in
+particular, may be vulnerable to this intervention, which impacts
+iframes that load more than 4 MB of data.
+
+If a creative satisfies any of the following criteria, it is considered
+heavy:
+
+- The main thread is used for more than 60 seconds in total.
+- In any 30 second window, the main thread is used for more than 15
+  seconds.
+- More than 4 MB of network bandwidth is consumed
+
+It is recommended that the creative is compliant with the technical
+specifications detailed above.
+
+
+
+
