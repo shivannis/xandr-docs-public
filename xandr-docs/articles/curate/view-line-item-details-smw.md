@@ -1,0 +1,121 @@
+---
+Title : View Line Item Details
+Description : The Line Items Details window lets you view and edit line item settings
+and access troubleshooting tools, essential metrics, performance
+visualizations, and associated line item objects.
+---
+
+
+# View Line Item Details
+
+
+
+The Line Items Details window lets you view and edit line item settings
+and access troubleshooting tools, essential metrics, performance
+visualizations, and associated line item objects.
+
+
+
+Note: The Xandr
+Curate Monitoring feature is in **Open Beta** and currently only
+supports deal line items. It is subject to change without notice and is
+only available to select clients.
+
+
+
+<div id="view-line-item-details-smw__section-733351cb-a3ea-4dce-aabb-15ad547b85fa"
+>
+
+## Access Line Item Details
+
+From the Line Items window:
+
+1.  Select the appropriate progress tab
+    (Upcoming,
+    In Progress, or
+    Completed). See
+    <a href="monitor-line-items.html" class="xref"
+    title="The Line Items screen displays Upcoming, In Progress, and Completed line items and metrics. It also lets you search for line items and related objects, apply filters, modify display columns, and download reports.">Monitor
+    Line Items</a> for more information.
+2.  Click anywhere in the row of the line item you want to see details
+    on.
+    
+
+    Note: You can use the
+    Search field at the top of the
+    Line Items window to search
+    for a specific line item or navigate from page to page using the
+    pagination functionality at the bottom of the window. See
+    <a href="monitor-line-items.html" class="xref"
+    title="The Line Items screen displays Upcoming, In Progress, and Completed line items and metrics. It also lets you search for line items and related objects, apply filters, modify display columns, and download reports.">Monitor
+    Line Items</a> for more information.
+
+    
+
+
+
+<div id="view-line-item-details-smw__section-cd09b6e7-2414-40fe-86d5-89e0107af0fb"
+>
+
+## Selected Line Item Details
+
+The advertiser (ADV) and insertion
+order (IO) associated with the
+selected line item, the line item name, ID, and status
+(Active or
+Inactive) appear at the top of the
+Line Item Details window above the
+Settings and
+Troubleshooting tabs. You can change
+the line item status by clicking the
+Active or
+Inactive icon. The line item
+information is read-only, but you can edit the information by clicking
+Edit at the top-right of the Line
+Items Details window.
+
+
+
+<div id="view-line-item-details-smw__section-f09cbaa1-b3b0-47e9-8e3d-37e949224184"
+>
+
+## View Line Item Objects
+
+You can access any available objects of a selected line item, including:
+Creatives,
+Deal Lists,
+Inventory Lists,
+Conversion Pixels,
+Segments, and
+3rd Party Pixels by clicking the
+three-dot icon at the top-right of the Line Item Details window and
+clicking any available object to navigate to the details page for that
+object.
+
+
+
+<div id="view-line-item-details-smw__section-7852e803-bb1c-43d3-b745-0be7ab4b68e0"
+>
+
+## Settings and Troubleshooting Tabs
+
+The Line Item Details window has the following tabs:
+
+- Settings - Displays information for
+  the selected line item including settings, essential metrics, and
+  performance visualizations. You can edit any line item settings that
+  are editable by clicking Edit at the
+  top-right of the Line Items Details window. See
+  <a href="line-item-settings.html" class="xref"
+  title="The Settings tab of the Line Item Details pane displays information for the selected line item including settings, essential metrics, and performance visualizations.">Line
+  Item Settings</a> for more information.
+- Troubleshooting - Displays
+  troubleshooting information for the selected line item. See
+  <a href="troubleshoot-line-items.html"
+  class="xref">troubleshoot-line-items.html</a> for more information.
+
+
+
+
+
+
