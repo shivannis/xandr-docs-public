@@ -7,9 +7,7 @@ brand: m365
 metadata:
   title: Xandr Platform Documentation
   description: Here you will find documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
-  ###services: azure-resource-manager
-  ###ms.service: azure
-  ###ms.custom: ignite-2022
+  ms.service: microsoft-invest
   ms.topic: hub-page
   author: rupambaruah-xandr
   ms.author: rupambaruah
