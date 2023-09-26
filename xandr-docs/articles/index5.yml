@@ -56,7 +56,7 @@ productDirectory:
       url: getting-started/index.yml
     # Card
     - title: Release Notes
-      summary: Docs outlining latest updates and features releases for Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
+      summary: Latest updates and features of Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
       imageSrc: media/icon-release.svg
       url: getting-started/index.yml
       
