@@ -1,58 +1,25 @@
 ---
-Title : Advertiser User Reporting
-Description : 
-If you have created separate
-<a href="managing-user-logins-and-permissions.md" class="xref">user
+title: Enhance Ad Experience with Advertiser User Reporting
+description: In this article, learn how an Advertiser User Reporting provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
 ---
 
+# Enhance Ad Experience with Advertiser User Reporting
 
-# Advertiser User Reporting
+If you have created separate [user login](managing-user-logins-and-permissions.md) for your advertisers, they will be able to run reports from their perspective. These advertiser users have a limited set of metrics, filters, and dimensions available to them. This allows you to give your clients access to reporting while protecting your proprietary business data.
 
+For instructions on how to give advertiser users access to reporting, see [Create a User](create-a-user.md).
 
+> [!IMPORTANT]
+> Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
+> [!IMPORTANT]
+> The **Metrics** are shown from the advertiser's perspective, so the **Revenue** field displays the advertiser's revenue (not the Member's).
 
-<div id="ID-0000331f__section-6fc8f129-bc5b-4fa8-93ea-9bbc00e877de"
->
-
-If you have created separate
-<a href="managing-user-logins-and-permissions.md" class="xref">user
-login</a> for your advertisers, they will be able to run reports from
-their perspective. These advertiser users have a limited set of metrics,
-filters, and dimensions available to them. This allows you to give your
-clients access to reporting while protecting your proprietary business
-data.
-
-For instructions on how to give advertiser users access to reporting,
-see <a href="create-a-user.md" class="xref">Create a User</a>.
-
-
-
-<b>Important:</b>
-
-Conversion-related data in reports is processed asynchronously. As a
-result, reports are available more quickly, while some
-conversion-related data is still being processed in the background. For
-more information, see
-<a href="availability-of-reporting-data.md" class="xref">Availability
-of Reporting Data</a>.
-
-
-
-
-
-<b>Important:</b> The **Metrics** are shown
-from the advertiser's perspective, so the
-Revenue field displays the
-advertiser's revenue (not the Member's).
-
-
-
-Metrics
+## Metrics
 
 - **Imps** - Total number of impressions served.
 - **Clicks** - Total number of clicks across all impressions.
 - **CTR** - Click-through rate (Clicks / Imps).
-- **Total Conversions** - Total number of post view and post click
-  conversions.
+- **Total Conversions** - Total number of post view and post click conversions.
 - **Conversion Rate** - Conversions / Imps.
 - **CPC** - Clicks / Conversions.
 - **Spend** - Booked advertiser revenue.
@@ -67,56 +34,36 @@ Metrics
 - **CPC** - (Cost / Clicks).
 - **CPA** - (Cost / Conversions).
 
-Metrics specific to Viewability
+## Metrics specific to Viewability
 
-- **Viewed Imps** - The number of measured impressions that were
-  viewable.
-- **View Measured Imps** - The total number of impressions that were
-  measured for viewability.
-- **Viewability Rate** - The percentage of impressions that were
-  viewable out of the total number of impressions measured for
-  viewability.
-- **Viewability Measurement Rate** - The percentage of impressions
-  measured for viewability out of the total number of impressions.
+- **Viewed Imps** - The number of measured impressions that were viewable.
+- **View Measured Imps** - The total number of impressions that were measured for viewability.
+- **Viewability Rate** - The percentage of impressions that were viewable out of the total number of impressions measured for viewability.
+- **Viewability Measurement Rate** - The percentage of impressions measured for viewability out of the total number of impressions.
 
-Dimensions
+## Dimensions
 
-- **Insertion Order** - Available if the advertiser uses insertions
-  orders.
+- **Insertion Order** - Available if the advertiser uses insertions orders.
 - **Line Item**
-- **Media Type** - Banner, Interstitial, Video, Text, Expandable, or
-  Skin.
+- **Media Type** - Banner, Interstitial, Video, Text, Expandable, or Skin.
 - **Country**
 - **Size**
 - **Advertiser Currency**
 - **Conversion Pixel**
 
-Filters
+## Filters
 
-- **Insertion Order** - Available if the advertiser uses insertions
-  orders.
+- **Insertion Order** - Available if the advertiser uses insertions orders.
 - **Line Item**
-- **Media Type** - Banner, Interstitial, Video, Text, Expandable, or
-  Skin.
+- **Media Type** - Banner, Interstitial, Video, Text, Expandable, or Skin.
 - **Country**
 - **Size**
 - **Advertiser Currency**
 - **Conversion Pixel**
 - **Minimum Impressions**
 
+## Related topics
 
-
-
-
-Related Topics
-
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
-- <a href="network-reporting.md" class="xref">Member Reporting</a>Member
-- <a href="advertiser-reporting.md" class="xref">Advertiser
-  Reporting</a>
-
-
-
-
-
-
+- [Reporting Guide](reporting-guide.md)
+- [Member Reporting Member](network-reporting.md)
+- [Advertiser Reporting](advertiser-reporting.md)
