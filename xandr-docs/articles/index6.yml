@@ -127,27 +127,3 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Lorem Ipsum
           url: getting-started/index.yml
-
-tools:
-  title: Languages and Technologies
-  items:
-    # Card
-    - title: REST API
-      imageSrc: /media/logos/logo_REST.svg
-      url: /rest/api/
-    # Card
-    - title: HTTP
-      imageSrc: /media/logos/logo_python.svg
-      url: /azure/developer/python/
-    # Card
-    - title: TCP-IP
-      imageSrc: ./media/index/net-logo.svg
-      url: /dotnet/azure/
-    # Card
-    - title: Header Requests
-      imageSrc: /media/logos/logo_js.svg
-      url: /azure/developer/javascript/
-    # Card
-    - title: Cookies
-      imageSrc: /media/logos/logo_java.svg
-      url: /azure/developer/java/
