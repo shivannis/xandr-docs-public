@@ -1,9 +1,9 @@
 ---
-Title : Auto Macro Insertion
-Description : Learn how Xandr offers automated insertion of macros like ${CLICK_URL} and ${CACHEBUSTER} into recognized third-party ad server formats for simplifying creative trafficking.
+title : Microsoft Invest - Auto Macro Insertion
+description : Learn how Xandr offers automated insertion of macros like ${CLICK_URL} and ${CACHEBUSTER} into recognized third-party ad server formats for simplifying creative trafficking.
 ---
 
-# Auto macro insertion
+# Microsoft Invest - Auto macro insertion
 
 When you add or edit third-party creative tags, Xandr automatically inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags if the third-party ad server's format is recognized, which will allow you to quickly traffic your creatives.
 

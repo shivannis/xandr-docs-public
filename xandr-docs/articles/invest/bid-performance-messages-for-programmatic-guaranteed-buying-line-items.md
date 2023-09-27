@@ -1,14 +1,13 @@
 ---
-Title : Bid Performance Messages for Programmatic Guaranteed Buying Line Items
-Description : Learn about the bid performance messages that contain reasons and recommendations for improving your programmatic guaranteed buying line item's bid performance.
+title : Microsoft Invest - Bid Performance Messages for Programmatic Guaranteed Buying Line Items
+description : Learn about the bid performance messages that contain reasons and recommendations for improving your programmatic guaranteed buying line item's bid performance.
 ---
 
-# Bid performance messages for programmatic guaranteed buying line items
+# Microsoft Invest - Bid performance messages for programmatic guaranteed buying line items
 
 You can access the **Troubleshooting** tab from the **Line Item Details** pane to obtain a list of bid performance messages. These messages contain reasons and recommendations for improving your programmatic guaranteed buying line item's bid performance.
 
 Please note that you may not see every message referenced here at once when accessing the **Troubleshooting** tab. For additional information about how to view bid performance messages for a specific programmatic guaranteed buying line item, see [Troubleshoot your Programmatic Guaranteed Buying Line Item Bid Performance](troubleshoot-your-programmatic-guaranteed-buying-line-item-bid-performance.md).
-
 
 | Recommendation | Reason | Recommended Troubleshooting Steps |
 |--|--|--|

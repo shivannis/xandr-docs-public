@@ -1,9 +1,9 @@
 ---
-Title : Best Practices for Buying Google Ad Manager Inventory
-Description : Learn the guidelines for maximum ad campaign success when targeting Google Ad Manager inventory.
+title : Microsoft Invest - Best Practices for Buying Google Ad Manager Inventory
+description : Learn the guidelines for maximum ad campaign success when targeting Google Ad Manager inventory.
 ---
 
-# Best practices for buying Google Ad Manager inventory
+# Microsoft Invest - Best practices for buying Google Ad Manager inventory
 
 This page provides recommendations for maximum ad campaign success when targeting Google Ad Manager inventory.
 

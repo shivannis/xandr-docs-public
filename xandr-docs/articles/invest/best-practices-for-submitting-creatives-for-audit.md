@@ -1,9 +1,9 @@
 ---
-Title : Creative Audit Best Practices
-Description :  Learn the best practices for reducing the creative audit turn around time.
+title : Microsoft Invest -  Creative Audit Best Practices
+description :  Learn the best practices for reducing the creative audit turn around time.
 ---
 
-# Creative audit best practices
+# Microsoft Invest - Creative audit best practices
 
 The creative audit process ensures that all creatives served on the Xandr platform meet the requirements of publishers wishing to expand their trusted network of partners.
 

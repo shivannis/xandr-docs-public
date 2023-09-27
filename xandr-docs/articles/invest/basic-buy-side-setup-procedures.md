@@ -1,9 +1,9 @@
 ---
-Title : Basic Buy-side Setup Procedures
-Description : Learn the procedure to setup your buying objects quickly on the Xandr platform. 
+title : Microsoft Invest - Basic Buy-side Setup Procedures
+description : Learn the procedure to setup your buying objects quickly on the Xandr platform. 
 ---
 
-# Basic buy-side setup procedures
+# Microsoft Invest - Basic buy-side setup procedures
 
 This page provides a list of procedures needed to get your buying objects quickly setup on the Xandr platform. You can use these to set up media buying on behalf of your company or, if you're an agency, your advertisers.
 

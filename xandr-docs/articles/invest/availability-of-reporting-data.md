@@ -1,9 +1,9 @@
 ---
-Title : Availability of Reporting Data
-Description : This article describes the availability of reporting data in Xandr, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
+title : Microsoft Invest - Availability of Reporting Data
+description : This article describes the availability of reporting data in Xandr, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
 ---
 
-# Availability of reporting data
+# Microsoft Invest - Availability of reporting data
 
 This article describes how, when, and for how long reporting data is or becomes available to you.
 

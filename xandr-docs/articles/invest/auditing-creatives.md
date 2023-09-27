@@ -1,9 +1,9 @@
 ---
-Title : Auditing Creatives
-Description : Learn the process of auditing creatives on the Xandr platform before they are allowed to run on real-time inventory. 
+title : Microsoft Invest - Auditing Creatives
+description : Learn the process of auditing creatives on the Xandr platform before they are allowed to run on real-time inventory. 
 ---
 
-# Auditing creatives
+# Microsoft Invest - Auditing creatives
 
 Buyers must submit creatives to Xandr so that they can be audited before running on Xandr real-time inventory. Creatives that fail the Xandr platform audit will not run.
 

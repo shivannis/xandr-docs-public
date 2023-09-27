@@ -1,9 +1,9 @@
 ---
-Title : Banner and HTML5 Creatives
-Description : Learn about Banner and HTML5 Creatives
+title : Microsoft Invest - Banner and HTML5 Creatives
+description : Learn about Banner and HTML5 Creatives
 ---
 
-# Banner and HTML5 creatives
+# Microsoft Invest - Banner and HTML5 creatives
 
 You can host common display creatives such as banner and HTML5 with Xandr or traffic them through third-party ad servers.
 
