@@ -1,0 +1,174 @@
+### YamlMime:Hub
+
+title: Xandr Platform Documentation
+summary: Discover the documentation for the products and services of Xandr platform so that you may realise the full potential of executing programmatic advertising campaigns across screens and tapping into engaged audiences.
+brand: m365
+
+metadata:
+  title: Xandr Platform Documentation
+  description: Here you will find documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
+  ms.service: microsoft-invest
+  ms.topic: hub-page
+  author: rupambaruah-xandr
+  ms.author: rupambaruah
+  ms.date: 09/05/2023
+  featureFlags:
+  - clicktale
+highlightedContent:
+  items:
+    # Card
+    - title: Welcome to Xandr Platform Documentation
+      itemType: get-started
+      url: getting-started/index.yml
+    # Card
+    - title: Policies and Regulations
+      itemType: reference
+      url: policies-regulations/index.yml
+    # Card
+    - title: Training and Enablement
+      itemType: training
+      url: getting-started/index.yml
+    # Card
+    - title: Customer Support Portal Guide
+      itemType: tutorial
+      url: getting-started/index.yml
+productDirectory:
+  title: Browse Product Offerings
+  items:
+    # Card
+    - title: Microsoft Invest
+      links:
+        - url: getting-started/index.yml
+          text: Product Documentation
+        - url: ./file1b.md OR /file1b
+          text: Release Notes
+    # Card
+    - title: Microsoft Monetize
+      summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
+      imageSrc: https://static.docs.com/ui/media/product/azure/functions.svg
+      url: getting-started/index.yml
+    # Card
+    - title: Microsoft Curate
+      summary: Product documentation of Microsoft Curate (*Powered by Xandr)
+      imageSrc: https://static.docs.com/ui/media/product/azure/logic-apps.svg
+      url: getting-started/index.yml
+    # Card
+    - title: Release Notes
+      summary: Latest updates and features of Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
+      imageSrc: media/icon-release.svg
+      url: getting-started/index.yml
+      
+tools:
+  title: Languages and Technologies
+  items:
+    # Card
+    - title: REST API
+      imageSrc: /media/logos/logo_REST.svg
+      url: /rest/api/
+    # Card
+    - title: HTTP
+      imageSrc: /media/logos/logo_python.svg
+      url: /azure/developer/python/
+    # Card
+    - title: TCP-IP
+      imageSrc: ./media/index/net-logo.svg
+      url: /dotnet/azure/
+    # Card
+    - title: Header Requests
+      imageSrc: /media/logos/logo_js.svg
+      url: /azure/developer/javascript/
+    # Card
+    - title: Cookies
+      imageSrc: /media/logos/logo_java.svg
+      url: /azure/developer/java/
+    
+additionalContent:
+  sections:
+    - title: Bidder UI
+      items:
+        # Card
+        - title: Bidder Platform User Interface
+          summary: Documentation explaining how to use Bidder UI tool to manage bidder integrations
+          url: getting-started/index.yml
+        # Card
+        - title: Platform Operations
+          summary: Documentation outlining platform operations that ensure the integrity of the auction and creates policies and standards around inventory and creatives to ensure a safe and productive experience
+          url: getting-started/index.yml
+        # Card
+        - title: Integrate a Bidder/Bidding Protocol
+          summary: Documentation specifying the integration process of a bidder with Xandr
+          url: getting-started/index.yml
+        # Card
+        - title: Bidding Protocol
+          summary: Documention describing the implementation of OpenRTB 2.4 bidding protocol for bidders integrating with the impression bus
+          url: getting-started/index.yml
+    - title: API References
+      items:
+        # Card
+        - title: Digital Platform API
+          links:
+            - text: Getting Started
+              url: getting-started/index.yml
+            - text: Process Guides
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
+            - text: Support
+              url: getting-started/index.yml
+        # Card
+        - title: Impression Bus API
+          links:
+            - text: Semantics
+              url: getting-started/index.yml
+            - text: Usage Constraints
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
+            - text: Best Practices
+              url: getting-started/index.yml
+        # Card
+        - title: Yield Analytics API
+          links:
+            - text: Overview
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
+            - text: Using Postman with Yield Analytics API
+              url: getting-started/index.yml
+        # Card
+        - title: Release Notes
+          links:
+            - text: Digital Platform API Release Notes
+              url: getting-started/index.yml
+            - text: Impression Bus API Release Notes
+              url: getting-started/index.yml
+    - title: Developer Documentation
+      items:
+        # Card
+        - title: Seller Tag
+          summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
+          url: getting-started/index.yml
+        # Card
+        - title: Mobile SDK
+          summary: Developer documentation for app developers to facilitate a fast, convenient way to monetize their apps
+          url: getting-started/index.yml
+        # Card
+        - title: Log Level Data Feeds
+          summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
+          url: getting-started/index.yml
+        # Card
+        - title: Supply Partners
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: Data Providers
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: Data Science Toolkit
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
+        # Card
+        - title: OTT and CTV Video Integrations
+          summary: Lorem Ipsum
+          url: getting-started/index.yml
