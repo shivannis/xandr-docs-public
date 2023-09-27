@@ -1,9 +1,11 @@
 ---
 Title : Augmented Line Items (ALI)
-Description : The Augmented Line Item (ALI) on Xandr simplifies trader workflows by automating tasks that were previously done manually. It enhances features, offers new options, and allows traders to efficiently create buying strategies, optimize budgets, and use customized trading tools to achieve better performance for their clients. ALI is designed to streamline processes and reduce daily management efforts, making it a valuable resource for traders on the platform.
+Description : Learn about the Augmented Line Item (ALI) on Xandr that simplifies trader workflows by allowing them to efficiently create buying strategies, optimize budgets, and use customized trading tools to achieve better performance for their clients. 
 ---
 
 # Augmented Line Items (ALI)
+
+ALI is designed to streamline processes and reduce daily management efforts, making it a valuable resource for traders on the platform.
 
 ## Overview
 
@@ -24,16 +26,16 @@ your client's goals. ALI delivers the following benefits to traders:
   highly-customized trading strategies. This enables you to achieve your
   client's goals without needing to write code.
 
-## ALI Setup Procedures
+## ALI setup procedures
 
 - [Create an Advertiser](create-an-advertiser.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Create a Conversion Pixel](create-a-conversion-pixel.md)
 - [Add Creatives in Bulk](add-creatives-in-bulk.md)
-- [Buy-Side Targeting](buy-side-targeting.html)
+- [Buy-Side Targeting](buy-side-targeting.md)
 
-## Related Topics
+## Related topics
 
 - [Reporting Guide](reporting-guide.md)
 - [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)

@@ -1,20 +1,20 @@
 ---
 Title : Availability of Reporting Data
-Description : This page outlines the availability of reporting data in Xandr, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. While most reports aren't associated with particular objects or fields, some reports follow distinct schedules, and event data like clicks and conversions might appear in later hours due to their occurrence after initial impressions. Additionally, the data retention period differs for each report, and the page provides information about scheduled and saved reports, including their expiration after six months.
+Description : This article describes the availability of reporting data in Xandr, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
 ---
 
-# Availability of Reporting Data
+# Availability of reporting data
 
-This page describes how, when, and for how long reporting data is or
-becomes available to you.
+This article describes how, when, and for how long reporting data is or becomes available to you.
 
-**Important:** If you are noticing any latency in the availability of your reporting data, first check if there are any known outages at [https://status.xandr.com](https://status.xandr.com).
+> [!IMPORTANT]
+> If you are noticing any latency in the availability of your reporting data, first check if there are any known outages at [https://status.xandr.com](https://status.xandr.com).
 
-## Data Processing
+## Data processing
 
 Reporting data is generally available in the UI and API within two hours of the close of a given hour. All data in a given hour is aggregated across the entire platform at once. Therefore, timing for nearly all reports is not specific to certain objects or fields. However, a few reports run on different schedules.
 
-## Events (Clicks, Conversions, Video Completions)
+## Events (clicks, conversions, video completions)
 
 Since clicks, conversions, video completions, and other events occur
 after the initial impressions that caused them, they can appear in later
@@ -23,11 +23,11 @@ that only contain events. The impressions associated with these events
 will have occurred in earlier hours of the report. Event data is never
 more than a few hours delayed.
 
-## Data Retention
+## Data retention
 
 The data retention period for each report is stated on that report's page in the documentation. For a list of reports, see [Reporting Guide](reporting-guide.md).
 
-## Scheduled Reports
+## Scheduled reports
 
 A few facts to keep in mind about scheduled reports:
 
@@ -44,17 +44,12 @@ A few facts to keep in mind about scheduled reports:
   previous 7 days.
 - Monthly reports are run and sent on the first day of each month.
 
-## Saved Reports
+## Saved reports
 
 You can save and view up to 200 reports in the UI. To retrieve a full list of saved reports, use the API [Saved Report Service](saved-report-service.md).
 
-## Related Topics
+## Related topics
 
 - [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
 - [Dates and Times in Reporting](dates-and-times-in-reporting.md)
-
-
-
-
-
 

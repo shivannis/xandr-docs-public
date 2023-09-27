@@ -1,9 +1,9 @@
 ---
 Title : Auditing Creatives
-Description : This article describes the  process of auditing creatives on the Xandr platform before they are allowed to run on real-time inventory. Audits involve a combination of human and automated methods, with various audit options and fees available, including priority audits. The article emphasizes the importance of compliance, mentions the monitoring of malvertising, and provides support for auditing inquiries while explaining how to handle expired creatives and third-party tracking pixels.
+Description : Learn the process of auditing creatives on the Xandr platform before they are allowed to run on real-time inventory. 
 ---
 
-# Auditing Creatives
+# Auditing creatives
 
 Buyers must submit creatives to Xandr so that they can be audited before running on Xandr real-time inventory. Creatives that fail the Xandr platform audit will not run.
 
@@ -22,7 +22,8 @@ Since Xandr charges a fee for each audited creative and buyers may incur additio
 
 Questions or appeals regarding creatives audited in excess of 30 days cannot be considered. These creatives should simply be resubmitted to our queue for audit.
 
-**Note:** In order to receive the fastest and most efficient service, provide us with your Xandr creative IDs, which are typically nine digits.
+> [!NOTE]
+> In order to receive the fastest and most efficient service, provide us with your Xandr creative IDs, which are typically nine digits.
 
 We recommend that buyers choose the platform audit option when adding creatives on the Xandr platform. However, they can choose to self-audit their creative, but should be careful when opting out of platform audits since many sellers only accept Xandr audited creatives. Self-auditing may reduce access to inventory outside of one's network. Self-audited creatives that are submitted for platform audit may see some classification changes. For more information, see [Self-Auditing Creatives](self-auditing-creatives.md). Buyers don't have to submit creatives for audit when:
 
@@ -30,15 +31,17 @@ We recommend that buyers choose the platform audit option when adding creatives 
 - the creatives will run on resold inventory, so the buyer doesn't have   to submit those creatives for audit since publishers may allow unaudited creatives to run.
 - the creatives are not ready to serve. For example, the buyer wants to edit the content later, or the third-party offer has not been activated.
 
-## Auditing Timeline and Priority
+## Auditing timeline and priority
 
 Creatives are audited in the order that they are received with a target completion time of one business day from the submission time. Priority audits, which are available for an additional fee, are completed within two business hours.
 
-**Note:** Buyers should speak with their Xandr business representative to enable priority audits for their account.
+> [!NOTE]
+> Buyers should speak with their Xandr business representative to enable priority audits for their account.
 
 We always try to deliver on our SLA by keeping to the one business day timeframe. However, circumstances sometimes prevent us from meeting this exact time.
 
-**Note:** Requests for priority auditing should not be submitted using the Support Form. Buyers should contact their Xandr business representative for the contract supplement. The Xandr Support team cannot process requests for priority auditing.
+> [!NOTE]
+> Requests for priority auditing should not be submitted using the Support Form. Buyers should contact their Xandr business representative for the contract supplement. The Xandr Support team cannot process requests for priority auditing.
 
 Select one of the following audit options from the **Creative Quality** section:
 
@@ -47,8 +50,9 @@ Select one of the following audit options from the **Creative Quality** section:
 
   - Select a priority.
 
-    **Note:** Business days are from 9:00pm Sunday to 11:59pm Friday ET.
-
+    > [!NOTE]
+   > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
+    
     Xandr charges a fee for each audited creative. The **priority table** below lists the fee charged for audits conducted for different time durations.
 
     |Priority|Fee|Description|
@@ -59,32 +63,37 @@ Select one of the following audit options from the **Creative Quality** section:
     
   - Enter a desktop compatible URL in the **Brand URL** text field.
     
-    **Note:** The **Brand URL** should contain the same branding that is represented on your CTV, OTT, or mobile creative. The Audit team will use the URL to validate the branding represented on the creative.
+    > [!NOTE]
+  > The **Brand URL** should contain the same branding that is represented on your CTV, OTT, or mobile creative. The Audit team will use the URL to validate the branding represented on the creative.
 
   - Select the **language** that is used in the creative such as French, German, or Chinese.
     
-    **Note:** Modifying the selected language will cause the creative to be resubmitted for audit.
+    > [!NOTE]
+>  Modifying the selected language will cause the creative to be resubmitted for audit.
 
  - **Self Audit**: Select this option to classify the creative on your own. For further guidance on
   self-auditing, see [Self-Auditing Creatives](self-auditing-creatives.md).
 
-    **Note:** Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
+    > [!NOTE]
+> Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
 
-  Set any one of the following creative attributes:
+      Set any one of the following creative attributes:
 
-  - **Brand**: This lets other sellers on the platform know what brands this creative is associated with in
+      - **Brand**: This lets other sellers on the platform know what brands this creative is associated with in
     the system.
-  - **Offer Categories**: This lets sellers know the offer category such as Education or Employment.
-  - **Language**: The language used in the creative such as French, German, or Chinese.
-  - **Technical Attributes**: It describes features associated with the creative, such as whether it is a
+      - **Offer Categories**: This lets sellers know the offer category such as Education or Employment.
+      - **Language**: The language used in the creative such as French, German, or Chinese.
+      - **Technical Attributes**: It describes features associated with the creative, such as whether it is a
     video.
-  - **Sensitive Attributes**: These are often banned by publishers.
+      - **Sensitive Attributes**: These are often banned by publishers.
 
-  **Note:** The Compliance must be confirmed for self audited creatives.
+      > [!NOTE]
+> The Compliance must be confirmed for self audited creatives.
 
 - **No Audit**: Select this option if you do not want the creative to be audited.
   
-  **Note:** When selecting No Audit, this may result in the creative serving less frequently, as publishers might choose to block it.
+  > [!NOTE]
+>  When selecting No Audit, this may result in the creative serving less frequently, as publishers might choose to block it.
  
 
 For a full description of the Xandr auditing process and the content standards for creatives running on the Xandr platform, see [Auditing Creatives](auditing-creatives.md) and [Creative Standards](creative-standards.md). Regardless of your audit selection, the Xandr Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.
@@ -100,21 +109,21 @@ Xandr can audit:
 
 For more information, see [Creative Audit Best Practices](best-practices-for-submitting-creatives-for-audit.md).
 
-## Auditing Feedback
+## Auditing feedback
 
 Buyers can choose to receive automatic notification emails about their creatives. For additional information, see [Managing Notification Recipients](managing-notification-recipients.md). If your creative has not passed our platform audit, your notification will include additional details regarding why the creative failed the platform audit. For more information, see [Creative Standards](creative-standards.md).
 
-## Expired Creatives
+## Expired creatives
 
 If your creative has not run and has not been modified in 45 days, then it will be automatically deactivated and will not serve on any inventory. Email notifications will go out automatically to the
 corresponding members regarding those deactivated creatives. Buyers do not have to re-submit deactivated creatives for auditing. They can simply reactivate them.
 
-## Third-Party Tracking Pixels
+## Third-Party tracking pixels
 
 Adding a pixel directly to an existing creative will normally cause the creative to be re-audited. However, since third-party tracking pixels go through an independent audit process, you can add third-party tracking pixels to creatives without causing the creatives themselves to be
 re-audited. For more information about third-party tracking pixels, see [Third-Party Tracking Pixels for Creatives](third-party-tracking-pixels-for-creatives.md).
 
-## PSA-Enabled Creative Verification
+## PSA-Enabled creative verification
 
 Creatives that use a supported verification vendor to block delivery of a creative on certain content will be labeled "PSA Enabled". Instead of the actual creative, PSA-enabled creatives serve as backup creatives in the event of a block by the verification vendor. Supported verification vendors include DoubleVerify, AdXpose, AdSafe Media, and Brand.net.
 Xandr has worked with each of these verification vendors to ensure that their tags can be configured for use on our platform. The buyer's verification vendor should be able to help with setting up an appropriate backup creative for Xandr.
@@ -131,7 +140,7 @@ Creatives submitted to Xandr for auditing will be audited using both manual and 
 
 Use the [Support Form](https://help.xandr.com) to submit questions about Sherlock automated auditing. Under the **Request Type**, select **Anti-Malvertising**.
 
-## Related Topics
+## Related topics
 
 - [Creative Standards](creative-standards.md)
 - [Select an Audit Option for a Creative](select-an-audit-option-for-a-creative.md)

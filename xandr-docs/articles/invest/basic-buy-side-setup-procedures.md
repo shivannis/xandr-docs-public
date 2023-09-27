@@ -1,10 +1,9 @@
 ---
 Title : Basic Buy-side Setup Procedures
-Description : This page provides a list of procedures needed to get your buying
-objects quickly setup on the Xandr platform. 
+Description : Learn the procedure to setup your buying objects quickly on the Xandr platform. 
 ---
 
-# Basic Buy-side Setup Procedures
+# Basic buy-side setup procedures
 
 This page provides a list of procedures needed to get your buying objects quickly setup on the Xandr platform. You can use these to set up media buying on behalf of your company or, if you're an agency, your advertisers.
 
@@ -17,14 +16,9 @@ Use the following procedures for your setup:
     - [Inventory Lists](inventory-lists-ali-only.md)
 - [Configure a Programmable Split](configure-a-programmable-split.md)
 - [Create a Conversion Pixel](create-a-conversion-pixel.md)
-- [Add Creatives in Bulk](add-creatives-in-bulk.html)
+- [Add Creatives in Bulk](add-creatives-in-bulk.md)
 
-
-## Related Topics
+## Related topics
 
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md)
 - [Buy-Side Targeting](buy-side-targeting.md)
-
-
-
-
