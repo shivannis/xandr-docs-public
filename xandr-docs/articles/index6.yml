@@ -32,58 +32,20 @@ highlightedContent:
     - title: Customer Support Portal Guide
       itemType: tutorial
       url: getting-started/index.yml
-productDirectory:
-  title: Browse Product Offerings
-  items:
-    # Card
-    - title: Microsoft Invest
-      links:
-        - url: getting-started/index.yml
-          text: Product Documentation
-        - url: ./file1b.md OR /file1b
-          text: Release Notes
-    # Card
-    - title: Microsoft Monetize
-      summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
-      imageSrc: https://static.docs.com/ui/media/product/azure/functions.svg
-      url: getting-started/index.yml
-    # Card
-    - title: Microsoft Curate
-      summary: Product documentation of Microsoft Curate (*Powered by Xandr)
-      imageSrc: https://static.docs.com/ui/media/product/azure/logic-apps.svg
-      url: getting-started/index.yml
-    # Card
-    - title: Release Notes
-      summary: Latest updates and features of Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
-      imageSrc: media/icon-release.svg
-      url: getting-started/index.yml
-      
-tools:
-  title: Languages and Technologies
-  items:
-    # Card
-    - title: REST API
-      imageSrc: /media/logos/logo_REST.svg
-      url: /rest/api/
-    # Card
-    - title: HTTP
-      imageSrc: /media/logos/logo_python.svg
-      url: /azure/developer/python/
-    # Card
-    - title: TCP-IP
-      imageSrc: ./media/index/net-logo.svg
-      url: /dotnet/azure/
-    # Card
-    - title: Header Requests
-      imageSrc: /media/logos/logo_js.svg
-      url: /azure/developer/javascript/
-    # Card
-    - title: Cookies
-      imageSrc: /media/logos/logo_java.svg
-      url: /azure/developer/java/
+
+
     
 additionalContent:
   sections:
+    - title: Browse Product Offerings
+      items:
+      # Card
+      - title: Microsoft Invest
+        links:
+          - url: getting-started/index.yml
+            text: Product Documentation
+          - url: ./file1b.md OR /file1b
+            text: Release Notes
     - title: Bidder UI
       items:
         # Card
@@ -172,3 +134,27 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Lorem Ipsum
           url: getting-started/index.yml
+
+tools:
+  title: Languages and Technologies
+  items:
+    # Card
+    - title: REST API
+      imageSrc: /media/logos/logo_REST.svg
+      url: /rest/api/
+    # Card
+    - title: HTTP
+      imageSrc: /media/logos/logo_python.svg
+      url: /azure/developer/python/
+    # Card
+    - title: TCP-IP
+      imageSrc: ./media/index/net-logo.svg
+      url: /dotnet/azure/
+    # Card
+    - title: Header Requests
+      imageSrc: /media/logos/logo_js.svg
+      url: /azure/developer/javascript/
+    # Card
+    - title: Cookies
+      imageSrc: /media/logos/logo_java.svg
+      url: /azure/developer/java/
