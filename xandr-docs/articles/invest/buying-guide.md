@@ -1,7 +1,6 @@
 ---
 title: Microsoft Invest - Buying Guide
-description: Use the Buying guide to understand Microsoft Invest's buy-side capabilities and how to manage direct and third-party media
-buying on behalf of your advertisers.
+description: Use the Buying guide to understand Microsoft Invest's buy-side capabilities and how to manage direct and third-party media buying on behalf of your advertisers.
 ---
 
 # Buying Guide for Microsoft Invest
