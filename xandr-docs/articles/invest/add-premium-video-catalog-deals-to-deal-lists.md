@@ -3,7 +3,7 @@ title: Microsoft Invest - Add Premium Video Catalog Deals to Deal Lists
 description: Learn how to use the Inventory Library to add Premium Video Catalog (PVC) deals to deal lists. You can add deals to new as well as existing deal lists for all line items except programmatic guaranteed buying line items.
 ---
 
-# Add Premium Video Catalog deals to deal lists
+# Add Premium Video Catalog deals to deal lists in Microsoft Invest
 
 Using the Inventory Library, buyers can add premium video catalog (PVC) deals to new and existing deal lists for all line item types except programmatic guaranteed buying line items.
 

@@ -1,9 +1,9 @@
 ---
-title: Additional Geo Restrictions
-description: In this article, learn about the geographic targeting restrictions for impressions that users are viewing.
+title: Microsoft Invest - Additional Geo Restrictions
+description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions make it easier to customize content delivery based on specific geographic criteria. 
 ---
 
-# Additional Geo Restrictions
+# Additional Geo Restrictions in Microsoft Invest
 
 In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.
 
@@ -117,6 +117,7 @@ If your list contains postal/zip codes that don't exist in the Xandr database, y
 >
 > - both a postal code list and an individual postal code (which does not belong to the list)
 > - either a postal code list or an individual postal code (which does notbelong to the list)
+>
 > The include and exclude functionality needs be consistent between the postal code list and an individual postal code.
 
 You can include and exclude postal code lists and individual postal codes from targeting on a line item.

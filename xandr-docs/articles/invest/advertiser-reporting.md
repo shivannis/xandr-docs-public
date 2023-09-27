@@ -1,9 +1,9 @@
 ---
-title : Advertiser Reporting
-description : In this article, learn about the advertiser-level reports and its granular details including metrics such as click-through rates, conversion rates, audience demographics, and more.
+title: Microsoft Invest - Advertiser Reporting
+description: In this article, learn about the advertiser-level reports and its granular details including metrics, such as click-through rates, conversion rates, audience demographics, and more.
 ---
 
-# Advertiser Reporting
+# Advertiser reporting in Microsoft Invest
 
 Advertiser reports allow you to get more granular information about the performance of individual advertisers than is provided by [Member Reporting](network-reporting.md).
 

@@ -3,7 +3,7 @@ title: Microsoft Invest - Advanced Frequency Management
 description: In this article, learn how Advanced Frequency Management (AFM) is an innovative advertising technique that allows advertisers to control the number of times a specific ad is shown to a particular audience, ensuring a more targeted and balanced ad exposure.
 ---
 
-# Manage Ad Visibility with Advanced Frequency Management
+# Advanced Frequency Management in Microsoft Invest
 
 Advanced Frequency Management (AFM) is an innovative frequency-capping feature that lets you control the number of impressions seen by users who opt out of including traditional identifiers in ad requests ("cookieless users").
 

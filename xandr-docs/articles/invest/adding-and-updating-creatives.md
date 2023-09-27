@@ -3,7 +3,7 @@ title: Microsoft Invest - Add and Update Creatives
 description: Learn how to add and update your creatives on the Xandr platform. You can add one creative or multiple creatives in bulk. You can also make use of the Creative Manager to update the creatives at any given time.
 ---
 
-# Add and update Creatives in the Creative Manager
+# Add and update Creatives in Microsoft Invest
 
 You can add one creative at a time or multiple creatives in bulk on the Xandr platform. After you've successfully uploaded your creatives, you can update them at any time using the **Creative Manager**.
 

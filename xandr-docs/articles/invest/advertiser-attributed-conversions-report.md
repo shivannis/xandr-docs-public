@@ -1,19 +1,19 @@
 ---
-title : Advertiser Attributed Conversions Report
-description : In this article, learn about Advertiser Attributed Conversions Report and its comprehensive overview of conversions attributed to specific advertisers.
+title: Microsoft Invest - Advertiser Attributed Conversions Report
+description: In this article, learn about Advertiser Attributed Conversions Report and its comprehensive overview of conversions attributed to specific advertisers.
 ---
 
-# Advertiser Attributed Conversions Report
+# Advertiser Attributed Conversions report in Microsoft Invest
 
 When a conversion pixel fires, Xandr determines if the conversion can be attributed (tied to a creative that the user previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
 
 The Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to your advertisers' attributed conversions.
 
-## Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
-### Time Ranges
+### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -67,7 +67,7 @@ This report can retrieve data for the last 90 days.
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Order ID | No | The order ID or SKU optionally passed in the conversion pixel. If your advertiser is passing in an order ID when the conversion pixel fires, you could send a full list of order IDs back to them to help with conversion attribution. For more information, see [Conversion Pixels Advanced](conversion-pixels-advanced.md). |
-| User ID | No | The Xandr user ID for the user who converted. If you have a mapping of your own user IDs to Xandr IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via Cloud Export. For details, see Changes to Log-Level Data and Console Reporting. |
+| User ID | No | The Xandr user ID for the user who converted. If you have a mapping of your own user IDs to Xandr IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. <br/> **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](./log-level-data/log-level-data-cloud-export.md). For details, see [Changes to Log-Level Data and Console Reporting](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Changes-to-Log-Level-Data-and-Reporting-Support-for-European-Privacy-Regulations.aspx). |
 
 ### Impression types
 
