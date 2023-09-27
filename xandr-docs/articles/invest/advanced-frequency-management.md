@@ -1,5 +1,5 @@
 ---
-title: Manage Ad Visibility with Advanced Frequency Management
+title: Microsoft Invest - Advanced Frequency Management
 description: In this article, learn how Advanced Frequency Management (AFM) is an innovative advertising technique that allows advertisers to control the number of times a specific ad is shown to a particular audience, ensuring a more targeted and balanced ad exposure.
 ---
 
@@ -25,7 +25,7 @@ without cookies” **and** select a daily frequency cap on your Line item.
 > [!NOTE]
 > This activation is limited to line item objects and are not applying to frequency caps set on advertisers, insertion orders, and creatives.
 
-## AFM Reporting
+## AFM reporting
 
 As with traditional frequency caps, you can find your line item's **unique impressions per user/device** involved in AFM capping in the
 [Buyer Reach and Frequency Report](buyer-reach-and-frequency-report.md). There are now three frequency cap types in this report: **Classical**, **Advanced**, and **None**.

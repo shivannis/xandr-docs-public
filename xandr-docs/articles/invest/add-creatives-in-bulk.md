@@ -1,27 +1,24 @@
 ---
-title: Add Creatives in Bulk to the Creative Manager
+title: Microsoft Invest - Add Creatives in Bulk to the Creative Manager
 description: Learn how to add multiple third-party hosted and native creatives in bulk to the Creative Manager. You can either add them by uploading a spreadsheet or the creative files directly from your computer.
 ---
 
-# Add Creatives in bulk to the Creative Manager
+# Add Creatives in Bulk to the Creative Manager
 
 You can add multiple third-party, hosted, and native creatives to the **Creative Manager** simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 
 To serve on our platform, all creatives must adhere to our creative guidelines and specifications, creative standards, and other guidelines that apply to all creative types. For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md) and [Creative Standards](creative-standards.md).
 
 1. Go to **Creative > Creatives**.
-
 1. Select an advertiser.
 1. Click **New** and select **Bulk**.
-    The **Create New Creatives: Hosted** screen displays.
-
+      The **Create New Creatives: Hosted** screen displays.
 1. Do one of the following:
     - To add video, audio, and display creatives that will be hosted with Xandr, remain on the **Create New Creatives: Hosted** screen.
     - To add native creatives that will be hosted with Xandr, click the **Native** button.
     - To add video, audio, and display creatives that will be trafficked through a third-party ad server, click the **Third-Party** button.
 
     If you clicked the **Native** or **Third-Party** button, the appropriate **Create New Creatives** screen will display.
-
 1. Upload the creatives by doing one of the following:
     1. Drag and drop the actual assets or click **Select File** to locate them from your computer.
     1. For hosted and native creatives, click **Select File (xls, xlsx)** within the **Creative Spreadsheet** section and upload the assets using a spreadsheet.
@@ -29,7 +26,6 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
     > [!NOTE]
     > You can upload files up to 8 MB. All hosted banner and video creatives should not exceed 1 GB. To prevent latency issues, it's recommended that you only upload 200 creatives at a time.
-
 1. Do one of the following if uploading the assets using a spreadsheet:
     1. If all columns were successfully mapped, verify that no additional changes are needed.
     1. If all columns were not successfully mapped, use the available menus to manually select the corresponding column names that were included in your spreadsheet, and then click **Review**.
@@ -57,7 +53,8 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
    > The creatives will still upload successfully and display in the **Creative Manager** if you decide not to address any of the warnings. After the creatives have been successfully uploaded, you can make any updates by clicking the appropriate folder from the **Folders** pane that displays on the left within the **Creative Manager**, clicking the row for the appropriate creative, and clicking **Edit** from the **Creative Details** pane.
 
 1. Click **Save** from the **Warnings & Errors** dialog.
-   Your creatives won't be saved if errors exist for any of the creatives. You'll be redirected to the **Create New Creatives** screen so that you can resolve those errors. Creatives that have been uploaded successfully will no longer display in any of the tabs on the **Create New Creatives** screen.
+
+    Your creatives won't be saved if errors exist for any of the creatives. You'll be redirected to the **Create New Creatives** screen so that you can resolve those errors. Creatives that have been uploaded successfully will no longer display in any of the tabs on the **Create New Creatives** screen.
 
 1. From the **Create New Creatives** screen, resolve all warnings and errors by doing the following if necessary:
     1. Review the **Status** column per tab to obtain additional information about each error and warning.

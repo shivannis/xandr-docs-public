@@ -1,6 +1,6 @@
 ---
-title: Enhance Ad Experience with Advertiser User Reporting
-description: In this article, learn how an Advertiser User Reporting provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
+title: Microsoft Invest - Advertiser User Reporting
+description: In this article, learn how an Advertiser User report provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
 ---
 
 # Enhance Ad Experience with Advertiser User Reporting
