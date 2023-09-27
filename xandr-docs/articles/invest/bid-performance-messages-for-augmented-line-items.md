@@ -44,7 +44,11 @@ settings, see the following:
 - <a href="partner-center-guide.md" class="xref">Partner Center
   Guide</a>
 
-
+| Potential Issue                    | Reason                                                                                                                                                       | Recommended Troubleshooting Steps                                                                                                                                                                                                                                                       |   |   |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Member Targeting Settings          | Your current member's targeting setup is reducing impression count because it excludes certain sellers in the Partner Center, countries, and/or inventories. | Review and adjust selected country targeting preferences from your Member Targeting settings. Review and adjust your seller preferences in the Partner Center. If you have inventory lists that apply to all of your ALIs, review and adjust the lists to increase available inventory. |   |   |
+| Additional Member Targeting Checks | There's additional negative impact to your impression count as a result of your current member targeting setup.                                              | Check the Troubleshooting tab regularly for new bid performance updates.                                                                                                                                                                                                                |   |   |
+|                                    |                                                                                                                                                              |                                                                                                                                                                                                                                                                                         |   |   |
 
 
 

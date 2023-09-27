@@ -1,23 +1,18 @@
 ---
 Title : Best Practices for Buying Google Ad Manager Inventory
-Description : This page provides recommendations for maximum ad campaign success when
-targeting Google Ad Manager inventory.
+Description : This page provides recommendations for maximum ad campaign success when targeting Google Ad Manager inventory.
 ---
 
-
 # Best Practices for Buying Google Ad Manager Inventory
-
-
 
 This page provides recommendations for maximum ad campaign success when
 targeting Google Ad Manager inventory.
 
-General
+## General
 
 The following are general guidelines to target inventory:
 
-- Create a separate line item targeting Google
-  Ad Manager(181). This is recommended, but not required.
+- Create a separate line item targeting Google Ad Manager(181). This is recommended, but not required.
 - Make sure to turn off all inventory quality settings by setting your
   **Inventory Quality** Targeting to **Serve on any inventory**.
 - The VAST tag must include the following formats since Google Ad
@@ -28,7 +23,7 @@ The following are general guidelines to target inventory:
 - The skip offset must be 5 seconds, otherwise the bid will be filtered
   out in Google Ad Manager's auction.
 
-Creative Guidelines
+## Creative Guidelines
 
 The following are guidelines specific to creative standards required for
 Google Ad Manager:
@@ -36,38 +31,27 @@ Google Ad Manager:
 - Must be SSL compliant. Serving on secure inventory is selected by
   default. Do NOT make any changes to the setting when you are creating
   a new creative.
-
-- Click the Run Check button to have
-  our VAST check scan your XML document. For more details, see
-  <a href="vast-check.md" class="xref">VAST Check</a>.
+- Click the **Run Check** button to have our VAST check scan your XML document. For more details, see [VAST Check](vast-check.md).
 
   For more information about adding in-stream video creatives, see
-  <a href="add-a-creative.md" class="xref"
-  title="You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-  a Creative</a> and
-  <a href="upload-a-hosted-video-creative.md" class="xref">Upload a
-  Hosted Video Creative</a>.
+  [Add a Creative](add-a-creative.md) and
+  [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md).
 
-Campaign Targeting
+## Campaign Targeting
 
 - Category targeting is possible for video, but it is not reflected in
   reporting.
-
 - You can target Google Ad Manager inventory by position, but it is NOT
-  recommended. In the Video section
-  under Targeting, leave the default
+  recommended. In the **Video** section under **Targeting**, leave the default
   **Any position** selected.
 
-  For more information about video targeting, see
-  <a href="video-targeting.md" class="xref">Video Targeting</a>.
+  For more information about video targeting, see [Video Targeting](video-targeting.md).
 
 Related Topics
 
-- <a href="buying-video-inventory.md" class="xref">Buying Video
-  Inventory</a>
-- <a href="upload-a-hosted-video-creative.md" class="xref">Upload a
-  Hosted Video Creative</a>
-- <a href="vast-check.md" class="xref">VAST Check</a>
+- [Buying Video Inventory](buying-video-inventory.md)
+- [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md)
+- [VAST Check](vast-check.md)
 
 
 
