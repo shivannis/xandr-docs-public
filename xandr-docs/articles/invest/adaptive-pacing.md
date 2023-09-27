@@ -1,9 +1,9 @@
 ---
-title: Adaptive Pacing
+title: Microsoft Invest - Adaptive Pacing
 description: Understand how adaptive pacing prevents overpaying by controlling a line item's pacing and the learn the benefits of adaptive pacing.
 ---
 
-# Adaptive pacing
+# Microsoft Invest - Adaptive pacing
 
 Manually managing the correct pace for a line item - determining how much to spend per hour and day, and implementing that with budgets - is error-prone, and can take an enormous amount of a trader's time. The first problem, determining how much to spend per day, is addressed by [lifetime pacing](lifetime-pacing.md). The second problem, determining how much to spend per hour and per minute within a day, is addressed by Adaptive Pacing.
 

@@ -1,9 +1,9 @@
 ---
-title: Add Basic Line Item Details
+title: Microsoft Invest - Add Basic Line Item Details
 description: In this module, learn how to set the name, state, and ad type, as well as associate additional insertion orders to the line item, all from the Basic Settings section.
 ---
 
-# Add Basic Line Item Details
+# Microsoft Invest - Add Basic Line Item Details
 
 You can set the name, state, and ad type, as well as associate additional insertion orders to the line item, all from the **Basic Settings** section. You can also optionally assign an external code.
 

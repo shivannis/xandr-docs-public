@@ -1,9 +1,9 @@
 ---
-title: Ad Buying with Xandr
+title: Microsoft Invest - Ad Buying with Xandr
 description: Understand how Xandr lets you manage ad buying, optimize your ad buying revenue, and increase buying efficiency.
 ---
 
-# Ad buying with Xandr
+# Microsoft Invest - Ad buying with Xandr
 
 You can manage both traditional media buys and real-time bidding through a single, unified interface. Xandr supports all major third-party ad tags including Atlas and DFA.
 

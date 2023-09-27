@@ -1,9 +1,9 @@
 ---
-title: Add a Creative
+title: Microsoft Invest - Add a Creative
 description: In this module, follow the step-by-step instructions to add one creative at a time to the Xandr platform.
 ---
 
-# Add a Creative
+# Microsoft Invest - Add a Creative
 
 You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 
@@ -49,7 +49,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
     |Action  |More Information  |
     |---------|---------|
-    |Search and select VAST features and extensions from the VAST Features section.     |For more information, see [Supported VAST Features](supported-vast-features.md) and [Create a VAST Extension](monetize/create-a-vast-extension.md).         |
+    |Search and select VAST features and extensions from the VAST Features section.     |For more information, see [Supported VAST Features](supported-vast-features.md) and [Create a VAST Extension](../monetize/create-a-vast-extension.md).         |
     |Search and select companions from the Companions section.     |Companions are supported if the third-party ad server supports it. You cannot associate HTML or JS banners. To serve on Spotify, associate one 640 x 640 image creative as a companion. For more information, see [Companions](companions.md).         |
 
     For more information, see [Video Creatives](video-creatives.md) and [Audio Creatives](audio-creatives.md).
