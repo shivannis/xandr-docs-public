@@ -1,5 +1,5 @@
 ---
-Title : Microsoft Invest - Associate Line Items with a Creative
+Title : Associate Line Items with a Creative
 Description : Learn how by adding a new creative you can associate existing line items to it. This way you can schedule when the creative should serve and apply creative rotation settings to it at the line item level.
 ---
 

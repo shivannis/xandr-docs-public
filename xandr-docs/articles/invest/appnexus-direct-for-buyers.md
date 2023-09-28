@@ -1,5 +1,5 @@
 ---
-Title : Microsoft Invest - Xandr Direct for Buyers
+Title : Xandr Direct for Buyers
 Description : This page explains what Xandr Direct is and
 other helpful details for using it.
 ---
@@ -7,13 +7,11 @@ other helpful details for using it.
 
 # Xandr Direct for buyers
 
-This page explains what Xandr Direct is and other helpful details for using it.
-
 Xandr Direct offers inventory that we believe represents the most direct path to supply. This inventory is brought to you directly through the Xandr SSP technology, and is formed at its core from our direct-to-publisher supply most frequently requested and purchased by our buyers across all formats (display, mobile, video, and native).
 
 Our mission is to provide a safe, high-quality, and easy-to-access marketplace so buyers can purchase inventory with fewer intermediaries taking fees (or adding hops) between the buyer and the inventory owner. This mission of most-direct path to supply is why we have named this offering Xandr Direct.
 
-## The Purpose of Xandr Direct
+## The purpose of Xandr Direct
 
 With Xandr Direct, we are able to streamline the process by which both Xandr and our partners manage access to supply. Just as you can currently target all the inventory at a particular SSP - and then place domains in allowlists or
 blocklists across those SSPs - we are providing an easy way to target Xandr supply that is frequently requested and purchased by buyers, rather than requiring buyers to target each individual seller. This also avoids buyers having to remember the
@@ -33,7 +31,7 @@ Xandr, in the **Partner Center** -- look for
 "Xandr Direct" under the **Seller Group** column. 
 See [Partner Center Screen](partner-center-screen-buyer-view.md) for more information.
 
-## Seller Selection Criteria
+## Seller selection criteria
 
 A number of factors go into determining if a seller is eligible for
 Xandr Direct, including whether the seller owns

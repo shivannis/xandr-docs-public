@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Asynchronous Usersync Pixels
-Description : A technical upgrade so that user syncing happens after a publisher's page has completely finished loading. This allows us to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This will increase spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using
+Title : Asynchronous Usersync Pixels
+Description : A technical upgrade so that user syncing happens after a publisher's page has finished loading. This allows to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This will increase spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using
 their proprietary data on more users.
 ---
 
@@ -68,10 +68,9 @@ The steps shown below provide a simplified description of this process:
 1. Xandr returns the usersync pixel to the
     page.
 1. The usersync pixel loads and the user ID is now synced.
-1. Steps 4-6 are repeated until the user is fully synced or 10 pixels
-    load, whatever comes sooner.
+1. Steps 4-6 are repeated until the user is fully synced or 10 pixels load, whatever comes sooner.
 
-For more detailed information about how browsers load web pages, see [How Browsers Work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/).
+   For more detailed information about how browsers load web pages, see [How Browsers Work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/).
 
 ## European Ad Inventory and Providing Notice, Transparency and Choice
 

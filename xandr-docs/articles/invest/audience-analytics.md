@@ -1,7 +1,7 @@
 ---
-Title : Microsoft Invest - Audience Analytics
-Description : Learn how You can use the Creative Frequency and Recency report to analyze your
-audience at a granular level, the Buyer Reach and the Frequency Report to
+Title : Audience Analytics
+Description : Learn using the Creative Frequency and Recency report to analyze your
+audience at a granular level and the Buyer Reach and the Frequency Report to
 have an insight on how cross device impacted the number of times a
 single person saw the ads across all their devices. 
 ---
@@ -32,6 +32,6 @@ the publisher domains and audiences connected to your line item's
 impressions or views. This report also provides information on your line
 item's splits and their performance.
 
-## Related Topic
+## Related topic
 
 - [Working with Segments](working-with-segments.md)

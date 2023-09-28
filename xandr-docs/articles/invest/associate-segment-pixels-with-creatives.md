@@ -1,5 +1,5 @@
 ---
-Title : Microsoft Invest - Associate Segment Pixels with Creatives
+Title : Associate Segment Pixels with Creatives
 Description : Learn how to associate specific segment pixels with your creatives. 
 ---
 
