@@ -1,11 +1,10 @@
 ---
-title : Associate Creatives with a Line Item in Microsoft Invest
-description : From the Creatives section, learn how to associate creatives with an augmented line item (ALI), schedule when the creatives will serve, determine how the creatives will rotate through line item inventory, and optionally add creative landing page
-URLs
+title : Microsoft Invest - Associate Creatives with a Line Item in Microsoft Invest
+description : learn how to associate creatives with an augmented line item (ALI), schedule when the creatives will serve, determine how the creatives will rotate through line item inventory, and optionally add creative landing page URLs.
 ---
 
 
-# Associate creatives with a line item 
+# Associate creatives with a line item in Microsoft Invest
 
 From the **Creatives** section, you can do the following:
 
@@ -39,11 +38,10 @@ From the **Creatives** section, you can do the following:
       display. You can also narrow your search by choosing a creative
       folder from the dropdown.
 
-      > [!TIP]
-      >
-> You can also place your cursor in the **Search creative name or ID** search field and existing creatives that are associated to the same advertiser as the ALI will display.
+    > [!TIP]
+    > You can also place your cursor in the **Search creative name or ID** search field and existing creatives that are associated to the same advertiser as the ALI will display.
 
-    - Select the **Paste List of IDs** button and enter all  the associated creative IDs separated by commas or hard returns in the modal and click **Add**.
+    - Select the **Paste List of IDs** button and enter all  the associated creative IDs separated by commas or hard returns in the  modal and click **Add**.
 
       Each associated creative displays at the bottom of the **Associated Creatives** subsection, with associated active creatives on the first tab and
       associated inactive creatives on the second tab. Creatives will automatically serve for all flights unless you apply specific flights or custom dates that fall within the date ranges for a specific flight. When creatives are scheduled to serve for all flights and additional flights are added to the ALI, the creatives will continue to serve until the last flight ends.
