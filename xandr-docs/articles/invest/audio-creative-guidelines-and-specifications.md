@@ -1,6 +1,6 @@
 ---
-Title : Audio Creative Guidelines and Specifications
-Description : Learn about guidelines and specifications that creatives must adhere to so that they can serve on the Microsoft platform and other third-party platforms.
+title : Audio Creative Guidelines and Specifications
+description : Learn about guidelines and specifications that creatives must adhere to so that they can serve on the Microsoft platform and other third-party platforms.
 ---
 
 

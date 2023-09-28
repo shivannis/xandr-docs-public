@@ -1,11 +1,12 @@
 ---
-Title : Apps
-Description : Learn about product details and permissions for the apps grapeshot and comScore Agent
+title: Microsoft Invest - Apps 
+description : Learn about product details and permissions for the apps grapeshot and comScore Agent
+
 
 ---
 
 
-# Apps
+# Apps in Microsoft Invest
 
 This documentation explains product details and permissions for the
 following apps:

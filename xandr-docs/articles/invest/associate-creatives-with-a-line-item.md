@@ -1,6 +1,6 @@
 ---
-Title : Associate Creatives with a Line Item in Microsoft Invest
-Description : From the Creatives section, learn how to associate creatives with an augmented line item (ALI), schedule when the creatives will serve, determine how the creatives will rotate through line item inventory, and optionally add creative landing page
+title : Associate Creatives with a Line Item in Microsoft Invest
+description : From the Creatives section, learn how to associate creatives with an augmented line item (ALI), schedule when the creatives will serve, determine how the creatives will rotate through line item inventory, and optionally add creative landing page
 URLs
 ---
 

@@ -1,6 +1,6 @@
 ---
-Title : Asynchronous Usersync Pixels
-Description : User syncing happens after a publisher's page has finished loading. This allows to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This will increase spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using their proprietary data on more users.
+title : Asynchronous Usersync Pixels
+description : User syncing happens after a publisher's page has finished loading. This allows to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This will increase spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using their proprietary data on more users.
 ---
 
 
