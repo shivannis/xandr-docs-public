@@ -1,9 +1,6 @@
 ---
 Title : Audio Creatives
-Description : Learn hosting audio creatives with Xandr or
-traffic them through third-party ad servers, which may be created for
-traditional radio, streaming radio (TuneIn), music streaming (Spotify),
-and podcasts.
+Description : Learn hosting audio creatives with Xandr or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.
 ---
 
 

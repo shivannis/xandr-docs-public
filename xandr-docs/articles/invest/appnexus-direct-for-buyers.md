@@ -1,11 +1,10 @@
 ---
 Title : Xandr Direct for Buyers
-Description : This page explains what Xandr Direct is and
-other helpful details for using it.
+Description : Learn how using Xandr Direct can streamline the process by which both Xandr and partners manage access to supply. Here we apply a way to target Xandr supply that is frequently requested and purchased by buyers, rather than requiring buyers to target each individual seller. 
 ---
 
 
-# Xandr Direct for buyers
+# Xandr Direct for buyers in Microsoft Invest 
 
 Xandr Direct offers inventory that we believe represents the most direct path to supply. This inventory is brought to you directly through the Xandr SSP technology, and is formed at its core from our direct-to-publisher supply most frequently requested and purchased by our buyers across all formats (display, mobile, video, and native).
 
