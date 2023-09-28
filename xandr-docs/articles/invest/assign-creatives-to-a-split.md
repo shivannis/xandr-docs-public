@@ -1,5 +1,5 @@
 ---
-title : Assign Creatives to a Split
+title : Microsoft Invest - Assign Creatives to a Split
 description : Learn how to assign specific creatives for a split to deliver. Creatives can be assigned to the line item. Using the Slit Details and Split Edit pane you can select appropriate creatives. 
 ---
 

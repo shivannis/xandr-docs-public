@@ -1,5 +1,5 @@
 ---
-title : Xandr Direct for Buyers
+title : Microsoft Invest - Xandr Direct for Buyers
 description : Learn how using Xandr Direct can streamline the process by which both Xandr and partners manage access to supply. Here we apply a way to target Xandr supply that is frequently requested and purchased by buyers, rather than requiring buyers to target each individual seller. 
 ---
 
