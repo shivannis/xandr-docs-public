@@ -1,14 +1,14 @@
 ---
 title: Microsoft Invest - Buyer Untargeted Segment Performance Report
-description: Learn about the Buyer Untargeted Segment Performance report that provides information on non-targeted segment performance in your advertising campaigns.
+description: Learn about the Buyer Untargeted Segment Performance report that offers insights on the non-targeted segment performance in your advertising campaigns.
 ---
 
 # Buyer Untargeted Segment Performance report in Microsoft Invest
 
 This report provides buyers with segment performance across multiple ad campaigns and advertisers over untargeted segments. This allows you to:
 
-- Understand the performance of individual untargeted segments across your account
-- Filter for specific conversion pixels to further identify how these segments contribute to your overall buying strategy
+- Understand the performance of individual untargeted segments across your account.
+- Filter for specific conversion pixels to further identify how these segments contribute to your overall buying strategy.
 
 ## Time frame
 

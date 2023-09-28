@@ -3,11 +3,11 @@ title: Microsoft Invest - Buying Billing Report
 description: Use the Buying Billing report to streamline internal invoicing for your advertisers in both managed and third-party buying.
 ---
 
-# Buying Billing report in Microsoft Invest
+# Microsoft Invest's Buying Billing report
 
 The Buying Billing Report allows you to manage internal invoicing for your advertisers across both managed and third-party buying.
 
-If you would like to use this report to analyze your Xandr invoice, see [Understanding Your Invoice](understanding-your-invoice.md).(Login required.)
+If you would like to use this report to analyze your Xandr invoice, see [Understanding Your Invoice](understanding-your-invoice.md). (Login required.)
 
 ## Time frame
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buyer Video Error Report
-description: Use the Buyer Video Error report to report video errors or issues. This report provides information to help the buyer troubleshoot and resolve issues related to buy-side video advertising.
+description: Use the Buyer Video Error report for resolving video errors or issues related to buy-side video advertising.
 ---
 
 # Buyer Video Error report in Microsoft Invest

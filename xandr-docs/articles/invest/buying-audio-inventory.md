@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying Audio Inventory
+title: Microsoft Invest - Buy Audio Inventory
 description: In this article, learn how to buy audio inventory on the Xandr Platform. You can optimize the process by using Xandr's buy-side workflow.
 ---
 
-# Buy Audio Inventory in Microsoft Invest
+# Buy audio inventory in Microsoft Invest
 
 You can buy audio inventory on Xandr using our optimized buy-side workflow.
 

@@ -8,8 +8,8 @@ description: Learn about the Buyer Geo Analytics report that allows you to break
 The **Buyer Geo Analytics** report allows you to break down delivery and performance by geographic area. Sample use cases for this report
 include:
 
-- Buyers who would like to optimize their ad campaigns
-- Buyers who need to report to their client advertisers or agencies on line item delivery by geo
+- Buyers who would like to optimize their ad campaigns.
+- Buyers who need to report to their client advertisers or agencies on line item delivery by geo.
 
 This report can break down performance along the following geographic boundaries:
 
@@ -87,9 +87,9 @@ This report's data is retained for 45 days. For more information about how quick
 | Region | Yes | The region or state name and country code of the user's location, in the format "Baden-Wurttemberg (DE)". The string "4192" can appear in cases where we don't know the region/state or if the region/state doesn't map correctly to a location in our database. |
 | Metro Code | Yes | The name and ID of the metro code of the user's location, in the format "New York NY (501)". The string "unknown values (-1)" can appear in cases where we don't know the metro code or if the metro code doesn't map correctly to a location in our database. <br/> **Note:** Our reporting derives metro codes from the city logged for the auction. However, our geo provider is sometimes unable to determine a city from the IP address associated with the impression, even when the metro code **is** determined. Therefore, there are cases where a line item targeting a specific metro code has impressions in reporting showing a metro code of 1. |
 | Campaign Code | No | The custom code for the campaign. |
-| State House District | Yes | The State House District of the user's location |
-| State Senate District | Yes | The State Senate District of the user's location |
-| Congressional District | Yes | The Congressional District of the user's location |
+| State House District | Yes | The State House District of the user's location. |
+| State Senate District | Yes | The State Senate District of the user's location. |
+| Congressional District | Yes | The Congressional District of the user's location. |
 | Buying Currency | No | The transaction currency used by the buyer to purchase this impression. |
 | UK Constituent Country | No | The Constituent Country of the user's location. This is applicable for United Kingdom. Possible values include: <br/> - England <br/> - Scotland <br/> - Wales <br/> - Northern Ireland |
 
@@ -120,7 +120,7 @@ This report's data is retained for 45 days. For more information about how quick
 | Cost eCPC | money |  | The effective cost per click. For definitions of eCPC and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Cost eCPA | money |  | The effective cost per acquisition (conversion). For definitions of eCPA and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Cost | money | Cost | The total cost of the inventory purchased. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Profit | money | Booked Revenue - Cost | The booked revenue minus total cost.. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Profit | money | Booked Revenue - Cost | The booked revenue minus total cost. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | CPM | money | CPM | The cost per one thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Total Cost | money | Media Cost + Data Costs + Partner Fees + Commissions + Serving Fees + Publisher Revenue | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |
 | Total Cost eCPM | money | (Total Cost/Imps) * 1,000 | The total cost per 1,000 imps. |

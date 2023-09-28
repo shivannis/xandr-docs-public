@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Buy Deals
-description: In this article, learn about the two approaches to make a deal with sellers. A deal represents an agreement between a buyer and a seller, granting unique access to inventory and data.
+description: In this article, learn about the two seller deal approaches, granting unique access to inventory and data through agreements.
 ---
 
-# Buy deals in Microsoft Invest
+# Buy deals from Microsoft Invest
 
 A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. There are two ways to strike
 deals with sellers:

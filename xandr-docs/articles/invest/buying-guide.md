@@ -9,7 +9,7 @@ This guide helps you understand the buy-side capabilities of Microsoft Invest an
 advertisers, see the [Network Guide](network-guide.md). For direct agreements with sellers, see [Buying Deals](buying-deals.md).
 
 > [!TIP]
-> New to buy-side setup tasks and concepts? Check our **[Training: Microsoft Advertising's Learning Lab](xandr-training-portal.md)** for self-paced videos and upcoming classroom and webinar sessions.
+> New to buy-side setup tasks and concepts? Check our **[Training: Microsoft Advertising's Learning Lab](../training-resources/training-microsoft-advertising-learning-lab.md)** for learning path of Programmatic Advertising.
 
 ## In this guide
 

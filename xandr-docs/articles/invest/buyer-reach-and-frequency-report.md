@@ -74,8 +74,8 @@ Intervals determine how your data is grouped together into rows in the report re
 | Column | Description |
 |--------|-------------|
 | Imps | The total number of impressions. |
-| Unique Devices | The total number of unique cookies, mobile or other devices reached by the impressions |
-| Average Impressions per Device | The number of impressions viewed per unique device |
+| Unique Devices | The total number of unique cookies, mobile or other devices reached by the impressions. |
+| Average Impressions per Device | The number of impressions viewed per unique device. |
 | Cross Device Incremental Device Reach | The number of unique devices reached due to cross-device audience extension. This metric represents the number of unique devices that are not a part of the targeted segment, but on which impressions were delivered due to a cross device graph being applied, extending the reach to more devices owned by a consumer. |
 | Cross Device Incremental Imps | The number of impressions transacted due to cross-device audience extension. This metric represents the number of impressions that were delivered on devices outside the targeted segment(s) for which a cross-device graph was applied, extending the reach to more devices owned by a consumer. |
 | Identified Imps | The total number of impressions that included a cookie, device id, or other identifier as part of the ad request. |

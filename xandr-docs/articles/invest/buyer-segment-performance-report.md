@@ -1,14 +1,14 @@
 ---
 title: Microsoft Invest - Buyer Segment Performance Report
-description: Use the Buyer Segment Performance report to understand segment performance within an advertising campaign. This report offeres insights into which segments are driving the most engagement and conversions.
+description: Use the Buyer Segment Performance report to understand segment performance within an advertising campaign. The report offers insights on the segment engagement and conversions.
 ---
 
 # Buyer Segment Performance report in Microsoft Invest
 
 This report provides buyers with segment performance across multiple ad campaigns and advertisers. This allows you to:
 
-- Understand the performance of individual targeted segments across your account
-- Filter for specific conversion pixels to further identify how these segments contribute to your overall buying strategy
+- Understand the performance of individual targeted segments across your account.
+- Filter for specific conversion pixels to further identify how these segments contribute to your overall buying strategy.
 
 > [!NOTE]
 > **Impressions across user segments:** Since this report aggregates impressions served by user segment, impressions associated with users present in multiple segments will be counted more than once. The purpose of this report is to analyze user segments, not individual user counts. The report is set to automatically group by segment.
@@ -71,7 +71,7 @@ of Reporting Data](availability-of-reporting-data.md).
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Segment | Yes | The user segment associated with the impression in the format "Submitted application (220)". |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. |
-| Age | Yes | The age range of the user associated with the impression |
+| Age | Yes | The age range of the user associated with the impression. |
 | Gender | Yes | The gender of the user assocaited with the impression. |
 
 Reports automatically group by all selected dimensions.
