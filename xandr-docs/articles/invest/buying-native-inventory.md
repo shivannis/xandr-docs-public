@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buying Native Inventory
-description: Native ads allow publishers to control user's experience by integrating advertising within their inventory. This article provides steps for buying native inventory.
+description: This article provides steps for buying native inventory. Native ads allow publishers to control user's experience by integrating advertising within their inventory.
 ---
 
 # Buying native inventory in Microsoft Invest
@@ -31,7 +31,7 @@ For specific information on individual sellers, see [Native Inventory Seller Spe
 Some native sellers require you to go through a quick buyer audit before they'll grant access to their inventory. Here is a list of sellers and their allowlist requirements:
 
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
-|-|-|-|
+|:-|:-|:-|
 | Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](./partner-center-guide.md) documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
 | Sanoma Finland | If you have not previously bought Sanoma Finland via Xandr, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:appnexus@triplelift.com). |
 | TripleLift | If you have not previously bought TripleLift via Xandr, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com). |
@@ -55,7 +55,7 @@ This will bring up the **Create New Creative** dialog.
 To maximize reach for your creatives across native inventory sources, here are some general guidelines we recommend:
 
 |     Field    |                Xandr Guidelines               |
-|--------------|-----------------------------------------------|
+|:-------------|:----------------------------------------------|
 | Title        | 25 character maximum                          |
 | Body         | 300 character maximum                         |
 | Logo         | 1:1 aspect ratio                              |

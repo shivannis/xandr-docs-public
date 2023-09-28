@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Competitive Exclusions
-description: Use competitive exclusions to prevent creatives from serving alongside each other. These settings are available at the advertiser and creative levels.
+description: Use the competitive exclusions settings to prevent creatives from serving alongside each other. These settings are available at the advertiser and creative levels.
 ---
 
 # Microsoft Invest - competitive exclusions

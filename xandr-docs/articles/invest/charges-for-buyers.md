@@ -1,6 +1,6 @@
 ---
-title: Microsoft Invest: Microsoft Invest - Charges for Buyers
-description: This article explains about the Buyer Auction Service Charge. The charge for purchases of third-party inventory can be either a fee or a deduction. 
+title: Microsoft Invest - Charges for Buyers
+description: This article explains about the buyer auction service charge. The charge for purchases of third-party inventory can be either a fee or a deduction. 
 ---
 
 # Microsoft Invest: Charges for Buyers
@@ -33,6 +33,6 @@ For **example**, let's say the maximum creative size in your contract is (b) 40K
 
 Your creative overage fee is calculated as follows: [[(a) 60KB - (b) 40KB] x 100,000 imps] x [(d) $2.50/976,563 KB] = $5.12
 
-## Creative Audit
+## Creative audit
 
 The charge for each creative audit performed by Xandr, both initial audits and re-audits. The creative audit fee is the standard audit rate with standard turnaround time. Priority audit is a higher fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the **Completed Creative Audits Report** in the UI.

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Charges for Sellers
-description: This article explains about the Seller Auction Service Charge which is the charge for selling inventory to third-party buyers.
+description: This article explains about the seller auction service charge which is a charge for selling inventory to third-party buyers.
 ---
 
 # Microsoft Invest: Charges for sellers
@@ -18,7 +18,7 @@ The charge for serving managed, kept, mediated, or direct impressions and for se
 For contracts which contain a clause that requires a Seller Revenue Share Minimum fee (included on your Buyer invoice for Seller activity during the invoiced period), we review Xandr's earnings from the Seller’s resold traffic and apply a minimum CPM (the exact value applied is defined in the contract). For example, assuming the Seller Auction Service fee = **10%** and the Seller Revenue Share Minimum fee CPM = **$0.01 CPM**, the following calculations could be made:
 
 | Month | Resold Impressions | Gross Resold Revenue | Seller Auction Service fee (see formulas below) | Seller Rev Share minimum (see formulas below) | Seller Rev Share Minimum Fee Assessed (explanation) |
-|--|--|--|--|--|--|
+|:--|:--|:--|:--|:--|:--|
 | Month 1 | 1,000,000,000 | $200,000 | $20,000 <br><br> ($200,000 * 10%) | $10,000 (1B/1000*0.01) | $0 (since minimum commitment was met) <br><br>($10,000 < $20,000) |
 | Month 2 | 3,000,000,000 | $200,000 | $20,000 <br><br> ($200,000 * 10%) | $30,000 <br><br> (3B/1000*.01) | $10,000 (since minimum commitment was not met) <br><br> ($30,000 - $20,000) |
 

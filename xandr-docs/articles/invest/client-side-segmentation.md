@@ -7,7 +7,7 @@ description: This article explains about client-side segmentation. Client-side s
 
 The most common way of building audience segments is by placing client-side segment pixels on websites or creatives, signaling that a user has visited a web page or taken a simple action. If you're new to audience targeting or if you have relatively simple audience targeting strategies, then this method is probably the one that you'll want to use.
 
-## Use Cases
+## Use cases
 
 - **Performance / retargeting campaigns**. As users browse the Internet, they visit sites that move them along the attribution funnel (or a series of interactions that elicit a desired action from the user, such as a page visit, conversion, etc.). You, as a buyer, might set up several ad campaigns each targeting a particular segment that corresponds to a section of the attribution funnel. Users are added to these segments as they visit different pages relevant to the acquisition event such as visiting the home page, adding items to a shopping cart page, a purchase confirmation page, etc.
 
@@ -17,4 +17,4 @@ The most common way of building audience segments is by placing client-side segm
 
 - Step 1: [Create a Segment Pixel](./create-a-segment-pixel.md)
 - Step 2: [Export a Segment Pixel](./export-a-segment-pixel.md)
-- Step 3: Place pixel on page
+- Step 3: Place pixel on page.
