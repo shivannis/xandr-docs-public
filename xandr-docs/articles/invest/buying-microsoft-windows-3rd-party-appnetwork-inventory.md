@@ -93,18 +93,18 @@ To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 
 ### Targeting criteria information
 
-| Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |                      |
-|-------------------------------------|----------------------------------|----------------------|
-| Targeting Criteria                  | Pub ID 348882                    | Pub ID 336212        |
-| Seller Member                       | 280                              | 280                  |
-| Language                            | Available                        | Available            |
-| Supply Type                         | Web                              | Web                  |
-| OS Family                           | Microsoft Windows                | Microsoft Windows    |
-| Device Type*                        | All                              | All                  |
-| Device Make Model                   | N/A                              | Available            |
-| Carrier                             | Available                        | Available            |
-| Lat/Long                            | Limited Availability             | Limited Availability |
-| App Targeting**                     | Limited Availability             | Limited Availability |
+| Targeting Criteria | Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
+|--------------------|-------------------------------------|----------------------------------|
+| Pub ID             | 348882                              | 336212                           |
+| Seller Member      | 280                                 | 280                              |
+| Language           | Available                           | Available                        |
+| Supply Type        | Web                                 | Web                              |
+| OS Family          | Microsoft Windows                   | Microsoft Windows                |
+| Device Type*       | All                                 | All                              |
+| Device Make Model  | N/A                                 | Available                        |
+| Carrier            | Available                           | Available                        |
+| Lat/Long           | Limited Availability                | Limited Availability             |
+| App Targeting**    | Limited Availability                | Limited Availability             |
 
 It is recommended to **NOT** use Device Type for targeting. Retain the "All" default setting to maximize device targeting.
 

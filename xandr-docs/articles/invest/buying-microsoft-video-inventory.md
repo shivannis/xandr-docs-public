@@ -38,8 +38,8 @@ The following table summarizes the benefits and availability of each inventory t
 
 To learn more about Microsoft's various video creative specifications, see the following:
 
-- [Microsoft Creative Specifications](http://advertising.microsoft.com/creative-specs)
-- [Microsoft Creative Acceptance Policy](http://advertising.microsoft.com/creative-acceptance-policy)
+- [Microsoft Creative Specifications](https://advertising.microsoft.com/creative-specs)
+- [Microsoft Creative Acceptance Policy](https://advertising.microsoft.com/creative-acceptance-policy)
 
 ## Targeting Microsoft video inventory
 
