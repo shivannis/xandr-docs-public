@@ -1,33 +1,16 @@
 ---
-Title : Buying Hulu Inventory
-Description : To buy OTT inventory serving on Hulu:
-- Make sure your video creatives meet the
-<a href="ott-video-creative-specifications.md" class="xref">OTT Video
+title: Microsoft Invest - Buying Hulu Inventory
+description: Learn about the instructions to buy Hulu inventory in Microsoft Invest.
 ---
 
-
-# Buying Hulu Inventory
-
-
+# Buy Hulu inventory in Microsoft Invest
 
 To buy OTT inventory serving on Hulu:
 
-- Make sure your video creatives meet the
-  <a href="ott-video-creative-specifications.md" class="xref">OTT Video
-  Creative Specifications</a>.
-- Make sure your creatives also meet the Hulu creative specifications on
-  the <a
-  href="https://hulu.disneyadvertising.com/ad-products/video-commercial/"
-  class="xref" target="_blank">Hulu website</a>. Hulu creatives are
-  required to be hosted video creatives delivered as inline VAST.
-- Contact your Xandr representative for
-  assistance with the creative upload process.
+- Make sure your video creatives meet the [OTT Video Creative Specifications](ott-video-creative-specifications.md).
+- Make sure your creatives also meet the Hulu creative specifications on the [Hulu website](https://hulu.disneyadvertising.com/ad-products/video-commercial/). Hulu creatives are required to be hosted video creatives delivered as inline VAST.
+- Contact your Xandr representative for assistance with the creative upload process.
 
-Related Topics
+## Related topics
 
-- <a href="ott-video-creative-specifications.md" class="xref">OTT Video
-  Creative Specifications</a>
-
-
-
-
+- [OTT Video Creative Specifications](ott-video-creative-specifications.md)
