@@ -27,7 +27,7 @@ advertisers, see the [Network Guide](network-guide.md). For direct agreements wi
 - [APAC Supply Information - Platform Inventory by Seller](apac-supply-information-platform-inventory-by-seller.md)
 - [Welcome to Mobile](welcome-to-mobile.md): Advertising on mobile devices is mostly similar to traditional display advertising (and where it differs, we'll explain those differences). This section is designed to provide you with a solid understanding of how advertising works on mobile devices.
 - [Introduction to Viewability](introduction-to-viewability.md): Understand how Xandr measures ad views, and optimize the chances of your audience viewing your creatives.
-- [Buying Video Inventory](buying-video-inventory.md): This guide provides advanced video reference information as well as information about buying in-stream, out-stream, and ConnectedTV inventory.
+- [Buying Video Inventory](buying-video-inventory.md): This guide provides advanced video reference information as well as information about buying in-stream, out-stream, and Connected TV inventory.
 - [Buying Audio Inventory](buying-audio-inventory.md): This guide provides information about buying audio inventory.
 - [Buying Native Inventory](buying-native-inventory.md): Websites that sell native inventory accept ad content but enforce their own display properties to integrate. This guide describes how to buy native inventory on properties that allow it.
 - [Data Marketplace - Buyer Overview](data-marketplace-buyer-overview.md): Xandr supports automatic clearing of third-party segment data you can purchase and use to target audience segments.

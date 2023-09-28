@@ -16,7 +16,7 @@ This report can break down performance along the following geographic boundaries
 - **Country**: The user's [Country](../xandr-api/country-service.md).
 - **Region/State**: The user's [Region](../xandr-api/region-service.md), e.g., Baja California or California.
 - **Metro Code**: The user's [Metro Code](../xandr-api/designated-market-area-service.md).
-- **Political Districts**: The user's [Political District](../xandr-api/political-district-service.md) (US Only)
+- **Political Districts**: The user's [Political District](../xandr-api/political-district-service.md) (US Only).
 
 For more information on the available data fields and their definitions, see [Dimensions](#dimensions) and [Metrics](#metrics) below.
 
