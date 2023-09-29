@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying Microsoft Inventory
+title: Microsoft Invest - Buy Microsoft Inventory
 description: Learn how to buy, create, and target Microsoft inventory. This article also explains ways to buy inventory from a specific Microsoft publisher.
 ---
 
-# Buy Microsoft inventory in Microsoft Invest
+# Microsoft Invest - Buy Microsoft inventory
 
 With **Microsoft Advertising Exchange**, Xandr offers exclusive programmatic access to a quality, engaged audience in a brand safe environment.
 

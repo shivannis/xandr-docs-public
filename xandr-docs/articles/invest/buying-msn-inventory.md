@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying MSN Inventory
-description: Learn about Microsoft MSN Inventory's volume, creative specifications, and targeting instructions.
+title: Microsoft Invest - Buy MSN Inventory
+description: In this article, learn about Microsoft MSN inventory's volume, availability, creative specifications, and targeting instructions.
 ---
 
-# Buy MSN inventory in Microsoft Invest
+# Microsoft Invest - Buy MSN inventory
 
 ## Inventory overview
 
@@ -35,7 +35,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 ## Formats and specifications
 
 | Publisher      | 300x250 | 728x90 | 320x50 | 300x600 |
-|----------------|---------|--------|--------|---------|
+|:---------------|:--------|:-------|:-------|:--------|
 | MSN            | X       | X      |        | X       |
 | MSN Mobile Web |         |        | X      |         |
 | MSN Mobile App |         |        | X      |         |
@@ -48,7 +48,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 For information on general inventory targeting, review the following documentation:
 
 - [Buying Microsoft Inventory](buying-microsoft-inventory.md)
-- [domain-targeting.html](domain-targeting.md)
+- [domain-targeting.html](../monetize/domain-targeting.md)
 
 To target MSN.com inventory:
 

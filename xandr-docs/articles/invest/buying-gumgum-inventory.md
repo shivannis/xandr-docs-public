@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying GumGum Inventory
-description: Learn how to buy a GumGum inventory to enhance user engagement and display a creative through GumGum's inventory.
+title: Microsoft Invest - Buy GumGum Inventory
+description: In this article, learn how to buy a GumGum inventory to enhance user engagement and display a creative through GumGum's inventory.
 ---
 
-# Buy a GumGum inventory in Microsoft Invest
+# Microsoft Invest - Buy a GumGum inventory
 
 You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://www.gumgum.com/image-recognition/in-image-advertising), which are available programmatically through Xandr. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
 
@@ -23,7 +23,7 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 > Do not submit for audit since the creative will only be able to render on GumGum's inventory and the Xandr team cannot audit it.
 
 | GumGum Product           | Xandr Size |
-|--------------------------|------------|
+|:-------------------------|:-----------|
 | In-Image 728x90          | 10x10      |
 | In-Image Animated        | 12x12      |
 | In-Image                 | 13x13      |
@@ -44,7 +44,7 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 
 Use the [https://gumgum.com/creative-preview](https://gumgum.com/creative-preview) to view creative.
 
-### Step 2. Enter The HTML tag code
+### Step 2. Enter the HTML tag code
 
 Enter the creative ad HTML code into the field in the bottom-half panel and select the correct product type.
 

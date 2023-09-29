@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying Microsoft Deals
-description: Learn how to buy Microsoft deals using Package Marketplace. You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory.
+title: Microsoft Invest - Buy Microsoft Deals
+description: Learn how to use Package Marketplace to buy Microsoft deals from both the Microsoft Advertising Exchange and Microsoft's Australia and New Zealand inventory.
 ---
 
-# Buy Microsoft deals in Microsoft Invest
+# Microsoft Invest - Buy Microsoft deals
 
 You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory using our Package Marketplace.
 

@@ -1,12 +1,12 @@
 ---
-title: Microsoft Invest - Buying Mobile Inventory
+title: Microsoft Invest - Buy Mobile Inventory
 description: Learn how to buy and setup your campaign for mobile inventory. This article also lists the approaches to work with mobile advertisers.
 ---
 
-# Buy mobile inventory in Microsoft Invest
+# Microsoft Invest - Buy mobile inventory
 
 > [!NOTE]
-> This topic applies only to Standard Line Items (not available in Invest). A new version of this document that is applicable to Microsoft Invest and Augmented Line Items will be available at a later date.
+> This topic applies only to Standard Line Items (not available in Microsoft Invest). A new version of this document that is applicable to Microsoft Invest and Augmented Line Items will be available at a later date.
 
 There are several different ways to buy mobile inventory using Xandr. The procedures are similar, but they vary slightly depending on how you want to buy. The documents in the **Campaign Setup** section show you how to set up your campaigns for each of these scenarios.
 

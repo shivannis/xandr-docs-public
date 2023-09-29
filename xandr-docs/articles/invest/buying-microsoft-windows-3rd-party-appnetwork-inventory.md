@@ -1,12 +1,12 @@
 ---
-title: Microsoft Invest - Buying Microsoft Windows 3rd Party AppNetwork Inventory
-description: Learn about Microsoft Windows 3rd Party AppNetwork Inventory's creative specifications, targeting methods, and ways to maximize reach across Windows App inventory.
+title: Microsoft Invest - Buy Microsoft Windows 3rd Party AppNetwork Inventory
+description: Learn about Microsoft Windows 3rd party AppNetwork inventory's creative specifications, targeting methods, and ways to maximize reach across Windows app inventory.
 ---
 
-# Buy Microsoft Windows 3rd Party AppNetwork inventory in Microsoft Invest
+# Microsoft Invest - Buy Microsoft Windows 3rd party AppNetwork inventory
 
 > [!TIP]
-> For general mobile documentation, see [Welcome to Mobile](welcome-to-mobile.md)
+> For general mobile documentation, see [Welcome to Mobile](welcome-to-mobile.md).
 
 ## Inventory overview
 
@@ -30,7 +30,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 ### Creative specs
 
 | Creative Size | Windows AppNetwork | Windows Phone AppNetwork |
-|---------------|--------------------|--------------------------|
+|:--------------|:-------------------|:-------------------------|
 | 160x600       | X                  |                          |
 | 250x250       | X                  |                          |
 | 300x250       | X                  | X                        |
@@ -94,7 +94,7 @@ To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 ### Targeting criteria information
 
 | Targeting Criteria | Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
-|--------------------|-------------------------------------|----------------------------------|
+|:-------------------|:------------------------------------|:---------------------------------|
 | Pub ID             | 348882                              | 336212                           |
 | Seller Member      | 280                                 | 280                              |
 | Language           | Available                           | Available                        |

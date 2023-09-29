@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying Hulu Inventory
-description: Learn about the instructions to buy Hulu inventory in Microsoft Invest.
+title: Microsoft Invest - Buy Hulu Inventory
+description: In this article, learn about the instructions detailing the process of buying Hulu inventory within the Microsoft Invest platform.
 ---
 
-# Buy Hulu inventory in Microsoft Invest
+# Microsoft Invest - Buy Hulu inventory
 
 To buy OTT inventory serving on Hulu:
 

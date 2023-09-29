@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Buy Microsoft Casual Games (Windows O&O Apps)
-description: Learn how to buy and target Microsoft casual games within the Windows O&O apps. These games offer a range of fun and engaging options for users.
+description: Learn how to buy and target Microsoft Casual Games within the Windows O&O apps. These games offer a range of fun and engaging options for users.
 ---
 
-# Buy Microsoft casual games (Windows O&O apps) in Microsoft Invest
+# Microsoft Invest - Buy Microsoft Casual Games (Windows O&O apps)
 
 ## Inventory overview
 
@@ -24,11 +24,11 @@ The Microsoft Solitaire Collection remains the most played computer game of all 
 
 **Home screen** - Below the fold, at the bottom of the first menu screen
 
-:::image type="content" source="media/solitairehome.png" alt-text="Diagram of Solitaire Home screen.":::
+    :::image type="content" source="media/solitairehome.png" alt-text="Screenshot of Solitaire home screen.":::
 
 **Sub-screens** - Above the fold, right side of sub menu screens
 
-:::image type="content" source="media/solitairesub.png" alt-text="Diagram of Solitaire Sub-screen.":::
+    :::image type="content" source="media/solitairesub.png" alt-text="Screenshot of Solitaire sub-screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -38,11 +38,11 @@ Minesweeper is the classic puzzle game that has been a part of Windows for more 
 
 **Game Play and Game Completion Screens** - Above the fold, right side of game screen
 
-:::image type="content" source="media/minesweepergame.png" alt-text="Diagram of Game Play and Game Completion screen.":::
+    :::image type="content" source="media/minesweepergame.png" alt-text="Screenshot of Game Play and Game Completion screen.":::
 
 **Daily Challenge Menu Screens** - Above the fold, right side of menu screens
 
-:::image type="content" source="media/minesweeperdaily.png" alt-text="Diagram of Daily Challenge Menu screen.":::
+    :::image type="content" source="media/minesweeperdaily.png" alt-text="Screenshot of Daily Challenge menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -53,11 +53,11 @@ Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screen
 
 **Game Play and Game Completion Screens** - Above the fold, bottom right
 
-:::image type="content" source="media/jigsawgame.png" alt-text="Diagram of Microsoft Jigsaw Game Play and Game Completion screen.":::
+    :::image type="content" source="media/jigsawgame.png" alt-text="Screenshot of Microsoft Jigsaw Game Play and Game Completion screen.":::
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-:::image type="content" source="media/jigsawmenu.png" alt-text="Diagram of Microsoft Jigsaw Menu screen.":::
+    :::image type="content" source="media/jigsawmenu.png" alt-text="Screenshot of Microsoft Jigsaw menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -67,11 +67,11 @@ The new Microsoft Sudoku is the popular logic puzzle game that makes the most of
 
 **Game Play and Game Completion Screens** - Above the fold, bottom left
 
-:::image type="content" source="media/sudokugame.png" alt-text="Diagram of Microsoft Sudoku Game Play and Game Completion screen.":::
+    :::image type="content" source="media/sudokugame.png" alt-text="Screenshot of Microsoft Sudoku Game Play and Game Completion screen.":::
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-:::image type="content" source="media/sudokumenu.png" alt-text="Diagram of Microsoft Sudoku menu screen.":::
+    :::image type="content" source="media/sudokumenu.png" alt-text="Screenshot of Microsoft Sudoku menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -81,11 +81,11 @@ Microsoft Mahjong is the classic matching game with beautiful imagery, intuitive
 
 **Menu Screens** - Below the fold, right side of menu screens
 
-:::image type="content" source="media/mahjongmenu.png" alt-text="Diagram of Microsoft Mahjong menu screen.":::
+    :::image type="content" source="media/mahjongmenu.png" alt-text="Screenshot of Microsoft Mahjong menu screen.":::
 
 **Daily Challenge Screens** - Above the fold, right side of screens
 
-:::image type="content" source="media/mahjongdaily.png" alt-text="Diagram of Microsoft Mahjong Daily Challenge screen.":::
+    :::image type="content" source="media/mahjongdaily.png" alt-text="Screenshot of Microsoft Mahjong Daily Challenge screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -95,11 +95,11 @@ Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds
 
 **Main Menu Screen** - Below the fold, right side of screen
 
-:::image type="content" source="media/treasuremain.png" alt-text="Diagram of Microsoft Treasure Hunt menu screen.":::
+    :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
 
 **Game Play and Game Completion Screens** - Above the fold, right side of screen
 
-:::image type="content" source="media/treasuregame.png" alt-text="Diagram of Microsoft Treasure Game Play and Game Completion screen.":::
+    :::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Microsoft Treasure Game Play and Game Completion screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -115,7 +115,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 **Microsoft Solitaire Collection**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 | Windows Mobile                | X       |        |         |        | X      |
 | Android & iOS                 | X       |        |         |        | X      |
@@ -126,38 +126,38 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 **Microsoft Minesweeper**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
 **Microsoft Jigsaw**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
 **Microsoft Sudoku**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
 **Microsoft Mahjong**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
 **Microsoft Treasure Hunt**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        | X       |        |        |
 
 **Microsoft Ultimate Word Game**
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
-|-------------------------------|---------|--------|---------|--------|--------|
-| Windows Desktop PCs & Tablets | X       |    X   |         |        |        |
+|:------------------------------|:--------|:-------|:--------|:-------|:-------|
+| Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
 > [!NOTE]
 > SSL creative required for all Microsoft Casual Games.
@@ -172,7 +172,7 @@ There are three different ways you can target Microsoft Casual Games:
 
 For information on general inventory targeting, see [Buying Microsoft Inventory](buying-microsoft-inventory.md).
 
-### Target Microsoft casual games in campaign setup
+### Target Microsoft Casual Games in campaign setup
 
 To target Microsoft Casual Games inventory when setting up a line item or campaign:
 
@@ -181,7 +181,7 @@ To target Microsoft Casual Games inventory when setting up a line item or campai
 1. In the **Inventory Quality** section, select **Serve on any inventory**.
 1. In the Inventory section, click **Edit**.
 1. On the **3rd Party Inventory** &gt; search **Microsoft Advertising Exchange (280)**.
-1. On the Search for Publishers &gt; Select **Microsoft Casual Games (679569)**.
+1. On the **Search for Publishers** &gt; Select **Microsoft Casual Games (679569)**.
 1. Click **Add**.
 
 To target Microsoft Casual Games inventory when setting up a Augmented Line Item:
@@ -201,7 +201,7 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](get-de
     Available Microsoft Casual Games packages:
 
     | ID   | Package                                                                      |
-    |------|------------------------------------------------------------------------------|
+    |:------|:----------------------------------------------------------------------------|
     | 6332 | Run of Microsoft Casual Games Package                                        |
     | 6333 | Run of Microsoft Casual Games Apps Package -- Microsoft Solitaire Collection |
     | 6334 | Run of Microsoft Casual Games Apps Package -- Microsoft Jigsaw               |
@@ -218,12 +218,12 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](get-de
 
      For more information, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
 
-### Target Microsoft casual games through the API
+### Target Microsoft Casual Games through the API
 
 You can target Microsoft Casual Games through the API on the [Profile Service](../xandr-api/profile-service.md). To target placements on specific games, use the IDs below in the `site_targets` array.
 
 | ID      | Publisher                      |
-|---------|--------------------------------|
+|:--------|:-------------------------------|
 | 1751983 | Microsoft Legacy Apps          |
 | 1761367 | Microsoft Jackpot              |
 | 1761368 | Microsoft Jigsaw               |

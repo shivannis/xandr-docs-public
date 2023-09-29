@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Buying Microsoft Outlook.com Inventory
-description: Learn how to buy and target Microsoft Outlook.com inventory on the Xandr platform.
+title: Microsoft Invest - Buy Microsoft Outlook.com Inventory
+description: In this article, learn about Microsoft Outlook.com inventory's volume, availability, creative specifications, and targeting instructions.
 ---
 
-# Buy Microsoft Outlook.com inventory in Microsoft Invest
+# Microsoft Invest - Buy Microsoft Outlook.com inventory
 
 You can buy Microsoft Outlook.com inventory on the Xandr platform.
 
@@ -30,7 +30,7 @@ Outlook.com combines the best of Outlook and Hotmail to offer a clutter-free env
 The recommended minimum creative dimensions are 160px x 600px.
 
 | Publisher | 160x600 | 728x90 | 300x50 | 300x600 |
-|-----------|---------|--------|--------|---------|
+|:----------|:--------|:-------|:-------|:--------|
 | Outlook   | X       |        |        |         |
 
 > [!NOTE]
