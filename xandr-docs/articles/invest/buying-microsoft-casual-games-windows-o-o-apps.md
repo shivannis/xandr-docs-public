@@ -24,11 +24,11 @@ The Microsoft Solitaire Collection remains the most played computer game of all 
 
 **Home screen** - Below the fold, at the bottom of the first menu screen
 
-     :::image type="content" source="media/solitairehome.png" alt-text="Screenshot of Solitaire home screen.":::
+:::image type="content" source="media/solitairehome.png" alt-text="Screenshot of Solitaire home screen.":::
 
 **Sub-screens** - Above the fold, right side of sub menu screens
 
-     :::image type="content" source="media/solitairesub.png" alt-text="Screenshot of Solitaire sub-screen.":::
+:::image type="content" source="media/solitairesub.png" alt-text="Screenshot of Solitaire sub-screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -38,11 +38,11 @@ Minesweeper is the classic puzzle game that has been a part of Windows for more 
 
 **Game Play and Game Completion Screens** - Above the fold, right side of game screen
 
-     :::image type="content" source="media/minesweepergame.png" alt-text="Screenshot of Game Play and Game Completion screen.":::
+:::image type="content" source="media/minesweepergame.png" alt-text="Screenshot of Game Play and Game Completion screen.":::
 
 **Daily Challenge Menu Screens** - Above the fold, right side of menu screens
 
-     :::image type="content" source="media/minesweeperdaily.png" alt-text="Screenshot of Daily Challenge menu screen.":::
+:::image type="content" source="media/minesweeperdaily.png" alt-text="Screenshot of Daily Challenge menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -53,11 +53,11 @@ Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screen
 
 **Game Play and Game Completion Screens** - Above the fold, bottom right
 
-     :::image type="content" source="media/jigsawgame.png" alt-text="Screenshot of Microsoft Jigsaw Game Play and Game Completion screen.":::
+:::image type="content" source="media/jigsawgame.png" alt-text="Screenshot of Microsoft Jigsaw Game Play and Game Completion screen.":::
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-     :::image type="content" source="media/jigsawmenu.png" alt-text="Screenshot of Microsoft Jigsaw menu screen.":::
+:::image type="content" source="media/jigsawmenu.png" alt-text="Screenshot of Microsoft Jigsaw menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -67,11 +67,11 @@ The new Microsoft Sudoku is the popular logic puzzle game that makes the most of
 
 **Game Play and Game Completion Screens** - Above the fold, bottom left
 
-     :::image type="content" source="media/sudokugame.png" alt-text="Screenshot of Microsoft Sudoku Game Play and Game Completion screen.":::
+:::image type="content" source="media/sudokugame.png" alt-text="Screenshot of Microsoft Sudoku Game Play and Game Completion screen.":::
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-    :::image type="content" source="media/sudokumenu.png" alt-text="Screenshot of Microsoft Sudoku menu screen.":::
+:::image type="content" source="media/sudokumenu.png" alt-text="Screenshot of Microsoft Sudoku menu screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -81,11 +81,11 @@ Microsoft Mahjong is the classic matching game with beautiful imagery, intuitive
 
 **Menu Screens** - Below the fold, right side of menu screens
 
-     :::image type="content" source="media/mahjongmenu.png" alt-text="Screenshot of Microsoft Mahjong menu screen.":::
+:::image type="content" source="media/mahjongmenu.png" alt-text="Screenshot of Microsoft Mahjong menu screen.":::
 
 **Daily Challenge Screens** - Above the fold, right side of screens
 
-     :::image type="content" source="media/mahjongdaily.png" alt-text="Screenshot of Microsoft Mahjong Daily Challenge screen.":::
+:::image type="content" source="media/mahjongdaily.png" alt-text="Screenshot of Microsoft Mahjong Daily Challenge screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
@@ -95,11 +95,11 @@ Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds
 
 **Main Menu Screen** - Below the fold, right side of screen
 
-     :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
+:::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
 
 **Game Play and Game Completion Screens** - Above the fold, right side of screen
 
-     :::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Microsoft Treasure Game Play and Game Completion screen.":::
+:::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Microsoft Treasure Game Play and Game Completion screen.":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
