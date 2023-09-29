@@ -76,6 +76,6 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 
 ## Examples
 
-:::image type="content" source="./media/seedtag-a.png" alt-text="The image illustrates the agents for buyers.":::
-:::image type="content" source="./media/seedtag-b.png" alt-text="The image illustrates the agents for buyers.":::
-:::image type="content" source="./media/seedtag-c.png" alt-text="The image illustrates the agents for buyers.":::
+:::image type="content" source="./media/seedtag-a.png" alt-text="Screenshot of creative displayed on laptop screen via seedtag inventory.":::
+:::image type="content" source="./media/seedtag-b.png" alt-text="Screenshot of creative displayed on iPad screen via seedtag inventory.":::
+:::image type="content" source="./media/seedtag-c.png" alt-text="Screenshot of creative displayed on mobile screen via seedtag inventory.":::

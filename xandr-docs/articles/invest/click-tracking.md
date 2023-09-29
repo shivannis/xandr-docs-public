@@ -1,5 +1,5 @@
 ---
-Title : Microsoft Invest - Click Tracking
+title    : Microsoft Invest - Click Tracking
 description: This article explains about tracking clicks. Click tracking helps the ad serving industry to optimize CPC and CPA goals, bidding, and measuring campaign success.
 ---
 
@@ -74,7 +74,7 @@ Therefore, the expanded DoubleClick content will look as follows:
 ```https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?```
 
 The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad
-server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, in [Supported Creative Macros](./supported-creative-macros.), see the table listing macros that can be used in creative third-party tags and landing page URLs.
+server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, in [Supported Creative Macros](./supported-creative-macros.md), see the table listing macros that can be used in creative third-party tags and landing page URLs.
 
 ## Examples of failures
 
