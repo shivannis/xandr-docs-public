@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Billing Reporting
-description: In this module, learn how to get information about running reports for billing and invoicing purposes.
+description: In this article, learn how to get information about running reports for billing and invoicing purposes.
 ---
 
 # Microsoft Invest - Billing Reporting

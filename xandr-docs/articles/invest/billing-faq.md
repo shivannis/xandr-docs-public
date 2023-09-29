@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Billing and Settlement FAQ
-description: In this module, find answers for some frequently asked questions regarding Billing like charges, credits, invoices, reporting, and so on.
+description: In this article, find answers for some frequently asked questions regarding Billing like charges, credits, invoices, reporting, and so on.
 ---
 
 # Microsoft Invest - Billing and Settlement FAQ
@@ -109,8 +109,8 @@ Cost of media may be rounded off (by a few cents) due to aggregation.
 
 Depending on which product you use, you can locate historical billing documents as follows:
 
-- **For Invest:** In the upper right, go to **Services Network** > **Billing**, then look under the **Invoices/Statements** column.
-- **For Monetize:** In the upper left, go to **Network** > **Billing**, then look under the **Invoices/Statements** column.
+- **For Microsoft Invest:** In the upper right, go to **Services Network** > **Billing**, then look under the **Invoices/Statements** column.
+- **For Microsoft Monetize:** In the upper left, go to **Network** > **Billing**, then look under the **Invoices/Statements** column.
 
 ### Why am I getting an invoice for data from both the data provider and Xandr?
 
@@ -124,7 +124,7 @@ Netting is offered to clients who buy and sell with Xandr. Clients can then eith
 - apply the amounts due in invoices to their platform revenue and be paid the difference (e..g, for clients with sell-side revenue that
   exceeds their buy-side invoices), or
 - apply their revenue to their invoices and then pay what is left on the invoice (e.g., for clients with buy-side costs that exceed their
-  sell-side revenue)
+  sell-side revenue).
 
 If you would like to enable monthly netting on your account, please submit a request through our [Customer Support Portal](https://help.xandr.com/s/login/). To learn more about netting, see the [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 

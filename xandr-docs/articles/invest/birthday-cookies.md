@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Birthday Cookies
-description: In this module, understand what birthday cookies are and how these segments can be useful to buyers and sellers.
+description: In this article, understand what birthday cookies are and how these segments can be useful to buyers and sellers.
 ---
 
 # Microsoft Invest - Birthday Cookies

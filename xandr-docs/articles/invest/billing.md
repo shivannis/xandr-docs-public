@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Billing
-description: This module provides resources for accessing and understanding your billing information like pricing terms, credit status, and so on.
+description: This article provides resources for accessing and understanding your billing information like pricing terms, credit status, and so on.
 ---
 
 # Microsoft Invest - Billing

@@ -1,6 +1,6 @@
 ---
 title: Bulk Importer Guidelines for Creatives
-description: In this module, understand the bulk importer guidelines and the setup for creatives when adding data to the bulk importer template. 
+description: In this article, understand the bulk importer guidelines and the setup for creatives when adding data to the bulk importer template. 
 ---
 
 # Bulk importer guidelines for creatives

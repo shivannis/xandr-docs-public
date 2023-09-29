@@ -1,6 +1,6 @@
 ---
 title: Bulk Importer Guidelines for Segment Groups
-description: In this module, understand the bulk importer guidelines and the setup for segment groups when adding data to the bulk importer template.
+description: In this article, understand the bulk importer guidelines and the setup for segment groups when adding data to the bulk importer template.
 ---
 
 # Bulk importer guidelines for segment groups

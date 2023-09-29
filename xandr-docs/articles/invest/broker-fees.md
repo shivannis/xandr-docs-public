@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Broker Fees
-description: In this module, understand what broker fees are in historical data. Broker fees have been replaced by partner fees for ALIs and PGLIs.
+description: In this article, understand what broker fees are in historical data. Broker fees have been replaced by partner fees for ALIs and PGLIs.
 ---
 
 # Microsoft Invest - Broker fees
