@@ -52,7 +52,9 @@ Select one of the following audit options from the **Creative Quality** section:
 
     > [!NOTE]
    > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
+    
     Xandr charges a fee for each audited creative. The **priority table** below lists the fee charged for audits conducted for different time durations.
+
     |Priority|Fee|Description|
     |---|---|---|
     |Regular one day audit|$1 USD|Fee charged for 1 Day Audit|
