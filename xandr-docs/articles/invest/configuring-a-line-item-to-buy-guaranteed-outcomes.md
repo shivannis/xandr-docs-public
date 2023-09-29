@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Configuring a Line Item to Buy Guaranteed Outcomes
-Description : Learn how to configure a line item to buy Guaranteed Outcomes which are available on Augmented Line Items (ALI).
+title : Microsoft Invest - Configuring a Line Item to Buy Guaranteed Outcomes
+description : Learn how to configure a line item to buy Guaranteed Outcomes which are available on Augmented Line Items (ALI).
 ---
 # Configuring a line item to buy Guaranteed outcomes in Microsoft Invest
 

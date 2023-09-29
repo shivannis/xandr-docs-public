@@ -1,12 +1,11 @@
 ---
-title : Configuring Tracking for Creatives
-description : Learn how adding creatives, you can set a variety of tracking parameters from
-the Pixels (optional) section,
-such as frequency and recency caps, third-party tracking pixels, and segment pixels.
+title : Microsoft Invest - Configuring Tracking for Creatives
+description : Learn how by adding creatives, you can set a variety of tracking parameters from
+the Pixels (optional) section, such as frequency and recency caps, third-party tracking pixels, and segment pixels.
 ---
 
 
-# Configuring Tracking for Creatives
+# Configuring Tracking for Creatives in Microsoft Invest
 
 When adding creatives, you can set a variety of tracking parameters from
 the **Pixels (optional)** section,
@@ -42,13 +41,13 @@ segment pixels.
   > [!NOTE]
 > If the inventory that you are serving on is secure, then each tracking pixel must have a secure URL.
 
+Here's a list of pixel formats that are supported per creative type:
+
 | Creative Type   | Supported Format                                 |
 |:-----------------|:--------------------------------------------------|
 | Video and Audio | Image URL                                        |
 | Native          | <li>Image URL<br> <li>JavaScript URL<br>                         |
 | Banner          | <li>Image URL<br> <li>HTML URL<br> <li>JavaScript URL<br> <li>Raw JavaScript<br> |
- 
-  Here's a list of pixel formats that are supported per creative type:
   
 - **[Associate Segment Pixels with Creatives](associate-segment-pixels-with-creatives.md)**: You can associate specific segment pixels with your creatives.
   

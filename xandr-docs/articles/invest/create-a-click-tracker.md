@@ -1,7 +1,6 @@
 ---
 title : Monetize Invest - Create a Click Tracker
-description : Click trackers are used to track user clicks on creatives served by
-off-platform (non-Xandr) ad servers.
+description : Learn how to create and export a click tracker for use with creatives served by an external ad server. 
 ---
 
 

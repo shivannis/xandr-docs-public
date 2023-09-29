@@ -1,11 +1,11 @@
 ---
-Title : Microsoft Invest - Configure a Programmable Split
-Description : Learn using programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. Splits are recommended if you
+title : Configure a Programmable Split
+description : Learn using programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. Splits are recommended if you
 have sophisticated targeting requirements. 
 ---
 
 
-# Configure a programmable split in Microsoft Invest
+# Configure a programmable split 
 
 You can use programmable splits to refine line item targeting and
 dynamically adjust bids, budget allocation, and creative allocation
@@ -34,7 +34,8 @@ Splits](understanding-splits.md).
 > [!NOTE]
 > Split changes are only applied when you click **Review and Save** on the line item.
 
-1. [Create a Programmable Split](create-a-programmable-split.md)<br>                                                         You can create a new programmable split when creating or     editing an augmented line item.
+1. [Create a Programmable Split](create-a-programmable-split.md)<br>
+   You can create a new programmable split when creating or editing an augmented line item.
 
 2. [Set Split Targeting](set-split-targeting.md) <br>
     You can define targeting parameters for programmable splits that
