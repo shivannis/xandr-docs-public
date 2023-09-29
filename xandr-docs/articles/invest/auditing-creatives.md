@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Auditing Creatives
-description : Learn the process of auditing creatives on the Xandr platform before they are allowed to run on real-time inventory. 
+description : Learn the process of auditing creatives before they are allowed to run on real-time inventory. 
 ---
 
 # Microsoft Invest - Auditing creatives
@@ -68,11 +68,9 @@ Select one of the following audit options from the **Creative Quality** section:
       > [!NOTE]
       >  Modifying the selected language will cause the creative to be resubmitted for audit.
 
-  - **Self Audit**: Select this option to classify the creative on your own. For further guidance on
-  self-auditing, see [Self-Auditing Creatives](self-auditing-creatives.md).
-
-      > [!NOTE]
-      > Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
+- **Self Audit**: Select this option to classify the creative on your own. For further guidance on   self-auditing, see [Self-Auditing Creatives](self-auditing-creatives.md).
+    > [!NOTE]
+    > Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
 
   Set any one of the following creative attributes:
 

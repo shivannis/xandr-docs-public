@@ -21,7 +21,7 @@ HTML5 creatives are essentially mini web pages that are created using multiple m
 - **Better user experiences**: Unlike static banner creatives, HTML5 creatives tend to be more engaging. They also offer higher resolution quality and help with faster load times since they are small in file size.
 - **Optimized performance**: With HTML5 creatives, you can measure more than just CTR such as VCR.
 
-For more information about running rich media creatives on mobile inventory, see [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md)
+For more information about running rich media creatives on mobile inventory, see [Run Rich Media Creatives on Mobile Inventory](run-rich-media-creatives-on-mobile-inventory.md).
 
 ## Related topics
 

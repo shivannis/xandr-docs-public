@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Auto Macro Insertion
-description : Learn how Xandr offers automated insertion of macros like ${CLICK_URL} and ${CACHEBUSTER} into recognized third-party ad server formats for simplifying creative trafficking.
+description : Learn how macros like ${CLICK_URL} and ${CACHEBUSTER} are automatically inserted into recognized third-party ad server formats for simplifying creative trafficking.
 ---
 
 # Microsoft Invest - Auto macro insertion
@@ -12,8 +12,7 @@ In some cases, Xandr will replace an ad server macro with a macro specific to Xa
 > [!NOTE]
 > You can also use the encoded version of the `${CLICK_URL}` macro, such as `${CLICK_URL_ENC}`. For more information, see [Click Tracking](click-tracking.md).
 
-If the Xandr auto-tagger fails to automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your third-party tag, you can manually insert them into the appropriate locations. For more information, see [Click Tracking](click-tracking.md). If you don't know which parameter to use when inserting
-the macro, contact your client.
+If the Xandr auto-tagger fails to automatically insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your third-party tag, you can manually insert them into the appropriate locations. For more information, see [Click Tracking](click-tracking.md). If you don't know which parameter to use when inserting the macro, contact your client.
 
 ## Insert macros into third-party tags automatically
 

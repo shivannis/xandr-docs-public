@@ -27,9 +27,8 @@ This process takes time and manpower because the human auditing process is very 
   Bulk submissions can occur as a result of glitches in these scripts. These bulk submissions often will not be identified as a mistake until many of the creatives have already been audited, which may lead to high or unprojected audit fees. This may also hinder the audit queue, causing delays to all submissions. Even when intentional, it is common for automatically submitted creatives to have technical issues that may result in a Xandr audit failure, such as incorrect click-through issues and rotating stock creatives. By avoiding automatic queue submissions, you ensure that all creatives are ready to be audited at the time of submission, decreasing the number of rejected creatives submitted for audit.
 
 - Stay in contact with your Xandr representative or the Audit Client Services team. We understand that bulk submissions are sometimes necessary. When you need to submit a large number of creatives for audit, you should always keep Xandr informed.
-  
   > [!NOTE]
-> Information the user should notice even if skimming with forewarning, we will be able to devote additional resources to ensuring your creatives are audited as quickly as possible, and keep you up to date if we see problems with your bulk creative uploads. You will not run the risk of having your creatives de-prioritized or completely removed from our queue.
+  > Information the user should notice even if skimming with forewarning, we will be able to devote additional resources to ensuring your creatives are audited as quickly as possible, and keep you up to date if we see problems with your bulk creative uploads. You will not run the risk of having your creatives de-prioritized or completely removed from our queue.
 
   To keep us informed about your creative submissions, contact either your Xandr representative or the Audit Client Services team directly through the support form at [https://help.xandr.com](https://help.xandr.com).
 
@@ -38,4 +37,3 @@ This process takes time and manpower because the human auditing process is very 
 - [Auditing Creatives](auditing-creatives.md)
 - [Self-Auditing Creatives](self-auditing-creatives.md)
 - [Working with Creatives](working-with-creatives.md)
-

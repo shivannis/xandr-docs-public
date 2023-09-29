@@ -17,7 +17,7 @@ For additional information about how to adjust your member targeting settings, s
 - [Partner Center Guide](partner-center-guide.md)
 
 | Potential Issue | Reason | Recommended Troubleshooting Steps |  
-|--|--|--|
+|:--|:--|:--|
 | Member Targeting Settings | Your current member's targeting setup is reducing impression count because it excludes certain sellers in the **Partner Center**, countries, and/or inventories. | - Review and adjust selected country targeting preferences from your Member Targeting settings. <br> - Review and adjust your seller preferences in the **Partner Center**. <br>- If you have inventory lists that apply to all of your ALIs, review and adjust the lists to increase available inventory. |  
 | Additional Member Targeting Checks | There's additional negative impact to your impression count as a result of your current member targeting setup. | Check the **Troubleshooting** tab regularly for new bid performance updates. |  
 
@@ -35,7 +35,7 @@ For additional information about how to adjust your ALI targeting settings, see 
 - [Buy-Side Targeting](buy-side-targeting.md)
 
 | Potential Issue | Reason | Recommended Troubleshooting Steps |
-|--|--|--|
+|:--|:--|:--|
 | Additional ALI Targeting Checks | There's additional negative impact to your impression count as a result of your current ALI targeting setup. | - Review and adjust your ALI targeting setup. <br>- Check the **Troubleshooting** tab regularly for new bid performance updates. |
 | Browser Targeting Settings | Your ALI targeting setup is currently reducing impression count because it excludes certain browsers. | Review and adjust your ALI targeting setup by including the necessary browsers. |
 | Carrier Targeting Settings | Your ALI targeting setup is currently reducing impression count because it excludes certain carriers. | - Make sure you're targeting mobile devices. <br>- Review and adjust your ALI targeting setup by including the necessary carriers. |
@@ -82,7 +82,7 @@ For additional information about how to adjust your ALI targeting settings, see 
 For additional information about how to work with creatives, see [Working with Creatives](working-with-creatives.md).
 
 | Potential Issue | Reason | Recommended Troubleshooting Steps |
-|--|--|--|
+|:--|:--|:--|
 | Creative Attribute Checks | Your ALI's associated creatives are reducing impression count because they don't match sellers' Ad Quality or deals' creative requirements. Creative attribute checks also include impressions that don't match your ALI's split targeting when your creative selection is managed at the split level. | - Review your creatives' brand, category, subtype, and any other attributes. <br> - If you're targeting sellers or deals, check with the sellers regarding their creative requirements. <br> - If custom models or splits are attached, check the targeting on the models or splits. |
 | Creative Requirements for Targeted Deals | Your ALI's associated creatives are reducing impression count because they don't match the seller's creative requirements for targeted deals. | - Review and adjust your creatives' brand, category, subtype, and other attributes. <br> - Check with the seller regarding their creative requirements for targeted deals. |
 | Creative Sizes | Your ALI's associated creatives are reducing impression count because they don’t meet bid requests' creative size requirements, or they aren't SSL approved. | - Check associated creatives to confirm they've passed SSL audits. <br> - Review and adjust your existing creatives' sizes, or add creatives with varying sizes. |
@@ -99,7 +99,7 @@ For additional information about how to adjust your ALI's revenue type, optimiza
 
 
 | Potential Issue | Reason | Recommended Troubleshooting Steps |
-|--|--|--|
+|:--|:--|:--|
 | Additional Bid Value Checks | There's additional negative impact to your bid value as a result of your current buying strategy setup. | Review and adjust your buying strategy setup. |
 | Advertiser Cost is Above Expected Value | Your ALI isn't submitting certain bids because its expected value, which is calculated using optimization goals or split and custom model specifications, is above the ALI's CPM revenue value. | - Review and increase your revenue value. <br> - Review and reduce your optimization goals or expected value. |
 | Bid is Below Deal Price Floors | Your ALI isn't submitting certain bids because their values are below targeted deals' price floors. | Review and adjust your buying strategy. |
@@ -119,7 +119,7 @@ For additional information about how to adjust your ALI's revenue type, optimiza
 ## Auction
 
 | Potential Issue | Reason | Recommended Troubleshooting Steps |
-|--|--|--|
+|:--|:--|:--|
 | Lost Auctions | Your bid prices may be too low, which could be causing you to lose bids that were submitted for internal or external auctions. There may also be other reasons as to why your bid was rejected. For additional information, see [Understanding Bid Rejections](understanding-bid-rejections.md). | - To increase your chances of winning more bids, review and increase your bid prices.<br> - When targeting deals, review the Submitted Bids grid column on the Deals screen to confirm that your bids are going through. For additional information, see [Deal Targeting (ALI)](deal-targeting-ali.md). <br> - If you're submitting bids for SSP deals, contact your publishers to determine why your bids are losing in external auctions. |
 
 ## Related topics

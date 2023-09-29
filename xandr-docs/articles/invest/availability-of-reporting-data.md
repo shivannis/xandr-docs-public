@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Availability of Reporting Data
-description : This article describes the availability of reporting data in Xandr, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
+description : This article describes the availability of reporting data, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
 ---
 
 # Microsoft Invest - Availability of reporting data
@@ -16,12 +16,7 @@ Reporting data is generally available in the UI and API within two hours of the 
 
 ## Events (clicks, conversions, video completions)
 
-Since clicks, conversions, video completions, and other events occur
-after the initial impressions that caused them, they can appear in later
-hours of a report's data. As a result, you may see hours in your reports
-that only contain events. The impressions associated with these events
-will have occurred in earlier hours of the report. Event data is never
-more than a few hours delayed.
+Since clicks, conversions, video completions, and other events occur after the initial impressions that caused them, they can appear in later hours of a report's data. As a result, you may see hours in your reports that only contain events. The impressions associated with these events will have occurred in earlier hours of the report. Event data is never more than a few hours delayed.
 
 ## Data retention
 
@@ -31,17 +26,12 @@ The data retention period for each report is stated on that report's page in the
 
 A few facts to keep in mind about scheduled reports:
 
-- Scheduled reports expire after 6 months. You must create a new
-  scheduled report after 6 months.
-- Scheduled reports and saved report templates cannot have a
-  **Lifetime** or **Custom** date range.
-- Scheduled reports are run in the order in which they were originally
-  created. For example, if you create two daily reports, the daily
+- Scheduled reports expire after 6 months. You must create a new scheduled report after 6 months.
+- Scheduled reports and saved report templates cannot have a **Lifetime** or **Custom** date range.
+- Scheduled reports are run in the order in which they were originally created. For example, if you create two daily reports, the daily
   report created first will run first each day.
-- Daily reports are run and sent each day as soon as the data for the
-  entire day (in the specified timezone) is available.
-- Weekly reports are run and sent on the Monday of each week for the
-  previous 7 days.
+- Daily reports are run and sent each day as soon as the data for the entire day (in the specified timezone) is available.
+- Weekly reports are run and sent on the Monday of each week for the previous 7 days.
 - Monthly reports are run and sent on the first day of each month.
 
 ## Saved reports
@@ -52,4 +42,3 @@ You can save and view up to 200 reports in the UI. To retrieve a full list of sa
 
 - [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
 - [Dates and Times in Reporting](dates-and-times-in-reporting.md)
-
