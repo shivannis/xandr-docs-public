@@ -1,9 +1,9 @@
 ---
-title: Buy Mobile Inventory via RTB
+title: Microsoft Invest - Buy Mobile Inventory via RTB
 description: This article describes the complete and detailed workflow of setting up a campaign to run on third-party mobile inventory.
 ---
 
-# Buy mobile inventory via RTB
+# Microsoft Invest - Buy mobile inventory via RTB
 
 > [!NOTE]
 > The descriptions in this topic apply only to Standard Line Items (not available in Microsoft Invest). A new version of this document that is applicable to Microsoft Invest and Augmented Line Items will be available at a later date.
