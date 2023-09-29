@@ -51,8 +51,8 @@ Select one of the following audit options from the **Creative Quality** section:
   - Select a priority.
 
     > [!NOTE]
-   > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
-    
+    > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
+
     Xandr charges a fee for each audited creative. The **priority table** below lists the fee charged for audits conducted for different time durations.
 
     |Priority|Fee|Description|
@@ -60,41 +60,34 @@ Select one of the following audit options from the **Creative Quality** section:
     |Regular one day audit|$1 USD|Fee charged for 1 Day Audit|
     |Priority audit|$25 USD|Fee charged for 2 Hour Audit|
 
-    
   - Enter a desktop compatible URL in the **Brand URL** text field.
-    
-    > [!NOTE]
-  > The **Brand URL** should contain the same branding that is represented on your CTV, OTT, or mobile creative. The Audit team will use the URL to validate the branding represented on the creative.
+      > [!NOTE]
+      > The **Brand URL** should contain the same branding that is represented on your CTV, OTT, or mobile creative. The Audit team will use the URL to validate the branding represented on the creative.
 
   - Select the **language** that is used in the creative such as French, German, or Chinese.
-    
-    > [!NOTE]
->  Modifying the selected language will cause the creative to be resubmitted for audit.
+      > [!NOTE]
+      >  Modifying the selected language will cause the creative to be resubmitted for audit.
 
- - **Self Audit**: Select this option to classify the creative on your own. For further guidance on
+  - **Self Audit**: Select this option to classify the creative on your own. For further guidance on
   self-auditing, see [Self-Auditing Creatives](self-auditing-creatives.md).
 
-    > [!NOTE]
-> Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
-
-      Set any one of the following creative attributes:
-
-      - **Brand**: This lets other sellers on the platform know what brands this creative is associated with in
-    the system.
-      - **Offer Categories**: This lets sellers know the offer category such as Education or Employment.
-      - **Language**: The language used in the creative such as French, German, or Chinese.
-      - **Technical Attributes**: It describes features associated with the creative, such as whether it is a
-    video.
-      - **Sensitive Attributes**: These are often banned by publishers.
-
       > [!NOTE]
-> The Compliance must be confirmed for self audited creatives.
+      > Self-auditing may reduce access to inventory outside of your network since many sellers only allow Xandr audited creatives.
+
+  Set any one of the following creative attributes:
+
+  - **Brand**: This lets other sellers on the platform know what brands this creative is associated with in the system.
+  - **Offer Categories**: This lets sellers know the offer category such as Education or Employment.
+  - **Language**: The language used in the creative such as French, German, or Chinese.
+  - **Technical Attributes**: It describes features associated with the creative, such as whether it is a video.
+  - **Sensitive Attributes**: These are often banned by publishers.
+    > [!NOTE]
+    > The Compliance must be confirmed for self audited creatives.
 
 - **No Audit**: Select this option if you do not want the creative to be audited.
   
   > [!NOTE]
->  When selecting No Audit, this may result in the creative serving less frequently, as publishers might choose to block it.
- 
+  >  When selecting No Audit, this may result in the creative serving less frequently, as publishers might choose to block it.
 
 For a full description of the Xandr auditing process and the content standards for creatives running on the Xandr platform, see [Auditing Creatives](auditing-creatives.md) and [Creative Standards](creative-standards.md). Regardless of your audit selection, the Xandr Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.
 
@@ -144,4 +137,3 @@ Use the [Support Form](https://help.xandr.com) to submit questions about Sherloc
 
 - [Creative Standards](creative-standards.md)
 - [Select an Audit Option for a Creative](select-an-audit-option-for-a-creative.md)
-
