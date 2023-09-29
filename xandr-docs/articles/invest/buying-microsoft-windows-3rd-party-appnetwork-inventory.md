@@ -19,7 +19,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 > [!NOTE]
 > Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
 
-- Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam
+- Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam.
 - 13 billion monthly impressions worldwide
 
 > [!TIP]

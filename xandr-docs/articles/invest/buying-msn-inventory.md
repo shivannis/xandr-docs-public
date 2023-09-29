@@ -48,7 +48,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 For information on general inventory targeting, review the following documentation:
 
 - [Buying Microsoft Inventory](buying-microsoft-inventory.md)
-- [domain-targeting.html](../monetize/domain-targeting.md)
+- [Domain Targeting](../monetize/domain-targeting.md)
 
 To target MSN.com inventory:
 

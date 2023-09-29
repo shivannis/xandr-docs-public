@@ -7,10 +7,10 @@ description: Learn how to buy, create, and target Microsoft inventory. This arti
 
 With **Microsoft Advertising Exchange**, Xandr offers exclusive programmatic access to a quality, engaged audience in a brand safe environment.
 
-- Owned and operated, brand-sale content including MSN, Outlook, Xbox, and Windows
-- Maximum viewability with load-on-scroll and non-scrolling placements
-- Know where all your ads are running with top level domain transparency
-- Access real users in immersive and engaging environments
+- Owned and operated, brand-sale content including MSN, Outlook, Xbox, and Windows.
+- Maximum viewability with load-on-scroll and non-scrolling placements.
+- Know where all your ads are running with top level domain transparency.
+- Access real users in immersive and engaging environments.
 
 > [!NOTE]
 > Microsoft has a Creative Acceptance Policy that applies to all advertisements on all Microsoft platforms and properties. For more details, see [Microsoft Windows Inventory Policies](https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies).
