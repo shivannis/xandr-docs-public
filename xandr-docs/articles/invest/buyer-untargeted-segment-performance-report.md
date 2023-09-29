@@ -3,7 +3,7 @@ title: Microsoft Invest - Buyer Untargeted Segment Performance Report
 description: Learn about the Buyer Untargeted Segment Performance report that offers insights on the non-targeted segment performance in your advertising campaigns.
 ---
 
-# Buyer Untargeted Segment Performance report in Microsoft Invest
+# Microsoft Invest - Buyer Untargeted Segment Performance report
 
 This report provides buyers with segment performance across multiple ad campaigns and advertisers over untargeted segments. This allows you to:
 
@@ -55,7 +55,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Dimensions
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Advertiser | Yes | The advertiser name and ID, in the format "Great Advertiser (456)". |
 | Insertion Order | Yes | The insertion order associated with the impression, in the format "Midwest Winter Getaways (789)". |
 | Line Item | Yes | The line item associated with the impression, in the format "Kansas City Winter Commuters (314)". |
@@ -64,7 +64,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Segment | Yes | The user segment associated with the impression in the format "Submitted application (220)". |
 | Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the monetary metrics to be displayed in the buying currency. |
-| Is Targeted | Yes | Whether a user segment is targeted or not by advertiser |
+| Is Targeted | Yes | Whether a user segment is targeted or not by advertiser. |
 | Is Advertiser Segment | Yes | Whether a target segment is an advertiser segment. |
 | Campaign Group Type Id | No | The ID for a campaign group type. For example, Buy direct/third-party inventory. |
 | Segment Owner Member Id | No | The member ID of the user segment owner. |
@@ -83,7 +83,7 @@ Reports automatically group by all selected dimensions.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Example | Formula | Description |
-|--------|------|---------|---------|-------------|
+|:-------|:-----|:--------|:--------|:------------|
 | Imps | int | 34534 | Imps | The total number of impressions (served and resold). |
 | Clicks | int | 345 | Clicks | The total number of clicks across all impressions. |
 | CTR | double | 0.00237 | (Clicks / Imps) x 100 | The rate of clicks to impressions, expressed as a percentage. |

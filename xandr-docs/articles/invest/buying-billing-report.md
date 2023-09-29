@@ -3,7 +3,7 @@ title: Microsoft Invest - Buying Billing Report
 description: Use the Buying Billing report to streamline internal invoicing for your advertisers in both managed and third-party buying.
 ---
 
-# Buying Billing report in Microsoft Invest
+# Microsoft Invest - Buying Billing report
 
 The Buying Billing Report allows you to manage internal invoicing for your advertisers across both managed and third-party buying.
 
@@ -59,7 +59,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Dimensions
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Seller | Yes | The seller of this impression. |
 | Advertiser | Yes | The advertiser that purchased the impression. |
 | Publisher | Yes | The publisher on whose inventory the impression occurred. |
@@ -87,7 +87,7 @@ Intervals determine how your data is grouped together into rows in the report re
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|--------|-------------|
+|:-------|:------------|
 | Billable Imps | The total number of impressions billed to the client. |
 | Clicks | The total number of clicks. |
 | Conversions | The total number of post-view and post-click conversions. |
@@ -115,7 +115,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Impression types
 
 | Value | Name | Definition |
-|--|--|--|
+|:--|:--|:--|
 | 5 | Kept | Your creative served on managed inventory. <br/> **Note:** We currently only display cost for Creative Overage Fee. All other monetary metrics are set to zero out by design. |
 | 7 | RTB | Your creative served on third-party inventory. |
 | 9 | External Impression | An impression from an impression tracker. |

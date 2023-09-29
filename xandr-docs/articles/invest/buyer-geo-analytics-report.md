@@ -3,7 +3,7 @@ title: Microsoft Invest - Buyer Geo Analytics Report
 description: Learn about the Buyer Geo Analytics report that allows you to break down delivery and performance based on specific geographic area.
 ---
 
-# Buyer Geo Analytics report in Microsoft Invest
+# Microsoft Invest - Buyer Geo Analytics report
 
 The **Buyer Geo Analytics** report allows you to break down delivery and performance by geographic area. Sample use cases for this report
 include:
@@ -75,7 +75,7 @@ This report's data is retained for 45 days. For more information about how quick
 > The **Filter?** column below shows whether a dimension can be used as a filter as well as being used to group by.
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Advertiser | Yes | The advertiser name and ID, in the format "Great Advertiser (456)". |
 | Insertion Order | Yes | The insertion order name and ID, in the format "Midwest Winter Getaways (789)". |
 | Line Item | Yes | The line item name and ID, in the format "Kansas City Winter Commuters (314)". |
@@ -105,7 +105,7 @@ This report's data is retained for 45 days. For more information about how quick
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Formula | Description |
-|--------|------|---------|-------------|
+|:-------|:-----|:--------|:------------|
 | Imps | int | Imps | The total number of impressions (served and resold). |
 | Clicks | int | Clicks | The total number of clicks across all impressions. |
 | CTR % | double | (Clicks / Imps) x 100 | The rate of clicks to impressions, expressed as a percentage. |

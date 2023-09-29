@@ -3,7 +3,7 @@ title: Microsoft Invest - Buyer Segment Performance Report
 description: Use the Buyer Segment Performance report to understand segment performance within an advertising campaign. The report offers insights on the segment engagement and conversions.
 ---
 
-# Buyer Segment Performance report in Microsoft Invest
+# Microsoft Invest - Buyer Segment Performance report
 
 This report provides buyers with segment performance across multiple ad campaigns and advertisers. This allows you to:
 
@@ -63,7 +63,7 @@ of Reporting Data](availability-of-reporting-data.md).
 ## Dimensions
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Advertiser | Yes | The advertiser name and ID, in the format "Great Advertiser (456)". |
 | Insertion Order | Yes | The insertion order associated with the impression, in the format "Midwest Winter Getaways (789)". |
 | Line Item | Yes | The line item associated with the impression, in the format "Kansas City Winter Commuters (314)". |
@@ -88,7 +88,7 @@ Reports automatically group by all selected dimensions.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Example | Formula | Description |
-|--------|------|---------|---------|-------------|
+|:-------|:-----|:--------|:--------|:------------|
 | Imps | int | 34534 | Imps | The total number of impressions (served and resold). |
 | Clicks | int | 345 | Clicks | The total number of clicks across all impressions. |
 | CTR | double | 0.00237 | (Clicks / Imps) x 100 | The rate of clicks to impressions, expressed as a percentage. |
@@ -161,6 +161,6 @@ Follow these steps to run your report.
 
 ## **Related topics**
 
-- [Reporting Guide](reporting-guide.md)<a href="" class="xref"></a>
+- [Reporting Guide](reporting-guide.md)
 - [Working with Segments](working-with-segments.md)
 - [Availability of Reporting Data](availability-of-reporting-data.md)

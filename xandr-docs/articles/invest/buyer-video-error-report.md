@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Buyer Video Error Report
-description: Use the Buyer Video Error report for resolving video errors or issues related to buy-side video advertising.
+description: In this article, use the Buyer Video Error report for resolving video errors or issues related to buy-side video advertising.
 ---
 
-# Buyer Video Error report in Microsoft Invest
+# Microsoft Invest - Buyer Video Error report
 
 The Buyer Video Error Report gives insight into video errors and their cause.
 
@@ -64,7 +64,7 @@ This report's data is retained for 420 days.
 > For all revenue fields, the currency is defined by the **Buying Currency** field.
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Only include results where a deal is present | N | Determines whether results are limited to deals only. |
 | Insertion Order | Y | The insertion order associated with the impression. |
 | Line Item | Y | The line item associated with the impression. |
@@ -95,7 +95,7 @@ This report's data is retained for 420 days.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|--------|-------------|
+|:-------|:------------|
 | Imps | The total number of impressions. Note that for a video, an impression occurs when the first frame of the creative plays. |
 | Imps (default) | The number of impressions where a default creative served, because there were no valid bids. |
 | Imps (kept) | The number of impressions for which a managed advertiser's creative served on the managed publisher's site. |

@@ -3,7 +3,7 @@ title: Microsoft Invest - Buyer Reach and Frequency Report
 description: Learn about the Buyer Reach and Frequency report that provides valuable insights into the reach and frequency of an advertising campaign.
 ---
 
-# Buyer Reach and Frequency report in Microsoft Invest
+# Microsoft Invest - Buyer Reach and Frequency report
 
 The Buyer Reach and Frequency Report holds two parameters as reach which is the number of unique devices or persons exposed to ads and frequency which is the average number of times each unique device or person was exposed to advertisements. It helps to draw meaningful conclusions about the impact of cross device on conversion use cases. In short, buyers can have an insight on how cross device impacted the number of times a single person saw their ads across all their devices using this report.
 
@@ -52,7 +52,7 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Dimensions
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Advertiser | Yes | The advertiser for which impression was purchased. |
 | Insertion Order | Yes | The insertion order under which the impression was purchased. |
 | Billing Period | No | The insertion order's billing period. |
@@ -72,7 +72,7 @@ Intervals determine how your data is grouped together into rows in the report re
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|--------|-------------|
+|:-------|:------------|
 | Imps | The total number of impressions. |
 | Unique Devices | The total number of unique cookies, mobile or other devices reached by the impressions. |
 | Average Impressions per Device | The number of impressions viewed per unique device. |
@@ -81,9 +81,9 @@ Intervals determine how your data is grouped together into rows in the report re
 | Identified Imps | The total number of impressions that included a cookie, device id, or other identifier as part of the ad request. |
 | Unidentified Imps | The total number of impressions (i.e. those impressions that did not include a cookie, device id, or other identifier as part of the ad request). |
 | Average Impressions Per Identified Device | The number of identified impressions viewed per unique user. |
-| Estimated People (**currently available in the US only**) | The estimated number of people reached, deduplicated across the user-specified dimensions. <br/> **Note:** Xandr has built a probabilistic data science model to estimate people reach, which is a new metric available in this report. This model considers the unique devices reached at the zip code level, and utilizes publicly available US census data for the total population of each zip code, in order to estimate the number of people reached for that zip code. This zip code level data is then aggregated when a report is pulled in Xandr Invest so that the buyer can view it at any level of granularity that is provided by the existing dimensions in the report. |
+| Estimated People (**currently available in the US only**) | The estimated number of people reached, deduplicated across the user-specified dimensions. <br/> **Note:** Xandr has built a probabilistic data science model to estimate people reach, which is a new metric available in this report. This model considers the unique devices reached at the zip code level, and utilizes publicly available US census data for the total population of each zip code, in order to estimate the number of people reached for that zip code. This zip code level data is then aggregated when a report is pulled in Microsoft Invest so that the buyer can view it at any level of granularity that is provided by the existing dimensions in the report. |
 
->[!NOTE]
+> [!NOTE]
 > [Advanced Frequency Management (AFM)](advanced-frequency-management.md), which is currently in **beta**, does not take universal identifier (Universal ID) into account. This is subject to change as the feature would move into GA. Line items utilising Universal ID targeting should avoid using AFM until this is completely adapted.
 
 ## To run your report
