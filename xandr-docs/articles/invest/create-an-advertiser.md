@@ -1,6 +1,6 @@
 ---
-Title : Create an Advertiser
-Description : Creating an advertiser object is the first step before you can start
+title : Create an Advertiser
+description : Creating an advertiser object is the first step before you can start
 running ad campaigns and serving creatives on behalf of an advertiser.
 ---
 

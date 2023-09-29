@@ -1,6 +1,6 @@
 ---
-Title : Conversion Attribution
-Description : When an advertiser's conversion pixel loads,
+title : Conversion Attribution
+description : When an advertiser's conversion pixel loads,
 Xandr determines if that pixel load can be
 associated with a user, and if so, whether the user has converted in
 response to having previously viewed or clicked one of the advertiser's
