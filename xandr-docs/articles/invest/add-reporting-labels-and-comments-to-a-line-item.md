@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Add Reporting Labels and Comments to a Line Item
-description: Learn how to add custom labels and comments in a report. This will help a user to generate reports and track metrics across multiple line items. You can also add multiple comments and it won't appear in the report.
+description: In this article, learn how to add custom labels and comments in a report. This will help a user to generate reports and track metrics across multiple line items.
 ---
 
-# Add Reporting Labels and comments to a line item in Microsoft Invest
+# Microsoft Invest - Add Reporting Labels and comments to a line item
 
 You can optionally assign custom reporting labels (Trafficker, Sales Rep, and Line Item Type) to a line item so that you can create reports tracking metrics across multiple line items, as well as add comments to a line item for your reference. Comments will not appear in reporting.
 

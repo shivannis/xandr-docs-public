@@ -3,7 +3,7 @@ title: Microsoft Invest - Additional Geo Restrictions
 description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions make it easier to customize content delivery based on specific geographic criteria. 
 ---
 
-# Additional Geo Restrictions in Microsoft Invest
+# Microsoft Invest - Additional Geo restrictions
 
 In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.
 
@@ -42,7 +42,7 @@ country, or use the **Additional Geo Restrictions** section within **Audience an
 
 Metro codes are available in 13 countries. Available metro codes range from large cities such as New York City, United States, or Oslo, Norway, to smaller cities such as Rochester, NY, United States. Unless you are excluding an entire "country" in country targeting, you will target all metro codes by default. However, on the **Metro Code** tab, you can narrow your targeting to include or exclude specific metro codes.
 
-The Countries that support metro code targeting are:
+The countries that support metro code targeting are:
 
 - Aland Islands
 - Australia
@@ -69,10 +69,10 @@ On the **Postal Code** tab, once you select a country, you can include up to 4,0
 > Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/), a Xandr partner that handles geolocation data, can't recognize a ZIP or postal
 code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
-As a guide to how postal codes should be formatted for each country,consult the list below.
+As a guide to how postal codes should be formatted for each country, consult the list below.
 
 | Country   | Sample Postal Code |
-|-----------|--------------------|
+|:----------|:-------------------|
 | Australia          | 7470      |
 | Austria            | 9992      |
 | Brazil             | 99990-000 |
@@ -116,7 +116,7 @@ If your list contains postal/zip codes that don't exist in the Xandr database, y
 > At the line item level, you can target:
 >
 > - both a postal code list and an individual postal code (which does not belong to the list)
-> - either a postal code list or an individual postal code (which does notbelong to the list)
+> - either a postal code list or an individual postal code (which does not belong to the list)
 >
 > The include and exclude functionality needs be consistent between the postal code list and an individual postal code.
 
@@ -130,7 +130,7 @@ then use the **Postal Code List** tab. You can search for available postal code 
 > [!NOTE]
 > Postal code list, postal code and political district include/exclude functionality should be consistent.
 
-Political Geography Targeting allows political buyers to target geographies based on legislative district boundaries. The feature is available within the existing geo targeting module in Invest, and it's called "Political District (US Only)". The Political District Targeting allows buyers to target the following political geography levels:
+Political Geography Targeting allows political buyers to target geographies based on legislative district boundaries. The feature is available within the existing geo targeting module in Microsoft Invest, and it's called "Political District (US Only)". The Political District Targeting allows buyers to target the following political geography levels:
 
 - Congressional District
 - State Senate District

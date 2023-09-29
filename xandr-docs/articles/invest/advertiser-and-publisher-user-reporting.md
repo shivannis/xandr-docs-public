@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Advertiser User Reporting
-description: In this article, learn how an Advertiser User report provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
+description: Learn how an Advertiser User report provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
 ---
 
-# Advertiser User reporting in Microsoft Invest
+# Microsoft Invest - Advertiser User reporting
 
 If you have created separate [user login](managing-user-logins-and-permissions.md) for your advertisers, they will be able to run reports from their perspective. These advertiser users have a limited set of metrics, filters, and dimensions available to them. This allows you to give your clients access to reporting while protecting your proprietary business data.
 

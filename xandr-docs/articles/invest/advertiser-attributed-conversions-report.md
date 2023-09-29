@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - Advertiser Attributed Conversions Report
-description: In this article, learn about Advertiser Attributed Conversions Report and its comprehensive overview of conversions attributed to specific advertisers.
+description: In this article, learn about Advertiser Attributed Conversions report and its comprehensive overview of conversions attributed to specific advertisers.
 ---
 
-# Advertiser Attributed Conversions report in Microsoft Invest
+# Microsoft Invest - Advertiser Attributed Conversions report
 
 When a conversion pixel fires, Xandr determines if the conversion can be attributed (tied to a creative that the user previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).
 
@@ -57,7 +57,7 @@ This report can retrieve data for the last 90 days.
 ## Dimensions
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Campaign | Yes | The campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
@@ -67,12 +67,12 @@ This report can retrieve data for the last 90 days.
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Order ID | No | The order ID or SKU optionally passed in the conversion pixel. If your advertiser is passing in an order ID when the conversion pixel fires, you could send a full list of order IDs back to them to help with conversion attribution. For more information, see [Conversion Pixels Advanced](conversion-pixels-advanced.md). |
-| User ID | No | The Xandr user ID for the user who converted. If you have a mapping of your own user IDs to Xandr IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. <br/> **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](./log-level-data/log-level-data-cloud-export.md). For details, see [Changes to Log-Level Data and Console Reporting](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Changes-to-Log-Level-Data-and-Reporting-Support-for-European-Privacy-Regulations.aspx). |
+| User ID | No | The Xandr user ID for the user who converted. If you have a mapping of your own user IDs to Xandr IDs, you might be able to do some analysis around which segments are converting, or you could count your unique and repeat converters. <br/> **Warning**: To prepare for the upcoming implementation of the GDPR, this field is being deprecated on May 21, 2018. Subject to requirements under the GDPR, this field will continue to be available if you receive log level data via [Cloud Export](../log-level-data/log-level-data-cloud-export.md). For details, see [Changes to Log-Level Data and Console Reporting](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Changes-to-Log-Level-Data-and-Reporting-Support-for-European-Privacy-Regulations.aspx). |
 
 ### Impression types
 
 | Value | Name                | Definition                                                                                 |
-|-------|---------------------|--------------------------------------------------------------------------------------------|
+|:------|:--------------------|:-------------------------------------------------------------------------------------------|
 | 1     | Blank               | No creative served.                                                                        |
 | 2     | PSA                 | A PSA served because there were no valid bids and no default creative was available.       |
 | 3     | Default Error       | A default creative served due to a timeout issue.                                          |
@@ -87,7 +87,7 @@ This report can retrieve data for the last 90 days.
 ## Metrics
 
 | Column             | Description                                                                    |
-|--------------------|--------------------------------------------------------------------------------|
+|:-------------------|:-------------------------------------------------------------------------------|
 | Auction ID         | The auction ID for which the conversion was attributed.                        |
 | External Data      | Optional extra data passed in on conversion pixel using the "other" parameter. |
 | Impression Time    | The time at which the impression occurred.                                     |
@@ -98,7 +98,7 @@ This report can retrieve data for the last 90 days.
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium > Analytics > Prebid Server Analytics**
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium &gt; Analytics &gt; Prebid Server Analytics**
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
@@ -115,7 +115,7 @@ Follow these steps to run your report.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](./xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name

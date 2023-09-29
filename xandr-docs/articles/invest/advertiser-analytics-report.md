@@ -3,7 +3,7 @@ title: Microsoft Invest - Advertiser Analytics Report
 description: In this article, learn about the Advertiser Analytics report that lets you view buy-side data for a specific advertiser.
 ---
 
-# Advertiser Analytics report in Microsoft Invest
+# Microsoft Invest - Advertiser Analytics report
 
 The Advertiser Analytics report lets you view buy-side data for a specific advertiser. The data available via this report is even more
 granular than what you can get from the [Member Analytics Report](network-analytics-report.md).
@@ -50,7 +50,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
->[!NOTE]
+> [!NOTE]
 > For impressions older than 100 days, the day will be returned rather than the hour.
 
 For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
@@ -82,12 +82,12 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 
 ## Currency 2.0
 
->[!NOTE]
+> [!NOTE]
 > By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
 >
 > Some dimensions have *attributes*. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: *Dimension_Name:Attribute_Name*
@@ -95,7 +95,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 >For all revenue fields, the currency is defined by the **Buying Currency** field (When Currency 2.0 is disabled).
 
 | Column | Filter? | Description |
-|--------|---------|-------------|
+|:-------|:--------|:------------|
 | Seller | Yes | The seller of the impression. |
 | Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
@@ -127,7 +127,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 | Country | Yes | The country in which the impression took place. |
 | Size | Yes | The size of the creative, e.g., 320x50. There may be situations where the size listed in the report does not match the size of the placement. This happens when Promo Sizes come into the equation. When a creative serves into a placement fulfilling a size in the Promo Sizes Array, the size reported is the `size` of the creative, which could be different from the promo size or the placement's size. |
 | Bid Type | Yes | See [Bid Types](#bid-types) below for definitions of the different types of bids. |
-| Advertiser Currency | Yes | The default currency of the advertiser who purchased this impression. This is set when an advertiser is created. For more information, see [Create an Advertiser](create-an-advertiser.md). <br/> **Tip**: To display the cost/revenue in the local currency, select **Adv. Currency** as a dimension. <br/> This dimension is available only when Currency 2.0 is disabled. |
+| Advertiser Currency | Yes | The default currency of the advertiser who purchased this impression. This is set when an advertiser is created. For more information, see [Create an Advertiser](create-an-advertiser.md). <br/> **Tip:** To display the cost/revenue in the local currency, select **Adv. Currency** as a dimension. <br/> This dimension is available only when Currency 2.0 is disabled. |
 | Conversion Pixel | Yes | The conversion pixel that was fired, if any. To view pixel-specific metrics in separate columns of your report, do both of the following: <br/> - Filter by a set of pixels (up to a maximum of 20 pixels) in the Conversion Pixel filter. <br/> - Select the Conversion Pixel dimension. <br/> For more information about conversion pixels, see [Working with Conversion Pixels](working-with-conversion-pixels.md). |
 | Revenue Type | Yes | The basis on which the advertiser has agreed to pay you for the impression. For more information, see [Revenue Types](#revenue-types). |
 | Payment Type | Yes | How the buyer is paying for the impression. See [Payment Types](#payment-types) for definitions of the different payment types. |
@@ -163,13 +163,13 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 | Clearing Event | Yes | The clearing event associated with the impression (e.g., Impressions, Views - Standard Display). |
 | Creative Code | No | Optional code associated with the creative that ran. |
 
->[!NOTE]
+> [!NOTE]
 > You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
 
 ### Seller types
 
 | Name | Definition |
-|------|------------|
+|:-----|:-----------|
 | platform | When you purchase platform inventory, you will be charged your contracted auction service fee. |
 | partner | When you purchase inventory from one of our external supply partners, you will be charged your contracted auction service fee. |
 | unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Xandr support at [https://help.xandr.com](https://help.xandr.com). |
@@ -179,7 +179,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".
 
 | Name | Definition |
-|------|------------|
+|:-----|:-----------|
 | Manual | Base CPM bid. Only applies when you are bidding with a CPM goal whether it's Base, EAP, or ECP. |
 | Learn | Learn bid. Only applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized. |
 | Optimized | Optimized bid. Only applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized. |
@@ -191,7 +191,7 @@ Note that the term "give up" is appended to the bid types below if the valuation
 ### Revenue types
 
 | Name             | Description                                                             |
-|------------------|-------------------------------------------------------------------------|
+|:-----------------|:------------------------------------------------------------------------|
 | No Payment       |                                                                         |
 | Flat CPM         | A flat payment per 1000 impressions.                                    |
 | Cost plus CPM    | Cost (what you spend on inventory) plus an extra CPM.                   |
@@ -205,7 +205,7 @@ Note that the term "give up" is appended to the bid types below if the valuation
 ### Payment types
 
 | Name           | Description                                         |
-|----------------|-----------------------------------------------------|
+|:---------------|:----------------------------------------------------|
 | No Payment     |                                                     |
 | CPM            | Payment per 1000 impressions.                       |
 | CPC            | Payment per click.                                  |
@@ -216,11 +216,11 @@ Note that the term "give up" is appended to the bid types below if the valuation
 
 ## Metrics
 
->[!NOTE]
+> [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|--------|-------------|
+|:-------|:------------|
 | Imps | The total number of impressions. |
 | Imps (master creative) | The number of page-level roadblocks that served the master creative. <br/> **Note:** Alpha-Beta Notice: <br/> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Clicks | The total number of clicks. |
@@ -234,9 +234,9 @@ Note that the term "give up" is appended to the bid types below if the valuation
 | Post View Revenue | The amount of revenue derived from post-view conversions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Post Click Convs | The number of post-click conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post Click Revenue | The amount of revenue derived from post-click conversions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Revenue eCPM | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Glossary](./industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Revenue eCPC | The total revenue, expressed as eCPC. For definitons of eCPM and other terms, see the [Glossary](./industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Revenue eCPA | The revenue per conversion or acquisition, expressed as eCPA. For the definition of eCPA, see the see the [Glossary](./industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Revenue eCPM | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Revenue eCPC | The total revenue, expressed as eCPC. For definitons of eCPM and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Revenue eCPA | The revenue per conversion or acquisition, expressed as eCPA. For the definition of eCPA, see the see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Media Cost | The total amount of media cost across both managed publishers and RTB inventory. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Cost eCPM | The cost per thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Cost eCPC | The cost per click. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
@@ -285,7 +285,7 @@ Note that the term "give up" is appended to the bid types below if the valuation
 ### Custom viewable definition metrics
 
 | Column | Description |
-|--------|-------------|
+|:-------|:------------|
 | Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Xandr account representative). |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |
 
@@ -295,10 +295,10 @@ Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been
     configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium > Analytics > Prebid Server Analytics**
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium &gt; Analytics &gt; Prebid Server Analytics**
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
-    >[!IMPORTANT]
+    > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
@@ -317,7 +317,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](./xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
