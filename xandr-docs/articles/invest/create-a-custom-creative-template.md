@@ -19,7 +19,8 @@ information, see [Duplicate an Existing Custom Creative Template](duplicate-an-e
     1. **Name**: The name
         of the creative template, which helps buyers identify the creative template when uploading creatives that match this
         template's media type and format.
-   > [!TIP]
+
+> [!TIP]
 > Be sure to use a name that buyers will easily recognize.
 
     1. **Media Type** Defines the display style of the creatives that can use the
@@ -28,7 +29,7 @@ information, see [Duplicate an Existing Custom Creative Template](duplicate-an-e
         this template such as Flash, iframe, or External
         File.
     1.  **Template Code**: Specifies how the creative should be rendered.
-    
+
    > [!NOTE]
 > If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [adnxs.com](http://adnxs.com/) references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [adnxs.com](http://adnxs.com/) or [adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
 
