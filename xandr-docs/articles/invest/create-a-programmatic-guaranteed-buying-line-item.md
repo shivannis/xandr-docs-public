@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Create a Programmatic Guaranteed Buying Line Item
-Description : Learn about programmatic guaranteed buying line item (PG line item) that provides you with a workflow designed for buying programmatic guaranteed deal (PG deal).
+title : Microsoft Invest - Create a Programmatic Guaranteed Buying Line Item
+description : Learn about programmatic guaranteed buying line item (PG line item) that provides you with a workflow designed for buying programmatic guaranteed deal (PG deal).
 ---
 
 
@@ -98,7 +98,7 @@ You can use conversion tracking on PG line items, see [Create a Conversion Pixel
 Click the edit icon to associate conversion
 tracking pixels to this PG line item. Note that these pixels are not used by optimization, but can be used to track the line item's performance.
 
-## Associated creatives
+## Associated creatives in Microsoft Invest
 
 **Creative requirements for this PG deal**
 

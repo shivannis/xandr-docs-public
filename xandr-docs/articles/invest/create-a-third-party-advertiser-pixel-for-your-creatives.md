@@ -1,8 +1,6 @@
 ---
-Title : Microsoft Invest - Create a Third-Party Advertiser Pixel for Your Creatives
-Description : You can create third-party creative pixels at the advertiser level and
-then apply these pixels to some or all display creatives under that
-advertiser.
+title : Microsoft Invest - Create a Third-Party Advertiser Pixel for Your Creatives
+description : You can create third-party creative pixels at the advertiser level and then apply these pixels to some or all display creatives under that advertiser.
 ---
 
 

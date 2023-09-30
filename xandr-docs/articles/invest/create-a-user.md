@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Create a User
-Description : Learn to create users and assign them to various roles that gives user a different level of access to your account.
+title : Microsoft Invest - Create a User
+description : Learn to create users and assign them to various roles that gives user a different level of access to your account.
 ---
 
 
