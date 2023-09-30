@@ -1,11 +1,10 @@
 ---
 title : Conversion Attribution
-description : Learn how When an advertiser's conversion pixel loads, Xandr determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's
-creatives. 
+description : Learn how when an advertiser's conversion pixel loads, Xandr determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. 
 ---
 
 
-# Conversion attribution 
+# Conversion attribution in Microsoft Invest
 
 When an advertiser's conversion pixel loads,
 Xandr determines if that pixel load can be
