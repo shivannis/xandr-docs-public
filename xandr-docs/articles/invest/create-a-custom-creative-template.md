@@ -19,8 +19,8 @@ information, see [Duplicate an Existing Custom Creative Template](duplicate-an-e
     1. **Name**: The name
         of the creative template, which helps buyers identify the creative template when uploading creatives that match this
         template's media type and format.
-       > [!TIP]
->> Be sure to use a name that buyers will easily recognize.
+   > [!TIP]
+> Be sure to use a name that buyers will easily recognize.
 
     1. **Media Type** Defines the display style of the creatives that can use the
         template, such as banner.

@@ -1,8 +1,6 @@
 ---
 title : Microsoft Invest - Create a Conversion Pixel
-description : Learn how a conversion pixel can be used to track user actions in response to an
-advertiser's creatives, such as registering at a site or making a
-purchase. 
+description : Learn how a conversion pixel can be used to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. 
 ---
 
 
