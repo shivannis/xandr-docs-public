@@ -4,7 +4,7 @@ description : Learn how to create third-party creative pixels at the advertiser 
 ---
 
 
-# Create a third-party member pixel for your creatives in Microsoft Invest
+# Create a third-party member pixel for your creatives in Microsoft Invest - 2
 
 You can create third-party creative pixels at the advertiser level and
 then apply these pixels to some or all display creatives under that
