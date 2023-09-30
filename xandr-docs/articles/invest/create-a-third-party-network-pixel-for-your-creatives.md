@@ -16,7 +16,7 @@ Member.
     **Go to Member Third-Party Pixels**
     under the **Third-Pary Pixels**
     section.
-1. Click **New** to **create a new third-party pixel**.<br>
+1. Click **New** to create a new third-party pixel.<br>
         The **Create New Third-Party Pixel** dialog displays.
 1. Enter a name for your pixel.
 1. Click the **All

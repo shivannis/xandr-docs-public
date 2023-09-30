@@ -59,11 +59,11 @@ following details for the PG line item:
 > [!IMPORTANT]
 > The PG deal details shown are configured by the seller of the deal and cannot be changed by settings in the PG line item.
 
-  - **Seller** - name of the seller of the
+   - **Seller** - name of the seller of the
     deal
-  - **Start Date** - date the deal becomes
+   - **Start Date** - date the deal becomes
     active
-  - **End Date** - date after which the
+   - **End Date** - date after which the
     deal is no longer active
   - **Projected Media Cost** - total
     projected media cost derived from the projected number and price of

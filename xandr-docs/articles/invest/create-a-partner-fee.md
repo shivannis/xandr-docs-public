@@ -17,13 +17,13 @@ You must have [Network-level access](getting-started-with-roles.md)
 1. Fill out the fee overview and click
     **Next**.
     1. Enter a fee name that will make sense to other people.
-    2. Select a fee vendor. If your vendor isn't listed, select one of
+    1. Select a fee vendor. If your vendor isn't listed, select one of
         the custom vendors to represent them.
-    3. Select a fee type. For more information, see [Fee Type](fee-type.md).
-    4. Optionally enter a longer fee description.
+    1. Select a fee type. For more information, see [Fee Type](fee-type.md).
+    1. Optionally enter a longer fee description.
 1. Define the fee calculation and click
     **Next**. For more information, see [Fee Calculations](fee-calculations.md).
-    1. Select % (percentage) or
+    1. Select **%** (percentage) or
         **CPM**. If you select
         **CPM**, select a currency.
         **Note**: Line item currency is inherited from the advertiser.
