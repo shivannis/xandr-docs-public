@@ -1,8 +1,6 @@
 ---
-title : Conversion Attribution
-description : Learn how When an advertiser's conversion pixel loads, Xandr determines if a pixel load can be
-associated with a user, and whether the user has converted in
-response to having previously viewed or clicked one of the advertiser's
+title : Microsoft Invest - Conversion Attribution
+description : Learn how When an advertiser's conversion pixel loads, Xandr determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's
 creatives. 
 ---
 
@@ -80,8 +78,7 @@ as time flows from left to right, the last impression inside the **View
 Lookback Window** before the conversion happens is credited, and is
 marked in green.
 
-![Impressions Only](media/imps-only.png)
-
+![Screenshot of imps only.](media/imps-only.png)
 
 ## Click Conversion Pixel
 
@@ -90,10 +87,10 @@ the last click that occurs before the conversion. In the diagram below,
 the last click inside the **Click Lookback Window** is before the
 conversion happens is credited, and is marked in green.
 
-![Clicks Only](media/clicks-only.png)
+![Screenshot of Clicks Only.](media/clicks-only.png)
 
 
-# Hybrid Conversion Pixel, Single Lookback Window
+## Hybrid Conversion Pixel, Single Lookback Window
 
 When using **Hybrid** conversion pixels, either views or clicks can be
 credited for conversions. The lookback window for views and clicks can
@@ -114,7 +111,7 @@ Since clicks receive preference over views that occur within the same
 lookback window, the most recent click has been credited with the
 conversion, and is marked in green.
 
-![Impressions and Clicks Same Lookback](media/imps-and-clicks-same-lookback.png)
+![Screenshot of Impressions and Clicks Same Lookback.](media/imps-and-clicks-same-lookback.png)
 
 
 ## Hybrid Conversion Pixel, Separate Lookback Windows
@@ -127,7 +124,7 @@ conversion over a more recent impression. In the diagram below, a click
 Window**, and is given credit for the conversion over a number of more
 recent impressions.
 
-![Impressions and Clicks Different Lookback](media/imps-and-clicks-different-lookback.png)
+![Screenshot of Impressions and Clicks Different Lookback.](media/imps-and-clicks-different-lookback.png)
 
 In the diagram below, a **Hybrid** conversion pixel has been configured
 with a short **View Lookback Window** and a longer **Click Lookback
@@ -135,9 +132,9 @@ Window**. There are no clicks within the click lookback window,
 therefore the most recent impression within the view lookback window
 (marked in green) is credited for the conversion.
 
-![Impressions and Clicks Different Lookback](media/imps-and-clicks-different-lookback-a.png)
+![Screenshot of imps and Clicks Different Lookback.](media/imps-and-clicks-different-lookback-a.png)
 
-## Related Topic
+## Related topic
 
 - [Offline
   Conversion Attribution](offline-conversion-attribution.md)

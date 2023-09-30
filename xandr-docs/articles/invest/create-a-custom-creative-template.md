@@ -1,10 +1,10 @@
 ---
-title : Monetize Invest - Create a Custom Creative Template
+title : Microsoft Invest - Create a Custom Creative Template
 description : You can create a new custom creative template from scratch at any time.
 ---
 
 
-# Create a Custom Creative Template in Monetize Invest
+# Create a Custom Creative Template in Microsoft Invest
 
 You can create a new custom creative template from scratch at any time.
 

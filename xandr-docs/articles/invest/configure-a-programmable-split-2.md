@@ -1,11 +1,10 @@
 ---
-title : Configure a Programmable Split
-description : Learn using programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. Splits are recommended if you
-have sophisticated targeting requirements. 
+title : Configure a Programmable Split 2
+description : Learn using programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. Splits are recommended if you have sophisticated targeting requirements. 
 ---
 
 
-# Configure a programmable split 
+# Configure a programmable split 2
 
 You can use programmable splits to refine line item targeting and
 dynamically adjust bids, budget allocation, and creative allocation
