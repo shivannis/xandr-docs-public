@@ -45,8 +45,10 @@ Click **Next**.
     - Name (optional name for this feature)
       Separate each group by entering a hard return. For example:
 
-      ```40.741624,-73.990991,10,Feature One  
-      48.376928,-54.986546,8```
+      ```text
+      40.741624,-73.990991,10,Feature One  
+      48.376928,-54.986546,8
+      ```
 
 1. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
 1. Click **Next**. 
@@ -55,13 +57,17 @@ Click **Next**.
 
 1. Browse your computer and select the .csv file to upload. Ensure that the first row of the .csv file includes the following headers with corresponding values listed in rows underneath:
 
-   ```lat | long | radius_meters | name```
+   ```text
+   lat | long | radius_meters | name
+   ```
 
    For example:
 
-   ```lat,long,radius_meters,name  
+   ```text
+   lat,long,radius_meters,name  
    40.741624,-73.990991,10,Feature One  
-   48.376928,-54.986546,8```
+   48.376928,-54.986546,8
+   ```
 
 1. Click **Next**.
 
