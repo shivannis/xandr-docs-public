@@ -3,7 +3,7 @@ title: Microsoft Invest - Data Marketplace - Buyer Overview
 description: In this article, explore the data marketplace, its partners, workflow, various data usage reports, and frequently asked questions.
 ---
 
-# Microsoft Invest - Data Marketplace Buyer Overview
+# Microsoft Invest - Data Marketplace Buyer overview
 
 Xandr supports automatic clearing for data you purchase on our platform and use to target particular user segments. This means that the costs of these user segments will be:
 
@@ -51,7 +51,7 @@ Contact your data provider or Xandr representative for the latest rates.
 | Eyeota | Audience | [DataDesk@Eyeota.com](mailto:DataDesk@Eyeota.com) |  |
 | Foursquare | Audience | [location@foursquare.com](mailto:location@foursquare.com) | Yes |
 | Gourmet Ads & Healthy Ads | Audience and Contextual | [rtb@gourmetads.com](mailto:rtb@gourmetads.com) |  |
-| Grapeshot | Contextual | See Oracle row in this table |  |
+| Grapeshot | Contextual | See Oracle row in this table. |  |
 | IgnitionOne | Audience | No contact provided. |  |
 | IHS Polk | Audience | [polktvmedia@ihsmarkit.com](mailto:polktvmedia@ihsmarkit.com) |  |
 | Illuma | Contextual | [xandr@weareilluma.com](mailto:xandr@weareilluma.com) |  |
