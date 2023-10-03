@@ -1,11 +1,10 @@
 ---
 title : Microsoft Invest - Create Event Code from the UI
-description : You can use the universal pixel UI to generate event code and send it to
-your web developer.
+description : Learn to create event code from the UI and send it to web developer.
 ---
 
 
-# Create event code from the UI in  Microsoft Invest
+# Create event code from the UI in Microsoft Invest
 
 You can use the universal pixel UI to generate event code and send it to
 your web developer.
@@ -23,7 +22,7 @@ events and parameters:
 1. Click **Generate Code** to export your selections.
 1. Copy and paste the code, or click **Email Instructions** to send it to your web developer.
 
-# Related topics
+## Related topics
 
 - [Create Event Code Manually](create-event-code-manually.md)
 - [Standard Events and Parameters](standard-events-and-parameters.md)

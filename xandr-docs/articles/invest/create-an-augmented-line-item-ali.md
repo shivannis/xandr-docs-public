@@ -81,7 +81,7 @@ create a line item.
     (*frequency*) and how often (*recency*) creatives can be shown to a
     given user.
 
-1. [Set Up Viewability and Environment Targeting for a Line Item](set-up-viewability-and-environment-targeting-for-a-line-item.md)<md><br>
+1. [Set Up Viewability and Environment Targeting for a Line Item](set-up-viewability-and-environment-targeting-for-a-line-item.md)<br>
    From the **Viewability & Environment
     Targeting** section, to narrow your ad campaign's reach to the
     most valuable inventory, you can set up viewability threshold,
