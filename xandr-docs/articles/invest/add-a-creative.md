@@ -3,7 +3,7 @@ title: Microsoft Invest - Add a Creative
 description: In this module, follow the step-by-step instructions to add one creative at a time to the Xandr platform.
 ---
 
-# Microsoft Invest - Add a Creative
+# Microsoft Invest - Add a creative
 
 You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 
@@ -81,7 +81,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
 1. Click **Save**.
 
-## Related Topics
+## Related topics
 
 - [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)
 - [Native Creatives](native-creatives.md)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Adaptive Pacing
-description: Understand how adaptive pacing prevents overpaying by controlling a line item's pacing and the learn the benefits of adaptive pacing.
+description: Understand how adaptive pacing prevents overpaying by controlling a line item's pacing and learn the benefits of adaptive pacing.
 ---
 
 # Microsoft Invest - Adaptive pacing
@@ -13,7 +13,7 @@ Adaptive pacing controls a line item's pacing and prevents overpaying. Using the
 
 The spend curves are tailored to a country's internet traffic patterns. That is, instead of forcing line items to pace evenly throughout the day, Xandr adjusts the spend so that more is spent during the hours when there are more users online. If a line item is targeting multiple countries, we will take a weighted average of the countries based on availability.
 
-## Benefits of Adaptive Pacing
+## Benefits of adaptive pacing
 
 Adaptive pacing benefits line items in a few ways:
 
@@ -22,9 +22,9 @@ Adaptive pacing benefits line items in a few ways:
 - If you're a direct advertiser clients or you book on a Cost Plus basis, it helps advertiser dollars go farther. If the line item spends
   less per impression, those dollars can be used to buy more impressions.
 
-Additionally, although adaptive pacing was developed to distribute spend, it is also used as a signal in many of our different optimization applications, such as [Discovery](discovery.md)
+Additionally, although adaptive pacing was developed to distribute spend, it is also used as a signal in many of our different optimization applications, such as [Discovery](discovery.md).
 
-## Related Topics
+## Related topics
 
 - [Optimization Guide - ALI](optimization-guide-ali.md)
 - [Lifetime Pacing](lifetime-pacing.md)

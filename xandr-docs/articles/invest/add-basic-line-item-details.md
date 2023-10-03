@@ -3,7 +3,7 @@ title: Microsoft Invest - Add Basic Line Item Details
 description: In this module, learn how to set the name, state, and ad type, as well as associate additional insertion orders to the line item, all from the Basic Settings section.
 ---
 
-# Microsoft Invest - Add Basic Line Item Details
+# Microsoft Invest - Add basic line item details
 
 You can set the name, state, and ad type, as well as associate additional insertion orders to the line item, all from the **Basic Settings** section. You can also optionally assign an external code.
 
@@ -32,7 +32,7 @@ You can set the name, state, and ad type, as well as associate additional insert
 1. Leave **Banner** selected as the **Ad Type** or select a different option.
    The ad type must match the creative types that you will associate with the line item. This setting determines how auction items are tracked for the line item's buying strategy, payment strategy, optimization options, creative association, and targeting options.
 
-## Related Topics
+## Related topics
 
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Creative Types](creative-types.md)

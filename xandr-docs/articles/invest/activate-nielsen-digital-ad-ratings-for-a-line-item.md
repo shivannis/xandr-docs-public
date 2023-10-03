@@ -1,6 +1,6 @@
 ---
 title: Activate Nielsen Digital Ad Ratings for a Line Item
-description: In this module, learn how to activate Nielsen Digital Ad Ratings (DAR) for your augmented line item.
+description: In this article, learn how to activate Nielsen Digital Ad Ratings (DAR) for your augmented line item.
 ---
 
 # Activate Nielsen Digital Ad Ratings for a line item
