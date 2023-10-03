@@ -167,8 +167,8 @@ Data in this report is retained for 420 days.
 | Average View Time Percent | The average view time expressed as a percentage of the total possible view time. |
 
 > [!NOTE]
-> * When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
-> * The data for Video Content Duration metric are only available if the publisher has implemented video taxonomy.
+> - When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
+> - The data for Video Content Duration metric are only available if the publisher has implemented video taxonomy.
 
 ## To run your report
 
@@ -191,7 +191,7 @@ Follow these steps to run your report.
 
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
       > [!TIP]
-  > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
