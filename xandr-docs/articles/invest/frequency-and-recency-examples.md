@@ -47,6 +47,8 @@ Here are the frequency caps:
 | B | 1 impression per day |
 | C | 1 impression per day |
 
+<br>
+
 | Line Item 2 / CPM=$2 | Frequency=1 impression per day |
 |:---|:---|
 | A | 1 impression per day |

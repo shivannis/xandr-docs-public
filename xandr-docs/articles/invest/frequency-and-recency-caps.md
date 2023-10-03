@@ -16,7 +16,6 @@ Because frequency and recency both involve creatives, they're sometimes used int
 
 "Any creatives covered in the frequency or recency cap" refers to all creatives associated with the object where the cap is set (advertiser, insertion order, or line item) and all its children. For example, let's say we set a frequency or recency cap at the advertiser level, and that advertiser has ten line items with two creatives associated to each line item. An impression served can include any one of those 20 creatives, and that counts as a single impression against the frequency or recency cap.
 
-
 ## Related topics
 
 - [Technical Limitations of Mobile Buying](./technical-limitations-of-mobile-buying.md)

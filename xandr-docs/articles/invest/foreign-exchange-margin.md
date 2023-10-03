@@ -51,7 +51,6 @@ The table below lists the FX Margin Rates per currency. These rates are subject 
 - We will waive FX Margin when the buyer and seller billing currencies are equivalent (effective 2/1/2021).
 - Margin can be charged as either a fee or deduction (both are described below in greater detail).
 
-
 ## Fee vs deduction
 
 Xandr can charge FX Margin as either a fee or deduction (depending on what the client prefers). Generally, we apply whatever method is being used for the client's BASC/SASC charges (but that can be overridden as needed). Each charging method is described below:
