@@ -8,7 +8,7 @@ description: In this article, learn about cross-device reporting, including its 
 Reporting on cross-device targeting and measurement is available in the Member Analytics report, the Device Analytics report, and the Data Usage report, as well as on the **Analytics** tab for the augmented line item.
 
 > [!NOTE]
-> Cross Device Metrics on the Line Item Analytics tab includes data for the last 60 days only.
+> Cross-Device Metrics on the Line Item Analytics tab includes data for the last 60 days only.
 
 ## Reports with Cross-Device metrics
 

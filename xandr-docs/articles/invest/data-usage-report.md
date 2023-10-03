@@ -81,7 +81,7 @@ For more information about how quickly report data is processed, see [Availabili
 | Column | Description |
 |:---|:---|
 | Data Costs | The total costs attributed to the use of third-party data. |
-| Data Type | The two choices are Segment or Cross Device. See Cross-Device Targeting and Measurement for more information. |
+| Data Type | The two choices are Segment or Cross Device. For more information, see [Cross-Device Targeting and Measurement](cross-device-targeting-and-measurement.md). |
 | Imps | The number of impressions where a cost was incurred due to use of a third-party's data. If multiple third-party providers were used for a single impression, that impression will be listed for each third-party provider. |
 | Sales Tax | The amount of sales tax collected. This field is only populated when the Buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Xandr is required (by the relevant local state regulator) to collect this tax. |
 

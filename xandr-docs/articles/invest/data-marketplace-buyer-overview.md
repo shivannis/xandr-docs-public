@@ -27,64 +27,64 @@ Contact your data provider or Xandr representative for the latest rates.
 
 | Data Provider | Type | Sales Contact | Supports CTV Activation |
 |:---|:---|:---|:---|
-| 4C Insights | TV Audience | info@4Cinsights.com |  |
-| Acxiom | Audience | DataGuru@acxiom.com |  |
-| adsquare Data Alliance | Audience and Contextual | platforms@adsquare.com |  |
-| Adstra | Audience | Xandrsupport@adstradata.com |  |
-| AlikeAudience | Audience | advertise@alikeaudience.com |  |
-| Analytics IQ | Audience | audiences@analytics-iq.com |  |
+| 4C Insights | TV Audience | [info@4Cinsights.com](mailto:info@4Cinsights.com) |  |
+| Acxiom | Audience | [DataGuru@acxiom.com](mailto:DataGuru@acxiom.com) |  |
+| adsquare Data Alliance | Audience and Contextual | [platforms@adsquare.com](mailto:platforms@adsquare.com) |  |
+| Adstra | Audience | [Xandrsupport@adstradata.com](mailto:Xandrsupport@adstradata.com) |  |
+| AlikeAudience | Audience | [advertise@alikeaudience.com](mailto:advertise@alikeaudience.com) |  |
+| Analytics IQ | Audience | [audiences@analytics-iq.com](mailto:audiences@analytics-iq.com) |  |
 | Audience Project | Audience | No contact provided. |  |
-| Audiens | Audience | sales@audiens.com |  |
+| Audiens | Audience | [sales@audiens.com](mailto:sales@audiens.com) |  |
 | BeemRay | Audience | No contact provided. |  |
 | Bell Media | Audience | No contact provided. |  |
-| Bombora | Audience | audiencedesk@bombora.com |  |
+| Bombora | Audience | [audiencedesk@bombora.com](mailto:audiencedesk@bombora.com) |  |
 | Choreograph | Audience | No contact provided. |  |
-| ComScore | Audience and Contextual | ActivationSpecialists@comscore.com | Yes |
-| Cross Pixel | Audience (Search & Keyword Retargeting) | info@crosspixel.net |  |
-| Crossix | Audience | crossix_digitalconnect@veeva.com |  |
-| Datmean | Deterministic Audience | data@datmean.com |  |
-| Datonics | Audience | data@datonics.com |  |
-| DoubleVerify | Audience (Fraud/IVT) and Contextual | programmaticsales@doubleverify.com | Yes |
-| Dstillery | Audience | Data@dstillery.com |  |
-| Epsilon | Audience | OnlineDataHotline@epsilon.com |  |
+| ComScore | Audience and Contextual | [ActivationSpecialists@comscore.com](mailto:ActivationSpecialists@comscore.com) | Yes |
+| Cross Pixel | Audience (Search & Keyword Retargeting) | [info@crosspixel.net](mailto:info@crosspixel.net) |  |
+| Crossix | Audience | [crossix_digitalconnect@veeva.com](mailto:crossix_digitalconnect@veeva.com) |  |
+| Datmean | Deterministic Audience | [data@datmean.com](mailto:data@datmean.com) |  |
+| Datonics | Audience | [data@datonics.com](mailto:data@datonics.com) |  |
+| DoubleVerify | Audience (Fraud/IVT) and Contextual | [programmaticsales@doubleverify.com](mailto:programmaticsales@doubleverify.com) | Yes |
+| Dstillery | Audience | [Data@dstillery.com](mailto:Data@dstillery.com) |  |
+| Epsilon | Audience | [OnlineDataHotline@epsilon.com](mailto:OnlineDataHotline@epsilon.com) |  |
 | Equifax | Audience | No contact provided. |  |
-| Eyeota | Audience | DataDesk@Eyeota.com |  |
-| Foursquare | Audience | location@foursquare.com | Yes |
-| Gourmet Ads & Healthy Ads | Audience and Contextual | rtb@gourmetads.com |  |
+| Eyeota | Audience | [DataDesk@Eyeota.com](mailto:DataDesk@Eyeota.com) |  |
+| Foursquare | Audience | [location@foursquare.com](mailto:location@foursquare.com) | Yes |
+| Gourmet Ads & Healthy Ads | Audience and Contextual | [rtb@gourmetads.com](mailto:rtb@gourmetads.com) |  |
 | Grapeshot | Contextual | See Oracle row in this table |  |
 | IgnitionOne | Audience | No contact provided. |  |
-| IHS Polk | Audience | polktvmedia@ihsmarkit.com |  |
-| Illuma | Contextual | xandr@weareilluma.com |  |
+| IHS Polk | Audience | [polktvmedia@ihsmarkit.com](mailto:polktvmedia@ihsmarkit.com) |  |
+| Illuma | Contextual | [xandr@weareilluma.com](mailto:xandr@weareilluma.com) |  |
 | InMarket | Audience | No contact provided. |  |
-| Integral AdScience | Contextual | XandrSupport@integralads.com |  |
+| Integral AdScience | Contextual | [XandrSupport@integralads.com](mailto:XandrSupport@integralads.com) |  |
 | Kochava | Mobile Audience | No contact provided. |  |
-| LiveRamp Data Store | Audience | appnexus@liveramp.com |  |
-| Lotame | Audience | NaDataRFP@lotame.com |  |
+| LiveRamp Data Store | Audience | [appnexus@liveramp.com](mailto:appnexus@liveramp.com) |  |
+| Lotame | Audience | [NaDataRFP@lotame.com](mailto:cvanhemert@lotame.com) |  |
 | MasterCard | Audience | No contact provided. |  |
 | Merkle | Audience | No contact provided. |  |
-| Navegg | Audience | support@navegg.com |  |
+| Navegg | Audience | [support@navegg.com](mailto:support@navegg.com) |  |
 | Netsprint | Audience | No contact provided. |  |
-| Neustar | Audience | adadvisorsupport@team.neustar |  |
-| Nielsen Marketing Cloud (eXelate) | Audience | nielsendatahotline@nielsen.com | Yes |
-| Oracle Data Cloud (BlueKai, Datalogix, AddThis, Crosswise, MOAT, & Grapeshot) | Audiences by Oracle (BlueKai, Datalogix, AddThis)<br>Oracle Customs (1st, BlueKai, Datalogix, AddThis)<br>Contextual Data- Grapeshot | thedatahotline@oracle.com | Yes |
-| owner IQ | Audience and Contextual | AppNexus@ownerIQ.com |  |
-| Peer39 | Contextual | peer39am@peer39.com | Yes |
+| Neustar | Audience | [adadvisorsupport@team.neustar](mailto:adadvisorsupport@team.neustar) |  |
+| Nielsen Marketing Cloud (eXelate) | Audience | [nielsendatahotline@nielsen.com](mailto:nielsendatahotline@nielsen.com) | Yes |
+| Oracle Data Cloud (BlueKai, Datalogix, AddThis, Crosswise, MOAT, & Grapeshot) | Audiences by Oracle (BlueKai, Datalogix, AddThis)<br>Oracle Customs (1st, BlueKai, Datalogix, AddThis)<br>Contextual Data- Grapeshot | [thedatahotline@oracle.com](mailto:thedatahotline@oracle.com) | Yes |
+| owner IQ | Audience and Contextual | [AppNexus@ownerIQ.com](mailto:AppNexus@ownerIQ.com) |  |
+| Peer39 | Contextual | [peer39am@peer39.com](mailto:peer39am@peer39.com) | Yes |
 | Placed | Audience | No contact provided. |  |
 | PlaceIQ | Audience | No contact provided. |  |
-| Retargetly | Audience | xandr-cs@retargetly.com |  |
-| SambaTV | TV Audience | sales@samba.tv | Yes |
-| Semasio | Audience and Contextual | targeting@semasio.com |  |
+| Retargetly | Audience | [xandr-cs@retargetly.com](mailto:xandr-cs@retargetly.com) |  |
+| SambaTV | TV Audience | [sales@samba.tv](mailto:sales@samba.tv) | Yes |
+| Semasio | Audience and Contextual | [targeting@semasio.com](mailto:targeting@semasio.com) |  |
 | Semcasting | Audience | No contact provided. |  |
-| ShareThis | Audience | Appnexus@sharethis.com |  |
-| Sirdata | Audience | commercial@sirdata.com |  |
-| Skimlinks | Audience | Audiences@skimlinks.com |  |
-| Skydeo | Audience | xandr@skydeo.com |  |
+| ShareThis | Audience | [Appnexus@sharethis.com](mailto:Appnexus@sharethis.com) |  |
+| Sirdata | Audience | [commercial@sirdata.com](mailto:commercial@sirdata.com) |  |
+| Skimlinks | Audience | [Audiences@skimlinks.com](mailto:Audiences@skimlinks.com) |  |
+| Skydeo | Audience | [xandr@skydeo.com](mailto:xandr@skydeo.com) |  |
 | Statiq | Audience | No contact provided. |  |
-| The ADEX | Audience and Contextual | help@theadex.com |  |
-| The Weather Channel (an IBM Watson Company) | Audience | WAdatasales@wwpdl.vnet.ibm.com |  |
-| Tru Optik | TV Audience | appnexus@truoptik.com | Yes |
+| The ADEX | Audience and Contextual | [help@theadex.com](mailto:help@theadex.com) |  |
+| The Weather Channel (an IBM Watson Company) | Audience | [WAdatasales@wwpdl.vnet.ibm.com](mailto:WAdatasales@wwpdl.vnet.ibm.com) |  |
+| Tru Optik | TV Audience | [appnexus@truoptik.com](mailto:appnexus@truoptik.com) | Yes |
 | Visa | Audience | No contact provided. |  |
-| VisualDNA | Audience | See Nielsen row in this table |  |
+| VisualDNA | Audience | See Nielsen row in this table. |  |
 | Wunderman Data | Audience | No contact provided. |  |
 | ZeoTap | Audience amd Contextual | No contact provided. |  |
 
@@ -130,29 +130,29 @@ When creating or editing line items, if you select **Cost Plus** as your **Reven
 >
 > For segments:
 >
-> - you have selected a segment for which the Data Provider has not supplied a price
-> - you have selected a segment from a Data Provider who is not participating in Xandr automating clearing
-> - you have selected a user-created segment (e.g., generated via a pixel) not supplied by a Data Provider
+> - you have selected a segment for which the Data Provider has not supplied a price.
+> - you have selected a segment from a Data Provider who is not participating in Xandr automating clearing.
+> - you have selected a user-created segment (e.g., generated via a pixel) not supplied by a Data Provider.
 >
 > For Data Cost Totals:
 >
-> - one or more of the segments you selected fit the conditions listed above for segment alerts
+> - one or more of the segments you selected fit the conditions listed above for segment alerts.
 
 ## Data usage in reports
 
-### Data Usage Report (API)
+### Data Usage report (API)
 
 For details on the API version of this report, see the [Data Usage Report](../digital-platform-api/data-usage-report.md). Free segments will not be appears in data usage reports.
 
-### Data Usage Report (UI)
+### Data Usage report (UI)
 
 For details on the UI version of this report, see the [Data Usage Report](../digital-platform-api/data-usage-report.md). Free segments will not be appears in data usage reports.
 
-### Network Analytics Report (API)
+### Network Analytics report (API)
 
 The `data_costs` field in the `network_analytics` report contains the sum of all third-party data costs. For details on these data costs, see [Data Usage Report](../digital-platform-api/data-usage-report.md). In addition, the `revenue` field in the `network_analytics` report includes all third-party data costs in totals when the Line Item's `revenue_type` is set to `cost_plus_cpm` or `cost_plus_margin`.
 
-### Network Analytics Report (UI)
+### Network Analytics report (UI)
 
 The **Data Costs** field in the **Member Analytics** report contains the sum of all third-party data costs. For details on these data costs, see [Data Usage Report](../digital-platform-api/data-usage-report.md). In addition, the **Revenue** field in the **Network Analytics** reports also includes all third-party data costs in totals when the Line Item's **Revenue Type** is set to "Cost Plus" (with either a "Margin" or flat "CPM" value).
 
@@ -208,7 +208,7 @@ Key steps in assessing data cost:
 
 In the simplest scenario, the line item is targeting just a single segment. The presence of the user's unique identifier (a parameter in the auction) determines whether the demographic segment is relevant. For line item targeting one segment if a segment is relevant, then the segment will be used to bid in the auction.
 
-:::image type="content" source="media/basic.png" alt-text="Diagram of a single segment.":::
+:::image type="content" source="media/basic.png" alt-text="Diagram of a single segment target.":::
 
 ### Multiple segments targeted
 
@@ -227,7 +227,7 @@ If multiple segments are targeted with a line item, the boolean AND/ OR logic th
 - If the ad request is not relevant to one or many of the targeted segments, then no bid will be made
 
   :::image type="content" source="media/advanced_and_b.png" alt-text="Diagram of one or many targeted segments.":::
-  :::image type="content" source="media/advanced_and_c.png" alt-text="Diagram of no bid.":::
+  :::image type="content" source="media/advanced_and_c.png" alt-text="Diagram of one or many targeted segment.":::
   
   > [!NOTE]
   > Since the ad request is required to be relevant for ALL targeted segments using the AND boolean, the buyer will be charged for the use of ALL segments if the impression is won.
@@ -241,7 +241,7 @@ If multiple segments are targeted with a line item, the boolean AND/ OR logic th
   
 - If the ad request is relevant to more than one segment (overlaps), Xandr will use the lowest priced segment to bid on the auction.
 
-  :::image type="content" source="media/advanced_or_c.png" alt-text="Diagram of segment overlapped.":::
+  :::image type="content" source="media/advanced_or_c.png" alt-text="Diagram of a segment overlapped.":::
 
 - If the ad request is NOT relevant to any targeted segment, then no bid will be made.
 
@@ -330,4 +330,3 @@ Submit a support ticket via our [Customer Support Portal](https://help.xandr.com
 - **Used Segment** - A segment that is used by Xandr to bid on the auction. If the line item wins the auction, then all used segments will be charged to the buyer. The segment(s) used for each auction is determined by Xandr.
 - **Bundled Price** - The price for a group of segments determined by the data provider via their chosen pricing methodology.
 - **Exclusion Targeted Segment** - A segment that is negatively targeted by the buyer. The buyer is choosing not to bid on auctions where one or more parameters of the ad request fall into an exclusion targeted segment.
-=

@@ -5,7 +5,7 @@ description: In this article, explore the comprehensive, step-by-step instructio
 
 # Microsoft Invest - Customize your buyer profile
 
-## Step 1. Get started
+## Step 1: Get started
 
 Click the **My Profile** button to open the **My Buyer Profile** dialog. Basic information about your member displays:
 
@@ -13,7 +13,7 @@ Click the **My Profile** button to open the **My Buyer Profile** dialog. Basic i
 - **Name** - Your member name.
 - **Partner Type** - The type of partner you are.
 
-## Step 2. Update your profile
+## Step 2: Update your profile
 
 Complete the following fields:
 
@@ -30,7 +30,7 @@ Complete the following fields:
 - **Company Info** - Enter any additional information about your company that may be relevant.
 - **Use the same information for my seller profile** - Select this checkbox to use this same information when a seller is viewing your buyer profile in the **Partner Center** screen.
 
-### Step 3. Record your changes
+## Step 3: Record your changes
 
 When all changes have been made, click **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Deal Lists
-description: In this article, learn about deal lists and ways to create, edit, and target a deal list.
+description: In this article, learn about the deal lists and ways to create, edit, and target a deal list.
 ---
 
 # Microsoft Invest - Deal lists
@@ -12,7 +12,7 @@ access preferred premium inventory or negotiated inventory. A deal list is a gro
 
 You can create and manage Deal Lists at the Member and Advertiser level. A deal list may contain one or more deal IDs and a deal ID can be added to multiple deal lists. However, an ID can be added only once to a single deal list. While adding or removing deals in a deal list, you can find the deals by deal id, deal name or deal alias. Additionally, deal IDs can be added to a list in bulk.
 
-## Create a New Deal List
+### Create a New Deal List
 
 1. In the **Inventory** menu select **Deal Lists** from the dropdown.
 1. Click **New** in the **Deal List** page.
@@ -31,7 +31,7 @@ You can create and manage Deal Lists at the Member and Advertiser level. A deal 
 
 1. Once all deal IDs are added, click **Save** to complete the setup.
 
-## Edit a Deal List**
+### Edit a Deal List
 
 1. Click on the name of the deal list in the **Deal List** page. This will display the details of the deal list with the deals it contains.
 1. Click **Add** to include more deals to the deal list. To add deals to the deal list, follow the instructions in the **Create a New Deal List** section above.

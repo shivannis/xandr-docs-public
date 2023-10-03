@@ -14,26 +14,26 @@ Cross-device capability enhances targeting and attribution using information fro
 - Xandr's identity graph, which covers the United States and Europe. The Xandr United States and Europe graphs are powered by market-leading data partners.
 
   > [!IMPORTANT]
-  > European cross device
-  coverage is currently limited to the following key countries:
-  - France
-  - Italy
-  - Germany
-  - Great Britain
-  - Spain
-  - Switzerland
-  - Austria
-  - Belgium
-  - United Kingdom
-  - Netherlands
-  - Poland
-  - Portugal
-  - Denmark
-  - Norway
-  - Sweden
-  - Finland
-  - Iceland
-  - Ireland
+  > European cross device coverage is currently limited to the following key countries:
+  >
+  > - France
+  > - Italy
+  > - Germany
+  > - Great Britain
+  > - Spain
+  > - Switzerland
+  > - Austria
+  > - Belgium
+  > - United Kingdom
+  > - Netherlands
+  > - Poland
+  > - Portugal
+  > - Denmark
+  > - Norway
+  > - Sweden
+  > - Finland
+  > - Iceland
+  > - Ireland
 
 - Tapad's graph, which combines curated data with machine learning.
 
