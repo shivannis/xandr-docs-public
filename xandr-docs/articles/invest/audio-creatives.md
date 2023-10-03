@@ -23,8 +23,7 @@ Audio creatives can provide:
   personalized for each targeted audience, instilling emotion and
   memorability through the use of voice.
 
-  For more information about audio inventory, targeting, reporting, and
-  metrics, see the following:
+For more information about audio inventory, targeting, reporting, and metrics, see the following:
 
 - [Buying Audio Inventory](buying-audio-inventory.md)
 - [Listen-Through Targeting](listen-through-targeting.md)

@@ -27,10 +27,10 @@ Triton inventory, it must adhere to the following format requirements
 provided by the seller:
 
 | Inventory | Format Requirement |
-|--|--|
-| Triton | <li> **File type**: MP3 <br>  <li> **Bit rate**: 128 kbps <br> <li> **Ad length**: 15, 30, or 60 seconds <br>  Trimmed of slate/silence <br> <li> **Sample rate**: 44100 Hz <br> <li> **Volume**: Normalized to -4db |
-| Pandora / AdsWizz | <li> **File type**: MP3, AAC, or WAV <br> <li> **File size**: Maximum 20MB <br> <li> **Bit rate**: Minimum 128 kbps, 196kbs recommended <br> <li> **Ad length**: 15, 30, or 60 seconds <br>|
-| Spotify | <li> **File type**: MP3, WAV, or OGG <br> <li>**Companion Banner** : 640x640 or 300x250 <br> <li> **Bit rate**: Minimum 128 kbps <br> <li> **Ad length**: 15 or 30 seconds <br> |
+|:--|:--|
+| Triton | - **File type**: MP3 <br>  - **Bit rate**: 128 kbps <br> - **Ad length**: 15, 30, or 60 seconds       <ul><li>Trimmed of slate/silence</li></ul> - **Sample rate**: 44100 Hz <br> - **Volume**: Normalized to -4db |
+| Pandora / AdsWizz | - **File type**: MP3, AAC, or WAV <br> - **File size**: Maximum 20MB <br> - **Bit rate**: Minimum 128 kbps, 196kbs recommended <br> - **Ad length**: 15, 30, or 60 seconds <br>|
+| Spotify | - **File type**: MP3, WAV, or OGG <br> - **Companion Banner** : 640x640 or 300x250 <br> - **Bit rate**: Minimum 128 kbps <br> - **Ad length**: 15 or 30 seconds <br> |
 
 ## Related topics
 

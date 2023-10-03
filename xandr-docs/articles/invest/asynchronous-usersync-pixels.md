@@ -38,7 +38,7 @@ The important takeaways are:
 1.  There should be no increase in publisher page load times - in fact,
     with this change page load times should slightly improve.
 
-## How it Works
+## How it works
 
 We attach a bit of JavaScript code to the publisher's page that will
 only run after the rest of the page's content has been loaded by the
@@ -54,7 +54,7 @@ all of our external partners.
 
 For those interested in more technical details, we are appending a
 JavaScript callback to the browser's `window.onload` event. For more
-information about how the `onload` event works, see [Mozilla's DOM Reference](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onload?redirectlocale=en-US&amp;redirectslug=Web%2FAPI%2Fwindow.onload) 
+information about how the `onload` event works, see [Mozilla's DOM Reference](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers.onload?redirectlocale=en-US&amp;redirectslug=Web%2FAPI%2Fwindow.onload).
 
 The steps shown below provide a simplified description of this process:
 
@@ -69,9 +69,9 @@ The steps shown below provide a simplified description of this process:
 1. The usersync pixel loads and the user ID is now synced.
 1. Steps 4-6 are repeated until the user is fully synced or 10 pixels load, whatever comes sooner.
 
-   For more detailed information about how browsers load web pages, see [How Browsers Work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/).
+For more detailed information about how browsers load web pages, see [How Browsers Work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/).
 
-## European Ad Inventory and Providing Notice, Transparency and Choice
+## European ad inventory and providing notice, transparency and choice
 
 In order for our clients to meet their transparency, notice and
 choice/consent requirements under the GDPR and the existing ePrivacy

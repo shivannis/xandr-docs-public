@@ -20,10 +20,10 @@ selected from the **Line Item Association** section. You can also use the
 **Creative Manager** to associate
 creatives at the line item level. For more information about associating
 creatives with line items, see [Associate
-Creatives with a Line Item](associate-creatives-with-a-line-item.md)
+Creatives with a Line Item](associate-creatives-with-a-line-item.md).
 
 1. Enter the partial/full name or ID of the
-    existing **line item** in the Line
+    existing **Line item** in the Line
     Item text field.
 1. Select the appropriate line item from the list
     of results that displays.
