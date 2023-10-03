@@ -220,7 +220,7 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](get-de
 
 ### Target Microsoft Casual Games through the API
 
-You can target Microsoft Casual Games through the API on the [Profile Service](../xandr-api/profile-service.md). To target placements on specific games, use the IDs below in the `site_targets` array.
+You can target Microsoft Casual Games through the API on the [Profile Service](../digital-platform-api/profile-service.md). To target placements on specific games, use the IDs below in the `site_targets` array.
 
 | ID      | Publisher                      |
 |:--------|:-------------------------------|
@@ -235,7 +235,7 @@ You can target Microsoft Casual Games through the API on the [Profile Service](.
 | 1761375 | Microsoft Bingo                |
 | 2615444 | Microsoft Ultimate Word Games  |
 
-For more information, see [Profile Service](../xandr-api/profile-service.md).
+For more information, see [Profile Service](../digital-platform-api/profile-service.md).
 
 ## More questions?
 

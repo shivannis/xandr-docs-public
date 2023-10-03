@@ -10,7 +10,7 @@ description: Learn how to buy and setup your campaign for mobile inventory. This
 
 There are several different ways to buy mobile inventory using Xandr. The procedures are similar, but they vary slightly depending on how you want to buy. The documents in the **Campaign Setup** section show you how to set up your campaigns for each of these scenarios.
 
-The documents in the **Working with Mobile Advertisers** section give you the information you need in order to work with mobile advertisers. It covers topics from running cost per install offers (also known as cost per download) to managing discrepancies. The "Related Topics" section below lists other documentation available in this section.
+The documents in the **Working with Mobile Advertisers** section give you the information you need in order to work with mobile advertisers. It covers topics from running cost per install offers (also known as cost per download) to managing discrepancies. The "[Related Topics](#related-topics)" section below lists other documentation available in this section.
 
 ## Campaign setup
 
