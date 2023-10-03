@@ -65,7 +65,7 @@ If the current line item hasn't purchased any impressions in a node, the node is
 
 In order to cut inventory that's not working, we first need to determine the line item's fail criterion, or the threshold at which we consider the inventory to be bad. We use a very straightforward benchmark: the line item's CPC goal for click-based goals or its CPA goal for CPA prospecting. In other words, if the line item has a goal of $1.00, it should be getting one click per every dollar spent on a slice of inventory in order to achieve the goal. If we see that a Discovery node has not achieved any clicks, but the line item has reached its fail criterion ($1.00), the node will be immediately failed. For managed nodes, the fail criterion is higher because the inventory is known and therefore presents less risk.
 
-|  | Click-based Goals (CPC, CTR, Post-Click CPA) | CPA Prospecting |
+|Type of Nodes | Click-based Goals (CPC, CTR, Post-Click CPA) | CPA Prospecting |
 |---|---|---|
 | RTB Nodes | 1x line item's CPC goal | 1x line item's CPA goal |
 | Managed Nodes | 1.8x line item's CPC goal | 1x line item's CPA goal |

@@ -1,7 +1,6 @@
 ---
 title: Microsoft Invest - Google Ad Manager
-description: Xandr has brandsafe creative policies, but in order to run ads through the Google Ad Manager, you must also follow the
-requirements below.
+description: In this article, learn the requirements for running ads on the Google Ad Manager, along with external links for more information.
 ---
 
 # Microsoft Invest - Google Ad Manager
