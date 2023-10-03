@@ -3,7 +3,7 @@ title: Microsoft Invest - Charges for Buyers
 description: This article explains about the buyer auction service charge. The charge for purchases of third-party inventory can be either a fee or a deduction. 
 ---
 
-# Microsoft Invest: Charges for Buyers
+# Microsoft Invest - Charges for Buyers
 
 ## Buyer Auction Service Charge (BASC)
 

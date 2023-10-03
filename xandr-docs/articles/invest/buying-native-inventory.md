@@ -3,23 +3,12 @@ title: Microsoft Invest - Buying Native Inventory
 description: This article provides steps for buying native inventory. Native ads allow publishers to control user's experience by integrating advertising within their inventory.
 ---
 
-# Buying native inventory in Microsoft Invest
+# Microsoft Invest - Buying native inventory
 
-Native ads seamlessly integrate advertising into a placement's context.
-In contrast with traditional HTML/JavaScript ads, native ads specify the
-ad content but not how to display it. This lets publishers control their
-user's experience by integrating advertising within their inventory, and
-it affords advertisers higher quality inventory to choose from. This
-guide contains steps for buying native inventory.
+Native ads seamlessly integrate advertising into a placement's context. In contrast with traditional HTML/JavaScript ads, native ads specify the ad content but not how to display it. This lets publishers control their user's experience by integrating advertising within their inventory, and it affords advertisers higher quality inventory to choose from. This guide contains steps for buying native inventory.
 
-From the Xandr platform you have access to a
-number of native supply sources. While you can set up an individual
-line item for each source, we recommend that you
-set up a single line item to reach all of them
-simultaneously. This type of setup allows for easier budgeting,
-reporting, performance-tracking, frequency capping, etc. This page
-describes the process of setting up a line item
-to serve across whichever native sellers you choose.
+From the Xandr platform you have access to a number of native supply sources. While you can set up an individual line item for each source, we recommend that you set up a single line item to reach all of them
+simultaneously. This type of setup allows for easier budgeting, reporting, performance-tracking, frequency capping, etc. This page describes the process of setting up a line item to serve across whichever native sellers you choose.
 
 For specific information on individual sellers, see [Native Inventory Seller Specifications](./native-inventory-seller-specifications.md)
 

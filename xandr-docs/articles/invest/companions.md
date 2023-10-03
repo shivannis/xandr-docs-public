@@ -3,7 +3,7 @@ title: Microsoft Invest - Companions
 description: This article explains about Companions that are supported on VAST version 2.0 and higher. Companions can be served with linear or non-linear creatives.
 ---
 
-# Microsoft Invest: Companions
+# Microsoft Invest - Companions
 
 A companion is a creative that is commonly displayed in the form of a standard banner or rich media. It can also wrap the video ad experience. Companions are supported on VAST version 2.0 and higher.
 

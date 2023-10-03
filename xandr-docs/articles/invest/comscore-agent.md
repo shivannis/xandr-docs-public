@@ -1,9 +1,9 @@
 ---
 title: Microsoft Invest - comScore Agent
-description: Use the comScore Agent app to create custom segments using keywords, content categorization, and brand protection data to find quality inventory in Xandr. 
+description: Use the comScore Agent app to create custom segments using keywords, content categorization, and brand protection data to find quality inventory. 
 ---
 
-# Microsoft Invest: comScore Agent
+# Microsoft Invest - comScore Agent
 
 **comScore Agent** app allows users to create custom segments using a combination of keywords, content categorization and brand protection data to surface quality, brand safe inventory in Xandr.
 

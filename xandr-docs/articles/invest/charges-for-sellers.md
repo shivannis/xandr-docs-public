@@ -3,7 +3,7 @@ title: Microsoft Invest - Charges for Sellers
 description: This article explains about the seller auction service charge which is a charge for selling inventory to third-party buyers.
 ---
 
-# Microsoft Invest: Charges for sellers
+# Microsoft Invest - Charges for sellers
 
 ## Seller Auction Service Charge (SASC)
 

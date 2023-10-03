@@ -3,7 +3,7 @@ title: Microsoft Invest - Buying Video Inventory
 description: This article provides steps to buy video inventory. The workflow helps optimize the enhancements around the buy-side video offering.
 ---
 
-# Buying video inventory in Microsoft Invest
+# Microsoft Invest - Buying video inventory
 
 This page provides you with a suggested workflow to optimize the new enhancements around our buy-side video offering.
 
@@ -19,13 +19,9 @@ information, see  see [Add a Creative](./add-a-creative.md) and [Add Creatives i
 
 Create your ad campaign by following the [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md).
 
-### Step 3a. Target inventory
+### Step 3. Target inventory and Target video (optional)
 
-Target your own managed video inventory or third-party inventory.
-
-### Step 3b. Target video (optional)
-
-Set video targeting parameters to target specific types of inventory. For more information, see [Video Targeting](video-targeting.md).
+You can target your own managed video inventory or third-party inventory. Set video targeting parameters to target specific types of inventory. For more information, see [Video Targeting](video-targeting.md).
 
 > [!NOTE]
 > Setting any of the video targeting parameters will reduce targeting to the corresponding attributes and will significantly limit your delivery potential.
