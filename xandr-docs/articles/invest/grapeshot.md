@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Oracle's Grapeshot
-Description: Use Grapeshot for activating custom or off-the-shelf contextual audiences and brand suitability segments. 
+description: Use Grapeshot for activating custom or off-the-shelf contextual audiences and brand suitability segments. 
 ---
 
 # Microsoft Invest - Grapeshot
