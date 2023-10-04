@@ -15,14 +15,14 @@ different targeting, budgeting, and optimization options compared to
 augmented line items. See [Programmatic
 Guaranteed Buying Line Items](programmatic-guaranteed-buying-line-items.md) for more information before creating one.
 
-## Before You begin
+## Before you begin
 
 Before you create a PG line item, you must perform the following tasks:
 
 - [Create an Advertiser](create-an-advertiser.md)
+- [Create an Insertion Order](create-an-insertion-order.md)
 
-- [Create an Insertion Order](create-an-insertion-order.md)<br>
- The insertion order you created must have at least one Billing Period with dates in the future.
+  The insertion order you created must have at least one Billing Period with dates in the future.
 
 You must also have access to one or more PG deals to target. Sellers
 must first create these deals for buyers to access them for targeting.
@@ -41,10 +41,10 @@ To create a new PG line item, do the following:
 1. Click **Create New** in the **Line Item** menu or section. If prompted, **select an advertiser** in the Select an Advertiser screen. The **Create New Line Item screen** opens.
 1. On the **Create New Line Item** screen, select **Programmatic Guaranteed** under **Line Item Type**.
 
-> [!IMPORTANT]
-> You must have an **advertiser** and **insertion order** associated with the line item in the Advertiser and Insertion Order sections. If necessary, select an advertiser and insertion order.
+   > [!IMPORTANT]
+   > You must have an **advertiser** and **insertion order** associated with the line item in the Advertiser and Insertion Order sections. If necessary, select an advertiser and insertion order.
 
-3. Click **Next** to open the **Create a Programmatic Guaranteed Line Item** screen.
+1. Click **Next** to open the **Create a Programmatic Guaranteed Line Item** screen.
 
 ## Basic setup
 
@@ -176,7 +176,7 @@ following parts:
 - **Revenue** - The projected margin based on the line item's revenue
   type.
 
-## Review and save Changes
+## Review and save changes
 
 Review the PG line item configuration and click
 **Save**.

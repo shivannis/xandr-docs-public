@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Create a Third-Party Advertiser Pixel for Your Creatives
-description : You can create third-party creative pixels at the advertiser level and then apply these pixels to some or all display creatives under that advertiser.
+description : Learn to create third-party creative pixels at the advertiser level and then apply these pixels to some or all display creatives under that advertiser.
 ---
 
 
@@ -40,7 +40,7 @@ advertiser.
     1. Click the **AdX** toggle.<br>
         To render the pixel on Google Ad Manager inventory, it must be
         in full compliance with Google Ad Manager creative policies. For
-        more information, see [Creative Standards](creative-standards.md)
+        more information, see [Creative Standards](creative-standards.md).
 
     1. Click the **AdX requires vendor to be declared** to specify that your Google Ad Manager-approved pixel vendor must be declared.
     1. Search and select the necessary vendors

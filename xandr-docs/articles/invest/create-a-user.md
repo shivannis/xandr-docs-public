@@ -23,7 +23,7 @@ can create a Network User.
 **Getting There**
 
 You add **network** users in the Network section of
-Invest DSP.. Click on your Member name in the top right of the navigation menu and select **Member Users**. This brings up the **Member Users** screen. Click the **+ New** button to open the **Create User** dialog.
+Microsoft Invest. Click on your Member name in the top right of the navigation menu and select **Member Users**. This brings up the **Member Users** screen. Click the **+ New** button to open the **Create User** dialog.
 
 **Enter contact information**
 

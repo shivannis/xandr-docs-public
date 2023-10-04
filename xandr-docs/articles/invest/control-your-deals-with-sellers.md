@@ -40,20 +40,20 @@ deals by selecting one of the following settings:
 > - **Default Active** is the default setting if no deal review preference is set. 
 > - Changing the review preference only affects new deals. It does not change the status of existing deals. To set the deal review preference for new seller deals, do the following:
 
-1.  Select **Partners \> Deals**
+1. Select **Partners \> Deals**
     and select the **Sellers** tab.
-2.  On the top right of the **Deals**
+1. On the top right of the **Deals**
     screen, click the edit icon on **New Deals
     Do Not Require Approval** (or **New
     Deals Require Approval** if it’s been changed previously) to
     open **Review Preferences**.
-3.  On the **Review Preferences**
+1. On the **Review Preferences**
     page, select either:
     - **Default Active** – to accept all
       new deals and set their status to **Active**
     - **Require Review** – to require
       review of all new deals before accepting or declining them
-4.  Click **Save**.
+1. Click **Save**.
 
 ## Accepting or declining deals
 
@@ -85,18 +85,16 @@ When you select **Decline**, the deal is:
 - Not passed to the bidstream
 
 > [!NOTE]
-> You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](#managing-deal-status))
-
-
+> You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](#managing-deal-status)).
 
 To accept or decline one or more new deals:
 
-1.  Select **Partners \> Deals** and select the
-    **Sellers** tab
-2.  Check the box next to any deals you want to accept or decline (you
+1. Select **Partners \> Deals** and select the
+    **Sellers** tab.
+1. Check the box next to any deals you want to accept or decline (you
     can search by **Deal Name**, **Deal Alias**, **Deal ID**, or
     **Code**).
-3.  In the **Select** drop-down, select
+1. In the **Select** drop-down, select
     **Accept** or
     **Decline**.
 
@@ -166,17 +164,17 @@ To assign a **Deal Alias** to a deal, do the following:
 > [!NOTE]
 > The Deal Alias field is limited to 254 characters.
 
-1.  Select **Partners** \> **Deals**
+1. Select **Partners** \> **Deals**
     and **select** the
     **Sellers** tab.
-1.  Click anywhere in the row of the deal you want to assign a **Deal
+1. Click anywhere in the row of the deal you want to assign a **Deal
     Alias** to (you can search by **Deal Name**, **Deal Alias**, **Deal
     ID**, or **Code** to find a specific
     deal).
-1.  In the **Deal Controls** section,
+1. In the **Deal Controls** section,
     click the edit icon and enter the internal name in the
     **Deal Alias** field.
-1.  Click **Save**.
+1. Click **Save**.
 
 ## Related topics
 
