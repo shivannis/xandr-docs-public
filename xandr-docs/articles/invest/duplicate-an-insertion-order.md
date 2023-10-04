@@ -15,9 +15,9 @@ This is what you can accomplish with IO Duplication:
 - You can rename the duplicated insertion order.
 
 > [!NOTE]
-> IO Duplication only works for one insertion order at a time. If you submit a duplication, you must wait for it to finish to do another duplication.
-> [!NOTE]
-> All dates and budget numbers will be cleared out from the new insertion order and child line items. They must be recreated. Everything that is not related to the date or a budget will be duplicated.
+>
+>- IO Duplication only works for one insertion order at a time. If you submit a duplication, you must wait for it to finish to do another duplication.
+>- All dates and budget numbers will be cleared out from the new insertion order and child line items. They must be recreated. Everything that is not related to the date or a budget will be duplicated.
 
 ## Prerequisites/considerations
 

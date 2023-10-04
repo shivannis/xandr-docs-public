@@ -29,15 +29,14 @@ The **Edit Template** screen displays. The **Media Type**, **Creative Format**, 
 
 1. Update any of the following fields:
     1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
-    > [!TIP]
-    > Be sure to use a name that buyers will easily recognize.
+        > [!TIP]
+        > Be sure to use a name that buyers will easily recognize.
 
     1. **Media Type**: Defines the display style of the creatives that can use the template, such as banner.
     1. **Creative Format**: Defines the creative resource type that can use this template such as Flash, iframe, or External File.
     1. **Template Code**: Specifies how the creative should be rendered.
-
-    > [!NOTE]
-    > If you include custom macros in the template code, they must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain (`adnxs.com` or `adnxs-simple.com`) will be used when the auction takes place.
+        > [!NOTE]
+        > If you include custom macros in the template code, they must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain (`adnxs.com` or `adnxs-simple.com`) will be used when the auction takes place.
 
 1. Expand the **Custom macros** section if necessary.
 1. If no custom macros exist in the **Custom macros** section, or if you want to add more custom macros, click **Add Macros** and do the following:
