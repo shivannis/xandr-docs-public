@@ -16,9 +16,9 @@ advertisers, see the [Network Guide](network-guide.md). For direct agreements wi
 - [Ad Buying with Xandr](ad-buying-with-xandr.md): The combination of market positioning and single-point
   access to programmatic buying features through Microsoft Invest add up to unparalleled advantages for ad buying.
 - [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md): This overview walks through the essential procedures used to set up ad purchasing in Microsoft Invest.
-- [Working with Advertisers](working-with-advertisers.md): The advertiser object is the top level of the buy-side hierarchy (Advertiser > Insertion Orders > Line Items). Before you can set up line items to define your financial agreement and then start running campaigns and
+- [Working with Advertisers](working-with-advertisers.md): The advertiser object is the top level of the buy-side hierarchy (Advertiser &gt; Insertion Orders &gt; Line Items). Before you can set up line items to define your financial agreement and then start running campaigns and
   serving creatives on behalf of an advertiser, you must set up the advertiser itself.
-- [Working with Insertion Orders](working-with-insertion-orders.md): Insertion orders allow you to bucket line items under an advertiser (Advertiser > Insertion Order > Line Items).
+- [Working with Insertion Orders](working-with-insertion-orders.md): Insertion orders allow you to bucket line items under an advertiser (Advertiser &gt; Insertion Order &gt; Line Items).
 - [Working with Line Items](working-with-line-items.md): A line item defines your financial agreement with an advertiser, including how much the advertiser has allocated for you to spend (budget), the basis on which the advertiser has agreed to pay you (revenue type), and performance requirements the advertiser expects you to meet (advertiser goals).
 - [Working with Programmable Splits](working-with-programmable-splits.md): Programmable splits let you automate ad targeting using rulesets to ensure your ads are delivered and your budget is allocated to very specific segments.
 - [Working with Segments](working-with-segments.md): Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment for future targeting.
