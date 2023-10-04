@@ -99,13 +99,13 @@ Data in this report is retained for 420 days.
 > [!NOTE]
 > - You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
 > - The data for the following video related dimensions are only available if the publisher has implemented video taxonomy:
-  > - Video Content Duration
-  > - Video Content Genre
-  > - Video Content Language
-  > - Video Content Network
-  > - Video Content Rating
-  > - Video Delivery Type
-  > - Video Program Type
+    > - Video Content Duration
+    > - Video Content Genre
+    > - Video Content Language
+    > - Video Content Network
+    > - Video Content Rating
+    > - Video Delivery Type
+    > - Video Program Type
 
 ## Metrics
 
