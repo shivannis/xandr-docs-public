@@ -7,9 +7,7 @@ brand: m365
 metadata:
   title: Xandr Platform Documentation
   description: Here you will find documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
-  ###services: azure-resource-manager
-  ###ms.service: azure
-  ###ms.custom: ignite-2022
+  ms.service: microsoft-invest
   ms.topic: hub-page
   author: rupambaruah-xandr
   ms.author: rupambaruah
@@ -58,8 +56,8 @@ productDirectory:
       url: getting-started/index.yml
     # Card
     - title: Release Notes
-      summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
-      imageSrc: https://static.docs.com/ui/media/product/azure/cloud-services.svg
+      summary: Latest updates and features of Microsoft Invest, Microsoft Monetize and Microsoft Curate (*Powered by Xandr)
+      imageSrc: media/icon-release.svg
       url: getting-started/index.yml
       
 tools:

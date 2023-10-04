@@ -1,8 +1,14 @@
+---
+Title : Modify Tag
+Description : This function modifies the parameters for a specified target ID. For
+---
+
+
 # Modify Tag
 
-<div class="body refbody">
 
-<div class="section">
+
+
 
 This function modifies the parameters for a specified target ID. For
 each key passed in the `params` object, the function will replace any
@@ -12,59 +18,48 @@ existing information for that key on the specified ad slot.
 modifyTag ('targetId', {params})
 ```
 
-<div class="note warning">
 
-<span class="warningtitle">Warning:</span> Do not use `modifyTag` to
+
+Warning: Do not use `modifyTag` to
 change the `targetId` param. Use `defineTag `instead of renaming the tag
 object for a new request. Modifying the `targetId` through the
 `modifyTag` endpoint will not create a new tag object and can lead to
 unexpected results. 
 
-</div>
+
 
 The parameters listed below can be sent as arguments in the function.
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d139087e83" class="entry nocellnoborder"
-style="vertical-align: top">Parameter</th>
-<th id="d139087e86" class="entry nocellnoborder"
-style="vertical-align: top">Type</th>
-<th id="d139087e89" class="entry cell-noborder"
-style="vertical-align: top">Description</th>
+<tr class="header row">
+<th id="ID-0000160b__entry__1" class="entry">Parameter</th>
+<th id="ID-0000160b__entry__2" class="entry">Type</th>
+<th id="ID-0000160b__entry__3" class="entry">Description</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d139087e83 "><code class="ph codeph">targetId</code></td>
-<td class="entry nocellnoborder"
-headers="d139087e86 ">string</td>
-<td class="entry cell-noborder"
-headers="d139087e89 ">The unique identifier of a specific ad slot.</td>
+<tr class="odd row">
+<td class="entry" headers="ID-0000160b__entry__1"><code
+class="ph codeph">targetId</code></td>
+<td class="entry" headers="ID-0000160b__entry__2">string</td>
+<td class="entry" headers="ID-0000160b__entry__3">The unique identifier
+of a specific ad slot.</td>
 </tr>
-<tr class="even ">
-<td class="entry -nocellborder"
-headers="d139087e83 "><code class="ph codeph">params</code></td>
-<td class="entry -nocellborder"
-headers="d139087e86 ">object</td>
-<td class="entry cellborder"
-headers="d139087e89 ">An object of tag parameters to modify.  See <a
-href="define-tag.html" class="xref">Define Tag</a>  for a list of
-parameters.</td>
+<tr class="even row">
+<td class="entry" headers="ID-0000160b__entry__1"><code
+class="ph codeph">params</code></td>
+<td class="entry" headers="ID-0000160b__entry__2">object</td>
+<td class="entry" headers="ID-0000160b__entry__3">An object of tag
+parameters to modify.  See <a href="define-tag.html" class="xref">Define
+Tag</a>  for a list of parameters.</td>
 </tr>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section">
+
 
 ## Example
 
@@ -76,22 +71,8 @@ apntag.modifyTag('apn_ad_slot_1',{
 });
 ```
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
-
-</div>
-
-</div>
-
-</div>

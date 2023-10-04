@@ -1,6 +1,13 @@
+---
+Title : Native Video with AST
+Description : Native video gives publishers the ability to render ads on their site
+from within their preferred video player. A video file is delivered to
+---
+
+
 # Native Video with AST
 
-<div class="body">
+
 
 Native video gives publishers the ability to render ads on their site
 from within their preferred video player. A video file is delivered to
@@ -13,7 +20,7 @@ inserting the content provided by the bidder onto the site. However, in
 place of the creative, a native bid response will contain a string that
 has the full XML VAST for the video.
 
-<div class="section">
+
 
 ## AST Implementation
 
@@ -22,7 +29,7 @@ The AST implementation of native video closely mirrors the
 target="_blank">standards set by the IAB</a>. 
 
 When you define your AST tag, include the video specifications in the
-<span class="ph uicontrol">native</span> field:
+native field:
 
 ``` pre
 apntag.defineTag({
@@ -102,28 +109,28 @@ example:
       }
 ```
 
-Notice the <span class="ph uicontrol">content</span> field in the
+Notice the content field in the
 response. This field contains the VAST XML string for the full video
 content. (The complete XML is not shown in this example. See the
 <a href="https://www.iab.com/insights/vast-2-0-xml-samples-for-testing/"
 class="xref" target="_blank">IAB VAST Test Examples</a> for full XML
 examples of what would be returned in a response.)
 
-</div>
 
-<div class="section">
+
+
 
 ## Video Players
 
-<span class="ph">Xandr</span> Vast Player is a stand-alone video player
+Xandr Vast Player is a stand-alone video player
 which knows how to play a single ad as delivered by VAST xml.  The
 player is loaded via a Javascript script url and it supports an API
 which is used to pass in the VAST xml and any other player options.  If
 publishers using AST are also using the Native Assembly templates that
 are provided, they are automatically opted into using
-<span class="ph">Xandr</span> Vast Player. If they're writing their own
+Xandr Vast Player. If they're writing their own
 rendering logic from scratch, then they may choose to use another player
-(like JW player). The <span class="ph">Xandr</span> Vast Player may be
+(like JW player). The Xandr Vast Player may be
 given either a URL which returns a VAST xml document or it can be given
 the VAST xml directly as a string. The player then parses the VAST xml,
 selecting the most appropriate rendition from the xml to play. The
@@ -133,9 +140,9 @@ responsible for monitoring the playback and user interaction and reports
 any trackable event that was detected and for which tracking urls were
 provided.
 
-</div>
 
-<div id="ID-00000b74__section_trv_1wx_xvb" class="section">
+
+<div id="ID-00000b74__section_trv_1wx_xvb" >
 
 ## Related Topics
 
@@ -143,22 +150,8 @@ provided.
 
 <a href="ast-api-reference.html" class="xref">AST API Reference</a>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-video-capabilities.html" class="link">AST
-Video Capabilities</a>
-
-</div>
-
-</div>
-
-</div>

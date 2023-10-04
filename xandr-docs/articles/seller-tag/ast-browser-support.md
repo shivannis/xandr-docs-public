@@ -1,31 +1,29 @@
+---
+Title : AST Browser Support
+Description : The following browsers and versions are currently supported by AST.
+---
+
+
 # AST Browser Support
 
-<div class="body">
+
 
 The following browsers and versions are currently supported by AST.
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d20020e54" class="entry nocellnoborder"
-style="vertical-align: top">Browser</th>
-<th id="d20020e57" class="entry nocellnoborder"
-style="vertical-align: top">Supported Versions</th>
-<th id="d20020e60" class="entry cell-noborder"
-style="vertical-align: top">Operating Systems</th>
+<tr class="header row">
+<th id="ID-00000143__entry__1" class="entry">Browser</th>
+<th id="ID-00000143__entry__2" class="entry">Supported Versions</th>
+<th id="ID-00000143__entry__3" class="entry">Operating Systems</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d20020e54 ">Chrome</td>
-<td class="entry nocellnoborder"
-headers="d20020e57 ">Last two major versions</td>
-<td class="entry cell-noborder"
-headers="d20020e60 "><ul>
+<tr class="odd row">
+<td class="entry" headers="ID-00000143__entry__1">Chrome</td>
+<td class="entry" headers="ID-00000143__entry__2">Last two major
+versions</td>
+<td class="entry" headers="ID-00000143__entry__3"><ul>
 <li>Windows XP</li>
 <li>Windows 7</li>
 <li>Windows 8.1</li>
@@ -38,26 +36,21 @@ headers="d20020e60 "><ul>
 <li>Mac Monterey (Star)</li>
 </ul></td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d20020e54 ">Edge</td>
-<td class="entry nocellnoborder"
-headers="d20020e57 "><ul>
+<tr class="even row">
+<td class="entry" headers="ID-00000143__entry__1">Edge</td>
+<td class="entry" headers="ID-00000143__entry__2"><ul>
 <li>15</li>
 <li>16</li>
 </ul></td>
-<td class="entry cell-noborder"
-headers="d20020e60 "><ul>
+<td class="entry" headers="ID-00000143__entry__3"><ul>
 <li>Windows 10</li>
 </ul></td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d20020e54 ">Firefox</td>
-<td class="entry nocellnoborder"
-headers="d20020e57 ">Last two major versions</td>
-<td class="entry cell-noborder"
-headers="d20020e60 "><ul>
+<tr class="odd row">
+<td class="entry" headers="ID-00000143__entry__1">Firefox</td>
+<td class="entry" headers="ID-00000143__entry__2">Last two major
+versions</td>
+<td class="entry" headers="ID-00000143__entry__3"><ul>
 <li>Windows XP</li>
 <li>Windows 7</li>
 <li>Windows 8.1</li>
@@ -70,23 +63,18 @@ headers="d20020e60 "><ul>
 <li>Mac Monterey (Star)</li>
 </ul></td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d20020e54 ">Internet Explorer</td>
-<td class="entry nocellnoborder"
-headers="d20020e57 ">11</td>
-<td class="entry cell-noborder"
-headers="d20020e60 "><ul>
+<tr class="even row">
+<td class="entry" headers="ID-00000143__entry__1">Internet Explorer</td>
+<td class="entry" headers="ID-00000143__entry__2">11</td>
+<td class="entry" headers="ID-00000143__entry__3"><ul>
 <li>Windows 7</li>
 <li>Windows 8.1</li>
 <li>Windows 10</li>
 </ul></td>
 </tr>
-<tr class="odd ">
-<td class="entry -nocellborder"
-headers="d20020e54 ">Safari</td>
-<td class="entry -nocellborder"
-headers="d20020e57 "><ul>
+<tr class="odd row">
+<td class="entry" headers="ID-00000143__entry__1">Safari</td>
+<td class="entry" headers="ID-00000143__entry__2"><ul>
 <li>8.0</li>
 <li>9.1</li>
 <li>10.1</li>
@@ -96,8 +84,7 @@ headers="d20020e57 "><ul>
 <li>14.0</li>
 <li>15.0</li>
 </ul></td>
-<td class="entry cellborder"
-headers="d20020e60 "><ul>
+<td class="entry" headers="ID-00000143__entry__3"><ul>
 <li>Mac Yosemite</li>
 <li>Mac El Capitan</li>
 <li>Mac Sierra</li>
@@ -111,21 +98,6 @@ headers="d20020e60 "><ul>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../seller-tag/seller-tag.html" class="link">Seller Tag</a>
-
-</div>
-
-</div>
-
-</div>

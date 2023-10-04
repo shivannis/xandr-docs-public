@@ -1,8 +1,15 @@
+---
+Title : Set Endpoint
+Description : This function sets the Impression Bus endpoint to which ad requests are
+made.
+---
+
+
 # Set Endpoint
 
-<div class="body refbody">
 
-<div class="section">
+
+
 
 This function sets the Impression Bus endpoint to which ad requests are
 made.
@@ -13,94 +20,75 @@ setEndpoint('endpoint', true|false)
 
 The parameter listed below can be sent as an argument in the function.
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d317996e63" class="entry cellborder"
-style="vertical-align: top">Parameter</th>
-<th id="d317996e66" class="entry cellborder"
-style="vertical-align: top">Type</th>
-<th id="d317996e69" class="entry cellborder"
-style="vertical-align: top">Description</th>
+<tr class="header row">
+<th id="ID-0000186d__entry__1"
+class="entry colsep-1 rowsep-1">Parameter</th>
+<th id="ID-0000186d__entry__2" class="entry colsep-1 rowsep-1">Type</th>
+<th id="ID-0000186d__entry__3"
+class="entry colsep-1 rowsep-1">Description</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d317996e63 "><code class="ph codeph">endpoint</code></td>
-<td class="entry cellborder"
-headers="d317996e66 ">string</td>
-<td class="entry cellborder"
-headers="d317996e69 ">Specifies a URL endpoint.</td>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-0000186d__entry__1"><code
+class="ph codeph">endpoint</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-0000186d__entry__2">string</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-0000186d__entry__3">Specifies a URL endpoint.</td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d317996e63 "><code class="ph codeph">freezeIbUrl</code></td>
-<td class="entry cellborder"
-headers="d317996e66 ">Boolean</td>
-<td class="entry cellborder"
-headers="d317996e69 ">An optional setting. Default is
-<strong>false</strong>.
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-0000186d__entry__1"><code
+class="ph codeph">freezeIbUrl</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-0000186d__entry__2">Boolean</td>
+<td class="entry colsep-1 rowsep-1" headers="ID-0000186d__entry__3">An
+optional setting. Default is <strong>false</strong>.
 <p>When set to <strong>true</strong>, AST will not attempt to switch the
 Impression Bus domain to normal or simple domain as per consent
 information present in the auction.</p>
 <p>When set to <strong>false</strong>, AST will switch to normal or
 simple domain as appropriate.</p>
-<div id="ID-0000186d__p-48213689-4c66-4311-83fa-da23bb4e8aca" class="p">
-<div class="note">
-<span class="notetitle">Note:</span> See <a
+<div id="ID-0000186d__p-48213689-4c66-4311-83fa-da23bb4e8aca" >
+
+Note: See <a
 href="https://docs.xandr.com/bundle/seller-tag/page/seller-tag/set-up-placements-with-ast.html"
 class="xref" target="_blank">Set Up Placements with AST</a> for more
 details about the simple domain and when it should be used.
-</div>
-</div></td>
+
+</td>
 </tr>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section">
+
 
 ## Example
 
-<div class="p">
+
 
 ``` pre
 apntag.setEndpoint('ib.adnxs-simple.com', true);
 ```
 
-<div class="note">
 
-<span class="notetitle">Note:</span> Clients who want to test the AST
+
+Note: Clients who want to test the AST
 tag against non-production data can use the example above to point to
 our client testing environment.
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
 
-</div>
 
-</div>
-
-</div>

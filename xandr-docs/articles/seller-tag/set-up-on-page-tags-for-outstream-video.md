@@ -1,21 +1,28 @@
+---
+Title : Set Up On-Page Tags for Outstream Video
+Description : Xandr Outstream Video
+uses Xandr's seller tag (AST). AST is an
+---
+
+
 # Set Up On-Page Tags for Outstream Video
 
-<div class="body">
 
-<span class="ph">Xandr</span> Outstream Video
-uses <span class="ph">Xandr</span>'s seller tag (AST). AST is an
+
+Xandr Outstream Video
+uses Xandr's seller tag (AST). AST is an
 asynchronous JavaScript tag that runs in the header of the page. AST
 tags are defined and loaded in the page header and are activated by
 "showing" the tags in the page body.
 
-<div class="note tip">
 
-<span class="tiptitle">Tip:</span> For select use cases, AST can also be
-defined, loaded, and shown in the page body.
 
-</div>
+Tip: For select use cases, AST can also
+be defined, loaded, and shown in the page body.
 
-<div class="section">
+
+
+
 
 ## How It Works
 
@@ -34,9 +41,9 @@ Identifier in the page header. When the container comes into view, the
 outstream video ad unit is activated for playback and expands on the
 page to show the content.
 
-</div>
 
-<div class="section">
+
+
 
 ## Example
 
@@ -80,9 +87,9 @@ outstream placement.
     });
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Implementing SafeFrame with Outstream Video
 
@@ -106,9 +113,9 @@ apntag.defineTag({
   ...
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Defining Player Size for SafeFrame
 
@@ -120,7 +127,7 @@ desktop placements differently to accommodate different player sizes.
 You can calculate the necessary width and height of the player as shown
 in the following example.
 
-<div class="p">
+
 
 When your target width = 640 and the aspectRatio=16:9:
 
@@ -132,24 +139,10 @@ When your target width = 640 and the aspectRatio=16:9:
 In this example, the sum of the heights adds up to 414 for a size of
 \[640, 414\].
 
-</div>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-video-capabilities.html" class="link">AST
-Video Capabilities</a>
 
-</div>
-
-</div>
-
-</div>

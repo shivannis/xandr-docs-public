@@ -1,8 +1,15 @@
+---
+Title : Define Tag
+Description : <div id="ID-000011c3__section_jp5_h4m_g5b" >
+This function defines parameters for an ad placement. Note that no more
+---
+
+
 # Define Tag
 
-<div class="body refbody">
 
-<div id="ID-000011c3__section_jp5_h4m_g5b" class="section">
+
+<div id="ID-000011c3__section_jp5_h4m_g5b" >
 
 This function defines parameters for an ad placement. Note that no more
 than 12 placements should be specified per page. Returns
@@ -12,84 +19,86 @@ a `Tag` `object` that can be used later after defining. 
 defineTag({params})
 ```
 
-</div>
 
-<div id="ID-000011c3__section_lp5_h4m_g5b" class="section">
+
+<div id="ID-000011c3__section_lp5_h4m_g5b" >
 
 ## Parameters
 
 The parameters listed below can be sent as arguments in the function.
 
-<div class="tablenoborder">
-
-<table id="ID-000011c3__table_mp5_h4m_g5b" class="table"
-data-cellpadding="4" data-cellspacing="0" data-summary=""
-data-frame="border" data-border="1" data-rules="all">
+<table id="ID-000011c3__table_mp5_h4m_g5b" class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d34506e88" class="entry nocellnoborder"
-style="vertical-align: top">Parameter</th>
-<th id="d34506e91" class="entry nocellnoborder"
-style="vertical-align: top">Type</th>
-<th id="d34506e94" class="entry cell-noborder"
-style="vertical-align: top">Description</th>
+<tr class="header row">
+<th id="ID-000011c3__table_mp5_h4m_g5b__entry__1"
+class="entry">Parameter</th>
+<th id="ID-000011c3__table_mp5_h4m_g5b__entry__2"
+class="entry">Type</th>
+<th id="ID-000011c3__table_mp5_h4m_g5b__entry__3"
+class="entry">Description</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">member</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">number</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">The member ID for the placement (overrides global
-setting from <code class="ph codeph">setPageOpts()</code>)</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">member</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">number</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">The
+member ID for the placement (overrides global setting from <code
+class="ph codeph">setPageOpts()</code>)</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">invCode</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">The placement code for this placement.</td>
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">invCode</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">The
+placement code for this placement.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">tagId</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">number</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">The placement ID for the placement.</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">tagId</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">number</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">The
+placement ID for the placement.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">sizes</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">array of numbers</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">One or more placement sizes in the format <code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">sizes</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">array of numbers</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">One
+or more placement sizes in the format <code
 class="ph codeph">[300,250]</code> ({{height, width}}) for a single size
 and <code class="ph codeph">[[300,250],[728,90]]</code> for multiple
 sizes.
 <p>If more than one size is specified, the first is the placement size
 and the rest are promo sizes.</p>
-<div id="ID-000011c3__note_np5_h4m_g5b" class="note">
-<span class="notetitle">Note:</span> Either <code
+
+Note: Either <code
 class="ph codeph">sizes</code> or <code
 class="ph codeph">sizeMapping</code> is allowed per ad slot, not both.
-</div></td>
+</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">sizeMapping</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">array of objects</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies a set of sizes based on a minimum
-viewport size. This allows a seller to set which sizes should be used
-based on the size of the viewport. If the viewport size is smaller than
-the smallest <code class="ph codeph">minWidth</code> provided, no ad
-will be requested for the ad slot. Sizes are passed in the format <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">sizeMapping</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">array of objects</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies a set of
+sizes based on a minimum viewport size. This allows a seller to set
+which sizes should be used based on the size of the viewport. If the
+viewport size is smaller than the smallest <code
+class="ph codeph">minWidth</code> provided, no ad will be requested for
+the ad slot. Sizes are passed in the format <code
 class="ph codeph">[300,250]</code> for a single size and <code
 class="ph codeph">[[300,250],[728,90]]</code> for multiple sizes.
 <p>Each object in the array contains two parameters :</p>
@@ -101,38 +110,40 @@ class="ph codeph">minWidth: 1024</code></li>
 ad. For example, <code
 class="ph codeph">sizes: [[300,250],[300,600]]</code></li>
 </ul>
-<div id="ID-000011c3__note_pp5_h4m_g5b" class="note">
-<span class="notetitle">Note:</span> Either <code
+
+Note: Either <code
 class="ph codeph">sizes</code> or <code
 class="ph codeph">sizeMapping</code> is allowed per ad slot, not both.
-</div></td>
+</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">targetId</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">The unique identifier of a specific ad slot,
-created by the publisher/seller. Corresponds to a <code
-class="ph codeph">div</code> tag in the body of the page where the ad
-should appear. The <code class="ph codeph">div</code> tag's <code
-class="ph codeph">id</code> should be set to the same value as the <code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">targetId</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">The
+unique identifier of a specific ad slot, created by the
+publisher/seller. Corresponds to a <code class="ph codeph">div</code>
+tag in the body of the page where the ad should appear. The <code
+class="ph codeph">div</code> tag's <code class="ph codeph">id</code>
+should be set to the same value as the <code
 class="ph codeph">targetId</code>.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">forceCreativeId</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">number</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies the ID of a creative that should be
-forced to appear in this placement. Forcing a creative allows you to
-preview an ad on a site, perform testing or certification, and create
-tear sheets.
-<div id="ID-000011c3__note_qp5_h4m_g5b" class="note tip">
-<span class="tiptitle">Tip:</span> Creatives can also be forced in the
-query string of the website URL in the format <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">forceCreativeId</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">number</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies the ID of a
+creative that should be forced to appear in this placement. Forcing a
+creative allows you to preview an ad on a site, perform testing or
+certification, and create tear sheets.
+
+Tip: Creatives can also be forced in
+the query string of the website URL in the format <code
 class="ph codeph">ast_override_[parameter]=[value]:[creative_id]</code>
 , where you will replace <code class="ph codeph">parameter</code>, <code
 class="ph codeph">value</code>, and <code
@@ -206,182 +217,198 @@ class="ph codeph">40611315:</code>
 <dd>
 <code
 class="ph codeph">http://test.example.com/demo.html?ast_override_inv_code=9123450:40611315</code>
-<div id="ID-000011c3__note_smk_lh1_f5b" class="note tip">
-<span class="tiptitle">Tip:</span> The query string parameters listed
+
+Tip: The query string parameters listed
 above will override any value specified in the <code
 class="ph codeph">forceCreativeId</code> parameter of the ad tag.
-</div>
+
 </dd>
 </dl>
-</div></td>
+</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">allowSmallerSizes</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates whether smaller ad sizes than defined on
-<code class="ph codeph">sizes</code> are allowed.</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates whether
+smaller ad sizes than defined on <code class="ph codeph">sizes</code>
+are allowed.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">allowedFormats</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">array of strings</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates the desired formats. Options include
-['video', 'banner', 'native, 'audio']. If <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">allowedFormats</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">array of strings</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates the desired
+formats. Options include ['video', 'banner', 'native, 'audio']. If <code
 class="ph codeph">allowedFormats</code> are invoked, it will override
 the media types assigned on the placements' settings in <span
-class="ph">Monetize</span>. Do not invoke <code
+class="ph">Monetize. Do not invoke <code
 class="ph codeph">allowedFormats</code> to use an ad format, such as
 <code class="ph codeph">interstitials</code>, that is not included in
 the predefined options.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">rendererOptions</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">object</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies one or more options that can be passed
-into the renderer for custom rendering.</td>
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">rendererOptions</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">object</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies one or more
+options that can be passed into the renderer for custom rendering.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">position</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Identify the placement as above or below the fold.
-Possible values: <code class="ph codeph">above</code> or <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">position</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Identify the
+placement as above or below the fold. Possible values: <code
+class="ph codeph">above</code> or <code
 class="ph codeph">below</code>.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">disablePsa</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates whether this placement should disable
-PSAs from being shown.</td>
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">disablePsa</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates whether
+this placement should disable PSAs from being shown.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">nobidIfUnsold</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates that a blank ad should be returned if the
-placement is not sold rather than a default ad or PSA.</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">nobidIfUnsold</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates that a
+blank ad should be returned if the placement is not sold rather than a
+default ad or PSA.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">keywords</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">object</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">A set of key/value pairs applicable to this
-placement. Query string segments are defined by key/value pairs in this
-object. Keywords that contain hyphens must be surrounded by single quote
-marks. Best practice is to always enclose keywords in single quotes. A
-maximum of 100 key/value pairs can be defined per tag.
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">keywords</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">object</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">A
+set of key/value pairs applicable to this placement. Query string
+segments are defined by key/value pairs in this object. Keywords that
+contain hyphens must be surrounded by single quote marks. Best practice
+is to always enclose keywords in single quotes. A maximum of 100
+key/value pairs can be defined per tag.
 <p>To pass custom data use any of the keywords:  <code
 class="ph codeph">pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, pt9.</code></p>
 <p>These keywords can be used to pass custom data through managed
 placements to managed 3rd-party creatives, for example, <code
 class="ph codeph">pt1=products:ipad,ios,iphone </code></p></td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">trafficSourceCode</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies the third-party source of this
-impression.</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies the
+third-party source of this impression.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">alwaysUseXDomainIframe</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates whether the ad creative should be loaded
-into a cross-domain iframe. This will prevent data leakage and does not
-allow the creative to access the parent page directly.
-<div id="ID-000011c3__note_sp5_h4m_g5b" class="note">
-<span class="notetitle">Note:</span> This parameter has been deprecated
-in favor of <code class="ph codeph">enableSafeFrame.</code>
-</div></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates whether the
+ad creative should be loaded into a cross-domain iframe. This will
+prevent data leakage and does not allow the creative to access the
+parent page directly.
+
+Note: This parameter has been
+deprecated in favor of <code class="ph codeph">enableSafeFrame.</code>
+</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">privateSizes</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">array of numbers</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">The additional sizes that allowed to serve only for
-custom deals or packages (when private sizes are allowed by the deal or
-package). In the format <code class="ph codeph">[300,250]</code> for a
-single size and <code class="ph codeph">[[300,250],[728,90]]</code> for
-multiple sizes</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">privateSizes</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">array of numbers</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">The
+additional sizes that allowed to serve only for custom deals or packages
+(when private sizes are allowed by the deal or package). In the format
+<code class="ph codeph">[300,250]</code> for a single size and <code
+class="ph codeph">[[300,250],[728,90]]</code> for multiple sizes</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">supplyType</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates the type of supply for this placement.
-Possible values are <code class="ph codeph">mobile_web</code> ,  <code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">supplyType</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates the type of
+supply for this placement. Possible values are <code
+class="ph codeph">mobile_web</code> ,  <code
 class="ph codeph">mobile_app</code>, or  <code
 class="ph codeph">web</code>.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">pubClick</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies a publisher-supplied URL for third-party
-click tracking. This is just a placeholder into which the publisher can
-insert their own click tracker. This parameter should be used for
-an unencoded tracker. This parameter is expected to be the last
-parameter in the URL. Please note that the click tracker placed in this
-parameter will only fire if the creative winning the auction is using
-<span class="ph">Xandr</span> click tracking properly. For
-example, <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">pubClick</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies a
+publisher-supplied URL for third-party click tracking. This is just a
+placeholder into which the publisher can insert their own click tracker.
+This parameter should be used for an unencoded tracker. This parameter
+is expected to be the last parameter in the URL. Please note that the
+click tracker placed in this parameter will only fire if the creative
+winning the auction is using Xandr click
+tracking properly. For example, <code
 class="ph codeph">pubClick=http://click.adserver.com/</code></td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">reserve</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">number</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies the reserve price for this inventory.
-This parameter will override a preset price and will set the hard floor
-if Yield Management is not being used. Price is assumed to be in the
-publisher's currency. For example, <code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">reserve</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">number</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies the reserve
+price for this inventory. This parameter will override a preset price
+and will set the hard floor if Yield Management is not being used. Price
+is assumed to be in the publisher's currency. For example, <code
 class="ph codeph">reserve=5.00</code>
-<div id="ID-000011c3__note_tp5_h4m_g5b" class="note">
-<span class="notetitle">Note:</span> This option is not available from
-<span class="ph">Monetize</span>, and must be appended to the placement
+
+Note: This option is not available from
+Monetize, and must be appended to the placement
 tag manually.
-</div></td>
+</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">extInvCode</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 "> string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies a predefined value passed via the <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">extInvCode</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2"> string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies a
+predefined value passed via the <code
 class="ph codeph">ext_inv_code</code> field of the request body that can
 be used in reporting. The value must be entered into the system before
 it is logged. For more information, see <a
@@ -389,19 +416,20 @@ href="https://docs.xandr.com/bundle/xandr-api/page/external-inventory-code-servi
 class="xref" target="_blank">External Inventory Code Service</a>. For
 example, <code class="ph codeph">ext_inv_code='10039'</code></td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">native</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">object</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">A native ad is a collection of individual assets.
-These could be a title, a description, or an image. This is an optional
-parameter. You do not need to specify this in <code
-class="ph codeph">defineTag</code>. Any field in the <code
-class="ph codeph">native</code> object configured as <code
-class="ph codeph">{required:true}</code> will be required on the bid
-response object. If not present, the bid is not added to the auction.
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">native</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">object</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">A
+native ad is a collection of individual assets. These could be a title,
+a description, or an image. This is an optional parameter. You do not
+need to specify this in <code class="ph codeph">defineTag</code>. Any
+field in the <code class="ph codeph">native</code> object configured as
+<code class="ph codeph">{required:true}</code> will be required on the
+bid response object. If not present, the bid is not added to the
+auction.
 <dl>
 <dt>title</dt>
 <dd>
@@ -457,7 +485,7 @@ class="ph codeph">aspect_ratios</code> value defined.
 </dd>
 <dt>icon</dt>
 <dd>
-<div id="ID-000011c3__p-e477242d-d606-4147-aaaf-48b1553106cc" class="p">
+<div id="ID-000011c3__p-e477242d-d606-4147-aaaf-48b1553106cc" >
 <pre class="pre codeblock"><code>required: &lt;true | false&gt;
 sizes: [
 { width: &lt;number&gt;, height: &lt;number&gt; }
@@ -465,7 +493,7 @@ sizes: [
 aspect_ratios: [
 {min_width: &lt;number&gt;, min_height: &lt;number&gt;, ratio_width: &lt;number&gt;, ratio_height: &lt;number&gt;}
 ]</code></pre>
-</div>
+
 </dd>
 <dd>
 Where field marked <code class="ph codeph">required: true</code> will be
@@ -629,110 +657,118 @@ class="pre codeblock"><code>
    }
                         </code></pre></td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">externalImpId</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies the unique identifier of an externally
-generated auction. For example, <code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">externalImpId</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies the unique
+identifier of an externally generated auction. For example, <code
 class="ph codeph">externalImpId:'bacbab02626452b097f6030b3c89ac05'</code></td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">enableSafeFrame</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Specifies whether this placement will be served in
-a SafeFrame container. See <a href="safeframe-api-reference.html"
-class="xref">SafeFrame API Reference</a> for more information.</td>
-</tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
-class="ph codeph">setSafeFrameConfig</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Allows configuration of SafeFrame, a managed iframe
-that provides additional consumer protection and publisher control
-beyond that provided by a standard iframe. See <a
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">enableSafeFrame</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Specifies whether
+this placement will be served in a SafeFrame container. See <a
 href="safeframe-api-reference.html" class="xref">SafeFrame API
 Reference</a> for more information.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">initCollapsed</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">object</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Initializes the ad iframe at zero size. The only
-option for the <code class="ph codeph">expandBy</code> field is
-creative. This setting gives the creative the responsibility of
-expanding the ad slot by calling resizeAd function.</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">setSafeFrameConfig</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Allows configuration
+of SafeFrame, a managed iframe that provides additional consumer
+protection and publisher control beyond that provided by a standard
+iframe. See <a href="safeframe-api-reference.html"
+class="xref">SafeFrame API Reference</a> for more information.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">prebid</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates that the tag being requested is for a
-header bidding or prebid auction. This will return the cpm on the adObj
-<code class="ph codeph">adObj.cpm</code>. However, the ad will not be
-rendered. It is assumed that another ad server will render the ad if
-this bid wins.</td>
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">initCollapsed</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">object</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Initializes the ad
+iframe at zero size. The only option for the <code
+class="ph codeph">expandBy</code> field is creative. This setting gives
+the creative the responsibility of expanding the ad slot by calling
+resizeAd function.</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code class="ph codeph">usePmtRule</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Indicates whether payment rules should be applied
-to a bid before sending the bid to the ad server. Default value is
-false.</td>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">prebid</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates that the
+tag being requested is for a header bidding or prebid auction. This will
+return the cpm on the adObj <code class="ph codeph">adObj.cpm</code>.
+However, the ad will not be rendered. It is assumed that another ad
+server will render the ad if this bid wins.</td>
 </tr>
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
+class="ph codeph">usePmtRule</code></td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Indicates whether
+payment rules should be applied to a bid before sending the bid to the
+ad server. Default value is false.</td>
+</tr>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">resizeAdParentDiv</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">Boolean</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Setting this property to true will force the Parent
-Div container of the Ad creative to resize. This is particularly useful
-when resizing banner safeframe creatives when the parent div doesn't
-resize in some environments. By default, this option is turned off. 
-<div id="ID-000011c3__note_wp5_h4m_g5b" class="note">
-<span class="notetitle">Note:</span> The value set here can be
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">Boolean</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Setting this property
+to true will force the Parent Div container of the Ad creative to
+resize. This is particularly useful when resizing banner safeframe
+creatives when the parent div doesn't resize in some environments. By
+default, this option is turned off. 
+
+Note: The value set here can be
 overridden during a resizeAd call, see resizeAd page for more
 information.
-</div></td>
+</td>
 </tr>
-<tr class="even ">
-<td class="entry nocellnoborder"
-headers="d34506e88 "><code
+<tr class="even row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">globalPlacementId</code></td>
-<td class="entry nocellnoborder"
-headers="d34506e91 ">string</td>
-<td class="entry cell-noborder"
-headers="d34506e94 ">Provides a way for publishers to specify their own
-global publisher identifier to represent the placement.</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">string</td>
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">Provides a way for
+publishers to specify their own global publisher identifier to represent
+the placement.</td>
 </tr>
-<tr class="odd ">
-<td class="entry -nocellborder"
-headers="d34506e88 "><code
+<tr class="odd row">
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__1"><code
 class="ph codeph">renderingManagement</code></td>
-<td class="entry -nocellborder"
-headers="d34506e91 ">object</td>
-<td class="entry cellborder"
-headers="d34506e94 ">An object that specifies values for rendering
-related features, which influence how ads are rendered onto a webpage.
-These options also be set at the setPageOpts level to apply to all ad
-slots on the page.
+<td class="entry"
+headers="ID-000011c3__table_mp5_h4m_g5b__entry__2">object</td>
+<td class="entry" headers="ID-000011c3__table_mp5_h4m_g5b__entry__3">An
+object that specifies values for rendering related features, which
+influence how ads are rendered onto a webpage. These options also be set
+at the setPageOpts level to apply to all ad slots on the page.
 <ul>
 <li><p><strong><code class="ph codeph">insertWrapperDiv</code></strong>:
 When enabled, AST adds an additional div element between the main AST
@@ -762,11 +798,9 @@ some warnings in the browser console).</li>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section">
+
 
 ## Example
 
@@ -841,22 +875,8 @@ apntag.defineTag({
         });
 ```
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
-
-</div>
-
-</div>
-
-</div>

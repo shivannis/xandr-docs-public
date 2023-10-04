@@ -1,26 +1,33 @@
+---
+Title : AST API Reference
+Description : This page describes the usage of the functions and variables of
+Xandr's seller tag (AST) JavaScript library. For
+---
+
+
 # AST API Reference
 
-<div class="body refbody">
 
-<div class="section">
+
+
 
 This page describes the usage of the functions and variables of
-<span class="ph">Xandr</span>'s seller tag (AST) JavaScript library. For
+Xandr's seller tag (AST) JavaScript library. For
 an example of a page with these functions implemented, see
 <a href="set-up-placements-with-ast.html" class="xref">Set Up Placements
 with AST</a>.
 
-<div class="note warning">
 
-<span class="warningtitle">Warning:</span> Important
+
+Warning: Important
 
 You cannot load ads from HTML hosted in `localhost`.
 
-</div>
 
-</div>
 
-<div class="section">
+
+
+
 
 ## Public Variables
 
@@ -29,9 +36,9 @@ You cannot load ads from HTML hosted in `localhost`.
   queued during page load time and executed when the `ast.js` script
   loads asynchronously.
 
-</div>
 
-<div class="section">
+
+
 
 ## Debug Mode
 
@@ -47,9 +54,9 @@ to the end of the URL of the page. For example,
 You can also enable debug mode on a tag by
 adding  `apntag.debug = true;`
 
-</div>
 
-<div class="section">
+
+
 
 ## Debug Auction
 
@@ -67,9 +74,9 @@ apntag.dongle = 'ABC';
 apntag.debug_member = '1234';
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## AST Toolkit
 
@@ -109,9 +116,9 @@ user:
   AST Toolkit requires that `member` is set
   in `setPageOpts()` or `defineTag()`.
 
-</div>
 
-<div class="section">
+
+
 
 ## Functions
 
@@ -140,49 +147,8 @@ user:
   Configuration</a>
 - <a href="show-tag.html" class="xref">Show Tag</a>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-- **[Ad Object API](../seller-tag/ad-object-api.html)**  
-- **[Attach Click
-  Trackers](../seller-tag/attach-click-trackers.html)**  
-- **[Clear Request](../seller-tag/clear-request.html)**  
-- **[User Agent Client
-  Hints](../seller-tag/ast-client-hints-for-adserver.html)**  
-- **[Define Tag](../seller-tag/define-tag.html)**  
-- **[Enable Cookie Set](../seller-tag/enable-cookie-set.html)**  
-- **[Fire Impression
-  Trackers](../seller-tag/fire-impression-trackers.html)**  
-- **[Get AST Version](../seller-tag/get-ast-version.html)**  
-- **[Get Tag](../seller-tag/get-tag.html)**  
-- **[Load Tags](../seller-tag/load-tags.html)**  
-- **[Modify Tag](../seller-tag/modify-tag.html)**  
-- **[Notify](../seller-tag/notify.html)**  
-- **[Off Event](../seller-tag/off-event.html)**  
-- **[On Event](../seller-tag/on-event.html)**  
-- **[Push](../seller-tag/push.html)**  
-- **[Refresh](../seller-tag/refresh.html)**  
-- **[Resize Ad](../seller-tag/resize-ad.html)**  
-- **[Set Endpoint](../seller-tag/set-endpoint.html)**  
-- **[Set Keywords](../seller-tag/set-keywords.html)**  
-- **[Set Page Options](../seller-tag/set-page-options.html)**  
-- **[Set SafeFrame
-  Configuration](../seller-tag/set-safeframe-configuration.html)**  
-- **[Show Tag](../seller-tag/show-tag.html)**  
-- **[User Sync](../seller-tag/user-sync.html)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../seller-tag/seller-tag.html" class="link">Seller Tag</a>
-
-</div>
-
-</div>
-
-</div>

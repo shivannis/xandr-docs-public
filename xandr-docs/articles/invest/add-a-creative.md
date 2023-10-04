@@ -1,280 +1,89 @@
 ---
-Title : Add a Creative
-Description : You can add a creative by either uploading a spreadsheet or the creative
-files directly from your computer. Only secure content is supported.
+title: Microsoft Invest - Add a Creative
+description: In this module, follow the step-by-step instructions to add one creative at a time to the Xandr platform.
 ---
 
+# Microsoft Invest - Add a creative
 
-# Add a Creative
+You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 
+To serve on our platform, all creatives must adhere to our creative guidelines and specifications, creative standards, and other guidelines that apply to all creative types. For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md), [Creative CTV Guidelines and Specifications](creative-ctv-guidelines-and-specifications.md), and [Creative Standards](creative-standards.md).
 
+> [!NOTE]
+> When uploading in the UI, the total size of any hosted banner and video creatives should not exceed 1 GB. The current maximum size for creatives that can be uploaded through the API is approximately 220 MB. It is advisable to use the UI to upload creatives, particularly videos.
 
-You can add a creative by either uploading a spreadsheet or the creative
-files directly from your computer. Only secure content is supported.
+1. Go to **Creative** > **Creatives**.
 
+1. Select an advertiser.
 
-To serve on our platform, all creatives must adhere to our creative
-guidelines and specifications, creative standards, and other guidelines
-that apply to all creative types. For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md)
+1. Click **New** and select the appropriate creative type from the menu that displays.
+   The **Create New** screen displays.
 
-title="To serve on the Xandr platform and other third-party platforms, all creatives must adhere to the guidelines and specifications listed here, our creative standards, and any other guidelines that may apply.">,
+1. Provide the creative file using one of the following methods:
+    - If the creative is being hosted with Xandr, upload the file by clicking the **Select Files** button to upload the appropriate assets.
+      > [!NOTE]
+      > For native creatives, you can upload a main image and icon simultaneously.
 
-title="To serve on Xandr publisher&#39;s CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Xandr creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the View CTV Eligibility section . If not, you can click More Details, to see which requirements need to be adjusted in order to serve on Xandr’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.">Creative
-CTV Guidelines and Specifications and [Creative Standards](creative-standards.md)
+    - If the creative is being hosted on your own platform or trafficked through a third-party ad server, enter a secure URL.
 
-title="Xandr has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.">.
+    If you're adding a video or audio creative, you'll have to select one of the following tabs in order to provide the creative file:
+    - **Hosted File**: For video and audio creatives that are being hosted through Xandr's platform.
+    - **Third-Party URL**: For video and audio creatives that are being trafficked through a third-party ad server.
+    > [!TIP]
+    > When uploading creative files, you can hold down the **Command** (if using a Mac) or **CTRL** (if using a PC) key until you've selected all the necessary files from your computer, and then click **Open**.
+    >
+    > For native creatives, keep the following in mind:
+    > - You can also upload images and icons using the **Composition** section. You can specify which native image and icon file should be used by selecting one of the files that were previously uploaded from the **Image** and **Icon** menus.
+    > - To replace any of the selected files, click the **Image** and **Icon** menus in the **Composition** section and click **Select Files** or **Enter a URL**.
 
+1. Provide basic information for the creative in the **Basic Setup** section:
+    1. Enter a new name for the creative in the **Name** field, or leave the original name that currently displays.
+    1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when clicking the creative, or select the **Set on the Line Item level** radio button to set it at the line item level.
+       For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md)
+    1. For banner creatives, select a media type from the menu pull-down.
+      A standard Xandr template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
+    1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
+    1. For HTML5 and banner creatives, select a creative size.
 
+1. For video and audio creatives, do any of the following:
 
-<b>Note:</b> When uploading in the UI, the
-total size of any hosted banner and video creatives should not exceed 1
-GB. The current maximum size for creatives that can be uploaded through
-the API is approximately 220 MB. It is advisable to use the UI to upload
-creatives, particularly videos.
+    |Action  |More Information  |
+    |---------|---------|
+    |Search and select VAST features and extensions from the VAST Features section.     |For more information, see [Supported VAST Features](supported-vast-features.md) and [Create a VAST Extension](../monetize/create-a-vast-extension.md).         |
+    |Search and select companions from the Companions section.     |Companions are supported if the third-party ad server supports it. You cannot associate HTML or JS banners. To serve on Spotify, associate one 640 x 640 image creative as a companion. For more information, see [Companions](companions.md).         |
 
+    For more information, see [Video Creatives](video-creatives.md) and [Audio Creatives](audio-creatives.md).
 
+1. For native creatives, enable automatic resizing of the main native creative and icon by clicking the **Allow smart image adjustments** toggle and selecting one of the following radio buttons:
+    - **Include white bars to fill placement**: Adds white space above and below the image and icon within the placement.
+    - **Crop image to fit placement**: Enlarges or reduces the size of the image and icon so that they fill the entire placement.
 
-1.  Go to
-    Creative
-    \> Creatives
-    .
-2.  Select an advertiser.
-3.  Click New and
-    select the appropriate creative type from the menu that
-    displays.
-    
+    You can preview the image and icon files to determine which of these options are most appropriate before saving by clicking **Preview adjusted examples** and selecting one of the following radio buttons:
+    - **Include white bars to fill placement**
+    - **Crop image to fit placement**
 
-    The Create New screen
-    displays.
+    Two previews, one with the widest extreme and the other with the tallest extreme, display for each option. For more information, see [Smart Image Adjustments for Native Creatives](smart-image-adjustments-for-native-creatives.md).
 
-    
-4.  Provide the creative file using one of the
-    following methods:
-    - If the creative is being hosted with
-      Xandr, upload the file by clicking the
-      Select Files button to upload
-      the appropriate assets.
-      
+    Additionally, you can add details for the native image and icon files in the **Composition** section. Click the **Additional Assets** menu to add additional fields. For more information about each asset specification, see [Native Creative Asset Specifications](native-creative-asset-specifications.md).
 
-      <b>Note:</b> For native creatives, you
-      can upload a main image and icon simultaneously.
+1. Click the **Preview** button in the left pane to preview the creative.
+    For native creatives, the **Preview** button won't display until the landing page URL has been added.
 
-      
-    - If the creative is being hosted on your own platform or trafficked
-      through a third-party ad server, enter a secure URL.
+1. **Optional:** [Configure tracking parameters](configuring-tracking-for-creatives.md).
 
-    
+1. **Optional:** [Associate the creative to the appropriate line item](associate-line-items-with-a-creative.md).
 
+1. **Optional:** [Exclude competitive brands](exclude-competitive-brands-for-a-creative.md).
 
-    If you're adding a video or audio creative, you'll have to select
-    one of the following tabs in order to provide the creative file:
-    - Hosted File: For video and audio
-      creatives that are being hosted through
-      Xandr's platform.
-    - Third-Party URL: For video and
-      audio creatives that are being trafficked through a third-party ad
-      server.
+1. **Optional:** [Exclude competitive offer categories](exclude-competitive-offer-categories-for-a-creative.md).
 
-    
+1. [Select the appropriate audit option](select-an-audit-option-for-a-creative.md).
 
-    
+1. Click **Save**.
 
-    <b>Tip:</b>
-    When uploading creative files, you can hold down the **Command** (if
-    using a Mac) or **CTRL** (if using a PC) key until you've selected
-    all the necessary files from your computer, and then click
-    Open.
+## Related topics
 
-    
-    For native creatives, keep the following in mind:
-    - You can also upload images and icons using the
-      Composition section. You can
-      specify which native image and icon file should be used by
-      selecting one of the files that were previously uploaded from the
-      Image and
-      Icon menus.
-    - To replace any of the selected files, click the
-      Image and
-      Icon menus in the
-      Composition section and
-      click Select Files or
-      Enter a URL.
-
-    
-
-    
-
-    
-5.  Provide basic information for the creative in
-    the Basic Setup
-    section:
-    1.  Enter a new name for the creative in the
-        Name field, or leave the
-        original name that currently displays.
-    2.  Enter a landing page URL in the
-        Landing Page field that the
-        users will be redirected to when clicking the creative, or
-        select the Set on the Line Item
-        level radio button to set it at the line item
-        level.
-        
-
-        For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md)
-        
-        title="As an advertiser, you may wish to send users to different landing pages or compare the performance of different landing pages. To accomplish this, you can associate a landing page URL with a line item. This landing page will then be available for association with any creatives that are attached to that line item.">.
-
-        
-    3.  For banner creatives, select a media type
-        from the menu pull-down.
-        
-
-        A standard Xandr template is selected by
-        default. You can click the X
-        in the search field next to the menu pull-down and select a
-        different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md)
-        
-        title="You can apply media types and standard Xandr and custom templates to your banner creatives from the Create New screen.">.
-
-        
-    4.  For HTML5 creatives, select one of the
-        following media types:
-        Standard,
-        Interstitial, or
-        Expandable.
-    5.  For HTML5 and banner creatives, select a
-        creative size.
-6.  For video and audio creatives, do any of the
-    following:
-    <table
-    id="add-a-creative__choicetable_9c4f8b94-497d-400f-b239-6d1ad97cd218"
-    class="simpletable choicetable choicetableborder" data-border="1"
-    data-frame="hsides" data-rules="rows" data-cellpadding="4"
-    data-cellspacing="0" data-summary="">
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead class="thead">
-    <tr class="header sthead chhead">
-    <th class="stentry choptionhd" scope="col"
-    style="text-align: left; vertical-align: bottom;">Action</th>
-    <th class="stentry chdeschd" scope="col"
-    style="text-align: left; vertical-align: bottom;">More Information</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Search and select VAST features and extensions from the
-    VAST Features section.</th>
-    <td class="stentry chdesc" style="vertical-align: top">For more 
-    information, see [Supported VAST Features](supported-vast-features.md)
-    title="The Xandr platform supports a variety of VAST features such as skipoffset and ad verification. Our VAST features are compatible with certain VAST versions. VAST versions 2.0 through 4.0 support backwards feature compatibility. However, if a publisher doesn&#39;t support a particular VAST version, then implementation of certain features on that publisher&#39;s player won&#39;t be possible."></a> and [create a vast extension](create-a-vast-extension.md).</td>
-    </tr>
-    <tr class="even strow chrow">
-    <th class="stentry choption" style="vertical-align: top"
-    scope="row">Search and select companions from the <span
-    class="keyword wintitle">Companions section.</th>
-    <td class="stentry chdesc" style="vertical-align: top">Companions are
-    supported if the third-party ad server supports it. You cannot associate
-    HTML or JS banners. To serve on Spotify, associate one 640 x 640 image
-    creative as a companion. For more information, see [Companions](companions.md)
-    title="A companion is a creative that is commonly displayed in the form of a standard banner or rich media. It can also wrap the video ad experience. Companions are supported on VAST version 2.0 and higher.">.</td>
-    </tr>
-    </tbody>
-    </table>
-
-    
-
-    For more information, see [Video Creatives](video-creatives.md)
-   
-    title="You can host video creatives with Xandr or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported."> and [Audio Creatives](audio-creatives.md)
-    title="You can host audio creatives with Xandr or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.">Audio
-    Creatives.
-
-    
-7.  For native creatives, enable automatic resizing
-    of the main native creative and icon by clicking the
-    Allow smart image adjustments
-    toggle and selecting one of the following radio buttons:
-    - Include white bars to fill
-      placement: Adds white space above and below the image and
-      icon within the placement.
-    - Crop image to fit placement:
-      Enlarges or reduces the size of the image and icon so that they
-      fill the entire placement.
-
-    
-
-    You can preview the image and icon files to determine which of these
-    options are most appropriate before saving by clicking
-    Preview adjusted examples and
-    selecting one of the following radio buttons:
-    - Include white bars to fill
-      placement
-    - Crop image to fit placement
-
-    Two previews, one with the widest extreme and the other with the
-    tallest extreme, display for each option. For more information, see [Smart Image Adjustments for Native Creatives](smart-image-adjustments-for-native-creatives.md)
-   
-    title="Buyers can use Smart Image Adjustments to automatically resize their main native creative image and icon with a few clicks of the mouse so that they can quickly meet the publisher&#39;s placement criteria.">.
-
-    
-
-    Additionally, you can add details for the native image and icon
-    files in the Composition
-    section. Click the Additional
-    Assets menu to add additional fields. For more information
-    about each asset specification, see [Native Creative Asset Specifications](native-creative-asset-specifications.md)
-    title="You can configure a variety of standard and custom data and image specifications for your native creatives .">.
-
-    
-8.  Click the
-    Preview button in the left pane to
-    preview the creative.
-    
-
-    For native creatives, the Preview
-    button won't display until the landing page URL has been added.
-
-    
-9.  **Optional:**
-    [Configure tracking parameters](configuring-tracking-for-creatives.md)
-    title="When adding creatives, you can set a variety of tracking parameters from the Pixels (optional) section, such as frequency and recency caps, third-party tracking pixels, and segment pixels.".
-10. **Optional:**
-    [Associate the creative to the appropriate line item](associate-line-items-with-a-creative.md)
-    title="When adding a new creative, you can associate existing line items to it, which will cause the creative to automatically appear in the Associated Creatives section of the Edit Line Item screen so that you don&#39;t have to manually associate it at the line item level. After it&#39;s associated, you can schedule when the creative should serve and apply creative rotation settings to it at the line item level.">.
-11. **Optional:**
-    [Exclude competitive brands](exclude-competitive-brands-for-a-creative.md)
-    title="When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive brands from serving alongside each other. You can exclude a maximum of 25 brands for each creative.">.
-12. **Optional:**
-    [Exclude competitive offer categorie](exclude-competitive-offer-categories-for-a-creative.md)
-    title="When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive offer categories from serving alongside each other. You can exclude a maximum of five offer categories for each creative.">.
-13. [Select the appropriate audit option](select-an-audit-option-for-a-creative.md)
-    title="When adding creatives, you can specify if you want to audit your own creatives or have Xandr audit them. An unaudited creative can only run on your managed publishers. Unaudited creatives aren&#39;t eligible to run on third-party inventory unless the seller specifically allows it.">.
-14. Click
-    Save.
-
-
-
-<div id="add-a-creative__postreq_48d0df67-7956-4f6b-9f60-e67ae417c6f5"
->
-
-**Related Topics**
-
-- [Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)
+- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)
 - [Native Creatives](native-creatives.md)
 - [Banner and HTML5 Creatives](banner-and-html5-creatives.md)
 - [Add Creatives in Bulk](add-creatives-in-bulk.md)
-
-  title="You can host video, audio, banner, carousel, and app install native creatives with Xandr.">
-
-  title="You can host common display creatives such as banner and HTML5 with Xandr or traffic them through third-party ad servers."
-
-  title="You can add multiple third-party, hosted, and native creatives to the Creative Manager simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported."
-
-
-
-
-
-

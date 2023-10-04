@@ -1,38 +1,87 @@
-# Ad Object API
-
-<div class="body">
-
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+---
+Title : Ad Object API
+Description : <table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d232040e60" class="entry cellborder"
-style="vertical-align: top">eventType</th>
-<th id="d232040e63" class="entry cellborder"
-style="vertical-align: top">Callback Function Signature</th>
-<th id="d232040e66" class="entry cellborder"
-style="vertical-align: top">Data objects</th>
+<tr class="header row">
+<th id="ID-00001078__entry__1"
+class="entry colsep-1 rowsep-1">eventType</th>
+<th id="ID-00001078__entry__2" class="entry colsep-1 rowsep-1">Callback
+Function Signature</th>
+<th id="ID-00001078__entry__3" class="entry colsep-1 rowsep-1">Data
+objects</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adRequested</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code class="ph codeph">function(){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 ">N/A</td>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adRequested</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
+class="ph codeph">function(){}</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__3">N/A</td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adAvailable</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adAvailable</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adObj){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3"><pre
+class="pre codeblock"><code>adObj = {
+cpm: 10,
+cpm_publisher_currency: 10,
+publisher_currency_code: &#39;$&#39;,
+adType : &#39;banner&#39;, // could also be &#39;video&#39; or &#39;native&#39;
+auctionId : &#39;123456&#39;,
+buyerMemberId : 999, creativeId : 53122972,
+source : &#39;rtb&#39;, // could also be &#39;csm&#39;
+tagId : 6051399,
+banner : {
+// will match adType above; based on source // SEE BELOW
+}
+}</code></pre>
+<p>Ad Type can be a banner, video, or native. See the adType object
+---
+
+
+# Ad Object API
+
+
+
+<table class="table">
+<thead class="thead">
+<tr class="header row">
+<th id="ID-00001078__entry__1"
+class="entry colsep-1 rowsep-1">eventType</th>
+<th id="ID-00001078__entry__2" class="entry colsep-1 rowsep-1">Callback
+Function Signature</th>
+<th id="ID-00001078__entry__3" class="entry colsep-1 rowsep-1">Data
+objects</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adRequested</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
+class="ph codeph">function(){}</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__3">N/A</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adAvailable</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
+class="ph codeph">function(adObj){}</code></td>
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3"><pre
+class="pre codeblock"><code>adObj = {
         cpm: 10, 
         cpm_publisher_currency: 10,
     publisher_currency_code: &#39;$&#39;,
@@ -51,29 +100,32 @@ below for more examples.</p>
 ad; when source is client-side mediation (csm), it includes just the
 creative ID.</p></td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adLoaded</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code class="ph codeph">adLoaded</code></td>
-<td class="entry cellborder"
-headers="d232040e66 ">Ad Object is the same as for <code
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adLoaded</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
+class="ph codeph">adLoaded</code></td>
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3">Ad
+Object is the same as for <code
 class="ph codeph">adAvailable</code>.</td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adNoBid</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adNoBid</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adObj){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3"><pre
+class="pre codeblock"><code>adObj = {
         auctionId : &#39;123456&#39;,
         nobid : true,
         tagId : 6051399,
 }</code></pre>
-<div class="note">
-<span class="notetitle">Note:</span> When using Mediation, normally a
+
+Note: When using Mediation, normally a
 mediated bid would return alongside an RTB bid for the same
 placement/slot. There is a chance the auction request may only return a
 mediated bid. 
@@ -83,17 +135,17 @@ case when there is no RTB bid present, the Mediation script would load
 the adNoBid event to signify the lack of an available RTB bid. In this
 case, the adObj will not be populated and the object will be undefined
 since there is no fallback RTB bid object present.</p>
-</div></td>
+</td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e60 "><code
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
 class="ph codeph">adRequestFailure</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adError){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 ">Click to see details
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__3">Click to see details
 <pre class="pre codeblock"><code>adError = {
         code : 0
         errMessage : &#39;error message&#39;;,
@@ -101,27 +153,29 @@ headers="d232040e66 ">Click to see details
         targetId : &#39;apn_ad_slot_1&#39;
 }</code></pre></td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adError</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adError</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adError, adObj){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 "><code class="ph codeph">adError</code> is the same
-as for <code class="ph codeph">adRequestFailure</code>..
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__3"><code class="ph codeph">adError</code>
+is the same as for <code class="ph codeph">adRequestFailure</code>..
 <p>Ad Object is the same as for <code
 class="ph codeph">adAvailable</code>.</p></td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adBadRequest</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adBadRequest</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adError){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 ">The tag called a placement that doesn't exist.
-This could indicate an error from the Impression Bus.
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3">The
+tag called a placement that doesn't exist. This could indicate an error
+from the Impression Bus.
 <pre class="pre codeblock"><code>adError = {
         code : 0
         errMessage : &#39;error message&#39;;,
@@ -129,23 +183,25 @@ This could indicate an error from the Impression Bus.
         targetId : &#39;apn_ad_slot_1&#39;
 }</code></pre></td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e60 "><code class="ph codeph">adCollapse</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code class="ph codeph">function(){}</code></td>
-<td class="entry cellborder"
-headers="d232040e66 ">N/A</td>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
+class="ph codeph">adCollapse</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
+class="ph codeph">function(){}</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__3">N/A</td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e60 "><code
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
 class="ph codeph">adNoBidMediated</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adObj)</code></td>
-<td class="entry cellborder"
-headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3"><pre
+class="pre codeblock"><code>adObj = {
     cpm: 10, 
         cpm_publisher_currency: 10,
     publisher_currency_code: &quot;$&quot;
@@ -161,15 +217,15 @@ headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
         }
 }</code></pre></td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e60 "><code
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__1"><code
 class="ph codeph">adLoadedMediated</code></td>
-<td class="entry cellborder"
-headers="d232040e63 "><code
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__2"><code
 class="ph codeph">function(adObj)</code></td>
-<td class="entry cellborder"
-headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
+<td class="entry colsep-1 rowsep-1" headers="ID-00001078__entry__3"><pre
+class="pre codeblock"><code>adObj = {
     cpm: 10, 
         cpm_publisher_currency: 10,
     publisher_currency_code: &#39;$&#39;
@@ -188,31 +244,26 @@ headers="d232040e66 "><pre class="pre codeblock"><code>adObj = {
 </tbody>
 </table>
 
-</div>
-
 adType Object
 
 Specifies the type of ad (banner, native, or video) and the source of
 the ad, either real-time bidding (rtb) or client-side mediation (csm).
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d232040e287" class="entry cellborder"
-style="vertical-align: top">AdType</th>
-<th id="d232040e290" class="entry cellborder"
-style="vertical-align: top">Example</th>
+<tr class="header row">
+<th id="ID-00001078__entry__34"
+class="entry colsep-1 rowsep-1">AdType</th>
+<th id="ID-00001078__entry__35"
+class="entry colsep-1 rowsep-1">Example</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e287 ">banner (source is rtb)</td>
-<td class="entry cellborder"
-headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__34">banner (source is rtb)</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__35"><pre class="pre codeblock"><code>adObj = {
         adType: &quot;banner&quot;,
     cpm: 10,
     cpm_publisher_currency: 10,
@@ -231,11 +282,11 @@ headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
  &#10;        // other data in adObj omitted for brevity
 }</code></pre></td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e287 ">banner (source is csm)</td>
-<td class="entry cellborder"
-headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__34">banner (source is csm)</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__35"><pre class="pre codeblock"><code>adObj = {
     adType: &quot;banner&quot;,
     cpm: 10,
     cpm_publisher_currency: 10,
@@ -246,11 +297,11 @@ headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
         // other data in adObj omitted for brevity
 }</code></pre></td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e287 ">video (source is rtb)</td>
-<td class="entry cellborder"
-headers="d232040e290 "><pre class="pre codeblock"><code>adObj =  {
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__34">video (source is rtb)</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__35"><pre class="pre codeblock"><code>adObj =  {
         adType: &quot;video&quot;,
     cpm: 10,
     cpm_publisher_currency: 10,
@@ -267,11 +318,11 @@ headers="d232040e290 "><pre class="pre codeblock"><code>adObj =  {
  &#10;        // other data in adObj omitted for brevity
 }</code></pre></td>
 </tr>
-<tr class="even ">
-<td class="entry cellborder"
-headers="d232040e287 ">video (source is csm)</td>
-<td class="entry cellborder"
-headers="d232040e290 "><pre class="pre codeblock"><code>adObj =  {
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__34">video (source is csm)</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__35"><pre class="pre codeblock"><code>adObj =  {
         adType: &quot;video&quot;,
     cpm: 10,
     cpm_publisher_currency: 10,
@@ -282,11 +333,11 @@ headers="d232040e290 "><pre class="pre codeblock"><code>adObj =  {
         // other data in adObj omitted for brevity
 }</code></pre></td>
 </tr>
-<tr class="odd ">
-<td class="entry cellborder"
-headers="d232040e287 ">native (source is rtb)</td>
-<td class="entry cellborder"
-headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__34">native (source is rtb)</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00001078__entry__35"><pre class="pre codeblock"><code>adObj = {
   adType&quot;: &quot;native&quot;,
   cpm: 10,
   cpm_publisher_currency: 10,
@@ -325,22 +376,6 @@ headers="d232040e290 "><pre class="pre codeblock"><code>adObj = {
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
-
-</div>
-
-</div>
-
-</div>

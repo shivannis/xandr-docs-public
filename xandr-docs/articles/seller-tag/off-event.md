@@ -1,8 +1,15 @@
+---
+Title : Off Event
+Description : This function clears the event listeners on the
+given `eventType` and `targetId`.
+---
+
+
 # Off Event
 
-<div class="body refbody">
 
-<div class="section">
+
+
 
 This function clears the event listeners on the
 given `eventType` and `targetId`.
@@ -13,28 +20,21 @@ offEvent('eventType','targetId')
 
 The parameters listed below can be sent as arguments in the function.
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d137511e77" class="entry nocellnoborder"
-style="vertical-align: top">Parameter</th>
-<th id="d137511e80" class="entry nocellnoborder"
-style="vertical-align: top">Type</th>
-<th id="d137511e83" class="entry cell-noborder"
-style="vertical-align: top">Description</th>
+<tr class="header row">
+<th id="ID-0000169f__entry__1" class="entry">Parameter</th>
+<th id="ID-0000169f__entry__2" class="entry">Type</th>
+<th id="ID-0000169f__entry__3" class="entry">Description</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry nocellnoborder"
-headers="d137511e77 "><code class="ph codeph">eventType</code></td>
-<td class="entry nocellnoborder"
-headers="d137511e80 ">string</td>
-<td class="entry cell-noborder"
-headers="d137511e83 ">The event to listen for on the tag.
+<tr class="odd row">
+<td class="entry" headers="ID-0000169f__entry__1"><code
+class="ph codeph">eventType</code></td>
+<td class="entry" headers="ID-0000169f__entry__2">string</td>
+<td class="entry" headers="ID-0000169f__entry__3">The event to listen
+for on the tag.
 <ul>
 <li><code class="ph codeph">adRequested</code>: An ad was requested from
 the Impression Bus.</li>
@@ -59,24 +59,21 @@ creative, if the creative contains <code
 class="ph codeph">window.parent.apntag.collapseAd(document.body.id)</code>.</li>
 </ul></td>
 </tr>
-<tr class="even ">
-<td class="entry -nocellborder"
-headers="d137511e77 "><code class="ph codeph">targetId</code></td>
-<td class="entry -nocellborder"
-headers="d137511e80 ">string</td>
-<td class="entry cellborder"
-headers="d137511e83 ">The unique identifier of a specific ad slot. Omit
-this parameter to disable all the callback functions to be executed for
-this eventType. This is an optional parameter.</td>
+<tr class="even row">
+<td class="entry" headers="ID-0000169f__entry__1"><code
+class="ph codeph">targetId</code></td>
+<td class="entry" headers="ID-0000169f__entry__2">string</td>
+<td class="entry" headers="ID-0000169f__entry__3">The unique identifier
+of a specific ad slot. Omit this parameter to disable all the callback
+functions to be executed for this eventType. This is an optional
+parameter.</td>
 </tr>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section">
+
 
 ## Example
 
@@ -86,22 +83,8 @@ apntag.offEvent('adError','apn_ad_slot_1');
 apntag.offEvent('adError');
 ```
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
-
-</div>
-
-</div>
-
-</div>

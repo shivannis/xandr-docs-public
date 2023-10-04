@@ -1,30 +1,37 @@
+---
+Title : Set Up AST Tags for Native Ad Types
+Description : Xandr's seller tag (AST) is an asynchronous java
+script tag that runs in the header of the page. AST tags are defined and
+---
+
+
 # Set Up AST Tags for Native Ad Types
 
-<div class="body">
 
-<div class="p">
 
-<span class="ph">Xandr</span>'s seller tag (AST) is an asynchronous java
+
+
+Xandr's seller tag (AST) is an asynchronous java
 script tag that runs in the header of the page. AST tags are defined and
 loaded in the page header and are activated by "showing" the tags in the
 page body. For native ads, there are different methods available to help
 render the ad on the page.
 
-<div class="note tip">
 
-<span class="tiptitle">Tip:</span> For selected use cases, AST can also
-be defined, loaded, and shown in the page body.
 
-</div>
+Tip: For selected use cases, AST can
+also be defined, loaded, and shown in the page body.
 
-</div>
 
-<div class="section">
+
+
+
+
 
 ## How It Works
 
 <div id="setup-ast-tags-for-native-ad-types__p-b4a0cbcb-91d5-498a-addc-2892d5d229ba"
-class="p">
+>
 
 A native ad unit can be added to a web page in various locations decided
 by the publisher, such as:
@@ -33,7 +40,7 @@ by the publisher, such as:
 - In between paragraphs of text in an article
 - At the end of an article
 
-</div>
+
 
 In each of the scenarios above (and others), the native ad unit is
 generally included as a hidden `<div>` element in the page body. The
@@ -61,22 +68,21 @@ arrangement (or the native creative template) will exist, in the
 Monetize system (using the Native Assembly feature) or on the web page
 itself (self-managed by site-developers).
 
-</div>
 
-<div class="section">
+
+
 
 ## Native Assembly Example
 
-The <a href="../topics/native-assembly.html" class="xref"
-title="By using Native Assembly, publishers can take the guesswork and manual development out of building flawless native experiences. Publishers don&#39;t have to worry about whether or not they&#39;re keeping to industry standards since Native Assembly validates all native creative assets against IAB&#39;s standards. Ad Server and third-party ad server publishers can both use Native Assembly.">Native
-Assembly</a> feature helps publishers to choose (and customize) a
-variety of native creative templates preset within the Monetize system.
-Through the feature, you're able to create specific Native Assembly
-renderer objects (that define the overall layout and cohesion of the
-native assets) and assign them to specific placements, so that when the
-placement returns a native bid - it will include this Native Assembly
-renderer to help ensure the native ad appears in the desired format on
-the page.
+The <a href="../topics/native-assembly.html"
+class="xref">../topics/native-assembly.html</a> feature helps publishers
+to choose (and customize) a variety of native creative templates preset
+within the Monetize system. Through the feature, you're able to create
+specific Native Assembly renderer objects (that define the overall
+layout and cohesion of the native assets) and assign them to specific
+placements, so that when the placement returns a native bid - it will
+include this Native Assembly renderer to help ensure the native ad
+appears in the desired format on the page.
 
 In the case of AST, the set up needed to use Native Assembly is not so
 different from the standard setup for other ad types. The native object
@@ -87,7 +93,7 @@ renderer object assigned to it (in Monetize) to ensure the renderer is
 included in any returning native bids.
 
 <div id="setup-ast-tags-for-native-ad-types__p-f0c761ba-ecf2-4fc6-8aaa-0cede81d3ac2"
-class="p">
+>
 
 The `showTag` piece in the body of the page should be included in the
 desired area where the ad should display.
@@ -115,14 +121,14 @@ apntag.defineTag({
       apntag.showTag('native_slot');
     });
   </script>
-</div>
+
 ```
 
-</div>
 
-</div>
 
-<div class="section">
+
+
+
 
 ## Self-Managed Native Example
 
@@ -143,7 +149,7 @@ event; additional details how to use AST events can be found
 <a href="on-event.html" class="xref">here</a>.
 
 <div id="setup-ast-tags-for-native-ad-types__p-675f7dc0-d35f-4a12-a02e-3ff4e31c73c0"
-class="p">
+>
 
 The code presented in the example below is just a basic approach to
 reference the native assets from the returning native bid and to render
@@ -151,10 +157,10 @@ the combined HTML into a predesignated spot on the page. There are many
 ways this code can be written by the site developers as to fit the needs
 of the creative and the context of the page.
 
-<div class="note important">
 
-<span class="importanttitle">Important:</span> For this approach, there
-are two AST functions
+
+Important: For this approach, there are
+two AST functions
 <a href="fire-impression-trackers.html" class="xref"><code
 class="ph codeph">fireImpressionTrackers</code></a> and
 <a href="attach-click-trackers.html" class="xref"><code
@@ -164,11 +170,11 @@ important roles to load the impression and click tracking URLs for the
 creative. If they are not included, the creatives will not track, and it
 will impact the performance.
 
-</div>
 
-</div>
 
-<div class="p">
+
+
+
 
 If you are using this type of set up for the first time, please allow
 some time to thoroughly test the code in different environments,
@@ -202,13 +208,13 @@ apntag.onEvent('adAvailable', function(tag) {
   // render the native assets with this template
   document.getElementById('native_slot').innerHTML = `
     <div class="sponsored-post">
-      <div class="thumbnail"></div>
+      <div class="thumbnail" style="background-image: url(${native.image && native.image.url});">
       <div class="content">
         <h1><a href="${native.clickUrl}" target="_blank">${native.title}</a></h1>
         <p>${native.body}</p>
-        <div class="attribution">${native.sponsoredBy}</div>
-      </div>
-    </div>
+        <div class="attribution">${native.sponsoredBy}
+      
+    
   `;
  
   apntag.fireImpressionTrackers(tag);
@@ -224,26 +230,13 @@ apntag.onEvent('adAvailable', function(tag) {
       apntag.showTag('native_slot');
     });
   </script>
-</div>
+
 ```
 
-</div>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/seller-tag.html" class="link">Seller Tag</a>
 
-</div>
-
-</div>
-
-</div>

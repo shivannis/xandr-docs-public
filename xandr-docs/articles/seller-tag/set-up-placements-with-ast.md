@@ -1,79 +1,87 @@
+---
+Title : Set Up Placements with AST
+Description : This page contains a sample web page showing how
+Xandr's seller tag  (AST) functions can be
+implemented in the header and body of a sample client page.
+---
+
+
 # Set Up Placements with AST
 
-<div class="body">
+
 
 This page contains a sample web page showing how
-<span class="ph">Xandr</span>'s seller tag  (AST) functions can be
+Xandr's seller tag  (AST) functions can be
 implemented in the header and body of a sample client page.
 
-<div id="ID-000000bd__note_lxk_h45_25b" class="note">
+<div id="ID-000000bd__note_lxk_h45_25b" 
 
-<span class="notetitle">Note:</span> See the
+Note: See the
 <a href="ast-api-reference.html" class="xref">AST API Reference</a> for
 more details on using the functions in this example.
 
-</div>
 
-<div id="ID-000000bd__note_mxk_h45_25b" class="note">
 
-<span class="notetitle">Note:</span>
+<div id="ID-000000bd__note_mxk_h45_25b" 
 
-<span class="ph">Xandr</span> now supports a domain,
-<span class="ph">adnxs</span>-simple.com, which does not send or read
+Note:
+
+Xandr now supports a domain,
+adnxs-simple.com, which does not send or read
 browser cookies on requests. Clients can leverage this cookie-free
 domain when there is no consent to use personal data. Relevant calls
-initiated by <span class="ph">Xandr</span> will automatically use this
+initiated by Xandr will automatically use this
 domain when there is no consent or when cookies are not required for the
 function. For more information, see  <a
 href="https://wiki.xandr.com/display/policies/Reinforcing%2bPrivacy%2bControls%2bThrough%2ba%2bCookie-Free%2bDomain"
 class="xref" target="_blank">Reinforcing Privacy Controls Through a
 Cookie-Free Domain</a> (login required).
 
-To use the <span class="ph">adnxs</span>-simple.com domain:
+To use the adnxs-simple.com domain:
 
-- If you load ast.js directly from <span class="ph">Xandr</span>'s CDN,
+- If you load ast.js directly from Xandr's CDN,
   update the library tag to start loading from the new cookie-free
   domain:  
   <a href="https://acdn.adnxs-simple.com/ast/ast.js" class="xref"
   target="_blank">https://acdn.<span
-  class="ph">adnxs</span>-simple.com/ast/ast.js</a>
+  class="ph">adnxs-simple.com/ast/ast.js</a>
 - If you load ast.js from a local server, update ast.js to the latest
   version (version 0.37.1 or higher)
 
-</div>
 
-<div class="section">
 
-## Step 1: Create the APN Object and Load the <span class="ph">Xandr</span> JavaScript Library
+
+
+## Step 1: Create the APN Object and Load the Xandr JavaScript Library
 
 In line 5, we set up an empty AST object. In line 7, we create a
 function queue on that object which allows us to push functions into
 that queue with the information about the tags and be able to request
-bids from the <span class="ph">Xandr</span> ad server. In lines 10–15,
+bids from the Xandr ad server. In lines 10–15,
 we asynchronously load the client-side auction library from the
-<span class="ph">Xandr</span> CDN. If the script exists, we process it;
+Xandr CDN. If the script exists, we process it;
 otherwise, it is put in the queue.
 
-<div class="note">
 
-<span class="notetitle">Note:</span> This code can be pasted directly
+
+Note: This code can be pasted directly
 into your web page; no additional developer changes are required. You
 may separate the code into the `head` and `body` as shown below or, if
 you do not have access to the page `head`, you may put the entire tag in
 one code block in the `body`.
 
-</div>
 
-<div class="note warning">
 
-<span class="warningtitle">Warning:</span> Deploying the AST tag into an
+
+
+Warning: Deploying the AST tag into an
 external Javascript file or other customizations to the deployment of
 this code could result in unintended outcomes or loss of functionality,
 and will require customer action to test and utilize features in future
-AST releases. <span class="ph">Xandr</span> may not be able to
+AST releases. Xandr may not be able to
 troubleshoot or support in this instance.
 
-</div>
+
 
 ``` pre
 <html>
@@ -93,9 +101,9 @@ troubleshoot or support in this instance.
     })();
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Step 2: Set Global Page Options
 
@@ -121,9 +129,9 @@ parameters (`member` is required in either `setPageOpts` or `defineTag`
         });
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Step 3: Define Ad Tags
 
@@ -147,7 +155,8 @@ Next, we define all the ad placements we want on this page using the
   ID in the body of the page.
 
 - Other options available; see
-  the <a href="ast-api-reference.html" class="xref">AST API Reference</a>.  
+  the <a href="ast-api-reference.html" class="xref">AST API Reference</a>.  
+    
 
   ``` pre
           //define ad tags
@@ -163,9 +172,9 @@ Next, we define all the ad placements we want on this page using the
           });
   ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Step 4: Load Tags
 
@@ -181,9 +190,9 @@ asynchronously.
 </head>
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Step 5: Define Location of Placements
 
@@ -194,9 +203,9 @@ placement is ready to receive an ad. Once this function is called, the
 impression will be marked as transacted and will be considered an
 "impression" for accounting purposes.
 
-<div class="note">
 
-<span class="notetitle">Note:</span> AST manages all the DOM elements
+
+Note: AST manages all the DOM elements
 inside the ad placeholder `div` tag programmatically. Since these
 elements may change, do not directly access any of the elements; use
 only the built-in AST functions, such as `refresh`. Accessing these
@@ -212,7 +221,7 @@ appearing in the wrong location on the page, duplicate ads, or blanks.
             apntag.showTag('apn_ad_slot_1');
         });
         </script>
-    </div>
+    
     <br>
     <div id="apn_ad_slot_2">
         <script type="text/javascript">
@@ -220,17 +229,17 @@ appearing in the wrong location on the page, duplicate ads, or blanks.
             apntag.showTag('apn_ad_slot_2');
         });
         </script>
-    </div>
+    
  
 </body>
 </html>
 ```
 
-</div>
 
-</div>
 
-<div id="ID-000000bd__section_ph4_xky_xvb" class="section">
+
+
+<div id="ID-000000bd__section_ph4_xky_xvb" >
 
 ## Related Topics
 
@@ -238,21 +247,8 @@ appearing in the wrong location on the page, duplicate ads, or blanks.
 
 <a href="ast-api-reference.html" class="xref">AST API Reference</a>
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/seller-tag.html" class="link">Seller Tag</a>
-
-</div>
-
-</div>
-
-</div>

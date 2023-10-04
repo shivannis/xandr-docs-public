@@ -1,8 +1,15 @@
+---
+Title : Get Tag
+Description : This function returns an object containing all tag objects that were
+created by defineTag. The method accepts one optional parameter,
+---
+
+
 # Get Tag
 
-<div class="body refbody">
 
-<div class="section">
+
+
 
 This function returns an object containing all tag objects that were
 created by defineTag. The method accepts one optional parameter,
@@ -15,38 +22,28 @@ getTag('targetId1')
 
 The parameters listed below can be sent as arguments in the function.
 
-<div class="tablenoborder">
-
-<table class="table" data-cellpadding="4" data-cellspacing="0"
-data-summary="" data-frame="border" data-border="1" data-rules="all">
+<table class="table">
 <thead class="thead">
-<tr class="header ">
-<th id="d93632e74" class="entry nocellnoborder"
-style="vertical-align: top">Parameter</th>
-<th id="d93632e77" class="entry nocellnoborder"
-style="vertical-align: top">Type</th>
-<th id="d93632e80" class="entry cell-noborder"
-style="vertical-align: top">Description</th>
+<tr class="header row">
+<th id="ID-0000158c__entry__1" class="entry">Parameter</th>
+<th id="ID-0000158c__entry__2" class="entry">Type</th>
+<th id="ID-0000158c__entry__3" class="entry">Description</th>
 </tr>
 </thead>
 <tbody class="tbody">
-<tr class="odd ">
-<td class="entry -nocellborder"
-headers="d93632e74 "><code class="ph codeph">targetId</code></td>
-<td class="entry -nocellborder"
-headers="d93632e77 ">string</td>
-<td class="entry cellborder"
-headers="d93632e80 ">The unique identifier of a specific ad slot. It is
-an optional parameter.</td>
+<tr class="odd row">
+<td class="entry" headers="ID-0000158c__entry__1"><code
+class="ph codeph">targetId</code></td>
+<td class="entry" headers="ID-0000158c__entry__2">string</td>
+<td class="entry" headers="ID-0000158c__entry__3">The unique identifier
+of a specific ad slot. It is an optional parameter.</td>
 </tr>
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section">
+
 
 ## Example
 
@@ -55,9 +52,9 @@ apntag.getTag();
 apntag.getTag('apn_ad_slot_1');
 ```
 
-</div>
 
-<div class="section">
+
+
 
 ## Example - Returned Tag Object
 
@@ -69,6 +66,7 @@ The returned tag object looks like this:
   "displayed": true,
   "initialHeight": 250,
   "initialWidth": 300,
+  "invCode": "ABC123",
   "member": "none",
   "modifyTag": "<ƒ (targetId, params)>",
   "off": "<ƒ (event, targetId, handler)>",
@@ -86,22 +84,8 @@ The returned tag object looks like this:
 } 
 ```
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-api-reference.html" class="link">AST API
-Reference</a>
-
-</div>
-
-</div>
-
-</div>

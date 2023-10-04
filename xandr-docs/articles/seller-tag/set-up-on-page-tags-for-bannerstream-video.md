@@ -1,21 +1,29 @@
+---
+Title : Set Up On-Page Tags for Bannerstream Video
+Description : Xandr Bannerstream Video
+uses Xandr's seller tag (AST), an asynchronous
+JavaScript tag that runs in the header of the page. These tags are
+---
+
+
 # Set Up On-Page Tags for Bannerstream Video
 
-<div class="body">
 
-<span class="ph">Xandr</span> Bannerstream Video
-uses <span class="ph">Xandr</span>'s seller tag (AST), an asynchronous
+
+Xandr Bannerstream Video
+uses Xandr's seller tag (AST), an asynchronous
 JavaScript tag that runs in the header of the page. These tags are
 defined and loaded in the page header and are activated by "showing" the
 tags in the page body.
 
-<div class="note tip">
 
-<span class="tiptitle">Tip:</span> For select use cases, AST can also be
-defined, loaded, and shown in the page body.
 
-</div>
+Tip: For select use cases, AST can also
+be defined, loaded, and shown in the page body.
 
-<div class="section">
+
+
+
 
 ## How It Works
 
@@ -26,9 +34,9 @@ the page body refers to the video ad unit using a Target
 Identifier which corresponds to a definition of that Target
 Identifier in the page header.
 
-</div>
 
-<div class="section">
+
+
 
 ## Example
 
@@ -83,22 +91,8 @@ behave on your page. A sample call to `defineTag` is shown here:
     });
 ```
 
-</div>
 
-</div>
 
-<div class="related-links">
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../seller-tag/ast-video-capabilities.html" class="link">AST
-Video Capabilities</a>
-
-</div>
-
-</div>
-
-</div>
