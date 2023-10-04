@@ -66,7 +66,7 @@ Legacy SDK (versions prior to Windows 10) currently represents 55% of total impr
 
 Any legacy SDK before Windows 8.1 lacks support for mobile standard third-party ad serving, impression tracking pixels, javascript and MRAID.
 
-As an Xandr Buyer, you may still access legacy SDK inventory by uploading an image creative to Xandr and specifying a landing page. For more information on uploading a hosted image as a creative, see [Add Banner Creatives](https://staging.console.appnexus.com/docs/add-banner-creatives).
+As an Xandr Buyer, you may still access legacy SDK inventory by uploading an image creative to Xandr and specifying a landing page. For more information on uploading a hosted image as a creative, see [Add Banner Creatives](banner-and-html5-creatives.md).
 
 ## Targeting instructions
 

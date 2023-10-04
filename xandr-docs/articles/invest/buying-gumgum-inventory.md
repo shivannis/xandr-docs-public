@@ -40,14 +40,14 @@ Navigate to the **Creative Manager** screen. Click on the **Create New** button 
 > [!NOTE]
 > This is not needed for the In-Image Studio 728x90 product because that can be rendered in console by using the actual size.
 
-### Step 1. View the creative
+### Step 1: View the creative
 
 Use the [https://gumgum.com/creative-preview](https://gumgum.com/creative-preview) to view creative.
 
-### Step 2. Enter the HTML tag code
+### Step 2: Enter the HTML tag code
 
 Enter the creative ad HTML code into the field in the bottom-half panel and select the correct product type.
 
-### Step 3. Preview
+### Step 3: Preview
 
 Click **preview**.
