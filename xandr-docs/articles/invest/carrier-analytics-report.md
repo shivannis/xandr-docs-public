@@ -3,7 +3,7 @@ title: Microsoft Invest - Carrier Analytics Report
 description: This report provides performance data for buy-side and sell-side based on carriers for devices. It helps to analyze carrier impact on line item performance.
 ---
 
-# Microsoft Invest - carrier analytics report
+# Microsoft Invest - Carrier analytics report
 
 The Carrier Analytics report enables you to retrieve buy-side and sell-side performance data based on carriers for devices. This is especially helpful for analyzing how carriers affect line item performance and advertiser payment. Also, in cases where advertisers set up specific landing pages for each carrier, this report helps you identify the carriers that a line item ran on.
 

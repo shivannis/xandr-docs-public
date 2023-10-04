@@ -3,7 +3,7 @@ title: Microsoft Invest - Comparison of Video Complete Buying Strategies
 description: In this article, you’ll learn about CPCV optimization and Guaranteed Completes and their use cases. These two cannot be used simultaneously.
 ---
 
-# Microsoft Invest - comparison of video complete buying strategies
+# Microsoft Invest - Comparison of video complete buying strategies
 
 CPCV optimization and Guaranteed Completes are related features with different benefits and applications: you can't use them simultaneously. Similarly, you can choose to optimize for video completion rate (VCR) or target inventory with a set video completion rate. While you can use these features together, their use cases are different.
 

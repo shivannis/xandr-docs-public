@@ -12,7 +12,7 @@ This page provides specific information for the **Triton Audio Ad Exchange**, wh
 
 ## Test your ads
 
-After designing your audio creative and adding your creative to Xandr, you can test it. See [Buying Audio Inventory](./buying-audio-inventory.md)
+After designing your audio creative and adding your creative to Xandr, you can test it. See [Buying Audio Inventory](./buying-audio-inventory.md).
 
 Triton Digital has created a test station where you can test your a2x/Xandr ads in a replica of a live environment. The test station runs a sequence of one song followed by one or more ads. You can test only one ad at a time.
 

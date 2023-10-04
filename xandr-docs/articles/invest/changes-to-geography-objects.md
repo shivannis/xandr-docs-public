@@ -4,7 +4,7 @@ description: This page is automatically updated every two weeks with geolocation
 ---
 
 
-# Microsoft Invest - changes to geography objects
+# Microsoft Invest - Changes to geography objects
 
 This page is automatically updated when geolocation data is refreshed every two weeks from [Digital Envoy](https://www.digitalelement.com/). It's also updated occasionally to detail upcoming major changes that require users to update their targeting to avoid delivery issues.
 

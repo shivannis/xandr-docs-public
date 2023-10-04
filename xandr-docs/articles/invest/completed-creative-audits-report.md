@@ -3,7 +3,7 @@ title: Microsoft Invest - Completed Creative Audits Report
 description: This report shows the number of creatives audited for an advertiser over a given time frame, creatives that completed audit, and the associated charges.
 ---
 
-# Microsoft Invest - completed creative audits report
+# Microsoft Invest - Completed creative audits report
 
 The Completed Creative Audits Report provides insight into the number of creatives that have completed the Xandr audit process, and the associated charges. Use this report to find out:
 
