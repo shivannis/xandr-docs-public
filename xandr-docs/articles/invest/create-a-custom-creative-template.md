@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Create a Custom Creative Template
-description : You can create a new custom creative template from scratch at any time.
+description : Learn to create a new custom creative template from scratch.
 ---
 
 
@@ -10,31 +10,29 @@ You can create a new custom creative template from scratch at any time.
 
 You can also duplicate an existing template and then modify it. For more
 information, see [Duplicate an Existing Custom Creative Template](duplicate-an-existing-custom-creative-template.md)
-
 1. Navigate to the **Creative Templates** screen by
     clicking
     **Creative \> Templates**.
 1. Click **New**.
 1. Provide the following information:
-   
-    a. **Name**: The name
+    1. **Name**: The name
         of the creative template, which helps buyers identify the creative template when uploading creatives that match this
         template's media type and format.
-    
-     > [!TIP]
-> Be sure to use a name that buyers will easily recognize.
-    b. **Media Type** Defines the display style of the creatives that can use the template, such as banner.
-    
-    c. **Creative Format**: Defines the creative resource type that can use this template such as Flash, iframe, or External
+
+       > [!TIP]
+      > Be sure to use a name that buyers will easily recognize.
+    1. **Media Type** Defines the display style of the creatives that can use the template, such as banner.
+
+    1. **Creative Format**: Defines the creative resource type that can use this template such as Flash, iframe, or External
         File.
 
-    d. **Template Code**: Specifies how the creative should be rendered.
+    1. **Template Code**: Specifies how the creative should be rendered.
   
-      > [!NOTE]
-> If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [adnxs.com](http://adnxs.com/) references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [adnxs.com](http://adnxs.com/) or [adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
+       > [!NOTE]
+     > If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [adnxs.com](http://adnxs.com/) references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [adnxs.com](http://adnxs.com/) or [adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
 
-1. To add **custom macros**, expand the
-Custom macros section if necessary, click **Add Macros**, and
+1. To add custom macros, expand the
+**Custom macros** section if necessary, click **Add Macros**, and
 do the following.
 
    > [!NOTE]
@@ -58,9 +56,9 @@ do the following.
     1.  If you do not want the macro to be
         required, enter the **Default
         Value** that will be used when buyers do not complete the macro during creative uploads.
-5.  Repeat step 4 to add each individual custom
+1.  Repeat step 4 to add each individual custom
     macro.
-6.  Click **Save**.<br>
+1.  Click **Save**.<br>
 The new creative template is active by default and can be applied to new creatives.
 
 ## Related topics

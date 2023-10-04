@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Create a Custom Role
-description : Learn how to control users access To Microsoft Invest by creating a custom role.
+description : Learn how to control users access to Microsoft Invest by creating a custom role.
  
 ---
 
@@ -12,14 +12,12 @@ Custom roles allow you to control what a user sees in
 Microsoft Invest so they only see the parts of your
 business that you choose.
 
-
-
 Custom roles control the actions a user is allowed to take, such as the
 ability to view information or full permissions to modify that same
 information. For example, you may want an external sales house to have
 limited booking and reporting access. This page shows you how to create
 a custom role. For more information about roles, see [Working
-with Roles](working-with-roles.md)
+with Roles](working-with-roles.md).
 
 **Getting There**
 
@@ -31,7 +29,7 @@ with Roles](working-with-roles.md)
 
 - From the **Roles** management screen, in the
   **Custom Roles** section, click
-   **+New**
+   **+New**.
 - The **Create Role** screen will appear, where you can choose which permissions this custom role will have along with other details as mentioned below.
 
 **Basic Setup**

@@ -21,14 +21,11 @@ To configure a line item to buy Guaranteed Views:
 To configure a line item to buy Guaranteed Completes:
 
 1. Under Ad Type, select **Video**.
-
 1. Under Revenue Type, select **Cost Plus** or **CPCV**.
-
 1. Under Supply Strategy, select **Open Exchange** and/or **Deals**.
-
 1. Under Payment Model, select **Pay per Complete**.
 
-    After your Payment Model is configured, the line item is all set to
+After your Payment Model is configured, the line item is all set to
     bid and accrue media cost on an outcome basis (vCPM for Views and
     CPCV for Completes) instead of an impression (CPM) basis. See
     [Reporting on Guaranteed Outcomes](reporting-on-guaranteed-outcomes.md) for information on how to report on

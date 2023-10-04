@@ -4,13 +4,12 @@ description : Learn how to create an advertiser object  before you start running
 ---
 
 
-# Create an Advertiser in Microsoft Invest
-
+# Create an advertiser in Microsoft Invest
 
 Creating an advertiser object is the first step before you can start
 running ad campaigns and serving creatives on behalf of an advertiser.
 
-## Step 1. Start a New Advertiser
+## Step 1. Start a new advertiser
 
 On the **Advertisers** screen, click the
 **+ New** button.
@@ -21,7 +20,7 @@ screen, where you define all relevant details for your advertiser.
 > [!TIP]
 > You can expand or collapse each section of the screen. To expand or collapse all sections at once, click the **Expand All** or **Collapse All** link in the upper right.
 
-## Step 2. Fill Out Basic Setup
+## Step 2. Fill out basic setup
 
 In the **Basic Setup** section, enter the
 basic details for the advertiser.
@@ -40,10 +39,8 @@ basic details for the advertiser.
 
 - **Time Zone** - Select the advertiser's time zone.
   
-> [!NOTE]
-> To apply a time zone change to child objects, make sure the checkbox is selected. If it is not selected, the time zone change made to the advertiser will not apply to its child objects, resulting in a child object's budget being reset to a different time zone than the advertiser.
-
-  
+  > [!NOTE]
+  > To apply a time zone change to child objects, make sure the checkbox is selected. If it is not selected, the time zone change made to the advertiser will not apply to its child objects, resulting in a child object's budget being reset to a different time zone than the advertiser.
 
 - **Currency** - Select the currency for the advertiser. Typically, this
   defines the billing currency. This currency will be assigned to all
@@ -51,7 +48,7 @@ basic details for the advertiser.
   different currency is set on the insertion order or line item level.
   For more information, see [Currency Support](currency-support.md).
 
-- **Political Advertising** - If you are releasing advertisements
+- **Political advertising** - If you are releasing advertisements
   related to an election, ballot initiative, or political candidate in
   the United States, you must specify that here. You must also certify
   that all such advertising has been paid for, or will be paid for, with
@@ -76,7 +73,7 @@ basic details for the advertiser.
   advertisements when you [Create an Insertion Order](create-an-insertion-order.md). For more information about political advertising,
   see [Political Advertising](political-advertising.md).
 
-## Step 3. Create a Political Advertising Details Template (Optional)
+## Step 3. Create a political advertising details template (optional)
 
 > [!NOTE]
 > The Political Advertising Details Template is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
@@ -126,7 +123,7 @@ We reserve the right to implement additional screening at any time.
 | **City** | City of the person, group, organization, or business that is advertising. |
 | **Address** | Address of the person, group, organization, or business that is advertising. |
 
-## Step 4. Enter Advanced Settings
+## Step 4. Enter advanced settings
 
 In the **Advanced Settings** section,
 enter any optional advanced settings that are useful.
@@ -156,8 +153,8 @@ enter any optional advanced settings that are useful.
     the name but leave the rest of the fields blank. For more about
     receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](https://wiki.appnexus.com/display/finance/Understanding%2bYour%2bInvoice).
 
-> [!TIP]
-> You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
+    > [!TIP]
+    > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
 
     
 - **Brand Settings** - You can set a default brand and offer category to
@@ -178,17 +175,17 @@ enter any optional advanced settings that are useful.
    and/or the [Augmented Line
   Items (ALI)](augmented-line-items-ali.md).
 
-> [!WARNING]
-> Warning regarding preexisting line items If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
+  > [!WARNING]
+  > Warning regarding preexisting line items If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
 
-## Step 5. Save the Advertiser
+## Step 5. Save the advertiser
 
 To finish adding the advertiser to the platform, click the
 Save button. On the Advertiser Details
 screen, you can continue to set up more objects required to buy
 inventory for the advertiser.
 
-## Related Topic
+## Related topic
 
 - [Member Analytics
   Report](network-analytics-report.md)

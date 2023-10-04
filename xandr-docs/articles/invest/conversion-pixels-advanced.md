@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Conversion Pixels Advanced
-description : Learn about options available When creating and exporting conversion pixels.
+description : Learn about options available when creating and exporting conversion pixels.
 ---
 
 
@@ -20,12 +20,12 @@ option in Invest DSP when you export a pixel. Or
 you can convert a pixel manually by making two changes:
 
 1.  Replace "http" with "https".
-2.  The sub-domain should be "ib.adnxs.com".
+1.  The sub-domain should be "ib.adnxs.com".
 
 > [!WARNING]
 > On a secure page, only **secure** pixels can be used. In addition, non-secure pixels can only be placed on an **non-secure** page.
 
-## Segment Users Once They Have Converted
+## Segment users once they have converted
 
 You can add or remove a user from one or more segments at the same time
 the conversion pixel is fired. One case in which you might want to
@@ -42,15 +42,14 @@ This pixel adds the user to two segments, and removes them from one:
  <img src="media/px?id=8371&seg=12192,12304&remove=23145&t=2" width="1" height="1" /> 
 ```
 
-
 > [!NOTE]
 > There are two ways to add a user to a segment after a conversion:
 >1. Add a user at the same time the conversion pixel is fired
-> 1. Add a Segment pixel as a piggyback to the conversion pixel. 
+>1. Add a Segment pixel as a piggyback to the conversion pixel.
 >
 >It is preferable to use the first scenario, keeping the conversion and segment pixel as one call, over having the segment be a piggy back. There are several reasons for this. First only one call, rather then two, is made as the page loads reducing latency. Second if the user clicks away from the page before it fully loads it is possible for the conversion pixel to fire but not the piggybacked segment causing a mismatch. If you use the first scenario, you will not have a mismatch assuming you are not adding users to the segment some place else.
 
-## Use Conversion Pixel Parameters
+## Use conversion pixel parameters
 
 ## Order ID/SKU: order_id
 
@@ -68,7 +67,7 @@ You can report on this data using the
 <img src="media/px?id=1&order_id=[ORDER_ID]&t=2" width="1" height="1" /> 
 ```
 
-## Dynamic Revenue Values: value
+## Dynamic revenue values: value
 
 You can pass in dynamic revenue values which will show up in reporting
 as post-click and post-view revenue. This is most often used to pass in
@@ -88,11 +87,10 @@ level.
 <img src="media/px?id=1&value=[REVENUE]&t=2" width="1" height="1" /> 
 ```
 
-
 > [!WARNING]
 > The revenue value passed in must be a purely numerical value in order for it to be properly logged in reporting. For example, 10 would be valid, but $10 would not.
 
-## Redirect URL/Piggybacking: redir
+## Redirect URL/piggybacking: redir
 
 You can piggyback off the Xandr conversion pixel
 and notify your internal or third-party server about conversion events.
@@ -114,7 +112,7 @@ JavaScript. Please note that following restrictions:
   <img src="media/px?id=1&redir=[REDIRECT_URL]&t=2" width="1" height="1" /> 
   ```
 
-## Other External Data: other
+## Other external data: other
 
 You can include an extra field to pass into your pixel and then see this
 data in conversion reporting. This cannot be done using the "Export
@@ -131,7 +129,7 @@ to our Log-Level Data Feeds.
 <img src="media/px?id=1&other=[EXTERNAL_DATA]&t=2" width="1" height="1" /> 
 ```
 
-## Related Topics
+## Related topics
 
 - [Create a Conversion Pixel](create-a-conversion-pixel.md)
 - [Export Conversion Pixels](export-conversion-pixels.md)

@@ -26,9 +26,9 @@ evidence of a view or click of the advertiser's creative. If a view or
 click occurred within the lookback window, it is given credit for the
 conversion.
 
-## The Conversion Attribution Process
+## The conversion attribution process
 
-### Step 1. The user's browser loads the conversion landing page and fires 4the conversion pixel
+### Step 1. The user's browser loads the conversion landing page and fires the conversion pixel
 
 - If the conversion pixel is not associated with a member with an active
   contract, the conversion is UNATTRIBUTED
@@ -55,7 +55,7 @@ conversion.
   data includes a record of a view or click event within the
   user-specified lookback window, the conversion is ATTRIBUTED.
 
-## Attribution Examples
+## Attribution examples
 
 There are three types of conversion pixels: **View**, **Click**, and
 **Hybrid**. Each of the three pixel types is configured to use a
@@ -69,7 +69,7 @@ conversion pixel.
 > [!NOTE]
 > In all of the following examples, the phrases "last impression" or "last click" are shorthand for "the last impression or click event logged in the Xandr cookie stored in the user's browser".
 
-## View Conversion Pixel
+## View conversion pixel
 
 When using **View** conversion pixels, conversions are attributed to the
 last impression that occurs before the conversion. In the diagram below,
@@ -79,7 +79,7 @@ marked in green.
 
 ![Screenshot of imps only.](media/imps-only.png)
 
-## Click Conversion Pixel
+## Click conversion pixel
 
 When using **Click** conversion pixels, conversions are attributed to
 the last click that occurs before the conversion. In the diagram below,
@@ -89,7 +89,7 @@ conversion happens is credited, and is marked in green.
 ![Screenshot of Clicks Only.](media/clicks-only.png)
 
 
-## Hybrid Conversion Pixel, Single Lookback Window
+## Hybrid conversion pixel, single lookback window
 
 When using **Hybrid** conversion pixels, either views or clicks can be
 credited for conversions. The lookback window for views and clicks can
@@ -113,7 +113,7 @@ conversion, and is marked in green.
 ![Screenshot of Impressions and Clicks Same Lookback.](media/imps-and-clicks-same-lookback.png)
 
 
-## Hybrid Conversion Pixel, Separate Lookback Windows
+## Hybrid conversion pixel, separate lookback windows
 
 In the most common use case for **Hybrid** conversion pixels,
 impressions are given a much shorter lookback window than clicks. This
