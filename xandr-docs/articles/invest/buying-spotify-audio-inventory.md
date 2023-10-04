@@ -3,7 +3,7 @@ title: Microsoft Invest - Buying Spotify Audio Inventory
 description: This article provides information on spotify audio, including creative specifications, audio inventory targeting, available supply, deals, and reporting options.
 ---
 
-# Buying spotify audio inventory in Microsoft Invest
+# Microsoft Invest - Buying spotify audio inventory
 
 This page provides specific information for **Spotify Audio** which includes, creative specifications, setting up a line item to target **Spotify** audio inventory, information regarding the available supply, what data is available through deals and reporting options.
 

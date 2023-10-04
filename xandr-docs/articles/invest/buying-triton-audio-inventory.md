@@ -1,5 +1,5 @@
 ---
-title: Micrsoft Invest - Buying Triton Audio Inventory
+title: Microsoft Invest - Buying Triton Audio Inventory
 description: In this article, you’ll find information on the Triton Audio Ad Exchange, including testing ads and setting up a line item to target audio inventory. 
 ---
 

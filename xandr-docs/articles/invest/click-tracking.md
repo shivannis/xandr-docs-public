@@ -1,5 +1,5 @@
 ---
-title    : Microsoft Invest - Click Tracking
+title: Microsoft Invest - Click Tracking
 description: This article explains about tracking clicks. Click tracking helps the ad serving industry to optimize CPC and CPA goals, bidding, and measuring campaign success.
 ---
 
@@ -13,10 +13,11 @@ In order for Xandr to track a click to the corresponding impression, a click tra
 
 1. There is a redirect to the webpage that follows the click tracker. For example:
 
-    ```https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.appnexus.com```
+    ```http
+    https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.appnexus.com
+    ```
 
     In this example, the Xandr click tracker is followed by the Xandr homepage. When the link is loaded, a click is recorded on Xandr, and then there is a redirect to the Xandr homepage.
-
 
 ## Tracking clicks on hosted creatives
 
@@ -37,16 +38,22 @@ A simple third-party tag is made up of two parts:
 
 For example:
 
-```<a href="https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>```
+```http
+<a href="https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+```
 
 The anchor tag contains a "href" or hyperlink reference, which in this case is cnn.com. When the creative is clicked, the browser will redirect to cnn.com. The landing page will load as specified by the `target` parameter, which in this case is "\_blank", to indicate that the page should load in a new window or tab. In order for a third-party tag to track clicks, the `${CLICK_URL_ENC}` macro must be implemented. When an impression is delivered, the macro will be replaced with a dynamically-generated click tracker. The click tracker loads only when the creative is clicked. To achieve this, the macro should be placed right before the creative's landing page as shown here:
 
-```<a href="${CLICK_URL_ENC}https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>```
+```http
+<a href="${CLICK_URL_ENC}https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+```
 
 When an image is clicked, the "href" page loads. A click is tracked on Xandr and followed by a redirect to
 https://www.cnn.com. For example:
 
-```<a href="https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>```
+```http
+<a href="https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.cnn.com" target="_blank"><img src="media/Ad-MediumRectangle-300x250.png" width="300" height="250"></a>
+```
 
 After the user is redirected to the href, such as https://www.cnn.com, the following takes place:
 
@@ -63,15 +70,21 @@ For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include o
 
 Although an encoded version is available for certain ad servers, you'll most likely want to include the `${CLICK_URL}` macro. For example:
 
-```https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?```
+```http
+https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?
+```
 
 Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Xandr to the user's browser, the impression bus will replace `${CLICK_URL}` with the actual click Xandr URL, which is easily identified by the large number of capital A's present in the string. The Xandr click URL will look something like this:
 
-```https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=```
+```http
+https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=
+```
 
 Therefore, the expanded DoubleClick content will look as follows:
 
-```https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?```
+```http
+https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=;ord=1330398521?
+``````
 
 The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad
 server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, in [Supported Creative Macros](./supported-creative-macros.md), see the table listing macros that can be used in creative third-party tags and landing page URLs.

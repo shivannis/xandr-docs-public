@@ -1,9 +1,9 @@
 ---
-title: Micrsofot Invest - Buying Seedtag Inventory
-description: In this article, you'll learn how to display your creative via Seedtag inventory. Seedtag inventory is available programmatically through Xandr.
+title: Microsoft Invest - Buying Seedtag Inventory
+description: In this article, you'll learn how to display your creative via Seedtag inventory. Seedtag inventory is available programmatically.
 ---
 
-# Buying seedtag inventory in Microsoft Invest
+# Microsoft Invest - Buying seedtag inventory
 
 > [!NOTE]
 > [Buying Native Inventory](./buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single line item. Scaling is the approach we recommend over the seller-specific settings shown here.
