@@ -21,7 +21,7 @@ your client's goals. ALI delivers the following benefits to traders:
 - Powerful optimization.
 - Optimal utilization of budget while reaching an optimized state.
 - Access to the streamlined Programmable Splits interface which allows
-  you to leverage the power of [custom models](custom-models.md) (formerly
+  you to leverage the power of [custom models](../data-science-toolkit/custom-models.md) (formerly
   AppNexus Programmable Bidder) and execute
   highly-customized trading strategies. This enables you to achieve your
   client's goals without needing to write code.
