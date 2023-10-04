@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buy an ESPN Inventory
-description: In this article, learn how to buy an ESPN inventory serving OTT inventory On Demand on CTV or ESPN Live Streaming Video.
+description: In this article, learn how to buy an ESPN inventory serving OTT inventory On Demand on CTV or ESPN live streaming video.
 ---
 
 # Microsoft Invest - Buy an ESPN inventory
