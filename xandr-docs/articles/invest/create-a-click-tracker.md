@@ -15,7 +15,7 @@ you to attach a "piggyback pixel" to a creative when you upload it. The
 click tracker is meant to be uploaded as a piggyback pixel so that when
 that creative is clicked, the click tracker will load as well and let
 Xandr know that a click took place. You can
-report on these clicks using the [Clicktrackers Feed](../../xandr-api/clicktrackers-feed.md).
+report on these clicks using the [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md).
 
 ## Step 1. Create a click tracker
 
@@ -98,4 +98,4 @@ and their definitions.
 
 ## Related topics
 
-- [Clicktrackers Feed](../../xandr-api/clicktrackers-feed.md)
+- [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md)

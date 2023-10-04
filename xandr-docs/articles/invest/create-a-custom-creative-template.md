@@ -36,29 +36,28 @@ information, see [Duplicate an Existing Custom Creative Template](duplicate-an-e
 do the following.
 
    > [!NOTE]
-> You can add up to 20 custom macros. If the template is being used by any active creatives, you cannot add additional custom macros.
+   > You can add up to 20 custom macros. If the template is being used by any active creatives, you cannot add additional custom macros.
 
     1. Enter a name for this macro in the **Name** field that buyers will see when they upload creatives that use this template.<br>The **Name** field is limited to a maximum of 50 characters.
-    1.  Select a macro type from the **Type** pull-down menu such as **String** and **True / False**. <br> For example, if you select **True /
+    1. Select a macro type from the **Type** pull-down menu such as **String** and **True / False**. <br> For example, if you select **True /
         False**, buyers will see the macro name followed by a
         checkbox.
 
-    1.  If you selected **Select from List**, enter a
+    1. If you selected **Select from List**, enter a
         value for **Option 1**.<br>
         To add more options, click **Add
         another option** and enter the corresponding value.
 
-        
-    1.  If you want to require buyers to complete
+    1. If you want to require buyers to complete
         the macro when uploading new creatives that use this template,
         click the **Required**
         checkbox.
-    1.  If you do not want the macro to be
+    1. If you do not want the macro to be
         required, enter the **Default
         Value** that will be used when buyers do not complete the macro during creative uploads.
-1.  Repeat step 4 to add each individual custom
+1. Repeat step 4 to add each individual custom
     macro.
-1.  Click **Save**.<br>
+1. Click **Save**.<br>
 The new creative template is active by default and can be applied to new creatives.
 
 ## Related topics

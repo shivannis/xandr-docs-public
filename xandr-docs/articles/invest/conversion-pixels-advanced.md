@@ -61,7 +61,7 @@ flows into the reporting tables. You can put letters and numbers in an
 order ID and there is a 36 character limit.
 
 You can report on this data using the
-[Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [Log-Level Data Feeds](../../log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data.
+[Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [log-level-data](../log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data.
 
 ``` pre
 <img src="media/px?id=1&order_id=[ORDER_ID]&t=2" width="1" height="1" /> 
@@ -122,7 +122,7 @@ and there is a 20 character limit.
 
 You can report on this data using the
 [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) as well as the
-[Log-Level Data Feeds](../../log-level-data/log-level-data-feeds.md), if you subscribe
+[Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md), if you subscribe
 to our Log-Level Data Feeds.
 
 ``` pre

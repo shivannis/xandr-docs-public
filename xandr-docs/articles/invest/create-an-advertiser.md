@@ -156,13 +156,12 @@ enter any optional advanced settings that are useful.
     > [!TIP]
     > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
 
-    
 - **Brand Settings** - You can set a default brand and offer category to
   be assigned to all creatives added under this advertiser. If you
   submit a creative for Xandr audit, the audit
   team will validate and, when necessary, alter these settings.
 - **Exclusions** - for publishers using Invest
-  DSP's [AST](../../seller-tag/seller-tag.md) - Managed publishers can conduct
+  DSP's [AST](../seller-tag/seller-tag.md) - Managed publishers can conduct
   a single auction for multiple ad slots on a page. Competitive
   exclusions ensure that creatives from competitive brands (e.g., Coke
   and Pepsi) and competitive offer categories never serve alongside each
