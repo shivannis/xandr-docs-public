@@ -13,10 +13,10 @@ include:
 
 This report can break down performance along the following geographic boundaries:
 
-- **Country**: The user's [Country](../xandr-api/country-service.md).
-- **Region/State**: The user's [Region](../xandr-api/region-service.md), e.g., Baja California or California.
-- **Metro Code**: The user's [Metro Code](../xandr-api/designated-market-area-service.md).
-- **Political Districts**: The user's [Political District](../xandr-api/political-district-service.md) (US Only).
+- **Country**: The user's [Country](../digital-platform-api/country-service.md).
+- **Region/State**: The user's [Region](../digital-platform-api/region-service.md), e.g., Baja California or California.
+- **Metro Code**: The user's [Metro Code](../digital-platform-api/designated-market-area-service.md).
+- **Political Districts**: The user's [Political District](../digital-platform-api/political-district-service.md) (US Only).
 
 For more information on the available data fields and their definitions, see [Dimensions](#dimensions) and [Metrics](#metrics) below.
 
@@ -168,7 +168,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name

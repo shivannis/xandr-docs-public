@@ -22,6 +22,6 @@ To buy OTT inventory serving on ESPN Video On Demand on CTV or ESPN Live Streami
     > [!NOTE]
     > ESPN Live Streaming Video on Desktop, Mobile App and CTV also requires the creative to be non-skippable. For more detailed information, see the creative guidelines on the [ESPN website](http://www.espn.com/adspecs/US/espn/index.html).
 
-## Related topics
+## Related topic
 
 - [OTT Video Creative Specifications](ott-video-creative-specifications.md)

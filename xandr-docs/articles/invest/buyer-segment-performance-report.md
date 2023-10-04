@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buyer Segment Performance Report
-description: Use the Buyer Segment Performance report to understand segment performance within an advertising campaign. The report offers insights on the segment engagement and conversions.
+description: Use the Buyer Segment Performance report for insights on segment engagement, performance, and conversions within your advertising campaign.
 ---
 
 # Microsoft Invest - Buyer Segment Performance report
@@ -11,7 +11,9 @@ This report provides buyers with segment performance across multiple ad campaign
 - Filter for specific conversion pixels to further identify how these segments contribute to your overall buying strategy.
 
 > [!NOTE]
-> **Impressions across user segments:** Since this report aggregates impressions served by user segment, impressions associated with users present in multiple segments will be counted more than once. The purpose of this report is to analyze user segments, not individual user counts. The report is set to automatically group by segment.
+> **Impressions across user segments:**
+>
+> Since this report aggregates impressions served by user segment, impressions associated with users present in multiple segments will be counted more than once. The purpose of this report is to analyze user segments, not individual user counts. The report is set to automatically group by segment.
 
 ## Time frame
 
@@ -150,7 +152,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
@@ -159,7 +161,7 @@ Follow these steps to run your report.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
-## **Related topics**
+## Related topics
 
 - [Reporting Guide](reporting-guide.md)
 - [Working with Segments](working-with-segments.md)

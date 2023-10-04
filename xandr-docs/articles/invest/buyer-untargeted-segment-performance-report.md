@@ -106,7 +106,7 @@ Reports automatically group by all selected dimensions.
 | Cost eCPA | money | 1.1111 | media_cost / total_convs | The cost per acquisition/conversion. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Cost eCPC | money | 123.45 | Cost/Clicks | The cost per click. |
 | Profit eCPM | money | 0.4949 | **During the transition period:** (Booked Revenue - Media Cost) / Imps * 1000 <br/> **After the transition period:** (Booked Revenue - Total Cost) / Imps * 1000 | Profit per thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Commissions | money | 0 | **During the transition period:** Commissions + equivalent partner_fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to partner_fees. Previous data will not be impacted. | Fees that come out of the booked revenue. <br/> **During the transition period:** Commissions + equivalent partner fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to partner fees. Previous data will not be impacted. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Commissions | money | 0 | **During the transition period:** Commissions + equivalent partner_fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to **partner_fees**. Previous data will not be impacted. | Fees that come out of the booked revenue. <br/> **During the transition period:** Commissions + equivalent partner fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to partner fees. Previous data will not be impacted. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 
 ## To run your report
 
@@ -131,7 +131,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../xandr-api/report-service.md) for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name
