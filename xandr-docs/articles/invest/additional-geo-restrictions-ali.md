@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Additional Geo Restrictions
-description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions make it easier to customize content delivery based on specific geographic criteria. 
+description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions help in customizing content delivery. 
 ---
 
 # Microsoft Invest - Additional Geo restrictions

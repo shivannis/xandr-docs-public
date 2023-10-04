@@ -52,6 +52,6 @@ Using the Inventory Library, buyers can add premium video catalog (PVC) deals to
 
     The selected PVC deals are now active. For more information about deal lists, see [Deal Lists](deal-lists.md).
 
-## Related topics
+## Related topic
 
 - [Inventory Library](inventory-library.md)

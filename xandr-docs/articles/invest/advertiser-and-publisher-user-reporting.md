@@ -11,7 +11,7 @@ For instructions on how to give advertiser users access to reporting, see [Creat
 
 > [!IMPORTANT]
 > Conversion-related data in reports is processed asynchronously. As a result, reports are available more quickly, while some conversion-related data is still being processed in the background. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
-> [!IMPORTANT]
+>
 > The **Metrics** are shown from the advertiser's perspective, so the **Revenue** field displays the advertiser's revenue (not the Member's).
 
 ## Metrics
