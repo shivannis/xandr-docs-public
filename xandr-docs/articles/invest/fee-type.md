@@ -1,17 +1,11 @@
 ---
-Title : Fee Type
-Description : When creating a
-<a href="partner-fees.md" class="xref">partner fee</a>, you can use
+title: Microsoft Invest - Fee Type
+description: In this article, learn the different types of partner fees that you can create to reserve a portion of your budget.
 ---
 
+# Microsoft Invest - Fee type
 
-# Fee Type
-
-
-
-When creating a
-<a href="partner-fees.md" class="xref">partner fee</a>, you can use
-fee types to categorize fees by purpose.
+When creating a [partner fee](partner-fees.md), you can use fee types to categorize fees by purpose.
 
 Supported types are:
 
@@ -24,9 +18,4 @@ Supported types are:
 - Viewability
 - Other
 
-We recommend that you include additional details in the fee name or
-description, especially for fees of type "Other".
-
-
-
-
+We recommend that you include additional details in the fee name or description, especially for fees of type "Other".
