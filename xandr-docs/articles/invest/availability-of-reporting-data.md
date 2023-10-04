@@ -36,7 +36,7 @@ A few facts to keep in mind about scheduled reports:
 
 ## Saved reports
 
-You can save and view up to 200 reports in the UI. To retrieve a full list of saved reports, use the API [Saved Report Service](saved-report-service.md).
+You can save and view up to 200 reports in the UI. To retrieve a full list of saved reports, use the API [Saved Report Service](../digital-platform-api/saved-report-service.md).
 
 ## Related topics
 
