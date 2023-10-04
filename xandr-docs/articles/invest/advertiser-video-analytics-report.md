@@ -97,6 +97,7 @@ Data in this report is retained for 420 days.
 | Video Program Type | No | The higher level categorization of the video program's format on which the ad will be played. For example, Movie, Series, Special, Show, Event, Clip, etc.|
 
 > [!NOTE]
+>
 > - You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
 > - The data for the following video related dimensions are only available if the publisher has implemented video taxonomy:
     > - Video Content Duration
@@ -167,6 +168,7 @@ Data in this report is retained for 420 days.
 | Average View Time Percent | The average view time expressed as a percentage of the total possible view time. |
 
 > [!NOTE]
+>
 > - When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 > - The data for Video Content Duration metric are only available if the publisher has implemented video taxonomy.
 
