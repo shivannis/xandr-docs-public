@@ -12,7 +12,7 @@ deals with sellers:
   inventory and/or data and immediately convert them into deals or use them as a jumping-off point for custom deal negotiations.
 - **[Negotiate Deals with Sellers](negotiate-deals-with-sellers.md)**: If you don't find packages that meet your needs, kick off negotiations for one-off deals with sellers.
 
-Use the links below to learn more and get started.
+Use the links below to learn more and get started:
 
 - **[Manage Your Deals with Sellers](manage-your-deals-with-sellers.md)**: Use the Deals screen to view the details of all your existing deals, monitor each deal's health, and trigger detailed reports.
 - **[Control Your Deals with Sellers](control-your-deals-with-sellers.md)**: Use the Deals screen to control deals received from sellers.
