@@ -1,10 +1,10 @@
 ---
-title : Microsoft Invest - Create a Third-Party Member Pixel for Your Creatives
+title : Microsoft Invest - Create a Third-Party Network Pixel for Your Creatives
 description : Learn to create third-party creative pixels at the advertiser level and then apply these pixels to some or all display creatives under that Member.
 ---
 
 
-# Create a third-party member pixel for your creatives in Microsoft Invest
+# Create a third-party network pixel for your creatives in Microsoft Invest
 
 You can create third-party creative pixels at the advertiser level and
 then apply these pixels to some or all display creatives under that
