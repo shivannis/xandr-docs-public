@@ -1,11 +1,11 @@
 ---
 title: Microsoft Invest - Device Type Targeting
-description: In this article, learn about device type targeting, which focuses on delivering ads to specific device categories, such as smartphones, tablets, desktop computers, or smart TVs.
+description: Learn about device type targeting, that focuses on delivering ads to specific device categories, such as smartphones, tablets, desktop computers, or smart TVs.
 ---
 
 # Microsoft Invest - Device type targeting
 
-To access device type targeting options, expand the Targeting section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md#ProfileService-DeviceTypeTargets) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](device-analytics-report.md).
+To access device type targeting options, expand the Targeting section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md#device-type-targets) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](device-analytics-report.md).
 
 - **Desktops**
   - corresponds to `pc` in the profile api service

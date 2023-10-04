@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Device Analytics Report
-description: In this article, learn abput the Device Analytics report to access performance data from both the buy-side and sell-side, where impressions were delivered.
+description: In this article, learn about the Device Analytics report to access performance data from both the buy-side and sell-side, where impressions were delivered.
 ---
 
 # Microsoft Invest - Device Analytics report
@@ -162,7 +162,7 @@ Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
     1. Or, from the Publishers top menu, click on **Prebid Server Premium &gt; Analytics &gt; Prebid Server Analytics**
-1. Select the relevant **report** from the list. The Report screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).

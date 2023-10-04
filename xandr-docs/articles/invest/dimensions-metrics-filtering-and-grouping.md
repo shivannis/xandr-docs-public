@@ -13,7 +13,7 @@ This page outlines how to design your reports so that you can:
 
 - Get your results more quickly; requesting smaller data sets often increases reporting performance.
 
-  Every report returns a collection of data. In this document, this collection of data is referred to as a data set; these data sets are described in terms of dimensions and metrics.
+Every report returns a collection of data. In this document, this collection of data is referred to as a data set; these data sets are described in terms of dimensions and metrics.
 
 Similarly, when you are configuring a report, you can choose to filter the data set.
 
@@ -28,7 +28,7 @@ The key recommendations of this document are as follows:
 | **Dimensions** | Dimensions are things the data set describes, such as advertisers, publishers, line items, or domains. In other words, dimensions are what the data set is about. |
 | **Metrics** | Metrics are numbers that measure the performance of the dimensions you've selected. Examples include:<br> - How many impressions came through this publisher?<br> - What is the click-through rate across this campaign's creatives? |
 | **Filtering** | Filtering removes dimensions you don't care about. This reduces the size of the data set. For example, you might want to see only those impressions that occurred on weekends in a certain region of France.<br> **Tip:** Filter out as much irrelevant data as possible – smaller data is faster data. |
-| **Grouping** | Reports automatically group by all selected dimensions. Grouping causes the dimensions to be output in a specific order. This can be useful for understanding relationships between dimensions. For example, you can see how the different line items under an advertiser are performing.<br>Since the report automatically applies grouping to dimensions, selecting many dimensions can generate a very large data set. For every additional dimension you select, the data set becomes larger.<br> **Tip:** Select as few dimensions as possible. The more dimensions you select, the larger the data set becomes. |
+| **Grouping** | Reports automatically group by all selected dimensions. Grouping causes the dimensions to be output in a specific order. This can be useful for understanding relationships between dimensions. For example, you can see how the different line items under an advertiser are performing.<br> Since the report automatically applies grouping to dimensions, selecting many dimensions can generate a very large data set. For every additional dimension you select, the data set becomes larger.<br> **Tip:** Select as few dimensions as possible. The more dimensions you select, the larger the data set becomes. |
 
 ## Visualizing the process
 
@@ -40,11 +40,11 @@ In **Step 2**, the data set is automatically grouped by the selected dimensions.
 
 In **Step 3**, our systems generate the report. You have the option to view the report, have it run in the background or have it exported and emailed to you (in CSV or Excel format). This goes more quickly with smaller data sets.
 
-:::image type="content" source="media/filtering-and-grouping.png" alt-text="Diagram of the process.":::
+:::image type="content" source="media/filtering-and-grouping.png" alt-text="Diagram of the filtering and grouping process.":::
 
 ## A tiny example database
 
-All of the examples below will use the same underlying "database", which contains two dimensions,:**Advertiser** and **Line Item**; and two metrics: **Impressions** and **Clicks**. Here it is in its entirety:
+All of the examples below will use the same underlying "database", which contains two dimensions: **Advertiser** and **Line Item**; and two metrics: **Impressions** and **Clicks**. Here it is in its entirety:
 
 | ID | Advertiser | Line Item | Impressions | Clicks |
 |:---|:---|:---|:---|:---|

@@ -5,29 +5,30 @@ description: In this article, learn how to target a specific as well as all deal
 
 # Microsoft Invest - Deal targeting (ALI)
 
-By selecting **Deals** in the **Inventory & Brand Safety Targeting > Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you can target all deals from sellers or specific deals/deal lists from one or more sellers.
+By selecting **Deals** in the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you can target all deals from sellers or specific deals/deal lists from one or more sellers.
 
 ## Target deals and deal lists
 
-When you select the **Deals** option in the **Inventory & Brand Safety Targeting > Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you will have the option to target either all the available deals for that line item, or specific deals from sellers using the configurations detailed below.
+When you select the **Deals** option in the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you will have the option to target either all the available deals for that line item, or specific deals from sellers using the configurations detailed below.
 
 **To target all deals available to you:**
 
-1. In the **Inventory & Brand Safety Targeting > Supply Source** subsection, select **Deals** under **Supply Source**.
+1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** under **Supply Source**.
 1. Select **All Deals**.
 
 **To target specific deals available to you:**
 
-1. In the **Inventory & Brand Safety Targeting > Supply Source** subsection, select **Deals** in the **Supply Source** section.
+1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** in the **Supply Source** section.
 
 1. Select **Specific Deals**.
 
     A pull-down menu displays with **Deals** selected by default.
 
 1. To target specific deals, select one of the following targeting options and complete the corresponding steps:
+
     | Targeting Option | Steps |
     |:---|:---|
-    | Deals | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by clicking the green check, or exclude deals by clicking the red dash.<br> **Tip:** You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
+    | Deals | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**.<br> **Tip:** You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
     | Deal Lists | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**. |
 
     > [!NOTE]
