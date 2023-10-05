@@ -80,7 +80,7 @@ To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** via Augmented Line Item - Programmatic Splits:
 
-1. Leave the default device type selected and Inventory Type should be set to Apps & Web
+1. Leave the default device type selected and Inventory Type should be set to Apps & Web.
 1. On the Programmatic Split – Select Publisher and add **348882** & **336212** for desktop and phone apps respectively for inclusion.
 1. Click **Add**.
 
@@ -121,7 +121,7 @@ To maximize reach across Windows App inventory, we recommend targeting both Supp
 ## Packages and deals
 
 Packages are a great way to leverage Microsoft user data with your campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork
-offer a few packages broken out by content category such as entertainment, games, and news. See [Buying Microsoft Deals](buying-microsoft-deals.md) for more.
+offer a few packages broken out by content category such as entertainment, games, and news. For more information, see [Buying Microsoft Deals](buying-microsoft-deals.md).
 
 ## Extra information
 
