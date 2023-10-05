@@ -12,8 +12,7 @@ From the Member menu, you can control who receives email notifications from Xand
 
 ## Safety budget
 
-For setting recipients for daily safety budget notifications, see [Capping Daily Spend on Third-Party Inventory (Safety
-Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md).
+For setting recipients for daily safety budget notifications, see [Capping Daily Spend on Third-Party Inventory (Safety Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md).
 
 ## Audit notification
 
@@ -21,9 +20,9 @@ Enter the recipients who should receive a notification when Xandr audits a creat
 
 ## Sherlock and object limit notification
 
-Enter the recipients who should receive a notification when Sherlock scans a creative belonging to this member. The notification includes the creative's audit status and any reasons why the creative has not passed audit. See [Sherlock: Creative Quality Control](sherlock-creative-quality-control.md) for more information.
+Enter the recipients who should receive a notification when Sherlock scans a creative belonging to this member. The notification includes the creative's audit status and any reasons why the creative has not passed audit. For more information, see [Sherlock: Creative Quality Control](sherlock-creative-quality-control.md).
 
-These recipients will also receive object limit notifications, sent when you reach 85, 95, and 100 percent of your limit for an object. See [Viewing Your Object Limits](viewing-your-object-limits.md) for more information.
+These recipients will also receive object limit notifications, sent when you reach 85, 95, and 100 percent of your limit for an object. For more information, see [Viewing Your Object Limits](viewing-your-object-limits.md).
 
 ## Inventory deactivation & toolbar flag notification
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Identity Platform Login
-Description : In this article, explore an overview of authenticating users for advertising products using Microsoft Identity Platform.
+description: In this article, explore an overview of authenticating users for advertising products using Microsoft Identity Platform.
 ---
 
 # Microsoft Invest - Identity Platform login
@@ -48,7 +48,7 @@ Xandr's integration with the Microsoft Identity Platform allows users to authent
 
 **Azure Active Directory supported SSO** (Preferred Method)
 
-Microsoft Identity Platform enables organizations to authenticate their users to various cloud and on-premise solutions using the same set of credentials. Couple of Xandr customers are already integrated and they can utilize the Microsoft Identity Platform SSO solution without any additional configuration. If you are yet to be integrated with Microsoft Identity Platform, you can learn more about Azure Active Directory and Single Sign On [here](https://www.microsoft.com/en-us/security/business/identity-access/azure-active-directory-single-sign-on).
+Microsoft Identity Platform enables organizations to authenticate their users to various cloud and on-premise solutions using the same set of credentials. Couple of Xandr customers are already integrated and they can utilize the Microsoft Identity Platform SSO solution without any additional configuration. If you are yet to be integrated with Microsoft Identity Platform, you can learn more about Azure Active Directory and Single Sign On [here](https://www.microsoft.com/security/business/identity-access/azure-active-directory-single-sign-on).
 
 **Personal Microsoft Accounts**
 
@@ -62,8 +62,8 @@ details about this process, click [here](https://account.microsoft.com/account/A
     - If you have corporate managed account which is used to login to other Microsoft products, this should already be configured.
     - If your corporate domain is not managed, you can register your email as a Microsoft Account [here](https://account.microsoft.com/account/Account) or from the sign in page.
 1. Ensure that the email associated to your Xandr platform account matches the user principal name or email used to login to Microsoft. Contact the designated person with the role of **User Manager** from your organization to do the needful by following the below mentioned steps:
-    - go to the **User Management** module in a Xandr product
-    - update the email IDs of users to match the user principal names or email IDs of the Microsoft Account or Azure Active Directory integration
+    - Go to the **User Management** module in a Xandr product.
+    - Update the email IDs of users to match the user principal names or email IDs of the Microsoft Account or Azure Active Directory integration.
 
 ## Related topic
 

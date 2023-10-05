@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Identity Platform Login Troubleshooting
-Description : In this article, explore the different scenarios where users might have questions while using the Microsoft Identity Platform.
+description: In this article, explore the different scenarios where users might have questions while using the Microsoft Identity Platform.
 ---
 
 # Microsoft Invest - Identity Platform login troubleshooting
@@ -13,8 +13,8 @@ You can register for a free Microsoft Personal Account with any existing email y
 
 If you company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 
-- [Azure Active Directory](https://azure.microsoft.com/en-us/products/active-directory)
-- [Single Sign On](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Azure Active Directory](https://azure.microsoft.com/products/active-directory)
+- [Single Sign On](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 ## After logging into a Xandr product, I receive an error saying my email does not match any accounts and I don't have access
 
@@ -37,7 +37,7 @@ Xandr suggests updating the account's email address to that of an individual per
 
 This scenario signifies that the email or user principal name used to sign in to Microsoft does not match the user or account you are looking for. Troubleshooting of this issue requires updating the users registered in the Xandr platform to match the email address or user principle name that you use to sign into Microsoft.
 
-You can contact the designated person with the role of User Manager in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Xandr Account Representative or Xandr Support at [https://help.xandr.com](https://help.xandr.com/).
+You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Xandr Account Representative or Xandr Support at [https://help.xandr.com](https://help.xandr.com/).
 
 ## Microsoft Identity Platform says I must have an admin consent to permissions and won't let me sign in
 

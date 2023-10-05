@@ -50,8 +50,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 This report can retrieve data for the last 33 days.
 
@@ -64,7 +63,7 @@ This report can retrieve data for the last 33 days.
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). |
 | Impression Type | Yes | The type of impression. For more information, see [Impression Types](#impression-types). |
-| Conversion Pixel | Yes | The conversion pixel which was fired in this conversion event. For more information about conversion pixels, see [Working with Conversion Pixels](working-with-conversion-pixels). |
+| Conversion Pixel | Yes | The conversion pixel which was fired in this conversion event. For more information about conversion pixels, see [Working with Conversion Pixels](working-with-conversion-pixels.md). |
 | Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Order ID | No | The order ID or SKU optionally passed in the conversion pixel. If your advertiser is passing in an order ID when the conversion pixel fires, you could send a full list of order IDs back to them to help with conversion attribution. For more information, see [Conversion Pixels Advanced](conversion-pixels-advanced.md). |
@@ -76,7 +75,7 @@ This report can retrieve data for the last 33 days.
 | Item IDs | No | The list of item IDs logged by Universal Pixel through the Item ID parameter. |
 | Item Names |  | The list of item names logged by Universal Pixel through the Item Name parameter. |
 | Item Types | No | The list of item types logged by a Universal Pixel through the Item Type parameter. |
-| Traffic Type | Yes | The source of the traffic that caused the Universal Pixel to fire. Possible Values are WEB and APP |
+| Traffic Type | Yes | The source of the traffic that caused the Universal Pixel to fire. Possible Values are `WEB` and `APP`. |
 | Universal Pixel | Yes | The UUID of the Universal Pixel associated with a conversion. |
 
 ### Impression types

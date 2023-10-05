@@ -15,7 +15,7 @@ If you're migrating from [Broker Fees](broker-fees.md), you'll find partner fees
 - Partner fees cannot be applied to insertion orders.
 
 All serving fees on existing augmented line items have already been converted to partner fees. You can view them in the
-**Fees** section of the line item. If you have Member-level access, hover over your member name in the upper-right corner of the menu bar and click **Fees** to access the Fees screen.
+**Fees** section of the line item. If you have Member-level access, hover over your member name in the upper-right corner of the menu bar and click **Fees** to access the **Fees** screen.
 
 ## Reporting changes
 
@@ -53,7 +53,7 @@ The changes for each report are summarized in the tables below.
 
 | Metric | During the Transition Period | After the Transition Period |
 |:---|:---|:---|
-| Partner Fees | The total amount of third-party costs, budgeted using Partner Fees, that have accrued on an augmented line item over the reported period of time. | Same |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
 | Commissions | Commissions + equivalent partner fees<br> **Note:** Third-party fees will not be double-counted | $0.<br> Previous data will not be impacted. |
 | Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br> **Note:** Third-party fees will not be double-counted in the partner fees field. | Same |
 | Total Cost eCPM | (total cost / imps) * 1,000 | Same |

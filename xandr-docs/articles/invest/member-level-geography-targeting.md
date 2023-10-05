@@ -30,9 +30,9 @@ To add a country:
 
 1. Click **Save**.
 
-1. To remove a country:
+To remove a country:
 
-    From the **Edit Geography Targeting** window, click the X to the right of any country in the **Selected** list you want to remove.
+1. From the **Edit Geography Targeting** window, click the X to the right of any country in the **Selected** list you want to remove.
 
 1. Click **Save**.
 

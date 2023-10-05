@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Managing User Logins and Permissions
-description: In this article, explore essential resources for managing and controlling user logins and permissions effectively.
+description: In this article, learn how to manage, create, and edit a member user, and explore essential resources for managing and controlling user logins and permissions.
 ---
 
 # Microsoft Invest - Managing user logins and permissions
@@ -9,7 +9,7 @@ The pages mentioned in this section describe how to create and manage your users
 
 With consolidation of Xandr to Microsoft family, we have integrated the authentication process of the users (who are using Xandr products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able use to access Xandr applications using the same sign-on methods to access other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
 
-For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
+For more details, see [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
 ## How tos
 
@@ -31,7 +31,7 @@ For more details, visit [Microsoft Identity Platform Login](microsoft-identity-p
 
 - [Microsoft Invest Roles](xandr-invest-dsp-roles.md)
 
-  Roles specific to Microsoft Invest
+  Roles specific to Microsoft Invest.
 
 ## References
 

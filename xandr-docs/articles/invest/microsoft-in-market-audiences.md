@@ -33,5 +33,5 @@ Due to the proprietary nature of this data, there will be a set of data protecti
 | Area of Impact | Description of Impact |
 |:---|:---|
 | Measurement | There are no measurement integrations currently supported when using Microsoft Audiences. |
-| Creative | - Creatives must be hosted, non-HTML5<br> - 3rd party pixels will be blocked at auction time<br> - Segment pixels will be blocked at auction time |
+| Creative | - Creatives must be hosted, non-HTML5. <br> - 3rd party pixels will be blocked at auction time. <br> - Segment pixels will be blocked at auction time. |
 | Reporting | Log level data feeds containing auction data will have the following set of fields obfuscated or removed completely:<br> - Time stamp<br> - User ID 64<br> - IP Address<br> - Operating System<br> - Browser<br> - Latitude<br> - Longitude<br> - Device ID<br><br> The **Advertiser Attributed Conversions** report will have the following set of fields obfuscated or removed for impression events associated with line items targeting Microsoft Audiences:<br> - Time stamp<br> - Auction ID |
