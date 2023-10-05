@@ -45,9 +45,3 @@ For more information, see the following topics:
   the media types that we support for banner creatives. You need to
   apply a media type to the creative before you can associate it with
   the appropriate standard and custom creative templates
-
-
-
-
-
-

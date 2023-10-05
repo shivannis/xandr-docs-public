@@ -1,7 +1,6 @@
 ---
-Title : Microsoft Invest - Creative Standards
-Description : Xandr has foundational policies that all
-creative and inventory content must follow. Creatives that violate these
+title : Microsoft Invest - Creative Standards
+description : Learn about foundational policies that all creative and inventory content must follow.
 ---
 
 
@@ -31,11 +30,7 @@ following.
 
 For more information, see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx)(login required).
 
-
-
-
-
-## Disapproval Reasons
+## Disapproval reasons
 
 The following table outlines reasons why a creative may be rejected from
 serving on Xandr inventory and recommendations for resolving the
@@ -57,9 +52,9 @@ integrate or amend acceptance criteria at any time.
 | Creative improperly rotates brands or advertiser | - The creative has multiple versions with different brands under a single ID<br><br> - A single creative represents and clicks through to multiple different brands' landing pages.<br><br> - For video creatives, a pre-roll ad for a different brand play before the actual offer. <br><br>If a creative is co-branded (for example, Brand X and Brand Y collaborating), the brand will be set based on which of the brands owns the landing page URL. | - Ensure that all the creatives that are rotating in the tag are all from the same brand.<br> - Ensure that the creatives are all redirecting to the creative brands’ landing page. |
 | Creative does not display a clear brand | - The creative does not display a brand.<br><br> - The creative displays a brand, but it is not sufficient notification. | It is advised to update the creative content in order to clearly show a brand.<br>**Note:**<br>**Definition of “sufficient”**<br>When evaluating a creative for appropriate brand notification, the audit team looks for at least one of three things:<br> - a logo<br> - a landing page URL<br> - a distinct brand name<br>If the only branding on the creative is a logo, then that exact logo must also be on the landing page to be sufficient. <br><br>If the only branding on the creative is a landing page URL, then that must be the URL the creative has as its landing page.<br><br>**Distinct brand name** is sufficient notification in one of the following ways: - The brand name is not an actual word and when it appears on the creative it cannot be confused for other, non-branded text (e.g. Cygnas)<br> - The brand name is a distinct set of actual words, and the landing page exactly matches this and/or has a distinct, matching typeface as the creative (For example, "The Best Wedding Music" goes to [https://thebestweddingmusic.com/](https://thebestweddingmusic.com/) and/or is written in red bold Helvetica on both the creative and the landing page) |
 | Creative contains content prohibited by policy | - Excessive blood or gore<br><br> - Excessive or disparaging profanity<br><br> - Racial slurs and hate speech.<br><br> - Creative advertises online-only pharmacy selling prescription drugs.<br><br> - Prescriptions drugs offered without a prescription | Full Xandr policy [here](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) |
-| Creative is blank | - Creative doesn’t render due to geo/IP issues.<br><br> - Creative doesn’t render due to typo/error in creative content/tag or hosted ad server issue. | It is recommended to run the following checks:<br><br> - Check if the creative displays correctly on an external tool. If not, coming from the creative directly and not the Xandr platform. Please, correct it and resubmit it to the Xandr audit.<br><br> - Make sure to whitelist or unblock our previews domains in the creative ad server: [adnxs.net](http://adnxs.net/), [adnxs.com](http://adnxs.com/), [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising), [audit.adnxs.net](https://cq-auditor.adnxs.net/login?next=%2F), [cq-preview.adnxs.net](http://cq-preview.adnxs.net/).<br><br> - If an Ad Verification service (Adsafe, moat...) is implemented in the creative, it is advised to use the `${IS_PREVIEW}` macro.<br><br>**Note:** We created the macro, `${IS_PREVIEW}`, to signal the ad verification vendor that the creative should render. This macro will be replaced with a 1 when we are previewing it. More information about the macro's implementation [here](../bidders/click-tracking-and-cache-busting-examples.md). |
+| Creative is blank | - Creative doesn’t render due to geo/IP issues.<br><br> - Creative doesn’t render due to typo/error in creative content/tag or hosted ad server issue. | It is recommended to run the following checks:<br><br> - Check if the creative displays correctly on an external tool. If not, coming from the creative directly and not the Xandr platform. Please, correct it and resubmit it to the Xandr audit.<br><br> - Make sure to allowlist or unblock our previews domains in the creative ad server: [adnxs.net](http://adnxs.net/), [adnxs.com](http://adnxs.com/), [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising), [audit.adnxs.net](https://cq-auditor.adnxs.net/login?next=%2F), [cq-preview.adnxs.net](http://cq-preview.adnxs.net/).<br><br> - If an Ad Verification service (Adsafe, moat...) is implemented in the creative, it is advised to use the `${IS_PREVIEW}` macro.<br><br>**Note:** We created the macro, `${IS_PREVIEW}`, to signal the ad verification vendor that the creative should render. This macro will be replaced with a 1 when we are previewing it. More information about the macro's implementation [here](../bidders/click-tracking-and-cache-busting-examples.md). |
 | Creative does not meet minimum standards | - Creative does not display on certain operating systems.<br><br> - Creative is entirely text only | It is recommended to update the creative to make is match with our minimum standards. |
-| Creative does not display properly | - Creative brands or offers are cut off.<br><br> - Creative displays too briefly for branding and clickthrough<br> - Creative displays extraneous text tail | Review and preview the creative and see if the content is displaying as expected.<br><br>If it is not the case, it is recommended to update and correct the creative. |
+| Creative does not display properly | - Creative brands or offers are cut off.<br><br> - Creative displays too briefly for branding and clickthrough<br><br> - Creative displays extraneous text tail | Review and preview the creative and see if the content is displaying as expected.<br><br>If it is not the case, it is recommended to update and correct the creative. |
 
 ## CBA standards
 
