@@ -12,13 +12,16 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 1. Go to **Creative &gt; Creatives**.
 1. Select an advertiser.
 1. Click **New** and select **Bulk**.
-      The **Create New Creatives: Hosted** screen displays.
+
+    The **Create New Creatives: Hosted** screen displays.
+
 1. Do one of the following:
     - To add video, audio, and display creatives that will be hosted with Xandr, remain on the **Create New Creatives: Hosted** screen.
     - To add native creatives that will be hosted with Xandr, click the **Native** button.
     - To add video, audio, and display creatives that will be trafficked through a third-party ad server, click the **Third-Party** button.
 
     If you clicked the **Native** or **Third-Party** button, the appropriate **Create New Creatives** screen will display.
+
 1. Upload the creatives by doing one of the following:
     1. Drag and drop the actual assets or click **Select File** to locate them from your computer.
     1. For hosted and native creatives, click **Select File (xls, xlsx)** within the **Creative Spreadsheet** section and upload the assets using a spreadsheet.

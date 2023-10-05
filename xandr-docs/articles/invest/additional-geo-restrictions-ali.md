@@ -104,8 +104,8 @@ If your list contains postal/zip codes that don't exist in the Xandr database, y
 - **Excel-Truncated Zeros**: Excel may truncate leading zeros from postal codes if they are numeric (06514 becomes 6514). However, an
   alphanumeric postal code such as "0AH 135" would not be affected.
 - **Country**: Postal codes can only be added for one country at a time.
-- **US zip codes**: To target Metropolitan Statistical Areas (MSAs), include comma-separated or dash-separated zip codes. Use the following link to download an Excel file containing a list of MSAs and their corresponding comma-separated zip codes:
-  [MSA-ZipCodes.xlsx](http://tritondocs.media.streamtheworld.com/MSA-ZipCodes.xlsx).
+<!--- **US zip codes**: To target Metropolitan Statistical Areas (MSAs), include comma-separated or dash-separated zip codes. Use the following link to download an Excel file containing a list of MSAs and their corresponding comma-separated zip codes:
+  [MSA-ZipCodes.xlsx](http://tritondocs.media.streamtheworld.com/MSA-ZipCodes.xlsx). --->
 
 > [!NOTE]
 > Ranges are not supported. You will need to add each individual postal code to the list or import them from a CSV, Excel, or Text file.

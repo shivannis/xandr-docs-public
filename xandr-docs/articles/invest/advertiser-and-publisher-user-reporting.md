@@ -65,5 +65,5 @@ For instructions on how to give advertiser users access to reporting, see [Creat
 ## Related topics
 
 - [Reporting Guide](reporting-guide.md)
-- [Member Reporting Member](network-reporting.md)
+- [Member Reporting](network-reporting.md)
 - [Advertiser Reporting](advertiser-reporting.md)

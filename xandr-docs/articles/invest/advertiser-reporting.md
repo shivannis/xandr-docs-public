@@ -10,8 +10,10 @@ Advertiser reports allow you to get more granular information about the performa
 In this section of the reporting guide, you'll find documentation for all of our advertiser-level reports.
 
 - [Advertiser Analytics Report](advertiser-analytics-report.md)
+- [Advertiser Video Analytics Report](advertiser-video-analytics-report.md)
 - [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md)
 - [Buyer Engagement Report](buyer-engagement-report.md)
+- [Buyer Deal Metrics](buyer-deal-metrics.md)
 - [Buyer Video Error Report](buyer-video-error-report.md)
 - [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md)
 - [Offline Attribution Report](offline-attribution-report.md)

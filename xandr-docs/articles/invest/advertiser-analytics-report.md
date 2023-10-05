@@ -99,7 +99,7 @@ allow for a fuller reconciliation with conversions, impressions and other metric
 | Seller | Yes | The seller of the impression. |
 | Seller Type | Yes | Xandr buckets sellers into different types for billing purposes. For more information, see [Seller Types](#seller-types). |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
-| Placement | Yes | The placement through which this impression occurred. <br/> **Note:** For impressions older than 100 days, placements are aggregated into one row with -1 as the ID and a generic name. |
+| Placement | Yes | The placement through which this impression occurred. <br/> **Note:** For impressions older than 100 days, placements are aggregated into one row with `-1` as the ID and a generic name. |
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Line Item: Type | No | The line item type (e.g., Standard, Augmented). |
 | Line Item: Status | No | The line item status (e.g., inactive, active). |
