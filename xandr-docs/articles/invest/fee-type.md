@@ -5,7 +5,7 @@ description: In this article, learn the different types of partner fees that you
 
 # Microsoft Invest - Fee type
 
-When creating a [partner fee](partner-fees.md), you can use fee types to categorize fees by purpose.
+When creating a [partner fee](create-a-partner-fee.md), you can use fee types to categorize fees by purpose.
 
 Supported types are:
 

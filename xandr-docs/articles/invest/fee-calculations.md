@@ -5,7 +5,7 @@ description: In this article, learn the different ways that partner fees can be 
 
 # Microsoft Invest - Fee calculations
 
-When you create a [partner fee](partner-fees.md), the fee can be based on percentage or CPM. CPM fees are always deducted from revenue. Revshare fees may be calculated in multiple ways:
+When you create a [partner fee](create-a-partner-fee.md), the fee can be based on percentage or CPM. CPM fees are always deducted from revenue. Revshare fees may be calculated in multiple ways:
 
 - Deducted from revenue
 - Added to net or gross media cost
