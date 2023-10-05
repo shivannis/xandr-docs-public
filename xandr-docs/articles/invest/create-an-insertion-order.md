@@ -36,19 +36,19 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
         inherit the advertiser's currency. You cannot change the
         currency after saving the insertion order.
 
-       > [!TIP]
-> As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).  
+     > [!TIP]
+   > As a best practice, align currency to the billing  currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
     1. Select a viewability standard.
     1. Select a budget type.
     1. Optionally, set up billing periods and pacing. For more
         information, see [Billing Periods](#billing-periods) and [Pacing](#pacing).
-    1.  Optionally, enable political advertising on this insertion order
+    1. Optionally, enable political advertising on this insertion order
         and identify whether this advertising takes place on the federal
         or state or local level, or both. For more information, see [Political Advertising](#political-advertising).
 
-    > [!NOTE]
-> This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
+     > [!NOTE]
+   > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
 1. Set the supply strategy, determining the inventory type and
     inventory lists for targeting. These settings can be further refined
@@ -84,8 +84,8 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
     before a user may see another ad for this insertion order). For more
     information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 
-   > [!IMPORTANT]
-> Frequency caps can also be set at the advertiser, line item, and creative levels. The most restrictive setting always takes precedence.
+    > [!IMPORTANT]
+    > Frequency caps can also be set at the advertiser, line item, and creative levels. The most restrictive setting always takes precedence.
 
 1. Optionally, assign reporting labels. The labels (Trafficker, Sales
     Rep, and Insertion Order Type) will then appear in the
@@ -94,7 +94,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 1. Optionally, associate existing augmented line items with the insertion order.
 
     > [!IMPORTANT]
-> Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
+    > Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
 
 1. Optionally, add comments to the insertion order.
 
@@ -263,5 +263,5 @@ provided herein is accurate and up to date, and acknowledge and agree that** Xan
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md)
 - [Buy-Side Targeting](buy-side-targeting.md)
-- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures)
+- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)
 - [Political Advertising](political-advertising.md)

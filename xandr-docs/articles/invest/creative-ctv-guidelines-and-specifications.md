@@ -30,6 +30,7 @@ its transcoding. Therefore, the following requirements are for an individual med
 | The file must be formatted as one of the following:<br>- MP4<br> - MOV | The bitrate must be between 15,000 Kbps and 30,000 Kbps. | The resolution must be one of the following:<br>- 960 x 720<br> - 1280 x 720<br> - 1440 x 1080<br> - 1920 x 1080 | The duration must be one of the following:<br>- 15 seconds<br>- 30 seconds |
 
 **Roku**
+
 | File Type | Bitrate | Resolution | Duration | Aspect Ratio |
 |---|---|---|---|---|
 | The file must be formatted as:<br>- MP4 | The bit rate must at least be 2,100 kbps | There is no specific resolution | The duration must be between 6 and 60 seconds. | The aspect ratio must be 16:9. |

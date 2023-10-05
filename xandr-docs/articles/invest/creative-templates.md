@@ -1,7 +1,6 @@
 ---
 title : Microsoft Invest - Creative Templates
-description : Learn how to customize the way creatives render, create your own templates from scratch, or copy
-standard templates and modify them to fit your needs.
+description : Learn how to customize the way creatives render, create your own templates from scratch, or copy standard templates and modify them to fit your needs.
 ---
 
 
