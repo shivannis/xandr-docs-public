@@ -99,7 +99,7 @@ Reports automatically group by all selected dimensions.
 | Post View Conversions | int | 15 | Post View Conversions | The total number of recorded post-view conversions. |
 | Post Click Convs | int | 19 | Post Click Convs | The total number of recorded post-click conversions. |
 | Media Cost | money | 100.00 | Cost | The total cost of the inventory purchased. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Profit | money | 4.14 | Booked Revenue - Total Cost | Booked revenue minus total cost. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Profit | money | 4.14 | Booked Revenue - Total Cost | Booked revenue minus total cost. <br> This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | CPM | money | 5.00 | CPM | The cost per one thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Conversion per Million | double | 384.4 | (total_convs / imps) x 1,000,000 | The number of conversions per million impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Total conversions | int | 5 | total_convs | The total number of post-view and post-click conversions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
