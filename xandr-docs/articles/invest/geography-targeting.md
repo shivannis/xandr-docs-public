@@ -5,11 +5,6 @@ description: This article provides information on the relevant geographic target
 
 # Microsoft Invest - Geography targeting
 
-## In this section
-
-- [How Geography Targeting Works](../monetize/how-geography-targeting-works.md) - Learn how geography targeting works.
-- [Changes to Geography Objects](../monetize/changes-to-geography-objects.md) - See recent changes to geolocation data.
-
 You can target impressions based on the geographic location of the users viewing them.
 
 In the **Targeting** section of a line item, click the **Edit** button next to **Geography**.
@@ -23,7 +18,7 @@ Follow the instructions for the relevant geographic targeting option below.
 
 > [!WARNING]
 > **Accuracy of geo targeting**
-> 
+>
 > Although targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of a match.
 > [!NOTE]
 > **Geo targeting & third-party buying filters**
