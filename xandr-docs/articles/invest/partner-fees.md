@@ -1,14 +1,10 @@
 ---
-Title : Partner Fees
-Description : If you need to reserve a portion of your budget for third-party
-costs--costs owed to parties other than the publisher--you can define
-this information with partner fees. Fees can be tracked on a CPM, cost
+title : Microsoft Invest - Partner Fees
+description : Learn how if you need to reserve a portion of your budget for third-party costs you can define it with partner fees.
 ---
 
 
-# Partner Fees
-
-
+# Partner fees in Microsoft Invest
 
 If you need to reserve a portion of your budget for third-party
 costs--costs owed to parties other than the publisher--you can define
@@ -34,9 +30,4 @@ Common fees you might need to budget for are:
 - **Incremental fees** charged by an intermediary to the advertiser,
   such as a managed service fee or consulting fee.
 
-  ![Revenue broken out into different costs](media/partner-fees-graphic.png)
-
-
-
-
-
+  ![Screenshot of Revenue broken out into different costs.](media/partner-fees-graphic.png)
