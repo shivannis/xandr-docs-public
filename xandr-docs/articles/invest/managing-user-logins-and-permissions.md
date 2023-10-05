@@ -1,94 +1,44 @@
 ---
-Title : Managing User Logins and Permissions
-Description : The pages mentioned in this section describe how to create and manage
-your users, set up their passwords and permissions.
+title: Microsoft Invest - Managing User Logins and Permissions
+description: In this article, explore essential resources for managing and controlling user logins and permissions effectively.
 ---
 
+# Microsoft Invest - Managing user logins and permissions
 
-# Managing User Logins and Permissions
+The pages mentioned in this section describe how to create and manage your users, set up their passwords and permissions.
 
+With consolidation of Xandr to Microsoft family, we have integrated the authentication process of the users (who are using Xandr products) to the Microsoft Identity Platform. The profound advantage of this integration is that users would be able use to access Xandr applications using the same sign-on methods to access other Microsoft products. Additionally, the integration to the Microsoft Identity Platform enables new and more secure methods of authentication, powered by Microsoft.
 
+For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
-The pages mentioned in this section describe how to create and manage
-your users, set up their passwords and permissions.
+## How tos
 
-With consolidation of Xandr to Microsoft family, we have integrated the
-authentication process of the users (who are using Xandr products) to
-the Microsoft Identity Platform. The profound advantage of this
-integration is that users would be able use to access Xandr applications
-using the same sign-on methods to access other Microsoft products.
-Additionally, the integration to the Microsoft Identity Platform enables
-new and more secure methods of authentication, powered by Microsoft.
+- [Manage Your Username and Password](manage-your-username-and-password.md)
 
-For more details, visit
-<a href="microsoft-identity-platform-login.md" class="xref"
-title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
-Identity Platform Login</a>.
+  Reset or update your password, retrieve your username, or reset your email address.
 
+- [Create a User](create-a-user.md)
 
+  Learn about the different types of user roles and how to create the one you need.
 
-## How Tos
+- [Edit a Member User](edit-a-network-user.md)
 
+## Access control
 
-
-- <a href="manage-your-username-and-password.md" class="xref">Manage
-  Your Username and Password</a>
-
-  Reset or update your password, retrieve your username, or reset your
-  email address.
-
-- <a href="create-a-user.md" class="xref">Create a User</a>
-
-  Learn about the different types of user roles and how to create the
-  one you need.
-
-- <a href="edit-a-network-user.md" class="xref">Edit a Member User</a>
-
-
-
-
-
-
-
-## Access Control
-
-
-
-- <a href="getting-started-with-roles.md" class="xref">Getting Started
-  with Roles</a>
+- [Getting Started with Roles](getting-started-with-roles.md)
 
   Read an introduction to using Roles for user access control.
 
-- <a href="xandr-invest-dsp-roles.md" class="xref">Microsoft Invest DSP
-  Roles</a>
+- [Microsoft Invest Roles](xandr-invest-dsp-roles.md)
 
   Roles specific to Microsoft Invest
 
-
-
-
-
-
-
 ## References
 
+- [Member Users Screen](network-users-screen.md)
 
+  View basic information about your network-level users, access additional details about specific users, and edit or activate/deactivate specific network-level users.
 
-- <a href="network-users-screen.md" class="xref">Member Users Screen</a>
+- [Reporting Guide](reporting-guide.md)
 
-  View basic information about your network-level users, access
-  additional details about specific users, and edit or
-  activate/deactivate specific network-level users.
-
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
-
-  Learn about reports that network-level users can run across multiple
-  advertisers and/or publishers.
-
-
-
-
-
-
-
-
+  Learn about reports that network-level users can run across multiple advertisers and/or publishers.
