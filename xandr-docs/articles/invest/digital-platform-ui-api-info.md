@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - API
-description: In this article, learn about Microsoft Invest API's important resources and the services that are currently available.
+description: In this article, learn about the Microsoft Invest API, its important resources, and the services that are currently available.
 ---
 
 # Microsoft Invest - API

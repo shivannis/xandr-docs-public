@@ -5,7 +5,7 @@ description: Learn about device type targeting, that focuses on delivering ads t
 
 # Microsoft Invest - Device type targeting
 
-To access device type targeting options, expand the Targeting section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md#device-type-targets) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](device-analytics-report.md).
+To access device type targeting options, expand the **Targeting** section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](device-analytics-report.md).
 
 - **Desktops**
   - corresponds to `pc` in the profile api service
@@ -24,12 +24,12 @@ To access device type targeting options, expand the Targeting section of the lin
   - corresponds to `mediaplayer` in the profile api service
   - corresponds to `media players` in device analytics reporting
 
-  see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) to restrict the device types you are targeting, uncheck any device types you wish to exclude.
+  See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) to restrict the device types you are targeting and uncheck any device types that you wish to exclude.
 
   > [!NOTE]
   >
-  > - **Connected Audio** is only available in Invest.
-  > - When targeting devices models **Targeting &gt; System &gt; Device Model** with **Make** = **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
+  > - **Connected Audio** is only available in Microsoft Invest.
+  > - When targeting devices models **Targeting &gt; System &gt; Device Model** with **Make** = **Apple**, you should include the following device models to avoid under-delivery. For example: **iPad (300)** and **iPhone (301)**.
 
 ## Related topics
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Demography Targeting
-description: In this article, learn about how to target ads to specific demographic groups, such as age, gender, or location. This process will help in creating relevant ad campaigns.
+description: In this article, learn about targeting ads based on demographics like age, gender, and location, enhancing the creation of highly relevant ad campaigns.
 ---
 
 # Microsoft Invest - Demography targeting
