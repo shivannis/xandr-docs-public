@@ -19,7 +19,7 @@ A buyer can use their age and gender user data to target both managed and third-
 
 ## How it works
 
-Once enabled, demographic targeting in Invest DSP will apply to inventory from managed publishers as well as third-party publishers. In the case of impressions where the publisher passes age and gender data in the ad call:
+Once enabled, demographic targeting in Microsoft Invest will apply to inventory from managed publishers as well as third-party publishers. In the case of impressions where the publisher passes age and gender data in the ad call:
 
 - For inventory from managed inventory: age/gender segment values will be used for demographic targeting, unless age/gender is explicitly passed on the query string, in which case query string values will be used.
 - For inventory from third party inventory: age/gender segment values will always be used for demographic targeting, even if age/gender is explicitly passed on the query string.
