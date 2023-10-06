@@ -1,23 +1,17 @@
 ---
-Title : Pass in User Data Offline
-Description : If you have data that lives in your ad server or data warehouse today,
-you can make it accessible to your Xandr ad
-campaigns. In this section we describe the server-side
+title : Microsoft Invest - Pass in User Data Offline
+description : Learn to make data accessible, that lives in your ad server or data warehouse today, to your ad campaigns. 
 ---
 
 
-# Pass in User Data Offline
-
-
+# Microsoft Invest - pass in user data offline
 
 If you have data that lives in your ad server or data warehouse today,
 you can make it accessible to your Xandr ad
 campaigns. In this section we describe the server-side
-integration that allows you to pass this data into our
-<a href="server-side-cookie-store.md" class="xref">Server Side Cookie
-Store</a>.
+integration that allows you to pass this data into our [Server Side Cookie Store](server-side-cookie-store.md).
 
-A Use Case
+## A use case
 
 Let's say Prostarr Sportswear puts a pixel on every one of their pages
 so that if a user visits, whether by search engine, through a link, or
@@ -34,22 +28,15 @@ medium, or high. Or let's say a user who made a purchase and was put
 into a "remarketing segment" returns a purchase and Prostarr makes an
 internal correction to that segment.
 
-User ID Mapping
+## User ID mapping
 
 Before you can pass us data, there must be a mapping of the
 Xandr user ID and your user ID so that we can
 attach the data to the right user and offer it for your future use.
-Please read about this process at
-<a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
-ID Mapping</a>.
+Please read about this process at [User
+ID Mapping](user-id-mapping-with-getuid-and-mapuid.md).
 
-Server-Side Data Integration with Xandr
+## Server-Side data integration with Xandr
 
 Once ID mapping has taken place, you can pass
-Xandr your offline segment data via our <a
-href="xandr-api/batch-segment-service.md"
-class="xref" target="_blank">Batch Segment Service</a>.
-
-
-
-
+Xandr your offline segment data via our [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
