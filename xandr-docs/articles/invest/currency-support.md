@@ -133,7 +133,7 @@ The table below explains when you can set currencies and the effects of those se
 | **Member/Network** | **Default:** USD <br> **Settable?:** User can’t update (contact Account Manager to change). Since there is no budget set at this level, your account manager can always change the member currency at your request. | This setting controls the default currency for child objects you create. This is only used for buying or selling inventory (and reporting) if you don't set a (different) currency on the Advertiser, Insertion Order or Line Item. |
 | **BUY SIDE** |  |  |
 | **Advertiser** | **Default:** USD <br> **Settable?:** Users can update. Since there is no budget set at this level, you can always change the advertiser currency.<br> **Where set:** <br> - API: via the `default_currency` field in the [Advertiser Service](../digital-platform-api/advertiser-service.md). <br> - UI: via the **Currency** field (under **Default Settings**) of the **Advertiser** screen. | This setting controls the default currency for any new child objects you create (i.e., you set it once on the Advertiser and all Insertion Orders and Line Items inherit that currency).<br> - Only used for buying or selling inventory if you don't set a different currency on the Insertion Order or Line Item.<br> - Only used in reporting if you don't set a different currency on the Insertion Order or Line Item. |
-| **Insertion Order (IO)** | **Default:** Inherits the currency setting of the IO's Advertiser.<br> **Settable?:** User can set up IOs with any of the supported transaction currencies when creating a new IO.<br> **Note:** Once an IO is saved, the currency cannot be changed as any changes will have budget implications. This includes both active and inactive IOs. If you need to change the currency of an existing IO, clone it and set the second IO to your desired currency. Then set the original IO to inactive. However, the new IO will not have any of the cloned IO's buying history.<br> **Where set:**<br> API: via the `currency` field in the [Insertion Order](../digital-platform-api/insertion-order-service.md) Service. <br> UI: via the **Currency** field of the **Insertion Order** screen. | The IO's currency setting is only used to manage its budget, not to actually buy inventory.<br> - Only used for buying or selling inventory if you don't set a different currency on the line item.<br> - This is not logged for reporting. |
+| **Insertion Order (IO)** | **Default:** Inherits the currency setting of the IO's Advertiser.<br> **Settable?:** User can set up IOs with any of the supported transaction currencies when creating a new IO.<br> **Note:** Once an IO is saved, the currency cannot be changed as any changes will have budget implications. This includes both active and inactive IOs. If you need to change the currency of an existing IO, clone it and set the second IO to your desired currency. Then set the original IO to inactive. However, the new IO will not have any of the cloned IO's buying history.<br> **Where set:**<br> API: via the `currency` field in the [Insertion Order Service](../digital-platform-api/insertion-order-service.md). <br> UI: via the **Currency** field of the **Insertion Order** screen. | The IO's currency setting is only used to manage its budget, not to actually buy inventory.<br> - Only used for buying or selling inventory if you don't set a different currency on the line item.<br> - This is not logged for reporting. |
 | **Line Item** | **Default:** Inherits the currency setting of the Line Item's Advertiser.<br> **Note:** If you are using IOs, the Line Item's currency must match that of its parent IO.<br> **Settable?:** Can be set to any supported transaction currencies (unless you are using IOs). Once a Line Item is saved, the currency cannot be changed as any changes will have budget implications. This includes active and inactive Line Items.<br> **Where set:** <br> API: via the `currency` field in the [Line Item Service](../digital-platform-api/line-item-service.md). <br> UI: via the **Currency** field of the **Line Item** screen. | - **This is the Transaction Currency if you are buying inventory.** <br> - This currency and its USD exchange rate at the time of the auction are logged when the auction occurs. |
 | **Campaign** |**Default:** Inherits the value of the Line Item level currency setting.<br> **Settable?:** User can't update. |  |
 | **SELL SIDE** |  |  |
@@ -181,9 +181,63 @@ Line Item and Campaign revenue metrics can be displayed in Transaction Currency,
 
 ## When media cost and related fees are converted for use in billing
 
-The conversion of media cost and fees to the billing currency will be based on either daily conversion rates or a month-end conversion rate. To determine which will be used and which fees will be affected, refer to the table below.
+The conversion of media cost and fees to the billing currency will be based on either daily conversion rates or a month-end conversion rate.
 
-| Daily conversions (depends) | Month-end conversion (depends) | Month-end conversion (always) |
-|:---|:---|:---|
-| **When Used?** If the Transaction Currency (currency logged at auction time) *is the same as* the Billing Currency.<br> **How Applied?** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency. | **When Used?** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.<br> **How Applied?** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month. | **When Used?** Always (only for the fees listed in this column)<br> **How Applied?** We calculate the fee in USD and convert from USD to the desired billing currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month. |
-| **Which Fees/charges?**<br> - Buy side costs and charges<br><br> * Media Cost <br> * BASC Deductions<br> * BASC Fees<br> * Direct Clear Fees<br> * Creative Overage Fees<br> * Data Costs<br><br> - Sell side revenue and charges<br> * Seller Revenue<br> * SASC Deduction<br> * SASC Fee<br><br> - Managed Ad Serving Fee<br> - Buyer Serving Fee<br> - Seller Serving Fee<br> - Imp Tracker Fee<br> - Click Tracker Fee | **Which Fees/charges?** <br> - Buy side costs and charges<br><br> - Media Cost<br> * BASC Deductions<br> * BASC Fees<br> * Direct Clear Fees<br> * Creative Overage Fees<br> * Data Costs<br> * Sell side revenue and charges<br> * Seller Revenue<br> * SASC Deduction<br> * SASC Fee<br><br> - Managed Ad Serving Fee<br> - Buyer Serving Fee<br> - Seller Serving Fee<br> - Imp Tracker Fee<br> - Click Tracker Fee | **Which Fees/charges?**<br> - Creative Audit Fee<br> - Priority Creative Audit Fee<br> - Log Level Data Fee<br> - Seller Revshare Min<br> - Other Mins<br> - Onboarding Fee<br> - Xandr Service Fee<br> - Other Flat Fees<br> - Other CPM Fees |
+### Daily conversions (depends)
+
+- **When Used?:** If the Transaction Currency (currency logged at auction time) *is the same* as the Billing Currency.
+- **How Applied?:** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency.
+- **Which Fees/Charges:**
+  - Buy Side Costs and Charges
+    - Media Cost
+    - BASC Deductions
+    - BASC Fees
+    - Direct Clear Fees
+    - Creative Overage Fees
+    - Data Costs
+    - Sell Side Revenue and Charges
+      - Seller Revenue
+      - SASC Deduction
+      - SASC Fee
+    - Managed Ad Serving Fee
+    - Buyer Serving Fee
+    - Seller Serving Fee
+    - Imp Tracker Fee
+    - Click Tracker Fee
+
+### Month-end conversion (depends)
+
+- **When Used?:** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.
+- **How Applied?:** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
+- **Which Fees/Charges:**
+  - Buy Side Costs and Charges
+    - Media Cost
+      - BASC Deductions
+      - BASC Fees
+      - Direct Clear Fees
+      - Creative Overage Fees
+      - Data Costs
+      - Sell Side Revenue and Charges
+        - Seller Revenue
+        - SASC Deduction
+        - SASC Fee
+    - Managed Ad Serving Fee
+    - Buyer Serving Fee
+    - Seller Serving Fee
+    - Imp Tracker Fee
+    - Click Tracker Fee
+
+### Month-end conversion (always)
+
+- **When Used?:** Always (only for the fees listed in this column).
+- **How Applied?:** We calculate the fee in USD and convert from USD to the desired billing currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
+- **Which Fees/Charges:**
+  - Creative Audit Fee
+  - Priority Creative Audit Fee
+  - Log Level Data Fee
+  - Seller Revshare Min
+  - Other Mins
+  - Onboarding Fee
+  - Xandr Service Fee
+  - Other Flat Fees
+  - Other CPM Fees

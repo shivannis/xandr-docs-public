@@ -15,7 +15,7 @@ Xandr supports frequency capping for video advertising. However, because many pu
 
 ## Device targeting
 
-You can target specific OTT-capable or connected TV (CTV) devices such as Roku and AppleTV as well as game consoles via device targeting. To target these devices, select **Targeting > System > Device Model** on the line item. Specific models are searchable in the targeting interface by brand name, model name, or model ID.
+You can target specific OTT-capable or connected TV (CTV) devices such as Roku and AppleTV as well as game consoles via device targeting. To target these devices, select **Targeting &gt; System &gt; Device Model** on the line item. Specific models are searchable in the targeting interface by brand name, model name, or model ID.
 
 ## Segment targeting
 

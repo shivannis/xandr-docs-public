@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Data Marketplace - Buyer Overview
+title: Microsoft Invest - Data Marketplace Buyer Overview
 description: In this article, explore the data marketplace, its partners, workflow, various data usage reports, and frequently asked questions.
 ---
 
-# Microsoft Invest - Data Marketplace Buyer overview
+# Microsoft Invest - Data Marketplace buyer overview
 
 Xandr supports automatic clearing for data you purchase on our platform and use to target particular user segments. This means that the costs of these user segments will be:
 
@@ -40,8 +40,8 @@ Contact your data provider or Xandr representative for the latest rates.
 | Bombora | Audience | [audiencedesk@bombora.com](mailto:audiencedesk@bombora.com) |  |
 | Choreograph | Audience | No contact provided. |  |
 | ComScore | Audience and Contextual | [ActivationSpecialists@comscore.com](mailto:ActivationSpecialists@comscore.com) | Yes |
-| Cross Pixel | Audience (Search & Keyword Retargeting) | [info@crosspixel.net](mailto:info@crosspixel.net) |  |
 | Crossix | Audience | [crossix_digitalconnect@veeva.com](mailto:crossix_digitalconnect@veeva.com) |  |
+| Cross Pixel | Audience (Search & Keyword Retargeting) | [info@crosspixel.net](mailto:info@crosspixel.net) |  |
 | Datmean | Deterministic Audience | [data@datmean.com](mailto:data@datmean.com) |  |
 | Datonics | Audience | [data@datonics.com](mailto:data@datonics.com) |  |
 | DoubleVerify | Audience (Fraud/IVT) and Contextual | [programmaticsales@doubleverify.com](mailto:programmaticsales@doubleverify.com) | Yes |
@@ -90,8 +90,7 @@ Contact your data provider or Xandr representative for the latest rates.
 
 > [!IMPORTANT]
 > For information regarding how each data provider charges for multiple segment usage, please contact your data provider or Xandr representative. Please note that when multiple data providers are used, Xandr will charge the buyer the sum of all data provider charges.
-
-> [!IMPORTANT]
+>
 > Data rates are not inclusive of applicable sales, use, gross receipts, excise, goods and services, value added, and other transaction-based taxes. Such applicable taxes will be reflected when your data costs are calculated.
 
 If a Data Provider you use is not on this list, contact your Xandr Account/Engagement Manager.
@@ -105,7 +104,7 @@ Media costs and Data costs (e.g., for user segments, etc.).
 
 To access a particular data provider's segment offering:
 
-1. Navigate to the **Segments** screen (**Audiences > Segments**).
+1. Navigate to the **Segments** screen (**Audiences &gt; Segments**).
 1. Click **Manage Data Providers**. If you don't see this option, contact your Account Manager.
 1. Select the data providers for whom you want the data cost to be cleared directly by Xandr. Each activated data provider (whose data cost will be cleared by Xandr) will appear checked and highlighted.
 
@@ -219,12 +218,11 @@ If multiple segments are targeted with a line item, the boolean AND/ OR logic th
 
 **When the segments are targeted using the AND boolean**
 
-- If the ad request is relevant in ALL targeted segments, a bid will be
-  made.
+- If the ad request is relevant in ALL targeted segments, a bid will be made.
 
   :::image type="content" source="media/advanced_and_a.png" alt-text="Diagram of all targeted segments.":::
 
-- If the ad request is not relevant to one or many of the targeted segments, then no bid will be made
+- If the ad request is not relevant to one or many of the targeted segments, then no bid will be made.
 
   :::image type="content" source="media/advanced_and_b.png" alt-text="Diagram of one or many targeted segments.":::
   :::image type="content" source="media/advanced_and_c.png" alt-text="Diagram of one or many targeted segment.":::
@@ -236,8 +234,8 @@ If multiple segments are targeted with a line item, the boolean AND/ OR logic th
 
 - If the ad request is relevant to ANY segment, a bid will be made using the relevant segment.
 
-  :::image type="content" source="media/advanced_or_a.png" alt-text="Diagram of segment that are targeted using the OR boolean.":::
-  :::image type="content" source="media/advanced_or_b.png" alt-text="Diagram of segments that are targeted using the OR boolean.":::
+  :::image type="content" source="media/advanced_or_a.png" alt-text="Diagram of an ad request relevant to any segment using the OR boolean.":::
+  :::image type="content" source="media/advanced_or_b.png" alt-text="Diagram of an ad request relevant to any segment.":::
   
 - If the ad request is relevant to more than one segment (overlaps), Xandr will use the lowest priced segment to bid on the auction.
 
@@ -245,7 +243,7 @@ If multiple segments are targeted with a line item, the boolean AND/ OR logic th
 
 - If the ad request is NOT relevant to any targeted segment, then no bid will be made.
 
-  :::image type="content" source="media/advanced_or_d.png" alt-text="Diagram of ad request not relevant to any targeted segment.":::
+  :::image type="content" source="media/advanced_or_d.png" alt-text="Diagram of an ad request not relevant to any targeted segment.":::
 
 ### Multiple groups of segments targeted
 

@@ -34,7 +34,7 @@ Complete the following fields:
 
 When all changes have been made, click **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
 
-## Related topic
+## Related topics
 
 - [Managing Relationships with Sellers](managing-relationships-with-sellers.md)
 - [Partner Center Screen](partner-center-screen-buyer-view.md)

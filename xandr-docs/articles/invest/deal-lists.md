@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Deal Lists
-description: In this article, learn about the deal lists and ways to create, edit, and target a deal list.
+description: In this article, learn about the deal lists and explore various methods for their creation, editing, and effective targeting.
 ---
 
 # Microsoft Invest - Deal lists
@@ -14,7 +14,7 @@ You can create and manage Deal Lists at the Member and Advertiser level. A deal 
 
 ### Create a New Deal List
 
-1. In the **Inventory** menu select **Deal Lists** from the dropdown.
+1. In the **Inventory** menu, select **Deal Lists** from the dropdown.
 1. Click **New** in the **Deal List** page.
 1. Provide the following details in the **Create a New Deal List** page:
     1. **Name:** Enter the name of the deal list
