@@ -1,58 +1,27 @@
 ---
-Title : Buy-Side Reporting on Deals
-Description : Once you've started buying deals, you can run reports to analyze how
-your deals are performing.
+title: Microsoft Invest - Buy-Side Reporting on Deals
+description: In this article, find links to the various reports you can run to analyze how campaigns and creatives are performing on your deals.
 ---
 
+# Microsoft Invest - Buy-side reporting on deals
 
-# Buy-Side Reporting on Deals
-
-
-
-
-
-Once you've started buying deals, you can run reports to analyze how
-your deals are performing.
+Once you've started buying deals, you can run reports to analyze how your deals are performing.
 
 - **Member Analytics**  
-  The
-  <a href="network-analytics-report.md" class="xref">Member Analytics
-  Report</a> lets you view deal performance, revenue, and profit data
-  across multiple advertisers.
+  The [Member Analytics Report](network-analytics-report.md) lets you view deal performance, revenue, and profit data across multiple advertisers.
 - **Advertiser Analytics**  
-  The <a href="advertiser-analytics-report.md" class="xref">Advertiser
-  Analytics Report</a> lets you view deal performance, revenue, and
-  profit data for a specific advertiser.
+  The [Advertiser Analytics Report](advertiser-analytics-report.md) lets you view deal performance, revenue, and profit data for a specific advertiser.
 - **Member Site Domain Performance**  
-  The <a href="network-site-domain-performance-report.md"
-  class="xref">Member Site Domain Performance Report</a> lets you see
-  the domains that deals are serving on across multiple advertisers.
+  The [Member Site Domain Performance Report](network-site-domain-performance-report.md) lets you see the domains that deals are serving on across multiple advertisers.
 - **Advertiser Site Domain Performance**  
-  The
-  <a href="site-domain-performance.md" class="xref">Advertiser Site
-  Domain Performance report</a> lets you see the domains that deals are
-  serving on for a specific advertiser.
+  The [Advertiser Site Domain Performance Report](site-domain-performance.md) lets you see the domains that deals are serving on for a specific advertiser.
 - **Partner Center Reporting Link**  
-  The
-  <a href="partnership-details-screen-buyer-view.md" class="xref">Show
-  in Reporting</a> button provides a link between managing your deals in
-  the Partner Center and checking on deal performance in the
-  <a href="network-analytics-report.md" class="xref">Member Analytics
-  Report</a>.
+  The [Show in Reporting](partnership-details-screen-buyer-view.md) button provides a link between managing your deals in the Partner Center and checking on deal performance in the [Member Analytics Report](network-analytics-report.md).
 
-For each of these reports, you can group by Deal to report on multiple
-deals at once, or you can filter by Deal to report on specific deals.
+For each of these reports, you can group by Deal to report on multiple deals at once, or you can filter by Deal to report on specific deals.
 
-Related Topics
+## Related topics
 
-- <a href="buying-deals.md" class="xref">Buying Deals</a>
-- <a href="get-deals-from-seller-packages.md" class="xref">Get Deals
-  from Seller Packages</a>
-- <a href="negotiate-deals-with-sellers.md" class="xref">Negotiate Deals
-  with Sellers</a>
-
-
-
-
-
-
+- [Buying Deals](buying-deals.md)
+- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+- [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md)
