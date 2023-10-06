@@ -5,7 +5,7 @@ description: In this article, explore the frequently asked questions (FAQ) on mo
 
 # Microsoft Invest - Mobile Buying FAQ
 
-## Mobile Ad Campaigns
+## Mobile ad campaigns
 
 ### What targeting can I use on mobile?
 
@@ -85,7 +85,7 @@ pixels placed on advertiser conversion pages may show conversions from app impre
 At this time, most in-app inventory and most device-optimized web inventory comes from external supply partners such as Smaato and
 Microsoft Advertising Exchange. External supply partners do not accept payment on a per-click (CPC) or per-conversion (CPA) basis. Therefore, we recommended only paying on a per-impression (CPM) basis.
 
-## Mobile Reporting FAQ
+## Mobile reporting FAQ
 
 ### Is log-level reporting (formerly known as data siphon) available?
 
@@ -95,7 +95,7 @@ Yes. For more details about log-level reporting, see the [Log-Level Data Feeds](
 
 Yes, either through use of [Creative Macros](creative-macros.md) or in the [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md).
 
-## General Mobile FAQ
+## General mobile FAQ
 
 ### What types of creatives can serve in mobile campaigns?
 

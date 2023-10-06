@@ -15,7 +15,7 @@ describes how to spoof various mobile ad call parameters so that you can success
 
 Here's an example of an ad call that will run a mobile debug auction:
 
-```http
+```
 https://mobile.adnxs.com/mob?id=[TAG_ID]&size=[WIDTH}x[HEIGHT]&ua=[user_agent_string]&carrier=carrier-[carrier_id]&devmake=[dev_make_code]&devmodel=[dev_model_code]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD]
 ```
 
@@ -34,7 +34,7 @@ parameters, or using developer tools.
 By passing in a different value for the `ua` query string parameter, we can tell the impression bus what operating system we use, since the impression bus determines the device OS from the User Agent. In this example, we set the User Agent so that we appear to be running an
 iPhone:
 
-``` http
+```
 https://mobile..com/mob?id=1280178&size=320x50&debug_member=2048&dongle=DEBUG_AUTH&ua=Mozilla/5.0%20(iPhone;%20CPU%20iPhone%20OS%206_0%20like%20Mac%20OS%20X)%20AppleWebKit/536.26%20(KHTML,%20like%20Gecko)%20Version/6.0%20Mobile/10A5376e%20Safari/8536.25
 ```
 

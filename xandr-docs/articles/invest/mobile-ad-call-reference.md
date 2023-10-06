@@ -10,8 +10,7 @@ description: In this article, learn about the Mobile ad call reference, its quer
 
 This document describes our mobile ad calls, the `/ssmob` and `/mob` calls, which are used to request ads for mobile apps. These calls include information about the client device as query string parameters.
 
-For definitions of all the supported parameters, see [Query string parameters](#query-string-parameters) below. For examples of real mobile ad calls, see the
-Examples.
+For definitions of all the supported parameters, see [Query string parameters](#query-string-parameters) below. For examples of real mobile ad calls, see the [Examples](#examples).
 
 Note that the `/ssmob` and `/mob` calls described on this page are for **mobile app traffic only**.
 
@@ -47,7 +46,7 @@ The mobile ad call accepts the query string parameters shown below. For examples
 | `connection_type` | string | No | The type of network used by the device. Allowed values are `"wifi"` or `"wan"`. |
 | `devmake` | string | No | Manufacturer of the device requesting an ad. |
 | `devmodel` | string | No | Model of the device requesting an ad. |
-| `LimitAdTrackingEnabled` | boolean | No | If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`,`1`, or `0`.<br> **Tip:** For more information about the system-level ads preferences on iOS, see [Opt out of interest-based ads from iAd](https://support.apple.com/en-us/HT202074).<br>For more information about the system-level ads preferences on Android, see [Advertising ID](https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/AdvertisingIdClient). |
+| `LimitAdTrackingEnabled` | boolean | No | If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`.<br> **Tip:** For more information about the system-level ads preferences on iOS, see [Opt out of interest-based ads from iAd](https://support.apple.com/en-us/HT202074).<br>For more information about the system-level ads preferences on Android, see [Advertising ID](https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/AdvertisingIdClient). |
 | `dnt` | boolean | No | **Note: This field is deprecated, and may be removed in the future.** Use the `LimitAdTrackingEnabled` flag instead.<br>If `true`, the user has set the system-level preference to not receive behaviorally targeted ads. Allowed values: `true`, `false`, `1`, or `0`. |
 | `devtime` | int | No | The time on the device, measured in seconds since the epoch, or [UNIX Time](https://en.wikipedia.org/wiki/Unix_time). |
 | `devtz` | string | No | The device's timezone. |
@@ -81,8 +80,7 @@ Most of the examples in this section are based on real ad calls made by our Mobi
 
 The requests differ from those made by the SDK as follows:
 
-- We ask for the ad in varying formats ? JavaScript (the default), JSON,
-  and HTML
+- We ask for the ad in varying formats ? JavaScript (the default), JSON, and HTML.
 - We use the `curl` command line tool to request the ad from the server; for more information about `curl`, see the project website at [https://curl.haxx.se/](https://curl.haxx.se/).
 
 > [!NOTE]
@@ -93,8 +91,10 @@ The requests differ from those made by the SDK as follows:
 > [!IMPORTANT]
 > If no response format is specified, the response will be JavaScript by default.
 
-``` javascript
+```
+
 curl "https://mobile.adnxs.com/mob?id=1281482&idfa=610B91D7-8F0D-423A-A98E-333DC41D04A2&devmake=Apple&devmodel=x86_64&appid=ANX.FunWithBeingMediatedByMoPub&ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%207_0_3%20like%20Mac%20OS%20X%29%20AppleWebKit%2F537.51.1%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F11B508&orientation=v&connection_type=wifi&devtime=1389725718&language=en&native_browser=0&psa=1&st=mobile_app&sdkver=1.7&size=320x50" document.write('<a href="https://nym1.mobile.adnxs.com/click?_Knx0k1iUD_8qfHSTWJQPwAAAAAAAPA__Knx0k1iUD_8qfHSTWJQP6DymlWmmrZKp-qJIdPe_STeGiJTAAAAAMqNEwC-AwAAvgMAAAIAAADtN2oAPsYCAAYAAQBVU0QAVVNEAEABMgARIAAAS7AAAgMCAQIAAAAADSiQdwAAAAA./cnd=%21LAZnOQjmx04Q7e-oAxi-jAsgBA../referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Faww.reddit.com" target="_blank"><img width="320" height="50" style="border-style: none" src="https://placekitten.com/g/320/50"/></a>');
+
 ```
 
 ## JSON
@@ -104,19 +104,19 @@ curl "https://mobile.adnxs.com/mob?id=1281482&idfa=610B91D7-8F0D-423A-A98E-333DC
 
 ### Banner
 
-```json
+```
 curl "https://mobile.adnxs.com/mob?id=1281482&idfa=610B91D7-8F0D-423A-A98E-333DC41D04A2&devmake=Apple&devmodel=x86_64&appid=ANX.FunWithBeingMediatedByMoPub&ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%207_0_3%20like%20Mac%20OS%20X%29%20AppleWebKit%2F537.51.1%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F11B508&orientation=v&connection_type=wifi&devtime=1389725718&language=en&native_browser=0&psa=1&format=json&st=mobile_app&sdkver=1.7&size=320x50" { "status": "ok", "ads": [{"type":"banner", "width":320, "height":50, "content": "<script type=\"text/javascript\">document.write('<a href=\"https://nym1.mobile.adnxs.com/click?_Knx0k1iUD_8qfHSTWJQPwAAAAAAAPA__Knx0k1iUD_8qfHSTWJQP-ciduUWOCtUp-qJIdPe_SR4FSJTAAAAAMqNEwC-AwAAvgMAAAIAAADtN2oAPsYCAAYAAQBVU0QAVVNEAEABMgARIAAA4pUABQMCAQIAAAAAkSZ64AAAAAA./cnd=%21LAZnOQjmx04Q7e-oAxi-jAsgBA../referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Faww.reddit.com\" target=\"_blank\"><img width=\"320\" height=\"50\" style=\"border-style: none\" src=\"https://placekitten.com/g/320/50\"/></a>');</script>"}] } 
 ```
 
 ### Interstitial
 
-``` json
+```
 curl 'https://mobile.adnxs.com/mob?id=1281482&md5udid=8747a995943822f78754d20587f7b4f7&sha1udid=028df4e36437e98f9e93c3ae0f9f99e512a28cee&devmake=motorola&devmodel=DROID%20X2&carrier=Verizon%20Wireless&appid=com.example.helloworldinterstitial&ua=Mozilla%2F5.0%20(Linux%3B%20U%3B%20Android%202.3.5%3B%20en-us%3B%20DROID%20X2%20Build%2F4.5.1A-DTN-200-18)%20AppleWebKit%2F533.1%20(KHTML%2C%20like%20Gecko)%20Version%2F4.0%20Mobile%20Safari%2F533.1&orientation=v&size=360x640&promo_sizes=300x250,320x480&language=en&devtime=1396901116263&connection_type=wan&native_browser=0&psa=1&format=json&st=mobile_app&sdkver=1.14' { "ads": [ { "content": "<script type="text/javascript">document.write('<a href="https://nym1.mobile.adnxs.com/click?_Knx0k1iUD_8qfHSTWJQPwAAAAAAAPA__Knx0k1iUD_8qfHSTWJQP833ijTfLRsp7_epnuN8OQDtBENTAAAAAMqNEwC-AwAAvgMAAAIAAABRoWAAPsYCAAYAAQBVU0QAVVNEACwB-gARIAAAA6YABQMCAQIAAAAAGScpIgAAAAA./cnd=%21vQWKNQjmx04Q0cKCAxi-jAsgBA../referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Faww.reddit.com" target="_blank"><img width="300" height="250" style="border-style: none" src="https://placekitten.com/300/250"/></a>');</script>", "height": 250, "width": 300, "type": "interstitial" } ], "status": "ok" } 
 ```
 
 ### No ad returned
 
-``` json
+``` 
 curl "https://mobile.adnxs.com/mob?id=656561&size=320x480&devmake=Motorola&devmodel=Droid&pcode=12561&LimitAdTrackingEnabled=false&appid=com.example.hello_world&format=json" 
 ```
 
@@ -125,7 +125,7 @@ curl "https://mobile.adnxs.com/mob?id=656561&size=320x480&devmake=Motorola&devmo
 
 ### Error message
 
-``` json
+``` 
 curl "https://mobile.adnxs.com/mob?id=656561&size=320x480&devmake=Motorola&devmodel=Droid&pcode=12561&LimitAdTrackingEnabled=false&appid=com.example.hello_world&format=json&FOO=BAR" { "status": "error", "errorMessage": "invalid input parameter: FOO" } 
 ```
 
@@ -134,18 +134,18 @@ curl "https://mobile.adnxs.com/mob?id=656561&size=320x480&devmake=Motorola&devmo
 > [!IMPORTANT]
 > In order to receive an HTML response, you must add `&format=html` to the query string of your request.
 
-``` json
+```
 curl "https://mobile.adnxs.com/mob?id=1281482&idfa=610B91D7-8F0D-423A-A98E-333DC41D04A2&devmake=Apple&devmodel=x86_64&appid=ANX.FunWithBeingMediatedByMoPub&ua=Mozilla%2F5.0%20%28iPhone%3B%20CPU%20iPhone%20OS%207_0_3%20like%20Mac%20OS%20X%29%20AppleWebKit%2F537.51.1%20%28KHTML%2C%20like%20Gecko%29%20Mobile%2F11B508&orientation=v&connection_type=wifi&devtime=1389725718&language=en&native_browser=0&psa=1&format=html&st=mobile_app&sdkver=1.7&size=320x50" <script type="text/javascript">document.write('<a href="https://nym1.mobile.adnxs.com/click?_Knx0k1iUD_8qfHSTWJQPwAAAAAAAPA__Knx0k1iUD_8qfHSTWJQP1bxcdIRjzU7p-qJIdPe_STAFyJTAAAAAMqNEwC-AwAAvgMAAAIAAADtN2oAPsYCAAYAAQBVU0QAVVNEAEABMgARIAAAQq8AAQMCAQIAAAAAuibhDAAAAAA./cnd=%21LAZnOQjmx04Q7e-oAxi-jAsgBA../referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Faww.reddit.com" target="_blank"><img width="320" height="50" style="border-style: none" src="https://placekitten.com/g/320/50"/></a>');</script> 
 ```
 
-## Native dds
+## Native ads
 
 > [!NOTE]
 > Native ads are not available from the `/ssmob` endpoint.
 
 ### Empty response
 
-``` json
+```
 curl 'https://mobile.adnxs.com/mob?id=4448024' {"status":"no_bid","version":1} 
 ```
 
@@ -162,7 +162,7 @@ Things to note about the native ad response include:
 
 - The web page/app is required to ping the `click_trackers` when a click is detected.
 
-  ``` json
+  ``` 
   $ curl 'https://mobile.adnxs.com/mob?id=4469257'
   {"status":"ok","version":1,"ads":[],"mediated":[],
   "native":

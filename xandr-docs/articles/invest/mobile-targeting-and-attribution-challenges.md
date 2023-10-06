@@ -10,7 +10,7 @@ In [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buyi
 > [!TIP]
 > Each of the sections below corresponds to a numbered section of the diagram for easier reference.
 
-:::image type="content" source="media/mobile-attribution-and-targeting-challenges.png" alt-text="Diagram of Mobile Attribution and Targeting Challenges":::
+:::image type="content" source="media/mobile-attribution-and-targeting-challenges.png" alt-text="Diagram of Mobile Attribution and Targeting Challenges.":::
 
 ## Cross-screen targeting and attribution
 

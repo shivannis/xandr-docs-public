@@ -24,7 +24,7 @@ This documentation provides step by step guide on how to migrate existing authen
 
       :::image type="content" source="media/b.png" alt-text="Screenshot of action required window.":::
 
-1. In the **Sign In** page, enter Email ID associated with your Xandr account login and click **Next**. If your have registered a different email ID for Microsoft products, ensure that Xandr platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Xandr Support portal](https://help.xandr.com/).
+1. In the **Sign In page**, enter Email ID associated with your Xandr account login and click **Next**. If your have registered a different email ID for Microsoft products, ensure that Xandr platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Xandr Support portal](https://help.xandr.com/).
 
      :::image type="content" source="media/c.png" alt-text="Screenshot of Microsoft sign in window.":::
 
