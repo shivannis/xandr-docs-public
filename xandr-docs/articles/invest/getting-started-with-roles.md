@@ -1,76 +1,31 @@
 ---
-Title : Getting Started with Roles
-Description : As a company doing business with Xandr, it's
-possible that you have more than one user responsible for your company's
-interaction with the system, whether that interaction is through the UI
-or the API. You may have several users who are responsible for different
+title: Microsoft Invest - Getting Started with Roles
+description: This article explains about the user access control with roles that can restrict user permissions based on the user's specific business needs.
 ---
 
+# Microsoft Invest - Getting started with roles
 
-# Getting Started with Roles
+As a company doing business with Xandr, it's possible that you have more than one user responsible for your company's interaction with the system, whether that interaction is through the UI or the API. You may have several users who are responsible for different
+advertisers and publishers, and for different aspects of working with those advertisers and publishers. In creating and managing your
+interactions, you want to ensure that you have the right users responsible for the right parts of the system. User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs.
 
+## Roles
 
-
-As a company doing business with Xandr, it's
-possible that you have more than one user responsible for your company's
-interaction with the system, whether that interaction is through the UI
-or the API. You may have several users who are responsible for different
-advertisers and publishers, and for different aspects of working with
-those advertisers and publishers. In creating and managing your
-interactions, you want to ensure that you have the right users
-responsible for the right parts of the system. User access control with
-roles gives you the ability to restrict user permissions based on the
-user's specific business needs.
-
-Roles
-
-A role defines the actions a user is allowed to take. For example, a
-user may have permission to view, modify, or delete a component in the
-system (such as an advertiser, publisher, or insertion order).
-See <a href="working-with-roles.md" class="xref"
-title="Roles determine what the users can view and perform in the Xandr system, and can be applied at the Platform or Feature level. You can also create custom roles depending on the need of the business.">Working
-with Roles</a> for more information on roles.
+A role defines the actions a user is allowed to take. For example, a user may have permission to view, modify, or delete a component in the system (such as an advertiser, publisher, or insertion order). See [Working with Roles](./working-with-roles.md) for more information on roles.
 
 Access control involves assigning a user to a role.
 
-Removing Components
+## Removing components
 
-A user's ability to view, create, edit, and delete components depends on
-the combination of roles and permissions. As mentioned previously,
-sometimes these combinations can lead to some confusion. Here is a
-possible scenario having to do with removing components, and what the
-results will be.
-
-
+A user's ability to view, create, edit, and delete components depends on the combination of roles and permissions. As mentioned previously, sometimes these combinations can lead to some confusion. Here is a possible scenario having to do with removing components, and what the results will be.
 
 User1 has the following permissions:
 
 - Custom Role: Advertisers Create/Edit and Advertisers/Orders - Delete
-- Team: SalesTeamUS with access to insertion orders 1, 2, and 5 under
-  AdvertiserA
+- Team: SalesTeamUS with access to insertion orders 1, 2, and 5 under AdvertiserA
 
+This gives User1 permissions to create new insertion orders under AdvertiserA (and add those insertion orders to team SalesTeamUS). This also gives User1 permission to view, edit, and delete insertion orders 1, 2, and 5, but not the full AdvertiserA information or insertion orders 3 and 4. So what happens if User1 deletes insertion orders 1, 2, and 5 before creating more insertion orders?
 
+In that case, even though everything User1 had been able to view under AdvertiserA is gone, User1 will still be able to create new insertion orders under AdvertiserA and add those insertion orders to SalesTeamUS.
 
-This gives User1 permissions to create new insertion orders under
-AdvertiserA (and add those insertion orders to team SalesTeamUS). This
-also gives User1 permission to view, edit, and delete insertion orders
-1, 2, and 5, but not the full AdvertiserA information or insertion
-orders 3 and 4. So what happens if User1 deletes insertion orders 1, 2,
-and 5 before creating more insertion orders?
-
-In that case, even though everything User1 had been able to view under
-AdvertiserA is gone, User1 will still be able to create new insertion
-orders under AdvertiserA and add those insertion orders to SalesTeamUS.
-
-
-
-For information on roles available to Xandr
-Invest DSP users, see
-<a href="xandr-invest-dsp-roles.md" class="xref">Microsoft Invest DSP
-Roles</a>
-
-
-
-
-
-
+For information on roles available to Microsoft Invest users, see [Microsoft Invest Roles](./xandr-invest-dsp-roles.md).
