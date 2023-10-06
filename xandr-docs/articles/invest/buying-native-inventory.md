@@ -13,7 +13,9 @@ simultaneously. This type of setup allows for easier budgeting, reporting, perfo
 For specific information on individual sellers, see [Native Inventory Seller Specifications](./native-inventory-seller-specifications.md)
 
 > [!IMPORTANT]
-> **Third-party pixel support** - For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
+> **Third-party pixel support**
+>
+> For HTML based banner creatives, tracking pixels are always fired. With native, creative assets are typically rendered outside of an iframe, therefore publishers are selective about the javascript they allow to run on their pages. Some publishers may not fire all javascript pixels attached to a creative. However, IAS javascript based pixels are now supported by Outbrain, Sharethrough, Triplelift, and AdYouLike. Note that AdYouLike only supports javascript pixels on deal ID buying.
 
 ## Step 1. Ensure you are in native sellers' allowlists
 
@@ -54,7 +56,7 @@ To maximize reach for your creatives across native inventory sources, here are s
 If a parameter is not mentioned in the table above, enter whatever values make sense for your campaign.
 
 For detailed information on additional fields and uploading a native
-creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](../attachments/native-best-practices/Buy-Side-Native-Best-Practices.pdf).
+creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md). You can also review our [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Buy-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
