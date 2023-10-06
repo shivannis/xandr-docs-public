@@ -36,8 +36,8 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
         inherit the advertiser's currency. You cannot change the
         currency after saving the insertion order.
 
-     > [!TIP]
-   > As a best practice, align currency to the billing  currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+       > [!TIP]
+  > As a best practice, align currency to the billing    currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
     1. Select a viewability standard.
     1. Select a budget type.
@@ -47,7 +47,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
         and identify whether this advertising takes place on the federal
         or state or local level, or both. For more information, see [Political Advertising](#political-advertising).
 
-     > [!NOTE]
+       > [!NOTE]
    > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
 1. Set the supply strategy, determining the inventory type and
@@ -157,7 +157,7 @@ Select a budget type:
   impression-based line items to this insertion order.
 - **Flexible** - use to associate both impression-based and revenue-based line items to this insertion order. All budgets must be set on the line item object when using the **Flexible** budget type.
 
-  > [!WARNING]
+> [!WARNING]
 > You cannot change the **Budget Type** once you save the insertion order.
 
 ### Billing periods
@@ -188,8 +188,8 @@ insertion order's billing periods.
   the line item.
 
   > [!IMPORTANT]
->  - You cannot set a start date in the past.
-> - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
+  > - You cannot set a start date in the past.
+  > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
 
 ### Pacing
 

@@ -187,8 +187,8 @@ Follow these steps to run your report.
     selections you make here will determine what report data is
     delivered to you, and how.
   
-    > [!IMPORTANT]
-  > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that
@@ -199,8 +199,8 @@ Follow these steps to run your report.
     **Add** to include them in the
     **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
-    > [!WARNING]
->The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
+   > [!WARNING]
+   >The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and
     grouped by your chosen dimensions, you need to choose a delivery
