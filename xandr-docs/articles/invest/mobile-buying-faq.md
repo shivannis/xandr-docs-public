@@ -3,7 +3,7 @@ title: Microsoft Invest - Mobile Buying FAQ
 description: In this article, explore the frequently asked questions (FAQ) on mobile ad campaigns and mobile reporting.
 ---
 
-# Microsoft Invest - Mobile Buying FAQ
+# Microsoft Invest - Mobile buying FAQ
 
 ## Mobile ad campaigns
 
