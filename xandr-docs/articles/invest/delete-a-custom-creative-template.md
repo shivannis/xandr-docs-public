@@ -1,59 +1,23 @@
 ---
-Title : Delete a Custom Creative Template
-Description : You can delete existing custom templates from the
-Creative Templates screen at any
-time. You can't delete Xandr standard templates.
+title: Microsoft Invest - Delete a Custom Creative Template
+description: In this article, explore the detailed step-by-step instructions on how to delete a custom creative template at any given time.
 ---
 
+# Microsoft Invest - Delete a custom creative template
 
-# Delete a Custom Creative Template
+You can delete existing custom templates from the **Creative Templates** screen at any time. You can't delete Xandr standard templates.
 
+1. Navigate to the **Creative Templates** screen by clicking **Creative &gt; Templates**.
+1. Select the checkboxes for any creative templates that need to be deleted.
+1. Click the **Actions** pull-down menu and select **Delete**.
 
+    The **Delete template(s)** dialog displays.
 
-You can delete existing custom templates from the
-Creative Templates screen at any
-time. You can't delete Xandr standard templates.
+1. Click **Delete**.
 
+    The custom creative template will no longer display on the **Creative Templates** screen.
 
+## Related topics
 
-1.  Navigate to the
-    Creative Templates screen by
-    clicking
-    Creative
-    \> Templates.
-2.  Select the checkboxes for any creative
-    templates that need to be deleted.
-3.  Click the
-    Actions pull-down menu and select
-    Delete.
-    
-
-    The Delete template(s) dialog
-    displays.
-
-    
-4.  Click
-    Delete.
-    
-
-    The custom creative template will no longer display on the
-    Creative Templates screen.
-
-    
-
-
-
-Related Topics
-
-- <a href="creative-templates.md" class="xref"
-  title="If you want to customize the way creatives render, you can create your own templates from scratch, or you can copy Xandr standard templates and modify them to fit your needs.">Creative
-  Templates</a>
-- <a href="managing-creative-templates.md" class="xref"
-  title="You can use the Creative Templates screen to view all corresponding details for each standard and custom creative template.">Managing
-  Creative Templates</a>
-
-
-
-
-
-
+- [Creative Templates](creative-templates.md)
+- [Managing Creative Templates](managing-creative-templates.md)

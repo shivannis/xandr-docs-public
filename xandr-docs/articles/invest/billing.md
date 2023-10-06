@@ -1,120 +1,48 @@
 ---
-Title : Billing
-Description : For real-time inventory, Xandr serves as the
-clearinghouse by paying inventory sellers and then billing buyers.
+title: Microsoft Invest - Billing
+description: This article provides resources for accessing and understanding your billing information like pricing terms, credit status, and so on.
 ---
 
+# Microsoft Invest - Billing
 
-# Billing
+For real-time inventory, Xandr serves as the clearinghouse by paying inventory sellers and then billing buyers. Networks and direct marketers pay their managed publishers directly. This section provides resources for accessing and understanding your billing information.
 
+> [!IMPORTANT]
+> To view the Billing dashboard, your account must be assigned to the **Financial Observer** role. Contact your Xandr representative if you do not have the correct access.
 
+Member users with special access can access past invoices, seller statements, and credit status, as well as pricing terms (used when calculating fees and charges on invoices) directly in Microsoft Invest.
 
-For real-time inventory, Xandr serves as the
-clearinghouse by paying inventory sellers and then billing buyers.
-Networks and direct marketers pay their managed publishers directly.
-This section provides resources for accessing and understanding your
-billing information.
+## Viewing or downloading your invoices and/or seller statements
 
+To access past invoices, select **Billing** under your Member settings. in the menu bar.
 
+Billing periods reflect periods of platform activity. For example, a June invoice reflects your platform activity in June. However, you may not receive the invoice until July.
 
-<b>Important:</b> To view the Billing
-dashboard, your account must be assigned to the
-Financial Observer role. Contact your
-Xandr representative if you do not have the
-correct access.
+For each billing period listed, you can click to view the invoice and/or seller statement. Invoices and seller statements available in
+Microsoft Invest are identical to the invoices you receive (via email) from Xandr.
 
+For a detailed explanation of the fields and values in an invoice or seller statement, see [Understanding Your Invoice](understanding-your-invoice.md).
 
+## Viewing your pricing terms
 
-Member users with special
-access can access past invoices, seller statements, and credit
-status, as well as pricing terms (used when calculating fees and charges
-on invoices) directly in Invest DSP.
+For a quick overview of the pricing terms that go into calculating the fees and charges in your invoices and statements, select **Billing** under your Member settings and then click the **Pricing** tab.
 
+For more details about pricing terms, review your contract or see [Understanding Your Pricing Terms](understanding-your-pricing-terms.md).
 
+## Giving users access to billing information
 
-## Viewing or Downloading Your Invoices and/or Seller Statements
+Only Member-level users can be given access to billing information. To do so:
+Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](create-a-user.md).
 
-To access past invoices, select
-Billing under your
-Member settings. in the menu bar.
+## Checking your credit status
 
-Billing periods reflect periods of platform activity. For example, a
-June invoice reflects your platform activity in June. However, you may
-not receive the invoice until July.
+To review the credit status of your account and/or the balance or unbilled activity of your member, select **Billing** under your Member settings. Click the **Credit Status** tab.
 
-For each billing period listed, you can click to view the invoice and/or
-seller statement. Invoices and seller statements available in
-Invest DSP are identical to the invoices you
-receive (via email) from Xandr.
-
-For a detailed explanation of the fields and values in an invoice or
-seller statement, see
-<a href="understanding-your-invoice.md" class="xref"
-title="Annotated descriptions of the contents of your Xandr invoices.">Understanding
-Your Invoice</a> .
-
-
-
-
-
-## Viewing Your Pricing Terms
-
-For a quick overview of the pricing terms that go into calculating the
-fees and charges in your invoices and statements, select
-Billing under your
-Member settings and then click the
-Pricing tab.
-
-For more details about pricing terms, review your contract or see
-<a href="understanding-your-pricing-terms.md" class="xref"
-title="Charges and fees for common activity on Xandr&#39;s platform can be found in the Billing section of the UI. This page provides an overview of these common charges. For a complete list of charges and fees you may incur, see your contract or contact your Xandr representative.">Understanding
-Your Pricing Terms</a>.
-
-
-
-
-
-## Giving Users Access to Billing Information
-
-Only Member-level users can be given access to
-billing information. To do so:
-
-Assign the user the Financial Observer
-role. Note that this grants the user the ability to install apps as well
-as view billing information. For more details, see
-<a href="create-a-user.md" class="xref">Create a User</a>.
-
-
-
-
-
-## Checking your Credit Status
-
-To review the credit status of your account and/or the balance or
-unbilled activity of your member, select
-Billing under your Member settings.
-Click the Credit Status tab.
-
-The information displayed on this tab is divided into two sections,
-those that apply to your member and those that apply to your parent
+The information displayed on this tab is divided into two sections, those that apply to your member and those that apply to your parent
 account. There may be more than one member per account.
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a href="understanding-your-invoice.md" class="xref"
-  title="Annotated descriptions of the contents of your Xandr invoices.">Understanding
-  Your Invoice</a>
-- <a href="understanding-your-pricing-terms.md" class="xref"
-  title="Charges and fees for common activity on Xandr&#39;s platform can be found in the Billing section of the UI. This page provides an overview of these common charges. For a complete list of charges and fees you may incur, see your contract or contact your Xandr representative.">Understanding
-  Your Pricing Terms</a>
-- <a href="billing-faq.md" class="xref">Billing FAQ</a>
-
-
-
-
-
-
+- [Understanding Your Invoice](understanding-your-invoice.md)
+- [Understanding Your Pricing Terms](understanding-your-pricing-terms.md)
+- [Billing FAQ](billing-faq.md)
