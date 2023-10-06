@@ -1,8 +1,6 @@
 ---
 title : Microsoft Invest - Peer Approval
-description : Learn how Peer Approval provides a way for you to ensure that augmented line items
-are reviewed and approved by a second user before they can be set to
-active. 
+description : Learn how Peer Approval provides a way for you to ensure that augmented line items are reviewed and approved by a second user before they can be set to active. 
 ---
 
 

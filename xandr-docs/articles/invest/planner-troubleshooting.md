@@ -1,8 +1,6 @@
 ---
 title : Microsoft Invest - Planner Troubleshooting
-description : ## Estimated Reach = 0
-If you don't see any estimated reach, it means that no auctions or users
-in the daily or weekly sample matched the targeting parameters you set.
+description : Learn about Planner Troubleshooting in this module.
 ---
 
 

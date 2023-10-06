@@ -1,7 +1,6 @@
 ---
 title : Microsoft Invest - Partnership Details Screen
-description : learn viewing and managing your
-relationship with a specific seller on the Partnership details screen. 
+description : Learn how to view and manage your relationship with a specific seller in Partnership Details Screen. 
 ---
 
 
