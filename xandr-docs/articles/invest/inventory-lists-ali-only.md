@@ -151,7 +151,9 @@ The list(s) you selected will be downloaded to your local drive. If you exported
       1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 8-10 in the [Create a New Inventory List](#create-a-new-inventory-list) section for more information.
       1. Click **Save**.
 
-    - **Remove**: Remove domains/apps from the list. (**Warning**: This action cannot be undone.)
+    - **Remove**: Remove domains/apps from the list. 
+        > [!WARNING]
+        > This action cannot be undone.
       1. Select the checkbox of each domain or app that you want to remove.
       1. Click **Remove**.
       1. Click **Delete**.
@@ -168,7 +170,9 @@ The list(s) you selected will be downloaded to your local drive. If you exported
         1. Click **Add**.
         1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 7-9 in the [Create a New Inventory List](#create-a-new-inventory-list) section.
 
-      - **Remove**: Remove domains or apps from the list. (**Warning**: This action cannot be undone.)
+      - **Remove**: Remove domains or apps from the list. 
+          > [!WARNING]
+          > This action cannot be undone.
           1. Select the checkbox of each domain or app that you want to remove.
           1. Click **Remove**.
           1. Click **Delete Domains & Apps**.
