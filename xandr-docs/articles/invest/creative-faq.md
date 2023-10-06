@@ -1,23 +1,16 @@
 ---
-Title : Creative FAQ
-Description : ## Why is my creative skewed/truncated?
-Most likely the the wrong tag size was selected.
+title : Microsoft Invest - Creative FAQ
+description : Learn about issues with creatives and how to resolve those issues.
 ---
 
 
-# Creative FAQ
+# Microsoft Invest - Creative FAQ
 
-
-
-
+Here are some answers to common questions on creatives.
 
 ## Why is my creative skewed/truncated?
 
 Most likely the the wrong tag size was selected.
-
-
-
-
 
 ## My creative isn't showing up. What's wrong?
 
@@ -64,10 +57,6 @@ specific to Microsoft Monetize. If removing comment wrappers or altering
 incorrect formatting doesn't remedy the problem and the creative is
 loading in your browser, feel free to submit a support ticket.
 
-
-
-
-
 ## I'm not seeing any clicks, so why does my creative appear to be serving?
 
 We now have a built-in click-tracking test in the creative Full Edit
@@ -79,30 +68,17 @@ flash creatives use other capitalization variations (e.g. clickTag). You
 can decompile the flash file using a free software utility (e.g. Flare)
 to check.
 
-Please see <a href="click-tracking.md" class="xref"
-title="Click tracking serves many useful purposes within the ad serving industry as a whole. For Xandr, click tracking is necessary for optimizing to CPC and CPA goals, for bidding CPC and CPA, and for measuring a campaign&#39;s success.">Click
-Tracking</a> for further details on click tracking. If you are still
+Please see [Click Tracking](click-tracking.md) for further details on click tracking. If you are still
 having problems, please contact Xandr Support.
 
 
 ## Can I run creatives in different languages?
 
-Please see <a
-href="xandr-bidders/international-creatives.md"
-class="xref" target="_blank">International Creatives</a>.
-
-
+Please see [International Creatives](../bidders/international-creatives.md).
 
 ## What happens if multiple creatives are attached to the same line item?
 
-If the creatives are different sizes, then the appropriate size will be
-chosen for the publisher's tag. If there are several creatives of the
-same size, one creative will be chosen at random for each impression,
-assuming they are all eligible based on frequency and recency
-parameters.
-
-
-
+If the creatives are different sizes, then the appropriate size will be chosen for the publisher's tag. If there are several creatives of the same size, one creative will be chosen at random for each impression, assuming they are all eligible based on frequency and recency parameters.
 
 ## Why won't my creative click through properly in Full Edit mode?
 
@@ -115,19 +91,7 @@ href="https://creative-preview-an.com/cached/creative/insert%20creative%20id%20h
 class="xref" target="_blank"><code
 class="ph codeph">https://creative-preview-an.com/cached/creative/insert creative id here</code></a>.
 
+## Gambling creatives
 
-
-
-## Gambling Creatives
-
-Please see our
-<a href="https://wiki.xandr.com/display/policies/Policies+for+Buying"
-class="xref" target="_blank">Policies for Buying</a> (login required)
-for information on what kinds of gambling ads are allowed to serve and
-under what conditions.
-
-
-
-
-
-
+Please see our is [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx)
+ (login required) for information on what kinds of gambling ads are allowed to serve and under what conditions.
