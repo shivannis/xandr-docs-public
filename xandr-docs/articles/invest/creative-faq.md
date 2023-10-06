@@ -4,7 +4,9 @@ description : Learn about issues with creatives and how to resolve those issues.
 ---
 
 
-# Creative faq in  Microsoft Invest
+# Microsoft Invest - Creative FAQ
+
+Here are some answers to common questions on creatives.
 
 ## Why is my creative skewed/truncated?
 
@@ -72,7 +74,7 @@ having problems, please contact Xandr Support.
 
 ## Can I run creatives in different languages?
 
-Please see [International Creatives](../bidders/international-creatives.md)
+Please see [International Creatives](../bidders/international-creatives.md).
 
 ## What happens if multiple creatives are attached to the same line item?
 

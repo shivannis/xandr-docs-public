@@ -4,7 +4,7 @@ description : Learn creating augmented line items (ALIs) to define your financia
 ---
 
 
-# Create an augmented line item in Microsoft Invest
+# Microsoft Invest - create an augmented line item 
 
 You create augmented line items (ALIs) to define your financial
 relationship with an advertiser, set up targeting for an advertising
@@ -14,7 +14,6 @@ Before you begin creating a line item, you must first perform the
 following tasks:
 
 - [Create an Advertiser](create-an-advertiser.md)
-
 - [Create an Insertion Order](create-an-insertion-order.md)<br>The insertion order you created must have at least one billing period with dates in the future.
 
 You can create a line item before you have performed the following

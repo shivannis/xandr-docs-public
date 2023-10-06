@@ -4,10 +4,10 @@ description : Learn creating custom events and parameters for the universal pixe
 ---
 
 
-# Create custom events and parameters in Microsoft Invest
+# Microsoft Invest - Create custom events and parameters
 
 If you click the pencil icon next to a pixel on the
-**Universal** Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.
+**Universal Pixels** page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.
 
 Custom events are values set on the event key. Custom parameters are
 dynamically populated key-value pairs that contain additional metadata
@@ -24,13 +24,14 @@ To set up custom events and parameters:
 1. In the **Create New Custom Field** screen,
     click **Event** or **Parameter** and provide a name for the event or parameter.
 
-  > [!NOTE]
-> Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Invest DSP will modify your parameter names if they don't match this convention.
+   > [!NOTE]
+   > Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Invest DSP will modify your parameter names if they don't match this convention.
 
 1. If you’re creating a custom parameter, specify
     whether the expected value is a string or a number.
-1. Provide any additional description in the **Description** field. 
-1. Click **Save** to save the event or parameter. Custom events will be displayed below the standard events in the **Events** tab. Custom parameters will be available to associate with any event (standard or custom) during event configuration.
+1. Provide any additional description in the **Description** field.
+1. Click **Save** to save the event or parameter.<br>
+   Custom events will be displayed below the standard events in the **Events** tab. Custom parameters will be available to associate with any event (standard or custom) during event configuration.
 
 ## Related topics
 
