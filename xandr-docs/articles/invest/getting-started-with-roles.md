@@ -28,4 +28,4 @@ This gives User1 permissions to create new insertion orders under AdvertiserA (a
 
 In that case, even though everything User1 had been able to view under AdvertiserA is gone, User1 will still be able to create new insertion orders under AdvertiserA and add those insertion orders to SalesTeamUS.
 
-For information on roles available to Xandr Invest DSP users, see [Microsoft Invest DSP Roles](./xandr-invest-dsp-roles.md).
+For information on roles available to Microsoft Invest users, see [Microsoft Invest Roles](./xandr-invest-dsp-roles.md).
