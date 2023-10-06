@@ -3,7 +3,6 @@ title : Microsoft Invest - Creative FAQ
 description : Learn about issues with creatives and how to resolve those issues.
 ---
 
-
 # Microsoft Invest - Creative FAQ
 
 Here are some answers to common questions on creatives.
@@ -33,10 +32,7 @@ often the problem behind blank creatives.
 If your tag code is correct, load a creative preview using our server
 URL:
 
-<a
-href="https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here"
-class="xref" target="_blank"><code
-class="ph codeph">https://creative-preview-an.com/cached/creative/insert creative id here</code></a>
+[https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here)
 
 After refreshing a few times, if the page is blank, you should inspect
 the creative's tag content. Check to see if there are any glaring format
@@ -71,14 +67,17 @@ to check.
 Please see [Click Tracking](click-tracking.md) for further details on click tracking. If you are still
 having problems, please contact Xandr Support.
 
-
 ## Can I run creatives in different languages?
 
 Please see [International Creatives](../bidders/international-creatives.md).
 
 ## What happens if multiple creatives are attached to the same line item?
 
-If the creatives are different sizes, then the appropriate size will be chosen for the publisher's tag. If there are several creatives of the same size, one creative will be chosen at random for each impression, assuming they are all eligible based on frequency and recency parameters.
+If the creatives are different sizes, then the appropriate size will be
+chosen for the publisher's tag. If there are several creatives of the
+same size, one creative will be chosen at random for each impression,
+assuming they are all eligible based on frequency and recency
+parameters.
 
 ## Why won't my creative click through properly in Full Edit mode?
 
@@ -86,12 +85,10 @@ Currently, the creative preview in Full Edit is not intended to be fully
 functional. You can click through outside of Full Edit mode, or use the
 following URL to serve your creative:
 
-<a
-href="https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here"
-class="xref" target="_blank"><code
-class="ph codeph">https://creative-preview-an.com/cached/creative/insert creative id here</code></a>.
+[https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here)
 
 ## Gambling creatives
 
-Please see our is [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx)
- (login required) for information on what kinds of gambling ads are allowed to serve and under what conditions.
+Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and
+under what conditions.
+
