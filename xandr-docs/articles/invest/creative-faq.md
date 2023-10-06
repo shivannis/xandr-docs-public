@@ -1,10 +1,11 @@
 ---
-title : Microsoft - Invest Creative FAQ
-description : Get answers to your queries on creatives like why your creative is not showing up or appears truncated.
+title : Microsoft Invest - Creative FAQ
+description : Learn about issues with creatives and how to resolve those issues.
 ---
 
+# Microsoft Invest - Creative FAQ
 
-# Microsoft Invest - creative FAQ 
+Here are some answers to common questions on creatives.
 
 ## Why is my creative skewed/truncated?
 
@@ -90,3 +91,4 @@ following URL to serve your creative:
 
 Please see our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) for information on what kinds of gambling ads are allowed to serve and
 under what conditions.
+

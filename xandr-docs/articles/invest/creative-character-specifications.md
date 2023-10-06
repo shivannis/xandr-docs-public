@@ -4,10 +4,12 @@ description : Learn about character specifications that you should keep in mind 
 ---
 
 
+
 # Microsoft Invest - creative character specifications 
 
 There are character specifications that you should keep in mind when
 uploading creatives on to the Xandr platform.
+
 
 Our creative fields support the following:
 
@@ -16,6 +18,7 @@ Our creative fields support the following:
 - All accent marks (~)
 - All punctuation marks (: ;)
 - All symbols (% \#)
+
 
 The following table provides the character limit for each field that is
 available from the Creative screens within the
@@ -36,6 +39,7 @@ UI:
 | **Trackers > Custom Pixels** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | No Limit |
 | **Brand URL** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | No Limit |
 | **External Identifier** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | 100 |
+
 
 ## Related topics
 
