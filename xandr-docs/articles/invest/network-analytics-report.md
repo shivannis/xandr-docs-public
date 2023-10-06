@@ -100,7 +100,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred. <br> For impressions older than 100 days, the ID will be 0. |
-| Placement | Yes | The name and ID of the placement through which this impression occurred. <br> **Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
+| Placement | Yes | The name and ID of the placement through which this impression occurred. <br> **Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Insertion Order | Yes | The insertion order under which this impression was purchased. |
 | Insertion Order: Type | No | The insertion order type (e.g., Legacy IO, Seamless IO). |
 | Insertion Order: State | No | The state of the insertion order (e.g., active, inactive). |

@@ -398,7 +398,7 @@ You can preview your creative in the [Sharethrough Native Ad Generator](https://
 - **Taboola Native Display** - Activated through DSP via open auction or PMPs (pricing models: vCPM - guarantees 100% viewability, or CPM)
   - High impact native placements, including Top of Feed, Homepage as well as an Ad Adjacency solution are available via PMP.
 - **Taboola Video** - Activated through DSP via open auction or PMPs (pricing model: CPM)
-- **Native Video** - Soon to come with Xandr Invest.
+- **Native Video** - Soon to come with Microsoft Invest.
 
 **Supply types**
 
