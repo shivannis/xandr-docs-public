@@ -4,7 +4,7 @@ description : Learn about character specifications that you should keep in mind 
 ---
 
 
-# Creative character specifications in Microsoft Invest
+# Microsoft Invest - creative character specifications 
 
 There are character specifications that you should keep in mind when
 uploading creatives on to the Xandr platform.

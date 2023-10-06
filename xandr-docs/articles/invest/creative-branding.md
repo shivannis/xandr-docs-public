@@ -4,7 +4,7 @@ description : Learn to maintain and monitor a brand list, ensuring duplicate bra
 ---
 
 
-# Creative branding in Microsoft Invest
+# Microsoft Invest - creative branding 
 
 Xandr maintains and monitors a brand list,
 ensuring duplicate brands and URLs are deleted or reassigned in order to

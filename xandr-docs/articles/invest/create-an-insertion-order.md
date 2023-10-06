@@ -4,7 +4,7 @@ description : Learn how Insertion orders enable you to better organize, track, a
 ---
 
 
-# Create an insertion order in Microsoft Invest
+# Microsoft Invest - create an insertion order
 
 Insertion orders enable you to better organize, track, and allocate
 budget to your line items. Associating your line items with insertion

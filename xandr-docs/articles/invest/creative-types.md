@@ -4,7 +4,7 @@ description : Learn to host a variety of creative types or traffic them through 
 ---
 
 
-# Creative types in Microsoft Invest
+# Microsoft Invest - creative types 
 
 You can host a variety of creative types with
 Xandr or traffic them through third-party ad

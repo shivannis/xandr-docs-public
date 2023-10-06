@@ -4,7 +4,7 @@ description : Learn how to customize the way creatives render, create your own t
 ---
 
 
-# Creative templates in Microsoft Invest
+# Microsoft Invest - creative templates 
 
 If you want to customize the way creatives render, you can create your
 own templates from scratch, or you can copy

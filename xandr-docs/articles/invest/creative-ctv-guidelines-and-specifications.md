@@ -4,7 +4,7 @@ description : Learn to serve on Xandr publisher's CTV inventory for which your c
 ---
 
 
-# Creative CTV guidelines and specifications in Microsoft Invest
+# Microsoft Invest - creative CTV guidelines and specifications 
 
 To serve on Xandr publisher's CTV inventory,
 your creatives must meet the guidelines and specification requirements, as well as Xandr creative standards and any

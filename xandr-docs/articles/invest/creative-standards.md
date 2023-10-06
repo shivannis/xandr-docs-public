@@ -4,7 +4,7 @@ description : Learn about foundational policies that all creative and inventory 
 ---
 
 
-# Creative standards in Microsoft Invest
+# Microsoft Invest - creative standards
 
 Xandr has foundational policies that all
 creative and inventory content must follow. Creatives that violate these

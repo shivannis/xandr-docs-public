@@ -4,7 +4,7 @@ description : Learn creative delivery strategy using the Creative Rotation setti
 ---
 
 
-# Creative rotation (ALI) in Microsoft Invest
+# Microsoft Invest - creative rotation (ALI) 
 
 When multiple creatives of the same size are trafficked to a line item,
 you can set a creative delivery strategy using the

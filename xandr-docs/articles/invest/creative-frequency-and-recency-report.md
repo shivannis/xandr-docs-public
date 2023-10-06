@@ -4,7 +4,7 @@ description : Learn how the Creative Frequency and Recency report lets you view 
 ---
 
 
-# Creative frequency and recency report in Microsoft Invest
+# Microsoft Invest - creative frequency and recency report 
 
 The Creative Frequency and Recency report lets you view how often and
 how frequently users are viewing a specific advertiser's creatives.

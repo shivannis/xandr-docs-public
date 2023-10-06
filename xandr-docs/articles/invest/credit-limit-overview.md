@@ -4,7 +4,7 @@ description : Learn how to offer credit management to support an enhanced level 
 ---
 
 
-# Credit limit overview in Microsoft Invest
+# Microsoft Invest - credit limit overview 
 
 Xandr offers credit management to support an
 enhanced level of service while ensuring that all our partners are

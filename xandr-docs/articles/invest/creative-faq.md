@@ -4,7 +4,7 @@ description : Get answers to your queries on creatives like why your creative is
 ---
 
 
-# Creative FAQ in Microsoft - Invest 
+# Microsoft Invest - creative FAQ 
 
 ## Why is my creative skewed/truncated?
 
