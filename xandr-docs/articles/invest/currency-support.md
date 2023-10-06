@@ -171,7 +171,7 @@ Once an auction has been completed, you can review the details related to it in 
 
 | Report Name | What it contains |
 |:---|:---|
-| **Buying Billing Report** | - Monetary fields are displayed in local currency by default.<br> - "Buying Currency" is a default dimension. All monetary fields are displayed in the Transaction Currency (Line Item currency) logged at auction time.<br> - Deselecting "Buying Currency" as a dimension will display all monetary fields in USD. |
+| **Buying Billing Report** | - Monetary fields are displayed in local currency by default.<br/> - "Buying Currency" is a default dimension. All monetary fields are displayed in the Transaction Currency (Line Item currency) logged at auction time.<br> - Deselecting "Buying Currency" as a dimension will display all monetary fields in USD. |
 | **Selling Billing Report** | - Monetary fields are displayed in local currency by default.<br> - "Selling Currency" is a default dimension. All monetary fields are displayed in the Transaction Currency (Publisher currency) logged at auction time.<br> - Deselecting "Selling Currency" as a dimension will display all monetary fields in USD. |
 | **Network Analytics Report** | - Monetary fields are displayed in USD by default.<br> - Selecting "Buying Currency" as a dimension will display all monetary fields in the Transaction Currency (Line Item currency) logged at auction time.<br> - Selecting "Selling Currency" as a dimension will display all monetary fields in the Transaction Currency (Publisher currency) logged at auction time. |
 
