@@ -3,7 +3,7 @@ title: Microsoft Invest - Guaranteed Outcomes
 description: Guaranteed Outcomes allows buyers to pay for media with maximum reach and sellers to benefit from increased demand without risk.
 ---
 
-# Microsoft Invest - Guaranteed outcomes
+# Microsoft Invest - Guaranteed Outcomes
 
 With Guaranteed Outcomes, buyers can achieve maximum reach while paying for media in a way that makes sense for their business, and sellers benefit from increased demand in the auction without having to manage the risk of impressions that don’t achieve the buyer’s desired outcome. Guaranteed Outcomes is a feature of the Xandr Exchange, designed to reduce friction in the programmatic marketplace by enabling buyers to purchase 100% of their media with the assurance that it will be viewed completely.
 

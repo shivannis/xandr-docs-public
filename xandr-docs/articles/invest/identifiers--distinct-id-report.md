@@ -3,7 +3,7 @@ title: Microsoft Invest - Identifiers - Distinct ID Report
 description: This report offers insights on delivery, performance, and unique reach across various industry IDs allowing customers to integrate ID solutions wisely.
 ---
 
-# Microsoft Invest - Identifiers - distinct ID report
+# Microsoft Invest - Identifiers - Distinct ID report
 
 The Distinct IDs Report provides Xandr customers with insights on delivery, performance, and unique reach across various industry IDs. These IDs include RampID, NetID, and Unified ID 2.0 (UID2), along with cookies and device-based IDs. By using the information in the report, you can make an informed decision about which ID solutions to integrate. Users can access the report either through the platform or the API.
 

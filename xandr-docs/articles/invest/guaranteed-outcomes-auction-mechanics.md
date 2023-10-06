@@ -3,7 +3,7 @@ title: Microsoft Invest - Guaranteed Outcomes Auction Mechanics
 description: Learn how an auction works when a buyer submits an outcome-based bid using Guaranteed Outcomes.
 ---
 
-# Microsoft Invest - Guaranteed outcomes auction mechanics
+# Microsoft Invest - Guaranteed Outcomes auction mechanics
 
 This topic describes how an auction works when a buyer submits an outcome-based bid using Guaranteed Outcomes. Buyers submit vCPM bids to buy Guaranteed Views, and CPCV bids to buy Guaranteed Completes.
 

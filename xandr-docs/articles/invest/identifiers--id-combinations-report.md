@@ -3,7 +3,7 @@ title: Microsoft Invest - Identifiers - ID Combinations Report
 description: This report provides insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions.
 ---
 
-# Microsoft Invest - Identifiers - ID Combinations Report
+# Microsoft Invest - Identifiers - ID Combinations report
 
 The ID Combinations Report provides users with insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions. It also provides information on impression distribution, performance metrics for combinations of ID types, and what types of IDs are present in the purchased impressions. Users can access the report either through the platform or the Xandr API.
 
