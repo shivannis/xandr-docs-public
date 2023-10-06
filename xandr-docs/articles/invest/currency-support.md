@@ -188,14 +188,14 @@ The conversion of media cost and fees to the billing currency will be based on e
 - **When Used?:** If the Transaction Currency (currency logged at auction time) *is the same* as the Billing Currency.
 - **How Applied?:** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency.
 - **Which Fees/Charges:**
-  - Buy Side Costs and Charges
+  - Buy side costs and charges
     - Media Cost
     - BASC Deductions
     - BASC Fees
     - Direct Clear Fees
     - Creative Overage Fees
     - Data Costs
-    - Sell Side Revenue and Charges
+    - Sell side revenue and charges
       - Seller Revenue
       - SASC Deduction
       - SASC Fee
@@ -210,14 +210,14 @@ The conversion of media cost and fees to the billing currency will be based on e
 - **When Used?:** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.
 - **How Applied?:** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
 - **Which Fees/Charges:**
-  - Buy Side Costs and Charges
+  - Buy side costs and charges
     - Media Cost
       - BASC Deductions
       - BASC Fees
       - Direct Clear Fees
       - Creative Overage Fees
       - Data Costs
-      - Sell Side Revenue and Charges
+      - Sell side revenue and charges
         - Seller Revenue
         - SASC Deduction
         - SASC Fee
