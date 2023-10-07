@@ -11,7 +11,7 @@ You can create new augmented line items from the **Create New Line Item** screen
 1. Select the **Augmented** option.
 1. Search and select an advertiser from the **Advertiser** text field.
 1. Search and select an insertion order from the **Insertion Order** text field.
-1. Click Next.
+1. Click **Next**.
 
 ## Related topics
 
