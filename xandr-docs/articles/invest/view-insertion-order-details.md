@@ -1,7 +1,6 @@
 ---
 title : Microsoft Invest - View Insertion Order Details
-description : Learn about the Insertion Order Details screen that displays settings for a specific insertion order, essential metrics, and
-performance visualizations.
+description : Learn about the Insertion Order Details screen.
 ---
 
 # Microsoft Invest - View insertion order details
@@ -43,5 +42,3 @@ To view child object details:
 - [Create an Insertion Order](create-an-insertion-order.md)
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
-
-
