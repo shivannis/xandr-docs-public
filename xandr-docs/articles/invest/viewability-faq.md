@@ -1,9 +1,9 @@
 ---
-title : Viewability FAQ
-description : The following questions address where to find Xandr viewability data and the key metrics associated with it.
+title : Microsoft Invest - Viewability FAQ
+description : This article lists the questions that address where to find Xandr viewability data and the key metrics associated with it.
 ---
 
-# Viewability FAQ
+# Microsoft Invest - Viewability FAQ
 
 ## **Viewability data**
 

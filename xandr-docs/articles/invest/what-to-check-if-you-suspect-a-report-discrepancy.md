@@ -1,9 +1,9 @@
 ---
-title : What to Check if You Suspect a Discrepancy
+title : Microsoft Invest - What to Check if You Suspect a Discrepancy
 description : Learn about the common potential causes for report discrepancies. 
 ---
 
-# What to check if you suspect a discrepancy
+# Microsoft Invest - What to check if you suspect a discrepancy
 
 Report discrepancies have a number of common causes. Before you begin a fuller investigation, consider common potential causes like time frames, time zone differences, measurement units, macro configuration errors, and differences in how ad servers count impressions.
 

@@ -1,9 +1,9 @@
 ---
-title : Measurement of Video Viewability using VPAID Wrapper
+title : Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
 description : Learn the technology behind our video viewability measurement.
 ---
 
-# Measurement of Video Viewability using VPAID Wrapper
+# Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
 
 This page explains the technology behind our video viewability measurement.
 
@@ -101,7 +101,7 @@ The following Video viewability metrics are available via the API in the [Networ
 
 The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the following columns for video viewability:
 
-|  |  |
+| Column | Values |
 |--|--|
 | `view_result`| The Xandr viewability measurement result of the impression. Possible values: <br>  1 = VIEW_MEASURED_VIEWABLE <br>  2 = VIEW_MEASURED_NON_VIEWABLE <br> 3 = VIEW_NON_MEASURED For non-impression events, this will be NULL. |
 | `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values: <br> 0 = N/A. The impression was measured for viewability <br> 1 = SCRIPT_NOT_SERVED. The viewability script was not served with the creative. For example, on mobile-app inventory.<br> 2 = NO_SCRIPT_CALLBACK. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served. <br> 3 = TECHNICAL_LIMITATION. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |

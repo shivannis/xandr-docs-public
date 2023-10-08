@@ -38,8 +38,7 @@ more information, see [Create an Augmented Line Item](create-an-augmented-line-i
 
 ## Viewing line item analytics
 
-The **Analytics** tab provides detailed metric information in the form of graphs and charts so that you
-can:
+The **Analytics** tab provides detailed metric information in the form of graphs and charts so that you can:
 
 - view flight progress, delivery, performance, and margin with a high level of granularity to keep track of how well your line items are pacing against the optimization goals that have been set.
 - monitor associated splits to keep track of how they are delivering and performing.

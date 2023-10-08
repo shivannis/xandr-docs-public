@@ -1,9 +1,9 @@
 ---
-title : Welcome to Mobile
-description : As the world transitions toward heavier mobile device usage, learning the ins and outs of mobile buying becomes essential. 
+title : Microsoft Invest - Welcome to Mobile
+description : Learn how advertising works on mobile apps. 
 ---
 
-# Welcome to mobile
+# Microsoft Invest - Welcome to mobile
 
 As the world transitions toward heavier mobile device usage, learning the ins and outs of mobile buying becomes essential. Luckily,
 advertising on mobile apps is mostly similar to traditional web advertising (and where it differs, we'll explain those differences - see
@@ -42,17 +42,17 @@ Topics we'll cover include:
 
 ## Mobile via the API
 
-- **[Profile Service](../xandr-api/profile-service.md)** <br>Learn how to use this service to target mobile users by device type,
+- **[Profile Service](../digital-platform-api/profile-service.md)** <br>Learn how to use this service to target mobile users by device type,
   device model, carrier, and screen size.
 
-- **[Network Device Analytics](../xandr-api/network-device-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile device.
+- **[Network Device Analytics](../digital-platform-api/network-device-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile device.
 
-- **[Network Carrier Analytics](../xandr-api/network-carrier-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile carrier and connection type.
+- **[Network Carrier Analytics](../digital-platform-api/network-carrier-analytics.md)** <br>Learn how to use the API to retrieve performance data based on mobile carrier and connection type.
 
-- **[Device Make Service](../xandr-api/device-make-service.md)** <br>This read-only service let's you view all device makes recognized by
+- **[Device Make Service](../digital-platform-api/device-make-service.md)** <br>This read-only service let's you view all device makes recognized by
   Xandr.
 
-- **[Device Model Service](../xandr-api/device-model-service.md)** <br>This read-only service let's you view all device models recognized by Xandr.
+- **[Device Model Service](../digital-platform-api/device-model-service.md)** <br>This read-only service let's you view all device models recognized by Xandr.
 
-- **[Carrier Service](../xandr-api/carrier-service.md)** <br>This read-only service let's you view all mobile carriers recognized by
+- **[Carrier Service](../digital-platform-api/carrier-service.md)** <br>This read-only service let's you view all mobile carriers recognized by
   Xandr.

@@ -1,9 +1,9 @@
 ---
-title : View Advertiser Details
+title : Microsoft Invest - View Advertiser Details
 description : In this article learn about the Advertiser Details screen that shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 ---
 
-# View advertiser details
+# Microsoft Invest - View advertiser details
 
 The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
