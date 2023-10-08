@@ -1,8 +1,6 @@
 ---
 title : Microsoft Invest - Viewability targeting
-description : Based on historical viewability data across several dimensions of the ad call, Xandr has developed a methodology for
-determining, pre-auction, the percentage probability that an ad will be viewable to the user once it is delivered to the page, per the IAB
-viewability measurement standards.
+description : This article describes viewability targeting.
 ---
 
 # Microsoft Invest - Viewability targeting

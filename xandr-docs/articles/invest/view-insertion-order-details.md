@@ -1,10 +1,10 @@
 ---
-title : View Insertion Order Details
+title : Microsoft Invest - View Insertion Order Details
 description : Learn about the Insertion Order Details screen that displays settings for a specific insertion order, essential metrics, and
 performance visualizations.
 ---
 
-# View insertion order details
+# Microsoft Invest - View insertion order details
 
 The **Insertion Order Details** screen displays settings for a specific insertion order, essential metrics, and performance visualizations.
 

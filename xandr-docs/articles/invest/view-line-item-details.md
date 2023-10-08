@@ -1,10 +1,10 @@
 ---
-title : View Line Item Details
+title : Microsoft Invest - View Line Item Details
 description : Learn about the Line Item Details screen that displays settings for a specific line item, essential metrics and
 performance visualizations, and related objects that may have been set up under the line item.
 ---
 
-# View line item details
+# Microsoft Invest - View line item details
 
 The **Line Item Details** screen displays settings for a specific line item, essential metrics and performance visualizations, and related objects that may have been set up under the line item.
 
