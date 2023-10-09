@@ -32,9 +32,6 @@ highlightedContent:
     - title: Customer Support Portal Guide
       itemType: tutorial
       url: getting-started/index.yml
-
-
-    
 additionalContent:
   sections:
     - title: Browse Product Offerings
@@ -42,10 +39,8 @@ additionalContent:
       # Card
       - title: Microsoft Invest
         links:
-          - url: getting-started/index.yml
+          - url: invest/index.yml
             text: Product Documentation
-          - url: ./file1b.md OR /file1b
-            text: Release Notes
       # Card
       - title: Microsoft Monetize
         links:
