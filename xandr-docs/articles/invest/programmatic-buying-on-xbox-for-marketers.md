@@ -64,11 +64,11 @@ To keep Banner design clean and simple:
 
 - Do not use CTAs that reference direct interaction with the placement (“press A” etc.).
 
-  :::image type="content" source="media/xbox-bestpractices-b.png" alt-text="Screenshots of correct and incorrect CTA references in the banner design.":::
+  :::image type="content" source="media/xbox-bestpractices-b.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by pressing a button.":::
 
 - Do not use CTAs that reference direct interaction with the placement (“Click Here”, “Click Now!” etc.).
 
-  :::image type="content" source="media/xbox-bestpractices-c.png" alt-text="Screenshots of correct and incorrect CTA references in the banner design.":::
+  :::image type="content" source="media/xbox-bestpractices-c.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by clicking a button.":::
 
 - Do not mimic system tiles on the dash (i.e. Xbox green tiles with iconography similar to those that are on the Xbox One dash).
 
