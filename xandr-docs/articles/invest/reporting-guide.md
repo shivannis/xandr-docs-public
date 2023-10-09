@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Reporting Guide
-description: In this article, explore the diverse reports in Microsoft Invest, gaining insights into delivery methods, data retention, and specific use cases.
+description: In this article, explore the reports in Microsoft Invest, gaining insights into delivery methods, data retention, and specific use cases.
 ---
 
 # Microsoft Invest - Reporting guide

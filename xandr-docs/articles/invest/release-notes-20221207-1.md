@@ -3,7 +3,7 @@ title: Microsoft Invest - December 7, 2022 - Budget Rollover for Line Items
 description: In this article, discover the details about the new feature "Underspend Budget Rollover" for line items for all Microsoft Invest clients.
 ---
 
-# Microsoft Invest - December 7, 2022: Budget rollover for line items
+# Microsoft Invest - December 7, 2022 - Budget rollover for line items
 
 We are releasing a new feature **Underspend Budget Rollover** for line items for all Microsoft Invest clients. This feature enables you to:
 

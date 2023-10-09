@@ -9,12 +9,11 @@ In order to ensure that our systems operate as smoothly as possible for all user
 
 ## User limits
 
-When a report is submitted by a user, a check is performed to see if the user has submitted 6 report requests in the past 15 minutes that are either in pending status or currently being processed. If that limit has been met, an error message is generated.
+When a report is submitted by a user, a check is performed to see if the user has submitted six report requests in the past 15 minutes that are either in pending status or currently being processed. If that limit has been met, an error message is generated.
 
 ## Member limits
 
-Each member is limited to 5 report requests being processed at the same time (including all users under that member). Any report requests
-submitted in excess of this limit are placed in a queue. Each member can have up to 100 report requests in the queue at a time. If the member exceeds this amount, they will receive a `LIMIT` on their next `POST`.
+Each member is limited to five report requests being processed at the same time (including all users under that member). Any report requests submitted in excess of this limit are placed in a queue. Each member can have up to 100 report requests in the queue at a time. If the member exceeds this amount, they will receive a `LIMIT` on their next `POST`.
 
 ## Example
 
