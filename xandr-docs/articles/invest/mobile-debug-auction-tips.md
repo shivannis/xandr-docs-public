@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Mobile Debug Auction Tips
-description: In this article, explore the various mobile debug auction tips, ad call format, query string parameters, and ways to spoof operating system.
+description: In this article, explore the various mobile debug auction tips, ad call format, query string parameters, and ways to spoof an operating system.
 ---
 
 # Microsoft Invest - Mobile debug auction tips
@@ -24,7 +24,7 @@ There are query string parameters that tell the impression bus the user agent, c
 > [!TIP]
 > For documentation on all of the mobile query string parameters we accept, see [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
-## Spoof operating system
+## Spoof an operating system
 
 Our ad server uses the device's User Agent to determine the operating system. This gives us two ways to spoof the OS: using query string
 parameters, or using developer tools.
@@ -82,4 +82,4 @@ You can use the following read-only API services to see what device makes and mo
 
 ## Related topic
 
-- [Mobile Ad Call Reference](mobile-ad-call-reference.md)
+[Mobile Ad Call Reference](mobile-ad-call-reference.md)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Mobile Carrier Codes
-description: In this article, explore the list of mobile carrier codes sorted by country for your convenience.
+description: In this article, explore an extensive list of mobile carrier codes organized by country, providing a convenient resource for your reference and ease of use.
 ---
 
 # Microsoft Invest - Mobile carrier codes
@@ -252,4 +252,4 @@ The following table provides a list of carrier codes sorted by country for your 
 
 ## Related topic
 
-- [Mobile Ad Call Reference](mobile-ad-call-reference.md)
+[Mobile Ad Call Reference](mobile-ad-call-reference.md)

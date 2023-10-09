@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Mobile Buying FAQ
-description: In this article, explore the frequently asked questions (FAQ) on mobile ad campaigns and mobile reporting.
+description: In this article, explore frequently asked questions (FAQ), covering effective mobile ad campaign strategies and advanced mobile reporting techniques.
 ---
 
 # Microsoft Invest - Mobile buying FAQ

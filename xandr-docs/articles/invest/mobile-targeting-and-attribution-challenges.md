@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Mobile Targeting and Attribution Challenges
-description: In this article, explore the challenges and problems related to mobile targeting and attribution, along with their relevant solutions.
+description: In this article, explore the key challenges and problems related to mobile targeting and attribution, along with their relevant solutions.
 ---
 
 # Microsoft Invest - Mobile targeting and attribution challenges
@@ -12,7 +12,7 @@ In [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buyi
 
 :::image type="content" source="media/mobile-attribution-and-targeting-challenges.png" alt-text="Diagram of Mobile Attribution and Targeting Challenges.":::
 
-## Cross-screen targeting and attribution
+## 1: Cross-screen targeting and attribution
 
 Also known as: **Desktops vs. Mobile Devices**
 
@@ -20,7 +20,7 @@ Also known as: **Desktops vs. Mobile Devices**
 
 **Solution**: We believe a combination of technology and partnerships with data providers will eventually provide the best solution. For now, watch this space.
 
-## App-to-browser targeting and attribution
+## 2: App-to-browser targeting and attribution
 
 Also known as: **Mobile Browsers vs. Apps**
 
@@ -31,7 +31,7 @@ Also known as: **Mobile Browsers vs. Apps**
 
 **Solution**: Possible solutions include integration with one or more device recognition vendors, partnerships with major carriers, or both.
 
-## Inter-app targeting and attribution
+## 3: Inter-app targeting and attribution
 
 Also known as: **Apps vs. Apps**
 
@@ -48,7 +48,7 @@ Also known as: **Apps vs. Apps**
 
   Xandr associates multiple device IDs to one Xandr cookie IDs. This allows us to do frequency capping using the mechanisms we already have in place. For more information about `idfa`, `sha1`, and the other mobile device IDs we support, see the [Mobile Ad Call  Reference](mobile-ad-call-reference.md).
 
-## Mobile Safari cookies
+## 4: Mobile Safari cookies
 
 Also known as: **Safari vs. The World**
 

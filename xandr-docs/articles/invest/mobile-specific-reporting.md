@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Mobile-Specific Reporting
-description: In this article, explore mobile-specific reports, such as the Device Analytics report, the Carrier Analytics report, the Member Site Domain Performance report, and more.
+description: In this article, explore mobile-specific reports, such as the Device Analytics report, the Carrier Analytics report, and the Member Site Domain Performance report.
 ---
 
 # Microsoft Invest - Mobile-specific reporting
@@ -24,4 +24,4 @@ Xandr has created several reports that let you focus on mobile-specific data. Fo
 
 ## Related topic
 
-- [Welcome to Mobile](welcome-to-mobile.md)
+[Welcome to Mobile](welcome-to-mobile.md)
