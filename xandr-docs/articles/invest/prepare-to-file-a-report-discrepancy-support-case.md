@@ -19,7 +19,7 @@ If you're considering working with Support to investigate a suspected discrepanc
 
     Xandr counts an impression when the creative is rendered. For video ads, an impression takes place when the first frame of the video is loaded. If the third-party counts their impressions differently (for example, when a third party imp tracker loads on the page) the numbers aren't directly comparable, and Xandr does not consider this a discrepancy.
 
-1. Make sure the objects for which you're pulling data (for example a campaign, placement, or advertiser) are specified in both reports. 
+1. Make sure the objects for which you're pulling data (for example a campaign, placement, or advertiser) are specified in both reports.
 
     > [!NOTE]
     > The objects in the third party report must clearly correspond with objects in the Xandr system. Please include Xandr object IDs in both reports, so that Support can quickly and easily match objects and compare the data. Object names are not unique, and can’t be reliably used for matching.

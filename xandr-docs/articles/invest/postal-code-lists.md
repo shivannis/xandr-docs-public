@@ -76,4 +76,5 @@ To target specific Postal Code Lists and Postal Codes:
 1. Click Save to complete the setup.
 
 ## Related topics
+
 [Additional Geo Restrictions](additional-geo-restrictions-ali.md)
