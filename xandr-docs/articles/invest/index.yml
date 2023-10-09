@@ -1,0 +1,29 @@
+### YamlMime:Landing
+
+title: Microsoft Invest Product Documentation
+summary: Discover various modules of Microsoft Invest.
+metadata:
+  title: Microsoft Invest Product Documentation
+  description: Discover various modules of Microsoft Invest
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 10/09/2023
+
+landingContent:
+  - title: Lets Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About Invest DSP
+            url: about-invest.md
+      - linkListType: tutorial
+        links:            
+          - text: Object Hierarchy
+            url: object-hierarchy.md
+  - title: Member Settings
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Managing Notification Recipients
+            url: managing-notification-recipients.md
