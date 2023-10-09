@@ -21,7 +21,7 @@
     - name: Member-Level Geography Targeting
       href: member-level-geography-targeting.md
     - name: Create a Third-Party Member Pixel for Your Creatives
-      href: create-a-third-party-network-pixel-for-your-creatives-2.md
+      href: create-a-third-party-network-pixel-for-your-creatives.md
   - name: Managing User Logins and Permissions
     items:
     - name: Single Credential Login and Multi-Factor Authentication (MFA)
@@ -57,7 +57,9 @@
       - name: Working with Roles
         href: working-with-roles.md 
       - name: Create a Custom Role
-        href: create-a-custom-role.md and role-capabilities.md                         
+        href: create-a-custom-role.md
+      - name: Role Capabilities
+        href: role-capabilities.md
       - name: Xandr Invest DSP Roles
         href: xandr-invest-dsp-roles.md
     - name: Member Users Screen
@@ -83,7 +85,7 @@
       - name: Broker Fees
         href: broker-fees.md
     - name: Currency Support
-      href: currency-support_1.md
+      href: currency-support.md
     - name: Reporting Labels
       href: reporting-labels.md
   - name: Working with Third-Party Inventory
