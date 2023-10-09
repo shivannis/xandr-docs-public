@@ -1,28 +1,10 @@
 ---
-Title : December 7, 2022: New Feature - Insertion Order (IO) Duplication
-Description : Insertion Order (IO) Duplication is now available for all
-Microsoft Invest clients. Save time and manual
+title: Microsoft Invest - December 7, 2022 - New Feature - Insertion Order (IO) Duplication
+description: In this article, discover the details about the new feature "Insertion Order (IO) Duplication" available for all Microsoft Invest clients.
 ---
 
+# Microsoft Invest -  December 7, 2022: New feature - Insertion Order (IO) duplication
 
-# December 7, 2022: New Feature - Insertion Order (IO) Duplication
+Insertion Order (IO) Duplication is now available for all Microsoft Invest clients. Save time and manual effort by duplicating an IO with all of its child line items and splits when you need to create similar set ups repeatedly.
 
-
-
-Insertion Order (IO) Duplication is now available for all
-Microsoft Invest clients. Save time and manual
-effort by duplicating an IO with all of its child line items and splits
-when you need to create similar set ups repeatedly.
-
-
-
-For more information, see:
-
-- <a href="duplicate-an-insertion-order.md" class="xref">Duplicate an
-  Insertion Order</a>
-
-
-
-
-
-
+For more information, see [Duplicate an Insertion Order](duplicate-an-insertion-order.md).
