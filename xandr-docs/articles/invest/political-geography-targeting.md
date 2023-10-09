@@ -16,6 +16,7 @@ You can target political districts, by doing the following:
 
 1. Within the **Edit Line Item** screen, click on the **Geography** field and select the applicable checkboxes for country-level targeting, under the **Audience and Location Targeting** section to set up the line item geography targeting.
 1. Click **+Additional Geo Restrictions** to target audiences based on legislative district boundaries. You will be able to target or exclude multiple political geographies within the same line item. The Political District Targeting allows buyers to target the following political geography levels:
+
     1. Congressional District
     1. State Senate District
     1. State House District

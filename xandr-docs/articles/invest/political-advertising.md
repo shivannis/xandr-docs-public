@@ -18,6 +18,7 @@ For more details on our policies on political advertising, see our [Political Ad
 For the most part, political advertisements are set up in the same way as other advertisements, using the same [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md). However, you must take a few additional steps:
 
 1. Declare that the advertiser is going to run political advertising. For more details, see [Create an Advertiser](create-an-advertiser.md).
+
 1. If your local or state political ads could or will serve in California, Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or your federal political ads could or will serve in Washington State, fill out the **Political Advertising** section on the relevant insertion orders. If your political ad will not be served in any of those states, you may enter "N/A”.
 
     1. Add the contact information for the person or team in your own organization who can best answer any questions about political advertising on this insertion order.
