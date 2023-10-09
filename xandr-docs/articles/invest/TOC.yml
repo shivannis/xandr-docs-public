@@ -1,0 +1,6 @@
+- name: Microsoft Invest Product Documentation
+  href: index.yml
+- name: Get started
+  href: toc-invest-getting-started.yml
+- name: Member Settings
+  href: toc-invest-member-settings.yml
