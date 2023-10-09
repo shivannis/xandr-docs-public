@@ -1,6 +1,102 @@
 - name: Microsoft Invest Product Documentation
   href: index.yml
-- name: Get started
-  href: toc-invest-getting-started.yml
+- name: Getting Started
+  items:
+    - name: About Invest DSP
+      href: about-invest.md
+    - name: Object Hierarchy
+      href: object-hierarchy.md
+    - name: Invest DSP API
+      href: digital-platform-ui-api-info.md
 - name: Member Settings
-  href: toc-invest-member-settings.yml
+  items: 
+  - name: Working with Member Settings
+    items:
+    - name: Managing Notification Recipients
+      href: managing-notification-recipients.md
+    - name: Viewing Your Object Limits
+      href: viewing-your-object-limits.md
+    - name: Capping Daily Spend on Third-Party Inventory (Safety Budget)
+      href: capping-daily-spend-on-third-party-inventory-safety-budget.md
+    - name: Member-Level Geography Targeting
+      href: member-level-geography-targeting.md
+    - name: Create a Third-Party Member Pixel for Your Creatives
+      href: create-a-third-party-network-pixel-for-your-creatives-2.md
+  - name: Managing User Logins and Permissions
+    items:
+    - name: Single Credential Login and Multi-Factor Authentication (MFA)
+      items:
+      - name: An Overview of Single Credential Login and Multi-Factor Authentication (MFA)
+        href: single-credential-login-and-multi-factor-authentication-mfa.md
+      - name: Set Up Single Credential Login
+        href: set-up-single-credential-login.md
+      - name: Set Up Multi-Factor Authentication
+        href: set-up-multi-factor-authentication.md
+      - name: Switching Between User Accounts
+        href: switching-between-user-accounts.md
+      - name: Single Credential Login and Multi-Factor Authentication FAQ
+        href: single-credential-login-and-multi-factor-authentication-faq.md
+      - name: Troubleshooting Multi-Factor Authentication (MFA)
+        href: troubleshooting-multi-factor-authentication-mfa.md
+    - name: Microsoft Identity Platform Login
+      href: microsoft-identity-platform-login.md
+    - name: Migration to Microsoft Identity Platform Login
+      href: migration-to-microsoft-identity-platform-login.md
+    - name: Microsoft Identity Platform Login Troubleshooting
+      href: microsoft-identity-platform-login-troubleshooting.md
+    - name: Manage Your Username and Password
+      href: manage-your-username-and-password.md
+    - name: Create a User
+      href: create-a-user.md
+    - name: Edit a Member User
+      href: edit-a-network-user.md
+    - name: Getting Started with Roles
+      items:   
+      - name: An Overview of Roles
+        href: getting-started-with-roles.md
+      - name: Working with Roles
+        href: working-with-roles.md 
+      - name: Create a Custom Role
+        href: create-a-custom-role.md and role-capabilities.md                         
+      - name: Xandr Invest DSP Roles
+        href: xandr-invest-dsp-roles.md
+    - name: Member Users Screen
+      href: network-users-screen.md
+  - name: Member Operations
+    items:
+    - name: Partner Fees
+      items:
+      - name: An Overview of Partner Fees
+        href: partner-fees.md
+      - name: Create a Partner Fee
+        href: create-a-partner-fee.md
+      - name: Manage Partner Fees
+        href: manage-partner-fees.md
+      - name: Apply a Partner Fee to a Line Item
+        href: apply-a-partner-fee-to-a-line-item.md
+      - name: Fee Type
+        href: fee-type.md
+      - name: Fee Calculations
+        href: fee-calculations.md
+      - name: Migrating from Broker Fees to Partner Fees
+        href: migrating-from-broker-fees-to-partner-fees.md
+      - name: Broker Fees
+        href: broker-fees.md
+    - name: Currency Support
+      href: currency-support_1.md
+    - name: Reporting Labels
+      href: reporting-labels.md
+  - name: Working with Third-Party Inventory
+    items:
+    - name: Exchanges and Aggregators
+      items:
+      - name: An Overview of Exchanges and Aggregators
+        href: exchanges-and-aggregators.md
+      - name: Google Ad Manager
+        href: doubleclick-ad-exchange-adx.md
+      - name: User ID Syncing with External Partners
+        href: user-id-syncing-with-external-partners.md
+      - name: Asynchronous Usersync Pixels
+        href: asynchronous-usersync-pixels.md
+    - name: Traffic Quality
+      href: traffic-quality.md
