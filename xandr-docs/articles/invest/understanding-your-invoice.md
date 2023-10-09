@@ -8,8 +8,7 @@ description : Learn Annotated descriptions of the contents of your Xandr invoice
 
 Annotated descriptions of the contents of your Xandr invoices.
 
-
-## Understanding Your Invoice
+## Understanding your invoice
 
 All members who buy inventory through one of the
 Xandr Digital Platform UI products will receive
@@ -90,8 +89,8 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
         information about buyer auction service charges, see
         [Buyer Auction Service Charge](buyer-auction-service-charge-mechanics.md).
 
-        > [!NOTE]
-      > **Buyer Auction Service Deduction (BASC)** - For all other inventory purchases, many clients have the buyer auction service charge for other inventory purchases specified as a bid reduction in their contract. This may not appear as a separate charge on your invoice automatically unless your account is setup for disclosed invoicing. If the line item is not being displayed on your invoice you can view the deduction amount in the UI using the Buying Billing Report. To enable disclosed invoicing, create a Client Finance case in the Customer Support Portal. Your cost of media will appear on your invoice net the fees.
+       > [!NOTE]
+   > **Buyer Auction Service Deduction (BASC)** - For all other inventory purchases, many clients have the buyer auction service charge for other inventory purchases specified as a bid reduction in their contract. This may not appear as a separate charge on your invoice automatically unless your account is setup for disclosed invoicing. If the line item is not being displayed on your invoice you can view the deduction amount in the UI using the Buying Billing Report. To enable disclosed invoicing, create a Client Finance case in the Customer Support Portal. Your cost of media will appear on your invoice net the fees.
 
     1. **Seller Auction Service Fee (SASC)** - This fee is only applied
         to selling activity and only if the seller has the SASC set as a
@@ -152,7 +151,7 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
     correctly, submit it to the account listed on your statement. For
     more information, see [Payment to Xandr](payment-to-xandr.md).
 
-## Advertiser-specific, Insertion Order-specific, and Billing Period-specific Invoices
+## Advertiser-Specific, Insertion order-specific, and billing Period-specific invoices
 
 You have the option to receive advertiser-, insertion order-, or billing
 period-specific invoices (e.g., to separate specific costs and fees for
@@ -204,12 +203,13 @@ will receive three levels of invoices:
 > [!WARNING]
 > Financial Obligations -Receiving Advertiser-, Insertion Order, or Billing Period-specific invoices does not change any of your financial or payment obligations to Xandr. You are still responsible for paying all invoices associated with any of your advertisers (including their insertion orders) and their activity and buying. Xandr does not bill advertisers for you.
 
-> [!NOTE]
-> Billing Name/Address and Billing Code>
-> - To display the advertiser's address in the **Bill To** region of your Advertiser-, Insertion Order-, Billing Period-specific invoices, you must update the fields in the **Billing Information** section of the advertiser. If you leave these fields blank, your Advertiser-, Insertion Order-, or Billing Period-specific invoices will only show your member billing address.
->- To include a billing code on your insertion order- or billing code-specific invoices, you must enter it in the **Basic Details** section of the insertion order.
+ > [!NOTE]
+ > Billing Name/Address and Billing Code
+ >
+ > - To display the advertiser's address in the **Bill To** region of your Advertiser-, Insertion Order-, Billing Period-specific invoices, you must update the fields in the **Billing Information** section of the advertiser. If you leave these fields blank, your Advertiser-, Insertion Order-, or Billing Period-specific invoices will only show your member billing address.
+> - To include a billing code on your insertion order- or billing code-specific invoices, you must enter it in the **Basic Details** section of the insertion order.
 
-## Invoice Consolidation ("Rollup")
+## Invoice consolidation ("Rollup")
 
 If you have more than one member account, you can choose to receive a
 consolidated invoice for the buying activity across of your member

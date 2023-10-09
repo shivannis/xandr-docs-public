@@ -1,7 +1,6 @@
 ---
 title : Microsoft Invest - Understanding Your Pricing Terms
-description : Learn about charges and fees for common activity on Xandr's platform that can be found in the Billing
-section of the UI. 
+description : Learn about charges and fees for common activity on Xandr's platform that can be found in the Billing section of the UI. 
 ---
 
 

@@ -50,9 +50,9 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 | dongle | The member's unique debug password |
 | debug_member | The ID of the member running the debug auction |
 
-## Optional Parameters
+## Optional parameters
 
-| Parameter |  |
+| Parameter | Description |
 |---|---|
 | bidder | The bidder ID. Xandr Invest uses bidder ID 2 in production |
 | referrer | Simulate the referring URL from which the ad call is coming |
@@ -65,7 +65,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 
 ## Optional geo code parameters
 
-| Parameter |  |
+| Parameter |Description  |
 |---|---|
 | country | Overrides a cookie's current country geo code with whatever is passed as a value. For example: "country=US". See [here](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for a complete list of country geo codes. |
 | region | Overrides a cookie's current region (state) geo code with whatever is passed as a value. For example: "region=NY". See [here](https://www.maxmind.com/download/geoip/misc/region_codes.csv) for a complete list of region (state) geo codes. |
@@ -76,7 +76,7 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 > [!NOTE]
 > If you are trying to spoof a particular region or city, you must include the most general to most specific geographically. For city targeting, you need to include the country, region (state), and city. For example:` &country=US&region=NY&city=New York`. Remember to type out the full city name.
 
-Example
+## Example
 
 ``` pre
 https://ib.adnxs.com/tt?id=3457&debug_member=999&dongle=MyDongle 
@@ -95,9 +95,8 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 
 When debugging a particular ad campaign, it may help that your browser's cookie contains or excludes the specific user criteria being targeting (e.g. country or segment). Please see the below table for information on how to view/modify your cookie.
 
-
 > [!IMPORTANT]
->If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can click on the Debug button on any placement and to see your member ID and dongle in the querystring.
+>If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can click on the **Debug** button on any placement and to see your member ID and dongle in the querystring.
 
 | Action | URL |
 |---|---|
@@ -123,7 +122,7 @@ beginning with "Debug text from bidder 2" (live). This output includes
 information such as the bidder version, the region info., and user info.
 Excerpts from a live debug auction are below:
 
-![Debug Auction Geo Parb B](media/debug-auction-geo-a.png)
+![Screenshot of Debug Auction Geo Parb B.](media/debug-auction-geo-a.png)
 
 
 This debug info. continues, including information such as the segments
@@ -142,13 +141,11 @@ much they would bid.
 
 After all ad campaigns are evaluated, you will see the summary table.
 
-![Debug Auction Summary Table](media/debug-auction-summary-table.png)
-
+![Screenshot of Debug Auction Summary Table.](media/debug-auction-summary-table.png)
 
 You will also see the performance summary.
 
-![Performance Summary](media/performance-summary.png)
-
+![Screenshot of Performance Summary.](media/performance-summary.png)
 
 You will receive an output of all bids and final bids. RTB buyers will
 see the value of the bid, the brand ID, and the learn type.
@@ -162,7 +159,6 @@ Finally, we show the highest net bid, and the member and creative that
 would have served had this not been a debug auction.
 
 ![Screenshot of Highest Net Bids.](media/highest-net-bid.png)
-
 
 ## Possible debug auction results
 
@@ -255,7 +251,6 @@ would have served had this not been a debug auction.
 | Visibility Profile ID | Yes | Yes |
 | Winning bid | Yes | Yes |
 
-
 ## Running a test auction
 
 In addition to debug auctions, which simulate real auctions without logging or serving ads, you can also run a test auction. Test auctions are designed to allow clients to test if their ads are being delivered as expected and verify that everything is configured correctly.
@@ -271,6 +266,6 @@ https://ib.adnxs.com/tt?id=1234&test=1
 
 If the ad is visible in a browser, the configuration is valid.
 
-# Related topic
+## Related topic
 
 - [Mobile Debug Auction Tips](mobile-debug-auction-tips.md)

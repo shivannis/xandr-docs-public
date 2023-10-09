@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Understanding Viewability Rates for Guaranteed Views
-description : Understand viewability rates for guaranteed views
+description : Learn viewability rates for guaranteed views
 ---
 
 
