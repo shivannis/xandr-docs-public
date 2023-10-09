@@ -1,9 +1,0 @@
-- name: Getting Started
-  href: index.yml
-  items:
-    - name: About Invest DSP
-      href: about-invest.md
-    - name: Object Hierarchy
-      href: object-hierarchy.md
-    - name: Invest DSP API
-      href: digital-platform-ui-api-info.md
