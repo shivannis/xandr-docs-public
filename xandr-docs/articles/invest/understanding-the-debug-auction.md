@@ -69,9 +69,9 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 |---|---|
 | country | Overrides a cookie's current country geo code with whatever is passed as a value. For example: "country=US". See [here](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for a complete list of country geo codes. |
 | region | Overrides a cookie's current region (state) geo code with whatever is passed as a value. For example: "region=NY". See [here](https://www.maxmind.com/download/geoip/misc/region_codes.csv) for a complete list of region (state) geo codes. |
-| city | Overrides a cookie's current city geo code with whatever is passed as a value. For example: "city=New York". See [here](https://developers.google.com/adwords/api/docs/appendix/cities_us?csw=1) for a complete list of city geo codes. |
+| city | Overrides a cookie's current city geo code with whatever is passed as a value. For example: "city=New York". See [here](https://developers.google.com/google-ads/api/data/geotargets) for a complete list of city geo codes. |
 | postal | Overrides a cookie's current postal code with whatever is passed as a value. For example: "postal=10010". See [here](https://worldpostalcode.com/) to find a particular postal code. |
-| DMA | Overrides a cookie's current Designated Market Area (DMA) geo code with whatever is passed as a value. For example: "DMA=501". A DMA divides geographical regions by their television and radio markets. See [here](https://developers.google.com/adwords/api/docs/appendix/metrocodes?csw=1) for info on how to obtain a region's DMA code. |
+| DMA | Overrides a cookie's current Designated Market Area (DMA) geo code with whatever is passed as a value. For example: "DMA=501". A DMA divides geographical regions by their television and radio markets. See [here](https://developers.google.com/google-ads/api/data/geotargets) for info on how to obtain a region's DMA code. |
 
 > [!NOTE]
 > If you are trying to spoof a particular region or city, you must include the most general to most specific geographically. For city targeting, you need to include the country, region (state), and city. For example:` &country=US&region=NY&city=New York`. Remember to type out the full city name.
