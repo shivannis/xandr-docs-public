@@ -1,31 +1,21 @@
 ---
-Title : Member Audio Analytics Report
-Description : The Member Audio Analytics report can be used to
-view audio event metrics across multiple buyers and sellers.
+title: Microsoft Invest - Member Audio Analytics Report
+description: Use this report to view audio event metrics across multiple buyers and sellers.
 ---
 
+# Microsoft Invest - Member audio analytics report
 
-# Member Audio Analytics Report
+The Member Audio Analytics report can be used to view audio event metrics across multiple buyers and sellers.
 
-
-
-
-
-The Member Audio Analytics report can be used to
-view audio event metrics across multiple buyers and sellers.
-
-Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
-
-
 
 - Custom
 - Current Hour
@@ -50,519 +40,120 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-
-
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
-
-
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
+> [!TIP]
+> For more information about how quickly report data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md)
 
+**Currency 2.0**
 
+> [!NOTE]
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select
+**Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
+## Dimensions
 
-<b>Tip:</b> For more information about how
-quickly report data is processed, see
-<a href="availability-of-reporting-data.md" class="xref">Availability
-of Reporting Data</a>.
+| Column | Filter? | Description |
+|:---|:---|:---|
+| Buyer | Yes | The buyer of this impression. |
+| Seller | Yes | The seller of this impression. |
+| Advertiser | Yes | The advertiser whose creative served on this impression. |
+| Publisher | Yes | The publisher on whose inventory this impression occurred. |
+| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be 0. |
+| Placement | Yes | The placement through which this impression occurred. **Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
+| Insertion Order | Yes | The insertion order under which this impression was purchased. |
+| Line Item | Yes | The line item under which this impression was purchased. |
+| Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
+| Creative | Yes | The creative associated with the impression. |
+| Brand | Yes | The brand associated with the creative. Xandr keeps a list of advertiser brands in our systems that can be applied to a creative when its uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
+| Country | Yes | The country in which the impression took place. |
+| Deal | Yes | The deal associated with the transaction for the impression. |
+| Creative Recency | Yes | How recently the creative was viewed by the user. For more information, see [Creative Frequency and Recency Report](./creative-frequency-and-recency-report.md). |
+| Creative Frequency | Yes | How many times the creative has been viewed by the user. For more information, see **Creative Frequency Definitions** in the [Creative Frequency and Recency Report](./creative-frequency-and-recency-report.md). |
+| Creative Duration | No | The duration of the audio creative associated with this impression. |
+| IO: Trafficker (reporting label) | Yes | The trafficker associated with this insertion order. This is an insertion order reporting label. |
+| IO: Sales Rep (reporting label) | Yes | The sales rep associated with this insertion order. This is an insertion order reporting label. |
+| Media Subtype | Yes | The media subtype for the creative. |
+| Supply Type Filterable | Yes | Whether to filter by supply type. |
+| Site Domain | Yes | The site domain associated with the impression. |
+| Application ID | Yes | The application ID associated with the impression. |
+| Buying Currency | Yes | The transaction currency that the buyer used to purchase this impression. |
+| Audio Context | Yes | The type of the audio creative. Possible values are: <br> - `Unknown` <br> - `Pre-roll` <br> - `Mid-roll` <br> - `Post-roll` <br> - `Outstream` |
 
+You can also choose to select the **Only include results where a Deal is present** option.
 
+## Metrics
 
-Currency 2.0
+> [!NOTE]
+> When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
+| Column | Description |
+|:---|:---|
+| Imps | The total number of impressions. |
+| Clicks | The total number of clicks. |
+| CTR | The click-through rate; the ratio of clicks to impressions, expressed as a percentage. |
+| Total Conversions | The total number of post-view and post-click conversions. |
+| Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
+| Revenue | The total revenue; the sum of booked and resold revenue. |
+| Revenue Per Audio Complete | The revenue per audio completion |
+| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. |
+| Cost | The total media cost across direct publishers and RTB inventory. |
+| Cost Per Audio Complete | The cost per audio completion |
+| CPM | The total media cost per 1000 impressions. |
+| Profit | The total Member revenue minus the total Member media cost. |
+| PPM | The total profit per 1000 impressions. |
+| Completion Rate | The ratio of audio completions to impressions, expressed as a percentage. |
+| Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |
+| Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
+| Starts | The total number of times the first segment of the video creative was downloaded and started. |
+| Skip Rate | The percentage of times the user opted to skip the video. |
+| 25% Complete | The total number of times the video creatives completed 25% of the entire duration. |
+| 50% Complete | The total number of times the video completed 50% of the entire duration of time. |
+| 75% Complete | The total number of times the video completed 75% of the entire duration of time. |
+| 100% Complete | The total number of times the video played for the entire duration of time. |
+| Ad Responses | The total number of responses served to the audio player.<br> **Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |
+| Errors | The total number of times an error occurred. |
+| Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |
+| Device Type | The type of device on which the impression was served. Possible values are:<br> - desktops & laptops <br> - tablets <br> - mobile phones <br> - tv<br> - game consoles <br> - set top box <br> - media players <br> - other devices |
 
-
-
-
-<b>Note:</b> By enabling
-Currency 2.0, you can select a
-currency for each individual report if you prefer not to use
-USD as the default currency. The
-report will show all the monetary fields in your report using the
-selected currency. For example, if you select
-Advertiser, click the
-Currency 2.0 toggle to enable it, and
-select Japanese Yen (JPY) from the
-Currency menu, the report will show
-all monetary data in JPY, including data associated with child objects
-such as line items.
-
-
-
-
-
-Dimensions
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002960__entry__1" class="entry">Column</th>
-<th id="ID-00002960__entry__2" class="entry">Filter?</th>
-<th id="ID-00002960__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Buyer</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The buyer of this
-impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Seller</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The seller of this
-impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Advertiser</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The advertiser whose
-creative served on this impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Publisher</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The publisher on whose
-inventory this impression occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Placement Group</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The placement group
-(simply a collection of placements) which includes the placement through
-which this impression occurred.
-<div class="note note_note">
-<b>Note:</b> For impressions older than 100
-days, the ID will be 0.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Placement</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The placement through
-which this impression occurred. <b>Note:</b> For impressions older than 100
-days, placements will be aggregated into one row with <code
-class="ph codeph">-1</code> as the ID and a generic name.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Insertion Order</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The insertion order
-under which this impression was purchased.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Line Item</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The line item under
-which this impression was purchased.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Campaign</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The campaign which
-purchased this impression. (Does not apply to all advertisers.)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Creative</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The creative
-associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Brand</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The brand associated
-with the creative. Xandr keeps a list of
-advertiser brands in our systems that can be applied to a creative when
-its uploaded. For impression type "Resold", no information is available
-in the Brand field for this
-report.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Country</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The country in which
-the impression took place.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Deal</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The deal associated
-with the transaction for the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Creative Recency</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">How recently the
-creative was viewed by the user. For more information, see <a
-href="creative-frequency-and-recency-report.md" class="xref">Creative
-Frequency and Recency Report</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Creative
-Frequency</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">How many times the
-creative has been viewed by the user. For more information, see Creative
-Frequency Definitions in the <a
-href="creative-frequency-and-recency-report.md" class="xref">Creative
-Frequency and Recency Report</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Creative Duration</td>
-<td class="entry" headers="ID-00002960__entry__2">No</td>
-<td class="entry" headers="ID-00002960__entry__3">The duration of the
-audio creative associated with this impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">IO: Trafficker
-(reporting label)</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The trafficker
-associated with this insertion order. This is an insertion order
-reporting label.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">IO: Sales Rep
-(reporting label)</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The sales rep
-associated with this insertion order. This is an insertion order
-reporting label.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Media Subtype</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The media subtype for
-the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Supply Type
-Filterable</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">Whether to filter by
-supply type.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Site Domain</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The site domain
-associated with the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Application ID</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The application ID
-associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__1">Buying Currency</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The transaction
-currency that the buyer used to purchase this impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__1">Audio Context</td>
-<td class="entry" headers="ID-00002960__entry__2">Yes</td>
-<td class="entry" headers="ID-00002960__entry__3">The type of the audio
-creative. Possible values are:
-<ul>
-<li>Unknown</li>
-<li>Pre-roll</li>
-<li>Mid-roll</li>
-<li>Post-roll</li>
-<li>Outstream</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-You can also choose to select the Only
-include results where a Deal is present option.
-
-Metrics
-
-
-
-<b>Note:</b> When values of a metric are
-displayed as percentages in the UI, they will be displayed as decimals
-when you export the report.
-
-
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002960__entry__76" class="entry">Column</th>
-<th id="ID-00002960__entry__77" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Imps</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Clicks</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-clicks.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">CTR</td>
-<td class="entry" headers="ID-00002960__entry__77">The click-through
-rate; the ratio of clicks to impressions, expressed as a
-percentage.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Total
-Conversions</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-post-view and post-click conversions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Conversion Rate</td>
-<td class="entry" headers="ID-00002960__entry__77">The ratio of
-conversions to impressions, expressed as a percentage.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Revenue</td>
-<td class="entry" headers="ID-00002960__entry__77">The total revenue;
-the sum of booked and resold revenue.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Revenue Per Audio
-Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The revenue per audio
-completion</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Total RPM</td>
-<td class="entry" headers="ID-00002960__entry__77">The revenue per 1000
-impressions, including defaults, PSAs, and errors.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Cost</td>
-<td class="entry" headers="ID-00002960__entry__77">The total media cost
-across direct publishers and RTB inventory.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Cost Per Audio
-Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The cost per audio
-completion</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">CPM</td>
-<td class="entry" headers="ID-00002960__entry__77">The total media cost
-per 1000 impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Profit</td>
-<td class="entry" headers="ID-00002960__entry__77">The total <span
-class="ph">Member revenue minus the total <span
-class="ph">Member media cost.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">PPM</td>
-<td class="entry" headers="ID-00002960__entry__77">The total profit per
-1000 impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Completion Rate</td>
-<td class="entry" headers="ID-00002960__entry__77">The ratio of audio
-completions to impressions, expressed as a percentage.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Start Rate</td>
-<td class="entry" headers="ID-00002960__entry__77">The percentage of
-times the first segment of the video creative was downloaded and
-started.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Skips</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times a user skipped the video. Use this metric for reporting when
-buying skippable inventory.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Starts</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times the first segment of the video creative was downloaded and
-started.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Skip Rate</td>
-<td class="entry" headers="ID-00002960__entry__77">The percentage of
-times the user opted to skip the video.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">25% Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times the video creatives completed 25% of the entire duration.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">50% Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times the video completed 50% of the entire duration of time.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">75% Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times the video completed 75% of the entire duration of time.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">100% Complete</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times the video played for the entire duration of time.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Ad Responses</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-responses served to the audio player.
-<div class="note note_note">
-<b>Note:</b> An <strong>Impression</strong> is
-recorded when the audio player loads the creative, displays the first
-frame, and the impression tracker is fired from the audio player.
-<strong>Ad Responses</strong> refers to the VAST document (XML) being
-served in response to a request from the audio player, but does not mean
-that a successful impression event occurred.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Errors</td>
-<td class="entry" headers="ID-00002960__entry__77">The total number of
-times an error occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00002960__entry__76">Audio Fill</td>
-<td class="entry" headers="ID-00002960__entry__77">The percentage of
-audio impressions delivered out of the total number of audio ad
-responses received. (Imps / Ad Responses)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00002960__entry__76">Device Type</td>
-<td class="entry" headers="ID-00002960__entry__77">
-The type of device on which the impression was served. Possible values
-are:
-<ul>
-<li>desktops &amp; laptops</li>
-<li>tablets</li>
-<li>mobile phones</li>
-<li>tv</li>
-<li>game consoles</li>
-<li>set top box</li>
-<li>media players</li>
-<li>other devices</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-To Run your Report
+## To run your report
 
 Follow these steps to run your report.
 
-1.  Select Reporting from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1.  Or, from the Publishers top menu, click on
-        Prebid
-        Server Premium \>
-        Analytics \>
-        Prebid Server Analytics
-2.  Select the relevant report from the list. The
-    Report screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
-    
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
 
-    <b>Important:</b> For an explanation of
-    how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.md"
-    class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-    
-3.  Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    Add to include them in the
-    **Chosen** list (right).
-4.  Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
-    
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 
-    <b>Warning:</b> The more dimensions you
-    group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using
-    only the dimensions you need.
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-    
-5.  Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
-      
+1. Choose a delivery option. Once you've selected your filters andgrouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
 
-      <b>Tip:</b> The maximum size of the
-      report that can be downloaded from the UI is 100 MB. Also, there
-      is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can
-      try to download it using the <a
-      href="xandr-api/report-service.md"
-      class="xref" target="_blank">API</a> for that reporting service
-      (The limit here is 10 million rows).
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
 
-      
-    - **Export, send results via
-      email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      Name this report (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
-6.  Click Run
-    report to send your report request.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
+        > [!TIP]
+        > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+  
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+  
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
 
+    - **Name this report**: Give this report with its current settings a name for future reference.
 
-
-
-
+1. Click **Run report** to send your report request.

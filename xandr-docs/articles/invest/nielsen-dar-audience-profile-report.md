@@ -1,22 +1,13 @@
 ---
-Title : Nielsen Digital Ad Ratings - Audience Profile Report
-Description : The **Nielsen Digital Ad Ratings (DAR) - Audience Profile Report** gives
-you insight into your line item's impressions and the demographies
-they're coming from.
+title: Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
+description: Use this report to get an insight into your line item's impressions and the demographies they're coming from.
 ---
 
+# Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
 
-# Nielsen Digital Ad Ratings - Audience Profile Report
+The **Nielsen Digital Ad Ratings (DAR) - Audience Profile Report** gives you insight into your line item's impressions and the demographies they're coming from.
 
-
-
-The **Nielsen Digital Ad Ratings (DAR) - Audience Profile Report** gives
-you insight into your line item's impressions and the demographies
-they're coming from.
-
-
-
-## Time Frame
+## Time frame
 
 Available time ranges include:
 
@@ -30,427 +21,81 @@ Available time ranges include:
 - Last 365 Days
 - Year To Date
 
-Intervals determine how your data is grouped together into rows in the
-report response. Only one interval option is available for a Nielsen
-DAR - Audience Profile Report:
+Intervals determine how your data is grouped together into rows in the report response. Only one interval option is available for a Nielsen DAR - Audience Profile Report:
 
-- **Cumulative**: Data is grouped together in one figure, covering the
-  entire selected time range.
-
-
-
-
+- **Cumulative**: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Metrics
 
-
-
-
-
-<table class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="nielsen-dar-audience-profile-report__entry__1"
-class="entry">Reporting Metric</th>
-<th id="nielsen-dar-audience-profile-report__entry__2"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">On Target
-Impressions</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The number of
-impressions served to your desired demographic group that are within
-your selected reporting dimensions</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Total
-Impressions</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The total number
-of impressions your line item has made</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">On Target
-Percent (%)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The percentage
-of impressions served to your targeted demographic
-<ul>
-<li><span class="ph equation-inline">On Target Percent (%) = Impressions
-Seen by Target Demographic ÷ Total Impression Count for your Line Item ×
-100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Impressions
-Share (%)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">Based on the
-line item's total impression count, the percentage that served to your
-targeted demographic
-<ul>
-<li><span class="ph equation-inline">Impressions Share (%) = Demographic
-Impressions ÷ Total Number of Impressions Across all Demographic Groups
-× 100</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Impressions
-Index</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">A targeting
-success score based on how the line item's impressions are divided
-across all demographics
-<ul>
-<li><span class="ph equation-inline">Impressions Index = Impression
-Share (%) ÷ Demographic-Specific Population × 100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Population</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">Based on
-census-provided data, the number of people in the country included in a
-given demographic
-<ul>
-<li>Example: F18-24 = 14.9 million</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Population Share
-(%)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">Percentage of
-people within a demographic relative to the total population
-<ul>
-<li><span class="ph equation-inline">Population Share (%) = Demographic
-Population ÷ Population of all Demographics × 100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Audience Reach
-(%)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The percentage
-of the population reached within a given demographic
-<ul>
-<li><span class="ph equation-inline">Audience Reach (%) = Unique
-Audience ÷ Demographic Population × 100</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Audience
-Index</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">A targeting
-success score based on audience share. This is always a whole number.
-<ul>
-<li><span class="ph equation-inline">Audience Index = Audience Share (%)
-÷ Population Share (%) <span class="ph equation-inline">×
-100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Average
-Frequency</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The average
-number of times a unique audience member viewed your line item's
-creatives
-<ul>
-<li><span class="ph equation-inline">Average Frequency = Impressions ÷
-Unique Audience</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Gross Ratings
-Point (GRP)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The amount of
-times your line item actually reached your target audience
-<ul>
-<li><span class="ph equation-inline">GRP = (% of Population that Saw the
-Ad at Least Once × Number of Times the Average Viewer Saw the Ad) ×
-100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Audience Share
-(%)</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The percentage
-share of the total audience a line item has reached within a certain
-demographic group. This measurement is rounded to two decimal places.
-<ul>
-<li><span class="ph equation-inline">Audience Share (%) = Row
-Level Audience Count <span class="ph equation-inline">÷ Campaign
-Total Audience Count <span class="ph equation-inline">× 100</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__1">Unique
-Audience</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__2">The number of
-unique individuals in the audience that your line item reached</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Reporting Metric | Description |
+|:---|:---|
+| On Target Impressions | The number of impressions served to your desired demographic group that are within your selected reporting dimensions |
+| Total Impressions | The total number of impressions your line item has made |
+| On Target Percent (%) | The percentage of impressions served to your targeted demographic <br> - On Target Percent (%) = Impressions Seen by Target Demographic ÷ Total Impression Count for your Line Item × 100 |
+| Impressions Share (%) | Based on the line item's total impression count, the percentage that served to your targeted demographic <br> - Impressions Share (%) = Demographic Impressions ÷ Total Number of Impressions Across all Demographic Groups × 100 |
+| Impressions Index | A targeting success score based on how the line item's impressions are divided across all demographics <br> - Impressions Index = Impression Share (%) ÷ Demographic-Specific Population × 100 |
+| Population | Based on census-provided data, the number of people in the country included in a given demographic <br> - Example: F18-24 = 14.9 million |
+| Population Share (%) | Percentage of people within a demographic relative to the total population <br> - Population Share (%) = Demographic Population ÷ Population of all Demographics × 100 |
+| Audience Reach (%) | The percentage of the population reached within a given demographic <br> - Audience Reach (%) = Unique Audience ÷ Demographic Population × 100 |
+| Audience Index | A targeting success score based on audience share. This is always a whole number.<br> - Audience Index = Audience Share (%) ÷ Population Share (%) × 100 |
+| Average Frequency | The average number of times a unique audience member viewed your line item's creatives <br> - Average Frequency = Impressions ÷ Unique Audience |
+| Gross Ratings Point (GRP) | The amount of times your line item actually reached your target audience <br> - GRP = (% of Population that Saw the Ad at Least Once × Number of Times the Average Viewer Saw the Ad) × 100 |
+| Audience Share (%) | The percentage share of the total audience a line item has reached within a certain demographic group. This measurement is rounded to two decimal places. <br> - Audience Share (%) = Row Level Audience Count ÷ Campaign Total Audience Count × 100 |
+| Unique Audience | The number of unique individuals in the audience that your line item reached |
 
 ## Filters
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="nielsen-dar-audience-profile-report__entry__29"
-class="entry">Filter</th>
-<th id="nielsen-dar-audience-profile-report__entry__30"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__29">Insertion
-Order</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__30">Filter for the
-name and ID of an insertion order. For more information about insertion
-orders, see <a href="working-with-insertion-orders.md"
-class="xref">Working with Insertion Orders</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__29">Line Item</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__30">Filter for the
-name and ID of an line item. For more information about line items, see
-<a href="working-with-line-items.md" class="xref">Working with Line
-Items</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__29">Demographic
-Group</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__30">Filter for
-demographic groups sorted by sex and age range.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__29">Platform</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__30">Filter for the
-type of device used: Computer, <span
-class="ph uicontrol">Mobile, and/or <span
-class="ph uicontrol">Connected Device</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__29">Country</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__30">Filter for
-countries where Nielsen data is available.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Filter | Description |
+|:---|:---|
+| Insertion Order | Filter for the name and ID of an insertion order. For more information about insertion orders, see [Working with Insertion Orders](./working-with-insertion-orders.md). |
+| Line Item | Filter for the name and ID of an line item. For more information about line items, see [Working with Line Items](./working-with-insertion-orders.md). |
+| Demographic Group | Filter for demographic groups sorted by sex and age range. |
+| Platform | Filter for the type of device used: **Computer**, **Mobile**, and/or **Connected Device** |
+| Country | Filter for countries where Nielsen data is available. |
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="nielsen-dar-audience-profile-report__entry__41"
-class="entry">Dimension</th>
-<th id="nielsen-dar-audience-profile-report__entry__42"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Last Available
-Date</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42">The date when
-reporting data was last gathered</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Metrics Start
-Date</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42">The date when
-data for a Nielsen reporting metric began</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Line Item</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42"><strong>Required.</strong>
-The ID and (optional) name of a line item. For more information about
-line items, see <a href="working-with-line-items.md"
-class="xref">Working with Line Items</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Demographic
-Group</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42"><strong>Required.</strong>
-Demographic groups sorted by sex and age range.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Platform
-Type</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42">The type of
-platform an impression occurred on: "<strong>D</strong>"
-<strong></strong> (<strong>Desktop</strong>), "<strong>M</strong>"
-(<strong>Mobile</strong>), or "<strong>O</strong>" (<strong>Connected
-Device</strong>).</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Country
-Code</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42">The
-corresponding code for a country where impressions for your line item
-occurred</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__41">Nielsen
-Campaign Ref</td>
-<td class="entry"
-headers="nielsen-dar-audience-profile-report__entry__42">The Nielsen
-campaign reference ID. <strong>Example</strong>: <code
-class="ph codeph">cmp3406123</code></td>
-</tr>
-</tbody>
-</table>
+| Dimension | Description |
+|:---|:---|
+| Last Available Date | The date when reporting data was last gathered |
+| Metrics Start Date | The date when data for a Nielsen reporting metric began |
+| Line Item | **Required**. The ID and (optional) name of a line item. For more information about line items, see [Working with Line Items](./working-with-line-items.md). |
+| Demographic Group | **Required**. Demographic groups sorted by sex and age range. |
+| Platform Type | The type of platform an impression occurred on: **"D" (Desktop)**, **"M" (Mobile)**, or **"O" (Connected Device)**. |
+| Country Code | The corresponding code for a country where impressions for your line item occurred |
+| Nielsen Campaign Ref | The Nielsen campaign reference ID. **Example**: `cmp3406123` |
 
+## To run your report
 
+Follow these steps to run your report.
 
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
 
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-## To Run your Report
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 
-Follow these steps to run the report:
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1.  Select
-    Reporting
-    \> Advertiser Reports from
-    the dropdown menu (depending on how your account has been
-    configured).
-2.  Select the relevant report from the list. The
-    Report screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
-    
+1. Choose a delivery option. Once you've selected your filters andgrouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
 
-    <b>Important:</b> For an explanation of
-    how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.md"
-    class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
 
-    
-3.  Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    Add to include them in the
-    **Chosen** list (right).
-4.  Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
-    
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
+        > [!TIP]
+        > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    <b>Warning:</b> The more dimensions you
-    group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using
-    only the dimensions you need.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+  
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+  
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
 
-    
-5.  Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser.
-    - **Run in background, notify me when results are ready to view**: A
-      pop-up notification will let you know when the report is ready to
-      view or download.
-    - **Export, send results via email**: Run the report in the
-      background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      Name this report (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
-6.  Click Run report to send your
-    report request.
+    - **Name this report**: Give this report with its current settings a name for future reference.
 
-
-
-
-
-## Related Topics
-
-- <a href="nielsen-dar-site-split-report.md" class="xref"
-  title="The Nielsen Digital Ad Ratings (DAR) - Site/Split Report gives you insight into the publisher domains and audiences connected to your line item&#39;s impressions. If your line item&#39;s using splits, this report also gives you information on their performance.">Nielsen
-  Digital Ad Ratings - Site/Split Report</a>
-- <a href="nielsen-digital-ad-ratings.md" class="xref"
-  title="When creating or editing an augmented line item, you have the option to enable Nielsen Digital Ad Ratings (DAR), which will measure your line item&#39;s performance in reaching its targeted demographic group.">Measuring
-  Demographic Targeting Success with Nielsen Digital Ad Ratings</a>
-- <a href="activate-nielsen-digital-ad-ratings-for-a-line-item.md"
-  class="xref"
-  title="For $0.25 CPM, you can activate Nielsen Digital Ad Ratings (DAR) for your augmented line item. Nielsen DAR is a feature used to measure your line item&#39;s performance in reaching a particular demographic (gender and age group) that has no affect on your line item&#39;s actual targeting or delivery.">Activate
-  Nielsen Digital Ad Ratings for a Line Item</a>
-- <a href="nielsen-dar-metrics.md" class="xref"
-  title="Nielsen Digital Ad Ratings (DAR) introduces an exclusive set of metrics for tracking a line item&#39;s audience demographic targeting success within Microsoft Invest. If you&#39;ve enabled Nielsen DAR for your line item, you&#39;ll be able to track a series of metrics across reports and in your line item&#39;s Analytics tab.">Metrics
-  for Nielsen Digital Ad Ratings</a>
-
-
-
-
-
-
+1. Click **Run report** to send your report request.
