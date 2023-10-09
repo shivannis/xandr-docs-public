@@ -1,5 +1,4 @@
 - name: Member Settings
-  href: index.yml
   items: 
   - name: Working with Member Settings
     items:
