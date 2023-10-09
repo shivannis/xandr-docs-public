@@ -1,24 +1,18 @@
 ---
-Title : Universal Pixel Code Structure
-Description : The general universal pixel code to be deployed in the `<head>` tag on
-each page of the advertiser website is different from the pixel code
-required for standard and custom events, which is deployed only on pages
-of interest.
+title : Microsoft Invest - Universal Pixel Code Structure
+description : Learn about the universal pixel code structure. The general universal pixel code deployed in the `<head>` tag on
+each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest. 
 ---
 
 
-# Universal Pixel Code Structure
-
-
+# Microsoft Invest - universal pixel code structure
 
 The general universal pixel code to be deployed in the `<head>` tag on
 each page of the advertiser website is different from the pixel code
 required for standard and custom events, which is deployed only on pages
 of interest.
 
-
-
-## Universal Pixel Initialization Code
+## Universal pixel initialization code
 
 The following code sample shows the structure of the universal pixel
 code that you can deploy in the `<head>` tag of an advertiser's web
@@ -41,11 +35,7 @@ don’t accept JavaScript.
 </noscript> 
 ```
 
-
-
-
-
-## Event Code
+## Event code
 
 The following code sample shows the script code for an `AddToCart` event
 with additional parameters appended. You should place code for standard
@@ -62,19 +52,7 @@ conversion landing page.
 </noscript>
 ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a href="standard-events-and-parameters.md" class="xref">Standard
-  Events and Parameters</a>
-- <a href="create-custom-events-and-parameters.md" class="xref"
-  title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
-  Custom Events and Parameters</a>
-
-
-
-
-
-
+- [Standard Events and Parameters](standard-events-and-parameters.md)
+- [Create Custom Events and Parameters](create-custom-events-and-parameters.md)

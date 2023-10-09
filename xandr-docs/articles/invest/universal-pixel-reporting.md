@@ -1,41 +1,19 @@
 ---
-Title : Universal Pixel Reporting
-Description : In addition to the activity reporting available from the
-Universal Pixels page, a number of
-reports and feeds contain information about universal pixel activity.
+title : Microsoft Invest - Universal Pixel Reporting
+description : Learn about universal pixel activity from activity reporting available along with a number of
+reports and feeds in Universal Pixels page.   
 ---
 
 
-# Universal Pixel Reporting
-
-
+# Microsoft Invest - universal pixel reporting
 
 In addition to the activity reporting available from the
 Universal Pixels page, a number of
 reports and feeds contain information about universal pixel activity.
 
-
-
-
-
-- <a href="advertiser-analytics-report.md" class="xref">Advertiser
-  Analytics Report</a>
-- <a href="advertiser-attributed-conversions-report.md"
-  class="xref">Advertiser Attributed Conversions Report</a>
-- <a href="buyer-segment-performance-report.md" class="xref">Buyer
-  Segment Performance Report</a>
-- <a href="member-attributed-conversions-report.md" class="xref">Member
-  Attributed Conversions Report</a>
-- <a href="network-site-domain-performance-report.md"
-  class="xref">Member Site Domain Performance Report</a>
-- <a
-  href="log-level-data/log-level-data-feeds.md"
-  class="xref" target="_blank">Log-Level Data Feeds</a>
-
-
-
-
-
-
-
-
+- [Advertiser Analytics Report](advertiser-analytics-report.md)
+- [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md)
+- [Buyer Segment Performance Report](buyer-segment-performance-report.md)
+- [Member Attributed Conversions Report](member-attributed-conversions-report.md)
+- [Member Site Domain Performance Report](network-site-domain-performance-report.md)
+- [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)
