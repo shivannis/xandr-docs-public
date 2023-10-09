@@ -3,7 +3,7 @@ title: July 14, 2021 - Introducing Our New Bulk Export and Import Functionality
 description: Find the release note for the new bulk export and import functionality that has been introduced.
 ---
 
-# July 14, 2021: Introducing Our new bulk export and import functionality
+# July 14, 2021: Introducing our new bulk export and import functionality
 
 With our new bulk export and import functionality, you can now quickly audit, edit, and duplicate configurations for multiple objects. This new functionality will help to reduce repetition and improve bottom lines.
 

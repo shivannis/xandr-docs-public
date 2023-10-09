@@ -73,7 +73,7 @@ To target specific Postal Code Lists and Postal Codes:
     | Postal Code Lists | - Search by ID or Name for available Postal Code Lists to target <br> - Either include or exclude the postal code list for the line item for targeting. (Click the **green check** to include a list and click the **red dash** to exclude a list.) <br> - After you select a postal code list, it displays the particulars of the list such as Name and ID under the section **Selected Postal Codes**. You can use the **Remove all** button if necessary. <br> - You can add multiple postal code lists to include or exclude for the line item using this search option. |
     | Postal Codes | - Copy and paste the postal codes or import a file of postal codes you want to target following the instructions in step 5 in the **To create a new Postal Code List** section above. You can add upto 100,000 postal codes in this dialog box. <br> - You can include or exclude a postal code from targeting for a split. |
 
-1. Click Save to complete the setup.
+1. Click **Save** to complete the setup.
 
 ## Related topics
 
