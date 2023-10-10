@@ -102,6 +102,530 @@
         href: asynchronous-usersync-pixels.md
     - name: Traffic Quality
       href: traffic-quality.md
+- name: Buying Guide
+  items:
+  - name: Ad Buying with Xandr
+    href: ad-buying-with-xandr.md
+  - name: Basic Buy-side Setup Procedures
+    href: basic-buy-side-setup-procedures.md
+  - name: Understanding the Debug Auction
+    href: understanding-the-debug-auction.md
+  - name: Using the Buyer Monitoring Grids
+    href: using-the-buyer-monitoring-grids.md
+  - name: Bulk Edit Actions
+    href: bulk-edit-actions.md
+  - name: Exporting and Importing Object Details in Bulk
+    items:
+    - name: An Overview of Exporting and Importing Object Details in Bulk
+      href: exporting-and-importing-object-details-in-bulk.md
+    - name: Bulk Importer Template Guidelines
+      items:
+      - name: Bulk Importer Guidelines for Insertion Orders
+        href: bulk-importer-guidelines-for-insertion-orders.md
+      - name: Bulk Importer Guidelines for Line Items
+        href: bulk-importer-guidelines-for-line-items.md
+      - name: Bulk Importer Guidelines for Creatives
+        href: bulk-importer-guidelines-for-creatives.md
+      - name: Bulk Importer Guidelines for Segment Groups
+        href: bulk-importer-guidelines-for-segment-groups.md
+      - name: Bulk Importer Guidelines for Splits
+        href: bulk-importer-guidelines-for-splits.md
+      - name: Bulk Importer Guidelines for Split Segment Groups
+        href: bulk-importer-guidelines-for-split-segment-groups.md
+  - name: Advertisers
+    items:
+    - name: Working with Advertisers
+      href: working-with-advertisers.md
+    - name: Create an Advertiser
+      href: create-an-advertiser.md
+    - name: View Advertiser Details
+      href: view-advertiser-details.md
+  - name: Insertion Orders
+    items:
+    - name: Working with Insertion Orders
+      href: working-with-insertion-orders.md
+    - name: View Insertion Order Details
+      href: view-insertion-order-details.md
+    - name: Create an Insertion Order
+      href: create-an-insertion-order.md
+    - name: Update Insertion Orders
+      href: update-insertion-orders.md
+    - name: Duplicate an Insertion Order
+      href: duplicate-an-insertion-order.md
+  - name: Working with Line Items
+    items:
+    - name: Working with Line Items
+      href: working-with-line-items.md
+    - name: Troubleshoot Your Augmented Line Item Delivery and Bid Performance
+      href: troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md
+    - name: Bid Performance Messages for Augmented Line Items
+      href: bid-performance-messages-for-augmented-line-items.md
+    - name: Augmented Line Items (ALI)
+      href: augmented-line-items-ali.md
+    - name: Creating an Augmented Line Item
+      items:
+      - name: Create an Augmented Line Item
+        href: create-an-augmented-line-item-ali.md
+      - name: Navigate to the Create New Line Item Screen
+        href: navigate-to-the-create-a-new-line-item-screen-invest.md
+      - name: Add Basic Line Item Details
+        href: add-basic-line-item-details.md
+      - name: Set Up Line Item Budgeting and Scheduling
+        href: set-up-line-item-budgeting-and-scheduling.md
+      - name: Underspend Budget Rollover
+        href: underspend-budget-rollover.md
+      - name: Set Up Line Item Optimization
+        href: set-up-line-item-optimization.md
+      - name: Set Up Line Item Inventory and Brand Safety
+        href: set-up-line-item-inventory-and-brand-safety.md
+      - name: Setting Up Geography Targeting for a Line Item
+        items:
+        - name: Set Up Geography Targeting for a Line Item
+          href: set-up-geography-targeting-for-a-line-item.md
+        - name: Additional Geo Restrictions
+          href: additional-geo-restrictions-ali.md
+        - name: Postal Code Lists
+          href: postal-code-lists.md
+        - name: Political Geography Targeting
+          href: political-geography-targeting.md
+      - name: Enable Cross-Device Targeting and Measurement for a Line Item
+        href: enable-cross-device-targeting-and-measurement-for-a-line-item.md
+      - name: Setting Up Segment Targeting on a Line Item
+        items:
+        - name: Set Up Segment Targeting on a Line Item
+          href: set-up-segment-targeting-on-a-line-item.md           
+        - name: Microsoft In-Market Audiences
+          href: microsoft-in-market-audiences.md
+        - name: Modeled Audiences
+          href: modeled-audiences.md
+      - name: Set Line Item Frequency and Recency Caps
+        href: set-line-item-frequency-and-recency-caps.md
+      - name: Set Up Viewability and Environment Targeting for a Line Item
+        href: set-up-viewability-and-environment-targeting-for-a-line-item.md
+      - name: Associate Creatives with a Line Item
+        href: associate-creatives-with-a-line-item.md
+      - name: Enable Third-Party Measurement Features on a Line Item
+        items:
+        - name: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+          href: nielsen-digital-ad-ratings.md
+        - name: Metrics for Nielsen Digital Ad Ratings
+          href: nielsen-dar-metrics.md
+        - name: Activate Nielsen Digital Ad Ratings for a Line Item
+          href: activate-nielsen-digital-ad-ratings-for-a-line-item.md
+        - name: Enabling Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
+          href: enabling-sales-impact-with-nielsen-catalina-solutions.md
+        - name: Activate Nielsen Sales Impact for a Line Item
+          href: activate-nielsen-sales-impact-for-a-line-item.md
+      - name: Configuring a Programmable Split
+        items:
+        - name: Configure a Programmable Split
+          href: configure-a-programmable-split.md            
+        - name: Create a Programmable Split
+          href: create-a-programmable-split.md
+        - name: Set Split Targeting
+          href: set-split-targeting.md
+        - name: Set Split Priority
+          href: set-split-priority.md
+        - name: Set Spend Allocation and Capping on a Split
+          href: set-spend-allocation-and-capping-on-a-split.md
+        - name: Use Segment Targeting with a Split
+          href: use-segment-targeting-with-a-split.md
+        - name: Assign Creatives to a Split
+          href: assign-creatives-to-a-split.md
+        - name: Pass Custom Macros to a Split
+          href: pass-custom-macros-to-a-split.md
+        - name: Use User Test Groups with a Split
+          href: use-user-test-groups-with-a-split.md
+      - name: Apply a Partner Fee to a Line Item
+        href: apply-a-partner-fee-to-a-line-item_1.md
+      - name: Add Reporting Labels and Comments to a Line Item
+        href: add-reporting-labels-and-comments-to-a-line-item.md
+    - name: Programmatic Guaranteed Buying Line Items
+      items:
+      - name: An Overview of Programmatic Guaranteed Buying Line Items
+        href: programmatic-guaranteed-buying-line-items.md
+      - name: Create a Programmatic Guaranteed Buying Line Item
+        href: create-a-programmatic-guaranteed-buying-line-item.md
+      - name: Metrics for Programmatic Guaranteed Buying Line Items
+        href: metrics-for-programmatic-guaranteed-buying-line-items.md
+      - name: Troubleshoot your Programmatic Guaranteed Buying Line Item Bid Performance
+        href: troubleshoot-your-programmatic-guaranteed-buying-line-item-bid-performance.md
+      - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
+        href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
+      - name: Netflix Programmatic Guaranteed Buying Line Item
+        href: netflix-programmatic-guaranteed-buying-line-item.md
+    - name: Netflix Deal Defined Buying Line Items
+      href: netflix-deal-defined-buying-line-items.md
+    - name: Update Line Items 
+      href: update-line-items.md
+    - name: View Line Item Details
+      href: view-line-item-details.md
+    - name: Peer Approval
+      href: peer-approval.md
+    - name: Cross-Device Targeting and Measurement
+      items:
+      - name: An Overview of Cross-Device Targeting and Measurement
+        href: cross-device-targeting-and-measurement.md
+      - name: Use Cases for Cross-Device Targeting and Measurement
+        href: use-cases-for-cross-device-targeting.md
+      - name: Set Up Cross-Device Attribution
+        href: set-up-cross-device-attribution.md
+      - name: Cross-Device Reporting
+        href: cross-device-reporting.md
+  - name: Programmable Splits
+    items:
+    - name: Working with Programmable Splits
+      href: working-with-programmable-splits.md
+    - name: Understanding Splits
+      href: understanding-splits.md and working-with-programmable-splits.md
+    - name: Configure a Programmable Split
+      href: configure-a-programmable-split.md
+    - name: Update Splits
+      href: update-splits.md
+    - name: Import or Export Split CSVs
+      href: import-or-export-split-csvs.md
+    - name: Monitor Splits
+      href: monitor-splits.md
+    - name: Explore Splits
+      href: explore-splits.md
+    - name: Split FAQ
+      href: split-faqs.md
+  - name: Segments
+    items:
+    - name: Working with Segments
+      href: working-with-segments.md    
+    - name: Onboarding Your Audience Data
+      items:
+      - name: Client-Side Segmentation
+        href: client-side-segmentation.md
+      - name: Create a Segment Pixel
+        href: create-a-segment-pixel.md
+      - name: Export a Segment Pixel
+        href: export-a-segment-pixel.md
+    - name: Birthday Cookies
+      href: birthday-cookies.md
+    - name: Segment Pixels - Advanced
+      href: segment-pixels-advanced.md
+    - name: Segment Modifier
+      items:
+      - name: An Overview of Segment Modifier
+        href: segment-modifier.md
+      - name: Segment Modifier Testing Guidelines
+        href: segment-modifier-testing-guidelines.md
+    - name: Pass in User Data Offline
+      items:
+      - name: An Overview of Pass in User Data Offline
+        href: pass-in-user-data-offline.md
+      - name: User ID Mapping
+        href: user-id-mapping-with-getuid-and-mapuid.md
+      - name: User Mapping Visual
+        href: user-mapping-visual-and-walk-through.md
+      - name: Server Side Cookie Store
+        href: server-side-cookie-store.md
+    - name: Location Manager 
+      items:
+      - name: An Overview of Location Manager 
+        href: location-manager.md
+      - name: Geo Radius Segments
+        href: geo-radius-segments.md
+  - name: The Universal Pixel
+    items:
+    - name: An Overview of the Universal Pixel
+      href: the-universal-pixel.md
+    - name: Universal Pixel Basic Implementation
+      href: universal-pixel-basic-implementation.md
+    - name: Universal Pixel Code Structure
+      href: universal-pixel-code-structure.md
+    - name: Events and Parameters
+      items:
+      - name: Using Events and Parameters
+        href: using-events-and-parameters.md
+      - name: Create Event Code from the UI
+        href: create-event-code-from-the-ui.md
+      - name: Create Event Code Manually
+        href: create-event-code-manually.md
+      - name: Standard Events and Parameters
+        href: standard-events-and-parameters.md
+      - name: Create Custom Events and Parameters
+        href: create-custom-events-and-parameters.md
+    - name: Universal Pixel Audiences and Conversions
+      items:
+      - name: An Overview of Universal Pixel Audiences and Conversions
+        href: universal-pixel-audiences-and-conversions.md      
+      - name: Set Up Audiences with Universal Pixel
+        href: set-up-audiences-with-universal-pixel.md
+      - name: Set Up Conversions with Universal Pixel
+        href: set-up-conversions-with-universal-pixel.md
+      - name: Universal Pixel Rule Conditions
+        href: universal-pixel-rule-conditions.md
+    - name: Universal Pixel Reporting
+      href: universal-pixel-reporting.md
+    - name: Universal Pixel Object Limits
+      href: universal-pixel-object-limits.md
+  - name: Conversion Pixels
+    items:
+    - name: Working with Conversion Pixels
+      href: working-with-conversion-pixels.md
+    - name: Create a Conversion Pixel
+      href: create-a-conversion-pixel.md
+    - name: Export Conversion Pixels
+      href: export-conversion-pixels.md
+    - name: Conversion Attribution
+      items:
+      - name: An Overview of Conversion Attribution
+        href: conversion-attribution.md
+      - name: Offline Conversion Attribution
+        href: offline-conversion-attribution.md
+    - name: Conversion Pixels Advanced
+      href: conversion-pixels-advanced.md
+    - name: Reporting on Conversions
+      href: reporting-on-conversions.md
+    - name: Server-Side Conversion Pixels
+      href: server-side-conversion-pixels.md
+    - name: Set Up a Combined Segment and Conversion Pixel
+      href: set-up-a-combined-segment-and-conversion-pixel.md
+  - name: Impression and Click Trackers
+    items:
+    - name: Working with Impression and Click Trackers
+      href: working-with-impression-and-click-trackers.md
+    - name: Create a Click Tracker
+      href: create-a-click-tracker.md
+    - name: Create an Impression Tracker
+      href: create-an-impression-tracker.md
+  - name: APAC Supply Information - Platform Inventory by Seller
+    href: apac-supply-information-platform-inventory-by-seller.md
+  - name: Mobile
+    items:
+    - name: Welcome to Mobile
+      href: welcome-to-mobile.md
+    - name: Mobile Ad Call Reference
+      items:
+      - name: An Overview of Mobile Ad Call Reference
+        href: mobile-ad-call-reference.md
+      - name: Mobile Carrier Codes
+        href: mobile-carrier-codes.md
+      - name: Testing Client-Side Impression Tracking
+        href: testing-client-side-impression-tracking.md
+    - name: A Comparison of Mobile App vs. Web
+      href: a-comparison-of-mobile-vs-web.md
+    - name: Adapting Display Strategies to Mobile Buying
+      href: adapting-display-strategies-to-mobile-buying.md
+    - name: Mobile Inventory
+      items:
+      - name: Buying Mobile Inventory
+        href: buying-mobile-inventory.md
+      - name: Buy Mobile Inventory via RTB
+        href: buy-mobile-inventory-via-rtb.md
+      - name: Managing Mobile Discrepancies
+        href: managing-mobile-discrepancies.md
+      - name: Run Rich Media Creatives on Mobile Inventory
+        href: run-rich-media-creatives-on-mobile-inventory.md
+      - name: Running Cost per Install Offers
+        href: running-cost-per-install-offers.md
+      - name: Set Up Third-Party Mobile App Install Tracking
+        href: set-up-third-party-mobile-app-install-tracking.md
+    - name: Mobile-Specific Reporting
+      href: mobile-specific-reporting.md
+    - name: Mobile Debug Auction Tips
+      href: mobile-debug-auction-tips.md
+    - name: Limitations of Mobile Buying
+      items:
+      - name: Technical Limitations of Mobile Buying
+        href: technical-limitations-of-mobile-buying.md
+      - name: Mobile Targeting and Attribution Challenges
+        href: mobile-targeting-and-attribution-challenges.md
+    - name: Mobile Creative Auditing
+      href: mobile-creative-auditing.md
+    - name: Mobile Buying FAQ
+      href: mobile-buying-faq.md
+  - name: Video Inventory
+    items:
+    - name: Buying Video Inventory
+      href: buying-video-inventory.md
+    - name: Video Creative Best Practices
+      href: video-creative-best-practices.md
+    - name: Upload a Hosted Video Creative
+      href: upload-a-hosted-video-creative.md
+    - name: Troubleshooting VAST Creative Display Issues
+      href: troubleshooting-vast-creative-display-issues.md
+    - name: VAST Check
+      href: vast-check.md
+    - name: Video Inventory Recommendations
+      href: video-inventory-recommendations.md
+    - name: Use Recommendations to Target Video Inventory
+      href: use-recommendations-to-target-video-inventory.md
+    - name: OTT Video Inventory
+      items:
+      - name: Buying OTT Video Inventory
+        href: buying-ott-video-inventory.md
+      - name: OTT Video Creative Specifications
+        href: ott-video-creative-specifications.md
+      - name: Buying ESPN Inventory
+        href: buying-espn-inventory.md
+      - name: Buying Hulu Inventory
+        href: buying-hulu-inventory.md
+      - name: CTV Video Buying Best Practices
+        href: ctv-video-buying-best-practices.md
+    - name: Best Practices for Buying Google Ad Manager Inventory
+      href: best-practices-for-buying-google-adx-inventory.md
+    - name: Vertical Video Creatives
+      href: vertical-video-creatives.md
+    - name: Comparison of Video Complete Buying Strategies
+      href: comparison-of-video-complete-buying-strategies.md
+  - name: Audio Inventory
+    items:
+    - name: Buying Audio Inventory
+      href: buying-audio-inventory.md
+    - name: Buying Spotify Audio Inventory
+      href: buying-spotify-audio-inventory.md
+    - name: Buying Triton Audio Inventory
+      href: buying-triton-audio-inventory.md
+  - name: Microsoft Inventory
+    items:
+    - name: Buying Microsoft Inventory
+      href: buying-microsoft-inventory.md
+    - name: Buying MSN Inventory
+      href: buying-msn-inventory.md
+    - name: Buying Microsoft Casual Games (Windows O&O Apps)
+      href: buying-microsoft-casual-games-windows-o-o-apps.md
+    - name: Buying Microsoft Deals
+      href: buying-microsoft-deals.md
+    - name: Buying Microsoft Outlook.com Inventory
+      href: buying-microsoft-outlook-com-inventory.md
+    - name: Buying Microsoft Video Inventory
+      href: buying-microsoft-video-inventory.md
+    - name: Buying Microsoft Windows App Inventory
+      href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
+    - name: Programmatic Buying on Xbox for Marketers
+      href: programmatic-buying-on-xbox-for-marketers.md
+  - name: Native Inventory
+    items:
+    - name: Buying Native Inventory
+      href: buying-native-inventory.md
+    - name: Native Inventory Seller Specifications
+      href: native-inventory-seller-specifications.md
+    - name: Buying GumGum Inventory
+      href: buying-gumgum-inventory.md
+    - name: Buying Seedtag Inventory
+      href: buying-seedtag-inventory.md
+  - name: Political Advertising
+    href: political-advertising.md
+  - name: Data Marketplace - Buyer Overview
+    href: data-marketplace-buyer-overview.md
+- name: Buy Side Targeting
+  items:
+  - name: Daypart Targeting
+    href: daypart-targeting.md
+  - name: Demography Targeting
+    items:
+    - name: An Onverview of Demography Targeting
+      href: demography-targeting.md
+    - name: Age and Gender Targeting for Third-Party Inventory
+      href: age-and-gender-targeting-for-third-party-inventory.md
+  - name: Device Type Targeting
+    href: device-type-targeting-ali.md
+  - name: Direct Inventory Targeting (ALI)
+    href: direct-inventory-targeting-ali.md
+  - name: Frequency and Recency Caps
+    items:
+    - name: An Overview of Frequency and Recency Caps
+      href: frequency-and-recency-caps.md
+    - name: Applying Frequency and Recency Caps
+      href: applying-frequency-and-recency-caps.md
+    - name: Set a Frequency Cap
+      href: set-a-frequency-cap.md
+    - name: Set a Recency Cap
+      href: set-a-recency-cap.md
+    - name: Frequency and Recency Examples
+      href: frequency-and-recency-examples.md
+    - name: Advanced Frequency Management
+      href: advanced-frequency-management.md
+  - name: Geography Targeting
+    items:
+    - name: An Overview of Geography Targeting       
+      href: geography-targeting.md
+    - name: How Geography Targeting Works
+      href: how-geography-targeting-works.md
+    - name: Invalid Postal and ZIP Codes
+      href: invalid-postal-codes.md
+    - name: Changes to Geography Objects
+      href: changes-to-geography-objects.md
+  - name: Inventory Performance Targeting
+    href: inventory-performance-targeting.md
+  - name: Inventory Targeting (ALI)
+    items:
+    - name: An Overview of Inventory Targeting
+      href: inventory-targeting-ali.md
+    - name: Inventory Library
+      href: inventory-library.md
+    - name: Add Premium Video Catalog Deals to Deal Lists
+      href: add-premium-video-catalog-deals-to-deal-lists.md
+    - name: Deal Lists
+      href: deal-lists.md
+    - name: Deal Targeting (ALI)
+      href: deal-targeting-ali.md
+    - name: Direct Inventory Targeting (ALI)
+      href: direct-inventory-targeting-ali.md
+    - name: Inventory Lists
+      href: inventory-lists-ali-only.md
+  - name: Key/Value Targeting
+    href: key-value-targeting.md
+  - name: Listen-Through Targeting
+    href: listen-through-targeting.md
+  - name: Page Properties Targeting
+    href: page-properties-targeting.md
+  - name: Segment Targeting
+    href: segment-targeting.md
+  - name: System Targeting
+    href: system-targeting.md
+  - name: Video Completion Rate Targeting
+    href: video-completion-rate-targeting.md
+  - name: Video Targeting
+    href: video-targeting.md
+  - name: Viewability Targeting
+    href: viewability-targeting.md
+- name: ALI Optimization Guide
+  items:
+    - name: Overview
+      href: optimization-guide-ali.md
+    - name: Adaptive Pacing
+      href: adaptive-pacing.md
+    - name: Lifetime Pacing
+      href: lifetime-pacing.md
+    - name: Discovery
+      href: discovery.md
+    - name: Valuation
+      href: valuation.md
+    - name: Ways to Improve Click-Through Rate (CTR) Performance
+      href: ways-to-improve-ctr-performance.md
+    - name: Engineered Features
+      href: engineered-features.md
+- name: Partner Center Guide
+  items:
+  - name: Managing Relationships with Sellers
+    items:
+    - name: Partner Center Screen
+      href: partner-center-screen-buyer-view.md       
+    - name: Partnership Details Screen
+      href: partnership-details-screen-buyer-view.md
+    - name: Customize Your Buyer Profile
+      href: customize-your-buyer-profile.md
+    - name: Xandr Direct for Buyers
+      href: appnexus-direct-for-buyers.md
+  - name: Buying Deals
+    items:
+    - name: Get Deals from Seller Packages
+      href: get-deals-from-seller-packages.md
+    - name: Negotiate Deals with Sellers
+      href: negotiate-deals-with-sellers.md
+    - name: Manage Your Deals with Sellers
+      href: manage-your-deals-with-sellers.md
+    - name: Control Your Deals with Sellers
+      href: control-your-deals-with-sellers.md
+    - name: Buy-Side Reporting on Deals
+      href: buy-side-reporting-on-deals.md
+  - name: Understanding Bid Rejections
+    href: understanding-bid-rejections.md
 - name: Viewability
   items:
     - name: Overview
@@ -160,22 +684,6 @@
       href: using-a-viewability-rate-target-for-guaranteed-views.md
     - name: Monthly Prediction Variability Data
       href: monthly-prediction-variability-data.md
-- name: Optimization Guide - ALI
-  items:
-    - name: Overview
-      href: optimization-guide-ali.md
-    - name: Adaptive Pacing
-      href: adaptive-pacing.md
-    - name: Lifetime Pacing
-      href: lifetime-pacing.md
-    - name: Discovery
-      href: discovery.md
-    - name: Valuation
-      href: valuation.md
-    - name: Ways to Improve Click-Through Rate (CTR) Performance
-      href: ways-to-improve-ctr-performance.md
-    - name: Engineered Features
-      href: engineered-features.md
 - name: Apps
   items:
     - name: grapeshot
