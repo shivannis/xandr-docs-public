@@ -237,7 +237,7 @@
         - name: Use User Test Groups with a Split
           href: use-user-test-groups-with-a-split.md
       - name: Apply a Partner Fee to a Line Item
-        href: apply-a-partner-fee-to-a-line-item_1.md
+        href: apply-a-partner-fee-to-a-line-item.md
       - name: Add Reporting Labels and Comments to a Line Item
         href: add-reporting-labels-and-comments-to-a-line-item.md
     - name: Programmatic Guaranteed Buying Line Items
@@ -277,7 +277,7 @@
     - name: Working with Programmable Splits
       href: working-with-programmable-splits.md
     - name: Understanding Splits
-      href: understanding-splits.md and working-with-programmable-splits.md
+      href: understanding-splits.md
     - name: Configure a Programmable Split
       href: configure-a-programmable-split.md
     - name: Update Splits
