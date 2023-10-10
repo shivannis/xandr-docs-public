@@ -600,6 +600,149 @@
       href: ways-to-improve-ctr-performance.md
     - name: Engineered Features
       href: engineered-features.md
+- name: Creatives
+  items:
+  - name: Working with Creatives 
+    href: working-with-creatives.md
+  - name: Exploring Creatives
+    href: exploring-creatives.md
+  - name: Creative Types
+    items:
+    - name: An Overview of Creative Types
+      href: creative-types.md
+    - name: Video Creatives
+      href: video-creatives.md
+    - name: Audio Creatives
+      href: audio-creatives.md
+    - name: Native Creatives
+      href: native-creatives.md
+    - name: Banner and HTML5 Creatives
+      href: banner-and-html5-creatives.md
+  - name: Creative Standards
+    items:
+    - name: Overview
+      href: creative-standards.md
+    - name: Sherlock - Creative Quality Control
+  - name: Creative Branding
+    items:
+    - name: Overview
+      href: creative-branding.md
+    - name: Competitive Exclusions
+      href: competitive-exclusions-2.md
+    - name: Exclude Competitive Brands for a Creative
+      href: exclude-competitive-brands-for-a-creative.md
+    - name: Exclude Competitive Offer Categories for a Creative
+      href: exclude-competitive-offer-categories-for-a-creative.md
+  - name: Adding and Updating Creatives
+    items:
+    - name: Creative Guidelines and Specifications
+      items:
+      - name: Overview
+        href: creative-guidelines-and-specifications.md
+      - name: Video Creative Guidelines and Specifications
+        href: video-creative-guidelines-and-specifications.md
+      - name: Audio Creative Guidelines and Specifications
+        href: audio-creative-guidelines-and-specifications.md
+      - name: HTML5 Creative Guidelines and Specifications
+        href: html5-creative-guidelines-and-specifications.md
+      - name: Native Creative Asset Specifications
+        href: native-creative-asset-specifications.md
+      - name: Creative Character Specifications
+        href: creative-character-specifications.md
+      - name: Creative CTV Guidelines and Specifications
+        href: creative-ctv-guidelines-and-specifications.md
+    - name: Creative Spreadsheet Conventions
+      href: creative-spreadsheet-conventions.md
+    - name: Add a Creative 
+      href: add-a-creative.md
+    - name: Add Creatives in Bulk
+      href: add-creatives-in-bulk.md
+    - name: Update Creatives in bulk
+      href: update-creatives-in-bulk.md
+    - name: Supported VAST Features
+      href: supported-vast-features.md
+    - name: Companions
+      href: companions.md
+    - name: Dynamic Landing Pages
+      href: dynamic-landing-pages.md
+    - name: Associate Line Items with a Creative
+      href: associate-line-items-with-a-creative.md
+    - name: Creative Rotation (ALI)
+      href: creative-rotation-ali.md
+    - name: Smart Image Adjustments for Native Creatives
+      href: smart-image-adjustments-for-native-creatives.md
+  - name: Tracking for Creatives   
+    items:
+    - name: Configuring Tracking for Creatives
+      href: configuring-tracking-for-creatives.md
+    - name: Click Tracking
+      items:
+      - name: Overview
+        href: click-tracking.md
+      - name: Click Track Test
+        href: click-track-test.md
+      - name: Test Click Tracking Manually
+        href: test-click-tracking-manually.md
+    - name: Third-Party Tracking Pixels for Creatives
+      items:          
+      - name: Overview
+        href: third-party-tracking-pixels-for-creatives.md
+      - name: Create a Third-Party Member Pixel for Your Creatives
+        href: create-a-third-party-network-pixel-for-your-creatives.md
+      - name: Create a Third-Party Advertiser Pixel for Your Creatives
+        href: create-a-third-party-advertiser-pixel-for-your-creatives.md
+    - name: Associate Segment Pixels with Creatives
+      href: associate-segment-pixels-with-creatives.md
+    - name: Moat Video Viewability Measurement
+      href: moat-video-viewability-measurement.md
+  - name: Auditing Creatives
+    items:   
+    - name: Overview
+      href: auditing-creatives.md
+    - name: Select an Audit Option for a Creative
+      href: select-an-audit-option-for-a-creative.md
+    - name: Self-Auditing Creatives
+      href: self-auditing-creatives.md
+    - name: Creative Audit Best Practices
+      href: best-practices-for-submitting-creatives-for-audit.md
+    - name: General Guidelines for Passing Creative Audits
+      href: general-creative-guidelines-to-pass-auditing.md
+    - name: Google Ad Manager Creative Audit
+      items:      
+      - name: Google Ad Manager Creative Audit Process
+        href: adx-creative-audit-process.md
+      - name: Google Ad Manager Disapproval Reasons
+        href: adx-disapproval-reasons.md
+      - name: Resubmit Creatives for Google Ad Manager Auditing
+        href: resubmit-creatives-for-adx-auditing.md
+  - name: Creative Templates
+    items:
+    - name: Overview
+      href: creative-templates.md
+    - name: Managing Creative Templates
+      href: managing-creative-templates.md
+    - name: Create a Custom Creative Template
+      href: create-a-custom-creative-template.md
+    - name: Duplicate an Existing Custom Creative Template
+      href: duplicate-an-existing-custom-creative-template.md
+    - name: Update a Custom Creative Template
+      href: update-a-custom-creative-template.md
+    - name: Delete a Custom Creative Template
+      href: delete-a-custom-creative-template.md
+    - name: Applying Media Types and Templates to Banner Creatives
+      href: applying-media-types-and-templates-to-banner-creatives.md
+  - name: Creative Macros
+    items:
+    - name: Overview
+      href: creative-macros.md
+    - name: Auto Macro Insertion
+      href: auto-macro-insertion.md
+    - name: Supported Creative Macros
+      href: supported-creative-macros.md
+  - name: Troubleshooting Creatives
+    href: troubleshooting-creatives.md
+  - name: Creative FAQ
+    href: creative-faq.md
 - name: Partner Center Guide
   items:
   - name: Managing Relationships with Sellers
@@ -730,6 +873,118 @@
     href: currency-support.md
   - name: Billing and Settlement FAQ
     href: billing-faq.md
+- name: Reporting Guide
+  items:
+  - name: General Reporting Concepts
+    items:
+    - name: Dimensions, Metrics, Filtering, and Grouping
+      href: dimensions-metrics-filtering-and-grouping.md
+    - name: Dates and Times in Reporting
+      href: dates-and-times-in-reporting.md
+    - name: Transactional Reporting Options
+      href: transactional-reporting-options.md
+    - name: Report Throttling
+      href: report-throttling.md
+    - name: Impression Counting
+      href: impression-counting.md
+  - name: Analytics Reporting
+    items:
+    - name: Member Reporting
+      items:
+      - name: Buyer Bid Error Report
+        href: buyer-bid-error-report.md
+      - name: Buyer Geo Analytics Report
+        href: buyer-geo-analytics-report.md
+      - name: Buyer Segment Performance Report
+        href: buyer-segment-performance-report.md
+      - name: Buyer Untargeted Segment Performance Report
+        href: buyer-untargeted-segment-performance-report.md
+      - name: Carrier Analytics Report
+        href: carrier-analytics-report.md
+      - name: Data Usage Report
+        href: data-usage-report.md
+      - name: Device Analytics Report
+        href: device-analytics-report.md
+      - name: Identifiers - Distinct ID Report
+        href: identifiers--distinct-id-report.md
+      - name: Identifiers - ID Combinations Report
+        href: identifiers--id-combinations-report.md
+      - name: Key Value Analytics Report
+        href: key-value-analytics-report.md
+      - name: Member Attributed Conversions Report
+        href: member-attributed-conversions-report.md
+      - name: Member Analytics Report
+        href: network-analytics-report.md
+      - name: Member Audio Analytics Report
+        href: network-audio-analytics-report.md
+      - name: Member Site Domain Performance Report
+        href: network-site-domain-performance-report.md
+      - name: Member Video Analytics Report
+        href: network-video-analytics-report.md
+      - name: Member Video Mediation Demand Report
+        href: network-video-mediation-demand-report.md
+      - name: Seller Site Domain Report
+        href: seller-site-domain-report.md
+      - name: Seller Detected Site Domain Report
+        href: seller-detected-site-domain-report.md
+      - name: Seller Segment Performance Report
+        href: seller-segment-performance-report.md
+      - name: Member Video Error Report
+        href: network-video-error-report.md
+      - name: Video Ad Pod Report
+        href: video-ad-pod-report.md
+      - name: Video Inventory Availability Report
+        href: video-inventory-availability-report.md
+      - name: Vendor Usage Report
+        href: vendor-usage-report.md
+    - name: Advertiser Reporting
+      items:
+      - name: Advertiser Analytics Report
+        href: advertiser-analytics-report.md
+      - name: Advertiser Video Analytics Report
+        href: advertiser-video-analytics-report.md
+      - name: Advertiser Attributed Conversions Report
+        href: advertiser-attributed-conversions-report.md
+      - name: Buyer Engagement Report
+        href: buyer-engagement-report.md
+      - name: Buyer Deal Metrics
+        href: buyer-deal-metrics.md
+      - name: Buyer Video Error Report
+        href: buyer-video-error-report.md
+      - name: Creative Frequency and Recency Report
+        href: creative-frequency-and-recency-report.md
+      - name: Offline Attribution Report
+        href: offline-attribution-report.md
+      - name: Site Domain Performance
+        href: site-domain-performance.md
+  - name: Billing Reporting 
+    items:
+    - name: Completed Creative Audits Report
+      href: completed-creative-audits-report.md
+    - name: Buying Billing Report
+      href: buying-billing-report.md
+  - name: Audience Analytics
+    items:
+    - name: Creative Frequency and Recency Report
+      href: creative-frequency-and-recency-report_1.md
+    - name: Buyer Reach and Frequency Report
+      href: buyer-reach-and-frequency-report.md
+    - name: Nielsen Digital Ad Ratings - Audience Profile Report
+      href: nielsen-dar-audience-profile-report.md
+    - name: Nielsen Digital Ad Ratings - Site/Split Report
+      href: nielsen-dar-site-split-report.md
+  - name: Advertiser User Reporting
+    href: advertiser-and-publisher-user-reporting.md
+  - name: Availability of Reporting Data
+    href: availability-of-reporting-data.md
+  - name: Report Discrepancies
+    items:   
+    - name: What to Check if You Suspect a Discrepancy
+      href: what-to-check-if-you-suspect-a-report-discrepancy.md
+    - name: Prepare to Request a Report Discrepancy Investigation
+      href: prepare-to-file-a-report-discrepancy-support-case.md
+    - name: Requirements for Filing a Support Case for Report Discrepancies
+      href: requirements-for-filing-a-support-case-for-report-discrepancies.md
 - name: Apps
   items:
     - name: grapeshot
