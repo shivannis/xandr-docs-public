@@ -102,3 +102,75 @@
         href: asynchronous-usersync-pixels.md
     - name: Traffic Quality
       href: traffic-quality.md
+- name: Viewability
+  items:
+    - name: Reporting on Viewability
+      href: reporting-on-viewability.md
+    - name: vCPM Payment Type
+      href: vcpm-payment-type.md
+    - name: Measurement of Video Viewability using VPAID Wrapper
+      href: video-viewability.md
+    - name: Improve Low Viewability Performance
+      href: improve-low-viewability-performance.md
+    - name: Ad Viewability: Description of Methodology (DOM)
+      href: ad-viewability-description-of-methodology-dom.md
+    - name: Viewability FAQ
+      href: viewability-faq.md
+- name: Planner
+  items:
+    - name: Create and Activate a Plan
+      href: create-and-activate-a-plan.md
+    - name: Planner Analytics
+      href: planner-analytics.md
+    - name: Sources of Planner Information
+      href: sources-of-planner-information.md
+    - name: Planner Troubleshooting
+      href: planner-troubleshooting.md
+- name: Guaranteed Outcomes
+  items:
+    - name: How Guaranteed Outcomes Work
+      href: how-guaranteed-outcomes-work.md
+    - name: Guaranteed Outcomes Auction Mechanics
+      href: guaranteed-outcomes-auction-mechanics.md
+    - name: Understanding Payment Conversion Rates
+      href: understanding-payment-conversion-rates.md
+    - name: Guaranteed Outcomes Results Over Time (Examples)
+      href: guaranteed-outcomes-results-over-time-examples.md
+    - name: Supported Viewability Standards for Guaranteed Outcomes
+      href: supported-viewability-standards-for-guaranteed-outcomes.md
+    - name: Supported Video Completion Standards
+      href: supported-video-completion-standards.md
+    - name: Configuring a Line Item to Buy Guaranteed Outcomes
+      href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
+    - name: Reporting on Guaranteed Outcomes
+      href: reporting-on-guaranteed-outcomes.md
+    - name: Understanding Viewability Rates for Guaranteed Views
+      href: understanding-viewability-rates-for-guaranteed-views.md
+    - name: Understanding Billing and Costs for Guaranteed Outcomes
+      href: understanding-billing-and-costs-for-guaranteed-outcomes.md
+    - name: Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+      href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
+    - name: Using a Viewability Rate Target for Guaranteed Views
+      href: using-a-viewability-rate-target-for-guaranteed-views.md
+    - name: Monthly Prediction Variability Data
+      href: monthly-prediction-variability-data.md
+- name: ALI Optimization
+  items:
+    - name: Adaptive Pacing
+      href: adaptive-pacing.md
+    - name: Lifetime Pacing
+      href: lifetime-pacing.md
+    - name: Discovery
+      href: discovery.md
+    - name: Valuation
+      href: valuation.md
+    - name: Ways to Improve Click-Through Rate (CTR) Performance
+      href: ways-to-improve-ctr-performance.md
+    - name: Engineered Features
+      href: engineered-features.md
+- name: Apps
+  items:
+    - name: grapeshot
+      href: grapeshot.md
+    - name: comScore Agent
+      href: comscore-agent.md
