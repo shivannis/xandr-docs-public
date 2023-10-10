@@ -33,8 +33,6 @@ landingContent:
             url: microsoft-identity-platform-login.md
       - linkListType: how-to-guide
         links:
-          - text: User Creation
-            url: create-a-user.md
           - text: Working with Roles
             url: getting-started-with-roles.md
   - title: Viewability
