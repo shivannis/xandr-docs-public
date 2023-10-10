@@ -1,24 +1,10 @@
 ---
-Title : May 2, 2022: Buyer Engagement Report
-Description : The Buyer Engagement Report is now available for all
-Invest DSP clients. This report introduces new
+title: May 2, 2022 - Buyer Engagement Report
+description: Find the release note for the new report introduced in the UI - Buyer Engagement Report.
 ---
 
+# May 2, 2022: Buyer engagement report
 
-# May 2, 2022: Buyer Engagement Report
+The Buyer Engagement Report is now available for all Microsoft Invest clients. This report introduces new metrics that you can use to measure the viewable duration of display and video creatives.
 
-
-
-The Buyer Engagement Report is now available for all
-Invest DSP clients. This report introduces new
-metrics that you can use to measure the viewable duration of display and
-video creatives.
-
-For more information, see
-<a href="buyer-engagement-report.md" class="xref"
-title="The Buyer Engagement Report gives you insight into the viewable duration of your display and video creatives.">Buyer
-Engagement Report</a>.
-
-
-
-
+For more information, see [Buyer Engagement Report](buyer-engagement-report.md).
