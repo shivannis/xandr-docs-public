@@ -43,7 +43,7 @@ landingContent:
         links:            
           - text: Ad Viewability - Description of Methodology (DOM)
             url: ad-viewability-description-of-methodology-dom.md
-     - linkListType: how-to-guide
+      - linkListType: how-to-guide
         links:
           - text: Improve Low Viewability Performance
             url: improve-low-viewability-performance.md
