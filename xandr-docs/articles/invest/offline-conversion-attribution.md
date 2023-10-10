@@ -124,8 +124,7 @@ user from the **Impression Bus**. As you can see from the diagram, the
 allows for faster integration and processing of the data provided by the
 **Impression Bus**.
 
-### Step 4. Conversion-related data is made available for reporting,
-optimization, and budget
+### Step 4. Conversion-related data is made available for reporting, optimization, and budget
 
 The **Data Warehouse** has finished processing and integrating the
 information on the impression and the converted user passed along from
