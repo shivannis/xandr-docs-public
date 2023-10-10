@@ -55,7 +55,7 @@ landingContent:
         links:            
           - text: What is Planner?
             url: planner.md
-     - linkListType: how-to-guide
+      - linkListType: how-to-guide
         links:
           - text: Create and Activate a Plan
             url: create-and-activate-a-plan.md
