@@ -6,6 +6,8 @@ description : Learn about Universal Pixel Rule Conditions.
 
 # Microsoft Invest - universal pixel rule conditions
 
+The topics below discuss the universal pixel rule conditions along with examples.
+
 ## Available conditions
 
 | Condition Type | Condition Elements | Description | Comparisons | Keyword |

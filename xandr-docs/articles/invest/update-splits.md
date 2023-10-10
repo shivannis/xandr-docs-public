@@ -1,10 +1,12 @@
 ---
 title : Microsoft Invest - Update Splits
-description : Learn to edit a split.
+description : Learn to edit, duplicate, Activate/Deactivate, delete and remove all splits.
 ---
 
 
 # Microsoft Invest - update splits
+
+The below topics cover all that you can do to update splits.
 
 ## Edit a split
 
