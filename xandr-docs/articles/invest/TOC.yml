@@ -116,7 +116,7 @@
     href: bulk-edit-actions.md
   - name: Exporting and Importing Object Details in Bulk
     items:
-    - name: An Overview of Exporting and Importing Object Details in Bulk
+    - name: Overview
       href: exporting-and-importing-object-details-in-bulk.md
     - name: Bulk Importer Template Guidelines
       items:
@@ -242,7 +242,7 @@
         href: add-reporting-labels-and-comments-to-a-line-item.md
     - name: Programmatic Guaranteed Buying Line Items
       items:
-      - name: An Overview of Programmatic Guaranteed Buying Line Items
+      - name: Overview
         href: programmatic-guaranteed-buying-line-items.md
       - name: Create a Programmatic Guaranteed Buying Line Item
         href: create-a-programmatic-guaranteed-buying-line-item.md
@@ -264,7 +264,7 @@
       href: peer-approval.md
     - name: Cross-Device Targeting and Measurement
       items:
-      - name: An Overview of Cross-Device Targeting and Measurement
+      - name: Overview
         href: cross-device-targeting-and-measurement.md
       - name: Use Cases for Cross-Device Targeting and Measurement
         href: use-cases-for-cross-device-targeting.md
@@ -308,13 +308,13 @@
       href: segment-pixels-advanced.md
     - name: Segment Modifier
       items:
-      - name: An Overview of Segment Modifier
+      - name: Overview
         href: segment-modifier.md
       - name: Segment Modifier Testing Guidelines
         href: segment-modifier-testing-guidelines.md
     - name: Pass in User Data Offline
       items:
-      - name: An Overview of Pass in User Data Offline
+      - name: Overview
         href: pass-in-user-data-offline.md
       - name: User ID Mapping
         href: user-id-mapping-with-getuid-and-mapuid.md
@@ -324,13 +324,13 @@
         href: server-side-cookie-store.md
     - name: Location Manager 
       items:
-      - name: An Overview of Location Manager 
+      - name: Overview 
         href: location-manager.md
       - name: Geo Radius Segments
         href: geo-radius-segments.md
   - name: The Universal Pixel
     items:
-    - name: An Overview of the Universal Pixel
+    - name: Overview
       href: the-universal-pixel.md
     - name: Universal Pixel Basic Implementation
       href: universal-pixel-basic-implementation.md
@@ -350,7 +350,7 @@
         href: create-custom-events-and-parameters.md
     - name: Universal Pixel Audiences and Conversions
       items:
-      - name: An Overview of Universal Pixel Audiences and Conversions
+      - name: Overview
         href: universal-pixel-audiences-and-conversions.md      
       - name: Set Up Audiences with Universal Pixel
         href: set-up-audiences-with-universal-pixel.md
@@ -372,7 +372,7 @@
       href: export-conversion-pixels.md
     - name: Conversion Attribution
       items:
-      - name: An Overview of Conversion Attribution
+      - name: Overview
         href: conversion-attribution.md
       - name: Offline Conversion Attribution
         href: offline-conversion-attribution.md
@@ -400,7 +400,7 @@
       href: welcome-to-mobile.md
     - name: Mobile Ad Call Reference
       items:
-      - name: An Overview of Mobile Ad Call Reference
+      - name: Overview
         href: mobile-ad-call-reference.md
       - name: Mobile Carrier Codes
         href: mobile-carrier-codes.md
@@ -528,7 +528,7 @@
     href: direct-inventory-targeting-ali.md
   - name: Frequency and Recency Caps
     items:
-    - name: An Overview of Frequency and Recency Caps
+    - name: Overview
       href: frequency-and-recency-caps.md
     - name: Applying Frequency and Recency Caps
       href: applying-frequency-and-recency-caps.md
@@ -542,7 +542,7 @@
       href: advanced-frequency-management.md
   - name: Geography Targeting
     items:
-    - name: An Overview of Geography Targeting       
+    - name: Overview  
       href: geography-targeting.md
     - name: How Geography Targeting Works
       href: how-geography-targeting-works.md
@@ -554,7 +554,7 @@
     href: inventory-performance-targeting.md
   - name: Inventory Targeting (ALI)
     items:
-    - name: An Overview of Inventory Targeting
+    - name: Overview
       href: inventory-targeting-ali.md
     - name: Inventory Library
       href: inventory-library.md
