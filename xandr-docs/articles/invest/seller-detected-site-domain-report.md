@@ -85,9 +85,9 @@ Intervals determine how your data is grouped together into rows in the report re
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Placement | The name and ID of the placement on which the impression occurred.<br> Note that a placement ID of 0 may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](./working-with-impression-and-click-trackers.md). |
-| Site Domain Audit Status | Specifies the audit status of the auctioned site domain. Permissible values are Audited, Blacklisted, AdServer, Unauditable, Pending, and Unaudited. |
+| Site Domain Audit Status | Specifies the audit status of the auctioned site domain. Permissible values are Audited, Blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 | Detected Site Domain | The actual domains that are being sold and where the impression actually occured. |
-| Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, Blacklisted, AdServer, Unauditable, Pending, and Unaudited. |
+| Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, Blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 | Blocked Inventory | Specifies if the impression is in a blocklist. |
 
 ## Passing domains across iFrames
