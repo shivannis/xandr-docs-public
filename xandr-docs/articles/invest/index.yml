@@ -16,14 +16,48 @@ landingContent:
       - linkListType: overview
         links:
           - text: About Invest DSP
-            url: about-invest.md
-      - linkListType: tutorial
-        links:            
+            url: about-invest.md     
           - text: Object Hierarchy
             url: object-hierarchy.md
+      - linkListType: reference
+        links:
+          - text: Microsoft Invest API
+            url: digital-platform-ui-api-info.md
   - title: Member Settings
     linkLists:
       - linkListType: concept
         links:            
-          - text: Managing Notification Recipients
-            url: managing-notification-recipients.md
+          - text: Single Credential Login and Multi-Factor Authentication (MFA)
+            url: single-credential-login-and-multi-factor-authentication-mfa.md
+          - text: Microsoft Identity Platform Login
+            url: microsoft-identity-platform-login.md
+      - linkListType: how-to-guide
+        links:
+          - text: User Creation
+            url: create-a-user.md
+          - text: Working with Roles
+            url: getting-started-with-roles.md
+  - title: Viewability
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Viewability - Description of Methodology (DOM)
+            url: ad-viewability-description-of-methodology-dom.md
+     - linkListType: how-to-guide
+        links:
+          - text: Improve Low Viewability Performance
+            url: improve-low-viewability-performance.md
+          - text: Measure Video Viewability using VPAID Wrapper
+            url: video-viewability.md
+  - title: Planner
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is Planner?
+            url: planner.md
+     - linkListType: how-to-guide
+        links:
+          - text: Create and Activate a Plan
+            url: create-and-activate-a-plan.md
+          - text: Planner Troubleshooting
+            url: planner-troubleshooting.md
