@@ -26,7 +26,7 @@ integrate with a third-party mobile app install tracker and set your creative cl
 
 Depending on your needs, you'll want to follow the steps outlined in one of the following:
 
-- [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md)
+[Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md)
 
 ## Step 3: Report on your conversions
 
