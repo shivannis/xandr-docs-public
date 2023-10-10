@@ -628,7 +628,7 @@
     - name: Overview
       href: creative-branding.md
     - name: Competitive Exclusions
-      href: competitive-exclusions-2.md
+      href: competitive-exclusions.md
     - name: Exclude Competitive Brands for a Creative
       href: exclude-competitive-brands-for-a-creative.md
     - name: Exclude Competitive Offer Categories for a Creative
@@ -966,7 +966,7 @@
   - name: Audience Analytics
     items:
     - name: Creative Frequency and Recency Report
-      href: creative-frequency-and-recency-report_1.md
+      href: creative-frequency-and-recency-report.md
     - name: Buyer Reach and Frequency Report
       href: buyer-reach-and-frequency-report.md
     - name: Nielsen Digital Ad Ratings - Audience Profile Report
@@ -1014,4 +1014,4 @@
         - name: February 17, 2022 - Enhancements to the ALI Setup Experience
           href: release-notes-20220217.md
         - name: January 18, 2022 - Vendor Usage Report UI
-          href: rrelease-notes-20220118.md
+          href: release-notes-20220118.md
