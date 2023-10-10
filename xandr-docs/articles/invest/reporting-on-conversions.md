@@ -16,11 +16,11 @@ The **Loads Last 12 Hours** column displays the number of total loads on the pix
 The **Last Load** column displays how long ago any web page with the conversion pixel was last visited in the last 12 hours. If "Never" displays here for more than 10 minutes after a pixel was added, the pixel may not be placed correctly on any website.
 
 > [!NOTE]
-> Seeing a reasonable time in the **Last Load** column only indicates that the conversion pixel was fired on **at least one (but possibly not every)** website in the last 12 hours. It is recommended to check for individual sites statistics, in **Attributed URLs** below.
+> Seeing a reasonable time in the **Last Load** column only indicates that the conversion pixel was fired on **at least one (but possibly not every)** website in the last 12 hours. It is recommended to check for individual sites statistics, in **[Attributed URLs](#attributed-urls)** below.
 
 To view more information about the conversion pixel, mouse-over the icons in the **Status** column. The **Status** will display information regarding the health of the conversion pixel. For example, look at the **Status** message below. In this example, if your conversion pixel isn't associated with an active line item, then you might be missing out on tracking valuable conversions. Similarly, if your pixel has never loaded, then you might need to investigate with your advertiser to make sure the pixel is placed correctly.
 
-:::image type="content" source="media/ConversionPixels_Statuses.png" alt-text="Screenshot of conversion pixels statuses.":::
+:::image type="content" source="media/ConversionPixels_Statuses.png" alt-text="Screenshot of conversion pixels status.":::
 
 For details on using this report via the API, see [Conversion Pixel Last Fire](../digital-platform-api/conversion-pixel-last-fire.md).
 
@@ -49,7 +49,7 @@ This takes you to the Advertiser Attributed Conversions report, where the pixels
 > [!NOTE]
 > When exporting the Advertiser Attributed Conversions report to Excel, long numbers (including User ID and Auction ID) are converted to floating point format, and any digit after digit 15 will be converted to zero. For example, a User ID of 102083040601081716 will be converted to 102083040601081000 which is not a valid Xandr User ID. If you need to pull valid User or Auction IDs, you can copy them manually or use the API version of this report.
 
-For more information about this report, including a full list of dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details on running this report via the API, click [here](../digital-platform-api/attributed-conversions.md). You may also be interested in the [Member Attributed Conversions Report](member-attributed-conversions-report.md), which provides this information on a different level and includes Universal Pixel attribution information.
+For more information about this report, including a full list of dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details on running this report via the API, click [here](../digital-platform-api/advertiser-attributed-conversions.md). You may also be interested in the [Member Attributed Conversions Report](member-attributed-conversions-report.md), which provides this information on a different level and includes Universal Pixel attribution information.
 
 ## Related topics
 

@@ -72,7 +72,7 @@ For more information, see [Log-Level Data Feeds](../log-level-data/log-level-dat
 
 ## Best practices
 
-### Viewable imps and viewability rate
+### Viewable Imps and Viewability Rate
 
 If you select **Viewable Imps** and **Viewability Rate**, it is recommended that you add **View-Measured Imps** as well.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Requirements for Filing a Support Case for Report Discrepancies
-description: In this article, discover how to gather reports, including object IDs for the relevant objects, create a spreadsheet, and file a report discrepancy case with Product Support.
+description: In this article, learn about the requirements to collect reports and file a report discrepancy case with Product Support.
 ---
 
 # Microsoft Invest - Requirements for filing a support case for report discrepancies
