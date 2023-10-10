@@ -105,7 +105,7 @@
 - name: Viewability
   items:
     - name: Overview
-      href: ntroduction-to-viewability.md
+      href: introduction-to-viewability.md
     - name: Reporting on Viewability
       href: reporting-on-viewability.md
     - name: vCPM Payment Type
