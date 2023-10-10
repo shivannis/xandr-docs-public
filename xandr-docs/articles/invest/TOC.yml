@@ -26,7 +26,7 @@
     items:
     - name: Single Credential Login and Multi-Factor Authentication (MFA)
       items:
-      - name: An Overview of Single Credential Login and Multi-Factor Authentication (MFA)
+      - name: Overview
         href: single-credential-login-and-multi-factor-authentication-mfa.md
       - name: Set Up Single Credential Login
         href: set-up-single-credential-login.md
@@ -52,7 +52,7 @@
       href: edit-a-network-user.md
     - name: Getting Started with Roles
       items:   
-      - name: An Overview of Roles
+      - name: Overview
         href: getting-started-with-roles.md
       - name: Working with Roles
         href: working-with-roles.md 
@@ -68,7 +68,7 @@
     items:
     - name: Partner Fees
       items:
-      - name: An Overview of Partner Fees
+      - name: Overview
         href: partner-fees.md
       - name: Create a Partner Fee
         href: create-a-partner-fee.md
@@ -92,7 +92,7 @@
     items:
     - name: Exchanges and Aggregators
       items:
-      - name: An Overview of Exchanges and Aggregators
+      - name: Overview
         href: exchanges-and-aggregators.md
       - name: Google Ad Manager
         href: doubleclick-ad-exchange-adx.md
@@ -104,6 +104,8 @@
       href: traffic-quality.md
 - name: Viewability
   items:
+    - name: Overview
+      href: ntroduction-to-viewability.md
     - name: Reporting on Viewability
       href: reporting-on-viewability.md
     - name: vCPM Payment Type
@@ -118,6 +120,8 @@
       href: viewability-faq.md
 - name: Planner
   items:
+    - name: Overview
+      href: planner.md
     - name: Create and Activate a Plan
       href: create-and-activate-a-plan.md
     - name: Planner Analytics
@@ -128,6 +132,8 @@
       href: planner-troubleshooting.md
 - name: Guaranteed Outcomes
   items:
+    - name: Overview
+      href: guaranteed-outcomes.md
     - name: How Guaranteed Outcomes Work
       href: how-guaranteed-outcomes-work.md
     - name: Guaranteed Outcomes Auction Mechanics
@@ -154,8 +160,10 @@
       href: using-a-viewability-rate-target-for-guaranteed-views.md
     - name: Monthly Prediction Variability Data
       href: monthly-prediction-variability-data.md
-- name: ALI Optimization
+- name: Optimization Guide - ALI
   items:
+    - name: Overview
+      href: optimization-guide-ali.md
     - name: Adaptive Pacing
       href: adaptive-pacing.md
     - name: Lifetime Pacing
