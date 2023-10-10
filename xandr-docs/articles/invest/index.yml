@@ -27,7 +27,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:            
-          - text: Single Credential Login and Multi-Factor Authentication (MFA)
+          - text: Single Credential Login and MFA
             url: single-credential-login-and-multi-factor-authentication-mfa.md
           - text: Microsoft Identity Platform Login
             url: microsoft-identity-platform-login.md
@@ -41,13 +41,13 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:            
-          - text: Ad Viewability - Description of Methodology (DOM)
+          - text: Ad Viewability - Description of Methodology
             url: ad-viewability-description-of-methodology-dom.md
       - linkListType: how-to-guide
         links:
           - text: Improve Low Viewability Performance
             url: improve-low-viewability-performance.md
-          - text: Measure Video Viewability using VPAID Wrapper
+          - text: Measure Video Viewability
             url: video-viewability.md
   - title: Planner
     linkLists:
