@@ -62,8 +62,8 @@ For more information about how quickly report data is processed, see [Availabili
 
 | Column | Filter? | Description |
 |---|---|---|
-| Insertion Order | Yes | The name and ID of the insertion order under which the impression was purchased. For more information about insertion orders, see [Working with Insertion Orders](working-with-insertion-orders.). |
-| Line Item | Yes | The name and ID of the line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.). |
+| Insertion Order | Yes | The name and ID of the insertion order under which the impression was purchased. For more information about insertion orders, see [Working with Insertion Orders](working-with-insertion-orders.md). |
+| Line Item | Yes | The name and ID of the line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.md). |
 | Campaign | Yes | The name and ID of the campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Seller | Yes | The seller/publisher who sold the impressions in this data set. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
