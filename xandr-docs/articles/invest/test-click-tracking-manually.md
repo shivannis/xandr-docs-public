@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Test Click Tracking Manually
-description: In this article, discover how to manually test click tracking when creative behavior or UI issues impact the reliability of the built-in test.
+description: In this article, learn how to manually test click tracking when creative behavior or UI issues impact the reliability of the built-in test.
 ---
 
 # Microsoft Invest - Test click tracking manually
@@ -16,9 +16,9 @@ You can manually test click tracking if strange creative behavior or UI issues c
 
     Insert the appropriate creative ID to the end of the URL replacing "insert creative id here". For example: [https://creative-preview-an.com/cached/creative/196745](https://creative-preview-an.com/cached/creative/196745).
 
-1. Then, right click &gt; inspect &gt; network tab.
+1. Then, **right click &gt; inspect &gt; network tab**.
 1. Click on the settings (gear icon) in the top right of dev tools.
-1. Enable the "Auto-open DevTools for popups", under Preferences &gt; Global.
+1. Enable the "Auto-open DevTools for popups", under **Preferences &gt; Global**.
 1. Click on the Creative.
 1. The landing page will open and the dev tools should automatically open in the new tab.
 1. Search for "click" in the Network tab.

@@ -13,9 +13,9 @@ Xandr appends an impression tracking pixel to the ad response.
 
 ### Implementation options
 
-| Default | Impression pixel appended to the end of the creative content in response |
+| Default |Separate Field (optional) |
 |:---|:---|
-| **Separate Field (optional)** | Impression pixel sent in a separate field of the JSON response |
+| Impression pixel appended to the end of the creative content in response. | Impression pixel sent in a separate field of the JSON response. |
 
 #### View the default response when client-side impression tracking is enabled
 
@@ -43,7 +43,7 @@ An example of a response with client side impression tracking enabled and levera
 
 ## What steps do I need to take?
 
-Ask your publishers if they are **parsing** the ad response**.** If the answer is **no**, there is no further action required.
+Ask your publishers if they are **parsing** the ad response. If the answer is **no**, there is no further action required.
 
 If the answer is **yes,** then you must append the parameter **&tmpl_id=21** to the **/ssmob** tag. This will leverage the **Separate Field** implementation option.
 

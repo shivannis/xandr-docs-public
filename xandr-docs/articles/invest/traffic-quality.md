@@ -18,7 +18,7 @@ If you believe that you are serving on inventory with artificially inflated perf
 
 ### Step 1: Provide a high-level description of the issue
 
-- What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
+What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
 
 ### Step 2: Determine the time range of the incident
 
@@ -42,7 +42,7 @@ For details, see [Member Analytics Report](network-analytics-report.md).
 
 For details, see [Site Domain Performance](site-domain-performance.md).
 
-- If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
+If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
 
 ### Step 6: Send support your findings
 

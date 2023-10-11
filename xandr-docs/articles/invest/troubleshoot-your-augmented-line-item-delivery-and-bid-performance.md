@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Troubleshoot Your Augmented Line Item Delivery and Bid Performance
-description: In this article, explore detailed steps to troubleshoot and enhance augmented line item (ALI) delivery, bid performance, and impression count.
+title: Troubleshoot Your Augmented Line Item Delivery and Bid Performance
+description: In this article, explore detailed steps to troubleshoot and enhance Augmented Line Item (ALI) delivery, bid performance, and impression count.
 ---
 
-# Microsoft Invest - Troubleshoot your augmented line item delivery and bid performance
+# Troubleshoot your augmented line item delivery and bid performance
 
-You can improve your augmented line item (ALI) delivery and impression count, which in return will help you win more bids, by accessing the Troubleshooting tab and reviewing all top issues and bid performance messages.
+You can improve your augmented line item (ALI) delivery and impression count, which in return will help you win more bids, by accessing the **Troubleshooting** tab and reviewing all top issues and bid performance messages.
 
 1. Navigate to the **[Line Item Details](view-line-item-details.md)** pane.
 1. Click the **Troubleshooting** tab.
