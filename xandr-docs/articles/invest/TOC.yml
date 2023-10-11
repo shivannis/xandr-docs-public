@@ -518,7 +518,7 @@
     href: daypart-targeting.md
   - name: Demography Targeting
     items:
-    - name: An Onverview of Demography Targeting
+    - name: An Overview of Demography Targeting
       href: demography-targeting.md
     - name: Age and Gender Targeting for Third-Party Inventory
       href: age-and-gender-targeting-for-third-party-inventory.md
@@ -623,6 +623,7 @@
     - name: Overview
       href: creative-standards.md
     - name: Sherlock - Creative Quality Control
+      href: sherlock-creative-quality-control.md
   - name: Creative Branding
     items:
     - name: Overview
@@ -849,7 +850,7 @@
         href: charges-for-sellers.md
     - name: Reconciling Your Invoice with Reporting
       href: reconciling-your-invoice-with-reporting.md
-    - name: Payments to Xandr
+    - name: Payment
       href: payment-to-xandr.md
     - name: Credit Limit Overview
       href: credit-limit-overview.md
@@ -863,7 +864,7 @@
       href: understanding-your-seller-statement.md
     - name: Reconciling your Seller Statement with Reporting
       href: reconciling-your-seller-statement-with-reporting.md
-    - name: Getting Paid by Xandr
+    - name: Getting Paid
       href: getting-paid-by-xandr.md
   - name: Understanding Invalid Traffic
     href: understanding-invalid-traffic.md
