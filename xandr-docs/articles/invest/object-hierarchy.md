@@ -4,13 +4,13 @@ description : Learn about objects that you work with to buy media.
 ---
 
 
-# Object hierarchy in Microsoft Invest
+# Microsoft Invest - Object hierarchy  
 
 This page introduces the main objects that you work with to buy media.
 
 ## Buy-Side hierarchy
 
-![Screenshot of Ali Buy Side Object Hierarchy.](media/ali-buy-side-object-hierarchy.png)
+:::image type="content" source="./media/ali-buy-side-object-hierarchy.png" alt-text="Screenshot of Ali Buy Side Object Hierarchy.":::
 
 ## Member
 

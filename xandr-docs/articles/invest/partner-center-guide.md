@@ -4,7 +4,7 @@ description : Learn how the Partner Center Guide can help you Discover new partn
 ---
 
 
-# Partner center guide in Microsoft Invest
+# Microsoft Invest - Partner center guide  
 
 Using the **Partner Center**, you can:
 

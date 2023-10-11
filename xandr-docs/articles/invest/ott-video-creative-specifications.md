@@ -4,7 +4,7 @@ description : Learn about OTT (Over-the-Top video) creative and how it can be di
 ---
 
 
-# OTT video creative specifications in Microsoft Invest
+# Microsoft Invest - OTT video creative specifications  
 
 An OTT (Over-the-Top video) creative is designed to be displayed before,
 after, or during in-stream video content delivered over the internet.

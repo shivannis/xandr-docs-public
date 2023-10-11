@@ -4,7 +4,7 @@ description : Learn about Offline Conversion Attribution in this article.
 ---
 
 
-# Offline conversion attribution in Microsoft Invest
+# Microsoft Invest - Offline conversion attribution  
 
 "Offline" attribution is [conversion attribution](conversion-attribution.md)
  that involves pushing all of the data processing
@@ -44,7 +44,7 @@ available in reporting. The left side of the diagram shows the previous
 "online" conversion attribution process. The right side of the diagram
 shows the current "offline" process.
 
-![Screenshot of OCA](media/oca.png)
+:::image type="content" source="./media/oca.png" alt-text="Screenshot of OCA.":::
 
 ## Previous method ("Online")
 

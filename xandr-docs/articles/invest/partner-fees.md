@@ -4,7 +4,7 @@ description : Learn how if you need to reserve a portion of your budget for thir
 ---
 
 
-# Partner fees in Microsoft Invest
+# Microsoft Invest - Partner fees  
 
 If you need to reserve a portion of your budget for third-party
 costs--costs owed to parties other than the publisher--you can define
@@ -30,4 +30,4 @@ Common fees you might need to budget for are:
 - **Incremental fees** charged by an intermediary to the advertiser,
   such as a managed service fee or consulting fee.
 
-  ![Screenshot of Revenue broken out into different costs.](media/partner-fees-graphic.png)
+:::image type="content" source="./media/partner-fees-graphic.png" alt-text="Screenshot of Revenue broken out into different costs.":::

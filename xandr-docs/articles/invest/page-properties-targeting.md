@@ -4,7 +4,7 @@ description : Learn how through page properties targeting, you can target impres
 ---
 
 
-# Page properties targeting in Microsoft Invest
+# Microsoft Invest - Page properties targeting
 
 Through page properties targeting, you can target impressions based on
 the position of the creative tag on the page or based on values passed

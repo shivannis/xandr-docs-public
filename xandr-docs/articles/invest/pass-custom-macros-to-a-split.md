@@ -4,7 +4,7 @@ description : Learn how the split custom macro is used to pass any value to a cr
 ---
 
 
-# Pass custom macros to a split in Microsoft Invest
+# Microsoft Invest - Pass custom macros to a split 
 
 The split custom macro is used to pass any value to a creative landing
 page URL where the split will serve.

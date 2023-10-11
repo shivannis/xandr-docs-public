@@ -4,7 +4,7 @@ description : Learn how Nielsen Digital Ad Ratings (DAR) can be used to measure 
 ---
 
 
-# Measuring demographic targeting success with Nielsen Digital Ad Ratings in Microsoft Invest
+# Microsoft Invest - Measuring demographic targeting success with Nielsen Digital Ad Ratings  
 
 <div id="nielsen-digital-ad-ratings__conbody_pvq_xhj_qmb"
 class="body conbody">
