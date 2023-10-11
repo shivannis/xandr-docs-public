@@ -37,7 +37,7 @@ You can run expandables on mobile app inventory using MRAID creatives. These are
 
 Here is an example MRAID creative; note that the line at the top including `"mraid.js"` is required for it to work:
 
-```
+``` pre
 <script src="mraid.js"></script>
 <img src="media/png" style="display: none" onerror="
         (function(img) {
@@ -73,7 +73,7 @@ All of the mobile sellers in this table support both interstitials and expandabl
 
 | Mobile Seller | Member ID | MRAID Support? | HTML5 Support? | Supported Rich Media Vendors |
 |:---|:---|:---|:---|:---|
-| Smaato | 1752 | Yes | Yes | - Celtra v1-v3, MRAID<br> - JustAd<br> - Medialets<br> - Crisp<br> - Phluant<br> - AdGibbon<br> - [https://www.smaato.com/certified-rich-media-vendors/](https://www.smaato.com/certified-rich-media-vendors/) |
+| Smaato | 1752 | Yes | Yes | - Celtra v1-v3, MRAID<br> - JustAd<br> - Medialets<br> - Crisp<br> - Phluant<br> - AdGibbon<br> - [https://www.smaato.com/partner-list/](https://www.smaato.com/partner-list/) |
 | MoPub | 1813 | Yes | Yes |  - Celtra<br> - Medialets<br> - Crisp<br> - Adxcel<br> - Sprout/inmobi<br> - Xtopoly |
 | Nexage | 1868 | Yes | Yes |  - Celtra<br> - Medialets |
 | Millennial Media | 2066 | Yes | Yes |  - Addroid<br> - AdGibbon<br> - Adxcel<br> - Celtra<br> - Collective<br> - Crisp<br> - Flashtalking<br> - GoldSpot<br> - Google/DART<br> - Innovid<br> - JustAd<br> - Medialets<br> - Mediamind<br> - Mediaplex<br> - MixPo<br> - Mobile-5<br> - MobSmith<br> - Phluant<br> - Pointreach<br> - Pointroll<br> - Pontiflex<br> - Simplytics<br> - Sprout<br> - Unruly Media<br> - Vdopia |

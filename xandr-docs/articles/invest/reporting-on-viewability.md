@@ -50,7 +50,7 @@ Viewability metrics are included in several reports in the reporting system:
 |:---|:---|
 | [Member Analytics Report](network-analytics-report.md) | - [Advertiser Analytics Report](advertiser-analytics-report.md)<br> - [Site Domain Performance](site-domain-performance.md) |
 
-### How to add viewability metrics
+### How to add viewability metrics?
 
 Go to the appropriate tab and select **Reporting** from the navigation menu. Select the type of report from the drop-down menu.
 

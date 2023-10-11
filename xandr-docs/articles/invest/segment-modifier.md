@@ -31,7 +31,7 @@ You can determine how your campaign should weight the modifier segment's `VALUE`
 
 Here's an example of a campaign object using this format:
 
-```
+``` pre
 {
   "campaign": {
     "id": 123,

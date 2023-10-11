@@ -3,7 +3,7 @@ title: Microsoft Invest - Running Cost per Install Offers
 description: In this article, explore the detailed step-by-step procedures for setting up cost per install offers with your mobile ad campaigns.
 ---
 
-# Microsoft Invest - Running Cost per Install Offers
+# Microsoft Invest - Running cost per install offers
 
 This document describes the procedure for setting up cost per install offers with your mobile ad campaigns. This includes procedures for:
 
