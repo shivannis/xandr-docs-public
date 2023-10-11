@@ -41,7 +41,7 @@ additionalContent:
         links:
           - url: invest/index.yml
             text: Product Documentation
-          - url: invest/release-notes-20230522.md
+          - url: invest/release-notes.md
             text: Release Notes
       # Card
       - title: Microsoft Monetize
