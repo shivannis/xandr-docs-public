@@ -6,12 +6,10 @@ brand: m365
 
 metadata:
   title: Xandr Platform Documentation
-  description: Here you will find documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
-  ###services: azure-resource-manager
-  ###ms.service: azure
-  ###ms.custom: ignite-2022
+  description: Discover the documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
+  ms.service: microsoft-invest
   ms.topic: hub-page
-  author: shivanni
+  author: rupambaruah-xandr
   ms.author: rupambaruah
   ms.date: 09/05/2023
   featureFlags:
@@ -23,9 +21,9 @@ highlightedContent:
       itemType: get-started
       url: getting-started/index.yml
     # Card
-    - title: Ad-Tech References
-      itemType: concept
-      url: getting-started/index.yml
+    - title: Policies and Regulations
+      itemType: reference
+      url: policies-regulations/index.yml
     # Card
     - title: Training and Enablement
       itemType: training
@@ -34,60 +32,70 @@ highlightedContent:
     - title: Customer Support Portal Guide
       itemType: tutorial
       url: getting-started/index.yml
-productDirectory:
-  title: Browse Product Offerings
-  items:
-    # Card
-    - title: Microsoft Invest
-      summary: Product documentation of Microsoft Invest (*Powered by Xandr)
-      imageSrc: media/cognitive-services.svg
-      url: getting-started/index.yml
-    # Card
-    - title: Microsoft Monetize
-      summary: Product documentation of Microsoft Monetize (*Powered by Xandr)
-      imageSrc: https://static.docs.com/ui/media/product/azure/functions.svg
-      url: getting-started/index.yml
-    # Card
-    - title: Microsoft Curate
-      summary: Product documentation of Microsoft Curate (*Powered by Xandr)
-      imageSrc: https://static.docs.com/ui/media/product/azure/logic-apps.svg
-      url: getting-started/index.yml
-    # Card
-    - title: Release Notes
-      summary: Documentation outlining latest updates and features releases for Microsoft Invest, Monetize and Curate
-      imageSrc: https://static.docs.com/ui/media/product/azure/cloud-services.svg
-      url: getting-started/index.yml
-      
 additionalContent:
   sections:
-    - title: Bidder UI
+    - title: Browse Product Offerings
       items:
-        # Card
-        - title: Bidder Platform User Interface
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
-        # Card
-        - title: Platform Operations
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
-        # Card
-        - title: Integrate a Bidder
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
-    - title: Developer Resources
+      # Card
+      - title: Microsoft Invest
+        links:
+          - url: invest/index.yml
+            text: Product Documentation
+          - url: invest/release-notes-20230522.md
+            text: Release Notes
+      # Card
+      - title: Microsoft Monetize
+        links:
+          - url: getting-started/index.yml
+            text: Product Documentation
+          - url: ./file1b.md OR /file1b
+            text: Release Notes
+      # Card
+      - title: Microsoft Curate
+        links:
+          - url: getting-started/index.yml
+            text: Product Documentation
+          - url: ./file1b.md OR /file1b
+            text: Release Notes
+      # Card
+      - title: Bidder
+        links:
+          - url: getting-started/index.yml
+            text: Product Documentation
+          - url: ./file1b.md OR /file1b
+            text: Release Notes
+    - title: API References
       items:
         # Card
         - title: Digital Platform API
-          summary: Developer documentation about Digital Platform REST API services used by Miceosoft Invest, Monetize and Curate
-          url: getting-started/index.yml
+          links:
+            - text: Overview
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
         # Card
         - title: Impression Bus API
-          summary: Developer documentation about Impression Bus REST API services used by Bidders
-          url: getting-started/index.yml
+          links:
+            - text: Overview
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
         # Card
         - title: Yield Analytics API
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
+          links:
+            - text: Overview
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
+        # Card
+        - title: Release Notes
+          links:
+            - text: Digital Platform API Release Notes
+              url: getting-started/index.yml
+            - text: Impression Bus API Release Notes
+              url: getting-started/index.yml
+    - title: Developer Documentation
+      items:
         # Card
         - title: Seller Tag
           summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
@@ -108,13 +116,11 @@ additionalContent:
         - title: Data Providers
           summary: Lorem Ipsum
           url: getting-started/index.yml
-    - title: Policies and Regulations
-      items: 
         # Card
-        - title: Service Policies
-          summary: lorem ipsum
+        - title: Data Science Toolkit
+          summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
-        - title: Disclosures
-          summary: lorem ipsum
+        - title: OTT and CTV Video Integrations
+          summary: Lorem Ipsum
           url: getting-started/index.yml

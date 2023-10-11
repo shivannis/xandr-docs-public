@@ -1,326 +1,54 @@
 ---
-Title : Native Creative Asset Specifications
-Description : You can configure a variety of standard and custom data and image
-specifications for your native creatives .
+title: Microsoft Invest - Native Creative Asset Specifications
+description: This article provides a list of standard and custom data and image specifications for your native creatives.
 ---
 
+# Microsoft Invest - Native creative asset specifications
 
-# Native Creative Asset Specifications
+You can configure a variety of standard and custom data and image specifications for your native creatives.
 
+Here's a list of standard and custom data and image specifications that can be configured directly from our UI:
 
+## Standard data specifications
 
-You can configure a variety of standard and custom data and image
-specifications for your native creatives .
+| Specification | Description |
+|:---|:---|
+| **Title** | Title that will appear when the native creative is rendered. |
+| **Body Text** | Short description that will provide details about the native creative. |
+| **Sponsored By** | Brand name that will be associated with the native creative. |
+| **Call-to-action** | Encourages the user to take the necessary action after viewing the native creative (e.g. signing for the mailing list). |
+|**Display URL** | Public URL that will be visible to the user when the native creative is rendered. |
+|**Price** | Price for product / app / in-app purchase. The appropriate localized currency symbol should be included. |
+| **Sale Price**| Sale price that can be used together with the price to indicate a discounted price compared to a regular price. The appropriate localized currency symbol should be included. |
+| **Rating** | Rating of the product being offered to the user. For example, an app's rating in an app store from 0-5. |
+| **Likes** | Number of social ratings or "likes" for the product being offered to the user. |
+| **Downloads** | Number downloads/installs of this product. |
+| **Phone** | Phone number that will be visible to the user when the native creative is rendered. The phone number should be formatted according to your locality. For example, your phone number would be formatted as such if you are based in the United States: 800-555-5555. |
+| **Address** | Address that will be visible to the user when the native creative is rendered. |
+| **Additional Description** | Detailed version of the native creative's body text. |
+| **Video** | Associated video that will be visible to the user when the native creative is rendered. |
 
+## Standard image specifications
 
+| Specification | Description |
+|:---|:---|
+| **Image** | Primary image that will appear when the native creative is rendered. |
+| **Icon** | Primary icon that will appear when the native creative is rendered. |
 
-Here's a list of standard and custom data and image specifications that
-can be configured directly from our UI:
+## Custom data specifications
 
+| Specification | Descriptiion |
+|:---|:---|
+| **Title 1-5** | Additional titles that will appear when the native creative is rendered. |
+|**Body 1-5** | Additional body text that will appear when the native creative is rendered. |
+| **Call-to-action 1-5** | Additional calls to action that will encourage the user to take the necessary action after viewing the native creative (e.g., signing for the mailing list). |
+| **Social URL 1-5** | URLs that will take the user to the corresponding social media platforms. |
+| **Display URL 1-5** | Additional public URLs that may be visible and/or automatically redirect the user to a web page that is connected to the landing page's domain. |
 
+## Custom image specifications
 
-
-
-## Standard Data Specifications
-
-<table id="ID-00001673__table_mjm_p2x_nlb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001673__table_mjm_p2x_nlb__entry__1"
-class="entry">Specification</th>
-<th id="ID-00001673__table_mjm_p2x_nlb__entry__2"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Title</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e60" class="ph">Title that will appear when the
-native creative is rendered.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Body Text</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e71" class="ph">Short description that will provide
-details about the native creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Sponsored By</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e82" class="ph">Brand name that will be associated
-with the native creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Call-to-action</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e93" class="ph">Encourages the user to take the
-necessary action after viewing the native creative (e.g. signing for the
-mailing list).</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Display URL</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e104" class="ph">Public URL that will be visible to
-the user when the native creative is rendered.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Price</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e116" class="ph">Price for product / app / in-app
-purchase. The appropriate localized currency symbol should be
-included.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Sale Price</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e127" class="ph">Sale price that can be used
-together with the price to indicate a discounted price compared to a
-regular price. The appropriate localized currency symbol should be
-included.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Rating</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e138" class="ph">Rating of the product being offered
-to the user. For example, an app's rating in an app store from
-0-5.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Likes</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e149" class="ph">Number of social ratings or "likes"
-for the product being offered to the user.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Downloads</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e160" class="ph">Number downloads/installs of this
-product.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Phone</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e171" class="ph">Phone number that will be visible
-to the user when the native creative is rendered. The phone number
-should be formatted according to your locality. For example, your phone
-number would be formatted as such if you are based in the United States:
-800-555-5555.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Address</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e183" class="ph">Address that will be visible to the
-user when the native creative is rendered.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Additional Description</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e194" class="ph">Detailed version of the native
-creative's body text.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__1"><span
-class="ph uicontrol">Video</td>
-<td class="entry"
-headers="ID-00001673__table_mjm_p2x_nlb__entry__2"><span
-id="ID-00001673__d41e205" class="ph">Associated video that will be
-visible to the user when the native creative is rendered.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Standard Image Specifications
-
-<table id="ID-00001673__table_fms_n3x_nlb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001673__table_fms_n3x_nlb__entry__1"
-class="entry">Specification</th>
-<th id="ID-00001673__table_fms_n3x_nlb__entry__2"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_fms_n3x_nlb__entry__1"><span
-class="ph uicontrol">Image</td>
-<td class="entry"
-headers="ID-00001673__table_fms_n3x_nlb__entry__2"><span
-id="ID-00001673__d41e247" class="ph">Primary image that will appear when
-the native creative is rendered.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_fms_n3x_nlb__entry__1"><span
-class="ph uicontrol">Icon</td>
-<td class="entry"
-headers="ID-00001673__table_fms_n3x_nlb__entry__2"><span
-id="ID-00001673__d41e258" class="ph">Primary icon that will appear when
-the native creative is rendered.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Custom Data Specifications
-
-<table id="ID-00001673__table_mtc_p3x_nlb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001673__table_mtc_p3x_nlb__entry__1"
-class="entry">Specification</th>
-<th id="ID-00001673__table_mtc_p3x_nlb__entry__2"
-class="entry">Descriptiion</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__1"><span
-class="ph uicontrol">Title 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e300" class="ph">Additional titles that will appear
-when the native creative is rendered.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__1"><span
-class="ph uicontrol">Body 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e311" class="ph">Additional body text that will
-appear when the native creative is rendered.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__1"><span
-class="ph uicontrol">Call-to-action 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e322" class="ph">Additional calls to action that
-will encourage the user to take the necessary action after viewing the
-native creative (e.g., signing for the mailing list).</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__1"><span
-class="ph uicontrol">Social URL 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e333" class="ph">URLs that will take the user to the
-corresponding social media platforms.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__1"><span
-class="ph uicontrol">Display URL 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_mtc_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e344" class="ph">Additional public URLs that may be
-visible and/or automatically redirect the user to a web page that is
-connected to the landing page's domain.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Custom Image Specifications
-
-<table id="ID-00001673__table_c4p_p3x_nlb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001673__table_c4p_p3x_nlb__entry__1"
-class="entry">Specification</th>
-<th id="ID-00001673__table_c4p_p3x_nlb__entry__2"
-class="entry">Descriptiion</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__1"><span
-class="ph uicontrol">Image 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e386" class="ph">Additional images that will appear
-when the native creative is rendered.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__1"><span
-class="ph uicontrol">Icon 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e397" class="ph">Additional icons that will appear
-when the native creative is rendered.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__1"><span
-class="ph uicontrol">Social Icon 1-5</td>
-<td class="entry"
-headers="ID-00001673__table_c4p_p3x_nlb__entry__2"><span
-id="ID-00001673__d41e408" class="ph">Corresponding social media icons
-that will appear when native creative is rendered.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Specification | Descriptiion |
+|:---|:---|
+| **Image 1-5** | Additional images that will appear when the native creative is rendered. |
+| **Icon 1-5** | Additional icons that will appear when the native creative is rendered. |
+| **Social Icon 1-5** | Corresponding social media icons that will appear when native creative is rendered. |

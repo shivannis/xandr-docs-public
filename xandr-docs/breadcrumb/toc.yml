@@ -1,3 +1,6 @@
 - name: Xandr Platform
-  tocHref: /getting-started/
-  topicHref: /getting-started/index
+  topicHref: /xandr/index
+  items:
+    - name: Microsoft Invest
+      tocHref: /azure/invest/
+      topicHref: /azure/invest/index

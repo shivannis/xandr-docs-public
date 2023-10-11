@@ -1,108 +1,64 @@
 ---
-Title : Mobile Targeting and Attribution Challenges
-Description : In <a href="technical-limitations-of-mobile-buying.html"
+title: Microsoft Invest - Mobile Targeting and Attribution Challenges
+description: In this article, explore the key challenges and problems related to mobile targeting and attribution, along with their relevant solutions.
 ---
 
+# Microsoft Invest - Mobile targeting and attribution challenges
 
-# Mobile Targeting and Attribution Challenges
+In [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md), we discussed the technical realities that are keeping mobile buying features from reaching full parity with display (for now). The most difficult problem is to reliably perform cross-device targeting and conversion attribution on mobile inventory. On this page, we provide an overview of the key challenges that must be overcome.
 
+> [!TIP]
+> Each of the sections below corresponds to a numbered section of the diagram for easier reference.
 
+:::image type="content" source="media/mobile-attribution-and-targeting-challenges.png" alt-text="Diagram of Mobile Attribution and Targeting Challenges.":::
 
-In <a href="technical-limitations-of-mobile-buying.html"
-class="xref">Technical Limitations of Mobile Buying</a> , we discussed
-the technical realities that are keeping mobile buying features from
-reaching full parity with display (for now). The most difficult problem
-is to reliably perform cross-device targeting and conversion attribution
-on mobile inventory. On this page, we provide an overview of the key
-challenges that must be overcome.
-
-
-
-
-
-<b>Tip:</b> Each of the sections below
-corresponds to a numbered section of the diagram for easier reference.
-
-
-
-
-![Mobile Attribution and Targeting Challenges](media/mobile-attribution-and-targeting-challenges.png)
-
-
-1\. Cross-Screen Targeting and Attribution
+## 1: Cross-screen targeting and attribution
 
 Also known as: **Desktops vs. Mobile Devices**
 
-**Problem**: It is hard to identify users across devices. This makes it
-difficult to target, frequency cap, and attribute conversions across
-devices.
+**Problem**: It is hard to identify users across devices. This makes it difficult to target, frequency cap, and attribute conversions across devices.
 
-**Solution**: We believe a combination of technology and partnerships
-with data providers will eventually provide the best solution. For now,
-watch this space.
+**Solution**: We believe a combination of technology and partnerships with data providers will eventually provide the best solution. For now, watch this space.
 
-2\. App-to-Browser Targeting and Attribution
+## 2: App-to-browser targeting and attribution
 
 Also known as: **Mobile Browsers vs. Apps**
 
-**Problem**: Apps and browsers offer different methods for identifying
-users. This creates several issues:
+**Problem**: Apps and browsers offer different methods for identifying users. This creates several issues:
 
-- Cannot retarget and frequency cap the same user across an app and the
-  browser.
-- Cannot track app downloads on iOS-powered devices when a user clicks
-  on an ad in a browser. This is because of the situation with **Mobile
-  Safari Cookies** (described below).
+- Cannot retarget and frequency cap the same user across an app and the browser.
+- Cannot track app downloads on iOS-powered devices when a user clicks on an ad in a browser. This is because of the situation with **Mobile Safari Cookies** (described below).
 
-**Solution**: Possible solutions include integration with one or more
-device recognition vendors, partnerships with major carriers, or both.
+**Solution**: Possible solutions include integration with one or more device recognition vendors, partnerships with major carriers, or both.
 
-3\. Inter-App Targeting and Attribution
+## 3: Inter-app targeting and attribution
 
 Also known as: **Apps vs. Apps**
 
-**Problem**: Android and some older iOS devices have no standardized
-methods for identifying a user across apps. This creates several issues:
+**Problem**: Android and some older iOS devices have no standardized methods for identifying a user across apps. This creates several issues:
 
-- Frequency capping and retargeting across Android apps may not always
-  work.
+- Frequency capping and retargeting across Android apps may not always work.
 - Tracking app download conversions may not work on older iOS versions.
 
 **Solution**:
 
-- Use Apple's "identifier for advertising" (`idfa`) on iOS 6 an above
-  and `openudid` for older iOS devices.
+- Use Apple's "identifier for advertising" (`idfa`) on iOS 6 an above and `openudid` for older iOS devices.
 
-- Use Google's advertising identifier (`aaid`) or standardize on the
-  `sha1` device ID for Android devices.
+- Use Google's advertising identifier (`aaid`) or standardize on the `sha1` device ID for Android devices.
 
-  Xandr associates multiple device IDs to one
-  Xandr cookie IDs. This allows us to do
-  frequency capping using the mechanisms we already have in place. For
-  more information about `idfa`, `sha1`, and the other mobile device IDs
-  we support, see the
-  <a href="mobile-ad-call-reference.md" class="xref">Mobile Ad Call
-  Reference</a>.
+  Xandr associates multiple device IDs to one Xandr cookie IDs. This allows us to do frequency capping using the mechanisms we already have in place. For more information about `idfa`, `sha1`, and the other mobile device IDs we support, see the [Mobile Ad Call  Reference](mobile-ad-call-reference.md).
 
-4\. Mobile Safari Cookies
+## 4: Mobile Safari cookies
 
 Also known as: **Safari vs. The World**
 
-**Problem**: Mobile Safari (the default browser on iOS devices) does not
-accept third party cookies, which impacts our ability to segment,
+**Problem**: Mobile Safari (the default browser on iOS devices) does not accept third party cookies, which impacts our ability to segment,
 re-target, and apply frequency caps.
 
-**Solution**: Like **App-to-Browser Targeting and Attribution**,
-possible solutions include integration with one or more device
-recognition vendors, partnerships with major carriers, or both.
+**Solution**: Like **App-to-Browser Targeting and Attribution**, possible solutions include integration with one or more device recognition vendors, partnerships with major carriers, or both.
 
-Related Topics
+## Related topics
 
-- <a href="technical-limitations-of-mobile-buying.md"
-  class="xref">Technical Limitations of Mobile Buying</a>
-- <a href="welcome-to-mobile.md" class="xref">Welcome to Mobile</a>
-- <a href="mobile-buying-faq.md" class="xref">Mobile Buying FAQ</a>
-
-
-
-
+- [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md)
+- [Welcome to Mobile](welcome-to-mobile.md)
+- [Mobile Buying FAQ](mobile-buying-faq.md)
