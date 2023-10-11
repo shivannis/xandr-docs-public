@@ -71,7 +71,7 @@ DAR - Site/Split report:
 | Country Code | The corresponding code for a country where impressions for your line item occurred |
 | Line Item | **Required.** The ID and (optional) name of a line item. For more information about line items, see Working with Line Items. |
 | Demographic Group | **Required.** Filter for demographic groups sorted by sex and age range. |
-## To Run your Report
+## To Run your report
 
 Follow these steps to run the report:
 

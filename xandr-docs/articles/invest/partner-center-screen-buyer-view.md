@@ -4,7 +4,7 @@ description : Learn how viewing is made easy on the Partner Center screen. You c
 ---
 
 
-# Microsoft Invest - partner center screen
+# Microsoft Invest - Partner center screen
 
 On the **Partners** screen you can view
 your preferred partners, search all sellers, and review impression and
@@ -38,7 +38,7 @@ See [Searching for Sellers](#searching-for-sellers)
 and then review the statistics to determine if you'd like to partner
 with the seller.
 
-## Platform-wide Avails.
+## Platform-wide Avails
 
 - **Avg. Daily Imps** - The average of the
   number of impressions the seller has sold across the entire platform

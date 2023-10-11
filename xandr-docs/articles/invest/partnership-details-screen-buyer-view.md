@@ -4,7 +4,7 @@ description : Learn how to view and manage your relationship with a specific sel
 ---
 
 
-#  Microsoft Invest - partnership details screen
+#  Microsoft Invest - Partnership details screen
 
 On the Partnership details screen you can review and manage your
 relationship with a specific seller. You can track overall spend trends,

@@ -4,7 +4,7 @@ description : Learn how The Offline Attribution report lets you track your line 
 ---
 
 
-# Microsoft Invest - offline attribution report
+# Microsoft Invest - Offline attribution report
 
 The Offline Attribution report lets you track your line item's offline
 sales performance. This report is only available for
@@ -142,6 +142,6 @@ Follow these steps to run the report:
 
 ## Related topics
 
-- [enabling ales impact with nielsen catalina solutions](enabling-sales-impact-with-nielsen-catalina-solutions.md)
+- [enabling sales impact with nielsen catalina solutions](enabling-sales-impact-with-nielsen-catalina-solutions.md)
 - [activate nielsen sales impact for a line item](activate-nielsen-sales-impact-for-a-line-item.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

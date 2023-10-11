@@ -4,7 +4,7 @@ description : Learn to make data accessible, that lives in your ad server or dat
 ---
 
 
-# Microsoft Invest - pass in user data offline
+# Microsoft Invest - Pass in user data offline
 
 If you have data that lives in your ad server or data warehouse today,
 you can make it accessible to your Xandr ad
