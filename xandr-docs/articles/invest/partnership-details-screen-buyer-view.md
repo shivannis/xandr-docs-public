@@ -152,7 +152,7 @@ If you see a package in the **Package
 Marketplace** that interests you but needs some modification, you
 can send the seller a message with your request. Click
 **Request a Custom Deal**, explain your
-need, and then click Submit to post
+need, and then click **Submit** to post
 your message in the **Activity Stream** on
 the **Partner Details** page
 **(Inventory \> Partners)**. Use the

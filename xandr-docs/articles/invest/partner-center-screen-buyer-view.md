@@ -68,12 +68,12 @@ with the seller.
 
 ## Seller eligibility, history, and deals
 
-> [!TIP]
-> **Get to Know Xandr Direct**
->
-> Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
->
-> For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+  > [!TIP]
+  > **Get to Know Xandr Direct**
+  >
+  > Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+  >
+  > For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
 - **Seller Group** - Shows if the seller
   is labeled as Xandr Direct.

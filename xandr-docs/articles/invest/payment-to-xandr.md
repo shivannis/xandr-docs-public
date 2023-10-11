@@ -1,10 +1,10 @@
 ---
-title : Payments to Xandr
+title : Microsoft Invest - Payment
 description : Learn about invoices, payment instructions and billing reports in UI.
 ---
 
 
-# Payments to Xandr 
+# Microsoft Invest - Payment
 
 ## Xandr invoice information
 

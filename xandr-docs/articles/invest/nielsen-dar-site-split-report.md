@@ -65,7 +65,7 @@ DAR - Site/Split report:
 | Platform Type | The type of platform an impression occurred on: **"D" (Desktop)**, **"M" (Mobile)**, or **"O" (Connected Device)**. |
 | Nielsen Campaign Ref | The Nielsen Campaign reference. **Example**: `cmp3406123` |
 | Split | The name and (optional) ID of a split. |
-| Site | The domain where impressions occurred. For mobile applications, this can be the URL of the app's location in the app store.<br>**Note**: Two additional values display in place of a domain: "deals.unknown" or "managed.unknown". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
+| Site | The domain where impressions occurred. For mobile applications, this can be the URL of the app's location in the app store.<br>**Note**: Two additional values display in place of a domain: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
 | Last Available Date | The date for when reporting data was last gathered |
 | Metrics Start Date | The date for when data for Nielsen report metrics began |
 | Country Code | The corresponding code for a country where impressions for your line item occurred |

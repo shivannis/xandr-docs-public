@@ -107,7 +107,7 @@ Follow these steps to run the report:
     results for just a select few. When you select a filter (by clicking
     **Edit**), a selection panel appears.
     Select items in the **Available** list (left), then click
-    Add to include them in the
+    **Add** to include them in the
     **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
