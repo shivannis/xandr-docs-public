@@ -1,0 +1,22 @@
+- name: 日本語ドキュメント
+  href: index.yml
+- name: 内容（コンテンツ）
+  items:
+    - name: ビデオ クリエイティブ
+      href: video-creatives.md
+    - name: クリエイティブ タイプ
+      href: creative-types.md
+    - name: GDALIを作成する
+      href: create-a-guaranteed-delivery-line-item-gdali.md
+    - name: オーディオ クリエイティブ
+      href: audio-creatives.md
+    - name: バナーと HTML5 クリエイティブ
+      href: banner-and-html5-creatives.md
+    - name: 配信保証型拡張ラインアイテム（GDALI）
+      href: guaranteed-delivery-gdali.md
+    - name: 配信保証型ラインアイテム（GDALI）に関するFAQ
+      href: guaranteed-delivery-line-item-faq-gdali.md
+    - name: ネイティブ クリエイティブ
+      href: native-creatives.md
+    - name: パブリッシャーGDALI APIセットアップガイド
+      href: publisher-gdali-api-setup-guide.md
