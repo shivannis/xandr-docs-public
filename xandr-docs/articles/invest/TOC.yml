@@ -1013,7 +1013,8 @@
           href: release-notes-20220502.md
         - name: February 17, 2022 - Enhancements to the ALI Setup Experience
           href: release-notes-20220217.md
-      - name: 2020 - 2021
+    - name: 2020 - 2021
+      items:
         - name: September 23, 2021 - Demographic Measuring with Nielsen Digital Ad Ratings
           href: release-notes-20210923.md
         - name: August 26, 2021 - Cross Device for Europe (Invest Changes)
