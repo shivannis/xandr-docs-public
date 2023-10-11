@@ -59,7 +59,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
     > [!NOTE]
     > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Xandr has only defined these options for segments that you've created.
 
-1. Click Save.
+1. Click **Save**.
 
 ## Related topics
 

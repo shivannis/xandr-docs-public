@@ -98,6 +98,6 @@ The **Optimization** section provides several settings related to optimization, 
 > [!NOTE]
 > The **IP Attribution** feature is in **Alpha**. It is subject to change without notice and is only available to select clients. Please consult your Account Manager if you'd like to be added to the alpha test.
 
-## Related topics
+## Related topic
 
 [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

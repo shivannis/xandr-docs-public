@@ -73,7 +73,7 @@ To set up line item budgeting and scheduling:
 
     1. To set up flights manually, enter a start and end date. If you don't want to set an end date, click **No end date**.
 
-        The**No end date** option is only available if you selected the **Set budget on individual flights** for the line item and if the parent insertion order has no end date.
+        The **No end date** option is only available if you selected the **Set budget on individual flights** for the line item and if the parent insertion order has no end date.
 
         > [!NOTE]
         > If you don't set an end date:

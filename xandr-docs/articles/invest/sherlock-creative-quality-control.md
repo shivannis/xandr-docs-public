@@ -35,6 +35,6 @@ We build our blocklists from a variety of sources both internal and external. Ou
 Once we have this information, we will reach out to the owner to determine if the domain can be removed from our blocklist. As a matter
 of policy, we blocklist as soon as we see a potential problem and then complete the investigation. This is to ensure that both your publisher relationships and reputation are protected!
 
-## Related topics
+## Related topic
 
 [Creative Standards](creative-standards.md)

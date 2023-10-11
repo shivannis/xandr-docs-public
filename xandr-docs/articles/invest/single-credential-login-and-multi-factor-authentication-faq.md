@@ -61,6 +61,6 @@ Yes. They will receive a password expiry warning email 21 days and 5 days prior 
 Product Support can reset the users MFA account via the single credential login tool. The user will be prompted to setup their MFA
 account again the next time they successfully sign in to a Xandr Digital Platform application with their username and password.
 
-## Related topics
+## Related topic
 
 [Troubleshooting Multi-Factor Authentication (MFA)](troubleshooting-multi-factor-authentication-mfa.md)
