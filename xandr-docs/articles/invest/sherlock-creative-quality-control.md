@@ -14,7 +14,7 @@ We utilize our own automated creative scanning system, Sherlock, to detect malic
 
 ## Malware policy
 
-We have developed an [anti-malvertising policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) to ensure that our clients are taking all the necessary steps to keep the Xandr platform safe.
+We have developed an [Anti-malvertising Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx) (login required) to ensure that our clients are taking all the necessary steps to keep the Xandr platform safe.
 
 ## Contacting our team
 
