@@ -993,6 +993,8 @@
       href: comscore-agent.md
 - name: Release Notes
   items:
+    - name: Overview
+      href: release-notes.md
     - name: 2022 - 2023
       items:
         - name: May 22, 2023 - Platform support additional CTV Identifiers
@@ -1010,6 +1012,16 @@
         - name: May 2, 2022 - Buyer Engagement Report
           href: release-notes-20220502.md
         - name: February 17, 2022 - Enhancements to the ALI Setup Experience
-          href: release-notes-20220217.md
-        - name: January 18, 2022 - Vendor Usage Report UI
-          href: release-notes-20220118.md
+      - name: 2020 - 2021
+        - name: September 23, 2021 - Demographic Measuring with Nielsen Digital Ad Ratings
+          href: release-notes-20210923.md
+        - name: August 26, 2021 - Cross Device for Europe (Invest Changes)
+          href: release-notes-20210826-2.md
+        - name: July 14, 2021 - New Targeting Enhancements
+          href: release-notes-20210714-2.md
+        - name: July 14, 2021 - Introducing Our New Bulk Export and Import Functionality
+          href: release-notes-20210714-1.md
+        - name: June 14, 2021 - Introducing a New ALI
+          href: release-notes-20210614.md
+        - name: June 9, 2021 - Open Beta for Video Inventory Recommendations
+          href: release-notes-20210609.md
