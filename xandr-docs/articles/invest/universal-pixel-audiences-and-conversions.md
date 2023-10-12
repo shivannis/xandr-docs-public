@@ -4,7 +4,7 @@ description : After you have set up standard or custom event tracking, learn how
 ---
 
 
-#  Microsoft Invest - universal pixel audiences and conversions
+#  Microsoft Invest - Universal pixel audiences and conversions
 
 After you have set up standard or custom event tracking, you can use the
 data you collect to identify audiences and conversions.

@@ -4,7 +4,7 @@ description : Learn viewability rates for guaranteed views
 ---
 
 
-# Microsoft Invest - understanding viewability rates for guaranteed views
+# Microsoft Invest - Understanding viewability rates for guaranteed views
 
 While the buyer is only charged for viewable inventory with Guaranteed
 Views, line item reporting will not show a 100% viewable rate. When

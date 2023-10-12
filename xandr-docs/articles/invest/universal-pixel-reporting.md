@@ -4,7 +4,7 @@ description : Learn about universal pixel activity from activity reporting avail
 ---
 
 
-# Microsoft Invest - universal pixel reporting
+# Microsoft Invest - Universal pixel reporting
 
 In addition to the activity reporting available from the
 **Universal Pixels** page, a number of

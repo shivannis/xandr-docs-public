@@ -4,7 +4,7 @@ description : Learn how to run a debug auction and how to read the output you re
 ---
 
 
-# Microsoft Invest - understanding the debug auction
+# Microsoft Invest - Understanding the debug auction
 
 To understand what is happening behind the scenes during an auction, you
 can run a debug auction. This page explains how to run a debug auction
@@ -113,22 +113,21 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
   server.
 - All IDs have been changed to random numbers.
 
-![Screenshot of Debug Auction Geo.](media/debug-auction-geo.png)
+:::image type="content" source="./media/debug-auction-geo.png" alt-text="Screenshot of Debug Auction Geo.":::
 
-![Screenshot of Debug Auction Payment Rules.](media/debug-auction-payment-rules.png)
+:::image type="content" source="./media/debug-auction-payment-rules.png" alt-text="Screenshot of Debug Auction Payment Rules.":::
 
-Xandr's bidder gives more detailed debug text,
+Microsoft's bidder gives more detailed debug text,
 beginning with "Debug text from bidder 2" (live). This output includes
 information such as the bidder version, the region info., and user info.
 Excerpts from a live debug auction are below:
 
-![Screenshot of Debug Auction Geo Parb B.](media/debug-auction-geo-a.png)
-
+:::image type="content" source="./media/debug-auction-geo-a.png" alt-text="Screenshot of Debug Auction Geo Parb B.":::
 
 This debug info. continues, including information such as the segments
 that the user is in and other relevant objects.
 
-![Screenshot of Debug Auction Segments.](media/debug-auction-segments.png)
+:::image type="content" source="./media/debug-auction-segments.png" alt-text="Screenshot of Debug Auction Segments.":::
 
 > [!TIP]
 > This section highlights the decisions made by the bidder.
@@ -141,16 +140,18 @@ much they would bid.
 
 After all ad campaigns are evaluated, you will see the summary table.
 
-![Screenshot of Debug Auction Summary Table.](media/debug-auction-summary-table.png)
+:::image type="content" source="./media/debug-auction-summary-table.png" alt-text="Screenshot of Debug Auction Summary Table.":::
 
 You will also see the performance summary.
 
-![Screenshot of Performance Summary.](media/performance-summary.png)
+:::image type="content" source="./media/performance-summary.png" alt-text="Screenshot of Performance Summary.":::
+
 
 You will receive an output of all bids and final bids. RTB buyers will
 see the value of the bid, the brand ID, and the learn type.
 
-![Screenshot of Final Bids.](media/final-bids.png)
+:::image type="content" source="./media/final-bids.png" alt-text="creenshot of Final Bids.":::
+
 
 > [!TIP]
 > This debug log will also compare the result of Xandr's bidder with the result any other bidders participating in the auction, looking for the winner and the second highest price (since Xandr uses Second Price Auction).
@@ -158,7 +159,8 @@ see the value of the bid, the brand ID, and the learn type.
 Finally, we show the highest net bid, and the member and creative that
 would have served had this not been a debug auction.
 
-![Screenshot of Highest Net Bids.](media/highest-net-bid.png)
+:::image type="content" source="./media/highest-net-bid.png" alt-text="Screenshot of Highest Net Bids.":::
+
 
 ## Possible debug auction results
 
@@ -268,4 +270,4 @@ If the ad is visible in a browser, the configuration is valid.
 
 ## Related topic
 
-- [Mobile Debug Auction Tips](mobile-debug-auction-tips.md)
+[Mobile Debug Auction Tips](mobile-debug-auction-tips.md)

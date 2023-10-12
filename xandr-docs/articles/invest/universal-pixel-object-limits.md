@@ -4,7 +4,7 @@ description : Learn about limits on audiences, conversions, custom events, and p
 ---
 
 
-#  Microsoft Invest - universal pixel object limits
+#  Microsoft Invest - Universal pixel object limits
 
 There are limits for how many audiences, conversions, custom events, and
 parameters you can create, as well as a data size limit for information

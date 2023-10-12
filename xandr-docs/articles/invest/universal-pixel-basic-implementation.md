@@ -4,7 +4,7 @@ description : With the most basic implementation of the universal pixel, learn t
 ---
 
 
-# Microsoft Invest - universal pixel basic implementation
+# Microsoft Invest - Universal pixel basic implementation
 
 With the most basic implementation of the universal pixel, you can track
 page views and identify the URLs driving them. Setting up the basic

@@ -4,7 +4,7 @@ description : Learn Annotated descriptions of the contents of your Xandr invoice
 ---
 
 
-# Microsoft Invest - understanding your invoice
+# Microsoft Invest - Understanding your invoice
 
 Annotated descriptions of the contents of your Xandr invoices.
 
@@ -25,7 +25,7 @@ calculating fees and charges on invoices.
 Here's an example of what a typical invoice will look like (see
 descriptions of annotations below):
 
-![Screenshot of Invoice Annotated.](media/invoice-annotated.png)
+:::image type="content" source="./media/invoice-annotated.png" alt-text="Screenshot of Invoice Annotated.":::
 
 Your invoice lists the amount you have spent on
 Xandr's platform; this is the amount you must
@@ -90,7 +90,7 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
         [Buyer Auction Service Charge](buyer-auction-service-charge-mechanics.md).
 
        > [!NOTE]
-   > **Buyer Auction Service Deduction (BASC)** - For all other inventory purchases, many clients have the buyer auction service charge for other inventory purchases specified as a bid reduction in their contract. This may not appear as a separate charge on your invoice automatically unless your account is setup for disclosed invoicing. If the line item is not being displayed on your invoice you can view the deduction amount in the UI using the Buying Billing Report. To enable disclosed invoicing, create a Client Finance case in the Customer Support Portal. Your cost of media will appear on your invoice net the fees.
+       > **Buyer Auction Service Deduction (BASC)** - For all other inventory purchases, many clients have the buyer auction service charge for other inventory purchases specified as a bid reduction in their contract. This may not appear as a separate charge on your invoice automatically unless your account is setup for disclosed invoicing. If the line item is not being displayed on your invoice you can view the deduction amount in the UI using the Buying Billing Report. To enable disclosed invoicing, create a Client Finance case in the Customer Support Portal. Your cost of media will appear on your invoice net the fees.
 
     1. **Seller Auction Service Fee (SASC)** - This fee is only applied
         to selling activity and only if the seller has the SASC set as a
@@ -248,7 +248,7 @@ credit memo once the credit is processed.
     receiving your approval to do so).
 1. **Balance/Credit** - The amount that has been credited to your account.
 
-![Screenshot of Credit Memo Annotated.](media/credit-memo-annotated.png)
+:::image type="content" source="media/credit-memo-annotated.png" alt-text="Screenshot of Credit Memo Annotated.":::
 
 ## Related topics
 

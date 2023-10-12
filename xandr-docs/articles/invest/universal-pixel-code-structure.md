@@ -4,7 +4,7 @@ description : Learn about the universal pixel code structure. The general univer
 ---
 
 
-# Microsoft Invest - universal pixel code structure
+# Microsoft Invest - Universal pixel code structure
 
 The general universal pixel code to be deployed in the `<head>` tag on
 each page of the advertiser website is different from the pixel code

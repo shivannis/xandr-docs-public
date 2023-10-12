@@ -4,7 +4,7 @@ description : As a member who sells inventory on Xandr's platform, you receive a
 ---
 
 
-# Microsoft Invest - understanding your seller statement
+# Microsoft Invest - Understanding your seller statement
 
 As a member who sells inventory on Xandr's
 platform, you receive a monthly statement indicating the amount of revenue you have earned. This page explains the three types of seller statements. Your contract terms define the type of statement you will receive.
@@ -26,7 +26,8 @@ Xandr Client Finance: [billing@xandr.com](mailto:billing@xandr.com).
 
 Here's an example of what a what a typical seller statement looks like:
 
-![Screenshot of Seller Activity Statement.](media/seller-activity-statement.png)
+:::image type="content" source="./media/seller-activity-statement.png" alt-text="Screenshot of Seller Activity Statement.":::
+
 
 1. **Seller** - The name and address of the seller.
 1. **Statement Number** - The unique identifier for the Seller Activity
@@ -81,8 +82,8 @@ This document lists the amount of revenue due to be paid, along with any adjustm
     Xandr less any bank fees incurred from the
     Seller’s bank (which Xandr can't know in
     advance).
+:::image type="content" source="./media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of Seller Remittance Statement Sanitized.":::
 
-![Screenshot of Seller Remittance Statement Sanitized.](media/seller-remittance-statement-sanitized.png)
 
 ## Netting statment
 
@@ -137,8 +138,7 @@ Client Finance: [billing@xandr.com](mailto:billing@xandr.com).
     1. **Total Amount Due** - If the total seller revenue is less than
         the total invoice amounts, this field lists the amount you must
         pay Xandr.
-
-![Screenshot of Netting Statement annotated.](media/netting-statement-annotated.png)
+:::image type="content" source="./media/netting-statement-annotated.png" alt-text="Screenshot of Netting Statement annotated.":::
 
 ## Invoices
 

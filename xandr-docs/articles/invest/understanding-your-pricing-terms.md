@@ -4,7 +4,7 @@ description : Learn about charges and fees for common activity on Xandr's platfo
 ---
 
 
-# Microsoft Invest - understanding your pricing terms
+# Microsoft Invest - Understanding your pricing terms
 
 Charges and fees for common activity on Xandr's
 platform can be found in the **Billing** section of the UI. This page provides an overview of these common charges. For a complete list of charges and fees you may incur, see your
