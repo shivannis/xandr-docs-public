@@ -1,10 +1,10 @@
 ---
 title : Microsoft Invest - Onboarding Your Audience Data
-description : Lear how to onboard your audience data.
+description : Learn how to onboard your audience data.
 ---
 
 
-# Microsoft Invest - Onboarding your audience data 
+# Microsoft Invest - Onboarding your audience data
 
 There are three ways to onboard your audience data:
 
@@ -16,6 +16,7 @@ There are three ways to onboard your audience data:
   bulk, via the API.
 - [Streaming Server-Side Segmentation](../digital-platform-api/streaming-server-side-segmentation.md):
   This method associates individual users to segments in close to
-  real-time, via the API. (<b>Note:</b> At the moment, this feature is only
-  available to a small group of Alpha testers. It will be released more
-  widely over the course of the next several months.)
+  real-time, via the API. 
+
+   > [!NOTE]
+  > At the moment, this feature is only available to a small group of Alpha testers. It will be released more widely over the course of the next several months.

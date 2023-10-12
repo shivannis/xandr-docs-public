@@ -30,4 +30,4 @@ Common fees you might need to budget for are:
 - **Incremental fees** charged by an intermediary to the advertiser,
   such as a managed service fee or consulting fee.
 
-:::image type="content" source="./media/partner-fees-graphic.png" alt-text="Screenshot of Revenue broken out into different costs.":::
+  :::image type="content" source="./media/partner-fees-graphic.png" alt-text="Screenshot of Revenue broken out into different costs.":::

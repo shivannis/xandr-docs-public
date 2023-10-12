@@ -16,7 +16,7 @@ manages pacing, budget allocation, inventory discovery, inventory
 valuation, and other tasks that software has the ability to do better
 than humans.
 
-## In this guide:
+## In this guide
 
 [Adaptive Pacing](adaptive-pacing.md): Shade
 bids and deliver budgets as efficiently as possible.

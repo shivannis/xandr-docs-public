@@ -133,7 +133,7 @@ conversion-related data is made available to the
 Xandr Platform for reporting, optimization, and
 budget purposes.
 
-## Related topic
+## Related topics
 
 - [Conversion Attribution](conversion-attribution.md)
 - [Working with Conversion Pixels](working-with-conversion-pixels.md)
