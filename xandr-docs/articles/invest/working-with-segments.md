@@ -1,8 +1,7 @@
 ---
 title : Microsoft Invest - Working with Segments
-description : Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment. 
+description : In this article, learn about segment pixels. 
 ---
-
 
 # Microsoft Invest - Working with Segments
 
@@ -13,9 +12,7 @@ If you're new to the concept of pixels, we recommend you read a little more abou
 
 Xandr segment pixels look something like this:
 
-``` pre
-https://ib.adnxs.com/seg?add=1,2,4
-```
+```https://ib.adnxs.com/seg?add=1,2,4```
 
 where 1, 2, 4 are Xandr segment IDs.
 
@@ -23,9 +20,7 @@ For example, let's say ProStarr Sportswear wants to target users that have purch
 
 To remove users from a segment, use this syntax:
 
-``` pre
-https://ib.adnxs.com/seg?remove=1,2,4
-```
+```https://ib.adnxs.com/seg?remove=1,2,4```
 
 These segment pixel calls to `/seg` will always return a 1x1 invisible GIF, unless a piggyback pixel redirect parameter is included.
 

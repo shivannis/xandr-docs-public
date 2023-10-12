@@ -1,7 +1,6 @@
 ---
-Title : Microsoft Invest - Working with Creatives
-Description : You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the
-Xandr platform. 
+title : Microsoft Invest - Working with Creatives
+description : In this article learn how to work with Creatives. 
 ---
 
 # Microsoft Invest - Working with creatives
@@ -23,4 +22,5 @@ Xandr also makes it easy for you to traffic creatives that are served by third-p
 - [Configuring Tracking for Creatives](configuring-tracking-for-creatives.md)
 - [Auditing Creatives](auditing-creatives.md)
 - [Creative Templates](creative-templates.md)
-- [Creative FAQ](creative-macros.md)
+- [Creative Macros](creative-macros.md)
+- [Creative FAQ](creative-faq.md)

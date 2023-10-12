@@ -1,11 +1,11 @@
 ---
-Title : Microsoft Invest - Working with Member Settings
-Description : Microsoft Invest provides various tools to help you manage network-level settings.
+title : Microsoft Invest - Working with Member Settings
+description : Learn how to manage network-level settings.
 ---
 
 # Microsoft Invest - Working with Member Settings
 
-Microsoft Invest provides various tools to help you manage network-level settings. Hover over your member name in the top right corner of
+Microsoft Invest provides various tools to help you manage network-level settings. Hover over your member name in the top-right corner of
 the menu bar and select **Member Settings** to view or modify your settings.
 
 - [Notification Settings](managing-notification-recipients.md)

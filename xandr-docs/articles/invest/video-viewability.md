@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
-description : Learn the technology behind our video viewability measurement.
+description : Learn the technology behind video viewability measurement.
 ---
 
 # Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
@@ -49,7 +49,7 @@ The Xandr VPAID wrapper will always serve when the player is able to play VPAID 
 1. The VPAID wrapper **loads** the video creative.
 1. The **creative** **(ad) is displayed** in the player while the viewability javascript on the page **measures the viewability** of the creative.
 
-![Screenshot of Viewability.](media/viewability.png)
+:::image type="content" source="media/viewability.png" alt-text="Screenshot of Viewability":::
 
 **VPAID Wrapper Functions**
 
@@ -96,8 +96,6 @@ The following Video viewability metrics are available via the API in the [Networ
 | view_measured_imps | The total number of impressions that were measured for viewability. |
 | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-
-
 
 The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the following columns for video viewability:
 

@@ -1,11 +1,11 @@
 ---
 title : Microsoft Invest - Viewability FAQ
-description : This article lists the questions that address where to find Xandr viewability data and the key metrics associated with it.
+description : This article lists the frequently asked questions that address where to find Xandr viewability data and the key metrics associated with it.
 ---
 
 # Microsoft Invest - Viewability FAQ
 
-## **Viewability data**
+## Viewability data
 
 The following questions address where to find Xandr viewability data and the key metrics associated with it.
 
@@ -17,7 +17,7 @@ Our reporting is based on the IAB standard definition: 50% of the area of the cr
 
 Adserver clients can now use the Engagement Metrics report to access a wide variety of metrics. We are focused on making the most actionable viewability data widely and easily available.
 
-## **Xandr Viewability Script Functionality**
+## Xandr Viewability Script Functionality
 
 The following questions address the Xandr viewability script, how it works, what it measures, and its limitations.
 
@@ -61,7 +61,7 @@ The possible causes could be:
 - Finally, network latency or the user simply closing the browser too quickly can prevent the script from capturing data required for
   measurement.
 
-## What impression types are not measured by Xandr?
+### What impression types are not measured by Xandr?
 
 "blank" and "default"
 
@@ -84,7 +84,7 @@ Checks are applied to all platform inventory before an impression is auctioned, 
 The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the
 script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
 
-## **Viewability Rate Results**
+## Viewability Rate Results
 
 The following questions address how to interpret your reported viewability rates in Microsoft Invest.
 
@@ -118,7 +118,7 @@ It could be any of the following:
 - Is the creative working correctly?
 - Is it rendering?
 
-## **Related topics**
+## Related topics
 
 - [Introduction to Viewability](introduction-to-viewability.md)
 - [Reporting on Viewability](reporting-on-viewability.md)

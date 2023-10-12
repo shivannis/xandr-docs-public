@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Working with Impression and Click Trackers
-description : Impression and click trackers are used to track impressions and clicks associated with creatives that are hosted by off-platform (non-Xandr) ad servers. 
+description : Learn more about working with impression and click trackers.
 ---
 
 # Microsoft Invest - Working with impression and click trackers

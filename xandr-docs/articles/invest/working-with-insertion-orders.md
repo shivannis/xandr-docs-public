@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Working with Insertion Orders
-Description : Insertion orders allow you to easily manage collections of line items that may share a common budget, time span, and business terms. 
+title : Microsoft Invest - Working with Insertion Orders
+description : In this article, learn about working with Insertion orders that allow you to easily manage collections of line items that may share a common budget, time span, and business terms. 
 ---
 
 # Microsoft Invest - Working with insertion orders

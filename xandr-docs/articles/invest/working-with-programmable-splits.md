@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Invest - Working with Programmable Splits
-Description : Learn about Programmable splits
+title : Microsoft Invest - Working with Programmable Splits
+description : Learn about Programmable splits
 ---
 
 # Microsoft Invest - Working with programmable splits
@@ -16,12 +16,11 @@ allocations, bidding priority, and/or creative selection for each split.
 
 The following resources explain how splits work, how to set them up, what the key metrics are, and how to change existing splits in groups or individually. They also address FAQs associated with using splits.
 
-- [Understanding Splits](understanding-splits.md) Learn how splits help you target users, allocate budget, and optimize for performance goals.
-- [Configure a Programmable Split](configure-a-programmable-split.md) Set up a split.
-- [Update Splits](update-splits.md) Edit, delete, duplicate, or activate splits.
-- [Import or Export Split CSVs](import-or-export-split-csvs.md) Update splits in bulk by importing or exporting a CSV file.
-- [Monitor splits](monitor-splits.md) Monitor split delivery and performance per line item.
-- [Explore Splits](explore-splits.md) View essential metrics about a specific split or all splits under a specific line item, analyze visualizations of the split's performance and delivery, and use bulk editing and reporting options.
-- [Split FAQ](split-faqs.md) Frequently asked questions and frequently suggested troubleshooting suggestions.
-
+- [Understanding Splits](understanding-splits.md) - Learn how splits help you target users, allocate budget, and optimize for performance goals.
+- [Configure a Programmable Split](configure-a-programmable-split.md) - Set up a split.
+- [Update Splits](update-splits.md) - Edit, delete, duplicate, or activate splits.
+- [Import or Export Split CSVs](import-or-export-split-csvs.md) - Update splits in bulk by importing or exporting a CSV file.
+- [Monitor splits](monitor-splits.md) - Monitor split delivery and performance per line item.
+- [Explore Splits](explore-splits.md) - View essential metrics about a specific split or all splits under a specific line item, analyze visualizations of the split's performance and delivery, and use bulk editing and reporting options.
+- [Split FAQ](split-faqs.md) - Frequently asked questions and frequently suggested troubleshooting suggestions.
 
