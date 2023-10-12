@@ -1,17 +1,13 @@
 ---
-Title : Offline Conversion Attribution
-Description : "Offline" attribution is
-<a href="conversion-attribution.md" class="xref">conversion
+title : Microsoft Invest - Offline Conversion Attribution
+description : Learn about Offline Conversion Attribution in this article.
 ---
 
 
-# Offline Conversion Attribution
+# Microsoft Invest - Offline conversion attribution  
 
-
-
-"Offline" attribution is
-<a href="conversion-attribution.md" class="xref">conversion
-attribution</a> that involves pushing all of the data processing
+"Offline" attribution is [conversion attribution](conversion-attribution.md)
+ that involves pushing all of the data processing
 required for conversion attribution "offline" to the
 Xandr data warehouse.
 
@@ -30,25 +26,16 @@ Offline attribution provides:
   conversion pixel firing and a view or click is very short. It also
   tracks conversions for impression trackers, whereas the previous
   design did not. For more information about the "last-view/last-click"
-  attribution model that we use, see
-  <a href="conversion-attribution.md" class="xref">Conversion
-  Attribution</a>.
+  attribution model that we use, see  [conversion attribution](conversion-attribution.md).
 - **Flexibility**: This architecture provides us with more flexibility
   in how we implement conversion attribution models. As such, this
   change prepares our system to handle additional attribution models
   beyond "last-view/last-click."
 
+> [!IMPORTANT]
+>The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [conversion attribution](conversion-attribution.md).
 
-
-<b>Important:</b> The below text and diagrams
-describe lower-level infrastructural details; for a higher-level
-overview of how we do conversion attribution, see
-<a href="conversion-attribution.md" class="xref">Conversion
-Attribution</a>.
-
-
-
-Conversion Attribution, "Online" vs. "Offline"
+## Conversion attribution, "Online" vs. "Offline"
 
 The following diagram shows the major components involved in the
 conversion attribution process, as well as the steps that occur between
@@ -57,21 +44,21 @@ available in reporting. The left side of the diagram shows the previous
 "online" conversion attribution process. The right side of the diagram
 shows the current "offline" process.
 
-![OCA](meida/oca.png)
+:::image type="content" source="./media/oca.png" alt-text="Screenshot of OCA.":::
 
-Previous Method ("Online")
+## Previous method ("Online")
 
-Step 1. Conversion pixel loads
+### Step 1. Conversion pixel loads
 
 The user's browser loads the conversion landing page, which fires the
 conversion pixel hosted by the **Impression Bus**.
 
-Step 2. User data is requested by the Impression Bus
+### Step 2. User data is requested by the Impression Bus
 
 The **Impression Bus** asks the **User Data** store for information on
 the user.
 
-Step 3. User data is returned to the Impression Bus
+### Step 3. User data is returned to the Impression Bus
 
 The **User Data** store responds to the **Impression Bus** with
 information about the user.
@@ -85,24 +72,20 @@ As a result, the information can be slightly out of date - where
 "slightly" is measured in seconds - leading to less accuracy in
 attributing conversions.
 
-Step 4. User data is passed to Xandr's Bidder
+### Step 4. User data is passed to Microsoft's Bidder
 
 The **Impression Bus** passes along the information about the user it
 received from the **User Data** store to
-**Xandr's Bidder** for attribution.
+**Microsoft's Bidder** for attribution.
 
-Step 5. Attribution is performed by **Xandr's
-Bidder**
+### Step 5. Attribution is performed by **Microsoft's Bidder**
 
-**Xandr's Bidder** performs the actual
-<a href="conversion-attribution.md" class="xref">conversion
-attribution</a>, searching the user's data for the most recent view or
+**Microsoft's Bidder** performs the actual  [conversion attribution](conversion-attribution.md), searching the user's data for the most recent view or
 click associated with the advertiser's creative.
 
-Step 6. User data is passed to the Data Warehouse for additional
-processing
+### Step 6. User data is passed to the data warehouse for additional processing
 
-**Xandr's Bidder** has attributed the
+**Microsoft's Bidder** has attributed the
 conversion, and passes that information along to the **Data Warehouse**,
 along with the information it was given by the **Impression Bus** and
 **User Data** store.
@@ -112,8 +95,7 @@ provide is limited. That limited set of data on the user must now go
 through a lengthy post-processing step, whereby it is combined with the
 more comprehensive user data stored in the **Data Warehouse**.
 
-Step 7. Conversion-related data is made available for reporting,
-optimization, and budget
+### Step 7. Conversion-related data is made available for reporting, optimization, and budget
 
 The **Data Warehouse** has finished post-processing the limited amount
 of information on the converted user passed along from the **User Data**
@@ -122,19 +104,19 @@ this point, the conversion-related data is made available to the
 Xandr Platform for reporting, optimization, and
 budget purposes.
 
-Current Method ("Offline")
+## Current Method ("Offline")
 
-Step 1. Conversion pixel loads
+### Step 1. Conversion pixel loads
 
 The user's browser loads the conversion landing page, which fires the
 conversion pixel hosted by the **Impression Bus**.
 
-Step 2. Impression-level data is sent to the Data Warehouse
+### Step 2. Impression-level data is sent to the Data Warehouse
 
 The **Impression Bus** passes along the data it has about the impression
 and the user to the **Data Warehouse**.
 
-Step 3. Conversion is attributed, other data is processed
+### Step 3. Conversion is attributed, other data is processed
 
 The **Data Warehouse** receives information about the impression and the
 user from the **Impression Bus**. As you can see from the diagram, the
@@ -142,8 +124,7 @@ user from the **Impression Bus**. As you can see from the diagram, the
 allows for faster integration and processing of the data provided by the
 **Impression Bus**.
 
-Step 4. Conversion-related data is made available for reporting,
-optimization, and budget
+### Step 4. Conversion-related data is made available for reporting, optimization, and budget
 
 The **Data Warehouse** has finished processing and integrating the
 information on the impression and the converted user passed along from
@@ -152,15 +133,8 @@ conversion-related data is made available to the
 Xandr Platform for reporting, optimization, and
 budget purposes.
 
-**Related Topic**
+## Related topics
 
-- <a href="conversion-attribution.md" class="xref">Conversion
-  Attribution</a>
-- <a href="working-with-conversion-pixels.md" class="xref">Working with
-  Conversion Pixels</a>
-- <a href="availability-of-reporting-data.md" class="xref">Availability
-  of Reporting Data</a>
-
-
-
-
+- [Conversion Attribution](conversion-attribution.md)
+- [Working with Conversion Pixels](working-with-conversion-pixels.md)
+- [Availability of Reporting Data](availability-of-reporting-data.md)

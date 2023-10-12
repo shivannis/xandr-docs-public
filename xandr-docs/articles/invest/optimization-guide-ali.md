@@ -1,14 +1,10 @@
 ---
-Title : Optimization Guide - ALI
-Description : Augmented Line Item (ALI) optimization uses sophisticated algorithms to
-achieve your advertising goals as efficiently as possible, minimizing
-your time investment and maximizing return on ad spend. You tell us your
+title : Microsoft Invest - Optimization Guide - ALI
+description : Learn how Augmented Line Item (ALI) optimization uses sophisticated algorithms to achieve advertising goals as efficiently as possible, minimizing your time investment and maximizing return on ad spend. 
 ---
 
 
-# Optimization Guide - ALI
-
-
+# Microsoft Invest - Optimization guide - ALI 
 
 Augmented Line Item (ALI) optimization uses sophisticated algorithms to
 achieve your advertising goals as efficiently as possible, minimizing
@@ -20,27 +16,19 @@ manages pacing, budget allocation, inventory discovery, inventory
 valuation, and other tasks that software has the ability to do better
 than humans.
 
-In This Guide:
+## In this guide
 
-<a href="adaptive-pacing.md" class="xref">Adaptive Pacing</a>: Shade
+[Adaptive Pacing](adaptive-pacing.md): Shade
 bids and deliver budgets as efficiently as possible.
 
-<a href="lifetime-pacing.md" class="xref"
-title="Lifetime pacing intelligently distributes a budget over the lifespan of a line item&#39;s flight.">Lifetime
-Pacing</a>: Automatically distribute a budget over the lifespan of a
+[Lifetime Pacing](lifetime-pacing.md): Automatically distribute a budget over the lifespan of a
 line item's flight utilizing Xandr's algorithm.
 
-<a href="discovery.md" class="xref">Discovery</a>: Prioritize the
+[Discovery](discovery.md): Prioritize the
 inventory that is most likely to perform.
 
-<a href="valuation.md" class="xref">Valuation</a>: Determine how much
+[Valuation](valuation.md): Determine how much
 to bid.
 
-<a href="ways-to-improve-ctr-performance.md" class="xref"
-title="You can always adjust your line item setup to improve its CTR performance, even after setting a CTR optimization goal.">Ways
-to Improve Click-Through Rate (CTR) Performance</a>: Improve your line
+[Ways to Improve Click-Through Rate (CTR) Performance](ways-to-improve-ctr-performance.md): Improve your line
 item's CTR performance, even after setting a CTR optimization goal.
-
-
-
-
