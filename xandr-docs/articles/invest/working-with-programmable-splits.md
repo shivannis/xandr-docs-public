@@ -1,68 +1,26 @@
 ---
-Title : Working with Programmable Splits
-Description : <b>Note:</b> Programmable splits are only
-available for
-<a href="augmented-line-items-ali.md" class="xref">Augmented Line
+title : Microsoft Invest - Working with Programmable Splits
+description : Learn about Programmable splits
 ---
 
+# Microsoft Invest - Working with programmable splits
 
-# Working with Programmable Splits
+> [!NOTE]
+> Programmable splits are only available for [Augmented Line Items (ALIs)](augmented-line-items-ali.md).
 
+When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget you'd like to spend over the flight, how to track revenue, and how to use Xandr optimization. You also have the option to split up the line item inventory using **programmable splits**, which further target subsets of that total inventory, allocate the specified budget to different targets, and distribute creatives. The targeting on the line item acts as a filter, so impressions must match the criteria specified by the line item before they'll be passed on to splits.
 
-
-
-
-<b>Note:</b> Programmable splits are only
-available for
-<a href="augmented-line-items-ali.md" class="xref">Augmented Line
-Items (ALIs)</a>.
-
-
-
-When you create a
-<a href="create-an-augmented-line-item-ali.md" class="xref"
-title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">line
-item</a>, you specify the inventory you'd like to target, the budget
-you'd like to spend over the flight, how to track revenue, and how to
-use Xandr optimization. You also have the option
-to split up the line item inventory using **programmable splits**, which
-further target subsets of that total inventory, allocate the specified
-budget to different targets, and distribute creatives. The targeting on
-the line item acts as a filter, so impressions must match the criteria
-specified by the line item before they'll be passed on to splits.
-
-You define a split by specifying the inventory you want available for
-it, using any combination of split targeting specifications. These
-include geography, inventory performance, and segment information. If
-you choose, you can also specify bidding or valuation rules, budget
+You define a split by specifying the inventory you want available for it, using any combination of split targeting specifications. These
+include geography, inventory performance, and segment information. If you choose, you can also specify bidding or valuation rules, budget
 allocations, bidding priority, and/or creative selection for each split.
 
-The following resources explain how splits work, how to set them up,
-what the key metrics are, and how to change existing splits in groups or
-individually. They also address FAQs associated with using splits.
+The following resources explain how splits work, how to set them up, what the key metrics are, and how to change existing splits in groups or individually. They also address FAQs associated with using splits.
 
-- <a href="understanding-splits.md" class="xref">Understanding
-  Splits</a> Learn how splits help you target users, allocate budget,
-  and optimize for performance goals.
-- <a href="configure-a-programmable-split.md" class="xref"
-  title="You can use programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item&#39;s targeted inventory. Splits are recommended if you have sophisticated targeting requirements.">Configure
-  a Programmable Split</a> Set up a split.
-- <a href="update-splits.md" class="xref">Update Splits</a> Edit,
-  delete, duplicate, or activate splits.
-- <a href="import-or-export-split-csvs.md" class="xref">Import or Export
-  Split CSVs</a> Update splits in bulk by importing or exporting a CSV
-  file.
-- <a href="monitor-splits.md" class="xref"
-  title="You can monitor delivery and performance for your splits.">Monitor
-  Splits</a> Monitor split delivery and performance per line
-  item.
-- <a href="explore-splits.md" class="xref">Explore Splits</a> View
-  essential metrics about a specific split or all splits under a
-  specific line item, analyze visualizations of the split's performance
-  and delivery, and use bulk editing and reporting options.
-- <a href="split-faqs.md" class="xref">Split FAQ</a> Frequently asked
-  questions and frequently suggested troubleshooting suggestions.
-
-
-
+- [Understanding Splits](understanding-splits.md) - Learn how splits help you target users, allocate budget, and optimize for performance goals.
+- [Configure a Programmable Split](configure-a-programmable-split.md) - Set up a split.
+- [Update Splits](update-splits.md) - Edit, delete, duplicate, or activate splits.
+- [Import or Export Split CSVs](import-or-export-split-csvs.md) - Update splits in bulk by importing or exporting a CSV file.
+- [Monitor splits](monitor-splits.md) - Monitor split delivery and performance per line item.
+- [Explore Splits](explore-splits.md) - View essential metrics about a specific split or all splits under a specific line item, analyze visualizations of the split's performance and delivery, and use bulk editing and reporting options.
+- [Split FAQ](split-faqs.md) - Frequently asked questions and frequently suggested troubleshooting suggestions.
 

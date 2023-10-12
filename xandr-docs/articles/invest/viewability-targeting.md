@@ -1,44 +1,18 @@
 ---
-Title : Viewability Targeting
-Description : Based on historical viewability data across several dimensions of the ad
-call, Xandr has developed a methodology for
-determining, pre-auction, the percentage probability that an ad will be
-viewable to the user once it is delivered to the page, per the IAB
-viewability measurement standards.
+title : Microsoft Invest - Viewability targeting
+description : This article describes viewability targeting.
 ---
 
+# Microsoft Invest - Viewability targeting
 
-# Viewability Targeting
-
-
-
-Based on historical viewability data across several dimensions of the ad
-call, Xandr has developed a methodology for
-determining, pre-auction, the percentage probability that an ad will be
-viewable to the user once it is delivered to the page, per the IAB
+Based on historical viewability data across several dimensions of the ad call, Xandr has developed a methodology for determining, pre-auction, the percentage probability that an ad will be viewable to the user once it is delivered to the page, per the IAB
 viewability measurement standards.
 
-You can opt to buy only impressions that have a certain percentage
-predicted viewability by checking the **Viewability Threshold** checkbox
-in Line Item
- \>  Targeting, and
-entering a percentage value.
+You can opt to buy only impressions that have a certain percentage predicted viewability by checking the **Viewability Threshold** checkbox in **Line Item**  \>  **Targeting**, and entering a percentage value.
 
-Predicted viewability is supported for both display (banners) and video
-inventory on desktop and mobile web.
+Predicted viewability is supported for both display (banners) and video inventory on desktop and mobile web.
 
+## Related topics
 
-
-## Related Topics
-
-- <a href="video-viewability.md" class="xref">Measurement of Video
-  Viewability using VPAID Wrapper</a>
-- <a href="bulk-edit-actions.md" class="xref"
-  title="You can use our bulk edit actions to update multiple advertiser, insertion order, and line item settings simultaneously from the buyer monitoring grids.">Bulk
-  Edit Actions</a>
-
-
-
-
-
-
+- [Measurement of Video Viewability using VPAID Wrapper](video-viewability.md)
+- [Bulk Edit Actions](bulk-edit-actions.md)
