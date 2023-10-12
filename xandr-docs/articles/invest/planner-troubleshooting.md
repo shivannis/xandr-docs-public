@@ -1,16 +1,10 @@
 ---
-Title : Planner Troubleshooting
-Description : ## Estimated Reach = 0
-If you don't see any estimated reach, it means that no auctions or users
-in the daily or weekly sample matched the targeting parameters you set.
+title : Microsoft Invest - Planner Troubleshooting
+description : Learn about Planner Troubleshooting in this module.
 ---
 
 
-# Planner Troubleshooting
-
-
-
-
+# Microsoft Invest - planner troubleshooting
 
 ## Estimated Reach = 0
 
@@ -23,9 +17,6 @@ drop-off is occurring.
 If you don't find conflicting parameters, it's likely that your
 targeting parameters are too restrictive.
 
-
-
-
 ## Failed to fetch error
 
 The "failed to fetch" error occurs when there is a timeout on the API.
@@ -33,19 +24,13 @@ Typically, this happens when several updates were made consecutively,
 resulting in multiple API calls. Try refreshing the plan and waiting for
 the plan to load after each update.
 
-
-
-
-
-## Numbers in Planner don't match delivered impressions
+## Numbers in planner don't match delivered impressions
 
 You may find that the estimates in Planner don't match your recent
 results. For example, you may see delivered impressions in past data
 that aren't reflected in Planner's projections. Because the data is
 projected from a limited sample of historical data, estimates are not
 guaranteed to match existing campaign data.
-
-
 
 ## User count is greater than impression count
 
@@ -56,9 +41,3 @@ each user, each user may have more targeting attributes associated than
 each individual auction. As a result, the extent to which auctions
 associated with users overlap with the auction data used for impression
 counts is unknown.
-
-
-
-
-
-
