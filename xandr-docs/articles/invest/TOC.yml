@@ -1008,12 +1008,16 @@
           href: release-notes-20221207-1.md
         - name: October 25, 2022 - New Data Provider in Data Marketplace
           href: release-notes-20221025-1.md
+        - name: October 25, 2022 - Launch of new Xandr Data Marketplace Resources
+          href: release-notes-20221025-2.md
         - name: June 30, 2022 - Alpha Testing for Underspend Budget Rollover
           href: release-notes-20220630.md
         - name: May 2, 2022 - Buyer Engagement Report
           href: release-notes-20220502.md
         - name: February 17, 2022 - Enhancements to the ALI Setup Experience
           href: release-notes-20220217.md
+        - name: January 18, 2022 - Vendor Usage Report UI
+          href: release-notes-20220118.md
     - name: 2020 - 2021
       items:
         - name: September 23, 2021 - Demographic Measuring with Nielsen Digital Ad Ratings
