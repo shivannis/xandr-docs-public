@@ -5,7 +5,7 @@ description: Learn how to manually create secure pixels. Secure pixels must be p
 
 # Microsoft Invest - Segment pixels - Advanced
 
-## Secure pixels
+## Secure Pixels
 
 The UI allows you to create secure pixels, or pixels to be placed on HTTPS pages. To do this manually, simply create a pixel as usual and then make two small changes:
 
