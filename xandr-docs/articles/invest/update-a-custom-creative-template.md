@@ -33,7 +33,7 @@ own custom templates.
         Specifies how the creative should be rendered.
 
        > [!NOTE]
-       > If you include custom macros in the template code, they must begin with the `#`symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [http://adnxs com/](http://adnxs.com/)references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [http://adnxs com/](http://adnxs com/) or [ adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
+        > If you include custom macros in the template code, they must begin with the `#`symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [http://adnxs com/](http://adnxs.com/)references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [http://adnxs com/](http://adnxs com/) or [ adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
 
 1. Expand the **Custom macros** section if
     necessary.
