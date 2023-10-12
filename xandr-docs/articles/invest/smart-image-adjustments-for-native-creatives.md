@@ -1,76 +1,23 @@
 ---
-Title : Smart Image Adjustments for Native Creatives
-Description : Buyers can use Smart Image Adjustments to automatically resize their
-main native creative image and icon with a few clicks of the mouse so
-that they can quickly meet the publisher's placement criteria.
+title: Microsoft Invest - Smart Image Adjustments for Native Creatives
+description: In this article, learn what Smart Image Adjustments is, how to access it, and how it works.
 ---
 
+# Microsoft Invest - Smart Image Adjustments for native creatives
 
-# Smart Image Adjustments for Native Creatives
-
-
-
-Buyers can use Smart Image Adjustments to automatically resize their
-main native creative image and icon with a few clicks of the mouse so
+Buyers can use Smart Image Adjustments to automatically resize their main native creative image and icon with a few clicks of the mouse so
 that they can quickly meet the publisher's placement criteria.
 
-<div id="native-image-fit-1__section_pss_brb_rlb"
->
+## Accessing Smart Image Adjustments for native creatives
 
-## Accessing Smart Image Adjustments for Native Creatives
+By default, the **Allow Smart Image Adjustments** toggle is enabled for all buyers that have access to Microsoft Invest or Microsoft Monetize. To keep to our recommended native best practices, see [Native Buy-Side Best Practices](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Buy-Side-Native-Best-Practices.pdf).
 
-By default, the Allow Smart Image
-Adjustments toggle is enabled for all buyers that have access to
-Invest or Monetize. To keep to our recommended native best practices,
-see <a
-href="../attachments/native-best-practices/Buy-Side-Native-Best-Practices.pdf"
-class="xref">Native Buy-Side Best Practices</a>.
+## How Smart Image Adjustments works
 
+If buyers bid with a native creative image that doesn't exactly match the dimensions of a publisher's placement, Xandr will automatically resize the image by adding white bars to fill the placement when the **Allow Smart Image Adjustments** toggle is enabled. If the buyer doesn't want white bars added, they should select the **Crop image to fit placement** radio button after clicking the **Allow Smart Image Adjustments** toggle so that the image is cropped and centered without white bars. For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
+When using Smart Image Adjustments within Microsoft Invest and Microsoft Monetize, the main native creative image and icon can only be resized up to 200% and down to 50% of the original aspect ratio. Smart Image Adjustments can also convert native creative images vertically and horizontally. This can be done with our Creative Service API , which gives you more control over the max scale factor and aspect ratio bounds. For more information, see [Creative Service API](../digital-platform-api/creative-service.md). The original dimensions of the native creative ultimately determine what is possible.
 
-<div id="native-image-fit-1__section_adx_2rb_rlb"
->
+## Related topic
 
-## How Smart Image Adjustments Works
-
-If buyers bid with a native creative image that doesn't exactly match
-the dimensions of a publisher's placement, Xandr
-will automatically resize the image by adding white bars to fill the
-placement when the Allow Smart Image
-Adjustments toggle is enabled. If the buyer doesn't want white
-bars added, they should select the Crop image
-to fit placement radio button after clicking the
-Allow Smart Image Adjustments toggle
-so that the image is cropped and centered without white bars. For more
-information, see <a href="add-a-creative.md" class="xref"
-title="You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-a Creative</a> and <a href="add-creatives-in-bulk.md" class="xref"
-title="You can add multiple third-party, hosted, and native creatives to the Creative Manager simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-Creatives in Bulk</a>
-
-When using Smart Image Adjustments within Invest and Monetize, the main
-native creative image and icon can only be resized up to 200% and down
-to 50% of the original aspect ratio. Smart Image Adjustments can also
-convert native creative images vertically and horizontally. This can be
-done with our Creative Service API , which gives you more control over
-the max scale factor and aspect ratio bounds. For more information, see
-<a
-href="xandr-api/creative-service.md"
-class="xref" target="_blank">Creative Service API</a>. The original
-dimensions of the native creative ultimately determine what is possible.
-
-
-
-
-
-## Related Topics
-
-- <a href="native-creatives.md" class="xref"
-  title="You can host video, audio, banner, carousel, and app install native creatives with Xandr.">Native
-  Creatives</a>
-
-
-
-
-
-
+[Native Creatives](native-creatives.md)
