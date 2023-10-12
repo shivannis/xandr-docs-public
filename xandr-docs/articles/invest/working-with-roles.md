@@ -1,7 +1,6 @@
 ---
 title : Microsoft Invest - Working with Roles
-description : Roles determine what the users can view and perform in the Xandr system, and can be applied at the Platform
-or Feature level.
+description : In this article, learn about roles.
 ---
 
 # Microsoft Invest - Working with roles
