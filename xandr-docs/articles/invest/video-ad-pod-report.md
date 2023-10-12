@@ -1,45 +1,27 @@
 ---
-Title : Video Ad Pod Report
-Description : <b>Note:</b> This report is deprecated in
-August, 2023.
+title: Microsoft Invest - Video Ad Pod Report
+description: This report shows metrics for groups of ads delivered sequentially in between segments of non-commercial video programming.
 ---
 
+# Microsoft Invest - Video ad pod report
 
-# Video Ad Pod Report
+> [!NOTE]
+> This report is deprecated in August, 2023.
 
+The Video Ad Pod report shows metrics for groups of ads delivered sequentially in between segments of non-commercial video programming.
 
+> [!NOTE]
+> Video metrics are recorded for VAST creatives only.
 
-
-
-
-
-<b>Note:</b> This report is deprecated in
-August, 2023.
-
-
-
-The Video Ad Pod report shows metrics for groups of ads delivered
-sequentially in between segments of non-commercial video programming.
-
-
-
-<b>Note:</b> Video metrics are recorded for
-VAST creatives only.
-
-
-
-Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
-
-
 
 - Custom
 - Current Hour
@@ -64,276 +46,72 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-
-
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
-
-
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
+## Dimensions
 
+| Column | Filter? | Description |
+|:---|:---|:---|
+| Buyer | Yes | The buyer of the video ad pod. |
+| Seller | Yes | The seller of the ad pod. |
+| Seller Type | Yes | The type of seller for the ad pod. Options are platform or partner. |
+| Placement Set | No | The name of the ad pod. |
+| Creative | Yes | The name of a creative served in the pod. |
+| Content Category | Yes | The content category associated with the ad pod in the placement or placement group. |
+| Device Type | Yes | The type of device where the ad pod played. |
+| Video Context | Yes | When the video creative was served, e.g., 'pre-roll'. |
+| Video Playback Method | Yes | The playback method for the creative, e.g, 'auto-play, sound on'. |
+| Video Player Size | Yes | The size of the player based on pixel width, e.g., 'small', 'medium', 'large'. |
+| Slot Position | Yes | The chronological order of an ad within its ad pod (placement set). |
+| Slot Type | Yes | The type of position (ad or bumper) within an ad pod. |
+| Creative Duration | Yes | The duration of the video creative in seconds. |
+| Country | Yes | The country in which the impression took place. |
+| Max Ad Duration | No | The maximum play duration of the video ad. |
 
-Dimensions
+## Metrics
 
+| Column | Description |
+|:---|:---|
+| Imps | The total number of impressions. For video ads, an impression takes place when the first frame of the video is loaded. |
+| CTR | The click-through rate--the ratio of clicks to impressions, expressed as a percentage. |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
+| Completions | The number of video ads that play to completion. |
+| Completion Rate | The ratio of video ad completions to impressions, expressed as a percentage. (completions/impressions) |
+| Average Ad Duration | The average duration of individual ads delivered in ad pods, in seconds. (total seconds played/completions) |
+| Unfilled Seconds | The number of seconds in the ad pod that could not be supplied with ad content. |
 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000060de__entry__1" class="entry">Column</th>
-<th id="ID-000060de__entry__2" class="entry">Filter?</th>
-<th id="ID-000060de__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Buyer</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The buyer of the video
-ad pod.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Seller</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The seller of the ad
-pod.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Seller Type</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The type of seller for
-the ad pod. Options are platform or partner.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Placement Set</td>
-<td class="entry" headers="ID-000060de__entry__2">No</td>
-<td class="entry" headers="ID-000060de__entry__3">The name of the ad
-pod.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Creative</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The name of a creative
-served in the pod.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Content Category</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The content category
-associated with the ad pod in the placement or placement group.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Device Type</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The type of device
-where the ad pod played.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Video Context</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">When the video
-creative was served, e.g., 'pre-roll'.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Video Playback
-Method</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The playback method
-for the creative, e.g, 'auto-play, sound on'.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Video Player Size</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The size of the player
-based on pixel width, e.g., 'small', 'medium', 'large'.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Slot Position</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The chronological
-order of an ad within its ad pod (placement set).</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Slot Type</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The type of position
-(ad or bumper) within an ad pod.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Creative Duration</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The duration of the
-video creative in seconds.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__1">Country</td>
-<td class="entry" headers="ID-000060de__entry__2">Yes</td>
-<td class="entry" headers="ID-000060de__entry__3">The country in which
-the impression took place.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__1">Max Ad Duration</td>
-<td class="entry" headers="ID-000060de__entry__2">No</td>
-<td class="entry" headers="ID-000060de__entry__3">The maximum play
-duration of the video ad.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-Metrics
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000060de__entry__49" class="entry">Column</th>
-<th id="ID-000060de__entry__50" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__49">Imps</td>
-<td class="entry" headers="ID-000060de__entry__50">The total number of
-impressions. For video ads, an impression takes place when the first
-frame of the video is loaded.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__49">CTR</td>
-<td class="entry" headers="ID-000060de__entry__50">The click-through
-rate--the ratio of clicks to impressions, expressed as a
-percentage.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__49">Viewability Rate</td>
-<td class="entry" headers="ID-000060de__entry__50">The percentage of
-impressions that were viewable out of the total number of impressions
-measured for viewability. (Viewed Imps / View Measured Imps).</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__49">Completions</td>
-<td class="entry" headers="ID-000060de__entry__50">The number of video
-ads that play to completion.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__49">Completion Rate</td>
-<td class="entry" headers="ID-000060de__entry__50">The ratio of video ad
-completions to impressions, expressed as a percentage.
-(completions/impressions)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000060de__entry__49">Average Ad
-Duration</td>
-<td class="entry" headers="ID-000060de__entry__50">The average duration
-of individual ads delivered in ad pods, in seconds. (total seconds
-played/completions)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000060de__entry__49">Unfilled Seconds</td>
-<td class="entry" headers="ID-000060de__entry__50">The number of seconds
-in the ad pod that could not be supplied with ad content.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-To Run Your Report
+## To run your report
 
 Follow these steps to run your report.
 
-1.  Select Reporting from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1.  Or, from the Publishers top menu, click on
-        Prebid
-        Server Premium \>
-        Analytics \>
-        Prebid Server Analytics
-2.  Select the relevant report from the list. The
-    Report screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
-    
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-    <b>Important:</b> For an explanation of
-    how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.md"
-    class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-    
-3.  Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    Add to include them in the
-    **Chosen** list (right).
-4.  Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
-    
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
 
-    <b>Warning:</b> The more dimensions you
-    group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using
-    only the dimensions you need.
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
 
-    
-5.  Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
-      
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-      <b>Tip:</b> The maximum size of the
-      report that can be downloaded from the UI is 100 MB. Also, there
-      is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can
-      try to download it using the <a
-      href="xandr-api/report-service.md"
-      class="xref" target="_blank">API</a> for that reporting service
-      (The limit here is 10 million rows).
-
-      
-    - <span id="ID-000060de__d10e107">**Export, send results via
-      email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      Name this report (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
-6.  Click Run
-    report to send your report request.
-
-
-
-
-
-
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
+1. Click **Run report** to send your report request.
