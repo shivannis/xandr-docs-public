@@ -1,13 +1,10 @@
 ---
-Title : Understanding Viewability Rates for Guaranteed Views
-Description : While the buyer is only charged for viewable inventory with Guaranteed
-Views, line item reporting will not show a 100% viewable rate. When
+title : Microsoft Invest - Understanding Viewability Rates for Guaranteed Views
+description : Learn viewability rates for guaranteed views
 ---
 
 
-# Understanding Viewability Rates for Guaranteed Views
-
-
+# Microsoft Invest - Understanding viewability rates for guaranteed views
 
 While the buyer is only charged for viewable inventory with Guaranteed
 Views, line item reporting will not show a 100% viewable rate. When
@@ -27,12 +24,7 @@ the buyer only pays media costs for viewable impressions, inventory with
 a lower average viewability may nevertheless result in better
 performance per unit spend for the advertiser.
 
-Related Topics
+## Related topics
 
-- <a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a>
-- <a href="reporting-on-guaranteed-outcomes.md" class="xref">Reporting
-  on Guaranteed Outcomes</a>
-
-
-
-
+- [Guaranteed Outcomes](guaranteed-outcomes.md)
+- [Reporting on Guaranteed Outcomes](reporting-on-guaranteed-outcomes.md)
