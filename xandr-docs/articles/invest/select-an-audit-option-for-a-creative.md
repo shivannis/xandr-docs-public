@@ -55,7 +55,7 @@ Select one of the following audit options from the **Creative Quality** section:
 For a full description of the Xandr auditing process and the content standards for creatives running on the
 Xandr platform, see [Auditing Creatives](./auditing-creatives.md) and [Creative Standards](./creative-standards.md). Regardless of your audit selection, the Xandr Sherlock technology checks all creatives for overt malvertising threats and suspicious behavior.l
 
-**Related topics**
+## Related topics
 
 - [Working with Creatives](./working-with-creatives.md)
 - [Creative Audit Best Practices](./best-practices-for-submitting-creatives-for-audit.md)

@@ -25,19 +25,19 @@ https://ib.adnxs.com/px?id=[ID]&seg=[segIDs]
 
 Example:
 
-``` pre
+```pre
 https://ib.adnxs.com/px?id=532&seg=17523,12345 
 ```
 
 With codes. (Note that when using codes the member parameter is required, since codes are not unique.)
 
-``` pre
+```pre
 https://ib.adnxs.com/px?id=532&seg_code=auto&member=234 
 ```
 
 To record a conversion and remove the user from a segment in one call, use the conversion pixel syntax with "remove" as a querystring parameter:
 
-``` pre
+```pre
 https://ib.adnxs.com/px?id=[ID]&remove=[Seg IDs]&t=2 
 ```
 
@@ -47,13 +47,13 @@ Some advertisers require JavaScript tags. Image pixels can only perform one redi
 
 An image pixel looks like this, with a t=2 parameter:
 
-``` pre
+```pre
 <img src="media/seg?add=11837&t=2" width="1" height="1" /> 
 ```
 
 A JavaScript pixel looks like this, with a t=1 parameter:
 
-``` pre
+```pre
 <script src="https://ib.adnxs.com/seg?add=11837&t=1" type="text/javascript"></script> 
 ```
 
@@ -79,7 +79,7 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 **Adding segment pixels using segment ID**
 
-``` pre
+```pre
 <img src="media/seg?add=1,2,4" width=1 height=1/> 
 ```
 
@@ -87,22 +87,24 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 If using codes, your member id is required.
 
-``` pre
+```pre
 <img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
 ```
 
 **Adding and removing segments in one call**
 
-``` pre
+```pre
 <img src="media/seg?add=1,2,4&remove=3" width=1 height=1/> 
 ```
 
 **Redirect to another URL/pixel**
 
-``` pre
+```pre
 <img src="media/pixel?id=1243" width=1 height=1 /> 
 ```
 
 ## Targeting segment values
 
-This is how to target values in segments: - When you create a line item, click the **Targeting** tab. - In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
+This is how to target values in segments: 
+- When you create a line item, click the **Targeting** tab. 
+- In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
