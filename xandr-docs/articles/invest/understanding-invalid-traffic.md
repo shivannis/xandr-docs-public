@@ -8,7 +8,7 @@ description: In this article, learn the process of submitting claims and simplif
 Invalid traffic, while low on the platform due to proactive monitoring, is a legitimate concern for buyers and sellers of digital advertising. As part of the effort to combat this, in March of 2018 we implemented policies that streamline the refund process for buyers (excluding bidders) who have purchased invalid traffic.
 
 > [!NOTE]
-> Full details of the current policy can be found in our [Fraud Credit Policy](https://wiki.xandr.com/display/policies/Fraud+Credit+Policy) (login required).
+> Full details of the current policy can be found in our [Fraud Credit Policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Fraud-Credit-Policy.aspx) (login required).
 
 ## Claim submission
 
