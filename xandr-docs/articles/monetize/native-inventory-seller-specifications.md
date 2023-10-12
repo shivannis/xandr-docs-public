@@ -1459,9 +1459,7 @@ headers="ID-00007e2f__entry__248 ID-00007e2f__entry__252">Y</td>
 <td class="entry"
 headers="ID-00007e2f__entry__248 ID-00007e2f__entry__253">Y</td>
 <td class="entry"
-headers="ID-00007e2f__entry__249"><strong>Desktop</strong>https://e24.no/?ast_override_div=ad-smartboard_1:<var
-class="keyword varname">Xandr</var><var
-class="keyword varname">_creative_id</var>
+headers="ID-00007e2f__entry__249"><strong>Desktop</strong>https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id
 <p><strong>Mobile web</strong>
 https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID</p></td>
 </tr>
@@ -1480,13 +1478,9 @@ headers="ID-00007e2f__entry__248 ID-00007e2f__entry__252">Y</td>
 headers="ID-00007e2f__entry__248 ID-00007e2f__entry__253">Y</td>
 <td class="entry"
 headers="ID-00007e2f__entry__249"><strong>Desktop</strong>
-https://www.vg.no/?ast_override_div=ad-front-smartboard_1:<var
-class="keyword varname">Xandr</var><var
-class="keyword varname">_creative_id</var>
+https://www.vg.no/?ast_override_div=ad-front-smartboard_1Xandr_creative_id
 <p><strong>Mobile web</strong>
-https://www.vg.no/?ast_override_div=ad-front-board_1:<var
-class="keyword varname">Xandr</var><var
-class="keyword varname">_creative_id</var></p></td>
+https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id</p></td>
 </tr>
 </tbody>
 </table>
