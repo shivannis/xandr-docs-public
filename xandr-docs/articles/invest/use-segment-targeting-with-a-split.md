@@ -4,7 +4,7 @@ description : Learn the criterias on the basis of which you can target splits.
 ---
 
 
-# Microsoft Invest - use segment targeting with a split
+# Microsoft Invest - Use segment targeting with a split
 
 You can target splits based on segment presence/absence, age, or value.
 

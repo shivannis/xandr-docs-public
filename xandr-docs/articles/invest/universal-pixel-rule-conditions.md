@@ -4,7 +4,7 @@ description : Learn about Universal Pixel Rule Conditions.
 ---
 
 
-# Microsoft Invest - universal pixel rule conditions
+# Microsoft Invest - Universal pixel rule conditions
 
 The topics below discuss the universal pixel rule conditions along with examples.
 

@@ -4,7 +4,7 @@ description : You cannot modify the standard Xandr creative templates. Learn to 
 ---
 
 
-#  Microsoft Invest - update a custom creative template
+#  Microsoft Invest - Update a custom creative template
 
 Although you cannot modify the standard Xandr
 creative templates, you can modify the rendering code and macros in your
@@ -21,7 +21,7 @@ own custom templates.
     1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
 
        > [!TIP]
-   > Be sure to use a name that buyers will easily recognize.
+       > Be sure to use a name that buyers will easily recognize.
 
     1. **Media Type**:
         Defines the display style of the creatives that can use the
@@ -33,7 +33,7 @@ own custom templates.
         Specifies how the creative should be rendered.
 
        > [!NOTE]
-   > If you include custom macros in the template code, they must begin with the `#`symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [http://adnxs com/](http://adnxs.com/)references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [http://adnxs com/](http://adnxs.com/) or [ adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
+       > If you include custom macros in the template code, they must begin with the `#`symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [http://adnxs com/](http://adnxs.com/)references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [http://adnxs com/](http://adnxs com/) or [ adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
 
 1. Expand the **Custom macros** section if
     necessary.

@@ -4,7 +4,7 @@ description : From the Line Items screen, learn to update your line items for an
 ---
 
 
-# Microsoft Invest - Update Line Items
+# Microsoft Invest - Update line items
 
 From the **Line Items** screen, you can update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
 

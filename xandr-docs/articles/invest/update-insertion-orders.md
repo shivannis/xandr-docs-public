@@ -4,7 +4,7 @@ description : Learn aboout actions you can take on existing insertion orders to 
 ---
 
 
-# Microsoft Invest - update insertion orders
+# Microsoft Invest - Update insertion orders
 
 There are several actions you can take on existing insertion orders to
 update them.

@@ -4,7 +4,7 @@ Description : To act on the new inventory recommendations found under your video
 ---
 
 
-# Microsoft Invest - use recommendations to target video inventory
+# Microsoft Invest - Use recommendations to target video inventory
 
 To act on the new inventory recommendations found under your video line
 item's **Analytics** tab (in the **Video Inventory Recommendations**

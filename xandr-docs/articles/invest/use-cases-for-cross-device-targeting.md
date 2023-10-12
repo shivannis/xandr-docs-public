@@ -4,7 +4,7 @@ description : Learn about Use Cases for Cross-device targeting and measurement.
 ---
 
 
-# Microsoft Invest  - use cases for cross-device targeting and measurement
+# Microsoft Invest  - Use cases for cross-device targeting and measurement
 
 Cross-device targeting and measurement can effectively address several
 key goals for advertisers, including per-user frequency capping,

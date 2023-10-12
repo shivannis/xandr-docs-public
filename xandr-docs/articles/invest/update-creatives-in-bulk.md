@@ -4,7 +4,7 @@ description : Learn to update a variety of settings for individual or multiple c
 ---
 
 
-#  Microsoft Invest - update creatives in bulk
+#  Microsoft Invest - Update creatives in bulk
 
 You can update a variety of settings for individual or multiple creatives from the **Creative Manager**.
 

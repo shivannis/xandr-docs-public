@@ -4,7 +4,7 @@ description : Learn to edit, duplicate, Activate/Deactivate, delete and remove a
 ---
 
 
-# Microsoft Invest - update splits
+# Microsoft Invest - Update splits
 
 The below topics cover all that you can do to update splits.
 

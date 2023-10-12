@@ -4,7 +4,7 @@ description : Learn to upload VAST video creatives and points to consider while 
 ---
 
 
-# Microsoft Invest - upload a hosted video creative
+# Microsoft Invest - Upload a hosted video creative
 
 Xandr supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives.
 VAST is used to serve on in-stream and some non-linear placements, per
@@ -122,7 +122,7 @@ exempt the creative from auditing entirely.
   - Select your audit **priority**.
 
     > [!NOTE]
-  > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
+    > Business days are from 9:00pm Sunday to 11:59pm Friday ET.
 
   For more information about content standards for creatives running
     on the Xandr platform, see [Creative Standards](creative-standards.md).
