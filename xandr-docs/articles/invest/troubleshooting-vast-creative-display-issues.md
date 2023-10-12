@@ -30,7 +30,7 @@ If no ad is returned or any errors are seen, reach out to your third party hosti
 whether there is any logic, or targeting on their end that may prevent the content from being returned in certain geos, on certain IP
 addresses, or certain domains.
 
-:::image type="content" source="media/vast-validator-error.png" alt-text="Screenshot of a VAST validator error.":::
+:::image type="content" source="media/vast-validation-error.png" alt-text="Screenshot of a VAST validator error.":::
 
 > [!NOTE]
 > Since these are in-stream video creatives, they must be delivered before, between or after another video, therefore each VAST validator will have its own video content that will play regardless of whether an ad has served. Each validator will have an ad events log that will confirm whether your ad has been delivered, or if there were any errors.

@@ -56,18 +56,18 @@ To access the **Troubleshooting Tab**:
 
 | Ad Type | Success Message | Type | Description |
 |:---|:---|:---|:---|
-| **Generic** | SSL Checking Passed | Success | The banner creative successfully passed the SSL. |
-| **Generic** | Click tracking test passed | Success | The creative successfully passed the click scan test. |
-| **Generic** | Creative URLs have secure prefixes | Success | The media file URL(s) for the videos uses secure HTTPS. |
-| **Banner** | Asset of type (Ex: HTML) Tag correctly entered | Success | The content type of the banner creative matches its template. (For example, template is HTML (Tag) and the content type is HTML). |
-| **Banner** | X third-party pixels fired | Success | The third party pixels associated with the banner fired successfully. |
-| **Banner** | Creative does not use HTML local storage | Success | The banner creative does not use local browser storage. |
-| **Banner** | Creative is adding X cookies to browser of 20 allowed | Success | The banner creative adds 20 or less cookies to the browser. |
-| **Banner** | Creative rendered correctly and no javascript issues were detected | Success | The banner creative was rendered with no errors or warnings. |
-| **Banner** | Creative is loading 73.6 kB which is less than the 4 MB allowed | Success | The banner creative loads are less than 4 MB. |
-| **Video** | Creative meets recommended CTV inventory specifications | Success | For VPAID creatives, the MP4 file type is present. |
-| **Video** | VAST with formats (video/xxx, video/yyy, etc) | Success | The video/audio is valid and has the following formats video/mp4 and/or video/webm. |
-| **Video** | VPAID with format application/javascript | Success | This creative was detected with VPAID, which is an accepted format by Xandr. |
+| **Generic** | SSL Checking Passed. | Success | The banner creative successfully passed the SSL. |
+| **Generic** | Click tracking test passed. | Success | The creative successfully passed the click scan test. |
+| **Generic** | Creative URLs have secure prefixes. | Success | The media file URL(s) for the videos uses secure HTTPS. |
+| **Banner** | Asset of type (Ex: HTML) Tag correctly entered. | Success | The content type of the banner creative matches its template. (For example, template is HTML (Tag) and the content type is HTML). |
+| **Banner** | X third-party pixels fired. | Success | The third party pixels associated with the banner fired successfully. |
+| **Banner** | Creative does not use HTML local storage. | Success | The banner creative does not use local browser storage. |
+| **Banner** | Creative is adding X cookies to browser of 20 allowed. | Success | The banner creative adds 20 or less cookies to the browser. |
+| **Banner** | Creative rendered correctly and no javascript issues were detected. | Success | The banner creative was rendered with no errors or warnings. |
+| **Banner** | Creative is loading 73.6 kB which is less than the 4 MB allowed. | Success | The banner creative loads are less than 4 MB. |
+| **Video** | Creative meets recommended CTV inventory specifications. | Success | For VPAID creatives, the MP4 file type is present. |
+| **Video** | VAST with formats (video/xxx, video/yyy, etc). | Success | The video/audio is valid and has the following formats video/mp4 and/or video/webm. |
+| **Video** | VPAID with format application/javascript. | Success | This creative was detected with VPAID, which is an accepted format by Xandr. |
 
 ## Related topics
 
