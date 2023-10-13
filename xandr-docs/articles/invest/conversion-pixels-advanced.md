@@ -4,13 +4,13 @@ description : Learn about options available when creating and exporting conversi
 ---
 
 
-# Conversion pixels advanced in Microsoft Invest
+# Microsoft Invest - Conversion pixels advanced  
 
 When creating and exporting conversion pixels, there are some advanced
 options available.
 
-> [!TIP]
-> Most of the below options can be performed during pixel export in Invest DSP. For details on pixel export, see [Export Conversion Pixels](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
+ > [!TIP]
+ > Most of the below options can be performed during pixel export in Invest DSP. For details on pixel export, see [Export Conversion Pixels](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
 
 ## Use secure pixels
 

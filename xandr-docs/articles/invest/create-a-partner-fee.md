@@ -4,7 +4,7 @@ description : Learn creating a partner fee eligible for advertisers. Before sele
 ---
 
 
-# Create a partner fee in Microsoft Invest
+# Microsoft Invest - Create a partner fee  
 
 You must have [Network-level access](getting-started-with-roles.md)
  to perform this task.
@@ -28,7 +28,7 @@ You must have [Network-level access](getting-started-with-roles.md)
         **CPM**, select a currency.
 
        > [!NOTE]
-      > Line item currency is inherited from the advertiser. If a fee is created in a currency other than the line item currency, then we will automatically convert the fee to the line item currency at the time of transaction.
+       > Line item currency is inherited from the advertiser. If a fee is created in a currency other than the line item currency, then we will automatically convert the fee to the line item currency at the time of transaction.
 
     1. Select a calculation method.
 1. Make the fee eligible for advertisers.

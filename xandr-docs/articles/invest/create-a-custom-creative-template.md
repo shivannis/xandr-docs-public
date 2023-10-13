@@ -4,7 +4,7 @@ description : Learn to create a new custom creative template from scratch.
 ---
 
 
-# Create a Custom Creative Template in Microsoft Invest
+# Microsoft Invest - Create a Custom Creative Template 
 
 You can create a new custom creative template from scratch at any time.
 

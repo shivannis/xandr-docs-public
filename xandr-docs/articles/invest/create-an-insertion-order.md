@@ -4,7 +4,7 @@ description : Learn how Insertion orders enable you to better organize, track, a
 ---
 
 
-# Microsoft Invest - create an insertion order
+# Microsoft Invest - Create an insertion order
 
 Insertion orders enable you to better organize, track, and allocate
 budget to your line items. Associating your line items with insertion
@@ -30,14 +30,14 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
     1. Select a state.
 
        > [!TIP]
-     > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
+       > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
 
     1. Optionally, set a currency. If not set, the insertion order will
         inherit the advertiser's currency. You cannot change the
         currency after saving the insertion order.
 
        > [!TIP]
-   > As a best practice, align currency to the billing    currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+       > As a best practice, align currency to the billing    currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
     1. Select a viewability standard.
     1. Select a budget type.
@@ -48,7 +48,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
         or state or local level, or both. For more information, see [Political Advertising](#political-advertising).
 
        > [!NOTE]
-   > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
+       > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
 1. Set the supply strategy, determining the inventory type and
     inventory lists for targeting. These settings can be further refined
@@ -208,12 +208,12 @@ Options are:
 - **Set pacing on the line item**
 
   > [!WARNING]
->  If you select this option, be sure to set your budget pacing on the line item level. Otherwise, severe overspend can occur.
+  >  If you select this option, be sure to set your budget pacing on the line item level. Otherwise, severe overspend can occur.
 
 - **Use daily budget**- Set a custom daily budget to define your own pacing.
 
   > [!IMPORTANT]
-> You can set budgets at the line item level, but your insertion order budget takes precedence. When your insertion order budget runs out, all objects under the insertion order will stop buying impressions, whether or not they have reached their own budget limits.
+  > You can set budgets at the line item level, but your insertion order budget takes precedence. When your insertion order budget runs out, all objects under the insertion order will stop buying impressions, whether or not they have reached their own budget limits.
 
 ## Political advertising
 
