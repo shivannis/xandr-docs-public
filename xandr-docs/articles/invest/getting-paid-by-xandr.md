@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Getting Paid by Xandr
+title: Microsoft Invest - Getting Paid
 description: This article explains about the process for receiving prompt payment from Xandr. The payment is done within a fixed period of time.
 ---
 
-# Microsoft Invest - Getting paid by Xandr
+# Microsoft Invest - Getting paid
 
 In order to receive prompt payment from Xandr, you must submit your banking details to your Xandr representative upon signing your contract. To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).
 

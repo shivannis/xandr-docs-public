@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Monitor Splits
+title: Monitor Splits
 description: This article explains how you can monitor delivery and performance for your splits.
 ---
 
-# Microsoft Invest - Monitor splits
+# Monitor splits
 
 You can monitor delivery and performance for your splits.
 

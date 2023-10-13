@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Netflix Programmatic Guaranteed Buying Line Item
+title: Netflix Programmatic Guaranteed Buying Line Item
 description: This article provides instructions to create a programmatic guaranteed line item. A PG line item offers a specific workflow for buying a guaranteed deal.
 ---
 
-# Microsoft Invest - Netflix programmatic guaranteed buying line item
+# Netflix programmatic guaranteed buying line item
 
 ## Overview
 

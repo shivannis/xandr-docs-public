@@ -37,8 +37,8 @@ You should also note the following:
 > **Appeals for Google Ad Manager audit failures must go through Google Ad Manager**.
 >
 > Our audit team is not able to assist clients with appeals if a creative is rejected by Google Ad Manager because we are simply reflecting the audit status that Google's API has returned.
-
-In the event that you want to appeal, you should update the creative content and then resubmit your creative for audit. This will trigger a full re-audit cycle with our auditors and Google Ad Manager. Alternatively, you can reach out to your contacts at Google Ad Manager so that your appeal can be considered and manually resubmitted.
+>
+> In the event that you want to appeal, you should update the creative content and then resubmit your creative for audit. This will trigger a full re-audit cycle with our auditors and Google Ad Manager. Alternatively, you can reach out to your contacts at Google Ad Manager so that your appeal can be considered and manually resubmitted.
 
 ## Related topics
 

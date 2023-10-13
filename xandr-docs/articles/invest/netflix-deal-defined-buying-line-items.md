@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Netflix Deal Defined Buying Line Items
+title: Netflix Deal Defined Buying Line Items
 description: This article explains about the Netflix PMP deals which are seller-defined. It means the seller defines the targeting parameters the buyer is allowed to configure.
 ---
 
-# Microsoft Invest - Netflix deal defined buying line items
+# Netflix deal defined buying line items
 
 > [!NOTE]
 > This feature is currently in Alpha. It is still under development and is subject to change without notice. To enable this feature, contact your Xandr Account Representative.
