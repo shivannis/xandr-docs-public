@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Member Attributed Conversions Report
+title: Member Attributed Conversions Report
 description: In this article, learn about the Member Attributed Conversions report, providing insights into conversion pixel IDs, order IDs, and attributed click times.
 ---
 
-# Microsoft Invest - Member Attributed Conversions report
+# Member Attributed Conversions report
 
 When a conversion pixel fires, Xandr determines if the conversion can be attributed (tied to a creative that the user
 previously viewed or clicked). For more information about how conversion attribution works, see [Conversion Attribution](conversion-attribution.md).

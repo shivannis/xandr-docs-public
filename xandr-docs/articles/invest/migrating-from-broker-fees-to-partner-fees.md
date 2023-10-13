@@ -35,7 +35,7 @@ Fields are now defined as follows for every report in which they appear:
 
 - **Member profit**: The sum of booked revenue and reseller revenue, minus total cost.
 
-  Profit metrics based on including broker fees or data cost, but not including media cost, will be retired, in favor of the new definition of profit based on total cost. You will still be able to determine separate media and data costs.
+    Profit metrics based on including broker fees or data cost, but not including media cost, will be retired, in favor of the new definition of profit based on total cost. You will still be able to determine separate media and data costs.
 
 ## Transition period
 
@@ -246,6 +246,6 @@ The changes for each report are summarized in the tables below.
 | Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
 | PPM | ((network revenue - network media cost) / imps) * 1,000 | Deprecated.<br>Returns error. |
 
-## Log-Level data
+## Log-level data
 
 Partner fees are reported in the field `partner_fees` in the [Standard Feed](../log-level-data/standard-feed.md).
