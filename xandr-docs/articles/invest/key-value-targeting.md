@@ -116,7 +116,8 @@ We have two groups on this tree:
 1. Click **Done**.
 
     Our target now looks like this:
-    :::image type="content" source="media/UIKVTarget.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
+
+      :::image type="content" source="media/UIKVTarget.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
 
     Notice the **or** between our **city** key/value set and our **fruit** key/value set. If we look at our diagram, we can see that
     we need this relationship to be an AND; we want city is Seattle or LA **AND** fruit is orange.
