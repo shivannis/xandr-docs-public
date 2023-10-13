@@ -1,6 +1,6 @@
 ---
 title : Bid Performance Messages for Augmented Line Items
-description : Learn about the top bid performance messages for augmented line items. These messages contain reasons and recommendations for improving your augmented line item's bid performance.
+description : Learn about the top bid performance messages for augmented line items. 
 ---
 
 # Bid performance messages for augmented line items
