@@ -11,13 +11,9 @@ creatives simultaneously.
 
 Feel free to leverage the following spreadsheet templates:
 
-- <a href="../attachments/add-creatives/xandr-generic-template-third-party.xlsx"
-  class="xref">Xandr Third-Party Creative
-  Template</a>
-- <a href="../attachments/add-creatives/xandr-generic-template-hosted.xlsx"
-  class="xref">Xandr Hosted Creative Template</a>
-- <a href="../attachments/add-creatives/xandr-generic-template-native.xlsx"
-  class="xref">Xandr Native Creative Template</a>
+- [Xandr Third-Party Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Xandr/xandr-generic-template-third-party.xlsx)
+- [Xandr Hosted Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/xandr-generic-template-hosted.xlsx)
+- [Xandr Native Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/xandr-generic-template-native.xlsx)
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.
