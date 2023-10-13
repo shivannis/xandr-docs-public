@@ -1,10 +1,10 @@
 ---
-title : Create and Activate a Plan
+title : Microsoft Invest - Create and Activate a Plan
 description : From the Planning tab, learn to create a plan that lets you experiment with line item targeting settings, understand inventory availability and reach, and seamlessly create a line item from your completed plan.
 ---
 
 
-# Create and activate a plan
+# Microsoft Invest - Create and activate a plan
 
 From the **Planning**
 tab, you can create a plan that lets you experiment with line

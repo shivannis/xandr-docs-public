@@ -4,7 +4,7 @@ description : Learn about Planner Troubleshooting in this module.
 ---
 
 
-# Microsoft Invest - planner troubleshooting
+# Microsoft Invest - Planner troubleshooting
 
 ## Estimated Reach = 0
 

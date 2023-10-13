@@ -16,7 +16,7 @@ Navigate to the **Segments** screen
 (**Audiences** \>  **Segments**).
 
 > [!IMPORTANT]
-> Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](.7./digital-platform-api/segment-service.md).
+> Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](../digital-platform-api/segment-service.md).
 
 Click the **+ New** button. This opens the
 **Create New Segment** window.
