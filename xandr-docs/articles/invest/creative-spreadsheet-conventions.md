@@ -11,7 +11,7 @@ creatives simultaneously.
 
 Feel free to leverage the following spreadsheet templates:
 
-- [Xandr Third-Party Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Xandr/xandr-generic-template-third-party.xlsx)
+- [Xandr Third-Party Creative Template](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F6%2Ff%2F7%2F6f755603-e9af-4148-9e52-02e1fb7262b0%2FXandr%2Fxandr-generic-template-third-party.xlsx&wdOrigin=BROWSELINK)
 - [Xandr Hosted Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/xandr-generic-template-hosted.xlsx)
 - [Xandr Native Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/xandr-generic-template-native.xlsx)
 
@@ -27,11 +27,12 @@ mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|
+| External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file:<br>**- Placement ID**<br>**- External Identifier** |
 | Name | For automatic Name mappings, use one of the following column names in your Excel file:<br>**- Name**<br>**- File Name**<br>**- Placement Name** |
 | Secure Content | For automatic Secure Content mappings, use one of the following column names in your Excel file:<br>**- Tag Content Secure**<br>**- Tag Content**<br>**- JavaScript Tag**<br>**- Legacy JavaScript Tag**<br>**- URL**<br>**- Secure URL** |
 | Size (optional) | For automatic Size mappings, use one of the following column names in your Excel file:<br>**- Dimensions**<br>**- Size** |
-| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel**<br>**- Pixel URL**<br>**- Third-Party Pixel** |
-| External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file:<br>**- Placement ID**<br>**- External Identifier** |
+|  (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel<br>Pixel URL**<br>**- Third-Party Pixel** |
+
 
 ## Hosted creatives
 
@@ -42,10 +43,10 @@ these column name mapping conventions when creating your Excel file:
 | Mapping Option | Column Name |
 |---|---|
 | Creative Type | For automatic Creative Type mappings, use one of the following column names in your Excel file:<br>**- Creative Type**<br>**- Type** |
-| Name | For automatic Name mappings, use one of the following column names in your Excel file:<br>**- Name**<br>**- File Name**<br>**- Placement Name** |
-| Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file:<br>**- Landing Page**<br>**- Landing Page URL**<br>**- Click URL** |
-| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel**<br>**- Pixel URL**<br>**- Third-Party Pixel** |
 | External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file:<br>**- Placement ID**<br>**- External Identifier** |
+| Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file:<br>**- Landing Page**<br>**- Landing Page URL**<br>**- Click URL** |
+| Name | For automatic Name mappings, use one of the following column names in your Excel file:<br>**- Name**<br>**- File Name**<br>**- Placement Name** |
+| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel**<br>**- Pixel URL**<br>**- Third-Party Pixel** |
 
 ## Native creatives
 
@@ -56,17 +57,17 @@ file:
 
 | Mapping Option | Column Name |
 |---|---|
-| Name | For automatic Name mappings, use one of the following column names in your Excel file:<br>**- Name**<br>**- Creative Name**<br>**- File Name**<br>**- Placement Name** |
-| Image | For automatic Image mappings, use one of the following column names in your Excel file:<br>**- Image**<br>**- Main Image**<br>**- File Name (Image)** |
-| Icon (optional) | For automatic Icon mappings, use one of the following column names in your Excel file:<br>**- Icon**<br>**- Icon Name**<br>**- Icon Image**<br>**- File Name (Icon**)<br>**- Logo** |
-| Video (optional) | For automatic Video mappings, use one of the following column names in your Excel file:<br>**- Video**<br>**- Video Name**<br>**- File Name (Video)** |
-| Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file:<br>**- Landing Page**<br>**- Landing Page URL**<br>**- URL** |
-| Title (optional) | For automatic **Title** mappings, use Title as your column name in your Excel file. |
 | Body Text (optional) | For automatic Body Text mappings, use one of the following column names in your Excel file:<br>**- Body Text**<br>**- Description** |
 | Call to Action (optional) | For automatic Call to Action mappings, use one of the following column names in your Excel file:<br>**- Call-to-Action**<br>**- Call to Action** |
-| Sponsored By (optional) | For automatic Sponsored By mappings, use **Sponsored By** as your column name in your Excel file. |
-| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel**<br>**- Pixel URL**<br>**- Third-Party Pixel** |
 | External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file:<br>**- Placement ID**<br>**- External Identifier** |
+| Icon (optional) | For automatic Icon mappings, use one of the following column names in your Excel file:<br>**- Icon**<br>**- Icon Name**<br>**- Icon Image**<br>**- File Name (Icon)**<br>**- Logo** |
+| Image | For automatic Image mappings, use one of the following column names in your Excel file:<br>**- Image**<br>**- Main Image**<br>**- File Name (Image)** |
+| Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file:<br>**- Landing Page**<br>**- Landing Page URL**<br>**- URL** |
+| Name | For automatic Name mappings, use one of the following column names in your Excel file:<br>**- Name**<br>**- Creative Name**<br>**- File Name**<br>**- Placement Name** |
+| Sponsored By (optional) | For automatic **Sponsored By** mappings, use Sponsored By as your column name in your Excel file. |
+| Title (optional) | For automatic Title mappings, use **Title** as your column name in your Excel file. |
+| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file:<br>**- Tracker**<br>**- Pixel**<br>**- Pixel URL**<br>**- Third-Party Pixel** |
+| Video (optional) | For automatic Video mappings, use one of the following column names in your Excel file:<br>**- Video**<br>**- Video Name**<br>**- File Name (Video)** |
 
 ## Related topics
 
