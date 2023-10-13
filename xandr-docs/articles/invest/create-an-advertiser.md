@@ -4,7 +4,7 @@ description : Learn how to create an advertiser object  before you start running
 ---
 
 
-# Create an advertiser in Microsoft Invest
+# Microsoft Invest - Create an advertiser 
 
 Creating an advertiser object is the first step before you can start
 running ad campaigns and serving creatives on behalf of an advertiser.
@@ -17,8 +17,8 @@ On the **Advertisers** screen, click the
 This opens the **Create New Advertiser**
 screen, where you define all relevant details for your advertiser.
 
-> [!TIP]
-> You can expand or collapse each section of the screen. To expand or collapse all sections at once, click the **Expand All** or **Collapse All** link in the upper right.
+ > [!TIP]
+ > You can expand or collapse each section of the screen. To expand or collapse all sections at once, click the **Expand All** or **Collapse All** link in the upper right.
 
 ## Step 2. Fill out basic setup
 
