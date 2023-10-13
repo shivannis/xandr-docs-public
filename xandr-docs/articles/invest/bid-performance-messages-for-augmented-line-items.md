@@ -1,9 +1,9 @@
 ---
-title : Microsoft Invest - Bid Performance Messages for Augmented Line Items
-description : Learn about the top bid performance messages for augmented line items. These messages contain reasons and recommendations for improving your augmented line item's bid performance.
+title : Bid Performance Messages for Augmented Line Items
+description : Learn about the top bid performance messages for augmented line items. 
 ---
 
-# Microsoft Invest - Bid performance messages for augmented line items
+# Bid performance messages for augmented line items
 
 You can access the **Troubleshooting** tab from the **Line Item Details** pane to obtain a prioritized list of top bid performance messages. These messages contain reasons and recommendations for improving your augmented line item's bid performance. Since these messages are prioritized by impact significance, you won't see every message referenced here at once when accessing the **Troubleshooting** tab.
 
