@@ -85,7 +85,7 @@ Currently, the creative preview in Full Edit is not intended to be fully
 functional. You can click through outside of Full Edit mode, or use the
 following URL to serve your creative:
 
-[`https://creative-preview-an.com/cached/creative/insert creative id here`](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here)
+` [https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here) `
 
 ## Gambling creatives
 

@@ -4,7 +4,7 @@ description : Learn to insert creative macros into your creative third-party tag
 ---
 
 
-#  Microsoft Invest - Creative macros 
+# Microsoft Invest - Creative macros 
 
 You can insert creative macros into your creative third-party tags,
 impression trackers, landing page URLs, and third-party pixels for
