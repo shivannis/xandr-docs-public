@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Modeled Audiences
+title: Modeled Audiences
 description: In this article, learn about modeled audiences and how advertisers can take their first-party segments and expand them to similar users for targeting.
 ---
 
-# Microsoft Invest - Modeled audiences
+# Modeled audiences
 
 > [!NOTE]
 > This feature is currently in Alpha. It is still under development and may be subjected to changes without notice. To enable this feature, contact your Xandr Account Representative.

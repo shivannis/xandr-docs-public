@@ -1,9 +1,9 @@
 ---
-title: Microsoft Invest - Member-Level Geography Targeting
+title: Member-Level Geography Targeting
 description: In this article, learn how to globally add, modify, and apply member-level geography targeting settings to all line items for all advertisers under the member.
 ---
 
-# Microsoft Invest - Member-Level geography targeting
+# Member-level geography targeting
 
 When you apply member-level targeting, the settings will be applied globally to all line items for all advertisers under the member.
 
