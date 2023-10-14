@@ -518,7 +518,7 @@
     href: daypart-targeting.md
   - name: Demography Targeting
     items:
-    - name: An Overview of Demography Targeting
+    - name: Overview
       href: demography-targeting.md
     - name: Age and Gender Targeting for Third-Party Inventory
       href: age-and-gender-targeting-for-third-party-inventory.md
@@ -608,7 +608,7 @@
     href: exploring-creatives.md
   - name: Creative Types
     items:
-    - name: An Overview of Creative Types
+    - name: Overview
       href: creative-types.md
     - name: Video Creatives
       href: video-creatives.md
