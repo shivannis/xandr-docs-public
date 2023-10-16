@@ -1,35 +1,52 @@
 ---
-Title : Publisher Page-Level Options for Outstream
-Description : This topic describes settings available for configuring outstream video
-in page code. These settings supplement the placement-level outstream
+title : Publisher Page-Level Options for Outstream
+description : This topic describes settings available for configuring outstream video in page code. These settings supplement the placement-level outstream
 ms.custom : seller-tag
 ---
 
 
 # Publisher Page-Level Options for Outstream
 
-
-
 This topic describes settings available for configuring outstream video
 in page code. These settings supplement the placement-level outstream
 parameters described in the main Monetize documentation.
 
-
-
-<b>Warning:</b> Setting page code via 
-Xandr's seller tag (AST) overrides any settings
-created in Monetize.
-
-
+> [!WARNING]
+> Setting page code via Microsoft's seller tag (AST) overrides any settings created in Monetize.
 
 The following outstream options are set at the publisher level, within
-the `rendererOptions` settings of the
-<a href="define-tag.md" class="xref">Define Tag</a> object. Options
+the `rendererOptions` settings of the [Define Tag](define-tag.md). Options
 set through the API will override any settings created in Monetize.
 
+| Option | Type | Default | Description |  |  |  |  |  |  |  |  |  |  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `alignment` | string | center | Alignment of the player if its size is smaller than the container. Accepted values are:<br>center<br>left<br>right |  |  |  |  |  |  |  |  |  |  |
+| `aspectRatio` | string | If not defined, and fixedSizePlayer is false, 16:9 | The aspect ratio of the video portion of the player. Does not take into account any control bars which do not overlay the video. The "auto" setting uses the aspect ratio defined in the video metadata. Accepted values are:<br>"auto"<br>"16:9"<br>"4:3" |  |  |  |  |  |  |  |  |  |  |
+| `audioOnMouseover (deprecated)` | true<br>false<br>integer | true | This setting is no longer supported or tested because of current browser limitations on sounds.<br>Play audio when the user's mouse is over the video, pause/unmute audio when the mouse is not over the video.<br>If an integer is specified, the audio will not start until that many milliseconds of continuous mouse hovering over the video. |  |  |  |  |  |  |  |  |  |  |
+| `autoInitialSize` | boolean | false | If true, the player width will match the page container. If false, the player width set on the placement will be used. |  |  |  |  |  |  |  |  |  |  |
+| `cbNotification` |  |  | Callback function to be called on specific ad unit. Function footprint is:<br>adCallback(eventType, eventName, adId, eventData)<br>where eventType is one of VPAID, VAST, AdUnit and eventName will be in one of the following eventType categories:<br>Column<br><br><br>Table 1. Event Type Categories<br><br><br>Event Types<br>Fields<br><br><br>AdUnit<br>collapseStart, collapseEnd, expandStart, expandEnd, adComplete, renderedPlayerSize, waterfall (see eventData below)<br>VAST<br>creativeView, start, midpoint, firstQuartile, thirdQuartile, complete, mute, unmute, pause, rewind, resume, fullscreen, expand, collapse, close, exitFullscreen, skip, progress, acceptInvitation, acceptInvitationLinear, closeLinear, impression, error<br>VPAID<br>AdLoaded, AdStarted, AdStopped, AdSkipped, AdSkippableStateChange, AdSizeChange, AdLinearChange, AdDurationChange, AdExpandedChange, AdRemainingTimeChange, AdVolumeChange, AdImpression, AdVideoStart, AdVideoFirstQuartile, AdVideoMidpoint, AdVideoThirdQuartile, AdVideoComplete, onAdVClickThru, AdInteraction, AdUserAcceptInvitation, AdUserMinimize, AdUserClose, AdPaused, AdPlaying, AdLog, AdError<br>The adId value will be the id for the ad which is defined by AST (target element ID) and passed to the renderer upon renderAd() call.<br>The eventData value will be additional data passed in with the event<br>For a waterfall event, this will be an object containing the following fields:<br>status (stepStart, stepFail, stepSuccess, timeout), step, totalAvailableSteps, stepLimit, maxTime, timeRemaining, failureReason (if status = stepFail) | Event Types | Fields |  |  | AdUnit | collapseStart, collapseEnd, expandStart, expandEnd, adComplete, renderedPlayerSize, waterfall (see eventData below) | VAST | creativeView, start, midpoint, firstQuartile, thirdQuartile, complete, mute, unmute, pause, rewind, resume, fullscreen, expand, collapse, close, exitFullscreen, skip, progress, acceptInvitation, acceptInvitationLinear, closeLinear, impression, error | VPAID | AdLoaded, AdStarted, AdStopped, AdSkipped, AdSkippableStateChange, AdSizeChange, AdLinearChange, AdDurationChange, AdExpandedChange, AdRemainingTimeChange, AdVolumeChange, AdImpression, AdVideoStart, AdVideoFirstQuartile, AdVideoMidpoint, AdVideoThirdQuartile, AdVideoComplete, onAdVClickThru, AdInteraction, AdUserAcceptInvitation, AdUserMinimize, AdUserClose, AdPaused, AdPlaying, AdLog, AdError |
+| `Event Types` | Fields |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| `AdUnit` | `collapseStart`, `collapseEnd`, `expandStart`, `expandEnd`, `adComplete`, `renderedPlayerSize`, `waterfall` (see eventData below) |  |  |  |  |  |  |  |  |  |  |  |  |
+| `VAST` | `creativeView`, `start`, `midpoint`, `firstQuartile`, `thirdQuartile`, `complete`, `mute`, `unmute`, `pause`, `rewind`, `resume`, `fullscreen`, `expand`, `collapse`, `close`, `exitFullscreen`, `skip`, `progress`, `acceptInvitation`, `acceptInvitationLinear`, `closeLinear`, `impression`, `error` |  |  |  |  |  |  |  |  |  |  |  |  |
+| `VPAID` | `AdLoaded`, `AdStarted`, `AdStopped`, `AdSkipped`, `AdSkippableStateChange`, `AdSizeChange`, `AdLinearChange`, `AdDurationChange`, `AdExpandedChange`, `AdRemainingTimeChange`, `AdVolumeChange`, `AdImpression`, `AdVideoStart`, `AdVideoFirstQuartile`, `AdVideoMidpoint`, `AdVideoThirdQuartile`, `AdVideoComplete`, `onAdVClickThru`, `AdInteraction`, `AdUserAcceptInvitation`, `AdUserMinimize`, `AdUserClose`, `AdPaused`, `AdPlaying`, `AdLog`, `AdError` |  |  |  |  |  |  |  |  |  |  |  |  |
+| disableCollapse | object | n/a | Enables the user to control what actions will occur when the video playback has completed. See the Disable Collapse Settings table below for more details. |  |  |  |  |  |  |  |  |  |  |
+| endCard | object | n/a | Configurations to determine whether an end card is displayed when the player remains open after video play is complete. See the End Card settings table below for detailed information. |  |  |  |  |  |  |  |  |  |  |
+| fixedSizePlayer | boolean | false | If true, final rendered player height will be the height of the entire player, including any top or bottom control bars.<br>If false, final rendered player height will be the height of the video area, and any extra control bars (top bar, bottom control bar) will increase the total height of the player. |  |  |  |  |  |  |  |  |  |  |
+| learnMore | object | n/a | If enabled a learnMore button is enabled  and clicking the video causes an ad-click and click-thru. See the Learn More Settings table below for more details. |  |  |  |  |  |  |  |  |  |  |
+| maxHeight | true/false/height in pixels | false | Optionally, enable and set a maximum height for the player as shown in the following example. The player will adjust to maintain the aspect ratio.<br>"maxHeight": { "enabled": true, "height": 480 }<br>This setting was designed to optimize vertical video presentations and should only be used with a vertical aspect ratio. For more information, including recommended values, see  Vertical Video Formats. |  |  |  |  |  |  |  |  |  |  |
+| parentIframeGeometryCb | function callback | n/a | For non-friendly iFrame implementation cases only. |  |  |  |  |  |  |  |  |  |  |
+| parentIframeGeometryEvent | string | n/a | For non-friendly iFrame implementation cases only. |  |  |  |  |  |  |  |  |  |  |
+| playerSkin | object | n/a | Configurations to determine the look and feel of the outstream player. See the Player Skinning Settings table below for detailed information. |  |  |  |  |  |  |  |  |  |  |
+| playOnMouseover | boolean | false | When this setting is true, while the user's mouse is over the video it will play. If the mouse leaves the video it will pause and resume playing when the mouse returns over the video.<br>When this setting is false, the video plays regardless of the user's mouse. |  |  |  |  |  |  |  |  |  |  |
+| playVideoVisibleThreshold | integer | 50 | The video will not start playing until the video container's visibility is above this threshold. If the video container's visibility drops below this threshold the video follows the behavior specified in  nonViewableBehavior . Accepted range is 1-100. |  |  |  |  |  |  |  |  |  |  |
+| sidestream | object | n/a | Configurations to determine whether and how videos are played in sidestream mode. See the Sidestream Settings table below for detailed information. |  |  |  |  |  |  |  |  |  |  |
+| skippable | object | n/a | Configurations to determine if the video can be skipped and the skipping behavior. See the Skippable Settings table below for more details. |  |  |  |  |  |  |  |  |  |  |
+| vpaidEnvironmentVars | JSON object | n/a | Sends JSON object containing vpaidEnvironmentVars to VPAID creative as "envinronmentVars" parameter of VPAID initAd() call. |  |  |  |  |  |  |  |  |  |  |
+| waterfallSteps | integer | -1 | Maximum number of waterfall attempts that are allowed to try and display the ad. See the Waterfall Handling Settings with Mediation section below for more details. |  |  |  |  |  |  |  |  |  |  |
+| waterfallTimeout | integer | 15000 | Maximum amount of time in milliseconds that waterfall processing of mediated ad sources is allowed to run before it stops attempting to deliver a viable ad. See the Waterfall Handling Settings with Mediation section below for more details. |  |  |  |  |  |  |  |  |  |  |
 
-
-## General Options
+## General options
 
 <table class="table">
 <thead class="thead">

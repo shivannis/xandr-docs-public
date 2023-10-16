@@ -1,18 +1,12 @@
 ---
-Title : SafeFrame API Reference
-Description : 
-SafeFrame is a managed, API-enabled iframe. It opens a line of
+title : SafeFrame API Reference
+description : SafeFrame is a managed, API-enabled iframe.
 ms.custom : seller-tag
 ---
 
 
-# SafeFrame API Reference
+# SafeFrame API reference
 
-
-
-
-
-  
 SafeFrame is a managed, API-enabled iframe. It opens a line of
 communication between the publisher page content and the
 iframe-contained external content, such as ads. It operates in a
@@ -28,107 +22,30 @@ was built with AST, but is delivered as a separate component.
 SafeFrame feature has many benefits. This includes consumer protection,
 publisher control and efficiency.
 
-
-
-
-
-## SafeFrame and Video
+## SafeFrame and video
 
 For video customers, SafeFrame is currently only supported for Outstream
 video placements. If you decide to use this functionality, make sure
 that you follow the guidelines for setting up on-page tags for outstream
-video in the Xandr Help center at
-<a href="http://docs.xandr.com" class="xref"
-target="_blank">http://docs.xandr.com</a>.
+video in the Xandr Help center at [http://docs.xandr.com](https://docs.xandr.com/)
 
-
-
-
-
-## Implementation and Functions
+## Implementation and functions
 
 - This pertains to the API that is accessible by creatives.
 - The following functions are available for communication. These
-  functions are implemented as per <a
-  href="https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf"
-  class="xref" target="_blank">IAB Spec</a>.
-  <table class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th id="ID-000001fe__entry__1" class="entry">Function</th>
-  <th id="ID-000001fe__entry__2" class="entry">Description</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.register</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">The external party
-  register function registers the SafeFrame platform to accept SafeFrame
-  external party API calls. The external party creative declares the
-  initial (collapsed) width and height. In addition to width and height,
-  this function can also define a callback function, which informs the
-  external content about various status details. </td>
-  </tr>
-  <tr class="even row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.supports</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">The supports function
-  returns an object with keys representing what features have been turned
-  on or off for a specific: Expansion, Push mode, Read cookie, Write
-  cookie container.</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.geom</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">The geom function
-  enables an exchange of geometric dimensions and location of the
-  SafeFrame container. This includes its content in relation to the
-  browser or application window, and the screen boundaries of the device
-  in which the host content is being viewed.</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.expand</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">The expand function
-  expands the SafeFrame container to the specified geometric position,
-  allowing intermediary expansions. It supports expansion in both push
-  modes.</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.collapse</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2"> The collapse function
-  collapses the SafeFrame container to the original geometric
-  position.</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.status</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2"> The status function
-  returns information about the current state of the container. States
-  are: expanded, expanding, collapsed, collapsing</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.winHasFocus</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">Returns whether or not
-  the browser window or tab that contains the SafeFrame has focus, or is
-  currently active.</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry" headers="ID-000001fe__entry__1"><code
-  class="ph codeph">$sf.ext.inViewPercentage</code></td>
-  <td class="entry" headers="ID-000001fe__entry__2">Returns the percentage
-  of area that a container is in view on the screen as a whole number
-  between 0 and 100. This is as per the <a
-  href="https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf"
-  class="xref" target="_blank">IAB Spec</a>. Please reference this for
-  additional detail.</td>
-  </tr>
-  </tbody>
-  </table>
+  functions are implemented as per [IAB Spec](https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf).
 
+| Function | Description |
+|---|---|
+| `$sf.ext.collapse` |  The collapse function collapses the SafeFrame container to the original geometric position. |
+| `$sf.ext.expand` | The expand function expands the SafeFrame container to the specified geometric position, allowing intermediary expansions. It supports expansion in both push modes. |
+| `$sf.ext.geom` | The geom function enables an exchange of geometric dimensions and location of the SafeFrame container. This includes its content in relation to the browser or application window, and the screen boundaries of the device in which the host content is being viewed. |
+| `$sf.ext.inViewPercentage` | Returns the percentage of area that a container is in view on the screen as a whole number between 0 and 100. This is as per the [IAB Spec](https://www.iab.com/wp-content/uploads/2014/08/SafeFrames_v1.1_final.pdf). Please reference this for additional detail. |
+| `$sf.ext.register` | The external party register function registers the SafeFrame platform to accept SafeFrame external party API calls. The external party creative declares the initial (collapsed) width and height. In addition to width and height, this function can also define a callback function, which informs the external content about various status details.  |
+| `$sf.ext.status` |  The status function returns information about the current state of the container. States are: expanded, expanding, collapsed, collapsing |
+| `$sf.ext.supports` | The supports function returns an object with keys representing what features have been turned on or off for a specific: Expansion, Push mode, Read cookie, Write cookie container. |
+| `$sf.ext.winHasFocus` | Returns whether or not the browser window or tab that contains the SafeFrame has focus, or is currently active. |
+  
 **apntag.defineTag({param})**
 
 Param '`enableSafeFrame`' is added to `defineTag` which delivers the
@@ -136,33 +53,10 @@ creative in SafeFrame container.
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000001fe__entry__19" class="entry">Name</th>
-<th id="ID-000001fe__entry__20" class="entry">Type</th>
-<th id="ID-000001fe__entry__21" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__19"><code
-class="ph codeph">enableSafeFrame</code></td>
-<td class="entry" headers="ID-000001fe__entry__20">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__21">Delivers the creative
-in SafeFrame container.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000001fe__entry__19"><code
-class="ph codeph">setSafeFrameConfig</code></td>
-<td class="entry" headers="ID-000001fe__entry__20">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__21">Allows configuration
-of SafeFrame, a managed iframe that provides additional consumer
-protection and publisher control beyond that provided by a standard
-iframe.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|---|---|---|
+| `enableSafeFrame` | boolean | Delivers the creative in SafeFrame container. |
+| `setSafeFrameConfig` | boolean | Allows configuration of SafeFrame, a managed iframe that provides additional consumer protection and publisher control beyond that provided by a standard iframe. |
 
 **Example**
 
@@ -192,31 +86,10 @@ expand permissions from here.
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000001fe__entry__28" class="entry">Name</th>
-<th id="ID-000001fe__entry__29" class="entry">Type</th>
-<th id="ID-000001fe__entry__30" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__28"><code
-class="ph codeph">allowExpansionByPush</code></td>
-<td class="entry" headers="ID-000001fe__entry__29">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__30">Host can toggle
-expansion by push using this param.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000001fe__entry__28"><code
-class="ph codeph">allowExpansionByOverlay</code></td>
-<td class="entry" headers="ID-000001fe__entry__29">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__30">Host can toggle
-expansion by overlay using this param.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|---|---|---|
+| `allowExpansionByPush` | boolean | Host can toggle expansion by push using this param. |
+| `allowExpansionByOverlay` | boolean | Host can toggle expansion by overlay using this param. |
 
 **Example**
 
@@ -235,24 +108,9 @@ container.
 
 **Parameter**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000001fe__entry__37" class="entry">Name</th>
-<th id="ID-000001fe__entry__38" class="entry">Type</th>
-<th id="ID-000001fe__entry__39" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__37"><code
-class="ph codeph">enableSafeFrame</code></td>
-<td class="entry" headers="ID-000001fe__entry__38">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__39">Deliver all creative
-in safeframe container.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|---|---|---|
+| `enableSafeFrame` | boolean | Deliver all creative in safeframe container. |
 
 **Example**
 
@@ -263,19 +121,10 @@ apntag.setPageOpts({
 });
 ```
 
+> [!NOTE]
+> Page level functions: All AST functions will be page-level. Creative functions: all $sf.ext functions will be called by creative.
 
-
-<b>Note:</b> Page level functions: All AST
-functions will be page-level. Creative functions: all $sf.ext functions
-will be called by creative.
-
-
-
-
-
-
-
-## Safeframe API Function Examples
+## Safeframe API function examples
 
 The following examples show how to use the API functions for SafeFrame.
 
@@ -288,40 +137,12 @@ which informs the external content about various status details. 
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000001fe__entry__43" class="entry">Name</th>
-<th id="ID-000001fe__entry__44" class="entry">Type</th>
-<th id="ID-000001fe__entry__45" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__43"><code
-class="ph codeph">width</code></td>
-<td class="entry" headers="ID-000001fe__entry__44">number</td>
-<td class="entry" headers="ID-000001fe__entry__45">Initial width of the
-creative</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000001fe__entry__43"><code
-class="ph codeph">height</code></td>
-<td class="entry" headers="ID-000001fe__entry__44">number</td>
-<td class="entry" headers="ID-000001fe__entry__45">Initial height of the
-creative</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__43"><code
-class="ph codeph">callbackFn</code></td>
-<td class="entry" headers="ID-000001fe__entry__44">function</td>
-<td class="entry" headers="ID-000001fe__entry__45">Function to be called
-on any operation.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|---|---|---|
+| `callbackFn` | function | Function to be called on any operation. |
+| `height` | number | Initial height of the creative |
+| `width` | number | Initial width of the creative |
 
-  
 **Example**
 
 ``` pre
@@ -379,11 +200,8 @@ the SafeFrame container. It returns the following object:
 This takes into account the eventual scroll position of intermediary
 same-domain iframe, when AST is itself in an iframe. 
 
-
-
-<b>Note:</b> `geom.anx` is a proprietary
-extension to the safeframe specification. 
-
+> [!NOTE]
+> `geom.anx` is a proprietary extension to the safeframe specification. 
 
 
 **$sf.ext.expand({params})**
@@ -394,54 +212,13 @@ expand left than keep 'left' : 0
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000001fe__entry__55" class="entry">Name</th>
-<th id="ID-000001fe__entry__56" class="entry">Type</th>
-<th id="ID-000001fe__entry__57" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__55"><code
-class="ph codeph">l</code></td>
-<td class="entry" headers="ID-000001fe__entry__56">number</td>
-<td class="entry" headers="ID-000001fe__entry__57">The new left
-coordinate (x) relative to the current left coordinate. </td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000001fe__entry__55"><code
-class="ph codeph">r</code></td>
-<td class="entry" headers="ID-000001fe__entry__56">number</td>
-<td class="entry" headers="ID-000001fe__entry__57">The new right
-coordinate (x+width) relative to the current right
-coordinate(x+width).</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__55"><code
-class="ph codeph">t</code></td>
-<td class="entry" headers="ID-000001fe__entry__56">number</td>
-<td class="entry" headers="ID-000001fe__entry__57">The new top
-coordinate (y) relative to the current top coordinate.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000001fe__entry__55"><code
-class="ph codeph">b</code></td>
-<td class="entry" headers="ID-000001fe__entry__56">number</td>
-<td class="entry" headers="ID-000001fe__entry__57">The new bottom
-coordinate (y+height) relative to the current top
-coordinate(y+height).</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000001fe__entry__55"><code
-class="ph codeph">push</code></td>
-<td class="entry" headers="ID-000001fe__entry__56">boolean</td>
-<td class="entry" headers="ID-000001fe__entry__57">Whether or not
-expansion should push the host content, rather than overlay.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|---|---|---|
+| `b` | number | The new bottom coordinate (y+height) relative to the current top coordinate(y+height). |
+| `l` | number | The new left coordinate (x) relative to the current left coordinate.  |
+| `push` | boolean | Whether or not expansion should push the host content, rather than overlay. |
+| `r` | number | The new right coordinate (x+width) relative to the current right coordinate(x+width). |
+| `t` | number | The new top coordinate (y) relative to the current top coordinate. |
 
 **Example**
 
@@ -477,9 +254,3 @@ Possible States are `expanded`, `collapsed`, `ready`.
 ``` pre
 $sf.ext.status();
 ```
-
-
-
-
-
-
