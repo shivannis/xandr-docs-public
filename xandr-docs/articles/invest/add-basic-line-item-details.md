@@ -17,6 +17,7 @@ You can set the name, state, and ad type, as well as associate additional insert
     - No two objects can use the same code per advertiser. For example, two line items cannot both use code "ABC."
 
 1. Set the **State**.
+
    We recommend that you set the state to **Inactive** until everything on the buyside has been set up and verified. Therefore, spending won't occur until you're ready.
     > [!NOTE]
     > If a user's settings require them to receive approval before activating a line item, a banner message will display stating that peer approval is required.
@@ -30,6 +31,7 @@ You can set the name, state, and ad type, as well as associate additional insert
     1. Click **Save**.
 
 1. Leave **Banner** selected as the **Ad Type** or select a different option.
+
    The ad type must match the creative types that you will associate with the line item. This setting determines how auction items are tracked for the line item's buying strategy, payment strategy, optimization options, creative association, and targeting options.
 
 ## Related topics
