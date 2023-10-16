@@ -6,12 +6,7 @@ description : Learn how to associate creatives with an augmented line item (ALI)
 
 # Associate creatives with a line item in Microsoft Invest
 
-From the **Creatives** section, you can do the following:
-
-- associate creatives with an augmented line item (ALI)
-- schedule when the creatives will serve
-- determine how the creatives will rotate through line item inventory
-- optionally, add creative landing page URLs.
+From the **Creatives** section, you can associate creatives with an augmented line item (ALI), schedule when the creatives will serve, determine how the creatives will rotate through line item inventory, and optionally add creative landing page URLs.
 
 1. Select a [creative rotation strategy](creative-rotation-ali.md)
     to set the rotation strategy for multiple
