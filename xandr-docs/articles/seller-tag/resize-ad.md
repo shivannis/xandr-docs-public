@@ -1,7 +1,6 @@
 ---
 title : Resize Ad
-description : Learn how this function resizes the iFrame placement for the
-specified `targetId` after the ad is rendered.
+description : Learn how this function resizes the iFrame placement for the specified `targetId` after the ad is rendered.
 ms.custom : seller-tag
 ---
 
