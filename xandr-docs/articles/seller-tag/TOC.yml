@@ -1,6 +1,6 @@
 - name: Seller Tag Developer Documentation
   href: index.yml
-- name: Getting Started 
+- name: Getting Started
   items:
     - name: Overview
       href: seller-tag.md
