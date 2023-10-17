@@ -6,7 +6,7 @@ ms.custom: seller-tag
 
 # AST video capabilities
 
-This section describes the different video capabilities that AST offers, including outstream, bannerstream and native ad options.
+This section describes the different video capabilities that AST offers, including outstream, bannerstream, and native ad options.
 
 | Section | Description |
 |---|---|
