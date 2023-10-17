@@ -141,7 +141,7 @@ video player and how the skip behavior will function. 
 
 | Option | Type | Default | Description |
 |---|---|---|---|
-| `allowOverride` | boolean | false | If set to `true`, any skip offset from a VAST 3.0 skipoffset setting will take precedence over the publisher settings, in full compliance with the [VAST 3.0 spec](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf). **Note**: In this case if set to `true`, and no `skipoffset` is defined in the Ad XML, no skip button will be shown. |
+| `allowOverride` | boolean | false | If set to `true`, any skip offset from a VAST 3.0 skipoffset setting will take precedence over the publisher settings, in full compliance with the [VAST 3.0 spec](https://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf). <br><br>**Note**: In this case if set to `true`, and no `skipoffset` is defined in the Ad XML, no skip button will be shown. |
 | `enabled` | boolean | true | Override of `skippable` options, if set to `false`, skip option will not show. |
 | `skipButtonText` | string | "SKIP" | Text displayed for the skip button. When the button is clicked the outstream ad unit is collapsed. |
 | `skipLocation` | string | "top-left" | Location of the `skipText` and `skipButtonText`. Options are `top-left` and `top-right`.<br>If set to top-left, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top left corner of the player while the adText will be displayed on the top right corner.<br>If set to top-right, the `skipText`, and subsequently `skipButtonText`, will be displayed on the top right corner of the player while the adText will be displayed on the top left corner. |
