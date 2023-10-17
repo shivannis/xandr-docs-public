@@ -71,11 +71,23 @@ landingContent:
             url: troubleshooting-creatives.md
           - text: Auditing Creatives
             url: auditing-creatives.md
+  - title: Guaranteed Outcomes
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What are Guaranteed Outcomes?
+            url: guaranteed-outcomes.md
+      - linkListType: how-to-guide
+        links:
+          - text: How Guaranteed Outcomes work?
+            url: how-guaranteed-outcomes-work.md
+          - text: Auction Mechanics
+            url: guaranteed-outcomes-auction-mechanics.md
   - title: Viewability
     linkLists:
       - linkListType: concept
         links:            
-          - text: Ad Viewability - Description of Methodology
+          - text: Ad Viewability
             url: ad-viewability-description-of-methodology-dom.md
       - linkListType: how-to-guide
         links:
