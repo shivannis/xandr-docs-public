@@ -21,29 +21,17 @@ landingContent:
         links:
           - text: Seller Tag API
             url: ast-api-reference.md
-  - title: AST Release Notes
+  - title: Release Notes
     linkLists:
       - linkListType: whats-new
         links:            
-          - text: Seller Tag Releases
+          - text: Latest Releases
             url: ast-release-history.md
       - linkListType: concept
         links:
           - text: Breaking Changes
             url: breaking-changes-ast-api
-  - title: API References
-    linkLists:
-      - linkListType: concept
-        links:            
-          - text: Overview
-            url: ast-api-reference.md
-      - linkListType: reference
-        links:
-          - text: Ad Object API
-            url: ad-object-api.md
-          - text: Get Tag 
-            url: get-tag.md
-  - title: AST Video Capabilities
+  - title: Video Capabilities
     linkLists:
       - linkListType: concept
         links:            
@@ -55,3 +43,33 @@ landingContent:
             url: set-up-on-page-tags-for-outstream-video.md
           - text: Set Up On-Page Tags for Bannerstream Video
             url: set-up-on-page-tags-for-bannerstream-video.md
+      - linkListType: tutorial
+        links:
+          - text: Publisher Page-Level Options for Outstream
+            url: publisher-page-level-options-for-outstream.md
+          - text: Native Video with Seller Tag
+            url: native-video-with-ast.md
+          - text: Native Ad Video Player
+            url: native-ad-video-player.md
+            
+  - title: API References
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Seller Tag API Overview
+            url: ast-api-reference.md
+      - linkListType: reference
+        links:
+          - text: Ad Object API
+            url: ad-object-api.md
+          - text: Get Tag 
+            url: get-tag.md
+          - text: Resize Ad
+            url: resize-ad.md
+          - text: Set Page Options
+            url: set-page-options.md
+          - text: User Agent Client Hints
+            url: ast-client-hints-for-adserver.md
+          - text: User Sync
+            url: user-sync.md
+  
