@@ -1,5 +1,5 @@
 ---
-Title: Set Page Options
+title: Set Page Options
 description: Use the set page options function to set page-level options placements. You can use various parameters as arguments in this function.
 ms.custom: seller-tag
 ---
