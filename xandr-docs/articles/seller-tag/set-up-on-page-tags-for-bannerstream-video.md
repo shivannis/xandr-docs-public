@@ -1,50 +1,23 @@
 ---
-Title : Set Up On-Page Tags for Bannerstream Video
-Description : Xandr Bannerstream Video
-uses Xandr's seller tag (AST), an asynchronous
-JavaScript tag that runs in the header of the page. These tags are
-ms.custom : seller-tag
+title: Set Up On-Page Tags for Bannerstream Video
+description: This article explains about Bannerstream video. Bannerstream video uses seller tag (AST), an asynchronous JavaScript tag that runs in the header of the page.
+ms.custom: seller-tag
 ---
 
+# Set up on-page tags for Bannerstream video
 
-# Set Up On-Page Tags for Bannerstream Video
+Xandr Bannerstream Video uses Xandr's seller tag (AST), an asynchronous JavaScript tag that runs in the header of the page. These tags are defined and loaded in the page header and are activated by "showing" the tags in the page body.
 
+> [!TIP]
+> For select use cases, AST can also be defined, loaded, and shown in the page body.
 
+## How it works
 
-Xandr Bannerstream Video
-uses Xandr's seller tag (AST), an asynchronous
-JavaScript tag that runs in the header of the page. These tags are
-defined and loaded in the page header and are activated by "showing" the
-tags in the page body.
-
-
-
-<b>Tip:</b> For select use cases, AST can also
-be defined, loaded, and shown in the page body.
-
-
-
-
-
-## How It Works
-
-An in-banner video ad unit can be added to a web page in any place where
-a regular banner might be displayed. The Bannerstream video ad unit is
-included as a `<div>` element in the page body. The `<div>` element in
-the page body refers to the video ad unit using a Target
-Identifier which corresponds to a definition of that Target
-Identifier in the page header.
-
-
-
-
+An in-banner video ad unit can be added to a web page in any place where a regular banner might be displayed. The Bannerstream video ad unit is included as a `<div>` element in the page body. The `<div>` element in the page body refers to the video ad unit using a Target Identifier which corresponds to a definition of that Target Identifier in the page header.
 
 ## Example
 
-Using AST, you can define the tag (placement) you intend to call. When
-defining a in-banner video placement, there are additional options that
-you can pass to specify how you would like the player to appear and
-behave on your page. A sample call to `defineTag` is shown here:
+Using AST, you can define the tag (placement) you intend to call. When defining a in-banner video placement, there are additional options that you can pass to specify how you would like the player to appear and behave on your page. A sample call to `defineTag` is shown here:
 
 ``` pre
     apntag.defineTag({
@@ -91,9 +64,3 @@ behave on your page. A sample call to `defineTag` is shown here:
         }
     });
 ```
-
-
-
-
-
-
