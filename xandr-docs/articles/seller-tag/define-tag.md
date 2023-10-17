@@ -1,6 +1,6 @@
 ---
 title: Define Tag
-description: In this article, learn how the Define tag is utilized to establish parameters for an ad placement.
+description: In this article, learn how the Define Tag is utilized to establish parameters for an ad placement.
 ms.custom: seller-tag
 ---
 
@@ -46,7 +46,7 @@ The parameters listed below can be sent as arguments in the function.
 | `initCollapsed` | Object | Initializes the ad iframe at zero size. The only option for the `expandBy` field is creative. This setting gives the creative the responsibility of expanding the ad slot by calling resizeAd function. |
 | `prebid` | Boolean | Indicates that the tag being requested is for a header bidding or prebid auction. This will return the cpm on the adObj `adObj.cpm`. However, the ad will not be rendered. It is assumed that another ad server will render the ad if this bid wins. |
 | `usePmtRule` | Boolean | Indicates whether payment rules should be applied to a bid before sending the bid to the ad server. Default value is false. |
-| `resizeAdParentDiv` | Boolean | Setting this property to true will force the Parent Div container of the Ad creative to resize. This is particularly useful when resizing banner safeframe creatives when the parent div doesn't resize in some environments. By default, this option is turned off. <br><br>**Note:** The value set here can be overridden during a resizeAd call, for more information, see resizeAd page. |
+| `resizeAdParentDiv` | Boolean | Setting this property to true will force the Parent Div container of the Ad creative to resize. This is particularly useful when resizing banner safeframe creatives when the parent div doesn't resize in some environments. By default, this option is turned off. <br><br>**Note:** The value set here can be overridden during a resizeAd call. For more information, see resizeAd page. |
 | `globalPlacementId` | String | Provides a way for publishers to specify their own global publisher identifier to represent the placement. |
 | `renderingManagement` | Object | An object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. These options also be set at the setPageOpts level to apply to all ad slots on the page.<br> - **`insertWrapperDiv`**: When enabled, AST adds an additional div element between the main AST `utif` div and the AST iframe (or safeframe) container for all ad slots. This option is useful for publishers who wish to customize or control the contents of the ad container further without modifying the main div container.<br>**Default:** false<br><br> - **`sandboxAdIframe`**: When enabled, AST adds and populates the HTML sandbox attribute for the AST iframe (or safeframe) container for all ad slots using the values from the appropriate `sandboxAttributes` parameter.<br>**Default:** false<br><br> - **`sandboxAttributes`**: The values of these attributes are applied to the HTML sandbox attribute for the AST iframe (or safeframe) ad containers when the appropriate `andboxAdIframe` setting is set to true. For suitable values to include in this array, please see the HTML sandbox documentation. If enabled, it is advised to include at least `allow-same-origin` and `allow-scripts` to ensure that the contents of the iframe may function properly (omitting these values may result in some warnings in the browser console). |
 
@@ -81,7 +81,9 @@ aspect_ratios: [
 ```
 
 Where field marked `required: true` will be required on the bid response object.
+
 If `sizes` is specified, the image response must exactly match the given width and height dimensions.
+
 If `aspect_ratios` are specified as an alternative to sizes, the image must at least match the minimum height/width dimensions and `aspect_ratios` value defined.
 
 **icon**
