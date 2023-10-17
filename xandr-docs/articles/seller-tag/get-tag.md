@@ -1,21 +1,13 @@
 ---
-Title : Get Tag
-Description : This function returns an object containing all tag objects that were
-created by defineTag. The method accepts one optional parameter,
-ms.custom : seller-tag
+title: Get Tag
+description: In this article, learn about the Get Tag function and its parameter with a detailed example.
+ms.custom: seller-tag
 ---
-
 
 # Get Tag
 
-
-
-
-
-This function returns an object containing all tag objects that were
-created by defineTag. The method accepts one optional parameter,
-the `targetId` of the ad slot on page. Passing in the `targetId` will
-return the tag object with that ID.
+This function returns an object containing all tag objects that were created by `defineTag`. The method accepts one optional parameter,
+the `targetId` of the ad slot on page. Passing in the `targetId` will return the tag object with that ID.
 
 ``` pre
 getTag('targetId1')
@@ -23,28 +15,9 @@ getTag('targetId1')
 
 The parameters listed below can be sent as arguments in the function.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000158c__entry__1" class="entry">Parameter</th>
-<th id="ID-0000158c__entry__2" class="entry">Type</th>
-<th id="ID-0000158c__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-0000158c__entry__1"><code
-class="ph codeph">targetId</code></td>
-<td class="entry" headers="ID-0000158c__entry__2">string</td>
-<td class="entry" headers="ID-0000158c__entry__3">The unique identifier
-of a specific ad slot. It is an optional parameter.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Parameter | Type | Description |
+|:---|:---|:---|
+| `targetId` | string | The unique identifier of a specific ad slot. It is an optional parameter. |
 
 ## Example
 
@@ -53,11 +26,7 @@ apntag.getTag();
 apntag.getTag('apn_ad_slot_1');
 ```
 
-
-
-
-
-## Example - Returned Tag Object
+## Example - Returned Tag object
 
 The returned tag object looks like this:
 
@@ -84,9 +53,3 @@ The returned tag object looks like this:
   "uuid": "63a12376-c123-4212-b123-2dde8b12ab6e"
 } 
 ```
-
-
-
-
-
-
