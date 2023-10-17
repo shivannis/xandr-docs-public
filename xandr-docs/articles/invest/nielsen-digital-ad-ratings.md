@@ -1,10 +1,10 @@
 ---
-title : Microsoft Invest - Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+title : Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
 description : Learn how Nielsen Digital Ad Ratings (DAR) can be used to measure line item's performance, demographic tracking for ads served on connected devices (Roku, Amazon, Samsung, and Hulu) and tracking through CTV partners.
 ---
 
 
-# Microsoft Invest - Measuring demographic targeting success with Nielsen Digital Ad Ratings  
+# Measuring demographic targeting success with Nielsen Digital Ad Ratings  
 
 <div id="nielsen-digital-ad-ratings__conbody_pvq_xhj_qmb"
 class="body conbody">

@@ -107,11 +107,11 @@ Xandr platform, click the
 **Save** button. The pixel is then added
 to the Conversion Pixels list, where you can add it to your line item.
 
-> [!TIP]
-> The conversion pixel can be attached to a line item for valuation.
+ > [!TIP]
+ > The conversion pixel can be attached to a line item for valuation.
 
-> [!NOTE]
-> Conversion pixels show as **Paused** in the User Interface when they are not attached to a line item, or the attached line item is inactive. This is an indicator that the pixel will not be attributing any conversions. It is not attached to an object that those conversions can be attached. Once the pixel is attached to an active line item, the indicator will switch to **Active**. This does not impede its functionality, because the pixel state (in the API) is still active.
+ > [!NOTE]
+ > Conversion pixels show as **Paused** in the User Interface when they are not attached to a line item, or the attached line item is inactive. This is an indicator that the pixel will not be attributing any conversions. It is not attached to an object that those conversions can be attached. Once the pixel is attached to an active line item, the indicator will switch to **Active**. This does not impede its functionality, because the pixel state (in the API) is still active.
  
 ## Related topics
 

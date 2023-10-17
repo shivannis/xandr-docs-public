@@ -4,7 +4,7 @@ description : Learn about planner visualizations and how it can help your media 
 ---
 
 
-# Microsoft Invest - planner analytics
+# Microsoft Invest - Planner analytics
 
 The Planner visualizations show a summary and visualization of your
 projected line item performance for a plan when you select it from the

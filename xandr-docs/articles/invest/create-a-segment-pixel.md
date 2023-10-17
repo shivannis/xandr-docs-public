@@ -4,7 +4,7 @@ description : Learn how a segment pixel marks a user as belonging to a certain t
 ---
 
 
-# Create a segment pixel in Microsoft Invest
+# Microsoft Invest - Create a segment pixel 
 
 A segment pixel marks a user as belonging to a certain target audience
 based on the web pages they visit, the actions they take (such as making
@@ -16,7 +16,7 @@ Navigate to the **Segments** screen
 (**Audiences** \>  **Segments**).
 
 > [!IMPORTANT]
-> Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](/xandr-api/page/segment-service).
+> Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](../digital-platform-api/segment-service.md).
 
 Click the **+ New** button. This opens the
 **Create New Segment** window.

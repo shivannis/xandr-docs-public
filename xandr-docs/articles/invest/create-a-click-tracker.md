@@ -1,10 +1,10 @@
 ---
-title : Monetize Invest - Create a Click Tracker
+title : Microsoft Invest - Create a Click Tracker
 description : Learn how to create and export a click tracker for use with creatives served by an external ad server. 
 ---
 
 
-# Create a click tracker in Monetize Invest
+# Microsoft Invest - Create a click tracker 
 
 Click trackers are used to track user clicks on creatives served by
 off-platform (non-Xandr) ad servers.
