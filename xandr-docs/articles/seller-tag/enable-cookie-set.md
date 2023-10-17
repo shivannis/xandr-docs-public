@@ -1,6 +1,6 @@
 ---
 title: Enable Cookie Set
-description: In this article, learn about the Enable Cookie Set function that establishes cookies through link redirects. Currently, it's compatible only with Safari browsers.
+description: In this article, learn about the Enable Cookie Set function that establishes cookies through link redirects. Currently, it's compatible only with Safari browser.
 ms.custom: seller-tag
 ---
 
