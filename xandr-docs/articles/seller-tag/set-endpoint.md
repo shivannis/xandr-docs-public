@@ -1,16 +1,11 @@
 ---
-Title : Set Endpoint
-Description : This function sets the Impression Bus endpoint to which ad requests are
-made.
+title : Set Endpoint
+D=description : This function sets the Impression Bus endpoint to which ad requests are made.
 ms.custom : seller-tag
 ---
 
 
 # Set Endpoint
-
-
-
-
 
 This function sets the Impression Bus endpoint to which ad requests are
 made.
@@ -21,74 +16,16 @@ setEndpoint('endpoint', true|false)
 
 The parameter listed below can be sent as an argument in the function.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000186d__entry__1"
-class="entry colsep-1 rowsep-1">Parameter</th>
-<th id="ID-0000186d__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000186d__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000186d__entry__1"><code
-class="ph codeph">endpoint</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000186d__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000186d__entry__3">Specifies a URL endpoint.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000186d__entry__1"><code
-class="ph codeph">freezeIbUrl</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000186d__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000186d__entry__3">An
-optional setting. Default is <strong>false</strong>.
-<p>When set to <strong>true</strong>, AST will not attempt to switch the
-Impression Bus domain to normal or simple domain as per consent
-information present in the auction.</p>
-<p>When set to <strong>false</strong>, AST will switch to normal or
-simple domain as appropriate.</p>
-
-<b>Note:</b> See <a
-href="set-up-placements-with-ast.md"
-class="xref" target="_blank">Set Up Placements with AST</a> for more
-details about the simple domain and when it should be used.
-
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Parameter | Type | Description |
+|---|---|---|
+| `endpoint` | string | Specifies a URL endpoint. |
+| `freezeIbUrl` | Boolean | An optional setting. Default is **false**.<br>When set to **true**, AST will not attempt to switch the Impression Bus domain to normal or simple domain as per consent information present in the auction.<br>When set to **false**, AST will switch to normal or simple domain as appropriate.<br>**Note**: See [Set Up Placements with AST](set-up-placements-with-ast.md) for more details about the simple domain and when it should be used. |
 
 ## Example
-
-
 
 ``` pre
 apntag.setEndpoint('ib.adnxs-simple.com', true);
 ```
 
-
-
-<b>Note:</b> Clients who want to test the AST
-tag against non-production data can use the example above to point to
-our client testing environment.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> Clients who want to test the AST tag against non-production data can use the example above to point to our client testing environment.

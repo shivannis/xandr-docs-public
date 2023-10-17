@@ -6,7 +6,7 @@ ms.custom : seller-tag
 ---
 
 
-# Resize ad
+# Resize Ad
 
 This function resizes the iFrame placement for the
 specified `targetId` after the ad is rendered. If called before the ad

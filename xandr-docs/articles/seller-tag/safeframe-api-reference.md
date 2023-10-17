@@ -46,7 +46,7 @@ video in the Xandr Help center at [http://docs.xandr.com](https://docs.xandr.com
 | `$sf.ext.supports` | The supports function returns an object with keys representing what features have been turned on or off for a specific: Expansion, Push mode, Read cookie, Write cookie container. |
 | `$sf.ext.winHasFocus` | Returns whether or not the browser window or tab that contains the SafeFrame has focus, or is currently active. |
   
-**apntag.defineTag({param})**
+### apntag.defineTag({param})
 
 Param '`enableSafeFrame`' is added to `defineTag` which delivers the
 creative in SafeFrame container.
@@ -76,7 +76,7 @@ var tag = apntag.defineTag({
         });
 ```
 
-**apntag.setSafeFrameConfig({param})**
+### apntag.setSafeFrameConfig({param})
 
 This function can be used to configure SafeFrame. We have given two
 options, `allowExpansionByPush` and `allowExpansionByOverlay` for
@@ -100,7 +100,7 @@ apntag.setSafeFrameConfig({
 });
 ```
 
-**apntag.setPageOpts({param})**
+### apntag.setPageOpts({param})
 
 Parameter `enableSafeFrame` is added to `setPageOpts` function. This
 parameter enables SafeFrame and serves all the all ads in SafeFrame
@@ -156,8 +156,7 @@ var statusUpdate = function(status) {
 $sf.ext.register('300','250',statusUpdate);
 ```
 
-  
-**$sf.ext.supports()**
+### $sf.ext.supports()
 
 This function returns an object with keys representing which features
 have been turned on or off for this particular container.
@@ -174,8 +173,7 @@ if(supports['exp-push']) {
 }
 ```
 
-  
-**$sf.ext.geom()**
+### $sf.ext.geom()
 
 This function gets the space available around the `targetDiv` to expand
 the SafeFrame container. It returns the following object:
@@ -203,8 +201,7 @@ same-domain iframe, when AST is itself in an iframe. 
 > [!NOTE]
 > `geom.anx` is a proprietary extension to the safeframe specification. 
 
-
-**$sf.ext.expand({params})**
+### $sf.ext.expand({params})
 
 This function expands the SafeFrame container to the specified geometric
 position. All the params are compulsory, so if you are not going to
@@ -232,8 +229,7 @@ $sf.ext.expand({
 });
 ```
 
-  
-**$sf.ext.collapse()**
+### $sf.ext.collapse()
 
 This function collapses the SafeFrame container to the original
 geometric position.
