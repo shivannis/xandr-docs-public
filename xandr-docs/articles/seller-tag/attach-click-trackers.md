@@ -1,19 +1,12 @@
 ---
-Title : Attach Click Trackers
-Description : This function adds a click event listener to an HTML element that fires
-click trackers for native ad units.
-ms.custom : seller-tag
+title: Attach Click Trackers
+description: In this article, learn what the attachClickTrackers function is and the parameters that can be added to this function.
+ms.custom: seller-tag
 ---
-
 
 # Attach Click Trackers
 
-
-
-
-
-This function adds a click event listener to an HTML element that fires
-click trackers for native ad units.
+This function adds a click event listener to an HTML element that fires click trackers for native ad units.
 
 ``` pre
 attachClickTrackers(adObj,'htmlId');
@@ -21,35 +14,10 @@ attachClickTrackers(adObj,'htmlId');
 
 The parameters listed below can be sent as arguments in the function.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000115d__entry__1" class="entry">Parameter</th>
-<th id="ID-0000115d__entry__2" class="entry">Type</th>
-<th id="ID-0000115d__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-0000115d__entry__1"><code
-class="ph codeph">adObj</code></td>
-<td class="entry" headers="ID-0000115d__entry__2">object</td>
-<td class="entry" headers="ID-0000115d__entry__3">The native ad object.
-(See <a href="ad-object-api.md" class="xref">Ad Object API</a>.)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000115d__entry__1"><code
-class="ph codeph">adObj</code></td>
-<td class="entry" headers="ID-0000115d__entry__2">number</td>
-<td class="entry" headers="ID-0000115d__entry__3">The HTML element to
-which the click event listener will be attached.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Parameter | Type | Description |
+|---|---|---|
+| `adObj` | object | The native ad object. (See [Ad Object API](ad-object-api.md).) |
+| `adObj` | number | The HTML element to which the click event listener will be attached. |
 
 ## Example
 
@@ -58,9 +26,3 @@ apntag.onEvent('adLoaded', function(tag) {
     apntag.attachClickTrackers(tag, 'nativeDivId');
 });
 ```
-
-
-
-
-
-

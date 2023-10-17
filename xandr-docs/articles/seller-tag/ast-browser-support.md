@@ -1,104 +1,17 @@
 ---
-Title : AST Browser Support
-Description : The following browsers and versions are currently supported by AST.
-ms.custom : seller-tag
+title: AST Browser Support
+description: In this article, find the browsers and versions currently supported by AST.
+ms.custom: seller-tag
 ---
 
-
-# AST Browser Support
-
-
+# AST browser support
 
 The following browsers and versions are currently supported by AST.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000143__entry__1" class="entry">Browser</th>
-<th id="ID-00000143__entry__2" class="entry">Supported Versions</th>
-<th id="ID-00000143__entry__3" class="entry">Operating Systems</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000143__entry__1">Chrome</td>
-<td class="entry" headers="ID-00000143__entry__2">Last two major
-versions</td>
-<td class="entry" headers="ID-00000143__entry__3"><ul>
-<li>Windows XP</li>
-<li>Windows 7</li>
-<li>Windows 8.1</li>
-<li>Windows 10</li>
-<li>Mac Sierra</li>
-<li>Mac High Sierra</li>
-<li>Mac Mojave (Liberty)</li>
-<li>Mac Catalina (Jazz)</li>
-<li>Mac Big Sur (GoldenGate) </li>
-<li>Mac Monterey (Star)</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000143__entry__1">Edge</td>
-<td class="entry" headers="ID-00000143__entry__2"><ul>
-<li>15</li>
-<li>16</li>
-</ul></td>
-<td class="entry" headers="ID-00000143__entry__3"><ul>
-<li>Windows 10</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000143__entry__1">Firefox</td>
-<td class="entry" headers="ID-00000143__entry__2">Last two major
-versions</td>
-<td class="entry" headers="ID-00000143__entry__3"><ul>
-<li>Windows XP</li>
-<li>Windows 7</li>
-<li>Windows 8.1</li>
-<li>Windows 10</li>
-<li>Mac Sierra</li>
-<li>Mac High Sierra</li>
-<li>Mac Mojave (Liberty)</li>
-<li>Mac Catalina (Jazz)</li>
-<li>Mac Big Sur (GoldenGate) </li>
-<li>Mac Monterey (Star)</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000143__entry__1">Internet Explorer</td>
-<td class="entry" headers="ID-00000143__entry__2">11</td>
-<td class="entry" headers="ID-00000143__entry__3"><ul>
-<li>Windows 7</li>
-<li>Windows 8.1</li>
-<li>Windows 10</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000143__entry__1">Safari</td>
-<td class="entry" headers="ID-00000143__entry__2"><ul>
-<li>8.0</li>
-<li>9.1</li>
-<li>10.1</li>
-<li>11.1</li>
-<li>12.0</li>
-<li>13.0</li>
-<li>14.0</li>
-<li>15.0</li>
-</ul></td>
-<td class="entry" headers="ID-00000143__entry__3"><ul>
-<li>Mac Yosemite</li>
-<li>Mac El Capitan</li>
-<li>Mac Sierra</li>
-<li>Mac High Sierra</li>
-<li>Mac Mojave (Liberty)</li>
-<li>Mac Catalina (Jazz)</li>
-<li>Mac Big Sur (GoldenGate) </li>
-<li>Mac Monterey (Star)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Browser | Supported Versions | Operating Systems |
+|:--|:--|:--|
+| Chrome | Last two major versions | - Windows XP <br> - Windows 7 <br> - Windows 8.1 <br> - Windows 10 <br> - Mac Sierra <br> - Mac High Sierra <br> - Mac Mojave (Liberty) <br> - Mac Catalina (Jazz) <br> - Mac Big Sur (GoldenGate)  <br> - Mac Monterey (Star) |
+| Edge | - 15 <br> - 16 | Windows 10 |
+| Firefox | Last two major versions | - Windows XP <br> - Windows 7 <br> - Windows 8.1 <br> - Windows 10 <br> - Mac Sierra <br> - Mac High Sierra <br> - Mac Mojave (Liberty) <br> - Mac Catalina (Jazz) <br> - Mac Big Sur (GoldenGate)  <br> - Mac Monterey (Star) |
+| Internet Explorer | 11 | - Windows 7 <br> - Windows 8.1 <br> - Windows 10 |
+| Safari | - 8.0 <br> - 9.1 <br> - 10.1 <br> - 11.1 <br> - 12.0 <br> - 13.0 <br> - 14.0 <br> - 15.0 | - Mac Yosemite <br> - Mac El Capitan <br> - Mac Sierra <br> - Mac High Sierra <br> - Mac Mojave (Liberty) <br> - Mac Catalina (Jazz) <br> - Mac Big Sur (GoldenGate)  <br> - Mac Monterey (Star) |
