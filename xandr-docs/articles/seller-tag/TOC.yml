@@ -38,7 +38,7 @@
   items:
     - name: Overview
       href: ast-api-reference.md
-    - name: Ad Object API view
+    - name: Ad Object API
       href: ad-object-api.md
     - name: Attach Click Trackers
       href: attach-click-trackers.md
