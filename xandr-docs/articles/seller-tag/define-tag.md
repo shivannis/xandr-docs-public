@@ -6,7 +6,7 @@ ms.custom: seller-tag
 
 # Define Tag
 
-This function defines parameters for an ad placement. Note that no more than 12 placements should be specified per page. Returns a `Tag` `object` that can be used later after defining.
+This function defines parameters for an ad placement. Note that no more than 12 placements should be specified per page. Returns a `Tag` `object` that can be used later after defining. 
 
 ``` pre
 defineTag({params})
