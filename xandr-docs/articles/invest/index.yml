@@ -47,7 +47,7 @@ landingContent:
             url: basic-buy-side-setup-procedures.md
           - text: Working with Advertisers
             url: working-with-advertisers.md
-  - title: ALI Optimization Guide
+  - title: ALI Optimization
     linkLists:
       - linkListType: concept
         links:            
@@ -107,3 +107,15 @@ landingContent:
             url: create-and-activate-a-plan.md
           - text: Planner Troubleshooting
             url: planner-troubleshooting.md
+  - title: Reporting
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Reporting Concepts
+            url: dimensions-metrics-filtering-and-grouping.md
+      - linkListType: how-to-guide
+        links:
+          - text: Report Throttling 
+            url: report-throttling.md
+          - text: Impression Counting
+            url: impression-counting.md
