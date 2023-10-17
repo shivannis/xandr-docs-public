@@ -1,7 +1,6 @@
 ---
 title : Off Event
-description : Learn how this function clears the event listeners on the
-given `eventType` and `targetId`.
+description : Learn how this function clears the event listeners on the given `eventType` and `targetId`.
 ms.custom : seller-tag
 ---
 
