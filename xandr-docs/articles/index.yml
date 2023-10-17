@@ -99,7 +99,7 @@ additionalContent:
         # Card
         - title: Seller Tag
           summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
-          url: getting-started/index.yml
+          url: seller-tag/index.yml
         # Card
         - title: Mobile SDK
           summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
