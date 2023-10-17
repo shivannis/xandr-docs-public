@@ -13,4 +13,4 @@ This section describes the different video capabilities that AST offers, includi
 | [Set Up On-Page Tags for Outstream Video](set-up-on-page-tags-for-outstream-video.md) | How to set up AST for outstream video. |
 | [Native Ad Video](native-video-with-ast.md) | How to set up AST for native ad video. |
 | [Set Up On-Page Tags for Bannerstream Video](set-up-on-page-tags-for-bannerstream-video.md) | How to set up AST for bannerstream video. |
-| [Publisher Page-Level Options for Outstream](publisher-page-level-options-for-outstream) | A reference for properties available for different outstream video scenarios. |
+| [Publisher Page-Level Options for Outstream](publisher-page-level-options-for-outstream.md) | A reference for properties available for different outstream video scenarios. |
