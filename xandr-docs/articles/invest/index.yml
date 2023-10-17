@@ -35,6 +35,42 @@ landingContent:
         links:
           - text: Working with Roles
             url: getting-started-with-roles.md
+  - title: Buying Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Ad Buying
+            url: ad-buying-with-xandr.md
+      - linkListType: how-to-guide
+        links:
+          - text: Basic Buy Side Setup Procedures
+            url: basic-buy-side-setup-procedures.md
+          - text: Working with Advertisers
+            url: working-with-advertisers.md
+  - title: ALI Optimization Guide
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is ALI Optimization?
+            url: optimization-guide-ali.md
+      - linkListType: how-to-guide
+        links:
+          - text: Adaptive Pacing
+            url: adaptive-pacing.md
+          - text: Improve Click-Through Rate (CTR)
+            url: ways-to-improve-ctr-performance.md
+  - title: Creatives
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Working with Creatives
+            url: working-with-creatives.md
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshooting Creatives
+            url: troubleshooting-creatives.md
+          - text: Auditing Creatives
+            url: auditing-creatives.md
   - title: Viewability
     linkLists:
       - linkListType: concept
