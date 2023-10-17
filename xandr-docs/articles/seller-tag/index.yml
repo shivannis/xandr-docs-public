@@ -30,7 +30,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Breaking Changes
-            url: breaking-changes-ast-api
+            url: breaking-changes-ast-api.md
   - title: Video Capabilities
     linkLists:
       - linkListType: concept
