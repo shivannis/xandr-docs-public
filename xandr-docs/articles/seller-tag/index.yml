@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 
-title: Microsoft Seller-Tag Developer Documentation
-summary: Welcome to Microsoft Seller-Tag Developer Documentation! All the information you need to work in Seller-Tag is right here. You can simply search for what you need, or click one of the tiles below.
+title: Seller Tag Developer Documentation
+summary: Welcome to Seller Tag Developer Documentation! All the information you need to work in Seller-Tag is right here. You can simply search for what you need, or click one of the tiles below.
 metadata:
-  title: Microsoft Seller-Tag Developer Documentation
+  title: Seller Tag Developer Documentation
   description: Discover various modules of Seller Tag
   ms.topic: landing-page
   ms.author: shivanni srinivasan
@@ -15,9 +15,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About Seller Tag
+          - text: Overview
             url: seller-tag.md     
-          - text: Benefits of AST 
+          - text: Benefits of Seller Tag 
             url: benefits-of-ast.md
       - linkListType: reference
         links:
