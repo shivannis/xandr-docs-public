@@ -57,8 +57,7 @@ The AST Toolkit will provide the following data for each ad slot to the user:
 - Link to UI Ad Quality screen for profile
 - Link to Creative Preview
 
-  AST Toolkit requires that `member` is set
-  in `setPageOpts()` or `defineTag()`.
+  AST Toolkit requires that `member` is set in `setPageOpts()` or `defineTag()`.
 
 ## Functions
 
