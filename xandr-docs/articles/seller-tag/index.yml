@@ -1,0 +1,59 @@
+### YamlMime:Landing
+
+title: Seller Tag Developer Documentation
+summary: Welcome to Seller Tag Developer Documentation! All the information you need to work in Seller-Tag is right here. You can simply search for what you need, or click one of the tiles below.
+metadata:
+  title: Seller Tag Developer Documentation
+  description: Discover various modules of Seller Tag
+  ms.topic: landing-page
+  ms.author: shivanni srinivasan
+  ms.service: app-service
+  ms.date: 16/10/2023
+
+landingContent:
+  - title: Lets Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: seller-tag.md     
+          - text: Benefits of Seller Tag 
+            url: benefits-of-ast.md
+      - linkListType: reference
+        links:
+          - text: Seller Tag API
+            url: ast-api-reference.md
+  - title: AST Release Notes
+    linkLists:
+      - linkListType: get-started
+        links:            
+          - text: Breaking Changes - AST API
+            url: breaking-changes-ast-api.md
+      - linkListType: how-to-guide
+        links:
+          - text: AST Release History
+            url: ast-release-history.md
+  - title: AST API Reference
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: About AST API Reference
+            url: ast-api-reference.md
+      - linkListType: reference
+        links:
+          - text: Ad Object API
+            url: ad-object-api.md
+          - text: Attach Click Trackers 
+            url: attach-click-trackers.md
+  - title: AST Video Capabilities
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Different video capabilities offered by AST
+            url: ast-video-capabilities.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set Up On-Page Tags for Outstream Video
+            url: set-up-on-page-tags-for-outstream-video.md
+          - text: Set Up On-Page Tags for Bannerstream Video
+            url: set-up-on-page-tags-for-bannerstream-video.md
