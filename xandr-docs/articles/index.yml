@@ -102,11 +102,11 @@ additionalContent:
           url: getting-started/index.yml
         # Card
         - title: Mobile SDK
-          summary: Developer documentation for app developers to facilitate a fast, convenient way to monetize their apps
+          summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
           url: getting-started/index.yml
         # Card
         - title: Log Level Data Feeds
-          summary: Reference documentation for log level data feeds that helps to build custom reporting and to conduct in-depth analysis that requires event-level granularity
+          summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
           url: getting-started/index.yml
         # Card
         - title: Supply Partners
