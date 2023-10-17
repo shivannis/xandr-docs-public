@@ -22,7 +22,7 @@ The following pages provide an overview of AST, how to implement it, an
 API reference and using AST in specific situations.
 
 > [!NOTE]
-> - AST will work with AMP HTML markup. The library currently only supports banner ads. Click here for detailed information: [https://github.com/ampproject/amphtml/blob/main/ads/appnexus.md](https://github.com/ampproject/amphtml/blob/main/ads/appnexus.md)
+> - AST will work with AMP HTML markup. The library currently only supports banner ads. Click here for detailed information: [https://github.com/ampproject/amphtml/blob/main/ads/appnexus.md](https://github.com/ampproject/amphtml/blob/main/ads/vendors/appnexus.md)
 > - AST uses the "count on begin to render" methodology to track impressions.
 
 | Sections | Description |
