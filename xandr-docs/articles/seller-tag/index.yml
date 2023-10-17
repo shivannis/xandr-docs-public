@@ -16,40 +16,38 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview
-            url: seller-tag.md     
-          - text: Benefits of Seller Tag 
-            url: benefits-of-ast.md
+            url: seller-tag.md
       - linkListType: reference
         links:
           - text: Seller Tag API
             url: ast-api-reference.md
   - title: AST Release Notes
     linkLists:
-      - linkListType: get-started
+      - linkListType: whats-new
         links:            
-          - text: Breaking Changes - AST API
-            url: breaking-changes-ast-api.md
-      - linkListType: how-to-guide
-        links:
-          - text: AST Release History
+          - text: Seller Tag Releases
             url: ast-release-history.md
-  - title: AST API Reference
+      - linkListType: concept
+        links:
+          - text: Breaking Changes
+            url: breaking-changes-ast-api
+  - title: API References
     linkLists:
       - linkListType: concept
         links:            
-          - text: About AST API Reference
+          - text: Overview
             url: ast-api-reference.md
       - linkListType: reference
         links:
           - text: Ad Object API
             url: ad-object-api.md
-          - text: Attach Click Trackers 
-            url: attach-click-trackers.md
+          - text: Get Tag 
+            url: get-tag.md
   - title: AST Video Capabilities
     linkLists:
       - linkListType: concept
         links:            
-          - text: Different video capabilities offered by AST
+          - text: Overview
             url: ast-video-capabilities.md
       - linkListType: how-to-guide
         links:
