@@ -4,7 +4,7 @@ description: Use this function to indicate that an ad placement has been fully d
 ms.custom: seller-tag
 ---
 
-# Show Tag
+# Show tag
 
 This function indicates that an ad placement has been fully defined and is ready for an ad to be shown in its space. Once this method is called, the impression will be marked as transacted and will be considered an "impression" for accounting purposes.
 
