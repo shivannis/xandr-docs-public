@@ -4,13 +4,13 @@
   items:
     - name: Overview
       href: seller-tag.md
-    - name: Benefits of AST
+    - name: Benefits
       href: benefits-of-ast.md
-    - name: Set Up Placements with AST
+    - name: Set Up Placements
       href: set-up-placements-with-ast.md
-    - name: Set Up AST Tags for Native Ad Types
+    - name: Set Up Seller Tags for Native Ad Types
       href: set-up-ast-tags-for-native-ad-types.md
-    - name: AST Browser Support
+    - name: Browser Support
       href: ast-browser-support.md
     - name: SafeFrame API Reference
       href: set-safeframe-configuration.md
@@ -20,7 +20,7 @@
       href: ast-release-history.md
     - name : AST API Breaking Changes
       href: breaking-changes-ast-api.md
-- name: AST Video Capabilities
+- name: Video Capabilities
   items: 
     - name: Overview
       href: ast-video-capabilities.md
@@ -34,7 +34,7 @@
       href: native-video-with-ast.md
     - name: Native Ad Video Player
       href: native-ad-video-player.md
-- name: AST API References
+- name: API References
   items:
     - name: Overview
       href: ast-api-reference.md
