@@ -81,5 +81,5 @@ The AST Toolkit will provide the following data for each ad slot to the user:
 - [Set Endpoint](set-endpoint.md)
 - [Set Keywords](set-keywords.md)
 - [Set Page Options](set-page-options.md)
-- Set [SafeFrame Configuration](set-safeframe-configuration.md)
+- [Set SafeFrame Configuration](set-safeframe-configuration.md)
 - [Show Tag](show-tag.md)
