@@ -193,7 +193,7 @@ The possible values for this option are interpreted as follows:
 
     The default value is -1.
 
-## Player's Chrome Setting 
+## Player's chrome setting 
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -205,6 +205,7 @@ The possible values for this option are interpreted as follows:
 | `showMute` | boolean | true | Show or hide the mute button in the control bar.<br>If `audioOnMouseOver` is set to false, a user activates sound by disabling the audio mute button. If `showMute` is also false and the audio mute button is hidden, a user activates sound by dragging the volume slider. |
 | `showProgressBar` | boolean | false | Show or hide the progress bar on the control bar. |
 | `showVolume` | boolean | false | Show or hide the volume slider on the control bar. | 
+
 
 ### VPAID handler settings
 
