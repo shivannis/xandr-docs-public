@@ -9,14 +9,14 @@ ms.custom: seller-tag
 This page contains a sample web page showing how Xandr's seller tag (AST) functions can be implemented in the header and body of a sample client page.
 
 > [!NOTE]
-> - See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
+> See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
+> [!NOTE]
+> Xandr now supports a domain, adnxs-simple.com, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
 >
-> - Xandr now supports a domain, adnxs-simple.com, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
-
-To use the adnxs-simple.com domain:
-
-- If you load ast.js directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
-- If you load ast.js from a local server, update ast.js to the latest version (version 0.37.1 or higher)
+> To use the adnxs-simple.com domain:
+>
+> - If you load ast.js directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
+> - If you load ast.js from a local server, update ast.js to the latest version (version 0.37.1 or higher)
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
