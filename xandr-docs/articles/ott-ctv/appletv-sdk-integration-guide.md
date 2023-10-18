@@ -376,4 +376,4 @@ ANTVSDK (for architecture arm64):   Mach-O 64-bit dynamically linked shared libr
 
 ## Objective C project requirements
 
-As a default, XCode doesn't have a setting to use Swift Standard Libraries for Objective-C projects. For an Objective-C-based publisher application, you'll need to set the "**Always Embed Swift Standard Libraries**” setting to **Yes** in the Build Settings for the IDE.
+By default, XCode doesn't have a setting to use Swift Standard Libraries for Objective-C projects. For an Objective-C-based publisher application, you'll need to set the "**Always Embed Swift Standard Libraries**” setting to **Yes** in the Build Settings for the IDE.
