@@ -20,7 +20,7 @@
       href: nonvaluation-custom-model.md
     - name: Logistic Regression Models
       items:
-      - name: An Overview of Logistic Regression Models
+      - name: Overview
         href: logistic-regression-models.md
       - name: Linear-Log Bucketing
         href: linear-log-bucketing.md
@@ -34,7 +34,7 @@
         href: line-item-model-service.md
     - name: Logistic Regression Custom Model Service
       items:
-      - name: An Overview of Logistic Regression Custom Model Service
+      - name: Overview
         href: logistic-regression-custom-model-service.md
       - name: Logistic Regression Model API Resources
         href: logistic-regression-model-api-resources.md
@@ -44,7 +44,7 @@
       href: using-custom-models-to-pass-macros-to-dynamic-creative-optimizations.md
     - name: The Bonsai Language
       items:
-      - name: An Overview of the Bonsai Language
+      - name: Overview
         href: the-bonsai-language.md
       - name: Bonsai Language Features
         href: bonsai-language-features.md
