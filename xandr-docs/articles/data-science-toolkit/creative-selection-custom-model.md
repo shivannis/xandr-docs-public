@@ -1,75 +1,35 @@
 ---
-Title : Creative Selection Custom Model
-Description : By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives
-ms.custom : data-science
+title: Creative Selection Custom Model
+description: Learn how to assign creatives using a custom model. The article provides syntax explanations and detailed API workflow instructions, accompanied by examples.
+ms.custom: data-science
 ---
 
+# Creative selection custom model
 
-# Creative Selection Custom Model
+By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
 
+> [!NOTE]
+> This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).
 
+## How weighting works?
 
-By default, Xandr randomly distributes the
-creatives associated with a line item. You can also assign creatives
-using a custom model. Any <a
-href="the-bonsai-language.md"
-class="xref" target="_blank">Bonsai Language</a> feature or logic can be
-used to determine which creative should be served.
+In each leaf, you list creative IDs and their weights. Weights may be integers between 0-1000.
 
-
-
-<b>Note:</b> This functionality is only
-available for the <a
-href="xandr-api/line-item-service---ali.md"
-class="xref" target="_blank">Augmented Line Item</a>.
-
-
-
-
-
-## How Weighting Works
-
-In each leaf, you list creative IDs and their weights. Weights may be
-integers between 0-1000.
-
-The allocation percentage of a creative is determined by dividing the
-creative's weight by the sum of the weight of all eligible creatives.   
+The allocation percentage of a creative is determined by dividing the creative's weight by the sum of the weight of all eligible creatives.
   
-For example,  a line item has three creatives, A, B, and C and they are
-weighted respectively 50, 30, and 20.  They will serve on 50%, 30%, and
-20% of all impressions if all creatives are eligible. If only creatives
-B and C are eligible, creative B will serve on 60% of impressions and
-creative C will serve on 40%.
+For example, a line item has three creatives, A, B, and C and they are weighted respectively 50, 30, and 20. They will serve on 50%, 30%, and 20% of all impressions if all creatives are eligible. If only creatives B and C are eligible, creative B will serve on 60% of impressions and creative C will serve on 40%.
 
+> [!NOTE]
+> It's a good idea to include only creatives that will be eligible in similar circumstances on the same leaf to make it easier for you to determine the effects of weighting and targeting. For example, you might want to include only creatives of the same size, or only creatives that are eligible for SSL, in a single leaf, ensuring that all creatives will be eligible for the same impressions.
 
-
-<b>Note:</b> It's a good idea to include only
-creatives that will be eligible in similar circumstances on the same
-leaf to make it easier for you to determine the effects of weighting and
-targeting.  For example, you might want to include only creatives of the
-same size, or only creatives that are eligible for SSL, in a single
-leaf, ensuring that all creatives will be eligible for the same
-impressions.
-
-
-
-Follow these guidelines for getting the best results when weighting your
-creatives: 
+Follow these guidelines for getting the best results when weighting your creatives:
 
 - Creatives with a weight of zero (0) will not be served.
-- If a leaf does not contain a creative list, creative selection will
-  revert back to random selection of creatives associated with the line
-  item.
+- If a leaf does not contain a creative list, creative selection will revert back to random selection of creatives associated with the line item.
 - Models may not contain duplicate creative IDs.
-- Creatives must be attached to the line item. Creatives that are
-  attached to the line item but not included in a leaf are considered to
-  have a weight of zero.
+- Creatives must be attached to the line item. Creatives that are attached to the line item but not included in a leaf are considered to have a weight of zero.
 
-
-
-
-
-## Creative Selection Leaf Syntax
+## Creative selection leaf syntax
 
 The syntax for creative distribution leaves is:
 
@@ -78,13 +38,9 @@ leaf_name: "NAME"
 creatives: {ID: WEIGHT, ID: WEIGHT, ID: WEIGHT} 
 ```
 
+## API workflow
 
-
-
-
-## API Workflow
-
-**Step 1. Create an augmented line item.**
+### Step 1: Create an augmented line item
 
 In this example, we create an augmented line item.
 
@@ -114,11 +70,9 @@ $curl -b cookies -X POST -s -d @ali "https://api.appnexus.com/line-item?advertis
 }
 ```
 
-For more information, see <a
-href="ali-workflow-with-custom-models.md"
-class="xref" target="_blank">ALI Workflow with Custom Models</a>.
+For more information, see [ALI Workflow with Custom Models](ali-workflow-with-custom-models.md).
 
-**Step 2. Attach creative IDs to the augmented line item.**
+### Step 2: Attach creative IDs to the augmented line item
 
 In this example, we associate three creatives to our line item.
 
@@ -199,10 +153,9 @@ $ curl -b cookies -X PUT -d @line-item 'https://api.appnexus.com/line-item?id=LI
 }
 ```
 
-**Step 3. Create a Custom Model tree.**
+### Step 3: Create a Custom Model tree
 
-In this example, we create a Custom Model that will weigh and select
-creatives.
+In this example, we create a Custom Model that will weigh and select creatives.
 
 ``` pre
 $cat creative-tree
@@ -214,7 +167,7 @@ else:
         creatives: {12347: 1}
 ```
 
-**Step 4. Upload the custom model.**
+### Step 4: Upload the custom model
 
 In this example, we upload the custom model.
 
@@ -259,15 +212,11 @@ $ curl -b cookies -X POST -d @custom-model "https://api.appnexus.com/custom-mode
 }
 ```
 
-For more information, see <a
-href="custom-model-service.md"
-class="xref" target="_blank">Custom Model Service</a>.
+For more information, see [Custom Model Service](custom-model-service.md).
 
-**Step 5. Associate the custom model with the line item.**
+### Step 5: Associate the custom model with the line item
 
-In this example, we associate the custom model with the line item by
-setting the `type` field in the line item's `custom_models` array to
-'creative_selection'.
+In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to 'creative_selection'.
 
 ``` pre
 $cat update-ali
@@ -313,10 +262,6 @@ $curl -b cookies -X PUT -d '@update-ali' "https://api.appnexus.com/line-item?id=
 } 
 ```
 
-
-
-
-
 ## Examples
 
 Creative distribution tree with different weights for creatives
@@ -340,15 +285,3 @@ else:
         leaf_name: "cs_2"
         creatives: {65946990: 1}
 ```
-
-
-
-
-
-<a href="custom-models.md" class="link">Custom Models</a>
-
-
-
-
-
-
