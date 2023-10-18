@@ -1,36 +1,24 @@
 ---
-Title : Custom Models Pre-Implementation and Troubleshooting Guide
-Description : This page describes best practices to prepare for custom model implementation as well as a guide to some common issues that can arise
+title : Custom Models Pre-Implementation and Troubleshooting Guide
+description : This page describes best practices to prepare for custom model implementation as well as a guide to some common issues that can arise
 from using custom models. 
 ms.custom : data-science
 ---
 
 
-# Custom Models Pre-Implementation and Troubleshooting Guide
-
-
+# Custom models Pre-Implementation and troubleshooting guide
 
 This page describes best practices to prepare for custom model
 implementation as well as a guide to some common issues that can arise
 from using custom models. 
 
+## Pre-Implementation best practices 
 
-
-## Pre-Implementation Best Practices 
-
-**The Purpose of Custom Models**
+**The purpose of custom models**
 
 Custom Models are designed for determining how to price impressions, not
 how to target them. For targeting impressions, you should continue to
-use the <a
-href="invest/buy-side-targeting.md"
-class="xref" target="_blank">Targeting</a> section of the line item set
-up in  or the <a
-href="xandr-api/profile-service.md"
-class="xref" target="_blank">Profile Service</a> for targeting via the
-API. However, the targeting on the line item needs to match the features
-in the custom model​. A discrepancy between the two can result in limited
-delivery on a line. 
+use the [Targeting](../invest/buy-side-targeting.md) section of the line item set up in  or the [Profile Service](../digital-platform-api/profile-service.md) for targeting via the API. However, the targeting on the line item needs to match the features in the custom model​. A discrepancy between the two can result in limited delivery on a line. 
 
 **Syntax and Permissions Guidance**
 
@@ -39,18 +27,10 @@ delivery on a line. 
   Genie User Role. Open a product support ticket if you do not already
   see these roles available for users in your seats. Many clients will
   create a new user and use it exclusively for updating custom models.
-- <a href="https://developer.mozilla.org/en-US/docs/Glossary/Base64"
-  class="xref" target="_blank">Base64 encode</a>
-  your tree before uploading it to Xandr and
-  make sure your Base64-Encoded tree is no larger than 3 MB.​
-- In <a
-  href="the-bonsai-language.md"
-  class="xref" target="_blank">Bonsai models</a>,
-  use tabs for indentation, not spaces.
-- Label leaves to report on <a
-  href="log-level-data-feeds.md"
-  class="xref" target="_blank">Log-level data</a>. This will help you
-  accurately work out how you have bid.
+- [Base64 encode](https://developer.mozilla.org/en-US/docs/Glossary/Base64)
+  your tree before uploading it to Xandr and make sure your Base64-Encoded tree is no larger than 3 MB.​
+- In [Bonsai models](the-bonsai-language.md), use tabs for indentation, not spaces.
+- Label leaves to report on [Log-level data](../log-level-data/log-level-data-feeds.md). This will help you accurately work out how you have bid.
 - If you want to not bid in certain situations, use a bid value or
   multiplier of "no_bid" not "0:
 
@@ -65,23 +45,14 @@ delivery on a line. 
 In order to use custom models successfully, you must update the models
 based on performance. This can be done with two log-level data feeds:
 
-- <a href="log-level-custom-model-feed.md" class="xref">Custom Model
-  Feed</a>: this feed gives you information about models associated with
+- [Custom Model Feed](log-level-custom-model-feed.md): this feed gives you information about models associated with
   your line items and the values calculated by those models
-- <a
-  href="log-level-data/standard-feed.md"
-  class="xref" target="_blank">Standard Feed</a>: this feed gives
+- [Standard Feed](../log-level-data/standard-feed.md): this feed gives
   information about transacted impressions.
 
-You can also collect data from the log-level data feeds
-listed <a href="log-level-data-feeds.md" class="xref">here</a> and
-include the data in your custom models if relevant.
+You can also collect data from the log-level data feeds listed [here](../log-level-data/log-level-data-feeds.md) and include the data in your custom models if relevant.
 
-
-
-
-
-## Troubleshooting Guide
+## Troubleshooting guide
 
 Follow these troubleshooting steps if a line item is not delivering the
 expected results and has a custom model attached: 
@@ -110,10 +81,7 @@ the line item and its parent objects are: 
   class="xref" target="_blank">here</a> (login required).
 
 For additional information on troubleshooting your augmented line item
-please see our <a
-href="invest/troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md"
-class="xref" target="_blank">Troubleshoot Your Augmented line item
-Delivery and Bid Performance</a> documentation. 
+please see our [Troubleshoot Your Augmented line item Delivery and Bid Performance](../invest/troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md) documentation. 
 
 If troubleshooting the line item does not resolve the performance issues
 continue with the steps below to troubleshoot the custom model. 
@@ -191,8 +159,7 @@ line item: 
   between the two can result in preventing the line item from spending.
   A simple example would be: 
 
--   
-  If you are targeting segment 34567 on your line item, but only bidding
+- If you are targeting segment 34567 on your line item, but only bidding
   on a user if they belong to 67890, this line item will not deliver.
   The purpose of this custom model does not match the goals of the line
   items. To conduct this type of troubleshooting you will have to follow
@@ -203,20 +170,12 @@ line item: 
   - devices
   - geo
 
+> [!NOTE]
+> Make sure the creatives in your custom model are also on your line item.
 
-
-<b>Note:</b> Make sure the creatives in your
-custom model are also on your line item.
-
-
-
-  
 For a full listing of the features available to custom models
-visit <a href="bonsai-language-features.md" class="xref">Bonsai Language
-Features</a>. For additional information review our documentation
-on logistic regression models at
-<a href="logistic-regression-models.md" class="xref">Logistic
-Regression Models</a>. 
+visit [Bonsai Language Features](bonsai-language-features.md). For additional information review our documentation
+on logistic regression models at [Logistic Regression Models](logistic-regression-models.md). 
 
 ``` pre
 if not segment [11584384]:
