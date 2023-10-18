@@ -1,0 +1,45 @@
+### YamlMime:Landing
+
+title: Data Science Toolkit
+summary: Welcome to the Data Science Toolkit! All the information you need to get started with the Data Science Toolkit products is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Data Science Toolkit
+  description: Discover various products of the Data Science Toolkit
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 18/10/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data Science Toolkit Guide
+            url: data-science-toolkit-guide.md  
+  - title: Custom Models
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What are Custom Models?
+            url: custom-models.md
+          - text: Logistic Regression Models
+            url: logistic-regression-models.md
+          - text: Bonsai Decision Trees
+            url: the-bonsai-language.md
+      - linkListType: how-to-guide
+        links:
+          - text: ALI Workflow with Custom Models
+            url: ali-workflow-with-custom-models.md
+          - text: Best Practices and Troubleshooting for Custom Models  
+            url: custom-models-pre-implementation-and-troubleshooting-guide.md
+  - title: Incrementality
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: What is Incrementality?
+            url: incrementality.md
+      - linkListType: how-to-guide
+        links:
+          - text: Incrementality and Xandr
+            url: incrementality-and-xandr.md
