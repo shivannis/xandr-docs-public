@@ -1,10 +1,10 @@
 ---
-title: Bonsai Custom Model Workflow
+title: Data Science Toolkit - Bonsai Custom Model Workflow
 description: In this article, explore a detailed guide to the Bonsai Custom Model Workflow with step-by-step instructions and code examples.
 ms.custom: data-science
 ---
 
-# Bonsai custom model workflow
+# Data Science Toolkit - Bonsai custom model workflow
 
 This page describes a typical Bonsai Custom Model Workflow and provides code examples.
 
@@ -138,6 +138,9 @@ $ cat custom_model.json
 ```
 
 Example: `POST` to `custom-model` service
+
+> [!NOTE]
+> This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'

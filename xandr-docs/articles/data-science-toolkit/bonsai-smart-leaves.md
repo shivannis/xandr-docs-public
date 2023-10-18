@@ -1,10 +1,10 @@
 ---
-title: Bonsai Smart Leaves
+title: Data Science Toolkit - Bonsai Smart Leaves
 description: In this article, explore the Bonsai Smart Leaves concept, including syntax explanations, input fields, and a comprehensive set of examples.
 ms.custom: data-science
 ---
 
-# Bonsai smart leaves
+# Data Science Toolkit - Bonsai smart leaves
 
 > [!NOTE]
 > This page assumes you are already familiar with the [Bonsai Language](the-bonsai-language.md) and [Bonsai Features](bonsai-language-features.md).
@@ -60,10 +60,10 @@ Guide for the Augmented Line Item](https://console.appnexus.com/docs/optimizatio
 
 You can perform calculations using the value or age of the user in a first-party or third-party segment to determine a bid value. If the user is not present in the segment, no bid is made. Use the [Segment Service](../digital-platform-api/segment-service.md) to retrieve segment IDs.
 
-| Field | Type | Description |  |
-|:---|:---|:---|:---|
-| `segment[ID].value`<br> | float, integer | The value of the user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br><br>`ID` is the segment ID. |  |
-| `segment[ID].age` | float, integer | The age of a user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br>`ID` is the segment ID. |  |
+| Field | Type | Description |
+|:---|:---|:---|
+| `segment[ID].value`<br> | float, integer | The value of the user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br>`ID` is the segment ID. |
+| `segment[ID].age` | float, integer | The age of a user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br>`ID` is the segment ID. |
 
 ## Using frequency or recency as inputs for compute()
 

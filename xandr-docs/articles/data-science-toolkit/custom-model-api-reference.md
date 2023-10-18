@@ -1,10 +1,10 @@
 ---
-title: Custom Model API Reference
+title: Data Science Toolkit - Custom Model API Reference
 description: Explore the reference information about the API services used to implement custom models.
 ms.custom: data-science
 ---
 
-# Custom model API reference
+# Data Science Toolkit - Custom model API reference
 
 This section provides reference information about the API services used to implement Custom Models.
 

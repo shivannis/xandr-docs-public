@@ -1,10 +1,10 @@
 ---
-title: Creative Selection Custom Model
+title: Data Science Toolkit - Creative Selection Custom Model
 description: Learn how to assign creatives using a custom model. The article provides syntax explanations and detailed API workflow instructions, accompanied by examples.
 ms.custom: data-science
 ---
 
-# Creative selection custom model
+# Data Science Toolkit - Creative selection custom model
 
 By default, Xandr randomly distributes the creatives associated with a line item. You can also assign creatives using a custom model. Any [Bonsai Language](the-bonsai-language.md) feature or logic can be used to determine which creative should be served.
 

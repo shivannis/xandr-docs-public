@@ -1,10 +1,10 @@
 ---
-title: Bonsai Language Features
+title: Data Science Toolkit - Bonsai Language Features
 description: Explore Bonsai Language features used for assessing impressions in your custom models with syntax explanations and usage examples.
 ms.custom: data-science
 ---
 
-# Bonsai language features
+# Data Science Toolkit - Bonsai language features
 
 This page lists the Bonsai Language features that you can use to evaluate impressions as part of your custom model logic. For each
 feature, we explain the syntax and provide an example to demonstrate usage.

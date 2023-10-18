@@ -1,10 +1,10 @@
 ---
-title: Create a Bonsai Decision Tree Custom Model
+title: Data Science Toolkit - Create a Bonsai Decision Tree Custom Model
 description: In this article, learn how to create a Bonsai decision tree custom model and easily upload it to our platform with clear, step-by-step instructions.
 ms.custom: data-science
 ---
 
-# Create a Bonsai decision tree custom model
+# Data Science Toolkit - Create a Bonsai decision tree custom model
 
 The Digital Platform API empowers you to create your own custom predictive models (previously known as "the AppNexus Programmable Bidder") and upload them directly to our open platform. You can:
 
@@ -45,7 +45,7 @@ Model). The conditions can be based on a set of Bonsai features and feature valu
 - Sketch how you want to use tree features to determine outputs.
 - Be sure to take advantage of reporting data in identifying the right features and values:
   - [Standard Reporting](../invest/reporting-guide.md) (customer login required)
-  - [Log-Level Data Feeds](log-level-data-feeds.md) (customer login required)
+  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) (customer login required)
 
 Example: Decision tree for bid pricing
 
@@ -99,7 +99,7 @@ IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1
 Use the [Custom Model Parser Service](custom-model-parser-service.md) to check the validity of your decision tree.
 
 - In the JSON request, put your base64-encoded tree in the `model_text` field as a string.
-- If there are errors, use the `error` field in the response to help you identify and resolve Bonsai syntax or feature errors. For guidance, see [Error Messages](custom-model-parser-service.md#CustomModelParserService-ErrorMessages).
+- If there are errors, use the `error` field in the response to help you identify and resolve Bonsai syntax or feature errors. For guidance, see [Error Messages](custom-model-parser-service.md#error-messages).
 - If there are no errors, the `size` field in the response shows you the size of your tree in Lisp (the format we use to store trees). Make sure the `size` is less than 3MB, or 3,145,728 bytes.  
 
 > [!NOTE]
@@ -165,6 +165,9 @@ $ cat custom_model.json
 ```
 
 Example: `POST` to `custom-model` service
+
+> [!NOTE]
+> This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
@@ -242,6 +245,9 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   ```
 
   **POST to campaign service**
+  
+  > [!NOTE]
+  > This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
@@ -373,6 +379,9 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   ```
 
   **POST to campaign service**
+
+  > [!NOTE]
+  > This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
