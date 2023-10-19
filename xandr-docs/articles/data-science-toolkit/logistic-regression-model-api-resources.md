@@ -1,33 +1,19 @@
 ---
-Title : Logistic Regression Model API Resources
-Description : The purpose of this document is to serve as a temporary API resource for the Data Science Toolkit services that allow for the creation of
-Logistic Regression models, Lookup tables, and Hashed Table Predictors.
-ms.custom : data-science
-
+title: Logistic Regression Model API Resources
+description: This article is a temporary API resource for data science toolkit services to create logistic regression models, lookup tables, and hashed table predictors. 
 ---
 
+# Logistic regression model API resources
 
-# Logistic Regression Model API Resources
-
-
-
-The purpose of this document is to serve as a temporary API resource for
-the Data Science Toolkit services that allow for the creation of
-Logistic Regression models, Lookup tables, and Hashed Table Predictors.
-
-
+The purpose of this document is to serve as a temporary API resource for the Data Science Toolkit services that allow for the creation of Logistic Regression models, Lookup tables, and Hashed Table Predictors.
 
 ## Descriptor list
 
-**Scalar Descriptor**
+### Scalar descriptor
 
-**Type: **
+**Type:**
 
-
-
-- `"scalar_descriptor"`
-
-
+`"scalar_descriptor"`
 
 **Features:**
 
@@ -44,19 +30,12 @@ Logistic Regression models, Lookup tables, and Hashed Table Predictors.
 - `uniform`
 - `user_age`
 
+> [!NOTE]
+> The `size` descriptor is represented as a string in your models ("300x250", for instance), though converted to a scalar in our bidder. Any size is technically valid in our system, hence this feature being treated as a scalar rather than a categorical feature.
 
+**Example:**
 
-<b>Note:</b> The `size` descriptor is
-represented as a string in your models ("300x250", for instance), though
-converted to a scalar in our bidder. Any size is technically valid in
-our system, hence this feature being treated as a scalar rather than a
-categorical feature.
-
-
-
-**Example**:
-
-``` pre
+```pre
 {
         "type": "scalar_descriptor",
     "feature_keyword": "cookie_age",
@@ -66,21 +45,21 @@ categorical feature.
 }
 ```
 
-**Segment Descriptor**
+### Segment descriptor
 
 **Type:**
 
-- `"segment_descriptor"`
+`"segment_descriptor"`
 
 **Features:**
 
 - `segment_value `
 - `segment_age`
-- `segment_presence `
+- `segment_presence`
 
 **Example:**
 
-``` pre
+```pre
 {
     "type": "segment_descriptor",
     "feature_keyword": "segment_age",
@@ -91,15 +70,11 @@ categorical feature.
 }
 ```
 
-**Frequency/Recency Descriptor**
-
-
+### Frequency/Recency descriptor
 
 **Type:**
 
-- `"frequency_recency_descriptor"`
-
-
+`"frequency_recency_descriptor"`
 
 **Features:**
 
@@ -107,19 +82,15 @@ categorical feature.
 - `frequency_daily`
 - `recency`
 
-
-
-**Available object types for this descriptor**:
+**Available object types for this descriptor:**
 
 - `advertiser`
 - `line_item`
 - `campaign`
 
-
-
 **Example:**
 
-``` pre
+```pre
 {
     "type": "frequency_recency_descriptor",
     "feature_keyword": 'frequency_life',
@@ -131,15 +102,11 @@ categorical feature.
 }
 ```
 
-**Categorical Descriptor**
-
-
+### Categorical descriptor
 
 **Type:**
 
-- `"categorical_descriptor"`
-
-
+`"categorical_descriptor"`
 
 **Features:**
 
@@ -181,22 +148,22 @@ categorical feature.
 
 **Example:**
 
-``` pre
+```pre
 {
     "type": "categorical_descriptor",
     "feature_keyword": "city"
 }
 ```
 
-**Hash Table Descriptor**
+### Hash table descriptor
 
 **Type:**
 
-- `"hashed"`
+`"hashed"`
 
 **Example:**
 
-``` pre
+```pre
 {
     "type": "hashed",
     "keys": [ array of one to 5 descriptors in this list:
@@ -213,151 +180,43 @@ categorical feature.
 }
 ```
 
+## Hash tables
 
+This endpoint is to submit a pre-hashed table. `bucket_index0` and `bucket_index1`, each 64 bits long, are there to support hashing algorithms that produce long values as keys. Currently, we only support one hashing algorithm: `MurmurHash3_x64_128`, which will create two 64 bit integers but we only use the lower 64 bits of the hash.
 
+Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_log)` or they will get rejected
 
+Currently, the values in `bucket_index1` are ignored as this is to be used for future expansion. If a value is sent for `bucket_index1`, it must be `0`. The parameter is optional.
 
-## Hash Tables
+**Hash table keys**
 
-This endpoint is to submit a pre-hashed table. `bucket_index0` and
-`bucket_index1`, each 64 bits long, are there to support hashing
-algorithms that produce long values as keys. Currently, we only support
-one hashing algorithm: `MurmurHash3_x64_128`, which will create two 64
-bit integers but we only use the lower 64 bits of the hash.
+For each of your Hash Table keys, you will need a uint32 value. These values should be the ID of respective object that you are referencing from our system - `domain_id`, for instance, rather than the domain string value. These uint32 keys are then transformed into a byte array (little-endian), and hashed.
 
-Values in `bucket_index0` must always be smaller than
-`(2 ^ hash_table_size_log)` or they will get rejected
-
-Currently, the values in `bucket_index1` are ignored as this is to be
-used for future expansion. If a value is sent for `bucket_index1`, it
-must be `0`. The parameter is optional.
-
-**Hash Table Keys**
-
-For each of your Hash Table keys, you will need a uint32 value. These
-values should be the ID of respective object that you are referencing
-from our system - `domain_id`, for instance, rather than the domain
-string value. These uint32 keys are then transformed into a byte array
-(little-endian), and hashed. 
-
-**Example**
-
-**Python Example**
+**Python example**
 
 `hash_bucket = (mmh3.hash64(bytes, seed)[0]) % table_size`
 
+## Logit function
 
+Model creation and update are similar, same request format is to be used for both.
 
-
-
-## Logit Function
-
-Model creation and update are similar, same request format is to be used
-for both.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000012ef__entry__1"
-class="entry colsep-1 rowsep-1">Method</th>
-<th id="ID-000012ef__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000012ef__entry__3"
-class="entry colsep-1 rowsep-1">Purpose</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__2"><code
-class="ph codeph">/custom-model-logit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__3">Retrieve a Logit function associated
-with the parameters provided.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__2"><code
-class="ph codeph"> /custom-model-logit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__3">Update an existing Logit function with
-data in the JSON payload.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__2"><code
-class="ph codeph">/custom-model-logit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__3">Create a new Logit function from data in
-the JSON payload.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__2"><code
-class="ph codeph">/custom-model-logit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__3">Delete an existing Logit function
-matching the parameters provided.</td>
-</tr>
-</tbody>
-</table>
+| Method | Endpoint | Purpose |
+|:---|:---|:---|
+| GET | `/custom-model-logit` | Retrieve a Logit function associated with the parameters provided. |
+| PUT |  `/custom-model-logit` | Update an existing Logit function with data in the JSON payload. |
+| POST | `/custom-model-logit` | Create a new Logit function from data in the JSON payload. |
+| DELETE | `/custom-model-logit` | Delete an existing Logit function matching the parameters provided. |
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000012ef__entry__16"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-000012ef__entry__17" class="entry colsep-1 rowsep-1">Data
-Type</th>
-<th id="ID-000012ef__entry__18"
-class="entry colsep-1 rowsep-1">Parameter Type</th>
-<th id="ID-000012ef__entry__19" class="entry colsep-1 rowsep-1">Required
-On</th>
-<th id="ID-000012ef__entry__20"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__16">id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__18">Query</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__19">GET, PUT, DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__20">?id=1</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__16">member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__18">Query</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__19">PUT, POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000012ef__entry__20">?member_id=1</td>
-</tr>
-</tbody>
-</table>
+| Name | Data Type | Parameter Type | Required On | Example |
+|:---|:---|:---|:---|:---|
+| id | int | Query | GET, PUT, DELETE | ?id=1 |
+| member_id | int | Query | PUT, POST | ?member_id=1 |
 
 **Example POST**
 
-``` pre
+```pre
 {"custom-model-logit": {
   "member_id": 1,
   "beta0": 1.2,
@@ -460,17 +319,7 @@ headers="ID-000012ef__entry__20">?member_id=1</td>
     }
   ]
 }}
- 
 ```
 
-
-
-
-<a href="logistic-regression-custom-model-service.md"
-class="link">Logistic Regression Custom Model Service</a>
-
-
-
-
-
-
+## Related topic
+[Logistic Regression Custom Model Service](./logistic-regression-custom-model-service.md)

@@ -1,67 +1,41 @@
 ---
-Title : Using Custom Models to Pass Macros to Dynamic Creative Optimizations
-Description : This document provides a solution to use a macro combined with a non-valuation custom model to ensure the Dynamic Creative Optimizations
-(DCO) receives all the segments the user has been targeted on. 
-ms.custom : data-science
-
+title: Using Custom Models to Pass Macros to Dynamic Creative Optimizations
+description: This article suggests using a macro and non-valuation custom model to ensure the Dynamic Creative Optimizations (DCO) receives targeted segments.
 ---
 
+# Using custom models to pass macros to dynamic creative optimizations
 
-# Using Custom Models to Pass Macros to Dynamic Creative Optimizations
+This document provides a solution to use a macro combined with a non-valuation custom model to ensure the Dynamic Creative Optimizations (DCO) receives all the segments the user has been targeted on.
 
+## Problem solutions
 
+There are two solutions to ensuring the DCO receives all the segments the user has been targeted on.
 
-This document provides a solution to use a macro combined with a
-non-valuation custom model to ensure the Dynamic Creative Optimizations
-(DCO) receives all the segments the user has been targeted on. 
+**Utilize the split's custom values**
 
-
-## Problem Solutions
-
-There are two solutions to ensuring the DCO receives all the segments
-the user has been targeted on. 
-
-**Utilize the Split's Custom Values**
-
-In , users can utilize the splits <a
-href="invest/create-a-programmable-split.md"
-class="xref" target="_blank">custom value feature</a> (log-in required)
+In, users can utilize the splits [custom value feature](../invest/create-a-programmable-split.md) (log-in required)
 to create a key-value pair and use the key as a macro.
 
+**Splits custom value method**
 
+- Use splits for segment targeting and then use the custom value field to assign a key-value pair to each split.
+- Use the key as a macro for the split's creative tag. Xandr will then populate this macro with the value specified in the splits. The DCO can then use value to serve a dynamic ad.
 
-**Splits Custom Value Method**
+**Problems with this approach**
 
-- Use splits for segment targeting and then use the custom value field
-  to assign a key-value pair to each split.
-- Use the key as a macro for the split's creative tag.
-  Xandr will then populate this macro with the
-  value specified in the splits. The DCO can then use value to serve a
-  dynamic ad.
+- Only allows a limited number of splits per ALI (100 splits only in ).
+- You can only have one key-value pair per split and therefore only one custom macro per split.
 
+**Use the non-valuation custom model**
 
+Use a [non-valuation custom model](nonvaluation-custom-model.md) to create custom macros that to pass to the DCO. This
+solution is more flexible than using the split's custom value feature as it enables the user to create as many macros as needed for each condition.
 
-**Problems With This Approach**
+**Non-valuation custom model method**
 
--  only allows a limited number of splits per
-  ALI (100 splits only in ). 
-- You can only have one key-value pair per split and therefore only one
-  custom macro per split.
+1. Create a non-valuation custom model:
 
-**Use the  Non-Valuation Custom Model**
-
-Use
-a <a href="nonvaluation-custom-model.md" class="xref">non-valuation
-custom model</a> to create custom macros that to pass to the DCO. This
-solution is more flexible than using the split's custom value feature as
-it enables the user to create as many macros as needed for each
-condition. 
-
-**Non-Valuation Custom Model Method**
-
-1.  Create a non-valuation custom model:
-
-    ``` pre
+    ```pre
     if segment[124541]:
         leaf_name: "Word"
         creative_macros["test1"]: "123456"
@@ -73,27 +47,17 @@ condition. 
         creative_macros["test1"]: "456123"
     ```
 
-    If you only need one custom macro use the leaf_name field as your
-    macro. When using the leaf_name field the macro is called
-    CUSTOM_MODEL_LEAF_NAME. If you want to use test1, just use that as a
-    macro, and once a creative request goes out,
-    Xandr will return the value specified. For
-    example, use test1 as a macro, and if you don't belong to any of the
-    segments specified, the model should return the value 456123.
+    If you only need one custom macro use the leaf_name field as your macro. When using the leaf_name field the macro is called CUSTOM_MODEL_LEAF_NAME. If you want to use test1, just use that as a macro, and once a creative request goes out, Xandr will return the value specified. For example, use test1 as a macro, and if you don't belong to any of the segments specified, the model should return the value 456123.
 
-2.  Use
-    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Base64"
-    class="xref" target="_blank">base64 encoding</a> for the custom
-    model you created. The following code can be used to base64 encode
-    an object using the command line:  
+1. Use [base64 encoding](https://developer.mozilla.org/en-US/docs/Glossary/Base64) for the custom model you created. The following code can be used to base64 encode an object using the command line:  
 
-    ``` pre
+    ```pre
      cat custom_model_1 | base64
     ```
 
-3.  Once the custom mode is  base64 encoded create a JSON file:  
+1. Once the custom mode is  base64 encoded create a JSON file:  
 
-    ``` pre
+    ```pre
     {
         "custom_model": {
             "name": "Silver_car_DCO_TEST_1",
@@ -106,22 +70,15 @@ condition. 
     }
     ```
 
-4.  Make a PUT request to the
-    <a href="custom-model-service.md" class="xref">Custom Model
-    Service</a> and attach the JSON file as the data.
+1. Make a PUT request to the [Custom Model Service](./custom-model-service.md) and attach the JSON file as the data.
 
-5.  If the PUT request is successful record the custom_model_id. 
+1. If the PUT request is successful record the custom_model_id.
 
-6.  Make another PUT call, this time to the
-    <a href="line-item-model-service.md" class="xref">Line Item Model
-    Service</a>, attach a JSON file that contains the custom_model_id,
-    type, and origin.
+1. Make another PUT call, this time to the [Line Item Model Service](./line-item-model-service.md), attach a JSON file that contains the custom_model_id, type, and origin.
 
-7.  Use the macro in a creative tag In the example below
-    CUSTOM_MODEL_LEAF_NAME and test1 are being used as the creative
-    macro:  
+1. Use the macro in a creative tag In the example below CUSTOM_MODEL_LEAF_NAME and test1 are being used as the creative macro:  
 
-    ``` pre
+    ```pre
     <script src="https://cdn.adacado.com/arb/arb.min.js"></script>
     <script type="text/javascript">
         !function(){var p={}
@@ -149,18 +106,8 @@ condition. 
 
 **Problems with this approach:**
 
-- Non-Valuation Models only work for Augmented Line Items (ALIs) that
-  don't have any splits.  Splits are technically a custom model and
-  would take priority over user-written models. 
-- The client needs to have the capability to write custom models. 
+- Non-Valuation Models only work for Augmented Line Items (ALIs) that don't have any splits.  Splits are technically a custom model and would take priority over user-written models.
+- The client needs to have the capability to write custom models.
 
-
-
-
-<a href="custom-models.md" class="link">Custom Models</a>
-
-
-
-
-
-
+## Related topic
+[Custom Models](custom-models.md)
