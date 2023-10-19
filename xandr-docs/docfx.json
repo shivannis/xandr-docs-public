@@ -50,17 +50,26 @@
       "ms.service": {
         "articles/invest/*.md": "microsoft-invest",
         "articles/ja-jp/*.md": "microsoft-invest",
-        "articles/seller-tag/*.md":"microsoft-monetize"
+        "articles/seller-tag/*.md":"microsoft-monetize",
+        "articles/ott-ctv/*.md":"microsoft-monetize",
+        "articles/data-science-toolkit/*.md":"microsoft-monetize",
+        "articles/yield-analytics-api/*.md":"microsoft-monetize"
       },
       "author": {
         "articles/invest/*.md": "rupambaruah-xandr",
         "articles/ja-jp/*.md": "rupambaruah-xandr",
-        "articles/seller-tag/*.md":"rupambaruah-xandr"
+        "articles/seller-tag/*.md":"rupambaruah-xandr",
+        "articles/ott-ctv/*.md":"rupambaruah-xandr",
+        "articles/data-science-toolkit/*.md":"rupambaruah-xandr",
+        "articles/yield-analytics-api/*.md":"rupambaruah-xandr"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
         "articles/ja-jp/*.md": "rupambaruah",
-        "articles/seller-tag/*.md":"rupambaruah"
+        "articles/seller-tag/*.md":"rupambaruah",
+        "articles/ott-ctv/*.md":"rupambaruah",
+        "articles/data-science-toolkit/*.md":"rupambaruah",
+        "articles/yield-analytics-api/*.md":"rupambaruah"
       }
     },
     "template": [],
