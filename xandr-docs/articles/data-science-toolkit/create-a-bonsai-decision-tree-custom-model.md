@@ -1,149 +1,74 @@
 ---
-Title : Create a Bonsai Decision Tree Custom Model
-Description : The Digital Platform API empowers you to create your own custom predictive models (previously known as "the
-AppNexus Programmable Bidder") and upload them
-ms.custom : data-science
-directly to our open platform. You can:
+title: Data Science Toolkit - Create a Bonsai Decision Tree Custom Model
+description: In this article, learn how to create a Bonsai decision tree custom model and easily upload it to our platform with clear, step-by-step instructions.
+ms.custom: data-science
 ---
 
+# Data Science Toolkit - Create a Bonsai decision tree custom model
 
-# Create a Bonsai Decision Tree Custom Model
+The Digital Platform API empowers you to create your own custom predictive models (previously known as "the AppNexus Programmable Bidder") and upload them directly to our open platform. You can:
 
+- Have your data scientists write predictive models in [Bonsai](the-bonsai-language.md), a high-level domain-specific language (DSL) that's very similar to the popular Python language.
+- Validate and upload your models via our API and assign them to campaigns via our API or UI.
+- Run your models on our bidders and benefit from our infrastructure's speed, scale, reliability, and lower costs.
 
+This page helps you get started.
 
-The Digital Platform API empowers you to create your own custom
-predictive models (previously known as "the
-AppNexus Programmable Bidder") and upload them
-directly to our open platform. You can:
+## Custom model types
 
-- Have your data scientists write predictive models in <a
-  href="the-bonsai-language.md"
-  class="xref" target="_blank">Bonsai</a>, a high-level domain-specific
-  language (DSL) that's very similar to the popular Python language
-- Validate and upload your models via our API and assign them to
-  campaigns via our API or UI
-- Run your models on our bidders and benefit from our infrastructure's
-  speed, scale, reliability, and lower costs.
+Currently, it's possible to create two types of custom predictive models:
 
-This page helps you get started. 
+### Bid price
 
+The Bid Price model uses a decision tree to determine a campaign's CPM bid. This type of model serves as a campaign's third-party buying strategy, in place of standard CPM strategies like "Bid a Base CPM" or "Optimize to a % Margin".
 
+### Bid modifier
 
-## Custom Model Types
+The Bid Modifier model uses a decision tree to adjust a campaign's optimization-derived CPM bid up or down. This type of model is used in
+conjunction with a buying strategy that uses Xandr's optimization, like "Optimize to a predicted CPA goal" or "Optimize to a predicted CPC goal".
 
-Currently, it's possible to create two types of custom predictive
-models:
-
-**Bid Price**
-
-The Bid Price model uses a decision tree to determine a campaign's CPM
-bid. This type of model serves as a campaign's third-party buying
-strategy, in place of standard CPM strategies like "Bid a Base CPM" or
-"Optimize to a % Margin".
-
-**Bid Modifier**
-
-The Bid Modifier model uses a decision tree to adjust a campaign's
-optimization-derived CPM bid up or down. This type of model is used in
-conjunction with a buying strategy that uses
-Xandr's optimization, like "Optimize to a
-predicted CPA goal" or "Optimize to a predicted CPC goal".
-
-
-
-<b>Note:</b> The bids calculated by the model
-are always expressed in the currency set on the advertiser, even if you
-have specified a different currency for the  or
-campaign.
-
-
-
-
-
-
+> [!NOTE]
+> The bids calculated by the model are always expressed in the currency set on the advertiser, even if you have specified a different currency for the campaign.
 
 ## Workflow
 
+> [!NOTE]
+> The Alpha workflow requires using the API. Alpha clients are expected to have completed our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md) before getting started.
 
+### Step 1: Identify your requirements
 
-<b>Note:</b> The Alpha workflow requires using
-the API. Alpha clients are expected to have completed our <a
-href="xandr-api/api-onboarding-process.md"
-class="xref" target="_blank">API Onboarding Process</a> before getting
-started.
+You will write your custom model as a [decision tree](https://en.wikipedia.org/wiki/Decision_tree), where branches of the tree express
+conditions that lead to specific outputs (bid prices in the case of a Bid Price Model and bid multipliers in the case of a Bid Modifier
+Model). The conditions can be based on a set of Bonsai features and feature values. Before writing your tree:
 
-
-
-**Step 1. Identify Your Requirements**
-
-You will write your custom model as a
-<a href="https://en.wikipedia.org/wiki/Decision_tree" class="xref"
-target="_blank">decision tree</a>, where branches of the tree express
-conditions that lead to specific outputs (bid prices in the case of a
-Bid Price Model and bid multipliers in the case of a Bid Modifier
-Model). The conditions can be based on a set of Bonsai features and
-feature values. Before writing your tree:
-
-- Take a close look at the <a
-  href="bonsai-language-features.md"
-  class="xref" target="_blank">Bonsai Features</a> that are available.
+- Take a close look at the [Bonsai Features](bonsai-language-features.md) that are available.
 - Sketch how you want to use tree features to determine outputs.
-- Be sure to take advantage of reporting data in identifying the right
-  features and values:
-  - <a
-    href="invest/reporting-guide.md"
-    class="xref" target="_blank">Standard Reporting</a> (customer login
-    required)
-  - <a href="log-level-data-feeds.md" class="xref">Log-Level Data
-    Feeds</a> (customer login required)
+- Be sure to take advantage of reporting data in identifying the right features and values:
+  - [Standard Reporting](../invest/reporting-guide.md) (customer login required)
+  - [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) (customer login required)
 
 Example: Decision tree for bid pricing
-![Decision tree for bid pricing](media/datascience-c.png)
 
+:::image type="content" source="media/datascience-c.png" alt-text="Diagram of a decision tree for bid pricing.":::
 
+> [!NOTE]
+> Use custom models for pricing, not targeting.
+>
+> Use custom models to determine how to price impressions, not how to target them. For targeting impressions, you should continue to use the **Targeting** section of campaign setup in or the [Profile Service](../digital-platform-api/profile-service.md) for targeting via the API.
 
+### Step 2: Create your decision tree
 
-<b>Note:</b>
+Once you know the features and steps you want to follow to price or modify bids for a campaign, write them as a decision tree in our [Bonsai Language](the-bonsai-language.md). Use the examples on that page as well as the simple example below to jumpstart your understanding of how to write your tree.
 
-Use custom models for pricing, not targeting
-
-Use custom models to determine how to price impressions, not how to
-target them. For targeting impressions, you should continue to use the
-Targeting section of campaign
-setup in  or the <a
-href="xandr-api/profile-service.md"
-class="xref" target="_blank">Profile Service</a> for targeting via the
-API.
-
-
-
-**Step 2. Create Your Decision Tree**
-
-Once you know the features and steps you want to follow to price or
-modify bids for a campaign, write them as a decision tree in our <a
-href="the-bonsai-language.md"
-class="xref" target="_blank">Bonsai Language</a>. Use the examples on
-that page as well as the simple example below to jumpstart your
-understanding of how to write your tree.
-
-
-
-<b>Note:</b>
-
-Use tabs for indentation, not spaces
-
-In Bonsai, indentation is used to group expressions (similar to Python).
-Be sure to use **tabs** to indicate line indentation. Spaces are not
-currently supported.
-
-
+> [!NOTE]
+> Use tabs for indentation, not spaces.
+>
+> In Bonsai, indentation is used to group expressions (similar to Python). Be sure to use **tabs** to indicate line indentation. Spaces are not currently supported.
 
 Example: Bonsai tree for bid pricing
 
-
-
-<b>Note:</b> Lines beginning with `#` are
-comments to help you understand the logic of this tree.
+> [!NOTE]
+> In the code example below, lines beginning with `#` are comments to help you understand the logic of this tree.
 
 ``` pre
 # This tree determines a bid price as follows:
@@ -159,9 +84,7 @@ else:
         0.5
 ```
 
-
-
-**Step 3. Encode Your Decision Tree**
+### Step 3: Encode your decision tree
 
 Base64-encode your decision tree.
 
@@ -171,31 +94,18 @@ Example: Base64-encoded
 IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1c2VyIGlzIGluIENhbGlmb3JuaWEsIGFuZCB0aGUgaG91ciBpcyBiZXR3ZWVuIDEycG0gYW5kIDE0cG0gdGhlcmUsIGJpZCAkMS41MC4KIyAyLiBJZiB0aGUgdXNlciBpcyBpbiBOZXcgWW9yaywgYW5kIHRoZSBob3VyIGlzIGJldHdlZW4gMWFtIGFuZCAzYW0gdGhlcmUsIGJpZCAkMC4xMC4KIyAzLiBPdGhlcndpc2UsIGJpZCAkMC41MC4KCmlmIGV2ZXJ5IHJlZ2lvbiA9ICJVUzpDQSIsIHVzZXJfaG91ciByYW5nZSAoMTIsMTQpOgoJMS41CmVsaWYgZXZlcnkgcmVnaW9uID0gIlVTOk5ZIiwgdXNlcl9ob3VyIHJhbmdlICgxLDMpOgoJMC4xCmVsc2U6CgkwLjU=
 ```
 
-**Step 4. Check Your Decision Tree for Errors**
+### Step 4: Check your decision tree for errors
 
-Use the <a
-href="custom-model-parser-service.md"
-class="xref" target="_blank">Custom Model Parser Service</a> to check
-the validity of your decision tree. 
+Use the [Custom Model Parser Service](custom-model-parser-service.md) to check the validity of your decision tree.
 
-- In the JSON request, put your base64-encoded tree in
-  the `model_text` field as a string.
-- If there are errors, use the `error` field in the response to help you
-  identify and resolve Bonsai syntax or feature errors. See <a
-  href="custom-model-parser-service.md#CustomModelParserService-ErrorMessages"
-  class="xref" target="_blank">Error Messages</a> for guidance.
-- If there are no errors, the `size` field in the response shows you the
-  size of your tree in Lisp (the format we use to store trees). Make
-  sure the `size` is less than 3MB, or 3,145,728 bytes.  
+- In the JSON request, put your base64-encoded tree in the `model_text` field as a string.
+- If there are errors, use the `error` field in the response to help you identify and resolve Bonsai syntax or feature errors. For guidance, see [Error Messages](custom-model-parser-service.md#error-messages).
+- If there are no errors, the `size` field in the response shows you the size of your tree in Lisp (the format we use to store trees). Make sure the `size` is less than 3MB, or 3,145,728 bytes.  
 
+> [!NOTE]
+> If the tree is larger than 3MB, you will not be able to add the tree.
 
-
-<b>Note:</b> If the tree is larger than 3MB,
-you will not be able to add the tree.
-
-
-
- Example: JSON file containing your base64-encoded tree
+Example: JSON file containing your base64-encoded tree
 
 ``` pre
 $ cat check_tree.json 
@@ -207,7 +117,7 @@ $ cat check_tree.json
 }
 ```
 
- Example: `POST` to the custom-model-parser service
+Example: `POST` to the custom-model-parser service
 
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
@@ -226,22 +136,16 @@ $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.c
 }
 ```
 
-**Step 5. Add Your Decision Tree as a Custom Model**
+### Step 5: Add your decision tree as a custom model
 
-Once you've confirmed that your tree is valid, use the <a
-href="custom-model-service.md"
-class="xref" target="_blank">Custom Model Service</a> to upload your
-encoded decision tree. Be sure to:
+Once you've confirmed that your tree is valid, use the [Custom Model Service](custom-model-service.md) to upload your encoded decision tree. Be sure to:
 
 - Set the correct custom model type in the `model_output` field:
   - For a Bid Price model, use `"bid"`.
   - For a Bid Modifier model, use `"bid_modifier"`.
 - Put your base64-encoded tree in the `model_text` field as a string.
-- Provide a unique `name`. This is required and will make it easier to
-  select the correct model in .
-- Provide the `advertiser_id` to which the custom model belongs. You
-  will be able to use the model only in campaigns under this
-  advertiser. 
+- Provide a unique `name`. This is required and will make it easier to select the correct model in .
+- Provide the `advertiser_id` to which the custom model belongs. You will be able to use the model only in campaigns under this advertiser.
 
 Example: JSON file defining your custom model
 
@@ -260,7 +164,7 @@ $ cat custom_model.json
 }
 ```
 
- Example: `POST` to `custom-model` service
+Example: `POST` to `custom-model` service
 
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
@@ -286,7 +190,7 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
         },
         "dbg_info": {
             "instance": "64.bm-hbapi.prod.nym2",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "db": "10.3.129.206",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -295,7 +199,7 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
             "time": 39.799213409424,
             "start_microtime": 1438028779.7596,
             "version": "1.15.572",
-            "slave_lag": 0,
+            "s1ave_lag": 0,
             "member_last_modified_age": 21425,
             "output_term": "custom_model"
         }
@@ -303,26 +207,21 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
 }
 ```
 
-**Step 6. Assign Your Custom Model to a Campaign**
+### Step 6: Assign your custom model to a campaign
 
-This step changes depending on the type of custom model you are using
-and whether you're using the API or UI to assign your model to a
-campaign. Expand the relevant option below for instructions.
+This step changes depending on the type of custom model you are using and whether you're using the API or UI to assign your model to a campaign. Expand the relevant option below for instructions.
 
-**Bid Price Model**
+#### Bid price model
 
 Using the API
 
-Use the <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">Campaign Service</a> to assign your custom
-model to a campaign. Be sure to:
+Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
 - Set `cpm_bid_type` to `"custom_model"`.
 
-- Provide the `id` of your custom model in the `bid_model` object. 
+- Provide the `id` of your custom model in the `bid_model` object.
 
-- Set `inventory_type` to `"real_time"`. 
+- Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
 
@@ -343,8 +242,6 @@ model to a campaign. Be sure to:
   ```
 
   **POST to campaign service**
-
-  
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
@@ -426,7 +323,7 @@ model to a campaign. Be sure to:
           },
           "dbg_info": {
               "instance": "61.bm-hbapi.prod.nym2",
-              "slave_hit": true,
+              "s1ave_hit": true,
               "db": "10.3.129.211",
               "awesomesauce_cache_used": false,
               "count_cache_used": false,
@@ -435,7 +332,7 @@ model to a campaign. Be sure to:
               "time": 48.674821853638,
               "start_microtime": 1436503279.2047,
               "version": "1.15.558",
-              "slave_lag": 0,
+              "s1ave_lag": 0,
               "member_last_modified_age": 1395,
               "output_term": "campaign"
           }
@@ -443,31 +340,20 @@ model to a campaign. Be sure to:
   }
   ```
 
-  
-
-**Bid Modifier Model**
+#### Bid modifier model
 
 Using the API
 
-Use the <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">Campaign Service</a> to assign your custom
-model to a campaign. Be sure to:
+Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
-- Set `cpm_bid_type` to an optimization-based buying strategy
-  (`"predicted"` or `"margin"`) and any corresponding required fields. 
-  - In the JSON below, for example, we set `cpm_bid_type` to
-    `"predicted"` and `cpc_click_goal` to `1.00` to optimize CPM bids to
-    a predicted $1.00 CPC goal.
+- Set `cpm_bid_type` to an optimization-based buying strategy (`"predicted"` or `"margin"`) and any corresponding required fields.
+  - In the JSON below, for example, we set `cpm_bid_type` to `"predicted"` and `cpc_click_goal` to `1.00` to optimize CPM bids to a predicted $1.00 CPC goal.
 
-- In the `bid_modifier_model` object, provide the `id` of the custom
-  model that will modify the campaign's CPM bids. 
+- In the `bid_modifier_model` object, provide the `id` of the custom model that will modify the campaign's CPM bids.
 
 - Set `inventory_type` to `"real_time"`.
 
   **JSON file defining your campaign**
-
-  
 
   ``` pre
   $ cat campaign.json
@@ -486,11 +372,7 @@ model to a campaign. Be sure to:
   }
   ```
 
-  
-
   **POST to campaign service**
-
-  
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
@@ -574,7 +456,7 @@ model to a campaign. Be sure to:
           },
           "dbg_info": {
               "instance": "64.bm-hbapi.prod.nym2",
-              "slave_hit": false,
+              "s1ave_hit": false,
               "db": "master",
               "awesomesauce_cache_used": false,
               "count_cache_used": false,
@@ -583,7 +465,7 @@ model to a campaign. Be sure to:
               "time": 1010.1411342621,
               "start_microtime": 1439240389.0273,
               "version": "1.15.580",
-              "slave_lag": 0,
+              "s1ave_lag": 0,
               "member_last_modified_age": 1439240389,
               "output_term": "campaign"
           }
@@ -591,38 +473,9 @@ model to a campaign. Be sure to:
   }
   ```
 
-  
+## Related topics
 
-
-
-
-
-## Related Topics
-
-
-
-
-
-- <a
-  href="bonsai-language-features.md"
-  class="xref" target="_blank">Bonsai Language Features</a>
-- <a
-  href="custom-model-parser-service.md"
-  class="xref" target="_blank">Custom Model Parser Service</a>
-- <a
-  href="custom-model-service.md"
-  class="xref" target="_blank">Custom Model Service</a>
-- <a
-  href="xandr-api/campaign-service.md"
-  class="xref" target="_blank">Campaign Service</a>
-
-
-
-
-<a href="the-bonsai-language.md" class="link">The Bonsai Language</a>
-
-
-
-
-
-
+- [Bonsai Language Features](bonsai-language-features.md)
+- [Custom Model Parser Service](custom-model-parser-service.md)
+- [Custom Model Service](custom-model-service.md)
+- [Campaign Service](../digital-platform-api/campaign-service.md)
