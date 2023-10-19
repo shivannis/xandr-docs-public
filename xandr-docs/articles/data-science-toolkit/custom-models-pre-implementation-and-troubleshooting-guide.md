@@ -46,7 +46,7 @@ In order to use custom models successfully, you must update the models
 based on performance. This can be done with two log-level data feeds:
 
 - [Custom Model Feed](log-level-custom-model-feed.md): this feed gives you information about models associated with
-  your line items and the values calculated by those models
+  your line items and the values calculated by those models.
 - [Standard Feed](../log-level-data/standard-feed.md): this feed gives
   information about transacted impressions.
 
@@ -57,7 +57,7 @@ You can also collect data from the log-level data feeds listed [here](../log-le
 Follow these troubleshooting steps if a line item is not delivering the
 expected results and has a custom model attached: 
 
-**Step 1: Determine if the Custom Model Is the Issue**
+**Step 1: Determine if the Custom Model is the Issue**
 
 If a line item is not delivering as expected it is possible the attached
 custom model is causing the issue. We recommend that prior to
@@ -223,14 +223,3 @@ of 0.01 for the ev_click model. 
 The bid value equation will vary depending on what type of custom model
 is attached to the line item. To understand how the custom model makes
 the given bid value, check what type of custom model you are using. 
-
-
-
-
-<a href="custom-models.md" class="link">Custom Models</a>
-
-
-
-
-
-

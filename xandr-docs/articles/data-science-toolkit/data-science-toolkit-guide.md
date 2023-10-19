@@ -6,7 +6,7 @@ ms.custom : data-science
 ---
 
 
-# Data Science Toolkit Guide
+# Data science toolkit guide
 
 The Xandr Data Science Toolkit is a set of tools
 that enables clients with data science capabilities to further their
@@ -26,13 +26,14 @@ Data Science Toolkit products.
   - [Bid Valuation with Custom Models](bid-valuation-with-custom-models.md)
   - [Creative Selection Custom Model](creative-selection-custom-model.md)
   - [Log-Level Custom Model Feed](log-level-custom-model-feed.md)
-  - [onvaluation Custom Model](nonvaluation-custom-model.md)
+  - [Nonvaluation Custom Model](nonvaluation-custom-model.md)
   - [Custom Models Pre-Implementation and Troubleshooting
     Guide](custom-models-pre-implementation-and-troubleshooting-guide.md)
   - [The Bonsai Language](the-bonsai-language.md)
     - [Bonsai Features](bonsai-language-features.md)
     - [Bonsai Smart Leaves](bonsai-smart-leaves.md)
     - [Create a Bonsai Decision Tree Custom Model](create-a-bonsai-decision-tree-custom-model.md)
+    - [Bonsai Custom Model Workflow](bonsai-custom-model-workflow.md)
   - [Logistic Regression Models](logistic-regression-models.md)
     - [Linear-Log Bucketing](linear-log-bucketing.md)
   - [Custom Model API Reference](custom-model-api-reference.md)

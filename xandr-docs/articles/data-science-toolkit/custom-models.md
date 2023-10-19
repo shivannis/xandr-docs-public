@@ -1,7 +1,7 @@
 ---
 title : Custom Models
 description : This page provides information on Custom Models, how Bid Value and Expected Value are derived and lists the different types of Custom
-Models .
+Models.
 ms.custom : data-science
 ---
 
@@ -66,9 +66,7 @@ else:
     creatives: {12347: 1}
 ```
 
-Please refer to our <a
-href="creative-selection-custom-model.md"
-class="xref" target="_blank">Creative Selection Custom Models </a>documentation
+Please refer to our [Creative Selection Custom Models](creative-selection-custom-model.md) documentation
 for more information on this use case. 
 
 **Non-Valuation Custom Models**
@@ -124,11 +122,3 @@ useful to analyze and report on them. The [Log-Level Custom Model Feed](log-leve
 - [Custom Model API Reference](custom-model-api-reference.md)
 - [Logistic Regression Models](logistic-regression-models.md)
 - [NonValuation Custom Model](nonvaluation-custom-model.md)
-
-
-
-
-
-
-
-

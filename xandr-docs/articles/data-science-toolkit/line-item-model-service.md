@@ -56,7 +56,7 @@ important for the following:
 |---|---|---|---|---|
 | `custom_model_id` | int | The ID of the custom-model associated with the Line Item | GET, PUT | `"custom_model_id": 211973` |
 | `line-item-models` | string, and array of custom-models | The ID of the Line Item that we have queried, along with the array of custom-models associated with that line-item | GET, PUT | ```"line_item_models": { "4125657": [ { "custom_model_id": 139527, "type": "cadence" }, { "custom_model_id": 130004, "type": "expected_value" } ] }``` |
-| `type` | string | The "type" of this model association. A full list of conditional component model types can be found on the Bid Valuation with Custom Models page. | GET, PUT | `"type": "ev_click"` |
+| `type` | string | The "type" of this model association. A full list of conditional component model types can be found on the [Bid Valuation with Custom Models](bid-valuation-with-custom-models.md) page. | GET, PUT | `"type": "ev_click"` |
 
 ## Usage examples
 

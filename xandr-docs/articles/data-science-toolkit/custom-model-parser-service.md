@@ -54,7 +54,7 @@ $ cat check_tree.json
 }
 ```
 
-## Step 3. `POST` the file to the Custom Model Parser Service
+## Step 3. `POST` the file to the custom model parser service
 
 Make a `POST` call to the Custom Model Parser Service as shown below.
 
@@ -117,7 +117,7 @@ invalid Bonsai syntax or invalid usage of Bonsai features. See [Error Messages](
 - [Syntax Errors](#syntax-errors)
 - [Feature Errors](#feature-errors)
 
-### Syntax Errors
+### Syntax errors
 
 - Illegal character found:
 
