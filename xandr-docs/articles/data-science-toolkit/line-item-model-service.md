@@ -26,7 +26,7 @@ important for the following:
 
 ## Usage
 
-**End Points**
+**End points**
 
 - **Domain**: [https://api.appnexus.com](https://api.appnexus.com/)
 - **Path**: `/line-item-model`
@@ -60,7 +60,7 @@ important for the following:
 
 ## Usage examples
 
-**GET Example**
+**GET example**
 
 \`GET\` custom-models associated to a Line Item
 
@@ -94,7 +94,7 @@ curl -H 'Authorization: {api_token}' 'https://api.appnexus.com/line-item-model?i
 }
 ```
 
-**PUT Example**
+**PUT example**
 
 \`PUT\` - Create and Update custom-models associated with a Line Item
 
@@ -159,7 +159,7 @@ curl -H 'Authorization: {api_token}' -d @update_models.json -X PUT 'https://api.
 }
 ```
 
-**DELETE Example**
+**DELETE example**
 
 \`DELETE\` a custom-model associated to a Line Item
 

@@ -28,7 +28,7 @@ for the various use-cases:
 
 ## Use cases
 
-**Bid Valuation Custom Models**
+**Bid valuation custom models**
 
 Custom Models are designed to allow data scientists, through the
 Xandr API, to break out specific portions of
@@ -46,7 +46,7 @@ only handle aspects of valuation that your own models do not cover.
 Please refer to our [Bid Valuation with Custom Models](bid-valuation-with-custom-models.md)
 documentation for more information on this use case. 
 
-**Creative Selection Custom Models**
+**Creative selection custom models**
 
 By default, Xandr randomly distributes the
 creatives associated with a line item. Custom Models enable users to
@@ -68,7 +68,7 @@ else:
 Please refer to our [Creative Selection Custom Models](creative-selection-custom-model.md) documentation
 for more information on this use case. 
 
-**Non-Valuation Custom Models**
+**Non-Valuation custom models**
 
 Non-valuation custom models do not affect bid valuation. They're used to
 insert custom creative macros into impression tracking calls, which can
@@ -87,8 +87,7 @@ how the Custom Models product can help you achieve your goals: 
 - [Creative Selection Custom Models](creative-selection-custom-model.md)
 - [Non Valuation Custom Models](nonvaluation-custom-model.md)
 
-**Step 2: Learn about Bonsai Decision Trees and Logistic Regression
-Models**
+**Step 2: Learn about Bonsai decision trees and logistic regression models**
 
 Learn more about the two language types we support and select the one
 that matches the needs to achieve your goals. For Bid Valuation Custom
@@ -99,7 +98,7 @@ decision trees. 
 - [Bonsai Language](the-bonsai-language.md)
 - [Logistic Regression Models](logistic-regression-models.md)
 
-**Step 3: Learn how to upload Custom Models via the API**
+**Step 3: Learn how to upload custom models via the API**
 
 Once you have built a Bonsai decision tree or Logistic Regression Model,
 learn how to attach them to your ALI and which API services to use: 

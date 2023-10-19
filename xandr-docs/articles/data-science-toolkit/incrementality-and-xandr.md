@@ -88,7 +88,7 @@ group.  
     group.
     - A key can be any string of characters and creates unique User
       Segmentation between Test & Control Groups. You can set the same
-      Key across multiple line items to ensure that they all have use
+      key across multiple line items to ensure that they all have use
       the same user segmentation - this will help ensure no
       cross-contamination across line items. See more below.
     - Control Group Percentage will determine the percentage of users
@@ -160,8 +160,7 @@ other DSPs running the same campaign.
   region. For example, if the campaign is to run in the United States,
   give Xandr exclusivity in certain states and
   have other buyers/DSPs run in the remaining states.
-  - **How to determine which geolocations to ring-fence to ensure no
-    bias in the test**  
+  - **How to determine which geolocations to ring-fence to ensure no bias in the test?**  
 
     In the above example, the recommendation would be to select a list
     of states that have similar Conversion Rates as the United States in
@@ -244,8 +243,7 @@ Exposed) might be highly valuable to other buyers. This means that the
 win bias could produce a negative lift measurement if not considered
 carefully.
 
-**How to ensure that the test and control groups you compare are
-statistically similar?**
+**How to ensure that the test and control groups you compare are statistically similar?**
 
 We generally recommend doing the following to ensure that the Test &
 Control Groups that you are comparing are statistically similar. Keep in

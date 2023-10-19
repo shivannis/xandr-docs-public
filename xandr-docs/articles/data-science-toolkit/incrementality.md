@@ -7,7 +7,7 @@ ms.custom : data-science
 
 # Data Science Toolkit - Incrementality
 
-## What is incrementality?
+## What is Incrementality?
 
 Advertisers want to ensure the effectiveness of their advertising
 campaigns and that they are getting the best return on their advertising
