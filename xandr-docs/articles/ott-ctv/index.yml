@@ -1,0 +1,23 @@
+### YamlMime:Landing
+
+title: OTT and CTV Integration Guide
+summary: Welcome to OTT and CTV Integration guide for developers! All the information you need is right here. You can simply search for what you need, or click one of the tiles below.
+metadata:
+  title: OTT and CTV Integration Guide
+  description: OTT and CTV Integration Guide
+  ms.topic: landing-page
+  ms.author: shivanni srinivasan
+  ms.service: app-service
+  ms.date: 19/10/2023
+
+landingContent:
+  - title: OTT and CTV Video Integrations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ott-and-ctv-video-integrations.md
+      - linkListType: how-to-guide
+        links:
+          - text: AppleTV SDK Integration Guide
+            url: appletv-sdk-integration-guide.md
