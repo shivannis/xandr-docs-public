@@ -358,7 +358,7 @@ By default, Xcode does not support non-secure HTTP requests. Certain development
 
 ### Managing x86_64 and ARM64 binary versions
 
-A Framework "ANTVSDK.framework" includes x86_64 and ARM64 binary to support both an emulator and an actual Apple TV device. In case you don't want to include the x86_64 binary in your application because of Apple AppStore guidelines, you can simply remove it using `lipo`, as shown in the following example:
+A framework "ANTVSDK.framework" includes x86_64 and ARM64 binary to support both an emulator and an actual Apple TV device. In case you don't want to include the x86_64 binary in your application because of Apple AppStore guidelines, you can simply remove it using `lipo`, as shown in the following example:
 
 ``` pre
 cd ANTVSDK.framework
