@@ -49,7 +49,7 @@ Model). The conditions can be based on a set of Bonsai features and feature valu
 
 Example: Decision tree for bid pricing
 
-:::image type="content" source="media/datascience-c.png" alt-text="Diagram of decision tree for bid pricing.":::
+:::image type="content" source="media/datascience-c.png" alt-text="Diagram of a decision tree for bid pricing.":::
 
 > [!NOTE]
 > Use custom models for pricing, not targeting.
@@ -68,7 +68,7 @@ Once you know the features and steps you want to follow to price or modify bids 
 Example: Bonsai tree for bid pricing
 
 > [!NOTE]
-> In the below code example, lines beginning with `#` are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with `#` are comments to help you understand the logic of this tree.
 
 ``` pre
 # This tree determines a bid price as follows:
@@ -166,9 +166,6 @@ $ cat custom_model.json
 
 Example: `POST` to `custom-model` service
 
-> [!NOTE]
-> This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
-
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
  
@@ -193,7 +190,7 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
         },
         "dbg_info": {
             "instance": "64.bm-hbapi.prod.nym2",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "db": "10.3.129.206",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -202,7 +199,7 @@ $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus
             "time": 39.799213409424,
             "start_microtime": 1438028779.7596,
             "version": "1.15.572",
-            "slave_lag": 0,
+            "s1ave_lag": 0,
             "member_last_modified_age": 21425,
             "output_term": "custom_model"
         }
@@ -245,9 +242,6 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   ```
 
   **POST to campaign service**
-  
-  > [!NOTE]
-  > This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
@@ -329,7 +323,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
           },
           "dbg_info": {
               "instance": "61.bm-hbapi.prod.nym2",
-              "slave_hit": true,
+              "s1ave_hit": true,
               "db": "10.3.129.211",
               "awesomesauce_cache_used": false,
               "count_cache_used": false,
@@ -338,7 +332,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
               "time": 48.674821853638,
               "start_microtime": 1436503279.2047,
               "version": "1.15.558",
-              "slave_lag": 0,
+              "s1ave_lag": 0,
               "member_last_modified_age": 1395,
               "output_term": "campaign"
           }
@@ -379,9 +373,6 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
   ```
 
   **POST to campaign service**
-
-  > [!NOTE]
-  > This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
 
   ``` pre
   $ curl -b cookies -c cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?advertiser_id=45278'
@@ -465,7 +456,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
           },
           "dbg_info": {
               "instance": "64.bm-hbapi.prod.nym2",
-              "slave_hit": false,
+              "s1ave_hit": false,
               "db": "master",
               "awesomesauce_cache_used": false,
               "count_cache_used": false,
@@ -474,7 +465,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
               "time": 1010.1411342621,
               "start_microtime": 1439240389.0273,
               "version": "1.15.580",
-              "slave_lag": 0,
+              "s1ave_lag": 0,
               "member_last_modified_age": 1439240389,
               "output_term": "campaign"
           }

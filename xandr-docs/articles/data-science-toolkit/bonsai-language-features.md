@@ -926,7 +926,7 @@ Evaluates impressions based on their intended audience as determined by the Xand
 
 **Operator**: Any except `<`, `>`, `<=`, `>=`, and `range`. To test for multiple values, use `in`.
 
-**Value**: `"general"`,`"children"`, `"young_adult"`, or `"mature"`.
+**Value**: `"general"`, `"children"`, `"young_adult"`, or `"mature"`.
 
 **Example**:
 
@@ -945,7 +945,7 @@ Evaluates impressions based on their intended audience as determined by self-aud
 
 **Operator**: Any except `<`, `>`, `<=`, `>=`, and `range`. To test for multiple values, use `in`.
 
-**Value**: `"general"`,`"children"`, `"young_adult"`, or `"mature"`.
+**Value**: `"general"`, `"children"`, `"young_adult"`, or `"mature"`.
 
 **Example**:
 
@@ -1077,7 +1077,7 @@ else:
 0.1
 ```
 
-### Campaign Hour Frequency
+### Campaign hour frequency
 
 Evaluate impressions based on the number of ads seen by a user on the current hour.
 
@@ -1386,7 +1386,7 @@ Evaluate impressions based on the presence of the user in a first-party or third
 
 **Attribute**: None
 
-**Operator**: None for presence, not for absence.
+**Operator**: None for presence, `not` for absence.
 
 **Value**: None
 

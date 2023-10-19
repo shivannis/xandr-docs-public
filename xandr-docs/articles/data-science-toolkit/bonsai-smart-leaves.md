@@ -45,7 +45,7 @@ minimum value is returned instead. If the result is greater than the maximum val
 ## Input fields for compute()
 
 The values for the input fields are determined by Xandr optimization. For more information, see the [Optimization
-Guide for the Augmented Line Item](https://console.appnexus.com/docs/optimization-guide-ali) in documentation. (Log in required)
+Guide for the Augmented Line Item](https://console.appnexus.com/docs/optimization-guide-ali) in the documentation. (Log in required)
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -80,7 +80,7 @@ You can perform calculations using frequency or recency to determine a bid value
 Example bid price with estimated average price. One leaf has a minimum allowable bid price but no limit on the maximum.
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
     # This tree determines a bid price as follows: 
@@ -98,7 +98,7 @@ Example bid price with estimated average price. One leaf has a minimum allowable
 Example bid price tree with estimated clearing price, no bid, and static value smart leaves.
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 # This tree determines a bid price as follows: 
@@ -123,7 +123,7 @@ else:
 Example bid modifier tree with estimated IAB viewthrough rate smart leaves.
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 # This tree determines a bid modifier as follows: 
@@ -148,7 +148,7 @@ else:
 Example bid based on segment value
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 #1. If the user is in California, bid the value of segment 111 times 2.0, plus 1.0.
@@ -163,7 +163,7 @@ else:
 Example bid based on segment age
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 #1. If the user is in California, bid the segment age times -.2, plus 8.0, as long as the bid is under 8.0.
@@ -179,7 +179,7 @@ else:
 Example bid based on daily frequency
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 #1. If the user is in California and in segment 111, bid the user's daily frequency for line item 222 times -.2, plus 5, with an upper bound of 4.
@@ -196,7 +196,7 @@ else:
 Example bid based on lifetime frequency
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 #1. If the user is in California and in segment 111, bid the lifetime frequency for creative 333 times -.2, plus 8, with an upper bound of 6.
@@ -213,7 +213,7 @@ else:
 Example bid based on recency
 
 > [!NOTE]
-> In the below code example, lines beginning with \# are comments to help you understand the logic of this tree.
+> In the code example below, lines beginning with \# are comments to help you understand the logic of this tree.
 
 ``` pre
 #1. If the user is in California, bid the recency for creative 333 times -.2, plus 8, with an upper bound of 6.

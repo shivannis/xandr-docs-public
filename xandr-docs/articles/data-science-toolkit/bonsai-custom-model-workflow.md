@@ -40,22 +40,21 @@ Once you know the features and steps you want to follow to price or modify bids 
 Example: Bonsai tree for bid pricing
 
 > [!NOTE]
-> Lines beginning with `#` are comments to help you understand the logic of this tree.
->
->    ``` pre
->    # This tree determines a bid price as follows:
->    # 1. If the user is in California, and the hour is between 12pm and 14pm there, bid $1.50.
->    # 2. If the user is in New York, and the hour is between 1am and 3am there, bid $0.10.
->    # 3. Otherwise, bid $0.50.
->     
->    if every region = "US:CA", user_hour range (12,14):
->            1.5
->    elif every region = "US:NY", user_hour range (1,3):
->            0.1
->    else:
->            0.5
->    ```
->
+> In the code example below, lines beginning with `#` are comments to help you understand the logic of this tree.
+
+``` pre
+# This tree determines a bid price as follows:
+# 1. If the user is in California, and the hour is between 12pm and 14pm there, bid $1.50.
+# 2. If the user is in New York, and the hour is between 1am and 3am there, bid $0.10.
+# 3. Otherwise, bid $0.50.
+ 
+if every region = "US:CA", user_hour range (12,14):
+        1.5
+elif every region = "US:NY", user_hour range (1,3):
+        0.1
+else:
+        0.5
+```
 
 ## Step 3: Encode your decision tree
 
@@ -139,9 +138,6 @@ $ cat custom_model.json
 
 Example: `POST` to `custom-model` service
 
-> [!NOTE]
-> This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we’ll remove it from this article.
-
 ``` pre
 $ curl -b cookies -c cookies -X POST -d @custom_model.json 'https://api.appnexus.com/custom-model'
  
@@ -171,7 +167,7 @@ else:
         },
         "dbg_info": {
             "instance": "64.bm-hbapi.prod.nym2",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "db": "10.3.129.206",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -180,7 +176,7 @@ else:
             "time": 39.799213409424,
             "start_microtime": 1438028779.7596,
             "version": "1.15.572",
-            "slave_lag": 0,
+            "s1ave_lag": 0,
             "member_last_modified_age": 21425,
             "output_term": "custom_model"
         }

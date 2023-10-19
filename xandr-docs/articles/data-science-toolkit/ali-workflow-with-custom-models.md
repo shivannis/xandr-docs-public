@@ -17,7 +17,7 @@ The syntax for Bonsai trees and the features currently available for campaigns i
 
 ### Example
 
-For the purposes of this example, we will create a simple tree (a literal \``0`\` character) under a test advertiser:
+For the purposes of this example, we will create a simple tree (a literal '`0`' character) under a test advertiser:
 
 #### Custom model
 
@@ -75,7 +75,7 @@ Custom models are designed to enable Xandr API users to add decision-making logi
 
 ## Associating a custom model with an ALI
 
-On augmented line items, there is an array field titled, \``custom_models`\` which lists custom models associated with a Line
+On augmented line items, there is an array field titled, '`custom_models`' which lists custom models associated with a Line
 Item. Instructions for associating a custom model with an ALI can be found in the [Line Item Model Service documentation](line-item-model-service.md).
 
 ### Targeting IP addresses
@@ -132,6 +132,6 @@ The following model types can be associated as custom models to your Line Item:
 | `cadence` | Cadence modifier for this impression. | Float |
 
 > [!NOTE]
-> A \``goal_type`\` of \``custom`\` on your Line Item is only required in some scenarios, such as associating an \``expected_value`\` model with your Line Item. Certain optimization features, such as Ranked Discovery will be disabled when using this `goal_type` with your Custom Models.
+> A '`goal_type`' of '`custom`' on your Line Item is only required in some scenarios, such as associating an '`expected_value`' model with your Line Item. Certain optimization features, such as Ranked Discovery will be disabled when using this `goal_type` with your Custom Models.
 >
 > Read the [Custom Models](custom-models.md) page to learn how the bid calculation is affected by Line Item goals and associated component models.

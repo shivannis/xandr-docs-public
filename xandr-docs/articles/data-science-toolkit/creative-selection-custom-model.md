@@ -13,9 +13,7 @@ By default, Xandr randomly distributes the creatives associated with a line item
 
 ## How weighting works?
 
-In each leaf, you list creative IDs and their weights. Weights may be integers between 0-1000.
-
-The allocation percentage of a creative is determined by dividing the creative's weight by the sum of the weight of all eligible creatives.
+In each leaf, you list creative IDs and their weights. Weights may be integers between 0-1000. The allocation percentage of a creative is determined by dividing the creative's weight by the sum of the weight of all eligible creatives.
   
 For example, a line item has three creatives, A, B, and C and they are weighted respectively 50, 30, and 20. They will serve on 50%, 30%, and 20% of all impressions if all creatives are eligible. If only creatives B and C are eligible, creative B will serve on 60% of impressions and creative C will serve on 40%.
 
