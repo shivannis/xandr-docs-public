@@ -1,8 +1,8 @@
-- name: OTT-CTV Developer Documentation
+- name: OTT and CTV Video Integrations
   href: index.yml
 - name: Getting Started
   items:
     - name: Overview
       href: ott-and-ctv-video-integrations.md
-    - name: SDK Integration Guide
+    - name: AppleTV SDK Integration Guide
       href: appletv-sdk-integration-guide.md
