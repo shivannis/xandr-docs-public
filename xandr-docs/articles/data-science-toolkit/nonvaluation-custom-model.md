@@ -1,91 +1,46 @@
 ---
-Title : Nonvaluation Custom Model
-Description : Non-valuation custom models do not affect bid valuation. 
-ms.custom : data-science
+title: Data Science Toolkit - Non-valuation Custom Model
+description: Use non-valuation custom models to insert creative macros into impression tracking calls. Non-valuation custom models do not affect bid valuation. 
 ---
 
+# Data Science Toolkit - Non-valuation custom model
 
-# Nonvaluation Custom Model
+Non-valuation custom models do not affect bid valuation. They are used to insert custom creative macros into impression tracking calls, and will eventually be used for other functions, such as affecting Learn status.
 
+A creative macro is a text placeholder that is replaced with some useful piece of impression-level information when a creative is served. Creative macros are used to transmit impression-level information to systems outside of Xandr, which you can then use for reporting, optimization, and many other purposes. For example, if you use third-party creative hosting, you could use a macro to populate a segment ID in your placement, which the creative server would then use to decide which creative to serve.
 
+> [!NOTE]
+> This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).
 
-Non-valuation custom models do not affect bid valuation. They are used
-to insert custom creative macros into impression tracking calls, and
-will eventually be used for other functions, such as affecting Learn
-status. 
+## Creative macro leaf syntax
 
-A creative macro is a text placeholder that is replaced with some useful
-piece of impression-level information when a creative is
-served. Creative macros are used to transmit impression-level
-information to systems outside of Xandr, which
-you can then use for reporting, optimization, and many other purposes. 
-For example, if you use third-party creative hosting, you could use a
-macro to populate a segment ID in your placement, which the creative
-server would then use to decide which creative to serve. 
+In order for a macro to communicate with the ad server and pass what information should be populated, it must be preceded by a key. The syntax for creative macro leaves is:
 
-
-
-<b>Note:</b> This functionality is only
-available for the <a
-href="xandr-api/line-item-service---ali.md"
-class="xref" target="_blank">Augmented Line Item</a>.
-
-
-
-
-
-## Creative Macro Leaf Syntax
-
-In order for a macro to communicate with the ad server and pass what
-information should be populated, it must be preceded by a key. The
-syntax for creative macro leaves is:
-
-``` pre
+```pre
 leaf_name: "name"
 creative_macros["MACRO1"]: "value1"
 creative_macros["MACRO2"]: "value2
 ```
 
-Since this is a non-valuation model, a value is not required. It is
-possible to have a leaf that consists simply of the `leaf_name`.
-(See the <a
-href="nonvaluation-custom-model.html#ID-000006e8__example_nonvaluation_custom_model"
-class="xref">example</a> below for more information.)
+Since this is a non-valuation model, a value is not required. It is possible to have a leaf that consists simply of the `leaf_name`. See the [example](#example) below for more information.
 
 Please note the following restrictions:
 
 - Macros are case-sensitive.
-- Keys and values can contain Unicode text that must not be bigger than
-  100 utf-8 encoded bytes in total.
-- The parser applies
-  the <a href="https://en.wikipedia.org/wiki/Unicode_equivalence#Normal_forms"
-  class="xref" target="_blank">NFC Unicode transformation</a> and may
-  change the Unicode codepoints and the resulting utf-8 encoded result.
-  The best way to avoid unpredictable behavior is to always use
-  NFC-normalized text both in the key and value.
+- Keys and values can contain Unicode text that must not be bigger than 100 utf-8 encoded bytes in total.
+- The parser applies the [NFC Unicode transformation](https://en.wikipedia.org/wiki/Unicode_equivalence#Normal_forms) and may change the Unicode codepoints and the resulting utf-8 encoded result. The best way to avoid unpredictable behavior is to always use NFC-normalized text both in the key and value.
 - There may be no more than two macros per leaf.
 
+> [!NOTE]
+> Do not duplicate the names of existing [Xandr Creative Macros](../bidders/xandr-macros.md). This may cause unpredictable behavior.
 
+## API workflow
 
-<b>Note:</b> Do not duplicate the names of
-existing <a
-href="xandr-bidders/xandr-macros.md"
-class="xref" target="_blank">Xandr Creative
-Macros</a>. This may cause unpredictable behavior. 
-
-
-
-
-
-
-
-## API Workflow
-
-**Step 1. Create an augmented line item.**
+**Step 1. Create an augmented line item**
 
 In this example, we create an augmented line item.
 
-``` pre
+```pre
 $cat ali
 {
     "line-item": {
@@ -187,17 +142,13 @@ $curl -b cookies -X POST -s -d @ali "https://api.appnexus.com/line-item?advertis
 } 
 ```
 
-  
-For more information, see
-<a href="ali-workflow-with-custom-models.md" class="xref">ALI Workflow
-with Custom Models</a>.
+For more information, see [ALI Workflow with Custom Models](./ali-workflow-with-custom-models.md).
 
-**Step 2. Create a custom model tree.**
+**Step 2. Create a custom model tree**
 
-In this example, we create a custom model that will insert the creative
-macros.
+In this example, we create a custom model that will insert the creative macros.
 
-``` pre
+```pre
 $cat custom-macro-tree
 if user_hour = 1:
     leaf_name: "cm_1"
@@ -208,11 +159,11 @@ else:
     creative_macros["TestMacro"]: "yourvaluegoeshere"
 ```
 
-**Step 3. Upload the custom model.**
+**Step 3. Upload the custom model**
 
 In this example, we upload the custom model.
 
-``` pre
+```pre
 $ cat custom_model
  
 {
@@ -252,17 +203,13 @@ $ curl -b cookies -X POST -d @custom-model "https://api.appnexus.com/custom-mode
 } 
 ```
 
-For more information, see
-<a href="custom-model-service.md" class="xref">Custom Model
-Service</a>.
+For more information, see [Custom Model Service](./custom-model-service.md).
 
 **Step 4. Associate the custom model with the line item.**
 
-In this example, we associate the custom model with the line item by
-setting the `type` field in the line item's `custom_models` array to
-'nonvaluation'.
+In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to 'nonvaluation'.
 
-``` pre
+```pre
 $cat update-ali
 {
     "line-item": {
@@ -376,13 +323,14 @@ $curl -b cookies -X PUT -d '@update-ali' "https://api.appnexus.com/line-item?id=
 
 
 
+<div id="ID-000006e8__example_nonvaluation_custom_model"
 >
 
 ## Example
 
- Creative macro non-valuation custom model
+Creative macro non-valuation custom model
 
-``` pre
+```pre
 #1. If the user hour is between 1am and 2am, insert the macro MyCustomMacro1 with a value of "testvalue1" and the macro MyCustomMacro2 with a value of "testvalue2".
 #2. Otherwise, do nothing. (Since this is a non-valuation custom model, a value is not required for the second leaf.)
 if user_hour = 1:
@@ -393,13 +341,5 @@ else:
     leaf_name: "cm_2" 
 ```
 
-
-
-
-<a href="custom-models.md" class="link">Custom Models</a>
-
-
-
-
-
-
+## Related topic
+[Custom Models](./custom-models.md)
