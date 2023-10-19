@@ -1,14 +1,13 @@
 ---
 title : Data Science Toolkit Guide
-description : The Microsoft Data Science Toolkit is a set of tools that enables clients with data science capabilities to further their
-bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
+description : Learn how Microsoft Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
 ms.custom : data-science
 ---
 
 
 # Data science toolkit guide
 
-The Xandr Data Science Toolkit is a set of tools
+The Microsoft Data Science Toolkit is a set of tools
 that enables clients with data science capabilities to further their
 bidding strategy, improve their measurement and testing capabilities,
 and run in-depth outcome analyses. Products that are currently included

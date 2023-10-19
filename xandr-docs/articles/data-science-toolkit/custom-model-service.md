@@ -1,6 +1,6 @@
 ---
 title : Custom Model Service
-description : The Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns.
+description : Learn how the Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns.
 ms.custom : data-science
 ---
 

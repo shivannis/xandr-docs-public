@@ -1,11 +1,11 @@
 ---
-title : Incrementality and Xandr
-description : The basic idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group.
+title : Data Science - Incrementality and Xandr
+description : Learn that the idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group.
 ms.custom : data-science
 ---
 
 
-# Incrementality and Xandr
+# Data Science - Incrementality and Xandr
 
 ## Measuring incrementality
 
