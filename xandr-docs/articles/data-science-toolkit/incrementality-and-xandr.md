@@ -1,31 +1,24 @@
 ---
-Title : Incrementality and Xandr
-Description : ## Measuring Incrementality
-**How is Incrementality Measured**
-The basic idea behind measuring incrementality is to split users into
-test and control groups and only show ads to users in the test group.
+title : Data Science Toolkit - Incrementality and Xandr
+description : Learn that the idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group.
 ms.custom : data-science
 ---
 
 
-# Incrementality and Xandr
+# Data Science Toolkit  - Incrementality and Xandr
 
+## Measuring incrementality
 
-
-
-
-## Measuring Incrementality
-
-**How is Incrementality Measured**
+**How is Incrementality measured?**
 
 The basic idea behind measuring incrementality is to split users into
 test and control groups and only show ads to users in the test group.
 The goal is to see if the users in the test group spend more money on
-the advertiser's products than the users who were not exposed to ads. 
-![Control Group Testing Options]("media/datascience-d.png)
+the advertiser's products than the users who were not exposed to ads.
 
+:::image type="content" source="./media/datascience-d.png" alt-text="Screenshot of Control Group Testing Options.":::
 
-
+**Control group testing options**
 
 There are several options for control group testing, each comes with
 varying costs and degrees of accuracy. 
@@ -49,10 +42,7 @@ varying costs and degrees of accuracy. 
   design a clean test and does not require wasting a percentage of your
   budget on PSA Banners.
 
-**Xandr Ghost Bidding and the Incrementality
-Feed**
-
-
+**Xandr Ghost Bidding and the Incrementality feed**
 
 Xandr offers clients with data science
 capabilities the ability to measure incrementality. We provide the
@@ -67,11 +57,7 @@ control groups, the “winning” bid is pulled from the auction so that the
 audience is not exposed to the ad. The feed contains one row per
 impression.
 
-
-
-
-
-## Audience Segmentation
+## Audience segmentation
 
 You can split your target audience into a test and control group by one
 of two methods: 
@@ -91,25 +77,18 @@ the same unique key.  The other setting is a percentage that will
 determine the number of users that will be included in the control
 group.  
 
+> [!NOTE]
+> Setting the same key on different line items means that the same test and control groups will be used for these line items.
 
+**How to set up a line item for Incrementality?**
 
-<b>Note:</b> Setting the same key on different
-line items means that the same test and control groups will be used for
-these line items.
-
-
-
-**How to Set Up a Line Item for Incrementality**
-
-1.  In , go to  Line
-    Item \> Basic Setup
-    \> Incrementality  and
-    select “Use control group”
-2.  Assign a key and a percentage of users to assign to the control
+1. In , go to  **Line Item \> Basic Setup \> Incrementality**  and
+    select **“Use control group”**.
+1. Assign a key and a percentage of users to assign to the control
     group.
-    - A Key can be any string of characters and creates unique User
+    - A key can be any string of characters and creates unique User
       Segmentation between Test & Control Groups. You can set the same
-      Key across multiple line items to ensure that they all have use
+      key across multiple line items to ensure that they all have use
       the same user segmentation - this will help ensure no
       cross-contamination across line items. See more below.
     - Control Group Percentage will determine the percentage of users
@@ -121,12 +100,8 @@ You can also choose to create your own grouping of test and control
 users using a pre-created segment. This is a single segment that
 determines test or control using the segment's  `value`  field. 
 
-
-
-<b>Note:</b> This option is only available
-through the Xandr API. 
-
-
+> [!NOTE]
+> This option is only available through the Xandr API.
 
 **The following values can be used**:
 
@@ -136,9 +111,7 @@ through the Xandr API. 
   This segment setting will create a row in the Incrementality feed and
   then skip to the next result. 
 
-For additional information on working with Segment Values see <a
-href="xandr-bidders/bss-avro-file-format.md"
-class="xref" target="_blank">Batch Segment Service</a>. 
+For additional information on working with Segment Values see [Batch Segment Service](../bidders/bss-avro-file-format.md). 
 
 **Why custom groupings are beneficial:**
 
@@ -151,13 +124,9 @@ class="xref" target="_blank">Batch Segment Service</a>. 
   test/control, we will contaminate your measurement with cookies that
   cross from test/control that should be aligned to a mapped consumer.
 
+## Considerations for planning incrementality tests
 
-
-
-
-## Considerations for Planning Incrementality Tests
-
-**Begin With a Well-Framed Hypothesis**
+**Begin with a well-framed hypothesis**
 
 Ensure you are starting with a well-framed hypothesis. The testing of
 incrementality should be done to answer a hypothesis on incremental lift
@@ -172,14 +141,14 @@ group are unintentionally exposed to advertising. Minimizing
 contamination is crucial for a clean test. When you are designing your
 test, consider the following to help minimize contamination: 
 
-**Ensure the Control Group is Not Exposed to External Buyers or DSPs
-Running a Similar Campaign**
+**Ensure the control group is not exposed to external buyers or DSPs
+running a similar campaign**
 
 It is important to ensure that users that are assigned to the control
 group in our platform are not exposed to ads from external buyers, or
 other DSPs running the same campaign.
 
-**How to mitigate**
+**How to mitigate?**
 
 - The ideal scenario is to ensure that Xandr is
   the only DSP running a particular campaign. It is important to think
@@ -191,15 +160,14 @@ other DSPs running the same campaign.
   region. For example, if the campaign is to run in the United States,
   give Xandr exclusivity in certain states and
   have other buyers/DSPs run in the remaining states.
-  - **How to determine which geolocations to ring-fence to ensure no
-    bias in the test**  
+  - **How to determine which geolocations to ring-fence to ensure no bias in the test?**  
 
     In the above example, the recommendation would be to select a list
     of states that have similar Conversion Rates as the United States in
     general. This should make the results of the lift test
     representative of the United States as a whole.
 
-**The Campaign May Run on Other Channels**
+**The campaign may run on other channels**
 
 It is likely that the marketing budget for a campaign will not be
 isolated to programmatic activity and there will be other channels, such
@@ -209,32 +177,32 @@ measurement of the impact for the campaign you are testing, in the
 context of all related advertising. The resulting lift will be smaller
 but your analysis will present a real-world measurement.
 
-**How to mitigate**
+**How to mitigate?**
 
 Ensure that the "background" advertising is the same for the test and
 control groups.
 
-**Line Item Cross-contamination **
+**Line item cross-contamination**
 
 If your campaign has multiple line items, for example, one for
 prospecting and another for retargeting, it is important to ensure that
 there is no cross-contamination between them.
 
-**How to mitigate**
+**How to mitigate?**
 
 Setting the same key across all of your line items in the test will
 ensure that they all use the same user segmentation, making it
 impossible for one line item to target control group users from a
 different line item.
 
-**Users on Multiple Devices**
+**Users on multiple devices**
 
 It is important to note that the default, randomized user segmentation
 does not account for multiple devices. This means that the same user can
 be both in a test and a control group depending on which device they are
 using.
 
-**How to mitigate**
+**How to mitigate?**
 
 - If you are able to build a cross-device graph using first-party data,
   then you can upload your own user segmentation via the API.
@@ -245,7 +213,7 @@ using.
   is the most intrusive way and will likely have an impact on campaign
   performance.
 
-**Effectively Comparing Test and Control Groups**
+**Effectively comparing test and control groups**
 
 In ghost bidding, the randomization of users into test and control
 groups, either by the client or by Xandr,
@@ -255,56 +223,18 @@ to an ad in the test group are subject to a win bias . 
 
 The test group can now be thought of as being split into two subsets,
 exposed and not exposed to an ad. The table below provides a means of
-categorizing the three groups. 
+categorizing the three groups.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002ae0__entry__1"
-class="entry align-left colsep-1 rowsep-1">User Group</th>
-<th id="ID-00002ae0__entry__2"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__1">Test Group (Exposed)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__2">Users you see in the Incrementality Feed
-with <code class="ph codeph">is_control = 0</code>, who are also in the
-Standard Feed.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__1">Test Group (Not Exposed)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__2">Users you see in the Incrementality Feed
-with <code class="ph codeph">is_control = 0</code>, who do not appear in
-the Standard Feed. They are not in the Standard Feed because we have not
-transacted any imps with them.  We did not end up winning the bid
-somewhere down the line in an auction. This could be for a variety of
-reasons such as a buyer using a different DSP won it.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__1">Control Group (Not Exposed)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__2">Users you see in the Incrementality Feed
-with <code class="ph codeph">is_control = 1</code> (you would never see
-these users in the Standard Feed, as we pull our bids and never actually
-want to transact those impressions).</td>
-</tr>
-</tbody>
-</table>
+| User Group | Description |  |  |
+|---|---|---|---|
+| Control Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 1` (you would never see these users in the Standard Feed, as we pull our bids and never actually want to transact those impressions). |  |  |
+| Test Group (Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who are also in the Standard Feed. |  |  |
+| Test Group (Not Exposed) | Users you see in the Incrementality Feed with `is_control = 0`, who do not appear in the Standard Feed. They are not in the Standard Feed because we have not transacted any imps with them.  We did not end up winning the bid somewhere down the line in an auction. This could be for a variety of reasons such as a buyer using a different DSP won it. |  |  |
 
-
-
-<b>Note:</b> Because they likely are not
-statistically similar you cannot just compare:
-
-- Test Group (Exposed) vs Control Group (Not Exposed).
-- Test Group (Exposed) vs Control Group + Test Group (Not Exposed).
+> [!NOTE]
+> Because they likely are not statistically similar you cannot just compare:
+> - Test Group (Exposed) vs Control Group (Not Exposed).
+> - Test Group (Exposed) vs Control Group + Test Group (Not Exposed).
 
 
 
@@ -313,8 +243,7 @@ Exposed) might be highly valuable to other buyers. This means that the
 win bias could produce a negative lift measurement if not considered
 carefully.
 
-**How to ensure that the test and control groups you compare are
-statistically similar?**
+**How to ensure that the test and control groups you compare are statistically similar?**
 
 We generally recommend doing the following to ensure that the Test &
 Control Groups that you are comparing are statistically similar. Keep in
@@ -331,7 +260,7 @@ science team's approach:
   distribution of users that have these important features across both
   the test and control groups.
 
-**Control Group Nuances**
+**Control group nuances**
 
 As with test groups having some percentage of their users that will not
 be served ads, the same is true for members of the control group.  The
@@ -341,42 +270,34 @@ reflect which users could have won, rather than which would have won. 
 To estimate the number of impressions that the control group would have
 actually won, you might want to look at Win Rate for the test group.
 
-
-
-<b>Note:</b> Xandr
-logs winning bids in the internal auction, but there are instances where
-it is possible to win a final auction on price but lose on another
-metric set up by the publisher. This means that test users will have
-impressions that were won at lower ranks (not all auction_ids in the
-standard feed will be found in the incrementality_feed).
-
-
+> [!NOTE]
+> Xandr logs winning bids in the internal auction, but there are instances where it is possible to win a final auction on price but lose on another metric set up by the publisher. This means that test users will have impressions that were won at lower ranks (not all auction_ids in the standard feed will be found in the incrementality_feed).
 
 It might be helpful to review how an auction works for an Incrementality
 Line Item:
 
-1.  An ad slot in a web browser sends out a bid request.
+1. An ad slot in a web browser sends out a bid request.
     - Bid request is enriched with user and contextual data through
       ImpBus.
-2.  Bid request is sent to AppNexus Bidder and
+1. Bid request is sent to AppNexus Bidder and
     External Demand.
-3.  Bidder internal auction happens – all LI on console.
-4.  If the bid from a LI associated with an Incrementality Segment is
+1. Bidder internal auction happens – all LI on console.
+1. If the bid from a LI associated with an Incrementality Segment is
     the top auction rank then this impression is logged in the
     Incrementality Feed
     - If the user is in the Control group (1), the bid is pulled from
       the bid list
     - If the user is in the Test group (0), the bid continues as normal
-5.  Top ranked test bids are sent on to Imp Bus from Console, and
+1. Top ranked test bids are sent on to Imp Bus from Console, and
     External Bidders respond to Imp Bus.
-6.  Imp Bus applies seller ad quality rules and holds a final auction.
-7.  The ad is sent back to the web page
+1. Imp Bus applies seller ad quality rules and holds a final auction.
+1. The ad is sent back to the web page
     - If this ad request is coming from external supply, then the winner
       is sent to an SSP where the true final auction happens
-8.  Ad sends back a render signal to Imp Bus.
-9.  Impression is logged in standard_feed.
+1. Ad sends back a render signal to Imp Bus.
+1. Impression is logged in standard_feed.
 
-**Think About Statistical Significance**
+**Think about statistical significance**
 
 Statistical significance is the likelihood that a relationship between
 two or more variables is caused by something other than chance. You use
@@ -396,29 +317,21 @@ conversion rate).
 
 These two formulas can help you determine the sample rate needed:
 
+:::image type="content" source="./media/datascience-e.png" alt-text="Diagram of sample rate - 1.":::
 
-![sample rate - 1](media/datascience-e.png)
-
-![sample rate - 2](media/datascience-f.png)
+:::image type="content" source="./media/datascience-f.png" alt-text="Diagram of sample rate - 2.":::
 
 
 **Statistic test**
 
 Once you receive a metric such as a conversion rate for both the control
-and test groups, use either a 
-<a href="https://en.wikipedia.org/wiki/Student%27s_t-test" class="xref"
-target="_blank">T-test</a>  or a  <a
-href="https://en.wikipedia.org/wiki/Z-test#:~:text=A%20t%2Dtest%20can%20be%2cand%20population%20variance%20is%20unknown."
-class="xref" target="_blank">Z-test</a>  to determine whether the
-incrementality difference is statistically significant or not.  
+and test groups, use either a [T-test](https://en.wikipedia.org/wiki/Student%27s_t-test) or a [Z-test](https://en.wikipedia.org/wiki/Z-test#:~:text=A%20t%2Dtest%20can%20be%2cand%20population%20variance%20is%20unknown.) to determine whether the incrementality difference is statistically significant or not.  
+
 Follow these steps to determine the incrementality difference:
 
-1.  Calculate the T-value.
-2.  Get the P-value for the T-value.
-3.  Compare the P-value to the predefined 
-    <a href="https://en.wikipedia.org/wiki/Statistical_significance"
-    class="xref" target="_blank">significance level</a>  α (typically
-    set to 5%).
+1. Calculate the T-value.
+1. Get the P-value for the T-value.
+1. Compare the P-value to the predefined [significance level](https://en.wikipedia.org/wiki/Statistical_significance) α (typically set to 5%).
 
 **Required sample size**
 
@@ -431,103 +344,47 @@ following parameters.
   the test group and control group).
 - Desired level of statical significance α.
 - Desired power β.
-- Type of the test: <a
-  href="https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/"
-  class="xref" target="_blank">one-tailed or two-tailed test</a>.
+- Type of the test: [one-tailed or two-tailed test](https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/).
 
-**Setting the Control Group Percentage**
+**Setting the control group percentage**
 
 The control group percentage, whether it is set through the Line Item
 settings in Microsoft Invest or the platform's API, cannot exceed 20
 percent.  We recommend a percentage between 10 and 20 for best results. 
 
-**Additional Considerations**
+**Additional considerations**
 
-**Optimization Behaviour**
+**Optimization behaviour**
 
 It is important to understand how optimization can behave differently
 between bidding for the test and control groups.
 
 Since the control group users bids are pulled and they never served ads,
-<a
-href="invest/frequency-and-recency-caps.md"
-class="xref" target="_blank">frequency and recency</a> measurements will
-always be different for them.  This means that the Cadence Modifier will
-behave differently between test and control groups. See the image below
-for an overview of how the Cadence Modifier impacts Bid Value. 
-![Cadence Modifier impacts Bid Value](media/datascience-g.png)
+ [frequency and recency](../invest/frequency-and-recency-caps.md)
+ measurements will always be different for them.  This means that the Cadence Modifier will behave differently between test and control groups. See the image below for an overview of how the Cadence Modifier impacts Bid Value.
 
+:::image type="content" source="./media/datascience-g.png" alt-text="Diagram of Cadence Modifier impacts Bid Value."::: 
 
-**How to mitigate**
+**How to mitigate?**
 
 - Use Custom Models to override the Cadence Modifier and set it to one.
   This will ensure the same bidding behavior for both test and control
   groups.
 - Use a flat bid for your test and optimize manually.
 
+> [!NOTE]
+> These approaches can potentially impact your campaign performance.
 
-
-<b>Note:</b> These approaches can potentially
-impact your campaign performance.
-
-
-
-**Excluded Sellers**
+**Excluded sellers**
 
 We are currently unable to run Incrementality Tests
 on **Verizon's** and **MoPub's**  inventory, so the following Seller
 Member IDs have to be excluded in Line Item's targeting:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002ae0__entry__9"
-class="entry align-left colsep-1 rowsep-1">Seller Name</th>
-<th id="ID-00002ae0__entry__10"
-class="entry align-left colsep-1 rowsep-1">Seller ID</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__9">Verizon Media (O&amp;O Display)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__10">273</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__9">Verizon Media Video Exchange</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__10">3292</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__9">Verizon Media Exchange</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__10">11664</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__9">Verizon Media (O&amp;O Video)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__10">11665</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__9">MoPub</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ae0__entry__10">1813</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-<a href="incrementality.md" class="link">Incrementality</a>
-
-
-
-
-
-
+| Seller Name | Seller ID |
+|---|---|
+| MoPub | 1813 |
+| Verizon Media (O&O Display) | 273 |
+| Verizon Media (O&O Video) | 11665 |
+| Verizon Media Exchange | 11664 |
+| Verizon Media Video Exchange | 3292 |

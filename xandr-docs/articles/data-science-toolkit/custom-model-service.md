@@ -1,31 +1,18 @@
 ---
-Title : Custom Model Service
-Description : The Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns. For background
+title : Data Science Toolkit - Custom Model Service
+description : Learn how the Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns.
 ms.custom : data-science
 ---
 
 
-# Custom Model Service
-
-
+# Data Science Toolkit - Custom model service
 
 The Custom Model service lets you add and maintain custom predictive
 models (decision trees) for use in campaigns. For background
-information, see <a
-href="custom-models.md"
-class="xref" target="_blank">Custom Models</a>.
+information, see [Custom Models](custom-models.md).
 
-
-
-<b>Tip:</b> Before adding a custom model, use
-the <a
-href="custom-model-parser-service.md"
-class="xref" target="_blank">Custom Model Parser Service</a> to check
-the validity and size of your decision tree.
-
-
-
-
+> [!TIP]
+> Before adding a custom model, use the [Custom Model Parser Service](custom-model-parser-service.md) to check the validity and size of your decision tree.
 
 ## REST API
 
@@ -43,30 +30,26 @@ PUT https://api.appnexus.com/custom-model?id=ID
 (model_update JSON)
 ```
 
-**View all custom models:  **
+**View all custom models:**
 
 ``` pre
 GET https://api.appnexus.com/custom-model
 ```
 
-**View a specific custom model: **
+**View a specific custom model:**
 
 ``` pre
 GET https://api.appnexus.com/custom-model?id=ID
 ```
 
-**Delete a custom model: **
+**Delete a custom model:**
 
 ``` pre
 DELETE https://api.appnexus.com/custom-model?id=ID
 ```
 
-
-
-<b>Note:</b> You cannot delete a custom model
-that is used by one or more campaigns.
-
-
+> [!NOTE]
+> You cannot delete a custom model that is used by one or more campaigns.
 
 **Find out which fields you can filter and sort by:**
 
@@ -74,200 +57,21 @@ that is used by one or more campaigns.
 GET https://api.appnexus.com/custom-model/meta
 ```
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000aaa__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000aaa__entry__2" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00000aaa__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-ID of the custom model.
-<p><strong>Default</strong>: Auto-generated number</p>
-<p><strong>Required On</strong>: <code class="ph codeph">PUT/</code>
-<code class="ph codeph">DELETE</code>, in query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">string (191)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-name of the custom model. This must be unique and must be no more than
-191 characters.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">A
-custom code that is used as an external ID or as a look-up value for an
-object. This value must be unique within your member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__3"><strong>Read-only</strong>. The ID of
-the member to which the custom model belongs.
-<p><strong>Default</strong>: Member's ID</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-ID of the advertiser to which the custom model belongs.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">custom_model_structure</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-structure of the custom model. Currently, the only allowed structure is
-<code class="ph codeph">"decision_tree"</code>.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">model_output</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-type of custom model. Possible values:
-<ul>
-<li><code class="ph codeph">"bid"</code>: The Bid Price model outputs a
-CPM bid. This type of model serves as a campaign's third-party buying
-strategy in place of standard CPM strategies. To use this type of model
-in a <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">campaign</a>, set <code
-class="ph codeph">cpm_bid_type</code> to <code
-class="ph codeph">"custom_model"</code> and then specify the custom
-model ID in the <code class="ph codeph">bid_model</code> object.</li>
-<li><p><code class="ph codeph">"bid_modifier"</code>: The Bid Modifier
-model applies a multiplier to a campaign's optimization-derived CPM bid.
-This type of model is used in conjunction with a <span
-class="ph">Xandr optimization-based buying strategy (when <code
-class="ph codeph">cpm_bid_type</code> is <code
-class="ph codeph">"predicted"</code> or <code
-class="ph codeph">"margin"</code>). To use this type of model in a <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">campaign</a>, specify the custom model ID
-in the <code class="ph codeph">bid_modifier_model</code> object.</p>
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">model_text</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">The
-logic of the model, expressed as a decision tree. You must write your
-decision tree in our Bonsai Language and then include a base64-encoded
-version here.
-<p><strong>Default</strong>: <code class="ph codeph">null</code></p>
-
-<b>Note:</b>
-<ul>
-<li>Size limit: Your tree must be smaller than 3 MB, or 3,145,728 bytes.
-If it is larger than that, you will not be able to add your tree.<br />
-</li>
-<li><p>GET queries: In a GET query, the <code
-class="ph codeph">model_text</code> will ONLY be returned if you provide
-a model ID in the query string. It will not be returned for unfiltered
-queries.</p></li>
-<li>Check the Validity and Size of Your Tree.</li>
-<li>Before adding a custom model, use the <a
-href="custom-model-parser-service.md"
-class="xref" target="_blank">Custom Model Parser Service</a> to check
-the validity and size of your decision tree. See that service for
-details about validation and error messages.</li>
-</ul>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">original_text</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__3"><strong>Read-only</strong>. The decision
-tree in plain text. We provide this in the response so that you can
-retrieve and review your tree's original format whenever necessary to
-iterate on tree design. Note that tabs are replaced with <code
-class="ph codeph">\t</code> and new lines are replaced with <code
-class="ph codeph">\n</code>.
-<p><strong>Default</strong>: <code class="ph codeph">null</code></p>
-
-<b>Note:</b> In a GET query, the <code
-class="ph codeph">original_text</code> will ONLY be returned if you
-identify a specific model ID in the query string. It will not be
-returned for unfiltered queries.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000aaa__entry__3">If
-<code class="ph codeph">true</code>, the custom model is active and
-available for use in campaigns.
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000aaa__entry__3"><strong>Read-only</strong>. The date and
-time when the custom model was last modified.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|---|---|---|
+| `active` | Boolean | If `true`, the custom model is active and available for use in campaigns.<br>**Default**: `true` |
+| `advertiser_id` | int | The ID of the advertiser to which the custom model belongs.<br>**Required on**: `POST` |
+| `code` | string | A custom code that is used as an external ID or as a look-up value for an object. This value must be unique within your member. |
+| `custom_model_structure` | enum | The structure of the custom model. Currently, the only allowed structure is `"decision_tree"`.<br>**Required on**: `POST` |
+| `id` | int | The ID of the custom model.<br>**Default**: Auto-generated number<br>**Required On**: `PUT/ DELETE`, in query string |
+| `last_modified` | date | **Read-only**. The date and time when the custom model was last modified. |
+| `member_id` | int | **Read-only**. The ID of the member to which the custom model belongs.<br>**Default**: Member's ID |
+| `model_output` | enum | The type of custom model. Possible values:<br>- `"bid"`: The Bid Price model outputs a CPM bid. This type of model serves as a campaign's third-party buying strategy in place of standard CPM strategies. To use this type of model in a [campaign](../digital-platform-api/campaign-service.md), set `cpm_bid_type` to `"custom_model"` and then specify the custom model ID in the `bid_model` object.<br>- `"bid_modifier"`: The Bid Modifier model applies a multiplier to a campaign's optimization-derived CPM bid. This type of model is used in conjunction with a Xandr optimization-based buying strategy (when `cpm_bid_type` is `"predicted"` or `"margin"`). To use this type of model in a [campaign](../digital-platform-api/campaign-service.md), specify the custom model ID in the `bid_modifier_model` object.<br>**Required on**: `POST` |
+| `model_text` | string | The logic of the model, expressed as a decision tree. You must write your decision tree in our Bonsai Language and then include a base64-encoded version here.<br>**Default**: `null`<br>**Note**:<br>- Size limit: Your tree must be smaller than 3 MB, or 3,145,728 bytes. If it is larger than that, you will not be able to add your tree.<br>- GET queries: In a GET query, the `model_text` will ONLY be returned if you provide a model ID in the query string. It will not be returned for unfiltered queries.<br>- Check the Validity and Size of Your Tree.<br>- Before adding a custom model, use the [Custom Model Parser Service](custom-model-parser-service.md) to check the validity and size of your decision tree. See that service for details about validation and error messages. |
+| `name` | string (191) | The name of the custom model. This must be unique and must be no more than 191 characters.<br>**Required On**: `POST` |
+| `original_text` | string | **Read-only**. The decision tree in plain text. We provide this in the response so that you can retrieve and review your tree's original format whenever necessary to iterate on tree design. Note that tabs are replaced with `\t` and new lines are replaced with `\n`.<br>**Default**: `null`<br>**Note**: In a GET query, the `original_text` will ONLY be returned if you identify a specific model ID in the query string. It will not be returned for unfiltered queries. |
 
 ## Examples
 
@@ -432,31 +236,7 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/custom-model?id
 }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-
-
-
-
-- <a
-  href="custom-model-parser-service.md"
-  class="xref" target="_blank">Custom Model Parser Service</a>
-- <a
-  href="the-bonsai-language.md"
-  class="xref" target="_blank">The Bonsai Language</a>
-
-
-
-
-<a href="custom-model-api-reference.md" class="link">Custom Model API
-Reference</a>
-
-
-
-
-
-
+- [Custom Model Parser Service](custom-model-parser-service.md)
+- [The Bonsai Language](the-bonsai-language.md)

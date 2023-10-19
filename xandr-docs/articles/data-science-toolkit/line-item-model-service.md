@@ -1,14 +1,11 @@
 ---
-Title : Line Item Model Service
-Description : The Line Item Model service is used to associate custom models to the custom models array. Compared to the standard Line Item service,
+title : Data Science Toolkit - Line Item Model Service
+description : The Line Item Model service is used to associate custom models to the custom models array. 
 ms.custom : data-science
 
 ---
 
-
-# Line Item Model Service
-
-
+# Data Science Toolkit - Line item model service
 
 The Line Item Model service is used to associate custom models to
 the custom models array. Compared to the standard Line Item service,
@@ -27,194 +24,43 @@ important for the following:
   - Xandr automated processes should not
     overwrite client uploaded models.
 
-
-
 ## Usage
 
-**End Points**
+**End points**
 
-- **Domain**: <a href="https://api.appnexus.com" class="xref"
-  target="_blank">https://api.appnexus.com</a>
+- **Domain**: [https://api.appnexus.com](https://api.appnexus.com/)
 - **Path**: `/line-item-model`
 
 **Authentication**
 
-\``/line-item-model`\` supports Xandr API <a
-href="xandr-api/authentication-service.md"
-class="xref" target="_blank">standard Authentication Methods</a>.
+`/line-item-model` supports Xandr API [standard Authentication Methods](../digital-platform-api/authentication-service.md).
 
+## Supported methods and fields
 
-
-
-
-## Supported Methods and Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000d3e__entry__1"
-class="entry colsep-1 rowsep-1">Method</th>
-<th id="ID-00000d3e__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00000d3e__entry__3"
-class="entry colsep-1 rowsep-1">Purpose</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__2"><code
-class="ph codeph">/line-item-model?id={line_item_id}</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__3">Get
-a list of custom-models associated with a Line Item</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__2"><code
-class="ph codeph">/line-item-model?id={line_item_id}</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__3">Add
-or update existing custom-models associated with a line-item, given a
-`line-item-model` JSON object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__3">Method not supported.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__2"><code
-class="ph codeph">/line-item-model?id={line_item_id}</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__3">Delete a single custom-model association
-on a Line Item, given a `line-item-model` JSON object</td>
-</tr>
-</tbody>
-</table>
+| Method | Endpoint | Purpose |
+|---|---|---|
+| DELETE | `/line-item-model?id={line_item_id}` | Delete a single custom-model association on a Line Item, given a 'line-item-model' JSON object |
+| GET | `/line-item-model?id={line_item_id}` | Get a list of custom-models associated with a Line Item |
+| POST |  | Method not supported. |
+| PUT | `/line-item-model?id={line_item_id}` | Add or update existing custom-models associated with a line-item, given a 'line-item-model' JSON object. |
 
 **Parameters**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000d3e__entry__16"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00000d3e__entry__17" class="entry colsep-1 rowsep-1">Data
-Type</th>
-<th id="ID-00000d3e__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000d3e__entry__19"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__16"><code
-class="ph codeph">line-item-id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__18">The
-ID of the Line Item object of which we would like to query
-<p><strong>Required on</strong>: GET, PUT, DELETE</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__19"><code
-class="ph codeph">/line-item-model?id=123</code></td>
-</tr>
-</tbody>
-</table>
+| Name | Data Type | Description | Example |
+|---|---|---|---|
+| `line-item-id` | int | The ID of the Line Item object of which we would like to query<br>**Required on**: GET, PUT, DELETE | `/line-item-model?id=123` |
 
 **Fields**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000d3e__entry__24"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00000d3e__entry__25" class="entry colsep-1 rowsep-1">Data
-Type</th>
-<th id="ID-00000d3e__entry__26"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000d3e__entry__27" class="entry colsep-1 rowsep-1">Returned
-On</th>
-<th id="ID-00000d3e__entry__28"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__24"><code
-class="ph codeph">line-item-models </code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__25">string, and array of custom-models</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__26">The
-ID of the Line Item that we have queried, along with the array of
-custom-models associated with that line-item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__27">GET, PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__28"><pre class="pre codeblock"><code>&quot;line_item_models&quot;: {
-  &quot;4125657&quot;: [
-    {
-      &quot;custom_model_id&quot;: 139527,
-      &quot;type&quot;: &quot;cadence&quot;
-    },
-    {
-      &quot;custom_model_id&quot;: 130004,
-      &quot;type&quot;: &quot;expected_value&quot;
-    }
-  ]
-}</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__24"><code
-class="ph codeph">custom_model_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__25">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__26">The
-ID of the custom-model associated with the Line Item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__27">GET, PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__28"><pre class="pre codeblock"><code>&quot;custom_model_id&quot;: 211973</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__24"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__25">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d3e__entry__26">The
-"type" of this model association. A full list of conditional component
-model types can be found on the <a
-href="bid-valuation-with-custom-models.md" class="xref">Bid Valuation
-with Custom Models</a> page.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__27">GET, PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d3e__entry__28"><pre class="pre codeblock"><code>&quot;type&quot;: &quot;ev_click&quot;</code></pre></td>
-</tr>
-</tbody>
-</table>
+| Name | Data Type | Description | Returned On | Example |
+|---|---|---|---|---|
+| `custom_model_id` | int | The ID of the custom-model associated with the Line Item | GET, PUT | `"custom_model_id": 211973` |
+| `line-item-models` | string, and array of custom-models | The ID of the Line Item that we have queried, along with the array of custom-models associated with that line-item | GET, PUT | ```"line_item_models": { "4125657": [ { "custom_model_id": 139527, "type": "cadence" }, { "custom_model_id": 130004, "type": "expected_value" } ] }``` |
+| `type` | string | The "type" of this model association. A full list of conditional component model types can be found on the [Bid Valuation with Custom Models](bid-valuation-with-custom-models.md) page. | GET, PUT | `"type": "ev_click"` |
 
+## Usage examples
 
-
-
-
-## Usage Examples
-
-**GET Example**
+**GET example**
 
 \`GET\` custom-models associated to a Line Item
 
@@ -248,21 +94,14 @@ curl -H 'Authorization: {api_token}' 'https://api.appnexus.com/line-item-model?i
 }
 ```
 
-**PUT Example**
+**PUT example**
 
 \`PUT\` - Create and Update custom-models associated with a Line Item
 
-
-
-<b>Note:</b> Important Usage Info
-
-\`PUT\` will only add new models to a line-item, or update existing
-models. If a model is not referenced in your \``line_item_model`\`
-array, it is not affected by your request, **unless** one of the models
-listed in your array is of the same \``type`\` as a model already
-associated to the line-item.
-
-
+> [!NOTE]
+> Important Usage Info
+>
+> `PUT` will only add new models to a line-item, or update existing models. If a model is not referenced in your `line_item_model` array, it is not affected by your request, **unless** one of the models listed in your array is of the same `type` as a model already associated to the line-item.
 
 ``` pre
 curl -H 'Authorization: {api_token}' -d @update_models.json -X PUT 'https://api.appnexus.com/line-item-model?id=12345'
@@ -320,17 +159,13 @@ curl -H 'Authorization: {api_token}' -d @update_models.json -X PUT 'https://api.
 }
 ```
 
-**DELETE Example**
-
-
+**DELETE example**
 
 \`DELETE\` a custom-model associated to a Line Item
 
 ``` pre
 curl -H 'Authorization: {api_token}' -d @detach_model.json -X DELETE 'https://api.appnexus.com/line-item-model?id=:line_item_id'
 ```
-
-
 
 **detach_model.json**
 
@@ -355,15 +190,3 @@ curl -H 'Authorization: {api_token}' -d @detach_model.json -X DELETE 'https://ap
   }
 }
 ```
-
-
-
-
-<a href="custom-model-api-reference.md" class="link">Custom Model API
-Reference</a>
-
-
-
-
-
-

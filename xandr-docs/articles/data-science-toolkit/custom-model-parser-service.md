@@ -1,30 +1,18 @@
 ---
-Title : Custom Model Parser Service
-Description : The Custom Model Parser service lets you check the validity of decision trees written in our <a href="the-bonsai-language.md"
+title : Data Science Toolkit - Custom Model Parser Service
+description : The Custom Model Parser service lets you check the validity of decision trees written in our <a href="the-bonsai-language.md">.
 ms.custom : data-science
 ---
 
 
-# Custom Model Parser Service
-
-
+# Data Science Toolkit - Custom model parser service
 
 The Custom Model Parser service lets you check the validity of decision
-trees written in our <a
-href="the-bonsai-language.md"
-class="xref" target="_blank">Bonsai Language</a>. You should use this
-service to identify and resolve any Bonsai syntax or feature errors
-before using the <a
-href="custom-model-service.md"
-class="xref" target="_blank">Custom Model Service</a> to upload trees
-for use in campaigns.
+trees written in our [Bonsai Language](the-bonsai-language.md). You should use this service to identify and resolve any Bonsai syntax or feature errors
+before using the [Custom Model Service](custom-model-service.md) to upload trees for use in campaigns.
 
 This page walks you through the validation process. For background
-information on the purpose of custom models, see <a
-href="custom-models.md"
-class="xref" target="_blank">Custom Models</a>. 
-
-
+information on the purpose of custom models, see [Custom Models](custom-models.md). 
 
 ## Step 1. Base64-encode your Bonsai decision tree
 
@@ -50,10 +38,6 @@ $ cat decision_tree.txt |base64
 IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1c2VyIGlzIGluIENhbGlmb3JuaWEsIGFuZCB0aGUgaG91ciBpcyBiZXR3ZWVuIDEycG0gYW5kIDE0cG0gdGhlcmUsIGJpZCAkMS41MC4KIyAyLiBJZiB0aGUgdXNlciBpcyBpbiBOZXcgWW9yaywgYW5kIHRoZSBob3VyIGlzIGJldHdlZW4gMWFtIGFuZCAzYW0gdGhlcmUsIGJpZCAkMC4xMC4KIyAzLiBPdGhlcndpc2UsIGJpZCAkMC41MC4KCmlmIGV2ZXJ5IHJlZ2lvbiA9ICJVUzpDQSIsIHVzZXJfaG91ciByYW5nZSAoMTIsMTQpOgoJMS41CmVsaWYgZXZlcnkgcmVnaW9uID0gIlVTOk5ZIiwgdXNlcl9ob3VyIHJhbmdlICgxLDMpOgoJMC4xCmVsc2U6CgkwLjU=
 ```
 
-
-
-
-
 ## Step 2. Create a JSON file containing your encoded tree
 
 Create a JSON file as shown below. The main object must contain
@@ -70,11 +54,7 @@ $ cat check_tree.json
 }
 ```
 
-
-
-
-
-## Step 3. `POST` the file to the Custom Model Parser Service
+## Step 3. `POST` the file to the custom model parser service
 
 Make a `POST` call to the Custom Model Parser Service as shown below.
 
@@ -82,64 +62,23 @@ Make a `POST` call to the Custom Model Parser Service as shown below.
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
 ```
 
-
-
-
-
 ## Step 4. Check the response 
 
-- <a href="custom-model-parser-service.html#ID-00000c4d__tree_is_valid"
-  class="xref">Tree is valid</a>
-- <a
-  href="custom-model-parser-service.html#ID-00000c4d__tree_is_not_valid"
-  class="xref">Tree is not valid</a>
+- [Tree is valid](#tree-is-valid)
+- [Tree is not valid](#tree-is-not-valid)
 
-**Tree is valid**
+### Tree is valid
 
 If your Bonsai decision tree is valid, the `custom-model-parser` object
 in the response will contain the following fields:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000c4d__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000c4d__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c4d__entry__1"><code
-class="ph codeph">model_text</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c4d__entry__2">Your
-decision tree.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c4d__entry__1"><code class="ph codeph">size</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c4d__entry__2">The
-size of your decision tree, in bytes.
-<p><strong>Size Limit</strong>: Your tree must be smaller than 3 MB,
-or 3,145,728 bytes. If it is larger than that, you will not be able to
-add your tree using the <a
-href="custom-model-service.md"
-class="xref" target="_blank">Custom Model Service</a>.</p></td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|---|---|
+| `model_text` | Your decision tree. |
+| `size` | The size of your decision tree, in bytes.<br>**Size Limit**: Your tree must be smaller than 3 MB, or 3,145,728 bytes. If it is larger than that, you will not be able to add your tree using the [Custom Model Service](custom-model-service.md). |
 
-
-
-<b>Note:</b> The custom-model-parser endpoint
-used to return the Lisp storage format of a decision tree under the
-"`model_text`" field. We are deprecating this internal representation,
-as it was only an intermediate step and is not used anywhere on the
-platform. The field will now always contain the value "`<removed>`". The
-"`size`" field on the response will continue to be filled accurately and
-you should keep relying on it to know if your model is too large for
-upload.
+> [!NOTE]
+> The custom-model-parser endpoint used to return the Lisp storage format of a decision tree under the "`model_text`" field. We are deprecating this internal representation, as it was only an intermediate step and is not used anywhere on the platform. The field will now always contain the value "`<removed>`". The "`size`" field on the response will continue to be filled accurately and you should keep relying on it to know if your model is too large for upload.
 
 ``` pre
 {
@@ -154,15 +93,11 @@ upload.
     }
 ```
 
-
-
-**Tree is not valid**
+### Tree is not valid
 
 If your Bonsai decision tree is not valid, the `error` field in the
 response will identify the issue. An error can result from either
-invalid Bonsai syntax or invalid usage of Bonsai features. See <a
-href="custom-model-parser-service.html#ID-00000c4d__error_messages_custom_model_parser_service"
-class="xref">Error Messages</a> below for more details.
+invalid Bonsai syntax or invalid usage of Bonsai features. See [Error Messages](#error-messages) below for more details.
 
 ``` pre
 {
@@ -177,18 +112,12 @@ class="xref">Error Messages</a> below for more details.
 }
 ```
 
+## Error messages
 
+- [Syntax Errors](#syntax-errors)
+- [Feature Errors](#feature-errors)
 
->
-
-## Error Messages
-
-- <a href="custom-model-parser-service.html#ID-00000c4d__syntax_errors"
-  class="xref">Syntax Errors</a>
-- <a href="custom-model-parser-service.html#ID-00000c4d__feature_errors"
-  class="xref">Feature Errors</a>
-
-**Syntax Errors**
+### Syntax errors
 
 - Illegal character found:
 
@@ -215,7 +144,7 @@ class="xref">Error Messages</a> below for more details.
   ERROR: Invalid number of elements in list at line <line> at column <column>. Required number of elements is <required number>, <number> elements found
   ```
 
-**Feature Errors**
+### Feature errors
 
 There are two types of features: Features we validate against the DB,
 and features whose values must be certain numeric values. Validating
@@ -258,42 +187,15 @@ Features, descriptions, numeric restrictions are as follows:
   or `campaign` (representing split), and ID is the object ID. The day
   frequency must be a positive integer. In this scenario, object is
   `advertiser`.
-- `advertiser_recency`: Advertiser recency must be positive integer or
-  -1
+- `advertiser_recency`: Advertiser recency must be positive integer or -1
 - `device_type`: Device type string
 - `estimated_iab_viewthrough_rate`: IAB viewthrough rate must be a
   number between 0 and 1
 
+## Related topics
 
-
-
-
-## Related Topics
-
-
-
-
-
-- <a
-  href="custom-models.md"
-  class="xref" target="_blank">Custom Models</a>
-- <a
-  href="custom-model-service.md"
-  class="xref" target="_blank">Custom Model Service</a>
-- <a
-  href="the-bonsai-language.md"
-  class="xref" target="_blank">Bonsai Language</a>
-- <a
-  href="bonsai-language-features.md"
-  class="xref" target="_blank">Bonsai Language Features</a>
-
-
-
-<a href="custom-model-api-reference.md" class="link">Custom Model API
-Reference</a>
-
-
-
-
-
+- [Custom Models](custom-models.md)
+- [Custom Model Service](custom-model-service.md)
+- [Bonsai Language](the-bonsai-language.md)
+- [Bonsai Language Features](bonsai-language-features.md)
 
