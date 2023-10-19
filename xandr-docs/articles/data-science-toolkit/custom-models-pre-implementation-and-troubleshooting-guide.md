@@ -1,11 +1,11 @@
 ---
-title : Data Science - Custom Models Pre-Implementation and Troubleshooting Guide
+title : Data Science Toolkit - Custom Models Pre-Implementation and Troubleshooting Guide
 description : This page describes best practices to prepare for custom model implementation as well as a guide to some common issues that can arise from using custom models. 
 ms.custom : data-science
 ---
 
 
-# Data Science - Custom models Pre-Implementation and troubleshooting guide
+# Data Science Toolkit - Custom models Pre-Implementation and troubleshooting guide
 
 This page describes best practices to prepare for custom model
 implementation as well as a guide to some common issues that can arise
@@ -31,7 +31,7 @@ use the [Targeting](../invest/buy-side-targeting.md) section of the line item 
 - In [Bonsai models](the-bonsai-language.md), use tabs for indentation, not spaces.
 - Label leaves to report on [Log-level data](../log-level-data/log-level-data-feeds.md). This will help you accurately work out how you have bid.
 - If you want to not bid in certain situations, use a bid value or
-  multiplier of "no_bid" not "0:
+  multiplier of "no_bid" not "0".
 
 **Dealing With Capacity**
 

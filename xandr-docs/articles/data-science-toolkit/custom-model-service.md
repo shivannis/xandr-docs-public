@@ -1,11 +1,11 @@
 ---
-title : Data Science - Custom Model Service
+title : Data Science Toolkit - Custom Model Service
 description : Learn how the Custom Model service lets you add and maintain custom predictive models (decision trees) for use in campaigns.
 ms.custom : data-science
 ---
 
 
-# Data Science - Custom model service
+# Data Science Toolkit - Custom model service
 
 The Custom Model service lets you add and maintain custom predictive
 models (decision trees) for use in campaigns. For background

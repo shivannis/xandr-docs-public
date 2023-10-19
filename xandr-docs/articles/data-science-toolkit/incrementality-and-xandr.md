@@ -1,15 +1,15 @@
 ---
-title : Data Science - Incrementality and Xandr
+title : Data Science Toolkit - Incrementality and Xandr
 description : Learn that the idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group.
 ms.custom : data-science
 ---
 
 
-# Data Science - Incrementality and Xandr
+# Data Science Toolkit  - Incrementality and Xandr
 
 ## Measuring incrementality
 
-**How is Incrementality Measured**
+**How is Incrementality measured?**
 
 The basic idea behind measuring incrementality is to split users into
 test and control groups and only show ads to users in the test group.
@@ -18,7 +18,7 @@ the advertiser's products than the users who were not exposed to ads.
 
 :::image type="content" source="./media/datascience-d.png" alt-text="Screenshot of Control Group Testing Options.":::
 
-**Control Group Testing Options**
+**Control group testing options**
 
 There are several options for control group testing, each comes with
 varying costs and degrees of accuracy. 
@@ -42,8 +42,7 @@ varying costs and degrees of accuracy. 
   design a clean test and does not require wasting a percentage of your
   budget on PSA Banners.
 
-**Xandr Ghost Bidding and the Incrementality
-Feed**
+**Xandr Ghost Bidding and the Incrementality feed**
 
 Xandr offers clients with data science
 capabilities the ability to measure incrementality. We provide the
@@ -81,13 +80,13 @@ group.  
 > [!NOTE]
 > Setting the same key on different line items means that the same test and control groups will be used for these line items.
 
-**How to Set Up a Line Item for Incrementality**
+**How to set up a line item for Incrementality?**
 
 1. In , go to  **Line Item \> Basic Setup \> Incrementality**  and
     select **“Use control group”**.
 1. Assign a key and a percentage of users to assign to the control
     group.
-    - A Key can be any string of characters and creates unique User
+    - A key can be any string of characters and creates unique User
       Segmentation between Test & Control Groups. You can set the same
       Key across multiple line items to ensure that they all have use
       the same user segmentation - this will help ensure no
@@ -127,7 +126,7 @@ For additional information on working with Segment Values see [Batch Segment Ser
 
 ## Considerations for planning incrementality tests
 
-**Begin With a Well-Framed Hypothesis**
+**Begin with a well-framed hypothesis**
 
 Ensure you are starting with a well-framed hypothesis. The testing of
 incrementality should be done to answer a hypothesis on incremental lift
@@ -142,14 +141,14 @@ group are unintentionally exposed to advertising. Minimizing
 contamination is crucial for a clean test. When you are designing your
 test, consider the following to help minimize contamination: 
 
-**Ensure the Control Group is Not Exposed to External Buyers or DSPs
-Running a Similar Campaign**
+**Ensure the control group is not exposed to external buyers or DSPs
+running a similar campaign**
 
 It is important to ensure that users that are assigned to the control
 group in our platform are not exposed to ads from external buyers, or
 other DSPs running the same campaign.
 
-**How to mitigate**
+**How to mitigate?**
 
 - The ideal scenario is to ensure that Xandr is
   the only DSP running a particular campaign. It is important to think
@@ -169,7 +168,7 @@ other DSPs running the same campaign.
     general. This should make the results of the lift test
     representative of the United States as a whole.
 
-**The Campaign May Run on Other Channels**
+**The campaign may run on other channels**
 
 It is likely that the marketing budget for a campaign will not be
 isolated to programmatic activity and there will be other channels, such
@@ -179,32 +178,32 @@ measurement of the impact for the campaign you are testing, in the
 context of all related advertising. The resulting lift will be smaller
 but your analysis will present a real-world measurement.
 
-**How to mitigate**
+**How to mitigate?**
 
 Ensure that the "background" advertising is the same for the test and
 control groups.
 
-**Line Item Cross-contamination**
+**Line item cross-contamination**
 
 If your campaign has multiple line items, for example, one for
 prospecting and another for retargeting, it is important to ensure that
 there is no cross-contamination between them.
 
-**How to mitigate**
+**How to mitigate?**
 
 Setting the same key across all of your line items in the test will
 ensure that they all use the same user segmentation, making it
 impossible for one line item to target control group users from a
 different line item.
 
-**Users on Multiple Devices**
+**Users on multiple devices**
 
 It is important to note that the default, randomized user segmentation
 does not account for multiple devices. This means that the same user can
 be both in a test and a control group depending on which device they are
 using.
 
-**How to mitigate**
+**How to mitigate?**
 
 - If you are able to build a cross-device graph using first-party data,
   then you can upload your own user segmentation via the API.
@@ -215,7 +214,7 @@ using.
   is the most intrusive way and will likely have an impact on campaign
   performance.
 
-**Effectively Comparing Test and Control Groups**
+**Effectively comparing test and control groups**
 
 In ghost bidding, the randomization of users into test and control
 groups, either by the client or by Xandr,
@@ -263,7 +262,7 @@ science team's approach:
   distribution of users that have these important features across both
   the test and control groups.
 
-**Control Group Nuances**
+**Control group nuances**
 
 As with test groups having some percentage of their users that will not
 be served ads, the same is true for members of the control group.  The
@@ -300,7 +299,7 @@ Line Item:
 1. Ad sends back a render signal to Imp Bus.
 1. Impression is logged in standard_feed.
 
-**Think About Statistical Significance**
+**Think about statistical significance**
 
 Statistical significance is the likelihood that a relationship between
 two or more variables is caused by something other than chance. You use
@@ -349,15 +348,15 @@ following parameters.
 - Desired power β.
 - Type of the test: [one-tailed or two-tailed test](https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/).
 
-**Setting the Control Group Percentage**
+**Setting the control group percentage**
 
 The control group percentage, whether it is set through the Line Item
 settings in Microsoft Invest or the platform's API, cannot exceed 20
 percent.  We recommend a percentage between 10 and 20 for best results. 
 
-**Additional Considerations**
+**Additional considerations**
 
-**Optimization Behaviour**
+**Optimization behaviour**
 
 It is important to understand how optimization can behave differently
 between bidding for the test and control groups.
@@ -368,7 +367,7 @@ Since the control group users bids are pulled and they never served ads,
 
 :::image type="content" source="./media/datascience-g.png" alt-text="Diagram of Cadence Modifier impacts Bid Value."::: 
 
-**How to mitigate**
+**How to mitigate?**
 
 - Use Custom Models to override the Cadence Modifier and set it to one.
   This will ensure the same bidding behavior for both test and control
@@ -378,7 +377,7 @@ Since the control group users bids are pulled and they never served ads,
 > [!NOTE]
 > These approaches can potentially impact your campaign performance.
 
-**Excluded Sellers**
+**Excluded sellers**
 
 We are currently unable to run Incrementality Tests
 on **Verizon's** and **MoPub's**  inventory, so the following Seller
