@@ -6,9 +6,9 @@ ms.custom: data-science
 
 # Data Science Toolkit - Custom model API reference
 
-This section provides reference information about the API services used to implement Custom Models.
+This section provides reference information about the API services used to implement custom models.
 
-**Custom Model API Services**:
+**Custom model API Services**:
 
 - [Custom Model Service](custom-model-service.md)
 - [Custom Model Parser Service](custom-model-parser-service.md)

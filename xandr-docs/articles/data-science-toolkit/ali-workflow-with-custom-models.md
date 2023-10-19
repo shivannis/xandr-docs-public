@@ -10,7 +10,7 @@ Working with [Custom Models](custom-models.md) such as [Bonsai trees](the-bons
 
 ## Tree creation and validation
 
-The syntax for Bonsai trees and the features currently available for campaigns is the same for trees that work with ALI. Use the Custom Model service for creating your custom model. The Custom Model Parser service can be utilized to validate the Bonsai decision tree. Documentation for these services can be found here:
+The syntax for Bonsai trees and the features currently available for campaigns is the same for trees that work with ALI. Use the Custom Model Service for creating your custom model. The Custom Model Parser Service can be utilized to validate the Bonsai decision tree. Documentation for these services can be found here:
 
 - [Custom Model Service](custom-model-service.md)
 - [Custom Model Parser Service](custom-model-parser-service.md)
@@ -84,7 +84,7 @@ Customers in countries that conform to GDPR regulations should be aware that whe
 
 ### Multiple custom models
 
-You will be able to associate multiple custom models of different types to the augmented line item. These include a number of Custom Model types that can be used to override portions of the impression's expected value calculation. An example below demonstrates how the process of associating multiple Custom Models to a Line Item may work:
+You will be able to associate multiple custom models of different types to the augmented line item. These include a number of custom model types that can be used to override portions of the impression's expected value calculation. An example below demonstrates how the process of associating multiple custom models to a Line Item may work:
 
 **Custom model**
 
@@ -128,10 +128,10 @@ The following model types can be associated as custom models to your Line Item:
 | `conv_imp` | Probability of a conversion for this impression. | Float - (0,1) |
 | `conv_click` | Probability of a conversion, given a click. | Float - (0,1) |
 | `bid_modifier` | Amount by which this bid on this impression will be multiplied. | Float |
-| `nonvaluation` | Custom Macros, Learn Status, and other nonvaluation nodes. | Custom Model output does not affect bid, though it will be used in reporting when the feature is implemented. For more information, see [Non-Valuation Custom Model](nonvaluation-custom-model.md). |
+| `nonvaluation` | Custom Macros, Learn Status, and other nonvaluation nodes. | Custom model output does not affect bid, though it will be used in reporting when the feature is implemented. For more information, see [Non-Valuation Custom Model](nonvaluation-custom-model.md). |
 | `cadence` | Cadence modifier for this impression. | Float |
 
 > [!NOTE]
-> A '`goal_type`' of '`custom`' on your Line Item is only required in some scenarios, such as associating an '`expected_value`' model with your Line Item. Certain optimization features, such as Ranked Discovery will be disabled when using this `goal_type` with your Custom Models.
+> A '`goal_type`' of '`custom`' on your Line Item is only required in some scenarios, such as associating an '`expected_value`' model with your Line Item. Certain optimization features, such as Ranked Discovery will be disabled when using this `goal_type` with your custom models.
 >
 > Read the [Custom Models](custom-models.md) page to learn how the bid calculation is affected by Line Item goals and associated component models.

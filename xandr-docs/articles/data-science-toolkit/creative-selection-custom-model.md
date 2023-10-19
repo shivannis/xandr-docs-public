@@ -11,7 +11,7 @@ By default, Xandr randomly distributes the creatives associated with a line item
 > [!NOTE]
 > This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).
 
-## How weighting works?
+## How does weighting work?
 
 In each leaf, you list creative IDs and their weights. Weights may be integers between 0-1000. The allocation percentage of a creative is determined by dividing the creative's weight by the sum of the weight of all eligible creatives.
   
@@ -151,9 +151,9 @@ $ curl -b cookies -X PUT -d @line-item 'https://api.appnexus.com/line-item?id=LI
 }
 ```
 
-### Step 3: Create a Custom Model tree
+### Step 3: Create a custom model tree
 
-In this example, we create a Custom Model that will weigh and select creatives.
+In this example, we create a custom model that will weigh and select creatives.
 
 ``` pre
 $cat creative-tree

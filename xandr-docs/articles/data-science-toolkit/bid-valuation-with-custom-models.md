@@ -10,7 +10,7 @@ This document provides an explanation of how setting different Goals and Revenue
 
 ## Overview
 
-Custom Models are designed to allow data scientists, through the Xandr API, to break out specific portions of their Bid Valuation model by associating multiple Bonsai decision trees and/or Logistic Regression Models with their Augmented Line Items or campaigns as a custom buying strategy. By associating specific types of models to the Expected Value calculation for an impression, it is possible to override portions of Xandr optimization and only allow our system to handle aspects of valuation that your own models do not cover.
+Custom models are designed to allow data scientists, through the Xandr API, to break out specific portions of their Bid Valuation model by associating multiple Bonsai decision trees and/or Logistic Regression Models with their Augmented Line Items or campaigns as a custom buying strategy. By associating specific types of models to the Expected Value calculation for an impression, it is possible to override portions of Xandr optimization and only allow our system to handle aspects of valuation that your own models do not cover.
 
 This page provides an explanation of how setting different Goals and Revenue types on your ALI will affect your Bid Valuation.  
 
@@ -129,7 +129,7 @@ The `bid_modifier` model is applied at the last stage of the `expected_value`
 
 ## Revenue type and bid calculation
 
-When Expected Value has been calculated based on the `goal_type` and the Custom Models set on your Line Item, the final Bid Value is affected by the Revenue Type set on your Line Item. Please see the table below to see how Revenue Type affects the final bid value:
+When Expected Value has been calculated based on the `goal_type` and the Custom models set on your Line Item, the final Bid Value is affected by the Revenue Type set on your Line Item. Please see the table below to see how Revenue Type affects the final bid value:
 
 | Revenue Type | How the Bidder Calculates the Final Bid | Don't Bid If... | Eligible Goal Types |
 |:---|:---|:---|:---|
