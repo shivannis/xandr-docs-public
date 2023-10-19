@@ -1,9 +1,9 @@
 ---
-title: Logistic Regression Model API Resources
+title: Data Science Toolkit - Logistic Regression Model API Resources
 description: This article is a temporary API resource for data science toolkit services to create logistic regression models, lookup tables, and hashed table predictors. 
 ---
 
-# Logistic regression model API resources
+# Data Science Toolkit - Logistic regression model API resources
 
 The purpose of this document is to serve as a temporary API resource for the Data Science Toolkit services that allow for the creation of Logistic Regression models, Lookup tables, and Hashed Table Predictors.
 

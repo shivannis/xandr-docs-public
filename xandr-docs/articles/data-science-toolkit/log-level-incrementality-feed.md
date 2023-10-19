@@ -1,9 +1,9 @@
 ---
-title: Log-Level Incrementality Feed
+title: Data Science Toolkit - Log-Level Incrementality Feed
 description: The log-level incrementality feed provides data on ad impressions for a random audience split between test and control groups.
 ---
 
-# Log-level incrementality feed
+# Data Science Toolkit - Log-level incrementality feed
 
 The Log-Level Incrementality Feed provides data on impressions shown to an audience randomly split between a test group (the group exposed to ads) and control group (the group not exposed to ads). The test uses the same targeting and bidding approach for each group so that advertisers can analyze the revenue driven by users from each group to determine incremental lift from users exposed to ads. The feed contains one row per impression.
 

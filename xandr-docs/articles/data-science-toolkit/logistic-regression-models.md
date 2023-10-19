@@ -1,9 +1,9 @@
 ---
-title: Logistic Regression Models
+title: Data Science Toolkit - Logistic Regression Models
 description: Logistic regression predicts binary responses from multiple signals. Data scientists can use it for more accurate predictions and tailored algorithms.
 ---
 
-# Logistic regression models
+# Data Science Toolkit - Logistic regression models
 
 To support our client's ability to predict user response to their digital advertising Xandr provides custom models based on decision trees. We developed an easy-to-use programming language called [Bonsai](./the-bonsai-language.md) that enables users to create decision trees to dynamically populate line item parameters.
 
@@ -17,7 +17,7 @@ Logistic regression is a classification algorithm. It is used to predict a binar
 
 The formula for logistic regression is:
 
-:::image type="content" source="./media/116524656.png" alt-text="Screenshot showing the formula for logistic regression.":::
+:::image type="content" source="./media/datascience-k.png" alt-text="Screenshot showing the formula for logistic regression.":::
 
 Where the probability (p) being modeled is that of a binary outcome: event = 1 or event = 0. For online advertising, the event is a click, a pixel fire, or another online action. The probability is conditional on both the predictors x1 through xn and on an implicit set of variables that represent the features in a bid request. The beta coefficients are the weights that the model assigns to the different predictors.
 
@@ -25,7 +25,7 @@ We convert this probability of an event happening to an expected value by multip
 
 The formula for deriving an expected value for an impression from the probability of an event happening is:
 
-:::image type="content" source="./media/116524655.png" alt-text="Screenshot showing the formula for deriving an expected value for an impression from the probability of an event happening.":::
+:::image type="content" source="./media/datascience-l.png" alt-text="Screenshot showing the formula for deriving an expected value for an impression from the probability of an event happening.":::
 
 The offset will usually be 0. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid instead of bidding very little and potentially incurring fixed fees.  
 
@@ -35,7 +35,7 @@ Online advertising has many categorical features, that is, features that can hav
 
 If we put this into the logistic regression formula, we get:
 
-:::image type="content" source="./media/116524646.png" alt-text="Screenshot showing the formula for using categorical features of online advertising.":::
+:::image type="content" source="./media/datascience-m.png" alt-text="Screenshot showing the formula for using categorical features of online advertising.":::
 
 Since browser is a categorical feature, we can express the coefficients in a table:
 
@@ -46,7 +46,7 @@ Since browser is a categorical feature, we can express the coefficients in a tab
 
 Each row of this table is converted to a term in the logistic regression formula, so  x1 = 1 if "browser = safari" and  β safari = 1.2 and x2 = 1 if "browser = firefox" and β firefox = 0.8. This makes the overall equation:
 
-:::image type="content" source="./media/116524645.png" alt-text="Screenshot showing the logistic regression formula after converting each row of the table to a term.":::
+:::image type="content" source="./media/datascience-n.png" alt-text="Screenshot showing the logistic regression formula after converting each row of the table to a term.":::
 
 Other categorical features can be expressed this way as well. Suppose we assigned the following values as coefficients to the following domains:
 
@@ -58,11 +58,11 @@ Other categorical features can be expressed this way as well. Suppose we assigne
 
 These values then become incremental terms in the formula (x3 is 1 if "domain = cnn.com" and β 3 is 2.1), making the overall equation:
 
-:::image type="content" source="./media/116524644.png" alt-text="Screenshot showing the values in incremental terms in the formula.":::
+:::image type="content" source="./media/datascience-o.png" alt-text="Screenshot showing the values in incremental terms in the formula.":::
 
 When the ad impression is served, Xandr identifies the browser as Safari and the domain as nytimes.com. The corresponding variables for browser = Safari and domain = nytimes.com are set to 1 and the other variables are set to 0, resulting in the equation:
 
-:::image type="content" source="./media/116524643.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and the other variables set to 0.":::
+:::image type="content" source="./media/datascience-p.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and the other variables set to 0.":::
 
 ## Higher-order predictors
 
@@ -79,7 +79,7 @@ Xandr supports higher-order predictors (combinations of features), allowing cust
 
 Each of these paired predictors becomes a term in the logistic regression equation:
 
-:::image type="content" source="./media/116524642.png" alt-text="Screenshot showing each of the paired predictors as a term in the logistic regression equation.":::
+:::image type="content" source="./media/datascience-q.png" alt-text="Screenshot showing each of the paired predictors as a term in the logistic regression equation.":::
 
 ## Hashed predictors
 
@@ -109,11 +109,11 @@ Then compute a coefficient for each hash value. Note that there are fewer featur
 
 Once you replace the variables with these values, the logistic regression equation becomes:
 
-:::image type="content" source="./media/116524639.png" alt-text="Screenshot showing the logistic regression equation after replacing the variables with the values.":::
+:::image type="content" source="./media/datascience-r.png" alt-text="Screenshot showing the logistic regression equation after replacing the variables with the values.":::
 
 To predict the response on a particular impression, Xandr hashes the detected features (using the same hash function that is applied during feature engineering for both training the models and online inference). For some features, we use hash functions to hash the raw feature values to the ones used in the above formula and executes the prediction. If the browser is Safari and the domain is nytimes.com (or any other browser-domain pair that hashes to the same value), we hash these to find the value 1 and substitute that into the logistic regression equation:
 
-:::image type="content" source="./media/116524641.png" alt-text="Screenshot showing the logistic regression equation after hashing the detected features.":::
+:::image type="content" source="./media/datascience-s.png" alt-text="Screenshot showing the logistic regression equation after hashing the detected features.":::
 
 ## Conversion from one-hot encoded and weight vectors to tables
 

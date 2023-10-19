@@ -1,9 +1,9 @@
 ---
-title: Linear-Log Bucketing
+title: Data Science Toolkit - Linear-Log Bucketing
 description: Learn about the linear-log bucketing feature. This feature combines the approaches taken by linear bucketing and log bucketing.
 ---
 
-# Linear-log bucketing
+# Data Science Toolkit - Linear-log bucketing
 
 Linear-log bucketing is a feature of the [Logistic Regression Custom Model Service](./logistic-regression-custom-model-service.md).
 
@@ -25,7 +25,7 @@ Linear-log bucketing combines the approaches taken by linear bucketing and log b
 
 This graph plots the increase in bucket sizes. The x-axis is the feature value and the y-axis is the bucket number.
 
-:::image type="content" source="./media/116524648.png" alt-text="Screenshot of a graph showing the increase in bucket sizes.":::
+:::image type="content" source="./media/datascience-h.png" alt-text="Screenshot of a graph showing the increase in bucket sizes.":::
 
 Xandr also supports **sub-bucketing** to reduce the margin of error and give you more control over how bucketing works. You can create **sub-buckets** to subdivide each bucket into a few smaller buckets. This is especially helpful at the larger end of your logarithmic range.  
 

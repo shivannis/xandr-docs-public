@@ -1,9 +1,9 @@
 ---
-title: Logistic Regression Custom Model Service
+title: Data Science Toolkit - Logistic Regression Custom Model Service
 description: The logistic regression custom model service helps create logistic regression models to predict click or conversion likelihood based on multiple signals.
 ---
 
-# Logistic regression custom model service
+# Data Science Toolkit - Logistic regression custom model service
 
 The Logistic Regression Custom Model Service allows you to create logistic regression models (sometimes called "logit models") to predict
 the likelihood of clicks or conversions based on a combination of multiple signals. The logistic regression models can then be associated with a line item using the Line Item Service - ALI (Archived).
@@ -13,7 +13,7 @@ the likelihood of clicks or conversions based on a combination of multiple signa
 
 The formula for logistic regression is:
 
-:::image type="content" source="./media/116524656.png" alt-text="Screenshot of the formula for logistic regression.":::
+:::image type="content" source="./media/datascience-i.png" alt-text="Screenshot of the formula for logistic regression.":::
 
 For online advertising, the event is a click, a pixel fire, or another online action. The probability is conditional on both the predictors x 1 through xn and on an implicit set of variables that represent the features in a bid request. The beta coefficients are the weights that the model assigns to different predictors.
 
@@ -21,7 +21,7 @@ We convert this probability of an event happening to an expected value by multip
 
 The formula for deriving an expected value for an impression from the probability of an event happening is:
 
-:::image type="content" source="./media/116524655.png" alt-text="Screenshot of the formula for logistic regression.":::
+:::image type="content" source="./media/datascience-j.png" alt-text="Screenshot of the formula for deriving an expected value for an impression from the probability of an event happening.":::
 
 The offset will usually be 0. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid, instead of bidding very little and potentially incurring fixed fees.
 
