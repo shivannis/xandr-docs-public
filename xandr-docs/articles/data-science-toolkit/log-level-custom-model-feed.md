@@ -33,7 +33,7 @@ The columns below are listed in the same order in which they appear in the log-l
 | 09 | experiment | int | Indicates whether the impression is a test or control impression. This is currently unsupported and will be 0 for all impressions. |
 | 10 | value | numeric(18,6) | Value calculated by the model |
 | 11 | campaign_group_id | int | The ID of the Line Item |
-| 12 | hashed_user_id_64 | bytes | The hashed version of the AppNexus 64-bit User ID which will we provided as a proxy in certain cases where AppNexus is unable to provide the real `user_id_64`. You will not be able to target users via their hashed user ID. However you can use this identifier to calculate unique users, user frequency, and user recency. See example for hashed_user_id_64 below. |
+| 12 | hashed_user_id_64 | bytes | The hashed version of the AppNexus 64-bit User ID which will we provided as a proxy in certain cases where AppNexus is unable to provide the real `user_id_64`. You will not be able to target users via their hashed user ID. However you can use this identifier to calculate unique users, user frequency, and user recency. See **example for hashed_user_id_64** below. |
 
 ### Example for hashed_user_id_64
 ```pre

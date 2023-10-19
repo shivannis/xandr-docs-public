@@ -3,7 +3,7 @@ title: Data Science Toolkit - Logistic Regression Models
 description: Logistic regression predicts binary responses from multiple signals. Data scientists can use it for more accurate predictions and tailored algorithms.
 ---
 
-# Data Science Toolkit - Logistic regression models
+# Data Science Toolkit - Logistic regressi    on models
 
 To support our client's ability to predict user response to their digital advertising Xandr provides custom models based on decision trees. We developed an easy-to-use programming language called [Bonsai](./the-bonsai-language.md) that enables users to create decision trees to dynamically populate line item parameters.
 
@@ -17,7 +17,7 @@ Logistic regression is a classification algorithm. It is used to predict a binar
 
 The formula for logistic regression is:
 
-:::image type="content" source="./media/datascience-k.png" alt-text="Screenshot showing the formula for logistic regression.":::
+:::image type="content" source="./media/datascience-i.png" alt-text="Screenshot showing the formula for logistic regression.":::
 
 Where the probability (p) being modeled is that of a binary outcome: event = 1 or event = 0. For online advertising, the event is a click, a pixel fire, or another online action. The probability is conditional on both the predictors x1 through xn and on an implicit set of variables that represent the features in a bid request. The beta coefficients are the weights that the model assigns to the different predictors.
 
@@ -25,7 +25,7 @@ We convert this probability of an event happening to an expected value by multip
 
 The formula for deriving an expected value for an impression from the probability of an event happening is:
 
-:::image type="content" source="./media/datascience-l.png" alt-text="Screenshot showing the formula for deriving an expected value for an impression from the probability of an event happening.":::
+:::image type="content" source="./media/datascience-j.png" alt-text="Screenshot showing the formula for deriving an expected value for an impression from the probability of an event happening.":::
 
 The offset will usually be 0. However, a negative value may be useful as a security factor to ensure performance at the expense of delivery on low-performing inventory. That will ensure that the advertiser does not bid instead of bidding very little and potentially incurring fixed fees.  
 
@@ -35,7 +35,7 @@ Online advertising has many categorical features, that is, features that can hav
 
 If we put this into the logistic regression formula, we get:
 
-:::image type="content" source="./media/datascience-m.png" alt-text="Screenshot showing the formula for using categorical features of online advertising.":::
+:::image type="content" source="./media/datascience-k.png" alt-text="Screenshot showing the formula for using categorical features of online advertising.":::
 
 Since browser is a categorical feature, we can express the coefficients in a table:
 
@@ -46,7 +46,7 @@ Since browser is a categorical feature, we can express the coefficients in a tab
 
 Each row of this table is converted to a term in the logistic regression formula, so  x1 = 1 if "browser = safari" and  β safari = 1.2 and x2 = 1 if "browser = firefox" and β firefox = 0.8. This makes the overall equation:
 
-:::image type="content" source="./media/datascience-n.png" alt-text="Screenshot showing the logistic regression formula after converting each row of the table to a term.":::
+:::image type="content" source="./media/datascience-l.png" alt-text="Screenshot showing the logistic regression formula after converting each row of the table to a term.":::
 
 Other categorical features can be expressed this way as well. Suppose we assigned the following values as coefficients to the following domains:
 
@@ -58,11 +58,11 @@ Other categorical features can be expressed this way as well. Suppose we assigne
 
 These values then become incremental terms in the formula (x3 is 1 if "domain = cnn.com" and β 3 is 2.1), making the overall equation:
 
-:::image type="content" source="./media/datascience-o.png" alt-text="Screenshot showing the values in incremental terms in the formula.":::
+:::image type="content" source="./media/datascience-m.png" alt-text="Screenshot showing the values in incremental terms in the formula.":::
 
 When the ad impression is served, Xandr identifies the browser as Safari and the domain as nytimes.com. The corresponding variables for browser = Safari and domain = nytimes.com are set to 1 and the other variables are set to 0, resulting in the equation:
 
-:::image type="content" source="./media/datascience-p.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and the other variables set to 0.":::
+:::image type="content" source="./media/datascience-n.png" alt-text="Screenshot showing the corresponding variables for browser and domain set to 1 and the other variables set to 0.":::
 
 ## Higher-order predictors
 
@@ -79,7 +79,7 @@ Xandr supports higher-order predictors (combinations of features), allowing cust
 
 Each of these paired predictors becomes a term in the logistic regression equation:
 
-:::image type="content" source="./media/datascience-q.png" alt-text="Screenshot showing each of the paired predictors as a term in the logistic regression equation.":::
+:::image type="content" source="./media/datascience-o.png" alt-text="Screenshot showing each of the paired predictors as a term in the logistic regression equation.":::
 
 ## Hashed predictors
 
@@ -109,17 +109,17 @@ Then compute a coefficient for each hash value. Note that there are fewer featur
 
 Once you replace the variables with these values, the logistic regression equation becomes:
 
-:::image type="content" source="./media/datascience-r.png" alt-text="Screenshot showing the logistic regression equation after replacing the variables with the values.":::
+:::image type="content" source="./media/datascience-p.png" alt-text="Screenshot showing the logistic regression equation after replacing the variables with the values.":::
 
 To predict the response on a particular impression, Xandr hashes the detected features (using the same hash function that is applied during feature engineering for both training the models and online inference). For some features, we use hash functions to hash the raw feature values to the ones used in the above formula and executes the prediction. If the browser is Safari and the domain is nytimes.com (or any other browser-domain pair that hashes to the same value), we hash these to find the value 1 and substitute that into the logistic regression equation:
 
-:::image type="content" source="./media/datascience-s.png" alt-text="Screenshot showing the logistic regression equation after hashing the detected features.":::
+:::image type="content" source="./media/datascience-q.png" alt-text="Screenshot showing the logistic regression equation after hashing the detected features.":::
 
 ## Conversion from one-hot encoded and weight vectors to tables
 
 The encoding for categorical features ensures that, for each categorical feature, at most one variable will receive the value 1 and everything else will receive a value of zero. The dot product of the browser features' weight and the browser variables is thus a roundabout way to activate the predetermined weight for the browser on the bid request. The Digital Platform API uses the below equation, which is a standard Sigmoid function:
 
-:::image type="content" source="./media/116524637.png" alt-text="Screenshot showing the equation which is a standard Sigmoid function.":::
+:::image type="content" source="./media/datascience-r.png" alt-text="Screenshot showing the equation which is a standard Sigmoid function.":::
 
 If we had the following ad request:
 
@@ -127,7 +127,7 @@ If the browser type is Firefox then with one-hot encoding **x_firefox** would be
 
 We would get an equation with the following weighting:
 
-:::image type="content" source="./media/116524638.png" alt-text="Screenshot showing the equation with the weighting.":::
+:::image type="content" source="./media/datascience-s.png" alt-text="Screenshot showing the equation with the weighting.":::
 
 In order to define the mapping from categorical feature to weight, Xandr uses API calls to create and update lookup tables. The logistic regression model itself will refer to these tables and not to a vector of one-hot encoded variables. The model may also directly refer to cardinal or real values, including segment age, segment value, and frequency or recency information for an advertiser, a creative, or a line item.
 
@@ -182,10 +182,10 @@ This is all the data you need to call the AppNexus API.
 Once the line item passes targeting, Xandr uses its logistic regression model to determine a bid price:
 
 1. For each lookup table in its description, Xandr extracts the field's (or fields') value(s) from the bid request, and looks for an entry in the table. If there is an entry, that value is added to the linear argument of the logistic function. Otherwise, the table's default value, which is usually 0, is used.
-1. The same is done for hashed tables, except that Xandr hashes the values to find a bucket, and then look for that bucket in the hashed table's list of bucket-\>value mappings. Again, the default value is used if the specified value does not appear in the table.
+1. The same is done for hashed tables, except that Xandr hashes the values to find a bucket, and then look for that bucket in the hashed table's list of bucket -> value mappings. Again, the default value is used if the specified value does not appear in the table.
 1. Finally, Xandr looks for Bonsai features. We perform the lookup for each feature, multiply by the weight, and apply min/max limits.
 1. Xandr then sums the components and Beta0 and passes that to the logistic function to compute the estimated probability of a click. The estimated probability is multiplied by the goal value to obtain the expected value, which is then clamped between 1 and 100 CPM to curb any unrealistically high valuations.
-1. Xandr then uses the expected value and the amount of inventory available to compute a bid. The exact computations vary depending on the line item's setup, but the result is that Xandr will automatically scale down the expected value until the bids are just high enough that the line item spends its daily budget at the end of each day. For more information on this scaling, see [Adaptive Pacing](../invest/adaptive-pacing.md) (log in required) in  documentation.
+1. Xandr then uses the expected value and the amount of inventory available to compute a bid. The exact computations vary depending on the line item's setup, but the result is that Xandr will automatically scale down the expected value until the bids are just high enough that the line item spends its daily budget at the end of each day. For more information on this scaling, see ["Adaptive Pacing"](../invest/adaptive-pacing.md) (log in required) in  documentation.
 
 ## Related topics
 
