@@ -3,7 +3,7 @@ title: Data Science Toolkit - Logistic Regression Models
 description: Logistic regression predicts binary responses from multiple signals. Data scientists can use it for more accurate predictions and tailored algorithms.
 ---
 
-# Data Science Toolkit - Logistic regressi    on models
+# Data Science Toolkit - Logistic regression models
 
 To support our client's ability to predict user response to their digital advertising Xandr provides custom models based on decision trees. We developed an easy-to-use programming language called [Bonsai](./the-bonsai-language.md) that enables users to create decision trees to dynamically populate line item parameters.
 

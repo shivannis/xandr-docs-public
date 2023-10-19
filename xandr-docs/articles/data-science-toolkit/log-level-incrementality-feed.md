@@ -36,7 +36,7 @@ For `numeric` (floating point) data types, we recommend being able to accept a
 For `string` data types, the recommended length of the field varies depending on the field. See the table below.
 
 > [!NOTE]
-> These are Recommendations, not Guarantees
+> These are Recommendations, not Guarantees.
 >
 > The data types are meant to be accurate as documented. However, the recommended precision or length for a given data type should not be read as a guarantee. For example, a string or numeric column's value may exceed the suggested length or precision listed on this page.
 >
