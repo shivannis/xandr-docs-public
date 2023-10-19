@@ -33,7 +33,7 @@ important for the following:
 
 **Authentication**
 
-\``/line-item-model`\` supports Xandr API [standard Authentication Methods](../digital-platform-api/authentication-service.md).
+`/line-item-model` supports Xandr API [standard Authentication Methods](../digital-platform-api/authentication-service.md).
 
 ## Supported methods and fields
 
@@ -99,7 +99,9 @@ curl -H 'Authorization: {api_token}' 'https://api.appnexus.com/line-item-model?i
 \`PUT\` - Create and Update custom-models associated with a Line Item
 
 > [!NOTE]
-> \`PUT\` will only add new models to a line-item, or update existing models. If a model is not referenced in your \``line_item_model`\` array, it is not affected by your request, **unless** one of the models listed in your array is of the same \``type`\` as a model already associated to the line-item.
+> Important Usage Info
+>
+> `PUT` will only add new models to a line-item, or update existing models. If a model is not referenced in your `line_item_model` array, it is not affected by your request, **unless** one of the models listed in your array is of the same `type` as a model already associated to the line-item.
 
 ``` pre
 curl -H 'Authorization: {api_token}' -d @update_models.json -X PUT 'https://api.appnexus.com/line-item-model?id=12345'
@@ -159,15 +161,11 @@ curl -H 'Authorization: {api_token}' -d @update_models.json -X PUT 'https://api.
 
 **DELETE Example**
 
-
-
 \`DELETE\` a custom-model associated to a Line Item
 
 ``` pre
 curl -H 'Authorization: {api_token}' -d @detach_model.json -X DELETE 'https://api.appnexus.com/line-item-model?id=:line_item_id'
 ```
-
-
 
 **detach_model.json**
 

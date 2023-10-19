@@ -187,8 +187,7 @@ Features, descriptions, numeric restrictions are as follows:
   or `campaign` (representing split), and ID is the object ID. The day
   frequency must be a positive integer. In this scenario, object is
   `advertiser`.
-- `advertiser_recency`: Advertiser recency must be positive integer or
-  -1
+- `advertiser_recency`: Advertiser recency must be positive integer or -1
 - `device_type`: Device type string
 - `estimated_iab_viewthrough_rate`: IAB viewthrough rate must be a
   number between 0 and 1
