@@ -1,11 +1,11 @@
 ---
-title : Data Science Toolkit Guide
+title : Data Science - Toolkit Guide
 description : Learn how Microsoft Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
 ms.custom : data-science
 ---
 
 
-# Data science toolkit guide
+# Data science - Toolkit guide
 
 The Microsoft Data Science Toolkit is a set of tools
 that enables clients with data science capabilities to further their

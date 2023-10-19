@@ -1,11 +1,11 @@
 ---
-title : Custom Model Parser Service
+title : Data Science - Custom Model Parser Service
 description : The Custom Model Parser service lets you check the validity of decision trees written in our <a href="the-bonsai-language.md".
 ms.custom : data-science
 ---
 
 
-# Custom model parser service
+# Data Science - Custom model parser service
 
 The Custom Model Parser service lets you check the validity of decision
 trees written in our [Bonsai Language](the-bonsai-language.md). You should use this service to identify and resolve any Bonsai syntax or feature errors
