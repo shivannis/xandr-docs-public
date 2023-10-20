@@ -17,6 +17,10 @@ landingContent:
         links:
           - text: Data Science Toolkit Guide
             url: data-science-toolkit-guide.md  
+      - linkListType: quickstart
+        links:
+          - text: The Bonsai Language
+            url: the-bonsai-language.md 
   - title: Custom Models
     linkLists:
       - linkListType: concept
