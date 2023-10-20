@@ -3,7 +3,7 @@
 - name: Getting Started
   href: data-science-toolkit-guide.md
 - name: Custom Models
-   items:
+  items:
     - name: Overview
       href: custom-models.md
     - name: ALI Workflow with Custom Models
@@ -17,13 +17,13 @@
     - name: Nonvaluation Custom Model
       href: nonvaluation-custom-model.md
     - name: Logistic Regression Models
-       items:
+      items:
        - name: Overview
          href: logistic-regression-models.md
        - name: Linear-Log Bucketing
          href: linear-log-bucketing.md
     - name: Custom Model API Reference
-       items:
+      items:
        - name: Custom Model Service
          href: custom-model-service.md
        - name: Custom Model Parser Service
@@ -31,7 +31,7 @@
        - name: Line Item Model Service
          href: line-item-model-service.md
     - name: Logistic Regression Custom Model Service
-       items:
+      items:
        - name: Overview
          href: logistic-regression-custom-model-service.md
        - name: Logistic Regression Model API Resources
@@ -41,7 +41,7 @@
     - name: Using Custom Models to Pass Macros to Dynamic Creative Optimizations
       href: using-custom-models-to-pass-macros-to-dynamic-creative-optimizations.md
     - name: The Bonsai Language
-       items:
+      items:
        - name: Overview
          href: the-bonsai-language.md
        - name: Bonsai Language Features
@@ -53,7 +53,7 @@
        - name: Bonsai Custom Model Workflow
          href: bonsai-custom-model-workflow.md
 - name: Incrementality
-    items:
+  items:
     - name: Overview
       href: incrementality.md
     - name: Incrementality and Xandr
