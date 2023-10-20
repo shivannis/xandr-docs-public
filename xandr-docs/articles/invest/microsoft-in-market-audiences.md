@@ -12,7 +12,7 @@ Microsoft In-market Audiences are curated lists of users determined to be in mar
 segments are based on Microsoft’s unique intent signals, including search on Bing and user activity on Microsoft solutions. The power of
 search behaviour indicates that the audiences have a high probability of conversion.
 
-In-market Audiences are global, and available in more than 90 markets. Take a look at [Segment Targeting](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/In-Market-Audiences-segment-list-for-Invest.xlsx) for all the available in-market audience segments.
+In-market Audiences are global, and available in more than 90 markets. Take a look at [Segment Targeting](https://download.microsoft.com/download/4/0/0/40099106-6f9f-4b38-8aac-0dc7567404db/In-Market-Audiences-segment-list-Invest.xlsx) for all the available in-market audience segments.
 
 ## Set up Microsoft segment targeting on a line item
 
