@@ -1,10 +1,8 @@
 - name: Data Science Toolkit
-  href: index.yml
-- name: Data Science Toolkit Guide
-  items: 
-  - name: Getting Started with the Data Science Toolkit Guide
-    href: data-science-toolkit-guide.md
-  - name: Custom Models
+  href: index.yml 
+- name: Getting Started
+  href: data-science-toolkit-guide.md
+- name: Custom Models
     items:
     - name: Overview
       href: custom-models.md
@@ -54,7 +52,7 @@
         href: create-a-bonsai-decision-tree-custom-model.md
       - name: Bonsai Custom Model Workflow
         href: bonsai-custom-model-workflow.md
-  - name: Incrementality
+- name: Incrementality
     items:
     - name: Overview
       href: incrementality.md
