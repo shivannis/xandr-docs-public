@@ -54,6 +54,8 @@
         "articles/ott-ctv/*.md":"microsoft-monetize",
         "articles/data-science-toolkit/*.md":"microsoft-monetize",
         "articles/yield-analytics-api/*.md":"microsoft-monetize"
+        "articles/mobile-sdk/*.md":"microsoft-monetize"
+        
       },
       "author": {
         "articles/invest/*.md": "rupambaruah-xandr",
@@ -62,6 +64,7 @@
         "articles/ott-ctv/*.md":"rupambaruah-xandr",
         "articles/data-science-toolkit/*.md":"rupambaruah-xandr",
         "articles/yield-analytics-api/*.md":"rupambaruah-xandr"
+        "articles/mobile-sdk/*.md":"shivannis"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
@@ -70,6 +73,7 @@
         "articles/ott-ctv/*.md":"rupambaruah",
         "articles/data-science-toolkit/*.md":"rupambaruah",
         "articles/yield-analytics-api/*.md":"rupambaruah"
+        "articles/mobile-sdk/*.md":"shsrinivasan"
       }
     },
     "template": [],
