@@ -17,41 +17,41 @@
     - name: Nonvaluation Custom Model
       href: nonvaluation-custom-model.md
     - name: Logistic Regression Models
-      items:
-      - name: Overview
-        href: logistic-regression-models.md
-      - name: Linear-Log Bucketing
-        href: linear-log-bucketing.md
+       items:
+       - name: Overview
+         href: logistic-regression-models.md
+       - name: Linear-Log Bucketing
+         href: linear-log-bucketing.md
     - name: Custom Model API Reference
-      items:
-      - name: Custom Model Service
-        href: custom-model-service.md
-      - name: Custom Model Parser Service
-        href: custom-model-parser-service.md
-      - name: Line Item Model Service
-        href: line-item-model-service.md
+       items:
+       - name: Custom Model Service
+         href: custom-model-service.md
+       - name: Custom Model Parser Service
+         href: custom-model-parser-service.md
+       - name: Line Item Model Service
+         href: line-item-model-service.md
     - name: Logistic Regression Custom Model Service
-      items:
-      - name: Overview
-        href: logistic-regression-custom-model-service.md
-      - name: Logistic Regression Model API Resources
-        href: logistic-regression-model-api-resources.md
+       items:
+       - name: Overview
+         href: logistic-regression-custom-model-service.md
+       - name: Logistic Regression Model API Resources
+         href: logistic-regression-model-api-resources.md
     - name: Custom Models Pre-Implementation and Troubleshooting Guide
       href: custom-models-pre-implementation-and-troubleshooting-guide.md
     - name: Using Custom Models to Pass Macros to Dynamic Creative Optimizations
       href: using-custom-models-to-pass-macros-to-dynamic-creative-optimizations.md
     - name: The Bonsai Language
-      items:
-      - name: Overview
-        href: the-bonsai-language.md
-      - name: Bonsai Language Features
-        href: bonsai-language-features.md
-      - name: Bonsai Smart Leaves
-        href: bonsai-smart-leaves.md
-      - name: Create a Bonsai Decision Tree Custom Model
-        href: create-a-bonsai-decision-tree-custom-model.md
-      - name: Bonsai Custom Model Workflow
-        href: bonsai-custom-model-workflow.md
+       items:
+       - name: Overview
+         href: the-bonsai-language.md
+       - name: Bonsai Language Features
+         href: bonsai-language-features.md
+       - name: Bonsai Smart Leaves
+         href: bonsai-smart-leaves.md
+       - name: Create a Bonsai Decision Tree Custom Model
+         href: create-a-bonsai-decision-tree-custom-model.md
+       - name: Bonsai Custom Model Workflow
+         href: bonsai-custom-model-workflow.md
 - name: Incrementality
     items:
     - name: Overview
