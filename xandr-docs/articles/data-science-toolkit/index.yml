@@ -39,7 +39,9 @@ landingContent:
         links:            
           - text: What is Incrementality?
             url: incrementality.md
-      - linkListType: how-to-guide
+      - linkListType: tutorial
         links:
           - text: Incrementality and Xandr
             url: incrementality-and-xandr.md
+          - text: Log-level Incrementality Feed
+            url: log-level-incrementality-feed.md
