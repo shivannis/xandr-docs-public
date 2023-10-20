@@ -43,4 +43,4 @@ Data Science Toolkit products.
       - [Logistic Regression Custom Model Service](logistic-regression-model-api-resources.md)
 - [Incrementality](incrementality.md)
   - [Log-Level Incrementality Feed](log-level-incrementality-feed.md)
-  - [Incrementality and Xandr](incrementality-and-xandr.mdd)
+  - [Incrementality and Xandr](incrementality-and-xandr.md)
