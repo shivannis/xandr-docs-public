@@ -3,7 +3,7 @@
 - name: Getting Started
   href: data-science-toolkit-guide.md
 - name: Custom Models
-    items:
+   items:
     - name: Overview
       href: custom-models.md
     - name: ALI Workflow with Custom Models
