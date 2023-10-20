@@ -1,6 +1,6 @@
 ---
 title: Attribute Service
-description: In this article, understand what attribute service is and the various features associated with it.
+description: In this article, understand what attribute service is and the various features and functions and functions and functions associated with it.
 ms.custom: yield-analytics-api
 ---
 

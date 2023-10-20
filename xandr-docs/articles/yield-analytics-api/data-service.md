@@ -1,6 +1,6 @@
 ---
 title: Data Service
-description: In this article, understand what data service is and the various features associated with it.
+description: In this article, understand what data service is and the various features and functions associated with it.
 ms.custom: yield-analytics-api
 ---
 

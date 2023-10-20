@@ -1,6 +1,6 @@
 ---
 title: Order Line Service
-description: In this article, understand what order line service is and the various features associated with it.
+description: In this article, understand what order line service is and the various features and functions associated with it.
 ms.custom: yield-analytics-api
 ---
 
