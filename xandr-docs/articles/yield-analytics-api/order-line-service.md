@@ -42,7 +42,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ```
+  ``` pre
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
