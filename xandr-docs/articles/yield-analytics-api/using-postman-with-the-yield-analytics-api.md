@@ -28,15 +28,15 @@ The goal of this tutorial is to take a new Postman install and walk away with a 
 - Copy the Swagger Template URL by copying the address or clicking through and copying the url from the desired template listed above.
 - In Postman select: file → import.
 
-:::image type="content" source="media/postman_file_import.png" alt-text="A screenshot that shows how to navigate to the Import option in Postman.":::
+  :::image type="content" source="media/postman_file_import.png" alt-text="A screenshot that shows how to navigate to the Import option in Postman.":::
 
 - Select Import From Link and paste in the Template URL.
 
-:::image type="content" source="media/postman_import_swagger.png" alt-text="A screenshot that shows how to import from link in Postman.":::
+  :::image type="content" source="media/postman_import_swagger.png" alt-text="A screenshot that shows how to import from link in Postman.":::
 
 - Note that the headers have a standard key and a value wrapped in {{}}. Leave these in place and continue to the next section.
 
- :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with standard keys and values.":::
+  :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with standard keys and values.":::
   
 ## Setting Up a Postman environment with variables
 
@@ -46,19 +46,19 @@ The goal of this tutorial is to take a new Postman install and walk away with a 
 
 - The following image shows several variables: {{client_url}}, {{accepts}}, {{username}}, {{password}} and {{source}}
 
- :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with different variables.":::
+  :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with different variables.":::
 
 - In order to setup an environment click the gear icon located above the current active API call and select Manage Environments.
 
- :::image type="content" source="media/postman_env_gear_icon.png" alt-text="A screenshot that shows how to navigate to Manage Environments option.":::
+  :::image type="content" source="media/postman_env_gear_icon.png" alt-text="A screenshot that shows how to navigate to Manage Environments option.":::
 
 - Next click on the add button, name your environment and add in the variable names with values as shown in the following image
 
- :::image type="content" source="media/postman_env_example.png" alt-text="A screenshot that shows the Manage Environments dialog box with some variable names and values added.":::
+  :::image type="content" source="media/postman_env_example.png" alt-text="A screenshot that shows the Manage Environments dialog box with some variable names and values added.":::
 
 - Finally select your new environment from the environment dropdown
 
- :::image type="content" source="media/postman_env_dropdown.png" alt-text="A screenshot that shows the Environments dropdown.":::
+  :::image type="content" source="media/postman_env_dropdown.png" alt-text="A screenshot that shows the Environments dropdown.":::
 
 - When your API call is invoked the variables in {{}} will be replaced by the value you’ve assigned to the variable at runtime.
 
@@ -74,7 +74,7 @@ The goal of this tutorial is to take a new Postman install and walk away with a 
 
 - The main goals here are knowledge sharing and providing engineering with a runnable example that we can use to quickly determine if the call is incorrect or if the server action is incorrect.
 
- :::image type="content" source="media/postman_export_call.png" alt-text="A screenshot that shows how to export a call on Postman.":::
+  :::image type="content" source="media/postman_export_call.png" alt-text="A screenshot that shows how to export a call on Postman.":::
 
 ## Converting an http call to a cURL command
 

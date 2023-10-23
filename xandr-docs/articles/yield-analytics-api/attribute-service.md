@@ -1,6 +1,6 @@
 ---
 title: Attribute Service
-description: In this article, understand what attribute service is and the various features and functions and functions and functions associated with it.
+description: In this article, understand what attribute service is and the various features and functions associated with it.
 ms.custom: yield-analytics-api
 ---
 
@@ -35,7 +35,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"
@@ -44,7 +44,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -75,7 +75,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### Convert external IDs to Yield Analytics expression lexicon
 
-``` pre
+```
 POST /api/v1/rest/attributes/convert
 ```
 
@@ -112,7 +112,7 @@ POST /api/v1/rest/attributes/convert
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}' -d '{
   "attributeTranslation" : {
   "inputAttribute" : "attribute1",
@@ -127,7 +127,7 @@ POST /api/v1/rest/attributes/convert
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/attributes/create HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -151,7 +151,7 @@ POST /api/v1/rest/attributes/convert
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 26
@@ -163,7 +163,7 @@ POST /api/v1/rest/attributes/convert
 
 ### Create new attribute translation
 
-``` pre
+```
 POST /api/v1/rest/attributes/create
 ```
 
@@ -200,7 +200,7 @@ POST /api/v1/rest/attributes/create
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}' -d '{
   "attributeTranslation" : {
   "inputAttribute" : "attribute1",
@@ -215,7 +215,7 @@ POST /api/v1/rest/attributes/create
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/attributes/create HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -239,7 +239,7 @@ POST /api/v1/rest/attributes/create
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 26

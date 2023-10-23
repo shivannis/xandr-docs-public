@@ -36,7 +36,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"
@@ -44,7 +44,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -74,7 +74,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### Bulk product creation
 
-``` pre
+```
 POST /api/v1/rest/product/bulk/create
 ```
 
@@ -93,7 +93,7 @@ POST /api/v1/rest/product/bulk/create
   - If productId is NOT provided then we will check for externalId.
   - If externalId is provided and a product with that externalId exists in our system then that product will be UPDATED.
   - If externalId is provided and a product with that externalId does NOT exist in our system, the product will be CREATED.
-  - If neither productId nor externalId is provided then we will create a new product
+  - If neither productId nor externalId is provided then we will create a new product.
 
   > [!NOTE]
   > Product Name is not required to be unique when creating or updating products, but a post-process will run that renames products which overlap. Any product name which conflicts with another product in the system is renamed to productName-{productId} (our internal product id); thereby creating a unique name for that product.
@@ -129,7 +129,7 @@ POST /api/v1/rest/product/bulk/create
 
 - **Example cURL request**
   
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -148,7 +148,7 @@ POST /api/v1/rest/product/bulk/create
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/bulk/create HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -174,7 +174,7 @@ POST /api/v1/rest/product/bulk/create
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 459
@@ -203,7 +203,7 @@ POST /api/v1/rest/product/bulk/create
 
 ### Bulk product creation by date
 
-``` pre
+```
 GET /api/v1/rest/product/bulk/create/{date}
 ```
 
@@ -240,7 +240,7 @@ GET /api/v1/rest/product/bulk/create/{date}
 
 - **Example cURL request**
   
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create/2017-06-15' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
@@ -248,7 +248,7 @@ GET /api/v1/rest/product/bulk/create/{date}
 
 - **Example HTTP request**
   
-  ``` pre
+  ```
   GET /api/v1/rest/product/bulk/create/2017-06-15 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -260,7 +260,7 @@ GET /api/v1/rest/product/bulk/create/{date}
 
 - **Example HTTP response**
   
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 211
@@ -280,7 +280,7 @@ GET /api/v1/rest/product/bulk/create/{date}
 
 ### Get consumption detail by external ID batch
 
-``` pre
+```
 GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 ```
 
@@ -320,7 +320,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,
   2017-03-31;q=322,2017-03-01,2017-03-31/groupInfo;groupBy=salesperson' -i -H 'Content-Type: application/json' -H 
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -328,7 +328,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 
 - **Example HTTP request**
   
-  ``` pre
+  ```
   GET /api/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,2017-03-31;q=322,2017-03-01,
   2017-03-31/groupInfo;groupBy=salesperson HTTP/1.1
   Content-Type: application/json
@@ -341,7 +341,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -409,7 +409,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 
 ### Get consumption detail by external ID
 
-``` pre
+```
 GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDate}/{groupingInfo}
 ```
 
@@ -450,7 +450,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
 
 - **Example cURL request**
   
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;
   groupBy=salesperson' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
@@ -458,7 +458,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
 
 - **Example HTTP request**
   
-  ``` pre
+  ```
   GET /api/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;groupBy=salesperson HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -470,7 +470,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -536,7 +536,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
 
 ### Create product by originating target string
 
-``` pre
+```
 GET /api/v1/rest/product/create/target/{target}
 ```
 
@@ -573,7 +573,7 @@ GET /api/v1/rest/product/create/target/{target}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/target/ad_server%20in%20('TEST')' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
   'source: {{source}}'
@@ -581,7 +581,7 @@ GET /api/v1/rest/product/create/target/{target}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/create/target/ad_server%20in%20('TEST') HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -593,7 +593,7 @@ GET /api/v1/rest/product/create/target/{target}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 603
@@ -625,7 +625,7 @@ GET /api/v1/rest/product/create/target/{target}
 
 ### Create product by originating target expression
 
-``` pre
+```
 POST /api/v1/rest/product/create/targetexpression
 ```
 
@@ -662,7 +662,7 @@ POST /api/v1/rest/product/create/targetexpression
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/targetexpression' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
     "targetExpression" : {
@@ -673,7 +673,7 @@ POST /api/v1/rest/product/create/targetexpression
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/create/targetexpression HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -688,7 +688,7 @@ POST /api/v1/rest/product/create/targetexpression
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 603
@@ -720,7 +720,7 @@ POST /api/v1/rest/product/create/targetexpression
 
 ### Find products by match phrase
 
-``` pre
+```
 GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 ```
 
@@ -757,7 +757,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/matchphrase/testingMatchphrase' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
@@ -765,7 +765,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/matchphrase/testingMatchphrase HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -777,7 +777,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -836,7 +836,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 
 ### Find products by targeting characteristics
 
-``` pre
+```
 GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 ```
 
@@ -874,7 +874,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/targetingcharacteristics/target;category=food;
   size=350x200;category=cooking' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -882,7 +882,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/targetingcharacteristics/target;category=food;size=350x200;category=cooking HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -894,7 +894,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -953,7 +953,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 
 ### Find products
 
-``` pre
+```
 GET /api/v1/rest/product/discover/{productLocator}
 ```
 
@@ -990,7 +990,7 @@ GET /api/v1/rest/product/discover/{productLocator}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
@@ -998,7 +998,7 @@ GET /api/v1/rest/product/discover/{productLocator}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1010,7 +1010,7 @@ GET /api/v1/rest/product/discover/{productLocator}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -1069,7 +1069,7 @@ GET /api/v1/rest/product/discover/{productLocator}
 
 ### Get forecast adjustments
 
-``` pre
+```
 GET /api/v1/rest/product/forecast/{targets}/{date}
 ```
 
@@ -1107,7 +1107,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/forecast/1/2017-03-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
@@ -1115,7 +1115,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/forecast/1/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1127,7 +1127,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 58
@@ -1141,7 +1141,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
 
 ### Get inventory detail by external ID batch
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 ```
 
@@ -1179,7 +1179,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/externalids/queries;
   q=12345,2017-03-01,2017-03-31;q=23456,2017-03-01,2017-03-31' -i -H 'Content-Type: application/json' 
   -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -1187,7 +1187,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/batch/externalids/queries;q=12345,2017-03-01,2017-03-31;q=23456,
   2017-03-01,2017-03-31 HTTP/1.1
   Content-Type: application/json
@@ -1200,7 +1200,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -1268,7 +1268,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 
 ### Get inventory details by target expression batch
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 ```
 
@@ -1307,7 +1307,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -1328,7 +1328,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/batch/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -1356,7 +1356,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -1424,7 +1424,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 
 ### Get inventory details by target expression with displacement batch
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 ```
 
@@ -1463,7 +1463,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -1485,7 +1485,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -1513,7 +1513,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1869
@@ -1583,7 +1583,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 
 ### Get inventory detail by target expression with displacement
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -1624,7 +1624,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/targetexpression/
   2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;
   PRIORITY%3E=5' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -1637,7 +1637,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/displacement/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -1657,7 +1657,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1693
@@ -1725,7 +1725,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
 
 ### Get inventory detail by external ID
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 ```
 
@@ -1764,7 +1764,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   -H 'source: {{source}}'
@@ -1772,7 +1772,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1784,7 +1784,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -1850,7 +1850,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 ### Get inventory detail by external ID with consumption filter
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -1891,7 +1891,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -1900,7 +1900,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -1913,7 +1913,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -1979,7 +1979,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 
 ### Get inventory detail by operative adapter targeting
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endDate}
 ```
 
@@ -2018,7 +2018,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01' 
   -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -2041,7 +2041,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2071,7 +2071,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2137,7 +2137,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 ### Get inventory detail by operative adapter targeting with consumption filter
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -2178,7 +2178,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -2202,7 +2202,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -2233,7 +2233,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2299,7 +2299,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 
 ### Get inventory detail by product ID with consumption filter
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -2340,7 +2340,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
@@ -2349,7 +2349,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -2362,7 +2362,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2428,7 +2428,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
 
 ### Get roadblock detail with consumption filter
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -2469,7 +2469,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;
   ROADBLOCK=all' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -2481,7 +2481,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;ROADBLOCK=all HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2500,7 +2500,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 78
@@ -2515,7 +2515,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
 
 ### Get inventory detail by target string
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 ```
 
@@ -2554,7 +2554,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   -H 'source: {{source}}'
@@ -2562,7 +2562,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2574,7 +2574,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2640,7 +2640,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 
 ### Get inventory detail by target string with consumption filter
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -2681,7 +2681,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -2690,7 +2690,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -2703,7 +2703,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2769,7 +2769,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
 
 ### Get inventory detail by target expression
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 ```
 
@@ -2808,7 +2808,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -2820,7 +2820,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2839,7 +2839,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -2905,7 +2905,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 
 ### Get inventory detail by target expression with consumption filter
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -2946,7 +2946,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
@@ -2959,7 +2959,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -2979,7 +2979,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -3045,7 +3045,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
 
 ### Get combined inventory detail by target expression
 
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -3087,7 +3087,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
@@ -3100,7 +3100,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -3120,7 +3120,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 3472
@@ -3243,7 +3243,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
 
 ### Get inventory detail by targeting characteristics
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{startDate}/{endDate}
 ```
 
@@ -3282,7 +3282,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -3290,7 +3290,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
@@ -3303,7 +3303,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -3369,7 +3369,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 ### Get inventory detail by targeting characteristics with consumption filter
 
-``` pre
+```
 GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{startDate}/{endDate}
 ```
 
@@ -3411,7 +3411,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;
   city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
@@ -3420,7 +3420,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -3434,7 +3434,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -3500,7 +3500,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 
 ### Get batch inventory and contention
 
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consumptionFilter}
 ```
 
@@ -3542,7 +3542,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
@@ -3560,7 +3560,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/batch/aliasFunctions;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -3585,7 +3585,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1652
@@ -3649,7 +3649,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
 
 ### Get batch inventory and contention with displacement
 
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFunctions}/{consumptionFilter}
 ```
 
@@ -3690,7 +3690,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
@@ -3708,7 +3708,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -3733,7 +3733,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1713
@@ -3798,7 +3798,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
 
 ### Get inventory and contention by target expression with displacement
 
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{startDate}/{endDate}/{aliasFunctions}
 /{consumptionFilter}
 ```
@@ -3846,7 +3846,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/targetexpression/
   2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
@@ -3860,7 +3860,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -3881,7 +3881,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1410
@@ -3941,7 +3941,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
 
 ### Get inventory and contention by target string
 
-``` pre
+```
 GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{endDate}/{aliasFunctions}/{consumptionFilter}
 ```
 
@@ -3988,7 +3988,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')
   /2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -H 
@@ -3998,7 +3998,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -4012,7 +4012,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1353
@@ -4071,7 +4071,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
 
 ### Get inventory and contention by target expression
 
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{endDate}/{aliasFunctions}/{consumptionFilter}
 ```
 
@@ -4118,7 +4118,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/
   2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 'Content-Type: application/json' 
@@ -4131,7 +4131,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -4152,7 +4152,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1353
@@ -4211,7 +4211,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
 
 ### Get operative adapter targeting expression
 
-``` pre
+```
 POST /api/v1/rest/product/targeting/operativeadapter
 ```
 
@@ -4248,7 +4248,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/targeting/operativeadapter' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -4271,7 +4271,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/targeting/operativeadapter HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -4301,7 +4301,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 46

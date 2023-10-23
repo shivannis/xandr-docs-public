@@ -35,7 +35,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"        
@@ -43,7 +43,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -71,15 +71,15 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ## Paths
 
-### Get Guaranteed Capacity for single order
+### Get guaranteed capacity for single order
 
-``` pre
+```
 GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
 ```
 
 - **Description**
 
-  Get guaranteed delivery dynamic capacity as CSV for a particular timezone
+  Get guaranteed delivery dynamic capacity as CSV for a particular timezone.
 
 - **Parameters**
 
@@ -111,14 +111,14 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/future/1/1' -i -H 'Content-Type: application/json' 
     -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/order/capacity/future/1/1 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -130,7 +130,7 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567
@@ -189,15 +189,15 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
   } ]       
   ```
 
-### Get Guaranteed Delivery Dynamic Capacity as CSV for single timezone
+### Get guaranteed delivery dynamic capacity as CSV for single timezone
 
-``` pre
+```
 GET /api/v1/rest/order/capacity/guaranteed/future/csv/{nbDays}/{timeZone}
 ```
 
 - **Description**
 
-  Get guaranteed delivery dynamic capacity as CSV for a particular timezonee
+  Get guaranteed delivery dynamic capacity as CSV for a particular timezone.
 
 - **Parameters**
 
@@ -227,15 +227,15 @@ GET /api/v1/rest/order/capacity/guaranteed/future/csv/{nbDays}/{timeZone}
 
   Insertion Order Service End Points
 
-### Get Guaranteed Delivery Dynamic Capacity as CSV by group of order id for double timezone
+### Get guaranteed delivery dynamic capacity as CSV by group of order id for double timezone
 
-``` pre
+```
 POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZone}/{timeZoneSecond}
 ```
 
 - **Description**
 
-  Get guaranteed delivery dynamic capacity as CSV for a group of orders within a timezone
+  Get guaranteed delivery dynamic capacity as CSV for a group of orders within a timezone.
 
 - **Parameters**
   
@@ -267,15 +267,15 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
 
   Insertion Order Service End Points
 
-### Get Guaranteed Delivery Dynamic Capacity as CSV by group of order id for single timezone
+### Get guaranteed delivery dynamic capacity as CSV by group of order id for single timezone
 
-``` pre
+```
 POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZone}
 ```
 
 - **Description**
 
-  Get guaranteed delivery dynamic capacity as CSV for a group of orders within a timezone
+  Get guaranteed delivery dynamic capacity as CSV for a group of orders within a timezone.
 
 - **Parameters**
   
@@ -306,15 +306,15 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
 
   Insertion Order Service End Points
 
-### Get Guaranteed Delivery Dynamic Capacity as CSV by group of order id for double timezone
+### Get guaranteed delivery dynamic capacity as CSV by group of order id for double timezone
 
-``` pre
+```
 POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZone}/{timeZoneSecond}
 ```
 
 - **Description**
 
-  Get guaranteed delivery dynamic capacity as CSV for a group of orders for double timezone
+  Get guaranteed delivery dynamic capacity as CSV for a group of orders for double timezone.
 
 - **Parameters**
   
@@ -346,9 +346,9 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
 
   Insertion Order Service End Points
 
-### Get Guaranteed Delivery Dynamic Capacity as CSV by group of order id for single timezone
+### Get guaranteed delivery dynamic capacity as CSV by group of order id for single timezone
 
-``` pre
+```
 POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
 ```
 
@@ -387,7 +387,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
    $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X 
    POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
    "externalOrderIdPool" : 
@@ -399,7 +399,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/EST HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -414,7 +414,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567
@@ -472,9 +472,9 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
   } ]
   ```
 
-### Get Guaranteed Delivery Dynamic Capacity by group of order id for double timezone
+### Get guaranteed delivery dynamic capacity by group of order id for double timezone
 
-``` pre
+```
 POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/{timeZoneSecond}
 ```
 
@@ -514,7 +514,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/Australia/Sydney' -i -X 
     POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "externalOrderIdPool" : 
@@ -526,7 +526,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/Australia/Sydney HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -541,7 +541,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567
@@ -600,9 +600,9 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
   } ]
   ```
 
-### Get Guaranteed Delivery Dynamic Capacity by group of order id for single timezone
+### Get guaranteed delivery dynamic capacity by group of order id for single timezone
 
-``` pre
+```
 GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
 ```
 
@@ -641,7 +641,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
    $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X POST 
      -H 'Content-Type: application/json;charset=UTF-8' -d '{
      "externalOrderIdPool" : 
@@ -653,7 +653,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/EST HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -668,7 +668,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567
@@ -726,9 +726,9 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
   } ]
   ```
 
-### Get Guaranteed Delivery Dynamic Capacity for double timezone
+### Get guaranteed delivery dynamic capacity for double timezone
 
-``` pre
+```
 GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneSecond}
 ```
 
@@ -768,7 +768,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/1/Australia/Sydney' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'    
@@ -776,7 +776,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/order/capacity/guaranteed/future/1/Australia/Sydney HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -788,7 +788,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567
@@ -847,7 +847,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   } ]
   ```
 
-### Get Guaranteed Delivery Historical Capacity as JSON
+### Get guaranteed delivery historical capacity as JSON
 
 - **Parameters**
   
@@ -880,7 +880,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/delivery/1/2016-06-01/2016-07-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'    
@@ -888,7 +888,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/order/delivery/1/2016-06-01/2016-07-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -900,7 +900,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 241
@@ -921,9 +921,9 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   }
   ```
 
-### Get Insertion Order Inventory with JSON
+### Get insertion order inventory with JSON
 
-``` pre
+```
 POST /api/v1/rest/order/inventory/apas/{startDate}/{endDate}/{consumptionFilter}
 ```
 
@@ -962,15 +962,15 @@ POST /api/v1/rest/order/inventory/apas/{startDate}/{endDate}/{consumptionFilter}
 
   Insertion Order Service End Points
 
-### Get Insertion Order Inventory and Contention with JSON
+### Get insertion order inventory and contention with JSON
 
-``` pre
+```
 POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consumptionFilter}
 ```
 
 - **Description**
 
-  Get insertion order inventory and contention with JSON
+  Get insertion order inventory and contention with JSON.
 
 - **Parameters**
   
@@ -1005,7 +1005,7 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/inventoryandcontention/apas/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d 
@@ -1016,7 +1016,7 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/order/inventoryandcontention/apas/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
@@ -1030,7 +1030,7 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 2567

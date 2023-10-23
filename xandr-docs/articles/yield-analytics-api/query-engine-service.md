@@ -32,7 +32,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"
@@ -40,7 +40,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -70,7 +70,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### Execute saved analysis
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 ```
 
@@ -109,7 +109,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -117,7 +117,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/analysis/100 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -129,7 +129,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -146,7 +146,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 
 ### Execute saved analysis with row count
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
 ```
 
@@ -185,14 +185,14 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100/1' -i -H 'Content-Type: application/json' -H 
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/analysis/100/1 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -204,7 +204,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -221,7 +221,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
 
 ### Execute saved analysis with row count and row start
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
 ```
 
@@ -261,14 +261,14 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100/1/2' -i -H 'Content-Type: application/json' 
   -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/analysis/100/1/2 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -280,7 +280,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -297,7 +297,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
 
 ### Execute dynamic analysis
 
-``` pre
+```
 POST /api/v1/rest/queryengine/analysisdynamic
 ```
 
@@ -336,7 +336,7 @@ POST /api/v1/rest/queryengine/analysisdynamic
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic' -i 
   -X POST -H 'Content-Type: application/json;charset=UTF-8' 
   -d '{
@@ -422,7 +422,7 @@ POST /api/v1/rest/queryengine/analysisdynamic
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -511,7 +511,7 @@ POST /api/v1/rest/queryengine/analysisdynamic
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -528,7 +528,7 @@ POST /api/v1/rest/queryengine/analysisdynamic
 
 ### Execute dynamic analysis
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
 ```
 
@@ -566,7 +566,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic' -i 
   -X POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
@@ -651,7 +651,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -740,7 +740,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -757,7 +757,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
 
 ### Execute dynamic analysis with row count
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
 ```
 
@@ -796,7 +796,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic/1' -i -X POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
       "additionalDimensions" : [ {
@@ -881,7 +881,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic/1 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -970,7 +970,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -987,7 +987,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
 
 ### Execute dynamic analysis with row count and row start
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{startRow}
 ```
 
@@ -1027,7 +1027,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{star
 
 - **Example cURL request**
 
-  ``` pre
+  ```
    $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic/1/2' -i -X POST 
      -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
@@ -1112,7 +1112,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{star
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic/1/2 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -1201,7 +1201,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{star
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -1218,7 +1218,7 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{star
 
 ### Execute dynamic analysis with row count
 
-``` pre
+```
 POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
 ```
 
@@ -1258,7 +1258,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic/1' -i -X POST 
   -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
@@ -1343,7 +1343,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic/1 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -1432,7 +1432,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -1449,7 +1449,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
 
 ### Execute dynamic analysis with row count and row start
 
-``` pre
+```
 POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
 ```
 
@@ -1490,7 +1490,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
    $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamic/1/2' -i -X POST 
   -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
@@ -1575,7 +1575,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamic/1/2 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -1664,7 +1664,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -1681,7 +1681,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
 
 ### Get a dynamic analyzer report by report definition using POST
 
-``` pre
+```
 POST /api/v1/rest/queryengine/analysisdynamicchart
 ```
 
@@ -1720,7 +1720,7 @@ POST /api/v1/rest/queryengine/analysisdynamicchart
 
 ### Get a dynamic analyzer report by report definition using GET
 
-``` pre
+```
 GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
 ```
 
@@ -1758,7 +1758,7 @@ GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysisdynamicchart/' -i -X POST 
   -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "report" : {
@@ -1843,7 +1843,7 @@ GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/analysisdynamicchart/ HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -1932,7 +1932,7 @@ GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 118
@@ -1945,7 +1945,7 @@ GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
 
 ### Batch query POST
 
-``` pre
+```
 POST /api/v1/rest/queryengine/batch
 ```
 
@@ -1984,7 +1984,7 @@ POST /api/v1/rest/queryengine/batch
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/batch' -i 
   -X POST -H 'Content-Type: application/json;charset=UTF-8' -d 
   '{
@@ -1999,7 +1999,7 @@ POST /api/v1/rest/queryengine/batch
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/batch HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2017,7 +2017,7 @@ POST /api/v1/rest/queryengine/batch
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 326
@@ -2042,7 +2042,7 @@ POST /api/v1/rest/queryengine/batch
 
 ### Batch query GET
 
-``` pre
+```
 GET /api/v1/rest/queryengine/batch/{queries}/{query}
 ```
 
@@ -2082,7 +2082,7 @@ GET /api/v1/rest/queryengine/batch/{queries}/{query}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/batch/select%20consumption_date,
   %20sum(consumed)%20from%20OLPCS(network_products(),'2010-07-01','2010-07-31')
   %20group%20by%20consumption_date%20order%20by%20consumption_date%20ascconsumptionFilter;
@@ -2094,7 +2094,7 @@ GET /api/v1/rest/queryengine/batch/{queries}/{query}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/batch/select%20consumption_date,%20sum(consumed)%20from%20OLPCS(network_products(),
   '2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by%20consumption_date%20ascconsumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/select%20consumption_date,
@@ -2109,7 +2109,7 @@ GET /api/v1/rest/queryengine/batch/{queries}/{query}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 326
@@ -2134,7 +2134,7 @@ GET /api/v1/rest/queryengine/batch/{queries}/{query}
 
 ### Execute statement using GET
 
-``` pre
+```
 GET /api/v1/rest/queryengine/execute/{statement}
 ```
 
@@ -2172,7 +2172,7 @@ GET /api/v1/rest/queryengine/execute/{statement}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20where%
   20data_source_type%20=%20'ORDER_LINE'' -i -H 'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -2180,7 +2180,7 @@ GET /api/v1/rest/queryengine/execute/{statement}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20where%20data_source_type%20=%20'ORDER_LINE' 
   HTTP/1.1
   Content-Type: application/json
@@ -2193,7 +2193,7 @@ GET /api/v1/rest/queryengine/execute/{statement}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 118
@@ -2206,7 +2206,7 @@ GET /api/v1/rest/queryengine/execute/{statement}
 
 ### Execute statement using POST
 
-``` pre
+```
 POST /api/v1/rest/queryengine/execute/{statement}
 ```
 
@@ -2245,7 +2245,7 @@ POST /api/v1/rest/queryengine/execute/{statement}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20
   where%20data_source_type%20=%20'ORDER_LINE'' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
@@ -2253,7 +2253,7 @@ POST /api/v1/rest/queryengine/execute/{statement}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20where%20data_source_type%20=%20'ORDER_LINE' 
   HTTP/1.1
   Content-Type: application/json
@@ -2266,7 +2266,7 @@ POST /api/v1/rest/queryengine/execute/{statement}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 118
@@ -2279,7 +2279,7 @@ POST /api/v1/rest/queryengine/execute/{statement}
 
 ### Execute SQL query statement by request object
 
-``` pre
+```
 POST /api/v1/rest/queryengine/executerequest
 ```
 
@@ -2318,7 +2318,7 @@ POST /api/v1/rest/queryengine/executerequest
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/executerequest' -i 
   -X POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "queryRequest" : {
@@ -2330,7 +2330,7 @@ POST /api/v1/rest/queryengine/executerequest
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/executerequest HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2346,7 +2346,7 @@ POST /api/v1/rest/queryengine/executerequest
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 118
@@ -2359,7 +2359,7 @@ POST /api/v1/rest/queryengine/executerequest
 
 ### Query by body statement
 
-``` pre
+```
 POST /api/v1/rest/queryengine/query
 ```
 
@@ -2398,7 +2398,7 @@ POST /api/v1/rest/queryengine/query
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/query' -i -X POST 
   -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "sql" : "select consumption_date, sum(consumed) from OLPCS(network_products(),'2020-03-19','2020-06-19') 
@@ -2408,7 +2408,7 @@ POST /api/v1/rest/queryengine/query
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/query HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2422,7 +2422,7 @@ POST /api/v1/rest/queryengine/query
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2439,7 +2439,7 @@ POST /api/v1/rest/queryengine/query
 
 ### Query by statement using GET
 
-``` pre
+```
 GET /api/v1/rest/queryengine/query/{query}
 ```
 
@@ -2478,7 +2478,7 @@ GET /api/v1/rest/queryengine/query/{query}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/query/select%20consumption_date,%20sum(consumed)%20
   from%20OLPCS(network_products(),'2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by%20consumption_date%20asc' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
@@ -2487,7 +2487,7 @@ GET /api/v1/rest/queryengine/query/{query}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/query/select%20consumption_date,%20sum(consumed)%20from%20OLPCS(network_products(),'2010-07-01',
   '2010-07-31')%20group%20by%20consumption_date%20order%20by%20consumption_date%20asc HTTP/1.1
   Content-Type: application/json
@@ -2500,7 +2500,7 @@ GET /api/v1/rest/queryengine/query/{query}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2517,7 +2517,7 @@ GET /api/v1/rest/queryengine/query/{query}
 
 ### Query by statement using POST
 
-``` pre
+```
 POST /api/v1/rest/queryengine/query/{query}
 ```
 
@@ -2556,7 +2556,7 @@ POST /api/v1/rest/queryengine/query/{query}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/query/select%20consumption_date,
   %20sum(consumed)%20from%20OLPCS(network_products(),'2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by
   %20consumption_date%20asc' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' 
@@ -2565,7 +2565,7 @@ POST /api/v1/rest/queryengine/query/{query}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/query/select%20consumption_date,%20sum(consumed)%20from%20OLPCS(network_products(),
   '2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by%20consumption_date%20asc HTTP/1.1
   Content-Type: application/json
@@ -2578,7 +2578,7 @@ POST /api/v1/rest/queryengine/query/{query}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2595,7 +2595,7 @@ POST /api/v1/rest/queryengine/query/{query}
 
 ### Query by query request
 
-``` pre
+```
 POST /api/v1/rest/queryengine/queryrequest/{decode}
 ```
 
@@ -2635,7 +2635,7 @@ POST /api/v1/rest/queryengine/queryrequest/{decode}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/queryrequest/true' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
     "sql" : "select consumption_date, sum(consumed) from OLPCS(network_products(),'2020-03-19','2020-06-19') 
@@ -2645,7 +2645,7 @@ POST /api/v1/rest/queryengine/queryrequest/{decode}
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/queryrequest/true HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2659,7 +2659,7 @@ POST /api/v1/rest/queryengine/queryrequest/{decode}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2676,7 +2676,7 @@ POST /api/v1/rest/queryengine/queryrequest/{decode}
 
 ### Query set using GET
 
-``` pre
+```
 GET /api/v1/rest/queryengine/queryset
 ```
 
@@ -2714,7 +2714,7 @@ GET /api/v1/rest/queryengine/queryset
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/queryset' -i -H 'Content-Type: application/json;
   charset=UTF-8' -d '{
     "querySet" : {
@@ -2730,7 +2730,7 @@ GET /api/v1/rest/queryengine/queryset
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/queryengine/queryset HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2750,7 +2750,7 @@ GET /api/v1/rest/queryengine/queryset
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2767,7 +2767,7 @@ GET /api/v1/rest/queryengine/queryset
 
 ### Query set using POST
 
-``` pre
+```
 POST /api/v1/rest/queryengine/queryset
 ```
 
@@ -2806,7 +2806,7 @@ POST /api/v1/rest/queryengine/queryset
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/queryset' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
     "querySet" : {
@@ -2822,7 +2822,7 @@ POST /api/v1/rest/queryengine/queryset
 
 - **Example HTTP Request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/queryengine/queryset HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -2842,7 +2842,7 @@ POST /api/v1/rest/queryengine/queryset
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 115
@@ -2859,7 +2859,7 @@ POST /api/v1/rest/queryengine/queryset
 
 ### Reports defined and saved in the target analyzer may be executed as a REST based service
 
-``` pre
+```
 GET /api/v1/rest/queryengine/xml/{query}
 ```
 

@@ -35,7 +35,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"        
@@ -43,7 +43,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -73,7 +73,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### POST: Bulk product creation
 
-``` pre
+```
 POST /api/products/bulk/create
 ```
 
@@ -91,7 +91,7 @@ POST /api/products/bulk/create
   - If productId is NOT provided then we will check for externalId.
   - If externalId is provided and a product with that externalId exists in our system then that product will be UPDATED.
   - If externalId is provided and a product with that externalId does NOT exist in our system, the product will be CREATED.
-  - If neither productId nor externalId is provided then we will create a new product
+  - If neither productId nor externalId is provided then we will create a new product.
 
   > [!NOTE]
   > Product Name is not required to be unique when creating or updating products, but a post-process will run that renames products which overlap. Any product name which conflicts with another product in the system is renamed to productName-{productId} (our internal product id); thereby creating a unique name for that product.
@@ -124,7 +124,7 @@ POST /api/products/bulk/create
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://api-host/api/v1/rest/product/bulk/create' -i -X POST -H 'Content-Type: application/json;charset=UTF-8' -d
   '{"bulkProductCreation":{
        "products": [
@@ -154,7 +154,7 @@ POST /api/products/bulk/create
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/bulk/create HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://api-host
@@ -188,7 +188,7 @@ POST /api/products/bulk/create
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 236
@@ -206,7 +206,7 @@ POST /api/products/bulk/create
 
 ### GET: Bulk product creation By date
 
-``` pre
+```
 GET /api/products/bulk/create/{date}
 ```
 
@@ -236,13 +236,13 @@ GET /api/products/bulk/create/{date}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://api-host/api/v1/rest/product/bulk/create/2017-01-01' -i -H 'Content-Type: application/json;charset=UTF-8'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/bulk/create/2017-01-01 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://api-host
@@ -250,7 +250,7 @@ GET /api/products/bulk/create/{date}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 111

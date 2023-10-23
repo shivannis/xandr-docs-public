@@ -30,7 +30,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"
@@ -39,7 +39,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -69,13 +69,13 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### Get alias columns
 
-``` pre
+```
 GET /api/v1/rest/data/aliasColumns
 ```
 
 - **Description**
 
-  Get request to read a collection of alias columns
+  Get request to read a collection of alias columns.
 
 - **Parameters**
   
@@ -106,14 +106,14 @@ GET /api/v1/rest/data/aliasColumns
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/data/aliasColumns HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -125,7 +125,7 @@ GET /api/v1/rest/data/aliasColumns
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 187
@@ -143,13 +143,13 @@ GET /api/v1/rest/data/aliasColumns
 
 ### Get alias functions
 
-``` pre
+```
 GET /api/v1/rest/data/aliasFunctions
 ```
 
 - **Description**
 
-  Get request to read a collection of alias functions
+  Get request to read a collection of alias functions.
 
 - **Parameters**
   
@@ -180,14 +180,14 @@ GET /api/v1/rest/data/aliasFunctions
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/data/aliasColumns HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -199,7 +199,7 @@ GET /api/v1/rest/data/aliasFunctions
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 187
@@ -217,13 +217,13 @@ GET /api/v1/rest/data/aliasFunctions
 
 ### Get consumption filters
 
-``` pre
+```
 GET /api/v1/rest/data/consumptionFilters
 ```
 
 - **Description**
 
-  Get request to read a collection of consumption filters
+  Get request to read a collection of consumption filters.
 
 - **Parameters**
   
@@ -254,14 +254,14 @@ GET /api/v1/rest/data/consumptionFilters
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/consumptionFilters' -i -H 'Content-Type: application/json' -H 
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   GET /api/v1/rest/data/consumptionFilters HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -273,7 +273,7 @@ GET /api/v1/rest/data/consumptionFilters
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 82

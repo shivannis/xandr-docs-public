@@ -34,7 +34,7 @@ The service API exposes application data in a secure manner. Use of API function
 
   Authentication occurs by passing credentials via http headers on each request.
 
-  ``` pre
+  ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
   - source: curl -H "source:client_id"        
@@ -42,7 +42,7 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **Example HTTPS authentication**
 
-  ``` pre
+  ```
   GET /api/v1/rest/
   HTTPS/1.1
   Host: yieldanalytics.xandr.com
@@ -72,7 +72,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ### Delete order lines by external IDs
 
-``` pre
+```
 DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
 ```
 
@@ -112,14 +112,14 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/orderLine/delete/XFP/1,2' -i -X 
   DELETE -H 'Content-Type: application/json;charset=UTF-8'
   ```
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   DELETE /api/v1/rest/orderLine/delete/XFP/1,2 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -127,7 +127,7 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 35
@@ -139,7 +139,7 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
 
 ### Get order line inventory and contention by external ID batch
 
-``` pre
+```
 POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consumptionFilter}
 ```
 
@@ -182,7 +182,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
 
 - **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/orderLine/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
@@ -203,7 +203,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
 
 - **Example HTTP request**
 
-  ``` pre
+  ```
   POST /api/v1/rest/orderLine/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -228,7 +228,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
 
 - **Example HTTP response**
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1652
@@ -292,7 +292,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
 
 ### Retrieve inventory details for an order line by external order line ID
 
-``` pre
+```
 GET /api/v1/rest/orderLine/inventoryandcontention/{externalOrderLineId}/{startDate}/{endDate}
 ```
 
@@ -331,7 +331,7 @@ GET /api/v1/rest/orderLine/inventoryandcontention/{externalOrderLineId}/{startDa
 
 ### Retrieve inventory details for an order line by external order line ID with Alias Functions and Consumption Filters
 
-``` pre
+```
 GET /api/v1/rest/orderLine/inventoryandcontention/{externalOrderLineId}/{startDate}/{endDate}/{aliasFunctions}/{consumptionFilter}
 ```
 
