@@ -1,13 +1,13 @@
 ---
 title : Data Science Toolkit - Guide
-description : Learn how Microsoft Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
+description : Learn how Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
 ms.custom : data-science
 ---
 
 
 # Data science Toolkit - Guide
 
-The Microsoft Data Science Toolkit is a set of tools
+The Data Science Toolkit is a set of tools
 that enables clients with data science capabilities to further their
 bidding strategy, improve their measurement and testing capabilities,
 and run in-depth outcome analyses. Products that are currently included
@@ -43,4 +43,4 @@ Data Science Toolkit products.
       - [Logistic Regression Custom Model Service](logistic-regression-model-api-resources.md)
 - [Incrementality](incrementality.md)
   - [Log-Level Incrementality Feed](log-level-incrementality-feed.md)
-  - [Incrementality and Xandr](incrementality-and-xandr.mdd)
+  - [Incrementality and Xandr](incrementality-and-xandr.md)
