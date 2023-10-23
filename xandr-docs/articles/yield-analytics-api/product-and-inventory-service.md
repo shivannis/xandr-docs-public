@@ -1,359 +1,135 @@
 ---
-Title : Product and Inventory Service
-Description : Product and Inventory Service of Yield Analytics API
-ms.custom : yield-analytics-api
-## Overview
-The Yield Analytics Product and Inventory API exposes functionality for
-discovery of products from within the Yield Analytics environment and
-retrieval of product inventory and consumption data. When interacting
+title: Product and Inventory Service
+description: In this article, understand what product and inventory service is and the various features and functions associated with it.
+ms.custom: yield-analytics-api
 ---
 
-
-# Product and Inventory Service
-
-
-
-Product and Inventory Service of Yield Analytics API
-
-
+# Product and inventory service
 
 ## Overview
 
-The Yield Analytics Product and Inventory API exposes functionality for
-discovery of products from within the Yield Analytics environment and
-retrieval of product inventory and consumption data. When interacting
-with Product related API functionality developers should understand that
-products may be either static or dynamic. These two types of products
-differ in the following ways:
+The Yield Analytics Product and Inventory API exposes functionality for discovery of products from within the Yield Analytics environment and retrieval of product inventory and consumption data. When interacting with product related API functionality developers should understand that products may be either static or dynamic. These two types of products differ in the following ways:
 
-- Static products exist in the Yield Analytics system when they have
-  been imported in relation to order lines flowing into the Yield
-  Analytics system, or have been created as rate card/reporting products
-  in the system. Static products are always accessible throughout the
-  Yield Analytics user interface and may be configured with rate card
-  information and other metadata. They are persistent and may be viewed
-  throughout the Yield Analytics UI.
+- Static products exist in the Yield Analytics system when they have been imported in relation to order lines flowing into the Yield Analytics system, or have been created as rate card/reporting products in the system. Static products are always accessible throughout the Yield Analytics user interface and may be configured with rate card information and other metadata. They are persistent and may be viewed throughout the Yield Analytics UI.
 
-- Dynamic products are ad-hoc in nature. Ad-hoc products result from
-  inventory queries and there is currently no exact match product for
-  the targeting criteria in the Yield Analytics system. Dynamic products
-  may not have rate cards configured, do not have a names, are not
-  persistent, and are not visible in the Yield Analytics UI (with the
-  exception of Product Creation where non-persisted products may be
-  viewed).
+- Dynamic products are ad-hoc in nature. Ad-hoc products result from inventory queries and there is currently no exact match product for the targeting criteria in the Yield Analytics system. Dynamic products may not have rate cards configured, do not have names, are not persistent, and are not visible in the Yield Analytics UI (with the exception of Product Creation where non-persisted products may be viewed).
 
-Yield Analytics REST API functionality treats these two classes of
-products symmetrically whenever possible, however, there are certain API
-calls which apply strictly to static products. These static product only
-API calls are limited to interfaces requiring the use of either a Yield
-Analytics internal product ID or external product ID where the mapping
-looking is by nature persistent. Discovery functionality works primarily
-against static products, inventory data retrieval functionality works
-regardless of whether a product is static or dynamic.
+Yield Analytics REST API functionality treats these two classes of products symmetrically whenever possible. However, there are certain API calls which apply strictly to static products. These static-product-only API calls are limited to interfaces requiring the use of either a Yield Analytics internal product ID or external product ID where the mapping looking is by nature persistent. Discovery functionality works primarily against static products, inventory data retrieval functionality works regardless of whether a product is static or dynamic.
 
+## Content types
 
+The Service REST API is currently designed to support the following content type:
 
+- JSON - using `Content-type: application/json`
 
+Selecting the desired content type is a choice the API developer should make on a case by case basis. API functionality is symmetrical across content types. API developers may specify the desired content type in the HTTP GET or POST method parameters or via their AJAX or HTTP client library.
 
-## Content Types
+## Error checking and status codes
 
-
-
-The Service REST API is currently designed to support the following
-content-type:
-
-- JSON - using content-type; application-json
-
-Selecting the desired content-type is a choice the API developer should
-make on a case by case basis. API functionality is symmetrical across
-content-type. API developers may specify the desired content-type in the
-HTTP GET or POST method parameters or via their AJAX or HTTP client
-library.
-
-
-
-
-
-
-
-## Error Checking and Status Codes
-
-API developers should check the HTTP response codes returned from the
-service REST API to detect errors propagated from API calls. Successful
-calls to the service will result in 200 range response codes. 400 and
-500 range http responses denote errors. The specific response codes and
-text will likely undergo change during BETA development of the API,
-however, the ranges will not.
-
-
-
-
+API developers should check the HTTP response codes returned from the service REST API to detect errors propagated from API calls. Successful calls to the service will result in 200 range response codes. 400 and 500 range http responses denote errors. The specific response codes and text will likely undergo change during BETA development of the API, however, the ranges will not.
 
 ## Security
 
-The service API exposes application data in a secure manner. Use of API
-functionality is restricted to authenticated users and is exposed over
-secure transport protocols. Access to the API must take place within the
-following context:
+The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example CURL Authentication**
+- **Example cURL authentication**
 
-  Authentication occurs by passing credentials via http headers on each
-  request.
+  Authentication occurs by passing credentials via http headers on each request.
 
-  
-
-  ``` pre
-            - username: curl -H "username:username"
-            - password: curl -H "password:password"
-            - source: curl -H "source:client_id"
-          
+  ```
+  - username: curl -H "username:username"
+  - password: curl -H "password:password"
+  - source: curl -H "source:client_id"
   ```
 
-  
+- **Example HTTPS authentication**
 
-- **Example HTTPS Authentication**
-
-  
-
-  ``` pre
-            GET /api/v1/rest/
-            HTTPS/1.1
-            Host: yieldanalytics.xandr.com
-            Accept: application/xml, application/json
-            Content-Type: application/json
-            username: {{username}}
-            password: {{password}}
-            source: {{client_id}}
-          
+  ```
+  GET /api/v1/rest/
+  HTTPS/1.1
+  Host: yieldanalytics.xandr.com
+  Accept: application/xml, application/json
+  Content-Type: application/json
+  username: {{username}}
+  password: {{password}}
+  source: {{client_id}}        
   ```
 
-  
+- **Example POSTMAN authentication**
 
-- **Example POSTMAN Authentication**
+  Find an example of header settings in Postman below:
 
-  Example of header settings in Postman. (<b>Note:</b> 'Authorization' is set
-  to "No Auth", the settings below are to be placed in the 'Headers'
-  tab.
+    > [!NOTE]
+    >
+    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
+    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
 
-  
-
-  
-
-  <b>Note:</b> For a more in depth tutorial of
-  using Postman see the tutorial <a
-  href="../snippets/../topics/using-postman-with-the-yield-analytics-api.md"
-  class="xref" title="How to use Postman with Yield Analytics APIs">Using
-  Postman with the Yield Analytics API</a>
-
-  
-
-  
- ![postman header varibles](media/postman_header_variables.png)
-  
-
-
-
+  :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
-Confidentiality is maintained by using Secure Socket Layer based
-communication to interact with the Yield Analytics API. API developers
-should prefer use of HTTPS over HTTP insecure communication whenever
-possible. Consult your HTTP Client library on how to enable HTTP over
-SSL when developing outside of a web browser context.
-
-
-
-
+Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
 ## Paths
 
-Bulk Product Creation
+### Bulk product creation
 
-
-
-``` pre
+```
 POST /api/v1/rest/product/bulk/create
 ```
 
-
-
 - **Description**
 
-  Uniqueness of records is defined by productId and externalId. If
-  neither of those is present then the row will result in a NEW product
-  record (possibly with a new \[generated\] product name).
+  Uniqueness of records is defined by productId and externalId. If neither of those is present then the row will result in a NEW product
+  record (possibly with a new [generated] product name).
 
-  If productId is provided then it MUST correspond to a product id in
-  our system; otherwise an error is returned.
+  If productId is provided then it MUST correspond to a product id in our system; otherwise an error is returned.
 
   In this scenario we will UPDATE the designated product.
 
-  <b>Note:</b> we do not check the externalId, we simply update this record.
-  This means if an externalId was provided in the request but does not
-  match the product found by this productId, we will update the
-  externalId on this product with the new value provided. If externalId
-  conflicts with a pre-existing externalId from another product this
-  update will fail and an error message will be generated.
+  > [!NOTE]
+  > We do not check the externalId, we simply update this record. This means if an externalId was provided in the request but does not match the product found by this productId, we will update the externalId on this product with the new value provided. If externalId conflicts with a pre-existing externalId from another product, this update will fail and an error message will be generated.
 
   - If productId is NOT provided then we will check for externalId.
+  - If externalId is provided and a product with that externalId exists in our system then that product will be UPDATED.
+  - If externalId is provided and a product with that externalId does NOT exist in our system, the product will be CREATED.
+  - If neither productId nor externalId is provided then we will create a new product.
 
-  - If externalId is provided and a product with that externalId exists
-    in our system then that product will be UPDATED.
+  > [!NOTE]
+  > Product Name is not required to be unique when creating or updating products, but a post-process will run that renames products which overlap. Any product name which conflicts with another product in the system is renamed to productName-{productId} (our internal product id); thereby creating a unique name for that product.
 
-  - If externalId is provided and a product with that externalId does
-    NOT exist in our system, the product will be CREATED.
-
-  - If neither productId nor externalId is provided then we will create
-    a new product
-
-  Note on product names: Product Name is not required to be unique when
-  creating or updating products, but a post-process will run that
-  renames products which overlap. Any product name which conflicts with
-  another product in the system is renamed to productName-{productId}
-  (our internal product id); thereby creating a unique name for that
-  product.
-
-  - For each uploaded set of products our system will generate a hash
-    based on the contents of the file (and/or post-body) (using MD5
-    algorithm) and stored with the product data. This protects against
-    duplicate uploads of the exact same data (or file). Duplicate posts
-    will result in an error message that the request is a duplicate.
+  For each uploaded set of products our system will generate a hash based on the contents of the file (and/or post-body) (using MD5 algorithm) and stored with the product data. This protects against duplicate uploads of the exact same data (or file). Duplicate posts will result in an error message that the request is a duplicate.
 
 - **Parameters**
-  <table class="table frame-all">
-  <caption><span class="table--title-label">Table 1. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th id="ID-00001482__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th id="ID-00001482__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th id="ID-00001482__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th id="ID-00001482__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th id="ID-00001482__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__2">bulkProductCreation</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__3">bulkProductCreation</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9"
-  class="xref">BulkProductCreation</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__2">username</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__3">Your username for accessing the Yield
-  Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__2">password</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__3">Your password for accessing the Yield
-  Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__2">source</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__3">Your client source for accessing the
-  Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 1.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | bulkProductCreation | bulkProductCreation | true | [BulkProductCreation](#bulk-product-creation) |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 2. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th id="ID-00001482__entry__26"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th id="ID-00001482__entry__27"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th id="ID-00001482__entry__28"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__26">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__27">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__entry__28">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 2.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
-  - application/json
+  
+  application/json
 
 - **Tags**
-  - Product Resource
-
-- **Example CURL request**
   
+  Product Resource
 
-  ``` pre
+- **Example cURL request**
+  
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -370,12 +146,9 @@ POST /api/v1/rest/product/bulk/create
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/bulk/create HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -399,12 +172,9 @@ POST /api/v1/rest/product/bulk/create
   }
   ```
 
-  
-
 - **Example HTTP response**
-  
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 459
@@ -431,175 +201,54 @@ POST /api/v1/rest/product/bulk/create
   }
   ```
 
-  
+### Bulk product creation by date
 
-Bulk Product Creation By Date
-
-
-``` pre
+```
 GET /api/v1/rest/product/bulk/create/{date}
 ```
 
-
-
 - **Description**
 
-  Send a GET request to obtain the status of products pending creation
-  or having been created for a particular date. Date is required. If not
-  specified we return the current set of PENDING products.
+  Send a GET request to obtain the status of products pending creation or having been created for a particular date. Date is required. If not specified we return the current set of PENDING products.
 
 - **Parameters**
-  <table id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 3. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__2">date</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__3">date</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d1fde52-c7eb-43e8-8943-a1a88f56fbca__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 3.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | date | date | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 4. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b65e1c5c-ea8c-440d-bb66-aa0747855185__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
 
-  <span class="table--title-label">Table 4.
-  <span class="title">
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
-  - application/json
+  
+  application/json
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
-
-  ``` pre
+- **Example cURL request**
+  
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create/2017-06-15' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
-
-  ``` pre
+  
+  ```
   GET /api/v1/rest/product/bulk/create/2017-06-15 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -609,12 +258,9 @@ GET /api/v1/rest/product/bulk/create/{date}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
-
-  ``` pre
+  
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 211
@@ -632,217 +278,57 @@ GET /api/v1/rest/product/bulk/create/{date}
   }
   ```
 
-  
+### Get consumption detail by external ID batch
 
-Get Consumption Detail by External ID Batch
-
-
-``` pre
+```
 GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 ```
 
-
-
 - **Description**
 
-  The External ID Product Consumption API call can also be called in a
-  batch mode, where more than one combination of external ID, start
-  date, and end date can be queried for in a single call. In this case,
-  the Inventory Batch Lookup Response structure will be returned from
-  the call. This structure wraps multiple Inventory Detail structures,
-  one for each query made to the batch API call. In the case that an
-  invalid External ID is passed in, the API will return a NOT_FOUND
-  constant for all string values in the ProductDetail structure.
+  The External ID Product Consumption API call can also be called in a batch mode, where more than one combination of external ID, start date, and end date can be queried for in a single call. In this case, the Inventory Batch Lookup Response structure will be returned from the call. This structure wraps multiple Inventory Detail structures, one for each query made to the batch API call. In case an invalid External ID is passed in, the API will return a NOT_FOUND constant for all string values in the ProductDetail structure.
 
 - **Parameters**
-  <table id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 5. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">queries</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">queries</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">queryVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">queryVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">groupingInfo</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">groupingInfo</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">groupingInfoVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">groupingInfoVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-02b76384-e480-4ffe-8a1a-1eeae3343bae__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 5.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | queries | queries | true | string |
+  | BodyParameter | queryVars | queryVars | false | object |
+  | PathParameter | groupingInfo | groupingInfo | true | string |
+  | BodyParameter | groupingInfoVars | groupingInfoVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 6. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ad65efd6-e416-4d53-8a68-aff25d8b033e__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
 
-  <span class="table--title-label">Table 6.
-  <span class="title">
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,
   2017-03-31;q=322,2017-03-01,2017-03-31/groupInfo;groupBy=salesperson' -i -H 'Content-Type: application/json' -H 
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
-
-  ``` pre
+  
+  ```
   GET /api/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,2017-03-31;q=322,2017-03-01,
   2017-03-31/groupInfo;groupBy=salesperson HTTP/1.1
   Content-Type: application/json
@@ -853,12 +339,9 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -924,228 +407,58 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   }
   ```
 
-  
+### Get consumption detail by external ID
 
-Get Consumption Detail by External ID
-
-
-``` pre
+```
 GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDate}/{groupingInfo}
 ```
 
-
-
 - **Description**
 
-  The use of the External ID Product Consumption API is limited to
-  lookups where the a static Product has been configured with an
-  External ID. This allows API developers to use an external correlating
-  identifier to lookup Yield Analytics Product Consumption information.
-  In order to use the External ID a persistent mapping must be
-  specified, configured, and maintained in the Yield Analytics system.
-  Contact your Yield Analytics Administrator to setup this mapping.
+  The use of the External ID Product Consumption API is limited to lookups where a static product has been configured with an external ID. This allows API developers to use an external correlating identifier to lookup Yield Analytics Product Consumption information. In order to use the External ID a persistent mapping must be specified, configured, and maintained in the Yield Analytics system. Contact your Yield Analytics Administrator to setup this mapping.
 
 - **Parameters**
-  <table id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 7. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">groupingInfo</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">groupingInfo</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3f60ebb8-3a99-44ac-bb15-e90e7a5fb280__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 7.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | externalId | externalId | true | string |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | groupingInfo | groupingInfo | true | string |
+  | PathParameter | matrixVars | matrixVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 8. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a86117b1-4977-406a-8104-ce06692440d5__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 8.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
-
-  ``` pre
+- **Example cURL request**
+  
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;
   groupBy=salesperson' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
-
-  ``` pre
+  
+  ```
   GET /api/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;groupBy=salesperson HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1155,12 +468,9 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -1224,182 +534,54 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   }
   ```
 
-  
+### Create product by originating target string
 
-Create Product by Originating Target String
-
-
-``` pre
+```
 GET /api/v1/rest/product/create/target/{target}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Analysis Target
-  Creation. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic Products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Analysis Target Creation. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 9. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-ca0b3916-43f8-48a9-8c87-a0e7bea7a877__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 9.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | target | target | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 10. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-5746539c-3af5-4acb-9f4e-c390577242c6__entry__3"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  </tbody>
-  </table>
 
-  <span class="table--title-label">Table 10.
-  <span class="title">
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | [ProductDetail](#productdetail) |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/target/ad_server%20in%20('TEST')' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
   'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/create/target/ad_server%20in%20('TEST') HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1409,12 +591,9 @@ GET /api/v1/rest/product/create/target/{target}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 603
@@ -1444,158 +623,30 @@ GET /api/v1/rest/product/create/target/{target}
   }
   ```
 
-  
+### Create product by originating target expression
 
-Create Product by Originating Target Expression
-
-
-``` pre
+```
 POST /api/v1/rest/product/create/targetexpression
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Analysis Target
-  Creation. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic Products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Analysis Target Creation. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 11. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__2">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__3">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__5"><a
-  href="product-and-inventory-service.html#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-52be0a40-e90a-440a-bcab-f8ce66398ec0__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 11.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 12. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9cb93bac-1986-494d-bf21-b3ff7ab50010__entry__3"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 12.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | [ProductDetail](#productdetail) |
 
 - **Consumes**
   - application/json
@@ -1606,12 +657,12 @@ POST /api/v1/rest/product/create/targetexpression
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/targetexpression' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
     "targetExpression" : {
@@ -1620,12 +671,9 @@ POST /api/v1/rest/product/create/targetexpression
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/create/targetexpression HTTP/1.1
   Content-Type: application/json;charset=UTF-8
   Host: https://{{client_url}}/api/v1/rest
@@ -1638,12 +686,9 @@ POST /api/v1/rest/product/create/targetexpression
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 603
@@ -1673,182 +718,54 @@ POST /api/v1/rest/product/create/targetexpression
   }
   ```
 
-  
+### Find products by match phrase
 
-Find Products by Match Phrase
-
-
-``` pre
+```
 GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 ```
 
-
-
 - **Description**
 
-  Match Phrase functionality is the easiest Product Discovery
-  functionality to use. It may be used to retrieve static-only Products
-  from the Yield Analytics API. The Match Phrase specifies a text string
-  to be matched in a case-insensitive manner against both Product names
-  and included-only Product Targeting criteria term values. The
-  specified text matches anywhere in the name or included term values
-  but not against the attribute names or excluded term values. For
-  example when specifying a match phrase; 'Food', both a Product named
-  ROS Food and a Product having category=FOODLOVER would match.
+  Match Phrase functionality is the easiest Product Discovery functionality to use. It may be used to retrieve static-only products from the Yield Analytics API. The Match Phrase specifies a text string to be matched in a case-insensitive manner against both product names and included-only Product Targeting criteria term values. The specified text matches anywhere in the name or included term values but not against the attribute names or excluded term values. For example when specifying a match phrase; 'Food', both a product named ROS Food and a product having category=FOODLOVER would match.
 
 - **Parameters**
-  <table id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 13. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__2">matchphrase</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__3">matchphrase</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-51ca59dd-9480-45dc-a33b-70e98ed74a07__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 13.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | matchphrase | matchphrase | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 14. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83f6ed81-193c-4950-896e-d9393184f6bf__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 14.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/matchphrase/testingMatchphrase' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/matchphrase/testingMatchphrase HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -1858,12 +775,9 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -1920,197 +834,55 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   }
   ```
 
-  
+### Find products by targeting characteristics
 
-Find Products by Targeting Characteristics
-
-
-``` pre
+```
 GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 ```
 
-
-
 - **Description**
 
-  Targeting Criteria current functionality allows the API developer to
-  interact with static products. A future API release may allow for the
-  exact match in the ProductLookupResponse to be created from the
-  specific Targeting Criteria passed.Targeting Criteria is used to
-  provide more exact matching than the Match Phrase functionality. When
-  using the Targeting Criteria functionality API developers may specify
-  the specific attribute names and values to match. Both inclusion '='
-  or exclusion '!=" may be specified. Multiple term values for the same
-  attribute may also be supplied. The above example will match any
-  Product having category=food and category=cooking where the size is
-  350x200. Note that the matched products will usually have other
-  targeting attributes defined.
+  Targeting Criteria current functionality allows the API developer to interact with static products. A future API release may allow for the exact match in the `ProductLookupResponse` to be created from the specific Targeting Criteria passed. Targeting Criteria is used to provide more exact matching than the Match Phrase functionality. When using the Targeting Criteria functionality, API developers may specify the specific attribute names and values to match. Both inclusion '=' or exclusion '!=" may be specified. Multiple term values for the same attribute may also be supplied. The above example will match any product having category=food and category=cooking where the size is 350x200. Note that the matched products will usually have other targeting attributes defined.
 
 - **Parameters**
-  <table id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 15. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0d96ebe7-f663-4fe5-9423-d8713ac50160__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 15.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | characteristics | characteristics | true | string |
+  | PathParameter | matrixVars | matrixVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 16. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d18f2857-d2b0-40bd-bf5c-c9e092fc70bc__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 16.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/targetingcharacteristics/target;category=food;
   size=350x200;category=cooking' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/targetingcharacteristics/target;category=food;size=350x200;category=cooking HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2120,12 +892,9 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -2182,180 +951,54 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   }
   ```
 
-  
+### Find products
 
-Find Products
-
-
-``` pre
+```
 GET /api/v1/rest/product/discover/{productLocator}
 ```
 
-
-
 - **Description**
 
-  The Product Discovery interfaces allow the API developer to find
-  products in the Yield Analytics system and retrieve product related
-  meta-data. The identifiers returned in the Product Detail response
-  data types allow for subsequent retrieval of Product Inventory. All
-  Product Discovery interfaces return the ProductLookupResponse data
-  type. Depending on the use case, one of the following API calls may be
-  used to discover products.
+  The Product Discovery interfaces allow the API developer to find products in the Yield Analytics system and retrieve product related meta-data. The identifiers returned in the Product Detail response data types allow for subsequent retrieval of Product Inventory. All Product Discovery interfaces return the `ProductLookupResponse` data type. Depending on the use case, one of the following API calls may be used to discover products.
 
 - **Parameters**
-  <table id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 17. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__2">productLocator</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__3">productLocator</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7d771fe0-09c8-470a-8c7a-32a124f79e87__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 17.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | productLocator | productLocator | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 18. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-9be4b39e-b071-4692-af50-36b518f02555__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 18.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2365,12 +1008,9 @@ GET /api/v1/rest/product/discover/{productLocator}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1470
@@ -2427,186 +1067,55 @@ GET /api/v1/rest/product/discover/{productLocator}
   }
   ```
 
-  
+### Get forecast adjustments
 
-Get Forecast Adjustments
-
-
-``` pre
+```
 GET /api/v1/rest/product/forecast/{targets}/{date}
 ```
-
-
 
 - **Description**
 
   Get forecast adjustment.
 
 - **Parameters**
-  <table id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 19. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2">targets</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3">targets</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2">date</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3">date</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0f818792-4e25-458d-a276-1ad2bc89489a__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 19.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | targets | targets | true | string |
+  | PathParameter | date | date | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 20. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6152f6d9-b744-42ee-9775-0b46aaebf48a__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 20.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
 
-- **Example CURL request**
-  >
+  Product Resource
 
-  ``` pre
+- **Example cURL request**
+
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/forecast/1/2017-03-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/forecast/1/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -2616,12 +1125,9 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 58
@@ -2633,193 +1139,55 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   }
   ```
 
-  
+### Get inventory detail by external ID batch
 
-Get Inventory Detail by External ID Batch
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 ```
 
-
-
 - **Description**
 
-  The External ID Product Inventory API call can also be called in a
-  batch mode, where more than one combination of external ID, start
-  date, and end date can be queried for in a single call. In this case,
-  the Inventory Batch Lookup Response structure will be returned from
-  the call. This structure wraps multiple Inventory Detail structures,
-  one for each query made to the batch API call. In the case that an
-  invalid External ID is passed in, the API will return a NOT_FOUND
-  constant for all string values in the ProductDetail structure.
+  The External ID Product Inventory API call can also be called in a batch mode, where more than one combination of external ID, start date, and end date can be queried for in a single call. In this case, the Inventory Batch Lookup Response structure will be returned from the call. This structure wraps multiple Inventory Detail structures, one for each query made to the batch API call. In case an invalid External ID is passed in, the API will return a NOT_FOUND constant for all string values in the `ProductDetail` structure.
 
 - **Parameters**
-  <table id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 21. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2">queries</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3">queries</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e77dce38-e260-43c2-ab37-002eef7229e0__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 21.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | queries | queries | true | string |
+  | PathParameter | matrixVars | matrixVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 22. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-74f3952c-686d-4cb8-a392-4edd80eb1750__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 22.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/externalids/queries;
   q=12345,2017-03-01,2017-03-31;q=23456,2017-03-01,2017-03-31' -i -H 'Content-Type: application/json' 
   -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/batch/externalids/queries;q=12345,2017-03-01,2017-03-31;q=23456,
   2017-03-01,2017-03-31 HTTP/1.1
   Content-Type: application/json
@@ -2830,12 +1198,9 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -2901,178 +1266,32 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   }
   ```
 
-  
+### Get inventory details by target expression batch
 
-Get Inventory Details by Target Expression Batch
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  Inventory Details can be dynamically looked up in batch mode by
-  passing url based alias function and consumption filters. The body of
-  this call can contain a collection of lookup queries that are defined
-  by the presence of a well-formed target expression and the date range
-  for the lookup.
+  Inventory Details can be dynamically looked up in batch mode by passing url based alias function and consumption filters. The body of this call can contain a collection of lookup queries that are defined by the presence of a well-formed target expression and the date range for the lookup.
 
 - **Parameters**
-  <table id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 23. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5"><a
-  href="product-and-inventory-service.html#ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c"
-  class="xref">BatchInventoryQuery</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3d697f44-bfd1-4119-bf51-dd7cd6336663__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 23.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | batchInventoryQuery | batchInventoryQuery | true | [BatchInventoryQuery](#batchinventoryquery) |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 24. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-90cbc9e7-86ba-4eb8-a09b-489e2b053057__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 24.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -3083,12 +1302,12 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -3107,12 +1326,9 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/batch/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -3138,12 +1354,9 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1767
@@ -3209,178 +1422,32 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   }
   ```
 
-  
+### Get inventory details by target expression with displacement batch
 
-Get Inventory Details by Target Expression with Displacement Batch
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  Inventory Details can be dynamically looked up in batch mode by
-  passing url based alias function and consumption filters. The body of
-  this call can contain a collection of lookup queries that are defined
-  by the presence of a well-formed target expression and the date range
-  for the lookup.
+  Inventory Details can be dynamically looked up in batch mode by passing url based alias function and consumption filters. The body of this call can contain a collection of lookup queries that are defined by the presence of a well-formed target expression and the date range for the lookup.
 
 - **Parameters**
-  <table id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 25. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c"
-  class="xref">BatchInventoryQuery</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-179d2aaf-ae65-4003-8a0a-3fd53d5201af__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
 
-  <span class="table--title-label">Table 25.
-  <span class="title">
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | batchInventoryQuery | batchInventoryQuery | true | [BatchInventoryQuery](#batchinventoryquery) |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 26. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4ec8f653-8349-43ea-8a1c-6a0bb7deea34__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 26.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -3391,12 +1458,12 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -3416,12 +1483,9 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -3447,12 +1511,9 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1869
@@ -3520,204 +1581,34 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   }
   ```
 
-  
+### Get inventory detail by target expression with displacement
 
-Get Inventory Detail by Target Expression with Displacement
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 27. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5"><a
-  href="product-and-inventory-service.html#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-759789e7-cc90-4482-903d-4ef2387e7b6c__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 27.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 28. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8930478a-4cff-4ec2-aaed-4753243a0624__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 28.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -3728,12 +1619,12 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/targetexpression/
   2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;
   PRIORITY%3E=5' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -3744,12 +1635,9 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/displacement/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -3767,12 +1655,9 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1693
@@ -3838,204 +1723,56 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   }
   ```
 
-  
+### Get inventory detail by external ID
 
-Get Inventory Detail by External ID
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The use of the External ID Product Inventory API is limited to
-  inventory lookups where the a static Product has been configured with
-  an External ID. This allows API developers to use an external
-  correlating identifier to lookup Yield Analytics Product Inventory. In
-  order to use the External ID a persistent mapping must be specified,
-  configured, and maintained in the Yield Analytics system. Contact your
-  Yield Analytics Administrator to setup this mapping.
+  The use of the External ID Product Inventory API is limited to inventory lookups where a static product has been configured with an external ID. This allows API developers to use an external correlating identifier to lookup Yield Analytics Product Inventory. In order to use the external ID a persistent mapping must be specified, configured, and maintained in the Yield Analytics system. Contact your Yield Analytics Administrator to setup this mapping.
 
 - **Parameters**
-  <table id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 29. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a98a298b-a489-4e8f-85cf-e0ce3b1b149a__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 29.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | externalId | externalId | true | string |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 30. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-8a8fa7f1-e725-4c32-b492-527a7792ab3e__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 30.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -4045,12 +1782,9 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -4114,229 +1848,59 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   }
   ```
 
-  
+### Get inventory detail by external ID with consumption filter
 
-Get Inventory Detail by External ID with Consumption Filter
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The use of the External ID Product Inventory API is limited to
-  inventory lookups where the a static Product has been configured with
-  an External ID. This allows API developers to use an external
-  correlating identifier to lookup Yield Analytics Product Inventory. In
-  order to use the External ID a persistent mapping must be specified,
-  configured, and maintained in the Yield Analytics system. Contact your
-  Yield Analytics Administrator to setup this mapping.
+  The use of the External ID Product Inventory API is limited to inventory lookups where a static Product has been configured with an external ID. This allows API developers to use an external correlating identifier to lookup Yield Analytics Product Inventory. In order to use the external ID a persistent mapping must be specified, configured, and maintained in the Yield Analytics system. Contact your Yield Analytics Administrator to setup this mapping.
 
 - **Parameters**
-  <table id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 31. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">externalId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">matrixVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2d14cda6-01ec-4b39-aa41-9c47454a9008__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 31.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | externalId | externalId | true | string |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | matrixVars | matrixVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 32. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7e71a315-babd-4b7e-81e8-9570300c8795__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 32.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -4347,12 +1911,9 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -4416,177 +1977,32 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   }
   ```
 
-  
+### Get inventory detail by operative adapter targeting
 
-Get Inventory Detail by Operative Adapter Targeting
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The Operative Adapter Targeting Product Inventory API call allows
-  Inventory Details to be retrieved for static or dynamic products via
-  Operative Targeting Structures syntax combined with Consumption Filter
-  inputs.
+  The Operative Adapter Targeting Product Inventory API call allows Inventory Details to be retrieved for static or dynamic products via Operative Targeting Structures syntax combined with Consumption Filter inputs.
 
 - **Parameters**
-  <table id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 33. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">targeting</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">targeting</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a"
-  class="xref">OperativeTargetingOptions</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-509bc9e3-f778-4738-b120-1c4d835f4c0b__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 33.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | targeting | targeting | true | [OperativeTargetingOptions](#operativetargetingoptions) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 34. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-43373cb8-ee59-4d31-bcb8-c8e160bb0e87__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 34.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -4597,12 +2013,12 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   - application/xml
 
 - **Tags**
-  - Product Resource
 
-- **Example CURL request**
-  >
+  Product Resource
 
-  ``` pre
+- **Example cURL request**
+
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01' 
   -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -4623,12 +2039,9 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -4656,12 +2069,9 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -4725,202 +2135,34 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }
   ```
 
-  
+### Get inventory detail by operative adapter targeting with consumption filter
 
-Get Inventory Detail by Operative Adapter Targeting with Consumption
-Filter
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The Operative Adapter Targeting Product Inventory API call allows
-  Inventory Details to be retrieved for static or dynamic products via
-  Operative Targeting Structures syntax combined with Consumption Filter
-  inputs.
+  The Operative Adapter Targeting Product Inventory API call allows Inventory Details to be retrieved for static or dynamic products via Operative Targeting Structures syntax combined with Consumption Filter inputs.
 
 - **Parameters**
-  <table id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 35. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">targeting</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">targeting</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a"
-  class="xref">OperativeTargetingOptions</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1c87d5e3-f368-4233-bf0c-4221eef480ec__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 35.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | targeting | targeting | true | [OperativeTargetingOptions](#operativetargetingoptions) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 36. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-bed1c82f-db3b-41f9-be1e-e468be44ce7d__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 36.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -4931,12 +2173,12 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   - application/xml
 
 - **Tags**
-  - Product Resource
 
-- **Example CURL request**
-  >
+  Product Resource
 
-  ``` pre
+- **Example cURL request**
+
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -4958,12 +2200,9 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -4992,12 +2231,9 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -5061,224 +2297,59 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   }
   ```
 
-  
+### Get inventory detail by product ID with consumption filter
 
-Get Inventory Detail by Product ID with Consumption Filter
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  Product Inventory may also be retrieved using the Yield Analytics
-  internal Product ID combined with Consumption Filter inputs.
+  Product Inventory may also be retrieved using the Yield Analytics internal Product ID combined with Consumption Filter inputs.
 
 - **Parameters**
-  <table id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 37. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">productId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">productId</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-cdea4ba1-44ad-4eec-b85c-878155dcae71__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 37.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | productId | productId | true | string |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 38. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-83c701aa-fefb-4961-be99-060814af8780__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 38.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -5289,12 +2360,9 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -5358,213 +2426,50 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   }
   ```
 
-  
+### Get roadblock detail with consumption filter
 
-Get Roadblock Detail with Consumption Filter
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{consumptionFilter}
 ```
-
-
 
 - **Description**
 
   Roadblock Detail would be retrieved with roadblock Consumption Filter.
 
 - **Parameters**
-  <table id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 39. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">roadblock</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">roadblock</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929"
-  class="xref">Roadblock</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-80f632aa-d76f-47e9-be79-7ca084ae7a77__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 39.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | BodyParameter | roadblock | roadblock | true | [Roadblock](#roadblock) |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 40. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0422699c-64d9-440d-9c6d-022912fd12ce__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 40.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;
   ROADBLOCK=all' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -5574,12 +2479,9 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;ROADBLOCK=all HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -5596,12 +2498,9 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 78
@@ -5614,204 +2513,56 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   }
   ```
 
-  
+### Get inventory detail by target string
 
-Get Inventory Detail by Target String
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 41. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-aa3c4ffb-6b09-479e-b783-8b8894defdbe__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 41.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | target | target | true | string |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 42. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e8748b5-3717-47d7-af7a-1f5a3604b993__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 42.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -5821,12 +2572,9 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -5890,229 +2638,59 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   } 
   ```
 
-  
+### Get inventory detail by target string with consumption filter
 
-Get Inventory Detail by Target String with Consumption Filter
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 43. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-345d5335-3b96-4196-9d8e-4e9db3b7a00a__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 43.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | target | target | true | string |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 44. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1243adb6-6774-4b36-8539-0218d23d9d34__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
 
-  <span class="table--title-label">Table 44.
-  <span class="title">
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -6123,12 +2701,9 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -6192,180 +2767,32 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   }
   ```
 
-  
+### Get inventory detail by target expression
 
-**Get Inventory Detail by Target Expression**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 45. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-0dbe01d5-1f2b-4c41-8f11-4af29c961c31__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 45.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 46. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-65f16a52-dc9e-46a3-b9b1-3d4c557449ad__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 46.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -6376,12 +2803,12 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -6391,12 +2818,9 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -6413,12 +2837,9 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -6482,204 +2903,34 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   }
   ```
 
-  
+### Get inventory detail by target expression with consumption filter
 
-**Get Inventory Detail by Target Expression with Consumption Filter**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic products.
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products.
 
 - **Parameters**
-  <table id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 47. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1305ec3e-4dbf-437a-9bf6-9b189b4e75f2__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 47.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 48. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6d188086-5f69-4eaa-ad0c-809c94d9913c__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 48.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -6690,12 +2941,12 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
@@ -6706,12 +2957,9 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -6729,12 +2977,9 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -6798,208 +3043,35 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   }
   ```
 
-  
+### Get combined inventory detail by target expression
 
-**Get Combined Inventory Detail by Target Expression**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDate}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The use of a Yield Analytics Originating Target targeting expression
-  in Yield Analytics targeting syntax is supported for Product Inventory
-  lookup. These expressions are returned in the ProductLookupResponse
-  ProductDetail data structure as well as displayed in the Yield
-  Analytics UI. This syntax allows for the richest targeting expressions
-  to be built and defined. The use of Originating Target works for both
-  static and dynamic Products. This API returns a
-  CombinedInventoryDetail object that contains an InventoryDetail
-  including the effects of frequency capping and another one without
-  capping effects. If the consumption filter has no frequency capping
+  The use of a Yield Analytics Originating Target targeting expression in Yield Analytics targeting syntax is supported for Product Inventory lookup. These expressions are returned in the `ProductLookupResponse ProductDetail` data structure as well as displayed in the Yield Analytics UI. This syntax allows for the richest targeting expressions to be built and defined. The use of Originating Target works for both static and dynamic products. This API returns a `CombinedInventoryDetail` object that contains an InventoryDetail including the effects of frequency capping and another one without capping effects. If the consumption filter has no frequency capping
   component, both InventoryDetail results are the same.
 
 - **Parameters**
-  <table id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 49. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">targetExpression</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5"><a
-  href="product-and-inventory-service.html#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a870d0a-1d9b-48f4-98c7-2ac5b107cb9e__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 49.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 50. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-d6887bd9-e425-4bf1-86c2-bfb780349ab0__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 50.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -7010,12 +3082,12 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
@@ -7026,12 +3098,9 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json
@@ -7049,12 +3118,9 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 3472
@@ -7175,186 +3241,33 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   }
   ```
 
-  
+### Get inventory detail by targeting characteristics
 
-**Get Inventory Detail by Targeting Characteristics**
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The Targeting Characteristics Product Inventory API call allows
-  Inventory Detail to be retrieved for static or dynamic products via
-  the loosely formed Targeting Criteria syntax.
+  The Targeting Characteristics Product Inventory API call allows Inventory Detail to be retrieved for static or dynamic products via the loosely formed Targeting Criteria syntax.
 
 - **Parameters**
-  <table id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 51. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">characteristicsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">characteristicsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-2197079d-81d1-4131-bcd9-36363584678f__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 51.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | characteristics | characteristics | true | string |
+  | BodyParameter | characteristicsVars | characteristicsVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 52. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-19cd75cb-bdd7-4a0f-9f43-c92431947f66__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 52.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -7364,23 +3277,20 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01 HTTP/1.1
   Content-Type: application/json
@@ -7391,12 +3301,9 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -7460,238 +3367,60 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   }
   ```
 
-  
+### Get inventory detail by targeting characteristics with consumption filter
 
-**Get Inventory Detail by Targeting Characteristics with Consumption
-Filter**
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{startDate}/{endDate}
 ```
 
-
-
 - **Description**
 
-  The Targeting Characteristics Product Inventory API call allows
-  Inventory Detail to be retrieved for static or dynamic products via
-  the loosely formed Targeting Criteria syntax.
+  The Targeting Characteristics Product Inventory API call allows Inventory Detail to be retrieved for static or dynamic products via the loosely formed Targeting Criteria syntax.
 
 - **Parameters**
-  <table id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 53. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">characteristics</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">characteristicsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">characteristicsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">object</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-645e9479-7704-44a7-b4e2-cb4726c6e4aa__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 53.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | characteristics | characteristics | true | string |
+  | BodyParameter | characteristicsVars | characteristicsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 54. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-60bb3396-26c3-4725-b358-085022b3d979__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 54.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;
   city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -7703,12 +3432,9 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1611
@@ -7772,204 +3498,35 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   }
   ```
 
-  
+### Get batch inventory and contention
 
-**Get Batch Inventory and Contention**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  A batch related interface is also available to retrieve multiple
-  product - date range pairings' inventory and contention data
-  concurrently. The batch interface should be preferred in cases where
-  several sets of inventory and contention data must be retrieved for
-  display as a grouping. The batch interface performs internal
-  multi-threading to greatly increase overall throughput and performance
+  A batch related interface is also available to retrieve multiple product - date range pairings' inventory and contention data concurrently. The batch interface should be preferred in cases where several sets of inventory and contention data must be retrieved for display as a grouping. The batch interface performs internal multi-threading to greatly increase overall throughput and performance
   as batch items are not run serially.
 
 - **Parameters**
-  <table id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 55. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c"
-  class="xref">BatchInventoryQuery</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-1975e746-6e6e-4a33-a7e8-b96994c30744__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 55.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | batchInventoryQuery | batchInventoryQuery | true | [BatchInventoryQuery](#batchinventoryquery) |
+  | PathParameter | aliasFunctions | aliasFunctions | true | string |
+  | PathParameter | aliasFunctionsVars | aliasFunctionsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 56. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7581eacd-4d94-4b9b-8b9a-0726afd174ef__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 56.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -7980,12 +3537,12 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
@@ -8001,12 +3558,9 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/batch/aliasFunctions;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -8029,12 +3583,9 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1652
@@ -8096,204 +3647,34 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   }
   ```
 
-  
+### Get batch inventory and contention with displacement
 
-**Get Batch Inventory and Contention with Displacement**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFunctions}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  A batch related interface is also available to retrieve multiple
-  product - date range pairings' inventory and contention data
-  concurrently. The batch interface should be preferred in cases where
-  several sets of inventory and contention data must be retrieved for
-  display as a grouping. The batch interface performs internal
-  multi-threading to greatly increase overall throughput and performance
-  as batch items are not run serially.
+  A batch related interface is also available to retrieve multiple product - date range pairings' inventory and contention data concurrently. The batch interface should be preferred in cases where several sets of inventory and contention data must be retrieved for display as a grouping. The batch interface performs internal multi-threading to greatly increase overall throughput and performance as batch items are not run serially.
 
 - **Parameters**
-  <table id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 57. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">batchInventoryQuery</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c"
-  class="xref">BatchInventoryQuery</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-3a57d778-ed03-4927-8fa4-df4fce5bab27__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 57.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | batchInventoryQuery | batchInventoryQuery | true | [BatchInventoryQuery](#batchinventoryquery) |
+  | PathParameter | aliasFunctions | aliasFunctions | true | string |
+  | PathParameter | aliasFunctionsVars | aliasFunctionsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 58. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-13ff434e-1aa3-4238-b93a-1a89c4dc7d99__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 58.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -8304,12 +3685,12 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
@@ -8325,12 +3706,9 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
@@ -8353,12 +3731,9 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1713
@@ -8421,239 +3796,41 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   }
   ```
 
-  
+### Get inventory and contention by target expression with displacement
 
-**Get Inventory and Contention by Target Expression with Displacement**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{startDate}/{endDate}/{aliasFunctions}
 /{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The Inventory and Contention In cases where both inventory forecast
-  data and contender data is required overall performance and throughput
-  can be maximized by leveraging the Inventory and Contention based
-  APIs. There are both single call and batch invocation options. When
-  multiple inventory and contention is being retrieved for a variety of
-  products or targets, the batch option should be preferred or the API
-  should be accessed in a multithreaded manner. Calls to the Inventory
-  and Contention APIs may be filtered using the Yield Analytics API
-  consumptionFilter filter specification syntax.
+  In cases where both inventory forecast data and contender data is required, overall performance and throughput can be maximized by leveraging the Inventory and Contention based APIs. There are both single call and batch invocation options. When multiple inventory and contention is being retrieved for a variety of products or targets, the batch option should be preferred or the API should be accessed in a multithreaded manner. Calls to the Inventory and Contention APIs may be filtered using the Yield Analytics API consumptionFilter filter specification syntax.
 
-  Additionally, the Inventory and Contention API offers flexible
-  extraction of orderline dimensional data using Query Engine aliases.
+  Additionally, the Inventory and Contention API offers flexible extraction of order line dimensional data using Query Engine aliases.
 
-  The Inventory And Consumption API may be invoked via both GET and POST
-  http methods. The use of POST is strongly recommended as this lessens
-  the escaping required due to conflicting characters between the
-  supplied target expression and URL legal characters.
+  The Inventory And Consumption API may be invoked via both GET and POST http methods. The use of POST is strongly recommended as this lessens the escaping required due to conflicting characters between the supplied target expression and URL legal characters.
 
 - **Parameters**
-  <table id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 59. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-6b75020d-c43b-47d3-b37a-e0ebf07ce11f__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 59.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | target | target | true | [TargetExpression](#targetexpression) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | aliasFunctions | aliasFunctions | true | string |
+  | PathParameter | aliasFunctionsVars | aliasFunctionsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 60. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-45ee7763-79f2-4a7f-91a4-aba1dd99fa60__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 60.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -8664,12 +3841,12 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/targetexpression/
   2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
@@ -8681,12 +3858,9 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -8705,12 +3879,9 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1410
@@ -8768,253 +3939,56 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   }
   ```
 
-  
+### Get inventory and contention by target string
 
-**Get Inventory and Contention by Target String**
-
-
-``` pre
+```
 GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{endDate}/{aliasFunctions}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The Inventory and Contention In cases where both inventory forecast
-  data and contender data is required overall performance and throughput
-  can be maximized by leveraging the Inventory and Contention based
-  APIs. There are both single call and batch invocation options. When
-  multiple inventory and contention is being retrieved for a variety of
-  products or targets, the batch option should be preferred or the API
-  should be accessed in a multithreaded manner. Calls to the Inventory
-  and Contention APIs may be filtered using the Yield Analytics API
-  consumptionFilter filter specification syntax.
+  In cases where both inventory forecast data and contender data is required, overall performance and throughput can be maximized by leveraging the Inventory and Contention based APIs. There are both single call and batch invocation options. When multiple inventory and contention is being retrieved for a variety of products or targets, the batch option should be preferred or the API should be accessed in a multithreaded manner. Calls to the Inventory and Contention APIs may be filtered using the Yield Analytics API consumptionFilter filter specification syntax.
 
-  Additionally, the Inventory and Contention API offers flexible
-  extraction of orderline dimensional data using Query Engine aliases.
+  Additionally, the Inventory and Contention API offers flexible extraction of order line dimensional data using Query Engine aliases.
 
-  The Inventory And Consumption API may be invoked via both GET and POST
-  http methods. The use of POST is strongly recommended as this lessens
-  the escaping required due to conflicting characters between the
-  supplied target expression and URL legal characters.
+  The Inventory And Consumption API may be invoked via both GET and POST http methods. The use of POST is strongly recommended as this lessens the escaping required due to conflicting characters between the supplied target expression and URL legal characters.
 
 - **Parameters**
-  <table id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 61. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-49150074-dc2a-4ba7-ba49-d6c3b4c478fa__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 61.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | PathParameter | target | target | true | [TargetExpression](#targetexpression) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | aliasFunctions | aliasFunctions | true | string |
+  | PathParameter | aliasFunctionsVars | aliasFunctionsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 62. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-a9d06b3f-96fd-433c-bc9d-f95aaf51e89c__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 62.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
-  - application/json
+  
+  application/json
 
 - **Produces**
   - application/json
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')
   /2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -H 
@@ -9022,12 +3996,9 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   -H 'password: {{password}}' -H 'source: {{source}}'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   GET /api/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;INVENTORY_CLASS=GUARANTEED;
   CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -9039,12 +4010,9 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   Host: https://{{client_url}}/api/v1/rest
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1353
@@ -9101,238 +4069,40 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   }
   ```
 
-  
+### Get inventory and contention by target expression
 
-**Get Inventory and Contention by Target Expression**
-
-
-``` pre
+```
 POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{endDate}/{aliasFunctions}/{consumptionFilter}
 ```
 
-
-
 - **Description**
 
-  The Inventory and Contention In cases where both inventory forecast
-  data and contender data is required overall performance and throughput
-  can be maximized by leveraging the Inventory and Contention based
-  APIs. There are both single call and batch invocation options. When
-  multiple inventory and contention is being retrieved for a variety of
-  products or targets, the batch option should be preferred or the API
-  should be accessed in a multithreaded manner. Calls to the Inventory
-  and Contention APIs may be filtered using the Yield Analytics API
-  consumptionFilter filter specification syntax.
+  In cases where both inventory forecast data and contender data is required, overall performance and throughput can be maximized by leveraging the Inventory and Contention based APIs. There are both single call and batch invocation options. When multiple inventory and contention is being retrieved for a variety of products or targets, the batch option should be preferred or the API should be accessed in a multithreaded manner. Calls to the Inventory and Contention APIs may be filtered using the Yield Analytics API consumptionFilter filter specification syntax.
 
-  Additionally, the Inventory and Contention API offers flexible
-  extraction of orderline dimensional data using Query Engine aliases.
+  Additionally, the Inventory and Contention API offers flexible extraction of order line dimensional data using Query Engine aliases.
 
-  The Inventory And Consumption API may be invoked via both GET and POST
-  http methods. The use of POST is strongly recommended as this lessens
-  the escaping required due to conflicting characters between the
-  supplied target expression and URL legal characters.
+  The Inventory And Consumption API may be invoked via both GET and POST http methods. The use of POST is strongly recommended as this lessens the escaping required due to conflicting characters between the supplied target expression and URL legal characters.
 
 - **Parameters**
-  <table id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 63. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">target</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">startDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">endDate</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">aliasFunctions</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">aliasFunctionsVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">consumptionFilter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">PathParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">consumptionFilterVars</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">false</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">object</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7eb99320-ba20-43e0-875d-9e50a641b553__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 63.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | target | target | true | [TargetExpression](#targetexpression) |
+  | PathParameter | startDate | startDate | true | string |
+  | PathParameter | endDate | endDate | true | string |
+  | PathParameter | aliasFunctions | aliasFunctions | true | string |
+  | PathParameter | aliasFunctionsVars | aliasFunctionsVars | false | object |
+  | PathParameter | consumptionFilter | consumptionFilter | true | string |
+  | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 64. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-7504bb34-4fb9-43d9-8095-23fa9b8160cb__entry__3">object</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 64.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | object |
 
 - **Consumes**
   - application/json
@@ -9343,12 +4113,12 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/
   2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 'Content-Type: application/json' 
@@ -9359,12 +4129,9 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/2017-03-01/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
@@ -9383,12 +4150,9 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 1353
@@ -9445,152 +4209,30 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   }
   ```
 
-  
+### Get operative adapter targeting expression
 
-**Get Operative Adapter Targeting Expression**
-
-
-``` pre
+```
 POST /api/v1/rest/product/targeting/operativeadapter
 ```
-
-
 
 - **Description**
 
   Get operative adapter targeting expression.
 
 - **Parameters**
-  <table id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330"
-  class="table frame-all">
-  <caption><span class="table--title-label">Table 65. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  <col style="width: 20%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>Type</strong></th>
-  <th
-  id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Name</strong></th>
-  <th
-  id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__4"
-  class="entry align-center colsep-1 rowsep-1"><strong>Required</strong></th>
-  <th
-  id="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__5"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__1">BodyParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__2">targets</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__3">targets</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__5"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a"
-  class="xref">OperativeTargetingOptions</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__2">username</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__3">Your
-  username for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__5">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__2">password</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__3">Your
-  password for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__5">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__1">HeaderParameter</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__2">source</td>
-  <td class="entry align-left colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__3">Your
-  client source for accessing the Yield Analytics API</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__4">true</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-e6237203-9247-4d09-a545-abf567747330__entry__5">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 65.
-  <span class="title">
+  
+  | Type | Name | Description | Required | Schema |
+  |---|---|---|---|---|
+  | BodyParameter | targets | targets | true | [OperativeTargetingOptions](#operativetargetingoptions) |
+  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
-  <table id="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035"
-  class="table frame-all" style="width:100%;">
-  <caption><span class="table--title-label">Table 66. <span
-  class="title"></caption>
-  <colgroup>
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  <col style="width: 33%" />
-  </colgroup>
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__1"
-  class="entry align-center colsep-1 rowsep-1"><strong>HTTP
-  Code</strong></th>
-  <th
-  id="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__2"
-  class="entry align-center colsep-1 rowsep-1"><strong>Description</strong></th>
-  <th
-  id="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__3"
-  class="entry align-center colsep-1 rowsep-1"><strong>Schema</strong></th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__1">200</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__2">OK</td>
-  <td class="entry align-center colsep-1 rowsep-1"
-  headers="ID-00001482__table-b26c88bf-907b-4bb4-a4b8-5782bfa8c035__entry__3"><a
-  href="product-and-inventory-service.md#ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="xref">TargetExpression</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  <span class="table--title-label">Table 66.
-  <span class="title">
+  
+  | HTTP Code | Description | Schema |
+  |---|---|---|
+  | 200 | OK | [TargetExpression](#targetexpression) |
 
 - **Consumes**
   - application/json
@@ -9601,12 +4243,12 @@ POST /api/v1/rest/product/targeting/operativeadapter
   - application/xml
 
 - **Tags**
-  - Product Resource
+  
+  Product Resource
 
-- **Example CURL request**
-  >
+- **Example cURL request**
 
-  ``` pre
+  ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/targeting/operativeadapter' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' -H 'source: {{source}}' -d '{
@@ -9627,12 +4269,9 @@ POST /api/v1/rest/product/targeting/operativeadapter
   }'
   ```
 
-  
-
 - **Example HTTP request**
-  >
 
-  ``` pre
+  ```
   POST /api/v1/rest/product/targeting/operativeadapter HTTP/1.1
   Content-Type: application/json
   Accept: application/json
@@ -9660,12 +4299,9 @@ POST /api/v1/rest/product/targeting/operativeadapter
   }
   ```
 
-  
-
 - **Example HTTP response**
-  >
 
-  ``` pre
+  ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
   Content-Length: 46
@@ -9675,2319 +4311,344 @@ POST /api/v1/rest/product/targeting/operativeadapter
   }
   ```
 
-  
-
-
-
-
-
 ## Definitions
 
-- 
-
-  **BatchInventoryQuery**
-  <table id="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__1">batchInventoryQuery</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__4">BatchInventoryQuery</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__1">queryCriteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__2">A
-  collection of inventory query criteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90b3c205-dc1c-4751-954e-8066fc6bdd4c__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36"
-  class="xref">InventoryQueryCriteria</a> array</td>
-  </tr>
-  </tbody>
-  </table>
-
+### BatchInventoryQuery
   
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| batchInventoryQuery |  | false | BatchInventoryQuery |
+| queryCriteria | A collection of inventory query criteria | true | [InventoryQueryCriteria](#inventoryquerycriteria) array |
 
-- **BulkProductCreation**
-  <table id="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__1">bulkProductCreation</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__4">BulkProductCreation</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__1">products</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__2">A
-  collection of product creation data types holding the relevant data for
-  each product to be added to the system</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d425465-f4a3-4100-a326-c2b2b69741f9__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802"
-  class="xref">ProductCreation</a> array</td>
-  </tr>
-  </tbody>
-  </table>
+### BulkProductCreation
 
-- **BulkProductCreationResponse**
-  >
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| bulkProductCreation |  | false | BulkProductCreation |
+| products | A collection of product creation data types holding the relevant data for each product to be added to the system | true | [ProductCreation](#productcreation) array |
 
-  A JSON object to hold the request for Bulk Product Creation Response.
-  <table id="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__1">products</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__2">A
-  collection of product creation detail of the bulk product creation
-  response</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-4e07d6c5-5c03-4576-8efe-04d3573965bc__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe"
-  class="xref">ProductCreationDetail</a> array</td>
-  </tr>
-  </tbody>
-  </table>
+### BulkProductCreationResponse
 
+A JSON object to hold the request for Bulk Product Creation Response.
   
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| products | A collection of product creation detail of the bulk product creation response | false | [ProductCreationDetail](#productcreationdetail) array |
 
-- **ColumnData**
-  >
+### ColumnData
 
-  A JSON object to hold the results of a column data.
-  <table id="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__1">name</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__2">The
-  name of the column data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__1">value</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__2">The
-  value object of the column data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
+A JSON object to hold the results of a column data.
   
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| name | The name of the column data | true | string |
+| value | The value object of the column data | true | string |
 
-- **CombinedInventoryDetail**
-  >
+### CombinedInventoryDetail
 
-  A JSON object to hold the results of a combined inventory detail.
-  <table id="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__1">cappedDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__2">The
-  capped inventory detail of the combined inventory detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc"
-  class="xref">InventoryDetail</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__1">uncappedDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__2">The
-  uncapped inventory detail of the combined inventory detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f0cbe8a6-95e4-4b3b-94ec-b9a37703bb83__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc"
-  class="xref">InventoryDetail</a></td>
-  </tr>
-  </tbody>
-  </table>
-
+A JSON object to hold the results of a combined inventory detail.
   
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| cappedDetail | The capped inventory detail of the combined inventory detail | true | [InventoryDetail](#inventorydetail) |
+| uncappedDetail | The uncapped inventory detail of the combined inventory detail | true | [InventoryDetail](#inventorydetail) |
 
-- **ConsumptionDetail**
-  >
+### ConsumptionDetail
 
-  A JSON object to hold the results of a consumption detail.
-  <table id="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__1">consumedImpressions</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__2">The
-  field contains consumed impressions</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__1">detailName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__2">The
-  name of consumption detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
+A JSON object to hold the results of a consumption detail.
   
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| consumedImpressions | The field contains consumed impressions | true | integer (int64) |
+| detailName | The name of consumption detail | true | string |
 
-- **ForecastDebugResponse**
-  >
+### ForecastDebugResponse
 
-  A JSON object to hold the results of a forecast debug response.
-  <table id="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__1">result</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__2">The
-  result of the forecast debug response</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-32840ce8-1eb1-4c34-aa76-090b05f1ccb7__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
+A JSON object to hold the results of a forecast debug response.
 
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| result | The result of the forecast debug response | true | string |
+
+### InventoryAndContention
+
+A JSON object to hold the results of an inventory and contention.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| contendingData | The contending query result data of the inventory and contention | true | [QueryResultData](#queryresultdata) |
+| productDetail | The product detail of the inventory and contention | true | [ProductDetail](#productdetail) |
+| summaryData | The inventory summary data of the inventory and contention | true | [InventoryData](#inventorydata) |
+
+### InventoryAndContentionBatchResponse
+
+A JSON object to hold the results of an inventory and contention batch response.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| batchResults | A collection of inventory and contention batch results | true | [InventoryAndContentionBatchResult](#inventoryandcontentionbatchresult) array |
+
+### InventoryAndContentionBatchResult
+
+A JSON object to hold the results of an inventory and contention batch result.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| identifier | The identifier of the inventory and contention batch result | true | string |
+| result | The result of the inventory and contention batch result | true | [InventoryAndContention](#inventoryandcontention) |
+
+### InventoryAndContentionWithDisplacement
+
+A JSON object to hold the results of an inventory and contention detail with displacement enabled.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| contendingData |  | false | [QueryResultData](#queryresultdata) |
+| productDetail |  | false | [ProductDetail](#productdetail) |
+| summaryData |  | false | [InventoryDataWithDisplacement](#inventorydatawithdisplacement) |  
+
+### InventoryAndContentionWithDisplacementBatchResponse
+
+A JSON object to hold the results of an inventory and contention with displacement enabled batch response.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| batchResults |  | false | [InventoryAndContentionWithDisplacementBatchResult](#inventoryandcontentionwithdisplacementbatchresult) array |
+
+### InventoryAndContentionWithDisplacementBatchResult
+
+A JSON object to hold the results of an inventory and contention with displacement enabled batch result.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| identifier |  | false | string |
+| result |  | false | [InventoryAndContentionWithDisplacement](#inventoryandcontentionwithdisplacement) |
+
+### InventoryBatchLookupResponse
+
+A JSON object to hold the results of an inventory batch lookup response.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| inventoryDetails | A collection of inventory details | false | [InventoryDetail](#inventorydetail) array |
+
+### InventoryData
+
+A JSON object to hold the results of an inventory data.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| available | The field contains available | true | integer (int64) |
+| capacity | The field contains capacity | true | integer (int64) |
+| consumptionDetails | A collection of consumption details | false | [ConsumptionDetail](#consumptiondetail) array |
+| daysInForecast | The days in forecast of the inventory data | true | integer (int32) |
+| daysOutsideAvailabilityThreshold | The days outside availability threshold of the inventory data | true | integer (int32) |
+| endDate | The end date of inventory data | true | string |
+| evenAvailability | The even availability of the inventory data | true | boolean |
+| exceededForecastWindow | The field indicates whether or not the inventory data exceeded forecast window | true | boolean |
+| startDate | The start date of inventory data | true | string |
+| unmetDemand | The field contains unmet demand | true | integer (int64) |
+
+### InventoryDataWithDisplacement
+
+A JSON object to hold the results of an inventory data with displacement enabled.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| available | The field contains available | true | integer (int64) |
+| availableWithDisplacement |  | false | integer (int64) |
+| capacity | The field contains capacity | true | integer (int64) |
+| consumptionDetails | A collection of consumption details | false | [ConsumptionDetail](#consumptiondetail) array |
+| daysInForecast | The days in forecast of the inventory data | true | integer (int32) |
+| daysOutsideAvailabilityThreshold | The days outside availability threshold of the inventory data | true | integer (int32) |
+| endDate | The end date of inventory data | true | string |
+| evenAvailability | The even availability of the inventory data | true | boolean |
+| exceededForecastWindow | The field indicates whether or not the inventory data exceeded forecast window | true | boolean |
+| startDate | The start date of inventory data | true | string |
+| unmetDemand | The field contains unmet demand | true | integer (int64) |
+
+### InventoryDetail
+
+A JSON object to hold the results of an inventory detail.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| dailyDetail | A collection of daily inventory detail data | true | [InventoryData](#inventorydata) array |
+| productDetail | The product detail of the inventory detail | true | [ProductDetail](#productdetail) |
+| summary | The inventory data of the inventory detail | true | [InventoryData](#inventorydata) |
+
+### InventoryDetailWithDisplacement
+
+A JSON object to hold the results of an inventory detail with displacement enabled.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| dailyDetail |  | false | [InventoryDataWithDisplacement](#inventorydatawithdisplacement) array |
+| productDetail |  | false | [ProductDetail](#productdetail) |
+| summary |  | false | [InventoryDataWithDisplacement](#inventorydatawithdisplacement) |
+
+### InventoryQueryCriteria
+
+A JSON object to hold the results of an inventory query criteria.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| endDate | The end date of the inventory query criteria | true | string |
+| identifier | The identifier of the inventory query criteria | true | string |
+| startDate | The start date of the inventory query criteria | true | string |
+| targetExpression | The target expression of the inventory query criteria | true | string |
+
+### InventoryWithDisplacementBatchLookupResponse
+
+A JSON object to hold the results of an inventory with displacement enabled batch lookup response.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| inventoryDetails |  | false | [InventoryDetailWithDisplacement](#inventorydetailwithdisplacement) array |
+
+### OperativeTargetingOptions
+
+A JSON object to hold the OperativeTargetingOptions.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| operativeProductId |  | false | string |
+| targetingOptionFlatList |  | false | [TargetingOptionFlat](#targetingoptionflat) array |
+| yxProductId |  | false | string |  
+
+### ProductCreation
+
+A JSON object to hold the request for Product Creation.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| externalId | rim then: not empty and length < 200 <br><br> If productId exist and found in system, check for existence of externalId. If externalId also exist violates uniqueness of external ids. raise error: "Unable to update an existing product with product id: XXX that changes externalId to one: XXX that already exist" | false | string |
+| originatingTarget | trim then: length > 0, parsable, and attributes and values exist in our system | true | string |
+| productClass | CUSTOM or RATE_CARD or REPORTING or SEASONAL_MODEL | true | string |
+| productGroupNames | Comma separated list of user group names. User groups must exist or an error will be generated, new user groups are not created. | false | string array |
+| productId | If present must be Long and must correspond to a product in our system. | false | integer (int64) |
+| productName | check for null, trim then: not empty and length < 4000 | true | string |
+| rateCardCPM | if present must be double - If omitted default value of 0 will be used. | false | number (double) |
+| state | ACTIVE or INACTIVE | true | string |
+| userGroupNames | Comma separated list of user group names. User groups must exist or an error will be generated, new user groups are not created. | false | string array |  
+
+### ProductCreationDetail
+
+A JSON object to hold the results for Product Creation.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| errors | The a collection of validation constraints that were not met during creation scheduling | false | [ProductCreationError](#productcreationerror) array |
+| externalId | The ID of the product from it’s system of record | false | string |
+| productId | The ID of the product within the Yield Analytics platform | false | string |
+| productName | The name of the product within the Yield Analytics platform | true | string |
+| status | The status of the product creation job: PENDING, COMPLETED, FAILED | true | string |  
+
+### ProductCreationError
+
+A JSON object to hold the error for product creation.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| error | The error msg of the product creation field | true | string |
+| field | The field of the product creation | true | string |  
+
+### ProductDetail
+
+A JSON object to hold the results of a product search.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| active |  | false | boolean |
+| baseRateCardPrice | The base rate card price of the product detail | false | number (double) |
+| exists | The exists boolean field of the product detail | true | boolean |
+| externalId | The external product ID of the product detail | false | string |
+| isActive | The is active boolean field of the product detail | true | boolean |
+| isReporting | The is reporting boolean field of the product detail | true | boolean |
+| isSold | The is sold boolean field of the product detail | true | boolean |
+| priority | The priority of the product detail | false | integer (int32) |
+| productClass | The product class of the product detail | true | string |
+| productExpression | The product expression of the product detail | true | string |
+| productId | The product ID of the product detail | false | integer (int64) |
+| productName | The product name of the product detail | true | string |
+| rateCardCPM | The rate card cpm of the product detail | true | number (double) |
+| rateCardFloor | The rate card floor of the product detail | true | number (double) |
+| rateCardProductId | The rate card product id of the product detail | false | integer (int64) |
+| reporting |  | false | boolean |
+| resolved | The resolved boolean field of the product detail | true | boolean |
+| safeProductExpression | The safe product expression of the product detail | true | string |
+| sold |  | false | boolean |
+| state | The state of the product detail | true | string |
+| targetExists | The target exists boolean field of the product detail | true | boolean |  
+
+### ProductLookupResponse
+
+A JSON object to hold the results of a product search.
+
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| candidateMatches | Details of the products matched in the search | false | [ProductDetail](#productdetail) array |
+| exactMatch | The total count of matched products in the search | false | [ProductDetail](#productdetail) |
   
+### QueryResultData
 
-- **InventoryAndContention**
-  >
+A JSON object to hold the results of a query result data.
 
-  A JSON object to hold the results of an inventory and contention.
-  <table id="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__1">contendingData</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__2">The
-  contending query result data of the inventory and contention</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0"
-  class="xref">QueryResultData</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__1">productDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__2">The
-  product detail of the inventory and contention</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__1">summaryData</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__2">The
-  inventory summary data of the inventory and contention</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f"
-  class="xref">InventoryData</a></td>
-  </tr>
-  </tbody>
-  </table>
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| row | A collection of row data | false | [RowData](#rowdata) array |
 
-  
+### Roadblock
 
-- **InventoryAndContentionBatchResponse**
-  >
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| products | A list of products | true | string array |
+| roadblock |  | false | Roadblock |
+| targetExpressions | A list of target expressions | true | string array |
 
-  A JSON object to hold the results of an inventory and contention batch
-  response.
-  <table id="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__1">batchResults</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__2">A
-  collection of inventory and contention batch results</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-c383f0e0-04ee-4591-8187-aba675f56ef1__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699"
-  class="xref">InventoryAndContentionBatchResult</a> array</td>
-  </tr>
-  </tbody>
-  </table>
+### RoadblockDetail
 
-  
+A JSON object to hold the results of an roadblock detail.
 
-- **InventoryAndContentionBatchResult**
-  >
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| availability | The availability of roadblock | true | integer (int64) |
+| capacity | The capacity of roadblock | true | integer (int64) |
 
-  A JSON object to hold the results of an inventory and contention batch
-  result.
-  <table id="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__1">identifier</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__2">The
-  identifier of the inventory and contention batch result</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__1">result</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__2">The
-  result of the inventory and contention batch result</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-275eafcb-2b6f-42da-b276-340b120db699__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-15436d8a-417c-455f-b1cc-75ec8cb33805"
-  class="xref">InventoryAndContention</a></td>
-  </tr>
-  </tbody>
-  </table>
+### RowData
 
-  
+A JSON object to hold the results of a row data.
 
-- **InventoryAndContentionWithDisplacement**
-  >
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| columnData | A collection of column data | true | [ColumnData](#columndata) array |
 
-  A JSON object to hold the results of an inventory and contention
-  detail with displacement enabled.
-  <table id="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__1">contendingData</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0"
-  class="xref">QueryResultData</a></td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__1">productDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__1">summaryData</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166"
-  class="xref">InventoryDataWithDisplacement</a></td>
-  </tr>
-  </tbody>
-  </table>
+### TargetExpression
 
-  
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| expression | The expression field of the target expression | true | string |
+| targetExpression |  | false | TargetExpression |
 
-- **InventoryAndContentionWithDisplacementBatchResponse**
-  >
+### TargetingOptionFlat
 
-  A JSON object to hold the results of an inventory and contention with
-  displacement enabled batch response.
-  <table id="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__1">batchResults</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bcdcd183-6173-44ac-9e99-e12f29e58e3c__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb"
-  class="xref">InventoryAndContentionWithDisplacementBatchResult</a>
-  array</td>
-  </tr>
-  </tbody>
-  </table>
+A JSON object to hold the TargetingOptionFlat.
 
-  
+| Name | Description | Required | Schema |
+|---|---|---|---|
+| mappedField |  | false | string |
+| mappedValue |  | false | string |
+| mappedValueExternalId |  | false | string |
+| productionSystemId |  | false | integer (int64) |
+| productionSystemIds |  | false | string array |
+| productionSystemName |  | false | string |
+| rank |  | false | integer (int64) |
+| status |  | false | string |
+| targetingId |  | false | integer (int64) |
+| targetingName |  | false | string |
+| targetingOptionId |  | false | integer (int64) |
+| targetingOptionValue |  | false | string |
 
-- **InventoryAndContentionWithDisplacementBatchResult**
-  >
+## Related topic
 
-  A JSON object to hold the results of an inventory and contention with
-  displacement enabled batch result.
-  <table id="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__1">identifier</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__1">result</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-560abf51-557d-4cc2-830f-7f60159c93cb__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-f13888b9-c3d2-4bd5-a41b-48d67161e2f2"
-  class="xref">InventoryAndContentionWithDisplacement</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryBatchLookupResponse**
-  >
-
-  A JSON object to hold the results of an inventory batch lookup
-  response.
-  <table id="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__1">inventoryDetails</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__2">A
-  collection of inventory details</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-52aa3fb6-6e4e-40d6-aa26-3cbedf64648b__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc"
-  class="xref">InventoryDetail</a> array</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryData**
-  >
-
-  A JSON object to hold the results of an inventory data.
-  <table id="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">available</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  field contains available</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">capacity</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  field contains capacity</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">consumptionDetails</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">A
-  collection of consumption details</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399"
-  class="xref">ConsumptionDetail</a> array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">daysInForecast</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  days in forecast of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">integer
-  (int32)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">daysOutsideAvailabilityThreshold</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  days outside availability threshold of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">integer
-  (int32)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">endDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  end date of inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">evenAvailability</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  even availability of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">exceededForecastWindow</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  field indicates whether or not the inventory data exceeded forecast
-  window</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">boolean</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">startDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  start date of inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__1">unmetDemand</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__2">The
-  field contains unmet demand</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f__entry__4">integer
-  (int64)</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-  **InventoryDataWithDisplacement**
-  >
-
-  A JSON object to hold the results of an inventory data with
-  displacement enabled.
-  <table id="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">available</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  field contains available</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">availableWithDisplacement</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">capacity</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  field contains capacity</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">consumptionDetails</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">A
-  collection of consumption details</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-d9c639d4-33e1-4dda-b53b-0d9075309399"
-  class="xref">ConsumptionDetail</a> array</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">daysInForecast</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  days in forecast of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int32)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">daysOutsideAvailabilityThreshold</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  days outside availability threshold of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int32)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">endDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  end date of inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">evenAvailability</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  even availability of the inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">boolean</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">exceededForecastWindow</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  field indicates whether or not the inventory data exceeded forecast
-  window</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">startDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  start date of inventory data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__1">unmetDemand</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__2">The
-  field contains unmet demand</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166__entry__4">integer
-  (int64)</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryDetail**
-  >
-
-  A JSON object to hold the results of an inventory detail.
-  <table id="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__1">dailyDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__2">A
-  collection of daily inventory detail data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f"
-  class="xref">InventoryData</a> array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__1">productDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__2">The
-  product detail of the inventory detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__1">summary</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__2">The
-  inventory data of the inventory detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-6e69aeaf-a711-4611-b77f-7cd7d2b13adc__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-0b7a1e79-15e0-4043-903a-55dbb0b08e9f"
-  class="xref">InventoryData</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryDetailWithDisplacement**
-  >
-
-  A JSON object to hold the results of an inventory detail with
-  displacement enabled.
-  <table id="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__1">dailyDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166"
-  class="xref">InventoryDataWithDisplacement</a> array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__1">productDetail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__1">summary</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-dc07b199-94b0-419a-b62a-ca493e211166"
-  class="xref">InventoryDataWithDisplacement</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryQueryCriteria**
-  >
-
-  A JSON object to hold the results of an inventory query criteria.
-  <table id="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__1">endDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__2">The
-  end date of the inventory query criteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__1">identifier</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__2">The
-  identifier of the inventory query criteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__1">startDate</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__2">The
-  start date of the inventory query criteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__1">targetExpression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__2">The
-  target expression of the inventory query criteria</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-644e5855-c0f8-45c5-8ece-1de4e5ccca36__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **InventoryWithDisplacementBatchLookupResponse**
-  >
-
-  A JSON object to hold the results of an inventory with displacement
-  enabled batch lookup response.
-  <table id="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__1">inventoryDetails</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-90323c47-2d43-4189-8222-c2eee6c8e734__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-53cfca7c-93ff-4ce0-b1e2-5628f4e021d3"
-  class="xref">InventoryDetailWithDisplacement</a> array</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **OperativeTargetingOptions**
-  >
-
-  A JSON object to hold the OperativeTargetingOptions.
-  <table id="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__1">operativeProductId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__1">targetingOptionFlatList</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9"
-  class="xref">TargetingOptionFlat</a> array</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__1">yxProductId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-dab431dc-f0d2-4c95-aa84-9a54964c515a__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **ProductCreation**
-  >
-
-  A JSON object to hold the request for Product Creation.
-  <table id="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">externalId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2"><p>rim
-  then: not empty and length &lt; 200</p>
-  <p>If productId exist and found in system, check for existence of
-  externalId. If externalId also exist violates uniqueness of external
-  ids. raise error: "Unable to update an existing product with product id:
-  XXX that changes externalId to one: XXX that already exist"</p></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">originatingTarget</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">trim
-  then: length &gt; 0, parsable, and attributes and values exist in our
-  system</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">productClass</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">CUSTOM
-  or RATE_CARD or REPORTING or SEASONAL_MODEL</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">productGroupNames</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">Comma
-  separated list of user group names. User groups must exist or an error
-  will be generated, new user groups are not created.</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string
-  array</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">productId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">If
-  present must be Long and must correspond to a product in our
-  system.</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">productName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">check
-  for null, trim then: not empty and length &lt; 4000</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">rateCardCPM</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">if
-  present must be double - If omitted default value of 0 will be
-  used.</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">number
-  (double)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">state</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">ACTIVE
-  or INACTIVE</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__1">userGroupNames</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__2">Comma
-  separated list of user group names. User groups must exist or an error
-  will be generated, new user groups are not created.</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-188a473c-1caf-4708-82a4-84dd0f958802__entry__4">string
-  array</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **ProductCreationDetail**
-  >
-
-  A JSON object to hold the results for Product Creation.
-  <table id="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1">errors</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2">The
-  a collection of validation constraints that were not met during creation
-  scheduling</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89"
-  class="xref">ProductCreationError</a> array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1">externalId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2">The
-  ID of the product from it’s system of record</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1">productId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2">The
-  ID of the product within the Yield Analytics platform</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1">productName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2">The
-  name of the product within the Yield Analytics platform</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__1">status</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__2">The
-  status of the product creation job: PENDING, COMPLETED, FAILED</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-bfbb5ef3-61ef-4514-8267-ddf601a146fe__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **ProductCreationError**
-  >
-
-  A JSON object to hold the error for product creation.
-  <table id="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__1">error</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__2">The
-  error msg of the product creation field</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__1">field</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__2">The
-  field of the product creation</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-5d23157c-afba-47c2-b641-e49d3f88ef89__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **ProductDetail**
-  >
-
-  A JSON object to hold the results of a product search.
-  <table id="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">active</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">baseRateCardPrice</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  base rate card price of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">number
-  (double)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">exists</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  exists boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">externalId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  external product ID of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">isActive</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  is active boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">isReporting</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  is reporting boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">isSold</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  is sold boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">priority</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  priority of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">integer
-  (int32)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">productClass</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  product class of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">productExpression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  product expression of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">productId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  product ID of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">productName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  product name of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">rateCardCPM</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  rate card cpm of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">number
-  (double)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">rateCardFloor</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  rate card floor of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">number
-  (double)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">rateCardProductId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  rate card product id of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">reporting</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">resolved</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  resolved boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">safeProductExpression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  safe product expression of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">sold</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">state</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  state of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__1">targetExists</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__2">The
-  target exists boolean field of the product detail</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af__entry__4">boolean</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **ProductLookupResponse**
-  >
-
-  A JSON object to hold the results of a product search.
-  <table id="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__1">candidateMatches</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__2">Details
-  of the products matched in the search</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a> array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__1">exactMatch</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__2">The
-  total count of matched products in the search</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-722ab0b8-a102-461c-a6ac-9c99bdb14692__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-18a8325c-82e4-4db2-bfcb-adcab3fd49af"
-  class="xref">ProductDetail</a></td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **QueryResultData**
-  >
-
-  A JSON object to hold the results of a query result data.
-  <table id="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__1">row</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__2">A
-  collection of row data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-91af53c4-9602-4627-a09e-76c3e82cc6d0__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51"
-  class="xref">RowData</a> array</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **Roadblock**
-  <table id="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__1">products</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__2">A
-  list of products</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__4">string
-  array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__1">roadblock</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__4">Roadblock</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__1">targetExpressions</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__2">A
-  list of target expressions</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-f734af13-4764-400d-a2ea-55689d0f9929__entry__4">string
-  array</td>
-  </tr>
-  </tbody>
-  </table>
-
-- **RoadblockDetail**
-  >
-
-  A JSON object to hold the results of an roadblock detail.
-  <table id="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__1">availability</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__2">The
-  availability of roadblock</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__1">capacity</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__2">The
-  capacity of roadblock</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-08aca303-edc5-4f95-aba4-d5dcdb6cc90e__entry__4">integer
-  (int64)</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **RowData**
-  >
-
-  A JSON object to hold the results of a row data.
-  <table id="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__1">columnData</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__2">A
-  collection of column data</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-257cafbe-a530-4a82-9094-d41748dada51__entry__4"><a
-  href="product-and-inventory-service.md#ID-00001482__table-0be60386-b638-4355-832b-78f80ac3741b"
-  class="xref">ColumnData</a> array</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-- **TargetExpression**
-  <table id="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__1">expression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__2">The
-  expression field of the target expression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__3">true</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__1">targetExpression</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-3dcdba84-5f25-43c4-93bc-27881151d18b__entry__4">TargetExpression</td>
-  </tr>
-  </tbody>
-  </table>
-
-- **TargetingOptionFlat**
-  >
-
-  A JSON object to hold the TargetingOptionFlat.
-  <table id="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9"
-  class="table">
-  <thead class="thead">
-  <tr class="header row">
-  <th
-  id="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1"
-  class="entry colsep-1 rowsep-1">Name</th>
-  <th
-  id="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"
-  class="entry colsep-1 rowsep-1">Description</th>
-  <th
-  id="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3"
-  class="entry colsep-1 rowsep-1">Required</th>
-  <th
-  id="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4"
-  class="entry colsep-1 rowsep-1">Schema</th>
-  </tr>
-  </thead>
-  <tbody class="tbody">
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">mappedField</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">mappedValue</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">mappedValueExternalId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">productionSystemId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">productionSystemIds</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string
-  array</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">productionSystemName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">rank</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">status</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">targetingId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">targetingName</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  <tr class="odd row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">targetingOptionId</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">integer
-  (int64)</td>
-  </tr>
-  <tr class="even row">
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__1">targetingOptionValue</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__2"></td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__3">false</td>
-  <td class="entry colsep-1 rowsep-1"
-  headers="ID-00001482__table-b78a165b-c2c2-45b9-9faa-38a76a4801e9__entry__4">string</td>
-  </tr>
-  </tbody>
-  </table>
-
-  
-
-
-
-
-
-## Related Topics
-
-
-
-- <a href="yield-analytics-api.md" class="xref">Yield Analytics API</a>
-
-
-
-
-
-=
-
-<a href="yield-analytics-api.md" class="link">Yield
-Analytics API</a>
-
-
-
-
-
-
+[Yield Analytics API](yield-analytics-api.md)
