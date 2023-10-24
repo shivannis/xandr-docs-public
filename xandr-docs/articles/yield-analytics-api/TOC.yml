@@ -1,7 +1,11 @@
 - name: Yield Analytics API
   href: index.yml 
 - name: Getting Started
-  href: yield-analytics-api.md
+  items:
+    - name: Overview
+      href: yield-analytics-api.md
+    - name: Using Postman with the Yield Analytics API
+      href: using-postman-with-the-yield-analytics-api.md
 - name: API Reference Documentation
   items:
     - name: Attribute Service
@@ -18,7 +22,3 @@
       href: product-and-inventory-service.md
     - name: Query Engine Service
       href: query-engine-service.md
-- name: Using Postman with the Yield Analytics API
-  items:
-    - name: Overview
-      href: using-postman-with-the-yield-analytics-api.md
