@@ -76,7 +76,7 @@ The goal of this tutorial is to take a new Postman install and walk away with a 
 
   :::image type="content" source="media/postman_export_call.png" alt-text="A screenshot that shows how to export a call on Postman.":::
 
-## Converting an http call to a cURL command
+## Converting an https call to a cURL command
 
 Postman provides a quick and easy way to convert these HTTPS API calls into other formats. Simply click on the "Code" link on the right hand side of your active API call and then select the conversion you want as depicted in the following image:
 
