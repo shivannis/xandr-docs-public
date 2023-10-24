@@ -118,7 +118,7 @@ additionalContent:
           url: getting-started/index.yml
         # Card
         - title: Data Science Toolkit
-          summary: Lorem Ipsum
+          summary: Reference documentation to enhance bidding strategy, improve measurement and testing capabilities, and run in-depth outcome analyses using Data Science
           url: getting-started/index.yml
         # Card
         - title: OTT and CTV Video Integrations
