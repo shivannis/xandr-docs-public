@@ -35,7 +35,7 @@ landingContent:
         links:
           - text: ALI Workflow with Custom Models
             url: ali-workflow-with-custom-models.md
-          - text: Best Practices and Troubleshooting for Custom Models  
+          - text: Best Practices and Troubleshooting
             url: custom-models-pre-implementation-and-troubleshooting-guide.md
   - title: Incrementality
     linkLists:
