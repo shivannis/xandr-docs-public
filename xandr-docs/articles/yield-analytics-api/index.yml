@@ -23,7 +23,7 @@ landingContent:
             url: using-postman-with-the-yield-analytics-api.md 
   - title: API Reference Documentation
     linkLists:
-      - linkListType: Reference
+      - linkListType: reference
         links:            
           - text: Attribute Service
             url: attribute-service.md
