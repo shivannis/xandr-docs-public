@@ -44,21 +44,21 @@ additionalContent:
           - url: invest/release-notes.md
             text: Release Notes
       # Card
-      - title: Microsoft Monetize
+      - title: Microsoft Monetize (Work in progress)
         links:
           - url: getting-started/index.yml
             text: Product Documentation
           - url: ./file1b.md OR /file1b
             text: Release Notes
       # Card
-      - title: Microsoft Curate
+      - title: Microsoft Curate (Work in progress)
         links:
           - url: getting-started/index.yml
             text: Product Documentation
           - url: ./file1b.md OR /file1b
             text: Release Notes
       # Card
-      - title: Bidder
+      - title: Bidder (Work in progress)
         links:
           - url: getting-started/index.yml
             text: Product Documentation
@@ -67,14 +67,14 @@ additionalContent:
     - title: API References
       items:
         # Card
-        - title: Digital Platform API
+        - title: Digital Platform API (Work in progress)
           links:
             - text: Overview
               url: getting-started/index.yml
             - text: References
               url: getting-started/index.yml
         # Card
-        - title: Impression Bus API
+        - title: Impression Bus API (Work in progress)
           links:
             - text: Overview
               url: getting-started/index.yml
@@ -88,7 +88,7 @@ additionalContent:
             - text: References
               url: getting-started/index.yml
         # Card
-        - title: Release Notes
+        - title: Release Notes (Work in progress)
           links:
             - text: Digital Platform API Release Notes
               url: getting-started/index.yml
@@ -101,19 +101,19 @@ additionalContent:
           summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
           url: seller-tag/index.yml
         # Card
-        - title: Mobile SDK
+        - title: Mobile SDK (Work in progress)
           summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
           url: getting-started/index.yml
         # Card
-        - title: Log Level Data Feeds
+        - title: Log Level Data Feeds (Work in progress)
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
           url: getting-started/index.yml
         # Card
-        - title: Supply Partners
+        - title: Supply Partners (Work in progress)
           summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
-        - title: Data Providers
+        - title: Data Providers (Work in progress)
           summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
