@@ -1,7 +1,6 @@
 ---
 Title : External Seller Troubleshooting
-Description : This page describes some of the common issues facing external sellers
-and instructions to help resolve those issues. For additional
+Description : lorem ipsum
 ---
 
 
@@ -55,8 +54,7 @@ steps to take:
 
 
 
-<div id="ID-00004fe3__general_delivery_troubleshooting"
->
+
 
 ## General Delivery Troubleshooting
 
