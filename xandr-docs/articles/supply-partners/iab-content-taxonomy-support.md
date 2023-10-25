@@ -1,9 +1,9 @@
 ---
-title: IAB Content Taxonomy Support
+title: Supply Partners - IAB Content Taxonomy Support
 description: This article provides an extensive list of supported Interactive Advertising Bureau (IAB) content categories.
 ---
 
-# IAB content taxonomy support
+# Supply Partners - IAB content taxonomy support
 
 This page contains extensive list of Interactive Advertising Bureau (IAB) content categories supported by Xandr.
 

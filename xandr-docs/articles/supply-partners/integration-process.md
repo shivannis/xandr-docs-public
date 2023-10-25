@@ -37,7 +37,7 @@ This document includes the necessary information for supply partners to review, 
 
 - Review Xandr [Object Hierarchy](./understanding-the-sell-side-object-hierarchy.md) and API/UI
   documentation.
-- Provision the objects that you will need for initial testing, either via  or the [API](../digital-platform-api/welcome.md). See [API Documentation](./api-documentation.md) for more details.
+- Provision the objects that you will need for initial testing, either via  or the [API](../digital-platform-api/api-getting-started.md). See [API Documentation](./api-documentation.md) for more details.
 - Create sell-side objects to synchronize inventories (at least the ones are needed for initial functional testing) via UI/API
   - Review Xandr Object Hierarchy: Member → Publisher → Placement Group → Placement
   - Create a publisher and a placement for the test
@@ -58,7 +58,7 @@ This document includes the necessary information for supply partners to review, 
 > [!NOTE]
 > - The `code` field is required for all external sellers at both the publisher and placement levels and is highly recommended for all other sellers to ensure that your inventory is as granular as possible so
 > that it can be investigated accurately for quality issues, and specifically for domain detectability. This step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
-> - In order to create or edit publishers in  or the [API](../digital-platform-api/welcome.md), you have to declare the [Inventory Relationship](./inventory-relationship-faq.md). The requested information is basic business information about how the inventory is accessed and will be used to support Xandr's inventory quality efforts. For a complete list of fields and their usage requirements, please refer to the [Publisher Service](../digital-platform-api/publisher-service.md) documentation.
+> - In order to create or edit publishers in  or the [API](../digital-platform-api/api-getting-started.md), you have to declare the [Inventory Relationship](./inventory-relationship-faq.md). The requested information is basic business information about how the inventory is accessed and will be used to support Xandr's inventory quality efforts. For a complete list of fields and their usage requirements, please refer to the [Publisher Service](../digital-platform-api/publisher-service.md) documentation.
 
 - User Sync Setup
   - Store the user mapping table between Xandr's and yours by using the GETUID service. (Learn details from [User ID Mapping](./user-id-mapping.md))
@@ -69,10 +69,10 @@ Xandr supports the [OpenRTB 2.4 protocol](https://www.iab.com/wp-content/uploads
 
 Use the endpoints below to send server-to-server OpenRTB bid requests to Xandr:
 
-- [http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&amp;test=1](http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&amp;test=1)
-- [http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&amp;test=1](http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&amp;test=1)
-- [http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&amp;test=1](http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&amp;test=1)
-- [http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&amp;test=1](http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&amp;test=1)
+- [http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&test=1)
+- [http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&test=1)
+- [http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&test=1)
+- [http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&test=1)
 
 > [!NOTE]
 > `MEMBER_ID` and `MEMBER_ALIAS` should be substituted with your individual partner member ID and alias.
