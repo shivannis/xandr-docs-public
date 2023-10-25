@@ -1,7 +1,6 @@
 ---
 Title : FAQ - Integration Process
-Description : ## OpenRTB
-**There are "2.4" and "Mobile 2.2" specs mentioned in the wiki. What is
+Description : lorem ipsum
 ---
 
 
@@ -340,7 +339,7 @@ purposes only:
 curl -v --header 'X-is-test: 1' --header 'Host: ib.adnxs.com' 'https://nym1-ib.adnxs.com/ab?e=wqT_3QKoCfA8qAQAAAMA1gAFAQjQis3HBRCUvPSr_...&referrer=appnexus.com&pp=1'
 ```
 
-<div id="ID-000001e0__note_e2h_vfj_nwb" 
+
 
 Note: Do not use IP addresses that
 don't resolve in domain lookup for this test configuration.
@@ -349,7 +348,7 @@ don't resolve in domain lookup for this test configuration.
 
 
 
-<div id="ID-000001e0__section_tg5_wfj_nwb" >
+
 
 ## User IDs
 
@@ -446,7 +445,7 @@ cookie space and does NOT have sticky cookies:
 
 
 
-<div id="ID-000001e0__section_g3r_dhj_nwb" >
+
 
 ## Bid Requests
 
@@ -615,7 +614,7 @@ class="xref" target="_blank">incoming bid request</a>.
 
 
 
-<div id="ID-000001e0__note_xjp_xjj_nwb" 
+
 
 Note: The alternative markup delivery
 method currently does not work for native media type.
@@ -659,7 +658,7 @@ resources and connection overhead.
 
 
 
-<div id="ID-000001e0__section_llp_ryj_nwb" >
+
 
 ## Xandr
 
@@ -697,7 +696,7 @@ impressions are found in the request.
 
 
 
-<div id="ID-000001e0__section_vdk_11k_nwb" >
+
 
 ## Bid Responses
 
@@ -882,7 +881,7 @@ impression is transacted on Xandr's platform is:
 
 
 
-<div id="ID-000001e0__note_okn_zbk_nwb" 
+
 
 Note: Xandr click reporting will not
 count any click url calls made outside of the designated aggregation
@@ -896,7 +895,7 @@ the SSP counts more clicks than Xandr reporting.
 
 
 
-<div id="ID-000001e0__section_pd1_cck_nwb" >
+
 
 ## Reporting
 
