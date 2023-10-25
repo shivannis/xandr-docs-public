@@ -197,11 +197,8 @@ all creatives.</td>
 </tr>
 </tbody>
 </table>
+![Supply partners - Part A](media/supply-partners-a.png)
 
-<figure class="fig fignone">
-<p><img src="images/supply-partners/97716593.png" class="image"
-width="565" /></p>
-</figure>
 
 
 
