@@ -1,7 +1,6 @@
 ---
 Title : IAB Content Taxonomy Support
-Description : This page contains extensive list of Interactive Advertising Bureau
-(IAB) content categories supported by Xandr.
+Description : lorem ipsum
 ---
 
 
