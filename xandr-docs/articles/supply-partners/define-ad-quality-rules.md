@@ -1,7 +1,6 @@
 ---
 Title : Define Ad Quality Rules
-Description : Publishers want to ensure that advertisements served on their websites
-don't take away from website content or the user's experience.
+Description : lorem ipsum
 ---
 
 
