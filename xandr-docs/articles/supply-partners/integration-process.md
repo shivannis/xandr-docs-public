@@ -69,10 +69,10 @@ Xandr supports the [OpenRTB 2.4 protocol](https://www.iab.com/wp-content/uploads
 
 Use the endpoints below to send server-to-server OpenRTB bid requests to Xandr:
 
-- [http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&test=1)
-- [http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&test=1)
-- [http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&test=1)
-- [http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&test=1](http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&test=1)
+- `http://MEMBER_ALIAS-useast..com/openrtb2?member_id=MEMBER_ID&test=1`
+- `http://MEMBER_ALIAS-uswest..com/openrtb2?member_id=MEMBER_ID&test=1`
+- `http://MEMBER_ALIAS-emea..com/openrtb2?member_id=MEMBER_ID&test=1`
+- `http://MEMBER_ALIAS-apac..com/openrtb2?member_id=MEMBER_ID&test=1`
 
 > [!NOTE]
 > `MEMBER_ID` and `MEMBER_ALIAS` should be substituted with your individual partner member ID and alias.
