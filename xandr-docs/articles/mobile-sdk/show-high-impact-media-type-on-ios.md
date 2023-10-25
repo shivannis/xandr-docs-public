@@ -1,8 +1,8 @@
 ---
 Title : Show High Impact Media type on iOS
-<b>Note:</b> This feature is available in
+Description : <div id="ID-000022b6__note_vlg_wfs_lwb"
+Note: This feature is available in
 Xandr Mobile SDK version 8.1.0 for iOS.
-ms.custom : android-sdk
 ---
 
 
@@ -12,8 +12,9 @@ ms.custom : android-sdk
 
 
 
+<div id="ID-000022b6__note_vlg_wfs_lwb" 
 
-<b>Note:</b> This feature is available in
+Note: This feature is available in
 Xandr Mobile SDK version 8.1.0 for iOS.
 
 

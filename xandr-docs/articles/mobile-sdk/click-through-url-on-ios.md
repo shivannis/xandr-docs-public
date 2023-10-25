@@ -2,7 +2,6 @@
 Title : Click-Through URL on iOS
 Description : The term click-through refers to the capability of our Mobile SDK to
 handle what happens when the user clicks on an ad. This document
-ms.custom : ios-sdk
 ---
 
 

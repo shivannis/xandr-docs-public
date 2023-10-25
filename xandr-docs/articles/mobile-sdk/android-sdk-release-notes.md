@@ -1,9 +1,8 @@
 ---
 Title : Android SDK Release Notes
-Description : <b>Warning:</b> Important
+Description : Warning: Important
 Please visit
 <a href="https://github.com/appnexus/mobile-sdk-android/releases"
-ms.custom : android-sdk
 ---
 
 
@@ -13,7 +12,7 @@ ms.custom : android-sdk
 
 
 
-<b>Warning:</b> Important
+Warning: Important
 
 Please visit
 <a href="https://github.com/appnexus/mobile-sdk-android/releases"

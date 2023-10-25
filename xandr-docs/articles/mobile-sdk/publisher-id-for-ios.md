@@ -2,7 +2,6 @@
 Title : Publisher ID for iOS
 Description : This document describes the publisher_id parameter of the Universal Tag
 service.  
-ms.custom : ios-sdk
 ---
 
 
@@ -41,7 +40,7 @@ When an invalid placement code is called:
 ## Ad Unit 
 
 The <a
-href="ios-sdk-ad-units.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-ad-units.html"
 class="xref" target="_blank">AdUnit</a> class has two methods for
 setting and retrieving `publisherId`. 
 
@@ -85,7 +84,7 @@ for `ANMultiAdRequest` be initialized, `publisherId` is an optional
 setting. The `memberId, ` `delegate` and `publisherId` may only be set
 during initialization. All `AdUnits` must contain the same `memberId` as
 the one passed in the initialization process.  See <a
-href="multi-ad-request-for-ios.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/multi-ad-request-for-ios.html"
 class="xref" target="_blank">ANMultiAdRequest</a> for more details. 
 
 **Objective C**
@@ -124,7 +123,7 @@ class="xref" target="_blank">ANMultiAdRequest</a> for more details. 
 
 
 
-<b>Note:</b> The `addAdUnit` method of the
+Note: The `addAdUnit` method of the
 `ANMultiAdRequest` will read the attached publisherId of the `AdUnit`.
 If that value does not match the `publisherId` set to the
 `ANMultiAdRequest` instance, the `ANMultiAdRequest` instance will reject

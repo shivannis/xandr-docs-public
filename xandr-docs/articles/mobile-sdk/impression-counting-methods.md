@@ -2,7 +2,6 @@
 Title : Impression Counting Methods
 Description : The Mobile SDK uses different impression tracking mechanisms for various
 Ad formats. These methods apply to Mobile SDK versions 7.0 and earlier.
-ms.custom : android-sdk
 ---
 
 
@@ -73,11 +72,11 @@ loaded in webview </td>
 headers="ID-00003eac__entry__3">Banner Ads</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00003eac__entry__4"><div
 class="note note_note">
-<b>Note:</b> For more info on lazy load, visit
+Note: For more info on lazy load, visit
 <a
-href="lazy-load-for-ios.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/lazy-load-for-ios.html"
 class="xref" target="_blank">lazy load for iOS</a> and <a
-href="lazy-load-for-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/lazy-load-for-android.html"
 class="xref" target="_blank">Android</a> page.
 </td>
 </tr>
@@ -85,13 +84,13 @@ class="xref" target="_blank">Android</a> page.
 </table>
 
 To know more about generic impression counting, please visit <a
-href="industry-reference/impression-counting.md"
+href="https://docs.xandr.com/bundle/industry-reference/page/impression-counting.html"
 class="xref"
-target="_blank">industry-reference/impression-counting.md</a>.
+target="_blank">https://docs.xandr.com/bundle/industry-reference/page/impression-counting.html</a>.
 
 
 
-<b>Note:</b>
+Note:
 
 Viewability and impression counting are two different entities.
 Impression counting measures if an ad is served whereas viewability

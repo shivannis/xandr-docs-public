@@ -5,7 +5,6 @@ A set of two callback methods are introduced
 under NativeAdEventListener API to
 notify the publisher when an ad is about to expire and when an ad is
 actually expired. When an ad is expired then the impression doesn't get
-ms.custom : android-sdk
 ---
 
 
@@ -56,7 +55,7 @@ Settings.NATIVE_AD_ABOUT_TO_EXPIRE_INTERVAL = <time in ms>; // Example: 2 * 60 *
 
 
 
-<b>Note:</b> The variable for about to expire
+Note: The variable for about to expire
 time interval must be set before making a Native Ad request, so that the
 response can adapt to the values set in this variable. If it is not set
 explicitly, default value (60\*1000 milliseconds) will be considered.

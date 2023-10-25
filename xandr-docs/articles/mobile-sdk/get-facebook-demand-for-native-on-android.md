@@ -2,7 +2,6 @@
 Title : Get Facebook Demand for Native on Android
 Description : This document describes the process for retrieving native ad assets to
 display in Facebook's Audience Network SDK.
-ms.custom : android-sdk
 ---
 
 
@@ -62,7 +61,7 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 
 
 
-<b>Note:</b> To ensure a successful
+Note: To ensure a successful
 implementation of a native ad with `Audience Network` your custom native
 view must include <a
 href="https://developers.facebook.com/docs/audience-network/setting-up/ad-setup/android/native#mediaview"
@@ -111,7 +110,7 @@ by Facebook for setting up native banner ad custom layouts.
 
 
 
-<b>Note:</b> Hold a reference to the request
+Note: Hold a reference to the request
 until you receive a response.
 
 
@@ -277,13 +276,13 @@ class="xref" target="_blank">example app</a> on our Github repo.
 
 ## Related Topics
 
-<a href="android-sdk-integration-instructions.md" class="xref">Android
+<a href="android-sdk-integration-instructions.html" class="xref">Android
 SDK Integration Instructions</a>
 
-<a href="show-banner-native-on-android.md" class="xref">Show Banner
+<a href="show-banner-native-on-android.html" class="xref">Show Banner
 Native on Android</a>
 
-<a href="show-native-ads-on-android.md" class="xref">Show Native Ads
+<a href="show-native-ads-on-android.html" class="xref">Show Native Ads
 on Android</a>
 
 

@@ -1,7 +1,6 @@
 ---
 Title : Migrating iOS SDK v7 to 8.0
 Description : Publishers with SDK v8.0, are required to initialize
-ms.custom : ios-sdk
 ---
 
 
@@ -15,7 +14,7 @@ using Xandr Mobile Ads SDK for iOS SDK v8 , the
 init()  method must be called prior to any other SDK operations. 
 Without this initialization no Ad request would go through and the SDK
 would throw an exception.  For more information, see <a
-href="ios---sdk-initialization--v8-0-.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios---sdk-initialization--v8-0-.html"
 class="xref" target="_blank">iOS - SDK Initialization (v8.0)</a>
 
 ``` pre

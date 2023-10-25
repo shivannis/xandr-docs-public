@@ -5,7 +5,6 @@ In this example, we get the user's location from Android and pass it
 along in the ad call:
 ``` pre
 import android.location.LocationManager;
-ms.custom : android-sdk
 ---
 
 
@@ -66,7 +65,7 @@ com.appnexus.opensdk.utils.SDKSettings.setLocationEnabled(false);
 
 
 
-<b>Note:</b> This is a global setting for our
+Note: This is a global setting for our
 mobile SDK only. Keep in mind that third Party SDKs will have their own
 settings.
 

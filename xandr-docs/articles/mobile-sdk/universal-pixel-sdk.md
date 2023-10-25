@@ -1,8 +1,7 @@
 ---
 Title : Universal Pixel SDK
 Description : The <a
-href="monetize/the-universal-pixel.md"
-ms.custom : android-sdk
+href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/the-universal-pixel.html"
 ---
 
 
@@ -13,7 +12,7 @@ ms.custom : android-sdk
 
 
 The <a
-href="monetize_monetize-standard/the-universal-pixel.md"
+href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/the-universal-pixel.html"
 class="xref" target="_blank">Universal Pixel</a> provides insights into
 the interactions that users have with your website so you can easily
 segment these users and measure actions they take with a single pixel.
@@ -22,10 +21,10 @@ Universal Pixel within their apps. This section describes how to
 implement, initialize and use the Universal Pixel SDK.
 
 - <a
-  href="mobile-sdk/universal-pixel-sdk-for-ios.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/universal-pixel-sdk-for-ios.html"
   class="xref" target="_blank">Universal Pixel SDK for iOS</a>
 - <a
-  href="mobile-sdk/universal-pixel-sdk-for-android.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/universal-pixel-sdk-for-android.html"
   class="xref" target="_blank">Universal Pixel SDK for Android</a>
 
 

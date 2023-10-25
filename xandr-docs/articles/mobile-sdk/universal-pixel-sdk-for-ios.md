@@ -2,7 +2,6 @@
 Title : Universal Pixel SDK for iOS
 Description : This document provides instructions on how publishers can integrate and
 install the Universal Pixel SDK (Pixie SDK) for iOS.
-ms.custom : ios-sdk
 ---
 
 
@@ -76,7 +75,7 @@ the workspace. 
 
 
 
-<b>Note:</b> We are
+Note: We are
 distributing  PixieSDK.xcframework, which you can download <a
 href="https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip"
 class="xref" target="_blank">here</a>. Download the file and add it to
@@ -92,8 +91,8 @@ the **Frameworks** folder.
   , and select “New Group”. Name the new group
   as <strong>"Frameworks"</strong>.<br />
   <br />
-  ![Universal pixel sdk for ios - A](media/universal-pixel-sdk-for-ios-a.png)
-  <br />
+  <img src="mobile-sdk/images/universal-pixel-sdk-for-ios-1.png"
+  id="ID-00003a16__image_rks_lm4_mwb" class="image" /><br />
   <br />
   </p>
   </figure>
@@ -103,23 +102,23 @@ the **Frameworks** folder.
   Drag and drop `PixieSDK.xcframework` from Finder into the
   **Frameworks** folder. Make sure that the destination of drag is just
   under the **Frameworks**.   
-  
 
-  ![Universal pixel sdk for ios - B](media/universal-pixel-sdk-for-ios-b.png)
-  
+  <img src="mobile-sdk/images/universal-pixel-sdk-for-ios-2.png"
+  id="ID-00003a16__image_mxh_vm4_mwb" class="image" />
 
     
   Make sure the options Copy items if
   needed and Create groups are
   checked and selected for adding files. Click
   Finish.  
-  ![Universal pixel sdk for ios - C](media/universal-pixel-sdk-for-ios-c.png)
-  
+  <img src="mobile-sdk/images/universal-pixel-sdk-for-ios-3.png"
+  id="ID-00003a16__image_lhy_xm4_mwb" class="image" />  
     
 
   Once this step is completed, the result should look like below.
- ![Universal pixel sdk for ios - D](media/universal-pixel-sdk-for-ios-d.png)
-  
+
+  <img src="mobile-sdk/images/universal-pixel-sdk-for-ios-4.png"
+  id="ID-00003a16__image_jtd_1n4_mwb" class="image" />
 
 <!-- -->
 
@@ -135,8 +134,8 @@ the **Frameworks** folder.
       
 
       <figure id="ID-00003a16__fig_syd_xq4_mwb" class="fig fignone">
-      ![Universal pixel sdk for ios - E](media/universal-pixel-sdk-for-ios-e.png)
-      <p><br />
+      <p><img src="mobile-sdk/images/universal-pixel-sdk-for-ios-5.png"
+      id="ID-00003a16__image_sg1_cn4_mwb" class="image" /><br />
       </p>
       </figure>
 
@@ -165,7 +164,7 @@ fireEvent method. **
 
 
 
-<b>Note:</b> Any events being tracked prior to
+Note: Any events being tracked prior to
 initialization will be rejected.
 
 
@@ -180,7 +179,7 @@ parameters.**
 **eventName : String**
 
 **Standard Event strings are defined within the Event class. See
-the <a href="universal-pixel-sdk-for-ios.md#ID-00003a16__track"
+the <a href="universal-pixel-sdk-for-ios.html#ID-00003a16__track"
 class="xref">Standard Events</a>  section below for the
 available Standard Event strings. You also have the option to define
 Custom Event string(s) in Universal Pixel UI and use it in your app.**
@@ -195,7 +194,7 @@ optional.**
 
 
 
-<b>Note:</b> If no params are passed a nil
+Note: If no params are passed a nil
 object must still be sent if using Objective C.
 
 
@@ -259,7 +258,7 @@ headers="ID-00003a16__entry__2">Arbitrary data defined by the publisher.
 Enables the passing of custom event data through key/value pairs. Keys
 should be preregistered using Universal Pixel UI. Values can be an array
 separated by a comma. See the <a
-href="universal-pixel-sdk-for-ios.md#ID-00003a16__custom"
+href="universal-pixel-sdk-for-ios.html#ID-00003a16__custom"
 class="xref">Custom Events</a> section below for more details</td>
 </tr>
 </tbody>

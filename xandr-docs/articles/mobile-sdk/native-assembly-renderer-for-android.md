@@ -1,8 +1,7 @@
 ---
 Title : Native Assembly Renderer for Android
 Description : The native assembly renderer simplifies the use of <a
-href="show-banner-native-on-android.md"
-ms.custom : android-sdk
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-android.html"
 ---
 
 
@@ -11,10 +10,10 @@ ms.custom : android-sdk
 
 
 The native assembly renderer simplifies the use of <a
-href="mobile-sdk/show-banner-native-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-android.html"
 class="xref" target="_blank">Banner Native</a> so that it behaves like
 a <a
-href="show-banners-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-android.html"
 class="xref" target="_blank">Banner</a>. That is, you can set Native
 banners to act like web display banners. The renderer simplifies the
 process of generating Native display and allows
@@ -34,7 +33,7 @@ it is loaded.
 ## EntryPoint 
 
 Currently this feature is available only in <a
-href="show-banner-native-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-android.html"
 class="xref" target="_blank">Banner Native</a>.
 
 

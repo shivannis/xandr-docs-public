@@ -3,7 +3,6 @@ Title : Multi Ad Request for Android
 Description : ## Overview
 This page has instructions and code samples for initiating and
 configuring a `ANMultiAdRequest.` `ANMultiAdRequest` enables the user
-ms.custom : android-sdk
 ---
 
 
@@ -23,11 +22,11 @@ auctions, the results of which are returned in a single server response.
 `ANMultiAdRequest` is a concrete class and does not implement any
 interface. The class adopts the type and behavior of
 different `AdUnits` (<a
-href="show-banners-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-android.html"
 class="xref" target="_blank">banner</a>, <a
-href="show-native-ads-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-native-ads-on-android.html"
 class="xref" target="_blank">native</a>, <a
-href="show-instream-video-ads-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-instream-video-ads-on-android.html"
 class="xref" target="_blank">video</a>, etc.) using the same
 specifications of each `AdUnit` type. Custom keywords can be assigned to
 a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`.
@@ -45,7 +44,7 @@ a memberId and a `multiAdRequestListener` object as arguments in order
 for `ANMultiAdRequest` to be initialized.
 The memberId and `multiAdRequestListener` may only be set once per
 instance. An optional <a
-href="publisher-id-for-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/publisher-id-for-android.html"
 class="xref" target="_blank">Publisher ID parameter</a> can be set at
 this time. All `AdUnits` must contain the same `memberId` as the one
 passed in the initialization
@@ -55,7 +54,7 @@ a `ANMultiAdRequest` class instance is returned.
 
 
 
-<b>Note:</b> The `MultiAdRequest` instance
+Note: The `MultiAdRequest` instance
 will reject `AdUnits` with `memberId` values different from their own.
 
 
@@ -504,7 +503,7 @@ adUnit.activityOnDestroy()
 
 
 
-<b>Note:</b> As best practices :
+Note: As best practices :
 
 - All SDK methods must be called on the main thread.
 - `activityOnDestroy()` must be called for the attached AdUnits when
@@ -563,13 +562,13 @@ void onMultiAdRequestFailed(ResultCode code)
 
 ## Related Topics
 
-<a href="show-banners-on-android.md" class="xref">Show Banners on
+<a href="show-banners-on-android.html" class="xref">Show Banners on
 Android</a>
 
-<a href="show-interstitials-ads-on-ios.md" class="xref">Show
+<a href="show-interstitials-ads-on-ios.html" class="xref">Show
 Interstitials Ads on Android</a>
 
-<a href="show-instream-video-ads-on-android.md" class="xref">Show an
+<a href="show-instream-video-ads-on-android.html" class="xref">Show an
 Instream Video Ads on Android</a>
 
 

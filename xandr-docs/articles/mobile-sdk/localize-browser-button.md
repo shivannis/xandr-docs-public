@@ -3,7 +3,6 @@ Title : Localize Browser Button
 Description : When using the SDK feature to open click-through links within an in-app
 browser (in a native iOS app), you might need to localize the "OK"
 button that is displayed in the browser. To perform this localization,
-ms.custom : android-sdk
 ---
 
 

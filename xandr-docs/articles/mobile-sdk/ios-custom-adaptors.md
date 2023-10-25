@@ -2,7 +2,6 @@
 Title : iOS Custom Adaptors
 Description : Custom adaptors allow our SDK to call out to another SDK installed on
 the same device, usually for mediation. This document describes the code
-ms.custom : ios-sdk
 ---
 
 
@@ -52,9 +51,9 @@ details.
 Below is an example adaptor that mediates a fictional “Godzilla” SDK to
 show banner ads. For more information on the callbacks in this example,
 see the
-<a href="ios-custom-adaptors.md#ID-00002082__required_callbacks"
+<a href="ios-custom-adaptors.html#ID-00002082__required_callbacks"
 class="xref">Required Callbacks</a> and
-<a href="ios-custom-adaptors.md#ID-00002082__optional_callbacks"
+<a href="ios-custom-adaptors.html#ID-00002082__optional_callbacks"
 class="xref">Optional Callbacks</a> sections below.
 
 ``` pre
@@ -259,6 +258,7 @@ show an interstitial ad:
 
 
 
+<div id="ID-00002082__required_callbacks" >
 
 ## Required Callbacks
 
@@ -290,6 +290,7 @@ should call:
 
 
 
+<div id="ID-00002082__optional_callbacks" >
 
 ## Optional Callbacks
 
@@ -315,11 +316,11 @@ required.
 ## Related Topics
 
 - <a
-  href="ios-sdk-integration.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration.html"
   class="xref" target="_blank">Integrate with iOS</a>
-- <a href="mediate-with-ios.md" class="xref">Mediate with iOS</a>
+- <a href="mediate-with-ios.html" class="xref">Mediate with iOS</a>
 - <a
-  href="anjam-user-guide.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/anjam-user-guide.html"
   class="xref" target="_blank">ANJAM User Guide</a>
 
 

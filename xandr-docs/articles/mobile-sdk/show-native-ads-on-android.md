@@ -1,11 +1,10 @@
 ---
 Title : Show Native Ads on Android
-Description : <b>Note:</b> Native impression counting
+Description : Note: Native impression counting
 methodology follows the count-on-render methodology that is used for
 banner creatives - an impression will fire as soon as the native
 advertisement renders, regardless of its length of time on the
 screen. This will ensure greater accuracy and better deliverability,
-ms.custom : android-sdk
 ---
 
 
@@ -15,7 +14,7 @@ ms.custom : android-sdk
 
 
 
-<b>Note:</b> Native impression counting
+Note: Native impression counting
 methodology follows the count-on-render methodology that is used for
 banner creatives - an impression will fire as soon as the native
 advertisement renders, regardless of its length of time on the
@@ -53,7 +52,7 @@ In the example code below, we:
 
 - Optionally, you can set the `renderer_id`  for this
   `NativeAdRequest`. (For more on `renderer_id` see <a
-  href="xandr-api/native-layout-service.md"
+  href="https://docs.xandr.com/bundle/xandr-api/page/native-layout-service.html"
   class="xref" target="_blank">Native Layout Service</a>.) The
   `renderer_id` needs to be specified in order for vastxml, likes,
   downloads, saleprice, phone, address, and display URL to be returned
@@ -84,7 +83,7 @@ In the example code below, we:
 
 
 
-<b>Note:</b> Maintain references to native
+Note: Maintain references to native
 views and native response objects.
 
 Maintain references to native views and native response objects.
@@ -458,14 +457,14 @@ headers="ID-0000094b__entry__4"></td>
 ##  Related Topics
 
 - <a
-  href="android-sdk-integration-instructions.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-integration-instructions.html"
   class="xref" target="_blank">Android SDK Integration Instructions</a>
 - <a
-  href="get-facebook-demand-for-native-on-android.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/get-facebook-demand-for-native-on-android.html"
   class="xref" target="_blank">Get Facebook Demand for Native on
   Android</a>
 - <a
-  href="mediate-with-android-sdk-instructions.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
   class="xref" target="_blank">Mediate with Android SDK Instructions</a>
 
 

@@ -5,7 +5,6 @@ The Identifier for Advertisers (**IDFA**) is an Apple provided id to
 track the users for advertising purposes by the publishers who have an
 app on the Apple App Store (post getting consent from the users to do
 that). An API is introduced in Xandr mobile SDK
-ms.custom : ios-sdk
 ---
 
 

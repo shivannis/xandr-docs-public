@@ -1,8 +1,7 @@
 ---
 Title : Show Banner Native on Android
-Description : <b>Note:</b> This offering is currently in
+Description : Note: This offering is currently in
 Alpha and is subject to change.
-ms.custom : android-sdk
 ---
 
 
@@ -12,7 +11,7 @@ ms.custom : android-sdk
 
 
 
-<b>Note:</b> This offering is currently in
+Note: This offering is currently in
 Alpha and is subject to change.
 
 
@@ -125,7 +124,7 @@ multi-format `BannerAdView` is used:
   if it were returned in the traditional way by `NativeAdRequest`. In
   this case, `BannerAdView` effectively plays the same role
   as `NativeAdRequest`.
-  (See <a href="show-native-ads-on-android.md" class="xref">Show Native Ads
+  (See <a href="show-native-ads-on-android.html" class="xref">Show Native Ads
   on Android</a> for more on NativeAdResponse.)
 
 - By default, the mainImage and iconImage are not loaded. You can
@@ -151,7 +150,7 @@ native, you can use the following code example to get started:
 
 
 
-<b>Note:</b> As best practices :
+Note: As best practices :
 
 - All SDK methods must be called on the main thread.
 
@@ -312,11 +311,11 @@ native, you can use the following code example to get started:
 ## Related Topics:
 
 - <a
-  href="get-facebook-demand-for-native-on-android.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/get-facebook-demand-for-native-on-android.html"
   class="xref" target="_blank">Get Facebook Demand for Native on
   Android</a>
 - <a
-  href="native-assembly-renderer-for-android.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/native-assembly-renderer-for-android.html"
   class="xref" target="_blank">Native Assembly Renderer for Android</a>
 
 

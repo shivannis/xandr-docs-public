@@ -3,7 +3,6 @@ Title : ANJAM User Guide
 Description : The Advertiser to Native JavaScript API for Mobile, or 'ANJAM', gives
 mobile creatives access to additional features that are not provided by
 <a href="https://www.iab.net/mraid" class="xref"
-ms.custom : android-sdk
 ---
 
 
@@ -20,9 +19,10 @@ target="_blank">MRAID</a>. This includes the ability to perform
 <a href="http://en.wikipedia.org/wiki/Mobile_deep_linking" class="xref"
 target="_blank">deep linking</a>.
 
+<div id="ID-00003da1__note-a2d517e5-b940-4e84-bc06-4990536dfb51"
 
 
-<b>Note:</b> Mobile creatives running in
+Note: Mobile creatives running in
 iframes can use MRAID alongside this API.
 
 
@@ -38,9 +38,10 @@ result will need to install a function to handle the response. The
 callback function will be called with a result object whose properties
 contain the results of the function call.
 
+<div id="ID-00003da1__note-553c1756-07c6-4d0a-beba-3fe5b099dc5a"
 
 
-<b>Note:</b> All result objects will also
+Note: All result objects will also
 contain a `result.caller` property with the value of the calling
 function's name (for example: `DeepLink` or `GetDeviceID`).
 
@@ -48,7 +49,7 @@ function's name (for example: `DeepLink` or `GetDeviceID`).
 
 
 
-<b>Tip:</b> Using ANJAM/MRAID from within an
+Tip: Using ANJAM/MRAID from within an
 iframe
 
 
@@ -294,7 +295,8 @@ function onSDKReady() {
 #pc { position: relative; width: 300px; height: 300px; overflow: hidden; }
 </style>
 
-        <a href="https://www.reddit.com/r/cats/"><img src="media/600" width="300" height="600"><
+<div id="pc">
+        <a href="https://www.reddit.com/r/cats/"><img src="http://placekitten.com/300/600" width="300" height="600"><
 /img></a>
 
 ```
@@ -331,16 +333,16 @@ ExampleGetCustomKeywords();
 ## Related Topics
 
 <a
-href="xandr-mobile-sdks.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
 class="xref" target="_blank">Xandr Mobile
 SDKs</a>
 
 <a
-href="ios-sdk-integration.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration.html"
 class="xref" target="_blank">Integrate with iOS</a>
 
 <a
-href="android-sdk-integration-instructions.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-integration-instructions.html"
 class="xref" target="_blank">Integrate with Android</a>
 
 

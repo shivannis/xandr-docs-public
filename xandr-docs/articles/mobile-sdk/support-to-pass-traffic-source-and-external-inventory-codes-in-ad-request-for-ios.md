@@ -3,7 +3,6 @@ Title : Support to Pass Traffic Source and External Inventory Codes in Ad Reques
 Description : ## Overview - External Inventory Code
 An external inventory code provides publishers the ability to break out
 data on their inventory more granularly than the placement level.  The
-ms.custom : ios-sdk
 ---
 
 
@@ -21,7 +20,7 @@ value can be passed via the `ext_inv_code`` `field of the request body
 using the `extInvCode` property, but must be entered into the system
 before it is logged and available as a dimension in relevant reporting.
 For more information, see <a
-href="xandr-api/external-inventory-code-service.md"
+href="https://docs.xandr.com/bundle/xandr-api/page/external-inventory-code-service.html"
 class="xref" target="_blank">External Inventory Code Service</a>.  In
 short, this property allows you to pass the predefined external
 inventory codes on ad calls and then report on them.

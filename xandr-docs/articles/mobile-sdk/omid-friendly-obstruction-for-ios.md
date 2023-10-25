@@ -4,7 +4,6 @@ Description : The Open Measurement Software Development Kit (OM SDK) is designed
 facilitate third party viewability and verification measurement for ads
 served to mobile app environments without requiring multiple Ad
 Verification Service Providers (Measurement Provider) SDKs.
-ms.custom : ios-sdk
 ---
 
 
@@ -162,7 +161,7 @@ Interstitial and Video)**
 
 
 
-<b>Note:</b> Native AdUnits does not support
+Note: Native AdUnits does not support
 remove API
 
 
@@ -191,7 +190,7 @@ Interstitial and Video)**
 
 
 
-<b>Note:</b> Native AdUnits does not support
+Note: Native AdUnits does not support
 remove API
 
 

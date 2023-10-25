@@ -2,7 +2,6 @@
 Title : Configure SDK Logging on Android
 Description : This page has instructions for turning logging on and off, and for
 setting logging levels.
-ms.custom : android-sdk
 ---
 
 
@@ -21,10 +20,10 @@ Android logging system properties. For more information, see the section
 below that corresponds to your SDK version.
 
 - <a
-  href="mobile-sdk/configure-sdk-logging-on-android.md#ConfigureSDKLoggingonAndroid-RC1-21andup"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/configure-sdk-logging-on-android.html#ConfigureSDKLoggingonAndroid-RC1-21andup"
   class="xref" target="_blank">RC 1.21 and up</a>
 - <a
-  href="mobile-sdk/configure-sdk-logging-on-android.md#ConfigureSDKLoggingonAndroid-RC1-20andbelow"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/configure-sdk-logging-on-android.html#ConfigureSDKLoggingonAndroid-RC1-20andbelow"
   class="xref" target="_blank">RC 1.20 and below</a>
 
 

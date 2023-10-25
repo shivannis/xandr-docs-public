@@ -2,7 +2,6 @@
 Title : Show Interstitials on Android
 Description : This page has instructions and code samples for showing interstitial ads
 on Android.
-ms.custom : android-sdk
 ---
 
 
@@ -15,7 +14,7 @@ on Android.
 
 
 
-<b>Note:</b> Interstitial Ad Views and
+Note: Interstitial Ad Views and
 Placement/Creative Media Types
 
 Most of the time, the placements used in your SDK interstitial ad views
@@ -25,14 +24,14 @@ you the maximum amount of demand. You may still choose the
 e.g.:
 
 - <a
-  href="ad-ops---set-up-mraid-full-screen-interstitials.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ad-ops---set-up-mraid-full-screen-interstitials.html"
   class="xref" target="_blank">Ad Ops - Set Up MRAID Full Screen
   Interstitials</a>
 - <a
-  href="ad-ops---set-up-static-image-full-screen-interstitials.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ad-ops---set-up-static-image-full-screen-interstitials.html"
   class="xref" target="_blank">Ad Ops - Set Up Static Image Full Screen
   Interstitials</a>
-- <a href="ad-ops-set-up-html-responsive-interstitials-non-mraid.md"
+- <a href="ad-ops-set-up-html-responsive-interstitials-non-mraid.html"
   class="xref">Ad Ops - Set Up HTML Responsive Interstitials
   (non-MRAID)</a>
 
@@ -83,7 +82,7 @@ For more information, see the code sample below.
 
 
 
-<b>Note:</b> Beginning with version RC2.8, you
+Note: Beginning with version RC2.8, you
 can also use an inventory code and member ID to request an ad (placement
 ID is still supported). Currently this is only available from Java (not
 XML). Note that if both inventory code and placement ID are passed in,
@@ -99,7 +98,7 @@ adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
 
 
 
-<b>Note:</b> As best practices :
+Note: As best practices :
 
 - All SDK methods must be called on the main thread.
 - `activityOnDestroy()` must be called for the Interstitial that is

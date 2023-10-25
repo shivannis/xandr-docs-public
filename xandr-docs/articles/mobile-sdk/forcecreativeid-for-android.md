@@ -2,7 +2,6 @@
 Title : forceCreativeId for Android
 Description : A forceCreativeId specifies the ID of a creative that should be forced
 to appear in a placement. It is used to request for the desired creative
-ms.custom : android-sdk
 ---
 
 

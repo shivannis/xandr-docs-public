@@ -3,7 +3,6 @@ Title : SDK Privacy for iOS
 Description : Xandr's mobile SDKs include client support for
 Global Privacy Platform (GPP), the
 <a href="https://gdpr-info.eu/" class="xref" target="_blank">General
-ms.custom : ios-sdk
 ---
 
 
@@ -27,9 +26,10 @@ to adapt to regulatory demands across markets. 
 
 
 
+<div id="ID-00003689__note_zlc_vbs_lwb"
 class="note warning note_warning">
 
-<b>Warning:</b> This resource should not be
+Warning: This resource should not be
 construed as legal advice and Xandr makes no
 guarantees about compliance with any law or regulation.  Please note
 that because every company and its collection, use, and storage of
@@ -49,8 +49,9 @@ include privacy-specific obligations of which you should be aware.
 
 
 
+<div id="ID-00003689__note_v2b_xcs_lwb" 
 
-<b>Note:</b> Publishers are responsible for
+Note: Publishers are responsible for
 providing notice, transparency, and choice and for collecting consent
 from their users in accordance
 with <a href="https://iabeurope.eu/transparency-consent-framework/"
@@ -131,8 +132,9 @@ and the SDK will read the values as a fallback.
 [ANGDPRSettings setPurposeConsents:@"10101001"];
 ```
 
+<div id="ID-00003689__note_lvj_gds_lwb" 
 
-<b>Note:</b> To ensure proper monetization and
+Note: To ensure proper monetization and
 relevant targeting, the SDK should be enabled to send the device
 information. Setting the `consentRequired` and `purposeConsents` flag
 correctly will help ensure proper device information is sent. Refer to
@@ -279,8 +281,9 @@ the following:
   cases.  
     
 
+<div id="ID-00003689__note_q4s_pds_lwb" 
 
-<b>Note:</b> If a Publisher chooses to remove
+Note: If a Publisher chooses to remove
 a CMP SDK from their app they are responsible for clearing all
 IABGPP\_\* vestigial values for users so that vendors do not continue to
 use the GPP data therein.

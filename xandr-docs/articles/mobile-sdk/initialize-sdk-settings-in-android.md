@@ -4,7 +4,6 @@ Description : ## Overview
 SDKSettings in Xandr Mobile SDK is a API that
 can be called to activate OMID, fetch User Agent and AAID (Google
 Advertising ID) for devices. The initialization `init()` method passes
-ms.custom : android-sdk
 ---
 
 

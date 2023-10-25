@@ -1,8 +1,7 @@
 ---
 Title : Show Banner Native on iOS
-Description : <b>Note:</b> This offering is currently in
+Description : Note: This offering is currently in
 Alpha and is subject to change.
-ms.custom : ios-sdk
 ---
 
 
@@ -12,7 +11,7 @@ ms.custom : ios-sdk
 
 
 
-<b>Note:</b> This offering is currently in
+Note: This offering is currently in
 Alpha and is subject to change.
 
 
@@ -102,7 +101,7 @@ multi-format `ANBannerAdView` is used:
 
   
 
-  <b>Note:</b> As per new enhancements, the
+  Note: As per new enhancements, the
   `RendererId` is set from the Console instead of it passing from the
   SDK. Hence, the deprecated message to use `shouldAllowNativeDemand`
   property is shown in the code block.
@@ -123,7 +122,7 @@ multi-format `ANBannerAdView` is used:
   traditional native response class.  In this
   case, `ANBannerAdView` effectively plays the same role
   as ANNativeAdRequest. (See <a
-  href="mobile-sdk/show-native-ads-on-ios.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-native-ads-on-ios.html"
   class="xref" target="_blank">Show Native Ads on iOS</a> for more
   on ANNativeAdResponse.)
 
@@ -243,10 +242,10 @@ without using the adDidReceiveAd : delegate method:
 ## Related Topics: 
 
 - <a
-  href="mobile-sdk/show-banners-on-ios.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-ios.html"
   class="xref" target="_blank">Show Banners on iOS</a>
 - <a
-  href="mobile-sdk/native-assembly-renderer-on-ios.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/native-assembly-renderer-on-ios.html"
   class="xref" target="_blank">Native Assembly Renderer on iOS</a>
 
 

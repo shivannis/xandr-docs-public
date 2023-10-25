@@ -1,7 +1,6 @@
 ---
 Title : Show Banners on iOS
 Description : This page has instructions and code samples for showing banner ads.
-ms.custom : ios-sdk
 ---
 
 
@@ -23,7 +22,7 @@ native browser.
 
 
 
-<b>Note:</b> You can use member ID and
+Note: You can use member ID and
 inventory code instead of a placement ID
 
 The banner code sample below shows how to request ads using the

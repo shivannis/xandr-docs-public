@@ -1,9 +1,8 @@
 ---
 Title : Mediate with Android SDK Instructions
-Description : <b>Note:</b>
+Description : Note:
 Android Studio and Gradle
 These instructions assume you are using Android Studio and Gradle. Most
-ms.custom : android-sdk
 ---
 
 
@@ -13,7 +12,7 @@ ms.custom : android-sdk
 
 
 
-<b>Note:</b>
+Note:
 
 Android Studio and Gradle
 
@@ -124,7 +123,7 @@ dependencies {
 
 
 
-<b>Warning:</b>
+Warning:
 
 Do **not** modify the mediation adaptors' `build.gradle` files. This may
 break the build.
@@ -142,17 +141,17 @@ for mediation, including code samples (when special setup is required)
 and links to that SDK's documentation.
 
 - <a
-  href="mediate-with-android-sdk-instructions.md#MediatewithAndroidSDKInstructions-AdMob"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html#MediatewithAndroidSDKInstructions-AdMob"
   class="xref" target="_blank">AdMob</a>
 - <a
-  href="mediate-with-android-sdk-instructions.md#MediatewithAndroidSDKInstructions-SmartAdServer"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html#MediatewithAndroidSDKInstructions-SmartAdServer"
   class="xref" target="_blank">SmartAdServer</a>
 
 **AdMob**
 
 
 
-<b>Note:</b>
+Note:
 
 For Mobile SDK 7.22 or above, mediating with Google Ad Mob version will
 require an explicit dependency on `androidx.work:work-runtime:2.7.0` to
@@ -179,12 +178,12 @@ dependencies {
 
 
 
-<b>Warning:</b>
+Warning:
 
 Lifecycle Callbacks Required
 
 When mediating AdMob/DFP banners, you must add lifecycle callbacks to
-your code as described in the section below: **Implementation <b>Note:</b>
+your code as described in the section below: **Implementation Note:
 Forwarding Lifecycle Callbacks**, as we need to forward the lifecycle
 callbacks to the AdMob/DFP banner as required by them. For more
 information about activity lifecycles, see <a
@@ -192,7 +191,7 @@ href="https://developer.android.com/training/basics/activity-lifecycle/index.htm
 class="xref" target="_blank">Managing the Activity Lifecycle</a> in the
 Android docs.
 
-**Implementation <b>Note:</b> Forwarding Lifecycle Callbacks**
+**Implementation Note: Forwarding Lifecycle Callbacks**
 
 
 
@@ -229,7 +228,7 @@ abstract public void activityOnResume();
 
 
 
-<b>Note:</b>
+Note:
 
 Starting with v5.1 of the SDK, the AdMob Native Mediation adapter code
 was modified support the
@@ -316,7 +315,7 @@ target="_blank">https://developer.huawei.com/repo/</a>' }
 
 
 
-<b>Warning:</b> Interstitials
+Warning: Interstitials
 
 If you are using SmartAdServer interstitial, be aware that
 `SASInterstitialView` does not have `loadAd()` and `showAd()` methods
@@ -361,7 +360,7 @@ set up in  with:
 - **Media Type**: Banner
 
 For more instructions on creating placements, see <a
-href="monetize/create-a-placement.md"
+href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/create-a-placement.html"
 class="xref" target="_blank">Create a Placement</a> in the Monetize
 documentation.
 
@@ -370,7 +369,7 @@ in your ad calls using the `promo_sizes` placement tag parameter.
 
 For instructions on passing custom interstitial sizes, see "Using Custom
 Interstitial Sizes" in the <a
-href="show-interstitials-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-on-android.html"
 class="xref" target="_blank">Show Interstitials on Android</a>
 documentation.
 
@@ -385,11 +384,11 @@ of popular mobile ad networks. If you want to mediate a network it
 doesn't support, you'll need to:
 
 - Write a <a
-  href="mobile-sdk/android-custom-adaptors.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/android-custom-adaptors.html"
   class="xref" target="_blank">custom mediation adaptor</a> that lets
   our SDK receive events from the SDK you want to mediate.
 - Set up a **Custom Mobile Network** using the instructions in <a
-  href="mobile-sdk/mediate-with-android-sdk-instructions.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
   class="xref" target="_blank">Add a Network</a>.
 
 
@@ -398,9 +397,9 @@ doesn't support, you'll need to:
 
 ## Related Topics
 
-- <a href="android-sdk-integration-instructions.md" class="xref">Android
+- <a href="android-sdk-integration-instructions.html" class="xref">Android
   SDK Integration Instructions</a>
-- <a href="android-custom-adaptors.md" class="xref">Android Custom
+- <a href="android-custom-adaptors.html" class="xref">Android Custom
   Adaptors</a>
 
 

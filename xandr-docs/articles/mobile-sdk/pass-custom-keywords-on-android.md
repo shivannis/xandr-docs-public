@@ -2,7 +2,6 @@
 Title : Pass Custom Keywords on Android
 Description : Custom keywords are used to attach arbitrary key-value pairs to the
 request body of the ad call. These can be used for several purposes,
-ms.custom : android-sdk
 ---
 
 
@@ -15,11 +14,11 @@ request body of the ad call. These can be used for several purposes,
 including:
 
 - Custom campaign targeting options (see <a
-  href="xandr-api/custom-key-value-targeting.md"
+  href="https://docs.xandr.com/bundle/xandr-api/page/custom-key-value-targeting.html"
   class="xref" target="_blank">Key-Value Targeting</a> for more
   information)
 - Reporting (see <a
-  href="xandr-api/key-value-analytics-report.md"
+  href="https://docs.xandr.com/bundle/xandr-api/page/key-value-analytics-report.html"
   class="xref" target="_blank">Key Value Analytics Report</a>)
 
 The following line of code adds a single key-value pair to the JSON body

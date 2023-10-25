@@ -1,7 +1,6 @@
 ---
 Title : Android SDK Initialization v8.0
 Description : Publishers with Android SDK v8.0, are required to initialize
-ms.custom : android-sdk
 ---
 
 
@@ -32,9 +31,10 @@ and the SDK would throw an exception.
 public static void init(int memberId, Context context, boolean preCacheContent, final InitListener initListener)
 ```
 
+<div id="ID-000003fd__note-bb8422bc-3439-412f-ad39-f06da3f5a37a"
 
 
-<b>Note:</b> This below method is available
+Note: This below method is available
 post v8.4
 
 

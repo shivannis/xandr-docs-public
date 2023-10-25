@@ -1,7 +1,6 @@
 ---
 Title : iOS SDK Integration Instructions
 Description : This page describes how to integrate our SDK with your project. Follow
-ms.custom : ios-sdk
 ---
 
 
@@ -12,7 +11,7 @@ ms.custom : ios-sdk
 This page describes how to integrate our SDK with your project. Follow
 the instructions in this page to set up our SDK to show ads in your app.
 For instructions on showing different ad types, see our various <a
-href="mobile-sdk/ios-sdk-ad-units.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-ad-units.html"
 class="xref" target="_blank">ad unit</a> pages. 
 
 
@@ -24,9 +23,10 @@ class="xref" target="_blank">ad unit</a> pages. 
   Xandr placement ID. 
 - Configure App Transport Security (ATS).
 
+<div id="ID-00001ded__app_transport_security"
 
 
-<b>Note:</b>
+Note:
 
 App Transport Security
 
@@ -50,7 +50,7 @@ the `info.plist` file of each app which contains our SDK:
  If you are using v2.13 or greater of our SDK and would like to show
 only ATS-compliant ads, you can enable HTTPS ads in your app using the
 instructions in <a
-href="request-ads-over-https-on-ios.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/request-ads-over-https-on-ios.html"
 class="xref" target="_blank">Request Ads over HTTPS</a>.
 
 
@@ -136,7 +136,7 @@ installed Carthage:
 
   
 
-  <b>Tip:</b> You can use editor's other than
+  Tip: You can use editor's other than
   Xcode to edit the Cartfile but be aware that other editing programs
   such as TextEdit might automatically include smart quotes instead of
   straight quotes. Carthage will not recognize content within smart
@@ -177,8 +177,8 @@ installed Carthage:
   Click on **Add Files to "Project Name**". 
 
 <figure class="fig fignone">
-![ios sdk integration instructions-Part A](media/ios-sdk-integration-instructions-a.png)
-
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-1.png"
+class="image" width="900" /></p>
 <ul>
 <li>Go to AppNexusSDK project folder and select
 the <strong>AppNexusSDK.Xcodeproj</strong>. Make sure to select <span
@@ -187,18 +187,25 @@ class="ph uicontrol">Add.</li>
 </ul>
 </figure>
 
-![ios sdk integration instructions-Part B](media/ios-sdk-integration-instructions-b.png)
-
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-2.png"
+class="image" width="900" /></p>
 <ul>
 <li>Click Link Binary With
 Libraries (Target-&gt;General-&gt;Link Binary With Libraries) and
 select <strong>AppNexusSDK.framework</strong>.</li>
 </ul>
 </figure>
-![ios sdk integration instructions-Part C](media/ios-sdk-integration-instructions-c.png)
 
-![ios sdk integration instructions-Part D](media/ios-sdk-integration-instructions-d.png)
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-3.png"
+class="image" width="900" /></p>
+</figure>
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-4.png"
+class="image" width="900" /></p>
+</figure>
 
 **XCFramework**
 
@@ -220,8 +227,10 @@ select <strong>AppNexusSDK.framework</strong>.</li>
   Binaries (Target- \> General-
   \> Embedded Binaries) section
   by clicking the **+ icon**.
- ![ios sdk integration instructions-Part E](media/ios-sdk-integration-instructions-e.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-5.png"
+class="image" width="900" height="519" /></p>
 <ul>
 <li>Select Add Files from the
 drop-down and navigate to location where you have the
@@ -230,15 +239,19 @@ and <strong>OMSDK_AppNexus.xcframework</strong>
 folders.</li>
 </ul>
 </figure>
- ![ios sdk integration instructions-Part F](media/ios-sdk-integration-instructions-f.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-6.png"
+class="image" width="900" /></p>
 <ul>
 <li>Select the unzipped folders and click <span
 class="ph uicontrol">Open.</li>
 </ul>
 </figure>
- ![ios sdk integration instructions-Part G](media/ios-sdk-integration-instructions-g.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-7.png"
+class="image" width="900" height="519" /></p>
 <ul>
 <li>The added <strong>AppNexusSDK.xcframework</strong>
 and <strong>OMSDK_AppNexus.xcframework</strong>
@@ -246,8 +259,11 @@ would be visible under the Framework,
 Libraries, and Embedded Content section.</li>
 </ul>
 </figure>
- ![ios sdk integration instructions-Part H](media/ios-sdk-integration-instructions-h.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-8.png"
+class="image" width="900" /></p>
+</figure>
 
 **Swift Package Manager**
 
@@ -261,8 +277,10 @@ Libraries, and Embedded Content section.</li>
 - Open the app’s Xcode project or
   workspace. Select Project → Swift
   Package and Click on **+ icon**.
- ![ios sdk integration instructions-Part I](media/ios-sdk-integration-instructions-i.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-9.png"
+class="image" width="900" /></p>
 <ul>
 <li>Paste the Github URL <a
 href="https://github.com/appnexus/mobile-sdk-ios.git" class="xref"
@@ -273,8 +291,10 @@ Repository page and click <span
 class="ph uicontrol">Next.</li>
 </ul>
 </figure>
-![ios sdk integration instructions-Part J](media/ios-sdk-integration-instructions-j.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-10.png"
+class="image" width="900" /></p>
 <ul>
 <li>Select the appropriate version from the drop-down (checked in <a
 href="https://github.com/appnexus/mobile-sdk-ios/releases" class="xref"
@@ -282,16 +302,20 @@ target="_blank">Github Releases page</a> as mentioned earlier) and click
 Next.</li>
 </ul>
 </figure>
-![ios sdk integration instructions-Part K](media/ios-sdk-integration-instructions-k.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-11.png"
+class="image" width="900" /></p>
 <ul>
 <li>Select the applicable <strong>Package Product</strong> and
 click Finish to complete the
 setup.</li>
 </ul>
 </figure>
-![ios sdk integration instructions-Part L](media/ios-sdk-integration-instructions-l.png)
 
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-12.png"
+class="image" width="900" /></p>
 <ul>
 <li>The added <strong>AppNexusSDK</strong> package would be visible
 under the Framework, Libraries, and Embedded
@@ -299,13 +323,14 @@ Content section.</li>
 </ul>
 </figure>
 
-![ios sdk integration instructions-Part M](media/ios-sdk-integration-instructions-m.png)
-
+<figure class="fig fignone">
+<p><img src="mobile-sdk/images/ios-sdk-integration-instructions-13.png"
+class="image" width="900" height="521" /></p>
 <p><strong>Step 2. Set up for mediation (optional)</strong></p>
 </figure>
 
 For instructions on getting set up for mediation, see <a
-href="mobile-sdk/mediate-with-ios.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-ios.html"
 class="xref" target="_blank">Mediate with iOS</a>.
 
 
@@ -314,9 +339,9 @@ class="xref" target="_blank">Mediate with iOS</a>.
 
 ## Related Topics
 
-<a href="show-banners-on-ios.md" class="xref">Show Banners</a>
+<a href="show-banners-on-ios.html" class="xref">Show Banners</a>
 
-<a href="show-interstitials-ads-on-ios.md" class="xref">Show
+<a href="show-interstitials-ads-on-ios.html" class="xref">Show
 Interstitials</a>
 
 

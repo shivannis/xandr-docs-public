@@ -1,8 +1,8 @@
 ---
 Title : iOS SDK Release Notes
-Description : <b>Note:</b>
-Please visit <a href="https://github.com/appnexus/mobile-sdk-ios/releases"
-ms.custom : ios-sdk
+Description : Note:
+Please
+visit <a href="https://github.com/appnexus/mobile-sdk-ios/releases"
 ---
 
 
@@ -12,7 +12,7 @@ ms.custom : ios-sdk
 
 
 
-<b>Note:</b>
+Note:
 
 Please
 visit <a href="https://github.com/appnexus/mobile-sdk-ios/releases"

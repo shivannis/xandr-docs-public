@@ -2,7 +2,6 @@
 Title : Show Instream Video Ads on iOS
 Description : This page describes how to use the SDK to fetch and display instream
 video ads.
-ms.custom : ios-sdk
 ---
 
 
@@ -22,7 +21,7 @@ the <a href="https://github.com/appnexus/mobile-sdk-ios/releases/tag/3.0"
 class="xref" target="_blank">version 3.0 release</a>, the SDK has
 instream video support. For instructions on how to integrate the SDK,
 see <a
-href="ios-sdk-integration-instructions.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration-instructions.html"
 class="xref" target="_blank">Integrate the SDK</a>
 
 
@@ -212,7 +211,7 @@ user, you must provide appropriate interface options to the user.
 
 
 
-<b>Note:</b> Video Playback Controls
+Note: Video Playback Controls
 
 In iOS, it is idiomatic to use the transport controls provided by
 `AVPlayerViewController` with property `showsPlaybackControls`. This

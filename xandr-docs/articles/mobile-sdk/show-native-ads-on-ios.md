@@ -2,7 +2,6 @@
 Title : Show Native Ads on iOS
 Description : Native ads give you the ability to create ads that are customized to
 match the look and feel of the rest of your application. This page
-ms.custom : ios-sdk
 ---
 
 
@@ -23,7 +22,7 @@ Native networks supported through **mediation**:
 
 
 
-<b>Note:</b> Maintain references to request
+Note: Maintain references to request
 and response objects!
 
 Maintain references to request and response objects!
@@ -42,7 +41,7 @@ below, we:
   placement ID and whether to pre-load the ad's icon image.
 - Optionally, set the renderer_id for this NativeAdRequest. (For more on
   renderer_id see <a
-  href="xandr-api/native-layout-service.md"
+  href="https://docs.xandr.com/bundle/xandr-api/page/native-layout-service.html"
   class="xref" target="_blank">Native Layout Service</a>.) The
   renderer_id needs to be specified for vastxml, likes, downloads,
   saleprice, phone, address, display URL to be returned in the
@@ -365,8 +364,8 @@ headers="ID-0000235c__entry__4"></td>
 
 ## Related Topics
 
-- <a href="ios-sdk-integration.md" class="xref">Integrate with iOS</a>
-- <a href="mediate-with-ios.md" class="xref">Mediate with iOS</a>
+- <a href="ios-sdk-integration.html" class="xref">Integrate with iOS</a>
+- <a href="mediate-with-ios.html" class="xref">Mediate with iOS</a>
 
 
 

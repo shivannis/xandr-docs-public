@@ -1,7 +1,6 @@
 ---
 Title : Add A Transition Animation on Android
 Description : By default this feature is disabled. Enable banner ad transition
-ms.custom : android-sdk
 ---
 
 

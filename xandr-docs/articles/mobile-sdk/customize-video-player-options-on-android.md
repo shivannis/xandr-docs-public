@@ -10,7 +10,6 @@ To show or hide the ClickThrough control on the video player:
 private boolean showClickThroughControl = false;
 ```
 The default is true.  Setting it to false will make the entire video
-ms.custom : android-sdk
 ---
 
 

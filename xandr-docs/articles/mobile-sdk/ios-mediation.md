@@ -2,7 +2,6 @@
 Title : iOS Mediation
 Description : Mediation lets you sell ad impressions through multiple networks to
 generate more revenue. This is initiated by your main (mediating) SDK
-ms.custom : ios-sdk
 ---
 
 
@@ -39,13 +38,13 @@ release.
 <tbody class="tbody">
 <tr class="odd row">
 <td class="entry" headers="ID-00001f77__entry__1"><a
-href="mediate-with-ios.md" class="xref">Mediate with iOS SDK</a></td>
+href="mediate-with-ios.html" class="xref">Mediate with iOS SDK</a></td>
 <td class="entry" headers="ID-00001f77__entry__2">How to mediate with
 networks and media types.</td>
 </tr>
 <tr class="even row">
 <td class="entry" headers="ID-00001f77__entry__1"><a
-href="ios-custom-adaptors.md" class="xref">iOS Custom
+href="ios-custom-adaptors.html" class="xref">iOS Custom
 Adapters</a></td>
 <td class="entry" headers="ID-00001f77__entry__2">How to call out to
 another SDK installed on the same device.</td>

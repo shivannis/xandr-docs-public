@@ -4,7 +4,6 @@ Description : ## Overview
 An API is introduced in Xandr mobile SDK to set
 the mode of execution of AdRequests as test mode for debugging or
 testing purpose. By default, the mode of execution of AdRequests is set
-ms.custom : android-sdk
 ---
 
 

@@ -3,7 +3,6 @@ Title : Add Targeting Parameters on iOS
 Description : ## User location
 In this snippet, we create an `ANLocation` object and set its latitude
 and longitude. We also set the horizontal accuracy, which is the size of
-ms.custom : android-sdk
 ---
 
 
@@ -42,7 +41,7 @@ banner.location = an_loc;
 
 
 
-<b>Note:</b>  Developers should ensure
+Note:  Developers should ensure
 adequate consent is obtained before sharing location information.
 Developers can control whether location is collected and sent by the
 SDK.

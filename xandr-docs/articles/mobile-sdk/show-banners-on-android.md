@@ -2,7 +2,6 @@
 Title : Show Banners on Android
 Description : This page has instructions and code samples for showing banner ads on
 Android.
-ms.custom : android-sdk
 ---
 
 
@@ -22,7 +21,7 @@ the two. The XML and Java equivalents are listed below.
   Example: `"123456"`.
   
 
-  <b>Note:</b> Beginning with version RC2.8,
+  Note: Beginning with version RC2.8,
   you can also use an inventory code and member ID to request an ad
   (placement ID is still supported). Currently this is only available
   from Java (not XML). Note that if both inventory code and placement ID
@@ -65,7 +64,7 @@ PLACEMENT ID"* below with an active placement ID.
 
 
 
-<b>Note:</b> If you're using both XML and Java
+Note: If you're using both XML and Java
 (`loadAd`) to define `BannerAdView`, define `auto_refresh_interval` in
 *either* XML or Java. Do not define `auto_refresh_interval` in both.
 
@@ -101,7 +100,7 @@ native browser.
 
 
 
-<b>Note:</b> As best practices :
+Note: As best practices :
 
 - All SDK methods must be called on the main thread.
 - `activityOnDestroy()` must be called for the BannerAdView that is

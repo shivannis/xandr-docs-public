@@ -2,7 +2,6 @@
 Title : Control Landing Page Load Visibility on iOS
 Description : This page has instructions for configuring the landing page load
 behavior on ad clicks. By default, the landing page loads in the
-ms.custom : ios-sdk
 ---
 
 
@@ -19,7 +18,7 @@ unrendered landing page. 
 
 
 
-<b>Note:</b> If you're consistently
+Note: If you're consistently
 experiencing slow clickthrough rates, try setting this property to false
 (Android) or NO (iOS).
 

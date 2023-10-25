@@ -3,7 +3,6 @@ Title : Listener for AdAboutToExpire on iOS
 Description : A set of two callback methods is introduced under
 **ANNativeAdDelegate** API to notify the publisher when an ad is about
 to expire and when an ad is actually expired. When an ad is expired, the
-ms.custom : ios-sdk
 ---
 
 
@@ -74,7 +73,7 @@ interval of ad expiry in seconds</td>
 
 
 
-<b>Note:</b>
+Note:
 
 The property for about to expire time interval must be set before making
 a Native Ad request, so that the response can adapt to the values set in

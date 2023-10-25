@@ -1,7 +1,6 @@
 ---
 Title : Set Reserve Prices on Android
 Description : The reserve price is the minimum bid amount you'll accept to show an ad.
-ms.custom : android-sdk
 ---
 
 
@@ -14,8 +13,9 @@ This setting should be used with caution, as it can cause you to show
 significantly fewer ads (or none at all), which will negatively affect
 your app's monetization.
 
+<div id="ID-00001839__note_egh_dfs_lwb" 
 
-<b>Note:</b> This API must be called
+Note: This API must be called
 before `loadAd` method if you want to set a reserve price on an
 impression. The price set here will be used in the auction logic.
 

@@ -5,7 +5,6 @@ The Open Measurement Software Development Kit (OM SDK) is designed to
 facilitate third party viewability and verification measurement for ads
 served to mobile app environments without requiring multiple Ad
 Verification Service Providers (Measurement Provider) SDKs.
-ms.custom : android-sdk
 ---
 
 
@@ -95,7 +94,7 @@ public static void registerTracking(final NativeAdResponse response, final View 
 
 
 
-<b>Note:</b> Native AdUnits does not support
+Note: Native AdUnits does not support
 remove API
 
 
@@ -129,7 +128,7 @@ videoAd.removeFriendlyObstruction(view);
 
 
 
-<b>Note:</b> Native AdUnits does not support
+Note: Native AdUnits does not support
 remove API
 
 

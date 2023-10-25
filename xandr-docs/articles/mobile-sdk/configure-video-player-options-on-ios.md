@@ -10,7 +10,6 @@ To show or hide the ClickThru control:
 @property (nonatomic,assign) BOOL showClickThruControl;
 ```
 The default is YES. NO makes the entire video clickable.
-ms.custom : ios-sdk
 ---
 
 

@@ -2,7 +2,6 @@
 Title : forceCreativeId for iOS
 Description : A forceCreativeId specifies the ID of a creative that should be forced
 to appear in a placement. It is used to request for the desired creative
-ms.custom : ios-sdk
 ---
 
 
@@ -18,7 +17,7 @@ available for banner, interstitial, native and InstreamVideo creatives.
 
 
 
-<b>Note:</b> The scope of the forceCreativeId
+Note: The scope of the forceCreativeId
 is limited to debug or testing purposes. You should never use it in a
 production environment. 
 

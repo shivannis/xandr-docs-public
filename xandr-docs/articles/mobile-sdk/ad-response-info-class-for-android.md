@@ -2,7 +2,6 @@
 Title : Ad Response Info Class for Android
 Description : The adResponseInfo class is a convenience class created to
 hold Universal Tag response properties that are relevant to publishers.
-ms.custom : android-sdk
 ---
 
 
@@ -76,7 +75,7 @@ class="pre codeblock"><code>tagId</code></pre></td>
 <td class="entry" headers="ID-00000b3e__entry__3">A unique identifier
 for the placement tag associated with the response.
 
-<b>Note:</b> This may also be referred to as
+Note: This may also be referred to as
 placementId in some instances of code.
 </td>
 </tr>
@@ -178,7 +177,7 @@ override fun onAdLoaded(ad: AdView?) {
 
 
 
-<b>Note:</b> `AdResponseInfo` can be retrieved
+Note: `AdResponseInfo` can be retrieved
 using Video Ad instance, Interstitial Ad View instance and Native Ad
 Response also apart from Banner Ad View.
 

@@ -1,8 +1,7 @@
 ---
 Title : Background Threading on Android
-Description : <b>Tip:</b> This offering is currently in
+Description : Tip: This offering is currently in
 Alpha and is subject to change.
-ms.custom : android-sdk
 ---
 
 
@@ -12,7 +11,7 @@ ms.custom : android-sdk
 
 
 
-<b>Tip:</b> This offering is currently in
+Tip: This offering is currently in
 Alpha and is subject to change.
 
 The Background Threading feature enables MobileSDK to execute the ad

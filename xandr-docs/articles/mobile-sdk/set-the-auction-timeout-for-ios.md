@@ -2,7 +2,6 @@
 Title : Set the Auction Timeout for iOS
 Description : The setAuctionTimeout property defines the time period, in milliseconds,
 to wait for a bidder to respond to a bid request. If the bidder fails to
-ms.custom : ios-sdk
 ---
 
 

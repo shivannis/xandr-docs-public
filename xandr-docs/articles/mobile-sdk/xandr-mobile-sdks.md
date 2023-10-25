@@ -2,7 +2,6 @@
 Title : Xandr Mobile SDKs
 Description : Xandr's Mobile SDKs give app developers a fast,
 convenient way to monetize their apps.
-ms.custom : android-sdk
 ---
 
 
@@ -58,10 +57,10 @@ convenient way to monetize their apps.
 ## Getting Started
 
 - Android:
-  <a href="android-sdk-integration-instructions.md" class="xref"><span
+  <a href="android-sdk-integration-instructions.html" class="xref"><span
   class="ph">Xandr's Android SDK Integration</a>
 - iOS:
-  <a href="ios-sdk-integration-instructions.md" class="xref"><span
+  <a href="ios-sdk-integration-instructions.html" class="xref"><span
   class="ph">Xandr's iOS SDK Integration</a>
 
 
@@ -84,32 +83,32 @@ Types</th>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__1">Android</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__2"><a
-href="show-banners-on-android.md" class="xref">Show Banners</a>
-<p><a href="show-interstitials-on-android.md" class="xref">Show
+href="show-banners-on-android.html" class="xref">Show Banners</a>
+<p><a href="show-interstitials-on-android.html" class="xref">Show
 Interstitials</a></p>
-<p><a href="show-multi-format-banner-ads-on-android.md"
+<p><a href="show-multi-format-banner-ads-on-android.html"
 class="xref">Show Multi-Format Banner Ads</a></p>
-<p><a href="show-native-ads-on-android.md" class="xref">Show Native
+<p><a href="show-native-ads-on-android.html" class="xref">Show Native
 Ads</a></p>
-<p><a href="show-banner-native-on-android.md" class="xref">Show Banner
+<p><a href="show-banner-native-on-android.html" class="xref">Show Banner
 Native</a></p>
-<p><a href="show-instream-video-ads-on-android.md" class="xref">Show
+<p><a href="show-instream-video-ads-on-android.html" class="xref">Show
 Instream Video</a></p></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__1">iOS</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__2"><a
-href="show-banners-on-ios.md" class="xref">Show Banners</a>
-<p><a href="show-interstitials-ads-on-ios.md" class="xref">Show
+href="show-banners-on-ios.html" class="xref">Show Banners</a>
+<p><a href="show-interstitials-ads-on-ios.html" class="xref">Show
 Interstitials</a></p>
-<p><a href="show-multi-format-banner-ads-on-ios.md" class="xref">Show
+<p><a href="show-multi-format-banner-ads-on-ios.html" class="xref">Show
 Multi-Format Banner Ads</a></p>
-<p><a href="show-native-ads-on-ios.md" class="xref">Show Native
+<p><a href="show-native-ads-on-ios.html" class="xref">Show Native
 Ads</a></p>
-<p><a href="show-banner-native-on-ios.md" class="xref">Show Banner
+<p><a href="show-banner-native-on-ios.html" class="xref">Show Banner
 Native</a></p>
-<p><a href="show-instream-video-ads-on-ios.md" class="xref">Show
+<p><a href="show-instream-video-ads-on-ios.html" class="xref">Show
 Instream Video</a></p></td>
 </tr>
 </tbody>
@@ -135,22 +134,22 @@ class="entry colsep-1 rowsep-1">Targeting</th>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__7">Android</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__8"><a
-href="add-targeting-parameters-on-android.md" class="xref">Add
+href="add-targeting-parameters-on-android.html" class="xref">Add
 Targeting Parameters</a>
-<p><a href="pass-custom-keywords-on-android.md" class="xref">Pass
+<p><a href="pass-custom-keywords-on-android.html" class="xref">Pass
 Custom Keywords</a></p>
-<p><a href="set-reserve-prices-on-android.md" class="xref">Set Reserve
+<p><a href="set-reserve-prices-on-android.html" class="xref">Set Reserve
 Prices</a></p></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__7">iOS</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__8"><a
-href="add-targeting-parameters-on-ios.md" class="xref">Add Targeting
+href="add-targeting-parameters-on-ios.html" class="xref">Add Targeting
 Parameters</a>
-<p><a href="pass-custom-keywords-on-ios.md" class="xref">Pass Custom
+<p><a href="pass-custom-keywords-on-ios.html" class="xref">Pass Custom
 Keywords</a></p>
-<p><a href="set-reserve-prices-on-ios.md" class="xref">Set Reserve
+<p><a href="set-reserve-prices-on-ios.html" class="xref">Set Reserve
 Prices</a></p></td>
 </tr>
 </tbody>
@@ -176,17 +175,17 @@ class="entry colsep-1 rowsep-1">Targeting</th>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__13">Android</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__14"><a
-href="mediate-with-android-sdk-instructions.md" class="xref">Mediate
+href="mediate-with-android-sdk-instructions.html" class="xref">Mediate
 with Android SDK Instructions</a>
-<p><a href="android-custom-adaptors.md" class="xref">Android Custom
+<p><a href="android-custom-adaptors.html" class="xref">Android Custom
 Adaptors</a></p></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__13">iOS</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__14"><a
-href="mediate-with-ios.md" class="xref">Mediate with iOS</a>
-<p><a href="ios-custom-adaptors.md" class="xref">iOS Custom
+href="mediate-with-ios.html" class="xref">Mediate with iOS</a>
+<p><a href="ios-custom-adaptors.html" class="xref">iOS Custom
 Adaptors</a></p></td>
 </tr>
 </tbody>
@@ -216,72 +215,72 @@ class="entry colsep-1 rowsep-1">Configuration</th>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__19">Android</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__20"><a
-href="allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md"
+href="allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.html"
 class="xref">Allow Multiple Ad Sizes to Serve into a Banner Ad View</a>
-<p><a href="add-a-transition-animation-on-android.md" class="xref">Add
+<p><a href="add-a-transition-animation-on-android.html" class="xref">Add
 a Transition Animation</a></p>
-<p><a href="anjam-user-guide.md" class="xref">ANJAM User Guide</a></p>
-<p><a href="configure-sdk-logging-on-android.md"
+<p><a href="anjam-user-guide.html" class="xref">ANJAM User Guide</a></p>
+<p><a href="configure-sdk-logging-on-android.html"
 class="xref">Configure SDK Logging</a></p>
-<p><a href="control-ad-unit-alignment-on-android.md"
+<p><a href="control-ad-unit-alignment-on-android.html"
 class="xref">Control Ad Unit Alignment</a></p>
-<p><a href="control-landing-page-load-visibility-on-android.md"
+<p><a href="control-landing-page-load-visibility-on-android.html"
 class="xref">Control Landing Page Loading Visibility</a></p>
-<p><a href="location-controls-on-android.md" class="xref">Control
+<p><a href="location-controls-on-android.html" class="xref">Control
 Location Accuracy</a></p>
-<p><a href="customize-video-player-options-on-android.md"
+<p><a href="customize-video-player-options-on-android.html"
 class="xref">Customize Video Player Options</a></p>
-<p><a href="dismiss-interstitials-on-user-click.md"
+<p><a href="dismiss-interstitials-on-user-click.html"
 class="xref">Dismiss Interstitials on User Click</a></p>
-<p><a href="show-multi-format-banner-ads-on-android.md"
+<p><a href="show-multi-format-banner-ads-on-android.html"
 class="xref">Multi-Format Banner and Video Ad Support</a></p>
-<p><a href="open-ad-clicks-in-the-native-browser-on-android.md"
+<p><a href="open-ad-clicks-in-the-native-browser-on-android.html"
 class="xref">Open Ad Clicks in the Native Browser</a></p>
-<p><a href="toggle-psas-on-android.md" class="xref">Toggle
+<p><a href="toggle-psas-on-android.html" class="xref">Toggle
 PSAs</a></p>
-<p><a href="receive-ad-view-status-events-on-android.md"
+<p><a href="receive-ad-view-status-events-on-android.html"
 class="xref">Receive Ad View Status Events</a></p>
 <p><a
-href="resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md"
+href="resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.html"
 class="xref">Resize Ads to fit the Screen or Banner Ad View</a></p>
 <p><a
-href="resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md"
+href="resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.html"
 class="xref">Resize the Banner Ad View to the Size of the Winning
 Creative</a></p>
-<p><a href="request-ads-over-https-on-android.md" class="xref">Request
+<p><a href="request-ads-over-https-on-android.html" class="xref">Request
 Ads over HTTPS</a></p></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000000d1__entry__21">iOS</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000000d1__entry__22"><a
-href="allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md"
+href="allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.html"
 class="xref">Allow Multiple Ad Sizes to Serve into a Banner Ad View</a>
-<p><a href="add-a-transition-animation-on-ios.md" class="xref">Add a
+<p><a href="add-a-transition-animation-on-ios.html" class="xref">Add a
 Transition Animation</a></p>
-<p><a href="anjam-user-guide.md" class="xref">ANJAM User Guide</a></p>
-<p><a href="configure-sdk-logging-on-ios.md" class="xref">Configure
+<p><a href="anjam-user-guide.html" class="xref">ANJAM User Guide</a></p>
+<p><a href="configure-sdk-logging-on-ios.html" class="xref">Configure
 SDK Logging</a></p>
-<p><a href="control-ad-unit-alignment-on-ios.md" class="xref">Control
+<p><a href="control-ad-unit-alignment-on-ios.html" class="xref">Control
 Ad Unit Alignment</a></p>
-<p><a href="control-landing-page-load-visibility-on-ios.md"
+<p><a href="control-landing-page-load-visibility-on-ios.html"
 class="xref">Control Landing Page Loading Visibility</a></p>
-<p><a href="location-controls-on-ios.md" class="xref">Control Location
+<p><a href="location-controls-on-ios.html" class="xref">Control Location
 Accuracy</a></p>
-<p><a href="configure-video-player-options-on-ios.md"
+<p><a href="configure-video-player-options-on-ios.html"
 class="xref">Customize Video Player Options</a></p>
-<p><a href="show-multi-format-banner-ads-on-ios.md"
+<p><a href="show-multi-format-banner-ads-on-ios.html"
 class="xref">Multi-Format Banner and Video Ad Support</a></p>
-<p><a href="open-ad-clicks-in-the-native-browser-on-ios.md"
+<p><a href="open-ad-clicks-in-the-native-browser-on-ios.html"
 class="xref">Open Ad Clicks in the Native Browser</a></p>
-<p><a href="toggle-psas-on-ios.md" class="xref">Toggle PSAs</a></p>
-<p><a href="receive-ad-view-status-events-on-ios.md"
+<p><a href="toggle-psas-on-ios.html" class="xref">Toggle PSAs</a></p>
+<p><a href="receive-ad-view-status-events-on-ios.html"
 class="xref">Receive Ad View Status Events</a></p>
-<p><a href="resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.md"
+<p><a href="resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.html"
 class="xref">Resize Ads to fit the Screen or Banner Ad View</a></p>
 <p><a
-href="resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.md"
+href="resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.html"
 class="xref">Resize the Banner Ad View to the Size of the Winning
 Creative</a></p>
-<p><a href="request-ads-over-https-on-ios.md" class="xref">Request Ads
+<p><a href="request-ads-over-https-on-ios.html" class="xref">Request Ads
 over HTTPS</a></p></td>
 </tr>
 </tbody>
@@ -294,7 +293,7 @@ over HTTPS</a></p></td>
 ## Impression Tracking
 
 - <a
-  href="mobile-sdk/mobile-sdk--impression-counting-methods.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/mobile-sdk--impression-counting-methods.html"
   class="xref" target="_blank">Mobile SDK: Impression Counting Methods</a>
 
 
@@ -304,7 +303,7 @@ over HTTPS</a></p></td>
 ## Apps
 
 - <a
-  href="mobile-sdk/xandr-sdk-app.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-sdk-app.html"
   class="xref" target="_blank">Xandr SDK App</a>
 
 
@@ -314,17 +313,17 @@ over HTTPS</a></p></td>
 ## Ad Ops Guides
 
 - <a
-  href="mobile-sdk/ad-ops---set-up-static-image-banners.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ad-ops---set-up-static-image-banners.html"
   class="xref" target="_blank">Ad Ops - Set up Static Image Banners</a>
-- <a href="ad-ops-set-up-html-responsive-interstitials-non-mraid.md"
+- <a href="ad-ops-set-up-html-responsive-interstitials-non-mraid.html"
   class="xref">Ad Ops - Set Up HTML Responsive Interstitials
   (non-MRAID)</a>
 - <a
-  href="mobile-sdk/ad-ops---set-up-mraid-full-screen-interstitials.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ad-ops---set-up-mraid-full-screen-interstitials.html"
   class="xref" target="_blank">Ad Ops - Set Up MRAID Full Screen
   Interstitials</a>
 - <a
-  href="mobile-sdk/ad-ops---set-up-static-image-full-screen-interstitials.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ad-ops---set-up-static-image-full-screen-interstitials.html"
   class="xref" target="_blank">Ad Ops - Set Up Static Image Full Screen
   Interstitials</a>
 

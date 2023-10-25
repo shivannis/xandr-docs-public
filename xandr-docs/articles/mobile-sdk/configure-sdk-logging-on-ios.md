@@ -13,8 +13,7 @@ logging level of the iOS SDK:
 ``` pre
 [ANLogManager setANLogLevel:ANLogLevelDebug];
 ```
-<b>Note:</b> See `ANLogManager.h` for all
-ms.custom : ios-sdk
+Note: See `ANLogManager.h` for all
 ---
 
 
@@ -56,7 +55,7 @@ logging level of the iOS SDK:
 
 
 
-<b>Note:</b> See `ANLogManager.h` for all
+Note: See `ANLogManager.h` for all
 available log levels
 
 

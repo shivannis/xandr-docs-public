@@ -1,8 +1,7 @@
 ---
 Title : Show Multi-Format Banner Ads on iOS
-Description : <b>Note:</b> This offering is currently in
+Description : Note: This offering is currently in
 Alpha and is subject to change.
-ms.custom : ios-sdk
 ---
 
 
@@ -12,7 +11,7 @@ ms.custom : ios-sdk
 
 
 
-<b>Note:</b> This offering is currently in
+Note: This offering is currently in
 Alpha and is subject to change.
 
 
@@ -34,7 +33,7 @@ Some constraints:
 ## Show a Mix of VAST Video and HTML Banner Ads
 
 Before you begin, you must  <a
-href="mobile-sdk/ios-sdk-integration.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration.html"
 class="xref" target="_blank">integrate the iOS SDK.</a>with your
 project. 
 
@@ -50,7 +49,7 @@ highest bid.
 
 
 
-<b>Note:</b> If you have specified Video as a
+Note: If you have specified Video as a
 Media Type for your placement in Console, it is still necessary to use
 the aforementioned commands to activate video ads. Without explicitly
 enabling video ads through the SDK, only banner ads will be served. On
@@ -62,6 +61,7 @@ calling the above commands to set **AllowVideoDemand** to true.
 
 
 
+<div id="ID-000024db__ShowMultiFormatBannerAdsoniOS-VideoOrientation"
 >
 
 ## Video Orientation
@@ -96,8 +96,9 @@ banner!.squareBannerVideoPlayerSize = CGSize(width: 200, height: 200)
 
 Publishers can query the size of the video ad using the below API.
 
+<div id="ID-000024db__note_t2b_44y_fyb" 
 
-<b>Note:</b> The values will only be populated
+Note: The values will only be populated
 after the adDidReceiveAd callback is triggered.
 
 

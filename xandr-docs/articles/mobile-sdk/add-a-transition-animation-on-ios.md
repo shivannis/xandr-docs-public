@@ -2,7 +2,6 @@
 Title : Add a Transition Animation on iOS
 Description : This page has instructions on how to add an animation to banner ad state
 transitions.
-ms.custom : android-sdk
 ---
 
 

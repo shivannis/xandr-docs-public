@@ -5,7 +5,6 @@ The Google Advertising ID (AAID) for devices is an Android provided id
 to track the users for advertising purposes by the publishers who have
 an app on the Google Play Store (post getting consent from the users to
 do that). An API is introduced in Xandr mobile
-ms.custom : android-sdk
 ---
 
 

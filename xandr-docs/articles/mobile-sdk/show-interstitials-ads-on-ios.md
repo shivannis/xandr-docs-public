@@ -2,7 +2,6 @@
 Title : Show Interstitials Ads on iOS
 Description : This page has instructions and code samples for showing interstitial ads
 on iOS.
-ms.custom : ios-sdk
 ---
 
 
@@ -42,8 +41,9 @@ process:
     exact timing in milliseconds, see the value
     of `kANInterstitialAdTimeout` in the source code.)
 
+<div id="ID-00002305__note_qqw_bpw_lwb" 
 
-<b>Note:</b> The close button appears after
+Note: The close button appears after
 ten seconds by default. You can set the delay
 using `ANInterstitialAd.setCloseDelay`.
 
@@ -59,7 +59,7 @@ For more information, see the code sample below.
 
 
 
-<b>Note:</b>
+Note:
 
 The interstitial code sample below shows how to request ads using the
 placement ID. Beginning with version RC2.8, you can initialize

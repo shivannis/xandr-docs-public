@@ -1,7 +1,6 @@
 ---
 Title : Migrating Android SDK v7 to 8.0
 Description : Publishers with SDK v8.0, are required to initialize
-ms.custom : android-sdk
 ---
 
 
@@ -15,7 +14,7 @@ using Xandr Mobile Ads SDK for Android SDK v8,
 the init() method must be called prior to any other SDK
 operations. Without this initialization no Ad request would go through
 and the SDK would throw an exception. For more information, see <a
-href="android-sdk-initialization-v8-0.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-initialization-v8-0.html"
 class="xref" target="_blank">Android - SDK Initialization (v8.0)</a>
 
 

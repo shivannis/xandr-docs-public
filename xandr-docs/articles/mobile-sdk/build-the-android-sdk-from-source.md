@@ -2,7 +2,6 @@
 Title : Build the Android SDK From Source
 Description : This page has instructions for including the source code of our Android
 SDK in your project and building it.
-ms.custom : android-sdk
 ---
 
 
@@ -15,7 +14,7 @@ SDK in your project and building it.
 
 If you just want to install using Maven or download a JAR, see the
 Android section of <a
-href="build-the-android-sdk-from-source.md#"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/build-the-android-sdk-from-source.html#"
 class="xref" target="_blank">Integrate the SDK</a>.
 
 
@@ -42,9 +41,10 @@ The cloned directory will look something like:
 
 
 
+<div id="ID-000003ae__note-890d04b8-5825-408d-a20d-3beebf4c355f"
 
 
-<b>Note:</b> The SDK and each of the mediation
+Note: The SDK and each of the mediation
 adaptors are standalone libraries.
 
 
@@ -99,20 +99,20 @@ as a library.
 ## Related Topics
 
 <a
-href="android-sdk-integration-instructions.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-integration-instructions.html"
 class="xref" target="_blank">Android SDK Integration Instructions</a>
 
 <a
-href="xandr-mobile-sdks.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
 class="xref" target="_blank">Xandr Mobile
 SDKs</a>
 
 <a
-href="show-banners-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-android.html"
 class="xref" target="_blank">Show Banners</a>
 
 <a
-href="show-interstitials-on-android.md"
+href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-on-android.html"
 class="xref" target="_blank">Show Interstitials</a>
 
 

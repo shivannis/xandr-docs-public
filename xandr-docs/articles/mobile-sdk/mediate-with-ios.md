@@ -2,7 +2,6 @@
 Title : Mediate with iOS
 Description : Mediation lets you sell ad impressions through multiple networks to
 generate more revenue. This is initiated by your main (mediating) SDK
-ms.custom : ios-sdk
 ---
 
 
@@ -81,7 +80,7 @@ To mediate these networks, you'll need the following:
 
 - A supported release of our SDK. For instructions on installing our
   SDK, see <a
-  href="ios-sdk-integration.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration.html"
   class="xref" target="_blank">Integrate with iOS</a>.
 - The SDK of the network you want to mediate.
 - A mediation adaptor that allows our SDK to communicate with the
@@ -125,7 +124,7 @@ to do this.
 
 
 
-<b>Note:</b> The instructions in this section
+Note: The instructions in this section
 are only needed if you are doing native mediation. Mediating banners and
 interstitials should not require any initialization code or further
 work.
@@ -184,7 +183,7 @@ is `content_url`. Here is an example:
 
 
 
-<b>Note:</b> The instructions in this section
+Note: The instructions in this section
 are only needed to load AdMob banner ads in iPads for the apps that
 support multi-window capability.
 
@@ -240,7 +239,7 @@ of popular mobile ad networks. If you want to mediate a network it
 doesn't support, you must:
 
 - Write a <a
-  href="ios-custom-adaptors.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-custom-adaptors.html"
   class="xref" target="_blank">custom mediation adaptor</a> that lets
   our SDK receive events from the SDK you want to mediate.
 - Set up a Custom Mobile Network using
@@ -253,9 +252,9 @@ doesn't support, you must:
 ## Related Topics
 
 - <a
-  href="ios-sdk-integration.md"
+  href="https://docs.xandr.com/bundle/mobile-sdk/page/ios-sdk-integration.html"
   class="xref" target="_blank">Integrate with iOS</a>
-- <a href="ios-custom-adaptors.md" class="xref">iOS Custom Adaptors</a>
+- <a href="ios-custom-adaptors.html" class="xref">iOS Custom Adaptors</a>
 
 
 

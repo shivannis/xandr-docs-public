@@ -1,8 +1,8 @@
 ---
 Title : Show High Impact Media Type on Android
-<b>Note:</b> This feature is available in
+Description : <div id="ID-000007ff__note_shz_n2s_lwb"
+Note: This feature is available in
 Xandr Mobile SDK version 8.1 for Android.
-ms.custom : android-sdk
 ---
 
 
@@ -12,8 +12,9 @@ ms.custom : android-sdk
 
 
 
+<div id="ID-000007ff__note_shz_n2s_lwb" 
 
-<b>Note:</b> This feature is available in
+Note: This feature is available in
 Xandr Mobile SDK version 8.1 for Android.
 
 

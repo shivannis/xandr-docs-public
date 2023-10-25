@@ -2,7 +2,6 @@
 Title : Ad Response Info Class for iOS
 Description : This document describes about the Ad Response Info class in iOS Mobile
 SDK.
-ms.custom : ios-sdk
 ---
 
 
@@ -186,7 +185,7 @@ func requestBannerAd() {
 
 
 
-<b>Note:</b>
+Note:
 
 AdResponseInfo can be retrieved using VideoAd instance, Interstitial Ad
 View instance and Native Ad Response also apart from Banner Ad View.
