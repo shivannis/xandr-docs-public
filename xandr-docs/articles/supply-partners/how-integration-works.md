@@ -1,7 +1,6 @@
 ---
 Title : How Integration Works
-Description : <figure class="fig fignone">
-<p><img src="images/supply-partners/112559381.png" class="image"
+Description : lorem ipsum
 ---
 
 
