@@ -1,6 +1,6 @@
 ---
 title: Client Hints for SSP Clients
-description: In this article, learn about the user-agent client hints API for SSP clients and its supported Open RTB for maximum performance and optimal device targeting.
+description: In this article, learn about the user-agent client hints API for SSP clients and the supported Open RTB for maximum performance and optimal device targeting.
 ---
 
 # Client hints for SSP clients

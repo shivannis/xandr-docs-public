@@ -1,9 +1,9 @@
 ---
-title: Bid Response
+title: Supply Partners - Bid Response
 description: In this article, learn about bid responses and their various JSON fields, supply templates, types of errors, and examples to help you understand better.
 ---
 
-# Bid response
+# Supply Partners - Bid response
 
 > [!WARNING]
 > We have disabled the Supply Integration (ASI) protocol (formerly AppNexus Supply Integration) for server-side supply integrations beginning on October 1st, 2017. We strongly encourage that you migrate your supply to the [OpenRTB protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf). Everything in this section is legacy content.
@@ -173,7 +173,7 @@ When Xandr submits a VAST video creative:
 }
 ```
 
-> [!TIP]
+> [!NOTE]
 > The deal fields below are visible to Xandr employees only.
 
 ### Xandr submits a bid for a deal

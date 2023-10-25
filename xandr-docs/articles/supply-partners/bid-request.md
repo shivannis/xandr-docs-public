@@ -1,9 +1,9 @@
 ---
-title: Bid Request
+title: Supply Partners - Bid Request
 description: In this article, learn about a bid request and their various JSON fields, the placement mapping sequence, and examples to help you understand better.
 ---
 
-# Bid request
+# Supply Partners - Bid request
 
 > [!WARNING]
 > We have disabled the Supply Integration (ASI) protocol(formerly AppNexus Supply Integration) for server-side supply integrations beginning on October 1st, 2017. We strongly encourage that you migrate your supply to the [OpenRTB protocol](openrtb-specs.md). Everything in this section is legacy content.
@@ -45,7 +45,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 | `an_placement_id` | int | The Xandr ID for the placement. To retrieve placement IDs, use the [Placement Service](../digital-platform-api/placement-service.md).<br>**Required:** no |
 | `language` | int | The X ID for the language of the page. To retrieve language IDs, use the [Language Service](../digital-platform-api/language-service.md).<br>**Default:** 0<br>**Required:** no |
 | `user_agent` | string | The user agent for the request (i.e., the browser).<br>**Required:** no |
-| `int_blocked_technical_attributes` | array of ints  | The Xandr IDs for the creative technical attributes that are not permitted. To retrieve technical attribute IDs, use the Technical Attribute Service.<br>**Required:** no |
+| `int_blocked_technical_attributes` | array of ints  | The Xandr IDs for the creative technical attributes that are not permitted. To retrieve technical attribute IDs, use the [Technical Attribute Service](../digital-platform-api/technical-attribute-service.md).<br>**Required:** no |
 | `ext_blocked_technical_attributes` | array of ints | The supply partner IDs for the creative technical attributes that are not permitted.<br>**Required:** no |
 | `int_blocked_categories` | array of ints | The Xandr IDs for the creative categories that are not permitted. To retrieve category IDs, use the [Category Service](../digital-platform-api/category-service.md).<br>**Required:** no |
 | `ext_blocked_categories` | array of ints | The supply partner IDs for the creative categories that are not permitted.<br>**Required:** no |
@@ -56,7 +56,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 | `int_blocked_brands` | array of ints  | The Xandr IDs for the brands that are not permitted. To retrieve brand IDs, use the [Brand Service](../digital-platform-api/brand-service.md).<br>**Required:** no |
 | `age` | int | The age of the user viewing the page.<br>**Default:** 0<br>**Required:** no |
 | `gender` | enum | The gender of the user viewing the page. Possible values: "male", "female", or "unknown".<br>**Default:** "unknown"<br>**Required:** no |
-| `supply_type` | enum | The display environment. Possible values: "web", "mobile_app", "mobile_web", "in-stream-video", or "other".<br><br>**Tip:** The value of `supply_type` will override the supply type set at the site level.<br><br>**Note:** The "in-stream-video" format is **not yet supported**<br><br>**Default:** "web"<br>**Required:** no |
+| `supply_type` | enum | The display environment. Possible values: "web", "mobile_app", "mobile_web", "in-stream-video", or "other".<br><br>**Tip:** The value of `supply_type` will override the supply type set at the [site](../digital-platform-api/site-service.md) level.<br><br>**Note:** The "in-stream-video" format is **not yet supported**.<br><br>**Default:** "web"<br>**Required:** no |
 
 ### Example formatting: blocked_urls
 
@@ -76,7 +76,7 @@ Xandr will submit a bid only when we can map your request to a placement in Xand
 1. `an_placement_id`
 1. `ext_placement_code`
 1. `ext_pub_code` (the publisher's default tag)
-1. Your member's default placement (set up for your account by your Technical Account Manager before production login credentials are even assigned)
+1. Your member's default placement (set up for your account by your Technical Account Manager before production login credentials are even assigned).
 
 If none of the above are available, Xandr will not submit a bid. Note that each `ext_placement_code` can map to only one placement in Xandr, and each `ext_pub_code` can map to only one publisher in Xandr.
 

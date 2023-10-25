@@ -32,7 +32,7 @@ Supply Partners must hold a fair and transparent auction in which auction manipu
 
 ## Build to our APIs
 
-To access Xandr's platform, supply partners must use our APIs. All system objects should be created and managed via [APIs](../digital-platform-api/welcome.md). Any Supply Partner who wishes to sell Deals must do so via the [Deal Service](../digital-platform-api/deal-service.md).
+To access Xandr's platform, Supply Partners must use our APIs. All system objects should be created and managed via APIs. Any Supply Partner who wishes to sell Deals must do so via the [Deal Service](../digital-platform-api/deal-service.md).
 
 ## More best practices
 

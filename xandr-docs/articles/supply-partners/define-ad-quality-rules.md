@@ -76,7 +76,7 @@ For Platform buyers who purchase inventory via the Xandr Platform, you can selec
 | Maximum | Bypass ad quality standards, do not require audit. |
 | Banned | Ban all creatives. |
 
-:::image type="content" source="media/97716593.png" alt-text="Diagram of trust levels and its implications.":::
+:::image type="content" source="media/supply-partners-a.png" alt-text="Diagram of trust levels and its implications.":::
 
 > [!NOTE]
 > The difference between trusting buyer self-classification and requiring a platform audit is that you trust that buyer to correctly self-classify all creatives that they do not opt into Xandr audit. When uploading their creatives and tags, buyers with this classification are asked to confirm that they have self-classified any creative for compliance with Xandr's creative standards.

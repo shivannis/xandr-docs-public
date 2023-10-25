@@ -6,7 +6,7 @@ description: In this article, explore the common challenges encountered by exter
 # External seller troubleshooting
 
 This page describes some of the common issues facing external sellers and instructions to help resolve those issues. For additional
-information see the [Integration Process FAQ](faq---integration-process.md).
+information see the [Integration Process FAQ](faq-integration-process.md).
 
 ## Deals troubleshooting
 
@@ -43,7 +43,7 @@ The following steps will guide you through troubleshooting non-delivery in the o
 
 1. **Verify that the corresponding placements have been deactivated.**
 
-    Placements may be deactivated by our system for reasons related to inventory quality. If the site or app ID sent in a request maps to a deactivated placement, this request will not be valid and will receive a 400 MALFORMED HTTP error. For more information on inventory quality deactivations, see [Inventory Quality Deactivations](https://help.xandr.com/s/login/).
+    Placements may be deactivated by our system for reasons related to inventory quality. If the site or app ID sent in a request maps to a deactivated placement, this request will not be valid and will receive a 400 MALFORMED HTTP error. For more information on inventory quality deactivations, see [Inventory quality deactivations](#inventory-quality-deactivations).
 
 1. **Instruct the buyer to submit a support ticket.**
 
@@ -87,7 +87,7 @@ Creatives that do not contain malicious elements or violate any platform buying 
 - **btype**: creative media types
 - **battr**: technical attributes
 
-To block specific creatives or set the above ad quality settings in the Xandr system, use the [](../digital-platform-api/ad-profile-service.md). For best practices regarding the use of ad quality, see [Define Ad Quality Rules](define-ad-quality-rules.md). Settings applied in the Xandr system will work in conjunction with those sent dynamically in the OpenRTB request; the most
+To block specific creatives or set the above ad quality settings in the Xandr system, use the [Ad Profile Service](../digital-platform-api/ad-profile-service.md). For best practices regarding the use of ad quality, see [Define Ad Quality Rules](define-ad-quality-rules.md). Settings applied in the Xandr system will work in conjunction with those sent dynamically in the OpenRTB request; the most
 restrictive block between the two will always apply. To preview a buyer's creative, you can use the URL present in the **iurl** field of
 the bid response.
 

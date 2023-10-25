@@ -1,6 +1,6 @@
 ---
 title: Deal Eligibility Requirements
-description: In this article, learn about the deal eligibility requirements and ways to set up a deal for buyer members AN Talent (882) and AN Challenge (1370).
+description: In this article, learn about the deal eligibility requirements and ways to set up a deal for test buyer members AN Talent (882) and AN Challenge (1370).
 ---
 
 # Deal eligibility requirements
@@ -12,7 +12,7 @@ two Xandr test members, AN Talent(882) and AN Challenge(1370). The deal must rep
 
 | Field | Type (Length) | Description | Expected Value (For Test) |
 |:---|:---|:---|:---|
-| `code` | string (100) | The custom code for the deal.<br><br>**Note:** This field is mandatory and represents your internal deal ID, passed in the [incoming bid request](incoming-bid-request-from-ssps.md) through the deal ID field in the PMP object. | Value that you will be passing in PMP's object, deal ID field |
+| `code` | string (100) | The custom code for the deal.<br><br>**Note:** This field is mandatory and represents your internal deal ID, passed in the [incoming bid request](incoming-bid-request-from-ssps.md) through the deal ID field in the PMP object. | Value that you will be passing in PMP's object, deal ID field. |
 | `nacme` | string (255) | The name of the deal. | APN Test Deal 1 |
 | `active` | Boolean | If true, the deal is active. Note that the deal will be available to the buyer only when this field is true, `start_date` is in the past (or null), and `end_date` is in the future (or null). | true |
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. If this is set, the format must be "YYYY-MM-DD HH:MM:SS". | 2017-01-01 00:00:00 |
@@ -42,7 +42,7 @@ The `type` object should contain the following fields.
 
 | Field | Type (Length) | Description | Expected Value (For Test) |
 |:---|:---|:---|:---|
-| `code` | string (100) | The custom code for the deal.<br><br>**Note:** This field is mandatory and represents your internal deal ID, passed in the [incoming bid request](incoming-bid-request-from-ssps.md) through the PMP's object, deal ID field. | Value that you will be passing in PMP's object, deal ID field |
+| `code` | string (100) | The custom code for the deal.<br><br>**Note:** This field is mandatory and represents your internal deal ID, passed in the [incoming bid request](incoming-bid-request-from-ssps.md) through the PMP's object, deal ID field. | Value that you will be passing in PMP's object, deal ID field. |
 | `name` | string (255) | The name of the deal. | APN Test Deal 2 |
 | `active` | Boolean | If true, the deal is active. Note that the deal will be available to the buyer only when this field is true, `start_date` is in the past (or null), and `end_date` is in the future (or null). | true |
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. If this is set, the format must be "YYYY-MM-DD HH:MM:SS". | 2017-01-01 00:00:00 |

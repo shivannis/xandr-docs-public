@@ -1,6 +1,6 @@
 ---
 title: API Documentation
-description: In this article, explore API documentation and learn how to get started with the API with the sell-side and read-only services.
+description: In this article, explore API documentation and learn how to get started with the sell-side and read-only API services.
 ---
 
 # API documentation
