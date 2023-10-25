@@ -418,7 +418,7 @@ Note: The "in-stream-video" format is
 
 
 
-<div id="ID-00004b1e__placement_mapping" >
+
 
 ## Placement Mapping
 
@@ -440,7 +440,7 @@ can map to only one publisher in Xandr.
 
 
 
-<div id="ID-00004b1e__examples_bid_request" >
+
 
 ## Examples
 
