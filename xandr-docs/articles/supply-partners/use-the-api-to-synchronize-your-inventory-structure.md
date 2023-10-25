@@ -13,7 +13,7 @@ To map your supply using the UI, see [Use the UI to Synchronize Your Inventory S
 
 Before you begin, you must meet the following criteria:
 
-- You have completed [API onboarding]((../digital-platform-api/api-onboarding-process.md)).
+- You have completed [API onboarding](../digital-platform-api/api-onboarding-process.md).
 - You are familiar with the [Sell-Side Object Hierarchy](understanding-the-sell-side-object-hierarchy.md).
 - You have worked with Xandr to create a [global ad quality profile](define-ad-quality-rules.md) to control which creatives can appear on your publishers' inventory.
 
