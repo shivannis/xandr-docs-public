@@ -1,8 +1,6 @@
 ---
 Title : Incoming Bid Request from SSPs
-Description : Note: This describes
-Xandr's integration with the <a
-href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
+Description : lorem ipsum
 ---
 
 
