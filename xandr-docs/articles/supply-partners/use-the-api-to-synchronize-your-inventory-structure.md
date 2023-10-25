@@ -1,133 +1,41 @@
 ---
-Title : Use the API to Synchronize Your Inventory Structure
-Description : lorem ipsum
+title: Use the API to Synchronize Your Inventory Structure
+description: dummy text
 ---
 
+# Use the API to synchronize your inventory structure
 
-# Use the API to Synchronize Your Inventory Structure
+This page shows you how to use Xandr's API to map your supply to the corresponding Xandr objects and test the mapping with a debug auction. Please follow these instructions for each publisher you work with.
 
+To map your supply using , see [Use  to Synchronize Your Inventory Structure](../digital-platform-api/api-onboarding-process.md).
 
-
-This page shows you how to use Xandr's API to
-map your supply to the corresponding Xandr
-objects and test the mapping with a debug auction. Please follow these
-instructions for each publisher you work with.
-
-To map your supply using , see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/api-onboarding-process.html"
-class="xref" target="_blank">Use  to Synchronize
-Your Inventory Structure</a>.
-
-
-
-## Before You Begin
+## Before you begin
 
 Before you begin, you must meet the following criteria:
 
-- You have completed <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/api-onboarding-process.html"
-  class="xref" target="_blank">API onboarding</a>.
-- You are familiar with the <a
-  href="https://docs.xandr.com/bundle/supply-partners/page/understanding-the-sell-side-object-hierarchy.html"
-  class="xref" target="_blank">Sell-Side Object Hierarchy</a>.
-- You have worked with Xandr to create a <a
-  href="https://docs.xandr.com/bundle/supply-partners/page/define-ad-quality-rules.html"
-  class="xref" target="_blank">global ad quality profile</a> to control
-  which creatives can appear on your publishers' inventory. 
-
-
-
-
+- You have completed <a href="https://docs.xandr.com/bundle/xandr-api/page/api-onboarding-process.html" class="xref" target="_blank">API onboarding</a>.
+- You are familiar with the [Sell-Side Object Hierarchy](understanding-the-sell-side-object-hierarchy.md).
+- You have worked with Xandr to create a <a href="https://docs.xandr.com/bundle/supply-partners/page/define-ad-quality-rules.html" class="xref" target="_blank">global ad quality profile</a> to control which creatives can appear on your publishers' inventory.
 
 ## Step 1. Create a Publisher
 
-Use the <a
+Use the <a 
 href="https://docs.xandr.com/bundle/xandr-api/page/publisher-service.html"
 class="xref" target="_blank">Publisher Service</a> to create a new
 publisher that's mapped to your inventory.
 
+> [!NOTE]
+> The `code` field is required for all external sellers at both the publisher and placement levels and is highly recommended for all other sellers to ensure that your inventory is as granular as possible so that it can be investigated accurately for quality issues, and specifically for domain detectability. While not required, this step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
 
+Your JSON must include the following fields
 
-Note: The `code` field is required for
-all external sellers at both the publisher and placement levels and is
-highly recommended for all other sellers to ensure that your inventory
-is as granular as possible so that it can be investigated accurately for
-quality issues, and specifically for domain detectability. While not
-required, this step will help you to split your inventory into highly
-detectable and less detectable tags, allowing you to isolate the impacts
-of non-detectable domains on the rest of your inventory's viability.
-
-
-
-Your JSON must include the following fields:
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000638__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000638__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000638__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__1"><code class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__2">string (255)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000638__entry__3">Name
-of the legal entity of the company you pay money to. For instance, if
-you buy from <code class="ph codeph">espn.com</code>, the publisher
-should be named as the legal entity for ESPN.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__1"><code
-class="ph codeph">is_oo</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__2">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000638__entry__3">If
-true, the publisher is owned and operated by the network, meaning the
-network gets 100% of the revenue.   Setting this to true also enables
-you to skip setting up payment rules.
-<p><strong>Default:</strong>false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__1"><code class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__2">string (100)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000638__entry__3">The
-code that identifies the publisher from your inventory.  Use the value
-of the <code
-class="ph codeph">BidRequest.Site.Publisher.id or BidRequest.App.Publisher.id</code> 
-fields.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__1"><code
-class="ph codeph">reselling_exposure</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000638__entry__3">The
-publisher's exposure for reselling to other members of the platform.
-Possible values: "public" or "private."
-<p><strong>Default:</strong>"private"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000638__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000638__entry__3">The
-state of the publisher. Possible values: "active" or "inactive."
-<p><strong>Default:</strong>"inactive"</p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|--|--|--|
+| `name` | string (255) | Name of the legal entity of the company you pay money to. For instance, if you buy from `espn.com`, the publisher should be named as the legal entity for ESPN. |
+| `is_oo` | boolean | If true, the publisher is owned and operated by the network, meaning the network gets 100% of the revenue. Setting this to true also enables you to skip setting up payment rules. <br> **Default**: false |
+| code | string (100) | The code that identifies the publisher from your inventory.  Use the value of the BidRequest.Site.Publisher.id or BidRequest.App.Publisher.id  fields. |
+| reselling_exposure | enum | The publisher's exposure for reselling to other members of the platform. Possible values: "public" or "private." Default:"private" |
+| state | enum | The state of the publisher. Possible values: "active" or "inactive." Default:"inactive" |
 
 ``` pre
 $cat publisher.json
