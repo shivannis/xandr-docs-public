@@ -1,7 +1,6 @@
 ---
 Title : Home
-Description : Xandr supports supply partners in integrating
-with our systems. If you're a supply partner driving your own real-time
+Description : lorem ipsum
 ---
 
 
