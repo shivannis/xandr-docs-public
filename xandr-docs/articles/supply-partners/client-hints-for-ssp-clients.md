@@ -1,13 +1,6 @@
 ---
 Title : Client Hints for SSP Clients
-Description : <div id="client-hints-for-ssp-clients__section-fbc554de-a0d9-48bf-8248-870f99b07860"
->
-## Overview
-The User-Agent Client Hints API is an expansion to the Client Hints API,
-that enables developers to access information about a user's browser in
-a more specific and targeted manner, while still preserving the user's
-privacy and providing users with greater control over the data that is
-shared about their browsing activity. This API extends the traditional
+Description : lorem ipsum
 ---
 
 
@@ -15,8 +8,7 @@ shared about their browsing activity. This API extends the traditional
 
 
 
-<div id="client-hints-for-ssp-clients__section-fbc554de-a0d9-48bf-8248-870f99b07860"
->
+
 
 ## Overview
 
