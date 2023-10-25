@@ -1,83 +1,41 @@
 ---
-Title : Client Hints for SSP Clients
-Description : lorem ipsum
+title: Client Hints for SSP Clients
+description: In this article, learn about the user-agent client hints API for SSP clients and its supported Open RTB for maximum performance and optimal device targeting.
 ---
 
-
-# Client Hints for SSP Clients
-
-
-
-
+# Client hints for SSP clients
 
 ## Overview
 
-The User-Agent Client Hints API is an expansion to the Client Hints API,
-that enables developers to access information about a user's browser in
-a more specific and targeted manner, while still preserving the user's
-privacy and providing users with greater control over the data that is
-shared about their browsing activity. This API extends the traditional
-User-Agent header in HTTP requests and allows developers to request only
-the specific pieces of information they need, rather than exposing the
-entire header. This helps to eventually reduce the User-Agent string
-granularity and the amount of potentially sensitive information that can
-be transmitted.
+The User-Agent Client Hints API is an expansion to the Client Hints API, that enables developers to access information about a user's browser in a more specific and targeted manner, while still preserving the user's privacy and providing users with greater control over the data that is shared about their browsing activity. This API extends the traditional User-Agent header in HTTP requests and allows developers to request only the specific pieces of information they need, rather than exposing the entire header. This helps to eventually reduce the User-Agent string granularity and the amount of potentially sensitive information that can be transmitted.
 
-Client Hints are intended to be an alternative source of information
-contained in the User-Agent header. User-Agent (UA) reduction is an
-effort to minimize the identifying information shared in the User-Agent
-string. As a result, the return values from certain `Navigator`
-interfaces will be reduced, including: `navigator.userAgent`,
-`navigator.appVersion`, and `navigator.platform`. If we do not make the
-necessary adjustments and fail to adapt to this change, certain
-capabilities will be forfeited, including the ability to identify and
-prevent fraud and bot activity, recognizing browsers for rendering
-purposes, and targeting buyers based on their devices. Furthermore,
+Client Hints are intended to be an alternative source of information contained in the User-Agent header. User-Agent (UA) reduction is an
+effort to minimize the identifying information shared in the User-Agent string. As a result, the return values from certain `Navigator`
+interfaces will be reduced, including: `navigator.userAgent`, `navigator.appVersion`, and `navigator.platform`. If we do not make the
+necessary adjustments and fail to adapt to this change, certain capabilities will be forfeited, including the ability to identify and
+prevent fraud and bot activity, recognizing browsers for rendering purposes, and targeting buyers based on their devices. Furthermore,
 buyers will no longer be able to take advantage of device targeting.
-
-
 
 **Current UA string (detected as Tablet device):**
 
-``` pre
+``` 
 Mozilla/5.0 (Linux; Android 9; SM-T810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.1234.56 Safari/537.36
 ```
 
+**Same user with reduced UA string - not using Client Hints (detected as Desktop device):**
 
-
-
-
-**Same user with reduced UA string - not using Client Hints (detected as
-Desktop device):**
-
-``` pre
+``` 
 Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.0.0 Safari/537.36
 ```
 
-
-
-
-
-
-
 ## Scenarios
 
-To offer maximum performance and execute optimal device targeting,
-publishers should pass Xandr the **structured user agent** data in bid
-requests in programmatic advertising. Currently, Xandr supports Open RTB
-2.4 and can receive the structured user agent as an extension object
-called `user_agent_data`. However, we have also provided an example of
-Open RTB 2.6 below.
+To offer maximum performance and execute optimal device targeting, publishers should pass Xandr the **structured user agent** data in bid
+requests in programmatic advertising. Currently, Xandr supports Open RTB 2.4 and can receive the structured user agent as an extension object called `user_agent_data`. However, we have also provided an example of Open RTB 2.6 below.
 
+### Open RTB 2.4
 
-
-
-
-**Open RTB 2.4**
-
-
-
-``` pre
+``` 
 "device":{
    "ua":"Mozilla/5.0 (Linux; Android 11; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36",
    "geo":{
@@ -132,13 +90,9 @@ Open RTB 2.6 below.
 },
 ```
 
+### Open RTB 2.6
 
-
-**Open RTB 2.6**
-
-
-
-``` pre
+``` 
 "device":{
    "ua":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
    "ip":"76.89.224.206",
@@ -204,28 +158,7 @@ Open RTB 2.6 below.
 },
 ```
 
+### Demand partner OpenRTB format
 
-
-
-
-
-
-**Demand Partner OpenRTB Format**
-
-
-
-
-
-Note: We send requests today to demand
-partners only in Open RTB 2.4 format. Once we switch to Open RTB 2.6, we
-will send communication on the standard "structured user agent" support.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> We send requests today to demand partners only in Open RTB 2.4 format. Once we switch to Open RTB 2.6, we will send communication on the standard "structured user agent" support.
