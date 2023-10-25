@@ -24,7 +24,7 @@ Before you can add deals to Xandr and transact
 on them with buyers, you must:
 
 1. Be certified to sell deals on the platform.
-1. Understand the [OpenRTB protocol](openrtb-specs) for requesting and
+1. Understand the [OpenRTB protocol](openrtb-specs.md) for requesting and
     receiving bids from Xandr.
 1. Learn how to use Xandr's API. See our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md). 
 
