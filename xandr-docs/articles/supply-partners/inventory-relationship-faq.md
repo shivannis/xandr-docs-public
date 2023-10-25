@@ -1,6 +1,6 @@
 ---
 Title : Inventory Relationship FAQ
-Description :lorem ipsum
+Description : lorem ipsum
 ---
 
 
