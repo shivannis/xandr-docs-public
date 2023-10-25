@@ -1,7 +1,6 @@
 ---
 Title : Use  to Synchronize Your Inventory Structure
-Description : This page shows you how to use  to map your
-supply to the corresponding Xandr objects.
+Description : lorem ipsum
 ---
 
 
