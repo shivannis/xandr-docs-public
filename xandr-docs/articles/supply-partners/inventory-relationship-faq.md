@@ -1,9 +1,6 @@
 ---
 Title : Inventory Relationship FAQ
-Description : **What is Inventory Relationship, and why are we doing it?**
-In an effort to maintain transparency and accountability in the supply
-sold via, sellers will soon be asked to provide information about their
-inventory sources. The requested information is basic business
+Description :lorem ipsum
 ---
 
 
