@@ -1,6 +1,6 @@
 ---
 title : RTB Eligibility Requirements
-description : lorem ipsum
+description : Learn about RTB Eligibility Requirements.
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title : Outgoing Bid Response to SSPs
-description : lorem ipsum
+description : learn about Outgoing Bid Response to SSPs.
 ---
 
 
@@ -50,7 +50,7 @@ Xandr supports the following fields in the `seatbid` object:
 | Field | Type | Description |
 |---|---|---|
 | `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
-| `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by specifying "markup_delivery": 1 in the bid request. |
+| `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by `specifying` "markup_delivery": 1 in the bid request. |
 | `adomain` | array of strings | A list of URLs associated with the brand of the creative in the bid. |
 | `attr` | array of integers | Set of attributes describing the creative. Refer to section 5.3 of the IAB specification for a list of attributes. |
 | `cat` | array of strings | IAB content categories of the creative. Refer to section 5.1 of the IAB specification for a list of content categories. |
@@ -76,7 +76,7 @@ formatting this string.
 |---|---|---|
 | `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br>  |
 | `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>**Note**: This field is only returned for Native version 1.1. |
-| `jstracker` | string | Optional JavaScript impression tracker. This is a valid HTML, Javascript is already wrapped in <script> tags. It should be executed at impression time where it can be supported.<br>**Note**: This field is only returned for Native version 1.1. |
+| `jstracker` | string | Optional JavaScript impression tracker. This is a valid HTML , Javascript is already wrapped in `script` tags. It should be executed at impression time where it can be supported.<br>**Note**: This field is only returned for Native version 1.1. |
 | `link` | object | (Required) The default destination link for the native ad. Each individual asset can have its own link object, which applies if that asset is clicked. If an individual asset link does not have a link object, the parent link object is used. See [Link Object](#link-object) below. |
 | `privacy` | string | If support was indicated in the request, URL of a page informing the user about the buyer’s targeting activity. |
 | `ver` | integer | The version of the Native Markup in use. This is only returned for Native version 1.2 and later. |

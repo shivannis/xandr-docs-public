@@ -1,6 +1,6 @@
 ---
 title : Understanding the Sell-Side Object Hierarchy
-description : lorem ipsum
+description : learn about sell-side Object hierarchy. 
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title : Supply Integration (ASI)
-description : lorem ipsum
+description : learn about Supply Integration (ASI).
 ---
 
 

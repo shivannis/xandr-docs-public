@@ -1,6 +1,6 @@
 ---
 title : Selling Deals on Xandr
-description : lorem ipsum
+description : learn all about selling deals on Xandr.
 ---
 
 

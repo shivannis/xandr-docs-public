@@ -1,6 +1,6 @@
 ---
 title : OpenRTB Specs
-description : lorem ipsum
+description : Learn how Xandr's supply partners can integrate via the OpenRTB protocol.
 ---
 
 

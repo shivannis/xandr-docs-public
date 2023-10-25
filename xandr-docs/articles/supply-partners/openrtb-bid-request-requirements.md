@@ -1,6 +1,6 @@
 ---
-Title : OpenRTB Bid Request Requirements
-Description : lorem ipsum
+title : OpenRTB Bid Request Requirements
+description : lorem ipsum
 ---
 
 
@@ -53,7 +53,7 @@ Banner Criteria", either site.id or imp.tagid needs to be passed.
 |  | imp.tagid | string |  |  |
 | Publisher ID | site.publisher.id | string | Specifies the seller's publisher ID, used to look up a Xandr publisher ID. | 95% |
 | Domain | site.domain | string | Specifies the domain of the site (for example, [publishersite.com](https://publishersite.com/)) where the impression will be shown. Set as the referrer domain on the impression if available, or extracted from the `page` field. | 95%<br> |
-| Domain | site.page |  | Specifies the full URL of the page where the impression will be shown (for example, [page.publishersite.com/path/to/page](http://page.publishersite.com/path/to/page)). This should be the referrer URL and is preferred over the `domain field`. |  |
+| Domain | site.page |  | Specifies the full URL of the page where the impression will be shown (for example, [page.publishersite.com/path/to/page](http://page.publishersite.com/path/to/page)). This should be the referrer URL and is preferred over the `domain` field. |  |
 | IP | device.ip | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. | 95% |
 | Device Data<br> | device.model | string | Specifies the model of the device. If passed, Xandr sets the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the [Device Model Service](../digital-platform-api/device-model-service.md) to view the models registered in the Xandr system. | 95% |
 | Device Data | device.ua | string | Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. |  |
@@ -85,7 +85,7 @@ Banner Criteria", either site.id or imp.tagid needs to be passed.
 | Device Data<br> | device.model | string | Specifies the model of the device. If passed, we will set the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the [Device Model Service](../digital-platform-api/device-model-service.md)  to view the models registered in the Xandr system. | 95% |
 | Device Data | device.ua | string | Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. |  |
 | Device Data | device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |
-| Device Data | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the ua field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
+| Device Data | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
 
 
 The following field values in bid requests must be internally
@@ -208,7 +208,7 @@ consistent.
 | Protocols | imp.audio.protocols | array of integers | Array of supported video bid response protocols. | 95% |
 | Bundle ID | app.bundle | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. | 95% |
 | IP | device.ip | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. | 95% |
-| Device Data<br> | device.model | string | Specifies the model of the device. If passed, we will set the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the Device Model Service  to view the models registered in the Xandr system. | 95% |
+| Device Data<br> | device.model | string | Specifies the model of the device. If passed, we will set the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the [Device Model Service](../digital-platform-api/device-model-service.md)  to view the models registered in the Xandr system. | 95% |
 |Device Data  | device.ua | string | Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. |  |
 |  Device Data| device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |
 | Device Data | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |

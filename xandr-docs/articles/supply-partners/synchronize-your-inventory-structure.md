@@ -1,6 +1,6 @@
 ---
 title : Synchronize Your Inventory Structure
-description : lorem ipsum
+description : Learn the benefits of synchronizing your inventory structure. 
 ---
 
 # Synchronize your inventory structure
