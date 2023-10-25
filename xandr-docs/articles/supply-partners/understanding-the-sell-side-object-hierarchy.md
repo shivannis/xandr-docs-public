@@ -1,7 +1,6 @@
 ---
 Title : Understanding the Sell-Side Object Hierarchy
-Description : Inventory on the platform is grouped within sell-side objects that exist
-within a specific object hierarchy. Here's the basic hierarchy:
+Description : lorem ipsum
 ---
 
 
