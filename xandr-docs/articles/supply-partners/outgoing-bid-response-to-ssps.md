@@ -1,957 +1,197 @@
 ---
-Title : Outgoing Bid Response to SSPs
-Description : lorem ipsum
+title : Outgoing Bid Response to SSPs
+description : lorem ipsum
 ---
 
 
-# Outgoing Bid Response to SSPs
+# Outgoing bid response to SSPs
 
-
-
-
-
-Note: This describes the
-Xandr integration of the <a
-href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
-class="xref" target="_blank">OpenRTB 2.4 protocol</a>.
-
-
+> [!NOTE]
+> This describes the Xandr integration of the 
+> [OpenRTB 2.4 protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 
 Xandr will send a Bid Response after it receives
-a <a
-href="https://docs.xandr.com/bundle/supply-partners/page/incoming-bid-request-from-ssps.html"
-class="xref" target="_blank">Bid Request</a> from an SSP. The Bid
+a [Bid Request](incoming-bid-request-from-ssps.md) from an SSP. The Bid
 Response will include the bidder's bid (`price`) and chosen creative
 (`creative_id`). This creative will be served if the bid is ultimately
 accepted by the ad server. Multiple bids within the Bid Response are
 supported.
-
-
 
 ## Implementation
 
 Xandr currently supports the following fields in
 the bid response object:
 
-**Bid Response Object**
+**Bid response object**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__1"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__3">The
-seller's auction ID. This is the same as the ID of the bid request to
-which this is a response.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__1"><code
-class="ph codeph">seatbid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__3">Used
-for identifying <code class="ph codeph">seatbid</code> objects. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__seat_bid_object"
-class="xref">Seat Bid Object</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__1"><code
-class="ph codeph">bidid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__3">A
-randomly-generated bid response ID to assist tracking.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__1"><code class="ph codeph">cur</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__3">The
-bid currency using ISO-4217 alphabetic codes. If omitted, USD is
-assumed.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `bidid` | string | A randomly-generated bid response ID to assist tracking. |
+| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, USD is assumed. |
+| `id` | string | The seller's auction ID. This is the same as the ID of the bid request to which this is a response. |
+| `seatbid` | array of objects | Used for identifying `seatbid` objects. See [Seat Bid Object](#seat-bid-object) below. |
 
-**Seat Bid Object**
+### Seat bid object
 
-By default, Xandr will return a single `seatbid`
-object in the bid response. Xandr can also
-return multiple `seatbid` objects (multiple bids). Please contact your
-account representative for more details.
+By default, Xandr will return a single `seatbid` object in the bid response. Xandr can also return multiple `seatbid` objects (multiple bids). Please contact your account representative for more details.
 
-Xandr supports the following fields in the
-`seatbid` object:
+Xandr supports the following fields in the `seatbid` object:
 
+> [!NOTE]
+> We will not group bids by their seat ids. For example, if there are three bids from the same seat, we will send three seatbid objects.
 
+| Field | Type | Description |
+|---|---|---|
+| `bid` | array of objects | An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](incoming-bid-request-from-ssps.md). Note that one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
+| `seat` | string | Either the `seat_id` passed in the bid request query string (if one was provided) or the Xandr buyer `member_id`.  |
 
-Note:
+### Bid object
 
-We will not group bids by their seat ids. For example, if there are
-three bids from the same seat, we will send three seatbid objects.
+| Field | Type | Description |
+|---|---|---|
+| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
+| `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by specifying "markup_delivery": 1 in the bid request. |
+| `adomain` | array of strings | A list of URLs associated with the brand of the creative in the bid. |
+| `attr` | array of integers | Set of attributes describing the creative. Refer to section 5.3 of the IAB specification for a list of attributes. |
+| `cat` | array of strings | IAB content categories of the creative. Refer to section 5.1 of the IAB specification for a list of content categories. |
+| `cid` | string | The Xandr buyer's member ID. |
+| `crid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
+| `dealid` | string | The seller's deal ID (Xandr deal code) from the deal object in the [Bid Request](incoming-bid-request-from-ssps.md), if this bid relates to a deal.<br>If the deal does not have a Xandr deal code then we will omit this field. |
+| `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. See [Extension Object](#extension-object) below. |
+| `h` | integer | The height of the creative, in pixels. |
+| `id` | string | The unique ID for the bid object; this is chosen by Xandr for tracking and debugging purposes. |
+| `impid` | string | The ID of the impression object to which this bid applies. Will match the `id` field from the bid request's `impression` object.    |
+| `iurl` | string | A preview URL for the creative in the bid. |
+| `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
+| `w` | integer | The width of the creative, in pixels. |
 
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__16"><code class="ph codeph">bid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__17">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__18">An
-array of bid objects; each bid object relates to an Impression Object in
-the <a
-href="https://docs.xandr.com/bundle/supply-partners/page/incoming-bid-request-from-ssps.html"
-class="xref" target="_blank">Bid Request</a>. Note that one Impression
-Object can have many bid objects. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__bid_object"
-class="xref">Bid Object</a> for more information.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__16"><code
-class="ph codeph">seat</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__18">Either the <code
-class="ph codeph">seat_id</code> passed in the bid request query string
-(if one was provided) or the Xandr buyer <code
-class="ph codeph">member_id</code>. </td>
-</tr>
-</tbody>
-</table>
-
-**Bid Object**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__25"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__26"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__27"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-unique ID for the bid object; this is chosen by <span
-class="ph">Xandr for tracking and debugging purposes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">impid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-ID of the impression object to which this bid applies. Will match the
-<code class="ph codeph">id</code> field from the bid request's <code
-class="ph codeph">impression</code> object.   </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">price</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-bid price expressed in CPM.
-
-Note: Although this value is a float,
-OpenRTB strongly suggests using integer math for accounting to avoid
-rounding errors.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">adid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-Xandr creative ID, viewable via the API using
-the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/creative-service.html"
-class="xref" target="_blank">Creative Service</a>. This ID references
-the actual ad to be served if the bid wins.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">adm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-rendered creative markup to be delivered. Native creatives are returned
-in this field as a JSON-encoded string. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__native_object"
-class="xref">Native Object</a> below.
-
-Note: SSPs can opt to have markup
-delivered to the win notification (nurl) instead by <code
-class="ph codeph">specifying</code> "markup_delivery": 1 in the bid
-request.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">adomain</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">array of strings</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">A
-list of URLs associated with the brand of the creative in the bid.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">iurl</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">A
-preview URL for the creative in the bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">cid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-Xandr buyer's member ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">crid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-Xandr creative ID, viewable via the API using
-the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/creative-service.html"
-class="xref" target="_blank">Creative Service</a>. This ID references
-the actual ad to be served if the bid wins.<br />
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">cat</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">array of strings</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">IAB
-content categories of the creative. Refer to section 5.1 of the IAB
-specification for a list of content categories.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">attr</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">array of integers</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">Set
-of attributes describing the creative. Refer to section 5.3 of the IAB
-specification for a list of attributes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code
-class="ph codeph">dealid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-seller's deal ID (Xandr deal code) from the deal
-object in the <a
-href="https://docs.xandr.com/bundle/supply-partners/page/outgoing-bid-response-to-ssps.html#OutgoingBidResponsetoSSPs-BidRequest"
-class="xref" target="_blank">Bid Request</a>, if this bid relates to a
-deal.
-<p>If the deal does not have a Xandr deal code
-then we will omit this field.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">h</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">integer</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-height of the creative, in pixels.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">w</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">integer</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__27">The
-width of the creative, in pixels.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__25"><code class="ph codeph">ext</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__26">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__27">Used for identifying <span
-class="ph">Xandr-specific extensions to the OpenRTB bid response.
-See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__extension_object"
-class="xref">Extension Object</a> below.</td>
-</tr>
-</tbody>
-</table>
-
-**Native Object**
+### Native object
 
 Xandr supports the following fields to define a
 native object to be included as a JSON-encoded string in the `adm` field
-of the `bid` object. Refer to <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__native_creative_bid_response"
-class="xref">Example Native Creative Bid Response</a> for an example of
+of the `bid` object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of
 formatting this string.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__73"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__74"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__75"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code class="ph codeph">ver</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">integer</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__75">The
-version of the Native Markup in use. This is only returned for Native
-version 1.2 and later.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code
-class="ph codeph">assets</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__75">(Required) List of the native ad's
-assets. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__asset_object"
-class="xref">Asset Object</a> below.<br />
- </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code
-class="ph codeph">link</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__75">(Required) The default destination link
-for the native ad. Each individual asset can have its own link object,
-which applies if that asset is clicked. If an individual asset link does
-not have a link object, the parent link object is used. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__link_object"
-class="xref">Link Object</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code
-class="ph codeph">imptrackers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__75">Array of impression-tracking URLs
-expected to return a 1x1 image or HTTP 204 (No Content) response. This
-is typically passed only when using third-party trackers.
+| Field | Type | Description |
+|---|---|---|
+| `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br>  |
+| `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>**Note**: This field is only returned for Native version 1.1. |
+| `jstracker` | string | Optional JavaScript impression tracker. This is a valid HTML, Javascript is already wrapped in <script> tags. It should be executed at impression time where it can be supported.<br>**Note**: This field is only returned for Native version 1.1. |
+| `link` | object | (Required) The default destination link for the native ad. Each individual asset can have its own link object, which applies if that asset is clicked. If an individual asset link does not have a link object, the parent link object is used. See [Link Object](#link-object) below. |
+| `privacy` | string | If support was indicated in the request, URL of a page informing the user about the buyer’s targeting activity. |
+| `ver` | integer | The version of the Native Markup in use. This is only returned for Native version 1.2 and later. |
 
-
-Note: This field is only returned for
-Native version 1.1.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code
-class="ph codeph">jstracker</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__75">Optional JavaScript impression tracker.
-This is a valid HTML, Javascript is already wrapped in &lt;script&gt;
-tags. It should be executed at impression time where it can be
-supported.
-
-
-Note: This field is only returned for
-Native version 1.1.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__73"><code
-class="ph codeph">privacy</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__74">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__75">If
-support was indicated in the request, URL of a page informing the user
-about the buyer’s targeting activity.</td>
-</tr>
-</tbody>
-</table>
-
-**Asset Object**
+### Asset object
 
 Xandr supports the following fields to define
 one or more native `asset` objects to be included as a JSON-encoded
 string as part of the `native` object in the `adm` field of the `bid`
-object. Refer to <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__native_creative_bid_response"
-class="xref">Example Native Creative Bid Response</a> for an example of
-formatting this string.
+object. Refer to [Example Native Creative Bid Response](#native-creative-bid-response) for an example of formatting this string.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__94"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__95"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__96"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__96">(Required) The unique asset ID. Must
-match an asset ID in the request.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code
-class="ph codeph">required</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">integer</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">Set
-to <code class="ph codeph">1</code> if bidder requires asset to be
-displayed.<br />
- </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code
-class="ph codeph">title</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">The
-title object, for title assets. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__title_object"
-class="xref">Title Object</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code class="ph codeph">img</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">The
-image object, for image assets. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__image_object"
-class="xref">Image Object</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code
-class="ph codeph">video</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">The
-video object, for video assets. Note that in-stream video ads are not
-part of native objects. Native ads may be contain a video as the
-creative itself. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__video_object"
-class="xref">Video Object</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code
-class="ph codeph">data</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">The
-data object, for data assets, such as ratings, prices, and so on. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__data_object"
-class="xref">Data Object</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__94"><code
-class="ph codeph">link</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__95">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__96">The
-link object for individual assets, which applies if that asset is
-clicked. If there is no link object for an asset, the parent link object
-is used. See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__link_object"
-class="xref">Link Object</a> below.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `data` | object | The data object, for data assets, such as ratings, prices, and so on. See [Data Object](#data-object) below. |
+| `id` | integer | (Required) The unique asset ID. Must match an asset ID in the request. |
+| `img` | object | The image object, for image assets. See [Image Object](#image-object) below. |
+| `link` | object | The link object for individual assets, which applies if that asset is clicked. If there is no link object for an asset, the parent link object is used. See [Link Object](#link-object) below. |
+| `required` | integer | Set to 1 if bidder requires asset to be displayed.<br>  |
+| `title` | object | The title object, for title assets. See [Title Object](#title-object) below. |
+| `video` | object | The video object, for video assets. Note that in-stream video ads are not part of native objects. Native ads may be contain a video as the creative itself. See [Video Object](#video-object) below. |
 
-**Title Object**
+### Title object
 
 Used to define a title asset in a native object.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__118"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__119"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__120"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__118"><code
-class="ph codeph">text</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__119">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__120">(Required) The text for a title
-element.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `text` | string | (Required) The text for a title element. |
 
-**Image Object**
+
+### Image object
 
 Used to define a image asset in a native object. Used for all image
 elements of the native ad, such as icons, main image, and so on.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__124"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__125"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__126"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__124"><code
-class="ph codeph">url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__125">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__126">(Required) The URL of the image
-asset.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__124"><code class="ph codeph">w</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__125">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__126">(Recommended) The width of the image,
-in pixels.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__124"><code class="ph codeph">h</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__125">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__126">(Recommended) The height of the image,
-in pixels.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `h` | integer | (Recommended) The height of the image, in pixels. |
+| `url` | string | (Required) The URL of the image asset. |
+| `w` | integer | (Recommended) The width of the image, in pixels. |
 
-**Data Object**
+### Data object
 
 Used to define a data asset in a native object. Used for all
 miscellaneous elements in a native ad, such as ratings, price, review
 count, downloads, and so on.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__136"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__137"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__138"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__136"><code
-class="ph codeph">label</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__137">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__138">An
-optional formatting string name of the data type.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__136"><code
-class="ph codeph">value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__137">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__138">The formatted string of data to be
-displayed (such as <code class="ph codeph">"5 stars"</code> or <code
-class="ph codeph">"$10"</code>).</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `label` | string | An optional formatting string name of the data type. |
+| `value` | string | The formatted string of data to be displayed (such as `"5 stars"` or `"$10"`). |
 
-**Video Object**
+### Video Object
 
 Used to define a video asset. Contains the value of a conforming VAST
 tag.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__145"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__146"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__147"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__145"><code
-class="ph codeph">vasttag</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__146">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__147">(Required) The VAST XML for this
-asset.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `vasttag` | string | (Required) The VAST XML for this asset. |
 
-**Link Object**
+
+### Link object
 
 Used to define the link for a native asset. When clicked, the user is
 taken to the location of the link. Can be defined for individual assets
 as well as for the parent native object, which is used as the default
 for assets when no unique asset link is defined.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__151"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__152"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__153"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__151"><code
-class="ph codeph">url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__152">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__153">(Required) The landing URL for the
-clickable link.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__151"><code
-class="ph codeph">clicktrackers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__152">Array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__153">Array of third-party tracking URLs to
-be fired when the link is clicked.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__151"><code
-class="ph codeph">fallback</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__152">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002657__entry__153">A
-fallback URL to be used if the URL is not supported by the device.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `clicktrackers` | Array of strings | Array of third-party tracking URLs to be fired when the link is clicked. |
+| `fallback` | string | A fallback URL to be used if the URL is not supported by the device. |
+| `url` | string | (Required) The landing URL for the clickable link. |
 
-**Event Trackers Response Object**
+
+**Event trackers response object**
 
 Xandr supports the following fields in the
 `event trackers response` object (Native 1.2 only):
 
-<table id="ID-00002657__table_dyy_gqw_rxb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__table_dyy_gqw_rxb__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__table_dyy_gqw_rxb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__table_dyy_gqw_rxb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__1"><code
-class="ph codeph">event</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__2">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__3">Type of event
-available for tracking. Supported values are:
+| Field | Type | Description |
+|---|---|---|
+| `event` | integer | Type of event available for tracking. Supported values are:<br>` 1: impression` - Impression<br>`2: viewable-mrc50` - Viewable impression using MRC definition at 50% in view for 1 second<br>`3: viewable-mrc100` - Viewable impression using MRC definition at 100% in view for 1 second (ie GroupM standard)<br>`4: viewable-video50` - Viewable impression for video using MRC definition at 50% in view for 2 seconds |
+| `method` | integer | Type of tracking requested for the given event.<br>Supported values are:<br>`1: img` - Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event<br>`2: js` - Javascript-based tracking - URL provided will be inserted as a js tag at the time of the event |
+| `url` | string | The URL of the `img` or `js`. |
 
-<ul>
-<li><code class="ph codeph">1</code>: <code
-class="ph codeph">impression</code> - Impression</li>
-<li><code class="ph codeph">2</code>: <code
-class="ph codeph">viewable-mrc50</code> - Viewable impression using MRC
-definition at 50% in view for 1 second</li>
-<li><code class="ph codeph">3</code>: <code
-class="ph codeph">viewable-mrc100</code> - Viewable impression using MRC
-definition at 100% in view for 1 second (ie GroupM standard)</li>
-<li><code class="ph codeph">4</code>: <code
-class="ph codeph">viewable-video50</code> - Viewable impression for
-video using MRC definition at 50% in view for 2 seconds</li>
-</ul>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__1"><code
-class="ph codeph">method</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__2">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__3">Type of tracking
-requested for the given event.
-<p>Supported values are:</p>
-<ul>
-<li><code class="ph codeph">1</code>: <code class="ph codeph">img</code>
-- Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at
-the time of the event</li>
-<li><code class="ph codeph">2</code>: <code class="ph codeph">js</code>
-- Javascript-based tracking - URL provided will be inserted as a js tag
-at the time of the event</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__table_dyy_gqw_rxb__entry__3">The URL of the <code
-class="ph codeph">img</code> or <code class="ph codeph">js</code>.</td>
-</tr>
-</tbody>
-</table>
 
-**Extension Object**
+### Extension Object
 
 Xandr supports a single object in the `ext`
 object to support Xandr-specific extensions:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__175"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__176"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__177"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__175"><code
-class="ph codeph">appnexus</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__176">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__177">Specifies the <span
-class="ph">Xandr-specific extensions to the OpenRTB bid response.
-See <a
-href="outgoing-bid-response-to-ssps.html#ID-00002657__appnexus_object"
-class="xref">AppNexus</a> Object below.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|---|---|---|
+| `appnexus` | object | Specifies the Xandr-specific extensions to the OpenRTB bid response. See [AppNexus Object](#appnexus-object) below. |
 
-**AppNexus Object**
+
+### AppNexus Object
 
 Xandr supports the following fields in the
 `appnexus` extension object:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002657__entry__181"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002657__entry__182"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002657__entry__183"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Specifies the <span
-class="ph">Xandr brand ID.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">auction_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Specifies the <span
-class="ph">Xandr auction ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">bidder_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Specifies the <span
-class="ph">Xandr ID that corresponds to the winning bid's bidder
-(sometimes referred to as a DSP).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">ranking_price</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Specifies the pCPM bid value for GDLI
-bids.
-
-Note: This field is only enabled for
-specific clients. Please reach out to your account representative for
-this feature.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">exclusive</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Indicates whether the bid is exclusive
-depending on the priority.
-<ul>
-<li>If 0, then bid is not exclusive</li>
-<li>If 1, then bid is exclusive</li>
-</ul>
-
-Note: This field is only enabled for
-specific clients. Please reach out to your account representative for
-this feature.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__181"><code
-class="ph codeph">bid_ad_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__182">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002657__entry__183">Specifies the ad type of the winning
-bid. Possible values:
-<ul>
-<li>0: banner</li>
-<li>1: video</li>
-<li>2: audio</li>
-<li>3: native</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `auction_id` | integer | Specifies the Xandr auction ID. |
+| `bid_ad_type` | int | Specifies the ad type of the winning bid. Possible values:<br>- 0: banner<br>- 1: video<br>- 2: audio<br>- 3: native |
+| `bidder_id` | integer | Specifies the Xandr ID that corresponds to the winning bid's bidder (sometimes referred to as a DSP). |
+| `brand_id` | integer | Specifies the Xandr brand ID. |
+| `exclusive` | boolean | Indicates whether the bid is exclusive depending on the priority.<br>- If 0, then bid is not exclusive<br>- If 1, then bid is exclusive<br>**Note**: This field is only enabled for specific clients. Please reach out to your account representative for this feature. |
+| `ranking_price` | double | Specifies the pCPM bid value for GDLI bids.<br>**Note**: This field is only enabled for specific clients. Please reach out to your account representative for this feature. |
 
 ## Examples
 
-**Banner Creative Bid Response**
+### Banner creative bid response
 
 ``` pre
  {
@@ -983,7 +223,7 @@ bid. Possible values:
 }
 ```
 
-**VAST Creative Bid Response**
+### VAST creative bid response
 
 ``` pre
  {
@@ -1032,7 +272,7 @@ bid. Possible values:
 }
 ```
 
-**Native Creative Bid Response**
+### Native creative bid response
 
 ``` pre
 {

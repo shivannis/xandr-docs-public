@@ -1,12 +1,9 @@
 ---
-Title : Synchronize Your Inventory Structure
-Description : lorem ipsum
+title : Synchronize Your Inventory Structure
+description : lorem ipsum
 ---
 
-
-# Synchronize Your Inventory Structure
-
-
+# Synchronize your inventory structure
 
 You should synchronize your inventory structure with
 Xandr on a regular basis, ideally
@@ -24,20 +21,6 @@ If inventory is not properly categorized and becomes non-detectable by
 Domain Detection, this will result in the inventory being unsellable via
 Xandr, because without proper inventory grouping
 and classification Xandr cannot reliably enforce
-its <a href="https://wiki.xandr.com/display/policies/Policies+for+Selling"
-class="xref" target="_blank">Policies for Selling</a> (login required). 
+its [Policies for Selling](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx) (login required). 
 
-Use the <a
-href="https://docs.xandr.com/bundle/supply-partners/page/use-the-ui-to-synchronize-your-inventory-structure.html"
-class="xref" target="_blank">UI to synchronize your inventory
-structure</a> and <a
-href="https://docs.xandr.com/bundle/supply-partners/page/use-the-api-to-synchronize-your-inventory-structure.html"
-class="xref" target="_blank">Use the API to synchronize your inventory
-structure</a> pages to introduce you to the basic sell-side object
-hierarchy and then walk you through the process of mapping your supply
-to these Xandr objects using
-Xandr UI or the API.
-
-
-
-
+Use the [UI to synchronize your inventory structure](use-the-ui-to-synchronize-your-inventory-structure.md) and [Use the API to synchronize your inventory structure](use-the-api-to-synchronize-your-inventory-structure.md) pages to introduce you to the basic sell-side object hierarchy and then walk you through the process of mapping your supply to these Xandr objects using Xandr UI or the API.
