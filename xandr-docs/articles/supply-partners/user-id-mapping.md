@@ -1,8 +1,6 @@
 ---
 Title : User ID Mapping
-Description : To store the mapping in your system, you must place a 1x1 image pixel on
-your pages that calls the **getUID** service and
-returns Xandr UUIDs to you for storage. Format
+Description : lorem ipsum
 ---
 
 
