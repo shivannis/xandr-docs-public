@@ -439,7 +439,7 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 | Field | Type | Description |
 |:---|:---|:---|
 | `ua` | string | (Recommended) Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4". |
-| `geo` | object | Specifies the location of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. See Geo Object for details. |
+| `geo` | object | Specifies the location of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. See [Geo Object](#geo-object) for details. |
 | `dnt` | integer | Specifies the Do Not Track setting:<br>`0`: Do Not Track is set to false in browser (tracking is allowed)<br>`1`: Do Not Track is set to true in browser (user has opted out of tracking) |
 | `ip` | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. |
 | `ipv6` | string | Specifies the IPv6 address closest to the device. Used only for geolocation for buyer targeting. |
