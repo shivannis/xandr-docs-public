@@ -277,7 +277,7 @@ Xandr supports the following fields to define one or more `asset` objects in the
 | `title` | object | Specifies information about the title of the asset. See [Title Object](#title-object) below. |
 | `img` | object | Specifies information about the image for the asset. See [Image Object](#image-object) below. |
 | `data` | object | Specifies information about data for the asset. See [Assets Data Object](#assets-data-object) below. |
-| `video` | object | Specifies information about the video asset. See [Video Object](#video-object) below. |
+| `video` | object | Specifies information about the video asset. See [Video Object](#video-object-of-the-assets-object) below. |
 
 ### Title object
 
@@ -309,7 +309,7 @@ Xandr supports the following fields in the `data` object of the `assets` object:
 | `type` | integer | Specifies the type ID of the element supported by the publisher. The publisher can display this information in an appropriate format. Supported values are:<br>`1: sponsored` - "Sponsored By" message, where the the response contains the brand name of the sponsor<br>`2: desc` - Descriptive text associated with the product or service being advertised<br>`3: rating` - Rating of the product being offered to the user. For example, an app's rating in an app store from 0 to 5.<br>`12: ctatext` - Descriptive text for a "call to action" button for the destination URL |
 | `len` | integer | Maximum length of the text in the element's response. |
 
-**Video object**
+### Video object of the assets object
 
 Xandr supports the following fields in the `video` object of the `assets` object:
 
@@ -320,7 +320,7 @@ Xandr supports the following fields in the `video` object of the `assets` ob
 | `maxduration` | integer | Maximum video ad duration in seconds. |
 | `protocols` | array of integers | An array of video protocols the publisher can accept in the bid response.<br>Currently supported values are:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrapper<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0 |
 
-### Private Marketplace Object
+### Private marketplace object
 
 Xandr supports the following fields in the `pmp` object of the `imp` object to support private marketplaces (deals) between buyers and sellers that may apply to this impression:
 
@@ -414,7 +414,7 @@ Xandr supports the following fields in the Content object:
 | `len` | integer | Length of content in seconds; appropriate for video or audio. |
 | `data`  | object array  | Additional content data. Each Data object represents a different data source. Refer to Section 3.2.16 in the IAB specification. |
 
-**Content extension object**
+### Content extension object
 
 Xandr supports the following fields in the ext object:
 
