@@ -31,8 +31,8 @@ Only the features relevant to Supply Partners are covered. Please ignore other f
     - In the **Currency** field, select the primary currency used by the publisher.
     - Open **Advanced Options** and enter the ID of the publisher from your own system in the **Code** field. In Bid Requests, you will pass this code in the `ext_pub_code` field.  
 
-> [!NOTE]
-> Using the **Code** field is highly recommended at both the publisher and placement levels to ensure that your inventory is as granular as possible so that it can be investigated accurately for quality issues, and specifically for domain detectability. While not required, this step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
+    > [!NOTE]
+    > Using the **Code** field is highly recommended at both the publisher and placement levels to ensure that your inventory is as granular as possible so that it can be investigated accurately for quality issues, and specifically for domain detectability. While not required, this step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
 
 1. On the **Exposure Settings** tab, select how much information you want Xandr to expose to buyers when reselling the publisher's placements. The more information you expose, the easier it is for buyers to target the resold inventory.
     - **Expose domains for reporting** - Check this box if you want to let buyers that purchase your inventory see the domains associated with the purchased impressions in reporting.
@@ -82,8 +82,8 @@ For each of the publisher's placements, follow the steps below. Note that only t
     - Check **Enable this placement for reselling to other platform members**. Although this setting will soon be unnecessary, it is important that you set it currently.
     - Click **+ Code (Advanced)** and enter the ID of the placement from your own system in the **Code** field. In Bid Requests, you will pass this code in the `ext_pub_code` field.
 
-> [!NOTE]
-> Using the **Code** field is required at both the publisher and placement levels to ensure that your inventory is as granular as possible so that it can be investigated accurately for quality issues, and specifically for domain detectability. While not required, this step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
+    > [!NOTE]
+    > Using the **Code** field is required at both the publisher and placement levels to ensure that your inventory is as granular as possible so that it can be investigated accurately for quality issues, and specifically for domain detectability. While not required, this step will help you to split your inventory into highly detectable and less detectable tags, allowing you to isolate the impacts of non-detectable domains on the rest of your inventory's viability.
 
 1. In the **Allowed Media** and **Size** sections, leave the default selections. These details are passed in your bid request and don't need to be set here.
 

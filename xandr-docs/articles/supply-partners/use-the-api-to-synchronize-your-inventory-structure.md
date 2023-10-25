@@ -31,8 +31,8 @@ Your JSON must include the following fields
 | `name` | string (255) | Name of the legal entity of the company you pay money to. For instance, if you buy from `espn.com`, the publisher should be named as the legal entity for ESPN. |
 | `is_oo` | boolean | If true, the publisher is owned and operated by the network, meaning the network gets 100% of the revenue. Setting this to true also enables you to skip setting up payment rules. <br> **Default**: false |
 | `code` | string (100) | The code that identifies the publisher from your inventory.  Use the value of the `BidRequest.Site.Publisher.id` or `BidRequest.App.Publisher.id` fields. |
-| `reselling_exposure` | enum | The publisher's exposure for reselling to other members of the platform. <br> **Possible values**: "public" or "private." <br> **Default**:"private" |
-| `state` | enum | The state of the publisher. <br> **Possible values**: "active" or "inactive." <br> **Default**:"inactive" |
+| `reselling_exposure` | enum | The publisher's exposure for reselling to other members of the platform. <br> **Possible values**: "public" or "private." <br> **Default**: "private" |
+| `state` | enum | The state of the publisher. <br> **Possible values**: "active" or "inactive." <br> **Default**: "inactive" |
 
 ### Example
 
