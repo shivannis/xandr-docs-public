@@ -1,8 +1,6 @@
 ---
 Title : OpenRTB Bid Request Requirements
-Description : Xandr supply partners must provide sufficient
-auction metadata on <a
-href="https://docs.xandr.com/bundle/supply-partners/page/incoming-bid-request-from-ssps.html"
+Description : lorem ipsum
 ---
 
 
