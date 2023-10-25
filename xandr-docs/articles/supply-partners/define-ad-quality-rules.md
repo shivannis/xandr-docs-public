@@ -197,7 +197,7 @@ all creatives.</td>
 </tr>
 </tbody>
 </table>
-![Supply partners - Part A](media/supply-partners-a.png)
+![Supply partners - Part A]("media/supply-partners-a.png")
 
 
 
