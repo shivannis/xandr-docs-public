@@ -1,7 +1,6 @@
 ---
 Title : Deal Eligibility Requirements
-Description : To demonstrate that you understand the
-<a href="https://docs.xandr.com/bundle/xandr-api/page/deal-service.html"
+Description : lorem ipsum
 ---
 
 
