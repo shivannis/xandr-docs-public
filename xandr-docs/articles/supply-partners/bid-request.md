@@ -34,7 +34,7 @@ only one of the fields in your JSON-formatted file. If both are included, the in
 | `ext_auction_id` | string | The supply partner ID for the auction. <br> **Required:** yes |
 | `width` | int | The width of the placement.<br>**Required:** yes |
 | `height` | int | The height of the placement.<br>**Required:** yes |
-| `ad_format` | enum | The format of the creative that should be returned. Possible values: "iframe", "javascript", or "vast". **Note about VAST:** The "vast" format is **not supported**. However, see the VAST bid request in the [Examples](#examples) section of what a bid request for a VAST video creative is likely to look like.<br>**Required:** yes |
+| `ad_format` | enum | The format of the creative that should be returned. Possible values: "iframe", "javascript", or "vast". <br><br>**Note about VAST:** The "vast" format is **not supported**. However, see the VAST bid request in the [Examples](#examples) section of what a bid request for a VAST video creative is likely to look like.<br><br>**Required:** yes |
 | `template_id` | int | **Not yet supported**. For VAST video creatives, you may want Xandr to include custom parameters in the `ad_tag` field of the bid response. To accomplish this, Xandr can create a "supply template" for you, which you then reference here when requesting VAST video. For more details, see [Supply Templates](bid-response.md#supply-templates) in the Bid Response documentation.<br>**Required:** no |
 | `ip_address` | string | The IP address for the user viewing the page.<br>**Required:** no |
 | `is_secure` | boolean | true or false. The supply partner can request an SSL version of the creative by setting this to true. |

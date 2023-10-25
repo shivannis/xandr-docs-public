@@ -32,7 +32,7 @@ After you send a bid request, Xandr returns a bid response in JSON format. This 
 | `no_bid` | boolean | If true, Xandr does not have a bid for your auction.   | `false` |
 | `request_error` | boolean | If true, an error prevented Xandr from submitting a bid. | `false` |
 | `request_error_id` | int | The ID of the error. This field is returned only when request_error is true. For all the possible error IDs and their meanings, see **[Errors](#errors)** section below. |`3` |
-| `ad_tag` | string | The ad tag that is placed on the web page if Xandr wins your auction. Note: If you wish to track clicks, Xandr can add a macro for your click URL: `&pubclick=%%pub_click_url%%`. To learn more about this functionality, please reach out to your implementation team. | See [examples](#examples) below. |
+| `ad_tag` | string | The ad tag that is placed on the web page if Xandr wins your auction. <br><br> **Note:** If you wish to track clicks, Xandr can add a macro for your click URL: `&pubclick=%%pub_click_url%%`. <br><br>To learn more about this functionality, please reach out to your implementation team. | See [examples](#examples) below. |
 
 ## Supply templates
 
@@ -73,7 +73,7 @@ The supply template that Xandr would build for you would add this information t
 ```
 
 > [!NOTE]
-> For the full bid response for a VAST video creative, see the **[examples](#examples)** below.
+> For the full bid response for a VAST video creative, see the **[Examples](#examples)** below.
 
 ## Errors
 
