@@ -1,8 +1,6 @@
 ---
 Title : Use the API to Synchronize Your Inventory Structure
-Description : This page shows you how to use Xandr's API to
-map your supply to the corresponding Xandr
-objects and test the mapping with a debug auction. Please follow these
+Description : lorem ipsum
 ---
 
 
