@@ -1,7 +1,6 @@
 ---
 Title : Xandr Supply Partner Support
-Description : Full product support is available only to Xandr
-customers. If you are not yet a Xandr customer,
+Description : lorem ipsum
 ---
 
 
@@ -41,7 +40,7 @@ class="ph">https://help.xandr.com</a>.
 
 
 
-<div id="ID-000050e2__section_sfq_v5p_mwb" >
+
 
 ## Other Resources
 
