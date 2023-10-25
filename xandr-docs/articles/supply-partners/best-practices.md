@@ -1,8 +1,6 @@
 ---
 Title : Best Practices
-Description : Below are a set of best practices Xandr requires
-Supply Partners to abide by to be in good standing and to have access to
-the open exchange. Xandr reserves the right to
+Description : lorem ipsum
 ---
 
 
