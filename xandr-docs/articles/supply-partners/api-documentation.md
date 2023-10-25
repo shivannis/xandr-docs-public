@@ -1,8 +1,6 @@
 ---
 Title : API Documentation
-Description : Information about Xandr's API is available in
-the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/digital-platform-api-home.html"
+Description : lorem ipsum
 ---
 
 
