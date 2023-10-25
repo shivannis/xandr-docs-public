@@ -35,8 +35,7 @@ prevent fraud and bot activity, recognizing browsers for rendering
 purposes, and targeting buyers based on their devices. Furthermore,
 buyers will no longer be able to take advantage of device targeting.
 
-<div id="client-hints-for-ssp-clients__p-d19e99fe-9cd2-43c2-b6fc-5195303bb5c4"
->
+
 
 **Current UA string (detected as Tablet device):**
 
@@ -46,8 +45,7 @@ Mozilla/5.0 (Linux; Android 9; SM-T810) AppleWebKit/537.36 (KHTML, like Gecko) C
 
 
 
-<div id="client-hints-for-ssp-clients__p-8e6e97cd-65e5-4329-b333-45475d2f63da"
->
+
 
 **Same user with reduced UA string - not using Client Hints (detected as
 Desktop device):**
@@ -60,8 +58,7 @@ Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome
 
 
 
-<div id="client-hints-for-ssp-clients__section-a6257d7f-16d1-418c-9e77-2f9755539e7e"
->
+
 
 ## Scenarios
 
@@ -74,13 +71,11 @@ Open RTB 2.6 below.
 
 
 
-<div id="client-hints-for-ssp-clients__section-98175084-7766-4fdc-8e79-9630c79fe43c"
->
+
 
 **Open RTB 2.4**
 
-<div id="client-hints-for-ssp-clients__p-5d7d08cd-8f64-460a-892c-cb9c0f72cfb7"
->
+
 
 ``` pre
 "device":{
@@ -141,8 +136,7 @@ Open RTB 2.6 below.
 
 **Open RTB 2.6**
 
-<div id="client-hints-for-ssp-clients__p-3804a72e-1b71-436a-b8d2-11f831887e24"
->
+
 
 ``` pre
 "device":{
