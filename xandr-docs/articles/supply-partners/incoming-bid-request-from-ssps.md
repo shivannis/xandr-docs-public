@@ -277,7 +277,7 @@ Xandr supports the following fields to define one or more `asset` objects in the
 | `title` | object | Specifies information about the title of the asset. See [Title Object](#title-object) below. |
 | `img` | object | Specifies information about the image for the asset. See [Image Object](#image-object) below. |
 | `data` | object | Specifies information about data for the asset. See [Assets Data Object](#assets-data-object) below. |
-| `video` | object | Specifies information about the video asset. See [Video Object](#video-object-of-the-assets-object) below. |
+| `video` | object | Specifies information about the video asset. See [Video Object](#video-object-of-assets-object) below. |
 
 ### Title object
 
@@ -309,7 +309,7 @@ Xandr supports the following fields in the `data` object of the `assets` object:
 | `type` | integer | Specifies the type ID of the element supported by the publisher. The publisher can display this information in an appropriate format. Supported values are:<br>`1: sponsored` - "Sponsored By" message, where the the response contains the brand name of the sponsor<br>`2: desc` - Descriptive text associated with the product or service being advertised<br>`3: rating` - Rating of the product being offered to the user. For example, an app's rating in an app store from 0 to 5.<br>`12: ctatext` - Descriptive text for a "call to action" button for the destination URL |
 | `len` | integer | Maximum length of the text in the element's response. |
 
-### Video object of the assets object
+### Video object of assets object
 
 Xandr supports the following fields in the `video` object of the `assets` object:
 
