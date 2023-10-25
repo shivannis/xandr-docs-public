@@ -1,9 +1,6 @@
 ---
 Title : Integration Process
-Description : This document includes the necessary information for supply partners to
-review, plan, and execute a new OpenRTB integration, or migrate from a
-custom SSP protocol integration to
-<a href="https://www.iab.com/guidelines/real-time-bidding-rtb-project/"
+Description : lorem ipsum
 ---
 
 
