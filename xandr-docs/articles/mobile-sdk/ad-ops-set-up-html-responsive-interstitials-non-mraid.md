@@ -18,7 +18,7 @@ To set up your creative, follow the general instructions in the UI documentation
 - Choose a **Creative format** of **Third Party URL**.
 - Choose an **Output Type** of **HTML**.
 - Choose a **Media Type** of **Interstitial: Interstitial**.
-- In the Template field, choose Xandr: **Mobile SDK** (ID 38895).
+- In the **Template** field, choose **Xandr: Mobile SDK** (ID 38895).
 
 ## Placement settings
 
