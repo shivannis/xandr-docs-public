@@ -1,18 +1,9 @@
 ---
-Title : Ad Ops for Mobile SDK
-Description : This section describes how to implement ad ops settings for our mobile
-SDKs.
-ms.custom : android-sdk
+title: Ad Ops for Mobile SDK
+description: This section describes how to implement ad ops settings for our mobile SDKs.
+ms.custom: android-sdk
 ---
 
+# Ad ops for mobile SDK
 
-# Ad Ops for Mobile SDK
-
-
-
-This section describes how to implement ad ops settings for our mobile
-SDKs.
-
-
-
-
+This section describes how to implement ad ops settings for our mobile SDKs.

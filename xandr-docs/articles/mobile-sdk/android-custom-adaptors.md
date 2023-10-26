@@ -1,44 +1,23 @@
 ---
-Title : Android Custom Adaptors
-Description : Custom adaptors allow our SDK to call out to another SDK installed on
-the same device, usually for mediation. This document describes the code
-ms.custom : android-sdk
-
+title: Android Custom Adaptors
+description: In this article, learn what custom adaptors are, how to create your own custom adaptors, and the callbacks to be implemented by the custom adaptors.
+ms.custom: android-sdk
 ---
 
+# Android custom adaptors
 
-# Android Custom Adaptors
+Custom adaptors allow our SDK to call out to another SDK installed on the same device, usually for mediation. This document describes the code you must write to create your own custom adaptors.
 
-
-
-
-
-Custom adaptors allow our SDK to call out to another SDK installed on
-the same device, usually for mediation. This document describes the code
-you must write to create your own custom adaptors.
-
-
-
-<b>Note:</b> The interfaces described here are
-exactly what we used to implement our own mediation adaptors.
-
-
-
-
-
-
+> [!NOTE]
+> The interfaces described here are exactly what we used to implement our own mediation adaptors.
 
 ## Banners
 
-In order to show mediated banner ads, you must implement the
-`MediatedBannerAdView` interface, whci consists of two methods:
-`requestAd` and `destroy`.
+In order to show mediated banner ads, you must implement the `MediatedBannerAdView` interface, which consists of two methods: `requestAd` and `destroy`.
 
-You are also responsible for implementing the callbacks that translate
-the mediated SDK’s events into events that are understood by our mobile
-SDK. For details, see the example implementation below:
+You are also responsible for implementing the callbacks that translate the mediated SDK’s events into events that are understood by our mobile SDK. For details, see the example implementation below:
 
-``` pre
+```
  /**
  * The custom adaptor for banners must implement our mobile SDK
  * interface `MediatedBannerAdView`. In this example, the class also
@@ -117,48 +96,23 @@ public class TestMediatedBanner implements MediatedBannerAdView {
 }
 ```
 
-Xandr's mobile SDK calls the `requestAd` method
-when the third-party SDK should begin requesting an ad. `requestAd`
-returns a view that holds the ad from the third-party SDK; it takes the
-following parameters:
+Xandr's mobile SDK calls the `requestAd` method when the third-party SDK should begin requesting an ad. `requestAd` returns a view that holds the ad from the third-party SDK; it takes the following parameters:
 
-- `mBC`: A `MediatedBannerAdViewController` through which the adaptor
-  must send events to our SDK.
-- `activity`: `Activity` context through which the adaptor can
-  instantiate its view object.
-- `parameter`: An optional opaque string passed from the server, this
-  can be used to define SDK-specific parameters such as additional
-  targeting information. The encoding of the contents of this string are
-  entirely up to the implementation of the third-party SDK adaptor.
-- `uid`: The network ID for this ad call. This ID is opaque to our
-  mobile SDK; the ID’s contents and their encoding are up to the
-  implementation of the third-party SDK. In other words, you must
-  populate this with a value understood by the third-party SDK’s ad
-  server.
-- `width`: The width of the advertisement in pixels as defined in the
-  `MediatedBannerAdView` object that initiated this call.
-- `height`: The height of the advertisement in pixels as defined in the
-  `MediatedBannerAdView` object that initiated this call.
-- `targetingParameters` A `TargetingParameters` object containing
-  targeting information that was passed to our mobile SDK such as age,
-  gender, and location.
-
-
-
-
+- `mBC`: A `MediatedBannerAdViewController` through which the adaptor must send events to our SDK.
+- `activity`: `Activity` context through which the adaptor can instantiate its view object.
+- `parameter`: An optional opaque string passed from the server, this can be used to define SDK-specific parameters such as additional targeting information. The encoding of the contents of this string are entirely up to the implementation of the third-party SDK adaptor.
+- `uid`: The network ID for this ad call. This ID is opaque to our mobile SDK; the ID’s contents and their encoding are up to the implementation of the third-party SDK. In other words, you must populate this with a value understood by the third-party SDK’s ad server.
+- `width`: The width of the advertisement in pixels as defined in the `MediatedBannerAdView` object that initiated this call.
+- `height`: The height of the advertisement in pixels as defined in the `MediatedBannerAdView` object that initiated this call.
+- `targetingParameters` A `TargetingParameters` object containing targeting information that was passed to our mobile SDK such as age, gender, and location.
 
 ## Interstitials
 
-Interstitials need to be prefetched by the mediated SDK before being
-shown to the user. As with banners, you must implement `requestAd`. You
-must also implement `isReady` to let the user know if an ad is
-available, and `show`, which displays an ad.
+Interstitials need to be prefetched by the mediated SDK before being shown to the user. As with banners, you must implement `requestAd`. You must also implement `isReady` to let the user know if an ad is available, and `show`, which displays an ad.
 
-You are responsible for implementing the callbacks that translate the
-mediated SDK’s events into events that are understood by our SDK. For
-details, see the example implementation below:
+You are responsible for implementing the callbacks that translate the mediated SDK’s events into events that are understood by our SDK. For details, see the example implementation below:
 
-``` pre
+```
 /**
  * The custom adaptor for interstitials must implement our mobile SDK
  * interface `MediatedInterstitialAdView`. In this example, the class also
@@ -246,86 +200,35 @@ public class TestMediatedInterstitial implements MediatedInterstitialAdView {
 }
 ```
 
-``` pre
-The adaptor must call requestAd when the third-party SDK should begin requesting an ad. It takes the following arguments:
-```
+The adaptor must call `requestAd` when the third-party SDK should begin requesting an ad. It takes the following arguments:
 
-- `mIC`: A `MediatedInterstitialAdViewController` through which the
-  adaptor must send events to our SDK.
-- `activity`: `Activity` context through which the adaptor can
-  instantiate its view object.
-- `parameter`: An optional opaque string passed from the server, this
-  can be used to define SDK-specific parameters such as additional
-  targeting information. The encoding of the contents of this string are
-  entirely up to the implementation of the third-party SDK adaptor.
-- `uid`: The network ID for this ad call. This ID is opaque to our SDK;
-  the ID’s contents and their encoding are up to the implementation of
-  the third-party SDK. In other words, the parameter must be populated
-  with values understood by the third-party SDK’s ad server.
-- `targetingParameters`: A `TargetingParameters` object containing
-  targeting information that was passed to our mobile SDK such as age,
-  gender, and location.
+- `mIC`: A `MediatedInterstitialAdViewController` through which the adaptor must send events to our SDK.
+- `activity`: `Activity` context through which the adaptor can instantiate its view object.
+- `parameter`: An optional opaque string passed from the server, this can be used to define SDK-specific parameters such as additional targeting information. The encoding of the contents of this string are entirely up to the implementation of the third-party SDK adaptor.
+- `uid`: The network ID for this ad call. This ID is opaque to our SDK; the ID’s contents and their encoding are up to the implementation of the third-party SDK. In other words, the parameter must be populated with values understood by the third-party SDK’s ad server.
+- `targetingParameters`: A `TargetingParameters` object containing targeting information that was passed to our mobile SDK such as age, gender, and location.
 
-In addition to `requestAd`, the `MediatedInterstitialAdView` interface
-requires you to implement these methods:
+In addition to `requestAd`, the `MediatedInterstitialAdView` interface requires you to implement these methods:
 
-- `isReady`: Our SDK calls this method to check if the interstitial view
-  is ready when the user calls `InterstitialAdView.isReady`.
-- `show`: Our SDK calls this method to show the interstitial view when
-  the user has called `InterstitialAdView.show`.
+- `isReady`: Our SDK calls this method to check if the interstitial view is ready when the user calls `InterstitialAdView.isReady`.
+- `show`: Our SDK calls this method to show the interstitial view when the user has called `InterstitialAdView.show`.
 
+## Required callbacks
 
+The callbacks listed below must be implemented by your custom adaptor. Note that these callbacks are required whether the ad in question is a banner or interstitial. You can see examples of their use in the code samples above.
 
+- `onAdLoaded`: Called to indicate that the mediated SDK’s request completed and returned a banner successfully.
+- `onAdFailed`: Called to indicate that the mediated SDK’s request failed to return a valid ad.
 
+## Optional callbacks
 
-## Required Callbacks
-
-The callbacks listed below must be implemented by your custom adaptor.
-Note that these callbacks are required whether the ad in question is a
-banner or interstitial. You can see examples of their use in the code
-samples above.
-
-- `onAdLoaded`: Called to indicate that the mediated SDK’s request
-  completed and returned a banner successfully.
-- `onAdFailed`: Called to indicate that the mediated SDK’s request
-  failed to return a valid ad.
-
-
-
-
-
-## Optional Callbacks
-
-
-
-The callbacks listed below should be implemented in custom adaptors for
-both banners and interstitials.
+The callbacks listed below should be implemented in custom adaptors for both banners and interstitials.
 
 - `onAdClicked`: The ad was clicked.
 - `onAdExpanded`: The ad is presenting a modal view.
 - `onAdCollapsed`: The ad is dismissing the modal view.
 
+## Related topics
 
-
-
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="android-sdk-integration-instructions.md"
-  class="xref" target="_blank">Android SDK Integration Instructions</a>
-- <a
-  href="mediate-with-android-sdk-instructions.md"
-  class="xref" target="_blank">Mediate with Android SDK Instructions</a>
-
-
-
-
-
-
-
-
+- [Android SDK Integration Instructions](android-sdk-integration-instructions.md)
+- [Mediate with Android SDK Instructions](mediate-with-android-sdk-instructions.md)

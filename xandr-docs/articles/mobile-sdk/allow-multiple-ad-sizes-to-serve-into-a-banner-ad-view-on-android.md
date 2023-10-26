@@ -1,39 +1,23 @@
 ---
-Title : Allow Multiple Ad Sizes to Serve into a Banner Ad View on Android
-Description : Banner ads with a fixed size may not get as much demand as you'd like.
-ms.custom : android-sdk
-
+title: Allow Multiple Ad Sizes to Serve into a Banner Ad View on Android
+description: In this article, learn how to allow multiple ad sizes to serve into a banner ad view on Android.
+ms.custom: android-sdk
 ---
 
+# Allow multiple ad sizes to serve into a banner ad view on Android
 
-# Allow Multiple Ad Sizes to Serve into a Banner Ad View on Android
+Banner ads with a fixed size may not get as much demand as you'd like. To open up a banner ad view to more demand, and hopefully more revenue, you can allow more than one ad size to serve.
 
+Follow the instructions below to allow multiple ad sizes to serve into your banner ad views.
 
+To allow multiple ad sizes to serve into a banner ad view on Android, use the following methods on `BannerAdView`:
 
-Banner ads with a fixed size may not get as much demand as you'd like.
-To open up a banner ad view to more demand, and hopefully more revenue,
-you can allow more than one ad size to serve.
+- `setAdSizes(ArrayList<AdSize> adSizes)`: Takes a list of the platform ad sizes that may be inserted into the current banner ad view.
+- `getAdSizes()`: Returns the sizes allowed to be displayed in the current banner ad view.
 
-Follow the instructions below to allow multiple ad sizes to serve into
-your banner ad views.
+## Example
 
-
-
-To allow multiple ad sizes to serve into a banner ad view on Android,
-use the following methods on `BannerAdView`:
-
-- `setAdSizes(ArrayList<AdSize> adSizes)`: Takes a list of the platform
-  ad sizes that may be inserted into the current banner ad view.
-- `getAdSizes()`: Returns the sizes allowed to be displayed in the
-  current banner ad view.
-
-
-
-**Example**:
-
-
-
-``` pre
+```
 // Create the AdView and set its placement ID.
 BannerAdView bav = new BannerAdView(this);
 bav.setPlacementID("1326299");
@@ -53,9 +37,3 @@ layout.addView(bav);
 // Load an ad!
 bav.loadAd();
 ```
-
-
-
-
-
-
