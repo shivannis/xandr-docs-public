@@ -1,64 +1,62 @@
-- name: Supply Partners
+- name: Supply Partners Reference Documentation
   href: index.yml
-- name: Supply Partners
-  items: 
-  - name: Getting Started
-    items:
-    - name: How Integration Works
-      href: how-integration-works.md
-    - name: Integration Process
-      href: integration-process.md
-    - name: FAQ - Integration Process
-      href: faq-integration-process.md
-  - name: Best Practices
+- name: Getting Started
+  items:
+  - name: How Integration Works
+    href: how-integration-works.md
+  - name: Integration Process
+    href: integration-process.md
+  - name: FAQ - Integration Process
+    href: faq-integration-process.md
+- name: Best Practices
+  items:
+  - name: Overview
+    href: best-practices.md
+  - name: Understanding the Sell-Side Object Hierarchy
+    href: understanding-the-sell-side-object-hierarchy.md
+  - name: Synchronize Your Inventory Structure
     items:
     - name: Overview
-      href: best-practices.md
-    - name: Understanding the Sell-Side Object Hierarchy
-      href: understanding-the-sell-side-object-hierarchy.md
-    - name: Synchronize Your Inventory Structure
-      items:
-      - name: Overview
-        href: synchronize-your-inventory-structure.md
-      - name: Use the UI to Synchronize Your Inventory Structure
-        href: use-the-ui-to-synchronize-your-inventory-structure.md
-      - name: Use the API to Synchronize Your Inventory Structure
-        href: use-the-api-to-synchronize-your-inventory-structure.md
-    - name: Define Ad Quality Rules
-      href: define-ad-quality-rules.md
-    - name: RTB Eligibility Requirements
-      items:
-      - name: Overview
-        href: rtb-eligibility-requirements.md
-      - name: Deal Eligibility Requirements
-        href: deal-eligibility-requirements.md
-      - name: OpenRTB Bid Request Requirements
-        href: openrtb-bid-request-requirements.md
-    - name: Inventory Relationship FAQ
-      href: inventory-relationship-faq.md
-  - name: API Documentation
-    href: api-documentation.md
-  - name: OpenRTB Specs
+      href: synchronize-your-inventory-structure.md
+    - name: Use the UI to Synchronize Your Inventory Structure
+      href: use-the-ui-to-synchronize-your-inventory-structure.md
+    - name: Use the API to Synchronize Your Inventory Structure
+      href: use-the-api-to-synchronize-your-inventory-structure.md
+  - name: Define Ad Quality Rules
+    href: define-ad-quality-rules.md
+  - name: RTB Eligibility Requirements
     items:
-    - name: Incoming Bid Request from SSPs
-      href: incoming-bid-request-from-ssps.md
-    - name: Outgoing Bid Response to SSPs
-      href: outgoing-bid-response-to-ssps.md
-    - name: IAB Content Taxonomy Support
-      href: iab-content-taxonomy-support.md
-    - name: Client Hints for SSP Clients
-      href: client-hints-for-ssp-clients.md
-  - name: Selling Deals on Xandr
-    href: selling-deals-on-xandr.md
-  - name: User ID Mapping
-    href: user-id-mapping.md
-  - name: Supply Integration (ASI)
-    items:
-    - name: Bid Request
-      href: bid-request.md
-    - name: Bid Response
-      href: bid-response.md
-  - name: External Seller Troubleshooting
-    href: external-seller-troubleshooting.md
-  - name: Xandr Supply Partner Support
-    href: xandr-supply-partner-support.md
+    - name: Overview
+      href: rtb-eligibility-requirements.md
+    - name: Deal Eligibility Requirements
+      href: deal-eligibility-requirements.md
+    - name: OpenRTB Bid Request Requirements
+      href: openrtb-bid-request-requirements.md
+  - name: Inventory Relationship FAQ
+    href: inventory-relationship-faq.md
+- name: API Documentation
+  href: api-documentation.md
+- name: OpenRTB Specs
+  items:
+  - name: Incoming Bid Request from SSPs
+    href: incoming-bid-request-from-ssps.md
+  - name: Outgoing Bid Response to SSPs
+    href: outgoing-bid-response-to-ssps.md
+  - name: IAB Content Taxonomy Support
+    href: iab-content-taxonomy-support.md
+  - name: Client Hints for SSP Clients
+    href: client-hints-for-ssp-clients.md
+- name: Selling Deals on Xandr
+  href: selling-deals-on-xandr.md
+- name: User ID Mapping
+  href: user-id-mapping.md
+- name: Supply Integration (ASI)
+  items:
+  - name: Bid Request
+    href: bid-request.md
+  - name: Bid Response
+    href: bid-response.md
+- name: External Seller Troubleshooting
+  href: external-seller-troubleshooting.md
+- name: Xandr Supply Partner Support
+  href: xandr-supply-partner-support.md
