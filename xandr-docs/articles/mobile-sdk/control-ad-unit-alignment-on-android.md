@@ -1,29 +1,20 @@
 ---
-Title : Control Ad Unit Alignment on Android
-Description : This page has instructions on how to control the alignment of banner
-ads.
-ms.custom : android-sdk
-
+title: Control Ad Unit Alignment on Android
+description: In this article, explore detailed instructions on how to control ad unit alignment on Android devices.
+ms.custom: android-sdk
 ---
 
+# Control ad unit alignment on Android
 
-# Control Ad Unit Alignment on Android
+This page has instructions on how to control the alignment of banner ads.
 
+Use the `BannerView.setAdAlignment(enum AdAlignment)` method to override the alignment of the ad unit within the banner ad view:
 
-
-This page has instructions on how to control the alignment of banner
-ads.
-
-Use the `BannerView.setAdAlignment(enum AdAlignment)` method to override
-the alignment of the ad unit within the banner ad view:
-
-``` pre
+``` 
 bav.setAdAlignment(BOTTOM_CENTER);
 ```
 
-This will only work in cases where the banner ad view's frame is larger
-than the ad. The default alignment is `CENTER`. The ad can be aligned in
-one of the following ways:
+This will only work in cases where the banner ad view's frame is larger than the ad. The default alignment is `CENTER`. The ad can be aligned in one of the following ways:
 
 - center
 - top left
@@ -34,7 +25,3 @@ one of the following ways:
 - bottom left
 - bottom center
 - bottom right
-
-
-
-

@@ -1,50 +1,30 @@
 ---
-Title : forceCreativeId for Android
-Description : A forceCreativeId specifies the ID of a creative that should be forced
-to appear in a placement. It is used to request for the desired creative
-ms.custom : android-sdk
+title: forceCreativeId for Android
+description: In this article, discover how to use forceCreativeId on Android devices. Learn about its scope, method, and an example for better understanding.
+ms.custom: android-sdk
 ---
-
 
 # forceCreativeId for Android
 
-
-
-A forceCreativeId specifies the ID of a creative that should be forced
-to appear in a placement. It is used to request for the desired creative
-to display. Forcing a creative allows you to preview an ad on a site,
-perform testing or certification, and create tear sheets. This API is
-available for banner, interstitial, native and InstreamVideo creatives.
-
-
+A forceCreativeId specifies the ID of a creative that should be forced to appear in a placement. It is used to request for the desired creative to display. Forcing a creative allows you to preview an ad on a site, perform testing or certification, and create tear sheets. This API is available for banner, interstitial, native and InstreamVideo creatives.
 
 ## Scope of forceCreativeId
 
-The scope of the forceCreativeId is limited to debug or testing purpose
-only and not to be used in a production environment.
-
-
-
-
+The scope of the forceCreativeId is limited to debug or testing purpose only and not to be used in a production environment.
 
 ## Method
 
-**setForceCreativeId**
+### setForceCreativeId
 
-Setter method which assigns the creative Id for display in a placement.
-It will pass the forceCreateveId as the argument in the method.
+Setter method which assigns the creative Id for display in a placement. It will pass the forceCreateveId as the argument in the method.
 
-``` pre
+``` 
 public void setForceCreativeId(int forceCreativeId)
 ```
 
-
-
-
-
 ## Example
 
-``` pre
+``` 
 //Banner
 BannerAdView banner = new BannerAdView(this);
 banner.setForceCreativeId(135482485);
@@ -61,9 +41,3 @@ adRequest.setForceCreativeId(135482485);
 VideoAd instreamVideoAd = new VideoAd( this , "9924002" );
 instreamVideoAd.setForceCreativeId(135482485);   
 ```
-
-
-
-
-
-
