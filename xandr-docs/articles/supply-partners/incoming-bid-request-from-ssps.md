@@ -277,7 +277,7 @@ Xandr supports the following fields to define one or more `asset` objects in the
 | `title` | object | Specifies information about the title of the asset. See [Title Object](#title-object) below. |
 | `img` | object | Specifies information about the image for the asset. See [Image Object](#image-object) below. |
 | `data` | object | Specifies information about data for the asset. See [Assets Data Object](#assets-data-object) below. |
-| `video` | object | Specifies information about the video asset. See [Video Object](#video-object-assets-object) below. |
+| `video` | object | Specifies information about the video asset. See [Video Object](#video-object-assetsobject) below. |
 
 ### Title object
 
