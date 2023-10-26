@@ -1,6 +1,8 @@
 ---
 title : Show High Impact Media type on iOS
 description : This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for iOS.
+ms.custom: ios-sdk 
+ms.custom: android-sdk
 
 ---
 

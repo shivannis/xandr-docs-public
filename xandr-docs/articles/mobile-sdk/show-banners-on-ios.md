@@ -1,6 +1,8 @@
 ---
 title : Show Banners on iOS
 description : This page has instructions and code samples for showing banner ads.
+ms.custom: ios-sdk
+ms.custom: android-sdk
 ---
 
 
