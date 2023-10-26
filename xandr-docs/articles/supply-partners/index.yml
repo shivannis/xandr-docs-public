@@ -1,0 +1,77 @@
+### YamlMime:Landing
+
+title: Supply Partners Reference Documentation
+summary: Welcome to the Supply Partners Reference Documentation! All the information you need to get started as a Supply Partner is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Supply Partners Reference Documentation
+  description: Discover various resources for Supply Partners
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 25/10/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: How Integration Works
+            url: how-integration-works.md
+      - linkListType: concept
+        links:
+          - text: Integration Process
+            url: integration-process.md
+          - text: FAQ - Integration Process
+            url: faq-integration-process.md
+  - title: Best Practices
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Understanding the Sell-Side Object Hierarchy
+            url: understanding-the-sell-side-object-hierarchy.md
+          - text: Define Ad Quality Rules
+            url: define-ad-quality-rules.md
+          - text: Inventory Relationship FAQ
+            url: inventory-relationship-faq.md
+      - linkListType: how-to-guide
+        links:
+          - text: Synchronize Your Inventory Structure
+            url: synchronize-your-inventory-structure.md
+          - text: RTB Eligibility Requirements
+            url: rtb-eligibility-requirements.md
+  - title: OpenRTB Specs
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Incoming Bid Request from SSPs
+            url: incoming-bid-request-from-ssps.md
+          - text: Outgoing Bid Response to SSPs
+            url: outgoing-bid-response-to-ssps.md
+          - text: IAB Content Taxonomy Support
+            url: iab-content-taxonomy-support.md
+          - text: Client Hints for SSP Clients
+            url: client-hints-for-ssp-clients.md
+  - title: Supply Integration
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Bid Request
+            url: bid-request.md
+          - text: Bid Response
+            url: bid-response.md
+  - title: More Resources
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: API Documentation
+            url: api-documentation.md
+          - text: External Seller Troubleshooting
+            url: external-seller-troubleshooting.md
+          - text: Xandr Supply Partner Support
+            url: xandr-supply-partner-support.md
+      - linkListType: how-to-guide
+        links:
+          - text: Selling Deals on Xandr
+            url: selling-deals-on-xandr.md
+          - text: User ID Mapping
+            url: user-id-mapping.md

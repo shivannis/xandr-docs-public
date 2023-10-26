@@ -2,7 +2,8 @@
 Title : Xandr SDK App
 Description : Xandr's **SDK App** showcases the features of
 the Xandr advertising platform and the <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
+href="xandr-mobile-sdks.md"
+ms.custom : android-sdk
 ---
 
 
@@ -12,7 +13,7 @@ href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
 
 Xandr's **SDK App** showcases the features of
 the Xandr advertising platform and the <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
+href="xandr-mobile-sdks.md"
 class="xref" target="_blank">Xandr mobile
 advertising SDK.</a> Use our SDK App on your mobile device to display
 and test the behavior of creatives rendered in
@@ -23,7 +24,7 @@ the creative you wish to test.
 
 
 
-Tip: Get the
+<b>Tip:</b> Get the
 Xandr SDK App
 
 Download for:

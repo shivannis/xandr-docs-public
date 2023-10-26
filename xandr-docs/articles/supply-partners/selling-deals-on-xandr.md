@@ -1,7 +1,6 @@
 ---
 Title : Selling Deals on Xandr
-Description : Note: You must be certified by
-Xandr to sell deals on our platform. Please
+Description : lorem ipsum
 ---
 
 

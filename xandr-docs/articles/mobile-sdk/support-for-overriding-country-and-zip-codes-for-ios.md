@@ -3,6 +3,7 @@ Title : Support for Overriding Country and Zip Codes for iOS
 Description : ## Overview
 Mobile SDK allows the publishers to override the country codes and zip
 codes. The SDK uses City/DMA/Country information from standard feed (log
+ms.custom : android-ios
 ---
 
 

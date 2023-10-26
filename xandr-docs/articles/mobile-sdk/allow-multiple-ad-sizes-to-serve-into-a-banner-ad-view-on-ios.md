@@ -1,6 +1,8 @@
 ---
 Title : Allow Multiple Ad Sizes to Serve into a Banner Ad View on iOS
 Description : Banner ads with a fixed size may not get as much demand as you'd like.
+ms.custom : android-ios
+
 ---
 
 

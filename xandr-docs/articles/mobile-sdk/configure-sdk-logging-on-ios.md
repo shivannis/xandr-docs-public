@@ -1,6 +1,8 @@
 ---
 Title : Configure SDK Logging on iOS
 Description : This page has instructions for:
+ms.custom : android-ios
+
 - turning logging on and off, and for setting logging levels
 - enabling subscription for notifications as well as retrieving
 notification status
@@ -13,7 +15,7 @@ logging level of the iOS SDK:
 ``` pre
 [ANLogManager setANLogLevel:ANLogLevelDebug];
 ```
-Note: See `ANLogManager.h` for all
+<b>Note:</b> See `ANLogManager.h` for all
 ---
 
 
@@ -55,7 +57,7 @@ logging level of the iOS SDK:
 
 
 
-Note: See `ANLogManager.h` for all
+<b>Note:</b> See `ANLogManager.h` for all
 available log levels
 
 

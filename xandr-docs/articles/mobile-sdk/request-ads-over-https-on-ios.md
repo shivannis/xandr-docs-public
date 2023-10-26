@@ -1,6 +1,7 @@
 ---
 Title : Request Ads Over HTTPS on iOS
-Description : Note: This property is deprecated.
+Description : <b>Note:</b> This property is deprecated.
+ms.custom : android-ios
 ---
 
 
@@ -10,7 +11,7 @@ Description : Note: This property is deprecated.
 
 
 
-Note: This property is deprecated.
+<b>Note:</b> This property is deprecated.
 
 
 
@@ -20,7 +21,7 @@ requesting ads over HTTPS.
 
 
 
-Note: This is a global setting for the
+<b>Note:</b> This is a global setting for the
 AppNexus SDK. You only need to set this once,
 and all future ad requests will be sent over HTTPS.
 

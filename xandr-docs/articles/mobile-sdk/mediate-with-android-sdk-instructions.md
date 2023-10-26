@@ -1,8 +1,9 @@
 ---
 Title : Mediate with Android SDK Instructions
-Description : Note:
+Description : <b>Note:</b>
 Android Studio and Gradle
 These instructions assume you are using Android Studio and Gradle. Most
+ms.custom : android-sdk
 ---
 
 
@@ -12,7 +13,7 @@ These instructions assume you are using Android Studio and Gradle. Most
 
 
 
-Note:
+<b>Note:</b>
 
 Android Studio and Gradle
 
@@ -63,7 +64,7 @@ all three.
 <tr class="odd row">
 <td class="entry" headers="ID-0000050b__entry__1">Google AdMob and
 DFP</td>
-<td class="entry" headers="ID-0000050b__entry__2">21.3.0</td>
+<td class="entry" headers="ID-0000050b__entry__2">22.3.0</td>
 <td class="entry" headers="ID-0000050b__entry__3">Yes</td>
 <td class="entry" headers="ID-0000050b__entry__4">Yes</td>
 <td class="entry" headers="ID-0000050b__entry__5">Yes</td>
@@ -73,13 +74,13 @@ target="_blank">Google Mobile Ads - Android Mediation</a></td>
 </tr>
 <tr class="even row">
 <td class="entry" headers="ID-0000050b__entry__1">SmartAdServer</td>
-<td class="entry" headers="ID-0000050b__entry__2">7.10.0</td>
+<td class="entry" headers="ID-0000050b__entry__2">7.23.0</td>
 <td class="entry" headers="ID-0000050b__entry__3">Yes</td>
 <td class="entry" headers="ID-0000050b__entry__4">Yes</td>
 <td class="entry" headers="ID-0000050b__entry__5">No</td>
 <td class="entry" headers="ID-0000050b__entry__6"><a
-href="https://help.smartadserver.com/en/#../../../../specifications/Content/MobileSpecifications/Apps.htm"
-class="xref" target="_blank">SmartAdServer SDK Documentation</a></td>
+href="https://documentation.smartadserver.com/displaySDK/" class="xref"
+target="_blank">SmartAdServer SDK Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -123,7 +124,7 @@ dependencies {
 
 
 
-Warning:
+<b>Warning:</b>
 
 Do **not** modify the mediation adaptors' `build.gradle` files. This may
 break the build.
@@ -141,17 +142,17 @@ for mediation, including code samples (when special setup is required)
 and links to that SDK's documentation.
 
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html#MediatewithAndroidSDKInstructions-AdMob"
+  href="mediate-with-android-sdk-instructions.md#MediatewithAndroidSDKInstructions-AdMob"
   class="xref" target="_blank">AdMob</a>
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html#MediatewithAndroidSDKInstructions-SmartAdServer"
+  href="mediate-with-android-sdk-instructions.md#MediatewithAndroidSDKInstructions-SmartAdServer"
   class="xref" target="_blank">SmartAdServer</a>
 
 **AdMob**
 
 
 
-Note:
+<b>Note:</b>
 
 For Mobile SDK 7.22 or above, mediating with Google Ad Mob version will
 require an explicit dependency on `androidx.work:work-runtime:2.7.0` to
@@ -178,12 +179,12 @@ dependencies {
 
 
 
-Warning:
+<b>Warning:</b>
 
 Lifecycle Callbacks Required
 
 When mediating AdMob/DFP banners, you must add lifecycle callbacks to
-your code as described in the section below: **Implementation Note:
+your code as described in the section below: **Implementation <b>Note:</b>
 Forwarding Lifecycle Callbacks**, as we need to forward the lifecycle
 callbacks to the AdMob/DFP banner as required by them. For more
 information about activity lifecycles, see <a
@@ -191,7 +192,7 @@ href="https://developer.android.com/training/basics/activity-lifecycle/index.htm
 class="xref" target="_blank">Managing the Activity Lifecycle</a> in the
 Android docs.
 
-**Implementation Note: Forwarding Lifecycle Callbacks**
+**Implementation <b>Note:</b> Forwarding Lifecycle Callbacks**
 
 
 
@@ -228,7 +229,7 @@ abstract public void activityOnResume();
 
 
 
-Note:
+<b>Note:</b>
 
 Starting with v5.1 of the SDK, the AdMob Native Mediation adapter code
 was modified support the
@@ -298,8 +299,8 @@ class="xref" target="_blank">Google Mobile Ads SDK</a> .
 
 No special setup is required.
 
-For more information about the the SmartAdServer SDK, see their <a
-href="https://help.smartadserver.com/en/#../../../../specifications/Content/MobileSpecifications/Apps.htm"
+For more information about the the SmartAdServer SDK, see their
+<a href="https://documentation.smartadserver.com/displaySDK/"
 class="xref" target="_blank">SDK documentation</a>.
 
 If you intend to support Huawei devices that do not feature Google
@@ -315,7 +316,7 @@ target="_blank">https://developer.huawei.com/repo/</a>' }
 
 
 
-Warning: Interstitials
+<b>Warning:</b> Interstitials
 
 If you are using SmartAdServer interstitial, be aware that
 `SASInterstitialView` does not have `loadAd()` and `showAd()` methods
@@ -360,7 +361,7 @@ set up in  with:
 - **Media Type**: Banner
 
 For more instructions on creating placements, see <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/create-a-placement.html"
+href="monetize_monetize-standard/create-a-placement.md"
 class="xref" target="_blank">Create a Placement</a> in the Monetize
 documentation.
 
@@ -369,7 +370,7 @@ in your ad calls using the `promo_sizes` placement tag parameter.
 
 For instructions on passing custom interstitial sizes, see "Using Custom
 Interstitial Sizes" in the <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-on-android.html"
+href="show-interstitials-on-android.md"
 class="xref" target="_blank">Show Interstitials on Android</a>
 documentation.
 
@@ -384,11 +385,11 @@ of popular mobile ad networks. If you want to mediate a network it
 doesn't support, you'll need to:
 
 - Write a <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/android-custom-adaptors.html"
+  href="android-custom-adaptors.md"
   class="xref" target="_blank">custom mediation adaptor</a> that lets
   our SDK receive events from the SDK you want to mediate.
 - Set up a **Custom Mobile Network** using the instructions in <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
+  href="mediate-with-android-sdk-instructions.md"
   class="xref" target="_blank">Add a Network</a>.
 
 
@@ -397,9 +398,9 @@ doesn't support, you'll need to:
 
 ## Related Topics
 
-- <a href="android-sdk-integration-instructions.html" class="xref">Android
+- <a href="android-sdk-integration-instructions.md" class="xref">Android
   SDK Integration Instructions</a>
-- <a href="android-custom-adaptors.html" class="xref">Android Custom
+- <a href="android-custom-adaptors.md" class="xref">Android Custom
   Adaptors</a>
 
 

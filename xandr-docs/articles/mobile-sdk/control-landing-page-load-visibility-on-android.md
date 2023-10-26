@@ -2,6 +2,8 @@
 Title : Control Landing Page Load Visibility on Android
 Description : This page has instructions for configuring the landing page load
 behavior on ad clicks. By default, the landing page loads in the
+ms.custom : android-sdk
+
 ---
 
 
@@ -18,7 +20,7 @@ unrendered landing page. 
 
 
 
-Note: If you're consistently
+<b>Note:</b> If you're consistently
 experiencing slow clickthrough rates, try setting this property to
 false.
 

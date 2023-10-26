@@ -1,6 +1,6 @@
 ---
 title : Show Banner Native on iOS
-description : 
+description : Banner Native refers to the capability of our Mobile SDK Banner class to return native demand. 
 ---
 
 

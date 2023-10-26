@@ -4,6 +4,8 @@ Description : When a user presses the back button in an Android device after an
 outstream video creative (banner ad view) is rendered and sent to full
 screen mode, the activity with the placement is destroyed and the user
 is routed to the previous activity in the Activity stack. To mitigate
+ms.custom : android-sdk
+
 ---
 
 

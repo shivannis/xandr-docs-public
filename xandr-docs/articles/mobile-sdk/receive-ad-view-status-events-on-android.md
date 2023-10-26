@@ -2,6 +2,7 @@
 Title : Receive Ad View Status Events on Android
 Description : This page has instructions on how to receive ad view status events from
 our SDK. You can use these events to determine from your app when an ad
+ms.custom : android-sdk
 ---
 
 

@@ -1,7 +1,8 @@
 ---
 Title : User ID(s) Mapping on Android
-Description : Note: This offering is currently in
+Description : <b>Note:</b> This offering is currently in
 Alpha and is subject to changes or deprecation without notice.
+ms.custom : android-sdk
 ---
 
 
@@ -11,7 +12,7 @@ Alpha and is subject to changes or deprecation without notice.
 
 
 
-Note: This offering is currently in
+<b>Note:</b> This offering is currently in
 Alpha and is subject to changes or deprecation without notice.
 
 
@@ -38,7 +39,7 @@ different app sessions.
 
 
 
-Note: Deprecation Notice
+<b>Note:</b> Deprecation Notice
 
 The **setExternalUid** and **getExternalUid** methods available
 in **NativeAdRequest**, **VideoAd, BannerAdView**,
@@ -72,7 +73,7 @@ SDKSettings.getPublisherUserId();
 
 
 
-Note: Deprecation Notice
+<b>Note:</b> Deprecation Notice
 
 The **setExternalUserIds** and **getExternalUserIds** methods available
 in **SDKSettings** class and **ANExternalUserIdSource **class are now

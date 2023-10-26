@@ -2,6 +2,7 @@
 Title : iOS 14.0 FAQ
 Description : This document provides an FAQ in regards to the release of Apple's iOS
 14.0 in relation to the Xandr iOS SDK. Specific
+ms.custom : android-ios
 ---
 
 
@@ -17,7 +18,7 @@ target="_blank">Apple release site</a>.
 
 
 
-Warning:
+<b>Warning:</b>
 
 This Document is written from the perspective of
 Xandr Mobile SDK, other parts of our Platform
@@ -71,12 +72,12 @@ headers="ID-000035a5__entry__1">ATTrackingManagerAuthorizationStatusAuthorized</
 <td class="entry" headers="ID-000035a5__entry__2"><ul>
 <li>IDFA is supported</li>
 <li>Publisher 1st party data is supported and optional [<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/user-id-s--mapping-on-ios.html"
+href="user-id-s--mapping-on-ios.md"
 class="xref" target="_blank">iOS user id doc publisher first party
 id</a>]</li>
 <li>Industry IDs are supported (Liveramp IDL, NetID, etc) and optional
 [<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/user-id-s--mapping-on-ios.html"
+href="user-id-s--mapping-on-ios.md"
 class="xref" target="_blank">iOS user id doc external user id</a>]</li>
 </ul></td>
 </tr>
@@ -86,10 +87,10 @@ headers="ID-000035a5__entry__1">ATTrackingManagerAuthorizationStatusDenied</td>
 <td rowspan="3" class="entry" headers="ID-000035a5__entry__2"><ul>
 <li>IDFA is not supported</li>
 <li>Publisher 1st party data is supported [<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/user-id-s--mapping-on-ios.html"
+href="user-id-s--mapping-on-ios.md"
 class="xref" target="_blank">iOS user id doc publisher id</a>]</li>
 <li>Industry IDs are not supported (Liveramp IDL, NetID, etc) [<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/user-id-s--mapping-on-ios.html"
+href="user-id-s--mapping-on-ios.md"
 class="xref" target="_blank">iOS user id doc external user id</a>]</li>
 </ul></td>
 </tr>
@@ -106,7 +107,7 @@ headers="ID-000035a5__entry__1">ATTrackingManagerAuthorizationStatusRestricted</
 
 
 
-Note:
+<b>Note:</b>
 
 It is the responsibility of the publisher to present the authorization
 requests. Xandr SDKs will not perform this task.
@@ -125,7 +126,7 @@ authorization status is
 
 
 
-Note:
+<b>Note:</b>
 
 If you are concerned with a high volume of users opting out of tracking
 in iOS14 and above and what options Xandr will use to replace IDFA,
@@ -187,7 +188,7 @@ following app install tracking vendors.
   target="_blank">Adjust</a>
   - <a href="https://docs.adjust.com/en/network-integration/" class="xref"
     target="_blank">Adjust Network Integrations Page</a>
-  - <a href="https://partners.adjust.com/index.html" class="xref"
+  - <a href="https://partners.adjust.com/index.md" class="xref"
     target="_blank">Adjust Partner Page (Click URL Builder)</a>
 
 Go <a

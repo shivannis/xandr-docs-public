@@ -2,6 +2,7 @@
 Title : Show Instream Video Ads on Android
 Description : This page describes how to use the SDK to fetch and display instream
 video ads.
+ms.custom : android-sdk
 ---
 
 
@@ -14,7 +15,7 @@ video ads.
 
 
 
-Note: **Maintain references to VideoAd
+<b>Note:</b> **Maintain references to VideoAd
 objects**: It is your responsibility to keep a reference to
 the `VideoAd` object. It is not cached by the SDK.
 
@@ -224,7 +225,7 @@ ad.
 
 
 
-Note: As best practices :
+<b>Note:</b> As best practices :
 
 - All SDK methods must be called on the main thread.
 - `activityOnDestroy()` must be called for the VideoAd that is expected

@@ -1,6 +1,8 @@
 ---
 Title : Configure Video Player Options on iOS
 Description : You can customize the following video player controls:
+ms.custom : android-ios
+
 - The clickthrough control
 - The mute button
 - The fullscreen button for outstream video

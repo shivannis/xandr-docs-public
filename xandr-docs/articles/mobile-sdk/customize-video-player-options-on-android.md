@@ -1,6 +1,8 @@
 ---
 Title : Customize Video Player Options on Android
 Description : You can customize the following video player controls:
+ms.custom : android-sdk
+
 - The clickthrough control
 - The mute button
 - The fullscreen button for outstream video

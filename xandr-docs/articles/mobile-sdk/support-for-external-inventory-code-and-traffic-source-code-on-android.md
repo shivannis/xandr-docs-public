@@ -3,6 +3,7 @@ Title : Support for External Inventory Code and Traffic Source Code on Android
 Description : ## Overview - External Inventory Code
 An external inventory code provides publishers the ability to break out
 data on their inventory more granularly than the placement level. The
+ms.custom : android-sdk
 ---
 
 
@@ -20,7 +21,7 @@ value can be passed via the `ext_inv_code` field of the request body
 using the `extInvCode` property, but must be entered into the system
 before it is logged and available as a dimension in relevant reporting.
 For more information, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/external-inventory-code-service.html"
+href="xandr-api/external-inventory-code-service.md"
 class="xref" target="_blank">External Inventory Code Service</a>. In
 short, this property allows you to pass the predefined external
 inventory codes on ad calls and then report on them.

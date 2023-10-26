@@ -3,6 +3,7 @@ Title : Lazy Load for iOS
 Description : The Lazy Load feature provides a new API call to manage when all
 trackers are fired, including third-party trackers and MobileSDK
 trackers.  It also optimizes the Banner AdUnit by allowing the host app
+ms.custom : android-ios
 ---
 
 

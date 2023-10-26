@@ -3,6 +3,7 @@ Title : Listen to Native Ad Events on Android
 Description : ## Overview
 A publisher can opt for the SDK to handle various ad events such as
 AdClick, occurrence of impressions etc., by registering into
+ms.custom : android-sdk
 ---
 
 
@@ -47,7 +48,7 @@ public static void registerTracking(final NativeAdResponse response, final View 
 
 You can pass friendly obstruction list also in this method. To know more
 about Friendly Obstructions, see <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/omid-friendly-obstruction-for-android.html"
+href="omid-friendly-obstruction-for-android.md"
 class="xref" target="_blank">OMID Friendly Obstruction for Android</a>.
 
 ``` pre

@@ -4,6 +4,7 @@ Description : ## Overview
 SDKSettings in Xandr Mobile SDK is a API that
 can be called to activate OMID, fetch User Agent and AAID (Google
 Advertising ID) for devices. The initialization `init()` method passes
+ms.custom : android-sdk
 ---
 
 
@@ -34,19 +35,25 @@ of User Agent and AAID for devices optionally.
 
 **SDKSettings.init**
 
-An `init()` method that activates OMID, fetch User Agent and
-AAID (Google Advertising ID) for devices.
+An `init()` method that activates OMID, fetch User Agent, AAID (Google
+Advertising ID), enables `WarmUpAdCall` and prefetch WebView for
+devices.
 
 ``` pre
-public static void init(activateOmid, fetchUserAgent, fetchAAID)
+public static void init(activateOmid, fetchUserAgent, fetchAAID, enableWarmUpAdCall, preFetchWebView)
 ```
 
 Additionally, below is the overloaded `init()` method that optionally
 disable fetching of AAID and UserAgent. It requires enable/disable
 booleans for `fetchUserAgent` and `fetchAAID` as arguments.
+Additionally, below is the overloaded `init()` method that optionally
+disable fetching of AAID, UserAgent, `enableWarmUpAdCall` and
+`preFetchWebView`. It requires enable/disable booleans for
+fetchUserAgent, `fetchAAID`, `enableWarmUpAdCall` and `preFetchWebView`
+as arguments.
 
 ``` pre
-public static void init(final boolean fetchUserAgent, final boolean fetchAAID)
+public static void init(final boolean fetchUserAgent, final boolean fetchAAID,final boolean enableWarmUpAdCall, final boolean preFetchWebView)
 ```
 
 
@@ -63,13 +70,13 @@ SDKSettings.init(this, new SDKSettings.InitListener() {
         // Initialisation finished
     }
 });
-// Overloaded Init method with flexibility to enable / disable fetching of User Agent and AAID
+// Overloaded Init method with flexibility to enable / disable fetching of User Agent, AAID, WarmUpAdCall and Prefetch WebView
 SDKSettings.init(this, new SDKSettings.InitListener() {
     @Override
     public void onInitFinished() {
         // Initialisation finished
     }
-}, false, true);
+}, false, true, false, false);
 //Boolean values false/true are optional and as per usage
 ```
 

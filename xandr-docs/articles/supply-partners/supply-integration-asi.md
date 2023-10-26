@@ -1,9 +1,6 @@
 ---
 Title : Supply Integration (ASI)
-Description : Note: We have disabled the Supply
-Integration (ASI) protocol (formerly AppNexus
-Supply Integration) for server-side supply integrations beginning on
-October 1st, 2017. We strongly encourage that you migrate your supply to
+Description : lorem ipsum
 ---
 
 

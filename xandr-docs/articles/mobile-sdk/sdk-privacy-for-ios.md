@@ -1,8 +1,7 @@
 ---
-title : SDK Privacy for iOS
-description : Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), and the California Consumer Protection Act (CCPA).
+title: SDK Privacy for iOS
+description: Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), and the California Consumer Protection Act (CCPA).
 ---
-
 
 # SDK Privacy for iOS
 

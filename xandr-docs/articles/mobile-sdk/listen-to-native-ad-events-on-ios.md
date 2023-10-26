@@ -3,6 +3,7 @@ Title : Listen to Native Ad Events on iOS
 Description : ## Overview
 A publisher can opt for the SDK to handle various ad events such as
 AdClick, occurrence of impressions etc., by registering into
+ms.custom : android-ios
 ---
 
 
@@ -49,7 +50,7 @@ will track impressions and respond to clicks for the native ad.
 
 You can pass friendly obstruction list also in this method. To know more
 about Friendly Obstructions, see <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/omid-friendly-obstruction-for-ios.html"
+href="omid-friendly-obstruction-for-ios.md"
 class="xref" target="_blank">OMID-Friendly Obstruction for iOS</a>.
 
 ``` pre

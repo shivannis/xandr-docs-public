@@ -2,6 +2,8 @@
 Title : Android Custom Adaptors
 Description : Custom adaptors allow our SDK to call out to another SDK installed on
 the same device, usually for mediation. This document describes the code
+ms.custom : android-sdk
+
 ---
 
 
@@ -15,10 +17,9 @@ Custom adaptors allow our SDK to call out to another SDK installed on
 the same device, usually for mediation. This document describes the code
 you must write to create your own custom adaptors.
 
-<div id="ID-00000473__note-bdaf6535-702b-4402-8728-bed3c497df78"
 
 
-Note: The interfaces described here are
+<b>Note:</b> The interfaces described here are
 exactly what we used to implement our own mediation adaptors.
 
 
@@ -315,10 +316,10 @@ both banners and interstitials.
 
 
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-integration-instructions.html"
+  href="android-sdk-integration-instructions.md"
   class="xref" target="_blank">Android SDK Integration Instructions</a>
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
+  href="mediate-with-android-sdk-instructions.md"
   class="xref" target="_blank">Mediate with Android SDK Instructions</a>
 
 

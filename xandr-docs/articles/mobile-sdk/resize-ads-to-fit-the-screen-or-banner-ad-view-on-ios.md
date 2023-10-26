@@ -3,6 +3,7 @@ Title : Resize Ads to fit the Screen or Banner Ad View on iOS
 Description : Depending on where advertising fits into your application, you might
 want to expand the ad creative to fill the banner ad view in which it is
 displayed, or to fit the device's screen width.
+ms.custom : android-ios
 ---
 
 
@@ -74,7 +75,7 @@ to set the right constraints for you. 
 
 
 
-Note:
+<b>Note:</b>
 `sizesThatShouldConstrainToSuperview` is a Global setting and will be
 applied to all of the Banner Ad Views in your app.
 

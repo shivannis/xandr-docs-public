@@ -2,6 +2,7 @@
 Title : Publisher ID for Android
 Description : This document describes the publisher_id parameter of the Universal Tag
 service.  
+ms.custom : android-sdk
 ---
 
 
@@ -44,7 +45,7 @@ When an invalid placement code is called:
 ## Ad Unit 
 
 The <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-ad-units.html"
+href="android-sdk-ad-units.md"
 class="xref" target="_blank">AdUnit</a> class has two methods for
 setting and retrieving `publisherId`. 
 
@@ -72,7 +73,7 @@ for `ANMultiAdRequest` be initialized, `publisherId` is an optional
 setting. The `memberId, ``delegate` and `publisherId` may only be set
 during initialization. All `AdUnits` must contain the same `memberId` as
 the one passed in the initialization process.  See <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/multi-ad-request-for-android.html"
+href="multi-ad-request-for-android.md"
 class="xref" target="_blank">ANMultiAdRequest</a> for more details.
 
 ``` pre
@@ -82,7 +83,7 @@ public ANMultiAdRequest(Context context, int memberId, int publisherId, MultiAdR
 
 
 
-Note: The `addAdUnit` method of the
+<b>Note:</b> The `addAdUnit` method of the
 `ANMultiAdRequest` will read the attached `publisher_id` of the
 `AdUnit`. If that value does not match the publisherId set to the
 `ANMultiAdRequest` instance, the `ANMultiAdRequest` instance will reject

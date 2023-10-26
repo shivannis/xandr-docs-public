@@ -1,7 +1,8 @@
 ---
 Title : User ID(s) Mapping on iOS
-Description : Note: This offering is currently in
+Description : <b>Note:</b> This offering is currently in
 Alpha and is subject to changes or deprecation without notice.
+ms.custom : android-ios
 ---
 
 
@@ -11,7 +12,7 @@ Alpha and is subject to changes or deprecation without notice.
 
 
 
-Note: This offering is currently in
+<b>Note:</b> This offering is currently in
 Alpha and is subject to changes or deprecation without notice.
 
 
@@ -38,7 +39,7 @@ different app sessions.
 
 
 
-Note: Deprecation Notice
+<b>Note:</b> Deprecation Notice
 
 **`The` `externalUid`** property
 of **`ANBannerAdView`**, **`InterstitialAdView`**, **`ANNativeAdRequest`** and **`ANInstreamVideoAd`** class
@@ -138,7 +139,7 @@ An AppNexus disableIDFVUsage  is a boolean value which exclude the IDFV field in
 
 
 
-Note: Deprecation Notice
+<b>Note:</b> Deprecation Notice
 
 The
  property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class

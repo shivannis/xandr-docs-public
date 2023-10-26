@@ -1,6 +1,7 @@
 ---
 Title : iOS SDK Initialization v8.0
 Description : Publishers with iOS SDK v8.0, are required to initialize
+ms.custom : android-ios
 ---
 
 

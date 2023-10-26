@@ -1,6 +1,8 @@
 ---
 Title : Android SDK Integration Instructions
 Description : This page describes how to integrate our SDK with your project.
+ms.custom : android-sdk
+
 ---
 
 
@@ -15,10 +17,10 @@ This page describes how to integrate our SDK with your project.
 For instructions on showing different ad types, see:
 
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-android.html"
+  href="show-banners-on-android.md"
   class="xref" target="_blank">Show Banners on Android</a>
 - <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-on-android.html"
+  href="show-interstitials-on-android.md"
   class="xref" target="_blank">Show Interstitials on Android</a>
 
 
@@ -31,7 +33,7 @@ your app.
 
 ## Requirements
 
-This SDK requires Android 2.3 or later, and Android SDK version 9 or
+This SDK requires Android 4 or later, and Android SDK version 14 or
 higher.
 
 In order to show ads, you must have a valid
@@ -42,7 +44,7 @@ represents a context in an application where ads can be shown.
 
 
 
-Tip: **Google Play**
+<b>Tip:</b> **Google Play**
 
 In order to enable the Android Advertising ID (AAID) for frequency
 capping and mobile app targeting, you must include Google Play Services
@@ -58,7 +60,7 @@ to those features.
 
 
 
-Tip: **Android Studio and Gradle**
+<b>Tip:</b> **Android Studio and Gradle**
 
 These instructions assume you are using Android Studio and Gradle. Most
 of the required `AndroidManifest.xml` entries (except the Location
@@ -86,19 +88,18 @@ There are several ways to get our SDK:
   the new version is recompile your app. If you want to include
   mediation adaptors for other SDKs in your `build.gradle`, see the
   section **Let us Mediate other Networks** of <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
+  href="mediate-with-android-sdk-instructions.md"
   class="xref" target="_blank">Mediate with Android</a>.
-  <div id="ID-00000327__note-09bf73f7-e4b0-48b4-a308-36499d64b411"
   
 
-  Note: These are top-level blocks, not
+  <b>Note:</b> These are top-level blocks, not
   part of the buildscript block.
 
   
 
 
 
-Warning: The compile command is no
+<b>Warning:</b> The compile command is no
 longer supported by Gradle, it has been replaced with the implementation
 command.
 
@@ -119,7 +120,7 @@ dependencies {
 - Check out the source code from
   <a href="https://github.com/appnexus/mobile-sdk-android" class="xref"
   target="_blank">Github</a> and follow the instructions in <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/build-the-android-sdk-from-source.html"
+  href="build-the-android-sdk-from-source.md"
   class="xref" target="_blank">Build the Android SDK From Source.</a>
 
 **Step 2. Edit App Permissions (optional)**
@@ -143,7 +144,7 @@ recommended) permissions:
 
 
 
-Tip: Location Permissions Must Prompt
+<b>Tip:</b> Location Permissions Must Prompt
 the User
 
 In API Level 23 (Marshmallow) and above, you must prompt the user with a
@@ -164,10 +165,9 @@ Although not technically required, the location permissions make it
 possible for the SDK to send location-based data to advertisers. Sending
 better location data generally leads to better monetization.
 
-<div id="ID-00000327__note-2a6e54ea-56e7-4681-97fa-be7a161a9fe1"
 
 
-Note: The SDK will never wake up the
+<b>Note:</b> The SDK will never wake up the
 phone to request the location to be updated; this would take time and
 battery. Instead, it will use these permissions to access the last known
 location of the device.
@@ -198,14 +198,14 @@ project's `proguard-project.txt` file to add the following:
 **Step 4. Set up for mediation (optional)**
 
 For instructions on getting set up for mediation, see <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/mediate-with-android-sdk-instructions.html"
+href="mediate-with-android-sdk-instructions.md"
 class="xref" target="_blank">Mediate with Android.</a>
 
 
 
 
 
-## Implementation Note: Forwarding Lifecycle Callbacks
+## Implementation <b>Note:</b> Forwarding Lifecycle Callbacks
 
 The SDK allows you to forward lifecycle callbacks for the subclasses of
 `AdView`: `BannerAdView` and `InterstitialAdView`.
@@ -245,11 +245,11 @@ Android docs.
 ## Related Topics
 
 <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-android.html"
+href="show-banners-on-android.md"
 class="xref" target="_blank">Show Banners</a>
 
 <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-on-android.html"
+href="show-interstitials-on-android.md"
 class="xref" target="_blank">Show Interstitials</a>
 
 

@@ -4,6 +4,7 @@ Description : SDKSettings in Xandr Mobile SDK contains the
 method `optionalSDKInitialization()`, which allows you to pre-configure
 common settings such as checking the presence of the User Agent during
 initialization, preparing a WebView etc. The completion block of this
+ms.custom : android-ios
 ---
 
 

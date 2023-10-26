@@ -1,8 +1,6 @@
 ---
 Title : Synchronize Your Inventory Structure
-Description : You should synchronize your inventory structure with
-Xandr on a regular basis, ideally
-programmatically. Tight synchronization allows you to:
+Description : lorem ipsum
 ---
 
 

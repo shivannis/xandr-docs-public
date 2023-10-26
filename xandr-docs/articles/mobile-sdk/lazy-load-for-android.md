@@ -3,6 +3,7 @@ Title : Lazy Load for Android
 Description : The Lazy Load feature provides a new API call to manage when all
 trackers are fired, including third-party trackers and MobileSDK
 trackers.  It also optimizes the Banner AdUnit by allowing the host app
+ms.custom : android-sdk
 ---
 
 
@@ -65,10 +66,11 @@ queued for display with a high probability).
 ## Scope of Lazy Load
 
 The scope of this feature is limited to Banner AdUnits that display
-banner Media Types.  It does not apply to any other AdUnit, including
-instream video and native, nor does it apply to Media Types returned by
-a multi-format Banner AdUnit other than banner including banner-video
-(outstream video) and banner-native. 
+banner and native assembly renderer Media Types. It does not apply to
+any other AdUnit, including instream video and native, nor does it apply
+to Media Types returned by a multi-format Banner AdUnit other than
+banner and native assembly renderer including banner-video (outstream
+video) and banner-native.
 
 
 
@@ -161,6 +163,11 @@ override fun onCreate(savedInstanceState: Bundle?)
         banner = BannerAdView(this)
         banner.placementID = “1234567”
         banner.setAdSize(300, 250)
+
+        /* native assebly renderer
+        banner.setAllowNativeDemand(true)
+        banner.enableNativeRendering(true)
+        */
  
         banner.enableLazyLoad()
         banner.loadAd()

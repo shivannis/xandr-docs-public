@@ -3,6 +3,7 @@ Title : SDK Privacy for Android
 Description : Xandr's mobile SDKs include client support for
 Global Privacy Platform (GPP), the
 <a href="https://gdpr-info.eu/" class="xref" target="_blank">General
+ms.custom : android-sdk
 ---
 
 
@@ -26,10 +27,9 @@ to adapt to regulatory demands across markets. 
 
 
 
-<div id="ID-000019ce__note_hzm_xds_lwb"
 class="note warning note_warning">
 
-Warning: This resource should not be
+<b>Warning:</b> This resource should not be
 construed as legal advice and Xandr makes no
 guarantees about compliance with any law or regulation. Please note that
 because every company and its collection, use, and storage of personal
@@ -49,9 +49,8 @@ include privacy-specific obligations of which you should be aware.
 
 
 
-<div id="ID-000019ce__note_kww_xds_lwb" 
 
-Note: Publishers are responsible for
+<b>Note:</b> Publishers are responsible for
 providing notice, transparency, and choice and for collecting consent
 from their users in accordance
 with <a href="https://iabeurope.eu/transparency-consent-framework/"
@@ -137,9 +136,8 @@ ANGDPRSettings.setConsentString(context,"BOMyQRvOMyQRvABABBAAABAAAAAAEA");
 ANGDPRSettings.setPurposeConsents(context,"101010001");
 ```
 
-<div id="ID-000019ce__note_cwm_yds_lwb" 
 
-Note: To ensure proper monetization and
+<b>Note:</b> To ensure proper monetization and
 relevant targeting, the SDK should be enabled to send the device
 information. Setting the `consentRequired` and `purposeConsents` flag
 correctly will help ensure proper device information is sent. Refer to
@@ -278,9 +276,8 @@ allow the following:
 
 
 
-<div id="ID-000019ce__note_rgj_zds_lwb" 
 
-Note: If a Publisher chooses to remove
+<b>Note:</b> If a Publisher chooses to remove
 a CMP SDK from their app they are responsible for clearing all
 IABGPP\_\* vestigial values for users so that vendors do not continue to
 use the GPP data therein.

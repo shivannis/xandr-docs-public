@@ -2,6 +2,8 @@
 Title : Control Ad Unit Alignment on Android
 Description : This page has instructions on how to control the alignment of banner
 ads.
+ms.custom : android-sdk
+
 ---
 
 

@@ -2,6 +2,8 @@
 Title : Android SDK Integration
 Description : This section provides instructions on integrating our Android SDK with
 your project. 
+ms.custom : android-sdk
+
 ---
 
 
@@ -22,21 +24,21 @@ your project. 
 <tbody class="tbody">
 <tr class="odd row">
 <td class="entry" headers="ID-000002e1__entry__1"><a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-integration-instructions.html"
+href="android-sdk-integration-instructions.md"
 class="xref" target="_blank">Integration Instructions</a></td>
 <td class="entry" headers="ID-000002e1__entry__2">Instructions for
 integrating our SDK with your project.</td>
 </tr>
 <tr class="even row">
 <td class="entry" headers="ID-000002e1__entry__1"><a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/build-the-android-sdk-from-source.html"
+href="build-the-android-sdk-from-source.md"
 class="xref" target="_blank">Build the SDK from source</a></td>
 <td class="entry" headers="ID-000002e1__entry__2">Instructions for
 building our Android SDK from source.</td>
 </tr>
 <tr class="odd row">
 <td class="entry" headers="ID-000002e1__entry__1"><a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/android-sdk-initialization-v8-0.html"
+href="android-sdk-initialization-v8-0.md"
 class="xref" target="_blank">Android SDK Initialization v8.0</a></td>
 <td class="entry" headers="ID-000002e1__entry__2">Instructions for
 initializing our Android SDK v8.0</td>

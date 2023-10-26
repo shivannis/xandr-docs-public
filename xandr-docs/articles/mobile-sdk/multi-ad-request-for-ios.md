@@ -3,6 +3,7 @@ Title : Multi Ad Request for iOS
 Description : ## Overview
 This page has instructions and code samples for initiating and
 configuring a `ANMultiAdRequest`. `ANMultiAdRequest` enables the user
+ms.custom : android-ios
 ---
 
 
@@ -22,11 +23,11 @@ auctions, the results of which are returned in a single server response.
 `ANMultiAdRequest`, like an `AdUnit`, implements a subset of
 `ANAdProtocol`. This enables a `ANMultiAdRequest` to adopt the type and
 behavior of different `AdUnits` (<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-ios.html"
+href="show-banners-on-ios.md"
 class="xref" target="_blank">banner</a>, <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-ios.html"
+href="show-banner-native-on-ios.md"
 class="xref" target="_blank">native</a>, <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-instream-video-ads-on-ios.html"
+href="show-instream-video-ads-on-ios.md"
 class="xref" target="_blank">video</a>, etc.) using the same
 specifications of each `AdUnit` type. Custom keywords can be assigned to
 a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`.
@@ -41,7 +42,7 @@ Users can select from one of three initialization methods. All require a
 `memberId` and a `delegate` object as arguments in order
 for `ANMultiAdRequest` be initialized. The `memberId` and `delegate` may
 only be set once per instance. An optional <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/publisher-id-for-ios.html"
+href="publisher-id-for-ios.md"
 class="xref" target="_blank">Publisher ID parameter</a> can be set at
 this time. All `AdUnits` must contain the same `memberId` as the one
 passed in the initialization process. `AdUnits` containing
@@ -51,7 +52,7 @@ returned.
 
 
 
-Note: The `ANMultiAdRequest` instance
+<b>Note:</b> The `ANMultiAdRequest` instance
 will reject `AdUnits` with `memberId` values different from their own.
 
 
@@ -204,7 +205,7 @@ list of <code class="ph codeph">AdUnits</code> for initialization of a
 
 
 
-Note: If initialization is successful,
+<b>Note:</b> If initialization is successful,
 returns  `YES`, otherwise returns `NO`. 
 
 
@@ -268,7 +269,7 @@ headers="ID-000026d2__entry__23">readwrite</td>
 user location. <code class="ph codeph">Location</code> can be set with
 <code class="ph codeph">horizontalAccuracy</code> and a <code
 class="ph codeph">precision</code> level. See <a
-href="multi-ad-request-for-ios.html#ID-000026d2__1"
+href="multi-ad-request-for-ios.md#ID-000026d2__1"
 class="xref">Location Methods</a> below.</td>
 </tr>
 <tr class="odd row">
@@ -691,7 +692,7 @@ for the location.</td>
 
 
 
-Note: `[ANMultiAdRequest load]` can
+<b>Note:</b> `[ANMultiAdRequest load]` can
 also fail by returning `NO` even prior to sending a `UT Request`. if
 load returns `YES` that means the `UT Request` was initiated, and all
 further errors will come through the delegate method.
@@ -704,12 +705,12 @@ further errors will come through the delegate method.
 
 ## Related Topics
 
-<a href="show-banners-on-ios.html" class="xref">Show Banners on iOS</a>
+<a href="show-banners-on-ios.md" class="xref">Show Banners on iOS</a>
 
-<a href="show-interstitials-ads-on-ios.html" class="xref">Show
+<a href="show-interstitials-ads-on-ios.md" class="xref">Show
 Interstitials Ads on iOS</a>
 
-<a href="show-instream-video-ads-on-ios.html" class="xref">Show Instream
+<a href="show-instream-video-ads-on-ios.md" class="xref">Show Instream
 Video Ads on iOS</a>
 
 

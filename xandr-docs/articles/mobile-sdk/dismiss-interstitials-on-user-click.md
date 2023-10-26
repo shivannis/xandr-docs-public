@@ -3,6 +3,7 @@ Title : Dismiss Interstitials on User Click
 Description : By default, when a user clicks an interstitial ad and is taken to the
 landing page in the device's native browser, when they return to the app
 the interstitial ad is still displayed.
+ms.custom : android-sdk
 ---
 
 
@@ -68,10 +69,10 @@ iav.setDismissOnClick(true);
 
 ## Related Topics
 
-<a href="show-interstitials-on-android.html" class="xref">Show
+<a href="show-interstitials-on-android.md" class="xref">Show
 Interstitials</a>
 
-<a href="xandr-mobile-sdks.html" class="xref"><span
+<a href="xandr-mobile-sdks.md" class="xref"><span
 class="ph">Xandr Mobile SDKs</a>
 
 

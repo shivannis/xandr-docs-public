@@ -4,6 +4,7 @@ Description : On this page you'll find instructions for controlling the accuracy
 the location data the SDK sends to the ad server, as well as for
 controlling the HTML5 location access for creatives rendered in a
 WebView. 
+ms.custom : android-sdk
 ---
 
 

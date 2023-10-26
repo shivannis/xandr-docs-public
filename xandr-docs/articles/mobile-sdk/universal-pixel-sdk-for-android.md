@@ -2,6 +2,7 @@
 Title : Universal Pixel SDK for Android
 Description : This document provides instructions on how publishers can integrate and
 install the Universal Pixel SDK (Pixie SDK) for Android.
+ms.custom : android-sdk
 ---
 
 
@@ -29,7 +30,7 @@ ID that represents a pixel in your app.
 
 
 
-Note: **Google Play**
+<b>Note:</b> **Google Play**
 
 In order to enable the Android Advertising ID (AAID) , you must include
 Google Play Services as a dependency of your app.
@@ -40,7 +41,7 @@ Play Services but will not produce the desired results.
 
 
 
-Note: **Android Studio and Gradle **
+<b>Note:</b> **Android Studio and Gradle **
 
 These instructions assume you are using Android Studio and Gradle. All
 of the required AndroidManifest.xml entries and ProGuard changes are
@@ -100,7 +101,7 @@ using **fireEvent()** method.  
 
 
 
-Note: Any events being tracked prior to
+<b>Note:</b> Any events being tracked prior to
 initialization will be rejected.
 
 

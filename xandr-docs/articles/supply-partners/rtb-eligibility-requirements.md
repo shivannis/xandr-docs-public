@@ -1,8 +1,6 @@
 ---
 Title : RTB Eligibility Requirements
-Description : Note:
-Xandrworks to integrate supply that can support
-an excess of 10K spend.
+Description : lorem ipsum
 ---
 
 

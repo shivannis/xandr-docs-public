@@ -2,6 +2,7 @@
 Title : Get Facebook Demand for Native on iOS
 Description : This document describes the process for retrieving native ad assets to
 display in Facebook's Audience Network SDK. 
+ms.custom : android-ios
 ---
 
 
@@ -14,7 +15,7 @@ display in Facebook's Audience Network SDK. 
 
 
 
-Note: This SDK requires MacOS X 10.7+
+<b>Note:</b> This SDK requires MacOS X 10.7+
 and Xcode version 6.0+.
 
 
@@ -127,7 +128,7 @@ is functional on only iOS 14 (and later) with FacebookAd SDK 6.0.0.
 
 
 
-Note: Retain a reference to the request
+<b>Note:</b> Retain a reference to the request
 until a response has been returned.
 
 ``` pre
@@ -166,7 +167,7 @@ If a successful response is returned:
         // CSR registerViewForTracking (see example below)
     }else {
         //  Non CSR registerViewForTracking
-            //  See native ad examples here: https://docs.xandr.com/bundle/mobile-sdk/page/show-native-ads-on-ios.html
+            //  See native ad examples here: show-native-ads-on-ios.md
     }
 }
 ```
@@ -245,11 +246,11 @@ self.nativeAdResponse = nil; // It will handle ad unregister views
 
 ## Related Topics
 
-- <a href="ios-sdk-integration-instructions.html" class="xref">iOS SDK
+- <a href="ios-sdk-integration-instructions.md" class="xref">iOS SDK
   Integration Instructions</a>
-- <a href="show-banner-native-on-ios.html" class="xref">Show Banner Native
+- <a href="show-banner-native-on-ios.md" class="xref">Show Banner Native
   on iOS</a>
-- <a href="show-native-ads-on-ios.html" class="xref">Show Native Ads on
+- <a href="show-native-ads-on-ios.md" class="xref">Show Native Ads on
   iOS</a>
 
 

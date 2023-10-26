@@ -1,7 +1,6 @@
 ---
 Title : OpenRTB Specs
-Description : The following pages describe how Xandr's supply
-partners can integrate via the OpenRTB protocol.
+Description : lorem ipsum
 ---
 
 

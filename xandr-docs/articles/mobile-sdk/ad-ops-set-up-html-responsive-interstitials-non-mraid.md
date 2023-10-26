@@ -2,7 +2,9 @@
 Title : Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)
 Description : This page has Ad Ops setup instructions for serving responsive HTML
 interstitials (non-MRAID) on our Xandr<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
+href="xandr-mobile-sdks.md"
+ms.custom : android-sdk
+
 ---
 
 
@@ -12,11 +14,11 @@ href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
 
 This page has Ad Ops setup instructions for serving responsive HTML
 interstitials (non-MRAID) on our Xandr<a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/xandr-mobile-sdks.html"
+href="xandr-mobile-sdks.md"
 class="xref" target="_blank">Mobile SDKs</a>.
 
 For developer-focused interstitial documentation, see <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-ads-on-ios.html"
+href="show-interstitials-ads-on-ios.md"
 class="xref" target="_blank">Show Interstitials</a>.
 
 
@@ -70,7 +72,7 @@ the defaults, check to make sure you're sending the 1x1 ad size. For
 instructions on sending ad sizes explicitly, see the
 Using Custom Interstitial Sizes
 section of <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-interstitials-ads-on-ios.html"
+href="show-interstitials-ads-on-ios.md"
 class="xref" target="_blank">Show Interstitials</a>.
 
 You can use the following Xandr placement ID in
@@ -84,9 +86,9 @@ your app for testing: `8522187`.
 
 
 
-- <a href="ad-ops-set-up-mraid-full-screen-interstitials.html"
+- <a href="ad-ops-set-up-mraid-full-screen-interstitials.md"
   class="xref">Ad Ops - Set Up MRAID Full Screen Interstitials</a>
-- <a href="ad-ops-set-up-static-image-full-screen-interstitials.html"
+- <a href="ad-ops-set-up-static-image-full-screen-interstitials.md"
   class="xref">Ad Ops - Set Up Static Image Full Screen Interstitials</a>
 
 

@@ -1,7 +1,8 @@
 ---
 Title : Native Assembly Renderer on iOS
 Description : The native assembly renderer simplifies the use of <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-ios.html"
+href="show-banner-native-on-ios.md"
+ms.custom : android-ios
 ---
 
 
@@ -10,10 +11,10 @@ href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-ios.ht
 
 
 The native assembly renderer simplifies the use of <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-ios.html"
+href="show-banner-native-on-ios.md"
 class="xref" target="_blank">Banner Native</a> so that it behaves
 like <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-ios.html"
+href="show-banners-on-ios.md"
 class="xref" target="_blank">Banner</a>. That is, you can set Native
 banners to act like web display banners. The renderer simplifies the
 process of generating Native display and allows
@@ -33,7 +34,7 @@ it is loaded.
 ## EntryPoint 
 
 Currently, this feature is available only in <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-native-on-ios.html"
+href="show-banner-native-on-ios.md"
 class="xref" target="_blank">Banner Native</a>.
 
 

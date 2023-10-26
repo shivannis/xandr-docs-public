@@ -3,6 +3,7 @@ Title : Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
 Description : As the advertising industry recognizes the need to move away from “begin
 to render” to visibility-based impressions, we are updating our mobile
 SDK in-app impression counting to account for ad container visibility.
+ms.custom : android-sdk
 ---
 
 
@@ -101,7 +102,7 @@ to the view, irrespective of the user’s screen. </td>
 
 The Mobile SDK v7.0 continues to use the old impression counting
 mechanism for various Ad formats. For more information, see <a
-href="https://docs.xandr.com/bundle/mobile-sdk/page/mobile-sdk--impression-counting-methods.html"
+href="mobile-sdk--impression-counting-methods.md"
 class="xref" target="_blank">Mobile SDK: Impression Counting Methods</a>  
 
 **Counting Methodology : Mobile SDK version v8.0 and above**
@@ -171,7 +172,7 @@ headers="ID-00003f25__entry__12">Default</td>
 
 
 
-Note:
+<b>Note:</b>
 
 Viewability and impression counting are two different entities.
 Impression counting measures if an ad is served whereas viewability

@@ -4,6 +4,7 @@ Description : ## Overview
 The publisher side user opt-out feature provides a new API call in
 Mobile SDK which enables the publishers to set the information of 
 users' choice of opt-in/out from tracking in the AdRequests. For any
+ms.custom : android-sdk
 ---
 
 
