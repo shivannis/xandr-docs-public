@@ -1,57 +1,39 @@
 ---
-Title : Get Facebook Demand for Native on Android
-Description : This document describes the process for retrieving native ad assets to
-display in Facebook's Audience Network SDK.
-ms.custom : android-sdk
+title: Get Facebook Demand for Native on Android
+description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on Android devices.
+ms.custom: android-sdk
 ---
 
+# Get Facebook demand for native on Android
 
-# Get Facebook Demand for Native on Android
+This document describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK.
 
+The following steps are required for retrieving and displaying native ads for Facebook's Audience Network SDK:
 
+1. Ensure that the proper SDKs are installed.
+1. Initialize Facebook's Audience Network SDK.
+1. Create a native banner ad layout.
+1. Create a native ad request and load the ad.
+1. Inflate and register the native ad.
+1. Unregister the views.
 
-This document describes the process for retrieving native ad assets to
-display in Facebook's Audience Network SDK.
+## Ensure that the proper SDKs are installed
 
-The following steps are required for retrieving and displaying native
-ads for Facebook's Audience Network SDK:
+The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
+go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
 
-1.  Ensure that the proper SDKs are installed. 
-2.  Initialize Facebook's Audience Network SDK.
-3.  Create a native banner ad layout.
-4.  Create a native ad request and load the ad. 
-5.  Inflate and register the native ad.
-6.  Unregister the views.
-
-
-
-## Ensure That the Proper SDKs are Installed
-
-The Xandr SDK and
-Xandr-FAN-Demand Package will need to be
-installed. To know more about the details of the releases, please
-go to <a href="https://github.com/appnexus/mobile-sdk-android/releases"
-class="xref" target="_blank">our page</a> on Github repo. In the
-dependencies section of the `build.gradle` of your project add these two
-lines: 
-
-``` pre
+``` 
 dependencies {
     implementation 'com.appnexus.opensdk:appnexus-sdk:[8,9)'
     implementation 'com.appnexus.opensdk.csr:appnexus-facebook-csr:[8,9)'
 }
 ```
 
-
-
-
-
 ## Initialize Facebook's Audience Network SDK
 
-Early in the lifecycle of your app, initialize `Audience Network` like
-so:
+Early in the lifecycle of your app, initialize `Audience Network` like so:
 
-``` pre
+``` 
 AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkAds.InitListener() {
     @Override
     public void onInitialized(AudienceNetworkAds.InitResult initResult) {
@@ -60,30 +42,14 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 }).initialize();
 ```
 
+> [!NOTE]
+> To ensure a successful implementation of a native ad with `Audience Network` your custom native view must include [MediaView](https://developers.facebook.com/docs/audience-network/setting-up/ad-setup/android/native#mediaview) for the main asset.
 
+## Create a native banner ad layout
 
-<b>Note:</b> To ensure a successful
-implementation of a native ad with `Audience Network` your custom native
-view must include <a
-href="https://developers.facebook.com/docs/audience-network/setting-up/ad-setup/android/native#mediaview"
-class="xref" target="_blank">MediaView</a> for the main asset. 
+In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Xandr SDK to render a native `Ad Reporting Flow` on top of the ad.
 
-
-
-
-
-
-
-## Create a Native Banner Ad Layout
-
-In the activity layout's `activity_main.xml` of your app, add a
-container for your native ad. This container should be of type
-`com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a
-`FrameLayout`. This wrapper provides extra functionality that enables
-Xandr SDK to render a native `Ad Reporting Flow`
-on top of the ad. 
-
-``` pre
+``` 
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="https://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -98,30 +64,16 @@ on top of the ad. 
 </RelativeLayout>
 ```
 
-<a
-href="https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout"
-class="xref" target="_blank">Click here to view sample code </a>provided
-by Facebook for setting up native banner ad custom layouts.
+[Click here to view sample code](https://developers.facebook.com/docs/audience-network/guides/ad-formats/native-banner/android#layout) provided by Facebook for setting up native banner ad custom layouts.
 
+## Create a native ad request and load the ad
 
+> [!NOTE]
+> Hold a reference to the request until you receive a response.
 
+Check the type of response returned from the `NativeAdRequest`. If the response type is `FBNativeBannerAdResponse`, cast the initial response to an `FBNativeBannerAdResponse` and call the `inflateAndRegisterFB` method. For other native ad types, call the `inflateAndRegisterNonFB`.
 
-
-## Create a Native Ad Request and Load the Ad
-
-
-
-<b>Note:</b> Hold a reference to the request
-until you receive a response.
-
-
-
-Check the type of response returned from the `NativeAdRequest`. If the
-response type is `FBNativeBannerAdResponse`, cast the initial response
-to an `FBNativeBannerAdResponse` and call the `inflateAndRegisterFB`
-method. For other native ad types, call the `inflateAndRegisterNonFB`. 
-
-``` pre
+``` 
 NativeAdRequest request = new NativeAdRequest(MainActivity.this, "17823252");
 request.setListener(new NativeAdRequestListener() {
     @Override
@@ -144,40 +96,27 @@ request.setListener(new NativeAdRequestListener() {
 request.loadAd();
 ```
 
+## Inflate and register the native ad
 
-
-
-
-## Inflate and Register the Native Ad
-
-The process for creating the NativeAdRequest and loading the ad uses one
-of these methods, depending on the native ad object returned in the
-response:
+The process for creating the NativeAdRequest and loading the ad uses one of these methods, depending on the native ad object returned in the response:
 
 - inflateAndRegisterFB
 - inflateAndRegisterNonFB
 
-These methods are identical in function except for the registration
-process. If the object returned in the response is
-a `FBNativeBannerAdResponse` the response would call the `registerView`
-method to register the ad. If it was not a `FBNativeBannerAdResponse`
-object the response would then call `NativeAdSDK.registerTracking` to
-register the ad. 
+These methods are identical in function except for the registration process. If the object returned in the response is a `FBNativeBannerAdResponse` the response would call the `registerView` method to register the ad. If it was not a `FBNativeBannerAdResponse` object the response would then call `NativeAdSDK.registerTracking` to register the ad.
 
-**inflateAndRegisterFB Example **
+### inflateAndRegisterFB example
 
- Retrieve and display the call to action text for the call to action
-button: 
+Retrieve and display the call to action text for the call to action button:
 
-``` pre
+``` 
 Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_action);
 nativeAdCallToAction.setText(fbResponse.getCallToAction());
 ```
 
-Once the button text has been retrieved, register the native ad so the
-click action and impression tracking can be activated:
+Once the button text has been retrieved, register the native ad so the click action and impression tracking can be activated:
 
-``` pre
+``` 
 fbResponse.registerView(adView, nativeAdIconView, clickableViews, new NativeAdEventListener() {
     @Override
     public void onAdWasClicked() {
@@ -196,21 +135,18 @@ fbResponse.registerView(adView, nativeAdIconView, clickableViews, new NativeAdEv
 });
 ```
 
-**  
-inflateAndRegisterNonFB Example**
+### inflateAndRegisterNonFB example
 
-Retrieve the call to action text to display on the call to action button
-and display that text: 
+Retrieve the call to action text to display on the call to action button and display that text:
 
-``` pre
+``` 
 Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_action);
 nativeAdCallToAction.setText(response.getCallToAction());
 ```
 
-Once the button text has been retrieved register the native ad so the
-click action and impression tracking can be activated:
+Once the button text has been retrieved register the native ad so the click action and impression tracking can be activated:
 
-``` pre
+```
 NativeAdSDK.registerTracking(response, adView, clickableViews, new NativeAdEventListener() {
     @Override
     public void onAdWasClicked() {
@@ -229,27 +165,21 @@ NativeAdSDK.registerTracking(response, adView, clickableViews, new NativeAdEvent
 });
 ```
 
-**Accessing The Original Native Object**
+## Access the original native object
 
-Publishers can access the original native object through the
-`getNativeElements` method: 
+Publishers can access the original native object through the `getNativeElements` method:
 
-``` pre
+``` 
 nativeAdCallToAction.setText(fbResponse.getCallToAction());
 nativeAdSocialContext.setText(((NativeAdBase) 
 response.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)).getAdSocialContext());
 ```
 
+## Unregister the views
 
+When the app is finished displaying the ads you must unregister the views.
 
-
-
-## Unregister the Views
-
- When the app is finished displaying the ads you must unregister the
-views. 
-
-``` pre
+``` 
 if (this.response != null) {
     if (this.response instanceof FBNativeBannerAdResponse) {
         FBNativeBannerAdResponse fbresponse = (FBNativeBannerAdResponse) response;
@@ -261,33 +191,12 @@ if (this.response != null) {
 }
 ```
 
+## Example app
 
+Xandr has provided an [example app](https://github.com/appnexus/AppExamples/tree/master/Android/Java/FacebookDemand) on our Github repo.
 
+## Related topics
 
-
-## Example App
-
-Xandr has provided an <a
-href="https://github.com/appnexus/AppExamples/tree/master/Android/Java/FacebookDemand"
-class="xref" target="_blank">example app</a> on our Github repo.
-
-
-
-
-
-## Related Topics
-
-<a href="android-sdk-integration-instructions.md" class="xref">Android
-SDK Integration Instructions</a>
-
-<a href="show-banner-native-on-android.md" class="xref">Show Banner
-Native on Android</a>
-
-<a href="show-native-ads-on-android.md" class="xref">Show Native Ads
-on Android</a>
-
-
-
-
-
-
+- [Android SDK Integration Instructions](android-sdk-integration-instructions.md)
+- [Show Banner Native on Android](show-banner-native-on-android.md)
+- [Show Native Ads on Android](show-native-ads-on-android.md)
