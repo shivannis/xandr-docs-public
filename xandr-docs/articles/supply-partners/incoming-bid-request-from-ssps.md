@@ -81,7 +81,7 @@ Xandr supports the following fields in the `schain` (Supply Chain) object:
 |:---|:---|:---|
 | `ver` | string | Version of the supply chain specification in use, in the format of “major.minor”. Currently using version 1.0 of the spec. |
 | `complete` | enum | Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where 0 = no, 1 = yes. |
-| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node. Xandr supports the following fields in the nodes object. <br><br> **Note**: In order for a node to be considered complete, the following fields must be included in the node object.<br><br>**asi** (mandatory string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists.<br>**sid** (mandatory string): The identifier associated with the seller or reseller account within the advertising system.<br>**rid** (optional string): The OpenRTB RequestId of the request as issued by the seller.<br>**hp** (mandatory integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be `1`. |
+| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node. Xandr supports the following fields in the nodes object. <br><br> **Note**: In order for a node to be considered complete, the following fields must be included in the node object.<br><br>- **asi** (mandatory string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists.<br>- **sid** (mandatory string): The identifier associated with the seller or reseller account within the advertising system.<br>**rid** (optional string): The OpenRTB RequestId of the request as issued by the seller.<br>- **hp** (mandatory integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be `1`. |
 
 ### Impression object
 
@@ -165,7 +165,7 @@ For video impressions, Xandr supports the following fields:
 | `companionad` | array of objects | Specifies an array of banner objects if companion ads are available. See [Banner Object](#banner-object) above. |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Currently supported values are:<br>`1`: VPAID 1.0<br>`2`: VPAID 2.0<br>`3`: MRAID-1<br>`4`: ORMMA<br>`5`: MRAID-2<br>`6`: MRAID-3<br>`7`: OMID-1 |
 | `companiontype` | array of integers | Specifies the VAST companion ad types. Recommended if one or more companionad objects are included. Currently supported values are:<br>`1`: Static resource<br>`2`: HTML resource<br>`3`: iframe resource |
-| `protocols` | array of integers | Array of supported video protocols of the creative types that are eligible. Following are the currently supported values:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrap    per<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0<br><br><br>**Warning**: As Xandr does not verify DAAST compliance in creatives, requests that exclusively support DAAST values in `protocols` will not result in any bids. |
+| `protocols` | array of integers | Array of supported video protocols of the creative types that are eligible. Following are the currently supported values:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrap    per<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0<br><br>**Warning**: As Xandr does not verify DAAST compliance in creatives, requests that exclusively support DAAST values in `protocols` will not result in any bids. |
 | `ext` | object | Used for identifying Xandr-specific extensions to the video object. See [Video Extension Object](#video-extension-object) below. |
 
 ### Video extension object
@@ -198,7 +198,7 @@ Xandr supports the following field in the `appnexus` extension object:
 | `companionad` | array of objects | Specifies an array of banner objects if companion ads are available. See [Banner Object](#banner-object) above. |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Currently supported values are:<br>`1`: VPAID 1.0<br>`2`: VPAID 2.0<br>`3`: MRAID-1<br>`4`: ORMMA<br>5: MRAID-2 |
 | `companiontype` | array of integers | Specifies the DAAST companion ad types. Recommended if one or more companion ad banner objects are included. Currently supported values are:<br>`1`: Static resource<br>`2`: HTML resource<br>`3`: iframe resource |
-| `protocols` | array of integers | Array of supported audio protocols. Currently supported values are:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrapper<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0<br>**Warning**: As Xandr does not verify DAAST compliance in creatives, requests that exclusively support DAAST values in protocols will not result in any bids. |
+| `protocols` | array of integers | Array of supported audio protocols. Currently supported values are:<br>`1`: VAST 1.0<br>`2`: VAST 2.0<br>`3`: VAST 3.0<br>`4`: VAST 1.0 Wrapper<br>`5`: VAST 2.0 Wrapper<br>`6`: VAST 3.0 Wrapper<br>`7`: VAST 4.0<br>`8`: DAAST 1.0<br><br>**Warning**: As Xandr does not verify DAAST compliance in creatives, requests that exclusively support DAAST values in protocols will not result in any bids. |
 
 ### Native object
 
@@ -211,7 +211,8 @@ For native impressions, Xandr supports the following fields:
 
 **Native 1.0 Example**:
 
-```"native": {
+```
+"native": {
         "request": "{\"native\":{\"ver\":\"1.0\",\"assets\":[{\"id\":3}}]}"
 }
 ```
@@ -221,14 +222,16 @@ For native impressions, Xandr supports the following fields:
 > [!NOTE]
 > The main difference of the two versions is the removal of "native" in the request object.
 
-```"native": {
+```
+"native": {
         "request": "{\"ver\":\"1.1\",\"assets\":[{\"id\":3}}]}"
 }
 ```
 
 **Native 1.2 Example**:
 
-```"native": {
+```
+"native": {
         "request": "{\"ver\":\"1.2\",\"assets\":[{\"id\":3}}]}"
 }
 ```
