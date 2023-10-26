@@ -1,24 +1,15 @@
 ---
-Title : Selling Deals on Xandr
-Description : lorem ipsum
+title : Selling Deals on Xandr
+description : Learn all about selling deals on Xandr.
 ---
 
 
-# Selling Deals on Xandr
+# Selling deals on Xandr
 
+> [!NOTE]
+> You must be certified by Xandr to sell deals on our platform. Please contact [support](https://help.xandr.com/s/login/) or your Xandr representative to find out how to become certified.
 
-
-
-
-Note: You must be certified by
-Xandr to sell deals on our platform. Please
-contact <a href="https://help.xandr.com/" class="xref"
-target="_blank">support</a> or your Xandr
-representative to find out how to become certified.
-
-
-
-  
+ 
 As a supply partner, you can use deals to provide
 Xandr buyers special access to your inventory
 and/or data. For example, a deal might provide preferential pricing on
@@ -27,69 +18,35 @@ inventory, or other opportunities. 
 
 This page walks you through the process.
 
-
-
-## Before You Begin
+## Before you begin
 
 Before you can add deals to Xandr and transact
 on them with buyers, you must:
 
-1.  Be certified to sell deals on the platform.
-2.  Understand the <a
-    href="https://docs.xandr.com/bundle/supply-partners/page/openrtb-specs.html"
-    class="xref" target="_blank">OpenRTB protocol</a> for requesting and
+1. Be certified to sell deals on the platform.
+1. Understand the [OpenRTB protocol](openrtb-specs.md) for requesting and
     receiving bids from Xandr.
-3.  Learn how to use Xandr's API. See our <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/api-onboarding-process.html"
-    class="xref" target="_blank">API Onboarding Process</a>. 
+1. Learn how to use Xandr's API. See our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md). 
 
+## Step 1. Create the deal in your system
 
-
-
-
-## Step 1. Create the Deal in Your System
-
-1.  Negotiate the deal with the Xandr buyer.
-2.  Add the deal to your own system. 
-3.  Ask the Xandr buyer for their
-    Xandr member ID, which you will need in the
+1. Negotiate the deal with the Xandr buyer.
+1. Add the deal to your own system. 
+1. Ask the Xandr buyer for their Xandr member ID, which you will need in the
     next step.
 
+## Step 2. Add the deal to Xandr
 
+> [!NOTE]
+> This step shows you how to use Xandr's API to add a deal to Xandr manually. However, we recommend building an automated mechanism to sync your deals to Xandr whenever they are created in your own system.
 
-
-
-## Step 2. Add the Deal to Xandr
-
-
-
-Note: This step shows you how to use
-Xandr's API to add a deal to
-Xandr manually. However, we recommend building
-an automated mechanism to sync your deals to
-Xandr whenever they are created in your own
-system.
-
-
-
-1.  <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/authentication-service.html"
-    class="xref" target="_blank">Authenticate</a> in
-    Xandr's API. 
-2.  If the buyer did not give you their Xandr
-    member ID, use the <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/platform-member-service.html"
-    class="xref" target="_blank">Platform Member Service</a> to find
+1. [Authenticate](../digital-platform-api/authentication-service.md) in
+    Xandr's API.
+1. If the buyer did not give you their Xandr member ID, use the [Platform Member Service](../digital-platform-api/platform-member-service.md) to find
     it.  
 
-
-
-Tip:
-
-You can use the  `search`  query string parameter to search for the
-buyer by name. The example below shows the response that would be
-returned when searching for buyers with "Place" in their names. Note
-that the `id` field contains the member ID.
+> [!TIP]
+> You can use the  `search`  query string parameter to search for the buyer by name. The example below shows the response that would be returned when searching for buyers with "Place" in their names. Note that the `id` field contains the member ID.
 
 ``` pre
 $curl -b cookies -c cookies 'https://api.appnexus.com/platform-member?search=Place
@@ -164,12 +121,8 @@ $curl -b cookies -c cookies 'https://api.appnexus.com/platform-member?search=Pla
 }
 ```
 
-
-
-1.  Use the
-    <a href="https://docs.xandr.com/bundle/xandr-api/page/deal-service.html"
-    class="xref" target="_blank">Deal Service</a> to add your deal to
-    Xandr. In your JSON POST, be sure to:
+1. Use the [Deal Service](../digital-platform-api/deal-service.md)
+    to add your deal to Xandr. In your JSON POST, be sure to:
     - Set the `code` field to your internal ID for the deal.
     - Set the `id` field in the `buyer` object to the buyer's member ID.
     - Set the `use_deal_floor` field to "true" and configure a deal
@@ -182,11 +135,7 @@ $curl -b cookies -c cookies 'https://api.appnexus.com/platform-member?search=Pla
       deals:
       - `size_preference`, `audit_status_option`, `brand_restrict`, `category_restrict`, `language_restrict`, `technical_attribute_restrict`, `brands`, `categories`, `languages`, `technical_attributes`, `creatives`, `priority`, `allowed_media_types`, `allowed_media_subtypes`, `media_preference`
 
-
-
-
-
-## Step 3. Submit a Bid Request with your Deal ID
+## Step 3. Submit a bid request with your deal ID
 
 For basic guidelines of how to create a bid request, see OpenRTB Bid
 Request. In addition, note the following requirements for deals:
@@ -246,11 +195,7 @@ the querystring.
 $ curl -X POST -d @bid_deal_request 'https://ib.adnxs.com/openrtb?member_id=123'
 ```
 
-
-
-
-
-## Step 4. Listen for Bid Responses to your Deal ID
+## Step 4. Listen for bid responses to your deal ID
 
 Be sure that you are listening for the relevant `dealid` value in the
 OpenRTB Bid Response.
@@ -280,9 +225,3 @@ OpenRTB Bid Response.
  "cur": "USD"
 }
 ```
-
-
-
-
-
-
