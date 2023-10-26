@@ -1,6 +1,6 @@
 ---
 title : Set Reserve Prices on iOS
-description : The reserve price is the minimum bid amount you'll accept to show an ad.
+description : The reserve price is the minimum bid amount you'll accept to show an ad in iOS.
 ---
 
 

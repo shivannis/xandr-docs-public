@@ -1,20 +1,13 @@
 ---
-Title : Show Banner Native on iOS
-Description : Note: This offering is currently in
-Alpha and is subject to change.
+title : Show Banner Native on iOS
+description : 
 ---
 
 
-# Show Banner Native on iOS
+# Show banner native on iOS
 
-
-
-
-
-Note: This offering is currently in
-Alpha and is subject to change.
-
-
+> [!NOTE]
+> This offering is currently in Alpha and is subject to change.
 
 The term *Banner Native* refers to the capability of our Mobile SDK
 Banner class to return native demand. The banner object (ANBannerAdView)
@@ -42,9 +35,7 @@ Response object.  This Native Response object can then be used in the
 traditional manner to display and track the ad content of a native ad
 object.
 
-
-
-## Process Changes
+## Process changes
 
 As of MobileSDK Version 4.8, there is one breaking change in the
 procedure of handling banner and video ad objects via the Banner class. 
@@ -99,14 +90,8 @@ multi-format `ANBannerAdView` is used:
    @property (nonatomic, readwrite) BOOL shouldAllowVideoDemand;
   ```
 
-  
-
-  Note: As per new enhancements, the
-  `RendererId` is set from the Console instead of it passing from the
-  SDK. Hence, the deprecated message to use `shouldAllowNativeDemand`
-  property is shown in the code block.
-
-  
+  > [!NOTE]
+  > As per new enhancements, the `RendererId` is set from the Console instead of it passing from the SDK. Hence, the deprecated message to use `shouldAllowNativeDemand`property is shown in the code block.
 
 - By default these values are set to NO, in which case
   your `ANBannerAdView` will deliver only traditional HTML banner
@@ -121,19 +106,12 @@ multi-format `ANBannerAdView` is used:
   of `ANNativeAdResponse` which can then be handled like any other
   traditional native response class.  In this
   case, `ANBannerAdView` effectively plays the same role
-  as ANNativeAdRequest. (See <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-native-ads-on-ios.html"
-  class="xref" target="_blank">Show Native Ads on iOS</a> for more
-  on ANNativeAdResponse.)
+  as ANNativeAdRequest. (See [Show Native Ads on iOS](show-native-ads-on-ios.md) for more on ANNativeAdResponse.)
 
 - By default, the mainImage and iconImage are not loaded. You can
   manually download these images via the
   properties mainImageURL and iconImageURL, in the
   class ANNativeAdResponse.
-
-
-
-
 
 ## Example:
 
@@ -235,21 +213,7 @@ without using the adDidReceiveAd : delegate method:
 @end
 ```
 
+## Related topics: 
 
-
-
-
-## Related Topics: 
-
-- <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/show-banners-on-ios.html"
-  class="xref" target="_blank">Show Banners on iOS</a>
-- <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/native-assembly-renderer-on-ios.html"
-  class="xref" target="_blank">Native Assembly Renderer on iOS</a>
-
-
-
-
-
-
+- [Show Banners on iOS](show-banners-on-ios.md)
+- [Native Assembly Renderer on iOS](native-assembly-renderer-on-ios.md)

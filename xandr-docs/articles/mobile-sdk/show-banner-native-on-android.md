@@ -1,20 +1,13 @@
 ---
-Title : Show Banner Native on Android
-Description : Note: This offering is currently in
-Alpha and is subject to change.
+title : Show Banner Native on Android
+description : Banner Native refers to the capability of our Mobile SDK
+Banner class to return native demand.
 ---
 
+# Show banner native on Android
 
-# Show Banner Native on Android
-
-
-
-
-
-Note: This offering is currently in
-Alpha and is subject to change.
-
-
+> [!NOTE]
+> This offering is currently in Alpha and is subject to change.
 
 The term *Banner Native* refers to the capability of our Mobile SDK
 Banner class to return native demand. The BannerAdView object is
@@ -41,9 +34,7 @@ Response object.  This Native Response object can then be used in the
 traditional manner to display and track the ad content of a native ad
 object.
 
-
-
-## Process Changes
+## Process changes
 
 As of MobileSDK Version 4.9 for Android, there is one breaking change in
 the procedure of handling banner and video ad objects via the Banner
@@ -61,11 +52,7 @@ provides the delivery point for the native ad object, if it is returned,
 and because it is the only place to distinguish between the return of a
 native ad object versus a banner or video ad object.
 
-
-
-
-
-## Mobile SDK Structure
+## Mobile SDK structure
 
 The AdListener defines a method, `onAdLoaded `(NativeAdResponse
 response), which must be declared even if it is not used. 
@@ -122,10 +109,8 @@ multi-format `BannerAdView` is used:
 - A `NativeAdResponse` is returned as one of the
   overloaded `onAdLoaded` calls, which can be handled in the same way as
   if it were returned in the traditional way by `NativeAdRequest`. In
-  this case, `BannerAdView` effectively plays the same role
-  as `NativeAdRequest`.
-  (See <a href="show-native-ads-on-android.html" class="xref">Show Native Ads
-  on Android</a> for more on NativeAdResponse.)
+  this case, `BannerAdView` effectively plays the same role as `NativeAdRequest`.
+  (See [Show Native Ads on Android ](show-native-ads-on-android.md) for more on NativeAdResponse.)
 
 - By default, the mainImage and iconImage are not loaded. You can
   manually download these images via the URLs returned by the
@@ -148,14 +133,10 @@ returns NativeAdResponse, but it can be left empty.
 If you want to fetch native or a combination of banner, video and/or
 native, you can use the following code example to get started:
 
-
-
-Note: As best practices :
-
-- All SDK methods must be called on the main thread.
-
-- `activityOnDestroy()` must be called for the BannerAdView that is
-  expected to be destroyed.
+> [!NOTE]
+> As best practices :
+> - All SDK methods must be called on the main thread.
+> - `activityOnDestroy()` must be called for the BannerAdView that is expected to be destroyed.
 
   ``` pre
   // Android: Java to handle a banner-native ad response
@@ -302,24 +283,7 @@ Note: As best practices :
   }
   ```
 
+## Related topics:
 
-
-
-
-
-
-## Related Topics:
-
-- <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/get-facebook-demand-for-native-on-android.html"
-  class="xref" target="_blank">Get Facebook Demand for Native on
-  Android</a>
-- <a
-  href="https://docs.xandr.com/bundle/mobile-sdk/page/native-assembly-renderer-for-android.html"
-  class="xref" target="_blank">Native Assembly Renderer for Android</a>
-
-
-
-
-
-
+- [Get Facebook Demand for Native on Android](get-facebook-demand-for-native-on-android.md)
+- [Native Assembly Renderer for Android](native-assembly-renderer-for-android.md)

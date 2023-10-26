@@ -1,36 +1,18 @@
 ---
-Title : Show High Impact Media Type on Android
-Description : <div id="ID-000007ff__note_shz_n2s_lwb"
-Note: This feature is available in
-Xandr Mobile SDK version 8.1 for Android.
+title : Show High Impact Media Type on Android
+description : This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for Android.
 ---
 
 
-# Show High Impact Media Type on Android
+# Show high impact media type on Android
 
-
-
-
-
-<div id="ID-000007ff__note_shz_n2s_lwb" 
-
-Note: This feature is available in
-Xandr Mobile SDK version 8.1 for Android.
-
-
-
-
-
-
+> [!NOTE]
+> This feature is available in Xandr Mobile SDK version 8.1 for Android.
 
 ## Overview
 
 This page has instructions and code samples for showing a high impact
 media as banner ad view in Xandr Mobile SDK for Android.
-
-
-
-
 
 ## Methods
 
@@ -69,19 +51,9 @@ ad view or not.
     }
 ```
 
-
-
-
-
 ## Example
 
 ``` pre
 // Allow High Impact Media for BannerAdView
 bannerAdView.setAllowHighImpactDemand(true);
 ```
-
-
-
-
-
-
