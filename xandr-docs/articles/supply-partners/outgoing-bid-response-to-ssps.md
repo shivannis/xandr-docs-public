@@ -1,6 +1,6 @@
 ---
 title : Outgoing Bid Response to SSPs
-description : learn about Outgoing Bid Response to SSPs.
+description : Learn about Outgoing Bid Response to SSPs.
 ---
 
 

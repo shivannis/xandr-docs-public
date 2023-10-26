@@ -1,6 +1,6 @@
 ---
 title : OpenRTB Bid Request Requirements
-description : lorem ipsum
+description : This page documents the OpenRTB fields required and the corresponding volume thresholds that need to be met.
 ---
 
 

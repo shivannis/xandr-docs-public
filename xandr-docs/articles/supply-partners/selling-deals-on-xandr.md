@@ -1,6 +1,6 @@
 ---
 title : Selling Deals on Xandr
-description : learn all about selling deals on Xandr.
+description : Learn all about selling deals on Xandr.
 ---
 
 
