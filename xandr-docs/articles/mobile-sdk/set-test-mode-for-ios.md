@@ -2,7 +2,6 @@
 title : Set Test Mode for iOS
 description : An API is introduced in Xandr mobile SDK to set the mode of execution of AdRequests as test mode for debugging or testing purpose.
 ms.custom: ios-sdk 
-ms.custom: android-sdk 
 ---
 
 

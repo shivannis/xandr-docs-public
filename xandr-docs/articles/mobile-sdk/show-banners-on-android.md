@@ -1,7 +1,6 @@
 ---
 title : Show Banners on Android
 description : This page has instructions and code samples for showing banner ads on Android.
-ms.custom: ios-sdk 
 ms.custom: android-sdk
 ---
 

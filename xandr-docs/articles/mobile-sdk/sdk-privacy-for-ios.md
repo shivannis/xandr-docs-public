@@ -2,7 +2,7 @@
 title: SDK Privacy for iOS
 description: Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), and the California Consumer Protection Act (CCPA).
 ms.custom: ios-sdk 
-ms.custom: android-sdk
+
 ---
 
 # SDK Privacy for iOS
@@ -23,7 +23,7 @@ to adapt to regulatory demands across markets.
 > [!NOTE]
 > Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with [the Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
 > - [Register your own CMP](https://register.consensu.org/CMP)
-> - [List of registered CMPs](https://advertisingconsent.eu/cmp-list/)
+> - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
 >
 > All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs
 
@@ -100,8 +100,7 @@ This information will be persisted by the SDK and will be added to each
 ad call for applying platform controls.  
 
 Publishers/Consent Management Platforms (CMPs) are free to store these
-values in a SharedPreferences interface (as defined by [IAB's CCPA Compliance Mechanism](https://iabtechlab.com/wp-content/uploads/2019/11/US-Privacy-USER-SIGNAL-API-SPEC-v1.0.pdf)) instead
-of passing them via the new APIs, and the SDK will read the values as a
+values in a SharedPreferences interface (as defined by IAB's CCPA Compliance Mechanism) instead of passing them via the new APIs, and the SDK will read the values as a
 fallback.
 
 ``` pre
