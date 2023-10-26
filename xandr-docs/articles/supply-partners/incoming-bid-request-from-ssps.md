@@ -98,7 +98,7 @@ Xandr supports the following fields in the `imp` object, which describe the impr
 | `instl` | integer | Indicates whether the impression is interstitial or full screen.<br>`0`: the impression is not interstitial or full screen (default)<br>`1`: the impression is interstitial or full screen |
 | `tagid` | string | Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. If set, this is the Xandr placement code. Omitted when sending to buyers if seller visibility settings prohibit sharing. |
 | `secure` | integer | Indicates whether the impression requires secure HTTPS URL creative assets and markup. If omitted, the secure state is unknown but non-secure HTTP support can be assumed.<br>`0`: the impression is not secure<br>`1`: the impression is secure |
-| `bidfloor` | float | Minimum bid for this impression expressed in CPM.<br>Note: The `bidfloor` field should be the publisher's net CPM floor price on incoming ad requests. This floor price must be greater than the existing hard floor, set on the platform, in order to override it for the given auction. |
+| `bidfloor` | float | Minimum bid for this impression expressed in CPM.<br><br>**Note**: The `bidfloor` field should be the publisher's net CPM floor price on incoming ad requests. This floor price must be greater than the existing hard floor, set on the platform, in order to override it for the given auction. |
 | `bidfloorcur` | string | Specifies the currency for this bid using ISO-4217 alphabetic codes. Defaults to `USD` if not specified. |
 | `pmp` | object | Specifies information about a private marketplace deal that is in effect for this impression. See [Private Marketplace Object](#private-marketplace-object) below. |
 | `ext` | object | Used for identifying Xandr-specific extensions to the impression object. See [Impression Extension Object](#impression-extension-object) below. |
@@ -151,7 +151,7 @@ For video impressions, Xandr supports the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `mimes` | array of strings | (Required) Specifies the video content MIME types supported; for example, `video/x-ms-wmv` and `video/x-flv`. If not specified, any MIME type is allowed.<br>Note: `application/x-shockwave-flash` and `application/javascript` are VPAID formats. You should select these MIME types only if your placement supports VPAID. |
+| `mimes` | array of strings | (Required) Specifies the video content MIME types supported; for example, `video/x-ms-wmv` and `video/x-flv`. If not specified, any MIME type is allowed.<br><br>**Note**: `application/x-shockwave-flash` and `application/javascript` are VPAID formats. You should select these MIME types only if your placement supports VPAID. |
 | `minduration` | integer | (Recommended) Specifies the minimum video ad duration, in seconds. |
 | `maxduration` | integer | (Recommended) Specifies the maximum video ad duration, in seconds. |
 | `w` | integer | (Recommended) Specifies the width of the video player, in pixels. |
@@ -432,7 +432,7 @@ Xandr supports the following fields in the appnexus extension object of the cont
 | Field | Type | Description |
 |:---|:---|:---|
 | `airtime` | String | Original airtime, for time-shifted content |
-| `program_type` | String | Type of program (eg movie, event, episode, etc) |
+| `program_type` | String | Type of program (e.g. movie, event, episode, etc.) |
 
 ### Device object
 
@@ -474,7 +474,7 @@ Xandr supports the following fields in the `user` object:
 | `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for car_make and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for car_make=ford.<br>- a querystring mapping segment with my_other_value as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Please contact your Xandr representative to enable this feature. |
 | `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Please contact support or your account representative for more information. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the `user` object. |
-| `eid` | object | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object) |
+| `eid` | object | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
 ### eid object
 

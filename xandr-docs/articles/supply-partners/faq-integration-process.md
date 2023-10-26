@@ -275,13 +275,13 @@ In order to facilitate adoption and to maximize your seller reach across native 
 |:---|:---|
 | `Title` | 25-character maximum |
 | `Body` | 300-character maximum |
-| `Icon/Logo*` | 1:1 aspect ratio (Note: OpenRTB spec is merging the prior overlapping type 1 and type 2 as just type 1 - to be used for app icon, brand logo, or similar) |
+| `Icon/Logo*` | 1:1 aspect ratio <br>**Note**: OpenRTB spec is merging the prior overlapping type 1 and type 2 as just type 1 - to be used for app icon, brand logo, or similar |
 | `Image` | 1.91:1 aspect ratio (600 px min / 150 KB max) |
 | `Sponsored By` | 40 character maximum (brand of advertisement) |
 
 **The image asset in the native bid request is using type 1 for app icon, brand logo, or similar. Does Xandr support specific icon sizes, for example 50x50?**
 
-No. Xandr creative IDs currently do not carry information about the icon/logo size of the native creative submitted by the buyer. All native bid requests including img type 1 have to be declared as size `0x0`
+No. Xandr creative IDs currently do not carry information about the icon/logo size of the native creative submitted by the buyer. All native bid requests including img type 1 have to be declared as size `0x0`.
 
 **In the native part of the request ("native-request-native" field) - I see that you are expecting a JSON-encoded string. Can you also accept a regular object?**
 
@@ -374,7 +374,7 @@ Xandr follows the OpenRTB spec here. The price uses the same currency and units 
 
 **How can we (the SSP) confirm during testing whether the bid request returns a no-bid or is syntactically incorrect?**
 
-Feel free to use the `debug=1` parameter as shown below on the manual call to run a general debug auction. Tip: if absolutely no debug output is returned, then most likely something is wrong with the structure of the bid request or the placement is not working.
+Feel free to use the `debug=1` parameter as shown below on the manual call to run a general debug auction. <br><br>**Tip**: if absolutely no debug output is returned, then most likely something is wrong with the structure of the bid request or the placement is not working.
 
 ```
 https://MEMBER_ALIAS-useast.adnxs.com/openrtb2?member_id=MEMBER_ID&debug=1
