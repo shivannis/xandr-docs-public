@@ -107,7 +107,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
   carthage update --use-xcframeworks
   ```
 
-- To Use **AppNexusSDK** SDK, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
+- To use **AppNexusSDK** SDK, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
 
 - Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
 
@@ -124,11 +124,13 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 - Click **Link Binary With Libraries** (Target-&gt;General-&gt;Link Binary With Libraries) and select **AppNexusSDK.framework**.
    :::image type="content" source="media/ios-sdk-integration-instructions-c.png" alt-text="Screenshot of Link Binary with Libraries screen.":::
 
-   :::image type="content" source="media/ios-sdk-integration-instructions-d.png" alt-text="Screenshot of the library selection from the drop-down menu.":::
+   :::image type="content" source="media/ios-sdk-integration-instructions-d.png" alt-text="Screenshot of the library selected from the drop-down menu.":::
 
 #### XCFramework
 
-- Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases). **AppNexusSDK.xcframework.zip** contains **AppNexusSDK.xcframework**, **AppNexusNativeSDK.xcframework**, and **OMSDK\_AppNexus.xcframework**.
+- Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
+
+  **AppNexusSDK.xcframework.zip** contains **AppNexusSDK.xcframework**, **AppNexusNativeSDK.xcframework**, and **OMSDK\_AppNexus.xcframework**.
 - Open the app’s Xcode project or workspace.
 - Go to the app target’s **General** configuration page.
 - To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.

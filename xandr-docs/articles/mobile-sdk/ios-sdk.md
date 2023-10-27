@@ -1,7 +1,6 @@
 ---
 title: iOS SDK
-description: Xandr's Mobile SDK for iOS provides an
-end-to-end solution for mobile app publishers. Use this library to
+description: Explore the iOS Mobile SDK, which offers an end-to-end solution for mobile app publishers.
 ms.custom: ios-sdk
 ---
 
