@@ -28,28 +28,28 @@ Some of the APIs listed below has been removed in the Xandr SDK v8.0. If the bel
 
 | Class | Removed Property(s) and Method(s) | Alternative Property(s) and Method(s) |
 |:---|:---|:---|
-| ANBannerAdView<br><br><br> | **Property**: externalUid  | ANSDKSettings.publisherUserId |
-| ANBannerAdView | **Property**: adType | ANAdResponseInfo.adType |
-| ANBannerAdView | **Property**:  creativeId | ANAdResponseInfo.creativeId |
-| ANBannerAdView | **Property**: countImpressionOnAdReceived | N/A |
-| ANBannerAdView | **Method**: - (void)setAllowNativeDemand:(BOOL)nativeDemand withRendererId:(NSInteger)rendererId; | ANBannerAdView.shouldAllowNativeDemand<br>ANBannerAdView.nativeAdRendererId |
-| ANInterstitialAd<br> | **Property**: externalUid  | ANSDKSettings.publisherUserId |
-| ANInterstitialAd | **Property**: adType | ANAdResponseInfo.adType |
-| ANInterstitialAd | **Property**:  creativeId | ANAdResponseInfo.creativeId |
-| ANInstreamVideoAd<br> | **Property**: externalUid  | ANSDKSettings.publisherUserId |
-| ANInstreamVideoAd | **Property**: adType | ANAdResponseInfo.adType |
-| ANInstreamVideoAd | **Property**:  creativeId | ANAdResponseInfo.creativeId |
-| ANMultiAdRequest<br> | **Property**: externalUid  | ANSDKSettings.publisherUserId |
-| ANMultiAdRequest | **Property**: adType | ANAdResponseInfo.adType |
-| ANMultiAdRequest | **Property**:  creativeId | ANAdResponseInfo.creativeId |
-| ANExternalUserId<br> | **Property**: source | ANUserId.source |
-| ANExternalUserId | **Property**:  userId | ANUserId.userId |
-| ANExternalUserId | **Method**: - (nullable instancetype)initWithSource:(ANExternalUserIdSource)source userId:(nonnull NSString *)userId; | ```ANUserId.initWithANUserIdSource:(ANUserIdSource)source userId:(nonnull NSString *)userId;``` |
-| ANNativeAdRequest | **Property**: adType | ANAdResponseInfo.adType |
-| ANNativeAdRequest | **Property**: externalUid | ANSDKSettings.publisherUserId |
-| ANNativeAdResponse | **Property**: creativeId | ANAdResponseInfo.creativeId |
-| ANSDKSettings<br><br> | **Property**: HTTPSEnabled | N/A  |
-| ANSDKSettings | **Property**: externalUserIdArray | ANSDKSettings.userIdArray |
-| ANSDKSettings | **Property**:  useAdnxsSimpleDomain | N/A |
-| ANSDKSettings | **Property**: countImpressionOn1PxRendering | N/A |
-| ANTargetingParameters | **Property**: externalUid | N/A |
+| `ANBannerAdView`<br><br><br> | **Property**: `externalUid`  | `ANSDKSettings.publisherUserId` |
+| `ANBannerAdView` | **Property**: `adType` | `ANAdResponseInfo.adType` |
+| `ANBannerAdView` | **Property**:  `creativeId` | `ANAdResponseInfo.creativeId` |
+| `ANBannerAdView` | **Property**: `countImpressionOnAdReceived` | N/A |
+| `ANBannerAdView` | **Method**: ` - (void)setAllowNativeDemand:(BOOL)nativeDemand withRendererId:(NSInteger)rendererId;` | `ANBannerAdView.shouldAllowNativeDemand<br>ANBannerAdView.nativeAdRendererId` |
+| `ANInterstitialAd`<br> | **Property**: `externalUid`  | `ANSDKSettings.publisherUserId` |
+| `ANInterstitialAd` | **Property**: `adType` | `ANAdResponseInfo.adType` |
+| `ANInterstitialAd` | **Property**:  `creativeId` | `ANAdResponseInfo.creativeId` |
+| `ANInstreamVideoAd`<br> | **Property**: `externalUid`  | `ANSDKSettings.publisherUserId` |
+| `ANInstreamVideoAd` | **Property**: `adType` | `ANAdResponseInfo.adType` |
+| `ANInstreamVideoAd` | **Property**:  `creativeId` | `ANAdResponseInfo.creativeId` |
+| `ANMultiAdRequest`<br> | **Property**: `externalUid`  | `ANSDKSettings.publisherUserId` |
+| `ANMultiAdRequest` | **Property**: `adType` | `ANAdResponseInfo.adType` |
+| `ANMultiAdRequest` | **Property**:  `creativeId` | `ANAdResponseInfo.creativeId` |
+| `ANExternalUserId`<br> | **Property**: `source` | `ANUserId.source` |
+| `ANExternalUserId` | **Property**:  `userId` | `ANUserId.userId` |
+| `ANExternalUserId` | **Method**: `- (nullable instancetype)initWithSource:(ANExternalUserIdSource)source userId:(nonnull NSString *)userId;` | ```ANUserId.initWithANUserIdSource:(ANUserIdSource)source userId:(nonnull NSString *)userId;``` |
+| `ANNativeAdRequest` | **Property**: `adType` | `ANAdResponseInfo.adType` |
+| `ANNativeAdRequest` | **Property**: `externalUid` | `ANSDKSettings.publisherUserId` |
+| `ANNativeAdResponse` | **Property**: `creativeId` | `ANAdResponseInfo.creativeId` |
+| `ANSDKSettings`<br><br> | **Property**: `HTTPSEnabled` | N/A  |
+| `ANSDKSettings` | **Property**: `externalUserIdArray` | `ANSDKSettings.userIdArray` |
+| `ANSDKSettings` | **Property**:  `useAdnxsSimpleDomain` | N/A |
+| `ANSDKSettings` | **Property**: `countImpressionOn1PxRendering` | N/A |
+| `ANTargetingParameters` | **Property**: `externalUid` | N/A |

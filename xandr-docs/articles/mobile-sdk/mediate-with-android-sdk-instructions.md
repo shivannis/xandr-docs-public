@@ -169,8 +169,10 @@ For more information about the the SmartAdServer SDK, see their [SDK documentati
 
 If you intend to support Huawei devices that do not feature Google services anymore (needed for Advertising Id retrieval), you also need to declare the Huawei support libraries repository. To support Huawei devices with SAS adapter, the publishers are required to add following in the root level build.gradle of your project:
 
+```
 // Optional: Huawei services dependencies repository  
 maven { url '[https://developer.huawei.com/repo/](https://developer.huawei.com/repo/)' }
+```
 
 > [!WARNING]
 > 
@@ -212,7 +214,7 @@ For instructions on passing custom interstitial sizes, see "Using Custom Interst
 The Xandr UI has built-in support for a number of popular mobile ad networks. If you want to mediate a network it doesn't support, you'll need to:
 
 - Write a [custom mediation adaptor](./android-custom-adaptors.md) that lets our SDK receive events from the SDK you want to mediate.
-- Set up a **Custom Mobile Network** using the instructions in [Add a Network](../digital-platform-api/mediated-network-service).
+- Set up a **Custom Mobile Network** using the instructions in [Add a Network](../digital-platform-api/mediated-network-service.md).
 
 ## Related topics
 

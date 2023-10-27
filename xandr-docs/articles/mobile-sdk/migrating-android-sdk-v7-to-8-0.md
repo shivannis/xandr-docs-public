@@ -14,43 +14,43 @@ Some of the APIs listed below has been removed in the Xandr SDK v8.0. If the bel
 
 | Class | Removed API | Alternate API |
 |:---|:---|:---|
-| ANNativeAdResponse | isOpenNativeBrowser() | getClickThroughAction() |
-| ANNativeAdResponse | openNativeBrowser(boolean openNativeBrowser) | setClickThroughAction(ANClickThroughAction clickThroughAction) |
-| VideoAd | getOpensNativeBrowser() | getClickThroughAction() |
-| VideoAd | setOpensNativeBrowser(boolean opensNativeBrowser) | setClickThroughAction(ANClickThroughAction clickThroughAction) |
-| VideoAd | setExternalUid(String externalUid) | SDKSettings.setPublisherUserId(String publisherUserId) |
-| VideoAd | getExternalUid() | SDKSettings.getPublisherUserId() |
-| VideoAd | getCreativeId() | ANAdResponseInfo.getCreativeId() |
-| ANMultiAdRequest | getExternalUid() | SDKSettings.setPublisherUserId(String publisherUserId) |
-| ANMultiAdRequest | setExternalUid(String externalUid) | SDKSettings.getPublisherUserId() |
-| BannerAdView | loadAdOffscreen() | loadAd() |
-| BannerAdView | getOpensNativeBrowser() | getClickThroughAction() |
-| BannerAdView | setOpensNativeBrowser(boolean opensNativeBrowser) | setClickThroughAction(ANClickThroughAction clickThroughAction) |
-| BannerAdView | setExternalUid(String externalUid) | SDKSettings.setPublisherUserId(String publisherUserId) |
-| BannerAdView | getExternalUid() | SDKSettings.getPublisherUserId() |
-| BannerAdView | getCreativeId() | ANAdResponseInfo.getCreativeId() |
-| BannerAdView | getAdType() | ANAdResponseInfo.getAdType() |
-| BannerAdView | setAllowNativeDemand(boolean enabled, int rendererId) | setAllowNativeDemand(boolean)<br>setRendererId(int rendererId) |
-| BannerAdView | setCountImpressionOnAdLoad(boolean enabled) | N/A |
-| BannerAdView | getCountImpressionOnAdLoad() | N/A |
-| InterstitialAdView | loadAdOffscreen() | loadAd() |
-| InterstitialAdView | getOpensNativeBrowser() | getClickThroughAction() |
-| InterstitialAdView | setOpensNativeBrowser(boolean opensNativeBrowser) | setClickThroughAction(ANClickThroughAction clickThroughAction) |
-| InterstitialAdView | setExternalUid(String externalUid) | SDKSettings.setPublisherUserId(String publisherUserId) |
-| InterstitialAdView | getExternalUid() | SDKSettings.getPublisherUserId() |
-| InterstitialAdView | getCreativeId() | ANAdResponseInfo.getCreativeId() |
-| InterstitialAdView | getAdType() | ANAdResponseInfo.getAdType() |
-| NativeAdRequest | getOpensNativeBrowser() | getClickThroughAction() |
-| NativeAdRequest | setOpensNativeBrowser(boolean opensNativeBrowser) | setClickThroughAction(ANClickThroughAction clickThroughAction) |
-| NativeAdRequest | setExternalUid(String externalUid) | SDKSettings.setPublisherUserId(String publisherUserId) |
-| NativeAdRequest | getExternalUid() | SDKSettings.getPublisherUserId() |
-| NativeAdResponse | getCreativeId() | ANAdResponseInfo.getCreativeId() |
-| SDKSettings | useHttps(boolean useHttps) | N/A. HTTPS is used by default. |
-| SDKSettings | isHttpsEnabled() | N/A |
-| SDKSettings | setExternalUserIds(Map<ANExternalUserIdSource,String> externalUserIds) | setUserIds(List<ANUserId> userIdList) |
-| SDKSettings | getExternalUserIds() | getUserIds() |
-| SDKSettings | setAllowUsingSimpleDomain(boolean allow) | N/A |
-| SDKSettings | setCountImpressionOn1pxRendering(boolean enable) | N/A |
-| SDKSettings | getCountImpressionOn1pxRendering() | N/A |
-| Clog | clogged (Variable) | N/A |
-| ANExternalUserIdSource (enum) |  | ANUserId.Source |
+| `ANNativeAdResponse` | `isOpenNativeBrowser()` | `getClickThroughAction()` |
+| `ANNativeAdResponse` | `openNativeBrowser(boolean openNativeBrowser)` | `setClickThroughAction(ANClickThroughAction clickThroughAction)` |
+| `VideoAd` | `getOpensNativeBrowser()` | `getClickThroughAction()` |
+| `VideoAd` | `setOpensNativeBrowser(boolean opensNativeBrowser)` | `setClickThroughAction(ANClickThroughAction clickThroughAction)` |
+| `VideoAd` | `setExternalUid(String externalUid)` | `SDKSettings.setPublisherUserId(String publisherUserId)` |
+| `VideoAd` | `getExternalUid()` | `SDKSettings.getPublisherUserId()` |
+| `VideoAd` | `getCreativeId()` | `ANAdResponseInfo.getCreativeId()` |
+| `ANMultiAdRequest` | `getExternalUid()` | `SDKSettings.setPublisherUserId(String publisherUserId)` |
+| `ANMultiAdRequest` | `setExternalUid(String externalUid)` | `SDKSettings.getPublisherUserId()` |
+| `BannerAdView` | `loadAdOffscreen()` | `loadAd()` |
+| `BannerAdView` | `getOpensNativeBrowser()` | `getClickThroughAction()` |
+| `BannerAdView` | `setOpensNativeBrowser(boolean opensNativeBrowser)` | `setClickThroughAction(ANClickThroughAction clickThroughAction)` |
+| `BannerAdView` | `setExternalUid(String externalUid)` | `SDKSettings.setPublisherUserId(String publisherUserId)` |
+| `BannerAdView` | `getExternalUid()` | `SDKSettings.getPublisherUserId()` |
+| `BannerAdView` | `getCreativeId()` | `ANAdResponseInfo.getCreativeId()` |
+| `BannerAdView` | `getAdType()` | `ANAdResponseInfo.getAdType()` |
+| `BannerAdView` | `setAllowNativeDemand(boolean enabled, int rendererId)` | `setAllowNativeDemand(boolean)` <br>`setRendererId(int rendererId)` |
+| `BannerAdView` | `setCountImpressionOnAdLoad(boolean enabled)` | N/A |
+| `BannerAdView` | `getCountImpressionOnAdLoad()` | N/A |
+| `InterstitialAdView` | `loadAdOffscreen()` | `loadAd()` |
+| `InterstitialAdView` | `getOpensNativeBrowser()` | `getClickThroughAction()` |
+| `InterstitialAdView` | `setOpensNativeBrowser(boolean opensNativeBrowser)` | `setClickThroughAction(ANClickThroughAction clickThroughAction)` |
+| `InterstitialAdView` | `setExternalUid(String externalUid)` | `SDKSettings.setPublisherUserId(String publisherUserId)` |
+| `InterstitialAdView` | `getExternalUid()` | `SDKSettings.getPublisherUserId()` |
+| `InterstitialAdView` | `getCreativeId()` | `ANAdResponseInfo.getCreativeId()` |
+| `InterstitialAdView` | `getAdType()` | `ANAdResponseInfo.getAdType()` |
+| `NativeAdRequest` | `getOpensNativeBrowser()` | `getClickThroughAction()` |
+| `NativeAdRequest` | `setOpensNativeBrowser(boolean opensNativeBrowser)` | `setClickThroughAction(ANClickThroughAction clickThroughAction)` |
+| `NativeAdRequest` | `setExternalUid(String externalUid)` | `SDKSettings.setPublisherUserId(String publisherUserId)` |
+| `NativeAdRequest` | `getExternalUid()` | `SDKSettings.getPublisherUserId()` |
+| `NativeAdResponse` | `getCreativeId()` | `ANAdResponseInfo.getCreativeId()` |
+| `SDKSettings` | `useHttps(boolean useHttps)` | N/A. HTTPS is used by default. |
+| `SDKSettings` | `isHttpsEnabled()` | N/A |
+| `SDKSettings` | `setExternalUserIds(Map<ANExternalUserIdSource,String> externalUserIds)` | `setUserIds(List<ANUserId> userIdList)` |
+| `SDKSettings` | `getExternalUserIds()` | `getUserIds()` |
+| `SDKSettings` | `setAllowUsingSimpleDomain(boolean allow)` | N/A |
+| `SDKSettings` | `setCountImpressionOn1pxRendering(boolean enable)` | N/A |
+| `SDKSettings` | `getCountImpressionOn1pxRendering()` | N/A |
+| `Clog` | `clogged (Variable)` | N/A |
+| `ANExternalUserIdSource (enum)` |  | `ANUserId.Source` |
