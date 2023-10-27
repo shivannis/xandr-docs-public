@@ -25,6 +25,9 @@ visible, viewability tracking stops. By default this property is set as "NO" and
 
 ## Properties
 
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `enableOMIDOptimization` | BOOL | readwrite | Indicates if Open-Measurement Optimization  for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is NO.<br>***This API supports only banner and native ad types.*** |
 
 ```
 /**

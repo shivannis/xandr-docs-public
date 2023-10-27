@@ -59,7 +59,7 @@ public static void registerTracking(final NativeAdResponse response, final View 
 > [!NOTE]
 > Native AdUnits does not support remove API.
 
-To remove a friendly obstruction for Banner, Interstitial and Video AdUnits, pass the view as an argument to the API.   
+To remove a friendly obstruction for Banner, Interstitial and Video AdUnits, pass the view as an argument to the API.
 
 **API for removing a friendly obstruction**
 
@@ -81,7 +81,7 @@ videoAd.removeFriendlyObstruction(view);
 ## Removing all friendly obstructions
 
 > [!NOTE]
-> Native AdUnits does not support remove API
+> Native AdUnits does not support remove API.
 
 **API for removing all friendly obstruction**
 
