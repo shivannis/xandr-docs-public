@@ -1,7 +1,7 @@
 ---
 title: Get Facebook Demand for Native on iOS
 description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on iOS devices.
-ms.custom: android-ios
+ms.custom: ios-sdk
 ---
 
 # Get Facebook demand for native on iOS

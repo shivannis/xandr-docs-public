@@ -1,7 +1,7 @@
 ---
 title: Control Ad Unit Alignment on iOS
 description: In this article, explore detailed instructions on how to control ad unit alignment on iOS devices.
-ms.custom: android-ios
+ms.custom: ios-sdk
 ---
 
 # Control ad unit alignment on iOS
