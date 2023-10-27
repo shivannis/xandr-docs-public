@@ -64,7 +64,7 @@ landingContent:
             url: selling-deals-on-xandr.md
           - text: User ID Mapping
             url: user-id-mapping.md
-- title: Supply Integration (Legacy Content)
+  - title: Supply Integration (Legacy Content)
     linkLists:
       - linkListType: reference
         links:
