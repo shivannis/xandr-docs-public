@@ -1,6 +1,8 @@
 ---
 title: Define Ad Quality Rules
 description: In this article, learn about ad quality rules and the options available for network-level and publisher-level ad quality.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # Define ad quality rules
