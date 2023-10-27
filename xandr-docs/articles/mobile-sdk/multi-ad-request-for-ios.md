@@ -51,7 +51,7 @@ Enables initialization and calls the `load` method with a single line of code. 
 
 **Without publisher ID**
 
-``` pre
+```
 - (nullable instancetype)
     initAndLoadWithMemberId:(NSInteger)memberId
                    delegate:(nullable id<ANMultiAdRequestDelegate>)delegate
@@ -61,7 +61,7 @@ Enables initialization and calls the `load` method with a single line of code. 
 
 **With publisher ID**
 
-``` pre
+```
 - (nullable instancetype)
     initAndLoadWithMemberId:(NSInteger)memberId
                 publisherId:(NSInteger)publisherId
