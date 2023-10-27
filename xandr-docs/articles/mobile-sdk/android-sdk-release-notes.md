@@ -1,29 +1,9 @@
 ---
-Title : Android SDK Release Notes
-Description : <b>Warning:</b> Important
-Please visit
-<a href="https://github.com/appnexus/mobile-sdk-android/releases"
-ms.custom : android-sdk
-
+title: Android SDK Release Notes
+description: In this article, learn where to view the latest releases for Android SDK.
+ms.custom: android-sdk
 ---
 
+# Android SDK release notes
 
-# Android SDK Release Notes
-
-
-
-
-
-<b>Warning:</b> Important
-
-Please visit
-<a href="https://github.com/appnexus/mobile-sdk-android/releases"
-class="xref" target="_blank">https://github.com/<span
-class="ph">appnexus/mobile-sdk-android/releases</a> for our most
-recent release notes for Android SDK.
-
-
-
-
-
-
+Please visit [Mobile SDK - Android Releases](https://github.com/appnexus/mobile-sdk-android/releases) for our most recent release notes for Android SDK.

@@ -1,28 +1,16 @@
 ---
-Title : Android SDK Initialization v8.0
-Description : Publishers with Android SDK v8.0, are required to initialize
-ms.custom : android-sdk
-
+title: Android SDK Initialization v8.0
+description: In this article, learn how to initialize Xandr Mobile SDK if you are working with Android SDK v8.0.
+ms.custom: android-sdk
 ---
 
+# Android SDK initialization v8.0
 
-# Android SDK Initialization v8.0
+Publishers with Android SDK v8.0, are required to initialize Xandr SDK before making an ad request. When using Xandr Mobile Ads SDK for Android SDK v8, the `init()` method must be called prior to any other SDK operations. Without this initialization no ad request would go through and the SDK would throw an exception.  
 
+## API signature
 
-
-Publishers with Android SDK v8.0, are required to initialize
-Xandr SDK before making an ad request. When
-using Xandr Mobile Ads SDK for Android SDK v8,
-the init() method must be called prior to any other SDK
-operations. Without this initialization no Ad request would go through
-and the SDK would throw an exception.  
-  
-
-
-
-## API SIGNATURE
-
-``` pre
+```
 /**
  * Initialize Xandr Ads SDK
  * @param memberId for initialising the XandrAd,
@@ -33,14 +21,10 @@ and the SDK would throw an exception.
 public static void init(int memberId, Context context, boolean preCacheContent, final InitListener initListener)
 ```
 
+> [!NOTE]
+> This below method is available post v8.4 .
 
-
-<b>Note:</b> This below method is available
-post v8.4
-
-
-
-``` pre
+```
 /**
   * Initialize Xandr Ads SDK
   * @param memberId for initialising the XandrAd,
@@ -52,16 +36,11 @@ post v8.4
  public static void init(int memberId, final Context context, boolean preCacheContent, boolean preCacheMraidSupports, final InitListener initListener)
 ```
 
-
-
-
-
 ## Example
 
-**XandrAd.init() can be used as follows:  
-**  
+`XandrAd.init()` can be used as follows:
 
-``` pre
+```
 XandrAd.init(1234, mContext, true, new InitListener() {
     @Override
     public void onInitFinished(boolean success) {
@@ -69,9 +48,3 @@ XandrAd.init(1234, mContext, true, new InitListener() {
     }
 });
 ```
-
-
-
-
-
-
