@@ -40,9 +40,9 @@
     items:
     - name: Overview
       href: synchronize-your-inventory-structure.md
-    - name: Use the UI to Synchronize Your Inventory Structure
+    - name: Synchronize using UI
       href: use-the-ui-to-synchronize-your-inventory-structure.md
-    - name: Use the API to Synchronize Your Inventory Structure
+    - name: Synchronize using API
       href: use-the-api-to-synchronize-your-inventory-structure.md
   - name: FAQs
     items:
