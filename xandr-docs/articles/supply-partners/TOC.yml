@@ -6,8 +6,7 @@
     href: how-integration-works.md
   - name: Integration Process
     href: integration-process.md
-  - name: FAQ - Integration Process
-    href: faq-integration-process.md
+  
   - name: API Documentation
     href: api-documentation.md
 - name: OpenRTB Specs
@@ -30,9 +29,8 @@
       href: deal-eligibility-requirements.md
     - name: OpenRTB Bid Request Requirements
       href: openrtb-bid-request-requirements.md
-  - name: Inventory Relationship FAQ
-    href: inventory-relationship-faq.md
-- name: Best Practices
+  
+- name: Best Practices and FAQs
   items:
   - name: Overview
     href: best-practices.md
@@ -46,6 +44,12 @@
       href: use-the-ui-to-synchronize-your-inventory-structure.md
     - name: Use the API to Synchronize Your Inventory Structure
       href: use-the-api-to-synchronize-your-inventory-structure.md
+  - name: FAQs
+    items:
+    - name: Integration Process FAQs
+      href: faq-integration-process.md
+    - name: Inventory Relationship FAQs
+      href: inventory-relationship-faq.md
 - name: Additional Resources
   items:
   - name: Selling Deals on Xandr
