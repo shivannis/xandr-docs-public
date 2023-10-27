@@ -1,6 +1,8 @@
 ---
 title: Best Practices
 description: In this article, explore the essential best practices that Supply Partners must adhere to in order to maintain good standing and gain access to the open exchange.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # Best practices
