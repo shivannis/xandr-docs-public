@@ -33,14 +33,9 @@ landingContent:
             url: iab-content-taxonomy-support.md
           - text: Client Hints for SSP Clients
             url: client-hints-for-ssp-clients.md
-  - title: Supply Integration
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Bid Request
-            url: bid-request.md
-          - text: Bid Response
-            url: bid-response.md
+          - text: RTB Eligibility Requirements
+            url: rtb-eligibility-requirements.md
+  
   - title: Best Practices
     linkLists:
       - linkListType: concept
@@ -49,14 +44,12 @@ landingContent:
             url: understanding-the-sell-side-object-hierarchy.md
           - text: Ad Quality Rules
             url: define-ad-quality-rules.md
-          - text: RTB Eligibility Requirements
-            url: rtb-eligibility-requirements.md
+          
       - linkListType: how-to-guide
         links:
           - text: Synchronize Your Inventory Structure
             url: synchronize-your-inventory-structure.md
-          - text: RTB Eligibility Requirements
-            url: rtb-eligibility-requirements.md
+          
   - title: Additional Resources
     linkLists:
       - linkListType: concept
@@ -71,3 +64,11 @@ landingContent:
             url: selling-deals-on-xandr.md
           - text: User ID Mapping
             url: user-id-mapping.md
+- title: Supply Integration (Legacy Content)
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Bid Request
+            url: bid-request.md
+          - text: Bid Response
+            url: bid-response.md
