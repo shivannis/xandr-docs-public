@@ -215,23 +215,23 @@ consistent.
 
 **App native criteria**
 
-|  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |  |
-|---|---|---|---|---|---|
-| User ID | user.buyeruid | integer | The Xandr unique ID of this user. If set, this value will overwrite the `customdata` value. | 95% |  |
-| Tag ID | app.id | string | Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. This is the Xandr placement code. | 95% |  |
-| Tag ID | imp.tagid | string |Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. This is the Xandr placement code.  |  |  |
-| Publisher ID | site.publisher.id | string | Specifies the seller's publisher ID, used to look up a Xandr publisher ID. | 95% |  |
-| Bundle ID | app.bundle | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. | 95% |  |
-| Device Data<br> | device.model | string | Specifies the model of the device. If passed, Xandr sets the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the [Device Model Service](../digital-platform-api/device-model-service.md) to view the models registered in the Xandr system. | 95% |  |
-| Device Data | device.ua | string | Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. |  |  |
-|  Device Data| device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |  |
-|  Device Data| device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |  |
-| IP | device.ip | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. | 95% |  |
-| Version | native.ver | string | Version of the Native Markup version in use.<br>Xandr currently supports the following native versions:<br>- 1.0<br>- 1.1<br>**Note**: Required if using 1.1. If no version is submitted, then we will default to 1.0. | 95% |  |
-| Request | native.request | string | The rendered creative markup to be delivered; native creatives can be returned in this field as a JSON-encoded string.<br>Native 1.0 Example:<br>`` "native": { "request": "{\"native\":{\"ver\":\"1.0\",\"assets\":[{\"id\":3}}]}" }``<br>Native 1.1 Example:<br>**Note**: the main difference of the two versions is the removal of "native" in the request object.<br>`` "native": { "request": "{\"ver\":\"1.1\",\"assets\":[{\"id\":3}}]}" } `` | 95% |  |
-| Asset ID | native.request.native.assets.id | integer | Unique asset ID, assigned by exchange. Typically a counter for the array. Every asset object needs to contain a unique Asset ID. Use native.request.native.assets.id for Native Version 1.0 and use native.request.assets.id for Native Version 1.1. | 95% |  |
-| Asset ID | native.request.assets.id | integer | Unique asset ID, assigned by exchange. Typically a counter for the array. Every asset object needs to contain a unique Asset ID. Use native.request.native.assets.id for Native Version 1.0 and use native.request.assets.id for Native Version 1.1. |95%  |  |
-| Title Asset | native.request.assets.title | object | The Title object is to be used for title element of the Native ad. | 95% |  |
+|  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
+|---|---|---|---|---|
+| User ID | user.buyeruid | integer | The Xandr unique ID of this user. If set, this value will overwrite the `customdata` value. | 95% |
+| Tag ID | app.id | string | Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. This is the Xandr placement code. | 95% |
+| Tag ID | imp.tagid | string | Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. This is the Xandr placement code. | 95% |
+| Publisher ID | site.publisher.id | string | Specifies the seller's publisher ID, used to look up a Xandr publisher ID. | 95% |
+| Bundle ID | app.bundle | string | Specifies the application bundle or package name (e.g., `com.foo.mygame`). This is intended to be a unique ID across multiple exchanges. | 95% |
+| Device Data<br> | device.model | string | Specifies the model of the device. If passed, Xandr sets the device `make` and `devicetype` based off the model and not the fields passed in. This value will override the parsed `ua` field if passed in. Use the [Device Model Service](../digital-platform-api/device-model-service.md) to view the models registered in the Xandr system. | 95% |
+| Device Data | device.ua | string | Specifies the user agent string from the browser. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user, e.g., `"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"`. | 95% |
+| Device Data | device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. | 95% |
+| Device Data | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. | 95% |
+| IP | device.ip | string | Specifies the IPv4 address closest to the device. Omitted when sent to buyers if seller visibility settings prohibit sharing. | 95% |
+| Version | native.ver | string | Version of the Native Markup version in use.<br>Xandr currently supports the following native versions:<br>- 1.0<br>- 1.1<br>**Note**: Required if using 1.1. If no version is submitted, then we will default to 1.0. | 95% |
+| Request | native.request | string | The rendered creative markup to be delivered; native creatives can be returned in this field as a JSON-encoded string.<br>Native 1.0 Example:<br>``"native": "request": "{\"native\":{\"ver\":\"1.0\",\"assets\":[{\"id\":3}}]}" }``<br>Native 1.1 Example:<br>**Note**: the main difference of the two versions is the removal of "native" in the request object.<br>``"native": { "request": "{\"ver\":\"1.1\",\"assets\":[{\"id\":3}}]}" }`` | 95% |
+| Asset ID | native.request.native.assets.id | integer | Unique asset ID, assigned by exchange. Typically a counter for the array. Every asset object needs to contain a unique Asset ID. Use native.request.native.assets.id for Native Version 1.0 and use native.request.assets.id for Native Version 1.1. | 95% |
+| Asset ID  | native.request.assets.id | integer | Unique asset ID, assigned by exchange. Typically a counter for the array. Every asset object needs to contain a unique Asset ID. Use native.request.native.assets.id for Native Version 1.0 and use native.request.assets.id for Native Version 1.1. | 95% |
+| Title Asset | native.request.assets.title | object | The Title object is to be used for title element of the Native ad. | 95% |
 
 ## Example bid requests
 
