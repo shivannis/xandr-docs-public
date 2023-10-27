@@ -1,29 +1,18 @@
 ---
-Title : iOS SDK Initialization v8.0
-Description : Publishers with iOS SDK v8.0, are required to initialize
-ms.custom : android-ios
+title: iOS SDK Initialization v8.0
+description: In this article, learn about iOS SDK initialization v8.0, API signatures, and examples for better understanding.
+ms.custom: ios-sdk
 ---
 
+# iOS SDK initialization v8.0
 
-# iOS SDK Initialization v8.0
+Publishers with iOS SDK v8.0, are required to initialize Xandr SDK before making an ad request. When using Xandr Mobile Ads SDK for iOS SDK v8, the init() method must be called prior to any other SDK operations. Without this initialization no Ad request would go through and the SDK would throw an exception.
 
+## API signature
 
+The API signature for initializing the SDK is exposed using Xandr Ad. For example:
 
-Publishers with iOS SDK v8.0, are required to initialize
-Xandr SDK before making an ad request. When
-using Xandr Mobile Ads SDK for iOS SDK v8, the
-init() method must be called prior to any other SDK operations. Without
-this initialization no Ad request would go through and the SDK would
-throw an exception.
-
-
-
-## API Signature
-
-The API signature for initializing the SDK is exposed using XandrAd. For
-Example:
-
-``` pre
+``` 
 /**
  * Initialize Xandr Ads SDK
  * @param memberId for initializing the Xandr SDK
@@ -35,15 +24,11 @@ Example:
         completionHandler: (XandrAdInitCompletion _Nullable)completionHandler;
 ```
 
+## Examples
 
+### Objective-C
 
-
-
-## Examples:
-
-**Objective-C**
-
-``` pre
+``` 
 @implementation AppDelegate
  
  
@@ -59,9 +44,9 @@ Example:
 }
 ```
 
-**Swift**
+### Swift
 
-``` pre
+``` 
 class AppDelegate: UIResponder, UIApplicationDelegate {
  
     var window: UIWindow?
@@ -78,9 +63,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
-
-
-
-
-
-

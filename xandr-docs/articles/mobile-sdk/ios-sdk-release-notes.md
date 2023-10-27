@@ -1,28 +1,10 @@
 ---
-Title : iOS SDK Release Notes
-Description : <b>Note:</b>
-Please
-visit <a href="https://github.com/appnexus/mobile-sdk-ios/releases"
-ms.custom : android-ios
+title: iOS SDK Release Notes
+description: Explore information about the iOS SDK release notes.
+ms.custom: ios-sdk
 ---
 
+# iOS SDK release notes
 
-# iOS SDK Release Notes
-
-
-
-
-
-<b>Note:</b>
-
-Please
-visit <a href="https://github.com/appnexus/mobile-sdk-ios/releases"
-class="xref" target="_blank">https://github.com/<span
-class="ph">appnexus/mobile-sdk-ios/releases</a> for our most
-recent release notes for iOS SDK.
-
-
-
-
-
-
+> [!NOTE]
+> Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.
