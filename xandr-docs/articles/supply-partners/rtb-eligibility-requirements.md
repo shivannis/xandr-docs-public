@@ -1,6 +1,8 @@
 ---
 title : RTB Eligibility Requirements
 description : Learn about RTB Eligibility Requirements.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 
