@@ -1,6 +1,8 @@
 ---
 title: API Documentation
 description: In this article, explore API documentation and learn how to get started with the sell-side and read-only API services.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # API documentation
