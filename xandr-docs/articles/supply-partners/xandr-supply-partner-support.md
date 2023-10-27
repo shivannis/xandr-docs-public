@@ -1,6 +1,8 @@
 ---
 title: Xandr Supply Partner Support
 description: In this article, find links to resources for Supply Partners.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # Xandr supply partner support
