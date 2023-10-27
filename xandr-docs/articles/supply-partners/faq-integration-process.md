@@ -1,6 +1,8 @@
 ---
 title: FAQ - Integration Process
 description: This article addresses frequently asked questions on the process of integrating supply partners.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # FAQ - Integration process
