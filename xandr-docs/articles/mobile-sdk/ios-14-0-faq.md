@@ -9,7 +9,7 @@ ms.custom: ios-sdk
 This document provides an FAQ in regards to the release of Apple's iOS 14.0 in relation to the Xandr iOS SDK. Specific questions on iOS 14.0 should be researched on the [Apple release site](https://www.apple.com/ios/ios-14-preview/).
 
 > [!WARNING]
-> This Document is written from the perspective of Xandr Mobile SDK, other parts of our Platform were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, please reach out to our support team.
+> This document is written from the perspective of Xandr Mobile SDK, other parts of our Platform were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, please reach out to our support team.
 
 ## What is Xandr mobile SDK doing to support AppTrackingTransparency?
 
