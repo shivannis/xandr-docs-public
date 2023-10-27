@@ -22,7 +22,7 @@ media as banner ad view in Xandr Mobile SDK for Android.
 Setter method that defines whether a high impact media can serve on the
 Ad object.
 
-``` pre
+``` 
 /**
      * Sets whether or not High Impact media(AppNexus Media Type:11) can serve on this Ad object.
      * This overrides the value set in console.
@@ -41,7 +41,7 @@ Ad object.
 Getter method that indicates whether high impact media is enabled on the
 ad view or not.
 
-``` pre
+``` 
 /**
      * Check whether High Impact media is enabled on this ad view
      *
@@ -54,7 +54,7 @@ ad view or not.
 
 ## Example
 
-``` pre
+``` 
 // Allow High Impact Media for BannerAdView
 bannerAdView.setAllowHighImpactDemand(true);
 ```

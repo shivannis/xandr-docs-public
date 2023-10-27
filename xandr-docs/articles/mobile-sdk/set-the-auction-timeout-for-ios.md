@@ -18,12 +18,12 @@ milliseconds), the bid request would result in failure. 
 |---|---|---|---|
 | `setAuctionTimeout` | Integer | readwrite | Set the timeout period in milliseconds |
 
-``` pre
+``` 
 @property (nonatomic, readwrite, assign) NSUInteger auctionTimeout;
 ```
 
 ## Example
 
-``` pre
+``` 
 [[ANSDKSettings sharedInstance] setAuctionTimeout:500];
 ```

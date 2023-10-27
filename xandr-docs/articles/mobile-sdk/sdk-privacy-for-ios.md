@@ -58,7 +58,7 @@ values in a SharedPreferences interface (as defined by [Mobile In-App CMP API
 &amp; Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/README.md)) instead of passing them via the new APIs,
 and the SDK will read the values as a fallback.
 
-``` pre
+```
 /** * Set the consentRequired value in the SDK
  *
  * @param true if subject to GDPR regulations, false otherwise

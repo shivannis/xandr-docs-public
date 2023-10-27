@@ -21,7 +21,7 @@ the two. The XML and Java equivalents are listed below.
   > [!NOTE]
   > Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
 
-  ``` pre
+  ```
   // Android: Java code that uses inventory code and member ID instead of placement ID (optional)
   adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
   ```
@@ -44,7 +44,7 @@ If you're using XML, you must add the `xmlns:opensdk` namespace
 attribute describing your application to your layout tag; for example
 this might be a `RelativeLayout`, `LinearLayout`, or `FrameLayout`.
 
-``` pre
+``` 
 // Android: XML to configure the banner ad view (optional)
 xmlns:opensdk="https://schemas.android.com/apk/res/com.example.SimpleBanner"
 ```
@@ -55,7 +55,7 @@ PLACEMENT ID"* below with an active placement ID.
 > [!NOTE]
 > If you're using both XML and Java (`loadAd`) to define `BannerAdView`, define `auto_refresh_interval` in *either* XML or Java. Do not define `auto_refresh_interval` in both.
 
-``` pre
+``` 
 // Android: XML to declare banner ad view (optional)
 <com.appnexus.opensdk.BannerAdView
     android:id="@+id/banner"
@@ -88,7 +88,7 @@ native browser.
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the BannerAdView that is expected to be destroyed.
 
-``` pre
+``` 
 // Android: Java to show a banner ad
 package com.example.simplebanner;
 import android.os.Bundle;

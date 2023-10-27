@@ -25,7 +25,7 @@ whether high impact media can serve on an Ad object.
 | `shouldAllowHighImpactDemand` | BOOL | readwrite | Indicates whether high impact media can serve on the Ad object.<br>Default value is NO. |
 
 
-``` pre
+``` 
 /**
  * Sets whether or not High Impact Media(AppNexus Media Type:11) can serve on this Ad object.
  *
@@ -35,7 +35,7 @@ whether high impact media can serve on an Ad object.
 
 ## Example
 
-``` pre
+``` 
 // Allow High Impact Media for ANBannerAdView 
 bannerAdView.shouldAllowHighImpactDemand = YES;
 ```

@@ -17,6 +17,6 @@ your app's monetization.
 
 Set a reserve price on the impression using the following code:
 
-``` pre
+``` 
 adView.setReserve(0.05f);
 ```

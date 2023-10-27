@@ -58,7 +58,7 @@ native ad object versus a banner or video ad object.
 
 
 
-## Mobile SDK Structure
+## Mobile SDK structure
 
 - The `ANAdDelegate` method returns an ad object handler that is defined
   only by id.  (Previous to Version 4.8 the handler was defined
@@ -74,7 +74,7 @@ multi-format `ANBannerAdView` is used:
   as `shouldAllowNativeDemand` & `enableNativeRendering` properties. For
   enabling Video demand, use the property s`houldAllowVideoDemand.`
 
-  ``` pre
+  ``` 
   /**
    * Sets whether or not Native Ads(AppNexus Media Type:12) can serve on this Ad object.
    *
@@ -114,7 +114,7 @@ multi-format `ANBannerAdView` is used:
   properties mainImageURL and iconImageURL, in the
   class ANNativeAdResponse.
 
-## Example:
+## Example
 
 Usage of the multi-format ANBannerAdView class is simply a combination
 of the usage for banner and traditional native classes.
@@ -122,7 +122,7 @@ of the usage for banner and traditional native classes.
 If you want to fetch native or a combination of banner, video, and/or
 native, you can use the following code example to get started:
 
-``` pre
+```
 /**
  This view displays ads from placements that return banner, video and/or native ads.
  Note the implementation requires delaying the point where the ad is displayed,
@@ -191,7 +191,7 @@ If the ANBannerAdView will be displaying placements that include only
 banner and/or video ads, then display can be (optimistically) handled
 without using the adDidReceiveAd : delegate method:
 
-``` pre
+``` 
 @implementation MyViewController
  
 - (void) loadMultiFormatAdThatDoesNotIncludeNative

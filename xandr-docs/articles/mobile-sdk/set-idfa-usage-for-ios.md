@@ -25,12 +25,12 @@ the IDFA field in the AdRequests.
 |---|---|---|---|
 | `disableIDFAUsage` | BOOL | readwrite | To exclude the IDFA field in ad request. Default value is NO. |
 
-``` pre
+``` 
 @property (nonatomic, readwrite) BOOL disableIDFAUsage;
 ```
 
 ## Example
 
-``` pre
+``` 
 [ANSDKSettings sharedInstance].disableIDFAUsage  = YES;
 ```

@@ -23,13 +23,13 @@ native browser.
 > You can use member ID and inventory code instead of a placement ID.    
 > The banner code sample below shows how to request ads using the placement ID. Beginning with version RC2.8, you can initialize banners using a combination of member ID and inventory code instead (placement ID is still supported). Here are the methods:
 
-``` pre
+``` 
 // iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
 -(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
 -(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode adSize:(CGSize)size;
 ```
 
-``` pre
+``` 
 // iOS: ObjC to show a banner ad
 #import "ViewController.h"
 #import "ANBannerAdView.h"
@@ -61,7 +61,7 @@ native browser.
 
 Swift developers will want to use the following code:
 
-``` pre
+``` 
 // iOS: Swift to show a banner ad
 // Import ANBannerAdView.h in the bridging header.
 class MyViewController: UIViewController

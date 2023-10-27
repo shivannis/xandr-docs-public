@@ -28,12 +28,12 @@ Monetization of your app.
 |---|---|---|
 | `enableTestMode` | boolean | Sets true or false for the AdRequests to be executed in the test mode. |
 
-``` pre
+``` 
 public static void enableTestMode(boolean enabled);
 ```
 
 ## Example
 
-``` pre
+```
 SDKSettings.enableTestMode(true);
 ```

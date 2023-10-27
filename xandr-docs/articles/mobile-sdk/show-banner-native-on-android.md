@@ -68,7 +68,7 @@ multi-format `BannerAdView` is used:
   deliver only traditional HTML banner ads. You must explicitly enable
   native and video in the app.
 
-  ``` pre
+  ```
   /**
        * Sets whether or not Native Ads(AppNexus Media Type:12) should be Renderered or not.
        *
@@ -117,10 +117,6 @@ multi-format `BannerAdView` is used:
   methods getImageUrl() and getIconUrl(), in the
   class `NativeAdReponse`.
 
-
-
-
-
 ## Examples
 
 Usage of the multi-format BannerAdView class is simply a combination of
@@ -138,7 +134,7 @@ native, you can use the following code example to get started:
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the BannerAdView that is expected to be destroyed.
 
-  ``` pre
+  ``` 
   // Android: Java to handle a banner-native ad response
   package com.appnexus.opensdk;
    
