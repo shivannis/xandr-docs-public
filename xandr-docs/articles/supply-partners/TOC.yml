@@ -56,5 +56,13 @@
     href: external-seller-troubleshooting.md
   - name: Xandr Supply Partner Support
     href: xandr-supply-partner-support.md
+- name: Supply Integration (Legacy Content)
+  items:
+  - name: Overview
+    href: supply-integration-asi.md
+  - name: Bid Request
+    href: bid-request.md
+  - name: Bid Response
+    href: bid-response.md
 
 
