@@ -1,6 +1,8 @@
 ---
 title: Getting Started
 description: This article lists the resources to help you get started as a supply partner.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # Getting started
