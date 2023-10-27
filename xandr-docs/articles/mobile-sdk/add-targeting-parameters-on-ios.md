@@ -1,29 +1,16 @@
 ---
-Title : Add Targeting Parameters on iOS
-Description : ## User location
-In this snippet, we create an `ANLocation` object and set its latitude
-and longitude. We also set the horizontal accuracy, which is the size of
-ms.custom : android-ios
-
+title: Add Targeting Parameters on iOS
+description: In this article, learn how to add targeting parameters for ads on iOS.
+ms.custom: ios-sdk
 ---
 
-
-# Add Targeting Parameters on iOS
-
-
-
-
+# Add targeting parameters on iOS
 
 ## User location
 
+In this snippet, we create an `ANLocation` object and set its latitude and longitude. We also set the horizontal accuracy, which is the size of one side of the "rectangle" inside which the user is located. Finally, we set the ad view's location property to our `ANLocation` object.
 
-
-In this snippet, we create an `ANLocation` object and set its latitude
-and longitude. We also set the horizontal accuracy, which is the size of
-one side of the "rectangle" inside which the user is located. Finally,
-we set the ad view's location property to our `ANLocation` object.
-
-``` pre
+```
 // The ANLocation object is built from the properties of the 
 // `CLLocation` object.
 CLLocation *location = [locationManager location];
@@ -37,48 +24,16 @@ banner.location = an_loc;
     
 ```
 
+> [!NOTE]
+> Developers should ensure adequate consent is obtained before sharing location information. Developers can control whether location is collected and sent by the SDK.
 
+By default, the iOS SDK does not automatically send location information. In order for the SDK to use location information for ad targeting, the app developer must explicitly pass the location information to the SDK.
 
+## Age and gender
 
+Age and gender can be added to the banner ad view directly as shown below. Note that age is an `NSString`, and can contain a numeric age, a birth year, or a hyphenated age range. For example, it could be "56", "1974", or "25-35".
 
-
-
-<b>Note:</b>  Developers should ensure
-adequate consent is obtained before sharing location information.
-Developers can control whether location is collected and sent by the
-SDK.
-
-
-
-
-
-By default, the iOS SDK does not automatically send location
-information. In order for the SDK to use location information for ad
-targeting, the app developer must explicitly pass the location
-information to the SDK.
-
-
-
-
-
-## Age and Gender
-
-
-
-Age and gender can be added to the banner ad view directly as shown
-below. Note that age is an `NSString`, and can contain a numeric age, a
-birth year, or a hyphenated age range. For example, it could be "56",
-"1974", or "25-35".
-
-``` pre
+```
 banner.age = @"42";
 banner.gender = FEMALE;
 ```
-
-
-
-
-
-
-
-

@@ -1,29 +1,16 @@
 ---
-Title : Add Targeting Parameters on Android
-Description : ## User location
-In this example, we get the user's location from Android and pass it
-along in the ad call:
-``` pre
-import android.location.LocationManager;
-ms.custom : android-sdk
-
+title: Add Targeting Parameters on Android
+description: In this article, learn how to add targeting parameters for ads on Android.
+ms.custom: android-sdk
 ---
 
-
-# Add Targeting Parameters on Android
-
-
-
-
+# Add targeting parameters on Android
 
 ## User location
 
+In this example, we get the user's location from Android and pass it along in the ad call:
 
-
-In this example, we get the user's location from Android and pass it
-along in the ad call:
-
-``` pre
+```
 import android.location.LocationManager;
 import android.location.Location;
 
@@ -38,55 +25,26 @@ SDKSettings.setLocation(location);
     
 ```
 
+This code assumes you provided the application location access by setting one or both of the `ACCESS_COARSE_LOCATION` and `ACCESS_FINE_LOCATION` permissions.
 
+> [!NOTE]
+> Developers should ensure adequate consent is obtained before sharing location information. Developers can control whether location is collected and sent by the SDK.
 
-This code assumes you provided the application location access by
-setting one or both of
-the `ACCESS_COARSE_LOCATION` and `ACCESS_FINE_LOCATION` permissions.
+By default, the Android SDK automatically transmits location information if the Android Manifest allows location permissions to the app. If adequate permissions have not been obtained, or for any other reason, developers are able to instruct the SDK to not send the location. To disable the SDK from sending location, you can call:
 
-Developers should ensure adequate consent is obtained before sharing
-location information. Developers can control whether location is
-collected and sent by the SDK.
-
-
-
-By default, the Android SDK automatically transmits location information
-if the Android Manifest allows location permissions to the app. If
-adequate permissions have not been obtained, or for any other reason,
-developers are able to instruct the SDK to not send the location. To
-disable the SDK from sending location, you can call:
-
-``` pre
+```
 com.appnexus.opensdk.utils.SDKSettings.setLocationEnabled(false);
     
 ```
 
-
-
-
-
-
-
-<b>Note:</b> This is a global setting for our
-mobile SDK only. Keep in mind that third Party SDKs will have their own
-settings.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> This is a global setting for our mobile SDK only. Keep in mind that third Party SDKs will have their own settings.
 
 ## Age and gender
 
+Advertisers may want to target ads by age and gender. In this example, we add the age and gender to an `AdView `.
 
-
-Advertisers may want to target ads by age and gender. In this example,
-we add the age and gender to an `AdView `.
-
-``` pre
+```
 // Set the user's age.  This can be a number, a year, or a
 // numeric range such as "18-35".
 adView.setAge("1978");
@@ -96,11 +54,3 @@ adView.setAge("1978");
 adView.setGender(AdView.GENDER.MALE);
     
 ```
-
-
-
-
-
-
-
-
