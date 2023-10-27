@@ -1,7 +1,7 @@
 ---
 title: forceCreativeId for iOS
 description: In this article, discover how to use forceCreativeId on iOS devices. Learn about its scope, method, and an example for better understanding.
-ms.custom: android-ios
+ms.custom: ios-sdk
 ---
 
 # forceCreativeId for iOS
