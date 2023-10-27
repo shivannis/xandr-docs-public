@@ -80,8 +80,7 @@
         "articles/mobile-sdk/*.md":"shsrinivasan",
         "articles/supply-partners/*.md":"rupambaruah-xandr",
         "articles/yield-analytics-ui/*.md":"rupambaruah"
-      }
-    },
+      },
     "ms.topic": {
         "articles/invest/*.md": "reference",
         "articles/ja-jp/*.md": "reference",
@@ -92,6 +91,8 @@
         "articles/mobile-sdk/*.md":"reference",
         "articles/supply-partners/*.md":"reference",
         "articles/yield-analytics-ui/*.md":"reference"
+      }
+    }, 
     "template": [],
     "dest": "xandr-docs"
   }
