@@ -1,6 +1,8 @@
 ---
 title : OpenRTB Specs
 description : Learn how Xandr's supply partners can integrate via the OpenRTB protocol.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 
