@@ -103,7 +103,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these
 values in a SharedPreferences interface (as defined by IAB's CCPA Compliance Mechanism) instead of passing them via the new APIs, and the SDK will read the values as a
 fallback.
 
-``` pre
+``` 
 /**
  * Set the IAB US Privacy String in the SDK
  */
