@@ -1,6 +1,8 @@
 ---
 title : Selling Deals on Xandr
 description : Learn all about selling deals on Xandr.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 
