@@ -1,14 +1,11 @@
 ---
-Title : Show Banners on Android
-Description : This page has instructions and code samples for showing banner ads on
-Android.
-ms.custom : android-sdk
+title : Show Banners on Android
+description : This page has instructions and code samples for showing banner ads on Android.
+ms.custom: android-sdk
 ---
 
 
-# Show Banners on Android
-
-
+# Show banners on Android
 
 This page has instructions and code samples for showing banner ads on
 Android.
@@ -21,21 +18,13 @@ the two. The XML and Java equivalents are listed below.
   include a placement ID or an error will be thrown.
   Example: `"123456"`.
   
+  > [!NOTE]
+  > Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
 
-  <b>Note:</b> Beginning with version RC2.8,
-  you can also use an inventory code and member ID to request an ad
-  (placement ID is still supported). Currently this is only available
-  from Java (not XML). Note that if both inventory code and placement ID
-  are passed in, the inventory code will be passed to the server instead
-  of the placement ID.
-  ``` pre
+  ```
   // Android: Java code that uses inventory code and member ID instead of placement ID (optional)
   adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
   ```
-
-  
-
-<!-- -->
 
 - `opensdk:auto_refresh_interval` or `adview.setAutoRefreshInterval(long interval)`:
   The interval, in milliseconds, at which the ad view will request new
@@ -55,7 +44,7 @@ If you're using XML, you must add the `xmlns:opensdk` namespace
 attribute describing your application to your layout tag; for example
 this might be a `RelativeLayout`, `LinearLayout`, or `FrameLayout`.
 
-``` pre
+``` 
 // Android: XML to configure the banner ad view (optional)
 xmlns:opensdk="https://schemas.android.com/apk/res/com.example.SimpleBanner"
 ```
@@ -63,15 +52,10 @@ xmlns:opensdk="https://schemas.android.com/apk/res/com.example.SimpleBanner"
 Here's how to declare a banner in XML. Note that you must replace *"YOUR
 PLACEMENT ID"* below with an active placement ID.
 
+> [!NOTE]
+> If you're using both XML and Java (`loadAd`) to define `BannerAdView`, define `auto_refresh_interval` in *either* XML or Java. Do not define `auto_refresh_interval` in both.
 
-
-<b>Note:</b> If you're using both XML and Java
-(`loadAd`) to define `BannerAdView`, define `auto_refresh_interval` in
-*either* XML or Java. Do not define `auto_refresh_interval` in both.
-
-
-
-``` pre
+``` 
 // Android: XML to declare banner ad view (optional)
 <com.appnexus.opensdk.BannerAdView
     android:id="@+id/banner"
@@ -99,17 +83,12 @@ provided by the SDK - for example, you can also pass in the user's age
 and gender, as well as whether an ad click should open the device's
 native browser.
 
+> [!NOTE]
+> As best practices :
+> - All SDK methods must be called on the main thread.
+> - `activityOnDestroy()` must be called for the BannerAdView that is expected to be destroyed.
 
-
-<b>Note:</b> As best practices :
-
-- All SDK methods must be called on the main thread.
-- `activityOnDestroy()` must be called for the BannerAdView that is
-  expected to be destroyed.
-
-
-
-``` pre
+``` 
 // Android: Java to show a banner ad
 package com.example.simplebanner;
 import android.os.Bundle;
@@ -145,7 +124,3 @@ protected void onDestroy() {
 }
     
 ```
-
-
-
-

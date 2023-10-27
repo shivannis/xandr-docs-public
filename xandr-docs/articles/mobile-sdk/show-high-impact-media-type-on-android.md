@@ -1,35 +1,19 @@
 ---
-Title : Show High Impact Media Type on Android
-<b>Note:</b> This feature is available in
-Xandr Mobile SDK version 8.1 for Android.
-ms.custom : android-sdk
+title : Show High Impact Media Type on Android
+description : This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for Android.
+ms.custom: android-sdk
 ---
 
 
-# Show High Impact Media Type on Android
+# Show high impact media type on Android
 
-
-
-
-
-
-<b>Note:</b> This feature is available in
-Xandr Mobile SDK version 8.1 for Android.
-
-
-
-
-
-
+> [!NOTE]
+> This feature is available in Xandr Mobile SDK version 8.1 for Android.
 
 ## Overview
 
 This page has instructions and code samples for showing a high impact
 media as banner ad view in Xandr Mobile SDK for Android.
-
-
-
-
 
 ## Methods
 
@@ -38,7 +22,7 @@ media as banner ad view in Xandr Mobile SDK for Android.
 Setter method that defines whether a high impact media can serve on the
 Ad object.
 
-``` pre
+``` 
 /**
      * Sets whether or not High Impact media(AppNexus Media Type:11) can serve on this Ad object.
      * This overrides the value set in console.
@@ -57,7 +41,7 @@ Ad object.
 Getter method that indicates whether high impact media is enabled on the
 ad view or not.
 
-``` pre
+``` 
 /**
      * Check whether High Impact media is enabled on this ad view
      *
@@ -68,19 +52,9 @@ ad view or not.
     }
 ```
 
-
-
-
-
 ## Example
 
-``` pre
+``` 
 // Allow High Impact Media for BannerAdView
 bannerAdView.setAllowHighImpactDemand(true);
 ```
-
-
-
-
-
-

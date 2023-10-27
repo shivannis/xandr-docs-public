@@ -1,18 +1,13 @@
 ---
-Title : Set Test Mode for Android
-Description : ## Overview
-An API is introduced in Xandr mobile SDK to set
-the mode of execution of AdRequests as test mode for debugging or
-testing purpose. By default, the mode of execution of AdRequests is set
-ms.custom : android-sdk
+title : Set Test Mode for Android
+description : An API is introduced in Xandr mobile SDK to set the mode of execution of AdRequests as test mode for debugging or testing purpose. By default, the mode of execution of AdRequests is set. 
+ms.custom: android-sdk
 ---
 
 
-# Set Test Mode for Android
+# Set test mode for Android
 
-
-
-
+Here is an overview on setting test mode for Android.
 
 ## Overview
 
@@ -27,51 +22,18 @@ a production environment. Enabling the test mode in a production
 environment leads to unintended consequences and impacts the
 Monetization of your app.
 
-
-
-
-
 ## Property
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000185d__entry__1"
-class="entry colsep-1 rowsep-1">Property</th>
-<th id="ID-0000185d__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000185d__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000185d__entry__1"><code
-class="ph codeph">enableTestMode</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000185d__entry__2">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000185d__entry__3">Sets
-true or false for the AdRequests to be executed in the test mode.</td>
-</tr>
-</tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| `enableTestMode` | boolean | Sets true or false for the AdRequests to be executed in the test mode. |
 
-``` pre
+``` 
 public static void enableTestMode(boolean enabled);
 ```
 
+## Example
 
-
-
-
-##  Example
-
-``` pre
+```
 SDKSettings.enableTestMode(true);
 ```
-
-
-
-
-
-
