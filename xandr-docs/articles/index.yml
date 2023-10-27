@@ -109,16 +109,16 @@ additionalContent:
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
           url: getting-started/index.yml
         # Card
-        - title: Supply Partners (Work in Progress)
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
+        - title: Supply Partners
+          summary: Integration documentation for Supply Partners to increase publishers access to major sources of demand
+          url: supply-partners/index.yml
         # Card
         - title: Data Providers (Work in Progress)
           summary: Lorem Ipsum
           url: getting-started/index.yml
         # Card
         - title: Data Science Toolkit
-          summary: Reference documentation to enhance bidding strategy, improve measurement and testing capabilities, and run in-depth outcome analyses using Data Science
+          summary: Reference documentation to enhance bidding strategy, improve measurement and testing capabilities using Data Science
           url: data-science-toolkit/index.yml
         # Card
         - title: OTT and CTV Video Integrations
