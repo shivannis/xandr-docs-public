@@ -75,7 +75,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 | `customKeyword` | ArrayList<Pair<String, String>> | Custom keywords applied to the `ANMultiAdRequest`. These keywords will be inherited by the attached AdUnits. This list can be supplemented within each `AdUnit` with additional custom keywords. |
 | `AdUnit` | Ad | An AdUnit item to add to the `ANMultiAdRequest`. |
 
-## ANMultiAdRequaest methods
+## ANMultiAdRequest methods
 
 ### load()
 
