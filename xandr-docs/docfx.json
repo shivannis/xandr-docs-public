@@ -55,7 +55,8 @@
         "articles/data-science-toolkit/*.md":"microsoft-monetize",
         "articles/yield-analytics-api/*.md":"microsoft-monetize",
         "articles/mobile-sdk/*.md":"microsoft-monetize",
-        "articles/supply-partners/*.md":"microsoft-monetize"
+        "articles/supply-partners/*.md":"microsoft-monetize",
+        "articles/yield-analytics-ui/*.md":"microsoft-monetize"
         
       },
       "author": {
@@ -66,7 +67,8 @@
         "articles/data-science-toolkit/*.md":"rupambaruah-xandr",
         "articles/yield-analytics-api/*.md":"rupambaruah-xandr",
         "articles/mobile-sdk/*.md":"shivannis",
-        "articles/supply-partners/*.md":"rupambaruah-xandr"
+        "articles/supply-partners/*.md":"rupambaruah-xandr",
+        "articles/yield-analytics-ui/*.md":"rupambaruah-xandr"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
@@ -76,9 +78,20 @@
         "articles/data-science-toolkit/*.md":"rupambaruah",
         "articles/yield-analytics-api/*.md":"rupambaruah",
         "articles/mobile-sdk/*.md":"shsrinivasan",
-        "articles/supply-partners/*.md":"rupambaruah-xandr"
+        "articles/supply-partners/*.md":"rupambaruah-xandr",
+        "articles/yield-analytics-ui/*.md":"rupambaruah"
       }
     },
+    "ms.topic": {
+        "articles/invest/*.md": "reference",
+        "articles/ja-jp/*.md": "reference",
+        "articles/seller-tag/*.md":"reference",
+        "articles/ott-ctv/*.md":"reference",
+        "articles/data-science-toolkit/*.md":"reference",
+        "articles/yield-analytics-api/*.md":"reference",
+        "articles/mobile-sdk/*.md":"reference",
+        "articles/supply-partners/*.md":"reference",
+        "articles/yield-analytics-ui/*.md":"reference"
     "template": [],
     "dest": "xandr-docs"
   }
