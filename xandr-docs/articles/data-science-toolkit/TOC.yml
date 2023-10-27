@@ -1,4 +1,4 @@
-- name: Data Science Toolkit
+- name: Data Science Toolkit Reference Documentation
   href: index.yml 
 - name: Getting Started
   href: data-science-toolkit-guide.md
