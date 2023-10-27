@@ -1,6 +1,8 @@
 ---
 title: Use the UI to Synchronize Your Inventory Structure
 description: In this article, learn how to use the UI to map your supply to the corresponding Xandr objects.
+ms.custom: supply-partners
+ms.date: 10/28/2023
 ---
 
 # Use the UI to synchronize your inventory structure
