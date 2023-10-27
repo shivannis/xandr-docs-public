@@ -1,12 +1,12 @@
 ---
 title: Location Controls on iOS
 description: This article provides instructions for controlling location data accuracy and HTML5 location access for advertisers to improve monetization of ads.
-ms.custom: android-ios
+ms.custom: ios-sdk
 ---
 
 # Location controls on iOS
 
-On this page you'll find instructions for controlling the accuracy of the location data the SDK sends to the ad server, as well as for controlling the HTML5 location access for creatives rendered in a WebView. Improving location accuracy can be useful for advertisers, as better location data may lead to better monetization of your ads.
+On this page you'll find instructions for controlling the accuracy of the location data the SDK sends to the ad server, as well as for controlling the HTML5 location access for creatives rendered in a WebView. Improving location accuracy can be useful for advertisers as better location data may lead to better monetization of your ads.
 
 ## Location accuracy
 
