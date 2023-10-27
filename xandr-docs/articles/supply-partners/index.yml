@@ -42,13 +42,14 @@ landingContent:
         links:            
           - text: Sell-Side Object Hierarchy
             url: understanding-the-sell-side-object-hierarchy.md
-          - text: Ad Quality Rules
-            url: define-ad-quality-rules.md
+          
           
       - linkListType: how-to-guide
         links:
-          - text: Synchronize Your Inventory Structure
-            url: synchronize-your-inventory-structure.md
+          - text: Synchronize Your Inventory Structure using UI
+            url: use-the-ui-to-synchronize-your-inventory-structure.md
+          - text: Synchronize Your Inventory Structure using API
+            url: use-the-api-to-synchronize-your-inventory-structure.md
           
   - title: Additional Resources
     linkLists:
