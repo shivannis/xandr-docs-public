@@ -13,7 +13,7 @@ The Mobile SDK uses different impression tracking mechanisms for various Ad form
 | Default | Impression trackers are fired when rendered (attached to window) | Banner Ads | NA |
 | Default | Impression trackers are fired when rendered (attached to window) | Native Ads | NA |
 | Feature | Impression trackers are fired when 1 pixel of the content is loaded | Banner and Native Ads | iOS:<br>`ANSDKSettings.sharedInstance.countImpressionOn1PxRendering = YES;`<br>Android:<br>`SDKSettings.setCountImpressionOn1pxRendering(true)` |
-| Feature | When lazy load is enabled, impression trackers are fired when content is loaded in webview  | Banner Ads | **Note:** For more info on lazy load, visit [lazy load for iOS](lazy-load-for-ios.md) and [Android](lazy-load-for-android.md) page. |
+| Feature | When lazy load is enabled, impression trackers are fired when content is loaded in webview  | Banner Ads | **Note:** For more information on lazy load, visit [lazy load for iOS](lazy-load-for-ios.md) and [Android](lazy-load-for-android.md) page. |
 
 For more information about generic impression counting, see [Impression counting](../industry-reference/impression-counting.md).
 

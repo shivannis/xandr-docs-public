@@ -23,7 +23,7 @@ public static void init(activateOmid, fetchUserAgent, fetchAAID, enableWarmUpAdC
 
 Additionally, below is the overloaded `init()` method that optionally disable fetching of AAID and UserAgent. It requires enable/disable
 booleans for `fetchUserAgent` and `fetchAAID` as arguments. Additionally, below is the overloaded `init()` method that optionally
-disable fetching of AAID, UserAgent, `enableWarmUpAdCall` and `preFetchWebView`. It requires enable/disable booleans for fetchUserAgent, `fetchAAID`, `enableWarmUpAdCall` and `preFetchWebView` as arguments.
+disable fetching of AAID, UserAgent, `enableWarmUpAdCall` and `preFetchWebView`. It requires enable/disable booleans for fetchUserAgent, `fetchAAID`, `enableWarmUpAdCall`, and `preFetchWebView` as arguments.
 
 ``` 
 public static void init(final boolean fetchUserAgent, final boolean fetchAAID,final boolean enableWarmUpAdCall, final boolean preFetchWebView)

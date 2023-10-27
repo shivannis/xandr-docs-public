@@ -9,17 +9,18 @@ ms.custom: ios-sdk
 This document provides an FAQ in regards to the release of Apple's iOS 14.0 in relation to the Xandr iOS SDK. Specific questions on iOS 14.0 should be researched on the [Apple release site](https://www.apple.com/ios/ios-14-preview/).
 
 > [!WARNING]
-> This Document is written from the perspective of Xandr Mobile SDK, other parts of our Platformq were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, please reach out to our support team.
+> This Document is written from the perspective of Xandr Mobile SDK, other parts of our Platform were not considered when creating this FAQ. If you have a specific question about Xandr's support for SKAdNetwork/iOS14, please reach out to our support team.
 
 ## What is Xandr mobile SDK doing to support AppTrackingTransparency?
 
-- Xandr's support for AppTrackingTransparency comes from two distinct point-of-views, what we expect the Publisher App to do and what we are changing in the Xandr Mobile SDK.
-  - As per the requirements by Apple in iOS14 and above, our expectations are that the Publisher App will
-    - use the [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency?language=objc).
-    - present an app-tracking authorization request to the user.
-    - request the user's consent as described in the [requestTrackingAuthorizationWithCompletionHandler](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith?language=objc).
-  - If publishers decide not to show the app-tracking authorization request to users, then the authorization status will either be *ATTrackingManagerAuthorizationStatusNotDetermined* or *ATTrackingManagerAuthorizationStatusRestricted*. These cases will be treated the same way as *ATTrackingManagerAuthorizationStatusDenied*.
-  - The below table describes how the SDK will treat [ATTrackingManagerAuthorizationStatus](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanagerauthorizationstatus?language=objc) value.
+Xandr's support for AppTrackingTransparency comes from two distinct point-of-views, what we expect the Publisher App to do and what we are changing in the Xandr Mobile SDK.
+
+- As per the requirements by Apple in iOS14 and above, our expectations are that the Publisher App will
+  - use the [App Tracking Transparency Framework](https://developer.apple.com/documentation/apptrackingtransparency?language=objc).
+  - present an app-tracking authorization request to the user.
+  - request the user's consent as described in the [requestTrackingAuthorizationWithCompletionHandler](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith?language=objc).
+- If publishers decide not to show the app-tracking authorization request to users, then the authorization status will either be *ATTrackingManagerAuthorizationStatusNotDetermined* or *ATTrackingManagerAuthorizationStatusRestricted*. These cases will be treated the same way as *ATTrackingManagerAuthorizationStatusDenied*.
+- The below table describes how the SDK will treat [ATTrackingManagerAuthorizationStatus](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanagerauthorizationstatus?language=objc) value.
 
 | ATTrackingManagerAuthorizationStatus | Xandr SDK's treatment of limit_ad_tracking field in AdRequest |
 |:---|:---|
@@ -40,7 +41,7 @@ Xandr SDK will fetch and send valid IDFA in ad request only if the authorization
 
 ## What happens if App's do not update to v7.6 of SDK release?
 
-If the user is on iOS14 and the app has not updated to v7.6.2+ of the SDK, AdRequest will be sent with limit_ad_tracking:true(This is because Xandr SDK will still be using deprecated iOS13 [API](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-advertisingtrackingenabled?language=objc) in this case).
+If the user is in iOS14 and the app has not updated to v7.6.2+ of the SDK, AdRequest will be sent with limit_ad_tracking:true (This is because Xandr SDK will still be using deprecated iOS13 [API](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-advertisingtrackingenabled?language=objc) in this case).
 
 ## What is Xandr Mobile SDK doing to support SKAdNetwork?
 
@@ -49,12 +50,12 @@ and they continue to support app install attribution in iOS14 and above. In addi
 following app install tracking vendors.
 
 - [Flurry](https://www.flurry.com/)
-- [Sam4Mobile](https://www.sam4mobile.com/)
+- Sam4Mobile
 - [AppsFlyer](https://www.appsflyer.com/)
 - [TapStream](https://tapstream.com/)
-- [MDotM](https://www.mdotm.com/)
-- [Google Ad Manager](https://adxtracking.com/)
-- [Apsalar](https://apsalar.com/)
+- MDotM
+- Google Ad Manager
+- Apsalar
 - [Kochava](https://kochava.com/)
 - [Conversant](https://www.conversantmedia.com/)
 - [TapSense](https://www.tapsense.com/)
