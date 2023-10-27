@@ -1,17 +1,11 @@
 ---
-Title : Support for External Inventory Code and Traffic Source Code on Android
-Description : ## Overview - External Inventory Code
-An external inventory code provides publishers the ability to break out
-data on their inventory more granularly than the placement level. The
+title : Support for External Inventory Code and Traffic Source Code on Android
+description : An external inventory code provides publishers the ability to break out data on their inventory more granularly than the placement level. 
 ms.custom : android-sdk
 ---
 
 
-# Support for External Inventory Code and Traffic Source Code on Android
-
-
-
-
+# Support for external enventory code and traffic source code on Android
 
 ## Overview - External Inventory Code
 
@@ -20,9 +14,7 @@ data on their inventory more granularly than the placement level. The
 value can be passed via the `ext_inv_code` field of the request body
 using the `extInvCode` property, but must be entered into the system
 before it is logged and available as a dimension in relevant reporting.
-For more information, see <a
-href="xandr-api/external-inventory-code-service.md"
-class="xref" target="_blank">External Inventory Code Service</a>. In
+For more information, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). In
 short, this property allows you to pass the predefined external
 inventory codes on ad calls and then report on them.
 
@@ -33,37 +25,13 @@ the `extInvCode` property
 of `BannerAdView`, `InterstitialAdView`, `NativeAdRequest` and `VideoAd`.
 However, the scope of use of this property depends on your reporting
 requirement. You can omit the call to this property if you don't want to
-use this feature. 
-
-
-
-
+use this feature.
 
 ## Property
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001048__entry__1"
-class="entry colsep-1 rowsep-1">Property</th>
-<th id="ID-00001048__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001048__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001048__entry__1"><code
-class="ph codeph">extInvCode</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001048__entry__2">String</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001048__entry__3">Sets
-the external inventory code and indicates predefined value passed on the
-query string that can be used in reporting.</td>
-</tr>
-</tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| `extInvCode` | String | Sets the external inventory code and indicates predefined value passed on the query string that can be used in reporting. |
 
 ``` pre
 /**
@@ -80,11 +48,7 @@ public void setExtInvCode(String extInvCode)
 public String getExtInvCode()
 ```
 
-
-
-
-
-##  Example
+## Example
 
 ``` pre
 //Banner
@@ -95,11 +59,7 @@ nativeAdRequest.setExtInvCode("Xandr-extInvCode");
 nativeAdRequest.getExtInvCode();
 ```
 
-
-
-
-
-## Overview - Traffic Source Code
+## Overview - Traffic source code
 
 A traffic source code provides the ability to check the third-party
 traffic source of a particular impression. If the traffic source code is
@@ -114,35 +74,11 @@ You need to set the Traffic Source Code using
 the `trafficSourceCode` property
 of `ANBannerAdView`, `InterstitialAdView`, `ANNativeAdRequest` and `ANInstreamVideoAd`.  
 
-
-
-
-
 ## Property
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001048__entry__7"
-class="entry colsep-1 rowsep-1">Property</th>
-<th id="ID-00001048__entry__8" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001048__entry__9"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001048__entry__7"><code
-class="ph codeph">trafficSourceCode</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001048__entry__8">String</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001048__entry__9">Indicates predefined source code values
-for third party traffic passed on the query string.</td>
-</tr>
-</tbody>
-</table>
+| Property | Type | Description |
+|---|---|---|
+| `trafficSourceCode` | String | Indicates predefined source code values for third party traffic passed on the query string. |
 
 ``` pre
 /**
@@ -162,10 +98,6 @@ public String getTrafficSourceCode() {
 }
 ```
 
-
-
-
-
 ## Example
 
 ``` pre
@@ -177,9 +109,3 @@ bannerAdView.getTrafficSourceCode();
 nativeAdRequest.setTrafficSourceCode("Xandr-trafficSourceCode");
 nativeAdRequest.getTrafficSourceCode();
 ```
-
-
-
-
-
-

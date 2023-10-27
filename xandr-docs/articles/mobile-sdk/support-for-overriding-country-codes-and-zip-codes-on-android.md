@@ -1,14 +1,11 @@
 ---
-Title : Support for Overriding Country Codes and Zip Codes on Android
-Description : Mobile SDK allows the publishers to override the country codes and zip
-codes. The SDK uses City/DMA/Country information from standard feed (log
+title : Support for Overriding Country Codes and Zip Codes on Android
+description : Mobile SDK allows the publishers to override the country codes and zip codes. The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes.
 ms.custom : android-sdk
 ---
 
 
-# Support for Overriding Country Codes and Zip Codes on Android
-
-
+# Support for overriding country codes and zip codes on Android
 
 Mobile SDK allows the publishers to override the country codes and zip
 codes. The SDK uses City/DMA/Country information from standard feed (log
@@ -18,8 +15,6 @@ available) to keep the data sanity intact. Reason being, if those values
 are not overwritten, log level data will point to the ip-address based
 locations and eventually will project wrong data set especially with
 mobile data.
-
-
 
 ## Methods
 
@@ -87,10 +82,6 @@ using **setGeoOverrideZipCode**.
  }
 ```
 
-
-
-
-
 ## Example
 
 The methods can be accessed as follows:
@@ -107,9 +98,3 @@ SDKSettings.setGeoOverrideZipCode("10010");
 SDKSettings.getGeoOverrideCountryCode();
 SDKSettings.getGeoOverrideZipCode();
 ```
-
-
-
-
-
-
