@@ -61,8 +61,6 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: API Documentation
-            url: api-documentation.md
           - text: External Seller Troubleshooting
             url: external-seller-troubleshooting.md
           - text: Xandr Supply Partner Support
