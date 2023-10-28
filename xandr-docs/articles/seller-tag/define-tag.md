@@ -2,6 +2,7 @@
 title: Define Tag
 description: In this article, learn how the Define Tag is utilized to establish parameters for an ad placement.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Define Tag
