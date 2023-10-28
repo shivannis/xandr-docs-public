@@ -2,6 +2,7 @@
 title : Data Science Toolkit - Incrementality and Xandr
 description : Learn that the idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group.
 ms.custom : data-science
+ms.date: 10/28/2023
 ---
 
 
