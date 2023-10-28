@@ -2,6 +2,7 @@
 title: Data Science Toolkit - Bonsai Custom Model Workflow
 description: In this article, explore a detailed guide to the Bonsai custom model workflow with step-by-step instructions and code examples.
 ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Bonsai custom model workflow
