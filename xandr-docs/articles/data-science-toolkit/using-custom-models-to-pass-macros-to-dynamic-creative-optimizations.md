@@ -1,6 +1,8 @@
 ---
 title: Data Science Toolkit - Custom Models for Passing Macros to Dynamic Creative Optimizations
 description: This article suggests using a macro and non-valuation custom model to ensure the Dynamic Creative Optimizations (DCO) receives targeted segments.
+ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Using custom models to pass macros to dynamic creative optimizations
