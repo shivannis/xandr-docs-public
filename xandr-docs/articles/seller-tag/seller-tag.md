@@ -2,6 +2,7 @@
 title : Seller Tag
 description : Learn about Microsoft's seller tag (AST), how to implement it, an API refernce, and using AST in specific conditions. 
 ms.custom : seller-tag
+ms.date: 10/28/2023
 ---
 
 
