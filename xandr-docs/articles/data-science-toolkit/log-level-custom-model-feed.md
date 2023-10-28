@@ -1,6 +1,8 @@
 ---
 title: Data Science Toolkit - Log-Level Custom Model Feed
 description: Use the log-level custom model feed to get specific information on models associated with your line items and the values calculated by each model.
+ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Log-level custom model feed
