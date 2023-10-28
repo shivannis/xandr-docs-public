@@ -2,6 +2,7 @@
 title: AST Video Capabilities
 description: In this article, find references to the different video capabilities that AST offers. 
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # AST video capabilities
