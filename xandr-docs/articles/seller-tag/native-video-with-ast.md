@@ -2,6 +2,7 @@
 title: Native Video with AST
 description: In this article, learn about Native Video with AST, video players, and how to implement it with a detailed set of examples.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Native video with AST
