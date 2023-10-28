@@ -2,6 +2,7 @@
 title: Attach Click Trackers
 description: In this article, learn what the attachClickTrackers function is and the parameters that can be added to this function.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Attach Click Trackers
