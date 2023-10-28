@@ -2,6 +2,7 @@
 title: Set Up On-Page Tags for Bannerstream Video
 description: This article explains about Bannerstream video. Bannerstream video uses seller tag (AST), an asynchronous JavaScript tag that runs in the header of the page.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Set up on-page tags for Bannerstream video
