@@ -2,6 +2,7 @@
 title: Data Science Toolkit - Creative Selection Custom Model
 description: Learn how to assign creatives using a custom model. The article provides syntax explanations and detailed API workflow instructions, accompanied by examples.
 ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Creative selection custom model
