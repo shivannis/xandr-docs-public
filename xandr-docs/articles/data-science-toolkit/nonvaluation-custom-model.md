@@ -1,6 +1,8 @@
 ---
 title: Data Science Toolkit - Non-valuation Custom Model
 description: Use non-valuation custom models to insert creative macros into impression tracking calls. Non-valuation custom models do not affect bid valuation. 
+ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Non-valuation custom model
