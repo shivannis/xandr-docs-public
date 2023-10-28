@@ -2,6 +2,7 @@
 title: Get Tag
 description: In this article, learn about the Get Tag function and its parameter with a detailed example.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Get Tag
