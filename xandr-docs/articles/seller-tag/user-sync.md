@@ -2,6 +2,7 @@
 title: User Sync
 description: This article explains about the user sync configuration object which offers publishers control over the behaviour of AST.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # User sync
