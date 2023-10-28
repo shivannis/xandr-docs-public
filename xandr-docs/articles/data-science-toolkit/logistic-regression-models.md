@@ -1,6 +1,8 @@
 ---
 title: Data Science Toolkit - Logistic Regression Models
 description: Logistic regression predicts binary responses from multiple signals. Data scientists can use it for more accurate predictions and tailored algorithms.
+ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Logistic regression models
