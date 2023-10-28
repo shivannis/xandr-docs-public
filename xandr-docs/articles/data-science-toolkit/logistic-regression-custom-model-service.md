@@ -1,6 +1,8 @@
 ---
 title: Data Science Toolkit - Logistic Regression Custom Model Service
 description: The logistic regression custom model service helps create logistic regression models to predict click or conversion likelihood based on multiple signals.
+ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Logistic regression custom model service
