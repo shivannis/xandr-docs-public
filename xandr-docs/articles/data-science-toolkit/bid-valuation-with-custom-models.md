@@ -2,6 +2,7 @@
 title: Data Science Toolkit - Bid Valuation with Custom Models
 description: Learn how setting different goals and revenue types on your line item affects the final Bid Valuation (BV) and gain insights into the functioning of custom models.
 ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Bid valuation with custom models
