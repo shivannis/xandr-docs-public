@@ -18,7 +18,7 @@ If the click tracker loads properly, you'll see a status saying "Click tracking 
 - When Xandr's Click Tracker URL is loaded, a request to Xandr's server is made to register the click.
 - After the click is logged, the user will be redirected to the final landing page.
 
-An example of a Xandr Click Tracker URL is [https://nym1-ib.adnxs-simple.com/click?AAAAAAA](https://nym1-ib.adnxs-simple.com/click?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA).
+An example of a Xandr Click Tracker URL is [https://nym1-ib.adnxs.com/click2?](https://nym1-ib.adnxs.com/click2?).
 
 For a creative to pass the click track test, the above URL must fire in the network calls when the creative is clicked. If the URL fires, it implies that the creative has been set up properly to measure the clicks.
 
