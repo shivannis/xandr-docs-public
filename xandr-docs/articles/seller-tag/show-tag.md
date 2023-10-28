@@ -2,6 +2,7 @@
 title: Show Tag
 description: Use this function to indicate that an ad placement has been fully defined and is ready for an ad to be shown in its space.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Show tag
