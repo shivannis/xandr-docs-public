@@ -2,6 +2,7 @@
 title : Off Event
 description : Learn how this function clears the event listeners on the given `eventType` and `targetId`.
 ms.custom : seller-tag
+ms.date: 10/28/2023
 ---
 
 
