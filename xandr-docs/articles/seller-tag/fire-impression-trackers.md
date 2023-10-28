@@ -2,6 +2,7 @@
 title: Fire Impression Trackers
 description: In this article, learn about the Fire Impression Trackers function and its parameter with a detailed example.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Fire Impression Trackers
