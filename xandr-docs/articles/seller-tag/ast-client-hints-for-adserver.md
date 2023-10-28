@@ -2,6 +2,7 @@
 title: User Agent Client Hints
 description: In this article, find information about what User-Agent Client Hints API is and how it works.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # User Agent Client Hints
