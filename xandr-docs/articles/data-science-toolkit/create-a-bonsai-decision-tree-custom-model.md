@@ -2,6 +2,7 @@
 title: Data Science Toolkit - Create a Bonsai Decision Tree Custom Model
 description: In this article, learn how to create a Bonsai decision tree custom model and easily upload it to our platform with clear, step-by-step instructions.
 ms.custom: data-science
+ms.date: 10/28/2023
 ---
 
 # Data Science Toolkit - Create a Bonsai decision tree custom model
