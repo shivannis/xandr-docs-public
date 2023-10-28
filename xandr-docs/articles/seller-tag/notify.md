@@ -2,6 +2,7 @@
 title: Notify
 description: In this article, learn about the Notify function and its parameters with a detailed example.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Notify
