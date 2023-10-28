@@ -2,6 +2,7 @@
 title: Breaking Changes - AST API
 description: In this article, understand what breaking changes are and what types of changes do and do not qualify as breaking changes.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Breaking changes - AST API
