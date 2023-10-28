@@ -24,7 +24,7 @@ You can manually test click tracking if strange creative behavior or UI issues c
 1. Search for "click" in the Network tab.
 1. You should see a call similar to the following:
 
-    `https://nym1-ib.adnxs-simple.com/click?AAAAAAA`
+    `https://nym1-ib.adnxs.com/click2?`
 
     The creative will start tracking clicks.
 
