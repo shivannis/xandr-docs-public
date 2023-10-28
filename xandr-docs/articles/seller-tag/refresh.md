@@ -2,6 +2,7 @@
 title : Refresh
 description : Learn how this function initiates a new ad server call and refreshes ads on the page.
 ms.custom : seller-tag
+ms.date: 10/28/2023
 ---
 
 # Refresh
