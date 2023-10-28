@@ -14,7 +14,7 @@ In order for Xandr to track a click to the corresponding impression, a click tra
 1. There is a redirect to the webpage that follows the click tracker. For example:
 
     ```pre
-    https://ib.adnxs.com/click?AAAAAAAAAAAAAAAAAAAA./clickenc=https://www.appnexus.com
+    https://nym1-ib.adnxs.com/click2?
     ```
 
     In this example, the Xandr click tracker is followed by the Xandr homepage. When the link is loaded, a click is recorded on Xandr, and then there is a redirect to the Xandr homepage.
