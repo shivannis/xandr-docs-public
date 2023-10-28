@@ -2,6 +2,7 @@
 title : On Event
 description : Learn how this function defines a callback function to execute on the given `event_type`.
 ms.custom : seller-tag
+ms.date: 10/28/2023
 ---
 
 
