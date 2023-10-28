@@ -476,7 +476,7 @@ Xandr supports the following fields in the `user` object:
 | `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for car_make and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for car_make=ford.<br>- a querystring mapping segment with my_other_value as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Please contact your Xandr representative to enable this feature. |
 | `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Please contact support or your account representative for more information. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the `user` object. |
-| `eid` | object | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
+| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
 ### eid object
 
