@@ -2,6 +2,7 @@
 title: Native Ad Video Player
 description: In this article, explore the features of the Native Ad Video Player, its API entry points and player options, and how to invoke this player with a detailed example.
 ms.custom: seller-tag
+ms.date: 10/28/2023
 ---
 
 # Native ad video player
