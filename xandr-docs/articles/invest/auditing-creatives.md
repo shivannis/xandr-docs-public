@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Auditing Creatives
 description : Learn the process of auditing creatives before they are allowed to run on real-time inventory. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Auditing creatives
