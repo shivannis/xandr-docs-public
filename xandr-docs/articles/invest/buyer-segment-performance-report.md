@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Segment Performance Report
 description: Use the Buyer Segment Performance report for insights on segment engagement, performance, and conversions within your advertising campaign.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer Segment Performance report
