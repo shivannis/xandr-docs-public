@@ -53,11 +53,11 @@ When you create a publisher, we automatically create a placement group for the p
 
 1. Select the placement group and click Full Edit.
 
-    :::image type="content" source="media/75798775.jpg" alt-text="A screenshot that shows how to edit a placement group on the UI.":::
+    :::image type="content" source="media/e.png" alt-text="A screenshot that shows how to edit a placement group on the UI.":::
 
 1. Select the correct **Supply Type.**
 
-    :::image type="content" source="media/75798776.jpg" alt-text="A screenshot that shows how to select the supply type for a placement group on the UI.":::
+    :::image type="content" source="media/f.png" alt-text="A screenshot that shows how to select the supply type for a placement group on the UI.":::
 
 1. Click **Save**.
 
