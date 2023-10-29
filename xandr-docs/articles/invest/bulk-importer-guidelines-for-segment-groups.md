@@ -1,6 +1,7 @@
 ---
 title: Bulk Importer Guidelines for Segment Groups
 description: In this article, understand the bulk importer guidelines and the setup for segment groups when adding data to the bulk importer template.
+ms.date: 10/28/2023
 ---
 
 # Bulk importer guidelines for segment groups
