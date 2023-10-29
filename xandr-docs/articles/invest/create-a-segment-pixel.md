@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create a Segment Pixel
 description : Learn how a segment pixel marks a user as belonging to a certain target audience based on the web pages they visit, the actions they take, or data such as gender or location.
+ms.date: 10/28/2023
 ---
 
 
