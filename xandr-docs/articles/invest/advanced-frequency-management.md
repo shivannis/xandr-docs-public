@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advanced Frequency Management
 description: Learn about Advanced Frequency Management (AFM), an innovative technique enabling advertisers to control how often a specific ad is displayed to a particular audience.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advanced Frequency Management
