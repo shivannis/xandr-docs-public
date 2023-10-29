@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Birthday Cookies
 description: In this article, understand what birthday cookies are and how these segments can be useful to buyers and sellers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Birthday Cookies
