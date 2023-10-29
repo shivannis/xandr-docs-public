@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Google Ad Manager Creative Audit Process
 description: Creatives must pass the required audits to serve on Google Ad Manager inventory. Eligible creatives are automatically enrolled in the audit process.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Google Ad Manager creative audit process
