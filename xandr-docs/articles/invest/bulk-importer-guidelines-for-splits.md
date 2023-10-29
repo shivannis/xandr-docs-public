@@ -1,6 +1,7 @@
 ---
 title: Bulk Importer Guidelines for Splits
 description: In this article, understand the bulk importer guidelines and the setup for splits when adding data to the bulk importer template.
+ms.date: 10/28/2023
 ---
 
 # Bulk importer guidelines for splits
