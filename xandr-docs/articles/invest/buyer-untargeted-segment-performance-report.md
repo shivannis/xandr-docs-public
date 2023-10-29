@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Untargeted Segment Performance Report
 description: Learn about the Buyer Untargeted Segment Performance report that offers insights on the non-targeted segment performance in your advertising campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer Untargeted Segment Performance report
