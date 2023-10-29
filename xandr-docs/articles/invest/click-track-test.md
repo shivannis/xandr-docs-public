@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Click Track Test
 description: This article explains about the click track test which is run to check whether a creative's tag is properly set up to measure clicks for reporting purposes. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Click track test
