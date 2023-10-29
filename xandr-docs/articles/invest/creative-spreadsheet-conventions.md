@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Creative Spreadsheet Conventions
 description : Learn about the use of spreadsheet templates for uploading multiple creatives simultaneously.
+ms.date: 10/28/2023
 ---
 
 
