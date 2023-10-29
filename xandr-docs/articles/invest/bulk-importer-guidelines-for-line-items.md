@@ -1,6 +1,7 @@
 ---
 title: Bulk Importer Guidelines for Line Items
 description: In this article, understand the bulk importer guidelines and the setup for line items when adding data to the bulk importer template.
+ms.date: 10/28/2023
 ---
 
 # Bulk importer guidelines for line items
