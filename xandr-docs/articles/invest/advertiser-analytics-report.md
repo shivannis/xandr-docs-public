@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advertiser Analytics Report
 description: In this article, learn about the Advertiser Analytics report that lets you view buy-side data for a specific advertiser.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advertiser Analytics report
