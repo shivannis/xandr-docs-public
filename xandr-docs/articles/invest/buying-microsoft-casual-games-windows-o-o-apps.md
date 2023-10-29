@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Microsoft Casual Games (Windows O&O Apps)
 description: Learn how to buy and target Microsoft Casual Games within the Windows O&O apps. These games offer a range of fun and engaging options for users.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Microsoft Casual Games (Windows O&O apps)
