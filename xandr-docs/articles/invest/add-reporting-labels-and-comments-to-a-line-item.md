@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Add Reporting Labels and Comments to a Line Item
 description: In this article, learn how to add custom labels and comments in a report. This will help a user to generate reports and track metrics across multiple line items.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add Reporting Labels and comments to a line item
