@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Credit Limit Overview
 description : Learn how to offer credit management to support an enhanced level of service while ensuring that all our partners are treated fairly.
+ms.date: 10/28/2023
 ---
 
 
