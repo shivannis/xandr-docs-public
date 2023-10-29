@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Client-Side Segmentation
 description: This article explains about client-side segmentation. Client-side segment pixels are commonly used to build audience segments on websites or creatives. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Client-Side segmentation
