@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Ad Viewability - Description of Methodology (DOM)
 description: In this module, understand the Xandr viewability measurement process and methodology. It is designed for Xandr clients, prospects, and partners only.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Ad Viewability: Description of Methodology (DOM)
