@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Changes to Geography Objects
 description: This page is automatically updated every two weeks with geolocation data and occasionally with information on upcoming major changes.
+ms.date: 10/28/2023
 ---
 
 
