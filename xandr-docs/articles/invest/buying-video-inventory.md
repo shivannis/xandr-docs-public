@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying Video Inventory
 description: This article provides steps to buy video inventory. The workflow helps optimize the enhancements around the buy-side video offering.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying video inventory
