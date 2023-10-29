@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Auto Macro Insertion
 description : Learn how macros like ${CLICK_URL} and ${CACHEBUSTER} are automatically inserted into recognized third-party ad server formats for simplifying creative trafficking.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Auto macro insertion
