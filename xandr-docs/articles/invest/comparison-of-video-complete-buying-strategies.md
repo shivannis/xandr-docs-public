@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Comparison of Video Complete Buying Strategies
 description: In this article, you’ll learn about CPCV optimization and Guaranteed Completes and their use cases. These two cannot be used simultaneously.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Comparison of video complete buying strategies
