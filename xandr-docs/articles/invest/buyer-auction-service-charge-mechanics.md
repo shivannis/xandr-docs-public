@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Auction Service Charge Mechanics
 description: In this article, understand what Buyer Auction Service Charge (BASC) is, how it is calculated, and how it is charged by Xandr.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer auction service charge mechanics
