@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - comScore Agent
 description: Use the comScore Agent app to create custom segments using keywords, content categorization, and brand protection data to find quality inventory. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - comScore Agent
