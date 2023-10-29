@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying Billing Report
 description: Use the Buying Billing report to streamline internal invoicing for your advertisers in both managed and third-party buying.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying Billing report
