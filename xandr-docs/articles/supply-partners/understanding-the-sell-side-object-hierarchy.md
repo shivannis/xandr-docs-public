@@ -19,7 +19,7 @@ within a specific object hierarchy. Here's the basic hierarchy:
 
 Here's a visualization of the relationship between objects:
 
-:::image type="content" source="./media/75798931.jpg" alt-text="Diagram of supply partners."::: 
+:::image type="content" source="./media/d.png" alt-text="Diagram of supply partners."::: 
 
 ## Publishers and placements
 
