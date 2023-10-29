@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Billing Reporting
 description: In this article, learn how to get information about running reports for billing and invoicing purposes.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Billing Reporting
