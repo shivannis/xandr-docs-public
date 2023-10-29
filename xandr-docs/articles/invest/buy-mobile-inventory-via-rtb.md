@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Mobile Inventory via RTB
 description: This article describes the complete and detailed workflow of setting up a campaign to run on third-party mobile inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy mobile inventory via RTB
