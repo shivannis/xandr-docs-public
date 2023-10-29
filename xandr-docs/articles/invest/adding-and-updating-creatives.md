@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Add and Update Creatives
 description: In this article, learn step-by-step instructions on adding and updating multiple creatives in bulk using the Creative Manager.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add and update creatives
