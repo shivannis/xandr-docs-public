@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advertiser Attributed Conversions Report
 description: In this article, learn about Advertiser Attributed Conversions report and its comprehensive overview of conversions attributed to specific advertisers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advertiser Attributed Conversions report
