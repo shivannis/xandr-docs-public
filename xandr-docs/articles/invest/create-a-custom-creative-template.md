@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create a Custom Creative Template
 description : Learn to create a new custom creative template from scratch.
+ms.date: 10/28/2023
 ---
 
 
