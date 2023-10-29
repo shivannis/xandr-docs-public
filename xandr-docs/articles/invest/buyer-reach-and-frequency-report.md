@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Reach and Frequency Report
 description: Learn about the Buyer Reach and Frequency report that provides valuable insights into the reach and frequency of an advertising campaign.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer Reach and Frequency report
