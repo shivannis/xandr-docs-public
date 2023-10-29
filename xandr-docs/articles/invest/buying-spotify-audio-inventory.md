@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying Spotify Audio Inventory
 description: This article provides information on spotify audio, including creative specifications, audio inventory targeting, available supply, deals, and reporting options.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying spotify audio inventory
