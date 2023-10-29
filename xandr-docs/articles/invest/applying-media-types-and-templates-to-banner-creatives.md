@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Applying Media Types & Templates to Banner Creatives
 description: Apply media types such as banner, interstitial, and expandable. Add standard and custom templates to your banner creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Applying media types and templates to banner creatives
