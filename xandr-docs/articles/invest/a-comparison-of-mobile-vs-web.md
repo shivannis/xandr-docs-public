@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - A Comparison of Mobile App vs. Web
 description : Learn how the mobile app features are different from the web features.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - A comparison of mobile app vs. web
