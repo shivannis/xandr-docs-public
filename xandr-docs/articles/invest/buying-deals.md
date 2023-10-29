@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Deals
 description: In this article, learn about the two seller deal approaches, granting unique access to inventory and data through agreements.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy deals
