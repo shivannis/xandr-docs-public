@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Availability of Reporting Data
 description : This article describes the availability of reporting data, noting that it is typically accessible in the UI and API within two hours following the conclusion of a specific hour. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Availability of reporting data
