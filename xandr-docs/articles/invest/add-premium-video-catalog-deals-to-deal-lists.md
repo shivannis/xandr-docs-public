@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Add Premium Video Catalog Deals to Deal Lists
 description: In this article, learn how to use the inventory library to add Premium Video Catalog (PVC) deals to deal lists within Microsoft Invest.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add Premium Video Catalog deals to deal lists
