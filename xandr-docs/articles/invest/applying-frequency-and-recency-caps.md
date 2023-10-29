@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Applying Frequency and Recency Caps
-description: Apply frequency and recency caps at different levels with the most restrictive setting taking precedence. Caps apply according to the strictest settings available.  
+description: Apply frequency and recency caps at different levels with the most restrictive setting taking precedence. Caps apply according to the strictest settings available. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Applying frequency and recency caps
