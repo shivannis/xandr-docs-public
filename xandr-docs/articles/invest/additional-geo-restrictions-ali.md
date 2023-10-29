@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Additional Geo Restrictions
 description: In this article, learn about the geographic targeting restrictions for impressions that the users are viewing. These restrictions help in customizing content delivery. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Additional Geo restrictions
