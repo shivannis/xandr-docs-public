@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create a Partner Fee
 description : Learn creating a partner fee eligible for advertisers. Before selecting advertisers eligible for the fee add details like fee name, fee vendor, fee type, decsription and fee calculation method.
+ms.date: 10/28/2023
 ---
 
 
