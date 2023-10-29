@@ -1,6 +1,7 @@
 ---
 title: Bulk Importer Template Guidelines
 description: In this article, you will find links to guidelines you can follow to format each parameter correctly when adding data to the bulk importer template.
+ms.date: 10/28/2023
 ---
 
 # Bulk importer template guidelines
