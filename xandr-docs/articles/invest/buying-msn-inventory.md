@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy MSN Inventory
 description: In this article, learn about Microsoft MSN inventory's volume, availability, creative specifications, and targeting instructions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy MSN inventory
