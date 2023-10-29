@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Video Error Report
 description: In this article, use the Buyer Video Error report for resolving video errors or issues related to buy-side video advertising.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer Video Error report
