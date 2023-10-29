@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Ad Buying with Xandr
 description: Understand how Xandr lets you manage ad buying, optimize your ad buying revenue, and increase buying efficiency.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Ad buying with Xandr
