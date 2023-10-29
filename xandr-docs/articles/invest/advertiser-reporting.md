@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advertiser Reporting
 description: Learn about the advertiser-level reports and its granular details including metrics, such as click-through rates, conversion rates, audience demographics, and more.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advertiser reporting
