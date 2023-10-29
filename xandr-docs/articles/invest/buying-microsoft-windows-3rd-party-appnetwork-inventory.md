@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Microsoft Windows 3rd Party AppNetwork Inventory
 description: Learn about Microsoft Windows 3rd party AppNetwork inventory's creative specifications, targeting methods, and ways to maximize reach across Windows app inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Microsoft Windows 3rd party AppNetwork inventory
