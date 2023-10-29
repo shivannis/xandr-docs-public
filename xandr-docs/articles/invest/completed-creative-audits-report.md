@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Completed Creative Audits Report
 description: This report shows the number of creatives audited for an advertiser over a given time frame, creatives that completed audit, and the associated charges.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Completed creative audits report
