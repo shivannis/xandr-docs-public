@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Mobile Inventory
 description: Learn how to buy and setup your campaign for mobile inventory. This article also lists the approaches to work with mobile advertisers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy mobile inventory
