@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Google Ad Manager Disapproval Reasons
 description: This article explains the reasons for creatives getting rejected. The disapproval reason from Google Ad Manager can be for various reasons.
+ms.date: 10/28/2023
 ---
 
 
