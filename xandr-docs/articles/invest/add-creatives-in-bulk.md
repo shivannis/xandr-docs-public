@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Add Creatives in Bulk to the Creative Manager
 description: In this article, learn how to add multiple third-party hosted and native creatives in bulk to the Creative Manager.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add creatives in bulk to the Creative Manager
