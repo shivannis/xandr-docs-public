@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy-Side Targeting
 description: This section lists the types of user and inventory targeting you can apply on your line items.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy-side targeting
