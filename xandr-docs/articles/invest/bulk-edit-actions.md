@@ -1,6 +1,7 @@
 ---
 title: Bulk Edit Actions
 description: Learn how to use bulk edit actions to update multiple advertiser, insertion order, and line item settings simultaneously, and understand what bulk edit actions are supported.
+ms.date: 10/28/2023
 ---
 
 # Bulk edit actions
