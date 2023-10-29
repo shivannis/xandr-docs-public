@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Creative Rotation (ALI)
 description : Learn creative delivery strategy using the Creative Rotation settings in the Associated Creatives section on the Create New Line Item and Edit Line Item screens.
+ms.date: 10/28/2023
 ---
 
 
