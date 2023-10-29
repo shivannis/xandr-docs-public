@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Microsoft Video Inventory
 description: In this article, learn about Microsoft video inventory's types, creative specifications, targeting methods, and ways to buy video inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Microsoft video inventory
