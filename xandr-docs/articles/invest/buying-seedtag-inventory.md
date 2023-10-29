@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying Seedtag Inventory
 description: In this article, you'll learn how to display your creative via Seedtag inventory. Seedtag inventory is available programmatically.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying seedtag inventory
