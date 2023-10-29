@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Cross-Device Reporting
 description: Learn about cross-device reporting, including its targeting and measurement locations, available in Member Analytics, Device Analytics, and Data Usage reports.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Cross-Device reporting
