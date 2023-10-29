@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Deal Metrics
 description : In this article, learn what a Buyer Deal Metrics Report is and how you can run this report to view information like deal metrics, performance, and rejection reasons.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer deal metrics
