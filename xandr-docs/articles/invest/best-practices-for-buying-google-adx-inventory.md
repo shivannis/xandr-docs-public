@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Best Practices for Buying Google Ad Manager Inventory
 description : Learn the guidelines for maximum ad campaign success when targeting Google Ad Manager inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Best practices for buying Google Ad Manager inventory
