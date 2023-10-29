@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Microsoft Inventory
 description: Learn how to buy, create, and target Microsoft inventory. This article also explains ways to buy inventory from a specific Microsoft publisher.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Microsoft inventory
