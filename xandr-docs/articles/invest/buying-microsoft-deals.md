@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Microsoft Deals
 description: Learn how to use Package Marketplace to buy Microsoft deals from both the Microsoft Advertising Exchange and Microsoft's Australia and New Zealand inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Microsoft deals
