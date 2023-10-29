@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Bid Error Report
 description: In this article, learn what a Buyer Bid Error Report is and how you can use this report to correct settings that resulted in auction errors.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer bid error report
