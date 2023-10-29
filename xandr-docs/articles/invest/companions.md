@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Companions
 description: This article explains about Companions that are supported on VAST version 2.0 and higher. Companions can be served with linear or non-linear creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Companions
