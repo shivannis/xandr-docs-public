@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Add a Creative
 description: In this module, follow the step-by-step instructions to add one creative at a time to the Xandr platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Add a creative
