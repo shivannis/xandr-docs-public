@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - CTV Video Buying Best Practices
 description: In this article, discover the essential insights about the best practices for purchasing ad inventory on connected TV (CTV). 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - CTV video buying best practices
