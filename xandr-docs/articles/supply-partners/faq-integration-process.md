@@ -103,7 +103,7 @@ No. Inventory can be made targetable at the network and publisher levels. It can
 
 Xandr strongly suggests using the Publisher names that are clearly identifiable with the Publisher (`name` field described in [Use the API to Synchronize Your Inventory Structure](./use-the-api-to-synchronize-your-inventory-structure.md). Do not use your (the SSP's) internal IDs that are only known to your internal platform for Publisher naming. Please see an example inventory mapping structure below:
 
-:::image type="content" source="../supply-partners/media/89627195.png" alt-text="Screenshot of an example inventory mapping structure.":::
+:::image type="content" source="../supply-partners/media/b.png" alt-text="Screenshot of an example inventory mapping structure.":::
 
 **Is publisher.is_oo in the API important?**
 
