@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create an Augmented Line Item
 description : Learn creating augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.
+ms.date: 10/28/2023
 ---
 
 
