@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Engagement Report
 description: In this article, learn what a Buyer Engagement Report is and how you can run this report to gain insight into the viewable duration of your display and video creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer engagement report
