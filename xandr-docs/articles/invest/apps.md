@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Apps 
 description : Learn about product details and permissions for the apps grapeshot and comScore Agent
+ms.date: 10/28/2023
 
 
 ---
