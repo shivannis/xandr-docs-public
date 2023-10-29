@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create a Click Tracker
 description : Learn how to create and export a click tracker for use with creatives served by an external ad server. 
+ms.date: 10/28/2023
 ---
 
 
