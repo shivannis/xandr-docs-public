@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Billing
 description: This article provides resources for accessing and understanding your billing information like pricing terms, credit status, and so on.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Billing
