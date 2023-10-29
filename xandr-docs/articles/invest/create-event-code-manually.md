@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create Event Code Manually
 description : Learn to manually create event code based on a template and deploy it on your website.
+ms.date: 10/28/2023
 ---
 
 
