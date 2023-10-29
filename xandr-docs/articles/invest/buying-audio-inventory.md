@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy an Audio Inventory
 description: In this article, learn about the instructions to buy an audio inventory and optimize the process by using the buy-side workflow.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy an audio inventory
