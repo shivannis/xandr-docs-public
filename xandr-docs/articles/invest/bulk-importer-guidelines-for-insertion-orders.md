@@ -1,6 +1,7 @@
 ---
 title: Bulk Importer Guidelines for Insertion Orders
 description: In this article, understand the bulk importer guidelines and the basic setup of insertion orders when adding data to the bulk importer template.
+ms.date: 10/28/2023
 ---
 
 # Bulk importer guidelines for insertion orders
