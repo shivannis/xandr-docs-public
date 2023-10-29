@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying Guide
 description: Use the Buying guide to understand Microsoft Invest's buy-side capabilities and handle direct and third-party media buying for your advertisers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying Guide
