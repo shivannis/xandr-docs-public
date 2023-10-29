@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Xandr Direct for Buyers
 description : Learn how using Xandr Direct can streamline the process by which both Xandr and partners manage access to supply. 
+ms.date: 10/28/2023
 ---
 
 
