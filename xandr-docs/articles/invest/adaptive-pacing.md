@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Adaptive Pacing
 description: Understand how adaptive pacing prevents overpaying by controlling a line item's pacing and learn the benefits of adaptive pacing.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Adaptive pacing
