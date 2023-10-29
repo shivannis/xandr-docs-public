@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Geo Analytics Report
 description: Learn about the Buyer Geo Analytics report that allows you to break down delivery and performance based on specific geographic area.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buyer Geo Analytics report
