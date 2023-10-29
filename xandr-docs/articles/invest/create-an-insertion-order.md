@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Create an Insertion Order
 description : Learn how Insertion orders enable you to better organize, track, and allocate budget to your line items. 
+ms.date: 10/28/2023
 ---
 
 
