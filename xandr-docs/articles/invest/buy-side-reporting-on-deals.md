@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy-Side Reporting on Deals
 description: In this article, find links to the various reports you can run to analyze how campaigns and creatives are performing on your deals.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy-side reporting on deals
