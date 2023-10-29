@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Apply a Partner Fee to a Line Item
 description: You can add a partner fee to a line item to track third-party costs. It must be optional on the Member level for it to be removed from all line items.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Apply a partner fee to a line item
