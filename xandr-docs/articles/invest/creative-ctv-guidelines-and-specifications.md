@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Creative CTV Guidelines and Specifications
 description : Learn to serve on Xandr publisher's CTV inventory for which your creatives must meet the guidelines and specification requirements, as well as creative standards and any other guidelines that may apply. 
+ms.date: 10/28/2023
 ---
 
 
