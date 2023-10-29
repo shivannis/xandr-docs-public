@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Cross-Device Targeting and Measurement
 description: In this article, explore cross-device targeting and measurement, a feature that links events across devices, enabled at the line item level.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Cross-Device targeting and measurement
