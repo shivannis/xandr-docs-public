@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advertiser Video Analytics Report
 description: Use the report to view video event metrics for a specific advertiser.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advertiser video analytics report
