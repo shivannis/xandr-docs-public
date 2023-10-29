@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Calculate CTR and Conversion Rate for Guaranteed Outcomes
 description: Calculate CTR and Conversion Rate using Clearing Event Units instead of default metrics for Guaranteed Outcomes.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Analyzing CTR and conversion rate for guaranteed outcomes
