@@ -1,6 +1,7 @@
 ---
 title: Activate Nielsen Sales Impact for a Line Item
 description: In this module, learn how to activate Nielsen Catalina Solutions' (NCS) Sales Impact measurement for your augmented line item.
+ms.date: 10/28/2023
 ---
 
 # Activate Nielsen Sales Impact for a line item
