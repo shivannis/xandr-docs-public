@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy GumGum Inventory
 description: In this article, learn how to buy a GumGum inventory to enhance user engagement and display a creative through GumGum's inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy GumGum inventory
