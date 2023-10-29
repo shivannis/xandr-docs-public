@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - APAC Supply Information & Platform Inventory by Seller
 description: In this article, you'll find information to help discover new APAC-specific supply opportunities.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - APAC supply information and platform inventory by seller
