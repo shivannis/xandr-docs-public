@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest – Age & Gender Targeting for Third-Party Inventory
 description: Improve workflow when using member’s age and gender user data to target both managed and third-party inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Age and gender targeting for third-party inventory
