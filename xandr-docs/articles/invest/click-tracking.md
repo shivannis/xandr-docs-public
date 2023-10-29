@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Click Tracking
 description: This article explains about tracking clicks. Click tracking helps the ad serving industry to optimize CPC and CPA goals, bidding, and measuring campaign success.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Click tracking
