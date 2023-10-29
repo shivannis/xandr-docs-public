@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Associate Segment Pixels with Creatives
 description : Learn how to associate specific segment pixels with your creatives. Users are added to the segment pixels when they're viewing and/or clicking the creative. This method is server-side where a request tells Xandr to add user to specified segment pixel after the user has clicked or viewed the creative. 
+ms.date: 10/28/2023
 ---
 
 
