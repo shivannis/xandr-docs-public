@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Assign Creatives to a Split
 description : Assign specific creatives for a split to deliver.
+ms.date: 10/28/2023
 ---
 
 
