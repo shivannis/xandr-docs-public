@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Creative Character Specifications
 description : Learn about character specifications that you should keep in mind when uploading creatives.
+ms.date: 10/28/2023
 ---
 
 
