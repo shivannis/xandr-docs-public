@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Creative Types
 description : Learn to host a variety of creative types or traffic them through third-party ad servers.
+ms.date: 10/28/2023
 ---
 
 
