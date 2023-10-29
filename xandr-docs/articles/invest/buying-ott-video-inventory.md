@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buying OTT Video Inventory
 description: Microsoft Invest offers direct access to OTT video supply from publishers. Its programmatic platform allows for buying over-the-top video inventory at scale.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buying OTT video inventory
