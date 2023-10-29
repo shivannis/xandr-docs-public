@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Broker Fees
 description: In this article, understand what broker fees are in historical data. Broker fees have been replaced by partner fees for ALIs and PGLIs.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Broker fees
