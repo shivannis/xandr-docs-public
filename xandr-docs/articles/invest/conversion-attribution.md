@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Conversion Attribution
 description : Learn how when an advertiser's conversion pixel loads, Xandr determines if a pixel load can be associated with a user, and whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. 
+ms.date: 10/28/2023
 ---
 
 
