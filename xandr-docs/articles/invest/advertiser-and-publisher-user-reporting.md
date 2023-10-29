@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Advertiser User Reporting
 description: Learn how an Advertiser User report provides insights into advertiser behavior, performance metrics, dimension, and filters, to optimize and enhance ad experience.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Advertiser User reporting
