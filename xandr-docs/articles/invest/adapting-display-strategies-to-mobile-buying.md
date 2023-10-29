@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Adapting Display Strategies to Mobile Buying
 description: Understand how the technical limitations of mobile buying affects your overall strategy and what you can do to adapt.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Adapting display strategies to mobile buying
