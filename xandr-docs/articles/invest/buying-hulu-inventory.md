@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Buy Hulu Inventory
 description: In this article, learn about the instructions detailing the process of buying Hulu inventory within the Microsoft Invest platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Buy Hulu inventory
