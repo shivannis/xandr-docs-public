@@ -1,59 +1,37 @@
 ---
-Title : Listen to Native Ad Events on iOS
-Description : ## Overview
-A publisher can opt for the SDK to handle various ad events such as
-AdClick, occurrence of impressions etc., by registering into
-ms.custom : android-ios
+title: Listen to Native Ad Events on iOS
+description: In this article, learn about the NativeAdEventListener feature in iOS, including its scope, methods, and examples.
+ms.custom: ios-sdk
 ---
 
-
-# Listen to Native Ad Events on iOS
-
-
-
-
+# Listen to native ad events on iOS
 
 ## Overview
 
-A publisher can opt for the SDK to handle various ad events such as
-AdClick, occurrence of impressions etc., by registering into
-**NativeAdEventListener** API. Using the API, SDK handles all the
-mentioned events and notify the publishers whether the impression
-trackers are fired or not for the creatives. To listen to the Ad events,
-publishers need to register first using **registerViewForTracking**,
-after which SDK uses **NativeAdEventListener** to track the ad events.
-Publishers need to unregister using **NativeAdResponse** when they
-are finished with the views for the response or wish to reuse the view
-object(s) for a new **NativeAdResponse**.
+A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into
+**NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression
+trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerViewForTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **NativeAdResponse** when they are finished with the views for the response or wish to reuse the vieww object(s) for a new **NativeAdResponse**.
 
-**Scope of Listen to Native Ad events**
+## Scope of listen to native ad events
 
 The scope of this feature is limited to native creatives only.
 
+## Methods
 
+### Register for tracking of ad events - registerViewForTracking
 
+Method that registers a single or a list of the developer views that will track impressions and respond to clicks for the native ad.
 
-
-## Methods 
-
-**Register for tracking of Ad events - registerViewForTracking**
-
-Method that registers a single or a list of the developer views that
-will track impressions and respond to clicks for the native ad.
-
-``` pre
+``` 
 - (BOOL)registerViewForTracking:(nonnull UIView *)view
          withRootViewController:(nonnull UIViewController *)rvc
                  clickableViews:(nullable NSArray *)views
                           error:(NSError *__nullable*__nullable)error
 ```
 
-You can pass friendly obstruction list also in this method. To know more
-about Friendly Obstructions, see <a
-href="omid-friendly-obstruction-for-ios.md"
-class="xref" target="_blank">OMID-Friendly Obstruction for iOS</a>.
+You can pass friendly obstruction list also in this method. For more information about Friendly Obstructions, see [OMID-Friendly Obstruction for iOS](omid-friendly-obstruction-for-ios.md).
 
-``` pre
+``` 
 - (BOOL)registerViewForTracking:(nonnull UIView *)view
          withRootViewController:(nonnull UIViewController *)rvc
                  clickableViews:(nullable NSArray<UIView *> *)views
@@ -61,31 +39,25 @@ class="xref" target="_blank">OMID-Friendly Obstruction for iOS</a>.
                           error:(NSError *__nullable*__nullable)error;
 ```
 
-**Tracking of Ad events - NativeAdEventListener**
+### Tracking of ad events - NativeAdEventListener
 
-API with methods to track the ad events such as :
+API with methods to track the ad events such as:
 
-- when the native view is clicked by the user
+- when the native view is clicked by the user.
 
-- when native view returns the click-through URL and click-through
-  fallback URL
+- when native view returns the click-through URL and click-through fallback URL.
 
-- when the native view was clicked, and the click through destination is
-  about to open in the in-app browser
+- when the native view was clicked, and the click through destination is about to open in the in-app browser.
 
-- when the in-app browser has finished presenting and taken control from
-  the application
+- when the in-app browser has finished presenting and taken control from the application.
 
-- when the in-app browser will close and control will be returned to the
-  application
+- when the in-app browser will close and control will be returned to the application.
 
-- when the in-app browser has closed and control has been returned to
-  the application
+- when the in-app browser has closed and control has been returned to the application.
 
-- when the ad is about to leave the app or when an impression is
-  recorded for a native creative
+- when the ad is about to leave the app or when an impression is recorded for a native creative.
 
-  ``` pre
+  ``` 
   /*!
    * Sent when the native view is clicked by the user.
    */
@@ -147,21 +119,17 @@ API with methods to track the ad events such as :
   - (void)adDidLogImpression:(nonnull id)response;
   ```
 
-**Unregister for tracking of Ad events - unregisterTracking**
+### Unregister for tracking of ad events - unregisterTracking
 
 Method to unregister a native creative from tracking.
 
-``` pre
+``` 
 self.nativeAdResponse = nil
 ```
 
-
-
-
-
 ## Example
 
-``` pre
+``` 
 - (void)adWasClicked: (nonnull id)response
              withURL: (nonnull NSString *)clickURLString
          fallbackURL: (nonnull NSString *)clickFallbackURLString
@@ -202,9 +170,3 @@ self.nativeAdResponse = nil
     NSLog(@"adDidLogImpression callback called");
 }
 ```
-
-
-
-
-
-
