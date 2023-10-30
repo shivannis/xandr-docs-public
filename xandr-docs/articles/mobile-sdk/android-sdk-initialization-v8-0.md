@@ -22,7 +22,7 @@ public static void init(int memberId, Context context, boolean preCacheContent, 
 ```
 
 > [!NOTE]
-> This below method is available post v8.4 .
+> This below method is available post v8.4.
 
 ```
 /**
