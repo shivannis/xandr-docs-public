@@ -8,7 +8,7 @@ ms.custom: ios-sdk
 
 When you win a bid, you may want to resize the banner ad view to the size of the winning creative.
 
-To retrieve the height and width of the winning creative, use the loadedAdSize method.
+To retrieve the height and width of the winning creative, use the `loadedAdSize` method.
 
 ## loadedAdSize
 
