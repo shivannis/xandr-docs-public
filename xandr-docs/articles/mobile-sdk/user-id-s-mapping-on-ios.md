@@ -1,10 +1,10 @@
 ---
 title : User ID(s) Mapping on iOS
-description : This document provides instructions on user-id's mapping on iOS.
+description : The article provides instructions on mapping user IDs on iOS.
 ms.custom : android-ios
 ---
 
-# User ID(s) Mapping on iOS
+# User ID(s) mapping on iOS
 
 > [!NOTE]
 > This offering is currently in Alpha and is subject to changes or deprecation without notice.
@@ -12,8 +12,7 @@ ms.custom : android-ios
 ## Overview
 
 Xandr offers you the option of sending **Publisher First party ID** and **User ID(s)** from third party sources
-in ad requests. They are global settings and it is sufficient to set the User ID(s) once per app session as these values would be used in all consecutive ad requests in the same session. Please note that, Xandr does not store these values across
-different app sessions.
+in ad requests. They are global settings and it is sufficient to set the User ID(s) once per app session as these values would be used in all consecutive ad requests in the same session. Please note that, Xandr does not store these values across different app sessions.
 
 ## Mobile SDK structure
 
@@ -24,9 +23,9 @@ different app sessions.
 
 You can set **Publisher First Party ID** using the `publisherUserId` property of  `ANSDKSettings` in **MobileSDK API**. </br>
 
-| Property        | Type     | Attribute | fDescription                                                                                |
+| Property        | Type     | Attribute | Description                                                                                |
 |-----------------|----------|-----------|--------------------------------------------------------------------------------------------|
-| publisherUserId | NSString | readwrite | Specifies a string that corresponds to the Publisher User ID for current application user. |
+| `publisherUserId` | `NSString` | readwrite | Specifies a string that corresponds to the Publisher User ID for current application user. |
 
 **IDFV as publisher first party ID**
 
@@ -34,7 +33,7 @@ Due to introduction of App Tracking Transparency (ATT) changes in iOS 14.5 and a
 
 | Property | Type | Attribute | Description |
 |--|--|--|--|
-| disableIDFVUsage | BOOL | readwrite | Specifies a boolean value which exclude the IDFV field in ad request. Default value of the property is set to NO and IDFV will be used in cases where both IDFV and Publisher First Party ID are not present for a given ad request. |
+| `disableIDFVUsage` | `BOOL` | readwrite | Specifies a boolean value which exclude the IDFV field in ad request. Default value of the property is set to **NO** and IDFV will be used in cases where both IDFV and Publisher First Party ID are not present for a given ad request. |
 
 ```
 /**
@@ -46,7 +45,7 @@ An AppNexus disableIDFVUsage  is a boolean value which exclude the IDFV field in
 **User ID**
 
 > [!NOTE]
-**Deprecation Notice**: The property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class are now deprecated and will be removed in SDK v8.0. You can use the equivalent property \`**ANSDKSettings.userIdArray**\`  and \`**ANUserId**\` class described below instead as a replacement.
+> **Deprecation Notice**: The property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class are now deprecated and will be removed in SDK v8.0. You can use the equivalent property \`**ANSDKSettings.userIdArray**\`  and \`**ANUserId**\` class described below instead as a replacement.
 
 Xandr supports User ID(s) from the below external sources:
 
@@ -55,18 +54,17 @@ Xandr supports User ID(s) from the below external sources:
 - NetID
 - LiveRamp  
 - UID 2.0
-- Publisher Provided Id / PPID (publishers can register their own source
-  via API and can pass the user id)
+- Publisher Provided Id / PPID (publishers can register their own source via API and can pass the user id)
 
 You can set **User ID** by
 
 - creating an array of **ANUserId** objects, and
 - assigning the array of objects to the **userId`Array`** property
-  of `ANSDKSettings `in MobileSDK API 
+  of `ANSDKSettings` in MobileSDK API
  
-| roperty     | Type    | Attribute | Description                                                             |
+| Property     | Type    | Attribute | Description                                                             |
 |-------------|---------|-----------|-------------------------------------------------------------------------|
-| userIdArray | NSArray | readwrite | Specifies a dictionary containing objects that hold User ID parameters. |
+| `userIdArray` | `NSArray` | readwrite | Specifies a dictionary containing objects that hold User ID parameters. |
 
 ```
 // In ANSDKSettings.h: 

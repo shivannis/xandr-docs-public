@@ -1,6 +1,6 @@
 ---
 title : Universal pixel SDK for iOS
-description : This document provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
+description : This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
 ms.custom : android-ios
 ---
 
@@ -12,7 +12,7 @@ This document provides instructions on how publishers can integrate and install 
 
 ### Requirements
 
-The SDK requires the follwoing components:
+The SDK requires the following components:
 
 - macOS Mojave 10.14.4+
 - iOS 9+

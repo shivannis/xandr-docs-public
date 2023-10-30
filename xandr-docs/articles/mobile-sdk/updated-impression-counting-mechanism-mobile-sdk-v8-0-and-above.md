@@ -1,6 +1,6 @@
 ---
 title : Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
-description : This document describes the updated-impression-counting-mechanism for Mobile SDK. This change will be included in Xandr’s Mobile SDK v8.0 and above.
+description : This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
 ms.custom : android-sdk
 ---
 

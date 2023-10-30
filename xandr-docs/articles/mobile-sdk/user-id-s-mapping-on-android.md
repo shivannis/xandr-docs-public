@@ -1,6 +1,6 @@
 ---
 title : User ID(s) Mapping on Android
-description : The document describes user-ID's mapping on android.
+description : The article describes the mapping of user IDs on Android.
 ms.custom : android-sdk
 ---
 
