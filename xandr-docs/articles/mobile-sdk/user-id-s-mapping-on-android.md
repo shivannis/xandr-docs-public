@@ -62,7 +62,7 @@ You can set **User ID** by
 - The `getUserIds()`method returns the values set as a List for the
   current user.
 
-  ```
+```
      /**
        * A Map containing objects that hold External UserId parameters for the current application user.
        * @param userIdList
@@ -122,7 +122,6 @@ public class MyActivity extends Activity {
 Context context;
     BannerAdView bav;
 
-```
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -158,9 +157,11 @@ Context context;
         //If auto-refresh is enabled
         bav.loadAd();
     }
- 
-    @Override
+
+@Override
     protected void onDestroy() {
         super.onDestroy();
     }
-}```
+}
+```
+

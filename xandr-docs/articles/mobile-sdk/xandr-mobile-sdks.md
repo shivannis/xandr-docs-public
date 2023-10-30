@@ -54,8 +54,8 @@ convenient way to monetize their apps.
 
 | Platform | Targeting                                                     |
 |----------|---------------------------------------------------------------|
-| Android  |[Mediate with Android SDK Instructions](mediate-with-android-sdk-instructions.md)<br>[Android Custom Adaptors](android-custom-adaptors.html) |
-| iOS      | [Mediate with iOS](mediate-with-ios.md)<br>[iOS Custom Adaptors](ios-custom-adaptors.md)                          |
+| Android  |[Mediate with Android SDK Instructions](mediate-with-android-sdk-instructions.md)<br>[Android Custom Adaptors](android-custom-adaptors.md) |
+| iOS      | [Mediate with iOS](mediate-with-ios.md)<br>x1[iOS Custom Adaptors](ios-custom-adaptors.md)                          |
 
 ## Configuration
 
