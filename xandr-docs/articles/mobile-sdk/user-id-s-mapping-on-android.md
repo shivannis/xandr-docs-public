@@ -104,7 +104,8 @@ You can set **User ID** by
       public String getSource() {
           return source;
       }
-  }```
+  }
+```
   
 ## Examples
 
@@ -112,24 +113,26 @@ You can set **User ID** by
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+ 
 import com.appnexus.opensdk.ANExtendedUserIdSource;
 import com.appnexus.opensdk.BannerAdView;
 import com.appnexus.opensdk.SDKSettings;
-
+ 
 import java.util.HashMap;
 import java.util.Map;
+ 
 public class MyActivity extends Activity {
-Context context;
+ 
+    Context context;
     BannerAdView bav;
-
-@Override
+ 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         context = this;
-```
-
-        ```List<ANUserId> userIds = new ArrayList<>();
+ 
+        List<ANUserId> userIds = new ArrayList<>();
         ANUserId tradeDeskUserID = new ANUserId(ANUserId.Source.THE_TRADE_DESK, "userid-ttd-foobar");
         userIds.add(tradeDeskUserID);
         ANUserId criteoUserId = new ANUserId(ANUserId.Source.CRITEO, "userid-Criteo-foobar");
@@ -157,10 +160,11 @@ Context context;
  
         //If auto-refresh is enabled
         bav.loadAd();
-    }```
-
-@Override
+    }
+ 
+    @Override
     protected void onDestroy() {
         super.onDestroy();
     }
-}```
+}
+```
