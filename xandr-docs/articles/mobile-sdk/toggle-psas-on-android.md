@@ -1,6 +1,6 @@
 ---
 title : Toggle PSAs on Android
-description : PSAs (Public Service Announcements) are ads that can be served as a last resort, if there are no other ads to show.
+description : PSAs (Public Service Announcements) are ads that can be served as a last resort, if there are no other ads to show on Android.
 ms.custom : android-sdk
 ---
 
