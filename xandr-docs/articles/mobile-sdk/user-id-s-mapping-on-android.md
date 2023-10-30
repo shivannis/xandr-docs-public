@@ -127,7 +127,7 @@ Context context;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         context = this;
- 
+
         List<ANUserId> userIds = new ArrayList<>();
         ANUserId tradeDeskUserID = new ANUserId(ANUserId.Source.THE_TRADE_DESK, "userid-ttd-foobar");
         userIds.add(tradeDeskUserID);
@@ -162,6 +162,4 @@ Context context;
     protected void onDestroy() {
         super.onDestroy();
     }
-}
-```
-
+}```
