@@ -17,7 +17,7 @@ This page describes how to integrate our SDK with your project. Follow the inst
 > [!NOTE]
 > App Transport Security
 >
-> iOS 9 introduced a new privacy feature called [App Transport Security (ATS)](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.md#//apple_ref/doc/uid/TP40009251-SW33). ATS blocks non-HTTPS requests by default.
+> iOS 9 introduced a new privacy feature called [App Transport Security (ATS)](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33). ATS blocks non-HTTPS requests by default.
 >
 > To show ads using our SDK, you must include the exception in the `info.plist` file of each app which contains our SDK, [see below](#exception-in-the-infoplist-file).
 >
@@ -143,12 +143,12 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 - The added **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** would be visible under the **Framework, Libraries, and Embedded Content** section.
    :::image type="content" source="media/ios-sdk-integration-instructions-h.png" alt-text="Screenshot shows that the added framework is visible in the Embedded content section.":::
 
-#### Swift package manager
+#### Swift Package Manager
 
 - Copy the URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) and check the latest
   version of SDK in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
 - Open the app’s Xcode project or workspace. Select **Project → Swift Package** and click on **+ icon**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a swift package project.":::
+   :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
 - Paste the Github URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) mentioned earlier in search bar of **Choose Package Repository** screen and click **Next**.
    :::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::
 - Select the appropriate version from the drop-down (checked in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases) as mentioned earlier) and click **Next**.
