@@ -1,7 +1,7 @@
 ---
 title : Support for Overriding Country and Zip Codes for iOS
 description : Mobile SDK allows the publishers to override the country codes and zip codes. 
- ms.custom: ios-sdk
+ms.custom: ios-sdk
 ---
 
 
@@ -26,7 +26,7 @@ mobile data.
 | `geoOverrideZipCode` | String | readwrite | Indicates a string value to override zip code. |
 
 
-``` pre
+``` 
 /**
 * An AppNexus geoOverrideCountryCode  is a string value which allows publishers to override country code.
 */
@@ -44,7 +44,7 @@ The properties can be accessed:
 
 **Objective C**
 
-``` pre
+``` 
 //Set
 ANSDKSettings.sharedInstance.geoOverrideCountryCode = @"US";
 ANSDKSettings.sharedInstance.geoOverrideZipCode = @"10010";
@@ -56,7 +56,7 @@ NSString* zipCode = ANSDKSettings.sharedInstance.geoOverrideZipCode
 
 **Swift**
 
-``` pre
+``` 
 //Set
 ANSDKSettings.sharedInstance().geoOverrideCountryCode = "US"
 ANSDKSettings.sharedInstance().geoOverrideZipCode = "10010"

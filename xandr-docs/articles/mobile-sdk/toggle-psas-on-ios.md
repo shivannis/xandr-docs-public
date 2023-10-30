@@ -1,7 +1,7 @@
 ---
 title : Toggle PSAs on iOS
 description : PSAs (Public Service Announcements) are ads that can be served as a last resort, if there are no other ads to show.
- ms.custom: ios-sdk
+ms.custom: ios-sdk
 ---
 
 
@@ -13,7 +13,7 @@ resort, if there are no other ads to show.
 They are not enabled by default, but you can turn them on using the code
 shown below.
 
-``` pre
+``` 
 // Whether to serve PSAs if there are no ads.
 banner.shouldServePublicServiceAnnouncements = true;
     

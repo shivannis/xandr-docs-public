@@ -33,7 +33,7 @@ use this feature. 
 |---|---|---|---|
 | `extInvCode` | String | readwrite | Indicates predefined value passed on the query string that can be used in reporting. |
 
-``` pre
+``` 
 /**
  Set the extInvCode, Specifies predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged.
 */
@@ -42,7 +42,7 @@ use this feature. 
 
  **Example**
 
-``` pre
+``` 
 //Banner
 ANBannerAdView *  banner = [[ANBannerAdView alloc] initWithFrame: CGRectMake(0, 0, 320, 50)];
 .............
@@ -75,7 +75,7 @@ of `ANBannerAdView`, `InterstitialAdView`, `ANNativeAdRequest` and `ANInstr
 |---|---|---|---|
 | `trafficSourceCode` | String | readwrite | Indicates predefined source code values for third party traffic passed on the query string. |
 
-``` pre
+``` 
 /**
 Set the trafficSourceCode,  Specifies the third-party source of this impression.
 */
@@ -84,7 +84,7 @@ Set the trafficSourceCode,  Specifies the third-party source of this impression.
 
 **Example**
 
-``` pre
+``` 
 //Banner
 ANBannerAdView *  banner = [[ANBannerAdView alloc] initWithFrame: CGRectMake(0, 0, 320, 50)];
 .............

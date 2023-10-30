@@ -7,7 +7,7 @@ ms.custom : android-sdk
 
 # Support for external enventory code and traffic source code on Android
 
-## Overview - External Inventory Code
+## Overview - External inventory code
 
 An external inventory code provides publishers the ability to break out
 data on their inventory more granularly than the placement level. The
@@ -18,7 +18,7 @@ For more information, see [External Inventory Code Service](../digital-platform
 short, this property allows you to pass the predefined external
 inventory codes on ad calls and then report on them.
 
-**Scope of extInvCode**
+## Scope of extInvCode
 
 You need to set the External Inventory Code using
 the `extInvCode` property
@@ -27,13 +27,13 @@ However, the scope of use of this property depends on your reporting
 requirement. You can omit the call to this property if you don't want to
 use this feature.
 
-## Property
+**Property**
 
 | Property | Type | Description |
 |---|---|---|
 | `extInvCode` | String | Sets the external inventory code and indicates predefined value passed on the query string that can be used in reporting. |
 
-``` pre
+``` 
 /**
  * Passes the external inventory code to the Ad Request
  * @param extInvCode passed as String, specifies predefined value passed on the query string that can be used in reporting.
@@ -48,9 +48,9 @@ public void setExtInvCode(String extInvCode)
 public String getExtInvCode()
 ```
 
-## Example
+**Example**
 
-``` pre
+``` 
 //Banner
 bannerAdView.setExtInvCode("Xandr-extInvCode");
 bannerAdView.getExtInvCode();
@@ -74,13 +74,13 @@ You need to set the Traffic Source Code using
 the `trafficSourceCode` property
 of `ANBannerAdView`, `InterstitialAdView`, `ANNativeAdRequest` and `ANInstreamVideoAd`.  
 
-## Property
+**Property**
 
 | Property | Type | Description |
 |---|---|---|
 | `trafficSourceCode` | String | Indicates predefined source code values for third party traffic passed on the query string. |
 
-``` pre
+``` 
 /**
  * Passes the traffic source code to the Ad Request
  * @param trafficSourceCode passed as String, specifies the third-party source of this impression.
@@ -98,9 +98,9 @@ public String getTrafficSourceCode() {
 }
 ```
 
-## Example
+**Example**
 
-``` pre
+``` 
 //Banner
 bannerAdView.setTrafficSourceCode("Xandr-trafficSourceCode");
 bannerAdView.getTrafficSourceCode();

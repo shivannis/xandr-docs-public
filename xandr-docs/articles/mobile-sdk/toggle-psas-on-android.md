@@ -15,7 +15,7 @@ shown below.
 
 Turn on PSAs with the following code:
 
-``` pre
+``` 
 // Whether the ad view should show PSAs if there are no ads to
 // show.
 adView.setShouldServePSAs(true);

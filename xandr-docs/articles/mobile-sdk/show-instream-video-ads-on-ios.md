@@ -1,6 +1,7 @@
 ---
 title : Show Instream Video Ads on iOS
-description : This page describes how to use the SDK to fetch and display instream video ads.
+description : This page describes how to use the SDK to fetch and display instream video ads in iOS.
+ ms.custom: ios-sdk
 
 ---
 
@@ -15,7 +16,7 @@ video ads.
 As of
 the [version 3.0 release](https://github.com/appnexus/mobile-sdk-ios/releases/tag/3.0), the SDK has instream video support. For instructions on how to integrate the SDK, see [Integrate the SDK](ios-sdk-integration-instructions.md).
 
-## Step 2. Initialize the Video Ad Object
+## Step 2. Initialize the video Ad Object
 
 A video ad can be fetched and displayed with as few as three
 methods `initWithPlacementId:`, `loadAdWithDelegate:` and `playAdWithContainer:withDelegate:`.
@@ -24,7 +25,7 @@ feedback for the video ad lifecycle.
 
 First, initialize `ANInstreamVideoAd` with the placement ID.
 
-``` pre
+``` 
 ANInstreamVideoAd  *videoAd  = [[ANInstreamVideoAd alloc] initWithPlacementId:@"MY-PLACEMENT-ID"];
 ```
 
@@ -46,7 +47,7 @@ Video ad state includes the placement ID, whether the video ad was
 clicked or skipped, and error feedback in the case of failure. (For
 complete details, see *`ANInstreamVideoAd.h`* .)
 
-``` pre
+``` 
 @interface  ViewController()  <ANInstreamVideoAdLoadDelegate, ANInstreamVideoAdPlayDelegate>
     //...
 @end
@@ -75,7 +76,7 @@ that further define video ad playback state and lifecycle for both the
 video ad and the landing page. (See *`ANInstreamVideoAd.h`* for complete
 details.)
 
-``` pre
+``` 
 @protocol  ANInstreamVideoAdPlayDelegate <NSObject>
     @required
     - (void) adDidComplete:  (id<ANAdProtocol>)ad
@@ -94,7 +95,7 @@ details.)
 
 To pause or resume playing the video ad use the following method calls: 
 
-``` pre
+``` 
 (void) pauseAd;
  
  (void) resumeAd; 
@@ -116,7 +117,7 @@ The following properties are exposed by `ANInstreamVideoAd` to manage
 the target browser and whether the landing page loads before or after
 the landing page is displayed.
 
-``` pre
+``` 
 videoAd.opensInNativeBrowser = NO;           // DEFAULT is NO.
 videoAd.landingPageLoadsInBackground = YES;  // DEFAULT is YES.
 ```
@@ -135,7 +136,7 @@ for each video ad object.
 Once the video is loaded, you may retrieve various attributes of the
 creative:
 
-``` pre
+``` 
 -(NSUInteger) getAdDuration; //Provide the duration of the loaded video
 -(NSString *) getCreativeURL; //Provide the creative that will be played
 -(NSString *) getVastURL; //Provide the vastURL that is loaded
@@ -147,7 +148,7 @@ creative:
 
 You can determine how far the adPlay has progressed.
 
-``` pre
+``` 
 -(NSUInteger) getAdPlayElapsedTime;
 ```
 
@@ -166,5 +167,5 @@ user, you must provide appropriate interface options to the user.
 
 > [!NOTE]
 > Video Playback Controls
-> 
+>
 > In iOS, it is idiomatic to use the transport controls provided by `AVPlayerViewController` with property `showsPlaybackControls`. This method is incompatible with Xandr's Mobile SDK because, in this case, the full screen option creates a modal view which displays over all current views, obscuring the video ad container which displays over the content container. Full screen functionality for the video ad must be handled some means other than creating a modal view.

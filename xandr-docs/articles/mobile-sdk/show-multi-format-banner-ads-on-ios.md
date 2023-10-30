@@ -1,8 +1,7 @@
 ---
 title : Show Multi-Format Banner Ads on iOS
-description : The AppNexus mobile SDK supports serving multiple
-creative formats through a single banner entry point. 
- ms.custom: ios-sdk
+description : The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. 
+ms.custom: ios-sdk
 ---
 
 
@@ -29,7 +28,7 @@ Before you begin, you must [integrate the iOS SDK](ios-sdk-integration.md) with 
 
 Next, enable Video Ads in your App for ANBannerAdView.
 
-``` pre
+``` 
 banner.shouldAllowVideoDemand = true;
 ```
 
@@ -54,7 +53,7 @@ primary AdSize of **ANBannerAdView** as the player size.
 
 **Set video player size for each ANBannerAdView instance:**
 
-``` pre
+``` 
 banner!.landscapeBannerVideoPlayerSize = CGSize(width: 300, height: 250)
 banner!.portraitBannerVideoPlayerSize = CGSize(width: 300, height: 400)
 banner!.squareBannerVideoPlayerSize = CGSize(width: 200, height: 200)
@@ -67,7 +66,7 @@ Publishers can query the size of the video ad using the below API.
 > [!NOTE]
 >  The values will only be populated after the adDidReceiveAd callback is triggered.
 
-``` pre
+``` 
 banner?.getVideoWidth()
 banner?.getVideoHeight()
 ```

@@ -25,7 +25,7 @@ Use the following methods to override country and ZIP codes.
 Setter method which assigns a country code . It will pass the country
 code string as the argument in the method.
 
-``` pre
+``` 
 /**
  * Overrides the SDKs automatic location retrieval.
  * The countryCode will be passed to request parameters only if it isn't empty
@@ -42,7 +42,7 @@ code string as the argument in the method.
 Setter method which assigns a zip code . It will pass the zip code
 string as the argument in the method.
 
-``` pre
+``` 
 /**
  * Overrides the SDKs automatic location retrieval.
  * The zipCode will be passed to request parameters only if it isn't empty
@@ -59,7 +59,7 @@ string as the argument in the method.
 Getter method that returns the country code value that is set using
 **setGeoOverrideCountryCode**.
 
-``` pre
+``` 
 /**
  * Returns the countryCode value that is set using {setGeoOverrideCountryCode}
  * */
@@ -73,7 +73,7 @@ Getter method that returns the country code value that is set using
 Getter method that returns the zip code value that is set
 using **setGeoOverrideZipCode**.
 
-``` pre
+``` 
 /**
  * Returns the zipCode value that is set using {setGeoOverrideZipCode}
  * */
@@ -88,7 +88,7 @@ The methods can be accessed as follows:
 
 **Java**
 
-``` pre
+``` 
 //Setter
 SDKSettings.setGeoOverrideCountryCode("US");
 SDKSettings.setGeoOverrideZipCode("10010");

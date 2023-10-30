@@ -1,6 +1,6 @@
 ---
 title : Show Instream Video Ads on Android
-description : This page describes how to use the SDK to fetch and display instream video ads.
+description : This page describes how to use the SDK to fetch and display instream video ads in Android.
 ms.custom : android-sdk
 ---
 
@@ -18,7 +18,7 @@ video ads.
 If you use Maven, use the following Gradle config to install the version
 of the SDK with instream video support:
 
-``` pre
+```
 // Android: Gradle config to install the SDK and the Video SDK
 repositories {
      mavenCentral()
@@ -45,7 +45,7 @@ the `VideoAd.isReady()` method to check whether the ad is available.
 
 After that, call `VideoAd.loadAd()` to start caching the ad.
 
-``` pre
+``` 
 // Create a VideoAd instance
 VideoAd videoAd = new VideoAd( this , "9924002" );
 // Set the (optional) VideoAdLoadListener.
@@ -72,7 +72,7 @@ Before showing the video ad, you'll need to set up the
 mandatory `VideoPlaybackListener`. The `onAdCompleted()` notification is
 required to show your content video after the ad finishes playing.
 
-``` pre
+``` 
 // Set the (mandatory) PlayBack Listener.
 videoAd.setVideoPlaybackListener( new VideoAdPlaybackListener() {
    
@@ -111,7 +111,7 @@ Log.d(TAG,  "onAdClicked" );
 Pass on the Activity Lifecycle callback events to VideoAd as shown
 below:
 
-``` pre
+``` 
 // This is important because it's used to resume the ad after an interruption by user activity.
 @Override
 public void onResume() {
@@ -137,7 +137,7 @@ You are now all set to show the Video Ad by calling `playAd()` as shown
 below. Remember to pause your content video player before
 calling `VideoAd.playAd()`:
 
-``` pre
+```
 if (videoAd.isReady()) {
      // Pause your app's video player.
      videoPlayer.pause();
@@ -152,7 +152,7 @@ if (videoAd.isReady()) {
 
 To pause or resume playing the video ad use the following method calls.
 
-``` pre
+``` 
  public void resumeAd();
  public void pauseAd();
 ```
@@ -161,7 +161,7 @@ To pause or resume playing the video ad use the following method calls.
 
 Once the video is loaded, you may retrieve various creative attributes:
 
-``` pre
+``` 
 public String getVastURL()  //Provide the VAST content URL
 public int getVideoAdDuration()  //Provide the duration of the video
 public String getVastXML()  //Provide the VAST content as an XML string
@@ -174,7 +174,7 @@ public VideoOrientation getVideoOrientation()  //Provide the Orientation of the 
 You can determine how far the adPlay has progressed by retrieving the
 amount of time that has elapsed since the ad began playing:
 
-``` pre
+``` 
 public void getAdPlayElapsedTime(ResultCallback<String> resultCallback)
 ```
 
@@ -187,7 +187,7 @@ ad.
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the VideoAd that is expected to be destroyed.
 
-``` pre
+``` 
  package com.appnexus.example.simplevideo;
   
  import android.app.Activity;
@@ -315,9 +315,3 @@ ad.
 }
   
 ```
-
-
-
-
-
-

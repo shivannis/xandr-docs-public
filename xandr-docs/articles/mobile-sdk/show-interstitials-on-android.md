@@ -1,7 +1,6 @@
 ---
 title : Show Interstitials on Android
-description : This page has instructions and code samples for showing interstitial ads
-on Android.
+description : This page has instructions and code samples for showing interstitial ads on Android.
 ms.custom : android-sdk
 ---
 
@@ -21,7 +20,7 @@ on Android.
 >
 > Likewise, creatives that serve into interstitial views in the SDK should usually be created with the Banner media type (keeping in mind the exceptions listed above).
 
-## Interstitial Overview
+## Interstitial overview
 
 Showing interstitial ads is a little more work. In addition to setting
 up an `InterstitialAdView` with your placement ID, you must implement
@@ -56,7 +55,7 @@ For more information, see the code sample below.
 > [!NOTE]
 > Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
 
-``` pre
+``` 
 // Android: Java code that uses inventory code and member ID instead of placement ID (optional)
 adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
 ```
@@ -67,7 +66,7 @@ adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
 > - All SDK methods must be called on the main thread.
 > - `activityOnDestroy()` must be called for the Interstitial that is expected to be destroyed.
 
-``` pre
+``` 
 // Android: Java code to show an interstitial ad
 package com.example.simpleinterstitial;
 import android.os.Bundle;
@@ -151,7 +150,7 @@ the primary size. The sizes set using `setAllowedSizes` will be passed
 in as additional size on the interstitial ad view and will replace the
 defaults of 300x250, 320x480, 900x500, and 1024x1024.
 
-``` pre
+``` 
 // Android: Java code to show interstitial ads in sizes other than the defaults (optional)
 InterstitialAdView iav = new InterstitialAdView(this);
 iav.setPlacementID("1326299");
@@ -171,13 +170,7 @@ Instead, call `showWithAutoDismissDelay(delayinseconds)`,
 where `delayinseconds` is the number of seconds the ad will be displayed
 before it closes.
 
-``` pre
+``` 
 // This will show an interstitial ad, wait for 10 seconds, then auto close it.
 interstitialAdView.showWithAutoDismissDelay(10);
 ```
-
-
-
-
-
-
