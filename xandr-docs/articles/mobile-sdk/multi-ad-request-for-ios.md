@@ -154,7 +154,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 - **`load`**  
 
-  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active a a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
+  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
 
   **load**
 
