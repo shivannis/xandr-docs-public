@@ -127,8 +127,9 @@ Context context;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         context = this;
+```
 
-        List<ANUserId> userIds = new ArrayList<>();
+        ```List<ANUserId> userIds = new ArrayList<>();
         ANUserId tradeDeskUserID = new ANUserId(ANUserId.Source.THE_TRADE_DESK, "userid-ttd-foobar");
         userIds.add(tradeDeskUserID);
         ANUserId criteoUserId = new ANUserId(ANUserId.Source.CRITEO, "userid-Criteo-foobar");
@@ -156,7 +157,7 @@ Context context;
  
         //If auto-refresh is enabled
         bav.loadAd();
-    }
+    }```
 
 @Override
     protected void onDestroy() {
