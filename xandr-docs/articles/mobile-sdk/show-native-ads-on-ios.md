@@ -1,7 +1,7 @@
 ---
 title : Show Native Ads on iOS
 description : Native ads give you the ability to create ads that are customized to match the look and feel of the rest of your application. 
- ms.custom: ios-sdk
+ms.custom: ios-sdk
 ---
 
 
