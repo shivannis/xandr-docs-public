@@ -1,50 +1,30 @@
 ---
-Title : Receive Ad View Status Events on iOS
-Description : This page has instructions on how to receive ad view status events from
-our SDK. You can use these events to determine from your app when an ad
-ms.custom : android-ios
+title: Receive Ad View Status Events on iOS
+description: Learn how to receive ad view status events from the SDK using the ANAdDelegate protocol.
+ms.custom: ios-sdk
 ---
 
+# Receive ad view status events on iOS
 
-# Receive Ad View Status Events on iOS
+This page has instructions on how to receive ad view status events from our SDK. You can use these events to determine from your app when an ad has been clicked, whether it's in an expanded state, and more.
 
+In order to receive status events during the life cycle of the ad view, you must implement the `ANAdDelegate` protocol. Its methods are:
 
-
-This page has instructions on how to receive ad view status events from
-our SDK. You can use these events to determine from your app when an ad
-has been clicked, whether it's in an expanded state, and more.
-
-In order to receive status events during the life cycle of the ad view,
-you must implement the `ANAdDelegate` protocol. Its methods are:
-
-- `(void)adDidReceiveAd:(id)ad;` Sent when Banner or Video ad content
-  has been successfully retrieved from the server.
-- `(void)ad:(id)loadInstance didReceiveNativeAd:(id)nativeAdResponse;` Sent
-  when Native ad content has been successfully retrieved from the
-  server.
-- `(void)ad:(id)ad requestFailedWithError:(NSError *)error`: Sent when
-  the ad request to the server has failed.
+- `(void)adDidReceiveAd:(id)ad;`: Sent when Banner or Video ad content has been successfully retrieved from the server.
+- `(void)ad:(id)loadInstance didReceiveNativeAd:(id)nativeAdResponse;`: Sent when Native ad content has been successfully retrieved from the server.
+- `(void)ad:(id)ad requestFailedWithError:(NSError *)error`: Sent when the ad request to the server has failed.
 - `(void)adWasClicked:(id)ad`: Sent when the ad is clicked by the user.
-- `(void)adWasClicked:(id)ad withURL:(NSString *)urlString`: Sent when
-  the ad is clicked by the user and allows you to determine how the
-  value of the `click_url` string in the bid response will be handled.
+- `(void)adWasClicked:(id)ad withURL:(NSString *)urlString`: Sent when the ad is clicked by the user and allows you to determine how the value of the `click_url` string in the bid response will be handled.
 - `(void)adWillClose:(id)ad`: Sent when the ad view is about to close.
 - `(void)adDidClose:(id)ad`: Sent when the ad view has finished closing.
-- `(void)adWillPresent:(id)ad`: Sent when the ad is clicked, and the SDK
-  is about to open inside the in-SDK browser (a WebView). If you would
-  prefer that ad clicks open the native browser instead,
-  set `opensInNativeBrowser` to true.
-- `(void)adDidPresent:(id)ad`: Sent when the ad has finished being
-  viewed using the in-SDK browser.
-- `(void)adWillLeaveApplication:(id)ad`: Sent when the ad is about to
-  leave the app; this can happen if you have `opensInNativeBrowser` set
-  to true, for example.
-- `(void)adDidLogImpression:(nonnull id)ad`: Sent when an ad impression
-  is observed during a banner or interstitial ad event.
+- `(void)adWillPresent:(id)ad`: Sent when the ad is clicked, and the SDK is about to open inside the in-SDK browser (a WebView). If you would prefer that ad clicks open the native browser instead, set `opensInNativeBrowser` to true.
+- `(void)adDidPresent:(id)ad`: Sent when the ad has finished being viewed using the in-SDK browser.
+- `(void)adWillLeaveApplication:(id)ad`: Sent when the ad is about to leave the app; this can happen if you have `opensInNativeBrowser` set to true, for example.
+- `(void)adDidLogImpression:(nonnull id)ad`: Sent when an ad impression is observed during a banner or interstitial ad event.
 
 The example below implements this protocol:
 
-``` pre
+```
 #import "FunViewController.h"
 #import "ANInterstitialAd.h"
 @interface FunViewController () <ANInterstitialAdDelegate>
@@ -61,7 +41,7 @@ The example below implements this protocol:
     // Load an ad!
     [self.inter loadAd];
 }
-- (void)adDidReceiveAd:(id>ad {
+- (void)adDidReceiveAd:(id)ad {
     [self.inter displayAdFromViewController:self];
 }    
 - (void)adDidLogImpression:(id)ad {
@@ -90,7 +70,3 @@ The example below implements this protocol:
 }
 @end
 ```
-
-
-
-
