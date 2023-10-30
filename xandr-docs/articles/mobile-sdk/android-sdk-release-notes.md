@@ -747,11 +747,6 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3079 Milennial Media SDK causing app crashes in Android
 - MS-2862 Support newly added standard fields on the native creative object
 
-## 4.2
-
-- MS-3079 Milennial Media SDK causing app crashes in Android
-- MS-2862 Support newly added standard fields on the native creative object
-
 ## 4.1
 
 - MS-3070 Upgraded AdMob and fixed Memory leak issue with ad expiry handler in admob mediation
