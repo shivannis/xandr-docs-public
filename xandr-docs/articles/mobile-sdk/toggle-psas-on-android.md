@@ -1,14 +1,11 @@
 ---
-Title : Toggle PSAs on Android
-Description : PSAs (Public Service Announcements) are ads that can be served as a last
-resort, if there are no other ads to show.
+title : Toggle PSAs on Android
+description : PSAs (Public Service Announcements) are ads that can be served as a last resort, if there are no other ads to show on Android.
 ms.custom : android-sdk
 ---
 
 
 # Toggle PSAs on Android
-
-
 
 PSAs (Public Service Announcements) are ads that can be served as a last
 resort, if there are no other ads to show.
@@ -18,13 +15,9 @@ shown below.
 
 Turn on PSAs with the following code:
 
-``` pre
+``` 
 // Whether the ad view should show PSAs if there are no ads to
 // show.
 adView.setShouldServePSAs(true);
     
 ```
-
-
-
-
