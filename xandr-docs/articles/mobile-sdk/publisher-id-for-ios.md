@@ -8,7 +8,7 @@ ms.custom: ios-sdk
 
 This document describes the `publisher_id` parameter of the Universal Tag service.  
 
-## What is Publisher ID
+## What is Publisher ID?
 
 The Publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the Member ID would be used to determine which default creative to return with the request. With the addition of the Publisher ID parameter publishers now have two options for resolving default placements when the request fails, the publisher and the member default placement.
 
