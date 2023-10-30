@@ -112,19 +112,16 @@ You can set **User ID** by
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
- 
 import com.appnexus.opensdk.ANExtendedUserIdSource;
 import com.appnexus.opensdk.BannerAdView;
 import com.appnexus.opensdk.SDKSettings;
- 
+
 import java.util.HashMap;
 import java.util.Map;
- 
 public class MyActivity extends Activity {
- 
 Context context;
     BannerAdView bav;
- 
+
 ```
 @Override
     protected void onCreate(Bundle savedInstanceState) {
