@@ -203,7 +203,7 @@ PixieParams itemViewParams = new PixieParams("5.99","USD","product_5,product_6",
 Pixie.fireEvent(Event.ITEM_VIEW,itemViewParams,context);
 ```
 
-## Add To cart
+## Add to cart
 
 ``` 
 Event.ADD_TO_CART
