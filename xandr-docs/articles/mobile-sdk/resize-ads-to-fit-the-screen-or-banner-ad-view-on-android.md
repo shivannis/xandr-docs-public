@@ -16,14 +16,14 @@ This page has instructions for:
 
 ## Resize ad to fit the banner ad view
 
-**Methods**
+### Methods
 
 | Method | Description |
 |:---|:---|
 | `setResizeAdToFitContainer(boolean)` | Whether the creative should resize to fill the banner ad view in which it is displayed. This feature will cause ad creatives that are smaller than the view size to 'stretch' to the current size. This may cause image quality degradation for the benefit of having an ad occupy the entire ad view. Defaults to `false`. |
 | `getResizeAdToFitContainer()` | Check whether the creative will resize to fill the banner ad view in which it is displayed. |
 
-**Example**
+### Example
 
 ```
 BannerAdView bav = new BannerAdView(this);
@@ -35,14 +35,14 @@ bav.getResizeAdToFitContainer();  // true
 
 ## Resize ad to fit the screen width
 
-**Methods**
+### Methods
 
 | Method | Description |
 |:---|:---|
 | `setExpandsToFitScreenWidth(boolean)` | Causes the banner ad view to resize to fit the width of the device's screen. This feature will cause ad creatives that are smaller than the screen width to 'stretch' to fit. This may cause image quality degradation for the benefit of having an ad occupy the entire screen. Defaults to `false`. |
 | `getExpandsToFitScreenWidth()` | Check whether the banner ad view will resize to fit the width of the device's screen. |
 
-**Example**
+### Example
 
 ```
 BannerAdView bav = new BannerAdView(this);
@@ -52,6 +52,6 @@ bav.setExpandsToFitScreenWidth(true);
 bav.getExpandsToFitScreenWidth(); // true
 ```
 
-**Put them together**
+### Put them together
 
 If you call both `setExpandsToFitScreenWidth(true)` and `setResizeAdToFitContainer(true)`, the SDK will try to expand the banner ad view to the screen width first, and then adjust the ad to fit the container size.

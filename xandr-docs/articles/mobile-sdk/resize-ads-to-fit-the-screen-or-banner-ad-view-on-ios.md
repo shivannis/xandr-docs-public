@@ -10,13 +10,13 @@ Depending on where advertising fits into your application, you might want to exp
 
 ## Resize ad to fit the banner ad view
 
-**Properties**
+### Properties
 
 | Property | Description |
 |:---|:---|
 | `shouldResizeAdToFitContainer` | Determines whether the creative should resize to fill the banner ad view in which it is displayed. This feature will cause ad creatives that are smaller than the view size to 'stretch' to the current size. This may cause image quality degradation for the benefit of having an ad occupy the entire ad view. Defaults to `NO`. |
 
-**Example**
+### Example
 
 ```
 // Create the banner ad view and add it as a subview
@@ -38,13 +38,13 @@ By adding the custom sizes to `sizesThatShouldConstrainToSuperview` array you 
 > [!NOTE]
 > `sizesThatShouldConstrainToSuperview` is a global setting and will be applied to all of the Banner Ad Views in your app.
 
-**Properties**
+### Properties
 
 | Property | Description |
 |:---|:---|
-| sizesThatShouldConstrainToSuperview | Special ad sizes for which the ANBannerAdView should be constrained to its super view. |
+| `sizesThatShouldConstrainToSuperview` | Special ad sizes for which the ANBannerAdView should be constrained to its super view. |
 
-**Example**
+### Example
 
 ```
 NSArray *customSizes = @[[NSValue valueWithCGSize:CGSizeMake(3, 3)],[NSValue valueWithCGSize:CGSizeMake(4, 4)]];// Special ad sizes for which the ANBannerAdView should be constrained to its super view.

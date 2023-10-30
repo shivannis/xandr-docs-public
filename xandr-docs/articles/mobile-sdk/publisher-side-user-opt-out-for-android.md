@@ -12,7 +12,7 @@ The publisher side user opt-out feature provides a new API call in Mobile SDK w
 
 ## Methods
 
-**setDoNotTrack**
+### setDoNotTrack
 
 Setter method which enables the publisher side user opt-out feature.
 
@@ -27,7 +27,7 @@ public static void setDoNotTrack(boolean dnt) {
 }
 ```
 
-**getDoNotTrack**
+### getDoNotTrack
 
 Getter method which indicates whether the tracking is enabled or not.
 
