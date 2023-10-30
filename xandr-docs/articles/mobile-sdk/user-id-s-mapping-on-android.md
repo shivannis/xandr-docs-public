@@ -125,7 +125,8 @@ public class MyActivity extends Activity {
 Context context;
     BannerAdView bav;
  
-    @Override
+```
+@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
