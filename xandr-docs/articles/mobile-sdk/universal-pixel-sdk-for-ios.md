@@ -68,12 +68,12 @@ There are two ways to install the SDK:
 
   Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that explains how to add "PixieSDK.xcframework" to the Frameworks folder.":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that explains how to add PixieSDK.xcframework to the Frameworks folder.":::
   
   Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
   Click **Finish**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose options like "Copy items if needed" and "Create groups" are checked while adding the files":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose options like Copy items if needed and Create groups are checked while adding the files":::
   
   Once this step is completed, the result appears as below:
 
@@ -86,7 +86,7 @@ There are two ways to install the SDK:
   1. Make sure that your target is selected and **General** tab is open.
   1. Select **Embed & Sign** for your newly added XCFramework.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to select "Embed & Sign" to the newly added Embed & Sign.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to select Embed & Sign to the newly added Embed & Sign.":::
 
 ## Implementation
 

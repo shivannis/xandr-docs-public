@@ -48,6 +48,7 @@ An AppNexus disableIDFVUsage  is a boolean value which exclude the IDFV field in
 **User ID**
 
 > [!NOTE]
+>
 > **Deprecation Notice**:
 >
 >The property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class are now deprecated and will be removed in SDK v8.0. You can use the equivalent property \`**ANSDKSettings.userIdArray**\`  and \`**ANUserId**\` class described below instead as a replacement.

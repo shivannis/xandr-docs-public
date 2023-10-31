@@ -17,8 +17,9 @@ Xandr offers you the option of sending **Publisher First party ID** and **Use
 
 ### Publisher first party ID
 
-> > [!NOTE]:
-> Deprecation Notice:
+> [!NOTE]:
+>
+>**Deprecation Notice**:
 >
 > The **setExternalUid** and **getExternalUid** methods available in **NativeAdRequest**, **VideoAd, BannerAdView**, and **InterstitialAdView** classes are deprecated. You can use **setPublisherUserId** and **getPublisherUserId** described below in **SDKSettings** class instead. The deprecated methods will be removed in SDK v8.0.
 
@@ -41,7 +42,7 @@ SDKSettings.getPublisherUserId();
 **User ID**
 
 > [!NOTE]
-> **Deprecation Notice:**
+> **Deprecation Notice**:
 >
 >The **setExternalUserIds** and **getExternalUserIds** methods available in **SDKSettings** class and **ANExternalUserIdSource** class are now deprecated and will be removed in SDK v8.0. You can use **setUserIds** and **getUserIds** methods in **SDKSettings** class and **ANUserId** class described below instead as a replacement.
 
