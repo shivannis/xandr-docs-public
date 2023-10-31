@@ -17,11 +17,10 @@ Xandr offers you the option of sending **Publisher First party ID** and **Use
 
 ### Publisher first party ID
 
-> [!NOTE]:
->
->**Deprecation Notice**:
->
-> The **setExternalUid** and **getExternalUid** methods available in **NativeAdRequest**, **VideoAd, BannerAdView**, and **InterstitialAdView** classes are deprecated. You can use **setPublisherUserId** and **getPublisherUserId** described below in **SDKSettings** class instead. The deprecated methods will be removed in SDK v8.0.
+> [!NOTE]
+> >**Deprecation Notice**:
+> >
+> > The **setExternalUid** and **getExternalUid** methods available in **NativeAdRequest**, **VideoAd, BannerAdView**, and **InterstitialAdView** classes are deprecated. You can use **setPublisherUserId** and **getPublisherUserId** described below in **SDKSettings** class instead. The deprecated methods will be removed in SDK v8.0.
 
 You can set Publisher(First Party) User ID using the `setPublisherUserId` method in **SDKSettings** class in Mobile SDK API. The **getPublisherUserId** returns the value set which is the publisher user ID for the current application user.
 
