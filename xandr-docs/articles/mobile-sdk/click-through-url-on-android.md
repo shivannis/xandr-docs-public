@@ -1,28 +1,18 @@
 ---
-Title : Click-Through URL on Android
-Description : The term click-through refers to the capability of our Mobile SDK to
-handle what happens when the user clicks on an ad. This document
-ms.custom : android-sdk
-
+title: Click-Through URL on Android
+description: In this article, learn what click-through refers to and the methods used to implement it on Android with examples.
+ms.custom: android-sdk
 ---
 
+# Click-through URL on Android
 
-# Click-Through URL on Android
-
-
-
-The term click-through refers to the capability of our Mobile SDK to
-handle what happens when the user clicks on an ad. This document
-describes how click-through works and provides examples on how to
-implement this feature.
-
-
+The term click-through refers to the capability of our Mobile SDK to handle what happens when the user clicks on an ad. This document describes how click-through works and provides examples on how to implement this feature.
 
 ## Overview
 
-Xandr's Mobile SDK allows you to determine how
-the value of the `click_url` string in the bid response will be handled
-when the user clicks on an ad. There are three possibilities:
+Xandr's Mobile SDK allows you to determine how the value of the `click_url` string in the bid response will be handled when the user clicks on an ad. 
+
+There are three possibilities:
 
 - Open the click-through URL in the SDK browser.
 - Open the click-through URL in the external device browser.
@@ -32,46 +22,31 @@ Cases that open a browser will notify the caller via `onAdClicked`.
 
 In the case of a native ad request:
 
-- Two URLs are returned: `click_url` and `click_url_fallback`.   
-  It is assumed that the caller will handle click-through URL(s)
-  appropriately by displaying their contents to the user. 
-  The `click_url_fallback`, if defined, is used only
-  if `click_url` cannot be resolved, for whatever reason, by the browser
-  display system.
-- The listener/delegate callback method
-  is: `onAdWasClicked(clickUrl, fallbackURL).`
+- Two URLs are returned: `click_url` and `click_url_fallback`.
+  
+  It is assumed that the caller will handle click-through URL(s) appropriately by displaying their contents to the user. The `click_url_fallback`, if defined, is used only if `click_url` cannot be resolved, for whatever reason, by the browser display system.
 
+- The listener/delegate callback method is: `onAdWasClicked(clickUrl, fallbackURL).`
 
+## Mobile SDK structure
 
-
-
-## Mobile SDK Structure
-
-- For Banner, Interstitial and Video: `AdListener` defines the
-  method `onAdClicked(adView, clickUrl)`.
-- For Native, `AdListener` defines the
-  method `onAdWasClicked(clickUrl, fallbackURL)`.
-
-
-
-
+- For Banner, Interstitial and Video: `AdListener` defines the method `onAdClicked(adView, clickUrl)`.
+- For Native, `AdListener` defines the method `onAdWasClicked(clickUrl, fallbackURL)`.
 
 ## Examples
 
-If you do not want to fetch ClickURL, you still need to implement a
-method `onAdClicked` that returns `clickURL`, but it can be left empty. 
+If you do not want to fetch ClickURL, you still need to implement a method `onAdClicked` that returns `clickURL`, but it can be left empty.
 
-If you do want to fetch ClickURL, you can use the following code example
-to get started:
+If you do want to fetch ClickURL, you can use the following code example to get started:
 
-``` pre
+```
 // Enable RETURN_URL API
 adObject.setClickThroughAction(ANClickThroughAction.RETURN_URL);
 ```
 
 Then add `onAdClicked` to get `clickURL`.
 
-``` pre
+```
 // Android: Java to handle ClickURL in ad response
 package com.appnexus.opensdk;
  
@@ -151,9 +126,3 @@ public class PresentAdClickURL extends Activity {
        }
 } 
 ```
-
-
-
-
-
-
