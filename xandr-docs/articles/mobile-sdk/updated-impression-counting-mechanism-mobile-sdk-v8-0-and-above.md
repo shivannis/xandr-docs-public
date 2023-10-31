@@ -1,6 +1,6 @@
 ---
-title : Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
-description : This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
+title: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
+description: This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
 ms.custom : android-sdk
 ---
 
@@ -16,11 +16,13 @@ With SDK v8.0, there are two counting methods that can be applied for impression
 
 - **Viewable Impression:** The impression is counted when one or more pixels of the ad's creative is visible on a device’s screen.
 
-## Viewable Impression Tracking Mechanism
+## Viewable impression tracking mechanism
 
 The move to counting based on ad container visibility strengthens the definition of an impression equating to an ad seen by the user on their device. Viewable impression counting however, is not standard across the industry and may create discrepancies with third party impression metrics. Based on the transaction types below, Xandr takes a hybrid approach to reduce discrepancies with partners as the industry moves to viewable impression tracking mechanism, for mobile in app inventory.
 
-## Impression counting using mobile SDK v8.0, summarized as follows:
+## Impression counting using mobile SDK v8.0
+
+The table is summarized as follows:
 
 | Transaction Type | Impression Type | Counting Method |
 |--|--|--|

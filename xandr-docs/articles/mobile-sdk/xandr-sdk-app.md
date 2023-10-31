@@ -1,6 +1,6 @@
 ---
-title : Xandr SDK App
-description : This article provides instructions on using Xandr's SDK application and explores various features of the Xandr advertising platform.
+title: Xandr SDK App
+description: This article provides instructions on using Xandr's SDK application and explores various features of the Xandr advertising platform.
 ms.custom : android-sdk
 ---
 # Xandr SDK app

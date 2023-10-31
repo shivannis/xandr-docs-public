@@ -54,13 +54,13 @@ Xandr supports User ID(s) from the below external sources:
 - NetID
 - LiveRamp  
 - UID 2.0
-- Publisher Provided Id / PPID (publishers can register their own source via API and can pass the user id)
+- Publisher Provided Id / PPID (publishers can register their own source via API and can pass the user id).
 
 You can set **User ID** by
 
 - creating an array of **ANUserId** objects, and
 - assigning the array of objects to the **userId`Array`** property
-  of `ANSDKSettings` in MobileSDK API
+  of `ANSDKSettings` in MobileSDK API.
  
 | Property     | Type    | Attribute | Description                                                             |
 |-------------|---------|-----------|-------------------------------------------------------------------------|
