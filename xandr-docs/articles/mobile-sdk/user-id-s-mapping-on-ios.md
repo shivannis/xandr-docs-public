@@ -1,7 +1,7 @@
 ---
 title : User ID(s) Mapping on iOS
 description : The article provides instructions on mapping user IDs on iOS.
-ms.custom : android-ios
+ms.custom: ios-sdk
 ---
 
 # User ID(s) mapping on iOS
@@ -18,10 +18,13 @@ in ad requests. They are global settings and it is sufficient to set the User ID
 
 ### Publisher first party ID
 
-> [!NOTE]
-> **Deprecation Notice**: **`The` `externalUid`** property of **`ANBannerAdView`**, **`InterstitialAdView`**, **`ANNativeAdRequest`** and **`ANInstreamVideoAd`** class is now deprecated. You can use **`publisherUserId`** property described below in **`ANSDKSettings`** class instead. The deprecated methods will be removed in SDK v8.0.
+> > [!NOTE]
+>**Deprecation Notice**:
+>
+>**`The` `externalUid`** 
+>property of **`ANBannerAdView`**, **`InterstitialAdView`**, **`ANNativeAdRequest`** and **`ANInstreamVideoAd`** class is now deprecated. You can use **`publisherUserId`** property described below in **`ANSDKSettings`** class instead. The deprecated methods will be removed in SDK v8.0.
 
-You can set **Publisher First Party ID** using the `publisherUserId` property of  `ANSDKSettings` in **MobileSDK API**. </br>
+You can set **Publisher First Party ID** using the `publisherUserId` property of  `ANSDKSettings` in **Mobile SDK API**. </br>
 
 | Property        | Type     | Attribute | Description                                                                                |
 |-----------------|----------|-----------|--------------------------------------------------------------------------------------------|
@@ -29,7 +32,7 @@ You can set **Publisher First Party ID** using the `publisherUserId` property 
 
 **IDFV as publisher first party ID**
 
-Due to introduction of App Tracking Transparency (ATT) changes in iOS 14.5 and above, Xandr Mobile SDK offers the publishers to use **Identifier for Vendors (IDFV)** of the device in cases where there is no in-house **Publisher First Party ID** and **Identifier for Advertisers (IDFA)** is available. This feature facilitates the publishers to pass IDFV in the ad requests automatically whenever both of the Publisher First Party ID and IDFA is absent. This feature is enabled by default and if the publishers want to turn it off, they can use `disableIDFVUsage` property of  `ANSDKSettings` in MobileSDK API.
+Due to introduction of App Tracking Transparency (ATT) changes in iOS 14.5 and above, Xandr Mobile SDK offers the publishers to use **Identifier for Vendors (IDFV)** of the device in cases where there is no in-house **Publisher First Party ID** and **Identifier for Advertisers (IDFA)** is available. This feature facilitates the publishers to pass IDFV in the ad requests automatically whenever both of the Publisher First Party ID and IDFA is absent. This feature is enabled by default and if the publishers want to turn it off, they can use `disableIDFVUsage` property of  `ANSDKSettings` in Mobile SDK API.
 
 | Property | Type | Attribute | Description |
 |--|--|--|--|
@@ -45,7 +48,9 @@ An AppNexus disableIDFVUsage  is a boolean value which exclude the IDFV field in
 **User ID**
 
 > [!NOTE]
-> **Deprecation Notice**: The property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class are now deprecated and will be removed in SDK v8.0. You can use the equivalent property \`**ANSDKSettings.userIdArray**\`  and \`**ANUserId**\` class described below instead as a replacement.
+> **Deprecation Notice**:
+>
+>The property \`**ANSDKSettings.externalUserIdArray**\` and \`**ANExternalUserId**\` class are now deprecated and will be removed in SDK v8.0. You can use the equivalent property \`**ANSDKSettings.userIdArray**\`  and \`**ANUserId**\` class described below instead as a replacement.
 
 Xandr supports User ID(s) from the below external sources:
 
@@ -59,8 +64,8 @@ Xandr supports User ID(s) from the below external sources:
 You can set **User ID** by
 
 - creating an array of **ANUserId** objects, and
-- assigning the array of objects to the **userId`Array`** property
-  of `ANSDKSettings` in MobileSDK API.
+- assigning the array of objects to the **`userIdArray`** property
+  of `ANSDKSettings` in Mobile SDK API.
  
 | Property     | Type    | Attribute | Description                                                             |
 |-------------|---------|-----------|-------------------------------------------------------------------------|

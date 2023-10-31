@@ -1,7 +1,7 @@
 ---
 title: Xandr Mobile SDKs
 description: The article provides a description of Xandr's Mobile SDKs and how they help users monetize their apps.
-ms.custom: android-sdk
+ms.custom: android-sdk, ios-sdk
 ---
 
 # Xandr mobile SDKs
@@ -38,7 +38,7 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 
 | Platform | Ad Types                                                                                                            |
 |----------|---------------------------------------------------------------------------------------------------------------------|
-| Android  | - [Show Banners](show-banners-on-android.md) <br> - [Show Interstitials](show-interstitials-on-android.md) <br> - [Show Banner Video / OutStream Ads on Android](https://docs.xandr.com/bundle/mobile-sdk/page/show-banner-video-outstream-ads-on-android.md) <br> - [Show Native Ads](https://docs.xandr.com/bundle/mobile-sdk/page/show-native-ads-on-android.md) <br> - [Show Banner Native](show-banner-native-on-android.md) <br> - [Show Instream Video](show-instream-video-ads-on-android.md) |
+| Android  | - [Show Banners](show-banners-on-android.md) <br> - [Show Interstitials](show-interstitials-on-android.md) <br> - [Show Banner Video / OutStream Ads on Android](show-banner-video-outstream-ads-on-android.md) <br> - [Show Native Ads](show-native-ads-on-android.md) <br> - [Show Banner Native](show-banner-native-on-android.md) <br> - [Show Instream Video](show-instream-video-ads-on-android.md) |
 | iOS      | - [Show Banners](show-banners-on-ios.md)<br> - [Show Interstitials](show-interstitials-ads-on-ios.md)<br> - [Show Multi-Format Banner Ads](show-multi-format-banner-ads-on-ios.md)<br> - [Show Native Ads](show-native-ads-on-ios.md)<br> - [Show Banner Native](show-banner-native-on-ios.md)<br> - [Show Instream Video](show-instream-video-ads-on-ios.md) |
 
 ## Targeting
@@ -59,11 +59,11 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 
 | Platform | Configuration | Platform | Configuration |
 |--|--|--|--|
-| Android | - [Allow Multiple Ad Sizes to Serve into a Banner Ad View](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md)<br> - [Add a Transition Animation](add-a-transition-animation-on-android.md)<br> - [ANJAM User Guide](anjam-user-guide.md)<br> - [Configure SDK Logging](configure-sdk-logging-on-android.md)<br> - [Control Ad Unit Alignment](control-ad-unit-alignment-on-android.md)<br> - [Control Landing Page Loading Visibility](location-controls-on-android.md)<br> - [Control Location Accuracy](location-controls-on-android.md)<br> - [Customize Video Player Options](customize-video-player-options-on-android.md)<br> - [Dismiss Interstitials on User Click](dismiss-interstitials-on-user-click.md)<br> - [Show Banner Video / OutStream Ads on Android](show-banner-video-outstream-ads-on-android.md)<br> - [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-android.md)<br> - [Toggle PSAs](toggle-psas-on-android.md)<br> - [Receive Ad View Status Events](receive-ad-view-status-events-on-android.md)<br> - [Resize Ads to fit the Screen or Banner Ad View](resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md)<br> - [Resize the Banner Ad View to the Size of the Winning Creative](resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md)<br> - [Request Ads over HTTPS](request-ads-over-https-on-android.md) | iOS | - [Allow Multiple Ad Sizes to Serve into a Banner Ad View](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md)<br> - [Add a Transition Animation](add-a-transition-animation-on-ios.md)<br> - [ANJAM User Guide](anjam-user-guide.md)<br> - [Configure SDK Logging](configure-sdk-logging-on-ios.md)<br> - [Control Ad Unit Alignment](control-ad-unit-alignment-on-ios.md)<br> -  [Control Landing Page Loading Visibility](control-landing-page-load-visibility-on-ios.md)<br> - [Control Location Accuracy](location-controls-on-ios.md) [Customize Video Player Options](configure-video-player-options-on-ios.md)<br> - [Multi-Format Banner and Video Ad Support](show-multi-format-banner-ads-on-ios.md)<br> - [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-ios.md)<br> - [Toggle PSAs](toggle-psas-on-ios.md)<br> - [Receive Ad View Status Events](receive-ad-view-status-events-on-ios.md)<br> - [Resize Ads to fit the Screen or Banner Ad View](resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.md)<br> - [Resize the Banner Ad View to the Size of the Winning Creative](resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.md)<br> - [Request Ads over HTTPS](request-ads-over-https-on-ios.md) |
+| Android | - [Allow Multiple Ad Sizes to Serve into a Banner Ad View](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md)<br> - [Add a Transition Animation](add-a-transition-animation-on-android.md)<br> - [ANJAM User Guide](anjam-user-guide.md)<br> - [Configure SDK Logging](configure-sdk-logging-on-android.md)<br> - [Control Ad Unit Alignment](control-ad-unit-alignment-on-android.md)<br> - [Control Landing Page Loading Visibility](control-landing-page-load-visibility-on-android.md)<br> - [Control Location Accuracy](location-controls-on-android.md)<br> - [Customize Video Player Options](customize-video-player-options-on-android.md)<br> - [Dismiss Interstitials on User Click](dismiss-interstitials-on-user-click.md)<br> - [Show Banner Video / OutStream Ads on Android](show-banner-video-outstream-ads-on-android.md)<br> - [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-android.md)<br> - [Toggle PSAs](toggle-psas-on-android.md)<br> - [Receive Ad View Status Events](receive-ad-view-status-events-on-android.md)<br> - [Resize Ads to fit the Screen or Banner Ad View](resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md)<br> - [Resize the Banner Ad View to the Size of the Winning Creative](resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md)<br> - [Request Ads over HTTPS](request-ads-over-https-on-android.md) | iOS | - [Allow Multiple Ad Sizes to Serve into a Banner Ad View](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md)<br> - [Add a Transition Animation](add-a-transition-animation-on-ios.md)<br> - [ANJAM User Guide](anjam-user-guide.md)<br> - [Configure SDK Logging](configure-sdk-logging-on-ios.md)<br> - [Control Ad Unit Alignment](control-ad-unit-alignment-on-ios.md)<br> -  [Control Landing Page Loading Visibility](control-landing-page-load-visibility-on-ios.md)<br> - [Control Location Accuracy](location-controls-on-ios.md)<br> - [Customize Video Player Options](configure-video-player-options-on-ios.md)<br> - [Multi-Format Banner and Video Ad Support](show-multi-format-banner-ads-on-ios.md)<br> - [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-ios.md)<br> - [Toggle PSAs](toggle-psas-on-ios.md)<br> - [Receive Ad View Status Events](receive-ad-view-status-events-on-ios.md)<br> - [Resize Ads to fit the Screen or Banner Ad View](resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.md)<br> - [Resize the Banner Ad View to the Size of the Winning Creative](resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.md)<br> - [Request Ads over HTTPS](request-ads-over-https-on-ios.md) |
 
 ## Impression tracking
 
-- [Mobile SDK: Impression Counting Methods](impression-counting-methods.md)
+[Mobile SDK: Impression Counting Methods](impression-counting-methods.md)
 
 ## Apps
 [Xandr SDK App](xandr-sdk-app.md)
@@ -79,7 +79,7 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 ## Support
 
 The [Xandr Customer Support
-Portal](https://help.xandr.com/s/login/) is for issues that must be addressed by our Support team.
+Portal](https://help.xandr.com    /s/login/) is for issues that must be addressed by our Support team.
 Examples of issues that should be submitted to the
 [Xandr Customer Support
 Portal](https://help.xandr.com/s/login/) include:

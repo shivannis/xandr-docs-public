@@ -1,7 +1,7 @@
 ---
 title: Universal pixel SDK for iOS
 description: This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
-ms.custom : android-ios
+ms.custom: ios-sdk
 ---
 
 # Universal pixel SDK for iOS
@@ -25,63 +25,68 @@ In order to use the Pixie SDK, you must have a valid Xandr Unified Pixel ID. Th
 
 There are two ways to install the SDK:
 
-1. Use [CocoaPods](https://cocoapods.org/).
+1. **Use** [CocoaPods](https://cocoapods.org/).
 
-    CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).  
+    CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).
     Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
 
-    `pod init`
+    ```
+    pod init
+    ```
 
     Using a text editor, open the newly created podfile. Set the platform version to 9.0 and add pod `PixieSDK` to the target.
 
-    ```# iOS: Podfile config to include our SDK
-       platform :ios, '9.0'
-       project 'SampleApp'
-       target 'SampleApp' do
-       pod 'PixieSDK'
-       end```
+    ```
+    # iOS: Podfile config to include our SDK
+    platform :ios, '9.0'
+    project 'SampleApp'
+    target 'SampleApp' do
+      pod 'PixieSDK'
+    end
+    ```
 
     Save your changes and return to **Terminal** and enter:  
 
-    `pod install`
+    ```
+    pod install
+    ```
   
     CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
-1. Use **Xandr Unified Pixel SDK XCFramework**.
+1. **Use Xandr Unified Pixel SDK XCFramework**.
 
 > [!NOTE]
-> We are distributing  PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip).Download the file and add it to the **Frameworks** folder.
+> We are distributing PixieSDK.xcframework, which you can download [here]: (https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
 
 - Create **Frameworks** folder.
   
   Right click on your project in the project navigator (top-most entry), and select **New Group**. Name the new group as **Frameworks**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="A screenshot of Universal pixel SDK for iOS,Part A.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="The screenshot that displays how to create a new group in the project using the project navigator.":::
   
-  **Add `PixieSDK.xcframework` to Frameworks folder**.
+- **Add `PixieSDK.xcframework` to Frameworks folder**.
 
-     Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**. </br></br>
+  Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
 
-     :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="A screenshot of Universal pixel SDK for iOS,Part B.":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that explains how to add "PixieSDK.xcframework" to the Frameworks folder.":::
   
   Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
-  
   Click **Finish**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="A screenshot of Universal pixel SDK for iOS,Part C.":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose options like "Copy items if needed" and "Create groups" are checked while adding the files":::
   
   Once this step is completed, the result appears as below:
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="A screenshot of Universal pixel SDK for iOS,Part D.":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="The  screenshot that displays the results after copying the files.":::
   
 <!-- -->
 - **Embedded PixieSDK.xcframework in project’s target**
 
   1. Navigate to your project settings by clicking on it in the project navigator. 
-  1. Make sure that your target is selected and General tab is open.
+  1. Make sure that your target is selected and **General** tab is open.
   1. Select **Embed & Sign** for your newly added XCFramework.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="A screenshot of Universal pixel SDK for iOS,Part E.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to select "Embed & Sign" to the newly added Embed & Sign.":::
 
 ## Implementation
 
@@ -89,22 +94,24 @@ There are two ways to install the SDK:
 
 Initialize the SDK calling its initialize method within the **didFinishLaunchingWithOptions** method within the app delegate's file:
 
-`Pixie.initialize(pixelId:String)`
+```
+Pixie.initialize(pixelId:String)`
+```
 
 ## Track Event
 
-Once the SDK is initialized events can be tracked and submitted using fireEvent method.
+**Once the SDK is initialized events can be tracked and submitted using fireEvent method.**
 
 > [!NOTE]
 > Any events being tracked prior to initialization will be rejected.
 
 `Pixie.fireEvent(eventName : String, eventParams : PixieParams?)`
 
-**fireEvent** method takes **Event string** and **PixieParams**(optional)  as these are parameters.
+**fireEvent** method takes **Event string** and **PixieParams**(optional) as these are parameters.
 
 ### eventName:String
 
-Standard Event strings are defined within the Event class.See the [Standard Events](universal-pixel-sdk-for-ios.md#Track Event).section below for the available Standard Event strings. You also have the option to define Custom Event string(s) in Universal Pixel UI and use it in your application.
+Standard Event strings are defined within the Event class. See the [Standard Events](#track-standard-event) section below for the available Standard Event strings. You also have the option to define Custom Event string(s) in Universal Pixel UI and use it in your application.
 
 **Custom Event String(s) must be pre-registered using Universal Pixel UI.**
 
@@ -119,14 +126,14 @@ Standard Event strings are defined within the Event class.See the [Standard Eve
 |--|--|
 | Properties |  |
 | currency : String | Currency for the `value` specified. |
-| itemId : String | A generic ID of the item represented. IDs can also be passed as an array of comma separated items. Example "itemId1, itemId2" |
-| itemName : String | The name of the item represented. Names can also be passed as an array of comma separated items. Example "itemName1, itemName2" |
-| itemType : String | A generic type of the item represented. Types can also be passed as an array of comma separated items. Example "itemType1, itemType2" |
+| itemId : String | A generic ID of the item represented. IDs can also be passed as an array of comma separated items. Example: "itemId1, itemId2" |
+| itemName : String | The name of the item represented. Names can also be passed as an array of comma separated items. Example: "itemName1, itemName2" |
+| itemType : String | A generic type of the item represented. Types can also be passed as an array of comma separated items. Example: "itemType1, itemType2" |
 | value : String | Value of a user performing this event to the business. |
 | Function |  |
-| put( key : String, value : String) | Arbitrary data defined by the publisher. Enables the passing of custom event data through key/value pairs. Keys should be preregistered using Universal Pixel UI. Values can be an array separated by a comma. See the Custom Events section below for more details |
+| put (key : String, value : String) | Arbitrary data defined by the publisher. Enables the passing of custom event data through key/value pairs. Keys should be preregistered using Universal Pixel UI. Values can be an array separated by a comma. See the [Custom Events](#track-custom-event) section below for more details |
 
-## Code samples
+### Code samples
 
 **Initializing the SDK**
 
@@ -156,8 +163,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## Page view
 
-`Event.PAGE_VIEW`
-
+```
+Event.PAGE_VIEW`
+```
 
 **The specific page that was visited.**
 
@@ -177,7 +185,9 @@ Pixie.fireEvent(Event.PAGE_VIEW)
 
 ## Landing page
 
-`Event.LANDING_PAGE`
+```
+Event.LANDING_PAGE`
+```
 
 Track landing pages views.
 
@@ -198,11 +208,12 @@ PixieParams *landingPageParams = [[PixieParams alloc] initWithValue:@"5.99" curr
 
 ## Item view
 
-`Event.ITEM_VIEW`
-
+```
+Event.ITEM_VIEW`
+```
 Track key page views (For example: product page, landing page, article).
 
-## Code sample:
+**Code sample:**
 
 **Swift**
 
@@ -220,7 +231,9 @@ PixieParams *itemViewParams = [[PixieParams alloc] initWithValue:@"5.99" currenc
 
 ## Add to cart
 
-`Event.ADD_TO_CART`
+```
+Event.ADD_TO_CART`
+```
 
 Track when items are added to a shopping cart (For example: **click**, landing page on **Add to Cart** button).
 
@@ -242,7 +255,9 @@ PixieParams *addToCartParams = [[PixieParams alloc] initWithValue:@"5.99" curren
 
 ## Initiate checkout
 
-`Event.INITIATE_CHECKOUT`
+```
+Event.INITIATE_CHECKOUT
+```
 
 **Track when people enter the checkout flow (For example: click, landing page on checkout button).**
 
@@ -264,9 +279,11 @@ PixieParams *initiateCheckOutParams = [[PixieParams alloc] initWithValue:@"5.99"
 
 ## Add payment info
 
-`Event.ADD_PAYMENT_INFO`
+```
+Event.ADD_PAYMENT_INFO`
+```
 
-Track when payment information is added in the checkout flow (For example: click,landing page on billing information).
+Track when payment information is added in the checkout flow (For example: click, landing page on billing information).
 
 **Code sample:**
 
@@ -286,7 +303,9 @@ PixieParams *addPaymentInfo = [[PixieParams alloc] initWithValue:@"5.99" currenc
 
 ## Purchase
 
-`Event.PURCHASE`
+```
+Event.PURCHASE`
+```
 
 Track purchases or checkout flow completions (For example: Landing on **Thank You** or confirmation page).
 
@@ -308,7 +327,9 @@ PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currenc
 
 ## Lead
 
-`Event.LEAD`
+```
+Event.LEAD
+```
 
 Track when someone expresses interest in your offering (For example: form submission, sign up for trial, and registration).
 
@@ -364,12 +385,16 @@ customPixieParams.itemName = @"shirt,belt";
 
 ### Enable logging
 
-Pixie SDK comes with a debug mode feature that enables logging during development. This can be turned on by setting the debugMode variable to true.  All logging will be disabled in the release build.
+Pixie SDK comes with a debug mode feature that enables logging during development. This can be turned on by setting the debugMode variable to true. All logging will be disabled in the release build.
 
 **Swift**
 
-`Pixie.shared.debugMode = true`
+```
+Pixie.shared.debugMode = true
+```
 
 **Objective C**
 
-`Pixie.shared.debugMode = true;`
+```
+Pixie.shared.debugMode = true;
+```

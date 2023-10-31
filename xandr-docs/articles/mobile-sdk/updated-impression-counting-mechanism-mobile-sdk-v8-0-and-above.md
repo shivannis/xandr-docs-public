@@ -1,7 +1,7 @@
 ---
 title: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
 description: This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
-ms.custom : android-sdk
+ms.custom: android-sdk, ios-sdk
 ---
 
 # Updated impression counting mechanism - mobile SDK v8.0 and above
@@ -40,9 +40,9 @@ The Mobile SDK v7.0 continues to use the old impression counting mechanism for v
 | AdUnits      | Impression Type      | Enablement by Impression Type                                                                  |
 |--------------|----------------------|------------------------------------------------------------------------------------------------|
 | Banner       | Viewable Impression  | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
-|              | Begin to Render      | Default for Impression Type = Resold                                                           |
+| Banner       | Begin to Render      | Default for Impression Type = Resold                                                           |
 | Native       | Viewable Impression  | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
-|              | Begin to Render      | Default for Impression Type = Resold                                                           |
+| Native       | Begin to Render      | Default for Impression Type = Resold                                                           |
 | Interstitial | Count on Render      | Default                                                                                        |
 | Video        | Count on Video Start | Default                                                                                        |
 > [!NOTE]

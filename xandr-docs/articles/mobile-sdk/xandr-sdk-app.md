@@ -1,7 +1,7 @@
 ---
 title: Xandr SDK App
 description: This article provides instructions on using Xandr's SDK application and explores various features of the Xandr advertising platform.
-ms.custom : android-sdk
+ms.custom: android-sdk, ios-sdk
 ---
 # Xandr SDK app
 
@@ -9,8 +9,6 @@ Xandr's **SDK App** showcases the features of the Xandr advertising platform and
 Use our SDK application on your mobile device to display and test the behavior of creatives rendered in Xandr's SDK.
 
 To test a creative you will need to know the placement ID that will load the creative you wish to test.
-
-> [!TIP]
 > [!TIP]
 > Get the Xandr SDK App download for:
 > 
