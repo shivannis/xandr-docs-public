@@ -21,6 +21,12 @@ landingContent:
         links:
           - text: Mobile SDK App
             url: xandr-sdk-app.md
+      - linkListType: tutorial
+        links:
+          - text: Impression Counting Mechanism
+            url: impression-counting-methods.md
+          - text: Impression Counting Mechanism (v8.0 and above)
+            url: updated-impression-counting-mechanism-mobile-sdk-v8.0-and-above.md
   - title: iOS SDK
     linkLists:
       - linkListType: overview
@@ -64,11 +70,7 @@ landingContent:
           - text: Android SDK Integration Instructions
             url: android-sdk-integration-instructions.md
   - title: Universal Pixel SDK
-    linkLists:
-      - linkListType: concept
-        links: 
-        - text: Universal Pixel SDK
-          url: universal-pixel-sdk.md             
+    linkLists:          
       - linkListType: how-to-guide
         links:
          - text: Universal Pixel SSDK for Android
@@ -79,17 +81,21 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:            
-          - text: What is Ad Ops for Mobile SDK
+          - text: What is Ad Ops
             url: ad-ops-for-mobile-sdk.md
       - linkListType: how-to-guide
         links:
-          - text: Ad Ops - Set up html responsive interstitials (non-mraid)
+          - text: Set up HTML Responsive Interstitials (non-mraid)
             url: ad-ops-set-up-html-responsive-interstitials-non-mraid.md
-          - text: Ad Ops - Set up MRAID Full Screen Interstitials
+          - text: Set up MRAID Full Screen Interstitials
             url: ad-ops-set-up-mraid-full-screen-interstitials.md
-  - title: ANJAM Guide
+          - text: Set up Static Image Banners
+            url: ad-ops-set-up-static-image-banners.md
+          - text: Set up Static Image Full Screen Interstitials
+            url: ad-ops-set-up-static-image-full-screen-interstitials.md
+  - title: ANJAM User Guide
     linkLists:
-      - linkListType: concept
+      - linkListType: how-to-guide
         links:            
-          - text: What is ANJAM Guide
+          - text: User Guide
             url: anjam-guide.md
