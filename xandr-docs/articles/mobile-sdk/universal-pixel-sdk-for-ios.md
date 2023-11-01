@@ -62,18 +62,18 @@ There are two ways to install the SDK:
   
   Right click on your project in the project navigator (top-most entry), and select **New Group**. Name the new group as **Frameworks**.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="The screenshot that displays how to create a new group in the project using the project navigator.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="The screenshot that displays how to create a Framework group within the poject structure using the project navigator.":::
   
 - **Add `PixieSDK.xcframework` to Frameworks folder**.
 
   Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that explains how to add PixieSDK.xcframework to the Frameworks folder.":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that entails locating the PixieSDK.xcframework file on the Finder or file system and how to drag the PixieSDK.xcframework file from its location and drop it into the Frameworks folder within the project navigator.":::
   
   Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
   Click **Finish**.
 
-  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose options like Copy items if needed and Create groups are checked while adding the files":::
+  :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose and check various copy options while adding the files":::
   
   Once this step is completed, the result appears as below:
 
@@ -82,11 +82,11 @@ There are two ways to install the SDK:
 <!-- -->
 - **Embedded PixieSDK.xcframework in project’s target**
 
-  1. Navigate to your project settings by clicking on it in the project navigator. 
+  1. Navigate to your project settings by clicking on it in the project navigator.
   1. Make sure that your target is selected and **General** tab is open.
   1. Select **Embed & Sign** for your newly added XCFramework.
 
-   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to select Embed & Sign to the newly added Embed & Sign.":::
+   :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to configure the integration of the Framework within the project, access the project settings, and select the correct option for the proper embedding and code signing of the framework.":::
 
 ## Implementation
 

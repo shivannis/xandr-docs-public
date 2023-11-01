@@ -38,7 +38,7 @@ SDKSettings.setPublisherUserId(String publisherUserId);
 SDKSettings.getPublisherUserId();
 ```
 
-**User ID**
+### User ID
 
 > [!NOTE]
 > **Deprecation Notice**:

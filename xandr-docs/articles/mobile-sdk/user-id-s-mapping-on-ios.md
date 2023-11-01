@@ -21,10 +21,9 @@ in ad requests. They are global settings and it is sufficient to set the User ID
 > > [!NOTE]
 >**Deprecation Notice**:
 >
->**`The` `externalUid`** 
->property of **`ANBannerAdView`**, **`InterstitialAdView`**, **`ANNativeAdRequest`** and **`ANInstreamVideoAd`** class is now deprecated. You can use **`publisherUserId`** property described below in **`ANSDKSettings`** class instead. The deprecated methods will be removed in SDK v8.0.
+>**`The` `externalUid`** property of **`ANBannerAdView`**, **`InterstitialAdView`**, **`ANNativeAdRequest`** and **`ANInstreamVideoAd`** class is now deprecated. You can use **`publisherUserId`** property described below in **`ANSDKSettings`** class instead. The deprecated methods will be removed in SDK v8.0.
 
-You can set **Publisher First Party ID** using the `publisherUserId` property of  `ANSDKSettings` in **Mobile SDK API**. </br>
+You can set **Publisher First Party ID** using the `publisherUserId` property of  `ANSDKSettings` in Mobile SDK API. </br>
 
 | Property        | Type     | Attribute | Description                                                                                |
 |-----------------|----------|-----------|--------------------------------------------------------------------------------------------|
