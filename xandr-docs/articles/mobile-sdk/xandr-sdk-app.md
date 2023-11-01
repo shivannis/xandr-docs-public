@@ -1,17 +1,15 @@
 ---
-Title : Xandr SDK App
-Description : Xandr's **SDK App** showcases the features of
-the Xandr advertising platform and the <a
-href="xandr-mobile-sdks.md"
+Title : Mobile SDK App
+Description : lorem-ipsum
 ms.custom : android-sdk
 ---
 
 
-# Xandr SDK App
+# Mobile SDK App
 
 
 
-Xandr's **SDK App** showcases the features of
+Xandr's Mobile **SDK App** showcases the features of
 the Xandr advertising platform and the <a
 href="xandr-mobile-sdks.md"
 class="xref" target="_blank">Xandr mobile
