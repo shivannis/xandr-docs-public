@@ -35,7 +35,7 @@ landingContent:
             url: ios-mediation.md
       - linkListType: sample
         links:
-          - text: iOS SDK code samples
+          - text: iOS SDK Code Samples
             url: ios-sdk-code-samples.md
       - linkListType: reference
         links:
