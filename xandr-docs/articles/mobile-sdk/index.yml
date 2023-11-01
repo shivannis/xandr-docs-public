@@ -39,6 +39,8 @@ landingContent:
             url: ios-sdk-integration.md
           - text: Mediation Guide
             url: ios-mediation.md
+          - text: Migration Guide
+            url: migrating-ios-sdk-v7-to-8.0.md
       - linkListType: sample
         links:
           - text: iOS SDK Code Samples
@@ -53,10 +55,6 @@ landingContent:
         links:
           - text: Release Notes
             url: ios-sdk-release-notes.md
-      - linkListType: how-to-guide
-        links:
-          - text: Migrating iOS SDK v7 to v8.0
-            url: migrating-ios-sdk-v7-to-8.0.md
   - title: Android SDK 
     linkLists:
       - linkListType: concept
