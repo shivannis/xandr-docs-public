@@ -54,9 +54,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
          - text: Universal Pixel SSDK for Android
-            url: universal-pixel-sdk-for-android.md
-          - text: Universal Pixel SDK for iOS
-            url: universal-pixel-sdk-for-ios.md
+           url: universal-pixel-sdk-for-android.md
+         - text: Universal Pixel SDK for iOS
+           url: universal-pixel-sdk-for-ios.md
   - title: Ad Ops for Mobile SDK
     linkLists:
       - linkListType: concept
