@@ -49,7 +49,7 @@
       - name: Publisher ID for iOS
         href: publisher-id-for-ios.md
       - name: Ad Response Info Class for iOS
-       href: ad-response-info-class-for-ios.md
+        href: ad-response-info-class-for-ios.md
       - name: Multi Ad Request for iOS
         href: multi-ad-request-for-ios.md
     - name: iOS SDK Code Samples
