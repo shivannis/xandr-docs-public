@@ -9,7 +9,7 @@
     - name: Impression Counting Methods
       href: impression-counting-methods.md
     - name: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
-      href: updated-impression-counting-mechanism-mobile-sdk-v8.0-and-above.md
+      href: updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md
 - name : iOS SDK
   items:
     - name: Overview
@@ -21,7 +21,7 @@
       - name: Overview
         href: ios-sdk-integration.md
       - name: iOS SDK Intialization v8.0
-        href: ios-sdk-intialization-v8.0.md
+        href: ios-sdk-initialization-v8-0.md
       - name: iOS SDK Integration Instructions
         href: ios-sdk-integration-instructions.md
     - name: iOS Mediation
@@ -43,7 +43,7 @@
       - name: Nativr Assembly Renderer on iOS
         href: native-assembly-renderer-on-ios.md
       - name: Show High Impact on Media type on iOS
-        href: show-high-impact-on-media-type-on-ios.md
+        href: show-high-impact-media-type-on-ios.md
       - name: Show Interstitials Ads on iOS
         href: show-interstitials-ads-on-ios.md
       - name: Show Native Ads on iOS
@@ -63,13 +63,13 @@
       - name: Overview
         href: ios-sdk-code-samples.md
       - name: Add a Transistion Animation on iOS
-        href: add-a-transistion-animation-on-ios.md
+        href: add-a-transition-animation-on-ios.md
       - name: Add Targeting Parameters on iOS
         href: add-targeting-parameters-on-ios.md
       - name: Allow Multiple Ad Sizes to Serve into a Banner Ad View on iOS
         href: allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md
       - name: Click-Thrrough URL on iOS
-        href: click-thrrough-url-on-ios.md
+        href: click-through-url-on-ios.md
       - name: Configure SDK Logging on iOS
         href: configure-sdk-logging-on-ios.md
       - name: Control Ad Unit Alignment on iOS
@@ -101,7 +101,7 @@
       - name: Pass Custom Keywords on iOS
         href: pass-custom-keywords-on-ios.md
       - name: Publisher Side User Opt-Out on iOS
-        href: publisher-side-user-opt-out-on-ios.md
+        href: publisher-side-user-opt-out-for-ios.md
       - name: Receive Ad View Status Events on iOS
         href: receive-ad-view-status-events-on-ios.md
       - name: Request Ads Over HTTPS on iOS
@@ -123,15 +123,15 @@
       - name: Toggle PSAs on iOS
         href: toggle-psas-on-ios.md
       - name: User ID(s) Mapping on iOS
-        href: user-ids-mapping-on-ios.md
+        href: user-id-s-mapping-on-ios.md
     - name: iOS 14.0 FAQ
-      href: ios-14.0-faq.md
+      href: ios-14-0-faq.md
     - name: iOS 14.0 FAQ
-      href: ios-14.0-faq.md
+      href: ios-14-0-faq.md
     - name: SDK Privacy for iOS
       href: sdk-privacy-for-ios.md
     - name: Migrating iOS SDK v7 to 8.0
-      href: migrating-ios-sdk-v7-to-8.0.md
+      href: migrating-ios-sdk-v7-to-8-0.md
 
 - name : Android SDK
   items:
