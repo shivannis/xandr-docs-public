@@ -55,23 +55,39 @@ landingContent:
         links:
           - text: Release Notes
             url: ios-sdk-release-notes.md
-  - title: Android SDK 
+ - title: Android SDK
     linkLists:
-      - linkListType: concept
-        links:            
-          - text: Android SDK Release Notes
-            url: android-sdk-release-notes.md
-          - text: Android SDK Integration
-            url: android-sdk-integration.md
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: android-sdk.md
       - linkListType: how-to-guide
         links:
-          - text: Android SDK Integration Instructions
-            url: android-sdk-integration-instructions.md
+          - text: Integration Guide
+            url: android-sdk-integration.md
+          - text: Mediation Guide
+            url: mediate-with-android-sdk.md
+          - text: Migration Guide
+            url: migrating-android-sdk-v7-to-8.0.md
+      - linkListType: sample
+        links:
+          - text: Android SDK Code Samples
+            url: android-sdk-code-samples.md
+      - linkListType: reference
+        links:
+          - text: Android SDK Ad Units
+            url: android-sdk-ad-units.md
+          - text: SDK Privacy for Android
+            url: sdk-privacy-for-android.md
+      - linkListType: whats-new
+        links:
+          - text: Release Notes
+            url: android-sdk-release-notes.md
   - title: Universal Pixel SDK
     linkLists:          
       - linkListType: how-to-guide
         links:
-         - text: Universal Pixel SSDK for Android
+         - text: Universal Pixel SDK for Android
            url: universal-pixel-sdk-for-android.md
          - text: Universal Pixel SDK for iOS
            url: universal-pixel-sdk-for-ios.md
