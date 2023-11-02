@@ -1,6 +1,8 @@
 ---
 Title : Reports Overview
 Description : The Reports tab provides access to a
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 flexible analytics engine that supports both recurring and ad hoc
 inventory and yield analysis. Yield Analytics Reports integrate data
 ---
@@ -22,16 +24,15 @@ because the data structures take into account inventory overlaps, all
 analysis can be performed at the network-level as well as against a
 specific inventory set.
 
-<div id="ID-0000161c__section_jbh_bjj_nwb" >
 
 ## Related Topics
 
-- <a href="create-a-new-report.html" class="xref">Create a New Report</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="compare-two-data-sets.html" class="xref">Compare Two Data
+- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
   Sets</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>  
     
 
@@ -39,14 +40,14 @@ specific inventory set.
 
 
 
-- **[About Reporting](../topics/about-reporting.html)**  
+- **[About Reporting](about-reporting.md)**  
 - **[Anatomy of the Reports
-  Tab](../topics/anatomy-of-the-reports-tab.html)**  
+  Tab](anatomy-of-the-reports-tab.md)**  
 - **[Reporting Options for Dimension, Primary, and Secondary
-  Metrics](../topics/reporting-options-for-dimension-primary-and-secondary-metrics.html)**  
+  Metrics](reporting-options-for-dimension-primary-and-secondary-metrics.md)**  
 - **[Best Practices - Reporting Product
-  Strategy](../topics/best-practices-reporting-product-strategy.html)**  
-- **[Top Reports](../topics/top-reports.html)**  
-- **[Reports as Pivot Table](../topics/reports-as-pivot-table.html)**  
+  Strategy](best-practices-reporting-product-strategy.md)**  
+- **[Top Reports](top-reports.md)**  
+- **[Reports as Pivot Table](reports-as-pivot-table.md)**  
 
 

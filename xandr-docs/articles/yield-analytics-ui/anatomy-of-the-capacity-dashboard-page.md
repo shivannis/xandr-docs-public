@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Capacity Dashboard Page
 Description : The Capacity Dashboard page is the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 primary view for the Capacity tab. It
 ---
 
@@ -16,7 +18,6 @@ well as a tasks panel to navigate to forecasts and add adjustments. It
 is displayed automatically when you click
 the Capacity tab.
 
-<div id="ID-000025f0__section_u5p_ncw_mwb" >
 
 ## About the Capacity Dashboard Interface
 
@@ -50,21 +51,19 @@ indicates when the capacity forecast was last updated.
 
 
 
-<div id="ID-000025f0__section_kvp_ncw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000025f0__section_y5p_ncw_mwb" >
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="add-a-manual-adjustment-to-a-product.html" class="xref">Add a
+- <a href="add-a-manual-adjustment-to-a-product.md" class="xref">Add a
   Manual Adjustment to a Product</a>
-- <a href="edit-a-seasonal-adjustment-for-a-seasonal-product.html"
+- <a href="edit-a-seasonal-adjustment-for-a-seasonal-product.md"
   class="xref">Edit a Seasonal Adjustment for a Seasonal Product</a>
 
 
@@ -72,20 +71,17 @@ indicates when the capacity forecast was last updated.
 
 
 - **[Check Impression Capacity for a Product
-  Group](../topics/check-impression-capacity-for-a-product-group.html)**  
+  Group](check-impression-capacity-for-a-product-group.md)**  
 - **[Yield Analytics Seasonality
-  Overview](../topics/yield-analytics-seasonality-overview.html)**  
+  Overview](yield-analytics-seasonality-overview.md)**  
 - **[Check Manual Adjustments and
-  Holidays](../topics/check-manual-adjustments-and-holidays.html)**  
+  Holidays](check-manual-adjustments-and-holidays.md)**  
 - **[Check Capacity Trended for a Product
-  Group](../topics/check-capacity-trended-for-a-product-group.html)**  
+  Group](check-capacity-trended-for-a-product-group.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/capacity-overview.html" class="link">Capacity
+<a href="capacity-overview.md" class="link">Capacity
 Overview</a>
 
 

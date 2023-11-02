@@ -1,6 +1,8 @@
 ---
 Title : View Availability in a Calendar
 Description : You can view daily availability in a calendar for a given month, to find
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 openings for new deals. This is especially useful for sponsorships.
 ---
 
@@ -53,15 +55,14 @@ To view the calendar:
     the calendar. The page is redisplayed in a table (also referred to
     as the list view) with the date you clicked expanded by default.
 
-<div id="ID-0000390c__section_j1t_bgk_nwb" >
 
 ## Related Topics
 
-- <a href="anatomy-of-the-view-calendar-page.html" class="xref">Anatomy of
+- <a href="anatomy-of-the-view-calendar-page.md" class="xref">Anatomy of
   the View Calendar Page</a>
-- <a href="switch-between-the-calendar-and-list-views.html"
+- <a href="switch-between-the-calendar-and-list-views.md"
   class="xref">Switch Between the Calendar and List Views</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 
 
@@ -69,6 +70,6 @@ To view the calendar:
 
 
 - **[Switch Between the Calendar and List
-  Views](../topics/switch-between-the-calendar-and-list-views.html)**  
+  Views](switch-between-the-calendar-and-list-views.md)**  
 
 

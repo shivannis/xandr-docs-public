@@ -1,6 +1,8 @@
 ---
 Title : View and Work With Scenario Manager
 Description : ## Access Scenario Manager
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 To access Scenario Manager at any time, click the Scenario link at the
 top right corner of the yield analytics page.
 ---
@@ -28,7 +30,6 @@ refresh.
 
 
 
-<div id="ID-000029c6__section_mpc_lfk_nwb" >
 
 ## Add an Order Line to a Scenario
 
@@ -46,35 +47,29 @@ There are several ways to add a specific order line to a scenario:
 
 
 
-<div id="ID-000029c6__section_eqc_lfk_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000029c6__section_opc_lfk_nwb" >
 
-- <a href="run-a-potential-order-through-scenario-manager.html"
+- <a href="run-a-potential-order-through-scenario-manager.md"
   class="xref">Run a Potential Order Through Scenario Manager</a>
-- <a href="run-an-existing-order-line-through-scenario-manager.html"
+- <a href="run-an-existing-order-line-through-scenario-manager.md"
   class="xref">Run an Existing Order Line Through Scenario Manager</a>
-- <a href="run-an-existing-order-through-scenario-manager.html"
+- <a href="run-an-existing-order-through-scenario-manager.md"
   class="xref">Run an Existing Order Through Scenario Manager</a>
-- <a href="interpreting-scenario-manager-results.html"
+- <a href="interpreting-scenario-manager-results.md"
   class="xref">Interpreting Scenario Manager Results</a>
-- <a href="find-and-view-a-list-of-products.html" class="xref">Find and
+- <a href="find-and-view-a-list-of-products.md" class="xref">Find and
   View a List of Products</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-scenarios-overview.html"
+<a href="working-with-scenarios-overview.md"
 class="link">Working With Scenarios Overview</a>
 
 

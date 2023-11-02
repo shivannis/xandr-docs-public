@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Audience Planner Page
 Description : The Audience Planner page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Products tab shows an analysis of
 how products in your network overlap.
 ---
@@ -14,7 +16,6 @@ The Audience Planner page on
 the Products tab shows an analysis of
 how products in your network overlap.
 
-<div id="ID-00000f43__section_jhf_nbw_mwb" >
 
 ## About the Audience Planner Interface
 
@@ -60,29 +61,20 @@ The Audience Planner page is comprised of the following four panels:
 
 
 
-<div id="ID-00000f43__section_zhf_nbw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00000f43__section_qhf_nbw_mwb" >
 
-- <a href="analyze-product-overlaps.html" class="xref">Analyze Product
+- <a href="analyze-product-overlaps.md" class="xref">Analyze Product
   Overlaps</a>
-- <a href="products-overview.html" class="xref">Products Overview</a>  
+- <a href="products-overview.md" class="xref">Products Overview</a>  
     
 
 
 
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-products-dashboard-page.html"
+<a href="anatomy-of-the-products-dashboard-page.md"
 class="link">Anatomy of the Products Dashboard Page</a>
 
 

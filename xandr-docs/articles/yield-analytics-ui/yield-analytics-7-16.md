@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.16
 Description : ## Product Permission Enhancements
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 - When selecting Parent Products to a User Group on the Permissions
 page, you have the ability to view current associated overlaps. This
 ---
@@ -28,8 +30,7 @@ page, you have the ability to view current associated overlaps. This
     Twin, Self or Child, information on the Overlaps analyzed is
     provided.
 
-<figure class="fig fignone">
-<p><img src="../images/89623227.png" class="image" height="250" /></p>
+![Yield Analytics UI - M]("media/m.png")
 <ul>
 <li>There are two overrides provided, which will enable the visibility
 of Availability Lookup information and Product Creation regardless of
@@ -44,10 +45,7 @@ Product Creation, and Product Edit.</li>
 </ul>
 </figure>
 
-<figure class="fig fignone">
-<p><img src="../images/89623228.png" class="image" height="250" /></p>
-</figure>
-
+![Yield Analytics UI - N]("media/n.png")
 
 
 
@@ -56,8 +54,7 @@ Product Creation, and Product Edit.</li>
 
 <div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

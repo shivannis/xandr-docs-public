@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Availability Dashboard Page
 Description : The Availability Dashboard page is the primary view for
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Availability tab. This provides a
 ---
 
@@ -15,7 +17,6 @@ summary of available revenue, available sell-through, and how available
 inventory is trending. It is displayed automatically when you click
 the Availability tab.
 
-<div id="ID-000036bc__section_ucf_xbw_mwb" >
 
 ## About the Availability Dashboard Interface
 
@@ -61,23 +62,21 @@ data were last updated.
 
 
 
-<div id="ID-000036bc__section_kdf_xbw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000036bc__section_xcf_xbw_mwb" >
 
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="view-availability-batch-lookups.html" class="xref">View
+- <a href="view-availability-batch-lookups.md" class="xref">View
   Availability Batch Lookups</a>
-- <a href="view-availability-in-a-calendar.html" class="xref">View
+- <a href="view-availability-in-a-calendar.md" class="xref">View
   Availability in a Calendar</a>
 
 
@@ -85,10 +84,10 @@ data were last updated.
 
 
 - **[Anatomy of the Availability Lookup
-  Page](../topics/anatomy-of-the-availability-lookup-page.html)**  
+  Page](anatomy-of-the-availability-lookup-page.md)**  
 - **[Anatomy of the View Calendar
-  Page](../topics/anatomy-of-the-view-calendar-page.html)**  
+  Page](anatomy-of-the-view-calendar-page.md)**  
 - **[Availability Overview (Old
-  Workflow)](../topics/availability-overview-old-workflow.html)**  
+  Workflow)](availability-overview-old-workflow.md)**  
 
 

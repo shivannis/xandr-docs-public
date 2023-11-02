@@ -1,6 +1,8 @@
 ---
 Title : Check Impression Capacity for a Product Group
 Description : Use the Impression Capacity widget to quickly check a snapshot of your
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 network's capacity, or click on a specific product to view its full
 capacity forecast.
 ---
@@ -36,33 +38,29 @@ capacity forecast.
 If necessary, you can add or edit a manual or seasonal adjustment to the
 forecast report.
 
-<div id="ID-00002646__section_dzg_xt1_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="add-a-manual-adjustment-to-a-product.html" class="xref">Add a
+- <a href="add-a-manual-adjustment-to-a-product.md" class="xref">Add a
   Manual Adjustment to a Product</a>
-- <a href="edit-a-seasonal-adjustment-for-a-seasonal-product.html"
+- <a href="edit-a-seasonal-adjustment-for-a-seasonal-product.md"
   class="xref">Edit a Seasonal Adjustment for a Seasonal Product</a>
-- <a href="anatomy-of-the-forecast-visibility-page.html"
+- <a href="anatomy-of-the-forecast-visibility-page.md"
   class="xref">Anatomy of the Forecast Visibility Page</a>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/anatomy-of-the-capacity-dashboard-page.html"
+<a href="anatomy-of-the-capacity-dashboard-page.md"
 class="link">Anatomy of the Capacity Dashboard Page</a>
 
 

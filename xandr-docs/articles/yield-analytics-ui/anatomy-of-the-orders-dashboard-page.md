@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Orders Dashboard Page
 Description : The Orders Dashboard page is the primary view for
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Orders tab. This provides a
 ---
 
@@ -15,7 +17,6 @@ summary of revenue against goal, consumed impressions, and how orders
 are performing. It is displayed automatically when you click
 the Orders tab.
 
-<div id="ID-00001e89__section_ewf_jfw_mwb" >
 
 ## About the Orders Dashboard Interface
 
@@ -60,25 +61,23 @@ delivery forecast was last updated.
 
 
 
-<div id="ID-00001e89__section_uwf_jfw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00001e89__section_iwf_jfw_mwb" >
 
-- <a href="view-order-information-for-a-specific-parent-product.html"
+- <a href="view-order-information-for-a-specific-parent-product.md"
   class="xref">View Order Information for a Specific Parent Product</a>
-- <a href="find-orders.html" class="xref">Find Orders</a>
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="find-orders.md" class="xref">Find Orders</a>
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>
-- <a href="anatomy-of-the-order-visibility-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-order-visibility-page.md" class="xref">Anatomy
   of the Order Visibility Page</a>
-- <a href="find-an-order-line.html" class="xref">Find an Order Line</a>
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="find-an-order-line.md" class="xref">Find an Order Line</a>
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>  
     
 
@@ -87,20 +86,17 @@ delivery forecast was last updated.
 
 
 - **[Check Consumed
-  Impressions](../topics/check-consumed-impressions.html)**  
+  Impressions](check-consumed-impressions.md)**  
 - **[Check Order
-  Performance](../topics/check-order-performance.html)**  
+  Performance](check-order-performance.md)**  
 - **[Check Revenue Against
-  Goal](../topics/check-revenue-against-goal.html)**  
+  Goal](check-revenue-against-goal.md)**  
 - **[View Order Information for a Specific Parent
-  Product](../topics/view-order-information-for-a-specific-parent-product.html)**  
+  Product](view-order-information-for-a-specific-parent-product.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

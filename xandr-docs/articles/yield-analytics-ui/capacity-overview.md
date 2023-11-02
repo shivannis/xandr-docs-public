@@ -1,6 +1,8 @@
 ---
 Title : Capacity Overview
 Description : The Capacity tab provides a summary
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 overview of common capacity-related data, enabling you to view a
 product's standard delivery curve. It contains three widgets:
 ---
@@ -24,16 +26,16 @@ product's standard delivery curve. It contains three widgets:
 
 
 - **[About Forecasts and
-  Adjustments](../topics/about-forecasts-and-adjustments.html)**  
+  Adjustments](about-forecasts-and-adjustments.md)**  
 - **[Anatomy of the Capacity Dashboard
-  Page](../topics/anatomy-of-the-capacity-dashboard-page.html)**  
+  Page](anatomy-of-the-capacity-dashboard-page.md)**  
 - **[Anatomy of the Forecast Visibility
-  Page](../topics/anatomy-of-the-forecast-visibility-page.html)**  
+  Page](anatomy-of-the-forecast-visibility-page.md)**  
 - **[View the Forecast for Your
-  Products](../topics/view-the-forecast-for-your-products.html)**  
+  Products](view-the-forecast-for-your-products.md)**  
 - **[Anatomy of the Forecast Management
-  Page](../topics/anatomy-of-the-forecast-management-page.html)**  
+  Page](anatomy-of-the-forecast-management-page.md)**  
 - **[Adding and Editing
-  Adjustments](../topics/adding-and-editing-adjustments.html)**  
+  Adjustments](adding-and-editing-adjustments.md)**  
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Products Overview
 Description : From the Products tab in
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 yield analytics, you can:
 - View a summary of product performance across your network
 - Analyze how products overlap each other
@@ -35,7 +37,7 @@ view and edit these attributes in yield analytics.
 
 
 
-Tip: Yield Analytics maintains
+<b>Tip:</b> Yield Analytics maintains
 a continuous history across all previous versions of a product's
 targeting.
 
@@ -78,48 +80,47 @@ yield analytics - as follows.
 The status of a product is determined by the product type and how the
 product was created.
 
-<div id="ID-00000e1b__section_gtg_d2j_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="anatomy-of-the-products-dashboard-page.html"
+- <a href="anatomy-of-the-products-dashboard-page.md"
   class="xref">Anatomy of the Products Dashboard Page</a>
-- <a href="anatomy-of-the-find-products-page.html" class="xref">Anatomy of
+- <a href="anatomy-of-the-find-products-page.md" class="xref">Anatomy of
   the Find Products Page</a>
-- <a href="anatomy-of-the-audience-planner-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-audience-planner-page.md" class="xref">Anatomy
   of the Audience Planner Page</a>
-- <a href="anatomy-of-the-product-visibility-page.html"
+- <a href="anatomy-of-the-product-visibility-page.md"
   class="xref">Anatomy of the Product Visibility Page</a>
-- <a href="find-and-view-a-list-of-products.html" class="xref">Find and
+- <a href="find-and-view-a-list-of-products.md" class="xref">Find and
   View a List of Products</a>
-- <a href="analyze-product-overlaps.html" class="xref">Analyze Product
+- <a href="analyze-product-overlaps.md" class="xref">Analyze Product
   Overlaps</a>
-- <a href="overlap-types.html" class="xref">Overlap Types</a>
-- <a href="create-a-product.html" class="xref">Create a Product</a>
-- <a href="builder-tab.html" class="xref">Builder Tab</a>
-- <a href="organize-products.html" class="xref">Organize Products</a>
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="overlap-types.md" class="xref">Overlap Types</a>
+- <a href="create-a-product.md" class="xref">Create a Product</a>
+- <a href="builder-tab.md" class="xref">Builder Tab</a>
+- <a href="organize-products.md" class="xref">Organize Products</a>
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>
-- <a href="edit-the-details-of-a-product.html" class="xref">Edit the
+- <a href="edit-the-details-of-a-product.md" class="xref">Edit the
   Details of a Product</a>
 
 
 
 - **[Anatomy of the Products Dashboard
-  Page](../topics/anatomy-of-the-products-dashboard-page.html)**  
+  Page](anatomy-of-the-products-dashboard-page.md)**  
 - **[Find and View a List of
-  Products](../topics/find-and-view-a-list-of-products.html)**  
+  Products](find-and-view-a-list-of-products.md)**  
 - **[Analyze Product
-  Overlaps](../topics/analyze-product-overlaps.html)**  
-- **[Create a Product](../topics/create-a-product.html)**  
-- **[Organize Products](../topics/organize-products.html)**  
+  Overlaps](analyze-product-overlaps.md)**  
+- **[Create a Product](create-a-product.md)**  
+- **[Organize Products](organize-products.md)**  
 - **[View the Full Details of a
-  Product](../topics/view-the-full-details-of-a-product.html)**  
+  Product](view-the-full-details-of-a-product.md)**  
 - **[Edit the Details of a
-  Product](../topics/edit-the-details-of-a-product.html)**  
+  Product](edit-the-details-of-a-product.md)**  
 - **[Best Practices - Product
-  Group](../topics/best-practices-product-group.html)**  
+  Group](best-practices-product-group.md)**  
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Evaluate Orders Search Page
 Description : The Evaluate Orders Search page displays a filterable list of all order
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 proposals in your system. It also has options to create a new proposed
 ---
 
@@ -13,7 +15,6 @@ The Evaluate Orders Search page displays a filterable list of all order
 proposals in your system. It also has options to create a new proposed
 order by manually completing the fields, or importing a spreadsheet.
 
-<div id="ID-00002420__section_ycv_2dw_mwb" >
 
 ## Anatomy of the Evaluate Orders Search Page Interface
 
@@ -28,23 +29,21 @@ The Evaluate Orders Search page is comprised of the following sections:
 
 
 
-<div id="ID-00002420__section_kdv_2dw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002420__section_adv_2dw_mwb" >
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>
-- <a href="add-a-proposal-to-a-scenario.html" class="xref">Add a Proposal
+- <a href="add-a-proposal-to-a-scenario.md" class="xref">Add a Proposal
   to a Scenario</a>  
     
 
@@ -52,12 +51,7 @@ The Evaluate Orders Search page is comprised of the following sections:
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/evaluate-orders-overview.html" class="link">Evaluate
+<a href="evaluate-orders-overview.md" class="link">Evaluate
 Orders Overview</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Reports Tab
 Description : The Reports tab has one view, where
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 you can run reports on metrics to research anything from how a product
 is delivering, to how salespeople are performing. 
 ---
@@ -14,7 +16,6 @@ The Reports tab has one view, where
 you can run reports on metrics to research anything from how a product
 is delivering, to how salespeople are performing. 
 
-<div id="ID-0000167f__section_gqz_4gw_mwb" >
 
 ## About the Reports Tab
 
@@ -32,26 +33,24 @@ following sections:
 
 
 
-<div id="ID-0000167f__section_vqz_4gw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-0000167f__section_iqz_4gw_mwb" >
 
-- <a href="create-a-new-report.html" class="xref">Create a New Report</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="compare-two-data-sets.html" class="xref">Compare Two Data
+- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
   Sets</a>
-- <a href="change-how-a-report-is-displayed.html" class="xref">Change How
+- <a href="change-how-a-report-is-displayed.md" class="xref">Change How
   a Report is Displayed</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>
-- <a href="export-a-report.html" class="xref">Export a Report</a>
+- <a href="export-a-report.md" class="xref">Export a Report</a>
 - <a
-  href="reporting-options-for-dimension-primary-and-secondary-metrics.html"
+  href="reporting-options-for-dimension-primary-and-secondary-metrics.md"
   class="xref">Reporting Options for Dimension, Primary, and Secondary
   Metrics</a>  
     
@@ -60,26 +59,22 @@ following sections:
 
 
 
-- **[Create a New Report](../topics/create-a-new-report.html)**  
+- **[Create a New Report](create-a-new-report.md)**  
 - **[Open and Edit an Existing
-  Report](../topics/open-and-edit-an-existing-report.html)**  
+  Report](open-and-edit-an-existing-report.md)**  
 - **[Change How a Report is
-  Displayed](../topics/change-how-a-report-is-displayed.html)**  
-- **[Compare Two Data Sets](../topics/compare-two-data-sets.html)**  
+  Displayed](change-how-a-report-is-displayed.md)**  
+- **[Compare Two Data Sets](compare-two-data-sets.md)**  
 - **[Save and Share a
-  Report](../topics/save-and-share-a-report.html)**  
+  Report](save-and-share-a-report.md)**  
 - **[Schedule a Report to be
-  Sent](../topics/schedule-a-report-to-be-sent.html)**  
+  Sent](schedule-a-report-to-be-sent.md)**  
 - **[Modify a Report's
-  Schedule](../topics/modify-a-report-s-schedule.html)**  
-- **[Export a Report](../topics/export-a-report.html)**  
+  Schedule](modify-a-report-s-schedule.md)**  
+- **[Export a Report](export-a-report.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

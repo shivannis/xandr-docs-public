@@ -1,54 +1,24 @@
 ---
-Title : Resize Ads to fit the Screen or Banner Ad View on iOS
-Description : Depending on where advertising fits into your application, you might
-want to expand the ad creative to fill the banner ad view in which it is
-displayed, or to fit the device's screen width.
-ms.custom : android-ios
+title: Resize Ads to Fit the Screen or Banner Ad View on iOS
+description: Learn how to expand ad creative to fit banner ad view and device screen width with instructions provided on this article.
+ms.custom: ios-sdk
 ---
 
+# Resize ads to fit the screen or banner ad view on iOS
 
-# Resize Ads to fit the Screen or Banner Ad View on iOS
+Depending on where advertising fits into your application, you might want to expand the ad creative to fill the banner ad view in which it is displayed, or to fit the device's screen width.
 
+## Resize ad to fit the banner ad view
 
+### Properties
 
-Depending on where advertising fits into your application, you might
-want to expand the ad creative to fill the banner ad view in which it is
-displayed, or to fit the device's screen width.
+| Property | Description |
+|:---|:---|
+| `shouldResizeAdToFitContainer` | Determines whether the creative should resize to fill the banner ad view in which it is displayed. This feature will cause ad creatives that are smaller than the view size to 'stretch' to the current size. This may cause image quality degradation for the benefit of having an ad occupy the entire ad view. Defaults to `NO`. |
 
+### Example
 
-
-## Resize Ad to Fit the Banner Ad View
-
-**Properties**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003190__entry__1"
-class="entry colsep-1 rowsep-1">Property</th>
-<th id="ID-00003190__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003190__entry__1"><code
-class="ph codeph">shouldResizeAdToFitContainer</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003190__entry__2">Determines whether the creative should
-resize to fill the banner ad view in which it is displayed. This feature
-will cause ad creatives that are smaller than the view size to 'stretch'
-to the current size. This may cause image quality degradation for the
-benefit of having an ad occupy the entire ad view. Defaults to <code
-class="ph codeph">NO</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Example**
-
-``` pre
+```
 // Create the banner ad view and add it as a subview
 ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:rect placementId:@"1326299" adSize:size];
 banner.rootViewController = self;
@@ -59,55 +29,24 @@ banner.shouldResizeAdToFitContainer = YES;
 [banner loadAd];
 ```
 
+## Constrain to the container view
 
+By default `ANBannerAdView` is set to constrain to the size of the creative that is returned. But for some custom sizes you might want the `ANBannerAdView` to be constrained to its superview.
 
+By adding the custom sizes to `sizesThatShouldConstrainToSuperview` array you can instruct the SDK to set the right constraints for you.
 
+> [!NOTE]
+> `sizesThatShouldConstrainToSuperview` is a global setting and will be applied to all of the Banner Ad Views in your app.
 
-## Constrain to the Container View
+### Properties
 
-By default ANBannerAdView is set to constrain to the size of the
-creative that is returned. But for some custom sizes you might want
-the ANBannerAdView to be constrained to its superview.
+| Property | Description |
+|:---|:---|
+| `sizesThatShouldConstrainToSuperview` | Special ad sizes for which the ANBannerAdView should be constrained to its super view. |
 
-By adding the custom sizes
-to `sizesThatShouldConstrainToSuperview` array you can instruct the SDK
-to set the right constraints for you. 
+### Example
 
-
-
-<b>Note:</b>
-`sizesThatShouldConstrainToSuperview` is a Global setting and will be
-applied to all of the Banner Ad Views in your app.
-
-
-
-  
-**Properties**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003190__entry__5"
-class="entry colsep-1 rowsep-1">Property</th>
-<th id="ID-00003190__entry__6"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003190__entry__5"><code
-class="ph codeph">sizesThatShouldConstrainToSuperview</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003190__entry__6">Special ad sizes for which the
-ANBannerAdView should be constrained to its super view.</td>
-</tr>
-</tbody>
-</table>
-
-**Example**
-
-``` pre
+```
 NSArray *customSizes = @[[NSValue valueWithCGSize:CGSizeMake(3, 3)],[NSValue valueWithCGSize:CGSizeMake(4, 4)]];// Special ad sizes for which the ANBannerAdView should be constrained to its super view.
 ANSDKSettings.sharedInstance.sizesThatShouldConstrainToSuperview  = customSizes;
  
@@ -121,9 +60,3 @@ banner.rootViewController = self;
 // Load an ad!
 [banner loadAd];
 ```
-
-
-
-
-
-

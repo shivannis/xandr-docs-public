@@ -1,6 +1,8 @@
 ---
 Title : Freewheel Priority Values in Yield Analytics
 Description : To appropriately rank competing FreeWheel placements, yield
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 analytics maps numerical values to FreeWheel priority values.
 ---
 
@@ -278,7 +280,7 @@ Impressions</td>
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  The yield analytics priority labels for FreeWheel can be customized per
 client. Please contact your services representative for more
@@ -290,12 +292,7 @@ information.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/ad-servers-overview.html" class="link">Ad Servers
+<a href="ad-servers-overview.md" class="link">Ad Servers
 Overview</a>
 
 

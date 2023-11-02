@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.1
 Description : ## Feature Enhancements
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 **Best Practices Folder** - There is a new folder of saved reports
 available to all publishers.  The descriptions of the reports can all be
 ---
@@ -43,12 +45,7 @@ previously been saved.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

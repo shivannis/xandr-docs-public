@@ -1,6 +1,8 @@
 ---
 Title : Working With Scenarios Overview
 Description : Use Scenario Manager to run simulations of how modifications to an order
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 line would affect its delivery, as well as the delivery of any competing
 and overlapping order lines.
 ---
@@ -25,12 +27,12 @@ time from the Scenario link.
 
 
 - **[About Using Scenario
-  Manager](../topics/about-using-scenario-manager.html)**  
+  Manager](about-using-scenario-manager.md)**  
 - **[View and Work With Scenario
-  Manager](../topics/view-and-work-with-scenario-manager.html)**  
+  Manager](view-and-work-with-scenario-manager.md)**  
 - **[Anatomy of the Scenario Manager
-  Page](../topics/anatomy-of-the-scenario-manager-page.html)**  
+  Page](anatomy-of-the-scenario-manager-page.md)**  
 - **[Interpreting Scenario Manager
-  Results](../topics/interpreting-scenario-manager-results.html)**  
+  Results](interpreting-scenario-manager-results.md)**  
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Pricing a Proposed Campaign
 Description : Unlike consumption data (which comes directly from ad server logs),
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 working with pricing requires more diligence on the part of the
 publisher. This is to ensure their revenue data in yield analytics  
 ---
@@ -64,12 +66,8 @@ business rules on when you choose to intervene and adjust the pricing.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/common-journey-maps.html" class="link">Common Journey
+<a href="common-journey-maps.md" class="link">Common Journey
 Maps</a>
 
 

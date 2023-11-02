@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.26
 Description : Order Line Visibility: The Yield Analytics 8.26 release includes several
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -28,9 +30,8 @@ informational screens.
 
 ## Performance Tab
 
-<figure class="fig fignone">
-<p><img src="../images/98993164.png" class="image" width="900" /></p>
-</figure>
+![Yield Analytics UI - C]("media/c.png")
+
 
 
 
@@ -38,9 +39,7 @@ informational screens.
 
 ## Competition Tab
 
-<figure class="fig fignone">
-<p><img src="../images/98993166.png" class="image" width="900" /></p>
-</figure>
+![Yield Analytics UI - D]("media/d.png")
 
 
 
@@ -48,20 +47,14 @@ informational screens.
 
 ## Consumption Tab
 
-<figure class="fig fignone">
-<p><img src="../images/98993167.png" class="image" width="900" /></p>
-</figure>
+![Yield Analytics UI - E]("media/e.png")
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

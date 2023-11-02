@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.0
 Description : Welcome to Version 8.0 of yield analytics. The Availabilty Lookup Screen
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -72,13 +74,7 @@ target="_blank">https://link.gotomeeting.com/system-check</a>
 
 
 
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

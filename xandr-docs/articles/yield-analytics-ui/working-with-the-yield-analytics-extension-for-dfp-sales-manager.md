@@ -1,6 +1,8 @@
 ---
 Title : Working with the Yield Analytics Extension for DFP Sales Manager
 Description : ## Background
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 You can access yield analytics derived forecast and contention
 information directly in the DFP Sales Management interface using our
 Chrome browser extension. This method of accessing our data is
@@ -43,7 +45,7 @@ instructions:
     extension to confirm the installation.
 5.  View the yield analytics Sales Manager Extension in Chrome.
 6.  Click on the Customize and control Google Chrome link in the menu
-    bar (Note: This is the three vertical dots link)
+    bar (<b>Note:</b> This is the three vertical dots link)
 7.  Select More Tools, and
     click Extensions.
     1.  Click on the Details link of the yield analytics Sales Manager
@@ -76,7 +78,7 @@ taken to manually control the process.
 
 1.  View installed Chrome Extensions.
 2.  Click on the Customize and control Google Chrome link in the menu
-    bar (Note: This is the three vertical dots link).
+    bar (<b>Note:</b> This is the three vertical dots link).
     Select More Tools, and
     click Extensions.
     1.  Enable Developer Mode by clicking on the configuration option in
@@ -125,12 +127,7 @@ consumption.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/integrations.html" class="link">Integrations</a>
+<a href="integrations.md" class="link">Integrations</a>
 
 
 

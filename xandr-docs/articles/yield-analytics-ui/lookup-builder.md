@@ -1,6 +1,8 @@
 ---
 Title : Lookup Builder
 Description : Clicking the Lookup Builder tab
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 accesses the Lookup Builder screen. This is where you build any of your
 ---
 
@@ -33,7 +35,7 @@ Range screen.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 Availability lookup is always forward-facing. You cannot do lookups in
 the past. The default is Next Month, but you can change it to anything
@@ -107,7 +109,7 @@ Priority dialog that appears, choose a priority from the drop-down list
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 When you set a priority, all consumption (guaranteed and preemptible) at
 a worse priority than your selected priority - will be considered
@@ -277,7 +279,7 @@ following options by clicking the sprocket icon shown below: 
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 If the sprocket icon showed below is grayed-out, this means the lookup
 is not a multi-segment lookup. You will not be able to access any
@@ -335,7 +337,7 @@ Here’s the explanation for what the options do: 
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 if you are adding a new attribute across segments (and it doesn’t exist
 in any segment), it does not matter if you use the Duplicate Attribute
@@ -434,7 +436,6 @@ further until you get the results you are looking for.
 
 
 
-<div id="ID-00000acb__section_y3d_bv3_nwb" >
 
 ## Run/Add to Batch
 
@@ -453,27 +454,21 @@ you can Add to Batch.
 
 
 
-<div id="ID-00000acb__section_dnd_bv3_nwb" >
 
 ## Related Topics
 
-- <a href="availability-lookup.html" class="xref">Availability Lookup</a>
-- <a href="availability-lookup-quick-start-guide.html"
+- <a href="availability-lookup.md" class="xref">Availability Lookup</a>
+- <a href="availability-lookup-quick-start-guide.md"
   class="xref">Availability Lookup - Quick Start Guide</a>
-- <a href="lookup-results.html" class="xref">Lookup Results</a>
-- <a href="batch-builder.html" class="xref">Batch Builder</a>
-- <a href="batch-queue.html" class="xref">Batch Queue</a>
+- <a href="lookup-results.md" class="xref">Lookup Results</a>
+- <a href="batch-builder.md" class="xref">Batch Builder</a>
+- <a href="batch-queue.md" class="xref">Batch Queue</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/availability-lookup.html" class="link">Availability
+<a href="availability-lookup.md" class="link">Availability
 Lookup</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Edit Report Categories
 Description : 1.  Go to the Analyzer Screen and click on the open
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -25,12 +27,7 @@ Description : 1.  Go to the Analyzer Screen and click on the open
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-saved-reports.html" class="link">Working
+<a href="working-with-saved-reports.md" class="link">Working
 With Saved Reports</a>
 
 

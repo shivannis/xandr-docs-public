@@ -1,6 +1,8 @@
 ---
 Title : Builder Tab
 Description : Clicking the Builder tab accesses the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Builder screen. This is where you build your target expressions.
 ---
 
@@ -134,7 +136,6 @@ further until you get the results you are looking for.
 
 
 
-<div id="ID-000012f4__section_y45_dn1_nwb" >
 
 ## Building a Target Expression for Products
 
@@ -157,27 +158,21 @@ further until you get the results you are looking for.
 
 
 
-<div id="ID-000012f4__section_bs5_dn1_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000012f4__section_ip5_dn1_nwb" >
 
-- <a href="create-a-product.html" class="xref">Create a Product</a>
-- <a href="organize-products.html" class="xref">Organize Products</a>  
-
+- <a href="create-a-product.md" class="xref">Create a Product</a>
+- <a href="organize-products.md" class="xref">Organize Products</a>  
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/create-a-product.html" class="link">Create a
+<a href="create-a-product.md" class="link">Create a
 Product</a>
 
 

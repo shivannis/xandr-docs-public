@@ -1,6 +1,8 @@
 ---
 Title : Batch Builder
 Description : The Batch Builder allows you to collect multiple lookups that you can
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 then run as a batch. This is particularly useful if you want to run a
 ---
 
@@ -55,7 +57,6 @@ lookups either on a scheduled or ad hoc basis.
 
 
 
-<div id="ID-00000d3a__section_ldn_rkw_mwb" >
 
 ## Running a Batch
 
@@ -69,7 +70,7 @@ lookups either on a scheduled or ad hoc basis.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 You can run up to 10,000 lookups (default). If you need the ability to
 run more, please contact your client services representative.
@@ -78,31 +79,25 @@ run more, please contact your client services representative.
 
 
 
-<div id="ID-00000d3a__section_w2n_rkw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00000d3a__section_odn_rkw_mwb" >
 
-- <a href="availability-lookup.html" class="xref">Availability Lookup</a>
-- <a href="availability-lookup-quick-start-guide.html"
+- <a href="availability-lookup.md" class="xref">Availability Lookup</a>
+- <a href="availability-lookup-quick-start-guide.md"
   class="xref">Availability Lookup - Quick Start Guide</a>
-- <a href="lookup-builder.html" class="xref">Lookup Builder</a>
-- <a href="lookup-results.html" class="xref">Lookup Results</a>
-- <a href="batch-queue.html" class="xref">Batch Queue</a>
+- <a href="lookup-builder.md" class="xref">Lookup Builder</a>
+- <a href="lookup-results.md" class="xref">Lookup Results</a>
+- <a href="batch-queue.md" class="xref">Batch Queue</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/availability-lookup.html" class="link">Availability
+<a href="availability-lookup.md" class="link">Availability
 Lookup</a>
 
 

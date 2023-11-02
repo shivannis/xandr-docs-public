@@ -1,46 +1,26 @@
 ---
-Title : Background Threading on Android
-Description : <b>Tip:</b> This offering is currently in
-Alpha and is subject to change.
-ms.custom : android-sdk
-
+title: Background Threading on Android
+description: In this article, learn about the Background Threading feature on Android and the methods supported.
+ms.custom: android-sdk
 ---
 
+# Background threading on Android
 
-# Background Threading on Android
+> [!IMPORTANT]
+> This offering is currently in Alpha and is subject to change.
 
+> [!TIP]
+> The Background Threading feature enables MobileSDK to execute the ad requests for different AdUnits like banner, interstitial, native, and videos as a background thread instead of a UI thread. This feature can be turned on or off by a method (`enableBackgroundThreading`). By default, Background Threading feature is disabled in MobileSDK which can be enabled by using this method.
 
-
-
-
-<b>Tip:</b> This offering is currently in
-Alpha and is subject to change.
-
-The Background Threading feature enables MobileSDK to execute the ad
-requests for different AdUnits like banner, interstitial, native and
-videos as a background thread instead of an UI thread. This feature can
-be turned on or off by a method **(enableBackgroundThreading)**. By
-default, Background Threading feature is disabled in MobileSDK which can
-be enabled by using this method.
-
-
-
-
-
-## Methods 
+## Methods
 
 The following methods are supported.
 
-**enableBackgroundThreading(boolean)**
+### enableBackgroundThreading(boolean)
 
-Method used to enable or disable the Background Threading feature flag,
-based on which the AdRequests will be executed on or off the background
-thread. By default the boolean value for the method is set
-to false (which uses AsyncTask of Android). To enable the feature of
-background threading, the value needs to be set as true in the method.  
+Method used to enable or disable the Background Threading feature flag, based on which the AdRequests will be executed on or off the background thread. By default, the boolean value for the method is set to false (which uses AsyncTask of Android). To enable the feature of background threading, the value needs to be set as true in the method.  
   
-
-``` pre
+```
 /**
  * This API can be used to process Ad request on the BGThread,
  * @param enable
@@ -51,16 +31,11 @@ background threading, the value needs to be set as true in the method.
 public static void enableBackgroundThreading(boolean enable)
 ```
 
-**init()**
+### init()
 
-Method that initializes the MobileSDK early in the apps lifecycle and
-executes the tasks that require UI thread during an AdRequest ahead of
-time. This method ensures that the MobileSDK will use background
-threading only during the execution of the actual AdRequest. To know
-about completion of the init method, a listener can be passed along with
-the method.
+Method that initializes the MobileSDK early in the apps lifecycle and executes the tasks that require UI thread during an AdRequest ahead of time. This method ensures that the MobileSDK will use background threading only during the execution of the actual AdRequest. To know about completion of the init method, a listener can be passed along with the method.
 
-``` pre
+```
 /**
 * Should be called at the early lifecycle of the app.
 * You can pass in a listener to listen to the completion of the init method.
@@ -70,13 +45,9 @@ the method.
 public static void init(final Context context, final InitListener listener)
 ```
 
+## Example
 
-
-
-
-##  Example
-
-``` pre
+```
 // enable the Background threading
 SDKSettings.enableBackgroundThreading(true);
 // call init before requesting the Ad
@@ -89,9 +60,3 @@ SDKSettings.init(context, new SDKSettings.InitListener()
     }
   );
 ```
-
-
-
-
-
-

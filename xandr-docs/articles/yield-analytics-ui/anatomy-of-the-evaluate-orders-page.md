@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Evaluate Orders Page
 Description : The Evaluate Orders page has two
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 tabs where you can review proposed orders:
 - The Order Analytics tab displays
 some key metrics by which you can compare the proposal to the rest of
@@ -39,7 +41,6 @@ comprised of the following sections:
 
 
 
-<div id="ID-00002315__section_ivt_zcw_mwb" >
 
 ## Anatomy of the Evaluate Orders Order Lines Tab Interface
 
@@ -54,25 +55,23 @@ the following sections:
 
 
 
-<div id="ID-00002315__section_zvt_zcw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002315__section_kvt_zcw_mwb" >
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>
-- <a href="add-a-proposal-to-a-scenario.html" class="xref">Add a Proposal
+- <a href="add-a-proposal-to-a-scenario.md" class="xref">Add a Proposal
   to a Scenario</a>
-- <a href="working-with-scenarios-overview.html" class="xref">Working with
+- <a href="working-with-scenarios-overview.md" class="xref">Working with
   Scenarios</a>  
     
 
@@ -81,16 +80,13 @@ the following sections:
 
 
 - **[Add a Proposal to a
-  Scenario](../topics/add-a-proposal-to-a-scenario.html)**  
+  Scenario](add-a-proposal-to-a-scenario.md)**  
 - **[Using Alternative Products to Solve Pricing/Availability
-  Issues](../topics/using-alternative-products-to-solve-pricing-availability-issues.html)**  
+  Issues](using-alternative-products-to-solve-pricing-availability-issues.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/evaluate-orders-overview.html" class="link">Evaluate
+<a href="evaluate-orders-overview.md" class="link">Evaluate
 Orders Overview</a>
 
 

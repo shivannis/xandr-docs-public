@@ -1,6 +1,8 @@
 ---
 Title : Save an Availability Lookup
 Description : You can save a lookup for available inventory to run again later.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -25,31 +27,26 @@ You can save a lookup for available inventory to run again later.
     detailed description for the lookup, and then
     click OK.
 
-<div id="ID-00003844__section_yc2_4lj_nwb" >
 
 ## Related Topics
 
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="open-a-saved-availability-lookup.html" class="xref">Open a
+- <a href="open-a-saved-availability-lookup.md" class="xref">Open a
   Saved Availability Lookup</a>
-- <a href="anatomy-of-the-availability-lookup-page.html"
+- <a href="anatomy-of-the-availability-lookup-page.md"
   class="xref">Anatomy of the Availability Lookup Page</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:** <a
-href="../topics/check-availability-for-a-combination-of-targeting-attributes.html"
+href="check-availability-for-a-combination-of-targeting-attributes.md"
 class="link">Check Availability for a Combination of Targeting
 Attributes</a>
 

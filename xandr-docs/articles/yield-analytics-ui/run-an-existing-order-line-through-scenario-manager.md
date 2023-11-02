@@ -1,6 +1,8 @@
 ---
 Title : Run an Existing Order Line Through Scenario Manager
 Description : Run an existing order line through Scenario Manager to simulate how
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 changes to it would deliver and how it would affect other products. This
 ---
 
@@ -17,16 +19,15 @@ There are three main steps to using Scenario Manager to run a simulated
 change on an order line:
 
 1.  <a
-    href="run-an-existing-order-line-through-scenario-manager.html#ID-00002a7f__ID-00002a91"
+    href="run-an-existing-order-line-through-scenario-manager.md#ID-00002a7f__ID-00002a91"
     class="xref">Find the order line and add it to Scenario Manager</a>
 2.  <a
-    href="run-an-existing-order-line-through-scenario-manager.html#ID-00002a7f__ID-00002ab2"
+    href="run-an-existing-order-line-through-scenario-manager.md#ID-00002a7f__ID-00002ab2"
     class="xref">Modify the order line you're focusing on</a>
 3.  <a
-    href="run-an-existing-order-line-through-scenario-manager.html#ID-00002a7f__ID-00002adc"
+    href="run-an-existing-order-line-through-scenario-manager.md#ID-00002a7f__ID-00002adc"
     class="xref">Run and analyze the scenario</a>
 
-<div id="ID-00002a7f__ID-00002a91" >
 
 ## Find the Order Line and Add it to Scenario Manager
 
@@ -53,7 +54,6 @@ The order lines that you added to Scenario Manager appear twice:
 
 
 
-<div id="ID-00002a7f__ID-00002ab2" >
 
 ## Modify the Order Line You Are Focusing on
 
@@ -84,7 +84,6 @@ changes, and clicking Update. 
 
 
 
-<div id="ID-00002a7f__ID-00002adc" >
 
 ## Run and Analyze the Scenario
 
@@ -105,35 +104,28 @@ it will affect delivery.
 
 
 
-<div id="ID-00002a7f__section_idw_fkj_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002a7f__section_lcw_fkj_nwb" >
 
-- <a href="about-using-scenario-manager.html" class="xref">About Using
+- <a href="about-using-scenario-manager.md" class="xref">About Using
   Scenario Manager</a>
-- <a href="anatomy-of-the-scenario-manager-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-scenario-manager-page.md" class="xref">Anatomy
   of the Scenario Manager Page</a>
-- <a href="run-a-potential-order-through-scenario-manager.html"
+- <a href="run-a-potential-order-through-scenario-manager.md"
   class="xref">Run a Potential Order Through Scenario Manager</a>
-- <a href="run-an-existing-order-through-scenario-manager.html"
+- <a href="run-an-existing-order-through-scenario-manager.md"
   class="xref">Run an Existing Order Through Scenario Manager</a>
-- <a href="interpreting-scenario-manager-results.html"
+- <a href="interpreting-scenario-manager-results.md"
   class="xref">Interpreting Scenario Manager Results</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-scenario-manager-page.html"
+<a href="anatomy-of-the-scenario-manager-page.md"
 class="link">Anatomy of the Scenario Manager Page</a>
 
 

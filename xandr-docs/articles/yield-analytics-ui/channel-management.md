@@ -1,6 +1,8 @@
 ---
 Title : Channel Management
 Description : Channel Management uses a product-based approach to gather data. This
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -25,7 +27,7 @@ performance of these channels.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  The Channels Dashboard represents SSP data only. It does not include
 data from direct sales.
@@ -39,7 +41,7 @@ be By Revenue or By Impressions.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  This pie represents the percentages of your SSP channels. It does not
 represent your full revenue stack.
@@ -65,7 +67,7 @@ specific advertiser.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  When you select By Product,
 everything is going to map to a Total Network product by default.
@@ -80,7 +82,7 @@ Channel performance uses data from:
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  We do not always receive the advertiser information. (Just adding this
 as a caveat).
@@ -117,7 +119,7 @@ The Analyzer functionality is also available on this page.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  There are specific filters related to each SSP integration. Yield
 Analytics will work with the data that you allow us to access and
@@ -139,7 +141,7 @@ pre-fixed by the word Channel.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  All reporting is product-based. These metrics apply only to product and
 target, and not to order-lines dimensions.
@@ -245,7 +247,7 @@ to evaluate how your revenue compares on a product-by-product basis.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  We are happy to show whatever data the publisher deems valuable. By
 sharing details at a product level, or matching product mappings - it
@@ -258,6 +260,6 @@ helps us to better work with the publisher to expose that data.
 
 
 - **[Working with Channel
-  Metrics](../topics/working-with-channel-metrics.html)**  
+  Metrics](working-with-channel-metrics.md)**  
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Reset a User's Password
 Description : If you have administrative permissions, you can reset a user's password.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -21,24 +23,19 @@ If you have administrative permissions, you can reset a user's password.
     Password field, and then
     click Save.
 
-<div id="ID-00002f87__section_v1z_pjj_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-new-user.html" class="xref">Add a New User</a>
-- <a href="disable-a-user.html" class="xref">Disable a User</a>
-- <a href="delete-a-user.html" class="xref">Delete a User</a>
+- <a href="add-a-new-user.md" class="xref">Add a New User</a>
+- <a href="disable-a-user.md" class="xref">Disable a User</a>
+- <a href="delete-a-user.md" class="xref">Delete a User</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-users.html" class="link">Working With
+<a href="working-with-users.md" class="link">Working With
 Users</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Best Practices - Product Group
 Description : Product groups are helpful to organize your account, allowing you to
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 work faster and more efficiently. You can use groups as:
 ---
 
@@ -175,12 +177,8 @@ available as a dimension filter.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

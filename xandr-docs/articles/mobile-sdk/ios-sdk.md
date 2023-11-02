@@ -1,80 +1,20 @@
 ---
-Title : iOS SDK
-Description : Xandr's Mobile SDK for iOS provides an
-end-to-end solution for mobile app publishers. Use this library to
-ms.custom : android-ios
+title: iOS SDK
+description: Explore the iOS Mobile SDK, which offers an end-to-end solution for mobile app publishers.
+ms.custom: ios-sdk
 ---
-
 
 # iOS SDK
 
+Xandr's Mobile SDK for iOS provides an end-to-end solution for mobile app publishers. Use this library to request and receive bids over RTB. These bids can also compete, through mediation, directly with bids from other ad servers.
 
-
-Xandr's Mobile SDK for iOS provides an
-end-to-end solution for mobile app publishers. Use this library to
-request and receive bids over RTB. These bids can also compete,  through
-mediation,  directly with bids from other ad servers.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001cb1__entry__1" class="entry">Sections</th>
-<th id="ID-00001cb1__entry__2" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-sdk-ad-units.md" class="xref">Ad Units</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Instructions on
-implementing our ad units.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-sdk-code-samples.md" class="xref">Code Samples</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Code samples to help
-you get started.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-sdk-integration.md" class="xref">Integration Guide</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Instructions for
-integrating our SDK with your project.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-14-0-faq.md" class="xref">iOS 14.0 FAQ</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Questions regarding
-the changes in iOS 14.0 for app tracking.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-mediation.md" class="xref">Mediation Guide</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Instructions on how to
-to mediate our SDK.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="sdk-privacy-for-ios.md" class="xref">Privacy</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">How our SDK handles
-privacy and integrates with your privacy needs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="ios-sdk-release-notes.md" class="xref">Release Notes</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">A collection of our
-SDK release notes.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001cb1__entry__1"><a
-href="migrating-ios-sdk-v7-to-8-0.md" class="xref">Migrating iOS SDK
-v7 to 8.0</a></td>
-<td class="entry" headers="ID-00001cb1__entry__2">Instructions to
-migrate iOS SDK v7 to 8.0</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Sections | Description |
+|:---|:---|
+| [Ad Units](ios-sdk-ad-units.md) | Instructions on implementing our ad units. |
+| [Code Samples](ios-sdk-code-samples.md) | Code samples to help you get started. |
+| [Integration Guide](ios-sdk-integration.md) | Instructions for integrating our SDK with your project. |
+| [iOS 14.0 FAQ](ios-14-0-faq.md) | Questions regarding the changes in iOS 14.0 for app tracking. |
+| [Mediation Guide](ios-mediation.md) | Instructions on how to to mediate our SDK. |
+| [Privacy](sdk-privacy-for-ios.md) | How our SDK handles privacy and integrates with your privacy needs. |
+| [Release Notes](ios-sdk-release-notes.md) | A collection of our SDK release notes. |
+| [Migrating iOS SDK v7 to 8.0](migrating-ios-sdk-v7-to-8-0.md) | Instructions to migrate iOS SDK v7 to 8.0. |

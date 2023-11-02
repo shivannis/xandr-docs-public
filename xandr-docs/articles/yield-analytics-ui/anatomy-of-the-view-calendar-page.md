@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the View Calendar Page
 Description : The View Calendar page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Availability tab shows a daily
 summary of future availability by month.
 ---
@@ -63,7 +65,6 @@ with caution.
 
 
 
-<div id="ID-00003751__section_lyd_nhw_mwb" >
 
 ## List View Details
 
@@ -78,21 +79,19 @@ booking</p>
 
 
 
-<div id="ID-00003751__section_ezd_nhw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00003751__section_qyd_nhw_mwb" >
 
 <figure id="ID-00003751__fig_ryd_nhw_mwb" class="fig fignone">
 <ul>
-<li><a href="view-availability-in-a-calendar.html" class="xref">View
+<li><a href="view-availability-in-a-calendar.md" class="xref">View
 Availability in a Calendar</a></li>
-<li><a href="switch-between-the-calendar-and-list-views.html"
+<li><a href="switch-between-the-calendar-and-list-views.md"
 class="xref">Switch Between the Calendar and List Views</a></li>
-<li><a href="availability-overview-old-workflow.html"
+<li><a href="availability-overview-old-workflow.md"
 class="xref">Availability Overview (Old Workflow)</a></li>
 </ul>
 </figure>
@@ -101,12 +100,7 @@ class="xref">Availability Overview (Old Workflow)</a></li>
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-availability-dashboard-page.html"
+<a href="anatomy-of-the-availability-dashboard-page.md"
 class="link">Anatomy of the Availability Dashboard Page</a>
 
 

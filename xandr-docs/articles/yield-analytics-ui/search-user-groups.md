@@ -1,6 +1,8 @@
 ---
 Title : Search User Groups
 Description : If you have administrative permissions, you can quickly search for user
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 groups by group name, username, or permission. For example, you may want
 ---
 
@@ -33,26 +35,22 @@ want to find all groups that have permissions for a particular feature.
 3.  Click Search. The Groups panel is redisplayed to show only the
     groups that meet your search criteria.
 
-<div id="ID-000031e6__section_vsl_vvj_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-user-group.html" class="xref">Add a User Group</a>
-- <a href="edit-a-user-group.html" class="xref">Edit a User Group</a>
-- <a href="duplicate-a-user-group.html" class="xref">Duplicate a User
+- <a href="add-a-user-group.md" class="xref">Add a User Group</a>
+- <a href="edit-a-user-group.md" class="xref">Edit a User Group</a>
+- <a href="duplicate-a-user-group.md" class="xref">Duplicate a User
   Group</a>
-- <a href="delete-a-user-group.html" class="xref">Delete a User Group</a>
+- <a href="delete-a-user-group.md" class="xref">Delete a User Group</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-user-groups.html" class="link">Working
+<a href="working-with-user-groups.md" class="link">Working
 With User Groups</a>
 
 

@@ -1,63 +1,31 @@
 ---
-Title : iOS Custom Adaptors
-Description : Custom adaptors allow our SDK to call out to another SDK installed on
-the same device, usually for mediation. This document describes the code
-ms.custom : android-ios
+title: iOS Custom Adaptors
+description: In this article, learn about iOS custom adaptors and the code you must write to create your own custom adaptors.
+ms.custom: ios-sdk
 ---
 
+# iOS custom adaptors
 
-# iOS Custom Adaptors
+Custom adaptors allow our SDK to call out to another SDK installed on the same device, usually for mediation. This document describes the code you must write to create your own custom adaptors.
 
-
-
-Custom adaptors allow our SDK to call out to another SDK installed on
-the same device, usually for mediation. This document describes the code
-you must write to create your own custom adaptors.
-
-**Note that the protocols described here are exactly what we used to
-implement our own mediation adaptors.**
-
-
+> [!NOTE]
+> The protocols described here are exactly what we used to implement our own mediation adaptors.
 
 ## Banners
 
-In order to make mediation calls to another SDK to show banners, you
-must implement the `ANCustomAdapterBanner` protocol. There is only one
-method specified by this protocol: `requestBannerAdWithSize`. This
-method handles instantiating the mediated SDK and using it to make ad
-requests. It should fire events from the mediated SDK by calling
-delegate methods like `didLoadBannerAd`. See the examples below for
-details.
+In order to make mediation calls to another SDK to show banners, you must implement the `ANCustomAdapterBanner` protocol. There is only one method specified by this protocol: `requestBannerAdWithSize`. This method handles instantiating the mediated SDK and using it to make ad requests. It should fire events from the mediated SDK by calling delegate methods like `didLoadBannerAd`. See the examples below for details.
 
 `requestBannerWithAdSize` takes the following arguments:
 
 - `size`: The size of the mediated ad view.
 - `rootViewController`: The controller for the mediated ad view.
-- `parameterString`: An optional opaque string passed from the server,
-  this can be used to define SDK-specific parameters such as additional
-  targeting information. The encoding of the contents of this string are
-  entirely up to the implementation of the third-party SDK adaptor. In
-  other words, the parameter must be populated with values understood by
-  the third-party SDK’s ad server.
-- `idString`: The ID of the ad unit as understood by the third-party
-  SDK’s ad server. It refers to a specific place where an advertiser can
-  show ads in a mobile app. This ID is opaque to our mobile SDK; the
-  ID’s contents and their encoding are up to the implementation of the
-  third-party SDK.
-- `targetingParameters`: Any ad targeting parameters such as age,
-  gender, or location that you would like to send to the mediated SDK.
-  You are responsible for sending the mediated SDK parameters that it
-  can understand.
+- `parameterString`: An optional opaque string passed from the server, this can be used to define SDK-specific parameters such as additional targeting information. The encoding of the contents of this string are entirely up to the implementation of the third-party SDK adaptor. In other words, the parameter must be populated with values understood by the third-party SDK’s ad server.
+- `idString`: The ID of the ad unit as understood by the third-party SDK’s ad server. It refers to a specific place where an advertiser can show ads in a mobile app. This ID is opaque to our mobile SDK; the ID’s contents and their encoding are up to the implementation of the third-party SDK.
+- `targetingParameters`: Any ad targeting parameters such as age, gender, or location that you would like to send to the mediated SDK. You are responsible for sending the mediated SDK parameters that it can understand.
 
-Below is an example adaptor that mediates a fictional “Godzilla” SDK to
-show banner ads. For more information on the callbacks in this example,
-see the
-<a href="ios-custom-adaptors.md#ID-00002082__required_callbacks"
-class="xref">Required Callbacks</a> and
-<a href="ios-custom-adaptors.md#ID-00002082__optional_callbacks"
-class="xref">Optional Callbacks</a> sections below.
+Below is an example adaptor that mediates a fictional “Godzilla” SDK to show banner ads. For more information on the callbacks in this example, see the [Required Callbacks](#required-callbacks) and [Optional Callbacks](#optional-callbacks) sections below.
 
-``` pre
+``` 
 @implementation GodzillaBannerAdaptor
 @synthesize delegate;
 #pragma mark GodzillaCustomAdapterBanner
@@ -127,44 +95,20 @@ class="xref">Optional Callbacks</a> sections below.
 }
 ```
 
-
-
-
-
 ## Interstitials
 
-In order to make mediation calls to another SDK to show interstitials,
-you must implement the `ANCustomAdapterInterstitial` protocol. There are
-three methods specified by this protocol:
+In order to make mediation calls to another SDK to show interstitials, you must implement the `ANCustomAdapterInterstitial` protocol. There are three methods specified by this protocol:
 
-- `requestInterstitialAdWithParameter`: Requests the interstitial ads
-  from the mediated SDK. It takes three arguments:
-  - `parameterString`: An optional opaque string passed from the server,
-    this can be used to define SDK-specific parameters such as
-    additional targeting information. The encoding of the contents of
-    this string are entirely up to the implementation of the third-party
-    SDK adaptor. In other words, the parameter must be populated with
-    values understood by the third-party SDK’s ad server.
-  - `idString`: The ID of the ad unit as understood by the third-party
-    SDK’s ad server. It refers to a specific place where an advertiser
-    can show ads in a mobile app. This ID is opaque to our mobile SDK;
-    the ID’s contents and their encoding are up to the implementation of
-    the third-party SDK.
-  - `targetingParameters`: Any ad targeting parameters such as age,
-    gender, or location that you would like to send to the mediated SDK.
-    You are responsible for sending the mediated SDK parameters that it
-    can understand.
-- `isReady`: Whether or not there is an interstitial ad loaded and ready
-  to show to the user.
-- `presentFromViewController`: Displays the interstitial ad to the user.
-  Should include a check to `isReady` to see if it can operate. Takes
-  one argument, `viewController`, which is the view controller used to
-  display the interstitial.
+- `requestInterstitialAdWithParameter`: Requests the interstitial ads from the mediated SDK. It takes three arguments:
+  - `parameterString`: An optional opaque string passed from the server, this can be used to define SDK-specific parameters such as additional targeting information. The encoding of the contents of this string are entirely up to the implementation of the third-party SDK adaptor. In other words, the parameter must be populated with values understood by the third-party SDK’s ad server.
+  - `idString`: The ID of the ad unit as understood by the third-party SDK’s ad server. It refers to a specific place where an advertiser can show ads in a mobile app. This ID is opaque to our mobile SDK; the ID’s contents and their encoding are up to the implementation of the third-party SDK.
+  - `targetingParameters`: Any ad targeting parameters such as age, gender, or location that you would like to send to the mediated SDK. You are responsible for sending the mediated SDK parameters that it can understand.
+- `isReady`: Whether or not there is an interstitial ad loaded and ready to show to the user.
+- `presentFromViewController`: Displays the interstitial ad to the user. Should include a check to `isReady` to see if it can operate. Takes one argument, `viewController`, which is the view controller used to display the interstitial.
 
-In this example code, we mediate a fictional “Godzilla” SDK and have it
-show an interstitial ad:
+In this example code, we mediate a fictional “Godzilla” SDK and have it show an interstitial ad:
 
-``` pre
+``` 
 @implementation GodzillaInterstitialAdaptor
 @synthesize delegate;
 #pragma mark GodzillaCustomAdapterInterstitial
@@ -257,73 +201,37 @@ show an interstitial ad:
 }
 ```
 
+## Required callbacks
 
+The callbacks listed below must be implemented in your custom adaptor. You can see examples of their use in the code samples elsewhere on this page.
 
+To indicate a successful ad request, call one of the following depending on whether the ad is a banner or interstitial:
 
-## Required Callbacks
+- `- (void)didLoadBannerAd:(UIView *)view`: The mediated SDK’s ad request completed and returned a banner successfully.
+- `- (void)didLoadInterstitialAd:(id<ANCustomAdapterInterstitial>)adaptor`: The mediated SDK’s ad request completed and returned an interstitial. Pass a reference to the current adaptor.
 
-The callbacks listed below must be implemented in your custom adaptor.
-You can see examples of their use in the code samples elsewhere on this
-page.
+To indicate an unsuccessful ad request whether the ad is a banner or interstitial, call:
 
-To indicate a successful ad request, call one of the following depending
-on whether the ad is a banner or interstitial:
+- `- (void)didFailToLoadAd:(ANAdResponseCode)errorCode`: The mediated SDK’s ad request failed to return a valid ad.
 
-- `- (void)didLoadBannerAd:(UIView *)view`: The mediated SDK’s ad
-  request completed and returned a banner successfully.
-- `- (void)didLoadInterstitialAd:(id<ANCustomAdapterInterstitial>)adaptor`:
-  The mediated SDK’s ad request completed and returned an interstitial.
-  Pass a reference to the current adaptor.
+Furthermore, for interstitial adaptors, a failed attempt to show() should call:
 
-To indicate an unsuccessful ad request whether the ad is a banner or
-interstitial, call:
+- `- (void)failedToDisplayAd`: The mediated SDK received a call to present an interstitial, but no ad was available or the SDK failed to present.
 
-- `- (void)didFailToLoadAd:(ANAdResponseCode)errorCode`: The mediated
-  SDK’s ad request failed to return a valid ad.
+## Optional callbacks
 
-Furthermore, for interstitial adaptors, a failed attempt to show()
-should call:
-
-- `- (void)failedToDisplayAd`: The mediated SDK received a call to
-  present an interstitial, but no ad was available or the SDK failed to
-  present.
-
-
-
-
-## Optional Callbacks
-
-The callbacks listed below should be implemented in custom adaptors for
-both banners and interstitials. Note that they are not strictly
+The callbacks listed below should be implemented in custom adaptors for both banners and interstitials. Note that they are not strictly
 required.
 
-- `- (void)adWasClicked`: The ad was clicked by the user while being
-  displayed by the mediated SDK.
-- `- (void)willPresentAd`: The user interacts with the ad and the
-  mediated SDK is about to present a modal view.
+- `- (void)adWasClicked`: The ad was clicked by the user while being displayed by the mediated SDK.
+- `- (void)willPresentAd`: The user interacts with the ad and the mediated SDK is about to present a modal view.
 - `- (void)didPresentAd`: The mediated SDK has presented the modal view.
-- `- (void)willCloseAd`: The mediated SDK is about to close the modal
-  view.
+- `- (void)willCloseAd`: The mediated SDK is about to close the modal view.
 - `- (void)didCloseAd`: The mediated SDK closes the modal view.
-- `- (void)willLeaveApplication`: The mediated SDK will launch an
-  external application.
+- `- (void)willLeaveApplication`: The mediated SDK will launch an external application.
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="ios-sdk-integration.md"
-  class="xref" target="_blank">Integrate with iOS</a>
-- <a href="mediate-with-ios.md" class="xref">Mediate with iOS</a>
-- <a
-  href="anjam-user-guide.md"
-  class="xref" target="_blank">ANJAM User Guide</a>
-
-
-
-
-
-
+- [Integrate with iOS](ios-sdk-integration.md)
+- [Mediate with iOS](mediate-with-ios.md)
+- [ANJAM User Guide](anjam-user-guide.md)

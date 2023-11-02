@@ -1,6 +1,8 @@
 ---
 Title : Reports as Pivot Table
 Description : If you are familiar with using pivot tables, you'll find yield
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 analytics Reporting easy to use. Both systems essentially work the same.
 ---
 
@@ -14,9 +16,7 @@ analytics Reporting easy to use. Both systems essentially work the same.
 
 Below is a visual that describes how yield analytics builds out reports:
 
-<figure class="fig fignone">
-<p><img src="../images/85823818.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - FF]("media/ff.png")
 
 
 
@@ -64,12 +64,8 @@ adding multiple Values.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

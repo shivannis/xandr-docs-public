@@ -1,6 +1,8 @@
 ---
 Title : Availability Lookup
-Description : Tip: Note
+Description : <b>Tip:</b> Note
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 The old Check Availability screen will still be active for a short
 period of time. If you prefer to continue to use the old screen, the
 ---
@@ -12,7 +14,7 @@ period of time. If you prefer to continue to use the old screen, the
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 The old Check Availability screen will still be active for a short
 period of time. If you prefer to continue to use the old screen, the
@@ -34,21 +36,21 @@ system.
 
 Availability Lookup consists of four main screens: 
 
-<a href="lookup-builder.html" class="xref">Lookup Builder</a>
+<a href="lookup-builder.md" class="xref">Lookup Builder</a>
 
-<a href="lookup-results.html" class="xref">Lookup Results</a>
+<a href="lookup-results.md" class="xref">Lookup Results</a>
 
-<a href="batch-builder.html" class="xref">Batch Builder</a>
+<a href="batch-builder.md" class="xref">Batch Builder</a>
 
-<a href="batch-queue.html" class="xref">Batch Queue</a>
+<a href="batch-queue.md" class="xref">Batch Queue</a>
 
 
 
 - **[Availability Lookup - Quick Start
-  Guide](../topics/availability-lookup-quick-start-guide.html)**  
-- **[Lookup Builder](../topics/lookup-builder.html)**  
-- **[Lookup Results](../topics/lookup-results.html)**  
-- **[Batch Builder](../topics/batch-builder.html)**  
-- **[Batch Queue](../topics/batch-queue.html)**  
+  Guide](availability-lookup-quick-start-guide.md)**  
+- **[Lookup Builder](lookup-builder.md)**  
+- **[Lookup Results](lookup-results.md)**  
+- **[Batch Builder](batch-builder.md)**  
+- **[Batch Queue](batch-queue.md)**  
 
 

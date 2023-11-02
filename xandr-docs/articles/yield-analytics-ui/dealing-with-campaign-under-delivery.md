@@ -1,6 +1,8 @@
 ---
 Title : Dealing with Campaign Under-Delivery
 Description : Diagnosing and solving under-delivery concerns can be a complex task.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -144,12 +146,8 @@ Analyzer, to understand the impact of priority changes.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/common-journey-maps.html" class="link">Common Journey
+<a href="common-journey-maps.md" class="link">Common Journey
 Maps</a>
 
 

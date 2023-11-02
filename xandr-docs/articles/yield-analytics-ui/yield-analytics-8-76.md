@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.76
 Description : <table class="table">
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 <thead class="thead">
 <tr class="header row">
 <th id="ID-00003ddb__entry__1" class="entry">Fixes, Improvements and
@@ -42,9 +44,9 @@ integrations</td>
 <td class="entry" headers="ID-00003ddb__entry__1">Yield Analytics API
 docs have been migrated to the Xandr
 Documentation Center. The most recent information can be found at: <a
-href="https://docs.xandr.com/bundle/yield-analytics-api/page/topics/yield-analytics-api.html"
+href="yield-analytics-api/yield-analytics-api.md"
 class="xref"
-target="_blank">https://docs.xandr.com/bundle/yield-analytics-api/page/topics/yield-analytics-api.html</a></td>
+target="_blank">yield-analytics-api/yield-analytics-api.md</a></td>
 <td class="entry" headers="ID-00003ddb__entry__2">N/A</td>
 </tr>
 </tbody>
@@ -52,12 +54,9 @@ target="_blank">https://docs.xandr.com/bundle/yield-analytics-api/page/topics/yi
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

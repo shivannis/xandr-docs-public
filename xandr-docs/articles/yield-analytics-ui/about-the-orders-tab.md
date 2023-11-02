@@ -1,6 +1,8 @@
 ---
 Title : About the Orders Tab
 Description : Use the Orders tab to investigate
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 orders and order lines that are underdelivering.
 ---
 
@@ -68,33 +70,28 @@ definitions.
 
 
 
-<div id="ID-00001e21__section-5068505b-9ea5-4f4d-ab60-e627d52b60f3"
 >
 
 ## Related Topics
 
-- <a href="anatomy-of-the-orders-dashboard-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-orders-dashboard-page.md" class="xref">Anatomy
   of the Orders Dashboard Page</a>  
-- <a href="anatomy-of-the-order-visibility-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-order-visibility-page.md" class="xref">Anatomy
   of the Order Visibility Page</a>  
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>  
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>  
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>  
-- <a href="glossary.html" class="xref">Glossary</a>
+- <a href="glossary.md" class="xref">Glossary</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Solving Delivery Issues with Order Line Visibility
 Description : In addition to being a dashboard for a given order line, you can use
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Order Line Visibility page as a tool for troubleshooting order line
 delivery.
 ---
@@ -14,7 +16,6 @@ In addition to being a dashboard for a given order line, you can use
 the Order Line Visibility page as a tool for troubleshooting order line
 delivery.
 
-<div id="ID-00002235__section_fdf_h1k_nwb" >
 
 ## Solving Delivery Issues by Analyzing Competition
 
@@ -50,32 +51,26 @@ display information for that order line.
 
 
 
-<div id="ID-00002235__section_tdf_h1k_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002235__section_gdf_h1k_nwb" >
 
-- <a href="about-the-orders-tab.html" class="xref">About the Orders
+- <a href="about-the-orders-tab.md" class="xref">About the Orders
   Tab</a>
-- <a href="check-revenue-against-goal.html" class="xref">Check Revenue
+- <a href="check-revenue-against-goal.md" class="xref">Check Revenue
   Against Goal</a>
-- <a href="find-an-order-line.html" class="xref">Find an Order Line</a>
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="find-an-order-line.md" class="xref">Find an Order Line</a>
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

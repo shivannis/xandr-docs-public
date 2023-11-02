@@ -1,6 +1,8 @@
 ---
 Title : Find and View a List of Products
 Description : You can search across a list of products and drill down to see details.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -47,7 +49,7 @@ You can search across a list of products and drill down to see details.
 
 
 
-Tip: From within your product search
+<b>Tip:</b> From within your product search
 results, you can do the following:
 
 - View the details of a product – Click a product's name in the
@@ -74,34 +76,28 @@ results, you can do the following:
 
 
 
-<div id="ID-00000fec__section_mlh_4rc_nwb" >
 
 ## Related Topics
 
-- <a href="anatomy-of-the-find-products-page.html" class="xref">Anatomy of
+- <a href="anatomy-of-the-find-products-page.md" class="xref">Anatomy of
   the Find Products Page</a>
-- <a href="products-overview.html" class="xref">Products Overview</a>
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="products-overview.md" class="xref">Products Overview</a>
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>
-- <a href="edit-the-details-of-a-product.html" class="xref">Edit the
+- <a href="edit-the-details-of-a-product.md" class="xref">Edit the
   Details of a Product</a>
-- <a href="analyze-product-overlaps.html" class="xref">Analyze Product
+- <a href="analyze-product-overlaps.md" class="xref">Analyze Product
   Overlaps</a>
-- <a href="create-a-product.html" class="xref">Create a Product</a>
-- <a href="builder-tab.html" class="xref">Builder Tab</a>
-- <a href="organize-products.html" class="xref">Organize Products</a>  
+- <a href="create-a-product.md" class="xref">Create a Product</a>
+- <a href="builder-tab.md" class="xref">Builder Tab</a>
+- <a href="organize-products.md" class="xref">Organize Products</a>  
     
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

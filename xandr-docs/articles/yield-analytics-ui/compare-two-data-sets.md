@@ -1,6 +1,8 @@
 ---
 Title : Compare Two Data Sets
 Description : You can compare information by applying different metric filters to two
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 data sets. For example, you might want to compare two different date
 ---
 
@@ -29,36 +31,32 @@ In the chart view, information for the two data sets appears in
 side-by-side bars. In the graph view, information for the two data sets
 appears in separate adjacent columns.
 
-<div id="ID-000017d8__section_ovy_gx1_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="anatomy-of-the-reports-tab.html" class="xref">Anatomy of the
+- <a href="anatomy-of-the-reports-tab.md" class="xref">Anatomy of the
   Reports Tab</a>
-- <a href="create-a-new-report.html" class="xref">Create a New Report</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>
-- <a href="schedule-a-report-to-be-sent.html" class="xref">Schedule a
+- <a href="schedule-a-report-to-be-sent.md" class="xref">Schedule a
   Report to be Sent</a>
-- <a href="export-a-report.html" class="xref">Export a Report</a>
+- <a href="export-a-report.md" class="xref">Export a Report</a>
 - <a
-  href="reporting-options-for-dimension-primary-and-secondary-metrics.html"
+  href="reporting-options-for-dimension-primary-and-secondary-metrics.md"
   class="xref">Reporting Options for Dimension, Primary, and Secondary
   Metrics</a>  
     
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/anatomy-of-the-reports-tab.html" class="link">Anatomy
+<a href="anatomy-of-the-reports-tab.md" class="link">Anatomy
 of the Reports Tab</a>
 
 

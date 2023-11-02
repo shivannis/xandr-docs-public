@@ -1,6 +1,8 @@
 ---
 Title : Schedule an Availability Lookup
 Description : When you email a report to yourself or designated recipients you can
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 send it immediately or on a recurring schedule.
 ---
 
@@ -44,37 +46,32 @@ If you have administrative access, you can
 select Admin Tools \> View Saved
 Lookups to view, edit, and delete scheduled lookups.
 
-<div id="ID-000039a9__section_kql_bnj_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
-- <a href="anatomy-of-the-availability-lookup-page.html"
+- <a href="anatomy-of-the-availability-lookup-page.md"
   class="xref">Anatomy of the Availability Lookup Page</a>
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="save-an-availability-lookup.html" class="xref">Save an
+- <a href="save-an-availability-lookup.md" class="xref">Save an
   Availability Lookup</a>
-- <a href="open-a-saved-availability-lookup.html" class="xref">Open a
+- <a href="open-a-saved-availability-lookup.md" class="xref">Open a
   Saved Availability Lookup</a>
-- <a href="schedule-a-report-to-be-sent.html" class="xref">Schedule a
+- <a href="schedule-a-report-to-be-sent.md" class="xref">Schedule a
   Report to be Sent</a>
-- <a href="working-with-saved-availability-lookups.html"
+- <a href="working-with-saved-availability-lookups.md"
   class="xref">Working With Saved Availability Lookups</a>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-saved-availability-lookups.html"
+<a href="working-with-saved-availability-lookups.md"
 class="link">Working With Saved Availability Lookups</a>
 
 

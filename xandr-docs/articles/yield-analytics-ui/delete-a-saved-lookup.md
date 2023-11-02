@@ -1,6 +1,8 @@
 ---
 Title : Delete a Saved Lookup
 Description : If you have administrative permissions, you can delete saved
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 availability lookups. This erases all related information, including any
 ---
 
@@ -22,29 +24,25 @@ scheduling and batch processed results.
 4.  Click Delete to confirm the
     deletion.
 
-<div id="ID-00003a6a__section_ygq_sjb_nwb" >
 
 ## Related Topics
 
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
-- <a href="schedule-an-availability-lookup.html" class="xref">Schedule an
+- <a href="schedule-an-availability-lookup.md" class="xref">Schedule an
   Availability Lookup</a>
-- <a href="view-and-search-for-saved-availability-lookups.html"
+- <a href="view-and-search-for-saved-availability-lookups.md"
   class="xref">View and Search for Saved Availability Lookups</a>
-- <a href="remove-the-scheduling-from-a-saved-lookup.html"
+- <a href="remove-the-scheduling-from-a-saved-lookup.md"
   class="xref">Remove the Scheduling From a Saved Lookup</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-saved-availability-lookups.html"
+<a href="working-with-saved-availability-lookups.md"
 class="link">Working With Saved Availability Lookups</a>
 
 

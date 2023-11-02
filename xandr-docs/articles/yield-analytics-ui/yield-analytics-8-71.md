@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.71
 Description : <table class="table">
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 <thead class="thead">
 <tr class="header row">
 <th id="ID-00003e84__entry__1" class="entry">Fixes, Improvements and
@@ -52,12 +54,9 @@ reporting if desired.</td>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

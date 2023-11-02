@@ -1,6 +1,8 @@
 ---
 Title : About Reporting
 Description : When you first access the Reports tab,
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 you can open a number of predefined reports that answer specific
 inquiries (e.g., What is the sell-through of my network?). In addition,
 ---
@@ -38,30 +40,24 @@ grouping, and view the results as different graphs or tables.
 
 ## Related Topics
 
-- <a href="anatomy-of-the-reports-tab.html" class="xref">Anatomy of the
+- <a href="anatomy-of-the-reports-tab.md" class="xref">Anatomy of the
   Reports Tab</a>
-- <a href="create-a-new-report.html" class="xref">Create a New Report</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="compare-two-data-sets.html" class="xref">Compare Two Data
+- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
   Sets</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>
 - <a
-  href="reporting-options-for-dimension-primary-and-secondary-metrics.html"
+  href="reporting-options-for-dimension-primary-and-secondary-metrics.md"
   class="xref">Reporting Options for Dimension, Primary, and Secondary
   Metrics</a>
 
 
 
 
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

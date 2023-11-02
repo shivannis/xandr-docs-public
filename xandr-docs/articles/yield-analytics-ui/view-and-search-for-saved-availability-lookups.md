@@ -1,6 +1,8 @@
 ---
 Title : View and Search for Saved Availability Lookups
 Description : If you have administrative permissions, you can view saved availability
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 lookups.
 ---
 
@@ -35,29 +37,24 @@ lookups.
       different option (e.g., to search for lookups by lookup name only,
       select Name).
 
-<div id="ID-000039fe__section_brk_dfk_nwb" >
 
 ## Related Topics
 
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
-- <a href="schedule-an-availability-lookup.html" class="xref">Schedule an
+- <a href="schedule-an-availability-lookup.md" class="xref">Schedule an
   Availability Lookup</a>
-- <a href="remove-the-scheduling-from-a-saved-lookup.html"
+- <a href="remove-the-scheduling-from-a-saved-lookup.md"
   class="xref">Remove the Scheduling From a Saved Lookup</a>
-- <a href="delete-a-saved-lookup.html" class="xref">Delete a Saved
+- <a href="delete-a-saved-lookup.md" class="xref">Delete a Saved
   Lookup</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-saved-availability-lookups.html"
+<a href="working-with-saved-availability-lookups.md"
 class="link">Working With Saved Availability Lookups</a>
 
 

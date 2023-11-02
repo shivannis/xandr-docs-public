@@ -1,6 +1,8 @@
 ---
 Title : Lookup Results
 Description : Clicking the Lookup Results tab
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 accesses the Lookup Results screen.
 ---
 
@@ -59,7 +61,6 @@ same targeting but different configurations side by side.
 
 
 
-<div id="ID-00000c96__section_vk4_3v3_nwb" >
 
 ## Button Functionality
 
@@ -117,31 +118,25 @@ Batch Builder screen.
 
 
 
-<div id="ID-00000c96__section_am4_3v3_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00000c96__section_zk4_3v3_nwb" >
 
-- <a href="availability-lookup.html" class="xref">Availability Lookup</a>
-- <a href="availability-lookup-quick-start-guide.html"
+- <a href="availability-lookup.md" class="xref">Availability Lookup</a>
+- <a href="availability-lookup-quick-start-guide.md"
   class="xref">Availability Lookup - Quick Start Guide</a>
-- <a href="lookup-builder.html" class="xref">Lookup Builder</a>
-- <a href="batch-builder.html" class="xref">Batch Builder</a>
-- <a href="batch-queue.html" class="xref">Batch Queue</a>
+- <a href="lookup-builder.md" class="xref">Lookup Builder</a>
+- <a href="batch-builder.md" class="xref">Batch Builder</a>
+- <a href="batch-queue.md" class="xref">Batch Queue</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/availability-lookup.html" class="link">Availability
+<a href="availability-lookup.md" class="link">Availability
 Lookup</a>
 
 

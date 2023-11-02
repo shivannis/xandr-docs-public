@@ -1,6 +1,8 @@
 ---
 Title : Common Journey Maps
 Description : A journey map is the path a user takes from problem to solution by using
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 yield analytics  . Some common journey maps are:
 ---
 
@@ -32,12 +34,12 @@ yield analytics  . Some common journey maps are:
 
 
 - **[Dealing with Campaign
-  Under-Delivery](../topics/dealing-with-campaign-under-delivery.html)**  
+  Under-Delivery](dealing-with-campaign-under-delivery.md)**  
 - **[Fulfilling a Proposed
-  Campaign](../topics/fulfilling-a-proposed-campaign.html)**  
+  Campaign](fulfilling-a-proposed-campaign.md)**  
 - **[Pricing a Proposed
-  Campaign](../topics/pricing-a-proposed-campaign.html)**  
+  Campaign](pricing-a-proposed-campaign.md)**  
 - **[Common Report
-  Configurations](../topics/common-report-configurations.html)**  
+  Configurations](common-report-configurations.md)**  
 
 

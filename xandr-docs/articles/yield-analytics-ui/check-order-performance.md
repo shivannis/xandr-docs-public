@@ -1,6 +1,8 @@
 ---
 Title : Check Order Performance
 Description : Use the Order Performance widget to quickly view how an order or order
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 line is performing.
 ---
 
@@ -26,23 +28,22 @@ line is performing.
     click What should I do? to
     launch Scenario Manager.
 
-<div id="ID-00001f2e__section_ayc_4v1_nwb" >
 
 ## Related Topics
 
-- <a href="about-the-orders-tab.html" class="xref">About the Orders
+- <a href="about-the-orders-tab.md" class="xref">About the Orders
   Tab</a>
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>
-- <a href="anatomy-of-the-orders-dashboard-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-orders-dashboard-page.md" class="xref">Anatomy
   of the Orders Dashboard Page</a>
-- <a href="anatomy-of-the-order-visibility-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-order-visibility-page.md" class="xref">Anatomy
   of the Order Visibility Page</a>
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>
-- <a href="working-with-scenarios-overview.html" class="xref">Working with
+- <a href="working-with-scenarios-overview.md" class="xref">Working with
   Scenarios</a>  
     
 
@@ -50,12 +51,8 @@ line is performing.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-orders-dashboard-page.html"
+<a href="anatomy-of-the-orders-dashboard-page.md"
 class="link">Anatomy of the Orders Dashboard Page</a>
 
 

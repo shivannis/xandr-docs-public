@@ -1,6 +1,8 @@
 ---
 Title : View the Full Details of an Order or Order Line
 Description : You can view the full details of an order or order line, displayed on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Order Visibility and Order Line Visibility pages, from any page
 within yield analytics that displays order information.
 ---
@@ -28,7 +30,6 @@ The following are some common ways to access the Order Visibility page:
 
 
 
-<div id="ID-000021ef__section_g35_jhk_nwb" >
 
 ## View the Full Details of an Order Line
 
@@ -43,33 +44,23 @@ page:
 
 
 
-<div id="ID-000021ef__section_t35_jhk_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000021ef__section_i35_jhk_nwb" >
 
-- <a href="about-the-orders-tab.html" class="xref">About the Orders
+- <a href="about-the-orders-tab.md" class="xref">About the Orders
   Tab</a>
-- <a href="anatomy-of-the-order-visibility-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-order-visibility-page.md" class="xref">Anatomy
   of the Order Visibility Page</a>
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>
 
 
-
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

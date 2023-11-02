@@ -1,6 +1,8 @@
 ---
 Title : Working With Multiple Ad Servers
 Description : The yield analytics interface supports the use of multiple ad servers
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 (e.g., if you use one for mobile, one for video, etc.). This makes it
 ---
 
@@ -69,7 +71,7 @@ When specifying the filter:
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 Filtering by ad server filters the available product and attribute
 options, not the actual data returned in the lookup or report. To filter
@@ -86,7 +88,6 @@ reporting.
 
 
 
-<div id="ID-00002e4c__section_osp_j3k_nwb" >
 
 ## Specify Priority
 
@@ -96,27 +97,20 @@ you to specify priority for the secondary ad server. 
 
 
 
-<div id="ID-00002e4c__section_jtp_j3k_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002e4c__section_psp_j3k_nwb" >
 
-- <a href="freewheel-priority-values-in-yield-analytics.html"
+- <a href="freewheel-priority-values-in-yield-analytics.md"
   class="xref">Freewheel Priority Values in Yield Analytics</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/ad-servers-overview.html" class="link">Ad Servers
+<a href="ad-servers-overview.md" class="link">Ad Servers
 Overview</a>
 
 

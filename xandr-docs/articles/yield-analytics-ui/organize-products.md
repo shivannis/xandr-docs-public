@@ -1,6 +1,8 @@
 ---
 Title : Organize Products
 Description : You can organize products into product groups by adding a new group, or
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 by editing an existing group.
 ---
 
@@ -160,7 +162,6 @@ agai</p></td>
 
 
 
-<div id="ID-000013cd__section_rwz_4y3_nwb" >
 
 ## Undo Last
 
@@ -171,16 +172,14 @@ and/or change this setting.
 
 
 
-<div id="ID-000013cd__section_byz_4y3_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000013cd__section_swz_4y3_nwb" >
 
-- <a href="create-a-product.html" class="xref">Create a Product</a>
-- <a href="builder-tab.html" class="xref">Builder Tab</a>
+- <a href="create-a-product.md" class="xref">Create a Product</a>
+- <a href="builder-tab.md" class="xref">Builder Tab</a>
 
 
 
@@ -190,8 +189,7 @@ and/or change this setting.
 
 <div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

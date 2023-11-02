@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.14
 Description : ## New Features
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 **Manage Saved Reports**
 Navigate to Manage Saved Reports in the Admin Tools dropdown.
 ---
@@ -26,18 +28,11 @@ This is a new screen with added details:
 - You can add a new schedule.
 - You can edit an existing schedule.
 
-<figure class="fig fignone">
-<p><img src="../images/89620696.png" class="image" width="900" /></p>
-<p><strong>Edit Screen Options</strong></p>
-</figure>
+![Yield Analytics UI - O]("media/o.png")
 
-<figure class="fig fignone">
-<p><img src="../images/89620697.png" class="image" width="900" /></p>
-<p><strong>New Schedule Screen</strong></p>
-</figure>
+![Yield Analytics UI - P]("media/p.png")
 
-<figure class="fig fignone">
-<p><img src="../images/89620698.png" class="image" width="900" /></p>
+![Yield Analytics UI - Q]("media/q.png")
 <p><strong>Find Products</strong></p>
 <ul>
 <li>Additional Metrics are now configurable, which includes metrics that
@@ -61,27 +56,17 @@ locations </li>
 </ul>
 </figure>
 
-<figure class="fig fignone">
-<p><img src="../images/89620700.png" class="image" width="900" /></p>
-<ul>
+![Yield Analytics UI - R]("media/r.png")
 <li>You can apply any additional Filters.</li>
 </ul>
 </figure>
 
-<figure class="fig fignone">
-<p><img src="../images/89620701.png" class="image" width="500" /></p>
-</figure>
+
+![Yield Analytics UI - S]("media/s.png")
 
 
 
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

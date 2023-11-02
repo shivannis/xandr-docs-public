@@ -1,6 +1,8 @@
 ---
 Title : View the Forecast for Your Products
 Description : The Forecast Management page displays a snapshot of your products'
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 impressions forecast for the month specified by the Time Period filter.
 ---
 
@@ -25,31 +27,26 @@ select View
 Visibility to view its Forecast Visibility page to add
 adjustments.
 
-<div id="ID-00002791__section_dfx_tgk_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="anatomy-of-the-forecast-management-page.html"
+- <a href="anatomy-of-the-forecast-management-page.md"
   class="xref">Anatomy of the Forecast Management Page</a>
-- <a href="anatomy-of-the-forecast-visibility-page.html"
+- <a href="anatomy-of-the-forecast-visibility-page.md"
   class="xref">Anatomy of the Forecast Visibility Page</a>
-- <a href="adding-and-editing-adjustments.html" class="xref">Adding and
+- <a href="adding-and-editing-adjustments.md" class="xref">Adding and
   Editing Adjustments</a>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/capacity-overview.html" class="link">Capacity
+<a href="capacity-overview.md" class="link">Capacity
 Overview</a>
 
 

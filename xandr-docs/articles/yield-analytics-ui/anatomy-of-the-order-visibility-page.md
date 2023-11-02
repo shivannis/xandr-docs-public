@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Order Visibility Page
 Description : The Order Visibility page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Orders tab shows basic information
 about the order, as well as the order lines it contains. Click an order
 ---
@@ -73,7 +75,7 @@ Visibility page:
 
 
 
-Note: If a metric appears in the
+<b>Note:</b> If a metric appears in the
 dashboard, but not in the performance chart, it may appear in red text.
 
 - Performance chart - Displays a graphic chart of the order's
@@ -95,7 +97,6 @@ dashboard, but not in the performance chart, it may appear in red text.
 
 
 
-<div id="ID-00002051__section_fmf_sfw_mwb" >
 
 ## Reporting on Orders
 
@@ -107,25 +108,23 @@ the Reports tab.
 
 
 
-<div id="ID-00002051__section_snf_sfw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002051__section_gmf_sfw_mwb" >
 
-- <a href="about-the-orders-tab.html" class="xref">About the Orders
+- <a href="about-the-orders-tab.md" class="xref">About the Orders
   Tab</a>
-- <a href="anatomy-of-the-orders-dashboard-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-orders-dashboard-page.md" class="xref">Anatomy
   of the Orders Dashboard Page</a>
-- <a href="find-orders.html" class="xref">Find Orders</a>
-- <a href="find-an-order-line.html" class="xref">Find an Order Line</a>
-- <a href="check-revenue-against-goal.html" class="xref">Check Revenue
+- <a href="find-orders.md" class="xref">Find Orders</a>
+- <a href="find-an-order-line.md" class="xref">Find an Order Line</a>
+- <a href="check-revenue-against-goal.md" class="xref">Check Revenue
   Against Goal</a>
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>  
     
 
@@ -133,12 +132,7 @@ the Reports tab.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

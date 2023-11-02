@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Product Visibility Page
 Description : The Product Visibility page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Products tab shows you the full
 details of a product. This includes allocated inventory and allocated
 ---
@@ -15,7 +17,6 @@ the Products tab shows you the full
 details of a product. This includes allocated inventory and allocated
 order lines.
 
-<div id="ID-00000f93__section_mwq_jgw_mwb" >
 
 ## About the Product Visibility Interface
 
@@ -66,29 +67,23 @@ the Allocating Order Lines tab.
 
 
 
-<div id="ID-00000f93__section_axq_jgw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00000f93__section_swq_jgw_mwb" >
 
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>
-- <a href="products-overview.html" class="xref">Products Overview</a>  
+- <a href="products-overview.md" class="xref">Products Overview</a>  
     
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-products-dashboard-page.html"
+<a href="anatomy-of-the-products-dashboard-page.md"
 class="link">Anatomy of the Products Dashboard Page</a>
 
 

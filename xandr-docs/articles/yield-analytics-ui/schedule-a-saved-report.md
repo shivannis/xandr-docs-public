@@ -1,6 +1,8 @@
 ---
 Title : Schedule a Saved Report
 Description : You can share the report with one or more user groups by selecting
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Group(s) from the left-hand list.  When the Group appears on the right,
 ---
 
@@ -33,12 +35,9 @@ changes.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-saved-reports.html" class="link">Working
+<a href="working-with-saved-reports.md" class="link">Working
 With Saved Reports</a>
 
 

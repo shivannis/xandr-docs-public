@@ -1,6 +1,8 @@
 ---
 Title : Check Manual Adjustments and Holidays
 Description : The Manual Adjustments & Holidays widget displays any upcoming holidays
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 forecast adjustments. 
 ---
 
@@ -33,29 +35,23 @@ forecast adjustments. 
       report to CSV or Excel.
     - Change the display of the report from a chart to tabular data.
 
-<div id="ID-000026da__section_ynx_t51_nwb" >
 
 ## Related Topics
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="add-a-manual-adjustment-to-a-product.html" class="xref">Add a
+- <a href="add-a-manual-adjustment-to-a-product.md" class="xref">Add a
   Manual Adjustment to a Product</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-capacity-dashboard-page.html"
+<a href="anatomy-of-the-capacity-dashboard-page.md"
 class="link">Anatomy of the Capacity Dashboard Page</a>
 
 

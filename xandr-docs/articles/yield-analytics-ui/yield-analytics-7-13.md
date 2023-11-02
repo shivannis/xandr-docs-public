@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.13
 Description : ## Channel Management Announcement
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Channel Management is currently based on order lines. With the addition
 ---
 
@@ -50,13 +52,7 @@ current page has expired and was reloaded”.
 
 
 
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

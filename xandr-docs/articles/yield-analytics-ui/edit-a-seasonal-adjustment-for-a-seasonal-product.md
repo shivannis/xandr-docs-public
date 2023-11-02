@@ -1,6 +1,8 @@
 ---
 Title : Edit a Seasonal Adjustment for a Seasonal Product
 Description : When you edit a seasonal adjustment, you can change only the number of
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 impressions. Seasonal adjustments impact the product you're adjusting as
 ---
 
@@ -15,7 +17,7 @@ well as all overlapping products.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  Check with your Client Services manager before editing any existing
 adjustments.
@@ -39,33 +41,28 @@ adjustments.
 7.  For each month or day, specify the number of impressions.
 8.  Click Save.
 
-<div id="ID-000028f7__section_pyq_gmb_nwb" >
 
 ## Related Topics
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="anatomy-of-the-forecast-visibility-page.html"
+- <a href="anatomy-of-the-forecast-visibility-page.md"
   class="xref">Anatomy of the Forecast Visibility Page</a>
-- <a href="check-impression-capacity-for-a-product-group.html"
+- <a href="check-impression-capacity-for-a-product-group.md"
   class="xref">Check Impression Capacity for a Product Group</a>
-- <a href="add-a-manual-adjustment-to-a-product.html" class="xref">Add a
+- <a href="add-a-manual-adjustment-to-a-product.md" class="xref">Add a
   Manual Adjustment to a Product</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/adding-and-editing-adjustments.html"
+<a href="adding-and-editing-adjustments.md"
 class="link">Adding and Editing Adjustments</a>
 
 

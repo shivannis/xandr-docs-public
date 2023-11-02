@@ -1,6 +1,8 @@
 ---
 Title : Create an Availability Batch Lookup
 Description : You can run multiple availability lookups as part of a single
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Availability report, by creating a batch lookup.
 ---
 
@@ -30,7 +32,7 @@ Availability report, by creating a batch lookup.
 
 
 
-Tip: The lookup query that you set up
+<b>Tip:</b> The lookup query that you set up
 on this screen will be broken out into multiple result rows that will
 appear in the Availability Report panel at the bottom of the screen once
 you click Add to Batch. The maximum
@@ -41,29 +43,23 @@ necessary.
 
 
 
-<div id="ID-000038a3__section_q4x_f3b_nwb" >
 
 ## Related Topics
 
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="view-availability-batch-lookups.html" class="xref">View
+- <a href="view-availability-batch-lookups.md" class="xref">View
   Availability Batch Lookups</a>  
-- <a href="anatomy-of-the-availability-lookup-page.html"
+- <a href="anatomy-of-the-availability-lookup-page.md"
   class="xref">Anatomy of the Availability Lookup Page</a>  
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:** <a
-href="../topics/check-availability-for-a-combination-of-targeting-attributes.html"
+href="check-availability-for-a-combination-of-targeting-attributes.md"
 class="link">Check Availability for a Combination of Targeting
 Attributes</a>
 

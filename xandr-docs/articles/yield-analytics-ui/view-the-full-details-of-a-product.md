@@ -1,6 +1,8 @@
 ---
 Title : View the Full Details of a Product
 Description : You can view the full details of a product that is displayed on the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Product Visibility page, from any page within yield analytics that
 displays product information.
 ---
@@ -33,12 +35,8 @@ page:
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

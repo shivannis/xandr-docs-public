@@ -1,6 +1,8 @@
 ---
 Title : Disable a User
 Description : If you have administrative permissions, you can disable user accounts to
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 prevent previously active users from logging in to yield analytics.
 ---
 
@@ -21,25 +23,20 @@ prevent previously active users from logging in to yield analytics.
 3.  Clear the Enabled check box.
 4.  Click Save.
 
-<div id="ID-00002fba__section_qqn_1lb_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-new-user.html" class="xref">Add a New User</a>
-- <a href="reset-a-user-s-password.html" class="xref">Reset a User's
+- <a href="add-a-new-user.md" class="xref">Add a New User</a>
+- <a href="reset-a-user-s-password.md" class="xref">Reset a User's
   Password</a>
-- <a href="delete-a-user.html" class="xref">Delete a User</a>
+- <a href="delete-a-user.md" class="xref">Delete a User</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-users.html" class="link">Working With
+<a href="working-with-users.md" class="link">Working With
 Users</a>
 
 

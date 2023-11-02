@@ -1,6 +1,8 @@
 ---
 Title : Common Report Configurations
 Description : Below are the most common report configurations in yield analytics:
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ## At Risk Report
 Customers use this to understand which order lines are projected
 to underdeliver.
@@ -22,9 +24,7 @@ to underdeliver.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472549.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - II]("media/ii.png")
 
 
 
@@ -38,9 +38,7 @@ be cancelled out.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472548.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - JJ]("media/jj.png")
 
 
 
@@ -53,9 +51,7 @@ accounts, such as revenue, yield, and consumption.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472547.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - KK]("media/kk.png")
 
 
 
@@ -68,10 +64,7 @@ as revenue, yield, and consumption.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472546.png" class="image" /></p>
-</figure>
-
+![Yield Analytics UI - LL]("media/ll.png")
 
 
 
@@ -83,9 +76,7 @@ by product, based on the way they sell.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472545.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - MM]("media/mm.png")
 
 
 
@@ -98,20 +89,13 @@ based on the way they traffic campaigns.
 
 **Configuration**:
 
-<figure class="fig fignone">
-<p><img src="../images/90472544.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - NN]("media/nn.png")
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/common-journey-maps.html" class="link">Common Journey
+<a href="common-journey-maps.md" class="link">Common Journey
 Maps</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.26
 Description : ## Feature Enhancements
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Direct Channel -  Within the revamped Channel Management framework, we
 have reintroduced Direct Channel.  It is considered it’s own channel. 
 ---
@@ -32,12 +34,7 @@ Analytics Order Line ID, instead of the External Order Line ID.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

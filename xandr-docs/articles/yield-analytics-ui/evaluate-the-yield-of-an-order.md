@@ -1,6 +1,8 @@
 ---
 Title : Evaluate the Yield of an Order
 Description : Use the Orders tab and Evaluate
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Orders to see how a proposal is expected to deliver and be consumed.
 ---
 
@@ -52,18 +54,17 @@ Orders to see how a proposal is expected to deliver and be consumed.
     specific order lines, and flags to highlight pricing or availability
     issues.
 
-<div id="ID-0000229e__section_kcp_pnb_nwb" >
 
 ## Related Topics
 
-- <a href="anatomy-of-the-evaluate-orders-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-evaluate-orders-page.md" class="xref">Anatomy
   of the Evaluate Orders Page</a>
-- <a href="anatomy-of-the-evaluate-orders-search-page.html"
+- <a href="anatomy-of-the-evaluate-orders-search-page.md"
   class="xref">Anatomy of the Evaluate Orders Search Page</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>  
     
@@ -72,12 +73,7 @@ Orders to see how a proposal is expected to deliver and be consumed.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/evaluate-orders-overview.html" class="link">Evaluate
+<a href="evaluate-orders-overview.md" class="link">Evaluate
 Orders Overview</a>
 
 

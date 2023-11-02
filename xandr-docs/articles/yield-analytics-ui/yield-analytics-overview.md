@@ -4,6 +4,9 @@ Description : ## About Yield Analytics
 Yield Analytics is a data analytics tool that helps publishers properly
 forecast, manage, price, and sell their ad inventory in order to
 maximize revenue.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
+
 ---
 
 
@@ -150,7 +153,7 @@ or in a specific area.
 
 
 
-Note: The importance of manual
+<b>Note:</b> The importance of manual
 adjustments and seasonal models (see above) is if you are a seller, you
 are selling on a volume (impression) basis. You want to ensure that you
 are accurately selling what is available. You do not want to over or
@@ -208,7 +211,7 @@ system is generating the query result.
 
 
 
-Note: Yield Analytics only processes
+<b>Note:</b> Yield Analytics only processes
 once per day, because of how large the log file is. It is impractical to
 do it more than that, because yield analyzes every single impression in
 the system.
@@ -375,7 +378,7 @@ price associated with it.
 
 
 
-Note: If the client has an order
+<b>Note:</b> If the client has an order
 management system integrated with yield analytics, that information
 needs to get pushed over from the order management system to our system.
 If they do not have an order management system, they can create all the
@@ -402,7 +405,7 @@ information and reflect it in the reports. Some examples are:
 
 
 
-Note: When the client is first
+<b>Note:</b> When the client is first
 on-boarded, a yield analytics representative will walk them through the
 process of how to create a product, and offer some ideas of different
 products that they can create.
@@ -423,7 +426,7 @@ product.
 
 
 
-Note: Yield Analytics encourages the
+<b>Note:</b> Yield Analytics encourages the
 client to create a substantial amount of products when they are first
 on-boarded. This allows them to begin gathering historical data from the
 outset.
@@ -457,7 +460,7 @@ in full.
 
 
 
-Note: If a client doesn’t have an order
+<b>Note:</b> If a client doesn’t have an order
 management system, (they just have an ad server) - contracted and
 scheduled will always be the exact same number.
 

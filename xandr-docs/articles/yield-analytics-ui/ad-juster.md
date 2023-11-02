@@ -1,7 +1,9 @@
 ---
 Title : Ad-Juster
 Description : ## Related Topics
-<a href="frequently-asked-questions-faqs.html" class="xref">Frequently
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
+<a href="frequently-asked-questions-faqs.md" class="xref">Frequently
 ---
 
 
@@ -13,7 +15,7 @@ Description : ## Related Topics
 
 ## Related Topics
 
-<a href="frequently-asked-questions-faqs.html" class="xref">Frequently
+<a href="frequently-asked-questions-faqs.md" class="xref">Frequently
 Asked Questions (FAQs)</a>
 
 
@@ -21,14 +23,11 @@ Asked Questions (FAQs)</a>
 
 
 - **[Frequently Asked Questions
-  (FAQs)](../topics/frequently-asked-questions-faqs.html)**  
+  (FAQs)](frequently-asked-questions-faqs.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/integrations.html" class="link">Integrations</a>
+<a href="integrations.md" class="link">Integrations</a>
 
 
 

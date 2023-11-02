@@ -1,6 +1,8 @@
 ---
 Title : Check Availability for a Combination of Targeting Attributes
 Description : To check for available impressions, specify your lookup criteria and
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 then view the results in the Availability Report panel.
 ---
 
@@ -99,30 +101,29 @@ then view the results in the Availability Report panel.
 After you check availability the structure of your query is retained, so
 you can use the previous lookup as a template for a new one.
 
-<div id="ID-000037c5__section_hyv_3s1_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="anatomy-of-the-availability-lookup-page.html"
+- <a href="anatomy-of-the-availability-lookup-page.md"
   class="xref">Anatomy of the Availability Lookup Page</a>
-- <a href="create-an-availability-batch-lookup.html" class="xref">Create
+- <a href="create-an-availability-batch-lookup.md" class="xref">Create
   an Availability Batch Lookup</a>
-- <a href="view-availability-batch-lookups.html" class="xref">View
+- <a href="view-availability-batch-lookups.md" class="xref">View
   Availability Batch Lookups</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 
 
 
 - **[Save an Availability
-  Lookup](../topics/save-an-availability-lookup.html)**  
+  Lookup](save-an-availability-lookup.md)**  
 - **[Open a Saved Availability
-  Lookup](../topics/open-a-saved-availability-lookup.html)**  
+  Lookup](open-a-saved-availability-lookup.md)**  
 - **[Create an Availability Batch
-  Lookup](../topics/create-an-availability-batch-lookup.html)**  
+  Lookup](create-an-availability-batch-lookup.md)**  
 - **[View Availability Batch
-  Lookups](../topics/view-availability-batch-lookups.html)**  
+  Lookups](view-availability-batch-lookups.md)**  
 
 

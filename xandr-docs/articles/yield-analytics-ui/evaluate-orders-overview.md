@@ -1,6 +1,8 @@
 ---
 Title : Evaluate Orders Overview
 Description : This section contains information on using Evaluate Orders to evaluate
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the yield of an order.
 ---
 
@@ -12,20 +14,19 @@ the yield of an order.
 This section contains information on using Evaluate Orders to evaluate
 the yield of an order.
 
-<div id="ID-00002275__section_k5j_hnb_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="anatomy-of-the-evaluate-orders-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-evaluate-orders-page.md" class="xref">Anatomy
   of the Evaluate Orders Page</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>  
     
@@ -33,20 +34,17 @@ the yield of an order.
 
 
 - **[Evaluate the Yield of an
-  Order](../topics/evaluate-the-yield-of-an-order.html)**  
+  Order](evaluate-the-yield-of-an-order.md)**  
 - **[Anatomy of the Evaluate Orders
-  Page](../topics/anatomy-of-the-evaluate-orders-page.html)**  
+  Page](anatomy-of-the-evaluate-orders-page.md)**  
 - **[Anatomy of the Evaluate Orders Search
-  Page](../topics/anatomy-of-the-evaluate-orders-search-page.html)**  
+  Page](anatomy-of-the-evaluate-orders-search-page.md)**  
 - **[About Flags in Evaluate
-  Orders](../topics/about-flags-in-evaluate-orders.html)**  
+  Orders](about-flags-in-evaluate-orders.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

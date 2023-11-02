@@ -1,6 +1,8 @@
 ---
 Title : Import Users
 Description : If you have administrative permissions, you can quickly add multiple
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 users to yield analytics by importing a CSV (comma-separated values)
 file that contains a set of usernames and passwords.
 ---
@@ -25,24 +27,20 @@ file that contains a set of usernames and passwords.
     accounts are added to the list, and the system displays a count of
     the users that were successfully created.
 
-<div id="ID-00003052__section_ag2_lcd_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-new-user.html" class="xref">Add a New User</a>
-- <a href="disable-a-user.html" class="xref">Disable a User</a>
-- <a href="delete-a-user.html" class="xref">Delete a User</a>
+- <a href="add-a-new-user.md" class="xref">Add a New User</a>
+- <a href="disable-a-user.md" class="xref">Disable a User</a>
+- <a href="delete-a-user.md" class="xref">Delete a User</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-users.html" class="link">Working With
+<a href="working-with-users.md" class="link">Working With
 Users</a>
 
 

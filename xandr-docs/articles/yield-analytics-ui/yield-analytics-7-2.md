@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.2
 Description : Please note that we have extended the amount of time that the old
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Reporting Screen would be available. We added an additional release
 ---
 
@@ -28,12 +30,8 @@ highlights for this release:
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

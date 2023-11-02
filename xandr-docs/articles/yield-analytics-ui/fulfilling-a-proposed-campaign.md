@@ -1,6 +1,8 @@
 ---
 Title : Fulfilling a Proposed Campaign
 Description : Fulfilling a campaign is a core, and (usually) straightforward request
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 in yield analytics. Determining what else can be offered when products
 ---
 
@@ -92,12 +94,9 @@ products, if requested products are oversold
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/common-journey-maps.html" class="link">Common Journey
+<a href="common-journey-maps.md" class="link">Common Journey
 Maps</a>
 
 

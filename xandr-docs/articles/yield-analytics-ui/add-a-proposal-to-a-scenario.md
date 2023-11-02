@@ -1,6 +1,8 @@
 ---
 Title : Add a Proposal to a Scenario
 Description : You can add a proposal or an order to Scenario Manager to better
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 understand how it impacts other orders.
 ---
 
@@ -27,12 +29,12 @@ understand how it impacts other orders.
 
 ## Related Topics
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>  
     
@@ -41,12 +43,8 @@ understand how it impacts other orders.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-evaluate-orders-page.html"
+<a href="anatomy-of-the-evaluate-orders-page.md"
 class="link">Anatomy of the Evaluate Orders Page</a>
 
 

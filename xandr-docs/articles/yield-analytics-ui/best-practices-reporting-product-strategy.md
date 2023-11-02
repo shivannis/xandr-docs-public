@@ -1,6 +1,8 @@
 ---
 Title : Best Practices - Reporting Product Strategy
 Description : ## What are Reporting Products?
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Reporting products are products that are generally not sold, but are
 used for reporting purposes only. Reporting products can be used as
 ---
@@ -111,7 +113,7 @@ Tracking_Template_ROS_Slideshows_AllSizes
 Once you have these basics in place, consider where it may be
 applicable to do cross category combinations. Perhaps you desire a
 platform-specific version of every content reporting product, or an
-audience-specific version of every geo product. (Note: A reporting
+audience-specific version of every geo product. (<b>Note:</b> A reporting
 product for every conceivable permutation of ad parameters is
 unnecessary). The actual amount depends on the business. Most publisher
 accounts have 5,000 - 10,000 reporting products. This is typically
@@ -146,12 +148,7 @@ analytics Best Practice doc.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

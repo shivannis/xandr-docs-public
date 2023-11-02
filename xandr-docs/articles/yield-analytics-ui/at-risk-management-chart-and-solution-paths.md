@@ -1,17 +1,16 @@
 ---
 Title : At-Risk Management Chart and Solution Paths
 Description : <figure class="fig fignone">
-<p><img src="../images/90477747.png" class="image" /></p>
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
+![Yield Analytics UI - OO]("media/oo.png")
 ---
 
 
 # At-Risk Management Chart and Solution Paths
 
 
-
-<figure class="fig fignone">
-<p><img src="../images/90477747.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - OO]("media/oo.png")
 
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.17
 Description : ## Feature Enhancements
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 We have created an option to "Update All" datasets, when there are
 multiple datasets in reports. This will eliminate the need to go into
 ---
@@ -59,12 +61,7 @@ each dataset to change a single metric filter.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

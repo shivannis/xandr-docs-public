@@ -1,6 +1,8 @@
 ---
 Title : View Availability Batch Lookups
 Description : You can check the status of your batch availability lookups and view the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 resulting Availability reports.
 ---
 
@@ -25,25 +27,19 @@ resulting Availability reports.
     clicking XLS or CSV in
     the Export column.
 
-<div id="ID-000038dc__section_ox2_vfk_nwb" >
 
 ## Related Topics
 
-- <a href="create-an-availability-batch-lookup.html" class="xref">Create
+- <a href="create-an-availability-batch-lookup.md" class="xref">Create
   an Availability Batch Lookup</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:** <a
-href="../topics/check-availability-for-a-combination-of-targeting-attributes.html"
+href="check-availability-for-a-combination-of-targeting-attributes.md"
 class="link">Check Availability for a Combination of Targeting
 Attributes</a>
 

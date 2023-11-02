@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.3
 Description : Please note that we have removed the old Reports screen, you can use the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 New Reports screen for all of your old reports. 
 ---
 
@@ -38,12 +40,8 @@ and graphs the future data points appropriately.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

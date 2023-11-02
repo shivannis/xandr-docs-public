@@ -1,6 +1,8 @@
 ---
 Title : Analyze Product Overlaps
 Description : Using the Audience Planner page,
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 you can identify products with overlapping impressions or overlapping
 audiences. Overlap analysis is particularly useful for packaging
 ---
@@ -60,7 +62,7 @@ and the products that overlap it.
     - Select one or more specific products.
     - Select one or more product types (rate type products are displayed
       by default). For more information on product types,
-      see <a href="products-overview.html" class="xref">Products Overview</a>
+      see <a href="products-overview.md" class="xref">Products Overview</a>
     - Select one or more specific overlap types. For more information on
       overlap types, see Overlap Types.
     - Specify whether to show products with overlapping values of zero.
@@ -79,7 +81,6 @@ and the products that overlap it.
 
 
 
-<div id="ID-0000104e__section_ss3_x1w_mwb" >
 
 ## Analyze Overlapping Audiences
 
@@ -148,32 +149,27 @@ product / Overlap as a percentage of the baseline product.
 
 
 
-<div id="ID-0000104e__section_g53_x1w_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-0000104e__section_bt3_x1w_mwb" >
 
-- <a href="anatomy-of-the-audience-planner-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-audience-planner-page.md" class="xref">Anatomy
   of the Audience Planner Page</a>
-- <a href="overlap-types.html" class="xref">Overlap Types</a>
-- <a href="products-overview.html" class="xref">Products Overview</a>  
+- <a href="overlap-types.md" class="xref">Overlap Types</a>
+- <a href="products-overview.md" class="xref">Products Overview</a>  
     
 
 
 
 
 
-- **[Overlap Types](../topics/overlap-types.html)**  
+- **[Overlap Types](overlap-types.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

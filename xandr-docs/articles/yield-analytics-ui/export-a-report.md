@@ -1,6 +1,8 @@
 ---
 Title : Export a Report
 Description : You can download a report into an Excel worksheet or comma-separated
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 values (CSV) file for further analysis.
 ---
 
@@ -19,12 +21,8 @@ your browser.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-reports-tab.html" class="link">Anatomy
+<a href="anatomy-of-the-reports-tab.md" class="link">Anatomy
 of the Reports Tab</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 8.9
 Description : **Internationalization:**  This feature enhances the following items
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 within yield analytics :
 1.  Currency symbols will be updated to reflect the currency that is
 ---
@@ -37,25 +39,19 @@ week’s release will address both requests, with several changes:
   users will default to using the United States (en-US) locale.
 
 This is a view of the preference page where locale can be configured
-(Note: the “Country Format” field where locale is specified is a new
+(<b>Note:</b> the “Country Format” field where locale is specified is a new
 selection box on the existing preference page. There is not a new page
 for this):
 
-<figure class="fig fignone">
-<p><img src="../images/93782567.png" class="image" height="250" /></p>
-</figure>
+![Yield Analytics UI - F]("media/f.png")
 
 A look at dates/numbers using the default en-US locale:
 
-<figure class="fig fignone">
-<p><img src="../images/93782568.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - G]("media/g.png")>
 
 A look at dates/numbers using the new fr-FR locale:
 
-<figure class="fig fignone">
-<p><img src="../images/93782569.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - H]("media/h.png")
 
 Our Excel exports will also support localized formatting. We will begin
 respecting the Language & Region settings configured on a user’s
@@ -65,12 +61,8 @@ displayed in the Yield Analytics UI.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

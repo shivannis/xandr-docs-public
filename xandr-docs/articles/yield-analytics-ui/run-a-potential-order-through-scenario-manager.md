@@ -1,6 +1,8 @@
 ---
 Title : Run a Potential Order Through Scenario Manager
 Description : You can test sales proposals by creating one or more new order lines for
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 a product and running them through Scenario Manager. The results enable
 ---
 
@@ -23,14 +25,13 @@ There are three main steps to using Scenario Manager to run a simulated
 new order:
 
 1.  <a
-    href="run-a-potential-order-through-scenario-manager.html#ID-00002ba5__ID-00002bb8"
+    href="run-a-potential-order-through-scenario-manager.md#ID-00002ba5__ID-00002bb8"
     class="xref">Find the product and add it to Scenario Manager</a>
 2.  Modify the new order line you're focusing on
 3.  <a
-    href="run-a-potential-order-through-scenario-manager.html#ID-00002ba5__ID-00002c07"
+    href="run-a-potential-order-through-scenario-manager.md#ID-00002ba5__ID-00002c07"
     class="xref">Run and analyze the scenario</a>
 
-<div id="ID-00002ba5__ID-00002bb8" >
 
 ## Find the Product and Add it to Scenario Manager
 
@@ -87,7 +88,6 @@ clicking Update.
 
 
 
-<div id="ID-00002ba5__ID-00002c07" >
 
 ## Run and Analyze the Scenario
 
@@ -108,35 +108,29 @@ it will impact delivery.
 
 
 
-<div id="ID-00002ba5__section_tdf_2lj_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002ba5__section_ucf_2lj_nwb" >
 
-- <a href="about-using-scenario-manager.html" class="xref">About Using
+- <a href="about-using-scenario-manager.md" class="xref">About Using
   Scenario Manager</a>
-- <a href="anatomy-of-the-scenario-manager-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-scenario-manager-page.md" class="xref">Anatomy
   of the Scenario Manager Page</a>
-- <a href="run-an-existing-order-line-through-scenario-manager.html"
+- <a href="run-an-existing-order-line-through-scenario-manager.md"
   class="xref">Run an Existing Order Line Through Scenario Manager</a>
-- <a href="run-an-existing-order-through-scenario-manager.html"
+- <a href="run-an-existing-order-through-scenario-manager.md"
   class="xref">Run an Existing Order Through Scenario Manager</a>
-- <a href="interpreting-scenario-manager-results.html"
+- <a href="interpreting-scenario-manager-results.md"
   class="xref">Interpreting Scenario Manager Results</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-scenario-manager-page.html"
+<a href="anatomy-of-the-scenario-manager-page.md"
 class="link">Anatomy of the Scenario Manager Page</a>
 
 

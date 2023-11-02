@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Products Dashboard Page
 Description : The Products Dashboard page is the
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 primary view for the Product tab. It
 ---
 
@@ -19,13 +21,12 @@ provides a summary of:
 
 
 
-Tip: From any of the pages within the
+<b>Tip:</b> From any of the pages within the
 Products tab, you can click a product
 to see its full details on the Product Visibility page.
 
 
 
-<div id="ID-00000e96__section_ppz_bgw_mwb" >
 
 ## About the Products Dashboard Interface
 
@@ -65,23 +66,21 @@ for the products included in yield analytics's capacity forecasts.
 
 
 
-<div id="ID-00000e96__section_oqz_bgw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00000e96__section_spz_bgw_mwb" >
 
-- <a href="products-overview.html" class="xref">Products Overview</a>
-- <a href="find-and-view-a-list-of-products.html" class="xref">Find and
+- <a href="products-overview.md" class="xref">Products Overview</a>
+- <a href="find-and-view-a-list-of-products.md" class="xref">Find and
   View a List of Products</a>
-- <a href="analyze-product-overlaps.html" class="xref">Analyze Product
+- <a href="analyze-product-overlaps.md" class="xref">Analyze Product
   Overlaps</a>
-- <a href="create-a-product.html" class="xref">Create a Product</a>
-- <a href="builder-tab.html" class="xref">Builder Tab</a>
-- <a href="organize-products.html" class="xref">Organize Products</a>
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="create-a-product.md" class="xref">Create a Product</a>
+- <a href="builder-tab.md" class="xref">Builder Tab</a>
+- <a href="organize-products.md" class="xref">Organize Products</a>
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>  
     
 
@@ -90,18 +89,15 @@ for the products included in yield analytics's capacity forecasts.
 
 
 - **[Anatomy of the Find Products
-  Page](../topics/anatomy-of-the-find-products-page.html)**  
+  Page](anatomy-of-the-find-products-page.md)**  
 - **[Anatomy of the Audience Planner
-  Page](../topics/anatomy-of-the-audience-planner-page.html)**  
+  Page](anatomy-of-the-audience-planner-page.md)**  
 - **[Anatomy of the Product Visibility
-  Page](../topics/anatomy-of-the-product-visibility-page.html)**  
+  Page](anatomy-of-the-product-visibility-page.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.20
 Description : ## Feature Enhancements
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 **Roadblock Look Ups**
  We have created a new advanced filter on the left hand column of the
 Availability screen called Roadblock.
@@ -20,8 +22,7 @@ Availability screen called Roadblock.
  We have created a new advanced filter on the left hand column of the
 Availability screen called Roadblock.
 
-<figure class="fig fignone">
-<p><img src="../images/89627834.png" class="image" width="900" /> </p>
+![Yield Analytics UI - I]("media/i.png")
 <p>The options within the roadblock are:</p>
 <ul>
 <li>All</li>
@@ -35,7 +36,7 @@ restrictive set of options. </p></li>
 
 
 
-Tip: For OAS (Open AdStream), you would
+<b>Tip:</b> For OAS (Open AdStream), you would
 use the All option to facilitate Strict Companions.
 
 - Select the product that you want to use to build your Roadblock. Then
@@ -45,8 +46,7 @@ use the All option to facilitate Strict Companions.
 
 
 
-<figure class="fig fignone">
-<p><img src="../images/89627844.png" class="image" width="900" /></p>
+![Yield Analytics UI - J]("media/j.png")
 <ul>
 <li>Once you have accessed the Vary this attribute: functionality under
 the main Product must match all of these criteria: box, then you must
@@ -56,8 +56,7 @@ Roadblock.</li>
 </ul>
 </figure>
 
-<figure class="fig fignone">
-<p><img src="../images/89627845.png" class="image" width="900" /></p>
+![Yield Analytics UI - K]("media/k.png")
 <ul>
 <li> Select Check Availability.</li>
 <li>The results will become available in the <span
@@ -66,9 +65,7 @@ Interface.</li>
 </ul>
 </figure>
 
-<figure class="fig fignone">
-<p><img src="../images/89627848.png" class="image" width="900" /></p>
-</figure>
+![Yield Analytics UI - L]("media/l.png")
 
 Within the results you will be able to see a break down of each size or
 position. You will also see an additional column that will be added into
@@ -96,12 +93,7 @@ be the same numbers for each row.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

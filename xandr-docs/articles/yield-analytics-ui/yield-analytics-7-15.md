@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.15
 Description : Support Period to Log Date - This is an option to select a dynamic a
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 date range of Period to Log Date, where the end date would be the log
 data date. For clients with multiple integrations, the log data date
 ---
@@ -33,12 +35,7 @@ Visibility screen that has been enhanced.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

@@ -1,8 +1,10 @@
 ---
 Title : About Flags in Evaluate Orders
-Description : Use the flags in Evaluate Orders to find and resolve potential
-availability and pricing issues related to the line items on each
+Description : Use the flags in Evaluate Orders to find and resolve potential availability and pricing issues related to the line items on each
 proposal.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
+
 ---
 
 
@@ -36,12 +38,12 @@ There are three types of flags in Evaluate Orders:
 
 ## Related Topics
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="anatomy-of-the-evaluate-orders-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-evaluate-orders-page.md" class="xref">Anatomy
   of the Evaluate Orders Page</a>
 - <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.html"
+  href="using-alternative-products-to-solve-pricing-availability-issues.md"
   class="xref">Using Alternative Products to Solve Pricing/Availability
   Issues</a>  
     
@@ -50,12 +52,8 @@ There are three types of flags in Evaluate Orders:
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/evaluate-orders-overview.html" class="link">Evaluate
+<a href="evaluate-orders-overview.md" class="link">Evaluate
 Orders Overview</a>
 
 

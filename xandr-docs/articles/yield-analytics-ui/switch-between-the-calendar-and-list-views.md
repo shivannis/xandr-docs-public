@@ -1,6 +1,8 @@
 ---
 Title : Switch Between the Calendar and List Views
 Description : The View Calendar page can be displayed in two views:
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 - A calendar view that shows a graphical high-level overview of each day
 on the selected month's calendar.
 ---
@@ -27,7 +29,6 @@ calendar toolbar, click.</p>
 toolbar, click.</p>
 </figure>
 
-<div id="ID-00003955__section_j22_51k_nwb" >
 
 ## Related Topics
 
@@ -35,23 +36,20 @@ toolbar, click.</p>
 
 <figure id="ID-00003955__fig_zd2_51k_nwb" class="fig fignone">
 <ul>
-<li><a href="view-availability-in-a-calendar.html" class="xref">View
+<li><a href="view-availability-in-a-calendar.md" class="xref">View
 Availability in a Calendar</a></li>
-<li><a href="anatomy-of-the-view-calendar-page.html"
+<li><a href="anatomy-of-the-view-calendar-page.md"
 class="xref">Anatomy of the View Calendar Page</a></li>
-<li><a href="availability-overview-old-workflow.html"
+<li><a href="availability-overview-old-workflow.md"
 class="xref">Availability Overview (Old Workflow)</a></li>
 </ul>
 </figure>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/view-availability-in-a-calendar.html"
+<a href="view-availability-in-a-calendar.md"
 class="link">View Availability in a Calendar</a>
 
 

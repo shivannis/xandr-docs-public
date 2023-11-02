@@ -1,6 +1,8 @@
 ---
 Title : Create a Product
 Description : Use the following steps to create a product:
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 - Click the down arrow next to the
 Products tab.
 ---
@@ -28,7 +30,7 @@ Use the following steps to create a product:
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 After the target expression is created, it creates an actual link that
 you can click on from the Create Product screen. Clicking that link will
@@ -291,25 +293,21 @@ again.</p></td>
 - You can select Clear All at any
   point in this process to clear all entered information.
 
-<div id="ID-00001155__section_i1y_z3b_nwb" >
 
 ## Related Topics
 
-- <a href="builder-tab.html" class="xref">Builder Tab</a>
-- <a href="organize-products.html" class="xref">Organize Products</a>
+- <a href="builder-tab.md" class="xref">Builder Tab</a>
+- <a href="organize-products.md" class="xref">Organize Products</a>
 
 
 
 
 
-- **[Builder Tab](../topics/builder-tab.html)**  
+- **[Builder Tab](builder-tab.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

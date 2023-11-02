@@ -1,6 +1,8 @@
 ---
 Title : Delete a User
 Description : If you have administrative permissions, you can delete user accounts.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -12,7 +14,7 @@ If you have administrative permissions, you can delete user accounts.
 
 
 
-Warning: You should only delete users
+<b>Warning:</b> You should only delete users
 who have not logged in to yield analytics. To prevent a previously
 active user from logging in, disable the user account instead.
 
@@ -25,25 +27,20 @@ active user from logging in, disable the user account instead.
     click Delete.
 3.  Click OK.
 
-<div id="ID-00002feb__section_jqp_1kb_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-new-user.html" class="xref">Add a New User</a>
-- <a href="reset-a-user-s-password.html" class="xref">Reset a User's
+- <a href="add-a-new-user.md" class="xref">Add a New User</a>
+- <a href="reset-a-user-s-password.md" class="xref">Reset a User's
   Password</a>
-- <a href="disable-a-user.html" class="xref">Disable a User</a>
+- <a href="disable-a-user.md" class="xref">Disable a User</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-users.html" class="link">Working With
+<a href="working-with-users.md" class="link">Working With
 Users</a>
 
 

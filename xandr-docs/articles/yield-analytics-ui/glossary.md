@@ -1,6 +1,8 @@
 ---
 Title : Glossary
 Description : The following glossary provides definitions of commonly used terms
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 across the application. Click a letter to skip to its section.
 ---
 
@@ -43,7 +45,7 @@ Formula: Impression capacity – Consumed impressions
 
 
 
-Note: This is a dynamic calculation.
+<b>Note:</b> This is a dynamic calculation.
 The set of consuming order lines can be filtered, which will affect the
 availability accordingly.
 
@@ -59,7 +61,7 @@ card value of the target\] – Earned revenue of "unconsumed" impressions
 
 
 
-Note: This is a dynamic calculation.
+<b>Note:</b> This is a dynamic calculation.
 The set of consuming order lines can be filtered, which will affect the
 utilization accordingly.
 
@@ -223,9 +225,7 @@ product (also called focus product):
  For example, if you have three products that overlap in the following
 ways:
 
-<figure class="fig fignone">
-<p><img src="../images/89623281.png" class="image" /></p>
-</figure>
+![Yield Analytics UI - HH]("media/hh.png")
 
 And three order lines that are targeted as follows:
 
@@ -304,7 +304,7 @@ Metric formula: Contracted revenue / Number of days in the campaign
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -323,7 +323,7 @@ Metric formula: Contracted revenue / Contracted impressions x 1000
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -339,7 +339,7 @@ goal (Example: sponsorships) will not have contracted impressions.
 
 
 
-Note: Proposed order lines are not
+<b>Note:</b> Proposed order lines are not
 included in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -358,7 +358,7 @@ dimensions.
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -373,7 +373,7 @@ evenly over time.
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -392,7 +392,7 @@ dimensions.
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -470,7 +470,7 @@ An attribute that is directly targeted by an order line.
 
 
 
-Note: When applying a Direct Target
+<b>Note:</b> When applying a Direct Target
 Attribute metric filter, it will not filter based on the order line's
 current targeting expression. Rather, it will provide data for your
 selected reporting dimension, based on consumption to a target that
@@ -500,7 +500,7 @@ Formula: 1 − (Contracted rate/Rate card CPM)
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -548,7 +548,7 @@ discounting.
 
 
 
-Note: Effective Discount % is different
+<b>Note:</b> Effective Discount % is different
 from Sales Discount % in that it uses the product's rate card value
 versus the order line's rate card value. Premiums (i.e., sale at a value
 higher than rate card) are not displayed.
@@ -809,7 +809,7 @@ children (i.e., entirely contained) within the specified product.
 
 
 
-Note: Parent Product is available only
+<b>Note:</b> Parent Product is available only
 as a dimension filter and cannot be used as a primary analysis
 dimension.
 
@@ -840,7 +840,7 @@ other externally managed product catalog.
 
 Product group
 
-Collection or logical grouping of products. Note: Product Group is
+Collection or logical grouping of products. <b>Note:</b> Product Group is
 available only as a dimension filter and cannot be used as a primary
 analysis dimension.
 
@@ -899,7 +899,7 @@ are weighted based on the team members split percentage.
 
 
 
-Note: When the Salesperson dimension is
+<b>Note:</b> When the Salesperson dimension is
 used, all revenue is attributed to the primary salesperson.
 
 
@@ -925,7 +925,7 @@ impressions.
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -944,7 +944,7 @@ dimensions.
 
 
 
-Note: Proposed order lines are included
+<b>Note:</b> Proposed order lines are included
 in the calculations.
 
 When dimensioning by product, only direct and contained order lines are
@@ -961,7 +961,7 @@ Formula: Consumed impressions / Impression capacity
 
 
 
-Note: This is a dynamic calculation.
+<b>Note:</b> This is a dynamic calculation.
 The set of consuming order lines can be filtered, which will affect the
 utilization accordingly.
 
@@ -999,7 +999,7 @@ a target (Example: size, site, DMA, etc.).
 
 
 
-Note: Target Attribute is available
+<b>Note:</b> Target Attribute is available
 only as a dimension filter and cannot be used as a primary analysis
 dimension.
 
@@ -1033,7 +1033,7 @@ Formula: Consumed impressions / Impression capacity
 
 
 
-Note: This is a dynamic calculation.
+<b>Note:</b> This is a dynamic calculation.
 The set of consuming order lines can be filtered, which will affect the
 utilization accordingly.
 
@@ -1090,7 +1090,7 @@ Formula: Earned revenue / Revenue capacity (@Rate card)
 
 
 
-Note: This is a dynamic calculation.
+<b>Note:</b> This is a dynamic calculation.
 The set of consuming order lines can be filtered, which will affect the
 yield accordingly.
 

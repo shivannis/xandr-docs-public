@@ -1,6 +1,8 @@
 ---
 Title : Import Order Template
 Description : Download and complete this <a
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 href="https://yieldex.atlassian.net/wiki/download/attachments/1081369/Deal%20Planner%20Expected%20Order%20Import%20Format.xls?version=1&amp;modificationDate=1382985797864&amp;api=v2"
 ---
 
@@ -128,7 +130,6 @@ formatting (100001)</td>
 
 
 
-<div id="ID-00002493__section_pj3_dcd_nwb" >
 
 ## Notes on Using the Template
 
@@ -154,17 +155,15 @@ formatting (100001)</td>
 
 
 
-<div id="ID-00002493__section_vk3_dcd_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002493__section_sj3_dcd_nwb" >
 
-- <a href="evaluate-orders-overview.html" class="xref">Evaluate Orders
+- <a href="evaluate-orders-overview.md" class="xref">Evaluate Orders
   Overview</a>
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>  
     
 
@@ -172,12 +171,9 @@ formatting (100001)</td>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

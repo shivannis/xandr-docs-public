@@ -1,265 +1,44 @@
 ---
-Title : Android SDK Code Samples
-Description : This section contains various code samples to help you in the
-development of your app. 
-ms.custom : android-sdk
-
+title: Android SDK Code Samples
+description: In this article, find links to various code samples to help you in the development of your app. 
+ms.custom: android-sdk
 ---
 
+# Android SDK code samples
 
-# Android SDK Code Samples
+This section contains various code samples to help you in the development of your app.
 
-
-
-This section contains various code samples to help you in the
-development of your app. 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000e38__entry__1" class="entry">Topics</th>
-<th id="ID-00000e38__entry__2" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="add-a-transition-animation-on-android.md"
-class="xref" target="_blank">Add A Transition Animation Between
-Creatives</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to transition
-between multiple creatives.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="add-targeting-parameters-on-android.md"
-class="xref" target="_blank">Add Targeting Parameters</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to add targeting
-parameters to a ad unit.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md"
-class="xref" target="_blank">Allow Multiple Ad Sizes</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable a banner
-ad to receive multiple ad sizes.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="api-for-exiting-banner-video-from-fullscreen.md"
-class="xref" target="_blank">API for Exiting Banner Video from
-Fullscreen</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable exit of
-the expanded video in activity stack.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="click-through-url-on-android.md"
-class="xref" target="_blank">Click Through URL</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How click throughs
-work and how to implement them.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="configure-sdk-logging-on-android.md"
-class="xref" target="_blank">Configure SDK Logging</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable SDK
-logging and set logging levels.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="control-ad-unit-alignment-on-android.md"
-class="xref" target="_blank">Control Ad Unit Alignment</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">List of the types of
-alignments for banner ads.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="control-landing-page-load-visibility-on-android.md"
-class="xref" target="_blank">Control Landing Page Load
-Visibility</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to configuring the
-landing page load behavior on ad clicks.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="customize-video-player-options-on-android.md"
-class="xref" target="_blank">Customize Video Player Options</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to customize video
-player controls.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="dismiss-interstitials-on-user-click.md"
-class="xref" target="_blank">Dismiss Interstitials on User
-Click</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to dismiss an
-interstitial ad when the user clicks.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="user-id-s--mapping-on-android.md"
-class="xref" target="_blank">External User ID Mapping</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to map your own
-user ID to a Xandr user id.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="forcecreativeid-for-android.md"
-class="xref" target="_blank">Force Creative ID</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to specify the ID
-of a creative that should be forced to appear in a placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="get-facebook-demand-for-native-on-android.md"
-class="xref" target="_blank">Get Facebook Demand for Native</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to get assets for
-Facebook native ads.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="initialize-sdk-settings-in-android.md"
-class="xref" target="_blank">Initialize SDK Settings</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to initialize SDK
-Settings in Android</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="lazy-load-for-android.md"
-class="xref" target="_blank">Lazy Loading an Ad Unit</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to lazy load an ad
-unit to control when trackers, including 3rd party trackers, are
-fired.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="listener-for-onadabouttoexpire-on-android.md"
-class="xref" target="_blank">Listener for Ad About To Expire</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">Listener for ads which
-are about to expire and are expired.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="location-controls-on-android.md"
-class="xref" target="_blank">Location Controls</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to control the
-location accuracy of our SDK.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="omid-friendly-obstruction-for-android.md"
-class="xref" target="_blank">OMID Friendly Obstruction</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to obstruct views
-from the Open Measurement Software Development Kit.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="open-ad-clicks-in-the-native-browser-on-android.md"
-class="xref" target="_blank">Open Ad Clicks in the Native
-Browser</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to choose if
-native browser will open if the ad is clicked.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="pass-custom-keywords-on-android.md"
-class="xref" target="_blank">Pass Custom Keywords</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to pass custom
-keywords to the request body.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="publisher-side-user-opt-out-for-android.md"
-class="xref" target="_blank">Publisher Side User Opt-Out</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable the
-publishers to set the information of  users' choice of opt-in/out from
-tracking in the AdRequests.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="receive-ad-view-status-events-on-android.md"
-class="xref" target="_blank">Receive Ad View Status Events</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to receive status
-events for the ad unit.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="request-ads-over-https-on-android.md"
-class="xref" target="_blank">Request Ads Over HTTPS</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to request ads
-over HTTPS.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md"
-class="xref" target="_blank">Resize Ads to fit the Screen or Banner Ad
-View</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to resize ads to
-fit its container.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md"
-class="xref" target="_blank">Resize the Banner Ad View to the Size of
-the Winning Creative</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to resize the ad
-unit to fit the creative size.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="set-aaid-usage-for-android.md"
-class="xref" target="_blank">Set AAID usage</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable or
-disable AAID usage in Ad Request.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="set-the-auction-timeout-for-android.md"
-class="xref" target="_blank">Set Auction Timeout</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to set the auction
-timeout.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="set-reserve-prices-on-android.md"
-class="xref" target="_blank">Set Reserve Prices</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to minimum bid
-amount you'll accept to show an ad.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="set-test-mode-for-android.md"
-class="xref" target="_blank">Set Test Mode</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to set the test
-mode.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="support-for-external-inventory-code-and-traffic-source-code-on-android.md"
-class="xref" target="_blank">Support for External Inventory and Traffic
-Source Code</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to break out
-inventory more granularly than the placement level.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="support-for-overriding-country-codes-and-zip-codes-on-android.md"
-class="xref" target="_blank">Support for Overriding Country Codes and
-Zip Codes</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to override a
-country and/or zip code.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000e38__entry__1"><a
-href="toggle-psas-on-android.md"
-class="xref" target="_blank">Toggle PSAs</a></td>
-<td class="entry" headers="ID-00000e38__entry__2">How to enable
-PSAs.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Topics | Description |
+|---|---|
+| [Add A Transition Animation Between Creatives](add-a-transition-animation-on-android.md) | How to transition between multiple creatives. |
+| [Add Targeting Parameters](add-targeting-parameters-on-android.md) | How to add targeting parameters to a ad unit. |
+| [Allow Multiple Ad Sizes](allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md) | How to enable a banner ad to receive multiple ad sizes. |
+| [API for Exiting Banner Video from Fullscreen](api-for-exiting-banner-video-from-fullscreen.md) | How to enable exit of the expanded video in activity stack. |
+| [Click Through URL](click-through-url-on-android.md) | How click throughs work and how to implement them. |
+| [Configure SDK Logging](configure-sdk-logging-on-android.md) | How to enable SDK logging and set logging levels. |
+| [Control Ad Unit Alignment](control-ad-unit-alignment-on-android.md) | List of the types of alignments for banner ads. |
+| [Control Landing Page Load Visibility](control-landing-page-load-visibility-on-android.md) | How to configuring the landing page load behavior on ad clicks. |
+| [Customize Video Player Options](customize-video-player-options-on-android.md) | How to customize video player controls. |
+| [Dismiss Interstitials on User Click](dismiss-interstitials-on-user-click.md) | How to dismiss an interstitial ad when the user clicks. |
+| [External User ID Mapping](user-id-s-mapping-on-android.md) | How to map your own user ID to a Xandr user id. |
+| [Force Creative ID](forcecreativeid-for-android.md) | How to specify the ID of a creative that should be forced to appear in a placement. |
+| [Get Facebook Demand for Native](get-facebook-demand-for-native-on-android.md) | How to get assets for Facebook native ads. |
+| [Initialize SDK Settings](initialize-sdk-settings-in-android.md) | How to initialize SDK Settings in Android |
+| [Lazy Loading an Ad Unit](lazy-load-for-android.md) | How to lazy load an ad unit to control when trackers, including 3rd party trackers, are fired. |
+| [Listener for Ad About To Expire](listener-for-onadabouttoexpire-on-android.md) | Listener for ads which are about to expire and are expired. |
+| [Location Controls](location-controls-on-android.md) | How to control the location accuracy of our SDK. |
+| [OMID Friendly Obstruction](omid-friendly-obstruction-for-android.md) | How to obstruct views from the Open Measurement Software Development Kit. |
+| [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-android.md) | How to choose if native browser will open if the ad is clicked. |
+| [Pass Custom Keywords](pass-custom-keywords-on-android.md) | How to pass custom keywords to the request body. |
+| [Publisher Side User Opt-Out](publisher-side-user-opt-out-for-android.md) | How to enable the publishers to set the information of  users' choice of opt-in/out from tracking in the AdRequests. |
+| [Receive Ad View Status Events](receive-ad-view-status-events-on-android.md) | How to receive status events for the ad unit. |
+| [Request Ads Over HTTPS](request-ads-over-https-on-android.md) | How to request ads over HTTPS. |
+| [Resize Ads to fit the Screen or Banner Ad View](resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md) | How to resize ads to fit its container. |
+| [Resize the Banner Ad View to the Size of the Winning Creative](resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md) | How to resize the ad unit to fit the creative size. |
+| [Set AAID usage](set-aaid-usage-for-android.md) | How to enable or disable AAID usage in Ad Request. |
+| [Set Auction Timeout](set-the-auction-timeout-for-android.md) | How to set the auction timeout. |
+| [Set Reserve Prices](set-reserve-prices-on-ios.md) | How to minimum bid amount you'll accept to show an ad. |
+| [Set Test Mode](set-test-mode-for-android.md) | How to set the test mode. |
+| [Support for External Inventory and Traffic Source Code](support-for-external-inventory-code-and-traffic-source-code-on-android.md) | How to break out inventory more granularly than the placement level. |
+| [Support for Overriding Country Codes and Zip Codes](support-for-overriding-country-codes-and-zip-codes-on-android.md) | How to override a country and/or zip code. |
+| [Toggle PSAs](toggle-psas-on-android.md) | How to enable PSAs. |

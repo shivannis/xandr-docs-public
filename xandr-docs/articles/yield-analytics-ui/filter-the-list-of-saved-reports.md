@@ -1,6 +1,8 @@
 ---
 Title : Filter the List of Saved Reports
 Description : To filter the list of saved reports, you will want to search either
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 based on category that the report is in, or by the report name itself.
 ---
 
@@ -18,12 +20,8 @@ unique to your login, and others can choose their own default.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-saved-reports.html" class="link">Working
+<a href="working-with-saved-reports.md" class="link">Working
 With Saved Reports</a>
 
 

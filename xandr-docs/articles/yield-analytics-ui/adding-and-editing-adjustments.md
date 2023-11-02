@@ -1,6 +1,8 @@
 ---
 Title : Adding and Editing Adjustments
 Description : New Seasonality Adjustments can be added to the system by working with
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 your Client Services Manager. Existing Seasonality Adjustments can be
 ---
 
@@ -31,15 +33,15 @@ following types of manual adjustments can be made:
 
 ## Related Topics
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="anatomy-of-the-forecast-visibility-page.html"
+- <a href="anatomy-of-the-forecast-visibility-page.md"
   class="xref">Anatomy of the Forecast Visibility Page</a>
-- <a href="check-impression-capacity-for-a-product-group.html"
+- <a href="check-impression-capacity-for-a-product-group.md"
   class="xref">Check Impression Capacity for a Product Group</a>
 
 
@@ -47,18 +49,15 @@ following types of manual adjustments can be made:
 
 
 - **[Add a Manual Adjustment to a
-  Product](../topics/add-a-manual-adjustment-to-a-product.html)**  
+  Product](add-a-manual-adjustment-to-a-product.md)**  
 - **[Edit a Manual
-  Adjustment](../topics/edit-a-manual-adjustment.html)**  
+  Adjustment](edit-a-manual-adjustment.md)**  
 - **[Edit a Seasonal Adjustment for a Seasonal
-  Product](../topics/edit-a-seasonal-adjustment-for-a-seasonal-product.html)**  
+  Product](edit-a-seasonal-adjustment-for-a-seasonal-product.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/capacity-overview.html" class="link">Capacity
+<a href="capacity-overview.md" class="link">Capacity
 Overview</a>
 
 

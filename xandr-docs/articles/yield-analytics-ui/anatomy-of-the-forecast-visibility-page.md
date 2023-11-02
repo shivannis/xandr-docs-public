@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Forecast Visibility Page
 Description : The Forecast Visibility page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Capacity tab shows a forecast of
 how a product's impressions will be consumed. It's displayed when you
 ---
@@ -19,7 +21,6 @@ select View
  \>  Forecast
 Visibility.
 
-<div id="ID-0000274b__section_tty_k2w_mwb" >
 
 ## About the Forecast Visibility Interface
 
@@ -37,37 +38,31 @@ There are four sections on the Forecast Visibility page:
 
 
 
-<div id="ID-0000274b__section_j5y_k2w_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-0000274b__section_vty_k2w_mwb" >
 
-- <a href="about-forecasts-and-adjustments.html" class="xref">About
+- <a href="about-forecasts-and-adjustments.md" class="xref">About
   Forecasts and Adjustments</a>
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="anatomy-of-the-forecast-management-page.html"
+- <a href="anatomy-of-the-forecast-management-page.md"
   class="xref">Anatomy of the Forecast Management Page</a>
-- <a href="check-impression-capacity-for-a-product-group.html"
+- <a href="check-impression-capacity-for-a-product-group.md"
   class="xref">Check Impression Capacity for a Product Group</a>
-- <a href="add-a-manual-adjustment-to-a-product.html" class="xref">Add a
+- <a href="add-a-manual-adjustment-to-a-product.md" class="xref">Add a
   Manual Adjustment to a Product</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/capacity-overview.html" class="link">Capacity
+<a href="capacity-overview.md" class="link">Capacity
 Overview</a>
 
 

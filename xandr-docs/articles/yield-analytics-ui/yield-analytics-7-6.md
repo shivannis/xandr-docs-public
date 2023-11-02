@@ -1,6 +1,8 @@
 ---
 Title : Yield Analytics 7.6
 Description : ## Features
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Duration Based Metrics -  For clients with Duration Based Metrics for
 video, we have introduced two new metrics to enable you to see earnings
 metrics at the proper duration.  Now you can perform reporting tasks all
@@ -44,15 +46,7 @@ Removed Row Limits - We have removed the row limits to reports in the
 Reporting Tab.  On export please be aware of the XLSX restrictions.
 
 
-
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/release-notes.html" class="link">Release Notes</a>
+<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

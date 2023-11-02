@@ -1,6 +1,8 @@
 ---
 Title : Reporting Options for Dimension, Primary, and Secondary Metrics
 Description : The most commonly used dimension and metric options are noted with an
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 asterisk.
 ---
 
@@ -12,7 +14,6 @@ asterisk.
 The most commonly used dimension and metric options are noted with an
 asterisk.
 
-<div id="ID-00001941__ID-0000198c" >
 
 ## Options for Dimension
 
@@ -51,7 +52,6 @@ asterisk.
 
 
 
-<div id="ID-00001941__ID-000019bf" >
 
 ## Options for Primary and Secondary Metrics
 
@@ -124,38 +124,30 @@ You cannot select the same option for the primary and secondary metric.
 
 
 
-<div id="ID-00001941__section_sxn_n3j_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00001941__section_cwn_n3j_nwb" >
 
-- <a href="create-a-new-report.html" class="xref">Create a New Report</a>
-- <a href="compare-two-data-sets.html" class="xref">Compare Two Data
+- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
+- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
   Sets</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>
-- <a href="schedule-a-report-to-be-sent.html" class="xref">Schedule a
+- <a href="schedule-a-report-to-be-sent.md" class="xref">Schedule a
   Report to be Sent</a>
-- <a href="export-a-report.html" class="xref">Export a Report</a>
-- <a href="anatomy-of-the-reports-tab.html" class="xref">Anatomy of the
+- <a href="export-a-report.md" class="xref">Export a Report</a>
+- <a href="anatomy-of-the-reports-tab.md" class="xref">Anatomy of the
   Reports Tab</a>  
     
 
 
 
 
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

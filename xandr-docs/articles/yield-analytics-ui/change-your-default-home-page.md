@@ -1,6 +1,8 @@
 ---
 Title : Change Your Default Home Page
 Description : You can change the page that loads by default when you log in to yield
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 analytics:
 1.  In the top right corner of any page, click your name, and then
 ---
@@ -24,23 +26,19 @@ analytics:
     chose is displayed, and loads by default the next time you log in to
     the system.
 
-<div id="ID-00002eea__section_d4m_fp1_nwb" >
 
 ## Related Topics
 
-- <a href="change-your-password.html" class="xref">Change Your
+- <a href="change-your-password.md" class="xref">Change Your
   Password</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/user-preferences.html" class="link">User
+<a href="user-preferences.md" class="link">User
 Preferences</a>
 
 

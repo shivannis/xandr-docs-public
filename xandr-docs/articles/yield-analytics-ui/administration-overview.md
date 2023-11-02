@@ -1,6 +1,8 @@
 ---
 Title : Administration Overview
 Description : If you have administrative permissions, you can manage users, user
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 groups, and saved reports.
 ---
 
@@ -16,40 +18,40 @@ groups, and saved reports.
 
 ## Related Topics
 
-- <a href="working-with-users.html" class="xref">Working With Users</a>
-- <a href="reset-a-user-s-password.html" class="xref">Reset a User's
+- <a href="working-with-users.md" class="xref">Working With Users</a>
+- <a href="reset-a-user-s-password.md" class="xref">Reset a User's
   Password</a>
-- <a href="disable-a-user.html" class="xref">Disable a User</a>
-- <a href="delete-a-user.html" class="xref">Delete a User</a>
-- <a href="add-a-new-user.html" class="xref">Add a New User</a>
-- <a href="import-users.html" class="xref">Import Users</a>
-- <a href="working-with-user-groups.html" class="xref">Working With User
+- <a href="disable-a-user.md" class="xref">Disable a User</a>
+- <a href="delete-a-user.md" class="xref">Delete a User</a>
+- <a href="add-a-new-user.md" class="xref">Add a New User</a>
+- <a href="import-users.md" class="xref">Import Users</a>
+- <a href="working-with-user-groups.md" class="xref">Working With User
   Groups</a>
-- <a href="add-a-user-group.html" class="xref">Add a User Group</a>
-- <a href="edit-a-user-group.html" class="xref">Edit a User Group</a>
-- <a href="duplicate-a-user-group.html" class="xref">Duplicate a User
+- <a href="add-a-user-group.md" class="xref">Add a User Group</a>
+- <a href="edit-a-user-group.md" class="xref">Edit a User Group</a>
+- <a href="duplicate-a-user-group.md" class="xref">Duplicate a User
   Group</a>
-- <a href="delete-a-user-group.html" class="xref">Delete a User Group</a>
-- <a href="search-user-groups.html" class="xref">Search User Groups</a>
-- <a href="working-with-saved-reports.html" class="xref">Working With
+- <a href="delete-a-user-group.md" class="xref">Delete a User Group</a>
+- <a href="search-user-groups.md" class="xref">Search User Groups</a>
+- <a href="working-with-saved-reports.md" class="xref">Working With
   Saved Reports</a>
-- <a href="add-a-report-category.html" class="xref">Add a Report
+- <a href="add-a-report-category.md" class="xref">Add a Report
   Category</a>
-- <a href="edit-report-categories.html" class="xref">Edit Report
+- <a href="edit-report-categories.md" class="xref">Edit Report
   Categories</a>
-- <a href="filter-the-list-of-saved-reports.html" class="xref">Filter the
+- <a href="filter-the-list-of-saved-reports.md" class="xref">Filter the
   List of Saved Reports</a>
-- <a href="schedule-a-saved-report.html" class="xref">Schedule a Saved
+- <a href="schedule-a-saved-report.md" class="xref">Schedule a Saved
   Report</a>
 
 
 
 
 
-- **[Working With Users](../topics/working-with-users.html)**  
+- **[Working With Users](working-with-users.md)**  
 - **[Working With User
-  Groups](../topics/working-with-user-groups.html)**  
+  Groups](working-with-user-groups.md)**  
 - **[Working With Saved
-  Reports](../topics/working-with-saved-reports.html)**  
+  Reports](working-with-saved-reports.md)**  
 
 

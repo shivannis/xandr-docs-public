@@ -1,6 +1,8 @@
 ---
 Title : Working with Channel Metrics
 Description : The Channels tab provides high-level metrics for integrated Supply-Side
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Platform (SSPs) along with adserver data. It is a useful tool to
 ---
 
@@ -278,12 +280,8 @@ Rubicon.</td>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/channel-management.html" class="link">Channel
+<a href="channel-management.md" class="link">Channel
 Management</a>
 
 

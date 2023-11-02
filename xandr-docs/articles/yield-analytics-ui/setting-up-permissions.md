@@ -1,6 +1,8 @@
 ---
 Title : Setting Up Permissions
-Description : Tip: Note
+Description : <b>Tip:</b> Note
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
  There is no correlation between feature permissions and product
 permissions. If you belong to multiple groups, and one group has a set
 ---
@@ -12,7 +14,7 @@ permissions. If you belong to multiple groups, and one group has a set
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  There is no correlation between feature permissions and product
 permissions. If you belong to multiple groups, and one group has a set
@@ -45,7 +47,7 @@ permissions will collapse. Both still run independently.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  This implicitly includes products that are child products. The system
 will run in the background and look for any child products that belong
@@ -81,7 +83,7 @@ Here are some points to remember:
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  If there is no data on products you have access to, the data will not
 return. Therefore, if you select an attribute that belongs to products
@@ -116,7 +118,7 @@ competing against the products you have access to.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  You will only be shown revenue data to products you have access to.
 
@@ -139,7 +141,7 @@ to.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
  The display will default to whatever your most expansive privilege is.
 Your greatest asset to the data will determine what your experience is

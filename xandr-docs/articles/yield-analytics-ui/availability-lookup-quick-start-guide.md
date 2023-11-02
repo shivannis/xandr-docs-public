@@ -1,6 +1,8 @@
 ---
 Title : Availability Lookup - Quick Start Guide
 Description : The Availability Lookup screen appears in the Availability drop-down.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -16,14 +18,14 @@ The Availability Lookup screen appears in the Availability drop-down.
 
 There are four tabs within the page which offer the following features:
 
-- <a href="lookup-builder.html" class="xref">Lookup Builder</a>:  Easily
+- <a href="lookup-builder.md" class="xref">Lookup Builder</a>:  Easily
   create your lookups, no matter if they are simple or very complex.
-- <a href="lookup-results.html" class="xref">Lookup Results</a>:  View
+- <a href="lookup-results.md" class="xref">Lookup Results</a>:  View
   availability and contention results, change configurations and re-run
   lookups, and more.
-- <a href="batch-builder.html" class="xref">Batch Builder</a>:  Save,
+- <a href="batch-builder.md" class="xref">Batch Builder</a>:  Save,
   schedule, and execute batch lookups.
-- <a href="batch-queue.html" class="xref">Batch Queue</a>:  Monitor
+- <a href="batch-queue.md" class="xref">Batch Queue</a>:  Monitor
   batch progress and access results for completed batches.
 
  Configuration and Advanced Filters:  Select your date range and
@@ -160,11 +162,11 @@ the batch results from the Batch Queue tab.
 
 
 
-- <a href="availability-lookup.html" class="xref">Availability Lookup</a>
-- <a href="lookup-builder.html" class="xref">Lookup Builder</a>
-- <a href="lookup-results.html" class="xref">Lookup Results</a>
-- <a href="batch-builder.html" class="xref">Batch Builder</a>
-- <a href="batch-queue.html" class="xref">Batch Queue</a>
+- <a href="availability-lookup.md" class="xref">Availability Lookup</a>
+- <a href="lookup-builder.md" class="xref">Lookup Builder</a>
+- <a href="lookup-results.md" class="xref">Lookup Results</a>
+- <a href="batch-builder.md" class="xref">Batch Builder</a>
+- <a href="batch-queue.md" class="xref">Batch Queue</a>
 
 
 
@@ -172,12 +174,7 @@ the batch results from the Batch Queue tab.
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/availability-lookup.html" class="link">Availability
+<a href="availability-lookup.md" class="link">Availability
 Lookup</a>
 
 

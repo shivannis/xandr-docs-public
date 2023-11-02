@@ -1,6 +1,8 @@
 ---
 Title : Edit a User Group
 Description : If you have administrative permissions, you can edit user groups to add
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 and remove users in the group. You can also change the permissions for
 ---
 
@@ -45,26 +47,22 @@ the group.
     Tools, and Other.
 6.  Click Save.
 
-<div id="ID-00003109__section_xkr_pmb_nwb" >
 
 ## Related Topics
 
-- <a href="add-a-user-group.html" class="xref">Add a User Group</a>
-- <a href="duplicate-a-user-group.html" class="xref">Duplicate a User
+- <a href="add-a-user-group.md" class="xref">Add a User Group</a>
+- <a href="duplicate-a-user-group.md" class="xref">Duplicate a User
   Group</a>
-- <a href="delete-a-user-group.html" class="xref">Delete a User Group</a>
-- <a href="search-user-groups.html" class="xref">Search User Groups</a>
+- <a href="delete-a-user-group.md" class="xref">Delete a User Group</a>
+- <a href="search-user-groups.md" class="xref">Search User Groups</a>
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-user-groups.html" class="link">Working
+<a href="working-with-user-groups.md" class="link">Working
 With User Groups</a>
 
 

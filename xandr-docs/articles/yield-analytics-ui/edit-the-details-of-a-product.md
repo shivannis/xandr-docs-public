@@ -1,6 +1,8 @@
 ---
 Title : Edit the Details of a Product
 Description : You can edit the details of a product on the Edit Product page.
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 ---
 
 
@@ -74,14 +76,13 @@ You can edit the details of a product on the Edit Product page.
     it can't be reactivated.
 7.  Click Save.
 
-<div id="ID-0000151c__section_dlq_zmb_nwb" >
 
 ## Related Topics
 
-- <a href="products-overview.html" class="xref">Products Overview</a>
-- <a href="find-and-view-a-list-of-products.html" class="xref">Find and
+- <a href="products-overview.md" class="xref">Products Overview</a>
+- <a href="find-and-view-a-list-of-products.md" class="xref">Find and
   View a List of Products</a>
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>  
     
 
@@ -89,12 +90,8 @@ You can edit the details of a product on the Edit Product page.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/products-overview.html" class="link">Products
+<a href="products-overview.md" class="link">Products
 Overview</a>
 
 

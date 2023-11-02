@@ -1,6 +1,8 @@
 ---
 Title : Orders Overview
 Description : From the Orders tab in yield
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 analytics, you can find a specific order or order line, drill into
 order/order line details, chart an order's performance, and examine
 prospective delivery with links to Scenario Manager.
@@ -25,21 +27,21 @@ advertiser's RFP.
 
 
 
-- **[About the Orders Tab](../topics/about-the-orders-tab.html)**  
+- **[About the Orders Tab](about-the-orders-tab.md)**  
 - **[Anatomy of the Orders Dashboard
-  Page](../topics/anatomy-of-the-orders-dashboard-page.html)**  
-- **[Find Orders](../topics/find-orders.html)**  
+  Page](anatomy-of-the-orders-dashboard-page.md)**  
+- **[Find Orders](find-orders.md)**  
 - **[Anatomy of the Order Visibility
-  Page](../topics/anatomy-of-the-order-visibility-page.html)**  
-- **[Find an Order Line](../topics/find-an-order-line.html)**  
+  Page](anatomy-of-the-order-visibility-page.md)**  
+- **[Find an Order Line](find-an-order-line.md)**  
 - **[Anatomy of the Order Line Visibility
-  Page](../topics/anatomy-of-the-order-line-visibility-page.html)**  
+  Page](anatomy-of-the-order-line-visibility-page.md)**  
 - **[View the Full Details of an Order or Order
-  Line](../topics/view-the-full-details-of-an-order-or-order-line.html)**  
+  Line](view-the-full-details-of-an-order-or-order-line.md)**  
 - **[Solving Delivery Issues with Order Line
-  Visibility](../topics/solving-delivery-issues-with-order-line-visibility.html)**  
+  Visibility](solving-delivery-issues-with-order-line-visibility.md)**  
 - **[Evaluate Orders
-  Overview](../topics/evaluate-orders-overview.html)**  
-- **[Import Order Template](../topics/import-order-template.html)**  
+  Overview](evaluate-orders-overview.md)**  
+- **[Import Order Template](import-order-template.md)**  
 
 

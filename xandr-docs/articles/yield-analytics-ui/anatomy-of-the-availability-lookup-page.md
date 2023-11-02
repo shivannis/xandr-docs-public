@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Availability Lookup Page
 Description : On the Availability Lookup page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Availability tab, you can search
 for available inventory using a variety of criteria, including
 attributes from existing products, attributes from a product group, and
@@ -20,7 +22,6 @@ custom defined attributes. You can also open saved lookups, save new
 lookups, and create batches to search for inventory across products and
 run the lookup in the background.
 
-<div id="ID-0000370d__section_rwv_fcw_mwb" >
 
 ## About the Availability Lookup Interface
 
@@ -49,33 +50,27 @@ The Availability Lookup page is comprised of the following four panels:
 
 
 
-<div id="ID-0000370d__section_gxv_fcw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-0000370d__section_twv_fcw_mwb" >
 
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="view-availability-batch-lookups.html" class="xref">View
+- <a href="view-availability-batch-lookups.md" class="xref">View
   Availability Batch Lookups</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>  
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-availability-dashboard-page.html"
+<a href="anatomy-of-the-availability-dashboard-page.md"
 class="link">Anatomy of the Availability Dashboard Page</a>
 
 

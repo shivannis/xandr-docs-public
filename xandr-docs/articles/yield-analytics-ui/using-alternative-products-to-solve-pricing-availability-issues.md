@@ -1,6 +1,8 @@
 ---
 Title : Using Alternative Products to Solve Pricing/Availability Issues
 Description : Alternative products are available in Evaluate Orders to help resolve !
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Price and ! Avails flags.
 ---
 
@@ -37,7 +39,6 @@ the order line's product, based on the following criteria:
 
 
 
-<div id="ID-000023c1__section_t2j_x2k_nwb" >
 
 ## Add an Alternate Product to a Proposal
 
@@ -55,31 +56,24 @@ the Included check box.
 
 
 
-<div id="ID-000023c1__section_hfj_x2k_nwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-000023c1__section_v2j_x2k_nwb" >
 
-- <a href="evaluate-the-yield-of-an-order.html" class="xref">Evaluate the
+- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
   Yield of an Order</a>
-- <a href="about-flags-in-evaluate-orders.html" class="xref">About Flags
+- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
   in Evaluate Orders</a>
-- <a href="add-a-proposal-to-a-scenario.html" class="xref">Add a Proposal
+- <a href="add-a-proposal-to-a-scenario.md" class="xref">Add a Proposal
   to a Scenario</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-evaluate-orders-page.html"
+<a href="anatomy-of-the-evaluate-orders-page.md"
 class="link">Anatomy of the Evaluate Orders Page</a>
 
 

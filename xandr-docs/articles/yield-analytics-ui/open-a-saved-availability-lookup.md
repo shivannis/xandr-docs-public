@@ -1,6 +1,8 @@
 ---
 Title : Open a Saved Availability Lookup
 Description : You can open a saved availability lookup to rerun it or edit the details
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 of the lookup.
 ---
 
@@ -19,31 +21,25 @@ of the lookup.
     existing lookup by typing in the field at the top of the dialog. The
     list of lookups is narrowed as you type.
 
-<div id="ID-00003876__section_p2q_wx3_nwb" >
 
 ## Related Topics
 
-- <a href="save-an-availability-lookup.html" class="xref">Save an
+- <a href="save-an-availability-lookup.md" class="xref">Save an
   Availability Lookup</a>
 - <a
-  href="check-availability-for-a-combination-of-targeting-attributes.html"
+  href="check-availability-for-a-combination-of-targeting-attributes.md"
   class="xref">Check Availability for a Combination of Targeting
   Attributes</a>
-- <a href="anatomy-of-the-availability-lookup-page.html"
+- <a href="anatomy-of-the-availability-lookup-page.md"
   class="xref">Anatomy of the Availability Lookup Page</a>
-- <a href="availability-overview-old-workflow.html"
+- <a href="availability-overview-old-workflow.md"
   class="xref">Availability Overview (Old Workflow)</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:** <a
-href="../topics/check-availability-for-a-combination-of-targeting-attributes.html"
+href="check-availability-for-a-combination-of-targeting-attributes.md"
 class="link">Check Availability for a Combination of Targeting
 Attributes</a>
 

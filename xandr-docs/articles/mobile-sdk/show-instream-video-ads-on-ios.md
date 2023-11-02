@@ -1,35 +1,22 @@
 ---
-Title : Show Instream Video Ads on iOS
-Description : This page describes how to use the SDK to fetch and display instream
-video ads.
-ms.custom : android-ios
+title : Show Instream Video Ads on iOS
+description : This page describes how to use the SDK to fetch and display instream video ads in iOS.
+ms.custom : ios-sdk
+
 ---
 
 
-# Show Instream Video Ads on iOS
-
-
+# Show instream video ads on iOS
 
 This page describes how to use the SDK to fetch and display instream
 video ads.
 
-
-
 ## Step 1. Include the SDK in your project
 
 As of
-the <a href="https://github.com/appnexus/mobile-sdk-ios/releases/tag/3.0"
-class="xref" target="_blank">version 3.0 release</a>, the SDK has
-instream video support. For instructions on how to integrate the SDK,
-see <a
-href="ios-sdk-integration-instructions.md"
-class="xref" target="_blank">Integrate the SDK</a>
+the [version 3.0 release](https://github.com/appnexus/mobile-sdk-ios/releases/tag/3.0), the SDK has instream video support. For instructions on how to integrate the SDK, see [Integrate the SDK](ios-sdk-integration-instructions.md).
 
-
-
-
-
-## Step 2. Initialize the Video Ad Object
+## Step 2. Initialize the video Ad Object
 
 A video ad can be fetched and displayed with as few as three
 methods `initWithPlacementId:`, `loadAdWithDelegate:` and `playAdWithContainer:withDelegate:`.
@@ -38,13 +25,9 @@ feedback for the video ad lifecycle.
 
 First, initialize `ANInstreamVideoAd` with the placement ID.
 
-``` pre
+``` 
 ANInstreamVideoAd  *videoAd  = [[ANInstreamVideoAd alloc] initWithPlacementId:@"MY-PLACEMENT-ID"];
 ```
-
-
-
-
 
 ## Step 3. Load the Video Ad
 
@@ -64,7 +47,7 @@ Video ad state includes the placement ID, whether the video ad was
 clicked or skipped, and error feedback in the case of failure. (For
 complete details, see *`ANInstreamVideoAd.h`* .)
 
-``` pre
+``` 
 @interface  ViewController()  <ANInstreamVideoAdLoadDelegate, ANInstreamVideoAdPlayDelegate>
     //...
 @end
@@ -77,11 +60,7 @@ complete details, see *`ANInstreamVideoAd.h`* .)
 [videoAd loadAdWithDelegate:self];
 ```
 
-
-
-
-
-## Step 4. Show the Video Ad
+## Step 4. Show the video Ad
 
 Third and finally, display the video ad over your content
 container `UIView` and define the `ANInstreamVideoAdPlayDelegate`.
@@ -97,7 +76,7 @@ that further define video ad playback state and lifecycle for both the
 video ad and the landing page. (See *`ANInstreamVideoAd.h`* for complete
 details.)
 
-``` pre
+``` 
 @protocol  ANInstreamVideoAdPlayDelegate <NSObject>
     @required
     - (void) adDidComplete:  (id<ANAdProtocol>)ad
@@ -112,25 +91,17 @@ details.)
 [videoAd playAdWithContainer:MY-VIDEO-CONTENT-UIVIEW withDelegate:self];
 ```
 
-
-
-
-
-## Pause and Resume the Video Ad
+## Pause and resume the video Ad
 
 To pause or resume playing the video ad use the following method calls: 
 
-``` pre
+``` 
 (void) pauseAd;
  
  (void) resumeAd; 
 ```
 
-
-
-
-
-## Choose Which Browser Opens the Landing Page
+## Choose which browser opens the landing page
 
 When the video ad is clicked, video ad playback is paused and the click
 tracker is fired. Then, the click-through URL is opened in the in-app
@@ -146,7 +117,7 @@ The following properties are exposed by `ANInstreamVideoAd` to manage
 the target browser and whether the landing page loads before or after
 the landing page is displayed.
 
-``` pre
+``` 
 videoAd.opensInNativeBrowser = NO;           // DEFAULT is NO.
 videoAd.landingPageLoadsInBackground = YES;  // DEFAULT is YES.
 ```
@@ -154,26 +125,18 @@ videoAd.landingPageLoadsInBackground = YES;  // DEFAULT is YES.
 When the user returns from the browser, the video ad will resume
 playback.
 
-
-
-
-
-## Load More Than One Video Ad per Session
+## Load more than one video Ad per session
 
 Any number of video ads may be loaded in a single session. Accomplish
 this by calling `initWithPlacementId:` and `loadAdWtihDelegate:` once
 for each video ad object.
 
-
-
-
-
-## Fetch the Attributes of a Loaded Video Creative
+## Fetch the attributes of a loaded video creative
 
 Once the video is loaded, you may retrieve various attributes of the
 creative:
 
-``` pre
+``` 
 -(NSUInteger) getAdDuration; //Provide the duration of the loaded video
 -(NSString *) getCreativeURL; //Provide the creative that will be played
 -(NSString *) getVastURL; //Provide the vastURL that is loaded
@@ -181,23 +144,15 @@ creative:
 -(ANVideoOrientation) getVideoOrientation; //Provide the Orientation of the Video rendered. Possible video orientations can be square, portrait, landscape or none
 ```
 
-
-
-
-
-## Determine Ad Play Progress
+## Determine Ad play progress
 
 You can determine how far the adPlay has progressed.
 
-``` pre
+``` 
 -(NSUInteger) getAdPlayElapsedTime;
 ```
 
-
-
-
-
-## Video Ad Fullscreen Display
+## Video Ad fullscreen display
 
 The Xandr Mobile SDK provides no functionality
 for displaying video ads or developer designated content in full screen
@@ -210,22 +165,7 @@ screen mode by managing the frame of the content container view. By
 extension, if you want to give control over full screen mode to the
 user, you must provide appropriate interface options to the user.
 
-
-
-<b>Note:</b> Video Playback Controls
-
-In iOS, it is idiomatic to use the transport controls provided by
-`AVPlayerViewController` with property `showsPlaybackControls`. This
-method is incompatible with Xandr's Mobile SDK
-because, in this case, the full screen option creates a modal view which
-displays over all current views, obscuring the video ad container which
-displays over the content container. Full screen functionality for the
-video ad must be handled some means other than creating a modal view.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> Video Playback Controls
+>
+> In iOS, it is idiomatic to use the transport controls provided by `AVPlayerViewController` with property `showsPlaybackControls`. This method is incompatible with Xandr's Mobile SDK because, in this case, the full screen option creates a modal view which displays over all current views, obscuring the video ad container which displays over the content container. Full screen functionality for the video ad must be handled some means other than creating a modal view.

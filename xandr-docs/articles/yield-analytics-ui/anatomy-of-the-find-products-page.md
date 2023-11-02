@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Find Products Page
 Description : The Find Products page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Products tab shows a searchable
 list of products across your network.
 ---
@@ -50,30 +52,26 @@ of product rows displayed on a page, and scroll through additional
 pages. You can also export the product list to an Excel spreadsheet
 (XLS) or comma-separated values (CSV) file.
 
-<div id="ID-00000ef8__section_dtv_ndw_mwb" >
 
 ## Related Topics
 
 
 
-- <a href="find-and-view-a-list-of-products.html" class="xref">Find and
+- <a href="find-and-view-a-list-of-products.md" class="xref">Find and
   View a List of Products</a>
-- <a href="view-the-full-details-of-a-product.html" class="xref">View the
+- <a href="view-the-full-details-of-a-product.md" class="xref">View the
   Full Details of a Product</a>
-- <a href="edit-the-details-of-a-product.html" class="xref">Edit the
+- <a href="edit-the-details-of-a-product.md" class="xref">Edit the
   Details of a Product</a>
-- <a href="analyze-product-overlaps.html" class="xref">Analyze Product
+- <a href="analyze-product-overlaps.md" class="xref">Analyze Product
   Overlaps</a>
-- <a href="products-overview.html" class="xref">Products Overview</a>
+- <a href="products-overview.md" class="xref">Products Overview</a>
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/anatomy-of-the-products-dashboard-page.html"
+<a href="anatomy-of-the-products-dashboard-page.md"
 class="link">Anatomy of the Products Dashboard Page</a>
 
 

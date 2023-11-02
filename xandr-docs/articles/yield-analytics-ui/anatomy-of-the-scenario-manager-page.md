@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Scenario Manager Page
 Description : The Scenario Manager page is where
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 you can see how modified order lines, or orders - would impact revenue
 gain and loss for existing order lines.
 ---
@@ -42,7 +44,6 @@ Changes tab is comprised of the following sections:
 
 
 
-<div id="ID-00002a16__section_rzt_xgw_mwb" >
 
 ## About the Scenario Summary Tab Interface
 
@@ -64,23 +65,21 @@ Summary tab is comprised of the following sections:
 
 
 
-<div id="ID-00002a16__section_i15_xgw_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-00002a16__section_uzt_xgw_mwb" >
 
-- <a href="about-using-scenario-manager.html" class="xref">About Using
+- <a href="about-using-scenario-manager.md" class="xref">About Using
   Scenario Manager</a>
-- <a href="run-a-potential-order-through-scenario-manager.html"
+- <a href="run-a-potential-order-through-scenario-manager.md"
   class="xref">Run a Potential Order Through Scenario Manager</a>
-- <a href="run-an-existing-order-line-through-scenario-manager.html"
+- <a href="run-an-existing-order-line-through-scenario-manager.md"
   class="xref">Run an Existing Order Line Through Scenario Manager</a>
-- <a href="run-an-existing-order-through-scenario-manager.html"
+- <a href="run-an-existing-order-through-scenario-manager.md"
   class="xref">Run an Existing Order Through Scenario Manager</a>
-- <a href="interpreting-scenario-manager-results.html"
+- <a href="interpreting-scenario-manager-results.md"
   class="xref">Interpreting Scenario Manager Results</a>
 
 
@@ -88,18 +87,15 @@ Summary tab is comprised of the following sections:
 
 
 - **[Run an Existing Order Line Through Scenario
-  Manager](../topics/run-an-existing-order-line-through-scenario-manager.html)**  
+  Manager](run-an-existing-order-line-through-scenario-manager.md)**  
 - **[Run an Existing Order Through Scenario
-  Manager](../topics/run-an-existing-order-through-scenario-manager.html)**  
+  Manager](run-an-existing-order-through-scenario-manager.md)**  
 - **[Run a Potential Order Through Scenario
-  Manager](../topics/run-a-potential-order-through-scenario-manager.html)**  
+  Manager](run-a-potential-order-through-scenario-manager.md)**  
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/working-with-scenarios-overview.html"
+<a href="working-with-scenarios-overview.md"
 class="link">Working With Scenarios Overview</a>
 
 

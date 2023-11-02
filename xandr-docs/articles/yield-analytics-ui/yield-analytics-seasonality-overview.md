@@ -3,6 +3,9 @@ Title : Yield Analytics Seasonality Overview
 Description : ## Q: What is seasonality in Yield Analytics?
 A: The basic input into a yield analytics capacity forecast is ad server
 log data. Yield Analytics can forecast your inventory using log data
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
+
 ---
 
 
@@ -24,13 +27,8 @@ same capacity, and so on. With your help, a Technical Client Manager can
 implement seasonal models in yield analytics to ensure forecasts reflect
 the seasonality of your inventory.
 
-<figure class="fig fignone">
-<p><img src="../images/92834719.png" class="image" height="250" /></p>
-</figure>
-
-<figure class="fig fignone">
-<p><img src="../images/92834721.png" class="image" width="718" /></p>
-</figure>
+![Yield Analytics UI - A]("media/a.png")
+![Yield Analytics UI - B]("media/b.png")
 
 
 
@@ -121,12 +119,8 @@ issues arise due to seasonal changes.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-capacity-dashboard-page.html"
+<a href="anatomy-of-the-capacity-dashboard-page.md"
 class="link">Anatomy of the Capacity Dashboard Page</a>
 
 

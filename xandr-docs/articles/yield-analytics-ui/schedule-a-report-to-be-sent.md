@@ -1,6 +1,8 @@
 ---
 Title : Schedule a Report to be Sent
 Description : When you email a report to yourself or designated recipients, you can
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 send it immediately or on a recurring schedule.
 ---
 
@@ -44,12 +46,9 @@ view and edit scheduled reports.
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/anatomy-of-the-reports-tab.html" class="link">Anatomy
+<a href="anatomy-of-the-reports-tab.md" class="link">Anatomy
 of the Reports Tab</a>
 
 

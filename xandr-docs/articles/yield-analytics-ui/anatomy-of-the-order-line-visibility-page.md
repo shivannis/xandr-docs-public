@@ -1,6 +1,8 @@
 ---
 Title : Anatomy of the Order Line Visibility Page
 Description : The Order Line Visibility page on
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 the Orders tab shows an order line's
 details, flighting, and delivery, as well as any competing order lines.
 ---
@@ -14,7 +16,6 @@ The Order Line Visibility page on
 the Orders tab shows an order line's
 details, flighting, and delivery, as well as any competing order lines.
 
-<div id="ID-0000214a__section_ppf_z2w_mwb" >
 
 ## About the Order Line Visibility Page
 
@@ -74,9 +75,8 @@ Line Visibility page:
   - C:S %
   - Revenue Against Goal
 
-<div id="ID-0000214a__note_wpf_z2w_mwb" 
 
-Note: Metric values that are not
+<b>Note:</b> Metric values that are not
 included in the chart are displayed in red when they are negative.
 
 
@@ -121,37 +121,29 @@ included in the chart are displayed in red when they are negative.
 
 
 
-<div id="ID-0000214a__section_zrf_z2w_mwb" >
 
 ## Related Topics
 
 
 
-<div id="ID-0000214a__section_aqf_z2w_mwb" >
 
-- <a href="about-the-orders-tab.html" class="xref">About the Orders
+- <a href="about-the-orders-tab.md" class="xref">About the Orders
   Tab</a>
-- <a href="anatomy-of-the-orders-dashboard-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-orders-dashboard-page.md" class="xref">Anatomy
   of the Orders Dashboard Page</a>
-- <a href="find-an-order-line.html" class="xref">Find an Order Line</a>
-- <a href="check-revenue-against-goal.html" class="xref">Check Revenue
+- <a href="find-an-order-line.md" class="xref">Find an Order Line</a>
+- <a href="check-revenue-against-goal.md" class="xref">Check Revenue
   Against Goal</a>
-- <a href="find-orders.html" class="xref">Find Orders</a>
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="find-orders.md" class="xref">Find Orders</a>
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>
 
 
 
 
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/orders-overview.html" class="link">Orders
+<a href="orders-overview.md" class="link">Orders
 Overview</a>
 
 

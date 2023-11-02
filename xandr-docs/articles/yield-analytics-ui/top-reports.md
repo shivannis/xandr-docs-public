@@ -1,6 +1,8 @@
 ---
 Title : Top Reports
 Description : ## Product Maintenance
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 Description:
 - Dim: Product
 - Metric: Impression Capacity
@@ -10,7 +12,7 @@ Card, Product Status: Active, Period – Last Month
 - View: Data Table
 - Display: 500
 
-Note: Export this report. Look for
+<b>Note:</b> Export this report. Look for
 ---
 
 
@@ -33,7 +35,7 @@ Description:
 - Display: 500
   
 
-  Note: Export this report. Look for
+  <b>Note:</b> Export this report. Look for
   rate card and reporting products with zero capacity that can be
   removed from your system. (Send the list of IDs to your Client
   Services rep).  It is recommended to schedule this exercise. Schedule
@@ -49,10 +51,9 @@ Description:
 
 
 
+![Yield Analytics UI - T]("media/t.png")
 
 
-##  <img src="../images/90478604.png" class="image"
-alt="At-Risk Report PDF Download" />
 
 Description:
 
@@ -67,7 +68,7 @@ Description:
 - Display: 500
   
 
-  Note: This report is designed to
+  <b>Note:</b> This report is designed to
   track campaign delivery issues.  By comparing C:S to C:S (Lifetime),
   you can see if order lines are projected to get better or worse
   between your current time frame and their end dates.  Schedule this
@@ -81,8 +82,7 @@ Description:
 
 ## Zombie Order Lines
 
-<img src="../images/90478606.png" class="image"
-alt="Zombie Order Lines PDF Download" />
+![Yield Analytics UI - U]("media/u.png")
 
 Description:
 
@@ -97,7 +97,7 @@ Description:
 - Display: 500
   
 
-  Note: Zombie order lines track
+  <b>Note:</b> Zombie order lines track
   campaigns that are past their start date, but still remain in a
   pending state and are holding inventory.  In most instances, these are
   campaigns that should be cancelled.  Schedule this to run once a
@@ -124,7 +124,7 @@ Description:
 - Display: 25
   
 
-  Note: Ranks Salespeople by Earned
+  <b>Note:</b> Ranks Salespeople by Earned
   Revenue and eCPM.  Add a direct target attribute filter to - make your
   analysis specific to a type of targeting (E.g.: Mobile or video
   sales). 
@@ -151,7 +151,7 @@ Description:
 - Sort: Primary Metric (Descending)
   
 
-  Note: Ranks Products by Earned
+  <b>Note:</b> Ranks Products by Earned
   Revenue and eCPM.  Use Target Attribute setting to limit products to
   just certain ad sizes, or add a product group filter to make your
   analysis more specific.   
@@ -164,8 +164,7 @@ Description:
 
 ## Advertiser Scorecard
 
-<img src="../images/90478608.png" class="image"
-alt="Advertiser Scoreboard PDF Download" />
+![Yield Analytics UI - V]("media/v.png")
 
 Description:
 
@@ -179,7 +178,7 @@ Description:
 - Sort: Primary Metric (Descending)
   
 
-  Note: Ranks Advertisers by Earned
+  <b>Note:</b> Ranks Advertisers by Earned
   Revenue and eCPM.  Add a direct target attribute or product filter to
   make your analysis specific to a kind of targeting (E.g.: Audience or
   specific site sections).
@@ -192,8 +191,7 @@ Description:
 
 ## Pricing Benchmark Report
 
-<img src="../images/90478609.png" class="image"
-alt="Pricing Benchmark PDF Download" />
+![Yield Analytics UI - W]("media/w.png")
 
 Description:
 
@@ -207,7 +205,7 @@ Description:
 - Sort: Sell Through
   
 
-  Note: Displays a product’s sell
+  <b>Note:</b> Displays a product’s sell
   through rate along with the eCPM and impression capacity. Filter by
   product groups to make your analysis more specific to a particular set
   of products.
@@ -232,7 +230,7 @@ Description:
 - Display: 25
   
 
-  Note: Ranks Salespeople by
+  <b>Note:</b> Ranks Salespeople by
   Under-delivered Revenue and % Under-delivery.  Use this to understand
   which salespeople sell campaigns that under-deliver.  
 
@@ -260,7 +258,7 @@ Description:
 - Display: 500
   
 
-  Note: Compares the average spend and
+  <b>Note:</b> Compares the average spend and
   eCPM by Advertiser for certain products against all other advertisers.
   Instead of Advertiser, filter by Salesperson or Industry to examine
   the data in other ways.
@@ -286,7 +284,7 @@ Description
 - Display: 500
   
 
-  Note: Shows how impressions were
+  <b>Note:</b> Shows how impressions were
   consumed (Direct, Indirect, Contained) - along with the capacity for
   all target products. By looking at the STR rate on a more granular
   level, you can better manage yield for your products.
@@ -299,8 +297,7 @@ Description
 
 ## Unfilled Impressions
 
-<img src="../images/90478610.png" class="image"
-alt="Unfilled Impressions PDF Download" />
+![Yield Analytics UI - X]("media/x.png")
 
 Description:
 
@@ -316,7 +313,7 @@ Description:
 - Display: 500
   
 
-  Note: Ranks Products by % of blank
+  <b>Note:</b> Ranks Products by % of blank
   ads (unfilled impressions) served.  1 – 2% is a good target benchmark.
   Anything higher could be a problem.  Filter to custom or reporting
   products for more results. 
@@ -329,8 +326,7 @@ Description:
 
 ## Targeting Premium - Geo
 
-<img src="../images/90478611.png" class="image"
-alt="Targeting Premium Benchmark PDF Download" />
+![Yield Analytics UI - Y]("media/y.png")
 
 Description:
 
@@ -350,7 +346,7 @@ Description:
 - Display: 15
   
 
-  Note:   Shows the power of the direct
+  <b>Note:</b>   Shows the power of the direct
   target attribute filter - by displaying the difference in eCPM by
   Month for order lines that contained geotargeting vs. those that did
   not.  Consider switching the filter to audience variables, platform
@@ -399,7 +395,7 @@ Description:
 - Display: 500
   
 
-  Note:   Shows every product with
+  <b>Note:</b>   Shows every product with
   their click-thru rate.  This is valuable for any CPC campaign, or
   trying to optimize campaigns from low-CTR% to high-CTR% products.
 
@@ -422,7 +418,7 @@ Description:
 - Date Range: Last 3 Months
   
 
-  Note: Compares the overall eCPM
+  <b>Note:</b> Compares the overall eCPM
   across various SSPs within a certain period of time. Add Product to
   Additional Dimension to see eCPM by product.
 
@@ -444,7 +440,7 @@ Description:
 - Date Range: This Month
   
 
-  Note: Compares viewable (Capacity &
+  <b>Note:</b> Compares viewable (Capacity &
   Consumed) impressions to standard impressions by product.
 
   
@@ -455,8 +451,7 @@ Description:
 
 ## Data Entry Error Report
 
-<img src="../images/90478643.png" class="image"
-alt="Data Entry Error PDF Download" /> 
+![Yield Analytics UI - Z]("media/z.png")
 
 Description:
 
@@ -473,7 +468,7 @@ Description:
 - Sort: Contracted Revenue (Lifetime) Descending
   
 
-  Note: This report is pulling all line
+  <b>Note:</b> This report is pulling all line
   items. Use Contracted CPM & CPD Metric Slider to establish proper
   thresholds. Evaluate if any of the line items: Contracted revenue,
   contracted impressions, or contracted CPM - is too high or too low.
@@ -502,7 +497,7 @@ Description:
 - Display: 500
   
 
-  Note: The campaign forecast report is
+  <b>Note:</b> The campaign forecast report is
   to keep tabs on how your campaigns are performing, as well as how they
   are forecasted to deliver over their lifetime.
 
@@ -514,8 +509,7 @@ Description:
 
 ## New to Launch
 
-<img src="../images/90478613.png" class="image"
-alt="New to Launch PDF Download" />
+![Yield Analytics UI - AA]("media/aa.png")
 
 Description:
 
@@ -533,7 +527,7 @@ Description:
 - Display: 500
   
 
-  Note: The new to launch report is
+  <b>Note:</b> The new to launch report is
   helpful to understand what campaigns recently went live in the prior
   week.  This lets you communicate launch status to clients and sales
   reps without having to go into the ad server.
@@ -545,9 +539,7 @@ Description:
 
 
 ## Order Lines On Deck
-
-<img src="../images/90478614.png" class="image"
-alt="Order Lines on Deck PDF Download" />
+![Yield Analytics UI - BB]("media/bb.png")
 
 Description:
 
@@ -562,7 +554,7 @@ Description:
 
 
 
-Note: The on deck report is useful to
+<b>Note:</b> The on deck report is useful to
 understand what campaigns are setup and scheduled to start delivering in
 the upcoming week.  This is especially useful for tracking roadblocks or
 sponsorships that have critical timing.
@@ -575,8 +567,7 @@ sponsorships that have critical timing.
 
 ## Failed to Launch
 
-<img src="../images/90478645.png" class="image"
-alt="Failed to Launch PDF Download" />
+![Yield Analytics UI - CC]("media/cc.png")
 
 Description:
 
@@ -609,8 +600,7 @@ Description:
 
 ## Reporting on Consumption Date
 
-<img src="../images/90478618.png" class="image"
-alt="Reporting on Consumption Date PDF Download" />
+![Yield Analytics UI - DD]("media/dd.png")
 
 
 
@@ -618,19 +608,14 @@ alt="Reporting on Consumption Date PDF Download" />
 
 ## Inventory Availability by Month
 
-<img src="../images/90478619.png" class="image"
-alt="Inventory Availability by Month PDF Download" />
+![Yield Analytics UI - EE]("media/ee.png")
 
 
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/reports-overview.html" class="link">Reports
+<a href="reports-overview.md" class="link">Reports
 Overview</a>
 
 

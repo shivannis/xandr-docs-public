@@ -1,6 +1,8 @@
 ---
 Title : Frequently Asked Questions (FAQs)
 Description : Q: Why are my third-party numbers different than first-party numbers?
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 A: There are several possible reasons for such a discrepancy:
 - Technological discrepancy - This occurs when the internet pipe
 "breaks" before the resulting ad is delivered (e.g., The connection is
@@ -45,12 +47,9 @@ A: There are several possible reasons for such a discrepancy:
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
 
-**Parent topic:**
-<a href="../topics/ad-juster.html" class="link">Ad-Juster</a>
+<a href="ad-juster.md" class="link">Ad-Juster</a>
 
 
 

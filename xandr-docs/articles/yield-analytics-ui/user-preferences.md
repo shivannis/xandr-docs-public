@@ -1,6 +1,8 @@
 ---
 Title : User Preferences
 Description : You can change your password and change the default page that loads when
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 you log in to the system.
 ---
 
@@ -12,21 +14,20 @@ you log in to the system.
 You can change your password and change the default page that loads when
 you log in to the system.
 
-<div id="ID-00002ea9__section_dfv_ydk_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="change-your-password.html" class="xref">Change Your
+- <a href="change-your-password.md" class="xref">Change Your
   Password</a>
-- <a href="change-your-default-home-page.html" class="xref">Change Your
+- <a href="change-your-default-home-page.md" class="xref">Change Your
   Default Home Page</a>
 
 
 
-- **[Change Your Password](../topics/change-your-password.html)**  
+- **[Change Your Password](change-your-password.md)**  
 - **[Change Your Default Home
-  Page](../topics/change-your-default-home-page.html)**  
+  Page](change-your-default-home-page.md)**  
 
 

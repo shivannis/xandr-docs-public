@@ -1,6 +1,8 @@
 ---
 Title : View Order Information for a Specific Parent Product
 Description : By default, the Orders Dashboard page displays at-risk impressions,
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 consumed impressions, and order performance for your entire network.
 ---
 
@@ -23,36 +25,31 @@ However, you can view them for a specified parent product.
 To reset the Orders Dashboard to your entire analyzed network,
 enter Analyzed Network in the Parent Product Filter dialog.
 
-<div id="ID-00001fbc__section_zfj_lgk_nwb" >
 
 ## Related Topics
 
 
 
-- <a href="anatomy-of-the-orders-dashboard-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-orders-dashboard-page.md" class="xref">Anatomy
   of the Orders Dashboard Page</a>
-- <a href="check-revenue-against-goal.html" class="xref">Check Revenue
+- <a href="check-revenue-against-goal.md" class="xref">Check Revenue
   Against Goal</a>
-- <a href="view-the-full-details-of-an-order-or-order-line.html"
+- <a href="view-the-full-details-of-an-order-or-order-line.md"
   class="xref">View the Full Details of an Order or Order Line</a>
-- <a href="find-orders.html" class="xref">Find Orders</a>
-- <a href="anatomy-of-the-order-visibility-page.html" class="xref">Anatomy
+- <a href="find-orders.md" class="xref">Find Orders</a>
+- <a href="anatomy-of-the-order-visibility-page.md" class="xref">Anatomy
   of the Order Visibility Page</a>
-- <a href="find-an-order-line.html" class="xref">Find an Order Line</a>
-- <a href="anatomy-of-the-order-line-visibility-page.html"
+- <a href="find-an-order-line.md" class="xref">Find an Order Line</a>
+- <a href="anatomy-of-the-order-line-visibility-page.md"
   class="xref">Anatomy of the Order Line Visibility Page</a>
-- <a href="solving-delivery-issues-with-order-line-visibility.html"
+- <a href="solving-delivery-issues-with-order-line-visibility.md"
   class="xref">Solving Delivery Issues with Order Line Visibility</a>  
     
 
 
 
-<div class="familylinks">
 
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-orders-dashboard-page.html"
+<a href="anatomy-of-the-orders-dashboard-page.md"
 class="link">Anatomy of the Orders Dashboard Page</a>
 
 

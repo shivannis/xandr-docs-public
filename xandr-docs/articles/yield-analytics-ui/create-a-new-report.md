@@ -1,6 +1,8 @@
 ---
 Title : Create a New Report
 Description : Use the Reports tab to create custom
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 reports. As you enter metrics, the report automatically updates based on
 ---
 
@@ -60,25 +62,24 @@ report. 
     clicking Update, or by adjusting
     the slide bar.
 
-<div id="ID-000016ce__section_yws_t3b_nwb" >
 
 ## Related Topics
 
-- <a href="anatomy-of-the-reports-tab.html" class="xref">Anatomy of the
+- <a href="anatomy-of-the-reports-tab.md" class="xref">Anatomy of the
   Reports Tab</a>
-- <a href="compare-two-data-sets.html" class="xref">Compare Two Data
+- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
   Sets</a>
-- <a href="save-and-share-a-report.html" class="xref">Save and Share a
+- <a href="save-and-share-a-report.md" class="xref">Save and Share a
   Report</a>
-- <a href="open-and-edit-an-existing-report.html" class="xref">Open and
+- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
   Edit an Existing Report</a>
-- <a href="schedule-a-report-to-be-sent.html" class="xref">Schedule a
+- <a href="schedule-a-report-to-be-sent.md" class="xref">Schedule a
   Report to be Sent</a>
-- <a href="modify-a-report-s-schedule.html" class="xref">Modify a Report's
+- <a href="modify-a-report-s-schedule.md" class="xref">Modify a Report's
   Schedule</a>
-- <a href="export-a-report.html" class="xref">Export a Report</a>
+- <a href="export-a-report.md" class="xref">Export a Report</a>
 - <a
-  href="reporting-options-for-dimension-primary-and-secondary-metrics.html"
+  href="reporting-options-for-dimension-primary-and-secondary-metrics.md"
   class="xref">Reporting Options for Dimension, Primary, and Secondary
   Metrics</a>
 
@@ -86,12 +87,7 @@ report. 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/anatomy-of-the-reports-tab.html" class="link">Anatomy
+<a href="anatomy-of-the-reports-tab.md" class="link">Anatomy
 of the Reports Tab</a>
 
 

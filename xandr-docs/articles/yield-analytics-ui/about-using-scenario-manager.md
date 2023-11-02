@@ -1,6 +1,8 @@
 ---
 Title : About Using Scenario Manager
 Description : Yield Analytics uses Scenario Manager to run a "what-if" simulation
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 against existing order lines over the specified time period. This is to
 ---
 
@@ -66,30 +68,25 @@ one at a time.
 
 ## Related Topics
 
-- <a href="view-and-work-with-scenario-manager.html" class="xref">View and
+- <a href="view-and-work-with-scenario-manager.md" class="xref">View and
   Work With Scenario Manager</a>
-- <a href="anatomy-of-the-scenario-manager-page.html" class="xref">Anatomy
+- <a href="anatomy-of-the-scenario-manager-page.md" class="xref">Anatomy
   of the Scenario Manager Page</a>
-- <a href="run-a-potential-order-through-scenario-manager.html"
+- <a href="run-a-potential-order-through-scenario-manager.md"
   class="xref">Run a Potential Order Through Scenario Manager</a>
-- <a href="run-an-existing-order-line-through-scenario-manager.html"
+- <a href="run-an-existing-order-line-through-scenario-manager.md"
   class="xref">Run an Existing Order Line Through Scenario Manager</a>
-- <a href="run-an-existing-order-through-scenario-manager.html"
+- <a href="run-an-existing-order-through-scenario-manager.md"
   class="xref">Run an Existing Order Through Scenario Manager</a>
-- <a href="interpreting-scenario-manager-results.html"
+- <a href="interpreting-scenario-manager-results.md"
   class="xref">Interpreting Scenario Manager Results</a>
-- <a href="orders-overview.html" class="xref">Orders Overview</a>
+- <a href="orders-overview.md" class="xref">Orders Overview</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/working-with-scenarios-overview.html"
+<a href="working-with-scenarios-overview.md"
 class="link">Working With Scenarios Overview</a>
 
 

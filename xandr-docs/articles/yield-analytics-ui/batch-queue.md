@@ -1,6 +1,8 @@
 ---
 Title : Batch Queue
 Description : Clicking the Batch Queue tab accesses
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 any batches that are running or have completed during the current day.
 ---
 
@@ -56,7 +58,7 @@ do so for the given batch.
 
 
 
-Tip: Note
+<b>Tip:</b> Note
 
 Any batches created that day stay within the batch queue table for the
 day.
@@ -69,14 +71,7 @@ by all users.
 
 
 
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/availability-lookup.html" class="link">Availability
+<a href="availability-lookup.md" class="link">Availability
 Lookup</a>
 
 

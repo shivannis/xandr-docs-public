@@ -1,59 +1,25 @@
 ---
-Title : Resize the Banner Ad View to the Size of the Winning Creative on iOS
-Description : When you win a bid, you may want to resize the banner ad view to the
-size of the winning creative.
-ms.custom : android-ios
+title: Resize the Banner Ad View to the Size of the Winning Creative on iOS
+description: Resize the banner ad view on iOS to the size of the winning creative after winning a bid using methods for height and width retrieval.
+ms.custom: ios-sdk
 ---
 
+# Resize the banner ad view to the size of the winning creative on iOS
 
-# Resize the Banner Ad View to the Size of the Winning Creative on iOS
+When you win a bid, you may want to resize the banner ad view to the size of the winning creative.
 
-
-
-When you win a bid, you may want to resize the banner ad view to the
-size of the winning creative.
-
-To retrieve the height and width of the winning creative, use
-the loadedAdSize method.
-
-
+To retrieve the height and width of the winning creative, use the `loadedAdSize` method.
 
 ## loadedAdSize
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000031fe__entry__1"
-class="entry colsep-1 rowsep-1">Parameter</th>
-<th id="ID-000031fe__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000031fe__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000031fe__entry__2">The
-width of the creative for the banner ad view.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000031fe__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000031fe__entry__2">The
-height of the creative for the banner ad view.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Parameter | Description |
+|:---|:---|
+| `width` | The width of the creative for the banner ad view. |
+| `height` | The height of the creative for the banner ad view. |
 
 ## Example
 
-``` pre
+```
 - (void)loadBannerAd
 { 
 // Create the banner ad view and add it as a subview.
@@ -82,9 +48,3 @@ NSArray *sizes = @[[NSValue valueWithCGSize:size1], [NSValue valueWithCGSize:siz
     NSLog(@"BannerAd's height %.2f ",self.banner.loadedAdSize.height )
     }
 ```
-
-
-
-
-
-

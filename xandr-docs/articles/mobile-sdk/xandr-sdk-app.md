@@ -6,6 +6,7 @@ ms.custom: android-sdk, ios-sdk
 # Xandr SDK app
 
 Xandr's **SDK App** showcases the features of the Xandr advertising platform and the [Xandr mobile advertising SDK](xandr-mobile-sdks.md).
+
 Use our SDK application on your mobile device to display and test the behavior of creatives rendered in Xandr's SDK.
 
 To test a creative you will need to know the placement ID that will load the creative you wish to test.

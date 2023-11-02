@@ -1,6 +1,8 @@
 ---
 Title : About Forecasts and Adjustments
 Description : Yield Analytics works with your company to create the forecasts for each
+ms.date : 10/28/2023
+ms.custom : yield-analytics-ui
 product in yield analytics. This also automatically detects spikes in
 ---
 
@@ -45,7 +47,7 @@ adjustments:
 
 
 
-Note: Both parent and child products of
+<b>Note:</b> Both parent and child products of
 the product you change are affected by seasonal and manual adjustments.
 If a product's targeting is changed, the forecast adjustments are still
 applied to the product, and will be based on its new targeting.
@@ -74,32 +76,26 @@ adjustments.
 
 
 
-<div id="ID-00002598__section-bcc4657e-3b07-4bc3-996b-0f758ba129fe"
 >
 
 ## Related Topics
 
-- <a href="view-the-forecast-for-your-products.html" class="xref">View the
+- <a href="view-the-forecast-for-your-products.md" class="xref">View the
   Forecast for Your Products</a>
-- <a href="anatomy-of-the-capacity-dashboard-page.html"
+- <a href="anatomy-of-the-capacity-dashboard-page.md"
   class="xref">Anatomy of the Capacity Dashboard Page</a>
-- <a href="anatomy-of-the-forecast-management-page.html"
+- <a href="anatomy-of-the-forecast-management-page.md"
   class="xref">Anatomy of the Forecast Management Page</a>
-- <a href="anatomy-of-the-forecast-visibility-page.html"
+- <a href="anatomy-of-the-forecast-visibility-page.md"
   class="xref">Anatomy of the Forecast Visibility Page</a>
-- <a href="adding-and-editing-adjustments.html" class="xref">Adding and
+- <a href="adding-and-editing-adjustments.md" class="xref">Adding and
   Editing Adjustments</a>
 
 
 
 
 
-<div class="familylinks">
-
-<div class="parentlink">
-
-**Parent topic:**
-<a href="../topics/capacity-overview.html" class="link">Capacity
+<a href="capacity-overview.md" class="link">Capacity
 Overview</a>
 
 
