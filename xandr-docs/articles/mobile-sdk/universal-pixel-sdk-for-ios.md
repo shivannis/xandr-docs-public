@@ -56,7 +56,7 @@ There are two ways to install the SDK:
 1. **Use Xandr Unified Pixel SDK XCFramework**.
 
 > [!NOTE]
-> We are distributing PixieSDK.xcframework, which you can download [here]: (https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
+> We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
 
 - Create **Frameworks** folder.
   
