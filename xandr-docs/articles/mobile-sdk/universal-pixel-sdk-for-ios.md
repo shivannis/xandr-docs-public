@@ -211,6 +211,7 @@ PixieParams *landingPageParams = [[PixieParams alloc] initWithValue:@"5.99" curr
 ```
 Event.ITEM_VIEW`
 ```
+
 Track key page views (For example: product page, landing page, article).
 
 **Code sample:**
