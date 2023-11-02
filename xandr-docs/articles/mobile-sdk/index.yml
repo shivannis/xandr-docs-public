@@ -55,8 +55,8 @@ landingContent:
         links:
           - text: Release Notes
             url: ios-sdk-release-notes.md
- - title: Android SDK
-    linkLists:
+   - title: Android SDK
+     linkLists:
       - linkListType: overview
         links:
           - text: Overview
