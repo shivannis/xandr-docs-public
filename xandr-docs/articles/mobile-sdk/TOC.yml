@@ -1,9 +1,15 @@
-- name: Mobile-SDK
+- name: Mobile SDK Developer Documentation
   href: index.yml 
 - name: Getting Started
   items:
     - name: Overview
       href: xandr-mobile-sdks.md
+    - name: Mobile SDK App
+      href: xandr-sdk-app.md
+    - name: Impression Counting Methods
+      href: impression-counting-methods.md
+    - name: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
+      href: updated-impression-counting-mechanism-mobile-sdk-v8.0-and-above.md
 - name : iOS SDK
   items:
     - name: Overview
@@ -267,26 +273,19 @@
   items:
     - name: Overview
       href: ad-ops-for-mobile-sdk.md
-    - name: Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)
+    - name: Set Up HTML Responsive Interstitials (non-MRAID)
       href: ad-ops-set-up-html-responsive-interstitials-non-mraid.md
-    - name: Ad Ops - Set Up MRAID Full Screen Interstitials
+    - name: Set Up MRAID Full Screen Interstitials
       href: ad-ops-set-up-mraid-full-screen-interstitials.md
-    - name: Ad Ops - Set Up Static Image Banners
+    - name: Set Up Static Image Banners
       href: ad-ops-set-up-static-image-banners.md
-    - name: Ad Ops - Set Up Static Image Full Screen Interstitials
+    - name: Set Up Static Image Full Screen Interstitials
       href: ad-ops-set-up-static-image-full-screen-interstitials.md
 
 - name: ANJAM User Guide
   href: anjam-user-guide.md
 
-- name: Xandr SDK App
-  href: xandr-sdk-app.md
 
-- name: Impression Counting Methods
-  href: impression-counting-methods.md
-
-- name: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
-  href: updated-impression-counting-mechanism-mobile-sdk-v8.0-and-above.md
 
 
 
