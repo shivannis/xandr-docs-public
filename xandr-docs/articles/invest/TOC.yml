@@ -166,7 +166,7 @@
       items:
       - name: Create an Augmented Line Item
         href: create-an-augmented-line-item-ali.md
-      - name: Navigate to the Create New Line Item Screen
+      - name: Navigate to Create New Line Item Screen
         href: navigate-to-the-create-a-new-line-item-screen-invest.md
       - name: Add Basic Line Item Details
         href: add-basic-line-item-details.md
