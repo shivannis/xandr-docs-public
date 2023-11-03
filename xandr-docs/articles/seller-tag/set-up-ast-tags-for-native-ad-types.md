@@ -5,7 +5,7 @@ ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
-# Set up AST tags for native ad types
+# Set up seller tags for native ad types
 
 Xandr's seller tag (AST) is an asynchronous java script tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body. For native ads, there are different methods available to help render the ad on the page.
 
