@@ -16,9 +16,9 @@
       href: set-safeframe-configuration.md
 - name: Release History and Breaking Changes
   items:
-    - name: Seller Tag Release History
+    - name: Release History
       href: ast-release-history.md
-    - name : Seller Tag API Breaking Changes
+    - name : API Breaking Changes
       href: breaking-changes-ast-api.md
 - name: Video Capabilities
   items: 
