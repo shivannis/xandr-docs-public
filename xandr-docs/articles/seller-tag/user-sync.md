@@ -18,6 +18,7 @@ The user sync configuration object offers publishers the control over the behavi
 The user sync script is loaded by AST after each auction when `loadTags()` or `refresh()` call is made. By default, the script is loaded 3 seconds after the auction gets over, but this delay can be altered according to the publisher's preference.
 
 Although the AST user sync feature is enabled by default in the publisher's interest, there are options available to disable this feature if desired using `trackingManagement.userSync` settings in [Set Page Options](./set-page-options.md).
+## Parameters
 
 | Parameter | Type | Default | Description |
 |:---|:---|:---|:---|
