@@ -1,11 +1,11 @@
 ---
 title: Freewheel Priority Values in Yield Analytics
-description: In this article, learn about freewheel priority values in yield analytics.
+description: In this article, learn about freewheel priority values in Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Freewheel priority values in yield analytics
+# Freewheel priority values in Yield Analytics
 
 To appropriately rank competing FreeWheel placements, yield analytics maps numerical values to FreeWheel priority values.
 

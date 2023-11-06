@@ -7,9 +7,9 @@ ms.custom: yield-analytics-ui
 
 # Frequently Asked Questions (FAQs)
 
-Q: Why are my third-party numbers different than first-party numbers?
+## Why are my third-party numbers different than first-party numbers?
 
-A: There are several possible reasons for such a discrepancy:  
+There are several possible reasons for such a discrepancy:  
 
 - Technological discrepancy - This occurs when the internet pipe "breaks" before the resulting ad is delivered (e.g., The connection is too slow and times out, or the user hits the back button or a new link before the ad has a chance to load). This causes a positive discrepancy.
 - Accounting discrepancy - Because a huge percentage of internet traffic is not human, every vendor uses techniques to weed out and discount bot traffic. These techniques are not all the same. Therefore, what one vendor discounts as bot traffic, another counts as discrepancy. This discrepancy can be either positive or negative.
