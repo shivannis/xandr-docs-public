@@ -2,6 +2,7 @@
 title: Receive Ad View Status Events on Android
 description: Learn how to receive ad view status events from the SDK to determine ad clicks and expanded state. Implement AdListener interface and attach it to ad view.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Receive ad view status events on Android
