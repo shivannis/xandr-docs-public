@@ -2,6 +2,7 @@
 title: Initialize SDK Settings in iOS
 description: In this article, learn how to initialize SDK settings on iOS devices using a method and an example for better understanding.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Initialize SDK settings in iOS
