@@ -2,6 +2,7 @@
 title: iOS 14.0 FAQ
 description: In this article, explore the frequently asked questions (FAQs) about Apple's iOS 14.0 release in relation to the iOS SDK.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS 14.0 FAQ
