@@ -2,6 +2,7 @@
 title : Show Interstitials Ads on iOS
 description : This page has instructions and code samples for showing interstitial ads on iOS.
 ms.custom : ios-sdk
+ms.date : 10/28/2023
 ---
 
 
