@@ -2,6 +2,7 @@
 title: Location Controls on Android
 description: This article provides instructions for controlling the accuracy of location data sent to the ad server and HTML5 location access for creatives in a WebView.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Location controls on Android
