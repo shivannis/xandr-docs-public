@@ -2,6 +2,7 @@
 title : Show Banner Native on Android
 description : Banner Native refers to the capability of our Mobile SDK Banner class to return native demand in Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Show banner native on Android
