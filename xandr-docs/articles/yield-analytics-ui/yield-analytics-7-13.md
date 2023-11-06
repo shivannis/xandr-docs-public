@@ -3,7 +3,7 @@ title : Yield Analytics 7.13
 description : Channel Management is currently based on order lines. With the addition of Pre-Bid, we are now basing it on explicit product mappings.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-Channel Management is currently based on order lines. With the addition
+
 ---
 
 

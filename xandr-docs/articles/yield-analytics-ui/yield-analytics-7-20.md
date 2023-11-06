@@ -4,9 +4,7 @@ description : Learn about an advanced filter created on the left hand column of 
 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-**Roadblock Look Ups**
- We have created a new advanced filter on the left hand column of the
-Availability screen called Roadblock.
+
 ---
 
 

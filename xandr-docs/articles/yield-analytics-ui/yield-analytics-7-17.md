@@ -3,8 +3,7 @@ Title : Yield Analytics 7.17
 Description : ## Feature Enhancements
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-We have created an option to "Update All" datasets, when there are
-multiple datasets in reports. This will eliminate the need to go into
+
 ---
 
 

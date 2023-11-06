@@ -3,11 +3,11 @@ title : Working With Users
 description : During implementation, yield analytics sets up an initial set of usernames, passwords, and user permissions.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-usernames, passwords, and user permissions.
+
 ---
 
 
-# Working With Users
+# Working with users
 
 During implementation, yield analytics sets up an initial set of
 usernames, passwords, and user permissions.

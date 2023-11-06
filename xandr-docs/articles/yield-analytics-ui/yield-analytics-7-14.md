@@ -3,7 +3,7 @@ title : Yield Analytics 7.14
 description : Learn to navigate to manage Saved Reports in the Admin Tools dropdown.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-**Manage Saved Reports**
+
 
 ---
 

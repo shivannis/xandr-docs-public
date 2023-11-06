@@ -3,8 +3,7 @@ title : Yield Analytics 7.16
 description : ## Product Permission Enhancements
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-- When selecting Parent Products to a User Group on the Permissions
-page, you have the ability to view current associated overlaps. This
+
 ---
 
 
