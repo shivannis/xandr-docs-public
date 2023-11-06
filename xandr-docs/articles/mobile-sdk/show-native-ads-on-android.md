@@ -2,6 +2,7 @@
 title : Show Native Ads on Android
 description : Native ads give you the ability to create ads that are customized to match the look and feel of the rest of your application. This page describes our Native Ads API at a high level.
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 
