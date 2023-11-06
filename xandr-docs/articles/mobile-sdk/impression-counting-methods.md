@@ -2,6 +2,7 @@
 title: Impression Counting Methods
 description: In this article, learn about the various impression counting methods, types, AdUnits, and how to enable them.
 ms.custom: android-sdk, ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Impression counting methods
