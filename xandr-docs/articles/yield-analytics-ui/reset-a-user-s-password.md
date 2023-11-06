@@ -1,45 +1,21 @@
 ---
-Title : Reset a User's Password
-Description : If you have administrative permissions, you can reset a user's password.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Reset a User's Password
+description: You can reset a user's password if you have administrative permissions.
+ms.date: 11/06/2023
+ms.custom: yield-analytics-ui
 ---
 
-
-# Reset a User's Password
-
-
+# Reset a user's password
 
 If you have administrative permissions, you can reset a user's password.
 
-1.  On the Admin Tools menu,
-    click Users. The Users page
-    appears, displaying a list of all user accounts.
-2.  In the Username column, click
-    the username for the user you want to update. The Edit User page
-    appears.
-3.  In the Password field, type the
-    new password. Retype it in the Confirm
-    Password field, and then
-    click Save.
+1. On the **Admin Tools** menu, click **Users**. The **Users** page appears, displaying a list of all user accounts.
+2. In the **Username** column, click the username for the user you want to update. The **Edit User** page appears.
+3. In the **Password** field, type the new password. Retype it in the **Confirm Password** field, and then click **Save**.
 
+## Related topics
 
-## Related Topics
-
-- <a href="add-a-new-user.md" class="xref">Add a New User</a>
-- <a href="disable-a-user.md" class="xref">Disable a User</a>
-- <a href="delete-a-user.md" class="xref">Delete a User</a>
-
-
-
-
-
-
-<a href="working-with-users.md" class="link">Working With
-Users</a>
-
-
-
-
-
-
+- [Add a New User](./add-a-new-user.md)
+- [Disable a User](./disable-a-user.md)
+- [Delete a User](./delete-a-user.md)
+- [Working With Users](./working-with-users.md)

@@ -1,18 +1,13 @@
 ---
-Title : Release Notes
-Description : This is the home page for all Yield Analytics Release notes.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Release Notes
+description: This page lists all the Yield Analytics release notes.
+ms.date: 11/06/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Release notes
 
-# Release Notes
-
-
-
-This is the home page for all Yield Analytics Release notes.
-
-
+This is the homepage for all Yield Analytics Release notes.
 
 - **[Yield Analytics 8.79](yield-analytics-8-79.md)**  
 - **[Yield Analytics 8.76](yield-analytics-8-76.md)**  
@@ -43,5 +38,3 @@ This is the home page for all Yield Analytics Release notes.
 - **[Yield Analytics 7.6](yield-analytics-7-6.md)**  
 - **[Yield Analytics 7.3](yield-analytics-7-3.md)**  
 - **[Yield Analytics 7.2](yield-analytics-7-2.md)**  
-
-
