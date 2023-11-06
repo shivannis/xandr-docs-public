@@ -2,6 +2,7 @@
 title: Dismiss Interstitials on User Click
 description: In this article, learn how to dismiss interstitial ads when users click, including instructions, methods, and examples.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Dismiss interstitials on user click
