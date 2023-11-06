@@ -2,6 +2,7 @@
 title: Xandr Mobile SDKs
 description: The article provides a description of Xandr's Mobile SDKs and how they help users monetize their apps.
 ms.custom: android-sdk, ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Xandr mobile SDKs
