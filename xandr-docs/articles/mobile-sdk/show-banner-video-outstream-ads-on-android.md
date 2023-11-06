@@ -2,6 +2,7 @@
 title : Show Banner Video / OutStream Ads on Android
 description : As of Version 4.6 the Xandr mobile SDK supports serving multiple creative formats (RTB VAST outstream videos and regular banner ads) through a single banner entry point.
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 
