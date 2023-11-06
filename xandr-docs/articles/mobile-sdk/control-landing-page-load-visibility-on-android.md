@@ -2,6 +2,7 @@
 title: Control Landing Page Load Visibility on Android
 description: In this article, learn instructions for configuring the landing page load behavior when ads are clicked on Android devices.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Control landing page load visibility on Android
