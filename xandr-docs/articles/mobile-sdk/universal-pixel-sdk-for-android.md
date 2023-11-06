@@ -2,6 +2,7 @@
 title : Universal Pixel SDK for Android
 description : This document provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for Android.
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 
