@@ -1,20 +1,14 @@
 ---
-Title : Yield Analytics 8.1
-Description : ## Feature Enhancements
+title : Yield Analytics 8.1
+description : There is a new folder of saved reports available to all publishers - Best Practices Folder. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-**Best Practices Folder** - There is a new folder of saved reports
-available to all publishers.  The descriptions of the reports can all be
 ---
 
 
-# Yield Analytics 8.1
+# Yield analytics 8.1
 
-
-
-
-
-## Feature Enhancements
+## Feature enhancements
 
 **Best Practices Folder** - There is a new folder of saved reports
 available to all publishers.  The descriptions of the reports can all be
@@ -25,13 +19,9 @@ Xandr Channel integration has added size,
 country, deal id/deal name, publisher name, site name, and placement
 name fields.
 
-
-
-
-
 ## Fixes
 
-**New Availability Lookups Fixes**
+**New availability lookups fixes**
 
 - Vary by without targeting - Allows you to vary by without defining
   targeting first.
@@ -42,10 +32,6 @@ name fields.
 previously been saved.
 
 
-
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
 
 
 

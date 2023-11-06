@@ -1,19 +1,14 @@
 ---
-Title : Yield Analytics 7.6
-Description : ## Features
+title : Yield Analytics 7.6
+description : For clients with Duration Based Metrics for
+video, we have introduced two new metrics to enable you to see earnings
+metrics at the proper duration. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-Duration Based Metrics -  For clients with Duration Based Metrics for
-video, we have introduced two new metrics to enable you to see earnings
-metrics at the proper duration.  Now you can perform reporting tasks all
 ---
 
 
-# Yield Analytics 7.6
-
-
-
-
+# Yield analytics 7.6
 
 ## Features
 
@@ -33,10 +28,6 @@ area within Product Search, where you can add an 'and' argument to your
 your search.  You can also use a , within the search box to search
 multiple variables.
 
-
-
-
-
 ## Bugs
 
 Consumption to Schedule - When a goal is used on a sponsorship line item
@@ -44,12 +35,3 @@ we will now calculate the consumption to schedule.
 
 Removed Row Limits - We have removed the row limits to reports in the
 Reporting Tab.  On export please be aware of the XLSX restrictions.
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-

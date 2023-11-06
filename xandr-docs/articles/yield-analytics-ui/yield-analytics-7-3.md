@@ -1,15 +1,13 @@
 ---
-Title : Yield Analytics 7.3
-Description : Please note that we have removed the old Reports screen, you can use the
+title : Yield Analytics 7.3
+description : Learn about the New Reports screen for all of your old reports.  
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-New Reports screen for all of your old reports. 
+ 
 ---
 
 
-# Yield Analytics 7.3
-
-
+# Yield analytics 7.3
 
 Please note that we have removed the old Reports screen, you can use the
 New Reports screen for all of your old reports. 
@@ -29,22 +27,7 @@ highlights for this release:
   apply priority and frequency caps to your Sponsorship Calendar. This
   is to enhance the data you are able to view.
 
-
-
 ## Fixes
 
 Unfilled Contract Type - The logic now reports the data into the future,
 and graphs the future data points appropriately.
-
-
-
-
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-
