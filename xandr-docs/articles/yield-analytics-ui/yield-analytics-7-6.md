@@ -1,8 +1,6 @@
 ---
 title : Yield Analytics 7.6
-description : For clients with Duration Based Metrics for
-video, we have introduced two new metrics to enable you to see earnings
-metrics at the proper duration. 
+description : For clients with Duration Based Metrics for video, we have introduced two new metrics to enable you to see earnings metrics at the proper duration. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---

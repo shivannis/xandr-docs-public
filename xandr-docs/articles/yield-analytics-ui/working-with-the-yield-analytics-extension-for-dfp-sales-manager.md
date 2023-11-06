@@ -28,7 +28,7 @@ instructions:
 1. Navigate to the following link: [https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk](https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk).
 1. Click **Add to Chrome** to install the
     plugin.
-1. On the dialog that appears, click Add extension to confirm the installation.
+1. On the dialog that appears, click **Add extension** to confirm the installation.
 1. View the yield analytics Sales Manager Extension in Chrome.
 1. Click on the Customize and control Google Chrome link in the menu bar (<b>Note:</b> This is the three vertical dots link)
 1. Select **More Tools**, and click **Extensions**.
