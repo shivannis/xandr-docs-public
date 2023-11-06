@@ -2,6 +2,7 @@
 title: Android SDK Code Samples
 description: In this article, find links to various code samples to help you in the development of your app. 
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Android SDK code samples
