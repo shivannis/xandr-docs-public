@@ -2,6 +2,7 @@
 title : Show Instream Video Ads on iOS
 description : This page describes how to use the SDK to fetch and display instream video ads in iOS.
 ms.custom : ios-sdk
+ms.date : 10/28/2023
 
 ---
 
