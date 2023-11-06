@@ -2,6 +2,7 @@
 title: Configure Video Player Options on iOS
 description: In this article, find the instructions to customize video player controls on iOS SDK.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Configure video player options on iOS
