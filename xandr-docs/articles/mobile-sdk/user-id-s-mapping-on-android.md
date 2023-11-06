@@ -2,6 +2,7 @@
 title: User ID(s) Mapping on Android
 description: The article describes the mapping of user IDs on Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # User ID(s) mapping on Android
