@@ -2,6 +2,7 @@
 title : k
 description : An API is introduced in Xandr mobile SDK to set the mode of execution of AdRequests as test mode for debugging or testing purpose.
 ms.custom: ios-sdk 
+ms.date : 10/28/2023
 ---
 
 
