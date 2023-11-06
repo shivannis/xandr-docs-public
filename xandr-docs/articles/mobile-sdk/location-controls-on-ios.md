@@ -2,6 +2,7 @@
 title: Location Controls on iOS
 description: This article provides instructions for controlling location data accuracy and HTML5 location access for advertisers to improve monetization of ads.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Location controls on iOS
