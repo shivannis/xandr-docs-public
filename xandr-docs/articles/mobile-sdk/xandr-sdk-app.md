@@ -2,6 +2,7 @@
 title: Xandr SDK App
 description: This article provides instructions on using Xandr's SDK application and explores various features of the Xandr advertising platform.
 ms.custom: android-sdk, ios-sdk
+ms.date : 10/28/2023
 ---
 # Xandr SDK app
 
