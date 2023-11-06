@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 8.0
-Description : In this page we tell you about a Version 8.0 of yield analytics. The Availabilty Lookup Screen has been redesigned.
+description : In this page we tell you about a Version 8.0 of yield analytics. The Availabilty Lookup Screen has been redesigned.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---
