@@ -2,6 +2,7 @@
 title: Add Targeting Parameters on iOS
 description: In this article, learn how to add targeting parameters for ads on iOS.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Add targeting parameters on iOS
