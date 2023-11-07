@@ -1,11 +1,11 @@
 ---
-title: Release Notes
+title: Yield Analytics UI - Release Notes
 description: This page lists all the Yield Analytics release notes.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Release notes
+# Yield Analytics UI - Release notes
 
 This is the homepage for all Yield Analytics Release notes.
 

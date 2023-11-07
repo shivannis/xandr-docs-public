@@ -1,6 +1,6 @@
 ---
 title: Schedule a Report to be Sent
-description: 
+description: Send a report immediately or on a recurring schedule after emailing it to yourself or designated recipients.
 ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---
