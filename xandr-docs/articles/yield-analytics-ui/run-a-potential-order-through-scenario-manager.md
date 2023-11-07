@@ -21,8 +21,8 @@ There are three main steps to using Scenario Manager to run a simulated new or
 
 You can add the product to Scenario Manager from the **Find Products** page. Or, complete the following process:
 
-1. On the **Scenario Manager** page, from the **Scenario Time frame** drop-down menu, specify the time period for the scenario.
-1. In the **Change Type** drop-down menu, choose **Select product for order line creation** and click **Go**.
+1. On the **Scenario Manager** page, from the **Scenario Time frame** dropdown menu, specify the time period for the scenario.
+1. In the **Change Type** dropdown menu, choose **Select product for order line creation** and click **Go**.
 1. On the **Find Products** page that is displayed, use the filer criteria to find the specific product.
 1. Click for the product and select **Add to Scenario**.
 1. Return to Scenario Manager.

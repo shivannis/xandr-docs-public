@@ -19,8 +19,8 @@ There are three main steps to using Scenario Manager to run a simulated change
 
 You can add the order line to Scenario Manager from its **Order Line Visibility** page. The alternative is to complete the following process:
 
-1. On the **Scenario Manager** page, from the **Scenario Time frame** drop-down menu, specify the time period for the scenario.
-1. In the **Change Type** drop-down menu, choose **Select order line** to modify and click **Go**.
+1. On the **Scenario Manager** page, from the **Scenario Time frame** dropdown menu, specify the time period for the scenario.
+1. In the **Change Type** dropdown menu, choose **Select order line** to modify and click **Go**.
 1. On the **Find Order Lines** page that is displayed, use the filer criteria to find the specific order line.
 1. Click for the order line and select **Add to Scenario**.
 1. Return to Scenario Manager.
