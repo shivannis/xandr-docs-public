@@ -1,57 +1,30 @@
 ---
-Title : Administration Overview
-Description : If you have administrative permissions, you can manage users, user
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-groups, and saved reports.
+title: Administration Overview
+description: In this article, find links to resources on managing users, user groups, and reports.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Administration overview
 
-# Administration Overview
-
-
-
-If you have administrative permissions, you can manage users, user
-groups, and saved reports.
-
-
+If you have administrative permissions, you can manage users, user groups, and saved reports.
 
 ## Related Topics
 
-- <a href="working-with-users.md" class="xref">Working With Users</a>
-- <a href="reset-a-user-s-password.md" class="xref">Reset a User's
-  Password</a>
-- <a href="disable-a-user.md" class="xref">Disable a User</a>
-- <a href="delete-a-user.md" class="xref">Delete a User</a>
-- <a href="add-a-new-user.md" class="xref">Add a New User</a>
-- <a href="import-users.md" class="xref">Import Users</a>
-- <a href="working-with-user-groups.md" class="xref">Working With User
-  Groups</a>
-- <a href="add-a-user-group.md" class="xref">Add a User Group</a>
-- <a href="edit-a-user-group.md" class="xref">Edit a User Group</a>
-- <a href="duplicate-a-user-group.md" class="xref">Duplicate a User
-  Group</a>
-- <a href="delete-a-user-group.md" class="xref">Delete a User Group</a>
-- <a href="search-user-groups.md" class="xref">Search User Groups</a>
-- <a href="working-with-saved-reports.md" class="xref">Working With
-  Saved Reports</a>
-- <a href="add-a-report-category.md" class="xref">Add a Report
-  Category</a>
-- <a href="edit-report-categories.md" class="xref">Edit Report
-  Categories</a>
-- <a href="filter-the-list-of-saved-reports.md" class="xref">Filter the
-  List of Saved Reports</a>
-- <a href="schedule-a-saved-report.md" class="xref">Schedule a Saved
-  Report</a>
-
-
-
-
-
-- **[Working With Users](working-with-users.md)**  
-- **[Working With User
-  Groups](working-with-user-groups.md)**  
-- **[Working With Saved
-  Reports](working-with-saved-reports.md)**  
-
-
+- [Working With Users](working-with-users.md)
+- [Reset a User's Password](reset-a-user-s-password.md)
+- [Disable a User](disable-a-user.md)
+- [Delete a User](delete-a-user.md)
+- [Add a New User](add-a-new-user.md)
+- [Import Users](import-users.md)
+- [Working With User Groups](working-with-user-groups.md)
+- [Add a User Group](add-a-user-group.md)
+- [Edit a User Group](edit-a-user-group.md)
+- [Duplicate a User Group](duplicate-a-user-group.md)
+- [Delete a User Group](delete-a-user-group.md)
+- [Search User Groups](search-user-groups.md)
+- [Working With Saved Reports](working-with-saved-reports.md)
+- [Add a Report Category](add-a-report-category.md)
+- [Edit Report Categories](edit-report-categories.md)
+- [Filter the List of Saved Reports](filter-the-list-of-saved-reports.md)
+- [Schedule a Saved Report](schedule-a-saved-report.md)
