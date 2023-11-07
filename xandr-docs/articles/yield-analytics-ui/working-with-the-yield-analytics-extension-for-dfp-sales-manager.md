@@ -1,6 +1,6 @@
 ---
 title : Working with the Yield Analytics Extension for DFP Sales Manager
-description : Learn how you can access yield analytics derived forecast and contention information directly in the DFP Sales Management interface using our Chrome browser extension.
+description : Learn background information, Installation and update instructions for Yield Analytics Extension for DFP Sales Manager.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 

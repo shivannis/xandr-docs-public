@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 7.14
-description : Learn to navigate to manage Saved Reports in the Admin Tools dropdown.
+description : Learn how to manage saved reports, edit screens options, create a new schedule, add additional metrics, and apply additional filters in new landing page for find. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 

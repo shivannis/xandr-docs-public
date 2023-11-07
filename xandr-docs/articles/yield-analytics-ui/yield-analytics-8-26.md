@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 8.26
-description : The Yield Analytics 8.26 release includes several user-interface updates designed to increase performance of the Order Line Visibility Page.
+description : Learn all about Order Line Visibility page. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 7.15
-description : Support Period to Log Date - This is an option to select a dynamic a date range of Period to Log Date, where the end date would be the log data date.
+description : Learn about Support Period to Log Date. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
@@ -21,7 +21,6 @@ page filter delimiters throughout the application.
 ## Fixes
 
 Scheduling for one report was being applied to multiple reports. Now it
-will only be applied to the intended report
-
+will only be applied to the intended report.
 There has been some slowness in the calendar widget on the Product
 Visibility screen that has been enhanced.

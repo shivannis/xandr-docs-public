@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 7.17
-description : Learn about the option to "Update All" datasets, when there are multiple datasets in reports.  
+description : Learn how to "Update All" datasets, when there are multiple datasets in reports.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
@@ -34,11 +34,7 @@ each dataset to change a single metric filter.
         1. \*Update All\* should not be visible
     1. Multi dataset
         1. \*Update All\* should be visible
-        1. Within Find Products the metadata model now allows you to
-            link directly to Target Visibility.
-
-            There is also a horizontal scroll bar to allow you to better
-            access the data.
+        1. Within Find Products the metadata model now allows you to link directly to Target Visibility.There is also a horizontal scroll bar to allow you to better access the data.
 
 ## Fixes
 

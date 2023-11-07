@@ -1,15 +1,13 @@
 ---
 title : Working With Scenarios Overview
-description : Use Scenario Manager to run simulations of how modifications to an order line would affect its delivery, as well as the delivery of any competing and overlapping order lines.
+description : Learn how Scenario Manager can be used to run simulations, troubleshoot order line delivery, solve order line pacing issues and analyze a proposal.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
 ---
 
 
-# Working With Scenarios Overview
-
-
+# Working with scenarios overview
 
 Use Scenario Manager to run simulations of how modifications to an order
 line would affect its delivery, as well as the delivery of any competing

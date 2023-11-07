@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 8.1
-description : There is a new folder of saved reports available to all publishers - Best Practices Folder. 
+description : Learn how to find descriptions on Best Practices Folder, and deleting reports. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---

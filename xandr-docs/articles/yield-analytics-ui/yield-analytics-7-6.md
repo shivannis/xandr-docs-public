@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 7.6
-description : For clients with Duration Based Metrics for video, we have introduced two new metrics to enable you to see earnings metrics at the proper duration. 
+description : For clients with Duration Based Metrics for video, two new metrics to enable you to see earnings metrics at the proper duration have been introduced. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---
@@ -19,7 +19,7 @@ report.
 
 Earned Revenue for Viewable - When using earned revenue for a viewable
 line item, your earned revenue will adjust it's calculation to viewable
-impressions\*vCPM/1000
+impressions\*vCPM/1000.
 
 Additional Product Search functionality - There is now a second search
 area within Product Search, where you can add an 'and' argument to your

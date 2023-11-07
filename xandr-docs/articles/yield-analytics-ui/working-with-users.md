@@ -1,6 +1,6 @@
 ---
 title : Working With Users
-description : During implementation, yield analytics sets up an initial set of usernames, passwords, and user permissions.
+description : Learn how yield analytics can be used to set usernames, passwords, permissions, add, edit, disable and delete user accounts.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 

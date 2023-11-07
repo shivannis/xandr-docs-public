@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics 7.20
-description : Learn about an advanced filter created on the left hand column of the Availability screen called Roadblock.
+description : Learn about an advanced filter on the left hand column of the Availability screen called Roadblock.
 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
