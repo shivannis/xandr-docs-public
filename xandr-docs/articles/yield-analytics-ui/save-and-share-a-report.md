@@ -15,7 +15,7 @@ Reports must be saved to be shared with other people.
 1. Enter the report **Name**, **Description**, and **Category** as needed.
     - When naming the report, consider your company's naming conventions and remember that report names are used for searching.
     - To add a new report category, click **Add New** to the right of the **Category** dropdown list.
-1. (Optional) To make this report your default report, select the **Set as default** check box.
+1. (Optional) To make this report your default report, select the **Set as default** checkbox.
 1. To share the report with users in other groups, click the **click here** link. Then select the group(s) from the list that appears.
 1. Click **Save**.
 

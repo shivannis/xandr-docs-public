@@ -33,7 +33,7 @@ The product that you added to Scenario Manager is displayed in the **New Orde
 
 Make the changes that you want to simulate.
 
-1. Select the check box for the product and click the **Edit** button.
+1. Select the checkbox for the product and click the **Edit** button.
 1. In the **Edit Values** dialog, make changes to any of the following values:
     - Order
     - Advertiser
@@ -50,7 +50,7 @@ Make the changes that you want to simulate.
 1. Click **Update**.
 1. (Optional) Repeat the above steps to create any additional new order lines for additional products.
 
-If you include multiple new order lines in your simulation, you can apply the same changes to all of them at once by selecting their check boxes, clicking the **Edit** button, making the changes, and clicking **Update**.
+If you include multiple new order lines in your simulation, you can apply the same changes to all of them at once by selecting their checkboxes, clicking the **Edit** button, making the changes, and clicking **Update**.
 
 ## Run and analyze the scenario
 

@@ -34,7 +34,7 @@ The order lines that you added to Scenario Manager appear twice:
 
 Make the changes that you want to simulate.
 
-1. Select the **New** check box for the order line and click the **Edit** button. If needed, you can search again for additional order lines to include in your simulation.
+1. Select the **New** checkbox for the order line and click the **Edit** button. If needed, you can search again for additional order lines to include in your simulation.
 1. In the **Edit Values** dialog, make changes to any of the following values:
     - Start Date
     - End Date
@@ -46,7 +46,7 @@ Make the changes that you want to simulate.
     - State
 1. Click **Update**. The changes that you made are displayed in red, which you can compare to the old version above.
 
-If you include multiple order lines in your simulation, you can apply the same changes to all of them at once by selecting their check boxes, clicking the **Edit** button, making the changes, and clicking **Update**.
+If you include multiple order lines in your simulation, you can apply the same changes to all of them at once by selecting their checkboxes, clicking the **Edit** button, making the changes, and clicking **Update**.
 
 ## Run and analyze the scenario
 
