@@ -34,7 +34,7 @@ The orders that you added to Scenario Manager appear twice:
 
 Make the changes that you want to simulate.
 
-1. Select the New checkbox for the order and click the **Edit** button. If needed, you can search again for additional orders to include in your simulation.
+1. Select the **New** checkbox for the order and click the **Edit** button. If needed, you can search again for additional orders to include in your simulation.
 1. In the **Edit Values** dialog, make changes to any of the following values:
     - Start Date
     - End Date
