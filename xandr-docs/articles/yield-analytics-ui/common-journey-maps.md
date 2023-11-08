@@ -1,7 +1,6 @@
 ---
 title: Common Journey Maps
-description: The article explains common journey map or the path a user takes from problem to solution by using
-yield analytics.
+description: The article explains common journey map or the path a user takes from problem to solution by using yield analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
