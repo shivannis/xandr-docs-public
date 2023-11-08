@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can duplicate a user group to quickly set up a new group with similar permissions.
 
-1. On the **Admin Tools** menu, **click Permissions**. The Permissions page appears, displaying the Groups panel with a table of all existing user groups.
+1. On the **Admin Tools** menu, click **Permissions**. The Permissions page appears, displaying the Groups panel with a table of all existing user groups.
 1. Click the user group you want to duplicate. The Group: \[Group Name\] panel appears, where \[Group Name\] is the name of the group you selected.
 1. At the bottom of the page, click **Duplicate**.
 1. In the **Group Summary** section, type a name and description for the duplicate group.
@@ -26,3 +26,4 @@ Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Sce
 - [Edit a User Group](edit-a-user-group.md)
 - [Delete a User Group](delete-a-user-group.md)
 - [Search User Groups](search-user-groups.md)
+- [Working With User Groups](working-with-user-groups.md)

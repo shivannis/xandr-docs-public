@@ -56,3 +56,7 @@ The following mappings are based on FreeWheel's values for Contract type and 
 
 > [!NOTE]
 > The yield analytics priority labels for FreeWheel can be customized per client. For more information, please contact your services representative.
+
+## Related topic
+
+[Ad Servers Overview](ad-servers-overview.md)

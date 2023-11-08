@@ -25,3 +25,4 @@ Capacity, Availability, Products, Orders, Proposals, Pricing, Reports, Sce
 - [Duplicate a User Group](duplicate-a-user-group.md)
 - [Delete a User Group](delete-a-user-group.md)
 - [Search User Groups](search-user-groups.md)
+- [Working With User Groups](working-with-user-groups.md)

@@ -25,3 +25,4 @@ Manual adjustments impact the product you're adjusting as well as all overlappin
 - [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
 - [Check Impression Capacity for a Product Group](check-impression-capacity-for-a-product-group.md)
 - [Edit a Seasonal Adjustment for a Seasonal Product](edit-a-seasonal-adjustment-for-a-seasonal-product.md)
+- [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

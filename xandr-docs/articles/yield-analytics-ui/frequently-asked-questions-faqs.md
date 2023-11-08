@@ -16,3 +16,7 @@ There are several possible reasons for such a discrepancy:
 - Trafficking error - Complex ads can cause trafficking errors. An example of this is a tag with an embedded VAST tag in a flash ad, along with a non-flash static banner. This complexity can lead to cases where a single counted local event unintentionally sends multiple third-party event signals. This causes a negative discrepancy.
 - Agency distributes the wrong tag - Sometimes, an agency sends two publishers the same exact tracker by accident. Both publishers are sending local impressions to that tag causing the third-party number to rise. When the publisher pulls the report from the third-party reporting system, ALL impressions from ALL sources are present in that report. So, the publisher may have only delivered 100k impressions to that DFA tag, but the report claims 2MM.
 - Outside of view impressions - Sometimes, a publisher traffics a tag into a system to which Ad-Juster is not connected to (e.g., a newsletter email system). In these cases, third-party numbers are inflated.
+
+## Related topic
+
+[Ad Juster](ad-juster.md)

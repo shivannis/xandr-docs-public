@@ -29,3 +29,4 @@ When you edit a seasonal adjustment, you can change only the number of impressio
 - [Anatomy of the Forecast Visibility Page](anatomy-of-the-forecast-visibility-page.md)
 - [Check Impression Capacity for a Product Group](check-impression-capacity-for-a-product-group.md)
 - [Add a Manual Adjustment to a Product](add-a-manual-adjustment-to-a-product.md)
+- [Adding and Editing Adjustments](adding-and-editing-adjustments.md)

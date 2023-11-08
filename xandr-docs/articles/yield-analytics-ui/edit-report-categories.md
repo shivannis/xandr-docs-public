@@ -12,3 +12,7 @@ ms.custom: yield-analytics-ui
 1. Click the Reports Name to open it.
 1. At the top of the Edit Saved Analysis screen click on the save button. You will have options to change the Report's Name, Description, and Category.
 1. To create a New Category, click the Add New link beside the category drop down menu.
+
+## Related topic
+
+[Working With Saved Reports](working-with-saved-reports.md)
