@@ -19,7 +19,7 @@ Use Analyze Overlaps to find more inventory in Sibling and Parent products, if�
 
 **Detailed Path**:
 
-- There are two ways to access availability data in yield analytics. The best path depends on if the proposed products are rate card or custom products. The same data for either scenario is available through the API, and through yield analytics’ various OMS plugin
+- There are two ways to access availability data in yield analytics. The best path depends on if the proposed products are rate card or custom products. The same data for either scenario is available through the API, and through yield analytics’ various OMS plugin.
 
 - If the proposed products are rate card products (meaning they are predefined in yield analytics and have history), then it’s often easiest to pull a report from Analyzer. You would set:
   - Product as your primary dimension.

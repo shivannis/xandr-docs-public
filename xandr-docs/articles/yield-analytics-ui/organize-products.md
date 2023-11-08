@@ -28,8 +28,8 @@ You can organize products into product groups by adding a new group, or by editi
 | Column | Filters | Reaction Button |
 |:---|:---|:---|
 | Id | - Is equal to<br> - Is not equal to<br> - Is greater than or equal to<br> - Is greater than<br> - Is less than or equal to<br> - Is less than | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
-| Product Group Name | Contains<br>Does not Contain<br>Starts with<br>Ends with<br>Is equal to<br>Is not equal to | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
-| Status | Active<br>Inactive | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
+| Product Group Name | - Contains<br> - Does not Contain<br> - Starts with<br> - Ends with<br> - Is equal to<br> - Is not equal to | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
+| Status | - Active<br> - Inactive | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 | Description | - Contains<br> - Does not Contain<br> - Starts with<br> - Ends with<br> - Is equal to<br> - Is not equal to | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 | Total Products | - Is equal to<br> - Is not equal to<br> - Is less than<br> - Is greater than<br> - Is less than or equal to<br> - Is greater than or equal to | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 | Active Products | - Is equal to<br> - Is not equal to<br> - Is less than<br> - Is greater than<br> - Is less than or equal to<br> - Is greater than or equal to | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |

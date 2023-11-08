@@ -15,22 +15,22 @@ The fields on the template are:
 
 | Field | Required? | Notes |
 |:---|:---|:---|
-| Order ID | Y | Order Management System (OMS) ID, or a sequential number |
-| Order Name | Y | The order name should follow your standard naming structure |
-| Advertiser  | Y | Advertiser names should match those entered into your ad server |
+| Order ID | Y | Order Management System (OMS) ID, or a sequential number. |
+| Order Name | Y | The order name should follow your standard naming structure. |
+| Advertiser  | Y | Advertiser names should match those entered into your ad server.|
 | Industry | N |  |
 | Salesperson | N |  |
 | Agency | N |  |
 | Order Line ID | Y |  |
 | Order Line Name  | Y |  |
 | External Target ID | Y |  |
-| Target Expression | Y | Complete targeting expression. Example: ad size in ('728x90') and area in ('Hotel') and site in ('Great Bookings') |
-| Start Date | Y | Order start date -- mm/dd/yy (11/27/13) |
-| End Date | Y | Order end date -- mm/dd/yy (11/27/13) |
-| Pricing Type | Y | How is the deal priced. Example: flat rate, by volume, or performance -- CPD; CPA; CPC; CPM |
-| Contract Type | Y | What type of deal is this -- Bulk; House; Sponsorship; Time-Based Bulk; Weight-Based Bulk; Advertising Exchange; Unknown; Standard; PSA; Text Link |
-| Impressions  | Y | How many impressions are included in this proposal? -- standard numerical entry, without any formatting (100001) |
-| Sold | Y | Contracted CPM value -- standard currency input with two decimal places (10.01) |
+| Target Expression | Y | Complete targeting expression. Example: ad size in ('728x90') and area in ('Hotel') and site in ('Great Bookings'). |
+| Start Date | Y | Order start date -- mm/dd/yy (11/27/13). |
+| End Date | Y | Order end date -- mm/dd/yy (11/27/13). |
+| Pricing Type | Y | How is the deal priced. Example: flat rate, by volume, or performance -- CPD; CPA; CPC; CPM. |
+| Contract Type | Y | What type of deal is this -- Bulk; House; Sponsorship; Time-Based Bulk; Weight-Based Bulk; Advertising Exchange; Unknown; Standard; PSA; Text Link. |
+| Impressions  | Y | How many impressions are included in this proposal? -- standard numerical entry, without any formatting (100001). |
+| Sold | Y | Contracted CPM value -- standard currency input with two decimal places (10.01). |
 
 ## Notes on using the template
 

@@ -14,7 +14,7 @@ The following glossary provides definitions of commonly used terms across the ap
 
 ## A
 
-Adjustment type
+### Adjustment type
 
 Determines types of changes that can affect forecasting for a product.
 
@@ -494,7 +494,7 @@ Cohesion Factor is a measure of the similarity of two products based on their ph
 
 If there is no overlap, the cohesion is 0. If the products are identical, the cohesion is 1. All cohesion values are between 0 and 1. Randomly chosen product pairs typically have very tiny cohesion.
 
-Indirect sold impressions =
+Indirect sold impressions:
 
 For goal-based order lines: scheduled impressions
 
@@ -601,7 +601,7 @@ The total clicks scheduled in the ad server for CPC order lines based on the en
 
 The total impressions that have been scheduled in the ad server based on the order line's flighting policy. Order lines that do not have an impression goal (Example: sponsorships) will not have scheduled impressions.
 
-[!NOTE]
+> [!NOTE]
 > Proposed order lines are included in the calculations.
 >
 > When dimensioning by product, only direct and contained order lines are included in the calculation.
@@ -638,7 +638,7 @@ Share of voice: This represents the percentage of inventory available to a parti
 
 Unique order line targeting expression that is used by the system to provide forecasting, reporting and other functionality. Targets can be defined at any level of granularity (Example: site, section, sub-section, or even the most granular combination of behavioral/audience segments).
 
-### Target attribute/Targeting characteristics
+### Target attribute/targeting characteristics
 
 Specific attribute that is contained within the targeting expression of a target (Example: size, site, DMA, etc.).
 

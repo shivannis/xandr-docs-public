@@ -106,7 +106,7 @@ This setting will allow you to see displaced availability in addition to the sta
 | Clear All | This clears all of your entries, and allows you to start over. |
 | Select Attributes or Product | Lookups are either built from an existing product(s), or the particular attributes must be specified. Clicking Select Attributes accesses the Select Attributes screen. From this screen, you are able to choose attributes. Likewise, clicking Product accesses the Select Product screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
 
-## Copy/Delete Attributes and Values Across Segments
+## Copy/delete attributes and values across segments
 
 You can copy and delete attributes/values across different segments with an availability lookup.
 
@@ -153,7 +153,7 @@ There are a few methods of building a lookup/target expression:
 
 This method is recommended if you know exactly what you are looking for, and your target expression is small.
 
-- Click **Type Attribute**. This allows you to type directy into the window. Start typing, and a list of the available attributes appears. Scroll down the list and select the attributes you desire. Select enter, and it automatically goes to the next one.
+Click **Type Attribute**. This allows you to type directy into the window. Start typing, and a list of the available attributes appears. Scroll down the list and select the attributes you desire. Select enter, and it automatically goes to the next one.
 
 ### Method 2
 

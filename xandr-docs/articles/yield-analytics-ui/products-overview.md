@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Products overview
 
-From the Products tab in yield analytics, you can:
+From the **Products** tab in yield analytics, you can:
 
 - View a summary of product performance across your network.
 - Analyze how products overlap each other.
