@@ -1,14 +1,12 @@
 ---
-Title : Yield Analytics 8.26
-Description : Order Line Visibility: The Yield Analytics 8.26 release includes several
+title : Yield Analytics 8.26
+description : Learn all about Order Line Visibility page. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 ---
 
 
-# Yield Analytics 8.26
-
-
+# Yield analytics 8.26
 
 Order Line Visibility: The Yield Analytics 8.26 release includes several
 user-interface updates designed to increase performance of the Order
@@ -26,38 +24,15 @@ the top left-hand corner.  Configuration settings allow you to change
 data groupings, metrics, and filtering within the different
 informational screens.
 
+## Performance tab
+
+:::image type="content" source="media/c.png" alt-text="Screenshot of Yield Analytics UI - C .":::
+
+## Competition tab
+
+:::image type="content" source="media/d.png" alt-text="Screenshot of Yield Analytics UI - D .":::
 
 
-## Performance Tab
+## Consumption tab
 
-![Yield Analytics UI - C]("media/c.png")
-
-
-
-
-
-
-## Competition Tab
-
-![Yield Analytics UI - D]("media/d.png")
-
-
-
-
-
-## Consumption Tab
-
-![Yield Analytics UI - E]("media/e.png")
-
-
-
-
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-
+:::image type="content" source="media/e.png" alt-text="Screenshot of Yield Analytics UI - E .":::

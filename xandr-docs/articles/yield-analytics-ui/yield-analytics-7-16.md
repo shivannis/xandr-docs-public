@@ -1,20 +1,15 @@
 ---
-Title : Yield Analytics 7.16
-Description : ## Product Permission Enhancements
+title : Yield Analytics 7.16
+description : Learn about Product Permission Enhancements in this page.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-- When selecting Parent Products to a User Group on the Permissions
-page, you have the ability to view current associated overlaps. This
+
 ---
 
 
-# Yield Analytics 7.16
+# Yield analytics 7.16
 
-
-
-
-
-## Product Permission Enhancements
+## Product permission enhancements
 
 - When selecting Parent Products to a User Group on the Permissions
   page, you have the ability to view current associated overlaps. This
@@ -30,34 +25,16 @@ page, you have the ability to view current associated overlaps. This
     Twin, Self or Child, information on the Overlaps analyzed is
     provided.
 
-![Yield Analytics UI - M]("media/m.png")
-<ul>
-<li>There are two overrides provided, which will enable the visibility
+:::image type="content" source="media/m.png" alt-text="Screenshot of Yield Analytics UI - M .":::
+
+- There are two overrides provided, which will enable the visibility
 of Availability Lookup information and Product Creation regardless of
 the Availability Lookup outcome. Talk to your Account Manager about
 configuring.
-<ul>
-<li>A View override will display Availability Lookup Result data
-regardless of the Product Permission.</li>
-<li>An Edit override will allow Product Creation on Availability Lookup,
-Product Creation, and Product Edit.</li>
-</ul></li>
-</ul>
-</figure>
+  - A View override will display Availability Lookup Result data
+regardless of the Product Permission.
+  - An Edit override will allow Product Creation on Availability Lookup,
+Product Creation, and Product Edit.
 
-![Yield Analytics UI - N]("media/n.png")
-
-
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-
+:::image type="content" source="media/n.png" alt-text="Screenshot of Yield Analytics UI - N .":::
+    

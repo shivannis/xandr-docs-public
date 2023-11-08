@@ -1,19 +1,12 @@
 ---
-Title : Yield Analytics 7.6
-Description : ## Features
+title : Yield Analytics 7.6
+description : For clients with Duration Based Metrics for video, two new metrics to enable you to see earnings metrics at the proper duration have been introduced. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-Duration Based Metrics -  For clients with Duration Based Metrics for
-video, we have introduced two new metrics to enable you to see earnings
-metrics at the proper duration.  Now you can perform reporting tasks all
 ---
 
 
-# Yield Analytics 7.6
-
-
-
-
+# Yield analytics 7.6
 
 ## Features
 
@@ -26,16 +19,12 @@ report.
 
 Earned Revenue for Viewable - When using earned revenue for a viewable
 line item, your earned revenue will adjust it's calculation to viewable
-impressions\*vCPM/1000
+impressions\*vCPM/1000.
 
 Additional Product Search functionality - There is now a second search
 area within Product Search, where you can add an 'and' argument to your
 your search.  You can also use a , within the search box to search
 multiple variables.
-
-
-
-
 
 ## Bugs
 
@@ -44,12 +33,3 @@ we will now calculate the consumption to schedule.
 
 Removed Row Limits - We have removed the row limits to reports in the
 Reporting Tab.  On export please be aware of the XLSX restrictions.
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-
