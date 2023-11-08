@@ -1,6 +1,6 @@
 ---
 title: Schedule an Availability Lookup
-description: Send a report immediately or on a recurring schedule after emailing it to yourself or designated recipients.
+description: This article provides instructions to schedule an availability lookup. You can send a report immediately or on a recurring schedule.
 ms.date: 11/07/2023
 ms.custom: yield-analytics-ui
 ---
