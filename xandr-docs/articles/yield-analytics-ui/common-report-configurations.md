@@ -1,105 +1,61 @@
 ---
-Title : Common Report Configurations
-Description : Below are the most common report configurations in yield analytics:
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-## At Risk Report
-Customers use this to understand which order lines are projected
-to underdeliver.
+title: Common Report Configurations
+description: The article explains the most common report configurations in yield analytics.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
-
-
-# Common Report Configurations
-
-
+# Common report configurations
 
 Below are the most common report configurations in yield analytics:
 
+## At risk report
 
-
-## At Risk Report
-
-Customers use this to understand which order lines are projected
-to underdeliver.
+Customers use this to understand which order lines are projected to underdeliver.
 
 **Configuration**:
 
-![Yield Analytics UI - II]("media/ii.png")
+:::image type="content" source="media/ii.png" alt-text="The screenshot explains most common configurations and the the selected values of the configuration.":::
 
+## Zombie order line report
 
-
-
-
-## Zombie Order Line Report
-
-Customers use this report to understand if there are any order lines
-allocating inventory that are in a paused status and may need to
-be cancelled out.
+Customers use this report to understand if there are any order lines allocating inventory that are in a paused status and may need to be cancelled out.
 
 **Configuration**:
 
-![Yield Analytics UI - JJ]("media/jj.png")
+:::image type="content" source="media/jj.png" alt-text="The screenshot that explains the Zombie Order Line Report used by the customers to understand if there are any order lines allocating inventory that are in a paused status and may need to be cancelled out.":::
 
+## Advertiser scorecard
 
-
-
-
-## Advertiser Scorecard
-
-Customers use this report to track KPIs for their top advertiser
-accounts, such as revenue, yield, and consumption.
+Customers use this report to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.
 
 **Configuration**:
 
-![Yield Analytics UI - KK]("media/kk.png")
+:::image type="content" source="media/kk.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
 
+## Sales scorecard
 
-
-
-
-## Sales Scorecard
-
-Customers use this report to track KPIs for their top sales reps, such
-as revenue, yield, and consumption.
+Customers use this report to track KPIs for their top sales reps, such as revenue, yield, and consumption.
 
 **Configuration**:
 
-![Yield Analytics UI - LL]("media/ll.png")
+:::image type="content" source="media/ll.png" alt-text="The screenshot that explains the Sales scorecard report used by the customers to track KPIs for their top sales reps, such as revenue, yield, and consumption.":::
 
+## Pricing dashboard
 
-
-
-## Pricing Dashboard
-
-Customers use this report to quickly access historical pricing trends
-by product, based on the way they sell.
+Customers use this report to quickly access historical pricing trends by product, based on the way they sell.
 
 **Configuration**:
 
-![Yield Analytics UI - MM]("media/mm.png")
+:::image type="content" source="media/mm.png" alt-text="The screenshot that explains the Pricing dashboard report used by the customers to access historical pricing trends by product, based on the way they sell.":::
 
+## Availability dashboard
 
-
-
-
-## Availability Dashboard
-
-Customers use this report to quickly impression availability by product,
-based on the way they traffic campaigns.
+Customers use this report to quickly impression availability by product,- based on the way they traffic campaigns.
 
 **Configuration**:
 
-![Yield Analytics UI - NN]("media/nn.png")
+:::image type="content" source="media/nn.png" alt-text="The screenshot that explains the Availability dashboard report used by customers to quickly impression availability by product, based on the way they traffic campaigns.":::
 
+## Related topic
 
-
-
-
-<a href="common-journey-maps.md" class="link">Common Journey
-Maps</a>
-
-
-
-
-
-
+[Common Journey Maps](common-journey-maps.md)
