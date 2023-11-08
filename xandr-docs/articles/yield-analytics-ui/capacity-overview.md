@@ -1,6 +1,6 @@
 ---
 title: Capacity Overview
-Description: The article offers an overview of essential capacity-related data, specifically focusing on understanding a product's standard delivery curve. It delves into various aspects such as Impression Capacity, Manual Adjustments & Holidays, and trended Capacity, providing insights into how these elements impact and shape the overall view of a product's delivery capacity over time.
+description: The article offers an overview of essential capacity-related data, specifically focusing on understanding a product's standard delivery curve. It delves into various aspects such as Impression Capacity, Manual Adjustments & Holidays, and trended Capacity, providing insights into how these elements impact and shape the overall view of a product's delivery capacity over time.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
