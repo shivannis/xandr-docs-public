@@ -1,19 +1,15 @@
 ---
-Title : Yield Analytics Seasonality Overview
-Description : ## Q: What is seasonality in Yield Analytics?
-A: The basic input into a yield analytics capacity forecast is ad server
-log data. Yield Analytics can forecast your inventory using log data
+title : Yield Analytics Seasonality Overview
+description : Learn about seasonality in Yield Analytics in this page.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
 ---
 
 
-# Yield Analytics Seasonality Overview
+# Yield analytics seasonality overview
 
-
-
-
+This page deals with concepts on seasonality in Yield Analytics. 
 
 ## Q: What is seasonality in Yield Analytics?
 
@@ -27,12 +23,8 @@ same capacity, and so on. With your help, a Technical Client Manager can
 implement seasonal models in yield analytics to ensure forecasts reflect
 the seasonality of your inventory.
 
-![Yield Analytics UI - A]("media/a.png")
-![Yield Analytics UI - B]("media/b.png")
-
-
-
-
+:::image type="content" source="media/a.png" alt-text="Screenshot of Yield Analytics UI - A .":::
+:::image type="content" source="media/b.png" alt-text="Screenshot of Yield Analytics UI - B .":::
 
 ## Q: How do I know whether my inventory has seasonality?
 
@@ -48,10 +40,6 @@ inventory that have a significantly different seasonal pattern than the
 network. Repeat the graphing process for those sections to determine
 whether it makes sense to consider handling them separately from a
 seasonality standpoint.
-
-
-
-
 
 ## Q: I want to implement seasonality in yield analytics. What’s involved?
 
@@ -78,10 +66,6 @@ Once this has been done the forecast for any given product will be
 influenced by any overlapping seasonal models in proportion to the
 overlap.
 
-
-
-
-
 ## Q: My inventory is influenced by a seasonal event that falls on a different date every year. How does yield analytics handle that?
 
 A: An event is a seasonal occasion or holiday that corresponds with a
@@ -98,10 +82,6 @@ an important seasonal event for your inventory, the TCM would load the
 dates for that event into the calendar several years into the future.
 You may be asked to help provide those future dates.
 
-
-
-
-
 ## Q. I have at least a year of history stored in yield analytics. Doesn’t yield analytics automatically know the seasonality of my inventory?
 
 A. Seasonal models are the mechanism that enables yield analytics to
@@ -114,17 +94,3 @@ periodic review of your seasonal models. Typically, seasonal models are
 initially reviewed for accuracy 6 months after implementation.  If all
 remains correct, an annual review will be conducted unless forecasting
 issues arise due to seasonal changes.
-
-
-
-
-
-
-<a href="anatomy-of-the-capacity-dashboard-page.md"
-class="link">Anatomy of the Capacity Dashboard Page</a>
-
-
-
-
-
-
