@@ -1,12 +1,12 @@
 ---
-Title: Check Revenue Against Goal
-Description: Use the Revenue Against Goal widget to provide a snapshot of the order
+title: Check Revenue Against Goal
+description: Use the Revenue Against Goal widget to provide a snapshot of the order
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Check revenue against goal
-Use the Revenue Against Goal widget to provide a snapshot of the order lines that are most at risk for underdelivery, organized by order, order line, or advertiser. You can then click on a specific line item to open
-a detailed view of its performance, as well as its consumption and competition.
+
+Use the Revenue Against Goal widget to provide a snapshot of the order lines that are most at risk for underdelivery, organized by order, order line, or advertiser. You can then click on a specific line item to open a detailed view of its performance, as well as its consumption and competition.
 
 1. On the Orders Dashboard page, in the Revenue Against Goal widget, click the drop-down arrow to specify whether you want to view impressions at risk **By Order**, **By Advertiser**, or **By Order Line**.
 1. (Optional) Adjust the date range by clicking the Next x Day(s) filter, specifying a new standard or custom date range, and clicking **Update**.
