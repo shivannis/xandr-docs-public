@@ -1,6 +1,6 @@
 ---
-Title: Create a New Report
-Description: The article describes how to create a new custom based on the selected criteria.
+title: Create a New Report
+description: The article describes how to create a new custom based on the selected criteria.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
