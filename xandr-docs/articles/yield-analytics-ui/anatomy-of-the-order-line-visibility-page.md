@@ -42,8 +42,8 @@ There are several sections on the **Order Line Visibility** page:
   - C:S %
   - Revenue Against Goal
 
-    > [!NOTE]
-    > Metric values that are not included in the chart are displayed in red when they are negative.
+  > [!NOTE]
+  > Metric values that are not included in the chart are displayed in red when they are negative.
 
 - **Performance chart** - Displays a graphic chart of the order line's flight by specified metric. By default, the chart displays all data that is available. You can change the chart by selecting a grouping (daily, weekly, monthly, quarterly, or yearly) and metric (Contracted Revenue vs. Earned Revenue, Scheduled Impressions, Consumed Impressions, and Consumption to Schedule, or Click Thru Rate vs. Consumed Clicks).
   - The horizontal axis displays the flight date range, whereas the vertical axes reflect the metric you selected.

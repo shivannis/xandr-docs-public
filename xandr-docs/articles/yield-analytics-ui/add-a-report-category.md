@@ -8,7 +8,3 @@ ms.custom: yield-analytics-ui
 # Add a report category
 
 Use the **Filters** panel on the left to locate Saved Analyses by Name, Category, Recipients and/or Status. Use the **Manage Categories** button to create new and remove or edit existing report categories. These categories will be reflected in the Analyzer “Open” dialog.
-
-## Related topic
-
-[Working With Saved Reports](working-with-saved-reports.md)

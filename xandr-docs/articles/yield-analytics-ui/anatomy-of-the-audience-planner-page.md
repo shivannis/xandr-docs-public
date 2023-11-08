@@ -26,7 +26,7 @@ The Audience Planner page is comprised of the following four panels:
 
     > [!NOTE]
     > - Change the analysis to focus on the selected product by clicking **Set as Focus**.
-    > - Make the selected product the baseline for audience index analysis by clicking **Set as Baseline**. 
+    > - Make the selected product the baseline for audience index analysis by clicking **Set as Baseline**.
     > - View the full details of the selected product by clicking **Product Visibility**.
 
 ## Related topics

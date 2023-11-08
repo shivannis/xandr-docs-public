@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can manage users, user groups, and saved reports.
 
-## Related Topics
+## Related topics
 
 - [Working With Users](working-with-users.md)
 - [Reset a User's Password](reset-a-user-s-password.md)
