@@ -1,6 +1,6 @@
 ---
 title : Yield Analytics Overview
-description : Learn all about Yield Analytics in this page.
+description : Learn about Yield Analytics in this page.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
@@ -210,14 +210,14 @@ programmatic channels.
 Yield Analytics functionality and the resulting gained information
 benefit many sectors. Included are:
 
-## Sales
+**Sales**
 
 Sales is going to look through ways to drive revenue through client
 solutions. They are building out Sales plans, and receiving RFPs from
 the clients and responding back to them. They also manage the client
 relationship.
 
-## Ad ops
+**Ad ops**
 
 Ad Ops teams ensure all that revenue gets delivered. They also implement
 client plans, and solve technical issues on a basic level.

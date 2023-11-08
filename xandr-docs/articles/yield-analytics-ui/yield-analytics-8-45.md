@@ -11,5 +11,5 @@ ms.custom : yield-analytics-ui
 
 | Fixes, Improvements and Additions                                                                                                                                                 | Integrations Affected |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| Email addresses used within the Yield Analytics application have been updated to use new Xandr.com addresses.  This will include automated emails of reports and password resets. | All                   |
+| Email addresses used within the Yield Analytics application have been updated to use new [Xandr.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising) addresses.  This will include automated emails of reports and password resets. | All                   |
 | Bug Fix: Channel Revenue for the Monetize (AppNexus) SSP integration has been corrected to support new data format.                                                               | SSP: Monetize         |
