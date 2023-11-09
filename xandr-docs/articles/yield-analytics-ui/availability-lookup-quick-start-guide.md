@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Availability lookup - quick start guide
-The Availability Lookup screen appears in the Availability drop-down.
+The **Availability Lookup** screen appears in the **Availability** drop-down.
 
 ## Basic concepts
 
@@ -16,14 +16,13 @@ There are four tabs within the page which offer the following features:
 - [Batch Builder](batch-builder.md): Save, schedule, and execute batch lookups.
 - [Batch Queue](batch-queue.md): Monitor batch progress and access results for completed batches.
 
-Configuration and Advanced Filters:  Select your date range and optionally, how you want dates to be grouped. Use Advanced Filters to
+Configuration and Advanced Filters: Select your date range and optionally, how you want dates to be grouped. Use Advanced Filters to
 apply additional constraints, such as a frequency cap.
 
 ## Button functionality (lookup builder tab)
 
-- **Open**: This allows you save a frequently used template and share it with other users within your instance.  When you click Open, a
-  dialogue box is accessed with all of the saved templates.
-- **Save**: When you click the Save button, you begin the process of saving a lookup template.  A dialogue box is accessed that allows you to manage how the template should be saved, and who should have access to it.
+- **Open**: This allows you save a frequently used template and share it with other users within your instance. When you click Open, a dialogue box is accessed with all of the saved templates.
+- **Save**: When you click the **Save** button, you begin the process of saving a lookup template. A dialogue box is accessed that allows you to manage how the template should be saved, and who should have access to it.
 - **Views**: The user is able to choose if they would prefer to perform their lookup by building the lookup from an Attribute and Product View (default), or apply a Product Group View, which would enable you to select a Product Group that you would like to filter off of.
 - **Vary By**: Allows you to vary your lookup based on additional attributes and values that are selected. This creates one lookup for each different combination of vary by items that are selected.
 - **Undo**:  If you make a change, delete or clear all from the lookup, then you can click **Undo** and the previous
@@ -37,14 +36,14 @@ There are two ways to define the attribute and attribute value you want to inclu
 - Click on the **Select Attribute** hyperlink.
 - A screen is accessed which allows you select the attribute and the appropriate attribute value.
 - Select the attribute.
-- Select the attribute value, as well as the ability to indicate if you would like to include or **exclude** the  value within the lookup.
+- Select the attribute value, as well as the ability to indicate if you would like to include or **exclude** the value within the lookup.
 
 The second way is to type the attribute you are looking for directly in the builder.
 
 - The available list that matches the text will populate, and you can select.
 - Follow the same steps to define the attribute value. The available value list that matches the text will populate and you can select.  You can add as many attribute values as needed.
 
-After you have selected your attribute and attribute values, there is an option to either and or or additional attribute/attribute values to your lookup.
+After you have selected your attribute and attribute values, there is an option to either and or **or** additional attribute/attribute values to your lookup.
 
 - In order to and an additional attribute value, click on the **Add Attribute** hyperlink.
 - In order to or an additional attribute value, click on the Create a **New Segment** hyperlink.

@@ -1,10 +1,9 @@
 ---
 title: At-Risk Management Chart and Solution Paths
-description: The article discusses the at-risk management chart and various solution paths to mitigate risks. These paths include actions like reducing cap restrictions, widening targeting parameters, extending flight duration, increasing priority, adjusting rates, canceling zombie order lines, and reassessing strategies to address potential risks and improve overall performance.
+description: The article explores at-risk management charts and solutions to reduce risks, such as adjusting parameters, extending flight duration, and reassessing strategies to improve performance.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
-
 # At-risk management chart and solution paths
  :::image type="content" source="media/oo.png" alt-text="The  screenshot that displays the At-risk management flow chart.":::
 

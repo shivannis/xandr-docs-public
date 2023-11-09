@@ -53,7 +53,7 @@ How do I create a product group?
 1. Select the group you would like to assign a product to. This accesses the **Edit Product** screen.
 1. Click **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the  group screen rather than product by product.
 
-   An alternative way to assign a product to a group is from the Product Visibility screen: 
+   An alternative way to assign a product to a group is from the Product Visibility screen:
 1. Select **Edit Product** under the Product Details section.
 1. Click **Select** under the **Associated Product Groups** on the **Product Details** screen.
 

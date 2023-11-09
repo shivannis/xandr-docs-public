@@ -13,8 +13,8 @@ Clicking the **Builder** tab accesses the Builder screen. This is where you bu
 
 | Button/Field | Description |
 |--|--|
-| Target Expression Editor | Clicking the Target Expression verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and click Update. The Create Product screen is displayed, and the values are updated accordingly. |
-| Select Attributes or Product | Target expressions are either built from an existing product(s), or the particular attributes must be specified. Clicking Select Attributes accesses the Select Attributes screen. From this screen, you are able to choose attributes. Likewise, clicking Product accesses the Select Product screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
+| Target Expression Editor | Clicking the Target Expression verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and click **Update**. The **Create Product** screen is displayed, and the values are updated accordingly. |
+| Select Attributes or Product | Target expressions are either built from an existing product(s), or the particular attributes must be specified. Clicking **Select Attributes** accesses the Select Attributes screen. From this screen, you are able to choose attributes. Likewise, clicking **Product** accesses the Select Product screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
 | Vary By | This allows you to vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. Using the Vary By option will create multiple products – one for each unique combination of vary by attributes and values. |
 | Undo | This clears the last action that you entered. |
 | Clear All | This clears all of your entries, and allows you to start over. |
@@ -34,7 +34,7 @@ This method is recommended if you know exactly what you are looking for, and you
 
 This method is recommended if you do not know specifically what you are looking for. You can start by doing a high-level search, and drill down further until you get the results you are looking for.
 
-- Click **Select Attributes**. This accesses the Select Attributes screen. There are three main windows and three search windows.
+- Click **Select Attributes**. This accesses the **Select Attributes** screen. There are three main windows and three search windows.
 - The list in the left-hand window is every attribute that you have available to you.
 - You can limit the attributes by specified criteria.
 - There is extensive search capability. The Contains and Search windows at the top of the screen allow you to drill down into the search.

@@ -1,10 +1,9 @@
 ---
 title: Best Practices - Reporting Product Strategy
-description: The article provides insights into effective strategies for reporting product strategies. It emphasizes the creation of useful reporting tools and the significance of distinct naming conventions to enhance clarity and differentiation in the reporting process.
+description: The article highlights effective product strategy reporting through clear tools and distinct naming for improved clarity and differentiation.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
-
 # Best Practices - reporting product strategy
 
 ## What are reporting products?
@@ -64,7 +63,8 @@ Create a host of products based on the below items. You can create reporting pr
 **Ad Unit**  - Every combination of ad unit.
 **Example**: Tracking_AdUnit_ROS_Video_AllSizes, Tracking_ROS_Display_AllSizes
 
-**Platform**  - Every platform. **Example**: Tracking_Platform_ROS_Mobile_AllSizes
+**Platform**  - Every platform.
+**Example**: Tracking_Platform_ROS_Mobile_AllSizes
 
 **Page Template**  - This is a rarely used element, but one that can be especially insightful for optimization and viewability metrics.
 **Example**:

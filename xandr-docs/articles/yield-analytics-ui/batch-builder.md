@@ -36,11 +36,8 @@ The Batch Builder allows you to collect multiple lookups that you can then run a
 ## Running a batch
 
 - Clicking **Run** accesses the **Batch Queue**.
-- It clears the batch off the Batch Builder screen. It now appears in
-  superscript on the Batch Queue tab.
-  (1 item)
-- The batch runs in a queue in the background. You can continue to do
-  other work.
+- It clears the batch off the Batch Builder screen. It now appears in superscript on the Batch Queue tab. (1 item)
+- The batch runs in a queue in the background. You can continue to do other work.
 
 > [!TIP]
 > You can run up to 10,000 lookups (default). If you need the ability to run more, please contact your client services representative.
