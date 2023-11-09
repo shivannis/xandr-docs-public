@@ -1,6 +1,6 @@
 ---
 title: Check Availability for a Combination of Targeting Attributes
-description: The article illustrates the process of verifying availability for targeting attributes, demonstrating how to assess available impressions, define specific lookup criteria, and review the results within the Availability Report panel.
+description: The article explains how to check for available attributes, evaluating impressions, setting criteria, and examining results in the Availability Report panel.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title: Check Revenue Against Goal
-description: Use the Revenue Against Goal widget to provide a snapshot of the order
+description: Use the Revenue Against Goal widget to provide a snapshot of the order.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

@@ -1,6 +1,6 @@
 ---
 title: Check Manual Adjustments and Holidays
-description: The Manual Adjustments & Holidays widget displays any upcoming holidays
+description: The article describes the manual adjustments & holidays.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
