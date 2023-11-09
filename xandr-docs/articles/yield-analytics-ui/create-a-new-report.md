@@ -14,14 +14,13 @@ Dimension and Primary Metric are the only two required fields to run a report
     2. If you have selected a numeric dimension (e.g., a date), select the date interval or numeric increment for the dimension (e.g.,Daily).
     3. In the **Primary Metric** field, select the main component that you want to report on. This determines the available secondary metrics.
     4. In the **Secondary Metric** area, select the secondary component against which you're comparing the dimension. You can't select the same option for the primary and secondary metric.
-    5. In the **Group By** field, select an option by which to segment primary or secondary metric values. For numeric options, select a date or an increment for the numeric display range on the X-axis. In the bar chart view, primary metric groups appear as different colored stacked segments on each bar. Secondary metric groups appear as multiple colored dot anchors for each group. 
-    6. In the **Trend Lines** field, select the trend line that you want to show and click Update.
-    7. In the **Sort** field, select a sort option (Primary Metric or Dimension, ascending or descending) to determine the order in which data appears on the
-    chart or graph.
+    5. In the **Group By** field, select an option by which to segment primary or secondary metric values. For numeric options, select a date or an increment for the numeric display range on the X-axis. In the bar chart view, primary metric groups appear as different colored stacked segments on each bar. Secondary metric groups appear as multiple colored dot anchors for each group.
+    6. In the **Trend Lines** field, select the trend line that you want to show and click **Update**.
+    7. In the **Sort** field, select a sort option (Primary Metric or Dimension, ascending or descending) to determine the order in which data appears on the chart or graph.
 1. In the **Dimension Filters** panel, select dimension filters by clicking the text next to the filter name, selecting a value, and clicking **Update**.
-1. In the **Dimension Filters** panel, set the **Include Zero Values** field to Yes or No to include or exclude **zero** values.
+1. In the **Dimension Filters** panel, set the **Include Zero Values** field to **Yes** or **No** to include or exclude **zero** values.
 1. In the **Metric Filters** panel, in the **Time Period** field, specify the date range that you want to analyze.
-1. In the **Metric Filters** panel, specify any additional components that restrict the set of analyzed primary and secondary metric values. This is accomplished by clicking a filter, selecting its value, and clicking Update, or by adjusting the slide bar.
+1. In the **Metric Filters** panel, specify any additional components that restrict the set of analyzed primary and secondary metric values. This is accomplished by clicking a filter, selecting its value, and clicking **Update**, or by adjusting the slide bar.
 
 ## Related topics
 

@@ -1,6 +1,6 @@
 ---
 title: Dealing with Campaign Under-Delivery
-description: The article covers methods for diagnosing and resolving issues related to under-delivery in various contexts. It addresses multiple potential root causes contributing to these problems and highlights how political barriers can complicate decision-making processes when attempting to address under-delivery concerns. 
+description: The article discusses diagnosing and fixing under-delivery issues in different scenarios, exploring root causes and noting how political obstacles complicate solutions.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

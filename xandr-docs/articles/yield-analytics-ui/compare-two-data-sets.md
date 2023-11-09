@@ -1,6 +1,6 @@
 ---
 title: Compare Two Data Sets
-description: The article explains how You can compare information by applying different metric filters to two data sets.
+description: The article explains how you can compare information by applying different metric filters to two data sets.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---

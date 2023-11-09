@@ -20,7 +20,7 @@ Use the following steps to create a product:
 
 Choose the **Product Type**. There are two radio buttons that identify which type of product you are creating:
 
-- Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., `ROS 728x90`).
+- Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., ROS 728x90).
 - Reporting – Product that is used for reporting purposes, but is not generally not sold (e.g., Top three ad sizes in the Sports section).
 - Specify the Default **Rate Card CPM**. This is the default **Rate Card CPM** that is binded to this product.
 - You can associate this product to product groups. In the

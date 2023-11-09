@@ -1,6 +1,6 @@
 ---
 title: Disable a User
-description: If you have administrative permissions, you can disable user accounts to prevent previously active users from logging in to yield analytics.
+description: The articles explains that if you have administrative permissions, you can disable user accounts to prevent previously active users from logging in to yield analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
