@@ -51,13 +51,13 @@ Average number of times a user was exposed to a defined set of inventory per day
 
 Formula: Average (Total Views per day / Total Uniques per day)
 
-### Average uniques (daily) when report is run with Order Line Dimensions
+### Average uniques (daily) when report is run with order line dimensions
 
 Average of the daily order line weighted unique counts for the Order Line's lifetime.
 
 Formula: Sum (Order Line Consumption / Product Capacity) \* Total uniques) / Total number of days
 
-### Average uniques (daily) when report is run with Product Dimensions
+### Average uniques (daily) when report is run with product dimensions
 
 Average of the per-day unique counts for the time period selected.
 
@@ -450,7 +450,7 @@ The target against which the order line is directly trafficked in the ad server.
 
 The combination of attribute/value pairs that uniquely describes the order line target.
 
-### Order line target External ID
+### Order line target external ID
 
 The unique identifier of the order line "Trafficked As" target from the order management system, or other externally managed product catalog.
 
