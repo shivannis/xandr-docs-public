@@ -53,23 +53,23 @@ The recommended way to initially create reporting products, is by creating vari
 Create a host of products based on the below items. You can create reporting products for:
 
 **Geography**  - Every county / state / DMA.  
-**Example**: `Tracking_Geo_ROS_Arizona_AllSizes`, `Tracking_ROS_Arkansas_AllSizes`, etc.
+**Example**: Tracking_Geo_ROS_Arizona_AllSizes, Tracking_ROS_Arkansas_AllSizes, etc.
 
 **Content**  - Every combination of site / section / topic / subtopic.
-**Example**: `Tracking_Content_SportsSite_ProfessionalLeague_MLB_Yankees`
+**Example**: Tracking_Content_SportsSite_ProfessionalLeague_MLB_Yankees
 
 **Audience**  - Every combination of audience type / value.
-**Example**: `Tracking_ROS_Audience_Demo_Gender_Male`, `Tracking_ROS_Audience_Purchase_Auto_Luxury`, etc.
+**Example**: Tracking_ROS_Audience_Demo_Gender_Male, Tracking_ROS_Audience_Purchase_Auto_Luxury, etc.
 
 **Ad Unit**  - Every combination of ad unit.
-**Example**: `Tracking_AdUnit_ROS_Video_AllSizes`, `Tracking_ROS_Display_AllSizes`
+**Example**: Tracking_AdUnit_ROS_Video_AllSizes, Tracking_ROS_Display_AllSizes
 
-**Platform**  - Every platform. **Example**: `Tracking_Platform_ROS_Mobile_AllSizes`
+**Platform**  - Every platform. **Example**: Tracking_Platform_ROS_Mobile_AllSizes
 
 **Page Template**  - This is a rarely used element, but one that can be especially insightful for optimization and viewability metrics.
 **Example**:
-`Tracking_Template_ROS_ArticlePages_AllSizes,`
-`Tracking_Template_ROS_Slideshows_AllSizes`
+Tracking_Template_ROS_ArticlePages_AllSizes,
+Tracking_Template_ROS_Slideshows_AllSizes
 
 Once you have these basics in place, consider where it may be applicable to do cross category combinations. Perhaps you desire a platform-specific version of every content reporting product, or an audience-specific version of every geo product.
 
@@ -82,7 +82,7 @@ Once you have some reporting products created, it is recommended to start assi
 reports quickly, because they will help filter reporting results and product searches.
 
 The major risk in product groups is using too many groups, to the point where it’s cumbersome to search the groups. Do  create groups for
-primary types (`Geo vs. Audience`, `Content vs. Platform`). Do not  create groups for every content section or subsection (`Sports_Baseball` vs. `Sports_Football` vs. `Sports_Basketball`). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
+primary types (Geo vs. Audience, Content vs. Platform). Do not  create groups for every content section or subsection (Sports_Baseball vs. Sports_Football vs. Sports_Basketball). This would create hundreds or thousands of groups. It is recommended to rely on a strong naming convention, and search for what you need.
 
 A product group probably isn’t that valuable if it contains less than 10 products that could have a common and unique element in their name. It can make sense to have small groups if you want to create them for specific stakeholders in your organization. Example: The finance team analyzes data in a specify fashion, so their life is made easier by always filtering reports with a single product group.
 
