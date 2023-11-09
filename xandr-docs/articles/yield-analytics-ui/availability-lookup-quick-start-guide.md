@@ -21,7 +21,7 @@ apply additional constraints, such as a frequency cap.
 
 ## Button functionality (lookup builder tab)
 
-- **Open**: This allows you save a frequently used template and share it with other users within your instance. When you click Open, a dialogue box is accessed with all of the saved templates.
+- **Open**: This allows you save a frequently used template and share it with other users within your instance. When you click **Open**, a dialogue box is accessed with all of the saved templates.
 - **Save**: When you click the **Save** button, you begin the process of saving a lookup template. A dialogue box is accessed that allows you to manage how the template should be saved, and who should have access to it.
 - **Views**: The user is able to choose if they would prefer to perform their lookup by building the lookup from an Attribute and Product View (default), or apply a Product Group View, which would enable you to select a Product Group that you would like to filter off of.
 - **Vary By**: Allows you to vary your lookup based on additional attributes and values that are selected. This creates one lookup for each different combination of vary by items that are selected.

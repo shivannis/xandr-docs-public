@@ -1,6 +1,6 @@
 ---
 title: Batch Builder
-description: The article details the process of enabling the collection and execution of multiple lookups simultaneously, beneficial for efficiently managing large numbers or reusing lookup sets on scheduled or ad hoc occasions.
+description: The article explains how enabling simultaneous multiple lookups benefits efficiently managing large numbers or reusing lookup sets for scheduled or ad hoc purposes.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
