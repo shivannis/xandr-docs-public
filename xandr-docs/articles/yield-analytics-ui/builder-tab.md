@@ -38,7 +38,7 @@ This method is recommended if you do not know specifically what you are looking 
 - The list in the left-hand window is every attribute that you have available to you.
 - You can limit the attributes by specified criteria.
 - There is extensive search capability. The Contains and Search windows at the top of the screen allow you to drill down into the search.
-- The four options in the search criteria are: **Contains**, **Starts with**, **Ends with**, **Equals**.
+- The four options in the search criteria are: Contains, Starts with, Ends with, Equals.
 - Once the attribute has been identified and selected, the values for that attribute are displayed in the middle column of the screen.    Then you can further drill-down into your search by applying the same search functionality to those results.
 - If you want to select multiple attributes at once, you can do so by holding down the shift key while making your selection.
 - There is also a **Select All** button, if you would like to select all the attributes listed in that window.
@@ -51,14 +51,14 @@ This method is recommended if you do not know specifically what you are looking 
 ## Building a target expression for products
 
 - You can select a product as base targeting and then add additional targeting as described in one of the two attribute methods above.
-- If you have existing products in the system that you want to look up, then click Select Product. This accesses the Select Product screen, which displays a list of products.
-- You can start your search by Name or **Product ID**.
-- The additional four options in the search criteria are: **Contains**, **Starts with**, **Ends with**, **Equals**.
-- There are five checkboxes at the top of the screen: **Rate Card**, **Reporting**, **Seasonal**, **Custom**, **Inactive**. By default, **Rate Card** and **Reporting** are selected. These filters are used to narrow down your search, especially if you have a lot of products.
+- If you have existing products in the system that you want to look up, then click **Select Product**. This accesses the Select Product screen, which displays a list of products.
+- You can start your search by Name or Product ID.
+- The additional four options in the search criteria are: Contains, Starts with, Ends with, Equals.
+- There are five checkboxes at the top of the screen: Rate Card, Reporting, Seasonal, Custom, Inactive. By default, Rate Card and Reporting are selected. These filters are used to narrow down your search, especially if you have a lot of products.
 - Click **Cancel** to cancel this entry.
 - When you are satisfied with your selection, click **Update**.
 
-## Related topics
+## Related topicsl
 
 - [Create a Product](create-a-product.md)
 - [Organize Products](organize-products.md)
