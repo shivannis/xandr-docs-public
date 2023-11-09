@@ -89,6 +89,6 @@ No. You do not have to assign any products at the time you create a group. You 
 
 No. Product group is not an available dimension at this time. It is only available as a dimension filter.
 
-Related topic:
+## Related topic
 
 [Products Overview](products-overview.md)

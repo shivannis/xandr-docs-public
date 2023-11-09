@@ -35,7 +35,7 @@ The Batch Builder allows you to collect multiple lookups that you can then run a
 
 ## Running a batch
 
-- Clicking Run accesses the Batch Queue.
+- Clicking **Run** accesses the **Batch Queue**.
 - It clears the batch off the Batch Builder screen. It now appears in
   superscript on the Batch Queue tab.
   (1 item)

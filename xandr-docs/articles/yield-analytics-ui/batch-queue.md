@@ -35,6 +35,6 @@ Batches that are not yet complete may be canceled. If you have the proper permis
 > permissions, you will be able to view all the batches that are being run
 > by all users.
 
-Related topic:
+## Related topic
 
 [Availability Lookup](availability-lookup.md)

@@ -5,16 +5,16 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Availability lookup - quick start guide
-The **Availability Lookup screen** appears in the **Availability** drop-down.
+The Availability Lookup screen appears in the Availability drop-down.
 
 ## Basic concepts
 
 There are four tabs within the page which offer the following features:
 
-- [Lookup Builder](lookup-builder.md)
-- [Lookup Results](lookup-results.md)
-- [Batch Builder](batch-builder.md)
-- [Batch Queue](batch-queue.md)
+- [Lookup Builder](lookup-builder.md): Easily create your lookups, no matter if they are simple or very complex.
+- [Lookup Results](lookup-results.md): View availability and contention results, change configurations and re-run lookups, and more.
+- [Batch Builder](batch-builder.md): Save, schedule, and execute batch lookups.
+- [Batch Queue](batch-queue.md): Monitor batch progress and access results for completed batches.
 
 Configuration and Advanced Filters:  Select your date range and optionally, how you want dates to be grouped. Use Advanced Filters to
 apply additional constraints, such as a frequency cap.
@@ -26,7 +26,7 @@ apply additional constraints, such as a frequency cap.
 - **Save**: When you click the Save button, you begin the process of saving a lookup template.  A dialogue box is accessed that allows you to manage how the template should be saved, and who should have access to it.
 - **Views**: The user is able to choose if they would prefer to perform their lookup by building the lookup from an Attribute and Product View (default), or apply a Product Group View, which would enable you to select a Product Group that you would like to filter off of.
 - **Vary By**: Allows you to vary your lookup based on additional attributes and values that are selected. This creates one lookup for each different combination of vary by items that are selected.
-- **Undo**:  If you make a change, delete or clear all from the lookup, then you can click Undo and the previous
+- **Undo**:  If you make a change, delete or clear all from the lookup, then you can click **Undo** and the previous
   unaltered lookup will be reinstated.
 - **Clear All**:  This button allows you to clear out the entire lookup and start over.
 
@@ -51,7 +51,7 @@ After you have selected your attribute and attribute values, there is an option 
 
 <!-- -->
 
-- Within the lookup builder screen you can see where attribute values are grouped by and or or.
+- Within the lookup builder screen you can see where attribute values are grouped by and or **or**.
 - While building your lookup, icons on the right allow you to quickly remove all values for a given attribute, or remove the attribute
   altogether. If you build a targeting segment consisting of multiple attributes and'ed together, an icon in the upper right corner of the
   segment allows you to easily duplicate the entire segment, creating a new or'ed segment that you can modify as needed.
@@ -59,7 +59,7 @@ After you have selected your attribute and attribute values, there is an option 
 There is also a feature that allows you to build a target expression instead of using the builder. Click the icon to the right of the
 Attribute and Product View verbiage. The target editor screen will appear once you click the button above.
 
-When your lookup is defined, click the Run button on the bottom right corner of the screen.  When the lookup is running, there will be a blue notification at the top of the screen to confirm the lookup is running.
+When your lookup is defined, click the **Run** button on the bottom right corner of the screen.  When the lookup is running, there will be a blue notification at the top of the screen to confirm the lookup is running.
 
 ## Using the lookup results tab
 

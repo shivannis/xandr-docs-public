@@ -37,12 +37,12 @@ Products, but use `TC` as the site variable for your reporting products.
 
 An example of possible rate card products:
 
-- **`TechCrunch_Desktop_USOnly_News_Startups_Apps_728x90`**
-- **`TechCrunch_Desktop_USOnly_News_Startups_Apps_300x600`**
-- **`TechCrunch_Desktop_USOnly_News_Startups_Apps_160x600`**
+- **TechCrunch_Desktop_USOnly_News_Startups_Apps_728x90**
+- **TechCrunch_Desktop_USOnly_News_Startups_Apps_300x600**
+- **TechCrunch_Desktop_USOnly_News_Startups_Apps_160x600**
 
 A reporting product could be named:
-**`TC_Desktop_USOnly_News_Startups_Apps_AllSizes`**
+**TC_Desktop_USOnly_News_Startups_Apps_AllSizes**
 
 In this way, the core of the product is identical between the rate card products and the reporting product. The site parameter has only been changed. If you needed to find the reporting product that was a parent to one of the rate card products, you’d immediately know how it would be named. It would be based on the rate card product name.
 
@@ -67,7 +67,7 @@ Create a host of products based on the below items. You can create reporting pr
 **Platform**  - Every platform. **Example**: `Tracking_Platform_ROS_Mobile_AllSizes`
 
 **Page Template**  - This is a rarely used element, but one that can be especially insightful for optimization and viewability metrics.
-**Example**: 
+**Example**:
 `Tracking_Template_ROS_ArticlePages_AllSizes,`
 `Tracking_Template_ROS_Slideshows_AllSizes`
 
