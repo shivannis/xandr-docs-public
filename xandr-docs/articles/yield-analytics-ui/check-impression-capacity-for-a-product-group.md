@@ -8,8 +8,8 @@ ms.custom: yield-analytics-ui
 Use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full
 capacity forecast.
 
-1. On the Capacity Dashboard page, in the Impression Capacity widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
-1. (Optional) Adjust the date range by clicking the Next `x` Month(s) filter, specifying a new standard or custom date range, and clicking **Update**. The top-performing products' impression capacity appears.
+1. On the **Capacity Dashboard** page, in the Impression Capacity widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
+1. (Optional) Adjust the date range by clicking the Next x Month(s) filter, specifying a new standard or custom date range, and clicking **Update**. The top-performing products' impression capacity appears.
 1. Click a specific product to view its Capacity Forecast. This displays impressions capacity by consumption date for the product. You can view the full product details by clicking **Show Product Details**.
 1. (Optional) Make any changes to the report:
     - Click a forecast line key under the chart to hide it.

@@ -12,7 +12,7 @@ Use the Revenue Against Goal widget to provide a snapshot of the order lines t
 1. (Optional) Adjust the date range by clicking the Next x Day(s) filter, specifying a new standard or custom date range, and clicking **Update**.
 1. View the orders or order lines at risk. You can mouse over each order or order line in the widget to view its lifetime revenue against goal, pacing, and consumption-to-schedule percentage.
 1. Click a specific order line to open a detailed view at the order line's performance, as well as its consumption and competition. The Order Line Visibility page appears.
-1. (Optional) On the Order Line Visibility page, click **What should I do?** to launch Scenario Manager.
+1. (Optional) On the **Order Line Visibility** page, click **What should I do?** to launch Scenario Manager.
 
 To see how all orders or order lines are performing, click the **View All link** at the top of the Revenue Against Goal widget.
 
