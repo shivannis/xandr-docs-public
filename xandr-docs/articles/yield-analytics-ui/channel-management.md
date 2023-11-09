@@ -113,6 +113,6 @@ Now that we are mapping to products, the Channels Dashboard allows you to evalua
 > [!TIP]
 > We are happy to show whatever data the publisher deems valuable. By sharing details at a product level, or matching product mappings - it helps us to better work with the publisher to expose that data.
 
-## Related topic:
+## Related topic
 
 [Working with Channel Metrics](working-with-channel-metrics.md)
