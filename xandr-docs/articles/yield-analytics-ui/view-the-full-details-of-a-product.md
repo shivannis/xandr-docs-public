@@ -18,6 +18,6 @@ The following are some common ways to access the **Product Visibility** page:
 - On the **Availability Lookup** page, click the name of a product in the **Availability Report** panel.
 - On the **Order Line Visibility** page, in the **Order Line Details** pane, click the name in the **Sold As** field.
 
-## Relted topics
+## Related topic
 
 [Products Overview](./products-overview.md)

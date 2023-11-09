@@ -59,6 +59,6 @@ Since the **Channels** tab is powered by the **reporting** tab, custom reports c
 | Size (Rubicon) | The size field from Rubicon. |
 | Tag ID (Rubicon) | The tag ID field from Rubicon. |
 
-## Related topics
+## Related topic
 
 [Channel Management](./channel-management.md)
