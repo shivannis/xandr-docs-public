@@ -1,0 +1,515 @@
+---
+Title : Create a Curated Deal Line Item
+Description : <b>Note:</b> Some clients might see different
+ms.date : 10/28/2023
+options when creating a curated deal line item. This documentation
+---
+
+
+# Create a Curated Deal Line Item
+
+
+
+
+
+<b>Note:</b> Some clients might see different
+options when creating a curated deal line item. This documentation
+covers all options in the workflow. Contact your
+Xandr representative if you have questions about
+certain options or settings.
+
+
+
+A curated deal line item lets you set up a curated deal for a buyer.
+Curated deals represent a negotiated agreement between a buyer and a
+curator that combines a curator’s assets with
+Xandr Marketplace supply.
+
+Curated deal line items offer the following features:
+
+- Pricing: choose between a fixed price, ask price, or market price for
+  your curated deal
+- Margin: configure a percentage of fixed CPM curator margin
+- Inventory targeting: source inventory from seller deals or the open
+  market, targeting categories and domains to curate the impressions you
+  need
+
+Prerequisites
+
+You will need to create or have access to the following buy-side
+objects:
+
+- Advertiser: see
+  <a href="working-with-advertisers.md" class="xref">Working with
+  Advertisers</a>
+- Insertion order (seamless): see
+  <a href="working-with-insertion-orders.md" class="xref">Working with
+  Insertion Orders</a>
+  
+
+  <b>Note:</b>
+  - Legacy insertion orders are not supported with curated deal line
+    items.
+  - Insertion orders must be configured with an unlimited budget for
+    curated deal line items
+  - Settings you select on the insertion order will apply to *all*
+    curated deal line items under the insertion order.
+
+  
+
+Create a New Curated Deal Line Item
+
+From the Advertiser Details
+screen, you can create a curated deal line item from either the
+Insertion Orders screen or
+Line Items screen:
+
+**Insertion Orders screen**
+
+1.  From the Advertiser Details
+    screen, click Insertion Orders
+    to view the advertiser's insertion orders.
+2.  Click on an insertion order from the list to view the
+    Insertion Order details
+    screen.
+3.  In the Line Items section, click
+    New Deal Line Item.
+
+**Line Items screen**
+
+1.  From the Advertiser
+    Details screen, click Line
+    Items to view the advertiser's line items.
+2.  Click New Deal Line Item.
+
+Deal Type
+
+In the Deal Type section, select
+Curate a Deal.
+
+Basic Setup
+
+In the Basic Setup section, enter the
+basic details for the curated deal line item.
+
+- Insertion Orders - The insertion
+  order associated to the line item. If you create the line item from
+  the Insertion Order
+  Details screen, the insertion order is automatically
+  associated. Otherwise, click Edit to
+  associate the line item with an insertion order.
+- Ad Type - Select the type of ad you
+  plan to use. Possible values are **Banner**, **Video** (includes audio
+  types as well), and **Native**
+  
+
+  <b>Note:</b> Selecting
+  Ad Type determines the availability
+  of other settings (e.g.,
+  Targeting
+  \>  Completion Rate
+  Threshold. This is not the setting that filters out any
+  impressions and does not impact auction logic. You can select
+  Media Type under
+  Deal Creative Criteria to control
+  which types of ads are allowed to serve via the curated deal.
+
+  
+- Name - Enter the name for the
+  curated deal line item. You will later be able to search for and
+  report on the line item using this name. This name is not exposed to
+  the buyer.
+- External Code - If you want to
+  report on the curated deal line item using an external code (rather
+  than the internal ID that Xandr assigns
+  automatically), enter the code here. The code can only contain
+  alphanumeric characters, periods, underscores, or dashes. The code you
+  enter is not case-sensitive (i.e., uppercase and lowercase characters
+  are treated the same). No two objects at the same level can use the
+  same code per advertiser.
+- State - Set the state of the curated
+  deal line item. If "Active", the
+  line item will be eligible to serve. Best practice for curators is to
+  set the state to "Active" so that
+  buyers can serve via the curated deal as quickly as possible.
+- Insertion Order Details - Insertion
+  order details for Budget Type,
+  Currency,
+  Total Lifetime Budget,
+  Pacing,
+  Start Date, and
+  End Date display in the gray box
+  (you must select an insertion order to display these values).
+- Budget Type - Budget is set on the
+  parent insertion order.
+  
+
+  <b>Note:</b> When you create a deal via a
+  line item, the line item will inherit its budget from the parent
+  insertion order, and this will impact the revenue types available on
+  the line item.
+
+  
+
+Deal Details
+
+1.  Select Create a Deal.
+2.  Enter a Deal Name (this curated
+    deal name is exposed to the buyer).
+3.  Click Edit under
+    Buyer to choose a buyer for the
+    deal.
+4.  On the Select Buyer screen,
+    select an available buyer (you can search by Name or ID).
+    
+
+    <b>Note:</b> You cannot change the
+    selected buyer after the curated deal line item is created and
+    saved.
+
+    
+5.  Click Add.
+6.  Enter the deal code in Code
+    (optional, this is typically used by external buyers for deal
+    mapping).
+7.  Enter a description for your deal in
+    the Description box (optional).
+
+Details for the newly created or existing deal display in
+Deal Details including:
+
+- Deal ID - ID of newly created deal
+  (the Deal ID for newly created deals
+  does not display until the line item is saved).
+- Auction Type -
+  Auction Type is always set to
+  "Open Auction" for curators.
+- Price Type - Determined by
+  Revenue Type:
+  - CPM =
+    "Fixed Price"
+  - Dynamic CPM =
+    "Standard"
+- Ask Price - Determined by
+  Fixed or
+  Floor Price (set in
+  Revenue Type)
+
+
+
+<b>Note:</b> You may select
+Choose Existing when creating a
+curated deal, but this is not recommended unless you have already
+inactivated the original line item associated with the deal. For ease of
+maintenance, it is recommend that you use only one curated deal line
+item per curated deal.
+
+If you do choose to use an existing curated deal for this curated deal
+line item:
+
+1.  Click Select Deal to choose an
+    existing deal.
+2.  On the Select a Deal screen,
+    select a deal (you can search by Name or ID) and click
+    Select.
+3.  Edit the Deal Name if desired
+    (**Note**: this name is shared with the buyer).
+    
+
+    <b>Note:</b> If you select the wrong deal
+    you can click Deselect to open the
+    Select a Deal screen again and
+    select the deal you want.
+
+    
+
+
+
+Revenue Type
+
+Use the Revenue Type to define how the
+buyer will pay you. Select one of the following revenue types:
+
+- CPM ("fixed price" deals) - The
+  curated deal line item competes in the auction at a fixed price
+  whenever the buyer bids above that price.
+  - Fixed Price - Enter the amount
+    that the buyer will pay you per thousand impressions.
+- Dynamic CPM ("standard auction") -
+  The curated deal line item competes in either a first or second-price
+  auction at the price bid by the buyer, whenever the buyer bids above
+  the ask price. Select either:
+  - Set Floor Price - Enter the hard
+    floor that will apply to the buyer of the curated deal.
+  - Use Market Price - Select this to
+    use the seller’s yield management floors if available; if not
+    available, open auction pricing is used.
+
+Margin Type
+
+>
+
+Use the Margin Type settings to configure the curator margin you wish to
+take on each impression. Select either:
+
+- Percentage - The percentage of the
+  buyer’s bid which will be taken as curator margin
+- CPM - A fixed CPM deducted from the
+  buyer’s bid which will be taken as curator margin
+
+
+
+Budget
+
+The Budget Type for curated deals must
+be Unlimited Budget.
+
+Flights
+
+Flights let you set up limited deals with start and end dates as well as
+“evergreen deals” with no end date. To create one or more flights:
+
+1.  Select either Set Dates or
+    No End Date.
+    - Set Dates: Enter
+      a Start
+      Date and End Date for
+      each of the line item's flights. The hour settings
+      for Start
+      Date and End Date will
+      default to 12:00 AM and 11:59 PM respectively (you can override
+      the defaults). Flights may not overlap one another. All flight
+      dates must fall within the billing period dates of the parent
+      insertion order and be a minimum of one day in duration.
+    - No End Date: Enter
+      the Start Date for the line
+      item. You may not create additional flights for this line item
+      because it has no end date.
+2.  Click Add Another Flight if you
+    want additional flights (this option is not available if you select
+    No End Date).
+
+
+
+<b>Note:</b> You cannot change
+the Start Date of a flight once that
+date has passed. You can, however, add multiple flights to any curated
+deal line item.
+
+
+
+Supply Strategy
+
+Curated deal line items can package supply from the open exchange or
+through deals negotiated directly with sellers. Selecting
+Deals will allow you select specific
+deals associated with your account in the
+Targeting section below. Selecting
+Open Exchange allows you to curate
+supply sellers make available to buyers on the open exchange.
+
+Payment Model
+
+The Payment Model for curated deal
+line items is preset to Pay Per
+Impression.
+
+Inventory and Brand Safety
+
+You can specify the following inventory and brand safety settings for
+the curated deal line item.
+
+Inventory
+
+**Universal Categories**
+
+Universal categories are defined by Xandr. When
+Xandr reviews inventory, we apply these
+categories based on the inventory's content. For example, a car
+dealership placement group would be assigned to the "Autos & Vehicles"
+category. Sellers can apply universal categories when self-reviewing
+inventory as well.
+
+By default, your curated deal line item will target all universal
+categories. However, you can narrow your targeting to include or exclude
+specific universal categories:
+
+1.  On the Universal Categories tab,
+    include or exclude custom categories.
+    - The Categories lists shows all
+      top-level universal categories defined by
+      Xandr. You can either include or exclude
+      top-level categories or drill into a category to view its child
+      categories.
+    - The Sub-Categories list shows
+      all child universal categories in the context of their parent
+      categories. You can either include or exclude sub-categories. Note
+      that when you exclude a top-level category, its sub-categories are
+      not available for further inclusion or exclusion.
+
+    
+
+    <b>Note:</b> When targeting more than one
+    universal category, the categories have an OR relationship. For
+    example, if you target the "News" and "Finance" categories, you will
+    bid on inventory that is in either category. The inventory does not
+    need to be in both categories.
+
+    
+2.  Click Add.
+
+**Seller Categories**
+
+Seller Categories are defined by
+sellers. Sellers create these and apply them to slices of their
+inventory to package their inventory for specific buyers or curators to
+target.
+
+By default, your curated deal line item will target all custom
+categories. However, you can narrow targeting to include or exclude
+specific custom categories that sellers exposed to you via the open
+exchange:
+
+1.  On the Custom Categories tab,
+    include or exclude custom categories.
+    
+
+    <b>Note:</b> When targeting more than one
+    custom category, the categories have an OR relationship. For
+    example, if you include "Custom Category 1" and "Custom Category 2",
+    you will bid on inventory that is in either category. The inventory
+    does not need to be in both categories.
+
+    
+2.  Click Add.
+
+**Seller Inventory**
+
+By default, your curated line item will target all sellers. However, you
+can narrow targeting to include or exclude specific sellers.
+Additionally, if a seller has chosen to expose their publishers via the
+open exchange, you can include or exclude specific publishers:
+
+1.  On the Seller Inventory tab,
+    include or exclude sellers.
+    - Click on a seller to view the publishers they have exposed for
+      targeting and include or exclude specific publishers.
+
+Inventory Type
+
+To set which inventory types you wish to target, select one of the
+following from the menu. By default, your line items will target all
+inventory types (i.e., App & Web):
+
+- App & Web - To run on both inventory
+  types. This is the default setting.
+- App Only - To run in applications
+  installed on mobile tablets, phones, and Windows 8 devices.
+- Web Only - To run on standard web
+  sites and those optimized for browsers on mobile devices.
+
+Blocklist
+
+Select one or more blocklists (by default, the **AppNexus Blocklist**
+will always be applied). Any inventory in the blocklists you apply will
+automatically be *excluded* and not bid on by this line item. You may
+select from Network/member-level blocklists or  create a blocklist
+directly (see
+<a href="inventory-lists-ali-only.md" class="xref">Inventory Lists</a>)
+from the line item. Once applied, you can also view or export the
+blocklist.
+
+Allowlist
+
+Select an allowlist you would like to apply to this line item. You may
+select from network/member-level allowlists or create an
+allowlist directly (see
+<a href="inventory-lists-ali-only.md" class="xref">Inventory Lists</a>)
+from the line item. Once applied, you can also view or export the
+allowlist.
+
+
+
+<b>Note:</b> The use of inventory lists (i.e.,
+allowlists or blocklists) will constrain
+whatever Inventory Type selections you
+make. For example, if you target an
+Allowlist,
+the Inventory Type option you select
+will be limited to only those domains/apps in that
+Allowlist. If you target a
+Blocklist,
+the Inventory Type option you select
+will serve on everything but the domains/apps in that
+Blocklist.
+
+
+
+Ads.txt
+
+Do not use (not supported for curated deal line items).
+
+Targeting
+
+You can target curated deal line items in the same way you can target
+augmented line items. See
+<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
+for detailed setup information on targeting. See
+<a href="inventory-performance-targeting.md" class="xref">Inventory
+Performance Targeting</a> for more information on best practices for
+inventory performance targeting.
+
+
+
+<b>Note:</b> Thresholds
+(Viewability Threshold or
+Completion Rate Threshold) create a
+hard limit for curated deal line item targeting. Any impressions with a
+predicted view or completion rate below the threshold won’t be matched
+on the curated deal. Because the threshold you choose is the minimum
+view/completion you will achieve, expect to see an average
+view/completion rate 10-15% higher than the threshold you set.
+
+
+
+Geography
+
+To quickly target countries, click in
+the Geography field and select the
+relevant checkboxes. To set up more advanced geography restrictions
+click Additional Geo Restrictions.
+See <a href="additional-geo-restrictions-ali.md" class="xref"
+title="In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.">Additional
+Geo Restrictions</a> for more details.
+
+Deal Creative Criteria
+
+You can edit the following creative attributes for a curated deal by
+clicking Edit under the attribute,
+selecting the appropriate values, and clicking
+Set:
+
+- Media Type
+
+Reporting Labels
+
+Enter any reporting labels if desired. Reporting labels let you
+associate a person or other metadata with advertisers. You can then run
+reports using these labels. See
+<a href="reporting-guide.md" class="xref">Reporting Guide</a> for more
+information.
+
+Comments
+
+Enter any comments for this curated deal line item.
+
+Save the Curated Deal Line Item
+
+Click Save to save the curated deal
+line item or Save and Duplicate to
+save the curated deal line item and duplicate the settings to a new line
+item.
+
+
+
+
