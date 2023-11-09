@@ -36,9 +36,9 @@ When specifying the filter:
 - None Selected returns everything.
 
 > [!TIP]
-> Filtering by ad server filters the available product and attribute options, not the actual data returned in the lookup or report. To filter the availability lookup, specify ad_server as an Attribute.
+> Filtering by ad server filters the available product and attribute options, not the actual data returned in the lookup or report. To filter the availability lookup, specify `ad_server` as an attribute.
 
-For historical purposes, all ad servers that your agency has worked with are filter options. If your agency doesn't use multiple ad servers but has migrated ad servers, you can filter by ad server only on the **Contract Type** for historical reporting. Clients that have migrated ad servers will see this filter only on the Contract Type for historical reporting.
+For historical purposes, all ad servers that your agency has worked with are filter options. If your agency doesn't use multiple ad servers but has migrated ad servers, you can filter by ad server only on the **Contract Type** for historical reporting. Clients that have migrated ad servers will see this filter only on the **Contract Type** for historical reporting.
 
 ## Specify priority
 
