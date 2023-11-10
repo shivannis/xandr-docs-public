@@ -63,7 +63,7 @@ How do I create a product group?
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to remove a product from. This accesses the **Edit Product** screen.
-1. Click **Remove**. This accesses a screen where you can search and remove the products. It is recommended to add or remove products from the group screen rather than product by product. An alternative way to remove a product from a group is from the **Product Visibility** screen:
+1. Click **Remove**. This accesses a screen where you can search and remove the products. It is recommended to add or remove products from the group screen rather than product by product. An alternative way to remove a product from a group is from the **Product Visibility** screen.
 
 1. Select **Edit Product** under the Product Details section.
 
