@@ -1,6 +1,7 @@
 ---
 Title : Client-Side Segmentation
 Description : The most common way of building audience segments is by placing
+ms.date : 10/28/2023
 client-side segment pixels on websites or creatives, signaling that a
 user has visited a web page or taken a simple action. If you're new to
 ---
@@ -43,10 +44,10 @@ Use Cases
 Workflow:
 
 - Step 1:
-  <a href="create-a-segment-pixel.html" class="xref">Create a Segment
+  <a href="create-a-segment-pixel.md" class="xref">Create a Segment
   Pixel</a>
 - Step 2:
-  <a href="export-a-segment-pixel.html" class="xref">Export a Segment
+  <a href="export-a-segment-pixel.md" class="xref">Export a Segment
   Pixel</a>
 - Step 3: Place pixel on page
 

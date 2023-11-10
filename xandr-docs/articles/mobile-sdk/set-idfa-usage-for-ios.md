@@ -2,6 +2,7 @@
 title : Set IDFA usage for iOS
 description : The Identifier for Advertisers (**IDFA**) is an Apple provided id to track the users for advertising purposes by the publishers who have an app on the Apple App Store (post getting consent from the users to dothat). 
 ms.custom: ios-sdk 
+ms.date : 10/28/2023
 ---
 
 

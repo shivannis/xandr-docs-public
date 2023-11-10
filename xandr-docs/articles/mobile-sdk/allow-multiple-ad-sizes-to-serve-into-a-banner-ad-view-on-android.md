@@ -2,6 +2,7 @@
 title: Allow Multiple Ad Sizes to Serve into a Banner Ad View on Android
 description: In this article, learn how to allow multiple ad sizes to serve into a banner ad view on Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Allow multiple ad sizes to serve into a banner ad view on Android

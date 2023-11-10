@@ -1,6 +1,7 @@
 ---
 Title : Ad Viewability: Description of Methodology (DOM)
 Description : This document is meant to describe the Xandr
+ms.date : 10/28/2023
 viewability measurement process and methodology. It is designed for
 ---
 
@@ -92,7 +93,7 @@ following types of formats:
 - Ads in mobile apps (using our Mobile SDK, the Microsoft SDK, or OMSDK)
 - Native ads (display ads only)
 - VAST Video when VPAID is available
-  (<a href="video-viewability.html" class="xref">Measurement of Video
+  (<a href="video-viewability.md" class="xref">Measurement of Video
   Viewability using VPAID Wrapper</a>)
 
 Incompatible Formats
@@ -193,7 +194,7 @@ Xandr.
 
 
 
-Note: The Xandr
+<b>Note:</b> The Xandr
 impression count is higher than third-party impression numbers.
 
 
@@ -209,7 +210,7 @@ impression is counted as served, and not measured.
 
 
 
-Note: Xandr
+<b>Note:</b> Xandr
 measured impressions are comparable with third party's measured
 impressions.
 
@@ -227,7 +228,7 @@ measurement rate (measured impressions / impressions).
 
 
 
-Note: The Xandr
+<b>Note:</b> The Xandr
 measurement rate should not be compared with a third party vendor's
 measurement rate.
 
@@ -269,7 +270,7 @@ http:// fra1.ib.adnxs.com/vevent?e=wqT_....
 Despite all these precautions, in a negligible number of cases,
 impressions may be under-counted.
 
-<span id="ID-00008c88__ph-object-detection" class="ph">Object
+Object
 Detection
 
 Xandr detects the banner object that must be
@@ -380,7 +381,7 @@ In cases where an ad server is called but images are blocked, the
 Xandr script detects no creative object. The ad
 impression is counted (the ad server counts it too, so numbers remain
 consistent), but the ad is not viewable. See <a
-href="ad-viewability-description-of-methodology-dom.html#ID-00008c88__ph-object-detection"
+href="ad-viewability-description-of-methodology-dom.md#ID-00008c88__ph-object-detection"
 class="xref">ad-viewability-description-of-methodology-dom.html#ID-00008c88__ph-object-detection</a>
 for more information.
 
@@ -591,7 +592,7 @@ List of Reported Metrics
 - Undetermined Distribution
 
 Definitions of the accredited indicators are available in the
-<a href="introduction-to-viewability.html" class="xref">Introduction to
+<a href="introduction-to-viewability.md" class="xref">Introduction to
 Viewability</a>.
 
 All these metrics are available in a specific report called "Viewability
@@ -615,7 +616,7 @@ mobile browsers, except in the "Viewability Report" where mobile
 impressions are filtered out.
 
 However, it is possible to run the
-<a href="site-domain-performance.html"
+<a href="site-domain-performance.md"
 class="xref">site-domain-performance.html</a> report and group by
 "Operating system".
 
@@ -624,7 +625,7 @@ Retention period
 Depending on the level of granularity, the data collected by
 Xandr are stored for a specific period of time.
 See
-<a href="availability-of-reporting-data.html" class="xref">Availability
+<a href="availability-of-reporting-data.md" class="xref">Availability
 of Reporting Data</a> for more information.
 
 Changes in the Description of Methodology

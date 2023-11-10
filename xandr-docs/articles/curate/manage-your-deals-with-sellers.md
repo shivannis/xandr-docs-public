@@ -1,6 +1,7 @@
 ---
 Title : Manage Your Deals with Sellers
 Description : You can manage all deals you have with sellers on the
+ms.date : 10/28/2023
 Deals screen. You can view basic and
 ---
 
@@ -15,15 +16,15 @@ advanced deal metrics, monitor each deal's health, and run detailed
 reports.
 
 You can also manage your deals with a specific seller on the Partner
-Details screen, see <a href="partnership-details-screen-buyer-view.html"
+Details screen, see <a href="partnership-details-screen-buyer-view.md"
 class="xref">Partnership Details Screen</a> for more information.
 
 
 
-Note: For information on setting deal
+<b>Note:</b> For information on setting deal
 preferences, declining deals, managing the status of deals, and
 assigning internal names (deal alias) to deals see
-<a href="control-your-deals-with-sellers.html" class="xref">Control Your
+<a href="control-your-deals-with-sellers.md" class="xref">Control Your
 Deals with Sellers</a>.
 
 
@@ -44,11 +45,11 @@ in the header when you hover over them are sortable.
 - Deal Name - The name of the deal.
 - Deal Alias - The internal name of
   the deal assigned by buyer. See
-  <a href="control-your-deals-with-sellers.html" class="xref">Control Your
+  <a href="control-your-deals-with-sellers.md" class="xref">Control Your
   Deals with Sellers</a>.
 - Buyer Deal Status - The buyer deal
   status. See
-  <a href="control-your-deals-with-sellers.html" class="xref">Control Your
+  <a href="control-your-deals-with-sellers.md" class="xref">Control Your
   Deals with Sellers</a>.
 - Deal ID - The ID of the deal.
 - Imps Matched - The number of
@@ -82,10 +83,10 @@ in the header when you hover over them are sortable.
 
   
 
-  Note: For more information on bid
+  <b>Note:</b> For more information on bid
   rejections, Impbus error codes, and actions buyers and sellers can
   take to resolve errors, see
-  <a href="understanding-bid-rejections.html" class="xref">Understanding
+  <a href="understanding-bid-rejections.md" class="xref">Understanding
   Bid Rejections</a>.
 
   
@@ -97,7 +98,7 @@ in the header when you hover over them are sortable.
   price-reduction.
   
 
-  Tip: The difference between
+  <b>Tip:</b> The difference between
   Winning eCPM and
   Cost eCPM indicates the amount of
   price reduction occurring and may reveal information about price
@@ -139,8 +140,8 @@ Reporting on Deals
 Run a report to see how your deals are performing. Check the checkbox
 near the desired deals, and then click Show
 in Reporting. A new tab opens displaying the
-<a href="network-analytics-report.html"
-class="xref">network-analytics-report.html</a> with the selected deals
+<a href="network-analytics-report.md"
+class="xref">network-analytics-report.md</a> with the selected deals
 as filters and Deal selected as a
 dimension.
 
@@ -156,9 +157,9 @@ you have as a seller.
 
 Related Topics
 
-- <a href="control-your-deals-with-sellers.html" class="xref">Control Your
+- <a href="control-your-deals-with-sellers.md" class="xref">Control Your
   Deals with Sellers</a>
-- <a href="partnership-details-screen-buyer-view.html"
+- <a href="partnership-details-screen-buyer-view.md"
   class="xref">Partnership Details Screen</a>
 
 

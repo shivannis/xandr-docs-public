@@ -1,6 +1,7 @@
 ---
 Title : Migration to Microsoft Identity Platform Login
 Description : This documentation provides step by step guide on how to migrate
+ms.date : 10/28/2023
 existing authentication process in Xandr products to Microsoft Identity
 Platform.
 ---
@@ -23,9 +24,8 @@ Platform.
 2.  Click on Sign in with Microsoft
     button.
 
-    <img src="../images/microsoft/1.png"
-    id="migration-to-microsoft-identity-platform-login__image_ijn_j3q_sxb"
-    class="image" width="500" height="500" />
+    ![A](media/a.png)
+    
 
 3.  In Action Required: Create a
     Microsoft Account screen, you can:
@@ -39,7 +39,7 @@ Platform.
 
       
 
-      Note: This option to delay the
+      <b>Note:</b> This option to delay the
       migration is available till 16 June, 2023 and a countdown is
       displayed next to Remind me
       tomorrow to show how many days are remaining till then.
@@ -47,10 +47,8 @@ Platform.
       Create Microsoft Account only.
 
       
-
-      <img src="../images/microsoft/2.png"
-      id="migration-to-microsoft-identity-platform-login__image_z55_p3q_sxb"
-      class="image" width="600" height="500" />
+         ![B](media/b.png)
+    
 
     
 
@@ -65,15 +63,14 @@ Platform.
     <a href="https://help.xandr.com/" class="xref" target="_blank">Xandr
     Support portal</a>.
 
-    <img src="../images/microsoft/3.png"
-    id="migration-to-microsoft-identity-platform-login__image_rkm_bjq_sxb"
-    class="image" width="500" height="500" />
+     ![C](media/c.png)
+   
 
     
 
     
 
-    Note: If you do not have a
+    <b>Note:</b> If you do not have a
     Microsoft account, you can create using
     Create one! link in the page.
 
@@ -84,13 +81,12 @@ Platform.
 5.  Enter the password and click on Sign
     in to proceed.
 
-    <img src="../images/microsoft/4.png"
-    id="migration-to-microsoft-identity-platform-login__image_agp_tjq_sxb"
-    class="image" width="500" height="400" />
+     ![D](media/d.png)
+    
 
 6.  If your organization requires IT Admin approval to use the
     Sign in with Microsoft method to
-    log into Xandr Curate, then follow up with your organization's IT
+    log into Microsoft Curate, then follow up with your organization's IT
     team.
 
 7.  If your organization has implemented Multi Factor Authention (MFA)

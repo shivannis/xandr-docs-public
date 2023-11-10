@@ -1,6 +1,7 @@
 ---
 Title : Update Insertion Orders
 Description : There are several actions you can take on existing insertion orders to
+ms.date : 10/28/2023
 update them.
 ---
 
@@ -21,7 +22,7 @@ Insertion Order Details screen.
 Click either the Edit icon at the top
 of the screen or the Edit link in the
 Details section. (See
-<a href="view-insertion-order-details.html" class="xref"
+<a href="view-insertion-order-details.md" class="xref"
 title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
 Insertion Order Details</a> for more information on the
 Details screen.)
@@ -40,7 +41,7 @@ insertion orders.
 
 
 
-Warning: Before you delete an insertion
+<b>Warning:</b> Before you delete an insertion
 order, make sure that its child line items are associated to other
 insertion orders. Otherwise, you will orphan the line items and cause
 the line items to stop serving.
@@ -58,9 +59,9 @@ orders from the system.
 
 Related Topics
 
-- <a href="working-with-insertion-orders.html" class="xref">Working with
+- <a href="working-with-insertion-orders.md" class="xref">Working with
   Insertion Orders</a>
-- <a href="create-an-insertion-order.html" class="xref">Create an
+- <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>
 
 

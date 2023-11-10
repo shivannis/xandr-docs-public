@@ -1,6 +1,7 @@
 ---
 Title : Set Up Multi-Factor Authentication
 Description : This will guide you through the multi-factor authentication set up
+ms.date : 10/28/2023
 process.
 ---
 
@@ -23,7 +24,7 @@ You can select any of them.
 
 
 
-Note: If you have already downloaded
+<b>Note:</b> If you have already downloaded
 one of the two choices of primary selections, click **I've already
 downloaded it** verbiage to alert the system.
 
@@ -70,7 +71,7 @@ This task explains how to set up your MFA account.
 
     
 
-    Note: You will have a limited
+    <b>Note:</b> You will have a limited
     amount of time to enter this code as after a certain time period it
     expires.
 
@@ -78,7 +79,7 @@ This task explains how to set up your MFA account.
 
     
 
-    Note: This is a one-time use code.
+    <b>Note:</b> This is a one-time use code.
     You need to enter a new code every time when you try to
     authenticate.
 
@@ -98,7 +99,7 @@ This task explains how to set up your MFA account.
 You can use your MFA credentials to log in to your digital application
 user accounts now. Post login, you can switch between your user accounts
 following the steps described in
-<a href="switching-between-user-accounts.html" class="xref"
+<a href="switching-between-user-accounts.md" class="xref"
 title="This will instruct you how use the account switcher to switch between user accounts.">Switching
 Between User Accounts</a>.
 
@@ -106,12 +107,12 @@ Between User Accounts</a>.
 
 **Related Topics**
 
-- <a href="troubleshooting-multi-factor-authentication-mfa.html"
+- <a href="troubleshooting-multi-factor-authentication-mfa.md"
   class="xref"
   title="You can find answers to the most common issues associated with MFA.">Troubleshooting
   Multi-Factor Authentication (MFA)</a>
 - <a
-  href="single-credential-login-and-multi-factor-authentication-faq.html"
+  href="single-credential-login-and-multi-factor-authentication-faq.md"
   class="xref"
   title="You can find answers to the most frequently asked questions about single credential login and MFA.">Single
   Credential Login and Multi-Factor Authentication FAQ</a>

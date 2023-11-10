@@ -1,6 +1,7 @@
 ---
 Title : Explore and Manage Advertisers
 Description : The Advertisers screen is a management
+ms.date : 10/28/2023
 screen that shows you essential metrics about all your advertisers,
 provides quick access to each advertiser's details and child objects,
 and reporting options.
@@ -34,7 +35,7 @@ Managing Advertisers
   want to delete and click Delete.
   
 
-  Warning: Deleting an advertiser
+  <b>Warning:</b> Deleting an advertiser
   deletes all of its child objects as well, including insertion orders,
   line items, campaigns, creatives, conversion pixels, and segments. The
   deletions are permanent and cannot be reverted. Although deleted
@@ -57,12 +58,12 @@ Because these stats are dependent upon reporting data and are synced
 after reporting has closed for any given hour, for a small chunk of time
 each hour, there may be discrepancies between reporting and the grid
 data. For more details, see
-<a href="availability-of-reporting-data.html" class="xref">Availability
+<a href="availability-of-reporting-data.md" class="xref">Availability
 of Reporting Data</a>.
 
 
 
-Tip: To sort your advertisers by any
+<b>Tip:</b> To sort your advertisers by any
 statistic, click on the relevant column.
 
 
@@ -83,7 +84,7 @@ Viewing Advertiser Details
 
 To view advanced details about an advertiser, click on the advertiser
 you want to view. See
-<a href="view-advertiser-details.html" class="xref"
+<a href="view-advertiser-details.md" class="xref"
 title="The Advertiser Details screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser&#39;s performance, and offers quick access to the advertiser&#39;s child objects.">View
 Advertiser Details</a> for more information.
 
@@ -133,12 +134,12 @@ you selected are set as filters.
 
 Related Topic
 
-- <a href="working-with-advertisers.html" class="xref">Working with
+- <a href="working-with-advertisers.md" class="xref">Working with
   Advertisers</a>
-- <a href="view-advertiser-details.html" class="xref"
+- <a href="view-advertiser-details.md" class="xref"
   title="The Advertiser Details screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser&#39;s performance, and offers quick access to the advertiser&#39;s child objects.">View
   Advertiser Details</a>
-- <a href="create-an-advertiser.html" class="xref">Create an
+- <a href="create-an-advertiser.md" class="xref">Create an
   Advertiser</a>
 
 

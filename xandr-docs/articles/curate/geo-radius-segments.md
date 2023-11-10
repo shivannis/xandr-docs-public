@@ -1,6 +1,7 @@
 ---
 Title : Geo Radius Segments
 Description : A geo radius segment is a list of latitude, longitude, and radius data.
+ms.date : 10/28/2023
 ---
 
 
@@ -14,13 +15,13 @@ user locations. When you create a geo radius segment, you add latitude,
 longitude, and radius data either manually (copy and paste) or by
 importing a file. Once the geo radius segment is created, these
 locations are easily targetable on your line item using the segment ID
-(see <a href="segment-targeting.html" class="xref"
+(see <a href="segment-targeting.md" class="xref"
 title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
 Targeting</a>) for more information.
 
 
 
-Important: Approximately 30% of
+<b>Important:</b> Approximately 30% of
 impressions received contain location data that you can target with geo
 radius segments.
 
@@ -28,7 +29,7 @@ radius segments.
 
 
 
-Note: There is a maximum limit of 10k
+<b>Note:</b> There is a maximum limit of 10k
 geo radius segments per member.
 
 
@@ -40,7 +41,7 @@ There are five steps to creating a geo radius segment:
 Step 1. Get Started
 
 Open the
-<a href="location-manager.html" class="xref">Location Manager</a> page
+<a href="location-manager.md" class="xref">Location Manager</a> page
 and click New to open the **Create Geo
 Radius Segment** dialog.
 
@@ -95,7 +96,7 @@ Copy and paste
     - Radius (in meters: 3m to 100000m)
       
 
-      Note: The radius needs to be a
+      <b>Note:</b> The radius needs to be a
       whole number.
 
       
@@ -149,7 +150,7 @@ Step 5. Note the segment ID for use in line item targeting
 When a new geo radius segment is created, it is automatically assigned a
 segment ID. Use this segment ID (or the geo radius segment name) to
 locate the segments when configuring targeting for line items. See
-<a href="segment-targeting.html" class="xref"
+<a href="segment-targeting.md" class="xref"
 title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
 Targeting</a> for more information on using the segment IDs assigned to
 geo radius segments for targeting.
@@ -158,7 +159,7 @@ geo radius segments for targeting.
 
 
 
-Note: Within 365 days of being created,
+<b>Note:</b> Within 365 days of being created,
 geo radius segments must be refreshed or updated since their maximum
 Time-To-Live (TTL) is 365 days. If a segment is not refreshed, it will
 become inactive and unusable for targeting. You can refresh segments by

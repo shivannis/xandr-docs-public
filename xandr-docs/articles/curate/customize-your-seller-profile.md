@@ -1,6 +1,7 @@
 ---
 Title : Customize Your Seller Profile
 Description : On the Partner Center screen, you
+ms.date : 10/28/2023
 can edit the profile information that displays to buyers on your Partner
 Details page.
 ---
@@ -30,9 +31,9 @@ information about your member displays:
 - Partner Type - The type of member
   you are within Curate:
   - Buyer - A member that buys
-    inventory through Xandr Curate.
+    inventory through Microsoft Curate.
   - Seller - A member that sells
-    inventory through Xandr Curate.
+    inventory through Microsoft Curate.
 
 Networks viewing this information can toggle between the buyer and
 seller view.
@@ -85,11 +86,11 @@ Partner Center screen.
 
 Related Topics
 
-- <a href="managing-relationships-with-sellers.html" class="xref">Managing
+- <a href="managing-relationships-with-sellers.md" class="xref">Managing
   Relationships with Sellers</a>
-- <a href="partner-center-screen-seller-view.html" class="xref">Partner
+- <a href="partner-center-screen-seller-view.md" class="xref">Partner
   Center Screen - Seller View</a>
-- <a href="partnership-details-screen-seller-view.html"
+- <a href="partnership-details-screen-seller-view.md"
   class="xref">Partnership Details Screen - Seller View</a>
 
 

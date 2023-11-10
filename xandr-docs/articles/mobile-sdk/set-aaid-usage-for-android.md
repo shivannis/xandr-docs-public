@@ -2,6 +2,7 @@
 title : Set AAID usage for Android
 description : The Google Advertising ID (AAID) for devices is an Android provided id to track the users for advertising purposes by the publishers who have an app on the Google Play Store (post getting consent from the users to do that). 
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 

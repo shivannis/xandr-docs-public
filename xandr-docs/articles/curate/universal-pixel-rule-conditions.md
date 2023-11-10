@@ -1,6 +1,7 @@
 ---
 Title : Universal Pixel Rule Conditions
 Description : ## Available Conditions
+ms.date : 10/28/2023
 <table id="universal-pixel-rule-conditions__table_b3v_p51_skb"
 class="table frame-all">
 <colgroup>
@@ -185,7 +186,6 @@ condition</td>
 
 
 
-<div id="universal-pixel-rule-conditions__section_z2g_nrp_rsb"
 >
 
 ## Examples
@@ -248,15 +248,14 @@ class="ph">xandr.com/careers?queryString=software</a></td>
 
 
 
-<div id="universal-pixel-rule-conditions__section_mqd_nh1_nmb"
 >
 
 ## Related Topics
 
-- <a href="set-up-audiences-with-universal-pixel.html" class="xref"
+- <a href="set-up-audiences-with-universal-pixel.md" class="xref"
   title="You can set up audiences for your universal pixel using rules and conditions, then target the audience segments in the Audience and Location Targeting settings of your line item.">Set
   Up Audiences with Universal Pixel</a>
-- <a href="set-up-conversions-with-universal-pixel.html" class="xref"
+- <a href="set-up-conversions-with-universal-pixel.md" class="xref"
   title="You can set up conversions for your universal pixel using rules and conditions, then track conversion activity using Curate reporting.">Set
   Up Conversions with Universal Pixel</a>
 

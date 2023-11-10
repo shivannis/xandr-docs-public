@@ -2,6 +2,7 @@
 title: Add a Transition Animation on iOS
 description: In this article, learn how to add transition animations for banner ads on iOS.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Add a transition animation on iOS

@@ -1,6 +1,5 @@
 ---
 Title : Segment Targeting
-Description : <div id="ID-00004ec9__body-48191887-4c3a-4488-9d4b-c73264963981"
 class="body">
 You can target users within segments by using Boolean expressions. Users
 ---
@@ -8,7 +7,6 @@ You can target users within segments by using Boolean expressions. Users
 
 # Segment Targeting
 
-<div id="ID-00004ec9__body-48191887-4c3a-4488-9d4b-c73264963981"
 class="body">
 
 You can target users within segments by using Boolean expressions. Users
@@ -26,12 +24,10 @@ subsection displays all segments belonging to the advertiser for the
 associated line item as well as segments defined at the
 Member level.
 
-<div id="ID-00004ec9__section_aa91d9c9-f0f2-4f5b-bfd8-75884d68ee6f"
 >
 
 ## Creating Boolean Expressions Between Segment Groups and Segments
 
-<div id="ID-00004ec9__p_ad5c6a9c-b8b5-476b-b7aa-09213268904d" >
 
 You can use the following Boolean operators to narrow or broaden your
 targeting scope:
@@ -117,18 +113,17 @@ career within real estate.</p></td>
 
 For more information about how to set up segment targeting at the
 augmented line item level, refer to
-<a href="set-up-segment-targeting-on-a-line-item.html"
-class="xref">set-up-segment-targeting-on-a-line-item.html</a>.
+<a href="set-up-segment-targeting-on-a-line-item.md"
+class="xref">set-up-segment-targeting-on-a-line-item.md</a>.
 
-<div id="ID-00004ec9__section_76a91a3d-23f2-4400-8916-ee9796f87345"
 >
 
 ## Related Topics
 
-- <a href="create-a-segment-pixel.html" class="xref">Create a Segment
+- <a href="create-a-segment-pixel.md" class="xref">Create a Segment
   Pixel</a>
-- <a href="associate-segment-pixels-with-creatives.html"
-  class="xref">associate-segment-pixels-with-creatives.html</a>
+- <a href="associate-segment-pixels-with-creatives.md"
+  class="xref">associate-segment-pixels-with-creatives.md</a>
 
 
 

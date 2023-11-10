@@ -1,6 +1,7 @@
 ---
 Title : Understanding Buyer Seat IDs
 Description : Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the
+ms.date : 10/28/2023
 buyers they manage, rather than using a Xandr
 member ID. If a DSP has implemented this feature, you can choose between
 ---
@@ -30,7 +31,7 @@ register the IDs with Xandr. DSPs have several
 mechanisms for uploading new seats:
 
 - DSPs can register new seats whenever they want using the <a
-  href="https://docs.xandr.com/bundle/xandr-bidders/page/seat-service.html"
+  href="xandr-bidders/seat-service.md"
   class="xref" target="_blank">Seat service</a>.
 - The first time a new seat ID is used to bid on inventory,
   Xandr registers it automatically.
@@ -45,10 +46,10 @@ Xandr.
 
 
 
-Note: You may encounter seat IDs that
+<b>Note:</b> You may encounter seat IDs that
 are not yet eligible for creating deals. To ensure a successful deal,
 check the reference table in
-<a href="external-dsps-using-buyer-seat-ids.html" class="xref"
+<a href="external-dsps-using-buyer-seat-ids.md" class="xref"
 title="Not every buyer seat ID that you&#39;ll see when creating deals is currently eligible for deal creation. Before you create a custom deal with an external DSP using buyer seat IDs, you should check the Buyer Seat Migration Status reference table and communicate with the buyer to ensure you&#39;re using the correct IDs.">External
 DSPs Using Buyer Seat IDs</a>.
 

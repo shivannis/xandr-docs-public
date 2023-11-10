@@ -1,6 +1,7 @@
 ---
 Title : Buying Microsoft Windows 3rd Party AppNetwork Inventory
 Description : ## Inventory Overview
+ms.date : 10/28/2023
 Reach millions of user on desktop, tablet, and phone through Windows
 AppNetwork and Windows Phone AppNetwork 3rd Party. Advertising on
 ---
@@ -35,9 +36,8 @@ with the Microsoft Advertising Exchange (Member 280) and is classified
 as “Desktop” and “Web” supply type for both Desktop/Tablet,Web and
 Phone.
 
-<div id="ID-00007c28__note_zmx_v4h_rwb" 
 
-Note: Supply type is a targeting
+<b>Note:</b> Supply type is a targeting
 attribute designated by the seller that may not reflect actual device
 type.
 
@@ -53,7 +53,7 @@ type.
 
 
 
-Tip: Inventory Research with specific
+<b>Tip:</b> Inventory Research with specific
 break-downs of Windows App inventory by size & country can be accessed
 via the Network tab then filtering for Supply Type = "App" within seller
 Microsoft Advertising Exchange (280).
@@ -175,7 +175,7 @@ Technical Attributes:
 
 
 
-Tip: We have mapped the top 1000 app
+<b>Tip:</b> We have mapped the top 1000 app
 names for targeting on both the Windows AppNetwork and Windows Phone
 AppNetwork. If you want to target an app name outside of the top 1000,
 reach out to your account manager. There is reporting capability for App
@@ -346,7 +346,7 @@ It is recommended to **NOT** use Device Type for targeting. Retain the
 
 
 
-Tip: To report on delivery for each
+<b>Tip:</b> To report on delivery for each
 publisher, you can select "publisher" as a dimension in an analytics
 report.
 
@@ -380,7 +380,7 @@ Packages are a great way to leverage Microsoft user data with your
 campaigns. Currently, Windows AppNetwork and Windows Phone AppNetwork
 offer a few packages broken out by content category such as
 entertainment, games, and news. See
-<a href="buying-microsoft-deals.html" class="xref"
+<a href="buying-microsoft-deals.md" class="xref"
 title="You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory using our Package Marketplace.">Buying
 Microsoft Deals</a> for more.
 

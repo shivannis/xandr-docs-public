@@ -1,32 +1,22 @@
 ---
-Title : Yield Analytics Overview
-Description : ## About Yield Analytics
-Yield Analytics is a data analytics tool that helps publishers properly
-forecast, manage, price, and sell their ad inventory in order to
-maximize revenue.
+title : Yield Analytics Overview
+description : Learn about Yield Analytics in this page.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
 
 ---
 
 
-# Yield Analytics Overview
+# Yield analytics overview
 
+This page deals with concepts on Yield Analytics.
 
-
-
-
-## About Yield Analytics
+## About yield analytics
 
 Yield Analytics is a data analytics tool that helps publishers properly
-forecast, manage, price, and sell their ad inventory in order to
-maximize revenue.
+forecast, manage, price, and sell their ad inventory in order to maximize revenue.
 
-
-
-
-
-## Basics of Yield Analytics Technology
+## Basics of yield analytics technology
 
 This is how yield analytics works behind the scenes:
 
@@ -72,10 +62,6 @@ Many ad servers can do everything that Yield Analytics can do as far as
 looking at campaign management, line delivery and forecasting. So why is
 Yield Analytics better?
 
-
-
-
-
 ## Methodology
 
 A typical ad server will look at a sample set of data. This means that
@@ -95,7 +81,7 @@ analytics is looking at every single impression. Historically, it will
 give you the correct amount of impressions that have served at that
 particular line item – and then also accurately forecast it.
 
-- **Future Forecasting**
+- **Future forecasting**
 
 If it is desired to do forecasting far into the future, Yield Analytics
 is looking at a larger set of the data so we have a better understanding
@@ -104,11 +90,7 @@ months in advance – yield analytics is going to have a better
 understanding of your system to determine the correct numbers for when
 you are requesting that forecasting information.
 
-
-
-
-
-## Lookback Window
+## Lookback window
 
 A typical ad server looks back only 28 days and extrapolates that
 information for however long the forecast is being conducted. Yield
@@ -119,11 +101,7 @@ Example: The start date of a campaign is Sept. 1. You allowed yield
 analytics to have access to your data going back to January 1. So you
 can “look back” to January 1 for historical data.
 
-
-
-
-
-## Manual Adjustments
+## Manual adjustments
 
 In some cases, you may know that the ad server is likely to forecast
 incorrectly, so it's important that you can make manual adjustments
@@ -136,11 +114,7 @@ be a high-traffic news story, or a major event is approaching and you
 want to raise the impression capacity for a particular time period. This
 can be accomplished within yield analytics as well.
 
-
-
-
-
-## Seasonal Models
+## Seasonal models
 
 When you know that you are going to have seasonal fluctuations in
 traffic, you can represent these changes within yield analytics.
@@ -151,22 +125,10 @@ you can adjust it to what you know will be an accurate representation of
 the amount of impressions that are going to occur on a particular site
 or in a specific area.
 
+> [!NOTE]
+> The importance of manual adjustments and seasonal models (see above) is if you are a seller, you are selling on a volume (impression) basis. You want to ensure that you are accurately selling what is available. You do not want to over or undersell. These two features allow the Sales team to pull as accurate numbers as possible - based on true, complete data.
 
-
-<b>Note:</b> The importance of manual
-adjustments and seasonal models (see above) is if you are a seller, you
-are selling on a volume (impression) basis. You want to ensure that you
-are accurately selling what is available. You do not want to over or
-undersell. These two features allow the Sales team to pull as accurate
-numbers as possible - based on true, complete data.
-
-
-
-
-
-
-
-## Spike Mitigation 
+## Spike mitigation 
 
 When you know you are going to have “one-time event” that will bring an
 abundance of traffic to your site, you are able to alert the ad server.
@@ -183,25 +145,16 @@ sell. They are not going to oversell based on that one-time spike, now
 that yield analytics has applied the spike mitigation – they will be
 able to sell the correct amount.
 
-
-
-
-
-## Calendar View
+## Calendar view
 
 When you are booking sponsorships, and you are trying to determine where
 there is availability for a specific product, you can look at the
 calendar view. This is going to show you what is available (color code =
 green), and what is not (color code = red).
-
 In an ad server, you have to look day-by-day to try to determine this
 information.
 
-
-
-
-
-## Bulk Queries
+## Bulk queries
 
 If a query is made within yield analytics that involves thousands of
 line items, it will typically take the system a few minutes to analyze
@@ -209,18 +162,8 @@ and process all that data. You have the ability to save the findings in
 a bulk query folder. This allows you to continue working while the
 system is generating the query result.
 
-
-
-<b>Note:</b> Yield Analytics only processes
-once per day, because of how large the log file is. It is impractical to
-do it more than that, because yield analyzes every single impression in
-the system.
-
-
-
-
-
-
+> [!NOTE]
+> Yield Analytics only processes once per day, because of how large the log file is. It is impractical to do it more than that, because yield analyzes every single impression in the system.
 
 ## Forecasting
 
@@ -231,11 +174,7 @@ includes:
 - Understanding various ways that impressions can be consumed
 - Availability for custom and pre-defined products
 
-
-
-
-
-## Delivery Management
+## Delivery management
 
 Delivery management incudes everything that occurs post-sale. Yield
 Analytics emulates ad server delivery to understand under-delivery risk.
@@ -243,11 +182,7 @@ We are analyzing campaign contention, to better forecast what ads are
 most likely to serve, which line has a higher priority, and various ways
 to optimize revenue.
 
-
-
-
-
-## Pricing Analysis
+## Pricing analysis
 
 Pricing analysis is where clients get some of the biggest value from
 yield analytics. With this information, you can potentially uncover
@@ -259,20 +194,12 @@ looking historically at:
 - Pricing discrepancies
 - Yield Analytics increase potential for specific products
 
-
-
-
-
-## KPI Reporting (Key Performance Indicators)
+## KPI reporting (Key performance indicators)
 
 Since yield analytics is merging data across many different platforms,
 we make combined insights across an array of dimensions.
 
-
-
-
-
-## Programmatic Management
+## Programmatic management
 
 If you are integrated with different SSPs, yield analytics can pull that
 information into our system. We can determine where there are high
@@ -283,31 +210,19 @@ programmatic channels.
 Yield Analytics functionality and the resulting gained information
 benefit many sectors. Included are:
 
-
-
-
-
-## Sales
+**Sales**
 
 Sales is going to look through ways to drive revenue through client
 solutions. They are building out Sales plans, and receiving RFPs from
 the clients and responding back to them. They also manage the client
 relationship.
 
-
-
-
-
-## Ad Ops
+**Ad ops**
 
 Ad Ops teams ensure all that revenue gets delivered. They also implement
 client plans, and solve technical issues on a basic level.
 
-
-
-
-
-## Yield Analytics Management
+## Yield analytics management
 
 This is the primary team in the workflow. The yield analytics management
 responsibilities include:
@@ -318,20 +233,12 @@ responsibilities include:
 - Prioritizing campaign delivery
 - Ownership of KPI reporting
 
-
-
-
-
 ## Finance
 
 Even though most clients use an order management system, yield analytics
 has the ability to manage your revenue, handle fine invoicing, track bad
 debit, and other related functionality. This is sometimes accomplished
 through a third-party data system. (e.g.: Adjuster)
-
-
-
-
 
 ## Management
 
@@ -366,29 +273,14 @@ When you are running reports you typically want to filter to certain
 product types, based on what you are looking for. There are three
 different types of products, which are described below.
 
-
-
-
-
-## Rate Card
+## Rate card
 
 The Rate Card Product is something that is frequently sold by the sales
 team that represents the product catalog. This may have a rate card
 price associated with it.
 
-
-
-<b>Note:</b> If the client has an order
-management system integrated with yield analytics, that information
-needs to get pushed over from the order management system to our system.
-If they do not have an order management system, they can create all the
-Rate Card Products within yield analytics.
-
-
-
-
-
-
+> [!NOTE]
+> If the client has an order management system integrated with yield analytics, that information needs to get pushed over from the order management system to our system. If they do not have an order management system, they can create all the Rate Card Products within yield analytics.
 
 ## Reporting
 
@@ -403,18 +295,8 @@ information and reflect it in the reports. Some examples are:
 - Compare Mobile app vs. Mobile web
 - All Mobile products
 
-
-
-<b>Note:</b> When the client is first
-on-boarded, a yield analytics representative will walk them through the
-process of how to create a product, and offer some ideas of different
-products that they can create.
-
-
-
-
-
-
+> [!NOTE]
+> When the client is first on-boarded, a yield analytics representative will walk them through the process of how to create a product, and offer some ideas of different products that they can create.
 
 ## Custom
 
@@ -424,31 +306,17 @@ not commonly sold. Custom Products are mainly used as a convenience if
 you would like to access specific information on a specific, exact
 product.
 
-
-
-<b>Note:</b> Yield Analytics encourages the
-client to create a substantial amount of products when they are first
-on-boarded. This allows them to begin gathering historical data from the
-outset.
-
-
+> [!NOTE]
+> Yield Analytics encourages the client to create a substantial amount of products when they are first on-boarded. This allows them to begin gathering historical data from the outset.
 
 In yield analytics, revenue is broken out two different ways: contracted
 and earned. Impressions are broken out three different ways: contracted,
 scheduled, and consumed. Below is a brief explanation of each type of
 impression.
 
-
-
-
-
 ## Contracted
 
 Contracted is anything that comes from the order management system.
-
-
-
-
 
 ## Scheduled
 
@@ -458,17 +326,8 @@ There are clients who have an order management system who will
 incorporate a “buffer” of scheduled impressions to ensure they deliver
 in full.
 
-
-
-<b>Note:</b> If a client doesn’t have an order
-management system, (they just have an ad server) - contracted and
-scheduled will always be the exact same number.
-
-
-
-
-
-
+> [!NOTE]
+> If a client doesn’t have an order management system, (they just have an ad server) - contracted and scheduled will always be the exact same number.
 
 ## Consumed
 
@@ -486,11 +345,7 @@ those 900 thousand impressions, were those ads actually targeted to that
 specific product, or did that product just have an abundance of
 capacity?
 
-
-
-
-
-## Direct Consumption
+## Direct consumption
 
 Direct consumption is very straightforward. On the order line, the item
 is targeted and served in the exact same location.           
@@ -502,11 +357,7 @@ Those ads are appearing on the News 300x250 homepage. Every time an ad
 would serve, that would be considered direct consumption. If you bought
 this particular product, the ad is serving directly on that product. 
 
-
-
-
-
-## Contained Consumption
+## Contained consumption
 
 Contained consumption correlates to direct consumption. Every site has a
 hierarchy. If you are a newspaper, for example, you are going to have
@@ -523,11 +374,7 @@ show up as a contained consumption. It is not directly targeting news,
 but it is targeting a subsection that is still considered ‘related’ to
 that particular product.
 
-
-
-
-
-## Indirect Consumption
+## Indirect consumption
 
 The concept of indirect consumption is best shown by an example.
 
@@ -541,9 +388,3 @@ was in New York. This is called indirect consumption. It basically
 answers the question: Was that ad served and targeted to that particular
 product, or was there some other targeting characteristic on another
 line item that happened to serve there?
-
-
-
-
-
-

@@ -1,6 +1,7 @@
 ---
 Title : Line Item Settings
 Description : The Settings tab of the Line Item
+ms.date : 10/28/2023
 Details pane displays information for the selected line item including
 settings, essential metrics, and performance visualizations.
 ---
@@ -20,7 +21,7 @@ settings, essential metrics, and performance visualizations.
 
 
 
-Note: The Xandr
+<b>Note:</b> The Xandr
 Curate Monitoring feature is in **Open Beta** and currently only
 supports deal line items. It is subject to change without notice and is
 only available to select clients.
@@ -55,7 +56,7 @@ class="ph uicontrol">Roadblocking, Ad
 Size, Buyer(s), and <span
 class="ph uicontrol">Priority. For more information, see:
 <ul>
-<li><a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<li><a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a></li>
 </ul></td>
 </tr>
@@ -72,7 +73,7 @@ class="ph uicontrol">Currency, Budget
 Type, Total Lifetime, <span
 class="ph uicontrol">Pacing, and
 Billing Periods. For more information, see <a
-href="create-an-insertion-order.html" class="xref">Create an Insertion
+href="create-an-insertion-order.md" class="xref">Create an Insertion
 Order</a>.</td>
 </tr>
 <tr class="odd row">
@@ -84,7 +85,7 @@ headers="line-item-settings__table_sbc_pfz_jgb__entry__2">Details about
 revenue type, flight dates, and budget for the line item. For more
 information about flights and budgets in line items, see:
 <ul>
-<li><a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<li><a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a></li>
 </ul></td>
 </tr>
@@ -103,7 +104,7 @@ class="ph uicontrol">Segment, Page
 Properties, Demographics, and
 Viewability Threshold. For more
 information on line item targeting, see <a
-href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>.</td>
+href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>.</td>
 </tr>
 <tr class="odd row">
 <td class="entry"
@@ -115,7 +116,7 @@ Inventory and Brand Safety settings
 for the line item. For more information about inventory and brand safety
 in line items, see:
 <ul>
-<li><a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<li><a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a></li>
 </ul></td>
 </tr>
@@ -156,7 +157,7 @@ headers="line-item-settings__table_sbc_pfz_jgb__entry__2">Details about
 creative attributes for the line item. For more information about
 creative criteria in line items, see:
 <ul>
-<li><a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<li><a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a></li>
 </ul></td>
 </tr>
@@ -174,15 +175,14 @@ reference only and do not affect line item delivery.</td>
 
 
 
-<div id="line-item-settings__section_mqd_nh1_nmb"
 >
 
 ## Related Topics
 
-- <a href="monitor-line-items.html" class="xref"
+- <a href="monitor-line-items.md" class="xref"
   title="The Line Items screen displays Upcoming, In Progress, and Completed line items and metrics. It also lets you search for line items and related objects, apply filters, modify display columns, and download reports.">Monitor
   Line Items</a>
-- <a href="view-line-item-details-smw.html" class="xref"
+- <a href="view-line-item-details-smw.md" class="xref"
   title="The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance visualizations, and associated line item objects.">View
   Line Item Details</a>
 

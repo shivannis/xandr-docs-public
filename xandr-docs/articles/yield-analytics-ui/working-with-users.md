@@ -1,15 +1,13 @@
 ---
-Title : Working With Users
-Description : During implementation, yield analytics sets up an initial set of
+title : Working With Users
+description : Learn how yield analytics can be used to set usernames, passwords, permissions, add, edit, disable and delete user accounts.
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-usernames, passwords, and user permissions.
+
 ---
 
 
-# Working With Users
-
-
+# Working with users
 
 During implementation, yield analytics sets up an initial set of
 usernames, passwords, and user permissions.
@@ -21,29 +19,6 @@ administrative permissions). 
 You can then grant permissions to these users by adding them to the
 appropriate user groups.
 
+## Related topics
 
-## Related Topics
-
-
-
-- <a href="working-with-user-groups.md" class="xref">Working With User
-  Groups</a>
-
-
-
-- **[Reset a User's
-  Password](reset-a-user-s-password.md)**  
-- **[Disable a User](disable-a-user.md)**  
-- **[Delete a User](delete-a-user.md)**  
-- **[Add a New User](add-a-new-user.md)**  
-- **[Import Users](import-users.md)**  
-
-
-
-class="link">Administration Overview</a>
-
-
-
-
-
-
+- [Working With User Groups](working-with-user-groups.md)

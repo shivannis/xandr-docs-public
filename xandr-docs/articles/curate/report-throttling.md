@@ -1,6 +1,7 @@
 ---
 Title : Report Throttling
 Description : In order to ensure that our systems operate as smoothly as possible for
+ms.date : 10/28/2023
 all users, report requests are throttled at both the member and user
 levels. The limits and how they are applied are described below.
 ---
@@ -118,7 +119,7 @@ submitted their 7th report request within a 15 minute time span.
 
 Related Topics
 
-- <a href="general-reporting-concepts.html" class="xref">General Reporting
+- <a href="general-reporting-concepts.md" class="xref">General Reporting
   Concepts</a>
 
 

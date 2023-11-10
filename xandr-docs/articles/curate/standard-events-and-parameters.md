@@ -1,6 +1,7 @@
 ---
 Title : Standard Events and Parameters
 Description : The following table shows the standard events you can track using the
+ms.date : 10/28/2023
 universal pixel.
 ---
 
@@ -212,12 +213,11 @@ cart value.</td>
 
 
 
-<div id="universal-pixel-standard-events-and-parameters__section_mqd_nh1_nmb"
 >
 
 ## Related Topics
 
-- <a href="create-custom-events-and-parameters.html" class="xref"
+- <a href="create-custom-events-and-parameters.md" class="xref"
   title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
   Custom Events and Parameters</a>
 

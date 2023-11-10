@@ -1,60 +1,15 @@
 ---
-Title : Yield Analytics 8.55
-Description : <table class="table">
+title : Yield Analytics 8.55
+description : This page deals with table on Fixes/Improvements/Additions and Integrations Affected (Version 8.55).
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003f6e__entry__1" class="entry">Fixes, Improvements and
-Additions</th>
-<th id="ID-00003f6e__entry__2" class="entry">Integrations Affected</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00003f6e__entry__1">Upgrade to v202002 of
-the Google Ad Manager API. We were previously utilizing v201905.</td>
+
 ---
 
 
-# Yield Analytics 8.55
+# Yield analytics 8.55
 
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003f6e__entry__1" class="entry">Fixes, Improvements and
-Additions</th>
-<th id="ID-00003f6e__entry__2" class="entry">Integrations Affected</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00003f6e__entry__1">Upgrade to v202002 of
-the Google Ad Manager API. We were previously utilizing v201905.</td>
-<td class="entry" headers="ID-00003f6e__entry__2">Ad Server: Google Ad
-Manager</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00003f6e__entry__1">Updated Currency
-Conversion Process - Following the deprecation of the Google Ad Manager
-Exchange Rate API Service, we will begin importing order line rate
-information into the network default currency, using exchange rates from
-the Xandr API's currency service.</td>
-<td class="entry" headers="ID-00003f6e__entry__2">Ad Server: Google Ad
-Manager</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-
+| Fixes, Improvements and Additions                                                                                                                                                                                                                                      | Integrations Affected        |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| Upgrade to v202002 of the Google Ad Manager API. We were previously utilizing v201905.                                                                                                                                                                                 | Ad Server: Google Ad Manager |
+| Updated Currency Conversion Process - Following the deprecation of the Google Ad Manager Exchange Rate API Service, we will begin importing order line rate information into the network default currency, using exchange rates from the Xandr API's currency service. | Ad Server: Google Ad Manager |

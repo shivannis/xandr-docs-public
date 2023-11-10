@@ -2,6 +2,7 @@
 title: iOS Mediation
 description: In this article, learn about iOS mediation and how to mediate an iOS app for the latest release.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS mediation

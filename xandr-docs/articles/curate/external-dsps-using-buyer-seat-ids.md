@@ -1,6 +1,7 @@
 ---
 Title : External DSPs Using Buyer Seat IDs
 Description : Not every buyer seat ID that you'll see when creating deals is currently
+ms.date : 10/28/2023
 eligible for deal creation. Before you create a custom deal with an
 ---
 
@@ -32,7 +33,7 @@ using the Xandr member ID.
 
 
 
-Note: External DSPs not identified in
+<b>Note:</b> External DSPs not identified in
 this table have not yet migrated to buyer seat IDs.
 
 
@@ -40,7 +41,7 @@ this table have not yet migrated to buyer seat IDs.
 
 
 For more information, see
-<a href="understanding-buyer-seat-ids.html" class="xref"
+<a href="understanding-buyer-seat-ids.md" class="xref"
 title="Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the buyers they manage, rather than using a Xandr member ID. If a DSP has implemented this feature, you can choose between member and seat IDs when creating a deal and reporting on buyers.">Understanding
 Buyer Seat IDs</a>.
 

@@ -1,6 +1,7 @@
 ---
 Title : Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
 Description : On the Partner Center screen, the
+ms.date : 10/28/2023
 **Default Settings** option allows you to establish default buyer
 eligibility, allowed payment types, and targeting access for all buyers.
 ---
@@ -16,7 +17,7 @@ eligibility, allowed payment types, and targeting access for all buyers.
 It is possible to override these settings for individual buyers.
 
 For details, see <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>.
 
@@ -48,7 +49,7 @@ banned in both places.
 For more information on the different options described in this section,
 see the Setting default buyer
 eligibility section within
-<a href="partner-center-screen-seller-view.html" class="xref">Setting
+<a href="partner-center-screen-seller-view.md" class="xref">Setting
 Buyer Defaults</a>.
 
 Set the default allowed payment types
@@ -72,7 +73,7 @@ they can target your inventory.
 For more information on the different targeting access options, see the
 Setting default targeting access
 section within
-<a href="partner-center-screen-seller-view.html" class="xref">Setting
+<a href="partner-center-screen-seller-view.md" class="xref">Setting
 Buyer Defaults</a>.
 
 For **Categories (Custom)** there is the additional option to expose
@@ -93,9 +94,9 @@ updates to your settings.
 
 Related Topics
 
-- <a href="managing-relationships-with-buyers.html" class="xref">Managing
+- <a href="managing-relationships-with-buyers.md" class="xref">Managing
   Relationships with Buyers</a>
-- <a href="partner-center-screen-seller-view.html" class="xref">Partner
+- <a href="partner-center-screen-seller-view.md" class="xref">Partner
   Center Screen - Seller View</a>
 
 

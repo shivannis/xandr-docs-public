@@ -1,6 +1,7 @@
 ---
 Title : Universal Pixel Object Limits
 Description : There are limits for how many audiences, conversions, custom events, and
+ms.date : 10/28/2023
 parameters you can create, as well as a data size limit for information
 transmitted by the parameters.
 ---
@@ -82,10 +83,9 @@ parameters</strong></td>
 <span class="table--title-label">Table 2.
 <span class="title">Request Limits
 
-<div id="universal-pixel-object-limits__note_ywk_zqc_rsb"
 
 
-Note: If your application ID is longer
+<b>Note:</b> If your application ID is longer
 than 200 characters, the request will be processed, but the ID will be
 truncated. Only the last 200 characters will be kept.
 

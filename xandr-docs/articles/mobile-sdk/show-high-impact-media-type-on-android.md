@@ -2,6 +2,7 @@
 title : Show High Impact Media Type on Android
 description : This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 

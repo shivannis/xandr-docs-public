@@ -1,6 +1,7 @@
 ---
 Title : Negotiate Deals with Buyers
 Description : Xandr sellers can negotiate custom deals to
+ms.date : 10/28/2023
 offer buyers a variety of special rate and inventory access options.
 ---
 
@@ -27,7 +28,7 @@ You can negotiate deals with buyers on the Xandr
 platform from the Partner Center.
 
 For more information on communicating with buyers and viewing deals, see
-the <a href="partnership-details-screen-seller-view.html"
+the <a href="partnership-details-screen-seller-view.md"
 class="xref">Partnership Details Screen - Seller View</a>.
 
 Deals with External Buyers (Bidders)
@@ -40,7 +41,7 @@ Curate.
 
 
 
-Note: **If you have not seen delivery
+<b>Note:</b> **If you have not seen delivery
 from this bidder previously**, be sure to ask the buyer to make sure
 that the bidder has you (the seller) in an allowlist in their bidder
 profile. This is an important step: if the bidder does not receive
@@ -52,7 +53,7 @@ negotiated deal.
 Step 2. Create a deal in Curate
 
 Create a curated deal line item (see
-<a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a>). Once the deal has been set up in
 Curate, contact the buyer and give them the deal
 ID.
@@ -64,7 +65,7 @@ bidder target the deal.
 
 
 
-Important: When working with buyers
+<b>Important:</b> When working with buyers
 using Doubleclick Bid Manager, you can direct them to Doubleclick's
 documentation
 (<a href="https://support.google.com/bidmanager/answer/3423616?hl=en"
@@ -76,11 +77,11 @@ for information on entering a deal ID into Bid Manager.
 
 Related Topics
 
-- <a href="selling-curated-deals.html" class="xref">Selling Curated
+- <a href="selling-curated-deals.md" class="xref">Selling Curated
   Deals</a>
-- <a href="deal-auction-mechanics.html" class="xref">Deal Auction
+- <a href="deal-auction-mechanics.md" class="xref">Deal Auction
   Mechanics</a>
-- <a href="partnership-details-screen-seller-view.html"
+- <a href="partnership-details-screen-seller-view.md"
   class="xref">Partnership Details Screen - Seller View</a>
 
 

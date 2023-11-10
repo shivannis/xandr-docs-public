@@ -2,6 +2,7 @@
 title: API for Exiting Banner Video from Fullscreen
 description: In this article, learn about the API used to exit from a video ad in full screen mode.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # API for exiting banner video from fullscreen

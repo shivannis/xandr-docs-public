@@ -5,7 +5,7 @@ ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
-# Set up AST tags for native ad types
+# Set up seller tags for native ad types
 
 Xandr's seller tag (AST) is an asynchronous java script tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body. For native ads, there are different methods available to help render the ad on the page.
 
@@ -71,7 +71,7 @@ The primary mechanism this approach uses are the AST event handlers, primarily t
 The code presented in the example below is just a basic approach to reference the native assets from the returning native bid and to render the combined HTML into a predesignated spot on the page. There are many ways this code can be written by the site developers as to fit the needs of the creative and the context of the page.
 
 > [!IMPORTANT]
-> For this approach, there are two AST functions [fireImpressionTrackers](./fire-impression-trackers.md) and [attachClickTrackers](./attach-click-trackers.md) are included within rendering function. As their names suggest, both functions play important roles to load the impression and click tracking URLs for the creative. If they are not included, the creatives will not track, and it will impact the performance.
+> For this approach, there are two AST functions [fireImpressionTrackers](./fire-impression-trackers.md) and [attachClickTrackers](./attach-click-trackers.md) that are included within rendering function. As their names suggest, both functions play important roles to load the impression and click tracking URLs for the creative. If they are not included, the creatives will not track, and it will impact the performance.
 
 If you are using this type of set up for the first time, please allow some time to thoroughly test the code in different environments, browsers, etc. to ensure all pieces are working as expected.
 

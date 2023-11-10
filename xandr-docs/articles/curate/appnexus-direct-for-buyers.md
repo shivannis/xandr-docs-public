@@ -1,6 +1,7 @@
 ---
 Title : Xandr Direct for Buyers
 Description : This page explains what Xandr Direct is and
+ms.date : 10/28/2023
 other helpful details for using it.
 ---
 
@@ -56,7 +57,7 @@ Direct, including many of the largest publishers available on
 Xandr, in the **Partner Center** -- look for
 "Xandr Direct" under the
 **Seller Group** column. See
-<a href="partner-center-screen-buyer-view.html" class="xref">Partner
+<a href="partner-center-screen-buyer-view.md" class="xref">Partner
 Center Screen</a> for more information.
 
 

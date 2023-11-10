@@ -1,6 +1,7 @@
 ---
 Title : Set Up Audiences with Universal Pixel
 Description : You can set up audiences for your universal pixel using rules and
+ms.date : 10/28/2023
 conditions, then target the audience segments in the
 Audience and Location Targeting
 settings of your line item.
@@ -16,7 +17,6 @@ conditions, then target the audience segments in the
 Audience and Location Targeting
 settings of your line item.
 
-<div id="set-up-audiences__context_p4m_vzp_rsb"
 class="section section context">
 
 To configure an audience:
@@ -33,7 +33,7 @@ To configure an audience:
     
 
     If no pixels are defined, use the setup instructions in
-    <a href="universal-pixel-basic-implementation.html" class="xref"
+    <a href="universal-pixel-basic-implementation.md" class="xref"
     title="With the most basic implementation of the universal pixel, you can track page views and identify the URLs driving them. Setting up the basic implementation requires you to set up the Universal Pixel object in Curate, deploy the script code containing the pixel ID on your website, and check your pixel activity on the Activity tab in the Universal Pixels page.">Universal
     Pixel Basic Implementation</a> to create one.
 
@@ -88,13 +88,13 @@ To configure an audience:
 
 Related Topics
 
-- <a href="set-up-conversions-with-universal-pixel.html" class="xref"
+- <a href="set-up-conversions-with-universal-pixel.md" class="xref"
   title="You can set up conversions for your universal pixel using rules and conditions, then track conversion activity using Curate reporting.">Set
   Up Conversions with Universal Pixel</a>
-- <a href="universal-pixel-rule-conditions.html" class="xref">Universal
+- <a href="universal-pixel-rule-conditions.md" class="xref">Universal
   Pixel Rule Conditions</a>
-- <a href="set-up-segment-targeting-on-a-line-item.html"
-  class="xref">set-up-segment-targeting-on-a-line-item.html</a>
+- <a href="set-up-segment-targeting-on-a-line-item.md"
+  class="xref">set-up-segment-targeting-on-a-line-item.md</a>
 
 
 

@@ -2,6 +2,7 @@
 title: iOS SDK Integration Instructions
 description: In this article, explore the detailed step-by-step iOS SDK integration instructions and their requirements.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS SDK integration instructions

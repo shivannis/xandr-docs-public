@@ -1,12 +1,13 @@
 ---
-Title : June 27, 2023: New Advertiser and Insertion Order screens in the Xandr Curate UI
+Title : June 27, 2023: New Advertiser and Insertion Order screens in the Microsoft Curate UI
 Description : With new screens accessible from the `Package` menu, curators can now
+ms.date : 10/28/2023
 manage and keep an eye on their advertisers and insertion orders more
 easily. While a new settings panel enables you to easily examine how
 ---
 
 
-# June 27, 2023: New Advertiser and Insertion Order screens in the Xandr Curate UI
+# June 27, 2023: New Advertiser and Insertion Order screens in the Microsoft Curate UI
 
 
 

@@ -1,15 +1,13 @@
 ---
-Title : Yield Analytics 7.2
-Description : Please note that we have extended the amount of time that the old
+title : Yield Analytics 7.2
+description : Learn about enhancements to the Reporting Screen. 
 ms.date : 10/28/2023
 ms.custom : yield-analytics-ui
-Reporting Screen would be available. We added an additional release
+
 ---
 
 
-# Yield Analytics 7.2
-
-
+# Yield analytics 7.2
 
 Please note that we have extended the amount of time that the old
 Reporting Screen would be available. We added an additional release
@@ -27,14 +25,3 @@ highlights for this release:
 - Increase the “product select” box from 250 to 2,000.
 - Adjusted the logic for select all - to select all available data,
   instead of all visible data.
-
-
-
-
-<a href="release-notes.md" class="link">Release Notes</a>
-
-
-
-
-
-

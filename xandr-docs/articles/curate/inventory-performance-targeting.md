@@ -1,6 +1,7 @@
 ---
 Title : Inventory Performance Targeting
 Description : You can target specific pools of inventory based on historical
+ms.date : 10/28/2023
 performance. By using targeting criteria, you can specify the desired
 ---
 
@@ -24,7 +25,7 @@ To target inventory based on performance your options are:
   item.
   
 
-  Note: Video completion rate targeting
+  <b>Note:</b> Video completion rate targeting
   should only be used on VAST-based video inventory (not in-banner
   players).
 
@@ -39,12 +40,12 @@ To target inventory based on performance your options are:
   percentage of impressions that were viewable out of the total number
   of impressions measured for viewability. (Viewed Imps / View Measured
   Imps). For more information regarding viewability measurements, see
-  <a href="reporting-on-viewability.html" class="xref">Reporting on
+  <a href="reporting-on-viewability.md" class="xref">Reporting on
   Viewability</a>.
 
 
 
-Note: Viewability rate targeting is
+<b>Note:</b> Viewability rate targeting is
 available only to some members at present. We are working hard to make
 it available to everyone!
 
@@ -84,7 +85,7 @@ towards 1% CTR, and to achieve 25% margin. In this case, you should:
 
 
 
-Note: Using Video Completion Rate
+<b>Note:</b> Using Video Completion Rate
 targeting on deals could lead to under-delivery. We suggest that you
 don't use Video Completion Rate targeting until your deal-targeted
 line item has enough experience learning about
@@ -94,7 +95,7 @@ the predicted completion rate.
 
 Related Topics
 
-- <a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
+- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
 
 
 

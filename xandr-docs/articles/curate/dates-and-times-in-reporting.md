@@ -1,6 +1,7 @@
 ---
 Title : Dates and Times in Reporting
 Description : This page explains how our reporting system handles time and date
+ms.date : 10/28/2023
 considerations such as time zones and daylight savings time. It also
 ---
 
@@ -34,7 +35,7 @@ Member Time Zones
 
 To change your network member time zone, you must contact
 Xandr support or use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/member-service.html"
+href="xandr-api/member-service.md"
 class="xref" target="_blank">Member Service API</a>. Please note that
 changing your member's time zone will **not** change the time zone for
 existing objects (e.g., line items). However, newly created objects will
@@ -45,7 +46,7 @@ To change the time zone for all existing objects in your account, change
 the time zone of each advertiser. This can be used to propagate a change
 to the member time zone to all of that advertiser's child objects. For
 instructions on how to change an advertiser's time zone, see
-<a href="create-an-advertiser.html" class="xref">Create an
+<a href="create-an-advertiser.md" class="xref">Create an
 Advertiser</a>.
 
 Advertiser Time Zones
@@ -53,7 +54,7 @@ Advertiser Time Zones
 Advertisers inherit the time zone of the member when they are first
 created, unless a different time zone is selected when they are created.
 For instructions on how to set an advertiser's time zone, see
-<a href="create-an-advertiser.html" class="xref">Create an
+<a href="create-an-advertiser.md" class="xref">Create an
 Advertiser</a>.
 
 When you change an advertiser's time zone, you can choose to apply the
@@ -75,7 +76,7 @@ Daylight Savings and Reporting
 
 
 
-Important: Certain regions have
+<b>Important:</b> Certain regions have
 different naming conventions for annual time changes. For simplicity, we
 will refer to any such changes as Daylight Saving Time.
 
@@ -101,7 +102,7 @@ in a single report).
 
 
 
-Note: Stats will switch to EST at the
+<b>Note:</b> Stats will switch to EST at the
 time of the change (November 4, 02:00 EDT), but changes may take up to a
 few hours to propagate. The required processing time is likely to result
 in a temporary discrepancy between Stats and ET reporting.
@@ -146,7 +147,7 @@ reports as 05:00 UTC - 04:59 UTC.
 
 
 
-Note: To learn more about Daylight
+<b>Note:</b> To learn more about Daylight
 Saving Time and its impact on your region, you can read more on the
 <a href="http://www.timeanddate.com/time/dst/" class="xref"
 target="_blank">Time and Date site</a>.
@@ -155,12 +156,12 @@ target="_blank">Time and Date site</a>.
 
 Related Topics
 
-- <a href="availability-of-reporting-data.html" class="xref">Availability
+- <a href="availability-of-reporting-data.md" class="xref">Availability
   of Reporting Data</a>
-- <a href="dimensions-metrics-filtering-and-grouping.html"
+- <a href="dimensions-metrics-filtering-and-grouping.md"
   class="xref">Dimensions, Metrics, Filtering, and Grouping</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/api-timezones.html"
+  href="xandr-api/api-timezones.md"
   class="xref" target="_blank">API Timezones</a>
 
 

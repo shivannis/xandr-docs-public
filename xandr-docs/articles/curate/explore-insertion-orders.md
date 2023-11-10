@@ -1,6 +1,7 @@
 ---
 Title : Explore Insertion Orders
 Description : The Insertion Orders screen shows you
+ms.date : 10/28/2023
 essential metrics about all insertion orders under a specific
 advertiser, provides quick access to each insertion order's details, and
 reporting options.
@@ -62,7 +63,7 @@ Orders screen.
 
 Note that these stats may not match the data from standard reporting
 exactly for technical reasons. For more information, see
-<a href="availability-of-reporting-data.html" class="xref">Availability
+<a href="availability-of-reporting-data.md" class="xref">Availability
 of Reporting Data</a>.
 
 
@@ -212,7 +213,7 @@ View Insertion Order Details
 To view advanced details about an insertion order, click the insertion
 order's name.
 
-See <a href="view-insertion-order-details.html" class="xref"
+See <a href="view-insertion-order-details.md" class="xref"
 title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
 Insertion Order Details</a> for more information.
 
@@ -234,12 +235,12 @@ report on and click Run Report.
 
 Related Topics
 
-- <a href="view-insertion-order-details.html" class="xref"
+- <a href="view-insertion-order-details.md" class="xref"
   title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
   Insertion Order Details</a>
-- <a href="create-an-insertion-order.html" class="xref">Create an
+- <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>
-- <a href="update-insertion-orders.html" class="xref">Update Insertion
+- <a href="update-insertion-orders.md" class="xref">Update Insertion
   Orders</a>
 
 

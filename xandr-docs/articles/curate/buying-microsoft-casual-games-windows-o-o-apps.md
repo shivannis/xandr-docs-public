@@ -1,6 +1,7 @@
 ---
 Title : Buying Microsoft Casual Games (Windows O&O Apps)
 Description : ## Inventory Overview
+ms.date : 10/28/2023
 Microsoft Casual Games (i.e., Microsoft's Owned and Operated apps)
 ---
 
@@ -37,16 +38,16 @@ languages.
 
 **Home screen** - Below the fold, at the bottom of the first menu screen
 
-<img src="../images/buying-microsoft-casual-games/solitairehome.png"
-class="image" />
+![Solitaire Home](media/solitairehome.png)
+
 
 **Sub-screens** - Above the fold, right side of sub menu screens
 
-<img src="../images/buying-microsoft-casual-games/solitairesub.png"
-class="image" />
+![Solitaire Sub](media/solitairesub.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 **Microsoft Minesweeper**
@@ -59,17 +60,17 @@ Adventure mode, Microsoft Minesweeper is better than ever.
 **Game Play and Game Completion Screens** - Above the fold, right side
 of game screen
 
-<img src="../images/buying-microsoft-casual-games/minesweepergame.png"
-class="image" />
+![Minesweeper Game](media/minesweepergame.png)
+
 
 **Daily Challenge Menu Screens** - Above the fold, right side of menu
 screens
 
-<img src="../images/buying-microsoft-casual-games/minesweeperdaily.png"
-class="image" />
+![Minesweeper Daily](media/minesweeperdaily.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 **Microsoft Jigsaw**
@@ -83,16 +84,16 @@ entertainment.
 
 **Game Play and Game Completion Screens** - Above the fold, bottom right
 
-<img src="../images/buying-microsoft-casual-games/jigsawgame.png"
-class="image" />
+![Jigsawgame](media/jigsawgame.png)
+
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-<img src="../images/buying-microsoft-casual-games/jigsawmenu.png"
-class="image" />
+![Jigsaw Menu](media/jigsawmenu.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 **Microsoft Sudoku**
@@ -104,16 +105,16 @@ hundreds of brain training puzzles for players of all ages.
 
 **Game Play and Game Completion Screens** - Above the fold, bottom left
 
-<img src="../images/buying-microsoft-casual-games/sudokugame.png"
-class="image" />
+![Sudokugame](media/sudokugame.png)
+
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
-<img src="../images/buying-microsoft-casual-games/sudokumenu.png"
-class="image" />
+![Sudoku Menu](media/sudokumenu.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 **Microsoft Mahjong**
@@ -124,16 +125,16 @@ expect.
 
 **Menu Screens** - Below the fold, right side of menu screens
 
-<img src="../images/buying-microsoft-casual-games/mahjongmenu.png"
-class="image" />
+![Mahjong Menu](media/mahjongmenu.png)
+
 
 **Daily Challenge Screens** - Above the fold, right side of screens
 
-<img src="../images/buying-microsoft-casual-games/mahjongdaily.png"
-class="image" />
+![Mahjong Daily](media/mahjondaily.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 **Microsoft Treasure Hunt**
@@ -144,17 +145,17 @@ experience.
 
 **Main Menu Screen** - Below the fold, right side of screen
 
-<img src="../images/buying-microsoft-casual-games/treasuremain.png"
-class="image" />
+![Treasure Main](media/treasuremain.png)
+
 
 **Game Play and Game Completion Screens** - Above the fold, right side
 of screen
 
-<img src="../images/buying-microsoft-casual-games/treasuregame.png"
-class="image" />
+![Treasure Game](media/treasurgame.png)
+
 
 For more information, see <a
-href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__ID-0000776f"
+href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__ID-0000776f"
 class="xref">Formats and Specifications</a>.
 
 
@@ -174,7 +175,6 @@ class="xref">Formats and Specifications</a>.
 
 
 
-<div id="ID-00007701__ID-0000776f" >
 
 ## Formats and Specifications
 
@@ -250,7 +250,7 @@ headers="ID-00007701__ID-0000776f__entry__6">X</td>
 <td colspan="6" class="entry colsep-1 rowsep-1"
 headers="ID-00007701__ID-0000776f__entry__1 ID-00007701__ID-0000776f__entry__2 ID-00007701__ID-0000776f__entry__3 ID-00007701__ID-0000776f__entry__4 ID-00007701__ID-0000776f__entry__5 ID-00007701__ID-0000776f__entry__6"><div
 id="ID-00007701__note_ydn_2ms_qwb" class="note note_note">
-Note: 728x90 only available on Windows
+<b>Note:</b> 728x90 only available on Windows
 10
 </td>
 </tr>
@@ -383,7 +383,7 @@ headers="ID-00007701__ID-0000776f__entry__6"></td>
 
 
 
-Note: SSL creative required for all
+<b>Note:</b> SSL creative required for all
 Microsoft Casual Games.
 
 
@@ -399,17 +399,17 @@ Microsoft Casual Games.
 There are three different ways you can target Microsoft Casual Games:
 
 - <a
-  href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__TargetMSCasGamesCampSetup"
+  href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__TargetMSCasGamesCampSetup"
   class="xref">Target Microsoft Casual Games in Campaign Setup</a>
 - <a
-  href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__TargetPack"
+  href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__TargetPack"
   class="xref">Target Packages</a>
 - <a
-  href="buying-microsoft-casual-games-windows-o-o-apps.html#ID-00007701__TargetMSCasGameAPI"
+  href="buying-microsoft-casual-games-windows-o-o-apps.md#ID-00007701__TargetMSCasGameAPI"
   class="xref">Target Microsoft Casual Games through the API</a>
 
 For information on general inventory targeting, see <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/buying-microsoft-inventory.html"
+href="invest_invest-standard/buying-microsoft-inventory.md"
 class="xref" target="_blank">Buying Microsoft Inventory</a>.
 
 **Target Microsoft Casual Games in Campaign Setup**
@@ -450,7 +450,7 @@ Line Item:
 **Target Packages**
 
 To target Microsoft Casual Games inventory, use the
-<a href="get-deals-from-seller-packages.html" class="xref">Package
+<a href="get-deals-from-seller-packages.md" class="xref">Package
 Marketplace</a>:
 
 1.  In the **Package Marketplace**, search for the package by ID or
@@ -534,7 +534,7 @@ Marketplace</a>:
 **Target Microsoft Casual Games through the API**
 
 You can target Microsoft Casual Games through the API on the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/profile-service.html"
+href="xandr-api/profile-service.md"
 class="xref" target="_blank">Profile Service</a>. To target placements
 on specific games, use the IDs below in the `site_targets` array.
 
@@ -612,7 +612,7 @@ headers="ID-00007701__entry__90">Microsoft Ultimate Word Games</td>
 </table>
 
 For more information, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/profile-service.html"
+href="xandr-api/profile-service.md"
 class="xref" target="_blank">Profile Service</a>.
 
 **More Questions?**

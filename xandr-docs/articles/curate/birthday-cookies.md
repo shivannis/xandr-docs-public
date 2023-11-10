@@ -1,6 +1,7 @@
 ---
 Title : Birthday Cookies
 Description : The first time a user without one of our cookie visits a website where
+ms.date : 10/28/2023
 we serve ads, we set a cookie. We also add that user to the
 ---
 
@@ -59,9 +60,9 @@ Here are two buy-side use cases for the birthday cookie:
 
 
 
-Tip: For instructions on how to
+<b>Tip:</b> For instructions on how to
 implement segment targeting, see
-<a href="segment-targeting.html" class="xref"
+<a href="segment-targeting.md" class="xref"
 title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
 Targeting</a>.
 
@@ -69,10 +70,10 @@ Targeting</a>.
 
 Related Topics
 
-- <a href="reporting-guide.html" class="xref">Reporting Guide</a>
-- <a href="working-with-segments.html" class="xref">Working with
+- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
+- <a href="working-with-segments.md" class="xref">Working with
   Segments</a>
-- <a href="segment-targeting.html" class="xref"
+- <a href="segment-targeting.md" class="xref"
   title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
   Targeting</a>
 

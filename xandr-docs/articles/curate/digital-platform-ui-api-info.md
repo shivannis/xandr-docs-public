@@ -1,6 +1,7 @@
 ---
 Title : Curate API
-Description : Xandr Curate is built on a robust API that is
+Description : Microsoft Curate is built on a robust API that is
+ms.date : 10/28/2023
 available to customers. You can use this API to automate certain tasks
 ---
 
@@ -9,7 +10,7 @@ available to customers. You can use this API to automate certain tasks
 
 
 
-Xandr Curate is built on a robust API that is
+Microsoft Curate is built on a robust API that is
 available to customers. You can use this API to automate certain tasks
 and reporting.
 
@@ -17,18 +18,18 @@ Xandr has one API that is shared across all
 digital platform products. Refer to the following resources to learn
 more about the API and the services that are available.
 
-- <a href="https://docs.xandr.com/bundle/xandr-api/page/welcome.html"
+- <a href="xandr-api/welcome.md"
   class="xref" target="_blank">Digital Platform API</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/api-getting-started.html"
+  href="xandr-api/api-getting-started.md"
   class="xref" target="_blank">Getting Started with the API</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/buy-side-setup-with-the-augmented-line-item.html"
+  href="xandr-api/buy-side-setup-with-the-augmented-line-item.md"
   class="xref" target="_blank">Buy-Side Setup Guide</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/sell-side-setup.html"
+  href="xandr-api/sell-side-setup.md"
   class="xref" target="_blank">Sell-Side Setup Guide</a>
-- <a href="https://docs.xandr.com/bundle/xandr-api/page/reference.html"
+- <a href="xandr-api/reference.md"
   class="xref" target="_blank">Reference Guide (Services)</a>
 
 

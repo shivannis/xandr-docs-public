@@ -2,6 +2,7 @@
 title: Ad Ops - Set Up MRAID Full Screen Interstitials
 description: In this article, find Ad Ops setup instructions for serving MRAID full screen interstitials on Xandr mobile SDKs.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Ad ops - Set up MRAID full screen interstitials

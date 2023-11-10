@@ -1,6 +1,7 @@
 ---
 Title : Device Type Targeting
 Description : To access device type targeting options, expand the
+ms.date : 10/28/2023
 Targeting section of the line item
 setup. By default, your line items will target the following physical
 ---
@@ -14,10 +15,10 @@ To access device type targeting options, expand the
 Targeting section of the line item
 setup. By default, your line items will target the following physical
 device types, which correspond to `device_type_targets` in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/profile-service.html#ProfileService-DeviceTypeTargets"
+href="xandr-api/profile-service.md#ProfileService-DeviceTypeTargets"
 class="xref" target="_blank">Profile Object</a> associated to the line
 item, as well as to the Device Type dimension in <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/device-analytics-report.html"
+href="invest_invest-standard/device-analytics-report.md"
 class="xref" target="_blank">Device Analytics Reporting</a>.
 
 - **Desktops**
@@ -39,13 +40,11 @@ class="xref" target="_blank">Device Analytics Reporting</a>.
 
   to restrict the device types you are targeting, uncheck any device
   types you wish to exclude.
-  <div id="ID-00004ad8__p-f7f16480-a437-4618-9e9c-0b1fa74608f7"
   >
 
-  <div id="ID-00004ad8__note-854ba3e1-5f79-4d07-8932-ad5d8d38cba1"
   
 
-  Note:
+  <b>Note:</b>
   - **Connected Audio** is only available in Invest.
   - When targeting devices models
     Targeting
@@ -61,12 +60,12 @@ class="xref" target="_blank">Device Analytics Reporting</a>.
 
 Related Topic
 
-- <a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
-- <a href="create-an-insertion-order.html" class="xref">Create an
+- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
+- <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>
-- <a href="create-a-curated-deal-line-item.html" class="xref">Create a
+- <a href="create-a-curated-deal-line-item.md" class="xref">Create a
   Curated Deal Line Item</a>
-- <a href="object-hierarchy.html" class="xref">Object Hierarchy</a>
+- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
 
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Create an Advertiser
 Description : Creating an advertiser object is the first step before you can start
+ms.date : 10/28/2023
 running ad campaigns and serving creatives on behalf of an advertiser.
 ---
 
@@ -22,7 +23,7 @@ screen, where you define all relevant details for your advertiser.
 
 
 
-Tip: You can expand or collapse each
+<b>Tip:</b> You can expand or collapse each
 section of the screen. To expand or collapse all sections at once, click
 the Expand All or
 Collapse All link in the upper right.
@@ -49,7 +50,7 @@ basic details for the advertiser.
 - **Time Zone** - Select the advertiser's time zone.
   
 
-  Note: To apply a time zone change to
+  <b>Note:</b> To apply a time zone change to
   child objects, make sure the checkbox is selected. If it is not
   selected, the time zone change made to the advertiser will not apply
   to its child objects, resulting in a child object's budget being reset
@@ -62,7 +63,7 @@ basic details for the advertiser.
   new insertion orders and line items under the advertiser unless a
   different currency is set on the insertion order or line item level.
   For more information, see
-  <a href="currency-support.html" class="xref">Currency Support</a>.
+  <a href="currency-support.md" class="xref">Currency Support</a>.
 
 - **Political Advertising** - If you are releasing advertisements
   related to an election, ballot initiative, or political candidate in
@@ -87,16 +88,16 @@ basic details for the advertiser.
 
   You will be asked to specify more details about your political
   advertisements when you
-  <a href="create-an-insertion-order.html" class="xref">Create an
+  <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>. For more information about political advertising,
-  see <a href="political-advertising.html" class="xref">Political
+  see <a href="political-advertising.md" class="xref">Political
   Advertising</a>.
 
 Step 3. Create a Political Advertising Details Template (Optional)
 
 
 
-Note: The Political Advertising Details
+<b>Note:</b> The Political Advertising Details
 Template is only enabled when you have specified that you are running
 political advertising and that you would like to create a political
 advertising details template.
@@ -114,7 +115,7 @@ already been created.
 
 
 
-Tip: Templates are typically used when
+<b>Tip:</b> Templates are typically used when
 all or most of your political advertising is paid for by a single
 political organization.
 
@@ -136,7 +137,7 @@ that will or could serve in Washington State. If
 your political ad will not be served in any of those states, you may
 enter "N/A”. For more information on political
 advertising, see
-<a href="../snippets/../topics/political-advertising.html"
+<a href="../snippets/../topics/political-advertising.md"
 class="xref">Political Advertising</a>.
 
 We reserve the right to implement additional screening at any time.
@@ -297,10 +298,10 @@ enter any optional advanced settings that are useful.
     class="xref" target="_blank">Understanding Your Invoice</a>.
     
 
-    Tip: You may also choose to include
+    <b>Tip:</b> You may also choose to include
     a billing code on your insertion order-specific invoices. For more
     details, see
-    <a href="create-an-insertion-order.html" class="xref">Create an
+    <a href="create-an-insertion-order.md" class="xref">Create an
     Insertion Order</a>.
 
     
@@ -309,7 +310,7 @@ enter any optional advanced settings that are useful.
   submit a creative for Xandr audit, the audit
   team will validate and, when necessary, alter these settings.
 - **Exclusions** - for publishers using Curate's
-  <a href="https://docs.xandr.com/bundle/seller-tag/page/seller-tag.html"
+  <a href="seller-tag/seller-tag.md"
   class="xref" target="_blank">AST</a> - Managed publishers can conduct
   a single auction for multiple ad slots on a page. Competitive
   exclusions ensure that creatives from competitive brands (e.g., Coke
@@ -323,12 +324,12 @@ enter any optional advanced settings that are useful.
   Line Items). Insertion orders
   allow you to better represent your financial relationship with an
   advertiser. This check box must be selected if you want to use
-  <a href="working-with-insertion-orders.html" class="xref">Working with
+  <a href="working-with-insertion-orders.md" class="xref">Working with
   Insertion Orders</a>.
 
 
 
-Warning: Warning regarding preexisting
+<b>Warning:</b> Warning regarding preexisting
 line items
 
 If you select this option, and you have already created line items

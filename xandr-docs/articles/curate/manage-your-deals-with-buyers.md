@@ -1,6 +1,7 @@
 ---
 Title : Manage Your Deals with Buyers
-Description : Note: As of May 3, 2021, Imps Matched
+Description : <b>Note:</b> As of May 3, 2021, Imps Matched
+ms.date : 10/28/2023
 and Bid Requests will be randomly sampled at a rate of 10 percent. The
 ---
 
@@ -11,7 +12,7 @@ and Bid Requests will be randomly sampled at a rate of 10 percent. The
 
 
 
-Note: As of May 3, 2021, Imps Matched
+<b>Note:</b> As of May 3, 2021, Imps Matched
 and Bid Requests will be randomly sampled at a rate of 10 percent. The
 sampled values will be multiplied by 10 to give a reasonable estimate in
 all screens where these two metrics are reported. No other deal metrics
@@ -25,7 +26,7 @@ details, monitor each deal's health, trigger detailed reports, edit or
 cancel deals, and create new deals.
 
 You can also manage your deals with a specific buyer on the
-<a href="partnership-details-screen-buyer-view.html"
+<a href="partnership-details-screen-buyer-view.md"
 class="xref">Partnership Details Screen</a>.
 
 Getting to the Deals Screen
@@ -47,7 +48,7 @@ in the header when you hover over them are sortable.
   bids requested from the buyer.
   
 
-  Note: For deals with an on-platform
+  <b>Note:</b> For deals with an on-platform
   buyer, Bid Requests will equal
   Imps Matched. For deals with an
   external bidder, filtering due to the bidder's profile may reduce the
@@ -59,7 +60,7 @@ in the header when you hover over them are sortable.
   buyer bid.
   
 
-  Note: When the
+  <b>Note:</b> When the
   Xandr Impbus is doing the bidding for
   on-platform deals, all deals will be eligible for participation
   because they will have already passed quality and other eligibility
@@ -88,10 +89,10 @@ in the header when you hover over them are sortable.
     rejected.
     
 
-    Note: For more information on bid
+    <b>Note:</b> For more information on bid
     rejections, Impbus error codes, and actions buyers and sellers can
     take to resolve errors, see
-    <a href="understanding-bid-rejections.html" class="xref">Understanding
+    <a href="understanding-bid-rejections.md" class="xref">Understanding
     Bid Rejections</a>.
 
     
@@ -112,7 +113,7 @@ in the header when you hover over them are sortable.
     dates for the deal.
   - Type - The auction type. For more
     information on the different auction types, see
-    <a href="deal-auction-mechanics.html" class="xref">Deal Auction
+    <a href="deal-auction-mechanics.md" class="xref">Deal Auction
     Mechanics</a>.
   - Ask Price - The price, if any,
     associated with the deal. This is the minimum amount you must bid in
@@ -152,7 +153,7 @@ Creating a New Deal
 
 Click New to create a deal. For
 step-by-step instructions on creating a deal, see
-<a href="create-a-curated-deal-line-item.html" class="xref">Create a
+<a href="create-a-curated-deal-line-item.md" class="xref">Create a
 Curated Deal Line Item</a>.
 
 Duplicating a Deal
@@ -171,9 +172,9 @@ then click on the edit icon to make the deal editable.
 
 
 
-Warning: Campaigns targeting the deal
+<b>Warning:</b> Campaigns targeting the deal
 will be immediately affected by the changes you make. Use the Activity
-Stream on the <a href="partnership-details-screen-buyer-view.html"
+Stream on the <a href="partnership-details-screen-buyer-view.md"
 class="xref">Partnership Details Screen</a> to communicate with the
 buyer before making changes to the deal dates, auction type, inventory,
 segment, creative size, or brand.
@@ -193,9 +194,9 @@ Actions
 
 
 
-Warning: Campaigns targeting the deal
+<b>Warning:</b> Campaigns targeting the deal
 will stop serving when you cancel the deal. Use the Activity Stream on
-the <a href="partnership-details-screen-buyer-view.html"
+the <a href="partnership-details-screen-buyer-view.md"
 class="xref">Partnership Details Screen</a> to communicate with the
 buyer before canceling the deal.
 
@@ -237,7 +238,7 @@ deals you have as a buyer.
 
 Related Topics
 
-- <a href="partnership-details-screen-seller-view.html"
+- <a href="partnership-details-screen-seller-view.md"
   class="xref">Partnership Details Screen - Seller View</a>
 
 

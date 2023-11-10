@@ -1,6 +1,7 @@
 ---
 Title : Buying MSN Inventory
 Description : Inventory Overview
+ms.date : 10/28/2023
 MSN is Microsoft's portal, inspiring consumers through trusted,
 best-in-class premium content from top media providers, with high-value
 experiences through personalized content synchronized across devices.
@@ -21,9 +22,9 @@ experiences through personalized content synchronized across devices.
 
 
 
-Tip: Packages bundled with Microsoft
+<b>Tip:</b> Packages bundled with Microsoft
 user data are available through the packages marketplace. See
-<a href="buying-microsoft-deals.html" class="xref"
+<a href="buying-microsoft-deals.md" class="xref"
 title="You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory using our Package Marketplace.">Buying
 Microsoft Deals</a>.
 
@@ -90,7 +91,7 @@ Formats and Specifications
 
 
 
-Note: SSL creative required.
+<b>Note:</b> SSL creative required.
 
 
 
@@ -101,9 +102,9 @@ Targeting Instructions
 For information on general inventory targeting, review the following
 documentation:
 
-- <a href="buying-microsoft-inventory.html" class="xref">Buying Microsoft
+- <a href="buying-microsoft-inventory.md" class="xref">Buying Microsoft
   Inventory</a>
-- <a href="domain-targeting.html" class="xref">domain-targeting.html</a>
+- <a href="domain-targeting.md" class="xref">domain-targeting.md</a>
 
 
 
@@ -121,7 +122,7 @@ To target MSN.com inventory:
 
 
 For instructions on how to target the MSN app, see
-<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.html"
+<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
 class="xref">Buying Microsoft Windows App Ad Inventory</a>.
 
 More Questions?

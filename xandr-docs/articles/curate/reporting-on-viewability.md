@@ -1,6 +1,7 @@
 ---
 Title : Reporting on Viewability
 Description : This page defines viewability metrics that are available and best
+ms.date : 10/28/2023
 practices for making optimal use of them.
 ---
 
@@ -36,7 +37,7 @@ of the following:
 
 
 
-Note: Viewability metrics in reporting
+<b>Note:</b> Viewability metrics in reporting
 will be available at the same time that impression level metrics become
 available.
 
@@ -72,7 +73,7 @@ impressions. (View Measured Imps / Imps)</td>
 
 
 
-Note: The Xandr
+<b>Note:</b> The Xandr
 measured viewability rate should not be directly compared to other
 measurement vendors, due to differences in what, where and how
 impressions were served.
@@ -111,7 +112,7 @@ measured for viewability. (Viewed Imps / View Measured Imps)</td>
 
 
 
-Note: An impression that could not be
+<b>Note:</b> An impression that could not be
 measured will not have a viewability status.
 
 
@@ -140,8 +141,8 @@ indicators.
 
 
 
-Tip: For an explanation of how metrics
-work, see <a href="dimensions-metrics-filtering-and-grouping.html"
+<b>Tip:</b> For an explanation of how metrics
+work, see <a href="dimensions-metrics-filtering-and-grouping.md"
 class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
 
@@ -180,9 +181,9 @@ are:
 
 
 For more information, see <a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data/log-level-data-feeds.md"
 class="xref" target="_blank">Log-Level Data Feeds</a> and <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="log-level-data/standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.
 
 Best Practices
@@ -196,7 +197,7 @@ well.
 
 
 
-Important: Viewability Rate = Viewable
+<b>Important:</b> Viewability Rate = Viewable
 Imps / View-Measured Imps
 
 
@@ -222,9 +223,8 @@ of successfully measured imps = 900,000.
 
 Sample Report
 
-<img
-src="../images/reporting-on-viewability/viewability_sample_report.jpg"
-class="image" />
+![Viewability Sample Report](media/viewability_sample_report.png)
+
 
 
 

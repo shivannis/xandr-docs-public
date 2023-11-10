@@ -1,36 +1,12 @@
 ---
-Title : Ad-Juster
-Description : ## Related Topics
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-<a href="frequently-asked-questions-faqs.md" class="xref">Frequently
+title: Ad-Juster
+description: In this article, find the link to frequently asked questions regarding Ad-Juster.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Ad-juster
 
-# Ad-Juster
+## Related topic
 
-
-
-
-
-## Related Topics
-
-<a href="frequently-asked-questions-faqs.md" class="xref">Frequently
-Asked Questions (FAQs)</a>
-
-
-
-
-
-- **[Frequently Asked Questions
-  (FAQs)](frequently-asked-questions-faqs.md)**  
-
-
-
-<a href="integrations.md" class="link">Integrations</a>
-
-
-
-
-
-
+[Frequently Asked Questions (FAQs)](frequently-asked-questions-faqs.md)

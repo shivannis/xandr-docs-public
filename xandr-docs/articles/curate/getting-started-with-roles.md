@@ -1,6 +1,7 @@
 ---
 Title : Getting Started with Roles
 Description : As a company doing business with Xandr, it's
+ms.date : 10/28/2023
 possible that you have more than one user responsible for your company's
 interaction with the system, whether that interaction is through the UI
 or the API. You may have several users who are responsible for different
@@ -38,7 +39,6 @@ sometimes these combinations can lead to some confusion. Here is a
 possible scenario having to do with removing components, and what the
 results will be.
 
-<div id="ID-0000065c__p-d107aa1a-1fea-4222-a903-cc3546745f27" >
 
 User1 has the following permissions:
 

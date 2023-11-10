@@ -1,6 +1,7 @@
 ---
 Title : Impression Counting
 Description : Xandr counts an impression, and records payment
+ms.date : 10/28/2023
 to the seller, once we receive an "accept call", which notifies us that
 a creative was served to the web page or mobile app. Because the amount
 ---
@@ -24,7 +25,7 @@ longer window than standard formats.
 
 
 
-Note: Impressions are reported on in
+<b>Note:</b> Impressions are reported on in
 the hour in which the creative was served to the web page or mobile app,
 not the hour in which the impression was request.
 

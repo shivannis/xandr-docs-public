@@ -1,6 +1,7 @@
 ---
 Title : Create Custom Events and Parameters
 Description : If you click the pencil icon next to a pixel on the
+ms.date : 10/28/2023
 Universal Pixels page, you can
 create custom events and parameters for the universal pixel using the UI
 and include them in your generated pixel code.
@@ -43,10 +44,9 @@ To set up custom events and parameters:
     parameter. 
     
 
-    <div id="universal-pixel-custom-events-and-parameters__note_km2_r2y_wsb"
     
 
-    Note: Event names are typically
+    <b>Note:</b> Event names are typically
     capitalized like `AddCart`, and parameter names use lowercase
     characters. Curate will modify your
     parameter names if they don't match this convention.
@@ -71,15 +71,14 @@ To set up custom events and parameters:
 
 
 
-<div id="universal-pixel-custom-events-and-parameters__postreq_icx_mh1_tsb"
 >
 
 Related Topics
 
-- <a href="universal-pixel-object-limits.html" class="xref"
+- <a href="universal-pixel-object-limits.md" class="xref"
   title="There are limits for how many audiences, conversions, custom events, and parameters you can create, as well as a data size limit for information transmitted by the parameters.">Universal
   Pixel Object Limits</a>
-- <a href="standard-events-and-parameters.html" class="xref">Standard
+- <a href="standard-events-and-parameters.md" class="xref">Standard
   Events and Parameters</a>
 
 

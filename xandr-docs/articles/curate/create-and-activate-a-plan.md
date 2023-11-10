@@ -1,6 +1,7 @@
 ---
 Title : Create and Activate a Plan
 Description : From the Plan
+ms.date : 10/28/2023
 menu, you can create a plan that lets you experiment with
 deal line item targeting settings, understand
 inventory availability and reach, and seamlessly create a line item from
@@ -22,12 +23,11 @@ your completed plan.
 
 This page provides instructions on creating and activating a plan for
 your curated deal. To create a plan, log into
-your account on our Xandr Curate platform.
-
-<div id="create-and-activate-a-campaign-plan__note_oy2_3nd_gsb"
+your account on our Microsoft Curate platform.
 
 
-Note: To achieve accurate forecasting
+
+<b>Note:</b> To achieve accurate forecasting
 results, Planner needs to be able to match a minimum number of
 impressions or users to the plan's targeting criteria. If the plan
 yields too small a number of impression or user matches, Planner
@@ -101,10 +101,9 @@ displays an error rather than attempting to provide forecasting data.
     information in your plan. Your new deal line
     item won't serve until you have set it to be active (it will be
     inactive by default) and saved it.
-    <div id="create-and-activate-a-campaign-plan__note_bpb_bk4_fsb"
     
 
-    Note: You can also activate a plan
+    <b>Note:</b> You can also activate a plan
     from the Planning screen's
     list view by selecting the plan and clicking
     Create Deal Line Item at the top

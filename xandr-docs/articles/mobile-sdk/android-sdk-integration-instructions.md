@@ -2,6 +2,7 @@
 title: Android SDK Integration Instructions
 description: In this article, find step-by-step instructions on how to integrate our Android SDK with your project.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Android SDK integration instructions

@@ -2,6 +2,7 @@
 title: iOS SDK
 description: Explore the iOS Mobile SDK, which offers an end-to-end solution for mobile app publishers.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS SDK

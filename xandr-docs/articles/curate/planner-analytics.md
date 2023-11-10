@@ -1,6 +1,7 @@
 ---
 Title : Planner Analytics
 Description : The Planner visualizations show a summary and visualization of your
+ms.date : 10/28/2023
 projected deal line item performance for a plan
 when you select it from the list of plans. You can see more detailed,
 ---
@@ -24,10 +25,9 @@ or edit a plan, you can update the analytics and visualizations to show
 the projected results, so you can adjust your strategy before making a
 final decision.
 
-<div id="planner-analytics__note_ewb_3cx_fsb"
 
 
-Note: Planner relies on data that is
+<b>Note:</b> Planner relies on data that is
 collected over time for its forecasts. For the most accurate results,
 audiences should be onboarded and deals should be live for a week before
 you begin forecasting in Planner.

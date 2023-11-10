@@ -2,6 +2,7 @@
 title: Android SDK
 description: In this article, find resources about Xandr's Mobile SDK for Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Android SDK

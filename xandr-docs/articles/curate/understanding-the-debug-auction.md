@@ -1,6 +1,7 @@
 ---
 Title : Understanding the Debug Auction
 Description : To understand what is happening behind the scenes during an auction, you
+ms.date : 10/28/2023
 can run a debug auction. This page explains how to run a debug auction
 ---
 
@@ -27,7 +28,7 @@ A debug auction can be run using the following calls:
 
 
 
-Note: All debug auction and browser
+<b>Note:</b> All debug auction and browser
 cookie override calls must use secure https protocols. Requests made
 using http will not generate valid results.
 
@@ -102,7 +103,7 @@ Optional Parameters
 <tr class="odd row">
 <td class="entry" headers="ID-0000075a__entry__11">bidder</td>
 <td class="entry" headers="ID-0000075a__entry__12">The bidder ID. <span
-class="ph">Xandr Curate uses bidder ID 2 in production</td>
+class="ph">Microsoft Curate uses bidder ID 2 in production</td>
 </tr>
 <tr class="even row">
 <td class="entry" headers="ID-0000075a__entry__11">referrer</td>
@@ -201,7 +202,7 @@ region's DMA code.</td>
 
 
 
-Note: If you are trying to spoof a
+<b>Note:</b> If you are trying to spoof a
 particular region or city, you must include the most general to most
 specific geographically. For city targeting, you need to include the
 country, region (state), and city. For
@@ -221,7 +222,7 @@ Important Points
 
 
 
-Note: Placement tag IDs can be found in
+<b>Note:</b> Placement tag IDs can be found in
 the UI for your direct inventory, but not for
 real-time inventory.
 
@@ -229,7 +230,7 @@ real-time inventory.
 
 
 
-Note: If an item is out of budget,
+<b>Note:</b> If an item is out of budget,
 inactive, or in pacing sleep (i.e. it is spending evenly across the
 day), it will not appear in the log. Generally, refreshing will cause
 paced objects to appear (because they will have come out of sleep). But
@@ -248,7 +249,7 @@ how to view/modify your cookie.
 
 
 
-Important: If using the cookie viewer,
+<b>Important:</b> If using the cookie viewer,
 you must include your member ID and dongle. This ensures you will only
 see the segments that belong to your member. You can click on the
 Debug button on any placement and to
@@ -312,37 +313,30 @@ Interpreting the Debug Auction Log
   server.
 - All IDs have been changed to random numbers.
 
-<img
-src="../images/understanding-the-debug-auction/debug-auction-geo.jpg"
-id="ID-0000075a__image-e3593b62-dcab-4674-9541-6e1244ea9f2b"
-class="image" />
+![Understanding Debug Auction - A](media/debug-auction-geo.png)
 
-<img
-src="../images/understanding-the-debug-auction/debug-auction-payment-rules.jpg"
-id="ID-0000075a__image-8ac70d00-0609-4048-9470-52e16bccb004"
-class="image" />
+![Understanding Debug Auction Payment Rules](media/debug-auction-payment-rules.png)
+
+
 
 Xandr's bidder gives more detailed debug text,
 beginning with "Debug text from bidder 2" (live). This output includes
 information such as the bidder version, the region info., and user info.
 Excerpts from a live debug auction are below:
 
-<img
-src="../images/understanding-the-debug-auction/debug-auction-geo-2.jpg"
-id="ID-0000075a__image-1786a930-29b1-4a16-8a64-6d8d79e08c35"
-class="image" />
+![Understanding Debug Auction - B](media/debug-auction-geo-b.png)
+
 
 This debug info. continues, including information such as the segments
 that the user is in and other relevant objects.
 
-<img
-src="../images/understanding-the-debug-auction/debug-auction-segments.jpg"
-id="ID-0000075a__image-d3d95004-a8a1-4957-af95-7b6b20df4bba"
-class="image" />
+![Understanding Debug Auction Segments](media/debug-auction-segments.png)
 
 
 
-Tip: This section highlights the
+
+
+<b>Tip:</b> This section highlights the
 decisions made by the bidder.
 
 
@@ -355,28 +349,24 @@ much they would bid.
 
 After all ad campaigns are evaluated, you will see the summary table.
 
-<img
-src="../images/understanding-the-debug-auction/debug-auction-summary-table.jpg"
-id="ID-0000075a__image-e836dd5c-2b6c-4220-98bd-f5b3d358450a"
-class="image" />
+![Understanding Debug Auction Summary Table](media/debug-auction-summary-table.png)
+
 
 You will also see the performance summary.
 
-<img
-src="../images/understanding-the-debug-auction/performance-summary.jpg"
-id="ID-0000075a__image-a5d08e48-e8c9-49a8-ab47-1ee7c426fb88"
-class="image" />
+
+![Performance Summary](media/performance-summary.png)
+
 
 You will receive an output of all bids and final bids. RTB buyers will
 see the value of the bid, the brand ID, and the learn type.
 
-<img src="../images/understanding-the-debug-auction/final-bids.jpg"
-id="ID-0000075a__image-c35155d4-b6df-4b02-8fbb-f0ef2191852a"
-class="image" />
+![Final Bids](media/final-bids.png)
 
 
 
-Tip: This debug log will also compare
+
+<b>Tip:</b> This debug log will also compare
 the result of Xandr's bidder with the result any
 other bidders participating in the auction, looking for the winner and
 the second highest price (since Xandr uses
@@ -387,9 +377,8 @@ Second Price Auction).
 Finally, we show the highest net bid, and the member and creative that
 would have served had this not been a debug auction.
 
-<img src="../images/understanding-the-debug-auction/highest-net-bid.jpg"
-id="ID-0000075a__image-619db20e-5802-423b-a19a-bc6413851e7d"
-class="image" />
+![Highest Net Bid](media/highest-net-bid.png)
+
 
 Possible Debug Auction Results
 
@@ -873,8 +862,8 @@ If the ad is visible in a browser, the configuration is valid.
 
 Related Topic
 
-- <a href="mobile-debug-auction-tips.html"
-  class="xref">mobile-debug-auction-tips.html</a>
+- <a href="mobile-debug-auction-tips.md"
+  class="xref">mobile-debug-auction-tips.md</a>
 
 
 

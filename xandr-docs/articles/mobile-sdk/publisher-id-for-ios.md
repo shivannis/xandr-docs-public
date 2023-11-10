@@ -2,6 +2,7 @@
 title: Publisher ID for iOS
 description: The publisher ID parameter provides publishers two options for resolving default placements when an ad request fails at the placement level
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Publisher ID for iOS

@@ -2,6 +2,7 @@
 title: Resize Ads to Fit the Screen or Banner Ad View on iOS
 description: Learn how to expand ad creative to fit banner ad view and device screen width with instructions provided on this article.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Resize ads to fit the screen or banner ad view on iOS

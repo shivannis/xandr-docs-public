@@ -1,6 +1,7 @@
 ---
 Title : Object Hierarchy
 Description : This page introduces the main objects that you work with to buy
+ms.date : 10/28/2023
 and sell media.
 ---
 
@@ -14,12 +15,12 @@ and sell media.
 
 Buy-Side Hierarchy
 
-<img src="../images/object-hierarchy/ali-buy-side-object-hierarchy.jpg"
-class="image" />
+![ALI Buy Side Object Hierarchy](media/ali-buy-side-object-hierarchy.png)
+
 
 Member
 
-The <a href="network-guide.html" class="xref"><span
+The <a href="network-guide.md" class="xref"><span
 class="ph">Member</a> represents your account as a whole. At this
 level, you decide who's eligible to sell to you and what level of
 inventory audit you require, you create lists of domains and apps for
@@ -29,7 +30,7 @@ inventory, and more.
 
 Advertiser
 
-An <a href="working-with-advertisers.html" class="xref">advertiser</a>
+An <a href="working-with-advertisers.md" class="xref">advertiser</a>
 represents a single client or brand on whose behalf you want to serve
 ads on web and/or mobile inventory. At this level, you set the defaults
 to use in some of the objects under the advertiser (e.g., default
@@ -40,7 +41,7 @@ You can have many advertisers in your network.
 
 Insertion Order
 
-An <a href="working-with-insertion-orders.html" class="xref">insertion
+An <a href="working-with-insertion-orders.md" class="xref">insertion
 order</a> represents a financial agreement you have with your advertiser
 that specifies what they would like you to execute. The insertion order
 contains information such as the total budget an advertiser allocates to
@@ -74,7 +75,7 @@ creative to many line items under an advertiser.
 
 Segment Pixel
 
-A <a href="working-with-segments.html" class="xref">segment pixel</a> is
+A <a href="working-with-segments.md" class="xref">segment pixel</a> is
 placed on web pages to collect data about users, such as pages they
 visit, actions they take, or qualities such as gender, location, and
 wealth. When a segment pixel fires, the user is added to a segment,

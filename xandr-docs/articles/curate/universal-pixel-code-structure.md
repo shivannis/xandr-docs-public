@@ -1,6 +1,7 @@
 ---
 Title : Universal Pixel Code Structure
 Description : The general universal pixel code to be deployed in the `<head>` tag on
+ms.date : 10/28/2023
 each page of the advertiser website is different from the pixel code
 required for standard and custom events, which is deployed only on pages
 of interest.
@@ -64,14 +65,13 @@ conversion landing page.
 
 
 
-<div id="universal-pixel-code-structure__section_mqd_nh1_nmb"
 >
 
 ## Related Topics
 
-- <a href="standard-events-and-parameters.html" class="xref">Standard
+- <a href="standard-events-and-parameters.md" class="xref">Standard
   Events and Parameters</a>
-- <a href="create-custom-events-and-parameters.html" class="xref"
+- <a href="create-custom-events-and-parameters.md" class="xref"
   title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
   Custom Events and Parameters</a>
 

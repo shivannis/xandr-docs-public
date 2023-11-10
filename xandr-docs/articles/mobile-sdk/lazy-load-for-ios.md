@@ -2,6 +2,7 @@
 title: Lazy Load for iOS
 description: In this article, learn about the Lazy Load feature in iOS, including its scope, methods, properties, and examples.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Lazy Load for iOS

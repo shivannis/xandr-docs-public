@@ -1,6 +1,7 @@
 ---
 Title : Using Events and Parameters
 Description : After you have configured your universal pixel, you can add value by
+ms.date : 10/28/2023
 configuring it to identify events, such as adding an item to a shopping
 cart. Standard events allow you to capture the interactions that matter
 ---
@@ -18,12 +19,11 @@ information in the form of parameters.
 
 
 
-<div id="using-standard-events-and-parameters__note_cng_cp3_rsb"
 
 
-Note: You can also create custom events
+<b>Note:</b> You can also create custom events
 and parameters. For more information, see
-<a href="create-custom-events-and-parameters.html" class="xref"
+<a href="create-custom-events-and-parameters.md" class="xref"
 title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
 Custom Events and Parameters</a>.
 
@@ -44,7 +44,6 @@ if you place the code snippet on the landing page where a user arrives
 after they click **Add to Cart**, the pixel is triggered by the script
 code, and the event can be tracked.
 
-<div id="using-standard-events-and-parameters__section_vph_dmj_rsb"
 >
 
 The following table shows the benefits of adding events and parameters
@@ -89,15 +88,14 @@ URL-based rules and page view events</td>
 
 
 
-<div id="using-standard-events-and-parameters__section_mqd_nh1_nmb"
 >
 
 ## Related Topics
 
-- <a href="create-custom-events-and-parameters.html" class="xref"
+- <a href="create-custom-events-and-parameters.md" class="xref"
   title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
   Custom Events and Parameters</a>
-- <a href="standard-events-and-parameters.html" class="xref">Standard
+- <a href="standard-events-and-parameters.md" class="xref">Standard
   Events and Parameters</a>
 
 

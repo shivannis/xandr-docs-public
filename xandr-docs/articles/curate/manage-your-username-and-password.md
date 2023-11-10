@@ -1,7 +1,8 @@
 ---
 Title : Manage Your Username and Password
 Description : This page explains how to manage your username and password in
-Xandr Curate. It covers the following issues:
+ms.date : 10/28/2023
+Microsoft Curate. It covers the following issues:
 ---
 
 
@@ -10,7 +11,7 @@ Xandr Curate. It covers the following issues:
 
 
 This page explains how to manage your username and password in
-Xandr Curate. It covers the following issues:
+Microsoft Curate. It covers the following issues:
 
 - Logging in after being locked out because of multiple failed login
   attempts.
@@ -27,10 +28,10 @@ after waiting five minutes.
 
 Retrieving Your Username
 
-If you cannot sign in to Xandr Curate due to a
+If you cannot sign in to Microsoft Curate due to a
 forgotten username, follow these steps:
 
-1.  Go to the login page of Xandr Curate and
+1.  Go to the login page of Microsoft Curate and
     click Reset Password.
 
 2.  On the Reset Password screen,
@@ -53,18 +54,18 @@ forgotten username, follow these steps:
 
 Resetting Your Password
 
-Xandr Curate passwords must be changed at least
+Microsoft Curate passwords must be changed at least
 once every 120 days. After 120 days, the password will no longer be
 valid and you will be prompted to create a new one.
 
-If you cannot sign in to Xandr Curate because
+If you cannot sign in to Microsoft Curate because
 the password was reset, or if you have forgotten your password, follow
 the steps below:
 
 Creating a New Password
 
 To change your password either after it expires, or if you have <a
-href="manage-your-username-and-password.html#ID-0000051b__p-4e7375cb-14e0-4e54-8778-bafd038291ba"
+href="manage-your-username-and-password.md#ID-0000051b__p-4e7375cb-14e0-4e54-8778-bafd038291ba"
 class="xref">forgotten your password</a>:
 
 1.  In the Reset Password dialog,
@@ -78,14 +79,14 @@ class="xref">forgotten your password</a>:
 2.  Retype the password to confirm it and click
     Submit.
 3.  <span id="ID-0000051b__ID-00000554">You will be redirected to the
-    login page of Xandr Curate, where you can
+    login page of Microsoft Curate, where you can
     sign in with your username and new password. You will also receive a
     confirmation email of the password reset.
 
 Requesting a Forgotten Password
 
 1.  If you forgot your password, go to the login page of
-    Xandr Curate and click
+    Microsoft Curate and click
     Reset Password.
 2.  Enter your username and click Send
     Email.
@@ -95,7 +96,7 @@ Requesting a Forgotten Password
 
 
 
-Note: If you don't see the email in
+<b>Note:</b> If you don't see the email in
 your inbox, be sure to check your spam folder. If you still don't see
 it, the email address you entered might not be valid. Try again and
 submit a support request at

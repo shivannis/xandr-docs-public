@@ -1,6 +1,7 @@
 ---
 Title : Working with Segments
 Description : Segment pixels use information about a user, such as webpages they
+ms.date : 10/28/2023
 visit, actions they take, or qualities such as gender, location, and
 wealth, to assign that user to a group called a segment. Segment data is
 ---
@@ -48,7 +49,7 @@ https://ib.adnxs.com/seg?remove=1,2,4
 These segment pixel calls to `/seg` will always return a 1x1 invisible
 GIF, unless a piggyback pixel redirect parameter is
 included. (To learn more about redirect parameters, see
-<a href="segment-pixels-advanced.html" class="xref">Segment Pixels:
+<a href="segment-pixels-advanced.md" class="xref">Segment Pixels:
 Advanced</a>.)
 
 Member- vs. Advertiser-Level Segments
@@ -68,7 +69,7 @@ Cookie Store. This way it is accessible for all impressions. Soon
 we will enable access to our customers cookie store data at any time,
 outside of ad calls. Customers can also traffic in offline user data to
 our cookie store so that it can be usable during ad calls. Please see
-<a href="pass-in-user-data-offline.html" class="xref">Pass in User Data
+<a href="pass-in-user-data-offline.md" class="xref">Pass in User Data
 Offline</a> for details.
 
 Segment Load Reporting
@@ -81,8 +82,76 @@ the following segment types:
 
 - Segments shared with other members.
 - Segments uploaded via the API's <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+  href="xandr-api/batch-segment-service.md"
   class="xref" target="_blank">Batch Segment Service</a>.
+
+<table id="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e"
+class="table">
+<thead class="thead">
+<tr class="header row">
+<th
+id="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"
+class="entry">Metric</th>
+<th
+id="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2"
+class="entry">Description</th>
+</tr>
+</thead>
+<tbody class="tbody">
+<tr class="odd row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>Name</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2">This
+is the segment name.</td>
+</tr>
+<tr class="even row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>ID</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2">This
+is the segment Xandr ID.</td>
+</tr>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>Data
+Provider</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2">This
+is the data provider name.</td>
+</tr>
+<tr class="even row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>Price</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2">This
+column displays the price a buyer has paid for a segment. It allows the
+buyer to toggle between these two options:
+<ul>
+<li>CPM (default)</li>
+<li>% Media Cost</li>
+</ul></td>
+</tr>
+<tr class="odd row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>Active
+Users</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2">This
+is the count of active users in a segment over a 24-hour period.</td>
+</tr>
+<tr class="even row">
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__1"><strong>Daily
+Loads</strong></td>
+<td class="entry"
+headers="ID-000013c3__table-eb62c552-c771-4dec-afd2-ef7b9beb167e__entry__2"><p>The
+average number of times a user is added to a segment. (This is also
+known as 'segment fires'.)</p>
+<p>This allows you to see growth and reduction of segments.</p></td>
+</tr>
+</tbody>
+</table>
 
 Please note that contextual segments (from contextual or real-time data
 providers) will not show loads in this report. This is because
@@ -98,13 +167,13 @@ call), the LOWEST max usersync pixel value will be honored.
 
 Related Topics
 
-- <a href="segment-pixels-advanced.html" class="xref">Segment Pixels:
+- <a href="segment-pixels-advanced.md" class="xref">Segment Pixels:
   Advanced</a>: More advanced manipulation of segment pixels
-- <a href="segment-targeting.html" class="xref"
+- <a href="segment-targeting.md" class="xref"
   title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
   Targeting</a>: Targeting the segments that you have created through
   pixels
-- <a href="create-a-segment-pixel.html" class="xref">Create a Segment
+- <a href="create-a-segment-pixel.md" class="xref">Create a Segment
   Pixel</a>
 
 

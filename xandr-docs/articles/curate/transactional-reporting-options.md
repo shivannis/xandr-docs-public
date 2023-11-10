@@ -1,6 +1,7 @@
 ---
 Title : Transactional Reporting Options
 Description : This page describes a number of reporting options for clients who need
+ms.date : 10/28/2023
 to go beyond the capabilities exposed by Curate.
 ---
 
@@ -47,10 +48,10 @@ For more information about each option, click its name in the
 <tbody class="tbody">
 <tr class="odd row">
 <td class="entry" headers="ID-00001912__entry__1"><a
-href="transactional-reporting-options.html#ID-00001912__ID-000019c1"
+href="transactional-reporting-options.md#ID-00001912__ID-000019c1"
 class="xref">Reporting</a></td>
 <td class="entry" headers="ID-00001912__entry__2"><a
-href="reporting-guide.html" class="xref">Reporting Guide</a></td>
+href="reporting-guide.md" class="xref">Reporting Guide</a></td>
 <td class="entry" headers="ID-00001912__entry__3">Low</td>
 <td class="entry" headers="ID-00001912__entry__4">Ability to manipulate
 reporting data offline (optional)</td>
@@ -62,17 +63,17 @@ reporting data offline (optional)</td>
 </tr>
 <tr class="even row">
 <td class="entry" headers="ID-00001912__entry__1"><a
-href="transactional-reporting-options.html#ID-00001912__ID-000014dl"
+href="transactional-reporting-options.md#ID-00001912__ID-000014dl"
 class="xref">Reporting API</a></td>
 <td class="entry" headers="ID-00001912__entry__2"><ul>
 <li><a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a></li>
 <li><a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-pagination.html"
+href="xandr-api/report-pagination.md"
 class="xref" target="_blank">Report Pagination</a></li>
 <li><a
-href="https://docs.xandr.com/bundle/xandr-api/page/bulk-reporting-feeds.html"
+href="xandr-api/bulk-reporting-feeds.md"
 class="xref" target="_blank">Bulk Reporting Feeds</a></li>
 </ul></td>
 <td class="entry" headers="ID-00001912__entry__3">Medium</td>
@@ -90,10 +91,10 @@ reports</li>
 </tr>
 <tr class="odd row">
 <td class="entry" headers="ID-00001912__entry__1"><a
-href="transactional-reporting-options.html#ID-00001912__ID-000019de"
+href="transactional-reporting-options.md#ID-00001912__ID-000019de"
 class="xref">Log Level Data</a></td>
 <td class="entry" headers="ID-00001912__entry__2"><a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data/log-level-data-feeds.md"
 class="xref" target="_blank">Log-Level Data Feeds</a></td>
 <td class="entry" headers="ID-00001912__entry__3">High</td>
 <td class="entry" headers="ID-00001912__entry__4">Data storage and
@@ -141,7 +142,7 @@ allows you to store data for longer than is possible in
 Curate reporting. Certain reporting services
 offer more granular data via the API; there is also the ability to use
 <a
-href="https://docs.xandr.com/bundle/xandr-api/page/bulk-reporting-feeds.html"
+href="xandr-api/bulk-reporting-feeds.md"
 class="xref" target="_blank">Bulk Reporting Feeds</a> to synchronize
 offline data sets with Xandr-aggregated data
 over the last 30 days. In addition, there is a custom `code` field that
@@ -157,7 +158,7 @@ looking for auction-level granularity or metrics not available in
 Curate reporting. To handle this data, you must
 be able to support offline aggregation and large scale storage
 capabilities. See <a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data/log-level-data-feeds.md"
 class="xref" target="_blank">Log-level Data (LLD) Feeds</a> for more
 details.
 
@@ -197,13 +198,13 @@ parameters to store click information.
 
 **Related Topics**
 
-- <a href="general-reporting-concepts.html" class="xref">General Reporting
+- <a href="general-reporting-concepts.md" class="xref">General Reporting
   Concepts</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+  href="xandr-api/report-service.md"
   class="xref" target="_blank">Report Service</a>
 - <a
-  href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+  href="log-level-data/log-level-data-feeds.md"
   class="xref" target="_blank">Log Level Data Feeds</a>
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Export a Segment Pixel
 Description : Step 1: Get started
+ms.date : 10/28/2023
 Go to the Segment Pixel list in the
 Segments screen
 (Audiences
@@ -70,7 +71,7 @@ An image pixel looks something like this:
 
 ``` pre
 <!-- Segment Pixel - test - DO NOT MODIFY -->
-<img src="https://secure.adnxs.com/seg?add=528336&t=2" width="1" height="1" />
+<img src="media/seg?add=528336&t=2" width="1" height="1" />
 <!-- End of Segment Pixel -->
 ```
 
@@ -84,9 +85,9 @@ A JavaScript pixel looks something like this:
 
 Related Topics
 
-- <a href="segment-pixels-advanced.html" class="xref">Segment Pixels:
+- <a href="segment-pixels-advanced.md" class="xref">Segment Pixels:
   Advanced</a>
-- <a href="segment-targeting.html" class="xref"
+- <a href="segment-targeting.md" class="xref"
   title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
   Targeting</a>
 

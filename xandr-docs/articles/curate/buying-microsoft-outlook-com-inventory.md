@@ -1,6 +1,7 @@
 ---
 Title : Buying Microsoft Outlook.com Inventory
 Description : You can buy Microsoft Outlook.com inventory on the
+ms.date : 10/28/2023
 ---
 
 
@@ -30,17 +31,16 @@ colleagues. Outlook.com focuses on four key points for advertisers:
 
 
 
-Note: Packages bundled with Microsoft
+<b>Note:</b> Packages bundled with Microsoft
 user data are available through the packages marketplace. For more
 information, see <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/buying-microsoft-deals.html"
+href="invest_invest-standard/buying-microsoft-deals.md"
 class="xref" target="_blank">Buying Microsoft Deals</a>.
 
 
 
 
 
-<div id="ID-00007a51__section_46b5df0d-ce68-4e11-bc70-123ceffdf199"
 >
 
 ## Availability and Volume
@@ -52,7 +52,6 @@ class="xref" target="_blank">Buying Microsoft Deals</a>.
 
 
 
-<div id="ID-00007a51__section_eb6589a1-108f-4714-bbfe-1bfa08261b69"
 >
 
 ## Formats and Specifications
@@ -108,7 +107,7 @@ headers="ID-00007a51__table_csp_rxx_qwb__entry__5"></td>
 
 
 
-Note:
+<b>Note:</b>
 
 SSL creative required.
 
@@ -116,15 +115,14 @@ SSL creative required.
 
 
 
-<div id="ID-00007a51__section_bfc6056a-1368-438a-9875-07f95fdb852b"
 >
 
 ## Targeting Instructions
 
 For information on general inventory targeting, see <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/buying-microsoft-inventory.html"
+href="invest_invest-standard/buying-microsoft-inventory.md"
 class="xref" target="_blank">Buying Microsoft Inventory</a> and <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/domain-targeting.html"
+href="monetize_monetize-standard/domain-targeting.md"
 class="xref" target="_blank">Domain Targeting</a>.
 
 To target Outlook.com inventory,
@@ -141,7 +139,7 @@ To target Outlook.com inventory,
 
 
 For instructions on how to target the Outlook app, see <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/buying-microsoft-windows-3rd-party-appnetwork-inventory.html"
+href="invest/buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
 class="xref" target="_blank">Buying Microsoft Windows App Inventory</a>.
 
 

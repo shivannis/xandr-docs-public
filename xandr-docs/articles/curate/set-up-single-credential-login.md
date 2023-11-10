@@ -1,6 +1,7 @@
 ---
 Title : Set Up Single Credential Login
 Description : This will guide you through the single credential login set up process.
+ms.date : 10/28/2023
 ---
 
 
@@ -14,7 +15,7 @@ This will guide you through the single credential login set up process.
 
 
 
-Note:
+<b>Note:</b>
 
 With consolidation of Xandr to Microsoft family, we have integrated the
 authentication process of the users (who are using Xandr products) to
@@ -25,7 +26,7 @@ Additionally, the integration to the Microsoft Identity Platform enables
 new and more secure methods of authentication, powered by Microsoft.
 
 For more details, visit
-<a href="microsoft-identity-platform-login.html" class="xref"
+<a href="microsoft-identity-platform-login.md" class="xref"
 title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
 Identity Platform Login</a>.
 
@@ -47,7 +48,6 @@ This task explains how to set up your single credential login.
 2.  Click Set your password.
 3.  After clicking on the link, follow the on-screen prompts to set your
     password.
-    <div id="set-up-single-credential-login__p-9d116d81-4f17-467f-a49a-ab4092c3731c"
     >
 
     Consider these requirements for setting up your password:
@@ -69,7 +69,7 @@ notification that says that your password has been created successfully.
 You can use your login credentials to access your digital application
 user accounts now. Post login, you can switch between your user accounts
 following the steps described in
-<a href="switching-between-user-accounts.html" class="xref"
+<a href="switching-between-user-accounts.md" class="xref"
 title="This will instruct you how use the account switcher to switch between user accounts.">Switching
 Between User Accounts</a>.
 
@@ -82,7 +82,7 @@ Between User Accounts</a>.
 
 
 - <a
-  href="single-credential-login-and-multi-factor-authentication-faq.html"
+  href="single-credential-login-and-multi-factor-authentication-faq.md"
   class="xref"
   title="You can find answers to the most frequently asked questions about single credential login and MFA.">Single
   Credential Login and Multi-Factor Authentication FAQ</a>

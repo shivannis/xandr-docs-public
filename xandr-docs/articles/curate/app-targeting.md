@@ -1,6 +1,7 @@
 ---
 Title : App Targeting
-Description : Note: This form of targeting is only
+Description : <b>Note:</b> This form of targeting is only
+ms.date : 10/28/2023
 available to Standard Line Items. For an overview of which targeting
 ---
 
@@ -11,26 +12,26 @@ available to Standard Line Items. For an overview of which targeting
 
 
 
-Note: This form of targeting is only
+<b>Note:</b> This form of targeting is only
 available to Standard Line Items. For an overview of which targeting
 options are available to Standard versus Augmented Line items, see
-<a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>.
+<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>.
 
 
 
 When your campaign is set to serve on mobile app inventory (see
-<a href="supply-type-targeting.html"
-class="xref">supply-type-targeting.html</a>), you can narrow your
+<a href="supply-type-targeting.md"
+class="xref">supply-type-targeting.md</a>), you can narrow your
 targeting to include or exclude predefined app lists or specific apps.
 
 
 
-Note: App targeting applies only to
+<b>Note:</b> App targeting applies only to
 mobile app impressions, and these settings will not be considered for
 web and mobile web impressions. To not serve on web and mobile web
 impressions, switch the **Web Placements** and **Mobile Web Placements**
-toggle **OFF**. See <a href="supply-type-targeting.html"
-class="xref">supply-type-targeting.html</a> for more information.
+toggle **OFF**. See <a href="supply-type-targeting.md"
+class="xref">supply-type-targeting.md</a> for more information.
 
 
 
@@ -44,7 +45,7 @@ Target predefined app lists
     included or excluded. .
     
 
-    Note: There is an OR relationship,
+    <b>Note:</b> There is an OR relationship,
     not an AND relationship, between included app lists and included
     individual apps.
 
@@ -65,7 +66,7 @@ Target specific mobile apps
         targeted apps must be either included or excluded.
         
 
-        Note: There is an OR
+        <b>Note:</b> There is an OR
         relationship, not an AND relationship, between included domain
         lists and included individual domains.
 

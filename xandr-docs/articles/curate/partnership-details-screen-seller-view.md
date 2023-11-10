@@ -1,6 +1,7 @@
 ---
 Title : Partnership Details Screen - Seller View
 Description : On the Partnership details screen you can review and manage your
+ms.date : 10/28/2023
 relationship with a specific buyer. You can track overall revenue
 ---
 
@@ -33,12 +34,12 @@ name, phone number, and email address, and a description of their
 business. You can contact the buyer directly in
 Curate by sending a message within the Activity
 Stream. For more information about the Activity Stream, see <a
-href="partnership-details-screen-seller-view.html#ID-000006c3__p-b7f513e7-2f34-4371-b69f-20878e760ad4"
+href="partnership-details-screen-seller-view.md#ID-000006c3__p-b7f513e7-2f34-4371-b69f-20878e760ad4"
 class="xref">Communicating with the Buyer.</a>
 
 
 
-Important:
+<b>Important:</b>
 
 If the buyer has not entered their contact's name, phone number, email
 address, or a description of their business, then this information will
@@ -56,7 +57,7 @@ update occurred.
 
 
 
-Note: If the buyer has not purchased
+<b>Note:</b> If the buyer has not purchased
 any inventory from you, there will be no information to appear in the
 chart and tables on the Dashboard.
 
@@ -123,7 +124,7 @@ In the Partner Controls tab you can
 view and manage the settings you have set for the buyer. This
 information gives you insight into your ability to transact with the
 buyer on Curate. Contact the seller (see <a
-href="partnership-details-screen-seller-view.html#ID-000006c3__p-b7f513e7-2f34-4371-b69f-20878e760ad4"
+href="partnership-details-screen-seller-view.md#ID-000006c3__p-b7f513e7-2f34-4371-b69f-20878e760ad4"
 class="xref">Communicating with the Buyer</a>) to request changes to
 your eligibility or inventory trust.
 
@@ -133,10 +134,10 @@ The eligibility, allowed payment types, and targeting access settings
 you have set for the buyer display in the My
 Settings for Buyer section. For more information on each of these
 settings, see <a
-href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Setting Buyer Defaults</a>. For step-by-step instructions
 on editing a buyer's settings, see <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>.
 
@@ -146,10 +147,10 @@ them.
 
 
 
-Note: If you do not set custom settings
+<b>Note:</b> If you do not set custom settings
 for the buyer, your default settings will apply. For more information on
 setting default settings, see <a
-href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>.
 
@@ -171,16 +172,16 @@ in the Partner Controls tab; however,
 you can only view the buyer's current settings here within the
 Partner Controls tab. For step-by-step
 instructions on editing the a buyer's settings, see <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a> .
 
 
 
-Note: If you do not set custom settings
+<b>Note:</b> If you do not set custom settings
 for the buyer, your default settings will apply. For more information on
 setting default settings, see <a
-href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>.
 
@@ -210,7 +211,7 @@ additional details:
 
 - Type - The auction type. For more
   information on the different auction types, see
-  <a href="deal-auction-mechanics.html" class="xref">Deal Auction
+  <a href="deal-auction-mechanics.md" class="xref">Deal Auction
   Mechanics</a>.
 
 - Ask Price - The price, if any,
@@ -218,7 +219,7 @@ additional details:
   bid in order to compete for this inventory.
   
 
-  Note: If you do not enter a
+  <b>Note:</b> If you do not enter a
   deal-specific price your existing floor rules may apply.
 
   
@@ -293,7 +294,7 @@ Actions
 
 Related Topic
 
-- <a href="partner-center-guide.html" class="xref">Partner Center
+- <a href="partner-center-guide.md" class="xref">Partner Center
   Guide</a>
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Microsoft Advertising Exchange Inventory
 Description : The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
+ms.date : 10/28/2023
 high-quality inventory to help you reach your audiences across Microsoft
 properties. The Microsoft Advertising Exchange contains Microsoft's
 ---
@@ -50,9 +51,8 @@ featured applications from across the Windows App Store.
 
 Windows App inventory includes:
 
-<img
-src="../images/microsoft-advertising-exchange-inventory/windowsappinven.jpg"
-class="image" />
+![Windows App inventory](media/windowsappinven.png)
+
 
 Sample Windows Apps Inventory
 
@@ -60,15 +60,13 @@ Provided below are some Windows Apps inventory samples:
 
 - Inventory on **tablets**
 
-  <img
-  src="../images/microsoft-advertising-exchange-inventory/inventory-on-tablets.png"
-  class="image" />
+  ![Inventory](media/inventory-on-tablets.png)
+ 
 
 - Inventory on **Windows phone**
 
-  <img
-  src="../images/microsoft-advertising-exchange-inventory/inventory-on-phone.png"
-  class="image" />
+  ![Inventory on Windows](media/inventory-on-phone.png)
+ 
 
 Windows Apps Creative Details
 
@@ -129,7 +127,7 @@ How to Target Windows App Inventory and Additional Information
 
 For more information regarding how to target Windows App inventory,
 formats, specifications and legacy SDK ads for Windows apps, see
-<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.html"
+<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
 class="xref">Buying Microsoft Windows 3rd Party AppNetwork Inventory</a>.
 
 MSN
@@ -469,7 +467,7 @@ TH-001 (26050)</td>
 
 Related Topic
 
-- <a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.html"
+- <a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
   class="xref">Buying Microsoft Windows 3rd Party AppNetwork Inventory</a>
 
 

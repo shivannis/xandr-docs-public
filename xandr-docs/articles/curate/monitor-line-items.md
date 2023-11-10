@@ -1,6 +1,7 @@
 ---
 Title : Monitor Line Items
 Description : The Line Items screen displays
+ms.date : 10/28/2023
 Upcoming,
 In Progress, and
 Completed line items and metrics. It
@@ -35,7 +36,6 @@ any Microsoft Monetize screen:
 
 
 
-<div id="monitor-line-items__section-86462c76-491a-431b-805e-78b6139be8b7"
 >
 
 ## View Line Items
@@ -57,7 +57,6 @@ each progress tab as follows:
 
 
 
-<div id="monitor-line-items__section-02658338-812a-4f1e-97ca-b6aceef22e69"
 >
 
 ## Understand Line Item Columns
@@ -76,18 +75,17 @@ regularly.
 
 
 
-Note: There might be discrepancies
+<b>Note:</b> There might be discrepancies
 between the metrics displayed in the Line
 Items monitoring view and reporting data due to slight variations
 in data syncing. For more information, see
-<a href="availability-of-reporting-data.html" class="xref">Availability
+<a href="availability-of-reporting-data.md" class="xref">Availability
 of Reporting Data</a>.
 
 
 
 
 
-<div id="monitor-line-items__section-2519055a-81be-4ff0-b8ab-7d01da672491"
 >
 
 ## Search for Line Items
@@ -99,7 +97,6 @@ Inactive line items are listed in gray italic text.
 
 
 
-<div id="monitor-line-items__section-5e42afe7-55bf-491e-bf24-0da1b24c68a6"
 >
 
 ## Use Pagination
@@ -117,7 +114,6 @@ the rows of line items. The pagination feature lets you:
 
 
 
-<div id="monitor-line-items__section-ab94ae79-9276-4ec1-8114-1e5749dc5b68"
 >
 
 ## Apply Filters
@@ -141,7 +137,7 @@ create and save a new filter:
     New Filter Name field.
     
 
-    Note: You can save up to 10
+    <b>Note:</b> You can save up to 10
     filters. If you already have 10 filters and want to add a new
     filter, delete an existing filter and try again.
 
@@ -151,7 +147,7 @@ create and save a new filter:
     to apply the filter to the rows by default.
     
 
-    Note: The default filter will apply
+    <b>Note:</b> The default filter will apply
     each time you access the Line
     Items window.
 
@@ -186,7 +182,6 @@ You can edit saved filters at any time. To edit a saved filter:
 
 
 
-<div id="monitor-line-items__section-1764d8a0-60e9-464b-83be-850a1892591c"
 >
 
 ## Sort Columns
@@ -197,7 +192,6 @@ or descending order by clicking each column label.
 
 
 
-<div id="monitor-line-items__section-cca7be10-78a8-4ec9-9432-eb67390da1e3"
 >
 
 ## Select Column Views
@@ -210,7 +204,6 @@ View.
 
 
 
-<div id="monitor-line-items__section-dfa1101a-add9-4ff2-8ebf-51438efa9d0f"
 >
 
 ## Modify and Save Column Views
@@ -251,7 +244,6 @@ drop-down list. To modify a column view:
 
 
 
-<div id="monitor-line-items__section-f4eecd7b-479b-4122-96c6-9d3012cf9862"
 >
 
 ## View Line Item Details
@@ -259,13 +251,12 @@ drop-down list. To modify a column view:
 To view the details of a line item listed in the
 Line Items window, click anywhere
 in the line item row to display the Line Item Details. See
-<a href="view-line-item-details-smw.html" class="xref"
+<a href="view-line-item-details-smw.md" class="xref"
 title="The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance visualizations, and associated line item objects.">View
 Line Item Details</a> for more information.
 
 
 
-<div id="monitor-line-items__section-1c61e86c-45a6-4ad6-8a35-9f672503f301"
 >
 
 ## Duplicate, Cancel Reservation, Delete, or Run Report for Selected Line Items
@@ -293,7 +284,7 @@ selected line items by doing the following:
       more line items simultaneously.
       
 
-      Warning: Deleting a line item
+      <b>Warning:</b> Deleting a line item
       deletes all its child objects, including creatives, conversion
       pixels, segments, and splits. Deletions are permanent and cannot
       be reverted
@@ -304,14 +295,13 @@ selected line items by doing the following:
 
 
 
-<div id="monitor-line-items__section-2221dee3-e18e-4212-87b3-4356c74002ca"
 >
 
 ## Related Topics
 
-- <a href="troubleshoot-line-items.html"
-  class="xref">troubleshoot-line-items.html</a>
-- <a href="view-line-item-details-smw.html" class="xref"
+- <a href="troubleshoot-line-items.md"
+  class="xref">troubleshoot-line-items.md</a>
+- <a href="view-line-item-details-smw.md" class="xref"
   title="The Line Items Details window lets you view and edit line item settings and access troubleshooting tools, essential metrics, performance visualizations, and associated line item objects.">View
   Line Item Details</a>
 

@@ -2,6 +2,7 @@
 title: Lazy Load for Android
 description: In this article, learn about the Lazy Load feature in Android, including its scope, methods, properties, and examples.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Lazy Load for Android

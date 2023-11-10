@@ -1,6 +1,7 @@
 ---
 Title : Planner Troubleshooting
 Description : ## Estimated Reach = 0
+ms.date : 10/28/2023
 If you don't see any estimated reach, it means that no auctions or users
 in the daily or weekly sample matched the targeting parameters you set.
 ---
@@ -25,7 +26,6 @@ targeting parameters are too restrictive.
 
 
 
-<div id="Planner_Troubleshooting__section_b4h_ggx_fsb"
 >
 
 ## Failed to fetch error
@@ -49,7 +49,6 @@ guaranteed to match existing deal data.
 
 
 
-<div id="Planner_Troubleshooting__section_z3j_xdx_fsb"
 >
 
 ## User count is greater than impression count

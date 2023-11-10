@@ -1,8 +1,9 @@
 ---
 Title : User ID Mapping with getUID and mapUID
 Description : You may have internal offline data about users that you need to insert
+ms.date : 10/28/2023
 into the Xandr
-<a href="server-side-cookie-store.html"
+<a href="server-side-cookie-store.md"
 ---
 
 
@@ -12,8 +13,8 @@ into the Xandr
 
 You may have internal offline data about users that you need to insert
 into the Xandr
-<a href="server-side-cookie-store.html"
-class="xref">server-side-cookie-store.html</a> so that it is available
+<a href="server-side-cookie-store.md"
+class="xref">server-side-cookie-store.md</a> so that it is available
 for decisioning. If so, we must first map your internal user IDs and
 Xandr user IDs in order to be able to match user
 IDs on future requests. Depending on whether you will store the mapping
@@ -30,7 +31,7 @@ Xandr cookie store.
 
 
 
-Note: Note that the
+<b>Note:</b> Note that the
 Xandr user ID macro described below is `$UID`.
 Unlike many of our other macros, it does not have curly braces.
 
@@ -76,9 +77,9 @@ the URL by replacing the `$UID` macro.
 
 
 
-Tip: For a detailed walk-through of how
+<b>Tip:</b> For a detailed walk-through of how
 this works, see the
-<a href="user-mapping-visual-and-walk-through.html" class="xref">User
+<a href="user-mapping-visual-and-walk-through.md" class="xref">User
 Mapping Visual and Walk-Through</a>.
 
 
@@ -183,7 +184,7 @@ For example, let's assume the following pixel exists on a publisher site
 today:
 
 ``` pre
- <img src="https://ad.adserver.com/pixel?id=234123" width=1 height=1/> 
+ <img src="media/pixel?id=234123" width=1 height=1/> 
 ```
 
 Instead, fire the Xandr getuid pixel, providing
@@ -210,15 +211,15 @@ The mapUID Service
 
 
 
-Tip: The mapUID service has fees
+<b>Tip:</b> The mapUID service has fees
 associated with it. If you're interested in using this option, please
 speak with your Xandr representative.
 
 
 
 The **mapUID** Service inserts your in-house ID into the
-Xandr <a href="server-side-cookie-store.html"
-class="xref">server-side-cookie-store.html</a>.
+Xandr <a href="server-side-cookie-store.md"
+class="xref">server-side-cookie-store.md</a>.
 
 The format for a client-side pixel that maps your ID to ours in our
 system is
@@ -231,7 +232,7 @@ where the member ID is the ID assigned to your company by
 Xandr and the `USER_ID` is your company's user
 ID. If you don't know your member ID, you can find out by making a `GET`
 request to the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/member-service.html"
+href="xandr-api/member-service.md"
 class="xref" target="_blank">Member Service</a>.
 
 If you have more than one user ID, you can separate them with
@@ -273,15 +274,15 @@ Sending us your segment data offline
 
 For more information about how to send us your segment data offline, see
 the API's <a
-href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+href="xandr-api/batch-segment-service.md"
 class="xref" target="_blank">Batch Segment Service</a>.
 
 Related Topics
 
-- <a href="user-id-syncing-with-external-partners.html"
-  class="xref">user-id-syncing-with-external-partners.html</a>
-- <a href="asynchronous-usersync-pixels.html"
-  class="xref">asynchronous-usersync-pixels.html</a>
+- <a href="user-id-syncing-with-external-partners.md"
+  class="xref">user-id-syncing-with-external-partners.md</a>
+- <a href="asynchronous-usersync-pixels.md"
+  class="xref">asynchronous-usersync-pixels.md</a>
 
 
 

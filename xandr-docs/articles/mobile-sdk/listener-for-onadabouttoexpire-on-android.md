@@ -2,6 +2,7 @@
 title: Listener for onAdAboutToExpire on Android
 description: In this article, learn about the Listener for onAdAboutToExpire in Android, including its properties, methods, and examples.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Listener for onAdAboutToExpire on Android

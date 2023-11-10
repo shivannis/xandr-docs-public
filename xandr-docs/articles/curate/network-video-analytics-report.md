@@ -1,6 +1,7 @@
 ---
 Title : Member Video Analytics Report
 Description : The Member Video Analytics report can be used to
+ms.date : 10/28/2023
 view video event metrics across multiple buyers and sellers for a
 network member.
 ---
@@ -82,7 +83,7 @@ Data in this report is retained for 420 days.
 
 
 
-Note: By enabling
+<b>Note:</b> By enabling
 Currency 2.0, you can select a
 currency for each individual report if you prefer not to use
 USD as the default currency. The
@@ -158,7 +159,7 @@ headers="ID-00002b8f__entry__2">Yes</td>
 placement group (simply a collection of placements) which includes the
 placement through which this impression occurred.
 
-Note: For impressions older than 100
+<b>Note:</b> For impressions older than 100
 days, the ID will be 0.
 </td>
 </tr>
@@ -170,7 +171,7 @@ headers="ID-00002b8f__entry__2">Yes</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00002b8f__entry__3">The
 placement through which this impression occurred.
 
-Note: For impressions older than 100
+<b>Note:</b> For impressions older than 100
 days, placements will be aggregated into one row with <code
 class="ph codeph">-1</code> as the ID and a generic name.
 </td>
@@ -252,8 +253,8 @@ headers="ID-00002b8f__entry__1">Creative Recency</td>
 headers="ID-00002b8f__entry__2">Yes</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00002b8f__entry__3">How
 recently the creative was viewed by the user. For more information, see
-the <a href="creative-frequency-and-recency-report.html"
-class="xref">creative-frequency-and-recency-report.html</a></td>
+the <a href="creative-frequency-and-recency-report.md"
+class="xref">creative-frequency-and-recency-report.md</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -263,8 +264,8 @@ headers="ID-00002b8f__entry__2">Yes</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00002b8f__entry__3">How
 many times the creative has been viewed by the user. For more
 information, see Creative Frequency Definitions in the <a
-href="creative-frequency-and-recency-report.html"
-class="xref">creative-frequency-and-recency-report.html</a> page.</td>
+href="creative-frequency-and-recency-report.md"
+class="xref">creative-frequency-and-recency-report.md</a> page.</td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1" headers="ID-00002b8f__entry__1">IO:
@@ -526,7 +527,7 @@ implemented video taxonomy.</td>
 
 
 
-Note: In addition, you can also filter
+<b>Note:</b> In addition, you can also filter
 on a particular number of impressions using the **Minimum Impressions**
 filter.
 
@@ -544,7 +545,7 @@ filter.
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -1208,9 +1209,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -1226,7 +1227,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -1245,17 +1246,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="ID-00002b8f__d11e107">**Export, send results via
+    - **Export, send results via
       email**: Run the report in the background and email the results to
       one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -1269,7 +1270,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="ID-00002b8f__d11e136">Click Run
+6.  Click Run
     report to send your report request.
 
 

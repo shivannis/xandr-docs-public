@@ -1,6 +1,7 @@
 ---
 Title : Buying Microsoft Deals
 Description : You can buy deals from the Microsoft Advertising Exchange and
+ms.date : 10/28/2023
 Microsoft’s Australia and New Zealand inventory using our Package
 Marketplace.
 ---
@@ -17,7 +18,7 @@ Marketplace.
 
 
 - For more general information about buying deals, see
-  <a href="buying-deals.html" class="xref">Buying Deals</a>.
+  <a href="buying-deals.md" class="xref">Buying Deals</a>.
 - To create a more customized deal, or if you have any further questions
   about buying Microsoft programmatic deals, please contact
   GSETsales@xandr.com.

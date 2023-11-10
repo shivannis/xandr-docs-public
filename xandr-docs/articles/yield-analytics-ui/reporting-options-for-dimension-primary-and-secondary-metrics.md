@@ -1,28 +1,22 @@
 ---
-Title : Reporting Options for Dimension, Primary, and Secondary Metrics
-Description : The most commonly used dimension and metric options are noted with an
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-asterisk.
+title: Reporting Options for Dimension, Primary, and Secondary Metrics
+description: This article lists the reporting options for Dimension, Primary, and Secondary metrics.
+ms.date: 11/06/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Reporting options for Dimension, Primary, and Secondary metrics
 
-# Reporting Options for Dimension, Primary, and Secondary Metrics
+The most commonly used dimension and metric options are noted with an asterisk.
 
+## Options for dimension
 
-
-The most commonly used dimension and metric options are noted with an
-asterisk.
-
-
-## Options for Dimension
-
-**Product Dimensions**
+**Product dimensions**
 
 - Product\*
 - Target\*
 
-**Order/Order Line Dimensions**
+**Order/Order line dimensions**
 
 - Close Date
 - Consumption Date\*
@@ -40,23 +34,19 @@ asterisk.
 - Source System
 - Start Date
 
-**Customer Dimensions**
+**Customer dimensions**
 
 - Advertiser
 - Agency
 - Industry
 
-**Sales Team Dimensions**
+**Sales team dimensions**
 
-- Salesperson
+Salesperson
 
+## Options for Primary and Secondary metrics
 
-
-
-## Options for Primary and Secondary Metrics
-
-The available metrics options depend on the which dimension you choose.
-You cannot select the same option for the primary and secondary metric.
+The available metrics options depend on the which dimension you choose. You cannot select the same option for the primary and secondary metric.
 
 **Sales**
 
@@ -122,36 +112,13 @@ You cannot select the same option for the primary and secondary metric.
 - Pacing
 - Pacing (Lifetime)
 
+## Related topics
 
-
-
-## Related Topics
-
-
-
-
-- <a href="create-a-new-report.md" class="xref">Create a New Report</a>
-- <a href="compare-two-data-sets.md" class="xref">Compare Two Data
-  Sets</a>
-- <a href="open-and-edit-an-existing-report.md" class="xref">Open and
-  Edit an Existing Report</a>
-- <a href="save-and-share-a-report.md" class="xref">Save and Share a
-  Report</a>
-- <a href="schedule-a-report-to-be-sent.md" class="xref">Schedule a
-  Report to be Sent</a>
-- <a href="export-a-report.md" class="xref">Export a Report</a>
-- <a href="anatomy-of-the-reports-tab.md" class="xref">Anatomy of the
-  Reports Tab</a>  
-    
-
-
-
-
-<a href="reports-overview.md" class="link">Reports
-Overview</a>
-
-
-
-
-
-
+- [Create a New Report](./create-a-new-report.md)
+- [Compare Two Data Sets](./compare-two-data-sets.md)
+- [Open and Edit an Existing Report](./open-and-edit-an-existing-report.md)
+- [Save and Share a Report](./save-and-share-a-report.md)
+- [Schedule a Report to be Sent](./schedule-a-report-to-be-sent.md)
+- [Export a Report](./export-a-report.md)
+- [Anatomy of the Reports Tab](./anatomy-of-the-reports-tab.md)
+- [Reports Overview](./reports-overview.md)

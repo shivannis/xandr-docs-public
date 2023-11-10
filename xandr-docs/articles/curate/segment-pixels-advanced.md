@@ -1,6 +1,7 @@
 ---
 Title : Segment Pixels: Advanced
 Description : Secure Pixels
+ms.date : 10/28/2023
 The UI allows you to create secure pixels, or
 pixels to be placed on HTTPS pages. To do this manually, simply create a
 ---
@@ -21,7 +22,7 @@ pixel as usual and then make two small changes:
 
 
 
-Note: Secure pixels **must** be placed
+<b>Note:</b> Secure pixels **must** be placed
 on a **secure** page. In addition, insecure pixels **must** be placed on
 an **insecure** page.
 
@@ -67,7 +68,7 @@ be JavaScript as well
 An image pixel looks like this, with a t=2 parameter:
 
 ``` pre
-<img src="https://ib.adnxs.com/seg?add=11837&t=2" width="1" height="1" /> 
+<img src="media/seg?add=11837&t=2" width="1" height="1" /> 
 ```
 
 A JavaScript pixel looks like this, with a t=1 parameter:
@@ -109,7 +110,7 @@ class="ph codeph">add_code</code></td>
 <td class="entry" headers="ID-00005312__entry__2">Comma-separated list
 of segment codes to add for the user.
 
-Note: Member parameter is required when
+<b>Note:</b> Member parameter is required when
 using codes. Codes are case-sensitive.
 </td>
 <td class="entry" headers="ID-00005312__entry__3"><pre
@@ -129,7 +130,7 @@ class="ph codeph">remove_code</code></td>
 <td class="entry" headers="ID-00005312__entry__2">Comma-separated list
 of segment codes to remove for the user.
 
-Note: Member parameter is required when
+<b>Note:</b> Member parameter is required when
 using codes. Codes are case-sensitive.
 </td>
 <td class="entry" headers="ID-00005312__entry__3"><pre
@@ -164,7 +165,7 @@ class="ph">line item.
 parameter. Instead, implement this as a colon (:) after the segment ID.
 An example can be found in the column to the right.</p>
 
-Note: If the user is being added to
+<b>Note:</b> If the user is being added to
 multiple segments in the call, the "value" parameter will apply to all
 the segments in the call. To apply values to individual segments in a
 multi-segment call, instead put a ":" after the segment ID. For example:
@@ -198,8 +199,8 @@ class="pre codeblock"><code>add=1234:65</code></pre></td>
 class="ph codeph">other</code></td>
 <td class="entry" headers="ID-00005312__entry__2">A user-defined,
 page-level segment modifier value. This should only be used for <a
-href="segment-modifier-testing-guidelines.html"
-class="xref">segment-modifier-testing-guidelines.html</a> integrations
+href="segment-modifier-testing-guidelines.md"
+class="xref">segment-modifier-testing-guidelines.md</a> integrations
 (see Page-Level Modifiers on that page).</td>
 <td class="entry" headers="ID-00005312__entry__3">other=2</td>
 </tr>
@@ -211,7 +212,7 @@ Examples
 **Adding Segment Pixels using Segment ID**
 
 ``` pre
-<img src="https://ib.adnxs.com/seg?add=1,2,4" width=1 height=1/> 
+<img src="media/seg?add=1,2,4" width=1 height=1/> 
 ```
 
 **Segment Pixels using Segment Code**
@@ -219,19 +220,19 @@ Examples
 If using codes, your member id is required.
 
 ``` pre
-<img src="https://ib.adnxs.com/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
+<img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
 ```
 
 **Adding and Removing Segments in One Call**
 
 ``` pre
-<img src="https://ib.adnxs.com/seg?add=1,2,4&remove=3" width=1 height=1/> 
+<img src="media/seg?add=1,2,4&remove=3" width=1 height=1/> 
 ```
 
 **Redirect to Another URL/Pixel**
 
 ``` pre
-<img src="https://ib.adnxs.com/seg?add=1,2,4&redir=https://ad.yieldmanager.com/pixel?id=1243" width=1 height=1 /> 
+<img src="media/pixel?id=1243" width=1 height=1 /> 
 ```
 
 Targeting Segment Values

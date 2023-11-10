@@ -1,6 +1,7 @@
 ---
 Title : Introduction to Viewability
 Description : This page provides an overview of viewability in digital media as well
+ms.date : 10/28/2023
 as information about why viewability is important, how it works, and
 current Xandr support for viewability.
 ---
@@ -66,8 +67,8 @@ conditions must be met:
 
 The following are examples of creatives that are not viewable:
 
-<img src="../images/introduction-to-viewability/not-viewable.png"
-class="image" />
+![media not viewable](media/not-viewable.png)
+
 
 Viewability depends on a myriad of parameters: screen size, creative
 loading duration, and so on.
@@ -87,8 +88,8 @@ creative. This script is called for each individual ad-impression. It
 launches automatically as the page loads, and immediately starts
 measuring if and when the creative is viewable.
 
-<img src="../images/introduction-to-viewability/viewability-tech.jpg"
-class="image" />
+![Viewability tech]("media/viewability-tech.png")
+
 
 The primary method that the script will use to determine whether an ad
 is viewable is "page geometry", which takes into account the size of the
@@ -107,11 +108,9 @@ Alternative methods, such as browser optimization, must be developed.
 Depending on the technologies used by ad-viewability vendors, the
 potential success rate can be very limited.
 
-<img src="../images/introduction-to-viewability/IFrame-measurement.jpg"
-class="image" />
+![IFrame](media/iframe-measurement.png)
 
-<img src="../images/introduction-to-viewability/viewability-tech2.png"
-class="image" />
+![viewability tech - B](media/viewability-tech-b.png)
 
 In some instances, viewability cannot be measured with success. In these
 cases, no assumption can be made on the viewability of the impression.
@@ -147,9 +146,8 @@ Measurement Technology
 Viewability measurement on Xandr is tested continuously across all major
 browser versions, including web, mobile app, and mobile web context.
 
-<img
-src="../images/introduction-to-viewability/viewability-measurement.jpg"
-class="image" />
+![Viewability Measurement](media/viewability-measurement.png)
+
 
 
 

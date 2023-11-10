@@ -1,6 +1,7 @@
 ---
 Title : Impression Funnel: Seller Deals
-Description : Note: This functionality currently is
+Description : <b>Note:</b> This functionality currently is
+ms.date : 10/28/2023
 in Open Beta. It is still under development and may be subject to change
 ---
 
@@ -11,7 +12,7 @@ in Open Beta. It is still under development and may be subject to change
 
 
 
-Note: This functionality currently is
+<b>Note:</b> This functionality currently is
 in Open Beta. It is still under development and may be subject to change
 without notice. Contact your Xandr Account Representative to get
 enabled.
@@ -209,7 +210,7 @@ by this value.</p></td>
 
 
 
-Note: To download the data from the
+<b>Note:</b> To download the data from the
 table, you can navigate to the
 Troubleshooting Reports panel.
 
@@ -232,7 +233,7 @@ Troubleshooting Reports panel.
 
 ## Related Topics
 
-- <a href="curate-impression-funnel.html" class="xref">Impression
+- <a href="curate-impression-funnel.md" class="xref">Impression
   Funnel</a>
 
 

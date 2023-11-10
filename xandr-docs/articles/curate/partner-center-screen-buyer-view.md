@@ -1,6 +1,7 @@
 ---
 Title : Partner Center Screen
 Description : On the Partner Center screen you can
+ms.date : 10/28/2023
 view your preferred partners, search all sellers, and review impression
 and click statistics for each seller.
 ---
@@ -40,7 +41,7 @@ transactions across the platform. The
 **Transactions with Seller**
 columns will display statistics on your transactions with the seller.
 See
-<a href="partner-center-screen-buyer-view.html#ID-00000b82__ID-00000c0f"
+<a href="partner-center-screen-buyer-view.md#ID-00000b82__ID-00000c0f"
 class="xref">Searching for Sellers</a> to find a specific type of seller
 and then review the statistics to determine if you'd like to partner
 with the seller.
@@ -65,7 +66,7 @@ Transactions with Seller
 - CTR - Your click-through rate on the
   seller's inventory. For more information on click-through rates see
   the <a
-  href="https://docs.xandr.com/bundle/industry-reference/page/online-advertising-and-ad-tech-glossary.html"
+  href="industry-reference/online-advertising-and-ad-tech-glossary.md"
   class="xref" target="_blank">Glossary</a>.
 - Convs - The number of conversions
   that were attributed to inventory that you purchased from the seller.
@@ -79,7 +80,7 @@ Seller eligibility, history, and deals
 
 
 
-Tip: **Get to Know
+<b>Tip:</b> **Get to Know
 Xandr Direct**
 
 Xandr Direct is a group of 100+
@@ -88,7 +89,7 @@ selling owned and operated inventory or selling through exclusive
 relationships with publishers.
 
 For more information, please see
-<a href="appnexus-direct-for-buyers.html" class="xref"
+<a href="appnexus-direct-for-buyers.md" class="xref"
 title="This page explains what Xandr Direct is and other helpful details for using it."><span
 class="ph">Xandr Direct</a> or contact
 <a href="mailto:appnexusdirect@appnexus.com" class="xref"
@@ -135,14 +136,14 @@ Viewing Partnership Details
 Click on a partner's name to view Partner Details so you can manage your
 relationship with a specific seller by reviewing spending trends,
 packages, and active and upcoming deals. See
-<a href="partnership-details-screen-buyer-view.html"
+<a href="partnership-details-screen-buyer-view.md"
 class="xref">Partnership Details Screen</a>, for more information.
 
 Related Topics
 
-- <a href="managing-relationships-with-sellers.html" class="xref">Managing
+- <a href="managing-relationships-with-sellers.md" class="xref">Managing
   Relationships with Sellers</a>
-- <a href="partnership-details-screen-buyer-view.html"
+- <a href="partnership-details-screen-buyer-view.md"
   class="xref">Partnership Details Screen</a>
 
 

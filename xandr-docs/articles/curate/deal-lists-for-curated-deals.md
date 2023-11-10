@@ -1,6 +1,7 @@
 ---
 Title : Deal Lists for Curated Deals
 Description : A deal is an agreement between a buyer, curator or seller that provides
+ms.date : 10/28/2023
 special access to inventory and/or data. Deals are primarily used to
 ---
 
@@ -40,7 +41,6 @@ a list in bulk.
 
 **Create a New Deal List**
 
-<div id="deal-lists-for-curated-deals__p-d06fb52b-ab2f-448b-8839-99bffbba5b74"
 >
 
 1.  In the Inventory menu
@@ -82,7 +82,7 @@ a list in bulk.
 
         
 
-        Note: Deals with pending,
+        <b>Note:</b> Deals with pending,
         active, or null deal acceptance status can be added to a deal
         list. Inactive or Declined deals are ineligible deals which
         cannot be added to a deal list.
@@ -128,7 +128,6 @@ beable to target either individual deals or deal lists.
 
 **To target all deals available to you:**
 
-<div id="deal-lists-for-curated-deals__p-19add53e-7d2f-4dde-813f-d9592ba3df4c"
 >
 
 - Select All Deals.
@@ -137,7 +136,6 @@ beable to target either individual deals or deal lists.
 
 **To target specific deals available to you:**
 
-<div id="deal-lists-for-curated-deals__p-c477b038-5617-4fe3-b7db-d57d596df858"
 >
 
 1.  Select Specific Deals.
@@ -171,11 +169,11 @@ beable to target either individual deals or deal lists.
     type="a">
     <li>Search for available deals by name, alias, ID, or code to
     target.</li>
-    <li>Include deals by clicking the <img
-    src="../images/psp-demand-partner-integration/check.svg"
-    class="image" />.
+    <li>Include deals by clicking the 
+    ![Check](media/check.png)
     
-    Tip: You can also click the eye button
+    
+    <b>Tip:</b> You can also click the eye button
     to view additional details about the deal such
     as <strong>Currency</strong>, <strong>Type</strong>, <strong>Sizes</strong>, <strong>Brands</strong>, <strong>Media
     Types</strong>, <strong>Start Date</strong>, and <strong>End
@@ -191,10 +189,9 @@ beable to target either individual deals or deal lists.
     headers="deal-lists-for-curated-deals__table-0606abab-aabb-483c-8019-94a345f99aa2__entry__2"><ol
     type="a">
     <li>Search for available deal lists by ID or name to target.</li>
-    <li>Include deals by clicking the <img
-    src="../images/psp-demand-partner-integration/check.svg"
-    id="deal-lists-for-curated-deals__image-31ba90d8-7491-46e6-ad63-bdc5d8e172ce"
-    class="image" />.</li>
+    <li>Include deals by clicking the 
+    ![Check](media/check.png)
+   .</li>
     </ol></td>
     </tr>
     </tbody>
@@ -202,7 +199,7 @@ beable to target either individual deals or deal lists.
 
     
 
-    Note: You may only include deals
+    <b>Note:</b> You may only include deals
     and deal lists in your targeting. It is not possible to exclude
     deals or deal lists. You can include a mix of deals and deal lists
     in your targeting.

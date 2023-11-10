@@ -1,6 +1,7 @@
 ---
 Title : User Mapping Visual and Walk-Through
-Description : <a href="user-id-mapping-with-getuid-and-mapuid.html" class="xref">User
+Description : <a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
+ms.date : 10/28/2023
 ---
 
 
@@ -8,7 +9,7 @@ Description : <a href="user-id-mapping-with-getuid-and-mapuid.html" class="xref"
 
 
 
-<a href="user-id-mapping-with-getuid-and-mapuid.html" class="xref">User
+<a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
 ID Mapping</a> describes how to map your internal user IDs and
 Xandr user IDs so that you can pass
 Xandr your internal userdata that you will use
@@ -31,7 +32,8 @@ assume that Xandr has "seen" this user before
 somewhere in their system and so has marked the user's browser cookie
 with an Xandr user ID.
 
-<img src="../images/user-mapping-visual/usermap.jpg" class="image" />
+![usermap](media/usermap.png)
+
 
 **Step 1.** When the page loads, the browser makes this call/request to
 Xandr:

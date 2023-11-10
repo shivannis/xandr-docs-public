@@ -2,6 +2,7 @@
 title : User ID(s) Mapping on iOS
 description : The article provides instructions on mapping user IDs on iOS.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # User ID(s) mapping on iOS

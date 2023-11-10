@@ -1,6 +1,7 @@
 ---
 Title : Partner Center Screen - Seller View
 Description : On the Partner Center screen you can
+ms.date : 10/28/2023
 view your partners, search all buyers, manage your profile, manage your
 default buyer settings, and review impression and click statistics for
 each buyer.
@@ -45,7 +46,7 @@ been audited by Xandr
 (Platform-reviewed).
 
 For step-by-step instructions on customizing your profile, see
-<a href="customize-your-seller-profile.html" class="xref">Customize Your
+<a href="customize-your-seller-profile.md" class="xref">Customize Your
 Seller Profile</a>.
 
 Setting Buyer Defaults
@@ -55,13 +56,13 @@ targeting access settings for all demand partners within the
 Default Settings dialog.
 
 For step-by-step instructions on setting your default settings, see <a
-href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a> .
 
 It is possible to override these settings for individual demand
 partners. For details, see <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>.
 
@@ -73,9 +74,9 @@ Setting default buyer eligibility
   requirements). If you select this, you must define the payment methods
   you will accept and the targeting information you will provide. See
   the <a
-  href="partner-center-screen-seller-view.html#ID-00000600__ID-00000651"
+  href="partner-center-screen-seller-view.md#ID-00000600__ID-00000651"
   class="xref">Setting default allowed payment types</a> and <a
-  href="partner-center-screen-seller-view.html#ID-00000600__ID-0000065b"
+  href="partner-center-screen-seller-view.md#ID-00000600__ID-0000065b"
   class="xref">Setting default targeting access</a> sections (below).
 - Blocked - You will **not** sell any
   inventory to this member for any number of reasons. For example, you
@@ -126,7 +127,7 @@ buyer's member name and ID will display along with statistics. The
 statistics reflect your transactions with the buyer over the time period
 indicated in the Show Transactions
 From drop-down. Search for buyers (see the <a
-href="partner-center-screen-seller-view.html#ID-00000600__ID-00000693"
+href="partner-center-screen-seller-view.md#ID-00000600__ID-00000693"
 class="xref">Searching for buyers</a> section) to find a specific type
 of buyer and then review the statistics to determine if you'd like to
 partner with the buyer.
@@ -181,22 +182,22 @@ Click on a buyer's name to view the Partner Details screen for that
 buyer. You can then review and manage your relationship with the buyer,
 view spending trends, and access any active or upcoming deals.
 
-See <a href="partnership-details-screen-seller-view.html"
+See <a href="partnership-details-screen-seller-view.md"
 class="xref">Partnership Details Screen - Seller View</a> for more
 information.
 
 Related Topics
 
 - <a
-  href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+  href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
   class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
   Targeting Access</a>
-- <a href="managing-relationships-with-buyers.html" class="xref">Managing
+- <a href="managing-relationships-with-buyers.md" class="xref">Managing
   Relationships with Buyers</a>
-- <a href="partnership-details-screen-seller-view.html"
+- <a href="partnership-details-screen-seller-view.md"
   class="xref">Partnership Details Screen - Seller View</a>
 - <a
-  href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+  href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
   class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
   Targeting Access</a>
 

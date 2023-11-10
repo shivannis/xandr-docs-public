@@ -1,6 +1,7 @@
 ---
 Title : Create a User
 Description : You can create users and assign them to various roles. Each role gives
+ms.date : 10/28/2023
 ---
 
 
@@ -37,16 +38,15 @@ Create User dialog.
 From the User Details tab, enter the
 user's Contact Information.
 
-<div id="ID-00000577__p-e02a8b7a-9a7c-4e8d-b42d-ea004893cc4b" >
 
 
 
-Note: The email ID enetered here will
+<b>Note:</b> The email ID enetered here will
 be the primary username for signing into the Xandr products via the
 Microsoft Identity Platform. Ensure the email is consistent across any
 accounts in the Xandr platform, and matches the user's email for
 authenticating to Microsoft products. For more details, visit
-<a href="microsoft-identity-platform-login.html" class="xref"
+<a href="microsoft-identity-platform-login.md" class="xref"
 title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
 Identity Platform Login</a>.
 
@@ -56,7 +56,7 @@ Identity Platform Login</a>.
 
 
 
-Note: If the State is set to Inactive,
+<b>Note:</b> If the State is set to Inactive,
 the user will not be able to log in.
 
 
@@ -75,7 +75,7 @@ format chosen here for this user.
   when viewing numbers in reports.
   
 
-  Note: When the Comma format is
+  <b>Note:</b> When the Comma format is
   selected, users will not be able to export a report using CSV format.
 
   
@@ -102,7 +102,7 @@ user.
 
 
 
-Note: Once the user has been created,
+<b>Note:</b> Once the user has been created,
 you will not be able to change the user's role. To grant someone a
 different level of access to Curate, you will
 have to create a new user.
@@ -118,7 +118,7 @@ campaign performance.
 
 
 
-Note: The peer approval feature sets
+<b>Note:</b> The peer approval feature sets
 requirements for who must obtain approval, but not who has the ability
 to approve. Any other user who is able to create campaigns for your
 network can provide this approval. There is no way to designate a single

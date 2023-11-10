@@ -2,6 +2,7 @@
 title: Click-Through URL on iOS
 description: In this article, learn what click-through refers to and the methods used to implement it on iOS with examples.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Click-through URL on iOS

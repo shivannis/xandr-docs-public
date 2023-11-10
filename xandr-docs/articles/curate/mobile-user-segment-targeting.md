@@ -1,6 +1,7 @@
 ---
 Title : Mobile User Segment Targeting
-Description : Note: This form of targeting is only
+Description : <b>Note:</b> This form of targeting is only
+ms.date : 10/28/2023
 available to Standard Line Items. For an overview of which targeting
 ---
 
@@ -11,10 +12,10 @@ available to Standard Line Items. For an overview of which targeting
 
 
 
-Note: This form of targeting is only
+<b>Note:</b> This form of targeting is only
 available to Standard Line Items. For an overview of which targeting
 options are available to Standard versus Augmented Line items, see
-<a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>.
+<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>.
 
 
 
@@ -44,12 +45,12 @@ and batch segment service\*
   your account.
 - Once you have your list of user IDs, you can load them into segments
   using the <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+  href="xandr-api/batch-segment-service.md"
   class="xref" target="_blank">Batch Segment Service</a>.
 - This will be a standard batch segment upload.
 
 \*Requires API access and <a
-href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+href="xandr-api/batch-segment-service.md"
 class="xref" target="_blank">Batch Segment Service</a>.
 
 Method 3: Use the batch segment service to upload your own list of
@@ -58,17 +59,17 @@ device IDs\*
 - If you have a list of device IDs gathered from your advertisers or
   external attribution tracking system, you can also add these to
   segments using the <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+  href="xandr-api/batch-segment-service.md"
   class="xref" target="_blank">batch segment service</a>.
 - Be sure to use <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service---file-format.html"
+  href="xandr-api/batch-segment-service---file-format.md"
   class="xref" target="_blank"><code
   class="ph codeph">SEPARATOR5</code></a> to designate that you will be
   uploading device IDs and instead of the standard
   Xandr user IDs.
 
 \*Requires API access and <a
-href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+href="xandr-api/batch-segment-service.md"
 class="xref" target="_blank">Batch Segment Service</a>.
 
 Best Practices for Targeting Mobile Users

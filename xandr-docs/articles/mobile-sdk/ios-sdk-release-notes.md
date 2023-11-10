@@ -2,6 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore information about the iOS SDK release notes.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS SDK release notes

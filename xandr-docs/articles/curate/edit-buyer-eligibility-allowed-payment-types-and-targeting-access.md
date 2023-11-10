@@ -1,6 +1,7 @@
 ---
 Title : Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
 Description : You can set the eligibility, allowed payment types, and targeting access
+ms.date : 10/28/2023
 for buyers within the Partner Center
 screen or in the Partner Controls tab.
 ---
@@ -20,7 +21,7 @@ settings for the buyer.
 
 
 
-Note: While you can manage these
+<b>Note:</b> While you can manage these
 settings in the **Partner Center** and in the
 Partner Controls tab, you can only
 view the buyer's current settings in the
@@ -30,9 +31,9 @@ Partner Controls tab.
 
 
 
-Tip: For more information about the
+<b>Tip:</b> For more information about the
 settings described on this page, see <a
-href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.html"
+href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
 class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
 Targeting Access</a>
 
@@ -71,7 +72,7 @@ checkbox near CPA and/or CPC in addition to CPM.
 
 
 
-Note: The only allowed deal type for
+<b>Note:</b> The only allowed deal type for
 external buyers is CPM.
 
 
@@ -93,7 +94,7 @@ buyers.
 
 
 
-Note: Age and gender targeting
+<b>Note:</b> Age and gender targeting
 information can only be shared if you include the
 Xandr age and gender macro when exporting your
 placement tag.
@@ -145,7 +146,7 @@ the checkbox near CPC and/or CPA in addition to CPM.
 
 
 
-Note: The only allowed payment type for
+<b>Note:</b> The only allowed payment type for
 external buyers is CPM.
 
 
@@ -162,7 +163,7 @@ give buyers, the more easily they can target your inventory.
 
 
 
-Note: Age and gender targeting
+<b>Note:</b> Age and gender targeting
 information can only be shared if you include the
 Xandr age and gender macro when exporting your
 placement tag.
