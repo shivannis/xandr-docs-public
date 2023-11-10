@@ -51,25 +51,23 @@ The recommended way to initially create reporting products, is by creating vari
 
 Create a host of products based on the below items. You can create reporting products for:
 
-**Geography**  - Every county / state / DMA.  
+**Geography** - Every county / state / DMA.  
 **Example**: Tracking_Geo_ROS_Arizona_AllSizes, Tracking_ROS_Arkansas_AllSizes, etc.
 
-**Content**  - Every combination of site / section / topic / subtopic.
+**Content** - Every combination of site / section / topic / subtopic.
 **Example**: Tracking_Content_SportsSite_ProfessionalLeague_MLB_Yankees
 
-**Audience**  - Every combination of audience type / value.
+**Audience** - Every combination of audience type / value.
 **Example**: Tracking_ROS_Audience_Demo_Gender_Male, Tracking_ROS_Audience_Purchase_Auto_Luxury, etc.
 
 **Ad Unit**  - Every combination of ad unit.
 **Example**: Tracking_AdUnit_ROS_Video_AllSizes, Tracking_ROS_Display_AllSizes
 
-**Platform**  - Every platform.
+**Platform** - Every platform.
 **Example**: Tracking_Platform_ROS_Mobile_AllSizes
 
-**Page Template**  - This is a rarely used element, but one that can be especially insightful for optimization and viewability metrics.
-**Example**:
-Tracking_Template_ROS_ArticlePages_AllSizes,
-Tracking_Template_ROS_Slideshows_AllSizes
+**Page Template** - This is a rarely used element, but one that can be especially insightful for optimization and viewability metrics.
+**Example**: Tracking_Template_ROS_ArticlePages_AllSizes, Tracking_Template_ROS_Slideshows_AllSizes
 
 Once you have these basics in place, consider where it may be applicable to do cross category combinations. Perhaps you desire a platform-specific version of every content reporting product, or an audience-specific version of every geo product.
 

@@ -5,7 +5,9 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Batch builder
+
 The Batch Builder allows you to collect multiple lookups that you can then run as a batch. This is particularly useful if you want to run a large number of lookups, or if you want to save and reuse a set of lookups either on a scheduled or ad hoc basis.
+
 ## Saving a batch
 
 - Open a batch that is already saved. Make any desired changes to it.

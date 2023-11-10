@@ -5,6 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Availability lookup - quick start guide
+
 The **Availability Lookup** screen appears in the **Availability** drop-down.
 
 ## Basic concepts
