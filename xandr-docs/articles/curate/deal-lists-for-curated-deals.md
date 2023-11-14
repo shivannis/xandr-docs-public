@@ -53,8 +53,8 @@ Select **All Deals**.
 
     | Menu Option | Steps |
     |:---|:---|
-    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br>b. Include deals by clicking the :::image type="icon" source="../media/check.png":::<br><br> **Tip**: You can also click the **eye** button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
-    | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the :::image type="icon" source="../media/check.png"::: |
+    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br>b. Include deals by clicking the :::image type="icon" source="./media/check-edited.png":::<br><br> **Tip**: You can also click the **eye** button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
+    | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the :::image type="icon" source="./media/check-edited.png"::: |
 
    > [!NOTE]
    > You may only include deals and deal lists in your targeting. It is not possible to exclude deals or deal lists. You can include a mix of deals and deal lists in your targeting.

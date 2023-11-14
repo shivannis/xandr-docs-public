@@ -65,7 +65,7 @@ All of the examples below will use the same underlying "database", which contain
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](../attachments dimensions-metrics-filtering-and-grouping/tiny-db.csv) the example in CSV format.
+You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/tiny-db.csv) the example in CSV format.
 
 ## Filtering examples
 
