@@ -55,7 +55,7 @@ Each video inventory type can be targeted using RTB or Deals. To target Microsof
 
 ## Availability and volume
 
-To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](../attachments/buying-microsoft-video-inventory/msft-video-volume-by-format-final-june-2017.xlsx).
+To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](https://ads.microsoft.com/UnknownUser?s_int=en_us_acsignup_policiesandguidelinespolicieslandingpage&idP=AAD).
 
 Here are some quick volume metric highlights:
 
