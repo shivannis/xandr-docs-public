@@ -27,10 +27,9 @@ Advertisers inherit the time zone of the member when they are first created, unl
 
 When you change an advertiser's time zone, you can choose to apply the change to existing child objects. New objects that are created after the change (line items, creatives) will inherit the parent advertiser's time zone.
 
-> [!NOTE]
-> **Eastern Daylight Time and Eastern Standard Time**
->
-> In our reporting system, ET (Eastern Time) will automatically take Daylight Saving Time into account. Eastern Daylight Time ([EDT](http://en.wikipedia.org/wiki/Eastern_Daylight_Time)) will always mean UTC - 4 hours. Eastern Standard Time ([EST](http://en.wikipedia.org/wiki/Eastern_Time_Zone)) will always mean UTC - 5 hours.
+## A note on Eastern Daylight Time and Eastern Standard Time
+
+In our reporting system, ET (Eastern Time) will automatically take Daylight Saving Time into account. Eastern Daylight Time ([EDT](http://en.wikipedia.org/wiki/Eastern_Daylight_Time)) will always mean UTC - 4 hours. Eastern Standard Time ([EST](http://en.wikipedia.org/wiki/Eastern_Time_Zone)) will always mean UTC - 5 hours.
 
 ## Daylight savings and reporting
 

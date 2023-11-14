@@ -1,7 +1,7 @@
 ---
 title: Device Type Targeting
-description: 
-ms.date : 11/10/2023
+description: This article provides instructions to access device type targeting options.
+ms.date: 11/10/2023
 ---
 
 # Device type targeting
@@ -28,7 +28,8 @@ To access device type targeting options, expand the **Targeting** section of the
 
   > [!NOTE]
   > - **Connected Audio** is only available in Invest.
-  > - When targeting devices models **Targeting** > **System** > **Device Model** with **Make** = **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
+  >
+  > - When targeting devices models **Targeting** \> **System** \> **Device Model** with **Make** = **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
 
 ## Related topics
 

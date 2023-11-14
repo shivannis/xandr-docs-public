@@ -1,75 +1,43 @@
 ---
-Title : Export a Segment Pixel
-Description : Step 1: Get started
-ms.date : 10/28/2023
-Go to the Segment Pixel list in the
-Segments screen
-(Audiences
-\>  Segment Manager), select
-the check box next to the segment pixel that you want to export, click
-More Actions, and select
-Export pixels. This displays the
+title: Export a Segment Pixel
+description: This article provides steps to export a segment pixel.
+ms.date: 11/14/2023
 ---
 
+# Export a segment pixel
 
-# Export a Segment Pixel
+Follow the steps provided on this page to export a segment pixel.
 
+## Step 1: Get started
 
+Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Segment Manager**), select the checkbox next to the segment pixel that you want to export, click **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
 
-Step 1: Get started
+## Step 2: Select the pixel format
 
-Go to the Segment Pixel list in the
-Segments screen
-(Audiences
-\>  Segment Manager), select
-the check box next to the segment pixel that you want to export, click
-More Actions, and select
-Export pixels. This displays the
-Export Pixels dialog.
+We recommend that you select **Use a JavaScript tag**. Selecting Generate non-secure pixel can result in browser warnings and/or the pixel not firing.
 
-Step 2: Select the pixel format
+## Step 3: Select the delivery options
 
-We recommend that you select Use a JavaScript
-tag. Selecting Generate non-secure
-pixel can result in browser warnings and/or the pixel not firing.
+In the **Delivery Options** section, select whether you want to generate the tags on screen, or whether you would rather send the tags via email. If you select to email the tags, you can enter up to 10 email addresses, separated by commas.
 
-Step 3: Select the delivery options
+## Step 4: Explore advanced options
 
-In the Delivery Options section,
-select whether you want to generate the tags on screen, or whether you
-would rather send the tags via email. If you select to email the tags,
-you can enter up to 10 email addresses, separated by commas.
+In the **Advanced Options** section, you can select additional values to include in the pixel tag.
 
-Step 4: Explore advanced options
+- **Use codes**: to generate a pixel with your external code (the value you entered when creating the pixel) and your member ID instead of the Xandr pixel ID
+- **Add user to segments on call**: enables you to add additional segments
+- **Remove user from segments on call**: enables you to remove the user from segments
+- **Parameter**:
+  - Include dynamic value: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel. The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
+  - Include a redirect URL: Redirect URL used to piggyback another pixel
 
-In the Advanced Options section, you can select additional values to
-include in the pixel tag.
+## Step 5: Generate the tags
 
-- Use codes: to generate a pixel with
-  your external code (the value you entered when creating the pixel) and
-  your member ID instead of the Xandr pixel ID
-- Add user to segments on call:
-  enables you to add additional segments
-- Remove user from segments on call:
-  enables you to remove the user from segments
-- Parameter:
-  - Include dynamic value: Values are non-negative integers that can be
-    associated and stored with the user at the time of firing the pixel.
-    The same value can be the same across segments in the pixel ("across
-    all segments" option) or they can be specific to each segment in the
-    pixel ("for each segment" option).
-  - Include a redirect URL: to redirect URL used to piggyback another
-    pixel
-
-Step 5: Generate the tags
-
-Click the Generate Tags button.
-Depending on the delivery option selected, the tags either are displayed
-on the screen or emailed to the addresses specified.
+Click the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
 
 An image pixel looks something like this:
 
-``` pre
+```
 <!-- Segment Pixel - test - DO NOT MODIFY -->
 <img src="media/seg?add=528336&t=2" width="1" height="1" />
 <!-- End of Segment Pixel -->
@@ -77,20 +45,13 @@ An image pixel looks something like this:
 
 A JavaScript pixel looks something like this:
 
-``` pre
+```
 <!-- Segment Pixel - test - DO NOT MODIFY -->
 <script src="https://secure.adnxs.com/seg?add=528336&t=1" type="text/javascript"></script>
 <!-- End of Segment Pixel -->
 ```
 
-Related Topics
+## Related topics
 
-- <a href="segment-pixels-advanced.md" class="xref">Segment Pixels:
-  Advanced</a>
-- <a href="segment-targeting.md" class="xref"
-  title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
-  Targeting</a>
-
-
-
-
+- [Segment Pixels: Advanced](./segment-pixels-advanced.md)
+- [Segment Targeting](./segment-targeting.md)

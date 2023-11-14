@@ -1,28 +1,14 @@
 ---
-Title : Explore Insertion Orders
-Description : The Insertion Orders screen shows you
-ms.date : 10/28/2023
-essential metrics about all insertion orders under a specific
-advertiser, provides quick access to each insertion order's details, and
-reporting options.
+title: Explore Insertion Orders
+description: The Insertion Orders screen provides metrics and reporting options for individual advertisers. It allows quick access to insertion orders and line item configuration.
+ms.date: 11/14/2023
 ---
 
+# Explore insertion orders
 
-# Explore Insertion Orders
+The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and reporting options.
 
-
-
-
-
-The Insertion Orders screen shows you
-essential metrics about all insertion orders under a specific
-advertiser, provides quick access to each insertion order's details, and
-reporting options.
-
-This document describes the Insertion Order screen for individual
-advertisers.
-
-
+This document describes the **Insertion Orders** screen for individual advertisers.
 
 Things you can do on this page include:
 
@@ -31,220 +17,67 @@ Things you can do on this page include:
 - Drill down into line items to configure or troubleshoot
 - Create and edit insertion orders
 
-
-
-Get to the Insertion Orders Screen
+## Get to the insertion orders screen
 
 To get to the insertion orders screen:
 
-- On the Advertisers screen, find the
-  advertiser for which you want to view insertion orders and click the
-  button in the **Ins Orders**
-  column.
-- In Advertiser's Details view, click
-  on Insertion Orders.
+- On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and click the button in the **Ins Orders** column.
+- In **Advertiser's Details** view, click on **Insertion Orders**.
 
-Filter your Insertion Orders
+## Filter your insertion orders
 
-The **Advanced Filters** menu lets you filter for insertion orders based
-on Advertiser, State, Type, Insertion Order Name, Flight Start and End
-Date, and External Code. Click on **Apply** or **Apply and Save As**.
-The **Apply and Save As** option will save your filter for future
-purpose.
+The **Advanced Filters** menu lets you filter for insertion orders based on **Advertiser**, **State**, **Type**, **Insertion Order Name**, **Flight Start and End Date**, and **External Code**. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
 
-View Stats
+## View stats
 
-The metrics on the Insertion Orders
-screen help you quickly assess the performance and delivery of your
-insertion orders. These metrics are faster and more readily accessed
-than standard reporting data. They are cached on a regular basis and are
-shown whenever you open the Insertion
-Orders screen.
+The metrics on the **Insertion Orders** screen help you quickly assess the performance and delivery of your insertion orders. These metrics are faster and more readily accessed than standard reporting data. They are cached on a regular basis and are shown whenever you open the **Insertion Orders** screen.
 
-Note that these stats may not match the data from standard reporting
-exactly for technical reasons. For more information, see
-<a href="availability-of-reporting-data.md" class="xref">Availability
-of Reporting Data</a>.
+Note that these stats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](./availability-of-reporting-data.md).
 
+### Columns
 
+The following stats are shown for each insertion order. Note that the data always reflects the currently selected stats interval:
 
+| Stats | Description |
+|:---|:---|
+| **ID** | The unique identifier of insertion order. |
+| **Issues** | Setup issues that may prevent the insertion order or its associated line items from delivering. |
+| **Billing Period** | Insertion order's current billing period. |
+| **Curator Margin** | The profit a curator makes on a transaction. |
+| **Curator Revenue** | The amount of spend a buyer sends to the curator, net of buyer fees, if applicable. This is same as buyer media cost, exclusive of buyer fees. |
+| **Curator Margin %** | The percentage of profit a curator makes on a transaction. |
+| **Curator Margin eCPM** | The profit a curator makes on your network per 1000 impressions. |
+| **Curator Impressions** | The number of delivered impressions. |
+| **Type** | The type of the insertion order. |
+| **Today's Delivery** | Displays the number of impressions delivered on the current calendar day. |
+| **Order Status** | The status of the insertion order (Active or Inactive). |
+| **Line Items** | Total number of in-progress, active, and associated line items under the insertion order. |
+| **Last Hour's Delivery** | Displays the number of impressions delivered on the current calendar day up to the last hour. |
+| **Last 7 Days Delivery** | Displays the number of impressions delivered on full 7 days previous to the current calendar day, i.e., excluding today. |
+| **Yesterday's Delivery** | Displays the number of impressions delivered on full 24-hour period of the previous calendar day. |
 
+## Modify columns
 
-Columns
+You can choose the columns that are displayed by clicking the **Modify Columns** button.
 
-The following stats are shown for each insertion order. Note that the
-data always reflects the currently selected stats interval:
+This opens the **Modify Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display. If you want the columns to appear in a certain order, then you can drag and drop the columns at your desired location.
 
+## View insertion order details
 
+To view advanced details about an insertion order, click the insertion order's name.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000c96__entry__1"
-class="entry colsep-1 rowsep-1">Stats</th>
-<th id="ID-00000c96__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>ID</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-unique identifier of insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Issues</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Setup issues that may prevent the
-insertion order or its associated line items from delivering.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Billing Period</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Insertion order's current billing
-period.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Curator Margin</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-profit a curator makes on a transaction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Curator Revenue</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-amount of spend a buyer sends to the curator, net of buyer fees, if
-applicable. This is same as buyer media cost, exclusive of buyer
-fees.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Curator Margin %</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-percentage of profit a curator makes on a transaction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Curator Margin
-eCPM</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-profit a curator makes on your network per 1000 impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Curator
-Impressions</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-number of delivered impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Type</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-type of the insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Today's Delivery</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Displays the number of impressions
-delivered on the current calendar day.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Order Status</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000c96__entry__2">The
-status of the insertion order (Active or Inactive).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Line Items</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Total number of in-progress, active, and
-associated line items under the insertion order.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Last Hour's
-Delivery</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Displays the number of impressions
-delivered on the current calendar day up to the last hour.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Last 7 Days
-Delivery</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Displays the number of impressions
-delivered on full 7 days previous to the current calendar day, i.e.,
-excluding today.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__1"><strong>Yesterday's
-Delivery</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000c96__entry__2">Displays the number of impressions
-delivered on full 24-hour period of the previous calendar day.</td>
-</tr>
-</tbody>
-</table>
+See [View Insertion Order Details](./view-insertion-order-details.md) for more information.
 
+## Search by name/ID
 
+You can use the search field at the top of the screen to find all insertion orders whose names or IDs include a specific string of characters or numbers.
 
-Modify Columns
+## Report on insertion orders
 
-You can choose the columns that are displayed by clicking the
-Modify Columns button.
+You can initiate a report for one or more insertion orders directly from this screen. Select the checkbox for each insertion order that you want to report on and click Run Report.
 
-This opens the Modify Columns
-dialog. From there you can use the checkboxes to select or deselect the
-columns you want to display. If you want the columns to appear in a
-certain order, then you can drag and drop the columns at your desired
-location.
+## Related topics
 
-View Insertion Order Details
-
-To view advanced details about an insertion order, click the insertion
-order's name.
-
-See <a href="view-insertion-order-details.md" class="xref"
-title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
-Insertion Order Details</a> for more information.
-
-Search by Name/ID
-
-You can use the search field at the top of the screen to find all
-insertion orders whose names or IDs include a specific string of
-characters or numbers.
-
-Report on Insertion Orders
-
-You can initiate a report for one or more insertion orders directly from
-this screen. Check the box for each insertion order that you want to
-report on and click Run Report.
-
-
-
-
-
-Related Topics
-
-- <a href="view-insertion-order-details.md" class="xref"
-  title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
-  Insertion Order Details</a>
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
-- <a href="update-insertion-orders.md" class="xref">Update Insertion
-  Orders</a>
-
-
-
-
-
-
+- [View Insertion Order Details](./view-insertion-order-details.md)
+- [Create an Insertion Order](./create-an-insertion-order.md)
+- [Update Insertion Orders](./update-insertion-orders.md)
