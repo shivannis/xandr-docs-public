@@ -61,14 +61,14 @@ Intervals determine how your data is grouped together into rows in the report re
 
 | Column | Filter? | Description |
 |:---|:---|:---|
-| Curated Deal | Yes | Curated deal name / ID. |
-| Curated Deal Line Item | Yes | Line item name / ID of the curator member object that owns the deal line item associated with the curated deal. |
+| Curated Deal | Yes | Curated deal name/ID. |
+| Curated Deal Line Item | Yes | Line item name/ID of the curator member object that owns the deal line item associated with the curated deal. |
 | Targeting Type | Yes | Whether the segment contributed to the line item targeting by being included or excluded. Possible values: Inclusion or Exclusion. |
 | Segment | Yes | The unique identifier of a segment that targeted the impression.<br><br>**Note:** Curators running this report will only see segments that they assign to their deal line item objects. For example, a curator pulling this report will not see segments tied to a third-party seller deal that they are buying. |
 | Segment Owner | Yes | The unique identifier of the segment owner that owns the targeted segment(s). |
-| Bidder | Yes | Name / ID of the bidder who bought on the transaction. |
-| Buyer | Yes | Member name / ID of the buyer who bought on the transaction. |
-| Seller | Yes | Member name / ID of the seller where the curated transaction served on. |
+| Bidder | Yes | Name/ID of the bidder who bought on the transaction. |
+| Buyer | Yes | Member name/ID of the buyer who bought on the transaction. |
+| Seller | Yes | Member name/ID of the seller where the curated transaction served on. |
 | Supply Strategy | Yes | Distinguishes between the different supply channels used to source impressions for the curator.<br><br>**Note:** Only "Open Exchange" and "Deals" are currently relevant for the curator. |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
 | Supply Type | Yes | The supply type of the ad that was rendered. Possible values: "web", "mobile_web", or "mobile_app". |

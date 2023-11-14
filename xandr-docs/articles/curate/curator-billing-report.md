@@ -72,7 +72,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Publisher | Yes | Publisher ID of the seller where the curated transaction served on. |
 | Curator | No | Member ID of the curator who facilitated the transaction. |
 | Curated Deal ID | Yes | Curated deal ID. |
-| Curator Cleared | Yes | "0" if Xandr clears net seller revenue with the seller.<br>"1" if the curator direct clears net seller revenue with the seller. |
+| Curator Cleared | Yes | - "0" if Xandr clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
 | Buying Currency | No | The transaction currency used by the buyer. |
 | Selling Currency | No | The transaction currency used by the seller. |
 

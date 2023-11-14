@@ -61,17 +61,17 @@ For more information about how quickly reporting data is processed, see [Availab
 | Column | Filter? | Description |
 |:---|:---|:---|
 | Curated Deal | Yes | The curated deal associated with the errors. |
-| Bidder | Yes* | Bidder name / ID associated with the error. |
-| Buyer | Yes | Buyer name / ID associated with the error. |
-| Brand | Yes* | Brand name / ID associated with the error. |
-| Brand Category | Yes | Category name / ID associated with the brand. |
-| Creative ID | Yes* | Creative name / ID associated with the error. |
+| Bidder | Yes* | Bidder name/ID associated with the error. |
+| Buyer | Yes | Buyer name/ID associated with the error. |
+| Brand | Yes* | Brand name/ID associated with the error. |
+| Brand Category | Yes | Category name/ID associated with the brand. |
+| Creative ID | Yes* | Creative name/ID associated with the error. |
 | Creative Size | Yes | Creative size associated with the error. |
 | Creative Category | Yes | Categories associated to the creative causing the error. |
-| Seller | Yes | Seller name / ID associated with the error. |
+| Seller | Yes | Seller name/ID associated with the error. |
 | Publisher | Yes | The publisher object in the seller's account. |
 | Placement | Yes* | The placement object in the seller's account. |
-| Seller Deal | Yes | Seller deal name / ID associated with the error<br><br>**Note:** There will not always be a seller deal in play for a curated deal transaction. |
+| Seller Deal | Yes | Seller deal name/ID associated with the error.<br><br>**Note:** There will not always be a seller deal in play for a curated deal transaction. |
 | Error Message | No | A generic Error Message that describes the error that occurred. |
 | Error Id | No | Error ID associated with the error. |
 | Ad Profile | Yes | The ID of the Seller Member's Ad Profile that triggered the error. This field will return "0" for errors that were not caused by an Ad Profile setting. |

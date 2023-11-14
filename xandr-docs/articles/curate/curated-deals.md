@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Curated Deals
-description: In this article, learn about curated deals and commonly asked questions.
+description: In this article, learn about curated deals and find answers to frequently asked questions.
 ---
 
 # Microsoft Curate - Curated deals

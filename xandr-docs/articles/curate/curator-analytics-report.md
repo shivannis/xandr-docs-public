@@ -60,29 +60,29 @@ Data retention period for this report is 1100 days.
 
 > [!IMPORTANT]
 > The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
-
-For all revenue fields, the currency is defined by the **Buying Currency** field.
+>
+> For all revenue fields, the currency is defined by the **Buying Currency** field.
 
 | Column | Filter? | Description |
 |:---|:---|:---|
-| Curated Advertiser | No | Advertiser name / ID of the curator member object that owns the deal line item associated with the curated deal. |
-| Curated Deal Insertion Order | Yes | Insertion Order name / ID of the curator member object that owns the deal line item associated with the curated deal. |
-| Curated Deal | Yes | Curated deal name / ID. |
-| Curated Deal Line Item | Yes | Line Item name / ID of the curator member object that owns the deal line item associated with the curated deal. |
+| Curated Advertiser | No | Advertiser name/ID of the curator member object that owns the deal line item associated with the curated deal. |
+| Curated Deal Insertion Order | Yes | Insertion Order name/ID of the curator member object that owns the deal line item associated with the curated deal. |
+| Curated Deal | Yes | Curated deal name/ID. |
+| Curated Deal Line Item | Yes | Line Item name/ID of the curator member object that owns the deal line item associated with the curated deal. |
 | Curated Deal Advertiser Id | No | The advertiser ID of the advertiser whose creative served on this impression. |
 | Member Currency | No | The currency associated with the curator member's seat. |
 | Billing Currency | No | The currency that Xandr bills the curator in. |
-| Bidder | No | Name / ID of the bidder who bought on the transaction. |
-| Buyer | Yes | Member name / ID of the buyer who bought on the transaction. |
-| Brand | Yes | Brand name / ID associated with the creative that served on the curated deal. |
-| Seller | Yes | Member name / ID of the seller where the curated transaction served on. |
-| Publisher | Yes | Publisher name / ID of the seller where the curated transaction served on. |
-| Placement Group | Yes | Placement Group name / ID of the seller where the curated transaction served on. |
-| Placement | Yes | Placement name / ID of the seller where the curated transaction served on. |
-| Seller Deal | No | The seller deal name / ID being included in a curated deal<br><br>**Note:** If applicable, since not all curated deals will include a seller. |
+| Bidder | No | Name/ID of the bidder who bought on the transaction. |
+| Buyer | Yes | Member name/ID of the buyer who bought on the transaction. |
+| Brand | Yes | Brand name/ID associated with the creative that served on the curated deal. |
+| Seller | Yes | Member name/ID of the seller where the curated transaction served on. |
+| Publisher | Yes | Publisher name/ID of the seller where the curated transaction served on. |
+| Placement Group | Yes | Placement Group name/ID of the seller where the curated transaction served on. |
+| Placement | Yes | Placement name/ID of the seller where the curated transaction served on. |
+| Seller Deal | No | The seller deal name/ID being included in a curated deal.<br><br>**Note:** If applicable, since not all curated deals will include a seller. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
 | Country | Yes | The country in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
-| Site Domain | No | Site Domain / App where the curated transaction served on. |
+| Site Domain | No | Site Domain/App where the curated transaction served on. |
 | Mobile Application | No | The mobile application associated with the creative that served on this impression. |
 | Media Type | No | The media type associated with the creative that served on this impression. |
 | Device Type | Yes | The device type associated with the creative that served on this impression. |
@@ -104,7 +104,7 @@ For all revenue fields, the currency is defined by the **Buying Currency** field
 | Curator Revenue | The amount of spend a buyer sends to the curator, net of buyer fees, if applicable. This is the same as buyer media cost, exclusive of buyer rev share (BASC). |
 | Curator Tech Fees | The fees Xandr charges to a curator on a transaction. |
 | Curator Net Media Cost | The amount of spend a curator sends to exchange sellers, net of curator fees and margins, if applicable. This is the same as gross seller revenue, inclusive of seller rev share (SASC). |
-| Curator Margin | The profit a curator makes on a transaction<br><br>**Note:** When taken as a percentage, Curator Margin is calculated based on Curator Revenue. |
+| Curator Margin | The profit a curator makes on a transaction.<br><br>**Note:** When taken as a percentage, Curator Margin is calculated based on Curator Revenue. |
 | Curator Total Cost | The amount of spend a curator sends to the exchange and exchange sellers, net of curator margin but gross of curator fees. |
 | Clicks | The total number of clicks across all impressions. For Invest DSP, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | CTR % | The proportion of Clicks versus Imps. |

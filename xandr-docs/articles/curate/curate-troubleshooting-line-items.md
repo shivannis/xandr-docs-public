@@ -7,12 +7,12 @@ description: In this article, learn how to use the Troubleshooting tab within th
 
 The **Troubleshooting** tab of the Line Item Details pane provides troubleshooting information and tools for the selected deal line item in the **Impression Funnel**, **Troubleshooting Reports**, and **Bid Request Sampler** sections.
 
-The **Troubleshooting** window is available when a deal line item is selected from the **Line Items** window (For more information, see [Monitor Line Items](curate-monitor-line-items.md)).
+The **Troubleshooting** window is available when a deal line item is selected from the **Line Items** window (For more information, see [Monitor Line Items](monitor-line-items.md)).
 
 To access the **Troubleshooting** window:
 
-1. On the **Line Items** window, select the appropriate progress tab (**Upcoming**, **In Progress**, or **Completed**). For more information, see [Monitor Line Items](curate-monitor-line-items.md).
-1. Click anywhere in the row of the deal line item you want to troubleshoot to open the Line Item Details pane.
+1. On the **Line Items** window, select the appropriate progress tab (**Upcoming**, **In Progress**, or **Completed**). For more information, see [Monitor Line Items](monitor-line-items.md).
+1. Click anywhere in the row of the deal line item you want to troubleshoot to open the **Line Item Details** pane.
 
     > [!NOTE]
     > You can search for line items by line item name, line item ID, deal name, or deal ID.
