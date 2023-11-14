@@ -64,9 +64,7 @@ This opens the **Modify Columns** dialog. From there you can use the checkboxes 
 
 ## View insertion order details
 
-To view advanced details about an insertion order, click the insertion order's name.
-
-See [View Insertion Order Details](./view-insertion-order-details.md) for more information.
+To view advanced details about an insertion order, click the insertion order's name. See [View Insertion Order Details](./view-insertion-order-details.md) for more information.
 
 ## Search by name/ID
 
@@ -74,7 +72,7 @@ You can use the search field at the top of the screen to find all insertion orde
 
 ## Report on insertion orders
 
-You can initiate a report for one or more insertion orders directly from this screen. Select the checkbox for each insertion order that you want to report on and click Run Report.
+You can initiate a report for one or more insertion orders directly from this screen. Select the checkbox for each insertion order that you want to report on and click **Run Report**.
 
 ## Related topics
 
