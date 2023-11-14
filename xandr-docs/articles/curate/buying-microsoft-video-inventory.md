@@ -1,5 +1,5 @@
 ---
-title: Buying Microsoft Video Inventory
+title: Buying Microsoft Video Inventory for Curate
 description: The article describes how the Microsoft video inventory combines the targeting effectiveness of programmatic buying with interactive ad formats. It also explains the types and creative specifications of Microsoft video inventory.
 ---
 
@@ -34,13 +34,12 @@ The following table summarizes the benefits and availability of each inventory t
 | Bannerstream | Bannerstream was developed by Xandr. It's available on MSN Homepage inventory (with future rollout to other pages). With Bannerstream, buyers have access to an integrated seamless video advertising experience within the MSN Homepage. Bannerstream lets buyers define static "post-show" images that display after the video finishes playing. | - Supports VAST/VPAID video<br> - Provides better publisher control when rendered<br> - Integrates more seamlessly, offering a better user experience<br> - Allows for better tracking of viewability, quartiles, and errors through the Xandr VPAID wrapper | Audience such as profile and behavior | 50+ markets |
 | Windows Video Interstitials | Interstitial video ads are displayed when a user transitions from one content page to another. These ads display mid-transition. Interstitial video ads let you connect with highly engaged consumers on MSN O&O apps and thousands of third-party desktop and mobile apps within the Windows Store. | Offers a full screen audio/video experience | Audience such as profile and behavior | 40+ markets |
 
-
 ## Creative specifications for Microsoft video inventory
 
 To learn more about Microsoft's various video creative specifications, see the following:
 
-- [Microsoft Creative Specifications](http://advertising.microsoft.com/creative-specs)
-- [Microsoft Creative Acceptance Policy](http://advertising.microsoft.com/creative-acceptance-policy)
+- [Microsoft Creative Specifications](https://about.ads.microsoft.com/en-us/policies/home)
+- [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/en-us/policies/home)
 
 ## Targeting Microsoft video inventory
 
@@ -50,9 +49,9 @@ Each video inventory type can be targeted using RTB or Deals. To target Microsof
 |--|--|
 | RTB | - **For MSN**: In your inventory list, include the msn.com domain. For more information, see [Buying MSN Inventory](buying-msn-inventory.md).<br> - **For Windows**: In your inventory list, target **Windows AppNetwork (348882)**. For more information, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).<br>Depending on market availability, buyers can also target the In-stream and Outstream video position as described in [Video Targeting](video-targeting.md). |
 | Deals | - Contact your Verizon representatives if you want to target deals in the following markets: US, Canada, UK, Germany, Spain, Italy, France, Brazil, and Japan.<br> - Contact your Xandr account representative if you want to target deals in the following markets: Austria, Belgium, Denmark, Finland, Ireland, Netherlands, Norway, Portugal, Sweden, Switzerland, and all emerging markets. |
-| External Bidder | - When targeting msn.com, add **msn.com** to the targeted domain list using the [Inventory List Item Service](inventory-list-item-service.md). All MSN domains will be captured by the parent msn.com domain.<br> - When targeting video bid requests, we highly recommend that bidders listen to the [Video AppNexus Object](outgoing-bid-request-to-bidders.md) within the Video Extension Object to distinguish In-stream, Outstream, and Bannerstream bid requests. Without listening to this object, it is difficult to differentiate Bannerstream inventory since Bannerstream is a proprietary Xandr format.
+| External Bidder | - When targeting msn.com, add **msn.com** to the targeted domain list using the [Inventory List Item Service](../digital-platform-api/inventory-list-item-service.md). All MSN domains will be captured by the parent msn.com domain.<br> - When targeting video bid requests, we highly recommend that bidders listen to the [Video AppNexus Object](../bidders/outgoing-bid-request-to-bidders.md) within the Video Extension Object to distinguish In-stream, Outstream, and Bannerstream bid requests. Without listening to this object, it is difficult to differentiate Bannerstream inventory since Bannerstream is a proprietary Xandr format.
 > [!NOTE]
-> Information the user should notice even if skimming If you choose to filter by creative size, the list of creative sizes must be exhaustive. Include 1x1 as a permitted size since all of our video inventory appears as 1x1. For more information, see our [Bidder Profile - FAQ](../idders\bidder-profile---faq.md).
+> Information the user should notice even if skimming If you choose to filter by creative size, the list of creative sizes must be exhaustive. Include 1x1 as a permitted size since all of our video inventory appears as 1x1. For more information, see our [Bidder Profile - FAQ](..\bidders\bidder-profile---faq.md).
 
 ## Availability and volume
 

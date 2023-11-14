@@ -1,5 +1,5 @@
 ---
-title: Buying MSN Inventory
+title: Buying MSN Inventory for Curate
 description: The article provides an overview of inventory, discussing its availability, volumes, various industry verticals, and formats with detailed specifications.
 
 ---
@@ -49,7 +49,7 @@ For information on general inventory targeting, review the following
 documentation:
 
 - [Buying Microsoft Inventory](buying-microsoft-inventory.md)
-- [Domain Targeting](domain-targeting.md)
+- [Domain Targeting](../monetize/domain-targeting.md)
 
 To target MSN.com inventory:
 

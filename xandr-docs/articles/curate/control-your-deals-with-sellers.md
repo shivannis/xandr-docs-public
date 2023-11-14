@@ -1,5 +1,5 @@
 ---
-title: Control Your Deals with Sellers
+title: Control Your Deals with Sellers for Curate
 description: The article provides instructions on managing transactions with sellers, including accessing the deals screen, configuring deal review preferences, accepting or declining deals, and effectively managing deal statuses.
 ---
 
@@ -23,7 +23,7 @@ To reach the **Deals with Sellers** screen, select select **Partners > Deals** a
 
 Buyers can configure the default manner in which they process new seller deals by selecting one of the following settings:
 
-- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers#managing-deal-status.md)).
+- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md#managing-deal-status)).
   
 - **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and accepted or declined (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
 
@@ -128,5 +128,3 @@ To assign a **Deal Alias** to a deal, do the following:
 
 - [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md)
 - [Partnership Details Screen](partnership-details-screen-buyer-view.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
-- [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)

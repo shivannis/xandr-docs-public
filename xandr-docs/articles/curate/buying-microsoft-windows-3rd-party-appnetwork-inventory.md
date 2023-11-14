@@ -1,5 +1,5 @@
 ---
-title: Buying Microsoft Windows 3rd Party AppNetwork Inventory
+title: Buying Microsoft Windows 3rd Party AppNetwork Inventory for Curate
 description: The article provides an overview about Microsoft Windows 3rd party AppNetwork inventory, availability and volume, its formats and specifications, and tragetting instructions.
 ---
 
@@ -20,8 +20,9 @@ Phone.
 > [!NOTE]
 > Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
 
-    - Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam
-    - 13 billion monthly impressions worldwide    
+- Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam
+- 13 billion monthly impressions worldwide
+
 > [!TIP]
 > Inventory Research with specific break-downs of Windows App inventory by size & country can be accessed
 > via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
@@ -100,7 +101,7 @@ To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 
 **Targeting criteria information**
 
-|  | Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
+| Information Criteria| Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
 |---|---|---|
 | Targeting Criteria | Pub ID 348882 | Pub ID 336212 |
 | Seller Member | 280 |  |

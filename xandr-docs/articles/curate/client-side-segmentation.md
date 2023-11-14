@@ -1,5 +1,5 @@
 ---
-title: Client-Side Segmentation
+title: Client-Side Segmentation for Curate
 description: The article describes how building audience segments commonly involves placing client-side segment pixels on websites or creatives to track when a user visits a webpage or takes specific actions.
 ---
 
