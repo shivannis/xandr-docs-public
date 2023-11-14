@@ -1,6 +1,7 @@
 ---
 Title : Impression Funnel
 Description : The **Impression Funnel** provides detailed deal line item metric
+ms.date : 10/28/2023
 information in the form of graphs and charts. The **Impression Funnel**
 ---
 
@@ -13,10 +14,9 @@ The **Impression Funnel** provides detailed deal line item metric
 information in the form of graphs and charts. The **Impression Funnel**
 is available in the
 Troubleshooting window. For more
-information, see <a href="curate-troubleshooting-line-items.html"
+information, see <a href="curate-troubleshooting-line-items.md"
 class="xref">Troubleshooting Line Items</a>.
 
-<div id="curate-monitoring__p-684e08d2-597c-408c-96b2-a68f5b99752d"
 >
 
 You can use the **Impression Funnel** to:
@@ -36,7 +36,7 @@ The Impression Funnel includes the following settings and metrics:
   Edit icon to change buyers.
   
 
-  Note: Selecting a buyer filters the
+  <b>Note:</b> Selecting a buyer filters the
   **Impression Funnel** issues and suggested actions to that specific
   buyer.
 
@@ -46,7 +46,7 @@ The Impression Funnel includes the following settings and metrics:
 - **Metrics** - the available deal line item metrics that include:
   
 
-  Note: You can select or deselect
+  <b>Note:</b> You can select or deselect
   metrics to add or remove them from the bar graph for greater clarity.
 
   
@@ -85,9 +85,9 @@ The Impression Funnel includes the following settings and metrics:
 
 
 
-- <a href="curate-monitor-line-items.html"
+- <a href="curate-monitor-line-items.md"
   class="xref">curate-monitor-line-items.html</a>
-- <a href="curate-troubleshooting-line-items.html"
+- <a href="curate-troubleshooting-line-items.md"
   class="xref">Troubleshooting Line Items</a>
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Partnership Details Screen
 Description : On the Partnership details screen you can review and manage your
+ms.date : 10/28/2023
 relationship with a specific seller. You can track overall spend trends,
 ---
 
@@ -27,12 +28,12 @@ including the main contact's name, phone number, email address, and a
 description of their business. You can contact the seller directly by
 sending a message within the **Activity Stream**. For more information
 about the **Activity Stream**, see <a
-href="partnership-details-screen-buyer-view.html#ID-00000c3a__ID-00000c8c"
+href="partnership-details-screen-buyer-view.md#ID-00000c3a__ID-00000c8c"
 class="xref">Communicating with the Seller</a>.
 
 
 
-Important:
+<b>Important:</b>
 
 If the seller has not entered their contact's name, phone number, email
 address, or a description of their business, then this information will
@@ -48,7 +49,7 @@ hours.
 
 
 
-Note: If you have not purchased any
+<b>Note:</b> If you have not purchased any
 inventory from the seller, there will be no information to display in
 the dashboard.
 
@@ -124,8 +125,8 @@ and include the following:
   placements or publishers are exposed, you can more easily directly
   target a placement or publisher. For more information on targeting
   specific placements or publishers, see
-  <a href="direct-inventory-targeting-ali.html"
-  class="xref">direct-inventory-targeting-ali.html</a>.
+  <a href="direct-inventory-targeting-ali.md"
+  class="xref">direct-inventory-targeting-ali.md</a>.
 
 Editing Partner Settings
 
@@ -139,22 +140,22 @@ Deals displays the number of deals
 available to you from the seller. Click the number to display current
 and past deals from the seller. Each deal displays with additional
 details, see
-<a href="manage-your-deals-with-sellers.html" class="xref">Manage Your
+<a href="manage-your-deals-with-sellers.md" class="xref">Manage Your
 Deals with Sellers</a> for more information.
 
 Edit a Deal
 
 If you would like to make changes to a deal, send the seller a message
 to discuss your needs (see <a
-href="partnership-details-screen-buyer-view.html#ID-00000c3a__ID-00000c8c"
+href="partnership-details-screen-buyer-view.md#ID-00000c3a__ID-00000c8c"
 class="xref">Communicating with the Seller</a>). The seller can then
 edit the deal.
 
 Reporting on Deals
 
 You can run a report to see how your deals are performing. See
-<a href="buy-side-reporting-on-deals.html"
-class="xref">buy-side-reporting-on-deals.html</a> for more information.
+<a href="buy-side-reporting-on-deals.md"
+class="xref">buy-side-reporting-on-deals.md</a> for more information.
 
 Viewing Packages
 
@@ -167,8 +168,8 @@ description, price, and sizes in the Package
 Marketplace to determine if you are interested. Then, add the
 packages you are interested in to your cart to generate deals. For more
 information on generating a deal from a package, see
-<a href="get-deals-from-seller-packages.html"
-class="xref">get-deals-from-seller-packages.html</a>.
+<a href="get-deals-from-seller-packages.md"
+class="xref">get-deals-from-seller-packages.md</a>.
 
 Requesting a Custom Deal
 
@@ -196,17 +197,17 @@ Targeting a Deal from the Packages Tab
 
 If you generated a deal from a package, your deal ID is displayed in the
 Selected Packages section, see
-<a href="get-deals-from-seller-packages.html"
-class="xref">get-deals-from-seller-packages.html</a> for more
+<a href="get-deals-from-seller-packages.md"
+class="xref">get-deals-from-seller-packages.md</a> for more
 information.
 
 Related Topics
 
-- <a href="managing-relationships-with-sellers.html" class="xref">Managing
+- <a href="managing-relationships-with-sellers.md" class="xref">Managing
   Relationships with Sellers</a>
-- <a href="manage-your-deals-with-sellers.html" class="xref">Manage Your
+- <a href="manage-your-deals-with-sellers.md" class="xref">Manage Your
   Deals with Sellers</a>
-- <a href="partner-center-screen-buyer-view.html" class="xref">Partner
+- <a href="partner-center-screen-buyer-view.md" class="xref">Partner
   Center Screen</a>
 
 

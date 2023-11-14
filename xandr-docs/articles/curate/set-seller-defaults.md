@@ -1,6 +1,7 @@
 ---
 Title : Set Seller Defaults
 Description : On the Partner Center Screen, the
+ms.date : 10/28/2023
 **Default Settings** option allows you to establish default inventory
 trust settings for all sellers. It is possible to override these
 ---
@@ -14,12 +15,12 @@ On the Partner Center Screen, the
 **Default Settings** option allows you to establish default inventory
 trust settings for all sellers. It is possible to override these
 settings for individual sellers. For details, see
-<a href="edit-seller-defaults.html" class="xref">Edit Seller
+<a href="edit-seller-defaults.md" class="xref">Edit Seller
 Defaults</a>.
 
 
 
-Note: Inventory trust settings only
+<b>Note:</b> Inventory trust settings only
 apply to standard line item targeting.
 
 
@@ -36,7 +37,7 @@ Step 2. Update your default settings
 
 
 
-Important:
+<b>Important:</b>
 
 **Changes to the Partner Center**
 
@@ -54,7 +55,7 @@ using domain or campaign exclusions.
 
 
 
-Tip: **Get to Know
+<b>Tip:</b> **Get to Know
 AppNexus Direct**
 
 AppNexus Direct is a group of 100+ sellers we
@@ -62,7 +63,7 @@ have identified as mostly selling owned and operated inventory or
 selling through exclusive relationships with publishers.
 
 For more information, please see
-<a href="appnexus-direct-for-buyers.html" class="xref"
+<a href="appnexus-direct-for-buyers.md" class="xref"
 title="This page explains what Xandr Direct is and other helpful details for using it."><span
 class="ph">AppNexus Direct</a> or contact your
 Xandr account manager.
@@ -71,7 +72,7 @@ Xandr account manager.
 
 
 
-Note: **Unblocking
+<b>Note:</b> **Unblocking
 AppNexus Direct Sellers**
 
 Once you unblock an AppNexus Direct seller, you
@@ -87,16 +88,16 @@ and the seller (**Seller-reviewed**), or all inventory (**All**). For
 more information on the different inventory trust levels, see the
 Setting default inventory trust
 section in
-<a href="partner-center-screen-buyer-view.html" class="xref">Partner
+<a href="partner-center-screen-buyer-view.md" class="xref">Partner
 Center Screen</a>.
 
 Related Topics
 
-- <a href="edit-seller-defaults.html" class="xref">Edit Seller
+- <a href="edit-seller-defaults.md" class="xref">Edit Seller
   Defaults</a>
-- <a href="managing-relationships-with-sellers.html" class="xref">Managing
+- <a href="managing-relationships-with-sellers.md" class="xref">Managing
   Relationships with Sellers</a>
-- <a href="partner-center-screen-buyer-view.html" class="xref">Partner
+- <a href="partner-center-screen-buyer-view.md" class="xref">Partner
   Center Screen</a>
 
 

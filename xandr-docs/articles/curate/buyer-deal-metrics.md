@@ -1,6 +1,7 @@
 ---
 Title : Buyer Deal Metrics
-Description : Note: As of May 3, 2021, Imps Matched
+Description : <b>Note:</b> As of May 3, 2021, Imps Matched
+ms.date : 10/28/2023
 and Bid Requests will be randomly sampled at a rate of 10 percent. The
 ---
 
@@ -13,7 +14,7 @@ and Bid Requests will be randomly sampled at a rate of 10 percent. The
 
 
 
-Note: As of May 3, 2021, Imps Matched
+<b>Note:</b> As of May 3, 2021, Imps Matched
 and Bid Requests will be randomly sampled at a rate of 10 percent. The
 sampled values will be multiplied by 10 to give a reasonable estimate in
 all screens where these two metrics are reported. No other deal metrics
@@ -155,7 +156,7 @@ Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -485,9 +486,9 @@ information about the definitions of the data fields.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -503,7 +504,7 @@ information about the definitions of the data fields.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.

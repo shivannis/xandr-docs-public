@@ -1,6 +1,7 @@
 ---
 Title : Daypart Targeting
 Description : You can target users based on the day and time when they see
+ms.date : 10/28/2023
 impressions. In the Budgeting and
 ---
 
@@ -23,7 +24,7 @@ by a specific timezone, regardless of user.
 
 
 
-Tip: Once you've drawn a box, you can
+<b>Tip:</b> Once you've drawn a box, you can
 drag the lower right corner to adjust the width and height of the box to
 cover the days and times desired. Overlapping and adjacent daypart boxes
 will be merged automatically.

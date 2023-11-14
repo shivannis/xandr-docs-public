@@ -1,6 +1,7 @@
 ---
 Title : Pass in User Data Offline
 Description : If you have data that lives in your ad server or data warehouse today,
+ms.date : 10/28/2023
 you can make it accessible to your Xandr ad
 campaigns.
 ---
@@ -22,7 +23,7 @@ by typing in a page directly, they can attach a user ID to that user's
 cookie. Then segments can be associated to this user ID, such as
 "purchased within last 2 weeks" or "viewed shoe model XJ12." Then
 Prostarr wants to show ads to the users in these segments by using
-Xandr Curate.
+Microsoft Curate.
 
 But what if Prostarr has segment information that cannot be passed to
 Xandr so easily? For example, let's say Prostarr
@@ -37,14 +38,14 @@ Before you can pass us data, there must be a mapping of the
 Xandr user ID and your user ID so that we can
 attach the data to the right user and offer it for your future use.
 Please read about this process at
-<a href="user-id-mapping-with-getuid-and-mapuid.html" class="xref">User
+<a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
 ID Mapping</a>.
 
 Server-Side Data Integration with Xandr
 
 Once ID mapping has taken place, you can pass
 Xandr your offline segment data via our <a
-href="https://docs.xandr.com/bundle/xandr-api/page/batch-segment-service.html"
+href="xandr-api/batch-segment-service.md"
 class="xref" target="_blank">Batch Segment Service</a>.
 
 

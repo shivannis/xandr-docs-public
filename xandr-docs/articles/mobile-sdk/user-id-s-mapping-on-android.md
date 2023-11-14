@@ -1,61 +1,31 @@
 ---
-Title : User ID(s) Mapping on Android
-Description : <b>Note:</b> This offering is currently in
-Alpha and is subject to changes or deprecation without notice.
-ms.custom : android-sdk
+title: User ID(s) Mapping on Android
+description: The article describes the mapping of user IDs on Android.
+ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
+# User ID(s) mapping on Android
 
-# User ID(s) Mapping on Android
-
-
-
-
-
-<b>Note:</b> This offering is currently in
-Alpha and is subject to changes or deprecation without notice.
-
-
-
-
+> [!NOTE]
+> This offering is currently in Alpha and is subject to changes or deprecation without notice.
 
 ## Overview
 
-Xandr offers you the option of
-sending **Publisher First party ID** and **User ID(s)** from third party
-sources in ad requests. They are global settings and it is sufficient to
-set the User ID(s) once per app session as these values would be used in
-all consecutive ad requests in the same session. Please note that,
-Xandr does not store these values across
-different app sessions.
+Xandr offers you the option of sending **Publisher First party ID** and **User ID(s)** from third party sources in ad requests. They are global settings and it is sufficient to set the User ID(s) once per app session as these values would be used in all consecutive ad requests in the same session. Please note that, Xandr does not store these values across different app sessions.
 
+## Mobile SDK structure
 
+### Publisher first party ID
 
+> [!NOTE]
+> >**Deprecation Notice**:
+> >
+> > The **setExternalUid** and **getExternalUid** methods available in **NativeAdRequest**, **VideoAd, BannerAdView**, and **InterstitialAdView** classes are deprecated. You can use **setPublisherUserId** and **getPublisherUserId** described below in **SDKSettings** class instead. The deprecated methods will be removed in SDK v8.0.
 
+You can set Publisher(First Party) User ID using the `setPublisherUserId` method in **SDKSettings** class in Mobile SDK API. The **getPublisherUserId** returns the value set which is the publisher user ID for the current application user.
 
-## Mobile SDK Structure
-
-**Publisher First Party ID**
-
-
-
-<b>Note:</b> Deprecation Notice
-
-The **setExternalUid** and **getExternalUid** methods available
-in **NativeAdRequest**, **VideoAd, BannerAdView**,
-and **InterstitialAdView** classes are deprecated. You can
-use **setPublisherUserId** and **getPublisherUserId** described below
-in **SDKSettings** class instead. The deprecated methods will be removed
-in SDK v8.0.
-
-
-
-You can set Publisher(First Party) User ID using
-the `setPublisherUserId` method in **SDKSettings**
-class in MobileSDK API. The **getPublisherUserId** returns the value set
-which is the publisher user ID for the current application user.
-
-``` pre
+```
 /**
  * Specifies a string that corresponds to the Publisher(First Party) User ID for the current application user.
  * @param publisherUserId
@@ -69,22 +39,14 @@ SDKSettings.setPublisherUserId(String publisherUserId);
 SDKSettings.getPublisherUserId();
 ```
 
-**User ID**
+### User ID
 
+> [!NOTE]
+> **Deprecation Notice**:
+>
+>The **setExternalUserIds** and **getExternalUserIds** methods available in **SDKSettings** class and **ANExternalUserIdSource** class are now deprecated and will be removed in SDK v8.0. You can use **setUserIds** and **getUserIds** methods in **SDKSettings** class and **ANUserId** class described below instead as a replacement.
 
-
-<b>Note:</b> Deprecation Notice
-
-The **setExternalUserIds** and **getExternalUserIds** methods available
-in **SDKSettings** class and **ANExternalUserIdSource **class are now
-deprecated and will be removed in SDK v8.0. You can
-use **setUserIds** and **getUserIds** methods in **SDKSettings** class
-and **ANUserId** class described below instead as a replacement. 
-
-
-
-Xandr supports User ID(s) from the below
-sources:
+Xandr supports User ID(s) from the below sources:
 
 - Criteo
 - The Trade Desk
@@ -103,8 +65,7 @@ You can set **User ID** by
 - The `getUserIds()`method returns the values set as a List for the
   current user.
 
-  ``` pre
-   
+```
      /**
        * A Map containing objects that hold External UserId parameters for the current application user.
        * @param userIdList
@@ -119,10 +80,10 @@ You can set **User ID** by
       public static List<ANUserId> getUserIds() {
           return Settings.getSettings().userIds;
       }
-  ```
+```
 
-  ``` pre
-  // In ANUserId.java 
+```
+  // In ANUserId.java
   package com.appnexus.opensdk;
     
   public class ANUserId {
@@ -134,8 +95,7 @@ You can set **User ID** by
           LIVERAMP,
           UID2
       }
-    
-    
+       
       public ANUserId(String source, String userId){};
     
       public ANUserId(ANUserId.Source source, String userId) {};
@@ -149,15 +109,11 @@ You can set **User ID** by
           return source;
       }
   }
-  ```
-
-
-
-
-
+```
+  
 ## Examples
 
-``` pre
+```
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -216,9 +172,3 @@ public class MyActivity extends Activity {
     }
 }
 ```
-
-
-
-
-
-

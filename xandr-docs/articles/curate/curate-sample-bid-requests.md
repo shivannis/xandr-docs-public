@@ -1,6 +1,5 @@
 ---
 Title : Sample Bid Requests
-Description : <div id="curate-monitoring__p-2392ddd0-f0f4-4284-b441-40038f1f8c34"
 >
 The Bid Request Sampler provides
 sample bid request data under certain time frames and conditions. You
@@ -11,7 +10,6 @@ sample bid request data under certain time frames and conditions. You
 
 
 
-<div id="curate-monitoring__p-2392ddd0-f0f4-4284-b441-40038f1f8c34"
 >
 
 The Bid Request Sampler provides
@@ -20,7 +18,7 @@ can download results as a text file.
 
 
 
-Note: The sampler only returns bid
+<b>Note:</b> The sampler only returns bid
 requests for curated deals issued to external DSPs, not the Invest DSP.
 
 
@@ -33,7 +31,7 @@ To sample bid request data:
     time in which you want to pull bid requests.
     
 
-    Note: id requests are pulled within
+    <b>Note:</b> id requests are pulled within
     the previous 24 hours of the date and time you select. You can only
     select a date and time within the last 7 days.
 
@@ -53,14 +51,14 @@ To sample bid request data:
     select the number of bid requests you would like to pull.
     
 
-    Note: Bid requests are limited to a
+    <b>Note:</b> Bid requests are limited to a
     maximum of 100.
 
     
 5.  Click Search to generate bid
     requests.
 
-Note: Bid requests are generated using a 0.001% sampling rate. If you
+<b>Note:</b> Bid requests are generated using a 0.001% sampling rate. If you
 try to generate a bid request and don't see results, Xandr will
 automatically increase the sampling rate to 5%. Wait 30 minutes for this
 sampling rate change to take effect before you generate another bid
@@ -69,7 +67,6 @@ while you wait 30 minutes before generating a new request. You can leave
 the section and come back to generate a new request after 30 minutes
 have passed.
 
-<div id="curate-monitoring__p-0c160cd3-baed-4aa2-9700-12f744d1e8ed"
 >
 
 Bid requests (if any) are listed in the
@@ -92,11 +89,11 @@ the following with the results:
 
 
 
-- <a href="curate-monitor-line-items.html"
+- <a href="curate-monitor-line-items.md"
   class="xref">curate-monitor-line-items.html</a>
-- <a href="curate-troubleshooting-line-items.html"
+- <a href="curate-troubleshooting-line-items.md"
   class="xref">Troubleshooting Line Items</a>
-- <a href="curate-view-line-item-details.html"
+- <a href="curate-view-line-item-details.md"
   class="xref">curate-view-line-item-details.html</a>
 
 

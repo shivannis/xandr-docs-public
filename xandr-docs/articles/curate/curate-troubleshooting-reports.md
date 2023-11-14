@@ -1,6 +1,7 @@
 ---
 Title : Troubleshooting Reports
 Description : **Troubleshooting Reports** provides you easy access to set up and run
+ms.date : 10/28/2023
 reports that can help you troubleshoot deal line items. These reports
 ---
 
@@ -15,12 +16,11 @@ are simplified versions of the most common reports available. You can
 use these reports to further investigate any issues surfaced in the
 Impression Funnel section. For
 more information, see
-<a href="curate-impression-funnel.html" class="xref">Impression
+<a href="curate-impression-funnel.md" class="xref">Impression
 Funnel</a>.
 
 You can configure the following for each report you run:
 
-<div id="curate-monitoring__p-a55677ca-fbbe-4f19-806b-bf2f8ab7e3f9"
 >
 
 - **Report Type** - use the drop-down to select the report you want to
@@ -54,7 +54,6 @@ You can configure the following for each report you run:
 
 
 
-<div id="curate-monitoring__p-61f53082-84a4-48d3-a1af-5104c00ab095"
 >
 
 There are couple of additional settings are available when you run a
@@ -74,7 +73,7 @@ deal metrics report. They are as follows:
 
 
 For more information, see <a
-href="https://docs.xandr.com/bundle/curate_curate-standard/page/topics/reporting-guide.html"
+href="curate_curate-standard/reporting-guide.md"
 class="xref" target="_blank">Reporting Guide</a>.
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Viewing Your Object Limits
 Description : Xandr limits the number of object (line items,
+ms.date : 10/28/2023
 creatives, etc.) that you can have on the platform. The Object Limits
 ---
 
@@ -21,7 +22,7 @@ days.
 
 
 
-Important: **Automatic archiving of
+<b>Important:</b> **Automatic archiving of
 objects:** Objects that have not served or been edited in more than 180
 days and that are not scheduled to serve in the future are automatically
 archived. If an object is in the "archived" state, it cannot spend or be
@@ -60,7 +61,7 @@ for each:
 
 
 
-Tip: Line items that have not served or
+<b>Tip:</b> Line items that have not served or
 been modified in the last 90 days are good candidates for deletion.
 Contact your Xandr representative if you need
 assistance in cleaning out old objects or to request that your object

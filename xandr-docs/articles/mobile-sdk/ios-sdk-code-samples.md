@@ -2,6 +2,7 @@
 title: iOS SDK Code Samples
 description: In this article, explore detailed information about iOS SDK code samples.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # iOS SDK code samples

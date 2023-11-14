@@ -1,6 +1,7 @@
 ---
 Title : System Targeting
 Description : You can target users based on their operating systems, browsers,
+ms.date : 10/28/2023
 language, device model, or carrier. In the
 ---
 
@@ -28,7 +29,7 @@ exclude specific systems.
   available for targeting. You can either include or exclude browsers.
   
 
-  Note: If you want to target the
+  <b>Note:</b> If you want to target the
   Safari browser on desktop and mobile, make sure to include both
   "Safari" and "iPhone" browsers in your targeting. Including the
   "iPhone" browser is necessary to see delivery for your
@@ -40,7 +41,7 @@ exclude specific systems.
   languages.
   
 
-  Note: The language that is targeted
+  <b>Note:</b> The language that is targeted
   here for excluding and including is the browser language, not the
   language of the content.
 
@@ -56,7 +57,7 @@ exclude specific systems.
 
 
 
-Warning: All system targeting types can
+<b>Warning:</b> All system targeting types can
 be used but with some limitations. Due to inconsistent user agent naming
 conventions used by app providers and mobile carriers, the device type,
 device make/model, and OS targeting methods for mobile apps are only

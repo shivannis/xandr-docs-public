@@ -84,9 +84,9 @@ additionalContent:
         - title: Yield Analytics API
           links:
             - text: Overview
-              url: getting-started/index.yml
+              url: yield-analytics-api/index.yml
             - text: References
-              url: getting-started/index.yml
+              url: yield-analytics-api/index.yml
         # Card
         - title: Release Notes (Work in Progress)
           links:

@@ -1,7 +1,8 @@
 ---
-title : Impression Funnel: Seller Deals
-description : Learn how the Impression Funnel panel on the
-Troubleshooting tab enables you to view the metrics of a curated deal as a whole and assess its overall performance. 
+Title : Impression Funnel: Seller Deals
+Description : Learn how the Impression Funnel panel on the Troubleshooting tab enables you to view the metrics of a curated deal as a whole and assess its overall performance.
+ms.date : 10/28/2023
+
 ---
 
 

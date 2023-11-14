@@ -1,6 +1,7 @@
 ---
 Title : Availability of Reporting Data
 Description : This page describes how, when, and for how long reporting data is or
+ms.date : 10/28/2023
 becomes available to you.
 ---
 
@@ -16,7 +17,7 @@ becomes available to you.
 
 
 
-Important: If you are noticing any
+<b>Important:</b> If you are noticing any
 latency in the availability of your reporting data, first check if there
 are any known outages at <a href="https://status.xandr.com" class="xref"
 target="_blank">https://status.xandr.com</a>.
@@ -44,7 +45,7 @@ Data Retention
 
 The data retention period for each report is stated on that report's
 page in the documentation. For a list of reports, see
-<a href="reporting-guide.html" class="xref">Reporting Guide</a>.
+<a href="reporting-guide.md" class="xref">Reporting Guide</a>.
 
 Scheduled Reports
 
@@ -67,14 +68,14 @@ Saved Reports
 
 You can save and view up to 200 reports in the
 UI. To retrieve a full list of saved reports, use the API <a
-href="https://docs.xandr.com/bundle/xandr-api/page/saved-report-service.html"
+href="xandr-api/saved-report-service.md"
 class="xref" target="_blank">Saved Report Service</a>.
 
 Related Topics
 
-- <a href="dimensions-metrics-filtering-and-grouping.html"
+- <a href="dimensions-metrics-filtering-and-grouping.md"
   class="xref">Dimensions, Metrics, Filtering, and Grouping</a>
-- <a href="dates-and-times-in-reporting.html" class="xref">Dates and Times
+- <a href="dates-and-times-in-reporting.md" class="xref">Dates and Times
   in Reporting</a>
 
 

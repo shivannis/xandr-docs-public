@@ -1,6 +1,7 @@
 ---
 Title : Additional Geo Restrictions
 Description : In addition to country, you can also restrict the impressions you target
+ms.date : 10/28/2023
 based on other geographic details of the users viewing them.
 ---
 
@@ -14,7 +15,7 @@ based on other geographic details of the users viewing them.
 
 
 
-Warning: Although restricting by
+<b>Warning:</b> Although restricting by
 country is highly accurate, the more specific the targeting, the more
 imprecise the results. This is especially true when targeting locations
 as granular as cities, metro codes, and zip codes. Also, depending upon
@@ -23,7 +24,6 @@ reduce the likelihood of a match and thus jeopardize delivery.
 
 
 
-<div id="ID-00001c31__p_fbc0ea82-42ca-4345-b81c-f30b7705da09" >
 
 To restrict the impressions you target based on other geographic details
 of the users viewing them, click Additional
@@ -39,7 +39,7 @@ geographic targeting option referenced below:
 
 
 
-Note: If you have not targeted at least
+<b>Note:</b> If you have not targeted at least
 one country on your line item, you will be required to target a region,
 city, metro code, or postal code.
 
@@ -56,7 +56,6 @@ Region, City, Metro Code, or Postal Code level,
 Xandr will use these settings to derive the
 country target to be compared with your Third-Party Buying filters.
 
-<div id="ID-00001c31__section_e102929c-6312-44b0-9149-59a87b62ea7b"
 >
 
 ## Restrict Users by Country, Region, or City
@@ -86,7 +85,7 @@ cities.
 
 
 
-Tip: Click the column headers to sort
+<b>Tip:</b> Click the column headers to sort
 counties, regions, or cities by name or ID, or use the search field to
 find a particular location.
 
@@ -94,7 +93,7 @@ find a particular location.
 
 
 
-Warning: Do not add conflicting
+<b>Warning:</b> Do not add conflicting
 geographic targeting at multiple levels. For example, if you are
 including the United States, Canada, and Mexico, and then you also
 include US zip codes, only the US zip codes targeted will be served. In
@@ -107,7 +106,6 @@ relationship.
 
 
 
-<div id="ID-00001c31__section_0703a3c6-b2b5-406a-abc0-7a7253fef081"
 >
 
 ## Restrict Users by Metro Code
@@ -120,7 +118,6 @@ metro codes by default. However, on the
 Metro Code tab, you can narrow
 your targeting to include or exclude specific metro codes.
 
-<div id="ID-00001c31__p_4c16aa58-2b15-41fa-9631-f656736e0a10" >
 
 The Countries that support metro code targeting are:
 
@@ -142,19 +139,17 @@ The Countries that support metro code targeting are:
 
 
 
-<div id="ID-00001c31__section_0feae04b-7348-455c-8a52-e3dbbbb661e9"
 >
 
 ## Restrict Users by Postal Code
 
 
 
-Note: You can't target more than 4,000
+<b>Note:</b> You can't target more than 4,000
 postal codes per line item.
 
 
 
-<div id="ID-00001c31__p_e37e4d9b-620e-4a55-b9db-4d05292626d5" >
 
 On the Postal Code tab, once you
 select a country, you can include up to 4,000 postal codes using a
@@ -165,7 +160,7 @@ other types of geographic targeting, postal codes may only be included
 
 
 
-Note: Certain legitimate ZIP or postal
+<b>Note:</b> Certain legitimate ZIP or postal
 codes are unrecognizable or invalid within the
 Xandr geography targeting system. This can
 happen because <a href="https://www.digitalelement.com/" class="xref"
@@ -357,7 +352,6 @@ headers="ID-00001c31__table_e563042a-11f7-4d76-a719-c653b21333b8__entry__2">9995
 </tbody>
 </table>
 
-<div id="ID-00001c31__p_d55e6288-0f18-456f-827f-a0a430db0f2f" >
 
 If your list contains postal/zip codes that don't exist in the
 Xandr database, you will be presented with an
@@ -369,18 +363,12 @@ message are:
   postal codes if they are numeric (06514 becomes 6514). However, an
   alphanumeric postal code such as "0AH 135" would not be affected.
 - **Country**: Postal codes can only be added for one country at a time.
-- **US zip codes**: To target Metropolitan Statistical Areas (MSAs),
-  include comma-separated or dash-separated zip codes. Use the following
-  link to download an Excel file containing a list of MSAs and their
-  corresponding comma-separated zip codes:
-  <a href="http://tritondocs.media.streamtheworld.com/MSA-ZipCodes.xlsx"
-  class="xref" target="_blank">MSA-ZipCodes.xlsx</a>.
 
 
 
 
 
-Note: Ranges are not supported. You
+<b>Note:</b> Ranges are not supported. You
 will need to add each individual postal code to the list or import them
 from a CSV, Excel, or Text file.
 
@@ -388,16 +376,14 @@ from a CSV, Excel, or Text file.
 
 
 
-<div id="ID-00001c31__section_3daba6c5-dc1d-4783-9467-69852fb7f1d9"
 >
 
 ## Restrict Users by Postal Code Lists
 
-<div id="ID-00001c31__p_eb9f4319-9ce8-4bee-8f42-3cad1a80c063" >
 
 
 
-Note: At the line item level, you can
+<b>Note:</b> At the line item level, you can
 target:
 
 - both a postal code list and an individual postal code (which does not
@@ -427,20 +413,17 @@ known as zip +4). For example, 10010-7456.
 
 
 
-<div id="ID-00001c31__section-330e07d0-62d5-479c-889d-d31dd5b8b8c2"
 >
 
 ## Restrict Users by Political Districts
 
-<div id="ID-00001c31__note-46a87530-c2bd-4b0a-9ab6-ff4cc7f53036"
 
 
-Note: Postal code list, postal code and
+<b>Note:</b> Postal code list, postal code and
 political district include/exclude functionality should be consistent.
 
 
 
-<div id="ID-00001c31__p-f9f23813-8f12-434f-bc2f-445e11e34374" >
 
 Political Geography Targeting allows political buyers to target
 geographies based on legislative district boundaries. The feature is
@@ -456,14 +439,13 @@ allows buyers to target the following political geography levels:
 
 
 
-<div id="ID-00001c31__section_6e736c94-f0ca-47e0-b930-d3bea9e08da9"
 >
 
 ## Related Topics
 
-- <a href="object-hierarchy.html" class="xref">Object Hierarchy</a>
-- <a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
-- <a href="postal-code-lists.html" class="xref">Postal Code Lists</a>
+- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
+- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
+- <a href="postal-code-lists.md" class="xref">Postal Code Lists</a>
 
 
 

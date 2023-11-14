@@ -1,6 +1,7 @@
 ---
 Title : Curator Bid Error Report
-Description : Important: This report is only
+Description : <b>Important:</b> This report is only
+ms.date : 10/28/2023
 available to curators.
 ---
 
@@ -13,7 +14,7 @@ available to curators.
 
 
 
-Important: This report is only
+<b>Important:</b> This report is only
 available to curators.
 
 
@@ -26,7 +27,7 @@ troubleshoot sell-side and buy-side settings that result in auction
 errors that block spend. The goal is to help you eliminate the error in
 the future. You can find information on the owner, cause, and
 recommended resolution for each error in <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/bid-error-codes.html"
+href="xandr-bidders/bid-error-codes.md"
 class="xref" target="_blank">Bid Error Codes</a>.
 
 Time Frame
@@ -86,7 +87,7 @@ for reports. However, all intervals are not available for every report.
 This report's data is retained for 33 days.
 
 For more information about how quickly reporting data is processed, see
-<a href="availability-of-reporting-data.html" class="xref">Availability
+<a href="availability-of-reporting-data.md" class="xref">Availability
 of Reporting Data</a>.
 
 Dimensions
@@ -224,7 +225,7 @@ headers="curator-bid-error-report__table-4aeeb2e6-19d3-49f2-b3f2-ca6c4abb7c5d__e
 headers="curator-bid-error-report__table-4aeeb2e6-19d3-49f2-b3f2-ca6c4abb7c5d__entry__3">Seller
 deal name / ID associated with the error
 
-Note: There will not always be a seller
+<b>Note:</b> There will not always be a seller
 deal in play for a curated deal transaction.
 </td>
 </tr>
@@ -363,14 +364,13 @@ display name for the buyer seat code</td>
 
 
 
-<div id="curator-bid-error-report__section-e8817939-3ad6-4011-a474-f23495bee3f2"
 >
 
 Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -405,7 +405,6 @@ errors multiplied by 100 to account for the sampling).</td>
 </tbody>
 </table>
 
-<div id="curator-bid-error-report__section-995717af-6530-4fb2-be2c-e4206d8561f4"
 >
 
 To Run Your Report
@@ -427,9 +426,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -445,7 +444,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -464,17 +463,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="curator-bid-error-report__d11e107">**Export, send
+    - **Export, send
       results via email**: Run the report in the background and email
       the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -488,7 +487,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="curator-bid-error-report__d11e136">Click
+6.  Click
     Run report to send your report
     request.
 

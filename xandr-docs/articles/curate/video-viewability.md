@@ -1,6 +1,7 @@
 ---
 Title : Measurement of Video Viewability using VPAID Wrapper
 Description : This page explains the technology behind our video viewability
+ms.date : 10/28/2023
 measurement.
 ---
 
@@ -16,7 +17,7 @@ measurement.
 
 
 
-Important: Viewability for video
+<b>Important:</b> Viewability for video
 creatives on Xandr is measured using OMSDK for
 Web and App, and if it's not available we fall back to the VPAID wrapper
 measurement which is avalable for Web only but not for App.
@@ -95,7 +96,8 @@ and outstream positions is supported.
     viewability javascript on the page **measures the viewability** of
     the creative.
 
-<img src="../images/video-viewability/viewability.png" class="image" />
+![Viewability](media/viewability.png)
+
 
 **VPAID Wrapper Functions**
 
@@ -127,7 +129,7 @@ The VPAID wrapper has the following specifications:
 The following metrics are now available in the Advertiser Video
 Analytics Report, Publisher Video Analytics Report, and
 Member Video Analytics Report. (See
-<a href="analytics-reporting.html"
+<a href="analytics-reporting.md"
 class="xref">analytics-reporting.html</a> for more information.)
 
 **Viewability Measurement Metrics**
@@ -158,11 +160,11 @@ impressions. (View Measured Imps / Imps)</td>
 
 
 
-Note: Viewability Measurement Rate is
+<b>Note:</b> Viewability Measurement Rate is
 not directly comparable to other measurement vendors since our total
 impression count is higher. Our measurement rate is not an indicator of
 the technical quality of the measurement. For more information, see the
-<a href="viewability-faq.html" class="xref">Viewability FAQ</a>.
+<a href="viewability-faq.md" class="xref">Viewability FAQ</a>.
 
 
 
@@ -200,12 +202,12 @@ measured for viewability. (Viewed Imps / View Measured Imps)</td>
 
 The following Video viewability metrics are available via the API in the
 <a
-href="https://docs.xandr.com/bundle/xandr-api/page/network-video-analytics.html"
+href="xandr-api/network-video-analytics.md"
 class="xref" target="_blank">Network Video Analytics</a>, <a
-href="https://docs.xandr.com/bundle/xandr-api/page/network-publisher-video-analytics.html"
+href="xandr-api/network-publisher-video-analytics.md"
 class="xref" target="_blank">Network Publisher Video Analytics</a> and
 <a
-href="https://docs.xandr.com/bundle/xandr-api/page/network-advertiser-analytics.html"
+href="xandr-api/network-advertiser-analytics.md"
 class="xref" target="_blank">Network Advertiser Video Analytics</a>
 reports:
 
@@ -247,7 +249,7 @@ impressions. (View Measured Imps / Imps)</td>
 </table>
 
 The <a
-href="https://docs.xandr.com/bundle/log-level-data/page/video-events-feed.html"
+href="log-level-data/video-events-feed.md"
 class="xref" target="_blank">Video Events Feed</a> now has the the
 following columns for video viewability:
 
@@ -339,9 +341,9 @@ creative where VPAID is not allowed, to ensure maximum reach.
 **How can I optimize to more highly viewable inventory?**
 
 Viewability measurement is included in the
-<a href="advertiser-video-analytics-report.html"
+<a href="advertiser-video-analytics-report.md"
 class="xref">advertiser-video-analytics-report.html</a> and
-<a href="network-video-analytics-report.html" class="xref">Member Video
+<a href="network-video-analytics-report.md" class="xref">Member Video
 Analytics Report</a> , which provide reporting down to the individual
 tag/placement or site domain. This enables clients to update targeting
 to either include or exclude high or poor performing placements.

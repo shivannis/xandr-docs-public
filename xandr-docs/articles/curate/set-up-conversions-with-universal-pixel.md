@@ -1,6 +1,7 @@
 ---
 Title : Set Up Conversions with Universal Pixel
 Description : You can set up conversions for your universal pixel using rules and
+ms.date : 10/28/2023
 conditions, then track conversion activity using
 Curate reporting.
 ---
@@ -28,7 +29,7 @@ Curate reporting.
     
 
     If no pixels are defined, use the setup instructions in
-    <a href="universal-pixel-basic-implementation.html" class="xref"
+    <a href="universal-pixel-basic-implementation.md" class="xref"
     title="With the most basic implementation of the universal pixel, you can track page views and identify the URLs driving them. Setting up the basic implementation requires you to set up the Universal Pixel object in Curate, deploy the script code containing the pixel ID on your website, and check your pixel activity on the Activity tab in the Universal Pixels page.">Universal
     Pixel Basic Implementation</a> to create one.
 
@@ -45,10 +46,9 @@ Curate reporting.
     page, or another event category. 
     
 
-    <div id="set-up-conversions__note_pl3_qh3_tsb"
     
 
-    Note: If you have already used a
+    <b>Note:</b> If you have already used a
     standard event as a condition for the conversion, then the
     conversion will be categorized with that standard event by default.
 

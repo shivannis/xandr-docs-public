@@ -1,6 +1,7 @@
 ---
 Title : Understanding Bid Rejections
 Description : There are many reasons a bid might be rejected. Rejected bids show up on
+ms.date : 10/28/2023
 ---
 
 
@@ -23,7 +24,7 @@ errors.
 
 
 
-Important: **About Impbus Error IDs,
+<b>Important:</b> **About Impbus Error IDs,
 Error Messages, and Bid Rejection Reasons**
 
 Each bid rejection reason has a distinct error ID or set of error IDs
@@ -560,7 +561,7 @@ Yield Management Floors.</p></td>
 <td class="entry" headers="ID-00000d2d__entry__3">Seller/Buyer</td>
 <td class="entry" headers="ID-00000d2d__entry__4">The bid was blocked
 due to the floor configured by Yield Management Floors configured in
-Xandr Curate or the floor sent in the bid
+Microsoft Curate or the floor sent in the bid
 request to Xandr.</td>
 <td class="entry" headers="ID-00000d2d__entry__5">The seller could
 consider lowering the floor to increase the number of eligible bids in

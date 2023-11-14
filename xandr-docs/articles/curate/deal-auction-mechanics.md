@@ -1,7 +1,6 @@
 ---
 Title : Deal Auction Mechanics
-Description : <div id="ID-000010d0__note_nqh_njl_lwb"
-Note: This documentation is based on
+<b>Note:</b> This documentation is based on
 first-price auction. If you're still using second-price auction, then
 ---
 
@@ -12,12 +11,11 @@ first-price auction. If you're still using second-price auction, then
 
 
 
-<div id="ID-000010d0__note_nqh_njl_lwb" 
 
-Note: This documentation is based on
+<b>Note:</b> This documentation is based on
 first-price auction. If you're still using second-price auction, then
-see <a href="deal-auction-mechanics-for-second-price-auction.html"
-class="xref">deal-auction-mechanics-for-second-price-auction.html</a>.
+see <a href="deal-auction-mechanics-for-second-price-auction.md"
+class="xref">deal-auction-mechanics-for-second-price-auction.md</a>.
 
 
 
@@ -29,7 +27,7 @@ auctions work and provides examples.
 
 
 
-Note: The explanations on this page
+<b>Note:</b> The explanations on this page
 apply only to deals with Microsoft Monetize sellers,
 not to deals with external supply partners. For information about an
 external supply partner's deal types or auction mechanics, contact the
@@ -51,7 +49,7 @@ inventory via other means, compete for the impression.
 
 
 
-Note: Deal Ask Prices vs. Reserve
+<b>Note:</b> Deal Ask Prices vs. Reserve
 Prices
 
 
@@ -72,26 +70,21 @@ Prices
 Examples
 
 Deal Bid Wins
+![Deal Bid Wins](media/open-auction-deal-wins-fp.png)
 
-<img
-src="../images/deal-auction-mechanics/open-auction-deal-wins-fp.png"
-class="image" />
+
+Non-Deal Bid Wins
+![Non-Deal Bid Wins](media/open-auction-non-deal-wins-fp.png)
+
 
 Non-Deal Bid Wins
 
-<img
-src="../images/deal-auction-mechanics/open-auction-non-deal-wins-fp.png"
-class="image" />
-
-Non-Deal Bid Wins
-
-<img
-src="../images/deal-auction-mechanics/open-auction-non-deal-wins-fp-2.png"
-class="image" />
+![Non-Deal Bid Wins B](media/open-auction-non-deal-wins-fp-b.png)
 
 
 
-Important: **Why does this example have
+
+<b>Important:</b> **Why does this example have
 two floors? And why does the non-deal bid win?**
 
 In the example above, each of the deal bids has a different floor
@@ -127,21 +120,18 @@ Examples
 
 Deal Bid Wins in Private Auction (No Open Auction Held)
 
-<img
-src="../images/deal-auction-mechanics/private-auction-deal-wins-fp.png"
-class="image" />
+![Deal Bid Wins in Private Auction](media/private-auction-deal-wins-fp.png)
+
 
 Higher Priority Deal Bid Wins in Private Auction (No Open Auction Held)
 
-<img
-src="../images/deal-auction-mechanics/private-auction-high-priority-wins-fp.png"
-class="image" />
+![Priority Deal Bid Wins in Private Auction](media/private-auction-high-priority-wins-fp.png)
+
 
 Non-Deal Bid Wins in Open Auction (No Private Auction Winner)
 
-<img
-src="../images/deal-auction-mechanics/private-auction-non-deal-bid-wins-fp.png"
-class="image" />
+![Bid Wins in Open Auction](media/private-auction-non-deal-bid-wins-fp.png)
+
 
 Deal Prices and Yield Management Rules
 
@@ -178,8 +168,8 @@ priority over floor prices.
 
 Deal Bid Meets Deal Floor and Wins
 
-<img src="../images/deal-auction-mechanics/deal-bid-ym-floors-fp.png"
-class="image" />
+![Deal Bid Meets Deal Floor and Wins](media/deal-bid-ym-floors-fp.png)
+
 
 Fixed Price Deals
 
@@ -192,9 +182,8 @@ below the ask price will be considered ineligible for the deal and the
 auction. IDs on fixed price deals are ranked according to the deal's ask
 price (minus relevant fees).
 
-<img
-src="../images/deal-auction-mechanics/winners-pays-deal-ask-price.png"
-class="image" />
+![Winners Pays Deal ask price](media/winners-pays-deal-ask-price.png)
+
 
 Deal Pricing and Biases
 
@@ -203,7 +192,7 @@ have set a price for your deal.
 
 Related Topic
 
-- <a href="buying-deals.html" class="xref">Buying Deals</a>
+- <a href="buying-deals.md" class="xref">Buying Deals</a>
 
 
 

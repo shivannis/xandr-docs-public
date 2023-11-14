@@ -1,6 +1,7 @@
 ---
 Title : Create a Segment Pixel
 Description : A segment pixel marks a user as belonging to a certain target audience
+ms.date : 10/28/2023
 based on the web pages they visit, the actions they take (such as making
 a purchase), or data such as gender or location.
 ---
@@ -22,13 +23,13 @@ Navigate to the Segments screen
 
 
 
-Important: Segment pixels can be
+<b>Important:</b> Segment pixels can be
 created at the advertiser level (that is, they're only viewable and
 targetable by the specific advertiser), or the member level (available
 for targeting to all advertisers). (You can move a segment from
 advertiser level to member level by changing the `advertiser_id` to
 `"null"` via the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+href="xandr-api/segment-service.md"
 class="xref" target="_blank">Segment Service</a>.)
 
 
@@ -80,7 +81,7 @@ piggybacked pixels.
 
 
 
-Important: Add piggyback pixels with
+<b>Important:</b> Add piggyback pixels with
 the following in mind:
 
 1.  If you are using the feature that adds users to segments when they

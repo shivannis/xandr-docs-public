@@ -1,8 +1,7 @@
 ---
 Title : Curator Segment Performance Report
-Description : <div id="curator-segment-performance-report__section-8472e7f7-0f53-430e-9e85-1b730fc1b29a"
 >
-Important: This report is only
+<b>Important:</b> This report is only
 available to curators.
 ---
 
@@ -11,12 +10,11 @@ available to curators.
 
 
 
-<div id="curator-segment-performance-report__section-8472e7f7-0f53-430e-9e85-1b730fc1b29a"
 >
 
 
 
-Important: This report is only
+<b>Important:</b> This report is only
 available to curators.
 
 
@@ -84,14 +82,13 @@ for reports. However, all intervals are not available for every report.
 
 
 
-<div id="curator-segment-performance-report__section-b48f9193-aa88-4198-8b4b-271a60c5e6ac"
 >
 
 Dimensions
 
 
 
-Important: The
+<b>Important:</b> The
 **Filter?** column shows whether a
 dimension can be used as a filter as well as being used to group by.
 
@@ -157,7 +154,7 @@ headers="curator-segment-performance-report__table-73c8599a-ccf6-40c7-a8ab-15999
 headers="curator-segment-performance-report__table-73c8599a-ccf6-40c7-a8ab-1599922ade24__entry__3">The
 unique identifier of a segment that targeted the impression.
 
-Note: Curators running this report will
+<b>Note:</b> Curators running this report will
 only see segments that they assign to their deal line item objects. For
 example, a curator pulling this report will not see segments tied to a
 third-party seller deal that they are buying.
@@ -212,7 +209,7 @@ headers="curator-segment-performance-report__table-73c8599a-ccf6-40c7-a8ab-15999
 between the different supply channels used to source impressions for the
 curator.
 
-Note: Only "Open Exchange" and "Deals"
+<b>Note:</b> Only "Open Exchange" and "Deals"
 are currently relevant for the curator.
 </td>
 </tr>
@@ -274,14 +271,13 @@ name of the country that the ad was rendered in (e.g., "United States",
 </tbody>
 </table>
 
-<div id="curator-segment-performance-report__section-e8817939-3ad6-4011-a474-f23495bee3f2"
 >
 
 Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -367,7 +363,6 @@ impressions targeted by the segment</td>
 </tbody>
 </table>
 
-<div id="curator-segment-performance-report__section-995717af-6530-4fb2-be2c-e4206d8561f4"
 >
 
 To Run Your Report
@@ -389,9 +384,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -407,7 +402,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -426,17 +421,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="curator-segment-performance-report__d11e107">**Export,
+    - **Export,
       send results via email**: Run the report in the background and
       email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -450,7 +445,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="curator-segment-performance-report__d11e136">Click
+6.  Click
     Run report to send your report
     request.
 

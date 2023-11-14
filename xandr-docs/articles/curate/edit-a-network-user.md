@@ -1,6 +1,7 @@
 ---
 Title : Edit a Member User
 Description : This page walks you through the steps required to edit a
+ms.date : 10/28/2023
 Member user, including contact information, peer
 approval requirements. Only users with the **User Manager** role can
 ---
@@ -40,7 +41,7 @@ geographical location.
 
 
 
-Note: You cannot change a user's login
+<b>Note:</b> You cannot change a user's login
 username. To assign a new username you must create a new user.
 
 You cannot change a user's password unless you are editing the User
@@ -83,9 +84,9 @@ screen.
 
 Related Topics
 
-- <a href="network-users-screen.html" class="xref">Member Users Screen</a>
-- <a href="create-a-user.html" class="xref">Create a User</a>
-- <a href="managing-user-logins-and-permissions.html"
+- <a href="network-users-screen.md" class="xref">Member Users Screen</a>
+- <a href="create-a-user.md" class="xref">Create a User</a>
+- <a href="managing-user-logins-and-permissions.md"
   class="xref">Managing User Logins and Permissions</a>
 
 

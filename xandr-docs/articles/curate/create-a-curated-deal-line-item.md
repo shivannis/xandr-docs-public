@@ -1,6 +1,7 @@
 ---
 Title : Create a Curated Deal Line Item
-Description : Note: Some clients might see different
+Description : <b>Note:</b> Some clients might see different
+ms.date : 10/28/2023
 options when creating a curated deal line item. This documentation
 ---
 
@@ -11,7 +12,7 @@ options when creating a curated deal line item. This documentation
 
 
 
-Note: Some clients might see different
+<b>Note:</b> Some clients might see different
 options when creating a curated deal line item. This documentation
 covers all options in the workflow. Contact your
 Xandr representative if you have questions about
@@ -39,14 +40,14 @@ You will need to create or have access to the following buy-side
 objects:
 
 - Advertiser: see
-  <a href="working-with-advertisers.html" class="xref">Working with
+  <a href="working-with-advertisers.md" class="xref">Working with
   Advertisers</a>
 - Insertion order (seamless): see
-  <a href="working-with-insertion-orders.html" class="xref">Working with
+  <a href="working-with-insertion-orders.md" class="xref">Working with
   Insertion Orders</a>
   
 
-  Note:
+  <b>Note:</b>
   - Legacy insertion orders are not supported with curated deal line
     items.
   - Insertion orders must be configured with an unlimited budget for
@@ -102,7 +103,7 @@ basic details for the curated deal line item.
   types as well), and **Native**
   
 
-  Note: Selecting
+  <b>Note:</b> Selecting
   Ad Type determines the availability
   of other settings (e.g.,
   Targeting
@@ -143,7 +144,7 @@ basic details for the curated deal line item.
   parent insertion order.
   
 
-  Note: When you create a deal via a
+  <b>Note:</b> When you create a deal via a
   line item, the line item will inherit its budget from the parent
   insertion order, and this will impact the revenue types available on
   the line item.
@@ -162,7 +163,7 @@ Deal Details
     select an available buyer (you can search by Name or ID).
     
 
-    Note: You cannot change the
+    <b>Note:</b> You cannot change the
     selected buyer after the curated deal line item is created and
     saved.
 
@@ -196,7 +197,7 @@ Deal Details including:
 
 
 
-Note: You may select
+<b>Note:</b> You may select
 Choose Existing when creating a
 curated deal, but this is not recommended unless you have already
 inactivated the original line item associated with the deal. For ease of
@@ -215,7 +216,7 @@ line item:
     (**Note**: this name is shared with the buyer).
     
 
-    Note: If you select the wrong deal
+    <b>Note:</b> If you select the wrong deal
     you can click Deselect to open the
     Select a Deal screen again and
     select the deal you want.
@@ -246,7 +247,6 @@ buyer will pay you. Select one of the following revenue types:
 
 Margin Type
 
-<div id="create-a-curated-deal-line-item__p-ac480139-4e6f-43b5-934e-d5e819ed6e9a"
 >
 
 Use the Margin Type settings to configure the curator margin you wish to
@@ -291,7 +291,7 @@ Flights let you set up limited deals with start and end dates as well as
 
 
 
-Note: You cannot change
+<b>Note:</b> You cannot change
 the Start Date of a flight once that
 date has passed. You can, however, add multiple flights to any curated
 deal line item.
@@ -349,7 +349,7 @@ specific universal categories:
 
     
 
-    Note: When targeting more than one
+    <b>Note:</b> When targeting more than one
     universal category, the categories have an OR relationship. For
     example, if you target the "News" and "Finance" categories, you will
     bid on inventory that is in either category. The inventory does not
@@ -374,7 +374,7 @@ exchange:
     include or exclude custom categories.
     
 
-    Note: When targeting more than one
+    <b>Note:</b> When targeting more than one
     custom category, the categories have an OR relationship. For
     example, if you include "Custom Category 1" and "Custom Category 2",
     you will bid on inventory that is in either category. The inventory
@@ -415,7 +415,7 @@ will always be applied). Any inventory in the blocklists you apply will
 automatically be *excluded* and not bid on by this line item. You may
 select from Network/member-level blocklists or  create a blocklist
 directly (see
-<a href="inventory-lists-ali-only.html" class="xref">Inventory Lists</a>)
+<a href="inventory-lists-ali-only.md" class="xref">Inventory Lists</a>)
 from the line item. Once applied, you can also view or export the
 blocklist.
 
@@ -424,13 +424,13 @@ Allowlist
 Select an allowlist you would like to apply to this line item. You may
 select from network/member-level allowlists or create an
 allowlist directly (see
-<a href="inventory-lists-ali-only.html" class="xref">Inventory Lists</a>)
+<a href="inventory-lists-ali-only.md" class="xref">Inventory Lists</a>)
 from the line item. Once applied, you can also view or export the
 allowlist.
 
 
 
-Note: The use of inventory lists (i.e.,
+<b>Note:</b> The use of inventory lists (i.e.,
 allowlists or blocklists) will constrain
 whatever Inventory Type selections you
 make. For example, if you target an
@@ -453,15 +453,15 @@ Targeting
 
 You can target curated deal line items in the same way you can target
 augmented line items. See
-<a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
+<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
 for detailed setup information on targeting. See
-<a href="inventory-performance-targeting.html" class="xref">Inventory
+<a href="inventory-performance-targeting.md" class="xref">Inventory
 Performance Targeting</a> for more information on best practices for
 inventory performance targeting.
 
 
 
-Note: Thresholds
+<b>Note:</b> Thresholds
 (Viewability Threshold or
 Completion Rate Threshold) create a
 hard limit for curated deal line item targeting. Any impressions with a
@@ -478,7 +478,7 @@ To quickly target countries, click in
 the Geography field and select the
 relevant checkboxes. To set up more advanced geography restrictions
 click Additional Geo Restrictions.
-See <a href="additional-geo-restrictions-ali.html" class="xref"
+See <a href="additional-geo-restrictions-ali.md" class="xref"
 title="In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.">Additional
 Geo Restrictions</a> for more details.
 
@@ -496,7 +496,7 @@ Reporting Labels
 Enter any reporting labels if desired. Reporting labels let you
 associate a person or other metadata with advertisers. You can then run
 reports using these labels. See
-<a href="reporting-guide.html" class="xref">Reporting Guide</a> for more
+<a href="reporting-guide.md" class="xref">Reporting Guide</a> for more
 information.
 
 Comments

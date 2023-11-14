@@ -1,6 +1,7 @@
 ---
 Title : Create an Insertion Order
 Description : Insertion orders enable you to better organize, track, and allocate
+ms.date : 10/28/2023
 budget to your line items. Associating your line items with insertion
 ---
 
@@ -16,7 +17,7 @@ across line items under a single insertion order, and to streamline your
 setup for long-standing advertiser relationships.
 
 For an overview of all buy-side objects, see the
-<a href="object-hierarchy.html" class="xref">Object Hierarchy</a>.
+<a href="object-hierarchy.md" class="xref">Object Hierarchy</a>.
 
 
 
@@ -29,23 +30,23 @@ For an overview of all buy-side objects, see the
     Order.
     
 
-    Note: You can only create insertion
+    <b>Note:</b> You can only create insertion
     orders under advertisers for which insertion orders are enabled. See
-    <a href="create-an-advertiser.html" class="xref">Create an
+    <a href="create-an-advertiser.md" class="xref">Create an
     Advertiser</a> for more details.
 
     
 2.  Fill out the basic setup, which includes information such as name
     and budget and billing details. For more information on these
     settings, see
-    <a href="create-an-insertion-order.html#ID-000017f7__ID-0000185d"
+    <a href="create-an-insertion-order.md#ID-000017f7__ID-0000185d"
     class="xref">Basic Setup</a>.
     1.  Enter a name for the insertion order and optionally enter an
         external code and/or a billing code.
     2.  Select a state.
         
 
-        Tip: To avoid spending before
+        <b>Tip:</b> To avoid spending before
         you're ready, set the state to "Inactive" until everything
         related to the buy has been set up and verified.
 
@@ -55,37 +56,37 @@ For an overview of all buy-side objects, see the
         currency after saving the insertion order.
         
 
-        Tip: As a best practice, align
+        <b>Tip:</b> As a best practice, align
         currency to the billing currency in order to achieve the best
         possible local currency experience. See
-        <a href="currency-support.html" class="xref">Currency Support</a>.
+        <a href="currency-support.md" class="xref">Currency Support</a>.
 
         
     4.  Select a viewability standard.
     5.  Select a budget type.
     6.  Optionally, set up billing periods and pacing. For more
         information, see <a
-        href="create-an-insertion-order.html#ID-000017f7__p-b89b4063-87a7-423a-876f-af09460be03b"
+        href="create-an-insertion-order.md#ID-000017f7__p-b89b4063-87a7-423a-876f-af09460be03b"
         class="xref">Billing Periods</a> and <a
-        href="create-an-insertion-order.html#ID-000017f7__p-44115d1e-ead2-4f95-a3bc-7ea05a1cc5b4"
+        href="create-an-insertion-order.md#ID-000017f7__p-44115d1e-ead2-4f95-a3bc-7ea05a1cc5b4"
         class="xref">Pacing</a>.
     7.  Optionally, enable political advertising on this insertion order
         and identify whether this advertising takes place on the federal
         or state or local level, or both. For more information, see
-        <a href="create-an-insertion-order.html#ID-000017f7__ID-000018bb"
+        <a href="create-an-insertion-order.md#ID-000017f7__ID-000018bb"
         class="xref">Political Advertising</a>.
         
 
-        Note: This option will only
+        <b>Note:</b> This option will only
         appear if you have already declared that this advertiser
         conducts political advertising on the
-        <a href="create-an-advertiser.html" class="xref">advertiser</a>.
+        <a href="create-an-advertiser.md" class="xref">advertiser</a>.
 
         
 3.  Set the supply strategy, determining the inventory type and
     inventory lists for targeting. These settings can be further refined
     on the line item. For more information, see
-    <a href="inventory-lists-ali-only.html" class="xref">Inventory Lists</a>.
+    <a href="inventory-lists-ali-only.md" class="xref">Inventory Lists</a>.
     1.  Select the inventory type: App &
         Web (the default), App
         Only (mobile inventory), or
@@ -109,13 +110,13 @@ For an overview of all buy-side objects, see the
         Xandr blocklist is applied by default.
 4.  If this insertion order contains line items for political
     advertising, fill out the
-    <a href="create-an-insertion-order.html#ID-000017f7__ID-000018bb"
+    <a href="create-an-insertion-order.md#ID-000017f7__ID-000018bb"
     class="xref">Political Advertising</a> section.
 5.  Optionally, associate existing augmented line items with the
     insertion order.
     
 
-    Important: Any budget or
+    <b>Important:</b> Any budget or
     impressions that occurred before the line item was associated to the
     insertion order do not count towards the lifetime budget of the
     insertion order.
@@ -156,7 +157,7 @@ Billing Code (optional)
 An internal billing code you want to appear on invoices for this
 insertion order, if you receive insertion-order-specific invoices. For
 details on invoices, see
-<a href="understanding-your-invoice.html" class="xref">Understanding
+<a href="understanding-your-invoice.md" class="xref">Understanding
 Your Invoice</a>.
 
 State
@@ -166,7 +167,7 @@ campaigns will be eligible to serve.
 
 
 
-Tip: To avoid spending before you're
+<b>Tip:</b> To avoid spending before you're
 ready, set the state to "Inactive" until everything related to the buy
 has been set up and verified.
 
@@ -174,17 +175,16 @@ has been set up and verified.
 
 Currency
 
-<div id="ID-000017f7__p-eb20cadb-1b91-49bb-8902-09466828b3d4" >
 
 If not set, the insertion order will inherit the advertiser's currency.
 You cannot change the currency after saving the insertion order.
 
 
 
-Tip: As a best practice, align currency
+<b>Tip:</b> As a best practice, align currency
 to the billing currency in order to achieve the best possible local
 currency experience. See
-<a href="currency-support.html" class="xref">Currency Support</a>.
+<a href="currency-support.md" class="xref">Currency Support</a>.
 
 
 
@@ -194,7 +194,7 @@ Viewability Standard
 
 The viewability standard used for this insertion order. Defaults to
 **IAB** (Internal Advertising Bureau). For more information, see
-<a href="introduction-to-viewability.html" class="xref">Introduction to
+<a href="introduction-to-viewability.md" class="xref">Introduction to
 Viewability</a>.
 
 Budget Type
@@ -202,7 +202,6 @@ Budget Type
 Determines whether the budget will be allocated by revenue (money) or by
 impression. All billing periods must have the same budget type.
 
-<div id="ID-000017f7__p-046edbc6-5e5d-413f-bbd6-8e65d704cd94" >
 
 Select a budget type:
 
@@ -219,7 +218,7 @@ Select a budget type:
 
 
 
-Warning: You cannot change the
+<b>Warning:</b> You cannot change the
 Budget Type once you save the
 insertion order.
 
@@ -256,7 +255,7 @@ insertion order's billing periods.
 
   
 
-  Important:
+  <b>Important:</b>
   - You cannot set a start date in the past.
   - <span id="ID-000017f7__ID-0000189d">Once you have saved an insertion
     order with **Set Dates** or No End
@@ -284,7 +283,7 @@ Options are:
 
   
 
-  Warning: If you select this option,
+  <b>Warning:</b> If you select this option,
   be sure to set your budget pacing on the line
   item level. Otherwise, severe overspend can occur.
 
@@ -295,7 +294,7 @@ Options are:
 
   
 
-  Important:
+  <b>Important:</b>
   You can set budgets at the line item level,
   but your insertion order budget takes precedence. When your insertion
   order budget runs out, all objects under the insertion order will stop
@@ -312,7 +311,7 @@ Options are:
 
 
 
-Note: This section will only appear if
+<b>Note:</b> This section will only appear if
 you have already declared that this insertion order will conduct
 political advertising in its Basic
 Setup section.
@@ -339,7 +338,7 @@ that will or could serve in Washington State. If
 your political ad will not be served in any of those states, you may
 enter "N/A”. For more information on political
 advertising, see
-<a href="../snippets/../topics/political-advertising.html"
+<a href="../snippets/../topics/political-advertising.md"
 class="xref">Political Advertising</a>.
 
 We reserve the right to implement additional screening at any time.
@@ -478,15 +477,15 @@ the insertion order.
 
 ## Related Topics
 
-- <a href="view-insertion-order-details.html" class="xref"
+- <a href="view-insertion-order-details.md" class="xref"
   title="The Insertion Order Details screen displays settings for a specific insertion order, essential metrics, and performance visualizations.">View
   Insertion Order Details</a>
-- <a href="create-an-advertiser.html" class="xref">Create an
+- <a href="create-an-advertiser.md" class="xref">Create an
   Advertiser</a>
-- <a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
-- <a href="political-advertising.html" class="xref">Political
+- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
+- <a href="political-advertising.md" class="xref">Political
   Advertising</a>
-- <a href="create-a-curated-deal-line-item.html" class="xref">Create a
+- <a href="create-a-curated-deal-line-item.md" class="xref">Create a
   Curated Deal Line Item</a>
 
 

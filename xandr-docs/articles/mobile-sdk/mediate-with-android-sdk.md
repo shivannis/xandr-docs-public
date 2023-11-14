@@ -2,6 +2,7 @@
 title: Mediate with Android SDK
 description: This article provides information on mediation with Android SDK. 
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 # Mediate with Android SDK

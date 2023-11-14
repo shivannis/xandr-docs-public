@@ -1,9 +1,8 @@
 ---
-title : Microsoft curate - Getting Started with Roles
-description : As a company doing business with Xandr, it's
-possible that you have more than one user responsible for your company's
-interaction with the system, whether that interaction is through the UI
-or the API. You may have several users who are responsible for different
+title : Getting Started with Roles
+description : Learn how User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs. 
+ms.date : 10/28/2023
+
 ---
 
 
@@ -43,8 +42,6 @@ User1 has the following permissions:
 - Team: SalesTeamUS with access to insertion orders 1, 2, and 5 under
   AdvertiserA
 
-
-
 This gives User1 permissions to create new insertion orders under
 AdvertiserA (and add those insertion orders to team SalesTeamUS). This
 also gives User1 permission to view, edit, and delete insertion orders
@@ -55,7 +52,4 @@ and 5 before creating more insertion orders?
 In that case, even though everything User1 had been able to view under
 AdvertiserA is gone, User1 will still be able to create new insertion
 orders under AdvertiserA and add those insertion orders to SalesTeamUS.
-
-
-
 

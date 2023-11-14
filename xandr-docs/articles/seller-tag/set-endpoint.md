@@ -29,4 +29,4 @@ apntag.setEndpoint('ib.adnxs-simple.com', true);
 ```
 
 > [!NOTE]
-> Clients who want to test the AST tag against non-production data can use the example above to point to our client testing environment.
+> Users who want to test the AST tag against non-production data can use the example above to point to our testing environment.

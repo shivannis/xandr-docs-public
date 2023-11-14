@@ -2,6 +2,7 @@
 title: Publisher-side User Opt-Out for Android
 description: The publisher side user opt-out feature in Mobile SDK allows publishers to set users' opt-in/out from tracking in ad requests.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Publisher side user opt-out for Android

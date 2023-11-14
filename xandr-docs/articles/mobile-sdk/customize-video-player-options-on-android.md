@@ -2,6 +2,7 @@
 title: Customize Video Player Options on Android
 description: In this article, learn instructions and syntax on how to customize video player options on Android devices.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Customize video player options on Android

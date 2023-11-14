@@ -1,9 +1,8 @@
 ---
 Title : Curated Deals
-Description : <div id="curated-deals__section-f28997a1-ca60-4ba4-ae76-cba0f88c2a8b"
 >
-## Xandr Curate Client Overview
-Xandr Curate enables curators like retailers,
+## Microsoft Curate Client Overview
+Microsoft Curate enables curators like retailers,
 data companies, independent trading desks, and other media companies to
 use their proprietary assets to enhance the value of a seller’s
 inventory and create unique offerings for buyers. These proprietary
@@ -14,12 +13,11 @@ inventory and create unique offerings for buyers. These proprietary
 
 
 
-<div id="curated-deals__section-f28997a1-ca60-4ba4-ae76-cba0f88c2a8b"
 >
 
-## Xandr Curate Client Overview
+## Microsoft Curate Client Overview
 
-Xandr Curate enables curators like retailers,
+Microsoft Curate enables curators like retailers,
 data companies, independent trading desks, and other media companies to
 use their proprietary assets to enhance the value of a seller’s
 inventory and create unique offerings for buyers. These proprietary
@@ -29,17 +27,16 @@ strategy, and other features. Curated deals can be bought via
 Xandr's Invest DSP and all major DSPs.
 
 In addition, for buyers who execute a large volume of campaigns and need
-to manage their media investment, Xandr Curate’s
+to manage their media investment, Microsoft Curate’s
 deal curation technology offers a single platform to easily centralize
 their business rules and targeting configurations across DSPs to
-simplify campaign execution. Using Xandr Curate,
+simplify campaign execution. Using Microsoft Curate,
 buyers could act as curators to create deals that reflect their
 decisions about segments, supply types, inventory lists, margin
 percentage, optimization, and so on.
 
 
 
-<div id="curated-deals__section-f789024d-4ad1-4353-bd13-03c28cc9ac19"
 >
 
 ## Common Questions
@@ -50,7 +47,7 @@ Certain fees/charges apply to curated transactions, but only if the bid
 for the curated deal wins the impression in the seller’s final auction.
 These fees/charges may include a tech fee charged by
 Xandr to the third-party curator for its use of
-the platform and the Xandr Curate technology,
+the platform and the Microsoft Curate technology,
 and a margin to be charged by the curator for their enhancement of the
 inventory. If you are a seller, all bids for curated transactions will
 be submitted to your final auction net of such fees/charges unless you
@@ -77,7 +74,7 @@ end of their member name. Sellers can also pull reporting on each
 curator’s activity with your member through the Network Analytics report
 by adding “is curated” and/or “curator member ID” as a dimension. For
 more information, see
-<a href="partner-center-screen-seller-view.html" class="xref">Partner
+<a href="partner-center-screen-seller-view.md" class="xref">Partner
 Center Screen - Seller View</a> or reach out to your account management
 team.
 
@@ -98,18 +95,17 @@ account management team.
 **Additional questions or want to learn more?**
 
 Please reach out to your Xandr account manager
-to learn more about Xandr Curate.
+to learn more about Microsoft Curate.
 
 
 
-<div id="curated-deals__section-95d3a9f8-c675-45e8-9d47-200a958fdccd"
 >
 
 ## Related Topics
 
-- <a href="create-a-curated-deal-line-item.html" class="xref">Create a
+- <a href="create-a-curated-deal-line-item.md" class="xref">Create a
   Curated Deal Line Item</a> (login required)
-- <a href="curator-reporting.html" class="xref">Curator Reporting</a>
+- <a href="curator-reporting.md" class="xref">Curator Reporting</a>
   (login required)
 
 

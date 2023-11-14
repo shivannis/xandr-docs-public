@@ -1,6 +1,7 @@
 ---
 Title : View Insertion Order Details
 Description : The Insertion Order Details screen
+ms.date : 10/28/2023
 displays settings for a specific insertion order, essential metrics, and
 performance visualizations.
 ---
@@ -14,12 +15,10 @@ The Insertion Order Details screen
 displays settings for a specific insertion order, essential metrics, and
 performance visualizations.
 
-<div id="ID-00001774__section_85e2a75e-e0da-49db-a4a6-f9eb3576ef92"
 >
 
 ## Getting to the Insertion Order Details Screen
 
-<div id="ID-00001774__p-e7699305-d3a9-4379-b7d1-76d32e54fa19" >
 
 From the Insertion Orders screen,
 click the name of the insertion order whose details you want to view.
@@ -41,7 +40,6 @@ will be displayed. The screen contains three main sections:
 
 
 
-<div id="ID-00001774__section_3d90dbe9-4084-4425-8dab-bead7cb3c6ed"
 >
 
 ## Viewing Insertion Order Settings
@@ -50,7 +48,7 @@ The settings that display here are read-only and can be edited by
 clicking Edit at the top of the
 Insertion Order Details screen. For
 more information, see
-<a href="create-an-insertion-order.html" class="xref">Create an
+<a href="create-an-insertion-order.md" class="xref">Create an
 Insertion Order</a>.
 
 <table id="ID-00001774__table_14a70c2b-f6f3-48e1-9946-2f2a0318e67e"
@@ -136,12 +134,10 @@ line items associated with the insertion order.</td>
 
 
 
-<div id="ID-00001774__section_a7ed17ee-eae3-4f83-ba02-2c66adfc7ec4"
 >
 
 ## Viewing Child Object Details
 
-<div id="ID-00001774__p_a194e0bf-6219-459d-9c8d-4e98fcf33dfc" >
 
 To view child object details:
 
@@ -155,16 +151,15 @@ To view child object details:
 
 
 
-<div id="ID-00001774__section_0d3ca972-1c85-46cd-982b-f339e564598e"
 >
 
 ## Related Topics
 
-- <a href="working-with-insertion-orders.html" class="xref">Working with
+- <a href="working-with-insertion-orders.md" class="xref">Working with
   Insertion Orders</a>
-- <a href="create-an-insertion-order.html" class="xref">Create an
+- <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>
-- <a href="explore-insertion-orders.html" class="xref">Explore Insertion
+- <a href="explore-insertion-orders.md" class="xref">Explore Insertion
   Orders</a>
 
 

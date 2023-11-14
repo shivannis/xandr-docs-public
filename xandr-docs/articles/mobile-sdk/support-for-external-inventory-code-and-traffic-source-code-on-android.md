@@ -2,6 +2,7 @@
 title : Support for External Inventory Code and Traffic Source Code on Android
 description : An external inventory code provides publishers the ability to break out data on their inventory more granularly than the placement level. 
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 

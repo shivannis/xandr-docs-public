@@ -53,8 +53,7 @@ Another example: you're required to purchase inventory with at least a
 30% Video Completion Rate. You also have two more goals: to optimize
 towards 1% CTR, and to achieve 25% margin. In this case, you should:
 
-- Under **Viewability & Environment**
-  Targeting, target a 30% Video Completion Rate threshold.
+- Under **Viewability & Environment Targeting** , target a 30% Video Completion Rate threshold.
 - Under **Optimization**, set a 1% CTR
   optimization goal.
 - Under **Goal Priority**, select **Margin** and specify `25%`. (However,

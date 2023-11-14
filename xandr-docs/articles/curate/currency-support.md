@@ -1,6 +1,7 @@
 ---
 Title : Currency Support
 Description : Support for multiple currencies allows buyers and sellers to transact
+ms.date : 10/28/2023
 with one another globally on the Xandr platform.
 ---
 
@@ -43,10 +44,10 @@ concepts is discussed in greater detail in dedicated sections below):
     - Xandr performs all calculations in USD. To
       support non-USD use cases, we convert in and out of USD (as
       needed) using the latest exchange rates from our <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/currency-service.html"
+      href="xandr-api/currency-service.md"
       class="xref" target="_blank">API Currency Service</a>.
 2.  **Supported Local Currencies and Exchange Rates:** Our <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/currency-service.html"
+    href="xandr-api/currency-service.md"
     class="xref" target="_blank">API Currency Service</a> updates
     exchange rates platform-wide on a daily basis based on the most
     current
@@ -481,7 +482,7 @@ headers="ID-00000773__entry__1">Bosnia-Herzegovinian Convertible Mark
 
 
 
-Note: Not all currencies available for
+<b>Note:</b> Not all currencies available for
 **transacting** are available for **billing** (invoicing) and if you set
 your transaction currency to anything other than your billing currency,
 the amount you are billed at month-end may not exactly match the totaled
@@ -501,7 +502,7 @@ Exchange Rates are sourced once daily from
 <a href="https://www.oanda.com/" class="xref" target="_blank">Oanda</a>
 at approximately 3:00 a.m. UTC. All Xandr
 applications (bidder, budgeting, billing, etc.) use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/currency-service.html"
+href="xandr-api/currency-service.md"
 class="xref" target="_blank">API Currency Service</a> (also available to
 clients) to access the latest rates. This service provides centralized,
 consistent and uniform exchange rates across the entire platform. The
@@ -512,7 +513,7 @@ for any other purpose.
 
 
 
-Note: Due to the distributed nature of
+<b>Note:</b> Due to the distributed nature of
 our systems, new rates will not be populated across all of our servers
 simultaneously.
 
@@ -541,7 +542,7 @@ that have currency setting and what those settings affect.
 
 
 
-Note: While you are able to set
+<b>Note:</b> While you are able to set
 currency on many objects, the only two which are actually used to buy
 and sell are those set on the **Line Item** (for the buy side) and
 **Publisher** (for the sell side). The currencies set on these two
@@ -602,7 +603,7 @@ currency.</p>
 <ul>
 <li>API: via the <code class="ph codeph">default_currency</code> field
 in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/advertiser-service.html"
+href="xandr-api/advertiser-service.md"
 class="xref" target="_blank">Advertiser Service</a></li>
 <li>UI: via the Currency field (under
 <strong>Default Settings</strong>) of the <span
@@ -628,7 +629,7 @@ currency setting of the IO's Advertiser.
 <p><strong>Settable?:</strong> User can set up IOs with any of the
 supported transaction currencies when creating a new IO.</p>
 
-Note: Once an IO is saved, the currency
+<b>Note:</b> Once an IO is saved, the currency
 cannot be changed as any changes will have budget implications. This
 includes both active and inactive IOs. If you need to change the
 currency of an existing IO, clone it and set the second IO to your
@@ -638,7 +639,7 @@ IO will not have any of the cloned IO's buying history.
 <p><strong>Where set:</strong></p>
 <ul>
 <li>API: via the <code class="ph codeph">currency</code> field in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/insertion-order-service.html"
+href="xandr-api/insertion-order-service.md"
 class="xref" target="_blank">Insertion Order Service</a></li>
 <li>UI: via the Currency field of the
 Insertion Order screen</li>
@@ -659,7 +660,7 @@ Item</strong></td>
 headers="ID-00000773__entry__185"><strong>Default:</strong> Inherits the
 currency setting of the Line Item's Advertiser.
 
-Note: If you are using IOs, the Line
+<b>Note:</b> If you are using IOs, the Line
 Item's currency must match that of its parent IO.
 
 <p><strong>Settable?:</strong> Can be set to any supported transaction
@@ -669,7 +670,7 @@ This includes active and inactive Line Items.</p>
 <p><strong>Where set:</strong></p>
 <ul>
 <li>API: via the <code class="ph codeph">currency</code> field in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/line-item-service.html"
+href="xandr-api/line-item-service.md"
 class="xref" target="_blank">Line Item Service</a></li>
 <li>UI: via the Currency field of the
 Line Item screen</li>

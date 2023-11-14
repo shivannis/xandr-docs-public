@@ -1,6 +1,7 @@
 ---
 Title : Buying Microsoft Video Inventory
 Description : Microsoft video inventory combines the targeting effectiveness of
+ms.date : 10/28/2023
 programmatic buying with interactive ad formats.
 ---
 
@@ -12,7 +13,6 @@ programmatic buying with interactive ad formats.
 Microsoft video inventory combines the targeting effectiveness of
 programmatic buying with interactive ad formats.
 
-<div id="ID-00007ac9__p_a199beb1-0bbc-492b-ab9a-7a864c3c3b74" >
 
 Microsoft video inventory allows brands to deliver a premium narrative
 that provides a robust understanding of a product to users. By buying
@@ -31,12 +31,10 @@ representative. If you're accessing Xandr using
 an external DSP, work with your associated DSP account manager for
 additional inquiries.
 
-<div id="ID-00007ac9__section_5739860c-a262-4671-bcd8-03d65cfd6f29"
 >
 
 ## Types of Microsoft Video Inventory
 
-<div id="ID-00007ac9__p_ad6988c9-ba54-49bf-a7ca-7a5c13eb0903" >
 
 Microsoft offers four types of video inventory that are available
 programmatically:
@@ -48,7 +46,6 @@ programmatically:
 
 
 
-<div id="ID-00007ac9__p_15d2a0e6-eaf6-443d-b239-2d3de1736ac9" >
 
 The following table summarizes the benefits and availability of each
 inventory type:
@@ -182,12 +179,10 @@ markets</td>
 
 
 
-<div id="ID-00007ac9__section_1df4228f-76f2-4f59-8868-9f4df7785c23"
 >
 
 ## Creative Specifications for Microsoft Video Inventory
 
-<div id="ID-00007ac9__p_a1faf148-bf23-4719-9f1c-4c2a11ac776e" >
 
 To learn more about Microsoft's various video creative specifications,
 see the following:
@@ -201,12 +196,10 @@ see the following:
 
 
 
-<div id="ID-00007ac9__section_d05806b9-989a-461a-9e65-a76e6a5d8d82"
 >
 
 ## Targeting Microsoft Video Inventory
 
-<div id="ID-00007ac9__p_3fb14866-4377-4486-b506-284fbddb1c92" >
 
 Each video inventory type can be targeted using RTB or Deals. To target
 Microsoft video inventory, follow the guidelines listed in the table
@@ -236,16 +229,16 @@ headers="ID-00007ac9__table_bd500637-c833-4413-a37f-bf3e716c61c9__entry__1">RTB<
 headers="ID-00007ac9__table_bd500637-c833-4413-a37f-bf3e716c61c9__entry__2"><ul>
 <li><strong>For MSN</strong>: In your inventory list, include the
 <strong>msn.com</strong> domain. For more information, see <a
-href="buying-msn-inventory.html" class="xref">Buying MSN
+href="buying-msn-inventory.md" class="xref">Buying MSN
 Inventory</a>.</li>
 <li><p><strong>For Windows</strong>: In your inventory list, target
 <strong>Windows AppNetwork (348882)</strong>. For more information, see
-<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.html"
+<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
 class="xref">Buying Microsoft Windows 3rd Party AppNetwork
 Inventory</a>.</p>
 <p>Depending on market availability, buyers can also target the
 In-stream and Outstream video position as described in <a
-href="video-targeting.html" class="xref">Video Targeting</a>.</p></li>
+href="video-targeting.md" class="xref">Video Targeting</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even row">
@@ -270,12 +263,12 @@ Bidder</td>
 headers="ID-00007ac9__table_bd500637-c833-4413-a37f-bf3e716c61c9__entry__2"><ul>
 <li>When targeting msn.com, add <strong>msn.com</strong> to the targeted
 domain list using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/inventory-list-item-service.html"
+href="xandr-api/inventory-list-item-service.md"
 class="xref" target="_blank">Inventory List Item Service</a>. All MSN
 domains will be captured by the parent msn.com domain.</li>
 <li>When targeting video bid requests, we highly recommend that bidders
 listen to the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/outgoing-bid-request-to-bidders.html"
+href="xandr-bidders/outgoing-bid-request-to-bidders.md"
 class="xref" target="_blank">Video AppNexus
 Object</a> within the Video Extension Object to distinguish In-stream,
 Outstream, and Bannerstream bid requests. Without listening to this
@@ -283,11 +276,11 @@ object, it is difficult to differentiate Bannerstream inventory since
 Bannerstream is a proprietary Xandr format.</li>
 </ul>
 
-Note: If you choose to filter by
+<b>Note:</b> If you choose to filter by
 creative size, the list of creative sizes must be exhaustive. Include
 1x1 as a permitted size since all of our video inventory appears as 1x1.
 For more information, see our <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/bidder-profile---faq.html"
+href="xandr-bidders/bidder-profile---faq.md"
 class="xref" target="_blank">Bidder Profile - FAQ</a>.
 </td>
 </tr>
@@ -298,7 +291,6 @@ class="xref" target="_blank">Bidder Profile - FAQ</a>.
 
 
 
-<div id="ID-00007ac9__section_2ba88576-0e65-44ac-956b-3cc65919cfdb"
 >
 
 ## Availability and Volume
@@ -308,7 +300,6 @@ product and market, download the latest <a
 href="../attachments/buying-microsoft-video-inventory/msft-video-volume-by-format-final-june-2017.xlsx"
 class="xref">Excel file</a>.
 
-<div id="ID-00007ac9__p_05dd94db-650c-408a-b7a7-de0314c2f511" >
 
 Here are some quick volume metric highlights:
 
@@ -324,12 +315,11 @@ Here are some quick volume metric highlights:
 
 
 
-<div id="ID-00007ac9__section_f7bb0bfb-c72b-4f79-8e3f-e991cb817214"
 >
 
 ## Related Topics
 
-- <a href="buying-microsoft-inventory.html" class="xref">Buying Microsoft
+- <a href="buying-microsoft-inventory.md" class="xref">Buying Microsoft
   Inventory</a>
 
 

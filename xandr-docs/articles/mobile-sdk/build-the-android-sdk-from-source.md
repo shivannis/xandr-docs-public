@@ -2,6 +2,7 @@
 title: Build the Android SDK From Source
 description: In this article, find instructions for including the source code of our Android SDK in your project and building it.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Build the Android SDK from source

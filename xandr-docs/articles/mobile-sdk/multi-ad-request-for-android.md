@@ -2,6 +2,7 @@
 title: Multi Ad Request for Android
 description: This article has instructions and code samples for initiating and configuring multi ad reqguest for Android.
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 # Multi ad request for Android

@@ -1,6 +1,7 @@
 ---
 Title : Dimensions, Metrics, Filtering, and Grouping
 Description : This page outlines how to design your reports so that you can:
+ms.date : 10/28/2023
 - Reduce the size of the data set by removing data you don't care about
 - Increase the relevance of the data you do get
 - Get your results more quickly; requesting smaller data sets often
@@ -85,7 +86,7 @@ dimensions you don't care about. This reduces the size of the data set.
 For example, you might want to see only those impressions that occurred
 on weekends in a certain region of France.
 
-Tip: Filter out as much irrelevant data
+<b>Tip:</b> Filter out as much irrelevant data
 as possible – smaller data is faster data.
 </td>
 </tr>
@@ -102,7 +103,7 @@ how the different line items under an advertiser are performing.</p>
 selecting many dimensions can generate a very large data set. For every
 additional dimension you select, the data set becomes larger.</p>
 
-Tip: Select as few dimensions as
+<b>Tip:</b> Select as few dimensions as
 possible. The more dimensions you select, the larger the data set
 becomes.
 </td>
@@ -133,9 +134,8 @@ view the report, have it run in the background or have it exported and
 emailed to you (in CSV or Excel format). This goes more quickly with
 smaller data sets.
 
-<img
-src="../images/dimensions-metrics-filtering-and-grouping/filtering-and-grouping.png"
-class="image" />
+![Filtering and grouping](media/filtering-and-grouping.png)
+
 
 A Tiny Example Database
 
@@ -495,9 +495,9 @@ automatic grouping of dimensions by applying filtering.
 
 Related Topics
 
-- <a href="availability-of-reporting-data.html" class="xref">Availability
+- <a href="availability-of-reporting-data.md" class="xref">Availability
   of Reporting Data</a>
-- <a href="dates-and-times-in-reporting.html" class="xref">Dates and Times
+- <a href="dates-and-times-in-reporting.md" class="xref">Dates and Times
   in Reporting</a>
 
 

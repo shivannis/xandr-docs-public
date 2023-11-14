@@ -1,6 +1,7 @@
 ---
-title : Microsoft Curate - Geo Radius Segments
+title : Geo Radius Segments
 description : A geo radius segment is a list of latitude, longitude, and radius data.
+ms.date : 10/28/2023
 ---
 
 
@@ -27,7 +28,7 @@ There are five steps to creating a geo radius segment:
 ### Step 1. Get started
 
 Open the [Location Manager](location-manager.md) page
-and click **New**to open the **Create Geo Radius Segment** dialog.
+and click **New** to open the **Create Geo Radius Segment** dialog.
 
 ### Step 2. Create a new Geo Radius Segment
 
@@ -66,7 +67,7 @@ Click **Next**.
 1. Click **Validate Input Formatting** to
     ensure that the information is in the correct format. If the
     information is in the correct format, the
-    Next button is enabled.
+    **Next** button is enabled.
 1. Click **Next**.
 
 **Import from file**

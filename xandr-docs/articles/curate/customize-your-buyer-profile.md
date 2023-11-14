@@ -1,6 +1,7 @@
 ---
 Title : Customize Your Buyer Profile
 Description : Step 1. Get Started
+ms.date : 10/28/2023
 ---
 
 
@@ -61,9 +62,9 @@ Partner Center screen.
 
 Related Topic
 
-- <a href="managing-relationships-with-sellers.html" class="xref">Managing
+- <a href="managing-relationships-with-sellers.md" class="xref">Managing
   Relationships with Sellers</a>
-- <a href="partner-center-screen-buyer-view.html" class="xref">Partner
+- <a href="partner-center-screen-buyer-view.md" class="xref">Partner
   Center Screen</a>
 
 

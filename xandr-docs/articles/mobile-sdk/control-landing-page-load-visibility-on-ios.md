@@ -2,6 +2,7 @@
 title: Control Landing Page Load Visibility on iOS
 description: In this article, learn instructions for configuring the landing page load behavior when ads are clicked on iOS devices.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Control landing page load visibility on iOS

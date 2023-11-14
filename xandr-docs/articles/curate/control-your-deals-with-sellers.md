@@ -1,6 +1,7 @@
 ---
 Title : Control Your Deals with Sellers
 Description : You can control deals received from sellers on the
+ms.date : 10/28/2023
 Deals screen. You can:
 ---
 
@@ -22,10 +23,10 @@ Deals screen. You can:
 
 
 
-Note: For more information on managing
+<b>Note:</b> For more information on managing
 deals with sellers including viewing basic and advanced deal metrics,
 monitoring each deal's health, and running detailed reports, see
-<a href="manage-your-deals-with-sellers.html" class="xref">Manage Your
+<a href="manage-your-deals-with-sellers.md" class="xref">Manage Your
 Deals with Sellers</a>.
 
 
@@ -45,17 +46,17 @@ deals by selecting one of the following settings:
 - **Default Active**: new seller deals will be set to **Active** status
   by default when received. Deals can be declined or changed to
   **Inactive** status later if necessary (see
-  <a href="control-your-deals-with-sellers.html#ID-000013a8__ID-0000144c"
+  <a href="control-your-deals-with-sellers.md#ID-000013a8__ID-0000144c"
   class="xref">Managing Deal Status</a>).
 - **Require Review**: new seller deals will be set to **Pending** status
   by default when received until the deals are reviewed by the buyer and
   accepted or declined (see
-  <a href="control-your-deals-with-sellers.html#ID-000013a8__ID-00001408"
+  <a href="control-your-deals-with-sellers.md#ID-000013a8__ID-00001408"
   class="xref">Accepting or Declining Deals</a>).
 
 
 
-Note:
+<b>Note:</b>
 
 - **Default Active** is the default setting if no deal review preference
   is set.
@@ -86,7 +87,7 @@ following:
 Accepting or Declining Deals
 
 If you have set your buyer review preference to **Require Review** (see
-<a href="control-your-deals-with-sellers.html#ID-000013a8__ID-000013d6"
+<a href="control-your-deals-with-sellers.md#ID-000013a8__ID-000013d6"
 class="xref">Setting Deal Review Preferences</a>), you can then review
 new deals and accept or decline them. You can also accept or decline
 deals that are in any status (i.e., **Pending**, **Active**,
@@ -104,9 +105,9 @@ When you select Accept, the deal is:
 
 
 
-Note: Accepted deals can be set to
+<b>Note:</b> Accepted deals can be set to
 **Inactive** status (see
-<a href="control-your-deals-with-sellers.html#ID-000013a8__ID-0000144c"
+<a href="control-your-deals-with-sellers.md#ID-000013a8__ID-0000144c"
 class="xref">Managing Deal Status</a>) if you want to remove them from
 the list of **Active** deals.
 
@@ -122,9 +123,9 @@ When you select Decline, the deal is:
 
 
 
-Note: You can change **Declined** deals
+<b>Note:</b> You can change **Declined** deals
 to **Active** at any time (see
-<a href="control-your-deals-with-sellers.html#ID-000013a8__ID-0000144c"
+<a href="control-your-deals-with-sellers.md#ID-000013a8__ID-0000144c"
 class="xref">Managing Deal Status</a>).
 
 
@@ -261,7 +262,7 @@ have a group of deals that you’d like to set to **Active** or
 **Accept** in the Select drop-down to
 set them to **Active** status, or **Decline** to set them to
 **Declined** status (see
-<a href="control-your-deals-with-sellers.html#ID-000013a8__ID-00001408"
+<a href="control-your-deals-with-sellers.md#ID-000013a8__ID-00001408"
 class="xref">Accepting or Declining Deals</a>).
 
 Assigning a Deal Alias
@@ -275,7 +276,7 @@ the **Deal Name** that the seller provided for the deal.
 
 
 
-Note: The Deal Alias you assign to a
+<b>Note:</b> The Deal Alias you assign to a
 deal is not viewable by the seller of the deal.
 
 
@@ -284,7 +285,7 @@ To assign a **Deal Alias** to a deal, do the following:
 
 
 
-Note: The
+<b>Note:</b> The
 Deal Alias field is limited to 254
 characters.
 
@@ -304,9 +305,9 @@ characters.
 
 Related Topics
 
-- <a href="manage-your-deals-with-sellers.html" class="xref">Manage Your
+- <a href="manage-your-deals-with-sellers.md" class="xref">Manage Your
   Deals with Sellers</a>
-- <a href="partnership-details-screen-buyer-view.html"
+- <a href="partnership-details-screen-buyer-view.md"
   class="xref">Partnership Details Screen</a>
 
 

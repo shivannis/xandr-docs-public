@@ -1,6 +1,5 @@
 ---
 Title : Postal Code Lists
-Description : <div id="ID-0000198e__section-6e7517a8-b181-4f42-a734-d75ede226028"
 >
 ## Introduction
 Leveraging postal codes is a powerful way for advertisers to achieve
@@ -12,7 +11,6 @@ highly granular and precise, or *hyperlocal*, targeting. Hyperlocal
 
 
 
-<div id="ID-0000198e__section-6e7517a8-b181-4f42-a734-d75ede226028"
 >
 
 ## Introduction
@@ -34,7 +32,7 @@ The Postal Code List feature enables users to:
 
 
 
-Note: Certain legitimate ZIP or postal
+<b>Note:</b> Certain legitimate ZIP or postal
 codes are unrecognizable or invalid within the
 Xandr geography targeting system. This can
 happen because <a href="https://www.digitalelement.com/" class="xref"
@@ -68,7 +66,7 @@ The maximum number of postal codes allowed in a list is 100,000.
 
 
 
-Note: For USA, you can target the full
+<b>Note:</b> For USA, you can target the full
 9-digit postal code (also known as zip +4). For example, "10010-7456".
 
 
@@ -110,7 +108,7 @@ Note: For USA, you can target the full
 
     
 
-    Note: You need to select the
+    <b>Note:</b> You need to select the
     country to which the postal codes belong before using the **Copy and
     Paste** or **Import from file** option. You can only upload postal
     codes from one country at a time. For USA, you can target the full
@@ -136,7 +134,7 @@ Note: For USA, you can target the full
 ## Target Postal Code Lists and Postal Codes on Line Items
 
 To learn more about targeting Postal Code Lists and Postal Codes on line
-items, see <a href="additional-geo-restrictions-ali.html" class="xref"
+items, see <a href="additional-geo-restrictions-ali.md" class="xref"
 title="In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.">Additional
 Geo Restrictions</a>.
 
@@ -148,7 +146,7 @@ Geo Restrictions</a>.
 
 
 
-- <a href="additional-geo-restrictions-ali.html" class="xref"
+- <a href="additional-geo-restrictions-ali.md" class="xref"
   title="In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.">Additional
   Geo Restrictions</a>
 

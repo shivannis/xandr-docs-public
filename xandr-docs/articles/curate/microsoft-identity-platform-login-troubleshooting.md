@@ -1,6 +1,7 @@
 ---
 Title : Microsoft Identity Platform Login Troubleshooting
 Description : This document outlines some scenarios where questions may arise in the
+ms.date : 10/28/2023
 minds of users while using Microsoft Identity Platform.
 ---
 
@@ -22,7 +23,6 @@ email you have access to. Go to
 target="_blank">this link</a> to register or manage your Microsoft
 Account.
 
-<div id="microsoft-identity-platform-login-troubleshooting__p-e79296e4-b98a-4717-b014-824009d57a8d"
 >
 
 If you company sets up Federated Sign-in for your corporate email

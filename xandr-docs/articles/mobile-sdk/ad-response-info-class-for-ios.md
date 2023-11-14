@@ -2,6 +2,7 @@
 title: Ad Response Info Class for iOS
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for iOS Mobile SDK.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Ad response info class for iOS

@@ -1,6 +1,7 @@
 ---
 Title : About Curate
-Description : Xandr Curate lets curators use their proprietary
+Description : Microsoft Curate lets curators use their proprietary
+ms.date : 10/28/2023
 assets to enhance the value of a seller’s inventory and create unique
 offerings for buyers.
 ---
@@ -10,11 +11,10 @@ offerings for buyers.
 
 
 
-Xandr Curate lets curators use their proprietary
+Microsoft Curate lets curators use their proprietary
 assets to enhance the value of a seller’s inventory and create unique
 offerings for buyers.
 
-<div id="about-curate__section-62c418a4-c578-46bc-9acf-2c631aa9c89b"
 >
 
 ## Benefits
@@ -26,10 +26,10 @@ capabilities, investment strategy, and other assets to provide curated
 deals to buyers.
 
 For buyers who execute a large volume of campaigns and need to manage
-their media investment, Xandr Curate offers a
+their media investment, Microsoft Curate offers a
 single platform to easily centralize their business rules and targeting
 configurations across DSPs to simplify campaign execution.
-Using Xandr Curate, buyers can act as curators
+Using Microsoft Curate, buyers can act as curators
 to create deals that reflect their decisions about segments, supply
 types, inventory lists, margin percentage, optimization, and so on.
 
@@ -38,7 +38,6 @@ Invest DSP and all major DSPs.
 
 
 
-<div id="about-curate__section-16a201da-c3ae-4e47-8d8d-5c4bc225cc0f"
 >
 
 ## Get Started

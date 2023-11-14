@@ -1,6 +1,7 @@
 ---
 Title : Inventory Lists
 Description : Introduction
+ms.date : 10/28/2023
 Inventory lists are a way to group the domains, apps, and app bundle IDs
 that you want to target or exclude on your insertion orders and line
 items. Each inventory list must be either an allowlist (for restricting
@@ -58,7 +59,7 @@ Domains
   under each top-level domain for this purpose.
   
 
-  Important: The
+  <b>Important:</b> The
   Include subdomains checkbox will
   only appear if a domain is broken out for subdomain audit in the
   system. If a domain is not broken out, the checkbox will not appear
@@ -103,8 +104,8 @@ For example, here are the detail pages for the "Candy Crush" app:
 
 To identify specific mobile apps to target, we recommend targeting the
 region you're interested in, activating your campaign, and after a few
-days running the <a href="site-domain-performance.html"
-class="xref">site-domain-performance.html</a> report, which will show
+days running the <a href="site-domain-performance.md"
+class="xref">site-domain-performance.md</a> report, which will show
 you the apps that you've been reaching. You can then update your
 targeting to include or exclude specific apps to meet your needs.
 
@@ -113,8 +114,7 @@ Key to Domain/App Audit Flags
 Each domain or app in a list can have one of the following audit
 statuses:
 
-- <img src="../images/inventory-lists-ali/audit_check.jpg"
-  class="image" /> - the domain/app has been audited and approved.
+- ![audit check]("media/audit-check.png")  - the domain/app has been audited and approved.
 - **Rejected** : The reason the domain/app has been rejected after being
   audited (e.g., Hate Speech).
 - "**--**" - the domain/app is either unauditable (has been reviewed but
@@ -130,7 +130,7 @@ statuses:
 
 
 
-Note: For audit status "`--`" or
+<b>Note:</b> For audit status "`--`" or
 "`Unsupported`", creatives will be delivered through managed inventory
 or deals. They will not be delivered in open exchange unless you have
 allowed unauditable creatives for the line item.
@@ -139,9 +139,11 @@ allowed unauditable creatives for the line item.
 
 
 
-Note: The domains with audit status of
-either <img src="../images/inventory-lists-ali/audit_check.jpg"
-class="image" /> or "**--**" are available for use in the augmented line
+<b>Note:</b> The domains with audit status of
+either 
+![audit check]("media/audit-check.png")
+
+ or "**--**" are available for use in the augmented line
 item inventory lists.
 
 
@@ -172,7 +174,7 @@ Create a New Inventory List
       items.
       
 
-      Note: The inventory lists that
+      <b>Note:</b> The inventory lists that
       are set to **Required for all** will only be applied to
       third-party inventory.
 
@@ -191,7 +193,7 @@ Create a New Inventory List
       list of domains and/or apps to be included in this inventory list.
       
 
-      Note: The maximum number of
+      <b>Note:</b> The maximum number of
       domains and/or apps per inventory list is limited to 100,000.
 
       
@@ -207,7 +209,7 @@ Create a New Inventory List
 10. Click Next. The domains and apps
     you entered will be listed along with
     Flags for each (see
-    <a href="inventory-lists-ali-only.html#ID-00004d82__ID-00004deb"
+    <a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004deb"
     class="xref">Key to Domain/App Audit Flags</a> for more
     information). If the list is large, use the arrows to advance
     through the pages. Note the following:
@@ -243,7 +245,6 @@ exported:
   be downloaded. That `.zip` file will contain a `.csv` file for each
   list that you exported.
 
-<div id="ID-00004d82__section-a6b628cc-ddc4-4237-a162-966cd4d64dae"
 >
 
 Duplicate an Inventory List
@@ -286,7 +287,7 @@ Delete an Inventory List
 
 
 
-Warning: Deletions are permanent.
+<b>Warning:</b> Deletions are permanent.
 Deleted inventory lists cannot be retrieved.
 
 
@@ -301,7 +302,7 @@ Deleted inventory lists cannot be retrieved.
       1.  Click Add.
       2.  Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 8-10 in
-          the<a href="inventory-lists-ali-only.html#ID-00004d82__ID-00004e00"
+          the<a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004e00"
           class="xref">Create a New Inventory List</a> section for more
           information.
       3.  Click Save.
@@ -310,7 +311,7 @@ Deleted inventory lists cannot be retrieved.
       1.  Click Replace.
       2.  Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 8-10 in the
-          <a href="inventory-lists-ali-only.html#ID-00004d82__ID-00004e00"
+          <a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004e00"
           class="xref">Create a New Inventory List</a> section for more
           information.
       3.  Click Save.
@@ -337,7 +338,7 @@ Edit an Existing Inventory List
       1.  Click Add.
       2.  Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 7-9 in the
-          <a href="inventory-lists-ali-only.html#ID-00004d82__ID-00004e00"
+          <a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004e00"
           class="xref">Create a New Inventory List</a> section.
     - **Remove**: Remove domains or apps from the list. (**Warning**:
       This action cannot be undone.)
@@ -371,10 +372,10 @@ Edit an Existing Inventory List
 
 Related Topics
 
-- <a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>
-- <a href="create-an-insertion-order.html" class="xref">Create an
+- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
+- <a href="create-an-insertion-order.md" class="xref">Create an
   Insertion Order</a>
-- <a href="object-hierarchy.html" class="xref">Object Hierarchy</a>
+- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
 
 
 

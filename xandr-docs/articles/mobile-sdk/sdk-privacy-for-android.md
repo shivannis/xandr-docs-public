@@ -2,6 +2,7 @@
 title: SDK Privacy for Android
 description: Mobile SDKs include client support for Global Privacy Platform, the General Data Protection Regulations, and the California Consumer Protection Act.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # SDK privacy for Android

@@ -1,6 +1,7 @@
 ---
 Title : Member Users Screen
 Description : The Member Users screen shows you basic
+ms.date : 10/28/2023
 information about your network-level users, provides access to
 additional details about specific users, and lets you edit or
 activate/deactivate specific network-level users.
@@ -30,7 +31,7 @@ You'll see the following details about each user:
 - **User Role:** This is the user's role, which determines the areas and
   functions that each user can access. For details on available roles,
   see
-  <a href="getting-started-with-roles.html" class="xref">Getting Started
+  <a href="getting-started-with-roles.md" class="xref">Getting Started
   with Roles</a>.
 
 Viewing a Specific Member User's Details
@@ -65,12 +66,12 @@ More Actions button. Choose
 Activate or
 Deactivate from the drop-down list.
 Further details are available at
-<a href="create-a-user.html" class="xref">Create a User</a>.
+<a href="create-a-user.md" class="xref">Create a User</a>.
 
 Related Topics
 
-- <a href="create-a-user.html" class="xref">Create a User</a>
-- <a href="edit-a-network-user.html" class="xref">Edit a Member User</a>
+- <a href="create-a-user.md" class="xref">Create a User</a>
+- <a href="edit-a-network-user.md" class="xref">Edit a Member User</a>
 
 
 

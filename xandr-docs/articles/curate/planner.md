@@ -1,6 +1,7 @@
 ---
 Title : Planner
 Description : Planner is an interactive forecasting tool that provides reach and
+ms.date : 10/28/2023
 delivery projections in real time. Planner helps you understand the
 ---
 
@@ -29,7 +30,7 @@ create a deal line item based on your plan.
 
 
 
-Note: Planner forecasts rely on
+<b>Note:</b> Planner forecasts rely on
 historical data that is collected over time. For the most accurate
 results, audiences should be onboarded and deals should be live for a
 week before you create projections with Planner.

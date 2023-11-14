@@ -1,83 +1,37 @@
 ---
-Title : Evaluate the Yield of an Order
-Description : Use the Orders tab and Evaluate
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-Orders to see how a proposal is expected to deliver and be consumed.
+title: Evaluate the Yield of an Order
+description: In this article, explore step-by-step instructions on how to evaluate the yield of an order.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Evaluate the yield of an order
 
-# Evaluate the Yield of an Order
+Use the **Orders** tab and Evaluate Orders to see how a proposal is expected to deliver and be consumed.
 
-
-
-Use the Orders tab and Evaluate
-Orders to see how a proposal is expected to deliver and be consumed.
-
-1.  On the Orders tab, in the Order
-    Tasks panel, click Evaluate
-    Orders.
-2.  Use the Filters panel to find the proposal to evaluate:
-    - The Time Period filter searches the order's start date. 
-    - The Order, Order Status, Advertiser, Agency, Industry,
-      and Salesperson filters search parameters imported from your order
-      management system. 
-    - The Flags filter searches for orders that have pricing (! Price)
-      or availability (! Avails) flags.
-3.  Click on the order in the Orders panel list to select it. A preview
-    of the order appears in the Order details panel below.
-4.  In the Order details panel, click the name of the order to open it
-    in Evaluate Orders, or
-    click View and select Evaluate
-    Orders. 
-5.  In the Key Metrics panel of the Order
-    Analytics tab of the Evaluate Orders page, view the bar
-    charts to compare the selected order to all other orders, making any
-    additional changes:
-    1.  Change the comparison basis by
-        clicking All Customers and
-        selecting one of the following four values:
+1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
+1. Use the Filters panel to find the proposal to evaluate:
+    - The Time Period filter searches the order's start date.
+    - The Order, Order Status, Advertiser, Agency, Industry, and Salesperson filters search parameters imported from your order management system.
+    - The Flags filter searches for orders that have pricing (! Price) or availability (! Avails) flags.
+1. Click on the order in the Orders panel list to select it. A preview of the order appears in the Order details panel below.
+1. In the Order details panel, click the name of the order to open it in Evaluate Orders, or click **View** and select Evaluate Orders.
+1. In the Key Metrics panel of the **Order Analytics** tab of the Evaluate Orders page, view the bar charts to compare the selected order to all other orders, making any additional changes:
+    1. Change the comparison basis by clicking **All Customers** and selecting one of the following four values:
         - All Customers
         - This Industry
         - This Agency
-        - This Advertiser 
-    2.  Change the time period for the comparison's underlying data. By
-        default, the time period is the Last 365 Days. 
-6.  On the Order Composition panel, view the two pie charts:
-    - The Contracted Revenue by Pricing Type chart shows how much of the
-      order's revenue is associated with CPM vs. CPD placements.
-    - The Contracted Revenue by Contract Type pie chart shows how much
-      of the order's revenue is associated with standard placements vs.
-      sponsorships.
-7.  Click the Order Lines tab to
-    evaluate order lines in the focus order. This uses filters to find
-    specific order lines, and flags to highlight pricing or availability
-    issues.
+        - This Advertiser
+    1. Change the time period for the comparison's underlying data. By default, the time period is the Last 365 Days.
+1. On the Order Composition panel, view the two pie charts:
+    - The Contracted Revenue by Pricing Type chart shows how much of the order's revenue is associated with CPM vs. CPD placements.
+    - The Contracted Revenue by Contract Type pie chart shows how much of the order's revenue is associated with standard placements vs. sponsorships.
+1. Click the **Order Lines** tab to evaluate order lines in the focus order. This uses filters to find specific order lines, and flags to highlight pricing or availability issues.
 
+## Related topics
 
-## Related Topics
-
-- <a href="anatomy-of-the-evaluate-orders-page.md" class="xref">Anatomy
-  of the Evaluate Orders Page</a>
-- <a href="anatomy-of-the-evaluate-orders-search-page.md"
-  class="xref">Anatomy of the Evaluate Orders Search Page</a>
-- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
-  in Evaluate Orders</a>
-- <a
-  href="using-alternative-products-to-solve-pricing-availability-issues.md"
-  class="xref">Using Alternative Products to Solve Pricing/Availability
-  Issues</a>  
-    
-
-
-
-
-
-<a href="evaluate-orders-overview.md" class="link">Evaluate
-Orders Overview</a>
-
-
-
-
-
-
+- [Anatomy of the Evaluate Orders Page](anatomy-of-the-evaluate-orders-page.md)
+- [Anatomy of the Evaluate Orders Search Page](anatomy-of-the-evaluate-orders-search-page.md)
+- [About Flags in Evaluate Orders](about-flags-in-evaluate-orders.md)
+- [Using Alternative Products to Solve Pricing/Availability Issues](using-alternative-products-to-solve-pricing-availability-issues.md)
+- [Evaluate Orders Overview](evaluate-orders-overview.md)

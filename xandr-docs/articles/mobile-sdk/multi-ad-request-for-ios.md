@@ -2,6 +2,7 @@
 title: Multi Ad Request for iOS
 description: This article provides instructions and code samples for using ANMultiAdRequest to initiate multiple auctions in a single server response. 
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Multi ad request for iOS

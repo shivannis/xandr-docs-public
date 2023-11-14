@@ -2,6 +2,7 @@
 title : Set Reserve Prices on Android
 description : The reserve price is the minimum bid amount you'll accept to show an ad in Android.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 

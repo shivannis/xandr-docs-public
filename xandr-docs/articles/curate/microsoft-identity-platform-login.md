@@ -1,6 +1,7 @@
 ---
 Title : Microsoft Identity Platform Login
 Description : This document outlines an overview of authenticating users for Xandr
+ms.date : 10/28/2023
 Advertising Products using Microsoft Identity Platform.
 ---
 
@@ -129,7 +130,7 @@ target="_blank">here</a>.
 
 ## Related Topics
 
-- <a href="microsoft-identity-platform-login-troubleshooting.html"
+- <a href="microsoft-identity-platform-login-troubleshooting.md"
   class="xref"
   title="This document outlines some scenarios where questions may arise in the minds of users while using Microsoft Identity Platform.">Microsoft
   Identity Platform Login Troubleshooting</a>

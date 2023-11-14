@@ -1,83 +1,37 @@
 ---
-Title : Using Alternative Products to Solve Pricing/Availability Issues
-Description : Alternative products are available in Evaluate Orders to help resolve !
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-Price and ! Avails flags.
+title: Using Alternative Products to Solve Pricing/Availability Issues
+description: This article explains about how to use alternative products to solve pricing or availability issues.
+ms.date: 11/07/2023
+ms.custom: yield-analytics-ui
 ---
 
+# Using alternative products to solve pricing/availability issues
 
-# Using Alternative Products to Solve Pricing/Availability Issues
+Alternative products are available in Evaluate Orders to help resolve ! Price and ! Avails flags.
 
+## About alternate products
 
+The Score for an alternate product indicates how closely it's related to the order line's product, based on the following criteria:
 
-Alternative products are available in Evaluate Orders to help resolve !
-Price and ! Avails flags.
+- Alternate sizes – Products with the same targeting as the order line's product, but with a different value for Size.
+- Audience affinity – Products that heavily overlap the same set of other products.
+- Purchase behavior – Products that frequently appear together on the same orders.
 
+## View alternate products
 
+In the Product Details panel, click the **Alternate Products** tab.
 
-## About Alternate Products
+## Add an alternate product to a proposal
 
-The Score for an alternate product indicates how closely it's related to
-the order line's product, based on the following criteria:
+1. Click the **Add** button to the left of the product's name. A new order line with the selected product is created at the top of the **Order Line Listing** above the **Product Details**.
+1. Enter or change the order line parameters (e.g., Start date, End date, Imps) as needed.
+1. Click **Update**.
 
-- Alternate sizes – Products with the same targeting as the order line's
-  product, but with a different value for Size.
-- Audience affinity – Products that heavily overlap the same set of
-  other products. 
-- Purchase behavior – Products that frequently appear together on the
-  same orders.
+To remove the order line, click **Edit** and clear the **Included** checkbox.
 
+## Related topics
 
-
-
-
-## View Alternate Products
-
-1.  In the Product Details panel, click
-    the Alternate Products tab.
-
-
-
-
-## Add an Alternate Product to a Proposal
-
-1.  Click the Add button to the left
-    of the product's name. A new order line with the selected product is
-    created at the top of the Order Line Listing above the Product
-    Details.
-2.  Enter or change the order line parameters
-    (e.g., Start date, End date, Imps) as needed. 
-3.  Click Update. 
-
-To remove the order line,
-click Edit and clear
-the Included check box.
-
-
-
-
-## Related Topics
-
-
-
-
-- <a href="evaluate-the-yield-of-an-order.md" class="xref">Evaluate the
-  Yield of an Order</a>
-- <a href="about-flags-in-evaluate-orders.md" class="xref">About Flags
-  in Evaluate Orders</a>
-- <a href="add-a-proposal-to-a-scenario.md" class="xref">Add a Proposal
-  to a Scenario</a>
-
-
-
-
-
-<a href="anatomy-of-the-evaluate-orders-page.md"
-class="link">Anatomy of the Evaluate Orders Page</a>
-
-
-
-
-
-
+- [Evaluate the Yield of an Order](evaluate-the-yield-of-an-order.md)
+- [About Flags in Evaluate Orders](about-flags-in-evaluate-orders.md)
+- [Add a Proposal to a Scenario](add-a-proposal-to-a-scenario.md)
+- [Anatomy of the Evaluate Orders Page](anatomy-of-the-evaluate-orders-page.md)

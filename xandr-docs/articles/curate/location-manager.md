@@ -1,8 +1,7 @@
 ---
 title : Location Manager
-description : Location Manager is located under
-the Audiences tab in
-Curate. You can create and manage location-based
+description : Learn to create and manage location-based features such as Geo Radius Segments and Postal Code Lists with the Location Manager.
+ms.date : 10/28/2023
 ---
 
 

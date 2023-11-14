@@ -2,6 +2,7 @@
 title : Support for Overriding Country Codes and Zip Codes on Android
 description : Mobile SDK allows the publishers to override the country codes and zip codes. The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes.
 ms.custom : android-sdk
+ms.date : 10/28/2023
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Universal Pixel Basic Implementation
 Description : With the most basic implementation of the universal pixel, you can track
+ms.date : 10/28/2023
 page views and identify the URLs driving them. Setting up the basic
 ---
 
@@ -25,7 +26,7 @@ To create, deploy, and test the pixel:
 
 
 
-<div class="li stepsection">
+
 
 Configure your pixel code using the UI.
 
@@ -86,7 +87,7 @@ Deploy the code on your website.
 
     
 
-<div class="li stepsection">
+
 
 Make sure your pixel is detecting activity.
 
@@ -98,15 +99,14 @@ Make sure your pixel is detecting activity.
 
 
 
-<div id="ID-0000029b__postreq_icx_mh1_tsb"
 >
 
 Related Topics
 
-- <a href="universal-pixel-code-structure.html" class="xref"
+- <a href="universal-pixel-code-structure.md" class="xref"
   title="The general universal pixel code to be deployed in the &lt;head&gt; tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest.">Universal
   Pixel Code Structure</a>
-- <a href="universal-pixel-reporting.html" class="xref"
+- <a href="universal-pixel-reporting.md" class="xref"
   title="In addition to the activity reporting available from the Universal Pixels page, a number of reports and feeds contain information about universal pixel activity.">Universal
   Pixel Reporting</a>
 

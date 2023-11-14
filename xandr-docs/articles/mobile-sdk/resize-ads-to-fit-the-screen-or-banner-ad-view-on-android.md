@@ -2,6 +2,7 @@
 title: Resize Ads to Fit the Screen or Banner Ad View on Android
 description: Learn how to expand ad creative to fit banner ad view, device screen width, and container view with instructions provided on this article.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Resize ads to fit the screen or banner ad view on Android

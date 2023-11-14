@@ -1,8 +1,8 @@
 ---
-title : Microsoft Curate - Impression Counting
-description : Xandr counts an impression, and records payment
-to the seller, once we receive an "accept call", which notifies us that
-a creative was served to the web page or mobile app. 
+title : Impression Counting
+description : Learn how Xandr counts an impression, and records payment to the seller.
+ms.date : 10/28/2023
+
 ---
 
 

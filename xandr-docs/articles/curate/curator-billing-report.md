@@ -1,6 +1,7 @@
 ---
 Title : Curator Billing Report
 Description : The **Curator Billing Report** allows you to manage internal invoicing
+ms.date : 10/28/2023
 for your curation activities. Curators who choose to direct-clear with
 ---
 
@@ -14,19 +15,17 @@ for your curation activities. Curators who choose to direct-clear with
 sellers can report on the revenue amounts they need to clear with those
 sellers.
 
-<div id="curator-billing-report__section-f3978347-0899-49e8-a341-543fe59f4873"
 >
 
 
 
-Note: This report is only available to
+<b>Note:</b> This report is only available to
 curators.
 
 
 
 
 
-<div id="curator-billing-report__section-28e54bab-c753-47c4-afdc-e3654543c0a0"
 >
 
 ## Time Frame
@@ -87,7 +86,7 @@ for reports. However, all intervals are not available for every report.
 
 
 
-Note:
+<b>Note:</b>
 
 Hourly impression data is available and spans 13 full months. For
 impressions that are older than 13 months, hourly data is aggregated
@@ -104,14 +103,13 @@ the UTC time zone.
 
 
 
-<div id="curator-billing-report__section-98b9fe98-b4bb-467c-be81-cf70a742a2fe"
 >
 
 ## Dimensions
 
 
 
-Important: The **Filter?** column shows
+<b>Important:</b> The **Filter?** column shows
 whether a dimension can be used as a filter as well as being used to
 group by.
 
@@ -231,14 +229,13 @@ transaction currency used by the seller</td>
 
 
 
-<div id="curator-billing-report__section-882ac8ba-a08b-4209-8afe-e38582ad8c65"
 >
 
 ## Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -312,7 +309,6 @@ auction time</td>
 
 
 
-<div id="curator-billing-report__section-995717af-6530-4fb2-be2c-e4206d8561f4"
 >
 
 ## To Run Your Report
@@ -334,9 +330,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -352,7 +348,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -371,17 +367,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="curator-billing-report__d11e107">**Export, send results
+    - **Export, send results
       via email**: Run the report in the background and email the
       results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -395,7 +391,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="curator-billing-report__d11e136">Click
+6.  Click
     Run report to send your report
     request.
 

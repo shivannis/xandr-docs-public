@@ -2,6 +2,7 @@
 title: Publisher-side User Opt-Out for iOS
 description: The publisher-side user opt-out feature allows publishers to set users' opt-in/out from tracking in ad requests.
 ms.custom: ios-sdk
+ms.date : 10/28/2023
 ---
 
 # Publisher side user opt-out for iOS

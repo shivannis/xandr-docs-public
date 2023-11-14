@@ -1,6 +1,8 @@
 ---
 title : Line Item Settings
 description : Learn how the Settings tab of the Line Item Details pane displays information for the selected line item including settings, essential metrics, and performance visualizations.
+ms.date : 10/28/2023
+
 ---
 
 

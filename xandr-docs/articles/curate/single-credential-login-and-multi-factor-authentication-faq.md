@@ -1,6 +1,7 @@
 ---
 Title : Single Credential Login and Multi-Factor Authentication FAQ
 Description : You can find answers to the most frequently asked questions about single
+ms.date : 10/28/2023
 credential login and MFA.
 ---
 
@@ -16,7 +17,7 @@ credential login and MFA.
 
 
 
-Note:
+<b>Note:</b>
 
 With consolidation of Xandr to Microsoft family, we have integrated the
 authentication process of the users (who are using Xandr products) to
@@ -27,7 +28,7 @@ Additionally, the integration to the Microsoft Identity Platform enables
 new and more secure methods of authentication, powered by Microsoft.
 
 For more details, visit
-<a href="microsoft-identity-platform-login.html" class="xref"
+<a href="microsoft-identity-platform-login.md" class="xref"
 title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
 Identity Platform Login</a>.
 
@@ -152,7 +153,7 @@ username and password.
 
 
 
-- <a href="troubleshooting-multi-factor-authentication-mfa.html"
+- <a href="troubleshooting-multi-factor-authentication-mfa.md"
   class="xref"
   title="You can find answers to the most common issues associated with MFA.">Troubleshooting
   Multi-Factor Authentication (MFA)</a>

@@ -1,6 +1,7 @@
 ---
 Title : Curator Analytics Report
-Description : Important: This report is only
+Description : <b>Important:</b> This report is only
+ms.date : 10/28/2023
 available to curators.
 ---
 
@@ -13,7 +14,7 @@ available to curators.
 
 
 
-Important: This report is only
+<b>Important:</b> This report is only
 available to curators.
 
 
@@ -89,14 +90,13 @@ Data retention period for this report is 1100 days.
 
 
 
-<div id="curator-analytics-report__section-b48f9193-aa88-4198-8b4b-271a60c5e6ac"
 >
 
 ## Dimensions
 
 
 
-Important: The **Filter?** column shows
+<b>Important:</b> The **Filter?** column shows
 whether a dimension can be used as a filter as well as being used to
 group by.
 
@@ -274,7 +274,7 @@ headers="curator-analytics-report__table-73c8599a-ccf6-40c7-a8ab-1599922ade24__e
 headers="curator-analytics-report__table-73c8599a-ccf6-40c7-a8ab-1599922ade24__entry__3">The
 seller deal name / ID being included in a curated deal
 
-Note: If applicable, since not all
+<b>Note:</b> If applicable, since not all
 curated deals will include a seller
 </td>
 </tr>
@@ -371,14 +371,13 @@ values: percent, fixed, or null</td>
 
 
 
-<div id="curator-analytics-report__section-e8817939-3ad6-4011-a474-f23495bee3f2"
 >
 
 ## Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -386,7 +385,7 @@ when you export the report.
 
 
 
-Note: Click metrics are available for
+<b>Note:</b> Click metrics are available for
 impressions bought through Xandr
 Invest DSP. Video metrics are available for
 impressions bought through any DSP.
@@ -428,6 +427,14 @@ Viewability definition, which states that an impression is viewable if
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
+headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">View
+Measurable Imps</td>
+<td class="entry colsep-1 rowsep-1"
+headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
+total number of impressions that were measured for viewability.</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Curator
 Revenue</td>
 <td class="entry colsep-1 rowsep-1"
@@ -436,7 +443,7 @@ amount of spend a buyer sends to the curator, net of buyer fees, if
 applicable. This is the same as buyer media cost, exclusive of buyer rev
 share (BASC).</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Curator
 Tech Fees</td>
@@ -445,7 +452,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 fees Xandr charges to a curator on a
 transaction.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Curator
 Net Media Cost</td>
@@ -455,7 +462,7 @@ amount of spend a curator sends to exchange sellers, net of curator fees
 and margins, if applicable. This is the same as gross seller revenue,
 inclusive of seller rev share (SASC).</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Curator
 Margin</td>
@@ -463,11 +470,11 @@ Margin</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 profit a curator makes on a transaction
 
-Note: When taken as a percentage,
+<b>Note:</b> When taken as a percentage,
 Curator Margin is calculated based on Curator Revenue.
 </td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Curator
 Total Cost</td>
@@ -476,7 +483,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 amount of spend a curator sends to the exchange and exchange sellers,
 net of curator margin but gross of curator fees.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Clicks</td>
 <td class="entry colsep-1 rowsep-1"
@@ -486,7 +493,7 @@ class="ph">Invest DSP, clicks from all media types are supported.
 For external DSPs, only clicks from Native and Video media types are
 supported.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">CTR
 %</td>
@@ -494,7 +501,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 proportion of Clicks versus Imps.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Buyer
 CPC</td>
@@ -502,7 +509,7 @@ CPC</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">Curator
 Revenue divided by Clicks.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Errors</td>
@@ -510,7 +517,7 @@ Errors</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 total number of times an error occurred.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Starts</td>
@@ -519,7 +526,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 total number of times the first segment of the video creative was
 downloaded and started.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Start Rate %</td>
@@ -527,7 +534,7 @@ Start Rate %</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 proportion of Video Starts versus Imps.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Skips</td>
@@ -535,7 +542,7 @@ Skips</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 total number of times a user skipped the video.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Skip Rate %</td>
@@ -543,7 +550,7 @@ Skip Rate %</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 proportion of Video Skips versus Imps.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 25% Complete</td>
@@ -552,7 +559,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 total number of times the video completed 25% of the entire
 duration.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 50% Complete</td>
@@ -561,7 +568,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 total number of times the video completed 50% of the entire
 duration.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 75% Complete</td>
@@ -570,7 +577,7 @@ headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__e
 total number of times the video completed 75% of the entire
 duration.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Completions</td>
@@ -578,7 +585,7 @@ Completions</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 total number of times the video played for the entire duration.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Video
 Completion Rate %</td>
@@ -586,7 +593,7 @@ Completion Rate %</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">The
 proportion of Video Completions versus Imps.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Buyer
 Cost Per Video Complete</td>
@@ -594,7 +601,7 @@ Cost Per Video Complete</td>
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__2">Curator
 Revenue divided by Video Completions.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
 headers="curator-analytics-report__table-7f4e3436-6d07-4e57-b4b9-816921da2653__entry__1">Buyer
 CPM</td>
@@ -609,7 +616,6 @@ Revenue divided by Imps, expressed as a CPM.</td>
 
 
 
-<div id="curator-analytics-report__section-995717af-6530-4fb2-be2c-e4206d8561f4"
 >
 
 ## To Run Your Report
@@ -631,9 +637,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -649,7 +655,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -668,17 +674,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="curator-analytics-report__d11e107">**Export, send
+    - **Export, send
       results via email**: Run the report in the background and email
       the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -692,7 +698,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="curator-analytics-report__d11e136">Click
+6.  Click
     Run report to send your report
     request.
 

@@ -1,6 +1,7 @@
 ---
 Title : **Troubleshooting Multi-Factor Authentication (MFA)**
 Description : You can find answers to the most common issues associated with MFA.
+ms.date : 10/28/2023
 ---
 
 
@@ -18,7 +19,6 @@ Some users are reporting that after entering their one-time password
 they are getting an error that says: SEEMS THAT YOUR CODE IS NOT VALID.
 PLEASE CHECK AND RETRY.
 
-<div id="switching-between-user-accounts__p-89b1003b-8a19-4cb6-8558-a2f6bc7a9d8a"
 >
 
 **Solution**: This issue, most likely, is caused by the computer that
@@ -29,7 +29,7 @@ below steps to resolve the issue:
 
 
 
-Note: The actual steps will vary
+<b>Note:</b> The actual steps will vary
 depending on the user's computer, mobile device and MFA app.
 
 
@@ -49,7 +49,7 @@ depending on the user's computer, mobile device and MFA app.
 
     
 
-    Note: You may have to disable **Set
+    <b>Note:</b> You may have to disable **Set
     Time Automatically** (or something similar depending on your device)
     to prevent this issue from happening in the future.
 
@@ -152,7 +152,7 @@ trying to access.
 ## Related Topics
 
 <a
-href="single-credential-login-and-multi-factor-authentication-faq.html"
+href="single-credential-login-and-multi-factor-authentication-faq.md"
 class="xref"
 title="You can find answers to the most frequently asked questions about single credential login and MFA.">Single
 Credential Login and Multi-Factor Authentication FAQ</a>

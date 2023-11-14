@@ -2,6 +2,7 @@
 title: Android SDK Initialization v8.0
 description: In this article, learn how to initialize Xandr Mobile SDK if you are working with Android SDK v8.0.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Android SDK initialization v8.0

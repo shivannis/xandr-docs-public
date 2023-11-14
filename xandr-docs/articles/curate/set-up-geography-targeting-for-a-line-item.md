@@ -1,6 +1,7 @@
 ---
 Title : Set Up Geography Targeting for a Line Item
 Description : You must target users based on at least one geographic element such as
+ms.date : 10/28/2023
 country, region, city, metro code, or postal code. You may optionally
 ---
 
@@ -13,7 +14,6 @@ You must target users based on at least one geographic element such as
 country, region, city, metro code, or postal code. You may optionally
 set up other geographic inclusions or exclusions.
 
-<div id="ID-000019db__context-79f758cc-3afe-4a1a-bffa-fb24bd7f3675"
 class="section section context">
 
 If you have set up third-party buying filters, only inventory in
@@ -40,15 +40,14 @@ To set up line item geography targeting:
 
 
 
-<div id="ID-000019db__postreq_jbn_gq1_glb"
 >
 
 Related Topics
 
-- <a href="additional-geo-restrictions-ali.html" class="xref"
+- <a href="additional-geo-restrictions-ali.md" class="xref"
   title="In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.">Additional
   Geo Restrictions</a>
-- <a href="postal-code-lists.html" class="xref">Postal Code Lists</a>
+- <a href="postal-code-lists.md" class="xref">Postal Code Lists</a>
 
 
 

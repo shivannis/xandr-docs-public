@@ -1,6 +1,7 @@
 ---
 Title : Managing User Logins and Permissions
 Description : The pages mentioned in this section describe how to create and manage
+ms.date : 10/28/2023
 your users, set up their passwords and permissions.
 ---
 
@@ -21,7 +22,7 @@ Additionally, the integration to the Microsoft Identity Platform enables
 new and more secure methods of authentication, powered by Microsoft.
 
 For more details, visit
-<a href="microsoft-identity-platform-login.html" class="xref"
+<a href="microsoft-identity-platform-login.md" class="xref"
 title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
 Identity Platform Login</a>.
 
@@ -31,13 +32,13 @@ Identity Platform Login</a>.
 
 
 
-- <a href="manage-your-username-and-password.html" class="xref">Manage
+- <a href="manage-your-username-and-password.md" class="xref">Manage
   Your Username and Password</a>
 
   Reset or update your password, retrieve your username, or reset your
   email address.
 
-- <a href="create-a-user.html" class="xref">Create a User</a>
+- <a href="create-a-user.md" class="xref">Create a User</a>
 
   Learn about the different types of user roles and how to create the
   one you need.
@@ -52,7 +53,7 @@ Identity Platform Login</a>.
 
 
 
-- <a href="getting-started-with-roles.html" class="xref">Getting Started
+- <a href="getting-started-with-roles.md" class="xref">Getting Started
   with Roles</a>
 
   Read an introduction to using Roles for user access control.
@@ -67,13 +68,13 @@ Identity Platform Login</a>.
 
 
 
-- <a href="network-users-screen.html" class="xref">Member Users Screen</a>
+- <a href="network-users-screen.md" class="xref">Member Users Screen</a>
 
   View basic information about your network-level users, access
   additional details about specific users, and edit or
   activate/deactivate specific network-level users.
 
-- <a href="reporting-guide.html" class="xref">Reporting Guide</a>
+- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
 
   Learn about reports that network-level users can run across multiple
   advertisers and/or publishers.

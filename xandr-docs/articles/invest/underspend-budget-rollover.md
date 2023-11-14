@@ -5,9 +5,6 @@ description: In this article, learn about the Underspend budget rollover feature
 
 # Microsoft Invest - Underspend budget rollover
 
-> [!NOTE]
-> This functionality currently is in Beta. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
-
 Underspend Budget Rollover is a feature available for Microsoft Invest that allows buyers to transfer unspent budget from a completed flight to a new flight. It will save the buyer's time from complex budget calculations and manually updating future flights.
 
 A flight has an underspent budget when its delivered impressions or revenue is less than their budgeted impressions or revenue. The buyer has the following flexible options to correct the underspend:

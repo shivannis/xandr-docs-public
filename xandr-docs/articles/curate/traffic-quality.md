@@ -1,6 +1,7 @@
 ---
 Title : Traffic Quality
 Description : Xandr makes every effort to search for sellers,
+ms.date : 10/28/2023
 publishers, placements, or domains that are seeing illegitimate
 conversion or click rates. We continue to improve the automated and
 ---
@@ -24,10 +25,10 @@ about traffic quality.
 
 
 
-Note: A campaign should have at least
+<b>Note:</b> A campaign should have at least
 10,000 impressions on a given slice of inventory in order for the CTR or
 conversion rate numbers to be considered significant (see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/online-advertising-and-ad-tech-glossary.html"
+href="industry-reference/online-advertising-and-ad-tech-glossary.md"
 class="xref" target="_blank">Online Advertising and Ad Tech Glossary</a>
 for more information on these terms). We define a "slice of inventory"
 for this purpose as any given combination of publisher, placement,

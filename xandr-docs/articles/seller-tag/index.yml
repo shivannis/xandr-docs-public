@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Seller Tag Developer Documentation
-summary: Welcome to Seller Tag Developer Documentation! All the information you need to work in Seller-Tag is right here. You can simply search for what you need, or click one of the tiles below.
+summary: Welcome to Seller Tag Developer Documentation! All the information you need to work in Seller Tag is right here. You can simply search for what you need, or click one of the tiles below.
 metadata:
   title: Seller Tag Developer Documentation
   description: Discover various modules of Seller Tag
@@ -11,7 +11,7 @@ metadata:
   ms.date: 16/10/2023
 
 landingContent:
-  - title: Lets Get Started
+  - title: Let's Get Started
     linkLists:
       - linkListType: overview
         links:

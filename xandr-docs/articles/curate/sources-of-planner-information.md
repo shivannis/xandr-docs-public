@@ -1,6 +1,7 @@
 ---
 Title : Sources of Planner Information
 Description : Impression estimates are based on a seven-day sample of data, defined at
+ms.date : 10/28/2023
 the daily level. Planner stores seven days' worth of samples, resulting
 ---
 
@@ -49,7 +50,7 @@ the past 7 days</td>
 
 ## Planner Data Providers
 
-<div class="div">
+
 
 Planner supports real-time data provider segments from the
 Xandr Real-Time Signals Service (RTSS) as well

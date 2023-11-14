@@ -1,6 +1,7 @@
 ---
 Title : Video Targeting
 Description : You can target video inventory based on the playback method, player
+ms.date : 10/28/2023
 size, and position.
 ---
 
@@ -18,16 +19,16 @@ Targetingsection of a line item, click the pencil icon next to
 
 You can target video creatives in any or all of the following ways:
 
-- <a href="video-targeting.html#ID-00005144__p_nqr_55q_gkb"
+- <a href="video-targeting.md#ID-00005144__p_nqr_55q_gkb"
   class="xref">Target video inventory by position</a>
-- <a href="video-targeting.html#ID-00005144__p_tfd_w5q_gkb"
+- <a href="video-targeting.md#ID-00005144__p_tfd_w5q_gkb"
   class="xref">Target video inventory by playback method</a>
-- <a href="video-targeting.html#ID-00005144__p_lmn_w5q_gkb"
+- <a href="video-targeting.md#ID-00005144__p_lmn_w5q_gkb"
   class="xref">Target video by player width</a>
 
 
 
-Note: You should avoid using both VAST
+<b>Note:</b> You should avoid using both VAST
 creatives and in-banner or interstitial video creatives within the same
 video campaign. An in-banner or interstitial video creative will not
 serve when you target by position. Setting any of the three video
@@ -78,7 +79,7 @@ playback methods:
 
 
 
-Note:
+<b>Note:</b>
 
 - For maximum delivery and reach, we recommend that you include **No
   initiation method provided** in your targeting since some inventory
@@ -103,7 +104,7 @@ and mobile app). The following player sizes are available to target:
 
 
 
-Tip: For maximum delivery and reach, we
+<b>Tip:</b> For maximum delivery and reach, we
 recommend that you include **No player width provided** in your
 targeting, because some inventory (such as Google Ad Manager) is not
 classified.

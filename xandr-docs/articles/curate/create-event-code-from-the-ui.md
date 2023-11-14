@@ -1,6 +1,7 @@
 ---
 Title : Create Event Code from the UI
 Description : You can use the universal pixel UI to generate event code and send it to
+ms.date : 10/28/2023
 your web developer.
 ---
 
@@ -12,7 +13,6 @@ your web developer.
 You can use the universal pixel UI to generate event code and send it to
 your web developer.
 
-<div id="create-standard-event-code-from-the-ui__context_sww_yfb_rsb"
 class="section section context">
 
 To create and export universal pixel script code containing your desired
@@ -20,7 +20,6 @@ events and parameters:
 
 
 
-<div id="create-standard-event-code-from-the-ui__steps_qc1_vgm_hmb"
 >
 
 1.  Click the pencil icon in the upper left corner
@@ -43,17 +42,16 @@ events and parameters:
 
 
 
-<div id="create-standard-event-code-from-the-ui__postreq_szq_xhb_tsb"
 >
 
 Related Topics
 
-- <a href="create-event-code-manually.html" class="xref"
+- <a href="create-event-code-manually.md" class="xref"
   title="You can manually create event code based on a template and deploy it on your website.">Create
   Event Code Manually</a>
-- <a href="standard-events-and-parameters.html" class="xref">Standard
+- <a href="standard-events-and-parameters.md" class="xref">Standard
   Events and Parameters</a>
-- <a href="create-custom-events-and-parameters.html" class="xref"
+- <a href="create-custom-events-and-parameters.md" class="xref"
   title="If you click the pencil icon next to a pixel on the Universal Pixels page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.">Create
   Custom Events and Parameters</a>
 

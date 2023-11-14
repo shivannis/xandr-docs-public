@@ -2,6 +2,7 @@
 title: Android SDK Release Notes
 description: In this article, find release notes for the latest releases of Android SDK.
 ms.custom: android-sdk
+ms.date : 10/28/2023
 ---
 
 # Android SDK release notes

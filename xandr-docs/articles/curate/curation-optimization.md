@@ -1,7 +1,6 @@
 ---
 Title : Curation Optimization
-Description : <div id="curator-optimization__note_hsm_cp4_dyb"
-Note: The Curation Optimization feature
+<b>Note:</b> The Curation Optimization feature
 will roll out in phases through 2023. You will receive a notification
 ---
 
@@ -12,10 +11,9 @@ will roll out in phases through 2023. You will receive a notification
 
 
 
-<div id="curator-optimization__note_hsm_cp4_dyb"
 
 
-Note: The Curation Optimization feature
+<b>Note:</b> The Curation Optimization feature
 will roll out in phases through 2023. You will receive a notification
 when your account is enabled. Contact your Xandr
 Account Representative for any queries.
@@ -42,7 +40,6 @@ processing curated deals that buyers are actively using and spending
 against. In this way, buyers, curators, and sellers will be able to
 achieve better results.
 
-<div id="curator-optimization__section_iqj_3p4_dyb"
 >
 
 ## Curation Optimization Process
@@ -66,10 +63,9 @@ several weeks without bids:
 - If no bids have been received after 14 days, the random sample is 40%.
   After 21 days, it is 20%, and after 30 days, it is 10%.
 
-<div id="curator-optimization__note_q5f_mp4_dyb"
 
 
-Note: If you’ve deactivated a deal for
+<b>Note:</b> If you’ve deactivated a deal for
 more than 30 days and later reactivate it, then this deal also benefits
 from a seven-day grace period after reactivation.
 
@@ -77,7 +73,6 @@ from a seven-day grace period after reactivation.
 
 
 
-<div id="curator-optimization__CuratorOptimization_DRAFT_-Whatdocuratorsneedtodo"
 >
 
 ## Curator's Role

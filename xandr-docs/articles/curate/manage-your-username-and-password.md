@@ -25,7 +25,7 @@ after waiting five minutes.
 
 ## Retrieving your username
 
-If you cannot sign in to Xandr Curate due to a
+If you cannot sign in to Microsoft Curate due to a
 forgotten username, follow these steps:
 
 1. Go to the login page of Xandr Curate and
@@ -49,11 +49,11 @@ forgotten username, follow these steps:
 
 ## Resetting your password
 
-Xandr Curate passwords must be changed at least
+Microsoft Curate passwords must be changed at least
 once every 120 days. After 120 days, the password will no longer be
 valid and you will be prompted to create a new one.
 
-If you cannot sign in to Xandr Curate because
+If you cannot sign in to Microsoft Curate because
 the password was reset, or if you have forgotten your password, follow
 the steps below:
 

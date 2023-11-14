@@ -1,6 +1,7 @@
 ---
 Title : Content Category Targeting
-Description : Note: This form of targeting is only
+Description : <b>Note:</b> This form of targeting is only
+ms.date : 10/28/2023
 available to Standard Line Items. For an overview of which targeting
 ---
 
@@ -11,10 +12,10 @@ available to Standard Line Items. For an overview of which targeting
 
 
 
-Note: This form of targeting is only
+<b>Note:</b> This form of targeting is only
 available to Standard Line Items. For an overview of which targeting
 options are available to Standard versus Augmented Line items, see
-<a href="buy-side-targeting.html" class="xref">Buy-Side Targeting</a>.
+<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>.
 
 
 
@@ -54,7 +55,7 @@ categories.
 
     
 
-    Important: When targeting more than
+    <b>Important:</b> When targeting more than
     one universal category, the categories have an OR relationship. For
     example, if you target the "News" and "Finance" categories, you will
     bid on inventory that is in either category. The inventory does not

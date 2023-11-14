@@ -1,6 +1,5 @@
 ---
 Title : Viewability FAQ
-Description : <div id="viewability-faq__section-bc95743b-12a2-467d-93ea-eee195d720c3"
 >
 ## **Viewability Data**
 The following questions address where to find Xandr viewability data and
@@ -12,7 +11,6 @@ the key metrics associated with it.
 
 
 
-<div id="viewability-faq__section-bc95743b-12a2-467d-93ea-eee195d720c3"
 >
 
 ## **Viewability Data**
@@ -42,7 +40,6 @@ viewability data widely and easily available.
 
 
 
-<div id="viewability-faq__section-6412a591-70a3-4658-91c0-2408963ab009"
 >
 
 ## **Xandr Viewability Script Functionality**
@@ -52,7 +49,6 @@ viewability script, how it works, what it measures, and its limitations.
 
 
 
-<div id="viewability-faq__section-870def4f-6947-4252-ac5f-35129b55a96a"
 >
 
 ## What methods does Xandr use to measure viewability?
@@ -64,7 +60,6 @@ reliably measure viewability of most impressions.
 
 
 
-<div id="viewability-faq__section-036814ec-6c72-45b1-8d05-a721cca041bb"
 >
 
 ## Does Xandr viewability use projection-based methods to report on viewable impressions?
@@ -73,7 +68,6 @@ No, all reporting data is based on direct measurement.
 
 
 
-<div id="viewability-faq__section-29de4a19-3b2b-44a9-879d-d7d825ca4777"
 >
 
 ## What types of inventory are supported by Xandr viewability?
@@ -101,7 +95,6 @@ Viewability measurement on the following native inventory is supported:
 
 
 
-<div id="viewability-faq__section-0aa64dca-133c-4412-872b-f14c0b2c10a5"
 >
 
 ## What types of creatives does Xandr viewability support?
@@ -109,7 +102,7 @@ Viewability measurement on the following native inventory is supported:
 The Xandr viewability script is currently
 enabled for all banner, native, and video creatives. For more
 information about how viewability works for video, see
-<a href="video-viewability.html" class="xref">Video Viewability</a>.
+<a href="video-viewability.md" class="xref">Video Viewability</a>.
 
 
 
@@ -135,7 +128,6 @@ The possible causes could be:
 
 
 
-<div id="viewability-faq__section-80c591dd-dd5e-46bf-9282-49db4a184a31"
 >
 
 ## What impression types are not measured by Xandr?
@@ -144,7 +136,6 @@ The possible causes could be:
 
 
 
-<div id="viewability-faq__section-034839e9-7836-4f0d-94b1-a0e863a816f5"
 >
 
 ## When does the Xandr viewability script start measuring? Will the script wait for the creative to load before measuring?
@@ -156,7 +147,6 @@ when the creative content is a large file.
 
 
 
-<div id="viewability-faq__section-ecb344c1-fc6b-4415-b25a-e441584a1f26"
 >
 
 ## Will the Xandr viewability script slow down my page load or otherwise impact my page content?
@@ -173,7 +163,6 @@ impacted.
 
 
 
-<div id="viewability-faq__section-5e886031-5e6b-40d8-959d-37d7b0867df8"
 >
 
 ## How does the Xandr viewability script determine whether a human is viewing the ad?
@@ -193,17 +182,15 @@ activity event is detected.
 
 
 
-<div id="viewability-faq__section-163fae9c-7ce0-4684-9fdc-472d7dd5db23"
 >
 
 ## **Viewability Rate Results**
 
 The following questions address how to interpret your reported
-viewability rates in Xandr Curate.
+viewability rates in Microsoft Curate.
 
 
 
-<div id="viewability-faq__section-16813781-b482-40c7-8fc4-054348828629"
 >
 
 ## Why do I get a low viewability rate on placement X?
@@ -229,12 +216,10 @@ When a placement is above the fold, it is not always viewable, because:
 
 
 
-<div id="viewability-faq__section-e5e3bc43-4687-4025-8dcb-30cd2216b455"
 >
 
 ## Why is my viewability rate with vendor X higher than with Xandr?
 
-<div id="viewability-faq__p-0a48034f-5eb2-48cc-ac4b-2955d36d942d"
 >
 
 - What is the vendor's measurement rate?
@@ -251,7 +236,6 @@ When a placement is above the fold, it is not always viewable, because:
 
 
 
-<div id="viewability-faq__section-8ef530f9-f587-4f58-8183-72ddd104cf0c"
 >
 
 ## Why do I get a low viewability rate on creative X?
@@ -263,14 +247,13 @@ It could be any of the following:
 
 
 
-<div id="viewability-faq__section-255adebb-405f-4a66-9bb7-10040f1be344"
 >
 
 ## **Related Topics**
 
-- <a href="introduction-to-viewability.html" class="xref">Introduction to
+- <a href="introduction-to-viewability.md" class="xref">Introduction to
   Viewability</a>
-- <a href="reporting-on-viewability.html" class="xref">Reporting on
+- <a href="reporting-on-viewability.md" class="xref">Reporting on
   Viewability</a>
 
 

@@ -1,6 +1,7 @@
 ---
 Title : Seller Deal Metrics
 Description : The Seller Deal Metrics report provides key information about deal
+ms.date : 10/28/2023
 metrics, performance, and rejection reasons that is relevant to sellers.
 ---
 
@@ -16,7 +17,7 @@ metrics, performance, and rejection reasons that is relevant to sellers.
 
 
 
-Note: As of May 3, 2021, Imps Matched
+<b>Note:</b> As of May 3, 2021, Imps Matched
 and Bid Requests will be randomly sampled at a rate of 10 percent. The
 sampled values will be multiplied by 10 to give a reasonable estimate in
 all screens where these two metrics are reported. No other deal metrics
@@ -80,8 +81,20 @@ for reports. However, all intervals are not available for every report.
 
 
 
-Note: For impressions older than 100
+<b>Note:</b> For impressions older than 100
 days, the day will be returned rather than the hour.
+
+
+
+
+
+
+
+## Data Retention Period
+
+Data retention period for this report is 30 days.
+
+
 
 
 
@@ -175,7 +188,7 @@ Metrics
 
 
 
-Note: When values of a metric are
+<b>Note:</b> When values of a metric are
 displayed as percentages in the UI, they will be displayed as decimals
 when you export the report.
 
@@ -237,13 +250,6 @@ impressions won compared to the number of bids made by the buyer -
 calcuated as Imps (won) / Bids.</td>
 </tr>
 <tr class="odd row">
-<td class="entry" headers="ID-0000594b__entry__37">Average Biased
-Bid</td>
-<td class="entry" headers="ID-0000594b__entry__38">The average biased
-bid for the deal. This is the bid price used for ranking purposes in the
-auction.</td>
-</tr>
-<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Average Floor
 Price</td>
 <td class="entry" headers="ID-0000594b__entry__38">The average floor
@@ -252,63 +258,63 @@ this value will be constant. If the deal uses Market Price, then this
 value will be the average floor price calculated from the floors applied
 to this deal across all auctions.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Average Net Bid</td>
 <td class="entry" headers="ID-0000594b__entry__38">The average net bid
 on the deal. This is the bid price that is net of all fees and used in
 determining seller revenue (prior to any bid price reduction that may
 take place).</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Bid Requests</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bid
 requests sent to the buyer. This number may be less than Imps (matched)
 due to buyer filters or seller settings.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Bids</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 bids submitted by the buyer for this deal.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Final Bids</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 auctions on which a buyer submitted eligible bids to participate in the
 deal.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Below Floor
 Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because they are below the reserve price set on the
 auction.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Below Floor Ym
 Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because they are below the yield management floor applicable
 for the auction.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Bidder Error
 Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to bidder errors.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Bidder Error
 Deal Not Available Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the deal is no longer available.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Adserver Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 blocked by the seller's Ad Profile due to adserver exclusions.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Audit Status Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
@@ -316,184 +322,184 @@ blocked by the Ad Profile due to their audit status. This typically
 happens when the buyer is bidding with an unaudited creative and the
 seller has blocked unaudited creatives in ad quality.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Brand Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 blocked by the Ad Profile due to brand exclusions.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Category Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 blocked by the seller's Ad Profile due to category exclusions.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 bids rejected by settings on the seller's Ad Profile.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Creative Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the creative is blocked by the Ad Profile.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Language Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the language of the ad is blocked by the Ad
 Profile.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Member Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the member is blocked by the Ad Profile.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By Ad
 Profile Tech Attribute Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because a technical attribute or attributes of the creative is
 blocked by the Ad Profile.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Adserver Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 blocked due to adserver constraints on the Deal.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Below Floor Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because they are below the deal's floor price.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Brand Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because their brands are not allowed on the deal.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Category Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because they do not meet the deal's category requirements.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 bids rejected due to settings on the deal.<br />
 </td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Creative Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the creative is blocked by the deal.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Language Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to allowed language constraints on the deal.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Media Subtype Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to not matching the deal's allowed media subtypes.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Payment Type Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to not matching the deal's allowed payment types.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Size Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to not meeting the deal's size requirements.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Deal Tech Attribute Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to technical attribute limits on the deal.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Dynamic Adserver Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to adserver constraints dynamically passed in by the seller
 at the time of the impression request.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Dynamic Brand Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the brand is blocked dynamically by the bid request
 passed in by the seller.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Dynamic Category Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the category is blocked dynamically by the bid request
 passed in by the seller.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Dynamic Language Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because the language is blocked dynamically by the bid request
 passed in by the seller.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Blocked By
 Dynamic Tech Attribute Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected because a technical attribute is blocked dynamically by the bid
 request passed in by the seller.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 rejected bids.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Invalid
 Creative Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to invalid creatives that the buyer bid with.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Invalid
 Creative Not Ssl Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The number of bids
 rejected due to the creative not being SSL approved for a secure
 auction.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Other
 Advertiser Exclusion Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 bids rejected due to advertiser exclusions not listed above.</td>
 </tr>
-<tr class="even row">
+<tr class="odd row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Other
 Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
 bids rejected for reasons other than data security not listed
 above.</td>
 </tr>
-<tr class="odd row">
+<tr class="even row">
 <td class="entry" headers="ID-0000594b__entry__37">Reject Other Data
 Protection Count</td>
 <td class="entry" headers="ID-0000594b__entry__38">The total number of
@@ -523,9 +529,9 @@ Follow these steps to run your report.
     delivered to you, and how.
     
 
-    Important: For an explanation of
+    <b>Important:</b> For an explanation of
     how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.html"
+    <a href="dimensions-metrics-filtering-and-grouping.md"
     class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
 
     
@@ -541,7 +547,7 @@ Follow these steps to run your report.
     the order you prefer.
     
 
-    Warning: The more dimensions you
+    <b>Warning:</b> The more dimensions you
     group by, the larger the data set that is returned. Larger data sets
     can take substantially longer to process. Be sure to group using
     only the dimensions you need.
@@ -560,17 +566,17 @@ Follow these steps to run your report.
       view or download.
       
 
-      Tip: The maximum size of the
+      <b>Tip:</b> The maximum size of the
       report that can be downloaded from the UI is 100 MB. Also, there
       is a limit of 100,000 rows per report when downloading as XLSX and
       Excel file. If the size of the report is more than that, you can
       try to download it using the <a
-      href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+      href="xandr-api/report-service.md"
       class="xref" target="_blank">API</a> for that reporting service
       (The limit here is 10 million rows).
 
       
-    - <span id="ID-0000594b__d11e107">**Export, send results via
+    - **Export, send results via
       email**: Run the report in the background and email the results to
       one or more email addresses.
     - **Save as report template**: Save your selected report settings so
@@ -584,7 +590,7 @@ Follow these steps to run your report.
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="ID-0000594b__d11e136">Click Run
+6.  Click Run
     report to send your report request.
 
 

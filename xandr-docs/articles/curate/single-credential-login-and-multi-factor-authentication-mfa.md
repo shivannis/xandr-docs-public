@@ -1,6 +1,7 @@
 ---
 Title : Single Credential Login and Multi-Factor Authentication (MFA)
 Description : This is an overview of single credential login and multi-factor
+ms.date : 10/28/2023
 authentication.
 ---
 
@@ -16,7 +17,7 @@ authentication.
 
 
 
-Note:
+<b>Note:</b>
 
 With consolidation of Xandr to Microsoft family, we have integrated the
 authentication process of the users (who are using Xandr products) to
@@ -27,7 +28,7 @@ Additionally, the integration to the Microsoft Identity Platform enables
 new and more secure methods of authentication, powered by Microsoft.
 
 For more details, visit
-<a href="microsoft-identity-platform-login.html" class="xref"
+<a href="microsoft-identity-platform-login.md" class="xref"
 title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
 Identity Platform Login</a>.
 
@@ -52,7 +53,7 @@ one-time passcode (for example, Google Authenticator).
 
 
 
-Note: This is a one-time use code. You
+<b>Note:</b> This is a one-time use code. You
 need to enter a new one-time use code every time that you try to
 authenticate.
 
@@ -68,7 +69,7 @@ user interface and go to your account.
 
 
 
-Note: Not all of our current accounts
+<b>Note:</b> Not all of our current accounts
 have been migrated into this new way of authenticating. This only
 applies to accounts who have already been migrated into the new system.
 
@@ -129,10 +130,10 @@ API access still relies on username and password.
 
 
 
-- <a href="set-up-single-credential-login.html" class="xref"
+- <a href="set-up-single-credential-login.md" class="xref"
   title="This will guide you through the single credential login set up process.">Set
   Up Single Credential Login</a>
-- <a href="set-up-multi-factor-authentication.html" class="xref"
+- <a href="set-up-multi-factor-authentication.md" class="xref"
   title="This will guide you through the multi-factor authentication set up process.">Set
   Up Multi-Factor Authentication</a>
 
