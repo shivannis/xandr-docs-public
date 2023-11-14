@@ -1,5 +1,5 @@
 ---
-title: Create Event Code Manually
+title: Create Event Code Manually for Curate
 description: The article describes how you can manually create event code based on a template and deploy it on your website.
 ---
 # Create event code manually

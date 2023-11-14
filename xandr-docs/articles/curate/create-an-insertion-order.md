@@ -1,5 +1,5 @@
 ---
-title: Create an Insertion Order
+title: Create an Insertion Order for Curate
 description: The articles provides information on how to create an insertion order.
 ---
 # Create an insertion order

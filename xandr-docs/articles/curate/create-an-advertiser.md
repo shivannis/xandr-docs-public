@@ -1,5 +1,5 @@
 ---
-title: Create an Advertiser
+title: Create an Advertiser for Curate
 description: The article describes how ro create an advertiser object before you can start running advertising campaigns and serve creatives on behalf of an advertiser.
 ---
 # Create an advertiser

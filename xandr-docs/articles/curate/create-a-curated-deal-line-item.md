@@ -1,5 +1,5 @@
 ---
-title: Create a Curated Deal Line Item
+title: Create a Curated Deal Line Item 
 description: The article outlines the process of creating a curated deal item, allowing users to establish a curated deal for a buyer. These curated deals involve negotiated agreements between a buyer and a curator, merging the curator's assets with Xandr Marketplace supply.
 ms.date : 10/28/2023
 ---
@@ -97,7 +97,7 @@ Details for the newly created or existing deal display in Deal Details including
  > [!NOTE]
 > You may select **Choose Existing** when creating a curated deal, but this is not recommended unless you have already inactivated the original line item associated with the deal. For ease of maintenance, it is recommend that you use only one curated deal line item per curated deal. If you do choose to use an existing curated deal for this curated deal
 > line item:
-> 
+>
 > 1. Click **Select Deal** to choose an existing deal.
 > 1. On the **Select a Deal** screen, select a deal (you can search by Name or ID) and click **Select**.
 > 1. Edit the **Deal Name** if desired (**Note**: this name is shared with the buyer).
