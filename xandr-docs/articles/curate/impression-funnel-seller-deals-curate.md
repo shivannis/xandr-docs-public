@@ -1,38 +1,19 @@
 ---
-Title : Impression Funnel: Seller Deals
-Description : Note: This functionality currently is
-in Open Beta. It is still under development and may be subject to change
+title : Impression Funnel: Seller Deals
+description : Learn how the Impression Funnel panel on the
+Troubleshooting tab enables you to view the metrics of a curated deal as a whole and assess its overall performance. 
 ---
 
 
 # Impression Funnel: Seller Deals
 
+> [!NOTE]
+> This functionality currently is in Open Beta. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
 
-
-
-
-Note: This functionality currently is
-in Open Beta. It is still under development and may be subject to change
-without notice. Contact your Xandr Account Representative to get
-enabled.
-
-
-
-
-
-The Impression Funnel panel on the
-Troubleshooting tab enables you to
-view the metrics of a curated deal as a whole and assess its overall
+The **Impression Funnel** panel on the **Troubleshooting** tab enables you to view the metrics of a curated deal as a whole and assess its overall
 performance.
 
-The Impression Funnel: Seller
-Deals panel contains a table that allows you to see the curated
-deal’s impression funnel and metrics broken out for each seller deal, it
-sources inventory from. The panel will appear if the curated deal's
-Supply Stratergy is configured to
-source inventory from seller deals.
-
-
+The **Impression Funnel: Seller Deals** panel contains a table that allows you to see the curated deal’s impression funnel and metrics broken out for each seller deal, it sources inventory from. The panel will appear if the curated deal's **Supply Stratergy** is configured to source inventory from seller deals.
 
 If you frequently source inventory from seller deals, this table enables
 you to effectively troubleshoot and resolve issues. For example, if your
@@ -47,29 +28,15 @@ check a few possible causes:
   preventing the buyer from winning impressions effectively through a
   seller deal.
 
-
-
-
-
-
-
 ## Impression Funnel: Seller Deals
 
-Time
+**Time**
 
-You can select Last Hour,
-Last 24 Hours, and
-Last 7 Days from the
-Time Period drop-down menu. This
-allows you to see metrics over different periods and how they've changed
-during that period.
+You can select **Last Hour**, **Last 24 Hours**, and **Last 7 Days** from the **Time Period** drop-down menu. This allows you to see metrics over different periods and how they've changed during that period.
 
 **Columns**
 
-
-
-The Impression Funnel: Seller
-Deals table includes the following columns:
+The **Impression Funnel: Seller Deals** table includes the following columns:
 
 - **Deal**: The name and ID of the seller deal contributing to this
   curated deal.
@@ -91,152 +58,26 @@ Deals table includes the following columns:
   curated deal for a bid request that was generated as a result of the
   specific seller deal.
 
+**Values**
 
+The **Impression Funnel: Seller Deals** columns can include up to three different kinds of values.
 
-Values
+You can hover over a column header and click the **ellipsies** button. From the **Sort** pop-up window you can choose the appropriate values to sort the columns.
 
-The Impression Funnel: Seller
-Deals columns can include up to three different kinds of values.
+| Type of value                   | Description                                                                                                                                                                                                                                                 | Example                                                                                                                                                                                                                                                                  |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Amount                          | This is the middle value in the cell and explains the amount for this metric.                                                                                                                                                                               | In the **Bid Requests** column, this value describes the number of bid requests. Click the **ellipsies > Bid Request** button to sort the column by this value.                                                                                                                   |
+| Impression funnel change        | This is the top value in the cell and explains how this metric has changed compared to the previous step in the funnel. This value is available for the metrics: <br>- Bid Requests <br>- Bids <br> - Wins <br> - Renders                                                             | In the **Bid Requests** column, this value describes bid requests as a proportion of imps matched. Click the **ellipsies > Bid Request Rate** button to sort the column by this value.                                                                                           |
+| Relative change as a percentage | This is the bottom value in the cell and explains how this metric has changed over time. This value updates according to the selected time period. The value appears in **red**, if the percentage chnage is less than **3%** and **green**, if it is greater than **+3%**. | In the **Bid Requests** column when **Last Hour** is selected, this value describes the percentage change in the number of bid requests that occurred in the last hour versus the preceding hour. Click the **ellipsies > Relative Change** button to sort the column by this value. |
+| Relative change as an amount    | This is the bottom value in the cell and explains how this metrics has changed over time. This value updates according to the selected time period.                                                                                                         | In the **Bid Requests** column when **Last Hour** is selected, this value describes change in the number of bid requests which occurred in the last hour versus the preceding hour. Click the **ellipsies > Total Change** button to sort the column by this value.                   |
 
-You can hover over a column header and click the
-ellipsies button. From the
-Sort pop-up window you can choose
-the appropriate values to sort the columns.
+> [!NOTE]
+> To download the data from the table, you can navigate to the **Troubleshooting Reports** panel.
+>
+> - Click on the **Troubleshooting Reports** panel.
+> - From the **Report Type** field click on **Deal Metrics Report** and select **Seller Deal** from the **Breakout Deal Metrics By** field and click **Run Report** to generate the report.
+> - Click on **Export to CSV**, to download the report in CSV format.
 
-<table id="impression-funnel-seller-deals__table_p34_kzv_wxb"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 32%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__1"
-class="entry colsep-1 rowsep-1">Type of value</th>
-<th id="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__1">Impression
-funnel change</td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__2"><p>This
-is the top value in the cell and explains how this metric has changed
-compared to the previous step in the funnel.</p>
-This value is available for the metrics:
-<ul>
-<li>Bid Requests</li>
-<li>Bids</li>
-<li>Wins</li>
-<li>Renders</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__3"><p>In
-the <strong>Bid Requests</strong> column, this value describes bid
-requests as a proportion of imps matched.</p>
-<p>Click the <span
-class="ph uicontrol">ellipsies &gt; <span
-class="ph uicontrol">Bid Request Rate button to sort the
-column by this value.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__1">Amount</td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__2">This
-is the middle value in the cell and explains the amount for this
-metric.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__3">In
-the <strong>Bid Requests</strong> column, this value describes the
-number of bid requests.
-<p>Click the <span
-class="ph uicontrol">ellipsies &gt; <span
-class="ph uicontrol">Bid Requestbutton to sort the column
-by this value.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__1">Relative
-change as a percentage</td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__2"><p>This
-is the bottom value in the cell and explains how this metric has changed
-over time.</p>
-<p>This value updates according to the selected time period.</p>
-<p>The value appears in <strong>red</strong>, if the percentage chnage
-is less than <strong>3%</strong> and <strong>green</strong>, if it is
-greater than <strong>+3%</strong>.</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__3"><p>In
-the <strong>Bid Requests</strong> column when <span
-class="ph uicontrol">Last Hour is selected, this value describes
-the percentage change in the number of bid requests that occurred in the
-last hour versus the preceding hour.</p>
-<p>Click the <span
-class="ph uicontrol">ellipsies &gt; <span
-class="ph uicontrol">Relative Change button to sort the
-column by this value.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__1">Relative
-change as an amount</td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__2"><p>This
-is the bottom value in the cell and explains how this metrics has
-changed over time.</p>
-<p>This value updates according to the selected time period.</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="impression-funnel-seller-deals__table_p34_kzv_wxb__entry__3">In
-the <strong>Bid Requests</strong> column when <span
-class="ph uicontrol">Last Hour is selected, this value describes
-change in the number of bid requests which occurred in the last hour
-versus the preceding hour.
-<p>Click the <span
-class="ph uicontrol">ellipsies &gt; <span
-class="ph uicontrol">Total Changebutton to sort the column
-by this value.</p></td>
-</tr>
-</tbody>
-</table>
+## Related topics
 
-
-
-Note: To download the data from the
-table, you can navigate to the
-Troubleshooting Reports panel.
-
-- Click on the Troubleshooting
-  Reports panel.
-- From the Report Type field click
-  on Deal Metrics Report and select
-  Seller Deal from the
-  Breakout Deal Metrics By field and
-  clickRun Report to generate the
-  report.
-- Click on Export to CSV, to download
-  the report in CSV format.
-
-
-
-
-
-
-
-## Related Topics
-
-- <a href="curate-impression-funnel.html" class="xref">Impression
-  Funnel</a>
-
-
-
-
-
-
+- [Impression Funnel](curate-impression-funnel.md)
