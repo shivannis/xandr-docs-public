@@ -1,5 +1,5 @@
 ---
-title : Getting Started with Roles
+title : Microsoft Curate - Getting Started with Roles
 description : Learn how User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs. 
 ms.date : 10/28/2023
 

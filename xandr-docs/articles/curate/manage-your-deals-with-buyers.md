@@ -1,10 +1,10 @@
 ---
-title : Manage Your Deals with Buyers
+title : Microsoft Curate - Manage Your Deals with Buyers
 description : Learn how as a seller, you can manage all deals you have with buyers on the Deals screen.
 ---
 
 
-# Manage your deals with buyers
+# Microsoft Curate - Manage your deals with buyers
 
 > [!NOTE]
 > As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in all screens where these two metrics are reported. No other deal metrics will be affected.

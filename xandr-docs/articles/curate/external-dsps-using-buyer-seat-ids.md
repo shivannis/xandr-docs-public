@@ -1,6 +1,6 @@
 ---
 title : Microsoft Curate - External DSPs Using Buyer Seat IDs
-description : Not every buyer seat ID that you'll see when creating deals is currently eligible for deal creation. 
+description : Learn how you should check the Buyer Seat Migration Status reference table and communicate with the buyer to ensure you're using the correct IDs. 
 ---
 
 

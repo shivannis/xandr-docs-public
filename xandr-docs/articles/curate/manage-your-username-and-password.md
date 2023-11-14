@@ -1,11 +1,11 @@
 ---
-title : Manage Your Username and Password
+title : Microsoft Curate - Manage Your Username and Password
 description : Learn how to manage your username and password in Microsoft Curate.
 
 ---
 
 
-# Manage your username and password
+# Microsoft Curate - Manage your username and password
 
 This page explains how to manage your username and password in
 Microsoft Curate. It covers the following issues:

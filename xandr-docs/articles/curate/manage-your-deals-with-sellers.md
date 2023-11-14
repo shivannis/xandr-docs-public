@@ -1,11 +1,11 @@
 ---
-title : Manage Your Deals with Sellers
+title : Microsoft Curate - Manage Your Deals with Sellers
 description : Learn to manage all deals you have with sellers on the
 Deals screen. 
 ---
 
 
-# Manage your deals with sellers
+# Microsoft Curate - Manage your deals with sellers
 
 You can manage all deals you have with sellers on the **Deals** screen. You can view basic and advanced deal metrics, monitor each deal's health, and run detailed reports.
 

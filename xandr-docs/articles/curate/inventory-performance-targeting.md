@@ -1,10 +1,10 @@
 ---
-title : Inventory Performance Targeting
+title : Microsoft Curate - Inventory Performance Targeting
 description : Learn how You can target specific pools of inventory based on historical performance. 
 ---
 
 
-# Inventory performance targeting
+# Microsoft Curate - Inventory performance targeting
 
 You can target specific pools of inventory based on historical
 performance. By using targeting criteria, you can specify the desired

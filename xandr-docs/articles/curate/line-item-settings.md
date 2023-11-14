@@ -1,12 +1,12 @@
 ---
-title : Line Item Settings
+title : Microsoft Curate - Line Item Settings
 description : Learn how the Settings tab of the Line Item Details pane displays information for the selected line item including settings, essential metrics, and performance visualizations.
 ms.date : 10/28/2023
 
 ---
 
 
-# Line item settings
+# Microsoft Curate - Line item settings
 
 The **Settings** tab of the Line Item
 Details pane displays information for the selected line item including
