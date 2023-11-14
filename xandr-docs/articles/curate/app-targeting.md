@@ -9,10 +9,10 @@ ms.date: 10/28/2023
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
-When your campaign is set to serve on mobile app inventory (see [Supply Type Targeting](supply-type-targeting.md)), you can narrow your targeting to include or exclude predefined app lists or specific apps.
+When your campaign is set to serve on mobile app inventory (see [Supply Type Targeting](../monetize/supply-type-targeting.md)), you can narrow your targeting to include or exclude predefined app lists or specific apps.
 
 > [!NOTE]
-> App targeting applies only to mobile app impressions, and these settings will not be considered for web and mobile web impressions. To not serve on web and mobile web impressions, switch the **Web Placements** and **Mobile Web Placements** toggle **OFF**. See [Supply Type Targeting](supply-type-targeting.md) for more information.
+> App targeting applies only to mobile app impressions, and these settings will not be considered for web and mobile web impressions. To not serve on web and mobile web impressions, switch the **Web Placements** and **Mobile Web Placements** toggle **OFF**. See [Supply Type Targeting](../monetize/supply-type-targeting.md) for more information.
 
 ## Target predefined app lists
 

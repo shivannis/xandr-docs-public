@@ -112,7 +112,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Formats and specifications
 
-**Microsoft Solitaire Collection**
+### Microsoft Solitaire Collection
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -123,37 +123,37 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > 728x90 only available on Windows 10
 
-**Microsoft Minesweeper**
+### Microsoft Minesweeper
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Jigsaw**
+### Microsoft Jigsaw
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Sudoku**
+### Microsoft Sudoku
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-**Microsoft Mahjong**
+### Microsoft Mahjong
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
-**Microsoft Treasure Hunt**
+### Microsoft Treasure Hunt
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        | X       |        |        |
 
-**Microsoft Ultimate Word Game**
+### Microsoft Ultimate Word Game
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -193,7 +193,7 @@ To target Microsoft Casual Games inventory when setting up an Augmented Line Ite
 
 ### Target Packages
 
-To target Microsoft Casual Games inventory, use the [Package Marketplace]():
+To target Microsoft Casual Games inventory, use the [Package Marketplace](../monetize/get-deals-from-seller-packages.md):
 
 1. In the **Package Marketplace**, search for the package by ID or name.
 

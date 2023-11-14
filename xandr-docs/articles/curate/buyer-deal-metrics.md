@@ -46,7 +46,7 @@ However, all time ranges are not available for every report.
 
 ### Intervals
 
-Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. 
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports.
 
 However, all intervals are not available for every report.
 

@@ -441,7 +441,7 @@ Custom definitions can be used to determine viewable impressions. In this case, 
 
 Viewability metrics are not segregated between desktop browsers and mobile browsers, except in the "**Viewability Report**" where mobile impressions are filtered out.
 
-However, it is possible to run the [Site Domain Performance](site-domain-performance.md) report and group by "Operating system".
+However, it is possible to run the [Site Domain Performance](../monetize/site-domain-performance.md) report and group by "Operating system".
 
 ### Retention period
 
