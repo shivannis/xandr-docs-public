@@ -1,10 +1,10 @@
 ---
-title: Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
+title: Microsoft Curate - Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
 description: Set the eligibility, allowed payment types, and targeting access for buyers within the Partner Center screen or on the Partner Controls tab.
 ms.date: 11/14/2023
 ---
 
-# Edit buyer eligibility, allowed payment types, and targeting access
+# Microsoft Curate - Edit buyer eligibility, allowed payment types, and targeting access
 
 You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab. The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom settings for the buyer.
 
@@ -70,7 +70,7 @@ Select the payment types you are willing to accept from the buyers. Choose the *
 
 ### Step 4. Update targeting access
 
-Select the information that should be exposed to the buyers when they are targeting your inventory. Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. Otherwise, choose the **Custom** setting and then check the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher targeting information. The more information you give buyers, the more easily they can target your inventory.
+Select the information that should be exposed to the buyers when they are targeting your inventory. Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. Otherwise, choose the **Custom** setting and then select the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher targeting information. The more information you give buyers, the more easily they can target your inventory.
 
 > [!NOTE]
 > Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag.

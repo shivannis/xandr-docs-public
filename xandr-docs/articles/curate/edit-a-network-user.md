@@ -1,10 +1,10 @@
 ---
-title: Edit a Member User
+title: Microsoft Curate - Edit a Member User
 description: In this article you'll find steps to edit a member user, including contact information and peer approval requirements.
 ms.date: 11/10/2023
 ---
 
-# Edit a member user
+# Microsoft Curate - Edit a member user
 
 This page walks you through the steps required to edit a Member user, including contact information and peer approval requirements. Only users with the **User Manager** role can edit a Network User.
 

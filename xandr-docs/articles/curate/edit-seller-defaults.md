@@ -1,10 +1,10 @@
 ---
-title: Edit Seller Defaults
+title: Microsoft Curate - Edit Seller Defaults
 description: This article provides instructions to edit seller defaults such as setting the eligibility and inventory trust for sellers.
 ms.date: 11/14/2023 
 ---
 
-# Edit seller defaults
+# Microsoft Curate - Edit seller defaults
 
 You can set the eligibility and inventory trust for sellers in the Partner Center screen or in the My Settings for {Seller Name} section of the Partner Details page.
 

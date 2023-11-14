@@ -1,10 +1,10 @@
 ---
-title: Device Type Targeting
+title: Microsoft Curate - Device Type Targeting
 description: This article provides instructions to access device type targeting options.
 ms.date: 11/10/2023
 ---
 
-# Device type targeting
+# Microsoft Curate - Device type targeting
 
 To access device type targeting options, expand the **Targeting** section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](../invest/device-analytics-report.md).
 

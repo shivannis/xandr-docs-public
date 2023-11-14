@@ -1,10 +1,10 @@
 ---
-title: Dates and Times in Reporting
+title: Microsoft Curate - Dates and Times in Reporting
 description: This article explains how the reporting system handles time and date considerations such as time zones and daylight savings time.
 ms.date: 11/10/2023
 ---
 
-# Dates and times in reporting
+# Microsoft Curate - Dates and times in reporting
 
 This page explains how our reporting system handles time and date considerations such as time zones and daylight savings time. It also describes how to change your member or advertiser's default time zone.
 

@@ -1,10 +1,10 @@
 ---
-title: Daypart Targeting
+title: Microsoft Curate - Daypart Targeting
 description: Target users based on the day and time when they see impressions. You can also define whether targeting should be based on each user's timezone.
 ms.date: 11/10/2023
 ---
 
-# Daypart targeting
+# Microsoft Curate - Daypart targeting
 
 You can target users based on the day and time when they see impressions. In the **Budgeting and Scheduling** section of an ALI, click the pencil icon next to **Daypart**.
 

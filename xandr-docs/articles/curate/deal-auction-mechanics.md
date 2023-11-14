@@ -1,13 +1,13 @@
 ---
-title: Deal Auction Mechanics
+title: Microsoft Curate - Deal Auction Mechanics
 description: This article provides information on deal mechanics based on the first-price auction.
 ms.date: 11/10/2023
 ---
 
-# Deal auction mechanics
+# Microsoft Curate - Deal auction mechanics
 
 > [!NOTE]
-> This documentation is based on first-price auction. If you're still using second-price auction, then see [Deal Auction Mechanics for Second-Price Auction](deal-auction-mechanics-for-second-price-auction.md).
+> This documentation is based on first-price auction. If you're still using second-price auction, then see [Deal Auction Mechanics for Second-Price Auction](../monetize/deal-auction-mechanics-for-second-price-auction.md).
 
 A deal auction can be **open** or **private**, depending on how the seller defined the deal. This page explains how these different types of auctions work and provides examples.
 

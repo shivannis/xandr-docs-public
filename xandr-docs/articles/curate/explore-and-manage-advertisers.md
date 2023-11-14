@@ -1,10 +1,10 @@
 ---
-title: Explore and Manage Advertisers
+title: Microsoft Curate - Explore and Manage Advertisers
 description: Use the Advertisers screen to view metrics about your advertisers. It provides quick access to each advertiser's details and child objects, and reporting options.
 ms.date: 11/14/2023
 ---
 
-# Explore and manage advertisers
+# Microsoft Curate - Explore and manage advertisers
 
 The **Advertisers** screen is a management screen that shows you essential metrics about all your advertisers, provides quick access to each advertiser's details and child objects, and reporting options.
 
@@ -56,7 +56,7 @@ You can use the search field at the top of the screen to find all advertisers wh
 
 ## Reporting on advertisers
 
-You can initiate a Network Analytics report for one or more advertisers directly from the Advertisers screen. Check the box for each advertiser that you want to report on and click Run Report.
+You can initiate a Network Analytics report for one or more advertisers directly from the Advertisers screen. Select the checkbox for each advertiser that you want to report on and click **Run Report**.
 
 This takes you to the Network Analytics report, where the advertisers you selected are set as filters.
 
