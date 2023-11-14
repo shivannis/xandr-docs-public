@@ -1,22 +1,11 @@
 ---
-Title : Availability Overview (Old Workflow)
-Description : <div class="familylinks">
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
-<div class="parentlink">
-<a href="anatomy-of-the-availability-dashboard-page.md"
+title: Availability Overview (Old Workflow)
+description: The article provides an overview of the workflow (old) availability.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
+# Availability overview (Old Workflow)
 
+## Related topic
 
-# Availability Overview (Old Workflow)
-
-
-
-<a href="anatomy-of-the-availability-dashboard-page.md"
-class="link">Anatomy of the Availability Dashboard Page</a>
-
-
-
-
-
-
+[Anatomy of the Availability Dashboard Page](anatomy-of-the-availability-dashboard-page.md)
