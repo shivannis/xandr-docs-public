@@ -1,7 +1,7 @@
 ---
 title : Microsoft Curate - Impression Counting
 description : Learn how Xandr counts an impression, and records payment to the seller.
-ms.date : 10/28/2023
+ms.date : 11/14/2023
 
 ---
 

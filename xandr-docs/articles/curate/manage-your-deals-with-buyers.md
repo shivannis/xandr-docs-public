@@ -1,6 +1,7 @@
 ---
 title : Microsoft Curate - Manage Your Deals with Buyers
 description : Learn how as a seller, you can manage all deals you have with buyers on the Deals screen.
+ms.date : 11/14/2023
 ---
 
 

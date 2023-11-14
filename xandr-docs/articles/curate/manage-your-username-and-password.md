@@ -1,6 +1,7 @@
 ---
 title : Microsoft Curate - Manage Your Username and Password
 description : Learn how to manage your username and password in Microsoft Curate.
+ms.date : 11/14/2023
 
 ---
 

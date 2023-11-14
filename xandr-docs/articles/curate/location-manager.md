@@ -1,7 +1,7 @@
 ---
 title : Microsoft Curate - Location Manager
 description : Learn to create and manage location-based features such as Geo Radius Segments and Postal Code Lists with the Location Manager.
-ms.date : 10/28/2023
+ms.date : 11/14/2023
 ---
 
 

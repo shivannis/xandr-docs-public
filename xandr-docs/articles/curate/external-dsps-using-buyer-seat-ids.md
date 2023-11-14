@@ -1,6 +1,7 @@
 ---
 title : Microsoft Curate - External DSPs Using Buyer Seat IDs
 description : Learn how you should check the Buyer Seat Migration Status reference table and communicate with the buyer to ensure you're using the correct IDs. 
+ms.date : 11/14/2023
 ---
 
 

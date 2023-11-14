@@ -1,18 +1,18 @@
 ---
-title : Introduction to Viewability
-description : Learn what is Viewability and Why is it Important.
-ms.date : 10/28/2023
+title : Microsoft Curate - Introduction to Viewability
+description : Learn what is Viewability and Why it is Important.
+ms.date : 11/14/2023
 
 ---
 
 
-# Introduction to viewability
+# Microsoft Curate - Introduction to viewability
 
 This page provides an overview of viewability in digital media as well
 as information about why viewability is important, how it works, and
 current Xandr support for viewability.
 
-## What is viewability and why is it Important?
+## What is viewability and why is it important?
 
 Marketers buy media to reach "eyeballs" in an effort to create awareness
 for their brand and influence consumers. If a marketer's advertisement
@@ -84,7 +84,7 @@ creative. This script is called for each individual ad-impression. It
 launches automatically as the page loads, and immediately starts
 measuring if and when the creative is viewable.
 
-:::image type="content" source="media/viewability-tech.png" alt- .text="Screenshot of Viewability tech":::
+:::image type="content" source="media/viewability-tech.png" alt-text="Screenshot of Viewability tech":::
 
 
 The primary method that the script will use to determine whether an ad

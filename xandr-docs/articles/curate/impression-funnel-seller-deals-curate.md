@@ -1,12 +1,12 @@
 ---
-title : Impression Funnel: Seller Deals
+title : Microsoft Curate - Impression Funnel (Seller Deals)
 description : Learn how the Impression Funnel panel on the Troubleshooting tab enables you to view the metrics of a curated deal as a whole and assess its overall performance.
-ms.date : 10/28/2023
+ms.date : 11/14/2023
 
 ---
 
 
-# Impression Funnel: Seller Deals
+# Microsoft Curate - Impression Funnel (Seller Deals)
 
 > [!NOTE]
 > This functionality currently is in Open Beta. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.

@@ -1,12 +1,12 @@
 ---
-title : Inventory Lists
+title : Microsoft Curate - Inventory Lists
 description : Learn about Inventory lists and how they can be used to group the domains, apps, and app bundle IDs that you want to target or exclude on your insertion orders and line items.
-ms.date : 10/28/2023
+ms.date : 11/14/2023
 
 ---
 
 
-# Inventory lists
+# Microsoft Curate - Inventory lists
 
 ## Introduction
 
@@ -46,13 +46,13 @@ for insertion orders.
   independent of the top-level domain.
 - Alternatively, if a subdomain is unmapped or defined as unsupported,
   the top-level domain must be included in a list and a checkbox
-  Include subdomains needs to be
+  **Include subdomains** needs to be
   selected to target the subdomains under it. This option of
   **Include subdomains** checkbox is given
   under each top-level domain for this purpose.
   
   > [!IMPORTANT]
-  > The Include subdomains checkbox will only appear if a domain is broken out for subdomain audit in the system. If a domain is not broken out, the checkbox will not appear and all subdomains under the targetted top-level domain will be included for targeting automatically.
+  > The **Include subdomains** checkbox will only appear if a domain is broken out for subdomain audit in the system. If a domain is not broken out, the checkbox will not appear and all subdomains under the targetted top-level domain will be included for targeting automatically.
 
 - Domains that begin with `www` will have the `www` substring stripped
   out before being stored in our system. For example, `www.example.org`
@@ -86,8 +86,7 @@ For example, here are the detail pages for the "Candy Crush" app:
 
 To identify specific mobile apps to target, we recommend targeting the
 region you're interested in, activating your campaign, and after a few
-days running the <a href="site-domain-performance.md"
-class="xref">site-domain-performance.md</a> report, which will show
+days running the [site-domain-performance](site-domain-performance.md) report, which will show
 you the apps that you've been reaching. You can then update your
 targeting to include or exclude specific apps to meet your needs.
 
@@ -111,7 +110,7 @@ statuses:
   Salesforce ticket to have it reviewed.
 
 > [!NOTE]
-> For audit status "`--`" or "`Unsupported`", creatives will be delivered through managed inventory or deals. They will not be delivered in open exchange unless you have allowed unauditable creatives for the line item.
+> For audit status "`--`" or "*Unsupported*", creatives will be delivered through managed inventory or deals. They will not be delivered in open exchange unless you have allowed unauditable creatives for the line item.
 
 > [!NOTE]
 > The domains with audit status of either  :::image type="content"  source="media/audit-check.png" alt-text="Screenshot of audit check ."::: or "**--**" are available for use in the augmented line item inventory lists.
@@ -147,8 +146,7 @@ statuses:
     - **Specific Advertiser** - the
       inventory list will only be available for selection on the
       insertion orders and line items of a specific advertiser (select a
-      specific advertiser in the Select
-      one drop-down).
+      specific advertiser in the **Select one** drop-down).
 1. Click **Next**.
 1. Click either:
     - **Copy and paste domains & apps** to
@@ -220,7 +218,7 @@ exported:
     screen, enter a **Duplicate Name** and
     a **Description** (optional) for the
     list(s).
-1. Click**Duplicate**. The duplicate of
+1. Click **Duplicate**. The duplicate of
     any list(s) you selected displays in
     **Inventory Lists**.
 
@@ -259,7 +257,7 @@ exported:
       1. Click **Save**.
     - **Replace**: Replace the current domains/apps in the inventory
       list with a new list of domains/apps.
-      1. Click Replace.
+      1. Click **Replace**.
       1. Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 8-10 in the
           <a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004e00"
@@ -290,8 +288,10 @@ exported:
       1. Click **Add**.
       1. Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 7-9 in the [Create a New Inventory List](#create-a-new-inventory-list) section.
-    - **Remove**: Remove domains or apps from the list. (**Warning**:
-      This action cannot be undone.)
+    - **Remove**: Remove domains or apps from the list. 
+    > [!WARNING]
+    > This action cannot be undone.
+      
       1. Select the checkbox of each domain or app that you want to
           remove.
       1. Click **Remove**.

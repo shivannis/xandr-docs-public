@@ -1,6 +1,7 @@
 ---
 title : Microsoft Curate - General Reporting Concepts
 description : This page explains the concepts underlying our reporting system.
+ms.date : 11/14/2023
 ---
 
 
