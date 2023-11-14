@@ -86,7 +86,7 @@ For example, here are the detail pages for the "Candy Crush" app:
 
 To identify specific mobile apps to target, we recommend targeting the
 region you're interested in, activating your campaign, and after a few
-days running the [site-domain-performance](site-domain-performance.md) report, which will show
+days running the [site-domain-performance](../invest/site-domain-performance.md) report, which will show
 you the apps that you've been reaching. You can then update your
 targeting to include or exclude specific apps to meet your needs.
 
