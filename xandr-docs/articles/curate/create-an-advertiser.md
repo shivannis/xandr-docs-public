@@ -64,7 +64,7 @@ This section contains the details of the person or organization that is purchasi
 The required fields must be filled out for any state or local political advertising that will or could serve in California,
 Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level
 that will or could serve in Washington State. If your political ad will not be served in any of those states, you may
-enter "N/A”. For more information on political advertising, see [Political Advertising](../snippets/../topics/political-advertising.html).
+enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
 
 We reserve the right to implement additional screening at any time.
 

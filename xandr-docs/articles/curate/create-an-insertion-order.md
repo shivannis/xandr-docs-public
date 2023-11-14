@@ -36,7 +36,7 @@ b. Select a state.
 
  f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](#create-a-new-insertion-order) and [pacing](#create-a-new-insertion-order).
  
- g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order#political-advertising).
+ g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
 
 > [!NOTE]
 > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
