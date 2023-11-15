@@ -1,25 +1,12 @@
 ---
-Title : Device Type Targeting
-Description : To access device type targeting options, expand the
-ms.date : 10/28/2023
-Targeting section of the line item
-setup. By default, your line items will target the following physical
+title: Microsoft Curate - Device Type Targeting
+description: This article provides instructions to access device type targeting options.
+ms.date: 11/10/2023
 ---
 
+# Microsoft Curate - Device type targeting
 
-# Device Type Targeting
-
-
-
-To access device type targeting options, expand the
-Targeting section of the line item
-setup. By default, your line items will target the following physical
-device types, which correspond to `device_type_targets` in the <a
-href="xandr-api/profile-service.md#ProfileService-DeviceTypeTargets"
-class="xref" target="_blank">Profile Object</a> associated to the line
-item, as well as to the Device Type dimension in <a
-href="invest_invest-standard/device-analytics-report.md"
-class="xref" target="_blank">Device Analytics Reporting</a>.
+To access device type targeting options, expand the **Targeting** section of the line item setup. By default, your line items will target the following physical device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md) associated to the line item, as well as to the Device Type dimension in [Device Analytics Reporting](../invest/device-analytics-report.md).
 
 - **Desktops**
   - corresponds to `pc` in the profile api service
@@ -32,41 +19,21 @@ class="xref" target="_blank">Device Analytics Reporting</a>.
   - corresponds to `mobile phones` in device analytics reporting
 - **CTV**
   - corresponds to `tv/gameconsole/stb` in the profile api service
-  - corresponds to `tv/gameconsole/set top box` in device analytics
-    reporting
+  - corresponds to `tv/gameconsole/set top box` in device analytics reporting
 - **Connected Audio** - only available if ad type is **Audio**
   - corresponds to `mediaplayer` in the profile api service
   - corresponds to `media players` in device analytics reporting
 
-  to restrict the device types you are targeting, uncheck any device
-  types you wish to exclude.
+  To restrict the device types you are targeting, clear any device types you wish to exclude.
+
+  > [!NOTE]
+  > - **Connected Audio** is only available in Invest.
   >
+  > - When targeting devices models **Targeting** \> **System** \> **Device Model** with **Make** = **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
 
-  
+## Related topics
 
-  <b>Note:</b>
-  - **Connected Audio** is only available in Invest.
-  - When targeting devices models
-    Targeting
-    \> System \>
-    Device Model with
-    Make = **Apple**, you should
-    include the following device models to avoid under-delivery. For
-    Example: **iPad (300)** and **iPhone (301)**.
-
-  
-
-  
-
-Related Topic
-
-- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
-- <a href="create-a-curated-deal-line-item.md" class="xref">Create a
-  Curated Deal Line Item</a>
-- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
-
-
-
-
+- [Buy-Side Targeting](./buy-side-targeting.md)
+- [Create an Insertion Order](./create-an-insertion-order.md)
+- [Create a Curated Deal Line Item](./create-a-curated-deal-line-item.md)
+- [Object Hierarchy](./object-hierarchy.md)

@@ -1,37 +1,16 @@
 ---
-Title : Curate API
-Description : Microsoft Curate is built on a robust API that is
-ms.date : 10/28/2023
-available to customers. You can use this API to automate certain tasks
+title: Curate API
+description: Use Microsoft Curate API for automating tasks and reporting. Additional resources are available for more information.
+ms.date: 11/10/2023
 ---
-
 
 # Curate API
 
+Microsoft Curate is built on a robust API that is available to customers. You can use this API to automate certain tasks and reporting.
 
+Xandr has one API that is shared across all digital platform products. Refer to the following resources to learn more about the API and the services that are available.
 
-Microsoft Curate is built on a robust API that is
-available to customers. You can use this API to automate certain tasks
-and reporting.
-
-Xandr has one API that is shared across all
-digital platform products. Refer to the following resources to learn
-more about the API and the services that are available.
-
-- <a href="xandr-api/welcome.md"
-  class="xref" target="_blank">Digital Platform API</a>
-- <a
-  href="xandr-api/api-getting-started.md"
-  class="xref" target="_blank">Getting Started with the API</a>
-- <a
-  href="xandr-api/buy-side-setup-with-the-augmented-line-item.md"
-  class="xref" target="_blank">Buy-Side Setup Guide</a>
-- <a
-  href="xandr-api/sell-side-setup.md"
-  class="xref" target="_blank">Sell-Side Setup Guide</a>
-- <a href="xandr-api/reference.md"
-  class="xref" target="_blank">Reference Guide (Services)</a>
-
-
-
-
+- [Getting Started with the API](../digital-platform-api/api-getting-started.md)
+- [Buy-Side Setup Guide](../digital-platform-api/buy-side-setup-with-the-augmented-line-item.md)
+- [Sell-Side Setup Guide](../digital-platform-api/sell-side-setup.md)
+- [Reference Guide (Services)](../digital-platform-api/reference.md)
