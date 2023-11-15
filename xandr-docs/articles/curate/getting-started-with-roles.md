@@ -6,7 +6,7 @@ ms.date : 11/14/2023
 ---
 
 
-# Microsoft curate - Getting started with roles
+# Microsoft Curate - Getting started with roles
 
 As a company doing business with Xandr, it's
 possible that you have more than one user responsible for your company's
