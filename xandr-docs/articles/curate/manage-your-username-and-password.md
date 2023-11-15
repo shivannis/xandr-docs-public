@@ -80,7 +80,7 @@ To change your password either after it expires, or if you have [forgotten your 
 ## Requesting a forgotten password
 
 1. If you forgot your password, go to the login page of
-    Xandr Curate and **click Reset Password**.
+    Xandr Curate and click **Reset Password**.
 1. Enter your username and click **Send Email**.
 1. Within a few minutes, you'll receive an email including a link.
     Click the link to create a new password as described above. Note

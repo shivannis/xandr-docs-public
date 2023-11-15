@@ -19,7 +19,7 @@ You can also manage your deals with a specific buyer on the [Partnership Details
 
 ## Getting to the Deals Screen
 
-To reach the **Deals**screen, select **Inventory \>  Seller Deals** in the main navigation.
+To reach the **Deals** screen, select **Inventory \>  Seller Deals** in the main navigation.
 
 ## Viewing basic and advanced deal metrics
 

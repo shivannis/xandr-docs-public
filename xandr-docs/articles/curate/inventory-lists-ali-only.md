@@ -140,8 +140,8 @@ statuses:
       checkbox if you want to undo this for all existing and new line
       items.
 
-    > [!NOTE]
-    > The inventory lists that are set to **Required for all** will only be applied to third-party inventory.
+      > [!NOTE]
+      > The inventory lists that are set to **Required for all** will only be applied to third-party inventory.
       
     - **Specific Advertiser** - the
       inventory list will only be available for selection on the
@@ -260,8 +260,7 @@ exported:
       1. Click **Replace**.
       1. Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 8-10 in the
-          <a href="inventory-lists-ali-only.md#ID-00004d82__ID-00004e00"
-          class="xref">Create a New Inventory List</a> section for more
+          [Create a New Inventory List](#create-a-new-inventory-list) section for more
           information.
       1. Click **Save**.
     - **Remove**: Remove domains/apps from the list. 
@@ -289,8 +288,8 @@ exported:
       1. Enter the domains/apps that you wish to add (or import them
           from an existing file). See steps 7-9 in the [Create a New Inventory List](#create-a-new-inventory-list) section.
     - **Remove**: Remove domains or apps from the list. 
-    > [!WARNING]
-    > This action cannot be undone.
+       > [!WARNING]
+       > This action cannot be undone.
       
       1. Select the checkbox of each domain or app that you want to
           remove.

@@ -1,6 +1,6 @@
 ---
 title : Microsoft Curate - Geo Radius Segments
-description : A geo radius segment is a list of latitude, longitude, and radius data.
+description : Learn how you can use geo radius segments for geographical targeting of multiple user locations.
 ms.date : 11/14/2023
 ---
 
@@ -42,7 +42,7 @@ Fill in the following fields:
 
 Click **Next**.
 
-### Step 3.Choose the method to add Geo Radius Segment features
+### Step 3. Choose the method to add Geo Radius Segment features
 
 **Copy and paste**
 
