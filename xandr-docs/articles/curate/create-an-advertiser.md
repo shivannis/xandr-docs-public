@@ -94,12 +94,12 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 - **Billing Information** - Change the information that appears in advertiser and/or insertion order-specific invoices. By default, your member billing information will appear in the "Bill To" section of those invoices.
   - To show your advertiser's name and address in the "Bill To" section instead, complete the fields in the    **Billing Information** section. The **Billing Name** field may contain a maximum of 50 characters.
   - To show just the advertiser's name with the member's address, enter the name but leave the rest of the fields blank. For more about receiving advertiser- and/or insertion order-specific invoices, see 
-    [Understanding Your Invoice](https://wiki.appnexus.com/display/finance/Understanding%2bYour%2bInvoice).
+    [Understanding Your Invoice](../monetize/understanding-your-invoice.md).
 
 You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
 
 - **Brand Settings** - You can set a default brand and offer category to be assigned to all creatives added under this advertiser. If you submit a creative for Xandr audit, the audit team will validate and, when necessary, alter these settings.
-- **Exclusions** - for publishers using Curate's [AST](https://docs.xandr.com/bundle/seller-tag/page/seller-tag.html) - Managed publishers can conduct a single auction for multiple ad slots on a page. Competitive exclusions ensure that creatives from competitive brands (e.g., Coke and Pepsi) and competitive offer categories never serve alongside each   other. You can define up to 25 brand exclusions and up to 25 offer category exclusions.
+- **Exclusions** - for publishers using Curate's [AST](../seller-tag/seller-tag.md) - Managed publishers can conduct a single auction for multiple ad slots on a page. Competitive exclusions ensure that creatives from competitive brands (e.g., Coke and Pepsi) and competitive offer categories never serve alongside each   other. You can define up to 25 brand exclusions and up to 25 offer category exclusions.
 - **Insertion Orders** - Select this check box to ensure that all line items under this advertiser also have an insertion order **(Advertiser \> Insertion Order \> Line Items)**. Insertion orders allow you to better represent your financial relationship with an advertiser. This check box must be selected if you want to use [Working with
   Insertion Orders](working-with-insertion-orders.md).
 

@@ -34,7 +34,7 @@ b. Select a state.
 
  e. Select a budget type.
 
- f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](#create-a-new-insertion-order) and [pacing](#create-a-new-insertion-order).
+ f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](create-an-insertion-order.md#billing-periods) and [pacing](create-an-insertion-order.md#pacing).
  
  g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
 
@@ -137,7 +137,7 @@ insertion order's billing periods.
 > - You cannot set a start date in the past. 
 > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
 
-**Pacing**
+### Pacing
 
 Pacing determines how quickly budget is spent over the lifetime of the insertion order.
 

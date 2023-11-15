@@ -81,7 +81,7 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
 > [!NOTE]
 > You cannot change the selected buyer after the curated deal line item is created and saved.
 
-5. Click Add.
+5. Click **Add**.
 6. Enter the deal code in Code (optional, this is typically used by external buyers for deal mapping).
 7. Enter a description for your deal in the Description box (optional).
 
@@ -191,7 +191,7 @@ exchange:
  > [!NOTE]
 > When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-2. Click Add.
+2. Click **Add**.
 
 **Seller inventory**
 
