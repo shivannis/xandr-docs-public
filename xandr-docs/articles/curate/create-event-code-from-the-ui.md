@@ -1,5 +1,5 @@
 ---
-title: Create Event Code from the UI for Curate
+title: Microsoft Curate - Create Event Code from the UI
 description: The article explains how you can use the universal pixel user interface to generate event code and send it to your web developer.
 ---
 

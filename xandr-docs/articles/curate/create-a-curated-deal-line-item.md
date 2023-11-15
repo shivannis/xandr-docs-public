@@ -1,5 +1,5 @@
 ---
-title: Create a Curated Deal Line Item 
+title: Microsoft Curate - Create a Curated Deal Line Item 
 description: The article outlines the process of creating a curated deal item, allowing users to establish a curated deal for a buyer. These curated deals involve negotiated agreements between a buyer and a curator, merging the curator's assets with Xandr Marketplace supply.
 ms.date : 10/28/2023
 ---

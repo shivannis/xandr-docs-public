@@ -1,5 +1,5 @@
 ---
-title: Create and Activate a Plan
+title: Microsoft Curate - Create and Activate a Plan
 description: The article describes how to create and activate a plan.
 ---
 
