@@ -12,7 +12,7 @@ This page explains how our reporting system handles time and date considerations
 
 Currently, most time zones for Curate objects are set to Eastern U.S. time by default (UTC - 4 hours or UTC - 5 hours, depending on daylight savings). You can change this time zone for your entire network/member, or for individual advertisers.
 
-- You can select a different time zone for any report using the **Timezone** menu (under **Basic**)
+- You can select a different time zone for any report using the **Timezone** menu (under **Basic**).
 - Billing data is always in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time). However, you can always select the desired time zone when running a report.
 
 ## Member time zones
