@@ -1,104 +1,54 @@
 ---
-Title : Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
-Description : On the Partner Center screen, the
-ms.date : 10/28/2023
-**Default Settings** option allows you to establish default buyer
-eligibility, allowed payment types, and targeting access for all buyers.
+title: Microsoft Curate - Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
+description: In this article, learn how to set the default buyer eligibility and the default allowed payment type settings.
+ms.date: 10/28/2023
 ---
 
+# Microsoft Curate - Set default buyer eligibility, allowed payment types, and targeting access
 
-# Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
+On the **Partner Center** screen, the **Default Settings** option allows you to establish default buyer eligibility, allowed payment types, and targeting access for all buyers. It is possible to override these settings for individual buyers.
 
+For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
+## Getting there
 
-On the Partner Center screen, the
-**Default Settings** option allows you to establish default buyer
-eligibility, allowed payment types, and targeting access for all buyers.
-It is possible to override these settings for individual buyers.
+**Publisher clients:** select **Marketplace \>  Partner Center**.
 
-For details, see <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
-Targeting Access</a>.
+**All other clients:** select **Partners \>  Partner Center**.
 
-Getting There
+### Step 1: Get started
 
-**Publisher clients:** select
-Marketplace
- \>  Partner Center.
+From the **Partner Center**, click the **Default Settings** button to display the Default Settings dialog.
 
-**All other clients:** select
-Partners 
-\>  Partner Center.
+### Step 2: Update your default settings
 
-Step 1. Get started
+#### Set the default buyer eligibility
 
-From the Partner Center, click the
-Default Settings button to display the
-Default Settings dialog.
+This setting is similar to banning or trusting members using ad quality settings. If you ban a buyer in either your ad quality settings or in Partner Center, that member will be banned. A member does not need to be banned in both places.
 
-Step 2. Update your default settings
+For more information on the different options described in this section, see the **Setting default buyer eligibility** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-Set the default buyer eligibility
+#### Set the default allowed payment types
 
-This setting is similar to banning or trusting members using ad quality
-settings. If you ban a buyer in either your ad quality settings or in
-Partner Center, that member will be banned. A member does not need to be
-banned in both places.
+These are the type(s) of payment you accept from partners whose eligibility is set to eligible. CPM is selected by default for all
+eligible buyers and cannot be unchecked since it is the standard payment type for third-party inventory.
 
-For more information on the different options described in this section,
-see the Setting default buyer
-eligibility section within
-<a href="partner-center-screen-seller-view.md" class="xref">Setting
-Buyer Defaults</a>.
+You can also opt into allowing members to pay for inventory on a CPC or CPA basis. If you allow CPC and CPA payment, you must also set up your publishers to accept CPC and CPA payment types.
 
-Set the default allowed payment types
+#### Set the default targeting access
 
-These are the type(s) of payment you accept from partners whose
-eligibility is set to eligible. CPM is selected by default for all
-eligible buyers and cannot be unchecked since it is the standard payment
-type for third-party inventory.
+This indicates the information each member receives when targeting your inventory. Members cannot report on this information; it is only used for targeting. The more information you give buyers, the more easily they can target your inventory.
 
-You can also opt into allowing members to pay for inventory on a CPC or
-CPA basis. If you allow CPC and CPA payment, you must also set up your
-publishers to accept CPC and CPA payment types.
+For more information on the different targeting access options, see the **Setting default targeting access** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-Set the default targeting access
+For **Categories (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose
+**Select** beneath the **Category (Custom)** option to display the list of categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
-This indicates the information each member receives when targeting your
-inventory. Members cannot report on this information; it is only used
-for targeting. The more information you give buyers, the more easily
-they can target your inventory.
+### Step 3: Save your settings
 
-For more information on the different targeting access options, see the
-Setting default targeting access
-section within
-<a href="partner-center-screen-seller-view.md" class="xref">Setting
-Buyer Defaults</a>.
+Click the **Save** button to record updates to your settings.
 
-For **Categories (Custom)** there is the additional option to expose
-specific categories. To select specific custom categories, choose
-Select beneath the **Category
-(Custom)** option to display the list of categories. Click on a category
-in the Available Items area to add
-it to the Selected Items area. To
-remove a category from the Selected
-Items area, click the X next to
-the category name. When you have finished selecting custom categories,
-click Add to save your changes.
+## Related topics
 
-Step 3. Save your settings
-
-Click the Save button to record
-updates to your settings.
-
-Related Topics
-
-- <a href="managing-relationships-with-buyers.md" class="xref">Managing
-  Relationships with Buyers</a>
-- <a href="partner-center-screen-seller-view.md" class="xref">Partner
-  Center Screen - Seller View</a>
-
-
-
-
+- [Managing Relationships with Buyers](managing-relationships-with-buyers.md)
+- [Partner Center Screen - Seller View](partner-center-screen-seller-view.md)
