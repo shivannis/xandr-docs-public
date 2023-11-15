@@ -1,5 +1,5 @@
 ---
-title: Buying Microsoft Video Inventory for Curate
+title: Microsoft Curate - Buying Microsoft Video Inventory 
 description: The article describes how the Microsoft video inventory combines the targeting effectiveness of programmatic buying with interactive ad formats. It also explains the types and creative specifications of Microsoft video inventory.
 ---
 
@@ -38,8 +38,8 @@ The following table summarizes the benefits and availability of each inventory t
 
 To learn more about Microsoft's various video creative specifications, see the following:
 
-- [Microsoft Creative Specifications](https://about.ads.microsoft.com/en-us/policies/home)
-- [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/en-us/policies/home)
+- [Microsoft Creative Specifications](http://advertising.microsoft.com/creative-specs)
+- [Microsoft Creative Acceptance Policy](http://advertising.microsoft.com/creative-acceptance-policy)
 
 ## Targeting Microsoft video inventory
 
@@ -55,7 +55,7 @@ Each video inventory type can be targeted using RTB or Deals. To target Microsof
 
 ## Availability and volume
 
-To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](https://ads.microsoft.com/UnknownUser?s_int=en_us_acsignup_policiesandguidelinespolicieslandingpage&idP=AAD).
+To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](https://xandr-be-prod.zoominsoftware.io/bundle/curate_curate-standard/page/attachments/buying-microsoft-video-inventory/msft-video-volume-by-format-final-june-2017.xlsx).
 
 Here are some quick volume metric highlights:
 
