@@ -17,9 +17,9 @@ Things you can do on this page include:
 - Drill down into line items to configure or troubleshoot
 - Create and edit insertion orders
 
-## Get to the insertion orders screen
+## Get to the Insertion Orders screen
 
-To get to the insertion orders screen:
+To get to the **Insertion Orders** screen:
 
 - On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and click the button in the **Ins Orders** column.
 - In **Advertiser's Details** view, click on **Insertion Orders**.

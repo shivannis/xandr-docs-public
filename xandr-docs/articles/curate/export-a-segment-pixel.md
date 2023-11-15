@@ -14,7 +14,7 @@ Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Seg
 
 ## Step 2: Select the pixel format
 
-We recommend that you select **Use a JavaScript tag**. Selecting Generate non-secure pixel can result in browser warnings and/or the pixel not firing.
+We recommend that you select **Use a JavaScript tag**. Selecting **Generate non-secure pixel** can result in browser warnings and/or the pixel not firing.
 
 ## Step 3: Select the delivery options
 

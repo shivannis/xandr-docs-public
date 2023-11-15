@@ -16,11 +16,11 @@ The **Advertisers** screen is a management screen that shows you essential metri
 - To delete an advertiser, select the checkbox next to each advertiser you want to delete and click **Delete**.
   
   > [!WARNING]
-  > Deleting an advertiser deletes all of its child objects as well, including insertion orders, line items, campaigns, creatives conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be availabl in reporting, you will no longer have visibility into their specific settings (revenue budget for line items, cost budget and targeting for campaigns, etc.).
+  > Deleting an advertiser deletes all of its child objects as well, including insertion orders, line items, campaigns, creatives conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (revenue budget for line items, cost budget and targeting for campaigns, etc.).
 
 ## Viewing metrics
 
-The metrics on the **Advertisers** screen help you assess the performance and delivery of your advertisers at a glance. These metrics are faster and more readily accessed than via standard reporting; whereas reporting requires you to submit a request and then wait for a response, these stats are cached on a regular basis and are shown whenever you open the **Advertisers** screen.
+The metrics on the **Advertisers** screen help you assess the performance and delivery of your advertisers at a glance. These metrics are faster and more readily accessed than via standard reporting whereas reporting requires you to submit a request and then wait for a response, these stats are cached on a regular basis and are shown whenever you open the **Advertisers** screen.
 
 Because these stats are dependent upon reporting data and are synced after reporting has closed for any given hour, for a small chunk of time each hour, there may be discrepancies between reporting and the grid data. For more details, see [Availability of Reporting Data](./availability-of-reporting-data.md).
 
@@ -31,12 +31,9 @@ Because these stats are dependent upon reporting data and are synced after repor
 
 The following stats are shown for each advertiser. Note that the data always reflects the currently selected stats interval:
 
-- **ID**  
-  The unique identifier of advertiser.
-- **Ins Orders**  
-  Number of insertion orders under the advertiser.
-- **Line Items**  
-  Number of line items under the advertiser.
+- **ID** - The unique identifier of advertiser.
+- **Ins Orders** - Number of insertion orders under the advertiser.
+- **Line Items** - Number of line items under the advertiser.
 
 ## Viewing advertiser details
 
@@ -56,7 +53,7 @@ You can use the search field at the top of the screen to find all advertisers wh
 
 ## Reporting on advertisers
 
-You can initiate a Network Analytics report for one or more advertisers directly from the Advertisers screen. Select the checkbox for each advertiser that you want to report on and click **Run Report**.
+You can initiate a Network Analytics report for one or more advertisers directly from the **Advertisers** screen. Select the checkbox for each advertiser that you want to report on and click **Run Report**.
 
 This takes you to the Network Analytics report, where the advertisers you selected are set as filters.
 

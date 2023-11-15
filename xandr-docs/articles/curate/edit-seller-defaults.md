@@ -6,14 +6,14 @@ ms.date: 11/14/2023
 
 # Microsoft Curate - Edit seller defaults
 
-You can set the eligibility and inventory trust for sellers in the Partner Center screen or in the My Settings for {Seller Name} section of the Partner Details page.
+You can set the eligibility and inventory trust for sellers in the **Partner Center** screen or in the **My Settings for {Seller Name}** section of the **Partner Details** page.
 
 > [!NOTE]
 > Inventory trust settings only apply to standard line item targeting.
 
-Sellers can see the settings you have set for them. Your defaultsettings will apply if you do not set custom settings for the seller. For more information on default settings, see [Set Seller Defaults](set-seller-defaults.md).
+Sellers can see the settings you have set for them. Your default settings will apply if you do not set custom settings for the seller. For more information on default settings, see [Set Seller Defaults](set-seller-defaults.md).
 
-While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the Partner Center and in the My Settings for {Seller Name} section of the Partner Details page. You can view the seller's current settings for you in the {Seller Name} Settings for Me section of the Partner Details page.
+While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** screen and in the **My Settings for {Seller Name}** section of the **Partner Details** page. You can view the seller's current settings for you in the **{Seller Name} Settings for Me** section of the **Partner Details** page.
 
 **Get to Know Xandr Direct:**
 Xandr Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Xandr Direct for Buyers](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
