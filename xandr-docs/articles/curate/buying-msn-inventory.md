@@ -1,5 +1,5 @@
 ---
-title: Buying MSN Inventory for Curate
+title: Microsoft Curate - Buying MSN Inventory
 description: The article provides an overview of inventory, discussing its availability, volumes, various industry verticals, and formats with detailed specifications.
 
 ---

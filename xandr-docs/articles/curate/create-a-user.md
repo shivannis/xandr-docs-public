@@ -1,5 +1,5 @@
 ---
-title: Create a User for Curate
+title: Microsoft Curate - Create a User
 description: The article describes how You can create users and assign them to various roles. 
 ---
 

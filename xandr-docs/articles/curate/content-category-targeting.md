@@ -1,5 +1,5 @@
 ---
-title: Content Category Targeting for Curate
+title: Microsoft Curate - Content Category Targeting
 description: The article describes universal and custom categories and how the organization target these two categories. The content category targeting is available to Standard Line Items only. 
 ms.custom: 
 ---
