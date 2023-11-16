@@ -1,11 +1,11 @@
 ---
-title : User Mapping Visual and Walk-Through
+title : Microsoft Curate - User Mapping Visual and Walk-Through
 description : Learn how to map your internal user IDs and Xandr user IDs so that you can pass Xandr your internal userdata that you will use to buy impressions.  
 ms.date : 11/15/2023
 ---
 
 
-# User mapping visual and Walk-Through
+# Microsoft Curate - User mapping visual and Walk-Through
 
 [User ID Mapping](user-id-mapping-with-getuid-and-mapuid.md) describes how to map your internal user IDs and
 Xandr user IDs so that you can pass

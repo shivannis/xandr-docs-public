@@ -1,26 +1,20 @@
 ---
-Title : Viewability FAQ
->
-## **Viewability Data**
-The following questions address where to find Xandr viewability data and
-the key metrics associated with it.
+title : Microsoft Curate - Viewability FAQ
+description : Learn all about Viewability FAQs in this page.   
+ms.date : 11/16/2023
+
+
 ---
 
 
-# Viewability FAQ
+# Microsoft Curate - Viewability FAQ
 
+Learn concepts on Viewability FAQ in this module.
 
-
->
-
-## **Viewability Data**
+## Viewability Data
 
 The following questions address where to find Xandr viewability data and
 the key metrics associated with it.
-
-
-
-
 
 ## In reporting, what is the definition used for viewable impressions?
 
@@ -28,28 +22,17 @@ Our reporting is based on the IAB standard definition: 50% of the area
 of the creative (30% of the area of a large size creative) in view for 1
 continuous second.
 
-
-
-
-
 ## Are other viewability metrics available, such as "viewable for less than 5 seconds"?
 
 Adserver clients can now use the Engagement Metrics report to access a
 wide variety of metrics. We are focused on making the most actionable
 viewability data widely and easily available.
 
-
-
->
-
-## **Xandr Viewability Script Functionality**
+## Xandr Viewability Script Functionality
 
 The following questions address the Xandr
 viewability script, how it works, what it measures, and its limitations.
 
-
-
->
 
 ## What methods does Xandr use to measure viewability?
 
@@ -59,16 +42,10 @@ Optimization. When used in tandem, this hybrid method allows us to
 reliably measure viewability of most impressions.
 
 
-
->
-
 ## Does Xandr viewability use projection-based methods to report on viewable impressions?
 
 No, all reporting data is based on direct measurement.
 
-
-
->
 
 ## What types of inventory are supported by Xandr viewability?
 
@@ -94,19 +71,11 @@ Viewability measurement on the following native inventory is supported:
   with Xandr to enable measurement)
 
 
-
->
-
 ## What types of creatives does Xandr viewability support?
 
 The Xandr viewability script is currently
 enabled for all banner, native, and video creatives. For more
-information about how viewability works for video, see
-<a href="video-viewability.md" class="xref">Video Viewability</a>.
-
-
-
-
+information about how viewability works for video, see [Video Viewability](video-viewability.md).
 
 ## Why would some supported inventory not be measurable?
 
@@ -127,16 +96,9 @@ The possible causes could be:
   measurement.
 
 
-
->
-
 ## What impression types are not measured by Xandr?
 
 "blank" and "default"
-
-
-
->
 
 ## When does the Xandr viewability script start measuring? Will the script wait for the creative to load before measuring?
 
@@ -144,10 +106,6 @@ The Xandr viewability script waits for the
 creative content to load before measuring for viewability. This may be a
 source of discrepancies with other measurement vendors, in particular
 when the creative content is a large file.
-
-
-
->
 
 ## Will the Xandr viewability script slow down my page load or otherwise impact my page content?
 
@@ -160,10 +118,6 @@ and operating systems to ensure, among other things, that it does not
 impact the page content. The script has been in use since 2007, and
 extensive real-world usage confirms the ad viewer’s experience is not
 impacted.
-
-
-
->
 
 ## How does the Xandr viewability script determine whether a human is viewing the ad?
 
@@ -181,17 +135,11 @@ an auto-refresh placement, will be considered non-viewable until an
 activity event is detected.
 
 
-
->
-
-## **Viewability Rate Results**
+## Viewability Rate Results
 
 The following questions address how to interpret your reported
 viewability rates in Microsoft Curate.
 
-
-
->
 
 ## Why do I get a low viewability rate on placement X?
 
@@ -214,13 +162,8 @@ When a placement is above the fold, it is not always viewable, because:
 - The page is automatically refreshed, while it is opened in a hidden
   tab or window.
 
-
-
->
-
 ## Why is my viewability rate with vendor X higher than with Xandr?
 
->
 
 - What is the vendor's measurement rate?
   - Compare it with our view-measurement rate in reporting. High
@@ -232,12 +175,6 @@ When a placement is above the fold, it is not always viewable, because:
   - We measure the object: the banner is not viewable if the object is
     not loaded.
 
-
-
-
-
->
-
 ## Why do I get a low viewability rate on creative X?
 
 It could be any of the following:
@@ -245,19 +182,7 @@ It could be any of the following:
 - Is the creative working correctly?
 - Is it rendering?
 
+## Related topics
 
-
->
-
-## **Related Topics**
-
-- <a href="introduction-to-viewability.md" class="xref">Introduction to
-  Viewability</a>
-- <a href="reporting-on-viewability.md" class="xref">Reporting on
-  Viewability</a>
-
-
-
-
-
-
+- [Introduction to Viewability](introduction-to-viewability.md)
+- [Reporting on Viewability](reporting-on-viewability.md)

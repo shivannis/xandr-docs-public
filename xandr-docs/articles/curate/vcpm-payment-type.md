@@ -1,12 +1,12 @@
 ---
-title : vCPM Payment Type
+title :  Microsoft Curate - vCPM Payment Type
 description : Learn how Viewable CPM (vCPM) allows buyers to pay only for impressions that are measured "viewable".
 ms.date : 11/15/2023
 
 ---
 
 
-# vCPM payment type
+#  Microsoft Curate - vCPM payment type
 
 Viewable CPM (vCPM) is a payment type that allows buyers to pay only for
 impressions that are measured "viewable" (read our [Introduction to Viewability](introduction-to-viewability.md)

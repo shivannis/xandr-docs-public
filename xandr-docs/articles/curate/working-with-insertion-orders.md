@@ -1,12 +1,12 @@
 ---
-title : Working with Insertion Orders
+title : Microsoft Curate - Working with Insertion Orders
 description : Learn about Insertion Orders and how you can easily manage collections of line items that may share a common budget, time span, and business terms.
 ms.date : 11/15/2023
 
 ---
 
 
-# Working with Insertion Orders
+# Microsoft Curate - Working with Insertion Orders
 
 Insertion orders allow you to easily manage collections of line items
 that may share a common budget, time span, and business terms. Insertion

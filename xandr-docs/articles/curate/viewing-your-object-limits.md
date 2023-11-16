@@ -1,14 +1,12 @@
 ---
-Title : Viewing Your Object Limits
-Description : Xandr limits the number of object (line items,
-ms.date : 10/28/2023
-creatives, etc.) that you can have on the platform. The Object Limits
+title : Microsoft Curate - Viewing Your Object Limits
+description : Learn how Object Limits Report allows you to view the limits set by xandr on number of objects (line items, creatives, etc.) on a platform and monitor your current usage.   
+ms.date : 11/16/2023
+
 ---
 
 
-# Viewing Your Object Limits
-
-
+# Microsoft Curate - Viewing your object limits
 
 Xandr limits the number of object (line items,
 creatives, etc.) that you can have on the platform. The Object Limits
@@ -20,28 +18,18 @@ For creatives, only non-expired objects are counted against the limit. A
 creative expires when it has neither served nor been modified in 45
 days.
 
+> [!IMPORTANT]
+> **Automatic archiving of objects:**
+> Objects that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If an object is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., Insertion Order \> Line Item) will also be archived and no additional child objects can be created beneath the archived parent object.
 
-
-<b>Important:</b> **Automatic archiving of
-objects:** Objects that have not served or been edited in more than 180
-days and that are not scheduled to serve in the future are automatically
-archived. If an object is in the "archived" state, it cannot spend or be
-edited. However, it can still be copied, deleted or used in reports (or
-exported for use in an external reporting tool). In addition, once an
-object is archived, any child objects it may own (e.g., Insertion Order
-\> Line Item) will also be archived and no additional child objects can
-be created beneath the archived parent object.
-
-
-
-Getting to the Object Limits Report
+## Getting to the object limits report
 
 Your object limits report is available under your
 Member Settings.
 
-Object Limits Report
+## Object limits report
 
-The Object Limits Report section lists
+The **Object Limits Report** section lists
 the types of objects that are limited and provides the following data
 for each:
 
@@ -59,17 +47,10 @@ for each:
   always be 100%. If the percentage is low, the client has many objects
   that are candidates for deletion.
 
+> [!TIP]
+> Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Xandr representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
 
-
-<b>Tip:</b> Line items that have not served or
-been modified in the last 90 days are good candidates for deletion.
-Contact your Xandr representative if you need
-assistance in cleaning out old objects or to request that your object
-limit be increased.
-
-
-
-FAQs
+## FAQs
 
 ***How will I know that I am approaching my limit for an object?***
 

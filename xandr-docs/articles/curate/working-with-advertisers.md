@@ -1,12 +1,12 @@
 ---
-title : Working with Advertisers
+title : Microsoft Curate - Working with Advertisers
 description : Learn what is an Advertiser Object and how it serves as a container for other objects.
 ms.date : 11/15/2023
 
 ---
 
 
-# Working with advertisers
+# Microsoft Curate - Working with advertisers
 
 An advertiser is a company, agency, or other grouping that displays
 media creatives on publisher web and/or mobile inventory. The Advertiser

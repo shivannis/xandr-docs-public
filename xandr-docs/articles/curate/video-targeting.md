@@ -1,48 +1,30 @@
 ---
-Title : Video Targeting
-Description : You can target video inventory based on the playback method, player
-ms.date : 10/28/2023
-size, and position.
+title : Microsoft Curate - Video Targeting
+description : Learn to target video inventory based on the playback method, player size, and position.
+ms.date : 11/14/2023
+
 ---
 
 
-# Video Targeting
-
-
+# Microsoft Curate - Video targeting
 
 You can target video inventory based on the playback method, player
 size, and position.
 
-In the Viewability & Environment
-Targetingsection of a line item, click the pencil icon next to
+In the **Viewability & Environment
+Targeting** section of a line item, click the pencil icon next to
 **Video Player**.
 
 You can target video creatives in any or all of the following ways:
 
-- <a href="video-targeting.md#ID-00005144__p_nqr_55q_gkb"
-  class="xref">Target video inventory by position</a>
-- <a href="video-targeting.md#ID-00005144__p_tfd_w5q_gkb"
-  class="xref">Target video inventory by playback method</a>
-- <a href="video-targeting.md#ID-00005144__p_lmn_w5q_gkb"
-  class="xref">Target video by player width</a>
+- [Target video inventory by position](#target-video-inventory-by-position-or-context)
+- [Target video inventory by playback method](#target-video-inventory-by-playback-method)
+- [Target video by player width](#target-video-inventory-by-player-width)
 
+> [!NOTE]
+> You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential. By default, you will target all playback methods, player sizes and roll positions. However, you can narrow your targeting.
 
-
-<b>Note:</b> You should avoid using both VAST
-creatives and in-banner or interstitial video creatives within the same
-video campaign. An in-banner or interstitial video creative will not
-serve when you target by position. Setting any of the three video
-targeting parameters (i.e., **Playback Method**, **Player Size**, or
-**Position**) will restrict inventory to only those that satisfy the
-specified parameters and thus significantly limit your delivery
-potential.
-
-By default, you will target all playback methods, player sizes and roll
-positions. However, you can narrow your targeting.
-
-
-
-Target Video Inventory by Position or Context
+## Target video inventory by position or context
 
 The options available to target inventory by position, also called
 context:
@@ -58,7 +40,7 @@ context:
     information has been provided.
 - **Outstream** - Video ads are embedded within the body of a web page.
 
-Target Video Inventory by Playback Method
+## Target video inventory by playback method
 
 You can target inventory that accepts creatives with the following
 playback methods:
@@ -77,19 +59,11 @@ playback methods:
 - **No playback method provided** - Target inventory where no initiation
   method information is provided (e.g., YouTube inventory).
 
+> [!NOTE]
+> - For maximum delivery and reach, we recommend that you include **No initiation method provided** in your targeting since some inventory (such as Google Ad Manager) is not classified. 
+> - Playback method targeting is not available for Google Ad Manager (181).
 
-
-<b>Note:</b>
-
-- For maximum delivery and reach, we recommend that you include **No
-  initiation method provided** in your targeting since some inventory
-  (such as Google Ad Manager) is not classified.
-- Playback method targeting is not available for Google Ad Manager
-  (181).
-
-
-
-Target Video Inventory by Player Width
+## Target video inventory by player width
 
 Player inventory is available across all supply types (web, mobile web,
 and mobile app). The following player sizes are available to target:
@@ -102,18 +76,8 @@ and mobile app). The following player sizes are available to target:
   pixels)
 - **No player width provided**
 
-
-
-<b>Tip:</b> For maximum delivery and reach, we
-recommend that you include **No player width provided** in your
-targeting, because some inventory (such as Google Ad Manager) is not
-classified.
-
-
+> [!TIP]
+> For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
 You can either click the graphic to make a selection or check the
 appropriate checkbox.
-
-
-
-

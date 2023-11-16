@@ -1,12 +1,12 @@
 ---
-title : View Insertion Order Details
+title : Microsoft Curate - View Insertion Order Details
 description : Learn about the Insertion Order Details screen which displays settings for a specific insertion order, essential metrics, and performance visualizations. 
 ms.date : 11/15/2023
 
 ---
 
 
-# View insertion order details
+# Microsoft Curate - View insertion order details
 
 The **Insertion Order Details** screen
 displays settings for a specific insertion order, essential metrics, and

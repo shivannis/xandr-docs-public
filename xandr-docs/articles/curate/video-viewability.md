@@ -1,34 +1,20 @@
 ---
-Title : Measurement of Video Viewability using VPAID Wrapper
-Description : This page explains the technology behind our video viewability
-ms.date : 10/28/2023
-measurement.
+title : Microsoft Curate - Measurement of Video Viewability using VPAID Wrapper
+description : Learn about the technology behind our video viewability measurement. 
+ms.date : 11/16/2023
+
 ---
 
 
-# Measurement of Video Viewability using VPAID Wrapper
-
-
+# Microsoft Curate - Measurement of video viewability using VPAID Wrapper
 
 This page explains the technology behind our video viewability
 measurement.
 
+> [!IMPORTANT]
+> Viewability for video creatives on Xandr is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
 
-
-
-
-<b>Important:</b> Viewability for video
-creatives on Xandr is measured using OMSDK for
-Web and App, and if it's not available we fall back to the VPAID wrapper
-measurement which is avalable for Web only but not for App.
-
-
-
-
-
-
-
-## What is Video Viewability?
+## What is video viewability?
 
 The Xandr video viewability measurement is based
 on the IAB guidelines, which state that 50% of the surface of a video ad
@@ -56,10 +42,6 @@ non-supported formats:
 - javascript VPAID
 - Display Inventory
 
-
-
-
-
 ## AdServing
 
 When viewability is enabled, the VPAID wrapper is served by default. If
@@ -75,28 +57,28 @@ and outstream positions is supported.
 
 **The AdServing Lifecycle**
 
-1.  A **video tag** is embedded within a video player on a publisher's
+1. A **video tag** is embedded within a video player on a publisher's
     website.
-2.  Consumer loads the website and the video ad tag makes a **bid
+1. Consumer loads the website and the video ad tag makes a **bid
     request** to Xandr servers.
-3.  The Xandr server generates a **VAST
+1. The Xandr server generates a **VAST
     document** that links to the Xandr VPAID
     wrapper URL, and from the VAST to the player via a URL.
-4.  The VAST document is **sent** to the **Video player**.
-5.  The player loads, initializes, and **runs** the
+1. The VAST document is **sent** to the **Video player**.
+1. The player loads, initializes, and **runs** the
     Xandr **VPAID viewability wrapper**.
-6.  The VPAID wrapper injects the **viewability measurement javascript**
+1. The VPAID wrapper injects the **viewability measurement javascript**
     on the page.
-7.  The VPAID wrapper makes a call to a **third party ad server**.
-8.  Third party ad server generates a **VAST document** (the original
+1. The VPAID wrapper makes a call to a **third party ad server**.
+1. Third party ad server generates a **VAST document** (the original
     VAST creative uploaded within Curate).
-9.  The third party VAST document is **sent** to the **VPAID wrapper**.
-10. The VPAID wrapper **loads** the video creative.
-11. The **creative** **(ad) is displayed** in the player while the
+1. The third party VAST document is **sent** to the **VPAID wrapper**.
+1. The VPAID wrapper **loads** the video creative.
+1. The **creative** **(ad) is displayed** in the player while the
     viewability javascript on the page **measures the viewability** of
     the creative.
 
-![Viewability](media/viewability.png)
+:::image type="content" source="media/viewability.png" alt-text="Screenshot of Viewability .":::
 
 
 **VPAID Wrapper Functions**
@@ -109,7 +91,7 @@ such as pause, resume, pause on click etc. The VPAID wrapper is also
 responsible for managing click-through URLs and adjusting the volume of
 the video ad according to the volume set on the player.
 
-**VPAID Wrapper Specifications**
+**VPAID Wrapper specifications**
 
 The VPAID wrapper has the following specifications:
 
@@ -120,175 +102,49 @@ The VPAID wrapper has the following specifications:
   tracking events, forwards VPAID Events
 - Desktop web and mobile web measurement
 
-
-
-
-
 ## Reporting - UI
 
 The following metrics are now available in the Advertiser Video
 Analytics Report, Publisher Video Analytics Report, and
-Member Video Analytics Report. (See
-<a href="analytics-reporting.md"
-class="xref">analytics-reporting.html</a> for more information.)
+Member Video Analytics Report. (See [analytics-reporting](../invest/network-analytics-report.md) for more information.)
 
 **Viewability Measurement Metrics**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008ede__entry__1" class="entry">Viewability Metrics</th>
-<th id="ID-00008ede__entry__2" class="entry">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00008ede__entry__1">View-Measured
-Imps</td>
-<td class="entry" headers="ID-00008ede__entry__2">The total number of
-impressions that were measured for viewability.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00008ede__entry__1">Viewability
-Measurement Rate</td>
-<td class="entry" headers="ID-00008ede__entry__2">The percentage of
-impressions measured for viewability out of the total number of
-impressions. (View Measured Imps / Imps)</td>
-</tr>
-</tbody>
-</table>
+| Viewability Metrics          | Definition                                                                                                                 |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| View-Measured Imps           | The total number of impressions that were measured for viewability.                                                        |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
+> [!NOTE]
+> Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of the technical quality of the measurement. For more information, see the [Viewability FAQ](viewability-faq.md).
 
+**Viewability metrics**
 
-<b>Note:</b> Viewability Measurement Rate is
-not directly comparable to other measurement vendors since our total
-impression count is higher. Our measurement rate is not an indicator of
-the technical quality of the measurement. For more information, see the
-<a href="viewability-faq.md" class="xref">Viewability FAQ</a>.
-
-
-
-**Viewability Metrics**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008ede__entry__7" class="entry">Viewability Metrics</th>
-<th id="ID-00008ede__entry__8" class="entry">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00008ede__entry__7">Viewable Imps</td>
-<td class="entry" headers="ID-00008ede__entry__8">The number of measured
-impressions that were viewable, per the IAB Viewability definition,
-which states that 50% of the pixels of a video creative are in-view
-during 2 consecutive seconds.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00008ede__entry__7">Viewability Rate</td>
-<td class="entry" headers="ID-00008ede__entry__8">The percentage of
-impressions that were viewable out of the total number of impressions
-measured for viewability. (Viewed Imps / View Measured Imps)</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Viewability Metrics | Definition                                                                                                                                                                                   |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Viewable Imps       | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a video creative are in-view during 2 consecutive seconds. |
+| Viewability Rate    | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps)                                         |
 
 ## Reporting - API
 
-The following Video viewability metrics are available via the API in the
-<a
-href="xandr-api/network-video-analytics.md"
-class="xref" target="_blank">Network Video Analytics</a>, <a
-href="xandr-api/network-publisher-video-analytics.md"
-class="xref" target="_blank">Network Publisher Video Analytics</a> and
-<a
-href="xandr-api/network-advertiser-analytics.md"
-class="xref" target="_blank">Network Advertiser Video Analytics</a>
-reports:
+The following Video viewability metrics are available via the API in the [Network Video Analytics](../digital-platform-api/network-video-analytics.md)
+, [Network Publisher Video Analytics](../digital-platform-api/network-publisher-video-analytics.md) and [Network Advertiser Video Analytics](../digital-platform-api/network-advertiser-analytics.md) reports:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008ede__entry__13" class="entry">Column</th>
-<th id="ID-00008ede__entry__14" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00008ede__entry__13">imps_viewed</td>
-<td class="entry" headers="ID-00008ede__entry__14">The number of
-measured impressions that were viewable, per the IAB Viewability
-definition, which states that a video impression is viewable if 50% of
-the pixels are in-view during 2 consecutive seconds.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00008ede__entry__13">view_measured_imps</td>
-<td class="entry" headers="ID-00008ede__entry__14">The total number of
-impressions that were measured for viewability.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00008ede__entry__13">view_rate</td>
-<td class="entry" headers="ID-00008ede__entry__14">The percentage of
-impressions that were viewable out of the total number of impressions
-measured for viewability. (Viewed Imps / View Measured Imps)</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00008ede__entry__13">view_measurement_rate</td>
-<td class="entry" headers="ID-00008ede__entry__14">The percentage of
-impressions measured for viewability out of the total number of
-impressions. (View Measured Imps / Imps)</td>
-</tr>
-</tbody>
-</table>
+| Column                | Description                                                                                                                                                                                                |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| imps_viewed           | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that a video impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
+| view_measured_imps    | The total number of impressions that were measured for viewability.                                                                                                                                        |
+| view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps)                                                                                 |
+| view_rate             | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps)                                                       |
 
-The <a
-href="log-level-data/video-events-feed.md"
-class="xref" target="_blank">Video Events Feed</a> now has the the
+
+The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the
 following columns for video viewability:
 
-<table class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"></td>
-<td class="entry"></td>
-</tr>
-<tr class="even row">
-<td class="entry"><code class="ph codeph">view_result</code></td>
-<td class="entry">The Xandr viewability
-measurement result of the impression. Possible values:
-<p>1 = VIEW_MEASURED_VIEWABLE</p>
-<p>2 = VIEW_MEASURED_NON_VIEWABLE</p>
-<p>3 = VIEW_NON_MEASURED</p>
-<p>For non-impression events, this will be NULL.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry"><code
-class="ph codeph">view_non_measurable_reason</code></td>
-<td class="entry">The reason an impression could not be measured for
-viewability. Possible values:
-<p>0 = N/A. The impression was measured for viewability</p>
-<p>1 = SCRIPT_NOT_SERVED. The viewability script was not served with the
-creative. For example, on mobile-app inventory.</p>
-<p>2 = NO_SCRIPT_CALLBACK. The viewability script was served with the
-creative, but no callback/event was received. For example, the user left
-the page before the creative was served.</p>
-<p>3 = TECHNICAL_LIMITATION. The viewability script was served and
-loaded, but was unable to measure for a technical reason. For example, a
-cross-domain iframe with Flash disabled.</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+|                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `view_result`                | The Xandr viewability measurement result of the impression. Possible values: <br>  1 = VIEW_MEASURED_VIEWABLE <br> 2 = VIEW_MEASURED_NON_VIEWABLE <br> 3 = VIEW_NON_MEASURED <br>For non-impression events, this will be NULL.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `view_non_measurable_reason` | The reason an impression could not be measured for viewability. Possible values: <br> 0 = N/A. The impression was measured for viewability <br> 1 = SCRIPT_NOT_SERVED. The viewability script was not served with the creative. For example, on mobile-app inventory. <br> 2 = NO_SCRIPT_CALLBACK. The viewability script was served with the creative, but no callback/event was received. For example, the user left the page before the creative was served. <br> 3 = TECHNICAL_LIMITATION. The viewability script was served and loaded, but was unable to measure for a technical reason. For example, a cross-domain iframe with Flash disabled. |
 
 ## FAQ
 
@@ -340,11 +196,8 @@ creative where VPAID is not allowed, to ensure maximum reach.
 
 **How can I optimize to more highly viewable inventory?**
 
-Viewability measurement is included in the
-<a href="advertiser-video-analytics-report.md"
-class="xref">advertiser-video-analytics-report.html</a> and
-<a href="network-video-analytics-report.md" class="xref">Member Video
-Analytics Report</a> , which provide reporting down to the individual
+Viewability measurement is included in the [advertiser-video-analytics-report](../invest/advertiser-video-analytics-report.md)
+ and [Member Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual
 tag/placement or site domain. This enables clients to update targeting
 to either include or exclude high or poor performing placements.
 

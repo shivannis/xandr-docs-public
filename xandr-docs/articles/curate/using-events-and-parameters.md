@@ -1,12 +1,12 @@
 ---
-title : Using Events and Parameters
+title :  Microsoft Curate - Using Events and Parameters
 description : Learn how after configuring universal pixel, you can add value and use it to identify events, such as adding an item to a shopping cart.  
 ms.date : 11/15/2023
 
 ---
 
 
-# Using events and parameters
+#  Microsoft Curate - Using events and parameters
 
 After you have configured your universal pixel, you can add value by
 configuring it to identify events, such as adding an item to a shopping

@@ -64,11 +64,11 @@ Displays insertion orders associated with the advertiser.
 
 Displays line items associated with the advertiser.
 
-## Viewing child Object details
+## Viewing child object details
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the**Details** pane.
+1. Click the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as
     **Creatives**.
 
@@ -77,9 +77,3 @@ To view child object details:
 - [using-the-buyer-monitoring-grids](../invest/using-the-buyer-monitoring-grids.md)
 - [Explore and Manage Advertisers](explore-and-manage-advertisers.md)
 - [Create an Advertiser](create-an-advertiser.md)
-
-
-
-
-
-

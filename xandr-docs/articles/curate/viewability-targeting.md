@@ -1,12 +1,12 @@
 ---
-title : Viewability Targeting
+title : Microsoft Curate - Viewability Targeting
 description : Learn about a methodology for determining the probability that an ad will be viewable to the user once it is delivered to the page, per the IAB viewability measurement standards.
 ms.date : 11/15/2023
 
 ---
 
 
-# Viewability targeting
+# Microsoft Curate - Viewability targeting
 
 Based on historical viewability data across several dimensions of the ad
 call, Xandr has developed a methodology for

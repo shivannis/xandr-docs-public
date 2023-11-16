@@ -1,12 +1,12 @@
 ---
-title : View Line Item Details
+title : Microsoft Curate - View Line Item Details
 description : Learn how the Line Items Details window views and edits Line Item settings and access different Line Item Objects.  
 ms.date : 11/15/2023
 
 ---
 
 
-# View line item details
+# Microsoft Curate - View line item details
 
 The Line Items Details window lets you view and edit line item settings
 and access troubleshooting tools, essential metrics, performance

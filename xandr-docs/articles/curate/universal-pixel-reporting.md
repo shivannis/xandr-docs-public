@@ -6,7 +6,7 @@ ms.date : 11/15/2023
 ---
 
 
-# Universal pixel reporting
+# Microsoft Curate - Universal pixel reporting
 
 In addition to the activity reporting available from the
 **Universal Pixels** page, a number of

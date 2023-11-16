@@ -1,12 +1,12 @@
 ---
-title : Update Insertion Orders
+title : Microsoft Curate - Update Insertion Orders
 description : Learn how and where to update Insertion Orders. 
 ms.date : 11/15/2023
 
 ---
 
 
-# Update insertion orders
+# Microsoft Curate - Update insertion orders
 
 There are several actions you can take on existing insertion orders to
 update them.
