@@ -81,7 +81,7 @@ The following table provides a description of each status, when the status occur
 
 | Buyer Deal Status | Description | Status Occurs When: | Available Actions |
 |---|---|---|---|
-| **Pending** | Deal not passed in bidstream<br>Not available for targeting<br>Not included in Target All Deals | **Review Preferences** set to **Require Review**. | **Accept** or **Decline** deal. |
+| **Pending** | Deal not passed in bidstream<br>Not available for targeting<br>Not included in **Target All Deals** | **Review Preferences** set to **Require Review**. | **Accept** or **Decline** deal. |
 | **Active** | Deal passed in bidstream<br>Available for targeting, and included in **Target All Deals**. | **Review Preferences** set to **Default Active**.<br>**Pending** deal is accepted.<br>**Inactive** or **Declined** deal set to **Active**. | Set status to **Inactive** or **Declined** |
 | **Declined** | Deal not passed in bidstream<br>Not available for targeting<br>Not included in **Target All Deals** | **Pending** deal is declined.<br>**Active** deal set to **Declined** | Set status to **Active** or **Inactive** |
 | **Inactive** | Deal not passed in bidstream<br>Not available for targeting<br>Not included in **Target All Deals** | **Active** deal set to **Inactive**. | Set status to **Active** or **Declined**. |
@@ -101,11 +101,7 @@ following:
 
 ## Setting groups of deals to active or declined status
 
-While you can change the status of each deal to **Active** or
-**Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you
-have a group of deals that you’d like to set to **Active** or
-**Declined** status, you can check the box next to these deals and click **Accept** in the Select drop-down to
-set them to **Active** status, or **Decline** to set them to
+While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the Select drop-down to set them to **Active** status, or **Decline** to set them to
 **Declined** status [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals).
 
 ## Assigning a deal alias

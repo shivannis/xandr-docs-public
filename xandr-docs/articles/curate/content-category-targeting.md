@@ -41,9 +41,3 @@ By default, your campaign will target all custom categories. However, you can na
     When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
 1. Click **Add**.
-
-## Related topics
-
-- [Content Categories](../monetize/content-categories.md)
-- [Manage Custom Content Categories](../monetize/manage-custom-content-categories.md)
-- [Create a Campaign](../monetize/create-a-campaign.md)
