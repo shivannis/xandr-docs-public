@@ -12,44 +12,44 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 1. On the **Advertiser Details** screen, select **Create New \>  Insertion Order**.
 
-> [!NOTE]
-> You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
+   > [!NOTE]
+  > You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
 
 1. Fill out the basic setup, which includes information such as name and budget and billing details. For more information on these
    settings, see [Basic Setup](create-an-insertion-order.md#basic-setup).
 
-a. Enter a name for the insertion order and optionally enter an external code and/or a billing code.
+    a. Enter a name for the insertion order and optionally enter an external code and/or a billing code.
 
-b. Select a state.
+    b. Select a state.
 
-> [!TIP]
-> To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
+   > [!TIP]
+   > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy has been set up and verified.
 
-  c. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
+    c. Optionally, set a currency. If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
-> [!TIP]
-> As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+   > [!TIP]
+   > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
- d. Select a viewability standard.
+    d. Select a viewability standard.
 
- e. Select a budget type.
+    e. Select a budget type.
 
- f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](create-an-insertion-order.md#billing-periods) and [pacing](create-an-insertion-order.md#pacing).
- 
- g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
+    f. Optionally, set up billing periods and pacing. For more information, see [Billing Periods](create-an-insertion-order.md#billing-periods) and [pacing](create-an-insertion-order.md#pacing).
 
-> [!NOTE]
-> This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
+    g. Optionally, enable political advertising on this insertion order and identify whether this advertising takes place on the federal or state or local level, or both. For more information, see [Political Advertising](create-an-insertion-order.md#political-advertising).
 
-3. Set the supply strategy, determining the inventory type and inventory lists for targeting. These settings can be further refined on the line item. For more information, see [Inventory Lists](inventory-lists-ali-only.md).
+   > [!NOTE]
+   > This option will only appear if you have already declared that this advertiser conducts political advertising on the [advertiser](create-an-advertiser.md).
 
-    a. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices). 
-    b.  Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
+1. Set the supply strategy, determining the inventory type and inventory lists for targeting. These settings can be further refined on the line item. For more information, see [Inventory Lists](inventory-lists-ali-only.md).
+
+   a. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
+
+    b. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
   
-     Allowlists include the Xandr Inventory List, a collection of inventory that Xandr has selected based on demonstrated
-  demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
+    Allowlists include the Xandr Inventory List, a collection of inventory that Xandr has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
 
-     c. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Xandr blocklist is applied by default.
+   c. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Xandr blocklist is applied by default.
 
 1. If this insertion order contains line items for political
     a. advertising, fill out the [Political Advertising](create-an-insertion-order.md#political-advertising) section.
@@ -57,7 +57,7 @@ b. Select a state.
 1. Optionally, associate existing augmented line items with the insertion order.
 
    > [!IMPORTANT]
-> Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
+   > Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
 
 1. Optionally, add comments to the insertion order.
 1. Click **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
@@ -70,7 +70,7 @@ In the Basic Setup section, you enter basic information about the insertion orde
 
 The name for the insertion order. You will later be able to search for and report on the insertion order using this name.
 
-**External Code**  (optional)
+**External Code** (optional)
 
 An external code used for reporting. (Xandr also
 assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
@@ -91,8 +91,9 @@ The state of the insertion order. If "Active", child line items and campaigns wi
 
 If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
-As a best practice, align currency
-to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
+> [!TIP]
+> As a best practice, align currency
+> to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
 **Viewability Standard**
 
@@ -108,12 +109,12 @@ Select a budget type:
   revenue-based line items to this insertion order.
 - **Impression** - use to associate only
   impression-based line items to this insertion order.
-- **Flexibl**e - use to associate both impression-based and revenue-based line items to this insertion order. All budgets must be set on the line item object when using the
+- **Flexible** - use to associate both impression-based and revenue-based line items to this insertion order. All budgets must be set on the line item object when using the
   **Flexible** budget type.
 
-> [!WARNING]
-> You cannot change the **Budget Type** once you save the
-> insertion order.
+  > [!WARNING]
+  > You cannot change the **Budget Type** once you save the
+  > insertion order.
 
 ### Billing periods
 
@@ -133,9 +134,9 @@ insertion order's billing periods.
   You may set a budget for each billing period (**Set Budgets**) or not specify a budget (**Unlimited Budget**). If you do not specify a budget at the insertion order level, you can still specify budgets on
   the line item.
 
-> [!IMPORTANT]
-> - You cannot set a start date in the past. 
-> - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
+  > [!IMPORTANT]
+- > - You cannot set a start date in the past. 
+  > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
 
 ### Pacing
 
@@ -147,15 +148,14 @@ Options are:
 
 - **Set pacing on the Line Item**
   
-> [!WARNING]
-> If you select this option, be sure to set your budget pacing on the line item level. Otherwise, severe overspend can occur.
+  > [!WARNING]
+  > If you select this option, be sure to set your budget pacing on the line item level. Otherwise, severe overspend can occur.
 
-- **Use Daily Budget**- Set a custom daily budget to define your own
-  pacing.
+- **Use Daily Budget**- Set a custom daily budget to define your own pacing.
 
- > [!IMPORTANT]
-> You can set budgets at the line item level,
-> but your insertion order budget takes precedence. When your insertion order budget runs out, all objects under the insertion order will stop buying impressions, whether or not they have reached their own budget limits.
+   > [!IMPORTANT]
+   > You can set budgets at the line item level,
+   > but your insertion order budget takes precedence. When your insertion order budget runs out, all objects under the insertion order will stop buying impressions, whether or not they have reached their own budget limits.
 
 ## Political advertising
 
@@ -188,7 +188,7 @@ We reserve the right to implement additional screening at any time.
 | **State, Province, or Region** | State, province, or region of the person, group, organization, or business that is advertising. |
 | **ZIP or Postal Code** | ZIP or postal code of the person, group, organization, or business that is advertising. |
 | **Country** | Country of the person, group, organization, or business that is advertising. |
-| **Phon**e | Phone number of the person, group, organization, or business that is advertising. |
+| **Phone** | Phone number of the person, group, organization, or business that is advertising. |
 | **Independent Expenditure Committee** | Select this if any ads are being paid for by an independent expenditure committee: a political committee that makes only independent expenditures; that is, it spends money on political communications that expressly advocate the election or defeat of a clearly identified candidate and does not coordinate with a candidate, a candidate’s authorized committee, or an agent of the candidate. |
 | **Treasurer Name** | Treasurer for the committee purchasing the ads, or the person whose role mostly closely resembles a treasurer. |
 | **State Registration Form** | New York and New Jersey require copies of state registration forms from independent expenditure committees making purchases. Creatives won't serve in those states until the form is uploaded. |

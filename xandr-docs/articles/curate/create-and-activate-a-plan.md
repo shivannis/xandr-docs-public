@@ -20,7 +20,9 @@ This page provides instructions on creating and activating a plan for your curat
 
 1. If you clicked **Full Flight**, select start and end dates on the **Setup** tab in the left pane.
 
-1. In the **Setup** pane, enter your **CPM**, **Advertiser**, **Supply**, and **Ad Type** details. When you click **Generate Plan**, Planner populates the right pane with information about the available inventory and predicted delivery based on your pre-targeting settings.
+1. In the **Setup** pane, enter your **CPM**, **Advertiser**, **Supply**, and **Ad Type** details.
+
+   When you click **Generate Plan**, **Planner** populates the right pane with information about the available inventory and predicted delivery based on your pre-targeting settings.
 
 1. If your account is enabled to take a margin, you can check **Margin Eligible** to limit the available inventory only to inventory that is margin eligible.
 
@@ -30,5 +32,5 @@ This page provides instructions on creating and activating a plan for your curat
 
 1. To activate a plan by creating a new deal line item, click **Create Deal Line Item**. Curate opens the deal line item settings for a new line item based on the information in your plan. Your new deal line item won't serve until you have set it to be active (it will be inactive by default) and saved it.
 
-  > [!NOTE]
-> You can also activate a plan from the **Planning** screen's list view by selecting the plan and clicking **Create Deal Line Item** at the top right of the screen.
+   > [!NOTE]
+   > You can also activate a plan from the **Planning** screen's list view by selecting the plan and clicking **Create Deal Line Item** at the top right of the screen.

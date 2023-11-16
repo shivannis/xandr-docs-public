@@ -29,8 +29,8 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Time Zone** - Select the advertiser's time zone.
   
- > [!NOTE]
-> To apply a time zone change to child objects, make sure the checkbox is selected. If it is not selected, the time zone change made to the advertiser will not apply to its child objects, resulting in a child object's budget being reset to a different time zone than the advertiser.
+  > [!NOTE]
+  > To apply a time zone change to child objects, make sure the checkbox is selected. If it is not selected, the time zone change made to the advertiser will not apply to its child objects, resulting in a child object's budget being reset to a different time zone than the advertiser.
 
 - **Currency** - Select the currency for the advertiser. Typically, this defines the billing currency. This currency will be assigned to all new insertion orders and line items under the advertiser unless a different currency is set on the insertion order or line item level. For more information, see [Currency Support](currency-support.md).
 
@@ -48,8 +48,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 ## Step 3. Create a political advertising details template (optional)
 
 > [!NOTE]
-> The Political Advertising Details Template is only enabled when you have specified that you are running
-> political advertising and that you would like to create a political advertising details template.
+> The Political Advertising Details Template is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
 
 The political advertising details entered here will automatically populate all new political advertising insertion orders that require
 this information. You can modify the details for an individual insertion order at any time. You must still certify that the details you have entered are correct for each individual insertion order.
@@ -92,19 +91,20 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 - **Reporting Labels** - Associate a Salesperson, Account Manager, or Advertiser Type to the advertiser. This enables you to report on performance by these labels in Member
   reporting. For example, you might associate an Account Manager with each advertiser and then run a report grouped by Account Manager to find out which managers are responsible for which advertisers or compare advertiser performance across managers.
 - **Billing Information** - Change the information that appears in advertiser and/or insertion order-specific invoices. By default, your member billing information will appear in the "Bill To" section of those invoices.
-  - To show your advertiser's name and address in the "Bill To" section instead, complete the fields in the    **Billing Information** section. The **Billing Name** field may contain a maximum of 50 characters.
+  - To show your advertiser's name and address in the "Bill To" section instead, complete the fields in the **Billing Information** section. The **Billing Name** field may contain a maximum of 50 characters.
   - To show just the advertiser's name with the member's address, enter the name but leave the rest of the fields blank. For more about receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](../monetize/understanding-your-invoice.md).
 
-You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
+  > [!TIP]
+  > You may also choose to include a billing code on your insertion order-specific invoices. For more details, see [Create an Insertion Order](create-an-insertion-order.md).
 
 - **Brand Settings** - You can set a default brand and offer category to be assigned to all creatives added under this advertiser. If you submit a creative for Xandr audit, the audit team will validate and, when necessary, alter these settings.
 - **Exclusions** - for publishers using Curate's [AST](../seller-tag/seller-tag.md) - Managed publishers can conduct a single auction for multiple ad slots on a page. Competitive exclusions ensure that creatives from competitive brands (e.g., Coke and Pepsi) and competitive offer categories never serve alongside each   other. You can define up to 25 brand exclusions and up to 25 offer category exclusions.
-- **Insertion Orders** - Select this check box to ensure that all line items under this advertiser also have an insertion order **(Advertiser \> Insertion Order \> Line Items)**. Insertion orders allow you to better represent your financial relationship with an advertiser. This check box must be selected if you want to use [Working with
-  Insertion Orders](working-with-insertion-orders.md).
+- **Insertion Orders** - Select this check box to ensure that all line items under this advertiser also have an insertion order **(Advertiser \> Insertion Order \> Line Items)**. Insertion orders allow you to better represent your financial relationship with an advertiser. This check box must be selected if you want to use [Working with Insertion Orders](working-with-insertion-orders.md).
 
-> [!WARNING]
-> Warning regarding preexisting line items
-> if you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
+  > [!WARNING]
+  > Warning regarding preexisting line items
+  > >
+  >If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
 
 ## Step 5. Save the advertiser
 
