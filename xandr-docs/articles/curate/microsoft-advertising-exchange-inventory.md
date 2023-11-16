@@ -14,11 +14,11 @@ Outlook is a free, web-based mail service provided by Microsoft. It has replaced
 
 ### Sample Outlook inventory
 
-Standard banner skyscraper (160x600) creatives. These creatives also appear on the right-hand sidebar of the [outlook.com](http://www.outlook.com/) webmail service.
+Standard banner skyscraper (160x600) creatives. These creatives also appear on the right-hand sidebar of the [outlook.com](https://www.outlook.com/) webmail service.
 
 ### How to target Outlook inventory
 
-Target Outlook inventory through member 280 in the [outlook.com](http://www.outlook.com/) domain.
+Target Outlook inventory through member 280 in the [outlook.com](https://www.outlook.com/) domain.
 
 ## Windows apps
 
@@ -79,7 +79,7 @@ For more information regarding how to target Windows App inventory, formats, spe
 
 ## MSN
 
-MSN is Microsoft's portal for best in news, sport, entertainment and lifestyle. [MSN](http://www.msn.com) inspires consumers through trusted, best in class content, with high-value experiences through personalized content synchronized across devices.
+MSN is Microsoft's portal for best in news, sport, entertainment and lifestyle. [MSN](https://www.msn.com) inspires consumers through trusted, best in class content, with high-value experiences through personalized content synchronized across devices.
 
 ### MSN creative details
 
