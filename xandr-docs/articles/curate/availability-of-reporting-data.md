@@ -11,7 +11,7 @@ This page describes how, when, and for how long reporting data is or becomes ava
 > [!IMPORTANT]
 > If you are noticing any latency in the availability of your reporting data, first check if there are any known outages at [Xandr Status](https://status.xandr.com).
 
-## Data Processing
+## Data processing
 
 Reporting data is generally available in the UI and API within two hours of the close of a given hour. All data in a given hour is aggregated across the entire platform at once. Therefore, timing for nearly all reports is not specific to certain objects or fields. However, a few reports run on different schedules.
 
