@@ -1,109 +1,43 @@
 ---
-Title : Migration to Microsoft Identity Platform Login
-Description : This documentation provides step by step guide on how to migrate
+title: Microsoft Curate - Migration to Microsoft Identity Platform Login
+description: In this article, find step-by-step instructions on how to migrate the existing authentication process in Xandr products to Microsoft Identity Platform.
 ms.date : 10/28/2023
-existing authentication process in Xandr products to Microsoft Identity
-Platform.
 ---
 
+# Microsoft Curate - Migration to Microsoft Identity Platform login
 
-# Migration to Microsoft Identity Platform Login
+This documentation provides step by step instructions on how to migrate existing authentication process in Xandr products to Microsoft Identity Platform.
 
+1. Go to the product login screen using the [Microsoft Curate Login url](https://curate.xandr.com/login).
 
+1. Click on the **Sign in with Microsoft** button.
 
-This documentation provides step by step guide on how to migrate
-existing authentication process in Xandr products to Microsoft Identity
-Platform.
+    :::image type="content" source="media/a.png" alt-text="A screenshot of the Microsoft Curate login screen.":::
 
+1. In the **Action Required: Create a Microsoft Account** screen, you can:
 
+    - click on the **Create Microsoft Account** button and proceed.
 
-1.  Go to product login screen using
-    <a href="https://curate.xandr.com/login" class="xref"
-    target="_blank">Curate Login url</a>.
+    - click on the **Remind me tomorrow** to delay the migration process.
 
-2.  Click on Sign in with Microsoft
-    button.
+    > [!IMPORTANT]
+    > This option to delay the migration is available till 16 June, 2023 and a countdown is displayed next to **Remind me tomorrow** to show how many days are remaining till then. Post June 16, you will only have the option to click on **Create Microsoft Account**.
 
-    ![A](media/a.png)
-    
+    :::image type="content" source="media/b.png" alt-text="A screenshot of the Action Required: Create a Microsoft Account screen.":::
 
-3.  In Action Required: Create a
-    Microsoft Account screen, you can:
-    
+1. In the **Sign in** page, enter Email ID associated with your Xandr account login and click **Next**. If you have registered a different email ID for Microsoft products, ensure that the Xandr platform account matches the email used to log in to Microsoft. If they do not match, contact the designated person with the role of **User Manager** from your organization to do the needful or you can raise a ticket on the [Xandr Customer Support Portal](https://help.xandr.com/s/login/).
 
-    - click on Create Microsoft
-      Account button and proceed.
+    :::image type="content" source="media/c.png" alt-text="A screenshot of the Microsoft sign in page.":::
 
-    - click on Remind me tomorrow to
-      delay the migration process.
+    > [!NOTE]
+    > If you do not have a Microsoft account, you can create one using the **Create one!** link in the page.
 
-      
+1. Enter the password and click on **Sign in** to proceed.
 
-      <b>Note:</b> This option to delay the
-      migration is available till 16 June, 2023 and a countdown is
-      displayed next to Remind me
-      tomorrow to show how many days are remaining till then.
-      Post June 16, you will have the option to click on
-      Create Microsoft Account only.
+    :::image type="content" source="media/d.png" alt-text="A screenshot of the password field on the Microsoft sign in page.":::
 
-      
-         ![B](media/b.png)
-    
+1. If your organization requires IT Admin approval to use the **Sign in with Microsoft** method to log into Microsoft Curate, then follow up with your organization's IT team.
 
-    
+1. If your organization has implemented Multi Factor Authention (MFA) process, you will be presented with MFA challenge. Use the [Microsoft Authenticator App](https://www.microsoft.com/en-in/security/mobile-authenticator-app) to do the needful and enter the One-time password code displayed in the app to login to your account.
 
-4.  In the Sign In page, enter
-    Email ID associated with your Xandr account login and click
-    Next. If your have registered a
-    different email ID for Microsoft products, ensure that Xandr
-    platform account matches the email used to login to Microsoft. If
-    they do not match, contact the designated person with the role of
-    User Manager from your organization to do the needful or you can
-    raise a ticket in
-    <a href="https://help.xandr.com/" class="xref" target="_blank">Xandr
-    Support portal</a>.
-
-     ![C](media/c.png)
-   
-
-    
-
-    
-
-    <b>Note:</b> If you do not have a
-    Microsoft account, you can create using
-    Create one! link in the page.
-
-    
-
-    
-
-5.  Enter the password and click on Sign
-    in to proceed.
-
-     ![D](media/d.png)
-    
-
-6.  If your organization requires IT Admin approval to use the
-    Sign in with Microsoft method to
-    log into Microsoft Curate, then follow up with your organization's IT
-    team.
-
-7.  If your organization has implemented Multi Factor Authention (MFA)
-    process, you will be presented with MFA challenge. Use <a
-    href="https://www.microsoft.com/en-in/security/mobile-authenticator-app"
-    class="xref" target="_blank">Microsoft Authenticator App</a> to do
-    the needful and enter the One-time password code displayed in the
-    app to login to your account.
-
-8.  Post successful authentication, you will be directed to the landing
-    page of the Monetize. This marks the succesful completion of the
-    migration process. Going forward, when you logs in to the
-    application, you will be directed to sign in with Microsoft Identity
-    Platform.
-
-
-
-
-
-
+1. Post successful authentication, you will be directed to the landing page of Microsoft Curate. This marks the succesful completion of the migration process. Going forward, when you log in to the application, you will be directed to sign in with Microsoft Identity Platform.
