@@ -12,7 +12,7 @@ This document outlines some scenarios where questions may arise in the minds of 
 
 You can register for a free Microsoft Personal Account with any existing email you have access to. Go to [this link](https://account.microsoft.com/account) to register or manage your Microsoft Account.
 
-If you company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
+If your company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 
 - [Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access/microsoft-entra-id)(formerly Azure Active Directory)
 - [Single Sign On](/entra/identity/enterprise-apps/what-is-single-sign-on)
