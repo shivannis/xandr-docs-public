@@ -22,7 +22,7 @@ You add network users in the **Network** section of Invest DSP.. Click on your M
 From the **User Details** tab, enter the user's **Contact Information**.
 
 > [!NOTE]
-> The email ID enetered here will be the primary username for signing into the Xandr products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Xandr platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
+> The email ID is enetered here will be the primary username for signing into the Xandr products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Xandr platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 > [!NOTE]
 > If the State is set to Inactive, the user will not be able to log in.
 
@@ -30,9 +30,8 @@ From the **User Details** tab, enter the user's **Contact Information**.
 
 Within the **Contact Information** section you'll also find options for numeric formatting. From the **Reporting Decimal Format** and **Numerical Format** dropdowns, select the formats that are conventional in the user's geographical location. Numbers throughout Curate will be displayed in the format chosen here for this user.
 
-- **Reporting Decimal Format** - Select whether a **Point** or Comma should be used for decimals when viewing numbers in reports.
-  
-> [!NOTE]
+- **Reporting Decimal Format** - Select whether a **Point** or **Comma** should be used for decimals when viewing numbers in reports. 
+   > [!NOTE]
 > When the Comma format is selected, users will not be able to export a report using CSV format.
 
 - **Numerical Format** - Select the thousand separator and decimal mark for numbers everywhere in Curate except in reporting. This setting controls both how numbers appear to the user as well as how numbers can be entered by the user.

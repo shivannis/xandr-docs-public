@@ -36,9 +36,9 @@ Piggybacking allows you to chain one or more pixels to the new segment pixel. Wh
 
 > [!IMPORTANT]
 > Add piggyback pixels with the following in mind:
-1. >If you are using the feature that adds users to segments when they view or click on a creative ("On click, add user to the following segments"), piggyback pixels for these segments will NOT fire.
-1. >Image pixels can only piggyback off other image pixels, and JavaScript pixels can only piggyback off other JavaScript pixels.
-1. >Image pixels can have only one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.
-1. >There are no character limits to piggybacked pixel URLs in Curate, but browser/server URL limits may apply.
+- >If you are using the feature that adds users to segments when they view or click on a creative ("On click, add user to the following segments"), piggyback pixels for these segments will NOT fire.
+- >Image pixels can only piggyback off other image pixels, and JavaScript pixels can only piggyback off other JavaScript pixels.
+- >Image pixels can have only one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.
+- >There are no character limits to piggybacked pixel URLs in Curate, but browser/server URL limits may apply.
 
 On the Piggyback Pixels tab, you can input the URL of an image or JavaScript pixel to piggyback off the segment pixel.

@@ -120,7 +120,7 @@ It is recommended to **NOT** use Device Type for targeting. Retain the "All" def
 >To report on delivery for each publisher, you can select "publisher" as a dimension in an analytics report.
 > The best way to distinguish between Windows 10 Desktop Inventory and Windows Phone inventory is to use creative size targeting or OS (extended) targeting.
 
-## Best Practice for reach
+## Best practice for reach
 
 To maximize reach across Windows App inventory, we recommend targeting both Supply Type "Mobile App" and “Web” inventory within Microsoft Advertising Exchange without additional parameters such as "Device Type." This is because there are certain instances where Xandr does not receive this information from the device SDK and applications are presented as Sites referencing the Windows Store URL.
 
@@ -150,6 +150,6 @@ If you are using a third-party ad server, you will be tracking
 conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely
 upon a specific attribution vendor that is not supported today, please contact your Xandr Account Representative.
 
-## More Questions?
+## More questions?
 
 If you have any further questions about buying Windows App Inventory, please contact your Xandr account representative.

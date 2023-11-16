@@ -15,7 +15,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 > [!NOTE]
 > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
-## Getting to the deals Screen
+## Getting to the Deals screen
 
 To reach the **Deals with Sellers** screen, select select **Partners > Deals** and select the **Sellers** tab.
 
@@ -64,7 +64,8 @@ When you select **Decline**, the deal is:
 - Not eligible for targeting
 - Not passed to the bidstream
 
-Note: You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](control-your-deals-with-sellers.md#managing-deal-status)).
+> [!NOTE]
+> You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](control-your-deals-with-sellers.md#managing-deal-status)).
 
 To accept or decline one or more new deals:
 
