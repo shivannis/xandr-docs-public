@@ -10,7 +10,8 @@ description: The article provides an overview of inventory, discussing its avail
 
 MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class premium content from top media providers, with high-value experiences through personalized content synchronized across devices.
 
-Packages bundled with Microsoft user data are available through the packages marketplace. See [Buying Microsoft Deals](buying-microsoft-deals.md).
+> [!TIP]
+> Packages bundled with Microsoft user data are available through the packages marketplace. See [Buying Microsoft Deals](buying-microsoft-deals.md).
 
 ## Availability and volume
 

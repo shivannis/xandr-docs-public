@@ -79,7 +79,7 @@ information on uploading a hosted image as a creative, see
 
 To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **PubID** via Standard Line Item - Campaign:
 
-1. In the **Device and Supply Type** section, select all device types to target.
+1. In the **Device and Supply Type** section, select **all device types** to target.
 1. Select **Default** to target **Web**, **Mobile Web**, and **App Placements**.
 1. In the **Inventory** section, click **Edit**.
 1. On the **3rd Party Inventory \> **Publishers & Categories**
