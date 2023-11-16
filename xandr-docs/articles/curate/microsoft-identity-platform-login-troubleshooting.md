@@ -15,7 +15,7 @@ You can register for a free Microsoft Personal Account with any existing email y
 If you company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 
 - [Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access/microsoft-entra-id)(formerly Azure Active Directory)
-- [Single Sign On](/identity/enterprise-apps/what-is-single-sign-on)
+- [Single Sign On](/entra/identity/enterprise-apps/what-is-single-sign-on)
 
 ## After logging into a Xandr product, I receive an error saying my email does not match any accounts and I don't have access
 
