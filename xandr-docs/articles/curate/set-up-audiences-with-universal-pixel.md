@@ -32,7 +32,7 @@ To configure an audience:
     The audience segment will be displayed on the **Audiences** tab of the **Universal Pixels** page, and will be available for targeting by both name and segment ID in the **Audience and Location Targeting** settings of your line items.
     You can see audience segment activity updating on the **Audiences** tab as Curate collects data about your segments.
 
-## Related Topics
+## Related topics
 
 - [Set Up Conversions with Universal Pixel](set-up-conversions-with-universal-pixel.md)
 - [Universal Pixel Rule Conditions](universal-pixel-rule-conditions.md)
