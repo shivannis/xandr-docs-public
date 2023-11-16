@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page defines viewability metrics that are available and best practices for making optimal use of them.
 
-Xandr provides **always-on**, **free**, **reliable** and **independent** ad-viewability measurement to all participants of the internet advertising industry. Viewability improves the performance and quality of internet advertising.
+Xandr provides **always-on**, **free**, **reliable**, and **independent** ad-viewability measurement to all participants of the internet advertising industry. Viewability improves the performance and quality of internet advertising.
 
 ## Viewability definitions
 
@@ -68,7 +68,7 @@ For more information, see [Log-Level Data Feeds](../log-level-data/log-level-dat
 
 ## Best practices
 
-### Viewable imps and viewability rate
+### Viewable Imps and Viewability Rate
 
 If you select **Viewable Imps** and **Viewability Rate**, it is recommended that you add **View-Measured Imps** as well.
 

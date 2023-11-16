@@ -65,8 +65,8 @@ Data retention period for this report is 30 days.
 | Column | Filter? | Description |
 |:---|:---|:---|
 | Buyer Member | Yes | The ID and name of the member whose advertiser purchased the impression. |
-| Buyer Seat Name | No | The display name for the buyer seat code |
-| Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression |
+| Buyer Seat Name | No | The display name for the buyer seat code. |
+| Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression. |
 | Deal | Yes | The deal associated with the impression. |
 | Ask Price | No | The ask price for the deal. |
 | Start Date | No | The day and time when the deal starts being available to the buyer. |

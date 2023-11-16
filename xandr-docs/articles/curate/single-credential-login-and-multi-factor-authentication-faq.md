@@ -48,7 +48,7 @@ credential and MFA authentication credentials to access all of their user accoun
   - Uppercase letters (A-Z)
   - Numbers (0-9)
   - Special Characters (for example, !@#$%^&\*)
-- No more than 2 identical characters in a row (for example, "aaa" not allowed)
+- No more than 2 identical characters in a row (for example, "aaa" not allowed).
 
 ## When does the single credential login and multi-factor authentication password expire?
 

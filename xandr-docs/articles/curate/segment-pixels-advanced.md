@@ -50,13 +50,13 @@ https://ib.adnxs.com/px?id=[ID]&remove=[Seg IDs]&t=2
 Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be
 JavaScript. If a piggyback pixel is JavaScript, the parent pixel should be JavaScript as well.
 
-An image pixel looks like this, with a t=2 parameter:
+An image pixel looks like this, with a `t=2` parameter:
 
 ``` pre
 <img src="media/seg?add=11837&t=2" width="1" height="1" /> 
 ```
 
-A JavaScript pixel looks like this, with a t=1 parameter:
+A JavaScript pixel looks like this, with a `t=1` parameter:
 
 ``` pre
 <script src="https://ib.adnxs.com/seg?add=11837&t=1" type="text/javascript"></script> 
@@ -72,12 +72,12 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 | Field | Meaning | Example |
 |:---|:---|:---|
 | `add` | Comma-separated segments to add for the user. | `add=37,28,12` |
-| add_code | Comma-separated list of segment codes to add for the user.<br><br>**Note:** Member parameter is required when using codes. Codes are case-sensitive. | `add_code=auto,travel&member=3` |
-| `remove` | Comma-separated segments to remove for the user. | remove=14 |
+| `add_code` | Comma-separated list of segment codes to add for the user.<br><br>**Note:** Member parameter is required when using codes. Codes are case-sensitive. | `add_code=auto,travel&member=3` |
+| `remove` | Comma-separated segments to remove for the user. | `remove=14` |
 | `remove_code` | Comma-separated list of segment codes to remove for the user.<br><br>**Note:** Member parameter is required when using codes. Codes are case-sensitive. | `remove_code=auto,travel&member=3` |
 | `member` | ID of member owning segment id/code. | `member=5` |
 | `redir` | A redirect URL used to piggyback another pixel. | `redir= https://ad.yieldmanager.com/pixel?id=1243` |
-| `value` | A user-defined field with a positive integer value that can be targeted in a line item.<br>The word "value" should not be implemented as a querystring parameter. Instead, implement this as a colon (:) after the segment ID. An example can be found in the column to the right.<br><br>**Note:** If the user is being added to multiple segments in the call, the "value" parameter will apply to all the segments in the call. To apply values to individual segments in a multi-segment call, instead put a ":" after the segment ID. For example:<br>`https://ib.adnxs.com/seg?add=[seg_id_1]:[seg1value],[seg_id_2]:[seg2value],[seg_id_3]:[seg3value]`<br>The maximum accepted value is 2147483647. (If a value above this is included, there may be behavior unpredictability such as the pixel fire not processing. Therefore, the user will not be added to the segment. Other times, it will be processed, however the value set will be much smaller than what was passed.)<br><br>**Value Use Scenario:**<br>The value field can be utilized to indicate the likelihood of a user doing something.<br>For example, we can use values to indicate the likelihood of a user purchasing an iPhone:<br>add=1234:1 -> (low)<br>add=1234:2 -> (medium)<br>add=1234:3 -> (high)<br>Instead of creating three different segments, you can utilize the value field to differentiate the level of a user's interest to buy.<br>However, you would still have to identify how the values would be determined/categorized (for instance, if a user placed the iPhone into their shopping cart but they didn't actually buy it, that could equate to value 3). You would have to subjectively distinguish what separates one value from another. | `add=1234:65` |
+| `value` | A user-defined field with a positive integer value that can be targeted in a line item.<br>The word "value" should not be implemented as a querystring parameter. Instead, implement this as a colon (:) after the segment ID. An example can be found in the column to the right.<br><br>**Note:** If the user is being added to multiple segments in the call, the "value" parameter will apply to all the segments in the call. To apply values to individual segments in a multi-segment call, instead put a ":" after the segment ID. For example:<br>`https://ib.adnxs.com/seg?add=[seg_id_1]:[seg1value],[seg_id_2]:[seg2value],[seg_id_3]:[seg3value]`<br>The maximum accepted value is 2147483647. (If a value above this is included, there may be behavior unpredictability such as the pixel fire not processing. Therefore, the user will not be added to the segment. Other times, it will be processed, however the value set will be much smaller than what was passed.)<br><br>**Value Use Scenario:**<br>The value field can be utilized to indicate the likelihood of a user doing something.<br>For example, we can use values to indicate the likelihood of a user purchasing an iPhone:<br><br>add=1234:1 -> (low)<br>add=1234:2 -> (medium)<br>add=1234:3 -> (high)<br><br>Instead of creating three different segments, you can utilize the value field to differentiate the level of a user's interest to buy.<br><br>However, you would still have to identify how the values would be determined/categorized (for instance, if a user placed the iPhone into their shopping cart but they didn't actually buy it, that could equate to value 3). You would have to subjectively distinguish what separates one value from another. | `add=1234:65` |
 | `other` | A user-defined, page-level segment modifier value. This should only be used for [Segment Modifier Testing Guidelines](../monetize/segment-modifier-testing-guidelines.md) integrations (see Page-Level Modifiers on that page). | `other=2` |
 
 ## Examples

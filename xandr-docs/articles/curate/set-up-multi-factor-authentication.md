@@ -21,7 +21,7 @@ This task explains how to set up your MFA account.
 
 1. A recovery code screen is displayed. In the event that you need to log in without your device, you will need this recovery code. Note this code, and keep it somewhere safe.
 
-1. Click the arrow \> to continue.
+1. Click the arrow **\>** to continue.
 
     A notification is displayed that you have successfully set up multi-factor authentication.
 
