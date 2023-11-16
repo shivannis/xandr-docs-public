@@ -1,10 +1,10 @@
 ---
-title: Traffic Quality
+title: Microsoft Curate - Traffic Quality
 description: This article provides tips for dealing with suspicious traffic and answers frequently asked questions about traffic quality.
 ms.date: 11/15/2023
 ---
 
-# Traffic quality
+# Microsoft Curate - Traffic quality
 
 Xandr makes every effort to search for sellers, publishers, placements, or domains that are seeing illegitimate conversion or click rates. We continue to improve the automated and manual processes of analysis by which we patrol the inventory that runs through our platform. If you have specific questions on how our Traffic Quality team operates, please reach out to your Xandr representative.
 
@@ -18,7 +18,7 @@ If you believe that you are serving on inventory with artificially inflated perf
 
 ### Step 1. Provide a high-level description of the issue
 
-- What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
+What is the issue and what objects does it affect? For example, which advertisers or campaigns are affected?
 
 ### Step 2. Determine the time range of the incident
 
@@ -38,7 +38,7 @@ If you believe that you are serving on inventory with artificially inflated perf
 
 ### Step 5. Run a Site Domain Performance report and note the sites where the behavior is happening
 
-- If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
+If the behavior is specific to a limited set of domains, inspect the domains to see if there is an explanation.
 
 ### Step 6. Send your findings to the support team
 

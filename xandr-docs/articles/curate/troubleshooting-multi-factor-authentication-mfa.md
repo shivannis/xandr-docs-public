@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting Multi-Factor Authentication (MFA)**
+title: Microsoft Curate - Troubleshooting Multi-Factor Authentication (MFA)
 description: This article provides solutions to the most common issues associated with MFA. 
 ms.date: 11/15/2023
 ---
 
-# Troubleshooting Multi-Factor Authentication (MFA)
+# Microsoft Curate - Troubleshooting Multi-Factor Authentication (MFA)
 
 You can find answers to the most common issues associated with MFA.
 
@@ -18,14 +18,14 @@ Some users are reporting that after entering their one-time password they are ge
 > The actual steps will vary depending on the user's computer, mobile device and MFA app.
 
 1. Check the clock time in their computer and mobile device. Most likely it will be different by a number of minutes.
-2. Locate the CLOCK settings on your mobile device and follow the instructions mentioned in the below help topics according to your device platform:
+1. Locate the CLOCK settings on your mobile device and follow the instructions mentioned in the below help topics according to your device platform:
     1. iPhone: [Change the date and time on iPhone](https://support.apple.com/guide/iphone/set-the-date-and-time-iph65f82af3e/ios)
-    2. Android: [How to fix the incorrect time on your Android phone](https://www.androidcentral.com/why-wont-my-phone-keep-right-time)
+    1. Android: [How to fix the incorrect time on your Android phone](https://www.androidcentral.com/why-wont-my-phone-keep-right-time)
 
     > [!NOTE]
     > You may have to disable **Set Time Automatically** (or something similar depending on your device) to prevent this issue from happening in the future.
 
-3. After both devices' clocks are in sync, try to authenticate once more using a **new** one-time code.
+1. After both devices' clocks are in sync, try to authenticate once more using a **new** one-time code.
 
 ## MFA authentication timed out
 
@@ -57,6 +57,6 @@ Many applications (Xandr and other vendors, web/desktop/mobile) require users to
 
 **Solution**: Most MFA authentication apps - NOT the individual accounts - should allow a user to enter EDIT mode where they can rename each individual MFA account to something more meaningful than the name given by the MFA authenticator provider. This may help to make sure that you are selecting the correct MFA code for the application that you are trying to access.
 
-## Related topics
+## Related topic
 
 [Single Credential Login and Multi-Factor Authentication FAQ](single-credential-login-and-multi-factor-authentication-faq.md)

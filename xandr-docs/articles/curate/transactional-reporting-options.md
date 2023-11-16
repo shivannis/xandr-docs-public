@@ -1,10 +1,10 @@
 ---
-title: Transactional Reporting Options
+title: Microsoft Curate - Transactional Reporting Options
 description: This article offers reporting options for clients who need to go beyond the capabilities exposed by Curate.
 ms.date: 11/15/2023
 ---
 
-# Transactional reporting options
+# Microsoft Curate - Transactional reporting options
 
 This page describes a number of reporting options for clients who need to go beyond the capabilities exposed by Curate. The reporting options described below can be used for:
 

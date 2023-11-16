@@ -1,16 +1,17 @@
 ---
-title: System Targeting
+title: Microsoft Curate - System Targeting
 description: Target users based on their operating systems, browsers, language, device model, or carrier. By default, all operating systems, browsers, and languages are targeted.
 ms.date: 11/15/2023
 ---
 
-# System targeting
+# Microsoft Curate - System targeting
 
 You can target users based on their operating systems, browsers, language, device model, or carrier. In the **Targeting** section of a line item, click the **Edit** button next to **System**.
 
 By default, all operating systems, browsers, and languages are targeted. On the **System** dialog, you can narrow your targeting to include or exclude specific systems.
 
 - The **OS Family** tab shows all operating system families (for example Microsoft Windows or Apple Mac) and operating systems (for example Windows 8 or 10.8 Mountain Lion) available for targeting. You can either include or exclude OS families and operating systems.
+
 - The **Browser** tab shows all browsers available for targeting. You can either include or exclude browsers.
   
   > [!NOTE]

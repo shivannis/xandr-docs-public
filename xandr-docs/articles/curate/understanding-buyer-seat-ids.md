@@ -1,10 +1,10 @@
 ---
-title: Understanding Buyer Seat IDs
+title: Microsoft Curate - Understanding Buyer Seat IDs
 description: Learn about buyer seat IDs. Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the buyers they manage, rather than using a Xandr member ID.
 ms.date: 11/15/2023
 ---
 
-# Understanding buyer seat IDs
+# Microsoft Curate - Understanding buyer seat IDs
 
 Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the buyers they manage, rather than using a Xandr member ID. If a DSP has implemented this feature, you can choose between member and seat IDs when creating a deal and reporting on buyers.
 

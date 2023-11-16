@@ -1,10 +1,10 @@
 ---
-title: Sources of Planner Information
+title: Microsoft Curate - Sources of Planner Information
 description: The article discusses the sources of planner information and provides estimates based on daily and weekly snapshots of historical data.
 ms.date: 11/15/2023
 ---
 
-# Sources of planner information
+# Microsoft Curate - Sources of planner information
 
 Impression estimates are based on a seven-day sample of data, defined at the daily level. Planner stores seven days' worth of samples, resulting in a rolling weekly snapshot that is updated once per day.
 
