@@ -13,7 +13,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 1. On the **Advertiser Details** screen, select **Create New \>  Insertion Order**.
 
    > [!NOTE]
-  > You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
+   > You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
 
 1. Fill out the basic setup, which includes information such as name and budget and billing details. For more information on these
    settings, see [Basic Setup](create-an-insertion-order.md#basic-setup).
@@ -43,13 +43,13 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 1. Set the supply strategy, determining the inventory type and inventory lists for targeting. These settings can be further refined on the line item. For more information, see [Inventory Lists](inventory-lists-ali-only.md).
 
-   a. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
+    a. Select the inventory type: **App & Web** (the default), **App Only** (mobile inventory), or **Web Only** (standard websites and websites optimized for browsers on mobile devices).
 
     b. Select an allowlist, or create one directly from the insertion order. This determines the inventory that may be targeted by any line items belonging to this insertion order.
   
     Allowlists include the Xandr Inventory List, a collection of inventory that Xandr has selected based on demonstrated demand interest within our marketplace and vetted via additional quality controls (as well as platform inventory quality filtering).
 
-   c. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Xandr blocklist is applied by default.
+    c. Select a blocklist, or create one directly from the insertion order. This determines which inventory will be excluded from targeting by line items belonging to this insertion order. The Xandr blocklist is applied by default.
 
 1. If this insertion order contains line items for political
     a. advertising, fill out the [Political Advertising](create-an-insertion-order.md#political-advertising) section.
@@ -135,8 +135,8 @@ insertion order's billing periods.
   the line item.
 
   > [!IMPORTANT]
-- > - You cannot set a start date in the past. 
-  > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
+   > - You cannot set a start date in the past.
+   > - Once you have saved an insertion order with **Set Dates** or **No End Date**, or **Set Budget** or **Unlimited Budget**, these settings cannot be changed.
 
 ### Pacing
 

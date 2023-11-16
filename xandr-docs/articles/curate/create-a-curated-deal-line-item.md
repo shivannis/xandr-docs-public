@@ -90,14 +90,14 @@ Details for the newly created or existing deal display in **Deal Details** inclu
   - **Dynamic CPM** = "**Standard**"
 - **Ask Price** - Determined by **Fixed** or **Floor Price** (set in **Revenue Type**)
 
-  > [!NOTE]
-   > You may select **Choose Existing** when creating a curated deal, but this is not recommended unless you have already inactivated the original line item associated with the deal. For ease of maintenance, it is recommend that you use only one curated deal line item per curated deal. If you do choose to use an existing curated deal for this curated deal line item:
+> [!NOTE]
+> You may select **Choose Existing** when creating a curated deal, but this is not recommended unless you have already inactivated the original line item associated with the deal. For ease of maintenance, it is recommend that you use only one curated deal line item per curated deal. If you do choose to use an existing curated deal for this curated deal line item:
 >
-> 1. Click **Select Deal** to choose an existing deal.
-> 1. On the **Select a Deal** screen, select a deal (you can search by Name or ID) and click **Select**.
-> 1. Edit the **Deal Name** if desired. Please note that this name is shared with the buyer.
->
-> If you select the wrong deal you can click **Deselect** to open the **Select a Deal** screen again and select the deal you want.
+  > 1. Click **Select Deal** to choose an existing deal.
+  > 1. On the **Select a Deal** screen, select a deal (you can search by Name or ID) and click **Select**.
+  > 1. Edit the **Deal Name** if desired. Please note that this name is shared with the buyer.
+  >
+  > If you select the wrong deal you can click **Deselect** to open the **Select a Deal** screen again and select the deal you want.
 
 ## Revenue type
 

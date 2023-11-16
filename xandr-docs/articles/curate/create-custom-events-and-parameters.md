@@ -17,8 +17,8 @@ To set up custom events and parameters:
 1. Click **+New**.
 1. In the **Create New Custom Field** screen, click **Event** or **Parameter** and provide a name for the event or parameter.
 
-> [!NOTE]
->Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Curate will modify your parameter names if they don't match this convention.
+  > [!NOTE]
+  > Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Curate will modify your parameter  names if they don't match this convention.
 
 6. If you’re creating a custom parameter, specify whether the expected value is a string or a number.
 7. Provide any additional description in the **Description** field.
