@@ -1,16 +1,12 @@
 ---
-Title : Getting Started with Roles
-Description : As a company doing business with Xandr, it's
-ms.date : 10/28/2023
-possible that you have more than one user responsible for your company's
-interaction with the system, whether that interaction is through the UI
-or the API. You may have several users who are responsible for different
+title : Microsoft Curate - Getting Started with Roles
+description : Learn how User access control with roles gives you the ability to restrict user permissions based on the user's specific business needs. 
+ms.date : 11/14/2023
+
 ---
 
 
-# Getting Started with Roles
-
-
+# Microsoft Curate - Getting started with roles
 
 As a company doing business with Xandr, it's
 possible that you have more than one user responsible for your company's
@@ -23,7 +19,7 @@ responsible for the right parts of the system. User access control with
 roles gives you the ability to restrict user permissions based on the
 user's specific business needs.
 
-Roles
+## Roles
 
 A role defines the actions a user is allowed to take. For example, a
 user may have permission to view, modify, or delete a component in the
@@ -31,7 +27,7 @@ system (such as an advertiser, publisher, or insertion order).
 
 Access control involves assigning a user to a role.
 
-Removing Components
+## Removing components
 
 A user's ability to view, create, edit, and delete components depends on
 the combination of roles and permissions. As mentioned previously,
@@ -46,8 +42,6 @@ User1 has the following permissions:
 - Team: SalesTeamUS with access to insertion orders 1, 2, and 5 under
   AdvertiserA
 
-
-
 This gives User1 permissions to create new insertion orders under
 AdvertiserA (and add those insertion orders to team SalesTeamUS). This
 also gives User1 permission to view, edit, and delete insertion orders
@@ -58,7 +52,4 @@ and 5 before creating more insertion orders?
 In that case, even though everything User1 had been able to view under
 AdvertiserA is gone, User1 will still be able to create new insertion
 orders under AdvertiserA and add those insertion orders to SalesTeamUS.
-
-
-
 
