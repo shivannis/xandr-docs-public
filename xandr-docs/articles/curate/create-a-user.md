@@ -32,7 +32,7 @@ Within the **Contact Information** section you'll also find options for numeric 
 
 - **Reporting Decimal Format** - Select whether a **Point** or **Comma** should be used for decimals when viewing numbers in reports. 
    > [!NOTE]
-> When the Comma format is selected, users will not be able to export a report using CSV format.
+   > When the Comma format is selected, users will not be able to export a report using CSV format.
 
 - **Numerical Format** - Select the thousand separator and decimal mark for numbers everywhere in Curate except in reporting. This setting controls both how numbers appear to the user as well as how numbers can be entered by the user.
 

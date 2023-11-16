@@ -60,6 +60,6 @@ To target MSN.com inventory:
 
 For instructions on how to target the MSN app, see [Buying Microsoft Windows App Ad Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
 
-## More Questions?
+## More questions?
 
 If you have any further questions about buying MSN inventory, please contact your Xandr account representative.
