@@ -1,5 +1,5 @@
 ---
-Title: Microsoft Curate - Universal Pixel Object Limits
+title: Microsoft Curate - Universal Pixel Object Limits
 description: This article provides details on the universal pixel object limits.
 ms.date: 11/16/2023
 ---
