@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Impression Funnel
 description: In this article, explore detailed information about the Impression funnel and its various settings and metrics.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Impression funnel

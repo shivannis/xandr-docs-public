@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curation Optimization
 description: In this article, learn about the Curation optimization process in detail.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curation optimization

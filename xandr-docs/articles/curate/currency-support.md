@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Currency Support
 description: In this article, learn about the supported currencies, gain insights on all essential concepts, intricate processes, and various settings associated with it.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Currency support

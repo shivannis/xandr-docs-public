@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curated Deals
 description: In this article, learn about curated deals and find answers to frequently asked questions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curated deals

@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curator Reporting
 description: In this article, explore the available Curator reports thoroughly.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curator reporting

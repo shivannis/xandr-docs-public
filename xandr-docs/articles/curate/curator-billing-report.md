@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curator Billing Report
 description: Explore this article to understand the Curator Billing report, including its metrics, dimensions, and a detailed guide on running a report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curator Billing report

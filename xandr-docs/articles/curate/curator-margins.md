@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curator Margins
 description: In this article, learn about the Curator margins, the different types, and how they are calculated.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curator margins

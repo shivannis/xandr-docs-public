@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curator Segment Performance Report
 description: Explore this article to understand the Curator Segment Performance report, including its metrics, dimensions, and a detailed guide on running a report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curator Segment Performance report

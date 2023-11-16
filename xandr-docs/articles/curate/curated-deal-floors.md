@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Curated Deal Floors
 description: In this article, learn about curated deal floors, fixed and standard floor types, and floor type prices.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Curate - Curated deal floors
