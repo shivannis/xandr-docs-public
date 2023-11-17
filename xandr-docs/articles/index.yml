@@ -122,5 +122,5 @@ additionalContent:
           url: data-science-toolkit/index.yml
         # Card
         - title: OTT and CTV Video Integrations
-          summary: Lorem Ipsum
-          url: getting-started/index.yml
+          summary: Integration guide for various OTT hardware platforms, including CTV
+          url: ott-ctv/index.yml
