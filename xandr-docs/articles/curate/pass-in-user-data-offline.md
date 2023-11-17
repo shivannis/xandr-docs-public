@@ -8,7 +8,7 @@ ms.date : 10/28/2023
 
 If you have data that lives in your ad server or data warehouse today, you can make it accessible to your Xandr ad campaigns.
 
-## A Use case
+## A use case
 
 Let's say Prostarr Sportswear puts a pixel on every one of their pages so that if a user visits, whether by search engine, through a link, or by typing in a page directly, they can attach a user ID to that user's cookie. Then segments can be associated to this user ID, such as "purchased within last 2 weeks" or "viewed shoe model XJ12." Then Prostarr wants to show ads to the users in these segments by using Microsoft Curate.
 

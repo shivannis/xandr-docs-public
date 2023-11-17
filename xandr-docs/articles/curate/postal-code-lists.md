@@ -1,7 +1,6 @@
 ---
-title: Microsoft Curate - Postal Code Lists
+title: Postal Code Lists
 description: The article discusses the lists of postal code and explains how leveraging postal codes is a powerful way for advertisers to achieve granular and precise hyperlocal targeting.
-ms.date: 10/28/2023
 ---
 # Postal code lists
 
@@ -16,9 +15,8 @@ The Postal Code List feature enables users to:
 - enable postal code lists (include or exclude) for targeting at the deal line item level. The maximum number of postal code lists a deal
   line item can target is 100.
 
-> [!NOTE]
-> Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/) a Xandr partner that handles geolocation data, can't recognize a ZIP or postal
-> code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
+Certain legitimate ZIP or postal codes are unrecognizable or invalid within the Xandr geography targeting system. This can happen because [Digital Envoy](https://www.digitalelement.com/) a Xandr partner that handles geolocation data, can't recognize a ZIP or postal
+code's existence until an IP address (user) has been associated with it. Postal codes that don't exist in the system often represent obscure or otherwise small geographical zones with minimal internet activity.
 
 ## Manage postal code lists
 
@@ -38,26 +36,25 @@ The maximum number of postal codes allowed in a list is 100,000.
 **Create a new postal code list:**
 
 1. Select **Audiences >  Location Manager**.
-1. On the Location Manager page, select **New >  Postal Code List**.
-1. Provide the following details in the **Create A Location Target** page:
-   1. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The
-   1. maximum number of characters allowed is 255.
-   1. **Code**: (optional) Enter a code for the Postal Code List.
-   1. **Description**: (optional) Enter a description for the Postal Code List that gives a brief definition of the postal code location target. For example, enter "Postal Code List for Noor-Holland region in the city of Amsterdam, Netherlands".
-1. Click **Next**.
-1. On the **Location Target Features** page, select one of the following options:
+2. On the Location Manager page, select **New >  Postal Code List**.
+3. Provide the following details in the **Create A Location Target** page:
+    1. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.
+    2. **Code**: (optional) Enter a code for the Postal Code List.
+    3. **Description**: (optional) Enter a description for the Postal Code List that gives a brief
+        definition of the postal code location target. For example, enter "Postal Code List for Noor-Holland region in the city of
+        Amsterdam, Netherlands".
+4. Click **Next**.
+5. On the **Location Target Features** page, select one of the following options:
     - **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, click **Next**.
     - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, click **Next**.
 
-   > [!NOTE]
-   > You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time. For USA, you can target the full 9-digit postal code (also known as zip +4).
->
-   > For example, you can target "10010-7456".
+  > [!NOTE]
+   > You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time. For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
 
-1. On the **Review Location Target** page, the following tabs are available:
-    1. **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.
-    1. **Did Not Import** displays postal codes that failed to import properly.
-1. Click **Save** to complete the setup.
+6.On the **Review Location Target** page, the following tabs are available:
+    - **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.
+    - **Did Not Import** displays postal codes that failed to import properly.
+7. Click **Save** to complete the setup.
 
 ## Target postal code lists and postal codes on line items
 
