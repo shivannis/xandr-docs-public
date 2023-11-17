@@ -1,7 +1,6 @@
 ---
-title: Microsoft Curate - Political Advertising
-description: The article explains political advertising relating to elections, ballot initiatives, or political candidates in
-the United States. Such advertising comply with applicable law.
+title: Microsoft Curate - Political Advertising in Curate
+description: The article explains political advertising relating to elections, ballot initiatives, or political candidates in the United States. Such advertising comply with applicable law.
 ms.date : 10/28/2023
 ---
 
@@ -28,8 +27,7 @@ However, you must take a few additional steps:
     1. Add the contact information for the person or team in your own organization who can best answer any questions about political advertising on this insertion order.
     2. Add details about the political organization that is advertising on a state or local level, or on a federal level in Washington State. The details include contact information, payment method, and the name of the candidate or ballot initiative being supported or opposed.
     3. If the political organization purchasing the ads is an independent expenditure committee advertising in New York or New Jersey, upload the appropriate state registration form.
-    4. Certify that all information provided is accurate and up to date, and acknowledge that Xandr is relying on the accuracy of the information you provide.
-
+    4. Certify that all information provided is accurate and up to date, and acknowledge that Xandr is relying on the accuracy of the information you provide. 
     For more details, see [Political Advertising](create-an-insertion-order.md#political-advertising) in [Create an Insertion Order](create-an-insertion-order.md).
 
 3. Ensure that political creatives include a disclaimer stating who paid for the advertisement and whether it was authorized by the
@@ -55,7 +53,7 @@ Maryland, Nevada, New Jersey, New York, Virginia, and Washington.
 
 Washington State also has a public reporting requirement for political advertising for federal elections or candidates.
 
-For more information, see [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx)
+For more information, see [Political Advertising Transparency Reporting](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx).
 
 ## Related topics
 
