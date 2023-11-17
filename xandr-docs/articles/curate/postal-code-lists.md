@@ -1,5 +1,5 @@
 ---
-title: Postal Code Lists
+title: Microsoft Curate - Postal Code Lists
 description: The article discusses the lists of postal code and explains how leveraging postal codes is a powerful way for advertisers to achieve granular and precise hyperlocal targeting.
 ---
 # Postal code lists
@@ -11,7 +11,7 @@ targeting is a key factor in driving advertising performance. Because sellers an
 
 The Postal Code List feature enables users to:
 
-- create postal code lists (include or exclude) so that a list can be   used across their deals.
+- create postal code lists (include or exclude) so that a list can be used across their deals.
 - enable postal code lists (include or exclude) for targeting at the deal line item level. The maximum number of postal code lists a deal
   line item can target is 100.
 
