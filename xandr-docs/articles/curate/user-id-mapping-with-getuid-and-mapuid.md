@@ -28,7 +28,7 @@ Xandr cookie store.
 > [!NOTE]
 > Note that the Xandr user ID macro described below is `$UID`. Unlike many of our other macros, it does not have curly braces.
 
-## A Basic mapping example
+## A basic mapping example
 
 | Prostarr User ID      | PS123      |
 |-----------------------|------------|

@@ -5,7 +5,7 @@ ms.date : 11/15/2023
 ---
 
 
-# Microsoft Curate - User mapping visual and Walk-Through
+# Microsoft Curate - User mapping visual and walk-through
 
 [User ID Mapping](user-id-mapping-with-getuid-and-mapuid.md) describes how to map your internal user IDs and
 Xandr user IDs so that you can pass
