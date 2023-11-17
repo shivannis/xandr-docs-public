@@ -1,21 +1,12 @@
 ---
-Title : Release Notes
-Description : Read about the latest updates to Curate.
+title : Release Notes
+description : The articles describes the Release Notes that talks about the latest updates. The Release Note was published in June (26th and 27th), 2023 for Curate.
 ms.date : 10/28/2023
 ---
 
-
-# Release Notes
-
-
+# Release notes
 
 Read about the latest updates to Curate.
 
-- <a href="release-notes-curate-20230626.md" class="xref">June 26, 2023:
-  Open Beta for Troubleshooting by Seller Deal</a>
-- <a href="release-notes-curate-20230627.md" class="xref">June 27, 2023:
-  New Advertiser and Insertion Order screens in the Microsoft Curate UI</a>
-
-
-
-
+- [June 26, 2023: Open Beta for Troubleshooting by Seller Deal](release-notes-curate-20230626.md)
+- [June 27, 2023: New Advertiser and Insertion Order screens in the Microsoft Curate UI](release-notes-curate-20230627.md)
