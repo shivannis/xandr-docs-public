@@ -101,9 +101,9 @@ additionalContent:
           summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
           url: seller-tag/index.yml
         # Card
-        - title: Mobile SDK (Work in Progress)
+        - title: Mobile SDK
           summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
-          url: getting-started/index.yml
+          url: mobile-sdk/index.yml
         # Card
         - title: Log Level Data Feeds (Work in Progress)
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
