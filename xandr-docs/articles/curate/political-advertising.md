@@ -1,5 +1,5 @@
 ---
-title: Political Advertising
+title: Microsoft Curate - Political Advertising
 description: The article explains political advertising relating to elections, ballot initiatives, or political candidates in
 the United States. Such advertising comply with applicable law.
 ms.date : 10/28/2023

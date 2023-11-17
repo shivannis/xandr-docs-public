@@ -1,7 +1,7 @@
 ---
-title: June 26, 2023: Open Beta for Troubleshooting by Seller Deal
+title: Microsoft Curate - Open Beta for Troubleshooting by Seller Deal
 description: The new articles describes the Release Note (published in 26th of June, 2023) that talks about the latest updates. The note explains the open beta for troubleshooting.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # June 26, 2023: Open beta for troubleshooting by seller deal

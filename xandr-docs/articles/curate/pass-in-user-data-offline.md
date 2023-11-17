@@ -1,6 +1,6 @@
 ---
 title: Pass in User Data Offline
-description : The article explains when you have data that stays in your ad server or data warehouse how you can make it accessible to your Xandr ad campaigns.
+description: The article explains when you have data that stays in your ad server or data warehouse how you can make it accessible to your Xandr ad campaigns.
 ms.date : 10/28/2023
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: Postal Code Lists
+title: Microsoft Curate - Postal Code Lists
 description: The article discusses the lists of postal code and explains how leveraging postal codes is a powerful way for advertisers to achieve granular and precise hyperlocal targeting.
+ms.date: 10/28/2023
 ---
 # Postal code lists
 

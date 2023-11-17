@@ -1,5 +1,5 @@
 ---
-title : Release Notes
+title : Microsoft Curate - Release Notes
 description : The articles describes the Release Notes that talks about the latest updates. The Release Note was published in June (26th and 27th), 2023 for Curate.
 ms.date : 10/28/2023
 ---

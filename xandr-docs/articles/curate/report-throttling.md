@@ -1,5 +1,5 @@
 ---
-title: Report Throttling
+title: Microsoft Curate - Report Throttling
 description: The article explains how report requests are throttled at both the member and user levels in order to ensure that our systems operate as smoothly as possible for all users.
 ms.date: 10/28/2023
 ---
