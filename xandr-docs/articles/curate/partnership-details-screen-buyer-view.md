@@ -47,7 +47,7 @@ In this section you can:
 - **Send a message:** Send the seller a message by typing into the field at the top of the section, and then clicking
   Post. When you post a new message, the system sends a notification to the contact in the seller's  profile.
 - **View last update information:** Text at the top of the section will note when the **Activity Stream** was last updated.
-- **Hide Activity Stream:** Click the Hide Activity Stream icon ("**\<**") to collapse the section and provide more working space.
+- **Hide Activity Stream:** Click the Hide Activity Stream icon ("**<**") to collapse the section and provide more working space.
 
 Click on the **Notifications** tab in the **Activity Stream** to view system messages.
 
@@ -77,11 +77,11 @@ and past deals from the seller. Each deal displays with additional details, see 
 
 ## Edit a deal
 
-If you would like to make changes to a deal, send the seller a message to discuss your needs see [Communicating with the Seller](partnership-details-screen-buyer-view.md#communicating-with-the-seller). The seller can then edit the deal.
+If you would like to make changes to a deal, send the seller a message to discuss your needs (see [Communicating with the Seller](partnership-details-screen-buyer-view.md#communicating-with-the-seller)). The seller can then edit the deal.
 
 ## Reporting on deals
 
-You can run a report to see how your deals are performing. See [Buy Sside Reporting On-Deals](buy-side-reporting-on-deals.md) for more information.
+You can run a report to see how your deals are performing. See [Buy Side Reporting On-Deals](buy-side-reporting-on-deals.md) for more information.
 
 ## Viewing packages
 
@@ -94,11 +94,11 @@ requested, you will need to generate a deal from a package (see below). The sell
 
 ## Generating a deal from a package
 
-If you are interested in the packaged inventory, you can generate deals between you and the seller. Click **Add** to Cart near the desired packages, then click **Get Deals** to create deals that you can target.
+If you are interested in the packaged inventory, you can generate deals between you and the seller. Click **Add to Cart** near the desired packages, then click **Get Deals** to create deals that you can target.
 
 ## Targeting a deal from the packages tab
 
-If you generated a deal from a package, your deal ID is displayed in the Selected Packages section, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md) for more information.
+If you generated a deal from a package, your deal ID is displayed in the **Selected Packages** section, see [Get Deals from Seller Packages](../monetize/get-deals-from-seller-packages.md) for more information.
 
 ## Related topics
 

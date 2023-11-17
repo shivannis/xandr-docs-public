@@ -14,14 +14,14 @@ Go to **Admin \> Partner Center** to reach the **Partner Center** screen.
 
 ## Managing your profile
 
-Click the **My Profile** button to edit the information that sellers will see on your Partner Details page. Your profile
+Click the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile
 provides information about your company which helps sellers understand how you could be useful as a partner.
 
 ## Viewing sellers
 
 The **Sellers** tab lists all sellers, both Curate members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller.
 
-See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller.
+See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers.md) to find a specific type of seller.
 and then review the statistics to determine if you'd like to partner with the seller.
 
 ## Platform-wide avails
@@ -34,18 +34,17 @@ and then review the statistics to determine if you'd like to partner with the se
 - **Imps** - The number of impressions that you have purchased from the seller.
 - **Media Costs** - The cost of all of the impressions that you have purchased from the seller.
 - **Clicks** - The number of clicks that were generated from inventory that you purchased from the seller.
-- **CTR** - Your click-through rate on the   seller's inventory. For more information on click-through rates see [Glossary](industry-reference/online-advertising-and-ad-tech-glossary.md).
+- **CTR** - Your click-through rate on the seller's inventory. For more information on click-through rates see [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md).
 - **Convs** - The number of conversions that were attributed to inventory that you purchased from the seller.
 - **Revenue** - The amount of revenue that the seller earned from you.
 - **Profit** - The amount of profit that the seller earned from you, calculated by subtracting media cost from revenue.
 
 ## Seller eligibility, history, and deals
 
-**Get to Know Xandr direct**
-
-Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
-
-For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
+> [!TIP]
+> **Get to Know Xandr direct**
+> Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+> For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
 - **Seller Group** - Shows if the seller is labeled as Xandr Direct.
 - **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other. Status is indicated by the circular eligibility icon in each row, and you can mouse over the row in the **Eligibility** column for details.

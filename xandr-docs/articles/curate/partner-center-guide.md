@@ -13,15 +13,15 @@ The **Partner Center** enables you to realize your full potential with other buy
 - Motivate partners to do business with you
 - Track success of partnerships with metrics
 
-This guide is designed to help both sellers and buyers understand and use the Partner Center. Find the section below that represents your perspective.
+This guide is designed to help both sellers and buyers understand and use the **Partner Center**. Find the section below that represents your perspective.
 
-## In This Guide - For Sellers
+## In this guide - for sellers
 
 - [Managing Relationships with Buyers](managing-relationships-with-buyers.md): As a seller, learn how to use Partner
   Center to foster and manage relationships with specific buyers. You can review statistics for each buyer, communicate with buyers directly in Curate, and more.
 - [Selling Curated Deals](selling-curated-deals.md): As a seller, you can create [curated deals](curated-deals.md) to provide buyers special access to inventory and/or data.
 
-## In This Guide - For Buyers
+## In this guide - for buyers
 
 - [Managing Relationships with Sellers](managing-relationships-with-sellers.md): As a buyer, learn how to use Partner Center to foster and manage relationships with specific sellers. You can review statistics for each seller, communicate with sellers directly in Curate, and more.
 - [Buying Deals](buying-deals.md): As a buyer, you can negotiate deals to obtain preferential pricing on inventory, access to exclusive inventory, reduced competition on inventory, or other opportunities.
