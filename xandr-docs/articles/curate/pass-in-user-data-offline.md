@@ -6,7 +6,7 @@ ms.date : 10/28/2023
 
 # Pass in user data offline
 
-If you have data that lives in your ad server or data warehouse today, you can make it accessible to your Xandr ad campaigns. In this section we describe the server-side integration that allows you to pass this data into our [Server Side Cookie Store](../invest/server-side-cookie-store.md).
+If you have data that lives in your ad server or data warehouse today, you can make it accessible to your Xandr ad campaigns.
 
 ## A Use case
 
@@ -17,7 +17,7 @@ into a "remarketing segment" returns a purchase and Prostarr makes an internal c
 
 ## User ID mapping
 
-Before you can pass us data, there must be a mapping of the Xandr user ID and your user ID so that we can attach the data to the right user and offer it for your future use. Please read about this process at [User ID Mapping](../invest/user-id-mapping-with-getuid-and-mapuid.md).
+Before you can pass us data, there must be a mapping of the Xandr user ID and your user ID so that we can attach the data to the right user and offer it for your future use. Please read about this process at [User ID Mapping](user-id-mapping-with-getuid-and-mapuid.md).
 
 ## Server-side data integration with Xandr
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Curate - Political Advertising in Curate
+title: Microsoft Curate - Political Advertising
 description: The article explains political advertising relating to elections, ballot initiatives, or political candidates in the United States. Such advertising comply with applicable law.
 ms.date : 10/28/2023
 ---
@@ -33,7 +33,7 @@ However, you must take a few additional steps:
 3. Ensure that political creatives include a disclaimer stating who paid for the advertisement and whether it was authorized by the
     relevant candidate or paid for by an independent expenditure committee.
 
-## When a political creative is not allowed to saerve
+## When a political creative is not allowed to serve
 
 The creative will not be allowed to serve if:
 
@@ -42,7 +42,7 @@ The creative will not be allowed to serve if:
   provided on the advertiser or the insertion is true, or uploaded a registration form for the states that require it.
 - An audit detects that a creative is political, but the required political information has not been disclosed to Xandr.
 
-  If the buyer's creative is blocked from serving by a creative audit, the buyer will be emailed a notification that the creative does not comply with Xandr's policies and has been blocked until all issues are resolved. Generally, all this requires is that the buyer include the proper disclosures and information at the Advertiser and Insertion Order level.
+If the buyer's creative is blocked from serving by a creative audit, the buyer will be emailed a notification that the creative does not comply with Xandr's policies and has been blocked until all issues are resolved. Generally, all this requires is that the buyer include the proper disclosures and information at the Advertiser and Insertion Order level.
 
 ## Political reporting transparency requirements
 
