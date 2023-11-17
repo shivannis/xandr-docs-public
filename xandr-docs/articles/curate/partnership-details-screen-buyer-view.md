@@ -4,7 +4,7 @@ description: The articles describes how you can review and manage your relations
 ms.date : 10/28/2023
 ---
 
-# Partnership details screen
+# Partnership details screen - buyer view
 
 On the Partnership details screen you can review and manage your relationship with a specific seller. You can track overall spend trends,
 view your top brands on the seller's inventory, view the seller's top - publishers from whom you have purchased inventory, view active and
@@ -89,8 +89,7 @@ You can run a report to see how your deals are performing. See [Buy Side Reporti
 
 ## Requesting a custom deal
 
-If you see a package in the **Package Marketplace** that interests you but needs some modification, you can send the seller a message with your request. Click **Request a Custom Deal**, explain your need, and then click **Submit** to post your message in the **Activity Stream** on the **Partner Details** page (). Use the **Activity Stream** to continue your negotiation with the seller. If the seller agrees to the change you
-requested, you will need to generate a deal from a package (see below). The seller will then modify your deal to meet your needs.
+If you see a package in the **Package Marketplace** that interests you but needs some modification, you can send the seller a message with your request. Click **Request a Custom Deal**, explain your need, and then click **Submit** to post your message in the **Activity Stream** on the **Partner Details** page (). Use the **Activity Stream** to continue your negotiation with the seller. If the seller agrees to the change you requested, you will need to generate a deal from a package (see below). The seller will then modify your deal to meet your needs.
 
 ## Generating a deal from a package
 

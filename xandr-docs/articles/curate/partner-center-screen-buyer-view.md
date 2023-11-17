@@ -4,18 +4,37 @@ description: The Partner Center screen allows users to access and manage preferr
 ms.date: 10/28/2023
 ---
 
-# Partner center screen
+# Partner center screen - buyer View
 
 On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 
 ## Getting to the **Partner Center** screen
 
-Go to **Admin \> Partner Center** to reach the **Partner Center** screen.
+Go to **Partners > Partner Center** to reach the **Partner Center** screen.
+
+## Switching to seller mode
+
+If you are a network that also represents sellers, the Buyers and Sellers tabs display. Click Sellers to view the **Partner Center** as a buyer looking for sellers.
 
 ## Managing your profile
 
 Click the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile
 provides information about your company which helps sellers understand how you could be useful as a partner.
+
+## Setting Seller Defaults
+
+> [!NOTE]
+> Inventory trust settings only apply to standard line item targeting.
+
+You can establish inventory trust settings for all sellers. Click **Default Settings** to open the **Default Settings** dialog (see [Set Seller Defaults](../monetize/set-seller-defaults.md) for step-by-step instructions). You can also override these settings for individual sellers (see [Edit Seller Defaults for details](../monetize/edit-seller-defaults.md)).
+
+## Setting default inventory trust
+
+You can define which portion of an eligible seller's inventory you trust. There are three trust levels (they are listed here from least trusted to most trusted):
+
+- **Platform-reviewed**: Indicates that you trust only the inventory that has been audited by the Xandr platform. The Xandr domain-level platform-review consists of categories, sensitive attributes, and intended audience. This is the lowest level of trust and offers the fewest options (domains) in which to serve impressions, but provides the highest level of assurance that ads will not be served on questionable sites.
+- **Seller-reviewed**: This indicates that, in addition to all platform-reviewed inventory (above), you also trust inventory audited by the seller. This expands the number of domains on which an ad can serve, but requires confidence in the review process and standards of the seller.
+- **All**: This indicates that you are comfortable serving ads on any domain sent to you by this supply partner. This allows access to all domains, but expands the possibility that an ad will be served on a questionable or inappropriate site. This setting should only be used for partners with a long history of exemplary activity.
 
 ## Viewing sellers
 
@@ -66,7 +85,7 @@ Click the Hide Search Filters "**\<**" icon to collapse the section and provide 
 ## Viewing partnership details
 
 Click on a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends,
-packages, and active and upcoming deals. See [Partnership Details Screen](partnership-details-screen-buyer-view.md).
+packages, and active and upcoming deals. See [Partnership Details Screen](../monetize/partnership-details-screen-buyer-view.md).
 
 ## Related topics
 
