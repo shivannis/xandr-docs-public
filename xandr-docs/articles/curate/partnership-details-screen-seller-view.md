@@ -47,16 +47,15 @@ A table lists your top publishers that the buyer has purchased inventory from, l
 
 ### Communicating with the buyer
 
-In the Activity Stream, the
-Messages tab shows messages between you and the buyer along with the number of days since the message was posted. You can use the Activity Stream to introduce yourself to a new buyer, offer targeting access in exchange for increased spend, check in with the buyer to see how their targeting access is working for them, or request changes to your eligibility and inventory trust.
+In the **Activity Stream**, the **Messages** tab shows messages between you and the buyer along with the number of days since the message was posted. You can use the **Activity Stream** to introduce yourself to a new buyer, offer targeting access in exchange for increased spend, check in with the buyer to see how their targeting access is working for them, or request changes to your eligibility and inventory trust.
 
 In this section you can:
 
 - **Send a message:** Send the buyer a message by typing into the field at the top of the section, and then clicking
   Post. When you post a new message, the system sends a notification to the contact in the buyer's profile.
-- **View last update information:** Text at the top of the section notes when the Activity Stream was last
+- **View last update information:** Text at the top of the section notes when the **Activity Stream** was last
   updated.
-- **Hide Activity Stream:** Click the Hide Activity Stream icon (double arrows) to collapse the section and provide more working space for you to use the Dashboard, Partner Controls, or Deals tabs.
+- **Hide Activity Stream:** Click the Hide Activity Stream icon (double arrows) to collapse the section and provide more working space for you to use the **Dashboard**, **Partner Controls**, or **Deals** tabs.
 
 Click on the **Notifications** tab in the **Activity Stream** to view system messages.
 
@@ -66,7 +65,7 @@ In the **Partner Controls** tab you can view and manage the settings you have se
 
 ## View your settings for the buyer
 
-The eligibility, allowed payment types, and targeting access settings you have set for the buyer display in the **My Settings for Buyer** section. For more information on each of these settings, see [Setting Buyer Defaults]. For step-by-step instructions on editing a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+The eligibility, allowed payment types, and targeting access settings you have set for the buyer display in the **My Settings for Buyer** section. For more information on each of these settings, see [Setting Buyer Defaults](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).     For step-by-step instructions on editing a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
 The **Partner Controls** tab is also visible to the buyer. They can see the settings you have defined for them.
 
