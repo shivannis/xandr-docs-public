@@ -1,16 +1,13 @@
 ---
-Title : User Mapping Visual and Walk-Through
-Description : <a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
-ms.date : 10/28/2023
+title : Microsoft Curate - User Mapping Visual and Walk-Through
+description : Learn how to map your internal user IDs and Xandr user IDs so that you can pass Xandr your internal userdata that you will use to buy impressions.  
+ms.date : 11/15/2023
 ---
 
 
-# User Mapping Visual and Walk-Through
+# Microsoft Curate - User mapping visual and walk-through
 
-
-
-<a href="user-id-mapping-with-getuid-and-mapuid.md" class="xref">User
-ID Mapping</a> describes how to map your internal user IDs and
+[User ID Mapping](user-id-mapping-with-getuid-and-mapuid.md) describes how to map your internal user IDs and
 Xandr user IDs so that you can pass
 Xandr your internal userdata that you will use
 to buy impressions. Here we describe visually what's happening and walk
@@ -20,7 +17,7 @@ In this example the advertiser Prostarr Sportswear stores the ID map on
 their end. They use the getuid call to obtain the
 Xandr ID via querystring parameter.
 
-Example
+## Example
 
 Let's say Prostarr Sportswear has internal IDs on everyone who has
 visited their retail site, and some of those IDs are tied to past
@@ -32,7 +29,7 @@ assume that Xandr has "seen" this user before
 somewhere in their system and so has marked the user's browser cookie
 with an Xandr user ID.
 
-![usermap](media/usermap.png)
+:::image type="content" source="media/usermap.png" alt-text="Screenshot of usermap .":::
 
 
 **Step 1.** When the page loads, the browser makes this call/request to
