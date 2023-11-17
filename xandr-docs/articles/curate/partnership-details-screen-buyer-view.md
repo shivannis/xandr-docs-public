@@ -12,7 +12,9 @@ pending deals, and communicate with the seller to negotiate a deal.
 
 ## Getting to the partnership details screen
 
-To reach this screen, select .
+1. Navigate to the **Partner Center** screen by selecting **Admin > Partner Center**.
+1. Select a partner's name to access the details specific to that partner.
+   You can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals.
 
 ## Viewing seller contact Info and description
 
@@ -34,7 +36,7 @@ A graph displays spend from all transactions between you and the seller within t
 
 There is a data point for every day. Hover over a data point to see the date it represents and the spend amount for that day.
 
-## Spend by top publishers
+### Spend by top publishers
 
 A table lists the seller's top publishers from whom you have purchased inventory, listed in order from most to least spend. This information tells you which of the seller's publishers you are performing best on.
 

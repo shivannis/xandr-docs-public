@@ -105,8 +105,8 @@ View all of your deals with the buyer, historical and current, in the Deals tab.
 
 - **Ask Price** - The price, if any, associated with the deal. This is the minimum amount the buyer must bid in order to compete for this inventory.
   
-> [!NOTE]
-> If you do not enter a deal-specific price your existing floor rules may apply.
+  > [!NOTE]
+  > If you do not enter a deal-specific price your existing floor rules may apply.
 
 - **Description** - A description you enter for your deal. Enter a description that will help the buyer understand what the deal includes, keeping in mind the buyer can see all of your deal settings except for Inventory and Segment.
 

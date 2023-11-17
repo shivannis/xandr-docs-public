@@ -4,7 +4,7 @@ description: The article describes how you can view your partners on the Partner
 ms.date : 10/28/2023
 ---
 
-# Partner center screen - seller view
+# Partner Center screen - seller view
 
 On the **Partner Center** screen you can view your partners, search all buyers, manage your profile, manage your default buyer settings, and review impression and click statistics for each buyer.
 
