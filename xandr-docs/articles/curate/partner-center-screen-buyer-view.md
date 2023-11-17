@@ -21,7 +21,7 @@ provides information about your company which helps sellers understand how you c
 
 The **Sellers** tab lists all sellers, both Curate members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller.
 
-See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers.md) to find a specific type of seller.
+See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller.
 and then review the statistics to determine if you'd like to partner with the seller.
 
 ## Platform-wide avails

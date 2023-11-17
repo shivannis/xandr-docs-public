@@ -1,6 +1,6 @@
 ---
 title: Planner
-Description: The article introduces the Planner, a dynamic forecasting tool for real-time reach and delivery projections. It helps assess delivery and reach possibilities for curated deals, allowing strategic adjustments with direct visual and statistical feedback during deal construction.
+description: The article introduces the Planner, a dynamic forecasting tool for real-time reach and delivery projections. It helps assess delivery and reach possibilities for curated deals, allowing strategic adjustments with direct visual and statistical feedback during deal construction.
 ms.date : 10/28/2023
 ---
 

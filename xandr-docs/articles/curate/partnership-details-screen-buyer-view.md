@@ -81,7 +81,7 @@ If you would like to make changes to a deal, send the seller a message to discus
 
 ## Reporting on deals
 
-You can run a report to see how your deals are performing. See [Buy Side Reporting On-Deals](buy-side-reporting-on-deals.md) for more information.
+You can run a report to see how your deals are performing. See [Buy Side Reporting On-Deals](../monetize/buy-side-reporting-on-deals.md) for more information.
 
 ## Viewing packages
 
