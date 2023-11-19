@@ -1,0 +1,106 @@
+---
+Title : MegaTag Technical Overview
+Description : <b>Note:</b>
+ms.date : 10/28/2023
+- **Not Supported**: The AppNexus Bidding
+Protocol is no longer supported; this documentation is for legacy
+purposes only. **We will deprecate this protocol on October 1, 2018.**
+---
+
+
+# MegaTag Technical Overview
+
+
+
+
+
+<b>Note:</b>
+
+- **Not Supported**: The AppNexus Bidding
+  Protocol is no longer supported; this documentation is for legacy
+  purposes only. **We will deprecate this protocol on October 1, 2018.**
+- If you're a new bidder integrating with
+  AppNexus, please see the **<a
+  href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
+  class="xref" target="_blank">OpenRTB 2.4 Bidding Protocol</a>**.
+
+
+
+MegaTag is a client-side JavaScript program that runs in the user's
+browser. It gathers up all of the ad slots on the page to be auctioned
+and sends information about all of them in a single ad request. Once the
+ad server has performed the auction, MegaTag generates iFrames within
+which to serve the various ad slots and dynamically "injects" them into
+the HTML code of the publisher's page. Since the iFrames are generated
+by MegaTag to appear as if they serve from the publisher's domain, the
+impressions conform to the
+<a href="http://en.wikipedia.org/wiki/Cross-site_scripting" class="xref"
+target="_blank">XSS</a> security protections built into modern web
+browsers. These are also known as "friendly" iFrames.
+
+The remainder of this document contains a step-by-step walkthrough of
+MegaTag's operation during a single page load.
+
+
+## Step 1. Getting oriented
+
+
+
+- Megatag records information about the ad slot, placement ID, size,
+  targeting, etc.
+- Megatag tries to detect whether or not its in an iFrame, and whether
+  or not that iFrame is "friendly."
+- Megatag attempts to write a placeholder `<div>` element adjacent to
+  the ad slot's location on the publisher's page.
+
+
+
+
+
+
+## Step 2. Sending the ad call
+
+
+
+- MegaTag determines that all ad slots are loaded. It does this in
+  either of the following ways:
+  - Matching the `placementCount` parameter.
+  - Listening to the window `load` event.
+- Once either of these events occur, the `/mtj` ad call is written
+  inside of an iFrame and executed.
+
+
+
+
+
+
+## Step 3. Populating the iFrames with creatives
+
+
+
+- When the auction initiated by the `/mtj` call completes, MegaTag
+  writes a new `<div>` and `<iframe>` adjacent to its placeholder from
+  **Step 1** above.
+- MegaTag populates each of the iFrames it's written with their
+  respective creatives.
+
+
+
+
+
+
+## Related Topics
+
+
+
+- <a
+  href="responding-to-a-megatag-bid-request.md"
+  class="xref" target="_blank">Responding to a MegaTag Bid Request</a>
+
+
+
+
+
+
+
+
