@@ -1,25 +1,11 @@
 ---
-Title : Deal API Services
-Description : - <a
+title: Deal API Services
+description: The article provides links to access Deal API services.
 ms.date : 10/28/2023
-href="deal-buyer-access-service.md"
 ---
 
+# Deal API services
 
-# Deal API Services
-
-
-
-- <a
-  href="deal-buyer-access-service.md"
-  class="xref" target="_blank">Deal Buyer Access Service</a>
-- <a
-  href="package-buyer-access-service.md"
-  class="xref" target="_blank">Package Buyer Access Service</a>
-- <a
-  href="deal-from-package-service.md"
-  class="xref" target="_blank">Deal From Package Service</a>
-
-
-
-
+- [Deal Buyer Access Service](deal-buyer-access-service.md)
+- [Package Buyer Access Service](package-buyer-access-service.md)
+- [Deal From Package Service](deal-from-package-service.md)
