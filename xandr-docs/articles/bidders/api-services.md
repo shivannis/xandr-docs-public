@@ -1,56 +1,20 @@
 ---
-Title : API Services
-Description : - <a
-ms.date : 10/28/2023
-href="authentication-service.md"
+title: API Services
+description: In this article, find links to resources about the various API services available. 
+ms.date: 10/28/2023
 ---
 
+# API services
 
-# API Services
-
-
-
-
-
-- <a
-  href="authentication-service.md"
-  class="xref" target="_blank">Authentication Service</a>
-- <a
-  href="bidder-api-services.md"
-  class="xref" target="_blank">Bidder API Services</a>
-- <a
-  href="creative-api-services.md"
-  class="xref" target="_blank">Creative API Services</a>
-- <a
-  href="currency-service.md"
-  class="xref" target="_blank">Currency Service</a>
-- <a
-  href="deal-api-services.md"
-  class="xref" target="_blank">Deal API Services</a>
-- <a
-  href="domain-list-service.md"
-  class="xref" target="_blank">Domain List Service</a>
-- <a
-  href="member-service.md"
-  class="xref" target="_blank">Member Service</a>
-- <a
-  href="report-service.md"
-  class="xref" target="_blank">Report Service</a>
-- <a
-  href="saved-report-service.md"
-  class="xref" target="_blank">Saved Report Service</a>
-- <a
-  href="user-service.md"
-  class="xref" target="_blank">User Service</a>
-- <a
-  href="read-only-services.md"
-  class="xref" target="_blank">Read-Only Services</a>
-- <a
-  href="sell-side-services.md"
-  class="xref" target="_blank">Sell-Side Services</a>
-
-
-
-
-
-
+- [Authentication Service](authentication-service.md)
+- [Bidder API Services](bidder-api-services.md)
+- [Creative API Services](creative-api-services.md)
+- [Currency Service](currency-service.md)
+- [Deal API Services](deal-api-services.md)
+- [Domain List Service](domain-list-service.md)
+- [Member Service](member-service.md)
+- [Report Service](report-service.md)
+- [Saved Report Service](saved-report-service.md)
+- [User Service](user-service.md)
+- [Read-Only Services](read-only-services.md)
+- [Sell-Side Services](sell-side-services.md)
