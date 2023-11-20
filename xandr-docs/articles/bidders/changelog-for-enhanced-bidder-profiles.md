@@ -1,323 +1,53 @@
 ---
-Title : Changelog for Enhanced Bidder Profiles
-Description : Document to cover all changes between legacy bidder profiles and
-ms.date : 10/28/2023
-Enhanced Bidder Profiles.
+title : Bidders - Changelog for Enhanced Bidder Profiles
+description : This page covers all changes between legacy bidder profiles and Enhanced Bidder Profiles. 
+ms.date : 11/20/2023
+
 ---
 
 
-# Changelog for Enhanced Bidder Profiles
-
-
+# Bidders - Changelog for Enhanced Bidder Profiles
 
 Document to cover all changes between legacy bidder profiles and
 Enhanced Bidder Profiles.
 
-
-
 ## Changes in Targeting
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000024b9__entry__1"
-class="entry colsep-1 rowsep-1">Category</th>
-<th id="ID-000024b9__entry__2" class="entry colsep-1 rowsep-1">Legacy
-Bidder Profile Behavior</th>
-<th id="ID-000024b9__entry__3" class="entry colsep-1 rowsep-1">Enhanced
-Bidder Profile Behavior</th>
-<th id="ID-000024b9__entry__4" class="entry colsep-1 rowsep-1">More
-information</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__1"># of
-Fields</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">30+
-targetable fields</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3">11
-targetable fields</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__4"><a
-href="enhanced-bidder-profiles.md" class="xref">Enhanced Bidder
-Profiles</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Seller Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Can
-include/exclude individual seller members</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3"><ul>
-<li>Can target "Exchanges"</li>
-<li>Can still include/exclude certain members</li>
-<li>Can not individually include members who belong to the Direct
-Exchange (ID 1)</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__4"><a
-href="exchange-service.md" class="xref">Exchange Service</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Segment Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2"><ul>
-<li>Could either AND or OR across targeted segments</li>
-<li>Could either include/exclude on individual segments</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3">Not
-available.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__1">Size
-Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Size
-targets apply to all ad types</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3"><ul>
-<li>Size targets are specific to banner and video</li>
-<li>Size targets for banner/video are set separately</li>
-<li>User can not target size 1x1 or 0x0.</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__4"><a
-href="hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md"
-class="xref">Hierarchy and Ad Type Targeting</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__1">Ad
-Type Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2"><ul>
-<li>No explicit way to target or block ad types</li>
-<li>User could target the 1x1 size for native/video creatives</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3"><ul>
-<li>Explicit ad type targeting field</li>
-<li>User must explicitly exclude an ad type in the bidder profile to not
-receive that type of traffic</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__4"><a
-href="hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md"
-class="xref">Hierarchy and Ad Type Targeting</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Country Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Can
-include/exclude a list of countries</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__3">Behavior remains the same as legacy
-profile behavior</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Domain List Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Can
-include/exclude domain lists</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__3">Behavior remains the same as legacy
-profile</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Supply Types Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Can
-include/exclude supply types</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__3">Behavior remains the same as legacy
-profile</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Inventory Attributes Targeting</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">Can
-include/exclude inventory attributes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__3">Behavior remains the same as legacy
-profile</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Passthrough Percent</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">The
-percent (50 = 50%) of bid requests which satisfy your profile targeting
-that you receive, set in increments of 0.1.
-<p>Requests sent are randomly chosen, although you can choose to always
-receive requests for users in segments of members associated with your
-bidder.</p>
-<p>If set to 0, you will only receive requests for users in your
-members' segments.</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__3">Not
-available. Bidder should use QPS caps instead.</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__4"><a
-href="bidder-instance-service.md" class="xref">Bidder Instance
-Service</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__1">Nonaudited Url Action</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__2">If
-this is set to "exclude", all inventory that has not been audited by
-Xandr will be excluded. Otherwise, all inventory
-will be included.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__3">Behavior remains the same as legacy
-profile</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__4"></td>
-</tr>
-</tbody>
-</table>
+| Category                       | Legacy Bidder Profile Behavior                                                                                                                                                                                                                                                                                                                               | Enhanced Bidder Profile Behavior                                                                                                               | More information                |
+|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| # of Fields                    | 30+ targetable fields                                                                                                                                                                                                                                                                                                                                        | 11 targetable fields                                                                                                                           | [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)        |
+| Ad Type Targeting              | - No explicit way to target or block ad types <br> - User could target the 1x1 size for native/video creatives                                                                                                                                                                                                                                                        | - Explicit ad type targeting field <br> - User must explicitly exclude an ad type in the bidder profile to not receive that type of traffic             | [Hierarchy and Ad Type Targeting](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles) |
+| Country Targeting              | Can include/exclude a list of countries                                                                                                                                                                                                                                                                                                                      | Behavior remains the same as legacy profile behavior                                                                                           |                                 |
+| Domain List Targeting          | Can include/exclude domain lists                                                                                                                                                                                                                                                                                                                             | Behavior remains the same as legacy profile                                                                                                    |                                 |
+| Inventory Attributes Targeting | Can include/exclude inventory attributes                                                                                                                                                                                                                                                                                                                     | Behavior remains the same as legacy profile                                                                                                    |                                 |
+| Nonaudited Url Action          | If this is set to "exclude", all inventory that has not been audited by Xandr will be excluded. Otherwise, all inventory will be included.                                                                                                                                                                                                                   | Behavior remains the same as legacy profile                                                                                                    |                                 |
+| Passthrough Percent            | The percent (50 = 50%) of bid requests which satisfy your profile targeting that you receive, set in increments of 0.1. Requests sent are randomly chosen, although you can choose to always receive requests for users in segments of members associated with your bidder. If set to 0, you will only receive requests for users in your members' segments. | Not available. Bidder should use QPS caps instead.                                                                                             | Bidder Instance Service         |
+| Segment Targeting              | Could either AND or OR across targeted segments Could either include/exclude on individual segments                                                                                                                                                                                                                                                          | Not available.                                                                                                                                 |                                 |
+| Seller Targeting               | Can include/exclude individual seller members                                                                                                                                                                                                                                                                                                                | - Can target "Exchanges" <br> - Can still include/exclude certain members <br> - Can not individually include members who belong to the Direct Exchange (ID 1) | Exchange Service                |
+| Size Targeting                 | Size targets apply to all ad types                                                                                                                                                                                                                                                                                                                           | - Size targets are specific to banner and video <br> - Size targets for banner/video are set separately <br> - User can not target size 1x1 or 0x0.            | Hierarchy and Ad Type Targeting |
+| Supply Types Targeting         | Can include/exclude supply types                                                                                                                                                                                                                                                                                                                             | Behavior remains the same as legacy profile                                                                                                    |                                 |
+|                                |                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                |                                 |
 
+## Change in logic
 
+| Category  | Legacy Bidder Profile Behavior                                                                                                | Enhanced Bidder Profile Behavior                                     | More information                                             |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------|
+| Hierarchy | - Uses a parent/child hierarchy <br> - The parent profile must be met along with one of the child profiles in order to send impression | - Flat structure <br> - Impression must meet requirements of a single profile | [Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md) |
 
+## Changes in Bidder object
 
+The bidder object in reference is documented here: [Bidder Service](bidder-service.md)
 
-## Change in Logic
+| Category                   | Legacy Bidder Profile Behavior                                                                                                                                                                                                                                                                                                                                                                             | Enhanced Bidder Profile Behavior                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Activating Profile         | Profile must be attached to the bidder object in either the parent or child profiles field                                                                                                                                                                                                                                                                                                                 | Set active=1 on the profile in order to activate it. No modification is needed to the bidder object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| always_send_owned_segments | - Overrides the passthrough percent on the bidder profile <br> - Bidder will always receive traffic with a user in an owned or shared segment                                                                                                                                                                                                                                                                       | - Field is moved over to the profile: "user_not_in_segment_action" <br> - If include: Send the impression regardless of whether the user exists in a segment owned by or shared with the bidder. All other fields in the bidder profile should be taken into account. <br> - If exclude: Only send impressions where the user exists in a segment owned by or shared with the bidder. QPS restrictions should apply to this field. The bidder doesn't have to explicitly state the segment in the segment actions. Impressions where the user does not exist in a segment owned by or shared with the bidder should not be sent. All other fields on the bidder profile will be taken into account. <br> - The "always_send_owned_segments" field in the bidder object will be ignored. |
+| override_for_deals         | Determines whether or not to use the bidder profile to determine if a bid request should be sent. Deals are usually negotiated directly between sellers and buyers and are generally not subject to bidder profile restrictions. <br> - `true`: Ignore the bidder profile and send bid request regardless of bidder profile <br> - `false` (default): Use bidder profile to determine whether the bid request should be sent | No change; behavior is the same as in legacy profile
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000024b9__entry__49"
-class="entry colsep-1 rowsep-1">Category</th>
-<th id="ID-000024b9__entry__50" class="entry colsep-1 rowsep-1">Legacy
-Bidder Profile Behavior</th>
-<th id="ID-000024b9__entry__51" class="entry colsep-1 rowsep-1">Enhanced
-Bidder Profile Behavior</th>
-<th id="ID-000024b9__entry__52" class="entry colsep-1 rowsep-1">More
-information</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__49">Hierarchy</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__50"><ul>
-<li>Uses a parent/child hierarchy</li>
-<li>The parent profile must be met along with one of the child profiles
-in order to send impression</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__51"><ul>
-<li>Flat structure</li>
-<li>Impression must meet requirements of a single profile</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__52"><a
-href="hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md"
-class="xref">Hierarchy and Ad Type Targeting for Enhanced Bidder
-Profiles</a></td>
-</tr>
-</tbody>
-</table>
+## Related topics
 
-
-
-
-
-## Changes in Bidder Object
-
-The bidder object in reference is documented here: <a
-href="bidder-service.md"
-class="xref" target="_blank">Bidder Service</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000024b9__entry__57"
-class="entry colsep-1 rowsep-1">Category</th>
-<th id="ID-000024b9__entry__58" class="entry colsep-1 rowsep-1">Legacy
-Bidder Profile Behavior</th>
-<th id="ID-000024b9__entry__59" class="entry colsep-1 rowsep-1">Enhanced
-Bidder Profile Behavior</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__57">always_send_owned_segments</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__58"><ul>
-<li>Overrides the passthrough percent on the bidder profile</li>
-<li>Bidder will always receive traffic with a user in an owned or shared
-segment</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__59"><ul>
-<li>Field is moved over to the profile: "user_not_in_segment_action"
-<ul>
-<li>If include: Send the impression regardless of whether the user
-exists in a segment owned by or shared with the bidder. All other fields
-in the bidder profile should be taken into account.</li>
-<li>If exclude: Only send impressions where the user exists in a segment
-owned by or shared with the bidder. QPS restrictions should apply to
-this field. The bidder doesn't have to explicitly state the segment in
-the segment actions. Impressions where the user does not exist in a
-segment owned by or shared with the bidder should not be sent. All other
-fields on the bidder profile will be taken into account.</li>
-</ul></li>
-<li>The "always_send_owned_segments" field in the bidder object will be
-ignored.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__57">Activating Profile</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__58">Profile must be attached to the bidder
-object in either the parent or child profiles field</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__59">Set
-active=1 on the profile in order to activate it. No modification is
-needed to the bidder object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__57">override_for_deals</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000024b9__entry__58">Determines whether or not to use the
-bidder profile to determine if a bid request should be sent. Deals are
-usually negotiated directly between sellers and buyers and are generally
-not subject to bidder profile restrictions.
-<ul>
-<li><code class="ph codeph">true</code>: Ignore the bidder profile and
-send bid request regardless of bidder profile</li>
-<li><code class="ph codeph">false</code> (default): Use bidder profile
-to determine whether the bid request should be sent</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000024b9__entry__59">No
-change; behavior is the same as in legacy profile</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Related Topics
-
-- <a href="enhanced-bidder-profiles.md" class="xref">Enhanced Bidder
-  Profiles</a>
-- <a href="exchange-service.md" class="xref">Exchange Service</a>
-- <a
-  href="hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md"
-  class="xref">Hierarchy and Ad Type Targeting for Enhanced Bidder
-  Profiles</a>
-- <a href="api-use-cases-for-enhanced-bidder-profiles.md"
-  class="xref">API Use Cases for Enhanced Bidder Profiles</a>
-- <a
-  href="frequently-asked-questions-faq-for-enhanced-bidder-profiles.md"
-  class="xref">Frequently Asked Questions (FAQ) for Enhanced Bidder
-  Profiles</a>
-
-
-
-
-
-
+- [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)
+- [Exchange Service](exchange-service.md)
+- [Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
+- [API Use Cases for Enhanced Bidder Profiles](api-use-cases-for-enhanced-bidder-profiles.md)
+- [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md)

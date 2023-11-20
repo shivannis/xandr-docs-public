@@ -1,14 +1,12 @@
 ---
-Title : Common Discrepancy Causes - FAQ
-Description : - Your system and the Xandr system are not counting impression and spend
-ms.date : 10/28/2023
-the same way.
+title : Bidders - Common Discrepancy Causes(FAQ)
+description : - Learn FAQs on Common Discrepancy Causes. 
+ms.date : 11/20/2023
+
 ---
 
 
-# Common Discrepancy Causes - FAQ
-
-
+# Bidders - Common discrepancy causes(FAQ)
 
 - Your system and the Xandr system are not counting impression and spend
   the same way.
@@ -32,10 +30,7 @@ the same way.
 - All the creatives are not using \<no_script\>.
 - Flash creatives or DCO creatives are not using a default or backup
   image creative.
-- Creatives are not used with the correct template_id. (See <a
-  href="selecting-the-correct-template-for-your-creative.md"
-  class="xref" target="_blank">Selecting the Correct Template for Your
-  Creative</a>.)
+- Creatives are not used with the correct template_id. (See [Selecting the Correct Template for Your Creative](selecting-the-correct-template-for-your-creative.md))
 - Third-party provider (DCO , swapping, viewability, security) is
   avoiding the creative display outside campaign scope based on IP or
   latitude/longitude geo location.
@@ -46,7 +41,6 @@ the same way.
 - Counting pixel or creative servers hosted on a server that is slow to
   load or using CNAME.
 
->
 
 ## Information to provide when opening a discrepancy case
 
@@ -58,15 +52,8 @@ the same way.
   - By placement id
   - By tag id
   - By domain
-  - By <a href="http://creative.id/" class="xref"
-    target="_blank">creative.id</a> (the creative id of the Xandr
+  - By [ creative.id](https://www.creative.id/) (the creative id of the Xandr
     creative object)
   - By creative.code (if used, should be the creative id from your side)
   - By Geo
   - By hours, on last 7 days
-
-
-
-
-
-

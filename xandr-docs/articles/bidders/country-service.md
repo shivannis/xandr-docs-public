@@ -1,147 +1,40 @@
 ---
-Title : Country Service
-Description : The read-only Country Service allows you to see information about the
-ms.date : 10/28/2023
-countries registered in the Xandr system. You
+title : Bidders - Country Service
+description : Learn how the read-only Country Service allows you to see information about the countries registered in the Xandr system.
+ms.date : 11/20/2023
+
 ---
 
 
-# Country Service
-
-
+# Bidders - Country service
 
 The read-only Country Service allows you to see information about the
 countries registered in the Xandr system. You
-can use this service to retrieve the IDs for targeting in <a
-href="legacy-bidder-profile-service.md"
-class="xref" target="_blank">profiles</a>.
-
-
+can use this service to retrieve the IDs for targeting in [profiles](legacy-bidder-profile-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000081b6__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000081b6__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000081b6__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__2"><a
-href="https://api.adnxs.com/country" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/country</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__3">View
-all countries.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__2"><a
-href="https://api.adnxs.com/country?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/country?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__3">View
-a specific country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__2"><a
-href="https://api.adnxs.com/country?name=NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/country?name=NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__3">View
-a specific country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__2"><a
-href="https://api.adnxs.com/country?code=CODE" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/country?code=CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__3">View
-a specific country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__2"><a
-href="https://api.adnxs.com/country/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/country/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint                                | Description                                       |
+|-------------|-----------------------------------------|---------------------------------------------------|
+| GET         | [https://api.adnxs.com/country](https://api.adnxs.com/country)           | View all countries.                               |
+| GET         | [https://api.adnxs.com/country?id=ID](https://api.adnxs.com/country?id=ID)    | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country?name=NAME](https://api.adnxs.com/country?name=NAME) | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country?code=CODE](https://api.adnxs.com/country?code=CODE) | View a specific country.                          |
+| GET         | [https://api.adnxs.com/country/meta](https://api.adnxs.com/country/meta)      | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000081b6__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000081b6__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000081b6__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__19"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__21">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__21">The
-ID of the country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000081b6__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000081b6__entry__21">The
-name of the country.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type   | Description                   |
+|-------|--------|-------------------------------|
+| `code`  | enum   | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country. |
+| `id`    | int    | The ID of the country.        |
+| `name`  | string | The name of the country.      |
 
 ## Examples
 
 **View all countries**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country'
 {
     "response": {
@@ -176,7 +69,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country'
 
 **View a specific country by ID**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?id=59'
 {
     "response": {
@@ -198,7 +91,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country?id=59'
 
 **View a specific country by code**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?code=DE'
 {
     "response": {
@@ -222,7 +115,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country?code=DE'
 
 **View all countries that contain "United" in their names**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?like_name=United'
 {
     "response": {
@@ -263,9 +156,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country?like_name=United'
     }
 }     
 ```
-
-
-
-
-
-
