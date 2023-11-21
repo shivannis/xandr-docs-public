@@ -2,7 +2,6 @@
 title: Bidders - Batch Segment Service Best Practices 
 description: In this article, find information about the best practices to use Batch Segment Service (BSS) and answers to some frequently asked questions about BSS.
 ms.date: 10/28/2023
-external segment data to Xandr. Using BSS, you can easily integrate your
 ---
 
 # Bidders - Batch segment service best practices 
