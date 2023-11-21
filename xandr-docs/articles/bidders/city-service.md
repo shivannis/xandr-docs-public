@@ -31,10 +31,10 @@ targeting in campaigns (see `city_targets` in the [Enhanced Bidder Profiles](enh
 
 | Field        | Type   | Description                                                                                                                                                |
 |--------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `country_code` | enum   | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country to which the city belongs. You can use the [Country Service](country-service) to retrieve a complete list of country codes.                      |
-| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service) to retrieve a complete list of country names.                           |
+| `country_code` | enum   | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes.                      |
+| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names.                           |
 | `dma_id`       | int    | The ID of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma IDs.     |
-| `dma_name`     | string | The name of the designated market area to which the city belongs. You can use the Designated Market Area Service to retrieve a complete list of dma names. |
+| `dma_name`     | string | The name of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma names. |
 | `id`           | int    | The ID of the city.                                                                                                                                        |
 | `name`         | string | The name of the city.                                                                                                                                      |
 | `region_id`    | int    | The ID of the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region IDs.                                  |

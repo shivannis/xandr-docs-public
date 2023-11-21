@@ -1,12 +1,12 @@
 ---
-title : Bidders - Common Discrepancy Causes(FAQ)
-description : - Learn FAQs on Common Discrepancy Causes. 
+title : Bidders - Common Discrepancy Causes (FAQ)
+description : Learn FAQs on Common Discrepancy Causes. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Common discrepancy causes(FAQ)
+# Bidders - Common discrepancy causes (FAQ)
 
 - Your system and the Xandr system are not counting impression and spend
   the same way.

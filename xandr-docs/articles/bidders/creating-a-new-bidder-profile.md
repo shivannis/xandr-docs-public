@@ -48,6 +48,4 @@ targeting options](bidder-profile-targeting-options.md) that must be set up as p
 - [Ad Types](ad-types.md)
 - [Supply Types](supply-types.md)
 - [Exchanges and Members](exchanges-and-members.md)
-- [Sensitive Attributes](sensitive-attributes.md)<a
-  href="sensitive-attributes.md"
-  class="xref" target="_blank">Sensitive Attributes</a>
+- [Sensitive Attributes](sensitive-attributes.md)

@@ -34,7 +34,7 @@ have a null parent_category_id.
 | `is_system`       | bool      | If true, the content category is defined by Xandr.                                                                                                                       |
 | `last_modified`   | timestamp | The date and time that this content category was last modified.                                                                                                          |
 | `name`            | string    | The name of the content category.                                                                                                                                        |
-| `parent_category` | object    | If the category is the child of a parent category, the ID and name of the parent is listed here in the following format: "parent_category": { "id":10, "name": "Games" } |
+| `parent_category` | object    | If the category is the child of a parent category, the ID and name of the parent is listed here in the following format: `"parent_category": { "id":10, "name": "Games" }` |
 
 ## Example
 

@@ -20,7 +20,7 @@ in the samples below, search for `CLICK_URL`.
 
 | Macro            | Description                                                                                                            |
 |------------------|------------------------------------------------------------------------------------------------------------------------|
-| `${CLICK_URL}`     | The click tracking URL. For example:  `https://xandr.com`a                                                                |
+| `${CLICK_URL}`     | The click tracking URL. For example:  `https://xandr.com`                                                                |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example:  `https%3A%2F%2Fxandr.com` |
 
 **Cache-busting**
@@ -337,7 +337,7 @@ SRC="http://oasn04.247realmedia.com/RealMedia/ads/adstream_jx.ads/XXXXX/XXXXX/XX
 </script>
 ```
 
-PointRoll
+**PointRoll**
 
 ```
 <script type="text/javascript">
