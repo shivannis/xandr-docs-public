@@ -15,20 +15,20 @@ This read-only service lets bidders view information about the negotiated deals 
 
 | HTTP Method | Endpoint | Description |
 |--|--|--|
-| GET | [https://api.adnxs.com/deal-buyer-access](https://api.adnxs.com/deal-buyer-access) | View all deals you have with sellers. |
-| GET | [https://api.adnxs.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID](https://api.adnxs.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID) | View all deals you have with a specific seller. |
-| GET | [https://api.adnxs.com/deal-buyer-access?id=DEAL_ID](https://api.adnxs.com/deal-buyer-access?id=DEAL_ID) | View a specific deal. |
-| GET | [https://api.adnxs.com/deal-buyer-access?id=1,2,3](https://api.adnxs.com/deal-buyer-access?id=1,2,3) | View multiple deals by ID using a comma-separated list. |
-| GET | [https://api.adnxs.com/deal-buyer-access?search="Deal_ID, DEAL_NAME,  or CODE"](https://api.adnxs.com/deal-buyer-access?search)| Search for a deal by name, ID, or code. |
-| GET | [https://api.adnxs.com/deal-buyer-access/meta](https://api.adnxs.com/deal-buyer-access/meta) | Find out which fields you can filter and sort by. |
+| GET | `https://api.adnxs.com/deal-buyer-access` | View all deals you have with sellers. |
+| GET | `https://api.adnxs.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID` | View all deals you have with a specific seller. |
+| GET | `https://api.adnxs.com/deal-buyer-access?id=DEAL_ID` | View a specific deal. |
+| GET | `https://api.adnxs.com/deal-buyer-access?id=1,2,3` | View multiple deals by ID using a comma-separated list. |
+| GET | `https://api.adnxs.com/deal-buyer-access?search="Deal_ID, DEAL_NAME, or CODE`| Search for a deal by name, ID, or code. |
+| GET | `https://api.adnxs.com/deal-buyer-access/meta` | Find out which fields you can filter and sort by. |
 
-## JSON Fields
+## JSON fields
 
 | Field | Type (Length) | Description |
 |---|---|---|
 | `active` | boolean | If true, the deal is active. Note that the deal will be available only when this field is true, `start_date` is in the past (or null), and `end_date` is in the future (or null). |
 | `ask_price` | int | The  price associated with the deal. This is the minimum amount the seller will accept for this inventory. |
-| `brands` | array of objects | The brands of creatives that are eligible for the deal. For more details, see [Brands](deal-buyer-access-service#brands) below. |
+| `brands` | array of objects | The brands of creatives that are eligible for the deal. For more details, see [Brands](deal-buyer-access-service.md#brands) below. |
 | `buyer` | object | The buying bidder and member who can target this deal. For more details, see [Buyer](deal-buyer-access-service.md#buyer) below. |
 | `buyer_bidders` | array of objects | The buying bidder who can target this deal. For more details, see [Buyer Bidders](deal-buyer-access-service.md#buyer-bidders) below. |
 | `buyer_members` | array of objects | The buying bidder and members who can target this deal. For more details, see [Buyer Members](deal-buyer-access-service.md#buyer-members) below. |
@@ -45,7 +45,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `sizes` | array of objects | The sizes of creatives that are eligible for the deal. For more details, see [Sizes](deal-buyer-access-service.md#sizes) below.<br>**Note**: If this array is not present in the response, there are no creative size requirements for the deal.|
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. Null corresponds to "immediately". |
 | `suggested_min_bid_price` | int | The same amount as the `ask_price`.<br>**Note**: Your minimum bid should be higher than the `ask_price` to account for the auction service charges specified in your Xandr contract. For deals with external suppliers, your bid should also include additional margin to account for discrepancies. Bidding the more than the `ask_price` helps ensure that you are eligible for the deal but there is no guarantee that your bid will win. |
-| `type` | object | The type of deal. A deal can be an open auction or a private auction. For more details, see [Type](deal-buyer-access-service#type) below. |
+| `type` | object | The type of deal. A deal can be an open auction or a private auction. For more details, see [Type](deal-buyer-access-service.md#type) below. |
 | `use_deal_floor` | boolean | If true, the `floor_price` is applied for the deal.<br>**Note**: When `use_deal_floor` is true, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
 
 ## Seller
@@ -115,7 +115,7 @@ The `buyer_seats` object contains the following fields.
 | `id` | int | The member ID of the buyer. |
 | `name` | string | The member name of the buyer. |
 
-## Buyer Bidders
+## Buyer bidders
 
 The buying bidders who can target this deal. For a seller who uses multi-buyer deals, the buyer_bidders object can be set in combination with buyer_seats and buyer_members. They cannot be set in combination with buyer.
   
@@ -142,6 +142,7 @@ The `type` object contains the following fields.
 |---|---|---|
 | `id`  | int | The ID representing the type of deal. Possible values:<br>1 = Open Auction<br>In an "Open Auction", **buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.** If a buyer targeting a deal submits the highest bid and the bid clears the deal's floor, that buyer wins the auction, paying either the second-highest bid or the deal floor price, whichever is higher. If one of the non-deal buyers submits the highest bid, that buyer wins the auction, paying either the second-highest bid or ECP, whichever is higher. <br>2 = Private Auction<br>In a "Private Auction", **buyers targeting the private deals compete for the impression first.** Then, if none of the deal buyers win, the auction is opened to buyers targeting the inventory via other means. If a buyer targeting a deal submits a bid higher than the deal's floor and higher than any other private auction bids, that buyer wins the auction, paying either the second-highest bid from the private auction or the deal floor price, whichever is higher. If no private auction deals clear their floors, the highest bid in the open auction wins, paying either the second-highest bid from the open auction or ECP, whichever is higher.<br>For examples showing how these different types of auctions work, see Deal Auction Mechanics.  |
 | `name` | string | The name of the type of deal. Possible values: "Open Auction", "Private Auction", or "First Look". |
+
 ## Brands
 
 Each `brands` object contains the following fields.
@@ -162,7 +163,7 @@ Each object in the `sizes` array contains the following fields.
 
 ## Examples
 
-### View all deals you have with sellers
+**View all deals you have with sellers**
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access'
@@ -247,7 +248,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access'
 }
 ```
 
-### View all deals you have with a specific seller
+**View all deals you have with a specific seller**
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?seller_member_id=100006'
@@ -294,7 +295,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?seller_mem
 }
 ```
 
-### View a specific deal
+**View a specific deal**
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=63'
@@ -340,7 +341,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=63'
 }
 ```
 
-### View a specific deal (w/ Seat Code)
+**View a specific deal (w/ Seat Code)**
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=689280'
@@ -425,7 +426,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=689280'
 
 ```
 
-### View all deals that have not expired
+**View all deals that have not expired**
 
 In this example, assuming today is December 4, 2013, we want to find all deals that have not expired. To do this, we pass the `min_end_date="2013-12-04 00:00:00"` filter in the query string. Please Note that however, that deals with no end date will not show up in the response.
 
