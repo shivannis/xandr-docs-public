@@ -1,8 +1,7 @@
 ---
-title: Deal Buyer Access Service
-description: The article explains deal buyer access service.
+title: Microsoft Bidders - Deal Buyer Access Service
+description: The article explains deal buyer access service, REST API, and the JSON fields.
 ms.date: 10/28/2023
-
 ---
 
 # Deal buyer access service
@@ -38,7 +37,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `currency` | enum | The currency for the `floor_price`. |
 | `description` | string (65535) | The description of the deal. |
 | `end_date` | timestamp | The day and time when the deal stops being available to the buyer. Null corresponds to "indefinitely". |
-| `floor_price` | double | Deprecated. Please refer to `ask_price` instead. The minimum CPM value that the bidder must bid to be eligible for the deal.<br>**Note**: If `use_deal_floor` is false, `floor_price` will be 0. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
+| `floor_price` | double | **Deprecated. Please refer to** `ask_price` **instead**. The minimum CPM value that the bidder must bid to be eligible for the deal.<br>**Note**: If `use_deal_floor` is false, `floor_price` will be 0. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
 | `id` | int | The ID of the deal. This is the field you will receive on the bid request. Note that if you set up a deal with an external seller and funnel it through Xandr, we will turn their code into this ID. |
 | `last_modified` | timestamp | The date and time when the deal was last modified. |
 | `name` | string (255) | The name of the deal. |
@@ -47,14 +46,13 @@ This read-only service lets bidders view information about the negotiated deals 
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. Null corresponds to "immediately". |
 | `suggested_min_bid_price` | int | The same amount as the `ask_price`.<br>**Note**: Your minimum bid should be higher than the `ask_price` to account for the auction service charges specified in your Xandr contract. For deals with external suppliers, your bid should also include additional margin to account for discrepancies. Bidding the more than the `ask_price` helps ensure that you are eligible for the deal but there is no guarantee that your bid will win. |
 | `type` | object | The type of deal. A deal can be an open auction or a private auction. For more details, see [Type](deal-buyer-access-service#type) below. |
-| `use_deal_floor` | boolean | If true, the floor_price is applied for the deal.<br>**Note**: When `use_deal_floor` is true, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
-
+| `use_deal_floor` | boolean | If true, the `floor_price` is applied for the deal.<br>**Note**: When `use_deal_floor` is true, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
 
 ## Seller
 
 The `seller` object contains the following fields.
 
-| Field | Type | Description |
+| **Field** | **Type** | **Description** |
 |--|--|--|
 | `id` | int | The member ID of the seller. |
 | `name` | string | The member name of the seller. |
@@ -68,7 +66,7 @@ The buyer field cannot be updated by the seller. Once a deal is created with a b
   
 The `buyer` object contains the following fields.
 
-| Field | Type | Description |
+| **Field** | **Type** | **Description** |
 |--|--|--|
 | `bidder_id` | int | The bidder ID of the member. |
 | `id` | int | The member ID of the buyer. |

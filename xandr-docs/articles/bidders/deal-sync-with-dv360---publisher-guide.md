@@ -1,9 +1,8 @@
 ---
-title: Deal Sync with DV360 - Publisher Guide 
+title: Microsoft Bidders - Deal Sync with DV360 - Publisher Guide 
 description: The article describes Xandr's integration with DV360 Seller API syncs deals created in Xandr Monetize with Google DV360, streamlining transactions for publishers and buyers.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
-
 
 # Deal sync with DV360 - publisher guide 
 
@@ -16,13 +15,14 @@ ms.date : 10/28/2023
 Xandr's integration with the Display & Video 360 (DV360) Seller API automatically synchronizes the deals created in
 Microsoft Monetize with the Google DV360 system. This enables a more seamless deal transaction between Microsoft Monetize publishers and DV360 buyers.
 
-You can manually set up deals with DV360, but this requires buyers to manually register publisher deals in the DV360 user interface. Details of the manual process can be found in [DV360 Buying Guide](dv360-buying-guide.md). The manual process of setting up deals can result in delays and issues due to human error.
+> [!NOTE]
+> You can manually set up deals with DV360, but this requires buyers to manually register publisher deals in the DV360 user interface. Details of the manual process can be found in [DV360 Buying Guide](dv360-buying-guide.md). The manual process of setting up deals can result in delays and issues due to human error.
 
 The key benefits of using an automatic synchronization process are:
 
 - Seamless deal set up process with DV360 buyers.
 - Elimination of requirement for buyers to manually register deals in
-  the DV360 UI. 
+  the DV360 UI.
 - Automatic deal synchronization of deals and deal updates from Monetize
   to DV360 (with some restrictions, which are explained below).  
 

@@ -1,10 +1,10 @@
 ---
-title: Deal From Package Service
+title: Microsoft Bidders - Deal From Package Service
 description: The article outlines a process involving package services, where sellers offer deals (packages) to buyers. Buyers use the Package Buyer Access Service to browse and select a suitable package, then utilize the Deal From Package service to create a deal with the seller.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
-# Deal From Package Service
+# Microsoft bidders - deal from package service
 
 A package is a deal that a seller is prepared to offer to any buyer. Buyer members use the [Package Buyer Access Service](package-buyer-access-service.md) to browse available packages and find one that meets their needs. Then buyers use the Deal From Package service to generate a deal between themselves and the seller.
 
@@ -20,8 +20,8 @@ Once you have generated a deal, you can view deal details including description 
 
 | **Name** | **Type** | **Description** |
 |---|---|---|
-| `id` | int | The ID of the deal creation record.<br>**Default**: auto-generated number. |
-| `package_id` | int | The ID of the package from which you are generating a deal. You can use the [Package Buyer Access](package-buyer-access-service.md) Service to get package IDs.<br>**Required On**: POST. |
+| `id` | int | The ID of the deal creation record.<br> - **Default**: auto-generated number. |
+| `package_id` | int | The ID of the package from which you are generating a deal. You can use the [Package Buyer Access](package-buyer-access-service.md) Service to get package IDs.<br> - **Required On**: POST. |
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
-title: Deal Sync with Trade Desk - Publisher Guide
+title: Microsoft Bidders - Deal Sync with Trade Desk - Publisher Guide
 description: The article provides a publisher guide that specifically focuses on synchronizing deals with Trade Desk.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 # Deal sync with trade desk - publisher Guide
 
@@ -29,7 +29,7 @@ New seat id deals created in the Monetize UI automatically get uploaded to Trade
 
 :::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-a.png" alt-text="The screenshot that illustrates the newly created seat ID deals in the Monetize UI is automatically uploaded to Trade Desk systems for buyer approval:":::
 
-## Deal update
+### Deal update
 
 Updates to newly created deals (post deal sync enablement) automatically get uploaded to Trade Desk systems for buyer acceptance:
 
@@ -53,14 +53,14 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 
 ## Best practices for deal setup
 
-### 1:1 Deals and exchange curated deals (ECDs)
+**1:1 Deals and exchange curated deals (ECDs)**
 
 - Deals must be set up with Trade Desk partner IDs. This deal synchronizing process does not support member ID deals.
 - Once a partner ID is selected for a deal, it cannot be changed in subsequent updates.
 - Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
   deal in the Trade Desk UI.
 
-### Programmatic guaranteed (PG) deals
+**Programmatic guaranteed (PG) deals**
 
 - Deals must be set up with Trade Desk partner IDs. This deal sync process does not support member ID deals.
 - You cannot change the Trade Desk partner ID once the deal is created.
@@ -69,7 +69,7 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 - Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
   deal in the Trade Desk UI.
 
-### Multi-buyer deals
+**Multi-buyer deals**
 
 - Deals set up with multiple Trade Desk seat ids automatically get synchronized.
 - Bidder-level deals (set up with ALL Trade Desk buyers) are not supported in automatic deal synchronizing.

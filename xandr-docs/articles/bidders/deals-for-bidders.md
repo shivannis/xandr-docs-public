@@ -1,15 +1,15 @@
 ---
-title: Deals for Bidders
+title: Microsoft Bidders - Deals for Bidders
 description: The article explains the deals for bidders.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Deals for bidders
 
 Xandr offers the ability to bid on deals with our platform sellers. This page walks you through the bidding process.
 
-A deal auction can be open or private, depending on how the seller defined the deal. For information about how these different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md).
-
+> [!TIP]
+> A deal auction can be open or private, depending on how the seller defined the deal. For information about how these different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md).
 > [!NOTE]
 > The member cannot be changed after a deal has been created.
 
@@ -28,7 +28,7 @@ Once you've configured your system to handle deal ID requests and responses appr
 - Validating how you decision and respond to deal requests
 - Making you visible to sellers in our system
 
-## Step 3. Tell your buyers to start negotiating deals
+### Step 3. Tell your buyers to start negotiating deals
 
 Your buyers will negotiate deals with sellers directly. Xandr is not involved in the process. Here's the process that your buyers should follow:
 
@@ -90,9 +90,10 @@ $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'
              "suggested_min_bid_price" : 3
          }
      }
+}
 ```
 
-## Example request/response chain
+### Example request/response chain
 
 > [!NOTE]
 > This example is for the Xandr integration of the AppNexus Bidding Protocol.
@@ -228,16 +229,16 @@ $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'
 }
 ```
 
-## Notify request error codes
+### Notify request error codes
 
 Deal-specific error codes, see [Bid Error Codes](bid-error-codes.md).
 
 | **Error** | **ID** | **Description** |
 |--|--|--|
-| NEC_DEAL_NOT_AVAILABLE | 308 | The deal you specified in your response is not currently active. |
-| NEC_DEAL_NO_MEMBER | 309 | The deal you specified in your response is not available to your member. |
-| NEC_DEAL_BELOW_FLOOR | 310 | Your bid was not considered in the auction because it is below the deal's ask price. |
-| NEC_DEAL_BRAND_BANNED | 311 | The brand associated with your creative is not a valid brand for this deal. |
+| `NEC_DEAL_NOT_AVAILABLE` | 308 | The deal you specified in your response is not currently active. |
+| `NEC_DEAL_NO_MEMBER` | 309 | The deal you specified in your response is not available to your member. |
+| `NEC_DEAL_BELOW_FLOOR` | 310 | Your bid was not considered in the auction because it is below the deal's ask price. |
+| `NEC_DEAL_BRAND_BANNED` | 311 | The brand associated with your creative is not a valid brand for this deal. |
 
 ## Related topics
 

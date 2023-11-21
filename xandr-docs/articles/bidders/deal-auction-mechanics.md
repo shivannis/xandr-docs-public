@@ -1,7 +1,7 @@
 ---
-title: Deal Auction Mechanics
+title: Microsoft Bidders - Deal Auction Mechanics
 description: The article outlines the deal auction mechanism in digital advertising, focusing on scenarios where inventory in an "open auction" deal is up for bidding. The mechanism involves a dynamic process where bids determine the winning advertiser for a given advertising space.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 # Deal auction mechanics
 
@@ -28,22 +28,23 @@ inventory via other means, compete for the impression.
 > - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-## Examples
+## Examples for successful deal bids and non-deal bids
 
 ### Deal bid wins
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="The screenshot that provides an explanation of Deal Bid Wins":::
 
-### Non-deal bid wins
+### Non-deal bid wins - case 1
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp.png" alt-text="The screenshot that provides the details of non-Deal Bid Wins":::
 
-### Non-Ddeal bid wins
+### Non-deal bid wins - case 2
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b.png" alt-text="The screenshot that provides an explanation of non-Deal Bid Wins":::
 
 > [!IMPORTANT]
 > **Why does this example have two floors? And why does the non-deal bid win?**
+>
 > In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
 > The highest non-deal bid wins because:
 >
@@ -59,7 +60,7 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 - If a buyer targeting the deal submits a bid higher than the deal's ask  price and higher than any other private auction bids, that buyer wins the auction, paying the bid price.
 - If no private auction bids clear their ask prices, the highest bid in the open auction wins, paying the bid price.
 
-## Examples
+## Examples for deal bid wins in private auction
 
 ### Deal bid wins in private auction (no open auction held)
 
@@ -67,11 +68,11 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 
 ### Higher priority deal bid wins in private auction (no open auction held)
 
-:::image type="content" source="media/private-auction-high-priority-wins-fp.png" alt-text="The screenshot illustrates how higher priority deal bids secure wins in private auctions without open auctions.":::
+:::image type="content" source="media/private-auction-high-priority-wins-fp.png" alt-text="The screenshot that illustrates how higher priority deal bids secure wins in private auctions without open auctions.":::
 
 ### Non-deal bid wins in open auction (no private auction winner)
 
-:::image type="content" source="media/private-auction-non-deal-bid-wins-fp.png" alt-text="The screenshot illustrates how higher priority deal bids secure wins in private auctions without open auctions.":::
+:::image type="content" source="media/private-auction-non-deal-bid-wins-fp.png" alt-text="The screenshot that illustrates how higher priority deal bids secure wins in open auctions.":::
 
 ## Deal prices and yield management rules
 
@@ -108,6 +109,6 @@ Yield management biases will still be applied to deal bids, even if you have set
 
 ## Related Topic
 
-- [Buying Deals](monetize_monetize-standard/buying-deals.md)
-- [Selling Deals](smonetize_monetize-standard/selling-deals.md)
-- [Create a Floor Rule](monetize_monetize-standard/create-a-floor-rule.md)
+- [Buying Deals](../monetize/buying-deals.md)
+- [Selling Deals](../monetize/selling-deals.md)
+- [Create a Floor Rule](../monetize/create-a-floor-rule.md)

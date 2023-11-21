@@ -1,12 +1,12 @@
 ---
-title: Deal Screen
-Description: The article describes the deals screen that displays Xandr publisher deals with buyers, providing bidders with information. To access more details, bidders can utilize the Deal Buyer Access Service.
+title: Microsoft Bidders - Deal Screen
+description: The article describes the deals screen that displays Xandr publisher deals with buyers, providing bidders with information, and how the bidders can utilize the deal buyer Access Service to access more details.
 ms.date: 10/28/2023
 ---
 
 # Deal screen
 
-The Deals screen is where a bidder can see the deals Xandr publishers have set up with their buyers and get further details about the deal. For additional details on the deal, bidders can use the [Deal Buyer Access Service](deal-buyer-access-service.md).
+The **Deals** screen is where a bidder can see the deals Xandr publishers have set up with their buyers and get further details about the deal. For additional details on the deal, bidders can use the [Deal Buyer Access Service](deal-buyer-access-service.md).
 
 ## Deal screen access
 
@@ -26,22 +26,20 @@ columns displayed:
 | **Sellers** | Yes | The selling member who is offering the deal. <br>Both the ID and name for the seller is listed in this column. |
 | **Activity Status** | Yes | Indicates if deal is Active or Inactive. |
 |**Deal Name/ID** | Yes | Name of the deal and Xandr Deal ID. |
-| **Deal Types** | Yes | The type of deal. A deal can be an **open auction** or a **private auction**.<br>Open Auction<br>: In an "Open Auction", **buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.** If a buyer targeting a deal submits the highest bid and the bid clears the deal's floor, that buyer wins the auction, paying either the second-highest bid or the deal floor price, whichever is higher. If one of the non-deal buyers submits the highest bid, that buyer wins the auction, paying either the second-highest bid or ECP, whichever is higher. <br>Private Auction<br>: In a "Private Auction", **buyers targeting the private deals compete for the impression first**. Then, if none of the deal buyers win, the auction is opened to buyers targeting the inventory via other means. If a buyer targeting a deal submits a bid higher than the deal's floor and higher than any other private auction bids, that buyer wins the auction, paying either the second-highest bid from the private auction or the deal floor price, whichever is higher. If no private auction deals clear their floors, the highest bid in the open auction wins, paying either the second-highest bid from the open auction or ECP, whichever is higher.<br>For examples showing how these different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md). |
+| **Deal Types** | Yes | The type of deal. A deal can be an **open auction** or a **private auction**.<br> - **Open Auction**<br>: In an "Open Auction", **buyers targeting the deals and buyers targeting the inventory via other means compete for the impression.** If a buyer targeting a deal submits the highest bid and the bid clears the deal's floor, that buyer wins the auction, paying either the second-highest bid or the deal floor price, whichever is higher. If one of the non-deal buyers submits the highest bid, that buyer wins the auction, paying either the second-highest bid or ECP, whichever is higher. <br> - **Private Auction**<br>: In a "Private Auction", **buyers targeting the private deals compete for the impression first**. Then, if none of the deal buyers win, the auction is opened to buyers targeting the inventory via other means. If a buyer targeting a deal submits a bid higher than the deal's floor and higher than any other private auction bids, that buyer wins the auction, paying either the second-highest bid from the private auction or the deal floor price, whichever is higher. If no private auction deals clear their floors, the highest bid in the open auction wins, paying either the second-highest bid from the open auction or ECP, whichever is higher.<br>For examples showing how these different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md). |
 | **Ask Price**| No | The  price associated with the deal. This is the minimum amount the seller will accept for this inventory. |
 | **Start Date** | Yes | The day and time when the deal starts being available to the buyer. Null corresponds to "immediately". |
 | **End Date** | Yes | The day and time when the deal stops being available to the buyer. Null corresponds to "indefinitely". |
 | **Last Modified** | Yes | The date and time when the deal was last modified. |
-| **Imps Won** | No | The total number of impressions won.<br>Can select data from: <br>Today<br>Yesterday<br>Trailing 7 days<br>Last 30 days |
+| **Imps Won** | No | The total number of impressions won.<br>Can select data from: <br> - Today<br> - Yesterday<br> - Trailing 7 days<br> - Last 30 days |
 | **Imps Matched** | No | The total number of impressions that match the seller's settings on the deal. |
 
 ## How to filter data on main screen
 
 To filter data by any of the filterable columns (see table above):
 
-1. Click on the column heading to enable the search box or filter
-    a. selection values.
-1. Once you select your filter values, click on the "Search" button on
-    a. the top right hand corner.
+1. Click on the column heading to enable the search box or filter selection values.
+1. Once you select your filter values, click on the "Search" button on the top right hand corner.
 1. Your search results will display on the main screen.
 
 ## Side panel
@@ -60,7 +58,7 @@ Access additional details about the deal by clicking on the deal row to open a s
 | Bid Requests | The number of bid requests sent that include the deal. |
 | Bids Received | The number of times a buyer bids. |
 | Bid Rate | The percentage of deal auctions in which the buyer bid |
-| % Ineligible | The percentage of bids rejected due to errors (Learn more about bid errors: [Bid Error Codes](bid-error-codes.md). |
+| % Ineligible | The percentage of bids rejected due to errors (Learn more about bid errors: [Bid Error Codes](bid-error-codes.md)). |
 | Imps Sold | The total number of impressions won. |
 | Spend | Total spend on the deal in USD. |
 | Gross Win Rate | The percentage of impressions won out of all imps matched. |

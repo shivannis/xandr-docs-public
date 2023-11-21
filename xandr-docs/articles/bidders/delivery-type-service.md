@@ -1,7 +1,7 @@
 ---
-title: Delivery Type Service
+title: Microsoft Bidders - Delivery Type Service
 description: The article outlines the Delivery Type Service, explaining how it allows users to identify registered video content delivery types in the Xandr system. It also mentions the capability to add video content fields to line item or deal line item targeting.
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ---
 
 # Delivery type service
@@ -12,16 +12,16 @@ Use the read-only Delivery Type Service to see what video content delivery types
 
 | **HTTP Method** | **Endpoint** | **Description**  |
 |---|---|---|
-| GET | https://api.adnxs.com/video-delivery-type | To view all defined delivery types. |
-| GET | https://api.adnxs.com/video-delivery-type?id=<id value> | To view a defined delivery type. |
+| GET | `https://api.adnxs.com/video-delivery-type` | To view all defined delivery types. |
+| GET | `https://api.adnxs.com/video-delivery-type?id=<id value>` | To view a defined delivery type. |
 
 ## JSON fields
 
 | **Field** | **Type** | **Description** |
 |--|--|--|
-| id | int | The Xandr referential ID associated with the delivery type. |
-| name | string | The video taxonomy referential value.<br>Required On: POST/PUT |
-| last_modified | timestamp | The time of last modification. |
+| `id` | int | The Xandr referential ID associated with the delivery type. |
+| `name` | string | The video taxonomy referential value.<br>**Required On**: POST/PUT |
+| `last_modified` | timestamp | The time of last modification. |
 
 ## Example
 
@@ -58,6 +58,6 @@ curl -b cookies -c cookies "https://api.adnxs.com/video-delivery-type"
 
 ## Related topics
 
-- [Profile Service](profile-service.md)
-- [API Best Practices](api-best-practices.md)
-- [API Semantics](api-semantics.md)
+- [Profile Service](../digital-platform-api/profile-service.md)
+- [API Best Practices](../digital-platform-api/api-best-practices.md)
+- [API Semantics](../digital-platform-api/api-semantics.md)
