@@ -25,7 +25,7 @@ Use the read-only Delivery Type Service to see what video content delivery types
 
 ## Example
 
-### To retrieve all defined delivery types
+**To retrieve all defined delivery types**
 
 ```
 curl -b cookies -c cookies "https://api.adnxs.com/video-delivery-type"

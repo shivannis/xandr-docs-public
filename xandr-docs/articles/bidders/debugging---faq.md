@@ -25,4 +25,3 @@ There are several reasons why a bidder may not be getting traffic. The following
 - No active bidder instances are responding to the [Ready Request](ready-request.md). In order to receive traffic, a bidder instance must respond with a 1 to ready requests.
 - You have no active, ready bidder instances in the data center to which you are sending traffic. If your bidder instances are all in the east coast, but you are sending traffic to the west coast data center, you will not receive any impressions.
 - No member is active for your bidder. This can be change with the [Member Service](member-service.md).
-- 

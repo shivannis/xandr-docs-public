@@ -53,7 +53,7 @@ Access additional details about the deal by clicking on the deal row to open a s
 |--|--|
 | Seller | The seller name and Seller ID (included in parenthesis) for the deal. |
 | Buyer | The buyer member id or buyer seat id eligible to bid on the deal. Id is included in parenthesis. |
-| Type | Details whether the deal is:<br>public deal<br>private deal<br>programmatic guaranteed deal |
+| Type | Details whether the deal is:<br> - public deal<br> - private deal<br> - programmatic guaranteed deal |
 | Imps Matched | The total number of impressions that match the deal's targeting. |
 | Bid Requests | The number of bid requests sent that include the deal. |
 | Bids Received | The number of times a buyer bids. |

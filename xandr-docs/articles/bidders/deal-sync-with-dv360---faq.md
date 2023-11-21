@@ -4,11 +4,11 @@ description: The article provides answers to frequently asked questions (FAQs) r
 ms.date: 10/28/2023
 ---
 
-# Deal sync with DV360
+# Deal sync with DV360 - FAQ
 
 > [!NOTE]
 > This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If
-> you would like to test out this product, please reach out to your Xandr account representative.
+> you would like to test out this product, please reach out to your Xandr account representativx`e.
 
 ## Frequently asked questions (FAQ)
 
@@ -44,11 +44,15 @@ DV360 buyer to manually update the deal in the DV360 UI.
 
 Yes, deals created post DV360 deal sync enablement will have automatic deal updates. Changes you make to updatable fields (ex. start date, end date, price) will be automatically uploaded to DV360 systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the DV360 buyer to re-accept the deal in the DV360 UI.
 
-### What are things I cannot change with DV360 deals once they are created?
+### What are the things I cannot change with DV360 deals once they are created?
 
 The following fields cannot be changed in DV360 systems after a deal is uploaded:
 
-Deal ID, Deal Type, Auction Type, Currency, Allowed media type
+- Deal ID
+- Deal Type
+- Auction Type
+- Currency
+- Allowed media type
 
 ### Can I change a buyer for a deal once it has been uploaded to DV360 systems?
 

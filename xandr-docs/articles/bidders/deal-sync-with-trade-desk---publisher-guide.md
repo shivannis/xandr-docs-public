@@ -76,5 +76,5 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 - Xandr systems will randomly assign one buyer to be the primary buyer on the multi-buyer deal. This primary buyer
   will be the only account allowed to approve the deal. You can check the primary buyer assigned to the deal in the buyer-deal-sync API or
   database tables.
-- The primary buyer on a multi-buyer deal cannot be changed or removed Multi-buyer deals set up with Trade Desk member IDs will not sync.
-  This includes deals set up with Trade Desk member id 1088.
+- The primary buyer on a multi-buyer deal cannot be changed or removed
+- Multi-buyer deals set up with Trade Desk member IDs will not sync. This includes deals set up with Trade Desk member id 1088.

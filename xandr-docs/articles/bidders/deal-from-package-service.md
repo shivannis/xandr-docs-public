@@ -14,7 +14,7 @@ Once you have generated a deal, you can view deal details including description 
 
 | **HTTP Method** | **Endpoint** | **Description** |
 |--|--|--|
-| POST | https://api.adnxs.com/deal-from-package?buyer_member_id=BUYER_MEMBER_ID | **Create a new deal based on a package**.<br><br>**Note**: Bidder and admin users must specify the buyer member ID in the URI; for member users, the deal record is generated with the member set as the buyer. |
+| POST | `https://api.adnxs.com/deal-from-package?buyer_member_id=BUYER_MEMBER_ID` | **Create a new deal based on a package**.<br><br>**Note**: Bidder and admin users must specify the buyer member ID in the URI; for member users, the deal record is generated with the member set as the buyer. |
 
 ## JSON fields
 
@@ -25,7 +25,7 @@ Once you have generated a deal, you can view deal details including description 
 
 ## Example
 
-### Create a deal from a package
+**Create a deal from a package**
 
 ```
 $ cat create_deal
