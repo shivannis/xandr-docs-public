@@ -11,7 +11,7 @@ As you integrate your bidder and get set to go live, there are a number of wiki 
 ## Good reads
 
 - [Platform Member Service](platform-member-service.md) - Read-only service that provides you with the most up-to-date list of sellers on
-  our platform and shows information about data providers
+  our platform and shows information about data providers.
 - [Content Category Service](content-category-service.md) - Allows you to see what content categories are registered and their corresponding IDs.
 - [Inventory Attribute Service](inventory-attribute-service.md) - Allows you to see what inventory attributes are registered in Xandr's system.
 - [Creative Standards and Auditing](creative-standards-and-auditing.md) - Highlights our Creative Audit Policy and standards.

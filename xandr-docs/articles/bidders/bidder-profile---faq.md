@@ -17,7 +17,7 @@ You can get all publicly available seller member IDs through the [Platform Membe
 There's no single right way to set up your bidder profile ([Legacy Bidder Profile Service](legacy-bidder-profile-service.md)), but please see below for best practices about the fields to use for filtering. Note that these can be used at either the parent or child levels:
 
 - **Filtering by selling member**
-  - The member_targets array should be populated depending on how you'd like to buy
+  - The member_targets array should be populated depending on how you'd like to buy.
     - Buying only a select set of sellers:
       - "member_targets": \[{"id": "100","action": "include"},{"id": "101","action": "include"},{"id": "102","action": "include"}\]
     - Excluding a select group of sellers:
@@ -181,5 +181,5 @@ If the impression is blocked by the parent profile, it will not be sent to the b
 
 You can update your bidder profile by making a PUT call to the bidder profile service. The put call must include only:
 
-1. The ID of the profile, and,
-1. The field that you want to change. You must include the value that you'd like the changed field(s) to be. If you are changing an array, this means that every value of the array after the change must be sent in the PUT.
+1. The ID of the profile.
+1. And, the field that you want to change. You must include the value that you'd like the changed field(s) to be. If you are changing an array, this means that every value of the array after the change must be sent in the PUT.

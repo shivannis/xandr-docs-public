@@ -45,19 +45,19 @@ There are two ways to check the current state. We recommend the API method since
 
 #### Method 1: Using API (Recommended)
 
-**Overview**
+##### Overview
 
 - Get the active profile objects through Bidder Service API: GET bidder/\[bidder id\].
 - For all active profile objects, GET profile/\[profile id\] through legacy Bidder Profile Service API.
 - Summarize the results.
 
-**Step 1.1: Get the active profile objects through Bidder Service API: GET bidder/\[bidder id\]**
+##### Step 1.1: Get the active profile objects through Bidder Service API: GET bidder/\[bidder id\]
 
 Active parent profile id is in the `parent_profile_id` field, and active child profile ids are in the `child_profiles` array.
 
-Reference: [Authentication Service](authentication-service.md) and [Bidder Service](bidder-service.md)
+Reference: [Authentication Service](authentication-service.md) and [Bidder Service](bidder-service.md).
 
-**Example**
+##### Example
 
 ``` pre
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/bidder/129" # 129 is a sample bidder ID.
@@ -80,16 +80,16 @@ Reference: [Authentication Service](authentication-service.md) and [Bidder Servi
 }
 ```
 
-**Step 1.2: For all active profile objects, GET profile/\[profile id\] through legacy Bidder Profile Service API**
+##### Step 1.2: For all active profile objects, GET profile/\[profile id\] through legacy Bidder Profile Service API
 
 Each profile has an allowlist and/or blocklist of items. There are usually “action” and “targets” per member, country, etc.
 
 - "...\_action" can be set to “include” or “exclude”.
 - "...\_targets" can have a list of IDs for seller member, country, etc.
 
-Reference: Legacy [Bidder Profile Service](legacy-bidder-profile-service.md)
+Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
-**Example**
+##### Example
 
 ``` pre
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/profile/129/12345" # 129 is a sample bidder id and 12345 is a sample bider profile ID.
@@ -111,7 +111,7 @@ Reference: Legacy [Bidder Profile Service](legacy-bidder-profile-service.md)
 }
 ```
 
-**Step 1.3: Summarize the results**
+##### Step 1.3: Summarize the results
 
 Remember to evaluate the parent & child profile logic: traffic is sent when it meets the criteria in
 `(Parent Profile) AND (Child Profile 1 OR Chile Profile 2 OR ... OR Child Profile N)`.
@@ -146,12 +146,12 @@ To make it easier to set up the new Enhanced Bidder Profiles, for each of these 
 
 #### Method 2: Using the legacy bidder UI
 
-**Overview**
+##### Overview
 
 - See the current filters in each bidder profile.
 - Summarize the results.
 
-**Step 1.1: See the current filters in each bidder profile**
+##### Step 1.1: See the current filters in each bidder profile
 
 Go to [https://bidder.adnxs.net/](https://bidder.adnxs.net/) and log in with your bidder user credentials. If you cannot log in, check with your company's integrations team first and please contact Xandr Support.
 
@@ -159,7 +159,7 @@ Navigate to the Profiles tab on the left. You can see the parent profile setup.
 
 Non-italic child profiles are currently active. If you click on a child profile, you can see the profile setup.
 
-**Step 1.2: Summarize the results**
+##### Step 1.2: Summarize the results
 
 Remember to evaluate the parent & child profile logic: All incoming traffic from Xandr must meet the conditions in
 the parent profile first; in addition, the traffic must pass one of the child profiles if you have child profiles set up.
@@ -189,7 +189,7 @@ To make it easier to set up the new Enhanced Bidder Profiles, for each of these 
 > If you would like to review the domains in your domain list, you can get or edit the list via the domain-list API service:
 > [Domain List Service](domain-list-service.md).
 
-### Step 2: Understand the Changes and Re-evaluate the Filters (0.5~1 hours)
+### Step 2: Understand the changes and re-evaluate the filters (0.5~1 hours)
 
 Enhanced Bidder Profiles offers the following benefits:
 
@@ -199,7 +199,7 @@ Enhanced Bidder Profiles offers the following benefits:
 - Simplified Profile: We have narrowed down the profile to only relevant fields for your business.
 - New Bidder Platform UI: We have built a new UI for you to manage and maintain your profiles. Additional capabilities will be added to this UI throughout 2019.
 
-Please review these pages first: [Change Log for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md) and [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions--faq--for-enhanced-bidder-profiles.md).
+Please review these pages first: [Change Log for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md) and [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md).
 
 ### Step 3: Set Up Enhanced Bidder Profiles (0.5~1 hours)
 
@@ -211,7 +211,7 @@ There are two ways to set up Enhanced Bidder Profiles. We recommend using the n
 - Bidder Platform User Interface (Recommended): [https://bidder.appnexus.com/login](https://bidder.appnexus.com/login)
   - [Bidder Platform User Interface](bidder-platform-user-interface.md)
   - [Profiles Screen](profiles-screen.md)
-- New [Bidder Profile Service API](enhanced-bidder-profiles.md):
+- New [Bidder Profile Service API](enhanced-bidder-profiles.md)
 
 ### Using multiple profiles in enhanced bidder profile
 
@@ -240,7 +240,7 @@ Xandr Support.
 
 ### Activating a new bidder profile
 
-To activate a new Bidder Profile in API, set the active field to `true`. You no longer need to set a profile id in [Bidder Service](bidder-service.md) API to activate a profile. Once the step 4 below is complete, `parent_profile_id` and `child_profiles` in Bidder API object will be ignored.
+To activate a new Bidder Profile in API, set the **active** field to `true`. You no longer need to set a profile id in [Bidder Service](bidder-service.md) API to activate a profile. Once the step 4 below is complete, `parent_profile_id` and `child_profiles` in Bidder API object will be ignored.
 
 You need to click on the Activate button in the profile screen to activate the profile. Non-italic profiles are active.
 

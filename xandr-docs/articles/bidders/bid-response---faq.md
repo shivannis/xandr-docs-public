@@ -105,11 +105,9 @@ There are several ways you can determine whether you've won an auction:
 - **[bid.nurl](incoming-bid-response-from-bidders.md)**
 
   The nurl is a string containing the win notify URL. The Xandr server pings this URL when it receives a client side notification from the device, which indicates that Xandr won the auction.
-
 - **[Notify request](notify-request.md)**
 
   If you have set up your bidder to receive notify requests by adding a valid path in the [Bidder Service](bidder-service.md), you will be sent a notify request every time you win an auction.
-
 - **Creative delivery count**
 
   If you do not provide a notify URL or use the notify request, you can tell when you've won an auction by counting the delivery of your creatives. This method will likely result in a higher discrepancy than the preceding.

@@ -157,7 +157,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115d
 }
 ```
 
-### GET the report data from the Report Download service
+### GET the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the Report ID, but this time to the \*report-download\* service. You can find the service and Report ID in the {{url}} field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the {{"format"}} that you specified in your initial `POST`.
 
@@ -183,6 +183,6 @@ You can schedule reports that you would like to pull regularly. For more informa
 - [Bidder Billing Report API](bidder-billing-report-api.md)
 - [Platform Seller Report](platform-seller-report.md)
 - [Seller Platform Billing Report](seller-platform-billing-report.md)
-- [Inventory Availability Reporting](inventory-availability-reporting.md)
+- [Inventory Availability Report](inventory-availability-report.md)
 - [Reporting Timezones](reporting-timezones.md)
 - [Saved Report Service](saved-report-service.md)

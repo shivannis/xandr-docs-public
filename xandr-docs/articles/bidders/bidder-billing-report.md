@@ -14,7 +14,7 @@ The API documentation for the **Bidder Billing Report** is located [here](bidder
 
 | Field | Description/Options |
 |:---|:---|
-| **Type** (drop-down menu) | - [Platform Buyer Report](platform-buyer-report.md) (default)<br> - [Bidder Billing Report](bidder-billing-report.md)<br> - [Bidder Bid Error Report](bidder-bid-error-report)<br> - [Completed Creatives Audits Report](completed-creatives-audits-report.md) |
+| **Type** (drop-down menu) | - [Platform Buyer Report](platform-buyer-report.md) (default)<br> - Bidder Billing Report<br> - [Bidder Bid Error Report](bidder-bid-error-report.md)<br> - [Completed Creatives Audits Report](completed-creatives-audits-report.md) |
 | **Range** (drop-down menu) | - Custom<br> - Current Hour<br> - Today<br> - Yesterday<br> - Last 48 Hours<br> - Last 7 Days<br> - Month to Date<br> - Month to Yesterday<br> - Last Month |
 | **Interval** (drop-down menu) | - Hourly<br> - Daily<br> - Monthly<br> - Cumulative |
 | **Time Zone** (drop-down menu) | Select the appropriate time zone. |
@@ -45,10 +45,10 @@ Select the **filters** you want to be used to generate the report. Click the 
 
 ## Dimensions
 
-**Include IDs as separate column** (checkbox to the left)
+**Include IDs as separate column** (checkbox to the left).
 
 Select the **dimensions** you want to be used to generate the report. Click the **check box** on the left to select/deselect.
-Select Include IDs as separate column if you would like the object ID listed as a separate column in the report.
+Select **Include IDs** as separate column if you would like the object ID listed as a separate column in the report.
 
 | Metric | Description |
 |:---|:---|
