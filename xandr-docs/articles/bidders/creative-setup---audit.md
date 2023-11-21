@@ -1,43 +1,17 @@
 ---
-Title : Creative Setup & Audit
-Description : - <a
-ms.date : 10/28/2023
-href="quick-start-creative-buying-guide.md"
+title : Bidders - Creative Setup & Audit
+description : This page lists links for Creative Setup & Audit.
+ms.date : 11/21/2023
+
 ---
 
 
-# Creative Setup & Audit
+# Bidders - Creative setup & audit
 
-
-
-
-
-- <a
-  href="quick-start-creative-buying-guide.md"
-  class="xref" target="_blank">Quick Start Creative Buying Guide</a>
-- <a
-  href="add-a-creative.md"
-  class="xref" target="_blank">Add a Creative</a>
-- <a
-  href="click-tracking-and-cache-busting-examples.md"
-  class="xref" target="_blank">Click Tracking and Cache-Busting
-  Examples</a>
-- <a
-  href="selecting-the-correct-template-for-your-creative.md"
-  class="xref" target="_blank">Selecting the Correct Template for Your
-  Creative</a>
-- <a
-  href="vast-check.md"
-  class="xref" target="_blank">VAST Check</a>
-- <a
-  href="native-ad-markup-bidding.md"
-  class="xref" target="_blank">Native Ad Markup Bidding</a>
-- <a
-  href="banner-ad-markup-bidding.md"
-  class="xref" target="_blank">Banner Ad Markup Bidding</a>
-
-
-
-
-
-
+- [Quick Start Creative Buying Guide](quick-start-creative-buying-guide.md)
+- [Add a Creative](add-a-creative.md)
+- [Click Tracking and Cache-Busting Examples](click-tracking-and-cache-busting-examples.md)
+- [Selecting the Correct Template for Your Creative](selecting-the-correct-template-for-your-creative.md)
+- [VAST Check](vast-check.md)
+- [Native Ad Markup Bidding](native-ad-markup-bidding.md)
+- [Banner Ad Markup Bidding](banner-ad-markup-bidding.md)
