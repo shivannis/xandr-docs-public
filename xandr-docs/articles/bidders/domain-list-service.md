@@ -1,228 +1,45 @@
 ---
-Title : Domain List Service
-Description : Domain lists can be used to create an allowlist or a blocklist of
-ms.date : 10/28/2023
-domains that should be included or excluded, respectively, from
-targeting. The domain list IDs are used with the <a
+title: Microsoft Bidders - Domain List Service
+description: The article discusses a domain list service, highlighting its functionality in creating either an allowlist or a blocklist of domains. This service enables users to specify which domains should be targeted (allowlist) or excluded (blocklist) in their activities.
+ms.date: 10/28/2023
 ---
-
 
 # Domain List Service
 
-
-
-Domain lists can be used to create an allowlist or a blocklist of
-domains that should be included or excluded, respectively, from
-targeting. The domain list IDs are used with the <a
-href="enhanced-bidder-profiles.md"
-class="xref" target="_blank">Enhanced Bidder Profiles</a> to specify
-which domains should be included or excluded from targeting. Please be
-advised that specifying whether a domain list is an "allowlist" or a
-"blocklist" does not determine whether that list will be included or
-excluded. Rather, the domain_list_action must be specified in the <a
-href="enhanced-bidder-profiles.md"
-class="xref" target="_blank">Enhanced Bidder Profiles</a> as "include"
-for allowlists and "exclude" for blocklists.
-
-
+Domain lists can be used to create an allowlist or a blocklist of domains that should be included or excluded, respectively, from
+targeting. The domain list IDs are used with the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to specify
+which domains should be included or excluded from targeting. Please be advised that specifying whether a domain list is an "allowlist" or a "blocklist" does not determine whether that list will be included or excluded. Rather, the domain_list_action must be specified in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) as "include" for allowlists and "exclude" for blocklists.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00005414__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00005414__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00005414__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__3">View
-all domain lists.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list?id=DOMAIN_LIST_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list?id=DOMAIN_LIST_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__3">View
-a specific domain list.
+| HTTP Method | Endpoint | Description |
+|--|--|--|
+| GET | https://api.adnxs.com/domain-list | View all domain lists. |
+| GET | https://api.adnxs.com/domain-list?id=DOMAIN_LIST_ID | View a specific domain list.<br>**Note**: The api use must have the field, "is_admin" set to true. |
+| GET | https://api.adnxs.com/domain-list/search=SEARCH_TERM | Search for domain lists with names or descriptions containing certain characters. |
+| POST | https://api.adnxs.com/domain-list | Add a new domain list. |
+| PUT | https://api.adnxs.com/domain-list/DOMAIN_LIST_ID | Modify an existing domain list. |
+| DELETE | https://api.adnxs.com/domain-list/DOMAIN_LIST_ID | Delete an existing domain list. |
 
-<b>Note:</b> The api use must have the field,
-"is_admin" set to true.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list/search=SEARCH_TERM" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list/search=SEARCH_TERM</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__3">Search for domain lists with names or
-descriptions containing certain characters.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__3">Add
-a new domain list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list/DOMAIN_LIST_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list/DOMAIN_LIST_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__3">Modify an existing domain list.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__2"><a
-href="https://api.adnxs.com/domain-list/DOMAIN_LIST_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/domain-list/DOMAIN_LIST_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__3">Delete an existing domain list.</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
+| Field | Type | Description |
+|--|--|--|
+| description | string(100) | A description of the domain list as specified by the user. |
+| domains | array or strings | The domains included in the domain list. See examples below for format.<br>**Note**: "www" is stripped from domains<br>Domains which begin with `"www"` will have the `"www"`substring stripped out before being stored in our system. For example, `"www.example.org"` will be shortened to `"example.org"`. |
+| id | int | The internal ID for the domain list.<br> - **Required On**: PUT. |
+| last_modified | timestamp | **Read-only**. The day and time when the domain list was last changed. |
+| name | string(100) | The name of the domain list as specified by the user.<br> - **Required On**: POST. |
+| type | string | The type of domain list. Possible values are `"black"` and `"white"`. This is strictly informational. The value here does not determine whether the list is included or excluded.<br>**Default**: "white". |
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00005414__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00005414__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00005414__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">string(100)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__24">A
-description of the domain list as specified by the user.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code
-class="ph codeph">domains</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">array or strings</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__24">The
-domains included in the domain list. See examples below for format.
-
-<b>Note:</b> "www" is stripped from domains
-<p>Domains which begin with <code class="ph codeph">"www"</code> will
-have the <code class="ph codeph">"www"</code>substring stripped out
-before being stored in our system. For example, <code
-class="ph codeph">"</code><a href="http://www.example.org" class="xref"
-target="_blank"><code class="ph codeph">www.example.org</code></a><code
-class="ph codeph">"</code> will be shortened to <code
-class="ph codeph">"</code><a href="http://example.org" class="xref"
-target="_blank"><code class="ph codeph">example.org</code></a><code
-class="ph codeph">"</code>.</p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__24">The
-internal ID for the domain list.
-<ul>
-<li><strong>Required On</strong>: PUT.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__24"><strong>Read-only</strong>. The day and
-time when the domain list was last changed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">string(100)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__24">The
-name of the domain list as specified by the user.
-<ul>
-<li><strong>Required On</strong>: POST.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__22"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00005414__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00005414__entry__24">The
-type of domain list. Possible values are <code
-class="ph codeph">"black"</code> and <code
-class="ph codeph">"white"</code>. This is strictly informational. The
-value here does not determine whether the list is included or excluded.
-<ul>
-<li><strong>Default</strong>: "white".</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-<b>Note:</b> Only the api user that creates a
-domain list can see and edit the contents of that domain list.
-
-
-
-
-
-
+> [!NOTE]
+> Only the api user that creates a domain list can see and edit the contents of that domain list.
 
 ## Examples
 
 **Add a domain list**
 
-``` pre
+```
 $ cat domain-list
 {
    "domain-list" : {
@@ -280,16 +97,10 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/domain-list/9'
 
 **Add a domain list to your bidder profile as a "blocklist"**
 
+> [!NOTE]
+> This example targets domain lists using the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md).
 
-
-<b>Note:</b> This example targets domain lists
-using the <a
-href="enhanced-bidder-profiles.md"
-class="xref" target="_blank">Enhanced Bidder Profiles</a>.
-
-
-
-``` pre
+```
 $ cat domain-list-profile
 {
    "bidder_profile" : {
@@ -423,7 +234,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @domain-list-profile 'https://
 
 **Search for domain lists with names or descriptions containing "Test"**
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.adnxs.com/domain-list/search=test"
 {
         "response": {
@@ -447,18 +258,6 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/domain-list/search=test"
         }
 ```
 
+## Related topic
 
-
-
-
-## Related Topics
-
-- <a
-  href="enhanced-bidder-profiles.md"
-  class="xref" target="_blank">Enhanced Bidder Profiles</a>
-
-
-
-
-
-
+[Enhanced Bidder Profiles](enhanced-bidder-profiles.md)

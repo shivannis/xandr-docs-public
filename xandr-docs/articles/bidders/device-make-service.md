@@ -1,194 +1,47 @@
 ---
-Title : Device Make Service
-Description : Mobile devices are categorized by make and model, where make is
-ms.date : 10/28/2023
-generally the manufacturer of the device (i.e., Apple) and model is
+title: Microsoft Bidders - Device Make Service
+description: The article introduces a Device Make Service, detailing mobile devices categorized by manufacturer (make) and specific product (model). This read-only service in the Xandr system enables users to view registered mobile device makes, allowing mapping of make IDs to names and codes.
+ms.date: 10/28/2023
 ---
 
+# Device make service
 
-# Device Make Service
-
-
-
-Mobile devices are categorized by make and model, where make is
-generally the manufacturer of the device (i.e., Apple) and model is
-generally the specific product (i.e., iPhone). The read-only Device Make
-Service allows you to see what makes of mobile devices are registered in
-the Xandr system. You can use this service to
-map device make IDs to names and codes.
-
-
+Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is
+generally the specific product (i.e., iPhone). The read-only Device Make Service allows you to see what makes of mobile devices are registered in the Xandr system. You can use this service to map device make IDs to names and codes.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008326__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00008326__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00008326__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__2"><a
-href="https://api.adnxs.com/device-make" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/device-make</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__3">View
-all device makes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__2"><a
-href="https://api.adnxs.com/device-make/DEVICE_MAKE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/device-make/DEVICE_MAKE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__3">View
-a specific device make.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__2"><a
-href="https://api.adnxs.com/device-make?name=DEVICE_MAKE_NAME"
-class="xref" target="_blank">https://api.<span
-class="ph">adnxs.com/device-make?name=DEVICE_MAKE_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__3">View
-a specific device make.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__2"><a
-href="https://api.adnxs.com/device-make/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/device-make/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|--|--|--|
+| GET | `https://api.adnxs.com/device-make` | View all device makes. |
+| GET | `https://api.adnxs.com/device-make/DEVICE_MAKE_ID` | View a specific device make. |
+| GET | `https://api.adnxs.com/device-make?name=DEVICE_MAKE_NAME` | View a specific device make. |
+| GET | `https://api.adnxs.com/device-make/meta` | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008326__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008326__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008326__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__16"><code
-class="ph codeph">codes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__17">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__18">Third-party representations for the
-device make. See <a href="device-make-service.md#ID-00008326__codes"
-class="xref">Codes</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__18">The
-ID of the device make.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__18">The
-name of the device make, i.e., "Apple".</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|--|--|--|
+| `codes` | array of objects | Third-party representations for the device make. See Codes below for more details. |
+| `id` | int | The ID of the device make. |
+| `name` | string | The name of the device make, i.e., "Apple". |
 
 **Codes**
 
 Each object in the `codes` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008326__entry__28"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008326__entry__29"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008326__entry__30"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__28"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__30">The
-ID for the device make.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__28"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__30">The
-third-party representation for the device make.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__28"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__30">Identification information about the
-third-party.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__28"><code
-class="ph codeph">device_make_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008326__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008326__entry__30">The
-ID for the device make.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|--|--|--|
+| `id` | int | The ID for the device make. |
+| `code` | string | The third-party representation for the device make. |
+| `notes` | string | Identification information about the third-party. |
+| `device_make_id` | int | The ID for the device make. |
 
 ## Examples
 
 **View all makes of mobile devices**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/device-make'
 {
         "status": "OK",
@@ -454,12 +307,12 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/device-make'
         ...
         }
     }
-}      
+
 ```
 
 **View a specific make of mobile device**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/device-make/6'
 {
     "response": {
@@ -491,9 +344,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/device-make/6'
     }
 } 
 ```
-
-
-
-
-
-

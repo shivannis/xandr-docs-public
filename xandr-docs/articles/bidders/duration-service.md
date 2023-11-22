@@ -1,118 +1,33 @@
 ---
-Title : Duration Service
-Description : Use the read-only Duration Service to see what video content durations
-ms.date : 10/28/2023
-are registered in the Xandr system. Video
+title: Microsoft Bidders - Duration Service
+description: Use the read-only Duration Service to see what video content durations
+ms.date: 10/28/2023
 ---
 
+# Duration service
 
-# Duration Service
-
-
-
-Use the read-only Duration Service to see what video content durations
-are registered in the Xandr system. Video
-content fields can be added to line item or deal line item targeting. 
-
-
+Use the read-only Duration Service to see what video content durations are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000085c9__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000085c9__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000085c9__entry__3"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__2">https://api.<span
-class="ph">adnxs.com/video-content-duration</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000085c9__entry__3">To
-view all defined durations.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__2">https://api.<span
-class="ph">adnxs.com/video-content-duration?id=&lt;id
-value&gt;</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000085c9__entry__3">To
-view a defined duration.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|--|--|--|
+| GET | `https://api.adnxs.com/video-content-duration` | To view all defined durations. |
+| GET | `https://api.adnxs.com/video-content-duration?id=<id value>` | To view a defined duration. |
 
+## JSON Fields
 
-
-
-
-## JSON FIELDS
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000085c9__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000085c9__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000085c9__entry__12"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000085c9__entry__12">The
-Xandr referential ID associated with the
-duration.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__12"><p>The video taxonomy referential
-value.</p>
-<p><strong>Required On</strong>: POST/PUT</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000085c9__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000085c9__entry__12">The
-time of last modification.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|--|--|--|
+| `id` | int | The Xandr referential ID associated with the duration. |
+| `name` | string | The video taxonomy referential value.<br>**Required On**: POST/PUT |
+| `last_modified` | timestamp | The time of last modification. |
 
 ## Example
 
-**To retrieve all defined durations  
+**To retrieve all defined durations** 
   
-**
-
-``` pre
+```
 curl -b cookies -c cookies "https://api.adnxs.com/video-content-duration"
 {
   "response": {
@@ -141,24 +56,8 @@ curl -b cookies -c cookies "https://api.adnxs.com/video-content-duration"
   } 
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="xandr-api/profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="xandr-api/api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="xandr-api/api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
+- [Profile Service](../digital-platform-api/profile-service.md)
+- [API Best Practices](../digital-platform-api/api-best-practices.md)
+- [API Semantics](xandr-api/api-semantics.md)
