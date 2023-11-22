@@ -1,168 +1,58 @@
 ---
-Title : Buying Microsoft Outlook.com Inventory
-Description : You can buy Microsoft Outlook.com inventory on the
-ms.date : 10/28/2023
+title: Bidders - Buy Microsoft Outlook.com Inventory
+description: Learn how to buy Microsoft Outlook.com inventory and explore information about their volume, availability, creative specifications, and targeting instructions.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Buy Microsoft Outlook.com inventory
 
-# Buying Microsoft Outlook.com Inventory
+You can buy Microsoft Outlook.com inventory on the Xandr platform.
 
+## Inventory overview
 
+Outlook.com combines the best of Outlook and Hotmail to offer a clutter-free environment for communicating with family, friends, and colleagues. Outlook.com focuses on four key points for advertisers:
 
-You can buy Microsoft Outlook.com inventory on the
-Xandr platform.
+1. **Consumer Focus**: Designed with both the consumers and advertisers in mind.
+1. **Advertiser Exclusivity**: There's only one advertiser per page (allowlist helps to ensure exclusivity).
+1. **High Relevance**: Active(100% logged in) users provide a large pool of targeting options, which helps increase ROI.
+1. **Simple, yet visual**: Simple creatives deliver imagery that stands out against a clean environment.
 
+Outlook.com ad experiences are designed with both advertisers and consumers in mind. Located on the right side of users' email, the
+Skyscraper unit is fully integrated into the user experience. For more information about adding Outlook.com creatives, see [Add a Microsoft Outlook Skyscraper Creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md). Review the specifications for Outlook skyscraper creatives and add them to Xandr.
 
+> [!NOTE]
+> Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../invest/buying-microsoft-deals.md).
 
-## Inventory Overview
-
-Outlook.com combines the best of Outlook and Hotmail to offer a
-clutter-free environment for communicating with family, friends, and
-colleagues. Outlook.com focuses on four key points for advertisers:
-
-1.  **Consumer Focus**: Designed with both the consumers and advertisers
-    in mind
-2.  **Advertiser Exclusivity**: There's only one advertiser per page
-    (whitelist helps to ensure exclusivity)
-3.  **High Relevance**: Active(100% logged in) users provide a large
-    pool of targeting options, which helps increase ROI
-4.  **Simple, yet visual**: Simple creatives deliver imagery that stands
-    out against a clean environment
-
-Outlook.com ad experiences are designed with both advertisers and
-consumers in mind. Located on the right side of users' email, the
-Skyscraper unit is fully integrated into the user experience. For more
-information about adding Outlook.com creatives, see <a
-href="industry-reference/add-a-microsoft-outlook-versatile-creative.md"
-class="xref" target="_blank">Add a Microsoft Outlook Skyscraper
-Creative</a>. Review the specifications for Outlook skyscraper creatives
-and add them to Xandr.
-
-
-
-<b>Note:</b> Packages bundled with Microsoft
-user data are available through the packages marketplace. For more
-information, see <a
-href="invest_invest-standard/buying-microsoft-deals.md"
-class="xref" target="_blank">Buying Microsoft Deals</a>.
-
-
-
-
-
->
-
-## Availability and Volume
+## Availability and volume
 
 - Over 400 million active email accounts
 - 38 markets globally
-- 9.8 billion monthly global display impressions (over 1.4 billion in
-  US)
+- 9.8 billion monthly global display impressions (over 1.4 billion in US)
 
-
-
->
-
-## Formats and Specifications
+## Formats and specifications
 
 The recommended minimum creative dimensions are 160px x 600px.
 
+| Publisher | 160x600 | 728x90 | 300x50 | 300x600 |
+|:----------|:--------|:-------|:-------|:--------|
+| Outlook   | X       |        |        |         |
 
+> [!NOTE]
+> SSL creative required.
 
-<table id="ID-00007a51__table_csp_rxx_qwb" class="table frame-all">
-<caption><span class="table--title-label">Table 1. <span
-class="title">Creative Specifications</caption>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007a51__table_csp_rxx_qwb__entry__1"
-class="entry align-left colsep-1 rowsep-1"><strong>Publisher</strong></th>
-<th id="ID-00007a51__table_csp_rxx_qwb__entry__2"
-class="entry align-left colsep-1 rowsep-1"><strong>160x600</strong></th>
-<th id="ID-00007a51__table_csp_rxx_qwb__entry__3"
-class="entry align-left colsep-1 rowsep-1"><strong>728x90</strong></th>
-<th id="ID-00007a51__table_csp_rxx_qwb__entry__4"
-class="entry align-left colsep-1 rowsep-1"><strong>300x50</strong></th>
-<th id="ID-00007a51__table_csp_rxx_qwb__entry__5"
-class="entry align-left colsep-1 rowsep-1"><strong>300x600</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00007a51__table_csp_rxx_qwb__entry__1">Outlook</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00007a51__table_csp_rxx_qwb__entry__2">X</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00007a51__table_csp_rxx_qwb__entry__3"></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00007a51__table_csp_rxx_qwb__entry__4"></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ID-00007a51__table_csp_rxx_qwb__entry__5"></td>
-</tr>
-</tbody>
-</table>
+## Targeting instructions
 
-<span class="table--title-label">Table 1.
-<span class="title">Creative Specifications
-
-
-
-
-
-<b>Note:</b>
-
-SSL creative required.
-
-
-
-
-
->
-
-## Targeting Instructions
-
-For information on general inventory targeting, see <a
-href="invest_invest-standard/buying-microsoft-inventory.md"
-class="xref" target="_blank">Buying Microsoft Inventory</a> and <a
-href="monetize_monetize-standard/domain-targeting.md"
-class="xref" target="_blank">Domain Targeting</a>.
+For information on general inventory targeting, see [Buying Microsoft Inventory](../invest/buying-microsoft-inventory.md) and [Domain Targeting](../monetize/domain-targeting.md).
 
 To target Outlook.com inventory,
 
+1. On the **Specific Domains** tab, click **Include**.
+1. Enter **Outlook.com**.
+1. Click **Add Domains** to add it to the included domains list.
+1. Click **Add**.
 
+For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](../invest/buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 
-1.  On the Specific Domains tab,
-    click Include.
-2.  Enter **Outlook.com**.
-3.  Click Add Domains to add it to the
-    included domains list.
-4.  Click Add.
+## More questions?
 
-
-
-For instructions on how to target the Outlook app, see <a
-href="invest_invest-standard/buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
-class="xref" target="_blank">Buying Microsoft Windows App Inventory</a>.
-
-
-
-
-
-## More Questions?
-
-If you have any further questions about buying Outlook.com inventory,
-please contact your Xandr account
-representative.
-
-
-
-
-
-
+If you have any further questions about buying Outlook.com inventory, please contact your Xandr account representative.

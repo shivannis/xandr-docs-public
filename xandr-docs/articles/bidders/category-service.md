@@ -1,323 +1,64 @@
 ---
-Title : Category Service
-Description : The read-only Category Service allows you to view all categories that
-ms.date : 10/28/2023
-are registered in the Xandr system. Categories
+title: Bidders - Category Service
+description: In this article, learn about bidders category service, their JSON fields, REST API, along with a detailed set of examples.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Category service
 
-# Category Service
+The read-only Category Service allows you to view all categories that are registered in the Xandr system. Categories are assigned to both brands and creatives - you can see what categories are assigned using the [Brand Service](brand-service.md) or the [Creative Service](creative-service.md). You can then allow or disallow these categories of brands and creatives using the [Ad Profile Service](ad-profile-service.md).
 
-
-
-The read-only Category Service allows you to view all categories that
-are registered in the Xandr system. Categories
-are assigned to both brands and creatives - you can see what categories
-are assigned using the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a> or the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>. You can then allow or
-disallow these categories of brands and creatives using the <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile Service</a>.
-
-Please note that, for site and placement categories, you will use the <a
-href="content-category-service.md"
-class="xref" target="_blank">Content Category Service</a>.
-
-
+> [!NOTE]
+> For site and placement categories, use the [Content Category Service](content-category-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007805__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00007805__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00007805__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__2"><a
-href="https://api.adnxs.com/category" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/category</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__3">View
-all the categories in the Xandr system.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__2"><a
-href="https://api.adnxs.com/category/CATEGORY_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/category/CATEGORY_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__3">View
-information about a particular category.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| GET  | [https://api.adnxs.com/category](https://api.adnxs.com/category) | View all the categories in the Xandr system. |
+| GET  | [https://api.adnxs.com/category/CATEGORY_ID](https://api.adnxs.com/category/CATEGORY_ID) | View information about a particular category. |
 
+## JSON fields
 
+> [!NOTE]
+> The fields `countries_and_brands` and `countries_and_regions` defined below are being used by our system to allow gambling-related creatives to serve in the countries and regions where they're legally allowed, putting us in compliance with applicable laws.
+>
+> - For more information about our official gambling-related policies, see our buy-side and sell-side gambling policies.
+> - For more information on how allowlisting works by country and region, contact [Customer Support](https://support.xandr.com/).
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the category.<br>**Required On:** PUT, in query string |
+| `name` | string | The name of the category.<br>**Required On:** POST |
+| `is_sensitive` | boolean | If `true`, the category is listed as "sensitive", and is often banned by publishers.<br>**Default:** false |
+| `last_modified` | timestamp | The date and time when the category was last modified. |
+| `requires_whitelist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e. RTB) inventory.<br>**Default:** false |
+| `requires_whitelist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** false |
+| `is_brand_eligible` | boolean | If true, then the category is eligible to be associated with brands within the audit process.<br>**Default:** true |
+| `requires_whitelist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** false |
+| `countries_and_brands` | array of objects | This array contains brand allowlist settings grouped by country. For more information, see "[Countries and Brands](#countries-and-brands)" below. |
 
+### Countries and brands
 
-## JSON Fields
+| Field | Type | Description |
+|:---|:---|:---|
+| `brand_id` | int | The ID of the brand. |
+| `brand_name` | string | The name of the brand. |
+| `brand` | multi_object | An object containing information about the brand allowlisted in this country. For more information, see "[Brand](#regions-and-brands)" below. |
+| `country` | string | A 2-character string referencing the country in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
 
+### Regions and brands
 
-
-<b>Note:</b> The fields `countries_and_brands`
-and `countries_and_regions` defined below are being used by our system
-to allow gambling-related creatives to serve in the countries and
-regions where they're legally allowed, putting us in compliance with
-applicable laws.
-
-- For more information about our official gambling-related policies, see
-  our buy-side and sell-side gambling policies.
-- For more information on how allowlisting works by country and region,
-  contact <a href="https://support.xandr.com/" class="xref"
-  target="_blank">Customer Support</a> .
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007805__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00007805__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00007805__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__12">The
-ID of the category.
-<p><strong>Required On</strong>: PUT, in query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__12">The
-name of the category.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">is_sensitive</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__12">If
-<code class="ph codeph">true</code>, the category is listed as
-"sensitive", and is often banned by publishers.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__12">The
-date and time when the category was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">requires_whitelist_on_external</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__12">Whether brands or creatives in this
-category require allowlisting in order to serve on external (i.e. RTB)
-inventory.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">requires_whitelist_on_managed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__12">Whether brands or creatives in this
-category require allowlisting in order to serve on managed inventory.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">is_brand_eligible</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__12">If
-true, then the category is eligible to be associated with brands within
-the audit process.
-<p><strong>Default</strong>: true</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">requires_whitelist</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__12">Whether brands or creatives in this
-category require allowlisting in order to serve.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__10"><code
-class="ph codeph">countries_and_brands</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__11">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__12">This array contains brand allowlist
-settings grouped by country. For more information, see "Countries and
-Brands" below.</td>
-</tr>
-</tbody>
-</table>
-
-**Countries and Brands**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007805__entry__40"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00007805__entry__41"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00007805__entry__42"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__40"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__41">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__42">The
-ID of the brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__40"><code
-class="ph codeph">brand_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__41">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__42">The
-name of the brand.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__40"><code
-class="ph codeph">brand</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__41">multi_object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__42">An
-object containing information about the brand allowlisted in this
-country. For more information, see "Brand" below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__40"><code
-class="ph codeph">country</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__41">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__42">A
-2-character string referencing the country in which the brand is
-allowlisted. For a list of supported codes, see the <a
-href="https://en.wikipedia.org/wiki/ISO_3166-1" class="xref"
-target="_blank">ISO 3166-1 country codes</a>.</td>
-</tr>
-</tbody>
-</table>
-
-**Regions and Brands**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007805__entry__55"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00007805__entry__56"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00007805__entry__57"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__55"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__57">The
-ID of the brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__55"><code
-class="ph codeph">brand_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__56">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__57">The
-name of the brand.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__55"><code
-class="ph codeph">brand</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__56">multi_object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__57">An
-object containing information about the brand allowlisted in this
-region.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__55"><code
-class="ph codeph">region</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007805__entry__56">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007805__entry__57">A
-string referencing the region in which the brand is allowlisted. For a
-list of supported codes, see the <a
-href="http://dev.maxmind.com/static/maxmind-region-codes.csv"
-class="xref" target="_blank">ISO 3166-2</a>.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `brand_id` | int | The ID of the brand. |
+| `brand_name` | string | The name of the brand. |
+| `brand` | multi_object | An object containing information about the brand allowlisted in this region. |
+| `region` | string | A string referencing the region in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-2](https://dev.maxmind.com/static/maxmind-region-codes.csv). |
 
 ## Examples
 
-**View all categories**
+### View all categories
 
 ``` pre
 $ curl -b cookies -c cookies "https://api.adnxs.com/category"
@@ -377,7 +118,7 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category"
 }
 ```
 
-**View a specific category**
+### View a specific category
 
 ``` pre
 $ curl -b cookies -c cookies "https://api.adnxs.com/category/1"
@@ -407,9 +148,3 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category/1"
   }
 }
 ```
-
-
-
-
-
-
