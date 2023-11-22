@@ -23,12 +23,12 @@ Scroll down to view the basic attributes that describe the creative:
 
 | Column | Description |
 |---|---|
-| ID | This is the **Creative ID**. |
-| Code | This is the **creative code**, which is typically set to the external ID for the bidder. This is the ID of the creative in the bidder’s system. |
-| State | This identifies if the creative is **Active** or **Inactive**. |
-| Audit Status | This is the status of the audit being performed on the creative. These are the possible statuses: <br> - **Audited** <br> - **Pending** <br> - **Rejected** <br> - **No Audit** |
-| Audit Feedback | This is specific audit feedback. This remains blank until the creative is rejected. |
 | Ad Type | This is the type of creative. These are the possible ad types: <br> - **Banner** <br> - **Video** <br> - **Audio** <br> - **Native** |
+| Audit Feedback | This is specific audit feedback. This remains blank until the creative is rejected. |
+| Audit Status | This is the status of the audit being performed on the creative. These are the possible statuses: <br> - **Audited** <br> - **Pending** <br> - **Rejected** <br> - **No Audit** |
+| Code | This is the **creative code**, which is typically set to the external ID for the bidder. This is the ID of the creative in the bidder’s system. |
+| ID | This is the **Creative ID**. |
+| State | This identifies if the creative is **Active** or **Inactive**. |
 
 ## Related topics
 

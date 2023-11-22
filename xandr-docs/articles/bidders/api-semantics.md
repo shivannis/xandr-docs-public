@@ -40,7 +40,7 @@ In our documentation we use [cURL](https://www.php.net/curl) to make REST reques
 
 ## Append on PUT
 
-For `PUT` requests, only the fields included in the [JSON](http://json.org/) file will be updated, except in the case of arrays.
+For `PUT` requests, only the fields included in the [JSON](http://json.org/) file will be updated, **except in the case of arrays**.
 
 When updating an array using `PUT`, all fields in the array are overwritten with the contents of the new array you upload, unless you add this to your request's query string: `"append=true"`.
 
@@ -242,7 +242,7 @@ The `"error"` field is useful for debugging purposes, as it contains a verbose d
 | SYSTEM | A system error has occurred | Contact Xandr |
 | INTEGRITY | A client request is inconsistent; for example, an attempt to delete a default creative attached to an active TinyTag | Check the request for integrity |
 
-## Related Topics
+## Related topics
 
 - [API Services](api-services.md)
 - [Bidder API Services](bidder-api-services.md)

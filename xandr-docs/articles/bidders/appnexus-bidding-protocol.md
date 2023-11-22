@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 > [!IMPORTANT]
 >
-> - Not Supported: The AppNexus Bidding Protocol is no longer supported; this documentation is for legacy purposes only. This has been deprecated.
+> - **Not Supported**: The AppNexus Bidding Protocol is no longer supported; this documentation is for legacy purposes only. **This has been deprecated.**
 > - If you're a new bidder integrating with AppNexus, please see the [OpenRTB 2.4 Bidding Protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 
 When you register a bidder instance with the AppNexus platform, you will be sent a series of requests by the AppNexus Impression Bus, the key one being the [Bid Request](bid-request.md). Your bidder will respond with a series of responses, the key one being the [Bid Response](bid-response.md). Below you will find a list of the requests and responses and brief explanations of the usage for each. A bidder will need to build "handlers" (i.e. a bid request handler, a click handler, etc) for each of the services it plans to support.

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Additional functions
 
-## Activate/deactivate button
+## Activate/Deactivate button
 
 The **Activate/Deactivate** button is located in the upper right-hand corner of the **Profiles** screen. It displays activate or deactivate, depending on the state that it is currently in:
 
