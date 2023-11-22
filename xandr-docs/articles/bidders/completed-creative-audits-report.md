@@ -1,14 +1,12 @@
 ---
-Title : Completed Creative Audits Report
-Description : The **Completed Creative Audits Report** is designed to give you insight
-ms.date : 10/28/2023
-into how your creatives are moving through the audit process. Using this
+title : Completed Creative Audits Report
+description : Learn about Completed Creative Audits Report that gives you insight into how your creatives are moving through the audit process.
+ms.date : 11/22/2023
+
 ---
 
 
-# Completed Creative Audits Report
-
-
+# Completed creative audits report
 
 The **Completed Creative Audits Report** is designed to give you insight
 into how your creatives are moving through the audit process. Using this
@@ -18,24 +16,15 @@ report, you can find out:
 - Which of your creatives have completed audit
 - How much your creative audit fees will be
 
-See the <a href="completed-creative-audits-report.md#ID-0000649b__ex"
-class="xref">Example</a> below for instructions on retrieving this
+See the [Example](#example) below for instructions on retrieving this
 report.
 
-
-
-<b>Tip:</b> For more information about how
-reporting works, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
+> [!TIP]
+> For more information about how reporting works, see the [Report Service](report-service.md).
 
 This report's data is retained for 90 days.
 
-
-
-## Time Frame
+## Time frame
 
 The `report_interval` field in the JSON request must be set to one of
 the following:
@@ -47,197 +36,33 @@ the following:
 - `last_30_days`
 - `last_14_days`
 
-
-
-
-
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000649b__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-0000649b__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000649b__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="ID-0000649b__entry__4"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code class="ph codeph">day</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">Day
-on which audits were completed (alias for <code
-class="ph codeph">audit_completion_date</code>).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">creative_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">ID
-of the creative that was audited.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">creative_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">Name
-of the creative that was audited.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">ID
-of the member whose creative was audited.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">audit_reason_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-integer code for the type of audit. There are two allowed values:
-<ul>
-<li><code class="ph codeph">1</code>: Initial audit</li>
-<li><code class="ph codeph">2</code>: Reaudit</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">audit_reason</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-type of audit. This will be either "Initial" or "Reaudit".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">audit_type_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-integer code for the priority of the audit. Allowed values:
-<ul>
-<li><code class="ph codeph">1</code>: Standard</li>
-<li><code class="ph codeph">2</code>: Priority</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">audit_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-priority of the audit. Allowed values:
-<ul>
-<li><code class="ph codeph">"standard"</code></li>
-<li><code class="ph codeph">"priority"</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-name of the member whose creative was audited.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__1"><code
-class="ph codeph">audit_completion_date</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__4">The
-day on which the audits were completed.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column                | Type   | Filter? | Description                                                                                       |
+|-----------------------|--------|---------|---------------------------------------------------------------------------------------------------|
+| `audit_completion_date` | date   | Yes     | The day on which the audits were completed.                                                       |
+| `audit_reason`          | string | Yes     | The type of audit. This will be either "Initial" or "Reaudit".                                    |
+| `audit_reason_id`       | int    | Yes     | The integer code for the type of audit. There are two allowed values: <br> - 1: Initial audit <br> - 2: Reaudit |
+| `audit_type`            | string | Yes     | The priority of the audit. Allowed values: <br> - `"standard"` <br> - `"priority"`                                  |
+| `audit_type_id`         | int    | Yes     | The integer code for the priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority           |
+| `creative_id`           | int    | Yes     | ID of the creative that was audited.                                                              |
+| `creative_name`         | string | Yes     | Name of the creative that was audited.                                                            |
+| `day`                   | date   | Yes     | Day on which audits were completed (alias for `audit_completion_date`).                             |
+| `member_id`             | int    | Yes     | ID of the member whose creative was audited.                                                      |
+| `member_name`           | string | Yes     | The name of the member whose creative was audited.                                                |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000649b__entry__45"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-0000649b__entry__46"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000649b__entry__47"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__45"><code
-class="ph codeph">num_audits_completed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__46">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__47">The
-number of audits completed in the grouping specified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__45"><code
-class="ph codeph">total_audit_fee</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000649b__entry__46">double</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000649b__entry__47">The
-total fees for audits in the grouping specified.</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Column               | Type   | Description                                               |
+|----------------------|--------|-----------------------------------------------------------|
+| `num_audits_completed` | int    | The number of audits completed in the grouping specified. |
+| `total_audit_fee`      | double | The total fees for audits in the grouping specified.      |
 
 ## Example
 
 **Create the JSON report request**
 
-``` pre
+``` 
 $ cat completed-creative-audits.json
 {
     "report": {
@@ -266,7 +91,7 @@ $ cat completed-creative-audits.json
 
 **POST the request data to the Reporting Service**
 
-``` pre
+``` 
 $ curl -b cookies -X POST -d @completed-creative-audits.json https://api.adnxs.com/report
 {
     "response": {
@@ -282,7 +107,7 @@ $ curl -b cookies -X POST -d @completed-creative-audits.json https://api.adnxs.c
 
 **GET the report data**
 
-``` pre
+``` 
 $ curl -b cookies https://api.adnxs.com/report/c2c682185b62ec9afd019536a8d947cc
 {
     "response": {
@@ -316,36 +141,21 @@ User:,Rick Land (14311)
     }
 ```
 
+## Related topics
 
+- [Report Service](report-service.md)
 
+- [Saved Report Service](saved-report-service.md)
 
+- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
 
-## Related Topics
+- [Bidder Billing Report API](bidder-billing-report-api.md)
 
-- <a href="report-service.md" class="xref">Report Service</a>
+- [Platform Seller Report](platform-seller-report.md)
 
-- <a href="saved-report-service.md" class="xref">Saved Report
-  Service</a>
+- [seller-platform-billing-report.md](seller-platform-billing-report.md)
 
-- <a href="bidder-platform-buyer-report.md" class="xref">Bidder Platform
-  Buyer Report</a>
+- [Inventory Availability Reporting](inventory-availability-report.md)
 
-- <a href="bidder-billing-report-api.md" class="xref">Bidder Billing
-  Report API</a>
-
-- <a href="platform-seller-report.md" class="xref">Platform Seller
-  Report</a>
-
-- <a href="seller-platform-billing-report.md" class="xref">Seller
-  Platform Billing Report</a>
-
-- <a href="inventory-availability-reporting.md" class="xref">Inventory
-  Availability Reporting</a>
-
-- <a href="reporting-timezones.md" class="xref">Reporting Timezones</a>
-
-
-
-
-
+- [Reporting Timezones](reporting-timezones.md)
 

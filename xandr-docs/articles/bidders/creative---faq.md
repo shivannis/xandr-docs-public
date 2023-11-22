@@ -1,19 +1,15 @@
 ---
-Title : Creative - FAQ
-## Ad Quality
-**Can I rotate brands in my creative or show more than one brand at the
-same time?**
-No, each creative may show only one brand. This may not change during
-ms.date : 10/28/2023
+title : Creative - FAQ
+Description: 
+ms.date : 11/22/2023
 ---
 
 
 # Creative - FAQ
 
+This page gives insights on FAQs for creatives.
 
-
-
-## Ad Quality
+## Ad quality
 
 **Can I rotate brands in my creative or show more than one brand at the
 same time?**
@@ -60,23 +56,16 @@ assigned to my creatives?**
 To check the brand and brand category assigned by Xandr audit to your
 creatives:
 
-- Using the <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>, get the "brand"
+- Using the [creative-service.md](creative-service.md), get the "brand"
   field of the creative. This will have the brand ID and name, and the
   category ID for the brand. E.g.:
   - GET `https://api.adnxs.com/creative/MEMBER_ID/CREATIVE_ID`
-- Using the <a
-  href="category-service.md"
-  class="xref" target="_blank">Category Service</a>, you can get the
+- Using the [Category Service](category-service.md), you can get the
   name of the Category.
   - To get a specific category:
     - `GET https://api.adnxs.com/category/CATEGORY_ID`
   - To get all categories:
     - `GET https://api.adnxs.com/category`
-
-
-
 
 ## Audit - General
 
@@ -110,9 +99,7 @@ fields audit_status and msft_audit_status will be populated accordingly.
 
 **How can I set a creative to be active?**
 
-This can be done using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> by setting the active
+This can be done using the [Creative Service](creative-service.md) by setting the active
 field to "active." This can also be done through the bidder UI in the
 creative tab, by selecting the creative in question, then checking the
 "active" box in the full edit screen.
@@ -126,9 +113,7 @@ to "no-audit".
 
 **How do I put my creative in the audit queue?**
 
-Using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>, set the allow_audit
+Using the [Creative Service](creative-service.md), set the allow_audit
 field to true. This can also be done through the bidder UI in the
 creative tab, by selecting the creative in question, then checking
 "resubmit" in the "Audit Status" field. The creative must also be active
@@ -136,10 +121,7 @@ and the member the creative is registered under must also be active.
 
 **If I disagree with the results of an audit, what should I do?**
 
-Use our Customer Support form at
-<a href="https://help.xandr.com/" class="xref"
-target="_blank">https://help.xandr.com/</a> to contact the Ad Quality
-team.
+Use our Customer Support form at [https://help.xandr.com/](https://help.xandr.com/s/login/) to contact the Ad Quality team.
 
 **What does is_expired=1 mean?**
 
@@ -149,18 +131,13 @@ modified in over last14 days, and it is effectively inactive (on the
 creatives will be automatically reactivated if your bidder resumes
 bidding with the creative.
 
-
-
-
-## Audit Status
+## Audit status
 
 **How can I get the audit status of my creatives?**
 
 There are three methods that are available:
 
-1.  Using the <a
-    href="creative-service.md"
-    class="xref" target="_blank">Creative Service</a>.
+1. Using the  [Creative Service](creative-service.md).
     - To use the creative service, you can make daily calls using the
       `min_last_modified` parameter, in the format of `YYYY-MM-DD` to
       see all creatives that have had their status changed. You should
@@ -172,22 +149,17 @@ There are three methods that are available:
       creatives, but because the API will only return up to 100 objects
       at a time, you can page through the results by using the
       start_element parameter.
-2.  Use the <a
-    href="audit-notify-request.md"
-    class="xref" target="_blank">audit notify request</a>.
+1. Use the [audit notify request](audit-notify-request.md).
     - When creatives are audited, audit notify requests are sent to the
-      handler if this has been set up in the <a
-      href="bidder-service.md"
-      class="xref" target="_blank">Bidder Service</a>.
+      handler if this has been set up in the [Bidder Service](bidder-service.md).
     - In order to set use an audit notify request handler, you must have
       a single endpoint that can receive and process these requests as
       they are sent.
-3.  Use an Excel export.
+1. Use an Excel export.
     - If you would like a weekly report of your creative status sent by
       email, please speak with your Xandr technical and account team.
-4.  Use the
-    <a href="https://bidder.xandr.com/" class="xref" target="_blank">bidder
-    UI</a>.
+1. Use the
+   [bidder UI](https://bidder.xandr.com/login).
 
 **What is returned when I call the creative service?**
 
@@ -217,15 +189,11 @@ in a rolling 60-second window.
 
 **How can I upload creatives?**
 
-You can upload creatives using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> API.
+You can upload creatives using the [Creative Service](creative-service.md) API.
 
 **How do I upload a Flash creative?**
 
-In the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> API, you can either
+In the [Creative Service](creative-service.md)  API, you can either
 provide a link in the `media_url` field, or provide a tag using the
 `content` field. If you host a javascript file that delivers the flash,
 you would specify the URL of your javascript in the media_url, and the
@@ -238,7 +206,7 @@ iframe that delivers the flash. For example, you may use format
 "iframe-html" (or raw-js, if you enter the raw javascript - not if you
 use an html tag that calls javascript) and set the content to be:
 
-``` pre
+``` 
 <SCRIPT 
  TYPE="text/javascript" 
  SRC="https://ad.sample_site.com/ad_server/ads.js?my_ad_id=12345&price_paid=${PRICE_PAID}&custom_macro=${custom_macro}">
