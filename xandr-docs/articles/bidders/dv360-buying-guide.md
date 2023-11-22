@@ -3,7 +3,7 @@ title: Microsoft Bidders - DV360 Buying Guide
 description: The article outlines a DV360 buying guide designed to facilitate communication between Xandr publishers and their buyers. It provides guidance on accessing and targeting Xandr's publisher inventory through DV360 as their DSP. 
 ms.date: 10/28/2023
 ---
-# DV360 Buying guide
+# DV360 buying guide
 
 In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and
 approved by the DV360 team. Please note that platforms can and will change regularly. We will do our best to update this guide as needed.
@@ -22,7 +22,7 @@ In a few cases, DV360 and Xandr use different terminology, as shown in the follo
 | [Non-Guaranteed Auctions](https://support.google.com/displayvideo/answer/3289702) (formerly known as Private Auctions) | Multi-Buyer Deal involving one publisher and many buyers. |
 | Partner ID | Buyer Seat ID |
 
-## Using DV360 to Buy Xandr Open Auction and Deals Inventory
+## Using DV360 to buy Xandr open auction and deals inventory
 
 This section explains how to target Xandr (formerly AppNexus) as an inventory source within the DV360 UI.
 
@@ -34,7 +34,8 @@ Settings** as shown in the following graphic:
 
 :::image type="content" source="media/dv360-buying-guide-a.png" alt-text="A screenshot that illustrates how to set up Xandr Exchange targeting in DV360, the buyer needs to target AppNexus (Xandr) as an Exchange in Partner Settings.":::
 
-To learn more about targeting an inventory source, buyers should [Inventory Source Targeting](https://support.google.com/displayvideo/answer/2726009) in the DV360 Help.
+> [!TIP]
+> To learn more about targeting an inventory source, buyers should [Inventory Source Targeting](https://support.google.com/displayvideo/answer/2726009) in the DV360 Help.
 
 **Open Auction**  
 
@@ -44,9 +45,9 @@ To buy using **Open Auction**, buyers can use the following steps to target Xand
 
 1. In **Partner Settings**, the buyer should select **AppNexus (Xandr)** as the exchange as shown in the following graphic. If the buyer only wants to buy Xandr inventory, they should make sure the Target new exchanges checkbox is de-selected.
 
-The following graphic shows the Inventory Source screen with Xandr selected as the exchange.
+    The following graphic shows the Inventory Source screen with Xandr selected as the exchange.
 
-:::image type="content" source="media/dv360-buying-guide-c.png" alt-text="A screenshot that illustrates the Inventory Source screen with Xandr chosen as the exchange.":::
+    :::image type="content" source="media/dv360-buying-guide-c.png" alt-text="A screenshot that illustrates the Inventory Source screen with Xandr chosen as the exchange.":::
   
 **Deals**
 
@@ -62,16 +63,16 @@ Deal Sync with DV360 is currently in beta, and only selected sellers are enabled
 
 1. In DV360, the buyer should create a new Xandr deal as shown in the following graphics. The second graphic shows an example of a newly created deal in the UI.
 
-:::image type="content" source="media/dv360-buying-guide-d.png" alt-text="A screenshot that illustrates how the buyer creates a new Xandr deal":::
+   :::image type="content" source="media/dv360-buying-guide-d.png" alt-text="A screenshot that illustrates how the buyer creates a new Xandr deal":::
 
-:::image type="content" source="media/dv360-buying-guide-e.png" alt-text="A screenshot that illustrates an example a newly created deal in the user interface (UI).":::
+   :::image type="content" source="media/dv360-buying-guide-e.png" alt-text="A screenshot that illustrates an example a newly created deal in the user interface (UI).":::
 
 2. The buyer should select the created deal for targeting as shown in the following graphics. The second graphic shows an example of the
     targeted deal displayed in UI.
 
-:::image type="content" source="media/dv360-buying-guide-f.png" alt-text="A screenshot that shows how the buyer selects the created deal for targeting.":::
+   :::image type="content" source="media/dv360-buying-guide-f.png" alt-text="A screenshot that shows how the buyer selects the created deal for targeting.":::
 
-:::image type="content" source="media/dv360-buying-guide-g.png" alt-text="The screenshot that illustrates specific deal presented in the user interface.":::
+   :::image type="content" source="media/dv360-buying-guide-g.png" alt-text="The screenshot that illustrates specific deal presented in the user interface.":::
 
 For more information about deals, the buyer can see the following topics in the DV360 Help:
 
@@ -87,7 +88,8 @@ Programmatic guaranteed buying is currently available with DV360. The DV360 team
 > The native is not currently supported for Programmatic Guaranteed buying. We're working with the DV360 team to
 > enable native support.
 
-Publishers can download the following document and share it with buyers directly: [Leverage Programmatic Guaranteed](../monetize/programmatic-guaranteed-buying-line-items.md).
+> [!NOTE]
+> Publishers can download the following document and share it with buyers directly: [Leverage Programmatic Guaranteed](../monetize/programmatic-guaranteed-buying-line-items.md).
 
 ## Targeting audiences and content
 
@@ -167,12 +169,12 @@ DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_mo
 
 Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic.
 
-- Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
+- Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
 
   In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
 
-:::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
- 
+  :::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
+
 **Troubleshooting**
 
 If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:

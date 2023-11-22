@@ -22,11 +22,11 @@ generally the specific product (i.e., iPhone). The read-only Device Make Service
 
 | Field | Type | Description |
 |--|--|--|
-| `codes` | array of objects | Third-party representations for the device make. See Codes below for more details. |
+| `codes` | array of objects | Third-party representations for the device make. See [Codes](device-make-service.md#codes) below for more details. |
 | `id` | int | The ID of the device make. |
 | `name` | string | The name of the device make, i.e., "Apple". |
 
-**Codes**
+## Codes
 
 Each object in the `codes` array contains the following fields.
 

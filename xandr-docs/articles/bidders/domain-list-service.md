@@ -25,12 +25,12 @@ which domains should be included or excluded from targeting. Please be advised t
 
 | Field | Type | Description |
 |--|--|--|
-| description | string(100) | A description of the domain list as specified by the user. |
+| `description` | string(100) | A description of the domain list as specified by the user. |
 | domains | array or strings | The domains included in the domain list. See examples below for format.<br>**Note**: "www" is stripped from domains<br>Domains which begin with `"www"` will have the `"www"`substring stripped out before being stored in our system. For example, `"www.example.org"` will be shortened to `"example.org"`. |
-| id | int | The internal ID for the domain list.<br> - **Required On**: PUT. |
-| last_modified | timestamp | **Read-only**. The day and time when the domain list was last changed. |
-| name | string(100) | The name of the domain list as specified by the user.<br> - **Required On**: POST. |
-| type | string | The type of domain list. Possible values are `"black"` and `"white"`. This is strictly informational. The value here does not determine whether the list is included or excluded.<br>**Default**: "white". |
+| `id` | int | The internal ID for the domain list.<br> - **Required On**: PUT. |
+| `last_modified` | timestamp | **Read-only**. The day and time when the domain list was last changed. |
+| `name` | string(100) | The name of the domain list as specified by the user.<br> - **Required On**: POST. |
+| `type` | string | The type of domain list. Possible values are `"black"` and `"white"`. This is strictly informational. The value here does not determine whether the list is included or excluded.<br>**Default**: "white". |
 
 > [!NOTE]
 > Only the api user that creates a domain list can see and edit the contents of that domain list.
