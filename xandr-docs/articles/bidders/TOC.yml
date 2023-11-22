@@ -1,0 +1,532 @@
+- name: Bidders Reference Documentation
+  href: index.yml
+- name: Getting Started
+  items:
+  - name: The Big Picture
+    href: the-big-picture.md
+  - name: Auction Overview
+    href: auction-overview.md
+  - name: Bidding Use Case with Fees
+    href: bidding-use-case-with-fees.md
+  - name: Price Reduction Mechanics
+    href: price-reduction-mechanics.md
+  - name: Supported Currencies
+    href: supported-currencies.md
+- name: Xandr's Digital Platform UI
+  href: xandr-s-digital-platform-ui.md
+- name: Platform Operations
+  items:
+  - name: Inventory Quality
+    items: 
+    - name: Overview
+      href: inventory-quality.md
+    - name: Inventory Auditing
+      href: inventory-auditing.md
+    - name: Technical Implementation of Inventory Quality Control
+      href: technical-implementation-of-inventory-quality-control.md
+  - name: Creative Standards and Auditing
+    items:
+    - name: Overview
+      href: creative-standards-and-auditing.md
+    - name: Creative Audit Feedback
+      href: creative-audit-feedback.md
+    - name: AdX Feedback and FAQ
+      href: adx-feedback-and-faq.md
+    - name: Microsoft Feedback and FAQ
+      href: microsoft-feedback-and-faq.md
+    - name: International Creatives
+      href: international-creatives.md
+    - name: Sherlock - Creative Quality Control
+      href: sherlock-creative-quality-control.md
+    - name: Creative Approval - Implementation
+      href: creative-approval---implementation.md
+    - name: Smart Image Adjustments for Native Creatives - Bidders
+      href: smart-image-adjustments-for-native-creatives---bidders.md
+- name: Microsoft Monetize Supply for External Demand Partners
+  items:
+  - name: Overview
+    href: xandr-monetize-supply-for-external-demand-partners.md
+  - name: DV360 Buying Guide
+    href: dv360-buying-guide.md
+  - name: DV360 Buyer UI Deal Acceptance Workflows
+    href: dv360-buyer-ui-deal-acceptance-workflows.md
+  - name: Deal Sync with DV360 - Publisher Guide 
+    href: deal-sync-with-dv360---publisher-guide.md
+  - name: Deal Sync with DV360 - FAQ
+    href: deal-sync-with-dv360---faq.md
+  - name: Trade Desk Buying Guide
+    href: trade-desk-buying-guide.md
+  - name: Deal Sync with Trade Desk - Publisher Guide
+    href: deal-sync-with-trade-desk---publisher-guide.md
+  - name: Deal Sync with Trade Desk - FAQ
+    href: deal-sync-with-trade-desk---faq.md
+- name: Integrate a Bidder
+  items:
+  - name: Overview
+    href: integrate-a-bidder.md
+  - name: Creative Setup & Audit
+    items:
+    - name: Quick Start Creative Buying Guide
+      href: quick-start-creative-buying-guide.md
+    - name: Add a Creative
+      href: add-a-creative.md
+    - name: Click Tracking and Cache-Busting Examples for Top Ad Servers
+      href: click-tracking-and-cache-busting-examples.md
+    - name: Selecting the Correct Template for Your Creative
+      href: selecting-the-correct-template-for-your-creative.md
+    - name: VAST Check
+      href: vast-check.md
+    - name: Native Ad Markup Bidding
+      href: native-ad-markup-bidding.md
+    - name: Banner Ad Markup Bidding
+      href: banner-ad-markup-bidding.md
+  - name: Auction Configuration & Feedback
+    items:
+    - name: Simulate Traffic on a TinyTag
+      href: simulate-traffic-on-a-tinytag.md
+    - name: Process the Bid Request
+      href: process-the-bid-request.md
+    - name: Submit a Bid Response
+      href: submit-a-bid-response.md
+    - name: Receive a Notify Request
+      href: receive-a-notify-request.md
+  - name: Other Considerations
+    items:
+    - name: Bidder Best Practices
+      href: bidder-best-practices.md
+    - name: Deals for Bidders
+      items:
+      - name: Overview
+        href: deals-for-bidders.md
+      - name: Deal Auction Mechanics
+        href: deal-auction-mechanics.md
+      - name: Buying Microsoft Casual Games (Windows O&O Apps)
+        href: buying-microsoft-casual-games--windows-o-o-apps.md
+      - name: Buying Microsoft Deals
+        href: buying-microsoft-deals.md
+      - name: Buying Microsoft Outlook.com Inventory
+        href: buying-microsoft-outlook-com-inventory.md
+      - name: Buying MSN Inventory
+        href: buying-msn-inventory.md
+      - name: Microsoft Windows App Inventory for Bidders
+        href: microsoft-windows-app-inventory-for-bidders.md
+    - name: Programmatic Guaranteed Deals for Bidders
+      href: programmatic-guaranteed-deals-for-bidders.md
+    - name: Mobile for Bidders
+      href: mobile-for-bidders.md
+  - name: Expandables and Rich Media
+    href: expandables-and-rich-media.md
+- name: Impression Bus API
+  items:
+  - name: Overview
+    href: impression-bus-api.md
+  - name: API Semantics
+    href: api-semantics.md
+  - name: API Usage Constraints
+    href: api-usage-constraints.md
+  - name: API Best Practices
+    href: api-best-practices.md
+  - name: Breaking Changes
+    href: breaking-changes.md
+  - name: API Services
+    items:
+    - name: Authentication Service
+      items:
+      - name: Overview
+        href: authentication-service.md
+      - name: Account Recovery Service
+        href: account-recovery-service.md
+    - name: Bidder API Services
+      items:
+      - name: Overview
+        href: bidder-api-services.md
+      - name: Bidder Service
+        href: bidder-service.md
+      - name: Bidder Instance Service
+        href: bidder-instance-service.md
+      - name: Legacy Bidder Profile Service
+        href: legacy-bidder-profile-service.md
+      - name: Enhanced Bidder Profiles
+        items:
+        - name: Overview
+          href: enhanced-bidder-profiles.md
+        - name: Bidder Profile Migration Guide
+          href: bidder-profile-migration-guide.md
+        - name: Exchange Service
+          href: exchange-service.md
+        - name: Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles
+          href: hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md
+        - name: API Use Cases for Enhanced Bidder Profiles
+          href: api-use-cases-for-enhanced-bidder-profiles.md
+        - name: Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
+          href: frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
+        - name: Changelog for Enhanced Bidder Profiles
+          href: changelog-for-enhanced-bidder-profiles.md
+      - name: Seat Service
+        items:
+        - name: Overview
+          href: seat-service.md
+        - name: Changelog for Buyer Seat ID
+          href: changelog-for-buyer-seat-id.md
+  - name: Creative API Services
+    items:
+    - name: Overview
+      href: creative-api-services.md
+    - name: Creative Service
+      items:
+      - name: Overview
+        href: creative-service.md
+      - name: Submit Auditable Dynamic Creatives
+        href: submit-auditable-dynamic-creatives.md
+      - name: Xandr Macros
+        href: xandr-macros.md
+    - name: Creative Template Service
+      href: creative-template-service.md
+    - name: Creative Format Service
+      href: creative-format-service.md
+    - name: Pixel Template Service
+      href: pixel-template-service.md
+    - name: Creative Search Service
+      href: creative-search-service.md
+    - name: Creative Macro Check Service
+      href: creative-macro-check-service.md
+  - name: Currency Service
+    href: currency-service.md
+  - name: Deal API Services
+    items:
+    - name: Deal Buyer Access Service
+      href: deal-buyer-access-service.md
+    - name: Package Buyer Access Service
+      href: package-buyer-access-service.md
+    - name: Deal From Package Service
+      href: deal-from-package-service.md
+  - name: Domain List Service
+    href: domain-list-service.md
+  - name: Member Service
+    href: member-service.md
+  - name: Report Service
+    items:
+    - name: Overview
+      href: report-service.md
+    - name: Bidder Bid Error Report API
+      href: bidder-bid-error-report-api.md
+    - name: Bidder Billing Report API
+      href: bidder-billing-report-api.md
+    - name: Bidder Platform Buyer Report
+      href: bidder-platform-buyer-report.md
+    - name: Completed Creative Audits Report
+      href: completed-creative-audits-report.md
+    - name: Inventory Availability Report
+      href: inventory-availability-report.md
+    - name: Platform Seller Report
+      href: platform-seller-report.md
+    - name: Reporting Timezones
+      href: reporting-timezones.md
+    - name: Seller Platform Billing Report
+      href: seller-platform-billing-report.md
+  - name: Saved Report Service
+    href: saved-report-service.md
+  - name: User Service
+    href: user-service.md
+  - name: Read-Only Services
+    items:
+    - name: Ad Server Service
+      href: ad-server-service.md
+    - name: Brand Service
+      href: brand-service.md
+    - name: Browser Service
+      href: browser-service.md
+    - name: Carrier Service
+      href: carrier-service.md
+    - name: Category Service
+      href: category-service.md
+    - name: City Service
+      href: city-service.md
+    - name: Content Category Service
+      items:
+      - name: Overview
+        href: content-category-service.md
+      - name: Automotive Content Categories
+        href: automotive-content-categories.md
+    - name: Country Service
+      href: country-service.md
+    - name: Delivery Type Service
+      href: delivery-type-service.md
+    - name: Device Make Service
+      href: device-make-service.md
+    - name: Device Model Service
+      href: device-model-service.md
+    - name: Duration Service
+      href: duration-service.md
+    - name: Genre Service
+      href: genre-service.md
+    - name: Inventory Attribute Service
+      href: inventory-attribute-service.md
+    - name: Language Service
+      href: language-service.md
+    - name: Network Service
+      href: network-service.md
+    - name: Object Limit Service
+      href: object-limit-service.md
+    - name: Operating System Family Service
+      href: operating-system-family-service.md
+    - name: Operating System Service
+      href: operating-system-service.md
+    - name: Platform Member Service
+      href: platform-member-service.md
+    - name: Postal Code Service
+      href: postal-code-service.md
+    - name: Program Type Service
+      href: program-type-service.md
+    - name: Rating Service
+      href: rating-service.md
+    - name: Region Service
+      href: region-service.md
+    - name: Technical Attribute Service
+      href: technical-attribute-service.md
+    - name: URL Service
+      href: url-service.md
+  - name: Sell-Side Services
+    items:
+    - name: Overview
+      href: sell-side-services.md
+    - name: TinyTags
+      items: 
+      - name: Overview
+        href: tinytags.md
+      - name: TinyTag Service
+        href: tinytag-service.md
+      - name: Dynamic TinyTag Parameters
+        href: dynamic-tinytag-parameters.md
+    - name: Preemptive Tags
+      href: preemptive-tags.md
+    - name: Ad Profile Service
+      href: ad-profile-service.md
+- name: Bidding Protocol
+  items: 
+  - name: Overview
+    href: bidding-protocol.md
+  - name: Outgoing Bid Request to Bidders
+    href: outgoing-bid-request-to-bidders.md
+  - name: Incoming Bid Response from Bidders
+    href: incoming-bid-response-from-bidders.md
+  - name: Bid Error Codes
+    href: bid-error-codes.md
+  - name: Loss Reason Codes
+    href: loss-reason-codes.md
+  - name: Ready Requests
+    href: ready-request.md
+  - name: Notify Request
+    href: notify-request.md
+  - name: Click Request
+    href: click-request.md
+  - name: Audit Notify Request
+    href: audit-notify-request.md
+  - name: AppNexus Bidding Protocol
+    items:
+    - name: Overview
+      href: appnexus-bidding-protocol.md
+    - name: Bid Request
+      href: bid-request.md
+    - name: Bid Response
+      href: bid-response.md
+    - name: Submitting a No-Bid Response
+      href: submitting-a-no-bid-response.md
+    - name: Click Response
+      href: click-response.md
+    - name: Responding to a MegaTag Bid Request
+      href: responding-to-a-megatag-bid-request.md
+    - name: MegaTag Technical Overview
+      href: megatag-technical-overview.md
+  - name: IAB Content Taxonomy Support
+    href: iab-content-taxonomy-support.md
+- name: Bidder Platform User Interface
+  items:
+  - name: Overview
+    href: bidder-platform-user-interface.md
+  - name: Profiles Screen
+    items:
+    - name: Bidder Profile
+      items:
+      - name: Creating a New Bidder Profile
+        href: creating-a-new-bidder-profile.md
+      - name: Bidder Profile Targeting Options
+        items:
+        - name: Countries
+          href: countries.md
+        - name: Domain Lists
+          href: domain-lists.md
+        - name: Ad Types
+          href: ad-types.md
+        - name: Supply Types
+          href: supply-types.md
+        - name: Exchanges and Members
+          href: exchanges-and-members.md
+        - name: Unknown Users
+          href: unknown-users.md
+        - name: Sensitive Attributes
+          href: sensitive-attributes.md
+      - name: Editing a Bidder Profile
+        href: editing-a-bidder-profile.md
+    - name: Additional Functions
+      href: additional-functions.md
+  - name: Creatives Screen
+    items:
+    - name: Overview
+      href: creatives-screen.md
+    - name: Filters
+      href: filters.md
+    - name: Columns
+      href: columns.md
+    - name: Actions
+      href: actions.md
+  - name: Reporting Screen
+    items:
+    - name: Overview
+      href: reporting-screen.md
+    - name: Platform Buyer Report
+      href: platform-buyer-report.md
+    - name: Bidder Billing Report
+      href: bidder-billing-report.md
+    - name: Bidder Bid Error Report
+      href: bidder-bid-error-report.md
+    - name: Completed Creatives Audits Report
+      href: completed-creatives-audits-report.md
+    - name: Your Reports
+      href: your-reports.md
+    - name: Impression Counting
+      href: impression-counting.md
+  - name: Metrics Screen
+    href: metrics-screen.md
+  - name: Deal Screen
+    href: deal-screen.md
+  - name: Seat Screen
+    href: seat-screen.md
+- name: User ID Mapping
+  items:
+  - name: Overview
+    href: user-id-mapping.md
+  - name: Batch Server-Side Segmentation
+    items:
+    - name: Overview
+      href: batch-server-side-segmentation.md
+    - name: Batch Segment Service
+      href: batch-segment-service.md
+    - name: Initial BSS Account Setup
+      href: initial-bss-account-setup.md
+    - name: Uploading Segment Data Using BSS
+      items: 
+      - name: Overview
+        href: uploading-segment-data-using-bss.md
+      - name: BSS Avro File Format
+        href: bss-avro-file-format.md
+      - name: Legacy BSS File Format
+        href: legacy-bss-file-format.md
+    - name: Batch Segment Service Best Practices 
+      href: batch-segment-service-best-practices.md
+    - name: Troubleshooting BSS Uploads
+      href: troubleshooting-bss-uploads.md
+    - name: Passive Segment Upload Using AWS S3
+      href: passive-segment-upload-using-aws-s3.md
+    - name: Verifying Segment Uploads
+      href: verifying-segment-uploads.md
+    - name: Troubleshooting Invalid Users
+      href: troubleshooting-invalid-users.md
+  - name: Synchronize Your User IDs
+    href: synchronize-your-user-ids.md
+- name: FAQs
+  items: 
+  - name: Ad Quality Profile - FAQ
+    href: ad-quality-profile---faq.md
+  - name: Bidder Instance - FAQ
+    href: bidder-instance---faq.md
+  - name: Bidder Profile - FAQ
+    href: bidder-profile---faq.md
+  - name: Bidder Transparent Auction FAQ
+    href: bidder-transparent-auction-faq.md
+  - name: Bid Request - FAQ
+    href: bid-request---faq.md
+  - name: Bid Response - FAQ
+    href: bid-response---faq.md
+  - name: Common Discrepancy Causes - FAQ
+    href: common-discrepancy-causes---faq.md
+  - name: Creative - FAQ
+    href: creative---faq.md
+  - name: Creative Troubleshooting FAQ
+    href: creative-troubleshooting-faq.md
+  - name: Datacenter - FAQ
+    href: datacenter---faq.md
+  - name: Debugging - FAQ
+    href: debugging---faq.md
+  - name: Geo Variable Information
+    href: geo-variable-information.md
+  - name: Getting Started - FAQ
+    href: getting-started---faq.md
+  - name: Identify Impression and Spending Rules - FAQ
+    href: identify-impression-and-spending-rules---faq.md
+  - name: Inventory - FAQ
+    href: inventory---faq.md
+  - name: Metrics - FAQ
+    href: metrics---faq.md
+  - name: Notify Request - FAQ
+    href: notify-request---faq.md
+  - name: Object Limits - FAQ
+    href: object-limits---faq.md
+  - name: Optimization - FAQ
+    href: optimization---faq.md
+  - name: Optimized Bid Stream FAQ
+    href: optimized-bid-stream-faq.md
+  - name: Other - FAQ
+    href: other---faq.md
+  - name: QPS FAQ
+    href: qps-faq.md
+  - name: Research Discrepancies - FAQ
+    href: research-discrepancies---faq.md
+  - name: Rich Media Creatives on Mobile
+    href: rich-media-creatives-on-mobile.md
+  - name: Rich Media - FAQ
+    href: rich-media---faq.md
+  - name: Supply Type Detection - FAQ
+    href: supply-type-detection---faq.md
+  - name: User Data - FAQ
+    href: user-data---faq.md
+  - name: Video Creative FAQs
+    href: video-creative-faq.md
+  - name: Viewability FAQ
+    href: viewability-faq.md
+- name: Communications
+  href: communications.md
+- name: Xandr Bidder Release Notes
+  href: xandr-bidder-release-notes.md
+- name: Release Notes - Legacy
+  items:
+  - name: Overview
+    href: release-notes---legacy.md
+  - name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
+    href: september-5--2017---api-version-1-18-release---breaking-changes.md
+  - name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
+    href: december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
+  - name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+    href: august-17--2016---impbus-api-1-17-release---breaking-changes.md
+  - name: March 9, 2016 - Creative Macro Breaking Change
+    href: march-9--2016---creative-macro-breaking-change.md
+  - name: December 21, 2015 - UTF-8 Encoding of Reporting Data
+    href: december-21--2015---utf-8-encoding-of-reporting-data.md
+  - name: October 2, 2015 - Bid Request Breaking Change
+    href: october-2--2015---bid-request-breaking-change.md
+  - name: September 30, 2015 
+    href: september-30--2015.md
+  - name: August 19, 2015
+    href: august-19--2015.md
+  - name: August 14, 2015 - Batch Segment Service Breaking Changes
+    href: august-14--2015---batch-segment-service-breaking-changes.md
+  - name: June 16, 2015
+    href: june-16--2015.md
+- name: Guaranteed Outcomes
+  items:
+  - name: Overview
+    href: guaranteed-outcomes.md
+  - name: Guaranteed Outcomes Bidder Integration Guide
+    href: guaranteed-outcomes-bidder-integration-guide.md
+  - name: Monthly Prediction Variability Data
+    href: monthly-prediction-variability-data.md
