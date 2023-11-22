@@ -1,6 +1,6 @@
 ---
-Title: Microsoft Bidders - DV360 Buying Guide
-Description: The article outlines a DV360 buying guide designed to facilitate communication between Xandr publishers and their buyers. It provides guidance on accessing and targeting Xandr's publisher inventory through DV360 as their DSP. 
+title: Microsoft Bidders - DV360 Buying Guide
+description: The article outlines a DV360 buying guide designed to facilitate communication between Xandr publishers and their buyers. It provides guidance on accessing and targeting Xandr's publisher inventory through DV360 as their DSP. 
 ms.date: 10/28/2023
 ---
 # DV360 Buying guide

@@ -60,4 +60,4 @@ curl -b cookies -c cookies "https://api.adnxs.com/video-content-duration"
 
 - [Profile Service](../digital-platform-api/profile-service.md)
 - [API Best Practices](../digital-platform-api/api-best-practices.md)
-- [API Semantics](xandr-api/api-semantics.md)
+- [API Semantics](../digital-platform-api/api-semantics.md)
