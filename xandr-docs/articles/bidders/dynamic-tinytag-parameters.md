@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 A TinyTag ID is associated to various static data in the Xandr database. Some of the parameters associated with the TinyTag can be dynamically added or overwritten at the time of the TinyTag Request, or ad call.
 
-Identification either by ID or by member and code (see [>Calling TinyTags Via Codes instead of ID](dynamic-tinytag-parameters.md#ID-0000974b__call) below) are required parameters in a TinyTag. Size is also required if it was not pre-associated with the TinyTag ID. All other parameters are optional.
+Identification either by ID or by member and code (see [Calling TinyTags Via Codes instead of ID](dynamic-tinytag-parameters.md#dynamic-tinytag-parameters) below) are required parameters in a TinyTag. Size is also required if it was not pre-associated with the TinyTag ID. All other parameters are optional.
 
 ## Parameters
 

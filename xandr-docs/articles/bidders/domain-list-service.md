@@ -4,7 +4,7 @@ description: The article discusses a domain list service, highlighting its funct
 ms.date: 10/28/2023
 ---
 
-# Domain List Service
+# Domain list service in Microsoft Bidders 
 
 Domain lists can be used to create an allowlist or a blocklist of domains that should be included or excluded, respectively, from
 targeting. The domain list IDs are used with the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to specify
@@ -82,7 +82,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/domain-list/9'
                 domain-list":{
                 "id":9,
                 "name":"Domains to exclude",
-                "description":"A list of the domains to target for the parent profile blacklist",
+                "description":"A list of the domains to target for the parent profile allowlist",
                 "type":"black",
                 "domains":[
                                 "baddomain.com", 
