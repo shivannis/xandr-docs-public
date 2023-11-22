@@ -25,9 +25,9 @@ Skyscraper unit is fully integrated into the user experience. For more informati
 
 ## Availability and volume
 
-- Over 400 million active email accounts
-- 38 markets globally
-- 9.8 billion monthly global display impressions (over 1.4 billion in US)
+- Over 400 million active email accounts.
+- 38 markets globally.
+- 9.8 billion monthly global display impressions (over 1.4 billion in US).
 
 ## Formats and specifications
 
@@ -55,4 +55,4 @@ For instructions on how to target the Outlook app, see [Buying Microsoft Windows
 
 ## More questions?
 
-If you have any further questions about buying Outlook.com inventory, please contact your Xandr account representative.
+If you have any further questions about buying Outlook.com inventory, then contact your Xandr account representative.

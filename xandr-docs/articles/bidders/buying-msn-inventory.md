@@ -48,7 +48,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 
 For information on general inventory targeting, review the following documentation:
 
-- [Buying Microsoft Inventory](buying-microsoft-inventory.md)
+- [Buying Microsoft Inventory](../invest/buying-microsoft-inventory.md)
 - [Domain Targeting](../monetize/domain-targeting.md)
 
 To target MSN.com inventory:
@@ -62,4 +62,4 @@ For instructions on how to target the MSN app, see [Buying Microsoft Windows App
 
 ## More questions?
 
-If you have any further questions about buying MSN inventory, please contact your Xandr account representative.
+If you have any further questions about buying MSN inventory, then contact your Xandr account representative.

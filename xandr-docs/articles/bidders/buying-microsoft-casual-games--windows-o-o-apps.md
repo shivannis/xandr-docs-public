@@ -1,6 +1,6 @@
 ---
 title: Bidders - Buy Microsoft Casual Games (Windows O&O Apps)
-description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.
+description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps, offering a range of fun and engaging options for users.
 ms.date: 10/28/2023
 ---
 
@@ -27,7 +27,7 @@ The Microsoft Solitaire Collection remains the most played computer game of all 
 
 :::image type="content" source="media/solitairehome.png" alt-text="Screenshot of the Solitaire home screen.":::
 
-**Sub-screens** - Above the fold, right side of sub menu screens
+**Sub-screens** - Above the fold, right side of sub menu screens.
 
 :::image type="content" source="media/solitairesub.png" alt-text="Screenshot of the Solitaire sub-screen.":::
 
@@ -189,7 +189,7 @@ To target Microsoft Casual Games inventory when setting up a Augmented Line Item
 1. In the **Basic Setup** section, select **Open Exchange**.
 1. In the **Programmable Splits** section, create **1 new split**.
 1. On the new **Split 1** line, select the Pencil edit icon next to the name.
-1. In the Split panel, click the Select Condition drop down and enable **Publisher**.
+1. In the Split panel, click the **Select Condition** drop down and enable **Publisher**.
 1. In the **Publisher** text field, enter **679569** and click the **Add** button.
 
 ### Target packages
@@ -239,4 +239,4 @@ For more information, see [Profile Service](../digital-platform-api/profile-serv
 
 ## More questions?
 
-If you have further questions about buying this inventory, please contact your Xandr account representative.
+If you have further questions about buying this inventory, then contact your Xandr account representative.

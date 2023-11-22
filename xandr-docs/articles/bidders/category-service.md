@@ -24,7 +24,7 @@ The read-only Category Service allows you to view all categories that are regist
 > The fields `countries_and_brands` and `countries_and_regions` defined below are being used by our system to allow gambling-related creatives to serve in the countries and regions where they're legally allowed, putting us in compliance with applicable laws.
 >
 > - For more information about our official gambling-related policies, see our buy-side and sell-side gambling policies.
-> - For more information on how allowlisting works by country and region, contact [Customer Support](https://support.xandr.com/).
+> - For more information on how allowlisting works by country and region, contact [Customer Support](https://help.xandr.com/s/login/).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -32,10 +32,10 @@ The read-only Category Service allows you to view all categories that are regist
 | `name` | string | The name of the category.<br>**Required On:** POST |
 | `is_sensitive` | boolean | If `true`, the category is listed as "sensitive", and is often banned by publishers.<br>**Default:** false |
 | `last_modified` | timestamp | The date and time when the category was last modified. |
-| `requires_whitelist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e. RTB) inventory.<br>**Default:** false |
-| `requires_whitelist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** false |
+| `requires_allowlist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e. RTB) inventory.<br>**Default:** false |
+| `requires_allowlist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** false |
 | `is_brand_eligible` | boolean | If true, then the category is eligible to be associated with brands within the audit process.<br>**Default:** true |
-| `requires_whitelist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** false |
+| `requires_allowlist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** false |
 | `countries_and_brands` | array of objects | This array contains brand allowlist settings grouped by country. For more information, see "[Countries and Brands](#countries-and-brands)" below. |
 
 ### Countries and brands
@@ -74,11 +74,11 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category"
         "name": "Airlines",
         "is_sensitive": false,
         "last_modified": "2010-03-19 17:48:36",
-        "requires_whitelist_on_external": false,
-        "requires_whitelist_on_managed": false,
+        "requires_allowlist_on_external": false,
+        "requires_allowlist_on_managed": false,
         "is_brand_eligible": true,
-        "requires_whitelist": false,
-        "whitelist": {
+        "requires_allowlist": false,
+        "allowlist": {
           "countries_and_brands": [],
           "regions_and_brands": []
         }
@@ -88,11 +88,11 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category"
         "name": "Apparel",
         "is_sensitive": false,
         "last_modified": "2010-03-19 17:48:36",
-        "requires_whitelist_on_external": false,
-        "requires_whitelist_on_managed": false,
+        "requires_allowlist_on_external": false,
+        "requires_allowlist_on_managed": false,
         "is_brand_eligible": true,
-        "requires_whitelist": false,
-        "whitelist": {
+        "requires_allowlist": false,
+        "allowlist": {
           "countries_and_brands": [],
           "regions_and_brands": []
         }
@@ -102,11 +102,11 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category"
         "name": "Appliances",
         "is_sensitive": false,
         "last_modified": "2010-03-19 17:48:36",
-        "requires_whitelist_on_external": false,
-        "requires_whitelist_on_managed": false,
+        "requires_allowlist_on_external": false,
+        "requires_allowlist_on_managed": false,
         "is_brand_eligible": true,
-        "requires_whitelist": false,
-        "whitelist": {
+        "requires_allowlist": false,
+        "allowlist": {
           "countries_and_brands": [],
           "regions_and_brands": []
         }
@@ -133,11 +133,11 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/category/1"
       "name": "Airlines",
       "is_sensitive": false,
       "last_modified": "2010-03-19 17:48:36",
-      "requires_whitelist_on_external": false,
-      "requires_whitelist_on_managed": false,
+      "requires_allowlist_on_external": false,
+      "requires_allowlist_on_managed": false,
       "is_brand_eligible": true,
-      "requires_whitelist": false,
-      "whitelist": {
+      "requires_allowlist": false,
+      "allowlist": {
         "countries_and_brands": [],
         "regions_and_brands": []
       }

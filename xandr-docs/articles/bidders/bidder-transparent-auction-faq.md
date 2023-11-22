@@ -72,11 +72,11 @@ bid.
 
 | Auction Type | Xandr Deal Auction Type Config on Deal ID | Bid Request Auction Type (`at`) | Deal Object Auction Type (`pmp.deal.at`) | Result for Buyer | OptimalBiddingRecommendation |
 |---|---|---|---|---|---|
-| **First-Price Auction:**<br> - Winning bid = price paid<br> - No soft floors<br> - Hard floors are allowed, including dynamic.<br> - Header bidding auctions are always first price. | standard | 1 | 1 |  - Bid ranked based on bid<br> - Pay what you bid | Shade |
-| **Trusted Second Price Auction:**<br> - Winning bid always price reduced<br> - No soft floors, buyer-friendly<br> - Hard floors are allowed, including dynamic. | standard | 2 | 2 | - Bid ranked based on bid<br>- Pay second price or Deal Ask Price | Don't Shade |
-| **Trusted Second Price Auction:**<br> - Winning bid always price reduced<br> - No soft floors, buyer-friendly<br> - Hard floors are allowed, including dynamic. | fixed | 2 | 3 | - Bid ranked by Deal Ask Price<br> - Pay Deal Ask Price | Bid more than Ask |
-| **Soft Floor / Legacy Second Price Auction:**<br> - Soft floors, seller-friendly<br> - Auction logic sometimes first-prices<br> - Buyers, ECP soft floors, hard floors allowed, including dynamic. | standard | 1 | 1 | - Bid ranked based on bid<br> - Pay first price or second price, Deal Ask Price depending | Shade |
-| **Soft Floor / Legacy Second Price Auction:**<br> - Soft floors, seller-friendly<br> - Auction logic sometimes first-prices<br> - Buyers, ECP soft floors, hard floors allowed, including dynamic. | fixed | 1 | 3 | - Bid ranked by Deal Ask Price<br> - Pay Deal Ask Price | Bid more than Ask |
+| **First-Price Auction:**<br> - Winning bid = price paid.<br> - No soft floors.<br> - Hard floors are allowed, including dynamic.<br> - Header bidding auctions are always first price. | standard | 1 | 1 |  - Bid ranked based on bid<br> - Pay what you bid | Shade |
+| **Trusted Second Price Auction:**<br> - Winning bid always price reduced.<br> - No soft floors, buyer-friendly.<br> - Hard floors are allowed, including dynamic. | standard | 2 | 2 | - Bid ranked based on bid<br>- Pay second price or Deal Ask Price | Don't Shade |
+| **Trusted Second Price Auction:**<br> - Winning bid always price reduced.<br> - No soft floors, buyer-friendly.<br> - Hard floors are allowed, including dynamic. | fixed | 2 | 3 | - Bid ranked by Deal Ask Price<br> - Pay Deal Ask Price | Bid more than Ask |
+| **Soft Floor / Legacy Second Price Auction:**<br> - Soft floors, seller-friendly.<br> - Auction logic sometimes first-prices.<br> - Buyers, ECP soft floors, hard floors allowed, including dynamic. | standard | 1 | 1 | - Bid ranked based on bid<br> - Pay first price or second price, Deal Ask Price depending | Shade |
+| **Soft Floor / Legacy Second Price Auction:**<br> - Soft floors, seller-friendly.<br> - Auction logic sometimes first-prices.<br> - Buyers, ECP soft floors, hard floors allowed, including dynamic. | fixed | 1 | 3 | - Bid ranked by Deal Ask Price<br> - Pay Deal Ask Price | Bid more than Ask |
 | **External Auction (SSPs):**<br>Xandr doesn't know the rules, we assume soft floors and first price. | standard | 1 | 1 | - Bid ranked based on bid<br> - Pay what you bid | Shade |
 
 ## What actions do I need to take as a bidder?
@@ -113,7 +113,7 @@ Entity responsible for the final impression sale decision, where:
 
 The following chart outines how `is_header` and `fd` work together with the auction type (`at`) to identify the type of inventory:
 
-| Inventory Type | at | is_header | fd |
+| Inventory Type | `at` | `is_header` | `fd` |
 |:---|:---|:---|:---|
 | Header | 1 | 1 | 1 |
 | Xandr's exchange with soft floor | 1 | 0 | 0 |
@@ -130,4 +130,4 @@ In the latter case, the second-price auction appears to function as a first-pric
 
 ## Where do I go if I need help?
 
-Please contact your Xandr representative or [Xandr customer support](https://help.xandr.com/) for assistance.
+Contact your Xandr representative or [Xandr customer support](https://help.xandr.com/) for assistance.

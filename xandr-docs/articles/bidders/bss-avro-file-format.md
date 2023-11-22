@@ -40,11 +40,11 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 | User ID Type | Description |
 |---|---|
-| `AppNexus/Xandr User ID (ANID)` | Xandr ID, also known as user_id_64 |
-| `Device ID` | Similar utility as ifa (Identifier for Advertising). It indicates the Mobile device type being onboarded. The device_id record consists of two fields:<br>domain (enum) - Possible values are idfa, sha1udid, md5udid, openudid, aaid, windowsadid, rida, tifa, vida, and lgudid.<br>id (string) |
-| `Identifier for Advertising (or IFA)` | Identifier for Advertising - indicates the device type being onboarded. The ifa record consists of two fields:<br>type (string) - Type of ID.<br>id (string) - IFA ID, representing the IFA in UUID format.<br>See device extension object for supported ifa types |
-| `External ID` | External ID - indicates Member defined identifier being onboarded. The external_id record consists of two fields:<br>member_id (int) - Member ID of the member who owns the external_id.<br>id (string) - corresponding value of the member_id. |
-| `Extended ID's(eid) or Publisher-provided ID's(PPID)` | Extended ID - indicates the type of universal ID or publisher ID being onboarded. The eid record consists of two fields:<br>source (string) - Source of the ID. Permitted values are , and permissioned member-defined sources.<br>id (string) - Publisher or industry ID.<br>Today these are the only two available for audience onboarding. |
+| `AppNexus/Xandr User ID (ANID)` | Xandr ID, also known as user_id_64. |
+| `Device ID` | Similar utility as ifa (Identifier for Advertising). It indicates the Mobile device type being onboarded. The device_id record consists of two fields:<br> - domain (enum): Possible values are idfa, sha1udid, md5udid, openudid, aaid, windowsadid, rida, tifa, vida, and lgudid.<br> - id (string) |
+| `Identifier for Advertising (or IFA)` | Identifier for Advertising - indicates the device type being onboarded. The ifa record consists of two fields:<br> - **type** (string): Type of ID.<br> - **id** (string): IFA ID, representing the IFA in UUID format.<br><br>For supported ifa types, see [device extension object](outgoing-bid-request-to-bidders.md).  |
+| `External ID` | External ID - indicates Member defined identifier being onboarded. The external_id record consists of two fields:<br> - **member_id** (int): Member ID of the member who owns the external_id.<br> - **id** (string): corresponding value of the member_id. |
+| `Extended ID's(eid) or Publisher-provided ID's(PPID)` | Extended ID - indicates the type of universal ID or publisher ID being onboarded. The eid record consists of two fields:<br> - **source** (string): Source of the ID. Permitted values are , and permissioned member-defined sources.<br> - **id** (string) - Publisher or industry ID.<br><br>Today these are the only two available for audience onboarding. |
 
 #### Java library example
 
@@ -140,7 +140,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`AppNexus/Xandr User ID (ANID)`**
 
-```
+``` pre
 {'uid': 64,
 'segments':
 [seg1]}
@@ -153,8 +153,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 {'uid': {'id': 
 'qweqeqweq', 
 'domain': 'idfa'}, 
-'segments': 
-[seg1]}
+'segments': [seg1]}
 
 ```
 
@@ -163,9 +162,8 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 ``` pre
 
 {'uid': {'id': 
-'qweqeqweq', 
-'type': 'atif'}, 
-'segments': 
+'qweqeqweq', 'type': 
+'atif'}, 'segments': 
 [seg1]}
 
 ```
@@ -176,9 +174,8 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 {'uid': {'id': 
 'extid1', 
-'member_id': 
-914}, 'segments': 
-[seg1]}
+'member_id': 914}, 
+'segments': [seg1]}
 
 ```
 
@@ -190,8 +187,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 'qweqeqweq', 
 'source': 
 'liveramp.com'}, 
-'segments': 
-[seg1]}
+'segments': [seg1]}
 
 ```
 
@@ -224,11 +220,11 @@ python3 -m pip install avro
 
 ## Download the Xandr Avro schema
 
-You can download the Xandr Avro Schema from [here](https://xandr-be-prod.zoominsoftware.io/bundle/xandr-bidders/page/attachments/xandr_schema.avsc)
+You can download the Xandr Avro Schema from [here](https://xandr-be-prod.zoominsoftware.io/bundle/xandr-bidders/page/attachments/xandr_schema.avsc).
 
 ## Generate your AVRO audience file
 
-See below for examples using the Java and Python libraries.
+For examples using the Java and Python libraries, see below.
 
 ### Java example
 
@@ -263,7 +259,7 @@ java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_sch
 > - Our examples are for the **Python Avro Library**, and are not to be confused with the **Fast Avro Library**.
 >   - Python Avro library does not use uid union type names. Instead, it determines the uid type by full match of field names.
 >     - {'uid': {'id': 'qweqeqweq', 'domain': 'idfa'}, 'segments': \[…\]}
->   - The Fast Avro library uses hints to specify the exact type of uid similar to the Java library
+>   - The Fast Avro library uses hints to specify the exact type of uid similar to the Java library.
 >     - {'uid': ('external_id', {'id':'exitd1', 'member_id': 914}), 'segments': \[{'expiration': 259200, 'id': 25815407}\]}
 > - DataFileWriter.append() accepts a python dictionary (dict) type, not a JSON.
 
