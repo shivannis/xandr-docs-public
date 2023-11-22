@@ -20,9 +20,9 @@ Use the read-only Delivery Type Service to see what video content delivery types
 | Field | Type | Description |
 |--|--|--|
 |  |  |  |
-| id | int | The Xandr referential ID associated with the delivery type. |
-| name | string | The video taxonomy referential value.<br>Required On: POST/PUT |
-| last_modified | timestamp | The time of last modification. |
+| `id` | int | The Xandr referential ID associated with the delivery type. |
+| `name` | string | The video taxonomy referential value.<br>**Required On**: POST/PUT |
+| `last_modified` | timestamp | The time of last modification. |
 
 ## Example
 

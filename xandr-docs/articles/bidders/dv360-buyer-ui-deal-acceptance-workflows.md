@@ -51,7 +51,8 @@ Once a seller's deal is successfully uploaded to the Display & Video 360 (DV360)
     - Your method for conversion tracking.  
 3. Click **Assign** when you are done.
 
-Learn more about how to manage your non-PG deals in the [DV360 help page](https://support.google.com/displayvideo/answer/6224774?hl=en&amp;ref_topic=6224744).
+> [!NOTE]
+> Learn more about how to manage your non-PG deals in the [DV360 help page](https://support.google.com/displayvideo/answer/6224774?hl=en&amp;ref_topic=6224744).
 
 **Configure PG deals**
 
