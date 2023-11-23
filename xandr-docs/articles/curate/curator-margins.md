@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Curator Margins
+title: Curator Margins
 description: In this article, learn about the Curator margins, the different types, and how they are calculated.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Curator margins
+# Curator margins
 
 Curator margins allow curators to profit on the curated deals they handle. Margins let curators compensate themselves for the value they’re adding to a curated deal transaction. Margins are set at a [curated deal line item](create-a-curated-deal-line-item.md) level, so curators can take different margins for each deal. Margins can be edited at any time for a deal.
 
