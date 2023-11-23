@@ -3,7 +3,7 @@ title: Microsoft Curate - Buying Microsoft Video Inventory
 description: The article describes how the Microsoft video inventory combines the targeting effectiveness of programmatic buying with interactive ad formats. It also explains the types and creative specifications of Microsoft video inventory.
 ---
 
-# Buying Microsoft video inventory
+# Microsoft Curate - Buying Microsoft video inventory
 
 Microsoft video inventory combines the targeting effectiveness of programmatic buying with interactive ad formats.
 
