@@ -22,7 +22,7 @@ of time.
 | **Interval** (drop-down menu)  | - Hourly <br> - Daily <br> - Monthly <br> - Cumulative                                                                                 |
 | **Range** (drop-down menu)     | - Custom <br> - Current Hour <br> - Today <br> - Yesterday <br> - Last 48 Hours <br> - Last 7 Days <br> - Month to Date <br> - Month to Yesterday <br> - Last Month       |
 | **Time Zone** (drop-down menu) | Select the appropriate time zone.                                                                               |
-| **Type** (drop-down menu)      | - [Platform Buyer Report](platform-buyer-report) (default) <br> -  [Bidder Billing Report](bidder-billing-report.md) <br> - [Bidder Bid Error Report](bidder-bid-error-report.md) <br> - Completed Creatives Audits Report |
+| **Type** (drop-down menu)      | - [Platform Buyer Report](platform-buyer-report.md) (default) <br> -  [Bidder Billing Report](bidder-billing-report.md) <br> - [Bidder Bid Error Report](bidder-bid-error-report.md) <br> - Completed Creatives Audits Report |
 
 ## Metrics
 
@@ -43,7 +43,7 @@ the **Edit** button on the right to select/deselect.
 | Filter       | Definition                                                                                                                                                                                                                                                   |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Audit Reason** | Select to filter by the the type of audit submission. This will be either "Initial" or "Reaudit". <br>- Initial = First submission of the creative to Audit. <br> - Reaudit = Any re-submissions of a creative for audit after the initial audit that occurred on upload. |
-| **Audit Type**   | Select to filter by the priority of the audit. Allowed values: <br> - 1: Standard <br> - 2: Priority                                                                                                                                                                       |
+| **Audit Type**   | Select to filter by the priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority                                                                                                                                                                       |
 | **Buyer Member** | Select to filter by the ID of the member whose creative was audited.                                                                                                                                                                                         |
 | **Creative**     | Select to filter by ID of the creative that was audited.                                                                                                                                                                                                     |
 
@@ -55,7 +55,7 @@ Click the **check box** on the left to select/deselect.
 | Dimension     | Definition                                                                                                                                                                                                                         |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Audit Reason**  | The type of audit submission. This will be either "Initial" or "Reaudit". <br> - Initial = First submission of the creative to Audit <br> - Reaudit = Any re-submissions of a creative for audit after the initial audit that occurred on upload |
-| **Audit Type**    | The priority of the audit. Allowed values: <br> - 1: Standard <br> - 2: Priority                                                                                                                                                                 |
+| **Audit Type**    | The priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority                                                                                                                                                                 |
 | **Creative**     | ID of the creative that was audited.                                                                                                                                                                                               |
 | **Date of Audit** | Day on which audits were completed.                                                                                                                                                                                                |
 | **Member**        | ID of the member whose creative was audited.                                                                                                                                                                                       |
@@ -87,6 +87,6 @@ automatically be accessed, where the report results are displayed.
 
 - [Reporting Screen](reporting-screen.md)
 - [Platform Buyer Report](platform-buyer-report.md)
-- [Bidder Billing Report](bidder-billing-report)
+- [Bidder Billing Report](bidder-billing-report.md)
 - [Bidder Bid Error Report](bidder-bid-error-report.md)
 - [Your Reports](your-reports.md)

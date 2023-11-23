@@ -1,11 +1,11 @@
 ---
-title : Creative - FAQ
-Description: 
+title : Bidders - Creative (FAQ)
+Description: Learn FAQs on Creatives
 ms.date : 11/22/2023
 ---
 
 
-# Creative - FAQ
+# Bidders - Creative (FAQ)
 
 This page gives insights on FAQs for creatives.
 
@@ -56,7 +56,7 @@ assigned to my creatives?**
 To check the brand and brand category assigned by Xandr audit to your
 creatives:
 
-- Using the [creative-service.md](creative-service.md), get the "brand"
+- Using the [creative-service](creative-service.md), get the "brand"
   field of the creative. This will have the brand ID and name, and the
   category ID for the brand. E.g.:
   - GET `https://api.adnxs.com/creative/MEMBER_ID/CREATIVE_ID`

@@ -44,7 +44,7 @@ requests is respected.
 
 | Fields        | Type    | Description                                                                                                                                                                                          |
 |---------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `as_of`         | string  | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
+| `as_of`         | string  | The date and time that [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
 | `code`          | string  | The code for the currency.                                                                                                                                                                           |
 | `description`   | string  | A description of the currency.                                                                                                                                                                       |
 | `is_exposed`    | boolean | If true, the currency is exposed.                                                                                                                                                                    |
