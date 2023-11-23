@@ -1,6 +1,6 @@
 ---
 title : Bidders - Creative (FAQ)
-Description: Learn FAQs on Creatives
+description: Learn FAQs on Creatives.
 ms.date : 11/22/2023
 ---
 

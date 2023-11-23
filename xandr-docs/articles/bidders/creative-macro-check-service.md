@@ -2,7 +2,7 @@
 title : Bidders - Creative Macro Check Service
 description : Learn how to use Creative macro check service to allow Xandr to check third party tags and append parameters in the query string, replace the domain, or insert Xandr click tracking macros in the appropriate place for you. 
 ms.date : 11/22/2023
-,
+
 ---
 
 
@@ -27,8 +27,8 @@ field will not be displayed in .
 
 | HTTP method | End point                                                                                   | Description                                                                  |
 |-------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| PUT         | [https://api..com/creative-macro-check](https://api..com/creative-macro-check) (replace_pattern_in_content_url JSON)                 | Replace content within a URL based on predefined patterns.                   |
-| PUT         | [https://api..com/creative-macro-check?include_tests=1](https://api..com/creative-macro-check?include_tests=1) (replace_pattern_in_content_url JSON) | Replace content within a URL based on predefined patterns and test patterns. |
+| PUT         | `[https://api..com/creative-macro-check](https://api..com/creative-macro-check)` (replace_pattern_in_content_url JSON)                 | Replace content within a URL based on predefined patterns.                   |
+| PUT         | `[https://api..com/creative-macro-check?include_tests=1](https://api..com/creative-macro-check?include_tests=1)` (replace_pattern_in_content_url JSON) | Replace content within a URL based on predefined patterns and test patterns. |
 
 ## JSON fields
 

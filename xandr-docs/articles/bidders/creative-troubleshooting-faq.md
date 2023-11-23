@@ -1,6 +1,6 @@
 ---
 title : Bidders - Creative Troubleshooting FAQ
-Description: Learn Creative Troubleshooting FAQs in this page. 
+description: Learn Creative Troubleshooting FAQs in this page. 
 ms.date : 11/23/2023
 ---
 

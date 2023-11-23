@@ -1,7 +1,6 @@
 ---
 title : Bidders - Creative Template Service
-description : Learn how Xandr categorizes creatives by format, media
-type, and media subtype.  
+description : Learn how Xandr categorizes creatives by format, media type, and media subtype.  
 ms.date : 11/21/2023
 
 ---
@@ -538,7 +537,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.adnxs.com/t
 {code}
 ```
 
-**Archiving a custom template**
+## Archiving a custom template
 
 ``` 
 In this example, the PUT request sets the is_archived field to true, thus archiving the template and preventing future creatives from using it.
