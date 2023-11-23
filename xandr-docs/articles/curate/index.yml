@@ -23,6 +23,10 @@ landingContent:
         links:
           - text: Microsoft Curate API
             url: digital-platform-ui-api-info.md
+      - linkListType: how-to-guide
+        links:
+          - text: Managing User Logins and Permissions
+            url: managing-user-logins-and-permissions.md
   - title: Partner Center Guide
     linkLists:
       - linkListType: concept
