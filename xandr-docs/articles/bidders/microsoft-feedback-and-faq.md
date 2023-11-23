@@ -1,22 +1,11 @@
 ---
-Title : Microsoft Feedback and FAQ
-Description : **We strictly adhere to Microsoft's content guidelines which are
-ms.date : 10/28/2023
-contained in the Microsoft Advertising policies here:**
-<a href="https://about.ads.microsoft.com/en-us/policies/home"
+title: Microsoft Feedback and FAQ
+description: In this article, explore Microsoft's feedback and FAQ information in the Microsoft Advertising policies.
+ms.date: 10/28/2023
 ---
 
+# Microsoft feedback and FAQ
 
-# Microsoft Feedback and FAQ
+**We strictly adhere to Microsoft's content guidelines which are contained in the Microsoft Advertising policies here:**
 
-
-
-**We strictly adhere to Microsoft's content guidelines which are
-contained in the Microsoft Advertising policies here:**
-<a href="https://about.ads.microsoft.com/en-us/policies/home"
-class="xref" target="_blank">Policies and Guidelines - Microsoft
-Advertising.</a>
-
-
-
-
+[Policies and Guidelines - Microsoft Advertising](https://about.ads.microsoft.com/en-us/policies/home).

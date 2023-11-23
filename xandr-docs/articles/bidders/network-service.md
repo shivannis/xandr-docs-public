@@ -1,115 +1,31 @@
 ---
-Title : Network Service
-Description : Use the read-only Network Service to see what video content networks are
-ms.date : 10/28/2023
-registered in the Xandr system. Video content
+title: Bidders - Network Service
+description: In this article, learn about bidders network service, their JSON fields, and REST API with a detailed set of example.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Network service
 
-# Network Service
-
-
-
-Use the read-only Network Service to see what video content networks are
-registered in the Xandr system. Video content
-fields can be added to line item or deal line item targeting. 
-
-
+Use the read-only Network Service to see what video content networks are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008820__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00008820__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00008820__entry__3"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__2">https://api.<span
-class="ph">adnxs.com/video-content-network</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008820__entry__3">To
-view all defined networks</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__2">https://api.<span
-class="ph">adnxs.com/video-content-network?id=&lt;id
-value&gt;</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008820__entry__3">To
-view a defined network</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description  |
+|:---|:---|:---|
+| GET | https://api.adnxs.com/video-content-network | To view all defined networks. |
+| GET | https://api.adnxs.com/video-content-network?id=<id value> | To view a defined network. |
 
+## JSON fields
 
+| Field | Type | Description  |
+|:---|:---|:---|
+| `id` | int | The Xandr referential ID associated with the network. |
+| `name` | string | **Required on:** POST/PUT<br>The video taxonomy referential value. |
+| `last_modified` | timestamp | The time of last modification. |
 
+## Example
 
-
-## JSON FIELDS
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008820__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008820__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008820__entry__12"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__10">id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008820__entry__12">The
-Xandr referential ID associated with the
-network</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__10">name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__12"><ul>
-<li>Required on POST/PUT</li>
-</ul>
-<p>The video taxonomy referential value</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__10">last_modified</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008820__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008820__entry__12">The
-time of last modification</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## EXAMPLE
-
-**To retrieve all defined networks  
-  
-**
+### To retrieve all defined networks
 
 ``` pre
 curl -b cookies -c cookies "https://api.adnxs.com/video-content-network"
@@ -140,20 +56,8 @@ curl -b cookies -c cookies "https://api.adnxs.com/video-content-network"
 }
 ```
 
-**Related Topics**
+## Related topics
 
-- <a
-  href="xandr-api/profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="xandr-api/api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="xandr-api/api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
+- [Profile Service](../digital-platform-api/profile-service.md)
+- [API Best Practices](../digital-platform-api/api-best-practices.md)
+- [API Semantics](../digital-platform-api/api-semantics.md)

@@ -1,101 +1,44 @@
 ---
-Title : Native Ad Markup Bidding
-Description : Native Ad Markup Bidding enables your bidder to submit native ad markup
-ms.date : 10/28/2023
-via `adm` in the OpenRTB bid response. Instead of registering every
+title: Native Ad Markup Bidding
+description: In this article, learn about the native ad markup bidding feature, steps to enable the feature, its creative examples, and supported fields.
+ms.date: 10/28/2023
 ---
 
+# Native ad markup bidding
 
-# Native Ad Markup Bidding
+Native Ad Markup Bidding enables your bidder to submit native ad markup via `adm` in the OpenRTB bid response. Instead of registering every native creative asset you have with Xandr, you are required to register only a single creative for each ad campaign or brand you represent; all native creative assets for that brand can be passed dynamically via ad markup in the bid response. This page explains how to use this feature.
 
+> [!NOTE]
+> This feature does not currently support bidding with native video ad markup. Only non-video native ad markup is accepted.
 
+## Getting started
 
-Native Ad Markup Bidding enables your bidder to submit native ad markup
-via `adm` in the OpenRTB bid response. Instead of registering every
-native creative asset you have with Xandr, you
-are required to register only a single creative for each ad campaign or
-brand you represent; all native creative assets for that brand can be
-passed dynamically via ad markup in the bid response. This page explains
-how to use this feature.
+Your bidder must be enabled to use this feature. If you are not sure whether your bidder is enabled, then check with your Xandr account representative.
 
+Once enabled, there are two steps required to buy Native inventory via Ad Markup Bidding:
 
+1. Register your creative. For each brand that you represent, you must register a single creative that represents that brand. Your creative must pass platform audit. All native creative assets associated with this brand within your bidder will serve through this creative. For details, see [Register native creatives](#register-native-creatives) below.
+1. Bid with your creative assets on native inventory. For details, see [Bid with native ad markup](#bid-with-native-ad-markup) below.
 
-<b>Note:</b> This feature does not currently
-support bidding with native video ad markup. Only non-video native ad
-markup is accepted.
+## Register native creatives
 
+For each brand that you represent, you must register a single creative that represents that brand. This is done using the [Creative Service](creative-service.md). When registering a Native Creative, there are a few considerations to keep in mind:
 
-
-**Getting Started**
-
-Your bidder must be enabled to use this feature. If you are not sure
-whether your bidder is enabled, please check with your
-Xandr account representative.
-
-Once enabled, there are two steps required to buy Native inventory via
-Ad Markup Bidding:
-
-1.  Register your creative. For each brand that you represent, you must
-    register a single creative that represents that brand. Your creative
-    must pass platform audit. All native creative assets associated with
-    this brand within your bidder will serve through this creative.
-    See <a
-    href="native-ad-markup-bidding.md#NativeAdMarkupBidding-RegisterNativeCreatives"
-    class="xref" target="_blank">Register Native Creatives</a>  below
-    for details.
-2.  Bid with your creative assets on native inventory. See <a
-    href="native-ad-markup-bidding.md#NativeAdMarkupBidding-BidwithNativeAdMarkup"
-    class="xref" target="_blank">Bid with Native Ad Markup</a>  below
-    for details.
-
-
-## Register Native Creatives
-
-For each brand that you represent, you must register a single creative
-that represents that brand. This is done using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>. When registering a
-Native Creative, there are a few considerations to keep in mind:
-
-- The creative must represent one of the actual native ads that you will
-  dynamically pass on the bid response for this brand. The specific ad
-  you choose to register does not matter, but the creative must contain
-  at least one image asset and one data asset consistent with an ad you
-  would actually serve on native inventory.
-- When registering a creative, only <a
-  href="xandr-macros.md"
-  class="xref" target="_blank">Xandr Macros</a> are
-  supported. OpenRTB macros (such as `${AUCTION_PRICE}`) will not be
+- The creative must represent one of the actual native ads that you will dynamically pass on the bid response for this brand. The specific ad you choose to register does not matter, but the creative must contain at least one image asset and one data asset consistent with an ad you would actually serve on native inventory.
+- When registering a creative, only [Xandr Macros](xandr-macros.md) are supported. OpenRTB macros (such as `${AUCTION_PRICE}`) will not be
   expanded.
-- The creative must be submitted for platform audit. 
-- You do not need to specify the `brand_id` field; this will be set by
-  Xandr during audit.
-- Be sure to include impression and click trackers when registering your
-  creative. The ad markup submitted in the bid response should use the
-  same set of vendors (or fewer) that were registered with this
-  creative.
+- The creative must be submitted for platform audit.
+- You do not need to specify the `brand_id` field; this will be set by Xandr during audit.
+- Be sure to include impression and click trackers when registering your creative. The ad markup submitted in the bid response should use the same set of vendors (or fewer) that were registered with this creative.
 - Be sure to use native creative template 39461.
 
-The following section provides an example of defining and registering
-a Native Creative.
+The following section provides an example of defining and registering a Native Creative.
 
+## Creative example
 
+This example uses four data assets and two image assets, but you can choose to use a different combination depending on the assets you want to register. (Remember, you must have at least one asset of each type.) For more details on native creative assets, see the [Creative Service](creative-service.md).
 
-
-
-## Creative Example
-
-This example uses four data assets and two image assets, but you can
-choose to use a different combination depending on the assets you want
-to register. (Remember, you must have at least one asset of each type.)
-See the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> for more details on
-native creative assets.
-
-
-
-  **Adding a native creative**
+### Adding a native creative
 
 ``` pre
 $ cat native_creative.json
@@ -202,620 +145,135 @@ $ curl -b cookies -c cookies -X POST -s @native_creative.json 'https://api..com/
 }
 ```
 
+## Bid with native ad markup
 
+> [!NOTE]
+> This feature does not currently support bidding with native video ad markup. Only non-video native ad markup is accepted.
 
+Once you have registered a Native Creative and it has passed platform audit, you can begin bidding with that creative using the [OpenRTB protocol](bidding-protocol.md).
 
-
-
-
-## Bid with Native Ad Markup
-
-
-
-
-
-<b>Note:</b> This feature does not currently
-support bidding with native video ad markup. Only non-video native ad
-markup is accepted.
-
-
-
-
-
-
-
-Once you have registered a Native Creative and it has passed platform
-audit, you can begin bidding with that creative using the <a
-href="bidding-protocol.md"
-class="xref" target="_blank">OpenRTB protocol</a>.
-
-
-
-<b>Note:</b>
-Xandr supports v1.1 of the <a
-href="https://iabtechlab.com/specifications-guidelines/openrtb-native/"
-class="xref" target="_blank">OpenRTB Dynamic Native Ads API</a>
-
-
+> [!NOTE]
+> Xandr supports v1.1 of the [OpenRTB Dynamic Native Ads API](https://iabtechlab.com/specifications-guidelines/openrtb-native/).
 
 Some considerations:
 
-- Either the `crid` or `adid` field must be included in the bid response
-  to identify the creative that was registered. The `crid` value must
-  match the creative's `code;` `adid` must match the creative's `id.`
-- Native creative assets must be passed via
-  the `seatbid.bid.adm.native` object. Be sure to include image assets,
-  data assets, impression trackers, and click trackers. These assets
-  will serve instead of the creative asset you initially registered.
+- Either the `crid` or `adid` field must be included in the bid response to identify the creative that was registered. The `crid` value must match the creative's `code;` `adid` must match the creative's `id.`
+- Native creative assets must be passed via the `seatbid.bid.adm.native` object. Be sure to include image assets, data assets, impression trackers, and click trackers. These assets will serve instead of the creative asset you initially registered.
   
+> [!NOTE]
+> The creative assets you bid with must belong to the same brand as the creative asset you initially registered. Xandr periodically scans and reviews ad markup creative content to ensure this content is consistent with the registered creative. If there is a discrepancy, your creative can be rejected by platform audit. Frequent creative audit rejections due to rotating brands can result in revoked access to the Ad Markup Bidding with Native feature.
 
-  <b>Note:</b> The creative assets you bid
-  with must belong to the same brand as the creative asset you initially
-  registered. Xandr periodically scans and
-  reviews ad markup creative content to ensure this content is
-  consistent with the registered creative. If there is a discrepancy,
-  your creative can be rejected by platform audit. Frequent creative
-  audit rejections due to rotating brands can result in revoked access
-  to the Ad Markup Bidding with Native feature.
+- If you do not pass native creative assets in your bid response, or the assets are malformed, the registered creative content will serve by default.
 
-  
-- If you do not pass native creative assets in your bid response, or the
-  assets are malformed, the registered creative content will serve by
-  default.
+## Bid response supported fields
 
+> [!NOTE]
+>
+> - The following fields are ignored in the bid response: `adomain` and `ver`.
+> - Brand is set during platform audit of the registered creative, so `adomain` is not needed.
 
+### Bid object
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `adm` | string | Conveys ad markup in case the bid wins. The `native` object (described below) should be passed in as a JSON-encoded string. |
 
+### Native object
 
+| Field | Type | Description |
+|---|---|---|
+| `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br>  |
+| `link` | object | (Required) The default destination link for the native ad. Each individual asset can have its own link object, which applies if that asset is clicked. If an individual asset link does not have a link object, the parent link object is used. See [Link Object](#link-object) below. |
+| `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>The following OpenRTB macros are supported in this field: - <br>`${AUCTION_ID}` - Xandr `auction_id_64`.<br> `- ${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
+| `jstracker` | string | Optional JavaScript impression tracker. This should be wrapped in <script> tags.<br>The following OpenRTB macros are supported in this field:<br> - `${AUCTION_ID}` - Xandr `auction_id_64`.<br> - `${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the bid object of the `seatbid` object.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
+| `privacy` | string | If support was indicated in the request, URL of a page informing the user about the buyer’s targeting activity. |
+| `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. |
 
+### Native ext object
 
-## Bid Response Supported Fields
+Xandr supports a single object in the native ext object to support Xandr-specific extensions:
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `appnexus` | object | Specifies the Xandr-specific (formerly AppNexus) extensions to the OpenRTB bid response.  |
 
+### Native ext appNexus object
 
-<b>Note:</b>
+Xandr supports the following fields in the `appnexus` extension object:
 
-- The following fields are ignored in the bid response:  `adomain`  and 
-  `ver`.
-- Brand is set during platform audit of the registered creative, so 
-  `adomain`  is not needed.
+| Field | Type | Description |
+|:---|:---|:---|
+| `third_party_imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. The following OpenRTB macros will be expanded as empty strings:<br> - `${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response.<br>All other OpenRTB macros will expand normally. |
 
+### Asset object
 
+Xandr supports the following fields to define one or more native `asset` objects to be included as a JSON-encoded string as part of the `native` object in the `adm` field of the `bid` object.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | integer | (Required) The unique asset ID. Must match an asset ID in the request. |
+| `required` | integer | Set to `1` if bidder requires asset to be displayed. |
+| `title` | object | The title object, for title assets. See [Title Object](#title-object) below. |
+| `img` | object | The image object, for image assets. See [Image Object](#image-object) below. |
+| `data` | object | The data object, for data assets such as ratings, prices, and so on. See [Data Object](#data-object) below. |
+| `link` | object | This object is not supported in our native implementation. |
 
-
-**Bid Object**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__1" class="entry">Field</th>
-<th id="ID-00001598__entry__2" class="entry">Type</th>
-<th id="ID-00001598__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__1"><code
-class="ph codeph">adm</code></td>
-<td class="entry" headers="ID-00001598__entry__2">string</td>
-<td class="entry" headers="ID-00001598__entry__3">Conveys ad markup in
-case the bid wins. The <code class="ph codeph">native</code> object
-(described below) should be passed in as a JSON-encoded string.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Native Object**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__7" class="entry">Field</th>
-<th id="ID-00001598__entry__8" class="entry">Type</th>
-<th id="ID-00001598__entry__9" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__7"><code
-class="ph codeph">assets</code></td>
-<td class="entry" headers="ID-00001598__entry__8">array of objects</td>
-<td class="entry" headers="ID-00001598__entry__9">(Required) List of the
-native ad's assets. See <a
-href="native-ad-markup-bidding.md#NativeAdMarkupBidding-AssetObject"
-class="xref" target="_blank">Asset Object</a> below.<br />
- </td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__7"><code
-class="ph codeph">link</code></td>
-<td class="entry" headers="ID-00001598__entry__8">object</td>
-<td class="entry" headers="ID-00001598__entry__9">(Required) The default
-destination link for the native ad. Each individual asset can have its
-own link object, which applies if that asset is clicked. If an
-individual asset link does not have a link object, the parent link
-object is used. See <a
-href="native-ad-markup-bidding.md#NativeAdMarkupBidding-LinkObject"
-class="xref" target="_blank">Link Object</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__7"><code
-class="ph codeph">imptrackers</code></td>
-<td class="entry" headers="ID-00001598__entry__8">array of strings</td>
-<td class="entry" headers="ID-00001598__entry__9">Array of
-impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No
-Content) response. This is typically passed only when using third-party
-trackers.
-<p>The following OpenRTB macros are supported in this field:</p>
-<ul>
-<li><code class="ph codeph">${AUCTION_ID}</code> - <span
-class="ph">Xandr <code
-class="ph codeph">auction_id_64</code></li>
-<li><code class="ph codeph">${AUCTION_BID_ID}</code> - ID of the bid
-specified in the <code class="ph codeph">bidid</code> field in the bid
-response</li>
-<li><code class="ph codeph">${AUCTION_IMP_ID}</code> - ID of the
-impression, from the <code class="ph codeph">impid</code> field in
-the <code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_SEAT_ID}</code> - ID of the
-winning seat, from the <code class="ph codeph">seat</code> field in
-the <code class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_AD_ID}</code> - ID of the buyer's
-creative, from the <code class="ph codeph">adid</code> field in
-the <code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_PRICE}</code> - Clearing price of
-the impression in the currency specified in the <code
-class="ph codeph">cur</code> field in the bid response</li>
-<li><code class="ph codeph">${AUCTION_CURRENCY}</code> - Currency of the
-clearing price, as specified in the <code
-class="ph codeph">cur</code> field in the bid response</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__7"><pre
-id="ID-00001598__codeblock-652bccaf-2f7a-4b7d-ae94-682205f3175a"
-class="pre codeblock"><code>jstracker</code></pre></td>
-<td class="entry" headers="ID-00001598__entry__8">string</td>
-<td class="entry" headers="ID-00001598__entry__9">Optional JavaScript
-impression tracker. This should be wrapped in &lt;script&gt; tags.
-<p>The following OpenRTB macros are supported in this field:</p>
-<ul>
-<li><code class="ph codeph">${AUCTION_ID}</code> - <span
-class="ph">Xandr <code
-class="ph codeph">auction_id_64</code></li>
-<li><code class="ph codeph">${AUCTION_BID_ID}</code> - ID of the bid
-specified in the <code class="ph codeph">bidid</code> field in the bid
-response</li>
-<li><code class="ph codeph">${AUCTION_IMP_ID}</code> - ID of the
-impression, from the <code class="ph codeph">impid</code> field in
-the <code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_SEAT_ID}</code> - ID of the
-winning seat, from the <code class="ph codeph">seat</code> field in
-the <code class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_AD_ID}</code> - ID of the buyer's
-creative, from the <code class="ph codeph">adid</code> field in
-the <code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_CURRENCY}</code> - Currency of the
-clearing price, as specified in the <code
-class="ph codeph">cur</code> field in the bid response</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__7"><pre
-id="ID-00001598__codeblock-253d1528-330d-43a5-8a03-c2553a878623"
-class="pre codeblock"><code>privacy</code></pre></td>
-<td class="entry" headers="ID-00001598__entry__8">string</td>
-<td class="entry" headers="ID-00001598__entry__9">If support was
-indicated in the request, URL of a page informing the user about the
-buyer’s targeting activity.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__7"><pre
-id="ID-00001598__codeblock-1f25e453-f6b7-4c55-88d1-84a6911b6c21"
-class="pre codeblock"><code>ext</code></pre></td>
-<td class="entry" headers="ID-00001598__entry__8">object</td>
-<td class="entry" headers="ID-00001598__entry__9">Used for identifying
-Xandr-specific extensions to the OpenRTB bid
-response.</td>
-</tr>
-</tbody>
-</table>
-
-**Native Ext Object**
-
-Xandr supports a single object in the native
-ext object to support Xandr-specific extensions:
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__28" class="entry">Field</th>
-<th id="ID-00001598__entry__29" class="entry">Type</th>
-<th id="ID-00001598__entry__30" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__28"><span
-class="ph"><code class="ph codeph">appnexus</code></td>
-<td class="entry" headers="ID-00001598__entry__29">object</td>
-<td class="entry" headers="ID-00001598__entry__30">Specifies the <span
-class="ph">Xandr-specific (formerly <span
-class="ph">AppNexus) extensions to the OpenRTB bid
-response. </td>
-</tr>
-</tbody>
-</table>
-
-**Native Ext AppNexus Object**
-
-Xandr supports the following fields in
-the `appnexus` extension object:
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__34" class="entry">Field</th>
-<th id="ID-00001598__entry__35" class="entry">Type</th>
-<th id="ID-00001598__entry__36" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__34"><pre
-id="ID-00001598__codeblock-a7a68013-b25f-4145-b166-08b95c0862f7"
-class="pre codeblock"><code>third_party_imptrackers</code></pre></td>
-<td class="entry" headers="ID-00001598__entry__35">array of strings</td>
-<td class="entry" headers="ID-00001598__entry__36">Array of
-impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No
-Content) response. The following OpenRTB macros will be expanded as
-empty strings:
-<ul>
-<li><code class="ph codeph">${AUCTION_PRICE}</code> - Clearing price of
-the impression in the currency specified in the <code
-class="ph codeph">cur</code> field in the bid response</li>
-<li><p><code class="ph codeph">${AUCTION_CURRENCY}</code> - Currency of
-the clearing price, as specified in the <code
-class="ph codeph">cur</code> field in the bid response</p>
-<p>All other OpenRTB macros will expand normally.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-**Asset Object**
-
-Xandr supports the following fields to define
-one or more native `asset` objects to be included as a JSON-encoded
-string as part of the `native` object in the `adm` field of
-the `bid` object. 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__40" class="entry">Field</th>
-<th id="ID-00001598__entry__41" class="entry">Type</th>
-<th id="ID-00001598__entry__42" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">id</code></td>
-<td class="entry" headers="ID-00001598__entry__41">integer</td>
-<td class="entry" headers="ID-00001598__entry__42">(Required) The unique
-asset ID. Must match an asset ID in the request.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">required</code></td>
-<td class="entry" headers="ID-00001598__entry__41">integer</td>
-<td class="entry" headers="ID-00001598__entry__42">Set to <code
-class="ph codeph">1</code> if bidder requires asset to be
-displayed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">title</code></td>
-<td class="entry" headers="ID-00001598__entry__41">object</td>
-<td class="entry" headers="ID-00001598__entry__42">The title object, for
-title assets. See <a
-href="native-ad-markup-bidding.md#NativeAdMarkupBidding-TitleObject"
-class="xref" target="_blank">Title Object</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">img</code></td>
-<td class="entry" headers="ID-00001598__entry__41">object</td>
-<td class="entry" headers="ID-00001598__entry__42">The image object, for
-image assets. See <a
-href="native-ad-markup-bidding.md#NativeAdMarkupBidding-ImageObject"
-class="xref" target="_blank">Image Object</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">data</code></td>
-<td class="entry" headers="ID-00001598__entry__41">object</td>
-<td class="entry" headers="ID-00001598__entry__42">The data object, for
-data assets such as ratings, prices, and so on. See <a
-href="native-ad-markup-bidding.md#NativeAdMarkupBidding-DataObject"
-class="xref" target="_blank">Data Object</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__40"><code
-class="ph codeph">link</code></td>
-<td class="entry" headers="ID-00001598__entry__41">object</td>
-<td class="entry" headers="ID-00001598__entry__42">This object is not
-supported in our native implementation.</td>
-</tr>
-</tbody>
-</table>
-
-**Title Object**
+### Title object
 
 Used to define a title asset in a native object.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__61" class="entry">Field</th>
-<th id="ID-00001598__entry__62" class="entry">Type</th>
-<th id="ID-00001598__entry__63" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__61"><code
-class="ph codeph">text</code></td>
-<td class="entry" headers="ID-00001598__entry__62">string</td>
-<td class="entry" headers="ID-00001598__entry__63">(Required) The text
-for a title element.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `text` | string | (Required) The text for a title element. |
 
-**Image Object**
+### Image object
 
-Used to define an image asset in a native object. Used for all image
-elements of the native ad, such as icons, main image, and so on.
+Used to define an image asset in a native object. Used for all image elements of the native ad, such as icons, main image, and so on.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001598__entry__67" class="entry">Field</th>
-<th id="ID-00001598__entry__68" class="entry">Type</th>
-<th id="ID-00001598__entry__69" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__67"><code
-class="ph codeph">url</code></td>
-<td class="entry" headers="ID-00001598__entry__68">string</td>
-<td class="entry" headers="ID-00001598__entry__69">(Required) The URL of
-the image asset.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__67"><code
-class="ph codeph">w</code></td>
-<td class="entry" headers="ID-00001598__entry__68">integer</td>
-<td class="entry" headers="ID-00001598__entry__69">(Recommended) The
-width of the image, in pixels.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00001598__entry__67"><code
-class="ph codeph">h</code></td>
-<td class="entry" headers="ID-00001598__entry__68">integer</td>
-<td class="entry" headers="ID-00001598__entry__69">(Recommended) The
-height of the image, in pixels.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001598__entry__67"><code
-class="ph codeph">ext</code></td>
-<td class="entry" headers="ID-00001598__entry__68">object</td>
-<td class="entry" headers="ID-00001598__entry__69">Used for identifying
-Xandr-specific (formerly <span
-class="ph">AppNexus) extensions to the OpenRTB bid response.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `url` | string | (Required) The URL of the image asset. |
+| `w` | integer | (Recommended) The width of the image, in pixels. |
+| `h` | integer | (Recommended) The height of the image, in pixels. |
+| `ext` | object | Used for identifying Xandr-specific (formerly AppNexus) extensions to the OpenRTB bid response. |
 
-**Image Ext Object**
+### Image ext object
 
-Xandr supports a single object in the native
-ext object to support Xandr-specific (formerly
-AppNexus) extensions:
+Xandr supports a single object in the native ext object to support Xandr-specific (formerly AppNexus) extensions:
 
-<table id="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__1"
-class="entry">Field</th>
-<th
-id="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__2"
-class="entry">Type</th>
-<th
-id="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__1"><span
-class="ph"><code class="ph codeph">appnexus</code></td>
-<td class="entry"
-headers="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__2">object</td>
-<td class="entry"
-headers="ID-00001598__table-a336b594-e162-4507-a3b9-482424cb175e__entry__3">Specifies
-the Xandr-specific (formerly <span
-class="ph">AppNexus) extensions to the OpenRTB bid
-response. </td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `appnexus` | object | Specifies the Xandr-specific (formerly AppNexus) extensions to the OpenRTB bid response.  |
 
-**Image Ext AppNexus Object**
+### Image ext appNexus object
 
-Xandr supports the following fields in
-the `appnexus` extension object:
+Xandr supports the following fields in the `appnexus` extension object:
 
-<table id="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__1"
-class="entry">Field</th>
-<th
-id="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__2"
-class="entry">Type</th>
-<th
-id="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__1"><pre
-id="ID-00001598__codeblock-d9f44690-cb69-4275-a3d2-52ed09c8b750"
-class="pre codeblock"><code>prevent_crop</code></pre></td>
-<td class="entry"
-headers="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__2">boolean</td>
-<td class="entry"
-headers="ID-00001598__table-40991d95-8124-417e-b46d-9f9e42b2b1cc__entry__3">Allows
-the buyer to indicate whether the image can be cropped or not. This can
-be applied to icon and main image.
-<ul>
-<li>If flag is set to 1, the image can not be cropped (fill)</li>
-<li>If flag is set to 0, the image can be cropped (fit)</li>
-<li>If flag is not passed in/default behavior: 0; images are assumed to
-allow modifications unless explicitly indicated otherwise</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `prevent_crop` | boolean | Allows the buyer to indicate whether the image can be cropped or not. This can be applied to icon and main image.<br> - If flag is set to 1, the image can not be cropped (fill).<br> - If flag is set to 0, the image can be cropped (fit).<br> - If flag is not passed in/default behavior: 0; images are assumed to allow modifications unless explicitly indicated otherwise. |
 
-**Data Object**
+### Data object
 
-Used to define a data asset in a native object. Used for all
-miscellaneous elements in a native ad, such as ratings, price, review
+Used to define a data asset in a native object. Used for all miscellaneous elements in a native ad, such as ratings, price, review
 count, downloads, and so on.
 
-<table id="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__1"
-class="entry">Field</th>
-<th
-id="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__2"
-class="entry">Type</th>
-<th
-id="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__1"><code
-class="ph codeph">label</code></td>
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__2">string</td>
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__3">An
-optional formatting string name of the data type.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__1"><code
-class="ph codeph">value</code></td>
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__2">string</td>
-<td class="entry"
-headers="ID-00001598__table-a88140bf-0999-4880-9e30-cb59e2d8bc9e__entry__3">The
-formatted string of data to be displayed (such as <code
-class="ph codeph">"5 stars"</code> or <code
-class="ph codeph">"$10"</code>).</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `label` | string | An optional formatting string name of the data type. |
+| `value` | string | The formatted string of data to be displayed (such as `"5 stars"` or `"$10"`). |
 
-**Link Object**
+### Link object
 
-Used to define the link for a native asset. When clicked, the user is
-taken to the location of the link. Can only be defined on the parent
-native object.
+Used to define the link for a native asset. When clicked, the user is taken to the location of the link. Can only be defined on the parent native object.
 
-<table id="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__1"
-class="entry">Field</th>
-<th
-id="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__2"
-class="entry">Type</th>
-<th
-id="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__2">string</td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__3">(Required)
-The landing URL for the clickable link.
-<p><strong>Macros cannot be used in this field.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__1"><code
-class="ph codeph">clicktrackers</code></td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__2">Array
-of strings</td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__3">Array
-of third-party tracking URLs to be fired when the link is clicked.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__1"><code
-class="ph codeph">fallback</code></td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__2">string</td>
-<td class="entry"
-headers="ID-00001598__table-6908fda3-124f-4604-8d26-09f572c70d6d__entry__3">A
-fallback URL to be used if the URL is not supported by the device.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `url` | string | (Required) The landing URL for the clickable link.<br>**Macros cannot be used in this field.** |
+| `clicktrackers` | Array of strings | Array of third-party tracking URLs to be fired when the link is clicked. |
+| `fallback` | string | A fallback URL to be used if the URL is not supported by the device. |
 
-
-
->
-
-##  Bid Response Example
-
+## Bid response example
 
 ``` pre
 {
@@ -842,65 +300,27 @@ fallback URL to be used if the URL is not supported by the device.</td>
 }
 ```
 
-
-
-
-
 >
 
 ## FAQs
 
-**Why do I have to register a creative for each brand I represent?**
+### Why do I have to register a creative for each brand I represent?
 
-Xandr policy prohibits brand rotation on
-creatives. By registering a creative for each brand you work with, your
-creative will be able to pass Xandr's audit.
-This will maximize the native inventory on which it can serve.
-Xandr ensures that each creative complies with
-our audit policies by performing an initial audit and then periodically
-scanning the creative content that your bidder dynamically passes in its
-bid responses. If the dynamic content served by your bidder differs
-substantially from the registered creative (i.e. images and text for a
-different brand) it will be reaudited and may be rejected.
+Xandr policy prohibits brand rotation on creatives. By registering a creative for each brand you work with, your creative will be able to pass Xandr's audit. This will maximize the native inventory on which it can serve. Xandr ensures that each creative complies with
+our audit policies by performing an initial audit and then periodically scanning the creative content that your bidder dynamically passes in its bid responses. If the dynamic content served by your bidder differs substantially from the registered creative (i.e. images and text for a different brand) it will be reaudited and may be rejected.
 
-**Will I be charged creative audit fees for
-periodically reaudited creative ad markup?**
+### Will I be charged creative audit fees for periodically reaudited creative ad markup?
 
-No. Creative audit fees will apply only during your creative's initial
-audit.
+No. Creative audit fees will apply only during your creative's initial audit.
 
-**What happens if my Native Creative passes initial audit but fails a
-subsequent reaudit?**
+### What happens if my Native Creative passes initial audit but fails a subsequent reaudit?
 
-Your creative will not be permitted to serve. The audit failure may be
-due to rotating brands. If you believe your creative has been failed
-incorrectly or have other questions please contact customer support and
-select the Category "Creative Audit". Please note that frequent creative
-audit rejections due to rotating brands may result in revoked access to
-the Ad Markup Bidding with Native feature.
+Your creative will not be permitted to serve. The audit failure may be due to rotating brands. If you believe your creative has been failed incorrectly or have other questions please contact customer support and select the Category "Creative Audit". Please note that frequent creative audit rejections due to rotating brands may result in revoked access to the Ad Markup Bidding with Native feature.
 
-**Where do I go for more help?**
+### Where do I go for more help?
 
-If you have additional questions, please contact your account
-representative or <a href="https://help.appnexus.com/" class="xref"
-target="_blank">customer support.</a>
+If you have additional questions, please contact your account representative or [customer support](https://help.appnexus.com/).
 
+## Related topic
 
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="smart-image-adjustments-for-native-creatives---bidders.md"
-  class="xref" target="_blank">Smart Image Adjustments page</a>
-
-
-
-
-
-
-
-
+[Smart Image Adjustments page](smart-image-adjustments-for-native-creatives---bidders.md)

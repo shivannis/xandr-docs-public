@@ -1,244 +1,73 @@
 ---
-Title : Microsoft Windows App Inventory for Bidders
-Description : ## **Inventory Overview**
-ms.date : 10/28/2023
-- Advertising in apps across multiple devices on Windows PCs & tablets
-(Windows 8 and Windows 10) and Windows Phone 8.
+title: Microsoft Windows App Inventory for Bidders
+description: In this article, learn about Microsoft Windows app inventory for bidders, their availability, inventory volume, specifications, and how to buy a mobile inventory.
+ms.date: 10/28/2023
 ---
 
+# Microsoft Windows app inventory for bidders
 
-# Microsoft Windows App Inventory for Bidders
+## Inventory overview
 
-
-
-
-
-## **Inventory Overview**
-
-- Advertising in apps across multiple devices on Windows PCs & tablets
-  (Windows 8 and Windows 10) and Windows Phone 8.
-
-<!-- -->
-
-- Dynamic, MRAID-enabled ads on touch-enabled devices. Windows 8
-  includes additional support for standard display size creatives.
-
-<!-- -->
-
-- Inventory includes Microsoft Owned & Operated (e.g. Bing, MSN, Xbox)
-  and third-party App Network featuring applications from across the
-  Windows App Store.
+- Advertising in apps across multiple devices on Windows PCs & tablets (Windows 8 and Windows 10) and Windows Phone 8.
+- Dynamic, MRAID-enabled ads on touch-enabled devices. Windows 8 includes additional support for standard display size creatives.
+- Inventory includes Microsoft Owned & Operated (e.g. Bing, MSN, Xbox) and third-party App Network featuring applications from across the Windows App Store.
 
 Windows App Inventory includes:
 
+## Availability and volume
 
+Microsoft Windows App inventory is fully integrated with the Microsoft Advertising Exchange (Member 280) and classified as “Mobile App” supply type.
 
->
+- 16 billion monthly impressions globally.
+- Available in every MAX market.
+- 50/50 mix of impressions Windows and Windows Phone device impressions.
 
-## **Availability & Volume**
+For detailed inventory availability by size and country, contact your Xandr account representative and ask to receive periodic Mobile Inventory Availability Reports via e-mail.
 
->
+## Creative formats and specifications
 
-Microsoft Windows App inventory is fully integrated with the Microsoft
-Advertising Exchange (Member 280) and classified as “Mobile App” supply
-type.
+The majority of Microsoft Windows App inventory supports mobile creative standards including MRAID and JavaScript but impressions from legacy SDK versions will continue to be available. The Creative Specs focus on new SDK inventory.
 
-- 16 billion monthly impressions globally
-- Available in every MAX market
-- 50/50 mix of impressions Windows and Windows Phone device impressions
+| Specifications | Windows 8/10 | Windows Phone |
+|:---|:---|:---|
+| Sizes | - 160x600<br> - 300x250<br> - 300x600<br> - 728x90 | - 300x50<br> - 320x50<br> - 480x80<br> - 640x100 |
+| Technical Attributes | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (excluding certain calls not supported in SDK web view)<br> - Image (Third-Party Ad Served)<br> - No flash allowed |  |
+| Ad Quality | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 sec |  |
 
+**Legacy Ads SDK Creative Specs:**
 
+Microsoft is phasing out a legacy SDK which lacks support for mobile standard third-party ad serving, impression tracking, Javascript and
+MRAID. As such, the majority of bidders will not be able to consume the inventory with a standard integration. However, since this accounts for 50% of the inventory today it is a significant opportunity to explore. If you are interested in more detail on this inventory opportunity, contact your Xandr account representative.
 
-For detailed inventory availability by size and country, please contact
-your Xandr account representative and ask to receive periodic Mobile
-Inventory Availability Reports via e-mail.
+## Buying Microsoft Windows app mobile inventory
 
+- [Step 1: Ensure that you accept Microsoft Windows app bid requests](#step-1-ensure-that-you-accept-microsoft-windows-app-bid-requests)
+- [Step 2: Target and bid on Windows app inventory](#step-2-target-and-bid-on-windows-app-inventory)
+- [Step 3: Receive auction results](#step-3-receive-auction-results)
 
+### Step 1: Ensure that you accept Microsoft Windows app bid requests
 
->
+Bidder profiles allow you to filter for the bid requests that you want to receive. To accept Windows App bid requests you must allow the values below within an existing bidder profile or create a new bidder profile specifically for Windows App bid requests (this profile must not have segment filtering enabled since all mobile_app bid requests are cookieless). For details about updating or creating bidder profiles, see [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). Windows App bid requests have the following characteristics that allow you to distinguish them from other Xandr bid requests:
 
-## **Creative Formats & Specifications**
+| Field | Value |
+|:---|:---|
+| `seller_member` | 280 |
+| `supply_type` | mobile_app |
 
-The majority of Microsoft Windows App inventory supports mobile creative
-standards including MRAID and JavaScript but impressions from legacy SDK
-versions will continue to be available. The Creative Specs focus on new
-SDK inventory.
+### Step 2: Target and bid on Windows app inventory
 
->
+When Xandr receives an impression from Windows App, we route these impressions through a publisher, site, and tag ID combination, in
+increasing order of granularity. Xandr's bid request includes these IDs (`adid`), allowing you to target specific slices of Windows App
+inventory. The `adid` is passed through the [device.ifa field](outgoing-bid-request-to-bidders.md) in the OpenRTB request.
 
-*Microsoft Ads SDK Creative Specs:*
+Xandr's bid request for a Windows App impression includes [standard mobile fields](mobile-for-bidders.md) useful for your bidder to target.
 
-<table
-id="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__1"
-class="entry colsep-1 rowsep-1"></th>
-<th
-id="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__2"
-class="entry colsep-1 rowsep-1"><strong>Windows 8 / 10</strong></th>
-<th
-id="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__3"
-class="entry colsep-1 rowsep-1"><strong>Windows Phone</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__1">Sizes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__2"><ul>
-<li>160x600</li>
-<li>300x250</li>
-<li>300x600</li>
-<li>728x90</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__3"><ul>
-<li>300x50</li>
-<li>320x50</li>
-<li>480x80</li>
-<li>640x100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__1">Technical
-Attributes</td>
-<td colspan="2" class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__2 microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__3"><ul>
-<li>MRAID 1.0 and 2.0</li>
-<li>Hosted Images</li>
-<li>HTML</li>
-<li>HTML- iframe</li>
-<li>Javascript (excluding certain calls not supported in SDK web
-view)</li>
-<li>Image (Third-Party Ad Served)</li>
-<li>No flash allowed</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__1">Ad
-Quality</td>
-<td colspan="2" class="entry colsep-1 rowsep-1"
-headers="microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__2 microsoft-windows-app-inventory-for-bidders__table-1b783a1b-e398-41b7-9166-db176da90684__entry__3"><ul>
-<li><a href="http://advertising.microsoft.com/en/policies" class="xref"
-target="_blank">Microsoft CAP</a></li>
-<li>Animation Length up to 30 sec</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+### Step 3: Receive auction results
 
+Xandr's Notify request is essential to tracking when an impression is served, the win price of the impression, and to provide you with any
+custom notify data you may have included with the bid. This information will be helpful for understanding bid rejections due to Microsoft-specific creative requirements on Windows 8 or the legacy SDKs.
 
-
-<u>*Legacy Ads SDK Creative Specs:*</u>
-
-Microsoft is phasing out a legacy SDK which lacks support for mobile
-standard third-party ad serving, impression tracking, Javascript and
-MRAID. As such, the majority of bidders will not be able to consume the
-inventory with a standard integration. However, since this accounts for
-50% of the inventory today it is a significant opportunity to explore.
-If you are interested in more detail on this inventory opportunity,
-please contact your Xandr account representative.
-
-
-
->
-
-## **Buying Microsoft Windows App Mobile Inventory**
-
->
-
-- <a
-  href="microsoft-windows-app-inventory-for-bidders.md#MicrosoftWindowsAppInventoryforBidders-Step1-EnsureThatYouAcceptMMXBidRequests"
-  class="xref" target="_blank">Step 1. Ensure That You Accept Windows App
-  Bid Requests</a>
-- <a
-  href="microsoft-windows-app-inventory-for-bidders.md#MicrosoftWindowsAppInventoryforBidders-Step2-TargetandBidonMMXInventory"
-  class="xref" target="_blank">Step 2. Target and Bid on Windows App
-  Inventory</a>
-- <a
-  href="microsoft-windows-app-inventory-for-bidders.md#MicrosoftWindowsAppInventoryforBidders-Step3-ReceiveAuctionResults"
-  class="xref" target="_blank">Step 3. Receive Auction Results</a>
-
-
-
-**Step 1. Ensure That You Accept Microsoft Windows App Bid Requests**
-
->
-
-Bidder profiles allow you to filter for the bid requests that you want
-to receive. To accept Windows App bid requests you must allow the values
-below within an existing bidder profile or create a new bidder profile
-specifically for Windows App bid requests (this profile must not have
-segment filtering enabled since all mobile_app bid requests are
-cookieless). For details about updating or creating bidder profiles, see
-<a
-href="legacy-bidder-profile-service.md"
-class="xref" target="_blank">Legacy Bidder Profile Service</a>. Windows
-App bid requests have the following characteristics that allow you to
-distinguish them from other Xandr bid requests:
-
-<table
-id="microsoft-windows-app-inventory-for-bidders__table-e0effe4c-f94f-4f6d-bc65-de12e310c1de"
-class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"><strong>Field</strong></td>
-<td class="entry"><strong>Value</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry"><code class="ph codeph">seller_member</code></td>
-<td class="entry">280</td>
-</tr>
-<tr class="odd row">
-<td class="entry"><code class="ph codeph">supply_type</code></td>
-<td class="entry">mobile_app</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-**Step 2. Target and Bid on Windows App Inventory**
-
-When Xandr receives an impression from Windows App, we route these
-impressions through a publisher, site, and tag ID combination, in
-increasing order of granularity. Xandr's bid request includes these IDs
-(`adid`), allowing you to target specific slices of Windows App
-inventory. The `adid` is passed through the <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank"><code class="ph codeph">device.ifa</code>
-field</a> in the OpenRTB request.
-
-Xandr's bid request for a Windows App impression includes <a
-href="mobile-for-bidders.md"
-class="xref" target="_blank">standard mobile fields</a> useful for your
-bidder to target.
-
-**Step 3. Receive Auction Results**
-
-Xandr's Notify request is essential to tracking when an impression is
-served, the win price of the impression, and to provide you with any
-custom notify data you may have included with the bid. This information
-will be helpful for understanding bid rejections due to
-Microsoft-specific creative requirements on Windows 8 or the legacy
-SDKs.
-
->
-
-**Example Request/Response Chain**
+### Example request/response chain
 
 ``` pre
 {
@@ -367,44 +196,18 @@ SDKs.
 }
 ```
 
+## Best practices
 
+### Application targeting (App ID)
 
->
+Microsoft Windows Apps are available to users through the Windows App stores. There are two separate App stores, one for Windows Phone and the other for Windows 8 and higher.
 
-## **Best Practices**
+Bidders should download [Windows App ID Lookup Table](https://xandr-be-prod.zoominsoftware.io/bundle/page/files/Windows_AppID_Lookup.csv) to map App IDs to metadata like Platform, Name, Category and URL in the public store. A public API to retrieve this information is not available, but Microsoft will update the lookup table monthly.
 
-**Application Targeting (App ID)**
+### App-install attribution (App ID)
 
-Microsoft Windows Apps are available to users through the Windows App
-stores. There are two separate App stores, one for Windows Phone and the
-other for Windows 8 and higher.
+For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Kochava and HasOffers supports Windows Apps attribution tracking through Xandr. Microsoft will continue onboarding additional attribution vendors. If you rely upon a specific attribution vendor that is not supported today, then contact your Xandr account representative.
 
-Bidders should download <a
-href="https://xandr-be-prod.zoominsoftware.io/bundle/page/files/Windows_AppID_Lookup.csv"
-class="xref" target="_blank">Windows App ID Lookup Table</a> to map App
-IDs to metadata like Platform, Name, Category and URL in the public
-store. A public API to retrieve this information is not available, but
-Microsoft will update the lookup table monthly.
+### Reach
 
-**App-Install Attribution (App ID)**
-
-For buyers running campaigns with a CPA goal of an App installation, the
-third-party app installation vendors Kochava and HasOffers supports
-Windows Apps attribution tracking through Xandr. Microsoft will continue
-onboarding additional attribution vendors. If you rely upon a specific
-attribution vendor that is not supported today, please contact your
-Xandr account representative.
-
-**Reach**
-
-To maximize reach across Windows App inventory, we recommend targeting
-“Mobile App” inventory within Microsoft Advertising Exchange without
-additional parameters such as “Device Type.” This is because there are
-certain instances where Xandr does not receive this information from the
-device SDK.
-
-
-
-
-
-
+To maximize reach across Windows App inventory, we recommend targeting “Mobile App” inventory within Microsoft Advertising Exchange without additional parameters such as “Device Type.” This is because there are certain instances where Xandr does not receive this information from the device SDK.
