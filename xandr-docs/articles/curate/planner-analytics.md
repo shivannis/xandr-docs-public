@@ -1,10 +1,10 @@
 ---
-title: Planner Analytics
+title: Microsoft Curate - Planner Analytics
 description: The article explains that Planner visualizations display a summary and visual representation of projected deal line-item performance when a plan is selected from the list. For more detailed and interactive projections, users can explore the features during plan creation or editing.
 ms.date: 10/28/2023
 ---
 
-# Planner analytics
+# Microsoft Curate - Planner analytics
 
 The article outlines the functionality of Planner visualizations, emphasizing their role in presenting a summary and visual representation of anticipated deal line-item performance within a selected plan from the list. It highlights that more detailed and interactive projections can be explored by users during the creation or editing of a plan.
 

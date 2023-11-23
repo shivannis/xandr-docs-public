@@ -3,7 +3,7 @@ title: Microsoft Curate - Create and Activate a Plan
 description: The article describes how to create and activate a plan.
 ---
 
-# Create and activate a plan
+# Microsoft Curate - Create and activate a plan
 
 From the **Plan** menu, you can create a plan that lets you experiment with deal line item targeting settings, understand inventory availability and reach, and seamlessly create a line item from your completed plan.
   

@@ -3,7 +3,7 @@ title: Microsoft Curate - Create Custom Events and Parameters
 description: The article demonstrates the process of generating custom parameters for a universal pixel. By accessing the Universal Pixels page and clicking the pencil icon beside the pixel, users can create custom events and parameters through the user interface (UI). These customizations can then be integrated into the generated pixel code.
 ---
 
-# Create custom events and parameters
+# Microsoft Curate - Create custom events and parameters
 
 If you click the pencil icon next to a pixel on the **Universal Pixels** page, you can create custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.
 

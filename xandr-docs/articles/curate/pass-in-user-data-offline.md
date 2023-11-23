@@ -4,7 +4,7 @@ description: The article explains when you have data that stays in your ad serve
 ms.date : 10/28/2023
 ---
 
-# Pass in user data offline
+# Microsoft Curate - Pass in user data offline
 
 If you have data that lives in your ad server or data warehouse today, you can make it accessible to your Xandr ad campaigns.
 

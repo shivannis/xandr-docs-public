@@ -4,7 +4,7 @@ description : The articles describes the Release Notes that talks about the late
 ms.date : 10/28/2023
 ---
 
-# Release notes
+# Microsoft Curate - Release Notes
 
 Read about the latest updates to Curate.
 
