@@ -1,35 +1,18 @@
 ---
-Title : Platform Seller Report
-## Platform Seller Report
-The **Platform Seller Report** can be used to invoice buyers or
-reconcile internal transaction records. Using this report, you can view
-ms.date : 10/28/2023
+title: Platform Seller Report
+description: In this article, find information about the Platform seller report, the metrics and dimensions associated with it, along with an example.
+ms.date: 10/28/2023
 ---
 
+# Platform seller report
 
-# Platform Seller Report
+The **Platform Seller Report** can be used to invoice buyers or reconcile internal transaction records. Using this report, you can view transaction information at the tag level.
 
+For instructions on retrieving this report, see the [Example](#example) below.
 
+## Time frame
 
-
-## Platform Seller Report
-
-
-
-The **Platform Seller Report** can be used to invoice buyers or
-reconcile internal transaction records. Using this report, you can view
-transaction information at the tag level.
-
-For instructions on retrieving this report, see the <a
-href="platform-seller-report.md#PlatformSellerReport-Example"
-class="xref" target="_blank">Example</a> below.
-
-
-
-## Time Frame
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - `current_hour`
 - `last_hour`
@@ -44,869 +27,84 @@ following:
 - `lifetime`
 - `mtd`
 
-
-
-
-
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006673__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-00006673__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00006673__entry__3"
-class="entry colsep-1 rowsep-1">Group?</th>
-<th id="ID-00006673__entry__4"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="ID-00006673__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">month</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5">Month.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">day</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5">Day.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">hour</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-hour of the auction.
-
-<b>Note:</b> For impressions older than 100
-days, the day will be returned rather than the hour.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">year</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5">Year.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">buyer_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-internal ID of the buying member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">buyer_member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the buying member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">buyer_member</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">seller_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-internal ID of the member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">seller_member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the seller member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">seller_member</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">tag_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-ID of the tag.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-internal ID of the publisher.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">publisher_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">publisher</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">size</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-size of the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">geo_country</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the country followed by the ID (<span
-class="ph">Xandr format).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">geo_country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5">Country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">imp_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-type of impression served. Possible values:
-<ul>
-<li>1 = blank</li>
-<li>2 = PSA</li>
-<li>3 = default error</li>
-<li>4 = default</li>
-<li>5 = kept</li>
-<li>6 = resold</li>
-<li>7 = RTB</li>
-<li>8 = PSA resulting from a default error</li>
-<li>9 = external impression</li>
-<li>10 = external click</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">gender</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-gender of the user.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">site_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-internal ID of the site.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">site_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the site.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">site</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">is_dw</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">If
-true, the impression was served by Xandr.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">bidder_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-internal ID of the bidder.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">bidder_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the bidder.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">bidder</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">tag_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the tag.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code class="ph codeph">tag</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__5"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">price_bucket_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-ID of the price bucket. For more information about price buckets, see
-the description of the <code class="ph codeph">price_buckets</code>
-field on the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">is_delivered</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">If
-true, the impression was served successfully.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">cleared_direct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">If
-this is set to 1, then the impression was successfully served on direct
-inventory. Possible values:
-<ul>
-<li>0 = not direct inventory</li>
-<li>1 = direct inventory</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">seller_currency</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-seller member's selected currency. For a list of supported currencies,
-see <a
-href="supported-currencies.md"
-class="xref" target="_blank">Supported Currencies</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">supply_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-type of inventory. Possible values:
-<ul>
-<li><code class="ph codeph">"web"</code></li>
-<li><code class="ph codeph">"mobile_web"</code></li>
-<li><code class="ph codeph">"mobile_app"</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">publisher_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-custom code for the publisher, entered to correspond to the publisher
-code within the external system.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">site_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-custom code for the site, entered to correspond to the site code within
-the external system.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">buyer_member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the buyer member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__1"><code
-class="ph codeph">buyer_member</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__5">The
-display name of the buying member followed by the ID (<span
-class="ph">Xandr format).</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Group? | Filter? | Description |
+|---|---|---|---|---|
+| `bidder` | string | No | No | **Deprecated.** |
+| `bidder_id` | int | Yes | Yes | The internal ID of the bidder. |
+| `bidder_name` | string | No | No | The display name of the bidder. |
+| `buyer_member` | string | No | No | **Deprecated.** |
+| `buyer_member` | string | No | No | The display name of the buying member followed by the ID (Xandr format). |
+| `buyer_member_id` | int | Yes | Yes | The internal ID of the buying member. |
+| `buyer_member_name` | string | No | No | The display name of the buying member. |
+| `buyer_member_name` | string | No | No | The display name of the buyer member. |
+| `cleared_direct` | int | No | Yes | If this is set to 1, then the impression was successfully served on direct inventory. Possible values: <br> - `0` = not direct inventory <br> - `1` = direct inventory |
+| `day` | date | Yes | Yes | Day. |
+| `gender` | string | No | Yes | The gender of the user. |
+| `geo_country` | string | No | Yes | The display name of the country followed by the ID (Xandr format). |
+| `geo_country_name` | string | No | No | Country. |
+| `hour` | date | Yes | Yes | The hour of the auction. <br><br> **Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
+| `imp_type` | string | No | Yes | The type of impression served. Possible values: <br> - `1` = blank <br> - `2` = PSA <br> - `3` = default error <br> - `4` = default <br> - `5` = kept <br> - `6` = resold <br> - `7` = RTB <br> - `8` = PSA resulting from a default error <br> - `9` = external impression <br> - `10` = external click |
+| `is_delivered` | boolean | No | Yes | If true, the impression was served successfully. |
+| `is_dw` | boolean | No | Yes | If true, the impression was served by Xandr. |
+| `month` | time | Yes | No | Month. |
+| `price_bucket_id` | int | Yes | No | The ID of the price bucket. For more information about price buckets, see the description of the `price_buckets` field on the [Member Service](member-service.md). |
+| `publisher` | string | No | No | **Deprecated.** |
+| `publisher_code` | string | No | No | The custom code for the publisher, entered to correspond to the publisher code within the external system. |
+| `publisher_id` | int | Yes | Yes | The internal ID of the publisher. |
+| `publisher_name` | string | No | No | The display name of the publisher. |
+| `seller_currency` | string | No | Yes | The seller member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `seller_member` | string | No | No | **Deprecated.** |
+| `seller_member_id` | int | Yes | Yes | The internal ID of the member. |
+| `seller_member_name` | string | No | No | The display name of the seller member. |
+| `site` | string | No | No | **Deprecated.** |
+| `site_code` | string | No | No | The custom code for the site, entered to correspond to the site code within the external system. |
+| `site_id` | int | Yes | Yes | The internal ID of the site. |
+| `site_name` | string | No | No | The display name of the site. |
+| `size` | string | No | No | The size of the creative. |
+| `supply_type` | string | No | No | The type of inventory. Possible values: <br> - `"web"` <br> - `"mobile_web"` <br> - `"mobile_app"` |
+| `tag` | string | No | No | **Deprecated.** |
+| `tag_id` | int | Yes | No | The ID of the tag. |
+| `tag_name` | string | No | No | The display name of the tag. |
+| `year` | date | Yes | Yes | Year. |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006673__entry__191"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-00006673__entry__192"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00006673__entry__193"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="ID-00006673__entry__194"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The total number of impressions
-(served and resold).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The total number of clicks.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">imps_delivered</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">imps_delivered</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The total number of impressions served
-successfully.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">imps_not_delivered</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">imps_not_delivered</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The total number of impressions where
-someone other than Xandr served the
-impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">seller_revenue</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">seller_revenue</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The seller's revenue per
-impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">buyer_spend</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">buyer_spend</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The amount the buyer pays for the cost
-of media.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">creative_overage_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">creative_overage_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The charge for hosted creatives that
-exceed the creative size limit specified in the buyer member's
-contract.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">auction_service_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">auction_service_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The fee charged on RTB bought
-impressions specified in the buyer member's contract. For example, with
-a 10% fee, if the buyer spends $1000 on inventory we then charge them a
-$100 fee.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">clear_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">clear_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The fee specified in the buyer
-member's contract charged on impressions bought from an external or
-partner seller.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">auction_service_deduction</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">auction_service_deduction</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The deduction on RTB bought
-impressions specified in the buyer member's contract. For example, with
-a 10% deduction, if they budget $1000 for their campaign, we take $100
-from that, leaving the buyer with $900 that is used to purchase
-inventory from the seller.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">seller_ecpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__193">(
-<code class="ph codeph">seller_revenue</code> / <code
-class="ph codeph">imps_delivered</code> ) * 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The seller's revenue expressed in
-eCPM.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">seller_revenue_seller_curr</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193"><code
-class="ph codeph">seller_revenue</code>, expressed in the seller's
-currency.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The seller's revenue per impression in
-their selected currency. For a list of supported currencies, see <a
-href="supported-currencies.md"
-class="xref" target="_blank">Supported Currencies</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">seller_ecpm_seller_curr</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193">(<code
-class="ph codeph">seller_revenue</code> / <code
-class="ph codeph">imps_delivered</code>) * 1000, expressed in the
-seller's currency.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The seller's revenue expressed in
-eCPM, in the seller's selected currency. For a list of supported
-currencies, see <a
-href="supported-currencies.md"
-class="xref" target="_blank">Supported Currencies</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">imps_viewed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193">imps_viewed</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The number of measured impressions
-that were viewable, per the IAB Viewability definition, which states
-that an impression is viewable if 50% of the pixels are in-view during 1
-consecutive second.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">view_measured_imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193">view_measured_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The total number of impressions that
-were measured for viewability.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">view_rate</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193">view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The percentage of impressions that
-were viewable out of the total number of impressions measured for
-viewability. (Viewed Imps / View Measured Imps)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__191"><code
-class="ph codeph">view_measurable_rate</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__192">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__193">view_measurable_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__194">The percentage of impressions measured
-for viewability out of the total number of impressions. (View Measured
-Imps / Imps)</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Formula | Description |
+|---|---|---|---|
+| `auction_service_deduction` | money | `auction_service_deduction` | The deduction on RTB bought impressions specified in the buyer member's contract. For example, with a 10% deduction, if they budget $1000 for their campaign, we take $100 from that, leaving the buyer with $900 that is used to purchase inventory from the seller. |
+| `auction_service_fees` | money | `auction_service_fees` | The fee charged on RTB bought impressions specified in the buyer member's contract. For example, with a 10% fee, if the buyer spends $1000 on inventory we then charge them a $100 fee. |
+| `buyer_spend` | money | `buyer_spend` | The amount the buyer pays for the cost of media. |
+| `clear_fees` | money | `clear_fees` | The fee specified in the buyer member's contract charged on impressions bought from an external or partner seller. |
+| `clicks` | int | `clicks` | The total number of clicks. |
+| `creative_overage_fees` | money | `creative_overage_fees` | The charge for hosted creatives that exceed the creative size limit specified in the buyer member's contract. |
+| `imps` | int | `imps` | The total number of impressions (served and resold). |
+| `imps_delivered` | int | `imps_delivered` | The total number of impressions served successfully. |
+| `imps_not_delivered` | int | `imps_not_delivered` | The total number of impressions where someone other than Xandr served the impression. |
+| `imps_viewed` | int | `imps_viewed` | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
+| `seller_ecpm` | money | ( `seller_revenue` / `imps_delivered` ) * 1000 | The seller's revenue expressed in eCPM. |
+| `seller_ecpm_seller_curr` | money | (`seller_revenue` / `imps_delivered`) * 1000, expressed in the seller's currency. | The seller's revenue expressed in eCPM, in the seller's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `seller_revenue` | money | `seller_revenue` | The seller's revenue per impression. |
+| `seller_revenue_seller_curr` | money | `seller_revenue`, expressed in the seller's currency. | The seller's revenue per impression in their selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
+| `view_measurable_rate` | double | `view_measurable_rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| `view_measured_imps` | int | `view_measured_imps` | The total number of impressions that were measured for viewability. |
+| `view_rate` | double | `view_rate` | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 
+## Visible to administrators only
 
-
-
-
-## Visible to Administrators Only
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006673__entry__263"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-00006673__entry__264"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00006673__entry__265"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="ID-00006673__entry__266"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__263"><code
-class="ph codeph">forex_allowance</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__264">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__265"><code
-class="ph codeph">forex_allowance</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006673__entry__266">A
-foreign currency buffer allowance.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__263"><code
-class="ph codeph">discrepancy_allowance</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__264">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__265"><code
-class="ph codeph">discrepancy_allowance</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006673__entry__266">The deduction on RTB sold impressions
-specified in the seller member's contract. This is determined based on
-past discrepancies between what Xandr and the
-supply partner recorded as won impressions.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Formula | Description |
+|---|---|---|---|
+| `forex_allowance` | money | `forex_allowance` | A foreign currency buffer allowance. |
+| `discrepancy_allowance` | money | `discrepancy_allowance` | The deduction on RTB sold impressions specified in the seller member's contract. This is determined based on past discrepancies between what Xandr and the supply partner recorded as won impressions. |
 
 ## Example
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
-The JSON file should include the `report_type "platform_buyer"`, as well
-as the `columns` (dimensions and metrics) and `report_interval` that you
-want to retrieve. You can also filter specific dimensions, define
-granularity (year, month, day), and specify the format in which the data
-should be returned (csv, excel, or html). For a full explanation of
-fields that can be included in the JSON file, see the <a
-href="platform-seller-report.md#"
-class="xref" target="_blank">Report Service</a>.
+The JSON file should include the `report_type "platform_buyer"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](platform-seller-report.md).
 
-``` pre
+```
 $ cat report
 {
     "report": {
@@ -931,20 +129,17 @@ $ cat report
 }
 ```
 
+> [!TIP]
+> To order by day, insert this object into your JSON file after the "columns" array:
+>
+> ```
+> "orders": ["day"]
+> ```
+>
 
+### POST the request to the reporting service
 
-<b>Tip:</b> To order by day, insert this
-object into your JSON file after the "columns" array:
-
-``` pre
-"orders": ["day"]
 ```
-
-
-
-**POST the request to the Reporting Service**
-
-``` pre
 $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 {
   "response": {
@@ -954,14 +149,11 @@ $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 }
 ```
 
-**GET the report status from the Report Service**
+### GET the report status from the report service
 
-Make a `GET` call with the Report ID to retrieve the status of the
-report. Continue making this `GET` call until the {{execution_status}}
-is {{"ready"}}. Then use the \*report-download\* service to save the
-report data to a file, as described in the next step.
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `"execution_status"` is `"ready"`. Then use the report-download service to save the report data to a file, as described in the next step.
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9'
 {
    "response":{
@@ -976,64 +168,30 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115d
 }
 ```
 
-**GET the report data from the Report Download Service**
+### GET the report data from the report download service
 
-To download the report data to a file, make another `GET` call with the
-Report ID, but this time to the \*report-download\* service. You can
-find the service and Report ID in the {{url}} field of the previous
-`GET` response. When identifying the file that you want to save to, be
-sure to use the file extension of the {{"format"}} that you specified in
-your initial `POST`.
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the report-download service. You can find the service and Report ID in the "url" field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial `POST`.
 
-
-
-<b>Tip:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use {{-i}} or {{-v}} in your call to expose the response
-header.
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9' > report.csv
-```
-
-Use the id that was given in the response from when you initially posted
-the report.
-
-
-
-
-
+> [!TIP]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use "-i" or "-v" in your call to expose the response header.
+>
+> ```
+> $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9' > report.csv
+> ```
+>
+> Use the id that was given in the response from when you initially posted the report.
 
 ## Schedule a frequently run report
 
-You can schedule reports that you would like to pull regularly. See the
-<a
-href="saved-report-service.md"
-class="xref" target="_blank">Saved Report Service</a> for more
-information.
+You can schedule reports that you would like to pull regularly. See the [Saved Report Service](saved-report-service.md) for more information.
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a href="report-service.md" class="xref">Report Service</a>
-- <a href="completed-creative-audits-report.md" class="xref">Completed
-  Creative Audits Report</a>
-- <a href="bidder-platform-buyer-report.md" class="xref">Bidder Platform
-  Buyer Report</a>
-- <a href="bidder-billing-report-api.md" class="xref">Bidder Billing
-  Report API</a>
-- <a href="seller-platform-billing-report.md" class="xref">Seller
-  Platform Billing Report</a>
-- <a href="inventory-availability-reporting.md" class="xref">Inventory
-  Availability Reporting</a>
-- <a href="reporting-timezones.md" class="xref">Reporting Timezones</a>
-- <a href="saved-report-service.md" class="xref">Saved Report
-  Service</a>
-
-
-
-
-
-
+- [Report Service](report-service.md)
+- [Completed Creative Audits Report](completed-creatives-audits-report.md)
+- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md.)
+- [Bidder Billing Report API](bidder-billing-report-api.md)
+- [Seller Platform Billing Report](seller-platform-billing-report.md)
+- [Inventory Availability Reporting](inventory-availability-report.md)
+- [Reporting Timezones](reporting-timezones.md)
+- [Saved Report Service](saved-report-service.md)
