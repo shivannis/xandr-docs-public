@@ -6,7 +6,7 @@ ms.date : 11/14/2023
 ---
 
 
-# Impression Funnel: Seller Deals
+# Impression Funnel: Seller Deals 
 
 > [!NOTE]
 > This functionality currently is in Open Beta. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
