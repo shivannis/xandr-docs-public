@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Curator Reporting
+title: Curator Reporting
 description: In this article, explore the available Curator reports thoroughly.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Curator reporting
+# Curator reporting
 
 Once you've started selling [Curated Deals](curated-deals.md), you can run reports to analyze how your curated deals are performing. To understand our reports and the use cases they're intended for, see the [Reporting Guide](reporting-guide.md).
 
