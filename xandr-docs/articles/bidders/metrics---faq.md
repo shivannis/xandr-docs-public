@@ -48,7 +48,7 @@ Bid requests - Available,1333306500,1333392900,300 | \[lots of data here\]
 
 The format of the text file follows the below layout:
 
-| Selected Metric | Start time | End time | Time between data points (in seconds) | Data points |
+| **Selected Metric** | **Start time** | **End time** | **Time between data points (in seconds)** | **Data points** |
 
 > [!NOTE]
 > The Start and End times are in Unix time stamps.

@@ -32,7 +32,7 @@ The majority of Microsoft Windows App inventory supports mobile creative standar
 |:---|:---|:---|
 | Sizes | - 160x600<br> - 300x250<br> - 300x600<br> - 728x90 | - 300x50<br> - 320x50<br> - 480x80<br> - 640x100 |
 | Technical Attributes | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (excluding certain calls not supported in SDK web view)<br> - Image (Third-Party Ad Served)<br> - No flash allowed |  |
-| Ad Quality | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 sec |  |
+| Ad Quality | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 seconds. |  |
 
 **Legacy Ads SDK Creative Specs:**
 
@@ -202,7 +202,7 @@ custom notify data you may have included with the bid. This information will be 
 
 Microsoft Windows Apps are available to users through the Windows App stores. There are two separate App stores, one for Windows Phone and the other for Windows 8 and higher.
 
-Bidders should download [Windows App ID Lookup Table](https://xandr-be-prod.zoominsoftware.io/bundle/page/files/Windows_AppID_Lookup.csv) to map App IDs to metadata like Platform, Name, Category and URL in the public store. A public API to retrieve this information is not available, but Microsoft will update the lookup table monthly.
+Bidders should download [Windows App ID Lookup Table](https://learn.microsoft.com/en-us/windows/configuration/find-the-application-user-model-id-of-an-installed-app) to map App IDs to metadata like Platform, Name, Category and URL in the public store. A public API to retrieve this information is not available, but Microsoft will update the lookup table monthly.
 
 ### App-install attribution (App ID)
 

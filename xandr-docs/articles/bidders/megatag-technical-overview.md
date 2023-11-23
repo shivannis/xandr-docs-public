@@ -34,6 +34,6 @@ The remainder of this document contains a step-by-step walkthrough of MegaTag's 
 - When the auction initiated by the `/mtj` call completes, MegaTag writes a new `<div>` and `<iframe>` adjacent to its placeholder from **[Step 1](#step-1-getting-oriented)** above.
 - MegaTag populates each of the iFrames it's written with their respective creatives.
 
-## Related topics
+## Related topic
 
 [Responding to a MegaTag Bid Request](responding-to-a-megatag-bid-request.md)

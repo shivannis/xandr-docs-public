@@ -18,7 +18,7 @@ Before they can buy or sell ads, a member needs a contract with Xandr. This cont
 
 > [!NOTE]
 >
-> - If you are looking for information about other platform members use the [Platform Member Service](member-service.md)
+> - If you are looking for information about other platform members use the [Platform Member Service](member-service.md).
 > - In bidder sandbox environments, all functionality of the Member Service is available.
 > - The Member Service does not grant API access. That is done via the [User Service](user-service.md).
 

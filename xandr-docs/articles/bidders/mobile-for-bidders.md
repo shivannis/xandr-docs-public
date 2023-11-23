@@ -76,7 +76,7 @@ The Xandr Notify request is essential to tracking when an impression is served, 
 
 | Field | Scope | Type | Description |
 |:---|:---|:---|:---|
-| app_id | some | string | Global App Id for Android and iOS devices (For example, for Angry Birds app: "app_id" : "com.rovio.angrybirds" for an Android device, "app_id" : "343200656" or "com.clickgamer.AngryBirds" for an iOS device) |
+| app_id | some | string | Global App Id for Android and iOS devices (For example, for Angry Birds app: "app_id" : "com.rovio.angrybirds" for an Android device, "app_id" : "343200656" or "com.clickgamer.AngryBirds" for an iOS device). |
 | loc | some | string | Location of the user, provided in terms of latitude and longitude. Expressed in the format "snnn.ddd,snnn.ddd", for example +123.456 or -456.123. South and west are represented as negative. There can be a maximum of 5 decimal places of precision. |
 | carrier | some | int | The ID for the carrier. You can use the [Carrier Service](carrier-service.md) to map carrier IDs to names and countries. A special carrier "WIFI" exists for users connecting via WiFi. |
 | device_make | some | int | The ID of the device make on which the ad will be shown. You can use the [Device Make Service](device-make-service.md) to map device make IDs to names. |
@@ -87,7 +87,7 @@ The Xandr Notify request is essential to tracking when an impression is served, 
 
 | Field | Scope | Type | Description |
 |:---|:---|:---|:---|
-| windowsadid | some | String | The Microsoft Advertising ID for Windows 8 and Windows Phone devices |
+| windowsadid | some | String | The Microsoft Advertising ID for Windows 8 and Windows Phone devices. |
 | idfa | some | string | The Apple advertising identifier for iOS devices running iOS 6+. |
 | aaid | some | string | The Google advertising identifier for Android devices as retrieved from Google Play services. |
 | sha1udid | some | string | The SHA1 hash of the `ANDROID_ID`. |

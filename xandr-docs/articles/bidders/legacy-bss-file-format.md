@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Legacy BSS file format
 
-The Batch Segment Service provides the ability to upload segment data files in a variety of formats. See the [examples](#examples) below for more information.
+The Batch Segment Service provides the ability to upload segment data files in a variety of formats. For more information, see the [examples](#examples) below.
 
 > [!NOTE]
 > The Avro format described in [BSS Avro File Format](../digital-platform-api/bss-avro-file-format.md), provides support
@@ -54,9 +54,9 @@ The following table list the possible values that may be included in the `SEG_FI
 
 #### DOMAIN
 
-| Name | Type | Description |  |  |
-|:---|:---|:---|:---|:---|
-| `DOMAIN` | string | You may optionally specify a domain to associate with this user ID. |  |  |
+| Name | Type | Description |
+|:---|:---|:---|
+| `DOMAIN` | string | You may optionally specify a domain to associate with this user ID. |
 
 ## Separators
 
@@ -122,11 +122,11 @@ A client is adding user `12345678900987654321` to segments `10000` and `10001` w
 
 | Field | Value |
 |:---|:---|
-| `UID` | Xandr user ID |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR3` | ":" |
-| `SEG_FIELD` | [`SEG_ID, EXPIRATION`] |
+| `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 
 ``` pre
 12345678900987654321,10000:1440;10001:1440;10002:-1;10003:-1
@@ -138,11 +138,11 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 
 | Field | Value |
 |:---|---|
-| UID | Xandr user Id |
-| SEPARATOR1 | "," |
-| SEPARATOR2 | ";" |
-| SEPARATOR4 | "\t"   |
-| SEG_FIELD | [SEG_CODE] |
+| `UID` | Xandr user Id. |
+| `SEPARATOR1` | "," |
+| `SEPARATOR2` | ";" |
+| `SEPARATOR4` | "\t"   |
+| `SEG_FIELD` | [SEG_CODE] |
 
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
@@ -157,10 +157,10 @@ In the example, below, the client is adding user `12345678900987654321` to segme
 
 | Field | Value |
 |:---|:---|
-| `UID` | Xandr user ID |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "\t" |
 | `SEPARATOR3` | "\t" |
-| `SEG_FIELD` | [`TIMESTAMP, SEG_ID, VALUE, EXPIRATION`] |
+| `SEG_FIELD` | [`TIMESTAMP`, `SEG_ID`, `VALUE`, `EXPIRATION`] |
 
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
@@ -184,7 +184,7 @@ A client is adding user `"abcdefg"` to segments `10000` and `10001` with an expi
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR3` | ":" |
-| `SEG_FIELD` | [`SEG_ID, EXPIRATION`] |
+| `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 | `uses_external_uids` | `true` |
 
 ``` pre
@@ -201,12 +201,12 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 
 | Field | Value |
 |:---|:---|
-| `UID` | Xandr user ID |
+| `UID` | Xandr user ID. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR3` | ":" |
 | `SEPARATOR4` | "\t" |
-| `SEG_FIELD` | [`MEMBER_ID, SEG_CODE`] |
+| `SEG_FIELD` | [`MEMBER_ID`, `SEG_CODE`] |
 
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.
@@ -217,17 +217,20 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 
 ### Example 6
 
-A client is adding mobile user IDFA (ID for Advertisers) AEBE52E7-03EE-455A-B3C4-E57283966239 to segments 10000, 10001, 10002, 10003 for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform. Note, separator 5 appended which designates the use of mobile identifiers. The value "3", designates Apple's IDFA value—other values can be found above in the Mobile Device ID Data Fields table.
+A client is adding mobile user IDFA (ID for Advertisers) AEBE52E7-03EE-455A-B3C4-E57283966239 to segments 10000, 10001, 10002, 10003 for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform.
+
+> [!NOTE]
+> Separator 5 appended which designates the use of mobile identifiers. The value "3", designates Apple's IDFA value—other values can be found above in the Mobile Device ID Data Fields table.
 
 | Field | Value |
 |:---|:---|
-| `IDFA` | Apple ID for Advertisers |
+| `IDFA` | Apple ID for Advertisers. |
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR3` | ":" |
 | `SEPARATOR4` | "\t" |
 | `SEPARATOR5` | "^" |
-| `SEG_FIELD` | [SEG_ID,EXPIRATION] |
+| `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.

@@ -16,15 +16,15 @@ Bidder Profiles are used to create and manage filtering criteria for which real-
 - Data Provider bidders can only have one parent profile and no child profiles.
 
 > [!WARNING]
-> Profiles must be attached to an active bidder object
+> Profiles must be attached to an active bidder object.
 >
 > After you create a profile, you must attach the profile to your bidder by specifying "parent_profile_id" via the [Bidder Service](bidder-service.md).
 >
-> Do not use deprecated fields
+> Do not use deprecated fields.
 >
 > Do not include any of the fields marked as deprecated below when you are configuring your profile(s). This will lead to your bidder not receiving the expected volume of bid requests.
 >
-> Frequent profile updates may temporarily lock that profile
+> Frequent profile updates may temporarily lock that profile.
 >
 > If you make multiple updates to a bidder profile within 30 minutes, the profile can potentially get locked as a safety precaution. If a profile gets locked, traffic matching only this profile will not go through for approximately 5 minutes.
 
@@ -77,7 +77,7 @@ The following filtering criteria are currently supported:
 | POST | https://api.adnxs.com/profile/BIDDER_ID<br>(profile JSON) | Add a Profile for your bidder. |
 | PUT  | https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID<br>(profile JSON) | Modify an Existing Profile. |
 | DELETE | https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID<br><br>**Note:** Only inactive profiles can be deleted; that is profiles that are not associated with the bidder object. | Delete an existing profile. |
-|  | Use the [Bidder Service](bidder-service.md) to set the profile_id field on the bidder to the id of the desired bidder profile. | Activate a profile for your bidder as the parent profile. |
+|  | Use the [Bidder Service](bidder-service.md) to set the `profile_id` field on the bidder to the id of the desired bidder profile. | Activate a profile for your bidder as the parent profile. |
 |  | Use the [Bidder Service](bidder-service.md) to update the child_profiles array on the bidder to include id of the desired bidder profile. | Activate a profile for your bidder as a child profile. |
 
 ## JSON fields
@@ -107,7 +107,7 @@ The following filtering criteria are currently supported:
 | `inventory_attribute_targets` | Array of [inventory attribute](inventory-attribute-service.md) objects. | An array of objects for the targets to include, e.g. [{"id":12}]. If use_inventory_attribute_targets is enabled, we will send bid requests that contain the selected attributes. We will also send bid requests that contain no inventory attributes. To exclude a particular inventory attribute, simply include all the IDs except for the attribute you wish to exclude.<br>**Required:** No. |
 | `non_audited_url_action` | string | If this is set to "exclude", all inventory that has not been audited by Xandr will be excluded. Otherwise, all inventory will be included.<br>**Required:** No. |
 | `domain_list_action` | Enum - "exclude" or "include" | Default action to apply to domain_list_target.<br>**Required:** No. |
-| `domain_list_targets` | Array of objects with the ID of the domain lists. | Array of objects for the domain list targets, e.g. []. Only bid requests for inventory that match the domain_list_action for the enumerated domain lists will be sent to the bidder.<br>**Required:** no. |
+| `domain_list_targets` | Array of objects with the ID of the domain lists. | Array of objects for the domain list targets, e.g. []. Only bid requests for inventory that match the domain_list_action for the enumerated domain lists will be sent to the bidder.<br>**Required:** No. |
 | `domain_action` |  | **Required:** Deprecated. |
 | `domain_targets` |  | **Required:** Deprecated. |
 | **Audience** |  |  |
@@ -117,7 +117,7 @@ The following filtering criteria are currently supported:
 | `supply_type_targets` | Array of supply type targets:<br>"mobile_app" (for mobile app inventory),<br>"mobile_web" (for mobile web inventory),<br>"web" (for regular display inventory) | Determines which supply type targets should be included or excluded pursuant to supply_type_action.<br>**Required:** No. |
 | `supply_type_action` | Enum - "exclude" or "include" | Action to apply to supply_type_targets.<br>**Required:** No. |
 | **Mobile-Specific** |  |  |
-| `carrier_targets` | Not yet supported | Required: no |
+| `carrier_targets` | Not yet supported | **Required:** No. |
 | `carrier_action` | Enum - "exclude" or "include" | Action to apply to carrier_targets.<br>**Required:** No. |
 | `handset_make_targets` | Not yet supported | **Required:** No. |
 | `handset_make_action` | Enum - "exclude" or "include" | Action to apply to handset_make_targets.<br>**Required:** No. |
@@ -141,7 +141,7 @@ Each object in the `country_targets` array contains the following fields.
 
 | Field | Type | Description |
 |---|---|---|
-| `id` | int | The ID of the country. You can use the Country Service to retrieve a complete list of country IDs. |
+| `id` | int | The ID of the country. You can use the [Country Service](country-service.md) to retrieve a complete list of country IDs. |
 | `name` | string | **Read-only.** The name of the country. |
 | `code` | string | **Read-only.** The code for the country. |
 
@@ -305,7 +305,7 @@ curl -b cookies -c cookies "https://api.adnxs.com/profile/6"
 curl -b cookies -c cookies "https://api.adnxs.com/profile/6/123"
 ```
 
-To activate a profile for your bidder, use the [Bidder Service](bidder-service.md) to set the profile_id field on the bidder to the id of the desired bidder profile.
+To activate a profile for your bidder, use the [Bidder Service](bidder-service.md) to set the `profile_id` field on the bidder to the id of the desired bidder profile.
 
 ### To update profile ID 123 on bidder 6
 
@@ -458,6 +458,6 @@ $ curl -b cookies -c cookies -X PUT --data-binary @domain-list-profile 'https://
 }
 ```
 
-## Related topics
+## Related topic
 
 [Bidder Profile - FAQ](./bidder-profile---faq.md)

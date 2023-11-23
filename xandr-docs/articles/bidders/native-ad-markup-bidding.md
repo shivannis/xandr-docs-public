@@ -157,11 +157,11 @@ Once you have registered a Native Creative and it has passed platform audit, yo
 
 Some considerations:
 
-- Either the `crid` or `adid` field must be included in the bid response to identify the creative that was registered. The `crid` value must match the creative's `code;` `adid` must match the creative's `id.`
+- Either the `crid` or `adid` field must be included in the bid response to identify the creative that was registered. The `crid` value must match the creative's `code;` `adid` must match the creative's `id`.
 - Native creative assets must be passed via the `seatbid.bid.adm.native` object. Be sure to include image assets, data assets, impression trackers, and click trackers. These assets will serve instead of the creative asset you initially registered.
   
-> [!NOTE]
-> The creative assets you bid with must belong to the same brand as the creative asset you initially registered. Xandr periodically scans and reviews ad markup creative content to ensure this content is consistent with the registered creative. If there is a discrepancy, your creative can be rejected by platform audit. Frequent creative audit rejections due to rotating brands can result in revoked access to the Ad Markup Bidding with Native feature.
+    > [!NOTE]
+    > The creative assets you bid with must belong to the same brand as the creative asset you initially registered. Xandr periodically scans and reviews ad markup creative content to ensure this content is consistent with the registered creative. If there is a discrepancy, your creative can be rejected by platform audit. Frequent creative audit rejections due to rotating brands can result in revoked access to the Ad Markup Bidding with Native feature.
 
 - If you do not pass native creative assets in your bid response, or the assets are malformed, the registered creative content will serve by default.
 
@@ -184,8 +184,8 @@ Some considerations:
 |---|---|---|
 | `assets` | array of objects | (Required) List of the native ad's assets. See [Asset Object](#asset-object) below.<br>  |
 | `link` | object | (Required) The default destination link for the native ad. Each individual asset can have its own link object, which applies if that asset is clicked. If an individual asset link does not have a link object, the parent link object is used. See [Link Object](#link-object) below. |
-| `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>The following OpenRTB macros are supported in this field: - <br>`${AUCTION_ID}` - Xandr `auction_id_64`.<br> `- ${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
-| `jstracker` | string | Optional JavaScript impression tracker. This should be wrapped in <script> tags.<br>The following OpenRTB macros are supported in this field:<br> - `${AUCTION_ID}` - Xandr `auction_id_64`.<br> - `${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the bid object of the `seatbid` object.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
+| `imptrackers` | array of strings | Array of impression-tracking URLs expected to return a 1x1 image or HTTP 204 (No Content) response. This is typically passed only when using third-party trackers.<br>The following OpenRTB macros are supported in this field:<br> - `${AUCTION_ID}` - Xandr `auction_id_64`.<br> - `${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
+| `jstracker` | string | Optional JavaScript impression tracker. This should be wrapped in `<script>` tags.<br>The following OpenRTB macros are supported in this field:<br> - `${AUCTION_ID}` - Xandr `auction_id_64`.<br> - `${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response.<br> - `${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object.<br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object.<br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the bid object of the `seatbid` object.<br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
 | `privacy` | string | If support was indicated in the request, URL of a page informing the user about the buyer’s targeting activity. |
 | `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. |
 
@@ -197,7 +197,7 @@ Xandr supports a single object in the native ext object to support Xandr-specif
 |:---|:---|:---|
 | `appnexus` | object | Specifies the Xandr-specific (formerly AppNexus) extensions to the OpenRTB bid response.  |
 
-### Native ext appNexus object
+### Native ext AppNexus object
 
 Xandr supports the following fields in the `appnexus` extension object:
 
@@ -245,7 +245,7 @@ Xandr supports a single object in the native ext object to support Xandr-specif
 |:---|:---|:---|
 | `appnexus` | object | Specifies the Xandr-specific (formerly AppNexus) extensions to the OpenRTB bid response.  |
 
-### Image ext appNexus object
+### Image ext AppNexus object
 
 Xandr supports the following fields in the `appnexus` extension object:
 
@@ -315,11 +315,14 @@ No. Creative audit fees will apply only during your creative's initial audit.
 
 ### What happens if my Native Creative passes initial audit but fails a subsequent reaudit?
 
-Your creative will not be permitted to serve. The audit failure may be due to rotating brands. If you believe your creative has been failed incorrectly or have other questions please contact customer support and select the Category "Creative Audit". Please note that frequent creative audit rejections due to rotating brands may result in revoked access to the Ad Markup Bidding with Native feature.
+Your creative will not be permitted to serve. The audit failure may be due to rotating brands. If you believe your creative has been failed incorrectly or have other questions please contact customer support and select the Category "Creative Audit".
+
+> [!NOTE]
+> The frequent creative audit rejections due to rotating brands may result in revoked access to the Ad Markup Bidding with Native feature.
 
 ### Where do I go for more help?
 
-If you have additional questions, please contact your account representative or [customer support](https://help.appnexus.com/).
+If you have additional questions, please contact your account representative or [customer support](https://help.xandr.com/s/login/).
 
 ## Related topic
 

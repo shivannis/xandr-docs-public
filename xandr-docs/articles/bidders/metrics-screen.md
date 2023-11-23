@@ -4,9 +4,9 @@ description: In this article, learn about the Metrics screen and gain a thorough
 ms.date: 10/28/2023
 ---
 
-# Metrics Screen
+# Metrics screen
 
-Use the Metrics screen to monitor real time activity on your Xandr integration across all of our global data centers. Monitor the amount of traffic we send to your regional servers, or get data on bid rates and response times. Create your own graphs by selecting options in the three main sections of the metrics screen:
+Use the **Metrics** screen to monitor real time activity on your Xandr integration across all of our global data centers. Monitor the amount of traffic we send to your regional servers, or get data on bid rates and response times. Create your own graphs by selecting options in the three main sections of the metrics screen:
 
 ## Available metrics
 
@@ -35,7 +35,7 @@ Notifications are set up by the bidder software that provide the results of an a
 
 | Name | Definition |
 |:---|:---|
-| **Sent** | Total count of successfully sent notifies |
+| **Sent** | Total count of successfully sent notifies. |
 | **Skipped**  | Count of notifies where the impbus did not send a notify request due to bidder configuration that turns off notifies, rather than because of an error. Notifies could be skipped because the bidder has them blocked, the bidder has not set a notify uri, or where the bidder has notifies explicitly turned off. |
 
 ### Pricing
@@ -44,7 +44,7 @@ Preemptive auctions occur when the impbus is participating in a third-party auct
 passes the winning bid along to the third-party auction. The seller does not automatically display content for the winning bid because this winning bid is not guaranteed to win the final auction.
 
 | Name | Definition |
-|---|---|
+|:---|:---|
 | **Best bid price**<br>(platform) | Total amount of bids per number bids made, in USD for Platform inventory. |
 | **Cleared price**<br>(platform) | Total amount of winning bids per total number of winning bids, in USD for Platform inventory. |
 | **Best bid price**<br>(partner)* | Total best bid price averaged by count of best bids, in USD for SSP bids. |
