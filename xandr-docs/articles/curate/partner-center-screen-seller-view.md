@@ -87,7 +87,7 @@ Use the filters to search the **Buyers** list for a buyer that meets your partne
 
 Click on a buyer's name to view the **Partner Details** screen for that buyer. You can then review and manage your relationship with the buyer, view spending trends, and access any active or upcoming deals.
 
-See [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md#partnership-details-screen---seller-view) for more information.
+See [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md) for more information.
 
 ## Related topics
 
