@@ -30,17 +30,16 @@ landingContent:
   - title: Partner Center Guide
     linkLists:
       - linkListType: concept
-        links:            
-          - text: Managing Relationships with Buyers
-            url: managing-relationships-with-buyers.md
-          - text: Managing Relationships with Sellers
-            url: managing-relationships-with-sellers.md
-      - linkListType: how-to-guide
         links:
-          - text: Manage Your Deals with Buyers
-            url: manage-your-deals-with-buyers.md
           - text: Understanding Bid Rejections
             url: understanding-bid-rejections.md
+      - linkListType: how-to-guide
+        links:
+          - text: Customize Your Seller Profile
+            url: customize-your-seller-profile.md
+          - text: Customize Your Buyer Profile
+            url: customize-your-buyer-profile.md
+          
   - title: Curated Deals
     linkLists:
       - linkListType: concept
