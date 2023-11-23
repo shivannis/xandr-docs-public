@@ -51,18 +51,18 @@ additionalContent:
           - url: ./file1b.md OR /file1b
             text: Release Notes
       # Card
-      - title: Microsoft Curate (Work in Progress)
+      - title: Microsoft Curate
         links:
-          - url: getting-started/index.yml
+          - url: curate/index.yml
             text: Product Documentation
-          - url: ./file1b.md OR /file1b
+          - url: curate/release-notes-curate.md
             text: Release Notes
       # Card
       - title: Bidder (Work in Progress)
         links:
           - url: getting-started/index.yml
             text: Product Documentation
-          - url: ./file1b.md OR /file1b
+          - url: release-notes-curate.md
             text: Release Notes
     - title: API References
       items:
