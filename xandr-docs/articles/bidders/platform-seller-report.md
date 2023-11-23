@@ -189,7 +189,7 @@ You can schedule reports that you would like to pull regularly. See the [Saved R
 
 - [Report Service](report-service.md)
 - [Completed Creative Audits Report](completed-creatives-audits-report.md)
-- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md.)
+- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
 - [Bidder Billing Report API](bidder-billing-report-api.md)
 - [Seller Platform Billing Report](seller-platform-billing-report.md)
 - [Inventory Availability Reporting](inventory-availability-report.md)
