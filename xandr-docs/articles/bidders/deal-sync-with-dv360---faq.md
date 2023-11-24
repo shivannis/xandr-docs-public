@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deal Sync with DV360 - FAQ
+title: Bidders - Deal Sync with DV360 - FAQ
 description: The article provides answers to frequently asked questions (FAQs) regarding Deal Sync with DV360.
 ms.date: 10/28/2023
 ---
 
-# Deal sync with DV360 - FAQ
+# Bidders - Deal sync with DV360 - FAQ
 
 > [!NOTE]
 > This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If

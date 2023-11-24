@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deal Screen
+title: Bidders - Deal Screen
 description: The article describes the deals screen that displays Xandr publisher deals with buyers, providing bidders with information, and how the bidders can utilize the deal buyer Access Service to access more details.
 ms.date: 10/28/2023
 ---
 
-# Deal screen
+# Bidders - Deal screen
 
 The **Deals** screen is where a bidder can see the deals Xandr publishers have set up with their buyers and get further details about the deal. For additional details on the deal, bidders can use the [Deal Buyer Access Service](deal-buyer-access-service.md).
 

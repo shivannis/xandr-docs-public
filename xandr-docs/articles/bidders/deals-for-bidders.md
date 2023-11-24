@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deals for Bidders
+title: Bidders - Deals for Bidders
 description: The article explains the deals for bidders.
 ms.date: 10/28/2023
 ---
 
-# Deals for bidders
+# Bidders - Deals for bidders
 
 Xandr offers the ability to bid on deals with our platform sellers. This page walks you through the bidding process.
 

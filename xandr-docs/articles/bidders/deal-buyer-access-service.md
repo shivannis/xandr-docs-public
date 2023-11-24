@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deal Buyer Access Service
+title: Bidders - Deal Buyer Access Service
 description: The article explains deal buyer access service, REST API, and the JSON fields.
 ms.date: 10/28/2023
 ---
 
-# Deal buyer access service
+# Bidders - Deal buyer access service
 
 This read-only service lets bidders view information about the negotiated deals they have with sellers on Xandr's platform. A deal may provide a buyer preferential pricing, access to exclusive inventory, reduced competition on inventory, or other opportunities. Each deal is valid for a single buyer, but note that inventory included in a deal may be encompassed by deals with other buyers as well.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deal Sync with DV360 - Publisher Guide 
+title: Bidders - Deal Sync with DV360 - Publisher Guide 
 description: The article describes Xandr's integration with DV360 Seller API syncs deals created in Xandr Monetize with Google DV360, streamlining transactions for publishers and buyers.
 ms.date: 10/28/2023
 ---
 
-# Deal sync with DV360 - publisher guide 
+# Bidders - Deal sync with DV360 - publisher guide 
 
 > [!NOTE]
 > This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If

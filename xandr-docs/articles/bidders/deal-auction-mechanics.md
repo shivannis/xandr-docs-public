@@ -1,9 +1,9 @@
 ---
-title: Microsoft Bidders - Deal Auction Mechanics
+title: Bidders - Deal Auction Mechanics
 description: The article outlines the deal auction mechanism in digital advertising, focusing on scenarios where inventory in an "open auction" deal is up for bidding. The mechanism involves a dynamic process where bids determine the winning advertiser for a given advertising space.
 ms.date: 10/28/2023
 ---
-# Deal auction mechanics
+# Bidders - Deal auction mechanics
 
 > [!NOTE]
 > This documentation is based on first-price auction. If you're still using second-price auction, then [Deal Auction Mechanics for Second Price Auction](../monetize/deal-auction-mechanics-for-second-price-auction.md).

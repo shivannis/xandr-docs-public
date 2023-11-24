@@ -1,10 +1,10 @@
 ---
-title: Debugging - FAQ
+title: Bidders - Debugging - FAQ
 description: The article provides information and answers frequently asked questions (FAQs) related to debugging.
 ms.date: 10/28/2023
 ---
 
-# Debugging - FAQ
+# Bidders - Debugging - FAQ
 
 ## Connection quality
 

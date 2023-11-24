@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Deal From Package Service
+title: Bidders - Deal From Package Service
 description: The article outlines a process involving package services, where sellers offer deals (packages) to buyers. Buyers use the Package Buyer Access Service to browse and select a suitable package, then utilize the Deal From Package service to create a deal with the seller.
 ms.date: 10/28/2023
 ---
 
-# Microsoft bidders - deal from package service
+# Bidders - Deal from package service
 
 A package is a deal that a seller is prepared to offer to any buyer. Buyer members use the [Package Buyer Access Service](package-buyer-access-service.md) to browse available packages and find one that meets their needs. Then buyers use the Deal From Package service to generate a deal between themselves and the seller.
 
