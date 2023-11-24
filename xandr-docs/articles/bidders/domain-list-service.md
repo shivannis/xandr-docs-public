@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Domain List Service
+title: Bidders - Domain List Service
 description: The article discusses a domain list service, highlighting its functionality in creating either an allowlist or a blocklist of domains. This service enables users to specify which domains should be targeted (allowlist) or excluded (blocklist) in their activities.
 ms.date: 10/28/2023
 ---
 
-# Domain list service in Microsoft Bidders 
+# Bidders - Domain list service
 
 Domain lists can be used to create an allowlist or a blocklist of domains that should be included or excluded, respectively, from
 targeting. The domain list IDs are used with the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to specify

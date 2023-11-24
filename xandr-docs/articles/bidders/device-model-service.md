@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Device Model Service
+title: Bidders - Device Model Service
 description: The article describes a device model service that categorizes mobile devices by manufacturer (make) and specific product (model), using examples such as Apple as the make and iPhone as the model.
 ms.date: 10/28/2023
 ---
 
-# Device model service
+# Bidders - Device model service
 
 Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is
 generally the specific product (such as iPhone). The read-only Device Model Service allows you to see what models of mobile devices are

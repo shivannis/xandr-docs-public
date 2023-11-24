@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - Duration Service
+title: Bidders - Duration Service
 description: Use the read-only Duration Service to see what video content durations
 ms.date: 10/28/2023
 ---
 
-# Duration service
+# Bidders - Duration service
 
 Use the read-only Duration Service to see what video content durations are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 

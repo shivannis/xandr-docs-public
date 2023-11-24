@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bidders - DV360 Buyer UI Deal Acceptance Workflows
+title: Bidders - DV360 Buyer UI Deal Acceptance Workflows
 description: The article outlines the workflows for deal acceptance in DV360 Buyer UI.
 ms.date: 10/28/2023
 ---
 
-# DV360 Buyer UI deal acceptance workflows
+# Bidders - DV360 Buyer UI deal acceptance workflows
 
 > [!NOTE]
 > This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If
