@@ -1,258 +1,63 @@
 ---
-Title : Exchange Service
-Description : Exchanges are groups of sellers organized to allow for easier supply
-ms.date : 10/28/2023
-targeting.
+Title: Bidders - Exchange Service
+Description: The article discusses a exchange service for bidders.
+ms.date: 10/28/2023
+
 ---
 
+# Bidders - Exchange Service
 
-# Exchange Service
+Exchanges are groups of sellers organized to allow for easier supply targeting.
 
+- This inventory will be targeted all at once. You can combine it with domain list targeting and member targeting.
+- As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all
+  members within it and any new members that join.
+- We took our premium publishers and put them all in one group, called " Supply". When you access and target inventory, you can target
+   Supply. This will target all those premium publishers for you.
+  - You can find out more information about  Supply here: [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
+- Sellers that belong to Exchange 1,  Supply, can not be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
 
+Today we have three exchanges:
 
-Exchanges are groups of sellers organized to allow for easier supply
-targeting.
-
-- This inventory will be targeted all at once. You can combine it with
-  domain list targeting and member targeting.
-- As new sellers are added, you do not have to update your profile or
-  targeting. When targeting a single exchange, you will receive all
-  members within it and any new members that join. 
-- We took our premium publishers and put them all in one group, called
-  " Supply". When you access
-   and target inventory, you can target
-   Supply. This will target all those premium
-  publishers for you.
-  - You can find out more information about 
-    Supply here: <a
-    href="xandr-monetize-supply-for-external-demand-partners.md"
-    class="xref" target="_blank"> Supply for
-    External Demand Partners</a>
-- Sellers that belong to Exchange 1,  Supply,
-  can not be individually included and excluded. The group must be
-  targeted as a whole. You can individually include/exclude members that
-  belong to other exchanges. 
-
-Today we have three exchanges: 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000208f__entry__1" class="entry colsep-1 rowsep-1">ID</th>
-<th id="ID-0000208f__entry__2" class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-0000208f__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__2">Direct</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__3">These are premium publishers on our
-platform that we have direct integrations with. This inventory is
-brought to you directly through Xandr's SSP
-technology, and is formed at its core from our direct-to-publisher
-supply most frequently requested and purchased by our buyers across all
-formats (display, mobile, video, and native). </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__2">Connect</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__3">These are the SSPs such as Pubmatic,
-Google Ad Manager, etc.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__1">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__2">Network</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__3">All
-ad-networks that represent many publishers and act as SSPs. </td>
-</tr>
-</tbody>
-</table>
-
-
+| ID | Name | Description |
+|--|--|--|
+| 1 | Direct | These are premium publishers on our platform that we have direct integrations with. This inventory is brought to you directly through Xandr's SSP technology, and is formed at its core from our direct-to-publisher supply most frequently requested and purchased by our buyers across all formats (display, mobile, video, and native). |
+| 2 | Connect | These are the SSPs such as Pubmatic, Google Ad Manager, etc. |
+| 3 | Network | All ad-networks that represent many publishers and act as SSPs. |
 
 ## Rest API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000208f__entry__13" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000208f__entry__14"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000208f__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__13">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__14"><a
-href="https://api.adnxs.com/exchange" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/exchange</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__15">To
-see all of the exchanges and members that belong to them.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__13">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__14"><a
-href="https://api.adnxs.com/exchange?id=%5bEXCHANGE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/exchange?id=[EXCHANGE_ID</a>]</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__15">To
-view members in a specific exchange.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| GET | `https://api.adnxs.com/exchange` | To see all of the exchanges and members that belong to them. |
+| GET | `https://api.adnxs.com/exchange?id=[EXCHANGE_ID]` | To view members in a specific exchange. |
 
+## JSON fields
 
+| Field | Type | Description |
+|--|--|--|
+| created_on | array | The timestamp when the exchange was created. |
+| description | array | Description of sellers that belong to the exchange. |
+| id | int | The ID of the exchange. Today, we only have 3 exchanges. |
+| last_activity | enum | The timestamp of last modification. |
+| members | array of objects | Array of members that belong to that exchange. |
+| name | int | The name of the exchange. |
+| restricted | boolean | Indicates if the members within the exchange can be individually targeted or blocked.<br>If true, the members within this exchange can not be individually included or excluded.<br>If false, the members within this exchange can be individually included or excluded. |
 
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000208f__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000208f__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000208f__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__24">The
-timestamp when the exchange was created.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__24">Description of sellers that belong to
-the exchange.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__24">The
-ID of the exchange. Today, we only have 3 exchanges.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__24">The
-timestamp of last modification. </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">members</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__24">Array of members that belong to that
-exchange.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__24">The
-name of the exchange.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__22"><code
-class="ph codeph">restricted</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__24">Indicates if the members within the
-exchange can be individually targeted or blocked.
-<ul>
-<li>If true, the members within this exchange can not be individually
-included or excluded.</li>
-<li>If false, the members within this exchange can be individually
-included or excluded.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-Members Object
+## Members object
 
 The following table describes Member Object fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000208f__entry__46"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000208f__entry__47"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000208f__entry__48"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__46"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__47">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000208f__entry__48">ID
-of the member</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__46"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__47">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000208f__entry__48">Name of the member</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description |
+|--|--|--|
+| id | int | ID of the member |
+| name | string | Name of the member |
 
 ## Examples
 
 **View all members who belong to exchange 2**
 
-``` pre
+```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2909  100  2909    0     0  34085      0 --:--:-- --:--:-- --:--:-- 34223
@@ -562,32 +367,10 @@ headers="ID-0000208f__entry__48">Name of the member</td>
 }
 ```
 
+## Related topics
 
-
-
-## **Related Topics**
-
-
-
-- <a href="enhanced-bidder-profiles.md" class="xref">Enhanced Bidder
-  Profiles</a>
-- <a
-  href="hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md"
-  class="xref">Hierarchy and Ad Type Targeting for Enhanced Bidder
-  Profiles</a>
-- <a href="api-use-cases-for-enhanced-bidder-profiles.md"
-  class="xref">API Use Cases for Enhanced Bidder Profiles</a>
-- <a
-  href="frequently-asked-questions-faq-for-enhanced-bidder-profiles.md"
-  class="xref">Frequently Asked Questions (FAQ) for Enhanced Bidder
-  Profiles</a>
-- <a href="changelog-for-enhanced-bidder-profiles.md"
-  class="xref">Changelog for Enhanced Bidder Profiles</a>
-
-
-
-
-
-
-
-
+[Enhanced Bidder Profiles](enhanced-bidder-profiles.md)
+[Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
+[API Use Cases for Enhanced Bidder Profiles](api-use-cases-for-enhanced-bidder-profiles.md)
+[Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md)
+[Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md)
