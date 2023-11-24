@@ -23,7 +23,7 @@ Use the read-only Rating Service to see what video content ratings are registere
 | `last_modified` | timestamp | The time of last modification |
 | `name` | string | **Required on POST/PUT** <br> The video taxonomy referential value |
 
-## Exampls
+## Example
 
 ### To retrieve all defined ratings  
   
