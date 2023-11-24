@@ -3,6 +3,7 @@ title: Bidders - Deal Sync with Trade Desk - Publisher Guide
 description: The article provides a publisher guide that specifically focuses on synchronizing deals with Trade Desk.
 ms.date: 10/28/2023
 ---
+
 # Bidders - Deal sync with trade desk - publisher guide
 
 ## Overview
