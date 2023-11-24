@@ -1,10 +1,10 @@
 ---
-title: Impression Counting
+title: Bidders - Impression Counting
 description: Learn about impression counting. Xandr counts impressions and pays sellers after an accept call.
 ms.date: 11/24/2023
 ---
 
-# Impression counting
+# Bidders - Impression counting
 
 Xandr counts an impression, and records payment to the seller, once we receive an "accept call", which notifies us that a creative was served to the Webpage or mobile app. Because the amount of time between when an impression is requested and when the creative is served varies by media type, we have defined appropriate look-back windows for each media type. This look back window is also known as TTL (time to live) or cache.
 
