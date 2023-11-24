@@ -1,12 +1,12 @@
 ---
-title : Bidders - Click Response
+title : Click Response
 description : Learn how when a bidder receives a Click Request, it can write data to the bidder's reserved segment of the AppNexus data store through a ***click response***. This data will then be passed into the `userdata_json` field of any future Bid Requests. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Click response
+# Click response
 
 > [!NOTE]
 > - **Not Supported**: The Xandr bidding protocol is no longer supported; this documentation is for legacy purposes only.
@@ -40,6 +40,6 @@ code `"abcd"` from the user.
 }
 ```
 
-## Related topics
+## Related topic
 
 - [Click Request](click-request.md)

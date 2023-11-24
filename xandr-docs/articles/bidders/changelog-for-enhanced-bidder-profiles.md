@@ -1,12 +1,12 @@
 ---
-title : Bidders - Changelog for Enhanced Bidder Profiles
+title : Changelog for Enhanced Bidder Profiles
 description : This page covers all changes between legacy bidder profiles and Enhanced Bidder Profiles. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Changelog for Enhanced Bidder Profiles
+# Changelog for Enhanced Bidder Profiles
 
 Document to cover all changes between legacy bidder profiles and
 Enhanced Bidder Profiles.

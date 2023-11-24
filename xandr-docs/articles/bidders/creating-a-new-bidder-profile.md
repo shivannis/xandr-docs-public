@@ -1,11 +1,11 @@
 ---
-title : Bidders - Creating a New Bidder Profile
+title : Creating a New Bidder Profile
 description : Learn how to create a new bidder profile. 
 ms.date : 11/20/2023
 ---
 
 
-# Bidders - Creating a new Bidder profile
+# Creating a new Bidder profile
 
 This explains how to create a new bidder profile. There are [seven
 targeting options](bidder-profile-targeting-options.md) that must be set up as part of this process.

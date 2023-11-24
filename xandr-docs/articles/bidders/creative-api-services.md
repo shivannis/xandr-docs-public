@@ -1,12 +1,12 @@
 ---
-title : Bidders - Creative API Services
+title : Creative API Services
 description : Learn how bidders must use the Creative Service to register their creatives. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Creative API services
+# Creative API services
 
 To serve a creative in Xandr's platform, bidders
 must use the [Creative Service](creative-service.md) to register their

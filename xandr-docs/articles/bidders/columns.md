@@ -1,11 +1,11 @@
 ---
-title : Bidders - Columns
+title : Columns
 description : Learn all about columns in this page.
 ms.date : 11/20/2023
 ---
 
 
-# Bidders - Columns
+# Columns
 
 This allows you to configure which columns the table displays.
 
@@ -37,7 +37,7 @@ This is a list of the available columns:
 | **Is Prohibited** | **Is Prohibited** shows creatives that are not allowed in the system. (This is not checked by default).                                                                                                                                                                                                                                                                          |
 | **Is Suspicious** | **Is Suspicious** shows creatives that are suspect of not meeting quality standards. (This is not checked by default).                                                                                                                                                                                                                                                           |
 | **Last Modified** | This is when the creative was last modified by the bidder. (This is checked by default).                                                                                                                                                                                                                                                                                     |
-| **Member**        | This is the name of the member that the creative registered under. (This is checked by default). **Note**: Bidders frequently have multiple members.                                                                                                                                                                                                                             |
+| **Member**        | This is the name of the member that the creative registered under. (This is checked by default). <br> **Note**: Bidders frequently have multiple members.                                                                                                                                                                                                                             |
 | **SSL Status**     | This refers to the status of the **Secure Sockets Layer**. It is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. These are the possible statuses: <br>- **Approved** <br> - **Pending** <br> - **Failed/Disabled** <br>(This is checked by default). |
 | **State**          | This identifies if the creative is **Active** or **Inactive**. (This is checked by default).                                                                                                                                                                                                                                                                                         |
 

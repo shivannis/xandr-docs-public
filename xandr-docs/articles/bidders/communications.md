@@ -1,12 +1,12 @@
 ---
-title : Bidders - Communications
+title : Communications
 description : Learn how we keep our clients informed on breaking changes and new releases. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Communications
+# Communications
 
 We regularly keep in contact with our clients to announce breaking
 changes and new releases. We do our best to ensure everyone receives

@@ -1,12 +1,12 @@
 ---
-title : Bidders - Changelog for Buyer Seat ID
+title : Changelog for Buyer Seat ID
 description : This page tells us about changes between member id integration and buyer seat id integration. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Changelog for buyer seat ID
+# Changelog for buyer seat ID
 
 This documents all of the changes between member id integration and
 buyer seat id integration.

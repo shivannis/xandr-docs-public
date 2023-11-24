@@ -1,11 +1,11 @@
 ---
-title : Bidders - Creative Approval (Implementation)
+title : Creative Approval-Implementation
 description : Learn how the sell-side does creative approval. 
 ms.date : 11/20/2023
 ---
 
 
-# Bidders - Creative approval (Implementation)
+# Creative Approval-Implementation
 
 > [!NOTE]
 > This document is for informational purposes only. It explains how the sell-side does creative approval. Bidders have no active role in this process.

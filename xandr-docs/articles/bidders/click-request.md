@@ -1,12 +1,12 @@
 ---
-title : Bidders - Click Request
+title : Click Request
 description : Learn how the impression bus will insert our clicktracking URL into the creative at serve time and log and report any clicks that occur. 
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Click request
+# Click request
 
 The impression bus will insert our clicktracking URL into the creative
 at serve time and log and report any clicks that occur. If the member

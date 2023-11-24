@@ -1,12 +1,12 @@
 ---
-title : Bidders - Countries
+title : Countries
 description : Learn how using the Countries tab you can select countries you want to receive.  
 ms.date : 11/20/2023
 
 ---
 
 
-# Bidders - Countries
+# Countries
 
 Clicking the **Countries** tab
 accesses a screen where you can select which countries you want to
