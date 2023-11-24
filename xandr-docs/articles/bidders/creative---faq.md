@@ -1,11 +1,11 @@
 ---
-title : Bidders - Creative (FAQ)
+title : Creative - FAQ
 description: Learn FAQs on Creatives.
 ms.date : 11/22/2023
 ---
 
 
-# Bidders - Creative (FAQ)
+# Creative - FAQ
 
 This page gives insights on FAQs for creatives.
 

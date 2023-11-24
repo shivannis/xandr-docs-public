@@ -1,12 +1,12 @@
 ---
-title : Bidders - Creatives Screen
+title : Creatives Screen
 description : Learn all about Creatives Screen and how a Bidder can see their creatives, and search for the creatives here. 
 ms.date : 11/23/2023
 
 ---
 
 
-# Bidders - Creatives screen
+# Creatives screen
 
 The **Creatives** screen is where a
 bidder can see their creatives, and search for the creative they would

@@ -1,12 +1,12 @@
 ---
-title : Bidders - Creative Audit Feedback
+title : Creative Audit Feedback
 description : Learn about the creative standards set by Xandr, Google Ad Manager, and Microsoft.
 ms.date : 11/22/2023
 
 ---
 
 
-# Bidders - Creative audit feedback
+# Creative audit feedback
 
 This page addresses the creative standards set by
 Xandr, Google Ad Manager, and Microsoft, and

@@ -1,12 +1,12 @@
 ---
-title : Bidders - Creative Setup & Audit
+title : Creative Setup & Audit
 description : This page lists links for Creative Setup & Audit.
 ms.date : 11/21/2023
 
 ---
 
 
-# Bidders - Creative setup & audit
+# Creative setup & audit
 
 - [Quick Start Creative Buying Guide](quick-start-creative-buying-guide.md)
 - [Add a Creative](add-a-creative.md)

@@ -1,11 +1,11 @@
 ---
-title : Bidders - Datacenter (FAQ)
+title : Datacenter (FAQ)
 description: Learn to route traffic to different datacenters.  
 ms.date : 11/21/2023
 ---
 
 
-# Bidders - Datacenter (FAQ)
+# Datacenter (FAQ)
 
 ## Traffic routing
 

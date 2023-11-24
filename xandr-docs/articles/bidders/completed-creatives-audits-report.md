@@ -1,12 +1,12 @@
 ---
-title : Bidders - Completed Creatives Audits Report
+title : Completed Creatives Audits Report
 description : This page discusses about Completed Creative Audits Report and how it allows bidders to see why your creative was audited, and how many creatives were audited over a period of time.  
 ms.date : 11/21/2023
 
 ---
 
 
-# Bidders - Completed creatives audits report
+# Completed creatives audits report
 
 The **Completed Creative Audits Report** allows bidders to see why your
 creative was audited, and how many creatives were audited over a period
