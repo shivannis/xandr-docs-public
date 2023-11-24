@@ -1,6 +1,6 @@
 ---
 title : Bidders - Creative Format Service
-description : Learn how Xandr categorizes creatives by format, media type, and media subtype.
+description : Learn how Xandr categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives, media type defines the general display style of creatives, and media subtype defines the specific display style of creatives.
 ms.date : 11/21/2023
 
 ---
