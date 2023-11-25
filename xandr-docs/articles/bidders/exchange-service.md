@@ -5,15 +5,13 @@ ms.date: 10/28/2023
 
 ---
 
-# Bidders - Exchange Service
+# Bidders - Exchange service
 
 Exchanges are groups of sellers organized to allow for easier supply targeting.
 
 - This inventory will be targeted all at once. You can combine it with domain list targeting and member targeting.
-- As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all
-  members within it and any new members that join.
-- We took our premium publishers and put them all in one group, called " Supply". When you access and target inventory, you can target
-   Supply. This will target all those premium publishers for you.
+- As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all members within it and any new members that join.
+- We took our premium publishers and put them all in one group, called " Supply". When you access and target inventory, you can target Supply. This will target all those premium publishers for you.
   - You can find out more information about  Supply here: [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
 - Sellers that belong to Exchange 1,  Supply, can not be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
 
@@ -36,13 +34,13 @@ Today we have three exchanges:
 
 | Field | Type | Description |
 |--|--|--|
-| created_on | array | The timestamp when the exchange was created. |
-| description | array | Description of sellers that belong to the exchange. |
-| id | int | The ID of the exchange. Today, we only have 3 exchanges. |
-| last_activity | enum | The timestamp of last modification. |
-| members | array of objects | Array of members that belong to that exchange. |
-| name | int | The name of the exchange. |
-| restricted | boolean | Indicates if the members within the exchange can be individually targeted or blocked.<br>If true, the members within this exchange can not be individually included or excluded.<br>If false, the members within this exchange can be individually included or excluded. |
+| `created_on` | array | The timestamp when the exchange was created. |
+| `description` | array | Description of sellers that belong to the exchange. |
+| `id` | int | The ID of the exchange. Today, we only have 3 exchanges. |
+| `last_activity` | enum | The timestamp of last modification. |
+| `members` | array of objects | Array of members that belong to that exchange. |
+| `name` | int | The name of the exchange. |
+| `restricted` | boolean | Indicates if the members within the exchange can be individually targeted or blocked.<br>If true, the members within this exchange can not be individually included or excluded.<br>If false, the members within this exchange can be individually included or excluded. |
 
 ## Members object
 
@@ -50,8 +48,8 @@ The following table describes Member Object fields.
 
 | Field | Type | Description |
 |--|--|--|
-| id | int | ID of the member |
-| name | string | Name of the member |
+| `id` | int | ID of the member |
+| `name` | string | Name of the member |
 
 ## Examples
 
@@ -369,8 +367,8 @@ The following table describes Member Object fields.
 
 ## Related topics
 
-[Enhanced Bidder Profiles](enhanced-bidder-profiles.md)
-[Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
-[API Use Cases for Enhanced Bidder Profiles](api-use-cases-for-enhanced-bidder-profiles.md)
-[Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md)
-[Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md)
+- [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)
+- [Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
+- [API Use Cases for Enhanced Bidder Profiles](api-use-cases-for-enhanced-bidder-profiles.md)
+- [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md)
+- [Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md)

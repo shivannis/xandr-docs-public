@@ -39,4 +39,3 @@ We have compiled a list of frequently asked questions. Please choose from the ca
 - [User Data - FAQ](user-data---faq.md)
 - [Video Creative FAQ](video-creative-faq.md)
 - [Viewability FAQ](viewability-faq.md)
--

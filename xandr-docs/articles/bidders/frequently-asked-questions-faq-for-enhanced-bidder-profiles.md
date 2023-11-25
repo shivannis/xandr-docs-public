@@ -1,7 +1,7 @@
 ---
-title : Bidders - Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
-description : The article provides an overview of Frequently Asked Questions (FAQ) related to Enhanced Bidder Profiles.
-ms.date : 10/28/2023
+title: Bidders - Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
+description: The article provides an overview of Frequently Asked Questions (FAQ) related to Enhanced Bidder Profiles.
+ms.date: 10/28/2023
 ---
 
 # Bidders - frequently asked questions (FAQ) for enhanced bidder profiles

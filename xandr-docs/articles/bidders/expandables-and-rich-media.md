@@ -40,12 +40,12 @@ Expandables are implemented through a broader "media type" system in Xandr. This
 
 Media types and subtypes are in a two-tiered hierarchy:
 
-| Media Type | ID | Media Subtype | ID |
+| **Media Type** | **ID** | **Media Subtype** | **ID** |
 |--|--|--|--|
-| Banner | 1 | Standard Banner | 1 |
+| **Banner** | 1 | Standard Banner | 1 |
 |  |  | In-Banner Video | 3 |
-| Text | 5 | Text | 9 |
-| Expandable | 6 | Other Expandable | 10 |
+| **Text** | 5 | Text | 9 |
+| **Expandable** | 6 | Other Expandable | 10 |
 |  |  | MediaMind | 11 |
 |  |  | Pointroll | 12 |
 |  |  | EyeWonder | 13 |
@@ -57,11 +57,11 @@ Media types and subtypes are in a two-tiered hierarchy:
 |  |  | Spongecell | 19 |
 |  |  | Adrime | 20 |
 |  |  | Oggifinogi | 24 |
-| Skin | 8 | Hi-Media Skin | 32 |
+| **Skin** | 8 | Hi-Media Skin | 32 |
 |  |  | IAB | 48 |
 |  |  | Custom | 49 |
-| Image and Text | 10 | Outlook.com | 52 |
-| High Impact | 11 | ReactX Left/ Right | 53 |
+| **Image and Text** | 10 | Outlook.com | 52 |
+| **High Impact** | 11 | ReactX Left/ Right | 53 |
 |  |  | ReactX Top | 54 |
 |  |  | ReactX Bottom | 55 |
 |  |  | ReactX Custom | 56 |
@@ -72,15 +72,15 @@ Media types and subtypes are in a two-tiered hierarchy:
 |  |  | Slide-in | 61 |
 |  |  | Peel | 62 |
 |  |  | Custom | 63 |
-| Native | 12 | In-Feed Standard | 65 |
+| **Native** | 12 | In-Feed Standard | 65 |
 |  |  | Content Marketing | 66 |
-| Audio | 13 | 15-second | 67 |
+| **Audio** | 13 | 15-second | 67 |
 |  |  | 30-second | 68 |
 |  |  | Other | 69 |
 |  |  | Standard VAST | 70 |
-| VAST | 4 | DEPRECATED 15-second VAST | 7 |
-|  |  | DEPRECATED 30-second VAST | 8 |
-|  |  | DEPRECATED Other VAST | 23 |
+| **VAST** | 4 | **DEPRECATED** 15-second VAST | 7 |
+|  |  | **DEPRECATED** 30-second VAST | 8 |
+|  |  | **DEPRECATED** Other VAST | 23 |
 |  |  | Standard VAST | 64 |
 
 **Placements** may accept any combination of media types or subtypes. If they accept a media type, they accept all subtypes under the media type.
@@ -150,10 +150,12 @@ This field is **required** on expandable creatives.
 }
 ```
 
-- You are not required to set the template ID on standard creatives (non-expandable). Continue uploading those creatives as you did
-  before.
-- Traffic Skin creatives as a standard banner. We recommend using 1800 X 1000 dimensions.
-  - Use template ID **6** for HTML, and **5** for Javascript.
+> [!NOTE]
+>
+> - You are not required to set the template ID on standard creatives (non-expandable). Continue uploading those creatives as you did
+>   before.
+> - Traffic Skin creatives as a standard banner. We recommend using 1800 X 1000 dimensions.
+   >   - Use template ID **6** for HTML, and **5** for Javascript.
 
 **Template IDs**
 

@@ -6,12 +6,11 @@ ms.date: 10/28/2023
 
 # Bidders - editing a bidder's profile
 
-Once you have saved a profile, clicking into that specific profile from the table on the left on the Profiles screen opens the [Bidder Profile Targeting Options](bidder-profile-targeting-options.md) on the right for editing purposes.
-your edits and click Save.
+Once you have saved a profile, clicking into that specific profile from the table on the left on the Profiles screen opens the [Bidder Profile Targeting Options](bidder-profile-targeting-options.md) on the right for editing purposes. Make your edits and click **Save**.
 
 ## Related topics
 
-- [Bidder Platform User Interface](bidder-platform-user-interface.md)<a
+- [Bidder Platform User Interface](bidder-platform-user-interface.md)
 - [Profiles Screen](profiles-screen.md)
 - [Creating a New Bidder Profile](creating-a-new-bidder-profile.md)
 - [Additional Functions](additional-functions.md)
