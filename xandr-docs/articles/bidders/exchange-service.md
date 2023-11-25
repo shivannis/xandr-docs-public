@@ -1,6 +1,6 @@
 ---
-Title: Bidders - Exchange Service
-Description: The article discusses a exchange service for bidders.
+title: Bidders - Exchange Service
+description: The article discusses a exchange service for bidders.
 ms.date: 10/28/2023
 
 ---

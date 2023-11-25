@@ -39,8 +39,8 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
 
 ## JSON fields
 
-| Field | Type | Description |  |
-|--|--|--|--|
+| Field | Type | Description |
+|---|---|---|
 | `id` | int | The ID of the bidder profile. This is a read-only field. |  |
 | `bidder_id` | int | The ID of the bidder. This is a read-only field. |  |
 | `code` | string | The alternative identifier for the bidder profile, specific to the bidder. |  |
@@ -554,6 +554,6 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 - [Exchange Service](exchange-service.md)
 - [Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md)
 - [API Use Cases for Enhanced Bidder Profiles](api-use-cases-for-enhanced-bidder-profiles.md)
-- [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions--faq--for-enhanced-bidder-profiles.md)
+- [Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles](frequently-asked-questions-faq-for-enhanced-bidder-profiles.md)
 - [Changelog for Enhanced Bidder Profiles](changelog-for-enhanced-bidder-profiles.md)
 - [Bidder Profile Migration Guide](bidder-profile-migration-guide.md)

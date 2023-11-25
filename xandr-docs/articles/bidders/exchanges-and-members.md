@@ -1,6 +1,6 @@
 ---
-Title: Bidders - Exchanges and Members
-Description: The article defines the exchange service and corresponding members.
+title: Bidders - Exchanges and Members
+description: The article defines the exchange service and corresponding members.
 ms.date: 10/28/2023
 ---
 
