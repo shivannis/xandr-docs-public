@@ -25,12 +25,11 @@ Ask the DV360 buyer to confirm they have accepted the deal in the DV360 UI. We a
 
 The following details are shared with DV360 APIs:
 
-| |  |  |
+|  - Deal Name| - Deal Type | - Currency |
 |--|--|--|
-| - Deal Name | - Deal Type | - Currency |
-| - Buyer Seat ID | - Deal Auction Type |  - Floor Price/Ask Price |
-| - Seller Name | - Start Date | - Allowed Media Types (PG Deals ONLY) |
-| - Deal ID |  - End Date | - Allowed Creative Sizes (PG Deals ONLY) |
+| - **Buyer Seat ID** | - **Deal Auction Type** |  - **Floor Price/Ask Price** |
+| - **Seller Name** | - **Start Date** | - **Allowed Media Types (PG Deals ONLY)** |
+| - **Deal ID** |  - **End Date** | - **Allowed Creative Sizes (PG Deals ONLY)** |
 | |  |  |
 
 ### What will happen to existing DV360 deals that were created before enablement of deal sync?
