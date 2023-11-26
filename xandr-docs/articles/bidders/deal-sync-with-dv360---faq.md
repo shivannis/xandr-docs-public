@@ -25,11 +25,13 @@ Ask the DV360 buyer to confirm they have accepted the deal in the DV360 UI. We a
 
 The following details are shared with DV360 APIs:
 
-| - Deal Name | - Deal Type | - Currency |
+| |  |  |
 |--|--|--|
-| - **Buyer Seat ID** | - **Deal Auction Type** |  - **Floor Price/Ask Price** |
-| - **Seller Name** | - **Start Date** | - **Allowed Media Types (PG Deals ONLY)** |
-| - **Deal ID** |  - **End Date** | - **Allowed Creative Sizes (PG Deals ONLY)** |
+| - Deal Name | - Deal Type | - Currency |
+| - Buyer Seat ID | - Deal Auction Type |  - Floor Price/Ask Price |
+| - Seller Name | - Start Date | - Allowed Media Types (PG Deals ONLY) |
+| - Deal ID |  - End Date | - Allowed Creative Sizes (PG Deals ONLY) |
+| |  |  |
 
 ### What will happen to existing DV360 deals that were created before enablement of deal sync?
 
@@ -66,7 +68,7 @@ allow buyers to get more granular details about how to target a deal.
 
 Programmatic Guaranteed deals cannot be multi-media type. One media type must be declared in all PG deals with DV360.
 
-### If a DV360 buyer manually creates a deal first in DV360 UI using the deal ID, and then the deal with the same deal ID gets uploaded to DV360 via the deal sync process, how will DV360 systems handle it?
+### **If a DV360 buyer manually creates a deal first in DV360 UI using the deal ID, and then the deal with the same deal ID gets uploaded to DV360 via the deal sync process, how will DV360 systems handle it?**
 
 There are a few ways DV360 systems will react:
 

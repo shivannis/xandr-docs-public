@@ -43,7 +43,7 @@ Updates to newly created deals (post deal sync enablement) automatically get upl
 - Updates to existing deals will be will be uploaded up to 3 hours after updates are done (depending on when the last sync script ran).
 - Buyer acceptance statuses will take a few hours to properly sync.
 
-## What is changing?
+### What is changing?
 
 While there are no changes to how a publisher create deals in Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
 

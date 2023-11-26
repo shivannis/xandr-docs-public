@@ -28,17 +28,17 @@ inventory via other means, compete for the impression.
 > - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-## Examples for successful deal bids and non-deal bids
+## Examples (for successful deal bids and non-deal bids)
 
-### Deal bid wins
+**Deal bid wins**
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="The screenshot that provides an explanation of Deal Bid Wins":::
 
-### Non-deal bid wins - case 1
+**Case 1: non-deal bid wins**
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp.png" alt-text="The screenshot that provides the details of non-Deal Bid Wins":::
 
-### Non-deal bid wins - case 2
+**Case 2: non-deal bid wins**
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b.png" alt-text="The screenshot that provides an explanation of non-Deal Bid Wins":::
 
@@ -46,6 +46,7 @@ inventory via other means, compete for the impression.
 > **Why does this example have two floors? And why does the non-deal bid win?**
 >
 > In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
+>
 > The highest non-deal bid wins because:
 >
 > - The deal does not have a deal ask price, and
@@ -60,17 +61,17 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 - If a buyer targeting the deal submits a bid higher than the deal's ask  price and higher than any other private auction bids, that buyer wins the auction, paying the bid price.
 - If no private auction bids clear their ask prices, the highest bid in the open auction wins, paying the bid price.
 
-## Examples for deal bid wins in private auction
+## Examples (for deal bid wins in private auction)
 
-### Deal bid wins in private auction (no open auction held)
+**Deal bid wins in private auction (no open auction held)**
 
 :::image type="content" source="media/private-auction-deal-wins-fp.png" alt-text="The screenshot that explains the process of Private Auction Deal bid Wins when no open auctionsa are held":::
 
-### Higher priority deal bid wins in private auction (no open auction held)
+**Higher priority deal bid wins in private auction (no open auction held)**
 
 :::image type="content" source="media/private-auction-high-priority-wins-fp.png" alt-text="The screenshot that illustrates how higher priority deal bids secure wins in private auctions without open auctions.":::
 
-### Non-deal bid wins in open auction (no private auction winner)
+**Non-deal bid wins in open auction (no private auction winner)**
 
 :::image type="content" source="media/private-auction-non-deal-bid-wins-fp.png" alt-text="The screenshot that illustrates how higher priority deal bids secure wins in open auctions.":::
 
@@ -107,7 +108,7 @@ If you select a **Fixed Price** auction, you will need to enter an ask price. An
 
 Yield management biases will still be applied to deal bids, even if you have set a price for your deal.
 
-## Related Topic
+## Related topic
 
 - [Buying Deals](../monetize/buying-deals.md)
 - [Selling Deals](../monetize/selling-deals.md)

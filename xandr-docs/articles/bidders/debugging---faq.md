@@ -10,8 +10,7 @@ ms.date: 10/28/2023
 
 **How can I get stats on technical data like timeouts, no_connections, and so on?**
 
-This is available in the [https://bidder.xandr.com/login](Bidder UI) in the Metrics tab. Click edit and choose which metrics you would
-like graphed. Relevant metrics include No connections, Mapped user imps, Avg response time, Max response time, and Timeout %
+This is available in the [https://bidder.xandr.com/login](Bidder UI) in the Metrics tab. Click edit and choose which metrics you would like graphed. Relevant metrics include No connections, Mapped user imps, Avg response time, Max response time, and Timeout %.
 
 ## Traffic
 
