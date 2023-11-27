@@ -1,834 +1,108 @@
 ---
-Title : Incoming Bid Response from Bidders
-Description : <b>Warning:</b> This describes the integration
-ms.date : 10/28/2023
-of the <a
-href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
+title: Incoming Bid Response from Bidders
+description: This article explains the process of implementing and receiving the bid response from bidders.
+ms.date: 11/27/2023
 ---
 
+# Incoming bid response from bidders
 
-# Incoming Bid Response from Bidders
+> [!WARNING]
+> This describes the integration of the [OpenRTB 2.4 protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 
-
-
-
-
-<b>Warning:</b> This describes the integration
-of the <a
-href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
-class="xref" target="_blank">OpenRTB 2.4 protocol.</a>
-
-
-
-A bidder will send a bid response after it receives a <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Request</a> from the impression bus.
-The bid response will include the bidder's bid (`price`) and chosen
-creative (`creative_id` or `creative_code`). This creative will be
-served if the bid is ultimately accepted by the ad server. Multiple bids
-within the bid response are encouraged.
-
-
+A bidder will send a bid response after it receives a [Bid Request](./outgoing-bid-request-to-bidders.md) from the impression bus. The bid response will include the bidder's bid (`price`) and chosen creative (`creative_id` or `creative_code`). This creative will be served if the bid is ultimately accepted by the ad server. Multiple bids within the bid response are encouraged.
 
 ## Implementation
 
-Xandr expects all calls to return HTTP code 200 except for an empty bid
-response (no bid), which will return HTTP code 204. We currently support
-the following fields in the bid response object.
+Xandr expects all calls to return HTTP code 200 except for an empty bid response (no bid), which will return HTTP code 204. We currently support the following fields in the bid response object.
 
->
+### Bid response object
 
-**Bid Response Object**
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | string | **Required**: The ID of the bid request to which this is a response. |
+| `seatbid` | array of objects | **Required if a bid is made**: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
+|`bidid` | string | The bid response ID to assist tracking for bidders. This value is chosen by the bidder for cross-reference.<br><br> **Note**: This is used only to populate the macro `${AUCTION_BID_ID}`. We do not store this information. |
+| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, default is USD. Also used for the macro `${AUCTION_CURRENCY}` in the win notify URL and creative or pixel payload. |
 
-<table
-id="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__3"><strong>Required:</strong>
-The ID of the bid request to which this is a response.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__1"><code
-class="ph codeph">seatbid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__2">array
-of objects</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__3"><strong>Required
-if a bid is made:</strong> Used for identifying <code
-class="ph codeph">seatbid</code> objects. See <a
-href="incoming-bid-response-from-bidders.md#IncomingBidResponsefromBidders-SeatBidObject"
-class="xref" target="_blank">Seat Bid Object</a> for more
-information.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__1"><code
-class="ph codeph">bidid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__3"><div
-id="incoming-bid-response-from-bidders__p-6e2552f1-55c4-4055-b402-ddad02dc117c"
->
-The bid response ID to assist tracking for bidders. This value is chosen
-by the bidder for cross-reference.
-<div
-id="incoming-bid-response-from-bidders__note-9ba08042-ebd6-48ef-9391-41094c896446"
-class="note note_note">
-<b>Note:</b> This is used only to populate the
-macro <code class="ph codeph">${AUCTION_BID_ID</code>}. We do not store
-this information.
+### Seat bid object
 
-</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__1"><code
-class="ph codeph">cur</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-34c20029-5a78-4630-a2ec-9ab7600609c2__entry__3">The
-bid currency using ISO-4217 alphabetic codes. If omitted, default is
-<code class="ph codeph">USD</code>. Also used for the macro <code
-class="ph codeph">${AUCTION_CURRENCY</code>} in the win notify URL and
-creative or pixel payload.</td>
-</tr>
-</tbody>
-</table>
+Xandr supports the following fields in the `seatbid` object, each of which represents a different bidder seat and contains one or more individual bids.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `bid` | array of objects | **Required**: An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](./outgoing-bid-request-to-bidders.md).<br><br>**Note**: If supported by an exchange, one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
+| `seat` | string | **Required**: The ID of the member whose creative is chosen by the bidder and corresponds to the Xandr `member_id`. Also used to populate the `${AUCTION_SEAT_ID}` macro in the win notify URL and creative or pixel payload.<br><br>**Note**: <br> - For DSPs migrated to Buyer Seat ID bidding, they can use buyer IDs native to their own systems. These identifiers will be registered as Seat Codes in Xandr systems.<br> - This feature is currently in Closed Beta. If you are interested in participating, please reach out to your Xandr representative. |
 
+### Bid object
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | string | **Required**: The ID for the bid object; this is chosen by the bidder for tracking and debugging purposes. Useful when multiple bids are submitted for a single impression for a given seat. |
+| `impid` | string | **Required**: The ID of the impression object to which this bid applies. Should match the `id` field from the bid request's impression object. Can be used to populate the `${AUCTION_IMP_ID}` macro. |
+| `price` | float | `Required`: The bid price expressed in CPM. Also used to populate the `${AUCTION_PRICE}` macro.<br><br>If the `bid_payment_type` is not set to `"Impression"`, then price will be the eCPM price for the bid, and the `payment_type_price` will be used to populate the `${{AUCTION_PRICE} macro.PRICE}` macro.<br><br>**Note**: `bid_payment_type` is not enabled for all clients. Please reach out to your account representative for this feature.<br><br>**Warning**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
+| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](./creative-service.md). This ID references the actual ad to be served if the bid wins. Can be used to populate the $`{AUCTION_AD_ID}` macro. If both `adid` and `crid` are passed, `adid` takes precedence. |
+| `nurl` | string | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, which indicates that we won the auction. Responses will be sent server side. This occurs at the same time when we record the impression. The max length is 2000 characters with macros expanded.<br><br>The following macros are supported in the notify URL:<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the bid object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative<br>`${AN_PAYMENT_TYPE}` - ID of the payment type of bid specified in the `bid_payment_type` field of the bid response<br><br>**Note**: <br> - This macro is not enabled for all clients. Please reach out to your account representative for this feature.<br> - Only the macros in the preceding list can be used in the notify URL, no other macros are supported in the bid response. |
+| `lurl` | string | **Warning**: This feature is currently in closed beta testing and is not available to all bidder integrations. If you would like to use this field in the bid response, please reach out to your account representative or file a support ticket at [help.xandr.com](help.xandr.com).<br><br>Loss notice URL called by Xandr when a bid is known to have been lost. Substitution macros may be included. Responses will be sent server side.<br><br>The following macros are supported in the loss notice URL.<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_LOSS}` - Loss reason codes<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cu`r field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative.<br><br>For the full list of loss reason codes that are supported in the `${AUCTION_LOSS}` macro, see [Loss Reason Codes](./loss-reason-codes.md). |
+| `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
+| `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
+| `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
+| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
 
+### Bid response extension object
 
-**Seat Bid Object**
+Xandr supports a single object in the `ext` object to support platform-specific extensions.
 
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `appnexus` | object | Specifies the platform-specific extensions to the OpenRTB bid response. See [AppNexus Object](#appnexus-object). |
 
-Xandr supports the following fields in the `seatbid` object, each of
-which represents a different bidder seat and contains one or more
-individual bids.
-
-<table
-id="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__1"><code
-class="ph codeph">bid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__2">array
-of objects</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__3"><div
-id="incoming-bid-response-from-bidders__p-d37e3fa5-191e-4f14-b834-c46ba6e5e939"
->
-<strong>Required:</strong> An array of bid objects; each bid object
-relates to an Impression Object in the <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Request</a>.
-<div
-id="incoming-bid-response-from-bidders__note-bdb5ba64-36f2-47a1-bac5-82f6f0ddf1c5"
-class="note note_note">
-<b>Note:</b> If supported by an exchange, one
-Impression Object can have many bid objects. See <a
-href="incoming-bid-response-from-bidders.md#IncomingBidResponsefromBidders-BidObject"
-class="xref" target="_blank">Bid Object</a> for more information.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__1"><code
-class="ph codeph">seat</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d56d5da1-5e8d-47b2-8a6b-df499ae6e3ed__entry__3"><div
-id="incoming-bid-response-from-bidders__p-b5d8f095-383a-4de5-a4fa-e9d3650142b5"
->
-<strong>Required:</strong> The ID of the member whose creative is chosen
-by the bidder and corresponds to the Xandr <code
-class="ph codeph">member_id</code>. Also used to populate the <code
-class="ph codeph">${AUCTION_SEAT_ID</code>} macro in the win notify URL
-and creative or pixel payload.
-<div
-id="incoming-bid-response-from-bidders__note-e9ef3215-9201-426d-89f3-8670d21f3971"
-class="note note_note">
-<b>Note:</b> For DSPs migrated to Buyer Seat
-ID bidding, they can use buyer IDs native to their own systems. These
-identifiers will be registered as Seat Codes in Xandr systems.
-<p>This feature is currently in Closed Beta. If you are interested in
-participating, please reach out to your Xandr representative.</p>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
-
-**Bid Object**
-
-<table
-id="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"><strong>Required:</strong>
-The ID for the bid object; this is chosen by the bidder for tracking and
-debugging purposes. Useful when multiple bids are submitted for a single
-impression for a given seat.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">impid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"><strong>Required:</strong>
-The ID of the impression object to which this bid applies. Should match
-the <code class="ph codeph">id</code> field from the bid request's <code
-class="ph codeph">impression</code> object. Can be used to populate the
-<code class="ph codeph">${AUCTION_IMP_ID</code>} macro.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">price</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">float</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"><p><strong>Required:</strong>
-The bid price expressed in CPM. Also used to populate the <code
-class="ph codeph">${AUCTION_PRICE</code>} macro.</p>
-<div
-id="incoming-bid-response-from-bidders__p-9d270169-616f-4b42-a489-446ce68d19b2"
->
-If the <code class="ph codeph">bid_payment_type</code> is not set to
-"Impression", then price will be the eCPM price for the bid, and the
-<code class="ph codeph">payment_type_price</code> will be used to
-populate the <code class="ph codeph">${AUCTION_PRICE}</code>
-macro.PRICE} macro.
-<div
-id="incoming-bid-response-from-bidders__note-a6c53f39-a4d2-42ba-9938-d71ce6e5750b"
-class="note note_note">
-<b>Note:</b> bid_payment_type is not enabled
-for all clients. Please reach out to your account representative for
-this feature.
-
-<div
-id="incoming-bid-response-from-bidders__note-95aeb402-9e06-499f-bf74-288ca6eb0eab"
-class="note warning note_warning">
-<b>Warning:</b> Although this value is a
-float, OpenRTB strongly suggests using integer math for accounting to
-avoid rounding errors.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">adid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3">The
-Xandr creative ID, viewable via the API using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>. This ID references
-the actual ad to be served if the bid wins. Can be used to populate the
-<code class="ph codeph">${AUCTION_AD_ID</code>} macro. If both <code
-class="ph codeph">adid</code> and <code class="ph codeph">crid</code>
-are passed, <code class="ph codeph">adid</code> takes precedence.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">nurl</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"><p>The
-win notify URL, which is dropped as a pixel into the web browser or SDK.
-Our server pings this URL when it receives a client-side notification
-from the device, which indicates that we won the auction. Responses will
-be sent server side. This occurs at the same time when we record the
-impression. The max length is 2000 characters with macros expanded.</p>
-<p>The following macros are supported in the notify URL:</p>
-<ul>
-<li><code class="ph codeph">${AUCTION_ID}</code> - Xandr <code
-class="ph codeph">auction_id_64</code></li>
-<li><code class="ph codeph">${AUCTION_BID_ID}</code> - ID of the bid
-specified in the <code class="ph codeph">bidid</code> field in the bid
-response</li>
-<li><code class="ph codeph">${AUCTION_IMP_ID}</code> - ID of the
-impression, from the <code class="ph codeph">impid</code> field in the
-<code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_SEAT_ID}</code> - ID of the
-winning seat, from the <code class="ph codeph">seat</code> field in the
-<code class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_AD_ID}</code> - ID of the buyer's
-creative, from the <code class="ph codeph">adid</code> field in the
-<code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_PRICE}</code> - Clearing price of
-the impression in the currency specified in the <code
-class="ph codeph">cur</code> field in the bid response</li>
-<li><code class="ph codeph">${AUCTION_CURRENCY}</code> - Currency of the
-clearing price, as specified in the <code class="ph codeph">cur</code>
-field in the bid response</li>
-<li><code class="ph codeph">${CREATIVE_CODE}</code> - The <code
-class="ph codeph">code</code> field set on the creative object via the
-API when registering a creative</li>
-<li><p><code class="ph codeph">${AN_PAYMENT_TYPE}</code> - ID of the
-payment type of bid specified in the <code
-class="ph codeph">bid_payment_type</code> field of the bid
-response</p></li>
-</ul>
-<div
-id="incoming-bid-response-from-bidders__p-1a2e19f4-8375-4ba2-a835-f08fcb599a2e"
->
-<div
-id="incoming-bid-response-from-bidders__note-980c3a2b-4bd3-4b13-8cf0-5415677ce6dd"
-class="note note_note">
-<b>Note:</b> This macro is not enabled for all
-clients. Please reach out to your account representative for this
-feature.
-
-<div
-id="incoming-bid-response-from-bidders__note-cc46c35d-5171-445e-9fd9-b7037664b683"
-class="note note_note">
-<b>Note:</b> <em>Only</em> the macros in the
-preceding list can be used in the notify URL, no other macros are
-supported in the bid response.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">lurl</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3"><div
-id="incoming-bid-response-from-bidders__p-ad5d448c-4393-4974-93c5-7b3aee8b4562"
->
-<div
-id="incoming-bid-response-from-bidders__note-578691c7-2ad1-45f9-8983-a726edc0b8c5"
-class="note warning note_warning">
-<b>Warning:</b> This feature is currently in
-closed beta testing and is not available to all bidder integrations. If
-you would like to use this field in the bid response, please reach out
-to your account representative or file a support ticket at <a
-href="https://help.xandr.com/" class="xref"
-target="_blank">help.xandr.com</a>
-
-Loss notice URL called by Xandr when a bid is known to have been lost.
-Substitution macros may be included. Responses will be sent server side.
-
-<p>The following macros are supported in the loss notice URL.</p>
-<ul>
-<li><ul>
-<li><code class="ph codeph">${AUCTION_ID}</code> - Xandr <code
-class="ph codeph">auction_id_64</code></li>
-<li><code class="ph codeph">${AUCTION_BID_ID}</code> - ID of the bid
-specified in the <code class="ph codeph">bidid</code> field in the bid
-response</li>
-<li><code class="ph codeph">${AUCTION_IMP_ID}</code> - ID of the
-impression, from the <code class="ph codeph">impid</code> field in the
-<code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_SEAT_ID}</code> - ID of the
-winning seat, from the <code class="ph codeph">seat</code> field in the
-<code class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_AD_ID}</code> - ID of the buyer's
-creative, from the <code class="ph codeph">adid</code> field in the
-<code class="ph codeph">bid</code> object of the <code
-class="ph codeph">seatbid</code> object</li>
-<li><code class="ph codeph">${AUCTION_LOSS}</code> - Loss reason
-codes.</li>
-<li><code class="ph codeph">${AUCTION_CURRENCY}</code> - Currency of the
-clearing price, as specified in the <code class="ph codeph">cur</code>
-field in the bid response</li>
-<li><code class="ph codeph">${CREATIVE_CODE}</code> - The <code
-class="ph codeph">code</code> field set on the creative object via the
-API when registering a creative.</li>
-</ul></li>
-</ul>
-<p>For the full list of loss reason codes that are supported in the
-<code class="ph codeph">${AUCTION_LOSS}</code> macro, see <a
-href="loss-reason-codes.md" class="xref">Loss Reason
-Codes</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">crid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3">The
-creative ID from the bidder's system. Used to reference a Xander
-creative based on the creative code as set via the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> . If both <code
-class="ph codeph">adid</code> and <code class="ph codeph">crid</code>
-are passed, <code class="ph codeph">adid</code> takes precedence.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">cid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3">The
-campaign ID from the bidder's system. Used for SSP reporting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">dealid</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3">The
-deal ID from the deal object in the <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Request</a>, if this bid relates to a
-deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__1"><code
-class="ph codeph">ext</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__2">object</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-872a6233-f3ea-48f8-b3c3-2f80dcb3b5ba__entry__3">Used
-for identifying platform-specific extensions to the OpenRTB bid
-response. See <a
-href="incoming-bid-response-from-bidders.md#IncomingBidResponsefromBidders-BidResponseExtensionObject"
-class="xref" target="_blank">Bid Response Extension Object</a>.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Bid Response Extension Object**
-
->
-
-Xandr supports a single object in the `ext` object to support
-platform-specific extensions.
-
-<table
-id="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__1"><code
-class="ph codeph">appnexus</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__2">object</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-874484fc-10aa-4cf6-b42a-c9b2a13ff290__entry__3">Specifies
-the platform-specific extensions to the OpenRTB bid response. See <a
-href="incoming-bid-response-from-bidders.md#IncomingBidResponsefromBidders-AppNexusObject"
-class="xref" target="_blank">AppNexus Object</a>.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**AppNexus Object**
-
->
+### AppNexus object
 
 Xandr supports the following fields in the `appnexus` extension object.
 
-<table
-id="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-class="ph codeph">custom_macros</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">array
-of objects</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3">Used
-for identifying <code class="ph codeph">custom_macro</code> objects. See
-<a
-href="incoming-bid-response-from-bidders.md#IncomingBidResponsefromBidders-CustomMacroObject"
-class="xref" target="_blank">Custom Macro Object</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-class="ph codeph">min_price</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">float</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3">The
-minimum price to which the bid should be reduced in the second price
-auction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-class="ph codeph">spend_protection_pixel_ids</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">array
-of integers</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-class="ph codeph">custom_notify_data</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3"><div
-id="incoming-bid-response-from-bidders__p-9990a089-30d8-44d5-bdb4-ee9dd68b50d5"
+| Field | Type | Description |
+|:---|:---|:---|
+| `custom_macros` | array of objects | Used for identifying `custom_macro` objects. See [Custom Macro Object](#custom-macro-object). |
+| `min_price` | float | The minimum price to which the bid should be reduced in the second price auction. |
+| `spend_protection_pixel_ids` | array of integers | **Deprecated**. |
+| `custom_notify_data` | string | **Note**: This feature is not enabled by default. You must request to have this field enabled.<br><br>Use this field to pass information to the [Notify Request](./notify-request.md). The string is entered as freeform text and will be automatically URL- and/or cookie-encoded by ImpBus. |
+| `click_url` | string | The click URL to be associated with the creative. This field should contain a redirect link. For example, [https://mydomain.com/abcd?redir=](https://mydomain.com/abcd?redir=) |
+| `enable_bid_shading` | integer | **Note**: This field is in the process of being deprecated. It is set as **false** irrespective of the value sent in the bid response. |
+| `bid_payment_type` | array of objects | **Note**: This feature is not enabled by default. You must request to have this field enabled.<br><br>Specifies the payment type for which the Bidder is bidding and will be billed. If omitted, then we will consider the payment type to be `'impression'`. |
+
+### Custom macro object
+
+Xandr supports the following fields in the `custom_macro` object of the `appnexus` extension object.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `name` | string | The name of the macro to be replaced in any of the creative's URLs (media, pixel, click, and so on). The name must be formatted as `${MACRO_NAME}` within the creative's URL or content.<br><br>**Note**: The custom macros are replaced AFTER system macros have been replaced. Refer to the [Creative Service](./creative-service.md) for more information. |
+| `value` | string | The value used to replace the macro. Do not escape forward slashes. Even if the value is an integer, it must be placed within quotation marks (for example, `"42"`). The max length of the value is 550 characters. |
+
+### Bid payment type object
+
+Xandr supports the following fields in the `bid_payment_type` object of the `appnexus` extension object.
+
+> [!NOTE]
+> This feature is not enabled by default. You must request to have this field enabled.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `payment_type` | integer | Specifies the payment type for which the Bidder is bidding and will be billed. If the payment type is not `'impression'`, then a billing notify url must be set on the bid object. The currently supported values are -<br>`1`: Impression<br>`2`: Views - Standard Display<br>`6`: Views - Custom Display - 100pv1s<br>`8`: Views - Standard Video<br>`9`: Views - Custom Video - 100pv50pd<br><br>**Note**: Currently, for `"Viewable Impression"` bids, only USD bids are supported. |
+| `price` | double | Specifies the bid price for the payment type. For the `'Viewable Impression'` payment type, the bid price will be vCPM. |
+
+For more information, check the [Overview](./guaranteed-outcomes.md) page.
+
+> [!NOTE]
+> Why we don't support the adm field.
 >
-<div
-id="incoming-bid-response-from-bidders__note-f68e90d0-7659-4e18-b236-70cd47af2d24"
-class="note note_note">
-<b>Note:</b> This feature is not enabled by
-default. You must request to have this field enabled.
-
-
-<p>Use this field to pass information to the <a
-href="notify-request.md"
-class="xref" target="_blank">Notify Request</a>. The string is entered
-as freeform text and will be automatically URL- and/or cookie-encoded by
-ImpBus.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-id="incoming-bid-response-from-bidders__codeblock-b41e9cf6-0a6b-4a09-a181-9a9f31f59c69"
-class="ph codeph">click_url</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3">The
-click URL to be associated with the creative. This field should contain
-a redirect link. For example, <a href="https://mydomain.com/abcd?redir="
-class="xref" target="_blank"><code
-class="ph codeph">https://mydomain.com/abcd?redir=</code></a></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-id="incoming-bid-response-from-bidders__codeblock-15b76f5b-3743-4afc-80fd-36c1e4704d43"
-class="ph codeph">enable_bid_shading</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">integer</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3"><div
-id="incoming-bid-response-from-bidders__note-6f09eb41-3fc7-4432-a9f1-61a3fcfaef29"
-class="note note_note">
-<b>Note:</b> This field is in the process of
-being deprecated. It is set as <strong>false</strong> irrespective of
-the value sent in the bid response.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__1"><code
-id="incoming-bid-response-from-bidders__codeblock-e902bad2-290e-4263-8a51-d6d6b72399ff"
-class="ph codeph">bid_payment_type</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__2">array
-of objects</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-4f3e57e3-fc94-45b6-82b3-b9f95b0d6558__entry__3"><div
-id="incoming-bid-response-from-bidders__p-4afa6a4c-af5c-47fe-bb24-2f85e600fda1"
+> Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements (creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the [Creative Service](./creative-service.md).
 >
-<div
-id="incoming-bid-response-from-bidders__note-95da5581-9670-4361-b8d7-335e30c161b0"
-class="note note_note">
-<b>Note:</b> This feature is not enabled by
-default. You must request to have this field enabled.
+> For these reasons, Xandr does not support the `adm` field (which allows bidders to pass in the actual ad markup). Instead, we construct the ad markup using the provided `adid` and `nurl` for win notification.
 
-Specifies the payment type for which the Bidder is bidding and will be
-billed. If omitted, then we will consider the payment type to be
-'impression'.
-</td>
-</tr>
-</tbody>
-</table>
+## Example for bid response
 
-
-
-**Custom Macro Object**
-
->
-
-Xandr supports the following fields in the `custom_macro` object of the
-`appnexus` extension object.
-
-<table
-id="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__3"><div
-id="incoming-bid-response-from-bidders__p-71c6d5f9-8e12-43bc-b193-41f35848b950"
->
-The name of the macro to be replaced in any of the creative's URLs
-(media, pixel, click, and so on). The name must be formatted as <code
-class="ph codeph">${MACRO_NAME}</code> within the creative's URL or
-content.
-<div
-id="incoming-bid-response-from-bidders__note-3f0267b3-e25c-4c79-9948-113e10dfe953"
-class="note note_note">
-<b>Note:</b> The custom macros are replaced
-AFTER system macros have been replaced. Refer to the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> for more information.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__1"><code
-class="ph codeph">value</code></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__2">string</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-d6bbd168-8704-43e7-bc19-aa9081386aec__entry__3">The
-value used to replace the macro. Do not escape forward slashes. Even if
-the value is an integer, it must be placed within quotation marks (for
-example, <code class="ph codeph">"42"</code>). The max length of the
-value is 550 characters.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Bid Payment Type Object**
-
->
-
-Xandr supports the following fields in the `bid_payment_type` object of
-the `appnexus` extension object.
-
-
-
-<b>Note:</b> This feature is not enabled by
-default. You must request to have this field enabled.
-
-<table
-id="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__1"
-class="entry"><strong>Field</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__2"
-class="entry"><strong>Type</strong></th>
-<th
-id="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__3"
-class="entry"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__1"><pre
-id="incoming-bid-response-from-bidders__codeblock-996581ad-c2f8-45f6-92f7-1c40706d1917"
-class="pre codeblock"><code>payment_type</code></pre></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__2">integer</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__3"><p>Specifies
-the payment type for which the Bidder is bidding and will be billed. If
-the payment type is not 'impression', then a billing notify url must be
-set on the bid object. The currently supported values are -</p>
-<ul>
-<li>1: Impression</li>
-<li>2: Views - Standard Display</li>
-<li>6: Views - Custom Display - 100pv1s</li>
-<li>8: Views - Standard Video</li>
-<li>9: Views - Custom Video - 100pv50pd
-<div
-id="incoming-bid-response-from-bidders__note-5a5ce798-19e2-4771-8771-ae219c2af852"
-class="note note_note">
-<b>Note:</b> Currently, for "Viewable
-Impression" bids, only USD bids are supported.
-</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__1"><pre
-id="incoming-bid-response-from-bidders__codeblock-0838daba-3ee3-444f-9048-fd3e6f2bf8aa"
-class="pre codeblock"><code>price</code></pre></td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__2">double</td>
-<td class="entry"
-headers="incoming-bid-response-from-bidders__table-995088dd-705b-4ba5-947c-046a7db92fe3__entry__3">Specifies
-the bid price for the payment type. For the 'Viewable Impression'
-payment type, the bid price will be vCPM.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
-
-For more information, check the <a
-href="guaranteed-outcomes.md"
-class="xref" target="_blank">Overview</a> page
-
-
-
-<b>Note:</b> Why we don't support the adm
-field
-
-Xandr works with members who care deeply about brand and reputation. For
-this reason, we are careful to ensure that the advertisements
-(creatives) that pass through our system are acceptable to all parties.
-For quality assurance, all creatives that serve on third-party inventory
-must be pre-registered using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.
-
-For these reasons, Xandr does not support the `adm` field (which allows
-bidders to pass in the actual ad markup). Instead, we construct the ad
-markup using the provided `adid` and `nurl` for win notification.
-
-
-
-
-
->
-
-## **Example for Bid Response**
-
-``` pre
+```
 {
     "id": "4876290993254515176",
     "seatbid": [{
@@ -856,13 +130,9 @@ markup using the provided `adid` and `nurl` for win notification.
 }
 ```
 
+## Example for multi-bid response
 
-
->
-
-## **Example for Multi-Bid Response**
-
-``` pre
+```
 Multi-bid response for one seat value
 Option 1
 {
@@ -978,35 +248,18 @@ Multi-bid response for multiple seat values
 }
 ```
 
-
-
->
-
-## **Win Notification**
-
->
+## Win notification
 
 For more information, see the definition of the `nurl` field above.
 
+> [!NOTE]
+> In certain auction types, a lost or pending notification may be generated prior to the win notification. Win notifications are always authoritative and override any other notifications previously received for that auction.
 
+**Loss notification**
 
-<b>Note:</b> In certain auction types, a lost
-or pending notification may be generated prior to the win notification.
-Win notifications are always authoritative and override any other
-notifications previously received for that auction.
+If you opt for a loss notification, it will look something like this. The loss notification information appears at the end of the response.
 
-
-
-
-
-**Loss Notification**
-
->
-
-If you opt for a loss notification, it will look something like this.
-The loss notification information appears at the end of the response.
-
-``` pre
+```
 {
     "notify_request": {
         "timestamp": "2016-03-17 06: 52: 40 ",
@@ -1096,11 +349,3 @@ The loss notification information appears at the end of the response.
     }
 }
 ```
-
-
-
-
-
-
-
-
