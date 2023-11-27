@@ -12,8 +12,8 @@ This page contains extensive list of Interactive Advertising Bureau (IAB) conten
 > The specific version of the specs described here is a combination of IABv1 categorisation as well as codes from the [Digital Audio Ad Serving Template (DAAST)](https://iabtechlab.com/standards/digital-audio-ad-serving-template-daast/).
 >
 > **Spec References**:
->   - The complete list for IAB v1 specifications are listed [here](attachments/Content-Taxonomy-1.0.xlsx).
->   - The supplemental DAAST content categories are listed [here](attachments/DAASTAdCategories.xlsx).
+>   - The complete list for IAB v1 specifications are listed [here](https://download.microsoft.com/download/4/0/0/40099106-6f9f-4b38-8aac-0dc7567404db/Content-Taxonomy-1.0.xlsx).
+>   - The supplemental DAAST content categories are listed [here](https://download.microsoft.com/download/4/0/0/40099106-6f9f-4b38-8aac-0dc7567404db/DAASTAdCategories.xlsx).
 
 | Xandr Creative Category Name | Xandr Creative Category ID | Category String | Taxonomy | Tier 1 | Tier 2 |
 |:---|:---|:---|:---|:---|:---|
