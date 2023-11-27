@@ -1,241 +1,47 @@
 ---
-Title : Saved Report Service
-Description : The Saved Report service can be used to create new reports which are
-ms.date : 10/28/2023
-saved and can be retrieved at any time. They are useful for reports
+title: Bidders - Saved Report Service
+description: In this article, find information about the Saved Report Service and the fields associated with it along with examples.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Saved report service
 
-# Saved Report Service
+The Saved Report service can be used to create new reports which are saved and can be retrieved at any time. They are useful for reports which are executed frequently. The Saved Report Service acts as a wrapper around the [Report Service](../digital-platform-api/report-service.md).
 
-
-
-The Saved Report service can be used to create new reports which are
-saved and can be retrieved at any time. They are useful for reports
-which are executed frequently. The Saved Report Service acts as a
-wrapper around the <a
-href="xandr-api/report-service.md"
-class="xref" target="_blank">Report Service.</a>
-
-
-
-<b>Note:</b> There is a limit of 100K rows per
-report.
-
-
-
-
+> [!NOTE]
+> There is a limit of 100K rows per report.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006fbf__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00006fbf__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00006fbf__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__2"><a
-href="https://api.adnxs.com/saved-report" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/saved-report</a> </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__3">View
-all saved reports for your member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__2"><a
-href="https://api.adnxs.com/saved-report/ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/saved-report/ID</a> </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__3">View
-a specific saved report.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__2"><a
-href="https://api.adnxs.com/saved-report" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/saved-report</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__3">Add
-a new saved report.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__2"><a
-href="https://api.adnxs.com/saved-report/ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/saved-report/ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__3">Modify an existing saved report.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__2"><a
-href="https://api.adnxs.com/saved-report/ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/saved-report/ID</a> </td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__3">Delete an existing saved report.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| DELETE | `https://api.adnxs.com/saved-report/ID`  | Delete an existing saved report. |
+| GET | `https://api.adnxs.com/saved-report`  | View all saved reports for your member. |
+| GET | `https://api.adnxs.com/saved-report/ID`  | View a specific saved report. |
+| POST | `https://api.adnxs.com/saved-report` | Add a new saved report. |
+| PUT | `https://api.adnxs.com/saved-report/ID` | Modify an existing saved report. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00006fbf__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00006fbf__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00006fbf__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">category</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-category of the report.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-date and time on which the saved report was created.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">emails</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-list of emails to send the report. The array should be in the format
-["email_address1@<a href="http://domain.com" class="xref"
-target="_blank">domain.com</a>", "email_address2@<a
-href="http://domain.com" class="xref" target="_blank">domain.com</a>",
-...]</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">entity_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-entity ID of the user creating the report. This sets the scope of the
-report.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">expires_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-date and time on which a saved report expires. This is currently limited
-to one year in the future. The date/time should be specified in the
-format "YYYY-MM-DD HH:MM:SS" where the time is specified in 24-hour
-format.
-<p><strong>Required On:</strong> <strong></strong> POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">format</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-format in which the report results will be saved. Possible values:
-"excel" or "csv".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-internal ID associated with the saved report.
-<p><strong>Required On:</strong> PUT</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-date and time on which the saved report was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-name of the report which is display in . The
-maximum length is 100 characters.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">report</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__21">Report defined in the same format as
-used in the <a
-href="xandr-api/report-service.md"
-class="xref" target="_blank">Report Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__19"><code
-class="ph codeph">scheduling</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00006fbf__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00006fbf__entry__21">The
-frequency with which the report is executed. Possible values: "daily",
-"weekly", or "monthly".</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `category` | string | The category of the report. |
+| `created_on` | string | The date and time on which the saved report was created. |
+| `emails` | array | The list of emails to send the report. The array should be in the format [`"email_address1@domain.com"`, `"email_address2@domain.com"`, ...] |
+| `entity_id` | int | The entity ID of the user creating the report. This sets the scope of the report. |
+| `expires_on` | string | The date and time on which a saved report expires. This is currently limited to one year in the future. The date/time should be specified in the format "YYYY-MM-DD HH:MM:SS" where the time is specified in 24-hour format. <br> **Required On**: POST |
+| `format` | enum | The format in which the report results will be saved. <br> Possible values: "excel" or "csv". |
+| `id` | int | The internal ID associated with the saved report. <br> **Required On**: PUT |
+| `last_activity` | string | The date and time on which the saved report was last modified. |
+| `name` | string | The name of the report which is display in . The maximum length is 100 characters. |
+| `report` | object | Report defined in the same format as used in the [Report Service](../digital-platform-api/report-service.md). |
+| `scheduling` | enum | The frequency with which the report is executed. Possible values: "daily", "weekly", or "monthly". |
 
 ## Examples
 
-**Adding a new saved report for a publisher**
+### Adding a new saved report for a publisher
 
-``` pre
+```
     {
     "saved-report": {
         "name": "Seller Platform Billing Report 48 Hours JMS",
@@ -302,9 +108,9 @@ $ curl -b cookies -c cookies -X POST -d @saved-report.json 'https://api.adnxs.co
 }
 ```
 
-**Executing and retrieving a saved report**
+### Executing and retrieving a saved report
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST 'https://api.adnxs.com/report?saved_report_id=826' 
 {
     "response":{
@@ -349,9 +155,9 @@ $ curl -b cookies -c cookies "https://api.adnxs.com/report?id=fa16873114e1d56970
 $ curl -b cookies -c cookies -s "https://api.adnxs.com/report-download?id=fa16873114e1d5697091069e45bccec0" > report.csv
 ```
 
-**Updating an Existing Report**
+### Updating an existing report
 
-``` pre
+```
 $ cat add-columns-saved-report.json
 {
     "saved_report": {
@@ -420,28 +226,13 @@ $ curl -b cookies -c cookies -X PUT -d @add-column-saved-report.json 'https://ap
 }
 ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a href="report-service.md" class="xref">Report Service</a>
-- <a href="completed-creative-audits-report.md" class="xref">Completed
-  Creative Audits Report</a>
-- <a href="bidder-platform-buyer-report.md" class="xref">Bidder Platform
-  Buyer Report</a>
-- <a href="bidder-billing-report-api.md" class="xref">Bidder Billing
-  Report API</a>
-- <a href="platform-seller-report.md" class="xref">Platform Seller
-  Report</a>
-- <a href="seller-platform-billing-report.md" class="xref">Seller
-  Platform Billing Report</a>
-- <a href="inventory-availability-reporting.md" class="xref">Inventory
-  Availability Reporting</a>
-- <a href="reporting-timezones.md" class="xref">Reporting Timezones</a>
-
-
-
-
-
-
+- [Report Service](../digital-platform-api/report-service.md)
+- [Completed Creative Audits Report](completed-creative-audits-report.md)
+- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
+- [Bidder Billing Report API](bidder-billing-report-api.md)
+- [Platform Seller Report](platform-seller-report.md)
+- [Seller Platform Billing Report](seller-platform-billing-report.md)
+- [Inventory Availability Reporting](inventory-availability-report.md)
+- [Reporting Timezones](reporting-timezones.md)
