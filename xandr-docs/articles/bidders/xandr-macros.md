@@ -1,6 +1,6 @@
 ---
 title: Bidders - Xandr Macros
-description: The article emplains the macros that are used to populate URLs with useful information.
+description: The article emplains the macros which are used to populate URLs with useful information.
 ms.date: 10/28/2023
 ---
 
