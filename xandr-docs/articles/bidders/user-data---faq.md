@@ -39,7 +39,7 @@ This is a multi-step process:
 
 **How do I add a user to a segment?**
 
-Xandr users can be added to segments using a [Segment Pixel](monetize_monetize-standard/working-with-segments.md). The segment can be created through the UI [https://bidder.adnxs.net](https://bidder.adnxs.net) in the Segments tab. You must create a segment before adding users via the segment pixel. When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
+Xandr users can be added to segments using a [Segment Pixel](../monetize/working-with-segments.md). The segment can be created through the UI [https://bidder.adnxs.net](https://bidder.adnxs.net) in the Segments tab. You must create a segment before adding users via the segment pixel. When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
 
 To add users to a segment or several segments, a segment pixel must be fired and must identify all the segments to which that user will be added. For example:
 
@@ -51,7 +51,7 @@ This will add a user to segments 101, 102 and 104. The example below will add a 
 
 **How do I remove a user from a segment?**
 
-Xandr users can be removed from segments using a [Segment Pixel](monetize/working-with-segments.md). When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
+Xandr users can be removed from segments using a [Segment Pixel](../monetize/working-with-segments.md). When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
 
 To remove users from a segment or several segments, a segment pixel must be fired and must identify all the segments from which that user will be removed. For example:
 

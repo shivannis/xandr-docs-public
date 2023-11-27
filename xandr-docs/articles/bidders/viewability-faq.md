@@ -2,7 +2,6 @@
 title: Bidders - Viewability FAQ
 description: The article answers frequently asked questions you have about viewability.
 ms.date: 10/28/2023
-viewability.
 ---
 
 # Bidders - Viewability FAQ
@@ -171,5 +170,5 @@ It could be any of the following:
 ## Related topics
 
 - [IAB standards for viewability](http://www.iab.net/viewability)
-- [Introduction to Viewability](monetize_monetize-standard/introduction-to-viewability.md)
+- [Introduction to Viewability](../monetize/introduction-to-viewability.md)
   

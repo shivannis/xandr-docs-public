@@ -2,7 +2,6 @@
 title: Bidders - Xandr Macros
 description: The article emplains the macros that are used to populate URLs with useful information.
 ms.date: 10/28/2023
-useful information.  They are essentially variables that are expanded by
 ---
 
 # Bidders - Xandr macros
@@ -14,7 +13,7 @@ This page contains information about all of the macros we support.  For each ma
 > [!TIP]
 > For more control over URL encoding and decoding, see the section on [Function Macros](xandr-macros.md#XandrMacros-FunctionMacros).
 >
->For additional examples about how macros may be > used when uploading creatives, refer to the 
+> For additional examples about how macros may be > used when uploading creatives, refer to the 
 > [Creative Service](creative-service.md) page.
 
 ## Creative macros
@@ -25,7 +24,7 @@ This page contains information about all of the macros we support.  For each ma
 Xandr supports the following creative macros when adding creatives using the [Creative Service](creative-service.md).
 
 | Macro | Description |
-|--|--|
+|---|---|
 | `${CLICK_URL}` | The click tracking URL. |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third party adservers) |
 | `${AUCTION_ID}` | The 64-bit character string representing the individual auction that led to the impression. |

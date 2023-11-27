@@ -1,8 +1,7 @@
 ---
-title: Bidders -     Xandr Bidder Release Notes
+title: Bidders - Xandr Bidder Release Notes
 description: The article provides information about Xandr's product releases, updates, and deprecations.
 ms.date: 10/28/2023
-
 ---
 
 # Bidders - Xandr Bidder Release Notes
@@ -11,7 +10,7 @@ The following table lists Xandr product releases, updates, and deprecations. Dat
 
 | Release Date | Status | Feature | Product Theme | More Info |
 |---|---|---|---|---|
-| 2022-04-21 | Upcoming | Effective June 20, 2022, the Impression Bus API (along with the Digital Platform API) will only permit HTTPS (secured and encrypted) connections. After that date, **HTTP (unsecured and unencrypted) connections will not be accepted and will fail**. You must ensure that you are not using unsecured and unencrypted HTTP across your organization | Security | [Breaking Change Notice - April 21, 2022 - HTTPS Required](breaking-change-notice---april-21--2022---https-required.md) |
+| 2022-04-21 | Upcoming | Effective June 20, 2022, the Impression Bus API (along with the Digital Platform API) will only permit HTTPS (secured and encrypted) connections. After that date, **HTTP (unsecured and unencrypted) connections will not be accepted and will fail**. You must ensure that you are not using unsecured and unencrypted HTTP across your organization | Security | [Breaking Change Notice - April 21, 2022 - HTTPS Required](breaking-changes.md) |
 | 2022-01-27 | Released | Xandr has released support for OMID in Native 1.2 according to the [OpenRTB OM SDK Spec](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/OpenRTB%20support%20for%20OMSDK.md). Xandr now supports OMID for video, display, and Native 1.2  | OpenRTB, Native, Mobile | [Outgoing Bid Request to Bidders](outgoing-bid-request-to-bidders.md) |
 | 2021-11-04 | Released | Xandr has added support for video.linearity within the video object of bid requests in accordance with the OpenRTB specification.<br>1: Linear / In-Stream<br>2: Non-Linear / Overlay | OpenRTB | [Outgoing Bid Request to Bidders#VideoObject](outgoing-bid-request-to-bidders.md#outgoing-bid-request-to-bidders) |
 | 2021-10-14 | Released | Xandr now supports inventorypartnerdomain in ext objects of app and sit in accordance iab ads.txt specification 1.0.3<br>App.ext.inventorypartnerdomain<br>Site.ext.inventorypartnerdomain | OpenRTB | Iab spec including inventorypartnerdomain update: [https://iabtechlab.com/wp-content/uploads/2021/03/ads.txt-1.0.3.pdf] |

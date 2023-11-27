@@ -49,7 +49,7 @@ seeing this error, the duration format may be invalid. Durations must have forma
 
 :::image type="content" source="media/valid-duration.png" alt-text="The screenshot that demonstrates the steps for addressing missing or invalid duration information in a video creative, advising users to contact their third-party ad server to either add the necessary duration details or adjust the format.":::
 
-No recommended video formats detected
+### No recommended video formats detected
 
 **Cause**: The MediaFile information for the video creative contains none of the recommended video formats. At least one video format must be present for the creative to save.
 
@@ -57,7 +57,7 @@ No recommended video formats detected
 
 :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
 
-Sample XML with recommended VPAID formats:
+### Sample XML with recommended VPAID formats:
 
 :::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
 
@@ -83,7 +83,7 @@ type. VPAID 2.0 supports HTML5 (media type application/JavaScript) which allows
 
 **Corrective action:** Reach out to your third-party ad server to update the creative with the recommended video formats.
 
-For sample XML snippets with the recommended formats, see the [No recommended video formats detected](vast-check.md#VASTCheck-Norecommendedformatsdetected).
+For sample XML snippets with the recommended formats, see the [No recommended video formats detected](vast-check.md#no-recommended-video-formats-detected).
   
 **\<Wrapper\> element(s) detected**
 
@@ -97,7 +97,7 @@ For sample XML snippets with the recommended formats, see the [No recommended vi
 
 Excerpt of a VAST document with a `<Wrapper>` element pointing to an \<InLine\> tag:
 
-:::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained "Wrapper" elements in VAST documents.":::
+:::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
 
 **Unable to Run VAST Check**
 
