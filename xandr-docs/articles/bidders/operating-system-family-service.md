@@ -1,135 +1,37 @@
 ---
-Title : Operating System Family Service
-Description : This read-only service lets you see what operating systems (Android,
-ms.date : 10/28/2023
-Apple iOS, Microsoft Windows, etc.) are registered in the
+title: Bidders - Operating System Family Service
+description: In this article, learn about bidders operating system family service, their JSON fields, and REST API with a detailed set of examples.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Operating system family service
 
-# Operating System Family Service
+This read-only service lets you see what operating systems (Android, Apple iOS, Microsoft Windows, etc.) are registered in the Xandr system. You can use this service to retrieve operating system family IDs for targeting in [Profiles](../digital-platform-api/profile-service.md).
 
-
-
-This read-only service lets you see what operating systems (Android,
-Apple iOS, Microsoft Windows, etc.) are registered in the
-Xandr system. You can use this service to
-retrieve operating system family IDs for targeting in <a
-href="xandr-api/profile-service.md"
-class="xref" target="_blank">Profiles</a>.
-
-
-
-<b>Tip:</b> To see the specific **versions**
-of operating systems (Android 3x, Apple iOS 6, etc.) that you can
-target, use the <a
-href="xandr-api/operating-system-extended-service.md"
-class="xref" target="_blank">Operating System Extended Service</a>.
-
-
-
-
+> [!TIP]
+> To see the specific **versions** of operating systems (Android 3x, Apple iOS 6, etc.) that you can target, use the [Operating System Extended Service](../digital-platform-api/operating-system-extended-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008a37__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00008a37__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00008a37__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__2">https://api.<span
-class="ph">adnxs.com/operating-system-family</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__3">View
-all operating system families</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__2">https://api.<span
-class="ph">adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__3">View
-a specific operating system family</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__2">https://api.<span
-class="ph">adnxs.com/operating-system-family/meta</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| GET | https://api.adnxs.com/operating-system-family | View all operating system families. |
+| GET | https://api.adnxs.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID | View a specific operating system family. |
+| GET | https://api.adnxs.com/operating-system-family/meta | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008a37__entry__13"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008a37__entry__14"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008a37__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__13"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__15">The
-ID of the operating system family.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__13"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__14">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__15">The
-date and time when the operating system family entry was last
-modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__13"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008a37__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008a37__entry__15">The
-name of the operating system family, e.g., "Android", "Apple iOS",
-"Apple Mac/OSX", etc.</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the operating system family. |
+| `last_modified` | timestamp | The date and time when the operating system family entry was last modified. |
+| `name` | string | The name of the operating system family, e.g., "Android", "Apple iOS", "Apple Mac/OSX", etc. |
 
 ## Examples
 
-**View all operating system families**
+### View all operating system families
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family'
  
 {
@@ -192,9 +94,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family'
 }
 ```
 
-**View a specific operating system family**
+### View a specific operating system family
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family?id=4'
  
 {
@@ -215,17 +117,6 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/operating-system-family?id=4
 }
 ```
 
+## Related topic
 
-
-
-## Related Topics
-
-- <a
-  href="legacy-bidder-profile-service.md"
-  class="xref" target="_blank">Legacy Bidder Profile Service</a>
-
-
-
-
-
-
+[Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
