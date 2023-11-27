@@ -302,17 +302,17 @@
       href: curate-sample-bid-requests.md
 - name: Viewability
   items:
-  - name: Introduction to Viewability
+  - name: Overview
     href: introduction-to-viewability.md
-  - name: Reporting on Viewability
+  - name: Reporting
     href: reporting-on-viewability.md
   - name: vCPM Payment Type
     href: vcpm-payment-type.md
   - name: Measurement of Video Viewability using VPAID Wrapper
     href: video-viewability.md
-  - name: Ad Viewability - Description of Methodology (DOM)
+  - name: Description of Methodology (DOM)
     href: ad-viewability-description-of-methodology-dom.md
-  - name: Viewability FAQ
+  - name: FAQ
     href: viewability-faq.md
 - name: Reporting Guide
   items:
