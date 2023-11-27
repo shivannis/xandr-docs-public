@@ -31,7 +31,7 @@ There are two auction types: impression (at) and deal (pmp.deal.at). There are t
 
 Most bid requests will have auction type = 1 (`"at": 1`). For example:
 
-``` pre
+``` 
 {
     "id": "43212345678987",
     "at": 1,

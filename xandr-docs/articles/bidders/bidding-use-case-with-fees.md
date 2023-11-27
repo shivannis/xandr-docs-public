@@ -21,7 +21,7 @@ In this example, there are two fees:
 
 1. Internet user Mark Smith visits doctorwhofans.com.
 
-1. A TinyTag on the this page tells Mark's browser to ping Xandr's impression bus.
+1. A TinyTag on the page tells Mark's browser to ping Xandr's impression bus.
 
 ## Stage 2: Owner phase
 
@@ -29,8 +29,7 @@ In this example, there are two fees:
 
     > [!NOTE]
     > **Why would a seller work with a bidder?**  
-    > Buyers, sellers, networks, and other entities can overlap each other; perhaps in this case the owner is also a buyer. Or perhaps the owner
-    > chose to work with a bidder to enhance the features of Xandr's platform. For example, when a seller is associated with a bidder, they get pinged first before a general Bid Request goes out to all bidders. Sellers can then set a reserve price dynamically, when they have more data about the user.
+    > Buyers, sellers, networks, and other entities can overlap each other; perhaps in this case the owner is also a buyer. Or perhaps the owner chose to work with a bidder to enhance the features of Xandr's platform. For example, when a seller is associated with a bidder, they get pinged first before a general Bid Request goes out to all bidders. Sellers can then set a reserve price dynamically, when they have more data about the user.
 
 1. The impression bus makes a Bid Request to Bidder 14 only. Bidder 14 receives third-party data within the Bid Request, and according to
 preset logic decides to set the reserve price to $2 via the Bid Response.

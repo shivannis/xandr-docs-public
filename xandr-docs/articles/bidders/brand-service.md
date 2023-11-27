@@ -36,7 +36,7 @@ to obtain the ID assigned to a certain brand. This ID is used as an optional inp
 
 ### View all brands (below output is truncated)
 
-``` pre
+``` 
 curl -b cookies -c cookies "https://api.adnxs.com/brand"
 {
    "response":{

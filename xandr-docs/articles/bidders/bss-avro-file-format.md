@@ -44,13 +44,13 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 | `Device ID` | Similar utility as ifa (Identifier for Advertising). It indicates the Mobile device type being onboarded. The device_id record consists of two fields:<br> - domain (enum): Possible values are idfa, sha1udid, md5udid, openudid, aaid, windowsadid, rida, tifa, vida, and lgudid.<br> - id (string) |
 | `Identifier for Advertising (or IFA)` | Identifier for Advertising - indicates the device type being onboarded. The ifa record consists of two fields:<br> - **type** (string): Type of ID.<br> - **id** (string): IFA ID, representing the IFA in UUID format.<br><br>For supported ifa types, see [device extension object](outgoing-bid-request-to-bidders.md).  |
 | `External ID` | External ID - indicates Member defined identifier being onboarded. The external_id record consists of two fields:<br> - **member_id** (int): Member ID of the member who owns the external_id.<br> - **id** (string): corresponding value of the member_id. |
-| `Extended ID's(eid) or Publisher-provided ID's(PPID)` | Extended ID - indicates the type of universal ID or publisher ID being onboarded. The eid record consists of two fields:<br> - **source** (string): Source of the ID. Permitted values are , and permissioned member-defined sources.<br> - **id** (string) - Publisher or industry ID.<br><br>Today these are the only two available for audience onboarding. |
+| `Extended ID's(eid) or Publisher-provided ID's(PPID)` | Extended ID - indicates the type of universal ID or publisher ID being onboarded. The eid record consists of two fields:<br> - **source** (string): Source of the ID.<br> - **id** (string) - Publisher or industry ID.<br><br>Today these are the only two available for audience onboarding. |
 
 #### Java library example
 
 **`AppNexus/Xandr User ID (ANID)`**
 
-``` pre
+``` 
 
 {"uid":
 {"long":12345},
@@ -66,7 +66,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Device ID`**
 
-``` pre
+``` 
 
 {"uid":
 {"device_id":
@@ -84,7 +84,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Identifier for Advertising (or IFA)`**
 
-``` pre
+``` 
 
 {"uid":
 {"ifa":
@@ -102,7 +102,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`External ID`**
 
-``` pre
+``` 
 
 {"uid":
 {"external_id":
@@ -120,7 +120,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Extended ID's(eid) or Publisher-provided ID's(PPID)`**
 
-``` pre
+``` 
 
 {"uid":
 {"eid":
@@ -140,7 +140,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`AppNexus/Xandr User ID (ANID)`**
 
-``` pre
+``` 
 {'uid': 64,
 'segments':
 [seg1]}
@@ -148,7 +148,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Device ID`**
 
-``` pre
+``` 
 
 {'uid': {'id': 
 'qweqeqweq', 
@@ -159,7 +159,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Identifier for Advertising (or IFA)`**
 
-``` pre
+``` 
 
 {'uid': {'id': 
 'qweqeqweq', 'type': 
@@ -170,7 +170,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`External ID`**
 
-``` pre
+``` 
 
 {'uid': {'id': 
 'extid1', 
@@ -181,7 +181,7 @@ Only one id type can be uploaded per uid record (e.g. Xandr User ID, IFA, Device
 
 **`Extended ID's(eid) or Publisher-provided ID's(PPID)`**
 
-``` pre
+``` 
 
 {'uid': {'id': 
 'qweqeqweq', 
@@ -208,19 +208,19 @@ You can upload to multiple segments within the same uid record by creating an ar
 
 - Java library
 
-``` pre
+``` 
 Curl -o http://archive.apache.org/dist/avro/avro-1.10.1/java/avro-tools-1.10.1.jar
 ```
 
 - Python library
 
-``` pre
+``` 
 python3 -m pip install avro
 ```
 
 ## Download the Xandr Avro schema
 
-You can download the Xandr Avro Schema from [here](https://xandr-be-prod.zoominsoftware.io/bundle/xandr-bidders/page/attachments/xandr_schema.avsc).
+You can download the Xandr Avro Schema from [here](https://download.microsoft.com/download/4/0/0/40099106-6f9f-4b38-8aac-0dc7567404db/xandr_schema.avsc).
 
 ## Generate your AVRO audience file
 
@@ -230,7 +230,7 @@ For examples using the Java and Python libraries, see below.
 
 #### Create an audience file
 
-``` pre
+``` 
 {"uid":{"long":12345},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
 {"uid":{"external_id":{"id":"clientid1","member_id":958}},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
 {"uid":{"ifa":{"id":"99136473264876328","type":"atif"}},"segments":[{"id":123,"code":"","member_id":0,"expiration":0,"timestamp":0,"value":0}]}
@@ -242,7 +242,7 @@ For examples using the Java and Python libraries, see below.
 
 Run the following command:
 
-``` pre
+``` 
 java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_schema.avsc sample.json > sample.avro  
 ```
 
@@ -267,7 +267,7 @@ java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_sch
 
 ##### Sample script using the Python Avro library
 
-``` pre
+``` 
 import avro.schema
 from avro.datafile import DataFileReader, DataFileWriter
 from avro.io import DatumReader, DatumWriter

@@ -87,7 +87,7 @@ Authentication is always the first step when using the API Services. The authent
 
 If Xandr has already added your bidder for you, you will already have some bidder information, like your bidder ID, in JSON format. You can view this information with the below command.
 
-``` pre
+``` 
 S curl -b cookies -c cookies "https://api.adnxs.com/bidder"
 {
    "response":{
@@ -118,7 +118,7 @@ Now that you know your bidder ID, you can use a text file in JSON format to modi
 > [!NOTE]
 > These included fields will be updated. All other fields will be unchanged.
 
-``` pre
+``` 
 $ cat bidder
 {
       "bidder":{
@@ -130,7 +130,7 @@ $ cat bidder
 
 Then you use the PUT command to update this data in the impression bus cache.
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X PUT --data-binary @bidder 'https://api.adnxs.com/bidder/4'
 {
    "response":{
@@ -142,7 +142,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder 'https://api.adnxs.com
 
 Now when you view Bidder 4, you get:
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder/4'
 {
    "response":{
