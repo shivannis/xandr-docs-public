@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Please use the guide below in determining which template to use for your creative.
 
 > [!TIP]
-> A creative's `media_url` / `content` value is plugged into the creative template to form the code that is delivered to the user's browser. Therefore, it is essential to choose the appropriate template ID when submitting a creative. For more information about creatives, see [Creative Service](creative-service.md)
+> A creative's `media_url` / `content` value is plugged into the creative template to form the code that is delivered to the user's browser. Therefore, it is essential to choose the appropriate template ID when submitting a creative. For more information about creatives, see [Creative Service](creative-service.md).
 > [!NOTE]
 > For more information about creative templates (and template IDs), see the [Creative Template Service](creative-template-service.md).
 
