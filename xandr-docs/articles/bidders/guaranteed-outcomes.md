@@ -4,7 +4,7 @@ description: This article describes how an auction works when a buyer submits an
 ms.date: 11/23/2023
 ---
 
-# Bidders - Guaranteed Outcomes  
+# Bidders - Guaranteed Outcomes
 
 With Guaranteed Outcomes, buyers can achieve maximum reach while paying for media in a way that makes sense for their business, and sellers benefit from increased demand in the auction without having to manage the risk of impressions that don’t achieve the buyer’s desired outcome. Guaranteed Outcomes (formerly Guaranteed Views) is a feature of Xandr's Exchange, designed to reduce friction in the programmatic marketplace by enabling buyers to purchase 100% of their media with the assurance that it will be viewed completely.
 
@@ -44,7 +44,7 @@ This topic describes how an auction works when a buyer submits an outcome-based 
 
 ### Ad call
 
-When an ad call is received, the Exchange first predicts the likelihood that the impression will yield the desired outcome. If a prediction cannot be determined, the impression is ineligible for outcome-based bids. There may be other reasons outcome-based bids aren't supported. For example, monitoring may indicate that the prediction for the given placement is inaccurate, which may lead the placement to be marked ineligible. In addition, outcome-based bids are not accepted when clearing directly with the seller. For more information on pre-bid outcome predictions, see [Outcome Prediction](#outcome-prediction)
+When an ad call is received, the Exchange first predicts the likelihood that the impression will yield the desired outcome. If a prediction cannot be determined, the impression is ineligible for outcome-based bids. There may be other reasons outcome-based bids aren't supported. For example, monitoring may indicate that the prediction for the given placement is inaccurate, which may lead the placement to be marked ineligible. In addition, outcome-based bids are not accepted when clearing directly with the seller. For more information on pre-bid outcome predictions, see [Outcome Prediction](#outcome-prediction).
 
 If an outcome prediction is available, and all other eligibility checks pass, then the Exchange will calculate an outcome-based bid-to-CPM conversion rate. This rate is calculated by multiplying the outcome prediction by a market-making fee. For more information on the conversion rate, see the sections on [Understanding Payment Conversion Rates](#understanding-payment-conversion-rates) and the [Market-Making Fee](#market-making-fee).
 
