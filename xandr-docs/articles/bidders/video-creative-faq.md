@@ -1,6 +1,6 @@
 ---
 title: Bidders - Video Creative FAQ
-decription: The article provides information on frequently asked questions (FAQ) related to video creative.
+decription: The article provides information on frequently asked questions(FAQ) related to video creative.
 ms.date: 10/28/2023
 ---
 

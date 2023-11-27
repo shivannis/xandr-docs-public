@@ -11,7 +11,7 @@ Macros are used to populate URLs (such as those found in creatives) with useful 
 This page contains information about all of the macros we support.  For each macro, we list the information that that macro is replaced with during the ad call.
 
 > [!TIP]
-> For more control over URL encoding and decoding, see the section on [Function Macros](xandr-macros.md#XandrMacros-FunctionMacros).
+> For more control over URL encoding and decoding, see the section on [Function Macros](xandr-macros.md#function-macros).
 >
 > For additional examples about how macros may be > used when uploading creatives, refer to the 
 > [Creative Service](creative-service.md) page.
@@ -35,14 +35,14 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${ECP}` | The publisher side Estimated Clear Price for the auction. |
 | `${RESERVE_PRICE}` | The reserve price set by the publisher. |
 | `${SESSION_FREQ}` | The session frequency for the user. |
-| `${AGE}` | The age of the user (if available). Integer (e.g., `26`) or 0. |
-| `${GENDER}` | The gender of the user (if available). Values are `'f'`,`'m'`,`'u'`. |
+| `${AGE}` | The age of the user (if available). Integer (e.g., 26) or 0. |
+| `${GENDER}` | The gender of the user (if available). Values are 'f','m','u'. |
 | `${CACHEBUSTER}` | A random number string used to limit caching of the URL |
 | `${PRICE_PAID}` | The price paid for this impression. (As opposed to the price bid, before price reduction.) |
 | `${SECOND_PRICE}` | The price that represent the second highest bid in auction. Expressed in floating point number format (e.g. 1.23) |
 | `${REFERER_URL}` | If available, the referring URL for this inventory. <br>**Note**: This field is deprecated (as of May 2016). Use ${REFERER_URL_ENC} instead. |
 | `${REFERER_URL_ENC}` | The encoded referring URL. |
-| `${BID_PRICE}` | The price bid for this impression as opposed to the price paid after price reduction. |
+| `${BID_PRICE}` | The price bid for this impression as opposed to the price paid after price reduction.  |
 | `${TAG_CODE1}` | Integration code set on the placement. |
 | `${TAG_CODE2}` | Additional integration code set on the placement. |
 | `${INV_SOURCE_ID}` | **Deprecated**. |
@@ -64,9 +64,9 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${HEIGHT}` | Height of the creative served |
 | `${SUPPLY_TYPE}` | This macro will be populated with a numeric value that denotes the supply type of the impression. Allowed values include:<br>0: web<br>1: mobile web<br>2: mobile app<br>4: toolbar |
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
-| `${USER_AGENT}` | The user agent string from the request's HTTP header. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user (e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; [rv:1.9.0.4]()) Gecko/2008102920 Firefox/3.0.4"). |
+| `${USER_AGENT}` | The user agent string from the request's HTTP header. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user (e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"). |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
-| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br>…&extended_ids=<source_1>,<id_1>\ | <source_2>,<id_2>\ | …The separators proposed being , between the source and the value, and \ | between the different IDs type and value pairs. |
+| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br>…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…The separators proposed being , between the source and the value, and \| between the different IDs type and value pairs. |
 
 **European Ad Inventory and Providing Notice, Transparency and Choice**
 
