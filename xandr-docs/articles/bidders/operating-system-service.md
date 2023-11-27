@@ -24,7 +24,7 @@ This is a read-only service that shows you the list of operating systems that yo
 | `name` | string | Name of the operating system. |
 | `platform_type` | enum - "web", "mobile", or "both" | Describes whether the operating system runs on web devices, mobile devices, or both. |
 
-## Examples
+## Example
 
 To return a specific operating system
 

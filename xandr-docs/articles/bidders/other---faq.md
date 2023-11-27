@@ -34,7 +34,7 @@ No, we do not have a public, up-to-date, supported implementation of our APIs in
 
 ### Can I sell inventory through Xandr?
 
-Selling requires a separate contract. If you are interested in selling inventory, please reach out to your account contact.
+Selling requires a separate contract. If you are interested in selling inventory, then reach out to your account contact.
 
 ## Partner inventory vs. platform inventory
 

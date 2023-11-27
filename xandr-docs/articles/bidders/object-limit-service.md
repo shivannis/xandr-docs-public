@@ -14,8 +14,8 @@ The Object Limit Service allows you to view these limits and proactively monitor
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/object-limit | View your limits and current usage for all object types |
-| GET | https://api.adnxs.com/object-limit?object_type=OBJECT_TYPE | View your limit and current usage for a specific object type<br><br>**Tip:** The following object types are available: creative, profile, and domain_list. |
+| GET | https://api.adnxs.com/object-limit | View your limits and current usage for all object types. |
+| GET | https://api.adnxs.com/object-limit?object_type=OBJECT_TYPE | View your limit and current usage for a specific object type.<br><br>**Tip:** The following object types are available: `creative`, `profile`, and `domain_list`. |
 
 ## JSON fields
 
@@ -46,7 +46,7 @@ This part of the JSON response is populated only for the "profile" and "domain_l
 | `segment_targets` | int | The maximum number of segments that you can target in a single profile. |
 | `site_targets` | int | The maximum number of sites that you can target in a single profile. |
 
-#### For Domain lists
+#### For domain lists
 
 | Field | Type  | Description |
 |:---|:---|:---|

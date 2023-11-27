@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Data center
 
-### Sometimes, the notify request comes from a different data center than the original bid request. Why does that happen?**
+### Sometimes, the notify request comes from a different data center than the original bid request. Why does that happen?
 
 This behavior is expected. The reason this would happen is that impressions are load balanced to a particular data center based on the
 location of the user. There are certain geographical areas which have dual coverage with our data centers. Depending on the type of auction/ad call that the impression comes through, the notify is actually a separate process that is disconnected from the auction itself. This happens in situations where the user is served a special "accept" URL that tells their browser to fetch the ad content from us separately from the ad call with initiated the impression. This final "accept" URL can potentially be routed to a different data center than the original impression, resulting in the behavior you are seeing and describing.

@@ -52,7 +52,7 @@ For all auctions conducted by a third-party, bidders will receive a pending noti
 
 | Field | Scope | Type | Description |
 |:---|:---|:---|:---|
-| `result` | all | string | This flag (`ok` or `error`) reports the receipt of a valid bid response to your bidder. If it is error, you will receive a relevant error message. |
+| `result` | all | string | This flag (`ok` or `error`) reports the receipt of a valid bid response to your bidder. If it is `error`, you will receive a relevant error message. |
 | `price_bid` | some | double | The price bid in the bid response. |
 | `error_id` | some | int | When `result` is `error`, this field displays the error code. For more information, see [Notify Request Error Codes](#error-list). |
 | `error` | some | string | When `result` is `error`, this field displays the corresponding error message. For more information, see [Notify Request Error Codes](#error-list). |
@@ -71,7 +71,7 @@ For a list of all possible errors that could be sent in a Notify Request, see [B
 
 ## Notify full auction
 
-If the [Bidder Service](bidder-service.md) parameter `notify_full_auction` is set to `true`, `full_tag_info` and `bid_info` will be included in the response. The parameter `full_tag_info` contains all information described in the Tags section of the [Bid Request](outgoing-bid-request-to-bidders.md) page, except the *`exclusive_default`* field, while `bid_info` contains all information in the **Bid_info** and **Segments** sections of the [Bid Request](outgoing-bid-request-to-bidders.md) page.
+If the [Bidder Service](bidder-service.md) parameter `notify_full_auction` is set to `true`, `full_tag_info`, and `bid_info` will be included in the response. The parameter `full_tag_info` contains all information described in the **Tags** section of the [Bid Request](outgoing-bid-request-to-bidders.md) page, except the *`exclusive_default`* field, while `bid_info` contains all information in the **Bid_info** and **Segments** sections of the [Bid Request](outgoing-bid-request-to-bidders.md) page.
 
 > [!NOTE]
 > For post-pending notifies (`post-pending` is set to `true`), `full_tag_info` is not available because the bid acceptance callback has not yet been received.

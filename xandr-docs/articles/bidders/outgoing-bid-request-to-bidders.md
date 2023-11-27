@@ -40,7 +40,7 @@ Xandr supports the following fields in the top-level bid request object:
 | `app` | object | Specifies information about the app for the impressions. Applicable for app impressions. See [App Object](#app-object) below. |
 | `device` | object | Specifies information about the user's device to which these impressions will be delivered. See [Device Object](#device-object) below. |
 | `user` | object | Specifies information about the person to whom the impressions will be delivered. See [User Object](#user-object) below. |
-| `test` | integer | Indicates that this auction is in test mode and is not billable. If not present, default is used.<br> - `0`: Live mode; billable. (default)<br> - `1`: Test mode; not billable. |
+| `test` | integer | Indicates that this auction is in test mode and is not billable. If not present, default is used.<br> - `0`: Live mode; billable (default).<br> - `1`: Test mode; not billable. |
 | `at` | integer | Specifies the auction type. If not present, default is used.<br> - `1`: First price.<br> - `2`: Second price plus one cent (default). |
 | `wseat` | array of strings | Specifies an array representing a allowlist of buyer seats allowed to bid on this impression. |
 | `tmax` | integer | Specifies the maximum time (in milliseconds) to submit a bid before timing out. |
@@ -49,7 +49,7 @@ Xandr supports the following fields in the top-level bid request object:
 | `badv` | array of strings | Specifies a list of blocked top-level advertiser domains that correspond to brand URLs in our system. For example, `["company1.com","company2.com"]`. For more information, see the [Brand Service](brand-service.md). A max of 64 values will be sent. |
 | `regs` | object | Specifies information about an industry, legal, or governmental regulation in force for this request. See [Regs Object](#regs-object) below. |
 | `source` | object | Provides data about the inventory source and which entity makes the final decision. See [Source Object](#source-object) below. |
-| ext | object | Used for identifying platform-specific extensions to the OpenRTB bid request. See [Bid Request Extension Object](#bid-request-extension-object) below. |
+| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid request. See [Bid Request Extension Object](#bid-request-extension-object) below. |
 
 ### Bid request extension object
 
@@ -68,7 +68,7 @@ We support the following fields in the `schain` (Supply Chain) object:
 |:---|:---|:---|
 | `ver` | string | Version of the supply chain specification in use, in the format of “major.minor”. Currently using version 1.0 of the spec. |
 | `complete` | enum | Flag indicating whether the chain contains all nodes involved in the transaction leading back to the owner of the site, app or other medium of the inventory, where 0 = no, 1 = yes. |
-| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node.<br>We support the following fields in the nodes object:<br> - **asi** (string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists. For the Xandr node that domain will be appnexus.com<br> - **sid** (string): The identifier associated with the seller or reseller account within the advertising system.<br> - **rid** (string): The OpenRTB RequestId of the request as issued by the seller.<br> - **hp** (integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be 1 |
+| `nodes` | object | Array of SupplyChainNode objects in the order of the chain. In a complete supply chain, the first node represents the initial advertising system and seller ID involved in the transaction, i.e. the owner of the site, app, or other medium. In an incomplete supply chain, it represents the first known node. The last node represents the entity sending this bid request, which will be the Xandr node.<br>We support the following fields in the nodes object:<br> - **asi** (string): The canonical domain name of the SSP, Exchange, Header Wrapper, etc system that bidders connect to. This should be the same value as used to identify sellers in an ads.txt file if one exists. For the Xandr node that domain will be appnexus.com<br> - **sid** (string): The identifier associated with the seller or reseller account within the advertising system.<br> - **rid** (string): The OpenRTB RequestId of the request as issued by the seller.<br> - **hp** (integer): Indicates whether this node will be involved in the flow of payment for the inventory. For version 1.0 of SupplyChain, this property should always be 1. |
 
 ### Bid request object
 
@@ -79,7 +79,7 @@ We support the following fields in the `appnexus` extension object for the bid r
 | `seller_member_id` | integer | Specifies the ID of the member selling the inventory. See [Platform Member Service](platform-member-service.md) to find the corresponding member names. |
 | `spend_protection` | Boolean | Deprecated (October 2018). |
 | `publisher_integration` | object | Provides details about the publisher integration. |
-| `ext_inv_code` | integer | A predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged. For more information, see [External Inventory Code Service](../digital-platform-api/exexternal-inventory-code-service.md).<br>Example: `ext_inv_code=10039` |
+| `ext_inv_code` | integer | A predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged. For more information, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md).<br>Example: `ext_inv_code=10039` |
 
 ### Publisher integration object
 
@@ -124,7 +124,7 @@ For banner impressions, we support the following fields:
 | `battr` | array of integers | Specifies the banner creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
 | `pos` | integer | Specifies the position of the banner on the screen.<br> - `0`: Unknown (default)<br> - `1`: Above the fold<br> - `3`: Below the fold |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Refer to section 5.6 of the IAB specification for a list of API frameworks. |
-| `format` | array of objects | The `format` objects that represent the banner sizes permitted. See [Format Object](#format-object) below. Note that the banner sizes called out in the format object are not representative of allowed sizes via deals. |
+| `format` | array of objects | The `format` objects that represent the banner sizes permitted. See [Format Object](#format-object) below. <br><br>**Note:** The banner sizes called out in the format object are not representative of allowed sizes via deals. |
 | `ext` | object | Not supported. |
 
 ### Format object
@@ -181,7 +181,7 @@ We support the following fields in the `appnexus` extension object of the `video
 | `mimes` | array of strings | (Required) Specifies the audio content MIME types supported; for example, `audio/vnd.wav`, `audio/mpeg`, `audio/mp4`, `audio/ogg`, or `audio/mp2`. |
 | `minduration` | integer | (Recommended) Specifies the minimum audio ad duration, in seconds. |
 | `maxduration` | integer | (Recommended) Specifies the maximum audio ad duration, in seconds. |
-| `startdelay` | integer | (Recommended) Specifies the start delay of the audio ad:<br>- > `0`: For values greater than zero, the delay before audio start, in seconds.<br> - `0`: Pre-roll<br> - `-1`: Generic mid-roll (delay unknown)<br>- `-2`: Generic post-roll |
+| `startdelay` | integer | (Recommended) Specifies the start delay of the audio ad:<br>- > `0`: For values greater than zero, the delay before audio start, in seconds.<br> - `0`: Pre-roll.<br> - `-1`: Generic mid-roll (delay unknown).<br>- `-2`: Generic post-roll. |
 | `battr` | array of integers | Specifies the audio creative attributes to block. We support:<br> - `11`: Surveys<br> - `16`: Ad Provides Skip Button |
 | `minbitrate` | integer | The minimum bit rate, in kilobytes per second. |
 | `maxbitrate` | integer | The maximum bit rate, in kilobytes per second. |
@@ -203,8 +203,8 @@ For native impressions, the `request` object contains the creative object in the
 |:---|:---|:---|
 | `ver` | string | (Recommended) Specifies the version of the native ad specification currently in use. Currently versions **1.1** and **1.2** are supported. |
 | `plcmtcnt` | integer | Specifies the number of identical placements available on the bid request. Usually `1`, but can be a different integer if the bid request is for a feed with multiple placements within it. |
-| `plcmttype` | integer | The design/format/layout of the ad unit being offered. Xandr will send either value:<br> - `1`: In the feed of content<br> - `4`: Recommendation widget |
-| `privacy` | boolean | Flag to indicate if the seller supports a buyer-specific privacy notice.<br> - `0` or absent: The native ad doesn't support custom privacy links<br>- `1`: The native ad supports buyer-specific privacy notice |
+| `plcmttype` | integer | The design/format/layout of the ad unit being offered. Xandr will send either value:<br> - `1`: In the feed of content.<br> - `4`: Recommendation widget. |
+| `privacy` | boolean | Flag to indicate if the seller supports a buyer-specific privacy notice.<br> - `0` or absent: The native ad doesn't support custom privacy links.<br>- `1`: The native ad supports buyer-specific privacy notice. |
 | `assets` | array of objects | Specifies a list of assets that are expected to be returned on the bid response. See [Assets Object](#assets-object) below. |
 
 ### Assets object
@@ -218,7 +218,7 @@ We support the following fields in the `assets` object in the `native` object:
 | `title` | object | Specifies information about the title of the asset. See [Title Object](#title-object) below. |
 | `img` | object | Specifies information about the image for the asset. See [Image Object](#image-object) below. |
 | `data` | object | Specifies information about data for the asset. See [Assets Data Object](#assets-data-object) below. |
-| `video` | object | Specifies information about the video for the asset. See [Video object of the assets object](#video-object-of-the-assets-object) below. |
+| `video` | object | Specifies information about the video for the asset. See [Video object for the assets](#video-object-for-the-assets) below. |
 
 ### Title object
 
@@ -259,7 +259,7 @@ We support the following fields in the `event trackers request` object (Native 
 | `event` | integer | Type of event available for tracking. Supported values are:<br> - `1`: `impression` - Impression<br> - `2`: `viewable-mrc50` - Viewable impression using MRC definition at 50% in view for 1 second.<br> - `3`: `viewable-mrc100` - Viewable impression using MRC definition at 100% in view for 1 second (ie GroupM standard).<br>- `4`: `viewable-video50` - Viewable impression for video using MRC definition at 50% in view for 2 seconds.<br> - `555`: `custom value to signify OMID`  |
 | `methods` | array of integers | Array of the types of tracking available for the given event. <br>Supported values are:<br> - `1`: `img` - Img-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event.<br> - `2`: `js` - Javascript-based tracking - URL provided will be inserted as a js tag at the time of the event. |
 
-### Video object of the `assets` object
+### Video object for the assets
 
 We support the following fields in the `video` object of the `assets` object:
 
@@ -305,9 +305,9 @@ We support the following fields in the `appnexus` extension object of the `deal`
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ad_quality_override` | integer | Specifies how the deal handles creatives:<br><br> - `1`: Creatives use existing ad quality settings. (default)<br> - `2`: Creatives in "pending" audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br> - `3`: No ad profile restrictions will be applied to this deal. (Maximum trust) |
-| `allowed_media_types` | array of integers | Specifies the IDs of the media types that are allowed on this deal. (See [Expandables and Rich Media](expandables-and-rich-media.md) for a list of media types.) If there are no unique media types for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media types, instead it just means that the media types on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of media types allowed on this deal. |
-| `allowed_media_subtypes` | array of integers | Specifies the IDs of the media subtypes that are allowed on this deal. (See [Expandables and Rich Media](expandables-and-rich-media.md) for a list of media subtypes.) If there are no unique media subtypes for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media subtypes, instead it just means that the media subtypes on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of submedia types allowed on this deal. |
+| `ad_quality_override` | integer | Specifies how the deal handles creatives:<br><br> - `1`: Creatives use existing ad quality settings (default).<br> - `2`: Creatives in "pending" audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br> - `3`: No ad profile restrictions will be applied to this deal (Maximum trust). |
+| `allowed_media_types` | array of integers | Specifies the IDs of the media types that are allowed on this deal. (For a list of media types, see [Expandables and Rich Media](expandables-and-rich-media.md).) If there are no unique media types for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media types, instead it just means that the media types on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of media types allowed on this deal. |
+| `allowed_media_subtypes` | array of integers | Specifies the IDs of the media subtypes that are allowed on this deal. (For a list of media subtypes, see [Expandables and Rich Media](expandables-and-rich-media.md).) If there are no unique media subtypes for this deal as compared to the main bid request object, this field will be an empty array. This does NOT mean the deal does not allow any media subtypes, instead it just means that the media subtypes on the main bid object (anything not specifically listed in the “battr” object) can be used when bidding on this deal. If this array is populated, it will contain a complete list of submedia types allowed on this deal. |
 | `sizes` | array of objects | Specifies the allowed creative sizes for this deal. If this array is populated, it will contain a complete list of sizes allowed on this deal. Sizes allowed on the deal do not have to be a subset of what is allowed in the main bid request object. If the array is empty, that means that there are are no unique sizes for this deal, and the allowed sizes from the main bid object should be used instead. See [Sizes Object](#sizes-object) below. |
 | `sc` | integer | Specifies whether the wseat field of the deal object is passing a buyer seat ID. This Field is only present for deals set up with a DSP's buyer seat ID and will pass a value of "1". |
 | `gtd` | integer | Specifies whether the deal is Programmatic Guaranteed. This Field is only present for deals set up as Programmatic Guaranteed and will pass a value of "1". |
@@ -395,7 +395,7 @@ We support the following fields in the `app` object:
 | `publisher` | object | Specifies information about the publisher. Omitted if seller visibility settings prohibit sharing. See [Publisher Object](#publisher-object) below. |
 | `name` | string | The full name of the app (i.e. Angry Birds). (This value may be aliased at the publisher's request.) |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
-| `storeurl` | string | App store URL for an installed app |
+| `storeurl` | string | App store URL for an installed app. |
 | `ext` | object | Used for holding app extension fields. See [App extension object](#app-extension-object) below.  |
 
 ### Publisher object
@@ -438,7 +438,7 @@ Xandr supports the following fields in the Content object:
 | `len` | integer | Length of content in seconds; appropriate for video or audio. |
 | `data`  | object array  | Additional content data. Each Data object represents a different data source. Refer to Section 3.2.16 in the IAB specification. |
 
-### Content Extension Object
+### Content extension Object
 
 Xandr supports the following field in the ext object:
 
@@ -464,7 +464,7 @@ We support the following fields in the `device` object.
 | `geo` | object | Specifies the location of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. Also includes the timezone and a code for the designated market area. <br><br>**Note:** `geo` overrides IP. <br><br> For details, see [Geo Object](#geo-object). |
 | `dnt` | integer | Specifies the Do Not Track setting:<br> - `0`: Do Not Track is set to false in browser (tracking is allowed).<br> - `1`: Do Not Track is set to true in browser (user has opted out of tracking). |
 | `ip` | string | Specifies the IPv4 address closest to the device. Omitted if seller visibility settings prohibit sharing. |
-| `ipv6` | string | IP address closest to device as IPv6 |
+| `ipv6` | string | IP address closest to device as IPv6. |
 | `devicetype` | integer | Specifies the type of device, using IAB values:<br> - `1`: Mobile/Tablet<br> - `2`: Personal Computer<br> - `3`: Connected TV<br> - `4`: Phone<br> - `5`: Tablet<br> - `6`: Connected Device<br> - `7`: Set Top Box |
 | `make` | string | Specifies the make of the device.  |
 | `model` | string | Specifies the model of the device.  |
@@ -500,7 +500,7 @@ We support a single object in the `ext` object to support platform-specific ex
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `appnexus` | object | Specifies the platform-specific extensions to the geo object. See [Geo AppNexus Object](#geo-appnexus-object) below for a list of the extensions for this object. |
+| `appnexus` | object | Specifies the platform-specific extensions to the geo object. For a list of the extensions for this object, see [Geo AppNexus Object](#geo-appnexus-object) below. |
 
 ### Geo AppNexus object
 
@@ -516,7 +516,7 @@ We support a single object in the `ext` object to support platform-specific ex
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ifa_type` | string | Specifies the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher provided IFA, or a temporary/session IFA. Used primarily for CTV impressions.<br>The types of IFA are Device, Publisher (including apps), SSP and Session. The following are recommended values for the ifa_type parameter:<br> - "dpid" - the generic “device provided id”, but based on historical usage, common device type specific values can be used<br> - "rida" - Roku id<br> - "aaid" - Android id<br> - "idfa" - Apple id<br> - "afai" - Amazon Fire id<br> - "tifa" - Tizen Identifier for Advertising (Samsung Ad ID)<br> - "vida" - Vizio Advertising ID<br> - "lgudid" - LG Unique Device ID<br> - "msai" - Microsoft id<br> - "ppid" - publisher provided id<br> - "sspid" - SSP provided id<br> - "sessionid" - session id / synthetic id (described below) |
+| `ifa_type` | string | Specifies the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher provided IFA, or a temporary/session IFA. Used primarily for CTV impressions.<br>The types of IFA are Device, Publisher (including apps), SSP and Session. The following are recommended values for the ifa_type parameter:<br> - "dpid" - the generic “device provided id”, but based on historical usage, common device type specific values can be used<br> - "rida" - Roku id<br> - "aaid" - Android id<br> - "idfa" - Apple id<br> - "afai" - Amazon Fire id<br> - "tifa" - Tizen Identifier for Advertising (Samsung Ad ID)<br> - "vida" - Vizio Advertising ID<br> - "lgudid" - LG Unique Device ID<br> - "msai" - Microsoft id<br> - "ppid" - publisher provided id<br> - "sspid" - SSP provided id<br> - "sessionid" - session id/synthetic id (described below) |
 
 ### User object
 
@@ -527,7 +527,7 @@ We support the following fields in the `user` object:
 | `id` | string | (Either `id` or `buyeruid` is recommended) Specifies the Xandr unique ID for this user. Omitted if seller visibility settings prohibit sharing. The unique 64-bit ID for the user. It will be the same for all requests from this user until cookies are cleared. This field is 0 when Xandr does not have a match for this user or the user's browser doesn't accept cookies. It will be -1 for opt-out users. |
 | `buyeruid` | string | (Either `id` or `buyeruid` is recommended) The buyer's unique ID for this user, if known. Omitted if seller visibility settings prohibit sharing. |
 | `yob` | integer | Specifies the year of birth as a 4-digit integer. Omitted if unknown, or if seller visibility settings prohibit sharing. |
-| `gender` | string | Specifies the gender. Set to `null` if unknown. Omitted if unknown, or seller visibility settings prohibit sharing.<br> - `M`: male<br> - `F`: female<br> - `O`: other |
+| `gender` | string | Specifies the gender. Set to `null` if unknown. Omitted if unknown, or seller visibility settings prohibit sharing.<br> - `M`: Male<br> - `F`: Female<br> - `O`: Other |
 | `data` | array of objects | Specifies information about data for the user. See [User Data Object](#user-data-object) below. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the user object. |
 

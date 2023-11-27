@@ -29,18 +29,18 @@ buyer. Buyers browse through available packages and then use the [Deal From Pac
 | `allow_creative_add_on_click` | true | **Not yet supported.** |
 | `allow_creative_add_on_view` | boolean | **Not yet supported.** |
 | `data_protected` | boolean | **Not yet supported.** |
-| `default_ask_price` | double | The ask price that will be applied to all deals generated from the package.<br><br>**Note:** This field is relevant only if default_use_deal_floor is true. |
+| `default_ask_price` | double | The ask price that will be applied to all deals generated from the package.<br><br>**Note:** This field is relevant only if `default_use_deal_floor` is `true`. |
 | `default_currency` | string | The ask price currency that will be applied to all deals generated from the package. |
-| `default_deal_type` | object | The deal type that will be applied to all deals generated from the package. For more details, see Default Deal Type below. |
+| `default_deal_type` | object | The deal type that will be applied to all deals generated from the package. For more details, see [Default deal type](#default-deal-type) below. |
 | `default_use_deal_floor` | boolean | If `true`, the `default_ask_price`  will be applied to deals generated from the package.<br><br>**Tip:** When  `default_use_deal_floor`  is `true`, the deal's ask price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
 | `description` | string | The description of the package. Sellers generally use this to provide buyers greater insight into the deal. |
 | `id` | int | The ID of the package. |
 | `last_modified` | timestamp | The day and time when the package was last modified. |
 | `name` | string | The name of the package. |
-| `seller` | object | The name and ID of the seller who is offering the package. For more details, see Seller below. |
+| `seller` | object | The name and ID of the seller who is offering the package. For more details, see [Seller](#seller) below. |
 | `seller_rank` | int | The seller's ranking for the package. This controls where the package will appear in the seller's full list of packages in . Allowed range: 1 - 65355, where 1 is the highest ranking. |
-| `setting` | object | The type of content included in the package. For more details, see Setting below. |
-| `sizes` | array of objects | The creative sizes included in the package. For more details, see  Sizes  below. Sizes  below. |
+| `setting` | object | The type of content included in the package. For more details, see [Setting](#setting) below. |
+| `sizes` | array of objects | The creative sizes included in the package. For more details, see [Sizes](#sizes) below. |
 | `visibility_profile_id` | int | **Not yet supported.** |
 
 ### Seller

@@ -100,7 +100,10 @@ When you approach or reach your limit for domain lists or profile target, you sh
 - To remove domains from a domain list, use the [Domain List Service](domain-list-service.md), to update the `domains` array.
 - To remove a certain target from a profile, use the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) to update the relevant targeting field.
 
-When you approach or reach your limit for creatives, you should remove non-expired creatives. Non-expired creatives have the `is_expired` field set to `false`. Note that removing expired creatives will not impact your creative count.
+When you approach or reach your limit for creatives, you should remove non-expired creatives. Non-expired creatives have the `is_expired` field set to `false`.
+
+> [!NOTE]
+> Removing expired creatives will not impact your creative count.
 
 To remove a creative, you make a DELETE call to the [Creative Service](creative-service.md).
 
