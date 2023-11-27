@@ -1,740 +1,196 @@
 ---
-Title : DV360 Buying Guide
-Description : In partnership with DV360, Xandr has created
-ms.date : 10/28/2023
-this guide to help Xandr publishers communicate
-with their buyers about accessing and targeting
-Xandr's publisher inventory using DV360 as their
-DSP. This information has been created in collaboration with and
+title: Bidders - DV360 Buying Guide
+description: The article outlines a DV360 buying guide designed to facilitate communication between Xandr publishers and their buyers. It provides guidance on accessing and targeting Xandr's publisher inventory through DV360 as their DSP. 
+ms.date: 10/28/2023
 ---
+# Bidders - DV360 buying guide
 
-
-# DV360 Buying Guide
-
-
-
-In partnership with DV360, Xandr has created
-this guide to help Xandr publishers communicate
-with their buyers about accessing and targeting
-Xandr's publisher inventory using DV360 as their
-DSP. This information has been created in collaboration with and
-approved by the DV360 team. Please note that platforms can and will
-change regularly. We will do our best to update this guide as needed.
+In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and
+approved by the DV360 team. Please note that platforms can and will change regularly. We will do our best to update this guide as needed.
 Wherever possible, we've provided links to DV360 documentation.
 
-We recommend that if buyers are having issues, or if they need help
-using the DV360 platform, their first point of outreach should be the
+We recommend that if buyers are having issues, or if they need help using the DV360 platform, their first point of outreach should be the
 DV360 team.  
   
+## Terminology mapping
 
+In a few cases, DV360 and Xandr use different terminology, as shown in the following table.
 
+| DV360 | Xandr |
+|--|--|
+| [Non-Guaranteed Fixed Deals](https://support.google.com/displayvideo/answer/3289692) (formerly known as Preferred Deals) | Private Deal involving one publisher and one buyer. |
+| [Non-Guaranteed Auctions](https://support.google.com/displayvideo/answer/3289702) (formerly known as Private Auctions) | Multi-Buyer Deal involving one publisher and many buyers. |
+| Partner ID | Buyer Seat ID |
 
-## Terminology Mapping
+## Using DV360 to buy Xandr open auction and deals inventory
 
-In a few cases, DV360 and Xandr use different
-terminology, as shown in the following table. 
+This section explains how to target Xandr (formerly AppNexus) as an inventory source within the DV360 UI.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000077b__entry__1"
-class="entry colsep-1 rowsep-1">DV360</th>
-<th id="ID-0000077b__entry__2" class="entry colsep-1 rowsep-1"><span
-class="ph">Xandr</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000077b__entry__1"><a
-href="https://support.google.com/displayvideo/answer/3289692"
-class="xref" target="_blank">Non-Guaranteed Fixed Deals</a> (formerly
-known as Preferred Deals)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__entry__2">Private Deal involving one publisher and
-one buyer.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000077b__entry__1"><a
-href="https://support.google.com/displayvideo/answer/3289702"
-class="xref" target="_blank">Non-Guaranteed Auctions</a> (formerly known
-as Private Auctions)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__entry__2">Multi-Buyer Deal involving one publisher
-and many buyers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__entry__1">Partner ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__entry__2">Buyer Seat ID</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> To learn more about managing exchanges with DV360, buyers should see [Managing Exchanges](https://support.google.com/displayvideo/answer/9230278?hl=en)in the DV360 Help.
 
+To set up Xandr Exchange targeting in DV360, the buyer needs to target **AppNexus (Xandr)** as an **Exchange** in **Partner
+Settings** as shown in the following graphic:
 
+:::image type="content" source="media/dv360-buying-guide-a.png" alt-text="A screenshot that illustrates how to set up Xandr Exchange targeting in DV360, the buyer needs to target AppNexus (Xandr) as an Exchange in Partner Settings.":::
 
-
-
-## Using DV360 to Buy Xandr Open Auction and Deals Inventory 
-
-This section explains how to target Xandr
-(formerly AppNexus) as an inventory source
-within the DV360 UI. 
-
-
-
-
-<b>Note:</b>
-
-To learn more about managing exchanges with DV360, buyers should see
-<a href="https://support.google.com/displayvideo/answer/9230278?hl=en"
-class="xref" target="_blank">Managing Exchanges</a> in the DV360 Help.
-
-
-
-
-
-To set up Xandr Exchange targeting in DV360, the
-buyer needs to target **AppNexus
-(Xandr)** as an **Exchange** in **Partner
-Setting**s as shown in the following graphic**:** ** **
-
-![DV360 Buying Guide - A](media/dv360-buying-guide-a.png)
-
-
-
-
-
-
-<b>Tip:</b>
-
-To learn more about targeting an inventory source, buyers should
-<a href="https://support.google.com/displayvideo/answer/2726009"
-class="xref" target="_blank">Inventory Source Targeting</a> in the DV360
-Help.
-
-
-
-
+> [!TIP]
+> To learn more about targeting an inventory source, buyers should [Inventory Source Targeting](https://support.google.com/displayvideo/answer/2726009) in the DV360 Help.
 
 **Open Auction**  
 
-To buy using **Open Auction**, buyers can use the following steps to
-target Xandr as an exchange. The process starts
-from the Inventory Source UI with nothing defined, as shown in the
-following graphic:
+To buy using **Open Auction**, buyers can use the following steps to target Xandr as an exchange. The process starts from the Inventory Source UI with nothing defined, as shown in the following graphic:
 
-![DV360 Buying Guide - B](media/dv360-buying-guide-b.png)
+:::image type="content" source="media/dv360-buying-guide-b.png" alt-text="A screenshot that illustrates the process initiates from the Inventory Source UI without any predefined settings. ":::
 
-1.  In **Partner Settings**, the buyer should select
-    **AppNexus (Xandr)**
-    as the exchange as shown in the following graphic. If the buyer only
-    wants to buy Xandr inventory, they should
-    make sure the Target new exchanges
-    checkbox is de-selected.
+1. In **Partner Settings**, the buyer should select **AppNexus (Xandr)** as the exchange as shown in the following graphic. If the buyer only wants to buy Xandr inventory, they should make sure the Target new exchanges checkbox is de-selected.
 
-    The following graphic shows the Inventory Source screen with
-    Xandr selected as the exchange.   
-    ![DV360 Buying Guide - C](media/dv360-buying-guide-c.png)
+    The following graphic shows the Inventory Source screen with Xandr selected as the exchange.
 
-
+    :::image type="content" source="media/dv360-buying-guide-c.png" alt-text="A screenshot that illustrates the Inventory Source screen with Xandr chosen as the exchange.":::
+  
 **Deals**
 
-Deal Sync with DV360 is currently in beta, and only selected sellers are
-enabled for this feature. For more information, see the following topics
-in the DV360 Help:
+Deal Sync with DV360 is currently in beta, and only selected sellers are enabled for this feature. For more information, see the following topics in the DV360 Help:
+- [DV360 Buyer UI Deal Acceptance Workflows](dv360-buyer-ui-deal-acceptance-workflows.md)
+- [Deal Sync with DV360 - Publisher Guide](deal-sync-with-dv360---publisher-guide.md)
+- [Deal Sync with DV360 - FAQ](deal-sync-with-dv360---faq.md)
 
-- <a
-  href="dv360-buyer-ui-deal-acceptance-workflows.md"
-  class="xref" target="_blank">DV360 Buyer UI Deal Acceptance
-  Workflows</a>
-- <a
-  href="deal-sync-with-dv360---publisher-guide.md"
-  class="xref" target="_blank">Deal Sync with DV360 - Publisher Guide</a>
-- <a
-  href="deal-sync-with-dv360---faq.md"
-  class="xref" target="_blank">Deal Sync with DV360 - FAQ</a>.
-
-
-
-
-<b>Note:</b> The campaign or the line item
-must be active for the deal to see any activity. 
-
-
-
-
+> [!NOTE]
+> The campaign or the line item must be active for the deal to see any activity.
 
 **To set up and target a Xandr deal:**
 
-1.  In DV360, the buyer should create a new
-    Xandr deal as shown in the following
-    graphics. The second graphic shows an example of a newly created
-    deal in the UI. 
+1. In DV360, the buyer should create a new Xandr deal as shown in the following graphics. The second graphic shows an example of a newly created deal in the UI.
 
-    ![DV360 Buying Guide - D](media/dv360-buying-guide-d.png)
+   :::image type="content" source="media/dv360-buying-guide-d.png" alt-text="A screenshot that illustrates how the buyer creates a new Xandr deal":::
 
+   :::image type="content" source="media/dv360-buying-guide-e.png" alt-text="A screenshot that illustrates an example a newly created deal in the user interface (UI).":::
 
+2. The buyer should select the created deal for targeting as shown in the following graphics. The second graphic shows an example of the
+    targeted deal displayed in UI.
 
-    ![DV360 Buying Guide - E](media/dv360-buying-guide-e.png)
+   :::image type="content" source="media/dv360-buying-guide-f.png" alt-text="A screenshot that shows how the buyer selects the created deal for targeting.":::
 
- 
+   :::image type="content" source="media/dv360-buying-guide-g.png" alt-text="The screenshot that illustrates specific deal presented in the user interface.":::
 
-2.  The buyer should select the created deal for targeting as shown in
-    the following graphics. The second graphic shows an example of the
-    targeted deal displayed in UI
+For more information about deals, the buyer can see the following topics in the DV360 Help:
 
-    ![DV360 Buying Guide - F](media/dv360-buying-guide-f.png)
+- [How to Negotiate a Deal](https://support.google.com/displayvideo/answer/7505945?hl=en)
+- [Best Practices for Setting Up Deals](https://support.google.com/displayvideo/answer/9198385?hl=en)
+- [Deal Troubleshooting](https://support.google.com/displayvideo/answer/6292894?hl=en)
 
-   ![DV360 Buying Guide - G](media/dv360-buying-guide-g.png)
+## Programmatic guaranteed buying
 
-   
+Programmatic guaranteed buying is currently available with DV360. The DV360 team has detailed information on available programmatic guaranteed publishers and associated contacts. Please talk to your Xandr account manager about being included in Xandr's programmatic guaranteed product release.
 
-For more information about deals, the buyer can see the following topics
-in the DV360 Help:
+> [!NOTE]
+> The native is not currently supported for Programmatic Guaranteed buying. We're working with the DV360 team to
+> enable native support.
 
-- <a href="https://support.google.com/displayvideo/answer/7505945?hl=en"
-  class="xref" target="_blank">How to Negotiate a Deal</a>
-- <a href="https://support.google.com/displayvideo/answer/9198385?hl=en"
-  class="xref" target="_blank">Best Practices for Setting Up Deals</a>
-- <a href="https://support.google.com/displayvideo/answer/6292894?hl=en"
-  class="xref" target="_blank">Deal Troubleshooting</a>
+> [!NOTE]
+> Publishers can download the following document and share it with buyers directly: [Leverage Programmatic Guaranteed](../monetize/programmatic-guaranteed-buying-line-items.md).
 
+## Targeting audiences and content
 
+DV360 allows targeted buying based on audiences and content. To learn more about targeting in DV360, see [Introduction to Targeting](https://support.google.com/displayvideo/topic/3033780?hl=en).
 
+**Audience targeting**
 
-
-## Programmatic Guaranteed Buying
-
-
-
-Programmatic guaranteed buying is currently available with DV360. The
-DV360 team has detailed information on available programmatic guaranteed
-publishers and associated contacts. Please talk to your
-Xandr account manager about being included in
-Xandr's programmatic guaranteed product
-release. 
-
-
-
-<b>Note:</b> native is not currently supported
-for Programmatic Guaranteed buying. We're working with the DV360 team to
-enable native support.
-
-
-
-
-
-
-
-<b>Note:</b> Publishers can download the
-following document and share it with buyers directly: <a
-href="monetize_monetize-standard/programmatic-guaranteed-buying-line-items.md"
-class="xref" target="_blank">Leverage Programmatic Guaranteed</a> with
-Xandr 
-
-
-
-
-
-
-## Targeting Audiences and Content
-
-DV360 allows targeted buying based on audiences and content. To learn
-more about targeting in DV360, see
-<a href="https://support.google.com/displayvideo/topic/3033780?hl=en"
-class="xref" target="_blank">Introduction to Targeting</a> in the DV360
-Help.
-
-**Audience Targeting**
-
-Buyers using DV360 have access to a number of different types of
-audience data. Buyers should note that some of this data has limited
+Buyers using DV360 have access to a number of different types of audience data. Buyers should note that some of this data has limited
 reach on third-party exchanges such as Xandr.
-For more information, see
-<a href="https://support.google.com/displayvideo/topic/2726036?hl=en"
-class="xref" target="_blank">Details about audience targeting</a>, 
-<a href="https://support.google.com/displayvideo/answer/2949947?hl=en"
-class="xref" target="_blank">Audience List Targeting</a> and
-<a href="https://support.google.com/displayvideo/answer/7583366?hl=en"
-class="xref" target="_blank">Custom List Targeting</a> in the DV360
-Help.
+For more information, see [Details about audience targeting](https://support.google.com/displayvideo/topic/2726036?hl=en),
+[Audience List Targeting](https://support.google.com/displayvideo/answer/2949947?hl=en), and [Custom List Targeting](https://support.google.com/displayvideo/answer/7583366?hl=en) in the DV360 Help.
 
-<table id="ID-0000077b__table_etp_l1r_qwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000077b__table_etp_l1r_qwb__entry__1"
-class="entry colsep-1 rowsep-1">Google Data</th>
-<th id="ID-0000077b__table_etp_l1r_qwb__entry__2"
-class="entry colsep-1 rowsep-1">Limitations</th>
-<th id="ID-0000077b__table_etp_l1r_qwb__entry__3"
-class="entry colsep-1 rowsep-1">Tips and Recommendations</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/7583366?hl=en"
-class="xref" target="_blank">Custom Affinity</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and third-party exchanges. Scale is limited on third-party
-exchanges. First or third-party audiences preferred.</td>
-<td rowspan="5" class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">If you are using this
-type of data, set up your DV360 line item targeting with one or more
-first- or third-party audience lists in a logical OR relationship to
-limit scale issues.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/7583366?hl=en"
-class="xref" target="_blank">Custom Intent</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can only be used on
-Ad Manager inventory.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6021489?hl=en"
-class="xref" target="_blank">Affinity</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and third-party exchanges. Scale is limited on third-party
-exchanges. First or third-party audiences preferred.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6021500?hl=en"
-class="xref" target="_blank">Similar/Lookalike</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and third-party exchanges. Scale is limited on third-party
-exchanges. First or third-party audiences preferred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6213232?hl=en"
-class="xref" target="_blank">In-Market</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and third-party exchanges. Scale is limited on third-party
-exchanges. First or third-party audiences preferred.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2705812?hl=en"
-class="xref" target="_blank">Geography</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and other exchanges (including PMP). </td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2697407?hl=en"
-class="xref" target="_blank">Day and Time</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and other exchanges (including PMP).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6071542?hl=en"
-class="xref" target="_blank">Demographics</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and third-party exchanges. Scale is limited on third-party
-exchanges. First or third-party audiences preferred. Household income
-targeting is available on Google Ad Manager and TrueView inventory.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">If you are using this
-type of data, set up your DV360 line item targeting with one or more
-first- or third-party audience lists in a logical OR relationship to
-limit scale issues.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/7502150?hl=en"
-class="xref" target="_blank">Installed App Category</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and other exchanges (including PMP).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/7502555?hl=en"
-class="xref" target="_blank">New Mobile Device</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used on Ad
-Manager and other exchanges (including PMP).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6212219?hl=en"
-class="xref" target="_blank">Third Party Audience</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__2">Can be used onAd
-Manager and other exchanges (including PMP).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_etp_l1r_qwb__entry__3">N/A</td>
-</tr>
-</tbody>
-</table>
+| Google Data | Limitations | Tips and Recommendations |
+|--|--|--|
+| [Custom Affinity](https://support.google.com/displayvideo/answer/7583366?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. | If you are using this type of data, set up your DV360 line item targeting with one or more first- or third-party audience lists in a logical OR relationship to limit scale issues. |
+| [Custom Intent](https://support.google.com/displayvideo/answer/7583366?hl=en) | Can only be used on Ad Manager inventory. |  |
+| [Affinity](https://support.google.com/displayvideo/answer/6021489?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
+| [Similar/Lookalike](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=2) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
+| [In-Market](https://support.google.com/displayvideo/answer/6213232?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. |  |
+| [Geography](https://support.google.com/displayvideo/answer/2705812?hl=en) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
+| [Day and Time](https://support.google.com/displayvideo/answer/2697407?hl=en) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
+| [Demographics](https://support.google.com/displayvideo/answer/6071542?hl=en) | Can be used on Ad Manager and third-party exchanges. Scale is limited on third-party exchanges. First or third-party audiences preferred. Household income targeting is available on Google Ad Manager and TrueView inventory. | If you are using this type of data, set up your DV360 line item targeting with one or more first- or third-party audience lists in a logical OR relationship to limit scale issues. |
+| [Installed App Category](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=1) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
+| [New Mobile Device](https://support.google.com/displayvideo/answer/13643641?hl=en&visit_id=638362302043745084-900489057&rd=1) | Can be used on Ad Manager and other exchanges (including PMP). | N/A |
+| [Third Party Audience](https://support.google.com/displayvideo/answer/6212219?hl=en) | Can be used onAd Manager and other exchanges (including PMP). | N/A |
 
-**Content Targeting**
+**Content targeting**
 
-To learn more about content targeting, see
-<a href="https://support.google.com/displayvideo/topic/2726034?hl=en"
-class="xref" target="_blank">Content Targeting</a> in the DV360 Help. 
+To learn more about content targeting, see [Content Targeting](https://support.google.com/displayvideo/topic/2726034?hl=en)
+in the DV360 Help.
 
-The following table shows content targeting options in DV360 and
-provides guidance for implementing them.
+The following table shows content targeting options in DV360 and provides guidance for implementing them.
 
-<table id="ID-0000077b__table_ftp_l1r_qwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000077b__table_ftp_l1r_qwb__entry__1"
-class="entry colsep-1 rowsep-1">Content Type</th>
-<th id="ID-0000077b__table_ftp_l1r_qwb__entry__2"
-class="entry colsep-1 rowsep-1">Limitations</th>
-<th id="ID-0000077b__table_ftp_l1r_qwb__entry__3"
-class="entry colsep-1 rowsep-1">Tips and Recommendations</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/3032915?hl=en"
-class="xref" target="_blank">Brand Safety</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">Using brand safety
-segments from IAS and DoubleVerify can sometimes cause limited reach
-if Xandr inventory is not yet categorized or is
-mis-categorized.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">DV360 uses a crawler
-that checks aspects of all websites/apps and provides a digital content
-label. For more information on how inventory is labeled, see <a
-href="https://support.google.com/displayvideo/answer/2735881?hl=en"
-class="xref" target="_blank">Digital content labels in Display &amp;
-Video 360</a> in the DV360 Help. We recommend adhering to the <a
-href="dv360-buying-guide.md#DV360BuyingGuide-DomainTransparencyRecommendations"
-class="xref" target="_blank">Domain Transparency Recommendations</a>
-domain transparency guidance laid out in the next section.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2650521?hl=en"
-class="xref" target="_blank">App, Channel, and Website</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2697825?hl=en"
-class="xref" target="_blank">Keyword</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">For keywords to work,
-pages need to be crawlable. </td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">We recommend a
-minimum of 100 branded keywords and/or 100 generic keywords. Ask the
-advertiser for their top converting keywords from Adwords.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2697826?hl=en"
-class="xref" target="_blank">Category</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">DV360 does not read
-Xandr's content categories in the bid
-request.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">We recommend
-targeting top categories to improve reach.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/3232163?hl=en"
-class="xref" target="_blank">Environment</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6101342?hl=en"
-class="xref" target="_blank">Viewability</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">Targeting can only be
-done using <a
-href="https://support.google.com/displayvideo/answer/3214556?hl=en"
-class="xref" target="_blank">Active View</a>.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">For display
-inventory, viewability measurement can be done using <a
-href="https://support.google.com/displayvideo/answer/3214556?hl=en"
-class="xref" target="_blank">Active View</a> as well as third-party
-measurement with DoubleVerify &amp; IAS. Viewability measurement for
-native inventory can only be done using <a
-href="https://support.google.com/displayvideo/answer/3214556?hl=en"
-class="xref" target="_blank">Active View</a> at this time. </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2697406?hl=en"
-class="xref" target="_blank">Language</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/6008366?hl=en"
-class="xref" target="_blank">Video</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/3441297?hl=en"
-class="xref" target="_blank">Digital Content Label</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">Avoid using masked
-URLs in the bid request. Masked URLs are not analyzed by Google's
-crawler and will be classified as "Not yet labelled". Semi-transparent
-inventory may receive any digital content label if the publisher selling
-the inventory has shared all of the URLs behind the bid request URL with
-Bid Manager. In these situations, the publisher's inventory will be
-labeled according to the inventory's minimum brand safety.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/2697401?hl=en"
-class="xref" target="_blank">Position</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">Make sure you are
-sending <code class="ph codeph">video.placement</code> in the bid
-request.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__1"><a
-href="https://support.google.com/displayvideo/answer/9166157?hl=en"
-class="xref" target="_blank">User-rewarded Content</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__2">User rewarded
-inventory is currently limited. Targeting only user-rewarded content can
-result in narrow reach, and few impressions and clicks.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_ftp_l1r_qwb__entry__3">Make sure you send
-the rewarded extension.</td>
-</tr>
-</tbody>
-</table>
+| Content Type | Limitations | Tips and Recommendations |
+|--|--|--|
+| [Brand Safety](https://support.google.com/displayvideo/answer/3032915?hl=en) | Using brand safety segments from IAS and DoubleVerify can sometimes cause limited reach if Xandr inventory is not yet categorized or is mis-categorized. | DV360 uses a crawler that checks aspects of all websites/apps and provides a digital content label. For more information on how inventory is labeled, see [Digital content labels in Display & Video 360](https://docs.xandr.com/bundle/xandr-bidders/page/dv360-buying-guide.html) in the DV360 Help. We recommend adhering to the [Domain Transparency Recommendations](https://docs.xandr.com/bundle/xandr-bidders/page/dv360-buying-guide.html#DV360BuyingGuide-DomainTransparencyRecommendations) domain transparency guidance laid out in the next section. |
+| [App, Channel, and Website](https://support.google.com/displayvideo/answer/2650521?hl=en) | N/A | N/A |
+| [Keyword](https://support.google.com/displayvideo/answer/2697825?hl=en) | For keywords to work, pages need to be crawlable. | We recommend a minimum of 100 branded keywords and/or 100 generic keywords. Ask the advertiser for their top converting keywords from Adwords. |
+| [Category](https://support.google.com/displayvideo/answer/2697826?hl=en) | DV360 does not read Xandr's content categories in the bid request. | We recommend targeting top categories to improve reach. |
+| [Environment](https://support.google.com/displayvideo/answer/3232163?hl=en) | N/A | N/A |
+| [Viewability](https://support.google.com/displayvideo/answer/6101342?hl=en) | Targeting can only be done using [Active View](https://support.google.com/displayvideo/answer/3214556?hl=en). | For display inventory, viewability measurement can be done using [Active View](https://support.google.com/displayvideo/answer/3214556?hl=en) as well as third-party measurement with DoubleVerify & IAS. Viewability measurement for native inventory can only be done using [Active View](https://support.google.com/displayvideo/answer/3214556?hl=en) at this time. |
+| [Language](https://support.google.com/displayvideo/answer/2697406?hl=en) | N/A | N/A |
+| [Video](https://support.google.com/displayvideo/answer/6008366?hl=en) | N/A | N/A |
+| [Digital Content Label](https://support.google.com/displayvideo/answer/3441297?hl=en) | N/A | Avoid using masked URLs in the bid request. Masked URLs are not analyzed by Google's crawler and will be classified as "Not yet labelled". Semi-transparent inventory may receive any digital content label if the publisher selling the inventory has shared all of the URLs behind the bid request URL with Bid Manager. In these situations, the publisher's inventory will be labeled according to the inventory's minimum brand safety. |
+| [Position](https://support.google.com/displayvideo/answer/3441297?hl=en) | N/A | Make sure you are sending `video.placement` in the bid request. |
+| [User-rewarded Content](https://support.google.com/displayvideo/answer/9166157?hl=en) | User rewarded inventory is currently limited. Targeting only user-rewarded content can result in narrow reach, and few impressions and clicks. | Make sure you send the rewarded extension. |
 
+## Domain transparency recommendations
 
+The following table shows recommendations for providing domain transparency in bid requests.
 
+| Inventory Type | Limitations | Tips and Recommendations |
+|--|--|--|
+| All | DV360 can bid on non-transparent inventory but it depends on advertiser's targeting; most campaigns require transparent inventory. | We recommend sending the full URL. In certain circumstances it may make sense to send the domain instead of the full URL in bid requests; this can be applied by the bidder within the Xandr system. For example, if you have inventory with URLs that change based on a user's search terms (because the user's search terms are added in the URL as query strings), the URLs received by DV360 are often unique. It takes time for DV360's crawlers to add a classification or rating to these URLs, which can cause an issue when targeting for brand safety/sensitive category exclusions is in place. In this special circumstance, we recommend standardizing the URL passed in the bid request. |
+| Video | The full URL, rather than just the domain, needs to be passed. Otherwise, DV360 identifies the inventory as "non-monetizable content". | We recommend passing the full URL in a video bid request. |
 
-## Domain Transparency Recommendations
+## Creative requirements
 
-The following table shows recommendations for providing domain
-transparency in bid requests.
+DV360 only bids with creatives that have passed Xandr audit.
 
-<table id="ID-0000077b__table_htp_l1r_qwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000077b__table_htp_l1r_qwb__entry__1"
-class="entry colsep-1 rowsep-1">Inventory Type</th>
-<th id="ID-0000077b__table_htp_l1r_qwb__entry__2"
-class="entry colsep-1 rowsep-1">Limitations</th>
-<th id="ID-0000077b__table_htp_l1r_qwb__entry__3"
-class="entry colsep-1 rowsep-1">Tips and Recommendations</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__1">All</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__2">DV360 can bid on
-non-transparent inventory but it depends on advertiser's targeting; most
-campaigns require transparent inventory.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__3">We recommend sending
-the full URL. In certain circumstances it may make sense to send the
-domain instead of the full URL in bid requests; this can be applied by
-the bidder within the Xandr system. For example,
-if you have inventory with URLs that change based on a user's search
-terms (because the user's search terms are added in the URL as query
-strings), the URLs received by DV360 are often unique. It takes time for
-DV360's crawlers to add a classification or rating to these URLs, which
-can cause an issue when targeting for brand safety/sensitive category
-exclusions is in place. In this special circumstance, we recommend
-standardizing the URL passed in the bid request.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__1">Video</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__2">The full URL, rather
-than just the domain, needs to be passed. Otherwise, DV360 identifies
-the inventory as "non-monetizable content".</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000077b__table_htp_l1r_qwb__entry__3">We recommend passing
-the full URL in a video bid request.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-## Creative Requirements
-
-DV360 only bids with creatives that have passed
-Xandr audit. 
-
-- To start the Xandr creative audit, the buyer
-  should make sure the line item their creatives are assigned to is
+- To start the Xandr creative audit, the buyer should make sure the line item their creatives are assigned to is
   active and targets Xandr inventory.
-- DV360 users can request a re-sync if a creative's audit status seems
-  to get stuck or if DV360 and Xandr are showing
-  different audit statuses. This can be done at the creative level. The
-  buyer should save the creative to restart the creative review process
-  in **Display & Video 360**. For more detail, see the following
-  ![DV360 Buying Guide - H](media/dv360-buying-guide-h.png)
- 
+- DV360 users can request a re-sync if a creative's audit status seems to get stuck or if DV360 and Xandr are showing
+  different audit statuses. This can be done at the creative level. The buyer should save the creative to restart the creative review process in **Display & Video 360**. For more detail, see the following:
 
-**Checking the Audit Status and Finding the
-AppNexus (Xandr)
-Creative ID**
+:::image type="content" source="media/dv360-buying-guide-h.png" alt-text="The screenshot that displays the creative status in Display & Video 360.":::
 
-The following graphic shows how to identify the creative ID and audit
-status for each creative
+**Checking the audit status and Finding the appNexus (Xandr) creative ID**
 
-![DV360 Buying Guide - I](media/dv360-buying-guide-i.png)
+The following graphic shows how to identify the creative ID and audit status for each creative.
 
+:::image type="content" source="media/dv360-buying-guide-i.png" alt-text=" The screenshot demonstrates the process of identifying the creative ID and audit status for each creative.":::
 
+## Buyer identification using buyer seat IDs
 
+DV360 supports Xandr's [Buyer Seat ID](https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/understanding-buyer-seat-ids.html) feature. This means that member breakouts and virtual seats are no longer used for each DV360 buyer. Deals should be set up using DV360 Partner IDs, which Xandr sellers can find in the Partner Center.
 
+Buyers can find their DV360 Partner ID in two ways, as shown in the following graphic.
 
-## Buyer Identification Using Buyer Seat IDs 
+- Inspect the URL, which takes the form [https://displayvideo.google.com/#ng_nav/p/xxxx](https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a). `XXXXX` is typically a 5-digit number representing the partner ID.
 
-DV360 supports Xandr's <a
-href="monetize_monetize-standard/understanding-buyer-seat-ids.md"
-class="xref" target="_blank">Buyer Seat ID</a> feature. This means that
-member breakouts and virtual seats are no longer used for each DV360
-buyer. Deals should be set up using DV360 Partner IDs, which
-Xandr sellers can find in the Partner Center.
+  In the DV360 UI, go to **Partner Settings >  Basic Details**. The Partner ID is at the bottom of the screen.
 
-Buyers can find their DV360 Partner ID in two ways, as shown in the
-following graphic.
-
-- Inspect the URL, which takes the form
-  <a href="https://displayvideo.google.com/#ng_nav/p/%2aXXXXX.%2a"
-  class="xref" target="_blank">https://displayvideo.google.com/#ng_nav/p/
-  <code class="ph codeph">XXXXX</code> .*</a>. `XXXXX` is typically a
-  5-digit number representing the partner ID.
-
-  In the DV360 UI, go to
-  Partner
-  Settings  \>  Basic
-  Details. The Partner ID is at the bottom of the screen.
-  ![DV360 Buying Guide - j](media/dv360-buying-guide-j.png)
- 
+  :::image type="content" source="media/dv360-buying-guide-j.png" alt-text="The screenshot that displays the Partner ID at the bottom of the screen.":::
 
 **Troubleshooting**
 
-If a DV360 buyer has issues serving on Xandr
-inventory, we recommend that they:
+If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:
 
-1.  Reach out to DV360 support channels as the first step
-2.  If they cannot resolve the issue using DV360, they should loop in
-    Xandr support.
+1. Reach out to DV360 support channels as the first step
+1. If they cannot resolve the issue using DV360, they should loop in Xandr support.
 
-Sellers can reach out to their Xandr account
-manager or escalate through
-<a href="https://help.xandr.com/s/login/" class="xref"
-target="_blank">help.xandr.com</a>.
+Sellers can reach out to their Xandr account manager or escalate through [help.xandr.com](https://help.xandr.com/s/login/).
 
-**Understanding Match Rates between DV360 and
-Xandr**
+**Understanding Match Rates between DV360 and Xandr**
 
-The match rate between DV360 and Xandr is
-healthy and in line with other platforms. Sometimes there can be
-confusion when troubleshooting line items not delivering that are using
-Google data. It is possible that the support team will tell the buyer
-that the issue in delivery is user match rate or lack of cookies, which
-is a nuanced issue. The actual issue is the lack of match with the
-Google audience data. Removing the Google audience data or adding 1st or
-3rd party data in an OR relationship can often help in these situations.
+The match rate between DV360 and Xandr is healthy and in line with other platforms. Sometimes there can be confusion when troubleshooting line items not delivering that are using Google data. It is possible that the support team will tell the buyer that the issue in delivery is user match rate or lack of cookies, which is a nuanced issue. The actual issue is the lack of match with the Google audience data. Removing the Google audience data or adding 1st or 3rd party data in an OR relationship can often help in these situations.
 
+## DV360 and TCF compliance
 
+Google has officially joined the TCF v2. Full guidance from Google can be found [here](https://support.google.com/displayvideo/answer/9496576?hl=en).
 
-
-
-## DV360 and TCF Compliance
-
-Google has officially joined the TCF v2. Full guidance from Google can
-be found
-<a href="https://support.google.com/displayvideo/answer/9496576?hl=en"
-class="xref" target="_blank">here</a>.
-
-
-
-<b>Note:</b>
-
-Google DV 360 was added to the Global Vendor List v2.0 in the update
-released on July 23, 2020. If you have adopted TCF v2.0, and you have
-not re-established legal basis with your users using a version of the
-Global Vendor List released after this date, you risk losing access to
-some or all Google DV360 demand . We recommend taking this action
-promptly to avoid any potential disruption to your business.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> Google DV 360 was added to the Global Vendor List v2.0 in the update released on July 23, 2020. If you have adopted TCF v2.0, and you have not re-established legal basis with your users using a version of the Global Vendor List released after this date, you risk losing access tosome or all Google DV360 demand . We recommend taking this action promptly to avoid any potential disruption to your business.

@@ -1,330 +1,63 @@
 ---
-Title : Device Model Service
-Description : **Device Model Service**
-ms.date : 10/28/2023
-Mobile devices are categorized by make and model, where make is
-generally the manufacturer of the device (i.e., Apple) and model is
+title: Bidders - Device Model Service
+description: The article describes a device model service that categorizes mobile devices by manufacturer (make) and specific product (model), using examples such as Apple as the make and iPhone as the model.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Device model service
 
-# Device Model Service
+Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is
+generally the specific product (such as iPhone). The read-only Device Model Service allows you to see what models of mobile devices are
+registered in the Xandr system, as well as the make, device type (i.e., pc, phone, or tablet), and device screen size
+for each model. You can use this service to map device model IDs to names and other details.
 
-
-
-**Device Model Service**
-
-Mobile devices are categorized by make and model, where make is
-generally the manufacturer of the device (i.e., Apple) and model is
-generally the specific product (such as iPhone). The read-only Device
-Model Service allows you to see what models of mobile devices are
-registered in the Xandr system, as well as the
-make, device type (i.e., pc, phone, or tablet), and device screen size
-for each model. You can use this service to map device model IDs to
-names and other details.
-
-
-
-<b>Tip:</b> You can target mobile campaigns
-based on mobile carrier as well. For more details, see the <a
-href="carrier-service.md"
-class="xref" target="_blank">Carrier Service</a>.
-
-
-
-
+> [!TIP]
+> You can target mobile campaigns based on mobile carrier as well. For more details, see the [Carrier Service](carrier-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008419__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00008419__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00008419__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__2">https://api.<span
-class="ph">adnxs.com/device-model</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__3">View
-all device models.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__2">https://api.<span
-class="ph">adnxs.com/device-model/DEVICE_MODEL_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__3">View
-a specific device model.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__2">https://api.<span
-class="ph">adnxs.com/device-model/meta</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__2"><a
-href="https://api.appnexus.com/device-model/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/device-model/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|--|--|--|
+| GET | `https://api.adnxs.com/device-model` | View all device models. |
+| GET | `https://api.adnxs.com/device-model/DEVICE_MODEL_ID` | View a specific device model. |
+| GET | `https://api.adnxs.com/device-model/meta` | Find out which fields you can filter and sort by. |
+| GET | `https://api.appnexus.com/device-model/meta` | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
+| Field | Type | Description |
+|---|---|---|
+| `codes`| array of objects |Third-party representations for the device model. See [Codes](device-model-service.md#codes) below for more details.|
+|`device_make_id`| int |The ID of the device make to which the model belongs. For example, the `iPhone` device model would belong to the `Apple` device make.|
+|`device_make_name`| string | The name of the device make to which the model belongs. |
+|`device_type`| enum | The type of device. Possible values: `pc`, `phone`, `tablet`, `tv`, `gameconsole`, `stb`, `mediaplayer`|
+|`id`| int | The ID of the device model. |
+|`name`| string | The name of the device model (such as `iPhone`).|
+|`screen_height`| int | The height of the screen on the device. |
+|`screen_width`| int | The width of the screen on the device. |
+| `supports_cookies` | Boolean | **Not yet available**. If `true`, the device supports cookies. If null, Xandr does not know whether or not the device supports cookies.|
+| `supports_flash` | Boolean | **Not yet supported**. If `true`, the device supports Flash creatives. If null, Xandr does not know whether or not the device supports Flash. |
+| `supports_geo` | Boolean | **Not yet available**. If `true`, the device can pass the latitude and longitude of users, when GPS data is available.  |
+| `supports_html_audio` | Boolean | **Not yet available**. If `true`, the device supports HTML audio creatives. If null, Xandr does not know whether or not the device supports HTML audio. |
+| `supports_html_video` | Boolean | **Not yet available**. If `true`, the device supports HTML video creatives. If null, Xandr does not know whether or not the device supports HTML video. |
+| `supports_js` | Boolean | **Not yet available**. If `true`, the device supports JavaScript creatives. If null, Xandr does not know whether or not the device supports JavaScript. |
 
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008419__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008419__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008419__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">codes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18">Third-party representations for the
-device model. See <a href="device-model-service.md#ID-00008419__codes"
-class="xref">Codes</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">device_make_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-ID of the device make to which the model belongs. For example, the <code
-class="ph codeph">iPhone</code> device model would belong to the <code
-class="ph codeph">Apple</code> device make.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">device_make_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-name of the device make to which the model belongs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">device_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-type of device. Possible values: <code class="ph codeph">pc</code>,
-<code class="ph codeph">phone</code>, <code
-class="ph codeph">tablet</code>, <code class="ph codeph">tv</code>,
-<code class="ph codeph">gameconsole</code>, <code
-class="ph codeph">stb</code>, <code
-class="ph codeph">mediaplayer</code><br />
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-ID of the device model.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-name of the device model (such as <code
-class="ph codeph">iPhone</code>).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">screen_height</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-height of the screen on the device.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">screen_width</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__18">The
-width of the screen on the device.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_cookies</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet available</strong>. If
-<code class="ph codeph">true</code>, the device supports cookies. If
-null, Xandr does not know whether or not the
-device supports cookies.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_flash</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet supported</strong>. If
-<code class="ph codeph">true</code>, the device supports Flash
-creatives. If null, Xandr does not know whether
-or not the device supports Flash.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_geo</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet available</strong>. If
-<code class="ph codeph">true</code>, the device can pass the latitude
-and longitude of users, when GPS data is available. </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_html_audio</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet available</strong>. If
-<code class="ph codeph">true</code>, the device supports HTML audio
-creatives. If null, Xandr does not know whether
-or not the device supports HTML audio.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_html_video</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet available</strong>. If
-<code class="ph codeph">true</code>, the device supports HTML video
-creatives. If null, Xandr does not know whether
-or not the device supports HTML video.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__16"><code
-class="ph codeph">supports_js</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__18"><strong>Not yet available</strong>. If
-<code class="ph codeph">true</code>, the device supports JavaScript
-creatives. If null, Xandr does not know whether
-or not the device supports JavaScript.</td>
-</tr>
-</tbody>
-</table>
-
-**Codes**
+## Codes
 
 Each object in the `codes` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008419__entry__61"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008419__entry__62"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008419__entry__63"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__61"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__62">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__63">The
-ID for the device model.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__61"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__62">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__63">The
-third-party representation for the device model.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__61"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__62">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__63">Identification information about the
-third-party.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__61"><code
-class="ph codeph">device_model_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008419__entry__62">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008419__entry__63">The
-ID for the device model.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|--|--|--|
+| `id` | int | The ID for the device model. |
+| `code` | string | The third-party representation for the device model. |
+| `notes` | string | Identification information about the third-party. |
+| `device_model_id` | int | The ID for the device model. |
 
 ## Examples
 
 **View all models of mobile devices**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model'
 {
     "response": {
@@ -437,7 +170,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model'
 
 **View a specific model of mobile device**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model?id=2'
     "response": {
         "status": "OK",
@@ -469,12 +202,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model?id=2'
             ]
         }
     }
-}
 ```
 
 **View all models of "tablet" devices**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model?device_type=tablet'
 {
     "response": {
@@ -584,9 +316,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/device-model?device_type=
     }
 }
 ```
-
-
-
-
-
-
