@@ -24,7 +24,7 @@ read-only [Spend Protection Pixel Service](#spend-protection-pixel-service) allo
 
 ### Changed reports
 
-**Platform Buyer Report and Platform Seller Report**
+**Platform buyer report and platform seller report**
 
 Four new viewability metrics are available in the [Bidder Platform Buyer Report](bidder-platform-buyer-report.md) and the [Platform Seller Report](platform-seller-report.md). The metrics
 are:
