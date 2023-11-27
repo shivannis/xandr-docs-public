@@ -15,7 +15,7 @@ creatives (banner, expandable, video, etc.); and media subtype defines
 the specific display style of creatives (standard banner, MediaMind
 expandable, or Standard VAST).
 
-**Standard templates**
+### Standard templates
 
 For each format, media type, and media subtype combination,
 Xandr provides a standard creative template that
@@ -23,7 +23,7 @@ ensures proper rendering on web pages when creatives are served. You
 cannot edit these templates, but the Creative Template Service allows
 you to view them and examine their rendering code.
 
-**Custom templates**
+### Custom templates
 
 If you want to customize the way certain types of creatives render, you
 can build your own templates. With custom templates, you have complete
@@ -65,7 +65,7 @@ decisions about the behavior of creatives when they are uploaded.
 | `name`                  | string (30)      | The name of the creative template. <br> **Required On**: POST                                                                                                                                                                                                                                                                                                |
 
 
-**Media subtype**
+### Media subtype
 
 | Field           | Type   | Description                                                         |
 |-----------------|--------|---------------------------------------------------------------------|
@@ -74,7 +74,7 @@ decisions about the behavior of creatives when they are uploaded.
 | `mediatype_id`    | int    | **Read-only**. The ID of the media type to which the subtype belongs.   |
 | `name`            | string | **Read-only**. The name of the media subtype.                           |
 
-**Format**
+### Format
 
 You can use the [Creative Format Service](creative-format-service.md) to view all supported creative formats.
 
@@ -83,7 +83,7 @@ You can use the [Creative Format Service](creative-format-service.md) to view al
 | `id`    | int    | The ID of creative format. <br> **Required On**: POST |
 | `name`  | string | **Read-only**. The name of the creative format.  |
 
-**Custom macros**
+### Custom macros
 
 You must define each custom macro used in the content_js, content_html,
 or content_xml field.
@@ -99,7 +99,7 @@ or content_xml field.
 
 ## Examples
 
-**Viewing all creative templates**
+### Viewing all creative templates
 
 ``` 
 {code}
@@ -260,7 +260,7 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template'
 {code}
 ```
 
-**Viewing a specific creative template**
+### Viewing a specific creative template
 
 ``` 
 In this example, the request gets details about the Xandr standard template for rendering creatives of the media type "Banner", media subtype "Standard Banner", and format "flash".
@@ -330,7 +330,7 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template?id=3'
 {code}
 ```
 
-**Adding a custom template**
+### Adding a custom template
 
 ``` 
 In this example, the POST request creates a custom creative template for rendering standard banner image creatives with a border. The template contains two custom macros for defining the border size and border color.
@@ -439,7 +439,7 @@ $ curl -b cookies -c cookies -X POST -d @template 'https://api.adnxs.com/templat
 {code}
 ```
 
-**Modifying a custom template**
+### Modifying a custom template
 
 ``` 
 In this example, the PUT request updates the default values of the custom macros in custom template 222.
@@ -537,7 +537,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.adnxs.com/t
 {code}
 ```
 
-## Archiving a custom template
+### Archiving a custom template
 
 ``` 
 In this example, the PUT request sets the is_archived field to true, thus archiving the template and preventing future creatives from using it.
@@ -620,7 +620,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_archive 'https://api.adnxs.com/
 {code}
 ```
 
-**Re-activating an archived custom template**
+### Re-activating an archived custom template
 
 ``` 
 In this example, the PUT request sets the is_archived field to false, thus re-activating the template and allowing new creatives to use it.
@@ -703,7 +703,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_activate 'https://api.adnxs.com
 {code}
 ```
 
-**Deleting a custom template**
+### Deleting a custom template
 
 ``` 
 In this example, the DELETE request removes the custom template from the system entirely.

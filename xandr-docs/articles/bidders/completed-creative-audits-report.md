@@ -144,18 +144,11 @@ User:,Rick Land (14311)
 ## Related topics
 
 - [Report Service](report-service.md)
-
 - [Saved Report Service](saved-report-service.md)
-
 - [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
-
 - [Bidder Billing Report API](bidder-billing-report-api.md)
-
 - [Platform Seller Report](platform-seller-report.md)
-
 - [seller-platform-billing-report.md](seller-platform-billing-report.md)
-
 - [Inventory Availability Reporting](inventory-availability-report.md)
-
 - [Reporting Timezones](reporting-timezones.md)
 

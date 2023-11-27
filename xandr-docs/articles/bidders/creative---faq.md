@@ -59,7 +59,7 @@ creatives:
 - Using the [creative-service](creative-service.md), get the "brand"
   field of the creative. This will have the brand ID and name, and the
   category ID for the brand. E.g.:
-  - GET `https://api.adnxs.com/creative/MEMBER_ID/CREATIVE_ID`
+  - `GET https://api.adnxs.com/creative/MEMBER_ID/CREATIVE_ID`
 - Using the [Category Service](category-service.md), you can get the
   name of the Category.
   - To get a specific category:

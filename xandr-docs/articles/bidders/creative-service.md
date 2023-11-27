@@ -1484,7 +1484,7 @@ example:
 ```
 
 > [!NOTE]
-> Even if the value is an integer, it must be placed within quotation marks (for example,  `"42"` ).
+> Even if the value is an integer, it must be placed within quotation marks (for example,  `"42"`).
 
 ``` 
 <iframe src="https://adserver.com/sz=300x250;camp=452346;int=a352-45we-sdr3" width=300 height=250/>
