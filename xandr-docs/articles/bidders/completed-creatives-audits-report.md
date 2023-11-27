@@ -1,257 +1,64 @@
 ---
-Title : Completed Creatives Audits Report
-Description : The **Completed Creative Audits Report** allows bidders to see why your
-ms.date : 10/28/2023
-creative was audited, and how many creatives were audited over a period
-of time.
+title : Completed Creatives Audits Report
+description : This page discusses about Completed Creative Audits Report and how it allows bidders to see why your creative was audited, and how many creatives were audited over a period of time.  
+ms.date : 11/21/2023
+
 ---
 
 
-# Completed Creatives Audits Report
-
-
-
-
+# Completed creatives audits report
 
 The **Completed Creative Audits Report** allows bidders to see why your
 creative was audited, and how many creatives were audited over a period
 of time.
 
-
-
-<b>Note:</b> The API documentation for the
-**Completed Creatives Audits Report** is located <a
-href="completed-creative-audits-report.md"
-class="xref" target="_blank">here</a>.
-
-
-
-
-
-
+> [!NOTE]
+> The API documentation for the **Completed Creatives Audits Report** is located [here](completed-creative-audits-report.md).
 
 ## Basic
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000087aa__entry__2"
-class="entry colsep-1 rowsep-1">Description/Options</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__1"><strong>Type</strong> (drop-down
-menu)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__2"><ul>
-<li><a href="platform-buyer-report.md" class="xref">Platform Buyer
-Report</a> (default)</li>
-<li><a href="bidder-billing-report.md" class="xref">Bidder Billing
-Report</a></li>
-<li><a href="bidder-bid-error-report.md" class="xref">Bidder Bid Error
-Report</a></li>
-<li>Completed Creatives Audits Report</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__1"><strong>Range</strong> (drop-down
-menu)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__2"><ul>
-<li>Custom</li>
-<li>Current Hour</li>
-<li>Today</li>
-<li>Yesterday</li>
-<li>Last 48 Hours</li>
-<li>Last 7 Days</li>
-<li>Month to Date</li>
-<li>Month to Yesterday</li>
-<li>Last Month</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__1"><strong>Interval</strong> (drop-down
-menu)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__2"><ul>
-<li>Hourly</li>
-<li>Daily</li>
-<li>Monthly</li>
-<li>Cumulative</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__1"><strong>Time Zone</strong> (drop-down
-menu)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__2">Select the appropriate time zone.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field                      | Description/Options                                                                                             |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Interval** (drop-down menu)  | - Hourly <br> - Daily <br> - Monthly <br> - Cumulative                                                                                 |
+| **Range** (drop-down menu)     | - Custom <br> - Current Hour <br> - Today <br> - Yesterday <br> - Last 48 Hours <br> - Last 7 Days <br> - Month to Date <br> - Month to Yesterday <br> - Last Month       |
+| **Time Zone** (drop-down menu) | Select the appropriate time zone.                                                                               |
+| **Type** (drop-down menu)      | - [Platform Buyer Report](platform-buyer-report.md) (default) <br> -  [Bidder Billing Report](bidder-billing-report.md) <br> - [Bidder Bid Error Report](bidder-bid-error-report.md) <br> - Completed Creatives Audits Report |
 
 ## Metrics
 
 Select the **metrics** you want to be displayed in the report. Click
-the Edit button on the right to
+the **Edit** button on the right to
 select/deselect.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__11"
-class="entry colsep-1 rowsep-1">Metric</th>
-<th id="ID-000087aa__entry__12"
-class="entry colsep-1 rowsep-1">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__11"><strong>Audits Completed</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__12">The
-number of audits completed in the grouping specified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__11"><strong>Audit Fees</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__12">The
-total fees for audits in the grouping specified.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Metric           | Definition                                                |
+|------------------|-----------------------------------------------------------|
+| **Audits Completed** | The number of audits completed in the grouping specified. |
+| **Audit Fees**       | The total fees for audits in the grouping specified.      |
 
 ## Filters
 
 Select the **filters** you want to be used to generate the report. Click
-the Edit button on the right to
-select/deselect.
+the **Edit** button on the right to select/deselect.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__17"
-class="entry colsep-1 rowsep-1">Filter</th>
-<th id="ID-000087aa__entry__18"
-class="entry colsep-1 rowsep-1">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__17"><strong>Creative</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__18">Select to filter by ID of the creative
-that was audited.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__17"><strong>Audit Type</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__18">Select to filter by the priority of the
-audit. Allowed values:
-<ul>
-<li><code class="ph codeph">1</code>: Standard</li>
-<li><code class="ph codeph">2</code>: Priority</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__17"><strong>Audit Reason</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__18">Select to filter by the the type of
-audit submission. This will be either "Initial" or "Reaudit".
-<ul>
-<li>Initial = First submission of the creative to Audit.</li>
-<li>Reaudit = Any re-submissions of a creative for audit after the
-initial audit that occurred on upload.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__17"><strong>Buyer Member</strong></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__18">Select to filter by the ID of the
-member whose creative was audited.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Filter       | Definition                                                                                                                                                                                                                                                   |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Audit Reason** | Select to filter by the the type of audit submission. This will be either "Initial" or "Reaudit". <br>- Initial = First submission of the creative to Audit. <br> - Reaudit = Any re-submissions of a creative for audit after the initial audit that occurred on upload. |
+| **Audit Type**   | Select to filter by the priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority                                                                                                                                                                       |
+| **Buyer Member** | Select to filter by the ID of the member whose creative was audited.                                                                                                                                                                                         |
+| **Creative**     | Select to filter by ID of the creative that was audited.                                                                                                                                                                                                     |
 
 ## Dimensions
 
 Select the **dimensions** you want to be used to generate the report.
 Click the **check box** on the left to select/deselect.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__27"
-class="entry colsep-1 rowsep-1">Dimension</th>
-<th id="ID-000087aa__entry__28"
-class="entry colsep-1 rowsep-1">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__27"><strong>Creative</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__28">ID
-of the creative that was audited.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__27"><strong>Audit Type</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__28">The
-priority of the audit. Allowed values:
-<ul>
-<li><code class="ph codeph">1</code>: Standard</li>
-<li><code class="ph codeph">2</code>: Priority</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__27"><strong>Audit Reason</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__28">The
-type of audit submission. This will be either "Initial" or "Reaudit".
-<ul>
-<li>Initial = First submission of the creative to Audit</li>
-<li>Reaudit = Any re-submissions of a creative for audit after the
-initial audit that occurred on upload</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__27"><strong>Date of Audit</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__28">Day
-on which audits were completed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__27"><strong>Member</strong></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__28">ID
-of the member whose creative was audited.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Dimension     | Definition                                                                                                                                                                                                                         |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Audit Reason**  | The type of audit submission. This will be either "Initial" or "Reaudit". <br> - Initial = First submission of the creative to Audit <br> - Reaudit = Any re-submissions of a creative for audit after the initial audit that occurred on upload |
+| **Audit Type**    | The priority of the audit. Allowed values: <br> - `1`: Standard <br> - `2`: Priority                                                                                                                                                                 |
+| **Creative**     | ID of the creative that was audited.                                                                                                                                                                                               |
+| **Date of Audit** | Day on which audits were completed.                                                                                                                                                                                                |
+| **Member**        | ID of the member whose creative was audited.                                                                                                                                                                                       |
 
 ## Delivery
 
@@ -260,103 +67,26 @@ as any reports you would like to save.
 
 Options on how to run the report (select one):
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__39" class="entry colsep-1 rowsep-1">Run now,
-show results in screen</th>
-<th id="ID-000087aa__entry__40" class="entry colsep-1 rowsep-1">Run in
-background, notify me when results are ready to view</th>
-<th id="ID-000087aa__entry__41" class="entry colsep-1 rowsep-1">Export,
-send results via email</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__39">This will display the report in the
-View Report tab of the report
-screen. Recommended delivery format for reports with less dimensions
-and/or metrics</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__40">Report will run in the background and a
-pop-up will notify you when the report is complete. Access complete
-report from Your Reports tab.
-Recommended delivery format for reports with less dimensions and/or
-metrics.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__41">Report will be sent to the email
-included in the text box. Use the drop down option to select the format
-of the file to be sent via email. Recommended delivery format for larger
-reports with lots of dimensions and/or metrics.</td>
-</tr>
-</tbody>
-</table>
+| Run now, show results in screen                                                                                                                       | Run in background, notify me when results are ready to view                                                                                                                                                            | Export, send results via email                                                                                                                                                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| This will display the report in the **View Report** tab of the report screen. Recommended delivery format for reports with less dimensions and/or metrics | Report will run in the background and a pop-up will notify you when the report is complete. Access complete report from **Your Reports** tab. Recommended delivery format for reports with less dimensions and/or metrics. | Report will be sent to the email included in the text box. Use the drop down option to select the format of the file to be sent via email. Recommended delivery format for larger reports with lots of dimensions and/or metrics. |
 
-Options to save the report (Select both or one of the options): 
+Options to save the report (Select both or one of the options):
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000087aa__entry__45" class="entry colsep-1 rowsep-1">Add to
-scheduled reports</th>
-<th id="ID-000087aa__entry__46" class="entry colsep-1 rowsep-1">Save as
-report template</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-000087aa__entry__45">If
-there is a report that you want every day, week, or month:
-<ul>
-<li>Configure what you want that report to look like.</li>
-<li>Click Add to scheduled
-reports.</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000087aa__entry__46">This allows you to configure different
-types of templates of reports that you plan on running frequently, or
-slightly modifying.
-<p>Enter the name of the report in the Report
-Name text box.</p></td>
-</tr>
-</tbody>
-</table>
+| Add to scheduled reports                                                                                                                        | Save as report template                                                                                                                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| If there is a report that you want every day, week, or month: <br> - Configure what you want that report to look like. <br> - Click **Add to scheduled reports**. | This allows you to configure different types of templates of reports that you plan on running frequently, or slightly modifying. Enter the name of the report in the **Report Name** text box. | 
 
-
-
-
-
-## Run Report
+## Run report
 
 After your selections are made, **Run Report** to run the report.
-The View Report screen will
+The **View Report** screen will
 automatically be accessed, where the report results are displayed.
 
+## Related topics 
 
-
-
-
-## Related Topics 
-
-- <a
-  href="reporting-screen.md"
-  class="xref" target="_blank">Reporting Screen</a>
-- <a
-  href="platform-buyer-report.md"
-  class="xref" target="_blank">Platform Buyer Report</a>
-- <a
-  href="bidder-billing-report.md"
-  class="xref" target="_blank">Bidder Billing Report</a>
-- <a
-  href="bidder-bid-error-report.md"
-  class="xref" target="_blank">Bidder Bid Error Report</a>
-- <a
-  href="your-reports.md"
-  class="xref" target="_blank">Your Reports</a>
-
-
-
-
-
-
+- [Reporting Screen](reporting-screen.md)
+- [Platform Buyer Report](platform-buyer-report.md)
+- [Bidder Billing Report](bidder-billing-report.md)
+- [Bidder Bid Error Report](bidder-bid-error-report.md)
+- [Your Reports](your-reports.md)

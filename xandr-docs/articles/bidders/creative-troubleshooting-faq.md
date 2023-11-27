@@ -1,42 +1,29 @@
 ---
-Title : Creative Troubleshooting FAQ
->
-## Recommended Technical Specifications for Creatives
-There are few technical requirements imposed on creatives by Xandr's
-platform. A number of networks and publishers do have such requirements.
-ms.date : 10/28/2023
+title : Creative Troubleshooting FAQ
+description: Learn Creative Troubleshooting FAQs in this page. 
+ms.date : 11/23/2023
 ---
 
 
-# Creative Troubleshooting FAQ
+# Creative troubleshooting FAQ
 
+This page deals with FAQs on Creative Troubleshooting.
 
-
->
-
-## Recommended Technical Specifications for Creatives
+## Recommended technical specifications for creatives
 
 There are few technical requirements imposed on creatives by Xandr's
 platform. A number of networks and publishers do have such requirements.
 Follow the recommendations listed here to ease your use of the platform
 and access as much inventory as possible.
 
-**General Recommendations**
+**General recommendations**
 
 Follow these recommendations when building creatives of any type:
 
-- Limit initial load size to less than 40 KB. This will meet the <a
-  href="https://support.google.com/adwordspolicy/bin/answer.py?hl=en&amp;answer=94230"
-  class="xref" target="_blank">Google Display Network's limit of 50 KB</a>
+- Limit initial load size to less than 40 KB. This will meet the [Google Display Network's limit of 50 KB](https://support.google.com/adspolicy/answer/94230?hl=en)
   as well.
-- Xandr provides standard <a
-  href="creative-template-service.md"
-  class="xref" target="_blank">Creative Templates</a> for all <a
-  href="expandables-and-rich-media.md"
-  class="xref" target="_blank">Supported Media Types</a>. You may also
-  create your own custom templates. You can use the <a
-  href="creative-template-service.md"
-  class="xref" target="_blank">Creative Template API Service</a> to
+- Xandr provides standard [Creative Templates](creative-template-service.md) for all [Supported Media Types](expandables-and-rich-media.md). You may also
+  create your own custom templates. You can use the [Creative Template API Service](creative-template-service.md) to
   create your own template.
 - Avoid auto-initiated audio; it's frequently blocked by publishers.
 
@@ -47,9 +34,7 @@ Follow these recommendations when building video creatives:
 - Use H264 video encoding
 - Use MP3/AAC audio
 - Use the MP4 video container format
-- Use at least VAST version 2.0 (See the <a
-  href="http://www.iab.net/guidelines/508676/digitalvideo/vast/vast_copy"
-  class="xref" target="_blank">VAST Documentation</a> for details.)
+- Use at least VAST version 2.0 (See the [VAST Documentation](https://www.iab.com/) for details.)
 
 The VAST standard specifies that VAST creatives be represented in XML
 (Extensible Markup Language).
@@ -66,9 +51,7 @@ Follow these recommendations when creating expandables:
 
 - Use the 'click to expand' or 'mouseover to expand' methods to access
   the most supply.
-- For more details, see <a
-  href="expandables-and-rich-media.md"
-  class="xref" target="_blank">Expandables and Rich Media</a>.
+- For more details, see [Expandables and Rich Media](expandables-and-rich-media.md).
 
 In order to properly run expandables, the creative must expand correctly
 in the Impression Bus preview, in other words, when loaded outside of an
@@ -107,7 +90,7 @@ plugin to properly render. The Flash file controls user interactions, so
 when they are clicked, they click-through to a new window by loading the
 following ActionScript function (depending on the version):
 
-``` pre
+``` 
 getURL([URL], “_blank”); (ActionScript 2.0)
 navigateToURL([URL], “_blank”); (ActionScript 3.0)
 ```
@@ -121,34 +104,14 @@ context of a JavaScript wrapper. The advertiser can now upload a Flash
 file and specify the landing page. We can also dynamically pass in our
 click tracker, which allows the creative to track clicks.
 
-class="note tip note_tip">
 
-<b>Tip:</b>
+> [!TIP]
+> - The clickTAG macro is case sensitive. The variant of clickTAG used by the developer needs to be the same as that of the ad server in order to work. Many ad servers get around this by passing in multiple variants (ClickTag,clickTag,clicktag) with the same click URL value, hoping that one of them works. You can find the variant of clickTAG that your Flash Developer used by decompiling the Flash file.
+> - Using [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/), If you click on a
+> creative and the first URL you see is the Advertiser landing page, then you know the Flash file has a hardcoded URL. Decompile the Flash file to confirm.
+ > - The clickTAG variants, as well as the clickTAG value, can be found by using the Developer tools for Chrome or Firefox. Right click on the creative and choose Inspect Element.Look for: “flashvars&clickTAG=\[URL1\]&clickTag=\[URL2\]"
 
-- The clickTAG macro is case sensitive. The variant of clickTAG used by
-  the developer needs to be the same as that of the ad server in order
-  to work. Many ad servers get around this by passing in multiple
-  variants (ClickTag,clickTag,clicktag) with the same click URL value,
-  hoping that one of them works. You can find the variant of clickTAG
-  that your Flash Developer used by decompiling the Flash file.
-- Using
-  <a href="https://addons.mozilla.org/en-US/firefox/addon/tamper-data/"
-  class="xref" target="_blank">Tamper Data</a>, If you click on a
-  creative and the first URL you see is the Advertiser landing page,
-  then you know the Flash file has a hardcoded URL. Decompile the Flash
-  file to confirm.
-- The clickTAG variants, as well as the clickTAG value, can be found by
-  using the Developer tools for Chrome or Firefox. Right click on the
-  creative and choose Inspect Element.Look for:
-  “flashvars&clickTAG=\[URL1\]&clickTag=\[URL2\]"
-
-
-
-
-
->
-
-## Creative Doesn't Display
+## Creative doesn't display
 
 **My creative isn't showing up. What's wrong?**
 
@@ -164,10 +127,8 @@ behind blank creatives.
 If your tag code is correct, load a creative preview using our server
 URL:
 
-<a href="https://creative-preview-an.com/cached/creative/insert"
-class="xref" target="_blank"><code
-id="creative-troubleshooting-faq__codeblock_acq_mhn_4wb"
-class="ph codeph">https://creative-preview-an.com/cached/creative/insert creative id here</code></a>
+[https://creative-preview-an.com/cached/creative/insert
+creative id here](https://creative-preview-an.com/cached/creative/insert)
 
 After refreshing a few times, if the page is blank, you should inspect
 the creative's tag content. Check to see if there are any glaring format
@@ -189,7 +150,7 @@ wrappers or altering incorrect formatting doesn't remedy the problem and
 the creative is loading in your browser, feel free to submit a support
 ticket.
 
-**Allowing our Audit IPs and Domains**
+**Allowing our audit IPs and domains**
 
 Another reason why the creative may not be displaying is the creative
 contains geotargeting elements that control where the creative is
@@ -197,14 +158,12 @@ allowed to render. If this is the case, you will have to allow our Audit
 IPs and Domains:
 
 - LA servers:
-  - Input 68.67.139.192 /26 (netblock) at
-    <a href="https://www.magic-cookie.co.uk/iplist.md" class="xref"
-    target="_blank">https://www.magic-cookie.co.uk/iplist.md</a> for a
+  - Input 68.67.139.192 /26 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](https://www.magic-cookie.co.uk/iplist.html)
+     for a
     list of IPs
 - NY office:
-  - Input 207.237.150.0 /24 (netblock) at
-    <a href="https://www.magic-cookie.co.uk/iplist.md" class="xref"
-    target="_blank">https://www.magic-cookie.co.uk/iplist.md</a> for a
+  - Input 207.237.150.0 /24 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](https://www.magic-cookie.co.uk/iplist.html)
+     for a
     list of IPs
   - 68.67.164.193
   - 68.67.164.194
@@ -235,14 +194,11 @@ IPs and Domains:
   - 45.146.55.72
   - 136.144.42.114
 - Domains:
-  - <a href="http://adnxs.net/" class="xref" target="_blank">adnxs.net</a>
-  - <a href="http://adnxs.com/" class="xref" target="_blank">adnxs.com</a>
-  - <a href="http://creative-preview-an.com/" class="xref"
-    target="_blank">creative-preview-an.com</a>
-  - <a href="http://audit.adnxs.net/" class="xref"
-    target="_blank">audit.adnxs.net</a>
-  - <a href="http://cq-preview.adnxs.net/" class="xref"
-    target="_blank">cq-preview.adnxs.net</a>
+  - [adnxs.net](http://adnxs.net/)
+  - [adnxs.com](http://adnxs.com/)
+  - [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)
+  - [audit.adnxs.net](https://cq-auditor.adnxs.net/login?next=%2F)
+  - [cq-preview.adnxs.net](http://cq-preview.adnxs.net/)
 
 **Why did I receive an email saying my creative was deactivated?**
 
@@ -253,7 +209,7 @@ corresponding member(s) of any deactivated creatives. As of March 2018
 expired creatives will be automatically reactivating if your bidder
 resumes bidding with the creative.
 
-**Ad Verification services**
+**Ad verification services**
 
 If your client is using Ad Verification services, the creative may not
 display, by default, in our Audit UI or in the impbus preview url. We
@@ -261,7 +217,7 @@ have created the macro, ${IS_PREVIEW}, to signal the ad verification
 vendor that the creative should render. This macro will be replaced with
 a 1 when we are previewing it.
 
-``` pre
+``` 
 <IFRAME SRC="https://fw.adsafeprotected.com/rjsi/dc/54321/123456/adi/N1068.151790.ABCDE/B6797568.72;sz=160x600;click=${CLICK_URL};ord=${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}" WIDTH=160 HEIGHT=600 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0
 SCROLLING=no BORDERCOLOR='#000000'>
     <SCRIPT language='JavaScript1.1' SRC="https://fw.adsafeprotected.com/rjss/dc/54321/455394/adj/N1068.151790.ABCDE/B6797568.72;abr=!ie sz=160x600;click=${CLICK_URL};ord=${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}">
@@ -278,7 +234,7 @@ In order for ad safe creatives to properly click through to their
 landing page from our UI and audit UI preview, adsafe_preview macro must
 be used in both the \<script\> and \<no script\> sections.
 
-``` pre
+``` 
 <IFRAME SRC="https://fw.adsafeprotected.com/rjsi/dc/23354/1869069/adi/N3867.456584.XAXIS.COM/B7976864.14;sz=300x250;pc=[TPAS_ID];ord=${CACHEBUSTER};click=${CLICK_URL}?adsafe_preview=${IS_PREVIEW}" WIDTH=300 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
 <SCRIPT language='JavaScript1.1' SRC="https://fw.adsafeprotected.com/rjss/dc/23354/1869070/adj/N3867.456584.XAXIS.COM/B7976864.14;abr=!ie;sz=300x250;pc=[TPAS_ID];ord=${CACHEBUSTER};click=${CLICK_URL}?adsafe_preview=${IS_PREVIEW}">
 </SCRIPT>
@@ -289,15 +245,11 @@ be used in both the \<script\> and \<no script\> sections.
 </IFRAME>
 ```
 
-class="note tip note_tip">
-
-<b>Tip:</b> If Your Creative Failed Audit And
-You See a "} catch(e){ }" in the preview, then creative is using the
-wrong format. Adjust the format to be a javascript url.
+> [!TIP]
+> If Your Creative Failed Audit And You See a "} catch(e){ }" in the preview, then creative is using the wrong format. Adjust the format to be a javascript url.
 
 
-
-``` pre
+``` 
 <script type="text/javascript">
 document.write('<scr' + 'ipt src="https://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=&PluID=0&ord=&rtu=-1 "></scr' + 'ipt>');
 </script>
@@ -313,13 +265,8 @@ a scripting language that defines variables and functions, which result
 in a certain output. Xandr must wrap JS creatives in HTML so that the
 browser is told that it is looking at a language.
 
-
-
-<b>Note:</b> Often, JavaScript tags come
-pre-wrapped in HTML. Please note, if the JS is surrounded by HTML markup
-tags, then the creative is HTML!
-
-
+> [!NOTE]
+> Often, JavaScript tags come pre-wrapped in HTML. Please note, if the JS is surrounded by HTML markup tags, then the creative is HTML!
 
 **When should I use the 'Serve in iFrame' option?**
 
@@ -348,9 +295,9 @@ simple adjustment can allow the expandable to serve well in our preview,
 in our audit UI, and most importantly, in a live environment. Let's take
 the following tag as an example:
 
-**Example Tag**
+**Example tag**
 
-``` pre
+``` 
 <script src="https://bs.serving-sys.com/BurstingPipe/adServer.bs?ncu=$$${CLICK_URL_ENC}$$&cn=rsb&c=28&pli=XXXXXXX&PluID=0&w=728&h=90&ord=${CACHEBUSTER}">
 </script>
 <noscript>
@@ -364,9 +311,9 @@ The change needs to be made in the first part of the tag, specifically
 in the "src" URL. A "&ifrm=-1" value needs to be added to the URL, as
 shown below:
 
-**Modified Tag (\*\*please scroll over\*\*)**
+**Modified tag (\*\*please scroll over\*\*)**
 
-``` pre
+``` 
 <script src="https://bs.serving-sys.com/BurstingPipe/adServer.bs?ncu=$$${CLICK_URL_ENC}$$&cn=rsb&c=28&pli=XXXXXXX&PluID=0&w=728&h=90&ord=${CACHEBUSTER}&ifrm=-1">
 </script>
 <noscript>
@@ -390,9 +337,6 @@ have an initial load size that is greater than 40kb.
 
 Most likely the the wrong tag size was selected.
 
-
-
->
 
 ## SSL
 
@@ -461,7 +405,7 @@ serve on non-SSL inventory.
 Yes. All files loaded by the creative must be secure. This applies to
 pixels and piggyback pixels.
 
-**Sherlock Testing**
+**Sherlock testing**
 
 Sherlock, our automated creative quality testing engine, will scan your
 creatives to ensure that all content associated with a creative is
@@ -471,22 +415,15 @@ secure.
   loading at least one insecure URL, or the SSL certificate was invalid.
 - Automated emails will be sent that will tell you what domain served
   the insecure content. You can setup the email addresses to receive
-  these notifications on your member. Please see the <a
-  href="member-service.md"
-  class="xref" target="_blank">Member Service</a> and look for the
+  these notifications on your member. Please see the [Member Service](member-service.md) and look for the
   audit_notify_email and sherlock_notify_email fields.
 - Work with the developer to ensure only secure URLs are returned, then
   opt the creative back into SSL audit.
 
-For more information about our automated testing engine, see <a
-href="sherlock---creative-quality-control.md"
-class="xref" target="_blank">Sherlock - Creative Quality Control</a>.
+For more information about our automated testing engine, see [Sherlock - Creative Quality Control](sherlock-creative-quality-control.md).
 
 
-
->
-
-## Creative Templates
+## Creative templates
 
 Each creative needs a template that meets the following criteria.
 
@@ -501,9 +438,7 @@ template users would need to upload HTML and JavaScript tags for every
 ad you would want to run on Xandr, which is not efficient.
 
 Creative templates are never creative specific and are general in scope.
-Each template can be assigned using API the <a
-href="creative-template-service.md"
-class="xref" target="_blank">creative template service</a>. Creative
+Each template can be assigned using API the [creative template service](creative-template-service.md). Creative
 specific elements of the template are denoted using macros. The
 Impression Bus will populate these macros automatically given the
 creative information.
@@ -512,18 +447,18 @@ Important fields in the template :
 
 - content_html – The creative wrapper in HTML
 
-  ``` pre
+  ``` 
   <a href="${CLICK_URL}" target="_blank">
   <img width="${CREATIVE_WIDTH}" height="${CREATIVE_HEIGHT}" style="border-style: none" src="${MEDIA_URL}" /> </a>
   ```
 
 - content_js – The creative wrapper in JavaScript.
 
-  ``` pre
+  ``` 
   document.write('<a href="${CLICK_URL}" target="_blank"><img width="${CREATIVE_WIDTH}" height="${CREATIVE_HEIGHT}" style="border-style: none" src="${MEDIA_URL}"/></a>');
   ```
 
-HTML Image Template:
+**HTML image template**:
 
 - The \<a\> (anchor) HTML tag makes its contents “clickable”
 - “href” (hyperlink reference): Contains the URL loaded on click
@@ -533,13 +468,8 @@ HTML Image Template:
   - “\_blank”: Load in new window/tab \<= This is needed in all of ad
     serving
 
-class="note tip note_tip">
-
-<b>Tip:</b> If Your Creative Contains An \<a\>
-HTML Tag Without A target=“\_blank” Parameter, And It Clicks Through In
-The Same Window, you need to add the \_blank element.
-
-
+> [!TIP]
+>  If Your Creative Contains An \<a\> HTML Tag Without A target=“\_blank” Parameter, And It Clicks Through In The Same Window, you need to add the \_blank element.
 
 - On “tt” (iFrame) call:
   - If the creative template has a “content_html”, then that will be
@@ -555,29 +485,20 @@ The Same Window, you need to add the \_blank element.
   - If creative template does not have a “content_js”, then blank, even
     if the template has a “content_html”
 
-class="note tip note_tip">
 
-<b>Tip:</b> If you don’t define content_js In
-your template, then the creative will not display properly to users with
-no javascript. The creative will still preview correctly in the audit
-UI.
+> [!TIP]
+> If you don’t define content_js In your template, then the creative will not display properly to users with no javascript. The creative will still preview correctly in the audit UI.
 
+## Standard creative macros:
 
-
-Standard Creative Macros:
-
-``` pre
+``` 
 ${CLICK_URL} – Xandr click tracker + landing page URL
 ${CREATIVE_WIDTH}
 ${CREATIVE_HEIGHT}
 ${MEDIA_URL} – The URL of the image. Speaking about creative templates in general, the URL of the output type is specified when a creative is set up. 
 ```
 
-
-
->
-
-## Audit Related
+## Audit related
 
 **Can I pass macro values into the creative audit that are used when the
 creative is previewed?**
@@ -609,19 +530,13 @@ fields audit_status and msft_audit_status will be populated accordingly.
 
 **How can I set a creative to be active?**
 
-This can be done using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> by setting the active
-field to "active." This can also be done through the
-<a href="https://bidder.xandr.com/" class="xref" target="_blank">bidder
-UI</a> in the Creatives tab, by selecting the creative, then checking
-the "active" box in the full edit screen.
+This can be done using the [creative-service](creative-service.md) by setting the active
+field to "active." This can also be done through the [bidder
+UI](https://bidder.xandr.com/login) in the Creatives tab, by selecting the creative, then checking the "active" box in the full edit screen.
 
 **How do I make sure my creatives aren't audited?**
 
-Using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>, set the audit status
+Using the [creative-service](creative-service.md), set the audit status
 to "no-audit".
 
 **How do I put my creative in the audit queue?**
@@ -629,17 +544,16 @@ to "no-audit".
 Using the <a
 href="creative-service.md"
 class="xref" target="_blank">Creative Service</a>, set the allow_audit
-field to true. This can also be done through the
-<a href="https://bidder.xandr.com/" class="xref" target="_blank">bidder
-UI</a> in the Creatives tab, by selecting the creative, then checking
+field to true. This can also be done through the [bidder
+UI](https://bidder.xandr.com/)
+ in the Creatives tab, by selecting the creative, then checking
 "resubmit" in the "Audit Status" field. The creative must also be active
 and the member the creative is registered under must also be active.
 
 **If I disagree with the results of an audit, what should I do?**
 
 Use our
-<a href="https://help.xandr.com/" class="xref" target="_blank">Customer
-Support</a> form to contact the Ad Quality team.
+[Customer Support](https://help.xandr.com/s/login/)form to contact the Ad Quality team.
 
 **What does it mean when is_expired=1?**
 
@@ -651,9 +565,7 @@ must be set to active and re-audited if it has expired.
 
 There are three methods that are available:
 
-1.  Using the <a
-    href="creative-service.md"
-    class="xref" target="_blank">Creative Service</a>:
+1. Using the [Creative Service](creative-service.md):
     - You can make daily calls using the min_last_modified parameter, in
       the format of YYYY-MM-DD to see all creatives that have had their
       status changed. You should also use the num_elements and
@@ -665,22 +577,17 @@ There are three methods that are available:
       creatives, but because the API will only return up to 100 objects
       at a time, you can page through the results by using the
       start_element parameter.
-2.  Use the <a
-    href="audit-notify-request.md"
-    class="xref" target="_blank">audit notify request</a>:
+1. Use the [audit notify request](audit-notify-request.md):
     - When creatives are audited, audit notify requests are sent to the
-      handler if this has been set up in the <a
-      href="bidder-service.md"
-      class="xref" target="_blank">Bidder Service</a>.
+      handler if this has been set up in the [Bidder Service](bidder-service.md).
     - In order to set use an audit notify request handler, you must have
       a single endpoint that can receive and process these requests as
       they are sent.
-3.  Use an excel export
+1. Use an excel export
     - If you would like a weekly report of your creative status sent by
       email, please speak with your Xandr technical and account team.
-4.  Use the
-    <a href="https://bidder.xandr.com/" class="xref" target="_blank">bidder
-    UI</a> to view the creatives.
+1. Use the [bidder UI](https://bidder.xandr.com/login)
+     to view the creatives.
 
 **What is returned when I call the creative service?**
 
@@ -734,10 +641,7 @@ language, technical attribute or buyer, so an otherwise-valid creative
 may be banned by a seller.
 
 
-
->
-
-## Uploading Creatives
+## Uploading creatives
 
 **Can I upload multiple creatives in one API call?**
 
@@ -747,15 +651,11 @@ in a rolling 60-second window.
 
 **How can I upload creatives?**
 
-You can upload creatives through the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> API.
+You can upload creatives through the [Creative Service](creative-service.md) API.
 
 **How do I upload a Flash creative?**
 
-In the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> API, you can either
+In the [Creative Service](creative-service.md) API, you can either
 provide a link in the "media_url" field, or provide a tag using the
 "content" field. If you host a javascript file that delivers the flash,
 you would specify the URL of your javascript in the media_url, and the
@@ -768,7 +668,7 @@ iframe that delivers the flash. For example, you may use format
 "iframe-html" (or raw-js, if you enter the raw javascript - not if you
 use an html tag that calls javascript) and set the content to be:
 
-``` pre
+``` 
 <SCRIPT 
  TYPE="text/javascript" 
  SRC="https://ad.sample_site.com/ad_server/ads.js?my_ad_id=12345&price_paid=${PRICE_PAID}&custom_macro=${custom_macro}">
@@ -803,9 +703,6 @@ appropriately. For example, we will use document.write(...) around your
 iframe creative for javascript tags.
 
 
-
->
-
 ## content vs. original_content
 
 - original_content: The tag exactly as it is uploaded to the api.
@@ -815,9 +712,3 @@ iframe creative for javascript tags.
   checked, both content and original content will be exactly the same.
 - HTML Tag with the serve in iFrame option unchecked, content and
   original content will be different.
-
-
-
-
-
-

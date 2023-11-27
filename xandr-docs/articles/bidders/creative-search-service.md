@@ -1,392 +1,61 @@
 ---
-Title : Creative Search Service
-Description : This read-only service allows you to search for creatives based on
-ms.date : 10/28/2023
-specific criteria such as audit status, ID, size, etc. To add creatives
+title : Bidders - Creative Search Service
+description : Learn how this read-only service allows you to search for creatives based on specific criteria such as audit status, ID, size, etc.
+ms.date : 11/21/2023
+
 ---
 
 
-# Creative Search Service
-
-
+# Bidders - Creative search service
 
 This read-only service allows you to search for creatives based on
 specific criteria such as audit status, ID, size, etc. To add creatives
-to the system, see the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.
+to the system, see the [Creative Service](creative-service.md).
 
-
-
-<b>Warning:</b> Since this service searches
-all creatives on Xandr's platform (not just your
-own), a search that is too broad might cause an error. To ensure that
-you get results, please narrow your search as much as possible.
-
-
-
+> [!WARNING]
+> Since this service searches all creatives on Xandr's platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, please narrow your search as much as possible.
 
 ## Implementation
 
-**REST API**
+### REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00004945__section_ppx_ftd_nwb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP method</th>
-<th id="ID-00004945__section_ppx_ftd_nwb__entry__2"
-class="entry colsep-1 rowsep-1">End point</th>
-<th id="ID-00004945__section_ppx_ftd_nwb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__2"><a
-href="https://api..com/creative-search" class="xref"
-target="_blank">https://api..com/creative-search</a>
-<p>(creative_search JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__3">To search for
-creatives.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__2"><a
-href="https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC"
-class="xref"
-target="_blank">https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC</a>
-<p>(creative_search JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__section_ppx_ftd_nwb__entry__3">Search for
-creatives and sort results.
+| HTTP method | End point                                                                           | Description                                                                                                                                                                                                                                                                               |
+|-------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POST        | `[https://api..com/creative-search](https://api..com/creative-search)` (creative_search JSON)                             | To search for creatives.                                                                                                                                                                                                                                                                  |
+| POST        | `[https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC](https://api..com/creative-search?sort=FIELD_NAME.ASC_OR_DESC)` (creative_search JSON) | Search for creatives and sort results. <br> **Note**: The fields used to search for creatives are not exactly the same as the fields returned. This is because the returned objects are drawn from the [Creative Service](creative-service.md) and formatted accordingly. This service will only search active creatives. |
 
-<b>Note:</b> The fields used to search for
-creatives are not exactly the same as the fields returned. This is
-because the returned objects are drawn from the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> and formatted
-accordingly.
-<p>This service will only search active creatives.</p>
-</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00004945__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00004945__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00004945__entry__12"
-class="entry colsep-1 rowsep-1">Sort?</th>
-<th id="ID-00004945__entry__13" class="entry colsep-1 rowsep-1">Use</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">creative_ids</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of integers</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes, use "id" in query string.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their
-IDs. </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by terms in their
-descriptions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of enums</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their audit
-status. Possible values: "no_audit", "pending", "rejected",
-"audited".</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">ad_profile_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Must be used with</strong>
-<code class="ph codeph">brand_status</code>. Search for a creative by
-the ID of its ad profile.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">brand_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of enums</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Must be used with</strong>
-<code class="ph codeph">ad_profile_id</code>. Search for creatives by
-their brand status. For example, if this is set to "trusted", all
-trusted brands within the ad profiles specified in <code
-class="ph codeph">ad_profile_id</code> will be returned in the response.
-Possible values: "trusted", "case-by-case", "banned". The brand status
-field is only returned in the response when you use this filter.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">review_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of enums</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives based on their
-review status (from the associated ad profiles). Possible values:
-"reviewed", "unreviewed". The review status field is only returned in
-the response when you use this filter.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">uploaded_since</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives that were uploaded
-since this date. Format: "YYYY-MM-DD HH:MM:SS".</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">modified_since</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives that were modified
-since this date. Format: "YYYY-MM-DD HH:MM:SS".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">formats</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of enums</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes, use "format" in query string.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their formats.
-Possible values: "url-html", "url-js", "flash", "image", "raw-js",
-"raw-html", "iframe-html", "url-vast", "text".</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">media_subtype</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of enums</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Deprecated, use</strong> <code
-class="ph codeph">media_subtype_ids</code> instead. Search for creatives
-by their media subtypes. Possible values: "Banner", "Popup",
-"Popunder".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">media_subtype_ids</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of integers</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes, use "media_subtype_id" in query
-string.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their media
-subtype via ID. You can use the <a
-href="xandr-api/media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a> to look up the
-desired IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">media_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for a creative by its URL.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">media_content</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for a creative by the data in
-its original_content field (see <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">sizes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes, use "width" and "height" in query
-string.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their sizes,
-for example, "728x90".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">brand_ids</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of integers</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by the IDs of
-their brands.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">member_ids</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">array of integers</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes, use "member_id" in query
-string.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Must be used with</strong>
-<code class="ph codeph">member_action</code>. Search for creatives by
-the IDs of their members.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">member_action</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Must be used with</strong>
-<code class="ph codeph">member_ids</code>. If this is set to "exclude",
-you exclude the members specified in <code
-class="ph codeph">member_ids</code> from the search. Otherwise, the
-specified IDs are included.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">template_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13">Search for creatives by their creative
-template IDs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">size_in_bytes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Not a filter.</strong> Sort
-results in ascending/descending size order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">click_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Not a filter</strong>. Sort
-results in ascending/descending alphabetical click URL order.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__10"><code
-class="ph codeph">landing_page_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__12">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00004945__entry__13"><strong>Not a filter</strong>. Sort
-results in ascending/descending alphabetical landing page URL
-order.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field             | Type              | Sort?                                          | Use                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------|-------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ad_profile_id`     | int               | No                                             | **Must be used with** `brand_status`. Search for a creative by the ID of its ad profile.                                                                                                                                                                                                                                                                                    |
+| `audit_status`      | array of enums    | Yes                                            | Search for creatives by their audit status. Possible values: "no_audit", "pending", "rejected", "audited".                                                                                                                                                                                                                                                            |
+| `brand_ids`         | array of integers | No                                             | Search for creatives by the IDs of their brands.                                                                                                                                                                                                                                                                                                                      |
+| `brand_status`      | array of enums    | No                                             | **Must be used with** `ad_profile_id`. Search for creatives by their brand status. For example, if this is set to "trusted", all trusted brands within the ad profiles specified in `ad_profile_id` will be returned in the response. Possible values: "trusted", "case-by-case", "banned". The brand status field is only returned in the response when you use this filter. |
+| `click_url`         | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending alphabetical click URL order.                                                                                                                                                                                                                                                                                      |
+| `creative_ids`      | array of integers | Yes, use "id" in query string.                 | Search for creatives by their IDs.                                                                                                                                                                                                                                                                                                                                    |
+| `description`       | string            | No                                             | Search for creatives by terms in their descriptions.                                                                                                                                                                                                                                                                                                                  |
+| `formats`           | array of enums    | Yes, use "format" in query string.             | Search for creatives by their formats. Possible values: "url-html", "url-js", "flash", "image", "raw-js", "raw-html", "iframe-html", "url-vast", "text".                                                                                                                                                                                                              |
+| `landing_page_url`  | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending alphabetical landing page URL order.                                                                                                                                                                                                                                                                               |
+| `media_content`     | string            | No                                             | Search for a creative by the data in its original_content field (see [Creative Service](creative-service.md)).                                                                                                                                                                                                                                                                               |
+| `media_subtype`     | array of enums    | No                                             | **Deprecated**, **use** `media_subtype_ids` instead. Search for creatives by their media subtypes. Possible values: "Banner", "Popup", "Popunder".                                                                                                                                                                                                                              |
+| `media_subtype_ids` | array of integers | Yes, use "media_subtype_id" in query string.   | Search for creatives by their media subtype via ID. You can use the [Media Subtype Service](../digital-platform-api/media-subtype-service.md) to look up the desired IDs.                                                                                                                                                                                                                                                 |
+| `media_url`         | string            | Yes                                            | Search for a creative by its URL.                                                                                                                                                                                                                                                                                                                                     |
+| `member_action`     | enum              | No                                             | **Must be used with** `member_ids`. If this is set to "exclude", you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included.                                                                                                                                                                                                |
+| `member_ids`        | array of integers | Yes, use "member_id" in query string.          | **Must be used with** `member_action`. Search for creatives by the IDs of their members.                                                                                                                                                                                                                                                                                    |
+| `modified_since`    | timestamp         | No                                             | Search for creatives that were modified since this date. Format: "YYYY-MM-DD HH:MM:SS".                                                                                                                                                                                                                                                                               |
+| `review_status`     | array of enums    | No                                             | Search for creatives based on their review status (from the associated ad profiles). Possible values: "reviewed", "unreviewed". The review status field is only returned in the response when you use this filter.                                                                                                                                                    |
+| `size_in_bytes`     | string            | Yes                                            | **Not a filter**. Sort results in ascending/descending size order.                                                                                                                                                                                                                                                                                                        |
+| `sizes`             | array of strings  | Yes, use "width" and "height" in query string. | Search for creatives by their sizes, for example, "728x90".                                                                                                                                                                                                                                                                                                           |
+| `template_id`       | int               | Yes                                            | Search for creatives by their creative template IDs.                                                                                                                                                                                                                                                                                                                  |
+| `uploaded_since`    | timestamp         | No                                             | Search for creatives that were uploaded since this date. Format: "YYYY-MM-DD HH:MM:SS".                                                                                                                                                                                                                                                                               |
 
 ## Examples
 
 **Search for all banner creatives that have passed
 Xandr's audit**
 
-``` pre
+``` 
 $ cat creative_search
 {
    "creative_search": {
@@ -400,7 +69,7 @@ $ cat creative_search
 }
 ```
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/creative-search'
 {
    "response": {
@@ -459,7 +128,7 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/
 **Search for all flash creatives that have been uploaded since
 2012-01-01 00:00:00**
 
-``` pre
+``` 
 $ cat creative_search
 {
    "creative_search": {
@@ -471,7 +140,7 @@ $ cat creative_search
 }
 ```
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/creative-search'
 {
    "response": {
@@ -526,7 +195,7 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/
 **Search for all 728x90 and 300x250 image creatives that belong to
 member 333**
 
-``` pre
+``` 
 $ cat creative_search
 {
    "creative_search": {
@@ -544,7 +213,7 @@ $ cat creative_search
 }
 ```
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/creative-search'
 {
    "response": {
@@ -595,9 +264,3 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.adnxs.com/
    }
    }
 ```
-
-
-
-
-
-
