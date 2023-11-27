@@ -1,5 +1,5 @@
 ---
-Title: Inventory - FAQ
+title: Inventory - FAQ
 description: This article provides answers to the frequently asked questions on the inventory audits.
 ms.date: 11/24/2023
 ---

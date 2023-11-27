@@ -48,7 +48,7 @@ It is important to understand how our platform objects relate to one another. Be
 - The diagram below illustrates this hierarchy
   - With the previous member breakouts, we held a mapping of which of a bidder's seats corresponded to which breakout member. This allowed bidders to bid with their internal IDs 100% of the time.
   - Since you will be integrating with only one member, and with buyer seat bidding, you will only have the one default member, and do not have to worry about the seat-member mapping.
-  :::image type="content" source="media/hierarchy.png" alt-text="Diagram that explains how the bidder's business logic can be configured.":::
+  :::image type="content" source="media/hierarchy.png" alt-text="Diagram that illustrates the hierarchy between bidders, members, and seats.":::
 
 **Users**
 
@@ -168,7 +168,7 @@ $ curl -b cookies $IB/bidder/123
       "ready_uri": "/status/ready",
       "send_class_2": true,
       "send_class_3": true,
-      "send_owned_blacklist": false,
+      "send_owned_blocklist": false,
       "send_public_deals": false,
       "send_unaudited": true,
       "setuid_function": null,
@@ -275,7 +275,7 @@ $ curl -b $IB/member/1234
       "default_tag_id": null,
       "description": null,
       "developer_id": null,
-      "domain_blacklist_email": null,
+      "domain_blocklist_email": null,
       "dongle": null,
       "email_code": null,
       "enable_click_and_imp_trackers": false,
@@ -329,7 +329,7 @@ In the example below, the targeting breaks down like this:
 - [Accept US based traffic only](./country-service.md)
 - Banner traffic, of all sizes
 - Web traffic
-- [Allow for unknown users](./actions.mdunknown-users.md)
+- [Allow for unknown users](./unknown-users.md)
 
 **Bidder profile example JSON**
 

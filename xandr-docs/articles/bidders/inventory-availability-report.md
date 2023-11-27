@@ -1,10 +1,10 @@
 ---
-title: Inventory Availability Report
+title: Bidders - Inventory Availability Report
 description: Use the Inventory availability report to get an insight into the types of inventory available on the platform.
 ms.date: 11/27/2023
 ---
 
-# Inventory availability report
+# Bidders - Inventory availability report
 
 Inventory availability report offers insight into the types of inventory available on the platform. These reports are available by request only; please use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Please also note:
 
