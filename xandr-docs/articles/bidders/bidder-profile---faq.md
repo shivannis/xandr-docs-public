@@ -42,7 +42,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
 
   - For example, if you wanted to receive bid requests from all inventory except that inventory classified as Toolbar, you should adjust your bidder profile to contain the following information:
 
-    ``` pre
+    ``` 
     "use_inventory_attribute_targets": true,
     "inventory_attribute_targets": [
                 {
@@ -106,7 +106,7 @@ There are a few steps in this process. The first would be deciding on what logic
 
 The first step is creating the profiles themselves. A profile is an object on the Xandr platform that can be created using the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md). The sample below can be used in a POST to create the profile.
 
-``` pre
+``` 
 {"profile":{
  "segment_targets": [{"id":"12345","action":"include"}]}}
 ```
@@ -114,7 +114,7 @@ The first step is creating the profiles themselves. A profile is an object on th
 This will return the profile ID in Xandr. We will assume that this profile has ID 100. We will now need to make the child profiles. The
 following two code samples can be used in POSTs to the bidder profile service.
 
-``` pre
+``` 
 {"profile":{
  "country_action":"include",
  "country_targets": [{"country":"US"},{"country":"CA"}],
@@ -123,7 +123,7 @@ following two code samples can be used in POSTs to the bidder profile service.
 
 and
 
-``` pre
+``` 
 {"profile":{
  "country_action":"include",
  "country_targets": [{"country":"US"}],
@@ -132,7 +132,7 @@ and
 
 We will assume that these two profiles are created and given IDs of 101 and 102, respective. If you are bidder 15, you will need to update your bidder using the [Bidder Service](bidder-service.md). Using the following in a PUT, you can update your bidder to have a parent profile with profile 100 and child profiles of profiles 101 and 102 with the following:
 
-``` pre
+``` 
 {"bidder":{
  "id":15,
  "parent_profile_id":100,

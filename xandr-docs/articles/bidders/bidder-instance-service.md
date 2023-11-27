@@ -51,7 +51,7 @@ Authentication is always the first step when using the API Services. The authent
 
 ### View existing instances
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -76,7 +76,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 
 I have a New York (NYM2) instance; now I want to register my LAX1 bidder instance. I create the following JSON:
 
-``` pre
+``` 
 $ cat bidder_instance
 {
    "instance":{
@@ -92,7 +92,7 @@ $ cat bidder_instance
 
 Then to add this new instance to my bidder (2):
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST --data-binary @bidder_instance 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -104,7 +104,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @bidder_instance 'https://api
 
 And to view the newly added instance:
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2/53'
 {
    "response":{
@@ -129,7 +129,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2/53'
 
 If I want to add a QPS cap to an existing instance:
 
-``` pre
+``` 
 $ cat bidder-instance
 {
    "instance":{
@@ -148,7 +148,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder-instance  "https://api
 
 Then if I want to view the instance:
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{
@@ -183,7 +183,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 
 If I need to change an IP address:
 
-``` pre
+``` 
 $ cat bidder-instance
 {
    "instance":{
@@ -202,7 +202,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @bidder-instance  "https://api
 
 Then to view the current status of all instances for my bidder(2):
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/bidder-instance/2'
 {
    "response":{

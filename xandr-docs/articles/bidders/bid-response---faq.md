@@ -12,7 +12,7 @@ ms.date: 10/28/2023
 
 The [Bid Response](incoming-bid-response-from-bidders.md) includes a `seatbid` array object. Each object within the array is a response. For each element in the `seatbid` array you must specify the `seat` (member ID) for which are you responding, along with the other [required fields](incoming-bid-response-from-bidders.md) for the bid response. For example if the bid request had auction ID 12345, and your bidder has two members - 1234 and 4567 - you could submit the following multiple bid responses:
 
-``` pre
+``` 
 {
     "id": "4876290993254515176",
     "seatbid": [{
@@ -81,7 +81,7 @@ The complete list of Xandr macros is available on the [Xandr Macros](xandr-macro
 If you have determined, for example, that this user is part of your user group ABC, you can include a custom macro in the creative's content. In the response object, in the [Bid Response](incoming-bid-response-from-bidders.md), you can specify the values of any custom macros. The following excerpt will replace the custom macro ${MY_USER_GROUP} with ABC and ${SOMETHING_ELSE} with 123.
 **Custom macros are applied after Xandr macros**, so if you have a custom macros of the same name as a Xandr macro, the Xandr value for that macro will take precedence and your value will be ignored.
 
-``` pre
+``` 
 "custom_macros":[
                {
                   "name":"MY_USER_GROUP",

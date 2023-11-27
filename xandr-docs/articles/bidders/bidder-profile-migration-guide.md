@@ -59,7 +59,7 @@ Reference: [Authentication Service](authentication-service.md) and [Bidder Servi
 
 ##### Example
 
-``` pre
+``` 
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/bidder/129" # 129 is a sample bidder ID.
 {
     "response": {
@@ -91,7 +91,7 @@ Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
 ##### Example
 
-``` pre
+``` 
 -> curl -b cookie -c cookie -s "https://api.adnxs.com/profile/129/12345" # 129 is a sample bidder id and 12345 is a sample bider profile ID.
 {
     "response": {

@@ -80,7 +80,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 |:---|:---|:---|:---|
 | `imps_bought` | int | `imps_bought` | The total number of impressions purchased successfully. |
 | `buyer_spend` | money | `buyer_spend` | The amount the buyer pays for the cost of media. |
-| `clicks` | int | clicks`` | The total number of clicks.<br><br>**Note:** Clicks are not logged for external demand partners. |
+| `clicks` | int | `clicks` | The total number of clicks.<br><br>**Note:** Clicks are not logged for external demand partners. |
 | `click_rate_sold` | double | (`clicks` / `imps_bought`)  | The "click-through rate", or CTR.<br><br>**Note:** Clicks are not logged for external demand partners. |
 | `buyer_ecpm` | money | ( `buyer_spend` / `imps_bought` ) * 1000 | The buyer's cost per impression expressed in [eCPM](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
 | `buyer_spend_buyer_curr` | money | `buyer_spend`, expressed in the buyer's currency. | The buyer's total spend in their selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
@@ -96,7 +96,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 The JSON file should include the `report_type "bidder_platform_buyer"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
-``` pre
+``` 
 $ cat report
 {
     "report": {
@@ -121,13 +121,13 @@ $ cat report
 > [!NOTE]
 > To order by day, insert this object into your JSON file after the "columns" array:
 >
-> ``` pre
+> ``` 
 > "orders": ["day"]
 > ```
 
 ### POST the request to the reporting service
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 {
   "response": {
@@ -142,7 +142,7 @@ $ curl -b cookies -c cookies -X POST -d @report 'https://api.adnxs.com/report'
 Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the {{execution_status}}
 is {{"ready"}}. Then use the \*report-download\* service to save the report data to a file, as described in the next step.
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/report?id=bfe2ba2ea54a51115db942d591a7b5d9'
 {
    "response":{
@@ -164,7 +164,7 @@ To download the report data to a file, make another `GET` call with the Report I
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use {{-i}} or {{-v}} in your call to expose the response header.
 
-``` pre
+``` 
 curl -b cookies -c cookies 'https://api.adnxs.com/report-download?id=bfe2ba2ea54a51115db942d591a7b5d9' > report.csv
 ```
 

@@ -1,10 +1,10 @@
 ---
-title: Bid Response
+title: Bidders - Bid Response
 description: Explore this article to understand bid responses, their implementation, fields, types, and detailed set of examples.
 ms.date: 10/28/2023
 ---
 
-# Bid response
+# Bidders - Bid response
 
 > [!NOTE]
 >
@@ -62,7 +62,7 @@ AppNexus does not impose limits on data passed in the custom_macros array or the
 
 ### Single tag response (using creative ID with pixel)
 
-``` pre
+``` 
 {
    "bid_response":{
       "responses":[
@@ -81,7 +81,7 @@ AppNexus does not impose limits on data passed in the custom_macros array or the
 
 #### Single tag, multiple bids (using creative ID with pixel)
 
-``` pre
+``` 
 {
    "bid_response":{
       "responses":[
@@ -108,7 +108,7 @@ AppNexus does not impose limits on data passed in the custom_macros array or the
 
 #### Multi tag response (using creative code and custom macros)
 
-``` pre
+``` 
 {
    "bid_response":{
       "responses":[
@@ -153,7 +153,7 @@ AppNexus does not impose limits on data passed in the custom_macros array or the
 
 #### Response to a deal
 
-``` pre
+``` 
 {
    "bid_response":{
       "responses":[
