@@ -20,7 +20,7 @@ A creative is defined as a object within Xandr's
 system that defines how an ad should be rendered based on the
 HTML/JavaScript code (or a URL that points to the HTML/JavaScript code)
 along with the size of the creative and other values. **According to [Xandr creative
-policy](https://wiki.appnexus.com/display/audit/Creative%2bStandards%2band%2bAuditing), this creative object must always render an ad that has a
+policy](../monetize/ad-quality-and-creative-standards.md), this creative object must always render an ad that has a
 consistent brand, language and size.**
 
 Please see below for a sample JSON that would be submitted to

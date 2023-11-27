@@ -1,6 +1,6 @@
 ---
 title : Submitting a No-Bid Response
-description : Learn when to submit a "no-bid" response and the two types of  no-bids.  
+description : Learn when to submit a "no-bid" response and the two types of no-bids.  
 ms.date : 11/24/2023
 
 ---

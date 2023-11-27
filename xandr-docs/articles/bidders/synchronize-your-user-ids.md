@@ -39,7 +39,7 @@ be stored.
 ## Storing the mapping with Xandr
 
 > [!NOTE]
-> As of April 22, 2019, Xandr no longer supports the userdata_javascript and setuid_function fields. Bidders can make the setuid call directly 
+> As of April 22, 2019, Xandr no longer supports the userdata_javascript and setuid_function fields. Bidders can make the setuid call directly. 
 >
 > Legacy documentation:
 >
