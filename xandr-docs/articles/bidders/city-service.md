@@ -1,247 +1,50 @@
 ---
-Title : City Service
-Description : The read-only City Service allows you to see information about the
-ms.date : 10/28/2023
-cities registered in the Xandr system, including
-the region, designated market area, and country to which each city
-belongs. You can use this service to retrieve the IDs of cities for
+title : Bidders - City Service
+description : Learn how the read-only City Service allows you to see information about the cities registered in the Xandr system. 
+ms.date : 11/20/2023
+
 ---
 
 
-# City Service
-
-
+# Bidders - City service
 
 The read-only City Service allows you to see information about the
 cities registered in the Xandr system, including
 the region, designated market area, and country to which each city
 belongs. You can use this service to retrieve the IDs of cities for
-targeting in campaigns (see `city_targets` in the <a
-href="enhanced-bidder-profiles.md"
-class="xref" target="_blank">Enhanced Bidder Profiles</a>).
-
-
+targeting in campaigns (see `city_targets` in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007a48__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Methods</th>
-<th id="ID-00007a48__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00007a48__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-all cities.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?country_code=COUNTRY_CODE" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?country_code=COUNTRY_CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-all cities in a specific country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?country_name=COUNTRY_NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?country_name=COUNTRY_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-all cities in a specific country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?dma_id=DMA_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?dma_id=DMA_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-all cities in a specific designated market area.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?dma_name=DMA_NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?dma_name=DMA_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-all cities in a specific designated market area.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-a specific city.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city?name=NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city?name=NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">View
-a specific city.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__2"><a
-href="https://api.adnxs.com/city/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/city/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Methods | Endpoint                                             | Example                                               |
+|--------------|------------------------------------------------------|-------------------------------------------------------|
+| GET          | [https://api.adnxs.com/city](https://api.adnxs.com/city)                           | View all cities.                                      |
+| GET          | [https://api.adnxs.com/city?country_code=COUNTRY_CODE](https://api.adnxs.com/city?country_code=COUNTRY_CODE) | View all cities in a specific country.                |
+| GET          | [https://api.adnxs.com/city?country_name=COUNTRY_NAME](https://api.adnxs.com/city?country_name=COUNTRY_NAME) | View all cities in a specific country.                |
+| GET          | [https://api.adnxs.com/city?dma_id=DMA_ID](https://api.adnxs.com/city?dma_id=DMA_ID)             | View all cities in a specific designated market area. |
+| GET          | [https://api.adnxs.com/city?dma_name=DMA_NAME](https://api.adnxs.com/city?dma_name=DMA_NAME)         | View all cities in a specific designated market area. |
+| GET          | [https://api.adnxs.com/city?id=ID](https://api.adnxs.com/city?id=ID)                     | View a specific city.                                 |
+| GET          | [https://api.adnxs.com/city?name=NAME](https://api.adnxs.com/city?name=NAME)                 | View a specific city.                                 |
+| GET          | [https://api.adnxs.com/city/meta](https://api.adnxs.com/city/meta)                      | Find out which fields you can filter and sort by.     |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00007a48__entry__28"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00007a48__entry__29"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00007a48__entry__30"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country to which the city
-belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country codes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-name of the country to which the city belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country names.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">dma_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-ID of the designated market area to which the city belongs. You can use
-the <a
-href="xandr-api/designated-market-area-service.md"
-class="xref" target="_blank">Designated Market Area Service</a> to
-retrieve a complete list of dma IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">dma_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-name of the designated market area to which the city belongs. You can
-use the <a
-href="xandr-api/designated-market-area-service.md"
-class="xref" target="_blank">Designated Market Area Service</a> to
-retrieve a complete list of dma names.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-ID of the city.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-name of the city.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">region_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-ID of the region to which the city belongs. You can use the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve a complete
-list of region IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__28"><code
-class="ph codeph">region_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00007a48__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00007a48__entry__30">The
-name of the region to which the city belongs. You can use the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve a complete
-list of region names.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field        | Type   | Description                                                                                                                                                |
+|--------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `country_code` | enum   | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes.                      |
+| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names.                           |
+| `dma_id`       | int    | The ID of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma IDs.     |
+| `dma_name`     | string | The name of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma names. |
+| `id`           | int    | The ID of the city.                                                                                                                                        |
+| `name`         | string | The name of the city.                                                                                                                                      |
+| `region_id`    | int    | The ID of the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region IDs.                                  |
+| `region_name`  | string | The name of the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region names.                              |
 
 ## Examples
 
 **View all cities in Germany**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/city?country_code=DE'
 {
     "response": {
@@ -291,7 +94,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/city?country_code=DE'
 
 **View all cities in the Bayern region of Germany**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/city?region_name=Bayern'
 {
     "response": {
@@ -341,7 +144,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/city?region_name=Bayern'
 
 **View all cities named "Karlsruhe"**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/city?name=Karlsruhe'
 {
     "response": {
@@ -377,9 +180,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/city?name=Karlsruhe'
     }
 } 
 ```
-
-
-
-
-
-

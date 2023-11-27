@@ -1,50 +1,25 @@
 ---
-Title : Creative API Services
-Description : To serve a creative in Xandr's platform, bidders
-ms.date : 10/28/2023
-must use the <a
-href="creative-service.md"
+title : Creative API Services
+description : Learn how bidders must use the Creative Service to register their creatives. 
+ms.date : 11/20/2023
+
 ---
 
 
-# Creative API Services
-
-
+# Creative API services
 
 To serve a creative in Xandr's platform, bidders
-must use the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> to register their
+must use the [Creative Service](creative-service.md) to register their
 creatives. Bidders may then search through their creatives to find those
-that meet certain criteria using the <a
-href="creative-search-service.md"
-class="xref" target="_blank">Creative Search Service</a>.
+that meet certain criteria using the [Creative Search Service](creative-search-service.md).
 
-See the <a
-href="quick-start-creative-buying-guide.md"
-class="xref" target="_blank">Quick Start Creative Buying Guide</a> to
+See the [Quick Start Creative Buying Guide](quick-start-creative-buying-guide.md) to
 get up and running. For more in-depth information, see the relevant
 service references.
 
-- <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>
-- <a
-  href="creative-template-service.md"
-  class="xref" target="_blank">Creative Template Service</a>
-- <a
-  href="creative-format-service.md"
-  class="xref" target="_blank">Creative Format Service</a>
-- <a
-  href="pixel-template-service.md"
-  class="xref" target="_blank">Pixel Template Service</a>
-- <a
-  href="creative-search-service.md"
-  class="xref" target="_blank">Creative Search Service</a>
-- <a
-  href="creative-macro-check-service.md"
-  class="xref" target="_blank">Creative Macro Check Service</a>
-
-
-
-
+- [Creative Service](creative-service.md)
+- [Creative Template Service](creative-template-service.md)
+- [Creative Format Service](creative-format-service.md)
+- [Pixel Template Service](pixel-template-service.md)
+- [Creative Search Service](creative-search-service.md)
+- [Creative Macro Check Service](creative-macro-check-service.md)
