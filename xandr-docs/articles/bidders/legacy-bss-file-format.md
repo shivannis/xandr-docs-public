@@ -128,7 +128,7 @@ A client is adding user `12345678900987654321` to segments `10000` and `10001` w
 | `SEPARATOR3` | ":" |
 | `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 
-``` pre
+``` 
 12345678900987654321,10000:1440;10001:1440;10002:-1;10003:-1
 ```
 
@@ -142,12 +142,12 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 | `SEPARATOR1` | "," |
 | `SEPARATOR2` | ";" |
 | `SEPARATOR4` | "\t"   |
-| `SEG_FIELD` | [SEG_CODE] |
+| `SEG_FIELD` | [`SEG_CODE`] |
 
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
 
-``` pre
+``` 
 12345678900987654321,auto_intender;nike_shopper\tbicycle_intender;newbalance_shopper
 ```
 
@@ -165,7 +165,7 @@ In the example, below, the client is adding user `12345678900987654321` to segme
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width. The example below is using `\t` to show where the space will appear.
 
-``` pre
+``` 
 12345678900987654321\t1320689131\t10000\t0\t0
 12345678900987654321\t1320689131\t10001\t0\t0
 12345678900987654321\t1320689131\t10002\t0\t-1 
@@ -187,7 +187,7 @@ A client is adding user `"abcdefg"` to segments `10000` and `10001` with an expi
 | `SEG_FIELD` | [`SEG_ID`, `EXPIRATION`] |
 | `uses_external_uids` | `true` |
 
-``` pre
+``` 
 abcdefg,10000:1440;10001:1440
 abcdefg,10002:1440;10003:1440 
 ```
@@ -211,7 +211,7 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.
 
-``` pre
+``` 
 12345678900987654321,400:car_like;500:bike_like
 ```
 
@@ -235,6 +235,6 @@ A client is adding mobile user IDFA (ID for Advertisers) AEBE52E7-03EE-455A-B3C4
 > [!NOTE]
 > `\t` refers to the horizontal tab character. It moves the cursor a tab width.
 
-``` pre
+``` 
 AEBE52E7-03EE-455A-B3C4-E57283966239,10000:1440;10001:1440;10002:-1;10003:-1^3
 ```

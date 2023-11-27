@@ -26,16 +26,16 @@ Before they can buy or sell ads, a member needs a contract with Xandr. This cont
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/member | To see all your members. |
-| GET | https://api.adnxs.com/member/MEMBER_ID | To see a particular member. |
+| GET | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To see all your members. |
+| GET | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To see a particular member. |
 
 > [!NOTE]
 > The calls below are visible to Xandr employees only. They can be made by users with the "admin" `user_type`.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| POST | https://api.adnxs.com/member | To add a new member. |
-| PUT | https://api.adnxs.com/member/MEMBER_ID | To modify an existing member. |
+| POST | [https://api.adnxs.com/member](https://api.adnxs.com/member) | To add a new member. |
+| PUT | [https://api.adnxs.com/member/MEMBER_ID](https://api.adnxs.com/member/MEMBER_ID) | To modify an existing member. |
 
 ## JSON fields
 
@@ -83,7 +83,7 @@ The platform exposure setting determines how your account is displayed to other 
 
 #### `hidden` example
 
-``` pre
+``` 
 
 {
 "seller_id": "8253",
@@ -95,7 +95,7 @@ The platform exposure setting determines how your account is displayed to other 
 
 #### `public` example
 
-``` pre
+``` 
 
 {
 "seller_id": "7694",
@@ -108,7 +108,7 @@ The platform exposure setting determines how your account is displayed to other 
 
 The sample JSON below shows how to set this parameter.
 
-``` pre
+``` 
 {
   "member": {
     "platform_exposure": "public"
@@ -127,7 +127,7 @@ Authentication is always the first step when using the API Services. The authent
 The only required fields are `billing_name` and `bidder_id` if the member is associated with a bidder, but since a member has a financial
 relationship with Xandr, you will probably want to include other billing-related information.
 
-``` pre
+``` 
 $ cat member
 {
         "member" : {
@@ -145,7 +145,7 @@ $ cat member
 
 ### Add the member file to the impression bus cache
 
-``` pre
+``` 
 $ curl -b cookies -c cookies -X POST --data-binary @member 'https://api.adnxs.com/member'
 {
         "response":{
@@ -156,7 +156,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @member 'https://api.adnxs.co
 
 ### Now modify the member via a modified JSON-formatted file
 
-``` pre
+``` 
 $ cat member_mod
 {
         "member" : {
@@ -175,7 +175,7 @@ $ cat member_mod
 
 ### Update the member information in the impression bus cache, using the member ID
 
-``` pre
+``` 
 $ curl -b cookies -c cookies-X PUT --data-binary @member_mod 'https://api.adnxs.com/member/1'
 {
         "response":{
@@ -186,7 +186,7 @@ $ curl -b cookies -c cookies-X PUT --data-binary @member_mod 'https://api.adnxs.
 
 ### View information about the member
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/member/1'
 {
    "response":{

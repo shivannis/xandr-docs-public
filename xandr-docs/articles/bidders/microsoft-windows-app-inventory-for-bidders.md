@@ -31,8 +31,8 @@ The majority of Microsoft Windows App inventory supports mobile creative standar
 | Specifications | Windows 8/10 | Windows Phone |
 |:---|:---|:---|
 | Sizes | - 160x600<br> - 300x250<br> - 300x600<br> - 728x90 | - 300x50<br> - 320x50<br> - 480x80<br> - 640x100 |
-| Technical Attributes | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (excluding certain calls not supported in SDK web view)<br> - Image (Third-Party Ad Served)<br> - No flash allowed |  |
-| Ad Quality | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 seconds. |  |
+| Technical Attributes | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (excluding certain calls not supported in SDK web view)<br> - Image (Third-Party Ad Served)<br> - No flash allowed | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (excluding certain calls not supported in SDK web view)<br> - Image (Third-Party Ad Served)<br> - No flash allowed |
+| Ad Quality | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 seconds. | - [Microsoft CAP](https://advertising.microsoft.com/en/policies)<br> - Animation Length up to 30 seconds. |
 
 **Legacy Ads SDK Creative Specs:**
 
@@ -69,7 +69,7 @@ custom notify data you may have included with the bid. This information will be 
 
 ### Example request/response chain
 
-``` pre
+``` 
 {
     received_on: "2018-03-01 20:43:59",
     request: {

@@ -27,7 +27,7 @@ Use the read-only Network Service to see what video content networks are registe
 
 ### To retrieve all defined networks
 
-``` pre
+``` 
 curl -b cookies -c cookies "https://api.adnxs.com/video-content-network"
 {
   "response": {

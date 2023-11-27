@@ -40,7 +40,7 @@ This example uses four data assets and two image assets, but you can choose to u
 
 ### Adding a native creative
 
-``` pre
+``` 
 $ cat native_creative.json
  
 {
@@ -275,7 +275,7 @@ Used to define the link for a native asset. When clicked, the user is taken to t
 
 ## Bid response example
 
-``` pre
+``` 
 {
     "seatbid": [
         {
@@ -299,8 +299,6 @@ Used to define the link for a native asset. When clicked, the user is taken to t
     ]
 }
 ```
-
->
 
 ## FAQs
 

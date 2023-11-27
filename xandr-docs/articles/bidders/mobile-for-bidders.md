@@ -40,7 +40,7 @@ Bidder profiles allow you to filter for the bid requests that you want to receiv
 
 | Field | Value |
 |:---|:---|
-| `supply_type` | `"mobile_app", "mobile_web"` |
+| `supply_type` | `"mobile_app"`, `"mobile_web"` |
 
 For more details about updating or creating bidder profiles, see [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
 
@@ -76,30 +76,30 @@ The Xandr Notify request is essential to tracking when an impression is served, 
 
 | Field | Scope | Type | Description |
 |:---|:---|:---|:---|
-| app_id | some | string | Global App Id for Android and iOS devices (For example, for Angry Birds app: "app_id" : "com.rovio.angrybirds" for an Android device, "app_id" : "343200656" or "com.clickgamer.AngryBirds" for an iOS device). |
-| loc | some | string | Location of the user, provided in terms of latitude and longitude. Expressed in the format "snnn.ddd,snnn.ddd", for example +123.456 or -456.123. South and west are represented as negative. There can be a maximum of 5 decimal places of precision. |
-| carrier | some | int | The ID for the carrier. You can use the [Carrier Service](carrier-service.md) to map carrier IDs to names and countries. A special carrier "WIFI" exists for users connecting via WiFi. |
-| device_make | some | int | The ID of the device make on which the ad will be shown. You can use the [Device Make Service](device-make-service.md) to map device make IDs to names. |
-| device_model | some | int | The ID of the device model on which the ad will be shown. You can use the [Device Model Service](device-model-service.md) to map device model IDs to names. |
-| device_type | some | int | The ID of the type of device on which the ad will be shown. This is represented by an integer, and can be looked up using the [Device Model Service](device-model-service.md). Allowed values, and their meanings:<br> - `1` = "pc"<br> - `2` = "phone"<br> - `3` = "tablet" |
+| `app_id` | some | string | Global App Id for Android and iOS devices (For example, for Angry Birds app: "app_id" : "com.rovio.angrybirds" for an Android device, "app_id" : "343200656" or "com.clickgamer.AngryBirds" for an iOS device). |
+| `loc` | some | string | Location of the user, provided in terms of latitude and longitude. Expressed in the format "snnn.ddd,snnn.ddd", for example +123.456 or -456.123. South and west are represented as negative. There can be a maximum of 5 decimal places of precision. |
+| `carrier` | some | int | The ID for the carrier. You can use the [Carrier Service](carrier-service.md) to map carrier IDs to names and countries. A special carrier "WIFI" exists for users connecting via WiFi. |
+| `device_make` | some | int | The ID of the device make on which the ad will be shown. You can use the [Device Make Service](device-make-service.md) to map device make IDs to names. |
+| `device_model` | some | int | The ID of the device model on which the ad will be shown. You can use the [Device Model Service](device-model-service.md) to map device model IDs to names. |
+| `device_type` | some | int | The ID of the type of device on which the ad will be shown. This is represented by an integer, and can be looked up using the [Device Model Service](device-model-service.md). Allowed values, and their meanings:<br> - `1` = "pc"<br> - `2` = "phone"<br> - `3` = "tablet" |
 
 ### Device IDs
 
 | Field | Scope | Type | Description |
 |:---|:---|:---|:---|
-| windowsadid | some | String | The Microsoft Advertising ID for Windows 8 and Windows Phone devices. |
-| idfa | some | string | The Apple advertising identifier for iOS devices running iOS 6+. |
-| aaid | some | string | The Google advertising identifier for Android devices as retrieved from Google Play services. |
-| sha1udid | some | string | The SHA1 hash of the `ANDROID_ID`. |
-| md5udid | some | string | The MD5 hash of the `ANDROID_ID`. |
-| sha1mac | some | string | **sha1mac** was deprecated as of May 7th, 2019. Do not use. |
-| openudid | some | string | The [OpenUDID](https://github.com/ylechelle/OpenUDID) of the device. This should only be sent for iOS versions 5 and below. |
+| `windowsadid` | some | String | The Microsoft Advertising ID for Windows 8 and Windows Phone devices. |
+| `idfa` | some | string | The Apple advertising identifier for iOS devices running iOS 6+. |
+| `aaid` | some | string | The Google advertising identifier for Android devices as retrieved from Google Play services. |
+| `sha1udid` | some | string | The SHA1 hash of the `ANDROID_ID`. |
+| `md5udid` | some | string | The MD5 hash of the `ANDROID_ID`. |
+| `sha1mac` | some | string | **sha1mac** was deprecated as of May 7th, 2019. Do not use. |
+| `openudid` | some | string | The [OpenUDID](https://github.com/ylechelle/OpenUDID) of the device. This should only be sent for iOS versions 5 and below. |
 
 ## Examples of request/response chain
 
 ### Bid request
 
-``` pre
+``` 
 {
     "bid_request": {
         "timestamp": "2013-09-19 17:46:12",
@@ -179,7 +179,7 @@ The Xandr Notify request is essential to tracking when an impression is served, 
 
 ### Bid response
 
-``` pre
+``` 
 {
     "bid_response": {
         "responses": [

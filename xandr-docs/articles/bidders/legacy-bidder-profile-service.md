@@ -36,7 +36,7 @@ The following filtering criteria are currently supported:
   - Specify whether to require or exclude inventory from members, see the [Platform Member Service](platform-member-service.md).
 
 > [!NOTE]
-> The Xandr Direct Seller Member Group is included by default and cannot be excluded via the API or . For more information, see [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
+> The Xandr Direct Seller Member Group is included by default and cannot be excluded via the API. For more information, see [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
 
 - Geography
   - Country
@@ -72,11 +72,11 @@ The following filtering criteria are currently supported:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/profile/BIDDER_ID | **View Profiles:** To see all of the profiles attached to your bidder. |
-| GET  | https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID | **View Profiles:** To see a specific profile attached to your bidder. |
-| POST | https://api.adnxs.com/profile/BIDDER_ID<br>(profile JSON) | Add a Profile for your bidder. |
-| PUT  | https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID<br>(profile JSON) | Modify an Existing Profile. |
-| DELETE | https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID<br><br>**Note:** Only inactive profiles can be deleted; that is profiles that are not associated with the bidder object. | Delete an existing profile. |
+| GET | [https://api.adnxs.com/profile/BIDDER_ID](https://api.adnxs.com/profile/BIDDER_ID) | **View Profiles:** To see all of the profiles attached to your bidder. |
+| GET  | [https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID](https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID) | **View Profiles:** To see a specific profile attached to your bidder. |
+| POST | [https://api.adnxs.com/profile/BIDDER_ID](https://api.adnxs.com/profile/BIDDER_ID)<br>(profile JSON) | Add a Profile for your bidder. |
+| PUT  | [https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID](https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID)<br>(profile JSON) | Modify an Existing Profile. |
+| DELETE | [https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID](https://api.adnxs.com/profile/BIDDER_ID/PROFILE_ID)<br><br>**Note:** Only inactive profiles can be deleted; that is profiles that are not associated with the bidder object. | Delete an existing profile. |
 |  | Use the [Bidder Service](bidder-service.md) to set the `profile_id` field on the bidder to the id of the desired bidder profile. | Activate a profile for your bidder as the parent profile. |
 |  | Use the [Bidder Service](bidder-service.md) to update the child_profiles array on the bidder to include id of the desired bidder profile. | Activate a profile for your bidder as a child profile. |
 
@@ -147,7 +147,7 @@ Each object in the `country_targets` array contains the following fields.
 
 #### Country targets: Example
 
-``` pre
+``` 
 {
     "profile": {
         "country_action": "include",
@@ -176,7 +176,7 @@ Each object in the `region_targets` array contains the following fields.
 
 #### Region targets: Example
 
-``` pre
+``` 
 {
     "profile": {
         "region_action": "include",
@@ -208,7 +208,7 @@ Each object in the `city_targets` array contains the following fields.
 
 #### City targets: Example
 
-``` pre
+``` 
 {
     "profile": {
         "city_action": "include",
@@ -234,7 +234,7 @@ Authentication is always the first step when using the API Services. The authent
 
 ### Add a new profile to bidder 6. The ID of the new profile is 123
 
-``` pre
+``` 
 $ cat bidder_profile:
     {
     "profile":
@@ -295,13 +295,13 @@ $ cat bidder_profile:
 
 ### See all profiles currently associated with bidder 6
 
-``` pre
+``` 
 curl -b cookies -c cookies "https://api.adnxs.com/profile/6"
 ```
 
 ### See profile 123 associated with bidder 6
 
-``` pre
+``` 
 curl -b cookies -c cookies "https://api.adnxs.com/profile/6/123"
 ```
 
@@ -309,7 +309,7 @@ To activate a profile for your bidder, use the [Bidder Service](bidder-service.m
 
 ### To update profile ID 123 on bidder 6
 
-``` pre
+``` 
 $ cat bidder_profile:
     {
     "profile":
@@ -327,7 +327,7 @@ $ cat bidder_profile:
 > [!TIP]
 > For more information about domain lists, see the [Domain List Service](domain-list-service.md).
 
-``` pre
+``` 
 $ cat domain-list-profile
 {
    "profile" : {
