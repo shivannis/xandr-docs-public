@@ -43,7 +43,7 @@ details about VAST, see the Interactive Advertising Bureau's VAST documentation 
 
 Xandr supports third-party hosted VAST XML for in-stream video creatives. In-banner video creatives will also be required to have the actual creative file(s) hosted on a third-party CDN.
 
-### What is Outstream Video?
+### What is Outstream video?
 
 Outstream is a video format used by lots of clients and will be helpful to include so that users can understand what the expected usage of this format is compared to In-stream.
 
@@ -70,7 +70,7 @@ Sellers are able to indicate the duration they want for their ad pods and the ma
 
 ### What is VMAP?
 
-VMAP stands for Video Multiple Ad Playlist. It is an IAB specification for an XML template that video content owners can use to describe the structure for ad inventory insertion when they don’t control the video
+VMAP stands for Video Multiple ad Playlist. It is an IAB specification for an XML template that video content owners can use to describe the structure for ad inventory insertion when they don’t control the video
 player or the content distribution. For ad pods, Xandr outputs our response in VMAP instead of VAST.
 
 ### What does the error message "Heavy ad intervention" mean?
