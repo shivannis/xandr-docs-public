@@ -1,15 +1,13 @@
 ---
-Title : Technical Implementation of Inventory Quality Control
-Description : Xandr's inventory solution allows branded
-ms.date : 10/28/2023
-advertisers to buy through our platform and proactively protect their
-brand. Xandr has built flexible inventory
+title : Technical Implementation of Inventory Quality Control
+description : This page deals with Xandr's inventory solution that allows branded advertisers to buy through our platform and proactively protect their
+brand.
+ms.date : 11/28/2023
+
 ---
 
 
-# Technical Implementation of Inventory Quality Control
-
-
+# Technical implementation of inventory quality control
 
 Xandr's inventory solution allows branded
 advertisers to buy through our platform and proactively protect their
@@ -19,8 +17,6 @@ empower you to choose how you interpret brand quality. We have built
 many options for targeting inventory while protecting your brand; you
 are empowered to decide how you think about inventory quality and your
 inventory selection.
-
-
 
 ## Implementation
 
@@ -46,14 +42,5 @@ inventory selection.
   categorized their own inventory. You can choose to target by content
   and how much you trust each seller's categorizations.
 
-For more details on filtering by inventory, see the <a
-href="bidder-service.md"
-class="xref" target="_blank">Bidder Service</a> and the <a
-href="enhanced-bidder-profiles.md"
-class="xref" target="_blank">Enhanced Bidder Profiles</a>.
-
-
-
-
-
+For more details on filtering by inventory, see the [Bidder Service](bidder-service.md) and the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md).
 
