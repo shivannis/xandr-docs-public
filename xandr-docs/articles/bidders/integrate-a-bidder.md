@@ -11,7 +11,7 @@ This page describes how to integrate a bidder with Xandr. It begins with an over
 ## System overview
 
 > [!NOTE]
-> Bidding Protocol
+> **Bidding Protocol**
 >
 > Xandr currently supports the OpenRTB 2.4 bidding protocol. For more info check out our [Bidding Protocol](./bidding-protocol.md) page.
 
@@ -416,11 +416,9 @@ In this step, we'll add a creative. After we upload this creative, you will need
 > [!NOTE]
 > **Statuses**
 >
-> The `"allow_audit"` and `"allow_ssl_audit"` fields have each been set to `true`.
->
-> The `"allow_audit"` field submits the creative for our platform human audit.
->
-> The `"allow_ssl_audit"` submits the creative for our automated scan to determine if the creative can serve on secure inventory.
+> - The `"allow_audit"` and `"allow_ssl_audit"` fields have each been set to `true`.
+> - The `"allow_audit"` field submits the creative for our platform human audit.
+> - The `"allow_ssl_audit"` submits the creative for our automated scan to determine if the creative can serve on secure inventory.
 
 **Example creative JSON**
 
@@ -706,7 +704,7 @@ For reference, here are the endpoints for the Production and Client Testing envi
 
 ## Example updates
 
-**Bidder object ready_uri and bid_uri**
+**Bidder object `ready_uri` and `bid_uri`**
 
 Update these fields to ensure our ready requests and bid requests, respectively, are sent to the right endpoints.
 
