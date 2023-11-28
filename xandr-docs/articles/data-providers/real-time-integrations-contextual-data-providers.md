@@ -1,6 +1,8 @@
 ---
 Title : Real Time Integrations (Contextual Data Providers)
 Description : For contextual data providers, the data is directly related to the
+ms.custom : data-providers
+ms.date : 10/28/2023
 inventory. This requires that we make a real time request to the data
 ---
 
@@ -19,7 +21,7 @@ contextual data providers, who respond with categories (which we call
 "segments") corresponding to the page's categorization, e.g., "News".
 
 Also see <a
-href="https://docs.xandr.com/bundle/data-providers/page/real-time-data-integration-instructions.html"
+href="real-time-data-integration-instructions.md"
 class="xref" target="_blank">Real Time Data Integration
 Instructions.</a>
 
@@ -29,14 +31,7 @@ Instructions.</a>
 
 <figure class="fig fignone">
 
-<br />
-
-<div class="imagecenter">
-<img src="images/data-providers/1.jpeg"
-id="ID-00000098__image-ec4b6e1e-c96d-4a0e-9aca-3fa1592a936a"
-class="image imagecenter" width="700" height="500" />
-
-<br />
+![Real Time Integrations Contextual Data Providers](media/real-time-integrations-contextual-data-providers.png)
 
 
 </figure>
@@ -65,10 +60,9 @@ class="image imagecenter" width="700" height="500" />
     The auction data contains the segments associated with a given data
     provider only if the bidder or a member associated with that bidder
     has access to those segments.
-    <div id="ID-00000098__note-5bf2fb37-021f-4a33-bc2b-d0af9fd4d182"
     class="note tip note_tip">
 
-    Tip: Real Time vs Behavioral
+    <b>Tip:</b> Real Time vs Behavioral
     Segments
     An important distinction between real time (contextual) and
     behavioral segments is that real time segments returned by a Real
@@ -98,7 +92,7 @@ class="image imagecenter" width="700" height="500" />
 When an impression comes into the impression bus, an HTTP GET request is
 sent to an available data provider instance with the macros appended to
 the `bid_uri` parameter configured on the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/bidder-service.html"
+href="xandr-bidders/bidder-service.md"
 class="xref" target="_blank">Bidder Service</a>. The data provider
 instance should respond with a list of segment codes (not segment IDs -
 only segment codes will be accepted), separated by a new line (\n). The
@@ -106,10 +100,10 @@ current timeout interval for data provider requests is 10 milliseconds.
 
 
 
-Tip: For a complete list of
+<b>Tip:</b> For a complete list of
 Xandr macros that can be appended to your
 `bid_uri`, see Xandr <a
-href="https://docs.xandr.com/bundle/data-providers/page/xandr-macros-for-data-providers.html"
+href="xandr-macros-for-data-providers.md"
 class="xref" target="_blank">Macros for Data Providers.</a>
 
 
@@ -141,7 +135,7 @@ cat_technology
 
 Data providers with real-time integrations are implemented as
 'bidders' even though they are not actually placing bids. They set up <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/bidder-instance-service.html"
+href="xandr-bidders/bidder-instance-service.md"
 class="xref" target="_blank">bidder instances</a> in each data center
 and interact directly with the impression bus. Each data provider using
 this integration method must have a single member associated with their

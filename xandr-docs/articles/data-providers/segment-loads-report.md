@@ -1,6 +1,8 @@
 ---
 Title : Segment Loads Report
 Description : The Segment Loads report allows you to view metrics about your segments,
+ms.custom : data-providers
+ms.date : 10/28/2023
 including the total number of segment pixel loads and the number of
 unique user IDs included at specific points in time.
 ---
@@ -17,12 +19,12 @@ unique user IDs included at specific points in time.
 
 
 For instructions on retrieving a report, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a> or the examples below.
 
 
 
-Note: You must select the shared
+<b>Note:</b> You must select the shared
 segments explicitly to report on them.
 
 
@@ -45,10 +47,10 @@ The `report_interval` field in the JSON request can be set to:
 
 
 
-Tip: To run a report for a custom time
+<b>Tip:</b> To run a report for a custom time
 frame, set the `start_date` and `end_date` fields in your report
 request. For more details about these fields, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a>.
 
 
@@ -287,7 +289,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=07af12
 
 
 
-Note: To get metrics for a specific
+<b>Note:</b> To get metrics for a specific
 segment, you must filter the report by segment_id.
 
 
@@ -398,7 +400,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=c59754
 
 
 
-Note: There is a limit of 100,000 rows
+<b>Note:</b> There is a limit of 100,000 rows
 per report when you download them as XLSX and Excel file.
 
 

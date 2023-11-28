@@ -1,6 +1,8 @@
 ---
 Title : Log Level Data - Protocol Buffers
 Description : Xandr Log-Level Data (LLD) is encoded using a
+ms.custom : log-level-data
+ms.date : 10/28/2023
 binary interchange format called
 a<a href="https://github.com/google/protobuf" class="xref"
 ---
@@ -52,7 +54,7 @@ well as source code that can be used as a starting point for ingestion.
 2.  Download the example project (get the latest one from the
     File Formats and Schemas section
     of <a
-    href="https://docs.xandr.com/bundle/log-level-data/page/batch-log-level-data.html"
+    href="batch-log-level-data.md"
     class="xref" target="_blank">Batch Log-Level Data</a>) and unzip
     it. 
 3.  Refer to the README file in the example project for further

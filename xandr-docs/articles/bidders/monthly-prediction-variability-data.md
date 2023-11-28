@@ -1,321 +1,64 @@
 ---
-Title : Monthly Prediction Variability Data
-Description : <b>Tip:</b> This page relates to
-ms.date : 10/28/2023
-the <a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a> offering.
+title: Bidders - Monthly Prediction Variability Data
+description: In this article, explore the resulting monthly prediction variability rates for applicable transactions on the platform.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Monthly prediction variability data
 
-# Monthly Prediction Variability Data
+> [!TIP]
+> This page relates to the [Guaranteed Outcomes](guaranteed-outcomes.md) offering.
 
+Xandr Guaranteed Outcomes allow a buyer to pay on a different event than the seller, which supports agencies and marketers who wish to operate on a 100% viewable basis. To achieve this, Xandr's Exchange acts as a financial buffer between buyer and seller. On each impression, the Exchange predicts the likelihood of a post-auction outcome. We then pay the seller per impression based on that prediction. However, the buyer only pays Xandr for impressions that are measured post-auction as having achieved a stated outcome. Thus, depending on the shifting accuracy of predictions, the Exchange may have a positive or negative balance over time. This variation is known as prediction variability.
 
-
-
-
-<b>Tip:</b> This page relates to
-the <a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a> offering.
-
-
-
-Xandr Guaranteed Outcomes allow a buyer to pay
-on a different event than the seller, which supports agencies and
-marketers who wish to operate on a 100% viewable basis.  To achieve
-this, Xandr's Exchange acts as a financial
-buffer between buyer and seller. On each impression, the Exchange
-predicts the likelihood of a post-auction outcome.  We then pay the
-seller per impression based on that prediction. However, the buyer only
-pays Xandr for impressions that are measured
-post-auction as having achieved a stated outcome. Thus, depending on the
-shifting accuracy of predictions, the Exchange may have a positive or
-negative balance over time. This variation is known as prediction
-variability.
-
-We understand that this is a unique offering, but we are driven to build
-innovative solutions to big marketplace challenges.  We are also deeply
-committed to increasing transparency, efficiency and trust in the
-programmatic supply chain.  To that end, this page is designed to share
-the resulting monthly prediction variability rates for applicable
-transactions on the platform.
-
-
+We understand that this is a unique offering, but we are driven to build innovative solutions to big marketplace challenges. We are also deeply committed to increasing transparency, efficiency and trust in the programmatic supply chain. To that end, this page is designed to share the resulting monthly prediction variability rates for applicable transactions on the platform.
 
 ## Aggregate
 
-**Monthly Summary**
+### Monthly summary
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000d1e5__entry__1"
-class="entry colsep-1 rowsep-1">Month</th>
-<th id="ID-0000d1e5__entry__2"
-class="entry colsep-1 rowsep-1">Prediction Variability (%)</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">December 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.50</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">November 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.72</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">October 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1.15</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">September 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.64</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">August 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.18</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">July
-2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">1.08</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">June
-2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.86</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">May
-2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.67</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">April 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1.10</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">March 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.73</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">February 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-3.66</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">January 2020</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-11.00</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">December 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.92</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">November 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.33</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">October 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-2.17</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">September 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.88</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">August 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-6.91</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">July
-2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-6.4</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">June
-2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">0.09</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">May
-2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">0.93</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">April 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1.81</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">March 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1.60</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">February 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.11</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">January 2019</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.76</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">December 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-3.90</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">November 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1.82</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">October 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-.67</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">September 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.4</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">August 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-2.3</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">July
-2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-1</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">June
-2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">1.5</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">May
-2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.8</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">April 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-3.0</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">March 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-0.5</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">February 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">4.6</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">January 2018</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">0.9</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">December 2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-3.0</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">November 2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">0.4</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">October 2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">2.0</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">September 2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">2.0</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__1">August 2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.3</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">July
-2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-4.9</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-0000d1e5__entry__1">June
-2017</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000d1e5__entry__2">-9.1</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Month | Prediction Variability (%) |
+|:---|:---|
+| December 2020 | -0.50 |
+| November 2020 | -0.72 |
+| October 2020 | -1.15 |
+| September 2020 | -0.64 |
+| August 2020 | -0.18 |
+| July 2020 | 1.08 |
+| June 2020 | -0.86 |
+| May 2020 | -0.67 |
+| April 2020 | -1.10 |
+| March 2020 | -0.73 |
+| February 2020 | -3.66 |
+| January 2020 | -11.00 |
+| December 2019 | -4.92 |
+| November 2019 | -4.33 |
+| October 2019 | -2.17 |
+| September 2019 | -4.88 |
+| August 2019 | -6.91 |
+| July 2019 | -6.4 |
+| June 2019 | 0.09 |
+| May 2019 | 0.93 |
+| April 2019 | -1.81 |
+| March 2019 | -1.60 |
+| February 2019 | -4.11 |
+| January 2019 | -4.76 |
+| December 2018 | -3.90 |
+| November 2018 | -1.82 |
+| October 2018 | -.67 |
+| September 2018 | -4.4 |
+| August 2018 | -2.3 |
+| July 2018 | -1 |
+| June 2018 | 1.5 |
+| May 2018 | -0.8 |
+| April 2018 | -3.0 |
+| March 2018 | -0.5 |
+| February 2018 | 4.6 |
+| January 2018 | 0.9 |
+| December 2017 | -3.0 |
+| November 2017 | 0.4 |
+| October 2017 | 2.0 |
+| September 2017 | 2.0 |
+| August 2017 | -4.3 |
+| July 2017 | -4.9 |
+| June 2017 | -9.1 |

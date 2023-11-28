@@ -1,6 +1,8 @@
 ---
 Title : Video Events Feed
 Description : The Video Events Feed provides you with a listing of all video-specific
+ms.custom : log-level-data
+ms.date : 10/28/2023
 events that occur on your video impressions. The feed contains one row
 ---
 
@@ -139,7 +141,7 @@ headers="ID-00002eae__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00002eae__entry__4">The
 ID for the publisher of the placement. Buyer member may map the
 Publisher ID to a name using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/inventory-resold-service.html"
+href="xandr-api/inventory-resold-service.md"
 class="xref" target="_blank">Inventory Resold Service</a> if the seller
 has chosen to expose the publisher. Exposure to buyer depends on the
 seller's visibility profile.</td>
@@ -549,7 +551,7 @@ headers="ID-00002eae__entry__3">numeric</td>
 amount the seller is paid for the impression associated with this video
 event.
 
-Note: The <code
+<b>Note:</b> The <code
 class="ph codeph">impression_seller_revenue_cpm</code> is also
 calculated for <code class="ph codeph">imp_type</code> = <code
 class="ph codeph">5</code> (managed impressions). If you wish to
@@ -671,9 +673,9 @@ impression. Possible values:<br />
 </ul>
 <p>For non-impression events, this will be NULL.</p>
 
-Note: For more details about
+<b>Note:</b> For more details about
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 <td class="entry align-center colsep-1 rowsep-1"
@@ -710,9 +712,9 @@ disabled.<br />
 <li><code class="ph codeph">-1</code> = UNKNOWN</li>
 </ul>
 
-Note: For more information regarding
+<b>Note:</b> For more information regarding
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 <td class="entry align-center colsep-1 rowsep-1"
@@ -881,7 +883,7 @@ meanings. 
 
 
 
-Note: You may receive error codes in
+<b>Note:</b> You may receive error codes in
 the feed that are not present in the list below. If you do, those error
 codes are generally non-VAST-compliant custom codes sent from the video
 player.

@@ -1,7 +1,9 @@
 ---
 Title : Key Value Auction Feed
-Description : Note: This feed is not available to
-Xandr Invest clients.
+Description : <b>Note:</b> This feed is not available to
+ms.custom : log-level-data
+ms.date : 10/28/2023
+Microsoft Invest clients.
 ---
 
 
@@ -11,8 +13,8 @@ Xandr Invest clients.
 
 
 
-Note: This feed is not available to
-Xandr Invest clients.
+<b>Note:</b> This feed is not available to
+Microsoft Invest clients.
 
 
 
@@ -33,7 +35,7 @@ and* /mob*.
 
 
 
-Note: When using
+<b>Note:</b> When using
 Xandr's seller tag, omit the **kw\\ **prefix.
 AST has the keyword object in the body of the request, so the prefix is
 not needed.
@@ -47,7 +49,7 @@ not needed.
   feed will be logged when an auction is complete.
 - If you enable the key value auction feed, it will be in your feed list
   along with all your other log-level data feeds. See <a
-  href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+  href="log-level-data-feeds.md"
   class="xref" target="_blank">Log-Level Data Feeds</a> for more
   information.
 
@@ -171,7 +173,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the  <code
+<b>Note:</b> If you receive the  <code
 class="ph codeph">user_id_64</code>  version of this field, you will not
 receive the hashed version.
 </td>

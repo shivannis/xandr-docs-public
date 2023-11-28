@@ -1,122 +1,55 @@
 ---
-Title : Responding to a MegaTag Bid Request
-Description : <b>Note:</b>
-ms.date : 10/28/2023
-- **Not Supported**: The AppNexus Bidding
-Protocol is no longer supported; this documentation is for legacy
-purposes only. **We will deprecate this protocol on December 1,
+title: Responding to a MegaTag Bid Request
+description: In this article, find information about how a MegaTag auction works and how to respond to a multi-tag request.
+ms.date: 10/28/2023
 ---
 
+# Responding to a MegaTag bid request
 
-# Responding to a MegaTag Bid Request
+> [!IMPORTANT]
+> - **Not Supported**: The AppNexus Bidding Protocol is no longer supported; this documentation is for legacy purposes only. **We will deprecate this protocol on December 1, 2018.**
+> - If you're a new bidder integrating with AppNexus, please see the [OpenRTB 2.4 Bidding Protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 
+MegaTag is a technology which consolidates all of the ad inventory on a webpage, enabling the impressions and associated metadata from multiple auctions to be combined into one bid request. Bidders can then submit a single response array containing bid information for all of the ad slots on the page to serve multiple creatives within a single page.
 
+The documentation uses the term *ad slot* rather than *placement* to refer to the sized location on a page where an ad serves. This is because each time a user visits a page, he is faced with a single *placement*, which is comprised of multiple *ad slots.*
 
+## How does MegaTag work
 
+MegaTag is implemented as a client-side JavaScript program that runs in the user's browser. A MegaTag auction occurs as follows:
 
-<b>Note:</b>
+1. The Javascript generates a single ad request by gathering all of the ad slots to be auctioned. This ad request contains all pertinent information about each ad slot, including placement size.
+1. The ad request is then sent to AppNexus to conduct a distinct auction for each of the ad slots within the placement.
+1. AppNexus generates a single bid request which contains a unique auction for each ad slot on the page.
+1. Bidders respond with a single bid response that contains separate bid information for each auction within a responses array.
+1. Once AppNexus has completed all auctions for the placement, MegaTag generates iFrames on the publisher's page where all ad slots will be populated with the winning creatives.
+1. These "friendly" iFrames are then dynamically injected into the HTML code of the publisher's page.
 
-- **Not Supported**: The AppNexus Bidding
-  Protocol is no longer supported; this documentation is for legacy
-  purposes only. **We will deprecate this protocol on December 1,
-  2018.**
-- If you're a new bidder integrating with
-  AppNexus, please see the **<a
-  href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf"
-  class="xref" target="_blank">OpenRTB 2.4 Bidding Protocol</a>**.
+See [MegaTag Technical Overview](megatag-technical-overview.md), for additional information.
 
+## When would I bid on a MegaTag auction
 
+Advertisers often wish to run multiple advertisements on a single web page to:
 
-MegaTag is a technology which consolidates all of the ad inventory on a
-webpage, enabling the impressions and associated metadata from multiple
-auctions to be combined into one bid request. Bidders can then submit a
-single responses array containing bid information for all of the ad
-slots on the page to serve multiple creatives within a single page.
+- Ensure that only one expandable, audio, or video ad is displayed during a single page view on a publisher's site and how frequently they can serve.
 
-The documentation uses the term *ad slot* rather than *placement* to
-refer to the sized location on a page where an ad serves. This is
-because each time a user visits a page, he is faced with a single
-*placement*, which is comprised of multiple *ad slots.*
-
-
-## How does MegaTag work?
-
-
-
-MegaTag is implemented as a client-side JavaScript program that runs in
-the user's browser. A MegaTag auction occurs as follows:
-
-1.  The Javascript generates a single ad request by gathering all of the
-    ad slots to be auctioned. This ad request contains all pertinent
-    information about each ad slot, including placement size.
-2.  The ad request is then sent to AppNexus to
-    conduct a distinct auction for each of the ad slots within the
-    placement.
-3.  AppNexus generates a single bid request
-    which contains a unique auction for each ad slot on the page.
-4.  Bidders respond with a single bid response that contains separate
-    bid information for each auction within a responses array.
-5.  Once AppNexus has completed all auctions for
-    the placement, MegaTag generates iFrames on the publisher's page
-    where all ad slots will be populated with the winning creatives.
-6.  These "friendly" iFrames are then dynamically injected into the HTML
-    code of the publisher's page.
-
-
-
-See <a
-href="megatag-technical-overview.md"
-class="xref" target="_blank">MegaTag Technical Overview</a>, for
-additional information.
-
-
-
-
-## When would I bid on a MegaTag auction?
-
-
-
-Advertisers often wish to run multiple advertisements on a single web
-page to:
-
-- Ensure that only one expandable, audio, or video ad is displayed
-  during a single page view on a publisher's site and how frequently
-  they can serve.
-
-- Ensure that advertisements from competitive brands (e.g., Coke and
-  Pepsi) never serve alongside each other.
+- Ensure that advertisements from competitive brands (e.g., Coke and Pepsi) never serve alongside each other.
 
 - Serve multiple creatives together as part of a roadblock.
 
-- Apply a frequency cap of 1 impression per page for an advertiser, line
-  item, or campaign.
+- Apply a frequency cap of 1 impression per page for an advertiser, line item, or campaign.
 
+## How do I respond to a multi-tag request
 
+One MegaTag bid request will contain unique auction IDs for each ad slot on the page within the tags array element. Your bidder can then provide a single bid response that contains an array of response elements. Each response element must contain bid information for a distinct ad slot.
 
-
-
-
-## How do I respond to a multi-tag request?
-
-One MegaTag bid request will contain unique auction IDs for each ad slot
-on the page within the tags array element. Your bidder can then provide
-a single bid response that contains an array of response elements. Each
-response element must contain bid information for a distinct ad slot.
-
-MegaTag is utilized by select premium sellers. Therefore, your bidder
-should be configured to loop through the tags array in a bid request for
-these select sellers.
-
-
-
+MegaTag is utilized by select premium sellers. Therefore, your bidder should be configured to loop through the tags array in a bid request for these select sellers.
 
 ## Examples
 
+### Example multi-tag request
 
-
-**Example multi-tag request**
-
-``` pre
+```
 {
     "bid_request": {
         "timestamp": "2013-02-13 17:07:54",
@@ -384,13 +317,9 @@ these select sellers.
 }
 ```
 
+### Example multi-tag response
 
-
-
-
-**Example multi-tag response**
-
-``` pre
+```
 {
     "bid_response": {
         "responses": [
@@ -422,11 +351,3 @@ these select sellers.
     }
 }
 ```
-
-
-
-
-
-
-
-

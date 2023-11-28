@@ -1,6 +1,8 @@
 ---
 Title : Xandr Data Providers Support
 Description : Full product support is available only to Xandr
+ms.custom : data-providers
+ms.date : 10/28/2023
 customers. If you are not yet a Xandr customer,
 ---
 
@@ -16,7 +18,7 @@ its potential to meet your company's needs.
 
 
 
-Note: **For Current
+<b>Note:</b> **For Current
 Xandr customers:  
 **
 
@@ -32,9 +34,9 @@ Portal</a>.
 
 ## Training
 
-- <a href="home.html" class="xref">Overview</a> - General guidelines on
+- <a href="home.md" class="xref">Overview</a> - General guidelines on
   Xandr's role in the data marketplace.
-- <a href="data-marketplace-data-partner-overview.html" class="xref">Data
+- <a href="data-marketplace-data-partner-overview.md" class="xref">Data
   Marketplace - Data Partner Overview</a> - This is a good place to
   start if you're interested in becoming a data provider.
 
@@ -69,9 +71,9 @@ live training sessions).
 
 
 
-- <a href="integrating-your-data.html" class="xref">Integrating Your
+- <a href="integrating-your-data.md" class="xref">Integrating Your
   Data</a>
-- <a href="reporting-and-tracking.html" class="xref">Reporting and
+- <a href="reporting-and-tracking.md" class="xref">Reporting and
   Tracking</a>
 - <a href="Data%20Sharingdata-sharing.dita" class="xref"
   target="_blank">Data Sharing</a>

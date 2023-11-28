@@ -1,9 +1,11 @@
 ---
 Title : Batch Log Level Data
 Description : Batch Log-level Data (LLD) allows you to retrieve and track feeds of
+ms.custom : log-level-data
+ms.date : 10/28/2023
 log-level event data that include dimensions not available in the
 Xandr UI or via the API <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 ---
 
 
@@ -14,19 +16,18 @@ href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
 Batch Log-level Data (LLD) allows you to retrieve and track feeds of
 log-level event data that include dimensions not available in the
 Xandr UI or via the API <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a> in a batch-processed
 manner. Feeds are generated hourly and are split into one or more files
-(see <a href="batch-log-level-data.html#ID-000001c6__file_formats_schemas"
+(see <a href="batch-log-level-data.md#ID-000001c6__file_formats_schemas"
 class="xref">File Formats</a> section below). The format of the file you
 receive will depend on what you specified when you subscribed (e.g.,
 Avro, Protobuf, Protobuf-delimited).
 
 For general information about Log-Level Data, see <a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data-feeds.md"
 class="xref" target="_blank">Log-level Data feeds</a>.
 
-<div id="ID-000001c6__file_formats_schemas" >
 
 ## File Formats & Schemas
 
@@ -38,7 +39,7 @@ consuming Log-Level Data files.
 
 
 
-Note: Example files are created to
+<b>Note:</b> Example files are created to
 assist you when testing the implementation you will use to consume
 Log-Level Data files. To ease testing, the example files are somewhat
 simpler than the generated files you will retrieve in production:
@@ -72,6 +73,53 @@ class="entry colsep-1 rowsep-1">Notes</th>
 <tbody class="tbody">
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__1">0.5.42</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__2">November 10,
+2023</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__3"><a
+href="lld/attachments/lld-schemas-0.5.42-schemas-sources-all.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__4"><a
+href="lld/attachments/lld-schemas-0.5.42-example-files-all.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__5"><a
+href="lld/attachments/lld-schemas-0.5.42-example-files-stable.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
+class="ph codeph">curated_deal_code</code> to Curator Feed</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__1">0.5.41</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__2">October 30,
+2023</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__3"><a
+href="lld/attachments/lld-schemas-0.5.41-schemas-sources-all.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__4"><a
+href="lld/attachments/lld-schemas-0.5.41-example-files-all.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__5"><a
+href="lld/attachments/lld-schemas-example-package-0.5.41-stable.zip"
+class="xref">Download</a></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
+class="ph codeph">external_bidrequest_id</code> and <code
+class="ph codeph">external_bidrequest_imp_id</code> to <a
+href="buyer-transparency-feed.md"
+class="xref" target="_blank">brand/buyer transparency feed</a>.</td>
+</tr>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__1">0.5.37</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__2">June 22, 2023</td>
@@ -90,7 +138,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
 class="ph codeph">region_id</code> to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</td>
 </tr>
 <tr class="even row">
@@ -113,7 +161,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Deprecated <code
 class="ph codeph">data_costs</code> from the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</td>
 </tr>
 <tr class="odd row">
@@ -136,7 +184,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
 class="ph codeph">fallback_ad_index</code> to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</td>
 </tr>
 <tr class="even row">
@@ -161,7 +209,7 @@ class="xref">Download</a></td>
 headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
 class="ph codeph">segment_data_costs</code> and <code
 class="ph codeph">feature_costs</code> to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</td>
 </tr>
 <tr class="odd row">
@@ -185,9 +233,9 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">A new field, <code
 class="ph codeph">extended_ids</code>, has been added to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a> and the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">Curator Feed</a>.</td>
 </tr>
 <tr class="even row">
@@ -210,7 +258,7 @@ href="lld/attachments/lld-schemas-example-package-0.5.26-stable.zip"
 class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">The <a
-href="https://docs.xandr.com/bundle/log-level-data/page/buyer-transparency-feed.html"
+href="buyer-transparency-feed.md"
 class="xref" target="_blank">Buyer Transparency Feed</a> (<code
 class="ph codeph">brand_transparency_feed</code>) is now a fully
 supported log-level feed (it was previously an alpha release).</td>
@@ -237,7 +285,7 @@ class="xref">Download</a></td>
 headers="ID-000001c6__file_formats_schemas__entry__6">Two new
 fields, <code class="ph codeph">device_unique_id</code>  and <code
 class="ph codeph">ip_address</code> have been added to the  <a
-href="https://docs.xandr.com/bundle/data-science-toolkit/page/log-level-incrementality-feed.html"
+href="data-science-toolkit/log-level-incrementality-feed.md"
 class="xref" target="_blank">Incrementality Feed</a>.</td>
 </tr>
 <tr class="even row">
@@ -260,7 +308,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">A new field, <code
 class="ph codeph">postal_code_ext</code>, has been added to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</td>
 </tr>
 <tr class="odd row">
@@ -283,10 +331,10 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added <code
 class="ph codeph">device_id</code> field to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">Curator Feed</a>. These IDs values can be
 looked up by using the Xandr API <a
-href="https://docs.xandr.com/bundle/xandr-api/page/device-model-service.html"
+href="xandr-api/device-model-service.md"
 class="xref" target="_blank">Device Model Service</a>. </td>
 </tr>
 <tr class="even row">
@@ -311,14 +359,14 @@ headers="ID-000001c6__file_formats_schemas__entry__6">Added 3 new
 fields, <code class="ph codeph">operating_system</code>, <code
 class="ph codeph">browser</code>, and <code
 class="ph codeph">language</code> to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">Curator Feed</a>. These values can be
 looked up by using the Xandr API <a
-href="https://docs.xandr.com/bundle/xandr-api/page/operating-system-service.html"
+href="xandr-api/operating-system-service.md"
 class="xref" target="_blank">Operating System Service</a>, <a
-href="https://docs.xandr.com/bundle/xandr-api/page/browser-service.html"
+href="xandr-api/browser-service.md"
 class="xref" target="_blank">Browser Service</a>, and <a
-href="https://docs.xandr.com/bundle/xandr-api/page/language-service.html"
+href="xandr-api/language-service.md"
 class="xref" target="_blank">Language Service</a> respectively. </td>
 </tr>
 <tr class="odd row">
@@ -341,11 +389,11 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added a new field,
 <code class="ph codeph">device_make_id</code>, to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>. The field contains the
 ID of the device make, which is generally the manufacturer of the device
 (e.g., Samsung). To map device make IDs to names, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/device-make-service.html"
+href="xandr-api/device-make-service.md"
 class="xref" target="_blank">Device Make Service</a>.</td>
 </tr>
 <tr class="even row">
@@ -369,7 +417,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added enhancements
 to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">Curator Feed</a> (curator_feed). </td>
 </tr>
 <tr class="odd row">
@@ -394,12 +442,12 @@ class="xref">Download</a></td>
 headers="ID-000001c6__file_formats_schemas__entry__6"><ul>
 <li>Added new field,  <code
 class="ph codeph">personal_identifiers</code>, to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>. This field of "repeated"
 type appears to both buyers and sellers for transacted, non-transacted
 and viewed impressions.</li>
 <li>Added the initial version of the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">Curator Feed</a> (<code
 class="ph codeph">curator_feed</code>). </li>
 </ul></td>
@@ -425,7 +473,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6"><ul>
 <li>The following changes have been made to the the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/buyer-transparency-feed.html"
+href="buyer-transparency-feed.md"
 class="xref" target="_blank">Buyer Transparency Feed</a>:
 <ul>
 <li>the following fields were added under the <code
@@ -443,7 +491,7 @@ class="ph codeph">10</code>).</li>
 </ul></li>
 <li><p>The <code class="ph codeph">custom_parameters</code> field (index
 <code class="ph codeph">17</code>) in the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/universal-pixel-feed.html"
+href="universal-pixel-feed.md"
 class="xref" target="_blank">Universal Pixel Feed</a> has been changed
 from an optional field to a repeated one.</p>
 <p>See the documentation for the individual feeds for more information
@@ -470,7 +518,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added 4 new fields
 to the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/universal-pixel-feed.html"
+href="universal-pixel-feed.md"
 class="xref" target="_blank">Universal Pixel Feed</a>. The new fields
 are:
 <ul>
@@ -523,7 +571,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Correction to the
 schema used to release the new <a
-href="https://docs.xandr.com/bundle/log-level-data/page/universal-pixel-feed.html"
+href="universal-pixel-feed.md"
 class="xref" target="_blank">Universal Pixel Feed</a>.</td>
 </tr>
 <tr class="odd row">
@@ -547,7 +595,7 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6">Added new <code
 class="ph codeph">external_campaign_id</code> field to the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/incoming-bid-response-from-bidders.html"
+href="xandr-bidders/incoming-bid-response-from-bidders.md"
 class="xref" target="_blank">Standard Feed</a> in LLD. This new optional
 field should only appear to sellers on resold impression rows. The value
 of this field is passed in via the <code
@@ -556,7 +604,7 @@ class="ph codeph">cid</code> field is optional, the new <code
 class="ph codeph">external_campaign_id</code> field will only have data
 when the external DSPs populate it on their bid(s).
 <p>See the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/incoming-bid-response-from-bidders.html"
+href="xandr-bidders/incoming-bid-response-from-bidders.md"
 class="xref" target="_blank">Open RTB specification</a> for more info on
 the <code class="ph codeph">cid</code> field.</p></td>
 </tr>
@@ -581,15 +629,15 @@ class="xref">Download</a></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000001c6__file_formats_schemas__entry__6"><ul>
 <li>Added <code class="ph codeph">partner_fees</code> to <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.</li>
 <li>Added <code class="ph codeph">partition_time_millis</code> field to
 all feeds to simplify the loading and partitioning of data into
 databases.</li>
 <li>Added <code class="ph codeph">hashed_user_id_64</code> field to <a
-href="https://docs.xandr.com/bundle/log-level-data/page/conversion-pixel-feed.html"
+href="conversion-pixel-feed.md"
 class="xref" target="_blank">Conversion Pixel</a> and <a
-href="https://docs.xandr.com/bundle/log-level-data/page/segment-feed.html"
+href="segment-feed.md"
 class="xref" target="_blank">Segment feeds</a> for clients who only want
 anonymized personal data.</li>
 </ul></td>
@@ -855,7 +903,7 @@ release</td>
 
 
 
-Note: Only version 2.5.0 of protobuf is
+<b>Note:</b> Only version 2.5.0 of protobuf is
 currently supported.
 
 
@@ -872,12 +920,12 @@ target="_blank">Protocol buffer</a> message.
 
 All schemas specify that fields are optional and `null` values are unset
 fields in the protobuf message. See the individual feeds under <a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data-feeds.md"
 class="xref" target="_blank">Log-level data feeds</a> for the conditions
 that cause a field's value to be `null` and for more details on column
 availability.
 
-See <a href="log-level-data-protocol-buffers.html" class="xref">Protobuf
+See <a href="log-level-data-protocol-buffers.md" class="xref">Protobuf
 Install and Configuration</a> for instructions on how to install and
 configure the protobuf compiler and to download a project that includes
 the schemas and sample code.
@@ -886,7 +934,7 @@ the schemas and sample code.
 
 
 
-Note: Only version 2.5.0 of protobuf is
+<b>Note:</b> Only version 2.5.0 of protobuf is
 currently supported.
 
 
@@ -903,12 +951,12 @@ Snappy support.
 
 All schemas specify that fields are optional and `null` values are unset
 fields in the protobuf message. See the individual <a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data-feeds.md"
 class="xref" target="_blank">feed service pages</a> for the conditions
 that cause a field's value to be `null` and for more details on column
 availability.
 
-See <a href="log-level-data-protocol-buffers.html" class="xref">Protobuf
+See <a href="log-level-data-protocol-buffers.md" class="xref">Protobuf
 Install and Configuration</a> for instructions on how to install and
 configure the protobuf compiler, and to download a project that includes
 the schemas and sample code.
@@ -923,7 +971,7 @@ target="_blank">https://avro.apache.org/docs/current/</a>.
 
 
 
-Note: Unlike in our protobuf formats,
+<b>Note:</b> Unlike in our protobuf formats,
 `null` values are never used. Missing or unset fields are encoded with
 their default values, as specified in the feed schema.
 

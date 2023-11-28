@@ -1,35 +1,26 @@
 ---
-Title : Sensitive Attributes
-Description : Clicking the Sensitive
-ms.date : 10/28/2023
-Attributes tab accesses a screen where you can select which
-sensitive attributes you want to exclude. 
+title : Sensitive Attributes 
+description : Learn navigating Sensitive Attributes screen.  
+ms.date : 11/24/2023
+
 ---
 
 
-# Sensitive Attributes
+# Sensitive attributes
 
+Clicking the **Sensitive
+Attributes** tab accesses a screen where you can select which
+sensitive attributes you want to exclude.
 
-
-Clicking the Sensitive
-Attributes tab accesses a screen where you can select which
-sensitive attributes you want to exclude. 
-![Sensitive attributes figures - A](media/sensitive-attributes-figure-1.png)
-
+:::image type="content" source="media/sensitive-attributes-figure-a.png" alt-text="Screenshot of Sensitive attributes figures - A ."::: 
 
 By default, all traffic is allowed. You get traffic that has been
 flagged for no sensitive attributes, and any traffic that has been
 flagged for any sensitive attributes. This screen allows you to
 narrow-down that targeting. Unflagged traffic is always received.
 
-
-
-<b>Note:</b> By default, inventory with any
-flagged sensitive attributes is allowed. The options described below are
-to allow only specific sensitive attributes. Inventory with no flagged
-sensitive attributes is always allowed.
-
-
+> [!NOTE]
+>  By default, inventory with any flagged sensitive attributes is allowed. The options described below are to allow only specific sensitive attributes. Inventory with no flagged sensitive attributes is always allowed.
 
 You can select the desired sensitive attributes by clicking the green
 checkmark icon.
@@ -45,52 +36,22 @@ desired sensitive attribute to select. Begin typing the name of the
 sensitive attribute you want, and this list will narrow down to your
 specific choice.
 
-When you close the Sensitive
-Attributes tab, a summary is shown in the upper right-hand corner
-of the Sensitive Attributes
+When you close the **Sensitive
+Attributes** tab, a summary is shown in the upper right-hand corner
+of the **Sensitive Attributes**
 display bar that shows that you've applied some sort of targeting.
 
+## Related topics
 
-## Related Topics
-
-- <a
-  href="bidder-platform-user-interface.md"
-  class="xref" target="_blank">Bidder Platform User Interface</a>
-- <a
-  href="profiles-screen.md"
-  class="xref" target="_blank">Profiles Screen</a>
-- <a
-  href="creating-a-new-bidder-profile.md"
-  class="xref" target="_blank">Creating a New Bidder Profile</a>
-- <a
-  href="editing-a-bidder-profile.md"
-  class="xref" target="_blank">Editing a Bidder Profile</a>
-- <a
-  href="additional-functions.md"
-  class="xref" target="_blank">Additional Functions</a>
-- <a
-  href="bidder-profile-targeting-options.md"
-  class="xref" target="_blank">Bidder Profile Targeting Options</a>
-- <a
-  href="countries.md"
-  class="xref" target="_blank">Countries</a>
-- <a
-  href="domain-lists.md"
-  class="xref" target="_blank">Domain Lists</a>
-- <a href="ad-types.md"
-  class="xref" target="_blank">Ad Types</a>
-- <a
-  href="supply-types.md"
-  class="xref" target="_blank">Supply Types</a>
-- <a
-  href="exchanges-and-members.md"
-  class="xref" target="_blank">Exchanges and Members</a>
-- <a
-  href="unknown-users.md"
-  class="xref" target="_blank">Unknown Users</a>
-
-
-
-
-
-
+- [Bidder Platform User Interface](bidder-platform-user-interface.md)</a>
+- [Profiles Screen](profiles-screen.md)
+- [Creating a New Bidder Profile](creating-a-new-bidder-profile.md)
+- [Editing a Bidder Profile](editing-a-bidder-profile.md)
+- [Additional Functions](additional-functions.md)
+- [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
+- [Countries](countries.md)
+- [Domain Lists](domain-lists.md)
+- [Ad Types](ad-types.md)
+- [Supply Types](supply-types.md)
+- [Exchanges and Members](exchanges-and-members.md)
+- [Unknown Users](unknown-users.md)

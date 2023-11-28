@@ -1,6 +1,8 @@
 ---
 Title : Member Data Sharing Service
 Description : The Member Data Sharing Service allows you to share your segments with
+ms.custom : data-providers
+ms.date : 10/28/2023
 other platform members. Here's how it works:
 ---
 
@@ -34,13 +36,13 @@ to add it to the campaign's targeting profile again.
 
 
 
-Note:
+<b>Note:</b>
 
 - Note that advertiser-level segments cannot be shared. Only
   member/network-level segments can be shared. To move segments from the
   advertiser to network level, you may set advertiser_id to NULL via the
   <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+  href="xandr-api/segment-service.md"
   class="xref" target="_blank">Segment Service</a>.
 - You can not share segments with buyer members who belong to externally
   integrated DSPs.
@@ -107,7 +109,7 @@ target="_blank">https://api.<span
 class="ph">adnxs.com/member-data-sharing?data_member_id=MEMBER_ID</a> <br />
 (sharing JSON)<br />
 &#10;
-Note: The member-data-sharing object
+<b>Note:</b> The member-data-sharing object
 cannot be an array if singular.
 </td>
 <td class="entry" headers="ID-00000f2b__entry__3">Create one sharing
@@ -121,7 +123,7 @@ target="_blank">https://api.<span
 class="ph">adnxs.com/member-data-sharings?data_member_id=MEMBER_ID</a><br />
 (sharing JSON)<br />
 &#10;
-Note: The member-data-sharings (plural)
+<b>Note:</b> The member-data-sharings (plural)
 object must be an array if plural.
 </td>
 <td class="entry" headers="ID-00000f2b__entry__3">Create multiple
@@ -134,7 +136,7 @@ href="https://api.adnxs.com/member-data-sharing/RECORD_ID" class="xref"
 target="_blank">https://api.<span
 class="ph">adnxs.com/member-data-sharing?id=RECORD_ID</a>
 
-Note:
+<b>Note:</b>
 <ul>
 <li>This method removes all existing segments, replacing the segments
 with only the newly specified list.</li>
@@ -152,7 +154,7 @@ href="https://api.adnxs.com/member-data-sharing?id=RECORD_ID&amp;append=true"
 class="xref" target="_blank">https://api.<span
 class="ph">adnxs.com/member-data-sharing?id=RECORD_ID&amp;append=true</a>
 
-Note: Segments can only be added to the
+<b>Note:</b> Segments can only be added to the
 list using the "append" flag, and not deleted.
 </td>
 <td class="entry" headers="ID-00000f2b__entry__3">Appending segments
@@ -172,7 +174,7 @@ record.</td>
 
 
 
-Tip: JSON Structure:
+<b>Tip:</b> JSON Structure:
 
 When adding or updating a single sharing record, you should structure
 the JSON as a single object called "member_data_sharing". When adding
@@ -180,7 +182,7 @@ POST) multiple sharing records, you should structure the JSON as an
 array of objects called "member_data_sharings" (note the plural) and
 place the sharing data in an array. You cannot update (PUT) multiple
 sharing records at the same time. For exact formatting, see the <a
-href="member-data-sharing-service.html#ID-00000f2b__member-data-sharing-service-examples"
+href="member-data-sharing-service.md#ID-00000f2b__member-data-sharing-service-examples"
 class="xref">examples</a> below.
 
 
@@ -247,7 +249,6 @@ See the first example below for formatting.
 
 
 
-<div id="ID-00000f2b__member-data-sharing-service-examples"
 >
 
 ## Examples

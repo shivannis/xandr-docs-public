@@ -1,6 +1,8 @@
 ---
 Title : Data Buyer Workflow Changes
 Description : To support the clearing of Data Provider costs and to represent the
+ms.custom : data-providers
+ms.date : 10/28/2023
 distinction between Media costs and Third-party costs (e.g., for user
 ---
 
@@ -55,7 +57,7 @@ Cost.
 
 
 
-Note: For any costs for which the
+<b>Note:</b> For any costs for which the
 yellow alert symbol is displayed, Xandr will not
 clear. These alerts denote one of the following conditions:
 

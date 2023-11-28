@@ -1,6 +1,8 @@
 ---
 Title : Data Buyer Provider Service
 Description : ## Data Buyer Provider Service
+ms.custom : data-providers
+ms.date : 10/28/2023
 The Data Buyer Provider Service allows you to view all activated buyers
 on the Data Marketplace that have access to your data and have activated
 data clearing with you. Any segment that you’ve mapped using the
@@ -19,7 +21,7 @@ The Data Buyer Provider Service allows you to view all activated buyers
 on the Data Marketplace that have access to your data and have activated
 data clearing with you. Any segment that you’ve mapped using the
 existing <a
-href="https://docs.xandr.com/bundle/data-providers/page/segment-billing-category-service.html"
+href="segment-billing-category-service.md"
 class="xref" target="_blank">Segment Billing Category Service</a> will
 automatically be cleared for these buyers.  
   

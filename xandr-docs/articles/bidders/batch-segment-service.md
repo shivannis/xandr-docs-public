@@ -1,22 +1,12 @@
 ---
-Title : Batch Segment Service
-Description : The Batch Segment Service allows you to upload audiences to the
-ms.date : 10/28/2023
-Xandr platform through a batch/bulk upload
-framework. This data can be used in conjunction with data from buyers or
+title: Bidders - Batch Segment Service
+description: In this article, find information about the Batch Segment Service (BSS), how to use the feature, possible errors you might face, and the JSON fields associated with BSS.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Batch segment service
 
-# Batch Segment Service
-
-
-
-The Batch Segment Service allows you to upload audiences to the
-Xandr platform through a batch/bulk upload
-framework. This data can be used in conjunction with data from buyers or
-sellers for the purposes of campaign targeting or yield management. All
-data sent through the Batch Segment Service is appended to the existing
-segment data already in our system.
+The Batch Segment Service allows you to upload audiences to the Xandr platform through a batch/bulk upload framework. This data can be used in conjunction with data from buyers or sellers for the purposes of campaign targeting or yield management. All data sent through the Batch Segment Service is appended to the existing segment data already in our system.
 
 Features include:
 
@@ -28,68 +18,29 @@ Features include:
 - Association of segments to users regardless of location of users
 - A high maximum data volume
 
-For optimal results, it is strongly recommended implementing the best
-practices found in <a
-href="batch-segment-service-best-practices.md"
-class="xref" target="_blank">Batch Segment Service Best Practices</a>.
+For optimal results, it is strongly recommended to implement the best practices found in [Batch Segment Service Best Practices](batch-segment-service-best-practices.md).
 
+> [!NOTE]
+> The Batch Segment Service requires configuration prior to use. Please consult [Initial BSS Account Setup](initial-bss-account-setup.md) to learn how to configure it for your seat.
+> [!IMPORTANT]
+> [Gzip](https://en.wikipedia.org/wiki/Gzip) is the only file compression method supported by this service.
 
+## Add a segment file for processing
 
-<b>Note:</b>
+Adding your segment file to the system is a three-step process. First, request a job identification number and upload URL. Second, upload your file to the assigned upload URL. Third, check the job's processing status. Please note that for now, files are limited to at most 1800 segments on any individual line. If you have more than 1800 segments for one user you must break that line into multiple lines.
 
-The Batch Segment Service requires configuration prior to use. Please
-consult <a href="https://wiki.appnexus.com/x/pK0dBQ" class="xref"
-target="_blank">Batch Segment Service - Configuration</a> to learn how
-to configure it for your seat.
+- [Step 1. Request an upload URL and job ID](#step-1-request-an-upload-url-and-job-id)
+- [Step 2. Post the file to the upload URL](#step-2-post-the-file-to-the-upload-url)
+- [Step 3. Check the job status](#step-3-check-the-job-status)
 
+### Step 1. Request an upload URL and job ID
 
+Each segment data file that is uploaded must be associated with a particular job ID. This ID is used to create the upload URL and to track the file's processing status. The first step is to send an empty `POST` request to the service.
 
+> [!NOTE]
+> This service works for both [api.appnexus.com](https://api.appnexus.com/) and for [api.adnxs.com](http://api.adnxs.com/) - it is available for both bidder and console logins.
 
-
-<b>Warning:</b>
-
-<a href="https://en.wikipedia.org/wiki/Gzip" class="xref"
-target="_blank">Gzip</a> is the only file compression method supported
-by this service.
-
-
-
-
-## Add a Segment File for Processing
-
-Adding your segment file to the system is a three-step process. First,
-request a job identification number and upload URL. Second, upload your
-file to the assigned upload URL. Third, check the job's processing
-status. Please note that for now, files are limited to at most 1800
-segments on any individual line. If you have more than 1800 segments for
-one user you must break that line into multiple lines.
-
-- <a href="batch-segment-service.md#ID-0000a208__8" class="xref">Step 1.
-  Request an upload URL and job ID</a>
-- <a href="batch-segment-service.md#ID-0000a208__9" class="xref">Step 2.
-  Post the file to the upload URL</a>
-- <a href="batch-segment-service.md#ID-0000a208__5" class="xref">Step 3.
-  Check the job status</a>
-
-**Step 1. Request an upload URL and job ID**
-
-Each segment data file that is uploaded must be associated with a
-particular job ID. This ID is used to create the upload URL and to track
-the file's processing status. The first step is to send an empty `POST`
-request to the service.
-
-
-
-<b>Note:</b> This service works for both
-<a href="https://api.appnexus.com/" class="xref"
-target="_blank">api.appnexus.com</a> and for
-<a href="http://api.adnxs.com/" class="xref" target="_blank">api.<span
-class="ph">adnxs.com</a> - it is available for both bidder and
-console logins.
-
-
-
-``` pre
+```
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
 {
  "response": {
@@ -112,45 +63,21 @@ $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
 }
 ```
 
-**Step 2. Post the file to the upload URL**
+### Step 2. Post the file to the upload URL
 
-The file upload URL is given in the JSON response to Step 1 by the field
-`upload_url`. You must `POST` your segment file to this URL for
-processing. You'll receive a JSON object that tells you if the upload
-succeeded. Do not hardcode the upload URL in your application - make
-sure to dynamically grab it from the upload_url field.
+The file upload URL is given in the JSON response to Step 1 by the field `upload_url`. You must `POST` your segment file to this URL for processing. You'll receive a JSON object that tells you if the upload succeeded. Do not hardcode the upload URL in your application - make sure to dynamically grab it from the `upload_url` field.
 
+> [!NOTE]
+>
+> - You must begin your upload to the given Upload URL within five (5) minutes, and only one URL is valid at any given time. If you wait longer than 5 minutes to start your upload you must request a new URL.
+> - We recommend you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will be prohibited from uploading additional jobs.
+> - Your segment file should not be larger than 0.5GB.
+> [!WARNING]
+> In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream". *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
+> 
+> Your file must conform to the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
 
-
-<b>Note:</b>
-
-- You must begin your upload to the given Upload URL within five (5)
-  minutes, and only one URL is valid at any given time. If you wait
-  longer than 5 minutes to start your upload you must request a new URL.
-- We recommend you do not exceed one upload per minute at the least. If
-  you have more than 200 jobs waiting to be processed at any given time,
-  you will be prohibited from uploading additional jobs.
-- Your segment file should not be larger than 0.5GB.
-
-
-
-
-
-<b>Warning:</b>
-
-In order for the file to upload correctly, you *must* specify the MIME
-type in the HTTP header as "Content-Type: application/octet-stream". *Do
-not* use "Content-Type: application/x-www-form-urlencode" (-d or --data
-flags in curl). Using an incorrect MIME type will prevent the file from
-being processed by the API Batch Segment Service.
-
-Your file must conform to the
-<a href="http://en.wikipedia.org/wiki/ISO/IEC_8859-1" class="xref"
-target="_blank">Latin1</a> character set.
-
-
-
-``` pre
+```
 $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-binary @segment_file "https://01.data-api.prod.adnxs.net/segment-upload/JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
 * About to connect() to 01.data-api.prod.adnxs.net port 80
 *   Trying 64.210.62.71... connected
@@ -173,9 +100,9 @@ $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-b
                      
 ```
 
-**Example of SSL upload URL**
+#### Example of SSL upload URL
 
-``` pre
+```
 curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segment?member_id=958"
 "batch_segment_upload_job": {
       "id": 14841671,
@@ -186,41 +113,22 @@ curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segmen
     }
 ```
 
-**Step 3. Check the job status**
+### Step 3. Check the job status
 
-Finally, check the processing status by sending a `GET` request. The
-JSON response contains information such as how long the file took to
-process and the number of errors, if any. Note that you should wait
-until phase="completed" before looking at the results fields such as
-`num_valid`. For more detailed information, see
-<a href="batch-segment-service.md#ID-0000a208__ID-0000a2bc"
-class="xref">JSON Fields</a> below.
+Finally, check the processing status by sending a `GET` request. The JSON response contains information such as how long the file took to process and the number of errors, if any. Note that you should wait until `"phase": "completed"` before looking at the results fields such as
+`num_valid`. For more detailed information, see [JSON Fields](#json-fields) below.
 
+> [!NOTE]
+> Per AppNexus SLA, allow up to 24 hours for the file to process.
+> [!WARNING]
+> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, e.g.:
+>
+> ```
+> {"batch_segment_upload_job":[{"phase": "completed"}]}
+> ```
+>
 
-
-<b>Note:</b> Per
-AppNexus SLA, allow up to 24 hours for the file
-to process.
-
-
-
-
-
-<b>Warning:</b> If you are a data provider
-using the Impbus API, note that the `batch_segment_upload_job` field
-will be an array with a single object inside of it, e.g.
-
-
-
-``` pre
-{"batch_segment_upload_job":[{"phase":"completed"}]}
 ```
-
-
-
-
-
-``` pre
 $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
 {
  "response": {
@@ -261,30 +169,18 @@ $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=J
 }
 ```
 
+## Possible upload errors
 
+### Attempting to upload file larger than 0.5GB
 
-
-
-## Possible Upload Errors
-
-Attempting to upload file larger than 0.5GB
-
-**Attempting to upload file larger than 0.5GB**
-
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"FILESIZE_LIMIT_EXCEEDED","errors":["Member
-            exceeds maximum byte size allowed for a file"]}}
+exceeds maximum byte size allowed for a file"]}}
 ```
 
+### Error code in batch segment upload job
 
-
-Error code in batch segment upload job
-
-**Error code in batch segment upload job**
-
-``` pre
+```
 ""batch_segment_upload_job": {
       "phase": "error",
       "start_time": "2015-08-13 18:40:32",
@@ -318,100 +214,60 @@ The following are errors that may happen when:
 
 - You've canceled the upload
 - The upload phase exceeds 90 minutes
-- You've reached one of its four upload limits (daily bytes, hourly
-  bytes, or hourly lines limit)
+- You've reached one of its four upload limits (daily bytes, hourly bytes, or hourly lines limit)
 
-Attempting to exceed daily byte upload limit
+### Attempting to exceed daily byte upload limit
 
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
-                  exceeds maximum allowed bytes per day"]}}
+exceeds maximum allowed bytes per day"]}}
 ```
 
+### Attempting to exceed hourly byte upload limit
 
-
-Attempting to exceed hourly byte upload limit
-
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
-                  exceeds maximum allowed number of lines per hour"]}}
+exceeds maximum allowed bytes per hour"]}}
 ```
 
+### Attempting to exceed daily lines upload limit
 
-
-Attempting to exceed daily lines upload limit
-
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
-                  exceeds maximum allowed number of lines per day"]}} 
+exceeds maximum allowed number of lines per day"]}} 
 ```
 
+### Attempting to exceed hourly lines upload limit
 
-
-Attempting to exceed hourly lines upload limit
-
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member
-                  exceeds maximum allowed lines per hour"]}}
+exceeds maximum allowed lines per hour"]}}
 ```
 
+### Exceeding maximum time to upload
 
-
-Exceeding maximum time to upload
-
-
-
-``` pre
+```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Maximum
-                  upload time exceeded"]}}
+upload time exceeded"]}}
 ```
 
+## Possible processing errors
 
+### Invalid format
 
+If the value of the `num_invalid_format` field is greater than `"0"`, check the values in the `error_log_lines` field (see **Example** below). Note the following in the `error_log_lines` field:
 
+- `num_invalid_format` indicates there was a problem parsing a line in the uploaded file.
 
+- `"failed with an illegal number of fields"` indicates that the number of fields in a `segment_fields` block did not match what was defined in the batch-segment config (see [Initial BSS Account Setup](initial-bss-account-setup.md) for more information). In the below example, the config indicates three fields: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two fields: `SEG_ID`, `VALUE`
 
+    ```
+    segment_fields: [SEG_ID,VALUE,EXPIRATION]
+    ```
 
-## Possible Processing Errors
+#### `num_invalid_format` and `error_log_lines` example
 
-**Invalid format**
-
-If the value of the `num_invalid_format` field is greater than `"0"`,
-check the values in the `error_log_lines` field (see **Example** below).
-Note the following in the `error_log_lines` field:
-
-- `num_invalid_format` indicates there was a problem parsing a line in
-  the uploaded file.
-
-- `"failed with an illegal number of fields"` indicates that the number
-  of fields in a `segment_fields` block did not match what was defined
-  in the batch-segment config (see <a
-  href="https://wiki.appnexus.com/display/api/Batch%2bSegment%2bService%2b-%2bConfiguration"
-  class="xref" target="_blank">Batch Segment Service - Configuration</a>
-  for more information). In the below example, the config indicates
-  three fields: `SEG_ID`, `VALUE`, `EXPIRATION`,
-
-  
-
-  ``` pre
-  segment_fields: [SEG_ID,VALUE,EXPIRATION]
   ```
-
-  
-
-  but the parser only found two fields: `SEG_ID`, `VALUE`
-
-  **num_invalid_format and error_log_lines example**
-
-  ``` pre
   "batch_segment_upload_job": {
   phase": "completed",
   "error_code": null,
@@ -441,28 +297,14 @@ Note the following in the `error_log_lines` field:
   }
   ```
 
+## View your file upload history
 
+To see metadata about all of your segment file uploads within the last 30 days, make a `GET` call to the service with your `member_id` specified in the query string. The JSON response will include an array of `batch_segment_upload_job` objects. For more information about the specific fields of the `batch_segment_upload_job` object, see [JSON Fields](#json-fields).
 
+> [!NOTE]
+> File upload history is available for the last 30 days only.
 
-
-## View Your File Upload History
-
-To see metadata about all of your segment file uploads within the last
-30 days, make a `GET` call to the service with your `member_id`
-specified in the query string. The JSON response will include an array
-of `batch_segment_upload_job` objects. For more information about the
-specific fields of the `batch_segment_upload_job` object, see
-<a href="batch-segment-service.md#ID-0000a208__ID-0000a2bc"
-class="xref">JSON Fields</a>.
-
-
-
-<b>Note:</b> File upload history is available
-for the last 30 days only.
-
-
-
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 {
    "response" : {
@@ -497,405 +339,66 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 }
 ```
 
+> [!NOTE]
+> Our API limits responses to 100 objects via pagination. You can view additional objects by appending one of these to the API call:
+>
+> ```
+> &start_element=101
+> ```
+>
+> ```
+> &sort=last_modified.desc
+> ```
+>
+> You can read more about pagination in [Throttling, Pagination, and Filtering](../digital-platform-api/05---throttling-pagination-and-filtering.md).
 
+## JSON fields
 
-<b>Note:</b> Our API limits responses to 100
-objects via pagination. You can view additional objects by appending one
-of these to the API call:
+> [!TIP]
+> To find out which fields you can filter and sort by, make a GET call to `https://api.appnexus.com/batch-segment/meta`.
 
-``` pre
-&start_element=101
-&sort=last_modified.desc
-```
+| Fields | Type | Description |
+|---|---|---|
+| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) for details. |
+| `id` | int | This is the ID of the `batch_segment_upload_job` object associated with this request. <br><br> **Default**: An automatically generated number. |
+| `status` | string | The status of the API call; successful calls return `"OK"`. |
 
-You can read more about pagination on our wiki <a
-href="batch-segment-service.md#"
-class="xref" target="_blank">here</a>.
+### Batch segment upload job
 
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing).
 
+> [!NOTE]
+> Most metadata will only be present when `"phase" = "completed."`
 
+| Fields | Type | Description |
+|---|---|---|
+| `completed_time` | date | The time at which file processing was completed. |
+| `created_on` | date | The creation date of this object. |
+| `error_code` | int | If `"phase" = "error"`, this error code describes the type of error encountered. Note that an error code will only be shown here if there was an error with the uploading, validating, or processing of the file itself (i.e. does not include invalid format or invalid segment errors). Common errors are caused by unreadable files and exceeding defined object limits. Returns `null` if no errors were found. |
+| `error_log_lines` | string | A string containing newline-separated lines. Each line lists a validation error or the reason for an error while uploading your file. You can choose how many lines (200 by default) appear in this field. |
+| `id` | int | The unique identifier of this object. |
+| `job_id` | string | A string of alphanumeric characters that uniquely identifies the processing job associated with this file. |
+| `last_modified` | date | The most recent modification date of this object (usually via `POST`). |
+| `member_id` | int | Your member ID. |
+| `num_inactive_segment` | int | The number of inactive segments in the file. Deduplicated. |
+| `num_invalid_format` | int | The number of uploaded lines containing formatting errors (This depends upon your particular file format configuration). Duplicate lines will also be considered to be an invalid format. |
+| `num_invalid_segment` | int | The number of invalid segments in the file. Deduplicated. |
+| `num_invalid_timestamp` | int | The number of invalid timestamps in the file. |
+| `num_invalid_user` | int | This is a count of unique input lines that have an invalid or nonexistent user |
+| `num_other_error` | int | This is a placeholder value not currently in use. |
+| `num_past_expiration` | int | The number of expired segments in the file. Deduplicated. |
+| `num_unauth_segment` | int | The number of segments in the file which you are unauthorized to access. Deduplicated. |
+| `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line. |
+| `num_valid_user` | int | This is a count of unique input lines that have a valid user ID. |
+| `percent_complete` | int | The percentage of the processing that has been completed, given the current `phase` at the time of the request. |
+| `phase` | enum | The current processing status, one of `"error"`, `"starting"`, `"uploading"`, `"validating"`, `"processing"`, or `"completed"`. |
+| `segment_log_lines` | string | A string containing newline-separated lines. Each line lists a segment and how many users were successfully added to it. This field defaults to 200 lines. |
+| `start_time` | date | The time at which file upload began. |
+| `time_to_process` | decimal | How long it took to process the segment file, in minutes. |
+| `upload_url` | string | The URL where you'll upload your segment data file. |
+| `uploaded_time` | date | The time at which the file associated with this job ID was uploaded. |
+| `validated_time` | date | The time at which file validation was completed. |
 
+## Related topic
 
-
-## JSON Fields
-
-
-
-
-
-<b>Tip:</b> To find out which fields you can
-filter and sort by, make a GET call to
-<a href="https://api.appnexus.com/batch-segment/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/batch-segment/meta</a>.
-
-
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000a208__ID-0000a2bc__entry__1"
-class="entry colsep-1 rowsep-1">Fields</th>
-<th id="ID-0000a208__ID-0000a2bc__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000a208__ID-0000a2bc__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__3">This is the ID of the <code
-class="ph codeph">batch_segment_upload_job</code> object associated with
-this request.
-<p><strong>Default</strong>: An automatically generated number.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__1"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__3">The status of the API call;
-successful calls return <code class="ph codeph">"OK"</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__1"><code
-class="ph codeph">batch_segment_upload_job</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__2">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__3">The object whose fields
-contain metadata describing the upload and processing job. If you are
-using the Impbus API, this will be an array containing a single object.
-See <a href="batch-segment-service.md#ID-0000a208__ID-0000a2f6"
-class="xref">Batch Segment Upload Job</a> for details.</td>
-</tr>
-</tbody>
-</table>
-
-**Batch Segment Upload Job**
-
-When you request the status of your processing job, the system returns a
-`batch_segment_upload_job` object (if you are a data provider, this will
-be an array containing a single object). Depending upon which request
-you're making to the service, it will contain some or all of the
-following metadata (For more information about the required sequence of
-requests, see
-<a href="batch-segment-service.md#ID-0000a208__ID-0000a236"
-class="xref">Add a Segment File for Processing</a>). Note that most
-metadata will only be present when phase = "completed."
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000a208__ID-0000a2bc__entry__13"
-class="entry colsep-1 rowsep-1">Fields</th>
-<th id="ID-0000a208__ID-0000a2bc__entry__14"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000a208__ID-0000a2bc__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">upload_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The URL where you'll
-upload your segment data file.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">phase</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The current processing
-status, one of "error", "starting", "uploading", "validating",
-"processing", or "completed."</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">start_time</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The time at which file
-upload began.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">uploaded_time</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The time at which the file
-associated with this job ID was uploaded.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">validated_time</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The time at which file
-validation was completed.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">completed_time</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The time at which file
-processing was completed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">error_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">If phase='error', this
-error code describes the type of error encountered. Note that an error
-code will only be shown here if there was an error with the uploading,
-validating, or processing of the file itself (i.e. does not include
-invalid format or invalid segment errors). Common errors are caused by
-unreadable files and exceeding defined object limits. Returns <code
-class="ph codeph">null</code> if no errors were found.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">time_to_process</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">decimal</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">How long it took to
-process the segment file, in minutes.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">percent_complete</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The percentage of the
-processing that has been completed, given the current <code
-class="ph codeph">phase</code> at the time of the request.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_valid</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of valid lines
-in the uploaded file. Each user/segment combination is considered 1
-line.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_invalid_format</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of uploaded
-lines containing formatting errors (This depends upon your particular
-file format configuration). Duplicate lines will also be considered to
-be an invalid format.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_valid_user</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">This is a count of unique
-input lines that have a valid user ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_invalid_user</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">This is a count of unique
-input lines that have an invalid or nonexistent user</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_invalid_segment</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of invalid
-segments in the file. Deduplicated.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_invalid_timestamp</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of invalid
-timestamps in the file.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_unauth_segment</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of segments in
-the file which you are unauthorized to access. Deduplicated.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_past_expiration</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of expired
-segments in the file. Deduplicated.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_inactive_segment</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The number of inactive
-segments in the file. Deduplicated.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">num_other_error</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">This is a placeholder
-value not currently in use.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">error_log_lines</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">A string containing
-newline-separated lines. Each line lists a validation error or the
-reason for an error while uploading your file. You can choose how many
-lines (200 by default) appear in this field.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">segment_log_lines</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">A string containing
-newline-separated lines. Each line lists a segment and how many users
-were successfully added to it. This field defaults to 200 lines.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The unique identifier of
-this object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">job_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">A string of alphanumeric
-characters that uniquely identifies the processing job associated with
-this file.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">Your member ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The creation date of this
-object.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__13"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__14">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000a208__ID-0000a2bc__entry__15">The most recent
-modification date of this object (usually via <code
-class="ph codeph">POST</code>).</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-## Related Topics
-
-- <a
-  href="legacy-bss-file-format.md"
-  class="xref" target="_blank">Batch Segment Service - Sample PHP
-  Script</a>
-
-
-
-
-
-
+[Batch Segment Service - Sample PHP Script](legacy-bss-file-format.md)

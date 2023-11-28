@@ -1,6 +1,8 @@
 ---
 Title : Where to Direct Your Integration Inquiries
 Description : ## Where to Direct Your Integration Inquiries
+ms.custom : data-providers
+ms.date : 10/28/2023
 For assistance with your integrations:
 1.  Go to <a href="https://help.xandr.com" class="xref"
 ---

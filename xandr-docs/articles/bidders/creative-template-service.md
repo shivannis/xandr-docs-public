@@ -1,14 +1,12 @@
 ---
-Title : Creative Template Service
-Description : Xandr categorizes creatives by format, media
-ms.date : 10/28/2023
-type, and media subtype. Format defines the resource type of creatives
+title : Bidders - Creative Template Service
+description : Learn how Xandr categorizes creatives by format, media type, and media subtype.  
+ms.date : 11/21/2023
+
 ---
 
 
-# Creative Template Service
-
-
+# Bidders - Creative template service
 
 Xandr categorizes creatives by format, media
 type, and media subtype. Format defines the resource type of creatives
@@ -17,7 +15,7 @@ creatives (banner, expandable, video, etc.); and media subtype defines
 the specific display style of creatives (standard banner, MediaMind
 expandable, or Standard VAST).
 
-**Standard Templates**
+### Standard templates
 
 For each format, media type, and media subtype combination,
 Xandr provides a standard creative template that
@@ -25,7 +23,7 @@ ensures proper rendering on web pages when creatives are served. You
 cannot edit these templates, but the Creative Template Service allows
 you to view them and examine their rendering code.
 
-**Custom Templates**
+### Custom templates
 
 If you want to customize the way certain types of creatives render, you
 can build your own templates. With custom templates, you have complete
@@ -33,493 +31,77 @@ control of the JavaScript, HTML, or XML rendering code, and you can
 define macros to prompt your traffickers to enter information and make
 decisions about the behavior of creatives when they are uploaded.
 
-
-
-<b>Note:</b> You can have up to 100 custom
-templates. Please note, however, that Xandr does
-not provide support for creatives that do not render correctly as a
-result of errors in custom template code.
-
-
-
-
+> [!NOTE]
+> You can have up to 100 custom templates. Please note, however, that Xandr does not provide support for creatives that do not render correctly as a result of errors in custom template code.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000459b__entry__1" class="entry colsep-1 rowsep-1">HTTP
-method</th>
-<th id="ID-0000459b__entry__2" class="entry colsep-1 rowsep-1">End
-point</th>
-<th id="ID-0000459b__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-view all templates (standard and custom).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template?member_id=null" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template?member_id=null</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-view standard templates only.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template?id=TEMPLATE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template?id=TEMPLATE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-view a specific template.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template</a> (template JSON)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-add a new custom template.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">PUT </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template?id=TEMPLATE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template?id=TEMPLATE_ID</a> (template
-JSON)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-modify a custom template.
+| HTTP method | End point                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DELETE      | [https://api.adnxs.com/template?id=TEMPLATE_ID](https://api.adnxs.com/template?id=TEMPLATE_ID)                 | To delete a custom template. <br>**Tip**: You cannot delete a custom template that is used by one or more creatives, but you can archive the template to prevent future creatives from using it. See the [Archiving a custom template](#archiving-a-custom-template) example below for more details.                                                                                                                                                                                |
+| GET         | [https://api.adnxs.com/template](https://api.adnxs.com/template)                                | To view all templates (standard and custom).                                                                                                                                                                                                                                                                                                                                                                                                |
+| GET         | [https://api.adnxs.com/template?member_id=null](https://api.adnxs.com/template?member_id=null)                 | To view standard templates only.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| GET         | [https://api.adnxs.com/template?id=TEMPLATE_ID](https://api.adnxs.com/template?id=TEMPLATE_ID)                 | To view a specific template.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| POST        | [https://api.adnxs.com/template](https://api.adnxs.com/template)(template JSON)                | To add a new custom template.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| PUT         | [https://api.adnxs.com/template?id=TEMPLATE_ID](https://api.adnxs.com/template?id=TEMPLATE_ID) (template JSON) | To modify a custom template. <br> **Tip**: To modify a custom template, you need to use your member user rather than your bidder user.<br>  **Warning**: When you modify a custom template, your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "rejected," and they will stop serving on most third-party inventory. |
 
-<b>Tip:</b> To modify a custom template, you
-need to use your member user rather than your bidder user. 
+## JSON fields
 
-class="note warning note_warning">
-<b>Warning:</b> When you modify a custom
-template, your changes immediately affect any creatives that are already
-using the template. If your changes cause these creatives to stop
-rendering properly, their audit status will be changed to "rejected,"
-and they will stop serving on most third-party inventory.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__2"><a
-href="https://api.adnxs.com/template?id=TEMPLATE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/template?id=TEMPLATE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__3">To
-delete a custom template.
-
-<b>Tip:</b> You cannot delete a custom
-template that is used by one or more creatives, but you can archive the
-template to prevent future creatives from using it. See the <a
-href="creative-template-service.md#ID-0000459b__archive"
-class="xref">Archiving a custom template</a> example below for more
-details.
-</td>
-</tr>
-</tbody>
-</table>
+| Field                 | Type (Length)    | Description                                                                                                                                                                                                                                                                                                                                         |
+|-----------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `callback_content_html` | string           | When media_subtype is "Popup" or "Popunder", content_js defines the rendering code for the pop window, and this field defines the rendering code for the content in the pop window.                                                                                                                                                                 |
+| `content_html`          | string           | The template's rendering code in HTML. The code can include both Xandr standard macros and your own custom macros. Xandr macros must begin with the $ symbol, and custom macros must begin with the # symbol. Each custom macro must be defined in the macros array. **Required On**: POST, if content_js and content_xml are not provided              |
+| `content_js`            | string           | The template's rendering code in JavaScript. The code can include both Xandr standard macros and your own custom macros. Xandr macros must begin with the $ symbol, and custom macros must begin with the # symbol. Each custom macro must be defined in the macros array. **Required On**: POST, if content_html and content_xml are not provided      |
+| `content_xml`           | string           | **Deprecated**.                                                                                                                                                                                                                                                                                                                                         |
+| `description`           | string           | The description of the creative template.                                                                                                                                                                                                                                                                                                           |
+| `format`                | object           | The format of creatives that can use this template, for example, "image" or "flash".  <br> **Required On**: POST                                                                                                                                                                                                                                             |
+| `id`                    | int              | The ID of the creative template. <br> **Required On**: PUT/DELETE, in query string                                                                                                                                                                                                                                                                           |
+| `is_archived`           | Boolean          | If true, the template is archived. Archiving a template prevents future creatives from using the template but does not affect creatives already using the template. <br> **Default**: false                                                                                                                                                                  |
+| `is_default`            | Boolean          | If true, the template is automatically assigned to creatives that match the template's media type, media subtype, and format. When the creatives are uploaded, this default assignment can be overridden, if necessary. <br> **Note**: There can be only one default creative template per media type, media subtype, and format combination. <br> **Default**: false |
+| `last_modified`         | timestamp        | **Read-only**. The date and time when the creative template was last modified.                                                                                                                                                                                                                                                                          |
+| `macros`                | array of objects | The custom macros used in the content_js, content_html, or content_xml fields. You can include up to 20 custom macros in a template.                                                                                                                                                                                                                |
+| `media_subtype`         | object           | The display style of creatives that can use this template. Each media subtype belongs to a superordinate media type, for example, the "Standard Banner" media subtype belongs to the "Banner" media type.  <br> **Required On**: POST                                                                                                                        |
+| `member_id`             | int              | **Read-only**. The ID of the member that owns the template. For standard Xandr templates, this is null.                                                                                                                                                                                                                                                 |
+| `name`                  | string (30)      | The name of the creative template. <br> **Required On**: POST                                                                                                                                                                                                                                                                                                |
 
 
+### Media subtype
 
+| Field           | Type   | Description                                                         |
+|-----------------|--------|---------------------------------------------------------------------|
+| `id`              | int    | The ID of media subtype.<br> **Required On**: POST                          |
+| `media_type_name` | string | **Read-only**. The name of the media type to which the subtype belongs. |
+| `mediatype_id`    | int    | **Read-only**. The ID of the media type to which the subtype belongs.   |
+| `name`            | string | **Read-only**. The name of the media subtype.                           |
 
+### Format
 
-## JSON Fields
+You can use the [Creative Format Service](creative-format-service.md) to view all supported creative formats.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000459b__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000459b__entry__23" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-0000459b__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-ID of the creative template.
-<p><strong>Required On</strong>: PUT/DELETE, in query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string (30)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-name of the creative template.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-description of the creative template.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__24"><strong>Read-only</strong>. The ID of
-the member that owns the template. For standard <span
-class="ph">Xandr templates, this is null.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">media_subtype</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-display style of creatives that can use this template. Each media
-subtype belongs to a superordinate media type, for example, the
-"Standard Banner" media subtype belongs to the "Banner" media type. 
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">format</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-format of creatives that can use this template, for example, "image" or
-"flash". 
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">is_default</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">If
-true, the template is automatically assigned to creatives that match the
-template's media type, media subtype, and format. When the creatives are
-uploaded, this default assignment can be overridden, if necessary.
+| Field | Type   | Description                                  |
+|-------|--------|----------------------------------------------|
+| `id`    | int    | The ID of creative format. <br> **Required On**: POST |
+| `name`  | string | **Read-only**. The name of the creative format.  |
 
-<b>Note:</b> There can be only one default
-creative template per media type, media subtype, and format combination.
-
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">is_archived</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">If
-true, the template is archived. Archiving a template prevents future
-creatives from using the template but does not affect creatives already
-using the template.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">content_js</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-template's rendering code in JavaScript. The code can include both <span
-class="ph">Xandr standard macros and your own custom macros.
-Xandr macros must begin with the $ symbol, and
-custom macros must begin with the # symbol. Each custom macro must be
-defined in the macros array.
-<p><strong>Required On</strong>: POST, if content_html and content_xml
-are not provided</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">content_html</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-template's rendering code in HTML. The code can include both <span
-class="ph">Xandr standard macros and your own custom macros.
-Xandr macros must begin with the $ symbol, and
-custom macros must begin with the # symbol. Each custom macro must be
-defined in the macros array.
-<p><strong>Required On</strong>: POST, if content_js and content_xml are
-not provided</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">content_xml</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__24"><strong>Deprecated</strong>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">callback_content_html</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__24">When media_subtype is "Popup" or
-"Popunder", content_js defines the rendering code for the pop window,
-and this field defines the rendering code for the content in the pop
-window.  </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">macros</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__24">The
-custom macros used in the content_js, content_html, or content_xml
-fields. You can include up to 20 custom macros in a template. </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__22"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__23">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__24"><strong>Read-only</strong>. The date
-and time when the creative template was last modified.</td>
-</tr>
-</tbody>
-</table>
-
-**Media Subtype**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000459b__entry__67"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000459b__entry__68"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000459b__entry__69"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__67"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__68">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__69">The
-ID of media subtype.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__67"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__68">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__69"><strong>Read-only</strong>. The name of
-the media subtype.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__67"><code
-class="ph codeph">mediatype_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__68">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__69"><strong>Read-only</strong>. The ID of
-the media type to which the subtype belongs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__67"><code
-class="ph codeph">media_type_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__68">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__69"><strong>Read-only</strong>. The name of
-the media type to which the subtype belongs.</td>
-</tr>
-</tbody>
-</table>
-
-**Format**
-
-You can use the <a
-href="creative-format-service.md"
-class="xref" target="_blank">Creative Format Service</a> to view all
-supported creative formats.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000459b__entry__82"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000459b__entry__83"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000459b__entry__84"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__82"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__83">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__84">The
-ID of creative format.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__82"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__83">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__84"><strong>Read-only</strong>. The name of
-the creative format.</td>
-</tr>
-</tbody>
-</table>
-
-**Custom Macros**
+### Custom macros
 
 You must define each custom macro used in the content_js, content_html,
 or content_xml field.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000459b__entry__91"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000459b__entry__92" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-0000459b__entry__93"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">string (30)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">The
-macro name exactly as it is used in the content_js, content_html, or
-content_xml field. For example, if #{BORDER_SIZE} is the macro in the
-content_js field, you would pass "BORDER_SIZE" here. 
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">string (50)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">The
-user-friendly name for this macro that traffickers will see when they
-add creatives that use this template via . 
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">The
-type of value that traffickers will provide for this macro when they add
-creatives that use this template via the Creative Service or UI.
-Possible values: "true/false", "string", "url", "integer", "decimal",
-"string_list", "select_from_list". For example, on <span
-class="ph">, if you set this to "true/false", traffickers will
-see the macro name followed by a check box.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">is_required</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">If
-true, traffickers will be required to provide a value for the macro when
-adding creatives that use this template.
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">default_value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">If
-is_required is false, this is the default value that will be used when
-traffickers do not provide a value for the macro when adding creatives
-that use this template.
-<p><strong>Required On</strong>: POST, if is_required is false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__91"><code
-class="ph codeph">other_data</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000459b__entry__92">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000459b__entry__93">The
-accepted values for the macro, if type is "string_list" or
-"select_from_list".</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field         | Type (Length) | Description                                                                                                                                                                                                                                                                                                                                                                              |
+|---------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `code`          | string (30)   | The macro name exactly as it is used in the content_js, content_html, or content_xml field. For example, if #{BORDER_SIZE} is the macro in the content_js field, you would pass "BORDER_SIZE" here.  <br> **Required On**: POST                                                                                                                                                                   |
+| `default_value` | string        | If is_required is false, this is the default value that will be used when traffickers do not provide a value for the macro when adding creatives that use this template. <br> **Required On**: POST, if is_required is false                                                                                                                                                                      |
+| `is_required`   | boolean       | If true, traffickers will be required to provide a value for the macro when adding creatives that use this template. <br> **Required On**: POST                                                                                                                                                                                                                                                   |
+| `name`          | string (50)   | The user-friendly name for this macro that traffickers will see when they add creatives that use this template via .  <br> **Required On**: POST                                                                                                                                                                                                                                                  |
+| `other_data`    | string        | The accepted values for the macro, if type is "string_list" or "select_from_list".                                                                                                                                                                                                                                                                                                       |
+| `type`          | enum          | The type of value that traffickers will provide for this macro when they add creatives that use this template via the Creative Service or UI. Possible values: "true/false", "string", "url", "integer", "decimal", "string_list", "select_from_list". For example, on , if you set this to "true/false", traffickers will see the macro name followed by a check box. <br> **Required On**: POST |
 
 ## Examples
 
-**Viewing all creative templates**
+### Viewing all creative templates
 
-``` pre
+``` 
 {code}
 $ curl -b cookies -c cookies 'https:api.adnxs.com/template'
 {
@@ -659,7 +241,7 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template'
         ],
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "db": "06.mysql.sand-08.nym2",
             "reads": 2,
             "read_limit": 100,
@@ -670,7 +252,7 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template'
             "time": 71.73490524292,
             "start_microtime": 1329952251.6778,
             "version": "1.11.12",
-            "slave_lag": 0,
+            "s1ave_lag": 0,
             "member_last_modified_age": 2979
         }
     }
@@ -678,9 +260,9 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template'
 {code}
 ```
 
-**Viewing a specific creative template**
+### Viewing a specific creative template
 
-``` pre
+``` 
 In this example, the request gets details about the Xandr standard template for rendering creatives of the media type "Banner", media subtype "Standard Banner", and format "flash".
 {code}
 $ curl -b cookies -c cookies 'https:api.adnxs.com/template?id=3'
@@ -736,21 +318,21 @@ $ curl -b cookies -c cookies 'https:api.adnxs.com/template?id=3'
         },
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "time": 684.47399139404,
             "start_microtime": 1329858928.9459,
             "version": "1.11.11.2",
-            "slave_miss": "no_service_index"
+            "s1ave_miss": "no_service_index"
         }
     }
 }
 {code}
 ```
 
-**Adding a custom template**
+### Adding a custom template
 
-``` pre
+``` 
 In this example, the POST request creates a custom creative template for rendering standard banner image creatives with a border. The template contains two custom macros for defining the border size and border color.
 {code}$ cat template
 {
@@ -837,7 +419,7 @@ $ curl -b cookies -c cookies -X POST -d @template 'https://api.adnxs.com/templat
         },
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "reads": 0,
             "read_limit": 100,
@@ -857,9 +439,9 @@ $ curl -b cookies -c cookies -X POST -d @template 'https://api.adnxs.com/templat
 {code}
 ```
 
-**Modifying a custom template**
+### Modifying a custom template
 
-``` pre
+``` 
 In this example, the PUT request updates the default values of the custom macros in custom template 222.
 {code}$ cat template_update
 {
@@ -935,7 +517,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.adnxs.com/t
         },
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "reads": 0,
             "read_limit": 100,
@@ -955,9 +537,9 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.adnxs.com/t
 {code}
 ```
 
-**Archiving a custom template**
+### Archiving a custom template
 
-``` pre
+``` 
 In this example, the PUT request sets the is_archived field to true, thus archiving the template and preventing future creatives from using it.
 {code}$ cat template_archive
 {
@@ -1018,7 +600,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_archive 'https://api.adnxs.com/
         },
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "reads": 0,
             "read_limit": 100,
@@ -1038,9 +620,9 @@ $ curl -b cookies -c cookies -X PUT -d @template_archive 'https://api.adnxs.com/
 {code}
 ```
 
-**Re-activating an archived custom template**
+### Re-activating an archived custom template
 
-``` pre
+``` 
 In this example, the PUT request sets the is_archived field to false, thus re-activating the template and allowing new creatives to use it.
 {code}$ cat template_activate
 {
@@ -1101,7 +683,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_activate 'https://api.adnxs.com
         },
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "reads": 0,
             "read_limit": 100,
@@ -1121,9 +703,9 @@ $ curl -b cookies -c cookies -X PUT -d @template_activate 'https://api.adnxs.com
 {code}
 ```
 
-**Deleting a custom template**
+### Deleting a custom template
 
-``` pre
+``` 
 In this example, the DELETE request removes the custom template from the system entirely.
 {code}$ $ curl -b cookies -c cookies -X DELETE 'https://api.adnxs.com/template?id=222'
 {
@@ -1131,7 +713,7 @@ In this example, the DELETE request removes the custom template from the system 
         "status": "OK",
         "dbg_info": {
             "instance": "02.hbapi.sand-08.nym2",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "reads": 0,
             "read_limit": 100,
@@ -1150,9 +732,3 @@ In this example, the DELETE request removes the custom template from the system 
 }
 {code}
 ```
-
-
-
-
-
-

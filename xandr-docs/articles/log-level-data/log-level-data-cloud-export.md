@@ -1,6 +1,8 @@
 ---
 Title : Log Level Data - Cloud Export
-Description : Note:
+Description : <b>Note:</b>
+ms.custom : log-level-data
+ms.date : 10/28/2023
 - Do not manually create any manifest- or feed-related paths. Doing so
 ---
 
@@ -11,7 +13,7 @@ Description : Note:
 
 
 
-Note:
+<b>Note:</b>
 
 - Do not manually create any manifest- or feed-related paths. Doing so
   will cause your export to fail to verify due to object-level ACLs. The
@@ -67,7 +69,7 @@ supports the following through the Xandr UI:
 
 
 
-Note: If you use a firewall or other
+<b>Note:</b> If you use a firewall or other
 IP-restricting security features, add all of these IP addresses and
 ranges to your allowlist:
 
@@ -169,7 +171,7 @@ IP ranges corresponding to addresses/subnet masks: **185.83.140.64/28**,
 
     
 
-    Note: Do not manually create any
+    <b>Note:</b> Do not manually create any
     manifest- or feed-related paths. Doing so will cause your export to
     fail to verify due to object-level ACLs. The necessary paths will be
     automatically created by Xandr.
@@ -377,9 +379,8 @@ IP ranges corresponding to addresses/subnet masks: **185.83.140.64/28**,
     </tbody>
     </table>
 
-    <div id="ID-0000060a__note_txx_s55_4wb" 
 
-    Note: Do not manually create any
+    <b>Note:</b> Do not manually create any
     manifest- or feed-related paths. Doing so will cause your export to
     fail to verify due to object-level ACLs. The necessary paths will be
     automatically created by Xandr.
@@ -414,7 +415,7 @@ permissions issue.
 
 
 
-Note: If Xandr
+<b>Note:</b> If Xandr
 deactivated your cloud export due to a permissions issue, once the
 export has been re-verified and re-enabled, we will only backfill up to
 a maximum of 3 days of feed data.
@@ -472,7 +473,7 @@ headers="ID-0000060a__entry__35">%TIMESTAMP%</td>
 headers="ID-0000060a__entry__36">Feed processing timestamp
 (yyyyMMddHHmmss)
 
-Note:
+<b>Note:</b>
 <p>Since directories are overwritten when data is copied and <span
 class="ph">Xandr can sometimes reprocess data, the %TIMESTAMP%
 macro is required for feed paths.</p>
@@ -561,7 +562,7 @@ class="entry">standard_feed-998-2017013109-20170131132522<strong>.json-processin
 
 
 
-Note: Since failures can occur from
+<b>Note:</b> Since failures can occur from
 unrecoverable situations that make it impossible to change the manifest
 file's suffix, it is possible that a manifest file suffix is changed
 from “processing” to “failed” sometime later (e.g., during the next
@@ -797,7 +798,7 @@ files that are no longer relevant (e.g., older than a week).
 
 
 
-Note: To improve directory performance,
+<b>Note:</b> To improve directory performance,
 manifest files older than 30 days will be moved to an /archive folder
 located within the manifest file path. As a precaution, if you have any
 procedures/scripts that refer to the manifest file path directly, you

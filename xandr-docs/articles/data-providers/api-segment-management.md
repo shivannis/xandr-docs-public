@@ -1,6 +1,8 @@
 ---
 Title : API Segment Management
 Description : ## API Segment Management
+ms.custom : data-providers
+ms.date : 10/28/2023
 Data providers will need to use Xandr's
 impression bus API (api.adnxs.com) to create,
 ---
@@ -20,10 +22,10 @@ modify and delete segments. For any API interaction, you will need the
 following:
 
 1.  Authorization: see <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/authentication-service.html"
+    href="xandr-api/authentication-service.md"
     class="xref" target="_blank">Authentication Service</a> 
 2.  Segment creation or modification: see <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    href="xandr-api/segment-service.md"
     class="xref" target="_blank">Segment Service</a> 
 
 
@@ -60,10 +62,10 @@ should be adhered to:
     truncated to fit the data provider name.
     
 
-    Tip: The "segment name" here
+    <b>Tip:</b> The "segment name" here
     corresponds to the value of the `short_name` field in the JSON used
     to create the segment (see <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    href="xandr-api/segment-service.md"
     class="xref" target="_blank">Segment Service</a> for more
     information).
 

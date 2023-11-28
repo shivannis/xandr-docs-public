@@ -1,6 +1,8 @@
 ---
 Title : Segment Modifier Data Provider Integration
 Description : ## Segment Modifier Data Provider Integration
+ms.custom : data-providers
+ms.date : 10/28/2023
 In order to take full advantage of Segment Modifier's capabilities, it
 can be useful to do a server-side integration.
 ---
@@ -21,7 +23,7 @@ Server-side integrations allow for near-realtime updates to modifier
 values. This can be useful if your model requires a fast response time
 or is updated frequently. Additionally, you can tailor your modifier
 based on the attributes available via the macros listed in <a
-href="https://docs.xandr.com/bundle/data-providers/page/real-time-data-integration-instructions.html"
+href="real-time-data-integration-instructions.md"
 class="xref" target="_blank">Real Time Data Integration Instructions</a>.
 
 First, build an application in the Xandr cloud.
@@ -40,7 +42,7 @@ test-location.nym1?an_user_id=123
 
 where `an_user_id=123` corresponds to the Xandr
 ID for user 123. (For more information, see <a
-href="https://docs.xandr.com/bundle/supply-partners/page/user-id-mapping.html"
+href="supply-partners/user-id-mapping.md"
 class="xref" target="_blank">User ID Mapping</a>.) Your application
 would then need to respond with a list of segment codes and values such
 as
@@ -58,7 +60,7 @@ where the code and value are separated by a colon and correspond to the
 audience segment and modifier amount, respectively.
 
 Finally, in  (or using the API's <a
-href="https://docs.xandr.com/bundle/xandr-api/page/campaign-service.html"
+href="xandr-api/campaign-service.md"
 class="xref" target="_blank">Campaign Service</a>), set the modifier
 segment ID such that it corresponds to the segment codes being returned
 by your web service.
@@ -70,7 +72,7 @@ by your web service.
 ## Related Topics
 
 <a
-href="https://docs.xandr.com/bundle/data-providers/page/segment-modifier.html"
+href="segment-modifier.md"
 class="xref" target="_blank">Segment Modifier</a>
 
 

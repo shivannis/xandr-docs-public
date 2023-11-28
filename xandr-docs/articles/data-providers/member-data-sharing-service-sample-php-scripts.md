@@ -1,6 +1,8 @@
 ---
 Title : Member Data Sharing Service - Sample PHP Scripts
 Description : The following scripts will help you interface with the
+ms.custom : data-providers
+ms.date : 10/28/2023
 member-data-sharing service. These scripts will help you:
 ---
 
@@ -14,7 +16,7 @@ member-data-sharing service. These scripts will help you:
 
 
 
-Note: This sample code serves as a
+<b>Note:</b> This sample code serves as a
 guideline for partners and is not actively serviced by
 Xandr.
 

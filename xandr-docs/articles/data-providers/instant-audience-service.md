@@ -1,6 +1,8 @@
 ---
 Title : Instant Audience Service
-Description : Note:
+Description : <b>Note:</b>
+ms.custom : data-providers
+ms.date : 10/28/2023
 Alpha-Beta Notice: This field or feature is part of functionality
 currently in either Alpha or Beta phase. It is therefore subject to
 ---
@@ -12,7 +14,7 @@ currently in either Alpha or Beta phase. It is therefore subject to
 
 
 
-Note:
+<b>Note:</b>
 
 Alpha-Beta Notice: This field or feature is part of functionality
 currently in either Alpha or Beta phase. It is therefore subject to
@@ -35,7 +37,7 @@ remodeling requirements.
 
 If you're already using the Batch Segment Service, you can skip this
 part and proceed to <a
-href="instant-audience-service.html#ID-000004de__instant_audience_service_authenticate"
+href="instant-audience-service.md#ID-000004de__instant_audience_service_authenticate"
 class="xref">Authenticate</a>. If you're a brand-new client and wish to
 start using the Instant Audience Service, you will need to open a ticket
 with and provide the following information:
@@ -56,13 +58,12 @@ with and provide the following information:
 
 
 
-<div id="ID-000004de__instant_audience_service_authenticate"
 >
 
 ## Authenticate
 
 Refer to the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/authentication-service.html"
+href="xandr-api/authentication-service.md"
 class="xref" target="_blank">Authentication Service</a> for a general
 overview on how to make calls to the Xandr
 API. Just like any other service, you'll authenticate
@@ -75,7 +76,7 @@ class="ph">appnexus.com</a>.
 
 
 
-Note: In the authentication response,
+<b>Note:</b> In the authentication response,
 make note of the token as it will be needed for subsequent calls to the
 Instant Audience Service.
 
@@ -119,7 +120,7 @@ segment, via a JSON file.
 
 
 
-Note:
+<b>Note:</b>
 
 Be sure to wait approximately 20 minutes before trying to add users to
 any newly created segments (to allow these segments to be propagated to
@@ -128,9 +129,9 @@ segments, re-use existing segments where possible or use segment
 `values` to further sub-divide users within existing segments. These
 practices will ensure successful user add/remove to/from segments. For
 details on creating segment `values`, see <a
-href="https://docs.xandr.com/bundle/invest_invest-standard/page/topics/segment-pixels-advanced.html"
+href="invest_invest-standard/segment-pixels-advanced.md"
 class="xref" target="_blank">Segment Pixels: Advanced</a> and
-<a href="segment-targeting.html" class="xref">segment-targeting.html</a>
+<a href="segment-targeting.md" class="xref">segment-targeting.md</a>
 in Xandr documentation.
 
 
@@ -249,7 +250,7 @@ class="ph codeph">md5udid</code>, <code
 class="ph codeph">openudid</code>, and <code
 class="ph codeph">aaid</code>).
 
-Note: Do not use <code
+<b>Note:</b> Do not use <code
 class="ph codeph">sha1mac</code>, which was deprecated in 2019.
 </td>
 </tr>
@@ -276,7 +277,7 @@ class="ph codeph">seg_code</code></td>
 <td class="entry" headers="ID-000004de__entry__10">A user-defined name
 for the segment.
 
-Note: You may either include <code
+<b>Note:</b> You may either include <code
 class="ph codeph">SEG_CODE</code> and <code
 class="ph codeph">member_id</code> or <code
 class="ph codeph">SEG_ID,</code> but not both.
@@ -326,7 +327,7 @@ class="ph codeph">users_in_request</code></td>
 <td class="entry" headers="ID-000004de__entry__10">The number of users
 read in the request.
 
-Note: This will simply show the number
+<b>Note:</b> This will simply show the number
 of users initially detected in the request regardless of whether they
 are valid.
 </td>
@@ -338,7 +339,7 @@ class="ph codeph">segments_in_request</code></td>
 <td class="entry" headers="ID-000004de__entry__10">The number of
 segments read in the request.
 
-Note: This will simply show the number
+<b>Note:</b> This will simply show the number
 of segments initially detected in the request regardless of whether they
 are valid in our system, and without regard to what users they are being
 associated with in the call.
@@ -469,7 +470,7 @@ class="ph codeph">.com/rt-segment"</code></td>
 
 
 
-Note: Service limits may change during
+<b>Note:</b> Service limits may change during
 alpha and beta testing of this service.
 
 
@@ -792,9 +793,9 @@ class="pre codeblock"><code> {
 
 ## Related Topics
 
-- <a href="streaming-server-side-segmentation.html" class="xref">Streaming
+- <a href="streaming-server-side-segmentation.md" class="xref">Streaming
   Server-Side Segmentation</a>
-- <a href="check-usage-statistics.html" class="xref">Check Usage
+- <a href="check-usage-statistics.md" class="xref">Check Usage
   Statistics</a>
 
 

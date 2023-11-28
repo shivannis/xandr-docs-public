@@ -1,197 +1,49 @@
 ---
-Title : Seat Service
-Description : <b>Note:</b> This feature is currently in
-ms.date : 10/28/2023
-Closed Beta. If you are interested in participating, please reach out to
+title: Seat Service
+description: In this article, find information about the Seat Service and the fields associated with it along with examples.
+ms.date: 10/28/2023
 ---
 
+# Seat service
 
-# Seat Service
+> [!IMPORTANT]
+> This feature is currently in Closed Beta. If you are interested in participating, please reach out to your Xandr representative.
 
+The Buyer Seat ID product allows for external bidders to bid with their custom buyer IDs rather than using Xandr member IDs. This allows external bidders to utilize buyer IDs from their own systems when bidding on Xandr inventory and will allow for more seamless reporting and deal set up.
 
-
-
-
-<b>Note:</b> This feature is currently in
-Closed Beta. If you are interested in participating, please reach out to
-your Xandr representative.
-
-
-
-The Buyer Seat ID product allows for external Bidders to bid with their
-custom buyer IDs rather than using Xandr member
-IDs. This allows external bidders to utilize buyer IDs from their own
-systems when bidding on Xandr inventory and will
-allow for more seamless reporting and deal set up. 
-
-The seat service is a brand new API service used to register new seats
-for a bidder. This can be done manually through post calls to the API or
-done in real time when a bidder bids with a new seat id in the bid
-response.
-
-
+The seat service is a brand new API service used to register new seats for a bidder. This can be done manually through post calls to the API or done in real time when a bidder bids with a new seat id in the bid response.
 
 ## Summary
 
-Seat Service is used to store a bidder's seat IDs. These seat IDs will
-be used in the bid response and logged in transaction reporting.
-
-
-
-
+Seat Service is used to store a bidder's seat IDs. These seat IDs will be used in the bid response and logged in transaction reporting.
 
 ## Rest API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000262f__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000262f__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000262f__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat/BIDDER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/seat/BIDDER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__3">To
-see all of your seats attached to your bidder</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat/BIDDER_ID/SEAT_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/seat/BIDDER_ID/SEAT_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__3">To
-see an existing seat using API seat identifier</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat?bidder_id=BIDDER_ID&amp;code=SEATCODE"
-class="xref" target="_blank">https://api.<span
-class="ph">adnxs.com/seat?bidder_id=BIDDER_ID&amp;code=SEATCODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__3">To
-see an existing seat using API bidder seat id</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat/BIDDER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/seat/BIDDER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__3">Add
-a new seat</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat/BIDDER_ID/SEAT_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/seat/BIDDER_ID/SEAT_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__3">Modify an existing seat using API seat
-identifier</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__2"><a
-href="https://api.adnxs.com/seat?bidder_id=BIDDER_ID&amp;co6de=SEATCODE"
-class="xref" target="_blank">https://api.<span
-class="ph">adnxs.com/seat?bidder_id=BIDDER_ID&amp;co6de=SEATCODE</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__3">Modify an existing seat using bidder
-seat id</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| GET | `https://api.adnxs.com/seat/BIDDER_ID` | To see all of your seats attached to your bidder |
+| GET | `https://api.adnxs.com/seat/BIDDER_ID/SEAT_ID` | To see an existing seat using API seat identifier |
+| GET | `https://api.adnxs.com/seat?bidder_id=BIDDER_ID&code=SEATCODE` | To see an existing seat using API bidder seat id |
+| POST | `https://api.adnxs.com/seat/BIDDER_ID` | Add a new seat |
+| PUT | `https://api.adnxs.com/seat/BIDDER_ID/SEAT_ID` | Modify an existing seat using API seat identifier |
+| PUT | `https://api.adnxs.com/seat?bidder_id=BIDDER_ID&co6de=SEATCODE` | Modify an existing seat using bidder seat id |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000262f__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000262f__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000262f__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__22"><code
-class="ph codeph">bidder_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__24">The
-ID of the bidder. This is a read-only field.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__22"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__24">Bidder seat id.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000262f__entry__24">The
-ID of the seat. This is a read-only field.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__22"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000262f__entry__24">Name of the buyer for this seat.
-<figure id="ID-0000262f__fig_syq_lwh_nwb" class="fig fignone">
-
-<b>Note:</b> In auto registered seats, the
-standard naming convention will be <em>seat_code (bidder name)</em>
-
-</figure></td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `bidder_id` | int | The ID of the bidder. This is a read-only field. |
+| `code` | string | Bidder seat id. |
+| `id` | int | The ID of the seat. This is a read-only field. |
+| `name` | string | Name of the buyer for this seat. <br><br> **Note**: In auto registered seats, the standard naming convention will be *seat_code (bidder name)* |
 
 ## Examples
 
-The below example API calls show how you can upload new seats or edit
-existing seats: 
+The below example API calls show how you can upload new seats or edit existing seats:
 
-**Uploading a New Seat**
+### Uploading a new seat
 
-``` pre
+```
 $ cat seats.json
  
 {
@@ -236,9 +88,9 @@ $ curl -b cookies -c cookies -X POST -d @seats.json "https://api.adnxs.com/seat/
 }
 ```
 
-**Updating an existing seat - change the seat name**
+### Updating an existing seat - changing the seat name
 
-``` pre
+```
 $ cat seats.json
  
 {
@@ -270,9 +122,9 @@ $ curl -b cookies -c cookies -X PUT -d @seats.json "https://api.adnxs.com/seat/1
 }
 ```
 
-**See an existing seat**
+### Seeing an existing seat
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET "https://api.adnxs.com/seat/1/22"
  {
     "response": {
@@ -292,9 +144,9 @@ $ curl -b cookies -c cookies -X GET "https://api.adnxs.com/seat/1/22"
 }
 ```
 
-**See all seats for a specific bidder**
+### Seeing all seats for a specific bidder
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET "https://api.adnxs.com/seat/1"
  {
     "response": {
@@ -322,19 +174,8 @@ $ curl -b cookies -c cookies -X GET "https://api.adnxs.com/seat/1"
 }
 ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a href="bidder-service.md" class="xref">Bidder Service</a>
-- <a href="creative-service.md" class="xref">Creative Service</a>
-- <a
-  href="incoming-bid-response-from-bidders.md"
-  class="xref" target="_blank">Bid Response from Bidders</a>
-
-
-
-
-
-
+- [Bidder Service](bidder-service.md)
+- [Creative Service](creative-service.md)
+- [Incoming Bid Response from Bidders](incoming-bid-response-from-bidders.md)

@@ -1,25 +1,14 @@
 ---
-Title : Creative Approval-Implementation
-<b>Note:</b> This document is for
-informational purposes only. It explains how the sell-side does creative
-ms.date : 10/28/2023
+title : Creative Approval-Implementation
+description : Learn how the sell-side does creative approval. 
+ms.date : 11/20/2023
 ---
 
 
 # Creative Approval-Implementation
 
-
-
-
-
-
-<b>Note:</b> This document is for
-informational purposes only. It explains how the sell-side does creative
-approval. Bidders have no active role in this process.
-
-
-
-
+> [!NOTE]
+> This document is for informational purposes only. It explains how the sell-side does creative approval. Bidders have no active role in this process.
 
 Xandr's UI allows publishers to review creatives and approve on a case
 by case basis. In order to approve creatives, a publisher must create an

@@ -1,6 +1,8 @@
 ---
 Title : Data Usage Report for Data Providers
 Description : This report provides details related to your usage of data provided by
+ms.custom : data-providers
+ms.date : 10/28/2023
 third parties (e.g., user segment providers), the costs of that data
 ---
 
@@ -17,10 +19,10 @@ The `time_granularity` of the data is `hourly`.
 
 
 
-Warning: For impressions older than 100
+<b>Warning:</b> For impressions older than 100
 days, the day will be returned rather than the hour. For instructions on
 retrieving a report, see the <a
-href="data-usage-report-for-data-providers.html#ID-00001497__example_data_usage_report"
+href="data-usage-report-for-data-providers.md#ID-00001497__example_data_usage_report"
 class="xref">Example</a> below.
 
 
@@ -43,10 +45,10 @@ the following:
 
 
 
-Tip: To run a report for a custom time
+<b>Tip:</b> To run a report for a custom time
 frame, set the `start_date` and `end_date` fields in your report
 request. For more details about these fields, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a>.
 
 
@@ -292,7 +294,6 @@ of the revenue that was paid or will be paid to the data provider.</td>
 
 
 
-<div id="ID-00001497__example_data_usage_report"
 >
 
 ## Example
@@ -321,11 +322,11 @@ $ cat data_usage_analytics
 
 For a full explanation of fields that can be included in the JSON file,
 see the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a>.
 
 **Step 2.** `POST` the request to the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a>.
 
 `POST` the JSON request to get back a report ID.
@@ -374,7 +375,7 @@ specified in your initial `POST`.
 
 
 
-Tip: If an error occurs during
+<b>Tip:</b> If an error occurs during
 download, the response header will include an HTTP error code and
 message. Use `-i` or `-v` in your call to expose the response header.
 

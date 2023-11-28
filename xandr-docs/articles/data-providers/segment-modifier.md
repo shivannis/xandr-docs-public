@@ -1,6 +1,8 @@
 ---
 Title : Segment Modifier
 Description : Segment Modifier allows you to adjust a campaign's bid at the time of
+ms.custom : data-providers
+ms.date : 10/28/2023
 the auction using data you have about your users. This is achieved by
 ---
 
@@ -23,10 +25,9 @@ users is present. There are two ways the campaign can modify the bid:
   engine by a specified amount. This option is best for campaigns with
   medium-to-high budgets, with long or repeating flight dates, that use
   click-conversion performance metrics.
-  <div id="ID-0000083c__note-d55f5743-1511-4f0f-a9d7-13b32f1479c5"
   
 
-  Note: In this document, "an
+  <b>Note:</b> In this document, "an
   impression" is used to refer to an impression involving a user in one
   of your audience segments, where that audience segment is associated
   with a modifier segment.
@@ -59,7 +60,7 @@ format, see Batch Segment Service - File Format.
 ## Step 2. Associate a Modifier Segment with your Campaign via the API
 
 Using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/campaign-service.html"
+href="xandr-api/campaign-service.md"
 class="xref" target="_blank">Campaign Service</a>, you'll need to
 associate a modifier segment ID with your campaign; when creating or
 updating your campaign via the API, pass in the ID of the modifier
@@ -111,7 +112,7 @@ the modifier segment.
 
 
 
-Note: There are very few use cases
+<b>Note:</b> There are very few use cases
 requiring both a `segment_price_id` and `segment_modifier_id` on the
 same campaign.
 
@@ -128,7 +129,7 @@ same campaign.
 
 
 Finally, the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/campaign-service.html"
+href="xandr-api/campaign-service.md"
 class="xref" target="_blank">Campaign Service</a> provides another
 optimization lever you can pull in addition to the user *bid price or
 user bid modifier:*
@@ -159,7 +160,7 @@ field to `0`.
 
 
 - <a
-  href="https://docs.xandr.com/bundle/data-providers/page/segment-modifier-data-provider-integration.html"
+  href="segment-modifier-data-provider-integration.md"
   class="xref" target="_blank">Segment Modifier Data Provider
   Integration</a>
 

@@ -1,114 +1,59 @@
 ---
-Title : Programmatic Guaranteed Deals for Bidders
-Description : Xandr offers the ability to bid on guaranteed
-ms.date : 10/28/2023
-deals with many of our platform sellers. This page walks you through the
+title: Programmatic Guaranteed Deals for Bidders
+description: In this article, learn about the bidding process to buy guaranteed deal inventory, along with examples.
+ms.date: 10/28/2023
 ---
 
+# Programmatic guaranteed deals for bidders
 
-# Programmatic Guaranteed Deals for Bidders
+Xandr offers the ability to bid on guaranteed deals with many of our platform sellers. This page walks you through the bidding process.
 
+Programmatic guaranteed deals allow sellers on Microsoft Monetize to make delivery commitments to buyers on a specific deal ID. When buyers accept the deal, they are compelled to bid when Xandr sends the deal ID in a request to their DSP.
 
-
-Xandr offers the ability to bid on guaranteed
-deals with many of our platform sellers. This page walks you through the
-bidding process. 
-
-Programmatic guaranteed deals allow sellers on
-Microsoft Monetize to make delivery commitments to
-buyers on a specific deal ID. When buyers accept the deal, they are
-compelled to bid when Xandr sends the deal ID in
-a request to their DSP.
-
-
-
-## Buying Guaranteed Deal Inventory
+## Buying guaranteed deal inventory
 
 Follow the steps to buy the guaranteed deal inventory:
 
-1.  **Configure your system to handle deals**  
-    >
+1. **Configure your system to handle deals**
 
-    Ensure that your system is configured to read the deal IDs in the
-    bid request and format a proper deal-specific bid response. For more
-    information, see the <a
-    href="deals-for-bidders.md"
-    class="xref" target="_blank">Example Request/Response Chain</a>.
-    Please make sure to review <a
-    href="deal-auction-mechanics.md"
-    class="xref" target="_blank">Deal Auction Mechanics</a> to
-    understand how Xandr conducts auction in
-    different situations.
+    Ensure that your system is configured to read the deal IDs in the bid request and format a proper deal-specific bid response. For more information, see the [Example Request/Response Chain](deals-for-bidders.md#example-requestresponse-chain). Please make sure to review [Deal Auction Mechanics](deal-auction-mechanics.md) to understand how Xandr conducts auction in different situations.
 
-    <b>Note:</b> The `private_auction` flag is
-    independent of programmatic guaranteed deals.
+    > [!NOTE]
+    > The `private_auction` flag is independent of programmatic guaranteed deals.
 
-    
+1. **Reach out to your Xandr representative**
 
-    
+    Once you've configured your system to handle deal ID requests and responses appropriately, reach out to your Xandr representative to enable you for guaranteed deals on Xandr. Enabling you for the deals may involve:  
 
-2.  **Reach out to your Xandr representative**
+    - Validating how you make decisions and respond to deal requests – bidders are expected to respond to the guaranteed deals at near 100%.
 
-    Once you've configured your system to handle deal ID requests and
-    responses appropriately, reach out to your
-    Xandr representative to enable you for
-    guaranteed deals on Xandr. Enabling you for
-    the deals may involve:  
+        > [!NOTE]
+        > The sizes accepted by the guaranteed deal are specified in the "deals" field.
 
-    - Validating how you make decision and respond to deal requests –
-      bidders are expected to respond to the guaranteed deals at near
-      100%.
-      
-
-      <b>Note:</b> The sizes accepted by the
-      guaranteed deal are specified in the "deals" field.
-
-      
     - Making your buyer member visible to sellers in our system.
-    - Having a dedicated work-flow for buying guaranteed deals.
+    - Having a dedicated workflow for buying guaranteed deals.
 
-3.  **Tell your buyers to start negotiating deals**
+1. **Tell your buyers to start negotiating deals**
 
-    Your buyers will negotiate the deals with sellers directly.
-    Xandr isn't involved in the process. Here's
-    the process that your buyers should follow:  
+    Your buyers will negotiate the deals with sellers directly. Xandr isn't involved in the process. Here's the process that your buyers should follow:  
 
     - Buyer negotiates a guaranteed deal with a seller offline.
-    - Buyer gives their DSP seat ID (or Xandr
-      member ID if still on legacy integration) to the seller. Please
-      check with your Xandr representative if
-      you are unsure which ID to provide.
+    - Buyer gives their DSP seat ID (or Xandr member ID if still on legacy integration) to the seller. Please check with your Xandr representative if you are unsure which ID to provide.
     - Seller sets up a guaranteed deal with the buyer within UI.
     - Seller gives the deal ID to the buyer.
     - Buyer enters the deal ID into your bidder system for targeting.
 
-4.  **Validate your buyers' deals**
+1. **Validate your buyers' deals**
 
-    Once a buyer has set up a deal with a Xandr
-    seller, you must ensure that your bidder profiles are not blocking
-    any of the parameters that apply to the deal inventory. For example,
-    if a profile is filtering out the seller, creative size, or other
-    parameter that applies to the deal inventory, you'll not receive
-    those bid requests. For details about updating or creating bidder
-    profiles, see the <a
-    href="legacy-bidder-profile-service.md"
-    class="xref" target="_blank">Legacy Bidder Profile Service.</a>  
-      
+    Once a buyer has set up a deal with a Xandr seller, you must ensure that your bidder profiles are not blocking any of the parameters that apply to the deal inventory. For example, if a profile is filtering out the seller, creative size, or other parameter that applies to the deal inventory, you'll not receive those bid requests. For details about updating or creating bidder profiles, see the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
 
-    We recommend using the <a
-    href="deal-buyer-access-service.md"
-    class="xref" target="_blank">Deal Buyer Access Service</a> to
-    validate that the deal exists in Xandr's
-    system. This will help you avoid targeting a deal that is inactive
-    or not, what you expected.
+    We recommend using the [Deal Buyer Access Service](deal-buyer-access-service.md) to validate that the deal exists in Xandr's system. This will help you avoid targeting a deal that is inactive or not, what you expected.
 
-**Example of a configured programmatic guaranteed deal in the API**
+### Example of a configured programmatic guaranteed deal in the API
 
-Programmatic guaranteed deals are categorized as type ID 4 in the
-<a href="xandr-api/deal-service.md"
-class="xref" target="_blank">Deal Service</a>.
+Programmatic guaranteed deals are categorized as type ID 4 in the [Deal Service](../digital-platform-api/deal-service.md).
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=888636&member_id=2378'
 {
     "response": {
@@ -154,25 +99,15 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=888636&
 }
 ```
 
+## Example request or response chain
 
+This example is for the Xandr integration of the Xandr Bidding Protocol.
 
+Guaranteed deals are noted in the bid request deal.ext.appnexus.gtd = 1 for any guaranteed bid request. (If the field is missing or 0, the bid request isn't guaranteed.)  
 
+### Bid request
 
-##  Example Request or Response Chain
-
-This example is for the Xandr integration of the
-Xandr Bidding Protocol.
-
-Guaranteed deals are noted in the bid request
-deal.ext.appnexus.gtd = 1 for any guaranteed bid
-request. (If the field is missing or 0, the bid request isn't
-guaranteed.)  
-
-<div class="p H3">
-
-**Bid Request**
-
-``` pre
+```
 {
     "id": "1255856238299639049",
     "imp": [
@@ -343,13 +278,9 @@ guaranteed.)
 }
 ```
 
+### Bid response
 
-
-
-
-**Bid Response**
-
-``` pre
+```
 {
     "id": "1255856238299639049",
     "seatbid": [
@@ -378,72 +309,19 @@ guaranteed.)
 }
 ```
 
+## Notify request error codes
 
+Deal-specific error codes, see [Bid Error Codes](bid-error-codes.md) for more info.
 
-**Notify Request Error Codes**
+| Error | ID | Description |
+|---|---|---|
+| NEC_DEAL_BELOW_FLOOR | 310 | Your bid was not considered in the auction because it is below the deal's ask price. |
+| NEC_DEAL_BRAND_BANNED | 311 | The brand associated with your creative isn't a valid brand for this deal. |
+| NEC_DEAL_NO_MEMBER | 309 | The deal you specified in your response isn't available to your member. |
+| NEC_DEAL_NOT_AVAILABLE | 308 | The deal you specified in your response isn't currently active. |
 
-Deal-specific error codes, see <a
-href="bid-error-codes.md"
-class="xref" target="_blank">Bid Error Codes</a> for more info.
+## Related topics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001d96__entry__1" class="entry">Error</th>
-<th id="ID-00001d96__entry__2" class="entry">ID</th>
-<th id="ID-00001d96__entry__3" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001d96__entry__1">NEC_DEAL_NOT_AVAILABLE</td>
-<td class="entry" headers="ID-00001d96__entry__2">308</td>
-<td class="entry" headers="ID-00001d96__entry__3">The deal you specified
-in your response isn't currently active.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001d96__entry__1">NEC_DEAL_NO_MEMBER</td>
-<td class="entry" headers="ID-00001d96__entry__2">309</td>
-<td class="entry" headers="ID-00001d96__entry__3">The deal you specified
-in your response isn't available to your member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001d96__entry__1">NEC_DEAL_BELOW_FLOOR</td>
-<td class="entry" headers="ID-00001d96__entry__2">310</td>
-<td class="entry" headers="ID-00001d96__entry__3">Your bid was not
-considered in the auction because it is below the deal's ask price.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001d96__entry__1">NEC_DEAL_BRAND_BANNED</td>
-<td class="entry" headers="ID-00001d96__entry__2">311</td>
-<td class="entry" headers="ID-00001d96__entry__3">The brand associated
-with your creative isn't a valid brand for this deal.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Related Topics
-
-- <a
-  href="deal-auction-mechanics.md"
-  class="xref" target="_blank">Deal Auction Mechanics</a>
-- <a
-  href="deal-buyer-access-service.md"
-  class="xref" target="_blank">Deal Buyer Access Service</a>
-- <a
-  href="legacy-bidder-profile-service.md"
-  class="xref" target="_blank">Legacy Bidder Profile Service</a>
-
-
-
-
-
-
+- [Deal Auction Mechanics](deal-auction-mechanics.md)
+- [Deal Buyer Access Service](deal-buyer-access-service.md)
+- [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).

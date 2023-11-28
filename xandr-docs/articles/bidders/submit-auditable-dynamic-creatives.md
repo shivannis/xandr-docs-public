@@ -1,15 +1,12 @@
 ---
-Title : Submit Auditable Dynamic Creatives
-Description : In order to maximize your reach on Xandr's
-ms.date : 10/28/2023
-platform, you need to submit all of your creatives using the Creative
-API service.
+title : Submit Auditable Dynamic Creatives
+description : Learn to submit your creatives using custom Macros that can reduce the number od audits performed by consolidating any creative with the same size and brand. 
+ms.date : 11/24/2023
+
 ---
 
 
 # Submit Auditable Dynamic Creatives
-
-
 
 In order to maximize your reach on Xandr's
 platform, you need to submit all of your creatives using the Creative
@@ -22,16 +19,14 @@ performed by consolidating any creative with the same size and brand.
 A creative is defined as a object within Xandr's
 system that defines how an ad should be rendered based on the
 HTML/JavaScript code (or a URL that points to the HTML/JavaScript code)
-along with the size of the creative and other values. **According to <a
-href="https://wiki.appnexus.com/display/audit/Creative%2bStandards%2band%2bAuditing"
-class="xref" target="_blank">Xandr creative
-policy</a>, this creative object must always render an ad that has a
+along with the size of the creative and other values. **According to [Xandr creative
+policy](../monetize/ad-quality-and-creative-standards.md), this creative object must always render an ad that has a
 consistent brand, language and size.**
 
 Please see below for a sample JSON that would be submitted to
 Xandr system using the Creative API service.
 
-``` pre
+``` 
 {
     "creative": {
         "content": "<script type="text/javascript" language="javascript">
@@ -55,9 +50,7 @@ Xandr system using the Creative API service.
 }
 ```
 
-- Please refer to this <a
-  href="selecting-the-correct-template-for-your-creative.md"
-  class="xref" target="_blank">link</a> to identify which template ID
+- Please refer to this [link](selecting-the-correct-template-for-your-creative.md) to identify which template ID
   needs to be used.
 - Please refer to the example script skeleton in the content field of
   the creative JSON above.
@@ -76,7 +69,7 @@ value of the custom macro `${dynamic_ad_markup}`.
 Depending on the protocol you are using, your bid response will look
 similar to below.
 
-``` pre
+``` 
 Xandr protocol
  
 {
@@ -98,7 +91,7 @@ Xandr protocol
 }
 ```
 
-``` pre
+``` 
 OpenRTB protocol
  
 {
@@ -132,7 +125,7 @@ placeholders.
 
 The resulting creative content will look similar to below.
 
-``` pre
+``` 
 <script type="text/javascript" language="javascript">
 if (${IS_PREVIEW}) 
 {
@@ -154,21 +147,9 @@ you can choose to pass us a different value such as "more_dynamic.js".
 dynamically render creatives, all renderings for a given creative ID
 must have the same brand, language and size.**
 
+## Related topics
 
-
-## Related Topics
-
-- <a href="creative-service.md" class="xref">Creative Service</a>
-- <a href="xandr-macros.md" class="xref">Xandr
-  Macros</a>
-- <a href="creative-macro-check-service.md" class="xref">Creative Macro
-  Check Service</a>
-- <a
-  href="creative---faq.md"
-  class="xref" target="_blank">Creative - FAQ</a>
-
-
-
-
-
-
+- [Creative Service](creative-service.md)
+- [Xandr Macros](xandr-macros.md)
+- [Creative Macro Check Service](creative-macro-check-service.md)
+- [Creative - FAQ](creative---faq.md)

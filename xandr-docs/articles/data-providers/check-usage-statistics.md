@@ -1,6 +1,8 @@
 ---
 Title : Check Usage Statistics
-Description : Note: This field or feature is part of
+Description : <b>Note:</b> This field or feature is part of
+ms.custom : data-providers
+ms.date : 10/28/2023
 functionality currently in either Alpha or Beta phase. It is therefore
 ---
 
@@ -11,7 +13,7 @@ functionality currently in either Alpha or Beta phase. It is therefore
 
 
 
-Note: This field or feature is part of
+<b>Note:</b> This field or feature is part of
 functionality currently in either Alpha or Beta phase. It is therefore
 subject to change.
 
@@ -250,10 +252,10 @@ class="pre codeblock"><code>&quot;Valid users: 1580557697843484206 Valid segment
 ## Related Topics
 
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/streaming-server-side-segmentation.html"
+  href="xandr-api/streaming-server-side-segmentation.md"
   class="xref" target="_blank">Streaming Server-Side Segmentation</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/instant-audience-service.html"
+  href="xandr-api/instant-audience-service.md"
   class="xref" target="_blank">Instant Audience Service</a>
 
 

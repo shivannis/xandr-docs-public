@@ -1,60 +1,25 @@
 ---
-Title : Bidder Profile Targeting Options
-Description : These are seven targeting options you can set up in your profile:
-ms.date : 10/28/2023
-- <a
-href="unknown-users.md"
+title: Bidder Profile Targeting Options
+description: In this article, explore the seven bidder profile targeting options that you can set up for your bidder profile.
+ms.date: 10/28/2023
 ---
 
-
-# Bidder Profile Targeting Options
-
-
+# Bidder profile targeting options
 
 These are seven targeting options you can set up in your profile:
 
-- <a
-  href="unknown-users.md"
-  class="xref" target="_blank">Unknown Users</a>
-- <a
-  href="countries.md"
-  class="xref" target="_blank">Countries</a>
-- <a
-  href="domain-lists.md"
-  class="xref" target="_blank">Domain Lists</a>
-- <a href="ad-types.md"
-  class="xref" target="_blank">Ad Types</a>
-- <a
-  href="supply-types.md"
-  class="xref" target="_blank">Supply Types</a>
-- <a
-  href="exchanges-and-members.md"
-  class="xref" target="_blank">Exchanges and Members</a>
-- <a
-  href="sensitive-attributes.md"
-  class="xref" target="_blank">Sensitive Attributes</a>
+- [Unknown Users](unknown-users.md)
+- [Countries](countries.md)
+- [Domain Lists](domain-lists.md)
+- [Ad Types](ad-types.md)
+- [Supply Types](supply-types.md)
+- [Exchanges and Members](exchanges-and-members.md)
+- [Sensitive Attributes](sensitive-attributes.md)
 
+## Related topics
 
-## Related Topics
-
-- <a
-  href="bidder-platform-user-interface.md"
-  class="xref" target="_blank">Bidder Platform User Interface</a>
-- <a
-  href="profiles-screen.md"
-  class="xref" target="_blank">Profiles Screen</a>
-- <a
-  href="creating-a-new-bidder-profile.md"
-  class="xref" target="_blank">Creating a New Bidder Profile</a>
-- <a
-  href="editing-a-bidder-profile.md"
-  class="xref" target="_blank">Editing a Bidder Profile</a>
-- <a
-  href="additional-functions.md"
-  class="xref" target="_blank">Additional Functions</a>
-
-
-
-
-
-
+- [Bidder Platform User Interface](bidder-platform-user-interface.md)
+- [Profiles Screen](profiles-screen.md)
+- [Creating a New Bidder Profile](creating-a-new-bidder-profile.md)
+- [Editing a Bidder Profile](editing-a-bidder-profile.md)
+- [Additional Functions](additional-functions.md)

@@ -1,14 +1,12 @@
 ---
-Title : Creative Format Service
-Description : Xandr categorizes creatives by format, media
-ms.date : 10/28/2023
-type, and media subtype. Format defines the resource type of creatives
+title : Bidders - Creative Format Service
+description : Learn how Xandr categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives, media type defines the general display style of creatives, and media subtype defines the specific display style of creatives.
+ms.date : 11/21/2023
+
 ---
 
 
-# Creative Format Service
-
-
+# Bidders - Creative format service
 
 Xandr categorizes creatives by format, media
 type, and media subtype. Format defines the resource type of creatives
@@ -20,103 +18,26 @@ expandable, or Standard VAST).
 This read-only service allows you to view all of the supported creative
 formats.
 
-
-
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000047f0__entry__1" class="entry colsep-1 rowsep-1">HTTP
-method</th>
-<th id="ID-000047f0__entry__2" class="entry colsep-1 rowsep-1">End
-point</th>
-<th id="ID-000047f0__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__2"><a
-href="https://api.adnxs.com/creative-format" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/creative-format</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__3">View
-all creative formats</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__2"><a
-href="https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-format?id=CREATIVE_FORMAT_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__3">View
-a specific creative format</td>
-</tr>
-</tbody>
-</table>
+| HTTP method | End point                                                      | Description                     |
+|-------------|----------------------------------------------------------------|---------------------------------|
+| GET         | [https://api.adnxs.com/creative-format](https://api.adnxs.com/creative-format)                          | View all creative formats       |
+| GET         | [https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000047f0__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000047f0__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000047f0__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__12">The
-ID of the creative format.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__11">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__12">The
-name of the creative format, for example, "flash", "image", "url-html",
-or "url-xml".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000047f0__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000047f0__entry__12">The
-date and time when Xandr last modified the
-creative format.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field         | Type      | Description                                                                               |
+|---------------|-----------|-------------------------------------------------------------------------------------------|
+| `id`            | int       | The ID of the creative format.                                                            |
+| `last_modified` | timestamp | The date and time when Xandr last modified the creative format.                           |
+| `name`          | string    | The name of the creative format, for example, "flash", "image", "url-html", or "url-xml". |
 
 ## Examples
 
 **View all creative formats**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/creative-format'
 {
     "response": {
@@ -192,7 +113,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/creative-format'
 
 **View a specific creative format**
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/creative-format?id=5'
 {
     "response": {
@@ -211,9 +132,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/creative-format?id=5'
     }
 }
 ```
-
-
-
-
-
-

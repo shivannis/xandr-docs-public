@@ -1,146 +1,79 @@
 ---
-Title : August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
-Description : We are pleased to announce the release of version 1.17 of the
-ms.date : 10/28/2023
+title: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+description: Find release notes for AppNexus ImpBus API version 1.17 and the breaking changes introduced in this version.
+ms.date: 10/28/2023
 ---
 
+# August 17, 2016 - ImpBus API 1.17 release - Breaking changes
 
-# August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+We are pleased to announce the release of version 1.17 of the AppNexus ImpBus API.
 
+> [!WARNING]
+> In addition to new features, this release includes breaking changes. We will therefore support two versions of the API for the next 60 days, as stated in our [Breaking Changes Policy](breaking-changes.md). The changeover date is **October 17, 2016**.
+>
+> **Version 1.16**: This version **does not** include breaking changes. The `https://api.adnxs.com` endpoint will continue to point to
+> version 1.16 for 60 days. After that time, this endpoint will point to
+> version 1.17.
+>
+> **Version 1.17**: This version **does** include breaking changes and new features. For the next 60 days, to use this version, you must point directly to it in your calls, e.g., `https://api.adnxs.com/v1.17`.
 
+## Breaking changes
 
-We are pleased to announce the release of version 1.17 of the
-AppNexus ImpBus API.
+All of the changes described in this section are only present in version 1.17.
 
+### Endpoint changes
 
+We are discontinuing the endpoints for versions `https://api.adnxs.com/v1.14` and `https://api.adnxs.com/v1.15`.
 
-<b>Warning:</b> In addition to new features,
-this release includes breaking changes. We will therefore support two
-versions of the API for the next 60 days, as stated in our <a
-href="breaking-changes.md"
-class="xref" target="_blank">Breaking Changes</a> policy. The changeover
-date is **October 17, 2016**.
+> [!NOTE]
+> Despite the names, these endpoints already point to version 1.16.
 
-**Version 1.16**: This version **does not** include breaking changes.
-The <a href="https://api.adnxs.com" class="xref" target="_blank"><code
-class="ph codeph">https://api.</code><code
-class="ph codeph">adnxs</code><code
-class="ph codeph">.com</code></a> endpoint will continue to point to
-version 1.16 for 60 days. After that time, this endpoint will point to
-version 1.17.
+### Changed services
 
-**Version 1.17**: This version **does** include breaking changes and new
-features. For the next 60 days, to use this version, you must point
-directly to it in your calls, e.g.,
-<a href="https://api.adnxs.com/v1.17" class="xref" target="_blank"><code
-class="ph codeph">https://api.</code><code
-class="ph codeph">adnxs</code><code
-class="ph codeph">.com/v1.17</code></a>.
+#### Authentication service
 
+The [Authentication Service](authentication-service.md) no longer supports the GET method for user name and password. Use the POST method instead.
 
+#### Creative service
 
+The following changes are being made to the [Creative Service](creative-service.md):
 
-## Breaking Changes
+- The `status` object has been added to specify how the creative is hosted and whether the creative is ready to serve or not. `user_ready` specifies whether the creative is ready to serve to users. Possible values are `"true"` or `"false"`.
 
-All of the changes described in this section are only present in version
-1.17.
-
-**Endpoint Changes**
-
-We are discontinuing the endpoints for versions
-<a href="https://api.adnxs.com/v1.14" class="xref"
-target="_blank">https://api.adnxs.com/v1.14</a>
-and <a href="https://api.adnxs.com/v1.15" class="xref"
-target="_blank">https://api.adnxs.com/v1.15</a>.
-
-
-<b>Note:</b> Despite the names, these
-endpoints already point to version 1.16.
-
-
-
-**Changed Services**
-
-**Authentication Service**
-
-The <a
-href="authentication-service.md"
-class="xref" target="_blank">Authentication Service</a> no longer
-supports the GET method for user name and password. Use the POST method
-instead.
-
-**Creative Service**
-
-The following changes are being made to the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>:
-
-- The `status` object has been added to specify how the creative is
-  hosted and whether the creative is ready to serve or not. 
-  `user_ready` specifies whether the creative is ready to serve to
-  users. Possible values are "true" or "false".
-  `hosted_assets_association_complete` (read-only) specifies the status
-  of the creative uploaded by AppNexus' internal
-  systems. Possible values: "true" or "false" for hosted creatives,
-  "null" for third-party creatives.
+    `hosted_assets_association_complete` (read-only) specifies the status of the creative uploaded by AppNexus' internal systems. Possible values are `"true"` or `"false"` for hosted creatives, `"null"` for third-party creatives.
 - The following fields are now read-only:
-  - The `adservers` field, which specifies the ad servers that deliver
-    the creative or that are called for data collection purposes during
-    the delivery of the creative.
-  - The `active` field, which specifies the state of the creative.
-    Possible values: "true" or "false".
+  - The `adservers` field, which specifies the ad servers that deliver the creative or that are called for data collection purposes during the delivery of the creative.
+  - The `active` field, which specifies the state of the creative. Possible values are `"true"` or `"false"`.
 - The following fields are being removed:
   - `google_audit_feedback`
-
   - `google_audit_status`
-
   - `msft_audit_status`
-
   - `msft_audit_feedback`
-
   - `msft_external_audit_status`
-
   - `msft_external_audit_feedback`
 
-    `Google_audit_feedback` and `google_audit_status` have been replaced
-    by `adx_audit`, a read-only object contains information about the
-    status and feedback related to the Google AdExchange audit of the
-    creative. 
+    `Google_audit_feedback` and `google_audit_status` have been replaced by `adx_audit`, a read-only object that contains information about the status and feedback related to the Google AdExchange audit of the creative.
 
-**Creative Template Service**
+#### Creative template service
 
-The <a
-href="creative-template-service.md"
-class="xref" target="_blank">Creative Template Service</a> no longer
-supports the `content_xml` field`.`
+The [Creative Template Service](creative-template-service.md) no longer supports the `content_xml` field.
 
-**Deprecated Reporting Dimensions**
+#### Deprecated reporting dimensions
 
-Currently, several reports include dimensions that are concatenations of
-the object ID and object name fields. For example, the Network Analytics
-report includes the dimension `advertiser`, which is a concatenation
-of `advertiser_ID` and `advertiser_name`. These concatenated fields are
-being deprecated as redundant. The individual component fields (ID and
-name) will remain. In the given example, there will no longer be
-an `advertiser` reporting dimension, but you can still
-use `advertiser_ID` and `advertiser_name`.
+Currently, several reports include dimensions that are concatenations of the object ID and object name fields. For example, the Network Analytics report includes the dimension `advertiser`, which is a concatenation of `advertiser_ID` and `advertiser_name`. These concatenated fields are being deprecated as redundant. The individual component fields (ID and name) will remain. In the given example, there will no longer be an `advertiser` reporting dimension, but you can still use `advertiser_ID` and `advertiser_name`.
 
-**Buyer Platform Billing**
+#### Buyer platform billing
 
-The following fields are being eliminated from the <a
-href="bidder-billing-report-api.md"
-class="xref" target="_blank">Bidder Billing Report API</a>:
+The following fields are being eliminated from the [Bidder Billing Report API](bidder-billing-report-api.md):
 
 - `bidder`
 - `buyer_member`
 - `publisher`
 - `seller_member`
 
-**Platform Buyer**
+#### Platform buyer
 
-The following fields are being eliminated from the <a
-href="bidder-platform-buyer-report.md"
-class="xref" target="_blank">Bidder Platform Buyer Report</a>:
+The following fields are being eliminated from the [Bidder Platform Buyer Report](bidder-platform-buyer-report.md):
 
 - `bidder`
 - `buyer_member`
@@ -151,11 +84,9 @@ class="xref" target="_blank">Bidder Platform Buyer Report</a>:
 - `site`
 - `tag`
 
-**Platform Seller**
+#### Platform seller
 
-The following fields are being eliminated from the <a
-href="platform-seller-report.md"
-class="xref" target="_blank">Platform Seller Report</a>:
+The following fields are being eliminated from the [Platform Seller Report](platform-seller-report.md):
 
 - `bidder`
 - `buyer_member`
@@ -164,11 +95,9 @@ class="xref" target="_blank">Platform Seller Report</a>:
 - `site`
 - `tag` 
 
-**Seller Platform Billing**
+#### Seller platform billing
 
-The following fields are being eliminated from the <a
-href="seller-platform-billing-report.md"
-class="xref" target="_blank">Seller Platform Billing Report</a>:
+The following fields are being eliminated from the [Seller Platform Billing Report](seller-platform-billing-report.md):
 
 - `bidder`
 - `buyer_member`
@@ -176,26 +105,12 @@ class="xref" target="_blank">Seller Platform Billing Report</a>:
 - `seller_member`
 - `site`
 
-**Changed Error Messages**
+### Changed error messages
 
-**Authentication Expires**
+#### Authentication expires
 
-If your authentication token has been in continuous use for 24 hours, it
-will expire. Attempts to connect will be rejected with the status code
-`401` for an unauthorized connection. Previously, this error produced
-status code `200 OK`.
+If your authentication token has been in continuous use for 24 hours, it will expire. Attempts to connect will be rejected with the status code `401` for an unauthorized connection. Previously, this error produced status code `200 OK`.
 
-**Rate Limits**
+#### Rate limits
 
-If you exceed the rate limits specified by the <a
-href="api-best-practices.md"
-class="xref" target="_blank">API Best Practices</a>, the error status
-returned will be `429` and the number of seconds to wait before retrying
-will be specified by the `Retry-After` header. Previously, the error
-returned was status `405`.
-
-
-
-
-
-
+If you exceed the rate limits specified by the [API Best Practices](api-best-practices.md), the error status returned will be `429` and the number of seconds to wait before retrying will be specified by the `Retry-After` header. Previously, the error returned was status `405`.

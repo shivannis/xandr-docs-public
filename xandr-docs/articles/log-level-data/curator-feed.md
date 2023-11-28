@@ -1,6 +1,8 @@
 ---
 Title : Curator Feed
 Description : The Log-Level Curator Feed provides data on the transacted impressions
+ms.custom : log-level-data
+ms.date : 10/28/2023
 of your curated deals. The feed contains one row per transacted
 ---
 
@@ -31,14 +33,14 @@ the log-level feed file (top to bottom here, left to right in the file).
 
 ## Recommended Precisions / Lengths of Data Types
 
-In the <a href="curator-feed.html#ID-000019cf__columns_curator_feed"
+In the <a href="curator-feed.md#ID-000019cf__columns_curator_feed"
 class="xref">Columns</a> table below, some values in the **Type** column
 contain a recommended precision or length in parentheses. For example,
 `string(100)` means "this string is probably (but not guaranteed to be)
 less than or equal to 100 characters in length".
 
 For integers, the sizes are described in the
-<a href="curator-feed.html#ID-000019cf__integer_key_curator_feed"
+<a href="curator-feed.md#ID-000019cf__integer_key_curator_feed"
 class="xref">Integer Key</a> section.
 
 For `numeric` (floating point) data types, we recommend being able to
@@ -51,7 +53,7 @@ depending on the field. See the table below.
 
 
 
-Warning: These are Recommendations, not
+<b>Warning:</b> These are Recommendations, not
 Guarantees
 
 The data *types* are meant to be accurate as documented. However, the
@@ -67,7 +69,6 @@ Curator Feed to make it work with your particular integration.
 
 
 
-<div id="ID-000019cf__integer_key_curator_feed" >
 
 ## Integer Key
 
@@ -78,7 +79,6 @@ Curator Feed to make it work with your particular integration.
 
 
 
-<div id="ID-000019cf__columns_curator_feed" >
 
 ## Columns
 
@@ -144,7 +144,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">tinyint</td>
 headers="ID-000019cf__columns_curator_feed__entry__4">The general
 display style of the creative, classified by media subtype. To map media
 subtype IDs to their names and parent media types, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/media-subtype-service.html"
+href="xandr-api/media-subtype-service.md"
 class="xref" target="_blank">Media Subtype Service</a>. For the video
 media type, the value of the <code
 class="ph codeph">creative_width</code> and <code
@@ -184,7 +184,7 @@ for an impression where GDPR applies</li>
 <p>It will be  <code class="ph codeph">-1</code>  for
 opt-out/non-consented users.</p>
 
-Note: If you received the <code
+<b>Note:</b> If you received the <code
 class="ph codeph">hashed_user_id_64</code> version of this field, you
 will not receive the unhashed version.
 </td>
@@ -209,7 +209,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">user_id_64</code> version of this field, you will not
 receive the hashed version.
 </td>
@@ -275,7 +275,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">Specifies the ID
 of the designated market area for this impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/designated-market-area-service.html"
+href="xandr-api/designated-market-area-service.md"
 class="xref" target="_blank">Designated Market Area Service</a> to look
 up the area associated with the ID.</td>
 </tr>
@@ -290,7 +290,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">int</td>
 headers="ID-000019cf__columns_curator_feed__entry__4">The ID of the city
 for this impression. Derived from IP address of user or provided by the
 site associated with the impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/city-service.html"
+href="xandr-bidders/city-service.md"
 class="xref" target="_blank">City Service</a> to look up the city
 associated with the ID.</td>
 </tr>
@@ -305,7 +305,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">string</td>
 headers="ID-000019cf__columns_curator_feed__entry__4">The postal code of
 the user's location. Derived from IP address of user or provided by the
 site associated with the impression. For postal codes, see <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/postal-code-service.html"
+href="xandr-bidders/postal-code-service.md"
 class="xref" target="_blank">Postal Code Service</a>.</td>
 </tr>
 <tr class="odd row">
@@ -469,7 +469,7 @@ fees, if applicable). This is the same as Buyer's media cost (except
 media cost does not include buyer fees).
 <p>This is the same value as <code
 class="ph codeph">curator_revenue</code>  in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/curator-analytics-report.html"
+href="xandr-api/curator-analytics-report.md"
 class="xref" target="_blank">Curator Analytics Report</a>.</p></td>
 </tr>
 <tr class="even row">
@@ -508,7 +508,7 @@ seller media for the impression. This does not include curator margin or
 curator fees.
 <p>This is the same value as <code
 class="ph codeph">curator_total_cost</code> in the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/curator-analytics-report.html"
+href="xandr-api/curator-analytics-report.md"
 class="xref" target="_blank">Curator Analytics Report</a>.</p></td>
 </tr>
 <tr class="odd row">
@@ -547,7 +547,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">int</td>
 headers="ID-000019cf__columns_curator_feed__entry__4">The ID for the
 publisher of the placement. Curator member may map the Publisher ID to a
 name using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/inventory-resold-service.html"
+href="xandr-api/inventory-resold-service.md"
 class="xref" target="_blank">Inventory Resold Service</a> if the seller
 has chosen to expose the publisher. Exposure to curator depends on the
 seller's visibility profile.</td>
@@ -616,7 +616,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">Specifies the ID
 of the mobile app instance for this impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/mobile-app-instance-service.html"
+href="xandr-api/mobile-app-instance-service.md"
 class="xref" target="_blank">Mobile App Instance Service</a> to look up
 the mobile app instance associated with the ID.</td>
 </tr>
@@ -653,7 +653,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">int</td>
 headers="ID-000019cf__columns_curator_feed__entry__4">The ID for brand
 of the creative. Curator member can map the <code
 class="ph codeph">brand_id</code> to a name using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/brand-service.html"
+href="xandr-api/brand-service.md"
 class="xref" target="_blank">Brand Service</a>.</td>
 </tr>
 <tr class="even row">
@@ -688,9 +688,9 @@ impression. Possible values:
 <li><code class="ph codeph">-1</code> = UNKNOWN</li>
 </ul>
 
-Note: For more details about
+<b>Note:</b> For more details about
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 </tr>
@@ -722,9 +722,9 @@ disabled.</li>
 unknown.</li>
 </ul>
 
-Note: For more information regarding
+<b>Note:</b> For more information regarding
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 </tr>
@@ -795,7 +795,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">smallint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">The operating
 system on which the impression occurred. Use the  <a
-href="https://docs.xandr.com/bundle/xandr-api/page/operating-system-service.html"
+href="xandr-api/operating-system-service.md"
 class="xref" target="_blank">Operating System Service</a>  to look up
 the operating system associated with the ID.</td>
 </tr>
@@ -809,7 +809,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">smallint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">The browser in
 which the impression occurred. Use the  <a
-href="https://docs.xandr.com/bundle/xandr-api/page/browser-service.html"
+href="xandr-api/browser-service.md"
 class="xref" target="_blank">Browser Service</a>  to look up the browser
 associated with the ID.</td>
 </tr>
@@ -823,7 +823,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">smallint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">The language
 setting of the browser in which the impression occurred. Use the  <a
-href="https://docs.xandr.com/bundle/xandr-api/page/language-service.html"
+href="xandr-api/language-service.md"
 class="xref" target="_blank">Language Service</a>  to look up the
 language associated with the ID.</td>
 </tr>
@@ -837,7 +837,7 @@ headers="ID-000019cf__columns_curator_feed__entry__3">smallint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-000019cf__columns_curator_feed__entry__4">The model of the
 device on which the impression occurred. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/device-model-service.html"
+href="xandr-api/device-model-service.md"
 class="xref" target="_blank">Device Model Service</a>  to look up the
 device model associated with the ID.</td>
 </tr>
@@ -854,6 +854,19 @@ headers="ID-000019cf__columns_curator_feed__entry__4">A list of Extended
 IDs available in the auction, regardless of whether they specifically
 influenced the transaction. Check the extended_ids table below for more
 details.</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000019cf__columns_curator_feed__entry__1">50</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000019cf__columns_curator_feed__entry__2">curated_deal_code</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000019cf__columns_curator_feed__entry__3">String</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-000019cf__columns_curator_feed__entry__4"><code
+class="ph codeph">curated_deal_code</code> allows you to conveniently
+receive the code you may have populated on your curated deal
+object.</td>
 </tr>
 </tbody>
 </table>
@@ -907,7 +920,7 @@ headers="ID-000019cf__table_tps_km4_3yb__entry__3">string</td>
 headers="ID-000019cf__table_tps_km4_3yb__entry__4">Value of the extended
 identifier (for example <code class="ph codeph">"ID0001"</code>).
 
-Note: You will only see the value of
+<b>Note:</b> You will only see the value of
 this field if you have been permissioned.
 </td>
 </tr>
