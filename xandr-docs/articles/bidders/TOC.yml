@@ -1,4 +1,4 @@
-- name: Bidders Reference Documentation
+- name: Bidder Reference Documentation
   href: index.yml
 - name: Getting Started
   items:
@@ -12,9 +12,71 @@
     href: price-reduction-mechanics.md
   - name: Supported Currencies
     href: supported-currencies.md
-- name: Xandr's Digital Platform UI
-  href: xandr-s-digital-platform-ui.md
-- name: Platform Operations
+ # - name: Xandr's Digital Platform UI
+   # href: xandr-s-digital-platform-ui.md
+- name: Bidder Platform UI
+  items:
+  - name: Overview
+    href: bidder-platform-user-interface.md
+  - name: Profiles
+    items:
+    - name: Bidder Profile
+      items:
+      - name: Creating a New Bidder Profile
+        href: creating-a-new-bidder-profile.md
+      - name: Bidder Profile Targeting Options
+        items:
+        - name: Countries
+          href: countries.md
+        - name: Domain Lists
+          href: domain-lists.md
+        - name: Ad Types
+          href: ad-types.md
+        - name: Supply Types
+          href: supply-types.md
+        - name: Exchanges and Members
+          href: exchanges-and-members.md
+        - name: Unknown Users
+          href: unknown-users.md
+        - name: Sensitive Attributes
+          href: sensitive-attributes.md
+      - name: Editing a Bidder Profile
+        href: editing-a-bidder-profile.md
+    - name: Additional Functions
+      href: additional-functions.md
+  - name: Creatives
+    items:
+    - name: Overview
+      href: creatives-screen.md
+    - name: Filters
+      href: filters.md
+    - name: Columns
+      href: columns.md
+    - name: Actions
+      href: actions.md
+  - name: Reporting
+    items:
+    - name: Overview
+      href: reporting-screen.md
+    - name: Platform Buyer Report
+      href: platform-buyer-report.md
+    - name: Bidder Billing Report
+      href: bidder-billing-report.md
+    - name: Bidder Bid Error Report
+      href: bidder-bid-error-report.md
+    - name: Completed Creatives Audits Report
+      href: completed-creatives-audits-report.md
+    - name: Your Reports
+      href: your-reports.md
+    - name: Impression Counting
+      href: impression-counting.md
+  - name: Metrics
+    href: metrics-screen.md
+  - name: Deal
+    href: deal-screen.md
+  - name: Seat
+    href: seat-screen.md
+- name: Bidder Platform Operations
   items:
   - name: Inventory Quality
     items: 
@@ -60,7 +122,7 @@
     href: deal-sync-with-trade-desk---publisher-guide.md
   - name: Deal Sync with Trade Desk - FAQ
     href: deal-sync-with-trade-desk---faq.md
-- name: Integrate a Bidder
+- name: Bidder Integration
   items:
   - name: Overview
     href: integrate-a-bidder.md
@@ -340,68 +402,7 @@
       href: megatag-technical-overview.md
   - name: IAB Content Taxonomy Support
     href: iab-content-taxonomy-support.md
-- name: Bidder Platform User Interface
-  items:
-  - name: Overview
-    href: bidder-platform-user-interface.md
-  - name: Profiles Screen
-    items:
-    - name: Bidder Profile
-      items:
-      - name: Creating a New Bidder Profile
-        href: creating-a-new-bidder-profile.md
-      - name: Bidder Profile Targeting Options
-        items:
-        - name: Countries
-          href: countries.md
-        - name: Domain Lists
-          href: domain-lists.md
-        - name: Ad Types
-          href: ad-types.md
-        - name: Supply Types
-          href: supply-types.md
-        - name: Exchanges and Members
-          href: exchanges-and-members.md
-        - name: Unknown Users
-          href: unknown-users.md
-        - name: Sensitive Attributes
-          href: sensitive-attributes.md
-      - name: Editing a Bidder Profile
-        href: editing-a-bidder-profile.md
-    - name: Additional Functions
-      href: additional-functions.md
-  - name: Creatives Screen
-    items:
-    - name: Overview
-      href: creatives-screen.md
-    - name: Filters
-      href: filters.md
-    - name: Columns
-      href: columns.md
-    - name: Actions
-      href: actions.md
-  - name: Reporting Screen
-    items:
-    - name: Overview
-      href: reporting-screen.md
-    - name: Platform Buyer Report
-      href: platform-buyer-report.md
-    - name: Bidder Billing Report
-      href: bidder-billing-report.md
-    - name: Bidder Bid Error Report
-      href: bidder-bid-error-report.md
-    - name: Completed Creatives Audits Report
-      href: completed-creatives-audits-report.md
-    - name: Your Reports
-      href: your-reports.md
-    - name: Impression Counting
-      href: impression-counting.md
-  - name: Metrics Screen
-    href: metrics-screen.md
-  - name: Deal Screen
-    href: deal-screen.md
-  - name: Seat Screen
-    href: seat-screen.md
+
 - name: User ID Mapping
   items:
   - name: Overview
@@ -434,6 +435,14 @@
       href: troubleshooting-invalid-users.md
   - name: Synchronize Your User IDs
     href: synchronize-your-user-ids.md
+- name: Guaranteed Outcomes
+  items:
+  - name: Overview
+    href: guaranteed-outcomes.md
+  - name: Guaranteed Outcomes Bidder Integration Guide
+    href: guaranteed-outcomes-bidder-integration-guide.md
+  - name: Monthly Prediction Variability Data
+    href: monthly-prediction-variability-data.md
 - name: FAQs
   items: 
   - name: Ad Quality Profile - FAQ
@@ -494,39 +503,31 @@
     href: video-creative-faq.md
   - name: Viewability FAQ
     href: viewability-faq.md
-- name: Communications
-  href: communications.md
-- name: Xandr Bidder Release Notes
-  href: xandr-bidder-release-notes.md
-- name: Release Notes - Legacy
-  items:
-  - name: Overview
-    href: release-notes---legacy.md
-  - name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
-    href: september-5--2017---api-version-1-18-release---breaking-changes.md
-  - name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
-    href: december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
-  - name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
-    href: august-17--2016---impbus-api-1-17-release---breaking-changes.md
-  - name: March 9, 2016 - Creative Macro Breaking Change
-    href: march-9--2016---creative-macro-breaking-change.md
-  - name: December 21, 2015 - UTF-8 Encoding of Reporting Data
-    href: december-21--2015---utf-8-encoding-of-reporting-data.md
-  - name: October 2, 2015 - Bid Request Breaking Change
-    href: october-2--2015---bid-request-breaking-change.md
-  - name: September 30, 2015 
-    href: september-30--2015.md
-  - name: August 19, 2015
-    href: august-19--2015.md
-  - name: August 14, 2015 - Batch Segment Service Breaking Changes
-    href: august-14--2015---batch-segment-service-breaking-changes.md
-  - name: June 16, 2015
-    href: june-16--2015.md
-- name: Guaranteed Outcomes
-  items:
-  - name: Overview
-    href: guaranteed-outcomes.md
-  - name: Guaranteed Outcomes Bidder Integration Guide
-    href: guaranteed-outcomes-bidder-integration-guide.md
-  - name: Monthly Prediction Variability Data
-    href: monthly-prediction-variability-data.md
+#- name: Communications
+ # href: communications.md
+#- name: Xandr Bidder Release Notes
+ # href: xandr-bidder-release-notes.md
+#- name: Release Notes - Legacy
+  #items:
+ # - name: Overview
+   # href: release-notes---legacy.md
+  #- name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
+   # href: september-5--2017---api-version-1-18-release---breaking-changes.md
+  #- name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
+   # href: december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
+  #- name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+  #  href: august-17--2016---impbus-api-1-17-release---breaking-changes.md
+  #- name: March 9, 2016 - Creative Macro Breaking Change
+  #  href: march-9--2016---creative-macro-breaking-change.md
+  #- name: December 21, 2015 - UTF-8 Encoding of Reporting Data
+   # href: december-21--2015---utf-8-encoding-of-reporting-data.md
+  #- name: October 2, 2015 - Bid Request Breaking Change
+   # href: october-2--2015---bid-request-breaking-change.md
+ # - name: September 30, 2015 
+  #  href: september-30--2015.md
+  #- name: August 19, 2015
+  #  href: august-19--2015.md
+ # - name: August 14, 2015 - Batch Segment Service Breaking Changes
+  #  href: august-14--2015---batch-segment-service-breaking-changes.md
+  #- name: June 16, 2015
+  #  href: june-16--2015.md
