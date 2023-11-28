@@ -1,6 +1,6 @@
 ---
 title : Bidders - Troubleshooting Invalid Users
-description : Learn about the various reasons why a User ID is invalid. 
+description : Learn about the various reasons why a User ID can be invalid. 
 ms.date : 11/28/2023
 
 ---

@@ -1,6 +1,6 @@
 ---
 title : Unknown Users
-description : The **Allow Unknown Users** toggle allows you to select if you want to
+description : Learn about the **Allow Unknown Users** toggle and how it allows you to select if you want to receive traffic from unknown users. 
 ms.date : 11/28/2023
 
 ---

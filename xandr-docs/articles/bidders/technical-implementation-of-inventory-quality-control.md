@@ -1,9 +1,7 @@
 ---
 title : Technical Implementation of Inventory Quality Control
-description : This page deals with Xandr's inventory solution that allows branded advertisers to buy through our platform and proactively protect their
-brand.
+description : This page deals with Xandr's inventory solution that allows branded advertisers to buy through our platform and proactively protect their brand.
 ms.date : 11/28/2023
-
 ---
 
 

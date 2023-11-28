@@ -23,7 +23,7 @@ attributes.
 | DELETE      | [https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID](https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID) | To delete a technical attribute (admin only)               |
 | GET         | [https://api.adnxs.com/technical-attribute](https://api.adnxs.com/technical-attribute)                           | To view all technical attributes                           |
 | GET         | [https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID](https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID) | To view information about a particular technical attribute |
-| POST        | [https://api.adnxs.com/technical-attribute](https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID)                           | To add a technical attribute (admin only)                  |
+| POST        | [https://api.adnxs.com/technical-attribute](https://api.adnxs.com/technical-attribute)                           | To add a technical attribute (admin only)                  |
 | PUT         | [https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID](https://api.adnxs.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID) | To modify a technical attribute (admin only)               |
 
 ## JSON fields

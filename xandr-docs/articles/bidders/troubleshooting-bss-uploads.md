@@ -1,12 +1,12 @@
 ---
-title : Troubleshooting BSS Uploads
+title : Bidders - Troubleshooting BSS Uploads
 description : Learn troublshooting any problems with your segment data upload.  
 ms.date : 11/28/2023
 
 ---
 
 
-# Troubleshooting BSS uploads
+# Bidders - Troubleshooting BSS uploads
 
 You can use the methods in this topic to diagnose any problems with your
 segment data upload. 
@@ -244,7 +244,9 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 > - `&start_element=101`
 > - `&sort=last_modified.desc`
 >
-> You can read more about pagination on our Documentation Portal [here](../digital-platform-api/05---throttling-pagination-and-filtering.md). If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://help.xandr.com/s/login/). Don't forget to include the job ID in your support request.
+> You can read more about pagination on our Documentation Portal [here](../digital-platform-api/05---throttling-pagination-and-filtering.md). 
+>
+> If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://help.xandr.com/s/login/). Don't forget to include the job ID in your support request.
 
 ## JSON fields
 
@@ -255,7 +257,7 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 | Fields                   | Type   | Description                                                                                                                                                                                                            |
 |--------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `batch_segment_upload_job` | object | This is an object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) for details. |
-| `id`                       | int    | This is the ID of the `batch_segment_upload_job` object associated with this request. **Default**: An automatically generated number.                                                                                        |
+| `id`                       | int    | This is the ID of the `batch_segment_upload_job` object associated with this request. <br>**Default**: An automatically generated number.                                                                                        |
 | `status`                   | string | The status of the API call; successful calls return `"OK"`.                                                                                                                                                              |
 
 
@@ -292,7 +294,7 @@ following metadata.
 | `num_valid_user`        | int     | A count of unique input lines that have a valid user ID.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `percent_complete`      | int     | The percentage of the processing that has been completed, given the current `phase` at the time of the request.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `phase`                 | enum    | The current processing status. Returns one of the following values: <br> - error <br> - starting <br> - uploading <br> - validating <br> - processing <br> - completed                                                                                                                                                                                                                                                                                                                                                                                  |
-| `segment_log_lines`     | string  | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and COUNT is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by COUNT (descending).   Example: ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
+| `segment_log_lines`     | string  | A string containing newline-separated lines consisting of the segment ID and the number of users successfully added or removed. This field defaults to 200 lines. The format is `added: SEG_ID:COUNT SEG_ID:COUNT ... removed:` `SEG_ID:COUNT` ... where `SEG_ID` is the segment ID and `COUNT` is the number of users successfully added or removed. `SEG_ID:COUNT` pairs are sorted by `COUNT` (descending).   Example: ``added: 15889133:386221 15547290:186227 removed: 15889278:369734 15889206:255307 15889179:232831`` |
 | `start_time`            | date    | The time at which file upload began.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | `time_to_process`       | decimal | The time it took to process the segment file, in minutes.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `upload_url`            | string  | The URL where you'll upload your segment data file.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |

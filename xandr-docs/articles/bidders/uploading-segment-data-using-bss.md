@@ -6,7 +6,7 @@ ms.date : 11/28/2023
 ---
 
 
-#  Bidders - Uploading segment data using BSS
+# Bidders - Uploading segment data using BSS
 
 As described in this document, adding your segment file to the system is
 a multi-step process. 

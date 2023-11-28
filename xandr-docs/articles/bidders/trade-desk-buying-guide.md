@@ -90,7 +90,7 @@ should be the Trade Desk team.
 
 - Click **Inventory Contract** to open the
   Inventory Contract Wizard. In
-  **Description**page, enter the
+  **Description** page, enter the
   **Name** of the contract. Other details
   in the page is optional.
 
@@ -117,7 +117,7 @@ should be the Trade Desk team.
 
 :::image type="content" source="media/trade-desk-buying-guide-fig-k.png" alt-text="Screenshot of Trade Desk Buying Guide Fig K .":::
  
-- In **Creative Targeting**page,
+- In **Creative Targeting** page,
   select the applicable Ad Sizes and
   click **Complete**. Once you click
   **Complete**, you will only see
@@ -186,8 +186,7 @@ should be the Trade Desk team.
 **Step 5: Target and launch the deal**
 
 - Find the deal by searching by deal ID or deal name. Once fetched,
-  target the deal ID within the Private
-  Contract rail at the Ad Group level. Note that, it is possible
+  target the deal ID within the **Private Contract** rail at the Ad Group level. Note that, it is possible
   to target more than one private contract in a single Ad Group. Once
   the deal is trafficked in the SSP, your Ad Group will automatically
   start spending according to the requirements.
