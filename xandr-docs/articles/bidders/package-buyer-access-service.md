@@ -13,13 +13,13 @@ buyer. Buyers browse through available packages and then use the [Deal From Pac
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/package-buyer-access | View all available packages. |
-| GET | https://api.adnxs.com/package-buyer-access?member_id=SELLER_MEMBER_ID    | View all packages offered by a specific seller. |
-| GET | https://api.adnxs.com/package-buyer-access?id=PACKAGE_ID  | View a specific package. |
-| GET | https://api.adnxs.com/package-buyer-access?id=1,2,3 | View multiple packages by ID using a comma-separated list. |
-| GET | https://api.adnxs.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT | View all packages including specific sizes. |
-| GET | https://api.adnxs.com/package-buyer-access?search=PACKAGE_ID or NAME | Search for a package by name or ID. |
-| GET | https://api.adnxs.com/package/meta | Find out which fields you can filter and sort by. |
+| GET | [https://api.adnxs.com/package-buyer-access](https://api.adnxs.com/package-buyer-access) | View all available packages. |
+| GET | [https://api.adnxs.com/package-buyer-access?member_id=SELLER_MEMBER_ID](https://api.adnxs.com/package-buyer-access?member_id=SELLER_MEMBER_ID) | View all packages offered by a specific seller. |
+| GET | [https://api.adnxs.com/package-buyer-access?id=PACKAGE_ID](https://api.adnxs.com/package-buyer-access?id=PACKAGE_ID)  | View a specific package. |
+| GET | [https://api.adnxs.com/package-buyer-access?id=1,2,3](https://api.adnxs.com/package-buyer-access?id=1,2,3) | View multiple packages by ID using a comma-separated list. |
+| GET | [https://api.adnxs.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT](https://api.adnxs.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT) | View all packages including specific sizes. |
+| GET | [https://api.adnxs.com/package-buyer-access?search=PACKAGE_ID or NAME](https://api.adnxs.com/package-buyer-access?search=PACKAGE_ID) | Search for a package by name or ID. |
+| GET | [https://api.adnxs.com/package/meta](https://api.adnxs.com/package/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

@@ -14,8 +14,8 @@ The Object Limit Service allows you to view these limits and proactively monitor
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | https://api.adnxs.com/object-limit | View your limits and current usage for all object types. |
-| GET | https://api.adnxs.com/object-limit?object_type=OBJECT_TYPE | View your limit and current usage for a specific object type.<br><br>**Tip:** The following object types are available: `creative`, `profile`, and `domain_list`. |
+| GET | [https://api.adnxs.com/object-limit](https://api.adnxs.com/object-limit) | View your limits and current usage for all object types. |
+| GET | [https://api.adnxs.com/object-limit?object_type=OBJECT_TYPE](https://api.adnxs.com/object-limit?object_type=OBJECT_TYPE) | View your limit and current usage for a specific object type.<br><br>**Tip:** The following object types are available: `creative`, `profile`, and `domain_list`. |
 
 ## JSON fields
 
