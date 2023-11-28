@@ -72,8 +72,8 @@
       href: creative-search-service.md
     - name: Creative Macro Check Service
       href: creative-macro-check-service.md
-  - name: Currency Service
-    href: currency-service.md
+    - name: Currency Service
+      href: currency-service.md
 - name: Deal API Services
   items:
     - name: Deal Buyer Access Service
