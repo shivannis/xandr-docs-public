@@ -108,7 +108,7 @@ If you select a **Fixed Price** auction, you will need to enter an ask price. An
 
 Yield management biases will still be applied to deal bids, even if you have set a price for your deal.
 
-## Related topic
+## Related topics
 
 - [Buying Deals](../monetize/buying-deals.md)
 - [Selling Deals](../monetize/selling-deals.md)

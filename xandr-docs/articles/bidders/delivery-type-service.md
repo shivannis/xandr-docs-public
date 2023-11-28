@@ -10,14 +10,14 @@ Use the read-only Delivery Type Service to see what video content delivery types
 
 ## REST API
 
-| **HTTP Method** | **Endpoint** | **Description**  |
+| HTTP Method | Endpoint | Description  |
 |---|---|---|
 | GET | `https://api.adnxs.com/video-delivery-type` | To view all defined delivery types. |
 | GET | `https://api.adnxs.com/video-delivery-type?id=<id value>` | To view a defined delivery type. |
 
 ## JSON fields
 
-| **Field** | **Type** | **Description** |
+| Field | Type | Description |
 |--|--|--|
 | `id` | int | The Xandr referential ID associated with the delivery type. |
 | `name` | string | The video taxonomy referential value.<br>**Required On**: POST/PUT |

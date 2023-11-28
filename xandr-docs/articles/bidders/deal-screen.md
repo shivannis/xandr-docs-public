@@ -1,10 +1,10 @@
 ---
-title: Bidders - Deal Screen
+title: Deal Screen
 description: The article describes the deals screen that displays Xandr publisher deals with buyers, providing bidders with information, and how the bidders can utilize the deal buyer Access Service to access more details.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Deal screen
+# Deal screen
 
 The **Deals** screen is where a bidder can see the deals Xandr publishers have set up with their buyers and get further details about the deal. For additional details on the deal, bidders can use the [Deal Buyer Access Service](deal-buyer-access-service.md).
 
@@ -20,7 +20,7 @@ The **Deals** screen is where a bidder can see the deals Xandr publishers have
 The Main deal screen lists all of the deals for a bidder, and their associated attributes/metadata. The table below details each of the
 columns displayed:
 
-| **Column Name** | **Filterable** | **Description** |
+| Column Name | Filterable | Description |
 |--|--|--|
 | **Buyers** | Yes | The buying member or seat who can target this deal. Can be Xandr Member ID or DSP Buyer Seat ID.<br>Both the ID and name for the buyer is listed in this column. |
 | **Sellers** | Yes | The selling member who is offering the deal. <br>Both the ID and name for the seller is listed in this column. |
@@ -49,7 +49,7 @@ Access additional details about the deal by clicking on the deal row to open a s
 > [!NOTE]
 > If the field is not present in the side panel, it means the details is not applicable to the deal.
 
-| **Field Name** | **Description** |
+| Field Name | Description |
 |--|--|
 | Seller | The seller name and Seller ID (included in parenthesis) for the deal. |
 | Buyer | The buyer member id or buyer seat id eligible to bid on the deal. Id is included in parenthesis. |

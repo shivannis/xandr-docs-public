@@ -1,10 +1,10 @@
 ---
-title: Bidders - Deals for Bidders
+title: Deals for Bidders
 description: The article explains the deals for bidders.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Deals for bidders
+# Deals for Bidders
 
 Xandr offers the ability to bid on deals with our platform sellers. This page walks you through the bidding process.
 
@@ -233,7 +233,7 @@ $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'
 
 Deal-specific error codes, see [Bid Error Codes](bid-error-codes.md).
 
-| **Error** | **ID** | **Description** |
+| Error | ID | **Description |
 |--|--|--|
 | `NEC_DEAL_NOT_AVAILABLE` | 308 | The deal you specified in your response is not currently active. |
 | `NEC_DEAL_NO_MEMBER` | 309 | The deal you specified in your response is not available to your member. |

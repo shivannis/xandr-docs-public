@@ -52,7 +52,7 @@ This read-only service lets bidders view information about the negotiated deals 
 
 The `seller` object contains the following fields.
 
-| **Field** | **Type** | **Description** |
+| Field | Type | Description |
 |--|--|--|
 | `id` | int | The member ID of the seller. |
 | `name` | string | The member name of the seller. |
@@ -66,7 +66,7 @@ The buyer field cannot be updated by the seller. Once a deal is created with a b
   
 The `buyer` object contains the following fields.
 
-| **Field** | **Type** | **Description** |
+| Field | Type | Description |
 |--|--|--|
 | `bidder_id` | int | The bidder ID of the member. |
 | `id` | int | The member ID of the buyer. |

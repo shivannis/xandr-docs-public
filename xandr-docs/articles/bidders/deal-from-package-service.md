@@ -12,13 +12,13 @@ Once you have generated a deal, you can view deal details including description 
 
 ## REST API
 
-| **HTTP Method** | **Endpoint** | **Description** |
+| HTTP Method | Endpoint | Description |
 |--|--|--|
 | POST | `https://api.adnxs.com/deal-from-package?buyer_member_id=BUYER_MEMBER_ID` | **Create a new deal based on a package**.<br><br>**Note**: Bidder and admin users must specify the buyer member ID in the URI; for member users, the deal record is generated with the member set as the buyer. |
 
 ## JSON fields
 
-| **Name** | **Type** | **Description** |
+| Name | Type | Description |
 |---|---|---|
 | `id` | int | The ID of the deal creation record.<br> - **Default**: auto-generated number. |
 | `package_id` | int | The ID of the package from which you are generating a deal. You can use the [Package Buyer Access](package-buyer-access-service.md) Service to get package IDs.<br> - **Required On**: POST. |
