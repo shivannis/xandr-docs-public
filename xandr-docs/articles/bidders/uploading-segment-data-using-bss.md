@@ -2,7 +2,6 @@
 title : Bidders - Uploading Segment Data Using BSS
 description : Learn adding your segment file to the system in a multi-step process. 
 ms.date : 11/28/2023
- 
 ---
 
 
