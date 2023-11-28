@@ -505,29 +505,31 @@
     href: viewability-faq.md
 #- name: Communications
  # href: communications.md
-#- name: Xandr Bidder Release Notes
- # href: xandr-bidder-release-notes.md
-#- name: Release Notes - Legacy
-  #items:
- # - name: Overview
-   # href: release-notes---legacy.md
-  #- name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
-   # href: september-5--2017---api-version-1-18-release---breaking-changes.md
-  #- name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
-   # href: december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
-  #- name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
-  #  href: august-17--2016---impbus-api-1-17-release---breaking-changes.md
-  #- name: March 9, 2016 - Creative Macro Breaking Change
-  #  href: march-9--2016---creative-macro-breaking-change.md
-  #- name: December 21, 2015 - UTF-8 Encoding of Reporting Data
-   # href: december-21--2015---utf-8-encoding-of-reporting-data.md
-  #- name: October 2, 2015 - Bid Request Breaking Change
-   # href: october-2--2015---bid-request-breaking-change.md
- # - name: September 30, 2015 
-  #  href: september-30--2015.md
-  #- name: August 19, 2015
-  #  href: august-19--2015.md
- # - name: August 14, 2015 - Batch Segment Service Breaking Changes
-  #  href: august-14--2015---batch-segment-service-breaking-changes.md
-  #- name: June 16, 2015
-  #  href: june-16--2015.md
+- name: Release Notes
+  items:
+    - name: Latest Release Notes
+      href: xandr-bidder-release-notes.md
+    - name: Legacy Release Notes
+      items:
+      - name: Overview
+         href: release-notes---legacy.md
+      - name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
+        href: september-5--2017---api-version-1-18-release---breaking-changes.md
+      - name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
+        href: december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
+      - name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+        href: august-17--2016---impbus-api-1-17-release---breaking-changes.md
+      - name: March 9, 2016 - Creative Macro Breaking Change
+        href: march-9--2016---creative-macro-breaking-change.md
+      - name: December 21, 2015 - UTF-8 Encoding of Reporting Data
+        href: december-21--2015---utf-8-encoding-of-reporting-data.md
+      - name: October 2, 2015 - Bid Request Breaking Change
+        href: october-2--2015---bid-request-breaking-change.md
+      - name: September 30, 2015 
+        href: september-30--2015.md
+      - name: August 19, 2015
+        href: august-19--2015.md
+      - name: August 14, 2015 - Batch Segment Service Breaking Changes
+        href: august-14--2015---batch-segment-service-breaking-changes.md
+      - name: June 16, 2015
+        href: june-16--2015.md
