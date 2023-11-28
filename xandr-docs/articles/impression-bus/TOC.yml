@@ -44,12 +44,6 @@
       href: frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
     - name: Changelog for Enhanced Bidder Profiles
       href: changelog-for-enhanced-bidder-profiles.md
-- name: Seat Service
-  items:
-    - name: Overview
-      href: seat-service.md
-    - name: Changelog for Buyer Seat ID
-      href: changelog-for-buyer-seat-id.md
 - name: Creative API Services
   items:
     - name: Overview
@@ -86,32 +80,10 @@
   href: domain-list-service.md
 - name: Member Service
   href: member-service.md
-- name: Report Service
-    items:
-    - name: Overview
-      href: report-service.md
-    - name: Bidder Bid Error Report API
-      href: bidder-bid-error-report-api.md
-    - name: Bidder Billing Report API
-      href: bidder-billing-report-api.md
-    - name: Bidder Platform Buyer Report
-      href: bidder-platform-buyer-report.md
-    - name: Completed Creative Audits Report
-      href: completed-creative-audits-report.md
-    - name: Inventory Availability Report
-      href: inventory-availability-report.md
-    - name: Platform Seller Report
-      href: platform-seller-report.md
-    - name: Reporting Timezones
-      href: reporting-timezones.md
-    - name: Seller Platform Billing Report
-      href: seller-platform-billing-report.md
-    - name: Saved Report Service
-      href: saved-report-service.md
-  - name: User Service
-    href: user-service.md
-  - name: Read-Only Services
-    items:
+
+
+- name: Read-Only Services
+  items:
     - name: Ad Server Service
       href: ad-server-service.md
     - name: Brand Service
@@ -168,6 +140,34 @@
       href: technical-attribute-service.md
     - name: URL Service
       href: url-service.md
+- name: Report Service
+  items:
+    - name: Overview
+      href: report-service.md
+    - name: Bidder Bid Error Report API
+      href: bidder-bid-error-report-api.md
+    - name: Bidder Billing Report API
+      href: bidder-billing-report-api.md
+    - name: Bidder Platform Buyer Report
+      href: bidder-platform-buyer-report.md
+    - name: Completed Creative Audits Report
+      href: completed-creative-audits-report.md
+    - name: Inventory Availability Report
+      href: inventory-availability-report.md
+    - name: Platform Seller Report
+      href: platform-seller-report.md
+    - name: Reporting Timezones
+      href: reporting-timezones.md
+    - name: Seller Platform Billing Report
+      href: seller-platform-billing-report.md
+    - name: Saved Report Service
+      href: saved-report-service.md
+- name: Seat Service
+  items:
+    - name: Overview
+      href: seat-service.md
+    - name: Changelog for Buyer Seat ID
+      href: changelog-for-buyer-seat-id.md
   - name: Sell-Side Services
     items:
     - name: Overview
@@ -184,3 +184,5 @@
       href: preemptive-tags.md
     - name: Ad Profile Service
       href: ad-profile-service.md
+- name: User Service
+  href: user-service.md
