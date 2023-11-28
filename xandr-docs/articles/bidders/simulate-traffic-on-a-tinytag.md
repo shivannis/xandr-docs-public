@@ -13,21 +13,19 @@ This ID is used to create the URL that simulates traffic on this
 TinyTag.
 
 > [!NOTE]
-> Which URL to call
-> 
+> Which URL to call?
+>
 > If your bidder is set up in the test environment, use this template:  
-> `https://ib-test.adnxs.com/ttj?id=(TINY_TAG_ID)&size=(WIDTHxHEIGHT)&debug_member=(YOUR_MEMBER_ID)` 
-> If your bidder in the test environment is only buying mobile inventory ,  use this template:
-
-``` 
-https://ib-test.adnxs.com/mob?st=mobile_app&id=(TINY_TAG_ID)&size=(WIDTHxHEIGHT)&debug_member=(YOUR_MEMBER_ID)
-```
-
-> [!NOTE]
+> `https://ib-test.adnxs.com/ttj?id=(TINY_TAG_ID)&size=(WIDTHxHEIGHT)&debug_member=(YOUR_MEMBER_ID)`
+>
+> If your bidder in the test environment is only buying mobile inventory, use this template:
+>
+> `https://ib-test.adnxs.com/mob?st=mobile_app&id=(TINY_TAG_ID)&size=(WIDTHxHEIGHT)&debug_member=(YOUR_MEMBER_ID)`
+>
 > TT vs. TTJ
-> 
+>
 > The element in the auction URL, `/ttj` can also be set to `/tt`.
-> 
+>
 > `/ttj` denotes a JavaScript tinytag (placement or ad tag).
 >
 >`/tt` denotes an iFrame tinytag (placement or ad tag). 

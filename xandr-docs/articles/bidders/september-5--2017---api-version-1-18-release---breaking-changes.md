@@ -68,14 +68,13 @@ handle your API calls.
 For your security, all production and test API access should be
 performed over HTTPS. Currently, authentication over HTTPS is possible
 but not required. As of Version 1.18, if authentication is attempted
-over HTTP, AppNexus will return an HTTP 308
-response redirecting queries to HTTPS.
+over HTTP, AppNexus will return an HTTP 308 response redirecting queries to HTTPS.
 
 Our ultimate goal is for all our clients to authenticate and access the
 API using HTTPS only. In order to minimize disruption during this
 transition, we still support access to other API services over HTTP once
 you authenticate with HTTPS. However, we strongly recommend that you
-switch to using HTTPS in all cases if you're not already doing so
+switch to using HTTPS in all cases if you're not already doing so.
 
 ## Changed services
 

@@ -40,7 +40,7 @@ with our Creative Service API , which gives you more control over the
 max scale factor and aspect ratio bounds. For more information, see [Creative API Services](creative-api-services.md). The original
 dimensions of the native creative ultimately determine what is possible.
 
-## BEST Practices/Requirements:
+## BEST practices/requirements:
 
 - Smart Image Adjustments only works for the following file types:
   - .png
@@ -53,6 +53,6 @@ dimensions of the native creative ultimately determine what is possible.
   assets in the appropriate geographic region for your audience. Poorly
   distributed image assets can lead to slower image fetch times.
 
-## Related topics
+## Related topic
 
 - [Native Ad Markup Bidding](native-ad-markup-bidding.md)

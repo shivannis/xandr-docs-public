@@ -14,7 +14,7 @@ Impression Bus API.
 
 ## Impression Bus API
 
-**New services**
+### New services
 
 ### Spend protection pixel service
 
