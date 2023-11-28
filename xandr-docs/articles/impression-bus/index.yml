@@ -1,1 +1,19 @@
+### YamlMime:Landing
 
+title: Impression Bus API
+summary: Welcome to Impression Bus API Reference documentation! All the information you need to get started with the Yield Analytics API is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Impression Bus API
+  description: Discover various reference docs about Impression Bus API
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 28/11/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: impression-bus-api.md
