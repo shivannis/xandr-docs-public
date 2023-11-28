@@ -58,11 +58,11 @@ additionalContent:
           - url: curate/release-notes-curate.md
             text: Release Notes
       # Card
-      - title: Bidder (Work in Progress)
+      - title: Bidder
         links:
-          - url: getting-started/index.yml
+          - url: bidders/index.yml
             text: Product Documentation
-          - url: release-notes-curate.md
+          - url: bidders/xandr-bidder-release-notes.md
             text: Release Notes
     - title: API References
       items:
