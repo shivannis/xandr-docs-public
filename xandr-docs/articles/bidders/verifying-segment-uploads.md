@@ -17,7 +17,7 @@ There are a few ways to confirm that your uploads are successful.
 | `num_invalid_user` | The total number of invalid user IDs in the file. |
 | `segment_log_lines` | The number of unique valid users added to each segment. The format is `[SEGMENT ID]-[NUMBER OF USERS]`.<br>**Note**: This field is limited to 999 lines in your file. If you have more than 999 segments in the job, some of them will not be shown. |
 
-- Use the [Segment Loads API](../digital-platform-api/segment-loads-report.md) to see the number of valid user IDs that have been loaded into a segment over a given time period.
+- Use the [Segment Loads API Report](../digital-platform-api/segment-loads-report.md) to see the number of valid user IDs that have been loaded into a segment over a given time period.
 
 - Spot check a few user IDs to confirm they have been added to the appropriate segments using the below URLs. If you don't see the user in one geo, be sure to check the other geo.  
 
