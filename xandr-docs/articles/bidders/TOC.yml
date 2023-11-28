@@ -512,7 +512,7 @@
     - name: Legacy Release Notes
       items:
       - name: Overview
-         href: release-notes---legacy.md
+        href: release-notes---legacy.md
       - name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
         href: september-5--2017---api-version-1-18-release---breaking-changes.md
       - name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
