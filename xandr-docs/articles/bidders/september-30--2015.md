@@ -1,46 +1,32 @@
 ---
-Title : September 30, 2015 
-Description : We are excited to announce the following enhancements to the bidding
-ms.date : 10/28/2023
-protocol and to version 1.16 of the AppNexus
+title : September 30, 2015 
+description : Learn about enhancements to the bidding protocol and to version 1.16 of the AppNexus Impression Bus API. 
+ms.date : 11/24/2023
+
 ---
 
 
 # September 30, 2015 
 
-
-
 We are excited to announce the following enhancements to the bidding
 protocol and to version 1.16 of the AppNexus
 Impression Bus API.
 
-
-
 ## Impression Bus API
 
-**New Services**
+### New services
 
-**Spend Protection Pixel Service**
+### Spend protection pixel service
 
 As part of the Beta phase of the AppNexus Spend
 Protection program, the new
-read-only<a href="september-30--2015.md#ID-0000cc8c__39" class="xref">Spend
-Protection Pixel Service</a> allows you to retrieve the pixel `id` of
-your third-party verification partner. You then include that pixel in
-any bid responses for which you wish to enable
-AppNexus Spend Protection using the
-`spend_protection_pixel_ids` array in Bid Response of the Bidding
-protocol.
+read-only [Spend Protection Pixel Service](#spend-protection-pixel-service) allows you to retrieve the pixel `id` of your third-party verification partner. You then include that pixel in any bid responses for which you wish to enable AppNexus Spend Protection using the `spend_protection_pixel_ids` array in Bid Response of the Bidding protocol.
 
-**Changed Reports**
+### Changed reports
 
-**Platform Buyer Report and Platform Seller Report**
+**Platform buyer report and platform seller report**
 
-Four new viewability metrics are available in the <a
-href="bidder-platform-buyer-report.md"
-class="xref" target="_blank">Bidder Platform Buyer Report</a> and the <a
-href="platform-seller-report.md"
-class="xref" target="_blank">Platform Seller Report</a>. The metrics
+Four new viewability metrics are available in the [Bidder Platform Buyer Report](bidder-platform-buyer-report.md) and the [Platform Seller Report](platform-seller-report.md). The metrics
 are:
 
 - `imps_viewed` - The number of measured impressions that were viewable.
@@ -51,22 +37,15 @@ are:
 - `view_measurable_rate` - The percentage of impressions measured for
   viewability out of the total number of impressions.
 
+## Bidding protocol
 
-
-
-
-## Bidding Protocol
-
-**Bid Request**
+**Bid request**
 
 If you were participating the Alpha phase of the
 AppNexus Spend Protection program, the
 `certified_supply` field (Alpha) has been deprecated. Instead, the
 `spend_protection` field (Beta) is now used to specify that the
-inventory associated with the <a
-href="bid-request.md"
-class="xref" target="_blank">Bid Request</a> is associated with the
-AppNexus Spend Protection program.
+inventory associated with the [Bid Request](bid-request.md) is associated with the AppNexus Spend Protection program.
 
 Several new arrays have been added to the `deals` array:
 

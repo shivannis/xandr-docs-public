@@ -1,27 +1,14 @@
 ---
-Title : Supply Type Detection - FAQ
-<b>Note:</b> On February 13, 2018, we made
-changes to how the supply type field is set on inventory. No action is
-ms.date : 10/28/2023
+title : Supply Type Detection - FAQ
+description: Learn FAQs on Supply Type Detection.  
+ms.date : 11/24/2023
 ---
 
 
 # Supply Type Detection - FAQ
 
-
-
-
-
-
-
-<b>Note:</b> On February 13, 2018, we made
-changes to how the supply type field is set on inventory. No action is
-required from buyers or sellers, but customers should be aware of the
-change.
-
-
-
-
+> [!NOTE]
+> On February 13, 2018, we made changes to how the supply type field is set on inventory. No action is required from buyers or sellers, but customers should be aware of the change.
 
 Currently, supply type is a field that sellers set on placement groups
 to identify impressions as **Web**, **Mobile Web**, or **App (CTV,
@@ -34,7 +21,6 @@ in managing their inventory. Buyers specifically targeting mobile web
 may also see a bump in reach as this is a commonly misclassified supply
 type.
 
->
 
 ## FAQs
 
@@ -53,9 +39,7 @@ type filter and dimension.
 
 **If I find errors, how do I report them?**
 
-Please report any issues using our
-<a href="https://help.xandr.com/" class="xref" target="_blank">Customer
-Support Portal</a>.
+Please report any issues using our [Customer Support Portal](https://help.xandr.com/).
 
 **How will Xandr supply type detection differ from the supply type I
 have set on my inventory?**
