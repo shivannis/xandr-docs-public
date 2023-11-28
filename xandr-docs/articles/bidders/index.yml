@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Bidders Reference Documentation
-summary: Welcome to Bidders Reference Documentation! All the information you need to get started as a Bidder is right here. You can simply search for what you need, or click one of the tiles below.
+title: Bidder Reference Documentation
+summary: Welcome to Bidder Reference Documentation! All the information you need to get started as a Bidder is right here. You can simply search for what you need, or click one of the tiles below.
 metadata:
   title: Bidders Reference Documentation
   description: Discover various resources for Bidders
@@ -15,12 +15,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: The Big Picture
+          - text: Overview
             url: the-big-picture.md
-      - linkListType: reference
+          - text: Auctions
+            url: auction-overview.md      
+      - linkListType: concept
         links:
-          - text: Auction Overview
-            url: auction-overview.md
+          - text: Price Reduction Mechanics
+            url: price-reduction-mechanics.md
           - text: Bidding Use Case with Fees
             url: bidding-use-case-with-fees.md
   - title: Platform Operations
@@ -51,22 +53,22 @@ landingContent:
             url: deal-auction-mechanics.md
           - text: Bidder Best Practices
             url: bidder-best-practices.md
-  - title: Impression Bus API
-    linkLists:
-      - linkListType: concept
-        links: 
-          - text: API Semantics
-            url: api-semantics.md
-          - text: Bidder Profile Migration Guide
-            url: bidder-profile-migration-guide.md
-          - text: Creative Service
-            url: creative-service.md
-      - linkListType: reference
-        links:
-          - text: Bidder Service
-            url: bidder-service.md
-          - text: API Best Practices
-            url: api-best-practices.md
+ # - title: Impression Bus API
+    #linkLists:
+     # - linkListType: concept
+      #  links: 
+       #   - text: API Semantics
+       #     url: api-semantics.md
+       #   - text: Bidder Profile Migration Guide
+        #    url: bidder-profile-migration-guide.md
+        #  - text: Creative Service
+        #    url: creative-service.md
+     # - linkListType: reference
+       # links:
+        #  - text: Bidder Service
+         #   url: bidder-service.md
+         # - text: API Best Practices
+         #   url: api-best-practices.md
   - title: Bidding Protocol
     linkLists:
       - linkListType: concept
