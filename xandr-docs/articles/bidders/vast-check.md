@@ -83,7 +83,7 @@ type. VPAID 2.0 supports HTML5 (media type application/JavaScript) which allows
 
 **Corrective action:** Reach out to your third-party ad server to update the creative with the recommended video formats.
 
-For sample XML snippets with the recommended formats, see the [No recommended video formats detected](vast-check.md#no-recommended-video-formats-detected).
+For sample XML snippets with the recommended formats, see the [No recommended video formats detected](vast-check.md#no-recommended-video-formats-detected) section.
   
 **\<Wrapper\> element(s) detected**
 

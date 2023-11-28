@@ -10,7 +10,7 @@ This page has answers to frequently asked questions about user data.
 
 ## Cookie matching
 
-**How can I sync user IDs with Xandr?**
+### How can I sync user IDs with Xandr?
 
 To sync user IDs, either you or Xandr must store the mapping table. If you would like Xandr to store the mapping table, please contact your Xandr representative.
 
@@ -21,13 +21,13 @@ To store the mappings on your servers, you will use the `/getuid` pixel. The `/g
 1. Replace the `$UID` macro with `12345`
 1. Redirect the user to a`https://ad.adserver.com/pixel?adnxs_uid=12345`
 
-**Do you have the same user pool in your US and EU data centers?**
+### Do you have the same user pool in your US and EU data centers?
 
 No, the US data centers have one pool of user data and the EU data centers have another. This means that Xandr user ID 12345 in the US is different from Xandr user ID 12345 in the EU.
 
 ## Filtering
 
-**How can I only see users that I have a cookie match for?**
+### How can I only see users that I have a cookie match for?
 
 This is a multi-step process:
 
@@ -37,7 +37,7 @@ This is a multi-step process:
 
 ## Segments
 
-**How do I add a user to a segment?**
+### How do I add a user to a segment?
 
 Xandr users can be added to segments using a [Segment Pixel](../monetize/working-with-segments.md). The segment can be created through the UI [https://bidder.adnxs.net](https://bidder.adnxs.net) in the Segments tab. You must create a segment before adding users via the segment pixel. When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
 
@@ -49,7 +49,7 @@ This will add a user to segments 101, 102 and 104. The example below will add a 
 
 `<img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/>`
 
-**How do I remove a user from a segment?**
+### How do I remove a user from a segment?
 
 Xandr users can be removed from segments using a [Segment Pixel](../monetize/working-with-segments.md). When you create the segment, Xandr will define a unique ID. You may also specify a code, which will be your unique identifier for that segment.
 

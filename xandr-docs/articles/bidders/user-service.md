@@ -18,10 +18,10 @@ manage who has access to Xandr's APIs. Users are classified as by a user type of
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| GET |https://api.adnxs.com/user| View all the users that you have created. |
-| GET | https://api.adnxs.com/user/USER_ID| View a particular user. |
-| POST |  https://api.adnxs.com/user (user JSON) | Add a user. |
-| PUT |https://api.adnxs.com/user/USER_ID (user JSON) | Modify an existing user. |
+| GET |`https://api.adnxs.com/user`| View all the users that you have created. |
+| GET | `https://api.adnxs.com/user/USER_ID`| View a particular user. |
+| POST |  `https://api.adnxs.com/user` (user JSON) | Add a user. |
+| PUT |`https://api.adnxs.com/user/USER_ID` (user JSON) | Modify an existing user. |
 
 To delete an existing user:  
 DELETE [https://api.adnxs.com/user/USER_ID](https://api.adnxs.com/user/USER_ID)
@@ -32,7 +32,7 @@ DELETE [https://api.adnxs.com/user/USER_ID](https://api.adnxs.com/user/USER_ID)
 |--|--|--|--|
 | id | yes (on update) | int | Internal ID associated with the user. |
 | active | no | Bool | Currently you cannot delete a user. For now, set to active to "false" |
-| username | yes (on add) | string(50) | Name of the user. User names must be unique.<br>**Note**: After a user is created, the username cannot be changed. |
+| username | yes (on add) | string(50) | Name of the user. User names must be unique.<br><br>**Note**: After a user is created, the username cannot be changed. |
 | password | yes (on add) | string | Password for the user. |
 | email | yes | string | Email of the user. (Note that a user can be created without an email, but this will cause problems later when trying to update the user.) |
 | user_type | yes | enum('bidder','member') | Type of user being added. |
@@ -50,8 +50,8 @@ DELETE [https://api.adnxs.com/user/USER_ID](https://api.adnxs.com/user/USER_ID)
 | custom_data | no | string | Any information relevant to the user. |
 | send_safety_budget_notifications | no | Boolean | If `true`, the user will receive email notifications when the daily safety budget threshold is approached. For more details, see the `daily_budget` field on the  [Member Service](member-service.md). |
 | timezone | no | string | The user's timezone. |
-| entity_reporting_decimal_type | no | string | Whether number values are separated by a comma or a decimal in reports. If this field is set to decimal, the value returned would be formatted like this: 1234.56. Whereas, if this field is set to `comma`, the value returned would be formatted like this: 1234.56.<br>Possible values:<br>`decimal`<br>`comma` |
-| reporting_decimal_type | no | string | The character used for decimals in reporting. Possible values:<br>`"comma"`<br>`"decimal"` (period)<br>This setting can be overridden at the report level (see `reporting_decimal_type` in the  [Report Service](report-service.md)). |
+| entity_reporting_decimal_type | no | string | Whether number values are separated by a comma or a decimal in reports. If this field is set to decimal, the value returned would be formatted like this: 1234.56. Whereas, if this field is set to `comma`, the value returned would be formatted like this: 1234.56.<br>Possible values:<br> - `decimal`<br> - `comma` |
+| reporting_decimal_type | no | string | The character used for decimals in reporting. Possible values:<br> - `"comma"`<br> - `"decimal"` (period)<br>This setting can be overridden at the report level (see `reporting_decimal_type` in the  [Report Service](report-service.md)). |
 | decimal_mark | no | string | The character used to represent a decimal mark, such as "period" for a value of 12.7. |
 | thousand_seperator | no | string | The character used to separate thousands in numeric values, such as "comma" for the value 1,276. |
 | last_modified | no | date | The date the any of the user settings were last modified. |
