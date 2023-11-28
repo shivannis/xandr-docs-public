@@ -1,10 +1,10 @@
 ---
-title: Bidders - User Data - FAQ
+title: User Data - FAQ
 description: The article addresses common queries related to user data.
 ms.date: 10/28/2023
 ---
 
-# Bidders - User Data - FAQ
+# User data - FAQ
 
 This page has answers to frequently asked questions about user data.
 

@@ -1,10 +1,10 @@
 ---
-title: Bidders - Your Reports
+title: Your Reports
 description: The articles explains the recent reports that you have to run, the recent report queries, and saved reports. 
 ms.date: 10/28/2023
 ---
 
-# Bidders - Your reports
+# Your reports
 
 **Your Reports** displays **recent reports** you have run, **saved report** templates and **scheduled reports**.
 

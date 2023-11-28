@@ -10,7 +10,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 
 ## VAST check requirements
 
-- **Duration**:  A duration with format 00:00:00 is required.
+- **Duration**: A duration with format 00:00:00 is required.
   - Creatives longer than 30 seconds may not deliver on Instream inventory due to duration limits; targeting Outstream is recommended.  
 - **Formats**: To deliver on all player types, the following formats are recommended:
   - VAST: Flv, Mp4, WebM
@@ -24,7 +24,7 @@ When adding a third-party VAST or VPAID video creative, a series of checks are p
 > [!NOTE]
 > To manually inspect the elements of your XML file, paste the VAST URL into a browser.
 
-## Possible VAST Check Outputs
+## Possible VAST check outputs
 
 - All attributes are present and valid  
 - Invalid creative: some attributes need attention
@@ -57,7 +57,7 @@ seeing this error, the duration format may be invalid. Durations must have forma
 
 :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that illustrates the process of contacting a third-party ad server to update a creative with at least one of the recommended video formats. The accompanying text refers to a sample XML containing the suggested VAST formats.":::
 
-### Sample XML with recommended VPAID formats:
+### Sample XML with recommended VPAID formats
 
 :::image type="content" source="media/sample-xml.png" alt-text="The screenshot that illustrates Sample XML with recommended VPAID formats:":::
 
@@ -99,7 +99,7 @@ Excerpt of a VAST document with a `<Wrapper>` element pointing to an \<InLine\
 
 :::image type="content" source="media/recommended-vast-format.png" alt-text="The screenshot that provides guidance on taking corrective actions by avoiding the use of multiple chained Wrapper elements in VAST documents.":::
 
-**Unable to Run VAST Check**
+**Unable to run VAST check**
 
 If VAST check is unable to run successfully, it means your creative either has no content, or cannot be scanned. You will see one of the error messages listed below. Please contact your third-party ad server
 for further troubleshooting.
@@ -117,7 +117,7 @@ all attributes to ensure maximum delivery. Complying with a complete VAST XML fi
 
 See [VAST Check Requirements](vast-check.md#vast-check-requirements) to verify and incorporate required information.
 
-**The VAST XML Appears to no Longer Exist**
+**The VAST XML appears to no longer exist**
 
 The VAST check feature is in the beta stage and may not return data. If the "**VAST XML appears to no longer exist**" message displays, manually check your VAST XML document. Open the document and ensure that all the
 necessary components are present as listed in the [VAST Check Requirements](vast-check.md#vast-check-requirements) section.

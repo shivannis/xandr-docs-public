@@ -32,7 +32,7 @@ While our measurement script is capable of collecting more granular metrics such
 
 Stay tuned for updates as we continue to develop viewability reporting.
 
-## Xandr Viewability Script Functionality
+## Xandr viewability script functionality
 
 **What methods does Xandr use to measure viewability?**
 
@@ -136,7 +136,7 @@ These checks are applied to all platform inventory before an impression is aucti
 
 The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
 
-## Viewability Rate Results
+## Viewability rate results
 
 **Why do I get a low viewability rate on placement X?**
 

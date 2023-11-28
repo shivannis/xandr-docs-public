@@ -4,7 +4,7 @@ description : The article introduces the User Service, which pertains to individ
 ms.date : 10/28/2023
 ---
 
-# Bidders - user service
+# Bidders - User service
 
 Here "user" refers to people or groups using Xandr's APIs. The User Service will allow you to
 manage who has access to Xandr's APIs. Users are classified as by a user type of either *bidder* or *member*.
@@ -20,7 +20,7 @@ manage who has access to Xandr's APIs. Users are classified as by a user type of
 |---|---|---|
 | GET |`https://api.adnxs.com/user`| View all the users that you have created. |
 | GET | `https://api.adnxs.com/user/USER_ID`| View a particular user. |
-| POST |  `https://api.adnxs.com/user` (user JSON) | Add a user. |
+| POST | `https://api.adnxs.com/user` (user JSON) | Add a user. |
 | PUT |`https://api.adnxs.com/user/USER_ID` (user JSON) | Modify an existing user. |
 
 To delete an existing user:  

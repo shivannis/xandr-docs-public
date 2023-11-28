@@ -1,10 +1,10 @@
 ---
-title: Bidders - Microsoft Monetize Supply for External Demand Partners
+title: Microsoft Monetize Supply for External Demand Partners
 description: The article discusses Microsoft Monetize Supply for External Demand Partners, providing information and insights into this particular monetization strategy.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Microsoft Monetize supply for external demand partners
+# Microsoft Monetize supply for external demand partners
 
 This page explains what Microsoft Monetize supply is, our purpose in launching it, and other details helpful to working with XandrMonetize supply.
 

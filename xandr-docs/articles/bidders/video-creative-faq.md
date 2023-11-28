@@ -1,10 +1,10 @@
 ---
-title: Bidders - Video Creative FAQ
+title: Video Creative FAQ
 description: The article provides information on frequently asked questions(FAQ) related to video creative.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Video creative FAQ
+# Video creative FAQ
 
 ## Questions
 

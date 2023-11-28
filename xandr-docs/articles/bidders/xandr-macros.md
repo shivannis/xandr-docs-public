@@ -1,10 +1,10 @@
 ---
-title: Bidders - Xandr Macros
+title: Xandr Macros
 description: The article emplains the macros which are used to populate URLs with useful information.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Xandr macros
+# Xandr macros
 
 Macros are used to populate URLs (such as those found in creatives) with useful information.  They are essentially variables that are expanded by our ad server with whatever their actual value is at the time of the ad call.
 
@@ -68,7 +68,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br>…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…The separators proposed being , between the source and the value, and \| between the different IDs type and value pairs. |
 
-**European Ad Inventory and Providing Notice, Transparency and Choice**
+**European Ad inventory and providing notice, transparency and choice**
 
 > [!WARNING]
 > In order for our clients to meet their transparency, notice and choice/consent requirements under US

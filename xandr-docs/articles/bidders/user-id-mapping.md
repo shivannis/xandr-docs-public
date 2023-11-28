@@ -12,4 +12,4 @@ Data on potential customers has long been used offline, but the technology to co
 Xandr serves as the hub, a single integration point, where data providers can offer their data in real time as opposed to the traditional direct integrations with many different buyers resulting in massive numbers of pixels on a page and general fragmentation.
 
 This section of the Xandr documentation discusses the integration of behavioral, contextual, demographic, and
-other kinds of user data within the Xandrplatform. Xandr works with Data Providers and also allows members to access and utilize their own internal data for bidding purposes.
+other kinds of user data within the Xandr platform. Xandr works with Data Providers and also allows members to access and utilize their own internal data for bidding purposes.
