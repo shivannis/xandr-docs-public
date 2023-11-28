@@ -1,6 +1,8 @@
 ---
 Title : Xandr's Bidders
 Description : ## Xandr's Bidders
+ms.custom : data-providers
+ms.date : 10/28/2023
 Bidders receive full details of every auction on the bid request. These
 ---
 

@@ -1,6 +1,8 @@
 ---
 Title : Query String Feed
-Description : Note: This feed has been deprecated as
+Description : <b>Note:</b> This feed has been deprecated as
+ms.custom : log-level-data
+ms.date : 10/28/2023
 of January 2022.
 ---
 
@@ -11,7 +13,7 @@ of January 2022.
 
 
 
-Note: This feed has been deprecated as
+<b>Note:</b> This feed has been deprecated as
 of January 2022.
 
 
@@ -20,15 +22,15 @@ The Query String Feed provides data about the query strings that come in
 on your managed publishers' impressions. It contains one row for each
 sold impression that passes in a query string in the correct format. For
 more information on the required query string format, see <a
-href="https://docs.xandr.com/bundle/log-level-data/page/query-string-feed.html#QueryStringFeed-QueryStringFormattingRequirements"
+href="query-string-feed.md#QueryStringFeed-QueryStringFormattingRequirements"
 class="xref" target="_blank">Query String Formatting Requirements</a>.
 
 
 
-Note: You must be specially enabled to
+<b>Note:</b> You must be specially enabled to
 log query strings and receive this feed. This is true even if you
 already get a <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>. For more information
 contact your Xandr representative.
 

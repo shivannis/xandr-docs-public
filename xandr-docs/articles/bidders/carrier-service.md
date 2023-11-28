@@ -1,217 +1,48 @@
 ---
-Title : Carrier Service
-Description : Mobile carriers, also known as wireless carriers or mobile network
-ms.date : 10/28/2023
-operators, own or control all the elements necessary to sell and deliver
-wireless communication services to users of mobile devices. The
+title: Bidders - Carrier Service
+description: In this article, learn about bidders carrier service, their JSON fields, REST API, along with a detailed set of examples.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Carrier service
 
-# Carrier Service
-
-
-
-Mobile carriers, also known as wireless carriers or mobile network
-operators, own or control all the elements necessary to sell and deliver
-wireless communication services to users of mobile devices. The
-read-only Mobile Carrier Service allows you to see what mobile carriers
-are registered in the Xandr system.
-
-
+Mobile carriers, also known as wireless carriers or mobile network operators, own or control all the elements necessary to sell and deliver wireless communication services to users of mobile devices. The read-only Mobile Carrier Service allows you to see what mobile carriers are registered in the Xandr system.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000076e1__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000076e1__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000076e1__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__2"><a
-href="https://api.adnxs.com/carrier" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/carrier</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__3">View
-all carriers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__2"><a
-href="https://api.adnxs.com/carrier/CARRIER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/carrier/CARRIER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__3">View
-a specific carrier.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__2"><a
-href="https://api.adnxs.com/carrier?name=CARRIER_NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/carrier?name=CARRIER_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__3">View
-a specific carrier.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__2"><a
-href="https://api.adnxs.com/carrier/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/carrier/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| GET | [https://api.adnxs.com/carrier](https://api.adnxs.com/carrier) | View all carriers. |
+| GET | [https://api.adnxs.com/carrier/CARRIER_ID](https://api.adnxs.com/carrier/CARRIER_ID) | View a specific carrier. |
+| GET | [https://api.adnxs.com/carrier?name=CARRIER_NAME](https://api.adnxs.com/carrier?name=CARRIER_NAME) | View a specific carrier. |
+| GET | [https://api.adnxs.com/carrier/meta](https://api.adnxs.com/carrier/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000076e1__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000076e1__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000076e1__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__18">The
-ID of the mobile carrier.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__18">The
-name of the mobile carrier.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__16"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__17">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__18">The
-<a href="http://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country in which the carrier
-operates.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__16"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__18">The
-name of the country in which the carrier operates.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__16"><code
-class="ph codeph">codes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__17">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__18">Third-party representations for the
-mobile carrier. See "Codes" below for more details.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the mobile carrier. |
+| `name` | string | The name of the mobile carrier. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country in which the carrier operates. |
+| `country_name` | string | The name of the country in which the carrier operates. |
+| `codes` | array of objects | Third-party representations for the mobile carrier. See "Codes" below for more details. |
 
 ## Codes
 
 Each object in the `codes` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000076e1__entry__34"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000076e1__entry__35"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000076e1__entry__36"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__34"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__36">The
-ID for the mobile carrier.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__34"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__36">The
-third-party representation for the mobile carrier.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__34"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__36">Identification information about the
-third-party.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__34"><code
-class="ph codeph">device_model_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000076e1__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000076e1__entry__36">The
-ID for the mobile carrier.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID for the mobile carrier. |
+| `code` | string | The third-party representation for the mobile carrier. |
+| `notes` | string | Identification information about the third-party. |
+| `device_model_id` | int | The ID for the mobile carrier. |
 
 ## Examples
 
-**View all mobile carriers**
+### View all mobile carriers
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier'
 {
     "response": {
@@ -560,9 +391,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier'
 }
 ```
 
-**View a specific mobile carrier**
+### View a specific mobile carrier
 
-``` pre
+``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier/1'
 {
     "response": {
@@ -608,9 +439,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/carrier/1'
     }
 }
 ```
-
-
-
-
-
-

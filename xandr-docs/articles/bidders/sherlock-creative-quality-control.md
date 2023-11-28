@@ -1,15 +1,12 @@
 ---
-Title : Sherlock - Creative Quality Control
-Description : Xandr takes malware extremely seriously, and we
-ms.date : 10/28/2023
-are actively working to be at the forefront of prevention in order to
-protect our customers.
+title : Sherlock - Creative Quality Control
+description : Learn how we use Sherlock, to detect malicious content and assist our human auditors with ad quality. 
+ms.date : 11/24/2023
+
 ---
 
 
-# Sherlock - Creative Quality Control
-
-
+# Sherlock - Creative quality control
 
 Xandr takes malware extremely seriously, and we
 are actively working to be at the forefront of prevention in order to
@@ -23,47 +20,17 @@ actors, we are not currently disclosing details of the process in our
 documentation. For more technical detail, please contact our
 Anti-Malvertising team.
 
+> [!NOTE]
+> During the Sherlock testing process, we are actually loading each creative a few times. Because of this, you may see some very minimal activity for inactive or unaudited creatives in reporting.
 
+## Anti-Malvertising policy for buyers
 
-
-<b>Note:</b>
-
-During the Sherlock testing process, we are actually loading each
-creative a few times. Because of this, you may see some very minimal
-activity for inactive or unaudited creatives in reporting.
-
-
-
-
-
-
-
-## Anti-Malvertising Policy for Buyers
-
-We have developed an
-<a href="https://wiki.xandr.com/display/policies/Malware+Policy"
-class="xref" target="_blank">anti-malvertising policy</a> whose goal is
-to ensure that our clients are making all necessary efforts to keep our
-platform safe, please click the above link read this policy careful to
-understand your responsibilities.
-
-
-
-
+We have developed an [anti-malvertising policy](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Malware-Policy.aspx) (login required) whose goal is to ensure that our clients are making all necessary efforts to keep our platform safe, please click the above link read this policy careful to understand your responsibilities.
 
 ## Contacting our team
 
 If you have any malware related issues or questions, please complete
-our <a href="https://help.xandr.com/" class="xref" target="_blank">Customer
-Support form</a> and select "Anti-Malvertising" as the Request Type. If
-you feel that your creative has been deactivated erroneously for loading
-a non-malicious domain, please open a ticket and provide your reasoning
-as well as contacts for the domain owner so that we are able to further
-investigate.
-
-
-
-
+our [Customer Support form](https://help.xandr.com/s/login/) and select "Anti-Malvertising" as the Request Type. If you feel that your creative has been deactivated erroneously for loading a non-malicious domain, please open a ticket and provide your reasoning as well as contacts for the domain owner so that we are able to further investigate.
 
 ## Violation reports and automated emails
 
@@ -80,18 +47,13 @@ loaded.** These cached copies can be used for additional debugging on
 your end. For example, checking javascript that was loaded to determine
 a creative ID in another system.
 
-
-
-
-
 ## Removing a domain from our blocklist
 
 We build our blocklists from a variety of sources both internal and
 external. Our team investigates each of these domains, which remain
 blocked if we are unable to contact the owner and determine the
 validity. If you feel a domain has been incorrectly blocked, use
-our <a href="https://help.xandr.com/" class="xref" target="_blank">Customer
-Support form</a> to open a ticket (select "Anti-Malvertising" as the
+our [Customer Support form](https://help.xandr.com/s/login/) to open a ticket (select "Anti-Malvertising" as the
 Request Type) and provide your reasons why the domain is legitimate as
 well as contacts for the owner of the domain. Some examples of details
 that we need (the more you can provide the better):
@@ -105,9 +67,3 @@ determine if the domain can be removed from our blocklist. As a matter
 of policy, we blocklist as soon as we see a potential problem and then
 complete the investigation. This is to ensure that both your publisher
 relationships and your reputation are protected.
-
-
-
-
-
-

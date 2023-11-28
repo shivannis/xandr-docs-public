@@ -1,7 +1,9 @@
 ---
 Title : Member Data Sharing Service (Contextual Only)
 Description : ## Member Data Sharing Service (for real-time data providers)
-Tip: To make the Member Data Sharing
+ms.custom : data-providers
+ms.date : 10/28/2023
+<b>Tip:</b> To make the Member Data Sharing
 documentation clearer, we've created this page which has <u>only the
 calls that are relevant to data providers with a real time
 integration</u> (i.e. data providers who have a bidder).
@@ -18,7 +20,7 @@ integration</u> (i.e. data providers who have a bidder).
 
 
 
-Tip: To make the Member Data Sharing
+<b>Tip:</b> To make the Member Data Sharing
 documentation clearer, we've created this page which has <u>only the
 calls that are relevant to data providers with a real time
 integration</u> (i.e. data providers who have a bidder).
@@ -41,7 +43,7 @@ other platform members. Here's how it works:
 
 
 
-Note:
+<b>Note:</b>
 
 In the case of bidders, shared segments will be sent with each bid
 request. It is up to the bidder to expose the segment to its relevant
@@ -59,7 +61,7 @@ to add it to the campaign's targeting profile again.
 
 
 
-Tip:
+<b>Tip:</b>
 
 If you have custom segments intended for specific members, you should
 set `segment_exposure` to "list" in each sharing record and use the
@@ -70,7 +72,7 @@ access to.
 
 
 
-Note:
+<b>Note:</b>
 
 The Member Data Sharing service works on BOTH
 Xandr's API
@@ -134,7 +136,7 @@ class="ph">adnxs.com/member-data-sharing?data_member_id=MEMBER_ID</a><br />
 (sharing JSON)</td>
 <td class="entry" headers="ID-000010d9__entry__3">Add one sharing record
 
-Note: The member-data-sharing object
+<b>Note:</b> The member-data-sharing object
 cannot be an array if singular.
 </td>
 </tr>
@@ -148,7 +150,7 @@ class="ph">adnxs.com/member-data-sharings?data_member_id=MEMBER_ID</a><br />
 <td class="entry" headers="ID-000010d9__entry__3">Add multiple sharing
 records
 
-Note: The member-data-sharings object
+<b>Note:</b> The member-data-sharings object
 must be an array if plural.
 </td>
 </tr>
@@ -183,7 +185,7 @@ record</td>
 
 
 
-Note: JSON structure:
+<b>Note:</b> JSON structure:
 
 When adding or updating a single sharing record, you should structure
 the JSON as a single object called "member_data_sharing". When adding
@@ -191,7 +193,7 @@ the JSON as a single object called "member_data_sharing". When adding
 array of objects called "member_data_sharings" (note the plural) and
 place the sharing data in an array. You cannot update (PUT) multiple
 sharing records at the same time. For exact formatting, see the <a
-href="member-data-sharing-service-contextual-only.html#ID-000010d9__contextual_only_example"
+href="member-data-sharing-service-contextual-only.md#ID-000010d9__contextual_only_example"
 class="xref">examples</a> below.
 
 
@@ -258,7 +260,6 @@ See the first example below for formatting.
 
 
 
-<div id="ID-000010d9__contextual_only_example" >
 
 ## Examples
 
@@ -381,7 +382,7 @@ $ curl -b cookies -c cookies -X POST -d @data_share_single 'https://api.adnxs.co
 
 
 
-Note:
+<b>Note:</b>
 
 In this example, the PUT request adds segment 121179 to sharing record
 55 (the sharing record for member 104)

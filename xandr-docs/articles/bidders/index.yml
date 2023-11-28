@@ -1,0 +1,116 @@
+### YamlMime:Landing
+
+title: Bidder Reference Documentation
+summary: Welcome to Bidder Reference Documentation! All the information you need to get started as a Bidder is right here. You can simply search for what you need, or click one of the tiles below.
+metadata:
+  title: Bidders Reference Documentation
+  description: Discover various resources for Bidders
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 22/11/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: the-big-picture.md
+          - text: Auctions
+            url: auction-overview.md      
+      - linkListType: concept
+        links:
+          - text: Price Reduction Mechanics
+            url: price-reduction-mechanics.md
+          - text: Bidding Use Case with Fees
+            url: bidding-use-case-with-fees.md
+  - title: Platform Operations
+    linkLists:
+      - linkListType: concept
+        links:            
+          - text: Inventory Auditing
+            url: inventory-auditing.md
+          - text: Creative Audit Feedback
+            url: creative-audit-feedback.md
+      - linkListType: reference
+        links:
+          - text: Sherlock - Creative Quality Control
+            url: sherlock-creative-quality-control.md
+          - text: AdX Feedback and FAQ
+            url: adx-feedback-and-faq.md
+  - title: Bidder Integration
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Integrate a Bidder
+            url: integrate-a-bidder.md
+          - text: Quick Start Creative Buying Guide
+            url: quick-start-creative-buying-guide.md
+      - linkListType: reference
+        links:
+          - text: Deal Auction Mechanics
+            url: deal-auction-mechanics.md
+          - text: Bidder Best Practices
+            url: bidder-best-practices.md
+ # - title: Impression Bus API
+    #linkLists:
+     # - linkListType: concept
+      #  links: 
+       #   - text: API Semantics
+       #     url: api-semantics.md
+       #   - text: Bidder Profile Migration Guide
+        #    url: bidder-profile-migration-guide.md
+        #  - text: Creative Service
+        #    url: creative-service.md
+     # - linkListType: reference
+       # links:
+        #  - text: Bidder Service
+         #   url: bidder-service.md
+         # - text: API Best Practices
+         #   url: api-best-practices.md
+  - title: Bidding Protocol
+    linkLists:
+      - linkListType: concept
+        links: 
+          - text: Outgoing Bid Request to Bidders
+            url: outgoing-bid-request-to-bidders.md
+          - text: Incoming Bid Response from Bidders
+            url: incoming-bid-response-from-bidders.md
+      - linkListType: reference
+        links:
+          - text: Bid Error Codes
+            url: bid-error-codes.md
+          - text: AppNexus Bidding Protocol
+            url: appnexus-bidding-protocol.md
+  - title: Bidder Platform UI
+    linkLists:
+      - linkListType: concept
+        links: 
+          - text: Platform Buyer Report
+            url: platform-buyer-report.md
+          - text: Metrics Screen
+            url: metrics-screen.md
+      - linkListType: how-to-guide
+        links:
+          - text: Creative Screen
+            url: creatives-screen.md
+          - text: Creating a New Bidder Profile
+            url: creating-a-new-bidder-profile.md
+          - text: Filters
+            url: filters.md
+  - title: User ID Mapping
+    linkLists:
+      - linkListType: concept
+        links: 
+          - text: Batch Segment Service
+            url: batch-segment-service.md
+          - text: Synchronize Your User IDs
+            url: synchronize-your-user-ids.md
+      - linkListType: reference
+        links:
+          - text: Batch Segment Service Best Practices
+            url: batch-segment-service-best-practices.md
+          - text: Troubleshooting BSS Uploads
+            url: troubleshooting-bss-uploads.md           
+      

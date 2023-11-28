@@ -1,28 +1,19 @@
 ---
-Title : Reporting Timezones
-Description : You can use the  `timezone` field in the <a
-ms.date : 10/28/2023
-href="member-service.md"
+title: Reporting Timezones
+description: In this article, find information about the Reporting timezones and a list of supported timezone values for reporting.
+ms.date: 10/28/2023
 ---
 
+# Reporting timezones
 
-# Reporting Timezones
+You can use the `timezone` field in the [Member Service](member-service.md) to define the default timezone for reports. Alternately, when using the [Report Service](report-service.md) to request a report, you can set the `timezone` field in the JSON request.
 
+## Supported timezones
 
+The following timezone values are accepted for reporting.
 
-You can use the  `timezone` field in the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a> to define the default
-timezone for reports. Alternately, when using the  <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>  to request a report,
-you can set the  `timezone`  field in the JSON request. 
-
-
-## Supported Timezones
-
-The following timezone values are accepted for reporting. Note that
-non-integer timezones are not accepted.
+> [!NOTE]
+> Non-integer timezones are not accepted.
 
 - EST5EDT
 - CST6CDT
@@ -72,31 +63,14 @@ non-integer timezones are not accepted.
 - Pacific/Auckland
 - Pacific/Honolulu
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a href="report-service.md" class="xref">Report Service</a>
-- <a href="completed-creative-audits-report.md" class="xref">Completed
-  Creative Audits Report</a>
-- <a href="bidder-platform-buyer-report.md" class="xref">Bidder Platform
-  Buyer Report</a>
-- <a href="bidder-billing-report-api.md" class="xref">Bidder Billing
-  Report API</a>
-- <a href="platform-seller-report.md" class="xref">Platform Seller
-  Report</a>
-- <a href="seller-platform-billing-report.md" class="xref">Seller
-  Platform Billing Report</a>
-- <a href="bidder-bid-error-report-api.md" class="xref">Bidder Bid Error
-  Report API</a>
-- <a href="inventory-availability-reporting.md" class="xref">Inventory
-  Availability Reporting</a>
-- <a href="saved-report-service.md" class="xref">Saved Report
-  Service</a>
-
-
-
-
-
-
+- [Report Service](report-service.md)
+- [Completed Creatives Audits Report](completed-creatives-audits-report.md)
+- [Bidder Platform Buyer Report](bidder-platform-buyer-report.md)
+- [Bidder Billing Report API](bidder-billing-report-api.md)
+- [Platform Seller Report](platform-seller-report.md)
+- [Seller Platform Billing Report](seller-platform-billing-report.md)
+- [Bidder Bid Error Report API](bidder-bid-error-report-api.md)
+- [Inventory Availability Reporting](inventory-availability-report.md)
+- [Saved Report Service](saved-report-service.md)

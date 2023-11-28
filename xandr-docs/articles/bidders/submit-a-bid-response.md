@@ -1,31 +1,24 @@
 ---
-Title : Submit a Bid Response
-Description : For each Bid Request, the Imp Bus allows you to submit a Bid Response
-ms.date : 10/28/2023
-(see <a
-href="incoming-bid-response-from-bidders.md"
+title : Submit a Bid Response
+description : Learn how for every Bid Request, the Imp Bus allows you to submit a Bid Response, which in turn must include the auction_id_64 in the Bid Request, and the member_id of the member for each response.  
+ms.date : 11/24/2023
+
 ---
 
 
 # Submit a Bid Response
 
-
-
 For each Bid Request, the Imp Bus allows you to submit a Bid Response
-(see <a
-href="incoming-bid-response-from-bidders.md"
-class="xref" target="_blank">Bid Response</a> for more details). Each
+(see [Bid Response](incoming-bid-response-from-bidders.md) for more details). Each
 response must include the auction_id_64 included in the Bid Request, and
 the member_id of the member for each response. The segment changes will
 only take effect if the bid is selected by the publisher. Examples of
 bid responses for OpenRTB and Xandr's bidding
 protocol are shown here:
 
-
-
 **OpenRTB**
 
-``` pre
+``` 
 {
   "id": "1234567890",
   "seatbid": [
@@ -58,13 +51,9 @@ protocol are shown here:
 }
 ```
 
+**Bidding protocol**
 
-
-
-
-**Bidding Protocol**
-
-``` pre
+``` 
 {
    "bid_response":{
       "responses":[
@@ -80,18 +69,8 @@ protocol are shown here:
 }
 ```
 
-
-
 To tell the impression bus that you're not interested in bidding on that
 particular auction, you must submit a bid response with no_bid set to
-true. See <a
-href="incoming-bid-response-from-bidders.md"
-class="xref" target="_blank">Bid Response</a> for more details.
+true. See [Bid Response](incoming-bid-response-from-bidders.md) for more details.
 
-Next step: <a
-href="synchronize-your-user-ids.md"
-class="xref" target="_blank">Synchronizing User IDs</a>
-
-
-
-
+Next step: [Synchronizing User IDs](synchronize-your-user-ids.md)

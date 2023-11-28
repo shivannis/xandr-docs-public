@@ -1,6 +1,8 @@
 ---
 Title : Removing Shared Segments
 Description : ## Removing Shared Segments
+ms.custom : data-providers
+ms.date : 10/28/2023
 There are situations when a segment will need to be removed from our
 platform. Since there are complex dependencies associated with segment
 ---

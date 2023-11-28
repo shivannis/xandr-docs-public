@@ -1,6 +1,8 @@
 ---
 Title : Integrating Your Data
 Description : There are several steps to integrating your data. The typical data
+ms.custom : data-providers
+ms.date : 10/28/2023
 ---
 
 
@@ -24,16 +26,16 @@ provider integration involves the following process:
 4.  You data is then integrated. This process is determined largely by
     the type of data being integrated. See the following pages for
     details:
-    - <a href="audience-data-integrations.html"
+    - <a href="audience-data-integrations.md"
       class="xref">Behavioral/Audience Integrations</a>
-    - <a href="real-time-data-integration-instructions.html"
+    - <a href="real-time-data-integration-instructions.md"
       class="xref">Contextual/Real-Time Integrations</a>
 
 
 
-Tip: For information on Segment
+<b>Tip:</b> For information on Segment
 Creation
-see <a href="creating-and-managing-segments.html" class="xref">Creating and
+see <a href="creating-and-managing-segments.md" class="xref">Creating and
 Managing Segments</a>.
 
 

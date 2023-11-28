@@ -1,24 +1,16 @@
 ---
-Title : Click Tracking and Cache-Busting Examples for Top Ad Servers
-Description : ## Macro Definitions
-ms.date : 10/28/2023
-**Click Tracking**
-If you want to track clicks and you are hosting your creatives on one of
-the ad servers below, this page shows the appropriate locations in which
-to insert the click tracking macro in your third-party ad tags in order
-for Xandr to track clicks properly. To locate it
+title : Click Tracking and Cache-Busting Examples for Top Ad Servers
+description : Learn about the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly.
+ms.date : 11/20/2023
+
 ---
 
 
-# Click Tracking and Cache-Busting Examples for Top Ad Servers
+# Click tracking and Cache-Busting examples for top Ad servers
 
+## Macro definitions
 
-
-
-
-## Macro Definitions
-
-**Click Tracking**
+**Click tracking**
 
 If you want to track clicks and you are hosting your creatives on one of
 the ad servers below, this page shows the appropriate locations in which
@@ -26,35 +18,12 @@ to insert the click tracking macro in your third-party ad tags in order
 for Xandr to track clicks properly. To locate it
 in the samples below, search for `CLICK_URL`.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001379__entry__1" class="entry">Macro</th>
-<th id="ID-00001379__entry__2" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001379__entry__1"><code
-class="ph codeph">${CLICK_URL}</code></td>
-<td class="entry" headers="ID-00001379__entry__2">The click tracking
-URL. For example: 
-<pre id="ID-00001379__codeblock-b544058f-2cf4-444f-8605-1a91ea6dd357"
-class="pre codeblock"><code>https://xandr.com </code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001379__entry__1"><pre
-class="pre codeblock"><code>${CLICK_URL_ENC}</code></pre></td>
-<td class="entry" headers="ID-00001379__entry__2">The encoded click
-tracking URL (only necessary for some third-party ad servers). For
-example: 
-<pre id="ID-00001379__codeblock-9328bd87-cf3c-48e7-971b-a7e034081341"
-class="pre codeblock"><code>https%3A%2F%2Fxandr.com </code></pre></td>
-</tr>
-</tbody>
-</table>
+| Macro            | Description                                                                                                            |
+|------------------|------------------------------------------------------------------------------------------------------------------------|
+| `${CLICK_URL}`     | The click tracking URL. For example:  `https://xandr.com`                                                                |
+| `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example:  `https%3A%2F%2Fxandr.com` |
 
-**Cache-busting **
+**Cache-busting**
 
 The cache-buster macro ensures that a fresh call is made to the ad
 server every time the tag is called, so you’re accurately counting
@@ -66,40 +35,17 @@ appropriate locations in which to insert the cache-busting macro in your
 third-party ad tags. To locate it in the samples below, search
 for `CACHEBUSTER`.
 
+> [!NOTE]
+> All examples on this page were provided by clients or a third-party server. As a result, Xandr has no control over any changes made by those third-party servers that may cause these macros not to function. If the macro you are using is not working correctly, please contact your third-party server. If the third-party server you use is not listed here, Xandr will be unable to confirm the proper placement of these macros in their tag as the location of the tag in which you place the macro must be provided by your third-party server (Xandr only provides the click URL by filling the macro). For troubleshooting tips, see the [Click Tracking page](../monetize/click-tracking.md) in the UI.
 
+## Ad Server-Specific examples
 
-<b>Note:</b> All examples on this page were
-provided by clients or a third-party server. As a result,
-Xandr has no control over any changes made by
-those third-party servers that may cause these macros not to function.
-If the macro you are using is not working correctly, please contact your
-third-party server. If the third-party server you use is not listed
-here, Xandr will be unable to confirm the proper
-placement of these macros in their tag as the location of the tag in
-which you place the macro must be provided by your third-party server
-(Xandr only provides the click URL by filling
-the macro). For troubleshooting tips, see the <a
-href="monetize_monetize-standard/click-tracking.md"
-class="xref" target="_blank">Click Tracking page</a> in the UI.
-
-
-
-
-
-
-
-## Ad Server-Specific Examples
-
-
-
-<b>Warning:</b> The code examples noted below
-are indicative only and not necessarily up-to-date.
-
-<div class="p H3">
+> [!WARNING]
+> The code examples noted below are indicative only and not necessarily up-to-date.
 
 **AdForm**
 
-``` pre
+``` 
 <script language="javascript" src="http://track.adform.net/adfscript/?bn=123456;click=${CLICK_URL}"></script>
 <noscript>
 <a href="${CLICK_URL}http://track.adform.net/C/?bn=123456;C=0" target="_blank">
@@ -108,13 +54,9 @@ are indicative only and not necessarily up-to-date.
 </noscript>
 ```
 
-
-
-<div class="p H3">
-
 **AdGear**
 
-``` pre
+``` 
 <script type="text/javascript" language="JavaScript">
 (function() {
 ADGEAR_SOURCE_CLICKTRACKER = "${CLICK_URL}";
@@ -136,13 +78,9 @@ proto + '//d.adgear.com' + '/impressions/ext/p=' +
 </script>
 ```
 
-
-
-<div class="p H3">
-
 **AdInterax**
 
-``` pre
+``` 
 <SCRIPT>adx_U_555555="";adx_D_55555="${CLICK_URL}";adx_I_555555="";</SCRIPT>
 
 <SCRIPT
@@ -152,13 +90,9 @@ SRC="http://mi.adinterax.com/js/denvernp,atencio_300X_seren,C=XXXXX,P=XXXXX/ad2.
 P=Scott/0/0/in,ti/http://mi.adinterax.com/customer/XXXXXXX/0/300x250_FL_newart.jpg?adxq=1282775581" BORDER=0></A></NOSCRIPT>
 ```
 
-
-
-<div class="p H3">
-
 **Adition**
 
-``` pre
+``` 
 <!-- BEGIN ADITIONTAG -->
 <script type="text/javascript" src="http://imagesrv.adition.com/js/adition.js"></script>
 <script type="text/javascript" src="http://ad1.adfarm1.adition.com/js?wp_id=12345&kid=12345&clickurl=${CLICK_URL}"></script>
@@ -167,59 +101,42 @@ P=Scott/0/0/in,ti/http://mi.adinterax.com/customer/XXXXXXX/0/300x250_FL_newart.j
 <!-- END ADITIONTAG -->
 ```
 
-
-
-<div class="p H3">
-
 **AdShuffle**
 
-``` pre
+``` 
 <iframe allowTransparency="true" frameborder="0" scrolling="no"
 marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" width="728"
 height="90"
 src="http://this.content.served.by.adshuffle.com/p/kl/01/234/r/56/7/8/abdef/ghijkl/view.md?${CACHEBUSTER}&ASTPCT=${CLICK_URL}"></iframe>
 ```
 
-
-
-<div class="p H3">
-
 **Adtech**
 
-``` pre
+``` 
 <!--IFRAME Tag (General Redirect) // Page: 728x90 //  -->
 <IFRAME WIDTH="728" HEIGHT="90" SCROLLING="No" FRAMEBORDER="0" MARGINHEIGHT="0" MARGINWIDTH="0" SRC="http://adserver.adtech.de/adiframe|3.0|1234|1234|0|1234|ADTECH;AdId=1234;BnId=-1;;target=_blank;misc=[timestamp];rdclick=${CLICK_URL}"><script language="javascript" src="http://adserver.adtech.de/addyn|3.0|1234|1234|0|1234|ADTECH;AdId=1234;BnId=-1;;loc=700;target=_blank;misc=[timestamp];rdclick=${CLICK_URL}"></script><noscript><a href="http://adserver.adtech.de/adlink|3.0|1234|1234|0|1234|ADTECH;AdId=9479763;BnId=-1;;loc=300;misc=[timestamp]" target="_blank;AdId=9479763;BnId=-1;"><img src="media/adserv|3.0|1234|1234|0|1234|ADTECH;loc=300;misc=[timestamp]" border="0" width="728" height="90"></a></noscript></IFRAME>
 <!-- End of IFRAME Tag -->
 ```
 
-
-
 **Xandr**
-
 
 If you are using a Xandr placement tag as a
 creative, please use this format:
 
-``` pre
+``` 
 <!-- BEGIN JS TAG - 728x90 < - DO NOT MODIFY --> <SCRIPT SRC="http://ib..com/ttj?id=1812103&cb=${CACHEBUSTER}&pubclick=${CLICK_URL_ENC}" TYPE="text/javascript"></SCRIPT>
 <!-- END TAG -->
 ```
 
-
-
-
 **Atlas (New)**
 
-``` pre
+``` 
 <script src='http://ad.atdmt.com/i/a.js;p=11002201227900;cache=${CACHEBUSTER}?click=${CLICK_URL_ENC}'></script><noscript><iframe frameborder='0' scrolling='no' marginheight='0' marginwidth='0' topmargin='0' leftmargin='0' allowtransparency='true' height='250' width='300' src='http://ad.atdmt.com/i/a.md;p=11002201227900;cache=${CACHEBUSTER}?click=${CLICK_URL_ENC}'></iframe></noscript>
 ```
 
-
-
-
 **Atlas**
 
-``` pre
+``` 
 <iframe src="http://view.atdmt.com/CNT/iview/1234567890/direct;wi.160;hi.600/01${CACHEBUSTER}?click=${CLICK_URL}" frameborder="0" scrolling="no"
 marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="160" height="600">
 <script language="JavaScript" type="text/javascript"> document.write('<a href="${CLICK_URL}http://clk.atdmt.com/CNT/go/1234567890/direct;wi.160;hi.600/01/"
@@ -228,32 +145,23 @@ target="_blank"><img src="media/${CACHEBUSTER}"/></a>');
 src="http://view.atdmt.com/CNT/view/1234567890/direct;wi.160;hi.600/01/${CACHEBUSTER}" /></a></noscript></iframe>
 ```
 
-
-
-
 **DoubleClick**
 
-``` pre
+``` 
 <script language="JavaScript" src="http://ad.doubleclick.net/adj/1234.567.890/;net=123456;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?"
 type="text/javascript"></script><noscript><a href="${CLICK_URL}http://ad.doubleclick.net/jump/1234.567.890/;net=123456;sz=728x90;ord=${CACHEBUSTER}?"
 target="_blank"><img src="media/;net=123456;sz=728x90;ord=${CACHEBUSTER}?" width="728" height="90" border="0"
 alt=""></a></noscript>
 ```
 
-
-
-
-
-
-
-<b>Note:</b> If you need to pass an encoded
-URL in a DoubleClick tag, please use the `{CLICK_URL_ENC}` macro.
+> [!NOTE]
+> If you need to pass an encoded URL in a DoubleClick tag, please use the `{CLICK_URL_ENC}` macro.
 
 
 
 **DoubleClick (New Ins Tag)**
 
-``` pre
+``` 
 <ins class='dcmads' style='display:inline-block;width:728px;height:90px'
    data-dcm-placement='N3241.163472.EXAMPLEAD/B8852666.112976410'
    data-dcm-rendering-mode='script'
@@ -263,20 +171,10 @@ URL in a DoubleClick tag, please use the `{CLICK_URL_ENC}` macro.
 </ins>
 ```
 
-
-
-
-
-
-
-<b>Note:</b> The ins type tag does not require
-the use of Cachebuster macro, as DCM will always fill this
-automatically.
-
-
+> [!NOTE]
+> The ins type tag does not require the use of Cachebuster macro, as DCM will always fill this automatically.
 
 **DoubleVerify**
-
 
 DoubleVerify's tags will wrap around your adserver's tag. So, if you're
 using DoubleVerify with Atlas, the tag would look like the following
@@ -285,7 +183,7 @@ variable. `This.altrc` should be altered to contain a clickable PSA,
 otherwise the creative will be rejected. Consult with your DoubleVerify
 rep for more information on how to implement the alternate PSA.
 
-``` pre
+``` 
 <script language="javascript" type="text/javascript">
 new function() {
 this.rand = Math.floor((Math.random() + "") * 1000000000000);
@@ -322,33 +220,21 @@ document.write('<scr' + 'ipt src=' + src + '></scr' + 'ipt>');
 </script>
 ```
 
-
-
-
-
 **EyeReturn**
 
-``` pre
+``` 
 <script type="text/javascript" src="http://voken.eyereturn.com/?144857&click=${CLICK_URL}&params=${CACHEBUSTER}"></script>
 ```
 
-
-
-
-
 **Fetchback**
 
-``` pre
+``` 
 <script language='javascript' type='text/javascript' src='http://imp.fetchback.com/serve/fb/adtag.js?tid=47476&type=widesky&clicktrack=${CLICK_URL_ENC}'></script>
 ```
 
-
-
-
-
 **Flashtalking**
 
-``` pre
+``` 
 <script language="Javascript1.1" type="text/javascript">
 var ftClick = "${CLICK_URL}";
 var ftX = "";
@@ -369,25 +255,16 @@ ftTag += '">' + ftBuildTag2 + 'script>'; document.write(ftTag);
 </noscript>
 ```
 
+**Integral Ad science (formerly AdSafe)**
 
-
-**Integral Ad Science (formerly AdSafe)**
-
-
-
-<b>Note:</b> Please remember to include the
-IS_PREVIEW macro at the end of the
-<a href="http://fw.adsafeprotected.com/" class="xref"
-target="_blank">fw.adsafeprotected.com</a> URLs. Otherwise, the creative
-will not preview correctly in our Impression Bus and will be rejected in
-the audit process.
-
-``` pre
+> [!NOTE]
+> Please remember to include the IS_PREVIEW macro at the end of the [fw.adsafeprotected.com](http://fw.adsafeprotected.com/) URLs. Otherwise, the creative will not preview correctly in our Impression Bus and will be rejected in the audit process.
+``` 
 <script language="JavaScript" type="text/javascript" src="http://fw.adsafeprotected.com/rjss/at/53729/573929/CAT/jview/101010101/direct/01/${CACHEBUSTER}?click=${CLICK_URL}&adsafe_preview=${IS_PREVIEW}">
 </script><noscript><a href="${CLICK_URL}http://clk.atdmt.com/CAT/go/101010101/direct/01/" target="_blank"><img border="0" src="http://fw.adsafeprotected.com/rfw/at/53729/573930/CAT/view/101010101/direct/01/${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}" /></a></noscript>
 ```
 
-``` pre
+``` 
 <IFRAME SRC="http://fw.adsafeprotected.com/rjsi/dc/54321/123456/adi/N1068.151790.ABCDE/B6797568.72;sz=160x600;click=${CLICK_URL};ord=${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}" WIDTH=160 HEIGHT=600 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
 <SCRIPT language='JavaScript1.1' SRC="http://fw.adsafeprotected.com/rjss/dc/54321/455394/adj/N1068.151790.ABCDE/B6797568.72;abr=!ie sz=160x600;click=${CLICK_URL};ord=${CACHEBUSTER}?adsafe_preview=${IS_PREVIEW}">
 </SCRIPT>
@@ -398,13 +275,9 @@ the audit process.
 </IFRAME>
 ```
 
+**Integral Ad science (AdSafe) tags in FlashTalking format:**
 
-
-
-
-**Integral Ad Science (AdSafe) tags in FlashTalking format:**
-
-``` pre
+``` 
 <noscript>
 <a href="${CLICK_URL}http://example.com/click/5/25684;564938;0;209;0/?ft_width=300&ft_height=250&url=3747563" target="_blank">
 <img border="0" src="http://fw.adsafeprotected.com/rfw/example.com/16786/959163/imp/5/25684;564938;205;gif;Client;300x250Myblocking/?adsafe_preview=${IS_PREVIEW}"></a>
@@ -430,37 +303,25 @@ document.write(ftTag);
 </script>
 ```
 
+**Integral Ad science in MediaMind format:**
 
-
-
-
-**Integral Ad Science in MediaMind format:**
-
-``` pre
+``` 
 <script src="http://fw.adsafeprotected.com/rjss/bs.serving-sys.com/20286/1398936/BurstingPipe/adServer.bs?cn=rsb&c=12&pli=123456&PluID=0&w=120&h=600&ord=${CACHEBUSTER}&ucm=true&ncu=$$${CLICK_URL_ENC}$$?adsafe_preview=${IS_PREVIEW}"></script>
 <noscript><a href="${CLICK_URL}http://bs.serving-sys.com/BurstingPipe/adServer.bs%3Fcn%3Dbrd%26FlightID%3D123456%26Page%3D%26PluID%3D0%26Pos%3D1234" target="_blank"><img src="media/adServer.bs?cn=bsr&FlightID=7872095&Page=&PluID=0&Pos=1756162582&adsafe_preview=${IS_PREVIEW}" border=0 width=120 height=600></a></noscript>
 ```
 
-
-
-
-
 **Sizmek (formerly MediaMind)**
 
-``` pre
+``` 
 <script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=12&pli=1234567&PluID=0&w=728&h=90&ord=${CACHEBUSTER}&ifrm=-1&ucm=true&ncu=$$${CLICK_URL_ENC}$$">
 </script><noscript><a href="${CLICK_URL}http%3A//bs.serving-sys.com/BurstingPipe/BannerRedirect.asp%3FFlightID%3D1234567%26Page%3D%26PluID%3D0%26Pos%3D1234"
 target="_blank"><img src="media/BannerSource.asp?FlightID=1234567&Page=&PluID=0&Pos=1234" border=0 width=728
 height=90></a></noscript>
 ```
 
-
-
-
-
 **MediaPlex**
 
-``` pre
+``` 
 <script type="text/javascript" src="http://altfarm.mediaplex.com/ad/js/12345-678901-23456-7?mpt=${CACHEBUSTER}&mpvc=${CLICK_URL_ENC}"></script>
 <noscript><a href="${CLICK_URL}http://altfarm.mediaplex.com/ad/nc/12345-678901-23456-7?mpt=${CACHEBUSTER}">
 <img src="media/12345-678901-23456-7?mpt=${CACHEBUSTER}" alt="Click Here" border="0"></a></noscript>
@@ -468,25 +329,17 @@ height=90></a></noscript>
 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR="#000000"></IFRAME>
 ```
 
+**Open Ad stream (24/7)**
 
-
-
-
-**Open Ad Stream (24/7)**
-
-``` pre
+``` 
 <script LANGUAGE="JavaScript1.1"
 SRC="http://oasn04.247realmedia.com/RealMedia/ads/adstream_jx.ads/XXXXX/XXXXX/XXXXX/XXXXX/300/1${CACHEBUSTER}@x90?${CLICK_URL}">
 </script>
 ```
 
+**PointRoll**
 
-
-
-
-PointRoll
-
-``` pre
+```
 <script type="text/javascript">
 function pr_swfver(){
 var osf,osfd,i,axo=1,v=0,nv=navigator;
@@ -514,17 +367,12 @@ document.write("<scr"+"ipt type='text/javascript' src='"+prHost+pr_s+"'></scr"+"
 </script>
 ```
 
+**Project sunblock**
 
+> [!NOTE]
+>  When previewing Project Sunblock tags, please ensure you deselect Serve in iFrame as this will stop the tags previewing in our UI and you will be unable to test click-tracking.
 
-**Project Sunblock**
-
-
-
-<b>Note:</b> When previewing Project Sunblock
-tags, please ensure you deselect Serve in iFrame as this will stop the
-tags previewing in our UI and you will be unable to test click-tracking.
-
-``` pre
+``` 
 <script type='text/javascript'>
     var _sblq = _sblq || [];
     (function() {
@@ -540,104 +388,59 @@ tags previewing in our UI and you will be unable to test click-tracking.
 <noscript><img src='//api.sblk.io/request.gif?campaign_id=000&ad_id=0000' width='1' height='1'></noscript>
 ```
 
-
-
 **SmartAdServer**
 
-``` pre
+``` 
 <SCRIPT LANGUAGE="JavaScript1.1" SRC="http://ww856.smartadserver.com/call/adj/306890/2591652/CLIENT.campaign/600x300/${CACHEBUSTER}/no?${CLICK_URL}"></SCRIPT>
 <NOSCRIPT><a href="${CLICK_URL}http://ww856.smartadserver.com/call/jumpi/306343/2591652/CLIENT.campaign/600x300/${CACHEBUSTER}/no?" target="_blank">
 <img src="media/no?" border="0"></a></NOSCRIPT>
 ```
 
+**Trade doubler**
 
-
-
-
-**Trade Doubler**
-
-``` pre
+``` 
 <script type="text/javascript">
 var uri = 'http://impde.tradedoubler.com/imp?type(iframe)g(18906306)a(1838453)preurl(${CLICK_URL})' + new String (Math.random()).substring (2, 11);
 document.write('<iframe src="'+uri +'" width="160" height="600" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>');
 </script>
 ```
 
-
-
-
-
 **Traffiq**
 
-``` pre
+``` 
 <iframe src="http://ads.traffiq.com/ad.imp?pid=1234&oid=5678&rand=${CACHEBUSTER}/?pclk=${CLICK_URL}" width="728" height="90"
 frameborder="0" marginheight="0" marginwidth="0" scrolling="no" topmargin="0" leftmargin="0"> </iframe>
 ```
 
-
-
-
-
 **Weborama**
 
-``` pre
+``` 
 <a href="${CLICK_URL}http://gae.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=cl&a.si=54&a.te=56&a.ra=__RANDOM__&a.im=1&g.lu=" target="_blank">
 <img src="media/dispatch.fcgi?a.A=im&a.si=54&a.te=56&a.he=600&a.wi=160&a.ra=__RANDOM__&a.hr=R" width="160" height="600"></a>
 ```
 
+**Yield manager**
 
-
-
-
-**Yield Manager**
-
-``` pre
+``` 
 <IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=300 HEIGHT=250 SRC="http://ad.yieldmanager.com/st?ad_type=iframe&ad_size=300x250&section=XXXXXXX&pub_redirect_unencoded=1&pub_redirect=${CLICK_URL}"></IFRAME>
 ```
 
-
-
-
-
 **Zedo**
 
-``` pre
+``` 
 <script language="JavaScript" src="http://d7.zedo.com/jsc/d3/fl.js?n=809&c=1839/1740&s=704&d=14&w=728&h=90&l=${CLICK_URL}&z=${CACHEBUSTER}"></script> <noscript><a href="http://yads.zedo.com/ads2/r?n=809;c=1839/1740;s=704;x=3584;u=j;z=${CACHEBUSTER}" target="_blank"><img
 
  border="0" width="728" height="90" src="http://yads.zedo.com/ads2/x?n=809;c=1839/1740;s=704;x=3584;u=j;z=${CACHEBUSTER}" alt="Click here"></a> </noscript>
 ```
 
+**ViralGains odyssey**
 
-
-
-
-**ViralGains Odyssey**
-
-``` pre
+``` 
 <iframe src = 'https://odc-wsb.viralgains.com?lineItemId=1234abcd&vendorId=1234abcd&creativeId=1234abcd&cachebuster=${VG_CACHEBUSTER}&clickURLEnc=${CLICK_URL_ENC}' width='xxx' height='yyy' frameborder='0' marginheight='0' marginwidth='0' target='_blank' scrolling='no'></iframe>
 ```
 
-
-
-
-
-
-
-<b>Note:</b> If the ad server you use is not
-listed here and you already know the correct placement for the macros in
-your tag, <a href="http://support.appnexus.com/" class="xref"
-target="_blank">contact us</a> to have an example for that ad server
-added to the list. Ensure that you provide:
-
-- The name of the ad server the tags appear on.
-- The exact parameters used to traffic the click tracking and cache
-  busting macros (if you don't know which parameters are used, contact
-  your client to obtain them).
-
-
-
-
-
-
-
-
+> [!NOTE]
+> If the ad server you use is not listed here and you already know the correct placement for the macros in your tag, [contact us](https://help.appnexus.com/) to have an example for that ad server added to the list. Ensure that you provide:
+>
+> - The name of the ad server the tags appear on.
+> - The exact parameters used to traffic the click tracking and cache busting macros (if you don't know which parameters are used, contact your client to obtain them).

@@ -1,183 +1,39 @@
 ---
-Title : Region Service
-Description : The read-only Region Service allows you to see information about the
-ms.date : 10/28/2023
-regions and states registered in the Xandr
-system, including the country to which each region/state belongs. You
+title: Bidders - Region Service
+description: In this article, find information about the Region Service and the fields associated with it along with examples.
+ms.date: 10/28/2023
 ---
 
+# Bidders - Region service
 
-# Region Service
-
-
-
-The read-only Region Service allows you to see information about the
-regions and states registered in the Xandr
-system, including the country to which each region/state belongs. You
-can use this service to retrieve region IDs for targeting in <a
-href="legacy-bidder-profile-service.md"
-class="xref" target="_blank">profiles.</a>
-
-
+The read-only Region Service allows you to see information about the regions and states registered in the Xandr system, including the country to which each region/state belongs. You can use this service to retrieve region IDs for targeting in [profiles](legacy-bidder-profile-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008f85__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00008f85__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00008f85__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__2"><a
-href="https://api.adnxs.com/region" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/region</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__3">View
-all regions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__2"><a
-href="https://api.adnxs.com/region?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/region?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__3">View
-a specific region.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__2"><a
-href="https://api.adnxs.com/region?name=NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/region?name=NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__3">View
-a specific region.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__2"><a
-href="https://api.adnxs.com/region?code=CODE" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/region?code=CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__3">View
-a specific region.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__2"><a
-href="https://api.adnxs.com/region/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">adnxs.com/region/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| GET | `https://api.adnxs.com/region` | View all regions. |
+| GET | `https://api.adnxs.com/region?id=ID` | View a specific region. |
+| GET | `https://api.adnxs.com/region?name=NAME` | View a specific region. |
+| GET | `https://api.adnxs.com/region?code=CODE` | View a specific region. |
+| GET | `https://api.adnxs.com/region/meta` | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00008f85__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00008f85__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00008f85__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-ISO or FIPS code for the region.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-ID of the country to which the region belongs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-name of the country to which the region belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country names.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country to which the region
-belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country codes.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-ID of the region.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00008f85__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00008f85__entry__21">The
-name of the region.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `code` | enum | The ISO or FIPS code for the region. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_id` | int | The ID of the country to which the region belongs. |
+| `country_name` | string | The name of the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `id` | int | The ID of the region. |
+| `name` | string | The name of the region. |
 
 ## Examples
 
-**View all regions in Germany**
+### View all regions in Germany
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/region?country_code=DE'
 {
     "response": {
@@ -322,9 +178,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/region?country_code=DE'
 }
 ```
 
-**View all regions in Germany and France**
+### View all regions in Germany and France
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/region?country_code=DE,FR'
 {
     "response": {
@@ -399,9 +255,9 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/region?country_code=DE,FR'
 }
 ```
 
-**View all regions that contain "California" in their names**
+### View all regions that contain "California" in their names
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/region?like_name=California'
 {
     "response": {
@@ -438,9 +294,3 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/region?like_name=California'
     }
 }
 ```
-
-
-
-
-
-

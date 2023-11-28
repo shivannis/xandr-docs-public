@@ -1,6 +1,8 @@
 ---
 Title : Data Cost Calculation Mechanics
 Description : A buyer will only be charged for a segment if that segment is used in a
+ms.custom : data-providers
+ms.date : 10/28/2023
 winning bid for an impression. Whether the buyer is charged for the
 ---
 
@@ -25,7 +27,7 @@ many other factors besides segment targeting influence the decision on
 whether a bid is made on an impression in the auction such as inventory
 or geo targeting.
 
-<img src="images/data-providers/2.png" class="image" height="150" />
+![Data Cost Calculation](media/data-cost-calculation.png)
 
 Key steps in assessing data cost:
 
@@ -35,25 +37,24 @@ Key steps in assessing data cost:
     segments, the buyer's targeted segments and
     boolean *AND/OR* decisioning logic the buyer has selected are all
     determining factors.
-    (see <a href="data-cost-calculation-mechanics.html#ID-00000b8e__1"
+    (see <a href="data-cost-calculation-mechanics.md#ID-00000b8e__1"
     class="xref">Segment to use in the auction are selected</a> below)
 3.  The auction is run and the impression is won by the campaign
-    (see <a href="data-cost-calculation-mechanics.html#ID-00000b8e__2"
+    (see <a href="data-cost-calculation-mechanics.md#ID-00000b8e__2"
     class="xref">Win the auction</a> below)
 4.  Data costs for used segments are determined based on a pricing
     methodologies
-    (see <a href="data-cost-calculation-mechanics.html#ID-00000b8e__3"
+    (see <a href="data-cost-calculation-mechanics.md#ID-00000b8e__3"
     class="xref">Pricing methodologies</a> below)
 
 The examples below illustrate in more detail how this process works.
 
-<div id="ID-00000b8e__1" >
 
 ## Segment to use in the auction are selected
 
 
 
-Note: In the examples below, a green
+<b>Note:</b> In the examples below, a green
 box indicates a relevant segment for a single impression, a red box
 indicates that it is not a relevant segment for a single impression.
 
@@ -71,8 +72,7 @@ the auction) determines whether the demographic segment is relevant. For
 campaigns targeting one segment if a segment is relevant, then the
 segment will be used to bid in the auction.
 
-<img src="images/data-providers/3.png" class="image" width="350"
-height="114" />
+![Simplet Segment Targeted](media/simple-segment-targeted.png)
 
 
 
@@ -94,19 +94,20 @@ whether the ad request matches the required targeting criteria.
 If the ad request is relevant in ALL targeted segments, a bid will be
 made.
 
-<img src="images/data-providers/4.png" class="image" width="350" />
+![Ad Request](media/ad-request-a.png)
 
 If the ad request is not relevant to one or many of the targeted
 segments, then no bid will be made.
 
-<img src="images/data-providers/5.png" class="image" width="350" /><img src="images/data-providers/6.png" class="image" width="350" /> 
- 
+![Ad Request B](media/ad-request-b.png)
+
+![Ad Request C](media/ad-request-c.png)
 
 
 
-<div id="ID-00000b8e__note_nnd_hwv_kwb" 
 
-Note: Since the ad request is required
+
+<b>Note:</b> Since the ad request is required
 to be relevant for ALL targeted segments using the AND boolean, the
 buyer will be charged for the use of ALL segments if the impression is
 won.
@@ -120,21 +121,25 @@ won.
 If the ad request is relevant to ANY segment, a bid will be made using
 the relevant segment. 
 
-<img src="images/data-providers/7.png" class="image" width="350"
-height="130" /><img src="images/data-providers/8.png" class="image" width="350"
-height="130" />
+![Ad Request D](media/ad-request-d.png)
+
+![Ad Request E](media/ad-request-e.png)
+
+![Ad Request F](media/ad-request-f.png)
+
+
+
 
 If the ad request is relevant to more than one segment (overlaps),
 Xandr will use the lowest priced segment will be
 used to bid on the auction. 
 
-<img src="images/data-providers/9.png" class="image" width="350"
-height="138" />
+
 
 If the ad request is NOT relevant to any targeted segment, then no bid
 will be made.
 
-<img src="images/data-providers/10.png" class="image" width="350" />
+![Ad Request G](media/ad-request-g.png)
 
 
 
@@ -152,8 +157,7 @@ the campaign bids in the auction or not. 
 
 **AND Targeting using Segment Groups**
 
-<img src="images/data-providers/11.png" class="image" width="350"
-height="160" />
+![Multiple groups of segments targeted A](media/multiple-groups-of-segments-targeted-a.png)
 
 When using the AND boolean against segment groups, the boolean within
 each group will be set to OR. OR pricing logic described in the section
@@ -164,8 +168,7 @@ used to bid on the auction.
 
 **When the segment groups have been ORed**
 
-<img src="images/data-providers/12.png" class="image" width="350"
-height="191" />
+![Multiple groups of segments targeted B](media/multiple-groups-of-segments-targeted-b.png)
 
 When using the OR boolean against segment groups, the boolean within
 each group will be set to AND. As such, each segment group will be
@@ -187,7 +190,6 @@ segments within one segment group will be used to bid on the auction.
 
 
 
-<div id="ID-00000b8e__2" >
 
 ## Win the auction
 
@@ -209,7 +211,6 @@ segment.
 
 
 
-<div id="ID-00000b8e__3" >
 
 ## Pricing Methodologies
 
@@ -222,7 +223,7 @@ changed through amending that agreement.
 
 
 
-Note: The price set for each category
+<b>Note:</b> The price set for each category
 is mutually determined by you and Xandr by rate
 cards that you have submitted and that Xandr
 have accepted. Xandr does not set prices without
@@ -242,14 +243,13 @@ segment across all publishers.</td>
 </tr>
 <tr class="even row">
 <td class="entry">Diagram</td>
-<td class="entry"><p><img src="images/data-providers/13.jpeg"
+<td class="entry"><p> ![Pricing Methodology A](media/pricing-methodology-a.png)
 class="image" height="250" /></p></td>
 </tr>
 <tr class="odd row">
 <td class="entry">Example</td>
 <td class="entry">Final Price: $1.50 CPM
-<p><img src="images/data-providers/14.jpeg" class="image"
-height="250" /></p>
+<p>![Pricing Methodology B](media/pricing-methodology-b.png)</p>
 <ul>
 <li>Four segments were used to win the impression and the buyer will be
 charged for the usage of all segments</li>
@@ -272,14 +272,12 @@ categories.</td>
 </tr>
 <tr class="even row">
 <td class="entry">Diagram</td>
-<td class="entry"><p><img src="images/data-providers/15.jpeg"
-class="image" height="250" /></p></td>
+<td class="entry"><p>![Pricing Methodology C](media/pricing-methodology-c.png)</p></td>
 </tr>
 <tr class="odd row">
 <td class="entry">Example</td>
 <td class="entry">Final Price: $1.25 CPM
-<p><img src="images/data-providers/16.jpeg" class="image"
-height="250" /></p>
+<p>![Pricing Methodology D](media/pricing-methodology-d.png)</p>
 <ul>
 <li>Seven segments were used to win the impression and the buyer will be
 charged for the usage of all segments</li>
@@ -304,14 +302,12 @@ CPM category.</td>
 </tr>
 <tr class="even row">
 <td class="entry">Diagram</td>
-<td class="entry"><p><img src="images/data-providers/17.jpeg"
-class="image" height="250" /></p></td>
+<td class="entry"><p>![Pricing Methodology E](media/pricing-methodology-e.png)</p></td>
 </tr>
 <tr class="odd row">
 <td class="entry">Example</td>
 <td class="entry">Final Price: $0.40 CPM
-<p><img src="images/data-providers/18.jpeg" class="image"
-height="250" /></p>
+<p>[Pricing Methodology F](media/pricing-methodology-f.png)</p>
 <ul>
 <li>Seven segments were used to win the impression and the buyer will be
 charged for the usage of all segments</li>

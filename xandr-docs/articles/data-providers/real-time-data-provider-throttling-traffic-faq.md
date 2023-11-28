@@ -1,8 +1,10 @@
 ---
 Title : Real Time Data Provider Throttling Traffic FAQ
 Description : ## How should I set up my bidder profile?
+ms.custom : data-providers
+ms.date : 10/28/2023
 There's no single right way to set up your bidder profile (<a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/legacy-bidder-profile-service.html"
+href="xandr-bidders/legacy-bidder-profile-service.md"
 ---
 
 
@@ -17,7 +19,7 @@ href="https://docs.xandr.com/bundle/xandr-bidders/page/legacy-bidder-profile-ser
 
 
 There's no single right way to set up your bidder profile (<a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/legacy-bidder-profile-service.html"
+href="xandr-bidders/legacy-bidder-profile-service.md"
 class="xref" target="_blank">Legacy Bidder Profile Service</a>), but
 please see below for best practices about the fields to use for
 filtering:
@@ -49,7 +51,7 @@ filtering:
       "100","height": "200"}\]
 - **Filtering by domain list**
   - Include or exclude lists of domains. These are created using the <a
-    href="https://docs.xandr.com/bundle/xandr-bidders/page/domain-list-service.html"
+    href="xandr-bidders/domain-list-service.md"
     class="xref" target="_blank">Domain List Service</a>.
     - "domain_list_target":\[{"id":1}, {"id":2}\]
     - "domain_list_action":"include"
@@ -119,7 +121,7 @@ filtering:
 ## How can I find a certain seller's member ID?
 
 You can get all publicly available seller member IDs through the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/platform-member-service.html"
+href="xandr-bidders/platform-member-service.md"
 class="xref" target="_blank">Platform Member Service</a>.
 
 
@@ -130,7 +132,7 @@ class="xref" target="_blank">Platform Member Service</a>.
 
 You can update your bidder profile by making a PUT call to the bidder
 profile service <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/legacy-bidder-profile-service.html"
+href="xandr-bidders/legacy-bidder-profile-service.md"
 class="xref" target="_blank">Legacy Bidder Profile Service</a>. The put
 call must include only: 1) the ID of the profile, and 2) the field that
 you want to change. You must include the value that you'd like the
@@ -218,7 +220,7 @@ timeout rate dips below 90% (when we will reengage dynamic throttling).
 
 The best way to proceed is to exclude undesirable supply types through
 the "supply_type_action" and "supply_type_targets" parameters through <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/legacy-bidder-profile-service.html"
+href="xandr-bidders/legacy-bidder-profile-service.md"
 class="xref" target="_blank">Legacy Bidder Profile Service</a>. Since
 there is supply (mostly "web") that is of unmarked supply type by
 including supply types you will be missing on this unmarked supply.

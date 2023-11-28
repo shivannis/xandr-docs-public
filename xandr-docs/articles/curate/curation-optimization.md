@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Curation Optimization
+title: Curation Optimization
 description: In this article, learn about the Curation optimization process in detail.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Curation optimization
+# Curation optimization
 
 > [!NOTE]
 > The Curation Optimization feature will roll out in phases through 2023. You will receive a notification when your account is enabled. Contact your Xandr Account Representative for any queries.

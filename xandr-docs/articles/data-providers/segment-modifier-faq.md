@@ -1,6 +1,8 @@
 ---
 Title : Segment Modifier FAQ
 Description : Watch this space for answers to frequently asked questions about Segment
+ms.custom : data-providers
+ms.date : 10/28/2023
 Modifier.
 ---
 
@@ -73,10 +75,10 @@ unrelated to a segment).
 
 
 - <a
-  href="https://docs.xandr.com/bundle/data-providers/page/segment-modifier.html"
+  href="segment-modifier.md"
   class="xref" target="_blank">Segment Modifier</a>
 - <a
-  href="https://docs.xandr.com/bundle/data-providers/page/segment-modifier-data-provider-integration.html"
+  href="segment-modifier-data-provider-integration.md"
   class="xref" target="_blank">Segment Modifier Data Provider
   Integration</a>
 

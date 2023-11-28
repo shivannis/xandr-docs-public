@@ -1,10 +1,10 @@
 ---
-title: Customize your Seller Profile
+title: Microsoft Curate - Customize your Seller Profile
 description: This article provides instructions to customize the seller profile.
 ms.date: 11/10/2023
 ---
 
-# Customize your seller profile
+# Microsoft Curate - Customize your seller profile
 
 On the **Partner Center** screen, you can edit the profile information that displays to buyers on your **Partner Details** page.
 

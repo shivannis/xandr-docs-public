@@ -1,41 +1,26 @@
 ---
-Title : Quick Start Creative Buying Guide
-Description : Here is a quick guide to help get you, as an
-ms.date : 10/28/2023
-Xandr bidder customer, up-and-running with
-creatives.
+title: Quick Start Creative Buying Guide
+description: In this article, find information on getting a Xandr bidder customer started with creatives.
+ms.date: 10/28/2023
 ---
 
+# Quick start creative buying guide
 
-# Quick Start Creative Buying Guide
+Here is a quick guide to help get you, as an Xandr bidder customer, up-and-running with creatives.
 
+## Audit criteria
 
+You will greatly increase the publishers you can reach if you have your creatives audited. Read the Creative Standards page in the UI (customer login required) to make sure your creatives are audited and ready to serve.
 
-Here is a quick guide to help get you, as an
-Xandr bidder customer, up-and-running with
-creatives.
+## Set up creatives
 
+The way in which you set up creatives will depend on the type of creative you're working with.
 
+### Third-party creatives
 
-**Audit Criteria**
+#### HTML URL
 
-You will greatly increase the publishers you can reach if you have your
-creatives audited. Read the Creative Standards page in the UI (customer
-login required) to make sure your creatives are audited and ready to
-serve.
-
-**Set Up Creatives**
-
-The way in which you set up creatives will depend on the type of
-creative you're working with.
-
-**Third-Party Creatives**
-
-
-
-HTML URL
-
-``` pre
+```
 { "creative":{
         "media_url":"[3RD_PARTY_HTML_URL]",
         "width":"980",
@@ -46,13 +31,9 @@ HTML URL
 }
 ```
 
+#### JavaScript URL
 
-
-
-
-JavaScript URL
-
-``` pre
+```
 { "creative": {
         "width": 320,
         "height": 50,
@@ -63,15 +44,11 @@ JavaScript URL
 }
 ```
 
+### Third-party tag creatives
 
+#### HTML
 
-Third-Party Tag Creatives
-
-
-
-HTML
-
-``` pre
+```
 { "creative": {
         "content": “[HTML_CREATIVE_CODE]",
         "width": "160",
@@ -82,14 +59,9 @@ HTML
 }
 ```
 
+#### JavaScript
 
-
-
-
-  
-JavaScript
-
-``` pre
+```
 { "creative": {
         "content":”[JS_CREATIVE_CODE]",
         "width": "728",
@@ -100,17 +72,11 @@ JavaScript
 }
 ```
 
+### Dynamic creatives
 
+For details on dynamic creatives, see [Submit Auditable Dynamic Creatives](submit-auditable-dynamic-creatives.md).
 
-Dynamic Creatives
-
-
-
-For details on dynamic creatives, see <a
-href="submit-auditable-dynamic-creatives.md"
-class="xref" target="_blank">Submit Auditable Dynamic Creatives</a>.
-
-``` pre
+```
 {"creative": {
         "content": "<script type='text/javascript' language='javascript'>
         if (${IS_PREVIEW}){
@@ -125,15 +91,11 @@ class="xref" target="_blank">Submit Auditable Dynamic Creatives</a>.
 }
 ```
 
+### Video
 
+#### In-stream
 
-Video
-
-
-
-In-stream
-
-``` pre
+```
 { "creative": {
         "width": "1280",
         "height": "720",
@@ -154,9 +116,9 @@ In-stream
 }
 ```
 
-Native
+#### Native
 
-``` pre
+```
 {
     "creative": {
         "brand_id": 1,
@@ -197,20 +159,15 @@ Native
 }
 ```
 
+### Native video
 
-
-Native Video
-
-In order to set up a native video creative, you must first register a
-video creative. You will then use the creative id from the video
+In order to set up a native video creative, you must first register a video creative. You will then use the creative id from the video
 creative in the "video_assets.video_creative_id" field in the native
 creative.
 
+#### Video registration
 
-
-**Video Registration:**
-
-``` pre
+```
 { "creative": {
         "width": "1280",
         "height": "720",
@@ -231,16 +188,11 @@ creative.
 }
 ```
 
+After POSTing the above video creative, you will use that creative id in the "video_assets.video_creative_id" field.
 
+#### Native video registration
 
-After POSTing the above video creative, you will use that creative id in
-the "video_assets.video_creative_id" field.
-
-
-
-**Native Video Registration:**
-
-``` pre
+```
 {
     "creative": {
         "brand_id": 1,
@@ -275,15 +227,11 @@ the "video_assets.video_creative_id" field.
 }
 ```
 
+### Audio
 
+#### Use template ID 38745
 
-Audio
-
-
-
-Use template ID 38745
-
-``` pre
+```
 {
     "creative": {
         "media_url": "[AUDIO_URL_XML_FILE]",
@@ -318,38 +266,19 @@ Use template ID 38745
 }
 ```
 
-
-
-Macros
+## Macros
 
 - You can use macros in the following fields:
-  - media_url
-  - media_url_secure
-  - content
-  - content_secure
-  - pixel_url 
-- Macros don’t work inside a creative file. 
-- Nested macros (a macro within another macro) do not work with
-  creatives.
+  - `media_url`
+  - `media_url_secure`
+  - `content`
+  - `content_secure`
+  - `pixel_url`
+- Macros don’t work inside a creative file.
+- Nested macros (a macro within another macro) do not work with creatives.
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>
-- <a
-  href="creative-api-services.md"
-  class="xref" target="_blank">Creative API Services</a>
-- <a
-  href="xandr-macros.md"
-  class="xref" target="_blank">Xandr Macros</a>
-
-
-
-
-
-
+- [Creative Service](creative-service.md)
+- [Creative API Services](creative-api-services.md)
+- [Xandr Macros](xandr-macros.md)

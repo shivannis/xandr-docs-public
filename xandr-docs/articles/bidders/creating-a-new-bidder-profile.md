@@ -1,97 +1,51 @@
 ---
-Title : Creating a New Bidder Profile
-Description : This explains how to create a new bidder profile. There are
-ms.date : 10/28/2023
+title : Creating a New Bidder Profile
+description : Learn how to create a new bidder profile. 
+ms.date : 11/20/2023
 ---
 
 
-# Creating a New Bidder Profile
+# Creating a new Bidder profile
 
+This explains how to create a new bidder profile. There are [seven
+targeting options](bidder-profile-targeting-options.md) that must be set up as part of this process.
 
-
-This explains how to create a new bidder profile. There are
-<a href="bidder-profile-targeting-options.md" class="xref">seven
-targeting options</a> that must be set up as part of this process.
-
-1.  Click New on the upper left-hand
-    portion of the Profiles
+1. Click **New** on the upper left-hand
+    portion of the **Profiles**
     screen. 
-2.  Assign the profile a **Name**: (*Example: Main Profile*)
-3.  Click Enter. The new profile will
+1. Assign the profile a **Name**: (*Example: Main Profile*)
+1. Click **Enter**. The new profile will
     now appear in the table on the left side of the screen.
-4.  There is an optional Code field directly below the name. This can be
+1. There is an optional Code field directly below the name. This can be
     used as an alternative identifier for the bidder profile.
-5.  Make adjustments to the seven targeting options on the right side of
+1. Make adjustments to the seven targeting options on the right side of
     the screen. They are:
-    - <a
-      href="unknown-users.md"
-      class="xref" target="_blank">Unknown Users</a>
-    - <a
-      href="countries.md"
-      class="xref" target="_blank">Countries</a>
-    - <a
-      href="domain-lists.md"
-      class="xref" target="_blank">Domain Lists</a>
-    - <a href="ad-types.md"
-      class="xref" target="_blank">Ad Types</a>
-    - <a
-      href="supply-types.md"
-      class="xref" target="_blank">Supply Types</a>
-    - <a
-      href="exchanges-and-members.md"
-      class="xref" target="_blank">Exchanges and Members</a>
-    - <a
-      href="sensitive-attributes.md"
-      class="xref" target="_blank">Sensitive Attributes</a>
-6.  Once you make of of your adjustments,
-    Save the profile. An **ID** for
+    - [Unknown Users](unknown-users.md)
+    - [Countries](countries.md)
+    - [Domain Lists](domain-lists.md)
+    - [Ad Types](ad-types.md)
+    - [Supply Types](supply-types.md)
+    - [Exchanges and Members](exchanges-and-members.md)
+    - [Sensitive Attributes](sensitive-attributes.md)
+1. Once you make of of your adjustments,
+    **Save** the profile. An **ID** for
     that profile will populate
-    the ID: field. This is located in
+    the **ID**: field. This is located in
     the upper left-hand corner of the screen. It will also populate the
     table on the left.
-    (ID, Name, Code)
+    (**ID, Name, Code**)
 
+## Related topics
 
-## Related Topics
-
-- <a
-  href="bidder-platform-user-interface.md"
-  class="xref" target="_blank">Bidder Platform User Interface</a>
-- <a
-  href="profiles-screen.md"
-  class="xref" target="_blank">Profiles Screen</a>
-- <a
-  href="editing-a-bidder-profile.md"
-  class="xref" target="_blank">Editing a Bidder Profile</a>
-- <a
-  href="additional-functions.md"
-  class="xref" target="_blank">Additional Functions</a>
-- <a
-  href="bidder-profile-targeting-options.md"
-  class="xref" target="_blank">Bidder Profile Targeting Options</a>
-- <a
-  href="unknown-users.md"
-  class="xref" target="_blank">Unknown Users</a>
-- <a
-  href="countries.md"
-  class="xref" target="_blank">Countries</a>
-- <a
-  href="domain-lists.md"
-  class="xref" target="_blank">Domain Lists</a>
-- <a href="ad-types.md"
-  class="xref" target="_blank">Ad Types</a>
-- <a
-  href="supply-types.md"
-  class="xref" target="_blank">Supply Types</a>
-- <a
-  href="exchanges-and-members.md"
-  class="xref" target="_blank">Exchanges and Members</a>
-- <a
-  href="sensitive-attributes.md"
-  class="xref" target="_blank">Sensitive Attributes</a>
-
-
-
-
-
-
+- [Bidder Platform User Interface](bidder-platform-user-interface.md)
+- [Profiles Screen](profiles-screen.md)
+- [Editing a Bidder Profile](editing-a-bidder-profile.md)
+- [Additional Functions](additional-functions.md)
+- [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
+- [Unknown Users](unknown-users.md)
+- [Countries](countries.md)
+- [Domain Lists](domain-lists.md)
+- [Ad Types](ad-types.md)
+- [Supply Types](supply-types.md)
+- [Exchanges and Members](exchanges-and-members.md)
+- [Sensitive Attributes](sensitive-attributes.md)

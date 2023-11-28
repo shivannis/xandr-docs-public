@@ -1,7 +1,9 @@
 ---
 Title : Bid Landscape Feed
-Description : Note: This feed is not available to
-Xandr Invest clients.
+Description : <b>Note:</b> This feed is not available to
+ms.custom : log-level-data
+ms.date : 10/28/2023
+Microsoft Invest clients.
 ---
 
 
@@ -11,8 +13,8 @@ Xandr Invest clients.
 
 
 
-Note: This feed is not available to
-Xandr Invest clients.
+<b>Note:</b> This feed is not available to
+Microsoft Invest clients.
 
 
 
@@ -25,7 +27,7 @@ your ad quality or yield management settings.
 
 
 
-Note: Each user is randomly and evenly
+<b>Note:</b> Each user is randomly and evenly
 assigned to one of the 1000 separate user groups; once assigned to a
 group, a user stays in that group. This log covers auctions for users
 with a `user_group_id` that is less than or equal to 10. We track the
@@ -176,7 +178,7 @@ headers="ID-00000a8c__entry__2">bid_reject_reason</td>
 headers="ID-00000a8c__entry__3">tinyint</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00000a8c__entry__4">The
 reason that the bid was rejected. See <a
-href="bid-landscape-feed.html#ID-00000a8c__bid_reject_codes"
+href="bid-landscape-feed.md#ID-00000a8c__bid_reject_codes"
 class="xref">Bid Reject Codes</a> below.</td>
 </tr>
 <tr class="odd row">
@@ -275,7 +277,7 @@ bid was categorized. Tiers have a priority, and bids in tiers of higher
 priority get preference over bids in tiers of lower priority. Sellers
 can use this information to run auction simulations. For more
 information, see the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/yield-management-auction-tier-service.html"
+href="xandr-api/yield-management-auction-tier-service.md"
 class="xref" target="_blank">Yield Management Auction Tier
 Service</a>.</td>
 </tr>
@@ -288,7 +290,7 @@ headers="ID-00000a8c__entry__2">hard_floor</td>
 headers="ID-00000a8c__entry__3">numeric</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00000a8c__entry__4">The
 hard floor specified in the seller's <a
-href="https://docs.xandr.com/bundle/xandr-api/page/yield-management-profile-service.html"
+href="xandr-api/yield-management-profile-service.md"
 class="xref" target="_blank">Yield Management Profile</a>, in the
 currency set by the publisher. Defaults to <code
 class="ph codeph">0</code> if there was no hard floor on the Yield
@@ -317,7 +319,7 @@ headers="ID-00000a8c__entry__2">soft_floor</td>
 headers="ID-00000a8c__entry__3">numeric</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00000a8c__entry__4">The
 soft floor (in the seller's local currency) specified in the seller's <a
-href="https://docs.xandr.com/bundle/xandr-api/page/yield-management-profile-service.html"
+href="xandr-api/yield-management-profile-service.md"
 class="xref" target="_blank">Yield Management Profile</a>. Defaults to
 <code class="ph codeph">0</code> if there was no soft floor on the Yield
 Management profile.</td>
@@ -374,7 +376,7 @@ headers="ID-00000a8c__entry__2">deal_id</td>
 headers="ID-00000a8c__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00000a8c__entry__4">The
 ID of the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/deal-service.html"
+href="xandr-api/deal-service.md"
 class="xref" target="_blank">deal</a> that was used to coordinate this
 bid on your inventory. Defaults to <code class="ph codeph">0</code> if
 no deal was used.</td>
@@ -388,7 +390,7 @@ headers="ID-00000a8c__entry__2">ad_profile_id</td>
 headers="ID-00000a8c__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-00000a8c__entry__4">The
 publisher-level <a
-href="https://docs.xandr.com/bundle/xandr-api/page/ad-profile-service.html"
+href="xandr-api/ad-profile-service.md"
 class="xref" target="_blank">ad profile ID</a> that was applied to this
 impression. This is used during bid rejection analysis to let the seller
 know which ad profile allowed or blocked the creative. Defaults to <code
@@ -437,7 +439,7 @@ headers="ID-00000a8c__entry__3">string (100)</td>
 headers="ID-00000a8c__entry__4">Specifies the seller's own auction
 ID that ties the impression back to their own data feeds. (See <code
 class="ph codeph">external_request_id</code> under <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.)</td>
 </tr>
 <tr class="even row">
@@ -456,20 +458,20 @@ or "regular" CPM bid price.</li>
 price from a Guaranteed Delivery line item with an impression goal. For
 more information about the available goal types for these line items,
 see <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/guaranteed-delivery.html"
+href="monetize_monetize-standard/guaranteed-delivery.md"
 class="xref" target="_blank">Guaranteed Delivery</a> (customer login
 required).</li>
 <li><code class="ph codeph">2 - BID_RESPONSE_TYPE_LEARN</code>: A
 "learn" bid price from a buy-side object that was trying to optimize.
 For more information about learn bids from a buy-side perspective, see
 <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/targeted-learn.html"
+href="monetize_monetize-standard/targeted-learn.md"
 class="xref" target="_blank">Targeted Learn</a> (customer login
 required).</li>
 <li><code class="ph codeph">3 - BID_RESPONSE_TYPE_CPVM</code>: A bid
 price where buyers pay only for impressions that are measured
 “viewable”. See <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/vcpm-payment-type.html"
+href="monetize_monetize-standard/vcpm-payment-type.md"
 class="xref" target="_blank">vCPM Payment Type</a> for more information
 (customer login required).</li>
 </ul></td>
@@ -494,7 +496,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">user_id_64</code> version of this field, you will not
 received the hashed version.
 </td>
@@ -520,7 +522,6 @@ class="ph codeph">1568077200000</code> can also be represented as
 
 
 
-<div id="ID-00000a8c__bid_reject_codes" >
 
 ## Bid Reject Codes
 
@@ -1407,6 +1408,126 @@ headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_CREATIVE_IGNORE_BY_DEBUG_S
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000a8c__bid_reject_codes__entry__5">Creative is ignored
 from the rtp_debug_settings</td>
+</tr>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">171</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_DEAL_BRAND_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">356</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_DEAL_BRAND</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative brand banned
+on curated deal</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">172</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_DEAL_CATEGORY_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">357</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_DEAL_CATEGORY</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative category
+banned on curated deal</td>
+</tr>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">173</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_DEAL_ADSERVER_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">358</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_DEAL_ADSERVER</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative adserver
+banned on curated deal</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">174</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_DEAL_LANGUAGE_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">359</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_DEAL_LANGUAGE</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative language
+banned on curated deal</td>
+</tr>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">175</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_MEMBER_BRAND_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">360</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_MEMBER_BRAND</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative brand banned
+on curator member</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">176</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_MEMBER_CATEGORY_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">361</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_MEMBER_CATEGORY</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative category
+banned on curator member</td>
+</tr>
+<tr class="odd row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">177</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_MEMBER_ADSERVER_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">362</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_MEMBER_ADSERVER</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative adserver
+banned on curator member</td>
+</tr>
+<tr class="even row">
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__1"><code
+class="ph codeph">178</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__2">NEC_CURATED_MEMBER_LANGUAGE_BANNED</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__3"><code
+class="ph codeph">363</code></td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__4">BRR_BLOCKED_BY_CURATED_MEMBER_LANGUAGE</td>
+<td class="entry colsep-1 rowsep-1"
+headers="ID-00000a8c__bid_reject_codes__entry__5">Creative language
+banned on curator member</td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"

@@ -1,6 +1,8 @@
 ---
 Title : Introduction to Integrating with the Xandr Impression Bus
 Description : When considering integrating with the impression bus, there are many
+ms.custom : data-providers
+ms.date : 10/28/2023
 things to consider. Most people underestimate the volume of requests
 ---
 
@@ -44,7 +46,7 @@ being made.
 
 
 
-Note: Bid requests and bid responses
+<b>Note:</b> Bid requests and bid responses
 are synchronous, so there is no possibility of a race condition between
 the impression bus and bidders. Because of the sheer volume of traffic
 that goes through Xandr, your bidder may receive
@@ -123,7 +125,7 @@ develop your own listener that is built specifically for this behavior.
 
 
 
-Note:
+<b>Note:</b>
 
 Apache has proven to be able to handle our impression bus’ traffic quite
 well if configured correctly. If utilizing Apache as your web serving

@@ -1,6 +1,8 @@
 ---
 Title : Segment Billing Category Service
 Description : The Segment Billing Category Service allows you to **map** your segments
+ms.custom : data-providers
+ms.date : 10/28/2023
 to your Data Marketplace pricing taxonomy. Here's how it works:
 ---
 
@@ -24,7 +26,7 @@ to your Data Marketplace pricing taxonomy. Here's how it works:
 
 
 
-Note:
+<b>Note:</b>
 
 - This service allows you to map to existing categories. To create a new
   category, reach out to your Xandr
@@ -96,9 +98,8 @@ id="ID-00000d20__p-f9d7b0d9-3f20-4e48-a87e-672dbe1de493" >
 class="xref" target="_blank">https://api.<span
 class="ph">appnexus.com/segment-billing-category</a> (mapping
 JSON) -
-<div id="ID-00000d20__note-23d2dd6e-480f-432c-ab96-b1c1b3d37255"
 class="note note_note">
-Note: Only one segment can be mapped at
+<b>Note:</b> Only one segment can be mapped at
 a time
 
 </td>
@@ -136,7 +137,7 @@ a mapping record</td>
 
 
 
-Tip: **JSON structure:** When adding or
+<b>Tip:</b> **JSON structure:** When adding or
 updating a mapping record, you should structure the JSON as a single
 object called "`segment-billing-category`". For exact formatting, see
 the examples below.
@@ -145,7 +146,7 @@ the examples below.
 
 
 
-Tip: The Segment Billing Category
+<b>Tip:</b> The Segment Billing Category
 service works on BOTH the platform API as well as the impression bus
 API. Although
 only <a href="https://api.adnxs.com/" class="xref" target="_blank">api.<span
@@ -198,7 +199,7 @@ class="ph">Xandr segment ID that is being mapped.</td>
 <td class="entry" headers="ID-00000d20__entry__19">data_provider_id</td>
 <td class="entry" headers="ID-00000d20__entry__20">int</td>
 <td class="entry" headers="ID-00000d20__entry__21">The data provider ID
-assigned to you by the Data Marketplace. Note: The POST/CALL call will
+assigned to you by the Data Marketplace. <b>Note:</b> The POST/CALL call will
 fail if you submit an ID that is not owned by your account</td>
 <td class="entry" headers="ID-00000d20__entry__22"></td>
 <td class="entry" headers="ID-00000d20__entry__23">POST/PUT</td>
@@ -207,7 +208,7 @@ fail if you submit an ID that is not owned by your account</td>
 <td class="entry" headers="ID-00000d20__entry__19">data_category_id</td>
 <td class="entry" headers="ID-00000d20__entry__20">int</td>
 <td class="entry" headers="ID-00000d20__entry__21">The pricing category
-ID created on Xandr. Note: The POST/PUT calls
+ID created on Xandr. <b>Note:</b> The POST/PUT calls
 will fail if you submit an ID that is not owned by your account</td>
 <td class="entry" headers="ID-00000d20__entry__22"></td>
 <td class="entry" headers="ID-00000d20__entry__23">POST/PUT</td>

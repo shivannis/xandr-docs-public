@@ -1,6 +1,8 @@
 ---
 Title : Log Level Data Feeds
-Description : Note: LLD feeds are not available via
+Description : <b>Note:</b> LLD feeds are not available via
+ms.custom : log-level-data
+ms.date : 10/28/2023
 the API.
 ---
 
@@ -11,7 +13,7 @@ the API.
 
 
 
-Note: LLD feeds are not available via
+<b>Note:</b> LLD feeds are not available via
 the API.
 
 
@@ -54,12 +56,12 @@ Log-level data feeds include information about the following:
   (including network- and advertiser-level segments)
 
 For a complete list of fields available to buyers and sellers, see the
-<a href="log-level-data-feeds.html#ID-00000062__log_level_feeds_list"
+<a href="log-level-data-feeds.md#ID-00000062__log_level_feeds_list"
 class="xref">List of log-level Feeds</a> section below.
 
 
 
-Note: **Timestamps**: If your log-level
+<b>Note:</b> **Timestamps**: If your log-level
 data is provided in the avro format or one of the protobuf formats, the
 timestamp field values will be supplied in UNIX Epoch time.
 
@@ -98,7 +100,7 @@ the log-level data can be used by their own reporting systems or data
 analysts. 
 
 See <a
-href="https://docs.xandr.com/bundle/log-level-data/page/batch-log-level-data.html"
+href="batch-log-level-data.md"
 class="xref" target="_blank">Batch Log-Level Data</a> for more
 information on how to intake your data.
 
@@ -185,7 +187,6 @@ for each and a link to view the feed columns.
 
 
 
-<div id="ID-00000062__log_level_feeds_list" >
 
 ##  List of Log Level Feeds
 
@@ -209,7 +210,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">standard_feed</code> </td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="standard-feed.html" class="xref">View</a></td>
+href="standard-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -219,7 +220,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">segment_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="segment-feed.html" class="xref">View</a></td>
+href="segment-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
@@ -230,7 +231,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">bid_landscape_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="bid-landscape-feed.html" class="xref">View</a></td>
+href="bid-landscape-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -241,7 +242,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">pixel_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="conversion-pixel-feed.html" class="xref">View</a></td>
+href="conversion-pixel-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
@@ -252,7 +253,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">video_events_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="video-events-feed.html" class="xref">View</a></td>
+href="video-events-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -263,7 +264,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">auction_category_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="auction-categories-feed.html" class="xref">View</a></td>
+href="auction-categories-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
@@ -274,7 +275,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">auction_segment_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="auction-segment-feed.html" class="xref">View</a></td>
+href="auction-segment-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -285,7 +286,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">auction_kv_labels_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="key-value-auction-feed.html" class="xref">View</a></td>
+href="key-value-auction-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="odd row">
 <td class="entry colsep-1 rowsep-1"
@@ -296,7 +297,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">universal_pixel_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="universal-pixel-feed.html" class="xref">View</a></td>
+href="universal-pixel-feed.md" class="xref">View</a></td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -307,7 +308,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">curator_feed </code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="https://docs.xandr.com/bundle/log-level-data/page/curator-feed.html"
+href="curator-feed.md"
 class="xref" target="_blank">View</a></td>
 </tr>
 <tr class="odd row">
@@ -319,7 +320,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">brand_transparency_feed</code></td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="buyer-transparency-feed.html" class="xref">View</a> </td>
+href="buyer-transparency-feed.md" class="xref">View</a> </td>
 </tr>
 <tr class="even row">
 <td class="entry colsep-1 rowsep-1"
@@ -330,7 +331,7 @@ headers="ID-00000062__log_level_feeds_list__entry__2"><code
 class="ph codeph">incrementality_feed</code> </td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00000062__log_level_feeds_list__entry__3"><a
-href="https://docs.xandr.com/bundle/log-level-data/page/log-level-data-feeds.html"
+href="log-level-data-feeds.md"
 class="xref" target="_blank">View</a></td>
 </tr>
 </tbody>
@@ -341,10 +342,10 @@ Xandr representative for more information.
 
 
 
-Note: For **sample** files, see
+<b>Note:</b> For **sample** files, see
 available downloads under the Format and
 Schemas section in <a
-href="https://docs.xandr.com/bundle/log-level-data/page/batch-log-level-data.html"
+href="batch-log-level-data.md"
 class="xref" target="_blank">Batch Log Level Data</a>.
 
 

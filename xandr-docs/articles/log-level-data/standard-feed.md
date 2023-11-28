@@ -1,6 +1,8 @@
 ---
 Title : Standard Feed
 Description : The Log-Level Standard Feed provides data on your managed publishers'
+ms.custom : log-level-data
+ms.date : 10/28/2023
 and/or your managed advertisers' transacted impressions and the
 resulting clicks and conversions. The feed contains one row per
 ---
@@ -18,7 +20,7 @@ click trackers, the feed will also contain one row per impression
 tracker or click tracker event. For video and audio media types, the
 feed will also contain one row per video/audio VAST event (see
 `event_type` in the
-<a href="standard-feed.html#ID-00002051__columns_standard_feed"
+<a href="standard-feed.md#ID-00002051__columns_standard_feed"
 class="xref">Columns</a> section below for more information).  
 The Xandr internal name for this feed
 is `standard_feed`.
@@ -57,13 +59,13 @@ will be shown as "NULL."
 
 ## Recommended Precisions / Lengths of Data Types
 
-In the <a href="standard-feed.html#ID-00002051__columns_standard_feed"
+In the <a href="standard-feed.md#ID-00002051__columns_standard_feed"
 class="xref">Columns</a> table below, some values in the **Type** column
 contain a recommended precision or length in parentheses. For example,
 `string(100)` means "this string is probably (but not guaranteed to be)
 less than or equal to 100 characters in length".  
 For integers, the sizes are described in the
-<a href="standard-feed.html#ID-00002051__integer_key_standard_feed"
+<a href="standard-feed.md#ID-00002051__integer_key_standard_feed"
 class="xref">Integer Key</a> section.  
 For `numeric` (floating point) data types, we recommend being able to
 accept a precision of (18,6), meaning that we expect there to be a
@@ -71,12 +73,12 @@ maximum total of 18 digits: 12 to the left of the decimal point, and 6
 to the right.  
 For `string` data types, the recommended length of the field varies
 depending on the field. See the
-<a href="standard-feed.html#ID-00002051__columns_standard_feed"
+<a href="standard-feed.md#ID-00002051__columns_standard_feed"
 class="xref">table</a> below.
 
 
 
-Warning: These are Recommendations, not
+<b>Warning:</b> These are Recommendations, not
 Guarantees:
 
 The data *types* are meant to be accurate as documented. However, the
@@ -92,7 +94,6 @@ Standard Feed to make it work with your particular integration.
 
 
 
-<div id="ID-00002051__integer_key_standard_feed"
 >
 
 ## Integer Key
@@ -104,7 +105,6 @@ Standard Feed to make it work with your particular integration.
 
 
 
-<div id="ID-00002051__columns_standard_feed" >
 
 ## Columns
 
@@ -150,7 +150,7 @@ headers="ID-00002051__columns_standard_feed__entry__4">The time and date
 of the event (e.g., <code class="ph codeph">1526057561</code> which
 would need to be translated to <em>Friday, May 11, 2018 4:52:41 PM
 (UTC)</em> ). See <a
-href="standard-feed.html#ID-00002051__standard-feed-event-type"
+href="standard-feed.md#ID-00002051__standard-feed-event-type"
 class="xref"><code class="ph codeph">event_type</code></a> for a list of
 events.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -206,7 +206,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">tinyint</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The general
 display style of the creative, classified by media subtype. To map media
 subtype IDs to their names and parent media types, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/media-subtype-service.html"
+href="xandr-api/media-subtype-service.md"
 class="xref" target="_blank">Media Subtype Service</a>. For the video
 media type, the value of the <code
 class="ph codeph">creative_width</code> and <code
@@ -433,7 +433,7 @@ class="ph codeph">buyer_spend</code> because bid and price reductions
 are not applied.</li>
 </ul>
 
-Note: The value of this column reflects
+<b>Note:</b> The value of this column reflects
 any bid reductions made for Bid Price Pacing (BPP) but does not include
 reductions made for Bid Price Optimization (BPO).
 </td>
@@ -548,7 +548,7 @@ for an impression where GDPR applies.</li>
 <p>It will be <code class="ph codeph">-1</code> for
 opt-out/non-consented users.</p>
 
-Note: If you received the <code
+<b>Note:</b> If you received the <code
 class="ph codeph">hashed_user_id_64</code> version of this field, you
 will not receive the unhashed version.
 </td>
@@ -624,7 +624,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">tinyint</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of
 operating system version. To map operating system version IDs to names,
 use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/operating-system-extended-service.html"
+href="xandr-api/operating-system-extended-service.md"
 class="xref" target="_blank">Operating System Extended Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -639,7 +639,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">tinyint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 browser. To map browser IDs to names, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/browser-service.html"
+href="xandr-api/browser-service.md"
 class="xref" target="_blank">Browser Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -654,7 +654,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">tinyint</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 language. To map language IDs to names, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/language-service.html"
+href="xandr-api/language-service.md"
 class="xref" target="_blank">Language Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -698,7 +698,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The ID for the
 publisher of the placement. Buyer member may map the Publisher ID to a
 name using the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/inventory-resold-service.html"
+href="xandr-api/inventory-resold-service.md"
 class="xref" target="_blank">Inventory Resold Service</a> if the seller
 has chosen to expose the publisher. Exposure to buyer depends on the
 seller's visibility profile.</td>
@@ -800,7 +800,7 @@ class="ph codeph">event_type</code>). The revenue value will still be in
 CPM, so to calculate the revenue for the specific click/conversion
 event, divide by 1000.
 
-Note:
+<b>Note:</b>
 <ul>
 <li>This field is also calculated for <code
 class="ph codeph">imp_type = 5</code> (managed impressions). If you wish
@@ -895,7 +895,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">numeric</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The serving fees
 in addition to media costs to when serving an ad (in USD). For more
 details, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/partner-fee-service.html"
+href="xandr-api/partner-fee-service.md"
 class="xref" target="_blank">Partner Fee Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Buyer</td>
@@ -911,7 +911,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">numeric</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The revenue share
 in addition to media costs when serving an ad (in USD). For more
 details, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/partner-fee-service.html"
+href="xandr-api/partner-fee-service.md"
 class="xref" target="_blank">Partner Fee Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Buyer</td>
@@ -1362,7 +1362,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">numeric</td>
 headers="ID-00002051__columns_standard_feed__entry__4">Commission (in
 USD) if used in  or API. For more details,
 see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/partner-fee-service.html"
+href="xandr-api/partner-fee-service.md"
 class="xref" target="_blank">Partner Fee Service</a>.<br />
 </td>
 <td class="entry colsep-1 rowsep-1"
@@ -1379,7 +1379,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">numeric</td>
 headers="ID-00002051__columns_standard_feed__entry__4">Commission (in
 USD) if used in  or API. For more details, see
 <a
-href="https://docs.xandr.com/bundle/xandr-api/page/partner-fee-service.html"
+href="xandr-api/partner-fee-service.md"
 class="xref" target="_blank">Partner Fee Service</a>. </td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Buyer</td>
@@ -1559,7 +1559,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">The model ID of
 the mobile device. To map model IDs to names, use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/device-model-service.html"
+href="xandr-api/device-model-service.md"
 class="xref" target="_blank">Device Model Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -1575,7 +1575,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 carrier associated with the mobile device. Top map carrier IDs to names,
 use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/carrier-service.html"
+href="xandr-api/carrier-service.md"
 class="xref" target="_blank">Carrier Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -1612,9 +1612,9 @@ impression. Possible values:
 <li><code class="ph codeph">-1</code> = UNKNOWN</li>
 </ul>
 
-Note: For more details about
+<b>Note:</b> For more details about
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 <td class="entry colsep-1 rowsep-1"
@@ -1721,9 +1721,9 @@ disabled.</li>
 unknown.</li>
 </ul>
 
-Note: For more information regarding
+<b>Note:</b> For more information regarding
 viewability, see <a
-href="https://docs.xandr.com/bundle/industry-reference/page/introduction-to-viewability.html"
+href="industry-reference/introduction-to-viewability.md"
 class="xref" target="_blank">Introduction to Viewability</a>.
 </td>
 <td class="entry colsep-1 rowsep-1"
@@ -1770,7 +1770,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">Specifies the ID
 of the designated market area for this impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/designated-market-area-service.html"
+href="xandr-api/designated-market-area-service.md"
 class="xref" target="_blank">Designated Market Area Service</a> to look
 up the area associated with the ID.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -1787,7 +1787,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 city for this impression. Derived from IP address of user or provided by
 the site associated with the impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/city-service.html"
+href="xandr-api/city-service.md"
 class="xref" target="_blank">City Service</a> to look up the city
 associated with the ID.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -1803,7 +1803,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">Specifies the ID
 of the mobile app instance for this impression. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/mobile-app-instance-service.html"
+href="xandr-api/mobile-app-instance-service.md"
 class="xref" target="_blank">Mobile App Instance Service</a> to look up
 the mobile app instance associated with the ID.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -1867,7 +1867,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 yield management floor that was applied to the buyer. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/yield-management-floor-service.html"
+href="xandr-api/yield-management-floor-service.md"
 class="xref" target="_blank">Yield Management Floor Service</a> to look
 up the floor associated with the ID.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -1883,7 +1883,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 yield management bias that was applied to the buyer. Use the <a
-href="https://docs.xandr.com/bundle/xandr-api/page/yield-management-bias-service.html"
+href="xandr-api/yield-management-bias-service.md"
 class="xref" target="_blank">Yield Management Bias Service</a> to look
 up the bias associated with the ID.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -2048,7 +2048,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">string</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The postal code
 of the user's location. Derived from IP address of user or provided by
 the site associated with the impression. For postal codes, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/postal-code-service.html"
+href="xandr-api/postal-code-service.md"
 class="xref" target="_blank">Postal Code Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -2087,7 +2087,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">user_id_64</code> version of this field, you will not
 receive the hashed version.
 </td>
@@ -2214,7 +2214,7 @@ DSP's bid (should only appear to sellers on resold impression rows).
 Since the <code class="ph codeph">cid</code> field is optional, the
 <code class="ph codeph">external_campaign_id</code> field will only have
 data when the external DSPs populate it on their bid(s). See the <a
-href="https://docs.xandr.com/bundle/xandr-bidders/page/incoming-bid-response-from-bidders.html"
+href="xandr-bidders/incoming-bid-response-from-bidders.md"
 class="xref" target="_blank">Open RTB specification</a> for more info on
 the <code class="ph codeph">cid</code> field.</td>
 <td class="entry colsep-1 rowsep-1"
@@ -2326,7 +2326,7 @@ headers="ID-00002051__columns_standard_feed__entry__3">int32</td>
 headers="ID-00002051__columns_standard_feed__entry__4">The ID of the
 device make, which is generally the manufacturer of the device (e.g.,
 Samsung). To map device make IDs to names, use the  <a
-href="https://docs.xandr.com/bundle/xandr-api/page/device-make-service.html"
+href="xandr-api/device-make-service.md"
 class="xref" target="_blank">Device Make Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -2344,7 +2344,7 @@ only. The 9 digital U.S. postal code of the user’s location, in the
 format <code class="ph codeph">12345-1234</code>.  Derived from the IP
 address of the user or provided by the site associated with the
 impression. For postal codes, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/postal-code-service.html"
+href="xandr-api/postal-code-service.md"
 class="xref" target="_blank">Postal Code Service</a>.</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__5">Both</td>
@@ -2416,7 +2416,7 @@ headers="ID-00002051__table_qbm_mxr_4wb__entry__3">string</td>
 headers="ID-00002051__table_qbm_mxr_4wb__entry__4">Value of the
 identifier. For example, <code class="ph codeph">"ID0001"</code>.
 
-Note: You will only see the value of
+<b>Note:</b> You will only see the value of
 this field if you have been permissioned.
 </td>
 </tr>
@@ -2457,7 +2457,6 @@ double</td>
 <td class="entry colsep-1 rowsep-1"
 headers="ID-00002051__columns_standard_feed__entry__4"><p><strong>Unit:</strong>
 <code class="ph codeph">microcents</code></p>
-<div id="ID-00002051__p-661b01c2-72f5-406f-9916-3e92c5845dcd" >
 <pre id="ID-00002051__codeblock-214686dd-d8a7-4d86-bef3-cbc19214a4e5"
 class="pre codeblock"><code>1 microcent is equivalent to 1E-8 dollars.
 For Example : 200 microcent = 200/100000000 = 0.000002 dollar</code></pre>
@@ -2509,7 +2508,7 @@ meanings. 
 
 
 
-Note: You may receive error codes in
+<b>Note:</b> You may receive error codes in
 the feed that are not present in the list below. If you do, those error
 codes are generally non-VAST-compliant custom codes sent from the video
 player.

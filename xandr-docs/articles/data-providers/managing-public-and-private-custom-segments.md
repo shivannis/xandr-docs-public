@@ -1,6 +1,8 @@
 ---
 Title : Managing Public and Private (Custom) Segments
 Description : ## Introduction
+ms.custom : data-providers
+ms.date : 10/28/2023
 The Data Marketplace supports both public and private segments. This
 ---
 
@@ -36,7 +38,7 @@ data provider's standard offering.
 
 
 
-Important:
+<b>Important:</b>
 
 For data providers to be visible to buyers, they must have at least one
 segment publicly mapped to their taxonomy.
@@ -50,7 +52,7 @@ segment publicly mapped to their taxonomy.
 ## Create a new public segment
 
 1.  Create a new segment object using the <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    href="xandr-api/segment-service.md"
     class="xref" target="_blank">Segment Service</a> API
 
     **Creating a segment object**
@@ -67,12 +69,12 @@ segment publicly mapped to their taxonomy.
     ```
 
 2.  Upload data into the new segment using <a
-    href="https://docs.xandr.com/bundle/xandr-bidders/page/uploading-segment-data-using-bss.html"
+    href="xandr-bidders/uploading-segment-data-using-bss.md"
     class="xref" target="_blank">Batch Server-side Segmentation</a>.
 
 3.  Set the segment as **"is_public = true"** and activate the segment
     on the Data Marketplace using
-    the <a href="segment-billing-category-service.html" class="xref">Segment
+    the <a href="segment-billing-category-service.md" class="xref">Segment
     Billing Category Service</a> API
 
     **Map the segment to a pricing category and set segment to public**
@@ -92,7 +94,7 @@ segment publicly mapped to their taxonomy.
 
 
 
-Note: Xandr
+<b>Note:</b> Xandr
 will automatically share this segment to all Data Marketplace buyers.
 
 
@@ -113,22 +115,22 @@ Marketplace buyers should be set as a private segment.
 
 
 
-Important:
+<b>Important:</b>
 
 **Before sharing a private segment with a buyer, verify that buyers have
 added your company in the Data Marketplace as described in the Add Data
 Provider section of
-<a href="data-buyer-workflow-changes.html" class="xref">Data Buyer
+<a href="data-buyer-workflow-changes.md" class="xref">Data Buyer
 Workflow Changes</a>. Sharing segments with non-activated buyers will
 result in un-tracked and un-billed data usage. See
-<a href="data-buyer-provider-service.html" class="xref">Data Buyer
+<a href="data-buyer-provider-service.md" class="xref">Data Buyer
 Provider Service</a>.**
 
 
 
 
 
-Tip:
+<b>Tip:</b>
 
 Remember that private segments need to be shared manually to your data
 buyers. As shown in step 3 of "Create a new private segment", you'll
@@ -144,7 +146,7 @@ specific Xandrmembers.
 ## Create a new private segment
 
 1.  Create a new segment object using the <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    href="xandr-api/segment-service.md"
     class="xref" target="_blank">Segment Service</a> API.
 
     **Creating a segment object**
@@ -161,7 +163,7 @@ specific Xandrmembers.
 
 2.  Set the segment as **"is_public = false"** and activate the segment
     on the Data Marketplace using
-    the <a href="segment-billing-category-service.html" class="xref">Segment
+    the <a href="segment-billing-category-service.md" class="xref">Segment
     Billing Category Service</a> API. 
 
     **Map the segment to a pricing category and set segment to public**
@@ -212,7 +214,7 @@ specific Xandrmembers.
 ## Change a public segment to private
 
 1.  Modify the segment to "private" using
-    the <a href="segment-billing-category-service.html" class="xref">Segment
+    the <a href="segment-billing-category-service.md" class="xref">Segment
     Billing Category Service</a> API
 
     **Map the segment to a pricing category and set segment to public**
@@ -231,7 +233,7 @@ specific Xandrmembers.
 
     
 
-    Note: Xandr will stop sharing this
+    <b>Note:</b> Xandr will stop sharing this
     segment to all new Data Marketplace buyers. Data Marketplace buyers
     that already have access to this segment will continue to have
     access to the segment.
@@ -239,7 +241,7 @@ specific Xandrmembers.
     
 
 2.  Unshare existing sharing records via the
-    <a href="member-data-sharing-service.html" class="xref">Member Data
+    <a href="member-data-sharing-service.md" class="xref">Member Data
     Sharing Service</a> API .
 
 
@@ -249,7 +251,7 @@ specific Xandrmembers.
 ## Change a private segment to public
 
 1.  Modify the segment to "private" using the
-    <a href="segment-billing-category-service.html" class="xref">Segment
+    <a href="segment-billing-category-service.md" class="xref">Segment
     Billing Category Service</a> API.
 
     **Map the segment to a pricing category and set segment to public**
@@ -268,7 +270,7 @@ specific Xandrmembers.
 
 
 
-Note: Xandr
+<b>Note:</b> Xandr
 will automatically share this segment to all Data Marketplace buyers.
 
 

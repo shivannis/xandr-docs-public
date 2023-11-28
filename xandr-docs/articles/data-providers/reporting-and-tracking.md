@@ -1,6 +1,8 @@
 ---
 Title : Reporting and Tracking
 Description : ## Reporting
+ms.custom : data-providers
+ms.date : 10/28/2023
 Xandr does not provide segment usage reporting
 for data providers direct clearing with data buyers (i.e. there is no
 ---
@@ -23,7 +25,7 @@ and creatives. Currently, grouping by segment targeted is not available
 on these reports. If a data provider wishes to receive a report on the
 delivery per campaign targeting their segments, they should work with
 the data buyer to <a
-href="https://docs.xandr.com/bundle/data-providers/page/reporting-instructions.html"
+href="reporting-instructions.md"
 class="xref" target="_blank">schedule delivery of a report</a> to be
 emailed from .
 
@@ -52,7 +54,7 @@ are impression pixels and client reporting.
 - **Client Reporting:** Data recipients may schedule or otherwise send
   reports to the data provider for campaigns and line items utilizing
   the shared segments for targeting. Please see <a
-  href="https://docs.xandr.com/bundle/data-providers/page/reporting-instructions.html"
+  href="reporting-instructions.md"
   class="xref" target="_blank">Reporting Instructions</a> for steps on
   how clients can schedule usage reports to be delivered to the data
   provider.
@@ -66,10 +68,10 @@ are impression pixels and client reporting.
 
 
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/reporting-services.html"
+  href="xandr-api/reporting-services.md"
   class="xref" target="_blank">Reporting Services</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/segment-loads-report.html"
+  href="xandr-api/segment-loads-report.md"
   class="xref" target="_blank">Segment Loads Report</a>
 
 

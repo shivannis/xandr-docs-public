@@ -1,6 +1,8 @@
 ---
 Title : Segment Feed
 Description : The Log-Level Segment Feed gives you data on the segment pixel loads for
+ms.custom : log-level-data
+ms.date : 10/28/2023
 all of your network- and advertiser-level segments. Information about
 ---
 
@@ -89,7 +91,7 @@ for an impression where GDPR applies</li>
 <p>It will be <code class="ph codeph">-1</code> for
 opt-out/non-consented users.</p>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">hashed_user_id_64</code> version of this field, you
 will not receive the unhashed version of this field.
 </td>
@@ -182,7 +184,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">user_id_64</code> version of this field, you will not
 receive the hashed version.
 </td>

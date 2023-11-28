@@ -1,6 +1,8 @@
 ---
 Title : Streaming Server-Side Segmentation
-Description : Note: This field or feature is part of
+Description : <b>Note:</b> This field or feature is part of
+ms.custom : data-providers
+ms.date : 10/28/2023
 functionality currently in either Alpha or Beta phase. It is therefore
 ---
 
@@ -11,7 +13,7 @@ functionality currently in either Alpha or Beta phase. It is therefore
 
 
 
-Note: This field or feature is part of
+<b>Note:</b> This field or feature is part of
 functionality currently in either Alpha or Beta phase. It is therefore
 subject to change.
 
@@ -64,7 +66,7 @@ useful if you have real-time audience remodeling requirements.
 - Step 1: Complete the process described in  "User ID Mapping with
   getUID and mapUID" in Xandr documentation.
 - Step 2: Associate individual users to segments using the <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/instant-audience-service.html"
+  href="xandr-api/instant-audience-service.md"
   class="xref" target="_blank">Instant Audience Service</a>
 
 
@@ -78,10 +80,10 @@ useful if you have real-time audience remodeling requirements.
 
 
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/instant-audience-service.html"
+  href="xandr-api/instant-audience-service.md"
   class="xref" target="_blank">Instant Audience Service</a>
 - <a
-  href="https://docs.xandr.com/bundle/xandr-api/page/check-usage-statistics.html"
+  href="xandr-api/check-usage-statistics.md"
   class="xref" target="_blank">Check Usage Statistics</a>
 
 

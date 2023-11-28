@@ -1,181 +1,88 @@
 ---
-Title : Integrate a Bidder
-Description : This page describes how to integrate a bidder with Xandr. It begins with
-ms.date : 10/28/2023
+title: Integrate a Bidder
+description: This article provides instructions to integrate a bidder with Xandr.
+ms.date: 11/27/2023
 ---
 
+# Integrate a bidder
 
-# Integrate a Bidder
+This page describes how to integrate a bidder with Xandr. It begins with an overview of the different "layers" of the integration, and ends with a worked example (using actual API calls) of a simple integration that will get you up and running quickly in our testing environment. It also provides links to more detailed information elsewhere on our Wiki.
 
+## System overview
 
-
-This page describes how to integrate a bidder with Xandr. It begins with
-an overview of the different "layers" of the integration, and ends with
-a worked example (using actual API calls) of a simple integration that
-will get you up and running quickly in our testing environment. It also
-provides links to more detailed information elsewhere on our wiki.
-
-
-
-## System Overview
-
-
-
-<b>Note:</b> Bidding Protocol
-
-Xandr currently supports the OpenRTB 2.4 bidding protocol. For more info
-check out our <a
-href="bidding-protocol.md"
-class="xref" target="_blank">Bidding Protocol</a> page.
-
-
-
+> [!NOTE]
+> **Bidding Protocol**
 >
+> Xandr currently supports the OpenRTB 2.4 bidding protocol. For more info check out our [Bidding Protocol](./bidding-protocol.md) page.
 
-At a high level, there are two "layers" of the system we need to be
-concerned with during bidder setup:
+At a high level, there are two "layers" of the system we need to be concerned with during bidder setup:
 
-- Real-Time Layer (RTB): This is the heart of the action, where your
-  bidder will participate in the real-time auction.
-  - Our server receives a bid request from a webpage (or SSP partner),
-    and format it to prepare to send to our bidders.
-  - Using the settings in the bidder instance (and your bidder object),
-    we send the request along to your servers.
+- Real-Time Layer (RTB): This is the heart of the action, where your bidder will participate in the real-time auction.
+  - Our server receives a bid request from a webpage (or SSP partner), and format it to prepare to send to our bidders.
+  - Using the settings in the bidder instance (and your bidder object), we send the request along to your servers.
     - The endpoint the request hits depends on the request type.
-    ![RTB](media/rtb-png.png)
-      
-- Configuration Layer (API): This is where you will configure your
-  bidder's "business logic" so it can bid on impressions; in other
-  words, filtering out unwanted impressions, setting up users, adding
-  the creatives your members want to serve, etc.
-  ![Config Layer](media/config-layer.png)
 
+    :::image type="content" source="media/rtb-png.png" alt-text="Diagram that explains the bidder's participation in the real-time auction.":::
 
+- Configuration Layer (API): This is where you will configure your bidder's "business logic" so it can bid on impressions; in other words, filtering out unwanted impressions, and setting up users, adding the creatives your members want to serve, etc.
 
+  :::image type="content" source="media/config-layer.png" alt-text="Diagram that explains how the bidder's business logic can be configured.":::
 
+## A note on object hierarchy
 
+It is important to understand how our platform objects relate to one another. Below is an outline of our object hierarchy.
 
+**Bidders, Members, Seats**
 
-## A Note on Object Hierarchy
-
-
-
-<b>Note:</b>
-
-It is important to understand how our platform objects relate to one
-another. Below is an outline of our object hierarchy.
-
-Bidders, Members, Seats
-
-
-
-- Bidders are the highest object in our buy side hierarchy. It
-  represents your entity's presence on our platform.
-- Below them are members. The relationship used to be one-to-many, with
-  a bidder possibly having several member breakouts.
-  - This is no longer the case. It is now one-to-one, as we no longer
-    support additional member breakouts.
-  - You will be integrated with a single member, which we refer to as
-    your 'Default Member'.
-- Members are considered entities that have contractual agreements to
-  buy (or sell) through the impression bus (for more details, see the <a
-  href="member-service.md"
-  class="xref" target="_blank">Member Service</a>).
+- Bidders are the highest object in our buy side hierarchy. It represents your entity's presence on our platform.
+- Below them are members. The relationship used to be one-to-many, with a bidder possibly having several member breakouts.
+  - This is no longer the case. It is now one-to-one, as we no longer support additional member breakouts.
+  - You will be integrated with a single member, which we refer to as your 'Default Member'.
+- Members are considered entities that have contractual agreements to buy (or sell) through the impression bus (for more details, see the [Member Service](./member-service.md)).
   - Creatives are associated with your default member, not your bidder.
-- The bidders themselves are not members, but rather they are the
-  technology providers for members.
-  - The bidder is where you set up a connection with Xandr (such as what
-    kind of requests to receive, to which endpoint, etc.).
-  - The member is where you set up campaign-related objects such as
-    creatives.
-  - The bidder is integrated into our UI. The impression bus connects
-    bidders with various sources of inventory, including aggregators, ad
-    exchanges, and network resold inventory.
-- Seats are your internal entities which you can use to bid in our
-  auctions, and purchase impressions with their corresponding internal
-  id.
+- The bidders themselves are not members, but rather they are the technology providers for members.
+  - The bidder is where you set up a connection with Xandr (such as what kind of requests to receive, to which endpoint, etc.).
+  - The member is where you set up campaign-related objects such as creatives.
+  - The bidder is integrated into our UI. The impression bus connects bidders with various sources of inventory, including aggregators, ad exchanges, and network resold inventory.
+- Seats are your internal entities which you can use to bid in our auctions, and purchase impressions with their corresponding internal id.
 - The diagram below illustrates this hierarchy
-  - With the previous member breakouts, we held a mapping of which of a
-    bidder's seats corresponded to which breakout member. This allowed
-    bidders to bid with their internal ids 100% of the time.
-  - Since you will be integrating with only one member, and with buyer
-    seat bidding, you will only have the one default member, and do not
-    have to worry about the seat-member mapping.
-    ![Hierarchy](media/hierarchy.png)
-   
+  - With the previous member breakouts, we held a mapping of which of a bidder's seats corresponded to which breakout member. This allowed bidders to bid with their internal IDs 100% of the time.
+  - Since you will be integrating with only one member, and with buyer seat bidding, you will only have the one default member, and do not have to worry about the seat-member mapping.
+  :::image type="content" source="media/hierarchy.png" alt-text="Diagram that illustrates the hierarchy between bidders, members, and seats.":::
 
+**Users**
 
-Users
-
-
-
-- Traditionally, bidders can act on behalf of themselves, or they can
-  have several 3rd-party members.
-- Members must have at least one user, regardless of whether the member
-  acts on behalf of a third party (for more details, see the <a
-  href="user-service.md"
-  class="xref" target="_blank">User Service</a>).
+- Traditionally, bidders can act on behalf of themselves, or they can have several 3rd-party members.
+- Members must have at least one user, regardless of whether the member acts on behalf of a third party (for more details, see the [User Service](user-service.md)).
   - Members can have many users.
 - The bidder, as a technology provider, also has at least one user.
-- The users for bidders adjust the bidder profile, add bidder instances,
-  etc.
+- The users for bidders adjust the bidder profile, add bidder instances, etc.
 - Member users upload creatives for that member, etc.
-- Even if the bidder is the same corporation as a member, and the bidder
-  only acts on behalf of itself, the bidder is logically distinct from
-  the member in the same fashion.
-  ![Users](media/users.png)
- 
+- Even if the bidder is the same corporation as a member, and the bidder only acts on behalf of itself, the bidder is logically distinct from the member in the same fashion.
 
+  :::image type="content" source="media/users.png" alt-text="Diagram that shows the components of bidder and their roles.":::
 
+## How to set up your bidder
 
+In this section we'll walk through the entire process of setting up a bidder on the platform. We'll begin by making the API calls necessary to hook up the pipes.
 
-
-
-
-
-
-## How to Set Up Your Bidder
-
-In this section we'll walk through the entire process of setting up a
-bidder on the platform. We'll begin by making the API calls necessary to
-hook up the pipes.
-
-
-
-<b>Tip:</b> APIs.
-
-Most client testing is done in our production APIs. We also have a
-testing environment API which allows for testing of your object creation
-and updating workflows.
-
-Most of the examples calls below are done in the production API
-environment.
-
-
-
-
-
-
+> [!TIP]
+> **APIs**
+>
+> Most client testing is done in our production APIs. We also have a testing environment API which allows for testing of your object creation and updating workflows.
+>
+> Most of the examples calls below are done in the production API environment.
 
 ## Authenticate with the API
 
-Before we can do anything else, we have to log in. Below is an example
-of the authentication json you can use. The authentication process for
-our production and testing environment is the same. The only difference
-is the endpoint.
+Before we can do anything else, we have to log in. Below is an example of the authentication json you can use. The authentication process for our production and testing environment is the same. The only difference is the endpoint.
 
+> [!TIP]
+> For more detailed information about authenticating via our API, see the [Authentication Service](./authentication-service.md).
 
+**Example authentication JSON**
 
-<b>Tip:</b> For more detailed information
-about authenticating via our API, see the <a
-href="authentication-service.md"
-class="xref" target="_blank">Authentication Service</a>.
-
-**Example Authentication Json**
-
-
-
-``` pre
+```
 $ cat auth.json
         
         {
@@ -188,11 +95,11 @@ $ cat auth.json
       
 ```
 
-Post to the production api to authenticate:
+Post to the production API to authenticate:
 
-**Example Auth Call in Production API**
+**Example auth call in production API**
 
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies -c cookies -X POST -d @auth.json $IB/auth
         
@@ -203,42 +110,24 @@ $ curl -b cookies -c cookies -X POST -d @auth.json $IB/auth
 
 Similarly, post to the test environment to authenticate:
 
-**Example Auth Call in Testing API**
+**Example auth call in testing API**
 
-``` pre
+```
 $ export IB_TESTING="https://api-test.adnxs.com";
 $ curl -b cookies -c cookies -X POST -d @auth.json $IB_TESTING/auth
         
 { response": { "status": "OK", ... } }
       
 ```
+## View your bidder object
 
+The bidder object represents your bidder in our system. As such, it has a lot of fields that you can use to configure how your bidder interacts with our platform. Think of it as the central "hook" on which you'll hang much of the rest of your configuration. A bidder object should already have been created for you by your Xandr representative.
 
+In the example below, we make a `GET` call to view the bidder object, but we don't explain any of its details. For more detailed information about the bidder object, see the [Bidder Service](./bidder-service.md).
 
+**Expand for call example**
 
-
-## View your Bidder Object
-
-The bidder object represents your bidder in our system. As such, it has
-a lot of fields that you can use to configure how your bidder interacts
-with our platform. Think of it as the central "hook" on which you'll
-hang much of the rest of your configuration. A bidder object should
-already have been created for you by your Xandr representative.
-
-
-
-<b>Tip:</b> In the example below, we make a
-`GET` call to view the bidder object, but we don't explain any of its
-details. For more detailed information about the bidder object, see the
-<a
-href="bidder-service.md"
-class="xref" target="_blank">Bidder Service</a>.
-
-
-
-**Expand for Call Example**
-
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies $IB/bidder/123
 
@@ -279,7 +168,7 @@ $ curl -b cookies $IB/bidder/123
       "ready_uri": "/status/ready",
       "send_class_2": true,
       "send_class_3": true,
-      "send_owned_blacklist": false,
+      "send_owned_blocklist": false,
       "send_public_deals": false,
       "send_unaudited": true,
       "setuid_function": null,
@@ -304,107 +193,31 @@ $ curl -b cookies $IB/bidder/123
 }     
 ```
 
+## Bidder object configurations
 
+**For the following fields of the "Bidder" object, IP Address/Hostname should not be included preceding the path.**
 
+IP Address <u>will</u> be configured separately on the "Bidder Instance" object(s) in the next step of the integration process.
 
+| Field | Required | Description |
+|---|---|---|
+| **bid_uri** |  | the path/filename that specifies the destination for [Bid Requests](./outgoing-bid-request-to-bidders.md) (e.g. "/bidder") |
+| **ready_uri** |  | the path/filename that specifies the destination for [Ready Requests](./ready-request.md) (e.g. "/ready") |
+| **notify_uri** |  | the path/filename that specifies the destination for [Notify Requests](./notify-request.md) (e.g. "/notify") |
+| **pixel_uri** | **optional** | the path/filename that specifies the destination |
+| **click_uri** | **optional** | the path/filename that specifies the destination for [Click Requests](./click-request.md) |
+|**audit_notify_uri** | **optional** | the path/filename that specifies the destination for [Audit Notify Requests](./audit-notify-request.md) (For example, "[https://examplebidder.com/audit_notify_endpoint](https://examplebidder.com/audit_notify_endpoint)") |
 
-## Bidder Object Configurations
+## View your member object
 
-**For the following fields of the "Bidder" object, IP Address/Hostname
-should not be included preceding the path.**
+You need to have at least one member that buys through your bidder. You should have had a member created for you by your Xandr representative as part of the onboarding process. The member is where you will configure much of the "business logic" such as user segments, creatives, etc.
 
+> [!TIP]
+> In the example below, we make a `GET` call to view the member object, but we don't explain any of its details. Some of the fields which are displayed to you may be deprecated. For more detailed information about the member object, including which fields are currently supporting, see the [Member Service](./member-service.md).
 
+**Expand for call example**
 
-IP Address <u>will</u> be configured separately on the "Bidder Instance"
-object(s) in the next step of the integration process.
-
-<table
-id="integrate-a-bidder__table-21c30a80-4f00-4e2f-aaa3-a96f4cbbf8d5"
-class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"><strong>Field</strong></td>
-<td class="entry"><strong>Required</strong></td>
-<td class="entry"><strong>Description</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry"><strong>bid_uri</strong></td>
-<td class="entry"></td>
-<td class="entry">the path/filename that specifies the destination for
-<a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Requests</a> (e.g. "/bidder")</td>
-</tr>
-<tr class="odd row">
-<td class="entry"><strong>ready_uri</strong></td>
-<td class="entry"></td>
-<td class="entry">the path/filename that specifies the destination for
-<a
-href="ready-request.md"
-class="xref" target="_blank">Ready Requests</a> (e.g. "/ready")</td>
-</tr>
-<tr class="even row">
-<td class="entry"><strong>notify_uri</strong></td>
-<td class="entry"></td>
-<td class="entry">the path/filename that specifies the destination for
-<a
-href="notify-request.md"
-class="xref" target="_blank">Notify Requests</a> (e.g. "/notify")</td>
-</tr>
-<tr class="odd row">
-<td class="entry"><strong>pixel_uri</strong></td>
-<td class="entry"><strong>optional</strong></td>
-<td class="entry">the path/filename that specifies the destination</td>
-</tr>
-<tr class="even row">
-<td class="entry"><strong>click_uri</strong></td>
-<td class="entry"><strong>optional</strong></td>
-<td class="entry">the path/filename that specifies the destination for
-<a
-href="click-request.md"
-class="xref" target="_blank">Click Requests</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry"><strong>audit_notify_uri</strong></td>
-<td class="entry"><strong>optional</strong></td>
-<td class="entry">the path/filename that specifies the destination for
-<a
-href="audit-notify-request.md"
-class="xref" target="_blank">Audit Notify Requests</a> (For example, "<a
-href="https://examplebidder.com/audit_notify_endpoint" class="xref"
-target="_blank">https://examplebidder.com/audit_notify_endpoint</a>")</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## View your Member Object
-
-You need to have at least one member that buys through your bidder. You
-should have had a member created for you by your Xandr representative as
-part of the onboarding process. The member is where you will configure
-much of the "business logic" such as user segments, creatives, etc.
-
-
-
-<b>Tip:</b> In the example below, we make a
-`GET` call to view the member object, but we don't explain any of its
-details. Some of the fields which are displayed to you may be
-deprecated. For more detailed information about the member object,
-including which fields are currently supporting, see the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.
-
-
-
-**Expand for Call Example**
-
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b $IB/member/1234
 
@@ -462,7 +275,7 @@ $ curl -b $IB/member/1234
       "default_tag_id": null,
       "description": null,
       "developer_id": null,
-      "domain_blacklist_email": null,
+      "domain_blocklist_email": null,
       "dongle": null,
       "email_code": null,
       "enable_click_and_imp_trackers": false,
@@ -499,60 +312,28 @@ $ curl -b $IB/member/1234
 }
 ```
 
+## Create a bidder profile
 
+In this step, we'll go through the options in the bidder profile that helps shape the traffic you receive. The bidder profile can be updated using both the API and our [bidder UI](./bidder-platform-user-interface.md). The main documentation for these are found here:
 
-
-
-## Create a Bidder Profile
-
-
-
-In this step, we'll go through the options in the bidder profile that
-helps shape the traffic you receive. The bidder profile can be updated
-using both the API and our <a
-href="bidder-platform-user-interface.md"
-class="xref" target="_blank">bidder UI.</a> The main documentation for
-these are found here:
-
-- API: <a
-  href="enhanced-bidder-profiles.md"
-  class="xref" target="_blank">Enhanced Bidder Profiles</a>
-- Bidder UI: <a
-  href="creating-a-new-bidder-profile.md"
-  class="xref" target="_blank">Creating a New Bidder Profile</a> –
-- Our bidder UI provides many other services, such as metrics and
-  reporting. These can be found here:
-  - Metrics: <a
-    href="metrics-screen.md"
-    class="xref" target="_blank">Metrics Screen</a>
-  - Creatives: <a
-    href="creatives-screen.md"
-    class="xref" target="_blank">Creatives Screen</a>
-  - Reporting: <a
-    href="reporting-screen.md"
-    class="xref" target="_blank">Reporting Screen</a>
-
-
+- API: [Enhanced Bidder Profiles](./enhanced-bidder-profiles.md)
+- Bidder UI: [Creating a New Bidder Profile](./creating-a-new-bidder-profile.md)
+- Our bidder UI provides many other services, such as metrics and reporting. These can be found here:
+  - Metrics: [Metrics Screen](./metrics-screen.md)
+  - Creatives: [Creatives Screen](./creatives-screen.md)
+  - Reporting: [Reporting Screen](./reporting-screen.md)
 
 In the example below, the targeting breaks down like this:
 
-- Include only our <a
-  href="exchange-service.md"
-  class="xref" target="_blank">Direct Exchange</a> members
-- <a
-  href="country-service.md"
-  class="xref" target="_blank">Accept US based traffic only</a>
+- Include only our [Direct Exchange](./exchange-service.md) members
+- [Accept US based traffic only](./country-service.md)
 - Banner traffic, of all sizes
 - Web traffic
-- <a
-  href="unknown-users.md"
-  class="xref" target="_blank">Allow for unknown users</a>
+- [Allow for unknown users](./unknown-users.md)
 
+**Bidder profile example JSON**
 
-
-**Bidder Profile Example Json**
-
-``` pre
+```
 $ cat create-bidder-profile-json
 
 {
@@ -614,89 +395,34 @@ $ cat create-bidder-profile-json
 }
 ```
 
+## Testing profile
 
+- Your Xandr Integration Engineer will help you to set up a bidder profile for testing.
+- This profile will block all platform traffic except for that which is sent from our testing publisher
+- Traffic from our testing member will allow you to simulate the bid stream, without having to worry about spend.
 
+## Add a test creative
 
+In this step, we'll add a creative. After we upload this creative, you will need to set up your bidder to respond to a [Bid Request](./outgoing-bid-request-to-bidders.md) with a properly formatted [Bid Response](./incoming-bid-response-from-bidders.md). The bid response should include this creative, either in the `"crid"` field, corresponding to your internal ID for the creative, or the `"adid"`, which is the Xandr ID for the creative. This will test that your integration is working as expected.
 
-
-
-## Testing Profile
-
-- Your Xandr Integration Engineer will help you to set up a bidder
-  profile for testing.
-- This profile will block all platform traffic except for that which is
-  sent from our testing publisher
-- Traffic from our testing member will allow you to simulate the bid
-  stream, without having to worry about spend.
-
-
-
-
-
-## Add a Test Creative
-
+> [!TIP]
+> For more detailed information about the many types of creative configurations, see the [Creative Service](./creative-service.md).
 >
+> For some tips on getting your creative set up, see our [Quick Start Creative Buying Guide](quick-start-creative-buying-guide.md).
 
-In this step, we'll add a creative. After we upload this creative, you
-will need to set up your bidder to respond to a <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Request</a> with a properly formatted
-<a
-href="incoming-bid-response-from-bidders.md"
-class="xref" target="_blank">Bid Response</a>. The bid response should
-include this creative, either in the "crid" field, corresponding to your
-internal id for the creative, or the "adid", which is the Xandr id for
-the creative. This will test that your integration is working as
-expected.
+- This example shows a (very) old fashioned car design using the content field of the creative object. It uses our standard banner raw-html template.
+- For more information on using the Client Testing environment to test the uploading of creatives, see [Using the Client Testing environment](#using-the-client-testing-environment) below.
 
+> [!NOTE]
+> **Statuses**
+>
+> - The `"allow_audit"` and `"allow_ssl_audit"` fields have each been set to `true`.
+> - The `"allow_audit"` field submits the creative for our platform human audit.
+> - The `"allow_ssl_audit"` submits the creative for our automated scan to determine if the creative can serve on secure inventory.
 
+**Example creative JSON**
 
-<b>Tip:</b> For more detailed information
-about the many types of creative configurations, see the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.
-
-For some tips on getting your creative set up, see our <a
-href="quick-start-creative-buying-guide.md"
-class="xref" target="_blank">Quick Start Creative Buying Guide</a>.
-
-
-
-
-
-
-
-- This example shows a (very) old fashioned car design using the content
-  field of the creative object. It uses our standard banner raw-html
-  template.
-- For more information on using the Client Testing environment to test
-  the uploading of creatives, see <a
-  href="integrate-a-bidder.md#IntegrateaBidder-UsingtheClientTestingenvironment"
-  class="xref" target="_blank">Using the Client Testing environment</a>
-  below.
-
-
-
-
-
-<b>Note:</b> Statuses
-
-The "allow_audit and "allow_ssl_audit" fields have each been set to
-true.
-
-The "allow_audit" field submits the creative for our platform human
-audit.
-
-The "allow_ssl_audit" submits the creative for our automated scan to
-determine if the creative can serve on secure inventory.
-
-
-
-
-
-**Example Creative Json**
-
-``` pre
+```
 $ cat add-creative.json
 {
   "creative": {
@@ -719,13 +445,9 @@ $ cat add-creative.json
 }
 ```
 
+**Example creative upload**
 
-
->
-
-**Example Creative Upload**
-
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies -X POST -d @add-creative.json $IB/creative/1234
 {
@@ -841,72 +563,31 @@ $ curl -b cookies -X POST -d @add-creative.json $IB/creative/1234
 }
 ```
 
+## Add a bidder instance
 
+The bidder instance object represents a particular bidder server running in the data center. This information stored in this object determines where we send traffic. In this example, we set the data center ID to (NYM).
 
+> [!WARNING]
+> This step assumes that you already have a bidder up and running that can respond to bid requests, ready requests, etc., as detailed in the [System Overview](#system-overview).
+> [!TIP]
+> For more information about configuring a bidder instance, see the [Bidder Instance Service](./bidder-instance-service.md)
 
-
-
-
-## Add a Bidder Instance
-
->
-
-The bidder instance object represents a particular bidder server running
-in the data center. This information stored in this object determines
-where we send traffic. In this example, we set the data center ID to
-(NYM).
-
-
-
-<b>Warning:</b> This step assumes that you
-already have a bidder up and running that can respond to bid requests,
-ready requests, etc., as detailed in the <a
-href="integrate-a-bidder.md#IntegrateaBidder-SystemOverview"
-class="xref" target="_blank">System Overview</a>.
-
-
-
-
-
-<b>Tip:</b> For more information about
-configuring a bidder instance, see the <a
-href="bidder-instance-service.md"
-class="xref" target="_blank">Bidder Instance Service</a>
-
-
-
-
-
-
-
-id="p-e5f3601a-6595-4027-9635-616d6c552ecb"\>In this example we set an
-IP address and port to which traffic should be sent.
+In this example we set an IP address and port to which traffic should be sent.
 
 - We also support the use of hostnames.
   - When present, hostnames take precedent.
-  - Our bidder-instance service requires an IP address to be present on
-    upload. If you would like to use a hostname, a dummy IP can put
-    placed in the object upload.
+  - Our bidder-instance service requires an IP address to be present on upload. If you would like to use a hostname, a dummy IP can put placed in the object upload.
 - The full path we will send traffic to is
   - https://\[hostname or IP\]:\[port\]\[bidder.bid_uri\]
 
-    >
-
-    - The bidder.bid_uri is set in your bidder object.
+    - The `bidder.bid_uri` is set in your bidder object.
     - This path should be unique per bidder
+- It is also highly recommended that you place a queries per second (QPS) limit on the bidder instance to ensure your servers are not inundated with traffic.
+- We highly recommend keeping the bidder instance inactive until you are ready to receive traffic in order to avoid accidental spend.
 
-    
-- It is also highly recommended that you place a queries per second
-  (QPS) limit on the bidder instance to ensure your servers are not
-  inundated with traffic.
-- We highly recommend keeping the bidder instance inactive until you are
-  ready to receive traffic in order to avoid accidental spend.
+**Example bidder instance object**
 
-
-
-**Example Bidder Instance Object**
-
-``` pre
+```
 $ cat create-bidder-instance.json
 {
     "instance": {
@@ -920,11 +601,9 @@ $ cat create-bidder-instance.json
 }
 ```
 
->
-
 **Output**
 
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/123
 {
@@ -963,191 +642,75 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
 }
 ```
 
+## Bid response
 
+- The bid response should be formatted correctly in order for your bidder to submit bids properly. The required fields can be found [here](./incoming-bid-response-from-bidders.md).
 
+  > [!NOTE]
+  > Since you are integrating with buyer seat ID, the seatbid.seat field should be your own internal IDs.
 
-
-
-
-## Bid Response
-
-- The bid response should be formatted correctly in order for your
-  bidder to submit bids properly. The required fields can be found <a
-  href="incoming-bid-response-from-bidders.md"
-  class="xref" target="_blank">here</a>.
-  
-
-  <b>Note:</b> Since you are integrating with
-  buyer seat id, the seatbid.seat field should be your own internal ids.
-
-  
-- If you require an example of a bid request to use, your Xandr
-  representative should be able to provide you with one. The supported
-  bid request fields with examples can be found <a
-  href="outgoing-bid-request-to-bidders.md"
-  class="xref" target="_blank">here</a>.
+- If you require an example of a bid request to use, your Xandr representative should be able to provide you with one. The supported bid request fields with examples can be found [here](./outgoing-bid-request-to-bidders.md).
 
 **User Sync**
 
-- In order to inform your bidding activity, we have methods for syncing
-  your internal user ids with Xandr's.
-- For our bidder partners, the norm is to use /getuid. More information
-  on this service can be found here: <a
-  href="synchronize-your-user-ids.md"
-  class="xref" target="_blank">Synchronize Your User IDs</a>
+- In order to inform your bidding activity, we have methods for syncing your internal user IDs with Xandr's.
+- For our bidder partners, the norm is to use `/getuid`. More information on this service can be found here: [Synchronize Your User IDs](./synchronize-your-user-ids.md).
 
+## Test the integration
 
+**Ready requests**
 
+- In order to receive bid requests from our servers, your bidder must first respond correctly to our ready requests.
+- Ready requests are sent to https://\[hostname or IP\]:\[port\]\[bidder.ready_uri\]
+  - The `bidder.ready_uri` is set in your bidder object.
+- Your response must contain `"1"` somewhere in the body.
+- Further Details can be found [here](./ready-request.md).
 
-
-## Test the Integration
-
-
-
-**Ready Requests**
-
-- In order to receive bid requests from our servers, your bidder must
-  first respond correctly to our ready requests.
-- Ready requests are sent to https://\[hostname or
-  IP\]:\[port\]\[bidder.ready_uri\]
-  - The bidder.ready_uri is set in your bidder object.
-- Your response must contain "1" somewhere in the body.
-- Further Details can be found <a
-  href="ready-request.md"
-  class="xref" target="_blank">here</a>.
-
-
-
-
-
-**Bid Stream Testing**
+**Bid stream testing**
 
 - Your Xandr Integration Engineer will help you test the bid stream.
-- This will likely involve sending you bid requests from a testing
-  publisher page.
-- Ideally you will respond to these requests, win our auction, and have
-  your creative served to the test page
+- This will likely involve sending you bid requests from a testing publisher page.
+- Ideally you will respond to these requests, win our auction, and have your creative served to the test page
 - From there you can proceed to
   - Test any macros or trackers to make sure they work as expected.
   - Check that discrepancies are within acceptable ranges.
 
+## Creative registration process
 
+> [!NOTE]
+> We recommend you log the Xandr creative IDs on your system.
 
-
-
-
-
-## Creative Registration Process
-
-
-
-<b>Note:</b> We recommend you log the Xandr
-creative IDs on your system.
-
-
-
-- Creative pre-registration is a requirement for display, video, and
-  native creatives
-  - You must be able to readily upload creatives to our systems and
-    submit them to our audit process
-- Review our <a
-  href="creative-standards-and-auditing.md"
-  class="xref" target="_blank">Creative Standards and Auditing</a>.
-  Sellers require creatives to pass our audit policies in order to serve
-  on their inventory.
+- Creative pre-registration is a requirement for display, video, and native creatives
+  - You must be able to readily upload creatives to our systems and submit them to our audit process
+- Review our [Creative Standards and Auditing](./creative-standards-and-auditing.md). Sellers require creatives to pass our audit policies in order to serve on their inventory.
 - The registration process involves building API services to
   - Add the creative objects
   - Check for Status updates:
-    - audit_status: this field indicates if the creative has passed the
-      human audit that confirms the creative renders and clicks
-      properly.
-    - ssl_status: this field indicates if the creative has passed our
-      automates SSL scanner.
-    - is_prohibited: this field indicates if the creative has violated
-      one of our policies.
-  - Adjusts the creatives to correct any issues, as needed, based on the
-    status fields
-- You can use our client testing environment to test your upload
-  workflows
-  - Creatives submitted to our client testing environment are not
-    audited. Please coordinate with your Xandr Integrations Engineer to
-    test your creatives.
-- Your creative submission workflows can be worked on in parallel with
-  bid stream testing.
+    - `audit_status`: this field indicates if the creative has passed the human audit that confirms the creative renders and clicks properly.
+    - `ssl_status`: this field indicates if the creative has passed our automates SSL scanner.
+    - `is_prohibited`: this field indicates if the creative has violated one of our policies.
+  - Adjusts the creatives to correct any issues, as needed, based on the status fields.
+- You can use our client testing environment to test your upload workflows.
+  - Creatives submitted to our client testing environment are not audited. Please coordinate with your Xandr Integrations Engineer to test your creatives.
+- Your creative submission workflows can be worked on in parallel with bid stream testing.
 
-If you are still not seeing the bid requests you expect, double-check
-your configuration against the instructions on this page. Contact your
-Xandr representative if the problem persists.
+If you are still not seeing the bid requests you expect, double-check your configuration against the instructions on this page. Contact your Xandr representative if the problem persists.
 
+## Using the client testing environment
 
+The Client Testing environment provides a version of the Impbus and Impbus API that you can use to test your workflows and API implementations. The Client Testing environment's codebase and data are now updated every month. This means your testing environment will never be more than 30 days (and often less) behind the version of Xandr code that is running in Production. In addition, all Production data will also automatically be copied over to the Client Testing environment (including your member accounts and credentials) each month. This will allow far more robust testing against the latest features.
 
+For reference, here are the endpoints for the Production and Client Testing environments.
 
+## Example updates
 
-## Using the Client Testing Environment
+**Bidder object `ready_uri` and `bid_uri`**
 
-The Client Testing environment provides a version of the Impbus and
-Impbus API that you can use to test your workflows and API
-implementations. The Client Testing environment's codebase and data are
-now updated every month. This means your testing environment will never
-be more than 30 days (and often less) behind the version of Xandr code
-that is running in Production. In addition, all Production data will
-also automatically be copied over to the Client Testing environment
-(including your member accounts and credentials) each month. This will
-allow far more robust testing against the latest features.
+Update these fields to ensure our ready requests and bid requests, respectively, are sent to the right endpoints.
 
->
+**Example bidder update**
 
-For reference, here are the endpoints for the Production and Client
-Testing environments.
-
-<table
-id="integrate-a-bidder__table-3910bd3a-65f3-47d7-99c2-318c4660a381"
-class="table">
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry">Product</td>
-<td class="entry">Product endpoint</td>
-<td class="entry">Client Testing endpoint</td>
-</tr>
-<tr class="even row">
-<td class="entry">Impbus</td>
-<td class="entry"><a href="http://ib-test.adnxs.com/" class="xref"
-target="_blank">https://ib.adnxs.com</a></td>
-<td class="entry"><a href="http://ib-test.adnxs.com/" class="xref"
-target="_blank">https://ib-test.adnxs.com</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry">Impbus API</td>
-<td class="entry"><a href="http://api.adnxs.com/" class="xref"
-target="_blank">https://api.adnxs.com</a></td>
-<td class="entry"><a href="http://api-test.adnxs.com/" class="xref"
-target="_blank">https://api-test.adnxs.com</a></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## Example Updates
-
-**Bidder Object ready_uri and bid_uri**
-
->
-
-- Update these fields to ensure our ready requests and bid requests,
-  respectively, are sent to the right endpoints.
-
-
-
-
-
-**Example Bidder Update**
-
-``` pre
+```
 $ cat update-uris.json
 {
     "bidder": {
@@ -1158,13 +721,9 @@ $ cat update-uris.json
 }
 ```
 
+**Example bidder update output**
 
-
->
-
-**Example Bidder Update Output**
-
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies -X PUT -d @update-uris.json $IB/bidder/1234?fields=active,bid_uri,id,ready_uri
 
@@ -1190,22 +749,13 @@ $ curl -b cookies -X PUT -d @update-uris.json $IB/bidder/1234?fields=active,bid_
 } 
 ```
 
-
-
 **Update member object audit notify email**
 
->
+Update these fields to ensure you receive notifications for creatives you upload to our system.
 
-- Update these fields to ensure you receive notifications for creatives
-  you upload to our system.
+**Example member update**
 
-
-
-
-
-**Example Member Update**
-
-``` pre
+```
 $ cat update-email.json
 {
     "member": {
@@ -1215,13 +765,9 @@ $ cat update-email.json
 }
 ```
 
+**Example member update output**
 
-
->
-
-**Example Member Update Output**
-
-``` pre
+```
 $ export IB="https://api.adnxs.com";
 $ curl -b cookies -X PUT -d @update-email.json $IB/member/5678?fields=active,audit_notify_email,id
 
@@ -1246,32 +792,10 @@ $ curl -b cookies -X PUT -d @update-email.json $IB/member/5678?fields=active,aud
 } 
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-- <a
-  href="bidder-instance-service.md"
-  class="xref" target="_blank">Bidder Instance Service</a>
-- <a
-  href="enhanced-bidder-profiles.md"
-  class="xref" target="_blank">Bidder Profile Service</a>
-- <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>
-- <a
-  href="outgoing-bid-request-to-bidders.md"
-  class="xref" target="_blank">Bid Request Specification</a>
-- <a
-  href="incoming-bid-response-from-bidders.md"
-  class="xref" target="_blank">Bid Response Specification</a>
-
-
-
-
-
-
+- [Bidder Instance Service](./bidder-instance-service.md)
+- [Bidder Profile Service](./enhanced-bidder-profiles.md)
+- [Creative Service](./creative-service.md)
+- [Bid Request Specification](./outgoing-bid-request-to-bidders.md)
+- [Bid Response Specification](./incoming-bid-response-from-bidders.md)

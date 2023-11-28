@@ -1,6 +1,8 @@
 ---
 Title : Reporting Instructions
 Description : A few facts to keep in mind about scheduled reports:
+ms.custom : data-providers
+ms.date : 10/28/2023
 - Scheduled reports expire after 6 months. You must create a new
 ---
 
@@ -28,7 +30,7 @@ A few facts to keep in mind about scheduled reports:
 
 
 
-Tip: Note that the report will not
+<b>Tip:</b> Note that the report will not
 include a list of which segments are being targeted. This is why you may
 want to consider including the segment IDs or codes in the campaign
 name.
@@ -37,14 +39,14 @@ name.
 
 
 
-Note: Note that if you are sending a
+<b>Note:</b> Note that if you are sending a
 monthly report, the data provider will not know if you have added or
 removed segment targeting over the course of that month. Thus, you will
 need to track segment targeting dates manually if any changes are made
 and send these to the data provider.
 
 For more information on API reporting, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/report-service.html"
+href="xandr-api/report-service.md"
 class="xref" target="_blank">Report Service</a>.
 
 

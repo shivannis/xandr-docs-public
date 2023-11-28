@@ -1,6 +1,8 @@
 ---
 Title : Best Practices for Real Time Data Provider Integrations
 Description : ## Software Stack Best Practices
+ms.custom : data-providers
+ms.date : 10/28/2023
 Depending on the software stack that you decide to employ for your Data
 Provider, you will see a wide range of QPS performance. Having an
 ---

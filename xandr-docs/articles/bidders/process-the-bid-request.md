@@ -1,42 +1,22 @@
 ---
-Title : Process the Bid Request
-Description : When you simulate traffic to a TinyTag for which your bidder is eligible
-ms.date : 10/28/2023
-to bid, a <a
-href="outgoing-bid-request-to-bidders.md"
+title: Process the Bid Request
+description: In this article, learn how the bid requests are processed along with some sample bid requests.
+ms.date: 10/28/2023
 ---
 
+# Process the bid request
 
-# Process the Bid Request
+When you simulate traffic to a TinyTag for which your bidder is eligible to bid, a Bid Request will be sent to your bidder. This request includes a significant amount of information about the impression. Sample bid requests for OpenRTB and Xandr's bidding protocol are shown below. For a more detailed description of the various fields, see [Bid Request](outgoing-bid-request-to-bidders.md).
 
+The Bid Request is sent with header information, such as the IP address and debug information. The JSON for the request itself includes details about the members for which the auction should be evaluated by the bidder; the tag(s) for the auction, including details about each tag; and information about the auction, including the user ID, the region from which the impression originated, and other information.
 
+Once your bidder has received this first bid request, you can trust that the initial sandbox setup is working properly.
 
-When you simulate traffic to a TinyTag for which your bidder is eligible
-to bid, a <a
-href="outgoing-bid-request-to-bidders.md"
-class="xref" target="_blank">Bid Request</a> will be sent to your
-bidder. This request includes a significant amount of information about
-the impression. Sample bid requests for OpenRTB and
-Xandr's bidding protocol are shown below. For a
-more detailed description of the various fields,
-see <a href="https://docs.xandr.com/csh?context=107315343" class="xref"
-target="_blank">Bid Request</a>.
+## Sample bid requests
 
-The Bid Request is sent with header information, such as the IP address
-and debug information. The JSON for the request itself includes details
-about the members for which the auction should be evaluated by the
-bidder; the tag(s) for the auction, including details about each tag;
-and information about the auction, including the user ID, the region
-from which the impression originated, and other information.
+### OpenRTB
 
-Once your bidder has received this first bid request, you can trust that
-the initial sandbox setup is working properly.
-
-<div class="p H3">
-
-**OpenRTB**
-
-``` pre
+```
 {
   "id": "1234534625254",
   "at": 2,
@@ -80,14 +60,9 @@ the initial sandbox setup is working properly.
 }
 ```
 
+### Bidding protocol
 
-
-
-
-  
-**Bidding Protocol**
-
-``` pre
+```
 Host: 64.208.137.73
 Connection: keep-alive
 X-Inventory-Class: 4
@@ -151,12 +126,6 @@ X-Debug: 1
 }
 ```
 
+## Next step
 
-
-Next step: <a
-href="submit-a-bid-response.md"
-class="xref" target="_blank">Submitting your Bid Response</a>
-
-
-
-
+[Submitting your Bid Response](submit-a-bid-response.md)

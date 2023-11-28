@@ -1,6 +1,8 @@
 ---
 Title : Xandr Macros for Data Providers
 Description : Xandr can populate the following information.
+ms.custom : data-providers
+ms.date : 10/28/2023
 ---
 
 
@@ -150,7 +152,7 @@ the different IDs type and value pairs.</td>
 
 
 
-Warning: In order for our clients to
+<b>Warning:</b> In order for our clients to
 meet their transparency, notice and choice/consent requirements under US
 state privacy law, GDPR and the existing ePrivacy Directive,
 Xandr supports
@@ -201,7 +203,7 @@ GDPR regulations are applied. Specifically, it indicates whether the
 user is located in a GDPR impacted country, or if we have a
 GDPR-required signal passed with the request. 1 if yes, 0 if no.
 
-Warning: A "0" may be received from an
+<b>Warning:</b> A "0" may be received from an
 EEA country. It is the publisher's choice to signal in this manner.
 </td>
 </tr>
@@ -234,7 +236,7 @@ Privacy Platform</a> (GPP) string. If a section of the GPP applies, then
 this will contain framework-dependent information reflecting the consent
 elections of the user.
 
-Note: * XXXXX can represent any
+<b>Note:</b> * XXXXX can represent any
 numerical id.
 </td>
 </tr>

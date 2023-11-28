@@ -1,6 +1,8 @@
 ---
 Title : Data Marketplace - Data Partner Overview
 Description : Buyers on the Xandr platform often use
+ms.custom : data-providers
+ms.date : 10/28/2023
 third-party data made available by our data providers to target
 particular audience or inventory in their campaigns.
 ---
@@ -21,9 +23,8 @@ for those fees on your behalf. 
 
 
 
-<div id="ID-0000098f__note_qby_d3w_kwb" 
 
-Note: Only data providers who have
+<b>Note:</b> Only data providers who have
 executed the Xandr Data Provider agreement with
 Xandr and have provided pricing are eligible to
 have the fees cleared by Xandr. 
@@ -41,11 +42,11 @@ have the fees cleared by Xandr. 
     representative.
 2.  If you are a new data provider, integrate
     with Xandr as an
-    <a href="audience-data-integrations.html" class="xref">audience data
+    <a href="audience-data-integrations.md" class="xref">audience data
     provider</a> or as a real time data provider.
 3.  Create the segments that you want to make available to buyers. For
     details, see
-    <a href="creating-and-managing-segments.html" class="xref">Creating and
+    <a href="creating-and-managing-segments.md" class="xref">Creating and
     Managing Segments</a>.
 4.  Create a rate card using the <a
     href="attachments/data-marketplace-data-partner-overview/taxonomy-template-new-7-19.xlsx"
@@ -64,20 +65,20 @@ have the fees cleared by Xandr. 
 ## Important Operational Items
 
 - Assigning prices to your segments
-  - <a href="segment-billing-category-service.html" class="xref">Segment
+  - <a href="segment-billing-category-service.md" class="xref">Segment
   Billing Category Service</a>
 - Working with Syndicated and Custom segments
-  - <a href="managing-public-and-private-custom-segments.html"
+  - <a href="managing-public-and-private-custom-segments.md"
   class="xref">Managing Public and Private (Custom) Segments</a>
 - Understanding the Buyer UI and Workflow
   - <a href="data-buyer-workflow-changes.dita" class="xref"
   target="_blank">Data Buyer Workflow Overview</a>
 - Cost calculation and supported pricing methods
-  - <a href="data-cost-calculation-mechanics.html" class="xref">Data Cost
+  - <a href="data-cost-calculation-mechanics.md" class="xref">Data Cost
   Calculation Mechanics</a>
 - Validate all active buyers who have activated clearing within the Data
   Marketplace and have access to your data
-  - <a href="data-buyer-provider-service.html" class="xref">Data Buyer
+  - <a href="data-buyer-provider-service.md" class="xref">Data Buyer
   Provider Service</a>
 
 
@@ -88,7 +89,7 @@ have the fees cleared by Xandr. 
 
 Reporting is currently available exclusively through our APIs. For an
 in-depth look at available reporting,
-see <a href="data-usage-report-for-data-providers.html" class="xref">Data
+see <a href="data-usage-report-for-data-providers.md" class="xref">Data
 Usage Report for Data Providers</a>.
 
 
@@ -105,7 +106,7 @@ Usage Report for Data Providers</a>.
 
 
 
-Note: To notify
+<b>Note:</b> To notify
 Xandr of any changes in your banking information
 or payment entity, visit our
 <a href="https://help.xandr.com" class="xref" target="_blank">Customer

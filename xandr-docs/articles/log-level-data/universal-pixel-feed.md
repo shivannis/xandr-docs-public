@@ -1,6 +1,8 @@
 ---
 Title : Universal Pixel Feed
 Description : The Log-Level Universal Pixel Feed provides you with data on the firing
+ms.custom : log-level-data
+ms.date : 10/28/2023
 of all of your Universal Pixels. The feed contains one row per pixel
 ---
 
@@ -18,10 +20,10 @@ possible for a pixel fire to satisfy no Audience or Conversion rules.
 
 The Universal Pixel Feed does not distinguish between attributed and
 unattributed conversions. To view attributed conversion data, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/advertiser-attributed-conversions.html"
+href="xandr-api/advertiser-attributed-conversions.md"
 class="xref" target="_blank">Advertiser Attributed Conversions</a> or
 the <a
-href="https://docs.xandr.com/bundle/log-level-data/page/standard-feed.html"
+href="standard-feed.md"
 class="xref" target="_blank">Standard Feed</a>.
 
 The Xandr internal name for this feed is
@@ -77,7 +79,7 @@ time and date of the universal pixel fire. <br />
 (e.g., <code class="ph codeph">1526057561</code> which would need to be
 translated to <em>Friday, May 11, 2018 4:52:41 PM (UTC)</em>.
 
-Note:
+<b>Note:</b>
 <p>The EPOCH time is in <strong>milliseconds format</strong>, and not
 the standard EPOCH time.</p>
 </td>
@@ -298,7 +300,7 @@ ID)</li>
 ID)</li>
 </ul>
 
-Note: The value of this field will
+<b>Note:</b> The value of this field will
 be <code class="ph codeph">null</code> except for specific integrations.
 </td>
 </tr>

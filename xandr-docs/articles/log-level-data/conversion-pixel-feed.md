@@ -1,6 +1,8 @@
 ---
 Title : Conversion Pixel Feed
 Description : The Log-Level Conversion Pixel Feed provides data on the firing of all
+ms.custom : log-level-data
+ms.date : 10/28/2023
 of your managed advertisers' pixels, both attributed and unattributed.
 ---
 
@@ -15,10 +17,10 @@ The feed contains one row per pixel.
 
 
 
-Note: The Conversion Pixel Feed does
+<b>Note:</b> The Conversion Pixel Feed does
 not distinguish between the firing of attributed and unattributed
 pixels. To view attributed conversion data, see <a
-href="https://docs.xandr.com/bundle/xandr-api/page/advertiser-attributed-conversions.html"
+href="xandr-api/advertiser-attributed-conversions.md"
 class="xref" target="_blank">Advertiser Attributed Conversions</a>.
 However, pixel loads for users without a Xandr
 cookie are excluded from this feed because a conversion event is not
@@ -115,7 +117,7 @@ for an impression where GDPR applies</li>
 <p>It will be <code class="ph codeph">-1</code> for
 opt-out/non-consented users.</p>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">hashed_user_id_64</code> version of this field, you
 will not receive the non-hashed version.
 </td>
@@ -140,7 +142,7 @@ headers="ID-000018db__entry__3">string(36)</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000018db__entry__4">The
 optional value passed in by the buyer on the conversion pixel using the
 <code class="ph codeph">order_id</code> parameter. See <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/conversion-pixels-advanced.html"
+href="monetize_monetize-standard/conversion-pixels-advanced.md"
 class="xref" target="_blank">Conversion Pixels Advanced</a> for more
 details.</td>
 </tr>
@@ -154,7 +156,7 @@ headers="ID-000018db__entry__3">string(30)</td>
 <td class="entry colsep-1 rowsep-1" headers="ID-000018db__entry__4">The
 optional extra data passed in by buyer on conversion pixel using the
 <code class="ph codeph">other</code> parameter. See <a
-href="https://docs.xandr.com/bundle/monetize_monetize-standard/page/topics/conversion-pixels-advanced.html"
+href="monetize_monetize-standard/conversion-pixels-advanced.md"
 class="xref" target="_blank">Conversion Pixels Advanced</a> for more
 details.</td>
 </tr>
@@ -188,7 +190,7 @@ XXXXXX304391387YYYY
 hashed_user_id_64:
 0000f47b074866470613d9397f0bd7efa78c7adec992aac5e117cbe2d55993a94767</code></pre>
 
-Note: If you receive the <code
+<b>Note:</b> If you receive the <code
 class="ph codeph">user_id_64</code> version of this field, you will not
 receive the hashed version.
 </td>

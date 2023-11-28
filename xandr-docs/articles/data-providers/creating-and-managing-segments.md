@@ -1,6 +1,8 @@
 ---
 Title : Creating and Managing Segments
 Description : Data providers can create and manage their own segments via the
+ms.custom : data-providers
+ms.date : 10/28/2023
 following methods:
 1.  Create segments using the API <a
 ---
@@ -14,7 +16,7 @@ Data providers can create and manage their own segments via the
 following methods:
 
 1.  Create segments using the API <a
-    href="https://docs.xandr.com/bundle/xandr-api/page/segment-service.html"
+    href="xandr-api/segment-service.md"
     class="xref" target="_blank">segment service</a>.
 2.  Create segments in our
     <a href="https://bidder.xandr.com" class="xref" target="_blank">bidder

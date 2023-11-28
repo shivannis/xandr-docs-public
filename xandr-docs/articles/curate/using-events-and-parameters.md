@@ -17,10 +17,6 @@ information in the form of parameters.
 > [!NOTE]
 > You can also create custom events and parameters. For more information, see [Create Custom Events and Parameters](create-custom-events-and-parameters.md).
 
-
-
-
-
 For example, using the standard event `AddtoCart`, you can track when
 users add an item to a shopping cart. Using parameters, you can
 configure the `AddToCart` standard event to also gather the product ID,
@@ -41,7 +37,7 @@ to the basic pixel implementation.
 | Universal Pixel with Events                                                                   | Universal Pixel Without Events            |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------|
 | Page views and other typical events such as cart adds and purchases                           | Only page views and URLs                  |
-| Advanced rule logic combining:<br> -URLs <br> - standard and custom events <br> - standard and custom parameters | Only URL-based rules and page view events |
+| Advanced rule logic combining:<br> - URLs <br> - standard and custom events <br> - standard and custom parameters | Only URL-based rules and page view events |
 
 
 ## Related topics
