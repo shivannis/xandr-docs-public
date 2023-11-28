@@ -169,8 +169,8 @@
       href: seat-service.md
     - name: Changelog for Buyer Seat ID
       href: changelog-for-buyer-seat-id.md
-  - name: Sell-Side Services
-    items:
+- name: Sell-Side Services
+  items:
     - name: Overview
       href: sell-side-services.md
     - name: TinyTags
