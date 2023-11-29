@@ -58,7 +58,9 @@
         "articles/supply-partners/*.md":"microsoft-monetize",
         "articles/yield-analytics-ui/*.md":"microsoft-monetize",
         "articles/curate/*.md":"microsoft-curate",
-        "articles/bidders/*.md":"bidder"
+        "articles/bidders/*.md":"bidder",
+        "articles/data-providers/*.md":"microsoft-monetize",
+        "articles/log-level-data/*.md":"microsoft-monetize"
         
       },
       "author": {
@@ -72,7 +74,9 @@
         "articles/supply-partners/*.md":"rupambaruah-xandr",
         "articles/yield-analytics-ui/*.md":"rupambaruah-xandr",
         "articles/curate/*.md":"rupambaruah-xandr",
-        "articles/bidders/*.md":"rupambaruah-xandr"
+        "articles/bidders/*.md":"rupambaruah-xandr",
+        "articles/data-providers/*.md":"rupambaruah-xandr",
+        "articles/log-level-data/*.md":"rupambaruah-xandr"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
@@ -85,7 +89,9 @@
         "articles/supply-partners/*.md":"rupambaruah",
         "articles/yield-analytics-ui/*.md":"rupambaruah",
         "articles/curate/*.md":"rupambaruah",
-        "articles/bidders/*.md":"rupambaruah"
+        "articles/bidders/*.md":"rupambaruah",
+        "articles/data-providers/*.md":"rupambaruah",
+        "articles/log-level-data/*.md":"rupambaruah"
       },
     "ms.topic": {
         "articles/invest/*.md": "reference",
@@ -98,7 +104,9 @@
         "articles/supply-partners/*.md":"reference",
         "articles/yield-analytics-ui/*.md":"reference",
         "articles/curate/*.md":"reference",
-        "articles/bidders/*.md":"reference"
+        "articles/bidders/*.md":"reference",
+        "articles/data-providers/*.md":"reference",
+        "articles/log-level-data/*.md":"reference"
       }
     }, 
     "template": [],
