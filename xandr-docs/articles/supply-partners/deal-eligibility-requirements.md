@@ -76,7 +76,7 @@ The `type` object should contains the following fields.
 
 Once you feel confident that you've appropriately built to our [Deal Service](../digital-platform-api/deal-service.md), and have set up both your deals as outlined above, please submit a [support case](https://help.xandr.com) in order to have your traffic reviewed. Include both the Xandr deal IDs you've created. We will update you on the final steps of the process.
 
-## Deal creation formatting
+## Deal Service API
 
 ### REST API
 
