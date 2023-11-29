@@ -16,7 +16,7 @@ The following points outline the requirements that need to be met to transact on
 - Follow the guidelines outlined by the
   Xandr [OpenRTB Integration](openrtb-specs.md)
 - Meet the [OpenRTB Bid Request Requirements](openrtb-bid-request-requirements.md)
-- Demonstrate a basic understanding of how the [Deal Service](../digital-platform-api/deal-service.md) works by completing the
+- Demonstrate a basic understanding of how the Deal Service works by completing the
   steps detailed in the [Deals Eligibility Requirements](deal-eligibility-requirements.md)
 
 The [OpenRTB Bid Request Requirements](openrtb-bid-request-requirements.md) must be met before being eligible to sell deals.
