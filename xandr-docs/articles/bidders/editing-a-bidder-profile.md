@@ -1,6 +1,6 @@
 ---
 title: Editing a Bidder Profile
-description: The article provides instructions on changing a bidder profile.
+description: The article provides instructions on changing a bidder profile.d
 ms.date: 10/28/2023
 ---
 
