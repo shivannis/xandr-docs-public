@@ -19,7 +19,7 @@ the thresholds for all relevant fields. Inventory that does not meet the
 requirements outlined below will be eligible for selling through deals,
 but will not be made available on the open exchange.
 
-Currently, we will be determining eligibility for the following formats:
+Currently, we determine eligibility for the following formats:
 
 - Web Banner
 - Web Video
