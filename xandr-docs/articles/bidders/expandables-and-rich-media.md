@@ -86,8 +86,7 @@ Media types and subtypes are in a two-tiered hierarchy:
 
 :::image type="content" source="media/placements.png" alt-text="Screenshot that displays information about placements can accept various combinations of media types or subtypes, and if it accepts a specific media type, it automatically accepts all subtypes associated with that media type. ":::
 
-**Templates** represent a media type and a creative format (Javascript, HTML, etc). They can be used to customize the rendering of your
-creatives, but in this case they simply specify the expandable vendor being used.
+**Templates** represent a media type and a creative format (Javascript, HTML, etc). They can be used to customize the rendering of your creatives, but in this case they simply specify the expandable vendor being used.
 
 **Creatives** have one template, which specifies the format of the creative and the expandable vendor in use. A creative may serve only on
 placements that accept the creative template's media subtype or its parent media type.
@@ -104,8 +103,8 @@ There will be two new fields in the bid request to indicate the availability of 
 
 | Field | Description | Notes |
 |--|--|--|
-| `allowed_media_types` | Array of media type ids | This field is optional. If it appears, creatives of the specified media types may serve on this impression. |
-| `allowed_media_subtypes` | Array of media subtype ids | This field is optional. If it appears, creatives of the specified media subtypes may serve on this impression. |
+| `allowed_media_types` | Array of media type IDs | This field is optional. If it appears, creatives of the specified media types may serve on this impression. |
+| `allowed_media_subtypes` | Array of media subtype IDs | This field is optional. If it appears, creatives of the specified media subtypes may serve on this impression. |
 | `media_subtypes` | Array of media subtype in string format | This field is optional. If it appears, it will list the allowed media in string format. |
 
 These fields will be on each "tag" object in the bid request:
@@ -126,7 +125,7 @@ These fields will be on each "tag" object in the bid request:
 To determine if your expandable creative will serve:
 
 - First, check if `allowed_media_types` contains the `Expandable` Media Type.
-- If `Expandable` is not in allowed_media_types, check if the `media_subtype` ID is allowed in `allowed_media_subtypes`.
+- If `Expandable` is not in `allowed_media_types`, check if the `media_subtype` ID is allowed in `allowed_media_subtypes`.
 
 ### Creative upload
 
@@ -151,8 +150,7 @@ This field is **required** on expandable creatives.
 
 > [!NOTE]
 >
-> - You are not required to set the template ID on standard creatives (non-expandable). Continue uploading those creatives as you did
->   before.
+> - You are not required to set the template ID on standard creatives (non-expandable). Continue uploading those creatives as you did before.
 > - Traffic Skin creatives as a standard banner. We recommend using 1800 X 1000 dimensions.
    >   - Use template ID **6** for HTML, and **5** for Javascript.
 

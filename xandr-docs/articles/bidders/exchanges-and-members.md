@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 Clicking the **Exchanges and Members** tab accesses a screen where you can select which exchanges and members you want. You can either **include** or **exclude** the desired exchanges by clicking either the **green checkmark icon** (include), or the **red minus sign icon** (exclude).
 
 > [!NOTE]
-> For some exchanges, it is allowed to also include/exclude specific members. Other exchanges do not have this option. In this case, the include/exclude options will be disabled.
+> For some exchanges, it is allowed to also include/exclude specific members. Other exchanges do not have this option. In this case, the `include`/`exclude` options will be disabled.
 
 :::image type="content" source="media/exchanges-and-members-figure-a.png" alt-text="Screenshot that provides information about an exchange and its members.":::
 
