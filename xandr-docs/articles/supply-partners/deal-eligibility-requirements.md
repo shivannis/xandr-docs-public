@@ -1,13 +1,13 @@
 ---
-title: Deal Eligibility Requirements
+title: Deal eligibility requirements: setting up deals
 description: In this article, learn about the deal eligibility requirements and ways to set up a deal for test buyer members AN Talent (882) and AN Challenge (1370).
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
 
-# Deal eligibility requirements
+# Deal eligibility requirements: setting up deals
 
-To demonstrate that you understand the [Deal Service](../digital-platform-api/deal-service.md), you'll create deals with
+One of the requirements that needs to be met to transact on Xandr's open exchange is to confirm that you understand the Deal Service. In order to demonstrate your understanding, you’ll create deals with
 two Xandr test members, AN Talent(882) and AN Challenge(1370). The deal must represent the same inventory, and therefore should always appear on the same bid requests. Each deal must see over 10,000 impressions per day.
 
 ## Step 1: Set up a deal with buyer member AN Talent (882)
