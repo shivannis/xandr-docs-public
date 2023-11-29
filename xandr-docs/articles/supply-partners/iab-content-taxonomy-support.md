@@ -117,48 +117,48 @@ This page contains extensive list of Interactive Advertising Bureau (IAB) conten
 | Food and Drink | 12 | IAB8-7 | IAB V1.0 | Food & Drink | Cuisine-Specific |
 | Food and Drink | 12 | IAB8-8 | IAB V1.0 | Food & Drink | Desserts & Baking |
 | Online Games | 13 | IAB9-25 | IAB V1.0 | Hobbies & Interests | Roleplaying Games |
-| Health-care | 14 | IAB4-7 | IAB V1.0 | Careers | Nursing |
-| Health-care | 14 | IAB6-9 | IAB V1.0 | Family & Parenting | Eldercare |
-| Health-care | 14 | IAB7-10 | IAB V1.0 | Health & Fitness | Brain Tumor |
-| Health-care | 14 | IAB7-11 | IAB V1.0 | Health & Fitness | Cancer |
-| Health-care | 14 | IAB7-12 | IAB V1.0 | Health & Fitness | Cholesterol |
-| Health-care | 14 | IAB7-13 | IAB V1.0 | Health & Fitness | Chronic Fatigue Syndrome |
-| Health-care | 14 | IAB7-14 | IAB V1.0 | Health & Fitness | Chronic Pain |
-| Health-care | 14 | IAB7-15 | IAB V1.0 | Health & Fitness | Cold & Flu |
-| Health-care | 14 | IAB7-16 | IAB V1.0 | Health & Fitness | Deafness |
-| Health-care | 14 | IAB7-17 | IAB V1.0 | Health & Fitness | Dental Care |
-| Health-care | 14 | IAB7-18 | IAB V1.0 | Health & Fitness | Depression |
-| Health-care | 14 | IAB7-19 | IAB V1.0 | Health & Fitness | Dermatology |
-| Health-care | 14 | IAB7-2 | IAB V1.0 | Health & Fitness | A.D.D. |
-| Health-care | 14 | IAB7-20 | IAB V1.0 | Health & Fitness | Diabetes |
-| Health-care | 14 | IAB7-21 | IAB V1.0 | Health & Fitness | Epilepsy |
-| Health-care | 14 | IAB7-22 | IAB V1.0 | Health & Fitness | GERD/Acid Reflux |
-| Health-care | 14 | IAB7-23 | IAB V1.0 | Health & Fitness | Headaches/Migraines |
-| Health-care | 14 | IAB7-24 | IAB V1.0 | Health & Fitness | Heart Disease |
-| Health-care | 14 | IAB7-26 | IAB V1.0 | Health & Fitness | Holistic Healing |
-| Health-care | 14 | IAB7-27 | IAB V1.0 | Health & Fitness | IBS/Crohn's Disease |
-| Health-care | 14 | IAB7-29 | IAB V1.0 | Health & Fitness | Incontinence |
-| Health-care | 14 | IAB7-3 | IAB V1.0 | Health & Fitness | AIDS/HIV |
-| Health-care | 14 | IAB7-30 | IAB V1.0 | Health & Fitness | Infertility |
-| Health-care | 14 | IAB7-31 | IAB V1.0 | Health & Fitness | Men's Health |
-| Health-care | 14 | IAB7-32 | IAB V1.0 | Health & Fitness | Nutrition |
-| Health-care | 14 | IAB7-33 | IAB V1.0 | Health & Fitness | Orthopedics |
-| Health-care | 14 | IAB7-34 | IAB V1.0 | Health & Fitness | Panic/Anxiety Disorders |
-| Health-care | 14 | IAB7-35 | IAB V1.0 | Health & Fitness | Pediatrics |
-| Health-care | 14 | IAB7-36 | IAB V1.0 | Health & Fitness | Physical Therapy |
-| Health-care | 14 | IAB7-37 | IAB V1.0 | Health & Fitness | Psychology/Psychiatry |
-| Health-care | 14 | IAB7-38 | IAB V1.0 | Health & Fitness | Senor Health |
-| Health-care | 14 | IAB7-4 | IAB V1.0 | Health & Fitness | Allergies |
-| Health-care | 14 | IAB7-40 | IAB V1.0 | Health & Fitness | Sleep Disorders |
-| Health-care | 14 | IAB7-41 | IAB V1.0 | Health & Fitness | Smoking Cessation |
-| Health-care | 14 | IAB7-43 | IAB V1.0 | Health & Fitness | Thyroid Disease |
-| Health-care | 14 | IAB7-45 | IAB V1.0 | Health & Fitness | Women's Health |
-| Health-care | 14 | IAB7-5 | IAB V1.0 | Health & Fitness | Alternative Medicine |
-| Health-care | 14 | IAB7-6 | IAB V1.0 | Health & Fitness | Arthritis |
-| Health-care | 14 | IAB7-7 | IAB V1.0 | Health & Fitness | Asthma |
-| Health-care | 14 | IAB7-8 | IAB V1.0 | Health & Fitness | Autism/PDD |
-| Health-care | 14 | IAB7-9 | IAB V1.0 | Health & Fitness | Bipolar Disorder |
-| Health-care | 14 | IAB8-10 | IAB V1.0 | Food & Drink | Food Allergies |
+| Healthcare | 14 | IAB4-7 | IAB V1.0 | Careers | Nursing |
+| Healthcare | 14 | IAB6-9 | IAB V1.0 | Family & Parenting | Eldercare |
+| Healthcare | 14 | IAB7-10 | IAB V1.0 | Health & Fitness | Brain Tumor |
+| Healthcare | 14 | IAB7-11 | IAB V1.0 | Health & Fitness | Cancer |
+| Healthcare | 14 | IAB7-12 | IAB V1.0 | Health & Fitness | Cholesterol |
+| Healthcare | 14 | IAB7-13 | IAB V1.0 | Health & Fitness | Chronic Fatigue Syndrome |
+| Healthcare | 14 | IAB7-14 | IAB V1.0 | Health & Fitness | Chronic Pain |
+| Healthcare | 14 | IAB7-15 | IAB V1.0 | Health & Fitness | Cold & Flu |
+| Healthcare | 14 | IAB7-16 | IAB V1.0 | Health & Fitness | Deafness |
+| Healthcare | 14 | IAB7-17 | IAB V1.0 | Health & Fitness | Dental Care |
+| Healthcare | 14 | IAB7-18 | IAB V1.0 | Health & Fitness | Depression |
+| Healthcare | 14 | IAB7-19 | IAB V1.0 | Health & Fitness | Dermatology |
+| Healthcare | 14 | IAB7-2 | IAB V1.0 | Health & Fitness | A.D.D. |
+| Healthcare | 14 | IAB7-20 | IAB V1.0 | Health & Fitness | Diabetes |
+| Healthcare | 14 | IAB7-21 | IAB V1.0 | Health & Fitness | Epilepsy |
+| Healthcare | 14 | IAB7-22 | IAB V1.0 | Health & Fitness | GERD/Acid Reflux |
+| Healthcare | 14 | IAB7-23 | IAB V1.0 | Health & Fitness | Headaches/Migraines |
+| Healthcare | 14 | IAB7-24 | IAB V1.0 | Health & Fitness | Heart Disease |
+| Healthcare | 14 | IAB7-26 | IAB V1.0 | Health & Fitness | Holistic Healing |
+| Healthcare | 14 | IAB7-27 | IAB V1.0 | Health & Fitness | IBS/Crohn's Disease |
+| Healthcare | 14 | IAB7-29 | IAB V1.0 | Health & Fitness | Incontinence |
+| Healthcare | 14 | IAB7-3 | IAB V1.0 | Health & Fitness | AIDS/HIV |
+| Healthcare | 14 | IAB7-30 | IAB V1.0 | Health & Fitness | Infertility |
+| Healthcare | 14 | IAB7-31 | IAB V1.0 | Health & Fitness | Men's Health |
+| Healthcare | 14 | IAB7-32 | IAB V1.0 | Health & Fitness | Nutrition |
+| Healthcare | 14 | IAB7-33 | IAB V1.0 | Health & Fitness | Orthopedics |
+| Healthcare | 14 | IAB7-34 | IAB V1.0 | Health & Fitness | Panic/Anxiety Disorders |
+| Healthcare | 14 | IAB7-35 | IAB V1.0 | Health & Fitness | Pediatrics |
+| Healthcare | 14 | IAB7-36 | IAB V1.0 | Health & Fitness | Physical Therapy |
+| Healthcare | 14 | IAB7-37 | IAB V1.0 | Health & Fitness | Psychology/Psychiatry |
+| Healthcare | 14 | IAB7-38 | IAB V1.0 | Health & Fitness | Senor Health |
+| Healthcare | 14 | IAB7-4 | IAB V1.0 | Health & Fitness | Allergies |
+| Healthcare | 14 | IAB7-40 | IAB V1.0 | Health & Fitness | Sleep Disorders |
+| Healthcare | 14 | IAB7-41 | IAB V1.0 | Health & Fitness | Smoking Cessation |
+| Healthcare | 14 | IAB7-43 | IAB V1.0 | Health & Fitness | Thyroid Disease |
+| Healthcare | 14 | IAB7-45 | IAB V1.0 | Health & Fitness | Women's Health |
+| Healthcare | 14 | IAB7-5 | IAB V1.0 | Health & Fitness | Alternative Medicine |
+| Healthcare | 14 | IAB7-6 | IAB V1.0 | Health & Fitness | Arthritis |
+| Healthcare | 14 | IAB7-7 | IAB V1.0 | Health & Fitness | Asthma |
+| Healthcare | 14 | IAB7-8 | IAB V1.0 | Health & Fitness | Autism/PDD |
+| Healthcare | 14 | IAB7-9 | IAB V1.0 | Health & Fitness | Bipolar Disorder |
+| Healthcare | 14 | IAB8-10 | IAB V1.0 | Food & Drink | Food Allergies |
 | Hotels | 15 | IAB20-18 | IAB V1.0 | Travel | Hotels |
 | Home and Decor | 16 | IAB10 | IAB V1.0 | Home & Garden | Home & Garden |
 | Home and Decor | 16 | IAB10-2 | IAB V1.0 | Home & Garden | Entertaining |
