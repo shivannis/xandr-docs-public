@@ -139,10 +139,9 @@ Per Xandr SLA, allow up to 24 hours for the file
 to process.
 
 > [!NOTE]
-> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it. For example, 
-``` 
-{"batch_segment_upload_job":[{"phase":"completed"}]}
-```
+> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it. For example,
+> 
+>`{"batch_segment_upload_job":[{"phase":"completed"}]}`
 
 ``` 
 $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"

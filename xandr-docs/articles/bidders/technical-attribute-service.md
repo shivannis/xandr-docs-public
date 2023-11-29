@@ -1,6 +1,7 @@
 ---
 title : Bidders - Technical Attribute Service
-description : Learn how to Use the read-only Technical Attribute Service to see what technical attributes are registered in the Xandr system and can apply to creatives.
+description : Learn about Technical Attributes that describe features of
+the creatives.
 ms.date : 11/28/2023
 
 ---

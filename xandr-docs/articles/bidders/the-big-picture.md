@@ -50,18 +50,18 @@ For a closer look at the auction process, please see the [Auction Overview](auct
 
 The impression is served in one of these ways:
 
-- **Find Highest Bid and Serve Immediately:**
+- **Find highest bid and serve immediately:**
   Xandr's impression bus determines the highest
   bidder and will serve the winning bidder's creative as dictated in the
   bidder response.
-- **Highest Bid Wins if It Beats Reserve Price:** If a reserve price is
+- **Highest bid wins if it beats reserve price:** If a reserve price is
   passed via a Xandr ad tag, the impression bus
   passes this price as well as the other ad call information to all
   bidders.  Bidders respond with a bid value and creative ID, and the
   highest bid that beats the reserve price will serve its creative.  If
   no bid beats the reserve price, the impression bus will pass the ad
   call on to a third-party system.
-- **Send Highest Bid to Third Party:** The ad call is directed to the
+- **Send highest bid to third party:** The ad call is directed to the
   Xandr impression bus first.  The impression
   bus holds an auction as usual among its bidders and then passes the
   highest bid on to a third-party system to decide how to fill the ad
