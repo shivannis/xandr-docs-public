@@ -37,7 +37,7 @@ Changes to existing deals created prior to enablement of Trade Desk deal sync wi
 
 No, deals created prior to the enablement of Trade Desk deal sync on your account will not automatically update. You will need to work with the Trade Desk buyer to manually update the deal in the Trade Desk UI.
 
-### If I created a deal with Trade Desk post enablement of Deal sync and then updated the deal details, will they automatically update in Trade Desk systems?
+### If I created a deal with Trade Desk post enablement of deal sync and then updated the deal details, will they automatically update in Trade Desk systems?
 
 Yes, deals created post Trade Desk deal sync enablement will have automatic deal updates. Changes you make to updatable fields (for
 example, start date, end date, price) will be automatically uploaded to Trade Desk systems. Once the changes are uploaded, this will trigger a change to the buyer status to "pending". You will need to ask the Trade Desk buyer to re-accept the deal in the Trade Desk UI.
@@ -73,7 +73,7 @@ Programmatic Guaranteed Deals cannot be multi-media type. One media type must be
 If a Trade Desk buyer manually creates the deal in the Trade Desk UI before a deal is uploaded via their proposal API, this will cause
 issues. Once a deal has been created in the manual workflow, it will not be able to sync properly via the deal sync process. As such, it is important to ensure that buyers do not create this deal manually and should wait for the deal to upload via the API integration.
 
-### When I create a PG deal, do the ask price and Impression Budget numbers have to be accurate?
+### When I create a PG deal, do the Ask Price and Impression Budget numbers have to be accurate?
 
 Yes, the "Spend" and "Impression Target" must be the same as the contracted numbers agreed with the buyer. These two numbers will be
 pushed into Trade Desk systems and buyers won't be able to update them. Any changes to these two values will trigger re-acceptance of the deal.

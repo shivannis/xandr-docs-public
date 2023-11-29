@@ -25,7 +25,7 @@ Ask the DV360 buyer to confirm they have accepted the deal in the DV360 UI. We a
 
 The following details are shared with DV360 APIs:
 
-|  Name| Type | Information |
+| Name| Type | Information |
 |--|--|--|
 | Deal Name| Deal Type | Currency |
 | Buyer Seat ID | Deal Auction Type | Floor Price/Ask Price |
@@ -58,7 +58,7 @@ The following fields cannot be changed in DV360 systems after a deal is uploaded
 
 ### Can I change a buyer for a deal once it has been uploaded to DV360 systems?
 
-Publisher cannot remove buyers from a deal once it has been uploaded to DV360 systems. However, if your account is enabled for multi buyer deals, you can add buyer seat IDs to an existing deal.
+Publisher cannot remove buyers from a deal once it has been uploaded to DV360 systems. However, if your account is enabled for multi buyer deals, you can add buyer `seat ID`s to an existing deal.
 
 ### Can I create a deal for multiple media types?
 

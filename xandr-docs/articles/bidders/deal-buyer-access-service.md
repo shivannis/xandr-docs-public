@@ -59,10 +59,10 @@ The `seller` object contains the following fields.
 
 ## Buyer
 
-The buying bidder and member who can target this deal. For a seller who uses single-buyer deals, a deal will only ever use the buyer field or the buyer_seats field, not both. The buyer field supports a single member, not an array.
-The buyer field is not used by sellers who are enabled for multi-buyer deals. Since multi-buyer deals is still in beta for sellers, you can expect some sellers to continue using the buyer field for single-buyer deals for the time being.  
+The buying bidder and member who can target this deal. For a seller who uses single-buyer deals, a deal will only ever use the `buyer` field or the `buyer_seats` field, not both. The `buyer` field supports a single member, not an array.
+The `buyer` field is not used by sellers who are enabled for multi-buyer deals. Since multi-buyer deals is still in beta for sellers, you can expect some sellers to continue using the buyer field for single-buyer deals for the time being.  
   
-The buyer field cannot be updated by the seller. Once a deal is created with a buyer field, it will not change.
+The `buyer` field cannot be updated by the seller. Once a deal is created with a `buyer` field, it will not change.
   
 The `buyer` object contains the following fields.
 
@@ -74,9 +74,9 @@ The `buyer` object contains the following fields.
 
 ## Buyer members
 
-The buying bidder and members who can target this deal. For a seller who uses multi-buyer deals, the buyer_members object can be set in combination with buyer_seats and buyer_bidders. They cannot be set in combination with buyer.
+The buying bidder and members who can target this deal. For a seller who uses multi-buyer deals, the `buyer_members` object can be set in combination with `buyer_seats` and `buyer_bidders`. They cannot be set in combination with buyer.
 
-The buyer_members field is used by sellers who are enabled for multi-buyer deals. It functions like the buyer field except for two main differences: buyer_members supports an array of objects and can be edited after creation. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using buyer_members.
+The `buyer_members` field is used by sellers who are enabled for multi-buyer deals. It functions like the `buyer` field except for two main differences: `buyer_members` supports an array of objects and can be edited after creation. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using `buyer_members`.
 
 A DSP should read this field if they:
 
@@ -94,9 +94,9 @@ The `buyer` object contains the following fields.
 
 ## Buyer seats
 
-The buying bidder and seats who can target this deal. For a seller who uses multi-buyer deals, the buyer_seats object can be set in combination with buyer_members and buyer_bidders. For a seller who uses single-buyer deals, the buyer_seats object can be set up on its own. The buyer_seats object cannot be set in combination with buyer.
+The buying bidder and seats who can target this deal. For a seller who uses multi-buyer deals, the `buyer_seats` object can be set in combination with `buyer_members` and `buyer_bidders`. For a seller who uses single-buyer deals, the `buyer_seats` object can be set up on its own. The `buyer_seats` object cannot be set in combination with buyer.
   
-All sellers, both ones setting up single buyer and multi-buyer deals, have the ability to set up deals using buyer_seats.  
+All sellers, both ones setting up single buyer and multi-buyer deals, have the ability to set up deals using `buyer_seats`.  
   
 A DSP should read this field if they:
 
@@ -116,13 +116,13 @@ The `buyer_seats` object contains the following fields.
 
 ## Buyer bidders
 
-The buying bidders who can target this deal. For a seller who uses multi-buyer deals, the buyer_bidders object can be set in combination with buyer_seats and buyer_members. They cannot be set in combination with buyer.
+The buying bidders who can target this deal. For a seller who uses multi-buyer deals, the `buyer_bidders` object can be set in combination with `buyer_seats` and `buyer_members`. They cannot be set in combination with buyer.
   
-The buyer_bidders field is used by sellers who are enabled for multi-buyer deals. When this seat is used on a deal, all buyers within the DSP are eligible. This field corresponds to a deal being sent with a blank pmp.deals.wseat on the OpenRTB bid request. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using buyer_bidders.
+The `buyer_bidders` field is used by sellers who are enabled for multi-buyer deals. When this seat is used on a deal, all buyers within the DSP are eligible. This field corresponds to a deal being sent with a blank pmp.deals.wseat on the OpenRTB bid request. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using `buyer_bidders`.
   
 A DSP should read this field if:
 
-- Can accept a deal with a blank pmp.deals.wseat on the OpenRTB bid request.
+- Can accept a deal with a blank `pmp.deals.wseat` on the OpenRTB bid request.
 
 The `buyer_bidders` object contains the following fields.
 
