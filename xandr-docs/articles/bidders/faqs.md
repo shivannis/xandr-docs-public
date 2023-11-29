@@ -1,11 +1,11 @@
 ---
-title: Bidders - FAQs
+title: FAQs
 description: The artricle displays a compiled list (category-wise) of frequently asked questions.
 ms.date: 10/28/2023
 ---
 
 
-# Bidders - FAQs
+# FAQs
 
 We have compiled a list of frequently asked questions. Please choose from the categories below:
 

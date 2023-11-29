@@ -1,11 +1,11 @@
 ---
-title: Bidders - Exchange Service
+title: Exchange Service
 description: The article discusses a exchange service for bidders.
 ms.date: 10/28/2023
 
 ---
 
-# Bidders - Exchange service
+# Exchange service
 
 Exchanges are groups of sellers organized to allow for easier supply targeting.
 

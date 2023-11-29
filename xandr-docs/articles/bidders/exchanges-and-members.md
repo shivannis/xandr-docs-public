@@ -1,10 +1,10 @@
 ---
-title: Bidders - Exchanges and Members
+title: Exchanges and Members
 description: The article defines the exchange service and corresponding members.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Exchanges and members
+# Exchanges and members
 
 ## Workflow
 

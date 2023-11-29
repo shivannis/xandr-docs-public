@@ -1,10 +1,10 @@
 ---
-title: Bidders - Enhanced Bidder Profiles
+title: Enhanced Bidder Profiles
 description: The article discusses improvements to bidder profiles and provides an overview of high-level changes. 
 ms.date: 10/28/2023
 ---
 
-# Bidders - Enhanced bidder profiles
+# Enhanced bidder profiles
 
 Bidder profiles filter traffic and allow bidders to apply business rules on objects. This is to ensure specific types of traffic are either received or not received. Xandr will partner with you, and provide the proper tools to ensure you have a profile that
 matches your business needs.
@@ -271,7 +271,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
-**Domain Lists**
+**Domain lists**
 
 ```
 {
@@ -319,7 +319,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
-**Ad Types**
+**Ad types**
 
 ``` pre
 {
@@ -380,7 +380,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
- **Supply Types**
+ **Supply types**
 
 ``` pre
 {
@@ -425,7 +425,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
-**Inventory Attributes**
+**Inventory attributes**
 
 ```
 {
@@ -466,7 +466,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
-**Unknown Users Action**
+**Unknown users action**
 
 ``` pre
 {
@@ -508,7 +508,7 @@ Additional API examples are available here: [API Use Cases for Enhanced Bidder P
 }
 ```
 
-**Non-Audited URL Action**
+**Non-audited URL action**
 
 ``` pre
 {

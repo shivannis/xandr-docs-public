@@ -1,9 +1,9 @@
 ---
-title: Bidders - Filters
+title: Filters
 description: The article describes the filters.
 ---
 
-# Bidders - Filters
+# Filters
 
 **Filters** allow you to change the list of creatives that you receive. This applies to an individual creative, or a set of creatives.
 

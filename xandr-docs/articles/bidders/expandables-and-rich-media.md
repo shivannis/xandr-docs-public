@@ -1,15 +1,14 @@
 ---
-title: Bidders - Expandables and Rich Media
+title: Expandables and Rich Media
 description: The article discusses the inclusion of expandable rich media support across various supply platforms, including those connected to Xandr-enabled exchanges such as the Microsoft Advertising Exchange.
 ms.date : 10/28/2023
 ---
 
-# Bidders - Expandables and rich media
+# Expandables and rich media
 
 ## Overview
 
-Xandr provides expandable rich media support on all supply from platform networks and Xandr-enabled exchanges, including the Microsoft
-Advertising Exchange.
+Xandr provides expandable rich media support on all supply from platform networks and Xandr-enabled exchanges, including the Microsoft Advertising Exchange.
 
 ## Creative specification
 
