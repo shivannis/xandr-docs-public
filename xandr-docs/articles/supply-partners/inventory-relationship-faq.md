@@ -1,7 +1,6 @@
 ---
 title: FAQ - Supply Partner Inventory relationship
-description: Sellers must provide information about inventory sources to maintain transparency and accountability in the supply sold.
-ms.custom: supply-partners
+description: Frequently asked questions about inventory relationship
 ms.date: 10/28/2023
 ---
 
