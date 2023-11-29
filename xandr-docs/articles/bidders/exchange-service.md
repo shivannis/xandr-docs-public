@@ -11,9 +11,9 @@ Exchanges are groups of sellers organized to allow for easier supply targeting.
 
 - This inventory will be targeted all at once. You can combine it with domain list targeting and member targeting.
 - As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all members within it and any new members that join.
-- We took our premium publishers and put them all in one group, called " Supply". When you access and target inventory, you can target Supply. This will target all those premium publishers for you.
-  - You can find out more information about  Supply here: [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
-- Sellers that belong to Exchange 1,  Supply, can not be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
+- We took our premium publishers and put them all in one group, called "Supply". When you access and target inventory, you can target Supply. This will target all those premium publishers for you.
+  - You can find out more information about Supply here: [Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
+- Sellers that belong to Exchange 1, Supply, can not be individually included and excluded. The group must be targeted as a whole. You can individually include/exclude members that belong to other exchanges.
 
 Today we have three exchanges:
 
@@ -40,7 +40,7 @@ Today we have three exchanges:
 | `last_activity` | enum | The timestamp of last modification. |
 | `members` | array of objects | Array of members that belong to that exchange. |
 | `name` | int | The name of the exchange. |
-| `restricted` | boolean | Indicates if the members within the exchange can be individually targeted or blocked.<br>If true, the members within this exchange can not be individually included or excluded.<br>If false, the members within this exchange can be individually included or excluded. |
+| `restricted` | boolean | Indicates if the members within the exchange can be individually targeted or blocked.<br> - If `true`, the members within this exchange can not be individually included or excluded.<br> - If `false`, the members within this exchange can be individually included or excluded. |
 
 ## Members object
 

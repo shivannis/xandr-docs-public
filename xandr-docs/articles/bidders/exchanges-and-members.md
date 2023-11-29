@@ -13,7 +13,7 @@ Clicking the **Exchanges and Members** tab accesses a screen where you can sele
 > [!NOTE]
 > For some exchanges, it is allowed to also include/exclude specific members. Other exchanges do not have this option. In this case, the include/exclude options will be disabled.
 
-:::image type="content" source="media/exchanges-and-members-figure-a.png" alt-text="A screenshot that provides information about an exchange and its members.":::
+:::image type="content" source="media/exchanges-and-members-figure-a.png" alt-text="Screenshot that provides information about an exchange and its members.":::
 
 Click on the **arrow** to the right of the **Name** entry to access a list of members in that exchange. You can then select the members you want.
 
@@ -26,9 +26,8 @@ Exchanges are groups of sellers (members) organized to allow for easier supply 
 - Targeting an exchange will include or exclude traffic from all of its members. You can combine exchange targeting with domain list targeting and/or member targeting.
 - As new sellers are added, you do not have to update your profile or targeting. When targeting a single exchange, you will receive all members within it and any new members that join.
 - The Microsoft Monetize supply exchange includes inventory that represents the most direct path to supply. This inventory is brought to you directly through the Xandr SSP technology.  
-  - You can find out more information about Microsoft Monetize supply here: [Microsoft Monetize Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md)
-- Sellers that belong to the Microsoft Monetize
-  supply exchange can not be individually included and excluded.
+  - You can find out more information about Microsoft Monetize supply here: [Microsoft Monetize Supply for External Demand Partners](xandr-monetize-supply-for-external-demand-partners.md).
+- Sellers that belong to the Microsoft Monetize supply exchange can not be individually included and excluded.
 
 ## Related topics
 

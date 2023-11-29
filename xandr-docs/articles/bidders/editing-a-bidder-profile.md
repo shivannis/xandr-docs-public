@@ -4,9 +4,9 @@ description: The article provides instructions on changing a bidder profile.
 ms.date: 10/28/2023
 ---
 
-# Editing a bidder's profile
+# Editing a Bidder's profile
 
-Once you have saved a profile, clicking into that specific profile from the table on the left on the Profiles screen opens the [Bidder Profile Targeting Options](bidder-profile-targeting-options.md) on the right for editing purposes. Make your edits and click **Save**.
+Once you have saved a profile, clicking into that specific profile from the table on the left on the **Profiles** screen opens the [Bidder Profile Targeting Options](bidder-profile-targeting-options.md) on the right for editing purposes. Make your edits and click **Save**.
 
 ## Related topics
 

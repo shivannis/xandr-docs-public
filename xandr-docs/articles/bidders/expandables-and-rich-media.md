@@ -1,6 +1,6 @@
 ---
 title: Expandables and Rich Media
-description: The article discusses the inclusion of expandable rich media support across various supply platforms, including those connected to Xandr-enabled exchanges such as the Microsoft Advertising Exchange.
+description: The article explores adding versatile rich media support to supply platforms, including Xandr-enabled exchanges like the Microsoft Advertising Exchange.
 ms.date : 10/28/2023
 ---
 
@@ -39,7 +39,7 @@ Expandables are implemented through a broader "media type" system in Xandr. This
 
 Media types and subtypes are in a two-tiered hierarchy:
 
-| **Media Type** | **ID** | **Media Subtype** | **ID** |
+| Media Type | ID | Media Subtype | ID |
 |--|--|--|--|
 | **Banner** | 1 | Standard Banner | 1 |
 |  |  | In-Banner Video | 3 |
@@ -104,9 +104,9 @@ There will be two new fields in the bid request to indicate the availability of 
 
 | Field | Description | Notes |
 |--|--|--|
-| allowed_media_types | Array of media type ids | This field is optional. If it appears, creatives of the specified media types may serve on this impression. |
-| allowed_media_subtypes | Array of media subtype ids | This field is optional. If it appears, creatives of the specified media subtypes may serve on this impression. |
-| media_subtypes | Array of media subtype in string format | This field is optional. If it appears, it will list the allowed media in string format. |
+| `allowed_media_types` | Array of media type ids | This field is optional. If it appears, creatives of the specified media types may serve on this impression. |
+| `allowed_media_subtypes` | Array of media subtype ids | This field is optional. If it appears, creatives of the specified media subtypes may serve on this impression. |
+| `media_subtypes` | Array of media subtype in string format | This field is optional. If it appears, it will list the allowed media in string format. |
 
 These fields will be on each "tag" object in the bid request:
 
@@ -125,12 +125,12 @@ These fields will be on each "tag" object in the bid request:
 
 To determine if your expandable creative will serve:
 
-- First, check if "allowed_media_types" contains the "Expandable" Media Type.
-- If "Expandable" is not in "allowed_media_types", check if the media_subtype id is allowed in "allowed_media_subtypes".
+- First, check if `allowed_media_types` contains the `Expandable` Media Type.
+- If `Expandable` is not in allowed_media_types, check if the `media_subtype` ID is allowed in `allowed_media_subtypes`.
 
 ### Creative upload
 
-When expandable creatives are uploaded to the Creative Service, you will need to denote the expandable ad server being used.
+When expandable creatives are uploaded to the **Creative Service**, you will need to denote the expandable ad server being used.
 
 | Field | Description | Notes |
 |--|--|--|
