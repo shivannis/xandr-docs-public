@@ -17,7 +17,7 @@
     href: outgoing-bid-response-to-ssps.md
   - name: IAB Content Taxonomy Support
     href: iab-content-taxonomy-support.md
-  - name: Client Hints for SSP Clients
+  - name: User Agent Client Hints for SSP Clients
     href: client-hints-for-ssp-clients.md
   - name: Define Ad Quality Rules
     href: define-ad-quality-rules.md
