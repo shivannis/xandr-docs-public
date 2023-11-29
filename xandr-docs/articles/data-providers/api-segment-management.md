@@ -1,18 +1,15 @@
 ---
-Title : API Segment Management
-Description : ## API Segment Management
+title : API Segment Management
+description : Learn creating, modifying, deleting and best practices for managing data provider segments. 
 ms.custom : data-providers
-ms.date : 10/28/2023
-Data providers will need to use Xandr's
-impression bus API (api.adnxs.com) to create,
+ms.date : 11/29/2023
+
 ---
 
 
-# API Segment Management
+# API segment management
 
-
-
-
+This page deals with creating, modifying and deleting segments and best practices for managing data provider segments.
 
 ## API Segment Management
 
@@ -21,18 +18,10 @@ impression bus API (api.adnxs.com) to create,
 modify and delete segments. For any API interaction, you will need the
 following:
 
-1.  Authorization: see <a
-    href="xandr-api/authentication-service.md"
-    class="xref" target="_blank">Authentication Service</a> 
-2.  Segment creation or modification: see <a
-    href="xandr-api/segment-service.md"
-    class="xref" target="_blank">Segment Service</a> 
+1. Authorization: see [Authentication Service](../digital-platform-api/authentication-service.md)
+1. Segment creation or modification: see [Segment Service](../digital-platform-api/segment-service.md)
 
-
-
-
-
-## Best Practices
+## Best practices
 
 When managing the data provider segments, the following best practices
 should be adhered to:
@@ -60,16 +49,10 @@ should be adhered to:
     data provider name. If a segment name with the data provider name
     appended is longer than 255 characters, the segment name should be
     truncated to fit the data provider name.
-    
 
-    <b>Tip:</b> The "segment name" here
-    corresponds to the value of the `short_name` field in the JSON used
-    to create the segment (see <a
-    href="xandr-api/segment-service.md"
-    class="xref" target="_blank">Segment Service</a> for more
-    information).
+> [!TIP]
+> The "segment name" here corresponds to the value of the `short_name` field in the JSON used to create the segment (see [Segment Service](../digital-platform-api/segment-service.md) for more information).
 
-    
 - **Specify an expiry time**: Many integrations will only consist of
   adding users to segments and not removing users from segments. For
   this reason, it is necessary to specify a period of time after which a
