@@ -7,8 +7,8 @@
   - name: Integration Process
     href: integration-process.md
   
-  - name: API Documentation
-    href: api-documentation.md
+  #- name: API Documentation
+    #href: api-documentation.md
 - name: OpenRTB Specs
   items:
   - name: Incoming Bid Request from SSPs
