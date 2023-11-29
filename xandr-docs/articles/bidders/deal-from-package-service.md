@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal From Package Service
-description: The article outlines a process involving package services, where sellers offer deals (packages) to buyers. Buyers use the Package Buyer Access Service to browse and select a suitable package, then utilize the Deal From Package service to create a deal with the seller.
+description: The article explains a streamlined process, the sellers present packages, buyers use Package Buyer Access to choose one, and then create a deal with sellers using Deal From Package service.
 ms.date: 10/28/2023
 ---
 

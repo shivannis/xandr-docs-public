@@ -1,6 +1,6 @@
 ---
 title: Bidders - Delivery Type Service
-description: The article outlines the Delivery Type Service, explaining how it allows users to identify registered video content delivery types in the Xandr system. It also mentions the capability to add video content fields to line item or deal line item targeting.
+description: The article covers Xandr's Delivery Type Service, allowing users to identify registered video content delivery types. It also discusses the ability to add video content fields for targeting in line items or deal line items.
 ms.date: 10/28/2023
 ---
 

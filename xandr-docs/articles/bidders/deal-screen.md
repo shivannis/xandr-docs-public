@@ -17,12 +17,11 @@ The **Deals** screen is where a bidder can see the deals Xandr publishers have
 
 ## Main screen metrics
 
-The Main deal screen lists all of the deals for a bidder, and their associated attributes/metadata. The table below details each of the
-columns displayed:
+The Main deal screen lists all of the deals for a bidder, and their associated attributes/metadata. The table below details each of the columns displayed:
 
 | Column Name | Filterable | Description |
 |--|--|--|
-| **Buyers** | Yes | The buying member or seat who can target this deal. Can be Xandr Member ID or DSP Buyer Seat ID.<br>Both the ID and name for the buyer is listed in this column. |
+| **Buyers** | Yes | The buying member or seat who can target this deal. Can be Xandr Member ID or DSP `Buyer Seat ID`.<br>Both the ID and name for the buyer is listed in this column. |
 | **Sellers** | Yes | The selling member who is offering the deal. <br>Both the ID and name for the seller is listed in this column. |
 | **Activity Status** | Yes | Indicates if deal is Active or Inactive. |
 |**Deal Name/ID** | Yes | Name of the deal and Xandr Deal ID. |
@@ -39,7 +38,7 @@ columns displayed:
 To filter data by any of the filterable columns (see table above):
 
 1. Click on the column heading to enable the search box or filter selection values.
-1. Once you select your filter values, click on the "Search" button on the top right hand corner.
+1. Once you select your filter values, click on the **Search** button on the top right hand corner.
 1. Your search results will display on the main screen.
 
 ## Side panel
@@ -52,7 +51,7 @@ Access additional details about the deal by clicking on the deal row to open a s
 | Field Name | Description |
 |--|--|
 | Seller | The seller name and Seller ID (included in parenthesis) for the deal. |
-| Buyer | The buyer member id or buyer seat id eligible to bid on the deal. Id is included in parenthesis. |
+| Buyer | The buyer member id or buyer seat ID eligible to bid on the deal. Id is included in parenthesis. |
 | Type | Details whether the deal is:<br> - public deal<br> - private deal<br> - programmatic guaranteed deal |
 | Imps Matched | The total number of impressions that match the deal's targeting. |
 | Bid Requests | The number of bid requests sent that include the deal. |
@@ -74,9 +73,8 @@ Access additional details about the deal by clicking on the deal row to open a s
 
 ## Download Data
 
-Users can download data displayed from the main deal screen by clicking the "download view" and "download last xx" buttons on the top right hand side of the deal screen.
+Users can download data displayed from the main deal screen by clicking the "download view" and **download last xx** buttons on the top right hand side of the deal screen.
 
 **Download View:** This will download all the deals currently displayed on the screen into a CSV file.
 
-**Download last XX:** This will download all of the deals currently displayed on the screen as well as all deals in previous pages. For
-example, if user is viewing page 3 of the deals list, then deals from all 3 pages will be downloaded to the CSV.
+**Download last XX:** This will download all of the deals currently displayed on the screen as well as all deals in previous pages. For example, if user is viewing page 3 of the deals list, then deals from all 3 pages will be downloaded to the CSV.

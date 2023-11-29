@@ -46,7 +46,7 @@ the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
 > [!NOTE]
 > We recommend using the [Deal Buyer Access Service](deal-buyer-access-service.md) to validate that the deal exists in Xandr's system. This will help you avoid targeting a deal that is inactive or not what you expected.
 
-Expand for an example:
+Example:
 
 ```
 $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'

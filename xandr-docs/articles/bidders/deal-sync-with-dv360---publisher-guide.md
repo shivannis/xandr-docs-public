@@ -7,13 +7,11 @@ ms.date: 10/28/2023
 # Bidders - Deal sync with DV360 - publisher guide 
 
 > [!NOTE]
-> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If
-> you would like to test out this product, please reach out to your Xandr account representative.
+> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, please reach out to your Xandr account representative.
 
 ## Overview
 
-Xandr's integration with the Display & Video 360 (DV360) Seller API automatically synchronizes the deals created in
-Microsoft Monetize with the Google DV360 system. This enables a more seamless deal transaction between Microsoft Monetize publishers and DV360 buyers.
+Xandr's integration with the Display & Video 360 (DV360) Seller API automatically synchronizes the deals created in Microsoft Monetize with the Google DV360 system. This enables a more seamless deal transaction between Microsoft Monetize publishers and DV360 buyers.
 
 > [!NOTE]
 > You can manually set up deals with DV360, but this requires buyers to manually register publisher deals in the DV360 user interface. Details of the manual process can be found in [DV360 Buying Guide](dv360-buying-guide.md). The manual process of setting up deals can result in delays and issues due to human error.
@@ -21,24 +19,22 @@ Microsoft Monetize with the Google DV360 system. This enables a more seamless de
 The key benefits of using an automatic synchronization process are:
 
 - Seamless deal set up process with DV360 buyers.
-- Elimination of requirement for buyers to manually register deals in
-  the DV360 UI.
-- Automatic deal synchronization of deals and deal updates from Monetize
-  to DV360 (with some restrictions, which are explained below).  
+- Elimination of requirement for buyers to manually register deals in the DV360 UI.
+- Automatic deal synchronization of deals and deal updates from Monetize to DV360 (with some restrictions, which are explained below).  
 
 ## Process
 
 ### New deal creation
 
-New seat id deals created in the Monetize UI automatically get uploaded to DV360 systems for buyer acceptance, as shown here:
+New seat ID deals created in the Monetize UI automatically get uploaded to DV360 systems for buyer acceptance, as shown here:
 
-:::image type="content" source="media/deal-sync-with-dv360-publisher-guide-a.png" alt-text="The screenshot that illustrates how new seat ID deals created in Monetize UI are automatically uploaded to DV360 systems for buyer acceptance.":::
+:::image type="content" source="media/deal-sync-with-dv360-publisher-guide-a.png" alt-text="Screenshot that illustrates how new seat ID deals created in Monetize UI are automatically uploaded to DV360 systems for buyer acceptance.":::
 
 ### Deal update
 
 Updates to newly created deals (post deal sync enablement) automatically get uploaded to DV360 systems for buyer acceptance:
 
-:::image type="content" source="media/deal-sync-with-dv360-publisher-guide-b.png" alt-text="The screenshot that shows that newly created deals, with post-deal sync enabled, are automatically uploaded to DV360 systems for buyer acceptance.":::
+:::image type="content" source="media/deal-sync-with-dv360-publisher-guide-b.png" alt-text="Screenshot that shows that newly created deals, with post-deal sync enabled, are automatically uploaded to DV360 systems for buyer acceptance.":::
 
 ### Frequency of deal sync
 
@@ -62,18 +58,15 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 
 - Deals must be set up with DV360 partner IDs. This deal synchronizing process does not support member ID deals.
 - Once a partner ID is selected for a deal, it cannot be changed in subsequent updates.
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
-  deal in the DV360 UI.  
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the DV360 UI.  
 
-**Programmatic guaranteed (PG) deals**
+**Programmatic Guaranteed (PG) Deals**
 
 - Deals must be set up with DV360 partner IDs. This deal sync process does not support member ID deals.
 - You cannot change the DV360 partner ID once the deal is created.
 - The deal must have only ONE declared media type (video, banner, native, audio).
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the
-  deal in the DV360 UI.
-- Only update deal details when necessary and **always** notify the buyer to approve the changes. The DV360 buyer continues to bid using
-  previous PG deal details until new deal updates are approved.
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the DV360 UI.
+- Only update deal details when necessary and **always** notify the buyer to approve the changes. The DV360 buyer continues to bid using previous PG deal details until new deal updates are approved.
 - PG deals must include allowed creative sizes for banner and display.
 
 **Multi Buyer Deals**
@@ -81,4 +74,4 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 - Deals set up with multiple DV360 seat IDs automatically get synchronized.
 - Bidder level deals (set up with ALL DV360 buyers) are not supported in automatic deal synchronizing.
 - The buyer that accepts a multi-buyer deal in the DV360 UI must have access to accounts for **all** seat IDs included in the deal. If that is not possible, the buyer should reach out to Google support to accept the deal.
-- Once a DV360 seat id is added to a deal, it cannot be removed.
+- Once a DV360 seat ID is added to a deal, it cannot be removed.

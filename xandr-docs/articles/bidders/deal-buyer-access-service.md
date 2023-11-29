@@ -26,7 +26,7 @@ This read-only service lets bidders view information about the negotiated deals 
 
 | Field | Type (Length) | Description |
 |---|---|---|
-| `active` | boolean | If true, the deal is active. Note that the deal will be available only when this field is true, `start_date` is in the past (or null), and `end_date` is in the future (or null). |
+| `active` | boolean | If `true`, the deal is active. Note that the deal will be available only when this field is `true`, `start_date` is in the past (or null), and `end_date` is in the future (or null). |
 | `ask_price` | int | The  price associated with the deal. This is the minimum amount the seller will accept for this inventory. |
 | `brands` | array of objects | The brands of creatives that are eligible for the deal. For more details, see [Brands](deal-buyer-access-service.md#brands) below. |
 | `buyer` | object | The buying bidder and member who can target this deal. For more details, see [Buyer](deal-buyer-access-service.md#buyer) below. |
@@ -37,7 +37,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `currency` | enum | The currency for the `floor_price`. |
 | `description` | string (65535) | The description of the deal. |
 | `end_date` | timestamp | The day and time when the deal stops being available to the buyer. Null corresponds to "indefinitely". |
-| `floor_price` | double | **Deprecated. Please refer to** `ask_price` **instead**. The minimum CPM value that the bidder must bid to be eligible for the deal.<br>**Note**: If `use_deal_floor` is false, `floor_price` will be 0. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
+| `floor_price` | double | **Deprecated. Please refer to** `ask_price` **instead**. The minimum CPM value that the bidder must bid to be eligible for the deal.<br>**Note**: If `use_deal_floor` is `false`, `floor_price` will be 0. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
 | `id` | int | The ID of the deal. This is the field you will receive on the bid request. Note that if you set up a deal with an external seller and funnel it through Xandr, we will turn their code into this ID. |
 | `last_modified` | timestamp | The date and time when the deal was last modified. |
 | `name` | string (255) | The name of the deal. |
@@ -46,7 +46,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. Null corresponds to "immediately". |
 | `suggested_min_bid_price` | int | The same amount as the `ask_price`.<br>**Note**: Your minimum bid should be higher than the `ask_price` to account for the auction service charges specified in your Xandr contract. For deals with external suppliers, your bid should also include additional margin to account for discrepancies. Bidding the more than the `ask_price` helps ensure that you are eligible for the deal but there is no guarantee that your bid will win. |
 | `type` | object | The type of deal. A deal can be an open auction or a private auction. For more details, see [Type](deal-buyer-access-service.md#type) below. |
-| `use_deal_floor` | boolean | If true, the `floor_price` is applied for the deal.<br>**Note**: When `use_deal_floor` is true, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
+| `use_deal_floor` | boolean | If `true`, the `floor_price` is applied for the deal.<br>**Note**: When `use_deal_floor` is `true`, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
 
 ## Seller
 
@@ -76,8 +76,7 @@ The `buyer` object contains the following fields.
 
 The buying bidder and members who can target this deal. For a seller who uses multi-buyer deals, the buyer_members object can be set in combination with buyer_seats and buyer_bidders. They cannot be set in combination with buyer.
 
-The buyer_members field is used by sellers who are enabled for multi-buyer deals. It functions like the buyer field except for two main differences: buyer_members supports an array of objects and can be edited after creation. Multi-buyer deals is still a beta feature so not
-all sellers will have access to set up deals using buyer_members.
+The buyer_members field is used by sellers who are enabled for multi-buyer deals. It functions like the buyer field except for two main differences: buyer_members supports an array of objects and can be edited after creation. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using buyer_members.
 
 A DSP should read this field if they:
 
@@ -119,9 +118,7 @@ The `buyer_seats` object contains the following fields.
 
 The buying bidders who can target this deal. For a seller who uses multi-buyer deals, the buyer_bidders object can be set in combination with buyer_seats and buyer_members. They cannot be set in combination with buyer.
   
-The buyer_bidders field is used by sellers who are enabled for
-multi-buyer deals. When this seat is used on a deal, all buyers within the DSP are eligible. This field corresponds to a deal being sent with a blank pmp.deals.wseat on the OpenRTB bid request. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals
-using buyer_bidders.
+The buyer_bidders field is used by sellers who are enabled for multi-buyer deals. When this seat is used on a deal, all buyers within the DSP are eligible. This field corresponds to a deal being sent with a blank pmp.deals.wseat on the OpenRTB bid request. Multi-buyer deals is still a beta feature so not all sellers will have access to set up deals using buyer_bidders.
   
 A DSP should read this field if:
 
@@ -428,7 +425,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?id=689280'
 
 **View all deals that have not expired**
 
-In this example, assuming today is December 4, 2013, we want to find all deals that have not expired. To do this, we pass the `min_end_date="2013-12-04 00:00:00"` filter in the query string. Please Note that however, that deals with no end date will not show up in the response.
+In this example, assuming today is December 4, 2013, we want to find all deals that have not expired. To do this, we pass the `min_end_date="2013-12-04 00:00:00"` filter in the query string. Please note that however, that deals with no end date will not show up in the response.
 
 ```
 $ curl -b cookies -c cookies 'https://api.adnxs.com/deal-buyer-access?min_end_date="2013-12-04 00:00:00"'

@@ -53,7 +53,7 @@ The following fields cannot be changed in Trade Desk systems after a deal is upl
 
 ### Can I change a buyer for a deal once it has been uploaded to Trade Desk systems?
 
-Publishers cannot remove the primary buyer from a deal once it has been uploaded to Trade Desk systems. You can check which buyer is designated the primary buyer by pulling the buyer-deal-sync object in the API or Database. If your account is enabled for multi-buyer deals, you can add additional buyer seat ids to an existing deal.
+Publishers cannot remove the primary buyer from a deal once it has been uploaded to Trade Desk systems. You can check which buyer is designated the primary buyer by pulling the buyer-deal-sync object in the API or Database. If your account is enabled for multi-buyer deals, you can add additional buyer seat IDs to an existing deal.
 
 ### Can I create a deal for multiple media types?
 
@@ -66,14 +66,14 @@ The order of priority will be:
 1. native
 1. audio
 
-Programmatic Guaranteed deals cannot be multi-media type. One media type must be declared in all PG deals with Trade Desk.
+Programmatic Guaranteed Deals cannot be multi-media type. One media type must be declared in all PG deals with Trade Desk.
 
 ### If a Trade Desk buyer manually creates a deal first in Trade Desk UI using the deal ID, and then the deal with the same deal ID gets uploaded to Trade Desk via the deal sync process, how will Trade Desk systems handle it?
 
 If a Trade Desk buyer manually creates the deal in the Trade Desk UI before a deal is uploaded via their proposal API, this will cause
 issues. Once a deal has been created in the manual workflow, it will not be able to sync properly via the deal sync process. As such, it is important to ensure that buyers do not create this deal manually and should wait for the deal to upload via the API integration.
 
-### When I create a PG deal, do the ask price and impression budget numbers have to be accurate?
+### When I create a PG deal, do the ask price and Impression Budget numbers have to be accurate?
 
 Yes, the "Spend" and "Impression Target" must be the same as the contracted numbers agreed with the buyer. These two numbers will be
 pushed into Trade Desk systems and buyers won't be able to update them. Any changes to these two values will trigger re-acceptance of the deal.

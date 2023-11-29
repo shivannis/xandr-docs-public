@@ -27,10 +27,10 @@ The following details are shared with DV360 APIs:
 
 |  Name| Type | Information |
 |--|--|--|
-| - Deal Name| - Deal Type | - Currency |
-| - Buyer Seat ID | - Deal Auction Type |  - Floor Price/Ask Price |
-| - Seller Name | - Start Date | - Allowed Media Types (PG Deals ONLY) |
-| - Deal ID |  - End Date | - Allowed Creative Sizes (PG Deals ONLY) |
+| Deal Name| Deal Type | Currency |
+| Buyer Seat ID | Deal Auction Type | Floor Price/Ask Price |
+| Seller Name | Start Date | Allowed Media Types (PG Deals ONLY) |
+| Deal ID |  End Date | Allowed Creative Sizes (PG Deals ONLY) |
 | |  |  |
 
 ### What will happen to existing DV360 deals that were created before enablement of deal sync?
@@ -58,15 +58,13 @@ The following fields cannot be changed in DV360 systems after a deal is uploaded
 
 ### Can I change a buyer for a deal once it has been uploaded to DV360 systems?
 
-Publisher cannot remove buyers from a deal once it has been uploaded to DV360 systems. However, if your account is enabled for multi buyer
-deals, you can add buyer seat ids to an existing deal.
+Publisher cannot remove buyers from a deal once it has been uploaded to DV360 systems. However, if your account is enabled for multi buyer deals, you can add buyer seat IDs to an existing deal.
 
 ### Can I create a deal for multiple media types?
 
-While multi format deals are supported in Monetize UI, DV360 does encourage publishers to declare only one media type in a deal. This will
-allow buyers to get more granular details about how to target a deal.
+While multi format deals are supported in Monetize UI, DV360 does encourage publishers to declare only one media type in a deal. This will allow buyers to get more granular details about how to target a deal.
 
-Programmatic Guaranteed deals cannot be multi-media type. One media type must be declared in all PG deals with DV360.
+Programmatic Guaranteed Deals cannot be multi-media type. One media type must be declared in all PG deals with DV360.
 
 ### **If a DV360 buyer manually creates a deal first in DV360 UI using the deal ID, and then the deal with the same deal ID gets uploaded to DV360 via the deal sync process, how will DV360 systems handle it?**
 

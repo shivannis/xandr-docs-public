@@ -26,15 +26,15 @@ The key benefits of using an automatic synchronization process are:
 
 ### New deal creation
 
-New seat id deals created in the Monetize UI automatically get uploaded to Trade Desk systems for buyer acceptance, as shown here:
+New seat ID deals created in the Monetize UI automatically get uploaded to Trade Desk systems for buyer acceptance, as shown here:
 
-:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-a.png" alt-text="The screenshot that illustrates the newly created seat ID deals in the Monetize UI is automatically uploaded to Trade Desk systems for buyer approval:":::
+:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-a.png" alt-text="Screenshot that illustrates the newly created seat ID deals in the Monetize UI is automatically uploaded to Trade Desk systems for buyer approval:":::
 
 ### Deal update
 
 Updates to newly created deals (post deal sync enablement) automatically get uploaded to Trade Desk systems for buyer acceptance:
 
-:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-b.png" alt-text="The screenshot that demonstrates the synchronization of deals with the Trade Desk Publisher Guide:":::
+:::image type="content" source="media/deal-sync-with-trade-desk-publisher-guide-fig-b.png" alt-text="Screenshot that demonstrates the synchronization of deals with the Trade Desk Publisher Guide:":::
 
 ### Frequency of deal sync
 
@@ -72,7 +72,7 @@ While there are no changes to how a publisher create deals in Monetize UI, publi
 
 **Multi-buyer deals**
 
-- Deals set up with multiple Trade Desk seat ids automatically get synchronized.
+- Deals set up with multiple Trade Desk seat IDs automatically get synchronized.
 - Bidder-level deals (set up with ALL Trade Desk buyers) are not supported in automatic deal synchronizing.
 - Xandr systems will randomly assign one buyer to be the primary buyer on the multi-buyer deal. This primary buyer will be the only account allowed to approve the deal. You can check the primary buyer assigned to the deal in the buyer-deal-sync API or database tables.
 - The primary buyer on a multi-buyer deal cannot be changed or removed
