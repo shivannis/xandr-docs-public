@@ -52,6 +52,7 @@ additionalContent:
             text: Release Notes
       # Card
       - title: Microsoft Curate
+        summary: (*Powered by Xandr)
         links:
           - url: curate/index.yml
             text: Product Documentation
