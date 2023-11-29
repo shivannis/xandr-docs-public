@@ -1,11 +1,11 @@
 ---
-title: FAQ - Integration Process
+title: FAQ - Supply Partner Integration Process
 description: This article addresses frequently asked questions on the process of integrating supply partners.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
 
-# FAQ - Integration process
+# FAQ - Supply Partner Integration process
 
 ## OpenRTB
 
