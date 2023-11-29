@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Supply Partners - IAB content taxonomy support
 
-This page contains extensive list of Interactive Advertising Bureau (IAB) content categories. However, support to theses content categories is driven by policies, guidelines and local as well as country specific laws.
+This page contains an extensive list of Interactive Advertising Bureau (IAB) content categories. However, support to theses content categories is driven by organization policies, legal and social guidelines and country specific laws.
 
 > [!NOTE]
 > The specific version of the specs described here is a combination of IABv1 categorisation as well as codes
