@@ -1,11 +1,11 @@
 ---
-title: Client Hints for SSP Clients
+title: User Agent Client Hints for SSP Clients
 description: In this article, learn about the user-agent client hints API for SSP clients and the supported Open RTB for maximum performance and optimal device targeting.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
 
-# Client hints for SSP clients
+# User agent client hints for SSP clients
 
 ## Overview
 
@@ -13,10 +13,10 @@ The User-Agent Client Hints API is an expansion to the Client Hints API, that en
 
 Client Hints are intended to be an alternative source of information contained in the User-Agent header. User-Agent (UA) reduction is an
 effort to minimize the identifying information shared in the User-Agent string. As a result, the return values from certain `Navigator`
-interfaces will be reduced, including: `navigator.userAgent`, `navigator.appVersion`, and `navigator.platform`. If we do not make the
-necessary adjustments and fail to adapt to this change, certain capabilities will be forfeited, including the ability to identify and
+interfaces are reduced, including: `navigator.userAgent`, `navigator.appVersion`, and `navigator.platform`. If we do not make the
+necessary adjustments and fail to adapt to this change, certain capabilities would be forfeited, including the ability to identify and
 prevent fraud and bot activity, recognizing browsers for rendering purposes, and targeting buyers based on their devices. Furthermore,
-buyers will no longer be able to take advantage of device targeting.
+buyers would no longer be able to take advantage of device targeting.
 
 **Current UA string (detected as Tablet device):**
 
