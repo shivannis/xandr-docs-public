@@ -37,7 +37,7 @@ additionalContent:
     - title: Browse Product Offerings
       items:
       # Card
-      - title: Microsoft Invest
+      - title: Microsoft Invest (*Powered by Xandr)
         links:
           - url: invest/index.yml
             text: Product Documentation
