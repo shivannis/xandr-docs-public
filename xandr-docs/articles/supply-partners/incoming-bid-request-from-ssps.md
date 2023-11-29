@@ -453,7 +453,7 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 | `model` | string | Specifies the model of the device. Only used if not supported via the `ua` field. |
 | `os` | string | This is the code field that you obtain from operating system code. |
 | `carrier` | string | Specifies carrier for the device. Only used if not supported via the `ua` field. |
-| `language` | string | Specifies the browser language; use [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) or [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes. |
+| `language` | string | Specifies the browser language; use ISO 639-1 or ISO 3166 alpha-2. |
 | `ifa_type` | string | Identify the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher-provided IFA, or a temporary/session IFA. (e.g., dpid, ppid, sspid, sessionid, idfa, aaid, rida, afai, tifa, vida, lgudid). |
 | `ifa` | string | The "identifier for advertising" is an unhashed device ID sanctioned for advertiser use. This will be the IDFA on iOS or AAID on Android.<br>Example: `"ifa": "AA000DFE74168477C70D291f574D344790E0BB12"`. |
 | `didsha1` | string | Specifies the SHA1-encrypted unique identifier for the mobile device. |
