@@ -1,60 +1,38 @@
 ---
-Title : Uploading Segment Data Using BSS
-Description : As described in this document, adding your segment file to the system is
-ms.date : 10/28/2023
-a multi-step process. 
+title : Bidders - Uploading Segment Data Using BSS
+description : Learn adding your segment file to the system in a multi-step process. 
+ms.date : 11/28/2023
 ---
 
 
-# Uploading Segment Data Using BSS
-
-
+# Bidders - Uploading segment data using BSS
 
 As described in this document, adding your segment file to the system is
 a multi-step process. 
 
 - Step
-  1: <a href="uploading-segment-data-using-bss.md#ID-0000a4a5__ID-0000a4c4"
-  class="xref">Format your data file for upload</a>.
-- Step 2:
-  <a href="uploading-segment-data-using-bss.md#ID-0000a4a5__ID-0000a4d2"
-  class="xref">Request an upload URL and Job ID</a>.
+  1: [Format your data file for upload](#format-your-data-file-for-upload).
+- Step 2: [Request an upload URL and Job ID](#request-an-upload-url-and-job-id)
 - Step
-  3: <a href="uploading-segment-data-using-bss.md#ID-0000a4a5__ID-0000a4e0"
-  class="xref">Post the file to the upload URL</a>.
+  3: [Post the file to the upload URL](#post-the-file-to-the-upload-url)
 - Step
-  4: <a href="uploading-segment-data-using-bss.md#ID-0000a4a5__ID-0000a4f9"
-  class="xref">Check the job status</a>.
+  4: [Check the job status](#check-the-job-status)
 
-
-
-<b>Note:</b> Files are limited to 1800
-segments on any individual line. If you have more than 1800 segments for
-one user, you must break that line into multiple lines.
-
-
-
+> [!NOTE]
+> Files are limited to 1800 segments on any individual line. If you have more than 1800 segments for one user, you must break that line into multiple lines.
 
 ## Format your data file for upload
 
-You have two options when creating a data file for BSS: the <a
-href="legacy-bss-file-format.md"
-class="xref" target="_blank">Legacy BSS File Format</a> and the
-**newer**, **preferred** <a
-href="xandr-api/bss-avro-file-format.md"
-class="xref" target="_blank">BSS Avro File Format</a>, which uses a
+You have two options when creating a data file for BSS: the [Legacy BSS File Format](legacy-bss-file-format.md) and the
+**newer**, **preferred** [BSS Avro File Format](../digital-platform-api/bss-avro-file-format.md), which uses a
 self-defined schema and supports a wider range of IDs beyond third-party
 cookies. 
 
 Note that your data file must meet the following requirements:
 
 - Uses
-  the <a href="http://en.wikipedia.org/wiki/ISO/IEC_8859-1" class="xref"
-  target="_blank">Latin1</a> character set.
+  the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
 - Is a maximum of 0.5GB.
-
-
-
 
 ## Request an upload URL and job ID
 
@@ -64,13 +42,11 @@ the file's processing status. The first step is to send an
 empty `POST` request to the service.
 
 This service works for
-both <a href="https://api.appnexus.com/" class="xref"
-target="_blank">api.appnexus.com</a> and
-for <a href="http://api.adnxs.com/" class="xref" target="_blank">api.<span
-class="ph">adnxs.com</a>. It is available for both bidder and UI
+both [api.appnexus.com](https://api.appnexus.com/) and
+for [adnxs.com](http://api.adnxs.com/). It is available for both bidder and UI
 logins.
 
-``` pre
+``` 
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
  
 {
@@ -94,9 +70,6 @@ $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
 }
 ```
 
-
-
-
 ## Post the file to the upload URL
 
 The file upload URL is given in the JSON response in Step 1 by the
@@ -113,19 +86,10 @@ processing. Keep the following guidelines in mind:
   more than 200 jobs waiting to be processed at any given time, you will
   be prohibited from uploading additional jobs.
 
+> [!WARNING]
+> To upload the file correctly, you must specify the MIME type in the HTTP header as `"Content-Type: application/octet-stream"`. Don't use `"Content-Type: application/x-www-form-urlencode"` (`-d or --data flags in curl`). Using an incorrect MIME type will prevent the file from being processed.
 
-
-<b>Warning:</b>
-
-To upload the file correctly, you must specify the MIME type in the HTTP
-header as `"Content-Type: application/octet-stream"`. Don't use
-`"Content-Type: application/x-www-form-urlencode"`
-(`-d or --data flags in curl`). Using an incorrect MIME type will
-prevent the file from being processed.
-
-
-
-``` pre
+``` 
 $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-binary @segment_file "https://01.data-api.prod.adnxs.net/segment-upload/JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
  
 * About to connect() to 01.data-api.prod.adnxs.net port 80
@@ -150,7 +114,7 @@ $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-b
 
 **Example of SSL upload URL**
 
-``` pre
+``` 
 curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segment?member_id=958"
  
 "batch_segment_upload_job": {
@@ -162,9 +126,6 @@ curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segmen
         }
 ```
 
-
-
-
 ## Check the job status
 
 Finally, check the processing status by sending a GET request with the
@@ -172,30 +133,17 @@ Finally, check the processing status by sending a GET request with the
 information such as how long the file took to process and the number of
 errors, if any. Note that you should wait until phase="completed" before
 looking at the results fields such as `num_valid`. For more detailed
-information, see <a
-href="troubleshooting-bss-uploads.md"
-class="xref" target="_blank">Troubleshooting BSS Uploads</a>.
+information, see [Troubleshooting BSS Uploads](troubleshooting-bss-uploads.md).
 
 Per Xandr SLA, allow up to 24 hours for the file
 to process.
 
+> [!NOTE]
+> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it. For example,
+> 
+>`{"batch_segment_upload_job":[{"phase":"completed"}]}`
 
-
-<b>Note:</b> If you are a data provider using
-the Impbus API, note that the `batch_segment_upload_job` field will be
-an array with a single object inside of it. For example, 
-
-
-
-``` pre
-{"batch_segment_upload_job":[{"phase":"completed"}]}
-```
-
-
-
-
-
-``` pre
+``` 
 $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
  
 {
