@@ -11,6 +11,8 @@
     #href: api-documentation.md
 - name: OpenRTB Specs
   items:
+  - name: Overview
+    href: openrtb-specs.md
   - name: Incoming Bid Request from SSPs
     href: incoming-bid-request-from-ssps.md
   - name: Outgoing Bid Response to SSPs
