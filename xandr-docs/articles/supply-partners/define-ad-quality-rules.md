@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Define ad quality rules
 
 Publishers want to ensure that advertisements served on their websites don't take away from website content or the user's experience.
-Publishers are also concerned with serving competing ads on their sites. Since upholding your publisher's ad quality standards is vital to your relationships with them, Xandr has made it easy to do so.
+Publishers are also concerned with serving competing ads on their sites. Since upholding your publisher's ad quality standards is vital to your relationships with them, Xandr makes it easy to do so.
 
 Ad quality profiles are set at two levels: the network level, which is applied to all publishers, and the publisher level, which allows
 different settings per publisher. There are a variety of ad quality standards options that you can choose from. These are discussed in greater detail in Ad Quality Standards below.
