@@ -1,9 +1,7 @@
 ---
 title : Bidders - Technical Attribute Service
-description : Learn about Technical Attributes that describe features of
-the creatives.
+description : Learn about Technical Attributes that describe features of the creatives.
 ms.date : 11/28/2023
-
 ---
 
 
