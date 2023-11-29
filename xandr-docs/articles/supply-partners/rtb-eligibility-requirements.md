@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 # RTB eligibility requirements
 
 > [!NOTE]
-> Xandrworks to integrate supply that can support an excess of 10K spend.
+> Xandr works to integrate supply that can support an excess of 10K spend.
  
 The following points outline the requirements that need to be met to transact on Xandr's open exchange. To participate, you must:
 
