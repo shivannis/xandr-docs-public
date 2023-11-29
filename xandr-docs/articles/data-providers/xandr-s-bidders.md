@@ -1,39 +1,27 @@
 ---
-Title : Xandr's Bidders
-Description : ## Xandr's Bidders
-ms.custom : data-providers
-ms.date : 10/28/2023
-Bidders receive full details of every auction on the bid request. These
+title: Xandr's Bidders
+description: In this article, learn how Bidders receive full details of every auction on the bid request.
+ms.custom: data-providers
+ms.date: 10/28/2023
 ---
-
 
 # Xandr's Bidders
 
+Bidders receive full details of every auction on the bid request. These details include:
 
+- Auction ID.
+- Xandr User ID.
+- Referrer URL.
+- IP Address.
+- Segment information for all owned segments.
+- Segment information for segments which have been shared by a data provider.
 
+Use of this information is entirely reliant upon targeting logic built into the bidder's architecture.
 
-
-## Xandr's Bidders
-
-Bidders receive full details of every auction on the bid request. These
-details include;:
-
-- Auction ID
-- Xandr User ID
-- Referrer URL
-- IP Address
-- Segment information for all owned segments
-- Segment information for segments which have been shared by a data
-  provider
-
-Use of this information is entirely reliant upon targeting logic built
-into the bidder's architecture.
-
-Below is a sample bid request containing the information mentioned
-above. Note the fields "auction_id_64", "user_id_64", "segments", "url"
+Below is a sample bid request containing the information mentioned above. Note the fields "auction_id_64", "user_id_64", "segments", "url"
 and "ip_address":
 
-``` pre
+``` 
 {
    "bid_request":{
       "members":[
@@ -96,9 +84,3 @@ and "ip_address":
    }
 }
 ```
-
-
-
-
-
-
