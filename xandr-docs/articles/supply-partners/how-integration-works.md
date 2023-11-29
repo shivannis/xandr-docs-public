@@ -1,13 +1,13 @@
 ---
 title: How Integration Works
-description: This article explains about the outcome of receiving an ad call by an integrated supply partner.
+description: This article explains the outcome of receiving an ad call by an integrated supply partner.
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
 
 # How integration works
 
-:::image type="content" source="./media/c.png" alt-text="Diagram explaining about the outcome of receiving an ad call by an integrated supply partner.":::
+:::image type="content" source="./media/c.png" alt-text="Diagram explaining the outcome of receiving an ad call by an integrated supply partner.":::
 
 Here's a diagram and description of what happens when a supply partner that has integrated with Xandr's platform receives an ad call.
   
