@@ -28,7 +28,8 @@ For our internal capacity planning, please provide the following information:
 1. The number of expected uploads per day.
 1. The number of unique segments per upload.
 
-If you need to populate segments belonging to other members, that member must send a ticket via [https://help.xandr.com](https://help.xandr.com/) explicitly authorizing your usage: "I authorize `CLIENT_NAME` to add users to/remove users from segments in my account using the Batch Segment API service." They must also add their Account Manager to the CC field in the support form.
+> [!NOTE]
+> If you need to populate segments belonging to other members, that member must send a ticket via [https://help.xandr.com](https://help.xandr.com/) explicitly authorizing your usage: "I authorize `CLIENT_NAME` to add users to/remove users from segments in my account using the Batch Segment API service." They must also add their Account Manager to the CC field in the support form.
 
 ## Related topics
 
