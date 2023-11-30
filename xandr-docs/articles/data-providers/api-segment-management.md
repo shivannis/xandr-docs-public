@@ -50,8 +50,8 @@ should be adhered to:
     appended is longer than 255 characters, the segment name should be
     truncated to fit the data provider name.
 
-> [!TIP]
-> The "segment name" here corresponds to the value of the `short_name` field in the JSON used to create the segment (see [Segment Service](../digital-platform-api/segment-service.md) for more information).
+  > [!TIP]
+  > The "segment name" here corresponds to the value of the `short_name` field in the JSON used to create the segment (see [Segment Service](../digital-platform-api/segment-service.md) for more information).
 
 - **Specify an expiry time**: Many integrations will only consist of
   adding users to segments and not removing users from segments. For

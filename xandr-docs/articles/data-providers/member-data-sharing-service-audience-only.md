@@ -10,7 +10,7 @@ ms.date : 11/30/2023
 
 This page deals with Member Data Sharing and tells us how it works.  
 
-## Member Data Sharing Service (For audience data providers only)
+## Member data sharing service (For audience data providers only)
 
 > [!TIP]
 > In order to make the Member Data Sharing documentation clearer, we've created this page which has calls relevant only to audience data providers (those that do not have a bidder/real-time integration).
