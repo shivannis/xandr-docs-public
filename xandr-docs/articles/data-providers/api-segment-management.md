@@ -1,6 +1,6 @@
 ---
 title : API Segment Management
-description : Learn creating, modifying, deleting and best practices for managing data provider segments. 
+description : Learn creating, modifying, deleting and best practices= for managing data provider segments. 
 ms.custom : data-providers
 ms.date : 11/29/2023
 
@@ -11,7 +11,7 @@ ms.date : 11/29/2023
 
 This page deals with creating, modifying and deleting segments and best practices for managing data provider segments.
 
-## API Segment Management
+## API segment management
 
 Data providers will need to use Xandr's
 impression bus API (api.adnxs.com) to create,

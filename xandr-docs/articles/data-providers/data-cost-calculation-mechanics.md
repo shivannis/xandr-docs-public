@@ -200,11 +200,11 @@ changed through amending that agreement.
 
 ## Glossary
 
-- Segments - Segments available through the Data Marketplace
+- Segments - Segments available through the Data Marketplace.
 - Relevant Segment - A segment (targeted by the buyer) that matches
   against one or more parameters of the ad request. A relevant segment
   is eligible for being used by Xandr to bid on
-  the campaign
+  the campaign.
 - Used Segment - A segment that is used by Xandr
   to bid on the auction. If the campaign wins the auction, then all used
   segments will be charged to the buyer. The segment(s) used for each

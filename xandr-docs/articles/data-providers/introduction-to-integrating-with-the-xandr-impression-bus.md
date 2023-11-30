@@ -1,24 +1,19 @@
 ---
-Title : Introduction to Integrating with the Xandr Impression Bus
-Description : When considering integrating with the impression bus, there are many
+title : Introduction to Integrating with the Xandr Impression Bus
+description : Learn the various points to consider while integrating with the Xandr impression bus. 
 ms.custom : data-providers
-ms.date : 10/28/2023
-things to consider. Most people underestimate the volume of requests
+ms.date : 11/30/2023
 ---
 
 
-# Introduction to Integrating with the Xandr Impression Bus
-
-
+# Introduction to integrating with the Xandr impression bus
 
 When considering integrating with the impression bus, there are many
 things to consider. Most people underestimate the volume of requests
 that Xandr has to offer and the infrastructure
 required in order to properly process those requests efficiently.
 
-
-
-## Our Impression Bus’ Connection Management Behavior
+## Our Impression Bus’ connection management behavior
 
 The Xandr impression bus has a very efficient
 connection management model that is built to maximize requests per
@@ -44,28 +39,10 @@ your instances will grow. It is important to keep an eye on this and
 have your listeners configured to accept all of the connection attempts
 being made.
 
+> [!NOTE]
+> Bid requests and bid responses are synchronous, so there is no possibility of a race condition between the impression bus and bidders. Because of the sheer volume of traffic that goes through Xandr, your bidder may receive an apparently constant stream of requests from the impression bus, but requests are only sent once responses have been received for previous requests (bid responses are not associated with bid requests by order of issuance). That said, after the impression bus has waited for 10ms for a bid response it will time out and close the connection to the data provider bidder. This means that the data provider bidder will not have the opportunity to respond to the bid request that timed out (the bid request will go unanswered).
 
-
-<b>Note:</b> Bid requests and bid responses
-are synchronous, so there is no possibility of a race condition between
-the impression bus and bidders. Because of the sheer volume of traffic
-that goes through Xandr, your bidder may receive
-an apparently constant stream of requests from the impression bus, but
-requests are only sent once responses have been received for previous
-requests (bid responses are not associated with bid requests by order of
-issuance). That said, after the impression bus has waited for 10ms for a
-bid response it will time out and close the connection to the data
-provider bidder. This means that the data provider bidder will not have
-the opportunity to respond to the bid request that timed out (the bid
-request will go unanswered).
-
-
-
-
-
-
-
-## Architecting a Solution
+## Architecting a solution
 
 Too many people do not value the phase of architecting a solution before
 they begin tackling it. Whether you are building a bidding solution or
@@ -77,11 +54,7 @@ pieces necessary for your solution. This document covers the commonly
 missed aspects outside of your proprietary software to aid you in proper
 planning and realizing the magnitude and scope of this integration.
 
-
-
-
-
-## Server Specifications
+## Server specifications
 
 There are three components to consider when deciding the appropriate
 hardware to run: CPU, RAM, and disk. CPUs require the least thought as
@@ -96,11 +69,7 @@ storage capacity to store your log-level data long-term. **Disk should
 not be where you are storing your logs in real-time or where the
 database that is being accessed in real-time is stored.**
 
-
-
-
-
-## Software Stack
+## Software stack
 
 To begin, let us be sure to decouple two very distinct pieces of this
 stack, your listener and your application. The listener is there to
@@ -123,37 +92,18 @@ appropriately, it will be overwhelmed. Web serving software can be
 configured to handle this form of traffic, but it is recommended to
 develop your own listener that is built specifically for this behavior.
 
-
-
-<b>Note:</b>
-
-Apache has proven to be able to handle our impression bus’ traffic quite
-well if configured correctly. If utilizing Apache as your web serving
-software, the keys lie in your keep-alive settings and having Apache as
-lightweight as possible. Most system administrators may consider these
-settings as extreme, however realize again that this is not a web server
-and therefore will not be configured as such.
-
-Timeout 150
-
-KeepAlive On
-
-MaxKeepAliveRequests 50000
-
-KeepAliveTimeout 150
-
-These settings will allow Apache to maintain open connections and have
-our impression bus manage closing those connections. This is important
-in order to save load on your systems. When your system is managing
-closing/opening multiple connections, it will be very difficult for it
-to keep up with the tens of thousands of requests per second it needs to
-manage. Apache also loads many unnecessary modules by default.
-Commenting out extraneous modules will allow Apache to run in a more
-lightweight fashion, allowing it to be more efficient. Finally, before
-you're integrated with our platform, you can use the Apache "ab" tool to
-stress test your servers.
-
-
+> [!NOTE]
+> Apache has proven to be able to handle our impression bus’ traffic quite well if configured correctly. If utilizing Apache as your web serving software, the keys lie in your keep-alive settings and having Apache as lightweight as possible. Most system administrators may consider these settings as extreme, however realize again that this is not a web server and therefore will not be configured as such.
+>
+> Timeout 150
+> 
+> KeepAlive On
+>
+> MaxKeepAliveRequests 50000
+>
+> KeepAliveTimeout 150
+>
+> These settings will allow Apache to maintain open connections and have our impression bus manage closing those connections. This is important in order to save load on your systems. When your system is managing closing/opening multiple connections, it will be very difficult for it to keep up with the tens of thousands of requests per second it needs to manage. Apache also loads many unnecessary modules by default. Commenting out extraneous modules will allow Apache to run in a more lightweight fashion, allowing it to be more efficient. Finally, before you're integrated with our platform, you can use the Apache "ab" tool to stress test your servers.
 
 **The key takeaway to remember is the behavior of our impression bus. As
 long as the listener used is built to manage the impression bus’

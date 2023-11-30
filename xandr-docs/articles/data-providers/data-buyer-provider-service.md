@@ -10,7 +10,7 @@ ms.date : 11/29/2023
 
 This page tell us how to View all current buyers and those buyers that are activated for data clearing.  
 
-## Data Buyer Provider Service
+## Data buyer provider service
 
 The Data Buyer Provider Service allows you to view all activated buyers
 on the Data Marketplace that have access to your data and have activated
@@ -30,7 +30,7 @@ GET https://api.appnexus.com/data-buyer-provider 
 |-------------------------|---------------|--------------------------------------------------------------------------------------------|-----------------------|
 | `active`                  | boolean       | View whether the record is active or inactive                                              |                       |
 | `buyer_member_id`         | int           | Member ID of the buyer                                                                     |                       |
-| `data_cost_type`          | string        | Set cost type (inherited from data provider member) <br> - 1: CPM  <br> - 1 2: %MediaCost                   |                       |
+| `data_cost_type`          | string        | Set cost type (inherited from data provider member) <br> - 1: CPM  <br> - 2: %MediaCost                   |                       |
 | `data_provider_member_id` | int           | ID of data provider member assigned to you by the Data Marketplace                         |                       |
 | `data_revshare_pct`       | double        | Data revenue share of the total cost (inherited from data provider member), e.g., 20% = `20` |                       |
 | `id`                      | int           | ID of the sharing record                                                                   | Auto-generated number |

@@ -40,9 +40,3 @@ the segment. For example, the tag may look like the below:
 Codes may contain any alphanumeric character, underscores ("\_") or
 hyphens ("-"). Currently, periods (".") are not supported in segment
 codes.
-
-
-
-
-
-

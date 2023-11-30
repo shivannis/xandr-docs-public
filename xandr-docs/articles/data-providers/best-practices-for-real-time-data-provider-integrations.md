@@ -19,7 +19,7 @@ optimal stack translates into better performing servers, which
 ultimately means you will need less servers to achieve the same
 performance.
 
-- **Listener and Application:** The listener should be used to listen to
+- **Listener and application:** The listener should be used to listen to
   requests and the application should be processing the information in
   the requests; listener and application should be decoupled.
 - **Recommended tech stacks:** The best performance we have seen is with
@@ -85,9 +85,9 @@ the impression bus sends your way.
 
 <!-- -->
 
-- **Connection Metrics:** The best metric for monitoring connections is
+- **Connection metrics:** The best metric for monitoring connections is
   queries/connections as opposed to connections/second.
-- **Keep-Alive Protocol:** You should be supporting Keep-Alive protocol
+- **Keep-Alive protocol:** You should be supporting Keep-Alive protocol
   and trying to keep connections open as long as possible. Typically we
   see 300 queries per connection, meaning that if you are closing the
   connection, you will see 300x more opens/closes. You should be

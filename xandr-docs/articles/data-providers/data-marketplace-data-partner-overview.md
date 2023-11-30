@@ -29,7 +29,7 @@ for those fees on your behalf. 
     with Xandr as an [audience data provider](audience-data-integrations.md) or as a real time data provider.
 1. Create the segments that you want to make available to buyers. For
     details, see [Creating and Managing Segments](creating-and-managing-segments.md).
-1. Create a rate card using the [taxonomy template](attachments/data-marketplace-data-partner-overview/taxonomy-template-new-7-19.xlsx)  consistent with the terms of
+1. Create a rate card using the [taxonomy template](https://download.microsoft.com/download/a/5/1/a513362a-9ce9-486e-909b-90be51649dbd/taxonomy-template-new-7-19.xlsx)  consistent with the terms of
     the Xandr Data Provider agreement. Once
     completed, email it to your Xandr point of
     contact.
@@ -42,7 +42,7 @@ for those fees on your behalf. 
 - Assigning prices to your segments - [Segment Billing Category Service](segment-billing-category-service.md)
 - Working with Syndicated and Custom segments - [Managing Public and Private (Custom) Segments](managing-public-and-private-custom-segments.md)
 - Understanding the Buyer UI and Workflow - [Data Buyer Workflow Overview](data-buyer-workflow-changes.md)
- - Cost calculation and supported pricing methods
+- Cost calculation and supported pricing methods
   - [Data Cost Calculation Mechanics](data-cost-calculation-mechanics.md)
 - Validate all active buyers who have activated clearing within the Data
   Marketplace and have access to your data
@@ -64,7 +64,7 @@ see [Data Usage Report for Data Providers](data-usage-report-for-data-providers
   when signing your contract with Xandr.
 
 > [!NOTE]
-> To notify Xandr of any changes in your banking information or payment entity, visit our [https://help.xandr.com](https://help.xandr.com/s/login/) and navigate to the Client Finance section to submit a ticket.
+> To notify Xandr of any changes in your banking information or payment entity, visit our [Customer Support Portal ](https://help.xandr.com/s/login/) and navigate to the Client Finance section to submit a ticket.
 
 ## Support
 
