@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 The Member Data Sharing Service allows you to share your segments with other platform members. Here's how it works:
 
-1. You ask the buyer to enable you (the data provider) in Microsoft Invest. The setting they must use to do this is located in the Microsoft Invest Segment Manager, under Manage Data Providers.
+1. You ask the buyer to enable you (the data provider) in Microsoft Invest. The setting they must use to do this is located in the Microsoft Invest **Segment Manager**, under **Manage Data Providers*s*.
 1. You create a sharing record for a member that you want to share segments with.
 1. In the sharing record, you specify whether you want to share all of your segments or a specific list of segments.
 1. The member that you've shared your segments with can then target your segments in campaigns (or in the case of bidders, they will be sent the segment data with each bid request).
@@ -37,7 +37,7 @@ The Member Data Sharing Service allows you to share your segments with other pla
 > [!TIP]
 > JSON Structure:
 >
-> When adding or updating a single sharing record, you should structure the JSON as a single object called "member_data_sharing". When adding POST multiple sharing records, you should structure the JSON as an array of objects called "member_data_sharings" (note the plural) and place the sharing data in an array. You cannot update (PUT) multiple sharing records at the same time. For exact formatting, see the [Examples](#examples) below.
+> When adding or updating a single sharing record, you should structure the JSON as a single object called "member_data_sharing". When adding POST multiple sharing records, you should structure the JSON as an array of objects called "member_data_sharings" (note the plural) and place the sharing data in an array. You cannot update (PUT) multiple sharing records at the same time. For exact formatting, see the [examples](#examples) below.
 
 ## JSON fields
 

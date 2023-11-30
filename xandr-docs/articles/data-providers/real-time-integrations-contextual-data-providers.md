@@ -12,7 +12,7 @@ provider for each impression in order to gain information about brand safety and
 referrer URL is passed to us for the auction (either server-side by an inventory partner or in the HTTP header), we pass that along to the
 contextual data providers, who respond with categories (which we call "segments") corresponding to the page's categorization, e.g., "News".
 
-Also see [Real Time Data Integration Instructions](real-time-data-integration-instructions.md).
+Also, see [Real Time Data Integration Instructions](real-time-data-integration-instructions.md).
 
 ## The process
 
@@ -23,13 +23,14 @@ Also see [Real Time Data Integration Instructions](real-time-data-integration-in
     placement if the domain/url visibility in set to "hidden".
 1. User data is looked up in the server-side cookie store using the UID in the user's browser cookie as the key for the look up.
 1. User data is returned by the server-side cookie store. This data is attached to the auction as segment data and free-form user data JSON.
-1. If there is a referrer URL, a request is sent to the contextual data provider containing the referrer URL as a querystring parameter
+1. If there is a referrer URL, a request is sent to the contextual data provider containing the referrer URL as a querystring parameter.
 1. The data provider returns a line-return separated list of segment codes (see the code field on the Segment service) corresponding to the categorization(s) for the page. These categorizations are attached to the auction as segment data.
     1. If no categorizations can be mapped to the referrer URL, a blank response with a new line character should be returned.
 1. Bid requests are sent to our UI as well as other DSPs and Bidders. The auction data contains the segments associated with a given data provider only if the bidder or a member associated with that bidder has access to those segments.
 
     > [!TIP]
-    > Real Time vs Behavioral Segments
+    > **Real Time vs Behavioral Segments**
+    >
     > An important distinction between real time (contextual) and behavioral segments is that real time segments returned by a Real Time Data Provider only exist for the life of the impression and do not affect user segment membership. Behavioral segments are associated with the user, and exist as long as the user is associated with that segment.
 
 1. DSPs, and Bidders return a response for each auction (either a bid or an indication that they do not wish to participate).

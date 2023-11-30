@@ -1,11 +1,11 @@
 ---
 title: Data Providers - Segment Modifier
-description: In this article, learn step-by-step instructions on how you can associate a segment modifier with an audience segment.
+description: In this article, learn step-by-step instructions on how you can associate a Segment Modifier with an audience segment.
 ms.custom: data-providers
 ms.date: 10/28/2023
 ---
 
-# Data Providers - Segment modifier
+# Data Providers - Segment Modifier
 
 Segment Modifier allows you to adjust a campaign's bid at the time of the auction using data you have about your users. This is achieved by associating a modifier segment with an audience segment. The campaign is then able to use this information to modify the bid when one of your users is present. There are two ways the campaign can modify the bid:
 

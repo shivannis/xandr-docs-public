@@ -20,7 +20,7 @@ The most common methods used for tracking the user of shared segments are impres
 - **Conversion Trackers:** It is possible to redirect from a conversion pixel to an external conversion tracker, giving you visibility into the performance of a campaign.
     > [!NOTE]
     > You will be responsible for performing attribution related to this conversion tracker.
-- **Client Reporting:** Data recipients may schedule or otherwise send reports to the data provider for campaigns and line items utilizing the shared segments for targeting. For steps on how clients can schedule usage reports to be delivered to the data provider see [Reporting Instructions](reporting-instructions.md).
+- **Client Reporting:** Data recipients may schedule or otherwise send reports to the data provider for campaigns and line items utilizing the shared segments for targeting. For steps on how clients can schedule usage reports to be delivered to the data provider, see [Reporting Instructions](reporting-instructions.md).
 
 ## Related topics
 

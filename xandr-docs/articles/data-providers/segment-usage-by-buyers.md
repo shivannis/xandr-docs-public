@@ -1,6 +1,6 @@
 ---
 title: Segment Usage by Buyers
-description: In this article, explore information about segment usage by buyers
+description: In this article, explore information about segment usage by buyers.
 ms.custom: data-providers
 ms.date: 10/28/2023
 ---

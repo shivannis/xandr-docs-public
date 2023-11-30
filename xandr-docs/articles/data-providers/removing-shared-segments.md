@@ -1,6 +1,6 @@
 ---
 title: Removing Shared Segments
-description: In this article, learn about how to remove shared segments.
+description: In this article, explore step-by-step instructions about how to remove shared segments.
 ms.custom: data-providers
 ms.date: 10/28/2023
 ---

@@ -5,11 +5,11 @@ ms.custom: data-providers
 ms.date: 10/28/2023
 ---
 
-# Segment modifier FAQ
+# Segment Modifier FAQ
 
 Watch this space for answers to frequently asked questions about Segment Modifier.
 
-## What is the segment modifier feature?
+## What is the Segment Modifier feature?
 
 Segment modifier is a feature available to seats where campaigns can be associated with segments in such a fashion that permits users to
 override or modify the bid valuation provided by Xandr's internal optimization engine with values associated with the "modifying" segments.
@@ -18,9 +18,9 @@ override or modify the bid valuation provided by Xandr's internal optimization e
 
 There is not a segment modifier "app" or API service. Segment modifier is a feature available to members that permits them to combine segments with values associated with them to the "campaign_modifiers" array of campaigns so that the campaigns may bid according to an external bidding strategy that is partially or not at all dependent on the optimization-generated bid valuations.
 
-## Does the platform generate segment modifier values that I can use in segment modifier?
+## Does the platform generate segment modifier values that I can use in Segment Modifier?
 
-The segment modifier feature was created for clients that wish to implement their own valuation models on Xandr's platform. As such we do
+The Segment Modifier feature was created for clients that wish to implement their own valuation models on Xandr's platform. As such we do
 not generate values to be fed into the feature; the optimization-produced valuations would be what we would suggest as the bids for an auction.
 
 ## How many segment modifiers can I associate to a campaign in the "campaign_modifiers" array of campaigns?

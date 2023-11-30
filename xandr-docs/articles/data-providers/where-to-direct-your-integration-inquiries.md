@@ -1,6 +1,6 @@
 ---
 title: Where to Direct Your Integration Inquiries
-description: In this article, learn step-by-step instructions on where to direct your integration inquiries.
+description: In this article, learn step-by-step instructions on where you can direct your integration inquiries.
 ms.custom: data-providers
 ms.date: 10/28/2023
 ---

@@ -33,7 +33,7 @@ The `report_interval` field in the JSON request can be set to:
 |:---|:---|:---|:---|:---|
 | `segment_id` | int | yes | `220` | The ID of the segment. |
 | `segment_name` | string | no | `"Submitted application"` | The name of the segment. |
-| `segment` | string | no | `"Submitted application (220)"` | Deprecated (as of October 17, 2016). |
+| `segment` | string | no | `"Submitted application (220)"` | **Deprecated** (as of October 17, 2016). |
 | `day` | time | yes | `2011-01-06` | The day for which you want segment metrics. |
 | `month` | time | yes | `2011-01` | The month for which you want segment metrics. |
 

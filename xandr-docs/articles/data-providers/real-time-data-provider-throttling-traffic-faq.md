@@ -115,11 +115,11 @@ bidder has dynamic throttling enabled (which all data provider bidders do). Dyn
 
 ## How do I enable/disable dynamic throttling for by real time data provider?
 
-Dynamic throttling was initially enabled for all data providers. Please [Submit a Support Request](https://help.xandr.com/s/login/) to request enabling/disabling the feature for your data provider bidder.
+Dynamic throttling was initially enabled for all data providers. [Submit a Support Request](https://help.xandr.com/s/login/) to request enabling/disabling the feature for your data provider bidder.
 
 ## Does dynamic throttling always affect incoming bid requests?
 
-No,very high and very low timeout rates are handled as special cases. If a bidder's timeout percentage falls below 5%, then none of the bid requests sent will be dynamically throttled. On the other hand, if a bidder's timeout percentage goes above 90%, then we will send a minimum 10% of traffic regardless of how high the timeout rate becomes until the timeout rate dips below 90% (when we will reengage dynamic throttling).
+No, very high and very low timeout rates are handled as special cases. If a bidder's timeout percentage falls below 5%, then none of the bid requests sent will be dynamically throttled. On the other hand, if a bidder's timeout percentage goes above 90%, then we will send a minimum 10% of traffic regardless of how high the timeout rate becomes until the timeout rate dips below 90% (when we will reengage dynamic throttling).
 
 ## I wish to listen for a particular supply type (e.g. web or mobile-app), how should I proceed?
 
