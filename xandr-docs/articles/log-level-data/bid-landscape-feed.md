@@ -211,7 +211,7 @@ The following codes appear in the `bid_reject_reason` column to indicate why a b
 | `415` | NEC_DYNAMIC_BRAND_BANNED | `701` | BRR_BLOCKED_BY_DYNAMIC_BRAND | Creative brand banned on dynamic exclusions |
 | `417` | NEC_AD_PROFILE_UNKNOWN_DYNAMIC_BRAND | `705` | BRR_AD_PROFILE_UNKNOWN_DYNAMIC_BRAND | Ad profile contains brand or category restrictions, and dynamic brand is unknown |
 | `418` | NEC_AD_PROFILE_UNKNOWN_DYNAMIC_LANGUAGE | `706` | BRR_AD_PROFILE_UNKNOWN_DYNAMIC_LANGUAGE | Ad profile contains language restrictions, and dynamic language is unknown |
-| `420` | NEC_CATEGORY_REQ_WHITELIST | `304` | BRR_BLOCKED_BY_AP_CATEGORY | Creative category requires whitelisting |
+| `420` | NEC_CATEGORY_REQ_ALLOWLIST | `304` | BRR_BLOCKED_BY_AP_CATEGORY | Creative category requires allow-listing |
 | `421` | NEC_BID_PAGE_CAPPED | `402` | BRR_PAGE_CAPPED | Bid is rejected due to page cap |
 | `1000` | NEC_NO_MEMBERS | `235` | BRR_NO_MEMBERS | No eligible members |
 | `1001` | NEC_BIDDER_UNAVAILABLE | `236` | BRR_BIDDER_UNAVAILABLE | Bidder not available |
