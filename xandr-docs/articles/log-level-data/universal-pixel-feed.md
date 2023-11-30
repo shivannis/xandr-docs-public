@@ -1,337 +1,48 @@
 ---
-Title : Universal Pixel Feed
-Description : The Log-Level Universal Pixel Feed provides you with data on the firing
-ms.custom : log-level-data
-ms.date : 10/28/2023
-of all of your Universal Pixels. The feed contains one row per pixel
+title: Universal Pixel Feed
+description: In this article, find information about the Universal Pixel feed and details about the columns associated with this data feed.
+ms.custom: log-level-data
+ms.date: 10/28/2023
 ---
 
+# Universal Pixel feed
 
-# Universal Pixel Feed
+The Log-Level Universal Pixel Feed provides you with data on the firing of all of your Universal Pixels. The feed contains one row per pixel fire. Each row includes both the data received on the fire as well as any segment and conversion IDs that were associated with the event based on the Audience and Conversion rules that matched the traffic. It is possible for a pixel fire to satisfy no Audience or Conversion rules.
 
+The Universal Pixel Feed does not distinguish between attributed and unattributed conversions. To view attributed conversion data, see [Advertiser Attributed Conversions](../digital-platform-api/advertiser-attributed-conversions.md) or the [Standard Feed](standard-feed.md).
 
-
-The Log-Level Universal Pixel Feed provides you with data on the firing
-of all of your Universal Pixels. The feed contains one row per pixel
-fire. Each row includes both the data received on the fire as well as
-any segment and conversion IDs that were associated with the event based
-on the Audience and Conversion rules that matched the traffic. It is
-possible for a pixel fire to satisfy no Audience or Conversion rules.
-
-The Universal Pixel Feed does not distinguish between attributed and
-unattributed conversions. To view attributed conversion data, see <a
-href="xandr-api/advertiser-attributed-conversions.md"
-class="xref" target="_blank">Advertiser Attributed Conversions</a> or
-the <a
-href="standard-feed.md"
-class="xref" target="_blank">Standard Feed</a>.
-
-The Xandr internal name for this feed is
-`universal_pixel_feed`.
-
-
+The Xandr internal name for this feed is `universal_pixel_feed`.
 
 ## Sequence
 
-The columns below are listed in the same order in which they appear in
-the log-level feed file (top to bottom here, left to right in the
-file). 
+The columns below are listed in the same order in which they appear in the log-level feed file (top to bottom here, left to right in the file).
 
-
-
-
-
-## Integer Key
+## Integer key
 
 - tinyint = 1 byte (8 bit)
 - smallint = 2 byte (16 bit)
 - int = 4 byte (32 bit)
 - bigint = 8 byte (64 bit)
 
-
-
-
-
 ## Columns
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002cf7__entry__1" class="entry colsep-1 rowsep-1">Column
-Index</th>
-<th id="ID-00002cf7__entry__2" class="entry colsep-1 rowsep-1">Column
-Name</th>
-<th id="ID-00002cf7__entry__3" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002cf7__entry__4"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">01</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">date_time</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__3">UNIX
-Epoch time</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-time and date of the universal pixel fire. <br />
-(e.g., <code class="ph codeph">1526057561</code> which would need to be
-translated to <em>Friday, May 11, 2018 4:52:41 PM (UTC)</em>.
-
-<b>Note:</b>
-<p>The EPOCH time is in <strong>milliseconds format</strong>, and not
-the standard EPOCH time.</p>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">02</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">pixel_uuid</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-UUID of the universal pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">03</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">user_id_64</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">bigint </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-Xandr 64-bit user ID (stored in the <span
-class="ph">Xandr cookie store).
-<p>This field is <code class="ph codeph">0</code> when:</p>
-<ul>
-<li>Xandr does not have a match for this user
-or </li>
-<li>the user's browser doesn't accept cookies or</li>
-<li>you do not have a legal basis to access and process personal data
-for an impression where GDPR applies</li>
-</ul>
-<p>It will be <code class="ph codeph">-1</code> for
-opt-out/non-consented users.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">04</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">url</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-entire URL of the page the pixel is on.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">05</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">http_referer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-entire URL of the referrer to the page the pixel is on.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">06</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">event</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4"> The
-event associated with the pixel fire. The standard universal pixel
-events are:
-<ul>
-<li>PageView (default)</li>
-<li>LandingPage</li>
-<li>ItemView</li>
-<li>AddToCart</li>
-<li>InitiativeCheckout</li>
-<li>AddPaymentInfo</li>
-<li>Purchase</li>
-<li>Lead</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">07</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">item_ids</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of strings </td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__4">Strings passed in on the <code
-class="ph codeph">item_id</code> parameter within your pixel . This
-value is an array (e.g, <code
-class="ph codeph">['product_5', 'product_6']</code>).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">08</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">item_types</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__4">Strings passed in on the <code
-class="ph codeph">item_type</code> parameter within your pixel . This
-value is an array (e.g, <code
-class="ph codeph">['apparel']</code>).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">09</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">item_names</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__4">Strings passed in on the <code
-class="ph codeph">item_name</code> parameter within your pixel . This
-value is an array (e.g.,<code
-class="ph codeph">['ford fiesta']</code>).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">10</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">segment_ids</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of int </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-list of IDs for the segments the user was added to as a result of the
-universal pixel firing. </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">11</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">conversion_pixel_ids</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-list of IDs for the conversion events triggered by the user as a result
-of the universal pixel firing.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">12</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">partition_time_millis</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">long </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-hourly partition any record row falls into, represented as a UNIX Epoch
-timestamp value (in milliseconds). Useful for defining hourly partitions
-when loading into a database or data warehouse. For the Avro format,
-this field is given the timestamp-millis logical type for native
-timestamp detection. For example, <code
-class="ph codeph">1568077200000</code> can also be represented
-as <em>Tuesday, September 10, 2019 1 AM (UTC)</em>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">13</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">event_value</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">numeric</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-nominal value of the event (passed in as a float from the <code
-class="ph codeph">value</code> parameter within your pixel).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">14</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">traffic_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-source of the traffic being tracked by the pixel. Possible values
-are <code class="ph codeph">WEB</code> or <code
-class="ph codeph">APP</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">15</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">application_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-ID of the application (in the app store) that the pixel has been placed
-on. This value can be numeric or alphanumeric (e..g <code
-class="ph codeph">com.xandr.application_name</code>).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">16</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">device_unique_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">The
-unique identifier representing the mobile device. The numeric prefix
-indicates the type of unique device identifier:
-<ul>
-<li><code class="ph codeph">0</code> = IDFA (Apple ID for
-Advertising)</li>
-<li><code class="ph codeph">1</code> = SHA1</li>
-<li><code class="ph codeph">2</code> = MD5</li>
-<li><code class="ph codeph">3</code> = ODIN</li>
-<li><code class="ph codeph">4</code> = OPENUDID</li>
-<li><code class="ph codeph">5</code> = AAID (Android Advertising
-ID)</li>
-<li><code class="ph codeph">6</code> = WINDOWSADID (Microsoft
-Advertising ID)</li>
-<li><code class="ph codeph">7</code> = RIDA (Roky id for
-Advertising)</li>
-<li><code class="ph codeph">8.9</code> = AFAI (Amazon Fire OS)</li>
-<li><code class="ph codeph">8.10</code> = TIFA (Tizen Identifier for
-Advertising (Samsung Ad ID))</li>
-<li><code class="ph codeph">8.11</code> = VIDA (Vizio Advertising
-ID)</li>
-<li><code class="ph codeph">8.12</code> = LGUDID (LG Unique Device
-ID)</li>
-</ul>
-
-<b>Note:</b> The value of this field will
-be <code class="ph codeph">null</code> except for specific integrations.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">17</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">custom_parameters</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">array of messages</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__4">Contains all custom parameters that were
-sent with the pixel fire. This is represented as a repeated protobuf
-field with a key (string) and values (repeated string).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__1">18</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__2">order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002cf7__entry__3">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002cf7__entry__4">An
-optional value passed in by the buyer on the Universal Pixel using it
-(e.g.,<code class="ph codeph">'119'</code>).</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Column Index | Column Name | Type | Description |
+|---|---|---|---|
+| 01 | date_time | UNIX Epoch time | The time and date of the universal pixel fire. <br> (e.g., `1526057561` which would need to be translated to *Friday, May 11, 2018 4:52:41 PM (UTC)*.) <br> **Note**: <br> The EPOCH time is in **milliseconds format**, and not the standard EPOCH time. |
+| 02 | pixel_uuid | string | The UUID of the universal pixel. |
+| 03 | user_id_64 | bigint | The Xandr 64-bit user ID (stored in the Xandr cookie store). <br> This field is `0` when: <br> - Xandr does not have a match for this user; or <br> - the user's browser doesn't accept cookies; or <br> - you do not have a legal basis to access and process personal data for an impression where GDPR applies <br> It will be `-1` for opt-out/non-consented users. |
+| 04 | url | string | The entire URL of the page the pixel is on. |
+| 05 | http_referer | string | The entire URL of the referrer to the page the pixel is on. |
+| 06 | event | string | The event associated with the pixel fire. The standard universal pixel events are: <br> - PageView (default) <br> - LandingPage <br> - ItemView <br> - AddToCart <br> - InitiativeCheckout <br> - AddPaymentInfo <br> - Purchase <br> - Lead |
+| 07 | item_ids | array of strings | Strings passed in on the `item_id` parameter within your pixel. This value is an array (e.g, `['product_5', 'product_6']`). |
+| 08 | item_types | array of strings | Strings passed in on the `item_type` parameter within your pixel. This value is an array (e.g, `['apparel']`). |
+| 09 | item_names | array of strings | Strings passed in on the `item_name` parameter within your pixel. This value is an array (e.g., `['ford fiesta']`). |
+| 10 | segment_ids | array of int | The list of IDs for the segments the user was added to as a result of the universal pixel firing. |
+| 11 | conversion_pixel_ids | array of int | The list of IDs for the conversion events triggered by the user as a result of the universal pixel firing. |
+| 12 | partition_time_millis | long | The hourly partition any record row falls into, represented as a UNIX Epoch timestamp value (in milliseconds). Useful for defining hourly partitions when loading into a database or data warehouse. For the Avro format, this field is given the timestamp-millis logical type for native timestamp detection. For example, `1568077200000` can also be represented as *Tuesday, September 10, 2019 1 AM (UTC)*. |
+| 13 | event_value | numeric | The nominal value of the event (passed in as a float from the `value` parameter within your pixel). |
+| 14 | traffic_type | string | The source of the traffic being tracked by the pixel. Possible values are `WEB` or `APP`. |
+| 15 | application_id | string | The ID of the application (in the app store) that the pixel has been placed on. This value can be numeric or alphanumeric (e.g., `com.xandr.application_name`). |
+| 16 | device_unique_id | string | The unique identifier representing the mobile device. The numeric prefix indicates the type of unique device identifier: <br> - `0` = IDFA (Apple ID for Advertising) <br> - `1` = SHA1 <br> - `2` = MD5 <br> - `3` = ODIN <br> - `4` = OPENUDID <br> - `5` = AAID (Android Advertising ID) <br> - `6` = WINDOWSADID (Microsoft Advertising ID) <br> - `7` = RIDA (Roky id for Advertising) <br> - `8.9` = AFAI (Amazon Fire OS) <br> - `8.10` = TIFA (Tizen Identifier for Advertising (Samsung Ad ID)) <br> - `8.11` = VIDA (Vizio Advertising ID) <br> - `8.12` = LGUDID (LG Unique Device ID) <br> **Note**: The value of this field will be `null` except for specific integrations. |
+| 17 | custom_parameters | array of messages | Contains all custom parameters that were sent with the pixel fire. This is represented as a repeated protobuf field with a key (string) and values (repeated string). |
+| 18 | order_id | string | An optional value passed in by the buyer on the Universal Pixel using it (e.g., `'119'`). |
