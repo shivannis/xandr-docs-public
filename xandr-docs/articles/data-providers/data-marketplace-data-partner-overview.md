@@ -72,5 +72,4 @@ For support issues, please submit your issues in our [Customer Support Portal](h
 
 ## Price changes, taxonomy changes and segment removal
 
-Submit all Taxonomy or price change requests through the
- [Customer Support Portal](https://help.xandr.com/s/login/). We will give up to 45 day notice to all buyers before a price change goes into effect.
+Submit all Taxonomy or price change requests through the [Customer Support Portal](https://help.xandr.com/s/login/). We will give up to 45 day notice to all buyers before a price change goes into effect.
