@@ -3,7 +3,7 @@
 - name: Getting Started
   items:
   - name: Overview
-    href: impression-bus-api.md
+    href: ../bidders/impression-bus-api.md
   - name: API Semantics
     href: api-semantics.md
   - name: API Usage Constraints
