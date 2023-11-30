@@ -1,12 +1,12 @@
 ---
-title : Check Usage Statistics
+title : Data Providers - Check Usage Statistics
 description : Learn about Usage Statistics in this page. 
 ms.custom : data-providers
 ms.date : 11/30/2023
 ---
 
 
-# Check usage statistics
+# Data Providers - Check usage statistics
 
 > [!NOTE]
 > This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
