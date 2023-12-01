@@ -1,0 +1,71 @@
+### YamlMime:Landing
+
+title: Data Providers
+summary: Welcome to Data Providers Reference Documentation! All the information you need to get started as a Data Provider is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Data Providers
+  description: Discover various reference docs for Data Providers
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 12/01/2023
+
+landingContent:
+  - title: Integrating Your Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Real Time Integrations
+            url: real-time-integrations-contextual-data-providers.md
+          - text: Audience Data Integrations
+            url: audience-data-integrations.md
+      - linkListType: reference
+        links:
+          - text: Integrating with the Xandr Impression Bus
+            url: introduction-to-integrating-with-the-xandr-impression-bus.md
+          - text: Real Time Data Integration Instructions
+            url: real-time-data-integration-instructions.md
+          - text: Instant Audience Service
+            url: instant-audience-service.md
+  - title: Data Partner
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data Partner Overview
+            url: data-marketplace-data-partner-overview.md
+          - text: Segment Billing Category Service
+            url: segment-billing-category-service.md
+      - linkListType: reference
+        links:
+          - text: Data Cost Calculation Mechanics
+            url: data-cost-calculation-mechanics.md
+          - text: Managing Public and Private (Custom) Segments
+            url: managing-public-and-private-custom-segments.md
+  - title: Data Sharing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Member Data Sharing Service
+            url: member-data-sharing-service.md
+          - text: Removing Shared Segments
+            url: removing-shared-segments.md
+      - linkListType: reference
+        links:
+          - text: Member Data Sharing Service (Contextual Only)
+            url: member-data-sharing-service-contextual-only.md
+          - text: Member Data Sharing Service (Audience Only)
+            url: member-data-sharing-service-audience-only.md   
+  - title: Reporting and Tracking
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Reporting and Tracking Overview
+            url: reporting-and-tracking.md
+          - text: Reporting Instructions
+            url: reporting-instructions.md
+      - linkListType: reference
+        links:
+          - text: Data Usage Report for Data Providers
+            url: data-usage-report-for-data-providers.md
+          - text: Segment Loads Report
+            url: segment-loads-report.md
