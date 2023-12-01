@@ -66,6 +66,13 @@ additionalContent:
             text: Product Documentation
           - url: bidders/xandr-bidder-release-notes.md
             text: Release Notes
+      # Card
+      - title: Yield Analytics UI
+        links:
+          - url: yield-analytics-ui/index.yml
+            text: Product Documentation
+          - url: yield-analytics-ui/yield-analytics-8-79.md
+            text: Latest Release Notes
     - title: API References
       items:
         # Card
@@ -90,12 +97,12 @@ additionalContent:
             - text: References
               url: yield-analytics-api/index.yml
         # Card
-        - title: Release Notes (Work in Progress)
+        - title: Release Notes
           links:
-            - text: Digital Platform API Release Notes
+            - text: Digital Platform API Release Notes (Work in Progress)
               url: getting-started/index.yml
             - text: Impression Bus API Release Notes
-              url: getting-started/index.yml
+              url: ../bidders/xandr-bidder-release-notes.md
     - title: Developer Documentation
       items:
         # Card
