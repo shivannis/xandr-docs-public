@@ -143,10 +143,11 @@ minutes.
 In order to adhere to a maximum of 2 minutes activation time, the
 Instant Audience Service currently has the following limits:
 
-| **Call Rate** | - Up to 100 POST calls per second (per member) and up to 1000 GET calls per second (per member). If you exceed this rate limit, the following message will be returned: "Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, please wait and try again or contact Xandr for higher limits". |
+|  |  |
 |---|---|
-| **Objects**| - Up to 1000 users per second.<br> - Up to 100 segments per user per call. |
-| **Payload Size**| - The JSON payload should not exceed 1MB. |
+| **Call Rate** | - Up to 100 POST calls per second (per member) and up to 1000 GET calls per second (per member). If you exceed this rate limit, the following message will be returned: "*Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, please wait and try again or contact Xandr for higher limits*". |
+| **Objects** | - Up to 1000 users per second.<br> - Up to 100 segments per user per call. |
+| **Payload Size** | - The JSON payload should not exceed 1MB. |
 
 ## Example error scenarios
 
