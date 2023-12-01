@@ -184,3 +184,31 @@
       href: ../bidders/ad-profile-service.md
 - name: User Service
   href: ../bidders/user-service.md
+- name: Release Notes
+  items:
+    - name: Latest Release Notes
+      href: ../bidders/xandr-bidder-release-notes.md
+    - name: Legacy Release Notes
+      items:
+      - name: Overview
+        href: ../bidders/release-notes---legacy.md
+      - name: September 5, 2017 - API Version 1.18 Release - Breaking Changes
+        href: ../bidders/september-5--2017---api-version-1-18-release---breaking-changes.md
+      - name: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
+        href: ../bidders/december-13--2016---breaking-change-to-replace-sizes-with-format-on-bid-requests.md
+      - name: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
+        href: ../bidders/august-17--2016---impbus-api-1-17-release---breaking-changes.md
+      - name: March 9, 2016 - Creative Macro Breaking Change
+        href: ../bidders/march-9--2016---creative-macro-breaking-change.md
+      - name: December 21, 2015 - UTF-8 Encoding of Reporting Data
+        href: ../bidders/december-21--2015---utf-8-encoding-of-reporting-data.md
+      - name: October 2, 2015 - Bid Request Breaking Change
+        href: ../bidders/october-2--2015---bid-request-breaking-change.md
+      - name: September 30, 2015 
+        href: ../bidders/september-30--2015.md
+      - name: August 19, 2015
+        href: ../bidders/august-19--2015.md
+      - name: August 14, 2015 - Batch Segment Service Breaking Changes
+        href: ../bidders/august-14--2015---batch-segment-service-breaking-changes.md
+      - name: June 16, 2015
+        href: ../bidders/june-16--2015.md
