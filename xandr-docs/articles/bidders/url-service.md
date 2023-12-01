@@ -1,23 +1,11 @@
 ---
-Title : URL Service
-Description : <b>Note:</b> This service has been deprecated.
-ms.date : 10/28/2023
+title: URL Service
+description: The articles explains that the url service in Bidders are deprecated.
+ms.date: 10/28/2023
 ---
 
+# URL service
 
-# URL Service
-
-
-
-
-
-<b>Note:</b> This service has been deprecated.
-Please use the <a
-href="content-category-service.md"
-class="xref" target="_blank">Content Category Service</a> instead.
-
-
-
-
-
-
+> [!NOTE]
+> This service has been deprecated.
+> Please use the [Content Category Service](content-category-service.md) instead.
