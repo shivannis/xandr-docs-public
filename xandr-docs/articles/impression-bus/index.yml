@@ -25,8 +25,8 @@ landingContent:
             url: ../bidders/api-semantics.md
           - text: Usage Constraints
             url: ../bidders/api-usage-constraints.md
-          - text: Best Practices
-            url: ../bidders/api-best-practices.md
+         # - text: Best Practices
+          #  url: ../bidders/api-best-practices.md
   - title: Authentication Service
     linkLists:
       - linkListType: overview
