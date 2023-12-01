@@ -28,7 +28,6 @@
       href: ../bidders/bidder-instance-service.md
     - name: Legacy Bidder Profile Service
       href: ../bidders/legacy-bidder-profile-service.md
-
 - name: Creative API Services
   items:
     - name: Overview
@@ -62,7 +61,7 @@
     - name: Deal From Package Service
       href: ../bidders/deal-from-package-service.md
 - name: Domain List Service
-  href: domain-list-service.md
+  href: ../bidders/domain-list-service.md
 - name: Enhanced Bidder Profiles
   items:
     - name: Overview
@@ -81,8 +80,6 @@
       href: ../bidders/changelog-for-enhanced-bidder-profiles.md
 - name: Member Service
   href: ../bidders/member-service.md
-
-
 - name: Read-Only Services
   items:
     - name: Ad Server Service
