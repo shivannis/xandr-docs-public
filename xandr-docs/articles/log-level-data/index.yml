@@ -1,0 +1,39 @@
+### YamlMime:Landing
+
+title: Log-Level Data Feeds
+summary: Welcome to Log-Level Data Feeds Reference Documentation! All the information you need to get started with Log-Level Data Feeds is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Log-Level Data Feeds
+  description: Discover various reference docs about Log-Level Data Feeds
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 12/01/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: log-level-data-feeds.html
+          - text: Batch Log Level Data
+            url: batch-log-level-data.html
+      - linkListType: reference
+        links:
+          - text: Protocol Buffers
+            url: log-level-data-protocol-buffers.html
+          - text: Cloud Export
+            url: log-level-data-cloud-export.html
+  - title: Log-Level Feeds
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Bid Landscape Feed
+            url: bid-landscape-feed.html
+          - text: Buyer Transparency Feed
+            url: buyer-transparency-feed.html
+          - text: Curator Feed
+            url: curator-feed.html
+          - text: Standard Feed
+            url: standard-feed.html
