@@ -72,7 +72,9 @@ landingContent:
           - text: Creative Service
             url: ../bidders/creative-service.md
           - text: Creative Template Service
-            url: ../bidders/creative-template-service.md                        
+            url: ../bidders/creative-template-service.md 
+          - text: Creative Search Service
+            url: ../bidders/creative-search-service.md 
   - title: Report Service
     linkLists:
       - linkListType: overview
