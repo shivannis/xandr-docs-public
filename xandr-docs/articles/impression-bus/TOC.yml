@@ -56,134 +56,134 @@
 - name: Deal API Services
   items:
     - name: Deal Buyer Access Service
-      href: deal-buyer-access-service.md
+      href: ../bidders/deal-buyer-access-service.md
     - name: Package Buyer Access Service
-      href: package-buyer-access-service.md
+      href: ../bidders/package-buyer-access-service.md
     - name: Deal From Package Service
-      href: deal-from-package-service.md
+      href: ../bidders/deal-from-package-service.md
 - name: Domain List Service
   href: domain-list-service.md
 - name: Enhanced Bidder Profiles
   items:
     - name: Overview
-      href: enhanced-bidder-profiles.md
+      href: ../bidders/enhanced-bidder-profiles.md
     - name: Bidder Profile Migration Guide
-      href: bidder-profile-migration-guide.md
+      href: ../bidders/bidder-profile-migration-guide.md
     - name: Exchange Service
-      href: exchange-service.md
+      href: ../bidders/exchange-service.md
     - name: Hierarchy and Ad Type Targeting for Enhanced Bidder Profiles
-      href: hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md
+      href: ../bidders/hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md
     - name: API Use Cases for Enhanced Bidder Profiles
-      href: api-use-cases-for-enhanced-bidder-profiles.md
+      href: ../bidders/api-use-cases-for-enhanced-bidder-profiles.md
     - name: Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
-      href: frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
+      href: ../bidders/frequently-asked-questions-faq-for-enhanced-bidder-profiles.md
     - name: Changelog for Enhanced Bidder Profiles
-      href: changelog-for-enhanced-bidder-profiles.md
+      href: ../bidders/changelog-for-enhanced-bidder-profiles.md
 - name: Member Service
-  href: member-service.md
+  href: ../bidders/member-service.md
 
 
 - name: Read-Only Services
   items:
     - name: Ad Server Service
-      href: ad-server-service.md
+      href: ../bidders/ad-server-service.md
     - name: Brand Service
-      href: brand-service.md
+      href: ../bidders/brand-service.md
     - name: Browser Service
-      href: browser-service.md
+      href: ../bidders/browser-service.md
     - name: Carrier Service
-      href: carrier-service.md
+      href: ../bidders/carrier-service.md
     - name: Category Service
-      href: category-service.md
+      href: ../bidders/category-service.md
     - name: City Service
-      href: city-service.md
+      href: ../bidders/city-service.md
     - name: Content Category Service
       items:
         - name: Overview
-          href: content-category-service.md
+          href: ../bidders/content-category-service.md
         - name: Automotive Content Categories
-          href: automotive-content-categories.md
+          href: ../bidders/automotive-content-categories.md
     - name: Country Service
-      href: country-service.md
+      href: ../bidders/country-service.md
     - name: Delivery Type Service
-      href: delivery-type-service.md
+      href: ../bidders/delivery-type-service.md
     - name: Device Make Service
-      href: device-make-service.md
+      href: ../bidders/device-make-service.md
     - name: Device Model Service
-      href: device-model-service.md
+      href: ../bidders/device-model-service.md
     - name: Duration Service
-      href: duration-service.md
+      href: ../bidders/duration-service.md
     - name: Genre Service
-      href: genre-service.md
+      href: ../bidders/genre-service.md
     - name: Inventory Attribute Service
-      href: inventory-attribute-service.md
+      href: ../bidders/inventory-attribute-service.md
     - name: Language Service
-      href: language-service.md
+      href: ../bidders/language-service.md
     - name: Network Service
-      href: network-service.md
+      href: ../bidders/network-service.md
     - name: Object Limit Service
-      href: object-limit-service.md
+      href: ../bidders/object-limit-service.md
     - name: Operating System Family Service
-      href: operating-system-family-service.md
+      href: ../bidders/operating-system-family-service.md
     - name: Operating System Service
-      href: operating-system-service.md
+      href: ../bidders/operating-system-service.md
     - name: Platform Member Service
-      href: platform-member-service.md
+      href: ../bidders/platform-member-service.md
     - name: Postal Code Service
-      href: postal-code-service.md
+      href: ../bidders/postal-code-service.md
     - name: Program Type Service
-      href: program-type-service.md
+      href: ../bidders/program-type-service.md
     - name: Rating Service
-      href: rating-service.md
+      href: ../bidders/rating-service.md
     - name: Region Service
-      href: region-service.md
+      href: ../bidders/region-service.md
     - name: Technical Attribute Service
-      href: technical-attribute-service.md
+      href: ../bidders/technical-attribute-service.md
     - name: URL Service
-      href: url-service.md
+      href: ../bidders/url-service.md
 - name: Report Service
   items:
     - name: Overview
-      href: report-service.md
+      href: ../bidders/report-service.md
     - name: Bidder Bid Error Report API
-      href: bidder-bid-error-report-api.md
+      href: ../bidders/bidder-bid-error-report-api.md
     - name: Bidder Billing Report API
-      href: bidder-billing-report-api.md
+      href: ../bidders/bidder-billing-report-api.md
     - name: Bidder Platform Buyer Report
-      href: bidder-platform-buyer-report.md
+      href: ../bidders/bidder-platform-buyer-report.md
     - name: Completed Creative Audits Report
-      href: completed-creative-audits-report.md
+      href: ../bidders/completed-creative-audits-report.md
     - name: Inventory Availability Report
-      href: inventory-availability-report.md
+      href: ../bidders/inventory-availability-report.md
     - name: Platform Seller Report
-      href: platform-seller-report.md
+      href: ../bidders/platform-seller-report.md
     - name: Reporting Timezones
-      href: reporting-timezones.md
+      href: ../bidders/reporting-timezones.md
     - name: Seller Platform Billing Report
-      href: seller-platform-billing-report.md
+      href: ../bidders/seller-platform-billing-report.md
     - name: Saved Report Service
-      href: saved-report-service.md
+      href: ../bidders/saved-report-service.md
 - name: Seat Service
   items:
     - name: Overview
-      href: seat-service.md
+      href: ../bidders/seat-service.md
     - name: Changelog for Buyer Seat ID
-      href: changelog-for-buyer-seat-id.md
+      href: ../bidders/changelog-for-buyer-seat-id.md
 - name: Sell-Side Services
   items:
     - name: Overview
-      href: sell-side-services.md
+      href: ../bidders/sell-side-services.md
     - name: TinyTags
       items: 
       - name: Overview
-        href: tinytags.md
+        href: ../bidders/tinytags.md
       - name: TinyTag Service
-        href: tinytag-service.md
+        href: ../bidders/tinytag-service.md
       - name: Dynamic TinyTag Parameters
-        href: dynamic-tinytag-parameters.md
+        href: ../bidders/dynamic-tinytag-parameters.md
     - name: Preemptive Tags
-      href: preemptive-tags.md
+      href: ../bidders/preemptive-tags.md
     - name: Ad Profile Service
-      href: ad-profile-service.md
+      href: ../bidders/ad-profile-service.md
 - name: User Service
-  href: user-service.md
+  href: ../bidders/user-service.md
