@@ -5,54 +5,54 @@
   - name: Overview
     href: ../bidders/impression-bus-api.md
   - name: API Semantics
-    href: api-semantics.md
+    href: ../bidders/api-semantics.md
   - name: API Usage Constraints
-    href: api-usage-constraints.md
+    href: ../bidders/api-usage-constraints.md
   - name: API Best Practices
-    href: api-best-practices.md
+    href: ../bidders/api-best-practices.md
   - name: Breaking Changes
-    href: breaking-changes.md
+    href: ../bidders/breaking-changes.md
 - name: Authentication Service
   items:
     - name: Overview
-      href: authentication-service.md
+      href: ../bidders/authentication-service.md
     - name: Account Recovery Service
-      href: account-recovery-service.md
+      href: ../bidders/account-recovery-service.md
 - name: Bidder API Services
   items:
     - name: Overview
-      href: bidder-api-services.md
+      href: ../bidders/bidder-api-services.md
     - name: Bidder Service
-      href: bidder-service.md
+      href: ../bidders/bidder-service.md
     - name: Bidder Instance Service
-      href: bidder-instance-service.md
+      href: ../bidders/bidder-instance-service.md
     - name: Legacy Bidder Profile Service
-      href: legacy-bidder-profile-service.md
+      href: ../bidders/legacy-bidder-profile-service.md
 
 - name: Creative API Services
   items:
     - name: Overview
-      href: creative-api-services.md
+      href: ../bidders/creative-api-services.md
     - name: Creative Service
       items:
       - name: Overview
-        href: creative-service.md
+        href: ../bidders/creative-service.md
       - name: Submit Auditable Dynamic Creatives
-        href: submit-auditable-dynamic-creatives.md
+        href: ../bidders/submit-auditable-dynamic-creatives.md
       - name: Xandr Macros
-        href: xandr-macros.md
+        href: ../bidders/xandr-macros.md
     - name: Creative Template Service
-      href: creative-template-service.md
+      href: ../bidders/creative-template-service.md
     - name: Creative Format Service
-      href: creative-format-service.md
+      href: ../bidders/creative-format-service.md
     - name: Pixel Template Service
-      href: pixel-template-service.md
+      href: ../bidders/pixel-template-service.md
     - name: Creative Search Service
-      href: creative-search-service.md
+      href: ../bidders/creative-search-service.md
     - name: Creative Macro Check Service
-      href: creative-macro-check-service.md
+      href: ../bidders/creative-macro-check-service.md
     - name: Currency Service
-      href: currency-service.md
+      href: ../bidders/currency-service.md
 - name: Deal API Services
   items:
     - name: Deal Buyer Access Service
