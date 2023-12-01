@@ -95,10 +95,11 @@ minutes.
 
 **Example on how to assign a user to two segments**
 
-| API Call | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
+|  |  |
 |---|---|
+| **API Call** | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
 | **JSON Payload** | `{ "rt_segment": [ { "user_id": "12345678900987654321", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ], "domain": null } ] }` |
-| **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1, "segments_in_request": 2 }, "warnings": [ ] } }` |
+| **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1, "segments_in_request": 2 }, "warnings": [ ] }` |
 
 ## JSON fields
 
@@ -120,16 +121,18 @@ minutes.
 
 **Using device ID (IDFA)**
 
-| REST API call | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
+|  |  |
 |---|---|
-| **JSON Payload**| `{ "rt_segment": [ { "user_id": "1ba98a6c-d1a5-49ef-ad1c-2d9230ebcd13", "seg_block": [ { "seg_id": 12, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 23784, "seg_code": null, "value": 1, "expiration": 0, "member_id": null } ], "domain": "idfa" } ] }` |
+| **REST API call** | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
+| **JSON Payload** | `{ "rt_segment": [ { "user_id": "1ba98a6c-d1a5-49ef-ad1c-2d9230ebcd13", "seg_block": [ { "seg_id": 12, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 23784, "seg_code": null, "value": 1, "expiration": 0, "member_id": null } ], "domain": "idfa" } ] }` |
 | **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1, "segments_in_request": 2 }, "warnings": [ ] } }` |
 
 **Using codes for other members**
 
-| **REST API call** | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
+|  |  |
 |---|---|
-| **JSON Payload**| `{ "rt_segment": [ { "user_id": "12345678900987654321", "seg_block": [ { "seg_code": "abcd", "value": 1, "expiration": 1440, "member_id": 1661 }, { "seg_code": "zywx", "value": 1, "expiration": 1440, "member_id": 1262 } ], "domain": null } ] }` |
+| **REST API call** | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"` |
+| **JSON Payload** | `{ "rt_segment": [ { "user_id": "12345678900987654321", "seg_block": [ { "seg_code": "abcd", "value": 1, "expiration": 1440, "member_id": 1661 }, { "seg_code": "zywx", "value": 1, "expiration": 1440, "member_id": 1262 } ], "domain": null } ] }` |
 | **Response** | `{ "response": { "status":"OK", “users_in_request”: 1, "segments_in_request": 2 } }` |
 
 ## Service limits
@@ -149,29 +152,31 @@ Instant Audience Service currently has the following limits:
 
 **Adding/removing over 1000 users in a request**
 
-| API Call | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/1002_users.json "https://streaming-data.appnexus.com/rt-segment"` |
+|  |  |
 |---|---|
+| **API Call** | `curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" -d @json/1002_users.json "https://streaming-data.appnexus.com/rt-segment"` |
 | **JSON Payload** | `{ "rt_segment": [ { "user_id": "12345678900987654321", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ], "domain": "domain" }, #... assume there are additional 1000 users in this array (1002 in total) ] }` |
-| **Response** |  `"response": { "status": "OK", "message": { "users_in_request": 1000, "segments_in_request": 2000 }, "warnings": [ { "message": "Too many user_ids in request.", "entity": { "user_id": "23456789009876543211", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ] } }, #... similar error will be sent for each user over 1000 ] }` |
-
+| **Response** | `{ "response": { "status": "OK", "message": { "users_in_request": 1000, "segments_in_request": 2000 }, "warnings": [ { "message": "Too many user_ids in request.", "entity": { "user_id": "23456789009876543211", "seg_block": [ { "seg_id": 10001, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null }, { "seg_id": 10002, "seg_code": null, "value": 1, "expiration": 1440, "member_id": null } ] } }, #... similar error will be sent for each user over 1000 ] } }` |
 
 **seg_id or  seg_code and  member_id are not provided**
 
-| **JSON Payload** | `{ "rt_segment": [ { "user_id": "1", "seg_block": [ { "seg_id": null, "seg_code": "abc", "value": 1, "expiration": 1, "member_id": null } ] } ] }` |
+|  |  |
 |---|---|
+| **JSON Payload**| `{ "rt_segment": [ { "user_id": "1", "seg_block": [ { "seg_id": null, "seg_code": "abc", "value": 1, "expiration": 1, "member_id": null } ] } ] }` |
 | **Response** | `{ "status": "OK", "message": { "users_in_request": 0, "segments_in_request": 0 }, "warnings": [ { "message": "'seg_id' or 'seg_code' and 'member_id' are required", "entity": { "seg_code": "abc", "value": 1, "expiration": 1 } }, { "message": "No valid segments for user_id: 1.", "entity": { "user_id": "1", "seg_block": [ { "seg_code": "abc", "value": 1, "expiration": 1 } ] } }, { "message": "No valid rt_segment in request.", "entity": { "rt_segment": [ { "user_id": "1", "seg_block": [ { "seg_code": "abc", "value": 1, "expiration": 1 } ] } ] } } ] }` |
-
 
 **seg_block not provided**
 
-| **JSON Payload**| `{ "rt_segment": [ { "user_id": "asdf" } ], "domain": "domain" }` |
+|  |  |
 |---|---|
+| **JSON Payload** | `{ "rt_segment": [ { "user_id": "asdf" } ], "domain": "domain" }` |
 | **Response** | `{ "status": "OK", "message": { "users_in_request": 0, "segments_in_request": 0 }, "warnings": [ { "message": "'seg_block' is required", "entity": { "user_id": "asdf" } }, { "message": "No valid rt_segment in request.", "entity": { "rt_segment": [ { "user_id": "asdf" } ] } } ] }` |
 
 **user_id is empty**
 
-| **JSON Payload** | `{ "rt_segment": [ { "seg_block": [ { "seg_id": 1, "seg_code": null, "value": 1, "expiration": 1, "member_id": null } ] } ], "domain": "domain" }` |
+|  |  |
 |---|---|
+| **JSON Payload** | `{ "rt_segment": [ { "seg_block": [ { "seg_id": 1, "seg_code": null, "value": 1, "expiration": 1, "member_id": null } ] } ], "domain": "domain" }` |
 | **Response** | `{ "status": "OK", "message": { "users_in_request": 0, "segments_in_request": 0 }, "warnings": [ { "message": "'user_id' is required and cannot be empty", "entity": { "seg_block": [ { "seg_id": 1, "seg_code": null, "value": 1, "expiration": 1 } ] } }, { "message": "No valid rt_segment in request.", "entity": { "rt_segment": [ { "seg_block": [ { "seg_id": 1, "seg_code": null, "value": 1, "expiration": 1 } ] } ] } } ] }` |
 
 ## Related topics
