@@ -37,7 +37,8 @@ additionalContent:
     - title: Browse Product Offerings
       items:
       # Card
-      - title: Microsoft Invest (*Powered by Xandr)
+      - title: Microsoft Invest
+        summary: (*Powered by Xandr)
         links:
           - url: invest/index.yml
             text: Product Documentation
@@ -75,12 +76,12 @@ additionalContent:
             - text: References
               url: getting-started/index.yml
         # Card
-        - title: Impression Bus API (Work in Progress)
+        - title: Impression Bus API
           links:
             - text: Overview
-              url: getting-started/index.yml
+              url: impression-bus/index.yml
             - text: References
-              url: getting-started/index.yml
+              url: impression-bus/index.yml
         # Card
         - title: Yield Analytics API
           links:
