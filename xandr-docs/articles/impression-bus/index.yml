@@ -55,7 +55,7 @@ landingContent:
         links:
           - text: Overview
             url: ../bidders/enhanced-bidder-profiles.md
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:
           - text: Bidder Profile Migration Guide
             url: ../bidders/bidder-profile-migration-guide.md
@@ -85,6 +85,28 @@ landingContent:
             url: ../bidders/bidder-bid-error-report-api.md
           - text: Bidder Platform Buyer Report
             url: ../bidders/bidder-platform-buyer-report.md            
+  - title: Sell-Side Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/sell-side-services.md
+      - linkListType: reference
+        links:
+          - text: TinyTag Service
+            url: ../bidders/tinytag-service.md
+          - text: Preemptive Tags
+            url: ../bidders/preemptive-tags.md    
+  - title: Deal API Services
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Deal Buyer Access Service
+            url: ../bidders/deal-buyer-access-service.md
+          - text: Package Buyer Access Service
+            url: ../bidders/package-buyer-access-service.md
+          - text: Deal from Package Service
+            url: ../bidders/deal-from-package-service.md
   - title: Read-Only Services
     linkLists:
       - linkListType: reference
@@ -97,15 +119,4 @@ landingContent:
             url: ../bidders/device-model-service.md
           - text: Postal Code Service
             url: ../bidders/postal-code-service.md      
-  - title: Sell-Side Service
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: ../bidders/sell-side-services.md
-      - linkListType: reference
-        links:
-          - text: TinyTag Service
-            url: ../bidders/tinytag-service.md
-          - text: Preemptive Tags
-            url: ../bidders/preemptive-tags.md            
+          
