@@ -17,8 +17,8 @@ landingContent:
         links:
           - text: Overview
             url: ../bidders/impression-bus-api.md
-          - text: Breaking Changes
-            url: ../bidders/breaking-changes.md
+          #- text: Breaking Changes
+          #  url: ../bidders/breaking-changes.md
       - linkListType: quickstart
         links:
           - text: API Semantics
