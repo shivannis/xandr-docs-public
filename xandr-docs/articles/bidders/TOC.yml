@@ -319,6 +319,8 @@
     href: viewability-faq.md
 #- name: Communications
  # href: communications.md
+- name: Impression Bus API
+  href: ../impression-bus/index.yml
 - name: Release Notes
   items:
     - name: Latest Release Notes
