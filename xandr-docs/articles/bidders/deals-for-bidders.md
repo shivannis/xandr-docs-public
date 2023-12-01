@@ -1,107 +1,54 @@
 ---
-Title : Deals for Bidders
-Description : Xandr offers the ability to bid on deals with
-ms.date : 10/28/2023
-our platform sellers. This page walks you through the bidding process.
+title: Deals for Bidders
+description: The article explains the deals for bidders.
+ms.date: 10/28/2023
 ---
-
 
 # Deals for Bidders
 
+Xandr offers the ability to bid on deals with our platform sellers. This page walks you through the bidding process.
 
+> [!TIP]
+> A deal auction can be open or private, depending on how the seller defined the deal. For information about how these different types of auctions work, see [Deal Auction Mechanics](deal-auction-mechanics.md).
+> [!NOTE]
+> The member cannot be changed after a deal has been created.
 
+## Buying deal inventory
 
+### Step 1. Configure your system to handle deals
 
-Xandr offers the ability to bid on deals with
-our platform sellers. This page walks you through the bidding process.
-
-class="note tip note_tip">
-
-<b>Tip:</b> A deal auction can
-be open or private, depending on how the seller defined the deal. For
-information about how these different types of auctions work, see <a
-href="deal-auction-mechanics.md"
-class="xref" target="_blank">Deal Auction Mechanics</a>.
-
-
-
-
-
-<b>Note:</b> The member cannot be changed
-after a deal has been created.
-
-
-
-
-
-
-
-## Buying Deal Inventory
-
-**Step 1. Configure your system to handle deals**
-
-Ensure that your system is configured to read deal IDs in the bid
-request and format a proper deal-specific bid response. For more
-information, see the <a
-href="deals-for-bidders.md#DealsforBidders-ExampleRequest-ResponseChain"
-class="xref" target="_blank">Example Request/Response Chain</a>. Please
-also make sure to review <a
-href="deal-auction-mechanics.md"
-class="xref" target="_blank">Deal Auction Mechanics</a> to understand
-how Xandr conducts auction in different
+Ensure that your system is configured to read deal IDs in the bid request and format a proper deal-specific bid response. For more
+information, see the [Example Request/Response Chain](deals-for-bidders.md#example-requestresponse-chain). Please also make sure to review [Deal Auction Mechanics](deal-auction-mechanics.md) to understand how Xandr conducts auction in different
 situations.
 
-**Step 2. Reach out to your Xandr
-representative**
+### Step 2. Reach out to your Xandr representative
 
-Once you've configured your system to handle deal ID requests and
-responses appropriately, reach out to your Xandr
-representative to enable you for deals on Xandr.
-Enabling you for deals may involve:
+Once you've configured your system to handle deal ID requests and responses appropriately, reach out to your Xandr representative to enable you for deals on Xandr. Enabling you for deals may involve:
 
 - Validating how you decision and respond to deal requests
-- Making you visible to sellers in our system 
+- Making you visible to sellers in our system
 
-**Step 3. Tell your buyers to start negotiating deals**
+### Step 3. Tell your buyers to start negotiating deals
 
-Your buyers will negotiate deals with sellers directly.
-Xandr is not involved in the process. Here's the
-process that your buyers should follow:
+Your buyers will negotiate deals with sellers directly. Xandr is not involved in the process. Here's the process that your buyers should follow:
 
-1.  Buyer negotiates a deal with a seller off-line.
-2.  Buyer gives their Xandr member ID to the
-    seller. If they don't know their member ID, you should help them
-    identify it.
-3.  Seller sets up a deal with the buyer within the UI
-4.  Seller gives the deal ID to the buyer.
-5.  Buyer enters the deal ID into your bidder system for targeting.  
+1. Buyer negotiates a deal with a seller off-line.
+1. Buyer gives their Xandr member ID to the seller. If they don't know their member ID, you should help them identify it.
+1. Seller sets up a deal with the buyer within the UI
+1. Seller gives the deal ID to the buyer.
+1. Buyer enters the deal ID into your bidder system for targeting.  
 
-**Step 4. Validate your buyers' deals**
+### Step 4. Validate your buyers' deals
 
+Once a buyer has set up a deal with a Xandr seller, you must ensure that your bidder profiles are not blocking any of the parameters that apply to the deal inventory. For example, if a profile is filtering out the seller, creative size, or other parameter that applies to the deal inventory, you will not receive those bid requests. For details about updating or creating bidder profiles, see
+the [Legacy Bidder Profile Service](legacy-bidder-profile-service.md).
 
+> [!NOTE]
+> We recommend using the [Deal Buyer Access Service](deal-buyer-access-service.md) to validate that the deal exists in Xandr's system. This will help you avoid targeting a deal that is inactive or not what you expected.
 
-Once a buyer has set up a deal with a Xandr
-seller, you must ensure that your bidder profiles are not blocking any
-of the parameters that apply to the deal inventory. For example, if a
-profile is filtering out the seller, creative size, or other parameter
-that applies to the deal inventory, you will not receive those bid
-requests. For details about updating or creating bidder profiles, see
-the <a
-href="legacy-bidder-profile-service.md"
-class="xref" target="_blank">Legacy Bidder Profile Service</a>.
+Example:
 
-
-
-<b>Note:</b> We recommend using the <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a> to validate
-that the deal exists in Xandr's system. This will help you avoid
-targeting a deal that is inactive or not what you expected.
-
-
-Expand for an example
-
-``` pre
+```
 $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'
 {
      "response" : {
@@ -143,32 +90,17 @@ $ curl -b cookies -c cookies  'https://api.adnxs.com/deal-buyer-access?id=63'
              "suggested_min_bid_price" : 3
          }
      }
+}
 ```
 
+### Example request/response chain
 
+> [!NOTE]
+> This example is for the Xandr integration of the AppNexus Bidding Protocol.
 
+### Bid request
 
-
-
-
-
-
-
-## Example Request/Response Chain
-
-
-
-<b>Note:</b> This example is for the
-Xandr integration of the
-AppNexus Bidding Protocol.
-
-
-
-
-
-**Bid Request**
-
-``` pre
+```
 {
     "bid_request": {
         "timestamp": "2014-04-18 17:00:57",
@@ -279,13 +211,9 @@ AppNexus Bidding Protocol.
 }
 ```
 
+### Bid response
 
-
-
-
-**Bid Response**
-
-``` pre
+```
 {
    "bid_response":{
       "responses":[
@@ -301,78 +229,19 @@ AppNexus Bidding Protocol.
 }
 ```
 
+### Notify request error codes
 
+Deal-specific error codes, see [Bid Error Codes](bid-error-codes.md).
 
-**Notify Request Error Codes**
+| Error | ID | **Description |
+|--|--|--|
+| `NEC_DEAL_NOT_AVAILABLE` | 308 | The deal you specified in your response is not currently active. |
+| `NEC_DEAL_NO_MEMBER` | 309 | The deal you specified in your response is not available to your member. |
+| `NEC_DEAL_BELOW_FLOOR` | 310 | Your bid was not considered in the auction because it is below the deal's ask price. |
+| `NEC_DEAL_BRAND_BANNED` | 311 | The brand associated with your creative is not a valid brand for this deal. |
 
-Deal-specific error codes, see <a
-href="bid-error-codes.md"
-class="xref" target="_blank">Bid Error Codes</a> for more info.
+## Related topics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001b62__ID-00001c5b__entry__1" class="entry">Error</th>
-<th id="ID-00001b62__ID-00001c5b__entry__2" class="entry">ID</th>
-<th id="ID-00001b62__ID-00001c5b__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001b62__ID-00001c5b__entry__1">NEC_DEAL_NOT_AVAILABLE</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__2">308</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__3">The deal
-you specified in your response is not currently active.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001b62__ID-00001c5b__entry__1">NEC_DEAL_NO_MEMBER</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__2">309</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__3">The deal
-you specified in your response is not available to your member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00001b62__ID-00001c5b__entry__1">NEC_DEAL_BELOW_FLOOR</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__2">310</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__3">Your bid
-was not considered in the auction because it is below the deal's ask
-price.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00001b62__ID-00001c5b__entry__1">NEC_DEAL_BRAND_BANNED</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__2">311</td>
-<td class="entry" headers="ID-00001b62__ID-00001c5b__entry__3">The brand
-associated with your creative is not a valid brand for this deal.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="deal-auction-mechanics.md"
-  class="xref" target="_blank">Deal Auction Mechanics</a>
-- <a
-  href="deal-buyer-access-service.md"
-  class="xref" target="_blank">Deal Buyer Access Service</a>
-- <a
-  href="legacy-bidder-profile-service.md"
-  class="xref" target="_blank">Legacy Bidder Profile Service</a>
-
-
-
-
-
-
-
-
+- [Deal Auction Mechanics](deal-auction-mechanics.md)
+- [Deal Buyer Access Service](deal-buyer-access-service.md)
+- [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
