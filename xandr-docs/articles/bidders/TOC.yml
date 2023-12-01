@@ -257,6 +257,8 @@
     href: guaranteed-outcomes-bidder-integration-guide.md
   - name: Monthly Prediction Variability Data
     href: monthly-prediction-variability-data.md
+- name: Impression Bus API
+  href: ../impression-bus/index.yml
 - name: FAQs
   items: 
   - name: Ad Quality Profile - FAQ
@@ -319,8 +321,7 @@
     href: viewability-faq.md
 #- name: Communications
  # href: communications.md
-- name: Impression Bus API
-  href: ../impression-bus/index.yml
+
 - name: Release Notes
   items:
     - name: Latest Release Notes
