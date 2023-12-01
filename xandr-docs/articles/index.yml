@@ -46,6 +46,7 @@ additionalContent:
             text: Release Notes
       # Card
       - title: Microsoft Monetize (Work in Progress)
+        summary: (*Powered by Xandr)
         links:
           - url: getting-started/index.yml
             text: Product Documentation
@@ -102,7 +103,7 @@ additionalContent:
             - text: Digital Platform API Release Notes (Work in Progress)
               url: getting-started/index.yml
             - text: Impression Bus API Release Notes
-              url: ../bidders/xandr-bidder-release-notes.md
+              url: bidders/xandr-bidder-release-notes.md
     - title: Developer Documentation
       items:
         # Card
