@@ -16,24 +16,24 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview
-            url: log-level-data-feeds.html
+            url: log-level-data-feeds.md
           - text: Batch Log Level Data
-            url: batch-log-level-data.html
+            url: batch-log-level-data.md
       - linkListType: reference
         links:
           - text: Protocol Buffers
-            url: log-level-data-protocol-buffers.html
+            url: log-level-data-protocol-buffers.md
           - text: Cloud Export
-            url: log-level-data-cloud-export.html
+            url: log-level-data-cloud-export.md
   - title: Log-Level Feeds
     linkLists:
       - linkListType: reference
         links:
           - text: Bid Landscape Feed
-            url: bid-landscape-feed.html
+            url: bid-landscape-feed.md
           - text: Buyer Transparency Feed
-            url: buyer-transparency-feed.html
+            url: buyer-transparency-feed.md
           - text: Curator Feed
-            url: curator-feed.html
+            url: curator-feed.md
           - text: Standard Feed
-            url: standard-feed.html
+            url: standard-feed.md
