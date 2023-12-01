@@ -31,6 +31,8 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations
           - text: Xandr Privacy Agreements
             url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Privacy-Agreements.aspx
+          - text: Xandr Platform Data Processing Addendum - Terms and Conditions
+            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Platform-Data-Processing-Addendum---Terms-and-Conditions.aspx
           - text: Privacy Docs:U.S. Privacy Laws, GDPR, and ePrivacy (ePR)
             url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Privacy-Documentation--including-U.S.-Privacy-Laws,-General-Data-Protection-Regulation-(GDPR),-and-ePrivacy-(e.aspx
   - title: Online Terms (Password Protected)
@@ -39,6 +41,8 @@ landingContent:
         links:            
           - text: Overview
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms
+          - text: Xandr Platform Terms of Service
+            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Xandr-Platform-Terms-of-Service.aspx
           - text: Seller Additional Terms
             url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
           - text: Buyer Additional Terms
