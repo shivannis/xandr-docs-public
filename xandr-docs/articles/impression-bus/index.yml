@@ -8,7 +8,7 @@ metadata:
   ms.topic: landing-page
   ms.author: rupambaruah
   ms.service: app-service
-  ms.date: 28/11/2023
+  ms.date: 11/30/2023
 
 landingContent:
   - title: Let's Get Started
@@ -16,4 +16,26 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview
-            url: impression-bus-api.md
+            url: ../bidders/impression-bus-api.md
+          - text: Breaking Changes
+            url: ../bidders/breaking-changes.md
+      - linkListType: quickstart
+        links:
+          - text: API Semantics
+            url: ../bidders/api-semantics.md
+          - text: Usage Constraints
+            url: ../bidders/usage-constraints.md
+          - text: Best Practices
+            url: ../bidders/api-best-practices.md
+  - title: Authentication Service
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: ../bidders/authentication-service.md
+      - linkListType: reference
+        links:
+          - text: Account Recovery Service
+            url: ../bidders/account-recovery-service.md
+          
+            
