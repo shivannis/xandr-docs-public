@@ -1,20 +1,17 @@
 ---
-Title : Best Practices for Real Time Data Provider Integrations
-Description : ## Software Stack Best Practices
+title : Best Practices for Real Time Data Provider Integrations
+description : Learn best practices in real time data provider integrations. 
 ms.custom : data-providers
-ms.date : 10/28/2023
-Depending on the software stack that you decide to employ for your Data
-Provider, you will see a wide range of QPS performance. Having an
+ms.date : 11/29/2023
+
 ---
 
 
-# Best Practices for Real Time Data Provider Integrations
+# Best practices for real time data provider integrations
 
+This page deals with best practices by Software stack, Data Provider Bidder and Connection Management. 
 
-
-
-
-## Software Stack Best Practices
+## Software stack best practices
 
 Depending on the software stack that you decide to employ for your Data
 Provider, you will see a wide range of QPS performance. Having an
@@ -22,7 +19,7 @@ optimal stack translates into better performing servers, which
 ultimately means you will need less servers to achieve the same
 performance.
 
-- **Listener and Application:** The listener should be used to listen to
+- **Listener and application:** The listener should be used to listen to
   requests and the application should be processing the information in
   the requests; listener and application should be decoupled.
 - **Recommended tech stacks:** The best performance we have seen is with
@@ -46,11 +43,7 @@ performance.
   significantly increase performance when implemented while running one
   worker per CPU.
 
-
-
-
-
-## Data Provider Bidder Performance Best Practices
+## Data provider bidder performance best practices
 
 Having the appropriate targets for performance metrics (response times,
 timeout rates) is key to guiding your data provider to be successfully
@@ -74,11 +67,7 @@ integrated on our platform.
   field of your bidder profile) to 1% and slowly increase it as you see
   that your bidder approaches a 100% response rate.
 
-
-
-
-
-## Connection Management Best Practices
+## Connection management best practices
 
 Properly managing connections will be extremely important in helping
 your data provider effectively manage the formidable traffic levels that
@@ -96,9 +85,9 @@ the impression bus sends your way.
 
 <!-- -->
 
-- **Connection Metrics:** The best metric for monitoring connections is
+- **Connection metrics:** The best metric for monitoring connections is
   queries/connections as opposed to connections/second.
-- **Keep-Alive Protocol:** You should be supporting Keep-Alive protocol
+- **Keep-Alive protocol:** You should be supporting Keep-Alive protocol
   and trying to keep connections open as long as possible. Typically we
   see 300 queries per connection, meaning that if you are closing the
   connection, you will see 300x more opens/closes. You should be

@@ -1,25 +1,15 @@
 ---
-Title : Check Usage Statistics
-Description : <b>Note:</b> This field or feature is part of
+title : Data Providers - Check Usage Statistics
+description : Learn about Usage Statistics in this page. 
 ms.custom : data-providers
-ms.date : 10/28/2023
-functionality currently in either Alpha or Beta phase. It is therefore
+ms.date : 11/30/2023
 ---
 
 
-# Check Usage Statistics
+# Data Providers - Check usage statistics
 
-
-
-
-
-<b>Note:</b> This field or feature is part of
-functionality currently in either Alpha or Beta phase. It is therefore
-subject to change.
-
-
-
-
+> [!NOTE]
+> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
 ## REST API call
 
@@ -33,12 +23,9 @@ fields can be set in the query string:
 - `end` date should be set in the following
   format: `2015-12-01+01:00:00.` 
   
-
-  ``` pre
+  ``` 
   curl -H "Authorization: hbapi:123456:9876abcd54321:nym2" -X GET "https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"
   ```
-
-  
 
 The statistics are deduplicated per request made to the service. For
 example, if the same user is added to the same segment in three
@@ -51,9 +38,9 @@ processed hour will be for the last hour in the date range that's
 specified. However, if no date range is specified, the report will show
 the data from the last two weeks.
 
-**Ex: Aggregated Usage Report**
+**Ex: Aggregated usage report**
 
-``` pre
+``` 
 {
     "response": {
         "report": {
@@ -76,11 +63,9 @@ the data from the last two weeks.
 }
 ```
 
+**Ex: Hourly report**
 
-
-**Ex: Hourly Report**
-
-``` pre
+``` 
 {
     "response": {
         "report": [
@@ -126,140 +111,24 @@ Valid removals (user id, segment id, expiration): (1580557697843484206, 3737552,
 }
 ```
 
-
-
-
-
-
-
 ## Report object JSON (for objects in report array)
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000070d__entry__1" class="entry">Field name</th>
-<th id="ID-0000070d__entry__2" class="entry">Description</th>
-<th id="ID-0000070d__entry__3" class="entry">Example value</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">processed_hour</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Hour during which
-uploads went through.</td>
-<td class="entry" headers="ID-0000070d__entry__3"><code
-class="ph codeph">"2014-05-22 00:00:00"</code></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">match_rate</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">The percentage of
-valid users uploaded
-(num_valid_users/(num_valid_users+num_invalid_users)).</td>
-<td class="entry" headers="ID-0000070d__entry__3"> 75.00</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_valid_users</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of valid
-users that were streamed through the service. This is NOT the number of
-unique users for the hour.</td>
-<td class="entry" headers="ID-0000070d__entry__3">124578</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_valid_adds</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of
-associations that were added (that is, user-segment pairs, expiration
-!=-1).</td>
-<td class="entry" headers="ID-0000070d__entry__3">98765432</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_valid_removes</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of
-associations that were removed (that is, user-segment pairs with
-expiration = -1).</td>
-<td class="entry" headers="ID-0000070d__entry__3">98765432</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_invalid_users</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of users
-that were in requests, but do not exist on <span
-class="ph">Xandr's platform.</td>
-<td class="entry" headers="ID-0000070d__entry__3">4000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_unauth_segments</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of
-associations that failed due to attempting to access unauthorized
-segments.</td>
-<td class="entry" headers="ID-0000070d__entry__3">500</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_inactive_segments</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of
-associations that failed due to attempting to access inactive
-segments.</td>
-<td class="entry" headers="ID-0000070d__entry__3">200</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_invalid_segments</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of
-associations that failed due to attempting to access invalid
-segments.</td>
-<td class="entry" headers="ID-0000070d__entry__3">3</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">num_other_errors</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">Total number of failed
-calls for other reasons.</td>
-<td class="entry" headers="ID-0000070d__entry__3">0</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">error_log_lines</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">An updating 200 line
-sample of the errors that prevented the user and segment associations
-from being successful.</td>
-<td class="entry" headers="ID-0000070d__entry__3"><pre
-id="ID-0000070d__codeblock_rlv_n32_lwb"
-class="pre codeblock"><code>&quot;Inactive users: 15805576978434842 Inactive segments (id, code, segment owner member id): (321456, &#39;segment_312456&#39;, 123) Invalid segments (id, code, segment owner member id): (0, &#39;segment_654321&#39;, 123) Unauthorized segments (id, code, segment owner member id): (0, &#39;segment_123456&#39;, 123)&quot;</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000070d__entry__1"><code
-class="ph codeph">segment_log_lines</code></td>
-<td class="entry" headers="ID-0000070d__entry__2">An updating 200
-line sample of the segments and the number of valid associations for
-each.</td>
-<td class="entry" headers="ID-0000070d__entry__3"><pre
-id="ID-0000070d__codeblock_ms1_532_lwb"
-class="pre codeblock"><code>&quot;Valid users: 1580557697843484206 Valid segments (id, code, segment owner member id): (3737552, &#39;segment_3737552&#39;, 123), (3737547, &#39;segment_3737547&#39;, 123) Valid additions (user id, segment id, expiration): (1580557697843484206, 3737552, 1440), (1580557697843484206, 3737547, 1440) Valid removals (user id, segment id, expiration): (1580557697843484206, 3737552, -1), (1580557697843484206, 3737547, -1)&quot;</code></pre></td>
-</tr>
-</tbody>
-</table>
+| Field name | Description | Example value |
+|---|---|---|
+| `error_log_lines` | An updating 200 line sample of the errors that prevented the user and segment associations from being successful. | `"Inactive users: 15805576978434842 Inactive segments (id, code, segment owner member id): (321456, 'segment_312456', 123) Invalid segments (id, code, segment owner member id): (0, 'segment_654321', 123) Unauthorized segments (id, code, segment owner member id): (0, 'segment_123456', 123)"` |
+| `match_rate` | The percentage of valid users uploaded (num_valid_users/(num_valid_users+num_invalid_users)). |  75.00 |
+| `num_inactive_segments` | Total number of associations that failed due to attempting to access inactive segments. | 200 |
+| `num_invalid_segments` | Total number of associations that failed due to attempting to access invalid segments. | 3 |
+| `num_invalid_users` | Total number of users that were in requests, but do not exist on Xandr's platform. | 4000 |
+| `num_other_errors` | Total number of failed calls for other reasons. | 0 |
+| `num_unauth_segments` | Total number of associations that failed due to attempting to access unauthorized segments. | 500 |
+| `num_valid_adds` | Total number of associations that were added (that is, user-segment pairs, expiration !=-1). | 98765432 |
+| `num_valid_removes` | Total number of associations that were removed (that is, user-segment pairs with expiration = -1). | 98765432 |
+| `num_valid_users` | Total number of valid users that were streamed through the service. This is NOT the number of unique users for the hour. | 124578 |
+| `processed_hour` | Hour during which uploads went through. | `"2014-05-22 00:00:00"` |
+| `segment_log_lines` | An updating 200 line sample of the segments and the number of valid associations for each. | `"Valid users: 1580557697843484206 Valid segments (id, code, segment owner member id): (3737552, 'segment_3737552', 123), (3737547, 'segment_3737547', 123) Valid additions (user id, segment id, expiration): (1580557697843484206, 3737552, 1440), (1580557697843484206, 3737547, 1440) Valid removals (user id, segment id, expiration): (1580557697843484206, 3737552, -1), (1580557697843484206, 3737547, -1)"` |
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="xandr-api/streaming-server-side-segmentation.md"
-  class="xref" target="_blank">Streaming Server-Side Segmentation</a>
-- <a
-  href="xandr-api/instant-audience-service.md"
-  class="xref" target="_blank">Instant Audience Service</a>
-
-
-
-
-
-
+- [Streaming Server-Side Segmentation](../digital-platform-api/streaming-server-side-segmentation.md)
+- [Instant Audience Service](../digital-platform-api/instant-audience-service.md)

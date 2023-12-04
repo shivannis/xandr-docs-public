@@ -1,134 +1,46 @@
 ---
-Title : Data Buyer Provider Service
-Description : ## Data Buyer Provider Service
+title : Data Buyer Provider Service
+description : Learn how using Data Buyer Provider Service you can view all activated buyers on the Data Marketplace that have access to your data and have activated data clearing with you.    
 ms.custom : data-providers
-ms.date : 10/28/2023
-The Data Buyer Provider Service allows you to view all activated buyers
-on the Data Marketplace that have access to your data and have activated
-data clearing with you. Any segment that you’ve mapped using the
+ms.date : 11/29/2023
 ---
 
 
-# Data Buyer Provider Service
+# Data buyer provider service
 
+This page tell us how to View all current buyers and those buyers that are activated for data clearing.  
 
-
-
-
-## Data Buyer Provider Service
+## Data buyer provider service
 
 The Data Buyer Provider Service allows you to view all activated buyers
 on the Data Marketplace that have access to your data and have activated
 data clearing with you. Any segment that you’ve mapped using the
-existing <a
-href="segment-billing-category-service.md"
-class="xref" target="_blank">Segment Billing Category Service</a> will
+existing [Segment Billing Category Service](segment-billing-category-service.md) will
 automatically be cleared for these buyers.  
   
-
-
-
-
-
 ## REST API
 
-**View all current buyers:  
-**
+**View all current buyers:**
 
-GET
-https://api.appnexus.com/data-buyer-provider 
+GET https://api.appnexus.com/data-buyer-provider 
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000a94__entry__1" class="entry">Field</th>
-<th id="ID-00000a94__entry__2" class="entry">Type (Length)</th>
-<th id="ID-00000a94__entry__3" class="entry">Description</th>
-<th id="ID-00000a94__entry__4" class="entry">Default</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">int</td>
-<td class="entry" headers="ID-00000a94__entry__3">ID of the sharing
-record</td>
-<td class="entry" headers="ID-00000a94__entry__4">Auto-generated
-number</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">date</td>
-<td class="entry" headers="ID-00000a94__entry__3">When the <code
-class="ph codeph">data_buyer_provider</code> record was last
-modified</td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">boolean</td>
-<td class="entry" headers="ID-00000a94__entry__3">View whether the
-record is active or inactive</td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">data_provider_member_id</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">int</td>
-<td class="entry" headers="ID-00000a94__entry__3">ID of data provider
-member assigned to you by the Data Marketplace</td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">buyer_member_id</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">int</td>
-<td class="entry" headers="ID-00000a94__entry__3">Member ID of the
-buyer</td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">data_revshare_pct</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">double</td>
-<td class="entry" headers="ID-00000a94__entry__3">Data revenue share of
-the total cost (inherited from data provider member), e.g., 20% = <code
-class="ph codeph">20</code></td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000a94__entry__1"><code
-class="ph codeph">data_cost_type</code></td>
-<td class="entry" headers="ID-00000a94__entry__2">string</td>
-<td class="entry" headers="ID-00000a94__entry__3"><p>Set cost type
-(inherited from data provider member)</p>
-<ul>
-<li>1: CPM</li>
-<li>2: %MediaCost</li>
-</ul></td>
-<td class="entry" headers="ID-00000a94__entry__4"></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field                   | Type (Length) | Description                                                                                | Default               |
+|-------------------------|---------------|--------------------------------------------------------------------------------------------|-----------------------|
+| `active`                  | boolean       | View whether the record is active or inactive                                              |                       |
+| `buyer_member_id`         | int           | Member ID of the buyer                                                                     |                       |
+| `data_cost_type`          | string        | Set cost type (inherited from data provider member) <br> - 1: CPM  <br> - 2: %MediaCost                   |                       |
+| `data_provider_member_id` | int           | ID of data provider member assigned to you by the Data Marketplace                         |                       |
+| `data_revshare_pct`       | double        | Data revenue share of the total cost (inherited from data provider member), e.g., 20% = `20` |                       |
+| `id`                      | int           | ID of the sharing record                                                                   | Auto-generated number |
+| `last_modified`           | date          | When the `data_buyer_provider` record was last modified                                      |                       |
 
 ## Example
 
 **View all current buyers activated for data clearing**
 
-``` pre
+``` 
 curl -b cookies -c cookies "https://api.appnexus.com/data-buyer-provider?member_id=958&data_provider_member_id=958"
 {
         "response": {
@@ -156,9 +68,3 @@ curl -b cookies -c cookies "https://api.appnexus.com/data-buyer-provider?member_
         }
 }
 ```
-
-
-
-
-
-

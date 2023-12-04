@@ -1,15 +1,12 @@
 ---
-Title : Home
-Description : Xandr facilitates the transmission of data
+title : Data Providers - Home
+description : This page gives information to data providers on processes to integrate data, share data with buyer and maintain data.
 ms.custom : data-providers
-ms.date : 10/28/2023
-between data providers and data buyers on the platform. Our technical
+ms.date : 11/29/2023
 ---
 
 
-# Home
-
-
+# Data Providers - Home
 
 Xandr facilitates the transmission of data
 between data providers and data buyers on the platform. Our technical
@@ -28,7 +25,3 @@ our existing clients.
 Xandr serves as a facilitator and filter for our
 clients if and when they decide to use additional user-centric or
 inventory-based data to better target campaigns.
-
-
-
-

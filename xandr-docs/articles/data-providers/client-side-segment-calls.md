@@ -1,20 +1,16 @@
 ---
-Title : Client Side Segment Calls
-Description : ## Client Side Segment Calls
+title : Client Side Segment Calls
+description : Learn about Client Side Segment Calls. 
 ms.custom : data-providers
-ms.date : 10/28/2023
-Segment pixels are the mechanism for categorizing users into groups
-(segments) so that they can be targeted by a campaign. Segment data is
+ms.date : 11/29/2023
 ---
 
 
-# Client Side Segment Calls
+# Client side segment calls
 
+This page deals with client side segment calls.  
 
-
-
-
-## Client Side Segment Calls
+## Client side segment calls
 
 Segment pixels are the mechanism for categorizing users into groups
 (segments) so that they can be targeted by a campaign. Segment data is
@@ -28,10 +24,6 @@ where 12345 and 67890 are the IDs for two segments.
 
 A client side segment pixel call will always return a 1x1 invisible GIF
 image unless piggyback pixels are specified.
-
-
-
-
 
 ## Codes
 
@@ -48,9 +40,3 @@ the segment. For example, the tag may look like the below:
 Codes may contain any alphanumeric character, underscores ("\_") or
 hyphens ("-"). Currently, periods (".") are not supported in segment
 codes.
-
-
-
-
-
-
