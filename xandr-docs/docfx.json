@@ -60,7 +60,10 @@
         "articles/curate/*.md":"microsoft-curate",
         "articles/bidders/*.md":"bidder",
         "articles/data-providers/*.md":"microsoft-monetize",
-        "articles/log-level-data/*.md":"microsoft-monetize"
+        "articles/industry-reference/*.md":"microsoft-monetize",
+        "articles/customer-support/*.md":"microsoft-monetize",
+        "articles/digital-platform-api/*.md":"microsoft-monetize",
+        "articles/monetize/*.md":"microsoft-monetize"
         
       },
       "author": {
@@ -76,7 +79,11 @@
         "articles/curate/*.md":"rupambaruah-xandr",
         "articles/bidders/*.md":"rupambaruah-xandr",
         "articles/data-providers/*.md":"rupambaruah-xandr",
-        "articles/log-level-data/*.md":"rupambaruah-xandr"
+        "articles/log-level-data/*.md":"rupambaruah-xandr",
+        "articles/industry-reference/*.md":"rupambaruah-xandr",
+        "articles/customer-support/*.md":"rupambaruah-xandr",
+        "articles/digital-platform-api/*.md":"rupambaruah-xandr",
+        "articles/monetize/*.md":"rupambaruah-xandr"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
@@ -91,7 +98,11 @@
         "articles/curate/*.md":"rupambaruah",
         "articles/bidders/*.md":"rupambaruah",
         "articles/data-providers/*.md":"rupambaruah",
-        "articles/log-level-data/*.md":"rupambaruah"
+        "articles/log-level-data/*.md":"rupambaruah",
+        "articles/industry-reference/*.md":"rupambaruah",
+        "articles/customer-support/*.md":"rupambaruah",
+        "articles/digital-platform-api/*.md":"rupambaruah",
+        "articles/monetize/*.md":"rupambaruah"
       },
     "ms.topic": {
         "articles/invest/*.md": "reference",
@@ -106,7 +117,11 @@
         "articles/curate/*.md":"reference",
         "articles/bidders/*.md":"reference",
         "articles/data-providers/*.md":"reference",
-        "articles/log-level-data/*.md":"reference"
+        "articles/log-level-data/*.md":"reference",
+        "articles/industry-reference/*.md":"reference",
+        "articles/customer-support/*.md":"reference",
+        "articles/digital-platform-api/*.md":"reference",
+        "articles/monetize/*.md":"reference"
       }
     }, 
     "template": [],
