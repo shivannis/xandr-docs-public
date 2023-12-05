@@ -27,7 +27,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 > - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-## Examples
+## Examples for deal bid wins and non-del bid wins
 
 ### Deal bid wins
 
