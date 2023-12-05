@@ -1,15 +1,12 @@
 ---
-Title : Intro to HTTP
-Description : Understanding the basics of how HTTP works is integral to understanding
-ms.date : 10/28/2023
+title : Intro to HTTP
+description : Learn the basics of HTTP and how it is important for online advertising.
+ms.date : 12/5/2023
 ms.custom : industry-reference
-online advertising technology. For example, we deal with "cookie
 ---
 
 
 # Intro to HTTP
-
-
 
 Understanding the basics of how HTTP works is integral to understanding
 online advertising technology. For example, we deal with "cookie
@@ -25,11 +22,9 @@ this---including most people in the online ad industry.
 
 We looked for an intro guide to HTTP that went beyond "Here's what a
 webpage is!" but didn't jump straight into TCP/IP layers, but we struck
-out completely. So we've written our own. Please
-<a href="mailto:wiki@appnexus.com" class="xref" target="_blank">let us
-know</a> what's helpful for you and what suggestions you have, and let
+out completely. So we've written our own. Please [let us
+know](mailto:wiki@appnexus.com) what's helpful for you and what suggestions you have, and let
 us know if you've found any good intro guides.
-
 
 ## What is HTTP?
 
@@ -44,35 +39,25 @@ This is why you will hear your browser referred to as a "client," and
 the browser-server relationship as a "client-server" relationship. A
 browser only makes requests, and the server serves the client's requests
 with responses.
-![HTTP](media/http-png)
 
+:::image type="content" source="./media/http.png" alt-text="Screenshot of HTTP .":::
 
-
-
-## Uniform Resource Locator (URL)
+## Uniform resource locator (URL)
 
 Most everyone is familiar with URLs. They are the web addresses you type
 into the address bar on your browser. A URL, which is written in
 standard HTTP, provides the means to identify and **locate** a
 **resource.** A resource can be graphics, text, or an application, etc.
 
-
-
 Below is the standard syntax of a URL:
 
-``` pre
+``` 
 scheme://hostname:port/path?query_string
 ```
-
-
-
 I used the below URL to find the article "Choice Tables - Delicious Ways
 to Love Downtown Los Angeles" on the New York Times website:
 
-<a
-href="https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&amp;src=me&amp;ref=travel"
-class="xref"
-target="_blank">https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&amp;src=me&amp;ref=travel</a>
+[https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&src=me&ref=travel](https://www.nytimes.com/2010/09/12/travel/12choice.html?_r=1&src=me&ref=travel)
 
 **Scheme:** This defines the type of resource. We are dealing with HTTP,
 so the example above is of an HTTP resource. The scheme tells the server
@@ -109,7 +94,7 @@ an office. First you go to the office, then the right file cabinet, then
 the drawer, then the correct green hanging file, then finally the
 manilla folder that has the information you want.
 
-**Query String:** Query strings are always separated from the rest of
+**Query string:** Query strings are always separated from the rest of
 the URL by a question mark. Query strings usually contain any name or
 "value pairs" that the client wishes to pass to the server. A value pair
 is the type of information and the actual information joined by an
@@ -126,16 +111,12 @@ Another common example of when query strings are used is filling out an
 online form. This example is of the AppNexus
 Contact Form:
 
-![Contact Form](media/contact-form.png)
+:::image type="content" source="media/contact-form.png" alt-text="Screenshot of Contact Form .":::
 
 The query string would look like this:
 ?Field1=George&Field2=Smith&Field3=gsmith@gsmith.com&Field4=Smith_Enterprises&Field5=Your_platform\_
 
-
-
-
-
-## Domain Name System (DNS)
+## Domain name system (DNS)
 
 A hostname or domain name actually means nothing to a server, which
 works in binary (all 1s and 0s). A URL is used as a "nickname" that has
@@ -151,9 +132,3 @@ you must attach it to an IP address and register it with DNS.
 
 From our example above, "www.nytimes.com" would be translated into the
 IP address of the server that the NY Times registered with the DNS.
-
-
-
-
-
-

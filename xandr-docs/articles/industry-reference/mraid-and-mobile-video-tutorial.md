@@ -1,28 +1,20 @@
 ---
-Title : MRAID and Mobile Video Tutorial
-Description : This page offers an introduction to MRAID and mobile video. It attempts
-ms.date : 10/28/2023
+title : MRAID and Mobile Video Tutorial
+description : Learn about MRAID, what it does, and why we need it. 
+ms.date : 12/05/2023
 ms.custom : industry-reference
 ---
 
 
-# MRAID and Mobile Video Tutorial
-
-
+# MRAID and mobile video tutorial
 
 This page offers an introduction to MRAID and mobile video. It attempts
 to answer questions such as:
-
-
 
 - What is MRAID? How does it work, and how do I use it?
 - What is the relationship between MRAID and mobile video?
 - What are the different ways to run mobile video?
 - What are the video capabilities of mobile web vs. in-app advertising?
-
-
-
-
 
 ## MRAID
 
@@ -38,13 +30,9 @@ case (in-app advertising) with some specific functionalities. This
 overview will help you get a better understanding of this technology.
 After reading this page you should be able to answer questions like:
 
-
-
 - Does Xandr support MRAID?
 - Do I need MRAID for this behavior?
 - Can I run an MRAID creative on this inventory?
-
-
 
 This is how the IAB describes MRAID:
 
@@ -73,17 +61,8 @@ Let's review the parts I've marked in **bold:**
   that use JavaScript to interact with the native operating system that
   is running the app in which the creative is shown.
 
-
-
-
-
-<b>Note:</b> All content in this document
-refers to MRAID 2.0. You can download the full spec from
-<a href="http://www.iab.net/mraid" class="xref" target="_blank">here</a>.
-
-
-
-
+> [!NOTE]
+> All content in this document refers to MRAID 2.0. You can download the full spec from [here](https://www.iab.com/).
 
 **Why do we need MRAID?**
 
@@ -92,7 +71,7 @@ in which ads are shown on mobile devices; Mobile Web and In-App. There
 is a fundamental difference in the technologies involved in both cases,
 and that difference creates the need for MRAID.
 
-**Mobile Web**
+**Mobile web**
 
 Mobile web is practically identical to desktop web. Mobile web sites run
 the same HTML5 and JavaScript code that desktop sites run, with some
@@ -115,7 +94,7 @@ operating system (Objective-C for iOS, Java for Android). The creative
 is displayed in a container called a WebView, which is a fully
 functional, ad sized web page that **is** running HTML5 and JavaScript:
 
-![In App](media/in-app.png)
+:::image type="content" source="media/in-app.png" alt-text="Screenshot of In App .":::
 
 In this case, the creative and the container it's running in (the app)
 cannot speak to each other, because the creative only speaks HTML5/JS
@@ -127,7 +106,7 @@ perform various actions.
 The diagram below illustrates the relationship between the creative that
 is using HTML5/JS, MRAID, and the app that is running in native code.
 
-![MRAID](media/mraid.png)
+:::image type="content" source="media/mraid.png" alt-text="Screenshot of MRAID . ":::
 
 The main thing to remember is that HTML5/JS and MRAID are **not mutually
 exclusive** technologies. MRAID was designed so that creatives can use
@@ -144,50 +123,9 @@ create a calendar event, and access the native video player.
 Below is a list of all the methods available in the API defined by
 MRAID, grouped by functionality:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000f15__entry__1" class="entry colsep-1 rowsep-1">Methods
-used for size change / expansion</th>
-<th id="ID-00000f15__entry__2" class="entry colsep-1 rowsep-1">Other UI
-functionality</th>
-<th id="ID-00000f15__entry__3" class="entry colsep-1 rowsep-1">Non UI
-functionality</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1" headers="ID-00000f15__entry__1"><ul>
-<li>close</li>
-<li>expand</li>
-<li>resize</li>
-<li>getCurrentPosition</li>
-<li>getDefaultPosition</li>
-<li>getMaxSize</li>
-<li>getResizeProperties</li>
-<li>getScreenSize</li>
-<li>getState</li>
-<li>setExpandProperties</li>
-<li>setResizeProperties</li>
-<li>useCustomClose</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000f15__entry__2"><ul>
-<li>open</li>
-<li>createCalendarEvent</li>
-<li>playVideo</li>
-<li>storePicture</li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000f15__entry__3"><ul>
-<li>addEventListener</li>
-<li>getPlacementType</li>
-<li>getVersion</li>
-<li>isViewable</li>
-<li>removeEventListener</li>
-<li>supports</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Methods used for size change / expansion | Other UI functionality | Non UI functionality |
+|---|---|---|
+| - close<br>- expand<br> - resize<br> - getCurrentPosition<br>- getDefaultPosition<br>- getMaxSize<br> - getResizeProperties<br>- getScreenSize<br>- getState<br>- setExpandProperties<br>- setResizeProperties<br>- useCustomClose | - open<br>- createCalendarEvent<br> - playVideo<br> - storePicture | - addEventListener<br> - getPlacementType<br> - getVersion<br> - isViewable<br> - removeEventListener<br> - supports |
 
 It's easy to see that a full 50% of the methods defined by MRAID relate
 to size changes. This is a direct result of the inability of the
@@ -197,16 +135,12 @@ browser on mobile and desktop web.
 Based on the methods listed above, there are four things MRAID does that
 the user can see:
 
-
-
 - MRAID lets the creative change its size and ask for information
   regarding the screen size, its position on screen and whether it's
   currently viewable.
 - MRAID lets creatives access the device's native video player.
 - MRAID lets creatives store photos in the device's permanent memory.
 - MRAID lets creatives access the calendar to create calendar events.
-
-
 
 That's it.
 
@@ -220,29 +154,19 @@ additional functionality, and in order to expand they need to use MRAID.
 
 To summarize:
 
-
-
 - All creatives that use the MRAID API are mobile, in-app, rich media
   creatives.
 - **Not** all mobile rich media creatives use the functionality provided
   by MRAID (For example, creatives running in mobile web).
 
-
-
-
-
-
-
-## Mobile Video
+## Mobile video
 
 There are several ways to play a video on a mobile device, each with its
 own capabilities and behaviors. You can see how MRAID and HTML5 videos
-behave by loading placement ID 2579103, size 300x250, in the <a
-href="https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp"
-class="xref" target="_blank">SDK app</a>. The code for each creative is
+behave by loading placement ID 2579103, size 300x250, in the [SDK app](https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp). The code for each creative is
 described below.
 
-**What is an Advertising SDK?**
+**What is an advertising SDK?**
 
 Before we continue, a few words about the term "Advertising SDK" used
 below. A Software Development Kit (SDK) is a piece of code that makes it
@@ -253,19 +177,8 @@ Advertising SDKs perform are:
   space allocated by the app (the WebView).
 - Implement the MRAID API
 
-
-
-
-
-<b>Note:</b> For more information about our
-mobile SDKs, see <a
-href="/pages/createpage.action?spaceKey=industry&amp;title=Xandr%2bMobile%2bSDKs&amp;linkCreation=true&amp;fromPageId=107318563"
-class="xref" target="_blank">Xandr Mobile
-SDKs</a>
-
-
-
-
+> [!NOTE]
+> For more information about our mobile SDKs, see [Xandr Mobile SDKs](../mobile-sdk//xandr-mobile-sdks.md)
 
 **MRAID video**
 
@@ -279,9 +192,7 @@ you click a video being played using MRAID, you see the player controls.
 
 Below is a simple working example of an MRAID video of a dog:
 
-
-
-``` pre
+``` 
 <script src="mraid.js"></script>
 <script type="text/javascript">
 mraid.addEventListener('ready', function() { 
@@ -290,9 +201,7 @@ mraid.addEventListener('ready', function() {
 </script> 
 ```
 
-
-
-**HTML5 Video**
+**HTML5 video**
 
 One thing all mobile ads have in common is that they run in actual web
 browsers. Both the iFrame in a mobile web page and the WebView running
@@ -302,7 +211,7 @@ without requiring an external player. However, iOS and Android have
 different behaviors and implementations for HTML5 video. Below is sample
 code of a working HTML5 video of a cat.
 
-``` pre
+``` 
 <body>
 <video id="videoAd" width="300" height="250" autoplay controls muted webkit-playsinline poster="http://cdn.adnxs.com/p/20/0e/21/96/200e2196675e9ca10e89f5b63c127935.png" onclick="click_thru">
 <source src="http://v.madnxs.com/p/23/35/06/3b/2335063b4a2d9871922f60bca7d97a66.m4v" type="video/mp4">
@@ -323,8 +232,6 @@ document.getElementById("videoAd").addEventListener('touchstart', click_thru);
 However, there are some complications with HTML5 video due to
 differences between Android and iOS, **and** between phones and tablets:
 
-
-
 - Devices running Android 4.4+ or iOS 6+ **do not** allow HTML5 videos
   to autoplay by default. This means developers have to add the
   `controls` attribute to the `<video>` element so that the video player
@@ -335,19 +242,10 @@ differences between Android and iOS, **and** between phones and tablets:
   consistent behavior for the creative across different apps running
   different advertising SDKs.
   
-
-
-  <b>Note:</b> The
-  Xandr SDK supports autoplay for HTML5 videos,
-  which is the behavior you will see when using the <a
-  href="https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp"
-  class="xref" target="_blank">SDK app</a>. However, a mobile browser on
-  the same device will not autoplay the video.
-
-  
-
-  
-- Full screen **iPhone** and **iPad**videos do not support click-through
+  > [!NOTE]
+  > The Xandr SDK supports autoplay for HTML5 videos, which is the behavior you will see when using the [SDK app](https://play.google.com/store/apps/details?id=com.appnexus.opensdkapp). However, a mobile browser on the same device will not autoplay the video.
+ 
+- Full screen **iPhone** and **iPad** videos do not support click-through
   because they run in the device's native video player and not in a web
   browser (an iFrame / WebView). Android devices **do** support clicks
   on full screen videos.
@@ -364,8 +262,6 @@ differences between Android and iOS, **and** between phones and tablets:
 - It is **not possible** to autoplay HTML5 videos in mobile web
   inventory in **both Android and iOS** at the same time.
 
-
-
 **Embedded video players**
 
 This is the most versatile option. Keep in mind that it is SDK-dependent
@@ -374,9 +270,3 @@ includes a video player, then the advertising SDK can direct the
 `mraid.playVideo()` call to that player, and include a click URL in it.
 However, because this API is not defined in MRAID, there is no guarantee
 that the ad will run the same way across different apps.
-
-
-
-
-
-

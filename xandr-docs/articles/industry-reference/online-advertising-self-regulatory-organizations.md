@@ -1,37 +1,28 @@
 ---
-Title : Online Advertising Self-Regulatory Organizations
-Description : Online advertising self-regulatory organizations are independent bodies
-ms.date : 10/28/2023
+title : Online Advertising Self-Regulatory Organizations
+description : Online advertising self-regulatory organizations are independent bodies
+ms.date : 12/05/2023
 ms.custom : industry-reference
-of experts and advertising technology professionals that help to
-establish standards for quality and ethical conduct in the purchase,
-sale, and display of online advertising.
 ---
 
 
-# Online Advertising Self-Regulatory Organizations
-
-
+# Online advertising self-regulatory organizations
 
 Online advertising self-regulatory organizations are independent bodies
 of experts and advertising technology professionals that help to
 establish standards for quality and ethical conduct in the purchase,
 sale, and display of online advertising.  
   
-
 There are several such organizations currently active in the online
 advertising sector in the United States, Canada, and Europe. This page
 describes what the key organizations are, what they do, and key
 projects, working groups, and objectives of each. 
 
-
-
-## The Digital Advertising Alliance (DAA)
+## The digital advertising alliance (DAA)
 
 The Digital Advertising Alliance (DAA) is an online advertising industry
 association made up of many other
-<a href="https://digitaladvertisingalliance.org/" class="xref"
-target="_blank">member organizations</a>. Its focus is on ethical
+[member organizations](https://digitaladvertisingalliance.org). Its focus is on ethical
 self-regulation in the online advertising and ad tech industries, and
 its purpose is to expand self-regulation for interest-based advertising
 to the entire ecosystem.
@@ -46,8 +37,7 @@ being used, and, if they choose to, opt out of being included in this
 data collection and usage process. To use the Ad Choices Icon,
 publishers must pay an annual fee. More information about the Ad Choices
 Icon is available on the
-<a href="http://www.youradchoices.com/" class="xref"
-target="_blank">DAA's web page</a>. 
+[DAA's web page](https://youradchoices.com/). 
 
 The DAA also provides a comprehensive self-regulatory program, as well
 as publications, recommendations, and misconduct reporting resources for
@@ -55,59 +45,30 @@ Internet users and companies involved with digital advertising. In
 addition, they do policy and advocacy work to improve digital
 advertising practices.  
 
+## Digital advertising alliance of Canada (DAAC)
 
-
-
-
-## Digital Advertising Alliance of Canada (DAAC)
-
-The
-<a href="http://youradchoices.ca/" class="xref" target="_blank">Digital
-Advertising Alliance of Canada (DAAC)</a> is the leading Canadian
-self-regulatory member organization working in online advertising and ad
-tech. Canadian companies who wish to use the Ad Choices Icon may apply
-through the DAAC, and the organization also provides education for
-consumers and companies. 
+The [Digital Advertising Alliance of Canada (DAAC)](https://youradchoices.ca/)is the leading Canadian self-regulatory member organization working in online advertising and ad tech. Canadian companies who wish to use the Ad Choices Icon may apply through the DAAC, and the organization also provides education for consumers and companies. 
 
 The DAAC operates with a focus on five key themes: notice and
 transparency, consumer control, data security, sensitive data, and
 accountability. More information on how they relate to these principles
 can be found
-<a href="http://youradchoices.ca/the-principles" class="xref"
-target="_blank">on their website</a>.
+[on their website](https://youradchoices.ca/en/principles).
 
+## European interactive digital advertising alliance (EDAA)
 
-
-
-
-## European Interactive Digital Advertising Alliance (EDAA)
-
-The <a href="http://www.edaa.eu/" class="xref" target="_blank">European
-Interactive Digital Advertising Alliance (EDAA)</a> is the leading
-alliance of digital advertising organizations in the EU.  It is a
-cross-industry self-regulatory group developed by key leaders in
-European business and digital advertising, with the goal of introduction
-EU-wide standards to "enhance transparency and user control for online
-behavioral advertising".
+The [European Interactive Digital Advertising Alliance](https://edaa.eu/) is the leading alliance of digital advertising organizations in the EU. It is a
+cross-industry self-regulatory group developed by key leaders in European business and digital advertising, with the goal of introduction EU-wide standards to "enhance transparency and user control for online behavioral advertising".
 
 The cross-industry self-regulatory initiative was developed by leading
 European bodies to introduce pan-European standards to enhance
 transparency and user control for online behavioral advertising. This
 type of advertising increasingly helps to support the content, services
 and applications that internet users can enjoy at little or no cost. The
-EDAA bases its objectives on IAB Europe's <a
-href="https://www.iab.com/wp-content/uploads/2015/06/OBA_OneSheet_Final.pdf"
-class="xref" target="_blank">Online Behavioral Advertising (OBA)
-Framework</a> and the
-<a href="http://www.easa-alliance.org" class="xref"
-target="_blank">European Advertising Standards Alliance's Best
-Practices</a> for online behavioral advertising.
+EDAA bases its objectives on IAB Europe's [Online Behavioral Advertising (OBA) Framework](https://www.iab.com/wp-content/uploads/2015/06/OBA_OneSheet_Final.pdf) and the [European Advertising Standards Alliance's Best Practices](https://www.easa-alliance.org/)
+ for online behavioral advertising.
 
-
-
-
-
-## The Interactive Advertising Bureau (IAB)
+## The interactive advertising bureau (IAB)
 
 The Interactive Advertising Bureau (IAB) is a member organization for
 media and marketing industries active in the digital economy. Its
@@ -124,19 +85,13 @@ across the digital advertising and marketing industries. 
 More information on member organizations, councils, committees, and
 working groups, as well as their projects, publications, and initiatives
 is available on the
-<a href="http://www.iab.com/" class="xref" target="_blank">IAB
-website</a>.   
+[IAB website](https://www.iab.com/).
   
-
 There are numerous global IABs (e.g. IAB Europe), and
 **Xandr is a member of IABs in multiple
 countries worldwide (e.g. IAB France)**. 
 
-
-
-
-
-## IAB Tech Lab
+## IAB tech lab
 
 The IAB Tech Lab is the technical arm of the IAB. It collaborates with
 IAB Tech Lab members, who include publishers, tech companies,
@@ -150,72 +105,55 @@ IAB Tech Lab works with the industry at large to develop guidelines,
 write specs, develop technology and provide services in an effort to
 bring alignment, and standardization to help the industry grow. For more
 information on IAB Tech Lab, visit their
-<a href="https://iabtechlab.com/" class="xref"
-target="_blank">website</a>.
+[website](https://iabtechlab.com/).
 
 **Xandr is a member of the Board of Directors,
 and various working groups like IAB Programmatic Supply Chain, Privacy
 & Research Commit Group,  Global Privacy Framework Initiative, Project
-Research etc. of IAB Tech Lab. **
+Research etc. of IAB Tech Lab.**
 
+## The network advertising initiative (NAI)
 
-
-
-
-## The Network Advertising Initiative (NAI)
-
-The <a href="http://www.networkadvertising.org/" class="xref"
-target="_blank">Network Advertising Initiative (NAI)</a> is the
+The [Network Advertising Initiative (NAI)](https://thenai.org/) is the
 leading non-profit self-regulatory association focused on responsible
 data collection and use in online advertising, with an emphasis on
 third-party advertising technology companies.
 
 In 2013, they released
-a <a href="http://www.networkadvertising.org/code-enforcement/code"
-class="xref" target="_blank">Code of Conduct</a> that assesses types of
+a [Code of Conduct](https://thenai.org/accountability/code-enforcement/)that assesses types of
 data used by member companies for advertising purposes, and imposes
 clear and firm restrictions on members' data collection, use, and
-transfer for online advertising, as well as a <a
-href="http://www.networkadvertising.org/mobile/NAI_MobileCode15_NLT.pdf"
-class="xref" target="_blank">Mobile Application Code</a>, which was last
-updated in 2015. 
+transfer for online advertising, as well as a [Mobile Application Code](https://thenai.org/wp-content/uploads/2021/07/NAI_MobileCode15_NLT.pdf), which was last updated in 2015. 
 
 The NAI also offers a
-<a href="http://www.networkadvertising.org/choices/" class="xref"
-target="_blank">Consumer Opt-out page</a>, where Internet users can opt
+[Consumer Opt-out page](https://optout.networkadvertising.org/?c=1), where Internet users can opt
 out of receiving online advertising from NAI members who use HTTP
 cookies on computer browsers. 
 
 **Xandr is an NAI member and sits on NAI's Board
 of Directors.**
 
-
-
-
-
 ## Prebid.org
 
-<a href="http://Prebid.org" class="xref" target="_blank">Prebid.org</a>
+[Prebid.org](https://prebid.org/)
 is an independent organization designed to ensure and promote fair,
 transparent, and efficient header bidding across the industry. Funded by
 dues-paying members, it manages the open source projects Prebid.js,
 Prebid Mobile, Prebid Server, Prebid Video, Prebid Native, and
-others. <a href="http://Prebid.org" class="xref" target="_blank">Prebid.org</a>
+others. [Prebid.org](https://prebid.org/)
 is open to all companies who are part of the programmatic ecosystem,
 from ad tech vendors to publishers and others. It maintains an
 open-source library and community that helps publishers implement Header
 Bidding on their websites and apps. Whilst initially renowned as a
 pioneer in client-side header
-bidding, <a href="http://prebid.org/" class="xref" target="_blank">Prebid.org</a> creates
+bidding, [Prebid.org](https://prebid.org/) creates
 other ‘unbiased programmatic monetization solutions’ for premium
 publishers, including server-side header bidding.
-
-
 
 **Xandr is a member of the Board of Directors,
 and chairs CTV Committee/CTV-OTT Task force and co-chairs Prebid Server
 Committee. Additionally Xandr participates in**
-<a href="http://Prebid.org" class="xref" target="_blank">Prebid.org</a>
+[Prebid.org](https://prebid.org/)
 **as**
 
 - **vice chairman and member of Prebid Server Committee**
@@ -223,31 +161,19 @@ Committee. Additionally Xandr participates in**
 - **developers of PBS-Go, PBC-Go, GoGDPR, Client-side (Prebid.js,
   etc.)**
 - **technical writers who also manages Prebid documentation website**
-  (<a href="http://docs.prebid.org" class="xref"
-  target="_blank">docs.prebid.org</a>)
+  [docs.prebid.org](https://docs.prebid.org/)
 
-
-
-
-
-
-
-## Trustworthy Accountability Group (TAG)
+## Trustworthy accountability group (TAG)
 
 Trustworthy Accountability Group (TAG) is devoted to cross-industry
 collaboration to foster transparency in digital advertising business
 relationships and transactions. TAG focuses on four core areas:
-"<a href="https://www.tagtoday.net/traffic/" class="xref"
-target="_blank">eliminating fraudulent digital advertising traffic</a>,
-<a href="https://www.tagtoday.net/malware/" class="xref"
-target="_blank">combating malware</a>,
-<a href="https://www.tagtoday.net/piracy/" class="xref"
-target="_blank">fighting ad-supported Internet piracy</a> to promote
+"[eliminating fraudulent digital advertising traffic](https://www.tagtoday.net/fraud),
+[combating malware](https://www.tagtoday.net/threat-sharing),
+[fighting ad-supported Internet piracy](https://www.tagtoday.net/brand-safety) to promote
 brand integrity, and promoting brand safety through
-<a href="https://www.tagtoday.net/transparency/" class="xref"
-target="_blank">greater transparency</a>."   
+[greater transparency](https://www.tagtoday.net/transparency/)."   
   
-
 TAG is a joint effort of the American Association of Advertising
 Agencies (4A’s), Association of National Advertisers (ANA), and
 Interactive Advertising Bureau (IAB). 
@@ -257,28 +183,15 @@ the Leadership Council, and various working groups.
 Xandr also co-chairs the anti-malware working
 group.**
 
-
-
-
-
-## The World Wide Web Consortium (W3C)
+## The world wide web consortium (W3C)
 
 The World Wide Web Consortium (W3C) is an international community
 where Member organizations, a full-time staff, and the public work
 together to
-develop <a href="https://www.w3.org/standards/" class="xref" target="_blank">Web
-standards</a>. W3C's primary activity is to develop protocols and
+develop [Web standards](https://www.w3.org/standards/). W3C's primary activity is to develop protocols and
 guidelines that ensure long-term growth for the Web. W3C's standards
 define key parts of what makes the World Wide Web work.
 
 **Xandr is member of W3C Improving
-<a href="https://www.w3.org/community/web-adv/" class="xref"
-target="_blank">Web Advertising</a> Business Group
-and <a href="https://www.w3.org/community/wicg/" class="xref"
-target="_blank">Web Platform Incubator</a> Community Group.**
-
-
-
-
-
-
+[Web Advertising](https://www.w3.org/community/web-adv/) Business Group
+and [Web Platform Incubator](https://www.w3.org/community/wicg/) Community Group.**

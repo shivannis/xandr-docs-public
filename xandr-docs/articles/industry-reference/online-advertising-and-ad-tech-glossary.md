@@ -467,7 +467,7 @@ See <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-00000696"
 class="xref">tag container</a>.
 
-**contextual data**
+### contextual data
 
 Information on the contents of the webpage that a user is viewing upon
 ad call, usually used for ad targeting. For example, if the user is
@@ -525,7 +525,7 @@ industry wants to combine buying and selling activities across the
 ecosystem, to enable unified planning, buying and measurement across
 media channels.
 
-**cookie**
+### cookie
 
 A parcel of text sent by a server to the cookie file in a browser and
 then sent back unchanged by the client each time it accesses that
@@ -565,7 +565,7 @@ program.
 Coverage Area Rating % = Average Audience % ÷ Coverage Area Universe
 Estimate
 
-**CPA**
+### CPA
 
 Cost per action/acquisition. A payment model in which advertisers pay
 for every action, such as a sale or registration, completed as a result
@@ -593,7 +593,7 @@ ad runs through to completion. Rather than paying for all impressions,
 some of which may have been stopped before completion, an advertiser
 only pays for ads that finished (CPCV = Cost ÷ Completed Views).
 
-**CPM**
+### CPM
 
 Cost per mille, or thousand (mille = thousand in Latin). A pricing model
 in which advertisers pay for every 1000 impressions of their
@@ -1017,7 +1017,7 @@ as overexposure. See also <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-000005e5"
 class="xref">recency</a>.
 
-**frequency capping**
+### frequency capping
 
 The act of limiting, or "capping" how often a particular creative can be
 served to a user. For example, an advertiser might use frequency capping
@@ -1384,7 +1384,7 @@ other constraints or data. 
 A geographic value that doesn't fall under the country/region/city/zip
 code hierarchy.
 
-**mobile device ID**
+### mobile device ID
 
 A unique identifier for a mobile device. The device ID cannot be linked
 to <a
@@ -1537,7 +1537,7 @@ next highest bidder a chance to win the impression. See also <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-0000036d"
 class="xref">default tag</a>. 
 
-**personally identifiable information (PII)**
+### personally identifiable information (PII)
 
 Information included in any data set that allows users of the data to
 resolve the real-world identity of the data subject. 
@@ -1678,7 +1678,7 @@ publisher does not have a <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-00000366"
 class="xref">default creative</a> set. 
 
-**publisher**
+### publisher
 
 A source of inventory. Publishers are generally either managed or owned
 and operated. An owned and operated publisher receives 100% of the
@@ -1758,7 +1758,7 @@ class="xref">segment pixel</a> on their website and then target users
 who have visited the website in the past because they are more likely to
 make a purchase.
 
-**remnant inventory**
+### remnant inventory
 
 Inventory sold after <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-00000598"
@@ -2174,7 +2174,7 @@ see an ad.
 This usually refers to a browser application. For example, Mozilla 5.0
 is a specific user agent.
 
-**user data**
+### user data
 
 Information about <a
 href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-000006e1"

@@ -1,27 +1,18 @@
 ---
-Title : Introduction to Video Inventory and Formats
-Description : ## What is in-stream video?
-ms.date : 10/28/2023
+title : Introduction to Video Inventory and Formats
+description : Learn about out-stream video, in-banner video, VAST, VPAID, MRAID and VMAP.     
+ms.date : 12/05/2023
 ms.custom : industry-reference
-In-stream video creatives are played in video players on web pages. They
 ---
 
 
-# Introduction to Video Inventory and Formats
-
-
-
-
+# Introduction to video inventory and formats
 
 ## What is in-stream video?
 
 In-stream video creatives are played in video players on web pages. They
 are played before, in the middle of, or after other video content, and
 use VAST XML to ensure proper rendering in the players.
-
-
-
-
 
 ## What is out-stream video?
 
@@ -30,19 +21,11 @@ article, mostly set to auto-play when the reader reaches the part of the
 page that contains the ad. The sound is usually not activated unless the
 reader hovers over the ads with their mouse. 
 
-
-
-
-
 ## What is in-banner video?
 
 In-banner video creatives are played in banner placements rather than in
 video players. The ad buyer must serve the video player code and the
 VAST video creative together.
-
-
-
-
 
 ## What is VAST?
 
@@ -57,17 +40,9 @@ Pure linear VAST (without VPAID modules) do not allow the buyer to
 measure viewability, but do allow the measurement of starts, quartile
 completions, and completed views. Pure linear VAST is common in mobile
 video. For more details about VAST, see the Interactive Advertising
-Bureau's VAST documentation at 
-<a href="http://www.iab.net/guidelines/508676/digitalvideo/vast"
-class="xref" target="_blank">IAB Guidelines for VAST</a>.
-
-
-
-
+Bureau's VAST documentation at [IAB Guidelines for VAS](https://www.iab.com/).
 
 ## What is VPAID?
-
-
 
 VPAID stands for Video Player Ad-Serving Interface Definition. There are
 two types of VPAID modules, JavaScript (.js) and Flash (.swf). A VPAID
@@ -76,17 +51,9 @@ order to:
 
 - create highly interactive video ad creatives
 
-
-
 - measure viewability and verify player attributes
 
-For more information about VPAID, see the
-<a href="http://www.iab.net/vpaid" class="xref" target="_blank">IAB
-Guidelines for VPAID</a>.
-
-
-
-
+For more information about VPAID, see the [IAB Guidelines for VPAID](https://www.iab.com/).
 
 ## What is MRAID?
 
@@ -98,17 +65,8 @@ the device’s other features, thus creating a rich, more interactive
 environment in which to display ads, instead of siloing static banners
 in small areas of the screen.
 
-  
-  
-For more information regarding MRAID, see our
-<a href="mraid-and-mobile-video-tutorial.md" class="xref">MRAID and
-Mobile Video Tutorial</a> or
-the <a href="http://www.iab.net/mraid" class="xref" target="_blank">IAB
-Guidelines for MRAID</a>.
-
-
-
-
+For more information regarding MRAID, see our [MRAID and Mobile Video Tutorial](mraid-and-mobile-video-tutorial.md) or
+the [IAB Guidelines for MRAID](https://www.iab.com/).
 
 ## What is VMAP?
 
@@ -121,11 +79,4 @@ from competitors (e.g. BMW and Audi) from playing directly next to one
 another.
 
 For more information, see
-the <a href="http://www.iab.net/guidelines/508676/digitalvideo/vsuite/vmap"
-class="xref" target="_blank">IAB Guidelines for VMAP</a>.
-
-
-
-
-
-
+the [ IAB Guidelines for VMAP](https://www.iab.com/).
