@@ -13,7 +13,7 @@ You also have the option to continue as a guest, without logging in, but you wil
 
 Before you open a case, you may want to double-check that the contact information in [your profile](xcs-updating-my-profile.md) is accurate.
 
-To open a new case, log in to the [Customer Support Portal](https://help.xandr.com) and click Contact Support in the lower-right corner of the page.
+To open a new case, log in to the [Customer Support Portal](https://help.xandr.com) and click **Contact Support** in the lower-right corner of the page.
 
  :::image type="content" source="media/xcs-f.png" alt-text="Screenshot of Contact Support option.":::
 
@@ -87,7 +87,7 @@ If you selected Client Finance, provide the Invoice Number related to your requ
 
 ## Step 8: Add attachments (optional)
 
-Click Upload File or drag and drop your file in the attachment section to attach files that will help reproduce or troubleshoot the case, for example, an error log, a creative that's causing problems, a report that has helpful results, or a screenshot of the screen that's not displaying properly.
+Click **Upload File** or drag and drop your file in the attachment section to attach files that will help reproduce or troubleshoot the case, for example, an error log, a creative that's causing problems, a report that has helpful results, or a screenshot of the screen that's not displaying properly.
 
  :::image type="content" source="media/xcs-g.png" alt-text="Screenshot of Upload Attachment option.":::
 
