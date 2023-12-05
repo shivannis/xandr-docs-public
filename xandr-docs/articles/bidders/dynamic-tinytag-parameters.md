@@ -1,10 +1,10 @@
 ---
-title: Bidders - Dynamic TinyTag Parameters
+title: Dynamic TinyTag Parameters
 description: The article discusses a TinyTag ID linked to static data in the Xandr database. This TinyTag allows dynamic addition or overwriting of certain parameters during the TinyTag Request or ad call.
 ms.date: 10/28/2023
 ---
 
-# Bidders - Dynamic TinyTag parameters
+# Dynamic TinyTag parameters
 
 A TinyTag ID is associated to various static data in the Xandr database. Some of the parameters associated with the TinyTag can be dynamically added or overwritten at the time of the TinyTag Request, or ad call.
 

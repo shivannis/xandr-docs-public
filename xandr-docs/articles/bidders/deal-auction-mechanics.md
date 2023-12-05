@@ -33,11 +33,11 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Flow chart tree that explains how a private auction works. It shows different scenarios of bidding and winning in a private auction, and the price that the winner pays. ":::
 
-**Case 1: non-deal bid wins**
+**Non-deal bid wins**
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp.png" alt-text="Flow chart that provides the details of non-Deal Bid Wins":::
 
-**Case 2: non-deal bid wins**
+**Non-deal bid wins**
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b.png" alt-text="Flow chart that provides an explanation of non-Deal Bid Wins":::
 
@@ -60,7 +60,7 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 - If a buyer targeting the deal submits a bid higher than the deal's ask price and higher than any other private auction bids, that buyer wins the auction, paying the bid price.
 - If no private auction bids clear their ask prices, the highest bid in the open auction wins, paying the bid price.
 
-## Examples (for deal bid wins in private auction)
+## Examples
 
 **Deal bid wins in private auction (no open auction held)**
 
