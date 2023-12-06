@@ -1,70 +1,30 @@
 ---
-Title : Changing My Password
-Description : Log in to the
-ms.custom : customer-support
-ms.date : 10/28/2023
-<a href="https://help.xandr.com" class="xref" target="_blank">Customer
+title: Changing My Password
+description: The article guides users on accessing the Customer Support Portal to view case history, access knowledge base articles, and request support. It also mentions the option to reset a forgotten password via the "Forgot your password?" link on the login page.
+ms.custom: customer-support
+ms.date: 10/28/2023
 ---
 
+# Changing my password
 
-# Changing My Password
-
-
-
-Log in to the
-<a href="https://help.xandr.com" class="xref" target="_blank">Customer
-Support Portal</a> to access your full case history, knowledge base
+Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base
 articles, or request support.
 
-You can use the Forgot your password?
-link on the login page to reset your password for the Customer Support
+You can use the **Forgot your password?** link on the login page to reset your password for the Customer Support
 Portal.
 
-1.  Go to the log-in page and click Forgot
-    your password?.
+1. Go to the log-in page and click Forgot your password?.
 
-2.  Enter your user ID and click Send
-    Password Reset Email. 
+1. Enter your user ID and click **Send Password Reset Email**.
 
-    If you're already logged in, you can go to 
-    Profile
-    \> My Setting.
+    If you're already logged in, you can go to **Profile > My Setting**.
+    Under **My Settings** click **Change Password**.
 
-    Under My
-    Settings click Change
-    Password.
+:::image type="content" source="media/xcs-r.png" alt-text="Screenshot that displays My Settings screen in which you can change your password.":::
 
-  ![XCS Part R](media/xcs-r.png)
-3.  When the email arrives, click on the reset link to go to the
-    New Password page.
+3.When the email arrives, click on the reset link to go to the **New Password** page.
 
-4.  Enter your password and password confirmation, and click
-    OK.
+4.Enter your password and password confirmation, and click **OK**.
 
-
-
-
-
-<b>Tip:</b> To reset a password via the API,
-see <a
-href="xandr-api/account-recovery-service.md"
-class="xref" target="_blank">Account Recovery Service</a>.
-
-
-
-
-
-
-
-<div class="familylinks">
-
-<div class="parentlink">
-
-<a href="xcs-customer-support-portal-guide.md"
-class="link">Customer Support Portal Guide</a>
-
-
-
-
-
-
+> [!TIP]
+> To reset a password via the API, see [Account Recovery Service](xandr-api/account-recovery-service.md).
