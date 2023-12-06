@@ -1,112 +1,58 @@
 ---
-Title : Build an HTML5 Xandr Creative in Adobe Edge
-Description : This guide explains how to use Adobe Edge to build HTML5 creatives that
-ms.date : 10/28/2023
-ms.custom : industry-reference
-will properly track clicks in Xandr. It assumes
+title: Build an HTML5 Xandr Creative in Adobe Edge
+description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Adobe Edge.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
+# Build an HTML5 Xandr creative in Adobe Edge
 
-# Build an HTML5 Xandr Creative in Adobe Edge
+This guide explains how to use Adobe Edge to build HTML5 creatives that will properly track clicks in Xandr. It assumes that you are familiar using Adobe Edge to build creatives.
 
+## With Xandr HTML5 library
 
+1. From within Adobe Edge, select the element you want to make clickable from the **Elements** panel. (Naming the element "clickable" is not required.)
 
-This guide explains how to use Adobe Edge to build HTML5 creatives that
-will properly track clicks in Xandr. It assumes
-that you are familiar using Adobe Edge to build creatives.
+    :::image type="content" source="media/clickable-element.png" alt-text="Screenshot of the Elements panel.":::
 
+1. Open **Actions** for the selected element. The Actions panel will pop-up with a dropdown menu. Then select **click** in the dropdown menu.
 
-## With Xandr HTML5 Library
+   :::image type="content" source="media/click-menu.png" alt-text="Screenshot of the Actions panel.":::
 
+1. Select **Links** and **Link in New Window** from the **Pick an Action** area.
 
+    :::image type="content" source="media/pick-an-action.png" alt-text="Screenshot of the Pick an Action screen.":::
 
-1.  From within Adobe Edge, select the element you want to
-    make clickable from the
-    Elements panel. (Naming the
-    element "clickable" is not required)
+1. You will see code that looks like this.
 
-    ![Clickable Element](media/clickable-element.png)
-2.  Open **Actions** for the selected element. The Actions panel will
-    pop-up with a dropdown menu. Then select **click** in the dropdown
-    menu.
+   :::image type="content" source="media/function.png" alt-text="Screenshot of the code screen.":::
 
-   ![Click Menu](media/click-menu.png)
+1. Replace the “[https://www.adobe.com](https://www.adobe.com)” with **`APPNEXUS.getClickTag()`**. Make sure to remove the quotations.
 
-3.  Select Links and **Link in New
-    Window** from the Pick an
-    Action area.
+    :::image type="content" source="media/function-properties.png" alt-text="Screenshot of the function properties screen.":::
 
-    ![Pick an action](media/pick-an-action.png)
+1. From the **Library** panel, in the **Scripts** drop-down, click **Add JS File from URL..**. Paste [https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js) into the field and click OK.
 
-4.  You will see code that looks like this.
+    :::image type="content" source="media/library-panel.png" alt-text="Screenshot of the Library Panel.":::
 
-   ![Function](media/function.png)
+    > [!TIP]
+    > Use https to ensure the creative can serve on secure inventory.
 
-5.  Replace the “<a href="http://www.adobe.com" class="xref"
-    target="_blank">https://www.adobe.com</a>” with
-    **`APPNEXUS.getClickTag()`**. Make sure to remove the quotations.
+1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the ad. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Console.
 
-    ![Function Properties](media/function-properties.png)
+## Without Xandr HTML5 library
 
-6.  From the Library panel, in the
-    Scripts drop-down, click
-    Add JS File from URL... Paste <a
-    href="https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js"
-    class="xref" target="_blank">https://acdn.<span
-    class="ph">adnxs.com/html5-lib/1.3.0/<span
-    class="ph">appnexus-html5-lib.min.js</a> into the field and
-    click OK.
+1. From within Adobe Edge, select the element you want to make clickable from the **Elements** panel. (Naming the element "clickable" is not required).
 
-    ![Library Panel](media/library-panel.png)
+    :::image type="content" source="media/clickable-element.png" alt-text="Screenshot of the Clickable Element Panel.":::
 
-    
+1. Open **Actions** for the selected element. The **Actions** panel will pop-up with a dropdown menu. Then select **click** in the dropdown menu.
 
-    
+    :::image type="content" source="media/click-menu.png" alt-text="Screenshot of the Click dropdown menu.":::
 
-    <b>Tip:</b> Use https to ensure the
-    creative can serve on secure inventory.
+1. Paste the code below into the text box provided (this is your `clickTag` code).
 
-    
-
-    
-
-7.  Click Preview in Browser to open
-    the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at
-    the end of the URL in the address bar with the landing page you want
-    to test. Refresh the page and click on the ad. A new window with the
-    landing page you entered should open in your browser. When the
-    creative is served, Xandr sets the value of
-    `clickTag` to Xandr's click tracker and sets
-    a redirect to the landing page URL provided in Console.
-
-
-
-
-
-
-
-## Without Xandr HTML5 Library
-
-
-
-1.  From within Adobe Edge, select the element you want to make
-    clickable from the **Elements** panel. (Naming the element
-    "clickable" is not required).
-
-    ![Clickable Element](media/clickable-element.png)
-
-2.  Open **Actions** for the selected element. The **Actions** panel
-    will pop-up with a dropdown menu. Then select **click** in the
-    dropdown menu.
-
-    ![Click Menu](media/click-menu.png)
-
-3.  Paste the code below into the text box provided (this is your
-    `clickTag` code).
-
-    
-
-    ``` pre
+    ``` 
     function getParameterByName(name) {
       var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
       return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
@@ -114,47 +60,10 @@ that you are familiar using Adobe Edge to build creatives.
     window.open(getParameterByName('clickTag'), '_blank');
     ```
 
-    
+    :::image type="content" source="media/click-tag-code.png" alt-text="Screenshot of the Click Tag Code.":::
 
-    ![Click Tag Code](media/click-tag-code.png)
+1. Click **Preview in Browser** to open the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at the end of the URL in the address bar with the landing page you want to test. Refresh the page and click on the creative. A new window with the landing page you entered should open in your browser. When the creative is served, Xandr sets the value of `clickTag` to Xandr's click tracker and sets a redirect to the landing page URL provided in Console.
 
-4.  Click Preview in Browser to open
-    the ad in your browser. Add `?clickTag=http://YOUR-URL-HERE.com` at
-    the end of the URL in the address bar with the landing page you want
-    to test. Refresh the page and click on the creative. A new window
-    with the landing page you entered should open in your browser. When
-    the creative is served, Xandr sets the value
-    of `clickTag` to Xandr's click tracker and
-    sets a redirect to the landing page URL provided in Console.
+## Related topic
 
-
-
-
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="build-an-html5-xandr-creative-in-google-web-designer.md"
-  class="xref" target="_blank">Build an HTML5 Xandr Creative in Google Web
-  Designer</a>
-
-
-
-
-
-
-
-
-
-**Related information**  
-
-- <a href="build-an-html5-xandr-creative-in-google-web-designer.md"
-  class="link">Build an HTML5 Xandr Creative in Google Web Designer  </a>
-
-
-
-
+[Build an HTML5 Xandr Creative in Google Web Designer](build-an-html5-xandr-creative-in-google-web-designer.md)
