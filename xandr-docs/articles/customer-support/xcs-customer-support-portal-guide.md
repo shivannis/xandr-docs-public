@@ -15,7 +15,7 @@ common questions and tasks, and create, update, and review support cases.The Sup
 
 This guide provides instructions on how to use the Customer Support Portal.
 
-## In this guide
+## Related links
 
 - [Logging in to the Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)
 - [Searching the Knowledge Base](xcs-searching-the-knowledge-base.md)
@@ -27,7 +27,4 @@ This guide provides instructions on how to use the Customer Support Portal.
 - [Reporting Outages](xcs-reporting-outages.md)
 - [Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)
 - [Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)
-
-## Related link
-
 - [Welcome to Xandr Customer Support](xcs-xandr-customer-support-home.md)
