@@ -71,7 +71,7 @@ See [Batch Log-Level Data](batch-log-level-data.md) for more information on how
 
 LLD data is final and accurate. As a result, Batch LLD can be used to make financial calculations. If Xandr discovers an inconsistency, Batch LLD data will be reprocessed.
 
-##  List of log level feeds
+## List of log level feeds
 
 The table below lists which feeds are available via LLD, the feed handle for each, and a link to view the feed columns.
 
