@@ -22,9 +22,13 @@ Portal.
 
 :::image type="content" source="media/xcs-r.png" alt-text="Screenshot that displays My Settings screen in which you can change your password.":::
 
-3.When the email arrives, click on the reset link to go to the **New Password** page.
+3. When the email arrives, click on the reset link to go to the **New Password** page.
 
-4.Enter your password and password confirmation, and click **OK**.
+4. Enter your password and password confirmation, and click **OK**.
 
-> [!TIP]
-> To reset a password via the API, see [Account Recovery Service](../digital-platform-api/account-recovery-service.md).
+   > [!TIP]
+   > To reset a password via the API, see [Account Recovery Service](../digital-platform-api/account-recovery-service.md).
+
+## Related topic
+
+[Customer Support Portal Guide](xcs-customer-support-portal-guide.md)

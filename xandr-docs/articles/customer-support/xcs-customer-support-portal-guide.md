@@ -15,7 +15,7 @@ common questions and tasks, and create, update, and review support cases.The Sup
 
 This guide provides instructions on how to use the Customer Support Portal.
 
-## Related links
+## Related topics
 
 - [Logging in to the Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)
 - [Searching the Knowledge Base](xcs-searching-the-knowledge-base.md)

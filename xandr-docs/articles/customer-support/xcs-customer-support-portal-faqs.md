@@ -23,6 +23,6 @@ You'll need to visit the [Login](https://help.xandr.com/) page, proceed as a Gue
 
 We always welcome your comments and suggestions! Have a great idea for the next phase of the Customer Support Portal? Email us at [CSPFeedback@xandr.com](mailto:CSPFeedback@xandr.com).
 
-## Related link
+## Related topic
 
 [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)

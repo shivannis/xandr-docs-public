@@ -17,10 +17,7 @@ Once your account is set, you can access the Customer Support Portal by going di
 
 The portal account is separate from and [Documentation Portal](https://docs.xandr.com/) accounts. You will need to log in to each system separately. Note that each account may have a different password.
 
-## Related topic
+## Related topics
 
 [Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)
-
-## Related link
-
 [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)

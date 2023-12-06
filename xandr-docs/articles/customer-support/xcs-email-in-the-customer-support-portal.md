@@ -14,6 +14,6 @@ If you contacted support as a guest, without logging in to the portal, you will 
 
 If anyone you've cc'd on a case would like a portal account, they can visit the [Login](https://help.xandr.com)page, proceed as a Guest, and click **Contact Support**.
 
-## Related link
+## Related topic
 
 [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
