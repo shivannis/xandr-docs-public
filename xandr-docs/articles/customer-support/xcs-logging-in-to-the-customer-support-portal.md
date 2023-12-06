@@ -13,7 +13,7 @@ If you do not already have a portal account, please visit the [Login](https:/
 > Continuing as a guest without logging in, gives you limited access to knowledge base articles. If you
 > contacted support as a guest, without logging in to the portal, you will only be able to communicate via email.
 
-Once your account is set, you can access the Customer Support Portal by going directly to the [login](https://help.xandr.com/) page and entering your Email and Password.
+Once your account is set, you can access the Customer Support Portal by going directly to the [Login](https://help.xandr.com/) page and entering your Email and Password.
 
 The portal account is separate from and [Documentation Portal](https://docs.xandr.com/) accounts. You will need to log in to each system separately. Note that each account may have a different password.
 
