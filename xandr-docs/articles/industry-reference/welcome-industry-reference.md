@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - welcome
+# Industry Reference - Welcome
 
 This guide is for anyone who wants to learn more about online advertising and ad trading. It contains information on:
 
@@ -18,7 +18,7 @@ This guide is for anyone who wants to learn more about online advertising and ad
 
 ## Contents
 
-- [Online Advertising and Ad Tech Glossary](online-advertising-and-ad-tech-glossary.md#d98e2374):
+- [Online Advertising and Ad Tech Glossary](online-advertising-and-ad-tech-glossary.md):
    Provides definitions of commonly used industry terms.
 - [Introduction to Ad Serving](introduction-to-ad-serving.md): Introduces the key concepts and processes involved in ad serving.
 - [Ad Tags](ad-tags.md): Introduces the concept of ad tags and describes how they function to

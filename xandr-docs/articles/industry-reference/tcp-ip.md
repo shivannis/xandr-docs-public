@@ -17,7 +17,7 @@ have found its way to you, clean and edible.
 
 :::image type="content" source="media/tcp-ip.png" alt-text="The screenshot demonstrates the process of opening the box, extracting the cheese, unwrapping it, and savoring a slice that emphasizes that proper labeling and packaging are crucial for ensuring the cleanliness and edibility of the delivered cheese..":::
 
-## TCP/IP (Our wiki software does not allow "/" in page titles)
+## TCP/IP (our wiki software does not allow "/" in page titles)
 
 Like the cheese, HTTP Requests and Responses need to be labeled and packaged correctly to travel from the client to the intended server and back. Your HTTP Request/Responses are sent across the Internet and back
 in the following "layers."
@@ -31,4 +31,4 @@ piece. TCP ensures all HTTP packets are delivered and put in order.
 actually go to in the Network. The URL address is used by Domain Name Systems to map to the IP address. For HTTP URL, the port defaults to Port 80 which is the standard HTTP port. We'll talk more about ports
 later.
 
-These are the first three layers that allow an HTTP Request/Response to be sent through the internet intact and to the right destination
+These are the first three layers that allow an HTTP Request/Response to be sent through the internet intact and to the right destination.

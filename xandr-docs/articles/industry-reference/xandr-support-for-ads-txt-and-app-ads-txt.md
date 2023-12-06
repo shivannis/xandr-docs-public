@@ -7,17 +7,18 @@ ms.custom: industry-reference
 
 # Industry Reference - Xandr support for Ads.txt and App-Ads.txt
 
-The information in this document is based on the latest [Ads.txt specification for the IAB](https://iabtechlab.com/ads-txt/) as of January 22, 2018, and [App-Ads.txt specification](https://iabtechlab.com/wp-content/uploads/2019/03/app-ads.txt-v1.0-final-.pdf) as of March 2019. This information is subject to change based on IAB updates to the specification.
+> [!WARNING]
+> The information in this document is based on the latest [Ads.txt specification for the IAB](https://iabtechlab.com/ads-txt/) as of January 22, 2018, and [App-Ads.txt specification](https://iabtechlab.com/wp-content/uploads/2019/03/app-ads.txt-v1.0-final-.pdf) as of March 2019. This information is subject to change based on IAB updates to the specification.
 
 In the online advertising ecosystem, many buyers are concerned that fraudulent impressions will negatively impact their advertising, resulting in campaign unreliability and lost revenue.
 Xandr takes these concerns very seriously, and ads.txt and app-ads.txt are some tools among a range of strategies we employ to ensure the quality of inventory and the validity of impressions.
 
-Ads.txt and App-Ads.txt (also known as [Authorized Digital Sellers](https://iabtechlab.com/ads-txt/) or Application Authorized Digital Sellers)  are an initiative put forth by the [IAB Technology Laboratory]("https://iabtechlab.com/) as a way to help publishers ensure inventory is sold only through authorized dealers and partners. The goal of ads.txt and app-ads.txt is to give publishers more control over who sells their inventory and help prevent counterfeiting, while giving buyers confidence that they're purchasing approved inventory.
+Ads.txt and App-Ads.txt (also known as [Authorized Digital Sellers](https://iabtechlab.com/ads-txt/) or Application Authorized Digital Sellers)  are an initiative put forth by the [IAB Technology Laboratory](https://iabtechlab.com/) as a way to help publishers ensure inventory is sold only through authorized dealers and partners. The goal of ads.txt and app-ads.txt is to give publishers more control over who sells their inventory and help prevent counterfeiting, while giving buyers confidence that they're purchasing approved inventory.
 
 Ads.txt files are used to declare authorized sellers of display inventory on domains. app-ads.txt files are used to declare authorized sellers of application inventory.
 
 > [!NOTE]
-> For additional details about the IAB's work on this initiative, see [About Ads.txt](mhttps://iabtechlab.com/ads-txt-about/) on the IAB website.
+> For additional details about the IAB's work on this initiative, see [About Ads.txt](https://iabtechlab.com/ads-txt-about/) on the IAB website.
 
 Xandr supports the `Ads.txt` and `App-Ads.txt` initiatives, and is working with publishers, resellers, buyers, and bidders on implementation.
 
@@ -49,7 +50,7 @@ SSPs, and exchanges that have permission to sell the publisher's inventory.
 > This idea is similar to [robots.txt](http://www.robotstxt.org/), a file that is used by website owners to
 > give instructions about their site to web robots (such as search engine crawlers) about which parts of their website can be crawled and which  should be off-limits.
 
-- Web Publishers place the ads.txt file on their domains at a URL following the format \``website.com/ads.txt`\`.
+- Web Publishers place the ads.txt file on their domains at a URL following the format `website.com/ads.txt`.
 - App publishers place the app-ads.txt file, [per IAB recommendations](https://iabtechlab.com/wp-content/uploads/2019/03/FAQ-for-ads.txt-and-app-ads.txt-UPDATED-March-4-2019.pdf), on the root of the developer website URL associated with their application in the relevant app store where the application is hosted.
 
 Within the ads.txt / app-ads.txt file is a list showing each approved partner, along with each partner's tech platform (Xandr, Google, Rubicon, etc.), account ID, and relationship to the publisher. The file gives publishers a way to list all of their approved SSP, ad network, and exchange partners (both direct and resellers). DSPs can then choose to leverage the information in the ads.txt file in order to ensure authorized resale compliance.
@@ -70,8 +71,8 @@ The first line of this example specifies that the publisher is using Xandr (xan
 
 > [!NOTE]
 > The member-IDs shown in the example file above must be replaced by actual member IDs.
-
-- Check the [IAB FAQ for Ads.txt and App-Ads.txt](https://iabtechlab.com/wp-content/uploads/2019/03/FAQ-for-ads.txt-and-app-ads.txt-UPDATED-March-4-2019.pdf) for more information on structuring files and other processes related to ads.txt / app-ads.txt.
+>
+> - Check the [IAB FAQ for Ads.txt and App-Ads.txt](https://iabtechlab.com/wp-content/uploads/2019/03/FAQ-for-ads.txt-and-app-ads.txt-UPDATED-March-4-2019.pdf) for more information on structuring files and other processes related to ads.txt / app-ads.txt.
 
 **Certification ID (optional)**
 
@@ -105,12 +106,14 @@ Publishers on the our platform should follow these steps to create and implemen
     `appnexus``.com, <publisher member ID>, DIRECT`
 
 > [!NOTE]
-> Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen:
+> Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen. (See below)
 >
-> Be sure to note that you need your member ID, not your publisher ID.
-> For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
 
 :::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
+
+> [!NOTE]
+> > Be sure to note that you need your member ID, not your publisher ID.
+> > For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
 
 5. For publishers working with partners who have Xandr seats, create lines that look like this, with one partner per line:
 
@@ -122,9 +125,7 @@ Publishers on the our platform should follow these steps to create and implemen
 
 7. Validate your ads.txt / app-ads.txt file using one of many free online resources for this purpose. This will help ensure that your ads.txt / app-ads.txt file has been configured correctly. 
 
-
-
-**Publisher Reselling Partners**
+**Publisher reselling partners**
 
 Resellers working with publishers should make sure publishers include them in their ads.txt / app-ads.txt files to show that the reseller has permission to sell their inventory. This can be done by sending
 publishers the instructions in the "Publishers" section above (or simply directing them to this page) and a request to be added to their ads.txt files.
@@ -134,7 +135,7 @@ publishers the instructions in the "Publishers" section above (or simply directi
 > [!WARNING]
 > To be correctly listed, resellers must work with publishers to ensure that their reseller member ID is included in the ads.txt file.
 
-**Ads.txt / App-Ads.txt for Buyers**
+**Ads.txt / App-Ads.txt for buyers**
 
 The following sections describe how Xandr works with Ads.txt for Console buyers and external bidders.
 

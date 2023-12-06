@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - under the hood of Your browser
+# Industry Reference - Under the hood of Your browser
 
 If you want to understand what's going on behind the scenes when ad space is bought and sold and ads displayed on the Internet, it's important to know about the background processes that occur when browsers are running. This page contains information about tools that will help you access and understand that activity.
 
