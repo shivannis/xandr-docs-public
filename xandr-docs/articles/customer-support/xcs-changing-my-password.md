@@ -27,4 +27,4 @@ Portal.
 4.Enter your password and password confirmation, and click **OK**.
 
 > [!TIP]
-> To reset a password via the API, see [Account Recovery Service](xandr-api/account-recovery-service.md).
+> To reset a password via the API, see [Account Recovery Service](../digital-platform-api/account-recovery-service.md).

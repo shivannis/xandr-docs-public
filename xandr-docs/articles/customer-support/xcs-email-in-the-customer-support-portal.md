@@ -5,7 +5,6 @@ ms.custom : customer-support
 ms.date : 10/28/2023
 ---
 
-
 # Email in the customer support portal
 
 Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base

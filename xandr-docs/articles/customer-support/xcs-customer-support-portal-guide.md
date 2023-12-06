@@ -28,16 +28,6 @@ This guide provides instructions on how to use the Customer Support Portal.
 - [Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)
 - [Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)
 
-## Related links
+## Related link
 
-- [Logging in to the Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)  
-- [Searching the Knowledge Base](xcs-searching-the-knowledge-base.md)  
-- [Opening a New Case](xcs-opening-a-new-case.md)
-- [Updating a Case](xcs-updating-a-case.md)
-- [Updating My Profile](xcs-updating-my-profile.md)
-- [Updating My Settings](xcs-updating-my-settings.md)
-- [Changing My Password](xcs-changing-my-password.md)
-- [Reporting Outages](xcs-reporting-outages.md)
-- [Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)  
-- [Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)
 - [Welcome to Xandr Customer Support](xcs-xandr-customer-support-home.md)
