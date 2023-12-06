@@ -18,7 +18,7 @@ An outage occurs when an essential production feature is broken with no viable w
 
 For more information, see [Welcome to Client Services](xcs-xandr-client-services.md).
 
-Outage alerts are displayed on the Customer Support Portal page when you log in, as shown in the example below.
+Outage alerts are displayed on the **Customer Support Portal** page when you log in, as shown in the example below.
 
  :::image type="content" source="media/xcs-s.png" alt-text="Screenshot of Outage alerts.":::
 
@@ -35,18 +35,18 @@ Log in to the [Customer Support Portal](https://help.xandr.com) and click **Cont
 
 ## Step 2: Select a category
 
-For **Category**, select "Product Support".
+For **Category**, select **Product Support**.
 
 > [!WARNING]
 > Product Support is the only category with the severity option for an outage.
 
 ## Step 3: Select an issue
 
-Select an issue from the What Can We Help With drop down menu.
+Select an issue from the **What Can We Help With** drop down menu.
 
 ## Step 4: Select a severity
 
-Select "This is an outage, wake everyone up!". This option will page the on-call support team to respond to your request immediately. Ensure that your request requires immediate attention.
+Select **This is an outage, wake everyone up!**. This option will page the on-call support team to respond to your request immediately. Ensure that your request requires immediate attention.
 
 ## Step 5: Add a subject and a description
 
@@ -65,7 +65,7 @@ In the description, try to include all the information necessary to reproduce th
 
 ## Step 6: Select a Member ID (Optional)
 
-Select the Member ID related to your request from the drop down menu.
+Select the **Member ID** related to your request from the drop down menu.
 
 ## Step 7: Add cc email addresses (Optional)
 

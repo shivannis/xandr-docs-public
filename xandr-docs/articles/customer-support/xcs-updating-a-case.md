@@ -32,13 +32,13 @@ Go to the case in the portal, type your comment in the comment box, and click **
 
 ## Add an attachment
 
-Go to the case in the portal, and click Upload Files to select your attachment or drag and drop them into that area. After the file has been added, refresh the page for the attachment to appear in the attachment list in the right column.
+Go to the case in the portal, and click **Upload Files** to select your attachment or drag and drop them into that area. After the file has been added, refresh the page for the attachment to appear in the attachment list in the right column.
 
  :::image type="content" source="media/xcs-j.png" alt-text="Screenshot of the Attachment screen.":::
 
 ## Edit an open case
 
-Go to any open case view (My Cases, CC Cases) in the portal, and click the down-arrow to the right. The case edit view will appear, where you can make the updates and add/remove cc'ed emails. Once done, click **Save**.
+Go to any open case view (My Cases, CC Cases) in the portal, and click the **down-arrow** to the right. The case edit view will appear, where you can make the updates and add/remove cc'ed emails. Once done, click **Save**.
 
  :::image type="content" source="media/xcs-k.png" alt-text="Screenshot of the Open case view.":::
 

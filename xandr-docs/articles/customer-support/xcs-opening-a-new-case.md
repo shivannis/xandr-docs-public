@@ -34,7 +34,7 @@ Select the category that best describes the case:
 > [!NOTE]
 > This step is only applicable if you selected the Product Support, Business Support or Client Finance categories. If you selected a category other than Product Support, Business Support or Client Finance, go to [Step 4](#step-4-add-a-subject-and-description).
 
-Select an issue from the What Can We Help With drop down menu.
+Select an issue from the **What Can We Help With** drop down menu.
 
 ## Step 3: Set the severity
 
@@ -45,7 +45,7 @@ Set the severity of the case:
 - This is major, and I am blocked.
 - This is an outage, wake everyone up! (only available if you select "Product Support").
 
-Selecting "This is an outage, wake everyone up!" will page the on-call support team to respond to your request immediately. Ensure that your request requires immediate attention if you select this option.
+Selecting **This is an outage, wake everyone up!** will page the on-call support team to respond to your request immediately. Ensure that your request requires immediate attention if you select this option.
 
 An outage occurs when an essential production feature is broken with no viable workaround. Examples include:
 
@@ -60,7 +60,7 @@ For more information, see [Client Services](xcs-xandr-client-services.md).
 
 Enter a brief summary of the case in the subject field and a detailed account in the description field.
 
-For the summary, be concise but specific. For example, "UI latency" is more helpful than "UI not working". When you press Enter or tab away from the Subject field, the list of suggested articles to the right is automatically updated based on the terms you've entered. If none of the suggestions are helpful and you need to submit a request, a more precise subject line helps you and the support team easily identify the case.
+For the summary, be concise but specific. For example, "UI latency" is more helpful than "UI not working". When you press **Enter** or **tab** away from the **Subject** field, the list of suggested articles to the right is automatically updated based on the terms you've entered. If none of the suggestions are helpful and you need to submit a request, a more precise subject line helps you and the support team easily identify the case.
 
 In the description, try to include all the information necessary to reproduce the problem. Typically, this includes:
 
@@ -79,11 +79,11 @@ If anyone you've cc'd on a case would like a portal account, they can visit the�
 
 ## Step 6: Select a Member ID (optional)
 
-Select the Member ID related to your request from the drop down menu.
+Select the **Member ID** related to your request from the drop down menu.
 
 ## Step 7: Add an Invoice Number (optional when Client Finance is selected)
 
-If you selected Client Finance, provide the Invoice Number related to your request.
+If you selected **Client Finance**, provide the Invoice Number related to your request.
 
 ## Step 8: Add attachments (optional)
 
@@ -93,7 +93,7 @@ Click **Upload File** or drag and drop your file in the attachment section to a
 
 ## Step 9: Submit the case
 
-Once you have completed all required fields, click **Submit**. You will be taken to the Case Details page.
+Once you have completed all required fields, click **Submit**. You will be taken to the **Case Details** page.
 
  :::image type="content" source="media/xcs-h.png" alt-text="Screenshot of Case Details page.":::
 
