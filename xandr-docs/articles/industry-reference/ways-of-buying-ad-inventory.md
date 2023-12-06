@@ -63,9 +63,9 @@ CPM (cost per mille) is where the advertiser pays a flat amount per 1000 impress
 - As a buyer, a $1 CPM price means that if my ad is shown 1000 times, I pay $1.
 - As a seller, a $1 CPM price means that I'll receive $1 for every thousand ads I display.
 
-> [!NOTE]
-> **vCPM** or viewable cost per 1000 impressions means that an advertiser only pays when an ad is shown
-> on screen for a certain period of time (typically based off IAB [International Advertising Bureau] standards).
+  > [!NOTE]
+  > **vCPM** or viewable cost per 1000 impressions means that an advertiser only pays when an ad is shown
+  > on screen for a certain period of time (typically based off IAB [International Advertising Bureau] standards).
 
 ### CPC
 
@@ -80,7 +80,7 @@ This model allows for optimization to an average CPM goal.
 
 CPA (cost per action/acquisition) is a model where the advertiser pays the publisher only when a click on the impression results in a sale, or a conversion against their campaign goal.
 
-## Further reading
+## Related topics
 
 - [Introduction to Ad Serving](introduction-to-ad-serving.md)
 - [Creatives](creatives.md)

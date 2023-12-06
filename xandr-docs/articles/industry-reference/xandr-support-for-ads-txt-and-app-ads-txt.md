@@ -106,24 +106,22 @@ Publishers on the our platform should follow these steps to create and implemen
     `appnexus``.com, <publisher member ID>, DIRECT`
 
 > [!NOTE]
-> Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen. (See below)
+> Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen.
 >
-
-:::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
-
-> [!NOTE]
-> > Be sure to note that you need your member ID, not your publisher ID.
-> > For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
+> :::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
+>
+> Be sure to note that you need your member ID, not your publisher ID.
+> For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
 
 5. For publishers working with partners who have Xandr seats, create lines that look like this, with one partner per line:
 
-    `appnexus``.com, <partner member ID>, RESELLER`
+    `appnexus.com, <partner member ID>, RESELLER`
 
     Partners should be able to provide their member IDs.
 
 6. Save the file with the name **ads.txt** or app-ads.txt - depending on the type of inventory you are declaring the file for - and upload it to the root folder for the publisher domain, or app developer url declared in the relevant app store. (ie./ **example.com/ads.txt** or **appdeveloper.com/app-ads.txt**)
 
-7. Validate your ads.txt / app-ads.txt file using one of many free online resources for this purpose. This will help ensure that your ads.txt / app-ads.txt file has been configured correctly. 
+7. Validate your ads.txt / app-ads.txt file using one of many free online resources for this purpose. This will help ensure that your ads.txt / app-ads.txt file has been configured correctly.
 
 **Publisher reselling partners**
 
@@ -156,7 +154,7 @@ OpenRTB request.
 - [WTF is Ads.txt?](https://digiday.com/marketing/wtf-ads-txt/) - Digiday Article
 - [IAB Ads.txt / App-Ads.txt Spec](https://iabtechlab.com/ads-txt/) - IAB Techlab
 
-## Related topic
+## Related topics
 
 - [Ads.txt/App-Ads.txt FAQ for Buyers](ads-txt---app-ads-txt-faq-for-buyers.md)
 - [Ads.txt/App-Ads.txt FAQ for Sellers](ads-txt---app-ads-txt-faq-for-sellers.md)
