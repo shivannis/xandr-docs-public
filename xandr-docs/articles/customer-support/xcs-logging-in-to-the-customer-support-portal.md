@@ -19,5 +19,5 @@ The portal account is separate from and [Documentation Portal](https://docs.xand
 
 ## Related topics
 
-[Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)
-[Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
+- [Email in the Customer Support Portal](xcs-email-in-the-customer-support-portal.md)
+- [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
