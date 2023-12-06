@@ -1,11 +1,11 @@
 ---
-title: Ad Tags
+title: Industry Reference - Ad Tags
 description: In this article, learn about Ad tags and how does an ad tag work with detailed set of examples.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Ad tags
+# Industry Reference - Ad tags
 
 Ad tags are used for many purposes in display advertising:
 
@@ -21,7 +21,7 @@ content is either a creative or another ad tag and it may be returned immediatel
 
 :::image type="content" source="media/how-ad-tags-work.png" alt-text="Diagram of How ad tags and bid work.":::
 
-Here's a simple example of how ad tags move through different systems. The example uses one ad server but in reality publishers and advertisers may each have their own ad servers: the publisher to track the impressions and the advertiser to determine which ads to serve.
+Here's a simple example of how ad tags move through different systems. The example uses one ad server but in reality publishers and advertisers may each have their own ad servers. The publisher to track the impressions and the advertiser to determine which ads to serve.
 
 1. When the user visits a publisher web site, the browser sends an ad tag to the ad server. This ad tag contains information about the user and the ad placement.
 1. The ad server optionally passes an ad tag to a third-party data provider to retrieve information about user segmenting or contextual targeting.

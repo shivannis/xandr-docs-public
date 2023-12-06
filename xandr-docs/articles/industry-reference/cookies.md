@@ -1,11 +1,11 @@
 ---
-title: Cookies
+title: Industry Reference - Cookies
 description: In this article, explore answers to commonly asked questions about browser cookies.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Cookies
+# Industry Reference - Cookies
 
 While you may have heard that browser cookies track your actions on the Internet, that's not quite the case. Cookies are simply text files that are stored in Internet browsers, allowing publishers to better monetize their websites and offer users free content. They don't track everything that you're doing, they're not viruses, and they don't create spam. In fact, they can be quite useful to you. This page walks you through how cookies work in desktop browsers and mobile applications.
 

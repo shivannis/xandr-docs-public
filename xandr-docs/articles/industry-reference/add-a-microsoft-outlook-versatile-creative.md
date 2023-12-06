@@ -1,11 +1,11 @@
 ---
-title: Add a Microsoft Outlook Versatile Creative
+title: Industry Reference - Add a Microsoft Outlook Versatile Creative
 description: In this article, learn step-by-step instructions on how to add a Microsoft Outlook versatile creative.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Add a Microsoft Outlook versatile creative
+# Industry Reference - Add a Microsoft Outlook versatile creative
 
 Microsoft Outlook creatives show up in the right-hand sidebar of the free Outlook.com webmail service after a user securely logs in. This
 page provides specifications for elements of Outlook creatives and shows you how to add them in Console.
@@ -13,7 +13,7 @@ page provides specifications for elements of Outlook creatives and shows you how
 > [!TIP]
 > What's New?
 >
-> You no longer need to update pixels via the custom template. You can now use the standard Third-Party Impression Trackers feature to add pixels (see [Step 4. Attach third-party tracking pixels (optional)](#step-4-attach-third-party-tracking-pixels-optional)). This change will allow for AppNexus macros to serve on impression trackers.
+> You no longer need to update pixels via the custom template. You can now use the standard Third-Party Impression Trackers feature to add pixels (see [Step 4](#step-4-attach-third-party-tracking-pixels-optional)). This change will allow for AppNexus macros to serve on impression trackers.
 > [!WARNING]
 > This ad format will be deprecated in January 2016. Plan your campaigns accordingly.
 
@@ -21,9 +21,9 @@ page provides specifications for elements of Outlook creatives and shows you how
 
 | Element | Required? | Description |
 |:---|:---|:---|
-| Headline | Yes | The headline for the Outlook creative. This displays above the image.<br> - Maximum of 25 characters including spaces.<br>Must not contain newline characters.<br> - Must not include 2 consecutive punctuation marks. <br> - Must not consist entirely of capital letters - only the first letter of a word may be capitalized.<br> - Must not start with punctuation.<br>Must not include double spaces.<br> - Must not include more than 2 consecutive 1 character words.<br> - Must not include special characters like:<br>< > * \ ^ ~ _ = { } [ ] \| < > £. |
-| Image | Yes | The image for the Outlook creative object.<br> - When you upload an image larger than 100x72, AppNexus Console will resize the image to fit within 100x72 format. However, you must still select 100x72 as the creative size regardless of the size of the image.<br><br> **Warning:** If you don't select 100x72 as the creative size, the creative will not serve.<br> - Must be in one of the following formats: JPG, PNG, GIF.<br> - Must not be flash.<br>Must not include any animation.<br> - Initial load size must be less than 40 KB.<br><br>**Warning:** Outlook creatives with an initial load size of more than 40 kb will be subject to extra fees.  Avoid these fees by making sure that the initial load sizes of your creatives are less than or equal to 40 kb. |
-| Description | Yes | The description for the Outlook creative. This displays under the image.<br> - Maximum of 90 characters including spaces, with no word having more than 20 characters.<br> - Must not contain newline characters.<br> - Must not include 2 consecutive punctuation marks. <br> - Must not consist entirely of capital letters - only the first letter of a word may be capitalized.<br> - Must not start with punctuation.<br> - Must not include double spaces.<br> - Must not include more than 2 consecutive 1 character words.<br>Must not include special characters like:<br>< > * \ ^ ~ _ = { } [ ] \| < >. |
+| Headline | Yes | The headline for the Outlook creative. This displays above the image.<br> - Maximum of 25 characters including spaces.<br> - Must not contain newline characters.<br> - Must not include two consecutive punctuation marks. <br> - Must not consist entirely of capital letters - only the first letter of a word may be capitalized.<br> - Must not start with punctuation.<br>Must not include double spaces.<br> - Must not include more than two consecutive one character words.<br> - Must not include special characters like:<br>< > * \ ^ ~ _ = { } [ ] \| < > £. |
+| Image | Yes | The image for the Outlook creative object.<br> - When you upload an image larger than 100x72, AppNexus Console will resize the image to fit within 100x72 format. However, you must still select 100x72 as the creative size regardless of the size of the image.<br><br> **Warning:** If you don't select 100x72 as the creative size, the creative will not serve.<br><br> - Must be in one of the following formats: JPG, PNG, GIF.<br> - Must not be flash.<br>Must not include any animation.<br> - Initial load size must be less than 40 KB.<br><br>**Warning:** Outlook creatives with an initial load size of more than 40 kb will be subject to extra fees.  Avoid these fees by making sure that the initial load sizes of your creatives are less than or equal to 40 kb. |
+| Description | Yes | The description for the Outlook creative. This displays under the image.<br> - Maximum of 90 characters including spaces, with no word having more than 20 characters.<br> - Must not contain newline characters.<br> - Must not include two consecutive punctuation marks. <br> - Must not consist entirely of capital letters - only the first letter of a word may be capitalized.<br> - Must not start with punctuation.<br> - Must not include double spaces.<br> - Must not include more than two consecutive one character words.<br> - Must not include special characters like:<br>< > * \ ^ ~ _ = { } [ ] \| < >. |
 | Landing Page URL | Yes | The URL where users will be redirected when they click the Outlook ad.<br> - Maximum of 1024 characters.<br> - Must begin with "http://" or "https://".<br> - Must not contain newline characters. |
 | Pixel URL | No | The final destination URL for a third-party impression tracking pixel. For more details, see [Step 4](#step-4-attach-third-party-tracking-pixels-optional).<br> - Maximum of 1024 characters.<br> - Must be secure (https) and contain a valid SSL/TLS certificate.<br> - Must not contain newline characters. |
 | Flex Tile Label | No | The optional, additional description for the Outlook creative. Clicking on this label redirects users to the Landing Page URL.<br> - Maximum of 20 characters.<br> - Must not contain newline characters. |
@@ -35,9 +35,7 @@ page provides specifications for elements of Outlook creatives and shows you how
 
 ### SSL audit
 
-Since Outlook.com consists of secure inventory, Outlook creatives must pass AppNexus' SSL audit in order to serve.
-Therefore, when adding your Outlook creatives to AppNexus, secure settings are selected by default. Do not make any changes to the setting. (see [Step 6. Select auditing options](#step-6-select-auditing-options)). For details about checking the state of the
-secure audit, see [Check the Audit Status of an Outlook Creative](#check-the-audit-status-of-an-outlook-creative).
+Since Outlook.com consists of secure inventory, Outlook creatives must pass AppNexus' SSL audit in order to serve. Therefore, when adding your Outlook creatives to AppNexus, secure settings are selected by default. Do not make any changes to the setting. (see [Step 6](#step-6-select-auditing-options)). For details about checking the state of the secure audit, see [Check the Audit Status of an Outlook Creative](#check-the-audit-status-of-an-outlook-creative).
 
 ### Microsoft creative acceptance policy
 
@@ -99,7 +97,7 @@ Serving on secure inventory is selected by default. Because Outlook contains onl
 
 AppNexus records all impressions. If you wish to use another system to record impressions as well, you can attach third-party impression tracking pixels to your creative.
 
-To attach an existing third-party pixel to this creative, click the Third-Party Pixels tab (notice that there may already be pixels attached to this creative based on the Advertiser and Network to which it belongs).
+To attach an existing third-party pixel to this creative, click the **Third-Party Pixels** tab (notice that there may already be pixels attached to this creative based on the Advertiser and Network to which it belongs).
 
 Then, depending on whether you are attaching Network or Advertiser level pixels to this creative or adding pixels directly to this creative, follow one of these procedures
 
@@ -107,12 +105,10 @@ Then, depending on whether you are attaching Network or Advertiser level pixels 
   
   > [!NOTE]
   > If the inventory you are serving on is secure, then all tracking pixels must have a secure version.
-
-> [!NOTE]
-> **Creative Audit**
->
-> If the creative you are attaching the pixel to has already been uploaded, attaching the pixel will cause the creative to be re-audited.
-> If you are uploading this creative for the first time, the pixel will be audited along with the creative.
+  >
+  > **Creative Audit**
+  >
+  > If the creative you are attaching the pixel to has already been uploaded, attaching the pixel will cause the creative to be re-audited. If you are uploading this creative for the first time, the pixel will be audited along with the creative.
 
 - To attach additional pixels that have been created on the Network or Advertiser level, click the **Add** button next to each of the pixels (in the **Available List**) you would like to attach.
 
@@ -125,7 +121,7 @@ If you want to create a new third-party tracking pixel at the Network or Adverti
 
 ## Step 5: Define the text of the Outlook creative
 
-On the Template tab, enter the language that will display in the Outlook creative.
+On the **Template** tab, enter the language that will display in the Outlook creative.
 
 - **Headline** - Enter the headline of the creative. This can be a maximum of 25 characters including spaces. For additional limitations, see [Creative specifications](#creative-specifications) above.
 - **Description** - Enter the description for the creative. This can be a maximum of 90 characters including spaces, with no word having more than 20 characters. For additional limitations, see [Creative specifications](#creative-specifications) above.
@@ -138,7 +134,7 @@ On the Template tab, enter the language that will display in the Outlook creat
   >
   > Input in Console - This is the &quot;DESCRIPTION&quot; or This is the \\"DESCRIPTION\\"
   >
-  > Input in API - This is the &quot;DESCRIPTION&quot; or This is the \\\\\\ "DESCRIPTION\\\\ \\"
+  > Input in API - This is the &quot;DESCRIPTION&quot; or This is the \\\\\\ "DESCRIPTION\\\\\\"
 
 > [!NOTE]
 > Outlook creatives cannot be previewed in the UI.
@@ -161,12 +157,12 @@ Click **Associate Creatives** in the side navigation, then select the **Campai
 
 You can add users who view or click on the creative to specific segments for targeting or retargeting purposes. On the **Segments** tab, select the segments to which users should be added on view and/or on click from the **All Segments** list and click **Add** to move them to the **Selected Segments** list. To remove segments that are already in the **Selected Segments** list, choose those segments and click **Remove**.
 
-## Step 9. Set frequency caps (optional)
+## Step 9: Set frequency caps (optional)
 
 On the **Budget** tab, under **Creative Frequency**, you can cap how frequently the Outlook creative can be shown to a given user.
 
 - **Show \_\_\_ imps over lifetime** - The creative will not be shown to a given user more than the specified number of times over the lifetime of the creative.
-- **Show \_\_\_ imps per user per day**- The creative will not be shown to a given user more than the specified number of times per day.
+- **Show \_\_\_ imps per user per day** - The creative will not be shown to a given user more than the specified number of times per day.
 - **1 imp per user per \_\_\_ minutes/hours/days** - A minimum of the specified number of minutes/hours/days must pass before a given user can be shown the creative.
 - **Show to users without cookies** - Once you set a frequency cap, you can choose to show the creative to users without cookies, but be aware that your frequency caps will not apply to such users.
 
@@ -175,7 +171,7 @@ On the **Budget** tab, under **Creative Frequency**, you can cap how frequent
 
 ## Step 10: Set the budget for the creative (optional)
 
-On the Budget tab, under Creative Budget, you can set an impression or media cost budget for the Outlook creative. By default,
+On the **Budget** tab, under **Creative Budget**, you can set an impression or media cost budget for the Outlook creative. By default,
 the budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the creative. Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which AppNexus transacts.
 
 > [!TIP]
@@ -190,7 +186,9 @@ the budget is unlimited. If you prefer, you can define exactly how much you are 
     - **Pace evenly throughout the day**- Select this option, otherwise known as "daily pacing", if you want to prevent your daily budget from being spent all at once by distributing your spend evenly by hour throughout the day.
         > [!NOTE]
         > If you use Daypart Targeting to restrict the hours during which the campaign can serve, daily pacing will adjust to distribute your spend evenly across only the targeted hours. For more details, see **Daily Pacing**.
-    - **Spend as fast as possible** - Select this option if you do not want to pace your daily budget at all. Note that this option could lead to your entire daily budget being spent in a very short amount of time.
+    - **Spend as fast as possible** - Select this option if you do not want to pace your daily budget at all.
+        > [!NOTE]
+        > This option could lead to your entire daily budget being spent in a very short amount of time.
 
 ## Step 11: Save the creative
 

@@ -1,11 +1,11 @@
 ---
-title: Build an HTML5 Xandr Creative in Adobe Animate CC
+title: Industry Reference - Build an HTML5 Xandr Creative in Adobe Animate CC
 description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Adobe Animate CC.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Build an HTML5 Xandr creative in Adobe Animate CC
+# Industry Reference - Build an HTML5 Xandr creative in Adobe Animate CC
 
 This guide explains how to use Adobe Animate CC to build HTML5 creatives that will properly track clicks in Xandr. It assumes that you are familiar using Adobe Animate CC to build creatives.
 
@@ -39,7 +39,7 @@ This guide explains how to use Adobe Animate CC to build HTML5 creatives that wi
 
 1. Save and **Publish** your work. Open the project's `.html` file in your web browser. Add `?clickTag=http://www.appnexus.com` at the end of the URL in the address bar.
 
-    :::image type="content" source="media/save-and-publish.png" alt-text="Screenshot of the address bar.":::
+    :::image type="content" source="media/save-and-published.png" alt-text="Screenshot of the address bar.":::
 
     Refresh the page and click on the ad. A new window with Xandr's website should open in your browser. When the ad is served Xandr sets the value of clickTag to Xandr's click tracker and a redirect to the landing page URL provided for the creative in Console.
 

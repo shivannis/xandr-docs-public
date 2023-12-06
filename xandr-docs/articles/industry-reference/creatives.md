@@ -1,11 +1,11 @@
 ---
-title: Creatives
+title: Industry Reference - Creatives
 description: In this article, learn about creatives, their types, CDNs, impressions, and ways to track clicks and conversions.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Creatives
+# Industry Reference - Creatives
 
 > [!NOTE]
 > You may want to read [Introduction to Ad Serving](introduction-to-ad-serving.md) and [Ad Tags](ad-tags.md) first.

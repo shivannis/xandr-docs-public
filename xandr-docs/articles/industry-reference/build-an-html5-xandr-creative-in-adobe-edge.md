@@ -1,11 +1,11 @@
 ---
-title: Build an HTML5 Xandr Creative in Adobe Edge
+title: Industry Reference - Build an HTML5 Xandr Creative in Adobe Edge
 description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Adobe Edge.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Build an HTML5 Xandr creative in Adobe Edge
+# Industry Reference - Build an HTML5 Xandr creative in Adobe Edge
 
 This guide explains how to use Adobe Edge to build HTML5 creatives that will properly track clicks in Xandr. It assumes that you are familiar using Adobe Edge to build creatives.
 
@@ -31,7 +31,7 @@ This guide explains how to use Adobe Edge to build HTML5 creatives that will pro
 
     :::image type="content" source="media/function-properties.png" alt-text="Screenshot of the function properties screen.":::
 
-1. From the **Library** panel, in the **Scripts** drop-down, click **Add JS File from URL..**. Paste [https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js) into the field and click OK.
+1. From the **Library** panel, in the **Scripts** drop-down, click **Add JS File from URL..**. Paste [https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js) into the field and click **OK**.
 
     :::image type="content" source="media/library-panel.png" alt-text="Screenshot of the Library Panel.":::
 

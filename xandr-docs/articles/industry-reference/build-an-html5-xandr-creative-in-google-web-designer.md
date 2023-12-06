@@ -1,11 +1,11 @@
 ---
-title: Build an HTML5 Xandr Creative in Google Web Designer  
+title: Industry Reference - Build an HTML5 Xandr Creative in Google Web Designer  
 description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Google Web Designer.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Build an HTML5 Xandr creative in Google Web Designer
+# Industry Reference - Build an HTML5 Xandr creative in Google Web Designer
 
 This page explains how to use Google Web Designer to build HTML5 creatives that will properly track clicks in Xandr.
 
