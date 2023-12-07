@@ -1,7 +1,7 @@
 ---
 title : Industry Reference - Introduction to Mobile Advertising
 description : Learn how advertising works on mobile devices. 
-ms.date : 12/05/2023
+ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
@@ -87,6 +87,4 @@ basis.
 - [Introduction to Ad Serving](introduction-to-ad-serving.md)
 - [Ad Tags](ad-tags.md)
 - [Creatives](creatives.md)
-- [mraid-and-mobile-video-tutorial.md](mraid-and-mobile-video-tutorial.md)<a
-  href="mraid-and-mobile-video-tutorial.md"
-  class="xref" target="_blank">MRAID and Mobile Video Tutorial</a>
+- [mraid-and-mobile-video-tutorial](mraid-and-mobile-video-tutorial.md)

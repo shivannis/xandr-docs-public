@@ -1,7 +1,7 @@
 ---
 title : Industry Reference - Introduction to Ad Serving
 description : Learn what Ad Serving is and how it works.
-ms.date : 12/05/2023
+ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 

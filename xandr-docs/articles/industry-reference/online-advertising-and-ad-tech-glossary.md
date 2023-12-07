@@ -1,7 +1,7 @@
 ---
 title :  Industry Reference - Online Advertising and Ad Tech Glossary
 description : The page covers glossary of terms from Online Advertising and Ad tech.   
-ms.date : 12/06/2023
+ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
@@ -16,9 +16,9 @@ online advertising, ad tech, and ad trading. 
 
 ### acquisition
 
-When a [user](online-advertising-and-ad-tech-glossary.md#user) signs up, makes a purchase, or performs some other
+When a [user](#user) signs up, makes a purchase, or performs some other
 desired action in response to an ad displayed on the Internet. Also
-called a [conversion](online-advertising-and-ad-tech-glossary.md#conversion) or action. See also [CPA](online-advertising-and-ad-tech-glossary.md#cpa).
+called a [conversion](#conversion) or action. See also [CPA](#cpa).
 
 ### ad agency
 
@@ -76,7 +76,7 @@ numerous sources in a single buy. Ad networks traditionally aggregate
 unsold inventory from publishers in order to offer advertisers a
 consolidated and generally less expensive pool of impressions, but they
 can have a wide variety of business models and clients. In the context
-of ad trafficking and ad tech, the term "[network](online-advertising-and-ad-tech-glossary.md#network)" is generally taken to mean an ad network.
+of ad trafficking and ad tech, the term "[network](#network)" is generally taken to mean an ad network.
 
 ### ad server
 
@@ -94,7 +94,7 @@ A piece of HTML on a webpage that will contact an ad server and ask for
 an ad. The tag informs the browser to open a small window (say, 468×60
 pixels), and place whatever content is returned from some location (like
 `http://ad.adserver.com/imp?Z=468×60&s`) in that window. Note that ad
-tags are related, but not identical, to [placements](online-advertising-and-ad-tech-glossary.md#placement), which are actually part of the information
+tags are related, but not identical, to [placements](#placement), which are actually part of the information
 embedded into ad tags. Here is an example JavaScript ad tag:
 
 ``` 
@@ -176,7 +176,7 @@ access underlying databases and hardware without disrupting stability or
 reliability, and without knowledge of underlying programming languages.
 They may be based on a variety of programming languages and models, but
 the types of APIs used by consumers to interact with Web-based software
-or apps are often known as SOAP or [REST](online-advertising-and-ad-tech-glossary.md#REST) services, which consist of a set of specifications
+or apps are often known as SOAP or [REST](#rest) services, which consist of a set of specifications
 for remote calls that enable consumers to interact with data and systems
 without the risk of disrupting their function. For example,
 Xandr uses a RESTful API to facilitate
@@ -256,7 +256,7 @@ and a new wave of digital-native AVODs (e.g. Tubi).
 
 ### backfill
 
-Inventory that is not pre-sold, also known as [remnant inventory](online-advertising-and-ad-tech-glossary.md#remnant-inventory). Can also refer to one ad network
+Inventory that is not pre-sold, also known as [remnant inventory](#remnant-inventory). Can also refer to one ad network
 filling unsold inventory for another ad network.
 
 ### back-to-back ads
@@ -286,12 +286,12 @@ buy-side settings.
 ### bidding strategy
 
 A bidding strategy is the way a buyer calculates a bid in an ad auction.
-It can mean bidding a flat [CPM](online-advertising-and-ad-tech-glossary.md#cpm) or bidding a variable price based on past
+It can mean bidding a flat [CPM](#cpm) or bidding a variable price based on past
 clickthrough or conversion rates.
 
 ### bid request
 
-A request sent to a [bidder](online-advertising-and-ad-tech-glossary.md#bidder) that asks it to return a bid for a given
+A request sent to a [bidder](#bidder) that asks it to return a bid for a given
 impression. Bid requests include data points about the user and the
 impression being sold.
 
@@ -370,16 +370,14 @@ clicks on an ad.
 
 ### click-through rate
 
-See [CTR](online-advertising-and-ad-tech-glossary.md#ctr).
+See [CTR](#ctr).
 
 ### click URL
 
-If a publisher is being paid on a <a
-href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-000002f3"
-class="xref">CPC</a> basis and wants to track clicks, they can provide
+If a publisher is being paid on a [CPC](#cpc) basis and wants to track clicks, they can provide
 click-tracking URL where it is possible to ping them each time a user
 clicks on an ad. Click URLs can also be used by to record clicks en
-route to a [landing page](online-advertising-and-ad-tech-glossary.md#landing-page). See also [publisher click-tracking](online-advertising-and-ad-tech-glossary.md#publisher-click-tracking). 
+route to a [landing page](#landing-page). See also [publisher click-tracking](#publisher-click-tracking). 
 
 ### competitive separation
 
@@ -415,14 +413,14 @@ integrated smart TV sets.
 
 ### container tag
 
-See [tag container](online-advertising-and-ad-tech-glossary.md#tag-container).
+See [tag container](#tag-container).
 
 ### contextual data
 
 Information on the contents of the webpage that a user is viewing upon
 ad call, usually used for ad targeting. For example, if the user is
 viewing a newspaper article about travel, an airline may wish to display
-on that page. This is distinct from [user data](online-advertising-and-ad-tech-glossary.md#user-data). See also [semantic targeting](online-advertising-and-ad-tech-glossary.md#semantic-targeting).
+on that page. This is distinct from [user data](#user-data). See also [semantic targeting](#semantic-targeting).
 
 ### contextual targeting
 
@@ -434,11 +432,11 @@ certain descriptive metadata like genre, mood or subject matter.
 When a user signs up, makes a purchase, or performs some other desired
 action in response to an ad. Also called an
 [acquisition](online-advertising-and-ad-tech-glossary.md#acquisition) or action, especially to distinguish
-conversions/acquisitions from clicks in payment methods ([CPC](online-advertising-and-ad-tech-glossary.md#cpc) vs. [CPA](online-advertising-and-ad-tech-glossary.md#cpa)).
+conversions/acquisitions from clicks in payment methods ([CPC](#cpc) vs. [CPA](#cpa)).
 
 ### conversion attribution
 
-See [attribution](online-advertising-and-ad-tech-glossary.md#attribution). 
+See [attribution](#attribution). 
 
 ### conversion funnel
 
@@ -452,7 +450,7 @@ conversion or purchase.
 
 A pixel that fires when a user "converts" by clicking on a ad,
 registering, making a purchase, or completing another action.
-Advertisers can place conversion pixels on a [landing page](online-advertising-and-ad-tech-glossary.md#landing-page), registration page, checkout pages, or
+Advertisers can place conversion pixels on a [landing page](#landing-page), registration page, checkout pages, or
 elsewhere to track conversions.
 
 ### converged buying
@@ -469,7 +467,7 @@ then sent back unchanged by the client each time it accesses that
 server. HTTP cookies are used for authenticating, session tracking, and
 storing information about specific users, such as site preferences or
 buying habits. Advertisers often use cookies to track the number and
-frequency of advertisements that have been shown. See also [first-party cookies](online-advertising-and-ad-tech-glossary.md#first-party-cookies) and [third-party cookies](online-advertising-and-ad-tech-glossary.md#third-party-cookies).
+frequency of advertisements that have been shown. See also [first-party cookies](#first-party-cookies) and [third-party cookies](#third-party-cookies).
 
 ### cost per viewable impression
 
@@ -480,7 +478,7 @@ guidelines. Typically sold at 1000 impressions.
 ### cost plus
 
 A payment model in which advertisers agree to pay the cost of media plus
-an additional [CPM](online-advertising-and-ad-tech-glossary.md#cpm) or % profit margin on top.
+an additional [CPM](#cpm) or % profit margin on top.
 
 ### coverage
 
@@ -501,13 +499,13 @@ Estimate
 Cost per action/acquisition. A payment model in which advertisers pay
 for every action, such as a sale or registration, completed as a result
 of a visitor clicking on their advertisement. Note that an
-"[acquisition](online-advertising-and-ad-tech-glossary.md#acquisition)" is the same as a "[conversion](online-advertising-and-ad-tech-glossary.md#conversion)".
+"[acquisition](#acquisition)" is the same as a "[conversion](#conversion)".
 
 ### CPI
 
 Cost per install.  A payment model in which mobile advertisers pay each
-time a user installs their app. **  
-**
+time a user installs their app.   
+
 
 ### CPC
 
@@ -526,7 +524,7 @@ only pays for ads that finished (CPCV = Cost ÷ Completed Views).
 Cost per mille, or thousand (mille = thousand in Latin). A pricing model
 in which advertisers pay for every 1000 impressions of their
 advertisement served. This is the standard basic pricing model for
-online advertising. See also [CPC](online-advertising-and-ad-tech-glossary.md#cpc) and [CPA](online-advertising-and-ad-tech-glossary.md#cpa).
+online advertising. See also [CPC](#cpc) and [CPA](#cpa).
 
 ### CPP
 
@@ -540,7 +538,7 @@ video start. Typically sold at 1000 impressions.
 
 ### CPVM
 
-Renamed. See [vCPM](online-advertising-and-ad-tech-glossary.md#vCPM). 
+Renamed. See [vCPM](#vcpm). 
 
 ### creative
 
@@ -551,9 +549,9 @@ video, interactive experiences or more.
 
 ### creative tag
 
-Similar to an [ad tag](online-advertising-and-ad-tech-glossary.md#ad-tag), this is a snippet of code that gives the
-location of the [creative](online-advertising-and-ad-tech-glossary.md#creative), which is usually a content delivery network
-(CDN) or an [ad server](online-advertising-and-ad-tech-glossary.md#ad-server).
+Similar to an [ad tag](#ad-tag), this is a snippet of code that gives the
+location of the [creative](#creative), which is usually a content delivery network
+(CDN) or an [ad server](#ad-server).
 
 ### cross-screen addressable
 
@@ -574,11 +572,11 @@ multiple creative tags during bulk sending.
 ### CTR
 
 Click-through rate - the rate or frequency at which users click through
-to a  [landing page](online-advertising-and-ad-tech-glossary.md#landing-page) from an ad.
+to a [landing page](#landing-page) from an ad.
 
 ### CTV
 
-See [connected TV](online-advertising-and-ad-tech-glossary.md#connected-TV). 
+See [connected TV](#connected-tv-ctv). 
 
 ### Curated Deal
 
@@ -598,7 +596,7 @@ assigned to specific individuals or households.
 
 The Digital Advertising Alliance. An online advertising industry
 association, made up of many other organizations, and dedicated to
-self-regulation. Possibly best known for the Advertising Option Icon. Read more on the [DAA's website<](https://youradchoices.com/).
+self-regulation. Possibly best known for the. Read more on the [DAA's website](https://youradchoices.com/).
 
 ### daisy chain
 
@@ -624,7 +622,7 @@ applying this data to one's advertising strategy. A DMP may offer the
 following features: estimating the likely reach for a user segment,
 measuring the lift from using data, acting as a financial clearing house
 between data buyers and sellers, and assisting publishers in monetizing
-data on their users. DMPs most commonly work with [user data](online-advertising-and-ad-tech-glossary.md#user-data) but may also work with [contextual data](online-advertising-and-ad-tech-glossary.md#contextual-data), or other types of data.
+data on their users. DMPs most commonly work with [user data](#user-data) but may also work with [contextual data](#contextual-data), or other types of data.
 
 ### data provider
 
@@ -643,10 +641,10 @@ other methods. 
 ### deduplication
 
 Sometimes known as "de-duping" – means removing duplicate entries or
-events in a data set. Effective [programmatic buying](online-advertising-and-ad-tech-glossary.md#programmatic-buying) is dependent on getting accurate
+events in a data set. Effective [programmatic buying](#programmatic-buying) is dependent on getting accurate
 and useful data sets, and deduplication is often a step in that process.
 For example, if a user clicks twice on the same creative but these two
-actions are only linked to a single [conversion](online-advertising-and-ad-tech-glossary.md#conversion), it's possible to de-dupe the associated
+actions are only linked to a single [conversion](#conversion), it's possible to de-dupe the associated
 data set to prevent it from counting second clicks.
 
 ### default creative/reserve creative
@@ -654,16 +652,16 @@ data set to prevent it from counting second clicks.
 A default creative is a creative that runs as a backup in an open
 Internet ad space, in the case that no other creatives are available. A
 default creative can be a literal creative, say an in-house ad, or it
-can be a redirect in the form of a third-party [ad tag](online-advertising-and-ad-tech-glossary.md#ad-tag) to a third-party [ad server](online-advertising-and-ad-tech-glossary.md#ad-server)</a> . A default creative may also be called a
+can be a redirect in the form of a third-party [ad tag](#ad-tag) to a third-party [ad server](#ad-server) . A default creative may also be called a
 "reserve creative."  
 
 ### default tag
 
 If no impression can be found for an ad opportunity, a default
-[tag](online-advertising-and-ad-tech-glossary.md#tag) may be served. The tag is passed to a third-party 
-[ad server](online-advertising-and-ad-tech-glossary.md#ad-server) to see if demand can be found there (this
-happens in the case of [daisy chaining](online-advertising-and-ad-tech-glossary.md#daisy-chaining)) or to simply pull a creative from that
-server. Sometimes called a [passback](online-advertising-and-ad-tech-glossary.md#passback).
+[tag](#tag) may be served. The tag is passed to a third-party 
+[ad server](#ad-server) to see if demand can be found there (this
+happens in the case of [daisy chaining](#daisy-chain)) or to simply pull a creative from that
+server. Sometimes called a [passback](#passback).
 
 ### demand
 
@@ -702,7 +700,7 @@ measurement.
 ### digital out-of-home advertising
 
 See 
-[DOOH](online-advertising-and-ad-tech-glossary.md#dooh).
+[DOOH](#dooh).
 
 ### direct response
 
@@ -747,7 +745,7 @@ more information, see the
 
 ### DMP
 
-See [data management platform](online-advertising-and-ad-tech-glossary.md#data-management-platform).
+See [data management platform](#data-management-platform).
 
 ### DOOH
 
@@ -756,11 +754,11 @@ the home, such as on digital billboards and other signage.
 
 ### DR
 
-See [direct response](online-advertising-and-ad-tech-glossary.md#direct-response).
+See [direct response](#direct-response).
 
 ### DSP
 
-See [demand side platform](online-advertising-and-ad-tech-glossary.md#demand-side-platform).
+See [demand side platform](#demand-side-platform-dsp).
 
 ### duration averaging
 
@@ -786,11 +784,11 @@ Dynamic creatives refers to having a few different creatives and
 choosing the most appropriate one for the user through some automated
 means such as audience segmentation or based on frequency and
 recency. Many platforms have rules about how much creatives can vary
-within the same [placement](online-advertising-and-ad-tech-glossary.md#placement) – for example, there may be limitations on [rotating](online-advertising-and-ad-tech-glossary.md#rotating-creative) brands. 
+within the same [placement](#placement) – for example, there may be limitations on [rotating](#rotating-creative) brands. 
 
 ### dynamic pricing
 
-Purchase pricing for an ad impression that is determined via [real-time bidding (RTB)](online-advertising-and-ad-tech-glossary.md#real-time-bidding-(RTB)) rather than a predetermined
+Purchase pricing for an ad impression that is determined via [real-time bidding (RTB)](#real-time-bidding-rtb) rather than a predetermined
 rate.
 
 ### eCPA
@@ -826,19 +824,19 @@ online behaviors, such as how long a visitor spends on a website.
 
 ### exchange
 
-See [ad exchange](online-advertising-and-ad-tech-glossary.md#ad-exchange).
+See [ad exchange](#ad-exchange).
 
 ### expandable ad
 
-Rich media creatives that can be enlarged beyond the initial
-dimensions of the placements they fill on web pages.
+Rich media [creatives](#creative) that can be enlarged beyond the initial
+dimensions of the [placements](#placement) they fill on web pages.
 
 ### first-party cookies
 
-[Cookies](online-advertising-and-ad-tech-glossary.md#cookie) that use the domain of the website a user is
+[Cookies](#cookie) that use the domain of the website a user is
 currently on. For example, if you visit www.mysite.com and the domain of
 the cookie is www.mysite.com, then this is a first-party cookie.
-First-party cookies are usually used for login, user experience, and [retargeting](online-advertising-and-ad-tech-glossary.md#retargeting) purposes. See also [third-party cookies](online-advertising-and-ad-tech-glossary.md#third-party-cookies).
+First-party cookies are usually used for login, user experience, and [retargeting](#retargeting) purposes. See also [third-party cookies](#third-party-cookies).
 
 ### first-party data
 
@@ -848,8 +846,8 @@ audiences or customers. 
 
 ### first touch
 
-An [attribution](online-advertising-and-ad-tech-glossary.md#attribution) model in which gives credit for the first
-impression a user saw. This may be used as an alternative to the [last view](online-advertising-and-ad-tech-glossary.md#last-view)/[last click](online-advertising-and-ad-tech-glossary.md#last-click) model, which gives credit for the last
+An [attribution](#attribution) model in which gives credit for the first
+impression a user saw. This may be used as an alternative to the [last view](#last-view)/[last click](#last-click) model, which gives credit for the last
 viewed or clicked ad. 
 
 ### flight
@@ -863,7 +861,7 @@ campaign that is active is said to be "in flight".
 How often an ad is shown in a certain period, such as a single browsing
 session, a 24 hour period or a flight. Advertisers often want to manage
 frequency to avoid showing an ad to the same user too often, also known
-as overexposure. See also [recency](online-advertising-and-ad-tech-glossary.md#recency-capping).
+as overexposure. See also [recency](#recency-capping).
 
 ### frequency capping
 
@@ -915,7 +913,7 @@ real-time auction via real-time bidding. Called guaranteed because the
 publisher signs a contract with an agency committing to deliver the
 specified impressions in exchange for an agreed-upon sum. If the
 guarantee is not met, the agency will often request a “make-good,”
-usually in the form of a credit. See also [premium](online-advertising-and-ad-tech-glossary.md#premium-inventory) inventory.
+usually in the form of a credit. See also [premium](#premium-inventory) inventory.
 
 ### household-level targeting
 
@@ -932,7 +930,7 @@ premium, ad-free experience.
 
 ### ID synching
 
-See  [user ID mapping](online-advertising-and-ad-tech-glossary.md#user-ID-mapping).
+See  [user ID mapping](#user-id-mapping).
 
 ### identity graph
 
@@ -986,7 +984,7 @@ video and are encompassed within the content streaming experience.
 ### in-stream video
 
 In-stream video is a type of creative played in video players on Web
-pages. This creative type uses [VAST](online-advertising-and-ad-tech-glossary.md#vast) XML to ensure proper rendering in players and are
+pages. This creative type uses [VAST](#vast) XML to ensure proper rendering in players and are
 shown before, in the middle of, or after other video content.
 
 ### instance
@@ -994,7 +992,7 @@ shown before, in the middle of, or after other video content.
 Also called a virtual machine, virtual operating system, or virtual
 server, an instance is an individual guest operating system that runs on
 top of a virtualization layer on top of a physical server. Instances are
-the building blocks of [cloud computing](online-advertising-and-ad-tech-glossary.md#cloud).
+the building blocks of [cloud computing](#cloud).
 
 ### interactive advertising bureau (IAB)
 
@@ -1046,13 +1044,13 @@ services, adding operational complexity.
 ### inventory/supply
 
 The total number of ad views or impressions that are available to sell
-over a given period of time. [Publishers](online-advertising-and-ad-tech-glossary.md#publisher) sell ad inventory.
+over a given period of time. [Publishers](#publisher) sell ad inventory.
 
 ### JSON
 
 JavaScript Object Notation is a lightweight data-interchange format
 based on a subset of JavaScript. JSON is a programming language often
-used for [APIs](online-advertising-and-ad-tech-glossary.md#api). It is a language-independent text format that
+used for [APIs](#api). It is a language-independent text format that
 uses conventions from the C-family, including C, C++, C#, Java,
 JavaScript, Perl, and Python. A JSON object looks something like this:
 
@@ -1071,18 +1069,18 @@ The page to which a user is directed after clicking on an ad. For
 example, if a user clicks on a Cheese of the Month ad, they may be
 directed to `cheeseofthemonth.com,` or to
 `cheeseofthemonth.com/signupnow` or some other landing page chosen by
-the advertiser. The landing page may be slightly different from the [click URL](online-advertising-and-ad-tech-glossary.md#click-url).
+the advertiser. The landing page may be slightly different from the [click URL](#click-url).
 
 ### last click
 
-A type of [attribution](online-advertising-and-ad-tech-glossary.md#attribution) model that pays out on the last impression
-that was clicked on by the [user](online-advertising-and-ad-tech-glossary.md#user). This may be used as an alternative to the [first touch](online-advertising-and-ad-tech-glossary.md#first-touch)  model, which gives credit for the first
+A type of [attribution](#attribution) model that pays out on the last impression
+that was clicked on by the [user](#user). This may be used as an alternative to the [first touch](#first-touch)  model, which gives credit for the first
 impression a user saw.
 
 ### last view
 
-A type of [attribution](online-advertising-and-ad-tech-glossary.md#attribution) model that pays out on the last impression
-that was viewed by the [user](online-advertising-and-ad-tech-glossary.md#user). This may be used as an alternative to the  [first touch](online-advertising-and-ad-tech-glossary.md#first-touch) model, which  gives credit for the first
+A type of [attribution](#attribution) model that pays out on the last impression
+that was viewed by the [user](#user). This may be used as an alternative to the  [first touch](#first-touch) model, which  gives credit for the first
 impression a user saw.
 
 ### lift
@@ -1167,7 +1165,7 @@ well.
 ### media plan
 
 A holistic view of a given advertiser's media buys. Often managed by a
-media [agency](online-advertising-and-ad-tech-glossary.md#ad-agency). 
+media [agency](#agency). 
 
 ### mediation
 
@@ -1200,7 +1198,7 @@ code hierarchy.
 ### mobile device ID
 
 A unique identifier for a mobile device. The device ID cannot be linked
-to [personally identifiable information (PII)](online-advertising-and-ad-tech-glossary.md#personally-identifiable-information-(PII)). Different
+to [personally identifiable information (PII)](#personally-identifiable-information-pii). Different
 operating systems use different identifiers: IDFA (iOS), AAID (Android),
 and Windows Advertising ID (Windows).
 
@@ -1229,7 +1227,7 @@ and telecommunications service providers.
 ### Network Advertising Initiative (NAI)
 
 An online advertising industry association focused on consumer education
-about [online behavioral advertising (OBA)](online-advertising-and-ad-tech-glossary.md#online-behavioral-advertising-(OBA)). Read more at the
+about [online behavioral advertising (OBA)](#online-behavioral-advertising-oba). Read more at the
 [NAI website](https://thenai.org/).
 
 ### native advertising
@@ -1243,17 +1241,17 @@ feels that they belong.
 ### network
 
 A network traditionally refers to a cable, broadcast or premium
-programming channel on TV. Generally refers to an [ad network](online-advertising-and-ad-tech-glossary.md#ad-network). 
+programming channel on TV. Generally refers to an [ad network](#ad-network). 
 
 ### nonexclusive inventory
 
 Inventory for which a given ad trafficker can't be certain where they
 are in the ad call daisy chain. They may be first or the ad call may
-have already passed through another platform as part of a [daisy chain](online-advertising-and-ad-tech-glossary.md#daisy-chain).
+have already passed through another platform as part of a [daisy chain](#daisy-chain).
 
 ### O&O
 
-See [owned and operated](online-advertising-and-ad-tech-glossary.md#owned-and-operated). 
+See [owned and operated](#owned-and-operated). 
 
 ### offline data
 
@@ -1268,7 +1266,7 @@ CTV devices, to gain campaign-wide insights.
 ### online behavioral advertising (OBA)
 
 Advertising to people surfing the Internet based on their past browsing
-behaviors. See also [DMA OBA compliance](online-advertising-and-ad-tech-glossary.md#direct-marketing-association-(dma)-online-behavioral-advertising-(oba)-compliance).
+behaviors. See also [DMA OBA compliance](#direct-marketing-association-dma-online-behavioral-advertising-obacompliance).
 
 ### online data
 
@@ -1333,7 +1331,7 @@ those who do.
 
 The redirecting of an impression back to an ad server  when no
 acceptable bid is received from a mediated bid, in order to allow the
-next highest bidder a chance to win the impression. See also [default tag](online-advertising-and-ad-tech-glossary.md#default-tag). 
+next highest bidder a chance to win the impression. See also [default tag](#default-tag). 
 
 ### personally identifiable information (PII)
 
@@ -1353,14 +1351,14 @@ either stored in a cookie or is propagated in the URL.
 
 ### piggyback
 
-This term usually refers specifically to a piggybacked [pixel](online-advertising-and-ad-tech-glossary.md#pixel). When pixel A has pixel B piggybacked on to it,
+This term usually refers specifically to a piggybacked [pixel](#pixel). When pixel A has pixel B piggybacked on to it,
 then the firing of pixel A causes the firing of pixel B. This second
 firing can either be via a redirect or a server-side firing. Piggyback
 pixels may be used for tracking conversions in secondary systems. 
 
 ### PII
 
-See [personally identifiable information](online-advertising-and-ad-tech-glossary.md#personally-identifiable-information-(PII)). 
+See [personally identifiable information](#personally-identifiable-information-pii). 
 
 ### pixel
 
@@ -1370,7 +1368,7 @@ delivered to a webpage by a third-party server. Nowadays, pixels may
 either be literal pixels or be javascript based. When the pixel loads,
 the third-party server can record information such as the IP address of
 the user's computer, URL of the page, and time the page was viewed. See
-also [conversion pixel](online-advertising-and-ad-tech-glossary.md#conversion-pixel) and [segment pixel](online-advertising-and-ad-tech-glossary.md#segment-pixel). 
+also [conversion pixel](#conversion-pixel) and [segment pixel](#segment-pixel). 
 
 ### placement
 
@@ -1384,18 +1382,18 @@ transact advertising inventory.
 
 ### pop ad
 
-An ad that displays in a secondary browser window.[Pop-up](online-advertising-and-ad-tech-glossary.md#pop-up) ads display in front of the initial browser
-window, while [pop-under](online-advertising-and-ad-tech-glossary.md#pop-under) ads display behind it. 
+An ad that displays in a secondary browser window. [Pop-up](#pop-ad) ads display in front of the initial browser
+window, while [pop-under](#pop-under) ads display behind it. 
 
 ### pop-under
 
 An ad that displays in a secondary browser window directly behind the
-initial browser window. See also [pop-up](online-advertising-and-ad-tech-glossary.md#pop-up).
+initial browser window. See also [pop-up](#pop-under).
 
 ### pop-up
 
 An ad that displays in a secondary browser window directly in front of
-the initial browser window. See also [pop-under](online-advertising-and-ad-tech-glossary.md#pop-under).
+the initial browser window. See also [pop-under](#pop-under).
 
 ### PPM
 
@@ -1413,7 +1411,7 @@ also [remnant inventory](online-advertising-and-ad-tech-glossary.md#remnant-inve
 
 ### premnant inventory
 
-A portmanteau word of premium + remnant. "[remnant inventory](online-advertising-and-ad-tech-glossary.md#remnant-inventory)," or non-[guaranteed](online-advertising-and-ad-tech-glossary.md#guaranteed-inventory)  inventory has an unnecessarily negative
+A portmanteau word of premium + remnant. "[remnant inventory](#remnant-inventory)," or non-[guaranteed](#guaranteed-inventory)  inventory has an unnecessarily negative
 connotation when this inventory might be first-rate.
 
 ### private marketplace
@@ -1448,7 +1446,7 @@ manual buys where you are in contact with a sales team, or other
 
 Public service announcement. On many ad serving platforms, a PSA will
 serve if there are no acceptable bids on a piece of inventory and the
-publisher does not have a [default creative](online-advertising-and-ad-tech-glossary.md#default-creative/reserve-creative) set. 
+publisher does not have a [default creative](#default-creativereserve-creative) set. 
 
 ### publisher
 
@@ -1461,8 +1459,8 @@ relationship with those who do.
 ### publisher click-tracking
 
 When a publisher keeps track of clicks on their ads. If a publisher is
-being paid on a  [CPC](online-advertising-and-ad-tech-glossary.md#cpc) basis and wants to track clicks, they can provide
-[click-tracking URL](online-advertising-and-ad-tech-glossary.md#click-url) where it is possible to ping them
+being paid on a  [CPC](#cpc) basis and wants to track clicks, they can provide
+[click-tracking URL](#click-url) where it is possible to ping them
 each time a user clicks on an ad. 
 
 ### query string
@@ -1492,11 +1490,11 @@ each home represents 10% of the universe, this makes the reach or cume
 
 ### real-time advertising
 
-In real-time advertising, ads are shown as the result of [real-time bidding](online-advertising-and-ad-tech-glossary.md#real-time-bidding-(RTB)) auctions. 
+In real-time advertising, ads are shown as the result of [real-time bidding](#real-time-bidding-rtb) auctions. 
 
 ### real-time auction
 
-See [real-time bidding](online-advertising-and-ad-tech-glossary.md#real-time-bidding-(RTB))</a>.
+See [real-time bidding](#real-time-bidding-rtb)</a>.
 
 ### real-time bidding (RTB)
 
@@ -1506,21 +1504,19 @@ individual ad impression to be put up for bid in real-time.
 ### recency capping
 
 A way to limit the showing of an ad over time. For example, an
-advertiser might want to avoid showing an ad to a specific [user ID](online-advertising-and-ad-tech-glossary.md#unique-user-id) more than once per hour.
+advertiser might want to avoid showing an ad to a specific [user ID](#unique-user-id) more than once per hour.
 
 ### retargeting
 
-[Targeting](online-advertising-and-ad-tech-glossary.md#ad-targeting) users who have performed an action in the
+[Targeting](#ad-targeting) users who have performed an action in the
 past, who may therefore be more likely to perform the same or a similar
-task in the future. For example, an advertiser might wish to put a <a
-href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-00000651"
-class="xref">segment pixel</a> on their website and then target users
+task in the future. For example, an advertiser might wish to put a [segment pixel](#segment-pixel) on their website and then target users
 who have visited the website in the past because they are more likely to
 make a purchase.
 
 ### remnant inventory
 
-Inventory sold after [premium inventory](online-advertising-and-ad-tech-glossary.md#premium-inventory) has been pre-sold by a direct
+Inventory sold after [premium inventory](#premium-inventory) has been pre-sold by a direct
 salesforce. Remnant inventory is sometimes synonymous with real-time
 inventory, and is often the target of programmatic buying. Because
 remnant has an unnecessarily negative connotation, other terms that have
@@ -1542,7 +1538,7 @@ creative or ad tag. 
 
 ### reserve creative
 
-See [default creative](online-advertising-and-ad-tech-glossary.md#default-creative/reserve-creative).
+See [default creative](#default-creativereserve-creative).
 
 ### reserve price
 
@@ -1550,7 +1546,7 @@ The lowest price at which a bidder or member will sell an impression.
 
 ### REST
 
-Representational State Transfer. A type of [API](online-advertising-and-ad-tech-glossary.md#api) protocol that operates on POST, GET, PUT, and
+Representational State Transfer. A type of [API](#api) protocol that operates on POST, GET, PUT, and
 DELETE commands.
 
 ### retargeting
@@ -1580,7 +1576,7 @@ examples of rich media creatives.  
 
 ### rising stars
 
-A set of interactive rich media creative types defined by the [Interactive Advertising Bureau (IAB)](online-advertising-and-ad-tech-glossary.md#interactive-advertising-bureau-iab). They include
+A set of interactive rich media creative types defined by the [Interactive Advertising Bureau (IAB)](#interactive-advertising-bureau-iab). They include
 Billboard, Filmstrip, Slider, Portrait, Pushdown, and Sidekick. There is
 also a set of Mobile Rising Star ad units, which include Filmstrip,
 Pull, Adhesion Banner, Full Page Flex, and Slider. See examples at
@@ -1609,7 +1605,7 @@ website.
 ### RPM
 
 Revenue per thousand, or mille impressions (mille = thousand in Latin).
-Related to the [CPM](online-advertising-and-ad-tech-glossary.md#bidding-strategy) [bidding strategy](online-advertising-and-ad-tech-glossary.md#bidding-strategy). 
+Related to the [CPM](#cpm) [bidding strategy](#bidding-strategy). 
 
 ### rotating creative
 
@@ -1617,11 +1613,11 @@ When a single ad tag is set to send one of several different creatives.
 Brand and other guidelines for creative acceptance may set limits on how
 much creatives may vary when associated to a single tag. For example,
 Xandr bans a single tag from showing ads for
-multiple brands. See also [dynamic creative](online-advertising-and-ad-tech-glossary.md#dynamic-creative). 
+multiple brands. See also [dynamic creative](#dynamic-creative). 
 
 ### RTB
 
-See [real-time bidding](online-advertising-and-ad-tech-glossary.md#real-time-bidding-rtb)
+See [real-time bidding](#real-time-bidding-rtb)
 
 ## S-Z
 
@@ -1648,11 +1644,11 @@ more similar attributes.
 
 ### segment data
 
-See [user data](online-advertising-and-ad-tech-glossary.md#user-data) and [contextual data](online-advertising-and-ad-tech-glossary.md#contextual-data).
+See [user data](#user-data) and [contextual data](#contextual-data).
 
 ### segment pixel
 
-A pixel that marks a user as belonging to a certain [segment](online-advertising-and-ad-tech-glossary.md#segment). For example, an advertiser might place a
+A pixel that marks a user as belonging to a certain [segment](#segment). For example, an advertiser might place a
 segment pixel on the homepage and mark all visitors to the homepage as
 "homepage visitors."
 
@@ -1664,7 +1660,7 @@ content. For example, if a website says "sunny weather," is it about
 great beach vacations, or is it about skin cancer, and do you want to
 advertise flights to Florida on it or not? However, the term is often
 used by different people to mean slightly different things, and is often
-used to be synonymous with [contextual](online-advertising-and-ad-tech-glossary.md#contextual-data) targeting.
+used to be synonymous with [contextual](#contextual-data) targeting.
 
 ### server-side ad insertion (SSAI)
 
@@ -1695,7 +1691,7 @@ seconds.
 
 ### SSP
 
-See [supply side platform (SSP)](online-advertising-and-ad-tech-glossary.md#supply-side-platform-(ssp)).
+See [supply side platform (SSP)](#supply-side-platform-ssp).
 
 ### station count
 
@@ -1731,7 +1727,7 @@ Binge.
 
 ### supply
 
-See [inventory](online-advertising-and-ad-tech-glossary.md#inventory/supply).
+See [inventory](#inventorysupply).
 
 ### supply side platform (SSP)
 
@@ -1742,31 +1738,29 @@ available demand sources and exchange inventory.
 
 A snippet of HTML, generally either JavaScript or an IFRAME, that tells
 the browser to request some content from an ad server.  Tag is often
-used to mean an <a
-href="online-advertising-and-ad-tech-glossary.md#ID-00000189__adtag"
-class="xref">ad tag</a> but may also be a creative tag or some other
+used to mean an [ad tag](#ad-tag) but may also be a creative tag or some other
 kind of tag. A tag is provided by an ad server or exchange and placed in
 the webpage by a publisher.
 
 ### tag container
 
 Many advertisers and their media buyers use a number of
-[tags](online-advertising-and-ad-tech-glossary.md#tag) for tracking impressions, clicks, conversions, and
+[tags](#tag) for tracking impressions, clicks, conversions, and
 other data. Some use tag containers to manage these disparate pixel tags
 and make it easier to change them via a single source. When a page
 loads, the tag container code displays the code for all tags stored
 within the container.
 
-**targeting**
+### targeting
 
-See [ad targeting](online-advertising-and-ad-tech-glossary.md#ad-targeting). 
+See [ad targeting](#ad-targeting). 
 
-**technology providers**
+### technology providers
 
 Third-party entities who may assist various parties involved in Internet
 advertising by providing access to bidders or other technology.
 
-**third party data**
+### third party data
 
 Third-party data is data that can be bought from outside sources that
 are not the original collectors of that data. Instead, large data
@@ -1780,12 +1774,12 @@ as 3rd-party data.
 Cookies with a different domain than the website a user is currently on.
 For example, if you visit [www.mysite.com](http://www.mysite.com/), an Xandr
 cookie with the domain ib.appnexus.com would be
-a third-party cookie. See also [first-party cookies](online-advertising-and-ad-tech-glossary.md#first-party-cookies).
+a third-party cookie. See also [first-party cookies](#first-party-cookies).
 
 ### timestamp
 
-The date and time that a specific event – such as a click or [conversion](online-advertising-and-ad-tech-glossary.md#conversion) – occurred. Useful in reporting functions
-and [attribution](online-advertising-and-ad-tech-glossary.md#attribution). For example, at
+The date and time that a specific event – such as a click or [conversion](#conversion) – occurred. Useful in reporting functions
+and [attribution](#attribution). For example, at
 Xandr, the timestamp format is YYYY-MM-DD
 HH:MM:SS. In this format, 12:15 PM on New Year's Day 2015 would be
 2015-01-01 12:15:00. 
@@ -1798,7 +1792,7 @@ the programmatic arms of holding companies. Independent trading desks,
 known as ITDs, are another kind of trading desk, and are usually
 outsourced managed services firms that run programmatic ad buys on
 behalf of
-[advertisers](online-advertising-and-ad-tech-glossary.md#advertiser) or agencies.
+[advertisers](#advertiser) or agencies.
 
 ### TV everywhere
 
@@ -1879,9 +1873,7 @@ is a specific user agent.
 Information about [users](#user) that makes them more valuable to advertisers.
 User data can include age, gender, location, intent to purchase,
 demographics, psychographics, wealth, past purchases, and more. User
-data is generally associated with a <a
-href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-000006d8"
-class="xref">UUID</a> found in a cookie rather than any [personally identifiable information](#personally-identifiable-information-pii). User data is
+data is generally associated with a [UUID](#uuid) found in a cookie rather than any [personally identifiable information](#personally-identifiable-information-pii). User data is
 distinct from [contextual data](#contextual-data). Often used interchangeably with
 segment data and audience data.
 

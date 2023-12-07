@@ -1,7 +1,7 @@
 ---
 title : Industry Reference -  Introduction to Video Inventory and Formats
 description : Learn about out-stream video, in-banner video, VAST, VPAID, MRAID and VMAP.     
-ms.date : 12/05/2023
+ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 

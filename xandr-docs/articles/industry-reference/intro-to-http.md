@@ -1,7 +1,7 @@
 ---
 title : Industry Reference - Intro to HTTP
 description : Learn the basics of HTTP and how it is important for online advertising
-ms.date : 12/5/2023
+ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
