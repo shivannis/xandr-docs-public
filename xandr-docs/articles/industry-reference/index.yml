@@ -47,7 +47,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Creatives overview
+          - text: Creatives Overview
             url: creatives.md
       - linkListType: how-to-guide
         links:
