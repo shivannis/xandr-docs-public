@@ -58,7 +58,7 @@ This type of buying means that ads can be targeted to specific user groups or se
 
 ### CPM
 
-CPM (cost per mille) is where the advertiser pays a flat amount per 1000 impressions. This is good for publishers as they will get paid for every impression and risk nothing on ad performance.
+CPM (cost per mile) is where the advertiser pays a flat amount per 1000 impressions. This is good for publishers as they will get paid for every impression and risk nothing on ad performance.
 
 - As a buyer, a $1 CPM price means that if my ad is shown 1000 times, I pay $1.
 - As a seller, a $1 CPM price means that I'll receive $1 for every thousand ads I display.
