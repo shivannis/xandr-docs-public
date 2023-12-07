@@ -67,37 +67,8 @@ additionalContent:
             text: Product Documentation
           - url: yield-analytics-ui/yield-analytics-8-79.md
             text: Latest Release Notes
-    - title: API References
-      items:
-        # Card
-        - title: Digital Platform API (Work in Progress)
-          links:
-            - text: Overview
-              url: getting-started/index.yml
-            - text: References
-              url: getting-started/index.yml
-        # Card
-        - title: Impression Bus API
-          links:
-            - text: Overview
-              url: impression-bus/index.yml
-            - text: References
-              url: impression-bus/index.yml
-        # Card
-        - title: Yield Analytics API
-          links:
-            - text: Overview
-              url: yield-analytics-api/index.yml
-            - text: References
-              url: yield-analytics-api/index.yml
-        # Card
-        - title: Release Notes
-          links:
-            - text: Digital Platform API Release Notes (Work in Progress)
-              url: getting-started/index.yml
-            - text: Impression Bus API Release Notes
-              url: bidders/xandr-bidder-release-notes.md
-    - title: Developer Documentation
+   
+    - title: Other Offerings and Platforms
       items:
         # Card
         - title: Bidder
@@ -131,3 +102,33 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Integration guide for various OTT hardware platforms, including CTV
           url: ott-ctv/index.yml
+   - title: API Reference Documentation
+      items:
+        # Card
+        - title: Digital Platform API (Work in Progress)
+          links:
+            - text: Overview
+              url: getting-started/index.yml
+            - text: References
+              url: getting-started/index.yml
+        # Card
+        - title: Impression Bus API
+          links:
+            - text: Overview
+              url: impression-bus/index.yml
+            - text: References
+              url: impression-bus/index.yml
+        # Card
+        - title: Yield Analytics API
+          links:
+            - text: Overview
+              url: yield-analytics-api/index.yml
+            - text: References
+              url: yield-analytics-api/index.yml
+        # Card
+        - title: Release Notes
+          links:
+            - text: Digital Platform API Release Notes (Work in Progress)
+              url: getting-started/index.yml
+            - text: Impression Bus API Release Notes
+              url: bidders/xandr-bidder-release-notes.md
