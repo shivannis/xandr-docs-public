@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - Use IAB's HTML5 clickTag Standard on Xandr
 description: The article outlines the utilization of the IAB's clickTag standard in HTML5, enabling click tracking and linking the ad's landing page to the specified URL.
-ms.date: 12/07/2023
+ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
@@ -22,7 +22,7 @@ You will require a text editor to complete the procedure below. If you do not ha
 Add the Xandr HTML5 Library inside the `<head>` tag in the **`index.html`** file, by adding the
 following `<script>` tag:
 
-`<script type="text/javascript" src="https://acdn.``adnxs``.com/html5-lib/1.4.1/``appnexus``-html5-lib.min.js"></script>`
+`<script type="text/javascript" src="https://acdn.adnxs.com/html5-lib/1.4.1/appnexus-html5-lib.min.js"></script>`
 
 > [!TIP]
 > Use https to ensure the creative can serve on secure inventory.

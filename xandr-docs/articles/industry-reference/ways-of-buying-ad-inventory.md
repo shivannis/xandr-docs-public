@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - Ways of Buying Ad Inventory
 description: The articles explains the industry reference, various ways of buying as inventory, and how advertisers acquire publisher inventory.
-ms.date: 12/07/2023
+ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 

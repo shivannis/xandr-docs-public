@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - Publisher Best Practices for The Trade Desk
 description: The article outlines best practices for publishers on The Trade Desk platform.
-ms.date: 12/07/2023
+ms.date: 10/28/2023
 ms.custom : industry-reference
 ---
 

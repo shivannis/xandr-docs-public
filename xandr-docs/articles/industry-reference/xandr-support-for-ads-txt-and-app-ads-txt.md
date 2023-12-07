@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - Xandr Support for Ads.txt and App-Ads.txt
 description: The article details Xandr's support for Ads.txt and App-Ads.txt.
-ms.date: 12/07/2023
+ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 

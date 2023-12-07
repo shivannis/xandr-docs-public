@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - TCP-IP
 description: The articles cover the exchange of HTTP requests and responses between browsers and clients. I'll illustrate this process by comparing an HTTP response to receiving a properly packaged item in the mail, using the example of ordering cheese online.
-ms.date: 12/07/2023
+ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
