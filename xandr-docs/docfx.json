@@ -63,7 +63,8 @@
         "articles/industry-reference/*.md":"microsoft-monetize",
         "articles/customer-support/*.md":"microsoft-monetize",
         "articles/digital-platform-api/*.md":"microsoft-monetize",
-        "articles/monetize/*.md":"microsoft-monetize"
+        "articles/monetize/*.md":"microsoft-monetize",
+        "articles/log-level-data/*.md":"microsoft-monetize"
         
       },
       "author": {
