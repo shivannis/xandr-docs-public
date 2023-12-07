@@ -61,13 +61,6 @@ additionalContent:
           - url: curate/release-notes-curate.md
             text: Release Notes
       # Card
-      - title: Bidder
-        links:
-          - url: bidders/index.yml
-            text: Product Documentation
-          - url: bidders/xandr-bidder-release-notes.md
-            text: Release Notes
-      # Card
       - title: Yield Analytics UI
         links:
           - url: yield-analytics-ui/index.yml
@@ -106,6 +99,10 @@ additionalContent:
               url: bidders/xandr-bidder-release-notes.md
     - title: Developer Documentation
       items:
+        # Card
+        - title: Bidder
+          summary: Reference documentation of Bidder - the decisioning brain that calculates real-time auction bids
+          url: bidders/index.yml
         # Card
         - title: Seller Tag
           summary: Reference documentation of Seller Tag - a lightweight JavaScript SDK
