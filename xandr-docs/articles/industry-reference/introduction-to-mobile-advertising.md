@@ -1,12 +1,12 @@
 ---
-title : Introduction to Mobile Advertising
+title : Industry Reference - Introduction to Mobile Advertising
 description : Learn how advertising works on mobile devices. 
 ms.date : 12/05/2023
 ms.custom : industry-reference
 ---
 
 
-# Introduction to mobile advertising
+# Industry Reference - Introduction to mobile advertising
 
 > [!TIP]
 > For an introduction to the main concepts involved in online advertising, see [Introduction to Ad Serving](introduction-to-ad-serving.md).
@@ -19,9 +19,7 @@ interested in a more technical explanation,
 Xandr also provides a public
 [MRAID and Mobile Video Tutorial](mraid-and-mobile-video-tutorial.md) intended for audiences who need to work with our mobile offerings.
 
-Mobile advertising is very similar to <a
-href="online-advertising-and-ad-tech-glossary.md#ID-00000189__ID-0000039b"
-class="xref">web display advertising</a>, with a few exceptions, which
+Mobile advertising is very similar to [web display advertising](online-advertising-and-ad-tech-glossary.md#display-advertising), with a few exceptions, which
 we'll discuss below.
 
 ## Types of mobile advertising
@@ -52,7 +50,7 @@ advertising and provide users the ability to opt out of identification
 by resetting their identifiers.  Identifiers are also reset if the
 operating system is reinstalled.
 
-Note that the device ID cannot be linked to [personally identifiable information (PII)](online-advertising-and-ad-tech-glossary.md#personally-identifiable-information-(PII)).
+Note that the device ID cannot be linked to [personally identifiable information (PII)](online-advertising-and-ad-tech-glossary.md#personally-identifiable-information-pii).
 
 In addition to the typical kinds of segment or browser targeting, mobile
 devices can be targeted by:

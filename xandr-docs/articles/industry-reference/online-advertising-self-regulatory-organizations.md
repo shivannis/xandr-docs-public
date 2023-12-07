@@ -1,12 +1,12 @@
 ---
-title : Online Advertising Self-Regulatory Organizations
+title :  Industry Reference - Online Advertising Self-Regulatory Organizations
 description : Online advertising self-regulatory organizations are independent bodies
 ms.date : 12/05/2023
 ms.custom : industry-reference
 ---
 
 
-# Online advertising self-regulatory organizations
+#  Industry Reference - Online advertising self-regulatory organizations
 
 Online advertising self-regulatory organizations are independent bodies
 of experts and advertising technology professionals that help to

@@ -1,12 +1,12 @@
 ---
-title : Introduction to Viewability
+title : Industry Reference - Introduction to Viewability
 description : Learn about viewability and how it can be measured in Digital Media.
 ms.date : 12/05/2023
 ms.custom : industry-reference
 ---
 
 
-# Introduction to viewability
+# Industry Reference -  Introduction to viewability
 
 ## What is Viewability and Why is it Important?
 
@@ -165,6 +165,6 @@ It is also possible for a media buyer to:
 
 - Generate reports that provide viewability data by domains or by
   placements, allowing for comparison of different inventory sources.
-- Choose to exclude (black-list), or include (white-list), a selection
+- Choose to exclude (blocklist), or include (allowlist), a selection
   of domains or placements, enabling control over the viewability of
   inventory purchased.  

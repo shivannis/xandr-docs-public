@@ -1,12 +1,12 @@
 ---
-title : Introduction to Ad Serving
+title : Industry Reference - Introduction to Ad Serving
 description : Learn what Ad Serving is and how it works.
 ms.date : 12/05/2023
 ms.custom : industry-reference
 ---
 
 
-# Introduction to Ad serving
+# Industry Reference - Introduction to Ad serving
 
 In traditional offline advertising, a company creates an ad campaign and
 then purchases advertising slots using different kinds of media, for
@@ -162,8 +162,7 @@ the hops that go into a single impression event, please see [Ad Tags](ad-tags.md
 
 - [Ad Tags](ad-tags.md)
 - [Creatives](creatives.md)
-- []()[The race to the single platform has
-  begun](https://digiday.com/sponsored/appnexusbcs-005-131729/). Xandr Senior Vice President of
+- [The race to the single platform has begun](https://digiday.com/sponsored/appnexusbcs-005-131729/). Xandr Senior Vice President of
   Corporate Marketing wrote this in 2015 with a focus on the ad tech
   ecosystem and its different participants.
 - [A blog post on the technical side of ad
