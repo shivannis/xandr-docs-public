@@ -1,0 +1,33 @@
+### YamlMime:Landing
+
+title: Customer Support
+summary: Welcome to Customer Support Documentation! All the information you need about Xandr Customer Support is right here. You can simply search for what you need, or click on one of the tiles below.
+metadata:
+  title: Customer Support
+  description: Discover various reference docs for Xandr Customer Support
+  ms.topic: landing-page
+  ms.author: rupambaruah
+  ms.service: app-service
+  ms.date: 12/07/2023
+
+landingContent:
+  - title: Let's Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Client Services
+            url: xcs-xandr-client-services.md
+          - text: Email Communications
+            url: xcs-xandr-email-communications.md
+          - text: Customer Support Portal Guide
+            url: xcs-customer-support-portal-guide.md
+  - title: Customer Support Portal
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Searching the Knowledge Base
+            url: xcs-searching-the-knowledge-base.md
+          - text: Opening a New Case
+            url: xcs-opening-a-new-case.md
+          - text: Reporting Outages
+            url: xcs-reporting-outages.md
