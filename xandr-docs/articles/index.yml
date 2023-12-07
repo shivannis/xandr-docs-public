@@ -102,7 +102,7 @@ additionalContent:
         - title: OTT and CTV Video Integrations
           summary: Integration guide for various OTT hardware platforms, including CTV
           url: ott-ctv/index.yml
-   - title: API Reference Documentation
+    - title: API Reference Documentation
       items:
         # Card
         - title: Digital Platform API (Work in Progress)
