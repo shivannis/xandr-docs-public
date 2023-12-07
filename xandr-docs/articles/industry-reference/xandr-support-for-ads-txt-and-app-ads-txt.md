@@ -1,7 +1,7 @@
 ---
 title: Industry Reference - Xandr Support for Ads.txt and App-Ads.txt
 description: The article details Xandr's support for Ads.txt and App-Ads.txt.
-ms.date: 10/28/2023
+ms.date: 12/07/2023
 ms.custom: industry-reference
 ---
 
@@ -76,7 +76,7 @@ The first line of this example specifies that the publisher is using Xandr (xan
 
 **Certification ID (optional)**
 
-There is a fourth, optional field known as a a certification authority identifier that sellers may choose to include in ads.txt files. Sellers add this unique ID as an additional measure to demonstrate validity and
+There is a fourth, optional field known as a certification authority identifier that sellers may choose to include in ads.txt files. Sellers add this unique ID as an additional measure to demonstrate validity and
 trustworthiness of the advertising platform being used. Xandr has an identifier issued by the [Trustworthy Accountability Group](https://tagtoday.net/aboutus/)(TAG).
 
 To include the Xandr's TAG-ID, add the ID f5ab79cb980f11d1 to the end of each Xandr line in your ads.txt file:
@@ -105,13 +105,14 @@ Publishers on the our platform should follow these steps to create and implemen
 
     `appnexus``.com, <publisher member ID>, DIRECT`
 
-> [!NOTE]
-> Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen.
->
-> :::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
->
-> Be sure to note that you need your member ID, not your publisher ID.
-> For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
+   > [!NOTE]
+   >
+   > Sellers can find their member ID in Console by navigating to the **Monetization Dashboard** and looking for the ID at the bottom of the screen.
+   >
+   > :::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
+   >
+   > Be sure to note that you need your member ID, not your publisher ID.
+   > For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
 
 5. For publishers working with partners who have Xandr seats, create lines that look like this, with one partner per line:
 
