@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # Log level data feeds
 
 > [!IMPORTANT]
-> LLD feeds are not available via the API.
+> Log Level Data (LLD) feeds are not available via the API.
 
 Log Level Data (LLD) feeds contain event-level data that enables you to build custom reporting and conduct in-depth analysis. Typically, log-level data is used for reporting on dimensions not available in the Xandr UI/API reports. It can also be used for any analysis which requires event-level granularity, such as custom conversion attribution or identifying pools of high-value users.
 
