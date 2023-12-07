@@ -5,9 +5,9 @@ ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Use IAB's HTML5 clickTag standard on Xandr
+# Industry Reference - Use IAB's HTML5 `clickTag` standard on Xandr
 
-Follow these instructions to use the IAB's clickTag standard in HTML5 creatives hosted with Xandr. This allows
+Follow these instructions to use the IAB's `clickTag` standard in HTML5 creatives hosted with Xandr. This allows
 Xandr to track clicks and set the ad's landing page to the URL provided in.
 
 ## Prerequisites
@@ -29,7 +29,7 @@ following `<script>` tag:
 
 ## Step 2: Add `APPNEXUS.getClickTag()` to a clickable element
 
-Wrap the banner markup in an HTML element that opens a new window and uses the `APPNEXUS.getClickTag()` function. This will retrieve the value of the clickTag parameter set in the ad URL. The example below uses the
+Wrap the banner markup in an HTML element that opens a new window and uses the `APPNEXUS.getClickTag()` function. This will retrieve the value of the `clickTag` parameter set in the ad URL. The example below uses the
 \<a\> anchor element with the `href` attribute set to `javascript:void(0)` and an `onClick` attribute set to
  `window.open(APPNEXUS.getClickTag(), '_blank');`.
 
@@ -52,7 +52,7 @@ Save your work. Open the **`index.html`** file in your web browser. Add `?clickT
 `file:///Users/username/Desktop/ad.html?clickTag=http://www.xandr.com`
 
 Refresh the page and click on the ad. A new window with Xandr' website should open in your browser. When
-the ad is served Xandr sets the value of clickTag to Xandr' click tracker and a redirect to the landing page URL provided for the creative in.
+the ad is served Xandr sets the value of `clickTag` to Xandr' click tracker and a redirect to the landing page URL provided for the creative in.
 
 Save your work again.
 
@@ -66,9 +66,9 @@ You are now ready to upload your HTML5 creative onto the Xandr platform.
 
 ## Additional option
 
-Xandr follows [IAB HTML5 guidance](http://www.iab.com/guidelines/html5-for-digital-advertising-guidance-for-ad-designers-creative-technologists/) for clickTag (Section 3.10.1). The ad URL returned to a publisher's page includes a clickTag parameter in the query string. Ad developers who prefer not to use Xandr' `getClickTag()` convenience can access the clickTag parameter's value with their own Javascript. In this case, the ad does not need to load the Xandr HTML5 Library.
+Xandr follows [IAB HTML5 guidance](http://www.iab.com/guidelines/html5-for-digital-advertising-guidance-for-ad-designers-creative-technologists/) for `clickTag` (Section 3.10.1). The ad URL returned to a publisher's page includes a `clickTag` parameter in the query string. Ad developers who prefer not to use Xandr' `getClickTag()` convenience can access the `clickTag` parameter's value with their own Javascript. In this case, the ad does not need to load the Xandr HTML5 Library.
 
-**Example Ad URL with clickTag parameter**
+**Example Ad URL with `clickTag` parameter**
 `https://vcdn.``adnxs``.com/.../index.html?clickTag=http%3A%2F%2Fnym1-ib.``adnxs``.com%2Fclick%3FAA...gwJUgAAAAA.%2Fbn%3D0%2Fclickenc%3Dhttp%253A%252F%252Fwww.``appnexus``.com%252F`
 
 ## Related topics

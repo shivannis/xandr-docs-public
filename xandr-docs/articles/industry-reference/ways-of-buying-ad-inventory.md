@@ -69,8 +69,7 @@ CPM (cost per mile) is where the advertiser pays a flat amount per 1000 impressi
 
 ### CPC
 
-CPC (cost per click) is a performance-based model, with the advertiser paying a flat amount per click on an ad. This means that a publisher gets paid only when a user clicks on an ad, regardless of how many
-impressions were served before the click occurred.
+CPC (cost per click) is a performance-based model, with the advertiser paying a flat amount per click on an ad. This means that a publisher gets paid only when a user clicks on an ad, regardless of how many impressions were served before the click occurred.
 
 ### Dynamic CPM
 

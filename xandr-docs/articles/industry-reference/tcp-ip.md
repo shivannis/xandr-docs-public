@@ -1,6 +1,6 @@
 ---
 title: Industry Reference - TCP-IP
-description: The articles cover the exchange of HTTP requests and responses between browsers and clients. I'll illustrate this process by comparing an HTTP response to receiving a properly packaged item in the mail, using the example of ordering cheese online.
+description: The articles cover the exchange of HTTP requests and responses between browsers and clients. The  process is illustrated by comparing an HTTP response to receiving a properly packaged item in the mail, using the example of ordering cheese online.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
@@ -15,7 +15,7 @@ During delivery, the post office first reads the zip code and sends it to the lo
 because it says your apartment number and your name, not your roommate's name. Then you open the box, pull the cheese out, unwrap the cheese and enjoy a slice. Without the labeling and packaging the cheese would not
 have found its way to you, clean and edible.
 
-:::image type="content" source="media/tcp-ip.png" alt-text="The screenshot demonstrates the process of opening the box, extracting the cheese, unwrapping it, and savoring a slice that emphasizes that proper labeling and packaging are crucial for ensuring the cleanliness and edibility of the delivered cheese..":::
+:::image type="content" source="media/tcp-ip.png" alt-text="The screenshot that demonstrates the process of opening the box, extracting the cheese, unwrapping it, and savoring a slice that emphasizes that proper labeling and packaging are crucial for ensuring the cleanliness and edibility of the delivered cheese..":::
 
 ## TCP/IP (our wiki software does not allow "/" in page titles)
 
@@ -24,7 +24,7 @@ in the following "layers."
 
 **Application Layer:** In our use case, the application would be HTTP, or the cheese itself. This can be any application, such as FTP or Telnet. This is the request/response.
 
-**Transport Layer:** Transmission Control Protocol (TCP) is used almost exclusively to transfer HTTP messages across the internet. TCP is like the wrapping that ensures the cheese gets to you clean and in one whole
+**Transport Layer:** **Transmission Control Protocol** (TCP) is used almost exclusively to transfer HTTP messages across the internet. TCP is like the wrapping that ensures the cheese gets to you clean and in one whole
 piece. TCP ensures all HTTP packets are delivered and put in order.
 
 **Network Layer:** This Layer is like the mailing address on the cheese package. This layer is referred to as the Internet Protocol Layer, which allows the request and response to know which server and port to

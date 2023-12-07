@@ -15,7 +15,7 @@ Xandr takes these concerns very seriously, and ads.txt and app-ads.txt are some 
 
 Ads.txt and App-Ads.txt (also known as [Authorized Digital Sellers](https://iabtechlab.com/ads-txt/) or Application Authorized Digital Sellers)  are an initiative put forth by the [IAB Technology Laboratory](https://iabtechlab.com/) as a way to help publishers ensure inventory is sold only through authorized dealers and partners. The goal of ads.txt and app-ads.txt is to give publishers more control over who sells their inventory and help prevent counterfeiting, while giving buyers confidence that they're purchasing approved inventory.
 
-Ads.txt files are used to declare authorized sellers of display inventory on domains. app-ads.txt files are used to declare authorized sellers of application inventory.
+Ads.txt files are used to declare authorized sellers of display inventory on domains. App-Ads.txt files are used to declare authorized sellers of application inventory.
 
 > [!NOTE]
 > For additional details about the IAB's work on this initiative, see [About Ads.txt](https://iabtechlab.com/ads-txt-about/) on the IAB website.
