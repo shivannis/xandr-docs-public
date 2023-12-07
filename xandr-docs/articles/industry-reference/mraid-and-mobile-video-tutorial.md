@@ -6,7 +6,7 @@ ms.custom : industry-reference
 ---
 
 
-# Industry Reference - MRAID and mobile video tutorial
+# Industry Reference - MRAID and mobile video tutorial 
 
 This page offers an introduction to MRAID and mobile video. It attempts
 to answer questions such as:
