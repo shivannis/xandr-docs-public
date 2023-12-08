@@ -1,84 +1,53 @@
 ---
-Title : Integrating the Xandr HTML5 Library with Ads Created in Adobe Edge
-Description : Follow these instructions to modify an ad created in Adobe Edge such
-ms.date : 10/28/2023
-ms.custom : industry-reference
-that it works seamlessly with the Xandr HTML5
-Library. This is required to properly track clicks.
+title: Integrating the Xandr HTML5 Library with Ads Created in Adobe Edge
+description: In this article, find instructions on how to modify an ad created in Adobe Edge to work with the Xandr HTML5 Library.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
+# Integrating the Xandr HTML5 Library with ads created in Adobe Edge
 
-# Integrating the Xandr HTML5 Library with Ads Created in Adobe Edge
+Follow these instructions to modify an ad created in Adobe Edge such that it works seamlessly with the Xandr HTML5 Library. This is required to properly track clicks.
 
+## Banner ads
 
+### Prerequisites
 
-Follow these instructions to modify an ad created in Adobe Edge such
-that it works seamlessly with the Xandr HTML5
-Library. This is required to properly track clicks.
+You will require a text editor to complete the procedure below. If you do not have one, we recommend [Sublime Text](http://www.sublimetext.com/2).
 
+### Step 1: Locate the correct files to edit
 
-
-## Banner Ads
-
-**Prerequisites**
-
-You will require a text editor to complete the procedure below. If you
-do not have one, we recommend
-<a href="http://www.sublimetext.com/2" class="xref"
-target="_blank">Sublime Text</a>.
-
-**Step 1: Locate the correct files to edit**
-
-Before you begin, locate the folder containing the ad created in Adobe
-Edge. If the ad is located in a `.zip` file, you must unzip the file to
-reveal a folder containing its various assets.
+Before you begin, locate the folder containing the ad created in Adobe Edge. If the ad is located in a `.zip` file, you must unzip the file to reveal a folder containing its various assets.
 
 Then, locate the following files:
 
-- `index.html` .
-- a file with the extension  `.js`  at the root level of the ad folder,
-  for example,  `300x250edge.js`   or  `edgeActions.js`
+- `index.html`
+- a file with the extension `.js` at the root level of the ad folder, for example, `300x250edge.js` or `edgeActions.js`
 
-These files are where you will make all of the necessary changes in the
-steps below.
+These files are where you will make all of the necessary changes in the steps below.
 
-**Step 2: Add the Xandr HTML5 Library**
+### Step 2: Add the Xandr HTML5 Library
 
-Ensure that the actual Xandr HTML5 Library is
-linked to inside  `index.html` . The library can be found here: <a
-href="https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js"
-class="xref" target="_blank">https://acdn.<span
-class="ph">adnxs.com/html5-lib/1.3.0/<span
-class="ph">appnexus-html5-lib.min.js</a>
+Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`. The library can be found [here](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js).
 
+Link the library inside the `<head>`tag in the `index.html` file, by adding the following `<script>` tag:
 
-
-Link the library inside the `<head>`tag in the  `index.html`  file, by
-adding the following `<script>` tag:
-
-``` pre
+```
 <script type="text/javascript" src="https://acdn..com/html5-lib/1.3.0/-html5-lib.min.js"></script>
 ```
 
+> [!TIP]
+> Use `https` to ensure the creative can serve on secure inventory.
 
+### Step 3: Add click event
 
+For this step, you make all your changes to the `.js` file.
 
+#### Without existing click event
 
-<b>Tip:</b> Use https to ensure the creative
-can serve on secure inventory.
+You may see an Adobe Edge JavaScript function that handles events with no existing click events. It will look similar to:
 
-
-
-**Step 3: Add Click Event**
-
-For this step, you make all your changes to the **.js** file.
-
-**Without Existing Click Event**
-
-You may see an Adobe Edge JavaScript function that handles events with
-no existing click events. It will look similar to:
-
-``` pre
+```
 //Edge symbol: 'stage'
 (function(symbolName){
   Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",16750,function(sym,e){
@@ -88,19 +57,17 @@ no existing click events. It will look similar to:
 })("stage");
 ```
 
-In order to support the click event using
-the `APPNEXUS.click()` function, you must add the following function: 
+In order to support the click event using the `APPNEXUS.click()` function, you must add the following function:
 
-``` pre
+```
 Symbol.bindElementAction(compId,symbolName,"${Stage}","click",function(sym,e){
         APPNEXUS.click();
 });
 ```
 
-Once the click event has been added, you will have a function that looks
-similar to:
+Once the click event has been added, you will have a function that looks similar to:
 
-``` pre
+```
 //Edge symbol: 'stage'
 (function(symbolName){
   Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",16750,function(sym,e){
@@ -113,12 +80,11 @@ similar to:
 })("stage");
 ```
 
-**With Existing Click Event**
+#### With existing click event
 
-You may see an Adobe Edge JavaScript function that handles events with
-an existing click event. It will look similar to:
+You may see an Adobe Edge JavaScript function that handles events with an existing click event. It will look similar to:
 
-``` pre
+```
 //Edge symbol: 'stage'
 (function(symbolName){
  Symbol.bindElementAction(compId, symbolName, "${Stage}", "click", function(sym, e) {
@@ -128,16 +94,11 @@ an existing click event. It will look similar to:
 })("stage");
 ```
 
-In order to support the click event using
-the `APPNEXUS.click()` function, you must replace the hard-coded URL, 
-<a href="https://xandr.com" class="xref" target="_blank"><code
-class="ph codeph">https://xandr.com</code></a>  to add the
-function  `APPNEXUS.getClickTag()`.
+In order to support the click event using the `APPNEXUS.click()` function, you must replace the hard-coded URL, `https://xandr.com` to add the function `APPNEXUS.getClickTag()`.
 
-Once you have replaced the hard-coded URL, you will have a function that
-looks like this:
+Once you have replaced the hard-coded URL, you will have a function that looks like this:
 
-``` pre
+```
 //Edge symbol: 'stage'
 (function(symbolName){
  Symbol.bindElementAction(compId, symbolName, "${Stage}", "click", function(sym, e) {
@@ -147,67 +108,24 @@ looks like this:
 })("stage");
 ```
 
-**Step 4. Save changes**
+### Step 4. Save changes
 
 Save the changes.
 
-**Step 5. Re-zip creative contents**
+### Step 5. Re-zip creative contents
 
-Select all of the contents within the folder created when you unzipped
-the file. Compress the contents into a new `.zip` file.
+Select all of the contents within the folder created when you unzipped the file. Compress the contents into a new `.zip` file.
 
-![Rezip Creatives](media/rezip.png)
+:::image type="content" source="media/rezip.png" alt-text="A screenshot that shows how to zip files.":::
 
-You are now ready to upload your HTML5 creatives onto the
-AppNexus platform. 
+You are now ready to upload your HTML5 creatives onto the AppNexus platform.
 
-**IAB Validator (Optional)**
+### IAB validator (optional)
 
-If you would like to verify how this creative measures up to IAB
-guidelines, you can do so using the <a
-href="https://www.iab.com/news/iab-tech-lab-releases-html5-ad-validator/"
-class="xref" target="_blank">HTML5 Ad Validator</a>tool.
+If you would like to verify how this creative measures up to IAB guidelines, you can do so using the [HTML5 Ad Validator](https://www.iab.com/news/iab-tech-lab-releases-html5-ad-validator/) tool.
 
+## Related topics
 
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="integrating-the-xandr-html5-library-with-ads-created-in-google-web-designer.md"
-  class="xref" target="_blank">Integrating the Xandr HTML5 Library with
-  Ads Created in Google Web Designer</a>
-
-- <a
-  href="https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md"
-  class="xref" target="_blank">Integrating the AppNexus HTML5 Library with
-  Manually Created HTML5 Ads</a>
-
-- <a
-  href="use-iab-s-html5-clicktag-standard-on-xandr.md"
-  class="xref" target="_blank">Use IAB's HTML5 clickTag Standard on
-  Xandr</a>
-
-
-
-
-
-
-
-<div class="linklist relinfo">
-
-**Related information**  
-
-- <a
-  href="integrating-the-xandr-html5-library-with-ads-created-in-google-web-designer.md"
-  class="link">Integrating the Xandr HTML5 Library with Ads Created in
-  Google Web Designer</a>
-- <a href="use-iab-s-html5-clicktag-standard-on-xandr.md"
-  class="link">Use IAB's HTML5 clickTag Standard on Xandr</a>
-
-
-
-
+- [Integrating the Xandr HTML5 Library with Ads Created in Google Web Designer](integrating-the-xandr-html5-library-with-ads-created-in-google-web-designer.md)
+- [Integrating the AppNexus HTML5 Library with Manually Created HTML5 Ads](https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md)
+- [Use IAB's HTML5 clickTag Standard on Xandr](use-iab-s-html5-clicktag-standard-on-xandr.md)
