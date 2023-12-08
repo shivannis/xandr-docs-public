@@ -1,78 +1,46 @@
 ---
-Title : Integrating the Xandr HTML5 Library with Ads Created in Google Web Designer
-Description : Follow these instructions to modify an ad created in Google Web Designer
-ms.date : 10/28/2023
-ms.custom : industry-reference
-such that it works seamlessly with the Xandr
-HTML5 Library. This is required to properly track clicks.
+title: Integrating the Xandr HTML5 Library with Ads Created in Google Web Designer
+description: In this article, find instructions on how to modify an ad created in Google Web Designer to work with the Xandr HTML5 Library. 
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
+# Integrating the Xandr HTML5 Library with ads created in Google Web Designer
 
-# Integrating the Xandr HTML5 Library with Ads Created in Google Web Designer
+Follow these instructions to modify an ad created in Google Web Designer such that it works seamlessly with the Xandr HTML5 Library. This is required to properly track clicks.
 
+## Banner ads
 
+### Prerequisites
 
-Follow these instructions to modify an ad created in Google Web Designer
-such that it works seamlessly with the Xandr
-HTML5 Library. This is required to properly track clicks.
+You will require a text editor to complete the procedure below. If you do not have one, we recommend [Sublime Text](http://www.sublimetext.com/2).
 
+### Step 1: Locate the `index.html` file
 
+Before you begin, locate the folder containing the ad created in Google Web Designer. If the ad is located in a `.zip` file, you must unzip the file to reveal a folder containing its various assets.
 
-## Banner Ads
+Then, locate and open the file named `index.html`. This file is where you will make all of the necessary changes in the steps below.
 
-**Prerequisites**
+### Step 2: Add the Xandr HTML5 Library
 
-You will require a text editor to complete the procedure below. If you
-do not have one, we recommend
-<a href="http://www.sublimetext.com/2" class="xref"
-target="_blank">Sublime Text</a>.
+Ensure that the actual Xandr HTML5 Library is linked to inside `index.html`. The library can be found [here](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js).
 
-**Step 1: Locate the `index.html` file**
+Link the library inside the `<head>` tag in the `index.html` file, by adding the following `<script>` tag:
 
-Before you begin, locate the folder containing the ad created in Google
-Web Designer. If the ad is located in a  `.zip`  file, you must unzip
-the file to reveal a folder containing its various assets.
-
-Then, locate and open the file named  `index.html` . This file is where
-you will make all of the necessary changes in the steps below.
-
-**Step 2: Add the Xandr HTML5 Library**
-
-Ensure that the actual Xandr HTML5 Library is
-linked to inside  `index.html` . The library can be found here:  <a
-href="https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js"
-class="xref" target="_blank">https://acdn.<span
-class="ph">adnxs.com/html5-lib/1.3.0/<span
-class="ph">appnexus-html5-lib.min.js</a>
-
-Link the library inside the  `<head> ` tag in the  `index.html`  file,
-by adding the following  `<script>`  tag:
-
-
-
-``` pre
+```
 <script type="text/javascript" src="https://acdn..com/html5-lib/1.3.0/-html5-lib.min.js"></script>
 ```
 
+> [!TIP]
+> Use `https` to ensure the creative can serve on secure inventory.
 
+### Step 3: Replace hard-coded URL with `APPNEXUS.getClickTag()`
 
+You could have an ad created in Google Web Designer that has a hard-coded URL embedded.
 
+Search for `gwd-events="handlers"` in the `index.html` file to find hard-coded URLs. If they are present, you will find a block of code that looks like this:
 
-<b>Tip:</b> Use https to ensure the creative
-can serve on secure inventory.
-
-
-
-**Step 3: Replace hard-coded URL with `APPNEXUS.getClickTag()`**
-
-You could have an ad created in Google Web Designer that has a
-hard-coded URL embedded. 
-
-Search for  `gwd-events="handlers"`  in the `index.html`  file to find
-hard-coded URLs. If they are present, you will find a block of code that
-looks like this:
-
-``` pre
+```
 <script type="text/javascript" gwd-events="handlers">
         gwd.auto_BodyClick = function(event) {
                 // GWD Predefined Function
@@ -81,25 +49,12 @@ looks like this:
 </script>
 ```
 
+> [!NOTE]
+> The hardcoded URL (in this case, `https://xandr.com/`) will vary based on the specific ad you are working with.
 
+Replace `"https://xandr.com"` (including the quotation marks) with `APPNEXUS.getClickTag().` The function should look something like this:
 
-
-
-<b>Tip:</b> The hardcoded URL (in this case, 
-<a href="https://xandr.com/" class="xref" target="_blank"><code
-class="ph codeph">https://xandr.com/</code></a> ) will vary based on the
-specific ad you are working with.
-
-
-
-Replace `"`<a href="https://xandr.com" class="xref" target="_blank"><code
-class="ph codeph">https://xandr.com</code></a>`"` (including the
-quotation marks) with  `APPNEXUS.getClickTag().` The function should
-look something like this:
-
-
-
-``` pre
+```
 <script type="text/javascript" gwd-events="handlers">
         gwd.auto_BodyClick = function(event) {
                 // GWD Predefined Function
@@ -108,84 +63,29 @@ look something like this:
 </script>
 ```
 
-**Step 4. Save changes**
+### Step 4. Save changes
 
-**Step 5. Re-zip creative contents**
+Save the changes.
 
-Select all of the contents within the folder created when you unzipped
-the file. Compress the contents into a new `.zip` file. 
+### Step 5. Re-zip creative contents
 
-![Rezip Creatives](media/rezip-creatives.png)
+Select all of the contents within the folder created when you unzipped the file. Compress the contents into a new `.zip` file.
 
+:::image type="content" source="media/rezip-creatives.png" alt-text="A screenshot that shows how to compress files.":::
 
+You are now ready to upload your HTML5 creative onto the Xandr platform.
 
-You are now ready to upload your HTML5 creative onto the
-Xandr platform. 
+> [!NOTE]
+> For information on using Google Web Designer to build HTML5 creative that will properly track clicks in Xandr, go to: [Build an HTML5 Xandr Creative in Google Web Designer](build-an-html5-xandr-creative-in-google-web-designer.md).
+>
+> If you are facing any build related issue, you can raise a ticket on the [Xandr Customer Support Portal](https://help.xandr.com/s/login/) or get in touch with your Xandr Account Representative.
 
+### IAB validator (optional)
 
-<b>Note:</b> For information on using Google
-Web Designer to build HTML5 creative that will properly track clicks in
-Xandr, go to: <a
-href="build-an-html5-xandr-creative-in-google-web-designer.md"
-class="xref" target="_blank">Build an HTML5 Xandr Creative in Google Web
-Designer</a>.
+If you would like to verify how this creative measures up to IAB guidelines, you can do so using the [HTML5 Ad Validator](https://www.iab.com/news/iab-tech-lab-releases-html5-ad-validator/) tool.
 
-If you are facing any build related issue, you can raise a ticket in
-<a href="https://help.xandr.com/s/login/" class="xref"
-target="_blank">Xandr Customer Support Portal</a> or get in touch with
-your Xandr Account Representative.
+## Related topics
 
-
-
-
-
-**IAB Validator (Optional)**
-
-If you would like to verify how this creative measures up to IAB
-guidelines, you can do so using the 
-
-<a
-href="https://www.iab.com/news/iab-tech-lab-releases-html5-ad-validator/"
-class="xref" target="_blank">HTML5 Ad Validator</a> tool.
-
-
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="integrating-the-xandr-html5-library-with-ads-created-in-adobe-edge.md"
-  class="xref" target="_blank">Integrate the Xandr HTML5 Library with Ads
-  Created in Adobe Edge</a>
-- <a
-  href="https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md"
-  class="xref" target="_blank">Integrating the Xandr HTML5 Library with
-  Manually Created HTML5 Ads</a>
-- <a
-  href="use-iab-s-html5-clicktag-standard-on-xandr.md"
-  class="xref" target="_blank">Use IAB's HTML5 clickTag Standard on
-  Xandr</a>
-
-
-
-
-
-
-
-<div class="linklist relinfo">
-
-**Related information**  
-
-- <a
-  href="integrating-the-xandr-html5-library-with-ads-created-in-adobe-edge.md"
-  class="link">Integrating the Xandr HTML5 Library with Ads Created in
-  Adobe Edge</a>
-- <a href="use-iab-s-html5-clicktag-standard-on-xandr.md"
-  class="link">Use IAB's HTML5 clickTag Standard on Xandr</a>
-
-
-
-
+- [Integrating the Xandr HTML5 Library with Ads Created in Adobe Edge](integrating-the-xandr-html5-library-with-ads-created-in-adobe-edge.md)
+- [Integrating the AppNexus HTML5 Library with Manually Created HTML5 Ads](https://github.com/appnexus/appnexus-html5-lib/blob/master/docs/Walkthrough-For-Manually-Created-Ads.md)
+- [Use IAB's HTML5 clickTag Standard on Xandr](use-iab-s-html5-clicktag-standard-on-xandr.md)

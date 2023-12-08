@@ -1,36 +1,16 @@
 ---
-Title : Industry Initiatives and Xandr
-Description : This section describes how Xandr implements
-ms.date : 10/28/2023
-ms.custom : industry-reference
-various standards-based industry initiatives.
+title: Industry Initiatives and Xandr
+description: In this article, find links to resources about Xandr implementation of industry initiatives.
+ms.date: 10/28/2023
+ms.custom: industry-reference
 ---
 
+# Industry initiatives and Xandr
 
-# Industry Initiatives and Xandr
-
-
-
-This section describes how Xandr implements
-various standards-based industry initiatives.  
+This section describes how Xandr implements various standards-based industry initiatives.
   
-**In this section:**
+## In this section
 
-
-
-- <a
-  href="xandr-support-for-ads-txt-and-app-ads-txt.md"
-  class="xref" target="_blank">Xandr Support for Ads.txt and
-  App-Ads.txt</a>
-- <a
-  href="ads-txt---app-ads-txt-faq-for-buyers.md"
-  class="xref" target="_blank">Ads.txt / App-Ads.txt FAQ for Buyers</a>
-- <a
-  href="ads-txt---app-ads-txt-faq-for-sellers.md"
-  class="xref" target="_blank">Ads.txt / App-Ads.txt FAQ for Sellers</a>
-
-
-
-
-
-
+- [Xandr Support for Ads.txt and App-Ads.txt](xandr-support-for-ads-txt-and-app-ads-txt.md)
+- [Ads.txt / App-Ads.txt FAQ for Buyers](ads-txt---app-ads-txt-faq-for-buyers.md)
+- [Ads.txt / App-Ads.txt FAQ for Sellers](ads-txt---app-ads-txt-faq-for-sellers.md)
