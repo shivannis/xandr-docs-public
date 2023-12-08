@@ -1,6 +1,6 @@
 - name: Data Providers Reference Documentation
   href: index.yml
-- name: Data Providers
+- name: Overview
   href: home.md
 - name: Integrating Your Data
   items:
