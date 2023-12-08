@@ -8,8 +8,6 @@ ms.date : 11/30/2023
 
 # Member data sharing service (contextual only)
 
-This page deals with Member data sharing service and how it works.
-
 ## Member data sharing service (for real-time data providers)
 
 > [!TIP]

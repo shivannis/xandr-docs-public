@@ -8,8 +8,6 @@ ms.date : 11/29/2023
 
 # Data buyer provider service
 
-This page tell us how to View all current buyers and those buyers that are activated for data clearing.  
-
 ## Data buyer provider service
 
 The Data Buyer Provider Service allows you to view all activated buyers

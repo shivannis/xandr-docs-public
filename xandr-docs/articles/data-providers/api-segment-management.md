@@ -9,8 +9,6 @@ ms.date : 11/29/2023
 
 # API segment management
 
-This page deals with creating, modifying and deleting segments and best practices for managing data provider segments.
-
 ## API segment management
 
 Data providers will need to use Xandr's

@@ -8,8 +8,6 @@ ms.date : 11/30/2023
 
 # Managing public and private (custom) segments
 
-In this page learn creating and managing Public and Private segments.
-
 ## Introduction
 
 The Data Marketplace supports both public and private segments. This

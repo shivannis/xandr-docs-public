@@ -9,8 +9,6 @@ ms.date : 11/29/2023
 
 # Best practices for real time data provider integrations
 
-This page deals with best practices by Software stack, Data Provider Bidder and Connection Management. 
-
 ## Software stack best practices
 
 Depending on the software stack that you decide to employ for your Data
