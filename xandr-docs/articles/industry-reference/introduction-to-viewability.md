@@ -8,7 +8,7 @@ ms.custom : industry-reference
 
 # Industry Reference -  Introduction to viewability
 
-## What is viewability and why is it Important?
+## What is viewability and why is it important?
 
 Marketers buy media to reach "eyeballs" in an effort to create awareness
 for their brand and influence consumers. If a marketer's advertisement

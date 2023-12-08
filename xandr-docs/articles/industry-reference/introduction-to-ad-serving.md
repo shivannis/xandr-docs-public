@@ -12,7 +12,7 @@ In traditional offline advertising, a company creates an ad campaign and
 then purchases advertising slots using different kinds of media, for
 example, on television, in magazines and newspapers, and on roadside
 billboards. With online advertising, the same thing happens, but the
-logistics behind media planning**,** or selecting where and when you
+logistics behind media planning, or selecting where and when you
 will run your ads, are different. 
 
 That's because the Internet is a much more fractured, individualized
