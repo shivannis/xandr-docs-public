@@ -32,7 +32,8 @@ Here's a simple example of how ad tags move through different systems. The examp
 
 An ad tag has two parts:
 
-A URL, from which the browser will request content - Some HTML and possibly some JavaScript code. (HTML lets you create static webpage content. JavaScript is designed for performing dynamic tasks.)
+- A URL, from which the browser will request content.
+- Some HTML and possibly some JavaScript code. (HTML lets you create static webpage content. JavaScript is designed for performing dynamic tasks.)
 
 The purpose of the code is to tell the browser how to display the ad (or other content) that they get from the URL request. For example, the HTML `<iframe>` tag tells the browser to open a mini browser window of a specified size inside the current window. This way the ad content cannot expand beyond the size specified and "take over" the screen.
 

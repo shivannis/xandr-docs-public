@@ -50,7 +50,7 @@ addition, Microsoft will not accept creatives the AppNexus auditing team has fla
 On the **Creative Manager** screen, click the **Create New** button and then select **Single Creative**. This opens the **Create New Creative** dialog.
 
 > [!TIP]
-> Disregard the **Preview** and **Ad Servers** tabs. Because is not possible to preview an Outlook creative in Console and it is not necessary to declare third-party ad servers when serving on Microsoft Advertising Exchange inventory, you can simply skip over these tabs when adding your Outlook creative.
+> Disregard the **Preview** and **Ad Servers** tabs. Because it is not possible to preview an Outlook creative in Console and it is not necessary to declare third-party ad servers when serving on Microsoft Advertising Exchange inventory, you can simply skip over these tabs when adding your Outlook creative.
 
 ## Step 2: Select the creative type
 
@@ -116,8 +116,8 @@ Then, depending on whether you are attaching Network or Advertiser level pixels 
 
 If you want to create a new third-party tracking pixel at the Network or Advertiser level, follow one of the following procedures:
 
-- Create a Network-level pixel that can be automatically attached to all creatives within the network.
-- Create an Advertiser-level pixel that can be automatically attached to all creatives under the advertiser.
+- [Create a Network-level pixel](../invest/create-a-third-party-network-pixel-for-your-creatives.md) that can be automatically attached to all creatives within the network.
+- [Create an Advertiser-level pixel](../invest/create-a-third-party-advertiser-pixel-for-your-creatives.md) that can be automatically attached to all creatives under the advertiser.
 
 ## Step 5: Define the text of the Outlook creative
 
@@ -144,7 +144,7 @@ On the **Template** tab, enter the language that will display in the Outlook c
 On the **Creative Attributes** tab, select the **Platform audit** radio button and then choose to also audit for **Microsoft Advertising Exchange and Google Ad Exchange**.
 
 > [!NOTE]
-> All creatives serving on Outlook.com inventory must pass AppNexus' platform audit and the Microsoft Creative Acceptance Policy audit, so it is very important to select both of the options above. To learn more about these auditing processes, see [Auditing requirements](#auditing-requirements). Creatives must also pass the [Outlook Creative Acceptance Policy](https://xandr-be-prod.zoominsoftware.io/bundle/industry-reference/page/attachments/58655971/61899923.pptx) in order to serve.
+> All creatives serving on Outlook.com inventory must pass AppNexus' platform audit and the Microsoft Creative Acceptance Policy audit, so it is very important to select both of the options above. To learn more about these auditing processes, see [Auditing requirements](#auditing-requirements). Creatives must also pass the [Outlook Creative Acceptance Policy](https://about.ads.microsoft.com/en-us/policies/creative-specs) in order to serve.
 
 ## Step 7: Associate the creative to campaigns or line items
 
