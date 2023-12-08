@@ -1,11 +1,11 @@
 ---
-title: Universal Pixel Feed
+title: Universal pixel Feed
 description: In this article, find information about the Universal Pixel feed and details about the columns associated with this data feed.
 ms.custom: log-level-data
 ms.date: 10/28/2023
 ---
 
-# Universal Pixel feed
+# Universal pixel feed
 
 The Log-Level Universal Pixel Feed provides you with data on the firing of all of your Universal Pixels. The feed contains one row per pixel fire. Each row includes both the data received on the fire as well as any segment and conversion IDs that were associated with the event based on the Audience and Conversion rules that matched the traffic. It is possible for a pixel fire to satisfy no Audience or Conversion rules.
 
