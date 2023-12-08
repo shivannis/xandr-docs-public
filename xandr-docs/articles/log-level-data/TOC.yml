@@ -6,9 +6,9 @@
   items:
   - name: Overview
     href: batch-log-level-data.md
-  - name: Protocol Buffers
+  - name: Install and Configure Protocol Buffers
     href: log-level-data-protocol-buffers.md
-  - name: Cloud Export
+  - name: Set Up Cloud Export
     href: log-level-data-cloud-export.md
 - name: Auction Categories Feed
   href: auction-categories-feed.md
