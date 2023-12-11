@@ -10,15 +10,15 @@
     items:
     - name: Overview
       href: real-time-integrations-contextual-data-providers.md
-    - name: Introduction to Integrating with the Xandr Impression Bus
+    - name: Integration with the Xandr Impression Bus
       href: introduction-to-integrating-with-the-xandr-impression-bus.md
-    - name: Best Practices for Real Time Data Provider Integrations
-      href: best-practices-for-real-time-data-provider-integrations.md
+    - name: Integration Instructions
+      href: real-time-data-integration-instructions.md
     - name: Xandr Macros for Data Providers
       href: xandr-macros-for-data-providers.md
-    - name: Real Time Data Integration Instructions
-      href: real-time-data-integration-instructions.md
-    - name: Real Time Data Provider Throttling Traffic FAQ
+    - name: Best Practices
+      href: best-practices-for-real-time-data-provider-integrations.md
+    - name: Data Provider Throttling Traffic FAQ
       href: real-time-data-provider-throttling-traffic-faq.md
   - name: Audience Data Integrations
     items:
@@ -34,9 +34,8 @@
         href: instant-audience-service.md
       - name: Check Usage Statistics
         href: check-usage-statistics.md
-  - name: Where to Direct Your Integration Inquiries
-    href: where-to-direct-your-integration-inquiries.md
-  - name: Segment Modifier
+  
+  - name: Segment Modifier Integrations
     items:
     - name: Overview
       href: segment-modifier.md
@@ -44,6 +43,8 @@
       href: segment-modifier-data-provider-integration.md
     - name: Segment Modifier FAQ
       href: segment-modifier-faq.md
+  - name: Where to Direct Your Integration Inquiries
+    href: where-to-direct-your-integration-inquiries.md
 - name: Data Marketplace
   items:
   - name: Overview
@@ -100,5 +101,5 @@
     href: data-usage-report-for-data-providers.md
   - name: Segment Loads Report
     href: segment-loads-report.md
-- name: Xandr Data Providers Support
-  href: xandr-data-providers-support.md
+#- name: Xandr Data Providers Support
+  #href: xandr-data-providers-support.md
