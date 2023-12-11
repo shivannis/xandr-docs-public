@@ -40,6 +40,7 @@ landingContent:
           - text: Impression Counting
             url: impression-counting.md
   - title: How to Guides
+    linkLists:
       - linkListType: how-to-guide
         links:
           - text: Add a Microsoft Outlook versatile creative
