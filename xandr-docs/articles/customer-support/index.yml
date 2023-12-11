@@ -15,19 +15,21 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Overview
+            url: xcs-xandr-customer-support-home.md
+      - linkListType: tutorial
+        links:
           - text: Client Services
             url: xcs-xandr-client-services.md
           - text: Email Communications
             url: xcs-xandr-email-communications.md
-          - text: Customer Support Portal Guide
-            url: xcs-customer-support-portal-guide.md
   - title: Customer Support Portal
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Searching the Knowledge Base
+          - text: Search the Knowledge Base
             url: xcs-searching-the-knowledge-base.md
-          - text: Opening a New Case
+          - text: Open a New Case
             url: xcs-opening-a-new-case.md
-          - text: Reporting Outages
+          - text: Report Outages
             url: xcs-reporting-outages.md
