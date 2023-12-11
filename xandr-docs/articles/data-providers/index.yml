@@ -12,7 +12,7 @@ metadata:
 
 landingContent:
    - title: Let's Get Started
-    linkLists:
+     linkLists:
       - linkListType: overview
         links:
           - text: Overview
