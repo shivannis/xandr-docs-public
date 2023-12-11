@@ -77,7 +77,7 @@ additionalContent:
         # Card
         - title: Log Level Data Feeds
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
-          url: getting-started/index.yml
+          url: log-level-data/index.yml
         # Card
         - title: Supply Partners
           summary: Integration documentation for Supply Partners to increase publishers access to major sources of demand
