@@ -1,16 +1,4 @@
 - name: Policies and Regulations
   href: index.yml
-- name: Industry Initiatives and Xandr
-  items:
-  - name: Overview
-    href: ../ad-tech-references/industry-initiatives-and-xandr.md
-  - name: Xandr Support for Ads.txt and App-Ads.txt
-    href: ../ad-tech-references/xandr-support-for-ads-txt-and-app-ads-txt.md
-  - name: Ads.txt / App-Ads.txt FAQ for Buyers
-    href: ../ad-tech-references/ads-txt---app-ads-txt-faq-for-buyers.md
-  - name: Ads.txt / App-Ads.txt FAQ for Sellers
-    href: ../ad-tech-references/ads-txt---app-ads-txt-faq-for-sellers.md
-- name: Online Advertising Self-Regulatory Organizations
-  href: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
 - name: Third Party Providers
-  href: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
+  href: third-party-providers.md
