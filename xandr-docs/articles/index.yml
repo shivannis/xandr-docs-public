@@ -60,14 +60,6 @@ additionalContent:
             text: Product Documentation
           - url: curate/release-notes-curate.md
             text: Release Notes
-      # Card
-      - title: Yield Analytics UI
-        links:
-          - url: yield-analytics-ui/index.yml
-            text: Product Documentation
-          - url: yield-analytics-ui/yield-analytics-8-79.md
-            text: Latest Release Notes
-   
     - title: Additional Resources and Capabilities
       items:
         # Card
@@ -83,7 +75,7 @@ additionalContent:
           summary: Developer guide to facilitate a fast, convenient way to monetize mobile apps
           url: mobile-sdk/index.yml
         # Card
-        - title: Log Level Data Feeds (Work in Progress)
+        - title: Log Level Data Feeds
           summary: Reference documentation for log level data feeds for in-depth analysis and reporting that requires event-level granularity
           url: getting-started/index.yml
         # Card
@@ -91,8 +83,12 @@ additionalContent:
           summary: Integration documentation for Supply Partners to increase publishers access to major sources of demand
           url: supply-partners/index.yml
         # Card
-        - title: Data Providers (Work in Progress)
-          summary: Lorem Ipsum
+        - title: Data Providers
+          summary: Reference documentation on the processes and options for integrating data, sharing data with a buyer, and maintaining data on the platform
+          url: getting-started/index.yml
+        # Card
+        - title: Yield Analytics UI
+          summary: Reference documentation on the functionalities of the Yield Analytics that you can perform in UI
           url: getting-started/index.yml
         # Card
         - title: Data Science Toolkit
