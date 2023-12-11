@@ -55,14 +55,14 @@ landingContent:
             url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService
           - text: Xandr Platform Terms of Service
             url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService/SitePages/Xandr-Platform-Terms-of-Service.aspx
-  - title: Regulation Information
-    linkLists:
-      - linkListType: reference
-        links:            
-          - text: Industry Initiatives and Xandr
-            url: ../ad-tech-references/industry-initiatives-and-xandr.md
-          - text: Online Advertising Self-Regulatory Organizations
-            url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
+  #- title: Regulation Information
+    #linkLists:
+      #- linkListType: reference
+        #links:            
+          #- text: Industry Initiatives and Xandr
+           # url: ../ad-tech-references/industry-initiatives-and-xandr.md
+          #- text: Online Advertising Self-Regulatory Organizations
+            #url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
   - title: Disclosures
     linkLists:
       - linkListType: reference
