@@ -23,7 +23,7 @@ Xandr Client Services is striving to set a new industry standard for customer re
 
 It is our highest priority to help you succeed, and we aim to surpass your expectations of us as a service organization. This includes resolving technical issues quickly and effectively, giving helpful advice, and working hard to provide a stable and reliable technology platform for your business. We also aim to provide comprehensive and informative documentation to enable our customers to be more self-sufficient. We view our relationship with you as a partnership. In the spirit of that partnership, there are a few things that you can do to help us extend service to you more effectively:
 
-1. Please review our relevant articles prior to submitting a support request. The [Documentation Help Center](https://review.learn.microsoft.com/xandr/articles/) is a massive source of information that we have dedicated significant effort into building as a customer resource.
+1. Please review our relevant articles prior to submitting a support request. The Documentation Help Center is a massive source of information that we have dedicated significant effort into building as a customer resource.
 1. Please do as much research and triaging of issues as possible before submitting a request to our team. Your upfront effort will ultimately help us resolve your issues faster.
 1. Please contact your internal Xandr subject matter expert, or “SME”, with potential technical issues. Your Xandr SME will be able to assist you with confirming the issue and constructing an informative support request to our team.
 1. After you have performed a thorough investigation on your end, please include the following detailed information in your support request:
