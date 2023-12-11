@@ -85,11 +85,11 @@ additionalContent:
         # Card
         - title: Data Providers
           summary: Reference documentation on the processes and options for integrating data, sharing data with a buyer, and maintaining data on the platform
-          url: getting-started/index.yml
+          url: data-providers/index.yml
         # Card
         - title: Yield Analytics UI
           summary: Reference documentation on the functionalities of the Yield Analytics that you can perform in UI
-          url: getting-started/index.yml
+          url: yield-analytics-ui/index.yml
         # Card
         - title: Data Science Toolkit
           summary: Reference documentation to enhance bidding strategy, improve measurement and testing capabilities using Data Science
