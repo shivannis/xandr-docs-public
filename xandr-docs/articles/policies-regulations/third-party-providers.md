@@ -405,7 +405,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Vizury Interactive Solutions Pvt. Ltd. | Xandr Invest | Yahoo DSP | Yandex Europe AG | YDN |
 | YJ Test | Zemanta | Zeta DSP | ZypMedia, Inc. |  |
 
-## Data providers partners
+## Data provider's partners
 
 |  |  |  |  |  |
 |---|---|---|---|---|
