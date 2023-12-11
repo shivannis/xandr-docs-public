@@ -1,16 +1,18 @@
 - name: Customer Support Documentation
   href: index.yml
 - name: Getting Started
-  href: xcs-xandr-customer-support-home.md
-- name: Client Services
-  href: xcs-xandr-client-services.md
-- name: Email Communications
-  href: xcs-xandr-email-communications.md
+  items:
+  - name: Overview
+    href: xcs-xandr-customer-support-home.md
+  - name: Client Services
+    href: xcs-xandr-client-services.md
+  - name: Email Communications
+    href: xcs-xandr-email-communications.md
 - name: Customer Support Portal Guide
   items:
   - name: Overview
     href: xcs-customer-support-portal-guide.md
-  - name: Logging in to the Customer Support Portal
+  - name: Logging
     href: xcs-logging-in-to-the-customer-support-portal.md
   - name: Searching the Knowledge Base
     href: xcs-searching-the-knowledge-base.md
@@ -28,5 +30,5 @@
     href: xcs-reporting-outages.md
   - name: Email in the Customer Support Portal
     href: xcs-email-in-the-customer-support-portal.md
-  - name: Customer Support Portal FAQs
-    href: xcs-customer-support-portal-faqs.md
+- name: FAQs
+  href: xcs-customer-support-portal-faqs.md
