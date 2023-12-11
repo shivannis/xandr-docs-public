@@ -1,1157 +1,171 @@
 ---
-Title : Ad Profile Service
-Description : A network may want to create "ad approval profiles" to define what kinds
+title: Digital Platform API - Ad Profile Service
+description: In this article, learn about Digital Platform API's Ad Profile service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-of brands and creatives can and cannot run on their publishers' pages.
 ---
 
+# Digital Platform API - Ad Profile service
 
-# Ad Profile Service
+A network may want to create "ad approval profiles" to define what kinds of brands and creatives can and cannot run on their publishers' pages. The Ad Profile Service lets you create your ad approval profiles at the member level or the publisher level. To create them at the publisher level, include a publisher ID. If no publisher ID is included, it will be a network-level profile available for use with all publishers.
 
-
-
-A network may want to create "ad approval profiles" to define what kinds
-of brands and creatives can and cannot run on their publishers' pages.
-The Ad Profile Service lets you create your ad approval profiles at the
-member level or the publisher level. To create them at the publisher
-level, include a publisher ID. If no publisher ID is included, it will
-be a network-level profile available for use with all publishers.
-
-Ad profiles consist of several elements: members, brands, creatives,
-language, technical attributes, categories, and ad servers. When
-creating an ad profile, you can approve or ban each creative in the
-system individually, but you may prefer to save time by approving or
+Ad profiles consist of several elements: members, brands, creatives, language, technical attributes, categories, and ad servers. When
+creating an ad profile, you can approve or ban each creative in the system individually, but you may prefer to save time by approving or
 banning entire brands or members.
 
-- A member should be trusted if you believe their ads will always be
-  acceptable. For instance, you may "trust" Network A to run quality
-  ads, so you can mitigate the need to audit each of their creatives.
-- A brand should be trusted if you believe that ads of this brand
-  will almost always be acceptable. However you will always have the
-  ability to ban a specific creative even if it is part of a "trusted"
-  brand. If the specific creative is not banned, it will run by default.
-- A brand should be banned if you believe that ads of this brand
-  will never be acceptable. You will still have the ability to approve a
-  specific creative assigned a "banned" brand, unless the member is
-  banned.
-- The default profile (blank or ID set to 0) will ban unaudited ads from
-  other members (i.e. where the `member_id` of the creative is different
-  than the `member_id` of the TinyTag).
+- A member should be trusted if you believe their ads will always be acceptable. For instance, you may "trust" Network A to run quality ads, so you can mitigate the need to audit each of their creatives.
+- A brand should be trusted if you believe that ads of this brand will almost always be acceptable. However you will always have the ability to ban a specific creative even if it is part of a "trusted" brand. If the specific creative is not banned, it will run by default.
+- A brand should be banned if you believe that ads of this brand will never be acceptable. You will still have the ability to approve a specific creative assigned a "banned" brand, unless the member is banned.
+- The default profile (blank or ID set to 0) will ban unaudited ads from other members (i.e. where the `member_id` of the creative is different than the `member_id` of the TinyTag).
 
-
-
-<b>Note:</b> A brand can have a Parent Brand,
-as a way of gathering brands by parent company/ child company. If a
-seller blocks/approves a parent brand, all child brands without an
-\*explicit \*approve/block setting will match the parent brand setting.
-
-
-
-
+> [!NOTE]
+> A brand can have a Parent Brand, as a way of gathering brands by parent company/ child company. If a seller blocks/approves a parent brand, all child brands without an \*explicit \*approve/block setting will match the parent brand setting.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000009f2__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000009f2__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">View
-all ad profiles for a member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?id=AD_PROFILE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">View
-a particular ad profile.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?publisher_id=PUBLISHER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">View
-all ad profiles for a specific publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile</a>
-<p>(ad_profile JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">Add
-a new ad profile at the member level.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?publisher_id=PUBLISHER_ID</a>
-<p>(ad_profile JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">Add
-a new ad profile at the publisher level.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?id=AD_PROFILE_ID</a>
-<p>(ad_profile JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__3">Modify an existing ad profile.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?id=AD_PROFILE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__3">Delete an existing ad profile.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?sort=description" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?sort=description</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__3">Sort
-ad profiles alphabetically by description.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__2"><a
-href="https://api.appnexus.com/ad-profile?search=text_of_description"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/ad-profile?search=text_of_description</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__3">Search for an ad profile by its
-description.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| GET | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile) | View all ad profiles for a member. |
+| GET | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | View a particular ad profile. |
+| GET | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID) | View all ad profiles for a specific publisher. |
+| POST | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile)<br>(ad_profile JSON) | Add a new ad profile at the member level. |
+| POST | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID)<br>(ad_profile JSON) | Add a new ad profile at the publisher level. |
+| PUT | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID)<br>(ad_profile JSON) | Modify an existing ad profile. |
+| DELETE | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | Delete an existing ad profile. |
+| GET | [https://api.appnexus.com/ad-profile?sort=description](https://api.appnexus.com/ad-profile?sort=description) | Sort ad profiles alphabetically by description. |
+| GET | [https://api.appnexus.com/ad-profile?search=text_of_description](https://api.appnexus.com/ad-profile?search=text_of_description) | Search for an ad profile by its description. |
 
+## JSON fields
 
+| Fields | Type | Description |
+|:---|:---|:---|
+| `id` | int | Xandr ID assigned by the API to reference this ad_profile.<br>**Required On:** `PUT`, in query string. |
+| `state` | enum | The state of the ad profile. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
+| `member_id` | int | The member ID that owns this ad_profile. |
+| `description` | string | Optional description. |
+| `default_member_status` | enum | The member status to be used by default when no explicit selection is made. Possible values:<br> - `"case-by-case"`: This member's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile<br> - `"banned"`: None of this member's creatives are allowed to serve. |
+| `default_brand_status` | enum | The brand status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
+| `default_language_status` | enum | The language status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
+| `default_ad_server_status` | enum | The ad server status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
+| `default_category_status` | enum | The category status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
+| `default_technical_attribute_status` | enum | The technical attribute status to be used by default when no explicit selection is made. Possible values: `"trusted"` or `"banned"`. |
+| `default_audit_type` | enum | The audit status to be used by default when no explicit selection is made. Possible values:<br> - `"platform"`: Creatives must have undergone the Xandr platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the member, or undergone Xandr audit. |
+| `members` | array of objects | Array of members with their status. For more details, see [Members](#members) below. |
+| `brands` | array of objects | Array of brands (Parent brands and Child brands) with their status. For more details, see [Brands](#brands) below. |
+| `creatives` | array of objects | Array of creatives with their status. For more details, see [Creatives](#creatives) below. |
+| `languages` | array of objects | Array of languages with their status. For more details, see [Languages](#languages) below. |
+| `ad_servers` | array of objects | Array of ad servers with their status. For more details, see [Ad Servers](#ad-servers) below. |
+| `categories` | array of objects | Array of categories with their status. For more details, see [Categories](#categories) below. |
+| `technical_attributes` | array of objects | Array of technical attributes with their status. For more details, see [Technical Attributes](#technical-attributes) below. |
+| `frequency_caps` | array of objects | Array of frequency/recency caps. For more details, see [Frequency Caps](#frequency-caps) below. |
+| `total_creative_count` | int | Number of creatives. |
+| `approved_creative_count` | int | Number of approved creatives. |
+| `banned_creative_count` | int | Number of banned creatives. |
+| `creatives_approved_percent` | double | Percentage of total creatives which are approved. |
+| `creatives_unreviewed` | int | Number of creatives pending review. |
+| `brands_unreviewed` | int | The number of brands pending review. |
+| `exclude_unaudited` | boolean | Whether or not to exclude creatives that have not been audited. |
+| `exclude_unaudited_direct` | boolean | Whether or not to exclude creatives that have not been audited for direct advertisers. |
+| `audit_type_direct` | string | Specifies the type of audit required to serve creatives for direct advertisers. Allowed values: <br> - `"platform"`: Creatives must undergo Xandr platform audit.<br> - `"platform_or_self"`: Creatives must either be self-audited by the member, or undergo Xandr audit. |
+| `check_attributes_direct` | boolean | Determines whether creatives with technical attributes can or cannot be run for direct advertisers. |
+| `excluded_landing_page_urls` | array of URLs | Not available. Bans for competitive exclusions should be effected through brand exclusions. |
+| `notes` | string | Optional notes. |
+| `publisher_id` | int | The ID of the publisher to associate with the ad profile. |
+| `last_modified` | timestamp | **Read Only.** The timestamp of last modification to this ad profile. |
+| `require_seller_audit_default` | boolean | Whether or not seller audit is required.<br>**Default:** false |
 
+### Members
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the member. |
+| `status` | enum | Whether the member can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this member's creatives may serve.<br> - `"case-by-case"`: This member's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this member's creatives are allowed to serve. |
+| `audit_type` | enum | The type of audit you will require in order to serve creatives from this member. Allowed values:<br> - `"platform"`: Creatives must have undergone Xandr platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the member, or undergone Xandr audit. |
+| `exclude_unaudited` | boolean | If `true`, unaudited creatives are excluded from this member. |
+| `require_seller_audit_status` | enum | Whether the member can require its own audit for creatives from a given buyer:<br> - `"always"`: This member can always require audit for creatives from a given buyer.<br> - `"never"`: This member can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
 
-## JSON Fields
+> [!TIP]
+> The combination of the Member `status`, `audit_type`, and `exclude_unaudited` fields determines the buyer trust level shown in the Network Ad Quality profile in.
+>
+> | `status` | `audit_type` | `exclude_unaudited` | Trust Level in UI |
+> |:---|:---|:---|:---|
+> | `banned` | N/A | N/A | Banned |
+> | `case-by-case` | `platform` | `true` | Standard |
+> | `case-by-case` | `platform_or_self` | `true` | Medium |
+> | `trusted` | `platform` | `true` | High |
+> | `trusted` | `platform` | `false` | Maximum |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__31"
-class="entry colsep-1 rowsep-1">Fields</th>
-<th id="ID-000009f2__entry__32"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__33"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Xandr ID
-assigned by the API to reference this ad_profile.
-<p><strong>Required On</strong>: <code class="ph codeph">PUT</code>, in
-query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-state of the ad profile. Possible values: <code
-class="ph codeph">"active"</code> or <code
-class="ph codeph">"inactive"</code>.
-<p><strong>Default</strong>: <code
-class="ph codeph">"active"</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-member ID that owns this ad_profile.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Optional description.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_member_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-member status to be used by default when no explicit selection is made.
-Possible values:
-<ul>
-<li><code class="ph codeph">"case-by-case"</code> - This member's
-creatives must pass all brand, language, technical attribute, category,
-and ad server filtering defined on the ad profile</li>
-<li><code class="ph codeph">"banned"</code> - None of this member's
-creatives are allowed to serve.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_brand_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-brand status to be used by default when no explicit selection is made.
-Possible values: <code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_language_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-language status to be used by default when no explicit selection is
-made. Possible values: <code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_ad_server_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-ad server status to be used by default when no explicit selection is
-made. Possible values: <code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_category_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-category status to be used by default when no explicit selection is
-made. Possible values: <code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_technical_attribute_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-technical attribute status to be used by default when no explicit
-selection is made. Possible values: <code
-class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">default_audit_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-audit status to be used by default when no explicit selection is made.
-Possible values:
-<ul>
-<li><code class="ph codeph">"platform"</code> - Creatives must have
-undergone the Xandr platform audit.</li>
-<li><code class="ph codeph">"platform_or_self"</code> - Creatives must
-have been self-audited by the member, or undergone <span
-class="ph">Xandr audit.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">members</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of members with their status. See
-<a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-members"
-class="xref">Members</a> below for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">brands</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of brands (Parent brands and
-Child brands) with their status. See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-brands"
-class="xref">Brands</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">creatives</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of creatives with their status.
-See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-creatives"
-class="xref">Creatives</a> below for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">languages</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of languages with their status.
-See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-languages"
-class="xref">Languages</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">ad_servers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of ad servers with their status.
-See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-ad-servers"
-class="xref">Ad Servers</a> below for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">categories</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of categories with their status.
-See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-categories"
-class="xref">Categories</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">technical_attributes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of technical attributes with
-their status. See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-technical-attributes"
-class="xref">Technical Attributes</a> below for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">frequency_caps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Array of frequency/recency caps. See <a
-href="ad-profile-service.md#ID-000009f2__ad-profile-service-frequency-caps"
-class="xref">Frequency Caps</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">total_creative_count</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Number of creatives.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">approved_creative_count</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Number of approved creatives.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">banned_creative_count</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Number of banned creatives.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">creatives_approved_percent</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Percentage of total creatives which are
-approved.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">creatives_unreviewed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Number of creatives pending
-review.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">brands_unreviewed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-number of brands pending review.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">exclude_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Whether or not to exclude creatives
-that have not been audited.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">exclude_unaudited_direct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Whether or not to exclude creatives
-that have not been audited for direct advertisers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">audit_type_direct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">check_attributes_direct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">excluded_landing_page_urls</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">array of URLs</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">Not
-available. Bans for competitive exclusions should be effected through
-brand exclusions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Optional notes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__33">The
-ID of the publisher to associate with the ad profile.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33"><strong>Read Only.</strong> The
-timestamp of last modification to this ad profile.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__31"><code
-class="ph codeph">require_seller_audit_default</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__32">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__33">Whether or not seller audit is
-required.
-<p><strong>Default</strong>: false</p></td>
-</tr>
-</tbody>
-</table>
+### Brands
 
-**Members**
+| Field | Type | Description |
+|---|---|---|
+| `id` | int | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs. |
+| `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
+| `parent_brand_id` | int | When a brand has a parent brand, the default value is set to null.  |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__136"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__137"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__138"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__136"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__137">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__138">The ID of the member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__136"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__137">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__138">Whether the member can or cannot run
-creatives on your publishers' pages. Allowed values:
-<ul>
-<li><code class="ph codeph">"trusted"</code> - Any of this member's
-creatives may serve.</li>
-<li><code class="ph codeph">"case-by-case"</code> - This member's
-creatives must pass all brand, language, technical attribute, category,
-and ad server filtering defined on the ad profile</li>
-<li><code class="ph codeph">"banned"</code> - None of this member's
-creatives are allowed to serve.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__136"><code
-class="ph codeph">audit_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__137">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__138">The type of audit you will require in
-order to serve creatives from this member. Allowed values:
-<ul>
-<li><code class="ph codeph">"platform"</code> - Creatives must have
-undergone Xandr platform audit.</li>
-<li><code class="ph codeph">"platform_or_self"</code> - Creatives must
-have been self-audited by the member, or undergone <span
-class="ph">Xandr audit.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__136"><code
-class="ph codeph">exclude_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__137">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__138">If
-<code class="ph codeph">true</code>, unaudited creatives are excluded
-from this member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__136"><code
-class="ph codeph">require_seller_audit_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__137">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__138">Whether the member can require its own
-audit for creatives from a given buyer:
-<ul>
-<li>"<code class="ph codeph">always</code>" - This member can always
-require audit for creatives from a given buyer</li>
-<li>"<code class="ph codeph">never</code>" - This member can never
-require audit for creatives from a given buyer</li>
-<li>"<code class="ph codeph">case-by-case</code>" - Fall back to <code
-class="ph codeph">ad_profile.require_seller_audit_default</code> for
-audit required status</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+### Creatives
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the creative. You can use the [Creative Service](creative-service.md) to retrieve creative IDs. |
+| `approved` | boolean | If `true`, the creative can run on your publishers' pages. |
 
+### Languages
 
-<b>Tip:</b> The combination of the Member
-`status`, `audit_type`, and `exclude_unaudited` fields determines the
-buyer trust level shown in the Network Ad Quality profile in
-.
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the language. You can use the [Language Service](language-service.md) to retrieve language IDs. |
+| `status` | enum | Whether creatives of this language can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__154"
-class="entry colsep-1 rowsep-1"><strong><code
-class="ph codeph">status</code></strong></th>
-<th id="ID-000009f2__entry__155"
-class="entry colsep-1 rowsep-1"><strong><code
-class="ph codeph">audit_type</code></strong></th>
-<th id="ID-000009f2__entry__156"
-class="entry colsep-1 rowsep-1"><strong><code
-class="ph codeph">exclude_unaudited</code></strong></th>
-<th id="ID-000009f2__entry__157" class="entry colsep-1 rowsep-1">Trust
-Level in UI</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__154"><code
-class="ph codeph">banned</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__155">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__156">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__157">Banned</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__154"><code
-class="ph codeph">case-by-case</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__155"><code
-class="ph codeph">platform</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__156"><code
-class="ph codeph">true</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__157">Standard</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__154"><code
-class="ph codeph">case-by-case</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__155"><code
-class="ph codeph">platform_or_self</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__156"><code
-class="ph codeph">true</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__157">Medium</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__154"><code
-class="ph codeph">trusted</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__155"><code
-class="ph codeph">platform</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__156"><code
-class="ph codeph">true</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__157">High</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__154"><code
-class="ph codeph">trusted</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__155"><code
-class="ph codeph">platform</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__156"><code
-class="ph codeph">false</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__157">Maximum</td>
-</tr>
-</tbody>
-</table>
+### Ad servers
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the ad server. You can use the [Ad Server Service](ad-server-service.md) to retrieve ad server IDs. |
+| `status` | enum | Whether the ad server can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
 
+### Categories
 
-**Brands**
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the category. You can use the [Category Service](category-service.md) to retrieve category IDs. |
+| `status` | enum | Whether creatives with this category can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__178"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__179"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__180"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__178"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__179">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__180">The ID of the brand. You can use the
-<a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a> to retrieve brand
-IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__178"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__179">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__180">Whether creatives of this brand can or
-cannot run on your publishers' pages. Possible values: <code
-class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.
+### Technical attributes
 
-<b>Note:</b> If a brand is marked as Eligible,
-creatives associated with this brand will serve even if the brand's
-category is Banned. For example, if you mark the brand "1 and 1 Internet
-(17310)" as Eligible it will serve even if you ban its overall category,
-"Telecommunications (27)".
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__178"><code
-class="ph codeph">parent_brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__179">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__180">When a brand has a parent brand, the
-default value is set to null. </td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the technical attribute. You can use the [Technical Attribute Service](technical-attribute-service.md) to retrieve technical attribute IDs. |
+| `status` | enum | Whether creatives with this technical attribute can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
 
-**Creatives**
+### Frequency caps
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__190"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__191"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__192"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__190"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__191">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__192">The ID of the creative. You can use
-the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> to retrieve creative
-IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__190"><code
-class="ph codeph">approved</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__191">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__192">If
-<code class="ph codeph">true</code>, the creative can run on your
-publishers' pages.</td>
-</tr>
-</tbody>
-</table>
-
-**Languages**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__199"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__200"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__201"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__199"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__200">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__201">The ID of the language. You can use
-the <a
-href="language-service.md"
-class="xref" target="_blank">Language Service</a> to retrieve language
-IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__199"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__200">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__201">Whether creatives of this language can
-or cannot run creatives on your publishers' pages. Possible values:
-<code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Ad Servers**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__208"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__209"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__210"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__208"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__209">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__210">The ID of the ad server. You can use
-the <a
-href="ad-server-service.md"
-class="xref" target="_blank">Ad Server Service</a> to retrieve ad server
-IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__208"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__209">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__210">Whether the ad server can or cannot
-run creatives on your publishers' pages. Possible values: <code
-class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Categories**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__217"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__218"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__219"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__217"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__218">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__219">The ID of the category. You can use
-the <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a> to retrieve category
-IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__217"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__218">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__219">Whether creatives with this category
-can or cannot run on your publishers' pages. Possible values: <code
-class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Technical Attributes**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__226"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__227"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__228"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__226"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__227">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__228">The ID of the technical attribute. You
-can use the <a
-href="technical-attribute-service.md"
-class="xref" target="_blank">Technical Attribute Service</a> to retrieve
-technical attribute IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__226"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__227">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__228">Whether creatives with this technical
-attribute can or cannot run on your publishers' pages. Possible values:
-<code class="ph codeph">"trusted"</code> or <code
-class="ph codeph">"banned"</code>.</td>
-</tr>
-</tbody>
-</table>
-
-**Frequency Caps**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f2__entry__235"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f2__entry__236"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f2__entry__237"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237"><strong>Read Only.</strong> The ID of
-the frequency cap definition.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237"><strong>Read Only.</strong> The ID of
-the member that owns the ad profile.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">max_session_imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237">The maximum number of impressions per
-person per session for creatives with the specified <code
-class="ph codeph">technical_attributes</code> or <code
-class="ph codeph">categories</code>. If set, this value must be between
-<code class="ph codeph">0</code> and <code
-class="ph codeph">255</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">max_day_imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237">The maximum number of impressions per
-person per day for creatives with the specified <code
-class="ph codeph">technical_attributes</code> or <code
-class="ph codeph">categories</code>. If set, this value must be between
-<code class="ph codeph">0</code> and <code
-class="ph codeph">255</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">min_minutes_per_imp</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237">The minimum number of minutes between
-impressions per user for creatives with the specified <code
-class="ph codeph">technical_attributes</code> or <code
-class="ph codeph">categories</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">cap_users_without_cookie</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f2__entry__237">If
-<code class="ph codeph">true</code>, users without cookies will never be
-shown creatives with the specified <code
-class="ph codeph">technical_attributes</code> or <code
-class="ph codeph">categories</code>. They will be treated as if they've
-reached the frequency cap.
-<p>If <code class="ph codeph">false</code>, no frequency cap for the
-specific <code class="ph codeph">technical_attributes</code> or <code
-class="ph codeph">categories</code> will apply to users without cookies.
-It will be possible for them to see an unlimited number of creatives
-with the specified <code class="ph codeph">technical_attributes</code>
-or <code class="ph codeph">categories</code>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">technical_attributes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237">The IDs of the technical attributes
-that you are limiting. You can use the <a
-href="technical-attribute-service.md"
-class="xref" target="_blank">Technical Attribute Service</a> to get a
-complete list of technical attributes. The <code
-class="ph codeph">technical_attributes</code> and <code
-class="ph codeph">categories</code> fields have an OR-relationship.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__235"><code
-class="ph codeph">categories</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__236">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f2__entry__237">The IDs of the categories that you are
-limiting. You can use the <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a> to get a complete list
-of categories. The <code class="ph codeph">technical_attributes</code>
-and <code class="ph codeph">categories</code> fields have an
-OR-relationship.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | **Read Only.** The ID of the frequency cap definition. |
+| `member_id` | int | **Read Only.** The ID of the member that owns the ad profile. |
+| `max_session_imps` | int | The maximum number of impressions per person per session for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
+| `max_day_imps` | int | The maximum number of impressions per person per day for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
+| `min_minutes_per_imp` | int | The minimum number of minutes between impressions per user for creatives with the specified `technical_attributes` or `categories`. |
+| `cap_users_without_cookie` | boolean | If `true`, users without cookies will never be shown creatives with the specified `technical_attributes` or `categories`. They will be treated as if they've reached the frequency cap.<br>If `false`, no frequency cap for the specific `technical_attributes` or `categories` will apply to users without cookies. It will be possible for them to see an unlimited number of creatives with the specified `technical_attributes` or `categories`. |
+| `technical_attributes` | array | The IDs of the technical attributes that you are limiting. You can use the [Technical Attribute Service](technical-attribute-service.md) to get a complete list of technical attributes. The `technical_attributes` and `categories` fields have an OR-relationship. |
+| `categories` | array | The IDs of the categories that you are limiting. You can use the [Category Service](category-service.md) to get a complete list of categories. The `technical_attributes` and `categories` fields have an OR-relationship. |
 
 ## Examples
 
+> [!WARNING]
+> **Append on PUT**
+>
+> You will overwrite existing data with the contents of your `PUT` request unless you add the query string parameters `append=true` to the request. For more information, see [API Semantics](api-semantics.md) and the example **Update an existing ad profile** below.
 
+### Create a new ad profile
 
-<b>Warning:</b> **Append on PUT**
+Below we have used the "cat" command to output an example ad profile JSON file.
 
-You will overwrite existing data with the contents of your `PUT` request
-unless you add the query string parameters `append=true` to the request.
-For more information, see <a
-href="api-semantics.md"
-class="xref" target="_blank">API Semantics</a> and the example **Update
-an existing ad profile** below.
+> [!NOTE]
+> This is a fairly complex profile.
 
-
-
-**Create a new ad profile**
-
-Below we have used the "cat" command to output an example ad profile
-JSON file.
-
-
-
-<b>Note:</b> This is a fairly complex profile.
-
-
-
-``` pre
+```
 $ cat ad_profile
 {
     "ad-profile": {
@@ -1208,20 +222,14 @@ $ cat ad_profile
 }
 ```
 
-**Update an existing ad profile**
+### Update an existing ad profile
 
-Given the ad profile JSON in the first example, let's say you want to
-update the `categories` array to include another item. In a real-world
-use case there might be 47 categories in the array. The semantics of
-`PUT` mean that in order to add another category to the array, you'll
-need to pass in all 47 of the existing categories plus the new one.
+Given the ad profile JSON in the first example, let's say you want to update the `categories` array to include another item. In a real-world use case there might be 47 categories in the array. The semantics of `PUT` mean that in order to add another category to the array, you'll need to pass in all 47 of the existing categories plus the new one.
 
-You can avoid this extra work by adding the query string parameters
-`append=true` to your request as shown in the example below. (For
-backwards compatibility reasons the parameters `append_only=true` will
-also work.)
+You can avoid this extra work by adding the query string parameters `append=true` to your request as shown in the example below. (For
+backwards compatibility reasons the parameters `append_only=true` will also work.)
 
-``` pre
+```
 $ cat ad-profile-update.json
 {
   "ad-profiles":
@@ -1270,9 +278,9 @@ $ curl -b cookies -X PUT -d '@/tmp/ad-profile-update.json' \
 }
 ```
 
-**Add an ad profile to your member**
+### Add an ad profile to your member
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @ad_profile  "https://api.appnexus.com/ad-profile"
 {
     "response": {
@@ -1282,9 +290,9 @@ $ curl -b cookies -c cookies -X POST -d @ad_profile  "https://api.appnexus.com/a
 }
 ```
 
-**View an ad profile**
+### View an ad profile
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/ad-profile?id=1317"
 {
   "response": {
@@ -1359,13 +367,13 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/ad-profile?id=1317"
 }
 ```
 
-**Creative Attribute Frequency Capping Examples**
+### Creative attribute frequency capping examples
 
-**Add a frequency cap rule to an ad profile**
+#### Add a frequency cap rule to an ad profile
 
-The {{"frequency_caps"}} field will be {{null}} at first:
+The `{{"frequency_caps"}}` field will be `{{null}}` at first:
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id=199943"
 {
   "response": {
@@ -1381,9 +389,9 @@ $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id
 }
 ```
 
-**Add a frequency cap rule**
+#### Add a frequency cap rule
 
-``` pre
+```
 $ cat add_freq_cap_rule.json
 {
    "ad-profile": {
@@ -1407,9 +415,9 @@ $ curl -b cookies -c cookies -X PUT --data-binary @add_freq_cap_rule.json "https
 }
 ```
 
-**The ad profile will now have the frequency cap rule:**
+#### The ad profile will now have the frequency cap rule
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id=199943"
 {
   "response": {
@@ -1452,14 +460,11 @@ $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id
       ...
 ```
 
-**Modify a frequency cap rule**
+#### Modify a frequency cap rule
 
-Use the {{PUT}} command on the {{ad-profile}} service. The frequency
-cap's ID must be specified in the update JSON. If the frequency cap ID
-is not specified, the existing rule will be deleted, and a new rule will
-be created.
+Use the `{{PUT}}` command on the `{{ad-profile}}` service. The frequency cap's ID must be specified in the update JSON. If the frequency cap ID is not specified, the existing rule will be deleted, and a new rule will be created.
 
-``` pre
+```
 {code}
 $ cat update_freq_cap_rule.json
 {
@@ -1485,9 +490,9 @@ $ curl -b cookies -c cookies -X PUT --data-binary @update_freq_cap_rule.json "ht
 {code}
 ```
 
-**Check the ad profile to see the updated rule:**
+#### Check the ad profile to see the updated rule
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id=199943"
 {
   "response": {
@@ -1516,9 +521,3 @@ $ curl -b cookies -c cookies -X GET "https://sand.api.appnexus.com/ad-profile?id
       ]
       ...
 ```
-
-
-
-
-
-

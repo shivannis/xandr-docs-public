@@ -1,49 +1,29 @@
 ---
-Title : 05 - Throttling Pagination and Filtering
+title: 05 - Throttling Pagination and Filtering
+description: In this article, learn about concepts such as, Throttling, Pagination, and Filtering, accompanied by a set of examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-## Throttling
-In order to prevent abuse of the API services, all accounts are
-generally limited to 1000 reads and writes per minute. This limit is
 ---
-
 
 # 05 - Throttling Pagination and Filtering
 
-
-
-
 ## Throttling
 
-In order to prevent abuse of the API services, all accounts are
-generally limited to 1000 reads and writes per minute. This limit is
-enforced programmatically by the API on a member level. That means if
-there are two API users for a single member, they will share the
-throttling limit (i.e., two users can average 50 reads per minute each,
-four users can average 25 reads per minute each). However,
-Xandr adjusts the rate limits dynamically when
-our platform has free capacity.
+In order to prevent abuse of the API services, all accounts are generally limited to 1000 reads and writes per minute. This limit is
+enforced programmatically by the API on a member level. That means if there are two API users for a single member, they will share the
+throttling limit (i.e., two users can average 50 reads per minute each, four users can average 25 reads per minute each). However,
+Xandr adjusts the rate limits dynamically when our platform has free capacity.
 
-If you exceed the throttling limit, the API will respond with the HTTP
-429 (Too Many Requests) response code. The `Retry-After` header
+If you exceed the throttling limit, the API will respond with the HTTP 429 (Too Many Requests) response code. The `Retry-After` header
 specifies the number of seconds you should wait before trying again.
 
-You can use the HTTP status 429 as the indication that you need to pause
-and wait for the amount of time specified in the `Retry-After` field in
-the response header before continuing with your API call. This will
-allow you to take advantage of the opportunity to exceed your rate
-limits when our platform has the free capacity to handle your API calls.
+You can use the HTTP status 429 as the indication that you need to pause and wait for the amount of time specified in the `Retry-After` field in the response header before continuing with your API call. This will allow you to take advantage of the opportunity to exceed your rate limits when our platform has the free capacity to handle your API calls.
 
+### Error messages
 
+If the throttling limit is exceeded, the API will respond with an error message in the response contents in addition to the HTTP 429 response code. An example of the error message is below:
 
-**Error Messages**
-
-
-If the throttling limit is exceeded, the API will respond with an error
-message in the response contents in addition to the HTTP 429 response
-code. An example of the error message is below:
-
-``` pre
+```
 {
   "response": {
     "error_id": "SYSTEM",
@@ -55,22 +35,16 @@ code. An example of the error message is below:
 }
 ```
 
-
-
-
 ## Pagination
 
-The API limits responses to any request to 100 objects. Pagination will
-allow you to use multiple requests to retrieve more than 100 objects in
-total, though each single request is still limited to 100 objects. This
-is accomplished by using the `start_element` and `num_elements`
-querystring parameters. In the example below, we use multiple HTTP `GET`
-calls to retrieve many creatives. Note that the output has been
-abbreviated to save space.
+The API limits responses to any request to 100 objects. Pagination will allow you to use multiple requests to retrieve more than 100 objects in total, though each single request is still limited to 100 objects. This is accomplished by using the `start_element` and `num_elements` querystring parameters. In the below example, we use multiple HTTP `GET` calls to retrieve many creatives.
 
-**Example**
+> [!NOTE]
+> The output has been abbreviated to save space.
 
-``` pre
+### Example: Pagination
+
+```
 $ curl -c cookies -b cookies 'https://api.appnexus.com/creative?start_element=0&num_elements=100'
 {
   "response": {
@@ -103,22 +77,17 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/creative?start_element=20
 }
 ```
 
-
-
-
 ## Filtering
 
-Filtering allows you to specify a subset of objects to be returned by
-the API. The most common, and arguably most useful filter is
-`min_last_modified`, which only returns objects that have been changed
-since the date specified. In the example below, we use filtering in an
-API `GET` request to return only those creatives modified after
-05/14/2013 00:00:00 UTC. Note that the output of the API call has been
-abbreviated to save space.
+Filtering allows you to specify a subset of objects to be returned by the API. The most common, and arguably most useful filter is
+`min_last_modified`, which only returns objects that have been changed since the date specified. In the example below, we use filtering in an API `GET` request to return only those creatives modified after 05/14/2013 00:00:00 UTC.
 
-**Example**
+> [!NOTE]
+> The output of the API call has been abbreviated to save space.
 
-``` pre
+### Example: Filtering
+
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?min_last_modified=2013-05-14+00:00:00'
 {
   "response": {
@@ -161,9 +130,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?min_last_modifie
   }
 }
 ```
-
-
-
-
-
-

@@ -1,142 +1,36 @@
 ---
-Title : Access Member Config Service
-Description : The access-member-config service allows you to manage which members on
+title: Access Member Config Service
+description: In this article, learn about the Access Member Config service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-the platform are subject to access control enforcement. This service is
 ---
 
+# Access Member Config service
 
-# Access Member Config Service
-
-
-
-The access-member-config service allows you to manage which members on
-the platform are subject to access control enforcement. This service is
-available only to Xandr administrators.
-
-
+The access-member-config service allows you to manage which members on the platform are subject to access control enforcement. This service is available only to Xandr administrators.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000007a8__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000007a8__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000007a8__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__2">https://api.<span
-class="ph">appnexus.com/access-member-config?member_id=MEMBER_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__3">Enable a member's access control</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__2">https://api.<span
-class="ph">appnexus.com/access-member-config?member_id=MEMBER_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__3">Modify a member's access control
-settings</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__2">https://api.<span
-class="ph">appnexus.com/access-member-config?member_id=MEMBER_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007a8__entry__3">View
-a member's access control settings</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| POST | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Enable a member's access control. |
+| PUT | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Modify a member's access control settings. |
+| GET | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | View a member's access control settings. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000007a8__entry__13"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000007a8__entry__14" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-000007a8__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__13"><code
-class="ph codeph">enable_access_control</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__14">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__15"><p>Defines whether or not the member is
-under access control.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__13"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__14">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007a8__entry__15">The
-date and time this object was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__13"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__14">bigint</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__15"><p>The ID of the member.</p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>and
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__13"><code
-class="ph codeph">team_object_limit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__14">bigint</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007a8__entry__15"><p>The maximum number of objects
-(advertisers, insertion orders, publishers, placements groups, and
-placements) that can be assigned to any one team for this member.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">1000</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `enable_access_control` | boolean | Defines whether or not the member is under access control.<br>**Default:** `false` |
+| `last_modified` | timestamp | The date and time this object was last modified. |
+| `member_id` | bigint | The ID of the member.<br>**Required On:** `POST` and `PUT` |
+| `team_object_limit` | bigint | The maximum number of objects (advertisers, insertion orders, publishers, placements groups, and placements) that can be assigned to any one team for this member.<br>**Default:** `1000` |
 
 ## Examples
 
-**Retrieve a member's access control settings**
+### Retrieve a member's access control settings
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/access-member-config?member_id=1234'
 {
     "response": {
@@ -153,9 +47,9 @@ $ curl -b cookies 'https://api.appnexus.com/access-member-config?member_id=1234'
 }
 ```
 
-**Turn on access control for a member**
+### Turn on access control for a member
 
-``` pre
+```
 $ cat access-control.json
 {
     "access-member-config":
@@ -167,9 +61,9 @@ $ cat access-control.json
 $ curl -b cookies -X POST -d '@access-control.json' 'https://api.appnexus.com/access-member-config?member_id=1234'
 ```
 
-**Modify the number of objects allowed in a team**
+### Modify the number of objects allowed in a team
 
-``` pre
+```
 $ cat limit.json
 {
     "access-member-config":
@@ -181,22 +75,6 @@ $ cat limit.json
 $ curl -b cookies -X PUT -d '@limit.json' 'https://api.appnexus.com/access-member-config?member_id=1234'
 ```
 
+## Related topic
 
-
-
-
-## Related Topics
-
-
-
-- <a
-  href="working-with-roles-using-the-api.md"
-  class="xref" target="_blank">Working with Roles using the API</a>
-
-
-
-
-
-
-
-
+[Working with Roles using the API](working-with-roles-using-the-api.md)

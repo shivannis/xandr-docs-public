@@ -1,38 +1,16 @@
 ---
-Title : Access Control Policy APIs
-Description : - <a
+title: Access Control Policy APIs
+description: In this article, explore information about Access Control Policy APIs and its related topics.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="xandr-api-internal/access-platform-user-role-service.md"
 ---
 
+# Access control policy APIs
 
-# Access Control Policy APIs
-
-
-
-- <a
-  href="xandr-api-internal/access-platform-user-role-service.md"
-  class="xref" target="_blank">Access Platform User Role Service</a>
-- <a
-  href="xandr-api-internal/access-policy-group-service.md"
-  class="xref" target="_blank">Access Policy Group Service</a>
-- <a
-  href="xandr-api-internal/access-policy-member-config-service.md"
-  class="xref" target="_blank">Access Policy Member Config Service</a>
-- <a
-  href="xandr-api-internal/access-policy-object-team-service.md"
-  class="xref" target="_blank">Access Policy Object Team Service</a>
-- <a
-  href="xandr-api-internal/access-policy-resource-service.md"
-  class="xref" target="_blank">Access Policy Resource Service</a>
-- <a
-  href="xandr-api-internal/access-policy-user-service.md"
-  class="xref" target="_blank">Access Policy User Service</a>
-- <a
-  href="xandr-api-internal/access-resource-dependency-service.md"
-  class="xref" target="_blank">Access Resource Dependency Service</a>
-
-
-
-
+- [Access Platform User Role Service](access-platform-user-role-service.md)
+- [Access Policy Group Service](access-policy-group-service.md)
+- [Access Policy Member Config Service](access-policy-member-config-service.md)
+- [Access Policy Object Team Service](access-policy-object-team-service.md)
+- [Access Policy Resource Service](access-policy-resource-service.md)
+- [Access Policy User Service](access-policy-user-service.md)
+- [Access Resource Dependency Service](access-resource-dependency-service.md)

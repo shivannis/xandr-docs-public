@@ -1,32 +1,21 @@
 ---
-Title : 07 - Advertiser Configuration
-Description : Prior to creating any pieces of the campaign hierarchy via the API, it
+title: 07 - Advertiser Configuration
+description: In this article, learn about Advertiser Configuration and explore detailed information about the various parameters configured at the advertiser level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-is best practice to fully configure the advertiser first. The reason for
 ---
 
+# 07 - Advertiser configuration
 
-# 07 - Advertiser Configuration
+Prior to creating any pieces of the campaign hierarchy via the API, it is best practice to fully configure the advertiser first. The reason for this is that there are defaults that can be specified on an advertiser level which cascade to child objects under the advertiser.
 
+There are a number of different parameters which can be configured at the advertiser level:
 
+## Billing address
 
-Prior to creating any pieces of the campaign hierarchy via the API, it
-is best practice to fully configure the advertiser first. The reason for
-this is that there are defaults that can be specified on an advertiser
-level which cascade to child objects under the advertiser.
+This setting, stored in the parameter in the sample below, specifies the billing address for the advertiser. The sample JSON below shows how to set this parameter.
 
-There are a number of different parameters which can be configured at
-the advertiser level:
-
-
-## Billing Address
-
-This setting, stored in the parameter in the sample below, specifies the
-billing address for the advertiser. The sample JSON below shows how to
-set this parameter.
-
-``` pre
+```
 {
   "advertiser": {
     "billing_address1": "123 Main Street",
@@ -39,20 +28,11 @@ set this parameter.
   }
 ```
 
-
-
-
 ## Timezone
 
-This parameter, stored in the "timezone" field, defines the default
-timezone that will be applied to newly created objects unless otherwise
-specified at the time of their creation. For the list of valid
-timezones, see <a
-href="api-timezones.md"
-class="xref" target="_blank">API Timezones</a>. The sample JSON below
-shows how to set this parameter.
+This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For the list of valid timezones, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "advertiser"a: {
     "timezone": "EST5EDT"
@@ -60,16 +40,11 @@ shows how to set this parameter.
   }
 ```
 
+## Time format
 
+This parameter, stored in the "time_format" field, defines whether times will be displayed in the 12-hour or 24-hour format in reporting. The sample JSON below shows how to set this parameter.
 
-
-## Time Format
-
-This parameter, stored in the "time_format" field, defines whether times
-will be displayed in the 12-hour or 24-hour format in reporting. The
-sample JSON below shows how to set this parameter.
-
-``` pre
+```
 {
   "advertiser": {
     "time_format": "12-hour"
@@ -77,16 +52,11 @@ sample JSON below shows how to set this parameter.
   }
 ```
 
+## Default currency
 
+The default currency, like the timezone, is applied to line items unless otherwise specified when creating those objects. The sample JSON below shows how to set this parameter.
 
-
-## Default Currency
-
-The default currency, like the timezone, is applied to line items unless
-otherwise specified when creating those objects. The sample JSON below
-shows how to set this parameter.
-
-``` pre
+```
 {
   "advertiser": {
     "default_currency": "USD"
@@ -94,16 +64,11 @@ shows how to set this parameter.
   }
 ```
 
-
-
-
 ## Use Insertion Orders
 
-This setting, stored in the "use_insertion_orders" parameter, specifies
-whether or not insertion orders should be used within this advertiser.
-The sample JSON below shows how to set this parameter.
+This setting, stored in the "use_insertion_orders" parameter, specifies whether or not insertion orders should be used within this advertiser. The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "advertiser": {
     "use_insertion_orders": true
@@ -111,15 +76,11 @@ The sample JSON below shows how to set this parameter.
   }
 ```
 
+## Summary example
 
+Below is a summary of the JSON samples above into a single member object. In this case, the advertiser specification is in a file.
 
-
-## Summary Example
-
-Below is a summary of the JSON samples above into a single member
-object. In this case, the advertiser specification is in a file.
-
-``` pre
+```
 $ cat advertiser
 {
   "advertiser": {
@@ -138,10 +99,9 @@ $ cat advertiser
 }
 ```
 
-In order to create the advertiser, you should POST the specification to
-the API.
+In order to create the advertiser, you should POST the specification to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST --data-binary @advertiser 'https://api.appnexus.com/advertiser'
 {
    "response":{
@@ -151,10 +111,9 @@ $ curl -b cookies -c cookies -X POST --data-binary @advertiser 'https://api.appn
 }
 ```
 
-Then to verify that the advertiser was created properly, you can pull
-down the advertiser from the API using the advertiser ID.
+Then to verify that the advertiser was created properly, you can pull down the advertiser from the API using the advertiser ID.
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser?id=1234'
 {
   "response": {
@@ -200,9 +159,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser?id=1234'
   }
 }
 ```
-
-
-
-
-
-
