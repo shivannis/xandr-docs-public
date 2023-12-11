@@ -24,7 +24,7 @@ To remove users from a segment, use this syntax:
 
 These segment pixel calls to `/seg` will always return a 1x1 invisible GIF, unless a piggyback pixel redirect parameter is included.
 
-## Member-vs. Advertiser-Level Segments
+## Member vs. Advertiser-Level Segments
 
 Members can create segment pixels that are attached to a specific advertiser, or they can create network-wide segment pixels that are available for targeting to all the network's
 advertisers. An advertiser-level segment is only available to that advertiser's campaigns. You can move a segment from advertiser-level to Member-level by changing the advertiser_id to null via the API.
