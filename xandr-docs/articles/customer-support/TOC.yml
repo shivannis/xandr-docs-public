@@ -1,4 +1,4 @@
-- name: Customer Support Documentation
+- name: Customer Support Portal Guide
   href: index.yml
 - name: Getting Started
   items:
@@ -8,7 +8,7 @@
     href: xcs-xandr-client-services.md
   - name: Email Communications
     href: xcs-xandr-email-communications.md
-- name: Customer Support Portal Guide
+- name: Functionalities in Customer Support Portal
   items:
   - name: Overview
     href: xcs-customer-support-portal-guide.md
