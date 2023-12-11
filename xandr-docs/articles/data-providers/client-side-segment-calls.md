@@ -8,8 +8,6 @@ ms.date : 11/29/2023
 
 # Client side segment calls
 
-This page deals with client side segment calls.  
-
 ## Client side segment calls
 
 Segment pixels are the mechanism for categorizing users into groups

@@ -8,8 +8,6 @@ ms.date : 11/30/2023
 
 # Member data sharing service (audience only)
 
-This page deals with Member Data Sharing and tells us how it works.  
-
 ## Member data sharing service (For audience data providers only)
 
 > [!TIP]
