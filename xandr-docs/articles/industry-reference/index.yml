@@ -39,17 +39,23 @@ landingContent:
             url: header-requests.md
           - text: Impression Counting
             url: impression-counting.md
+          - text: Mobile Advertising
+            url: introduction-to-mobile-advertising.md
   - title: How to Guides
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Add a Microsoft Outlook versatile creative
+          - text: Add a Microsoft Outlook Versatile Creative
             url: add-a-microsoft-outlook-versatile-creative.md
-          - text: Build an HTML5 Xandr Creative in Google Web Designer  
+          - text: Build an HTML5 Creative in Google Web Designer  
             url: build-an-html5-xandr-creative-in-google-web-designer.md
-          - text: Build an HTML5 Xandr Creative in Adobe Edge
+          - text: Integrate Xandr HTML5 Library with Ads Created in Google Web Designer
+            href: integrating-the-xandr-html5-library-with-ads-created-in-google-web-designer.md
+          - text: Build an HTML5 Creative in Adobe Edge
             url: build-an-html5-xandr-creative-in-adobe-edge.md
-          - text: Build an HTML5 Xandr Creative in Adobe Animate CC
+          - text: Integrate Xandr HTML5 Library with Ads created in Adobe Edge
+            href: integrating-the-xandr-html5-library-with-ads-created-in-adobe-edge.md
+          - text: Build an HTML5 Creative in Adobe Animate CC
             url: build-an-html5-xandr-creative-in-adobe-animate-cc.md
           - text: Use IAB's HTML5 clickTag Standard on Xandr
             url: use-iab-s-html5-clicktag-standard-on-xandr.md
