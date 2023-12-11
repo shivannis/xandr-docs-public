@@ -12,21 +12,21 @@
   items:
   - name: Overview
     href: xcs-customer-support-portal-guide.md
-  - name: Logging
+  - name: Login
     href: xcs-logging-in-to-the-customer-support-portal.md
-  - name: Searching the Knowledge Base
+  - name: Search the Knowledge Base
     href: xcs-searching-the-knowledge-base.md
-  - name: Opening a New Case
+  - name: Open a New Case
     href: xcs-opening-a-new-case.md
-  - name: Updating a Case
+  - name: Update a Case
     href: xcs-updating-a-case.md
-  - name: Updating My Profile
+  - name: Update Profile
     href: xcs-updating-my-profile.md
-  - name: Updating My Settings
+  - name: Update Settings
     href: xcs-updating-my-settings.md
-  - name: Changing My Password
+  - name: Change Password
     href: xcs-changing-my-password.md
-  - name: Reporting Outages
+  - name: Report Outages
     href: xcs-reporting-outages.md
   - name: Email in the Customer Support Portal
     href: xcs-email-in-the-customer-support-portal.md
