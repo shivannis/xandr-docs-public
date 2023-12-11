@@ -216,7 +216,6 @@
       href: megatag-technical-overview.md
   - name: IAB Content Taxonomy Support
     href: iab-content-taxonomy-support.md
-
 - name: User ID Mapping
   items:
   - name: Overview
@@ -258,7 +257,7 @@
   - name: Monthly Prediction Variability Data
     href: monthly-prediction-variability-data.md
 - name: Impression Bus API
-  href: ../impression-bus/index.yml
+  href: ../impression-bus/TOC.yml
 - name: FAQs
   items: 
   - name: Ad Quality Profile - FAQ
