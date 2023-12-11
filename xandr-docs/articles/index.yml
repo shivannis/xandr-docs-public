@@ -17,21 +17,21 @@ metadata:
 highlightedContent:
   items:
     # Card
-    - title: Welcome to Xandr Platform Documentation
-      itemType: get-started
-      url: getting-started/index.yml
+    - title: Concepts of Ad Tech
+      itemType: quickstart
+      url: industry-reference/index.yml
     # Card
     - title: Policies and Regulations
       itemType: reference
       url: policies-regulations/index.yml
     # Card
-    - title: Training and Enablement
+    - title: Microsoft Advertising's Learning Lab
       itemType: training
-      url: getting-started/index.yml
+      url: industry-reference/index.yml
     # Card
     - title: Customer Support Portal Guide
       itemType: tutorial
-      url: getting-started/index.yml
+      url: customer-support/index.yml
 additionalContent:
   sections:
     - title: Browse Product Offerings
