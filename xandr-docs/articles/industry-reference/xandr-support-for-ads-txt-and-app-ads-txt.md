@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Xandr Support for Ads.txt and App-Ads.txt
+title: Xandr Support for Ads.txt and App-Ads.txt
 description: The article details Xandr's support for Ads.txt and App-Ads.txt.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Xandr support for Ads.txt and App-Ads.txt
+# Xandr support for Ads.txt and App-Ads.txt
 
 > [!WARNING]
 > The information in this document is based on the latest [Ads.txt specification for the IAB](https://iabtechlab.com/ads-txt/) as of January 22, 2018, and [App-Ads.txt specification](https://iabtechlab.com/wp-content/uploads/2019/03/app-ads.txt-v1.0-final-.pdf) as of March 2019. This information is subject to change based on IAB updates to the specification.

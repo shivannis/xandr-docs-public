@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - TCP-IP
+title: TCP-IP
 description: The articles cover the exchange of HTTP requests and responses between browsers and clients. The  process is illustrated by comparing an HTTP response to receiving a properly packaged item in the mail, using the example of ordering cheese online.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - TCP-IP
+# TCP-IP
 
 Now that we've learned about HTTP, I'm going to talk about how browsers and clients actually send and receive HTTP requests and responses to and from each other. I'm going to compare an HTTP response to the process of
 a package being sent to you in the mail. If you ordered cheese online it would be pretty gross if the mailman left unwrapped pieces of cheese in your mail box. So the cheese store takes the time to wrap the cheese in
