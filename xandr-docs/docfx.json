@@ -64,7 +64,8 @@
         "articles/customer-support/*.md":"microsoft-monetize",
         "articles/digital-platform-api/*.md":"microsoft-monetize",
         "articles/monetize/*.md":"microsoft-monetize",
-        "articles/log-level-data/*.md":"microsoft-monetize"
+        "articles/log-level-data/*.md":"microsoft-monetize",
+        "articles/policies-regulations/*.md":"microsoft-monetize"
         
       },
       "author": {
@@ -84,7 +85,8 @@
         "articles/industry-reference/*.md":"rupambaruah-xandr",
         "articles/customer-support/*.md":"rupambaruah-xandr",
         "articles/digital-platform-api/*.md":"rupambaruah-xandr",
-        "articles/monetize/*.md":"rupambaruah-xandr"
+        "articles/monetize/*.md":"rupambaruah-xandr",
+        "articles/policies-regulations/*.md":"rupambaruah-xandr"
       },
       "ms.author": {
         "articles/invest/*.md": "rupambaruah",
@@ -103,7 +105,8 @@
         "articles/industry-reference/*.md":"rupambaruah",
         "articles/customer-support/*.md":"rupambaruah",
         "articles/digital-platform-api/*.md":"rupambaruah",
-        "articles/monetize/*.md":"rupambaruah"
+        "articles/monetize/*.md":"rupambaruah",
+        "articles/policies-regulations/*.md":"rupambaruah"
       },
     "ms.topic": {
         "articles/invest/*.md": "reference",
@@ -122,7 +125,8 @@
         "articles/industry-reference/*.md":"reference",
         "articles/customer-support/*.md":"reference",
         "articles/digital-platform-api/*.md":"reference",
-        "articles/monetize/*.md":"reference"
+        "articles/monetize/*.md":"reference",
+        "articles/policies-regulations/*.md":"reference"
       }
     }, 
     "template": [],
