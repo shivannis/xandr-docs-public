@@ -11,10 +11,18 @@ metadata:
   ms.date: 12/01/2023
 
 landingContent:
-  - title: Integrating Your Data
+   - title: Let's Get Started
     linkLists:
       - linkListType: overview
         links:
+          - text: Overview
+            url: home.md
+  - title: Data Integration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: integrating-your-data.md
           - text: Real Time Integrations
             url: real-time-integrations-contextual-data-providers.md
           - text: Audience Data Integrations
