@@ -41,6 +41,9 @@ landingContent:
             url: impression-counting.md
           - text: Mobile Advertising
             url: introduction-to-mobile-advertising.md
+          - text: Video Inventory and Formats
+            url: introduction-to-video-inventory-and-formats.md
+            
   - title: How to Guides
     linkLists:
       - linkListType: how-to-guide
