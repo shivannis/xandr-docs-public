@@ -23,57 +23,60 @@ landingContent:
         links:
           - text: Overview
             url: integrating-your-data.md
+         
+      - linkListType: reference
+        links:
           - text: Real Time Integrations
             url: real-time-integrations-contextual-data-providers.md
           - text: Audience Data Integrations
             url: audience-data-integrations.md
-      - linkListType: reference
-        links:
-          - text: Integrating with the Xandr Impression Bus
-            url: introduction-to-integrating-with-the-xandr-impression-bus.md
-          - text: Real Time Data Integration Instructions
-            url: real-time-data-integration-instructions.md
-          - text: Instant Audience Service
-            url: instant-audience-service.md
-  - title: Data Partner
+          - text: Segment Modifier Integrations
+            url: segment-modifier.md
+  - title: Data Marketplace
     linkLists:
       - linkListType: overview
         links:
-          - text: Data Partner Overview
+          - text: Overview
             url: data-marketplace-data-partner-overview.md
-          - text: Segment Billing Category Service
-            url: segment-billing-category-service.md
       - linkListType: reference
         links:
+          - text: Data Buyer Provider Service
+            url: data-buyer-provider-service.md
           - text: Data Cost Calculation Mechanics
             url: data-cost-calculation-mechanics.md
-          - text: Managing Public and Private (Custom) Segments
-            url: managing-public-and-private-custom-segments.md
+          - text: Segment Billing Category Service
+            url: segment-billing-category-service.md
   - title: Data Sharing
     linkLists:
       - linkListType: overview
         links:
-          - text: Member Data Sharing Service
-            url: member-data-sharing-service.md
-          - text: Removing Shared Segments
-            url: removing-shared-segments.md
+          - text: Overview
+            url: data-sharing.md
       - linkListType: reference
         links:
+          - text: Member Data Sharing Service
+            url: member-data-sharing-service.md
           - text: Member Data Sharing Service (Contextual Only)
             url: member-data-sharing-service-contextual-only.md
           - text: Member Data Sharing Service (Audience Only)
             url: member-data-sharing-service-audience-only.md   
+  - title: Data Segmentation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Creating and Managing Segments
+            url: creating-and-managing-segments.md
+          - text: Segment usage by buyers
+            url: segment-usage-by-buyers.md
   - title: Reporting and Tracking
     linkLists:
       - linkListType: overview
         links:
-          - text: Reporting and Tracking Overview
+          - text: Overview
             url: reporting-and-tracking.md
-          - text: Reporting Instructions
-            url: reporting-instructions.md
       - linkListType: reference
         links:
-          - text: Data Usage Report for Data Providers
+          - text: Data Usage Report
             url: data-usage-report-for-data-providers.md
           - text: Segment Loads Report
             url: segment-loads-report.md
