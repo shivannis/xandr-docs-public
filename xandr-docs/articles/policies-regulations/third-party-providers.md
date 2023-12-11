@@ -5,7 +5,7 @@ ms.date: 12/11/2013
 ---
 
 
-# Third party providers
+# Third party providers 
 
 The below list is a list of Xandr’s third-party
 partners which may receive Platform Data and other Information (as
