@@ -11,8 +11,8 @@ metadata:
   ms.date: 12/01/2023
 
 landingContent:
-   - title: Let's Get Started
-     linkLists:
+  - title: Let's Get Started
+    linkLists:
       - linkListType: overview
         links:
           - text: Overview
