@@ -2,7 +2,7 @@
   href: index.yml
 - name: Overview
   href: home.md
-- name: Integrating Your Data
+- name: Data Integration
   items:
   - name: Overview
     href: integrating-your-data.md
@@ -44,7 +44,7 @@
       href: segment-modifier-data-provider-integration.md
     - name: Segment Modifier FAQ
       href: segment-modifier-faq.md
-- name: Data Marketplace - Data Partner Overview
+- name: Data Marketplace
   items:
   - name: Overview
     href: data-marketplace-data-partner-overview.md
@@ -58,12 +58,6 @@
     href: managing-public-and-private-custom-segments.md
   - name: Segment Billing Category Service
     href: segment-billing-category-service.md
-- name: Creating and Managing Segments
-  items:
-  - name: Overview
-    href: creating-and-managing-segments.md
-  - name: API Segment Management
-    href: api-segment-management.md
 - name: Data Sharing
   items:
   - name: Overview
@@ -80,14 +74,22 @@
     href: member-data-sharing-service-contextual-only.md
   - name: Member Data Sharing Service (Audience Only)
     href: member-data-sharing-service-audience-only.md
-- name: Segment Usage by Buyers
+- name: Data Segmentation
   items:
-  - name: Overview
-    href: segment-usage-by-buyers.md
-  - name: Xandr's Bidders
-    href: xandr-s-bidders.md
-  - name: Xandr's UI Clients
-    href: xandr-s-ui-clients.md
+  - name: Creating and Managing Segments
+    items:
+    - name: Overview
+      href: creating-and-managing-segments.md
+    - name: API Segment Management
+      href: api-segment-management.md
+  - name: Segment Usage by Buyers
+    items:
+    - name: Overview
+      href: segment-usage-by-buyers.md
+    - name: Xandr's Bidders
+      href: xandr-s-bidders.md
+    - name: Xandr's UI Clients
+      href: xandr-s-ui-clients.md
 - name: Reporting and Tracking
   items:
   - name: Overview
