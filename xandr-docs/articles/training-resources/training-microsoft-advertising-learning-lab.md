@@ -1,7 +1,7 @@
 ---
 title : Training Microsoft Advertising's Learning Lab
 description : Learn using Microsoft Advertising's Learning Lab.
-ms.date: 12/11/2023
+ms.date: 11/12/2023
 ---
 
 
