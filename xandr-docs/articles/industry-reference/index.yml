@@ -15,42 +15,35 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction to Ad Serving
-            url: introduction-to-ad-serving.md
-          - text: Introduction to Mobile Advertising
-            url: introduction-to-mobile-advertising.md
-          - text: Introduction to Viewability
-            url: introduction-to-viewability.md
-          - text: Introduction to Video Inventory and Formats
-            url: introduction-to-video-inventory-and-formats.md
-          - text: Introduction to APIs
-            url: intro-to-apis.md
-          - text: Introduction to HTTP
-            url: intro-to-http.md
-  - title: Basic Concepts
-    linkLists:
-      - linkListType: overview
+          - text: Overview
+            url: welcome-industry-reference.md
+      - linkListType: reference
         links:
+          - text: Online Advertising and Ad Tech Glossary
+            url: online-advertising-and-ad-tech-glossary.md
+          - text: Online Advertising Self-Regulatory Organizations
+            url: online-advertising-self-regulatory-organizations.md
+  - title: Ad Tech Concepts
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Ad Serving
+            url: introduction-to-ad-serving.md
           - text: Ad Tags
             url: ad-tags.md
-          - text: Ways of Buying Ad Inventory
-            url: ways-of-buying-ad-inventory.md
-          - text: Under the Hood of Your Browser
-            url: under-the-hood-of-your-browser.md
-          - text: Impression Counting
-            url: impression-counting.md
+          - text: Creatives
+            url: creatives.md
           - text: Cookies
             url: cookies.md
           - text: Header Requests
             url: header-requests.md
-  - title: Creatives
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Creatives Overview
-            url: creatives.md
+          - text: Impression Counting
+            url: impression-counting.md
+  - title: How to Guides
       - linkListType: how-to-guide
         links:
+          - text: Add a Microsoft Outlook versatile creative
+            url: add-a-microsoft-outlook-versatile-creative.md
           - text: Build an HTML5 Xandr Creative in Google Web Designer  
             url: build-an-html5-xandr-creative-in-google-web-designer.md
           - text: Build an HTML5 Xandr Creative in Adobe Edge
@@ -59,7 +52,7 @@ landingContent:
             url: build-an-html5-xandr-creative-in-adobe-animate-cc.md
           - text: Use IAB's HTML5 clickTag Standard on Xandr
             url: use-iab-s-html5-clicktag-standard-on-xandr.md
-  - title: Additional Resources
+  - title: Best Practices
     linkLists:
       - linkListType: reference
         links:
@@ -67,12 +60,3 @@ landingContent:
             url: seller-best-practices.md
           - text: Publisher Best Practices for The Trade Desk
             url: publisher-best-practices-for-the-trade-desk.md
-          - text: Xandr Support for Ads.txt and App-Ads.txt
-            url: xandr-support-for-ads-txt-and-app-ads-txt.md
-          - text: Online Advertising and Ad Tech Glossary
-            url: online-advertising-and-ad-tech-glossary.md
-          - text: Online Advertising Self-Regulatory Organizations
-            url: online-advertising-self-regulatory-organizations.md
-          - text: Blogs and Publications
-            url: external-reference-materials.md
-          
