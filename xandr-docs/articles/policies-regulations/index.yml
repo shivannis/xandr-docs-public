@@ -68,4 +68,4 @@ landingContent:
       - linkListType: reference
         links:            
           - text: Third Party Providers
-            url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
+            url: third-party-providers.md
