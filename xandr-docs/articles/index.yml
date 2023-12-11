@@ -27,7 +27,7 @@ highlightedContent:
     # Card
     - title: Microsoft Advertising's Learning Lab
       itemType: training
-      url: industry-reference/index.yml
+      url: training-resources/index.yml
     # Card
     - title: Customer Support Portal Guide
       itemType: tutorial
