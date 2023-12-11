@@ -1,6 +1,6 @@
 ---
 title: Third Party Providers
-description: lorem-ipsum
+description: Learn about list of Third Party Providers, Ad-server Partners, Bidder Partners and User Sync Providers. 
 ms.date: 12/11/2013
 ---
 
