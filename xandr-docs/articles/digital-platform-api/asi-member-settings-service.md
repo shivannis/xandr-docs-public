@@ -51,7 +51,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/asi-member-setting?member
     ],
     "dbg_info": {
       "instance": "62.bm-hbapi.prod.nym2",
-      "slave_hit": true,
+      "s1ave_hit": true,
       "db": "227.bm-mysql.prod.nym2",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -60,7 +60,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/asi-member-setting?member
       "time": 46.911001205444,
       "start_microtime": 1421274164.9374,
       "version": "1.15.329",
-      "slave_lag": 0,
+      "s1ave_lag": 0,
       "member_last_modified_age": 544565,
       "output_term": "asi-member-settings"
     }
@@ -99,7 +99,7 @@ $ curl -b cookies -c cookies -X PUT -d @asi_member_setting_update 'https://api.a
     ],
     "dbg_info": {
       "instance": "62.bm-hbapi.prod.nym2",
-      "slave_hit": true,
+      "s1ave_hit": true,
       "db": "227.bm-mysql.prod.nym2",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -108,7 +108,7 @@ $ curl -b cookies -c cookies -X PUT -d @asi_member_setting_update 'https://api.a
       "time": 46.911001205444,
       "start_microtime": 1421274164.9374,
       "version": "1.15.329",
-      "slave_lag": 0,
+      "s1ave_lag": 0,
       "member_last_modified_age": 544565,
       "output_term": "asi-member-settings"
     }

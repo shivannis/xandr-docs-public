@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Batch Server-Side Segmentation
-Description: In this article, find information about the use cases, features, and workflow of the Batch Segment Service.
+description: In this article, find information about the use cases, features, and workflow of the Batch Segment Service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
