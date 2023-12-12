@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 This page has instructions for adding a user to a role.
 
-For general information about roles, see [Working with Roles using the API](./working-with-roles-using-the-api.md)
+For general information about roles, see [Working with Roles using the API](./working-with-roles-using-the-api.md).
 
 For instructions on creating your own roles, see [Create a Custom Role using the API](./create-a-custom-role-using-the-api.md).
 

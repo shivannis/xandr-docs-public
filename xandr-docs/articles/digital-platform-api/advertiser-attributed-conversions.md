@@ -1,5 +1,5 @@
 ---
-Title: Advertiser Attributed Conversions
+title: Advertiser Attributed Conversions
 description: Use the advertiser attributed conversions report to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other related information.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
@@ -76,7 +76,7 @@ This report can retrieve data for the last 90 days and only in UTC timezone.
 | `advertiser_name` | string | no | `AdvertiserName` | The name of the advertiser. |
 | `advertiser` | string | no | `AdvertiserName (123)` | **Deprecated** (as of October 17, 2016). |
 | `buyer_member_id` | int | yes | `4567` | The ID of the member that bought the impression. |
-| `auction_id` | int | yes | `6442894461734786633` | The ID of the impression event.<br><br>**Note**: Clients who subscribe to [log-level data feeds](../log-level-data/page/log-level-data-feeds.md) can use this ID to request additional information about the impression, such as geography and browser. |
+| `auction_id` | int | yes | `6442894461734786633` | The ID of the impression event.<br><br>**Note**: Clients who subscribe to [log-level data feeds](../log-level-data/log-level-data-feeds.md) can use this ID to request additional information about the impression, such as geography and browser. |
 
 ## Metrics
 
@@ -174,7 +174,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485ad
 
 See [Lookup Service](./lookup-service.md) for more details.
 
-**`GET` the report data from the report download service**
+**GET the report data from the report download service**
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download` service. You can find the service and report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 

@@ -118,7 +118,7 @@ curl -d @adserver-category-mapping.json -X POST --header "Content-Type: applicat
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `adserver_category_code` | string | Required | Which ad server category that will be associated with the ad server category mapping. |
-| `iab_subcategory_code` | string | Required | The IAB subcategory code for the ad server category mapping. The IAB subcategory code is part of the IAB Content Taxonomy that helps buyers understand seller inventory, and in turn, helps sellers better monetize their supply. |
+| `iab_subcategory_code` | string | Required | The IAB subcategory code for the ad server category mapping. The [IAB subcategory code](https://www.iab.com/guidelines/content-taxonomy/) is part of the [IAB Content Taxonomy](https://www.iab.com/guidelines/content-taxonomy/) that helps buyers understand seller inventory, and in turn, helps sellers better monetize their supply. |
 
 Example JSON file:
 

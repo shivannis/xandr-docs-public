@@ -13,17 +13,17 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api..com/report<br><br>(report JSON) | Retrieve the report |
+| `POST` | [https://api..com/report](https://api..com/report)<br><br>(report JSON) | Retrieve the report |
 
 > [!NOTE]
-> See the example below for the complete procedure.
+> See the [example](#example) below for the complete procedure.
 
 ## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `report_type` | enum | The type of report. Possible value: `"admin_backdoor"`.<br>**Required On**: `POST` |
-| `sql` | string | The sql query. Please specify a where clause / date range as filter, only select needed fields, etc. See the example below.<br>**Required On**: `POST` |
+| `sql` | string | The sql query. Please specify a where clause / date range as filter, only select needed fields, etc. See the [example](#example) below.<br>**Required On**: `POST` |
 | `hostname` | enum | The name of the database. Possible value: `"vt_jayz_internal"` (Vertica Jayz).<br>**Required On**: `POST` |
 
 ## Example
@@ -51,7 +51,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
                    "report_id": "f83b50a62b9c2ba2b204ab073b4b8efb",
                    "dbg_info": {
                    "instance": "16.hbapi.prod.nym1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "reads": 0,
                    "read_limit": 100,
@@ -72,7 +72,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 3. **Use the Report ID to retrieve the report data**
 
-    The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass "without_data" in the query string.
+    The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
     ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=f83b50a62b9c2ba2b204ab073b4b8efb'
@@ -97,7 +97,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
                    "execution_status": "ready",
                    "dbg_info": {
                    "instance": "16.hbapi.prod.nym1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "reads": 1,
                    "read_limit": 100,
@@ -115,7 +115,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 4. **Use the Download URL to save the report data to a file**
 
-    You use the "url" field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the "format" that you specified in your initial `POST` request.
+    You use the `"url"` field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the `"format"` that you specified in your initial `POST` request.
 
     ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=495d03a7667bac467bb488043ae336e9' > /tmp/admin_report.csv

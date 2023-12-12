@@ -37,12 +37,12 @@ Status can be one of the following values:
 | Status | Description |
 |:---|:---|
 | new | Adjustment has been entered into the system. |
-| pending | Adjustment has been picked up for processing. |
-| processing | Adjustment is being processed. |
-| propagating | Adjustment is complete and is propagating to reporting caches. |
-| completed | Adjustment is complete and should be available in reporting. |
-| failed | Error while processing adjustment. |
-| cancelled | User cancelled adjustment. |
+| `pending` | Adjustment has been picked up for processing. |
+| `processing` | Adjustment is being processed. |
+| `propagating` | Adjustment is complete and is propagating to reporting caches. |
+| `completed` | Adjustment is complete and should be available in reporting. |
+| `failed` | Error while processing adjustment. |
+| `cancelled` | User cancelled adjustment. |
 
 ## REST API
 
@@ -62,7 +62,7 @@ Status can be one of the following values:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `adjustment_type` | enum | **Default**: `"advertiser_revenue"`<br><br>The type of adjustment. <br><br>Possible values:<br> - `"advertiser_revenue"` - Adjusts the amount of revenue from the advertiser to the network and also re-attributes revshare payouts to publishers.<br> - `"advertiser_credit"` - Changes only the amount of revenue from the advertiser but does not re-attribute publisher payouts.<br> - `"publisher"` - Adjusts the media cost paid by the network to the publisher. |
+| `adjustment_type` | enum | **Default**: `"advertiser_revenue"`<br><br>The type of adjustment. Possible values:<br> - `"advertiser_revenue"` - Adjusts the amount of revenue from the advertiser to the network and also re-attributes revshare payouts to publishers.<br> - `"advertiser_credit"` - Changes only the amount of revenue from the advertiser but does not re-attribute publisher payouts.<br> - `"publisher"` - Adjusts the media cost paid by the network to the publisher. |
 | `created_on` | datetime | The date and time when the adjustment request was created. |
 | `end_date` | datetime | **Default**: `Yesterday` <br><br> The end date for the adjustment period. This must be at least 24 hours in the past. |
 | `id` | int | **Default**: Auto-incremented number (i.e. 123)<br><br>**Required On**: `PUT`, in query string.<br><br> The unique identifier for the adjustment. |
@@ -70,7 +70,7 @@ Status can be one of the following values:
 | `member_id` | int | The ID of the member who owns the adjustment. |
 | `notes` | string | Optional note to associate with this adjustment. |
 | `start_date` | datetime | **Required On**: `POST` <br><br> The start date for the adjustment. Adjustments will be applied evenly over the time range defined by `start_date` and `end_date`.<br><br>Adjustments are only eligible for processing if they have a `start_date` within 90 days from the time the adjustment is attempted to be executed. |
-| `status` | enum | **Default**: `"new"` <br><br> The current processing state for the adjustment. <br><br>Possible values: `"new"`, `"processing"`, `"propagating"`, `"pending"`, `"completed"`, `"failed"`, or `"cancelled"`. |
+| `status` | enum | **Default**: `"new"` <br><br> The current processing state for the adjustment. Possible values: `"new"`, `"processing"`, `"propagating"`, `"pending"`, `"completed"`, `"failed"`, or `"cancelled"`. |
 | `timezone` | string | **Default**: Default member timezone <br><br>The timezone the adjustment will be made in. Adjustments will be made to the first hour of the day of the given timezone. For a list of acceptable timezone values, see [API Timezones](./api-timezones.md). |
 | `user_id` | int | The ID of the user who made the adjustment. |
 
@@ -93,10 +93,10 @@ Status can be one of the following values:
 | `clicks` | int | Optional value for number of clicks over the adjustment period. |
 | `country` | string | The two-letter code for the country for which impression data will be adjusted. |
 | `height` | int | The height of placements for which data will be adjusted. |
-| `imp_types` | string | **Default**: `"kept"`<br><br>The types of impressions for which data will be adjusted. <br><br> Possible values:<br>`"default"`: A default creative served because no campaigns bid or no other creative was eligible.<br>`"kept"`: One of your managed advertisers served a creative.<br>`"resold"`: The impression was sold to a third-party buyer. |
+| `imp_types` | string | **Default**: `"kept"`<br><br>The types of impressions for which data will be adjusted. Possible values:<br>`"default"`: A default creative served because no campaigns bid or no other creative was eligible.<br>`"kept"`: One of your managed advertisers served a creative.<br>`"resold"`: The impression was sold to a third-party buyer. |
 | `imps` | int | Optional value for the number of impressions over the adjustment period. |
 | `media_cost` | money | The new media cost paid by the network to the publisher over the given adjustment period (`start_date` to `end_date`). If set to `null` or left blank, media cost will not be changed. |
-| `media_type` | object | The type of media for which data will be adjusted. <br><br>Possible values: `"banner"`, `"pop"`, `"text"`, `"interstitial"`, `"expandable"`, or `"video"`. |
+| `media_type` | object | The type of media for which data will be adjusted. Possible values: `"banner"`, `"pop"`, `"text"`, `"interstitial"`, `"expandable"`, or `"video"`. |
 | `placement_id` | int | **Required On**: `POST`, if `adjustment_type` is `"publisher"`. <br><br>The ID of the placement for which data will be adjusted. |
 | `post_click_convs` | int | Optional value for number of post click conversions over the adjustment period. |
 | `post_view_convs` | int | Optional value for number of post view conversions over the adjustment period. |

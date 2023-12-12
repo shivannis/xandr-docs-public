@@ -16,8 +16,8 @@ The Admin Log-Level Report (aka Honeycomb) gives Xandr admins an easy and safe w
 
 The JSON-formatted file must include three fields:
 
-- `report_type` - Set this field to "admin_backdoor_hive".
-- `hostname` - Set this field to "hd_quest_internal".
+- `report_type` - Set this field to `"admin_backdoor_hive"`.
+- `hostname` - Set this field to `"hd_quest_internal"`.
 - `sql` - This field should contain the **select** query that you want to run against a hive view. Other types of queries, such as insert, update, and create, are not supported.
 
 > [!NOTE]
@@ -36,7 +36,7 @@ $ cat honeycomb
     }
 ```
 
-## Step 2. POST the request to the Report Service
+## Step 2. POST the request to the report service
 
 You `POST` the JSON request and get back a `report_id`.
 
@@ -48,7 +48,7 @@ $ curl -b cookies -c cookies -X POST -d @honeycomb 'https://api.appnexus.com/rep
                    "report_id": "727d8ac797dbd2f4fcdf1b5b3dfacc78",
                    "dbg_info": {
                    "instance": "33.bm-hbapi.prod.ams1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "awesomesauce_cache_used": false,
                    "warnings": [
@@ -61,9 +61,9 @@ $ curl -b cookies -c cookies -X POST -d @honeycomb 'https://api.appnexus.com/rep
                    }
 ```
 
-## Step 3. GET the report status from the Report Service
+## Step 3. GET the report status from the report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is "ready".
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479ccd9df3e963d328b111'
@@ -91,7 +91,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479cc
                    "execution_status": "ready",
                    "dbg_info": {
                    "instance": "07.hbapi.sand-08.lax1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "awesomesauce_cache_used": false,
                    "warnings": [
@@ -113,7 +113,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479cc
 > select * from bidder.report where id=<id>' and 'select * from bidder.report_data where id=<id>
 > ```
 
-## Step 4. GET the report data from the Report Download Service
+## Step 4. GET the report data from the report download service
 
 To download the report data, make another `GET` call with the Report ID, but this time to the `report-download` service. You can find the service and Report ID in the `url` field of the previous `GET` response.
 

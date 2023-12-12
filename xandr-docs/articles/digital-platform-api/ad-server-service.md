@@ -22,7 +22,7 @@ This read-only service allows you to view information about ad servers that can 
 |:---|:---|:---|
 | `declare_to_adx` | boolean | If true, the ad server is identified when bidding on Google Ad Manager inventory. Identification is required to be in full compliance with Google Ad Manager creative policies [https://support.google.com/adwordspolicy/answer/94230?hl=en&rd=1](https://support.google.com/adwordspolicy/answer/94230?hl=en&rd=1). |
 | `description` | string | The description of the ad server. |
-| hostnames | array of objects | A list of host names that can be associated with the ad server. This field can be edited only by an administrator. |
+| `hostnames` | array of objects | A list of host names that can be associated with the ad server. This field can be edited only by an administrator. |
 | `id` | int | The internal ID associated with the ad server. |
 | `last_modified` | timestamp | The date and time (in the form YYYY-MM-DD HH:MM:SS) when the ad server configuration was last updated in our system. |
 | `name` | string | The name of the ad server. |

@@ -113,7 +113,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
 | `venue` | int | Yes | `321512` | The name of the cluster of domain, site, tag, and user country that Xandr' optimization system uses to determine bid valuations. A campaign cannot target a venue explicitly. |
 | `billing_period_start_date` | datetime | No | `"2015-05-25 19:19:53"` | The earliest date of the insertion order's billing period.<br><br>**Note: Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
-| `billing_period_end_date` | datetime | No | `"2015-05-30 19:19:53"` | The last date of the insertion order's billing period.<br>**Note: Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| `billing_period_end_date` | datetime | No | `"2015-05-30 19:19:53"` | The last date of the insertion order's billing period.<br><br>**Note: Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | `billing_period_external_code` | string | No | `"houseware245"` | The custom code for the billing period (`budget_interval`). |
 
 ## Metrics
@@ -146,8 +146,8 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `post_view_convs_rate` | double | `0.000320` | post_view_convs / imps | The rate of post view conversions to impressions. |
 | `post_click_convs_rate` | double | `0.000064` | post_click_convs / imps | The rate of post click conversions to impressions. |
 | `post_click_conversion_pixel` | int | `52` | post_click_convs for that pixel_id | The number of post click conversions for a specific pixel. For more information on how we attribute post-view (and other) conversions, [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
-| post_click_revenue_pixel | money | 184.25 | post_click_revenue for that pixel_id | The amount of revenue earned for a specific pixel. |
-| post_view_conversion_pixel | int | 174 | post_view_convs for that pixel_id | The number of post view conversions for a specific pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
+| `post_click_revenue_pixel` | money |`184.25` | post_click_revenue for that pixel_id | The amount of revenue earned for a specific pixel. |
+| `post_view_conversion_pixel` | int | `174` | post_view_convs for that pixel_id | The number of post view conversions for a specific pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
 | `post_view_revenue_pixel` | money | `303.54` | post_view_revenue for that pixel_id | The amount of revenue earned for a specific pixel. |
 | `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | The profit per 1000 impressions. |
 | `rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
@@ -205,7 +205,7 @@ $ cat advertiser_analytics
 }
 ```
 
-**`POST` the request to the reporting service**
+**POST the request to the reporting service**
 
 You `POST` the JSON request and get back a report ID.
 
@@ -224,7 +224,7 @@ $ curl -b cookies -c cookies -X post -d @advertiser_analytics "https://api.appne
 }
 ```
 
-**`GET` the report status from the report service**
+**GET the report status from the report service**
 
 Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is `"ready"`. Then use the `report-download` service to save the reporting data to a file (described in the next step).
 
@@ -259,7 +259,7 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/report?id=dc0314bda065975
 }
 ```
 
-**`GET` the report data from the report download service**
+**GET the report data from the report download service**
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
