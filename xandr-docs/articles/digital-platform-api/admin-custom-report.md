@@ -13,7 +13,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api..com/report](https://api..com/report)<br><br>(report JSON) | Retrieve the report |
+| `POST` | https://api..com/report<br><br>(report JSON) | Retrieve the report |
 
 > [!NOTE]
 > See the [example](#example) below for the complete procedure.
