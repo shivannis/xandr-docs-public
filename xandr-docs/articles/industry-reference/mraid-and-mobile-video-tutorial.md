@@ -1,12 +1,12 @@
 ---
-title : Industry Reference - MRAID and Mobile Video Tutorial
+title : MRAID and Mobile Video Tutorial
 description : Learn about MRAID, what it does, and why we need it. 
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-# Industry Reference - MRAID and mobile video tutorial 
+# MRAID and mobile video tutorial 
 
 This page offers an introduction to MRAID and mobile video. It attempts
 to answer questions such as:

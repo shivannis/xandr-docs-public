@@ -1,12 +1,12 @@
 ---
-title : Industry Reference - Introduction to Viewability
+title : Introduction to Viewability
 description : Learn about viewability and how it can be measured in Digital Media.
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-# Industry Reference -  Introduction to viewability
+# Introduction to viewability
 
 ## What is viewability and why is it important?
 

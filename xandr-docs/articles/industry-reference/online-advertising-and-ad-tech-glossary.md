@@ -1,12 +1,12 @@
 ---
-title :  Industry Reference - Online Advertising and Ad Tech Glossary
+title :  Online Advertising and Ad Tech Glossary
 description : The page covers glossary of terms from Online Advertising and Ad tech.   
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-#  Industry Reference - Online advertising and Ad tech glossary
+# Online advertising and Ad tech glossary
 
 The Xandr Online Advertising and Ad Tech
 Glossary provides definitions of common and important terms relating to
