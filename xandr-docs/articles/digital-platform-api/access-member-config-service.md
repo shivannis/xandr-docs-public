@@ -13,9 +13,9 @@ The access-member-config service allows you to manage which members on the platf
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| POST | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Enable a member's access control. |
-| PUT | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Modify a member's access control settings. |
-| GET | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | View a member's access control settings. |
+| `POST` | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Enable a member's access control. |
+| `PUT` | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | Modify a member's access control settings. |
+| `GET` | [https://api.appnexus.com/access-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-member-config?member_id=MEMBER_ID) | View a member's access control settings. |
 
 ## JSON fields
 
