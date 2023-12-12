@@ -1,63 +1,31 @@
 ---
-Title : Admin Log-Level Report
-Description : The Admin Log-Level Report (aka Honeycomb) gives
+title: Admin Log-Level Report
+description: Learn the process to use the admin log-level report in order to run select queries for log-level data.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Xandr admins an easy and safe way to run
-**select** queries for log-level data. This page walks you through the
 ---
 
+# Admin log-level report
 
-# Admin Log-Level Report
+The Admin Log-Level Report (aka Honeycomb) gives Xandr admins an easy and safe way to run **select** queries for log-level data. This page walks you through the process.
 
-
-
-The Admin Log-Level Report (aka Honeycomb) gives
-Xandr admins an easy and safe way to run
-**select** queries for log-level data. This page walks you through the
-process.
-
-
-
-<b>Note:</b> This report is currently in
-**alpha** phase. Feel free to use internally, but dependence on this
-service for client deliverables is not advisable.
-
-
-
-
+> [!NOTE]
+> This report is currently in **alpha** phase. Feel free to use internally, but dependence on this service for client deliverables is not advisable.
 
 ## Step 1. Create a JSON-formatted report request
-
-
 
 The JSON-formatted file must include three fields:
 
 - `report_type` - Set this field to "admin_backdoor_hive".
 - `hostname` - Set this field to "hd_quest_internal".
-- `sql` - This field should contain the **select** query that you want
-  to run against a hive view. Other types of queries, such as insert,
-  update, and create, are not supported.
+- `sql` - This field should contain the **select** query that you want to run against a hive view. Other types of queries, such as insert, update, and create, are not supported.
 
+> [!NOTE]
+> - If a request takes more than 6 minutes, it will be stopped. Therefore, please specify the narrowest scope possible for your query (see below for an example).
+> - Make sure to filter your results by dh and not datetime! If you filter by datetime, hive will pull the entire log to disk, not only the hour you're searching.
+> - Lastly, remember that most logs are only retained for 3 days.
 
-
-
-
-<b>Note:</b>
-
-
-
-- If a request takes more than 6 minutes, it will be stopped. Therefore,
-  please specify the narrowest scope possible for your query (see below
-  for an example).
-- Make sure to filter your results by dh and not datetime! If you filter
-  by datetime, hive will pull the entire log to disk, not only the hour
-  you're searching.
-- Lastly, remember that most logs are only retained for 3 days.
-
-
-
-``` pre
+```
 $ cat honeycomb
 {
     "report": {
@@ -68,17 +36,11 @@ $ cat honeycomb
     }
 ```
 
-
-
-
-
-
-
 ## Step 2. POST the request to the Report Service
 
 You `POST` the JSON request and get back a `report_id`.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @honeycomb 'https://api.appnexus.com/report'
                    {
                    "response": {
@@ -99,17 +61,11 @@ $ curl -b cookies -c cookies -X POST -d @honeycomb 'https://api.appnexus.com/rep
                    }
 ```
 
-
-
-
-
 ## Step 3. GET the report status from the Report Service
 
-Make a `GET` call with the report ID to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-"ready".
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is "ready".
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479ccd9df3e963d328b111'
                    {
                    "response": {
@@ -148,39 +104,23 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479cc
                    }
 ```
 
-
-
-<b>Note:</b> **Advanced Debugging**
-
-If you feel the need to debug your request or see metadata about the
-file containing your results (size, path, errors, etc.), you can make
-the following query in mysql:
-
-``` pre
-select * from bidder.report where id=<id>' and 'select * from bidder.report_data where id=<id>
-```
-
-
-
-
-
-
+> [!NOTE]
+> **Advanced Debugging**
+>
+> If you feel the need to debug your request or see metadata about the file containing your results (size, path, errors, etc.), you can make the following query in mysql:
+>
+> ```
+> select * from bidder.report where id=<id>' and 'select * from bidder.report_data where id=<id>
+> ```
 
 ## Step 4. GET the report data from the Report Download Service
 
-To download the report data, make another `GET` call with the Report ID,
-but this time to the `report-download` service. You can find the service
-and Report ID in the `url` field of the previous `GET` response.
+To download the report data, make another `GET` call with the Report ID, but this time to the `report-download` service. You can find the service and Report ID in the `url` field of the previous `GET` response.
 
+> [!NOTE]
+> If an error occurs during download, the response header may include an HTTP error code an message. Use `-i` or `-v` in your call to expose the response header.
 
-
-<b>Note:</b> If an error occurs during
-download, the response header may include an HTTP error code and
-message. Use `-i` or `-v` in your call to expose the response header.
-
-
-
-``` pre
+```
 $ curl -i -b cookies -c cookies 'https://api.appnexus.com/report-download?id=727d8ac797dbd2f4fcdf1b5b3dfacc78'
                  HTTP/1.1 200 OK
                  Date: Fri, 19 Apr 2013 14:19:44 GMT
@@ -217,9 +157,3 @@ $ curl -i -b cookies -c cookies 'https://api.appnexus.com/report-download?id=727
                  7301110445143310330     1177457 2       0.0
                  2531722883911340869     837015  4       0.0
 ```
-
-
-
-
-
-
