@@ -119,9 +119,9 @@ Data in this report is retained for 420 days.
 | Total Convs | The total number of post-view and post-click conversions. |
 | Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
 | Revenue | The total revenue; the sum of booked and resold revenue. |
-| Revenue eCPM | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Industry Reference Glossary](../ad-tech-references/online-advertising-and-ad-tech-glossary.md). |
-| Revenue eCPC | The total revenue, expressed as eCPC. For definitions of eCPM and other terms, see the [Industry Reference Glossary](../ad-tech-references/online-advertising-and-ad-tech-glossary.md). |
-| Revenue eCPA | The revenue per conversion or acquisition, expressed as eCPA. For the definition of eCPA, see the [Industry Reference Glossary](../ad-tech-references/online-advertising-and-ad-tech-glossary.md). |
+| Revenue eCPM | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| Revenue eCPC | The total revenue, expressed as eCPC. For definitions of eCPM and other terms, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| Revenue eCPA | The revenue per conversion or acquisition, expressed as eCPA. For the definition of eCPA, see the [Industry Reference Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
 | Cost eCPM | The cost per thousand impressions. |
 | Cost | The total media cost across direct publishers and RTB inventory. |
 | Cost eCPC | The cost per click. |
