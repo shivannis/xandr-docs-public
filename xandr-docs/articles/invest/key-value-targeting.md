@@ -155,7 +155,7 @@ We have two groups on this tree:
 
     Your **Key/Value Targeting** should look like this:
 
-    :::image type="content" source="media/KeyValueDialogExp.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from both the groups of the expression tree selected.":::
+    :::image type="content" source="media/key-value-dialog-exp.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from both the groups of the expression tree selected.":::
 
     Click **Add** to save your key/value target.
 
