@@ -82,7 +82,7 @@ Notice in the first statement that we lumped Seattle and LA together. When you c
 
 With our statement in key/value sets, we now need to figure out how to group those sets together with **and** and **or** operators. One way to do this is by building an expressions tree:
 
-:::image type="content" source="media/UIOperatorDiagram.png" alt-text="An expression tree that illustrates an example of grouping key/value sets together with and and or operators.":::
+:::image type="content" source="media/ui-operator-diagram.png" alt-text="An expression tree that illustrates an example of grouping key/value sets together with and and or operators.":::
 
 We have two groups on this tree:
 
