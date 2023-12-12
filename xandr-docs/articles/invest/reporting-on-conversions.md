@@ -20,7 +20,7 @@ The **Last Load** column displays how long ago any web page with the conversion 
 
 To view more information about the conversion pixel, mouse-over the icons in the **Status** column. The **Status** will display information regarding the health of the conversion pixel. For example, look at the **Status** message below. In this example, if your conversion pixel isn't associated with an active line item, then you might be missing out on tracking valuable conversions. Similarly, if your pixel has never loaded, then you might need to investigate with your advertiser to make sure the pixel is placed correctly.
 
-:::image type="content" source="media/ConversionPixels_Statuses.png" alt-text="Screenshot of conversion pixels status.":::
+:::image type="content" source="media/conversion-pixels-statuses.png" alt-text="Screenshot of conversion pixels status.":::
 
 For details on using this report via the API, see [Conversion Pixel Last Fire](../digital-platform-api/conversion-pixel-last-fire.md).
 
