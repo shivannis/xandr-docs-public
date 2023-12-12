@@ -1,70 +1,25 @@
 ---
-Title : Bidder Info Service
-Description : The Bidder Info Service returns the capabilities of each bidder. This
+title: Bidder Info Service
+description: In this article, find information about the Bidder Info Service along with an example response.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
+# Bidder info service
 
-# Bidder Info Service
-
-
-
-The Bidder Info Service returns the capabilities of each bidder. This
-includes the platforms, such as app or site, and the mediaTypes, such as
-banner, that the bidder will bid on. The service also returns a contact
-email for the bidder maintainer and the current status of the bidder.
-For more information about available demand partners and their
-capabilities, see <a
-href="monetize_monetize-standard/prebid-server-premium-demand-partner-integrations.md"
-class="xref" target="_blank">PSP Demand Partner Integrations</a>.
-
-
+The Bidder Info Service returns the capabilities of each bidder. This includes the platforms, such as app or site, and the mediaTypes, such as banner, that the bidder will bid on. The service also returns a contact email for the bidder maintainer and the current status of the bidder. For more information about available demand partners and their capabilities, see [PSP Demand Partner Integrations](../monetize/prebid-server-premium-demand-partner-integrations.md).
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `https://api.appnexus.com/prebid/bidder-info` | Return all bidder information for this config. |
 
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="bidder-info-service__entry__1"
-class="entry align-center colsep-1 rowsep-1">HTTP Method</th>
-<th id="bidder-info-service__entry__2"
-class="entry align-center colsep-1 rowsep-1">Endpoint</th>
-<th id="bidder-info-service__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="bidder-info-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="bidder-info-service__entry__2"><a
-href="https://api.appnexus.com/prebid/bidder-info" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/prebid/bidder-info</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="bidder-info-service__entry__3">Return all bidder information
-for this config.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Example Response**
+## Example response
 
 The response is a JSON object containing bidder info objects.
 
-``` pre
+```
 {
   "33across": {
     "capabilities": {
@@ -142,9 +97,3 @@ The response is a JSON object containing bidder info objects.
   },
   ...
 ```
-
-
-
-
-
-
