@@ -69,6 +69,8 @@ additionalContent:
               url: getting-started/index.yml
             - text: References
               url: getting-started/index.yml
+            - text: Release Notes
+              url: getting-started/index.yml
         # Card
         - title: Impression Bus API
           links:
@@ -76,6 +78,8 @@ additionalContent:
               url: impression-bus/index.yml
             - text: References
               url: impression-bus/index.yml
+            - text: Release Notes
+              url: bidders/xandr-bidder-release-notes.md
         # Card
         - title: Yield Analytics API
           links:
@@ -84,12 +88,12 @@ additionalContent:
             - text: References
               url: yield-analytics-api/index.yml
         # Card
-        - title: Release Notes
-          links:
-            - text: Digital Platform API Release Notes (Work in Progress)
-              url: getting-started/index.yml
-            - text: Impression Bus API Release Notes
-              url: bidders/xandr-bidder-release-notes.md
+        #- title: Release Notes
+          #links:
+           # - text: Digital Platform API Release Notes (Work in Progress)
+             # url: getting-started/index.yml
+            #- text: Impression Bus API Release Notes
+             # url: bidders/xandr-bidder-release-notes.md
 
     - title: Additional Resources and Capabilities
       items:
