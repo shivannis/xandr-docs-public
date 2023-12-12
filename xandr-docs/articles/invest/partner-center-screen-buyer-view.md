@@ -57,7 +57,7 @@ with the seller.
   were generated from inventory that you purchased from the seller.
 - **CTR** - Your click-through rate on the
   seller's inventory. For more information on click-through rates see
-  the [Glossary](../ad-tech-references/online-advertising-and-ad-tech-glossary.md).
+  the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md).
 - **Convs** - The number of conversions
   that were attributed to inventory that you purchased from the seller.
 - **Revenue** - The amount of revenue that
