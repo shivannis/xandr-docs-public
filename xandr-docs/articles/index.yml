@@ -50,9 +50,9 @@ additionalContent:
       - title: Microsoft Monetize (Work in Progress)
         summary: (*Powered by Xandr)
         links:
-          - url: getting-started/index.yml
+          - url: invest/index.yml
             text: Product Documentation
-          - url: ./file1b.md OR /file1b
+          - url: invest/index.yml
             text: Release Notes
       # Card
       - title: Microsoft Curate
@@ -68,11 +68,11 @@ additionalContent:
         - title: Digital Platform API (Work in Progress)
           links:
             - text: Overview
-              url: getting-started/index.yml
+              url: invest/index.yml
             - text: References
-              url: getting-started/index.yml
+              url: invest/index.yml
             - text: Release Notes
-              url: getting-started/index.yml
+              url: invest/index.yml
         # Card
         - title: Impression Bus API
           links:
