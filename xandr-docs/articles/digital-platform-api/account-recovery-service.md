@@ -75,7 +75,7 @@ $ cat reset_password_2
 
 #### Guidelines for creating your password
 
-When creating your password, please create a complex password with the following:
+When creating your password, create a complex password with the following:
 
 - 10 or more characters.
 - 64 or fewer characters.

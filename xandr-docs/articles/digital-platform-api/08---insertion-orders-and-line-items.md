@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# 08 - Insertion Orders and Line Items
+# 08 - Insertion orders and line items
 
 Once the advertiser is properly configured, we can begin building out the sell-side hierarchy.  
 

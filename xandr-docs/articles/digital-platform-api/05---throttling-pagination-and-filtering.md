@@ -1,6 +1,6 @@
 ---
 title: 05 - Throttling Pagination and Filtering
-description: In this article, learn about concepts such as, Throttling, Pagination, and Filtering, accompanied by a set of examples.
+description: In this article, learn about the concepts such as, Throttling, Pagination, and Filtering, accompanied by examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -42,7 +42,7 @@ The API limits responses to any request to 100 objects. Pagination will allow yo
 > [!NOTE]
 > The output has been abbreviated to save space.
 
-### Example: Pagination
+### Pagination: Example
 
 ```
 $ curl -c cookies -b cookies 'https://api.appnexus.com/creative?start_element=0&num_elements=100'
@@ -85,7 +85,7 @@ Filtering allows you to specify a subset of objects to be returned by the API. T
 > [!NOTE]
 > The output of the API call has been abbreviated to save space.
 
-### Example: Filtering
+### Filtering: Example
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?min_last_modified=2013-05-14+00:00:00'

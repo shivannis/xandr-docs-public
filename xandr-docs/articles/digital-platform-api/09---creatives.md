@@ -1,6 +1,6 @@
 ---
 title: 09 - Creatives
-description: In this article, learn how a creative is associated with a campaign and explore the necessary fields with detailed examples.
+description: In this article, learn how a creative is associated with a campaign and explore the necessary fields with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -22,7 +22,7 @@ For any campaign to serve, it must have valid creatives associated with it. All 
 
 HTML or JavaScript returned by a URL ("format" values of "url-html" and "url-js", respectively) are relatively straight-forward formats to use for creatives. Generally, URLs do not contain characters that would normally conflict the JSON syntax. Registering creatives of this format is relatively straightforward. Please refer to the example below for the "url-html" format. The "url-js" format is very similar, so a single example is presented.
 
-### HTML and JavaScript returned by a URL: Example
+### Example for the "url-html" format
 
 Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and media URL.
 
@@ -58,7 +58,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 
 Hosted Flash and image formats ("format" values of "flash" and "image", respectively) are a bit more difficult to create via the API. The image for Flash file must be base-64 encoded and included in the "content" field. Once uploaded to the API, we will begin transferring this creative to our CDN (content delivery network). After the creative has been fully transferred to the CDN, the creative "content" will be changed to null and the "media_url" will be changed to point to the creative's location on the CDN. The "format" field will stay either "image" or "flash", depending on the original value. The example below shows how to upload an image creative. The image we use for the sample is located here: [https://dummyimage.com/300x250](https://dummyimage.com/300x250).
 
-### Hosted Flash and images: Example
+### How to upload an image creative?
 
 From the terminal, you can obtain the base-64 encoding for a file with the command below.
 
@@ -177,7 +177,7 @@ Raw HTML and JavaScript  ("format" values of "raw-html" and "raw-js", respectiv
 > [!NOTE]
 > Any line returns must be encoded as "\r\n" since including actual line returns results in invalid JSON syntax.
 
-### Raw HTML and JavaScript: Example
+### How to upload a simple HTML creative?
 
 Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and content. Because of the way that we write our raw HTML creatives, the HTML must be wrapped in a JavaScript document.write() call.
 
@@ -213,9 +213,9 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 ## HTML in an IFRAME
 
 To create an HTML creative that is served in an IFRAME tag ("format" value of "iframe-html"), it is very similar to creating a raw HTML
-creative. The primary difference is that the HTML is **not** wrapped in a JavaScript document.write() call. The example below illustrates how to create and IFRAME HTML creative.
+creative. The primary difference is that the HTML is **not** wrapped in a JavaScript document.write() call. The example below illustrates how to create an IFRAME HTML creative.
 
-### HTML in an IFRAME: Example
+### How to create an IFRAME HTML creative?
 
 Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, content, and original content.
 
@@ -281,7 +281,10 @@ $ cat campaign
 ### Creative service
 
 To associate a creative to multiple campaigns, PUT a request to the creative service, updating "campaigns" field. The example below
-illustrates the syntax. Note that the API call has been abbreviated for readability.
+illustrates the syntax.
+
+> [!NOTE]
+> The API call has been abbreviated for readability.
 
 ```
 $ cat creative

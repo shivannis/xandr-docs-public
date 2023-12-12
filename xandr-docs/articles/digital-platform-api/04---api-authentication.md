@@ -1,6 +1,6 @@
 ---
 title: 04 - API Authentication
-description: In this article, learn step-by-step instructions on how to authenticate an API service with detailed examples.
+description: In this article, learn step-by-step instructions on how to authenticate an API service with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

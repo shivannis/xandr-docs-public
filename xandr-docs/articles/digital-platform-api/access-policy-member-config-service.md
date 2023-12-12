@@ -1,6 +1,6 @@
 ---
 title: Access Policy Member Config Service
-description: In this article, learn about the Access Policy Member Config service, their JSON fields, and REST API with thorough example.
+description: In this article, learn about the Access Policy Member Config service, their JSON fields, and REST API with a thorough example.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,7 +16,7 @@ The **access-policy-member-config** service is available only to Xandr administ
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-policy-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-policy-member-config?member_id=MEMBER_ID) | View a customer's access settings. |
+| `GET` | [https://api.appnexus.com/access-policy-member-config?member_id=MEMBER_ID](https://api.appnexus.com/access-policy-member-config?member_id=MEMBER_ID) | View a customer's access settings. |
 
 ## JSON fields
 

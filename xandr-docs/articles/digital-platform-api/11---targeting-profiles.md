@@ -11,7 +11,7 @@ All targeting in Xandr is controlled via targeting profiles. This allows us to k
 
 ## User frequency
 
-The example below will allow 3 impressions per user per day with at least 20 minutes between impressions.
+The example below will allow three impressions per user per day with at least 20 minutes between impressions.
 
 ```
 $ cat profile

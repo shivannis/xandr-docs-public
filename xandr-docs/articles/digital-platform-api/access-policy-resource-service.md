@@ -16,8 +16,8 @@ The **access-policy-resource** service allows you to retrieve the resources bas
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-policy-resource](https://api.appnexus.com/access-policy-resource) | View all resources. |
-| GET | [https://api.appnexus.com/access-policy-resource?resource_type=RESOURCE_TYPE](https://api.appnexus.com/access-policy-resource?resource_type=RESOURCE_TYPE) | View all resources for a given type. |
+| `GET` | [https://api.appnexus.com/access-policy-resource](https://api.appnexus.com/access-policy-resource) | View all resources. |
+| `GET` | [https://api.appnexus.com/access-policy-resource?resource_type=RESOURCE_TYPE](https://api.appnexus.com/access-policy-resource?resource_type=RESOURCE_TYPE) | View all resources for a given type. |
 
 ## JSON fields
 

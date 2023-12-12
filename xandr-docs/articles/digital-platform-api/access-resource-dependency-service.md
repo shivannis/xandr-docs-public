@@ -17,9 +17,9 @@ resource. Use this service to manage dependencies within the system that are und
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-resource-dependency](https://api.appnexus.com/access-resource-dependency) | View all resources and their dependencies. |
-| POST | [https://api.appnexus.com/access-resource-dependency?resource_id=ID](https://api.appnexus.com/access-resource-dependency?resource_id=ID) | Create dependencies to a resource. |
-| DELETE | [https://api.appnexus.com/access-resource-dependency?resource_id=ID](https://api.appnexus.com/access-resource-dependency?resource_id=ID) | Delete a resource. |
+| `GET` | [https://api.appnexus.com/access-resource-dependency](https://api.appnexus.com/access-resource-dependency) | View all resources and their dependencies. |
+| `POST` | [https://api.appnexus.com/access-resource-dependency?resource_id=ID](https://api.appnexus.com/access-resource-dependency?resource_id=ID) | Create dependencies to a resource. |
+| `DELETE` | [https://api.appnexus.com/access-resource-dependency?resource_id=ID](https://api.appnexus.com/access-resource-dependency?resource_id=ID) | Delete a resource. |
 
 ## JSON fields
 

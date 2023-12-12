@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 ## Diagram
 
-:::image type="content" source="media/buy-side-overview.png" alt-text="Diagram that illustrates Buy Side framework.":::
+:::image type="content" source="media/buy-side-overview.png" alt-text="Diagram that illustrates buy-side framework.":::
 
 ## Object definitions
 

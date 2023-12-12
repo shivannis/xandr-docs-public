@@ -16,9 +16,9 @@ The **access-platform-user-role** service can be used to manage roles for users
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-platform-user-role](https://api.appnexus.com/access-platform-user-role) | View all platform users and their roles. |
-| POST | [https://api.appnexus.com/access-platform-user-role?user_id=UID&role_id=ROLE_ID](https://api.appnexus.com/access-platform-user-role?user_id=UID&role_id=ROLE_ID) | Create a platform user/role association. |
-| DELETE | [https://api.appnexus.com/access-platform-user-role](https://api.appnexus.com/access-platform-user-role) | Delete a platform user/role association. |
+| `GET` | [https://api.appnexus.com/access-platform-user-role](https://api.appnexus.com/access-platform-user-role) | View all platform users and their roles. |
+| `POST` | [https://api.appnexus.com/access-platform-user-role?user_id=UID&role_id=ROLE_ID](https://api.appnexus.com/access-platform-user-role?user_id=UID&role_id=ROLE_ID) | Create a platform user/role association. |
+| `DELETE` | [https://api.appnexus.com/access-platform-user-role](https://api.appnexus.com/access-platform-user-role) | Delete a platform user/role association. |
 
 ## JSON fields
 

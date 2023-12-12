@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Ad Profile service
+# Digital Platform API - Ad profile service
 
 A network may want to create "ad approval profiles" to define what kinds of brands and creatives can and cannot run on their publishers' pages. The Ad Profile Service lets you create your ad approval profiles at the member level or the publisher level. To create them at the publisher level, include a publisher ID. If no publisher ID is included, it will be a network-level profile available for use with all publishers.
 
@@ -25,15 +25,15 @@ banning entire brands or members.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile) | View all ad profiles for a member. |
-| GET | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | View a particular ad profile. |
-| GET | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID) | View all ad profiles for a specific publisher. |
-| POST | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile)<br>(ad_profile JSON) | Add a new ad profile at the member level. |
-| POST | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID)<br>(ad_profile JSON) | Add a new ad profile at the publisher level. |
-| PUT | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID)<br>(ad_profile JSON) | Modify an existing ad profile. |
-| DELETE | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | Delete an existing ad profile. |
-| GET | [https://api.appnexus.com/ad-profile?sort=description](https://api.appnexus.com/ad-profile?sort=description) | Sort ad profiles alphabetically by description. |
-| GET | [https://api.appnexus.com/ad-profile?search=text_of_description](https://api.appnexus.com/ad-profile?search=text_of_description) | Search for an ad profile by its description. |
+| `GET` | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile) | View all ad profiles for a member. |
+| `GET` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | View a particular ad profile. |
+| `GET` | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID) | View all ad profiles for a specific publisher. |
+| `POST` | [https://api.appnexus.com/ad-profile](https://api.appnexus.com/ad-profile)<br>(ad_profile JSON) | Add a new ad profile at the member level. |
+| `POST` | [https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ad-profile?publisher_id=PUBLISHER_ID)<br>(ad_profile JSON) | Add a new ad profile at the publisher level. |
+| `PUT` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID)<br>(ad_profile JSON) | Modify an existing ad profile. |
+| `DELETE` | [https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID](https://api.appnexus.com/ad-profile?id=AD_PROFILE_ID) | Delete an existing ad profile. |
+| `GET` | [https://api.appnexus.com/ad-profile?sort=description](https://api.appnexus.com/ad-profile?sort=description) | Sort ad profiles alphabetically by description. |
+| `GET` | [https://api.appnexus.com/ad-profile?search=text_of_description](https://api.appnexus.com/ad-profile?search=text_of_description) | Search for an ad profile by its description. |
 
 ## JSON fields
 
@@ -100,7 +100,7 @@ banning entire brands or members.
 | Field | Type | Description |
 |---|---|---|
 | `id` | int | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs. |
-| `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
+| `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br><br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
 | `parent_brand_id` | int | When a brand has a parent brand, the default value is set to null.  |
 
 ### Creatives
@@ -160,7 +160,7 @@ banning entire brands or members.
 
 ### Create a new ad profile
 
-Below we have used the "cat" command to output an example ad profile JSON file.
+Below we have used the `cat` command to output an example ad profile JSON file.
 
 > [!NOTE]
 > This is a fairly complex profile.

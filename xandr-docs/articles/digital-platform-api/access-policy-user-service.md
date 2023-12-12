@@ -16,7 +16,7 @@ The **access-policy-user** service allows you to identify which roles and teams 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-policy-user?user_id=USER_ID](https://api.appnexus.com/access-policy-user?user_id=USER_ID) | View a user's roles and teams. |
+| `GET` | [https://api.appnexus.com/access-policy-user?user_id=USER_ID](https://api.appnexus.com/access-policy-user?user_id=USER_ID) | View a user's roles and teams. |
 
 ## JSON fields
 

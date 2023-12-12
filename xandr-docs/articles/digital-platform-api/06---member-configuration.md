@@ -1,6 +1,6 @@
 ---
 title: 06 - Member Configuration
-description: In this article, learn about Member Configuration and explore detailed information about the various parameters configured at the member level.
+description: In this article, learn about member configuration and explore detailed information about the various parameters configured at the member level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -27,8 +27,12 @@ This setting, stored in the "no_reselling_priority" parameter, specifies the pri
 ## Content categories
 
 This parameter, stored in the "content_categories" parameter, defines the list of custom content categories that can be used to categorize
-managed inventory. Please note that these categories will not be target-able by other buyers. The sample JSON below shows how to set this
-parameter.
+managed inventory.
+
+> [!NOTE]
+> These categories will not be targeted by other buyers.
+
+The sample JSON below shows how to set this parameter.
 
 ```
 {

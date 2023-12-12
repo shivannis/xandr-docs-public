@@ -1,6 +1,6 @@
 ---
 title: Access Policy Group Service
-description: In this article, learn about the Access Policy Group service, their JSON fields, and REST API with thorough example.
+description: In this article, learn about the Access Policy Group service, their JSON fields, and REST API with a thorough example.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,7 +16,7 @@ The **access-policy-group** service allows you to retrieve the elements that ma
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| GET | [https://api.appnexus.com/access-policy-group](https://api.appnexus.com/access-policy-group) | View all groups. |
+| `GET` | [https://api.appnexus.com/access-policy-group](https://api.appnexus.com/access-policy-group) | View all groups. |
 
 ## JSON fields
 

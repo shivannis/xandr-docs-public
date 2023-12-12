@@ -1,6 +1,6 @@
 ---
 title: 12 - Publisher Configuration
-description: In this article, learn about Publisher Configuration and explore detailed information about the various parameters configured at the publisher level.
+description: In this article, learn about publisher configuration and explore detailed information about the various parameters configured at the publisher level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
