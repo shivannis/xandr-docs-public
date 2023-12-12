@@ -97,4 +97,4 @@ When you add **View-Measured Imps**, you will see that the total number of succe
 
 ### Sample report
 
-:::image type="content" source="media/viewability_sample_report.png" alt-text="Screenshot of viewability sample report.":::
+:::image type="content" source="media/viewability-sample-report.png" alt-text="Screenshot of viewability sample report.":::
