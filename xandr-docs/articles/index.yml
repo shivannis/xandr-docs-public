@@ -95,7 +95,7 @@ additionalContent:
             #- text: Impression Bus API Release Notes
              # url: bidders/xandr-bidder-release-notes.md
 
-    - title: Additional Resources and Capabilities
+    - title: Additional Resources and Developer Documentation
       items:
         # Card
         - title: Bidder
