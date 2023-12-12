@@ -98,7 +98,7 @@ We have two groups on this tree:
 
   We're going to start our key/value target from the bottom-right of our expression tree:
 
- :::image type="content" source="media/UIOperatorDiagramStepa.png" alt-text="The expression tree with the bottom-right entry of the right side group highlighted - city [Seattle, LA].":::
+ :::image type="content" source="media/ui-operator-diagram-step-a.png" alt-text="The expression tree with the bottom-right entry of the right side group highlighted - city [Seattle, LA].":::
   
 1. Click **Select Key**.
 1. Select **city** from the dropdown.
@@ -107,7 +107,7 @@ We have two groups on this tree:
 
     Now we move to the left:
 
-     :::image type="content" source="media/UIOperatorDiagramStepb.png" alt-text="The expression tree with the bottom-left entry of the right side group highlighted - fruit [orange].":::
+     :::image type="content" source="media/ui-operator-diagram-step-b.png" alt-text="The expression tree with the bottom-left entry of the right side group highlighted - fruit [orange].":::
 
 1. Click **Add key**.
 1. Click **Select Key**.
@@ -117,26 +117,26 @@ We have two groups on this tree:
 
     Our target now looks like this:
 
-      :::image type="content" source="media/UIKVTarget.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
+      :::image type="content" source="media/ui-kv-target.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from the right side group selected.":::
 
     Notice the **or** between our **city** key/value set and our **fruit** key/value set. If we look at our diagram, we can see that
     we need this relationship to be an AND; we want city is Seattle or LA **AND** fruit is orange.
 
-    :::image type="content" source="media/UIOperatorDiagramStepc.png" alt-text="The expression tree with the and relationship between the entries of the right side group highlighted.":::
+    :::image type="content" source="media/ui-operator-diagram-step-c.png" alt-text="The expression tree with the and relationship between the entries of the right side group highlighted.":::
   
     To change this relationship, at the top of the **Key/Value Targeting** dialog, select a **Target** of **any** **of the following key/value groups**. This will change the **or** to **and**.
 
     We've now completed our group on the right side of our expression diagram.
 
-    :::image type="content" source="media/UIOperatorDiagramGroup.png" alt-text="The expression tree with the entries of the right side group highlighted.":::
+    :::image type="content" source="media/ui-operator-diagram-group.png" alt-text="The expression tree with the entries of the right side group highlighted.":::
 
     Now it's time to start our group on the left. This means we need to create another group. Click **Add group**. Notice that the operator between groups has been set to **or**. Looking at our diagram, that's exactly what we want between our groups.
 
-    :::image type="content" source="media/UIOperatorDiagramStepf.png" alt-text="The expression tree with the or relationship between the left side group and the right side group highlighted.":::
+    :::image type="content" source="media/ui-operator-diagram-step-f.png" alt-text="The expression tree with the or relationship between the left side group and the right side group highlighted.":::
 
     Enter the key/value target for the first part of our right-side group.
 
-    :::image type="content" source="media/UIOperatorDiagramStepd.png" alt-text="The expression tree with the bottom-right entry of the left side group highlighted - city [NY].":::
+    :::image type="content" source="media/ui-operator-diagram-step-d.png" alt-text="The expression tree with the bottom-right entry of the left side group highlighted - city [NY].":::
 
 1. Click **Select Key**.
 1. Select **city** from the dropdown.
@@ -145,7 +145,7 @@ We have two groups on this tree:
 
     Now enter the final key/value set in the expression.
 
-    :::image type="content" source="media/UIOperatorDiagramStepe.png" alt-text="The expression tree with the bottom-left entry of the left side group highlighted - fruit [apple].":::
+    :::image type="content" source="media/ui-operator-diagram-step-e.png" alt-text="The expression tree with the bottom-left entry of the left side group highlighted - fruit [apple].":::
 
 1. Click **Add key**.
 1. Click **Select Key**.
@@ -178,7 +178,7 @@ For all options other than **one of**, you must type in a value. As you type any
 
 Here's an example of using all the preceding numeric targeting:
 
-:::image type="content" source="media/NumericKVTargeting.png" alt-text="A screenshot of the key/value targeting dialog with examples of numeric targeting.":::
+:::image type="content" source="media/numeric-kv-targeting.png" alt-text="A screenshot of the key/value targeting dialog with examples of numeric targeting.":::
 
 ### Modifying a key/value target
 
