@@ -71,8 +71,8 @@ additionalContent:
               url: invest/index.yml
             - text: References
               url: invest/index.yml
-            - text: Release Notes
-              url: invest/index.yml
+            #- text: Release Notes
+             # url: invest/index.yml
         # Card
         - title: Impression Bus API
           links:
@@ -80,8 +80,8 @@ additionalContent:
               url: impression-bus/index.yml
             - text: References
               url: impression-bus/index.yml
-            - text: Release Notes
-              url: bidders/xandr-bidder-release-notes.md
+            #- text: Release Notes
+             # url: bidders/xandr-bidder-release-notes.md
         # Card
         - title: Yield Analytics API
           links:
