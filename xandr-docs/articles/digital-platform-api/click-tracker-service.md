@@ -13,17 +13,17 @@ The Click Tracker Service gives you a way to track user clicks on creatives serv
 1. You create the url to the click tracker and ask the ad server to use it as the creative's landing page url. The click tracker url must be formatted as [https://ib.adnxs.com/clktr?id=12345](https://ib.adnxs.com/clktr?id=12345), where 12345 is the click tracker ID.
 1. When the ad server serves the creative and someone clicks on it, the call first goes to [ib.adnxs.com](https://ib.adnxs.com/), where Xandr records the click, and is then redirected to the target landing page.
 
-For specific usage examples, see .
+For specific usage examples, see [Examples](#examples).
 
 ## Query string parameters
 
 The following parameters can be passed to Xandr in the query string of the click tracker url:
 
-| Parameter | Description |  |
-|:---|:---|:---|
-| `cachebuster` | Prevents the user's browser from caching the click tracker url. This parameter can be populated by the third-party ad server. |  |
-| `ancost` | The media cost you paid for the external click. The parameter can be populated by the third-party ad server. It can pass a maximum value of "999999.999999" |  |
-| `redir` | The redirect URL. If click_url is not set in the click tracker, you must use this parameter to pass the target landing page url that Xandr will redirect to once the click has been recorded. |  |
+| Parameter | Description |
+|:---|:---|
+| `cachebuster` | Prevents the user's browser from caching the click tracker url. This parameter can be populated by the third-party ad server. |
+| `ancost` | The media cost you paid for the external click. The parameter can be populated by the third-party ad server. It can pass a maximum value of "999999.999999". |
+| `redir` | The redirect URL. If click_url is not set in the click tracker, you must use this parameter to pass the target landing page url that Xandr will redirect to once the click has been recorded. |
 
 ### Example
 
@@ -54,7 +54,7 @@ You can use the `clicktrackers` [Bulk Reporting Feed](bulk-reporting-feeds.md) t
 | `advertiser_id` | int | The ID of the advertiser that owns the click tracker.<br>**Required On:** `POST`, in query string. |
 | `name` | string | The name for the click tracker.<br>**Required On:** `POST` |
 | `code` | string | The custom code for the click tracker. |
-| `state` | enum | The state of the click tracker. Possible values: "active" or "inactive".<br>**Default:** `active` |
+| `state` | enum | The state of the click tracker. Possible values: `"active"` or `"inactive"`.<br>**Default:** `active` |
 | `click_url` | string | The target landing page for the creative. Once Xandr has recorded a click on the creative, this is the page that Xandr will redirect to.<br><br>**Tip:** If this field is not set, the target landing page url must be passed as the "redir" parameter in the query string of the click tracker url. For more details, see [Query String Parameters](#query-string-parameters) above. |
 | `publisher` | object | The publisher to which the click tracker is associated. For more details, see [Publisher](#publisher) below.<br>**Required On:** `POST` |
 | `line_item` | object | The advertiser line item to which the click tracker is associated. For more details, see [Line Item](#line-item) below.<br>**Required On:** `POST` |

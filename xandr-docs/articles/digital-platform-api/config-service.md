@@ -84,7 +84,7 @@ A successful response will return JSON containing all the Prebid configs for the
 | `targeting_level_code` | integer | The rank of the type of object in the targeting hierarchy. Placement has targeting_level_code 0, placement group is 1, publisher is 2. |
 | `targeting_id` | integer | The id of the object the configuration is associated with. Requests will be sent to Demand Partners when that object or an object matching the criteria is in the request. |
 | `targeting_level_name` | string | The name of the level (example: publisher) |
-| `deleted` | boolean | If true, indicates that the config object is not available for use but its data is still viewable. |
+| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
 | `targeting_metadata` | object | Includes modifiers for the targeting object. For items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table below. |
 
@@ -114,9 +114,9 @@ partners.
 | `enabled` | boolean | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md). |
 | `deleted` | boolean | If true, indicates that the config object is not available for use but its data is still viewable. |
 | `id` | integer | The id of the parameter mappings for the specific demand partner. |
-| `last_modified` | string | The most recent modification date of the demand_partner_config. |
-| `last_modified_by` | string | The person who made the last modifications to the demand_partner_config. |
-| `member_id` | integer | The member_id associated with the demand_partner_config. |
+| `last_modified` | string | The most recent modification date of the `demand_partner_config`. |
+| `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
+| `member_id` | integer | The member_id associated with the `demand_partner_config`. |
 | `name` | string | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
 | `prebid_settings_id` | integer | The id of the config which can contain multiple demand partner parameter mappings. |
@@ -376,7 +376,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `deleted` | boolean | Required | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `member_id` | integer | Required | The member_id associated with the `demand_partner_config`. |
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
-| `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md) |
+| `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
 | `prebid_settings_id` | integer | Required | The id of the config which can contain multiple demand partner parameter mappings. |
 
 ### POST: Media types
@@ -530,7 +530,7 @@ Returns a Prebid config object.
 
 ## DELETE
 
-Delete an existing Prebid config. Include the prebidSettingsId as the last component of the path.
+Delete an existing Prebid config. Include the `prebidSettingsId` as the last component of the path.
 
 ### DELETE: Example call using curl
 

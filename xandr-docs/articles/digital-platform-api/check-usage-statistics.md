@@ -18,8 +18,8 @@ When making a call to the API to retrieve statistics, the following fields can b
 
 - `agg` can be omitted in order to obtain an hourly/detailed report.
 - `agg=true` can be used to obtain an aggregated report.
-- `start` date should be set in the following format: `2015-11-01+01:00:00.`
-- `end` date should be set in the following format: `2015-12-01+01:00:00.`
+- `start` date should be set in the following format: `2015-11-01+01:00:00`.
+- `end` date should be set in the following format: `2015-12-01+01:00:00`.
 
 ```
 curl -H"Authorization: hbapi:123456:9876abcd54321:nym2"-XGET"https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"

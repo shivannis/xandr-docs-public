@@ -28,7 +28,7 @@ You apply content categories to sites and placements through the [Site Service](
 |:---|:---|:---|
 | `code` | string | Used only for deals. |
 | `description` | string (255) | The description of the content category |
-| `id` | int | The ID of the category.<br>**Required On:** `PUT`<br>**Default:** Auto-generated number |
+| `id` | int | The ID of the category.<br>**Required On:** `PUT`<br>**Default:** Auto-generated number. |
 | `is_system` | boolean | **Read Only.** If `true`, this is a "universal" content category created by Xandr. You can apply universal content categories to your sites and placements, but you cannot edit them. |
 | `last_modified` | timestamp | **Read Only.** The date and time that this content category was last modified. |
 | `member_id` | int | **Read Only.** Your member ID. |

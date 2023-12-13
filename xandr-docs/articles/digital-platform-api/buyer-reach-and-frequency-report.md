@@ -14,9 +14,9 @@ The Buyer Reach and Frequency Report offers flexible filtering to analyze unique
 
 - Pull a **basic running total** of unique devices for their active Line Items or Insertion Orders.
 
-- Pull unique devices for these objects over a **defined period of time** (for example, past week)
+- Pull unique devices for these objects over a **defined period of time** (for example, past week).
 
-- Now you can **filter and group on specific criteria**, which will provide an accurate unique device count across the specified criteria. For example, the count of unique devices across Line Items A, B, and D, in the US and Canada, for the past month."
+- Now you can **filter and group on specific criteria**, which will provide an accurate unique device count across the specified criteria. For example, the count of unique devices across Line Items A, B, and D, in the US and Canada, for the past month.
 
 ## Time frame
 
@@ -73,7 +73,7 @@ Data in this report is retained for 90 days.
 | `insertion_order_id` | int | Yes | `321` | The ID of the insertion order under which the impression was purchased. |
 | `insertion_order` | string | No | `"FirstIO(321)"` | The ID and name of the insertion order under which the impression was purchased. |
 | `device_type` | string | Yes | `"Desktops and Laptops"` | The type of the device where the impression has occurred. |
-| `frequency_cap_type` | string | No | `"Classical"`, `"Advanced"`, or `"None"` | The type of frequency cap used to limit over-delivery to individual users. When an ID was available in the request, "Classical" is the default frequency cap type. "Advanced" refers to "Advanced Frequency Management" feature. |
+| `frequency_cap_type` | string | No | `"Classical"`, `"Advanced"`, or `"None"` | The type of frequency cap used to limit over-delivery to individual users. When an ID was available in the request, `"Classical"` is the default frequency cap type. `"Advanced"` refers to "Advanced Frequency Management" feature. |
 
 ## Metrics
 
@@ -125,7 +125,7 @@ $ cat buyer_approximate_unique_users_hourly
 }
 ```
 
-### `POST` the request to the [Report Service](report-service.md)
+### `POST` the request to the Report Service
 
 `POST` the JSON request to get back a report ID.
 

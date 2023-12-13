@@ -30,7 +30,7 @@ The Campaign UI service includes campaign meta information relating to campaign 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the corresponding campaign. Duplicate entries of the same campaign is not allowed.<br>Required On:PUT/DELETE, in query string. |
+| `id` | int | The ID of the corresponding campaign. Duplicate entries of the same campaign is not allowed.<br>**Required On:** `PUT`/`DELETE`, in query string. |
 | `member_id` | int | **Read Only.** The ID of the member this campaign belongs to. |
 | `user_id_creator` | int | The ID of the user who creates the campaign. |
 | `username_creator` | string (50) | **Read Only.** The user name of the user who creates the campaign. |

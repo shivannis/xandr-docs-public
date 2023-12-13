@@ -15,7 +15,7 @@ ms.custom: digital-platform-api
 The Buyer Untargeted Segment report can be used for discovery: to identify segments you have access to but may not be targeting. This
 report is available to members.
 
-For instructions on retrieving a report, see the [Example](#examples) below.
+For instructions on retrieving a report, see the [examples](#examples) below.
 
 ## Time frame
 
@@ -41,12 +41,12 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `line_item_id` | int | The ID of the line item.<br>**Example:** `111`<br>**Group:** Yes<br>**Filter:** Yes |
 | `pixel_id` | int | The ID of the pixel.<br>**Example:** `123`<br>Group: Yes<br>**Filter:** Yes |
 | `advertiser_name` | string | The name of the advertiser.<br>**Example:** `"Verizon Wireless"`<br>**Group:** No<br>**Filter:** No |
-| `advertiser` | string | Deprecated (as of October 17, 2016). |
+| `advertiser` | string | **Deprecated** (as of October 17, 2016). |
 | `line_item_name` | string | The name of the line item.<br>**Example:** `"Default Line Item"`<br>**Group:** No<br>**Filter:** No |
-| `line_item` | string | Deprecated (as of October 17, 2016). |
+| `line_item` | string | **Deprecated** (as of October 17, 2016). |
 | `segment_id` | int | The ID of the segment pixel.<br>**Example:** `220`<br>**Group:** Yes<br>**Filter:** Yes |
 | `segment_name` | string | The name of the segment.<br>**Example:** `"Submitted application"`<br>**Group:** No<br>**Filter:** No |
-| `segment` | string | Deprecated (as of October 17, 2016). |
+| `segment` | string | **Deprecated** (as of October 17, 2016). |
 | `insertion_order_name` | string | The name of the insertion order.<br>**Example:** `"Mobile Insertion Order"`<br>**Group:** No<br>**Filter:** No |
 | `insertion_order` | string | **Deprecated** (as of October 17, 2016). |
 | `segment_code` | int | The (optional) custom code associated with the user segment present for this impression.<br>**Example:** `12456`<br>Group: No<br>Filter: No |
@@ -78,7 +78,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `imps` | int | The total number of impressions (served and resold). | `2437` | imps |
 | `clicks` | int | The total number of clicks across all impressions. | `1` | clicks |
 | `booked_revenue` | money | The total revenue booked through direct advertisers (line item). | `25.6788` | booked_revenue |
-| `cpm` | money | The cost per 1000 impressions | `1.6605` | (cost / imps) x 1000 |
+| `cpm` | money | The cost per 1000 impressions. | `1.6605` | (cost / imps) x 1000 |
 | `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
 | `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
 | `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |

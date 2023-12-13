@@ -39,7 +39,7 @@ changes in which you are interested. The Change Log service is only available t
 |:---|:---|:---|
 | `service` | string | The service used to make the change. Below are few of the examples of possible values:<br> - `insertion-order`<br> - `line-item`<br> - `campaign`<br> - `profile`<br><br>**Note:** Currently, `budget-splitter` service is in block-list.<br>**Required:** Yes<br>**Filter:** Yes |
 | `resource_id` | int | The ID of the object used to make the change.<br>**Required:** Yes<br>**Filter:** Yes |
-| `additional_fields` | string<br> - For `GET` requests, this is a group of comma separated strings. For example, `additional_fields =` `request_source`, `user_id`, `object_json`<br> - For `POST` requests, this is a string array. For example, `"additional_fields":`  `["request_source","user_id","object_json”]` | This field allows the users to add additional data in the response. The  `additional_fields` can include additional return fields. Examples of accepted values are:<br> - `request_source`<br> - `user_id`<br> - `object_json`<br>**Required:** No  <br>**Filter:** No |
+| `additional_fields` | string<br> - For `GET` requests, this is a group of comma separated strings. For example, `additional_fields = request_source`, `user_id`, `object_json`<br> - For `POST` requests, this is a string array. For example, `"additional_fields":["request_source","user_id","object_json”]` | This field allows the users to add additional data in the response. The  `additional_fields` can include additional return fields. Examples of accepted values are:<br> - `request_source`<br> - `user_id`<br> - `object_json`<br>**Required:** No  <br>**Filter:** No |
 
 ### Fields returned in the response from the endpoint
 
@@ -87,7 +87,7 @@ changes in which you are interested. The Change Log service is only available t
 | `user_id` | int | The ID of the user who made the modification. |
 | `method` | enum | The API method used to make the change. Possible values are:<br> - `"put"`<br> - `"post"`<br> - `"delete"` |
 | `url` | string | The URL of the original request. |
-| `changes` | array of objects | Details about the changes made to the object returned. Each object in the `changes` array contains additional [fields](#changes-object). |
+| `changes` | array of objects | Details about the changes made to the object returned. Each object in the `changes` array contains [fields](#changes-object). |
 | `plugin_id` | int | The ID of the plugin that made the modification. If `null`, a plugin did not make the modification (and a user did). For more information on a plugin, see the [Plugin Service](plugin-service.md). |
 | `transaction_id` | int | The ID of the change transaction accepted as input to the endpoint. |
 | `member_id` | int | The ID of the member who initiated the change. |
@@ -118,7 +118,7 @@ changes in which you are interested. The Change Log service is only available t
 
 #### Step 1: Call `/change-log` to get transactions for a desired `resource_id`
 
-`GET` to `/change-log`
+`GET` to `/change-log`.
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/change-log?service=line-item&resource_id=13984849'
@@ -144,7 +144,7 @@ $ curl -b cookies 'https://api.appnexus.com/change-log?service=line-item&resourc
 }
 ```
 
-`GET` to `/change-log` with `"additional_fields"` parameter
+`GET` to `/change-log` with `"additional_fields"` parameter.
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/change-log?service=line-item&resource_id=13984849&additional_fields=request_source,user_id,object_json'
@@ -171,7 +171,7 @@ $ curl -b cookies 'https://api.appnexus.com/change-log?service=line-item&resourc
 
 #### Step 2: Call `/change-log-detail` with the `transaction_id`
 
-`GET` to `/change-log-detail`
+`GET` to `/change-log-detail`.
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/change-log-detail?service=line-item&transaction_id=0ee74310-f580-5001-8007-2f71f84a5454'
@@ -225,7 +225,7 @@ $ curl -b cookies 'https://api.appnexus.com/change-log-detail?service=line-item&
 
 The JSON file should include the `service` and `resource_id` of the change logs you want to view, as well as the `min_timestamp` and `max_timestamp` to limit change logs to a specific time period. You can also use `start_element` or `num_elements` in the query string.
 
-Create `change-log` JSON
+Create `change-log` JSON.
 
 ```
 $ cat change-log.json
@@ -243,7 +243,7 @@ $ cat change-log.json
 
 `POST` the JSON request to get back basic change log information, including the `transaction_id`.
 
-`POST` to `/change-log`
+`POST` to `/change-log`.
 
 ```
 $ curl -b cookies -X POST -d @change-log.json 'https://api.appnexus.com/change-log'
@@ -268,7 +268,7 @@ $ curl -b cookies -X POST -d @change-log.json 'https://api.appnexus.com/change-l
 
 The JSON file should include the `service` and `transaction_id` of the change log for which details you want to view.
 
-Create `change-log-detail` JSON
+Create `change-log-detail` JSON.
 
 ```
 $ cat change-log-detail.json
@@ -284,7 +284,7 @@ $ cat change-log-detail.json
 
 `POST` the JSON request to get back a detailed change log for the change corresponding to the `transaction_id`.
 
-`POST` to `/change-log-detail`
+`POST` to `/change-log-detail`.
 
 ```
 $ curl -b cookies -X POST -d @change-log-detail.json 'https://api.appnexus.com/change-log-detail'

@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 This report provides buyers with segment performance across campaigns and multiple advertisers.
 
-The `time_granularity` of the data is `hourly`. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [example](#examples).
+The `time_granularity` of the data is `hourly`. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [examples](#examples).
 
 > [!NOTE]
 > **Impressions across user segments:** Since this report aggregates impressions served by user segment, impressions associated with users who are present in multiple segments will be counted more than once. As a result, be sure to group by `segment_id` when running the report.
@@ -147,7 +147,7 @@ $ cat buyer_segment_performance
 }
 ```
 
-### `POST` the request to the [Report Service](report-service.md)
+### `POST` the request to the Report Service
 
 `POST` the JSON request to get back a report ID.
 
