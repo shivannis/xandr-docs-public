@@ -1,283 +1,48 @@
 ---
-Title : City Service
-Description : The read-only City Service allows you to see information about the
+title: Digital Platform API - City Service
+description: In this article, learn about the Digital Platform API's City service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-cities registered in the Xandr system, including
-the region, designated market area, and country to which each city
-belongs. You can use this service to retrieve the IDs of cities for
 ---
 
+# Digital Platform API - City service
 
-# City Service
-
-
-
-The read-only City Service allows you to see information about the
-cities registered in the Xandr system, including
-the region, designated market area, and country to which each city
-belongs. You can use this service to retrieve the IDs of cities for
-targeting in campaigns (see `city_targets` in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>).
-
-
+The read-only City Service allows you to see information about the cities registered in the Xandr system, including the region, designated market area, and country to which each city belongs. You can use this service to retrieve the IDs of cities for targeting in campaigns (see `city_targets` in the [Profile Service](profile-service.md)).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000007df__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000007df__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000007df__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-all cities</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?country_code=COUNTRY_CODE"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/city?country_code=COUNTRY_CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-all cities in a specific country</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?country_name=COUNTRY_NAME"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/city?country_name=COUNTRY_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-all cities in a specific country</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?dma_id=DMA_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city?dma_id=DMA_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-all cities in a specific designated market area</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?dma_name=DMA_NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city?dma_name=DMA_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-all cities in a specific designated market area</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-a specific city by ID</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city?name=NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city?name=NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">View
-a specific city by NAME</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__2"><a
-href="https://api.appnexus.com/city/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/city/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/city](https://api.appnexus.com/city) | View all cities. |
+| `GET` | [https://api.appnexus.com/city?country_code=COUNTRY_CODE](https://api.appnexus.com/city?country_code=COUNTRY_CODE) | View all cities in a specific country. |
+| `GET` | [https://api.appnexus.com/city?country_name=COUNTRY_NAME](https://api.appnexus.com/city?country_name=COUNTRY_NAME) | View all cities in a specific country. |
+| `GET` | [https://api.appnexus.com/city?dma_id=DMA_ID](https://api.appnexus.com/city?dma_id=DMA_ID) | View all cities in a specific designated market area. |
+| `GET` | [https://api.appnexus.com/city?dma_name=DMA_NAME](https://api.appnexus.com/city?dma_name=DMA_NAME) | View all cities in a specific designated market area. |
+| `GET` | [https://api.appnexus.com/city?id=ID](https://api.appnexus.com/city?id=ID) | View a specific city by ID. |
+| `GET` | [https://api.appnexus.com/city?name=NAME](https://api.appnexus.com/city?name=NAME) | View a specific city by name. |
+| `GET` | [https://api.appnexus.com/city/meta](https://api.appnexus.com/city/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000007df__entry__28"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000007df__entry__29"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000007df__entry__30"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-ID of the city.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-name of the city.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-ID of the country to which the city belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-name of the country to which the city belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country names.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country to which the city
-belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country codes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">region_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-ID of the region to which the city belongs. You can use the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve a complete
-list of region IDs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">region_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-name of the region to which the city belongs. You can use the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve a complete
-list of region names.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">region_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-ISO or FIPS code for the region to which the city belongs. You can use
-the <a
-href="region-service.md"
-class="xref" target="_blank">Region Service</a> to retrieve a complete
-list of region codes.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">dma_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-ID of the designated market area to which the city belongs. You can use
-the <a
-href="designated-market-area-service.md"
-class="xref" target="_blank">Designated Market Area Service</a> to
-retrieve a complete list of DMA IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">dma_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">The
-name of the designated market area to which the city belongs. You can
-use the <a
-href="designated-market-area-service.md"
-class="xref" target="_blank">Designated Market Area Service</a> to
-retrieve a complete list of DMA names.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__28"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007df__entry__29">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000007df__entry__30">If
-true, the city is available for targeting. If false, there is no
-geolocation data for the city and so delivery is not possible.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the city. |
+| `name` | string | The name of the city. |
+| `country_id` | int | The ID of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country IDs. |
+| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `country_code` | string | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `region_id` | int | The ID of the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region IDs. |
+| `region_name` | string | The name of the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region names. |
+| `region_code` | string | The ISO or FIPS code for the region to which the city belongs. You can use the [Region Service](region-service.md) to retrieve a complete list of region codes. |
+| `dma_id` | int | The ID of the designated market area to which the city belongs. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a complete list of DMA IDs. |
+| `dma_name` | string | The name of the designated market area to which the city belongs. You can use the [Designated Market Area Service](designated-market-area-service.md) to retrieve a complete list of DMA names. |
+| `active` | Boolean | If true, the city is available for targeting. If false, there is no geolocation data for the city and so delivery is not possible. |
 
 ## Examples
 
-**View all cities in Germany**
+### View all cities in Germany
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/city?country_code=DE'
 {
     "response": {
@@ -334,9 +99,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/city?country_code=DE'
 }
 ```
 
-**View all cities in the Bayern region of Germany**
+### View all cities in the Bayern region of Germany
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/city?region_name=Bayern'
 {
   "response": {
@@ -393,9 +158,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/city?region_name=Bayern'
 }
 ```
 
-**View all cities named "Karlsruhe"**
+### View all cities named "Karlsruhe"
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/city?name=Karlsruhe'
 {
     "response": {
@@ -436,9 +201,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/city?name=Karlsruhe'
     }
 }
 ```
-
-
-
-
-
-
