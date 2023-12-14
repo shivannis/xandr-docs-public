@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > **Visible to Xandr employees only**: These docs (and the related feature) are visible to select clients only. Please do not send links to these docs or mention this feature to clients unless you've confirmed they should have access.
 >
-> The Adjustment Service is used to make ch anges to booked revenue and media cost values in reporting.
+> The Adjustment Service is used to make changes to booked revenue and media cost values in reporting.
 
 ## Adjustment types
 
@@ -36,7 +36,7 @@ Status can be one of the following values:
 
 | Status | Description |
 |:---|:---|
-| new | Adjustment has been entered into the system. |
+| `new` | Adjustment has been entered into the system. |
 | `pending` | Adjustment has been picked up for processing. |
 | `processing` | Adjustment is being processed. |
 | `propagating` | Adjustment is complete and is propagating to reporting caches. |
@@ -53,10 +53,10 @@ Status can be one of the following values:
 | `GET` | https://api.appnexus.com/adjustment | To view all adjustments: |
 | `GET` | https://api.appnexus.com/adjustment?advertiser_id=ADVERTISER_ID | To view all adjustments for an advertiser: |
 | `GET` | https://api.appnexus.com/adjustment?id=ADJUSTMENT_ID | To view a specific adjustment: |
-| `GET` | https://api.appnexus.com/adjustment<br>state=new,processing,propagating,pending,completed,failed,cancelled | To view all adjustments in a given state: |
+| `GET` | https://api.appnexus.com/adjustment<br>`state=new,processing,propagating,pending,completed,failed,cancelled` | To view all adjustments in a given state: |
 | `GET` | https://api.appnexus.com/adjustment?like_start_date=START_DATE&like_end_date=END_DATE | To view all adjustments within a given time period: |
 
-## JSON Fields
+## JSON fields
 
 ### General
 
@@ -70,7 +70,7 @@ Status can be one of the following values:
 | `member_id` | int | The ID of the member who owns the adjustment. |
 | `notes` | string | Optional note to associate with this adjustment. |
 | `start_date` | datetime | **Required On**: `POST` <br><br> The start date for the adjustment. Adjustments will be applied evenly over the time range defined by `start_date` and `end_date`.<br><br>Adjustments are only eligible for processing if they have a `start_date` within 90 days from the time the adjustment is attempted to be executed. |
-| `status` | enum | **Default**: `"new"` <br><br> The current processing state for the adjustment. Possible values: `"new"`, `"processing"`, `"propagating"`, `"pending"`, `"completed"`, `"failed"`, or `"cancelled"`. |
+| `status` | enum | **Default**: `"new"` <br><br> The current processing state for the adjustment. Possible values: <br> - `"new"` <br> - `"processing"` <br> - `"propagating"` <br> - `"pending"` <br> - `"completed"` <br> - `"failed"` <br> - `"cancelled"`. |
 | `timezone` | string | **Default**: Default member timezone <br><br>The timezone the adjustment will be made in. Adjustments will be made to the first hour of the day of the given timezone. For a list of acceptable timezone values, see [API Timezones](./api-timezones.md). |
 | `user_id` | int | The ID of the user who made the adjustment. |
 
@@ -93,10 +93,10 @@ Status can be one of the following values:
 | `clicks` | int | Optional value for number of clicks over the adjustment period. |
 | `country` | string | The two-letter code for the country for which impression data will be adjusted. |
 | `height` | int | The height of placements for which data will be adjusted. |
-| `imp_types` | string | **Default**: `"kept"`<br><br>The types of impressions for which data will be adjusted. Possible values:<br>`"default"`: A default creative served because no campaigns bid or no other creative was eligible.<br>`"kept"`: One of your managed advertisers served a creative.<br>`"resold"`: The impression was sold to a third-party buyer. |
+| `imp_types` | string | **Default**: `"kept"`<br><br>The types of impressions for which data will be adjusted. Possible values:<br> - `"default"`: A default creative served because no campaigns bid or no other creative was eligible.<br> - `"kept"`: One of your managed advertisers served a creative.<br> - `"resold"`: The impression was sold to a third-party buyer. |
 | `imps` | int | Optional value for the number of impressions over the adjustment period. |
 | `media_cost` | money | The new media cost paid by the network to the publisher over the given adjustment period (`start_date` to `end_date`). If set to `null` or left blank, media cost will not be changed. |
-| `media_type` | object | The type of media for which data will be adjusted. Possible values: `"banner"`, `"pop"`, `"text"`, `"interstitial"`, `"expandable"`, or `"video"`. |
+| `media_type` | object | The type of media for which data will be adjusted. Possible values: <br> - `"banner"` <br> - `"pop"` <br> - `"text"` <br> - `"interstitial"` <br> - `"expandable"` <br> - `"video"`. |
 | `placement_id` | int | **Required On**: `POST`, if `adjustment_type` is `"publisher"`. <br><br>The ID of the placement for which data will be adjusted. |
 | `post_click_convs` | int | Optional value for number of post click conversions over the adjustment period. |
 | `post_view_convs` | int | Optional value for number of post view conversions over the adjustment period. |
@@ -106,7 +106,7 @@ Status can be one of the following values:
 
 ### Examples
 
-**Adjusting advertiser revenue and impression count with attribution to publishers**
+#### Adjusting advertiser revenue and impression count with attribution to publishers
 
 For `"advertiser_revenue"` adjustments, attribution of booked revenue adjustments to revshare publishers is done proportionally based on the number of impressions served by a publisher.
 
@@ -159,7 +159,7 @@ $ curl -b cookies -c cookies -X POST -d @adjustment 'https://api.appnexus.com/ad
 >
 > - Media cost is *not* adjusted for publishers paid on a cpm basis, or to payments to other platform members.
 
-**Adjusting advertising revenue and impression, click, and conversion count without attribution to publishers**
+#### Adjusting advertising revenue and impression, click, and conversion count without attribution to publishers
 
 ```
 $ cat adjustment
@@ -179,7 +179,7 @@ $ cat adjustment
 }
 ```
 
-**Adjusting publisher media cost and impression count for placements served with creatives**
+#### Adjusting publisher media cost and impression count for placements served with creatives
 
 *Report before adjustment*
 

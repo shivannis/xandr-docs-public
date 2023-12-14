@@ -29,7 +29,7 @@ This read-only service allows you to view information about ad servers that can 
 
 ## Example
 
-**View all ad servers (output is truncated)**
+### View all ad servers (output is truncated)
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/adserver'
@@ -126,7 +126,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/adserver'
 }
 ```
 
-**View information about ad server 5**
+### View information about ad server 5
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/adserver?id=5'

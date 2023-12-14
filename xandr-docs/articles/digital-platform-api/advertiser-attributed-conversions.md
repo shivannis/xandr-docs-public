@@ -70,7 +70,7 @@ This report can retrieve data for the last 90 days and only in UTC timezone.
 | `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be null. |
 | `split_name` | string | yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be null. |
 | `imp_time` | date | yes | `11/17/11 3:00` | The date and time of the impression (when the creative was served). |
-| `imp_type_id` | int | yes | `5` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1 ("Blank")`: No creative served.<br>`2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br>`3 ("Default Error")`: A default creative served due to a timeout issue.<br>`4 ("Default")`: A default creative served because there were no valid bids.<br>`5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br>`6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br>`7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br>`8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br>`9 ("External Impression")`: An impression from an impression tracker.<br>`10 ("External Click")`: A click from a click tracker. |
+| `imp_type_id` | int | yes | `5` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker. |
 | `imp_type` | string | yes | `"Kept"` | The type of impression. For possible values, see `imp_type_id`. |
 | `advertiser_id` | int | yes | `123` | The ID of the advertiser. |
 | `advertiser_name` | string | no | `AdvertiserName` | The name of the advertiser. |
@@ -86,7 +86,7 @@ This report can retrieve data for the last 90 days and only in UTC timezone.
 
 ## Examples
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
 In this example, we set a filter to get information about conversion pixel 9012.
 
@@ -117,7 +117,7 @@ $ cat attributed_conversions  {
 }
 ```
 
-**POST the request to the reporting service**
+### `POST` the request to the reporting service
 
 ```
 $ curl -b cookies -c cookies -X POST -d @attributed_conversions 'https://api.appnexus.com/report?advertiser_id=123'
@@ -130,7 +130,7 @@ $ curl -b cookies -c cookies -X POST -d @attributed_conversions 'https://api.app
 }
 ```
 
-**Use the report ID to retrieve the report data**
+### Use the report ID to retrieve the report data
 
 The standard response includes the report data and a Download URL that you can use to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
@@ -174,7 +174,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485ad
 
 See [Lookup Service](./lookup-service.md) for more details.
 
-**GET the report data from the report download service**
+### `GET` the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download` service. You can find the service and report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 

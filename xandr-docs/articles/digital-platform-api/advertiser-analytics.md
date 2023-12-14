@@ -89,9 +89,9 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `creative_frequency_bucket` | string | Yes | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
 | `creative_frequency_bucket_id` | string | No | `4` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
 | `gender` | string | Yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note**:<br>For impressions older than 100 days, the gender will be `"u"`.<br>The value of the gender is defined by the publisher in the bid request. Xandr does not have control over it apart from processing the value. |
-| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1 ("Blank")`: No creative served.<br>`2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br>`3 ("Default Error")`: A default creative served due to a timeout issue.<br>`4 ("Default")`: A default creative served because there were no valid bids.<br>`5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br>`6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br>`7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br>`8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br>`9 ("External Impression")`: An impression from an impression tracker.<br>1`0 ("External Click")`: A click from a click tracker. |
+| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker. |
 | `imp_type` | string | Yes | `"Kept"` | The type of impression. For possible values, see `imp_type_id`. |
-| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression.<br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br>`"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br>`"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br>`"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br>`"Unknown"`: The node was in an unknown optimization phase.<br>`"Optimized give up"`<br>`"Learn give up"`<br>`"Manual give up"` |
+| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression.<br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - `"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - `"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - `"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - `"Unknown"`: The node was in an unknown optimization phase.<br> - `"Optimized give up"`<br> - `"Learn give up"`<br> - `"Manual give up"` |
 | `insertion_order_id` | int | Yes | `648359` | The unique identification number of the insertion order. |
 | `insertion_order_name` | string | No | `"InsertionOrderABC"` | The name of the insertion order. |
 | `insertion_order` | string | No | `"InsertionOrderABC648359"` | **Deprecated** (as of October 17, 2016). |
@@ -100,14 +100,14 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `line_item_nam`e | string | No | `"LineItemDEF"` | The name of the line item. |
 | `line_item` | string | No | `"LineItemDEF947764"` | **Deprecated** (as of October 17, 2016). |
 | `line_item_code` | string | No | `"Line Item Code"` | The custom code for the line item. |
-| `supply_type` | string | No | `"web"` | The type of inventory. Possible values: `"web"`, `"mobile_web"`, or `"mobile_app"`. |
+| `supply_type` | string | No | `"web"` | The type of inventory. Possible values: <br> - `"web"` <br> - `"mobile_web"` <br> - `"mobile_app"`. |
 | `pixel_id` | int | Yes | `1942` | The unique identification number of the conversion pixel.<br><br>**Note**: This dimension will return a maximum of 10 conversion pixels. Also, you can filter by no more than 10 conversion pixels. |
 | `publisher_id` | int | Yes | `374967` | The unique identification number of the publisher. |
 | `publisher_name` | string | No | `"Publisher XYZ"` | The name of the publisher. |
 | `publisher` | string | No | `"Publisher XYZ 347967"` | **Deprecated** (as of October 17, 2016). |
 | `publisher_code` | string | No | `"Publisher Code"` | The custom code for the publisher. |
 | `seller_type` | string | Yes | `"Real Time"`, `"Direct"` | The seller type. |
-| `supply_type` | string | Yes | `"web"` | The type of inventory. Possible values: `"web"`, `"mobile_web"`, or `"mobile_app"`. |
+| `supply_type` | string | Yes | `"web"` | The type of inventory. Possible values: <br> - `"web"` <r> - `"mobile_web"` <br> - `"mobile_app"`. |
 | `media_type` | string | No | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of the creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | Yes | `2` | The unique identification number of the media type to which the subtype belongs. |
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
@@ -180,7 +180,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 
 ## Examples
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
 ```
 $ cat advertiser_analytics 
@@ -205,7 +205,7 @@ $ cat advertiser_analytics
 }
 ```
 
-**POST the request to the reporting service**
+### `POST` the request to the reporting service
 
 You `POST` the JSON request and get back a report ID.
 
@@ -224,7 +224,7 @@ $ curl -b cookies -c cookies -X post -d @advertiser_analytics "https://api.appne
 }
 ```
 
-**GET the report status from the report service**
+### `GET` the report status from the report service
 
 Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is `"ready"`. Then use the `report-download` service to save the reporting data to a file (described in the next step).
 
@@ -259,7 +259,7 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/report?id=dc0314bda065975
 }
 ```
 
-**GET the report data from the report download service**
+### `GET` the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 

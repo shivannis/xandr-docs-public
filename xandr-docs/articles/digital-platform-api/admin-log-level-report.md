@@ -36,7 +36,7 @@ $ cat honeycomb
     }
 ```
 
-## Step 2. POST the request to the report service
+## Step 2. `POST` the request to the report service
 
 You `POST` the JSON request and get back a `report_id`.
 
@@ -61,7 +61,7 @@ $ curl -b cookies -c cookies -X POST -d @honeycomb 'https://api.appnexus.com/rep
                    }
 ```
 
-## Step 3. GET the report status from the report service
+## Step 3. `GET` the report status from the report service
 
 Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`.
 
@@ -113,7 +113,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=7d346f7371479cc
 > select * from bidder.report where id=<id>' and 'select * from bidder.report_data where id=<id>
 > ```
 
-## Step 4. GET the report data from the report download service
+## Step 4. `GET` the report data from the report download service
 
 To download the report data, make another `GET` call with the Report ID, but this time to the `report-download` service. You can find the service and Report ID in the `url` field of the previous `GET` response.
 

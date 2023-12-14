@@ -13,7 +13,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api..com/report<br><br>(report JSON) | Retrieve the report |
+| `POST` | https://api.com/report<br><br>(report JSON) | Retrieve the report |
 
 > [!NOTE]
 > See the [example](#example) below for the complete procedure.
@@ -41,7 +41,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
                    }
     ```
 
-2. **POST the request to the Reporting Service**
+1. **`POST` the request to the reporting service**
 
     ```
     $ curl -b cookies -c cookies -X POST -d @admin_custom_report 'https://api..com/report'
@@ -70,7 +70,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
                    }
     ```
 
-3. **Use the Report ID to retrieve the report data**
+1. **Use the report ID to retrieve the report data**
 
     The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
@@ -113,7 +113,7 @@ Xandr admins can use this report to run custom queries against the internal Repo
                    }
     ```
 
-4. **Use the Download URL to save the report data to a file**
+1. **Use the Download URL to save the report data to a file**
 
     You use the `"url"` field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the `"format"` that you specified in your initial `POST` request.
 

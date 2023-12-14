@@ -90,7 +90,7 @@ $ cat outlook_creative
 }
 ```
 
-## Step 2. Post the JSON file to the creative service
+## Step 2. `POST` the JSON file to the creative service
 
 ```
 $ curl -b cookies -c cookies -X POST -d @outlook_creative 'https://api.appnexus.com/creative?advertiser_id=52408'
