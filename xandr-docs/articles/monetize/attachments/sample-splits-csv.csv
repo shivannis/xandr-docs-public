@@ -1,0 +1,4 @@
+﻿ID,Name,Active,Cap,Allocation,Expected Value,Segment Age,Segment Presence/Absence
+111111,Split 1,1,unconstrained,50,10,"110< 1, 111<= 10",
+111112,Split 2,1,unconstrained,50,6,,"any 110, 111"
+111113,default,1,unconstrained,80,1,,
