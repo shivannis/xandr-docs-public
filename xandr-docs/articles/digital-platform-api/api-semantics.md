@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# API semanticsv
+# API semantics
 
 This page explains the semantics of our REST API. It includes information on:
 
@@ -38,7 +38,7 @@ Our API services are RESTful. REST (Representational State Transfer) is a type o
 When making a `POST` or `PUT` request, you must include a [JSON](http://json.org/) file with the data to create or update.
 
 > [!WARNING]
-> PUT overwrites arrays unless 'append=true' is added to query string
+> PUT overwrites arrays unless `'append=true'` is added to query string
 >
 > For `PUT` requests, only the fields included in the [JSON](http://json.org/) file will be updated, **except in the case of arrays**. When updating an array using `PUT`, all fields in the array are **overwritten with the contents of the new array** you upload, unless you append the following to your request query string: `"append=true"`.
 >

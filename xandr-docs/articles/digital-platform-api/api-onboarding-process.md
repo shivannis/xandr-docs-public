@@ -1,12 +1,12 @@
 ---
-title: API Onboarding Process
+title: Digital Platform API - API Onboarding Process
 description: Integrate with APIs by following the instructions in the API onboarding process.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
 
-# API onboarding process
+# Digital Platform API - API onboarding process
 
 Customers who plan to integrate with Xandr APIs need to complete the following steps in our API onboarding process.
 
@@ -39,7 +39,7 @@ After you've been granted access, you can use the following endpoints:
 The API documentation provides insight into the structure of the API and will help you determine the best approach for integration as well as provide details on typical use cases. Read through the [Reference](./reference.md) to find information and examples for the individual services that are available to you.
 
 > [!TIP]
-> API Change Info
+> **API change info**
 >
 > We will notify customers of API changes. You can sign up to receive emails of API changes, as well as other Xandr news. If you have a Xandr user account, you should receive relevant communications automatically.
 

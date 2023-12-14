@@ -26,10 +26,10 @@ This is an admin-only service that allows Xandr personnel to add app-related ima
 | `id` | int | The unique ID of each image.<br>**Required On**: `PUT` and `DELETE`, in querystring. |
 | `plugin_id` | int | The unque ID value of the plugin to which this image is associated.<br>**Required On**: `POST` |
 | `description` | string | Text which describes the app asset.<br>**Default**: `null` |
-| `category` | enum | The category in which the app asset belongs. The possible values: <br>`"big_icon"` <br>`"icon"` <br>`"favicon"` <br>`"screenshot"`<br>**Default**: null<br>**Required On**: `POST` |
+| `category` | enum | The category in which the app asset belongs. The possible values: <br> - `"big_icon"` <br> - `"icon"` <br> - `"favicon"` <br> - `"screenshot"`<br><br>**Default**: null<br>**Required On**: `POST` |
 | `width` | int | The width of the app asset, in pixels.<br>**Default**: `null` |
 | `height` | int | The height of the app asset, in pixels. This must be at least **400**.<br>**Default**:`null` |
-| `file_type` | enum | **Read only**. The image type of the app asset. Possible values are <br>`"png"` <br>`"jpg"` <br>`"gif"`.<br>**Default**: `null` |
+| `file_type` | enum | **Read only**. The image type of the app asset. Possible values are <br> - `"png"` <br> - `"jpg"` <br> - `"gif"`.<br><br>**Default**: `null` |
 | `last_modified` | timestamp | **Read Only**. The date and time when the image was last modified. |
 | `media_url` | string | **Read Only**. The URL to the hosted app asset. <br>**Default**: `null` |
 | `content` | string  | The base 64 encoded content of the app asset. This field does not appear when you execute a `GET` command. <br>**Required On**: `POST` |
@@ -51,7 +51,7 @@ This is an admin-only service that allows Xandr personnel to add app-related ima
 
 ## Examples
 
-**Add an image**
+### Add an image
 
 ```
 $ cat add-image.json
@@ -84,7 +84,7 @@ $ cat add-image.json
              }
 ```
 
-**View a specific image**
+### View a specific image
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-asset?id=3464'
@@ -109,7 +109,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-asset?id=3464'
              }
 ```
 
-**View all images**
+### View all images
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-asset'
@@ -157,7 +157,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-asset'
              }}
 ```
 
-**View all images associated to a specific app**
+### View all images associated to a specific app
 
 ```
 $ curl -b cookies -c cookies 'http://sand.api.appnexus.com/app-asset?plugin_id=91' | json-pp
@@ -184,7 +184,7 @@ $ curl -b cookies -c cookies 'http://sand.api.appnexus.com/app-asset?plugin_id=9
              }
 ```
 
-**Delete an image**
+### Delete an image
 
 ```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-asset?id=3468' |

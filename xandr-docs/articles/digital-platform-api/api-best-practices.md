@@ -1,17 +1,17 @@
 ---
-title: API Best Practices
+title: Digital Platform API - API Best Practices
 description: Learn about the best practices while using APIs to keep your applications healthy.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# API best practices
+# Digital Platform API - API best practices
 
 We're thrilled that you're taking advantage of our platform by grabbing raw data, hooking in your own pieces of the ad serving puzzle, or otherwise building on top of our infrastructure. There are a few ground rules that will make sure you have the best experience possible, and keep your applications healthy as our API evolves. Please stay in touch with your implementation consultant as you get started building.
 
 ## API Dos
 
-**Retrieve only the objects you need**
+### Retrieve only the objects you need
 
 ### GET multiple objects by ID
 
@@ -84,13 +84,13 @@ There is also a concurrent request limit of 15 requests at a time. More than thi
 
 See [API Usage Constraints](./api-usage-constraints.md) for more details on rate limits.
 
-### Update arrays with "append=true"
+### Update arrays with `"append=true"`
 
 When updating array values with the API, an object's array values will be overwritten with whatever values are provided in the `PUT` request. This is fine if the intended behavior is to clear out an array's values and replace it with your updated data. However, a flag can be used to append data to an array rather than replace it. This is particularly useful when updating very lengthy arrays. The query parameter `append=true` can be added to a `PUT` request to set an update to append mode.
 
 For our example, say that we had a simple Profile Object with the following `country_targets` array:
 
-**Profile object, before update**
+#### Profile object, before update
 
 ```
 // Before Append
@@ -109,7 +109,7 @@ For our example, say that we had a simple Profile Object with the following `cou
 
 If we were to use `append=true` in the `PUT` call to update to this object, we could use the following JSON data without fear of overwriting our profile's existing `country_targets` data:
 
-**JSON update data**
+#### JSON update data
 
 ``` pre
 // Update Object
@@ -127,7 +127,7 @@ If we were to use `append=true` in the `PUT` call to update to this object, we 
 
 We would use the following CURL command (replacing \<`profile_ID`\> with the appropriate value)
 
-**CURL example**
+#### CURL example
 
 ```
 $ curl -b cookie -c cookie -X PUT -s -d '@json/profile.json' "https://api.appnexus.com/profile?id=<profile_ID>&append=true"
@@ -135,7 +135,7 @@ $ curl -b cookie -c cookie -X PUT -s -d '@json/profile.json' "https://api.appnex
 
 As a result. our profile object would be updated to reflect the following:
 
-**Resulting profile object**
+#### Resulting profile object
 
 ```
 // After Append
@@ -156,7 +156,7 @@ As a result. our profile object would be updated to reflect the following:
 }
 ```
 
-### Use a config-driven API end-point
+### Use a config-driven API endpoint
 
 Make sure that you can change the API base URL easily. In the example below, the API URL is defined as a variable and can be used throughout the code base. If that URL should ever need to change, it can be modified in a single location.
 
@@ -211,7 +211,7 @@ There are many tips, tricks, and examples throughout the API Wiki that will be u
 
 ## API Don'ts
 
-### Don't assume an API call was successful###
+### Don't assume an API call was successful
 
 All successful API calls will receive a response containing a `"status"` of `"OK"`. If the response does not contain this status, the call failed for some reason. If the `"status"` is `"error"`, an error message will be included in the response. Below is an example of a successful response.
 

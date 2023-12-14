@@ -27,15 +27,15 @@ The app email service is an admin-only service that manages automatic email noti
 | `id` | int | **Read Only**. The auto-generated ID of the email being sent through the app_email service.<br>**Required On**: `PUT`, `DELETE` |
 | `recipient` | string | The name of the person, people, team, or teams receiving the email. Name(s) may contain up to 225 characters.<br>**Required On**: `POST (JSON)` |
 | `type` | string | The type field is used to assign a category to the email - for example `"data team"` or `"services bugs"`. It may contain up to 225 characters.<br>**Default**: `null` |
-| `action` | enum | The event that trigger the notification email. Possible values are <br>`"put"` <br>`"post"` <br>`"delete"`. <br>**Default**: `POST`<br>**Required On**: `POST (JSON)` |
+| `action` | enum | The event that trigger the notification email. Possible values are <br> - `"put"` <br> - `"post"` <br> - `"delete"`. <br><br>**Default**: `POST`<br>**Required On**: `POST (JSON)` |
 | `recipient_emails` | string | The email addresses of the people who should receive the notification. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br>- name1@appnexus.com <br>- name1@appnexus.com,name2@appnexus.com<br>- %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br>**Required On**: `POST (JSON)` |
 | `subject` | string | The text that will appear in the subject field of the email.<br>**Required On**: `POST (JSON)` |
 | `body` | string | The body of the email. Does not have a character limit.<br>**Required On**: `POST (JSON)` |
-| `bcc` | string | The email addresses of the people who should receive the notification as bcc recipients. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br> - name1@appnexus.com <br> - name1@appnexus.com,name2@appnexus.com<br> - %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br>**Default**: `null` |
+| `bcc` | string | The email addresses of the people who should receive the notification as bcc recipients. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br> - name1@appnexus.com <br> - name1@appnexus.com,name2@appnexus.com<br> - %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br><br>**Default**: `null` |
 
 ## Examples
 
-**Add a new app email**
+### Add a new app email
 
 ```
 $ cat new_email.json
@@ -70,7 +70,7 @@ $ cat new_email.json
                       }
 ```
 
-**Update an existing app email**
+### Update an existing app email
 
 ```
 $ cat update_email.json
@@ -102,7 +102,7 @@ $ cat update_email.json
                       }
 ```
 
-**View all app emails**
+### View all app emails
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email'
@@ -149,7 +149,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email'
                       }
 ```
 
-**View a specific app email**
+### View a specific app email
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email?id=54'
@@ -174,7 +174,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email?id=54'
                       }
 ```
 
-**Delete an app email**
+### Delete an app email
 
 ```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-email?id=54

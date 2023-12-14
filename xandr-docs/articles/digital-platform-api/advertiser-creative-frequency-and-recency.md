@@ -80,7 +80,7 @@ Data retention period for this report is 120 days.
 | `split_name` | string | Yes | "Mobile Split A" | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the split_name (if included) will be `null`. |
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
 | `is_remarketing` | int | yes | `0`, `1` | Whether or not the campaign is remarketing |
-| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression.<br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".Allowed values:<br>`"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br>`"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br>`"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br>`"Unknown"`: The node was in an unknown optimization phase.<br>`"Optimized give up"`<br>`"Learn give up"`<br>`"Manual give up"` |
+| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression.<br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - `"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - `"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - `"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - `"Unknown"`: The node was in an unknown optimization phase.<br> - `"Optimized give up"`<br> - `"Learn give up"`<br> - `"Manual give up"` |
 | `media_type` | string | No | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of a creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | Yes | `1` | The ID of the general display style of a creative. |
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
@@ -143,10 +143,9 @@ Data retention period for this report is 120 days.
 | `10` | `"8-14 days"` |
 | `11` | `"14-30 days"` |
 
-
 ## Example
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
 ```
 $ cat network_advertiser_frequency_recency {
@@ -168,7 +167,7 @@ $ cat network_advertiser_frequency_recency {
 }
 ```
 
-**POST the request to the reporting service**
+### `POST` the request to the reporting service
 
 ```
 $ curl -b cookies -c cookies -X POST -d @network_advertiser_frequency_recency "https://api.appnexus.com/report?advertiser_id=384"
@@ -184,7 +183,7 @@ $ curl -b cookies -c cookies -X POST -d @network_advertiser_frequency_recency "h
 }
 ```
 
-**Use the report ID to retrieve the report data**
+### Use the report ID to retrieve the report data
 
 The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
@@ -224,7 +223,7 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/report?id=c458f71c084a2a3
 }
 ```
 
-**Use the download URL to save the report data to a file**
+### Use the download URL to save the report data to a file
 
 You use the `"url"` field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the `"format"` that you specified in your initial `POST` request.
 

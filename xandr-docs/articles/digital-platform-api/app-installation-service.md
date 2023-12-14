@@ -58,7 +58,7 @@ Each object in the `permissions` array contains the following fields:
 
 ## Examples
 
-**View all installations**
+### View all installations
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-installation'
@@ -93,7 +93,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-installation'
 }
 ```
 
-**View a specific installation**
+### View a specific installation
 
 ```
 $ curl -b cookies -c cookies 's://sand.api.appnexus.com/app-installation?id=868'
@@ -110,9 +110,11 @@ $ curl -b cookies -c cookies 's://sand.api.appnexus.com/app-installation?id=868'
             "entity_id":226,
             "status":"installed"
         }
+    }
+}
 ```
 
-**Install an app to a client**
+### Install an app to a client
 
 ```
 $ cat add-app-installation.json
@@ -155,7 +157,7 @@ $ curl -b cookies -c cookies -X POST -d @add-app-installation.json 's://api.appn
 }
 ```
 
-**Update an app installation**
+### Update an app installation
 
 ```
 $ cat update-app-installation.json
@@ -202,7 +204,7 @@ $ curl -b cookies -c cookies -X PUT -d @update-app-installation.json 's://api.ap
 }
 ```
 
-**Delete an app installation**
+### Delete an app installation
 
 ```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-installation?id=121'

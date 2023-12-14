@@ -81,7 +81,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `cpm` | money | The cost per 1000 impressions | `1.6605` | (cost / imps) x 1000 |
 | `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
 | `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
-| ctr | double | The rate of clicks to impressions. | 0.0002218777 | clicks / imps |
+| ctr | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
 | `post_view_convs` | int | The total number of recorded post-view converstions. | `5` | post_view_convs |
 | `post_click_convs` | int | The total number of recorded post-click conversions. | `4` | post_click_convs |
 | `post_click_convs_rate` | double | The rate of post-click conversion to impressions. | `0.0002` | post_click_convs / imps |
@@ -95,7 +95,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 
 ## Example
 
-**Step 1. Create the JSON report request**
+### Step 1. Create the JSON report request
 
 The JSON file should include the following:
 
@@ -140,7 +140,7 @@ $ cat report_request
 }
 ```
 
-**Step 2. POST the request to the Report Service**
+### Step 2.`POST` the request to the report service
 
 `POST` the JSON request to get back a `report_ID`.
 
@@ -161,7 +161,7 @@ Alternatively, you can get a `report_id` via a `POST` request using a `saved_r
 $ curl -b cookies -X POST 'http://api.appnexus.com/report?saved_report_id=30'
 ```
 
-**Step 3. GET the report status from the Report Service**
+### Step 3.`GET` the report status from the report service
 
 Make a `GET` call with the `report_id` to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then, use the `report-download` service to save the report data to a file, as described in the next step.
 
@@ -184,7 +184,7 @@ $ curl -b cookies 'http://api.appnexus.com/report?id=09b6979a6a4c3805bdac8921378
 }
 ```
 
-**Step 4. GET the report data from the report download service**
+### Step 4. `GET` the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download` service. You can find the service and report ID in the `"url"` field of the response to your previous `GET` call. When setting the file to which you want to save the report, use the file extension of the `"format"` (e.g., .csv) that you specified in your initial `POST`.
 

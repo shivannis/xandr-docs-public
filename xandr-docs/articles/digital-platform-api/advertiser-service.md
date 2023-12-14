@@ -49,17 +49,17 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 | `default_category` | object | This feature is not functioning at this time. It will be used in future development. |
 | `default_currency` | string (3) | The default currency to be used for the advertiser. This will be a three-letter code that you can retrieve from the read-only [Currency Service](./currency-service.md). See [Currency Support](../monetize/currency-support.md) in the UI documentation for details about the concept (customer login required).<br><br>**Note**: As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience.<br><br>**Default**: Member's default currency |
 | `enable_pacing` | boolean | If `true`, then spending will be paced for this advertiser over the course of the day. |
-| `enable_political_io_by_default` | boolean | Possible values: `0` or `1`.<br>If set to `true`, insertion orders created for this advertiser using the UI will have political advertising enabled by default. This does not affect insertion orders created using the API.<br>**Default**: `1` (true) |
+| `enable_political_io_by_default` | boolean | Possible values: `0` or `1`.<br><br>If set to `true`, insertion orders created for this advertiser using the UI will have political advertising enabled by default. This does not affect insertion orders created using the API.<br><br>**Default**: `1` (true) |
 | `id` | int | The ID of the Advertiser.<br><br>**Read Only**<br>**Required On**: `PUT`<br>**Default**: auto-incremented number |
 | `is_malicious` | boolean | Admin-only. If `true`, the advertiser's status will be set to inactive. Xandr administrators will set this field to `true` for advertisers determined to be directing users to malicious landing pages. Users will not be able to set the advertiser's status back to active until a Xandr administrator sets the `is_malicious` field back to `false`.<br><br>**Default**: `false` |
 | `is_mediated` | boolean | Admin-only. If `true`, the advertiser will not be displayed in the UI. Xandr administrators can set this field to `true` when the Advertiser is associated with a mediated bid.<br><br>**Default**: `false` |
 | `is_running_political_ads` | boolean | Possible values: `0` or `1`.<br><br>Declares whether or not this advertiser conducts political advertising (defined as advertising related to an election, ballot initiative, or political candidate, in the United States).<br>If an existing advertiser already has insertion orders with political advertising enabled, you will not be able to set `is_running_political_ads` to `false`.<br><br>**Default**: `0` (false) |
-| `labels` | array | The optional labels applied to the advertiser. Currently, three labels are available for advertisers: `"Salesperson"`, `"Account Manager"`, and `"Advertiser Type"`. See [Labels](#labels) below for more details.<br><br>**Note**: You can report on advertiser labels with the Network Analytics report. For example, if you use the "Salesperson" label to specify the name of the salesperson responsible for each advertiser, you can run the Network Analytics report filtered by `"salesperson_for_advertiser"` to focus on the advertisers that a particular salesperson is responsible for or grouped by `"salesperson_for_advertiser"` to rank the performance of your salespeople. |
+| `labels` | array | The optional labels applied to the advertiser. Currently, three labels are available for advertisers: <br> - `"Salesperson"` <br> - `"Account Manager"` <br> - `"Advertiser Type"`. See [Labels](#labels) below for more details.<br><br>**Note**: You can report on advertiser labels with the Network Analytics report. For example, if you use the "Salesperson" label to specify the name of the salesperson responsible for each advertiser, you can run the Network Analytics report filtered by `"salesperson_for_advertiser"` to focus on the advertisers that a particular salesperson is responsible for or grouped by `"salesperson_for_advertiser"` to rank the performance of your salespeople. |
 | `last_modified` | timestamp | Timestamp of the last time this advertiser was modified. |
 | `lifetime_budget` | double | You can set all of the budget parameters at the advertiser level as well as the campaign and media buy levels. Budgets at the advertiser level will apply to all traffic for your advertiser. This is a dollar (media cost) budget. |
 | `lifetime_budget_imps` | int | The lifetime impression budget for the advertiser. (See `lifetime_budget` above.) |
 | `name` | string (255) | The name of the advertiser.<br><br>**Required On**: `POST` |
-| `object_stats` | object | The number of total, active, and inactive insertion orders, line items, campaigns, and creatives under the advertiser, as well as the number of creatives with particular audit statuses. To include this object in a `GET` response, pass `object_stats=true` in the query string.<br>**Read Only**. |
+| `object_stats` | object | The number of total, active, and inactive insertion orders, line items, campaigns, and creatives under the advertiser, as well as the number of creatives with particular audit statuses. To include this object in a `GET` response, pass `object_stats=true` in the query string.<br><br>**Read Only**. |
 | `partner_fees` | array | An array of partner fees applied to this advertiser. You can create, attach, view, or remove partner fees with the Partner Fee Service. |
 | `profile_id` | int | You can set an optional `profile_id` at the advertiser, line item, campaign and creative levels. A profile is a generic set of rules for targeting inventory. A profile set at the advertiser level will apply to all traffic for your advertiser, so you will probably want to keep this profile very broad. Ad calls must pass all profile targeting at any level. See the [Profile Service](./profile-service.md) for details. |
 | `remarketing_segment_id` | int | A segment is marked as "remarketing" for reporting and filtering purposes only. If you mark a segment as remarketing in the UI, it will show up here. Or you can add segment IDs here, and they will be marked as remarketing for reporting purposes. |
@@ -68,7 +68,7 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 | `timezone` | enum | The timezone of the advertiser. See [API Timezones](./api-timezones.md) for details and accepted values. For details on how to make the advertiser timezone "trickle down" to child objects, see [Timezone for Dependent Objects](#timezone-for-dependent-objects) below.<br><br>**Default**: `"EST5EDT"`, or the member's timezone. |
 | `thirdparty_pixels` | array | An array of third-party pixels associated with the advertiser. You can automatically attach these pixels to all creatives owned by this advertiser using the Third-party Pixel service or attach them individually at the creative level using the [Creative Service](./creative-service.md).<br><br>**Read Only**.<br>**Default**: `null` |
 | **time_format** | enum | The format in which you would like to see times displayed in the UI. Possible values: `"12-hour"` or `"24-hour"`.<br><br>**Default**: `"12-hour"` |
-| `use_insertion_orders` | boolean | If `true`, the use of insertion orders which contain collections of line items, will be enabled for this advertiser. You will not be able to create insertion orders, if this field is set to `"false"`. Please see the [Insertion Order Service](./insertion-order-service.md) for details.<br><br>**CAUTION**:<br>Preexisting line items<br>If you set this field to `true` and have already created line items prior to enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order (using the [Insertion Order Service](./insertion-order-service.md)) and associate the line items with the insertion order (using the [Line Item Service](./line-item-service.md)). All newly created line items will require an insertion order.<br><br>**Note**:<br>When the advertiser has associated insertion orders, you will not be able to update the value of `"use_insertion_orders"` to `false`.<br><br>**Default**: `true` |
+| `use_insertion_orders` | boolean | If `true`, the use of insertion orders which contain collections of line items, will be enabled for this advertiser. You will not be able to create insertion orders, if this field is set to `"false"`. Please see the [Insertion Order Service](./insertion-order-service.md) for details.<br><br>**CAUTION**:<br>**Preexisting line items**<br>If you set this field to `true` and have already created line items prior to enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order (using the [Insertion Order Service](./insertion-order-service.md)) and associate the line items with the insertion order (using the [Line Item Service](./line-item-service.md)). All newly created line items will require an insertion order.<br><br>**Note**:<br>When the advertiser has associated insertion orders, you will not be able to update the value of `"use_insertion_orders"` to `false`.<br><br>**Default**: `true` |
 
 ### Third-party pixels
 
@@ -92,7 +92,7 @@ You can use the read-only [Label Service](./label-service.md) to view all possib
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the label. Possible values: <br>`1` (Salesperson) <br>`3` (Account Manager) <br>`12` (Advertiser Type). |
-| `name` | enum | The name of the label. Possible values: <br>`"Salesperson"` <br>`"Account Manager"` <br>`"Advertiser Type"`.<br>**Read Only**. |
+| `name` | enum | The name of the label. Possible values: <br> - `"Salesperson"` <br> - `"Account Manager"` <br> - `"Advertiser Type"`.<br>**Read Only**. |
 | `value` | string (100) | The value assigned to the label. For example, for the `"Salesperson"` label, this could be a name such as `"Michael Sellers"`. |
 
 ### Pagination
@@ -135,7 +135,7 @@ $ curl -b cookies -X PUT -d @advertiser 'https://api.appnexus.com
 
 ## Examples
 
-**Add an advertiser**
+### Add an advertiser
 
 ```
 $ cat advertiser.json
@@ -158,7 +158,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @advertiser.json 'https://api
 }
 ```
 
-**Update an advertiser**
+### Update an advertiser
 
 ```
 $ cat advertiser_update
@@ -182,7 +182,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @advertiser_update 'https://ap
 }
 ```
 
-**View all advertisers**
+### View all advertisers
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
@@ -281,7 +281,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser'
 }
 ```
 
-**View a specific advertiser**
+### View a specific advertiser
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/advertiser?id=51'
