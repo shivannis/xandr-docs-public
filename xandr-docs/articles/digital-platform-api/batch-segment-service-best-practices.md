@@ -45,7 +45,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
     During peak hours, more files are in the queue, and your file may take longer to be processed. If you can, schedule your uploads to happen overnight. Per the SLA, uploads could take up to 24 hours.
 
-- Check the [status report](../bidders/uploading-segment-data-using-bss.md#check-the-job-status). 
+- Check the [status report](../bidders/uploading-segment-data-using-bss.md#check-the-job-status).
 
     Checking the status report will allow you to catch and correct errors and upload more accurate data.
 
@@ -78,7 +78,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
 - **Will there be a "fired" timestamp on these users for segment age targeting?**
 
-    If you choose to include the TIMESTAMP field in your files, then you'll specify the timestamp for every user/segment combination. If you do not include TIMESTAMP, then the timestamp will be the time at which the data was written to our server-side cookie store, which is usually around the "completed time" you see in your status report. 
+    If you choose to include the TIMESTAMP field in your files, then you'll specify the timestamp for every user/segment combination. If you do not include TIMESTAMP, then the timestamp will be the time at which the data was written to our server-side cookie store, which is usually around the "completed time" you see in your status report.
 
     > [!NOTE]
     > The time is in the UTC time zone.

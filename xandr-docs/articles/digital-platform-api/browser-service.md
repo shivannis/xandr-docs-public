@@ -1,144 +1,37 @@
 ---
-Title : Browser Service
-Description : The read-only Browser Service allows you to see what browsers are
+title: Digital Platform API - Browser Service
+description: In this article, find information about the Browser Service and the fields associated with it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-registered in the our system. You can use this service to retrieve the
 ---
 
+# Digital Platform API - Browser service
 
-# Browser Service
-
-
-
-The read-only Browser Service allows you to see what browsers are
-registered in the our system. You can use this service to retrieve the
-IDs of browsers for targeting in campaigns via the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.
-
-
+The read-only Browser Service allows you to see what browsers are registered in our system. You can use this service to retrieve the IDs of browsers for targeting in campaigns via the [Profile Service](profile-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000424__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00000424__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00000424__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__2">https://api.<span
-class="ph">appnexus.com/browser</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__3">View
-all browsers available for targeting</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__2">https://api.<span
-class="ph">appnexus.com/browser?search=SEARCH_TERM</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__3">View
-all browsers with IDs or names containing certain characters</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__2">https://api.<span
-class="ph">appnexus.com/browser?id=BROWSER_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__3">View
-a specific browser</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__2">https://api.<span
-class="ph">appnexus.com/browser/meta</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `https://api.appnexus.com/browser` | View all browsers available for targeting |
+| `GET` | `https://api.appnexus.com/browser?search=SEARCH_TERM` | View all browsers with IDs or names containing certain characters |
+| `GET` | `https://api.appnexus.com/browser?id=BROWSER_ID` | View a specific browser |
+| `GET` | `https://api.appnexus.com/browser/meta` | Find out which fields you can filter and sort by |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000424__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000424__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000424__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__18">The
-ID of the browser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__16"><code
-class="ph codeph">is_aggregated</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__17">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__18">If
-true, Xandr aggregates data for the browser in
-reporting. If false, the carrier will appear as "Other Browser" in
-reporting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__16"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__18">The
-date and time when the browser entry was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000424__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000424__entry__18">The
-name of the browser.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `id` | int | The ID of the browser. |
+| `is_aggregated` | boolean | If true, Xandr aggregates data for the browser in reporting. If false, the carrier will appear as "Other Browser" in reporting. |
+| `last_modified` | string | The date and time when the browser entry was last modified. |
+| `name` | string | The name of the browser. |
 
 ## Examples
 
-**View all browsers**
+### View all browsers
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/browser'
 {
     "response": {
@@ -176,9 +69,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/browser'
 }
 ```
 
-**View a specific browser**
+### View a specific browser
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/browser?id=8'
 {
     "response": {
@@ -195,9 +88,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/browser?id=8'
 }
 ```
 
-**Search for a browser**
+### Search for a browser
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/browser?search=firefox'
 {
     "response": {
@@ -227,9 +120,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/browser?search=firefox'
     }
 }
 ```
-
-
-
-
-
-

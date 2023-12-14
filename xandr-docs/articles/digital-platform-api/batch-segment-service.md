@@ -76,7 +76,7 @@ The file upload URL is given in the JSON response to Step 1 by the field `upload
 > - Your segment file should not be larger than 0.5GB.
 > [!WARNING]
 > In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream"*.* *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
-> 
+>
 > Your file must conform to the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
 
 ```
@@ -359,7 +359,7 @@ m$ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 ### Batch segment upload job
 
-When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata (For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing)). 
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata (For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing)).
 
 > [!NOTE]
 > Most metadata will only be present when `phase = "completed"`.

@@ -1,265 +1,51 @@
 ---
-Title : Buyer Group Service
-Description : You can create groups of buyers in order to apply similar yield
+title: Buyer Group Service
+description: In this article, find information about the Buyer Group Service and the fields associated with it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-management settings to them as a whole.
 ---
 
+# Buyer group service
 
-# Buyer Group Service
-
-
-
-You can create groups of buyers in order to apply similar yield
-management settings to them as a whole.
-
-
+You can create groups of buyers in order to apply similar yield management settings to them as a whole.
 
 ## REST API
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="buyer-group-service__entry__1"
-class="entry align-center colsep-1 rowsep-1">HTTP Method</th>
-<th id="buyer-group-service__entry__2"
-class="entry align-center colsep-1 rowsep-1">Endpoint</th>
-<th id="buyer-group-service__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__1"><code
-class="ph codeph">PUT</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__2"><a
-href="https://api.appnexus.com/buyer-group?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/buyer-group?id=ID</a>
-<p>(edit-group-member JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__3">Update an existing buyer
-group</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__2"><a
-href="https://api.appnexus.com/buyer-group?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/buyer-group?id=ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__3">View a specific buyer group</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__2"><a
-href="https://api.appnexus.com/buyer-group" class="xref"
-target="_blank">https://api.appnexus.com/buyer-group</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__3">View all buyer groups</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__1"><code
-class="ph codeph">POST</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__2"><a
-href="https://api.appneuxs.com/buyer-group" class="xref"
-target="_blank">https://api.appneuxs.com/buyer-group</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__3">Add a buyer group</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__2"><a
-href="https://api.appnexus.com/buyer-group/meta" class="xref"
-target="_blank">https://api.appnexus.com/buyer-group/meta</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__3">Find out which fields you can
-filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `https://api.appnexus.com/buyer-group?id=ID` | View a specific buyer group |
+| `GET` | `https://api.appnexus.com/buyer-group` | View all buyer groups |
+| `GET` | `https://api.appnexus.com/buyer-group/meta` | Find out which fields you can filter and sort by |
+| `POST` | `https://api.appneuxs.com/buyer-group` | Add a buyer group |
+| `PUT` | `https://api.appnexus.com/buyer-group?id=ID` <br> (edit-group-member JSON) | Update an existing buyer group |
 
+> [!NOTE]
+> This service does not allow the user to add or delete members to or from a group. You must create a JSON file containing all members that should be in the list and execute a `PUT` call. Members that are not in the JSON file are added, while members that are not in the JSON are excluded.
 
+## JSON fields
 
-<b>Note:</b> This service does not allow the
-user to add or delete members to or from a group. You must create a JSON
-file containing all members that should be in the list and execute a
-`PUT` call. Members that are not in the JSON file are added, while
-members that are not in the JSON are excluded.
+| Field | Type (Length) | Description |
+|---|---|---|
+| `buyer_members` | array of objects | This list of members that belong to that buyer group. Refer to the Buyer Members section. <br> **Default**: `null` |
+| `code` | string (100) | Allows clients to use AppNexus systems while referring to their own unique object ID values. <br> **Default**: `null` |
+| `description` | string (100) | Text that describes the buyer group. <br> **Default**: `null` |
+| `id` | int | The identification number of the buyer group. <br> **Default**: Auto-generated number <br> **Required on**: `PUT` or `DELETE` in query string |
+| `last_modified` | datetime | The date and time that the buyer group was last updated. <br> **Default**: `null` |
+| `name` | string (100) | The name of the buyer group. <br> **Default**: `null` <br> **Required on**: `POST` |
 
-
-
-
-
-
-
-## JSON Fields
-
-
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="buyer-group-service__entry__19"
-class="entry align-center colsep-1 rowsep-1">Field</th>
-<th id="buyer-group-service__entry__20"
-class="entry align-center colsep-1 rowsep-1">Type (Length)</th>
-<th id="buyer-group-service__entry__21"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">The identification number of
-the buyer group.
-<p><strong>Default</strong>: Auto-generated number</p>
-<p><strong>Required on</strong>: <code class="ph codeph">PUT</code> or
-<code class="ph codeph">DELETE</code> in query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">string (100)</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">Allows clients to use AppNexus
-systems while referring to their own unique object ID values.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">string (100)</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">The name of the buyer group.
-<p><strong>Default</strong>: <code class="ph codeph">null</code></p>
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">string (100)</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">Text that describes the buyer
-group.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">datetime</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">The date and time that the
-buyer group was last updated.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__19"><code
-class="ph codeph">buyer_members</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__20">array of objects</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="buyer-group-service__entry__21">This list of members that
-belong to that buyer group. Refer to the <a
-href="buyer-group-service.md#buyer-group-service__Buyer_Members"
-class="xref">Buyer Members</a> section.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Buyer Members**
-
-
+### Buyer members
 
 The `buyer_members` array contains all members that belong to the group.
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="buyer-group-service__entry__40"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="buyer-group-service__entry__41"
-class="entry colsep-1 rowsep-1">Type (Length)</th>
-<th id="buyer-group-service__entry__42"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-group-service__entry__40"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-group-service__entry__41">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-group-service__entry__42">The identification number of a
-member in the group.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Field | Type (Length) | Description |
+|---|---|---|
+| `id` | int | The identification number of a member in the group. |
 
 ## Examples
 
-**Update members in a list**
+### Update members in a list
 
-
-
-``` pre
+```
 $ cat edit-group-member
 
 {
@@ -286,11 +72,9 @@ $ curl -b cookies -c cookies -X PUT -d @edit-group-member.json 'https://api.appn
 }
 ```
 
+### View a specific buyer group
 
-
-**View a specific buyer group**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/buyer-group?id=237'
 
 {
@@ -324,11 +108,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/buyer-group?id=237'
 }
 ```
 
+### View all buyer groups
 
-
-**View all buyer groups**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/buyer-group'
 
 {
@@ -415,13 +197,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/buyer-group'
 }
 ```
 
+### Create a buyer group
 
-
-
-
-**Create a buyer group**
-
-``` pre
+```
 $ cat add-buyer-group
 
 {    
@@ -442,21 +220,7 @@ $ curl -b cookies -c cookies -X POST -d @add-buyer-group.json 'https://api.appne
     }
 ```
 
-
-
-
-
-
-
 ## Related topics
 
-- <a href="yield-management-profile-service.md" class="xref">Yield
-  Management Profile Service</a>
-- <a href="yield-management-floor-service.md" class="xref">Yield
-  Management Floor Service</a>
-
-
-
-
-
-
+- [Yield Management Profile Service](yield-management-profile-service.md)
+- [Yield Management Floor Service](yield-management-floor-service.md)
