@@ -1,244 +1,43 @@
 ---
-Title : App Email Service
-Description : The app email service is an admin-only service that manages automatic
+title: App Email Service
+description: The app email service manages automatic email notifications sent to admin users when apps are installed, modified, or deleted.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-email notifications sent to admin users when apps are installed,
-modified, or deleted. This is also the service used to change the
 ---
 
 
-# App Email Service
+# App email service
 
-
-
-The app email service is an admin-only service that manages automatic
-email notifications sent to admin users when apps are installed,
-modified, or deleted. This is also the service used to change the
-content of email notifications on app install, modification, or
-deletion. 
-
-
+The app email service is an admin-only service that manages automatic email notifications sent to admin users when apps are installed, modified, or deleted. This is also the service used to change the content of email notifications on app install, modification, or deletion.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000bcd__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00000bcd__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00000bcd__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__2"><a
-href="https://api.appnexus.com/app-email" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/app-email</a>
-<p>(new_email JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__3">Add
-an app email</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__2"><a
-href="https://api.appnexus.com/app-email?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/app-email?id=ID</a> 
-<p>(update_email JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__3">Modify an existing app email</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__2"><a
-href="https://api.appnexus.com/app-email" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/app-email</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__3">View
-all app emails</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__2"><a
-href="https://api.appnexus.com/app-email?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/app-email?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__3">View
-a specific app email</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__2"><a
-href="https://api.appnexus.com/app-email?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/app-email?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__3">Delete an app email</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/app-email<br>(new_email JSON) | Add an app email |
+| `PUT` | https://api.appnexus.com/app-email?id=ID <br>(update_email JSON) | Modify an existing app email |
+| `GET` | https://api.appnexus.com/app-email | View all app emails |
+| `GET` | https://api.appnexus.com/app-email?id=ID | View a specific app email |
+| `DELETE` | https://api.appnexus.com/app-email?id=ID | Delete an app email |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000bcd__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000bcd__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000bcd__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__21"><strong>Read Only.</strong> The
-auto-generated ID of the email being sent through the app_email service.
-<p><strong>Required On</strong>: <code class="ph codeph">PUT</code>,
-<code class="ph codeph">DELETE</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">recipient</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-name of the person, people, team, or teams receiving the email. Name(s)
-may contain up to 225 characters.
-<p><strong>Required On</strong>; <code
-class="ph codeph">POST (JSON)</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-type field is used to assign a category to the email - for example "data
-team" or "services bugs". It may contain up to 225 characters.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">action</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-event that trigger the notification email. Possible values are "put,"
-"post," or "delete."
-<p><strong>Default</strong>: <code class="ph codeph">POST</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST (JSON)</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">recipient_emails</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-email addresses of the people who should receive the notification. Can
-contain specific email addresses separated by commas and/or a variable
-that pulls specific emails from the database to populate the
-field.<br />
-<br />
-Examples:
-<ul>
-<li>name1@appnexus.com </li>
-<li>name1@appnexus.com,<a
-href="mailto:name2@appnexus.com" class="xref"
-target="_blank">name2@appnexus.com</a></li>
-<li> %developer_email%,name1@appnexus.com</li>
-<li>%developer_email%,%installer_email%</li>
-</ul>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST (JSON)</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">subject</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-text that will appear in the subject field of the email.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST (JSON)</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code
-class="ph codeph">body</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-body of the email. Does not have a character limit.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST (JSON)</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__19"><code class="ph codeph">bcc</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bcd__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bcd__entry__21">The
-email addresses of the people who should receive the notification as bcc
-recipients. Can contain specific email addresses separated by commas
-and/or a variable that pulls specific emails from the database to
-populate the field.<br />
-<br />
-Examples:<br />
-&#10;<ul>
-<li><a href="mailto:name1@appnexus.com" class="xref"
-target="_blank">name1@appnexus.com</a> </li>
-<li><a href="mailto:name1@appnexus.com" class="xref"
-target="_blank">name1@appnexus.com</a>,<a
-href="mailto:name2@appnexus.com" class="xref"
-target="_blank">name2@appnexus.com</a></li>
-<li> %developer_email%,name1@appnexus.com</li>
-<li>%developer_email%,%installer_email%</li>
-</ul>
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | **Read Only**. The auto-generated ID of the email being sent through the app_email service.<br>**Required On**: `PUT`, `DELETE` |
+| `recipient` | string | The name of the person, people, team, or teams receiving the email. Name(s) may contain up to 225 characters.<br>**Required On**: `POST (JSON)` |
+| `type` | string | The type field is used to assign a category to the email - for example `"data team"` or `"services bugs"`. It may contain up to 225 characters.<br>**Default**: `null` |
+| `action` | enum | The event that trigger the notification email. Possible values are <br>`"put"` <br>`"post"` <br>`"delete"`. <br>**Default**: `POST`<br>**Required On**: `POST (JSON)` |
+| `recipient_emails` | string | The email addresses of the people who should receive the notification. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br>- name1@appnexus.com <br>- name1@appnexus.com,name2@appnexus.com<br>- %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br>**Required On**: `POST (JSON)` |
+| `subject` | string | The text that will appear in the subject field of the email.<br>**Required On**: `POST (JSON)` |
+| `body` | string | The body of the email. Does not have a character limit.<br>**Required On**: `POST (JSON)` |
+| `bcc` | string | The email addresses of the people who should receive the notification as bcc recipients. Can contain specific email addresses separated by commas and/or a variable that pulls specific emails from the database to populate the field.<br><br>Examples:<br> - name1@appnexus.com <br> - name1@appnexus.com,name2@appnexus.com<br> - %developer_email%,name1@appnexus.com<br> - %developer_email%,%installer_email%<br>**Default**: `null` |
 
 ## Examples
 
 **Add a new app email**
 
-``` pre
+```
 $ cat new_email.json
                       {
                       "app-email": {
@@ -273,7 +72,7 @@ $ cat new_email.json
 
 **Update an existing app email**
 
-``` pre
+```
 $ cat update_email.json
                       {
                       "app-email":
@@ -305,7 +104,7 @@ $ cat update_email.json
 
 **View all app emails**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email'
                       
                       {
@@ -352,7 +151,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email'
 
 **View a specific app email**
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email?id=54'
                       
                       {
@@ -377,7 +176,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/app-email?id=54'
 
 **Delete an app email**
 
-``` pre
+```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-email?id=54
                       {
                       "response": {
@@ -385,9 +184,3 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/app-email?id=54
                       }
                       }
 ```
-
-
-
-
-
-

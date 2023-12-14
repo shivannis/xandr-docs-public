@@ -1,54 +1,28 @@
 ---
-Title : Advertiser Creative Frequency and Recency
-Description : The Advertiser Creative Frequency & Recency report can be used to view
+title: Advertiser Creative Frequency and Recency
+description: Use the advertiser creative frequency and recency report to view creative data for a specific advertiser based on the frequency and recency of user views.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-creative data for a specific advertiser based on the frequency and
-recency of user views. This report is available to advertiser and
 ---
 
+# Advertiser creative frequency and recency
 
-# Advertiser Creative Frequency and Recency
+The Advertiser Creative Frequency & Recency report can be used to view creative data for a specific advertiser based on the frequency and recency of user views. This report is available to advertiser and network users.
 
+For instructions on retrieving a report, please see [Report Service](./report-service.md) or see the [example](#example) below. For an advertiser user, the advertiser ID is detected based on the user's authentication. For a network user, however, this report requires specifying the advertiser ID as part of the URL, for example:
 
-
-
-
-The Advertiser Creative Frequency & Recency report can be used to view
-creative data for a specific advertiser based on the frequency and
-recency of user views. This report is available to advertiser and
-network users.
-
-For instructions on retrieving a report, please see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> or see the <a
-href="advertiser-creative-frequency-and-recency.md#advertiser-creative-frequency-and-recency__example"
-class="xref">example</a> below. For an advertiser user, the advertiser
-ID is detected based on the user's authentication. For a network user,
-however, this report requires specifying the advertiser ID as part of
-the URL, for example:
-
-``` pre
+```
 https://api.appnexus.com/report?advertiser_id=ADVERTISER_ID
 ```
 
+> [!NOTE]
+> Lookback window
+>
+> Frequency and recency data is available for 120 days (no data before February 26, 2017).
 
+## Time frame
 
-<b>Note:</b> Lookback window
-
-Frequency and recency data is available for 120 days (no data before
-February 26, 2017).
-
-
-
-
-
-
-
-## Time Frame
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - last_hour
 - today
@@ -63,1090 +37,118 @@ following:
 - last_100_days
 - custom
 
-**Data Retention Period**
+**Data retention period**
 
 Data retention period for this report is 120 days.
 
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="advertiser-creative-frequency-and-recency__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="advertiser-creative-frequency-and-recency__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="advertiser-creative-frequency-and-recency__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="advertiser-creative-frequency-and-recency__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="advertiser-creative-frequency-and-recency__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"2010-02-01 06:00:00"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The hour
-of the auction.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"2010-02-01"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The day of
-the auction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"2010-02"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The month
-of the auction.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">554</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the creative.
-
-<b>Note:</b> For external click or impression
-trackers, <code class="ph codeph">creative_id</code> will be <code
-class="ph codeph">"External Clicks"</code> or <code
-class="ph codeph">"External Imps"</code>.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Q1 2010 728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the creative.
-
-<b>Note:</b> For external click or impression
-trackers, <code class="ph codeph">creative_name</code> will be <code
-class="ph codeph">"External Clicks"</code> or <code
-class="ph codeph">"External Imps"</code>.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Q1 2010 728x90 (554)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_recency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"15-30 minutes"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The bucket
-for how recently the creative was displayed. See <a
-href="advertiser-creative-frequency-and-recency.md#advertiser-creative-frequency-and-recency__cre-rec-buc"
-class="xref">Creative Recency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_recency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"4"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the creative recency bucket. See <a
-href="advertiser-creative-frequency-and-recency.md#advertiser-creative-frequency-and-recency__cre-rec-buc"
-class="xref">Creative Recency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_frequency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"11-20"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The bucket
-for how frequently the creative was displayed. See <a
-href="advertiser-creative-frequency-and-recency.md#advertiser-creative-frequency-and-recency__cre-fre-buc"
-class="xref">Creative Frequency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">creative_frequency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"3"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the creative frequency bucket. See <a
-href="advertiser-creative-frequency-and-recency.md#advertiser-creative-frequency-and-recency__cre-fre-buc"
-class="xref">Creative Frequency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">123</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the buying member. If the impression was not purchased, this field shows
-one of the following values: <code class="ph codeph">229</code> = PSA,
-<code class="ph codeph">0</code> = Blank, or <code
-class="ph codeph">319</code> = Default.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">789</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the advertiser. If the value is <code class="ph codeph">0</code>, either
-the impression was purchased by an external buyer, or a default or PSA
-was shown.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Verizon Wireless"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">advertiser</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Verizon Wireless (789)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">advertiser_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Virizon Wireless Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The custom
-code for the advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">321</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the insertion order.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Insertion Order"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Insertion Order (321)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">insertion_order_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Insertion Order Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The custom
-code for the insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">111</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Line Item"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the line item.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">line_item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Line Item (111)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Line Item Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The custom
-code for the line item.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">campaign_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">222</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the campaign.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">campaign_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Campaign"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the campaign.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">campaign</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Campaign (222)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">campaign_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Default Campaign Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The custom
-code for the campaign.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">campaign_priority</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><p>The
-bidding priority for a campaign that targets direct inventory.</p>
-<p>Possible values: <code class="ph codeph">1</code> - <code
-class="ph codeph">10</code>, where <code class="ph codeph">10</code> is
-the highest priority.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">split_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">342</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the split that purchased the impressions in this data set. Splits are
-only applicable to augmented line items. For any reports that contain
-campaigns, the <code class="ph codeph">split_id</code> (if included)
-will be <code class="ph codeph">null</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">split_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Mobile Split A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The name
-of the split that purchased the impressions in this data set. Splits are
-only applicable to augmented line items. For any reports that contain
-campaigns, the <code class="ph codeph">split_name</code> (if included)
-will be <code class="ph codeph">null</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">size</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The size
-of the placement/creative served.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">is_remarketing</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">0</code>, <code class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">Whether or
-not the campaign is remarketing</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">bid_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Manual"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5"><div
->
-The optimization phase the node was in when it bid for this impression.
-
-<b>Note:</b> The term "give up" is appended to
-the bid types below if the valuation for that impression falls below the
-venue's "give up price".
-
-Allowed values:
-
-<ul>
-<li><code class="ph codeph">"Manual"</code>: Applies when you are
-bidding with a CPM goal, whether it's Base, EAP, or ECP.</li>
-<li><code class="ph codeph">"Learn"</code>: Applies when you are bidding
-with optimization (CPA, CPC, or margin) and we do not yet have enough
-data to bid optimized.</li>
-<li><code class="ph codeph">"Optimized"</code>: Applies when you are
-bidding with optimization (CPA, CPC, or margin) and we have enough data
-to bid optimized.</li>
-<li><code class="ph codeph">"Unknown"</code>: The node was in an unknown
-optimization phase.</li>
-<li><code class="ph codeph">"Optimized give up"</code></li>
-<li><code class="ph codeph">"Learn give up"</code></li>
-<li><code class="ph codeph">"Manual give up"</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">media_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Banner"</code>, <code class="ph codeph">"Pop"</code>,
-<code class="ph codeph">"Interstitial"</code>, <code
-class="ph codeph">"Video"</code>, <code class="ph codeph">"Text"</code>,
-<code class="ph codeph">"Expandable"</code>, <code
-class="ph codeph">"Skin"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The
-general display style of a creative. You can use the <a
-href="media-type-service.md"
-class="xref" target="_blank">Media Type Service</a> to view the complete
-list of media types.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">mediatype_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The ID of
-the general display style of a creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__1">user_group_for_campaign</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__4"><code
-class="ph codeph">"Test"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__5">The
-test/control user group for the campaign. See the "labels" field in the
-<a
-href="campaign-service.md"
-class="xref" target="_blank">Campaign Service</a> for more details.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `hour` | time | No | `"2010-02-01 06:00:00"` | The hour of the auction. |
+| `day` | time | No | `"2010-02-01"` | The day of the auction. |
+| `month` | time | No | `"2010-02"` | The month of the auction. |
+| `creative_id` | int | yes | `554` | The ID of the creative.<br><br>**Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | no | `"Q1 2010 728x90"` | The name of the creative.<br><br>**Note**: For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |
+| `creative` | string | no | `"Q1 2010 728x90 (554)"` | **Deprecated** (as of October 17, 2016). |
+| `creative_recency_bucket` | string | yes | `"15-30 minutes"` | The bucket for how recently the creative was displayed. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
+| `creative_recency_bucket_id` | string | no | `"4"` | The ID of the creative recency bucket. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
+| `creative_frequency_bucket` | string | yes | `"11-20"` | The bucket for how frequently the creative was displayed. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
+| `creative_frequency_bucket_id` | string | no | `"3"` | The ID of the creative frequency bucket. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
+|`buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br> `319` = Default. |
+| `advertiser_id` | int | Yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown. |
+| a`dvertiser_name` | string | No | `"Verizon Wireless"` | The name of the advertiser. |
+| `advertiser` | string | No | `"Verizon Wireless (789)"` | Deprecated (as of October 17, 2016). |
+| `advertiser_code` | string | No | `"Virizon Wireless Code"` | The custom code for the advertiser. |
+| `insertion_order_id` | int | Yes | `321` | The ID of the insertion order. |
+| `insertion_order_name` | string | No | `"Insertion Order"` | The name of the insertion order. |
+| `insertion_order` | string | No | `"Insertion Order (321)"` | **Deprecated** (as of October 17, 2016). |
+| `insertion_order_code` | string | No | `"Insertion Order Code"` | The custom code for the insertion order. |
+| `line_item_id` | int | Yes | `111` | The ID of the line item. |
+| `line_item_name` | string | No | `"Default Line Item"` | The name of the line item. |
+| `line_item` | string | No | `"Default Line Item (111)"` | **Deprecated** (as of October 17, 2016). |
+| `line_item_code` | string | No | `"Default Line Item Code"` | The custom code for the line item. |
+| `campaign_id` | int | Yes | `222` | The ID of the campaign. |
+| `campaign_name` | string | No | `"Default Campaign"` | The name of the campaign. |
+| `campaign` | string | No | `"Default Campaign (222)"` | **Deprecated** (as of October 17, 2016). |
+| `campaign_code` | string | No | `"Default Campaign Code"` | The custom code for the campaign. |
+| `campaign_priority` | int | No | `5` | The bidding priority for a campaign that targets direct inventory.<br>Possible values: `1` - `10`, where `10` is the highest priority. |
+| `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be null. |
+| `split_name` | string | Yes | "Mobile Split A" | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the split_name (if included) will be `null`. |
+| `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
+| `is_remarketing` | int | yes | `0`, `1` | Whether or not the campaign is remarketing |
+| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression.<br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price".Allowed values:<br>`"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br>`"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br>`"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br>`"Unknown"`: The node was in an unknown optimization phase.<br>`"Optimized give up"`<br>`"Learn give up"`<br>`"Manual give up"` |
+| `media_type` | string | No | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of a creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
+| `mediatype_id` | int | Yes | `1` | The ID of the general display style of a creative. |
+| `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="advertiser-creative-frequency-and-recency__entry__186"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="advertiser-creative-frequency-and-recency__entry__187"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="advertiser-creative-frequency-and-recency__entry__188"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="advertiser-creative-frequency-and-recency__entry__189"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="advertiser-creative-frequency-and-recency__entry__190"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">2340</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total number of impressions (served and resold).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total number of clicks across all impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">9</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_click_convs
-+ post_view_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total number of post-view and post-click conversions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.000221877080097626</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">total_convs
-/ imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of conversions to impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">click_convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.1651376</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">total_convs
-/ clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of conversions to clicks.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">click_conv_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.000064</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">total_convs
-/ clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of conversions to clicks.
+| Column | Type | Example | Formula | Description |
+|:---|:---|:---|:---|:---|
+| `imps` | int | `2340` | imps | The total number of impressions (served and resold). |
+| `clicks` | int | `1` | clicks | The total number of clicks across all impressions. |
+| `total_convs` | int | `9` | post_click_convs + post_view_convs | The total number of post-view and post-click conversions. |
+| `convs_rate` | double | `0.000221877080097626` | total_convs / imps | The rate of conversions to impressions. |
+| `click_convs_rate` | double | `0.1651376` | total_convs / clicks | The rate of conversions to clicks. |
+| `click_conv_rate` | double | `0.000064` | total_convs / clicks | The rate of conversions to clicks.<br><br>**Note**: This field is identical to `click_convs_rate`. |
+| `ctr` | double |`0.000221877080097626` | clicks / imps | The rate of clicks to impressions. |
+| `click_thru_pct` | double | `1.12359550561797%` | (clicks / imps) x 100 | The rate of clicks to impressions as a percentage. |
+| `post_click_convs` | int | `4` | post_click_convs | The total number of recorded post-click conversions. |
+| `post_click_convs_rate` | double | `0.0002` | post_click_convs / imps | The rate of post-click conversion to impressions. |
+| `post_click_revenue` | money | `150.00` | post_click_revenue | The total amount of recorded post-click conversion revenue. |
+| `post_view_convs` | int | `5` | post_view_convs | The total number of recorded post-view conversions. |
+| `post_view_convs_rate` | double | `0.00013` | post_view_convs / imps | The rate of post-view conversions to impressions. |
+| `post_view_revenue` | money | `300.00` | post_view_revenue | The total amount of recorded post-view conversion revenue. |
+| `media_cost` | money | `100` | media_cost | The total amount spent |
 
-<b>Note:</b> This field is identical to <code
-class="ph codeph">click_convs_rate</code>.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">ctr</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.000221877080097626</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">clicks /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of clicks to impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">click_thru_pct</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">1.12359550561797%</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">(clicks
-/ imps) x 100</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of clicks to impressions as a percentage.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_click_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">4</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_click_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total number of recorded post-click conversions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_click_convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.0002</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_click_convs
-/ imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of post-click conversion to impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_click_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">150.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_click_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total amount of recorded post-click conversion revenue.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_view_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_view_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total number of recorded post-view conversions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_view_convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">0.00013</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_view_convs
-/ imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The rate
-of post-view conversions to impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">post_view_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">300.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">post_view_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total amount of recorded post-view conversion revenue.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__186">media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__187">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__188"><code
-class="ph codeph">100</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__189">media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__190">The
-total amount spent</td>
-</tr>
-</tbody>
-</table>
+### Creative frequency buckets
 
-**Creative Frequency Buckets**
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-data"` (cookie lookup failed) |
+| `-1` | `"no-cookie"` (user does not have cookies enabled) |
+|`0` | `"0"` |
+| `1` | `"1"` |
+| `2` | `"2-5"` |
+| `3` | `"6-10"` |
+| `4` | `"11-20"` |
+| `5` | `"21-40"` |
+| `6` | `"41-60"` |
+| `7` | `"61-100"` |
+| `8` | `"101-150"` |
+| `9` | `"151-250"` |
+| `10` | `"251-500"` |
+| `11` | `"500+"` |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="advertiser-creative-frequency-and-recency__entry__266"
-class="entry colsep-1 rowsep-1">Bucket ID</th>
-<th id="advertiser-creative-frequency-and-recency__entry__267"
-class="entry colsep-1 rowsep-1">Bucket Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"no-cookie-data"
-(cookie lookup failed)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"no-cookie"
-(user does not have cookies enabled)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"0"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"1"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"2-5"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"6-10"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"11-20"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"21-40"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">6</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"41-60</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">7</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"61-100"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">8</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"101-150"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">9</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"151-250"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">10</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"251-500"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__266">11</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__267">"500+"</td>
-</tr>
-</tbody>
-</table>
+### Creative recency buckets
 
-**Creative Recency Buckets**
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-data"` (cookie lookup failed) |
+| `-1` | `"no-cookie"` (user does not have cookies enabled) |
+| `0` | `"< 1 minute"` |
+| `1` | `"1-5 minutes"` |
+| `2` | `"5-15 minutes"` |
+| `3` | `"15-30 minutes"` |
+| `4` | `"30-60 minutes"` |
+| `5` | `"1-4 hours"` |
+| `6` | `"4-12 hours"` |
+| `7` | `"12-24 hours"` |
+| `8` | `"1-2 days"` |
+| `9` | `"2-7 days"` |
+| `10` | `"8-14 days"` |
+| `11` | `"14-30 days"` |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="advertiser-creative-frequency-and-recency__entry__296"
-class="entry colsep-1 rowsep-1">Bucket ID</th>
-<th id="advertiser-creative-frequency-and-recency__entry__297"
-class="entry colsep-1 rowsep-1">Bucket Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"no-cookie-data"
-(cookie lookup failed)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"no-cookie"
-(user does not have cookies enabled)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"&lt; 1
-minute"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"1-5
-minutes"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"5-15
-minutes"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"15-30
-minutes"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"30-60
-minutes"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"1-4
-hours"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">6</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"4-12
-hours"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">7</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"12-24
-hours"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">8</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"1-2
-days"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">9</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"2-7
-days"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">10</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"8-14
-days"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__296">11</td>
-<td class="entry colsep-1 rowsep-1"
-headers="advertiser-creative-frequency-and-recency__entry__297">"14-30
-days"</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
 
 ## Example
 
 **Create the JSON-formatted report request**
 
-``` pre
+```
 $ cat network_advertiser_frequency_recency {
     "report":
     {
@@ -1166,9 +168,9 @@ $ cat network_advertiser_frequency_recency {
 }
 ```
 
-**POST the request to the Reporting Service**
+**POST the request to the reporting service**
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @network_advertiser_frequency_recency "https://api.appnexus.com/report?advertiser_id=384"
 
 {
@@ -1182,14 +184,11 @@ $ curl -b cookies -c cookies -X POST -d @network_advertiser_frequency_recency "h
 }
 ```
 
-**Use the Report ID to retrieve the report data**
+**Use the report ID to retrieve the report data**
 
-The standard response includes the report data and a Download URL that
-you can us to save the data to a file. If you want to get just the
-Download URL without the report data, pass `"without_data"` in the query
-string.
+The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/report?id=c458f71c084a2a3b51dcd749132bcf87"
 
 {
@@ -1225,30 +224,13 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/report?id=c458f71c084a2a3
 }
 ```
 
-**Use the Download URL to save the report data to a file**
+**Use the download URL to save the report data to a file**
 
-You use the `"url"` field in the response to save the report data to a
-file. Simply make another `GET` call and identify the location and file
-that you want to save to. Be sure to use the file the extension of the
-`"format"` that you specified in your initial `POST` request.
+You use the `"url"` field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the `"format"` that you specified in your initial `POST` request.
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=c447d71c084a2a3b51dcd749132bcf87' > /tmp/network_advertiser_frequency_recency.csv
 ```
 
-
-
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
