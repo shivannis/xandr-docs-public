@@ -107,7 +107,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `publisher` | string | No | `"Publisher XYZ 347967"` | **Deprecated** (as of October 17, 2016). |
 | `publisher_code` | string | No | `"Publisher Code"` | The custom code for the publisher. |
 | `seller_type` | string | Yes | `"Real Time"`, `"Direct"` | The seller type. |
-| `supply_type` | string | Yes | `"web"` | The type of inventory. Possible values: <br> - `"web"` <r> - `"mobile_web"` <br> - `"mobile_app"`. |
+| `supply_type` | string | Yes | `"web"` | The type of inventory. Possible values: <br> - `"web"` <br> - `"mobile_web"` <br> - `"mobile_app"`. |
 | `media_type` | string | No | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of the creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | Yes | `2` | The unique identification number of the media type to which the subtype belongs. |
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
