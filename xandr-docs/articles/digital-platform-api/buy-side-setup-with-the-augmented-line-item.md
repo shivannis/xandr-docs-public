@@ -152,45 +152,45 @@ Use POST commands to the pixel, segment, and domain-list services to generate pi
 
 - Use the inventory-list and inventory-list-items services to create an inventory list. Inventory lists allow you to create allowlists or blocklists, which determine which domains or apps your line items can spend on. Allowlists contain domains and apps that you want to include in your campaign targeting, and blocklists contain domains and apps that you want to exclude. For more information, see the [Inventory List Service](inventory-list-service.md) and [Inventory List Item Service](inventory-list-item-service.md) documentation. You'll create an empty inventory list first, then update it to add items.
 
-    > [!NOTE]
-    > If you want to put domains and apps in both an allowlist and a blocklist, you will need two different inventory lists.
+  > [!NOTE]
+  > If you want to put domains and apps in both an allowlist and a blocklist, you will need two different inventory lists.
 
-    1. Create the JSON file (we named ours inventory-list.json) as shown in the example. Domains you upload must generally conform to the URI spec to be accepted by our API. In practical terms, you probably don't need to worry about this requirement unless you're trying to upload Internationalized Domain Names. In this case, you should ensure that domain names including non-ASCII characters are encoded using [Punycode](https://www.punycoder.com/) before upload.
+  1. Create the JSON file (we named ours inventory-list.json) as shown in the example. Domains you upload must generally conform to the URI spec to be accepted by our API. In practical terms, you probably don't need to worry about this requirement unless you're trying to upload Internationalized Domain Names. In this case, you should ensure that domain names including non-ASCII characters are encoded using [Punycode](https://www.punycoder.com/) before upload.
 
-    ```
-    {
-        "inventory-list": {
-            "name": "Inventory Blocklist 1",
-            "description": "Domains to exclude",
-            "inventory_list_type": "blocklist"
+        ```
+        {
+            "inventory-list": {
+                "name": "Inventory Blocklist 1",
+                "description": "Domains to exclude",
+                "inventory_list_type": "blocklist"
+            }
         }
-    }
-    ```
+        ```
 
-    1. Use the following command to create your inventory list.
+  1. Use the following command to create your inventory list.
 
-    ```
-    curl -b cookies -X POST -d @inventory-list.json 'https://api.appnexus.com/inventory-list'
-    ```
+        ```
+        curl -b cookies -X POST -d @inventory-list.json 'https://api.appnexus.com/inventory-list'
+        ```
 
     1. Create another JSON file (we named ours inventory-list-items.json) as shown in the example:
 
-    ```
-    {
-        "inventory-list-items": [
-            {
-                "url": "competitor-url.com",
-                "include_children": true
-            }
-        ]
-    }
-    ```
+        ```
+        {
+            "inventory-list-items": [
+                {
+                    "url": "competitor-url.com",
+                    "include_children": true
+                }
+            ]
+        }
+        ```
 
-    1. Add the inventory list item using the following command:
+  1. Add the inventory list item using the following command:
 
-    ```
-    curl -b cookies -X POST -d @inventory-list-items.json 'https://api.appnexus.com/inventory-list/7009/item'
-    ```
+        ```
+        curl -b cookies -X POST -d @inventory-list-items.json 'https://api.appnexus.com/inventory-list/7009/item'
+        ```
 
 ## Creating non-spending objects (Part 2: Profile)
 

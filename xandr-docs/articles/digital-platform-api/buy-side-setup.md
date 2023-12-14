@@ -23,29 +23,29 @@ Here is the order of operations for setting up your buy-side objects:
 
 :::image type="content" source="media/buy-side.png" alt-text="A diagram that shows the order of buy-side objects setup along with explanations for each step.":::
 
-1. Advertiser
+1. **Advertiser**
+  
+      At the top of the order is the advertiser. Creating the advertiser is always the first step. You can have multiple advertisers within your network, and each advertiser can have many insertion orders and line items.
 
-  At the top of the order is the advertiser. Creating the advertiser is always the first step. You can have multiple advertisers within your network, and each advertiser can have many insertion orders and line items.
+1. **Non-Spending Objects**
 
-1. Non-Spending Objects
+    The next step encompasses several sub-steps. All the sub-steps *within* this step can be created in any order. If you want to create a segment pixel before a creative or a creative before a segment pixel, that's entirely up to you. But - and here's the important part - you should create all the Step 2 objects before you move on to Step 3 because you'll most likely be using some of the Step 2 objects in Step 3. (Note that there are more options in this step than are shown here. The objects we create in this set are an example of the non-spending objects you can create.)
 
-  The next step encompasses several sub-steps. All the sub-steps *within* this step can be created in any order. If you want to create a segment pixel before a creative or a creative before a segment pixel, that's entirely up to you. But - and here's the important part - you should create all the Step 2 objects before you move on to Step 3 because you'll most likely be using some of the Step 2 objects in Step 3. (Note that there are more options in this step than are shown here. The objects we create in this set are an example of the non-spending objects you can create.)
+1. **Profile**
 
-1. Profile
+    Next comes the profile. Profiles define all the ways you can target users and inventory in your line items or campaigns. If you don't create your profiles before you move on to the next steps, you'll have to update everything later with the profile information.
 
-  Next comes the profile. Profiles define all the ways you can target users and inventory in your line items or campaigns. If you don't create your profiles before you move on to the next steps, you'll have to update everything later with the profile information.
+1. **Insertion Order**
 
-1. Insertion Order
+    In this step you create your insertion orders. The insertion order contains information such as the total budget an advertiser allocates for a period of time, or which third-party verification the advertiser utilizes. Insertion orders also allow you to group line items and campaigns. You can create multiple insertion orders under an advertiser.
 
-  In this step you create your insertion orders. The insertion order contains information such as the total budget an advertiser allocates for a period of time, or which third-party verification the advertiser utilizes. Insertion orders also allow you to group line items and campaigns. You can create multiple insertion orders under an advertiser.
+1. **Line Item**
 
-1. Line Item
+    In Step 5 we create the line item. The line item contains information such as how much the advertiser has budgeted toward an offering, or which targeting the advertiser requires. (This is where you can add the profiles created in Step 3.) You can create multiple line items under an advertiser or insertion order.
 
-  In Step 5 we create the line item. The line item contains information such as how much the advertiser has budgeted toward an offering, or which targeting the advertiser requires. (This is where you can add the profiles created in Step 3.) You can create multiple line items under an advertiser or insertion order.
+1. **Campaign**
 
-1. Campaign
-
-  In the final step we create the campaign. The campaign is where you get more granular in defining how you will meet the advertiser's goals. You can attach a profile to a campaign.
+    In the final step we create the campaign. The campaign is where you get more granular in defining how you will meet the advertiser's goals. You can attach a profile to a campaign.
 
 ## Step-by-step walkthrough
 
