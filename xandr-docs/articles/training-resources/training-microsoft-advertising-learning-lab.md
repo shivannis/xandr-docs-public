@@ -1,32 +1,22 @@
 ---
-Title : Training: Microsoft Advertising's Learning Lab
-Description : lorem ipsum
+title : Training Microsoft Advertising's Learning Lab
+description : Learn using Microsoft Advertising's Learning Lab.
+ms.date: 11/12/2023
 ---
 
 
-# Training: Microsoft Advertising's Learning Lab
+# Training: Microsoft advertising's learning lab
 
-
-
-<a href="https://learninglab.about.ads.microsoft.com" class="xref"
-target="_blank">Microsoft Advertising’s Learning Lab</a> is an excellent
+[Microsoft Advertising’s Learning Lab](https://learninglab.about.ads.microsoft.com/) is an excellent
 way to learn more about Microsoft Advertising and its platforms,
 products, and technologies. On the landing page of
-<a href="https://learninglab.about.ads.microsoft.com" class="xref"
-target="_blank">Learning Lab</a>, you will find Learning Paths and
-Events for all aspects of digital advertising, such as <a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/programmatic-advertising-learning-path/"
-class="xref" target="_blank">programmatic advertising</a>, <a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/search-advertising-learning-path/"
-class="xref" target="_blank">search advertising</a>, <a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/native-display-advertising-learning-path/"
-class="xref" target="_blank">native and display advertising</a>, and
+[Learning Lab](https://learninglab.about.ads.microsoft.com/), you will find Learning Paths and
+Events for all aspects of digital advertising, such as [programmatic advertising](https://learninglab.about.ads.microsoft.com/course-catalog/programmatic-advertising-learning-path/), [search advertising](https://learninglab.about.ads.microsoft.com/course-catalog/search-advertising-learning-path/), [native and display advertising](https://learninglab.about.ads.microsoft.com/course-catalog/native-display-advertising-learning-path/), and
 more.
 
 To start with any of the courses in Learning Paths, you need to sign in
 to the
-<a href="https://learninglab.about.ads.microsoft.com" class="xref"
-target="_blank">Learning Lab</a>. If you are an existing user, you can
+[Learning Lab](https://learninglab.about.ads.microsoft.com/). If you are an existing user, you can
 use **Sign in** from the upper-right corner of the page and sign in with
 your registered credentials. If you are a new user, you can register
 yourself at Microsoft and set up your credentials to sign in and start
@@ -39,81 +29,14 @@ and proceed.
 Following are a few important links that can help you in your learning
 process and enablement journey:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="training-microsoft-advertising-learning-lab__entry__1"
-class="entry colsep-1 rowsep-1">Page</th>
-<th id="training-microsoft-advertising-learning-lab__entry__2"
-class="entry colsep-1 rowsep-1">Links</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Home
-Page</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/" class="xref"
-target="_blank">MicrosoftAdvertising.com/LearningLab</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Certifications</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/training/training-certification/"
-class="xref"
-target="_blank">MicrosoftAdvertising.com/LearningLabCerts</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Digital
-Advertising Fundamentals</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/topics/Digital-Advertising-Fundamentals/"
-class="xref"
-target="_blank">MicrosoftAdvertising.com/DigitalAdvertisingFundamentals</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Programmatic
-Advertising</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/programmatic-advertising-learning-path/"
-class="xref"
-target="_blank">MicrosoftAdvertising.com/ProgrammaticLearningPath</a></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Search
-Advertising</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/search-advertising-learning-path/"
-class="xref"
-target="_blank">MicrosoftAdvertising.com/SearchLearningPath</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__1">Native
-&amp; Display Advertising</td>
-<td class="entry colsep-1 rowsep-1"
-headers="training-microsoft-advertising-learning-lab__entry__2"><a
-href="https://learninglab.about.ads.microsoft.com/course-catalog/native-display-advertising-learning-path/"
-class="xref"
-target="_blank">MicrosoftAdvertising.com/NativeDisplayLearningPath</a></td>
-</tr>
-</tbody>
-</table>
+| Page | Links |
+|---|---|
+| Certifications | [MicrosoftAdvertising.com/LearningLabCerts](https://learninglab.about.ads.microsoft.com/training/training-certification/) |
+| Digital Advertising Fundamentals | [MicrosoftAdvertising.com/DigitalAdvertisingFundamentals](https://learninglab.about.ads.microsoft.com/course-catalog/digital-advertising-fundamentals-learning-path/) |
+| Home Page | [MicrosoftAdvertising.com/LearningLab](https://learninglab.about.ads.microsoft.com/) |
+| Native & Display Advertising | [MicrosoftAdvertising.com/NativeDisplayLearningPath](https://learninglab.about.ads.microsoft.com/course-catalog/native-display-advertising-learning-path/) |
+| Programmatic Advertising | [MicrosoftAdvertising.com/ProgrammaticLearningPath](https://learninglab.about.ads.microsoft.com/course-catalog/programmatic-advertising-learning-path/) |
+| Search Advertising | [MicrosoftAdvertising.com/SearchLearningPath](https://learninglab.about.ads.microsoft.com/course-catalog/search-advertising-learning-path/) |
 
 **Need help with Learning Lab?** Reach out
-to <a href="mailto:adlrnlab@microsoft.com" class="xref"
-target="_blank">adlrnlab@microsoft.com</a>.
-
-
-
-
+to adlrnlab@microsoft.com.
