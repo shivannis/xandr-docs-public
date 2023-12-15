@@ -1,52 +1,28 @@
 ---
-Title : Billing Reporting
-Description : This section of the Reporting Guide provides descriptions of the metrics
+title : Microsoft Monetize - Billing Reporting
+description : Learn about descriptions of the metrics and dimensions you can include and apply to several billing-specific reports. 
 ms.date: 10/28/2023
-and dimensions you can include as well as the filters you can apply to
-several billing-specific reports (e.g., ad serving fees, FX margin fees,
 ---
 
 
-# Billing Reporting
-
-
-
-
+# Microsoft Monetize - Billing reporting
 
 This section of the Reporting Guide provides descriptions of the metrics
 and dimensions you can include as well as the filters you can apply to
 several billing-specific reports (e.g., ad serving fees, FX margin fees,
 creative audit fees, media cost, revenue, etc.).
 
-- <a href="completed-creative-audits-report.md" class="xref">Completed
-  Creative Audits Report</a> - Obtain details related to the number of
+- [Completed Creative Audits Report](completed-creative-audits-report.md) - Obtain details related to the number of
   creatives that have completed the Xandr audit
   process and view any charges associated with those audits.
-- <a href="buying-billing-report.md" class="xref">Buying Billing
-  Report</a> - Manage internal invoicing for your advertisers.
-- <a href="curator-billing-report.md" class="xref"
-  title="The Curator Billing Report allows you to manage internal invoicing for your curation activities. Curators who choose to direct-clear with sellers can report on the revenue amounts they need to clear with those sellers.">Curator
-  Billing Report</a> - Manage internal invoicing for your curation
+- [Buying Billing Report](buying-billing-report.md) - Manage internal invoicing for your advertisers.
+- [Curator Billing Report](curator-billing-report.md) - Manage internal invoicing for your curation
   activities.
-- <a href="selling-billing-report.md" class="xref">Selling Billing
-  Report</a> - Manage internal invoicing for your publishers.
+- [Selling Billing Report ](selling-billing-report.md) - Manage internal invoicing for your publishers.
 
+## Related topics
 
-
-
-
-Related Topics
-
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
-- <a href="general-reporting-concepts.md" class="xref">General Reporting
-  Concepts</a>
-- <a href="analytics-reporting.md" class="xref">Analytics Reporting</a>
-- <a href="audience-analytics.md" class="xref"
-  title="You can use the Creative Frequency and Recency report to analyze your audience at a granular level and the Buyer Reach and Frequency Report to have an insight on how cross device impacted the number of times a single person saw the ads across all their devices.">Audience
-  Analytics</a>
-
-
-
-
-
-
+- [Reporting Guide](reporting-guide.md)
+- [General Reporting Concepts](general-reporting-concepts.md)
+- [Analytics Reporting](analytics-reporting.md)
+- [Audience Analytics](audience-analytics.md)

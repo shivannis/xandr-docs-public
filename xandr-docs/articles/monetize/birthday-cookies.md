@@ -1,14 +1,11 @@
 ---
-Title : Birthday Cookies
-Description : The first time a user without one of our cookie visits a website where
+title : Microsoft Monetize - Birthday Cookies
+description : Learn what is a Birthday Cookie and when it is generated.
 ms.date: 10/28/2023
-we serve ads, we set a cookie. We also add that user to the
 ---
 
 
-# Birthday Cookies
-
-
+# Microsoft Monetize - Birthday cookies
 
 The first time a user without one of our cookie visits a website where
 we serve ads, we set a cookie. We also add that user to the
@@ -23,7 +20,7 @@ describes several example use cases for the birthday cookie segment; it
 also provides links to further documentation on segments, targeting, and
 conversion attribution.
 
-Use Cases for Sellers
+## Use cases for sellers
 
 Platform members do not have access to other members' segments, except
 in cases where there is a special arrangement. Even if a member does not
@@ -41,7 +38,7 @@ rules to reflect the higher value of impressions served to this user.
 Conversely, you may drop floors for users whose "birthdays" are more
 recent.
 
-Use Cases for Buyers
+## Use cases for buyers
 
 Here are two buy-side use cases for the birthday cookie:
 
@@ -58,27 +55,12 @@ Here are two buy-side use cases for the birthday cookie:
   may be undervalued as a result of allegedly belonging to fewer
   segments.
 
+> [!TIP]
+> For instructions on how to implement segment targeting, see [Segment Targeting](segment-targeting.md).
 
+## Related topics
 
-<b>Tip:</b> For instructions on how to
-implement segment targeting, see
-<a href="segment-targeting.md" class="xref"
-title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
-Targeting</a>.
-
-
-
-Related Topics
-
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
-- <a href="working-with-segments.md" class="xref">Working with
-  Segments</a>
-- <a href="segment-targeting.md" class="xref"
-  title="You can target users within segments by using Boolean expressions. Users get added to segments after they&#39;ve viewed or clicked a particular creative.">Segment
-  Targeting</a>
-- <a href="conversion-attribution.md" class="xref">Conversion
-  Attribution</a>
-
-
-
-
+- [Reporting Guide](reporting-guide.md)
+- [Working with Segments](working-with-segments.md)
+- [Segment Targeting](segment-targeting.md)
+- [Conversion Attribution](conversion-attribution.md)
