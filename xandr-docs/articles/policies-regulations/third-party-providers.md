@@ -20,8 +20,6 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 
 ## Ad-server partners
 
-|  |  |  |  |  |
-|---|---|---|---|---|
 | [24]7.ai (successor to EngageClick) | 1-2-3.Tv Gmbh | 12M Limited | 1Blu Ag | 1trn |
 | 21 Productions | 22-Visions | 24-Ads Gmbh | 2KDirect Inc. | 2Mobile Digital |
 | 2Y Media Sas (Adserverpub) | 303Lowe | 3W Sante | 4Cite Marketing | 4Info, Inc. |
