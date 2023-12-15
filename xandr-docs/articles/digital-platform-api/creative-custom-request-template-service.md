@@ -1,599 +1,99 @@
 ---
-Title : Creative Custom Request Template Service
-Description : <b>Note:</b> Mediation is available only to
+title: Creative Custom Request Template Service
+description: In this article, learn about the Creative Custom Request Template service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Monetize Ad Server customers.
 ---
 
+# Creative Custom Request Template service
 
-# Creative Custom Request Template Service
+> [!NOTE]
+> Mediation is available only to Microsoft Monetize Ad Server customers.
 
+To support mobile ad server mediation, Xandr uses a mediated creative type. Unlike standard creatives, which reside as static content on a server, mediated creatives are configurable containers that fetch server side content. The Creative Custom Request Template Service is used to build the requests that populate these mediated creatives. It does this by managing a set of custom templates, each of which will correspond to a different ad server, and which is associated with a template "type" defined by the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md).
 
+This document describes the fields made available by this API service, as well as providing usage examples. See the [Examples](#examples) section below.
 
-
-
-<b>Note:</b> Mediation is available only to
-Monetize Ad Server customers.
-
-
-
-To support mobile ad server mediation, Xandr
-uses a mediated creative type. Unlike standard creatives, which reside
-as static content on a server, mediated creatives are configurable
-containers that fetch server side content. The Creative Custom Request
-Template Service is used to build the requests that populate these
-mediated creatives. It does this by managing a set of custom templates,
-each of which will correspond to a different ad server, and which is
-associated with a template "type" defined by the <a
-href="xandr-api-internal/creative-custom-request-template-type-service.md"
-class="xref" target="_blank">Creative Custom Request Template Type
-Service</a>.
-
-This document describes the fields made available by this API service,
-as well as providing usage examples. See the <a
-href="creative-custom-request-template-service.md#ID-00001680__examples_custom_request_template_service"
-class="xref">Examples</a> section below.
-
-
-
-<b>Note:</b>
-
-
-
-- For more information about mediated creatives, see the <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>.
-
-
-
-
-
-- For a list of supported query string parameters and macros, see <a
-  href="xandr-api-internal/creative-custom-request-template-parameters.md"
-  class="xref" target="_blank">Creative Custom Request Template
-  Parameters</a>.
-
-
-
-
-
-
+> [!NOTE]
+>
+> - For more information about mediated creatives, see the [Creative Service](creative-service.md).
+>
+> - For a list of supported query string parameters and macros, see [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md).
 
 ## REST API
 
-
-
-<b>Note:</b>
-
-- This information is for Xandr employees. If
-  you are an employee and an admin user, your permissions are as
-  follows:
-  - You will see the global templates
-  - You can view member-specific templates by appending a =member_id=
-    field to the query string of your request.
-- **Template Viewing Permissions  
-  **:
-  
-
-  If you are a member you will be able to view the following templates:
-  - Global templates (those belonging to `member_id`=0)
-  - Your own templates, i.e., those associated with your `member_id`
-
-  
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001680__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001680__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001680__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"> <a
-href="https://api.appnexus.com/creative-custom-request-template"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__3">Create a custom request template</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code class="ph codeph">GET</code> </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"><a
-href="https://api.appnexus.com/creative-custom-request-template?id=123"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template?id=123</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__3">View
-a specific custom request template</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"><a
-href="https://api.appnexus.com/creative-custom-request-template?member_id=0"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template?member_id=0</a>
-<p><a
-href="https://api.appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID</a></p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__3">View
-all of the custom request templates you have permission to view</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"> <a
-href="https://api.appnexus.com/creative-custom-request-template"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__3">Update a custom request template</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"> <a
-href="https://api.appnexus.com/creative-custom-request-template?id=123"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template?id=123</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__3">Delete a custom request template</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__2"> <a
-href="https://api.appnexus.com/creative-custom-request-template/meta"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-custom-request-template/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001680__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-## JSON Fields
-
-<table id="ID-00001680__table_nnn_ltb_rwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001680__table_nnn_ltb_rwb__entry__1"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00001680__table_nnn_ltb_rwb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001680__table_nnn_ltb_rwb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">macros</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">These are the macros
-(or query string parameters) that will be sent on the request. See <a
-href="creative-custom-request-template-service.md#ID-00001680__macros_custom_request_template_service"
-class="xref">Macros</a>.
-<p><strong>Sort by:</strong> No</p>
-<p><strong>Filter by:</strong> No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The ID of this
-template.
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>
- </p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">type_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The ID of the <a
-href="xandr-api-internal/creative-custom-request-template-type-service.md"
-class="xref" target="_blank">Creative Custom Request Template Type</a>
-associated with this template.
-<p><strong>Default:</strong> <code class="ph codeph">null</code> </p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code> </p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The member ID whose
-mediation creatives will be associated with this template. For more
-information see the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> and the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.
-<p><strong>Default:</strong> <code class="ph codeph">0</code> </p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">media_subtype_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The media subtype ID
-for this template. Derived from the <a
-href="creative-custom-request-template-service.md#ID-00001680__media_subtype_custom_req_template_service"
-class="xref">Media Subtype</a> object below.
-<p><strong>Default:</strong> <code class="ph codeph">null</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">hostname</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The hostname of the
-ad server we're building a mediation request for.
-<p><strong>Default:</strong> <code class="ph codeph">null</code></p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code> </p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong>Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">uri</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The full URI of the
-external ad server to which we'll send our request.
-<p><strong>Default:</strong> <code class="ph codeph">null</code></p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code> if is_client is <code
-class="ph codeph">false</code>.<code class="ph codeph"> </code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">port</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The port on the
-external ad server to which we'll send our request.
-<p><strong>Default:</strong> <code class="ph codeph">80</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">is_post</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">Whether the HTTP
-request we're making is a <code class="ph codeph">POST</code>.
-<p><strong>Default:</strong> <code class="ph codeph">false</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">content</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The content payload
-we're sending with the request. For example, this may be a string of
-JSON or XML.
-<p><strong>Default:</strong> <code class="ph codeph">null</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">timeout_ms</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The timeout supported
-by that ad server (Or the timeout we're going to impose on waiting for
-that ad server?)
-<p><strong>Default:</strong> 0</p>
-<p><strong>Sort by:</strong>Yes</p>
-<p><strong>Filter by:</strong>Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">is_client</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">Whether the request
-is originating from an HTTP client (for example, an SDK).
-<p><strong>Default:</strong> <code class="ph codeph">false</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">media_subtype</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The display style of
-creatives that can use this template. Each media subtype belongs to a
-superordinate media type. For example, the "Standard Banner" media
-subtype belongs to the "Banner" media type. See <a
-href="creative-custom-request-template-service.md#ID-00001680__media_subtype_custom_req_template_service"
-class="xref">Media Subtype</a> below for more details.
-<p><strong>Sort by:</strong> No</p>
-<p><strong>Filter by:</strong> No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_nnn_ltb_rwb__entry__3">The date and time at
-which this object was last updated.
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
+> [!NOTE]
 >
+> - This information is for Xandr employees. If you are an employee and an admin user, your permissions are as follows:
+    >   - You will see the global templates.
+    >   - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
+> - **Template Viewing Permissions**:
+>
+    >   If you are a member you will be able to view the following templates:
+    >   - Global templates (those belonging to `member_id`=0).
+    >   - Your own templates, i.e., those associated with your `member_id`.
+
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Create a custom request template. |
+| `GET`  | [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | View a specific custom request template. |
+| `GET` | [https://api.appnexus.com/creative-custom-request-template?member_id=0](https://api.appnexus.com/creative-custom-request-template?member_id=0)<br>[https://api.appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID](https://api.appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID) | View all of the custom request templates you have permission to view. |
+| `PUT` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Update a custom request template. |
+| `DELETE` |  [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | Delete a custom request template. |
+| `GET` |  [https://api.appnexus.com/creative-custom-request-template/meta](https://api.appnexus.com/creative-custom-request-template/meta) | Find out which fields you can filter and sort by. |
+
+## JSON fields
+
+| Name | Type | Description |
+|:---|:---|:---|
+| `macros` | array of objects | These are the macros (or query string parameters) that will be sent on the request. See [Macros](#macros).<br>**Sort by:** No<br>**Filter by:** No |
+| `id` | int | The ID of this template.<br>**Required On:** `PUT`  <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `type_id` | int | The ID of the [Creative Custom Request Template Type](creative-custom-request-template-type-service.md) associated with this template.<br>**Default:** `null` <br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `member_id` | int | The member ID whose mediation creatives will be associated with this template. For more information see the [Creative Service](creative-service.md) and the [Member Service](member-service.md).<br>**Default:** `0` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `media_subtype_id` | int | The media subtype ID for this template. Derived from the [Media Subtype](#media-subtype) object below.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `hostname` | string | The hostname of the ad server we're building a mediation request for.<br>**Default:** `null`<br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `uri` | string | The full URI of the external ad server to which we'll send our request.<br>**Default:** `null`<br>**Required On:** `POST`, `PUT` if `is_client` is `false`. <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `port` | int | The port on the external ad server to which we'll send our request.<br>**Default:** `80`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `is_post` | Boolean | Whether the HTTP request we're making is a `POST`.<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `content` | string | The content payload we're sending with the request. For example, this may be a string of JSON or XML.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `timeout_ms` | int | The timeout supported by that ad server (Or the timeout we're going to impose on waiting for that ad server).<br>**Default:** `0`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `is_client` | Boolean | Whether the request is originating from an HTTP client (for example, an SDK).<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `media_subtype` | array | The display style of creatives that can use this template. Each media subtype belongs to a superordinate media type. For example, the "Standard Banner" media subtype belongs to the "Banner" media type. For more details, see [Media Subtype](#media-subtype) below.<br>**Sort by:** No<br>**Filter by:** No |
+| `last_modified` | date | The date and time at which this object was last updated.<br>**Sort by:** Yes<br>**Filter by:** Yes |
 
 ## Macros
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001680__macros_custom_request_template_service__entry__1"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00001680__macros_custom_request_template_service__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001680__macros_custom_request_template_service__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">The
-ID of this macro.
-<p><strong>Default:</strong> <code class="ph codeph">null</code> </p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">template_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">The
-Creative Custom Request Template this macro is associated with.
-<p><strong>Default:</strong> <code class="ph codeph">null</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">The
-query string parameter that will be built into the url, e.g., <code
-class="ph codeph">send_referer</code>.
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">A
-description of what the macro does, e.g., "Toggle if referer should be
-sent".
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">The
-type of value the parameter will accept. Note that the default value of
-<code class="ph codeph">"string"</code> is also the most common. Allowed
-values include:
-<ul>
-<li><code class="ph codeph">true_false</code></li>
-<li><code class="ph codeph">string</code></li>
-<li><code class="ph codeph">url</code></li>
-<li><code class="ph codeph">integer</code></li>
-<li><code class="ph codeph">decimal</code></li>
-<li><code class="ph codeph">string_list</code></li>
-<li><code class="ph codeph">select_from_list</code>             </li>
-</ul>
-<p><strong> Default:</strong> <code class="ph codeph">string</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">is_required</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">Whether
-this macro is required in a call to the external ad server.
-<p><strong>Default:</strong> <code class="ph codeph">true</code></p>
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__macros_custom_request_template_service__entry__3">The
-date and time at which this macro object was last updated.
-<p><strong>Sort by:</strong> Yes</p>
-<p><strong>Filter by:</strong> Yes</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of this macro.<br>**Default:** `null` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `template_id` | int | The Creative Custom Request Template this macro is associated with.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `code` | string | The query string parameter that will be built into the url, e.g., `send_referer`.<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `name` | string | A description of what the macro does, e.g., "Toggle if referer should be sent".<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `type` | string | The type of value the parameter will accept. <br><br>**Note:** The default value of `"string"` is also the most common. Allowed values include:<br> - `true_false`<br> - `string`<br> - `url`<br> - `integer`<br> - `decimal`<br> - `string_list`<br> - `select_from_list`<br> **Default:** `string`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `is_required` | Boolean | Whether this macro is required in a call to the external ad server.<br>**Default:** `true`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `last_modified` | date | The date and time at which this macro object was last updated.<br>**Sort by:** Yes<br>**Filter by:** Yes |
 
-**Media Subtype**
+### Media subtype
 
-You can use the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a> and <a
-href="media-type-service.md"
-class="xref" target="_blank">Media Type Service</a> to view all
-supported media subtypes and the media types to which they belong. For a
-general definition of each supported media type, see <a
-href="media-type-service.md"
-class="xref" target="_blank">Supported Media Types</a>.
+You can use the [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md) to view all supported media subtypes and the media types to which they belong. For a general definition of each supported media type, see [Supported Media Types](media-type-service.md).
 
-<table id="ID-00001680__table_rnn_ltb_rwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001680__table_rnn_ltb_rwb__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001680__table_rnn_ltb_rwb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001680__table_rnn_ltb_rwb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__1"><code
-class="ph codeph"> id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__3">The ID of the media
-subtype.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__3"><strong>Read
-Only.</strong> The name of the media subtype.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__1"><code
-class="ph codeph">media_type_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__3"><strong>Read
-Only.</strong> The name of the media type to which the subtype
-belongs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__1"><code
-class="ph codeph">mediatype_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001680__table_rnn_ltb_rwb__entry__3"><strong>Read
-Only.</strong> The ID of the media type to which the subtype
-belongs.</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the media subtype. |
+| `name` | string | **Read Only.** The name of the media subtype. |
+| `media_type_name` | string | **Read Only.** The name of the media type to which the subtype belongs. |
+| `mediatype_id` | int | **Read Only.** The ID of the media type to which the subtype belongs. |
 
 ## Examples
 
-**View all creative request templates (that you have permissions to
-view)**
+### View all creative request templates (that you have permissions to view)
 
-``` pre
-In the example below, note the difference between how standard Xandr macros are displayed in the {{uri}} field, e.g.,
-* $\{USER_IP\}
-and how the custom macros defined on a per-ad-server basis by this service are displayed:
-* \#\{MK_SITEID\}.
-You can see definitions for each macro in the {{macros}} array of objects below. You will only be able to view request templates belonging to your own member ID or public templates belonging to member ID 0.
+In the example below, note the difference between how standard Xandr macros are displayed in the `uri` field, e.g., `* $\{USER_IP\}`
+and how the custom macros defined on a per-ad-server basis by this service are displayed: `* \#\{MK_SITEID\}`.
+You can see definitions for each macro in the `macros` array of objects below. You will only be able to view request templates belonging to your own member ID or public templates belonging to member ID `0`.
+
+```
+
 {code}
 $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?member_id=0
 {
@@ -764,9 +264,9 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?memb
 {code}
 ```
 
-**View a single creative custom request template**
+### View a single creative custom request template
 
-``` pre
+```
 {code}
 $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?id=2
 {
@@ -825,10 +325,16 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?id=2
 {code}
 ```
 
-**Create a request template**
+### Create a request template
 
-``` pre
-Create a JSON file specifying the fields of your request template. Note that the {{type_id}} field is required on {{POST}}. For more information about the request template types, see the [Creative Custom Request Template Type Service]. For documentation of the ad request parameters and macros we support for integration with external mobile ad servers, see [Creative Custom Request Template Parameters].
+Create a JSON file specifying the fields of your request template.
+
+> [!NOTE]
+> The `type_id` field is required on `POST`.
+
+For more information about the request template types, see the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md). For documentation of the ad request parameters and macros we support for integration with external mobile ad servers, see [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md).
+
+```
 {code}
 $ cat create.json
 {
@@ -844,7 +350,10 @@ $ cat create.json
     }
 }
 {code}
-Make a POST call to the API with the JSON payload included.
+```
+Make a `POST` call to the API with the JSON payload included.
+
+```
 {code}
 $ curl -b cookies -X POST -d @create.json https://api.appnexus.com/creative-custom-request-template
 {
@@ -893,49 +402,48 @@ $ curl -b cookies -X POST -d @create.json https://api.appnexus.com/creative-cust
 {code}
 ```
 
-**Update a request template**
+### Update a request template
 
-``` pre
-First create a JSON file with only those parameters you'd like to update. Note that you must include the {{id}} of the request template being updated.
+First, create a JSON file with only those parameters you'd like to update.
+
+> [!NOTE]
+> You must include the `id` of the request template being updated.
+
+```
 {code}
 $ cat update.json
 {"creative-custom-request-template":{"id":13, "type_id":2, "timeout_ms":250}}
 {code}
-Make the PUT call, including the JSON update.
-{note}
-In order to make a successful {{PUT}} call, you must do the following:
-* Specify the ID of the request template in the JSON file
-* Do not add any query string parameters (like {{?id=123}}) to your request (see the example below)
-{note}
+```
+
+Make the `PUT` call, including the JSON update.
+
+> [!NOTE]
+> In order to make a successful {{PUT}} call, you must do the following:
+>
+> - Specify the ID of the request template in the JSON file
+> - Do not add any query string parameters (like `?id=123`) to your request (see the example below).
+
+```
 {code}
 $ curl -b cookies -X PUT -d @update.json https://api.appnexus.com/creative-custom-request-template
 {code}
-Finally, note that a successful {{PUT}} call will not return any JSON response.
 ```
 
-**Delete a request template**
+> [!NOTE]
+> A successful `PUT` call will not return any JSON response.
 
-``` pre
-Deleting a request template is straightforward -- unlike the {{PUT}} call above, you will need to specify the ID of the template you want to delete:
+### Delete a request template
+
+Deleting a request template is straightforward unlike the `PUT` call above, you will need to specify the ID of the template you want to delete.
+
+```
 {code}
 $ curl -b cookies -X DELETE https://api.appnexus.com/creative-custom-request-template?id=123
 {code}
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-<a href="creative-custom-request-template-type-service.md"
-class="xref">Creative Custom Request Template Type Service</a>
-
-<a href="creative-custom-request-template-parameters.md"
-class="xref">Creative Custom Request Template Parameters</a>
-
-
-
-
-
-
+- [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md)
+- [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md)

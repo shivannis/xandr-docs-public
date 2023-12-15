@@ -1,40 +1,18 @@
 ---
-Title : Creative Search Service
-Description : This read-only service allows you to search for **active** creatives
+title: Digital Platform API - Creative Search Service
+description: In this article, learn about the Digital Platform API's Creative Search service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-based on specific criteria, such as audit status, ID, size, etc. You may
 ---
 
+# Digital Platform API - Creative Search service
 
-# Creative Search Service
+This read-only service allows you to search for **active** creatives ased on specific criteria, such as audit status, ID, size, etc. You may then wish to use these creative IDs in the [Ad Profile Service](ad-profile-service.md). To add creatives to the system, see the [Creative Service](creative-service.md).d
 
+> [!NOTE]
+> Since this service searches all active creatives on the AppNexus platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, please narrow your search as much as possible.
 
-
-
-
-This read-only service allows you to search for **active** creatives
-based on specific criteria, such as audit status, ID, size, etc. You may
-then wish to use these creative IDs in the <a
-href="creative-search-service.md#"
-class="xref" target="_blank">Ad Profile Service</a>. To add creatives to
-the system, see the
-<a href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Creative Service</a>.
-
-
-
-<b>Note:</b> Since this service searches all
-active creatives on the AppNexus platform (not just your own), a search
-that is too broad might cause an error. To ensure that you get results,
-please narrow your search as much as possible.
-
-
-
-
-
-This API also enables certain native fields searchable through creative
-search.
+This API also enables certain native fields searchable through creative search.
 
 The searchable fields are as follows:
 
@@ -43,395 +21,49 @@ The searchable fields are as follows:
 - call_to_action (3)
 - additional_description (13)
 
-The search will return a creative if the search term matches any text in
-any of the aforementioned fields.
-
-
+The search will return a creative if the search term matches any text in any of the aforementioned fields.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | [https://api.appnexus.com/creative-search](https://api.appnexus.com/creative-search)<br> (creative_search JSON) | Search for creatives. |
+| `POST` | [https://api.appnexus.com/creative-search?sort=FIELD_NAME.ASC_OR_DESC](https://api.appnexus.com/creative-search?sort=FIELD_NAME.ASC_OR_DESC)<br>(creative_search JSON) | Search for creatives and sort results. |
 
+> [!NOTE]
+> The fields used to search for creatives are not exactly the same as the fields returned. This is because the returned objects are drawn from the [Creative Service](creative-service.md) and formatted accordingly.
 
-<table
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">Post</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-search" class="xref"
-target="_blank">https://api.appnexus.com/creative-search</a>
-(creative_search JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Search
-for creatives.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">Post</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-search?sort=FIELD_NAME.ASC_OR_DESC"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-search?sort=FIELD_NAME.ASC_OR_DESC</a>
-(creative_search JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Search
-for creatives and sort results.</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
-
-
-
-
-<b>Note:</b> The fields used to search for
-creatives are not exactly the same as the fields returned. This is
-because the returned objects are drawn from the
-<a href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Creative Service</a> and formatted accordingly.
-
-
-
-
-
-
-
-## JSON Fields
-
-
-
-<table
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creative_ids</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of integers</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their IDs.</p>
-<p><strong>Sortable</strong>: Yes, use "id" in query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by terms in their descriptions.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of enums</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their audit status. Possible values: "no_audit",
-"pending", "rejected", "audited".</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">ad_profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Must
-be used with <code class="ph codeph">brand_status</code>.</strong>
-Search for a creative by the ID of its ad profile.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">brand_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of enums</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Must
-be used with <code class="ph codeph">ad_profile_id</code>.</strong>
-Search for creatives by their brand status. For example, if this is set
-to "trusted", all trusted brands within the ad profiles specified in
-<code class="ph codeph">ad_profile_id</code> will be returned in the
-response. Possible values: "trusted", "case-by-case", "banned". The
-brand status field is only returned in the response when you use this
-filter.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">review_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of enums</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives based on their review status (from the associated ad
-profiles). Possible values: "reviewed", "unreviewed". The review status
-field is only returned in the response when you use this filter.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">uploaded_since</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives that were uploaded since this date. Format: "YYYY-MM-DD
-HH:MM:SS".</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">modified_since</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives that were modified since this date. Format: "YYYY-MM-DD
-HH:MM:SS".</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">formats</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of enums</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their formats. Possible values: "url-html", "url-js",
-"flash", "image", "raw-js", "raw-html", "iframe-html", "url-vast",
-"text".</p>
-<p><strong>Sortable</strong>: Yes, use "format" in query
-string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_subtype</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of enums</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Deprecated,
-use <code class="ph codeph">media_subtype_ids</code> instead.</strong>
-Search for creatives by their media subtypes. Possible values: "Banner",
-"Popup", "Popunder".</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_subtype_ids</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of integers</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their media subtype via ID. You can use the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a> to look up the
-desired ID's.</p>
-<p><strong>Sortable</strong>: Yes, use "media_subtype_id" in query
-string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for a creative by its URL.</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_content</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for a creative by the data in its original_content field (see <a
-href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Creative Service</a>).</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">sizes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of strings</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their sizes, for example, "728x90".</p>
-<p><strong>Sortable</strong>: Yes, use "width" and "height" in query
-string.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">brand_ids</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of integers</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by the IDs of their brands.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_ids</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of integers</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Must
-be used with <code class="ph codeph">member_action</code>.</strong>
-Search for creatives by the IDs of their members.</p>
-<p><strong>Sortable</strong>: Yes, use "member_id" in query
-string.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_action</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Must
-be used with <code class="ph codeph">member_ids</code>.</strong> If this
-is set to "exclude", you exclude the members specified in <code
-class="ph codeph">member_ids</code> from the search. Otherwise, the
-specified IDs are included.</p>
-<p><strong>Sortable</strong>: No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">template_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Search
-for creatives by their creative template IDs.</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">size_in_bytes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Not
-a filter.</strong> Sort results in ascending/descending size order.</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">click_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Not
-a filter.</strong> Sort results in ascending/descending alphabetical
-click URL order.</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">landing_page_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Not
-a filter.</strong> Sort results in ascending/descending alphabetical
-landing page URL order.</p>
-<p><strong>Sortable</strong>: Yes</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `creative_ids` | array of integers | Search for creatives by their IDs.<br>**Sortable:** Yes, use "id" in query string. |
+| `description` | string | Search for creatives by terms in their descriptions.<br>**Sortable:** No |
+| `audit_status` | array of enums | Search for creatives by their audit status. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, `"audited"`.<br>**Sortable:** Yes |
+| `ad_profile_id` | int | **Must be used with `brand_status`.** Search for a creative by the ID of its ad profile.<br>**Sortable:** No |
+| `brand_status` | array of enums | **Must be used with `ad_profile_id`.** Search for creatives by their brand status. For example, if this is set to `"trusted"`, all trusted brands within the ad profiles specified in `ad_profile_id` will be returned in the response. Possible values: `"trusted"`, `"case-by-case"`, `"banned"`. The brand status field is only returned in the response when you use this filter.<br>**Sortable:** No |
+| `review_status` | array of enums | Search for creatives based on their review status (from the associated ad profiles). Possible values: `"reviewed"`, `"unreviewed"`. The review status field is only returned in the response when you use this filter.<br>**Sortable:** No |
+| `uploaded_since` | timestamp | Search for creatives that were uploaded since this date. <br>Format: "YYYY-MM-DD HH:MM:SS".<br>**Sortable:** No |
+| `modified_since` | timestamp | Search for creatives that were modified since this date. <br>Format: "YYYY-MM-DD HH:MM:SS".<br>**Sortable:** No |
+| `formats` | array of enums | Search for creatives by their formats. Possible values: `"url-html"`, `"url-js"`, `"flash"`, `"image"`, `"raw-js"`, `"raw-html"`, `"iframe-html"`, `"url-vast"`, `"text"`.<br>**Sortable:** Yes, use "format" in query string. |
+| `media_subtype` | array of enums | **Deprecated, use `media_subtype_ids` instead.** Search for creatives by their media subtypes. Possible values: `"Banner"`, `"Popup"`, `"Popunder"`.<br>**Sortable:** No |
+| `media_subtype_ids` | array of integers | Search for creatives by their media subtype via ID. You can use the [Media Subtype Service](media-subtype-service.md) to look up the desired ID's.<br>**Sortable:** Yes, use `"media_subtype_id"` in query string. |
+| `media_url` | string | Search for a creative by its URL.<br>**Sortable:** Yes |
+| `media_content` | string | Search for a creative by the data in its original_content field (see [Creative Service](creative-service.md)).<br>**Sortable:** No |
+| `sizes` | array of strings | Search for creatives by their sizes, for example, "728x90".<br>**Sortable:** Yes, use "width" and "height" in query string. |
+| `brand_ids` | array of integers | Search for creatives by the IDs of their brands.<br>**Sortable:** No |
+| `member_ids` | array of integers | **Must be used with `member_action`.** Search for creatives by the IDs of their members.<br>**Sortable:** Yes, use "member_id" in query string. |
+| `member_action` | enum | **Must be used with `member_ids`.** If this is set to "exclude", you exclude the members specified in `member_ids` from the search. Otherwise, the specified IDs are included.<br>**Sortable:** No |
+| `template_id` | int | Search for creatives by their creative template IDs.<br>**Sortable:** Yes |
+| `size_in_bytes` | string | **Not a filter.** Sort results in ascending/descending size order.<br>**Sortable:** Yes |
+| `click_url` | string | **Not a filter.** Sort results in ascending/descending alphabetical click URL order.<br>**Sortable:** Yes |
+| `landing_page_url` | string |**Not a filter.** Sort results in ascending/descending alphabetical landing page URL order.<br>**Sortable:** Yes |
 
 ## Examples
 
-**Search for all banner creatives that have passed AppNexus audit**
+### Search for all banner creatives that have passed AppNexus audit
 
->
-
-``` pre
+```
 $ cat creative_search
 {
    "creative-search": {
@@ -445,9 +77,7 @@ $ cat creative_search
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.com/creative-search'
 
 {
@@ -504,10 +134,9 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.c
 }
 ```
 
-**Search for all flash creatives that have been uploaded since
-2012-01-01 00:00:00**
+### Search for all flash creatives that have been uploaded since 2012-01-01 00:00:00
 
-``` pre
+```
 $ cat creative_search
 {
    "creative-search": {
@@ -519,7 +148,7 @@ $ cat creative_search
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.com/creative-search'
 
 {
@@ -572,10 +201,9 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.c
 }
 ```
 
-**Search for all 728x90 and 300x250 image creatives that belong to
-member 333**
+### Search for all 728x90 and 300x250 image creatives that belong to member 333
 
-``` pre
+```
 $ cat creative_search
 {
    "creative-search": {
@@ -593,7 +221,7 @@ $ cat creative_search
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.com/creative-search'
 
 {
@@ -645,9 +273,3 @@ $ curl -b cookies -c cookies -X POST -d @creative_search 'https://api.appnexus.c
    }
 }
 ```
-
-
-
-
-
-

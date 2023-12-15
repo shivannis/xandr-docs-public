@@ -1,2779 +1,457 @@
 ---
-Title : Creative VAST Service
-Description : You can use the Creative Vast Service to add **video** or **audio**
+title: Creative VAST Service
+description: In this article, learn about the Creative VAST service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-creatives to Xandr. All creatives must be attached to an advertiser or
 ---
 
+# Creative VAST service
 
-# Creative VAST Service
+You can use the Creative Vast Service to add **video** or **audio** creatives to Xandr. All creatives must be attached to an advertiser or publisher.
 
+- You can view your advertiser ID by calling the [Advertiser Service](advertiser-service.md).
+- You can view your publisher ID by calling the [Publisher Service](publisher-service.md).
+- You can attach a creative to a publisher for use as a default creative for a placement. You would then attach the creative to a placement via its ID using the [Placement Service](placement-service.md).
 
-
-You can use the Creative Vast Service to add **video** or **audio**
-creatives to Xandr. All creatives must be attached to an advertiser or
-publisher.
-
-- You can view your advertiser ID by calling the <a
-  href="advertiser-service.md"
-  class="xref" target="_blank">Advertiser Service</a>.
-- You can view your publisher ID by calling the <a
-  href="publisher-service.md"
-  class="xref" target="_blank">Publisher Service</a>.
-- You can attach a creative to a publisher for use as a default creative
-  for a placement. You would then attach the creative to a placement via
-  its ID using the <a
-  href="placement-service.md"
-  class="xref" target="_blank">Placement Service</a>.
-
-
-
-<b>Note:</b> `video_attribute`is always
-required on the `creative-vast`endpoint.
-
-
-
->
+> [!NOTE]
+> `video_attribute`is always required on the `creative-vast`endpoint.
 
 ## Auditing
 
-Xandr works with members who care deeply about brand and reputation. For
-this reason, we are careful to ensure that the advertisements
-(creatives) that pass through our system are acceptable to all parties.
-For quality assurance, all creatives that serve on third-party inventory
-must be pre-registered using the Creative Service.
+Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements
+(creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the Creative Service.
 
-- Creatives are identified by their media_url (either a third-party
-  adserver URL or a Content Delivery Network URL for a Flash or video
-  file).
-- Xandr checks media_urls on a regular basis. If a file disappears, the
-  creative will be treated as unaudited.
-- Once a creative has passed Xandr audit, certain changes to the
-  creative cause it to be resubmitted for audit. For more details, see
-  <a
-  href="creative-vast-service.md#CreativeVASTService-ChangesThatCauseRe-Audit"
-  class="xref" target="_blank">Changes That Cause Re-Audit</a>.
-- For more details on auditing, see
-  <a href="https://docs.xandr.com/csh?context=23268240" class="xref"
-  target="_blank">Creative Standards and Auditing</a>.
-
-
-
-
+- Creatives are identified by their media_url (either a third-party adserver URL or a Content Delivery Network URL for a Flash or video file).
+- Xandr checks media_urls on a regular basis. If a file disappears, the creative will be treated as unaudited.
+- Once a creative has passed Xandr audit, certain changes to the creative cause it to be resubmitted for audit. For more details, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.
+- For more details on auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md).
 
 ## REST API
 
-
-
-<table
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID</a>
-(creative JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-a new hosted video or audio creative to one of your advertisers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID</a>
-(creative JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-a new hosted video or audio creative to one of your publishers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><p><a
-href="https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;advertiser_id=ADVERTISER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;publisher_id=PUBLISHER_ID</a>
-(creative JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-an existing hosted video or audio creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-vast" class="xref"
-target="_blank">https://api.appnexus.com/creative-vast</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all hosted video or audio creatives.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><p><a
-href="https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE</a></p>
-<p><a
-href="https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all hosted video or audio creatives for an advertiser or publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><p><a
-href="https://api.appnexus.com/creative-vast?id=CREATIVE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=CREATIVE_ID</a></p>
-<p><a href="https://api.appnexus.com/creative-vast?code=CREATIVE_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?code=CREATIVE_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-a specific creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-vast?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=1,2,3</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-multiple creatives by ID using a comma-separated list.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/creative-vast?audit_stats=true"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?audit_stats=true</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-creative audit stats.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><p><a
-href="https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;advertiser_id=ADVERTISER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/creative-vast?id=CREATIVE_ID&amp;publisher_id=PUBLISHER_ID</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Delete
-a creative.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-<b>Note:</b> You can filter for creatives
-based on when they first and last served. This is particularly useful
-when you are approaching your
-<a href="https://docs.xandr.com/csh?context=166635497" class="xref"
-target="_blank">object limit</a> and need to identify creatives that can
-be deleted from the system. For more details, see <a
-href="creative-vast-service.md#CreativeVASTService-FirstRun-LastRun"
-class="xref" target="_blank">First Run / Last Run</a>.
-
-
-
-class="note tip note_tip">
-
-<b>Tip:</b> The response tells you the number
-of creatives with each Xandr, Microsoft, and Google audit status. For
-the response format, see the <a
-href="creative-vast-service.md#CreativeVASTService-Examples"
-class="xref" target="_blank">Examples</a> below.
-
-
-
-class="note tip note_tip">
-
-<b>Tip:</b> You cannot delete a creative that
-is used as the default creative for a member or placement. Default
-creatives can be deleted once they are disassociated from a placement.
-
-
-
-
-
-
-
-## JSON Fields
-
-
-
-<table
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-internal ID associated with the creative.</p>
-<ul>
-<li><strong>Default:</strong> Auto-generated number.</li>
-<li><strong>Required On:</strong> <code class="ph codeph">PUT</code>, in
-query string.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-custom code for the creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">code2</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-additional custom code for the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-name of the creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-type of creative. Possible values:</p>
-<ul>
-<li><code class="ph codeph">"standard"</code></li>
-<li><code class="ph codeph">"html"</code></li>
-<li><code class="ph codeph">"video"</code></li>
-</ul>
-
-class="note note_note">
-<b>Note:</b> Alpha-Beta Notice This field or
-feature is part of functionality currently in either Alpha or Beta
-phase. It is therefore subject to change.
-
-
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the advertiser to which the creative is attached.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code>, in query string, if the creative is
-attached to an advertiser.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the publisher/media buy to which the creative is attached.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT,</code> in query string, if the creative is
-attached to an advertiser.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-ID of the brand of the company advertising the creative. If included, it
-will be verified by the Xandr auditing team. If not included, it will be
-assigned by the auditing team. To retrieve a full list of brands, see
-the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> state </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-state of the creative. Possible values: "active" or "inactive".</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> status </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-status of the creative describing if the creative is ready to serve. For
-more details, see <a
-href="creative-vast-service.md#CreativeVASTService-Status"
-class="xref" target="_blank">Status</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">click_track_result</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-result of the click track test, a feature only available in the Console
-user interface. Possible values: "not_tested", "passed", or
-"failed".</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code>, in query string, if the creative is
-attached to a publisher.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">campaigns</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-list of campaigns to which the creative is associated. For more details,
-see <a
-href="creative-vast-service.md#CreativeVASTService-Campaigns"
-class="xref" target="_blank">Campaigns</a> below.</p>
-
-class="note tip note_tip">
-<b>Tip:</b> This field will only be returned
-if an <code class="ph codeph">advertiser_id</code> is specified in the
-querystring.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> template </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-creative template (ex.: <code class="ph codeph">template_id </code>6439)
-for the creative's format and media type. The template includes code to
-control how the creative renders on web pages.</p>
-<p>Possible values:</p>
-<ul>
-<li>Video creatives: <strong>6439</strong></li>
-<li>Audio creatives: <strong>38745</strong></li>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> media_url </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(1000)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-URL of the creative - can be flash, HTML, javascript (see format). URL
-must exist and should point to a CDN hosted VAST XML file.</p>
-<p><em>This field only applies to third party creatives.</em></p>
-<ul>
-<li><em><strong>Default:</strong> "not_tested"</em></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_url_secure</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(1000)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-URL of the secure (HTTPS) creative - can be flash, HTML, javascript (see
-format) to be served on a secure ad call. URL must exist and should
-point to a CDN hosted VAST XML file.</p>
-<p><em>This field only applies to third party creatives.</em></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">click_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(2000)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-(optional) landing page URL for non-3rd party image and flash
-creatives.</p>
-
-class="note note_note">
-<b>Note:</b> This value must begin with
-"http://" or "https://"
-
-
-<ul>
-<li><strong>Required On:</strong> <code class="ph codeph">POST</code>,
-if not using content.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">file_name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(1000)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><em>This
-field does not apply to hosted video creatives.</em></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-audit status of the creative. Possible values: "no_audit", "pending",
-"rejected", or "audited".</p>
-
-class="note note_note">
-<b>Note:</b>
-<ul>
-<li>If <code class="ph codeph">allow_audit</code> is false, this field
-must be "no_audit".</li>
-<li>If a creative is expired, you can reanimate it by changing this
-field. Setting it to "pending" will resubmit it for auditing. For
-changes that automatically resubmit the creative for auditing, see <a
-href="creative-vast-service.md#CreativeVASTService-ChangesThatCauseRe-Audit"
-class="xref" target="_blank">Changes That Cause Re-Audit</a>.</li>
-</ul>
-
-
-<p><strong>Required On:</strong> <code class="ph codeph">POST</code>, if
-template is for the "image" format.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_feedback</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-creative auditing team can pass messages about a creative in this
-field.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">allow_audit</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-<code class="ph codeph">true</code>, the creative will be submitted for
-auditing. If false, the creative will not be submitted. Unaudited
-creatives can only run on a network's managed inventory.</p>
-
-class="note note_note">
-<b>Note:</b>
-<ul>
-<li>If <code class="ph codeph">audit_status</code> is "no_audit", this
-field must be <code class="ph codeph">"false"</code>.</li>
-<li>If your member is not yet active, you can add creatives, but they
-will not be submitted for audit (<code
-class="ph codeph">allow_audit</code> will be false). Once your member
-has been activated, if you want these creatives to be audited, you must
-update the creatives and set <code class="ph codeph">allow_audit</code>
-to <code class="ph codeph">true</code>.</li>
-</ul>
-
-
-<p><strong>Default:</strong> "pending"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">ssl_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ssl (HTTPS) status of the creative. Only creatives with ssl_status =
-approved will be eligible to serve on secure inventory.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>If a creative fails the ssl Sherlock audit, you can submit it for a
-retest (once you've fixed the downstream non-secure content) by changing
-this field to "pending". Allowed values:</p>
-<ul>
-<li><code class="ph codeph">"disabled"</code></li>
-<li><code class="ph codeph">"pending"</code></li>
-<li><code class="ph codeph">"approved"</code></li>
-<li><code class="ph codeph">"failed"</code></li>
-<li><strong>Default:</strong> <code
-class="ph codeph">"disabled"</code></li>
-</ul>
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">allow_ssl_audit</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-<code class="ph codeph">true</code>, the creative will be submitted for
-secure (HTTPS) auditing. If <code class="ph codeph">false</code>, the
-creative will not be submitted. If <code class="ph codeph">true</code>,
-either media_url_secure or content_secure is required as well.</p>
-<ul>
-<li><strong>Default:</strong> "disabled"</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> google_audit_status </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Deprecated.</strong>
-Please see <code class="ph codeph">adx_audit</code> instead.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> google_audit_feedback </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Deprecated.</strong>
-Please see <code class="ph codeph">adx_audit</code> instead.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> msft_audit_status </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> msft_audit_feedback </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">is_self_audited</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-<code class="ph codeph">true</code>, the creative is self-audited and
-thus will not go through platform (Xandr) audit. The creative can only
-serve on inventory that accepts your self-classified creative or on
-inventory that accepts unaudited creatives.</p>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">false</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">is_expired</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-your creative (1) has not run and (2) has not been modified in 45 days,
-then it will be automatically marked expired and will not serve on any
-inventory.</p>
-<ul>
-<li>Expired creatives must be reaudited to run on third-party inventory.
-To unexpire a creative for third-party inventory, set audit_status to
-"pending".</li>
-<li>Expired creatives do not need to be reaudited to run on direct
-inventory. To unexpire a creative for direct inventory, set audit_status
-to "no_audit".</li>
-</ul>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">false</code></li>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">is_prohibited</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-Sherlock flags the creative for having malware or loading blocked
-domains, this is set to true to prevent the creative from serving.</p>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">false</code></li>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">is_hosted</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-true, the creative is hosted by Xandr.</p>
-<ul>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">lifetime_budget</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-lifetime budget in dollars.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>To include this field in a GET response, pass attributes=1 in the
-query string.</p>
-
-
-<ul>
-<li><strong>Default:</strong> false</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">lifetime_budget_imps</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-lifetime limit for number of impressions.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>To include this field in a GET response, pass attributes=1 in the
-query string.</p>
-l
-
-
-<ul>
-<li><strong>Default:</strong> <em>unlimited</em></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">daily_budget</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-daily budget in dollars.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>To include this field in a GET response, pass attributes=1 in the
-query string.</p>
-
-
-<ul>
-<li><strong>Default:</strong> <em>unlimited</em></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">daily_budget_imps</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-daily limit for number of impressions.</p>
-
-<b>Note:</b>
-class="note note_note">
-<b>Note:</b>
-<p>To include this field in a GET response, pass attributes=1 in the
-query string.</p>
-
-
-<ul>
-<li><strong>Default:</strong> <em>unlimited</em></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">enable_pacing</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-<code class="ph codeph">true</code>, daily budgeted spend is spread
-evenly throughout a day.</p>
-
-class="note note_note">
-<b>Note:</b> To include this field in a GET
-response, pass attributes=1 in the query string.
-
-
-<ul>
-<li><strong>Default:</strong> unlimited</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">allow_safety_pacing</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>If
-<code class="ph codeph">true</code>, spend per minute is limited to a
-maximum of 1% of the lifetime budget and 5% of the daily budget.</p>
-<p><strong>Admin Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">You
-can attach targeting such as gender and geography to a creative by
-creating a profile and associating it here.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">folder</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">To
-arrange your creatives in folders for convenience (usually in the UI)
-you will create a folder using the <a
-href="creative-folder-service.md"
-class="xref" target="_blank">Creative Folder Service</a> and then
-associate it here via folder ID or in the Creative Folder service via
-creative ID. Output is {"id": "41", "name": "MyFolder"}.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">line_items</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-line items that are associated with the creative. See <a
-href="creative-vast-service.md#CreativeVASTService-LineItems"
-class="xref" target="_blank">Line Items</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> is_control </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>This
-is a flag used to mark this creative as part of a control/test group in
-A/B testing. For more information, see <a
-href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Test and Control Targeting</a> .</p>
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">segments</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>A
-list of segments that a user will be added to upon viewing or clicking
-on this creative. For more information, see <a
-href="creative-vast-service.md#CreativeVASTService-Segments"
-class="xref" target="_blank">Segments</a> below.</p>
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;segments&quot;:[
-   {&quot;id&quot;:11111,
-    &quot;action&quot;:&quot;add_on_view&quot;
-       },
-      {&quot;id&quot;:22222,
-         &quot;action&quot;:&quot;add_on_click&quot;
-    }
-]</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">created_on</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when this creative was created. If it was created before
-January 2010, this will be zero.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the creative was last modified.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creative_upload_status </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">categories</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-categories that describe the creative and offer type.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>To include categories in a GET response, pass attributes=1 in the
-query string. To retrieve a full list of categories, see the <a
-href="https://docs.xandr.com/csh?context=166635484" class="xref"
-target="_blank">Category Service</a>.</p>
-
-
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;categories&quot;:[{&quot;id&quot;:&quot;13&quot;,&quot;name&quot;:&quot;Online Games&quot;}]</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph"> adservers </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ad servers that deliver the creative or are called for data collection
-purposes during the delivery the creative. <strong><b>Note:</b></strong> To
-include adservers in a GET response, pass attributes=1 in the query
-string. To retrieve a full list of ad servers, see the <a
-href="ad-server-service.md"
-class="xref" target="_blank">Ad Server Service</a> .</p>
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;adservers&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;use_type&quot;:&quot;adserver&quot;,&quot;name&quot;:&quot;24/7 Real Media&quot;}]</code></pre>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">technical_attributes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-attributes that describe technical characteristics of the creative, such
-as "Expandable" or "Video".</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>To include technical attributes in a GET response, pass attributes=1
-in the query string. To retrieve a full list of technical attributes,
-see the <a
-href="technical-attribute-service.md"
-class="xref" target="_blank">Technical Attribute Service</a>.</p>
-
-
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;technical_attributes&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Image&quot;}]</code></pre></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">language</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-language of the creative. To retrieve a full list of languages, see the
-<a
-href="language-service.md"
-class="xref" target="_blank">Language Service</a>.</p>
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;language&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;English&quot;}</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">brand</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-brand of the company advertising the creative and the category
-associated with the brand. For more details, see <a
-href="creative-vast-service.md#CreativeVASTService-Brand"
-class="xref" target="_blank">Brand</a> below.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">sla</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Creatives
-set to "0" will be submitted for audit with a standard SLA.</p>
-class="note caution note_caution">
-CAUTION: Creatives submitted with any
-number other than 0 will result in a priority audit (when enabled) and
-resulting fees.
-
-<p>If you have a supplemental services agreement with Xandr for priority
-audits, you can submit a creative for priority audit (auditing within 2
-hours during business hours) by setting this field to 2. For more
-details about priority auditing, see <a
-href="creative-vast-service.md#"
-class="xref" target="_blank">Creative Standards and
-Auditing</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">sla_eta</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-estimate time of completion for a priority audit.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">currency</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-code that defines the advertiser's primary currency (for example,
-<strong>USD</strong>). For more details about the currency types
-available, see <a
-href="currency-service.md"
-class="xref" target="_blank">Currency Service</a>.</p>
-<ul>
-<li><strong>Default:</strong> Member's default currency</li>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">first_run</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the creative first served, refreshed on an hourly
-basis. This value reflects the UTC time zone. To include this
-information in a GET response, pass <code
-class="ph codeph">flight_info=true</code> in the query string. For
-details about how to filter creatives based on when they first served,
-see <a
-href="creative-vast-service.md#CreativeVASTService-FirstRun-LastRun"
-class="xref" target="_blank">First Run / Last Run</a> below.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_run</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the creative last served, refreshed on an hourly
-basis. This value reflects the UTC time zone. To include this
-information in a GET response, pass <code
-class="ph codeph">flight_info=true</code> in the query string. For
-details about how to creatives based on when they last served, see <a
-href="creative-vast-service.md#CreativeVASTService-FirstRun-LastRun"
-class="xref" target="_blank">First Run / Last Run</a> below.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">video_attribute</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Attributes
-for third-party in-stream (VAST) and hosted video and audio creatives.
-See <a
-href="creative-vast-service.md#CreativeVASTService-VideoAttribute"
-class="xref" target="_blank">Video Attribute</a> below for more
-details.</p>
-<ul>
-<li><strong>Default:</strong> Member's default currency.</li>
-<li><strong>Required On:</strong> <code class="ph codeph">POST</code> ,
-if template is for "Standard VAST" media subtype.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">competitive_brands</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Creatives
-associated with the brands in this array will not serve together in
-<code class="ph codeph">/mtj</code> auctions. The classic example of
-competing brands is Coke vs. Pepsi. See <a
-href="creative-vast-service.md#CreativeVASTService-CompetitiveBrands"
-class="xref" target="_blank">Competitive Brands</a> below. For more
-information about the brands in our system, see the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a>.</p>
-<ul>
-<li><strong>Default: N/A</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">competitive_categories</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Creatives
-associated with the categories in this array will not serve together in
-<code class="ph codeph">/mtj</code> auctions, e.g., "Dating" and
-"Education". See <a
-href="creative-vast-service.md#CreativeVASTService-CompetitiveCategories"
-class="xref" target="_blank">Competitive Categories</a> below. For more
-information about the categories we apply to creatives (and brands), see
-the <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a>.</p>
-<ul>
-<li><strong>Default: N/A</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">adx_audit</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>This
-object contains information about the status and feedback related to the
-Google AdExchange audit of the creative. Information about whether or
-not a creative has been approved is returned in the <code
-class="ph codeph">audit_status</code> field.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_id </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-ID of the member that owns the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">media_assets</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Used
-to associate Xandr hosted files to your creative. This field will be
-auto-populate when uploading files via the API.</p>
-<p>Example:</p>
-<pre class="pre codeblock"><code>&quot;media_assets&quot;:[
-      {
-        &quot;media_asset_id&quot;:22,
-              &quot;creative_field&quot;:null
-        }
-      ]</code></pre>
-
-class="note note_note">
-<b>Note:</b>
-<p><code class="ph codeph">creative_field</code> should always be null
-for a VAST creative.</p>
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">ad_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><div
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | [https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID)<br> (creative JSON) | Add a new hosted video or audio creative to one of your advertisers. |
+| `POST` | [https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID)<br> (creative JSON) | Add a new hosted video or audio creative to one of your publishers. |
+| `PUT` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID)<br> (creative JSON) | Modify an existing hosted video or audio creative. |
+| `GET` | [https://api.appnexus.com/creative-vast](https://api.appnexus.com/creative-vast) | View all hosted video or audio creatives. |
+| `GET` | [https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE)<br>[https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID)<br>[https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE) | View all hosted video or audio creatives for an advertiser or publisher. |
+| `GET` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID)<br>[https://api.appnexus.com/creative-vast?code=CREATIVE_CODE](https://api.appnexus.com/creative-vast?code=CREATIVE_CODE) | View a specific creative. |
+| `GET` | [https://api.appnexus.com/creative-vast?id=1,2,3](https://api.appnexus.com/creative-vast?id=1,2,3) | View multiple creatives by ID using a comma-separated list. |
+| `GET` | [https://api.appnexus.com/creative-vast?audit_stats=true](https://api.appnexus.com/creative-vast?audit_stats=true) | View creative audit stats. |
+| `DELETE` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative. |
+
+> [!NOTE]
+> You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify creatives that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run) below.
+> [!TIP]
+> The response tells you the number of creatives with each Xandr, Microsoft, and Google audit status. For the response format, see the [Examples](#examples) below.
 >
-class="note tip note_tip">
-<b>Tip:</b>
-<p>This field only applies when you are associating creatives to <a
-href="line-item-service---ali.md"
-class="xref" target="_blank">augmented line items</a>.</p>
+> You cannot delete a creative that is used as the default creative for a member or placement. Default creatives can be deleted once they are disassociated from a placement.
 
+## JSON fields
 
-<p>The type of creative used. Possible values:</p>
-<ul>
-<li>"banner"</li>
-<li>"video" (includes audio creatives)</li>
-<li>"native"</li>
-</ul>
-<p>This value determines how auction items are tracked for the line
-item's buying strategy, paying strategy, optimization options, creative
-association, and targeting options.</p>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The internal ID associated with the creative.<br> - **Default:** Auto-generated number.<br> - **Required On:** `PUT`, in query string. |
+| `code` | string (100) | The custom code for the creative. |
+| `code2` | string (100) | The additional custom code for the creative. |
+| `name` | string (100) | The name of the creative. |
+| `type` | enum | The type of creative. Possible values:<br> - `"standard"`<br> - `"html"`<br> - `"video"`<br><br>**Note:** **Alpha-Beta Notice** This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.<br>**Read Only.** |
+| `advertiser_id` | int | The ID of the advertiser to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
+| `publisher_id` | int | The ID of the publisher/media buy to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
+| `brand_id` | int | The ID of the brand of the company advertising the creative. If included, it will be verified by the Xandr auditing team. If not included, it will be assigned by the auditing team. To retrieve a full list of brands, see the [Brand Service](brand-service.md). |
+| `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
+| `status` | object | The status of the creative describing if the creative is ready to serve. For more details, see [Status](#status) below. |
+| `click_track_result` | enum | The result of the click track test, a feature only available in the Console user interface. Possible values: `"not_tested"`, `"passed"`, or `"failed"`.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to a publisher. |
+| `campaigns` | array of objects | The list of campaigns to which the creative is associated. For more details, see [Campaigns](#campaigns) below.<br><br>**Tip:** This field will only be returned if an `advertiser_id` is specified in the querystring. |
+| template | object | The creative template (Example: `template_id` 6439) for the creative's format and media type. The template includes code to control how the creative renders on web pages.<br>Possible values:<br> - Video creatives: **6439**<br> - Audio creatives: **38745**<br>**Required On:** `POST` |
+| `media_url` | string (1000) | The URL of the creative - can be flash, HTML, javascript (see format). URL must exist and should point to a CDN hosted VAST XML file.<br>*This field only applies to third party creatives.*<br>**Default:** `"not_tested"` |
+| `media_url_secure` | string (1000) | The URL of the secure (HTTPS) creative - can be flash, HTML, javascript (see format) to be served on a secure ad call. URL must exist and should point to a CDN hosted VAST XML file.<br>*This field only applies to third party creatives.* |
+| `click_url` | string (2000) | The (optional) landing page URL for non-3rd party image and flash creatives.<br><br>**Note:** This value must begin with "http://" or "https://"<br>**Required On:** `POST`, if not using content. |
+| `file_name` | string (1000) | *This field does not apply to hosted video creatives.* |
+| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br> - If `allow_audit` is `false`, this field must be `"no_audit"`.<br> - If a creative is expired, you can reanimate it by changing this field. Setting it to `"pending"` will resubmit it for auditing. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br>**Required On:** `POST`, if template is for the "image" format. |
+| `audit_feedback` | string | The creative auditing team can pass messages about a creative in this field.<br>**Read Only.** |
+| `allow_audit` | Boolean | If `true`, the creative will be submitted for auditing. If false, the creative will not be submitted. Unaudited creatives can only run on a network's managed inventory.<br><br>**Note:**<br> - If `audit_status` is `"no_audit"`, this field must be `"false"`.<br> - If your member is not yet active, you can add creatives, but they will not be submitted for audit (`allow_audit` will be false). Once your member has been activated, if you want these creatives to be audited, you must update the creatives and set `allow_audit` to `true`.<br>**Default:** `"pending"` |
+| `ssl_status` | enum | The ssl (HTTPS) status of the creative. Only creatives with ssl_status = approved will be eligible to serve on secure inventory.<br><br>**Note:**<br>If a creative fails the ssl Sherlock audit, you can submit it for a retest (once you've fixed the downstream non-secure content) by changing this field to `"pending"`. Allowed values:<br> - `"disabled"`<br> - `"pending"`<br> - `"approved"`<br> - `"failed"`<br>**Default:** `"disabled"` |
+| `allow_ssl_audit` | Boolean | If `true`, the creative will be submitted for secure (HTTPS) auditing. If `false`, the creative will not be submitted. If `true`, either `media_url_secure` or `content_secure` is required as well.<br>**Default:** `"disabled"` |
+| `google_audit_status` | enum | **Deprecated.** Please see `adx_audit` instead. |
+| `google_audit_feedback` | string | **Deprecated.** Please see `adx_audit` instead. |
+| `msft_audit_status` | enum | **Deprecated.** |
+| `msft_audit_feedback` | string | **Deprecated.** |
+| `is_self_audited` | Boolean | If `true`, the creative is self-audited and thus will not go through platform (Xandr) audit. The creative can only serve on inventory that accepts your self-classified creative or on inventory that accepts unaudited creatives.<br>**Default:** `false` |
+| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set audit_status to "pending".<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set audit_status to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
+| `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set to true to prevent the creative from serving.<br> - **Default:** false<br> - **Read Only.** |
+| `is_hosted` | Boolean | If `true`, the creative is hosted by Xandr.<br>**Read Only.** |
+| `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `false` |
+| `lifetime_budget_imps` | int | The lifetime limit for number of impressions.<br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
+| `daily_budget` | double | The daily budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
+| `daily_budget_imps` | int | The daily limit for number of impressions.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
+| `enable_pacing` | Boolean | If `true`, daily budgeted spend is spread evenly throughout a day.<br><br>**Note:** To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
+| `allow_safety_pacing` | Boolean | If `true`, spend per minute is limited to a maximum of 1% of the lifetime budget and 5% of the daily budget.<br>**Admin Only.** |
+| `profile_id` | int | You can attach targeting such as gender and geography to a creative by creating a profile and associating it here. |
+| `folder` | object | To arrange your creatives in folders for convenience (usually in the UI) you will create a folder using the [Creative Folder Service](creative-folder-service.md) and then associate it here via folder ID or in the Creative Folder service via creative ID. Output is `{"id": "41", "name": "MyFolder"}`. |
+| `line_items` | array of objects | The line items that are associated with the creative. For more details, see [Line Items](#line-items) below. |
+| `is_control` | Boolean | This is a flag used to mark this creative as part of a control/test group in A/B testing. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md).<br>**Default:** `true` |
+| `segments` | array | A list of segments that a user will be added to upon viewing or clicking on this creative. For more information, see [Segments](#segments) below.<br>See [example](#segments-example). |
+| `created_on` | timestamp | The date and time when this creative was created. If it was created before January 2010, this will be zero.<br>Read Only. |
+| `last_modified` | timestamp | The date and time when the creative was last modified.<br>**Read Only.** |
+| `creative_upload_status` | enum | **Deprecated.** |
+| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md). <br>See [example](#categories-example). |
+| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative. <br><br>**Note:**<br> To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md).<br>See [example](#adservers-example).<br>**Read Only.** |
+| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md).<br>See [example](#technical_attributes-example). |
+| `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md).<br>See [example](#language-example). |
+| `brand` | object | The brand of the company advertising the creative and the category associated with the brand. For more details, see [Brand](#brand) below.<br>**Read Only.** |
+| `sla` | int | Creatives set to "0" will be submitted for audit with a standard SLA.<br><br>**Caution:** Creatives submitted with any number other than 0 will result in a priority audit (when enabled) and resulting fees.<br>If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting this field to 2. For more details about priority auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md). |
+| `sla_eta` | timestamp | The estimate time of completion for a priority audit.<br>**Read Only.** |
+| `currency` | string | The code that defines the advertiser's primary currency (for example, **USD**). For more details about the currency types available, see [Currency Service](currency-service.md).<br> - **Default:** Member's default currency<br> - **Read Only.** |
+| `first_run` | timestamp | The date and time when the creative first served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to filter creatives based on when they first served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
+| `last_run` | timestamp | The date and time when the creative last served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to creatives based on when they last served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
+| `video_attribute` | object | Attributes for third-party in-stream (VAST) and hosted video and audio creatives. For more details, see [Video Attribute](#video-attribute) below.<br> - **Default:** Member's default currency.<br> - **Required On:** `POST`, if template is for "Standard VAST" media subtype. |
+| `competitive_brands` | array of objects | Creatives associated with the brands in this array will not serve together in `/mtj` auctions. The classic example of competing brands is Coke vs. Pepsi. See [Competitive Brands](#competitive-brands) below. For more information about the brands in our system, see the [Brand Service](brand-service.md).<br>**Default:** **N/A** |
+| `competitive_categories` | array of objects | Creatives associated with the categories in this array will not serve together in `/mtj` auctions, e.g., "Dating" and "Education". See [Competitive Categories](#competitive-categories) below. For more information about the categories we apply to creatives (and brands), see the [Category Service](category-service.md).<br>**Default:** **N/A** |
+| `adx_audit` | object | This object contains information about the status and feedback related to the Google AdExchange audit of the creative. Information about whether or not a creative has been approved is returned in the `audit_status` field.<br>**Read Only.** |
+| `member_id` | int | The ID of the member that owns the creative. |
+| `media_assets` | array of objects | Used to associate Xandr hosted files to your creative. This field will be auto-populate when uploading files via the API.<br>See [example](#media_assets-example).<br><br>**Note:**<br>`creative_field` should always be null for a VAST creative. |
+| `ad_type` | string | <br><br>**Tip:**<br>This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br> - `"banner"`<br> - `"video"` (includes audio creatives)<br> - `"native"`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:**<br> All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
 
-class="note note_note">
-<b>Note:</b> All creatives associated to a
-line item must have the same ad type, which should match the <code
-class="ph codeph">ad_type</code> selected in the <a
-href="line-item-service---ali.md"
-class="xref" target="_blank">Line Item Service - ALI</a>.
+### `segments` example
 
-</td>
-</tr>
-</tbody>
-</table>
+```
+"segments":[
+{"id":11111,
+"action":"add_on_view"
+},
+{"id":22222,
+"action":"add_on_click"
+}
+]
+```
 
+### `categories` example
 
+```
+"categories":[{"id":"13","name":"Online Games"}]
+```
 
-**Audio**
+### `adservers` example
 
-<table id="buy-side-service-template__table_tdt_wlb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_tdt_wlb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_tdt_wlb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_tdt_wlb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tdt_wlb_xwb__entry__1"><code
-class="ph codeph">click_target</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tdt_wlb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tdt_wlb_xwb__entry__3"><p>The
-target of the click_action, which is the action that the device should
-take when the creative is clicked. Enter a URL that our audit team can
-use to verify the brand and attributes of your audio creative. Ensure
-that the site the URL points to is in the same language as the audio.
-This URL is used only for auditing purposes.</p>
+```
+"adservers":[{"id":"1","use_type":"adserver","name":"24/7 Real Media"}]
+```
 
-class="note caution note_caution">
-CAUTION:
-<p>You must provide an auditable URL in order for your creative to pass
-auditing.</p>
+### `technical_attributes` example
 
-</td>
-</tr>
-</tbody>
-</table>
+```
+"technical_attributes":[{"id":"1","name":"Image"}]
+```
 
-**Line Items**
+### `language` example
 
-Each object in the `line_items` array includes the following fields. To
-obtain information for "id" or "code" fields, you can use the <a
-href="line-item-service---ali.md"
-class="xref" target="_blank">Line Item Service - ALI</a> .
+```
+"language":{"id":"1","name":"English"}
+```
 
-<table id="buy-side-service-template__table_lbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_lbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_lbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type (Length)</th>
-<th id="buy-side-service-template__table_lbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__3"><p>The
-name of the line item.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__3"><p>The
-state of the creative. Possible values: "active" or "inactive".</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__3"><p>The
-ID of the line item. Either "id" or "code" is required when updating
-line item association.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lbq_dmb_xwb__entry__3"><p>The
-custom code for the line item. Either "id" or "code" is required when
-updating line item association.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-</tbody>
-</table>
+### `media_assets` example
 
-**Campaigns**
+```
+"media_assets":[
+{
+"media_asset_id":22,
+"creative_field":null
+}
+]
+```
 
-Each object in the `campaigns` array includes the following fields. To
-obtain information for "id" or "code" fields, you can use the <a
-href="campaign-service.md"
-class="xref" target="_blank">Campaign Service</a>.
+### Audio
 
-<table id="buy-side-service-template__table_mbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_mbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_mbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type (Length)</th>
-<th id="buy-side-service-template__table_mbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3"><p>The
-ID of the campaign. Either "id" or "code" is required when updating
-campaign association.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">campaign_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3">The ID
-of the campaign.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">creative_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3">The ID
-of the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3"><p>The
-name of the campaign.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3"><p>The
-state of the campaign. Possible values: "active", "inactive", or
-"parent_inactive".</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mbq_dmb_xwb__entry__3"><p>The
-custom code for the campaign. Either "id" or "code" is required when
-updating line item association.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `click_target` | string | The target of the click_action, which is the action that the device should take when the creative is clicked. Enter a URL that our audit team can use to verify the brand and attributes of your audio creative. Ensure that the site the URL points to is in the same language as the audio. This URL is used only for auditing purposes.<br><br>**Caution:**<br>You must provide an auditable URL in order for your creative to pass auditing. |
 
-**Status**
+### Line items
 
-<table id="buy-side-service-template__table_nbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_nbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_nbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_nbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__1"><code
-class="ph codeph"> user_ready </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__3"><p>The
-status of the creative set by the user describing if the creative is
-ready to serve or not. Possible values: "true" or "false".</p>
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__1"><code
-class="ph codeph">hosted_assets_association_complete</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__2">boolean
-/ null</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_nbq_dmb_xwb__entry__3"><p>Status
-of the creative uploaded by Xandr's internal systems. Possible values:
-"true" or "false" for hosted creatives and "null" for third-party
-creatives.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
+Each object in the `line_items` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Line Item Service - ALI](line-item-service---ali.md).
 
-**Competitive Brands**
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `name` | string | The name of the line item.<br>**Read Only.** |
+| `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
+| `id` | int | The ID of the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
 
+### Campaigns
 
+Each object in the `campaigns` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Campaign Service](campaign-service.md).
 
-class="note tip note_tip">
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the campaign. Either "id" or "code" is required when updating campaign association.<br>**Required On:** `PUT` |
+| `campaign_id` | int | The ID of the campaign. |
+| `creative_id` | int | The ID of the creative. |
+| `name` | string | The name of the campaign.<br>**Read Only.** |
+| `state` | enum | The state of the campaign. Possible values: `"active"`, `"inactive"`, or `"parent_inactive"`.<br>**Read Only.** |
+| `code` | string | The custom code for the campaign. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
 
-<b>Tip:</b> For more information about brands,
-see the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a>.
+### Status
 
+| Name | Type | Description |
+|:---|:---|:---|
+| `user_ready` | boolean | The status of the creative set by the user describing if the creative is ready to serve or not. Possible values: `"true"` or `"false"`.<br>**Default:** `true` |
+| `hosted_assets_association_complete` | boolean/null | Status of the creative uploaded by Xandr's internal systems. Possible values: `"true"` or `"false"` for hosted creatives and "null" for third-party creatives.<br>**Read Only.** |
 
+### Competitive brands
 
+> [!TIP]
+> For more information about brands, see the [Brand Service](brand-service.md).
 
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the brand.<br>**Default:** n/a<br>**Required On:** n/a |
+| `name` | string | The name of the brand.<br>**Default:** n/a<br>**Required On:** n/a |
 
-<table id="buy-side-service-template__table_obq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_obq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_obq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_obq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__3"><p>The
-ID of the brand.</p>
-<p><strong>Default:</strong> n/a</p>
-<p><strong>Required On:</strong> n/a</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_obq_dmb_xwb__entry__3"><p>The
-name of the brand.</p>
-<p><strong>Default:</strong> n/a</p>
-<p><strong>Required On:</strong> n/a</p></td>
-</tr>
-</tbody>
-</table>
-
-**Media-Asset**
+### Media-asset
 
 `media-asset` object includes the following fields:
 
-<table id="buy-side-service-template__table_pbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_pbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_pbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_pbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3"><p>ID
-of the media asset.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST </code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">parent_media_asset_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">ID of
-the parent media asset.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">size_in_bytes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Size in
-bytes.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">cdn_uploaded_on</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Date on
-which it was uploaded to CDN.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">cdn_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Non-secure
-CDN URL to the media-asset.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">cdn_secure_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Secure
-CDN URL to the media-asset.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">deleted</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Boolean
-indicator that determines if the media-asset was deleted or not.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">mime_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">The
-type of asset.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">asset_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3"><p>One
-of the following asset types:</p>
-<ul>
-<li>html5</li>
-<li>video</li>
-<li>audio</li>
-<li>image</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__1"><code
-class="ph codeph">duration</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pbq_dmb_xwb__entry__3">Duration
-of video asset in milliseconds.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | ID of the media asset.<br>**Required On:** `POST` |
+| `parent_media_asset_id` | int | ID of the parent media asset. |
+| `size_in_bytes` | int | Size in bytes. |
+| `cdn_uploaded_on` | int | Date on which it was uploaded to CDN. |
+| `cdn_url` | string | Non-secure CDN URL to the media-asset. |
+| `cdn_secure_url` | string | Secure CDN URL to the media-asset. |
+| `deleted` | boolean | Boolean indicator that determines if the media-asset was deleted or not. |
+| `mime_type` | enum | The type of asset. |
+| `asset_type` | enum | One of the following asset types:<br> - html5<br> - video<br> - audio<br> - image |
+| `duration` | double | Duration of video asset in milliseconds. |
 
-**Media_Asset_Status**
+### Media_asset_status
 
 `media_asset_status` object includes the following fields:
 
-<table id="buy-side-service-template__table_rbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_rbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_rbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_rbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__1"><code
-class="ph codeph">cdn_upload_attempt_count</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__3">The
-number of attempts made while uploading to CDN.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__1"><code
-class="ph codeph">status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rbq_dmb_xwb__entry__3">Indicates
-the stage of processing the asset is in.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|:---|:---|:---|
+| `cdn_upload_attempt_count` | int | The number of attempts made while uploading to CDN. |
+| `status` | enum | Indicates the stage of processing the asset is in. |
 
-**Template**
+### Template
 
 `template` object includes the following fields:
 
-<table id="buy-side-service-template__table_sbq_dmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_sbq_dmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_sbq_dmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_sbq_dmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__3">The ID
-of creative template.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__3"><p>The
-name of the creative template.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__1"><code
-class="ph codeph">media_subtype_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__3"><p>The
-ID of the media subtype assigned to the template. You can use the <a
-href="https://wiki.xandr.com/display/api/Media+Subtype+Service"
-class="xref" target="_blank">Media Subtype Service</a> to view all
-supported media subtypes.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__1"><code
-class="ph codeph">format_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_sbq_dmb_xwb__entry__3"><p>The
-name of the format assigned to the template. You can use the <a
-href="https://wiki.xandr.com/display/api/Creative+Format+Service"
-class="xref" target="_blank">Creative Format Service</a>to view all
-supported formats.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of creative template. |
+| `name` | string | The name of the creative template.<br>**Read Only.** |
+| `media_subtype_id` | int | The ID of the media subtype assigned to the template. You can use the [Media Subtype Service](media-subtype-service.md) to view all supported media subtypes.<br>**Read Only.** |
+| `format_id` | string | The name of the format assigned to the template. You can use the [Creative Format Service](creative-format-service.md) to view all supported formats.<br>**Read Only.** |
 
-**Competitive Categories**
+### Competitive categories
 
-class="note tip note_tip">
+> [!TIP]
+> For more information about categories, see the [Category Service](category-service.md).
 
-<b>Tip:</b> For more information about
-categories, see the <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a>.
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the category.<br>**Default:** n/a<br>**Required On:** n/a |
+| `name` | string | The name of the category.<br>**Default:** n/a<br>**Required On:** n/a |
 
+### Video attribute
 
-
-<table id="buy-side-service-template__table_fl4_vmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_fl4_vmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="buy-side-service-template__table_fl4_vmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_fl4_vmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__3"><p>The
-ID of the category.</p>
-<p><strong>Default:</strong> n/a</p>
-<p><strong>Required On:</strong> n/a</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fl4_vmb_xwb__entry__3"><p>The
-name of the category.</p>
-<p><strong>Default:</strong> n/a</p>
-<p><strong>Required On:</strong> n/a</p></td>
-</tr>
-</tbody>
-</table>
-
-**Video Attribute**
-
-`video_attribute` is required for both audio and video creatives on the
-`creative-vast` endpoint. Template ids are:
+`video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template ids are:
 
 - 6439 - Video: Standard VAST
 - 38745 - Audio: Standard VAST
 
 The `video_attribute` object includes the following fields:
 
-<table id="buy-side-service-template__table_hl4_vmb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_hl4_vmb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_hl4_vmb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_hl4_vmb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__1"><code
-class="ph codeph">is_skippable</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__3">Deprecated.
-Xandr automatically adds a skip tracker to all trafficked VAST
-creatives.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__1"><code
-class="ph codeph">duration_ms</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__3"><p>The
-duration, in milliseconds, of the in-stream (VAST) video or audio
-creative. This must be greater than <code
-class="ph codeph">0</code>.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST,PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__1"><code
-class="ph codeph">wrapper</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__3"><p>The
-VAST document wrapper that contains the <code
-class="ph codeph">elements</code> array and the <code
-class="ph codeph">trackers</code> array. See <a
-href="creative-vast-service.md#CreativeVASTService-VideoAttributeWrapper"
-class="xref" target="_blank">Video Attribute Wrapper</a> for
-details.</p>
-<p><strong>Required On:</strong> Either the wrapper or inline object is
-required on <code class="ph codeph">POST,PUT.</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__1"><code
-class="ph codeph">inline</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_hl4_vmb_xwb__entry__3"><p>The
-inline VAST document. See <a
-href="creative-vast-service.md#CreativeVASTService-VideoAttributeInline"
-class="xref" target="_blank">Video Attribute Inline</a> for details.</p>
-<p><strong>Required On:</strong> Either the wrapper or inline object is
-required on <code class="ph codeph">POST,PUT.</code></p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `is_skippable` | boolean | Deprecated. Xandr automatically adds a skip tracker to all trafficked VAST creatives. |
+| `duration_ms` | double | The duration, in milliseconds, of the in-stream (VAST) video or audio creative. This must be greater than `0`.<br>**Required On:** `POST`, `PUT`. |
+| `wrapper` | object | The VAST document wrapper that contains the `elements` array and the `trackers` array. For details, see [Video Attribute Wrapper](#video-attribute-wrapper) below.<br>**Required On:** Either the wrapper or inline object is required on `POST`, `PUT`. |
+| `inline` | object | The inline VAST document. For details, see [Video Attribute Inline](#video-attribute-inline) below.<br>**Required On:** Either the wrapper or inline object is required on `POST`, `PUT`. |
 
+> [!NOTE]
+> Either the `wrapper` or `inline`object can be specified in the creative call. They are mutually exclusive.
 
-
-<b>Note:</b> Either the `wrapper` or
-`inline`object can be specified in the creative call. They are mutually
-exclusive.
-
-
-
-
-
->
-
-## **Video Attribute Wrapper**
+## Video Attribute Wrapper
 
 The `wrapper` object contains the following fields:
 
-<table id="buy-side-service-template__table_dlq_bnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_dlq_bnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_dlq_bnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_dlq_bnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__3"><p>URL
-of the VAST document.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__1"><code
-class="ph codeph">secure_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__3">Secure
-URL of the VAST document.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__1"><code
-class="ph codeph">elements</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_dlq_bnb_xwb__entry__3"><p>Elements
-of the VAST wrapper.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `url` | string | URL of the VAST document.<br>**Required On:** `POST`, `PUT`. |
+| `secure_url` | string | Secure URL of the VAST document. |
+| `elements` | array | Elements of the VAST wrapper.<br>**Required On:** `POST`, `PUT`. |
 
-
-
->
-
-## **Video Attribute Wrapper Element**
+## Video Attribute Wrapper Element
 
 The `elements` array contains the following fields:
 
+> [!NOTE]
+> At least one element must be specified.
 
+| Field | Type | Description |
+|---|---|---|
+| `vast_element_type_id` | int | VAST element ID. Possible value:<br>`1`: linear |
+| `type` | string | Type of element. Possible value: `"linear"`<br>**Read Only.** |
+| `trackers` | array | VAST event trackers. |
+| `media_files` | array | Media files in the VAST wrapper. |
 
-<b>Note:</b> At least one element must be
-specified.
+## Video Wrapper Event Tracker
 
+You can drop pixels on every event that we track in reporting (see `vast_event_type_id` below). Add the pixel(s) as `trackers` on the creative. The `trackers` array contains the following fields:
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `name` | string | The name of the event tracker. |
+| `vast_event_type_id` | int | The ID of the VAST event. Possible values:<br> - `2`: start<br> - `3`: skip<br>`4`: error<br> - `5`: first_quartile<br> - `6`: midpoint<br> - `7`: third_quartile<br> - `8`: completion<br> - `9`: impression<br> - `10`: click |
+| `url` | string | The URL of the event tracker. |
+| `secure_url` | string | The secure URL of the event tracker. |
+| `event_type` | string | The type of event corresponding to `vast_event_type_id`.<br>**Read Only.** |
 
-<table id="buy-side-service-template__table_mvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_mvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_mvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_mvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__1"><code
-class="ph codeph">vast_element_type_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__3"><p>VAST
-element ID. Possible value:</p>
-<ul>
-<li>1: linear</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__1"><code
-class="ph codeph">type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__3"><p>Type
-of element. Possible value: "linear"</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__1"><code
-class="ph codeph">trackers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__3">VAST
-event trackers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__1"><code
-class="ph codeph">media_files</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_mvn_fnb_xwb__entry__3">Media
-files in the VAST wrapper.</td>
-</tr>
-</tbody>
-</table>
+### Video Wrapper Media Files
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `maintain_aspect_ratio` | string | The ratio between a media file's sizes in dif­fer­ent dimen­sions.<br>**Read Only.** |
+| `scalable` | string | Is the media file scalable.<br>**Read Only.** |
+| `media_asset` | string | The values are derived from the video or audio upload app.<br>**Read Only.** |
 
+### Video Attribute Inline
 
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `ad_title` | string | The title of the ad.<br>**Required On:** `POST`, `PUT`. |
+| `ad_description` | string | Optional. The description of the ad. |
+| `linear` | object | Ad that appears before, after or during a break in content. |
+| `companion_ads` | array of objects | Companion banner ads that appear in banner placements in the same page as the accompanying video or audio (see [Inline Companion Ads Object](#inline-companion-ads-object) below). |
 
-## **Video Wrapper Event Tracker**
+### Inline Linear object
 
-You can drop pixels on every event that we track in reporting (see
-vast_event_type_id below). Add the pixel(s) as `trackers` on the
-creative. The `trackers` array contains the following fields:
+| Field | Type | Description |
+|:---|:---|:---|
+| `trackers` | array | Inline linear trackers. |
+| `media_files` | array | The inline linear media files. |
+| `skipoffset_seconds` | int | The number of seconds that is allowed for the video to play, before it can be skipped. The default value is `null`.<br><br>**Note:**<br>This field can only be used if you are serving ads into a placement by the same member. |
 
-<table id="buy-side-service-template__table_ovn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_ovn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_ovn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_ovn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__3">The
-name of the event tracker.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__1"><code
-class="ph codeph">vast_event_type_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__3"><p>The
-ID of the VAST event. Possible values:</p>
-<ul>
-<li>2: start</li>
-<li>3: skip</li>
-<li>4: error</li>
-<li>5: first_quartile</li>
-<li>6: midpoint</li>
-<li>7: third_quartile</li>
-<li>8: completion</li>
-<li>9: impression</li>
-<li>10: click</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__3">The URL
-of the event tracker.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__1"><code
-class="ph codeph">secure_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__3">The
-secure URL of the event tracker.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__1"><code
-class="ph codeph">event_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ovn_fnb_xwb__entry__3"><p>The
-type of event corresponding to <code
-class="ph codeph">vast_event_type_id</code>.</p>
-<p><strong>Read Only</strong>.</p></td>
-</tr>
-</tbody>
-</table>
+### Inline Linear Trackers
 
-**Video Wrapper Media Files**
+| Field | Type | Description |
+|:---|:---|:---|
+| `vast_event_type` | string | The type of tracking event. Possible Values:<br> - start<br> - skip<br> - error<br> - first_quartile<br> - completion<br> - impression<br> - click<br>**Required On:** `POST`, `PUT`. |
+| `name` | string | The name of the tracker. |
+| `url` | string | The URL of the inline linear event tracker.<br>**Required On:** `POST`, `PUT`. |
+| `secure_url` | string | The secure URL of the inline linear event tracker. |
 
-<table id="buy-side-service-template__table_qvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_qvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_qvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_qvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__1"><code
-class="ph codeph">maintain_aspect_ratio</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__3"><p>The
-ratio between a media file's sizes in dif­fer­ent dimen­sions.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__1"><code
-class="ph codeph">scalable</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__3"><p>Is
-the media file scalable.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__1"><code
-class="ph codeph">media_asset</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_qvn_fnb_xwb__entry__3"><p>The
-values are derived from the video or audio upload app.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
+### Inline Linear Media Files
 
-**Video Attribute Inline**
+| Field | Type | Description |
+|:---|:---|:---|
+| `maintain_aspect_ratio` | string | The ratio between a media file's sizes in dif­fer­ent dimen­sions.<br>**Read Only.** |
+| `scalable` | string | Is the media file scalable.<br>**Read Only.** |
+| `media_assets` | string | The values are derived from the video upload app.<br>**Read Only.** |
 
-<table id="buy-side-service-template__table_rvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_rvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_rvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_rvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__1"><code
-class="ph codeph">ad_title</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__3"><p>The
-title of the ad.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__1"><code
-class="ph codeph">ad_description</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__3"><strong>Optional.</strong>
-The description of the ad.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__1"><code
-class="ph codeph">linear</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__3">Ad that
-appears before, after or during a break in content.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__1"><code
-class="ph codeph">companion_ads</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rvn_fnb_xwb__entry__3">Companion
-banner ads that appear in banner placements in the same page as the
-accompanying video or audio (see <a
-href="creative-vast-service.md#CreativeVASTService-InlineCompanionAdsObject"
-class="xref" target="_blank">Inline Companion Ads Object</a>).</td>
-</tr>
-</tbody>
-</table>
+### Inline Companion Ads object
 
-**Inline Linear Object**
+| Field | Type | Description |
+|:---|:---|:---|
+| `trackers` | array of objects | Inline companion ad trackers. |
+| `companion_creative_id` | int | The ID of the the companion ad. |
 
-<table id="buy-side-service-template__table_svn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_svn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_svn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_svn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__1"><code
-class="ph codeph">trackers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__3">Inline
-linear trackers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__1"><code
-class="ph codeph">media_files</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__3">The
-inline linear media files.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__1"><code
-class="ph codeph">skipoffset_seconds</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_svn_fnb_xwb__entry__3"><p>The
-number of seconds that is allowed for the video to play, before it can
-be skipped. The default value is <code
-class="ph codeph">null</code>.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>This field can only be used if you are serving ads into a placement
-by the same member.</p>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-**Inline Linear Trackers**
-
-<table id="buy-side-service-template__table_tvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_tvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_tvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_tvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__1"><code
-class="ph codeph">vast_event_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__3"><p>The
-type of tracking event. Possible Values:</p>
-<ul>
-<li>start</li>
-<li>skip</li>
-<li>error</li>
-<li>first_quartile</li>
-<li>completion</li>
-<li>impression</li>
-<li>click</li>
-</ul>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__3">The
-name of the tracker.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__3"><p>The
-URL of the inline linear event tracker.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__1"><code
-class="ph codeph">secure_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_tvn_fnb_xwb__entry__3">The
-secure URL of the inline linear event tracker.</td>
-</tr>
-</tbody>
-</table>
-
-**Inline Linear Media Files**
-
-<table id="buy-side-service-template__table_vvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_vvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_vvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_vvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__1"><code
-class="ph codeph">maintain_aspect_ratio</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__3"><p>The
-ratio between a media file's sizes in dif­fer­ent dimen­sions.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__1"><code
-class="ph codeph">scalable</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__3"><p>Is
-the media file scalable.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__1"><code
-class="ph codeph">media_assets</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vvn_fnb_xwb__entry__3"><p>The
-values are derived from the video upload app.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
-
-**Inline Companion Ads Object**
-
-<table id="buy-side-service-template__table_wvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_wvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_wvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_wvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__1"><code
-class="ph codeph">trackers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__3">Inline
-companion ad trackers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__1"><code
-class="ph codeph">companion_creative_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wvn_fnb_xwb__entry__3">The ID
-of the the companion ad.</td>
-</tr>
-</tbody>
-</table>
-
-**Segments**
+### Segments
 
 These fields will be included in the Segments array:
 
-<table id="buy-side-service-template__table_xvn_fnb_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_xvn_fnb_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_xvn_fnb_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_xvn_fnb_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__3"><p>The
-ID of the segment.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT </code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__1"><code
-class="ph codeph">segment_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__3">The ID
-of the segment. This field contains the same information as the <code
-class="ph codeph">id</code> field.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__1"><code
-class="ph codeph">action</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__3"><p>The
-action taken by users that will add them to the segment. Possible
-values: "add on view" or "add on click".</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST, PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xvn_fnb_xwb__entry__3">The
-segment's name.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the segment.<br>**Required On:** `POST`, `PUT`. |
+| `segment_id` | int | The ID of the segment. This field contains the same information as the `id` field. |
+| `action` | enum | The action taken by users that will add them to the segment. Possible values: `"add on view"` or `"add on click"`.<br>**Required On:** `POST`, `PUT`. |
+| `name` | string | The segment's name. |
 
-**Brand**
+### Brand
 
 The `brand` object contains the following fields.
 
+> [!TIP]
+> This object is **read-only**. To set the brand for a creative, use the `brand_id` field outside of this object.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the brand of the company advertising the creative.<br>**Read Only.** |
+| `name` | string | The name of the brand of the company advertising the creative.<br>**Read Only.** |
+| `category_id` | int | The ID of the category associated with the brand.<br>**Read Only.** |
+| `category_name` | string | The name of the category associated with the brand.<br><br>**Note:**<br>The `category_name` field is returned only when you pass `show_category_name=true` in the query string of your call. |
 
-class="note tip note_tip">
+## First run/last run
 
-<b>Tip:</b> This object is **read-only**. To
-set the brand for a creative, use the `brand_id` field outside of this
-object.
-
-
-
-
-
-<table id="buy-side-service-template__table_pt2_14b_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_pt2_14b_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_pt2_14b_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_pt2_14b_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__3"><p>The
-ID of the brand of the company advertising the creative.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__3"><p>The
-name of the brand of the company advertising the creative.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__1"><code
-class="ph codeph">category_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__3"><p>The
-ID of the category associated with the brand.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__1"><code
-class="ph codeph">category_name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_pt2_14b_xwb__entry__3"><p>The
-name of the category associated with the brand.</p>
-
-class="note note_note">
-<b>Note:</b>
-<p>The <code class="ph codeph">category_name</code> field is returned
-only when you pass <code
-class="ph codeph">show_category_name=true</code> in the query string of
-your call.</p>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
-
-## **First Run / Last Run**
-
-To include the `first_run` and `last_run` fields in a GET response, pass
-`flight_info=true` in the query string. You can also filter for
+To include the `first_run` and `last_run` fields in a GET response, pass `flight_info=true` in the query string. You can also filter for
 creatives based on when they first and last served, as follows:
 
-**Retrieve only creatives that have never served**
+### Retrieve only creatives that have never served
 
 Pass `never_run=true` in the query string.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&never_run=true'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&never_run=true'
 ```
 
-class="note tip note_tip">
+> [!TIP]
+> You can use `never_run=true` in combination with other filters, but please note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for creatives that have never served OR line items that first served on or after 2012-01-01.
 
-<b>Tip:</b> You can use `never_run=true` in
-combination with other filters, but please note that it will always be
-an OR relationship. For example, if you pass both `never_run=true` and
-`min_first_run=2012-01-01 00:00:00` in the query string, you will be
-looking for creatives that have never served OR line items that first
-served on or after 2012-01-01.
+### Retrieve only creatives that first served on or after a specific date
 
+Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-
-**Retrieve only creatives that first served on or after a specific
-date**
-
-Pass `min_first_run=YYYY-MM-DD HH:MM:SS`in the query string.
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only creatives that first served on or before a specific
-date**
+### Retrieve only creatives that first served on or before a specific date
 
-Pass`max_first_run=YYYY-MM-DD HH:MM:SS`in the query string.
+Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only creatives first served within a specific date range**
+### Retrieve only creatives first served within a specific date range
 
-Pass
-`min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS`in
-the query string.
+Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only creatives that last served on or after a specific date**
+### Retrieve only creatives that last served on or after a specific date
 
-Pass `min_last_run=YYYY-MM-DD HH:MM:SS`in the query string.
+Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only creatives that last served on or before a specific
-date**
+### Retrieve only creatives that last served on or before a specific date
 
-Pass `max_last_run=YYYY-MM-DD HH:MM:SS`in the query string.
+Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only creatives that last served within a specific date
-range**
+### Retrieve only creatives that last served within a specific date range
 
-Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS`
+Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-in the query string.
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00&max_last_run=2012-08-01 00:00:00'
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/creative-vast?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00&max_last_run=2012-08-01 00:00:00'
 ```
 
+## Changes that cause re-audit
 
-
->
-
-## Changes That Cause Re-Audit
-
-Once a creative has passed Xandr audit (audit_status is "audited"),
-changing any of the following fields causes the creative to be
-resubmitted for audit (allow_audit is set to "pending"
+Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be
+resubmitted for audit (`allow_audit` is set to `"pending"`).
 
 - media_url
 - click_url
@@ -2785,34 +463,23 @@ resubmitted for audit (allow_audit is set to "pending"
 - video_attribute
 - media_assets
 
-Also, if the audit_status is "no_audit", changing allow_audit from
-"false" to "true" causes the creative to be resubmitted for Xandr audit.
-
-
-
->
+Also, if the `audit_status` is `"no_audit"`, changing `allow_audit` from `"false"` to `"true"` causes the creative to be resubmitted for Xandr audit.
 
 ## Examples
 
-**Upload a video or audio creative**
+### Upload a video or audio creative
 
 When uploading a creative for hosting with Xandr:
 
-**Step1: Upload the asset to the <a
-href="creative-upload-service---file-format.md"
-class="xref" target="_blank">creative upload service</a>**
+**Step 1: Upload the asset to the [creative upload service](creative-upload-service---file-format.md).**
 
->
-
-``` pre
+```
 curl -X POST -H "Authorization: hbapi:139072:5761726637ada:nym2" --form "type=video" --form "file=@./Xandr_30_1280_720_2500k.mp4" "https://api.appnexus.com/creative-upload?member_id=123"
 ```
 
-
-
 The **media_asset_id** is returned.
 
-``` pre
+```
 {
     "response": 
         "status": "OK",
@@ -2857,9 +524,9 @@ The **media_asset_id** is returned.
     }
 ```
 
-**Step 2**. **Use the** **`media_asset_id`** **to upload the creative.**
+**Step 2:** **Use the** **`media_asset_id`** **to upload the creative.**
 
-``` pre
+```
 $ cat creative_video
 
 {
@@ -2954,7 +621,7 @@ $ cat creative_video
 
 **A `video_attribute` object with wrapper example**
 
-``` pre
+```
 {
     "creative-vast": {
         "id": 145,
@@ -2995,7 +662,7 @@ $ cat creative_video
 
 **A `video_attribute` object with inline VAST example**
 
-``` pre
+```
 {
     "creative-vast": {
         "name": "John-Doe test",
@@ -3023,28 +690,8 @@ $ cat creative_video
     }
 ```
 
+## Related topics
 
-
->
-
-## **Related Topics**
-
-
-
-- <a
-  href="creative-upload-service---file-format.md"
-  class="xref" target="_blank">Creative Upload Service - File Format</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
-
-
+- [Creative Upload Service - File Format](creative-upload-service---file-format.md)
+- [API Best Practices](api-best-practices.md)
+- [API Semantics](api-semantics.md)

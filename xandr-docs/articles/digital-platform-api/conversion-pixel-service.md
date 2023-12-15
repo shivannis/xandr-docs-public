@@ -1,778 +1,104 @@
 ---
-Title : Conversion Pixel Service
-Description : The Pixel Service can be used to create **conversion pixels** to place
+title: Conversion Pixel Service
+description: In this article, learn about the Conversion Pixel service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-on advertiser pages to track both view and click-based conversions.
 ---
 
+# Conversion Pixel service
 
-# Conversion Pixel Service
+The Pixel Service can be used to create **conversion pixels** to place on advertiser pages to track both view and click-based conversions.
 
-
-
-
-
-The Pixel Service can be used to create **conversion pixels** to place
-on advertiser pages to track both view and click-based conversions.
-
-
-
-<b>Note:</b> Once you have a conversion pixel
-ID, the basic format of an image conversion pixel is
-`<img src="media/px?id=37&t=2" width="1" height="1" />`.
-
-
-
-
-
-class="note tip note_tip">
-
-<b>Tip:</b> Segment pixels are created
-separately via the <a
-href="segment-service.md"
-class="xref" target="_blank">Segment Service</a>.
-
-
-
-
+> [!NOTE]
+> Once you have a conversion pixel ID, the basic format of an image conversion pixel is `<img src="media/px?id=37&t=2" width="1" height="1" />`.
+> [!TIP]
+> Segment pixels are created separately via the [Segment Service](segment-service.md).
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/pixel](https://api.appnexus.com/pixel) | View all conversion pixels. |
+| `GET` | [https://api.appnexus.com/pixel?id=123,456,789](https://api.appnexus.com/pixel?id=123,456,789) | View an array of specific conversion pixels. |
+| `GET` | [https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID) | View all conversion pixels for one of your advertisers. |
+| `GET` | [https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE) | View all conversion pixels for one of your advertisers. |
+| `GET` | [https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID](https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID) | View a particular conversion pixel for one of your advertisers. |
+| `GET` | [https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&code=PIXEL_CODE](https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&code=PIXEL_CODE) | View a particular conversion pixel for one of your advertisers. |
+| `GET` | [https://api.appnexus.com/pixel/meta](https://api.appnexus.com/pixel/meta) | Find out which fields you can filter and sort by. |
+| `POST` | [https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID) | Add a new conversion pixel to one of your advertisers. |
+| `POST` | [https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE) | Add a new conversion pixel to one of your advertisers. |
+| `PUT` | [https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID](https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID) | Modify an existing conversion pixel. |
+| `PUT` | [https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&code=PIXEL_CODE](https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&code=PIXEL_CODE) | Modify an existing conversion pixel. |
+| `DELETE` | [https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID](https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&id=PIXEL_ID) | Delete an existing conversion pixel.<br><br>**Note:** You cannot delete a pixel that is used by one or more line items. You must [edit the line item](line-item-service.md) to remove the conversion pixel first. |
 
+## JSON fields
 
-<table
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-center colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-center colsep-1 rowsep-1">Endpoint</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel" class="xref"
-target="_blank">https://api.appnexus.com/pixel</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all conversion pixels.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?id=123,456,789" class="xref"
-target="_blank">https://api.appnexus.com/pixel?id=123,456,789</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-an array of specific conversion pixels.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all conversion pixels for one of your advertisers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all conversion pixels for one of your advertisers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-a particular conversion pixel for one of your advertisers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&amp;code=PIXEL_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&amp;code=PIXEL_CODE</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-a particular conversion pixel for one of your advertisers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel/meta" class="xref"
-target="_blank">https://api.appnexus.com/pixel/meta</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-a new conversion pixel to one of your advertisers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-a new conversion pixel to one of your advertisers.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-an existing conversion pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&amp;code=PIXEL_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_code=ADVERTISER_CODE&amp;code=PIXEL_CODE</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-an existing conversion pixel.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">DELETE</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/pixel?advertiser_id=ADVERTISER_ID&amp;id=PIXEL_ID</a></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"><div
->
-Delete an existing conversion pixel.
-class="note note_note">
-<b>Note:</b> You cannot delete a pixel that is
-used by one or more line items. You must <a
-href="line-item-service.md"
-class="xref" target="_blank">edit the line item</a> to remove the
-conversion pixel first.
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser that owns the pixel.<br>**Required On:** `POST` |
+| `campaigns` | array | The campaigns with which the pixel is associated. For details about the fields in this array, see [Campaigns](#campaigns) below. <br>**Read Only.** |
+| `code` | string | The custom code for the pixel. |
+| `created_on` | timestamp | The date and time when the pixel was created.<br>**Read Only.** |
+| `id` | int | The internal ID associated with the pixel.<br>**Required On:** `PUT` |
+| `name` | string | The name of the pixel.<br>**Required On:** `POST` |
+| `last_modified` | timestamp | The date and time when the pixel was last modified.<br>**Read Only.** |
+| `line_items` | array | The line items with which the pixel is associated. For details about the fields in this array, see [Line Items](#line-items) below.<br>**Read Only.** |
+| `min_minutes_per_conv` | int | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>If set to `0`: count all conversions.<br>If set to `null` (default): Count one per user.<br>**Default:** `null` |
+| `piggyback_pixels` | array of objects | The URLs of the pixels you want us to fire when the conversion pixel fires. For details, see [Piggyback Pixels](#piggyback-pixels) below. |
+| `pixel_conversion_event` | array | The pixel conversion event category with which the pixel is associated. For details, see [Pixel Conversion Event](#pixel-conversion-event) below.<br>**Read Only.** |
+| `pixel_conversion_event_id` | enum | Optional. The ID of the conversion event associated with the pixel. Setting an event category will not affect our optimization algorithms immediately. Instead, it provides our optimization team with valuable data for prediction that we can start to test and incorporate. If you don't see a good match for your type of conversion event, leave this field blank.<br>Possible values are:<br> - `null`: No category selected.<br> - `2`: **Visit landing page** - A user visits your website after being served an ad.<br> - `3`: **Item view** - A user visits a page on your website that displays one or more products or services.<br> - `4`: **Add to cart** - A user adds one or more of your products or services to their shopping cart.<br> - `5`: **Initiate checkout** - A user begins the checkout process.<br> - `6`: **Add payment info** - A user adds payment information, such as a credit card number, during the checkout process.<br> - `7`: **Purchase** - A confirmed sale of your product or service.<br> - `8`: **Generate lead** - Collect lead information, such as email addresses or zip codes, from people interested in your business. |
+| `post_click_expire_mins` | int | The interval (in minutes) from impression time allowed for a click conversion to be counted as eligible. Maximum value is `129600` (90 days). If set to `0` or `null`, the maximum lookback window applies. |
+| `post_click_value` | double | The value you attribute to a conversion after a click. |
+| `post_view_expire_mins` | int | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
+| `post_view_value` | double | The value you attribute to a conversion after a view. |
+| `state` | enum | The state of the pixel. Possible values: "active" or "inactive". |
+| `trigger_type` | enum | The type of event required for a valid (attributed) conversion. Possible values: `view`, `click`, or `hybrid`.<br>**Default:** `click` |
 
-</td>
-</tr>
-</tbody>
-</table>
+### Campaigns
 
+This array shows you the campaign associations. To associate a pixel to a campaign, use the [Campaign Service](campaign-service.md).
 
+| Field | Type | Description |
+|:---|:---|:---|
+| id | string | The ID of the campaign.<br>**Read Only.** |
 
+### Line items
 
+This array shows you the line item associations. To associate a pixel to a line item, use the [Line Item Service](line-item-service.md).
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | string | The ID of the line item.<br>**Read Only.** |
+| `name` | string | The name of the line item.<br>**Read Only.** |
+| `state` | enum | The state of the line item. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
 
+### Piggyback pixels
 
-## JSON Fields
-
-
-
-<table
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-center colsep-1 rowsep-1">Field</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-center colsep-1 rowsep-1">Type</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the advertiser that owns the pixel.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">campaigns</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-campaigns with which the pixel is associated. See <a
-href="conversion-pixel-service.md#ConversionPixelService-Campaigns"
-class="xref" target="_blank">Campaigns</a> below for details about the
-fields in this array.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-custom code for the pixel.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">created_on</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the pixel was created.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-internal ID associated with the pixel.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-name of the pixel.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the pixel was last modified.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">line_items</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-line items with which the pixel is associated. See <a
-href="conversion-pixel-service.md#ConversionPixelService-LineItems"
-class="xref" target="_blank">Line Items</a> below for details about the
-fields in this array.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">min_minutes_per_conv</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-interval (in minutes) to allow a repeat conversion. Maximum value is
-<code class="ph codeph">32767</code> (22 days).</p>
-<ul>
-<li>If set to <code class="ph codeph">0</code>: count all
-conversions.</li>
-<li>If set to null (default): Count one per user.</li>
-</ul>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">piggyback_pixels</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-URLs of the pixels you want us to fire when the conversion pixel fires.
-See <a
-href="conversion-pixel-service.md#ConversionPixelService-PiggybackPixels"
-class="xref" target="_blank">Piggyback Pixels</a> below for
-details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">pixel_conversion_event</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-pixel conversion event category with which the pixel is associated. See
-<a
-href="conversion-pixel-service.md#ConversionPixelService-PixelConversionEvent"
-class="xref" target="_blank">Pixel Conversion Event</a> below for
-details.</p>
-<ul>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">pixel_conversion_event_id</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Optional.
-The ID of the conversion event associated with the pixel. Setting an
-event category will not affect our optimization algorithms immediately.
-Instead, it provides our optimization team with valuable data for
-prediction that we can start to test and incorporate. If you don't see a
-good match for your type of conversion event, leave this field
-blank.</p>
-<p>Possible values are:</p>
-<ul>
-<li>null - No category selected.</li>
-<li><code class="ph codeph">2 -</code> <strong>Visit landing
-page</strong> - A user visits your website after being served an
-ad.</li>
-<li><code class="ph codeph">3 -</code><strong>Item view</strong> - A
-user visits a page on your website that displays one or more products or
-services.</li>
-<li><code class="ph codeph">4 -</code> <strong>Add to cart</strong> - A
-user adds one or more of your products or services to their shopping
-cart.</li>
-<li><code class="ph codeph">5</code> <strong><code
-class="ph codeph">-</code> Initiate checkout</strong> - A user begins
-the checkout process.</li>
-<li><code class="ph codeph">6</code> <strong><code
-class="ph codeph">-</code> Add payment info</strong> - A user adds
-payment information, such as a credit card number, during the checkout
-process.</li>
-<li><code class="ph codeph">7</code> <strong><code
-class="ph codeph">-</code> Purchase</strong> - A confirmed sale of your
-product or service.</li>
-<li><code class="ph codeph">8</code><strong><code
-class="ph codeph">-</code> Generate lead</strong> - Collect lead
-information, such as email addresses or zip codes, from people
-interested in your business.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">post_click_expire_mins</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-interval (in minutes) from impression time allowed for a click
-conversion to be counted as eligible. Maximum value is <code
-class="ph codeph">129600</code> (90 days). If set to <code
-class="ph codeph">0</code> or null, the maximum lookback window
-applies.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">post_click_value</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">double</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-value you attribute to a conversion after a click.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">post_view_expire_mins</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-interval (in minutes) from impression time allowed for a view conversion
-to be counted as eligible. Maximum value is <code
-class="ph codeph">43200</code> (30 days). If set to <code
-class="ph codeph">0</code> or null, the maximum lookback window
-applies.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">post_view_value</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">double</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-value you attribute to a conversion after a view.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-state of the pixel. Possible values: "active" or "inactive".</td>
-</tr>
-<tr class="even row">
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">trigger_type</code></td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-center colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-type of event required for a valid (attributed) conversion. Possible
-values: <code class="ph codeph">view</code>, <code
-class="ph codeph">click</code>, or <code
-class="ph codeph">hybrid</code>.</p>
-<ul>
-<li><strong>Default:</strong> click</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Campaigns**
-
-This array shows you the campaign associations. To associate a pixel to
-a campaign, use the <a
-href="campaign-service.md"
-class="xref" target="_blank">Campaign Service</a>.
-
-<table id="buy-side-service-template__table_fjq_zqq_5wb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_fjq_zqq_5wb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_fjq_zqq_5wb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_fjq_zqq_5wb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fjq_zqq_5wb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fjq_zqq_5wb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_fjq_zqq_5wb__entry__3"><p>The
-ID of the campaign.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-**Line Items**
-
-This array shows you the line item associations. To associate a pixel to
-a line item, use the <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>.
-
-<table id="buy-side-service-template__table_rmm_crq_5wb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_rmm_crq_5wb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_rmm_crq_5wb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_rmm_crq_5wb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__3"><p>The
-ID of the line item.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__3"><p>The
-name of the line item.</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_rmm_crq_5wb__entry__3"><p>The
-state of the line item. Possible values: "active" or "inactive".</p>
-<ul>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-**Piggyback Pixels**
-
-Each object in the `piggyback_pixels` array contains the following
-fields.
+Each object in the `piggyback_pixels` array contains the following fields.
 
 When adding piggyback pixels, please keep the following in mind:
 
-- Image pixels can only piggyback off other image pixels, and JavaScript
-  pixels can only piggyback other JavaScript pixels.
-- Image pixels can only have one piggyback pixel. If you need to
-  piggyback multiple pixels, be sure to use a JavaScript pixel.
-- There are no character limits to piggybacked pixels in AppNexus, but
-  browser/server URL limits may apply.
+- Image pixels can only piggyback off other image pixels, and JavaScript pixels can only piggyback other JavaScript pixels.
+- Image pixels can only have one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.
+- There are no character limits to piggybacked pixels in AppNexus, but browser/server URL limits may apply.
 
-<table id="buy-side-service-template__table_ujk_grq_5wb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_ujk_grq_5wb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_ujk_grq_5wb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type (length)</th>
-<th id="buy-side-service-template__table_ujk_grq_5wb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__1"><code
-class="ph codeph">pixel_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__3">The
-type of the pixel to piggyback. Possible values: "js" or "img".</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__1"><code
-class="ph codeph">url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__2">string
-(255)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_ujk_grq_5wb__entry__3">The URL
-of the pixel to piggyback.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type (length) | Description |
+|:---|:---|:---|
+| `pixel_type` | enum | The type of the pixel to piggyback. Possible values: `"js"` or `"img"`. |
+| `url` | string (255) | The URL of the pixel to piggyback. |
 
-**Pixel Conversion Event**
+### Pixel conversion event
 
-<table id="buy-side-service-template__table_jdk_qrq_5wb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_jdk_qrq_5wb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_jdk_qrq_5wb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_jdk_qrq_5wb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__3"><p>The
-ID of the conversion event optionally associated with this pixel.
-Possible values are integers between 2 and 8, which are associated with
-the <code class="ph codeph">name</code> values below.</p>
-<ul>
-<li><code class="ph codeph">null </code>- no category selected.</li>
-<li><code class="ph codeph">2 -</code> <strong>LandingPage</strong> - A
-user visits your website after being served an ad.</li>
-<li><code class="ph codeph">3 -</code> <strong>ItemView</strong> - A
-user visits a page on your website that displays one or more products or
-services.</li>
-<li><code class="ph codeph">4</code> <code class="ph codeph">-</code>
-<strong>AddToCart</strong> - A user adds one or more of your products or
-services to their shopping cart.</li>
-<li><code class="ph codeph">5</code> <code class="ph codeph">-</code>
-<strong>InitiateCheckout</strong> - A user begins the checkout
-process.</li>
-<li><code class="ph codeph">6</code> <strong><code
-class="ph codeph">-</code> AddPaymentInfo</strong> - A user adds payment
-information, such as a credit card number, during the checkout
-process.</li>
-<li><code class="ph codeph">7 </code><strong><code
-class="ph codeph">-</code> Purchase</strong> - A confirmed sale of your
-product or service.</li>
-<li><code class="ph codeph">8 </code><strong><code
-class="ph codeph">-</code> Lead</strong> - Collect lead information,
-such as email addresses or zip codes, from people interested in your
-business.</li>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_jdk_qrq_5wb__entry__3"><p>The
-name of the conversion event optionally associated with this pixel.
-Possible values are associated with the <code
-class="ph codeph">id</code> values above:</p>
-<ul>
-<li><code class="ph codeph">null </code>- no category selected.</li>
-<li>2 - <strong>LandingPage</strong> - A user visits your website after
-being served an ad.</li>
-<li>3 - <strong>ItemView</strong> - A user visits a page on your website
-that displays one or more products or services.</li>
-<li>4 - <strong>AddToCart</strong> - A user adds one or more of your
-products or services to their shopping cart.</li>
-<li>5 - <strong>InitiateCheckout</strong> - A user begins the checkout
-process.</li>
-<li>6 - <strong>AddPaymentInfo</strong> - A user adds payment
-information, such as a credit card number, during the checkout
-process.</li>
-<li>7 - <strong>Purchase</strong> - A confirmed sale of your product or
-service.</li>
-<li>8 - <strong>Lead</strong> - Collect lead information, such as email
-addresses or zip codes, from people interested in your business.</li>
-<li><strong>Read Only.</strong></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | enum | The ID of the conversion event optionally associated with this pixel. Possible values are integers between 2 and 8, which are associated with the `name` values below.<br> - `null`: No category selected.<br> - `2`: **LandingPage** - A user visits your website after being served an ad.<br> - `3`: **ItemView** - A user visits a page on your website that displays one or more products or services.<br> - `4`: **AddToCart** - A user adds one or more of your products or services to their shopping cart.<br> - `5`: **InitiateCheckout** - A user begins the checkout process.<br> - `6`: **AddPaymentInfo** - A user adds payment information, such as a credit card number, during the checkout process.<br> - `7`: **Purchase** - A confirmed sale of your product or service.<br> - `8`: **Lead** - Collect lead information, such as email addresses or zip codes, from people interested in your business.<br>**Read Only.** |
+| `name` | enum | The name of the conversion event optionally associated with this pixel. Possible values are associated with the `id` values above:<br> - `null`: No category selected.<br> - `2`: **LandingPage** - A user visits your website after being served an ad.<br> - `3`: **ItemView** - A user visits a page on your website that displays one or more products or services.<br> - `4`: **AddToCart** - A user adds one or more of your products or services to their shopping cart.<br> - `5`: **InitiateCheckout** - A user begins the checkout process.<br> - `6`: **AddPaymentInfo** - A user adds payment information, such as a credit card number, during the checkout process.<br> - `7`: **Purchase** - A confirmed sale of your product or service.<br> - `8`: **Lead** - Collect lead information, such as email addresses or zip codes, from people interested in your business.<br>**Read Only.** |
 
 ## Examples
 
-**Add a conversion pixel for advertiser 2**
+### Add a conversion pixel for advertiser 2
 
->
-
-``` pre
+```
 $ cat pixel
 
 {
@@ -802,11 +128,9 @@ $ curl -b cookies -c cookies -X POST -d @pixel 'https://api.appnexus.com/pixel?a
 }
 ```
 
+### View conversion pixel 17 for advertiser 2
 
-
-**View conversion pixel 17 for advertiser 2**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/pixel?id=17&advertiser_id=2'
 
 {
@@ -851,16 +175,12 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/pixel?id=17&advertiser_id
 }
 ```
 
-**View conversion pixels for all advertisers**
+### View conversion pixels for all advertisers
 
+> [!NOTE]
+> `"advertiser_id"` field tells you the advertiser to which the pixel belongs.
 
-
-<b>Note:</b> "advertiser_id" field tells you
-the advertiser to which the pixel belongs.
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @pixel 'https://api.appnexus.com/pixel'
 
 {
@@ -963,12 +283,11 @@ $ curl -b cookies -c cookies -X POST -d @pixel 'https://api.appnexus.com/pixel'
 }
 ```
 
-**Add a conversion event category to a pixel**
+### Add a conversion event category to a pixel
 
-This example adds conversion pixel 1017110 to event category 3 (viewing
-an item).
+This example adds conversion pixel 1017110 to event category 3 (viewing an item).
 
-``` pre
+```
 $ cat pixel-category
 
 {
@@ -1018,9 +337,3 @@ $ curl -b cookies -c cookies -X PUT -s -d @pixel-category "https://api.appnexus.
     }
 }
 ```
-
-
-
-
-
-
