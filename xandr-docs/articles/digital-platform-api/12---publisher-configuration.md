@@ -1,38 +1,23 @@
 ---
-Title : 12 - Publisher Configuration
-Description : Prior to creating any pieces of the sell-side hierarchy via the API, it
+title: 12 - Publisher Configuration
+description: In this article, learn about publisher configuration and explore detailed information about the various parameters configured at the publisher level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-is best practice to fully configure the publisher first. The reason for
 ---
 
+# 12 - Publisher configuration
 
-# 12 - Publisher Configuration
+Prior to creating any pieces of the sell-side hierarchy via the API, it is best practice to fully configure the publisher first. The reason for this is that there are defaults that can be specified on a publisher level which cascade to child objects under the publisher.
 
-
-
-Prior to creating any pieces of the sell-side hierarchy via the API, it
-is best practice to fully configure the publisher first. The reason for
-this is that there are defaults that can be specified on a publisher
-level which cascade to child objects under the publisher.
-
-There are a number of different parameters which can be configured at
-the publisher level. These settings fall under a few services:
-
+There are a number of different parameters which can be configured at the publisher level. These settings fall under a few services:
 
 ## Publisher
 
-**Timezone**
+### Timezone
 
-This parameter, stored in the "timezone" field, defines the default
-timezone that will be applied to newly created objects unless otherwise
-specified at the time of their creation. For a list of valid timezone
-values, see <a
-href="api-timezones.md"
-class="xref" target="_blank">API Timezones</a>. The sample JSON below
-shows how to set this parameter.
+This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "publisher": {
     "timezone": "EST5EDT",
@@ -41,13 +26,11 @@ shows how to set this parameter.
 }
 ```
 
-**Allow Internal and External CPA/CPC Deals**
+### Allow internal and external CPA/CPC deals
 
-These settings determine whether internal (managed/direct) and external
-(platform) can buy impressions using a CPC or CPA payment type. The
-sample JSON below shows how to set these parameters.
+These settings determine whether internal (managed/direct) and external (platform) can buy impressions using a CPC or CPA payment type. The sample JSON below shows how to set these parameters.
 
-``` pre
+```
 {
   "publisher": {
     "allow_cpa_managed": true,
@@ -63,13 +46,11 @@ sample JSON below shows how to set these parameters.
 }
 ```
 
-**Billing Address**
+### Billing address
 
-This setting, stored in the parameter in the sample below, specifies the
-billing address for the advertiser. The sample JSON below shows how to
-set this parameter.
+This setting, stored in the parameter in the sample below, specifies the billing address for the advertiser. The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "publisher": {
     "billing_dba": "Publisher Doing Business As",
@@ -84,18 +65,14 @@ set this parameter.
 }
 ```
 
+## Ad quality settings
 
-
-
-## Ad Quality Settings
-
-The ad profile service allows you to specify the types of creatives
-which are eligible to serve on a given publisher based on creative
+The ad profile service allows you to specify the types of creatives which are eligible to serve on a given publisher based on creative
 attributes. The JSON samples below show how to set these parameters.
 
-**Buyers**
+### Buyers
 
-``` pre
+```
 {
   "ad_profile": {
     "default_member_status": "trusted",
@@ -109,9 +86,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Brands**
+### Brands
 
-``` pre
+```
 {
   "ad_profile": {
     "default_brand_status": "trusted",
@@ -125,9 +102,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Languages**
+### Languages
 
-``` pre
+```
 {
   "ad_profile": {
     "default_language_status": "banned",
@@ -139,9 +116,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Ad Servers**
+### Ad servers
 
-``` pre
+```
 {
   "ad_profile": {
     "default_ad_server_status": "trusted",
@@ -155,9 +132,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Categories**
+### Categories
 
-``` pre
+```
 {
   "ad_profile": {
     "default_category_status": "banned",
@@ -171,9 +148,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Attributes**
+### Attributes
 
-``` pre
+```
 {
   "ad_profile": {
     "default_technical_attribute_status": "trusted",
@@ -186,9 +163,9 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
-**Creatives**
+### Creatives
 
-``` pre
+```
 {
   "ad_profile": {
     "creatives": [
@@ -215,18 +192,13 @@ attributes. The JSON samples below show how to set these parameters.
 }
 ```
 
+## Payment rules
 
+### Pricing type
 
+The payment type setting specifies the way that the publisher is going to be paid. The choices for pricing type are "cpm" and "revshare". The sample JSON below shows how to set these parameters:
 
-## Payment Rules
-
-**Pricing Type**
-
-The payment type setting specifies the way that the publisher is going
-to be paid. The choices for pricing type are "cpm" and "revshare". The
-sample JSON below shows how to set these parameters:
-
-``` pre
+```
 {
   "payment-rule": {
     "pricing_type": "cpm",
@@ -235,9 +207,3 @@ sample JSON below shows how to set these parameters:
   }
   }
 ```
-
-
-
-
-
-

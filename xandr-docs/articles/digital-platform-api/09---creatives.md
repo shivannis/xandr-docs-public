@@ -1,62 +1,32 @@
 ---
-Title : 09 - Creatives
-Description : For any campaign to serve, it must have valid creatives associated with
+title: 09 - Creatives
+description: In this article, learn how a creative is associated with a campaign and explore the necessary fields with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-it. All creative must be registered via the API, but doing this can be
 ---
-
 
 # 09 - Creatives
 
+For any campaign to serve, it must have valid creatives associated with it. All creative must be registered via the API, but doing this can be tricky. The way creatives should be uploaded is highly dependent on the format of the creative.
 
-
-For any campaign to serve, it must have valid creatives associated with
-it. All creative must be registered via the API, but doing this can be
-tricky. The way creatives should be uploaded is highly dependent on the
-format of the creative:
-
-Note that regardless of the creative format, there are a few
-considerations:
-
-- In order to purchase real-time inventory, creatives must be opted into
-  the audit process but setting "audit_status" to "pending" and setting
-  "allow_audit" to "true".
-- Once the audit for the creative is complete, the various audit status
-  and feedback fields will be populated with critical information
-  regarding the audit result. These fields are "audit_status",
-  "audit_feedback", "google_audit_status",
-  "google_audit_feedback","msft_audit_status", "msft_audit_feedback".
-- The "content" and "original_content" fields serve slightly different
-  purposes. The "content" field is what is actually served by the
-  impression bus on an ad call and may contain escaped characters in
-  order to be served properly. The "original_content" field is used by
-  the UI for displaying and modifying the "content". For this reason,
-  the values of the "content" and "original_content" fields may be
-  slightly different.
-- Every creative must be associated with a single advertiser. This is
-  set via the "advertiser_id" parameter.
-- In order to track clicks on a given creative, you must include the
-  click URL macro ("${CLICK_URL}" or "${CLICK_URL_ENC}") and set the
-  "track_clicks" field to true.
-
+> [!NOTE]
+> Regardless of the creative format, there are a few considerations:
+>
+> - In order to purchase real-time inventory, creatives must be opted into the audit process but setting "audit_status" to "pending" and setting "allow_audit" to "true".
+> - Once the audit for the creative is complete, the various audit status and feedback fields will be populated with critical information regarding the audit result. These fields are "audit_status", "audit_feedback", "google_audit_status", "google_audit_feedback","msft_audit_status", "msft_audit_feedback".
+> - The "content" and "original_content" fields serve slightly different purposes. The "content" field is what is actually served by the impression bus on an ad call and may contain escaped characters in order to be served properly. The "original_content" field is used by the UI for displaying and modifying the "content". For this reason, the values of the "content" and "original_content" fields may be slightly different.
+> - Every creative must be associated with a single advertiser. This is set via the "advertiser_id" parameter.
+> - In order to track clicks on a given creative, you must include the click URL macro ("${CLICK_URL}" or "${CLICK_URL_ENC}") and set the "track_clicks" field to true.
 
 ## HTML and JavaScript returned by a URL
 
-HTML or JavaScript returned by a URL ("format" values of "url-html" and
-"url-js", respectively) are relatively straight-forward formats to use
-for creatives. Generally, URLs do not contain characters that would
-normally conflict the JSON syntax. Registering creatives of this format
-is relatively straightforward. Please refer to the example below for the
-"url-html" format. The "url-js" format is very similar, so a single
-example is presented.
+HTML or JavaScript returned by a URL ("format" values of "url-html" and "url-js", respectively) are relatively straight-forward formats to use for creatives. Generally, URLs do not contain characters that would normally conflict the JSON syntax. Registering creatives of this format is relatively straightforward. Please refer to the example below for the "url-html" format. The "url-js" format is very similar, so a single example is presented.
 
-**Example**
+### Example for the "url-html" format
 
-Make a file containing JSON and add the correct values. Necessary fields
-include format, width, height, audit status and media URL.
+Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and media URL.
 
-``` pre
+```
 $cat creative
 {
   "creative": {
@@ -74,7 +44,7 @@ $cat creative
 
 Then to create the new creative, send a POST request to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnexus.com/creative?advertiser_id=1234'
 {
   "response":{
@@ -84,31 +54,18 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 }
 ```
 
+## Hosted Flash and images
 
+Hosted Flash and image formats ("format" values of "flash" and "image", respectively) are a bit more difficult to create via the API. The image for Flash file must be base-64 encoded and included in the "content" field. Once uploaded to the API, we will begin transferring this creative to our CDN (content delivery network). After the creative has been fully transferred to the CDN, the creative "content" will be changed to null and the "media_url" will be changed to point to the creative's location on the CDN. The "format" field will stay either "image" or "flash", depending on the original value. The example below shows how to upload an image creative. The image we use for the sample is located here: [https://dummyimage.com/300x250](https://dummyimage.com/300x250).
 
+### How to upload an image creative?
 
-## Hosted Flash and Images
+From the terminal, you can obtain the base-64 encoding for a file with the command below.
 
-Hosted Flash and image formats ("format" values of "flash" and "image",
-respectively) are a bit more difficult to create via the API. The image
-for Flash file must be base-64 encoded and included in the "content"
-field. Once uploaded to the API, we will begin transferring this
-creative to our CDN (content delivery network). After the creative has
-been fully transferred to the CDN, the creative "content" will be
-changed to null and the "media_url" will be changed to point to the
-creative's location on the CDN. The "format" field will stay either
-"image" or "flash", depending on the original value. The example below
-shows how to upload an image creative. The image we use for the sample
-is located here: <a href="http://dummyimage.com/300x250" class="xref"
-target="_blank">http://dummyimage.com/300x250</a>.
+> [!NOTE]
+> If the output of base64 contains text wrapping, the line returns will need to be removed.
 
-**Example**
-
-From the terminal, you can obtain the base-64 encoding for a file with
-the command below. Note that if the output of base64 contains text
-wrapping, the line returns will need to be removed.
-
-``` pre
+```
 $ base64 300x250.gif
 R0lGODdhLAH6AOMAAMzMzAAAAJmZmbKysjMzM39/f2ZmZkxMTBkZGQAAAAAAAAAAAAAAAAAA
 AAAAAAAAACwAAAAALAH6AAAE/hDISau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru987//A
@@ -146,18 +103,12 @@ uvWtcI2rXOdK17ra9a54zate98rXvvr1r4ANrGAHS9jCGvawiE2sYhfL2MY69rGQjaxkJ0vZ
 ylr2spjNrGY3y9nOevazoA2taEdL2tKa9rRbjQAAOw==
 ```
 
-Make a file containing JSON and add the correct values. Necessary fields
-include format, width, height, audit status and content
+Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and content.
 
+> [!NOTE]
+> Line returns and extra spaces have been included in the example below to improve readability. In practice, line returns are not valid in JSON syntax.
 
-
-<b>Note:</b> Line returns and extra spaces
-have been included in the example below to improve readability. In
-practice, line returns are not valid in JSON syntax.
-
-
-
-``` pre
+```
 $cat creative
 {
   "creative": {
@@ -208,7 +159,7 @@ $cat creative
 
 Then to create the new creative, send a POST request to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnexus.com/creative?advertiser_id=1234'
 {
    "response":{
@@ -218,29 +169,19 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 }
 ```
 
-
-
-
 ## Raw HTML and JavaScript
 
-Raw HTML and JavaScript  ("format" values of "raw-html" and "raw-js",
-respectively) can be complicated by certain characters within the HTML
-or JavaScript which will conflict with the JSON syntax. All special
-characters, double-quotes in particular, should be "escaped" (see
-<a href="http://en.wikipedia.org/wiki/Escape_character" class="xref"
-target="_blank">http://en.wikipedia.org/wiki/Escape_character</a>) with
-a backslash ("\\). The example below shows how to upload a simple HTML
-creative. Note that any line returns must be encoded as "\r\n" since
-including actual line returns results in invalid JSON syntax.
+Raw HTML and JavaScript  ("format" values of "raw-html" and "raw-js", respectively) can be complicated by certain characters within the HTML or JavaScript which will conflict with the JSON syntax. All special characters, double-quotes in particular, should be "escaped" (see
+[https://en.wikipedia.org/wiki/Escape_character](https://en.wikipedia.org/wiki/Escape_character)) with a backslash ("\\). The example below shows how to upload a simple HTML creative.
 
-**Example**
+> [!NOTE]
+> Any line returns must be encoded as "\r\n" since including actual line returns results in invalid JSON syntax.
 
-Make a file containing JSON and add the correct values. Necessary fields
-include format, width, height, audit status and content. Because of the
-way that we write our raw HTML creatives, the HTML must be wrapped in a
-JavaScript document.write() call.
+### How to upload a simple HTML creative?
 
-``` pre
+Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, and content. Because of the way that we write our raw HTML creatives, the HTML must be wrapped in a JavaScript document.write() call.
+
+```
 $cat creative
 {
   "creative": {
@@ -259,7 +200,7 @@ $cat creative
 
 Then to create the new creative, send a POST request to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnexus.com/creative?advertiser_id=1234'
 {
    "response":{
@@ -269,24 +210,16 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 }
 ```
 
-
-
-
 ## HTML in an IFRAME
 
-To create an HTML creative that is served in an IFRAME tag ("format"
-value of "iframe-html"), it is very similar to creating a raw HTML
-creative. The primary difference is that the HTML is **not** wrapped in
-a JavaScript document.write() call. The example below illustrates how to
-create and IFRAME HTML creative.
+To create an HTML creative that is served in an IFRAME tag ("format" value of "iframe-html"), it is very similar to creating a raw HTML
+creative. The primary difference is that the HTML is **not** wrapped in a JavaScript document.write() call. The example below illustrates how to create an IFRAME HTML creative.
 
-**Example**
+### How to create an IFRAME HTML creative?
 
-Make a file containing JSON and add the correct values. Necessary fields
-include format, width, height, audit status, content and original
-content.
+Make a file containing JSON and add the correct values. Necessary fields include format, width, height, audit status, content, and original content.
 
-``` pre
+```
 $cat creative
 {
   "creative": {
@@ -305,7 +238,7 @@ $cat creative
 
 Then to create the new creative, send a POST request to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnexus.com/creative?advertiser_id=1234'
 {
    "response":{
@@ -315,22 +248,21 @@ $ curl -b cookies -c cookies -X POST --data-binary @creative 'https://api.appnex
 }
 ```
 
+## Associate creatives with campaigns
 
+There are two methods for associating creatives and campaigns:
 
+1. Using the campaign service.
+1. Using the creative service.
 
-## Associate Creatives with Campaigns
+### Campaign service
 
-There are two methods for associating creatives and campaigns: using the
-campaign service and using the creative service:
+To associate multiple creatives to a single campaign, PUT a request to the campaign service, updating the "creatives" field. The example below illustrates the syntax.
 
-**Campaign Service**
+> [!NOTE]
+> The API call has been abbreviated for readability.
 
-To associate multiple creatives to a single campaign, PUT a request to
-the campaign service, updating the "creatives" field. The example below
-illustrates the syntax. Note that the API call has been abbreviated for
-readability.
-
-``` pre
+```
 $ cat campaign
 {
   "campaign": {
@@ -346,14 +278,15 @@ $ cat campaign
 }
 ```
 
-**Creative Service**
+### Creative service
 
-To associate a creative to multiple campaigns, PUT a request to the
-creative service, updating "campaigns" field. The example below
-illustrates the syntax. Note that the API call has been abbreviated for
-readability.
+To associate a creative to multiple campaigns, PUT a request to the creative service, updating "campaigns" field. The example below
+illustrates the syntax.
 
-``` pre
+> [!NOTE]
+> The API call has been abbreviated for readability.
+
+```
 $ cat creative
 {
   "creative": {
@@ -368,9 +301,3 @@ $ cat creative
   }
 }
 ```
-
-
-
-
-
-

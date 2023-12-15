@@ -1,46 +1,29 @@
 ---
-Title : Account Recovery Service
-Description : The Account Recovery Service allows you to reset your
+title: Account Recovery Service
+description: In this article, learn about the Account Recovery service and step-by-step instructions on how to reset your acoount password or retrieve your username.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Xandr password or retrieve your username.
 ---
 
+# Account Recovery service
 
-# Account Recovery Service
+The Account Recovery Service allows you to reset your Xandr password or retrieve your username.
 
+## Reset your password
 
+If you cannot log in to the API due to a forgotten password, follow the steps below to reset your password.
 
-The Account Recovery Service allows you to reset your
-Xandr password or retrieve your username.
+- [Step 1: Create a JSON-formatted file (password reset)](#step-1-create-a-json-formatted-file-password-reset)
+- [Step 2: POST the file (password reset)](#step-2-post-the-file-password-reset)
+- [Step 3: Check your email (password reset)](#step-3-check-your-email-password-reset)
+- [Step 4: Create a password and token file (password reset)](#step-4-create-a-password-and-token-file-password-reset)
+- [Step 5: PUT the file (password reset)](#step-5-put-the-file-password-reset)
 
-
-
-## Reset Your Password
-
-If you cannot log in to the API due to a forgotten password, follow the
-steps below to reset your password.
-
-- <a
-  href="account-recovery-service.md#ID-00000f66__create_json_formatted_file"
-  class="xref">Step 1. Create a JSON-formatted file (Password Reset)</a>
-- <a href="account-recovery-service.md#ID-00000f66__post_the_file"
-  class="xref">Step 2. POST the file (Password Reset)</a>
-- <a href="account-recovery-service.md#ID-00000f66__check_your_email"
-  class="xref">Step 3. Check your email (Password Reset)</a>
-- <a
-  href="account-recovery-service.md#ID-00000f66__create_password_token_json_formatted_file"
-  class="xref">Step 4. Create a password and token file (Password
-  Reset)</a>
-- <a
-  href="account-recovery-service.md#ID-00000f66__put_the_file_password_reset"
-  class="xref">Step 5. PUT the file (Password Reset)</a>
-
-**Step 1. Create a JSON-formatted file (Password Reset)**
+### Step 1: Create a JSON-formatted file (password reset)
 
 Include your username.
 
-``` pre
+```
 $ cat reset_password_1
 {
     "account-recovery": {
@@ -49,11 +32,11 @@ $ cat reset_password_1
 }
 ```
 
-**Step 2. POST the file (Password Reset)**
+### Step 2: POST the file (password reset)
 
 Post the file to the account recovery service.
 
-``` pre
+```
 $ curl -X POST -d @reset_password_1 'https://api.appnexus.com/account-recovery'
 {
     "response": {
@@ -65,29 +48,21 @@ $ curl -X POST -d @reset_password_1 'https://api.appnexus.com/account-recovery'
 }
 ```
 
-**Step 3. Check your email (Password Reset)**
+### Step 3: Check your email (password reset)
 
-The previous step triggers the system to send an email to the address
-associated with the username in the JSON-formatted file. The email
-includes the token that you will use in the next step. Note that the
-token is valid for 16 hours.
+The previous step triggers the system to send an email to the address associated with the username in the JSON-formatted file. The email
+includes the token that you will use in the next step.
 
+> [!NOTE]
+> The token is valid for 16 hours.
+>
+> If you don't receive an email, the username in the file may not be valid. Check the username for accuracy and try again. If you have forgotten your username, see [Retrieve your username](#retrieve-your-username) below.
 
+### Step 4: Create a password and token file (password reset)
 
-<b>Note:</b> If you don't receive an email,
-the username in the file may not be valid. Check the username for
-accuracy and try again. If you have forgotten your username, see <a
-href="account-recovery-service.md#ID-00000f66__retrieve_your_username"
-class="xref">Retrieve Your Username</a> below.
+Create a JSON-formatted file including your user name, your new password, and the token received in your email.
 
-
-
-**Step 4. Create a password and token file (Password Reset)**
-
-Create a JSON-formatted file including your user name, your new
-password, and the token received in your email.
-
-``` pre
+```
 $ cat reset_password_2
 {
     "account-recovery": {
@@ -98,28 +73,24 @@ $ cat reset_password_2
 }
 ```
 
-**Guidelines for creating your password**
+#### Guidelines for creating your password
 
-When creating your password, please create a complex password with the
-following:
+When creating your password, create a complex password with the following:
 
-- 10 or more characters
-- 64 or fewer characters
-- At least one capital letter (A–Z)
-- At least one lowercase letter (a–z)
-- At least one digit (0–9)
-- At least one special character (such as \#, $, ?, %, &)
+- 10 or more characters.
+- 64 or fewer characters.
+- At least one capital letter (A–Z).
+- At least one lowercase letter (a–z).
+- At least one digit (0–9).
+- At least one special character (such as \#, $, ?, %, &).
 
-**Step 5. PUT the file (Password Reset)**
+### Step 5: PUT the file (password reset)
 
 Put the file to the account recovery service.
 
-This resets your password and sends a confirmation email to the address
-associated with your username. Once you receive the confirmation email,
-you can log in to the API with your username and new password. See
-Authentication Service for guidance.
+This resets your password and sends a confirmation email to the address associated with your username. Once you receive the confirmation email, you can log in to the API with your username and new password. For guidance, see [Authentication Service](authentication-service.md).
 
-``` pre
+```
 $ curl -X PUT -d @reset_password_2 'https://api.appnexus.com/account-recovery'
 {
     "response": {
@@ -131,26 +102,15 @@ $ curl -X PUT -d @reset_password_2 'https://api.appnexus.com/account-recovery'
 }
 ```
 
+## Retrieve your username
 
+If you cannot log in to the API due to a forgotten username, follow the steps below to retrieve your username.
 
+- [Step 1: Create a JSON-formatted file (retrieve username)](#step-1-create-a-json-formatted-file-retrieve-username)
+- [Step 2: POST the file (retrieve username)](#step-2-post-the-file-retrieve-username)
+- [Step 3: Check your email (retrieve username)](#step-3-check-your-email-retrieve-username)
 
-## Retrieve Your Username
-
-If you cannot log in to the API due to a forgotten username, follow the
-steps below to retrieve your username.
-
-- <a
-  href="account-recovery-service.md#ID-00000f66__retrieve_username_create_json_formatted_file"
-  class="xref">Step 1. Create a JSON-formatted file (Retrieve
-  Username)</a>
-- <a
-  href="account-recovery-service.md#ID-00000f66__retrieve_username_post_file"
-  class="xref">Step 2. POST the file (Retrieve Username)</a>
-- <a
-  href="account-recovery-service.md#ID-00000f66__retrieve_username_check_your_email"
-  class="xref">Step 3. Check your email (Retrieve Username)</a>
-
-**Step 1. Create a JSON-formatted file (Retrieve Username)**
+### Step 1: Create a JSON-formatted file (retrieve username)
 
 Include your email address.
 
@@ -163,7 +123,7 @@ $ cat retrieve_username
     }
 ```
 
-**Step 2. POST the file (Retrieve Username)**
+### Step 2: POST the file (retrieve username)
 
 Post the file to the account recovery service.
 
@@ -179,35 +139,15 @@ $ curl -X POST -d @retrieve_username 'https://api.appnexus.com/account-recovery'
     }
 ```
 
-**Step 3. Check your email (Retrieve Username)**
+### Step 3: Check your email (retrieve username)
 
-The previous step triggers the system to send an email to the address
-specified in the file. The email includes the username(s) that are
-associated with the email address. Once you receive the email, you can
-log in to the API with your username and new password. See
-<a href="authentication-service.md" class="xref">Authentication
-Service</a> for guidance.
+The previous step triggers the system to send an email to the address specified in the file. The email includes the username(s) that are
+associated with the email address. Once you receive the email, you can log in to the API with your username and new password. For guidance, see [Authentication Service](authentication-service.md).
 
+> [!NOTE]
+> If you don't receive an email, the email address or host URL in the file may not be valid. Check the values for accuracy and try again.
 
+## Related topics
 
-<b>Note:</b> If you don't receive an email,
-the email address or host URL in the file may not be valid. Check the
-values for accuracy and try again.
-
-
-
-
-
-
-
-## Related Topics
-
-- <a href="authentication-service.md" class="xref">Authentication
-  Service</a>
-- <a href="user-service.md" class="xref">User Service</a>
-
-
-
-
-
-
+- [Authentication Service](authentication-service.md)
+- [User Service](user-service.md)

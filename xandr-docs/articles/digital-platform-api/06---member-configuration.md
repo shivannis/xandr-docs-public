@@ -1,36 +1,22 @@
 ---
-Title : 06 - Member Configuration
-Description : Prior to creating any objects via the API, it is best practice to fully
+title: 06 - Member Configuration
+description: In this article, learn about member configuration and explore detailed information about the various parameters configured at the member level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-configure the member first. The reason for this is that there are
 ---
 
+# 06 - Member configuration
 
-# 06 - Member Configuration
+Prior to creating any objects via the API, it is best practice to fully configure the member first. The reason for this is that there are
+defaults that can be specified on a member level which cascade to child objects under the member.
 
+There are a number of different parameters which can be configured at the member level:
 
+## No reselling priority
 
-Prior to creating any objects via the API, it is best practice to fully
-configure the member first. The reason for this is that there are
-defaults that can be specified on a member level which cascade to child
-objects under the member.
+This setting, stored in the "no_reselling_priority" parameter, specifies the priority at which managed impressions will never be resold. Put another way, if there is a campaign at or above this priority which is eligible to serve, it will always serve above any RTB campaigns from other buyers. Among managed campaigns of the same priority, the usual auction mechanics still apply. The sample JSON below shows how to set this parameter.
 
-There are a number of different parameters which can be configured at
-the member level:
-
-
-## No Reselling Priority
-
-This setting, stored in the "no_reselling_priority" parameter, specifies
-the priority at which managed impressions will never be resold. Put
-another way, if there is a campaign at or above this priority which is
-eligible to serve, it will always serve above any RTB campaigns from
-other buyers. Among managed campaigns of the same priority, the usual
-auction mechanics still apply. The sample JSON below shows how to set
-this parameter.
-
-``` pre
+```
 {
   "member": {
     "no_reselling_priority": 5
@@ -38,18 +24,17 @@ this parameter.
 }
 ```
 
+## Content categories
 
+This parameter, stored in the "content_categories" parameter, defines the list of custom content categories that can be used to categorize
+managed inventory.
 
+> [!NOTE]
+> These categories will not be targeted by other buyers.
 
-## Content Categories
+The sample JSON below shows how to set this parameter.
 
-This parameter, stored in the "content_categories" parameter, defines
-the list of custom content categories that can be used to categorize
-managed inventory. Please note that these categories will not be
-target-able by other buyers. The sample JSON below shows how to set this
-parameter.
-
-``` pre
+```
 {
   "member": {
     "content_categories": [
@@ -62,17 +47,11 @@ parameter.
   }
 ```
 
+## Standard sizes
 
+This setting, stored in the "standard_sizes" parameter, specifies the creative and placement sizes which are shown in. The sample JSON below shows how to set this parameter.
 
-
-## Standard Sizes
-
-This setting, stored in the "standard_sizes" parameter, specifies the
-creative and placement sizes which are shown in
-. The sample JSON below shows how to set this
-parameter.
-
-``` pre
+```
 {
   "member": {
     "standard_sizes": [
@@ -86,20 +65,11 @@ parameter.
   }
 ```
 
-
-
-
 ## Timezone
 
-This parameter, stored in the "timezone" field, defines the default
-timezone that will be applied to newly created objects unless otherwise
-specified at the time of their creation. For a list of valid timezone
-values, see <a
-href="api-timezones.md"
-class="xref" target="_blank">API Timezones</a>. The sample JSON below
-shows how to set this parameter.
+This parameter, stored in the "timezone" field, defines the default timezone that will be applied to newly created objects unless otherwise specified at the time of their creation. For a list of valid timezone values, see [API Timezones](api-timezones.md). The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "member": {
     "timezone": "EST5EDT"
@@ -107,18 +77,11 @@ shows how to set this parameter.
   }
 ```
 
-
-
-
 ## Dongle
 
-The dongle is used as a password for debugging auctions. This password
-is used on a placement call on the querystring prompting our platform to
-simulate an auction and display how we are bidding on that tag. It is
-useful for determining why a campaign is not bidding on certain
-inventory. The sample JSON below shows how to set this parameter.
+The dongle is used as a password for debugging auctions. This password is used on a placement call on the querystring prompting our platform to simulate an auction and display how we are bidding on that tag. It is useful for determining why a campaign is not bidding on certain inventory. The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "member": {
     "dongle": "keepitsecret"
@@ -126,52 +89,19 @@ inventory. The sample JSON below shows how to set this parameter.
   }
 ```
 
+## Platform exposure
 
+The platform exposure setting determines how your account is displayed to other members on the platform. There are three values which result in slightly different behaviors as outlined below:
 
-
-## Platform Exposure
-
-The platform exposure setting determines how your account is displayed
-to other members on the platform. There are three values which result in
-slightly different behaviors as outlined below:
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000007bd__section_qnq_hkh_rwb__entry__1"
-class="entry colsep-1 rowsep-1">Platform Exposure Value</th>
-<th id="ID-000007bd__section_qnq_hkh_rwb__entry__2"
-class="entry colsep-1 rowsep-1">Behavior</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__1">public</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__2">Member is displayed
-using the billing name.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__1">private</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__2">Member is displayed
-as "Member 123" where 123 is the member ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__1">hidden</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000007bd__section_qnq_hkh_rwb__entry__2">Member is not
-displayed.</td>
-</tr>
-</tbody>
-</table>
+| Platform Exposure Value | Behavior |
+|:---|:---|
+| public | Member is displayed using the billing name. |
+| private | Member is displayed as "Member 123" where 123 is the member ID. |
+| hidden | Member is not displayed. |
 
 The sample JSON below shows how to set this parameter.
 
-``` pre
+```
 {
   "member": {
     "platform_exposure": "public"
@@ -179,16 +109,11 @@ The sample JSON below shows how to set this parameter.
 }
 ```
 
+## Default currency
 
+The default currency, like the timezone, is applied to advertisers and line items unless otherwise specified when creating those objects. The sample JSON below shows how to set this parameter.
 
-
-## Default Currency
-
-The default currency, like the timezone, is applied to advertisers and
-line items unless otherwise specified when creating those objects. The
-sample JSON below shows how to set this parameter.
-
-``` pre
+```
 {
   "member": {
     "default_currency": "USD"
@@ -196,18 +121,12 @@ sample JSON below shows how to set this parameter.
   }
 ```
 
-
-
-
 ## Use Insertion Orders
 
-This setting, stored in the "use_insertion_orders" parameter, specifies
-whether or not insertion orders should be used on all advertisers within
-the account. This setting is also available on an
-advertiser-by-advertiser basis. The sample JSON below shows how to set
+This setting, stored in the "use_insertion_orders" parameter, specifies whether or not insertion orders should be used on all advertisers within the account. This setting is also available on an advertiser-by-advertiser basis. The sample JSON below shows how to set
 this parameter.
 
-``` pre
+```
 {
   "member": {
     "use_insertion_orders": false
@@ -215,15 +134,11 @@ this parameter.
   }
 ```
 
+## Summary example
 
+Below is a summary of the JSON samples above into a single member object. For this example, the member specification is in a text file.
 
-
-## Summary Example
-
-Below is a summary of the JSON samples above into a single member
-object. For this example, the member specification is in a text file.
-
-``` pre
+```
 $cat member
 {
   "member": {
@@ -250,10 +165,9 @@ $cat member
 }
 ```
 
-In order to make the modifications, you should PUT the member
-specification to the API.
+In order to make the modifications, you should PUT the member specification to the API.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X PUT --data-binary @member 'https://api.appnexus.com/member?id=123'
 {
    "response":{
@@ -263,10 +177,9 @@ $ curl -b cookies -c cookies -X PUT --data-binary @member 'https://api.appnexus.
 }
 ```
 
-To verify that the changes were made, you can pull down the member from
-the API using a GET request.
+To verify that the changes were made, you can pull down the member from the API using a GET request.
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/member?id=123'
 {
   "response": {
@@ -378,9 +291,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/member?id=123'
   }
 }
 ```
-
-
-
-
-
-
