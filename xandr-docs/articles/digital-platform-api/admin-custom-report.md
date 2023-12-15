@@ -1,131 +1,36 @@
 ---
-Title : Admin Custom Report
-Description : Xandr admins can use this report to run custom
+title: Admin Custom Report
+description: Use the admin custom report to run custom queries against the internal reporting cluster.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-queries against the internal Reporting cluster. Please use with caution,
 ---
 
+# Admin custom report
 
-# Admin Custom Report
-
-
-
-Xandr admins can use this report to run custom
-queries against the internal Reporting cluster. Please use with caution,
-i.e., avoid running heavy queries.
-
-
+Xandr admins can use this report to run custom queries against the internal Reporting cluster. Please use with caution, i.e., avoid running heavy queries.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.com/report<br><br>(report JSON) | Retrieve the report |
 
+> [!NOTE]
+> See the [example](#example) below for the complete procedure.
 
-<table id="ID-0000089c__table_tp1_2cj_pwb" class="table frame-all"
-style="width:100%;">
-<colgroup>
-<col style="width: 27%" />
-<col style="width: 39%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000089c__table_tp1_2cj_pwb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="ID-0000089c__table_tp1_2cj_pwb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000089c__table_tp1_2cj_pwb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__table_tp1_2cj_pwb__entry__1"><code
-class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__table_tp1_2cj_pwb__entry__2"><a
-href="https://api..com/report" class="xref"
-target="_blank">https://api..com/report</a><br />
-&#10;<p>(report JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__table_tp1_2cj_pwb__entry__3">Retrieve the
-report</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
-
-
-
-
-<b>Note:</b> See the example below for the
-complete procedure.
-
-
-
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000089c__entry__7"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000089c__entry__8" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000089c__entry__9"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__7"><code
-class="ph codeph">report_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__8">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000089c__entry__9">The
-type of report. Possible value: "admin_backdoor".
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__7"><code class="ph codeph">sql</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__8">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000089c__entry__9">The
-sql query. Please specify a where clause / date range as filter, only
-select needed fields, etc. See the example below.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__7"><code
-class="ph codeph">hostname</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000089c__entry__8">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000089c__entry__9">The
-name of the database. Possible value: "vt_jayz_internal" (Vertica Jayz).
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `report_type` | enum | The type of report. Possible value: `"admin_backdoor"`.<br>**Required On**: `POST` |
+| `sql` | string | The sql query. Please specify a where clause / date range as filter, only select needed fields, etc. See the [example](#example) below.<br>**Required On**: `POST` |
+| `hostname` | enum | The name of the database. Possible value: `"vt_jayz_internal"` (Vertica Jayz).<br>**Required On**: `POST` |
 
 ## Example
 
-1.  **Create the JSON-formatted report request**
+1. **Create the JSON-formatted report request**
 
-    ``` pre
+    ```
     $ cat admin_custom_report
                    {
                    "report": {
@@ -136,9 +41,9 @@ class="ph codeph">POST</code></p></td>
                    }
     ```
 
-2.  **POST the request to the Reporting Service**
+1. **`POST` the request to the reporting service**
 
-    ``` pre
+    ```
     $ curl -b cookies -c cookies -X POST -d @admin_custom_report 'https://api..com/report'
                    {
                    "response": {
@@ -146,7 +51,7 @@ class="ph codeph">POST</code></p></td>
                    "report_id": "f83b50a62b9c2ba2b204ab073b4b8efb",
                    "dbg_info": {
                    "instance": "16.hbapi.prod.nym1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "reads": 0,
                    "read_limit": 100,
@@ -165,14 +70,11 @@ class="ph codeph">POST</code></p></td>
                    }
     ```
 
-3.  **Use the Report ID to retrieve the report data**
+1. **Use the report ID to retrieve the report data**
 
-    The standard response includes the report data and a Download URL
-    that you can us to save the data to a file. If you want to get just
-    the Download URL without the report data, pass "without_data" in the
-    query string.
+    The standard response includes the report data and a Download URL that you can us to save the data to a file. If you want to get just the Download URL without the report data, pass `"without_data"` in the query string.
 
-    ``` pre
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=f83b50a62b9c2ba2b204ab073b4b8efb'
                    {
                    "response": {
@@ -195,7 +97,7 @@ class="ph codeph">POST</code></p></td>
                    "execution_status": "ready",
                    "dbg_info": {
                    "instance": "16.hbapi.prod.nym1",
-                   "slave_hit": false,
+                   "s1ave_hit": false,
                    "db": "master",
                    "reads": 1,
                    "read_limit": 100,
@@ -211,19 +113,10 @@ class="ph codeph">POST</code></p></td>
                    }
     ```
 
-4.  **Use the Download URL to save the report data to a file**
+1. **Use the Download URL to save the report data to a file**
 
-    You use the "url" field in the response to save the report data to a
-    file. Simply make another `GET` call and identify the location and
-    file that you want to save to. Be sure to use the file the extension
-    of the "format" that you specified in your initial `POST` request.
+    You use the `"url"` field in the response to save the report data to a file. Simply make another `GET` call and identify the location and file that you want to save to. Be sure to use the file the extension of the `"format"` that you specified in your initial `POST` request.
 
-    ``` pre
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=495d03a7667bac467bb488043ae336e9' > /tmp/admin_report.csv
     ```
-
-
-
-
-
-

@@ -1,360 +1,55 @@
 ---
-Title : Add a Microsoft Outlook Creative via the API
-Description : Microsoft Outlook creatives show up in the right-hand sidebar of the
+title: Add a Microsoft Outlook Creative via the API
+description: This article provides specifications for Outlook creatives and shows you how to add them to the system via the creative service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-free Outlook.com webmail service after a user securely logs in. This
 ---
 
+# Add a Microsoft Outlook creative via the API
 
-# Add a Microsoft Outlook Creative via the API
+Microsoft Outlook creatives show up in the right-hand sidebar of the free [outlook.com](https://www.microsoft.com/) webmail service after a user securely logs in. This page provides specifications for Outlook creatives and shows you how to add them to our system via the [Creative Service](./creative-service.md).
 
-
-
-Microsoft Outlook creatives show up in the right-hand sidebar of the
-free Outlook.com webmail service after a user securely logs in. This
-page provides specifications for Outlook creatives and shows you how to
-add them to our system via the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>. 
-
-
-
-<b>Note:</b> Outlook creatives must pass our
-SSL audit and the Microsoft Creative Acceptance Policy audit.
-
-
-
-
+> [!NOTE]
+> Outlook creatives must pass our SSL audit and the Microsoft Creative Acceptance Policy audit.
 
 ## Specifications
 
-This section defines the fields of the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> that are required for
-Outlook creatives. These fields must be passed in the JSON object on
-POST. See <a
-href="add-a-microsoft-outlook-creative-via-the-api.md#ID-00001017__11"
-class="xref">Step 1</a> below for formatting details.
+This section defines the fields of the [Creative Service](./creative-service.md) that are required for Outlook creatives. These fields must be passed in the JSON object on POST. See [Step 1](#step-1-create-a-json-file-with-your-creative-details) below for formatting details.
 
-![Specifications](media/specifications.png)
+:::image type="content" source="./media/specifications.png" alt-text="Screenshot showing the required fields for Outlook creatives.":::
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001017__1__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001017__1__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001017__1__entry__3"
-class="entry colsep-1 rowsep-1">Required?</th>
-<th id="ID-00001017__1__entry__4"
-class="entry colsep-1 rowsep-1">Description/Requirements</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">secure_content</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes, if adding a hosted creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4"><strong>For hosted
-creatives:</strong> The image for the <u>secure</u> Outlook creative.
-Clicking on the image takes the user to the Landing Page URL.
-<ul>
-<li>File must be in one of the following formats: JPG, PNG, GIF.</li>
-<li>File must be base64-encoded.</li>
-<li>Image must be 100x72 pixels (see <code
-class="ph codeph">width</code> and <code class="ph codeph">height</code>
-below). If the image is any other dimension, it will be scaled
-proportionally when rendered to fit within 100x72.</li>
-<li>Must not be flash.</li>
-<li>Must not include any animation.</li>
-<li>Initial load size must be less than 40 KB.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">content</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes, if adding a hosted creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4"><strong>For hosted
-creatives:</strong> The image for the <u>non-secure</u> Outlook
-creative. Although only the secure image will get served to Outlook.com
-inventory, you are required to add a non-secure version as well.
-<ul>
-<li>File must be in one of the following formats: JPG, PNG, GIF.</li>
-<li>File must be base64-encoded.</li>
-<li>Image must be 100x72 pixels (see <code
-class="ph codeph">width</code> and <code class="ph codeph">height</code>
-below). If the image is any other dimension, it will be scaled
-proportionally when rendered to fit within 100x72.</li>
-<li>Must not be flash.</li>
-<li>Must not include any animation.</li>
-<li>Initial load size must be less than 40 KB.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">media_url_secure</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes, if adding a third-party
-creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4"><strong>For third-party
-creatives:</strong> The URL of image for the <u>secure</u> Outlook
-creative.
-<ul>
-<li>URL must be secure (https).</li>
-<li>File must be in one of the following formats: JPG, PNG, GIF.</li>
-<li>Image must be 100x72 pixels (see <code
-class="ph codeph">width</code> and <code class="ph codeph">height</code>
-below). If the image is any other dimension, it will be scaled
-proportionally when rendered to fit within 100x72.</li>
-<li>Must not be flash.</li>
-<li>Must not include any animation.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">media_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes, if adding a third-party
-creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4"><strong>For third-party
-creatives:</strong> The URL of image for the non-secure Outlook
-creative.
-<ul>
-<li>File must be in one of the following formats: JPG, PNG, GIF.</li>
-<li>Image must be 100x72 pixels (see <code
-class="ph codeph">width</code> and <code class="ph codeph">height</code>
-below). If the image is any other dimension, it will be scaled
-proportionally when rendered to fit within 100x72.</li>
-<li>Must not be flash.</li>
-<li>Must not include any animation.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">The width of the image for the
-Outlook creative.
-<ul>
-<li>Width must be 100 pixels. Even if the actual image is not 100x72,
-you still must set this field to 100 to serve properly.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">The height of the image for the
-Outlook creative. 
-<ul>
-<li>Height must be 72 pixels. Even if the actual image is not 100x72,
-you still must set this field to 72 to serve properly.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><code
-class="ph codeph">file_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes, if adding a hosted
-creatives</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4"><strong>For hosted
-creatives:</strong> The name of the image file and the file extension
-(.jpg, .png, or .gif).
-<ul>
-<li>Filename can be a maximum of 1000 characters.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><pre
-class="pre codeblock"><code>click_url</code></pre></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">The URL where users will be
-redirected when they click the Outlook ad.
-<ul>
-<li>URL can be a maximum of 1024 characters.</li>
-<li>URL must begin with "http://" or "https://".</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><pre
-class="pre codeblock"><code>template</code></pre></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">The Xandr
-rendering template for Outlook creatives.
-<ul>
-<li>The <code class="ph codeph">id</code> field in this object must be
-set to <strong>3033</strong> (Outlook.com versaTiles One-Tile).</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><pre
-class="pre codeblock"><code>allow_ssl_audit</code></pre></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">Whether or not the creative will be
-submitted to our secure audit as well as Microsoft Creative Acceptance
-Policy audit.  
-<ul>
-<li>This must be set to <code class="ph codeph">true</code> because
-Outlook creatives must pass both our SSL and Microsoft Acceptance Policy
-audits in order to serve on Outlook.com inventory, which is secure.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__1"><pre
-class="pre codeblock"><code>custom_macros</code></pre></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__3">Yes (some parts are optional)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001017__1__entry__4">The headline, description, flex tile
-label, and impression tracking pixels for the Outlook creative. The
-headline and description are required, whereas the flex tile label and
-impression tracking pixels are optional.
-<p>The <code class="ph codeph">HEADLINE</code> macro defines the text
-that displays above the image. Requirements:</p>
-<ul>
-<li>Maximum of 25 characters including spaces.</li>
-<li>Must not contain newline characters.</li>
-<li>Must not include 2 consecutive punctuation marks. </li>
-<li>Must not consist entirely of capital letters.</li>
-<li>Must not start with punctuation.</li>
-<li>Must not include double spaces.</li>
-<li>Must not include more than 2 consecutive 1 character words.</li>
-<li>Must not include special characters like &lt; &gt; * \ ^ ~ _ = { } [
-] | &lt; &gt;.</li>
-</ul>
-<p>The <code class="ph codeph">DESCRIPTION</code> macro defines the text
-that displays under the image. Requirements:</p>
-<ul>
-<li>Maximum of 90 characters including spaces, with no word having more
-than 20 characters.</li>
-<li>Must not include 2 consecutive punctuation marks. </li>
-<li>Must not consist entirely of capital letters.</li>
-<li>Must not start with punctuation.</li>
-<li>Must not include double spaces.</li>
-<li>Must not include more than 2 consecutive 1 character words.</li>
-<li>Must not include special characters like &lt; &gt; * \ ^ ~ _ = { } [
-] | &lt; &gt;</li>
-</ul>
-<p>The <code class="ph codeph">FLEX_LABEL</code> defines the optional,
-additional description for the Outlook creative. Requirement:</p>
-<ul>
-<li>Maximum of 20 characters.</li>
-</ul>
-<p>Using <code class="ph codeph">PIXEL_URL</code> and <code
-class="ph codeph">PIXEL_URL2</code> macros, you can add two third-party
-impression tracking pixels to an Outlook creative for recording
-impressions in an external system. You must be sure to use these macros
-instead of the <code class="ph codeph">pixels</code> array.
-Requirements:</p>
-<ul>
-<li>Final destination URL of each pixel must be secure (https) and
-contain a valid SSL/TLS certificate.</li>
-<li>URL of each pixel must not be more than 1024 characters.<br />
-<br />
-</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Required? | Description/Requirements |
+|:---|:---|:---|:---|
+| `secure_content` | string | Yes, if adding a hosted creative | **For hosted creatives**: The image for the secure Outlook creative. Clicking on the image takes the user to the Landing Page URL.<br> - File must be in one of the following formats: JPG, PNG, GIF.<br> - File must be base64-encoded.<br> - Image must be 100x72 pixels (see `width` and `height` below). If the image is any other dimension, it will be scaled proportionally when rendered to fit within 100x72.<br> - Must not be flash.<br> - Must not include any animation.<br> - Initial load size must be less than 40 KB. |
+| `content` | string | Yes, if adding a hosted creative | **For hosted creatives**: The image for the *non-secure* Outlook creative. Although only the secure image will get served to [outlook.com](https://www.microsoft.com/) inventory, you are required to add a non-secure version as well.<br> - File must be in one of the following formats: JPG, PNG, GIF.<br> - File must be base64-encoded.<br> - Image must be 100x72 pixels (see `width` and `height` below). If the image is any other dimension, it will be scaled proportionally when rendered to fit within 100x72.<br> - Must not be flash.<br> - Must not include any animation.<br> - Initial load size must be less than 40 KB. |
+| `media_url_secure` | string | Yes, if adding a third-party creative | **For third-party creatives**: The URL of image for the secure Outlook creative.<br> - URL must be secure (https).<br> - File must be in one of the following formats: JPG, PNG, GIF.<br> - Image must be 100x72 pixels (see `width` and `height` below). If the image is any other dimension, it will be scaled proportionally when rendered to fit within 100x72.<br> - Must not be flash.<br> - Must not include any animation. |
+| `media_url` | string | Yes, if adding a third-party creative | **For third-party creatives**: The URL of image for the non-secure Outlook creative.<br> - File must be in one of the following formats: JPG, PNG, GIF.<br> - Image must be 100x72 pixels (see `width` and `height` below). If the image is any other dimension, it will be scaled proportionally when rendered to fit within 100x72.<br> - Must not be flash.<br> - Must not include any animation. |
+|`width` | int | Yes | The width of the image for the Outlook creative.<br><br>Width must be 100 pixels. Even if the actual image is not 100x72, you still must set this field to 100 to serve properly. |
+| `height` | int | Yes | The height of the image for the Outlook creative. <br><br>Height must be 72 pixels. Even if the actual image is not 100x72, you still must set this field to 72 to serve properly. |
+| `file_name` | string | Yes, if adding a hosted creatives | **For hosted creatives**: The name of the image file and the file extension (.jpg, .png, or .gif).<br><br> Filename can be a maximum of 1000 characters. |
+| `click_url` | string | Yes | The URL where users will be redirected when they click the Outlook ad.<br> - URL can be a maximum of 1024 characters.<br> - URL must begin with "http://" or "https://". |
+| `template` | object | Yes | The Xandr rendering template for Outlook creatives.<br><br> The `id` field in this object must be set to `3033` ([outlook.com](https://www.microsoft.com/) versaTiles One-Tile). |
+| `allow_ssl_audit` | boolean | Yes | Whether or not the creative will be submitted to our secure audit as well as Microsoft Creative Acceptance Policy audit.<br><br> This must be set to `true` because Outlook creatives must pass both our SSL and Microsoft Acceptance Policy audits in order to serve on [outlook.com](https://www.microsoft.com/) inventory, which is secure. |
+| `custom_macros` | array of objects | Yes (some parts are optional) | The headline, description, flex tile label, and impression tracking pixels for the Outlook creative. The headline and description are required, whereas the flex tile label and impression tracking pixels are optional.<br><br>The `HEADLINE` macro defines the text that displays above the image. <br><br>Requirements:<br> - Maximum of 25 characters including spaces.<br>Must not contain newline characters.<br> - Must not include 2 consecutive punctuation marks. <br>Must not consist entirely of capital letters.<br> - Must not start with punctuation.<br>Must not include double spaces.<br> - Must not include more than 2 consecutive 1 character words.<br> - Must not include special characters like < > * \ ^ ~ _ = { } [ ] \| < >.<br><br>The `DESCRIPTION` macro defines the text that displays under the image. <br><br>Requirements:<br> - Maximum of 90 characters including spaces, with no word having more than 20 characters.<br> - Must not include 2 consecutive punctuation marks. <br> - Must not consist entirely of capital letters.<br> - Must not start with punctuation.<br> - Must not include double spaces.<br> - Must not include more than 2 consecutive 1 character words.<br>Must not include special characters like < > * \ ^ ~ _ = { } [ ] \| < ><br><br>The `FLEX_LABEL` defines the optional, additional description for the Outlook creative. Requirement:<br> - Maximum of 20 characters.<br> - Using `PIXEL_URL` and `PIXEL_URL2` macros, you can add two third-party impression tracking pixels to an Outlook creative for recording impressions in an external system. You must be sure to use these macros instead of the `pixels` array.<br><br> Requirements:<br> - Final destination URL of each pixel must be secure (https) and contain a valid SSL/TLS certificate.<br> - URL of each pixel must not be more than 1024 characters. |
 
+## Auditing requirements
 
+- [SSL Audit](#ssl-audit)
+- [Microsoft Creative Acceptance Policy Audit](#microsoft-creative-acceptance-policy-audit)
 
+### SSL audit
 
-## Auditing Requirements
+Since [outlook.com](https://www.microsoft.com/) consists of secure inventory, Outlook creatives must pass our SSL audit in order to serve. When you add an Outlook creative to Xandr, opt into secure audit by setting `allow_ssl_audit` to `true`. For details about checking the state of the secure audit, see [Check the Audit Status of an Outlook Creative](#check-the-audit-status-of-the-outlook-creative).
 
+### Microsoft creative acceptance policy audit
 
-
-- <a
-  href="add-a-microsoft-outlook-creative-via-the-api.md#ID-00001017__100"
-  class="xref">SSL Audit</a>
-- <a
-  href="add-a-microsoft-outlook-creative-via-the-api.md#ID-00001017__101"
-  class="xref">Microsoft Creative Acceptance Policy Audit</a>
-
-
-
-**SSL Audit**
-
-Since Outlook.com consists of secure inventory, Outlook creatives must
-pass our SSL audit in order to serve. When you add an Outlook creative
-to Xandr, opt into secure audit by setting
-`allow_ssl_audit` to `true`. For details about checking the state of the
-secure audit, see Check the Audit Status of an Outlook Creative.
-
-**Microsoft Creative Acceptance Policy Audit **
-
-All creatives serving on Outlook.com inventory must pass our platform
-audit and the Microsoft Creative Acceptance Policy audit, for which
-Xandr charges a standard audit fee. When you
-submit an Outlook creative to Xandr's secure
-audit, the creative is submitted to the Microsoft Creative Acceptance
-Policy audit by default. There's no additional option to set. For
-details about checking the state of the Microsoft audit, see Check the
-Audit Status of an Outlook Creative.
-
-
-
+All creatives serving on [outlook.com](https://www.microsoft.com/) inventory must pass our platform audit and the Microsoft Creative Acceptance Policy audit, for which Xandr charges a standard audit fee. When you submit an Outlook creative to Xandr's secure audit, the creative is submitted to the Microsoft Creative Acceptance Policy audit by default. There's no additional option to set. For details about checking the state of the Microsoft audit, see [Check the Audit Status of an Outlook Creative](#check-the-audit-status-of-the-outlook-creative).
 
 ## Step 1. Create a JSON file with your creative details
 
-For details about the fields to include in your JSON, see <a
-href="add-a-microsoft-outlook-creative-via-the-api.md#ID-00001017__98"
-class="xref">Specifications</a> above. Note that this example is for
-adding an Outlook creative hosted by a third-party. 
+For details about the fields to include in your JSON, see [Specifications](#specifications) above. Note that this example is for adding an Outlook creative hosted by a third-party.
 
-``` pre
+```
 $ cat outlook_creative
 {
    "creative": {
@@ -395,12 +90,9 @@ $ cat outlook_creative
 }
 ```
 
+## Step 2. `POST` the JSON file to the creative service
 
-
-
-## Step 2. Post the JSON file to the Creative Service
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @outlook_creative 'https://api.appnexus.com/creative?advertiser_id=52408'
 {
     "response": {
@@ -540,41 +232,17 @@ $ curl -b cookies -c cookies -X POST -d @outlook_creative 'https://api.appnexus.
 }
 ```
 
+## Next steps
 
+### Check the audit status of the Outlook creative
 
+Once you've added an Outlook creative to our system, you can check where it is in the Xandr's Secure Platform and Microsoft Acceptance Policy audits. For more details, see [Check the Audit Status of an Outlook creative](check-the-audit-status-of-an-outlook-creative-via-the-api.md).
 
-## Next Steps
+### Create an Outlook campaign
 
-**Check the Audit Status of the Outlook Creative**
+You can use the Campaign Service and the Profile Service to set up a campaign that targets [outlook.com](https://www.microsoft.com/) inventory. For more details, see [Create an Outlook Campaign via the API](./create-an-outlook-campaign-via-the-api.md).
 
-Once you've added an Outlook creative to our system, you can check where
-it is in the Xandr's Secure Platform and
-Microsoft Acceptance Policy audits. For more details, see <a
-href="check-the-audit-status-of-an-outlook-creative-via-the-api.md"
-class="xref" target="_blank">Check the Audit Status of an Outlook
-Creative</a>.
+## Related topics
 
-**Create an Outlook Campaign**
-
-You can use the Campaign Service and the Profile Service to set up a
-campaign that targets Outlook.com inventory. For more details, see <a
-href="create-an-outlook-campaign-via-the-api.md"
-class="xref" target="_blank">Create an Outlook Campaign via the API</a>
-.
-
-
-
-
-## Related Topics
-
-<a href="buying-microsoft-outlook-com-inventory.md"
-class="xref">Buying Microsoft Outlook.com Inventory</a>
-
-<a href="create-an-outlook-campaign-via-the-api.md"
-class="xref">Create an Outlook Campaign via the API</a>
-
-
-
-
-
-
+- [Buying Microsoft Outlook.com Inventory](./buying-microsoft-outlook-com-inventory.md)
+- [Create an Outlook Campaign via the API](./create-an-outlook-campaign-via-the-api.md)
