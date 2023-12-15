@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 
-To serve on our platform, all creatives must adhere to our creative guidelines and specifications, creative standards, and other guidelines that apply to all creative types. For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md), [Creative CTV Guidelines and Specifications](creative-ctv-guidelines-and-specifications.md.), and [Creative Standards](creative-standards.md).
+To serve on our platform, all creatives must adhere to our creative guidelines and specifications, creative standards, and other guidelines that apply to all creative types. For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md), [Creative CTV Guidelines and Specifications](creative-ctv-guidelines-and-specifications.md), and [Creative Standards](creative-standards.md).
 
 > [!NOTE]
 > When uploading in the UI, the total size of any hosted banner and video creatives should not exceed 1 GB. The current maximum size for creatives that can be uploaded through the API is approximately 220 MB. It is advisable to use the UI to upload creatives, particularly videos.

@@ -45,6 +45,6 @@ You can set the name, state, and ad type, as well as associate additional insert
 
 ## Related topics
 
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md.)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Creative Types](creative-types.md)
 - [Peer Approval](peer-approval.md)

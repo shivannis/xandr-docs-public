@@ -102,4 +102,4 @@ You can associate one or more insertion orders to the programmatic guaranteed li
 
 ## Related topic
 
-[Create a Programmatic Guaranteed Deal](create-a-programmatic-guaranteed-selling-line-item.md.)
+[Create a Programmatic Guaranteed Deal](create-a-programmatic-guaranteed-selling-line-item.md)

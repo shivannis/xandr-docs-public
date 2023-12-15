@@ -29,7 +29,7 @@ From the **Line Items** screen, mouse over the line item to which you want to ad
 You can also add a performance goal to a new line item during initial line item setup by clicking **+New** on the **Line Items** screen.
 
 > [!TIP]
-> To learn more about setting up a line item from start to finish, including performance goals, see [Create a Standard Line Item](create-a-standard-line-item.md.).
+> To learn more about setting up a line item from start to finish, including performance goals, see [Create a Standard Line Item](create-a-standard-line-item.md).
 
 ## Step 2. Set the goal type
 
@@ -70,8 +70,8 @@ When you have finished setting the performance goal for the line item, click the
 
 ## Related topics
 
-- [Create a Standard Line Item](create-a-standard-line-item.md.)
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md.)
+- [Create a Standard Line Item](create-a-standard-line-item.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Explore Line Items](explore-line-items.md)
 - [View Line Item Details](view-line-item-details.md)
 - [Understanding Performance Goals](understanding-performance-goals.md)
