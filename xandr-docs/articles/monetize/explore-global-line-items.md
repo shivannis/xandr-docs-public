@@ -1,11 +1,11 @@
 ---
-title: Monetize - Explore Global Line Items
+title: Explore Global Line Items
 description: The article introduces the Global Line Item Management screen, which presents essential metrics for all line items across network advertisers. It notifies users of conditions affecting line item serving, enables quick access to details and child campaigns for each line item, and provides options for bulk editing and reporting.
 ms.date: 10/28/2023
 ---
 
 
-# Monetize - Explore global line items
+# Explore global line items
 
 The Global Line Item Management screen shows you essential metrics about all line items across all advertisers within your network, informs you of conditions preventing line items from serving, provides quick access to each line item's details and child campaigns, and offers bulk editing and reporting options.
 
@@ -82,7 +82,7 @@ The available filters are:
 
       Once you choose a filter, a **Filters** panel appears at the top of the page displaying all filters in each group that you have selected. Note that the filters aren't applied dynamically as you select them, they're simply added to the **Filters** list. You must click Apply All to apply the selected filters. You can quickly remove a filter by clicking the X next to the filter name, or remove all filters by clicking **Remove All**.
 
-:::image type="content" source="media/gdlifilter.png" alt-text="Screenshot that explains the status of the filters as reserved and scheduled.":::
+:::image type="content" source="media/gdali-filter.png" alt-text="Screenshot that explains the status of the filters as reserved and scheduled.":::
 
 ## Save views
 
@@ -203,7 +203,7 @@ The following data is available for each line item. Note that the data always re
 | **Start Date** | The date the line item starts. All campaigns within this line item must have date that fall within the line item start and end dates. |
 | **End Date** | The date the line item ends. All campaigns within the line item must end by this date. |
 | **Expected Delivery** | Impression total that this line item is expected to deliver, based on actual historical delivery and forecasted remaining delivery<br>If the projected delivery is greater than the Lifetime Budget impressions for the line item, this value will be the number of lifetime budgeted impressions.<br>If projected delivery is less than or equal to the Lifetime Budget impressions, **Likely to Underdeliver** will be displayed in parentheses under the number of impressions.<br>Note that this number will refer to the number of viewable impressions if the line item has the vCPM revenue type. |
-| **Issues** | This field presents you with a graphical representation of possible delivery issues with the line item. Issues represented in this column will be related to the **State** of the line item, the **Flight** dates, issues with a Creative, or issues related to **Targeting**. Hover over the issues to see a detailed listing.<br><br>:::image type="content" source="media/issues.png" alt-text="Screenshot that explains the issues when you Hover over the issues to see a detailed listing.":::.<br><br>The issues are color-coded according to the type of issue (State, Flight, Creative, or Targeting). One issue will be described below the color bar, along with the number of additional issues that exist. All issues will be outlined in the **Issues** box when you hover over the field. See [Issue Types](explore-global-line-items.md#issues) below for a list of possible issues that can be displayed and further description. |
+| **Issues** | This field presents you with a graphical representation of possible delivery issues with the line item. Issues represented in this column will be related to the **State** of the line item, the **Flight** dates, issues with a Creative, or issues related to **Targeting**. Hover over the issues to see a detailed listing.<br><br>:::image type="content" source="media/issues.png" alt-text="Screenshot that explains the issues when you Hover over the issues to see a detailed listing.":::.<br><br>The issues are color-coded according to the type of issue (State, Flight, Creative, or Targeting). One issue will be described below the color bar, along with the number of additional issues that exist. All issues will be outlined in the **Issues** box when you hover over the field. See [Issue Types](explore-global-line-items.md#issue-types) below for a list of possible issues that can be displayed and further description. |
 |**Pulse** | This field aggregates impression, clicks, and revenue in real time to help determine pacing of ad spend. This value is updated approximately every minute. The data is reset at midnight in the line item's time zone. |
 | **Imps** | Number of impressions for the line item (and any campaigns under the line item) during the selected time period. |
 | Pace to Date | This column displays current delivery pacing and expected delivery for the line item. See "Understanding Pacing Bars" below for details on the pacing information in this column. |

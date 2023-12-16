@@ -1,5 +1,5 @@
 ---
-ttle: Monetize - Edit Seller Defaults
+title: Monetize - Edit Seller Defaults
 description: The artcle helps you to set the eligibility and inventory trust for sellers.
 ms.date: 10/28/2023
 ---

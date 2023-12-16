@@ -1,11 +1,11 @@
 ---
-title: Engagement Metrics Report
+title: Monetize - Engagement Metrics Report
 description: The article outlines the Engagement Metrics report, exclusive to Xandr Publisher Adserver customers, which furnishes details on ad viewability. It also identifies issues that may hinder Xandr from accurately measuring the viewability of an impression.
 ms.date: 10/28/2023
 ---
 
 
-# Engagement metrics report
+# Monetize - Engagement metrics report
 
 The Engagement Metrics report provides information about ad viewability, as well as indicating any problems that might be preventing Xandr from measuring an impression's
 viewability. This report is only available for Xandr Publisher Adserver customers.
@@ -112,7 +112,8 @@ For more information about how quickly report data is processed, see [Availabili
 | In-View Duration (greater than 50% pixels) | The average duration (in seconds) for which impressions displaying greater than 50% of the pixels in the creative remained in view. |
 | In-View Duration (greater than 75% pixels) | The average duration (in seconds) for which impressions displaying greater than 75% of the pixels in the creative remained in view. |
 | In-View Duration (equal to 100% pixels) | The average duration (in seconds) for which impressions displaying 100% of the pixels in the creative remained in view. |
-To Run Your Report
+
+## To Run Your Report
 
 Follow these steps to run your report. Refer to **Dimensions** and **Metrics** section above for more information about the definitions of the data fields.
 

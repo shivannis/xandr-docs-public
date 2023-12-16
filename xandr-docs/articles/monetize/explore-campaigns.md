@@ -1,10 +1,10 @@
 ---
-titl: Monetize - Explore Campaigns
+title: Monetize - Explore Campaigns
 description: The article covers the Campaigns screen, detailing its features such as displaying key metrics for all campaigns under a particular advertiser or line item, highlighting issues affecting campaign serving, providing swift access to individual campaign details, and offering functionalities like bulk editing and reporting.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Explore Campaigns
+# Explore campaigns
 
 The **Campaigns** screen shows you essential metrics about all campaigns under an advertiser or under a specific line item, informs you of conditions preventing campaigns from
 serving, provides quick access to each campaign's details, and offers bulk editing and reporting options.
@@ -51,12 +51,12 @@ The **Status** column shows you whether your campaigns are eligible or ineligibl
   - Daily impression budget has been met.
   - Daily cost budget has been met.
 
-> [!WARNING]
-> Campaigns with the "warning" icon are ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign
-> shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
->
->     - No creatives are associated with this campaign.
->     - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
+  > [!WARNING]
+  > Campaigns with the "warning" icon are ineligible to serve due to conditions are are likely unintentional and that should be addressed. When a campaign
+  > shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
+  >
+  > - No creatives are associated with this campaign.
+  > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who >   trust your network's self-classification (unaudited).
 
 ### Searching by name/ID
 

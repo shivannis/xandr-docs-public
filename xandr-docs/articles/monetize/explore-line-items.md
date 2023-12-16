@@ -4,10 +4,9 @@ description: The articles defines the Line Items screen that displays metrics fo
 ms.date: 10/28/2023
 ---
 
-
 # Explore line items
 
-The Line Items screen shows you essential metrics about all line items under a specific advertiser, informs you of conditions preventing line items from serving, provides
+The **Line Items** screen shows you essential metrics about all line items under a specific advertiser, informs you of conditions preventing line items from serving, provides
 quick access to each insertion order's details and child campaigns, and offers bulk editing and reporting options.
 
 For publishers, the Line Items screen is where you'll go to manage demand from your direct-sold advertisers, including standard and guaranteed delivery line items.

@@ -1,10 +1,10 @@
 ---
-title: Monetize - Explore Global Insertion Orders
-Description: The article delves into global insertion orders, presenting key metrics for all insertion orders under direct-sold advertisers, offering quick access to individual insertion order details, and providing options for bulk editing and reporting.
+title: Explore Global Insertion Orders
+description: The article delves into global insertion orders, presenting key metrics for all insertion orders under direct-sold advertisers, offering quick access to individual insertion order details, and providing options for bulk editing and reporting.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Explore global insertion orders
+# Explore global insertion orders
 
 The **Insertion Orders** screen shows you essential metrics about all insertion orders under all your direct-sold advertisers, provides quick access to each insertion order's details, and offers bulk editing and reporting options.
 
@@ -129,7 +129,9 @@ To get information about attributed conversions, rather than just conversion pix
 
 ### Show/Hide columns
 
-You can choose the columns that are displayed by clicking the [configure columns](media/configurecolumnsbutton.png) button.
+You can choose the columns that are displayed by clicking the **Configure Columns** button.
+:::image type="content" source="media/configure-columns-button.png" alt-text="Screenshot that displays the Configure Columns button.":::
+
 
 This opens the **Configure Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display.
 
