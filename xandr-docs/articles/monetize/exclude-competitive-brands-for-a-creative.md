@@ -1,59 +1,23 @@
 ---
-Title : Exclude Competitive Brands for a Creative
-Description : When adding creatives, you can apply competitive exclusions from the
+title: Exclude Competitive Brands for a Creative
+description: The article emphasizes using competitive exclusions when adding creatives to prevent the display of competitive brands together. Users can exclude up to 25 brands for each creative in the optional Competitive Exclusions section.
 ms.date: 10/28/2023
-Competitive Exclusions (optional)
-section to prevent creatives with competitive brands from serving
-alongside each other. You can exclude a maximum of 25 brands for each
 ---
 
 
-# Exclude Competitive Brands for a Creative
+# Exclude competitive brands for a creative
 
+When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive brands from serving
+alongside each other. You can exclude a maximum of 25 brands for each creative.
 
+You can exclude a maximum of 25 brands for each creative. You can also set brand exclusions at the advertiser level. For more information, see [Competitive
+Exclusions](competitive-exclusions.md).
 
-When adding creatives, you can apply competitive exclusions from the
-Competitive Exclusions (optional)
-section to prevent creatives with competitive brands from serving
-alongside each other. You can exclude a maximum of 25 brands for each
-creative.
+1. Click in the **Brand** subsection.
+1. Search for specific brands and select the appropriate checkboxes.
 
+## Related topics
 
-
-You can exclude a maximum of 25 brands for each creative. You can also
-set brand exclusions at the advertiser level. For more information, see
-<a href="competitive-exclusions.md" class="xref"
-title="You can use competitive exclusions to prevent creatives with competitive brands or offer categories from serving alongside each other.">Competitive
-Exclusions</a>.
-
-
-
-
-
-1.  Click in the
-    Brand subsection.
-2.  Search for specific brands and select the
-    appropriate checkboxes.
-
-
-
-
-
-**Related Topics**
-
-- <a href="working-with-creatives.md" class="xref"
-  title="You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.">Working
-  with Creatives</a>
-- <a href="creative-branding.md" class="xref"
-  title="Xandr maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.">Creative
-  Branding</a>
-- <a href="exclude-competitive-offer-categories-for-a-creative.md"
-  class="xref"
-  title="When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive offer categories from serving alongside each other. You can exclude a maximum of five offer categories for each creative.">Exclude
-  Competitive Offer Categories for a Creative</a>
-
-
-
-
-
-
+- [Working with Creatives](working-with-creatives.md)
+- [Creative Branding](creative-branding.md)
+- [Exclude Competitive Offer Categories for a Creative](exclude-competitive-offer-categories-for-a-creative.md)
