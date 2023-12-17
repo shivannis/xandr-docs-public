@@ -70,7 +70,7 @@ instructions, see [Reconciling Your Invoice with Reporting](reconciling-your-inv
 
 ## How is the creative overage fee calculated?
 
-See the [relevant section of Reconciling your Invoice](reconciling-your-invoice-with-reporting).
+See the [relevant section of Reconciling your Invoice](reconciling-your-invoice-with-reporting.md).
 
 ## Why am I being charged a minimum when my overall spend is above my monthly minimum commitment?
 
