@@ -55,7 +55,7 @@ Here are two buy-side use cases for the birthday cookie:
   may be undervalued as a result of allegedly belonging to fewer
   segments.
 
-> [!TIP]
+ > [!TIP]
 > For instructions on how to implement segment targeting, see [Segment Targeting](segment-targeting.md).
 
 ## Related topics

@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 This page provides recommendations for maximum ad campaign success when
 targeting Google Ad Manager inventory.
 
-General
+## General
 
 The following are general guidelines to target inventory:
 
@@ -54,8 +54,8 @@ Google Ad Manager:
   **Any position** selected.
 
   For more information about video targeting, see
-  [Video Targeting](video-targeting.md). For Deals targeting, see
-  [Video Player Targeting](video-player-targeting.md)
+  [Video Targeting](video-targeting.md). (For Deals targeting, see
+  [Video Player Targeting](video-player-targeting.md))
 
 ## Related topics
 

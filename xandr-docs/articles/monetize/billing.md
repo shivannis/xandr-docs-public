@@ -9,9 +9,7 @@ ms.date: 10/28/2023
 
 For real-time inventory, Xandr serves as the
 clearinghouse by paying inventory sellers and then billing buyers.
-Networks and direct mark
-
-eters pay their managed publishers directly.
+Networks and direct marketers pay their managed publishers directly.
 This section provides resources for accessing and understanding your
 billing information.
 

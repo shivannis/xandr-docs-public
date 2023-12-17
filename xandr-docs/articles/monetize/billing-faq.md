@@ -5,9 +5,9 @@ ms.date: 10/28/2023
 ---
 
 
-#  Microsoft Monetize - Billing and Settlement FAQ
+#  Microsoft Monetize - Billing and settlement FAQ
 
-## Finance Charges
+## Finance charges
 
 ## How is the finance charge calculated?
 
@@ -50,8 +50,8 @@ memo (also referred to as a credit note).
 ## How can I check my credit status?
 
 To view the credit status of your member and parent account, click
-Billing under your member name (top
-right). The Credit Status tab will
+**Billing** under your member name (top
+right). The **Credit Status** tab will
 contain your outstanding balance and credit. The credit you have
 remaining is associated with your parent account. Your account may have
 more than one member associated with it. The credit limit is shared
@@ -118,7 +118,7 @@ consolidate, and manage data associated with transactions between our
 buyers and sellers. We rely on this data as the single source of truth
 to bill and pay our clients.
 
-## Customer Account Information Updates
+## Customer account information updates
 
 ## How do I add or remove recipients from the invoice and statement distribution lists?
 
@@ -144,10 +144,10 @@ were not cleared direct. As a result, if you are using direct clearing,
 costs associated with that buying activity will appear elsewhere on your
 invoice (i.e., not under cost of media). To more accurately reconcile
 the cost of media shown in your reports with your invoices, locate the
-row in the report where Cleared Direct
-is "0" and Impression Type is "RTB".
-The values in the Imps and
-Media Cost columns should match the
+row in the report where **Cleared Direct**
+is "0" and **Impression Type** is "RTB".
+The values in the **Imps** and
+**Media Cost** columns should match the
 values in the **Billable Units** and **Amount** columns on your invoice.
 For more information on running the report, see
 [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md).
@@ -192,7 +192,7 @@ Xandr. Clients can then either:
   sell-side revenue)
 
 If you would like to enable monthly netting on your account, please
-submit a request through our  our [Customer Support Portal](https://help.xandr.com/s/login/). To learn more about netting, see [Understanding Your Seller Statement](understanding-your-seller-statement).
+submit a request through our  our [Customer Support Portal](https://help.xandr.com/s/login/). To learn more about netting, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
 ## Why was I suspended and when will I get paid?
 

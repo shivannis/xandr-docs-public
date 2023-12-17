@@ -29,7 +29,7 @@ Use the following table to find the correct procedures for your setup.
 
 | Standard Line Items | Augmented Line Items |
 |---|---|
-| - [Create an Advertiser](create-an-advertiser.)<br>- [Create an Insertion Order](create-an-insertion-order)<br>- [Create a Standard Line Item](create-a-standard-line-item)<br>- [Create a Conversion Pixel](create-a-conversion-pixel)<br>- [Add Creatives in Bulk](add-creatives-in-bulk)<br>- [Buy-Side Targeting](buy-side-targeting) | - [Create an Advertiser](create-an-advertiser.)<br>- [Create an Insertion Order](create-an-insertion-order)<br>- [Create an Augmented Line Item](create-an-augmented-line-item-ali)<br> &nbsp;&nbsp;- [Additional Geo Restrictions](additional-geo-restrictions-ali.)<br>&nbsp;&nbsp;- [Inventory Lists (ALI)](inventory-lists-ali-only)<br>- [Create a Conversion Pixel](create-a-conversion-pixel)<br>- [Add Creatives in Bulk](add-creatives-in-bulk) |
+| - [Create an Advertiser](create-an-advertiser.md)<br>- [Create an Insertion Order](create-an-insertion-order.md)<br>- [Create a Standard Line Item](create-a-standard-line-item.md)<br>- [Create a Conversion Pixel](create-a-conversion-pixel.md)<br>- [Add Creatives in Bulk](add-creatives-in-bulk.md)<br>- [Buy-Side Targeting](buy-side-targeting) | - [Create an Advertiser](create-an-advertiser.md)<br>- [Create an Insertion Order](create-an-insertion-order.md)<br>- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)<br> &nbsp;&nbsp;- [Additional Geo Restrictions](additional-geo-restrictions-ali.)<br>&nbsp;&nbsp;- [Inventory Lists (ALI)](inventory-lists-ali-only)<br>- [Create a Conversion Pixel](create-a-conversion-pixel.md)<br>- [Add Creatives in Bulk](add-creatives-in-bulk.md) |
 
 ## Related topics
 

@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Automatic archiving of Buy-Side Objects
+# Microsoft Monetize - Automatic archiving of Buy-Side objects
 
 Xandr automatically archives campaigns that have
 been identified as "stale" or unused. Archiving reduces the overhead of
@@ -44,7 +44,7 @@ objects appear in the UI and their status is
 prominently marked. In the API, you can sort them using a flag (see
 **Technical Notes** below for more detail).
 
-## Preventing an Object from being archived
+## Preventing an object from being archived
 
 To prevent a campaign from being archived, edit it to extend the last
 edit date. You can also set a flight date that occurs in the future.

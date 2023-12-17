@@ -74,7 +74,7 @@ The two priorities work together to determine how demand will compete:
 
 Here's an example of how the two types of priority interact together:
 
-:::image type="content" source="./media/bid-priority-ex-a.png" alt-text="Diagram of bid priority .":::
+:::image type="content" source="./media/bid-priority-ex-a.png" alt-text="Screenshot of bid priority .":::
 
 Let's assume you have a managed publisher on your network that has
 enabled their placements for reselling, and both managed and RTB

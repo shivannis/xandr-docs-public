@@ -33,7 +33,7 @@ provided by the seller:
 | Spotify | **- File type**: MP3, WAV, or OGG<br>**- Companion Banner**: 640x640 or 300x250<br>**- Bit rate**: Minimum 128 kbps<br>**- Ad length**: 15 or 30 seconds |
 | Triton | **- File type**: MP3<br>**- Bit rate**:128 kbps<br>**- Ad length**: 15, 30, or 60 seconds<br> &nbsp;&nbsp; **-** Trimmed of slate/silence<br>**- Sample rate**: 44100 Hz<br>**- Volume**: Normalized to -4db |
 
-## Related Topics
+## Related topics
 
 - [Audio Creatives](audio-creatives.md)
 - [Add a Creative](add-a-creative.md)
