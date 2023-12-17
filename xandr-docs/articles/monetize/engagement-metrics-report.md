@@ -4,7 +4,6 @@ description: The article outlines the Engagement Metrics report, exclusive to Xa
 ms.date: 10/28/2023
 ---
 
-
 # Monetize - Engagement metrics report
 
 The Engagement Metrics report provides information about ad viewability, as well as indicating any problems that might be preventing Xandr from measuring an impression's
@@ -16,7 +15,7 @@ Report data is retained for 35 days.
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -45,7 +44,7 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available
 for reports. However, all intervals are not available for every report.
@@ -55,7 +54,8 @@ for reports. However, all intervals are not available for every report.
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
+> [!TIP]
+> For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ## Dimensions
 
@@ -82,7 +82,7 @@ For more information about how quickly report data is processed, see [Availabili
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|---|---|
+|--|--|
 | Imps | The total number of impressions served. |
 | Measurable Imps | The total number of impressions that were measured for viewability. |
 | Viewed Imps | The number of measured impressions that were viewable according to the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in view for 1 continuous second. |
@@ -113,7 +113,7 @@ For more information about how quickly report data is processed, see [Availabili
 | In-View Duration (greater than 75% pixels) | The average duration (in seconds) for which impressions displaying greater than 75% of the pixels in the creative remained in view. |
 | In-View Duration (equal to 100% pixels) | The average duration (in seconds) for which impressions displaying 100% of the pixels in the creative remained in view. |
 
-## To Run Your Report
+## To Run your report
 
 Follow these steps to run your report. Refer to **Dimensions** and **Metrics** section above for more information about the definitions of the data fields.
 

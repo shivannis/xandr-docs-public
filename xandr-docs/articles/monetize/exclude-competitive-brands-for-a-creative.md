@@ -1,17 +1,15 @@
 ---
-title: Exclude Competitive Brands for a Creative
-description: The article emphasizes using competitive exclusions when adding creatives to prevent the display of competitive brands together. Users can exclude up to 25 brands for each creative in the optional Competitive Exclusions section.
+title: MOnetize - Exclude Competitive Brands for a Creative
+description: The article emphasizes using competitive exclusions when adding creatives to prevent the display of competitive brands together. 
 ms.date: 10/28/2023
 ---
 
+# Monetize - Exclude competitive brands for a creative
 
-# Exclude competitive brands for a creative
-
-When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive brands from serving
+When adding creatives, you can apply competitive exclusions from the **Competitive Exclusions (optional)** section to prevent creatives with competitive brands from serving
 alongside each other. You can exclude a maximum of 25 brands for each creative.
 
-You can exclude a maximum of 25 brands for each creative. You can also set brand exclusions at the advertiser level. For more information, see [Competitive
-Exclusions](competitive-exclusions.md).
+You can exclude a maximum of 25 brands for each creative. You can also set brand exclusions at the advertiser level. For more information, see [Competitive Exclusions](competitive-exclusions.md).
 
 1. Click in the **Brand** subsection.
 1. Search for specific brands and select the appropriate checkboxes.

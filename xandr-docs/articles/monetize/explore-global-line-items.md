@@ -1,13 +1,12 @@
 ---
 title: Explore Global Line Items
-description: The article introduces the Global Line Item Management screen, which presents essential metrics for all line items across network advertisers. It notifies users of conditions affecting line item serving, enables quick access to details and child campaigns for each line item, and provides options for bulk editing and reporting.
+description: The article presents the Global Line Item Management screen, offering key metrics for network advertisers' line items. It notifies users of serving conditions, allows swift access to details and child campaigns, and supports bulk editing and reporting options.
 ms.date: 10/28/2023
 ---
 
-
 # Explore global line items
 
-The Global Line Item Management screen shows you essential metrics about all line items across all advertisers within your network, informs you of conditions preventing line items from serving, provides quick access to each line item's details and child campaigns, and offers bulk editing and reporting options.
+The **Global Line Item Management** screen shows you essential metrics about all line items across all advertisers within your network, informs you of conditions preventing line items from serving, provides quick access to each line item's details and child campaigns, and offers bulk editing and reporting options.
 
 This feature is currently available only to select Adserver customers.
 
@@ -46,7 +45,6 @@ The available filters are:
   button works the same as the **Select All** button for the **Advertiser Filter**.
 - **Delivery Filter**: Drag the scrollbar buttons from either end to show only line items with delivery percentages in a given range. The Delivery filter uses pacing percentages from both impressions and revenue when calculating delivery percentage. The percentages are calculated like this:
   - Impression Pacing Percentage = impressions/(expectedPacing \* 100)
-
   - Revenue Pacing Percentage = revenue/(expectedPacing \* 100)  
     The filter will return all line items with either an impression pacing percentage or a revenue pacing percentage that fall within the selected range.
 - **Priority Filter**: Drag the scrollbar buttons from either end to show only line items with priorities in the given range.
@@ -76,11 +74,10 @@ The available filters are:
   - **Missing Creatives**: Check this box to show only line items that are missing a creative. This is important because line items without creatives can't serve. This filter has the opposite functionality from the Has Creatives filter.
   - **Has Creatives**: Selecting this filter will show line items that meet either of the following criteria:
     - The line item has at least one creative associated with it.
-
     - All of the line item's associated campaigns have creatives.
       This filter has the opposite functionality from the Missing Ceatives filter.
 
-      Once you choose a filter, a **Filters** panel appears at the top of the page displaying all filters in each group that you have selected. Note that the filters aren't applied dynamically as you select them, they're simply added to the **Filters** list. You must click Apply All to apply the selected filters. You can quickly remove a filter by clicking the X next to the filter name, or remove all filters by clicking **Remove All**.
+      Once you choose a filter, a **Filters** panel appears at the top of the page displaying all filters in each group that you have selected. Note that the filters aren't applied dynamically as you select them, they're simply added to the **Filters** list. You must click **Apply All** to apply the selected filters. You can quickly remove a filter by clicking the X next to the filter name, or remove all filters by clicking **Remove All**.
 
 :::image type="content" source="media/gdali-filter.png" alt-text="Screenshot that explains the status of the filters as reserved and scheduled.":::
 
@@ -139,8 +136,7 @@ To edit information in the given section, click the pencil icon in the section h
 
 :::image type="content" source="media/li-basic-settings-quick-edit.png" alt-text="Screenshot that explains the basic settings where you can update and save the information related to the settings in the section.":::
 
-For more information about line item details, see [View Line Item Details](view-line-item-details.md). For complete information on updating all areas of the line item, see
-[Update Line Items](update-line-items.md).
+For more information about line item details, see [View Line Item Details](view-line-item-details.md). For complete information on updating all areas of the line item, see [Update Line Items](update-line-items.md).
 
 ## View metrics
 
@@ -169,7 +165,7 @@ Use the drop-down at the top right of the screen to choose the interval for quic
 
 ## Export to CSV
 
-Click the **Export to CSV** file to export your data to a comma-separated values (CSV) file. All of your current filters will be applied to the data that is exported. (All rows returned will be exported, not only the rows currently showing on the screen.
+Click the **Export to CSV** file to export your data to a comma-separated values (CSV) file. All of your current filters will be applied to the data that is exported. (All rows returned will be exported, not only the rows currently showing on the screen).
 
 ## Currency display
 
@@ -216,7 +212,7 @@ The following data is available for each line item. Note that the data always re
 | **CTR** | The overall click-through rate on this line item's creatives. |
 | **Conversions** | Number of times conversion pixels under the line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to one of the advertiser's campaigns. |
 | **Media Cost** | Money your network has spent buying media for campaigns under the line item. |
-| **Remaining Days** | The number of days between today and the end date for the line item.<br>#<br>The progress bar provides a visual representation of how far into the flight the line item is.<br>:::image type="content" source="media/remaining-days.png" alt-text="Screenshot that explains the number of days between today and the end date for the line item."::: The numbers inside the progress bar indicate: Number of days since the flight started / Total number of days in the flight<br>Below the progress bar will be one of the following:<br>Number of days remaining in the flight<br>The start date of the flight if that date is in the future<br>The end date of the flight if that date is in the past<br>If no end date has been set, you'll see a message saying "End date not set" rather than a progress bar. |
+| **Remaining Days** | The number of days between today and the end date for the line item.<br><br>The progress bar provides a visual representation of how far into the flight the line item is.<br>:::image type="content" source="media/remaining-days.png" alt-text="Screenshot that explains the number of days between today and the end date for the line item."::: <br><br> The numbers inside the progress bar indicate: Number of days since the flight started / Total number of days in the flight<br>Below the progress bar will be one of the following:<br>Number of days remaining in the flight<br>The start date of the flight if that date is in the future<br>The end date of the flight if that date is in the past<br>If no end date has been set, you'll see a message saying "End date not set" rather than a progress bar. |
 | **Profit** | Money your network has made from the advertiser as a result of campaigns under the line item. This is revenue minus media cost. |
 | **Cost eCPM** | Money your network has spent buying media per 1000 impressions. |
 | **Rev eCPC** | Money the advertiser has paid or will pay your network per 1000 click-throughs. |

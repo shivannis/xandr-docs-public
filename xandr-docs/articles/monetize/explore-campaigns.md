@@ -17,13 +17,12 @@ reporting tool). In addition, once an object is archived, any child objects it m
 > [!TIP]
 > **Lost?**
 >
-> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion
-> Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object
+> Did you know that you can verify where you are in Monetize and navigate easily among Monetize pages by using the breadcrumb at the top of all **Advertiser**, **Insertion Order**, **Line Item**, and **Campaign screens**? The rightmost section of the breadcrumb is the page you are on, and all the sections to the left of it are parent object
 > screens. You can click directly on any section to navigate there in one easy step.
 >
 > The breadcrumb may not function if you are not using the latest version of your browser.
 
-There are two main ways to navigate to the **Campaigns** screen: from the **Advertisers** screen and from the Line Items screen. When you navigate from the Advertisers screen, you get the complete list of campaigns under the advertiser. When you navigate from the Line Items screen, you get the list of campaigns under a specific line item.
+There are two main ways to navigate to the **Campaigns** screen: from the **Advertisers** screen and from the **Line Items** screen. When you navigate from the **Advertisers** screen, you get the complete list of campaigns under the advertiser. When you navigate from the **Line Items** screen, you get the list of campaigns under a specific line item.
 
 ## From the advertisers screen
 
@@ -56,17 +55,17 @@ The **Status** column shows you whether your campaigns are eligible or ineligibl
   > shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provide this status:
   >
   > - No creatives are associated with this campaign.
-  > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who >   trust your network's self-classification (unaudited).
+  > - All creatives associated to this campaign are either ineligible to serve (inactive, expired, prohibited) or can serve only on direct inventory and on supply partners who trust your network's self-classification (unaudited).
 
-### Searching by name/ID
+## Searching by name/ID
 
 You can use the search field at the top of the screen to find all campaigns whose names or IDs include a specific string of characters or numbers.
 
-### Finding inactive campaigns
+## Finding inactive campaigns
 
 Campaigns with the **Inactive** state are shown with their IDs, names, and stats in italics.
 
-### Viewing stats
+## Viewing stats
 
 The stats on the **Campaigns** screen help you assess the performance and delivery of your campaigns at a glance. These metrics are faster and more readily accessed than via standard reporting; whereas reporting requires you to submit a request and then wait for a response, stats are cached on a regular basis.
 
@@ -76,23 +75,18 @@ Because stats are dependent upon reporting data and are synched after reporting 
 > To sort your campaigns by any stat, click on the relevant metric column. For example, to sort yourcampaigns by the amount of money your network has made from advertisers
 > (revenue - media cost), click the **Profit** column.
 
-### Intervals
+## Intervals
 
-Use the interval drop-down near the top right of the screen to choose
-the interval for stats:
+Use the interval drop-down near the top right of the screen to choose the interval for stats:
 
 - **Today** Current calendar day up to the last hour.
 - **Yesterday** Full 24-hour period of the previous calendar day.
-- **Last 7 Days** Full 7 days previous to the current calendar day,
-  excluding today.
-- **Month to Date** Start of the current calendar month to the current
-  calendar day, including today.
-- **Last 365 Days** Full 365 days previous to the current calendar day,
-  excluding today.
-- **Lifetime** Entire lifetime of each campaign, including the current
-  calendar day.
+- **Last 7 Days** Full 7 days previous to the current calendar day, excluding today.
+- **Month to Date** Start of the current calendar month to the current calendar day, including today.
+- **Last 365 Days** Full 365 days previous to the current calendar day, excluding today.
+- **Lifetime** Entire lifetime of each campaign, including the current calendar day.
 
-### Columns
+## Columns
 
 The following stats are shown for each campaign. Columns that show an arrow in the header when you hover over them are sortable. Note that the data always reflects the currently selected stats interval:
 
@@ -134,7 +128,7 @@ The following stats are shown for each campaign. Columns that show an arrow in t
 
 ## Showing/Hiding pacing bars
 
-For campaigns that meet certain **Requirements for Pacing Bars**, Microsoft Monetize helps you visualize how well the campaigns are pacing to their budgets for the selected stats interval. When you turn the **Pacing** toggle on, the **Imps** or Media Cost quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
+For campaigns that meet certain **Requirements for Pacing Bars**, Microsoft Monetize helps you visualize how well the campaigns are pacing to their budgets for the selected stats interval. When you turn the **Pacing** toggle on, the **Imps** or **Media Cost** quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
 
 It is important to note that pacing bars, like all other stats, reflect the currently selected stats interval, and for each stats interval, there are specific requirements for pacing to be calculated. See **Requirements for Pacing Bars** below for more details.
 
@@ -162,7 +156,7 @@ The exact requirements for calculating pacing depend on the stats interval selec
 |--|--|
 | Lifetime | Lifetime Budget and Flight End Date |
 
-### Showing/Hiding pulse sparklines
+## Showing/Hiding pulse sparklines
 
 The **Pulse** button provides a visualization of campaign spending in real time. When you click the **Pulse** button, a column containing sparklines that represent campaign delivery appears.
 
@@ -173,22 +167,21 @@ The **Pulse** button provides a visualization of campaign spending in real time.
 >
 > - Confirm campaigns are live seconds after they start spending
 > - Diagnose delivery issues quickly with a shorter feedback loop
-> - Confidently optimize by seeing changes take effect minutes after you
->   make them
+> - Confidently optimize by seeing changes take effect minutes after you make them
 
 To learn more, see [Using Pulse to Check Campaign Health](using-pulse-to-check-campaign-health.md).
 
-### Showing/hiding columns
+## Showing/hiding columns
 
 You can choose the columns that are displayed by clicking the **Configure Columns** button.
 
 This opens the **Configure Columns** dialog. From there you can select or deselect the columns you want to display using the checkboxes. Click **OK** when you are done making your selections to return to the **Campaigns** screen.
 
-### Viewing settings across multiple campaigns
+## Viewing settings across multiple campaigns
 
 The **Settings** toggle lets you save time and gain valuable insight by reviewing budgets, buying strategies, and frequency caps across multiple campaigns.
 
-Budgets
+### Budgets
 
 To view the **Lifetime Budget** and **Daily Budget** of multiple campaigns at once, select **Settings >  Budget**.
 
@@ -217,11 +210,11 @@ To view the how frequently creatives associated to campaigns can be shown to a g
   Frequency caps can be set at the advertiser, line item, and creative levels as well. The most restrictive setting always takes precedence.
   For more details, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 
-### Inventory targeting
+## Inventory targeting
 
 You can view inventory targeting settings in the Campaigns screen. When you select **Inventory Targeting** in the Settings toggle, the direct and 3rd-party segment targeting strategiesfor your campaigns, as well as the associated Boolean logic, will appear as columns.
 
-### Viewing a specific campaign's details
+## Viewing a specific campaign's details
 
 There are two ways to view details for a specific campaign: the **Campaign Summary** pane and the **Campaign Details** pane.
 

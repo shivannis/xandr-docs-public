@@ -1,13 +1,14 @@
 ---
-title: Monetize - Explore Domain Lists or App Lists
+title: Explore Domain Lists or App Lists
 description: The article describes the process of managing domains and apps, including adding them to lists, exporting lists to text files for safekeeping or offline use, creating new lists by copying existing ones, and deleting lists.
 ms.date: 10/28/2023
 ---
 
 
-# Monetize - Explore domain lists or app lists
+# Explore domain lists or app lists
 
-Targeting lists are only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
+> [!NOTE]
+> Targeting lists are only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 You can add domains and apps to lists, export domain lists or app lists to a text file for safekeeping or offline use, create new domain lists or app lists by copying existing lists, or delete domain lists and app lists. For information about creating these lists, see [Create a Domain List or App List](create-a-domain-list-or-app-list.md). For information about updating these lists, see [Update a Domain List or App List](update-a-domain-list-or-app-list.md).
 

@@ -6,12 +6,12 @@ ms.date: 10/28/2023
 
 # Monetize - Edit buyer eligibility, allowed payment types, and targeting access
 
-You can set the eligibility, allowed payment types, and targeting access for buyers within the Partner Center screen or in the Partner Controls tab.
-The Partner Controls tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom
+You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab.
+The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom
 settings for the buyer.
 
 > [!NOTE]
-> While you can manage these settings in the **Partner Center** and in the Partner Controls tab, you can only view the buyer's current settings in the Partner Controls tab.
+> While you can manage these settings in the **Partner Center** and in the **Partner Controls** tab, you can only view the buyer's current settings in the **Partner Controls** tab.
 
 > [!TIP]
 > For more information about the settings described on this page, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
@@ -86,6 +86,6 @@ placement, or publisher targeting information. The more information you give buy
 
 For **Category (Custom)** there is the additional option to exposevspecific categories. To select specific custom categories, choose Selected to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
-### Step 5. Save your changes
+### Step 5. Save changes
 
 When all changes have been made, click the **Apply Changes** button.

@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 # Monetize - Explore insertion orders
 
-The Insertion Orders screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and
+The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and
 reporting options.
 
 This document describes the Insertion Order screen for individual advertisers.
@@ -21,7 +21,7 @@ Things you can do on this page include:
 
 To get to the insertion orders screen:
 
-- On the Advertisers screen, find the advertiser for which you want to view insertion orders and click the button in the **Ins Orders** column.
+- On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and click the button in the **Ins Orders** column.
 - In **Advertiser's Details** view, click on **Insertion Orders**.
 
 ## Filter your insertion orders

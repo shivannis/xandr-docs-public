@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 The **Insertion Orders** screen shows you essential metrics about all insertion orders under all your direct-sold advertisers, provides quick access to each insertion order's details, and offers bulk editing and reporting options.
 
 > [!NOTE]
-> This page provides information about the global Insertion Order screen available to adserver clients. This screen shows all insertion orders for multiple advertisers on one
-> page. See [Explore Insertion Orders](explore-insertion-orders.md) for information about the Insertion Order screen with single advertiser view.
+> This page provides information about the global Insertion Order screen available to adserver clients. This screen shows all insertion orders for multiple advertisers on one page. See [Explore Insertion Orders](explore-insertion-orders.md) for information about the Insertion Order screen with single advertiser view.
 
 Things you can do on this page include:
 
@@ -127,11 +126,10 @@ The following stats are shown for each insertion order. Note that the data alway
 
 To get information about attributed conversions, rather than just conversion pixel loads as shown in the **Convs** column, see [Reporting on Conversions](reporting-on-conversions.md).
 
-### Show/Hide columns
+### Show/hide columns
 
 You can choose the columns that are displayed by clicking the **Configure Columns** button.
 :::image type="content" source="media/configure-columns-button.png" alt-text="Screenshot that displays the Configure Columns button.":::
-
 
 This opens the **Configure Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display.
 

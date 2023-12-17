@@ -4,7 +4,6 @@ description: The article outlines that the advertisers screen is a management in
 ms.date: 10/28/2023
 ---
 
-
 # Monetize - Explore and manage advertisers
 
 The Advertisers screen is a management screen that shows you essential metrics about all your advertisers, provides quick access to each advertiser's details and child objects,
@@ -57,7 +56,7 @@ The following stats are shown for each advertiser. Note that the data always ref
 
 ## Viewing advertiser details
 
-To view advanced details about an advertiser, click on the advertiser you want to view. See [View Advertiser Details](view-advertiser-details.md) ## for more information.
+To view advanced details about an advertiser, click on the advertiser you want to view. See [View Advertiser Details](view-advertiser-details.md) for more information.
 
 ## Viewing child objects
 
@@ -77,7 +76,7 @@ You can initiate a Network Analytics report for one or more advertisers directly
 
 This takes you to the Network Analytics report, where the advertisers you selected are set as filters. For more information about running the report, see [Network Reporting](network-reporting.md).
 
-### Related topic
+### Related topics
 
 - [Working with Advertisers](working-with-advertisers.md)
 - [View Advertiser Details](view-advertiser-details.md)

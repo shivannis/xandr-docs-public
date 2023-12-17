@@ -15,7 +15,7 @@ Sellers can see the settings you have set for them. Your default settings will a
 
 While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** and in the **My Settings for {Seller Name}** section of the Partner Details page. You can view the seller's current settings for you in the {Seller Name} Settings for Me section of the Partner Details page.
 
-**Get to Know Xandr Direct:** Xandr Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Xandr Direct for Buyers](appnexus-direct-for-buyers.md) Xandr or contact [mailto:appnexusdirect@appnexus.com]or your Xandr account manager.
+**Get to Know Xandr Direct:** Xandr Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Xandr Direct for Buyers](appnexus-direct-for-buyers.md) Xandr or contact [mailto:appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
 ## Edit seller settings
 

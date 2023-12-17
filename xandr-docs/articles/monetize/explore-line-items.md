@@ -131,19 +131,18 @@ This opens the **Configure Columns** dialog. From there you can select or desele
 
 ## Show/hide pacing bars
 
-For line items that meet certain requirements (see below), Microsoft Monetize helps you visualize how well the line items are pacing to their budgets for the selected quickstats
-interval. When you turn the Pacing toggle on, the Imps or Revenue quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
+For line items that meet certain requirements (see below), Microsoft Monetize helps you visualize how well the line items are pacing to their budgets for the selected quickstats interval. When you turn the Pacing toggle on, the Imps or Revenue quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
 
 > [!IMPORTANT]
 > It is important to note that pacing bars, like all other quickstats, reflect the currently selected quickstats interval, and for each quickstats interval, there are specific requirements for pacing to be calculated. See below for more details.
-
-For guaranteed line items with a **vCPVM** revenue type, the information displayed in the pacing bars is not based on viewable impressions yet, but we're working on it. For now, you can surface delivered viewed impressions in the grid by:
-
-1. Clicking the grid edit button next the **Export to CSV** button.
-1. Checking the **Viewable Imps** checkbox in the dialog that appears.
-
-For more information about viewability, see our [Introduction to Viewability](introduction-to-viewability.md).
-
+> [!IMPORTANT]
+> For guaranteed line items with a **vCPVM** revenue type, the information displayed in the pacing bars is not based on viewable impressions yet, but we're working on it. For now, you can surface delivered viewed impressions in the grid by:
+>
+> 1. Clicking the grid edit button next the **Export to CSV** button.
+> 1. Checking the **Viewable Imps** checkbox in the dialog that appears.
+>
+> For more information about viewability, see our [Introduction to Viewability](introduction-to-viewability.md).
+>
 ## Understanding pacing bars
 
 Each pacing bar tells you the following. Note that for a line item with a revenue budget, the pacing bar will show revenue rather than impressions.
