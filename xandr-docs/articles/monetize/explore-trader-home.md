@@ -1,6 +1,6 @@
 ---
 title: Explore Trader Home
-escription: The articles helps you to explore tarder home.
+description: The articles helps you to explore tarder home.
 ms.date: 10/28/2023
 ---
 
@@ -72,12 +72,12 @@ Each card falls into one of the nine states outlined in the table below.
 |--|--|--|
 |:::image type="content" source="media/traderhome-normal.png" alt-text= "Screenshot that shows a card in the normal state that displays all of the metrics."::: | Normal | A card in the "Normal" state displays all of the metrics. No additional insertion order information is needed. |
 | :::image type="content" source="media/traderhome-firstday.png" alt-text= "Screenshot that shows a card in the in the first day state that displays a value for Current Daily Needed."::: | First Day | A card in the "First Day" state only shows a value for Current Daily Needed. No additional insertion order information is needed. |
-| :::image type="content" source="media/traderhome-preflight.png" alt-text="Screenshot that shows a card in the Pre-flight state""::: | Pre-flight | A card in the "Pre-flight" state does not show any metrics and displays the "Flight Not Started" note. No additional insertion order information is needed. |
+| :::image type="content" source="media/traderhome-preflight.png" alt-text="Screenshot that shows a card in the Pre-flight state"::: | Pre-flight | A card in the "Pre-flight" state does not show any metrics and displays the "Flight Not Started" note. No additional insertion order information is needed. |
 | :::image type="content" source="media/traderhome-postflight.png" alt-text= "Screenshot that shows Post-flight state and does not show any metrics"::: | Post-flight | A card in the "Post-flight" state does not show any metrics and displays the "Flight Ended" note. Click the Create New IO button to create a new insertion order. |
 | :::image type="content" source="media/traderhome-noflightdates.png" alt-text= "Screenshot that shows a card in the No Flight Dates state only shows a value for Yesterday Spend."::: | No Flight Dates | A card in the "No Flight Dates" state only shows a value for Yesterday Spend and displays the "Add Flight Dates to Display ... [Pacing]" note. Click the Add Flight Dates button to add the necessary insertion order information. |
 | :::image type="content" source="media/traderhome-large-percentage.png" alt-text= "Screenshot that shows a card in the Large Percentage state and has a Pacing at percentage greater than 500%."::: | Large Percentage | A card in the "Large Percentage" state has a Pacing at percentage greater than 500% and instead shows how much is Left in Budget for the insertion order (in the insertion order's currency). No additional insertion order information is needed. |
-| :::image type="content" source="media/traderhome-infinite-percentage.png" alt-text=" Screenshot that shows a card in the Infinite Percentage state"::: | Infinite Percentage | A card in the "Infinite Percentage" state has a Current Daily Needed value of 0 because the budget is met; therefore, the Pacing at percentage can increase infinitely. The card instead shows how much is Over Budget for the insertion order (in the insertion order's currency). The card color is red. No additional insertion order information is needed. |
-| :::image type="content" source="media/explore-trader-home" alt-text=" Screenshot that shows a card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%"::: | Warning | A card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%. No additional insertion order information is needed, but it is recommended that you review your settings. |
+| :::image type="content" source="media/traderhome-infinite-percentage.png" alt-text= "Screenshot that shows a card in the Infinite Percentage state"::: | Infinite Percentage | A card in the "Infinite Percentage" state has a Current Daily Needed value of 0 because the budget is met; therefore, the Pacing at percentage can increase infinitely. The card instead shows how much is Over Budget for the insertion order (in the insertion order's currency). The card color is red. No additional insertion order information is needed. |
+| :::image type="content" source="media/explore-trader-home.png" alt-text= "Screenshot that shows a card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%"::: | Warning | A card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%. No additional insertion order information is needed, but it is recommended that you review your settings. |
 
 ## Viewing child line items
 

@@ -1,7 +1,6 @@
 ---
 title: Explore Publisher Ad Quality
-description: The Publisher Ad Quality screen Allows you to view network-level ad quality settings such as your
-Network Profile or Publisher Templates and Displays your Publisher Base and Conditional Rules. For each rule, the
+description: The Publisher Ad Quality screen Allows you to view network-level ad quality settings such as your Network Profile or Publisher Templates and Displays your Publisher Base and Conditional Rules. For each rule, the
 ms.date: 10/28/2023
 
 ---
