@@ -165,16 +165,16 @@ The `brand` object contains the following fields.
 
 ### Campaigns
 
-Each object in the `campaigns` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Campaign Service](campaign-service.md).
+Each object in the `campaigns` array includes the following fields. To obtain information for `"id"` or `"code"` fields, you can use the [Campaign Service](campaign-service.md).
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the campaign. Either "id" or "code" is required when updating campaign association.<br>**Required On:** `PUT` |
+| `id` | int | The ID of the campaign. Either `"id"` or `"code"` is required when updating campaign association.<br>**Required On:** `PUT` |
 | `campaign_id` | int | The ID of the campaign. |
 | `creative_id` | int | The ID of the creative. |
 | `name` | string | The name of the campaign.<br>**Read Only.** |
 | `state` | enum | The state of the campaign. Possible values: `"active"`, `"inactive"`, or `"parent_inactive"`.<br>**Read Only.** |
-| `code` | string | The custom code for the campaign. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the campaign. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
 
 ### Competitive brands
 
@@ -239,14 +239,14 @@ For further insight, see the *Adding a creative that uses a custom rendering tem
 
 ### Line items
 
-Each object in the `line_items` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Line Item Service](line-item-service.md).
+Each object in the `line_items` array includes the following fields. To obtain information for `"id"` or `"code"` fields, you can use the [Line Item Service](line-item-service.md).
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `name` | string | The name of the line item.<br>**Read Only.** |
 | `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
-| `id` | int | The ID of the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
-| `code` | string | The custom code for the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
+| `id` | int | The ID of the line item. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the line item. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
 
 ### Media assets
 
@@ -397,7 +397,7 @@ Each `video_asset` represents a video component of the native creative. The `vid
 | `trackers` | array | Optional VAST event trackers. |
 | `media_files` | array | Array of available media files. See Media File for more details.<br>**Read Only.** |
 | `duration` | int | Duration (in milliseconds) of the video extracted from video media asset or VAST document.<br>**Read Only.** |
-| `minimum_vast_version` | string | The minimum VAST version required to play the video. Possible Values:<br> - 2.0<br> - 3.0<br> - 4.0<br>**Read Only.** |
+| `minimum_vast_version` | string | The minimum VAST version required to play the video. Possible Values:<br> - `2.0`<br> - `3.0`<br> - `4.0`<br>**Read Only.** |
 
 Only one of `{ media_asset_id , vast_url }` should be populated per request.
 
@@ -407,7 +407,7 @@ The `vast_tracker` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `vast_event_type` | string | The type of tracking event. Possible values include:<br> - service<br> - start<br> - skip<br> - error<br> - first_quartile<br> - completion<br> - impression<br> - click |
+| `vast_event_type` | string | The type of tracking event. Possible values include:<br> - `service`<br> - `start`<br> - `skip`<br> - `error`<br> - `first_quartile`<br> - `completion`<br> - `impression`<br> - `click` |
 | `url` | string | URL to a VAST document. Must be secure. |
 
 ### Media file
@@ -634,8 +634,8 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative?advertiser_id=100&
 
 ## Changes that cause re-audit
 
-Once a creative has passed Xandr audit (audit_status is "audited"), changing any of the following fields causes the creative to be
-resubmitted for audit (allow_audit is set to "pending"):
+Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be
+resubmitted for audit (`allow_audit` is set to `"pending"`):
 
 - width
 - height
@@ -1955,7 +1955,7 @@ $ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.co
 
 ### Adding a creative (third-party HTML tag)
 
-When the format field is set to `"raw-html"`, content from the `content` field must be wrapped in `document.write()` and also `escaped.`
+When the format field is set to `"raw-html"`, content from the `content` field must be wrapped in `document.write()` and also `escaped`.
 
 ```
 $ cat creative 

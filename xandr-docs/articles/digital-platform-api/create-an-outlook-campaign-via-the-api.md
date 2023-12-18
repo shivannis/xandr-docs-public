@@ -163,7 +163,7 @@ Setting up an Outlook campaign is similar to setting up any other web campaign. 
 - Use the `profile_id` field to associate the campaign to the Outlook targeting profile you created in [Step 1](#step-1-create-a-profile-that-targets-outlookcom-inventory).
 - Set `line_item_id` to the ID of the line item under which you want to create the Outlook campaign.
 - Set `supply_type` to "web".
-- Since Microsoft is an external supply partner, set `inventory_type` to "real_time".
+- Since Microsoft is an external supply partner, set `inventory_type` to `"real_time"`.
 - Use the `creatives` array to associate Outlook creatives to the campaign.
 
 ```

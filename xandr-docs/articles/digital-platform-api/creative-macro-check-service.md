@@ -22,7 +22,7 @@ If we are able to insert the Xandr macros, then the new tag or URL will be retur
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `content` | string | **Field is used when modifying content. The content that is being modified to include Xandr macros.**<br>**Required On:** `PUT`, when transforming content. |
+| `content` | string | **Field is used when modifying content.** The content that is being modified to include Xandr macros.<br>**Required On:** `PUT`, when transforming content. |
 | `new_content` | string | **Field is populated when modifying content.** The updated content where all non-secure macros have been evaluated. This field will contain the same value as `content` unless all Xandr macros are successfully inserted. |
 | `new_content_secure` | string | **Field is populated when modifying content.** The updated content where all macros, both secure and non-secure, have been evaluated. This field will contain the same value as `content` unless all Xandr macros are successfully inserted. |
 | `media_url` | string | **Field is used when modifying a media URL.** The media URL that is being modified to include Xandr macros.<br>**Required On:** `PUT`, when transforming a media URL. |

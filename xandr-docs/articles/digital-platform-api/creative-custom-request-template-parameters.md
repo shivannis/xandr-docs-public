@@ -18,7 +18,7 @@ This document describes the query string parameters and creative macros Xandr su
 ## Millennial
 
 > [!NOTE]
-> For more information, see the [Millennial Media Ad Request Documentation](https://docs.onemobilesdk.aol.com/S2S/ad-request.md).
+> For more information, see the Millennial Media Ad Request Documentation.
 
 ## Required
 

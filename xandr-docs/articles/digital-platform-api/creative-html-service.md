@@ -50,7 +50,7 @@ AppNexus works with members who care deeply about brand and reputation. For this
 | `name` | string (100) | The name of the creative. |
 | `type` | enum | The type of creative. Possible values:<br>`"html"`<br><br>**Note:**<br>**Alpha-Beta Notice**: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.<br>**Read Only.** |
 | `height` | int | Size of the creative in height. |
-| `width` | int | size of the creative in width. |
+| `width` | int | Size of the creative in width. |
 | `advertiser_id` | int | The ID of the advertiser to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
 | `publisher_id` | int | The ID of the publisher/media buy to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to a publisher. |
 | `brand_id` | int | The ID of the brand of the company advertising the creative. If included, it will be verified by the AppNexus auditing team. If not included, it will be assigned by the auditing team. To retrieve a full list of brands, see the [Brand Service](brand-service.md). |
@@ -176,7 +176,7 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 | `creative_id` | int | The ID of the creative. |
 | `name` | string | The name of the campaign.<br>**Read Only.** |
 | `state` | enum | The state of the campaign. Possible values: `"active"`, `"inactive"`, or `"parent_inactive"`.<br>**Read Only.** |
-| `code` | string | The custom code for the campaign. Either "id" or "code" is required when updating line item association.<br>Required On: `PUT` |
+| `code` | string | The custom code for the campaign. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
 
 ### Status
 

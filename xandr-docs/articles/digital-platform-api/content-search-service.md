@@ -23,7 +23,7 @@ Xandr admins can use this read-only service to search for creative IDs that hav
 - **For creative IDs to be returned, ALL search terms must match either** `content` **or** `media_url`**.**
 - **Queries must be between 3 and 15 characters.** Queries outside this range will not return results.
 - **This service does not return expired creatives.**
-- **This service returns only creative IDs.** If more information is required; such as who the creative belongs to, or if you want to join the creative table with other tables, use the IDs returned in future queries/lookups. For more details, see the [examples](#examples) below.
+- **This service returns only creative IDs.** If more information is required; such as who the creative belongs to, or if you want to join the creative table with other tables, use the IDs returned in future queries/lookups. For more details, see the [example](#example) below.
 
 ## JSON fields
 
@@ -31,7 +31,7 @@ Xandr admins can use this read-only service to search for creative IDs that hav
 |:---|:---|:---|
 | `id` | int | The ID of the creative. |
 
-## Examples
+## Example
 
 ### Get creative IDs for the 'adnxs' search parameter
 
