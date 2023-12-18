@@ -6,13 +6,13 @@ ms.date: 10/28/2023
 
 # Explore publishers
 
-The Publishers screen lists the publishers with which your member is associated. In this list you can see information regarding network and publisher performance for each
+The **Publishers** screen lists the publishers with which your member is associated. In this list you can see information regarding network and publisher performance for each
 publisher. You can select individual publishers to display more information.
 
-## Getting to the pblisher screen
+## Getting to the publisher screen
 
 > [!NOTE]
-> Depending on which version of Monetize you use, you will access the Publishers screen using one of the following options.
+> Depending on which version of Monetize you use, you will access the **Publishers** screen using one of the following options.
 
 From the **Publishers** tab: either select the **Publishers** option in the menu at the top of the screen, or select **All Publishers** from the **Publishers** dropdown.
 
@@ -42,7 +42,7 @@ The following information about the activity of each publisher associated to you
 > For publishers with an inventory relationship of **Owned & Operated**, **Publisher Revenue** and **RPM** will always be zero. The amount made on inventory is rolled up into the Network Revenue column, which represents the revenue earned by your Xandr member seat.
 
 - **Revenue** - The total revenue earned by this publisher. This value represents the network's cost.
-  - **RPM** - The revenue per 1,000 impressions for this publisher. This value includes impressions from defaults, PSAs, and errors. It represents your network's CPM.
+- **RPM** - The revenue per 1,000 impressions for this publisher. This value includes impressions from defaults, PSAs, and errors. It represents your network's CPM.
 - **Impressions**
   - **Imps** - The total number of impressions.
   - **Kept** - This value applies to managed accounts. It reflects the number of managed advertiser's creatives served on a managed publisher's site.

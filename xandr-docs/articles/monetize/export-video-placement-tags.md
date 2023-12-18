@@ -15,11 +15,11 @@ This page focuses only on video placement tags. For more information and complet
 
 ## Step 1. Select the placements to export
 
-Navigate to **Publisher > Placement Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement** Tags dialog.
+Navigate to **Publisher > Placement Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 
--**Type** - This field is set to **Standard** by default. However, the recommended setting is **Secure**.
+- **Type** - This field is set to **Standard** by default. However, the recommended setting is **Secure**.
 
 - **Use cachebuster** - If the publisher uses a macro to dynamically ensure that the user's browser does not cache the placement URL, select this option and enter the cachebuster macro.
 - **Age** - If your publisher uses a macro to dynamically add the age of the user to the ad call, select this option and enter the age macro.

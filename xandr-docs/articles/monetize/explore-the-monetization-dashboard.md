@@ -13,7 +13,7 @@ different sections of the Dashboard.
 > The data on the **Monetization Dashboard** is not updated in real time. The most recent data on the Dashboard will be from the previous day (in
 > [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)). The delay is necessary because we pull some reporting data from external systems. Data is always displayed in UTC. The data does not reflect revenue associated with fixed fee direct line items, or otherwise allocated via adjustments. Use the [Network Analytics Report](network-analytics-report.md) for a complete view of your revenue.
 
-## Get to the sashboard
+## Get to the dashboard
 
 Publisher-only clients: Select **Reports >  Dashboard**.
 
@@ -55,7 +55,7 @@ To view detail about a particular day, move your mouse over the point to display
 
 ## Top buyers and advertisers
 
-The Top Buyers & Advertisers panel is designed to help you understand your top buyers and their spending behaviors. In addition to showing the raw stats for each buyer or
+The **Top Buyers & Advertisers** panel is designed to help you understand your top buyers and their spending behaviors. In addition to showing the raw stats for each buyer or
 advertiser, it shows the week-over-week percentage change for the performance of each. Each has a label attached to show whether they are
 buying via mediation or RTB. The list updates when you change your filters.
 

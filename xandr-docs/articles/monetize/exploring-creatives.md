@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 You can work with creatives from the **Creative Manager** screen. From there you can view the creatives that are associated to a particular advertiser as well as add and update
 creatives.
 
-The Creative Manager screen shows all the creatives associated with the selected advertiser. For each creative, the following information is displayed:
+The **Creative Manager** screen shows all the creatives associated with the selected advertiser. For each creative, the following information is displayed:
 
 - **Name**: The name of the creative that was provided on the **Create New** screen.
 - **ID**: Unique identifier assigned to the creative.

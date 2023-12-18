@@ -34,7 +34,9 @@ In the **Modify Tags** section, set the format and type for the tags:
 - **Type** - This field is set to "Standard" by default. If necessary, change the type using the dropdown menu.
   
 > [!NOTE]
-> **Secure Tags**To obtain a secure tag, it is not sufficient to simply export a standard tag and change "http" to "https" in the tag URL. Instead, to make sure the tag gets formatted properly as secure, it's important to select "Secure" as the tag **Type**.
+> **Secure Tags**:
+>
+> To obtain a secure tag, it is not sufficient to simply export a standard tag and change "http" to "https" in the tag URL. Instead, to make sure the tag gets formatted properly as secure, it's important to select "Secure" as the tag **Type**.
 
 You can also add additional parameters to the tags:
 
@@ -59,7 +61,7 @@ Except for placements that allow VAST video creatives, all tags are generated in
 player.
 
 > [!NOTE]
-> **Secure Tags**
+> **Secure Tags**:
 >
 > To obtain a secure tag, it is not sufficient to simply export a standard tag and change "http" to "https" in the tag URL. Instead, to make sure the tag gets formatted properly as secure, it's important to select "Secure" as the tag **Type** (see step 2).
 >
@@ -74,7 +76,7 @@ player.
 > - If you have whitelabeled Monetize and your domain appears within the generated tag, you must replace your domain with "ib.adnxs.com" in the tag before sending
 >   the tag to your publisher. Otherwise, the whitelabeled VAST tag will redirect to the Xandr domain, which the Flash-based player will not accept; for security purposes, Flash-based players will not retrieve content when redirected to a different domain.
 >
-:::image type="content" source="media/generatedtags.png" alt-text="Screenshot that explains the export placement tags.":::
+:::image type="content" source="media/generated-tags.png" alt-text="Screenshot that explains the export placement tags.":::
 
 ## Related topics
 

@@ -15,7 +15,7 @@ The **Publisher Ad Quality** screen performs several functions:
 - Displays your Publisher Base and Conditional Rules. For each rule, the screen displays whether that rule is inheriting from a template
 - Informs you of new brands as they are added to the platform
 
-  This document describes the various sections of the Publisher Ad Quality screen and their functions.
+  This document describes the various sections of the **Publisher Ad Quality** screen and their functions.
 
 ## Navigation
 

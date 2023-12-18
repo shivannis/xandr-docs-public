@@ -10,17 +10,17 @@ Once you've finished setting up conversion pixels, you can export the tags and g
 
 ## Step 1. Get started
 
-Go to the Conversion Pixels screen (**Advertisers >  Conversion Pixels**), select the checkboxes next to the conversion pixels that you want to export,
+Go to the **Conversion Pixels** screen (**Advertisers >  Conversion Pixels**), select the checkboxes next to the conversion pixels that you want to export,
 click **More Actions**, and select **Export**. This displays the Export Pixels dialog.
 
 ## Step 2. Select the pixel format
 
-In the Basic Options section, select the format for your exported pixels:
+In the **Basic Options** section, select the format for your exported pixels:
 
 - **Use a JavaScript tag** - By default, pixels will be exported as image tags. If you want JavaScript tags instead, select this option.
   
 > [!IMPORTANT]
-> Why use JavaScript tags? Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript. 
+> Why use JavaScript tags? Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript.
 > If a piggyback pixel is  JavaScript, the parent pixel should be JavaScript as well.
 
 - **Generate a non-secure pixel** - Select this option to generate a non-secure pixel. See [Conversion Pixels Advanced](conversion-pixels-advanced.md) for additional details.
@@ -63,10 +63,10 @@ An image pixel looks like this, with a `t=2` parameter:
 <!-- End of Conversion Pixel --> 
 ```
 
-A JavaScript pixel looks like this, with a t=1 parameter:
+A JavaScript pixel looks like this, with a `t=1` parameter:
 
-``
-<!-- Conversion Pixel - Registration - DO NOT MODIFY --> 
+```
+<!-- Conversion Pixel - Registration - DO NOT MODIFY -->
 <script src="http://ib.adnxs.net/px?id=7313&t=1" type="text/javascript"></script>
 <!-- End of Conversion Pixel -->
 ```

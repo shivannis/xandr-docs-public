@@ -11,8 +11,8 @@ as well as placement tag exporting, and offers bulk editing and reporting option
 
 ## Getting to the placement manager screen
 
-1. From the **Publishers** tab: Go to **Publishers >  Placement Manager**.
-1. From the **Inventory** tab: Go to **Partners >  Placement**.
+From the **Publishers** tab: Go to **Publishers >  Placement Manager**.
+From the **Inventory** tab: Go to **Partners >  Placement**.
 
 ## Customizing data view
 

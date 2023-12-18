@@ -17,7 +17,7 @@ ms.date: 10/28/2023
 1. Click **Save**.
 1. Set the other report basic options, dimensions, and delivery options, and click **Run Report**. For more information, see [Analytics Reporting](analytics-reporting.md).
 
-Related Topics
+## Related Topics
 
 - [Analytics Reporting](analytics-reporting.md)
 - [Network Analytics Report](network-analytics-report.md)
