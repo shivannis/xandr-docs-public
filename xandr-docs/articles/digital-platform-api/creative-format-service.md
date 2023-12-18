@@ -1,11 +1,11 @@
 ---
-title: Creative Format Service
+title: Digital Platform API - Creative Format Service
 description: In this article, learn about the Creative Format service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Creative Format service
+# Digital Platform API - Creative Format service
 
 The Xandr platform categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives (flash, image, etc.); media type defines the general display style of creatives (banner, expandable, video, etc.); and media subtype defines the specific display style of creatives (standard banner, MediaMind expandable, or Standard VAST).
 

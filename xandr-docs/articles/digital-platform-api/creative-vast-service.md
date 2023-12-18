@@ -32,13 +32,13 @@ Xandr works with members who care deeply about brand and reputation. For this re
 |:---|:---|:---|
 | `POST` | [https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID)<br> (creative JSON) | Add a new hosted video or audio creative to one of your advertisers. |
 | `POST` | [https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID)<br> (creative JSON) | Add a new hosted video or audio creative to one of your publishers. |
-| `PUT` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID)<br> (creative JSON) | Modify an existing hosted video or audio creative. |
+| `PUT` |  - [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID)<br> (creative JSON) | Modify an existing hosted video or audio creative. |
 | `GET` | [https://api.appnexus.com/creative-vast](https://api.appnexus.com/creative-vast) | View all hosted video or audio creatives. |
-| `GET` | [https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE)<br>[https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID)<br>[https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE) | View all hosted video or audio creatives for an advertiser or publisher. |
-| `GET` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID)<br>[https://api.appnexus.com/creative-vast?code=CREATIVE_CODE](https://api.appnexus.com/creative-vast?code=CREATIVE_CODE) | View a specific creative. |
+| `GET` |  - [https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative-vast?advertiser_code=ADVERTISER_CODE)<br> - [https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?publisher_id=PUBLISHER_ID)<br> - [https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative-vast?publisher_code=PUBLISHER_CODE) | View all hosted video or audio creatives for an advertiser or publisher. |
+| `GET` |  - [https://api.appnexus.com/creative-vast?id=CREATIVE_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID)<br> - [https://api.appnexus.com/creative-vast?code=CREATIVE_CODE](https://api.appnexus.com/creative-vast?code=CREATIVE_CODE) | View a specific creative. |
 | `GET` | [https://api.appnexus.com/creative-vast?id=1,2,3](https://api.appnexus.com/creative-vast?id=1,2,3) | View multiple creatives by ID using a comma-separated list. |
 | `GET` | [https://api.appnexus.com/creative-vast?audit_stats=true](https://api.appnexus.com/creative-vast?audit_stats=true) | View creative audit stats. |
-| `DELETE` | [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative. |
+| `DELETE` |  - [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-vast?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative. |
 
 > [!NOTE]
 > You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify creatives that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run) below.
@@ -55,13 +55,13 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `code` | string (100) | The custom code for the creative. |
 | `code2` | string (100) | The additional custom code for the creative. |
 | `name` | string (100) | The name of the creative. |
-| `type` | enum | The type of creative. Possible values:<br> - `"standard"`<br> - `"html"`<br> - `"video"`<br><br>**Note:** **Alpha-Beta Notice** This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.<br>**Read Only.** |
+| `type` | enum | The type of creative. Possible values:<br> - `"standard"`<br> - `"html"`<br> - `"video"`<br><br>**Note:** **Alpha-Beta Notice** <br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.<br>**Read Only.** |
 | `advertiser_id` | int | The ID of the advertiser to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
 | `publisher_id` | int | The ID of the publisher/media buy to which the creative is attached.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to an advertiser. |
 | `brand_id` | int | The ID of the brand of the company advertising the creative. If included, it will be verified by the Xandr auditing team. If not included, it will be assigned by the auditing team. To retrieve a full list of brands, see the [Brand Service](brand-service.md). |
 | `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
 | `status` | object | The status of the creative describing if the creative is ready to serve. For more details, see [Status](#status) below. |
-| `click_track_result` | enum | The result of the click track test, a feature only available in the Console user interface. Possible values: `"not_tested"`, `"passed"`, or `"failed"`.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to a publisher. |
+| `click_track_result` | enum | The result of the click track test, a feature only available in the Console user interface. <br>Possible values: `"not_tested"`, `"passed"`, or `"failed"`.<br>**Required On:** `POST`/`PUT`, in query string, if the creative is attached to a publisher. |
 | `campaigns` | array of objects | The list of campaigns to which the creative is associated. For more details, see [Campaigns](#campaigns) below.<br><br>**Tip:** This field will only be returned if an `advertiser_id` is specified in the querystring. |
 | template | object | The creative template (Example: `template_id` 6439) for the creative's format and media type. The template includes code to control how the creative renders on web pages.<br>Possible values:<br> - Video creatives: **6439**<br> - Audio creatives: **38745**<br>**Required On:** `POST` |
 | `media_url` | string (1000) | The URL of the creative - can be flash, HTML, javascript (see format). URL must exist and should point to a CDN hosted VAST XML file.<br>*This field only applies to third party creatives.*<br>**Default:** `"not_tested"` |
@@ -78,8 +78,8 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `msft_audit_status` | enum | **Deprecated.** |
 | `msft_audit_feedback` | string | **Deprecated.** |
 | `is_self_audited` | Boolean | If `true`, the creative is self-audited and thus will not go through platform (Xandr) audit. The creative can only serve on inventory that accepts your self-classified creative or on inventory that accepts unaudited creatives.<br>**Default:** `false` |
-| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set audit_status to "pending".<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set audit_status to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
-| `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set to true to prevent the creative from serving.<br> - **Default:** false<br> - **Read Only.** |
+| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set `audit_status` to `"pending"`.<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set `audit_status` to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
+| `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set to true to prevent the creative from serving.<br>**Default:** `false`<br>**Read Only.** |
 | `is_hosted` | Boolean | If `true`, the creative is hosted by Xandr.<br>**Read Only.** |
 | `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `false` |
 | `lifetime_budget_imps` | int | The lifetime limit for number of impressions.<br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
@@ -91,27 +91,27 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `folder` | object | To arrange your creatives in folders for convenience (usually in the UI) you will create a folder using the [Creative Folder Service](creative-folder-service.md) and then associate it here via folder ID or in the Creative Folder service via creative ID. Output is `{"id": "41", "name": "MyFolder"}`. |
 | `line_items` | array of objects | The line items that are associated with the creative. For more details, see [Line Items](#line-items) below. |
 | `is_control` | Boolean | This is a flag used to mark this creative as part of a control/test group in A/B testing. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md).<br>**Default:** `true` |
-| `segments` | array | A list of segments that a user will be added to upon viewing or clicking on this creative. For more information, see [Segments](#segments) below.<br>See [example](#segments-example). |
-| `created_on` | timestamp | The date and time when this creative was created. If it was created before January 2010, this will be zero.<br>Read Only. |
+| `segments` | array | A list of segments that a user will be added to upon viewing or clicking on this creative. For more information, see [Segments](#segments) and the [example](#segments-example) below. |
+| `created_on` | timestamp | The date and time when this creative was created. If it was created before January 2010, this will be zero.<br>**Read Only.** |
 | `last_modified` | timestamp | The date and time when the creative was last modified.<br>**Read Only.** |
 | `creative_upload_status` | enum | **Deprecated.** |
-| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md). <br>See [example](#categories-example). |
-| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative. <br><br>**Note:**<br> To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md).<br>See [example](#adservers-example).<br>**Read Only.** |
-| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md).<br>See [example](#technical_attributes-example). |
-| `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md).<br>See [example](#language-example). |
+| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md) and the [example](#categories-example) below. |
+| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative. <br><br>**Note:**<br> To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md) and the [example](#adservers-example) below.<br>**Read Only.** |
+| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md) and the [example](#technical_attributes-example) below. |
+| `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md) and the [example](#language-example) below. |
 | `brand` | object | The brand of the company advertising the creative and the category associated with the brand. For more details, see [Brand](#brand) below.<br>**Read Only.** |
 | `sla` | int | Creatives set to "0" will be submitted for audit with a standard SLA.<br><br>**Caution:** Creatives submitted with any number other than 0 will result in a priority audit (when enabled) and resulting fees.<br>If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting this field to 2. For more details about priority auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md). |
 | `sla_eta` | timestamp | The estimate time of completion for a priority audit.<br>**Read Only.** |
-| `currency` | string | The code that defines the advertiser's primary currency (for example, **USD**). For more details about the currency types available, see [Currency Service](currency-service.md).<br> - **Default:** Member's default currency<br> - **Read Only.** |
+| `currency` | string | The code that defines the advertiser's primary currency (for example, **USD**). For more details about the currency types available, see [Currency Service](currency-service.md).<br> **Default:** Member's default currency.<br>**Read Only.** |
 | `first_run` | timestamp | The date and time when the creative first served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to filter creatives based on when they first served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
 | `last_run` | timestamp | The date and time when the creative last served, refreshed on an hourly basis. This value reflects the UTC time zone. To include this information in a GET response, pass `flight_info=true` in the query string. For details about how to creatives based on when they last served, see [First Run/Last Run](#first-runlast-run) below.<br>**Read Only.** |
-| `video_attribute` | object | Attributes for third-party in-stream (VAST) and hosted video and audio creatives. For more details, see [Video Attribute](#video-attribute) below.<br> - **Default:** Member's default currency.<br> - **Required On:** `POST`, if template is for "Standard VAST" media subtype. |
+| `video_attribute` | object | Attributes for third-party in-stream (VAST) and hosted video and audio creatives. For more details, see [Video Attribute](#video-attribute) below.<br> **Default:** Member's default currency.<br> **Required On:** `POST`, if template is for "Standard VAST" media subtype. |
 | `competitive_brands` | array of objects | Creatives associated with the brands in this array will not serve together in `/mtj` auctions. The classic example of competing brands is Coke vs. Pepsi. See [Competitive Brands](#competitive-brands) below. For more information about the brands in our system, see the [Brand Service](brand-service.md).<br>**Default:** **N/A** |
 | `competitive_categories` | array of objects | Creatives associated with the categories in this array will not serve together in `/mtj` auctions, e.g., "Dating" and "Education". See [Competitive Categories](#competitive-categories) below. For more information about the categories we apply to creatives (and brands), see the [Category Service](category-service.md).<br>**Default:** **N/A** |
 | `adx_audit` | object | This object contains information about the status and feedback related to the Google AdExchange audit of the creative. Information about whether or not a creative has been approved is returned in the `audit_status` field.<br>**Read Only.** |
 | `member_id` | int | The ID of the member that owns the creative. |
 | `media_assets` | array of objects | Used to associate Xandr hosted files to your creative. This field will be auto-populate when uploading files via the API.<br>See [example](#media_assets-example).<br><br>**Note:**<br>`creative_field` should always be null for a VAST creative. |
-| `ad_type` | string | <br><br>**Tip:**<br>This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br> - `"banner"`<br> - `"video"` (includes audio creatives)<br> - `"native"`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:**<br> All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
+| `ad_type` | string | **Tip:**<br>This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br> - `"banner"`<br> - `"video"` (includes audio creatives)<br> - `"native"`<br><br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:**<br> All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
 
 ### `segments` example
 
@@ -169,27 +169,27 @@ Xandr works with members who care deeply about brand and reputation. For this re
 
 ### Line items
 
-Each object in the `line_items` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Line Item Service - ALI](line-item-service---ali.md).
+Each object in the `line_items` array includes the following fields. To obtain information for `"id"` or `"code"` fields, you can use the [Line Item Service - ALI](line-item-service---ali.md).
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `name` | string | The name of the line item.<br>**Read Only.** |
 | `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
-| `id` | int | The ID of the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
-| `code` | string | The custom code for the line item. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
+| `id` | int | The ID of the line item. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the line item. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
 
 ### Campaigns
 
-Each object in the `campaigns` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Campaign Service](campaign-service.md).
+Each object in the `campaigns` array includes the following fields. To obtain information for `"id"` or `"code"` fields, you can use the [Campaign Service](campaign-service.md).
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the campaign. Either "id" or "code" is required when updating campaign association.<br>**Required On:** `PUT` |
+| `id` | int | The ID of the campaign. Either `"id"` or `"code"` is required when updating campaign association.<br>**Required On:** `PUT` |
 | `campaign_id` | int | The ID of the campaign. |
 | `creative_id` | int | The ID of the creative. |
 | `name` | string | The name of the campaign.<br>**Read Only.** |
 | `state` | enum | The state of the campaign. Possible values: `"active"`, `"inactive"`, or `"parent_inactive"`.<br>**Read Only.** |
-| `code` | string | The custom code for the campaign. Either "id" or "code" is required when updating line item association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the campaign. Either `"id"` or `"code"` is required when updating line item association.<br>**Required On:** `PUT` |
 
 ### Status
 
@@ -205,8 +205,8 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 
 | Name | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the brand.<br>**Default:** n/a<br>**Required On:** n/a |
-| `name` | string | The name of the brand.<br>**Default:** n/a<br>**Required On:** n/a |
+| `id` | int | The ID of the brand.<br>**Default:** N/A<br>**Required On:** N/A |
+| `name` | string | The name of the brand.<br>**Default:** N/A<br>**Required On:** N/A |
 
 ### Media-asset
 
@@ -252,10 +252,10 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 
 | Name | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the category.<br>**Default:** n/a<br>**Required On:** n/a |
-| `name` | string | The name of the category.<br>**Default:** n/a<br>**Required On:** n/a |
+| `id` | int | The ID of the category.<br>**Default:** N/A<br>**Required On:** N/A |
+| `name` | string | The name of the category.<br>**Default:** N/A<br>**Required On:** N/A |
 
-### Video attribute
+### Video Attribute
 
 `video_attribute` is required for both audio and video creatives on the `creative-vast` endpoint. Template ids are:
 
@@ -305,7 +305,7 @@ You can drop pixels on every event that we track in reporting (see `vast_event_t
 | Field | Type | Description |
 |:---|:---|:---|
 | `name` | string | The name of the event tracker. |
-| `vast_event_type_id` | int | The ID of the VAST event. Possible values:<br> - `2`: start<br> - `3`: skip<br>`4`: error<br> - `5`: first_quartile<br> - `6`: midpoint<br> - `7`: third_quartile<br> - `8`: completion<br> - `9`: impression<br> - `10`: click |
+| `vast_event_type_id` | int | The ID of the VAST event. Possible values:<br> - `2`: start<br> - `3`: skip<br> - `4`: error<br> - `5`: first_quartile<br> - `6`: midpoint<br> - `7`: third_quartile<br> - `8`: completion<br> - `9`: impression<br> - `10`: click |
 | `url` | string | The URL of the event tracker. |
 | `secure_url` | string | The secure URL of the event tracker. |
 | `event_type` | string | The type of event corresponding to `vast_event_type_id`.<br>**Read Only.** |
@@ -323,7 +323,7 @@ You can drop pixels on every event that we track in reporting (see `vast_event_t
 | Field | Type | Description |
 |:---|:---|:---|
 | `ad_title` | string | The title of the ad.<br>**Required On:** `POST`, `PUT`. |
-| `ad_description` | string | Optional. The description of the ad. |
+| `ad_description` | string | **Optional.** The description of the ad. |
 | `linear` | object | Ad that appears before, after or during a break in content. |
 | `companion_ads` | array of objects | Companion banner ads that appear in banner placements in the same page as the accompanying video or audio (see [Inline Companion Ads Object](#inline-companion-ads-object) below). |
 

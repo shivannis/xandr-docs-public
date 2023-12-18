@@ -43,7 +43,7 @@ The Pixel Service can be used to create **conversion pixels** to place on advert
 | `name` | string | The name of the pixel.<br>**Required On:** `POST` |
 | `last_modified` | timestamp | The date and time when the pixel was last modified.<br>**Read Only.** |
 | `line_items` | array | The line items with which the pixel is associated. For details about the fields in this array, see [Line Items](#line-items) below.<br>**Read Only.** |
-| `min_minutes_per_conv` | int | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>If set to `0`: count all conversions.<br>If set to `null` (default): Count one per user.<br>**Default:** `null` |
+| `min_minutes_per_conv` | int | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br> - If set to `0`: count all conversions.<br> - If set to `null` (default): Count one per user.<br> - **Default:** `null` |
 | `piggyback_pixels` | array of objects | The URLs of the pixels you want us to fire when the conversion pixel fires. For details, see [Piggyback Pixels](#piggyback-pixels) below. |
 | `pixel_conversion_event` | array | The pixel conversion event category with which the pixel is associated. For details, see [Pixel Conversion Event](#pixel-conversion-event) below.<br>**Read Only.** |
 | `pixel_conversion_event_id` | enum | Optional. The ID of the conversion event associated with the pixel. Setting an event category will not affect our optimization algorithms immediately. Instead, it provides our optimization team with valuable data for prediction that we can start to test and incorporate. If you don't see a good match for your type of conversion event, leave this field blank.<br>Possible values are:<br> - `null`: No category selected.<br> - `2`: **Visit landing page** - A user visits your website after being served an ad.<br> - `3`: **Item view** - A user visits a page on your website that displays one or more products or services.<br> - `4`: **Add to cart** - A user adds one or more of your products or services to their shopping cart.<br> - `5`: **Initiate checkout** - A user begins the checkout process.<br> - `6`: **Add payment info** - A user adds payment information, such as a credit card number, during the checkout process.<br> - `7`: **Purchase** - A confirmed sale of your product or service.<br> - `8`: **Generate lead** - Collect lead information, such as email addresses or zip codes, from people interested in your business. |
@@ -51,7 +51,7 @@ The Pixel Service can be used to create **conversion pixels** to place on advert
 | `post_click_value` | double | The value you attribute to a conversion after a click. |
 | `post_view_expire_mins` | int | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
 | `post_view_value` | double | The value you attribute to a conversion after a view. |
-| `state` | enum | The state of the pixel. Possible values: "active" or "inactive". |
+| `state` | enum | The state of the pixel. Possible values: `"active"` or `"inactive"`. |
 | `trigger_type` | enum | The type of event required for a valid (attributed) conversion. Possible values: `view`, `click`, or `hybrid`.<br>**Default:** `click` |
 
 ### Campaigns
@@ -60,7 +60,7 @@ This array shows you the campaign associations. To associate a pixel to a campai
 
 | Field | Type | Description |
 |:---|:---|:---|
-| id | string | The ID of the campaign.<br>**Read Only.** |
+| `id` | string | The ID of the campaign.<br>**Read Only.** |
 
 ### Line items
 

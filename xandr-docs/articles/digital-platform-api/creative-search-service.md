@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Creative Search service
 
-This read-only service allows you to search for **active** creatives ased on specific criteria, such as audit status, ID, size, etc. You may then wish to use these creative IDs in the [Ad Profile Service](ad-profile-service.md). To add creatives to the system, see the [Creative Service](creative-service.md).d
+This read-only service allows you to search for **active** creatives ased on specific criteria, such as audit status, ID, size, etc. You may then wish to use these creative IDs in the [Ad Profile Service](ad-profile-service.md). To add creatives to the system, see the [Creative Service](creative-service.md).
 
 > [!NOTE]
 > Since this service searches all active creatives on the AppNexus platform (not just your own), a search that is too broad might cause an error. To ensure that you get results, please narrow your search as much as possible.

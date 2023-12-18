@@ -21,10 +21,9 @@ You can use the Creative Service to add creatives to our system. All creatives m
 Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements
 (creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the Creative Service.
 
-- Creatives are identified by their media_url (either a third-party adserver URL or a Content Delivery Network URL for a Flash, image, or
-  video file).
+- Creatives are identified by their media_url (either a third-party adserver URL or a Content Delivery Network URL for a Flash, image, or video file).
 - Xandr checks media_urls on a regular basis. If a file disappears, the creative will be treated as unaudited.
-- Once a creative has passed Xandr's audit, certain changes to the creative cause it to be resubmitted for audit. For more details, see [Changes That Cause Re-Audit below](#changes-that-cause-re-audit).
+- Once a creative has passed Xandr's audit, certain changes to the creative cause it to be resubmitted for audit. For more details, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.
 
 ## REST API
 
@@ -32,13 +31,13 @@ Xandr works with members who care deeply about brand and reputation. For this re
 |:---|:---|:---|
 | `POST` | [https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID)<br>(creative JSON) | Add a new creative to one of your advertisers. |
 | `POST` | [https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID)<br>(creative JSON) | Add a new creative to one of your publishers. |
-| `PUT` | [https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID)<br>(creative JSON) | Modify an existing creative. |
+| `PUT` | - [https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID)<br>(creative JSON) | Modify an existing creative. |
 | `GET` | [https://api.appnexus.com/creative](https://api.appnexus.com/creative) | View all creatives. |
-| `GET` | [https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative?advertiser_code=ADVERTISER_CODE)<br>[https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID)<br>[https://api.appnexus.com/creative?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative?publisher_code=PUBLISHER_CODE) | View all creatives for an advertiser or publisher.<br><br>**Note:**<br>You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your object limit and need to identify creatives that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run) below. |
-| `GET` | [https://api.appnexus.com/creative?id=CREATIVE_ID](https://api.appnexus.com/creative?id=CREATIVE_ID)<br> [https://api.appnexus.com/creative?code=CREATIVE_CODE](https://api.appnexus.com/creative?code=CREATIVE_CODE) | View a specific creative. |
+| `GET` | - [https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative?advertiser_code=ADVERTISER_CODE)<br>- [https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?publisher_id=PUBLISHER_ID)<br>- [https://api.appnexus.com/creative?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative?publisher_code=PUBLISHER_CODE) | View all creatives for an advertiser or publisher.<br><br>**Note:**<br>You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify creatives that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run) below. |
+| `GET` | - [https://api.appnexus.com/creative?id=CREATIVE_ID](https://api.appnexus.com/creative?id=CREATIVE_ID)<br> - [https://api.appnexus.com/creative?code=CREATIVE_CODE](https://api.appnexus.com/creative?code=CREATIVE_CODE) | View a specific creative. |
 | `GET` | [https://api.appnexus.com/creative?id=1,2,3](https://api.appnexus.com/creative?id=1,2,3) | View multiple creatives by ID using a comma-separated list. |
 | `GET` | [https://api.appnexus.com/creative?audit_stats=true](https://api.appnexus.com/creative?audit_stats=true) | View creative audit stats.<br><br>**Note:**<br>The response tells you the number of creatives with each Xandr, Microsoft, and Google audit status. For the response format, see the [Examples](#examples) below. |
-| `DELETE` | [https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative.<br><br>**Note:** You cannot delete a creative that is used as the default creative for a member or placement. Default creatives can be deleted once they are disassociated from a placement. |
+| `DELETE` | - [https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative.<br><br>**Note:** You cannot delete a creative that is used as the default creative for a member or placement. Default creatives can be deleted once they are disassociated from a placement. |
 | `GET` | [https://api.appnexus.com/creative/meta](https://api.appnexus.com/creative/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
@@ -72,7 +71,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `content` | string | Javascript or HTML content when "format" is "raw-js" or "iframe-html". For a hosted creative, the content of the file must be base64-encoded and submitted as a string within the content field.<br><br>**Tip:** When using a template (example: `template_id` `6`) for the `"raw-html"` format (HTML that will not be served in an iFrame), everything in the `content` field must be `escaped` (quotes, slashes, etc.,) and wrapped in a `document.write();` statement. This is necessary to deliver the content to the page.<br><br>**Tip:** There is a maximum length in the content field of 65535 characters.<br>**Required On:** `POST`, if not using media_url.<br>**Default:** 3rd party tag holder. |
 | `content_secure` | string | Javascript or HTML content when "format" is "raw-js" or "iframe-html" served on a secure ad call. |
 | `original_content` | string | The value you pass into the "content" field through the UI will be returned in this field unchanged. The "content" field will contain the content modified by Xandr to properly serve. This field can also be uploaded directly through the API. In this case, the value uploaded to this field will be referenced in the content section of the UI (Creative Content > Tag field).<br>**Required On:** `POST` when submitting as type `raw-html`. |
-| `original_content_secure` | string | See original_content. This is the secure version of this content. |
+| `original_content_secure` | string | See `original_content`. This is the secure version of this content. |
 | `macros` | string | The API pulls out macros and puts them in this field so that the bidder knows which macros to expect.<br>**Read Only.** |
 | `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br> - If `allow_audit` is `false`, this field must be "no_audit".<br> - If a creative is expired, you can reanimate it by changing this field. Setting it to "pending" will resubmit it for auditing. The **user_ready** field also needs to set to true in order to reactivate a expired creative. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br> - You can only submit pop creatives of accepted sizes for Xandr audit. If `media_subtype_id` within the `template` array is 4 (popunder), `audit_status` can not be set to "pending" unless `width` is 720 and `height` is 300. If `media_subtype_id` within the `template` array is 2 (popup), `audit_status` can not be set to pending unless `width` and `height` are one of the following: 250x250, 300x250, 550x480.<br>**Default:** `"pending"` |
 | `audit_feedback` | string | The creative auditing team can pass messages about a creative in this field.<br>**Read Only.** |
@@ -84,7 +83,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `facebook_audit_status` | enum | **Note:** This field is no longer in use. |
 | `facebook_audit_feedback` | string | **Note:** This field is no longer in use. |
 | `is_self_audited` | Boolean | If `true`, the creative is self-audited and thus will not go through Xandr platform audit. The creative can only serve on inventory that accepts your self-classified creative or on inventory that accepts unaudited creatives.<br>**Default:** `false` |
-| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set audit_status to "pending".<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set audit_status to "no_audit".<br>**Default:** `false`<br>**Read Only.** |
+| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set `audit_status` to `"pending"`.<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set `audit_status` to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
 | `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set to true to prevent the creative from serving.<br>**Default:** `false`<br>**Read Only.** |
 | `is_hosted` | Boolean | If `true`, the creative is hosted by Xandr.<br>**Read Only.** |
 | `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:** To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
@@ -92,7 +91,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `daily_budget` | double | The daily budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
 | `daily_budget_imps` | int | The daily limit for number of impressions.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
 | `enable_pacing` | Boolean | If `true`, daily budgeted spend is spread evenly throughout a day.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `true` |
-| `allow_safety_pacing` | Boolean | Admin-only. If `true`, spend per minute is limited to a maximum of 1% of the lifetime budget and 5% of the daily budget. |
+| `allow_safety_pacing` | Boolean | **Admin-only.** If `true`, spend per minute is limited to a maximum of 1% of the lifetime budget and 5% of the daily budget. |
 | `profile_id` | int | You can attach targeting such as gender and geography to a creative by creating a [profile](profile-service.md) and associating it here. |
 | `folder` | object | To arrange your creatives in folders for convenience (usually in the UI) you will create a folder using the [Creative Folder Service](creative-folder-service.md) and then associate it here via folder ID or in the Creative Folder service via creative ID. Output is `{"id": "41", "name": "MyFolder"}`. |
 | `line_items` | array of objects | The line items that are associated with the creative. For more details, see [Line Items](#line-items) below. |
@@ -133,12 +132,12 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `mobile` | object | Information needed for mobile creatives to pass the creative audit. See [Mobile](#mobile) below. |
 | `video_attribute` | object | Attributes for third-party in-stream (VAST) and hosted video creatives.<br><br>**Note:**<br>To add & update vast creatives, use the `/creative-vast` service. For detailst, see [Creative Vast Service](creative-vast-service.md).<br>**Default:** `null` |
 | `stats` | object | The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead. |
-| `content_source` | string | The source of this creative's content.<br>**Default:** `"standard"`<br>Allowed values:<br> - `"standard"`: This creative consists of content hosted on an ad server, that will generally be retrieved with a single HTTP request.<br> - `"mediation"`: This creative is a container that is used to fetch content from another ad server for the purposes of mediation. Due to the way mediation is performed, this can involve making multiple HTTP requests in sequence. For more information, see the [Creative Custom Request Template Service](creative-custom-request-template-service.md).<br><br>**Note:** If this field is set to `"mediation"`, the following actions will occur:<br> - A `"mediation"` technical attribute will be added to the creative's `technical_attributes` array.<br>In addition, the following validations will be performed:<br> - `"audit_status"` cannot be set to `"pending"`; instead it will always be set to `"no_audit"`.<br> - `allow_audit` cannot be set to `true`; instead it will always be set to `false`.<br> - The `custom_request_template` multi-object must be defined for the creative.<br> - The `custom_macros` array must be populated with macros defined by the template parameters associated with the [Custom Request Template](creative-custom-request-template-service.md).<br>The following fields will no longer be required:<br> - `content`<br> - `media_url`<br> - `template` |
-| `custom_request_template` | multi-object | If the value of this creative's `content_source` field is set to `"mediation"`, this object describes the association between this creative and a custom request template which is used to populate the creative with content. For more information, see [Custom Request Template](creative-custom-request-template-service.md).<br>**Default:** `null`<br>**Required On:** `PUT`, if `content_source` is set to `"mediation"`. |
+| `content_source` | string | The source of this creative's content.<br>**Default:** `"standard"`<br>Allowed values:<br> - `"standard"`: This creative consists of content hosted on an ad server, that will generally be retrieved with a single HTTP request.<br> - `"mediation"`: This creative is a container that is used to fetch content from another ad server for the purposes of mediation. Due to the way mediation is performed, this can involve making multiple HTTP requests in sequence. For more information, see the [Creative Custom Request Template Service](creative-custom-request-template-service.md).<br><br>**Note:** If this field is set to `"mediation"`, the following actions will occur:<br> - A `"mediation"` technical attribute will be added to the creative's `technical_attributes` array.<br>In addition, the following validations will be performed:<br> - `"audit_status"` cannot be set to `"pending"`; instead it will always be set to `"no_audit"`.<br> - `allow_audit` cannot be set to `true`; instead it will always be set to `false`.<br> - The `custom_request_template` multi-object must be defined for the creative.<br> - The `custom_macros` array must be populated with macros defined by the template parameters associated with the [Custom Request Template](#custom-request-template).<br>The following fields will no longer be required:<br> - `content`<br> - `media_url`<br> - `template` |
+| `custom_request_template` | multi-object | If the value of this creative's `content_source` field is set to `"mediation"`, this object describes the association between this creative and a custom request template which is used to populate the creative with content. For more information, see [Custom Request Template](#custom-request-template).<br>**Default:** `null`<br>**Required On:** `PUT`, if `content_source` is set to `"mediation"`. |
 | `competitive_brands` | array of objects | Creatives associated with the brands in this array will not serve together in `/mtj` auctions. The classic example of competing brands is Coke vs. Pepsi. See [Competitive Brands](#competitive-brands) below. For more information about the brands in our system, see the [Brand Service](brand-service.md). |
 | `competitive_categories` | array of objects | Creatives associated with the categories in this array will not serve together in `/mtj` auctions, e.g., "Dating" and "Education". See [Competitive Categories](#competitive-categories) below. For more information about the categories we apply to creatives (and brands), see the [Category Service](category-service.md). |
 | `thirdparty_pixels` | array of objects | An array of third-party pixels associated with the creative. You can automatically attach these pixels to all creatives owned by an advertiser or member using the [Third-party Pixel service](third-party-pixel-service.md) or attach them individually at the creative level using the Creative Service.<br>**Default:** `null`<br>**Required On:** `PUT` |
-| `native` | object | Deprecated. If this creative is a native ad, this object is populated with the elements required for native ads. For more information, see the description of the [Native object](#native) below.<br>**Default:** `null`<br>**Required On:** `POST` and `PUT` for native ads. Technically, native ads are identified by our system as those creatives that have a `template` with a `creative_format_id` of `12` that identifies them as `native`. |
+| `native` | object | Deprecated. If this creative is a native ad, this object is populated with the elements required for native ads. For more information, see the description of the [Native](#native) object below.<br>**Default:** `null`<br>**Required On:** `POST` and `PUT` for native ads. Technically, native ads are identified by our system as those creatives that have a `template` with a `creative_format_id` of `12` that identifies them as `native`. |
 | `native_attribute` | object | This is the new native object which contains elements required for native ads. For more information, see the description of the [Native Attribute](#native-attribute) object below.<br>**Default:** `null`<br>**Required On:** Required for native ad with template 39461. |
 | `click_trackers` | array of objects | A list of third-party click tracking URLs intended to be used with native creatives. For more information, see [Click Trackers](#click-trackers) below. |
 | `impression_trackers` | array of objects | A list of third-party impression tracking URLs intended to be used with native creatives. For more information, see [Impression Trackers](#impression-trackers) below. |
@@ -148,14 +147,14 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `msft_external_audit_status` | enum | **Deprecated.** |
 | `member_id` | int | The ID of the member that owns the creative. |
 | `media_assets` | array of objects | The asset id of the original file and a field describing what the asset must be used for. It is used to associate Xandr hosted files to your creative. This array will auto-populate when uploading files via the API. For more information, see [Media Assets](#media-assets) below. |
-| `ad_type` | string | **Tip:** This field only applies when you are associating creatives to augmented line items.<br>The type of creative used. Possible values:<br> - `banner`<br> - `video` (includes audio types)<br> - `native`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:** All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
+| `ad_type` | string | **Tip:** This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br> - `banner`<br> - `video` (includes audio types)<br> - `native`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:** All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
 
 ### Brand
 
 The `brand` object contains the following fields.
 
 > [!NOTE]
-> This object is read-only. To set the brand for a creative, use the `brand_id`field outside of this object.
+> This object is read-only. To set the brand for a creative, use the `brand_id` field outside of this object.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -217,7 +216,7 @@ For more information, see [Selecting the Correct Template for Your Creative](sel
 | `1` | Single URL that points to a piece of html code. | You will need to pass the URL in the `media_url` field and set an id of 1 in the template object. |
 | `2` | Single URL that points to a piece of Javascript code. | You will need to pass the URL in the `media_url` field and set an id of 2 in the template object. |
 | `5` | Creative that starts and ends with Javascript components, even if the Javascript code writes HTML. | You will need to pass the Javascript code in the `content` field and set an id of 5 in the template object. |
-| `6` | Creative that starts and ends with HTML components, even if these HTML components are <script> tags. | You will need to pass the html code in the `content` field and set an id of 6 in the template object. |
+| `6` | Creative that starts and ends with HTML components, even if these HTML components are `<script>` tags. | You will need to pass the html code in the `content` field and set an id of 6 in the template object. |
 
 ### Custom macros
 
@@ -226,9 +225,9 @@ If the creative template provides default values for a macro, passing the codes 
 | Field | Type | Description |
 |:---|:---|:---|
 | `code` | string | The exact name of the macro, as it is used in the code of the creative template, for example, `"BORDER_COLOR"`. |
-| `value` | string | The value for the macro. Note that this value must match the type of the macro, as defined in the template. For example, if a macro is of the type "integer", the value must be an integer. The possible macro types are `"true/false"`, `"string"`, `"url"`, `"integer"`, `"decimal"`, and `"select_from_list"`. |
+| `value` | string | The value for the macro. <br>**Note:** This value must match the type of the macro, as defined in the template.<br> For example, if a macro is of the type "integer", the value must be an integer. The possible macro types are `"true/false"`, `"string"`, `"url"`, `"integer"`, `"decimal"`, and `"select_from_list"`. |
 
-See the *Adding a creative that uses a custom rendering template* example in the [Examples](#examples) below for further insight.
+For further insight, see the *Adding a creative that uses a custom rendering template* example in the [Examples](#examples) below.
 
 ### Custom request template
 
@@ -302,9 +301,9 @@ The native_attribute object contains the following fields. For more information,
 
 ### Link
 
-The link object contains the landing page URL, fallback URL and Trackers associated with the native creative. The link object is required for native attribute.
+The `link` object contains the landing page URL, fallback URL and Trackers associated with the native creative. The `link` object is required for native attribute.
 
-The link object includes the following fields:
+The `link` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -319,7 +318,7 @@ All native creatives are submitted for secureauditing by default.
 
 ### Link tracker
 
-The link_tracker object includes the following fields:
+The `link_tracker` object includes the following fields:
 
 | Field | Type | Description |
 |---|---|---|
@@ -328,7 +327,7 @@ The link_tracker object includes the following fields:
 
 ### Image tracker
 
-The image_tracker object includes the following fields:
+The `image_tracker` object includes the following fields:
 
 | Name | Type | Description |
 |:---|:---|:---|
@@ -337,7 +336,7 @@ The image_tracker object includes the following fields:
 
 ### Javascript tracker
 
-The javascript_tracker object includes the following fields:
+The `javascript_tracker` object includes the following fields:
 
 | Name | Type | Description |
 |:---|:---|:---|
@@ -346,16 +345,16 @@ The javascript_tracker object includes the following fields:
 
 ### Data asset
 
-Each data_asset represents a text component of the native creative. The data_assets object includes the following fields:
+Each `data_asset` represents a text component of the native creative. The `data_assets` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `data_type` | string | The asset type for the native creative. Possible values:<br> - title<br> - description<br> - sponsored_by<br> - call_to_action<br> - display_url<br> - price<br> - sale_price<br> - rating<br> - likes<br> - downloads<br> - phone<br> - address<br> - additional_description<br> - custom_title_1 - custom_title_5<br> - custom_body_1 - custom_body_5<br> - custom_call_to_action_1 - custom_call_to_action_5<br> - custom_social_url_1 - custom_social_url_5<br> - custom_display_url_1 - custom_display_url_5<br><br>The data_type string should have double quotation marks around it. |
-| `value` | string | The content of the data_type asset that you have specified. Possible values include:<br> - title: Title of the creative.<br> - description: Description of the product or service being advertised.<br> - sponsored_by: Brand name of the sponsor.<br>call_to_action: suggested action for next step.<br> - display_url: The URL you would like displayed.<br> - price: Price for product / app / in-app purchase.<br> - sale_price: Sale price that can be used together with price to indicate a discounted price.<br> - rating: Rating of the product being offered.<br> - likes: Social media likes.<br> - downloads: Number downloads/installs of this product.<br> - phone: Phone number<br> - address: Address<br> - additional_description: The longer version of your ad's description.<br> - custom_title_1 - custom_title_5: additional titles that will appear on the native creative.<br> - custom_body_1 - custom_body_5: additional body text that will appear on the native creative.<br> - custom_call_to_action_1 - custom_call_to_action_5: Additional calls-to-action that will encourage the user to take the necessary action after viewing the native creative (e.g., signing for the mailing list).<br> - custom_social_url_1 - custom_social_url_5: Social URLs that will take the user to the corresponding social media platforms.<br> - custom_display_url_1 - custom_display_url_5: Additional public URLs that may be visible and/or automatically redirect the user to a web page that is connected to the landing page's domain.<br><br>The value string should have double quotation marks around it. |
+| `value` | string | The content of the data_type asset that you have specified. Possible values include:<br> - title: Title of the creative.<br> - description: Description of the product or service being advertised.<br> - sponsored_by: Brand name of the sponsor.<br> - call_to_action: Suggested action for next step.<br> - display_url: The URL you would like displayed.<br> - price: Price for product / app / in-app purchase.<br> - sale_price: Sale price that can be used together with price to indicate a discounted price.<br> - rating: Rating of the product being offered.<br> - likes: Social media likes.<br> - downloads: Number downloads/installs of this product.<br> - phone: Phone number.<br> - address: Address.<br> - additional_description: The longer version of your ad's description.<br> - custom_title_1 - custom_title_5: Additional titles that will appear on the native creative.<br> - custom_body_1 - custom_body_5: Additional body text that will appear on the native creative.<br> - custom_call_to_action_1 - custom_call_to_action_5: Additional calls-to-action that will encourage the user to take the necessary action after viewing the native creative (e.g., signing for the mailing list).<br> - custom_social_url_1 - custom_social_url_5: Social URLs that will take the user to the corresponding social media platforms.<br> - custom_display_url_1 - custom_display_url_5: Additional public URLs that may be visible and/or automatically redirect the user to a web page that is connected to the landing page's domain.<br><br>The value string should have double quotation marks around it. |
 
 ### Image asset
 
-Each image_asset represents an image component of the native creative. The image_asset object includes the following fields:
+Each `image_asset` represents an image component of the native creative. The `image_asset` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -366,7 +365,7 @@ Each image_asset represents an image component of the native creative. The image
 
 ### Creative asset image
 
-The creative_asset_image object includes the following fields:
+The `creative_asset_image` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -377,12 +376,12 @@ The creative_asset_image object includes the following fields:
 
 ### Image resize setting
 
-The image_resize_setting object includes the following fields:
+The `image_resize_setting` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `resize_enabled` | boolean | Indicates whether the creative should be resized. Possible values include:<br> - True<br> - False |
-| `crop_enabled` | boolean | Indicates whether the creative should be cropped to fill placement. Possible values include:<br> - True<br> - False |
+| `resize_enabled` | boolean | Indicates whether the creative should be resized. Possible values include:<br> - `True`<br> - `False` |
+| `crop_enabled` | boolean | Indicates whether the creative should be cropped to fill placement. Possible values include:<br> - `True`<br> - `False` |
 | `aspect_ratio_upper_bound` | double | The maximum aspect ratio allowed for the creative. |
 | `aspect_ratio_lower_bound` | double | The minimum aspect ratio allowed for the creative. |
 | `max_scale_factor` | double | The maximum value that the creative's width and height can be scaled. |
@@ -490,7 +489,7 @@ format and, depending on the format, the content or url. For further guidance, s
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The Xandr-assigned ID of the pixel array. You will associate pixels via the `pixel_template_id`, content, or URL fields listed below.<br>**Read Only.** |
+| `id` | int | The Xandr-assigned ID of the pixel array. You will associate pixels via the `pixel_template_id`, `content`, or `URL` fields listed below.<br>**Read Only.** |
 | `pixel_template_id` | int | The ID of the Xandr-approved pixel. You can use the [Pixel Template Service](pixel-template-service.md) to get this ID. |
 | `param_1` | string | For Xandr-approved pixel: The value for the first parameter in the pixel content or URL. To find out how many parameters are required for a Xandr-approved pixel, use the [Pixel Template Service](pixel-template-service.md). |
 | `param_2` | string | For Xandr-approved pixel: The value for the second parameter in the pixel content or URL. |
@@ -505,7 +504,7 @@ format and, depending on the format, the content or url. For further guidance, s
 
 ### Political
 
-The "political" object used to contain the following fields:
+The `"political"` object used to contain the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -546,7 +545,7 @@ These fields will be included in the Segments array:
 | Name | Type | Description |
 |:---|:---|:---|
 | `user_ready` | boolean | The status of the creative set by the user describing if the creative is ready to serve or not. Possible values: `"true"` or `"false"`. The value of **user_ready** needs to be **true** in order to reactivate an expired creative along with its audit_status.<br>**Default:** `true` |
-| `hosted_assets_association_complete` | boolean / null | Status of the creative uploaded by Xandr's internal systems. Possible values: `"true"` or `"false"` for hosted creatives and "null" for third-party creatives.<br>**Read Only.** |
+| `hosted_assets_association_complete` | boolean/null | Status of the creative uploaded by Xandr's internal systems. Possible values: `"true"` or `"false"` for hosted creatives and "null" for third-party creatives.<br>**Read Only.** |
 
 ### Third-party pixels
 
@@ -664,9 +663,9 @@ resubmitted for audit (allow_audit is set to "pending"):
 - alternative_landing_page_url
 - native_attribute
 
-Also, if the `audit_status` is "no_audit", changing allow_audit from "false" to "true" causes the creative to be resubmitted for Xandr audit.
+Also, if the `audit_status` is `"no_audit"`, changing `allow_audit` from `"false"` to `"true"` causes the creative to be resubmitted for Xandr audit.
 
-## Creative Macros
+## Creative macros
 
 Xandr has predefined some macros that can be used within the creative's `media_url`, `content`, `click_url`, and `pixel_url` fields.
 
@@ -689,7 +688,7 @@ When uploading a standard banner image creative for hosting with Xandr:
 
 Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a media_url such as [https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg](https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.png).
 
-Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include allow_audit and set it to false. Alternately, if you want to audit the creative yourself, you must include is_self_audited and set it to true.
+Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
 ```
 $ cat creative
@@ -883,7 +882,7 @@ When uploading a standard banner flash creative for hosting with Xandr:
 
 Once the creative has been registered, the content will be stored on the CDN, and the creative will be given a media_url such as [https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.jpg](https://cdn.adnxs.com/p/29/23/21/a0/292321a0bea05427598914c8bb626032.png).
 
-Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include allow_audit and set it to false. Alternately, if you want to audit the creative yourself, you must include is_self_audited and set it to true.
+Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
 ```
 $ cat creative
@@ -942,7 +941,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 When adding a third-party URL for a banner flash creative:
 
-Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include allow_audit and set it to false. Alternately, if you want to audit the creative yourself, you must include is_self_audited and set it to true.
+Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
 ```
 $ cat creative
@@ -986,10 +985,9 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Adding a MediaMind expandable creative (third-party URL)
 
-In this example, note that the media_url field provides the third-party URL for the expandable creative, and the template array specifies
-template 108, which is the Xandr standard template for creatives of the "MediaMind Expandable" media subtype and the "url-js" format.
+In this example, note that the `media_url` field provides the third-party URL for the expandable creative, and the template array specifies template 108, which is the Xandr standard template for creatives of the `"MediaMind Expandable"` media subtype and the `"url-js"` format.
 
-Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include allow_audit and set it to false. Alternately, if you want to audit the creative yourself, you must include is_self_audited and set it to true.
+Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
 ```
 $ cat creative
@@ -1033,7 +1031,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Adding a Pointroll expandable creative (third-party HTML tag)
 
-In this example, note that the content field provides the JavaScript tag for the expandable creative, and the template array specifies template 159, which is the Xandr standard template for creatives of the "Pointroll Expandable" media subtype and the "raw-html" format.
+In this example, note that the content field provides the JavaScript tag for the expandable creative, and the template array specifies template 159, which is the Xandr standard template for creatives of the `"Pointroll Expandable"` media subtype and the `"raw-html"` format.
 
 Auditing: By default, the creative will be submitted for auditing by Xandr. If you don't want the creative to be audited, you must include `allow_audit` and set it to `false`. Alternately, if you want to audit the creative yourself, you must include `is_self_audited` and set it to `true`.
 
@@ -1085,7 +1083,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Adding a popup image creative (third-party URL)
 
-In this example, note that the media_url field provides the third-party URL for the popup image creative, and the template array specifies template 10, which is the standard Xandr rendering template for the "Popup" media subtype and the "url-js" format. If you don't specify a template in the request, you must pass format as "image" and media_subtype as "popup".
+In this example, note that the `media_url` field provides the third-party URL for the popup image creative, and the template array specifies template 10, which is the standard Xandr rendering template for the `"Popup"` media subtype and the `"url-js"` format. If you don't specify a template in the request, you must pass format as `"image"` and `media_subtype` as `"popup"`.
 
 ```
 {
@@ -1134,7 +1132,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Adding a popunder image creative (third-party URL)
 
-In this example, note that the media_url field provides the third-party URL for the popunder image creative, and the template array specifies template 17, which is the standard Xandr rendering template for the "Popunder" media subtype and the "url-js" format. If you don't include a template in the request, you must pass format as "image" and media_subtype as "popunder".
+In this example, note that the `media_url` field provides the third-party URL for the popunder image creative, and the template array specifies template 17, which is the standard Xandr rendering template for the `"Popunder"` media subtype and the `"url-js"` format. If you don't include a template in the request, you must pass format as `"image"` and `media_subtype` as `"popunder"`.
 
 ```
 {
@@ -1595,7 +1593,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Submitting a creative for priority audit
 
-If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting the sla field to 2. The `sla_eta` field in the response will provide an estimated finish time for the audit.
+If you have a supplemental services agreement with Xandr for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting the `sla` field to 2. The `sla_eta` field in the response will provide an estimated finish time for the audit.
 
 ```
 $ cat creative
@@ -1632,7 +1630,7 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
 
 ### Canceling a creative audit
 
-If you have submitted a creative for Xandr audit, and the `audit_status` is `"pending"`, you can cancel the audit and not be charged the auditing fee by making a PUT request with allow_audit set to false. The `audit_status` field will be `"no_audit"` in the response.
+If you have submitted a creative for Xandr audit, and the `audit_status` is `"pending"`, you can cancel the audit and not be charged the auditing fee by making a `PUT` request with `allow_audit` set to `false`. The `audit_status` field will be `"no_audit"` in the response.
 
 ```
 $ cat creative
@@ -1658,7 +1656,7 @@ $ curl -b cookies -c cookies -X PUT -d @creative 'https://api.appnexus.com/creat
 
 ### Viewing audit stats for all creatives
 
-In this example, `"audit_stats=true"` is passed in the query string of the GET call. This returns the number of creatives with each Xandr, Microsoft, and Google audit status.
+In this example, `"audit_stats=true"` is passed in the query string of the `GET` call. This returns the number of creatives with each Xandr, Microsoft, and Google audit status.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?audit_stats=true'
@@ -1697,127 +1695,128 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative?audit_stats=true
 
 This example walks you through the process of adding the Xandr-approved Evidon AdChoices Icon pixel to a creative.
 
-1. First, you need to find out the pixel_template_id and the number of parameters you must define for the pixel. You use the [Pixel Template Service](pixel-template-service.md) to get this information.
+1. First, you need to find out the `pixel_template_id` and the number of parameters you must define for the pixel. You use the [Pixel Template Service](pixel-template-service.md) to get this information.
 
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/pixel-template'
-
-{
-    "response": {
-        "status": "OK",
-        "count": 3,
-        "start_element": 0,
-        "num_elements": 100,
-        "pixel-templates": [
-            {
-                "id": 1,
-                "name": "Evidon AdChoices Icon",
-                "format": "raw-js",
-                "content": "(function() {document.write('<sc'+'ript type=\"text/javascript\"' + ((\"https:\"
-                 == document.location.protocol) ? \"https://c.betrad.com\" : \"https://c.betrad.com\") +
-                 '/surly.js?;ad_wxh=${CREATIVE_SIZE};coid=${P1};nid=${P2};${P3}\"></scr'+'ipt>');}());",
-                "num_required_params": 2,
-                "require_reaudit": false
-            },
-            {
-                "id": 2,
-                "name": "Brilig Impression Tracker",
-                "format": "url-image",
-                "num_required_params": 1,
-                "require_reaudit": false,
-                "url": "https://p.brilig.com/contact/bct?pid=${P1}&_ct=pixel&adid=${CP_ID}&action=1"
-            },
-            ...
-        ],
-        "dbg_info": {
-            ...
+    ```
+    $ curl -b cookies -c cookies 'https://api.appnexus.com/pixel-template'
+    
+    {
+        "response": {
+            "status": "OK",
+            "count": 3,
+            "start_element": 0,
+            "num_elements": 100,
+            "pixel-templates": [
+                {
+                    "id": 1,
+                    "name": "Evidon AdChoices Icon",
+                    "format": "raw-js",
+                    "content": "(function() {document.write('<sc'+'ript type=\"text/javascript\"' + ((\"https:\"
+                     == document.location.protocol) ? \"https://c.betrad.com\" : \"https://c.betrad.com\") +
+                     '/surly.js?;ad_wxh=${CREATIVE_SIZE};coid=${P1};nid=${P2};${P3}\"></scr'+'ipt>');}());",
+                    "num_required_params": 2,
+                    "require_reaudit": false
+                },
+                {
+                    "id": 2,
+                    "name": "Brilig Impression Tracker",
+                    "format": "url-image",
+                    "num_required_params": 1,
+                    "require_reaudit": false,
+                    "url": "https://p.brilig.com/contact/bct?pid=${P1}&_ct=pixel&adid=${CP_ID}&action=1"
+                },
+                ...
+            ],
+            "dbg_info": {
+                ...
+            }
         }
     }
-}
-```
+    ```
 
-1. The Evidon AdChoices Icon pixel is the first in the response. You note that id is 1. You also note that num_required_params is 2. This
-means that, when adding the pixel to your creative, you must provide values for {P1} and {P2} in the pixel content.
+1. The Evidon AdChoices Icon pixel is the first in the response. You note that id is 1. You also note that `num_required_params` is 2. This means that, when adding the pixel to your creative, you must provide values for {P1} and {P2} in the pixel content.
 
-1. You create the JSON-formatted file for adding the pixel to the creative. In the file, you set pixel_template_id to 2, and you set
+1. You create the JSON-formatted file for adding the pixel to the creative. In the file, you set `pixel_template_id` to 2, and you set
 param_1 and param_2 to the values for {P1} and {P2} in the pixel content.
 
-> [!CAUTION]
-> The pixels array will be completely overwritten with your JSON. Therefore, if the pixels array on the creative already includes any pixels, be sure to specify them in your JSON array as well. For more details, see [Creative Service](creative-service.md).
+    > [!CAUTION]
+    > The pixels array will be completely overwritten with your JSON. Therefore, if the pixels array on the creative already includes any pixels, be sure to specify them in your JSON array as well. For more details, see [Creative Service](creative-service.md).
 
-```
-$ cat creative_update
-
-{
-    "creative": {
-        "pixels": [
-            {
-                "pixel_template_id": 1,
-                "param_1":"12",
-                "param_2":"34"
-            }
-        ]
-    }
-}
-```
-
-1. Finally, you make a PUT call to update the creative. The pixels array in the response then shows that the pixel has been added. The two parameters are defined and have been populated in the pixel content.
-
-    > [!NOTE]
-    > The Evidon AdChoices Icon pixel does not cause the creative to require re-auditing, audit_status has not be reverted to "pending".
-
-```
-$ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.com/creative?id=503577&advertiser_id=35081'
-
-{
-    "response": {
-        "status": "OK",
-        "count": 1,
-        "id": "503577",
-        "start_element": 0,
-        "num_elements": 100,
+    ```
+    $ cat creative_update
+    
+    {
         "creative": {
-            "name": null,
-            "brand_id": 1,
-            "media_url": "https://creative.com/300x250",
-            "id": 503577,
-            "code": null,
-            "code2": null,
-            "state": "active",
-            "click_track_result": "not_tested",
-            "advertiser_id": 35081,
-            ...
-            "audit_status": "audited",
-            ...
             "pixels": [
                 {
-                    "id": 163,
                     "pixel_template_id": 1,
-                    "param_1": "12",
-                    "param_2": "34",
-                    "param_3": null,
-                    "param_4": null,
-                    "param_5": null,
-                    "format": "url-image",
-                    "content": "(function() {document.write('<sc'+'ript type=\"text/javascript\"' +
-                     ((\"https:\" == document.location.protocol) ? \"https://c.betrad.com\" :
-                     \"https://c.betrad.com\") + '/surly.js?;ad_wxh=${CREATIVE_SIZE};coid=12;nid=34;
-                     \"></scr'+'ipt>');}());"
+                    "param_1":"12",
+                    "param_2":"34"
                 }
-            ],
-            ...
-        },
-        "dbg_info": {
-            ...
+            ]
         }
     }
-}
-```
+    ```
+
+1. Finally, you make a `PUT` call to update the creative. The pixels array in the response then shows that the pixel has been added. The two parameters are defined and have been populated in the pixel content.
+
+    > [!NOTE]
+    > The Evidon AdChoices Icon pixel does not cause the creative to require re-auditing, `audit_status` has not be reverted to `"pending"`.
+
+    ```
+    $ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.com/creative?id=503577&advertiser_id=35081'
+    
+    {
+        "response": {
+            "status": "OK",
+            "count": 1,
+            "id": "503577",
+            "start_element": 0,
+            "num_elements": 100,
+            "creative": {
+                "name": null,
+                "brand_id": 1,
+                "media_url": "https://creative.com/300x250",
+                "id": 503577,
+                "code": null,
+                "code2": null,
+                "state": "active",
+                "click_track_result": "not_tested",
+                "advertiser_id": 35081,
+                ...
+                "audit_status": "audited",
+                ...
+                "pixels": [
+                    {
+                        "id": 163,
+                        "pixel_template_id": 1,
+                        "param_1": "12",
+                        "param_2": "34",
+                        "param_3": null,
+                        "param_4": null,
+                        "param_5": null,
+                        "format": "url-image",
+                        "content": "(function() {document.write('<sc'+'ript type=\"text/javascript\"' +
+                         ((\"https:\" == document.location.protocol) ? \"https://c.betrad.com\" :
+                         \"https://c.betrad.com\") + '/surly.js?;ad_wxh=${CREATIVE_SIZE};coid=12;nid=34;
+                         \"></scr'+'ipt>');}());"
+                    }
+                ],
+                ...
+            },
+            "dbg_info": {
+                ...
+            }
+        }
+    }
+    ```
 
 ### Adding a custom pixel to a creative
 
-In this example, the PUT request adds a custom url-js pixel to creative 503577. In the JSON-formatted file, the format is set to "url-js", and the url is set to the location of the JavaScript that you want to serve with the creative. Note in the response that audit_status is "pending"; this is because adding a custom pixel to a creative causes the creative to be resubmitted for audit.
+In this example, the `PUT` request adds a custom url-js pixel to creative 503577. In the JSON-formatted file, the format is set to `"url-js"`, and the url is set to the location of the JavaScript that you want to serve with the creative.
 
+> [!NOTE]
+> In the response that `audit_status` is `"pending"`; this is because adding a custom pixel to a creative causes the creative to be resubmitted for audit.
 > [!CAUTION]
 > The pixels array will be completely overwritten with the information in this file. Therefore, if the creative already includes any pixels, be sure to specify them in the file as well.
 
@@ -1885,7 +1884,7 @@ $ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.co
 
 ### Adding a third-party pixel to a creative
 
-In this example, the PUT request adds 2 third-party pixels to creative "503577".
+In this example, the `PUT` request adds 2 third-party pixels to creative "503577".
 
 > [!NOTE]
 > In the response that `audit_status` is `"pending"`; this is because adding a third party pixel to a creative causes the creative to be resubmitted for audit.
@@ -1956,7 +1955,7 @@ $ curl -b cookies -c cookies -X PUT -d @creative_update 'https://api.appnexus.co
 
 ### Adding a creative (third-party HTML tag)
 
-When the format field is set to `"raw-html"`, content from the `content`field must be wrapped in `document.write()`and also `escaped.`
+When the format field is set to `"raw-html"`, content from the `content` field must be wrapped in `document.write()` and also `escaped.`
 
 ```
 $ cat creative 
@@ -2009,7 +2008,7 @@ Step 1: Upload the asset to the [creative upload service](creative-upload-servic
 curl -X POST -H 'Authorization:hbapi:21816:58f909dfa3405:nym2' --form "type=image" --form "file=@./NATIVE.JPG" 'https://api.appnexus.com/creative-upload?member_id=123'
 ```
 
-The `media_asset_id`is returned.
+The `media_asset_id` is returned.
 
 ```
 {  
@@ -2075,7 +2074,7 @@ The `media_asset_id`is returned.
 }
 ```
 
-Step 2: Use the `media_asset_id`to upload the creative.
+Step 2: Use the `media_asset_id` to upload the creative.
 
 ```
 cat native

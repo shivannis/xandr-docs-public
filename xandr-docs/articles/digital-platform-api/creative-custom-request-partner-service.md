@@ -39,12 +39,12 @@ For more information, see the pages listed in the [Related Topics](#related-topi
 |:---|:---|:---|
 | `id` | int | The unique identification number of the custom partner. |
 | `name` | string | The name of the partner.<br>**Required On:** `POST` |
-| `macro_type` | string | Indicates the type of macros used to define the partner. Allowed values:<br> - **standard:** The integration is not via a user-defined **Custom Network**, and has access to our standard creative macros to build the request. This can include supported SDK integrations.<br> - `customsdk`: The integration is with a user-created **Custom Mobile Network**.<br> - `customweb`: The integration is with a user-created **Custom Web Network**.<br> - `customvideo`: The integration is with a user-created **Custom Video Network**.<br>**Default:** `standard` <br>**Required On:** `POST` |
+| `macro_type` | string | Indicates the type of macros used to define the partner. Allowed values:<br> - `standard`: The integration is not via a user-defined **Custom Network**, and has access to our standard creative macros to build the request. This can include supported SDK integrations.<br> - `customsdk`: The integration is with a user-created **Custom Mobile Network**.<br> - `customweb`: The integration is with a user-created **Custom Web Network**.<br> - `customvideo`: The integration is with a user-created **Custom Video Network**.<br>**Default:** `standard` <br>**Required On:** `POST` |
 | `member_id` | int | Determines who can use this custom creative request partner. A value of `0` indicates that any member can integrate with (i.e., use mediation to sell to) this partner. If the value is a particular non-zero member ID, the partner is only available to that member.<br>**Default:** `0` |
 | `last_modified` | datetime | **Read Only.** The date and time that this record was last changed. |
-| `creative_custom_request_partner_credentials` | array | This array contains information about the authentication credentials required for this custom request partner. This can be `null` if no credential information is required. For more details, see Creative Custom Request Partner Credentials below. |
-| `creative_custom_request_partner_integration` | array | This array indicates whether the partner is supported and active. This can be `null` if no integration information is required. For more details, see Creative Custom Request Integration below. |
-| `creative_custom_request_templates` | array | This array contains details about the macros that will be used by this custom partner. This can be `null` if no macro information is required. For more details, see Creative Custom Request Template below. |
+| `creative_custom_request_partner_credentials` | array | This array contains information about the authentication credentials required for this custom request partner. This can be `null` if no credential information is required. For more details, see [Creative Custom Request Partner Credentials](#creative-custom-request-partner-credentials) below. |
+| `creative_custom_request_partner_integration` | array | This array indicates whether the partner is supported and active. This can be `null` if no integration information is required. For more details, see [Creative Custom Request Integration](#creative-custom-request-integration) below. |
+| `creative_custom_request_templates` | array | This array contains details about the macros that will be used by this custom partner. This can be `null` if no macro information is required. For more details, see [Creative Custom Request Template](#creative-custom-request-template) below. |
 
 ### Creative custom request partner credentials
 
@@ -467,7 +467,7 @@ $ curl -b cookies -c cookies -X PUT -d @edit-ccr-partner-service.json 'https://a
 
 ### Delete a custom partner
 
-``` pre
+```
 {code}$ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/creative-custom-request-partner?id=49'
 {
     "response": {

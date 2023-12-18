@@ -23,15 +23,15 @@ If we are able to insert the Xandr macros, then the new tag or URL will be retur
 | Field | Type | Description |
 |:---|:---|:---|
 | `content` | string | **Field is used when modifying content. The content that is being modified to include Xandr macros.**<br>**Required On:** `PUT`, when transforming content. |
-| `new_content` | string | **Field is populated when modifying content. The updated content where all non-secure macros have been evaluated.** This field will contain the same value as content unless all Xandr macros are successfully inserted. |
-| `new_content_secure` | string | **Field is populated when modifying content. The updated content where all macros, both secure and non-secure, have been evaluated.** This field will contain the same value as `content` unless all Xandr macros are successfully inserted. |
-| `media_url` | string | **Field is used when modifying a media URL. The media URL that is being modified to include Xandr macros.**<br>**Required On:** `PUT`, when transforming a media URL. |
-| `new_media_url` | string | **Field is populated when modifying a media URL. The updated media URL where all non-secure macros have been evaluated.** This field will contain the same value as `media_url` unless all Xandr macros are successfully inserted. |
-| `new_media_url_secure` | string | **Field is populated when modifying a media URL. The updated media URL where all macros, secure and non-secure, have been evaluated.** This field will contain the same value as `media_url` unless all Xandr macros are successfully inserted. |
-| `recognized_servers` | array of strings | The names of the adservers that contain a URL pattern matching the value within the `content` or `media_url` field. See Macro Replacements below for more information. |
+| `new_content` | string | **Field is populated when modifying content.** The updated content where all non-secure macros have been evaluated. This field will contain the same value as `content` unless all Xandr macros are successfully inserted. |
+| `new_content_secure` | string | **Field is populated when modifying content.** The updated content where all macros, both secure and non-secure, have been evaluated. This field will contain the same value as `content` unless all Xandr macros are successfully inserted. |
+| `media_url` | string | **Field is used when modifying a media URL.** The media URL that is being modified to include Xandr macros.<br>**Required On:** `PUT`, when transforming a media URL. |
+| `new_media_url` | string | **Field is populated when modifying a media URL.** The updated media URL where all non-secure macros have been evaluated. This field will contain the same value as `media_url` unless all Xandr macros are successfully inserted. |
+| `new_media_url_secure` | string | **Field is populated when modifying a media URL.** The updated media URL where all macros, secure and non-secure, have been evaluated. This field will contain the same value as `media_url` unless all Xandr macros are successfully inserted. |
+| `recognized_servers` | array of strings | The names of the adservers that contain a URL pattern matching the value within the `content` or `media_url` field. For more information, see [Macro Replacements](#macro-replacements) below. |
 | `found_urls` | int | The number of 'src=' or 'href=' URLs found in the creative content. |
 | `matched_urls` | int | The number of `found_urls` that are from a recognized ad server. |
-| `macro_replacements` | array | An array with information about replacements that were done, listed out by macro type (e.g., cachebuster). See Macro Replacements below for more information. |
+| `macro_replacements` | array | An array with information about replacements that were done, listed out by macro type (e.g., cachebuster). For more information, see [Macro Replacements](#macro-replacements) below. |
 | `warning` | string | This field displays a warning message if the value within the `new_content_secure` or `new_media_url_secure` is not secure. |
 
 ## Macro replacements

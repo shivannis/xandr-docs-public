@@ -64,7 +64,7 @@ curl data = ([
 |:---|:---|:---|:---|
 | `username` | string | Required | The name of the user making the request. |
 | `user_id` | integer | Required | The id of the user making the request. |
-| `user_type` | string | Required | The type of user making the request, for example `"admin"`. |
+| `user_type` | string | Required | The type of user making the request. For example, `"admin"`. |
 | `entity_id` | integer | Required | The id of the user's entity. |
 | `initial_user_id` | integer | Required |  |
 | `initial_user_name` | string | Required |  |
@@ -92,9 +92,9 @@ A successful response will return JSON containing the cross-partner settings for
 >
 > 1. [Debug Auction timeout value](../monetize/understanding-the-debug-auction.md) (2000ms) \[if debug=1/true\].
 > 1. Ad Request `auction_timeout_ms` value set by the publisher.
-    >     1. For AMP, [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
-    >     1. For Android, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-android.md).
-    >     1. For iOS, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
+    > 1. For AMP, [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
+    > 1. For Android, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-android.md).
+    > 1. For iOS, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
 > 1. Placement-level `auction_timeout_ms` value. Contact your Xandr Representative to set this value.
 > 1. PSP Global Settings (Cross Partner) Timeout value set by the publisher. [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
 > 1. Member-level `default_auction_timeout_ms` value for the given data center. Contact your Xandr Representative to set this value.

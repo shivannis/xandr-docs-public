@@ -63,7 +63,10 @@ $ curl -b /Users/username/.x-api-client/usor-env-cookies -X GET \
 'https://api.appnexus.com/access-resource-dependency-list?resource_id=1'
 ```
 
-You'll get back a list of resource IDs in the `children` field. You'll need to add these IDs to your role JSON. Note that these dependencies may have their own dependencies.
+You'll get back a list of resource IDs in the `children` field. You'll need to add these IDs to your role JSON.
+
+> [!NOTE]
+> These dependencies may have their own dependencies.
 
 ```
 {

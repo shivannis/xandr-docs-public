@@ -13,7 +13,7 @@ This page shows you how to use the Campaign Service and the Profile Service to s
 
 Before careating an Outlook profile and campaign, you should add your Outlook creatives to Xandr. For instructions, see [Add a Microsoft Outlook Creative via the API](add-a-microsoft-outlook-creative-via-the-api.md).
 
-## Step 1: Create a profile that targets Outlook.com Inventory
+## Step 1: Create a profile that targets Outlook.com inventory
 
 To ensure that your campaign will reach Microsoft Outlook.com inventory, you should:
 

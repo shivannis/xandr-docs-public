@@ -25,13 +25,13 @@ This document describes the fields made available by this API service, as well a
 > [!NOTE]
 >
 > - This information is for Xandr employees. If you are an employee and an admin user, your permissions are as follows:
-    >   - You will see the global templates.
-    >   - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
+    > - You will see the global templates.
+    > - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
 > - **Template Viewing Permissions**:
 >
-    >   If you are a member you will be able to view the following templates:
-    >   - Global templates (those belonging to `member_id`=0).
-    >   - Your own templates, i.e., those associated with your `member_id`.
+    > If you are a member you will be able to view the following templates:
+    > - Global templates (those belonging to `member_id`=0).
+    > - Your own templates, i.e., those associated with your `member_id`.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
@@ -242,7 +242,7 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?memb
         ],
         "dbg_info": {
             "instance": "28.bm-hbapi.prod.nym1",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "db": "141.bm-mysql.prod.nym1",
             "reads": 1,
             "read_limit": 100,
@@ -256,7 +256,7 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?memb
             "time": 66.461801528931,
             "start_microtime": 1373651335.4519,
             "version": "1.13.52",
-            "slave_lag": 1,
+            "s1ave_lag": 1,
             "member_last_modified_age": 68896
         }
     }
@@ -308,7 +308,7 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?id=2
         },
         "dbg_info": {
             "instance": "05.hbapi.sand-08.lax1",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -316,8 +316,8 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?id=2
             "time": 68.688154220581,
             "start_microtime": 1373910064.7161,
             "version": "1.13.53.1",
-            "slave_miss": "no_service_index",
-            "slave_lag": 0,
+            "s1ave_miss": "no_service_index",
+            "s1ave_lag": 0,
             "member_last_modified_age": 1373910064
         }
     }
@@ -385,7 +385,7 @@ $ curl -b cookies -X POST -d @create.json https://api.appnexus.com/creative-cust
         },
         "dbg_info": {
             "instance": "07.hbapi.sand-08.lax1",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -393,8 +393,8 @@ $ curl -b cookies -X POST -d @create.json https://api.appnexus.com/creative-cust
             "time": 67.02995300293,
             "start_microtime": 1373914957.1776,
             "version": "1.13.53.1",
-            "slave_miss": "no_service_index",
-            "slave_lag": 0,
+            "s1ave_miss": "no_service_index",
+            "s1ave_lag": 0,
             "member_last_modified_age": 1373914957
         }
     }

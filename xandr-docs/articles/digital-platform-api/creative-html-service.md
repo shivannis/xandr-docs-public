@@ -23,7 +23,7 @@ AppNexus works with members who care deeply about brand and reputation. For this
 
 - Creatives are identified by their media_url (either a third-party adserver URL or a Content Delivery Network URL for a Flash or video file).
 - AppNexus checks media_urls on a regular basis. If a file disappears, the creative will be treated as unaudited.
-- Once a creative has passed AppNexus audit, certain changes to the creative cause it to be resubmitted for audit. For more details, see Changes That Cause Re-Audit.
+- Once a creative has passed AppNexus audit, certain changes to the creative cause it to be resubmitted for audit. For more details, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.
 - For more details on auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md).
 
 ## REST API
@@ -32,13 +32,13 @@ AppNexus works with members who care deeply about brand and reputation. For this
 |:---|:---|:---|
 | `POST` | [https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID)<br>(creative JSON) | Add a new hosted HTML5 creative to one of your advertisers. |
 | `POST` | [https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID)<br>(creative JSON) | Add a new HTML5 creative to one of your publishers. |
-| `PUT` | [https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Modify an existing hosted HTML5 creative. |
+| `PUT` | - [https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Modify an existing hosted HTML5 creative. |
 | `GET` | [https://api.appnexus.com/creative-html](https://api.appnexus.com/creative-html) | View all hosted HTML5 creatives. |
-| `GET` | [https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-html?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative-html?advertiser_code=ADVERTISER_CODE)<br>[https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID)<br>[https://api.appnexus.com/creative-html?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative-html?publisher_code=PUBLISHER_CODE) | View all hosted HTML5 creatives for an advertiser or publisher.<br><br>**Note:**<br>You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify creatives that can be deleted from the system. For more details, see First Run/Last Run. |
-| `GET` | [https://api.appnexus.com/creative-html?id=CREATIVE_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID)<br>[https://api.appnexus.com/creative-html?code=CREATIVE_CODE](https://api.appnexus.com/creative-html?code=CREATIVE_CODE) | View a specific creative. |
+| `GET` | - [https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative-html?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/creative-html?advertiser_code=ADVERTISER_CODE)<br>- [https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?publisher_id=PUBLISHER_ID)<br>- [https://api.appnexus.com/creative-html?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/creative-html?publisher_code=PUBLISHER_CODE) | View all hosted HTML5 creatives for an advertiser or publisher.<br><br>**Note:**<br>You can filter for creatives based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify creatives that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run) below. |
+| `GET` | - [https://api.appnexus.com/creative-html?id=CREATIVE_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID)<br>- [https://api.appnexus.com/creative-html?code=CREATIVE_CODE](https://api.appnexus.com/creative-html?code=CREATIVE_CODE) | View a specific creative. |
 | `GET` | [https://api.appnexus.com/creative-html?id=1,2,3](https://api.appnexus.com/creative-html?id=1,2,3) | View multiple creatives by ID using a comma-separated list. |
 | `GET` | [https://api.appnexus.com/creative-html?audit_stats=true](https://api.appnexus.com/creative-html?audit_stats=true) | View creative audit stats.<br><br>**Note:**<br>The response tells you the number of creatives with each AppNexus, Microsoft, and Google audit status. For the response format, see [Examples](#examples) below. |
-| `DELETE` | [https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative.<br><br>**Note:**<br>You cannot delete a creative that is used as the default creative for a member or placement. Default creatives can be deleted once they are disassociated from a placement. |
+| `DELETE` | - [https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&advertiser_id=ADVERTISER_ID)<br>- [https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID](https://api.appnexus.com/creative-html?id=CREATIVE_ID&publisher_id=PUBLISHER_ID) | Delete a creative.<br><br>**Note:**<br>You cannot delete a creative that is used as the default creative for a member or placement. Default creatives can be deleted once they are disassociated from a placement. |
 
 ## JSON fields
 
@@ -63,9 +63,9 @@ AppNexus works with members who care deeply about brand and reputation. For this
 | `media_url_secure` | string (1000) | The URL of the secure (HTTPS) creative - can be flash, HTML, javascript (see format) to be served on a secure ad call.<br>*This field only applies to third party creatives. Leave blank for HTML5 creatives.* |
 | `click_url` | string (2000) | The (optional) landing page URL for non-3rd party image and flash creatives.<br><br>**Note:**<br>This value must begin with "http://" or "https://"<br>**Required On:** `POST`, if template is for the "image" format. |
 | `file_name` | string (1000) | *This field does not apply to hosted video creatives.* |
-| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br>If `allow_audit` is false, this field must be `"no_audit"`.<br>If a creative is expired, you can reanimate it by changing this field. Setting it to `"pending"` will resubmit it for auditing. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br>**Default:** `"pending"` |
+| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, or `"audited"`.<br><br>**Note:**<br> - If `allow_audit` is false, this field must be `"no_audit"`.<br> - If a creative is expired, you can reanimate it by changing this field. Setting it to `"pending"` will resubmit it for auditing. For changes that automatically resubmit the creative for auditing, see [Changes That Cause Re-Audit](#changes-that-cause-re-audit) below.<br>**Default:** `"pending"` |
 | `audit_feedback` | string | The creative auditing team can pass messages about a creative in this field.<br>**Read Only.** |
-| `allow_audit` | Boolean | If `true`, the creative will be submitted for auditing. If `false`, the creative will not be submitted. Unaudited creatives can only run on a network's managed inventory.<br><br>**Note:**<br>If `audit_status` is `"no_audit"`, this field must be "false".<br>If your member is not yet active, you can add creatives, but they will not be submitted for audit (`allow_audit` will be false). Once your member has been activated, if you want these creatives to be audited, you must update the creatives and set `allow_audit` to true.<br>**Default:** `true` |
+| `allow_audit` | Boolean | If `true`, the creative will be submitted for auditing. If `false`, the creative will not be submitted. Unaudited creatives can only run on a network's managed inventory.<br><br>**Note:**<br> - If `audit_status` is `"no_audit"`, this field must be "false".<br> - If your member is not yet active, you can add creatives, but they will not be submitted for audit (`allow_audit` will be false). Once your member has been activated, if you want these creatives to be audited, you must update the creatives and set `allow_audit` to true.<br>**Default:** `true` |
 | `ssl_status` | enum | The ssl (HTTPS) status of the creative. Only creatives with ssl_status = approved will be eligible to serve on secure inventory.<br><br>**Note:**<br>If a creative fails the ssl Sherlock audit, you can submit it for a retest (once you've fixed the downstream non-secure content) by changing this field to "pending". Allowed values:<br> - `"disabled"`<br> - `"pending"`<br> - `"approved"`<br> - `"failed"`<br>**Default:** `"disabled"` |
 | `allow_ssl_audit` | Boolean | If `true`, the creative will be submitted for secure (HTTPS) auditing. If `false`, the creative will not be submitted. If `true`, either `media_url_secure` or `content_secure` is required as well.<br>**Default:** `false` |
 | `google_audit_status` | enum | **Deprecated.** Please see `adx_audit` instead. |
@@ -73,7 +73,7 @@ AppNexus works with members who care deeply about brand and reputation. For this
 | `msft_audit_status` | enum | **Deprecated.** |
 | `msft_audit_feedback` | string | **Deprecated.** |
 | `is_self_audited` | Boolean | If `true`, the creative is self-audited and thus will not go through platform (AppNexus) audit. The creative can only serve on inventory that accepts your self-classified creative or on inventory that accepts unaudited creatives.<br>**Default:** `false` |
-| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set audit_status to "pending".<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set audit_status to "no_audit".<br>**Default:** `false`<br>**Read Only.** |
+| `is_expired` | Boolean | If your creative (1) has not run and (2) has not been modified in 45 days, then it will be automatically marked expired and will not serve on any inventory.<br> - Expired creatives must be reaudited to run on third-party inventory. To unexpire a creative for third-party inventory, set `audit_status` to `"pending"`.<br> - Expired creatives do not need to be reaudited to run on direct inventory. To unexpire a creative for direct inventory, set `audit_status` to `"no_audit"`.<br>**Default:** `false`<br>**Read Only.** |
 | `is_prohibited` | Boolean | If Sherlock flags the creative for having malware or loading blocked domains, this is set true to prevent the creative from serving.<br>**Default:** `false`<br>**Read Only.** |
 | `is_hosted` | Boolean | If `true`, the creative is hosted by AppNexus.<br>**Read Only.** |
 | `lifetime_budget` | double | The lifetime budget in dollars.<br><br>**Note:**<br>To include this field in a GET response, pass attributes=1 in the query string.<br>**Default:** `unlimited` |
@@ -86,13 +86,13 @@ AppNexus works with members who care deeply about brand and reputation. For this
 | `folder` | object | To arrange your creatives in folders for convenience (usually in the UI) you will create a folder using the [Creative Folder Service](creative-folder-service.md) and then associate it here via folder ID or in the Creative Folder service via creative ID. Output is `{"id": "41", "name": "MyFolder"}`. |
 | `line_items` | array of objects | The line items that are associated with the creative. For more details, see [Line Items](#line-items) below. |
 | `is_control` | Boolean | This is a flag used to mark this creative as part of a control/test group in A/B testing. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md).<br>**Default:** `false` |
-| `segments` | array | A list of segments that a user will be added to upon viewing or clicking on this creative. For more information, see [Segments](#segments) and [example](#segments-example) below. |
+| `segments` | array | A list of segments that a user will be added to upon viewing or clicking on this creative. For more information, see [Segments](#segments) and the [example](#segments-example) below. |
 | `created_on` | timestamp | The date and time when this creative was created. If it was created before January 2010, this will be zero.<br>**Read Only.** |
 | `last_modified` | timestamp | The date and time when the creative was last modified.<br>**Read Only.** |
-| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md).<br>See [example](#categories-example). |
-| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative.<br><br>**Note:**<br>To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md).<br>See [example](#adservers-example).<br>**Read Only.** |
-| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md).<br>See [example](#technical_attributes-example). |
-| `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md).<br>See [example](#language-example).|
+| `categories` | array of objects | The categories that describe the creative and offer type.<br><br>**Note:**<br>To include categories in a GET response, pass attributes=1 in the query string. To retrieve a full list of categories, see the [Category Service](category-service.md) and the [example](#categories-example) below. |
+| `adservers` | array of objects | The ad servers that deliver the creative or are called for data collection purposes during the delivery the creative.<br><br>**Note:**<br>To include adservers in a GET response, pass attributes=1 in the query string. To retrieve a full list of ad servers, see the [Ad Server Service](ad-server-service.md) and the [example](#adservers-example) below.<br>**Read Only.** |
+| `technical_attributes` | array of objects | The attributes that describe technical characteristics of the creative, such as "Expandable" or "Video".<br><br>**Note:**<br>To include technical attributes in a GET response, pass attributes=1 in the query string. To retrieve a full list of technical attributes, see the [Technical Attribute Service](technical-attribute-service.md) and the [example](#technical_attributes-example) below. |
+| `language` | object | The language of the creative. To retrieve a full list of languages, see the [Language Service](language-service.md) and the [example](#language-example) below.|
 | `brand` | object | The brand of the company advertising the creative and the category associated with the brand. For more details, see [Brand](#brand) below.<br>**Read Only.** |
 | `sla` | int | Creatives set to "0" will be submitted for audit with a standard SLA.<br><br>**Caution:** Creatives submitted with any number other than 0 will result in a priority audit (when enabled) and resulting fees.<br>If you have a supplemental services agreement with AppNexus for priority audits, you can submit a creative for priority audit (auditing within 2 hours during business hours) by setting this field to 2. For more details about priority auditing, see [Creative Standards and Auditing](../bidders/creative-standards-and-auditing.md). |
 | `sla_eta` | timestamp | The estimate time of completion for a priority audit.<br>**Read Only.** |
@@ -154,7 +154,6 @@ AppNexus works with members who care deeply about brand and reputation. For this
 ]
 ```
 
-
 ### Line items
 
 Each object in the `line_items` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Line Item Service - ALI](line-item-service---ali.md).
@@ -184,7 +183,7 @@ Each object in the `campaigns` array includes the following fields. To obtain in
 | Name | Type | Description |
 |:---|:---|:---|
 | `user_ready` | boolean | The status of the creative set by the user describing if the creative is ready to serve or not. Possible values: `"true"` or `"false"`<br>**Default:** `true` |
-| `hosted_assets_association_complete` | boolean / null | Status of the creative uploaded by AppNexus' internal systems. Possible values: `"true"` or `"false"` for hosted creatives and "null" for third-party creatives.<br>**Read Only.** |
+| `hosted_assets_association_complete` | boolean/null | Status of the creative uploaded by AppNexus' internal systems. Possible values: `"true"` or `"false"` for hosted creatives and "null" for third-party creatives.<br>**Read Only.** |
 
 ### Competitive brands
 
@@ -213,7 +212,7 @@ These fields will be included in the Segments array:
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the segment.<br>**Required On:** POST, PUT |
-| `segment_id` | int | The ID of the segment. This field contains the same information as the id field. |
+| `segment_id` | int | The ID of the segment. This field contains the same information as the `id` field. |
 | `action` | enum | The action taken by users that will add them to the segment. Possible values: `"add on view"` or `"add on click"`.<br>**Required On:** `POST`, `PUT` |
 | `name` | string | The segment's name. |
 
@@ -301,8 +300,8 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative-html?advertiser_id
 
 ## Changes that cause re-audit
 
-Once a creative has passed AppNexus audit (audit_status is "audited"), changing any of the following fields causes the creative to be
-resubmitted for audit (allow_audit is set to "pending"):
+Once a creative has passed AppNexus audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be
+resubmitted for audit (`allow_audit` is set to `"pending"`):
 
 - media_url
 - click_url
@@ -314,8 +313,7 @@ resubmitted for audit (allow_audit is set to "pending"):
 - video_attribute
 - media_asset
 
-Also, if the audit_status is "no_audit", changing allow_audit from "false" to "true" causes the creative to be resubmitted for AppNexus
-audit.
+Also, if the `audit_status` is `"no_audit"`, changing `allow_audit` from `"false"` to `"true"` causes the creative to be resubmitted for AppNexus audit.
 
 ## Examples
 
