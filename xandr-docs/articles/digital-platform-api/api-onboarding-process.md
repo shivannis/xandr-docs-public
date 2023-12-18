@@ -56,7 +56,7 @@ We offer a pre-recorded training webinar, [API Overview and Training](https://v
 - API authorization
 - Available tools
 
-You can download a [PDF version](./attachment/166636901.pdf) of the PowerPoint presentation used in the Webinar.
+You can download a [PDF version](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/166636901.pdf) of the PowerPoint presentation used in the Webinar.
 
 You should also read the [API Best Practices](./api-best-practices.md). This document also covers many of the basic concepts that will help get you started.
 
