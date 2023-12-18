@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Build an HTML5 Xandr Creative in Adobe Edge
+title: Build an HTML5 Xandr Creative in Adobe Edge
 description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Adobe Edge.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Build an HTML5 Xandr creative in Adobe Edge
+# Build an HTML5 Xandr creative in Adobe Edge
 
 This guide explains how to use Adobe Edge to build HTML5 creatives that will properly track clicks in Xandr. It assumes that you are familiar using Adobe Edge to build creatives.
 

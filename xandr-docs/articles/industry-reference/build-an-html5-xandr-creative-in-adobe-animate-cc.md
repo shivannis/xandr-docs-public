@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Build an HTML5 Xandr Creative in Adobe Animate CC
+title: Build an HTML5 Xandr Creative in Adobe Animate CC
 description: In this article, learn step-by-step instructions about how to build an HTML5 Xandr creative in Adobe Animate CC.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Build an HTML5 Xandr creative in Adobe Animate CC
+# Build an HTML5 Xandr creative in Adobe Animate CC
 
 This guide explains how to use Adobe Animate CC to build HTML5 creatives that will properly track clicks in Xandr. It assumes that you are familiar using Adobe Animate CC to build creatives.
 

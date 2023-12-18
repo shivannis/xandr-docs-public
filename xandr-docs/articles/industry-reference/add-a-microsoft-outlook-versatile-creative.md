@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Add a Microsoft Outlook Versatile Creative
+title: Add a Microsoft Outlook Versatile Creative
 description: In this article, learn step-by-step instructions on how to add a Microsoft Outlook versatile creative.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Add a Microsoft Outlook versatile creative
+# Add a Microsoft Outlook versatile creative
 
 Microsoft Outlook creatives show up in the right-hand sidebar of the free Outlook.com webmail service after a user securely logs in. This
 page provides specifications for elements of Outlook creatives and shows you how to add them in Console.
