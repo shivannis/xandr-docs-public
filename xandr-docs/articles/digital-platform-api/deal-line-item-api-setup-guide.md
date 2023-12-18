@@ -1,6 +1,6 @@
 ---
 title: Deal Line Item API Setup Guide
-description: 
+description: Learn the process of creating and configuring a deal line item using the API.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
