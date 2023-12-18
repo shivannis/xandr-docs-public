@@ -23,18 +23,17 @@ This document describes the fields made available by this API service, as well a
 ## REST API
 
 > [!NOTE]
+> This information is for Xandr employees. If you are an employee and an admin user, your permissions are as follows:
 >
-> - This information is for Xandr employees. If you are an employee and an admin user, your permissions are as follows:
+> - You will see the global templates.
+> - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
 >
-  > - You will see the global templates.
-  > - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
+> **Template Viewing Permissions:**
 >
-> - **Template Viewing Permissions:**
+> If you are a member you will be able to view the following templates:
 >
-  > If you are a member you will be able to view the following templates:
-  >
-  > - Global templates (those belonging to `member_id`=0).
-  > - Your own templates, i.e., those associated with your `member_id`.
+> - Global templates (those belonging to `member_id`=0).
+> - Your own templates, i.e., those associated with your `member_id`.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
