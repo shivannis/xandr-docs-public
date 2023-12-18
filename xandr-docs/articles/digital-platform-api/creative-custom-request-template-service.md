@@ -28,7 +28,7 @@ This document describes the fields made available by this API service, as well a
     > - You will see the global templates.
     > - You can view member-specific templates by appending `a =member_id=field` to the query string of your request.
 > - **Template Viewing Permissions**:
->
+    >
     > If you are a member you will be able to view the following templates:
     > - Global templates (those belonging to `member_id`=0).
     > - Your own templates, i.e., those associated with your `member_id`.
