@@ -90,16 +90,16 @@ A successful response will return JSON containing the cross-partner settings for
 > [!NOTE]
 > The full timeout hierarchy in order from highest to lowest priority is:
 >
-1. > [Debug Auction timeout value](../monetize/understanding-the-debug-auction.md) (2000ms) \[if debug=1/true\].
-1. > Ad Request `auction_timeout_ms` value set by the publisher.
-   1. > For AMP, [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
-   1. > For Android, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-android.md).
-   1. > For iOS, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
-1. > Placement-level `auction_timeout_ms` value. Contact your Xandr Representative to set this value.
-1. > PSP Global Settings (Cross Partner) Timeout value set by the publisher. [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
-1. > Member-level `default_auction_timeout_ms` value for the given data center. Contact your Xandr Representative to set this value.
-1. > Member-level `default_auction_timeout_ms` value. Contact your Xandr Representative to set this value.
-1. > Xandr data center/global default (150ms).
+> 1. [Debug Auction timeout value](../monetize/understanding-the-debug-auction.md) (2000ms) \[if debug=1/true\].
+> 1. Ad Request `auction_timeout_ms` value set by the publisher.
+    > 1. For AMP, [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
+    > 1. For Android, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-android.md).
+    > 1. For iOS, [See guidance here](../mobile-sdk/set-the-auction-timeout-for-ios.md).
+> 1. Placement-level `auction_timeout_ms` value. Contact your Xandr Representative to set this value.
+> 1. PSP Global Settings (Cross Partner) Timeout value set by the publisher. [See guidance here](../monetize/add-or-edit-psp-global-settings.md).
+> 1. Member-level `default_auction_timeout_ms` value for the given data center. Contact your Xandr Representative to set this value.
+> 1. Member-level `default_auction_timeout_ms` value. Contact your Xandr Representative to set this value.
+> 1. Xandr data center/global default (150ms).
 
 ### Price granularity
 
