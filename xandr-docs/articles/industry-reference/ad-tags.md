@@ -1,11 +1,11 @@
 ---
-title: Industry Reference - Ad Tags
+title: Ad Tags
 description: In this article, learn about Ad tags and how does an ad tag work with detailed set of examples.
 ms.date: 10/28/2023
 ms.custom: industry-reference
 ---
 
-# Industry Reference - Ad tags
+# Ad tags
 
 Ad tags are used for many purposes in display advertising:
 
