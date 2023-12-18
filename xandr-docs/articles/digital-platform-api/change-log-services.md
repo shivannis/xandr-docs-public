@@ -55,7 +55,7 @@ changes in which you are interested. The Change Log service is only available t
 | `transaction_id` | int | The ID of the change transaction accepted as input to the endpoint. |
 | `resource_id` | int | The ID of the object used to make the change. |
 | `created_on` | timestamp | The date and time of the modification to the object in `YYYY-MM-DD` `HH:MM:SS` format. |
-| `sort` | string | A string of the format, “FIELD.[asc\|desc]”. For example, `created_on.asc` for ascending sort on `created_on`. Currently, only sorting on `created_on` is permitted. |
+| `sort` | string | A string of the format, `“FIELD.[asc\|desc]”`. For example, `created_on.asc` for ascending sort on `created_on`. Currently, only sorting on `created_on` is permitted. |
 | `modified_by_admin` | boolean | Filter by items that are modified by the administrators only.<br><br>**Note:** This request parameter is only usable in `GET` requests. |
 | `modified_by_plugin` | boolean | Filter by items that are modified by the plugins only.<br><br>**Note:** This request parameter is only usable in `GET` requests. |
 | `transactions_with_changes` | boolean | Filter by items that have changes. |

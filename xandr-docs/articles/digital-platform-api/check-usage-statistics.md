@@ -22,7 +22,7 @@ When making a call to the API to retrieve statistics, the following fields can b
 - `end` date should be set in the following format: `2015-12-01+01:00:00`.
 
 ```
-curl -H"Authorization: hbapi:123456:9876abcd54321:nym2"-XGET"https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"
+curl -H "Authorization: hbapi:123456:9876abcd54321:nym2"-XGET"https://streaming-data.appnexus.com/rt-segment-processed?member_id=100&start=2014-05-22+00:00:00&end=2014-05-22+01:00:00"
 ```
 
 The statistics are deduplicated per request made to the service. For example, if the same user is added to the same segment in three

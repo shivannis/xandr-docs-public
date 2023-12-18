@@ -11,8 +11,8 @@ Once you've added an Outlook creative, you can make a GET call to the [Creative 
 
 | Field | Statuses |
 |:---|:---|
-| `ssl_audit` | The eligibility of the creative to serve on secure inventory. Possible values:<br> - `"pending"`: The creative is being SSL audited by Xandr.<br> - `"approved"`: The creative has passed the SSL audit and is eligible to serve on secure inventory.<br> - `"failed"`: The creative has been rejected for SSL audit and is not eligible to serve on secure inventory. |
-| `msft_audit_status` | The eligibility of the creative to search on Microsoft inventory. Possible values:<br> - `"pending"`: The creative is being audited for Microsoft Creative Acceptance Policy by Xandr.<br> - `"approved"`: The creative has passed Microsoft CAP audit and is eligible to serve on Microsoft Advertising Exchange.<br> - `"rejected"`: The creative has been rejected for Microsoft CAP audit and is not eligible to serve on Microsoft Advertising Exchange .  |
+| `ssl_audit` | The eligibility of the creative to serve on secure inventory. <br>Possible values:<br> - `"pending"`: The creative is being SSL audited by Xandr.<br> - `"approved"`: The creative has passed the SSL audit and is eligible to serve on secure inventory.<br> - `"failed"`: The creative has been rejected for SSL audit and is not eligible to serve on secure inventory. |
+| `msft_audit_status` | The eligibility of the creative to search on Microsoft inventory. <br>Possible values:<br> - `"pending"`: The creative is being audited for Microsoft Creative Acceptance Policy by Xandr.<br> - `"approved"`: The creative has passed Microsoft CAP audit and is eligible to serve on Microsoft Advertising Exchange.<br> - `"rejected"`: The creative has been rejected for Microsoft CAP audit and is not eligible to serve on Microsoft Advertising Exchange .  |
 
 > [!TIP]
 > If an Outlook creative fails the Xandr SSL or Microsoft audit, you can re-submit it for audit (once you've fixed the downstream non-secure content) by changing `ssl_status` to `"pending"`.

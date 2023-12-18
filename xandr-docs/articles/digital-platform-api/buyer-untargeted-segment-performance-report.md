@@ -1,11 +1,11 @@
 ---
-title: Digital Platform API - Buyer Untargeted Segment Performance Report
+title: Digital Platform API Internal Services - Buyer Untargeted Segment Performance Report
 description: In this article, learn about the Buyer Untargeted Segment Performance report, their time frame, data retention period, dimensions, and metrics with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Buyer Untargeted Segment Performance report
+# Digital Platform API Internal Services - Buyer Untargeted Segment Performance report
 
 > [!NOTE]
 > Xandr UI users may only access this report via the API. However, this documentation page is only exposed to Xandr employees.
@@ -37,9 +37,9 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: `229` = PSA, `0` = Blank, or `319` = Default.<br>**Example:** `123`<br>**Group:** Yes<br>**Filter:** Yes |
 | `insertion_order_id` | int | The ID of the insertion order.<br>**Group:** Yes<br>**Filter:** Yes |
 | `campaign_id` | int | The ID of the campaign.<br>**Example:** `123`<br>**Group:** Yes<br>**Filter:** Yes |
-| `advertiser_id` | int | The ID of the advertiser. If the value is 0, either the impression was purchased by an external buyer, or a default or PSA was shown.<br>**Example:** `789`<br>Group: Yes<br>**Filter:** Yes |
+| `advertiser_id` | int | The ID of the advertiser. If the value is 0, either the impression was purchased by an external buyer, or a default or PSA was shown.<br>**Example:** `789`<br>**Group:** Yes<br>**Filter:** Yes |
 | `line_item_id` | int | The ID of the line item.<br>**Example:** `111`<br>**Group:** Yes<br>**Filter:** Yes |
-| `pixel_id` | int | The ID of the pixel.<br>**Example:** `123`<br>Group: Yes<br>**Filter:** Yes |
+| `pixel_id` | int | The ID of the pixel.<br>**Example:** `123`<br>**Group:** Yes<br>**Filter:** Yes |
 | `advertiser_name` | string | The name of the advertiser.<br>**Example:** `"Verizon Wireless"`<br>**Group:** No<br>**Filter:** No |
 | `advertiser` | string | **Deprecated** (as of October 17, 2016). |
 | `line_item_name` | string | The name of the line item.<br>**Example:** `"Default Line Item"`<br>**Group:** No<br>**Filter:** No |
@@ -49,8 +49,8 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `segment` | string | **Deprecated** (as of October 17, 2016). |
 | `insertion_order_name` | string | The name of the insertion order.<br>**Example:** `"Mobile Insertion Order"`<br>**Group:** No<br>**Filter:** No |
 | `insertion_order` | string | **Deprecated** (as of October 17, 2016). |
-| `segment_code` | int | The (optional) custom code associated with the user segment present for this impression.<br>**Example:** `12456`<br>Group: No<br>Filter: No |
-| `age_bucket` | string | The age bucket in which the user is contained. For more information, see [Age Bucket](#age-bucket).<br>**Group:** Yes<br>**Filter:** Yes |
+| `segment_code` | int | The (optional) custom code associated with the user segment present for this impression.<br>**Example:** `12456`<br>**Group:** No<br>**Filter:** No |
+| `age_bucket` | string | The age bucket in which the user is contained. For more information, see [Age Bucket](#age-bucket) below.<br>**Group:** Yes<br>**Filter:** Yes |
 | `age_bucket_id` | int | The ID of the age bucket.<br>**Group:** Yes<br>**Filter:** Yes |
 | `gender` | string | The gender segment.<br>**Group:** Yes<br>**Filter:** Yes |
 | `is_targeted` | int | Whether or not the line item targeted the segment.<br>**Group:** Yes<br>**Filter:** Yes |
@@ -196,7 +196,7 @@ $ curl -b cookies 'https://api.appnexus.com/report?id=09b6979a6a4c3805bdac892137
 
 ### Step 4: `GET` the report data from the Report Download Service
 
-To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download`service. You can find the service and report ID in the `"url"` field of the response to your previous `GET` call. When setting the file to which you want to save the report, use the file extension of the `"format"` (e.g., .csv) that you specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download` service. You can find the service and report ID in the `"url"` field of the response to your previous `GET` call. When setting the file to which you want to save the report, use the file extension of the `"format"` (e.g., .csv) that you specified in your initial `POST`.
 
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use `\-i` or `\-v` in your call to expose the response header.

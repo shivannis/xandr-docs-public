@@ -13,11 +13,11 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE)<br>(campaign JSON) | Add a new campaign. |
-| `PUT` | [https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE)<br>(campaign JSON) | Modify an existing campaign. |
-| `GET` | [https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID)<br>[https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE) | View a specific campaign for one of your advertisers. |
-| `GET` | [https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID<br>https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID<br>https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE) | View all of the campaigns for one of your advertisers. |
-| `GET` | [https://api.appnexus.com/campaign?id=1,2,3](https://api.appnexus.com/campaign?id=1,2,3) | View multiple campaigns by ID using a comma-separated list.<br><br>**Note:** **Helpful Filters**<br> - You can filter for campaigns based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify campaigns that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run).<br>You can filter for campaigns that are not serving due to various conditions. For more details, see [Alerts](#alerts). |
+| `POST` | - [https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE)<br>(campaign JSON) | Add a new campaign. |
+| `PUT` |  - [https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE)<br>(campaign JSON) | Modify an existing campaign. |
+| `GET` |  - [https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?code=CAMPAIGN_CODE&advertiser_code=ADVERTISER_CODE) | View a specific campaign for one of your advertisers. |
+| `GET` | - [https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID)<br> - [https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/campaign?advertiser_id=ADVERTISER_ID<br>https://api.appnexus.com/campaign?advertiser_code=ADVERTISER_CODE) | View all of the campaigns for one of your advertisers. |
+| `GET` | [https://api.appnexus.com/campaign?id=1,2,3](https://api.appnexus.com/campaign?id=1,2,3) | View multiple campaigns by ID using a comma-separated list.<br><br>**Note:** **Helpful Filters**<br> - You can filter for campaigns based on when they first and last served. This is particularly useful when you are approaching your [object limit](object-limit-service.md) and need to identify campaigns that can be deleted from the system. For more details, see [First Run/Last Run](#first-runlast-run).<br> - You can filter for campaigns that are not serving due to various conditions. For more details, see [Alerts](#alerts). |
 | `GET` | [https://api.appnexus.com/campaign?search=SEARCH_TERM](https://api.appnexus.com/campaign?search=SEARCH_TERM) | Search for campaigns with IDs or names containing certain characters. |
 | `DELETE` | [https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID](https://api.appnexus.com/campaign?id=CAMPAIGN_ID&advertiser_id=ADVERTISER_ID) | Delete a campaign.<br><br>**Caution:**<br>Deletion is permanent and cannot be reverted. Although deleted campaigns continue to be available in reporting, you will no longer have visibility into their specific settings (e.g., cost budget and targeting). |
 | `GET` | [https://api.appnexus.com/campaign/meta](https://api.appnexus.com/campaign/meta) | Find out which fields you can filter and sort by. |
@@ -30,7 +30,7 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 |:---|:---|:---|
 | `id` | int | The ID of the campaign.<br>**Required On:** `PUT`, in query string. |
 | `State` | enum | The state of the campaign. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
-| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the querystring.<br>**Default:** false<br>**Read Only.** |
+| `parent_inactive` | boolean | If `true`, the campaign is inactive due to the parent line item being inactive, and the campaign's `state` is overridden (i.e., if `"parent_inactive": "true"` and `"state": "active"`, then the campaign is inactive).<br><br>**Note:**<br>To return this field, the `advertiser_id` must be included in the querystring.<br>**Default:** `false`<br>**Read Only.** |
 | `code` | string (100) | A custom code for the campaign. The code may only contain alphanumeric characters, periods, underscores or dashes. The code you enter is not case-sensitive (upper- and lower-case characters are treated the same). No 2 objects at the same level (e.g., line items or campaigns) can use the same code per advertiser. For example, 2 lines items cannot both use code "XYZ", but a single line item and its child campaign can. |
 | `name` | string (255) | The name of the campaign.<br>**Required On:** `POST` |
 | `short_name` | string (50) | The name used by the Imp Bus. |
@@ -39,13 +39,13 @@ A campaign is a way to organize a set of targeting parameters within our platfor
 | `line_item_id` | int | The ID of the line item to which the campaign is associated.<br><br>**Caution:**<br>No more than 500 campaigns can be associated to a single line item.<br><br>**Required On:** `POST` |
 | `start_date` | timestamp | The date and time when the campaign should start serving. Null corresponds to "immediately". This value reflects the Advertiser's time zone.<br>**Default:** `null` |
 | `end_date` | timestamp | The date and time when the campaign should stop serving. Null corresponds to "indefinitely". This value reflects the Advertiser's time zone.<br>**Default:** `null` |
-| `creatives` | array | The list of creative IDs or codes associated to the campaign. Update only requires id or code to be passed in but GET request will include more creative fields for convenience. See below [example](#creatives-example).<br>For more information, see [Creatives](#creatives) below. |
+| `creatives` | array | The list of creative IDs or codes associated to the campaign. Update only requires id or code to be passed in but GET request will include more creative fields for convenience. <br>For more information, see [Creatives](#creatives) and the [example](#creatives-example) below. |
 | `creative_groups` | array of IDs | You may wish to bucket a group of creatives and then add them to a campaign all at once. Create groups through the [Line Item Service](line-item-service.md). |
 | `timezone` | enum | The timezone of the campaign. For details and accepted values, see [API Timezones](api-timezones.md). If no timezone is set, this will default to the advertiser's timezone, which defaults to the member's timezone, which defaults to EST5EDT. Campaign daily budgets are reset at midnight in the timezone of the campaign, so this field determines that time.<br><br>**Note:**<br>Any `PUT` calls to the `advertiser` service which include `set_child_timezone=true` in the query string will cause any timezone settings on the lower level objects (e.g., insertion orders, line items, campaigns) to be overridden with the latest timezone value for that advertiser.<br><br>**Default:** The advertiser's timezone. |
 | `last_modified` | timestamp | The time of last modification to this campaign. |
 | `supply_type` | string | The types of supply targeted by this campaign, as defined by the `supply_type_targets` field in the associated [profile](profile-service.md). This string can contain one or more of the following values, separated by commas: web, mobile_web, and mobile_app.<br>**Read Only.** |
 | `supply_type_action` | enum | Whether the types of supply are "included" or "excluded" from targeting, as defined by the `supply_type_action` field in the associated [profile](profile-service.md).<br>**Read Only.** |
-| `inventory_type` | enum | The type of inventory targeted by this campaign. <br>Possible values: "real_time", "direct", or "both". "Real-time" includes all third-party inventory not managed by your network that has been enabled for reselling including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager. "Direct" includes only inventory managed by your network.<br><br>**Default:** "real_time" |
+| `inventory_type` | enum | The type of inventory targeted by this campaign. <br>Possible values: `"real_time"`, `"direct"`, or `"both"`. `"Real-time"` includes all third-party inventory not managed by your network that has been enabled for reselling including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager. `"Direct"` includes only inventory managed by your network.<br><br>**Default:** `"real_time"` |
 | `roadblock_creatives` | boolean | Only serve this campaign if all creatives attached to it, are able to serve on one page load.<br><br>**Note:**<br>Roadblocking is only enabled for direct inventory. If you attempt to set `roadblock_creatives` to `true` for an `inventory_type` other than `direct`, the API will return an error. |
 | `roadblock_type` | enum | There are several types of roadblocks available. Allowed values are `"no_roadblock"`, `"normal_roadblock"` (where the number of creatives is greater than or equal to the number of placements), `"partial_roadblock"` (where the number of creatives is less than or equal to the number of placements), and `"exact_roadblock"` (where the number of creatives is equal to the number of available placements).<br><br>**Default:** `"no_roadblock"` |
 | `stats` | object | The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead. |
@@ -117,7 +117,7 @@ These optional fields give advanced users extra control over optimizing their ca
 "Optimization Levers" in the UI documentation (customer login required).
 
 > [!TIP]
-> If you would like access to optimization levers, a Xandr admin must set the `expose_optimization_levers` field to true for your [member](member-service.md). For more details, contact your account representative.
+> If you would like access to optimization levers, a Xandr admin must set the `expose_optimization_levers` field to `true` for your [member](member-service.md). For more details, contact your account representative.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -127,13 +127,13 @@ These optional fields give advanced users extra control over optimizing their ca
 | `max_learn_bid` | double | When using the `cpm_bid_type` "predicted", the optimization engine submits "learn" bids to learn about new inventory. If necessary, enter the max CPM dollar amount for these bids. <br><br>**Note:** When you set both `max_learn_bid` for learn bids and `max_bid` for non-learn bids, the lower of the two will be used for learn.<br>**Default:** `null` |
 | `cadence_type` | enum | The level at which the cadence modifier is applied. Possible values: `"advertiser"` or `"creative"`.<br>**Default:** `"advertiser"` |
 | `defer_to_li_prediction` | boolean | If true, this campaign will temporarily change the level at which it learns while maintaining a specified profit margin percentage. See "Optimization Levers" in the UI documentation for more details (customer login required).<br>**Default:** `false` |
-| `optimization_lookback` | array of objects | Optimization is based on the last 30 days of data, evenly weighted. You can use this field to give more weight to certain days within that window. Possible values for "day": 0 - 29. Possible values for "bias_percent": 0 - 100. See [example](#optimization_lookback-example). |
+| `optimization_lookback` | array of objects | Optimization is based on the last 30 days of data, evenly weighted. You can use this field to give more weight to certain days within that window. <br>Possible values for "day": 0 - 29. <br>Possible values for "bias_percent": 0 - 100. <br>For more details, see [example](#optimization_lookback-example) below. |
 | `optimization_version` | string | Indicates the version of optimization currently in use.<br>**Default:** `v7`<br>**Read Only.** |
 | `learn_override_type` | enum | If you want to override our algorithm's learn bid, this is the type of bid to submit instead. Possible values:<br> - `"base_cpm_bid"`: A flat CPM bid. You specify the CPM value in the `base_cpm_bid_value` field.<br> - `"venue_avg_cpm_bid"`: The average bid for each venue.<br>**Default:** `null` |
 | `base_cpm_bid_value` | double | The CPM value to use for learn bids, when `learn_override_type` is "cpm_learn_bid". This value cannot be greater than 10.0.<br>**Default:** `null`<br>**Required On:** `POST`/`PUT`, if `learn_override_type` is `"base_cpm_bid"`. |
 | `bid_multiplier` | double | The value by which to multiply the learn bid. This can be used for our algorithm's default learn bid or an override learn bid when `learn_override_type` is `"venue_average_cpm_bid"`. This value cannot be greater than `10.0`.<br>**Default:** `1.0` |
 | `impression_limit` | int | For a specific venue, the number of impressions after which to stop overriding our algorithm's learn bid. This value must be greater than 0.<br>**Default:** `40000` |
-| `campaign_modifiers` | array of objects | An array of objects containing the segment modifier-related settings associated with this campaign (format shown below). For more information, see "Segment Modifier" in the UI documentation (customer login required).<br><br>**Note:**<br>You cannot set both `campaign_modifier` and `bid_modifier_model` in a single campaign.<br>See [example](#campaign_modifiers-example). |
+| `campaign_modifiers` | array of objects | An array of objects containing the segment modifier-related settings associated with this campaign (format shown below). For more information, see "Segment Modifier" in the UI documentation (customer login required).<br><br>**Note:**<br>You cannot set both `campaign_modifier` and `bid_modifier_model` in a single campaign.<br>For more details, see [example](#campaign_modifiers-example) below. |
 | `bid_modifier_model` | object | The custom predictive model to apply multipliers to the campaign's optimization-derived CPM bid. This type of model is used in conjunction with our optimization-based buying strategy (when `cpm_bid_type` is `"predicted"` or `"margin"`).<br>For more details, see [Bid Modifier Model](#bid-modifier-model) below.<br><br>**Note:**<br>You can set `bid_modifier_model` only when `inventory_type` is `"rtb"`. Also, you cannot set both `bid_modifier_model` and `campaign_modifier` in a single campaign.<br>**Default:** `null` |
 
 #### `optimization_lookback` example
@@ -188,7 +188,7 @@ To create or edit brokers, refer to the [Broker Service](broker-service.md).
 |:---|:---|:---|
 | `broker_id` | int | The ID of the broker. |
 | `broker_name` | string | The name of the broker.<br>**Read Only.** |
-| `payment_type` | enum | Type of payment to the broker. Possible values: "cpm" or "revshare". |
+| `payment_type` | enum | Type of payment to the broker. <br>Possible values: `"cpm"` or `"revshare"`. |
 | `value` | double | The value of the payment, based on the payment type. |
 | `description` | string (255) | The free-form description of the broker fee entry. |
 
@@ -253,22 +253,22 @@ $ curl -b cookies -c cookies -X PUT -d @modify-broker-fee.json 'https://api.appn
 
 ### Creatives
 
-Each object in the `creatives` array includes the following fields. To obtain information for "id" or "code" fields, you can use the [Creative Service](creative-service.md).
+Each object in the `creatives` array includes the following fields. To obtain information for `"id"` or `"code"` fields, you can use the [Creative Service](creative-service.md).
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the creative. Either "id" or "code" is required when updating creative association.<br>**Required On:** `PUT` |
-| `code` | string | The custom code for the creative. Either "id" or "code" is required when updating creative association.<br>**Required On:** `PUT` |
+| `id` | int | The ID of the creative. Either `"id"` or `"code"` is required when updating creative association.<br>**Required On:** `PUT` |
+| `code` | string | The custom code for the creative. Either `"id"` or `"code"` is required when updating creative association.<br>**Required On:** `PUT` |
 | `name` | string | The name of the creative.<br>**Read Only.** |
 | `width` | int | The width of the creative.<br>**Read Only.** |
 | `height` | int | The height of the creative.<br>**Read Only.** |
-| `state` | enum | The state of the creative. Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
-| `audit_status` | enum | The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, `"audited"`, or `"unauditable"`.<br>**Read Only.** |
+| `state` | enum | The state of the creative. <br>Possible values: `"active"` or `"inactive"`.<br>**Read Only.** |
+| `audit_status` | enum | The audit status of the creative. <br>Possible values: `"no_audit"`, `"pending"`, `"rejected"`, `"audited"`, or `"unauditable"`.<br>**Read Only.** |
 | `is_expired` | boolean | Whether the creative is expired. If `false`, the creative is active.<br>**Read Only.** |
 | `is_prohibited` | boolean | Whether the creative falls into a prohibited category on our platform. |
 | `is_self_audited` | boolean | Whether the creative is self-audited. If `true`, then yes. <br>**Read Only.** |
-| `format` | enum | The format of the creative file. Possible values: `"url-html"`, `"url-js"`, `"flash"`, `"image"`, `"raw-js"`, `"raw-html"`, `"iframe-html"`, or `"text"`.<br>**Read Only.** |
-| `weight` | int | A user-supplied weight that determines the creative rotation strategy for same-sized creatives managed at the campaign level. To use this field, the value of `creative_distribution_type` must be `"weighted"`. Allowed value: An integer greater than `0` and less than or equal to `1000`. |
+| `format` | enum | The format of the creative file. <br>Possible values: `"url-html"`, `"url-js"`, `"flash"`, `"image"`, `"raw-js"`, `"raw-html"`, `"iframe-html"`, or `"text"`.<br>**Read Only.** |
+| `weight` | int | A user-supplied weight that determines the creative rotation strategy for same-sized creatives managed at the campaign level. To use this field, the value of `creative_distribution_type` must be `"weighted"`. <br>Allowed value: An integer greater than `0` and less than or equal to `1000`. |
 | `pop_window_maximize` | boolean | If `true`, the publisher's tag will maximize the window. Only relevant for creatives with format `"url-html"` and `"url-js"`. If `pop_window_maximize` is set to `true`, then neither `"height"` nor `"width"` should be set on the creative.<br>**Read Only.** |
 
 ### Valuation

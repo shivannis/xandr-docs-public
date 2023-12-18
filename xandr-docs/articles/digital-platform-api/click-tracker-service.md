@@ -153,8 +153,7 @@ $ curl -b cookies -c cookies -X POST -d @clicktracker 'https://api.appnexus.com/
 
 ### Updating a click tracker
 
-In this example, the PUT request associates a placement to click tracker
-1425.
+In this example, the `PUT` request associates a placement to click tracker 1425.
 
 ```
 $ cat clicktracker_update
