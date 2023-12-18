@@ -1,185 +1,39 @@
 ---
-Title : Email Template Service
-Description : Administrators use this service to create and manage templates for
+title: Email Template Service
+description: Use the email template service to create and manage templates for system-generated emails.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-system-generated emails. A template will define an email's content and
 ---
 
+# Email template service
 
-# Email Template Service
-
-
-
-Administrators use this service to create and manage templates for
-system-generated emails. A template will define an email's content and
-styling. This service was developed to more easily manage Tango emails.
-However, the service can be used to manage a template for system emails
-of any kind.  
-
-
+Administrators use this service to create and manage templates for system-generated emails. A template will define an email's content and styling. This service was developed to more easily manage Tango emails. However, the service can be used to manage a template for system emails of any kind.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002281__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002281__entry__2" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002281__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__2"><a
-href="https://api.appnexus.com/email-template" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/email-template</a><br />
-&#10;<p>(add_template JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__3">Add
-a new email template</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__2"><a
-href="https://api.appnexus.com/email-template" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/email-template</a><br />
-&#10;<p>(modify_template JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__3">Modify an existing email template</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__2"><a
-href="https://api.appnexus.com/email-template" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/email-template</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__3">View
-all email templates</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__2"><a
-href="https://api.appnexus.com/email-template/id=EMAIL_TEMPLATE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/email-template?id=EMAIL_TEMPLATE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__3">View
-a specific email template</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__2"><a
-href="https://api.appnexus.com/email-template/id=EMAIL_TEMPLATE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/email-template?id=EMAIL_TEMPLATE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__3">Delete an email template</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | HTTP Method | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/email-template<br><br>(`add_template` JSON) | Add a new email template |
+| `PUT` | https://api.appnexus.com/email-template<br><br>(`modify_template` JSON) | Modify an existing email template |
+| `GET` | https://api.appnexus.com/email-template | View all email templates |
+| `GET` | https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID | View a specific email template |
+| `DELETE` | https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID | Delete an email template |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002281__entry__19"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00002281__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002281__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__21">The
-ID of the email template.
-<p><strong>Default:</strong> Auto-incremented number.</p>
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>, in
-query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__21">The
-name of the email template.
-<p><strong>Default:</strong>NA</p>
-<p><strong>Required On:</strong><code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__19"><code
-class="ph codeph">subject</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__21">The
-text that should appear in the subject line of the email.
-<p><strong>Default:</strong>NA</p>
-<p><strong>Required On:</strong><code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__19"><code
-class="ph codeph">body</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002281__entry__21">The
-text that should appear in the body of the email.
-<p><strong>Default:</strong>NA</p>
-<p><strong>Required On:</strong><code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__19"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002281__entry__21"><strong>Read Only.</strong> The date
-the email template was last modified.
-<p><strong>Default:</strong>NA</p>
-<p><strong>Required On:</strong>NA</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the email template.<br>**Default**: Auto-incremented number.<br>**Required On**: `PUT`, in query string. |
+| `name` | string | The name of the email template.<br>**Default**: NA<br>**Required On**: `POST` |
+| `subject` | string | The text that should appear in the subject line of the email.<br>**Default**: NA<br>**Required On**: `POST` |
+| `body` | string | The text that should appear in the body of the email.<br>**Default**: NA <br>**Required On**: POST |
+| `last_modified` | string | **Read Only**. The date the email template was last modified.<br>**Default**: NA<br>**Required On**: NA |
 
 ## Examples
 
+### Add an email template
 
-
-**Add an email template**
-
-``` pre
+```
 $ cat add_template
 
 {
@@ -191,9 +45,7 @@ $ cat add_template
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @add_template.json "https://api.appnexus.com/email-template"
 {
   "response": {
@@ -210,14 +62,11 @@ $ curl -b cookies -c cookies -X POST -d @add_template.json "https://api.appnexus
 }
 ```
 
-**Modify an email template**
+### Modify an email template
 
+In this example, the PUT request updates the subject line in email template 35.
 
-
-In this example, the PUT request updates the subject line in email
-template 35.
-
-``` pre
+```
 $ cat modify_template
 
 {
@@ -228,9 +77,7 @@ $ cat modify_template
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X PUT -d @modify_template.json "https://api.appnexus.com/email-template"
 {
   "response": {
@@ -250,9 +97,9 @@ $ curl -b cookies -c cookies -X PUT -d @modify_template.json "https://api.appnex
 }
 ```
 
-**View all email templates**
+### View all email templates
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/email-template"
 {
   "response": {
@@ -294,9 +141,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/email-template"
 }
 ```
 
-**View a specific email template**
+### View a specific email template
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/email-template?id=35"
 {
   "response": {
@@ -313,9 +160,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/email-template?id=35"
 }
 ```
 
-**Delete an email template**
+### Delete an email template
 
-``` pre
+```
 $ curl -b cookies -c cookies -X DELETE "https://api.appnexus.com/email-template?id=35"
 {
   "response": {
@@ -323,9 +170,3 @@ $ curl -b cookies -c cookies -X DELETE "https://api.appnexus.com/email-template?
   }
 }
 ```
-
-
-
-
-
-
