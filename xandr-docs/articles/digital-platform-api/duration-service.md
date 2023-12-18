@@ -1,6 +1,6 @@
 ---
-Title : Duration Service
-Description : Use the duration service to see what video content durations are registered in the system.
+title: Duration Service
+description: Use the duration service to see what video content durations are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -13,8 +13,8 @@ Use the read-only Duration Service to see what video content durations are regis
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/video-content-duration | To view all defined durations |
-| `GET` | https://api.appnexus.com/video-content-duration?id=<id value> | To view a defined duration |
+| `GET` | `https://api.appnexus.com/video-content-duration` | To view all defined durations |
+| `GET` | `https://api.appnexus.com/video-content-duration?id=<id value>` | To view a defined duration |
 
 ## JSON fields
 

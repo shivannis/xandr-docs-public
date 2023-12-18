@@ -125,7 +125,7 @@ $ curl -b cookies 'https://api.appnexus.com/developer-data'
     ],
     "dbg_info": {
       "instance": "61.bm-hbapi.prod.nym2",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -133,8 +133,8 @@ $ curl -b cookies 'https://api.appnexus.com/developer-data'
       "time": 5967.670917511,
       "start_microtime": 1437417138.3324,
       "version": "1.15.568",
-      "slave_miss": "no_service_index",
-      "slave_lag": 0,
+      "s1ave_miss": "no_service_index",
+      "s1ave_lag": 0,
       "member_last_modified_age": 1437417138,
       "output_term": "developer-datas"
     }
@@ -165,7 +165,7 @@ $ curl -b cookies 'http:api.appnexus.com/developer-data?id=3'
     },
     "dbg_info": {
       "instance": "65.bm-hbapi.prod.nym2",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -173,8 +173,8 @@ $ curl -b cookies 'http:api.appnexus.com/developer-data?id=3'
       "time": 44.665098190308,
       "start_microtime": 1437418438.3285,
       "version": "1.15.568",
-      "slave_miss": "no_service_index",
-      "slave_lag": 0,
+      "s1ave_miss": "no_service_index",
+      "s1ave_lag": 0,
       "member_last_modified_age": 1437418438,
       "output_term": "developer-data"
     }

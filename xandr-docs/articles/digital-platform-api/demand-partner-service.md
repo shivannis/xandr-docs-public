@@ -29,7 +29,7 @@ A successful response will return JSON array of demand partner objects.
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `bid_cpm_adjustment` | integer | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. This does not change the actual bid or revenue payout, only the ranking of the bid in the auction. The default value is 1.00. In this case all partners' bids compete equally with no adjustments. The adjustment can be used to account for partner fees or for optimization. If you need CPM adjustments at a level more granular than Demand Partner, see [Create a Bias Rule](./create-a-bias-rule.md). |
+| `bid_cpm_adjustment` | integer | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. This does not change the actual bid or revenue payout, only the ranking of the bid in the auction. The default value is 1.00. In this case all partners' bids compete equally with no adjustments. The adjustment can be used to account for partner fees or for optimization. If you need CPM adjustments at a level more granular than Demand Partner, see [Create a Bias Rule](../monetize/create-a-bias-rule.md). |
 | `deleted` | boolean | This indicates that the demand partner object has been deleted from the system. |
 | `demand_partner_id` | integer | The ID of the demand partner on the Xandr platform.<br>**Note**: This now returns `null`. |
 | `enabled` | boolean | Indicates if the demand partner is enabled or disabled. |

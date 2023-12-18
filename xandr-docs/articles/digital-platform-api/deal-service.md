@@ -62,7 +62,7 @@ Each deal is valid for a single buyer.
 | `end_date` | timestamp | The day and time when the deal stops being available to the buyer, in local time. If this is set, the format must be `"YYYY-MM-DD HH:MM:SS"`.<br><br>**Default**: `null` (immediately) |
 | `floor_price` | double | The minimum CPM value that the buyer must bid to be eligible for the deal.<br><br>**Note**:<br> - If `use_deal_floor` is `false`, this field must be set to `0`. In this case, note that although `0` is shown as the floor price, no deal floor is actually applied; if you have any other floors (in placements or yield management profiles), they will be applied, or if you do not have any other floors, the standard second-price auction mechanics will apply.<br>As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br> - If the API call includes `ask_price` only, this is the value that will be used.<br> - If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value.<br><br>**Default**: `0`, if `use_deal_floor` is `false` |
 | `id` | int | The ID of the deal.<br><br>**Required On**: `PUT` and `DELETE`<br><br>**Default**: auto-incremented number |
-| `languages` | array of objects | The language associated with creatives that are eligible for the deal. For more details, see [Languages](languages) below. |
+| `languages` | array of objects | The language associated with creatives that are eligible for the deal. For more details, see [Languages](#languages) below. |
 | `language_restrict` | boolean | Specifies whether the deal is restricted only to the languages listed in the Languages object.<br> - `true`: Deal is restricted only to the listed languages.<br> - `false`: Other languages are also allowed to serve.<br><br>**Default**: `true` |
 | `last_modified` | timestamp |**Read Only**. The date and time when the deal was last modified, in local time. |
 | `media_preference` | string | Specifies how this deal handles media types/subtypes. There are two options:<br> - `standard` = use whatever media types are already on the auction (based on the placement settings)<br> - `append` = include the media types on the auction + any private media types set on the placement<br><br>If a deal is created from a package, this setting is copied from the package to the deal. |
@@ -74,9 +74,9 @@ Each deal is valid for a single buyer.
 | `seller` | object | **Read Only**. The selling member who is offering the deal. For more details, see [Seller](#seller) below. |
 | `size_preference` | string | Specifies how this deal handles private sizes. Private sizes are placement sizes (set in the `private_sizes` array in the [Placement Service](./placement-service.md)) that can be allowed to serve for a deal. There are two options:<br> - `standard`: Private sizes are not available for this deal.<br> - `append`: Private sizes can be used in addition to the specified placement size.<br><br>If a deal is created from a package, this setting is copied from the package to the deal. |
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer, in local time. If this is set, the format must be `"YYYY-MM-DD HH:MM:SS"`.<br><br>**Default**: `null` (immediately) |
-| `technical_attributes` | array of objects | The technical attributes of creatives that are eligible for the deal. For more details, see [Technical Attributes](#technical-attribiutes) below. |
-| `technical_attribute_restrict` | boolean | Specifies whether the deal is restricted only to the technical attributes listed in the [Technical Attributes](#technical-attribiutes) object.<br> - `true`: Deal is restricted only to the listed technical attributes.<br> - `false`: Other technical attributes are also allowed to serve.<br><br>**Default**: `true` |
-| `type` | object | The type of deal. For sellers, a deal can be an open auction or a private auction. For more details, see [Type](type) below. |
+| `technical_attributes` | array of objects | The technical attributes of creatives that are eligible for the deal. For more details, see [Technical Attributes](#technical-attributes) below. |
+| `technical_attribute_restrict` | boolean | Specifies whether the deal is restricted only to the technical attributes listed in the [Technical Attributes](#technical-attributes) object.<br> - `true`: Deal is restricted only to the listed technical attributes.<br> - `false`: Other technical attributes are also allowed to serve.<br><br>**Default**: `true` |
+| `type` | object | The type of deal. For sellers, a deal can be an open auction or a private auction. For more details, see [Type](#type) below. |
 | `use_deal_floor` | boolean | If `true`, the `floor_price` is applied for the deal.<br><br>**Note**:<br>When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, i.e., in placements or yield management profiles.<br>As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br> - If the API call includes `ask_price` only, this is the value that will be used.<br> - If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value.<br><br>**Default**: `true` |
 | `version` | int | Specifies the version of the deal object. Possible values are:<br>`1` = External supply partner deals and legacy Monetize setups<br>`2` = Monetize seller deals<br><br>**Required On**: `POST`<br>**Default**: `1` |
 | `visibility_profile_id` | int | The unique ID of the visibility profile that will be applied to a deal. This ID can be retrieved from the [Visibility Profile Service](./visibility-profile-service.md). |
@@ -161,7 +161,7 @@ The `buyer_members` object contains the following fields:
 }],
 ```
 
-**Buyer seats**
+### Buyer seats
 
 Deals with seats can be set up using the `buyer_seats` object via the API.
 
@@ -213,7 +213,7 @@ The `auction_type` object contains the following fields:
 | `id` | int | The ID of the auction type:<br>`1` = First price<br>`2` = Standard price <br>`3` = Fixed price<br><br>**Default**: `2` |
 | `name` | string | **Read Only**. The name of the auction type. Possible values: <br> - `"first_price"` <br> - `"standard_price"` <br> - `"fixed_price"`.<br><br>**Default**: `"standard_price"` |
 
-**Brands**
+### Brands
 
 Each `brands` object contains the following fields:
 
@@ -307,7 +307,7 @@ Each `languages` object contains the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the language that is eligible for the deal. You can use the [Language Service](./language-service) to retrieve language IDs. |
+| `id` | int | The ID of the language that is eligible for the deal. You can use the [Language Service](./language-service.md) to retrieve language IDs. |
 | `name` | string | The name of the language that is eligible for the deal. |
 | `override` | Boolean | Set to `true` to allow a language to serve for a deal even if the ad quality profile would have blocked it.<br><br>**Default**: `false` |
 
@@ -317,11 +317,11 @@ Each `technical_attribute` object contains the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the technical attribute that is eligible for the deal. You can use the [Technical Attribute Service](#technical-attribute-service.md) to retrieve technical attribute IDs. |
+| `id` | int | The ID of the technical attribute that is eligible for the deal. You can use the [Technical Attribute Service](./technical-attribute-service.md) to retrieve technical attribute IDs. |
 | `name` | string | The name of the technical attribute that is eligible for the deal. |
 | `override` | boolean | Set to `true` to allow a technical attribute to serve for a deal even if the ad quality profile would have blocked it.<br><br>**Default**: `false` |
 
-**Creatives**
+### Creatives
 
 The `creatives` array is limited to 100 creatives. Each `creatives` object contains the following fields:
 

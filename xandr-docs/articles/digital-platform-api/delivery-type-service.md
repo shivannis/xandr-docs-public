@@ -13,8 +13,8 @@ Use the read-only Delivery Type Service to see what video content delivery types
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/video-delivery-type | To view all defined delivery types |
-| `GET` | https://api.appnexus.com/video-delivery-type?id=<id value> | To view a defined delivery type |
+| `GET` | `https://api.appnexus.com/video-delivery-type` | To view all defined delivery types |
+| `GET` |`https://api.appnexus.com/video-delivery-type?id=<id value>` | To view a defined delivery type |
 
 ## JSON fields
 
