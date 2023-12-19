@@ -1,12 +1,12 @@
 ---
-title : Industry Reference - Intro to HTTP
+title : Intro to HTTP
 description : Learn the basics of HTTP and how it is important for online advertising
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-# Industry Reference - Intro to HTTP
+# Intro to HTTP
 
 Understanding the basics of how HTTP works is integral to understanding
 online advertising technology. For example, we deal with "cookie

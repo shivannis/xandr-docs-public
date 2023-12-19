@@ -1,12 +1,12 @@
 ---
-title : Industry Reference - Introduction to Ad Serving
+title : Introduction to Ad Serving
 description : Learn what Ad Serving is and how it works.
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-# Industry Reference - Introduction to Ad serving
+# Introduction to Ad serving
 
 In traditional offline advertising, a company creates an ad campaign and
 then purchases advertising slots using different kinds of media, for

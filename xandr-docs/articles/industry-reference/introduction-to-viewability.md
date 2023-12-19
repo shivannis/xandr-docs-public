@@ -5,8 +5,7 @@ ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
-
-# Industry Reference -  Introduction to viewability
+# Industry Reference - Introduction to viewability
 
 ## What is viewability and why is it important?
 

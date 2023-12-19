@@ -1,12 +1,12 @@
 ---
-title : Industry Reference - Introduction to Mobile Advertising
+title : Introduction to Mobile Advertising
 description : Learn how advertising works on mobile devices. 
 ms.date : 10/28/2023
 ms.custom : industry-reference
 ---
 
 
-# Industry Reference - Introduction to mobile advertising
+# Introduction to mobile advertising
 
 > [!TIP]
 > For an introduction to the main concepts involved in online advertising, see [Introduction to Ad Serving](introduction-to-ad-serving.md).
