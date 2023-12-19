@@ -212,8 +212,7 @@ python3 -m pip install avro
 
 ## Download the Xandr Avro schema
 
-You can download the Xandr Avro Schema from
-<a href="attachments/xandr_schema.avsc" class="xref">here</a>.
+You can download the Xandr Avro Schema from [here](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/xandr_schema%201.avsc).
 
 ## Generate your AVRO audience file
 
