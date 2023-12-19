@@ -1,10 +1,10 @@
 ---
-title: Fee Type
-Description: The article explains how you can use fee types to categorize fees by purpose.
+title: Microsoft Monetize - Fee Type
+description: The article explains how you can use fee types to categorize fees by purpose.
 ms.date: 10/28/2023
 ---
 
-# Fee type
+# Microsoft Monetize - Fee type
 
 When creating a [partner fee](partner-fees.md), you can use fee types to categorize fees by purpose.
 

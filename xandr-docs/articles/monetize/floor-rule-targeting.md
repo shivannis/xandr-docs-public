@@ -41,7 +41,7 @@ logic.
 
 When creating or editing a floor rule, you can select specific inventory you would like the rule to apply to. You can target direct inventory placements, universal categories, or custom categories.
 
-## Getting there
+## Target inventory
 
 From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeting**. Next to **Inventory**, click **Edit**.
 
@@ -111,7 +111,7 @@ size target** boxes, and then clicking **Add Size** . The size you have added wi
 
 By default, the floor rule targets all of your demand. However, you can narrow your targeting to include or exclude specific buyers, brands, and offer categories.
 
-## Getting there
+## Include or exclude target buyers
 
 From the **Create New Floor** Rule or **Edit floor rule** page, locate Targeting. Next to Demand, click **Edit**.
 

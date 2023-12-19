@@ -1,12 +1,10 @@
 ---
 title: General Guidelines for Passing Creative Audits
-description: The article explains general guidelines for passing creative audits.
+description:The article gives important tips on how to pass creative audits successfully. It shares valuable insights and best practices to make sure your creative work meets standards and achieves excellence.
 ms.date: 10/28/2023
-Xandr auditing process. You can use the
 ---
 
-
-# General Guidelines for Passing Creative Audits
+# General guidelines for passing creative audits
 
 There are many ways to ensure your creatives successfully pass the Xandr auditing process. You can use the guidelines outlined here to ensure that your creatives successfully pass auditing.
 
@@ -40,7 +38,7 @@ To learn more about the content and offer types that we prohibit, see [Policies 
 - Landing pages must meet the following criteria:
   - The landing page content must meet all the guidelines listed in our [Policies for Buying](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx)(login required).
   - The landing page must be live and functional at the time of audit.
-  - The landing page must be viewable from any one of the IP addresses that we use to perform our creative audits, which are listed in the Creative Troubleshooting FAQ. For more information, see [Creative Troubleshooting FAQ](xandr-bidders/creative-troubleshooting-faq.md#CreativeTroubleshootingFAQ-CreativeDoesn-tDisplay).
+  - The landing page must be viewable from any one of the IP addresses that we use to perform our creative audits, which are listed in the Creative Troubleshooting FAQ. For more information, see [Creative Troubleshooting FAQ](../bidders/creative---faq.md).
 
 ## Related topic
 
