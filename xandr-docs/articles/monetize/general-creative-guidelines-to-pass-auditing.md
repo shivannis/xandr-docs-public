@@ -1,6 +1,6 @@
 ---
 title: General Guidelines for Passing Creative Audits
-description:The article gives important tips on how to pass creative audits successfully. It shares valuable insights and best practices to make sure your creative work meets standards and achieves excellence.
+description: The article gives important tips on how to pass creative audits successfully. It shares valuable insights and best practices to make sure your creative work meets standards and achieves excellence.
 ms.date: 10/28/2023
 ---
 
