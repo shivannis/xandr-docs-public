@@ -1,6 +1,6 @@
 ---
-title : Floor Optimization
-description : The article explains the process of enabling floor optimization for any floor rule and outlines how it maximizes seller revenue. It achieves this by calculating a hard floor that is determined by the individual impression's value to the seller.
+title: Floor Optimization
+description: The article details how enabling floor optimization, based on individual impression value, maximizes seller revenue by establishing a calculated hard floor for any floor rule.
 ms.date: 10/28/2023
 ---
 
@@ -26,8 +26,8 @@ Floor optimization can be enabled or disabled for any base or conditional floor 
 1. Click **Actions >  Enable Floor Optimization** or **Actions >  Disable Floor Optimization** to enable or disable **Floor Optimization** for the selected floor rules.
 1. Click **OK** in the confirmation dialog to confirm the change.
 
-> [!NOTE]
-> Soft floors are ignored if Floor Optimization is enabled for aflo or rule.
+ > [!NOTE]
+ > Soft floors are ignored if Floor Optimization is enabled for aflo or rule.
 
 To add floor optimization to a [floor rule](create-a-floor-rule.md), click the **Floor Optimization** toggle in the **Floor Pricing** section.
 
@@ -39,4 +39,4 @@ For more information about debug auctions, see [Understanding the Debug Auction]
 
 ## Related topic
 
-- [Create a Floor Rule](create-a-floor-rule.md)
+[Create a Floor Rule](create-a-floor-rule.md)

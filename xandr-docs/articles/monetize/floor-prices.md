@@ -18,14 +18,15 @@ Two types of floors exist:
 
 - **Hard Floor:** The minimum net price that a seller will accept for a bid. If the net price for the hard floor isn't met, then no bids are accepted and the auction ends without a winner, or a default creative is served. A bid will be considered only if it is equal to or greater than the hard floor.
   
-> [!NOTE]
-> When there is only one bid that exceeds the hard floor and wins the auction, that bid is reduced to the value of the hard floor, assuming there is no soft floor.
+  > [!NOTE]
+  > When there is only one bid that exceeds the hard floor and wins the auction, that bid is reduced to the value of the hard floor, assuming there is no soft floor.
 
 - **Soft Floor:** The lowest net price that a bid is reduced to by the seller. Essentially, a soft floor allows the network to alter the mechanics of the standard second-price auction. In a second-price auction, the winning bidder pays the value of the second highest bid in addition to $0.01. However, when a soft floor is set, the winning
   bidder pays either the soft floor's net price or the second bidder's bid depending upon which one is greater. If the winner’s bid is higher
   than the hard floor, but lower than the soft floor, the winner pays the price that they've bid. For more information, see [https://theviewpoint.com/insights/blog/first-price-vs-second-price-auctions-ultimate-comparison/](https://theviewpoint.com/insights/blog/first-price-vs-second-price-auctions-ultimate-comparison/).
   
-  A soft floor can't be lower than a hard floor.
+  > [!NOTE]
+  > A soft floor can't be lower than a hard floor.
 
 ## Hierarchy of Floor Price Settings
 

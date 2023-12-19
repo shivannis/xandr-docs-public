@@ -1,10 +1,10 @@
 ---
-title : Monetize - Frequency and Recency Examples
+title : Microsoft Monetize - Frequency and Recency Examples
 description : The article shows examples of frequency and recency where you can combine frequency and recency settings to provide an ideal user experience and minimize overexposure.
 ms.date: 10/28/2023
-
 ---
-# Monetize - Frequency and recency examples
+
+# Microsoft Monetize - Frequency and recency examples
 
 There may be instances where you want to combine frequency and recency settings to provide an ideal user experience and minimize overexposure.
 

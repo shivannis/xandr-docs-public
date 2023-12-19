@@ -1,11 +1,10 @@
 ---
-title: Monetize - Fee Calculations
+title: Microsoft Monetize - Fee Calculations
 description: The article explains the process for fee calculations.
 ms.date: 10/28/2023
 ---
 
-
-# Fee calculations
+# Microsoft Monetize - Fee calculations
 
 When you create a [partner fee](partner-fees.md), the fee can be based on percentage or CPM. CPM fees are always deducted from revenue. Revshare fees may be calculated in multiple ways:
 

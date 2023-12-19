@@ -1,11 +1,10 @@
 ---
-title: Foreign Exchange Margin
-description: The article helps you to discover how Xandr manages Foreign Exchange Margin (FX Margin) to handle media costs in non-USD currencies. This charge safeguards against currency exchange rate risks during monthly buying and selling activities. 
+title: Microsoft Monetize - Foreign Exchange Margin
+description: The article reveals how Xandr handles Foreign Exchange Margin (FX Margin) to mitigate currency risks in non-USD media costs during monthly transactions.
 ms.date: 10/28/2023
 ---
 
-
-# Foreign exchange margin
+# Microsoft Monetize - Foreign exchange margin
 
 Xandr charges an **FX Margin** (Foreign Exchange Margin) for clearing media cost in non-USD currencies.This charge is applied to offset the risk that Xandr assumes
 due to the natural fluctuations of currency exchange rates during the course of a month of buying/selling activity. If you have any questions
@@ -80,4 +79,4 @@ To protect contract terms privacy, Xandr does not expose sell-side revenue shari
 
 ## Related topic
 
-- [Currency Support](currency-support.md)
+[Currency Support](currency-support.md)

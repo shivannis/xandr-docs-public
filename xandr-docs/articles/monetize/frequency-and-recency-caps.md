@@ -1,10 +1,10 @@
 ---
-title: Monetize - Frequency and Recency Caps
-description: The article explains how you can apply frequency and recency Caps to your line item to prevent overexposure by limiting how many (frequency) and how often (recency) creatives are shown to a user.
+title: Microsoft Monetize - Frequency and Recency Caps
+description: The article guides on applying frequency and recency caps to limit the exposure of creatives to users, preventing overexposure by controlling both the number and timing of displays.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Frequency and recency caps
+# Microsoft Monetize - Frequency and recency caps
 
 From the **Audience & Location Targeting** section, you can apply frequency and recency caps to your line item to prevent overexposure by limiting how many (frequency)
 and how often (recency) creatives are shown to a user. You can use the Creative Frequency and Recency Report to view how often and how frequently users are viewing a specific advertiser's creatives.
