@@ -30,7 +30,7 @@ To get to the insertion orders screen, so one of the following:
 
 ### Filtering by status
 
-The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or Inactive advertisers,
+The selector dropdown at the top of the screen lets you filter for insertion orders based on status. You can choose to view only **Active** advertisers or **Inactive** advertisers,
 or to view **All** advertisers.
 
 ### Filter Sidebar
@@ -92,9 +92,9 @@ Use the dropdown at the top right of the screen to choose the interval for stats
 
 | Today | Current calendar day up to the last hour. |
 |---|---|
-| Yesterday | Full 24-hour period of the previous calendar day. |
-| Last 7 Days | Full 7 days previous to the current calendar day, i.e., excluding today. |
-| Lifetime | Entire lifetime of each insertion order, including the current calendar day. |
+| **Yesterday** | Full 24-hour period of the previous calendar day. |
+| **Last 7 Days** | Full 7 days previous to the current calendar day, i.e., excluding today. |
+| **Lifetime** | Entire lifetime of each insertion order, including the current calendar day. |
 
 ## Currency
 

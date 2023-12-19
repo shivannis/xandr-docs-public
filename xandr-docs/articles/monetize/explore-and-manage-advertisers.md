@@ -1,10 +1,10 @@
 ---
-title: Monetize - Explore and Manage Advertisers
+title: Microsoft Monetize - Explore and Manage Advertisers
 description: The article outlines that the advertisers screen is a management interface displaying key metrics for all advertisers, offering convenient access to individual advertiser details, child objects, and reporting options.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Explore and manage advertisers
+# Microsoft Monetize - Explore and manage advertisers
 
 The Advertisers screen is a management screen that shows you essential metrics about all your advertisers, provides quick access to each advertiser's details and child objects,
 and reporting options.

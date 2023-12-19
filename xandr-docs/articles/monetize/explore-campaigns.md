@@ -1,6 +1,6 @@
 ---
-title: Monetize - Explore Campaigns
-description: The article covers the Campaigns screen, detailing its features such as displaying key metrics for all campaigns under a particular advertiser or line item, highlighting issues affecting campaign serving, providing swift access to individual campaign details, and offering functionalities like bulk editing and reporting.
+title: Explore Campaigns
+description: The article outlines the Campaigns screen, emphasizing its features like displaying key metrics for all campaigns, identifying serving issues, quick access to individual campaign details, and enabling bulk editing and reporting.
 ms.date: 10/28/2023
 ---
 

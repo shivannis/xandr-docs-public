@@ -35,7 +35,7 @@ Publisher users can:
 
 - Click **All Line Items** in the left panel on the Line Items or Orders screens.
 
-Filter your Line Items
+## Filter your line items
 
 The column next to the line item's name (on the left) contains an icon that shows the current eligibility of that line item to serve. Possible eligibility icons include:
 
@@ -75,7 +75,7 @@ For more information about line item details, see [View Line Item Details](view-
 
 ## View quickstats
 
-The metrics on the Line Items screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily
+The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily
 accessed than standard reporting data. Quickstats are cached on a regular basis and are shown whenever you open the Line Items screen.
 
 Note that Quickstats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
@@ -98,44 +98,44 @@ The following quickstats are shown for each line item. Note that the data always
 
 | Line Item | Name of the line item. |
 |--|--|
-| ID | Unique auto-generated number that is assigned to the line item. |
-| Bid Win Rate (last 10 mins) | Percentage of impressions you won in the last 10 minutes out of those you bidded on. |
-| Campaigns | Number of campaigns associated to the line item. |
-| Creatives | Specifies the object to which the creative is attached (campaign or line item). |
-| Imps | Number of impressions for all campaigns under the the line item. |
-| Clicks | Number of clicks for all campaigns under the line item. |
-| Conversions | Number of times conversion pixels under the line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to one of the advertiser's campaigns. |
-| CTR | The overall click-through rate on this line item's creatives. |
-| Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
-| View-Measured Imps | The total number of impressions that were measured for viewability. |
-| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
-| View Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-| Rev (USD) | Money the advertiser has paid or will pay your network as a result of campaigns under the line item.<br>Tip: Using the currency toggle, you can choose whether to show Rev in USD or in the currency set at the line item. However, note that pacing bars are not available when viewing revenue in a currency other than USD. |
-| Media Cost (USD) | Money your network has spent buying media for campaigns under the line item. Media Cost always appears in USD (the currency in which Xandr transacts). |
-| Third Party Costs (USD) | Aggregated data costs for all third-party services and data used when purchasing media (e.g., user segments) from the Xandr Data Marketplace. |
-| Profit (USD) | Money your network has made from the advertiser as a result of campaigns under the line item. This is revenue minus media cost. Profit always appears in USD. |
-| Rev eCPM | Money the advertiser has paid or will pay your network per 1000 impressions.<br>Tip: Using the currency toggle, you can choose whether to show Rev eCPM in USD or in the currency set at the line item. |
-| Cost eCPM (USD) | Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD (the currency in which Xandr transacts). |
-| Rev eCPA (USD) | Total booked revenue earned per conversion. |
-| Cost eCPA (USD) | Money your network has spent buying media per 1000 attributed conversions. Cost eCPA always appears in USD (the currency in which Xandr transacts). |
-| Rev eCPC (USD) | Total booked revenue earned per click. |
-| Days into Flight | Number of days since the line item’s current flight began. |
+| **ID** | Unique auto-generated number that is assigned to the line item. |
+| **Bid Win Rate (last 10 mins)** | Percentage of impressions you won in the last 10 minutes out of those you bidded on. |
+| **Campaigns** | Number of campaigns associated to the line item. |
+| **Creatives** | Specifies the object to which the creative is attached (campaign or line item). |
+| **Imps** | Number of impressions for all campaigns under the the line item. |
+| **Clicks** | Number of clicks for all campaigns under the line item. |
+| **Conversions** | Number of times conversion pixels under the line item have loaded. Note that a conversion pixel load does not necessarily mean that a conversion was attributed to one of the advertiser's campaigns. |
+| **CTR** | The overall click-through rate on this line item's creatives. |
+| **Viewable Imps** | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
+| **View-Measured Imps** | The total number of impressions that were measured for viewability. |
+| **Viewability Rate** | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| **View Measurement Rate** | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| **Rev (USD)** | Money the advertiser has paid or will pay your network as a result of campaigns under the line item.<br>**Tip**: Using the currency toggle, you can choose whether to show **Rev** in USD or in the currency set at the line item. However, note that pacing bars are not available when viewing revenue in a currency other than USD. |
+| **Media Cost (USD)** | Money your network has spent buying media for campaigns under the line item. Media Cost always appears in USD (the currency in which Xandr transacts). |
+| **Third Party Costs (USD)** | Aggregated data costs for all third-party services and data used when purchasing media (e.g., user segments) from the Xandr Data Marketplace. |
+| **Profit (USD)** | Money your network has made from the advertiser as a result of campaigns under the line item. This is revenue minus media cost. Profit always appears in USD. |
+| **Rev eCPM** | Money the advertiser has paid or will pay your network per 1000 impressions.<br>Tip: Using the currency toggle, you can choose whether to show **Rev eCPM** in USD or in the currency set at the line item. |
+| **Cost eCPM (USD)** | Money your network has spent buying media per 1000 impressions. Cost eCPM always appears in USD (the currency in which Xandr transacts). |
+| **Rev eCPA (USD)** | Total booked revenue earned per conversion. |
+| **Cost eCPA (USD)** | Money your network has spent buying media per 1000 attributed conversions. Cost eCPA always appears in USD (the currency in which Xandr transacts). |
+| **Rev eCPC (USD)** | Total booked revenue earned per click. |
+| **Days into Flight** | Number of days since the line item’s current flight began. |
 
 To get information about attributed conversions, rather than just conversion pixel loads as shown in the **Convs** column, see [Reporting on Conversions](reporting-on-conversions.md).
 
 ## Show/hide columns
 
-You can choose the columns that are displayed by clicking the **Configure Columns** button on the upper 9right.
+You can choose the columns that are displayed by clicking the **Configure Columns** button on the upper right.
 
-This opens the **Configure Columns** dialog. From there you can select or deselect the columns you wish to display using the checkboxes. Click **OK** when you are done making your selections to return to the Line Items screen.
+This opens the **Configure Columns** dialog. From there you can select or deselect the columns you wish to display using the checkboxes. Click **OK** when you are done making your selections to return to the **Line Items** screen.
 
 ## Show/hide pacing bars
 
 For line items that meet certain requirements (see below), Microsoft Monetize helps you visualize how well the line items are pacing to their budgets for the selected quickstats interval. When you turn the Pacing toggle on, the Imps or Revenue quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
 
 > [!IMPORTANT]
-> It is important to note that pacing bars, like all other quickstats, reflect the currently selected quickstats interval, and for each quickstats interval, there are specific requirements for pacing to be calculated. See below for more details.
-> [!IMPORTANT]
+> It is important to note that pacing bars, like all other quickstats, reflect the currently selected quickstats interval, and for each quickstats interval, there are specific > requirements for pacing to be calculated. See below for more details.
+>
 > For guaranteed line items with a **vCPVM** revenue type, the information displayed in the pacing bars is not based on viewable impressions yet, but we're working on it. For now, you can surface delivered viewed impressions in the grid by:
 >
 > 1. Clicking the grid edit button next the **Export to CSV** button.
@@ -167,8 +167,7 @@ filters. For further information about running the report, see [Advertiser Repor
 
 ## Activate/deactivate line items
 
-You can activate or deactivate one or more line items directly from the Line Items screen. Check the box next to each line item that you want to activate or deactivate and click
-**Actions >  Activate** or **Actions >  Deactivate**.
+You can activate or deactivate one or more line items directly from the **Line Items** screen. Check the box next to each line item that you want to activate or deactivate and click **Actions >  Activate** or **Actions >  Deactivate**.
 
 When you deactivate a line item, the line item will typically stop serving within 10 - 15 seconds, with a maximum wait time of approximately 60 seconds.
 

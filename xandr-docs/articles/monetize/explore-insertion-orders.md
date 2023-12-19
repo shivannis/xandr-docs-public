@@ -1,9 +1,9 @@
 ---
-title: Monetize - Explore Insertion Orders
+title: Microsoft Monetize - Explore Insertion Orders
 description: The article details how the Insertion Orders screen displays crucial metrics for all insertion orders under a specific advertiser, facilitates quick access to individual insertion order details, and offers reporting options.
 ms.date: 10/28/2023
 ---
-# Monetize - Explore insertion orders
+# Microsoft Monetize - Explore insertion orders
 
 The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and
 reporting options.

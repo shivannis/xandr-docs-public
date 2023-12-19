@@ -1,10 +1,10 @@
 ---
-title: Monetize - Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
+title: Microsoft Monetize - Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
 description: The article helps you to set the eligibility, allowed payment types, and targeting access.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Edit buyer eligibility, allowed payment types, and targeting access
+# Microsoft Monetize - Edit buyer eligibility, allowed payment types, and targeting access
 
 You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab.
 The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom
@@ -40,7 +40,7 @@ Select the payment types you are willing to accept from the buyer. Choose **Defa
 ### Step 4. Update targeting access
 
 Select the information that should be exposed to the buyer when they are targeting your inventory. Choose **Default** in the dropdown if you want
-your default settings to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference. Otherwise, choose Custom in
+your default settings to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference. Otherwise, choose **Custom** in
 the dropdown and then check the checkbox near the desired settings to allow access to URL, category, age, gender, placement, or publisher
 targeting information. The more information you give the buyer, the more #easily they can target your inventory.
 
@@ -49,8 +49,8 @@ You will have the option to expose domains or full URLs to external buyers.
 Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see [Export Placement Tags](export-placement-tags.md).
 
 For **Categories (Custom),** there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click
-Edit to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the
-Selected Items area, click on the `X` next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+**Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the
+Selected Items area, click on the X next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
 ### Step 5. Save your changes
 
@@ -66,7 +66,7 @@ Go to the **Partner Center** screen (**Network** \> **Partner Center**), select 
 
 ### Step 2. Update Buyer Eligibility
 
-Select the eligibility you would like to apply to the buyers. This setting indicates whether your inventory is available (**Eligible**) to a buyer, or not (**Blocked**). Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. The ###current default value is displayed for reference.
+Select the eligibility you would like to apply to the buyers. This setting indicates whether your inventory is available (**Eligible**) to a buyer, or not (**Blocked**). Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. The current default value is displayed for reference.
 
 ### Step 3. Update the allowed payment types
 
@@ -84,7 +84,7 @@ placement, or publisher targeting information. The more information you give buy
 > Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see
 > [Placement Tag Parameters](placement-tag-parameters.md).
 
-For **Category (Custom)** there is the additional option to exposevspecific categories. To select specific custom categories, choose Selected to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
 ### Step 5. Save changes
 

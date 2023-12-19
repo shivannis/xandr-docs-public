@@ -1,10 +1,10 @@
 ---
-title: Monetize - Exclude Competitive Offer Categories for a Creative
+title: Microsoft Monetize - Exclude Competitive Offer Categories for a Creative
 description: The article instructs users to use the optional Competitive Exclusions section when adding creatives to prevent them from displaying alongside those with competitive offer categories. Each creative can exclude a maximum of five offer categories.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Exclude competitive offer categories for a creative
+# Microsoft Monetize - Exclude competitive offer categories for a creative
 
 When adding creatives, you can apply competitive exclusions from the **Competitive Exclusions (optional)** section to prevent creatives with competitive offer categories from
 serving alongside each other. You can exclude a maximum of five offer categories for each creative.

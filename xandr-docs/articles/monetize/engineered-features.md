@@ -1,10 +1,10 @@
 ---
-title: Monetize - Engineered Features
-description: Engineered features are bidstream signals representing proprietary,
+title: Microsoft Monetize - Engineered Features
+description: The article explores bidstream signals called engineered features, which are proprietary optimization components developed by Xandr using historical data and their own data science and algorithms.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Engineered features
+# Microsoft Monetize - Engineered features
 
 Engineered features are bidstream signals representing proprietary, high-quality optimization components developed by Xandr, based on historical data analyzed by
 proprietary Xandr data science and algorithms. We use these features ourselves in our own optimization tools, applying them at scale across the Xandr platform and

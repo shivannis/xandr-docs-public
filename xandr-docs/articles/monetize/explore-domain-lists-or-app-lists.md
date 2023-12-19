@@ -71,7 +71,7 @@ You can delete domain lists and app lists from the Xandr system. Be sure to read
 > [!WARNING]
 > Deleting a domain or app list while it's in use by an active campaign will change the targeting of that campaign. If the list you delete is the only one in use by the
 > campaign, and that campaign does not have individual targeting settings, the result will be a campaign with no targeting, also known as "Targeting the internet." **This is likely to result in massive overspend.**
-> [!WARNING]
+>
 > Deleting a domain or app list is permanent, and deleted lists cannot be restored.
 
 To delete a domain list or app list:
@@ -86,5 +86,5 @@ To delete a domain list or app list:
 
 - [Working with Targeting Lists](working-with-targeting-lists.md)
 - [Managing Your Targeting Lists](managing-your-targeting-lists.md)
-- [mCreate a Domain List or App List](create-a-domain-list-or-app-list.md)
+- [Create a Domain List or App List](create-a-domain-list-or-app-list.md)
 - [Update a Domain List or App List](update-a-domain-list-or-app-list.md)

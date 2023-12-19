@@ -1,10 +1,10 @@
 ---
-title: MOnetize - Exclude Competitive Brands for a Creative
+title: Microsoft Monetize - Exclude Competitive Brands for a Creative
 description: The article emphasizes using competitive exclusions when adding creatives to prevent the display of competitive brands together. 
 ms.date: 10/28/2023
 ---
 
-# Monetize - Exclude competitive brands for a creative
+# Microsoft Monetize - Exclude competitive brands for a creative
 
 When adding creatives, you can apply competitive exclusions from the **Competitive Exclusions (optional)** section to prevent creatives with competitive brands from serving
 alongside each other. You can exclude a maximum of 25 brands for each creative.

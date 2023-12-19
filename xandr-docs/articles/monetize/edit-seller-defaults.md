@@ -1,19 +1,19 @@
 ---
-title: Monetize - Edit Seller Defaults
-description: The artcle helps you to set the eligibility and inventory trust for sellers.
+title: Microsoft Monetize - Edit Seller Defaults
+description: The article helps you to set the eligibility and inventory trust for sellers.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Edit seller defaults
+# Microsoft Monetize - Edit seller defaults
 
-You can set the eligibility and inventory trust for sellers in the Partner Center screen or in the **My Settings** for {Seller Name} section of the Partner Details page.
+You can set the eligibility and inventory trust for sellers in the **Partner Center** screen or in the ****My Settings for {Seller Name}** section of the Partner Details page.
 
 > [!NOTE]
 > Inventory trust settings only apply to standard line item targeting.
 
 Sellers can see the settings you have set for them. Your default settings will apply if you do not set custom settings for the seller. For more information on default settings, see [Set Seller Defaults](set-seller-defaults.md).
 
-While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** and in the **My Settings for {Seller Name}** section of the Partner Details page. You can view the seller's current settings for you in the {Seller Name} Settings for Me section of the Partner Details page.
+While you can change your settings for the seller, you cannot change the seller's settings for you. You can change your settings for the seller in the **Partner Center** and in the **My Settings for {Seller Name}** section of the **Partner Details** page. You can view the seller's current settings for you in the **{Seller Name} Settings for Me** section of the **Partner Details** page.
 
 **Get to Know Xandr Direct:** Xandr Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers. For more information, please see [Xandr Direct for Buyers](appnexus-direct-for-buyers.md) Xandr or contact [mailto:appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
@@ -24,7 +24,7 @@ While you can change your settings for the seller, you cannot change the seller'
 Go to the **Partner Center** screen (**Partners >  Partner Center**) and click on a seller's name:
 
 - To edit a single seller's settings, click **Edit** in the **My Settings for {Seller Name}** section to display seller settings.
-- To edit multiple sellers, select the checkbox of the sellers you want to edit and click **Edit Selected Sellers** to display the Edit Partner Controls section. Any changes you make will be applied to all checked sellers.
+- To edit multiple sellers, select the checkbox of the sellers you want to edit and click **Edit Selected Sellers** to display the **Edit Partner Controls** section. Any changes you make will be applied to all checked sellers.
 
 ### Step 2. Update settings
 
@@ -35,11 +35,10 @@ To apply seller defaults [Set Seller Defaults](set-seller-defaults.md):
 - For a single seller in the **My Settings for {Seller Name}** section, select **Default** from the drop-down.
 
 - For multiple sellers in the **Edit Partner Controls** section, select **Default**.
-
   When **Default** is selected, the current default settings display for reference.
 
-> [!NOTE]
-> If you select **Default**, the **Inventory Trust Settings** will follow the default settings.
+  > [!NOTE]
+  > If you select **Default**, the **Inventory Trust Settings** will follow the default settings.
 
 ## Set custom settings
 

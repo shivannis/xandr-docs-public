@@ -1,11 +1,10 @@
 ---
-title: Monetize - Enable Cross-Device Targeting and Measurement for a Line Item
-description: The article guides users on activating the cross-device targeting and measurement feature for a line item, allowing them to implement frequency caps, conversion attribution, and audience targeting settings for individual users across various devices as needed.
+title: Microsoft Monetize - Enable Cross-Device Targeting and Measurement for a Line Item
+description: The article explains how to activate cross-device targeting and measurement for a line item that enables users to set frequency caps, conversion attribution, and audience targeting for individual users across different devices as required.
 ms.date: 10/28/2023
 ---
 
-
-# Monetize -Enable cross-device targeting and measurement for a line item
+# Microsoft Monetize -Enable cross-device targeting and measurement for a line item
 
 You can optionally enable the cross-device targeting and measurement feature on a line item to apply frequency caps, conversion attribution, and audience targeting settings for individual users across multiple devices.
 
@@ -25,32 +24,32 @@ To enable cross-device tracking and measurement, select the identity graph you w
 - Xandr (US + EU) graph to use  Xandr's information to target and attribute across multiple devices in the U.S. and Europe. Xandr continues to invest in enriching the
   Xandr graph in Europe and the U.S. and to work closely with new market-leading data partners.
   
-> [!IMPORTANT]
-> European cross device coverage is currently limited to the following key countries:
->
-> - France
-> - Italy
-> - Germany
-> - Great Britain
-> - Spain
-> - Switzerland
-> - Austria
-> - Belgium
-> - United Kingdom
-> - Netherlands
-> - Poland
-> - Portugal
-> - Denmark
-> - Norway
-> - Sweden
-> - Finland
-> - Iceland
-> - Ireland
+  > [!IMPORTANT]
+  > European cross device coverage is currently limited to the following key countries:
+  >
+  > - France
+  > - Italy
+  > - Germany
+  > - Great Britain
+  > - Spain
+  > - Switzerland
+  > - Austria
+  > - Belgium
+  > - United Kingdom
+  > - Netherlands
+  > - Poland
+  > - Portugal
+  > - Denmark
+  > - Norway
+  > - Sweden
+  > - Finland
+  > - Iceland
+  > - Ireland
 
 - Tapad (Global excluding EU) graph to use Tapad's information to target and attribute across multiple devices.
 
-> [!NOTE]
-> Cross-device audience targeting for CTV devices is only available in the United States.
+  > [!NOTE]
+  > Cross-device audience targeting for CTV devices is only available in the United States.
 
 When the line item starts running, the selected device graph will be applied for frequency capping purposes, conversion attribution, and audience extension.
 
