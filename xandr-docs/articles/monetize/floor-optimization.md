@@ -26,8 +26,8 @@ Floor optimization can be enabled or disabled for any base or conditional floor 
 1. Click **Actions >  Enable Floor Optimization** or **Actions >  Disable Floor Optimization** to enable or disable **Floor Optimization** for the selected floor rules.
 1. Click **OK** in the confirmation dialog to confirm the change.
 
- > [!NOTE]
- > Soft floors are ignored if Floor Optimization is enabled for aflo or rule.
+   > [!NOTE]
+   > Soft floors are ignored if Floor Optimization is enabled for aflo or rule.
 
 To add floor optimization to a [floor rule](create-a-floor-rule.md), click the **Floor Optimization** toggle in the **Floor Pricing** section.
 

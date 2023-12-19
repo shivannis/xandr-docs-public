@@ -42,4 +42,4 @@ To learn more about the content and offer types that we prohibit, see [Policies 
 
 ## Related topic
 
-- [Auditing Creatives](auditing-creatives.md)
+[Auditing Creatives](auditing-creatives.md)
