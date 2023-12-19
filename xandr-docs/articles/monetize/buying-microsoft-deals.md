@@ -1,104 +1,60 @@
 ---
-Title : Buying Microsoft Deals
-Description : You can buy deals from the Microsoft Advertising Exchange and
+title : Microsoft Monetize - Buying Microsoft Deals
+description : Learn how you can buy deals from the Microsoft Advertising Exchange using our Package Marketplace. 
 ms.date: 10/28/2023
-Microsoft’s Australia and New Zealand inventory using our Package
-Marketplace.
 ---
 
 
-# Buying Microsoft Deals
-
-
+# Microsoft Monetize - Buying Microsoft deals
 
 You can buy deals from the Microsoft Advertising Exchange and
 Microsoft’s Australia and New Zealand inventory using our Package
 Marketplace.
 
-
-
-- For more general information about buying deals, see
-  <a href="buying-deals.md" class="xref">Buying Deals</a>.
-- For more information about buying deals from seller packages, see
-  <a href="get-deals-from-seller-packages.md" class="xref">Get Deals
-  from Seller Packages</a>.
+- For more general information about buying deals, see [Buying Deals](buying-deals.md).
+- For more information about buying deals from seller packages, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
 - To create a more customized deal, or if you have any further questions
   about buying Microsoft programmatic deals, please contact
   GSETsales@xandr.com.
 
-
-
-
-
-1.  Go to
-    Partners
-    \> Package
-    Marketplace.
-2.  Search for available packages from the
+1. Go to
+    **Partners**
+    \> **Package
+    Marketplace**.
+1. Search for available packages from the
     Microsoft Advertising Exchange and Microsoft’s Australia and New
     Zealand inventory by doing the following:
-    1.  Click Select
-        Sellers.
-        
+    1. Click **Select
+        Sellers**.
 
-        The Select Sellers pop-up
+        The **Select Sellers** pop-up
         is displayed.
 
-        
-    2.  Under the
-        Available Items column, click
-        the All tab.
-    3.  Search for the Microsoft Advertising
+    1. Under the
+        **Available Items** column, click
+        the **All** tab.
+    1. Search for the Microsoft Advertising
         Exchange by seller ID (**280**).
-    4.  Once it displays in the search results,
+    1. Once it displays in the search results,
         select the corresponding check mark to add it to the
-        Selected Items column.
-    5.  Search for Microsoft & Nine AU NZ by seller
+        **Selected Items** column.
+    1. Search for Microsoft & Nine AU NZ by seller
         ID (**1705**).
-    6.  Once it displays in the search results,
+    1. Once it displays in the search results,
         select the corresponding check mark to add it to the
-        Selected Items column.
-3.  Click
-    Add.
-4.  Scroll through the list of packages and click
-    Add to Cart for each package that
+        **Selected Items** column.
+1. Click
+    **Add**.
+1. Scroll through the list of packages and click
+    **Add to Cart** for each package that
     you would like to add to your cart.
-5.  Click Get
-    Deals.
-    
+1. Click **Get
+    Deals**.
 
     The **Deal ID** displays under
-    Selected Packages.
-    
+    **Selected Packages**.
 
-    <b>Tip:</b>
-    For augmented line items, you can use the deal targeting settings at
-    the line item level to target deals. For more information, see
-    <a href="deal-targeting-ali.md" class="xref">Deal Targeting (ALI)</a>.
-
-    For standard line items, you can instantly create a new campaign to
-    target a deal or add a deal to an existing campaign by clicking
-    Target now! under
-    Selected Packages. To confirm
-    that the Deal ID is enabled for the campaign, click
-    Edit in the
-    Deal Targeting section of the
-    Create New Campaign or
-    Edit Campaign screen. For the
-    Deal Targeting section to
-    display, the Buy using deal
-    targeting option must be selected under the
-    Campaign Type section. For
-    more information, see
-    <a href="create-a-deal-campaign.md" class="xref">Create a Deal
-    Campaign</a>.
-
-    
-
-    
-
-
-
-
-
-
+    > [!TIP]
+    > For augmented line items, you can use the deal targeting settings at the line item level to target deals. For more information, see [Deal Targeting (ALI)](deal-targeting-ali.md). 
+    > 
+    > For standard line items, you can instantly create a new campaign to target a deal or add a deal to an existing campaign by clicking **Target now**! under **Selected Packages**. To confirm that the Deal ID is enabled for the campaign, click**Edit** in the **Deal Targeting** section of the **Create New Campaign** or **Edit Campaign** screen. For the **Deal Targeting** section to display, the **Buy using deal targeting**option must be selected under the **Campaign Type** section. For more information, see [Create a Deal Campaign](create-a-deal-campaign.md).
