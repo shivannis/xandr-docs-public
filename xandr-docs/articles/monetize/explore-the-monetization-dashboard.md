@@ -39,9 +39,9 @@ The **Performance Snapshot** shows you how your inventory is performing compared
 - **Filled Impressions** - Kept impressions and resold impressions.
 - **Impressions** - All impressions.
 
-> [!IMPORTANT]
-> Why do we compare this week to last week? Having a good reference point to compare to helps you understand material changes in your business versus revenue peaks and
-> valleys that can occur such as over weekends or at the beginning of the month.
+  > [!IMPORTANT]
+  > Why do we compare this week to last week? Having a good reference point to compare to helps you understand material changes in your business versus revenue peaks and
+  > valleys that can occur such as over weekends or at the beginning of the month.
 
 ## Analytics
 

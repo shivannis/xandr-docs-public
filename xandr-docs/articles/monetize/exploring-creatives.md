@@ -1,10 +1,10 @@
 ---
-title: Exploring Creatives
+title: Microsoft Monetize - Exploring Creatives
 description: The article guides you on managing creatives through the Creative Manager screen, where you can view, add, and update creatives associated with a specific advertiser.
 ms.date: 10/28/2023
 ---
 
-# Exploring creatives
+# Microsoft Monetize - Exploring creatives
 
 You can work with creatives from the **Creative Manager** screen. From there you can view the creatives that are associated to a particular advertiser as well as add and update
 creatives.
@@ -22,8 +22,7 @@ The **Creative Manager** screen shows all the creatives associated with the sele
 - **Clicks**: Total number of clicks.
 - **CTR%**: Ratio of clicks to impressions (clicks/impressions x 100), expressed as a percentage.
 - **VCR%**: Ratio of video completions to impressions (video completions/total impressions x 100), expressed as a percentage.
-- **Viewability Rate%**: The percentage of impressions that were viewable out of the total number of impressions measured for viewability (viewed impressions/view-measured impressions x 100). If the viewability threshold is targeted, the viewability rate is compared to the predicted threshold that is calculated by dividing
-  total views by total impressions.
+- **Viewability Rate%**: The percentage of impressions that were viewable out of the total number of impressions measured for viewability (viewed impressions/view-measured impressions x 100). If the viewability threshold is targeted, the viewability rate is compared to the predicted threshold that is calculated by dividing total views by total impressions.
 - **Conversions**: Total number of post-view and post-click conversions.
 - **Conversion Rate%**: Ratio of conversions to impressions (conversions/impressions x 100), expressed as a percentage.
 - **Tracking**: When adding creatives, you can set a variety of tracking parameters from the **Pixels (optional)** section, such as frequency and recency caps, third-party tracking pixels, and segment pixels. For more information, see [Configuring Tracking for Creatives](../monetize/configuring-tracking-for-creatives.md).

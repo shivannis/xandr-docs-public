@@ -91,8 +91,8 @@ This section allows you to perform more complicated searches, including:
 - **Audit status:** Search for creatives by audit status. You can select multiple statuses.
 - **Served on:** Search for creatives that have served on specific inventory within a specific time period.
 
-> [!NOTE]
-> Note that the "Served on" field defaults to "today." If you are searching for a creative that served before today, be sure to change this field to get results.
+  > [!NOTE]
+  > Note that the "Served on" field defaults to "today." If you are searching for a creative that served before today, be sure to change this field to get results.
 
 ### Related topics
 
