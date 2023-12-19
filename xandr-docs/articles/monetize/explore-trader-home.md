@@ -1,6 +1,6 @@
 ---
 title: Explore Trader Home
-description: The articles helps you to explore tarder home.
+description: The articles helps you to explore trader home.
 ms.date: 10/28/2023
 ---
 
@@ -56,7 +56,8 @@ Each card displays a performance chart that tracks the insertion order's **Avera
 
 The card displays the number of **Days Left in Flight** for the insertion order. The units of time remaining in the flight will switch to hours when there are 48 hours or less left.
 
-The flight must be added to the insertion order for the card to display all of the metrics. For information on how to add a flight, see [Create an Insertion Order](create-an-insertion-order.md).
+> [!WARNING]
+> The flight must be added to the insertion order for the card to display all of the metrics. For information on how to add a flight, see [Create an Insertion Order](create-an-insertion-order.md).
 
 ## Viewing card states
 
@@ -77,7 +78,7 @@ Each card falls into one of the nine states outlined in the table below.
 | :::image type="content" source="media/traderhome-noflightdates.png" alt-text= "Screenshot that shows a card in the No Flight Dates state only shows a value for Yesterday Spend."::: | No Flight Dates | A card in the "No Flight Dates" state only shows a value for **Yesterday Spend** and displays the "Add Flight Dates to Display ... [Pacing]" note. Click the **Add Flight Dates** button to add the necessary insertion order information. |
 | :::image type="content" source="media/traderhome-large-percentage.png" alt-text= "Screenshot that shows a card in the Large Percentage state and has a Pacing at percentage greater than 500%."::: | Large Percentage | A card in the "Large Percentage" state has a **Pacing at** percentage greater than 500% and instead shows how much is **Left in Budget** for the insertion order (in the insertion order's currency). No additional insertion order information is needed. |
 | :::image type="content" source="media/traderhome-infinite-percentage.png" alt-text= "Screenshot that shows a card in the Infinite Percentage state"::: | Infinite Percentage | A card in the "Infinite Percentage" state has a **Current Daily Needed** value of 0 because the budget is met; therefore, the **Pacing at** percentage can increase infinitely. The card instead shows how much is **Over Budget** for the insertion order (in the insertion order's currency). The card color is red. No additional insertion order information is needed. |
-| :::image type="content" source="media/traderhome-warning.png" alt-text= "Screenshot that shows a card in the Warning state displays all of the metrics but the **Pacing at** value is less than 90% or greater than 150%"::: | Warning | A card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%. No additional insertion order information is needed, but it is recommended that you review your settings. |
+| :::image type="content" source="media/traderhome-warning.png" alt-text= "Screenshot that shows a card in the Warning state displays all of the metrics but the Pacing at value is less than 90% or greater than 150%"::: | Warning | A card in the Warning state displays all of the metrics but the **Pacing at** value is less than 90% or greater than 150%. No additional insertion order information is needed, but it is recommended that you review your settings. |
 
 ## Viewing child line items
 
@@ -85,4 +86,4 @@ Each insertion order card has an **Line Item** link. Click this link to navigate
 
 ## Related topic
 
-- [Update Trader Home](update-trader-home.md)
+[Update Trader Home](update-trader-home.md)

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 > [!NOTE]
 > Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free
-> domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://wiki.xandr.com/display/policies/Reinforcing+Privacy+Controls+Through+a+Cookie-Free+Domain)(login required).
+> domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx)(login required).
 
 Once you've finished setting up placements, you can export the tags and give them to your publishers for inclusion on pages.
 
@@ -20,7 +20,7 @@ The following steps will guide you through exporting placement tags.
 **For Publisher clients:** Navigate to **Partners >  Placements** and select a publisher. Check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags**. This displays the **Export Placement Tags** dialog.
 
 **For all other clients:** Navigate to **Publisher >  Placement Manager**, check the boxes next to placements that you want to export, click **More Actions**, then select
-Export Tags. This displays the **Export Placement Tags** dialog.
+**Export Tags**. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 
@@ -28,15 +28,15 @@ In the **Modify Tags** section, set the format and type for the tags:
 
 - **Format** - This field is set to "JavaScript" by default. If necessary, you can change the format using the dropdown menu.
   
-> [!IMPORTANT]
-> For placements that allow VAST video creatives, the **Format** option is not relevant. Tags for these placements will always be URL.  
+  > [!IMPORTANT]
+  > For placements that allow VAST video creatives, the **Format** option is not relevant. Tags for these placements will always be URL.  
 
 - **Type** - This field is set to "Standard" by default. If necessary, change the type using the dropdown menu.
   
-> [!NOTE]
-> **Secure Tags**:
->
-> To obtain a secure tag, it is not sufficient to simply export a standard tag and change "http" to "https" in the tag URL. Instead, to make sure the tag gets formatted properly as secure, it's important to select "Secure" as the tag **Type**.
+   > [!NOTE]
+   > **Secure Tags**:
+   >
+   > To obtain a secure tag, it is not sufficient to simply export a standard tag and change "http" to "https" in the tag URL. Instead, to make sure the tag gets formatted properly as secure, it's important to select "Secure" as the tag **Type**.
 
 You can also add additional parameters to the tags:
 
@@ -67,6 +67,8 @@ player.
 >
 
 ## Delivery options
+
+You have three delivery options: You can either copy the tags manually, download the tags as an HTML file, or email the tags to up to 10 recipients.
 
  **VAST Tags**
 

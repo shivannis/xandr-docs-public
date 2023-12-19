@@ -26,4 +26,4 @@ For more information, see [Configuring a Native Assembly](configuring-a-native-a
 
 ## Related topic
 
-- [Create a Native Assembly](create-a-native-assembly.md)
+[Create a Native Assembly](create-a-native-assembly.md)

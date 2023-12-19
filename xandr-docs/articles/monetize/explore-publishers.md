@@ -1,6 +1,6 @@
 ---
 title: Explore Publishers
-description: The article outlines the Publishers screen, which lists associated publishers and provides information on network and publisher performance. Users can select individual publishers for more detailed information.
+description: The article summarizes the Publishers screen, listing and offering insights on network and publisher performance.
 ms.date: 10/28/2023
 ---
 
@@ -12,7 +12,7 @@ publisher. You can select individual publishers to display more information.
 ## Getting to the publisher screen
 
 > [!NOTE]
-> Depending on which version of Monetize you use, you will access the **Publishers** screen using one of the following options.
+> Depending on which version of Microsoft Monetize you use, you will access the **Publishers** screen using one of the following options.
 
 From the **Publishers** tab: either select the **Publishers** option in the menu at the top of the screen, or select **All Publishers** from the **Publishers** dropdown.
 
@@ -38,8 +38,8 @@ The following information about the activity of each publisher associated to you
   - **Deal Revenue** - The total revenue from deals.
 - **Publisher's Share**
   
-> [!IMPORTANT]
-> For publishers with an inventory relationship of **Owned & Operated**, **Publisher Revenue** and **RPM** will always be zero. The amount made on inventory is rolled up into the Network Revenue column, which represents the revenue earned by your Xandr member seat.
+  > [!IMPORTANT]
+  > For publishers with an inventory relationship of **Owned & Operated**, **Publisher Revenue** and **RPM** will always be zero. The amount made on inventory is rolled up into the Network Revenue column, which represents the revenue earned by your Xandr member seat.
 
 - **Revenue** - The total revenue earned by this publisher. This value represents the network's cost.
 - **RPM** - The revenue per 1,000 impressions for this publisher. This value includes impressions from defaults, PSAs, and errors. It represents your network's CPM.
@@ -51,8 +51,8 @@ The following information about the activity of each publisher associated to you
   - **PSA** - The number of impressions that showed PSAs. PSAs serve only when there is no other creative available.
 - **Viewability**
   
-> [!IMPORTANT]
-> A viewable impression, as defined by the IAB (Interactive Advertising Bureau), is a display ad with 50% or more of the pixels visible for at least one continuous second. A video ad is defined as viewable if 50% or more of the pixels are visible for at least two consecutive seconds.
+   > [!IMPORTANT]
+   > A viewable impression, as defined by the IAB (Interactive Advertising Bureau), is a display ad with 50% or more of the pixels visible for at least one continuous second. A video ad is defined as viewable if 50% or more of the pixels are visible for at least two consecutive seconds.
 
 - **Viewable** - The percentage of impressions that were viewable, based on the total number of impressions that were measured for viewability.
   - **Measured** - The percentage of impressions measured for viewability, based on the total number of impressions.
@@ -64,7 +64,7 @@ Click the configuration button (in the upper right corner of the screen) to cust
 
 ### Column configuration
 
-Configure which columns you'll see in the Publishers table. All columns are visible by default. Uncheck the category (**Network**, **Publisher**, **Impressions**, **Viewability**) to hide all columns within that category. Checking the category will restore all columns along with the category. Check and uncheck individual columns within categories depending on your view preferences.
+Configure which columns you'll see in the **Publishers** table. All columns are visible by default. Uncheck the category (**Network**, **Publisher**, **Impressions**, **Viewability**) to hide all columns within that category. Checking the category will restore all columns along with the category. Check and uncheck individual columns within categories depending on your view preferences.
 
 ### Currency display
 
@@ -80,7 +80,7 @@ Click the  dropdown to select a time zone. This will be the time zone that is us
 You can limit the number of publishers visible on the screen by searching for a Publisher by name or ID. In the text box labeled ID/Name, enter either an ID or a name. The system will automatically begin searching for matches to whatever you type. For example, if you type 123, all publishers with IDs containing the numbers 123 (in that
 order) will be displayed. If you type Pub1, all publishers whose names begin with "Pub1" will be displayed.
 
-To see all publishers (or, if you have used the search text box to filter your list, all publishers that match that search), select **All** from the state dropdown. To see only active publishers, select Active. To see only inactive publishers,select **Inactive**.
+To see all publishers (or, if you have used the search text box to filter your list, all publishers that match that search), select **All** from the state dropdown. To see only active publishers, select **Active**. To see only inactive publishers, select **Inactive**.
 
 ## Sorting the publisher list
 

@@ -1,13 +1,12 @@
 ---
 title: Explore Placements
-description: The article explains the Placement Manager screen's features, including essential metrics for all placements, quick access to details and default creatives, placement tag exporting, and bulk editing/reporting options.
+description: The article details the Placement Manager screen, highlighting features such as key metrics for all placements, quick access to details and default creatives.
 ms.date: 10/28/2023
 ---
 
 # Explore placements
 
-The Placement Manager screen shows you essential metrics about all placements for a specific publisher, provides quick access to each placement's details and default creatives
-as well as placement tag exporting, and offers bulk editing and reporting options.
+The **Placement Manager** screen shows you essential metrics about all placements for a specific publisher, provides quick access to each placement's details and default creatives as well as placement tag exporting, and offers bulk editing and reporting options.
 
 ## Getting to the placement manager screen
 
@@ -27,12 +26,11 @@ Use the dropdown at the top right of the screen to choose the interval for the d
 
 ### Currency
 
-Click the Currency dropdown to select the currency units to display for all monetary values in the grid. You can select either USD (United States Dollars) or the publisher's currency. (If the publisher's currency is USD, this dropdown is disabled.) The default is USD. Current exchange rates will be applied. Exchange rates are updated hourly. (See
-[Currency Support](currency-support.md) for more information on currencies.)
+Click the **Currency** dropdown to select the currency units to display for all monetary values in the grid. You can select either USD (United States Dollars) or the publisher's currency. (If the publisher's currency is USD, this dropdown is disabled.) The default is USD. Current exchange rates will be applied. Exchange rates are updated hourly. (See [Currency Support](currency-support.md) for more information on currencies.)
 
 ### Time zone
 
-Click the **Time Zone** dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified interval (**Toda**y,
+Click the **Time Zone** dropdown to select a time zone. This will be the time zone that is used to determine the data collected for the specified interval (**Today**,
 **Yesterday**, or **Last 7 Days**).
 
 ### Viewing data
@@ -42,7 +40,7 @@ The following information is shown for each placement. Note that the data always
 - **ID**: ID number of the placement.
 - **Name**: Name of the placement.
 - **Placement Group**: The parent placement group under which the placement belongs.
-- **Self-Audit**: Whether the publisher has opted to [self-audit](auditing-creatives.md) its inventory.
+- **Self-Audit**: Whether the publisher has opted to [Self-Auditing Creatives](self-auditing-creatives.md) its inventory.
 - **Imps**: Number of impressions for the placement.
 - **Network Revenue**: Network revenue booked through direct advertisers and resold to real-time buyers.
 

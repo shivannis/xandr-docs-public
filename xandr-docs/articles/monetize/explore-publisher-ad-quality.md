@@ -1,11 +1,9 @@
 ---
 title: Explore Publisher Ad Quality
-description: The Publisher Ad Quality screen Allows you to view network-level ad quality settings such as your Network Profile or Publisher Templates and Displays your Publisher Base and Conditional Rules. For each rule, the
+description: The article details the Publisher Ad Quality screen, showcasing network-level ad settings including Network Profile, Publisher Templates and so on.
 ms.date: 10/28/2023
 
 ---
-
-
 # Explore publisher ad quality
 
 The **Publisher Ad Quality** screen performs several functions:
@@ -68,7 +66,7 @@ Apply per-user frequency caps to creatives based on their technical attributes. 
 
 ### Creative approval
 
-Under the Creative Approval tab you can search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
+Under the **Creative Approval** tab you can search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
 
 ### Common searches
 

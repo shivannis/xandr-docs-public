@@ -1,17 +1,17 @@
 ---
-title: Monetize - Export Conversion Pixels
+title: Microsoft Monetize - Export Conversion Pixels
 description: The page facilitates the extraction of conversion pixels. After completing the configuration of conversion pixels, you can export the corresponding tags and provide them to your advertisers for seamless integration onto their web pages.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Export conversion pixels
+# Microsoft Monetize - Export conversion pixels
 
 Once you've finished setting up conversion pixels, you can export the tags and give them to your advertisers for inclusion on pages.
 
 ## Step 1. Get started
 
 Go to the **Conversion Pixels** screen (**Advertisers >  Conversion Pixels**), select the checkboxes next to the conversion pixels that you want to export,
-click **More Actions**, and select **Export**. This displays the Export Pixels dialog.
+click **More Actions**, and select **Export**. This displays the **Export Pixels** dialog.
 
 ## Step 2. Select the pixel format
 
@@ -19,9 +19,9 @@ In the **Basic Options** section, select the format for your exported pixels:
 
 - **Use a JavaScript tag** - By default, pixels will be exported as image tags. If you want JavaScript tags instead, select this option.
   
-> [!IMPORTANT]
-> Why use JavaScript tags? Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript.
-> If a piggyback pixel is  JavaScript, the parent pixel should be JavaScript as well.
+  > [!IMPORTANT]
+  > Why use JavaScript tags? Some advertisers require JavaScript tags. Image pixels can only perform one redirect, so parent pixels with multiple piggybacks must be JavaScript.
+  > If a piggyback pixel is  JavaScript, the parent pixel should be JavaScript as well.
 
 - **Generate a non-secure pixel** - Select this option to generate a non-secure pixel. See [Conversion Pixels Advanced](conversion-pixels-advanced.md) for additional details.
 
@@ -42,14 +42,14 @@ Select **Use a server-side pixel** to generate a URL that you can call, instead 
 > [!IMPORTANT]
 > You can select this option on its own, or in conjunction with the **Use codes** option above.
 > [!NOTE]
-> If you have selected this option you will not be able to select the **Add user to segments** or **Remove user from segments** options, or the Include a redirect URL parameter. For more information on server-side conversion pixels, see [Server-Side Conversion Pixels](server-side-conversion-pixels.md).
+> If you have selected this option you will not be able to select the **Add user to segments** or **Remove user from segments** options, or the **Include a redirect URL** parameter. For more information on server-side conversion pixels, see [Server-Side Conversion Pixels](server-side-conversion-pixels.md).
 
 - Select **Add user to segments on call** to generate a pixel that will add the user to segments once they have converted. After selecting this option, click **Add** near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
 - Select **Remove user from segments on call** to generate a pixel that will remove the user from segments once they have converted. After selecting this option, click
   Add near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
-- Select any or all of the pixel parameters to add dynamic revenue, ID or SKU, or a redirect URL to the pixel tag. For more information, see the "Order ID/SKU", "Dynamic Revenue Values", and "Redirect URL" under [Conversion Pixels](conversion-pixels-advanced.md).
+- Select any or all of the pixel parameters to add dynamic revenue, ID or SKU, or a redirect URL to the pixel tag. For more information, see the "Order ID/SKU", "Dynamic Revenue Values", and "Redirect URL" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
 ## Step 5. Generate the tags
 
@@ -71,7 +71,7 @@ A JavaScript pixel looks like this, with a `t=1` parameter:
 <!-- End of Conversion Pixel -->
 ```
 
-Related Topics
+## Related topics
 
 - [Create a Conversion Pixel](create-a-conversion-pixel.md)
 - [Conversion Pixels Advanced](conversion-pixels-advanced.md)

@@ -30,7 +30,7 @@ Navigate to **Publisher > Placement Manager**, check the boxes next to placement
 
 - Click the **Get Tags** button. The dialog refreshes to show the tags as well as your delivery options.
   Also, a preview displays below each tag that has default creatives.
-- When you export the placement tag for a placement that allows VAST video creatives, the placement tag generated is a URL that automatically includes the `ptv` or `vmap` handler (depending on the placement), which ensures that ad calls will return the XML your publisher's video player uses to serve the desired creative. For `ptv`tags, the end result looks something like this:
+- When you export the placement tag for a placement that allows VAST video creatives, the placement tag generated is a URL that automatically includes the `ptv` or `vmap` handler (depending on the placement), which ensures that ad calls will return the XML your publisher's video player uses to serve the desired creative. For `ptv` tags, the end result looks something like this:
   `https://ib.``adnxs``.com/ptv?id=5523324`. See [Create and Customize a Video Placement Tag](create-and-customize-a-video-placement-tag.md) for more detailed information.
   For vmap tags, the end result should look something like this:
   `https://ib.``adnxs``.com/vmap?id=11029144`.
