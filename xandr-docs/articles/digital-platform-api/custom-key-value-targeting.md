@@ -293,7 +293,7 @@ Now let's define our expression fruit == orange:
 
 That was pretty simple. Now we get to put it all together with an `"and"` expression to create fruit = orange AND (city == Seattle OR city == LA):
 
-:::image type="content" source="media/or-and-statement.png" alt-text="Diagram showing how to use the `"and"` expression to put the expressions together.":::
+:::image type="content" source="media/or-and-statement.png" alt-text="Diagram showing how to use the "and" expression to put the expressions together.":::
 
 ```
  "exp": {

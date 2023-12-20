@@ -13,8 +13,8 @@ Use the read-only Genre Service to see what video content genres are registered 
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/video-content-genre | To view all defined genres |
-| `GET` | https://api.appnexus.com/video-content-genre?id=<id value> | To view a defined genre |
+| `GET` | `https://api.appnexus.com/video-content-genre` | To view all defined genres |
+| `GET` | `https://api.appnexus.com/video-content-genre?id=<id value>` | To view a defined genre |
 
 ## JSON fields
 

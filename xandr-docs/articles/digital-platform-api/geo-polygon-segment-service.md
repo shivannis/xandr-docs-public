@@ -4,7 +4,7 @@ description: Use the geo polygon segment service to create, configure, and expor
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
-l
+
 # Geo polygon segment service
 
 > [!NOTE]
