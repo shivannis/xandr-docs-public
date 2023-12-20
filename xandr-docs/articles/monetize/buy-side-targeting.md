@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Buy-Side Targeting
+title : Microsoft Monetize - Targeting (Buy-Side)
 description : This page lists the types of user and inventory targeting you can apply on your line items or campaigns.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Buy-Side targeting
+# Microsoft Monetize - Targeting (Buy-Side)
 
 This page lists the types of user and inventory targeting you can apply
 on your line items or campaigns. If a particular kind of targeting is
@@ -43,7 +43,7 @@ of line items. Augmented line items do not use campaigns.
   - [Domain Targeting](domain-targeting.md)
 - [Content Category Targeting](content-category-targeting.md) (Standard Line Item only)
 - [Inventory Quality Targeting](inventory-quality-targeting.md) (Standard Line Item only)
-- [Third-Party Inventory Targeting](third-party-inventory-targeting.md)(Standard Line Item only)
+- [Third-Party Inventory Targeting](third-party-inventory-targeting.md) (Standard Line Item only)
 - [Key/Value Targeting](key-value-targeting.md)
 - [Page Properties Targeting](page-properties-targeting.md)(Augmented Line Item only)
 - [Query String Targeting via Placement Tags and Segments](query-string-targeting-via-placement-tags-and-segments.md)

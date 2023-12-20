@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Buying Deals
+# Microsoft Monetize - Buying deals
 
 A deal is an agreement between a buyer and a seller that provides
 special access to inventory and/or data. There are two ways to strike

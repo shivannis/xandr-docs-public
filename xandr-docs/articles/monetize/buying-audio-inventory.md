@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Buying Audio Inventory
+# Microsoft Monetize - Buying Audio inventory
 
 You can buy audio inventory on Xandr using our
 optimized buy-side workflow.
@@ -25,9 +25,7 @@ Creatives in Bulk](add-creatives-in-bulk.md).
 1. Target your own managed or third-party
     inventory.
 
-    For more information, see [Third-Party Inventory Targeting](third-party-inventory-targeting.md)
-    <a href="third-party-inventory-targeting.md" class="xref">Third-Party
-    Inventory Targeting</a>.
+    For more information, see [Third-Party Inventory Targeting](third-party-inventory-targeting.md).
 
 1. Target users.
 

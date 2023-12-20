@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Block a Brand Using Ad Quality Rules
+# Microsoft Monetize - Block a brand using Ad Quality rules
 
 You can use Network and Publisher Ad Quality to
 block a brand from serving creatives on placements for an entire
@@ -27,7 +27,7 @@ because it doesn't match your network or publisher's requirements.
    |---|---|
    | **Network-Level Block (blocks brands for all publishers)**| - Select **Publishers > Ad Quality**.<br> - Edit your **Network Template**. |
    | **Publisher-Level Block (blocks brands for a single publisher)** | - Select **Publishers > Ad Quality**.<br> - Choose the publisher for which you want a brand blocked. Then, create or edit a base rule. |
-   | **Placement-Level Block (blocks brands for certain ad placements)** | - Select **Publishers > Ad Quality**.<br> - Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> - Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**.For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
+   | **Placement-Level Block (blocks brands for certain ad placements)** | - Select **Publishers > Ad Quality**.<br> - Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> - Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**. <br> For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
 
 1. Navigate to the
     **Settings** tab and select
@@ -57,7 +57,7 @@ because it doesn't match your network or publisher's requirements.
    > [!IMPORTANT]
    > When editing the Network Template using Network Ad Quality, your settings are automatically saved and applied.
 
-# Related topics
+## Related topics
 
 - [Choosing the Most Useful Ad Quality Rules](choosing-the-most-useful-ad-quality-rules.md)
 - [Improving Ad Quality on Your Inventory](improving-ad-quality-on-your-inventory.md)

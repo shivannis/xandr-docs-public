@@ -113,7 +113,7 @@ Reports automatically group by all selected dimensions.
 | CTR | double | 0.00237 | (Clicks / Imps) x 100 | The rate of clicks to impressions, expressed as a percentage. |
 | Imps | int | 34534 | Imps | The total number of impressions (served and resold). |
 | Media Cost | money | 100.00 | Cost | The total cost of the inventory purchased. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Partner Fees | money | 123.45 | Third-party costs. | The total amount of third-party costs, budgeted using Partner Fees, that have accrued on an augmented line item over the reported period of time. |
+| Partner Fees | money | 123.45 | Third-party costs. | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. |
 | Post Click Convs | int | 19 | Post Click Convs | The total number of recorded post-click conversions. |
 | Post View Conversions | int | 15 | Post View Conversions | The total number of recorded post-view conversions. |
 | Profit | money | 4.14 | Booked Revenue - Total Cost | Booked revenue minus total cost.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
@@ -204,7 +204,7 @@ Follow these steps to run your report.
 1. Click **Run
     report** to send your report request.
 
-## **Related Topics**
+## Related topics
 
 - [Reporting Guide](reporting-guide.md)
 - [Working with Segments](working-with-segments.md)

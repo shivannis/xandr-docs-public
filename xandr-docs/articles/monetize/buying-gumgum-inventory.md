@@ -1,6 +1,6 @@
 ---
-Title : Microsoft Monetize - Buying GumGum Inventory
-Description : Learn what is GumGum Inventory and how it can be used to enhance user engagement.  
+title : Microsoft Monetize - Buying GumGum Inventory
+description : Learn what is GumGum Inventory and how it can be used to enhance user engagement.  
 ms.date: 10/28/2023
 ---
 
@@ -54,8 +54,7 @@ dialog box select the following values:
 
 ### Step 1. View the creative
 
-Use the [](https://gumgum.com/creative-preview)<a href="https://gumgum.com/creative-preview" class="xref"
-target="_blank">https://gumgum.com/creative-preview</a> to view
+Use the [https://gumgum.com/creative-preview](https://gumgum.com/creative-preview)to view
 creative.
 
 ### Step 2. Enter The HTML tag code

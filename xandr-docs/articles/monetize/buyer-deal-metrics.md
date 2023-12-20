@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Buyer Deal Metrics
+# Microsoft Monetize - Buyer deal metrics
 
 > [!NOTE]
 > As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in all screens where these two metrics are reported. No other deal metrics will be affected.
@@ -17,7 +17,7 @@ metrics, performance, and rejection reasons that is relevant to buyers.
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
@@ -144,8 +144,8 @@ information about the definitions of the data fields.
     selections you make here will determine what report data is
     delivered to you, and how.
 
-  > [!IMPORTANT]
-  > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that

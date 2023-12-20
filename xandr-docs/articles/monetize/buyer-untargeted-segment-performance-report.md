@@ -19,7 +19,7 @@ campaigns and advertisers over untargeted segments. This allows you to:
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.

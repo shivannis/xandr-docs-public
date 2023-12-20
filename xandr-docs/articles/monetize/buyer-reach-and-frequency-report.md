@@ -1,8 +1,6 @@
 ---
 title : Microsoft Monetize - Buyer Reach and Frequency Report
-description : Learn how using Buyer Reach and Frequency Report buyers can
-have get insight on how cross device impacted the number of times a
-single person saw their ads across all their devices using this report.
+description : Learn how by using Buyer Reach and Frequency Report buyers get insight on how cross device impacts the number of times a single person sees their ads across all their devices using this report.
 ms.date: 10/28/2023
 ---
 
@@ -119,8 +117,7 @@ Follow these steps to run your report.
     delivered to you, and how.
 
     > [!IMPORTANT]
-    > Essential information required for user success<b>Important:</b> For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
-    .
+    >  For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that

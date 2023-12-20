@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Broker Fees
+# Microsoft Monetize - Broker fees
 
 > [!IMPORTANT]
 > Broker fees are deprecated on augmented line items and programmatic guaranteed line items. If you wish to track a third-party fee for an ALI or PGLI, please use [Partner Fees](partner-fees.md).
@@ -34,7 +34,7 @@ don't collect money from Networks and pay out to
 third parties. But we want you to be able to run the business side of
 things as easily as possible on the platform.
 
-## Applied at line item or insertion Order levels (commissions)
+## Applied at line item or insertion order levels (commissions)
 
 > [!WARNING]
 > - Broker fees applied to an insertion order do NOT apply to any augmented line items belonging to that insertion order. They apply ONLY to standard line items.

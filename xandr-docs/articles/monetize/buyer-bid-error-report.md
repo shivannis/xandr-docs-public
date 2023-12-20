@@ -21,7 +21,7 @@ the owner, cause and recommended resolution for each error in [Bid Error Codes](
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
@@ -115,8 +115,8 @@ Follow these steps to run your report.
     selections you make here will determine what report data is
     delivered to you, and how.
 
-> [!IMPORTANT]
-> For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+   > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that
@@ -129,8 +129,8 @@ Follow these steps to run your report.
 1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
 
-  > [!WARNING]
-  > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and
     grouped by your chosen dimensions, you need to choose a delivery
@@ -144,8 +144,8 @@ Follow these steps to run your report.
       popup notification will let you know when the report is ready to
       view or download.
 
-     > [!TIP]
-     > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md)for that reporting service (The limit here is 10 million rows).
+       > [!TIP]
+       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md)for that reporting service (The limit here is 10 million rows).
 
 
     - **Export, send results via
@@ -156,7 +156,7 @@ Follow these steps to run your report.
       this template using the text entry field under
       **Name this report** (its checkbox
       is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
+      be rerun from the **Your Reports**
       screen.
     - **Add to scheduled reports**: Run this report automatically at
       specified times and have it sent to one or more email addresses.
