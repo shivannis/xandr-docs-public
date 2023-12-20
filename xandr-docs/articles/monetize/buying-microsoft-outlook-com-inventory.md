@@ -20,7 +20,7 @@ colleagues. Outlook.com focuses on four key points for advertisers:
 1. **Consumer Focus**: Designed with both the consumers and advertisers
     in mind
 1. **Advertiser Exclusivity**: There's only one advertiser per page
-    (whitelist helps to ensure exclusivity)
+    (allowlist helps to ensure exclusivity)
 1. **High Relevance**: Active(100% logged in) users provide a large
     pool of targeting options, which helps increase ROI
 1. **Simple, yet visual**: Simple creatives deliver imagery that stands

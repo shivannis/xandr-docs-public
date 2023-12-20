@@ -417,7 +417,7 @@ In the Targeting
 section, you can [Apply a Targeting Template](apply-a-targeting-template.md)
  or set unique inventory and user targeting for this campaign. Use the links below to learn more about each type of targeting.
 
-- [buy-mobile-inventory-via-rtb.md#ID-00006929__p_eys_hft_1kb](#arget-inventory)
+- [buy-mobile-inventory-via-rtb.md#ID-00006929__p_eys_hft_1kb](#target-inventory)
 - [buy-mobile-inventory-via-rtb.md#ID-00006929__p_u1x_3ft_1kb](#target-users)
 
 When you apply multiple types of targeting (e.g., inventory, segment,

@@ -1,6 +1,6 @@
 ---
 title : Microsoft Monetize - Buying Microsoft Casual Games (Windows O&O Apps)
-description : ## Inventory Overview
+description : This page lists Microsoft Casual Games that you can buy.
 ms.date: 10/28/2023
 ---
 
@@ -51,7 +51,7 @@ Adventure mode, Microsoft Minesweeper is better than ever.
 **Game Play and Game Completion Screens** - Above the fold, right side
 of game screen
 
-:::image type="content" source="media/minesweepergame.png" alt-text="Screenshot of Mine Sweeper":::
+:::image type="content" source="media/minesweepergame.png" alt-text="Diagram of Mine Sweeper .":::
 
 **Daily Challenge Menu Screens** - Above the fold, right side of menu
 screens
@@ -88,7 +88,7 @@ hundreds of brain training puzzles for players of all ages.
 
 **Game Play and Game Completion Screens** - Above the fold, bottom left
 
-:::image type="content" source="media/sudokugame.png" alt-text="Screenshot of Sudoku .":::
+:::image type="content" source="media/sudokugame.png" alt-text="Diagram of Sudoku .":::
 
 **Menu Screens** - Below the fold, right side of the menu screens
 
