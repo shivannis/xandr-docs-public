@@ -63,8 +63,8 @@ consider the following best practices:
   need to submit a large number of creatives for audit, you should
   always keep Xandr informed.
   
-> [!NOTE]
-> With forewarning, we will be able to devote additional resources to ensuring your creatives are audited as quickly as possible, and keep you up to date if we see problems with your bulk creative uploads. You will not run the risk of having your creatives de-prioritized or completely removed from our queue.
+  > [!NOTE]
+  > With forewarning, we will be able to devote additional resources to ensuring your creatives are audited as quickly as possible, and keep you up to date if we see problems with your bulk creative uploads. You will not run the risk of having your creatives de-prioritized or completely removed from our queue.
 
   To keep us informed about your creative submissions, contact either
   your Xandr representative or the Audit Client
