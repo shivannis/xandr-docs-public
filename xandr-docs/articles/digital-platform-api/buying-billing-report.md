@@ -1,42 +1,20 @@
 ---
-Title : Buying Billing Report
-Description : <b>Warning:</b> This report should only be
+title: Digital Platform API - Buying Billing Report
+description: In this article, learn about the Buying Billing report, their time frame, data retention period, dimensions, and metrics with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-used for data after September 30, 2015.
 ---
 
+# Digital Platform API - Buying Billing report
 
-# Buying Billing Report
+> [!WARNING]
+> This report should only be used for data after September 30, 2015.
 
+The Buying Billing Report can be used to view billing data across direct advertiser impressions (bought across direct publishers and real-time inventory).
 
+For instructions on retrieving a report, see [Report Service](report-service.md).
 
-
-
-
-
-
-
-<b>Warning:</b> This report should only be
-used for data after September 30, 2015.
-
-
-
-The Buying Billing Report can be used to view billing data across direct
-advertiser impressions (bought across direct publishers and real-time
-inventory).
-
-
-
-For instructions on retrieving a report, please see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-## Time Frame
+## Time frame
 
 The `report_interval` field in the JSON request can be set to one of the
 following:
@@ -53,897 +31,80 @@ following:
 - lifetime
 - custom
 
-**Data Retention Period**
+### Data retention period
 
 Data retention period for this report is 1095 days.
 
-
-
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buying-billing-report__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="buying-billing-report__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="buying-billing-report__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="buying-billing-report__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="buying-billing-report__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"2010-02-01 06:00:00"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The hour of the impression.
-
-<b>Note:</b> For impressions older than 100
-days, hourly data is aggregated into one row with 'YYYY-MM-DD 00:00:00'
-as the hour ('YYYY-MM-DD' is the UTC day in which the activity
-happened). This will make it look as though all activity happened at
-midnight. All daily data older than 100 days is returned in the UTC time
-zone.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"2010-02-01"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The day of the
-impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"2010-02"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The month of the
-impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">123</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the buyer
-member</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">buyer_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"My Network"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the buyer
-member</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">seller_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the seller
-member</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">seller_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"That Seller"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the seller
-member</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">789</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the
-advertiser</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Verizon"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the
-advertiser</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">advertiser_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The external code associated
-with an advertiser.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">451</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the insertion
-order</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Q1-2014"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name for the insertion
-order</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">insertion_order_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The external code associated
-with an insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">932</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the line
-item</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"$3 CPM Verizon Remarketing"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the line
-item</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The external code associated
-with a line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">campaign_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">728</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the
-campaign</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">campaign_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Test"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the
-campaign</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">campaign_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The external code associated
-with a campaign.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">publisher_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">321</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Internal ID of the
-publisher</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">publisher_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Test"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Display name of the
-publisher</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">deal_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">123</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The internal id of the
-deal.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">deal_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Deal A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The display name of the
-deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"USD"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The transaction currency used
-by the buyer to purchase this impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">selling_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"EUR"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The transaction currency used
-by the seller to sell this impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">imp_type_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5"><p>The ID for the type of
-impression. Possible values (associated types in parentheses):</p>
-<ul>
-<li><code class="ph codeph">1 ("Blank")</code>: No creative served.</li>
-<li><code class="ph codeph">2 ("PSA")</code>: A public service
-announcement served because there were no valid bids and no default
-creative was available.</li>
-<li><code class="ph codeph">3 ("Default Error")</code>: A default
-creative served due to a timeout issue.</li>
-<li><code class="ph codeph">4 ("Default")</code>: A default creative
-served because there were no valid bids.</li>
-<li><code class="ph codeph">5 ("Kept")</code>: Your advertiser's
-creative served on your publisher's site.</li>
-<li><code class="ph codeph">6 ("Resold")</code>: Your publisher's
-impression was sold to a third-party buyer.</li>
-<li><code class="ph codeph">7 ("RTB")</code>: Your advertiser's creative
-served on third-party inventory.</li>
-<li><code class="ph codeph">8 ("PSA Error")</code>: A public service
-announcement served due to a timeout issue or lack of a default
-creative.</li>
-<li><code class="ph codeph">9 ("External Impression")</code>: An
-impression from an impression tracker.</li>
-<li><code class="ph codeph">10 ("External Click")</code>: A click from a
-click tracker.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">imp_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Blank"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The type of impression. For
-possible values, see <code class="ph codeph">imp_type_id</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">cleared_direct</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">0</code>, <code class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">Whether or not the buyer pays
-the seller directly for the cost of media. If <code
-class="ph codeph">0</code>, Xandr collects the
-cost of media from the buyer and pays the seller. If <code
-class="ph codeph">1</code>, the buyer pays the seller directly for the
-cost of media.
-
-<b>Tip:</b> Buyers can match the cost of media
-on their invoice by filtering out "cleared direct" transactions.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">marketplace_clearing_event</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Views - Standard Display"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The name of the underlying
-auction event that was transacted (e.g., impression, viewable
-impression, completed video). For more information, see <a
-href="invest_invest-standard/guaranteed-outcomes.md"
-class="xref" target="_blank">Guaranteed Outcomes</a> and <a
-href="invest_invest-standard/supported-viewability-standards-for-guaranteed-outcomes.md"
-class="xref" target="_blank">Supported Viewability Standards</a> in the
-UI documentation.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">split_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">342</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The ID of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_id</code> (if included) will be <code
-class="ph codeph">null</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__1">split_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__4"><code
-class="ph codeph">"Mobile Split A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__5">The name of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_name</code> (if included) will be <code
-class="ph codeph">null</code>.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `hour` | time | No | `"2010-02-01 06:00:00"` | The hour of the impression.<br><br>**Note:** For impressions older than 100 days, hourly data is aggregated into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the UTC day in which the activity happened). This will make it look as though all activity happened at midnight. All daily data older than 100 days is returned in the UTC time zone. |
+| `day` | time | No | `"2010-02-01"` | The day of the impression. |
+| `month` | time | No | `"2010-02"` | The month of the impression. |
+| `buyer_member_id` | int | Yes | `123` | Internal ID of the buyer member. |
+| `buyer_member_name` | string | No | `"My Network"` | Display name of the buyer member. |
+| `seller_member_id` | int | Yes | `456` | Internal ID of the seller member. |
+| `seller_member_name` | string | No | `"That Seller"` | Display name of the seller member. |
+| `advertiser_id` | int | Yes | `789` | Internal ID of the advertiser. |
+| `advertiser_name` | string | No | `"Verizon"` | Display name of the advertiser. |
+| `advertiser_code` | string  | No |`"Advertiser Code"`  | The external code associated with an advertiser. |
+| `insertion_order_id` | int | Yes | `451` | Internal ID of the insertion order.|
+| `insertion_order_name` | string | No | `"Q1-2014"` | Display name for the insertion order. |
+| `insertion_order_code` | string | No | `"Insertion Order Code"` | The external code associated with an insertion order. |
+| `line_item_id` | int | Yes | `932` | Internal ID of the line item. |
+| `line_item_name` | string | No | `"$3 CPM Verizon Remarketing"` | Display name of the line item. |
+| `line_item_code` | string | No | `"Line Item Code"`  | The external code associated with a line item. |
+| `campaign_id` | int | Yes | `728` | Internal ID of the campaign. |
+| `campaign_name` | string | No | `"Test"` | Display name of the campaign. |
+| `campaign_code` | string | No | `"Campaign Code"` | The external code associated with a campaign. |
+| `publisher_id` | int | Yes | `321` | Internal ID of the publisher. |
+| `publisher_name` | string | No | `"Test"` | Display name of the publisher. |
+| `deal_id` | int | Yes | `123` | The internal id of the deal. |
+| `deal_name` | string | No | `"Deal A"` | The display name of the deal. |
+| `buying_currency` | string | Yes | `"USD"` | The transaction currency used by the buyer to purchase this impression. |
+| `selling_currency` | string | Yes | `"EUR"` | The transaction currency used by the seller to sell this impression. |
+| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker. |
+| `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id`. |
+| `cleared_direct` | int | Yes | `0`, `1` | Whether or not the buyer pays the seller directly for the cost of media. If `0`, Xandr collects the cost of media from the buyer and pays the seller. If `1`, the buyer pays the seller directly for the cost of media.<br><br>**Tip:** Buyers can match the cost of media on their invoice by filtering out "cleared direct" transactions. |
+| `marketplace_clearing_event` | string | Yes | `"Views - Standard Display"` | The name of the underlying auction event that was transacted (e.g., impression, viewable impression, completed video). For more information, see [Guaranteed Outcomes](../invest/guaranteed-outcomes.md) and [Supported Viewability Standards](../invest/supported-viewability-standards-for-guaranteed-outcomes.md) in the UI documentation. |
+| `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
+| `split_name` | string | yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buying-billing-report__entry__161"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="buying-billing-report__entry__162"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="buying-billing-report__entry__163"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="buying-billing-report__entry__164"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="buying-billing-report__entry__165"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Total number of
-impressions</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Total number of clicks
-across all impressions</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Total number of conversions
-across all impressions</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">booked_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">booked_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Network revenue booked
-through direct advertisers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">booked_revenue_dollars_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">booked_revenue_dollars_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Network revenue booked
-through direct advertisers, in the transaction currency the buyer used
-to buy the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">buyer_media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">buyer_media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The total cost of the
-inventory purchased.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">buyer_media_cost_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">buyer_media_cost_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The total cost of the
-inventory purchased, in the transaction currency the buyer used to buy
-the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">auction_service_deduction</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">auction_service_deduction</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>The total deductions
-charged for impressions bought from third parties.</p>
-<p>These deductions are included in the buyer's media cost and deducted
-when calculating the seller's payment. For more information, see <a
-href="finance/buyer-auction-service-charge-mechanics.md"
-class="xref" target="_blank">Buyer Auction Service Charge Mechanics</a>
-in the Finance documentation.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">auction_service_deduction_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">auction_service_deduction_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>The total deductions
-charged for impressions bought from third parties, in the transaction
-currency the buyer used to buy the impression.</p>
-<p>These deductions are included in the buyer's media cost and deducted
-when calculating the seller's payment. For more information, see <a
-href="finance/buyer-auction-service-charge-mechanics.md"
-class="xref" target="_blank">Buyer Auction Service Charge Mechanics</a>
-in the Finance documentation.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">net_media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">net_media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The total amount to be paid
-for media purchases, less the Auction Service Deduction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">net_media_cost_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">net_media_cost_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The total amount to be paid
-for media purchases, less the Auction Service Deduction, in the
-transaction currency the buyer used to buy the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">creative_overage_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">creative_overage_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Total fees charged for
-hosted creatives that exceed the creative size limit.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">creative_overage_fees_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">creative_overage_fees_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">Total fees charged for
-hosted creatives that exceed the creative size limit, in the transaction
-currency the buyer used to buy the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">auction_service_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">auction_service_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>Total fees charged for
-impressions bought from third parties.</p>
-<p>These fees are charged in addition to the buyer's media cost. For
-more information, see <a
-href="finance/buyer-auction-service-charge-mechanics.md"
-class="xref" target="_blank">Buyer Auction Service Charge Mechanics</a>
-in the Finance documentation.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">auction_service_fees_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">auction_service_fees_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>Total fees charged for
-impressions bought from third parties, in the transaction currency the
-buyer used to buy the impression.</p>
-<p>These fees are charged in addition to the buyer's media cost. For
-more information, see <a
-href="finance/buyer-auction-service-charge-mechanics.md"
-class="xref" target="_blank">Buyer Auction Service Charge Mechanics</a>
-in the Finance documentation.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">marketplace_clearing_event_units</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">23</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">marketplace_clearing_event_units</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The total number of events
-purchased (for the associated Clearing Event). When buying a Clearing
-Event other than impression (e.g., viewable impressions), the number of
-billed events will be less than the number of impressions. For more
-information, see <a
-href="invest_invest-standard/guaranteed-outcomes.md"
-class="xref" target="_blank">Guaranteed Outcomes</a> in the UI
-documentation.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">exchange_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">4.32</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">exchange_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165">The amount taken out of the
-exchange to give to the seller. If you aren't using a line item with a
-guaranteed outcomes payment model, this metric's value equals
-<strong>Net Media Cost</strong>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">ecpm_conversion_deduction</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">3.2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">ecpm_conversion_deduction</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>The amount that <span
-class="ph">Xandr takes out of a guaranteed outcomes bid/payment
-to cover eCPM conversion and post-auction outcome prediction services.
-If you aren't using a line item with a guaranteed outcomes payment
-model, this field's value equals <code class="ph codeph">0</code>.</p>
-<p>For more information on how this fee is calculated, see <a
-href="invest_invest-standard/understanding-payment-conversion-rates.md"
-class="xref" target="_blank">Understanding Payment Conversion
-Rates</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__161">go_market_making_fee</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__162">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__163"><code
-class="ph codeph">0.48</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__164">go_market_making_fee</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buying-billing-report__entry__165"><p>The percentage-based fee
-that Xandr takes out of a guaranteed outcomes
-bid/payment to cover the risk incurred when providing guaranteed
-outcomes. This field's value equals <code class="ph codeph">0</code>
-when not using a guaranteed outcomes line item. If you aren't using a
-line item with a guaranteed outcomes payment model, this field's value
-equals <code class="ph codeph">0</code>.</p>
-<p>The target for this fee is 10%, but the actual percentage used varies
-based on continuously shifting prediction accuracy:</p>
-<ul>
-<li>GO Market Making Fee Percentage = Fixed Percentage (10%) ±
-Prediction Variability (a positive or negative percentage that changes
-based on shifting prediction accuracy)</li>
-</ul>
-<p>For more information on how this fee is calculated, see <a
-href="invest_invest-standard/understanding-payment-conversion-rates.md"
-class="xref" target="_blank">Understanding Payment Conversion
-Rates</a>.</p></td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Example | Formula | Description |
+|:---|:---|:---|:---|:---|
+| `imps` | int | `123456` | imps | Total number of impressions. |
+| `clicks` | int | `123456` | clicks | Total number of clicks across all impressions. |
+| `convs` | int | `123456` | total_convs | Total number of conversions across all impressions. |
+| `booked_revenue` | money | `123.45` | booked_revenue | Network revenue booked through direct advertisers. |
+| `booked_revenue_dollars_buying_currency` | money | `123.45` | booked_revenue_dollars_buying_currency | Network revenue booked through direct advertisers, in the transaction currency the buyer used to buy the impression. |
+| `buyer_media_cost` | money | `123.45` | buyer_media_cost | The total cost of the inventory purchased. |
+| `buyer_media_cost_buying_currency` | money | `123.45` | buyer_media_cost_buying_currency | The total cost of the inventory purchased, in the transaction currency the buyer used to buy the impression. |
+| `auction_service_deduction` | money | `123.45` | auction_service_deduction | The total deductions charged for impressions bought from third parties.<br>These deductions are included in the buyer's media cost and deducted when calculating the seller's payment. For more information, see [Buyer Auction Service Charge Mechanics](../monetize/buyer-auction-service-charge-mechanics.md). |
+| `auction_service_deduction_buying_currency` | money | `123.45` | auction_service_deduction_buying_currency | The total deductions charged for impressions bought from third parties, in the transaction currency the buyer used to buy the impression.<br>These deductions are included in the buyer's media cost and deducted when calculating the seller's payment. For more information, see [Buyer Auction Service Charge Mechanics](../monetize/buyer-auction-service-charge-mechanics.md). |
+| `net_media_cost` | money | `123.45` | net_media_cost | The total amount to be paid for media purchases, less the Auction Service Deduction. |
+| `net_media_cost_buying_currency` | money | `123.45` | net_media_cost_buying_currency | The total amount to be paid for media purchases, less the Auction Service Deduction, in the transaction currency the buyer used to buy the impression. |
+| `creative_overage_fees` | money | `123.45` | creative_overage_fees | Total fees charged for hosted creatives that exceed the creative size limit. |
+| `creative_overage_fees_buying_currency` | money | `123.45` | creative_overage_fees_buying_currency | Total fees charged for hosted creatives that exceed the creative size limit, in the transaction currency the buyer used to buy the impression. |
+| `auction_service_fees` | money | `123.45` | auction_service_fees | Total fees charged for impressions bought from third parties.<br>These fees are charged in addition to the buyer's media cost. For more information, see [Buyer Auction Service Charge Mechanics](../monetize/buyer-auction-service-charge-mechanics.md). |
+| `auction_service_fees_buying_currency` | money | `123.45` | auction_service_fees_buying_currency | Total fees charged for impressions bought from third parties, in the transaction currency the buyer used to buy the impression.<br>These fees are charged in addition to the buyer's media cost. For more information, see [Buyer Auction Service Charge Mechanics](../monetize/buyer-auction-service-charge-mechanics.md). |
+| `marketplace_clearing_event_units` | int | `23` | marketplace_clearing_event_units | The total number of events purchased (for the associated Clearing Event). When buying a Clearing Event other than impression (e.g., viewable impressions), the number of billed events will be less than the number of impressions. For more information, see [Guaranteed Outcomes](../invest/guaranteed-outcomes.md) in the UI documentation. |
+| `exchange_cost` | money | `4.32` | exchange_cost | The amount taken out of the exchange to give to the seller. If you aren't using a line item with a guaranteed outcomes payment model, this metric's value equals **Net Media Cost**. |
+| `ecpm_conversion_deduction` | money | `3.2` | ecpm_conversion_deduction | The amount that Xandr takes out of a guaranteed outcomes bid/payment to cover eCPM conversion and post-auction outcome prediction services. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals `0`.<br>For more information on how this fee is calculated, see [Understanding Payment Conversion Rates](../invest/understanding-payment-conversion-rates.md). |
+| `go_market_making_fee` | money | `0.48` | go_market_making_fee | The percentage-based fee that Xandr takes out of a guaranteed outcomes bid/payment to cover the risk incurred when providing guaranteed outcomes. This field's value equals `0` when not using a guaranteed outcomes line item. If you aren't using a line item with a guaranteed outcomes payment model, this field's value equals `0`.<br>The target for this fee is 10%, but the actual percentage used varies based on continuously shifting prediction accuracy:<br>GO Market Making Fee Percentage = Fixed Percentage (10%) ± Prediction Variability (a positive or negative percentage that changes based on shifting prediction accuracy)<br><br>For more information on how this fee is calculated, see [Understanding Payment Conversion Rates](../invest/understanding-payment-conversion-rates.md). |
 
+## Examples
 
+### Create the JSON-formatted report request
 
+The JSON file should include the `report_type` `"buyer_invoice_report"`, as well as the columns (dimensions and metrics) and report_interval that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
-
-## Example
-
-**Create the JSON-formatted report request**
-
-The JSON file should include the `report_type` `"buyer_invoice_report"`,
-as well as the columns (dimensions and metrics) and report_interval that
-you want to retrieve. You can also filter for specific dimensions,
-define granularity (year, month, day), and specify the format in which
-the data should be returned (csv, excel, or html). For a full
-explanation of fields that can be included in the JSON file, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-``` pre
+```
 $ cat buyer_invoice_report.json
 
 {
@@ -962,12 +123,9 @@ $ cat buyer_invoice_report.json
 }
 ```
 
+### `POST` the request to the Reporting Service specifying a member ID by replacing INSERT_DESIRED_MEMBER_ID
 
-
-**`POST` the request to the Reporting Service specifying a member ID by
-replacing INSERT_DESIRED_MEMBER_ID**
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @buyer_invoice_report.json 'https://api.appnexus.com/report?member_id=INSERT_DESIRED_MEMBER_ID'
 
 {
@@ -979,20 +137,15 @@ $ curl -b cookies -c cookies -X POST -d @buyer_invoice_report.json 'https://api.
      ...
      }
    }
- }
 }
 ```
 
-**`GET` the report status from the Report Service**
+### `GET` the report status from the Report Service
 
-Make a `GET` call with the Report ID to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report
-data to a file, as described in the next step.
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
+`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=39c4855a07e92433947886b5aabd267d'
 
 {
@@ -1022,46 +175,19 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=39c4855a07e9243
      ...
      }
    }
- }
 }
 ```
 
+### `GET` the report data from the Report Download Service
 
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
-**`GET` the report data from the Report Download Service**
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
 
-To download the report data to a file, make another `GET` call with the
-Report ID, but this time to the **report-download** service. You can
-find the service and Report ID in the `url` field of the previous `GET`
-response. When identifying the file that you want to save to, be sure to
-use the file extension of the `"format"` that you specified in your
-initial `POST`.
-
-
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `-i` or `-v` in your call to expose the response header.
-
-
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=39c4855a07e92433947886b5aabd267d' > buyer_invoice_report.csv
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=39c4855a07e92433947886b5aabd267d' > buyer_invoice_report.csv
 ```
 
-
-
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

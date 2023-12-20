@@ -1,214 +1,41 @@
 ---
-Title : Carrier Netblock Service
-Description : This admin-only service can be used to map blocks of IP addresses to
+title: Carrier Netblock Service
+description: In this article, learn about the Carrier Netblock service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-internet providers, enabling advertisers with mobile campaigns to target
-specific internet providers.
 ---
 
+# Carrier Netblock service
 
-# Carrier Netblock Service
-
-
-
-This admin-only service can be used to map blocks of IP addresses to
-internet providers, enabling advertisers with mobile campaigns to target
-specific internet providers.
-
-
+This admin-only service can be used to map blocks of IP addresses to internet providers, enabling advertisers with mobile campaigns to target specific internet providers.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001299__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001299__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001299__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock</a>
-<p>(add_mapping JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__3">Add
-a new carrier-netblock mapping</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID</a>
-<p>(update_mapping JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__3">Modify an existing carrier-netblock
-mapping</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__3"><p>View all carrier-netblock
-mappings</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__3">View
-a specific carrier-netblock mapping</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__3">Delete a carrier-netblock mapping</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__2"><a
-href="https://api.appnexus.com/carrier-netblock/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier-netblock/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | [https://api.appnexus.com/carrier-netblock](https://api.appnexus.com/carrier-netblock)<br>(add_mapping JSON) | Add a new carrier-netblock mapping. |
+| `PUT` | [https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID](https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID)<br>(update_mapping JSON) | Modify an existing carrier-netblock mapping. |
+| `GET` | [https://api.appnexus.com/carrier-netblock](https://api.appnexus.com/carrier-netblock) | View all carrier-netblock mappings. |
+| `GET` | [https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID](https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID) | View a specific carrier-netblock mapping. |
+| `DELETE` | [https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID](https://api.appnexus.com/carrier-netblock?id=CARRIER_NETBLOCK_MAPPING_ID) | Delete a carrier-netblock mapping. |
+| `GET` | [https://api.appnexus.com/carrier-netblock/meta](https://api.appnexus.com/carrier-netblock/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001299__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001299__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001299__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">The
-ID of the carrier-netblock mapping.
-<p><strong>Default:</strong> Auto-generated number.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code
-class="ph codeph">carrier_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">The
-ID of the internet carrier. You can use the <a
-href="xandr-bidders/carrier-service.md"
-class="xref" target="_blank">Carrier Service</a> to see the list of
-available carriers and their ID's.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code
-class="ph codeph">start_ip</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">The
-IP address at the start of the range of IP addresses you wish to map.
-This value must be entered as a flattened integer. Please convert the IP
-address using a tool such as <a
-href="http://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx"
-class="xref" target="_blank">this</a>, in order to get a flattened
-integer to <code class="ph codeph">POST</code> or <code
-class="ph codeph">PUT</code>.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code
-class="ph codeph">end_ip</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">The
-IP address at the end of the range of IP addresses you wish to map.
-Please convert the IP address using a tool such as <a
-href="http://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx"
-class="xref" target="_blank">this</a>, in order to get a flattened
-integer to <code class="ph codeph">POST</code> or <code
-class="ph codeph">PUT</code>.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">Any
-notes relevant to the carrier-netblock mapping.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__22"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001299__entry__23">date</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001299__entry__24">The
-date and time on which the carrier-netblock mapping was last
-modified.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the carrier-netblock mapping.<br>**Default:** Auto-generated number.<br>**Required On:** `PUT` |
+| `carrier_id` | int | The ID of the internet carrier. You can use the [Carrier Service](../bidders/carrier-service.md) to see the list of available carriers and their ID's.<br>**Required On:** `POST` |
+| `start_ip` | int | The IP address at the start of the range of IP addresses you wish to map. This value must be entered as a flattened integer. Please convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
+| `end_ip` | int | The IP address at the end of the range of IP addresses you wish to map. Please convert the IP address using a tool such as [this](https://www.smartconversion.com/unit_conversion/IP_Address_Converter.aspx), in order to get a flattened integer to `POST` or `PUT`.<br>**Required On:** `POST` |
+| `notes` | string | Any notes relevant to the carrier-netblock mapping.<br>**Default:** `null` |
+| `last_activity` | date | The date and time on which the carrier-netblock mapping was last modified. |
 
 ## Examples
 
-**Add a carrier-netblock mapping**
+### Add a carrier-netblock mapping
 
-``` pre
+```
 $ cat add_mapping
 
 {
@@ -220,7 +47,7 @@ $ cat add_mapping
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @add_mapping.json "https://api.appnexus.com/carrier-netblock"
 {
   "response": {
@@ -241,9 +68,9 @@ $ curl -b cookies -c cookies -X POST -d @add_mapping.json "https://api.appnexus.
 }
 ```
 
-**Update a carrier-netblock mapping**
+### Update a carrier-netblock mapping
 
-``` pre
+```
 $ cat update_mapping
 
 {
@@ -254,7 +81,7 @@ $ cat update_mapping
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -c cookies -X PUT -d @update_mapping.json "https://api.appnexus.com/carrier-netblock?id=11829"
 {
   "response": {
@@ -275,9 +102,9 @@ $ curl -b cookies -c cookies -X PUT -d @update_mapping.json "https://api.appnexu
 }
 ```
 
-**View all carrier-netblock mappings**
+### View all carrier-netblock mappings
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/carrier-netblock"
 {
   "response": {
@@ -380,9 +207,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/carrier-netblock"
 }
 ```
 
-**View a specific carrier-netblock mapping**
+### View a specific carrier-netblock mapping
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/carrier-netblock?id=46"
 {
   "response": {
@@ -401,9 +228,3 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/carrier-netblock?id=46"
   }
 }
 ```
-
-
-
-
-
-

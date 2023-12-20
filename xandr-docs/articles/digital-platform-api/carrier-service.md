@@ -1,230 +1,52 @@
 ---
-Title : Carrier Service
-Description : Mobile carriers, also known as wireless carriers or mobile network
+title: Digital Platform API - Carrier Service
+description: In this article, learn about the Digital Platform API's Carrier service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-operators, own or control all the elements necessary to sell and deliver
-wireless communication services to users of mobile devices. The
 ---
 
+# Digital Platform API - Carrier service
 
-# Carrier Service
+Mobile carriers, also known as wireless carriers or mobile network operators, own or control all the elements necessary to sell and deliver wireless communication services to users of mobile devices. The read-only Mobile Carrier Service allows you to see what mobile carriers are registered in our system. You can use this service to retrieve the IDs of carriers for targeting in mobile campaigns.
 
-
-
-Mobile carriers, also known as wireless carriers or mobile network
-operators, own or control all the elements necessary to sell and deliver
-wireless communication services to users of mobile devices. The
-read-only Mobile Carrier Service allows you to see what mobile carriers
-are registered in our system. You can use this service to retrieve the
-IDs of carriers for targeting in mobile campaigns.
-
-
-
-<b>Note:</b>
-
-You can target mobile campaigns based on the make and model of mobile
-devices as well. For more details, see the <a
-href="device-make-service.md"
-class="xref" target="_blank">Device Make Service</a> and <a
-href="device-model-service.md"
-class="xref" target="_blank">Device Model Service</a>.
-
-
-
-
+> [!NOTE]
+> You can target mobile campaigns based on the make and model of mobile devices as well. For more details, see the [Device Make Service](device-make-service.md) and [Device Model Service](device-model-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000004db__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000004db__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000004db__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__2"><a
-href="https://api.appnexus.com/carrier" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__3">View
-all carriers</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__2"><a
-href="https://api.appnexus.com/carrier?country_code=COUNTRY_CODE"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/carrier?country_code=COUNTRY_CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__3">View
-all carriers in a specific country</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__2"><a
-href="https://api.appnexus.com/carrier?id=CARRIER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier?id=CARRIER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__3">View
-a specific carrier</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__2"><a
-href="https://api.appnexus.com/carrier/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/carrier/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/carrier](https://api.appnexus.com/carrier) | View all carriers. |
+| `GET` | [https://api.appnexus.com/carrier?country_code=COUNTRY_CODE](https://api.appnexus.com/carrier?country_code=COUNTRY_CODE) | View all carriers in a specific country. |
+| `GET` | [https://api.appnexus.com/carrier?id=CARRIER_ID](https://api.appnexus.com/carrier?id=CARRIER_ID) | View a specific carrier. |
+| `GET` | [https://api.appnexus.com/carrier/meta](https://api.appnexus.com/carrier/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the mobile carrier. |
+| `name` | string | The name of the mobile carrier. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country in which the carrier operates. |
+| `country_name` | string | The name of the country in which the carrier operates. |
+| `codes` | array of objects | Third-party representations for the mobile carrier. For more details, see [Codes Object](#codes-object) below. |
 
-
-
-##  JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000004db__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000004db__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000004db__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__18">The
-ID of the mobile carrier.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__18">The
-name of the mobile carrier.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__16"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__17">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__18">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country in which the carrier
-operates.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__16"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__18">The
-name of the country in which the carrier operates.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__16"><code
-class="ph codeph">codes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__17">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__18">Third-party representations for the
-mobile carrier. See <a href="carrier-service.md#ID-000004db__codes"
-class="xref">Codes Object</a> below for more details.</td>
-</tr>
-</tbody>
-</table>
-
-**Codes Object**
+### Codes object
 
 Each object in the `codes` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000004db__entry__34"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000004db__entry__35"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000004db__entry__36"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__34"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__36">The
-ID of the carrier code.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__34"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__36">The
-third-party representation for the carrier.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__34"><code
-class="ph codeph">notes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__36">Identification information about the
-third party.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__34"><code
-class="ph codeph">carrier_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000004db__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000004db__entry__36">The
-ID of the carrier. (This is the same as the <code
-class="ph codeph">id</code> field described above.)</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the carrier code. |
+| `code` | string | The third-party representation for the carrier. |
+| `notes` | string | Identification information about the third party. |
+| `carrier_id` | int | The ID of the carrier. (This is the same as the `id` field described above.) |
 
 ## Examples
 
-**View all mobile carriers**
+### View all mobile carriers
 
-``` pre
+```
 {code}$ curl -b cookies -c cookies 'https://api.appnexus.com/carrier'
 {
     "response": {
@@ -290,9 +112,9 @@ class="ph codeph">id</code> field described above.)</td>
 {code}
 ```
 
-**View all mobile carriers in the US**
+### View all mobile carriers in the US
 
-``` pre
+```
 {code}$ curl -b cookies -c cookies 'https://api.appnexus.com/carrier?country_code=US'
 {
     "response": {
@@ -356,9 +178,9 @@ class="ph codeph">id</code> field described above.)</td>
 {code}
 ```
 
-**View a specific mobile carrier**
+### View a specific mobile carrier
 
-``` pre
+```
 {code}
 $ curl -b cookies -c cookies 'https://api.appnexus.com/carrier?id=1'
 {
@@ -379,9 +201,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/carrier?id=1'
 }
 {code}
 ```
-
-
-
-
-
-
