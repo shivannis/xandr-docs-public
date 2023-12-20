@@ -1,118 +1,34 @@
 ---
-Title : Genre Service
-Description : Use the read-only Genre Service to see what video content genres are
+title: Digital Platform API - Genre Service
+description: Use the read-only genre service to see what video content genres are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-registered in the Xandr system. Video content
 ---
 
+# Digital Platform API - Genre service
 
-# Genre Service
-
-
-
-Use the read-only Genre Service to see what video content genres are
-registered in the Xandr system. Video content
-fields can be added to line item or deal line item targeting. 
-
-
+Use the read-only Genre Service to see what video content genres are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001528__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001528__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001528__entry__3"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__2">https://api.<span
-class="ph">appnexus.com/video-content-genre</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001528__entry__3">To
-view all defined genres</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__2">https://api.<span
-class="ph">appnexus.com/video-content-genre?id=&lt;id
-value&gt;</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001528__entry__3">To
-view a defined genre</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description  |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/video-content-genre | To view all defined genres |
+| `GET` | https://api.appnexus.com/video-content-genre?id=<id value> | To view a defined genre |
 
+## JSON fields
 
-
-
-
-## JSON FIELDS
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001528__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001528__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001528__entry__12"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001528__entry__12">The
-Xandr referential ID associated with the
-genre</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001528__entry__12">The
-video taxonomy referential value
-<p><strong>Required On</strong>: POST/PUT</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001528__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001528__entry__12">The
-time of last modification</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description  |
+|:---|:---|:---|
+| `id` | int | The Xandr referential ID associated with the genre |
+| `name` | string | The video taxonomy referential value<br>**Required On**: `POST`/`PUT` |
+| `last_modified` | timestamp | The time of last modification |
 
 ## Example
 
-**To retrieve all defined genres  
-  
-**
+### To retrieve all defined genres
 
-``` pre
+```
 curl -b cookies -c cookies "https://api.appnexus.com/video-content-genre"
 {
   "response": {
@@ -296,24 +212,8 @@ curl -b cookies -c cookies "https://api.appnexus.com/video-content-genre"
   }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
+- [Profile Service](./profile-service.md)
+- [API Best Practices](./api-best-practices.md)
+- [API Semantics](./api-semantics.md)
