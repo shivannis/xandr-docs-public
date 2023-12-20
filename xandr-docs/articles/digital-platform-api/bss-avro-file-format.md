@@ -248,11 +248,15 @@ java -jar avro-tools-1.10.1.jar fromjson --codec deflate --schema-file xandr_sch
 
 > [!NOTE]
 >
-- > Our examples are for the **Python Avro Library**, and are not to be confused with the **Fast Avro Library**.
-  - > Python Avro library does not use uid union type names. Instead, it determines the uid type by full match of field names.
-    - > {'uid': {'id': 'qweqeqweq', 'domain': 'idfa'}, 'segments': […]}
-  - > The Fast Avro library uses hints to specify the exact type of uid similar to the Java library
-    - > {'uid': ('external_id', {'id':'exitd1', 'member_id': 914}), 'segments': [{'expiration': 259200, 'id': 25815407}]}
+> - Our examples are for the **Python Avro Library**, and are not to be confused with the **Fast Avro Library**.
+>
+> - Python Avro library does not use uid union type names. Instead, it determines the uid type by full match of field names.
+>
+>> **Example**: `{'uid': {'id': 'qweqeqweq', 'domain': 'idfa'}, 'segments': […]}`
+>
+> - The Fast Avro library uses hints to specify the exact type of uid similar to the Java library.
+>
+>> **Example**: `{'uid': ('external_id', {'id':'exitd1', 'member_id': 914}), 'segments': [{'expiration': 259200, 'id': 25815407}]}`
 >
 > - DataFileWriter.append() accepts a python dictionary (dict) type, not a JSON.
 
