@@ -96,7 +96,7 @@ inventory by **PubID** via Standard Line Item - Campaign:
 1. In the **Device and Supply Type**
     section, select **all device types**
     to target.
-1. Select **Default** to target **Web,Mobile Web,** and **App Placements**.
+1. Select **Default** to target **Web, Mobile Web,** and **App Placements**.
 1. In the **Inventory** section,
     click **Edit**.
 1. On the **3rd Party Inventory** \>
@@ -144,11 +144,7 @@ It is recommended to **NOT** use Device Type for targeting. Retain the
 "All" default setting to maximize device targeting.
 
 > [!TIP]
-> To report on delivery for each publisher, you can select "publisher" as a dimension in an analytics report.
-
-The best way to distinguish between Windows 10 Desktop Inventory and
-Windows Phone inventory is to use creative size targeting or OS
-(extended) targeting.
+> To report on delivery for each publisher, you can select "publisher" as a dimension in an analytics report.The best way to distinguish between Windows 10 Desktop Inventory and Windows Phone inventory is to use creative size targeting or OS (extended) targeting.
 
 ## Best practice for reach
 

@@ -60,7 +60,7 @@ screens
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Jigsaw**
+**Microsoft jigsaw**
 
 Users can play hundreds of puzzles in three exciting game modes: Classic
 Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make
@@ -73,56 +73,56 @@ entertainment.
 
 :::image type="content" source="media/jigsawgame.png" alt-text="Screenshot of jigsaw":::
 
-**Menu Screens** - Below the fold, right side of the menu screens
+**Menu screens** - Below the fold, right side of the menu screens
 
 :::image type="content" source="media/jigsawmenu.png" alt-text="Screenshot of jigsaw .":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Sudoku**
+**Microsoft sudoku**
 
 The new Microsoft Sudoku is the popular logic puzzle game that makes the
 most of a Windows device. With five difficulty levels, fresh daily
 challenges, achievements and leaderboards, Microsoft Sudoku provides
 hundreds of brain training puzzles for players of all ages.
 
-**Game Play and Game Completion Screens** - Above the fold, bottom left
+**Game play and game completion screens** - Above the fold, bottom left
 
 :::image type="content" source="media/sudokugame.png" alt-text="Diagram of Sudoku .":::
 
-**Menu Screens** - Below the fold, right side of the menu screens
+**Menu screens** - Below the fold, right side of the menu screens
 
 :::image type="content" source="media/sudokumenu.png" alt-text="Screenshot of Sudoku .":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Mahjong**
+**Microsoft mahjong**
 
 Microsoft Mahjong is the classic matching game with beautiful imagery,
 intuitive controls, and all the features that fans of Mahjong come to
 expect.
 
-**Menu Screens** - Below the fold, right side of menu screens
+**Menu screens** - Below the fold, right side of menu screens
 
 :::image type="content" source="media/mahjongmenu.png" alt-text="Screenshot of Mahjong menu .":::
 
-**Daily Challenge Screens** - Above the fold, right side of screens
+**Daily challenge screens** - Above the fold, right side of screens
 
 :::image type="content" source="media/mahjongdaily.png" alt-text="Screenshot of Mahjong daily .":::
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft Treasure Hunt**
+**Microsoft treasure hunt**
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure
 Hunt builds on the Microsoft Minesweeper for Windows Adventure mode
 experience.
 
-**Main Menu Screen** - Below the fold, right side of screen
+**Main menu screen** - Below the fold, right side of screen
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of treausre main .":::
 
-**Game Play and Game Completion Screens** - Above the fold, right side
+**Game play and game completion sacreens** - Above the fold, right side
 of screen
 
 :::image type="content" source="media/treasuregame.png" alt-text="Screenshot of treausre game ."::: 
@@ -188,7 +188,7 @@ line item or campaign or campaign:
 1. On the **Search for Publishers**
     \>**Select Microsoft Casual Games
     (679569)**.
-1. Click**Add**.
+1. Click **Add**.
 
 To target Microsoft Casual Games inventory when setting up a Augmented
 Line Item:
@@ -213,7 +213,7 @@ Marketplace](get-deals-from-seller-packages.md):
 1. In the **Package Marketplace**, search for the package by ID or
     name.
 
-    Available Microsoft Casual Games packages:
+Available Microsoft Casual Games packages:
 
 | ID | Package |
 |---|---|

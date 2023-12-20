@@ -69,7 +69,7 @@ For instructions on how to set up the `/mob` ad tag, see the section
   been created before you start campaign setup. See [Create a Segment Pixel](create-a-segment-pixel.md) and [Working with Targeting Lists](working-with-targeting-lists.md)
    for more details.
 
-## Step 3. Set up your campaign (Standard Line Items only)
+## Step 3. Set up your campaign (standard line items only)
 
 In this section we'll describe how to set up direct campaigns to target
 the publishers, placement groups, and placements you've created. The
@@ -107,8 +107,7 @@ On the **Advertiser Details** screen,
 click **Create New**
  \>  **Campaign**.
 
-This opens the initial Create New
-Campaign screen.
+This opens the initial **Create New Campaign** screen.
 
 > [!NOTE]
 > You can find **Create New > Campaign** on the insertion order, line item, and campaign screens under the advertiser as well.
@@ -169,7 +168,7 @@ basic details and flight dates for the campaign.
 ## Step 9. Set the campaign budget
 
 > [!NOTE]
-> you can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting, see [budgeting-and-pacing.md](Budgeting and Pacing).
+> you can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
 By default, your campaign media **Budget** is unlimited. If you prefer,
 you can define exactly how much you are willing to spend on buying
@@ -307,7 +306,7 @@ disables third-party (advertising) cookies by default.
 Because you are buying directly from a publisher, the most useful
 targeting in this section is probably [Direct Inventory Targeting](direct-inventory-targeting.md).
 
-In the Targeting section, you can [Apply a Targeting Template](apply-a-targeting-template.md) or set unique inventory and user targeting for this
+In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targeting-template.md) or set unique inventory and user targeting for this
 campaign.
 
 When you apply multiple types of targeting (e.g., inventory, segment,

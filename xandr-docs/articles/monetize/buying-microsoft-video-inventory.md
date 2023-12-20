@@ -68,7 +68,7 @@ below:
 ## Availability and volume
 
 To see the latest availability and volume metrics for a particular
-product and market, download the latest [Excel file](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28).
+product and market, download the latest [Excel file](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fe%2F5%2Fee544211-092a-45c4-8076-57b5c5aaceb3%2F28%2520Dec%25202023%2Fmsft-video-volume-by-format-final-june-2017.xlsx&wdOrigin=BROWSELINK).
 
 Here are some quick volume metric highlights:
 

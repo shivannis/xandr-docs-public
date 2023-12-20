@@ -258,7 +258,7 @@ and external sellers).
     <br><b>Note:</b> When you set both a cap for learn bids and a max CPM for
     non-learn bids (next option), the lower of the two will be used for
     learn.
-  - **Bid CPM: max $_CPM min $_ CPM** - Enter the highest and
+  - **Bid CPM: max $_CPM min $_CPM** - Enter the highest and
     lowest CPM dollar amount that you are willing to spend on an
     impression.
   - **Enable Cadence Modifier** - This option appears under
@@ -413,8 +413,7 @@ Xandr account representative.
 
 ## Step 9. Add targeting
 
-In the Targeting
-section, you can [Apply a Targeting Template](apply-a-targeting-template.md)
+In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targeting-template.md)
  or set unique inventory and user targeting for this campaign. Use the links below to learn more about each type of targeting.
 
 - [buy-mobile-inventory-via-rtb.md#ID-00006929__p_eys_hft_1kb](#target-inventory)
@@ -448,18 +447,18 @@ more about each type of inventory targeting.
 You can target users in numerous ways. Use the links below to learn more
 about each type of user targeting.
 
-- [device-and-supply-type-targeting.md](supply-type-targeting.md)
+- [device-and-supply-type-targeting](supply-type-targeting.md)
 - [Geography Targeting](geography-targeting.md)
 - [Segment Targeting](segment-targeting.md)
 - [Frequency and Recency Caps](frequency-and-recency-caps.md)
 - [Daypart Targeting](daypart-targeting.md)
 - [System Targeting](system-targeting.md)
 - [Demography Targeting](demography-targeting.md)
-- [est and Control Targeting](test-and-control-targeting.md)
+- [Test and Control Targeting](test-and-control-targeting.md)
 
 ## Step 10. Associate creatives and define a dynamic landing page
 
-In the Associated Creatives section,
+In the **Associated Creatives** section,
 you can select a **Creative Rotation** to determine how you want to
 rotate and weight multiple creatives. Select one of three options:
 
@@ -495,9 +494,9 @@ for your reference only and will not affect campaign delivery.
 
 ## Step 12. Add serving fees
 
-If you owe **serving fees** to third parties for services such as creative
+If you owe serving fees to third parties for services such as creative
 hosting or user data, you can add these fees in the
-Serving Fees section. Serving fees can
+**Serving Fees** section. Serving fees can
 be either a percentage of costs or a flat CPM. Please note the
 following:
 
@@ -529,7 +528,7 @@ To add a new serving fee:
 Confirm that the campaign details are correct and then click the
 **Save** button to finish adding the
 campaign to Xandr. The campaign
-is then added to the list of campaigns on the [explore-campaigns.md](Explore Campaigns) screen.
+is then added to the list of campaigns on the (explore-campaigns.md)[Explore Campaigns] screen.
 
 ## Step 14. Complete peer approval
 
@@ -554,7 +553,7 @@ To approve the campaign, another user from your team must log in, go to
 the **Campaigns** screen, select the
 desired campaign and click **Edit**. This
 will open the **Edit Campaign** screen. On
-the Edit Campaign screen, the
+the **Edit Campaign** screen, the
 alternate user must check the **Approved By** checkbox. Once this step
 is completed, the campaign can be set to **Active** by any user on your
 team.
@@ -566,7 +565,7 @@ Once you've created a campaign, you can view all its details on the
 campaign. For more details, see
 [Associate Creatives to Campaigns](associate-creatives-to-campaigns.md).
 
-Related Topics
+## Related topics
 
 - [Buy Mobile Inventory Directly from a Publisher](buy-mobile-inventory-directly-from-a-publisher.md)
 - [Mobile Buying FAQ](mobile-buying-faq.md)

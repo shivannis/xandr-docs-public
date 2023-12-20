@@ -71,7 +71,7 @@ for reports. However, all intervals are not available for every report.
 | Advertiser | Yes | The advertiser that purchased the impression. |  |  |  |  |  |  |
 | Advertiser Code | No | The external ID of the advertiser. |  |  |  |  |  |  |
 | BP External Code | No | The optional external code supplied for the insertion order's billing period. |  |  |  |  |  |  |
-| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the **Booked Revenue**, **Buyer Media Cost**, **Auction Service Deduction**, **Net Media Cost Auction Service Fees** and **Creative average Fees metrics** to be displayed in the buying currency. |  |  |  |  |  |  |
+| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the **Booked Revenue**, **Buyer Media Cost**, **Auction Service Deduction**, **Net Media Cost Auction Service Fees** and **Creative average Fees** metrics to be displayed in the buying currency. |  |  |  |  |  |  |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |  |  |  |  |  |  |
 | Campaign Code | No | The external ID of the campaign. (Does not apply to all advertisers.) |  |  |  |  |  |  |
 | Clearing Event | Yes | The underlying auction event that was transacted (e.g., impression, viewable impression, completed video). |  |  |  |  |  |  |
@@ -161,9 +161,9 @@ Follow these steps to run your report.
     information you want. For example, rather than running a report that
     shows impressions for all inventory sources, you may want to list
     results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
+    **Edit**), a selection panel appears.
     Select items in the **Available** list (left), then click
-    Add to include them in the
+    **Add** to include them in the
     **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
@@ -183,7 +183,7 @@ Follow these steps to run your report.
       view or download.
 
       > [!TIP]
-      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md)for that reporting service (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via
       email**: Run the report in the background and email the results to
