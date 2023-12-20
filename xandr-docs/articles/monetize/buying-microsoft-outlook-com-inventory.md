@@ -1,7 +1,6 @@
 ---
 title : Microsoft Monetize - Buying Microsoft Outlook.com Inventory
-description : Learn how to buy Microsoft Outlook.com inventory on the
-Xandr platform and adding Outlook.com creatives.    
+description : Learn how to buy Microsoft Outlook.com inventory on the Xandr platform and adding Outlook.com creatives.    
 ms.date: 10/28/2023
 ---
 

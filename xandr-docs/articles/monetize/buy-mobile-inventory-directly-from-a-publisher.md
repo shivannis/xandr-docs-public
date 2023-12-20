@@ -37,7 +37,7 @@ on how to set up publishers and placement tags in our system, see [Create a Publ
 and [Create a Placement](create-a-placement.md).
 
 > [!NOTE]
-> When you set up your placement group, you will be prompted to select a **Supply Type** as shown in the screenshot below. The supply type you select here (**Mobile Optimized Website** or **Mobile Application**) must match the supply type you choose in your campaign. See [device-and-supply-type-targeting](supply-type-targeting) for more details.
+> When you set up your placement group, you will be prompted to select a **Supply Type** as shown in the screenshot below. The supply type you select here (**Mobile Optimized Website** or **Mobile Application**) must match the supply type you choose in your campaign. See [device-and-supply-type-targeting](supply-type-targeting.md) for more details.
 
 We recommend creating your publisher, placement group, and placement
 hierarchy so it reflects your integration with the publisher. For
