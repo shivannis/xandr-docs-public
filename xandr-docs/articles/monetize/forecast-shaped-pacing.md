@@ -28,7 +28,7 @@ To summarize: FSP takes into account the variability of inventory throughout the
 
 FSP has proven overall to positively impact both revenue from RTB as well as delivery accuracy.
 
-## Increased yield from RTB
+### Increased yield from RTB
 
 FSP increases a publisher's yield through Open Dynamic Allocation. By pacing according to a forecasted supply curve, guarantees don't have to "try as hard" to deliver impressions when inventory is scarce (such as late night or early morning). In other words, the predicted CPM (pCPM) of the guaranteed line item can be significantly lower during these hours when there is less supply. This allows the publisher to take advantage of high CPMs from RTB throughout all hours of the day.
 
@@ -36,15 +36,15 @@ FSP increases a publisher's yield through Open Dynamic Allocation. By pacing acc
 > **FSP Analysis**
 > An early analysis of production data showed that this relaxed pressure during low-supply hours resulted in guaranteed line items using FSP were able to bid a 25-35% lower pCPM on average than without FSP. A lower pCPM means the opportunity cost of serving guaranteed is lower and publishers can capture more of their most valuable RTB demand, which, in this analysis, translated to 15-20% more RTB revenue on average.
 
-## Delivery throughout the day
+### Delivery throughout the day
 
 FSP not only optimizes how often guaranteed lines items deliver in full, but also how frequently they deliver through the last hour of the day. Analysis has shown that with FSP, 90 – 95% of line items deliver through the last hour of the day, a 15-20% improvement over pre-FSP pacing mechanics. This improvement is the result of fewer adjustments having to be made throughout the day to meet delivery goals than were historically required.
 
-## Restrictions
+### Restrictions
 
 At this time, FSP is not used during the final day in the lifetime of the line item. More aggressive pacing is in place for the last day to ensure full delivery. FSP logic that accounts for last day delivery is currently in development. See [Daily Pacing](daily-pacing.md) for more ##information on last day pacing.
 
-## Related topics
+### Related topics
 
 - [Guaranteed Delivery](guaranteed-delivery.md)
 - [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md)

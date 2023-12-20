@@ -23,4 +23,4 @@ Because frequency and recency both involve creatives, they're sometimes used int
 
 - [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md)
 - [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md)
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)- 
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

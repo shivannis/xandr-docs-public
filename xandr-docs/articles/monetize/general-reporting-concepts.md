@@ -1,11 +1,10 @@
 ---
-title: Monetize - General Reporting Concepts
+title: Microsoft Monetize - General Reporting Concepts
 description: The article explains general reporting concepts.
 ms.date: 10/28/2023
 ---
 
-
-# Monetize - General reporting concepts
+# Microsoft Monetize - General reporting concepts
 
 This section of the Reporting Guide explains the concepts underlying our reporting system, such as:
 
