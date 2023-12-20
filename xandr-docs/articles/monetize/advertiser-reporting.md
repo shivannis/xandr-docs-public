@@ -21,6 +21,6 @@ In this section of the reporting guide, you'll find documentation for all of our
 ## Related topics
 
 - [Reporting Guide](reporting-guide.md)
-- [Analytics Reporting](analytics-reporting.mdaly.)
+- [Analytics Reporting](analytics-reporting.md)
 - [Billing Reporting](billing-reporting.md)
 - [Audience Analytics](audience-analytics.md)
