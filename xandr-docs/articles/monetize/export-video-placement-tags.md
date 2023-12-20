@@ -1,6 +1,6 @@
 ---
 title: Export Video Placement Tags
-description: The article outlines the video placement tags.
+description: The article outlines the video placement tags. You can modify the tag options or can generate the tags. 
 ms.date: 10/28/2023
 ---
 
@@ -42,8 +42,8 @@ Navigate to **Publisher > Placement Manager**, check the boxes next to placement
 If your publisher isn't able to provide you with a test page, and you are using a client-side tag, you can use an online VAST validator to determine if the placement tag is functioning properly. There are several available online, including the following:
 
 - [https://developers.google.com/interactive-media-ads/docs/vastinspector](https://developers.google.com/interactive-media-ads/docs/vastinspector) (only supports https links or cut and paste of the VAST XML content directly)
-- [https://tagvalidator.videohub.tv/](https://tagvalidator.videohub.tv/)
-- [https://demo.jwplayer.com/ad-tester/](https://demo.jwplayer.com/ad-tester/)
+- `https://tagvalidator.videohub.tv/`
+- `https://demo.jwplayer.com/ad-tester`
 
 VAST validators won't work for a server-side tag. To test a server-side tag, you can use the following strategies:
 
