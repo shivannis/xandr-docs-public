@@ -1,47 +1,28 @@
 ---
-Title : Create an Outlook Campaign via the API
-Description : This page shows you how to use the Campaign Service and the Profile
+title: Create an Outlook Campaign via the API
+description: In this article, learn step-by-step instructions on how to create an Outlook campaign via the API.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Service to set up a campaign that targets Outlook.com inventory.
 ---
 
+# Create an Outlook campaign via the API
 
-# Create an Outlook Campaign via the API
+This page shows you how to use the Campaign Service and the Profile Service to set up a campaign that targets Outlook.com inventory.
 
+## Before you begin
 
+Before careating an Outlook profile and campaign, you should add your Outlook creatives to Xandr. For instructions, see [Add a Microsoft Outlook Creative via the API](add-a-microsoft-outlook-creative-via-the-api.md).
 
-This page shows you how to use the Campaign Service and the Profile
-Service to set up a campaign that targets Outlook.com inventory.
+## Step 1: Create a profile that targets Outlook.com inventory
 
+To ensure that your campaign will reach Microsoft Outlook.com inventory, you should:
 
-## Before You Begin
+- Set `supply_type_targets` to "web" and `supply_type_action` to "include".
+- Set `domain_targets` to "outlook.com" and `domain_action` to "include".
 
-Before careating an Outlook profile and campaign, you should add your
-Outlook creatives to Xandr. For instructions,
-see <a
-href="add-a-microsoft-outlook-creative-via-the-api.md"
-class="xref" target="_blank">Add a Microsoft Outlook Creative via the
-API</a>.
+You can also add targeting based on frequency, geography, daypart, segment, and system. However, note that you cannot target Outlook.com users based on age, gender, tag position, or tag query strings.
 
-
-
-
-## Step 1. Create a profile that targets Outlook.com Inventory
-
-To ensure that your campaign will reach Microsoft Outlook.com inventory,
-you should: 
-
-- Set `supply_type_targets` to "web" and `supply_type_action` to
-  "include".
-- Set `domain_targets` to "outlook.com" and `domain_action` to
-  "include".
-
-You can also add targeting based on frequency, geography, daypart,
-segment, and system. However, note that you cannot target Outlook.com
-users based on age, gender, tag position, or tag query strings.
-
-``` pre
+```
 $ cat outlook_profile.json
 {
     "profile": {
@@ -175,27 +156,17 @@ $ curl -b cookies -c cookies -X POST -d @outlook_profile 'https://api.appnexus.c
     }
 ```
 
+## Step 2: Create an Outlook campaign
 
+Setting up an Outlook campaign is similar to setting up any other web campaign. You can set flight dates, budgeting, and buying strategy. To ensure that you reach Outlook.com inventory, however, be sure to pay particularly close attention to the following settings:
 
-
-## Step 2. Create an Outlook campaign
-
-Setting up an Outlook campaign is similar to setting up any other web
-campaign. You can set flight dates, budgeting, and buying strategy. To
-ensure that you reach Outlook.com inventory, however, be sure to pay
-particularly close attention to the following settings:
-
-- Use the `profile_id` field to associate the campaign to the Outlook
-  targeting profile you created in Step 1.
-- Set `line_item_id` to the ID of the line item under which you want to
-  create the Outlook campaign.
+- Use the `profile_id` field to associate the campaign to the Outlook targeting profile you created in [Step 1](#step-1-create-a-profile-that-targets-outlookcom-inventory).
+- Set `line_item_id` to the ID of the line item under which you want to create the Outlook campaign.
 - Set `supply_type` to "web".
-- Since Microsoft is an external supply partner, set `inventory_type` to
-  "real_time".
-- Use the `creatives` array to associate Outlook creatives to the
-  campaign.
+- Since Microsoft is an external supply partner, set `inventory_type` to `"real_time"`.
+- Use the `creatives` array to associate Outlook creatives to the campaign.
 
-``` pre
+```
 $ cat outlook_campaign.json
 {
     "campaign": {
@@ -314,24 +285,8 @@ $ curl -b cookies -c cookies -X POST -d @outlook_campaign 'https://api.appnexus.
     }
 ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a
-  href="buying-microsoft-outlook-com-inventory.md"
-  class="xref" target="_blank">Buying Microsoft Outlook.com Inventory</a>
-- <a
-  href="add-a-microsoft-outlook-creative-via-the-api.md"
-  class="xref" target="_blank">Add a Microsoft Outlook Creative</a>
-- <a
-  href="check-the-audit-status-of-an-outlook-creative-via-the-api.md"
-  class="xref" target="_blank">Check the Audit Status of an Outlook
-  Creative</a>
-
-
-
-
-
-
+- [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md)
+- [Add a Microsoft Outlook Creative](add-a-microsoft-outlook-creative-via-the-api.md)
+- [Check the Audit Status of an Outlook Creative](check-the-audit-status-of-an-outlook-creative-via-the-api.md)

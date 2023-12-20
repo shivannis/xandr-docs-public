@@ -1,135 +1,39 @@
 ---
-Title : Creative Format Service
-Description : The Xandr platform categorizes creatives by
+title: Digital Platform API - Creative Format Service
+description: In this article, learn about the Creative Format service, their JSON fields, and REST API with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-format, media type, and media subtype. Format defines the resource type
 ---
 
+# Digital Platform API - Creative Format service
 
-# Creative Format Service
+The Xandr platform categorizes creatives by format, media type, and media subtype. Format defines the resource type of creatives (flash, image, etc.); media type defines the general display style of creatives (banner, expandable, video, etc.); and media subtype defines the specific display style of creatives (standard banner, MediaMind expandable, or Standard VAST).
 
+This read-only service allows you to view all of the supported creative formats.
 
-
-The Xandr platform categorizes creatives by
-format, media type, and media subtype. Format defines the resource type
-of creatives (flash, image, etc.); media type defines the general
-display style of creatives (banner, expandable, video, etc.); and media
-subtype defines the specific display style of creatives (standard
-banner, MediaMind expandable, or Standard VAST).
-
-This read-only service allows you to view all of the supported creative
-formats.
-
-
-
-<b>Note:</b>
-
-To view all supported media types and media subtypes, you can use the <a
-href="media-type-service.md"
-class="xref" target="_blank">Media Type Service</a> and the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a>.
-
-
-
-
+> [!NOTE]
+> To view all supported media types and media subtypes, you can use the [Media Type Service](media-type-service.md) and the [Media Subtype Service](media-subtype-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f7__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000009f7__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000009f7__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__2"><a
-href="https://api.appnexus.com/creative-format" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/creative-format</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__3">View
-all creative formats</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__2"><a
-href="https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/creative-format?id=CREATIVE_FORMAT_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__3">View
-a specific creative format</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/creative-format](https://api.appnexus.com/creative-format) | View all creative formats. |
+| `GET` | [https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID](https://api.appnexus.com/creative-format?id=CREATIVE_FORMAT_ID) | View a specific creative format. |
 
 ## JSON Fields
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000009f7__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000009f7__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000009f7__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__12">The
-ID of the creative format.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__11">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__12">The
-name of the creative format, for example, "flash", "image", "url-html",
-or "url-xml".</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000009f7__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000009f7__entry__12">The
-date and time when Xandr last modified the
-creative format.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the creative format. |
+| `name` | string  | The name of the creative format. For example, `"flash"`, `"image"`, `"url-html"`, or `"url-xml"`. |
+| `last_modified` | timestamp | The date and time when Xandr last modified the creative format. |
 
 ## Examples
 
-**View all creative formats**
+### View all creative formats
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-format'
 {
     "response": {
@@ -203,9 +107,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-format'
 }
 ```
 
-**View a specific creative format**
+### View a specific creative format
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-format?id=5'
 {
     "response": {
@@ -221,9 +125,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-format?id=5'
     }
 }
 ```
-
-
-
-
-
-
