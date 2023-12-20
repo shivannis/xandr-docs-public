@@ -1,29 +1,19 @@
 ---
-Title : Automatic Archiving of Buy-Side Objects
-Description : Xandr automatically archives campaigns that have
+title : Microsoft Monetize - Automatic Archiving of Buy-Side Objects
+description : Learn the benefits of archiving campaigns.
 ms.date: 10/28/2023
-been identified as "stale" or unused. Archiving reduces the overhead of
 ---
 
 
-# Automatic Archiving of Buy-Side Objects
-
-
+# Microsoft Monetize - Automatic archiving of Buy-Side objects
 
 Xandr automatically archives campaigns that have
 been identified as "stale" or unused. Archiving reduces the overhead of
 managing older campaigns and makes it easier to stay below
-<a href="viewing-your-object-limits.md" class="xref">your object
-limits</a>. It also releases system resources that
-Xandr can use to drive better results for your
-active campaigns.
+[your object limits](viewing-your-object-limits.md). It also releases system resources that Xandr can use to drive better results for your active campaigns.
 
-
-
-<b>Note:</b> This feature is only enabled for
-campaigns using the standard line item..
-
-
+> [!NOTE]
+> This feature is only enabled for campaigns using the standard line item.
 
 Archived campaigns can:
 
@@ -38,7 +28,7 @@ Archived campaigns cannot:
 - Be edited
 - Be counted against object limits
 
-Archiving Criteria
+## Archiving criteria
 
 A campaign is archived if:
 
@@ -47,23 +37,21 @@ A campaign is archived if:
 - It is not in flight
 - It does not have a flight date scheduled in the future
 
-Action Required by Clients
+## Action required by clients
 
 **None.** Your stale objects are automatically archived. Archived
 objects appear in the UI and their status is
 prominently marked. In the API, you can sort them using a flag (see
 **Technical Notes** below for more detail).
 
-Preventing an Object from Being Archived
+## Preventing an object from being archived
 
 To prevent a campaign from being archived, edit it to extend the last
 edit date. You can also set a flight date that occurs in the future.
 
-Technical Notes for API Clients
+## Technical notes for API clients
 
-The following fields have been added to the <a
-href="xandr-api/campaign-service.md"
-class="xref" target="_blank">Campaign Service</a>:
+The following fields have been added to the [Campaign Service](../digital-platform-api/campaign-service.md):
 
 - `is_archived` (boolean) - indicates whether the object has been
   archived
@@ -72,15 +60,9 @@ class="xref" target="_blank">Campaign Service</a>:
 The **only method allowed** on objects with `is_archived` set to `true`
 is `DELETE`.
 
-Related Topics
+## Related topics
 
-- <a href="explore-campaigns.md" class="xref">Explore Campaigns</a>
-- <a href="view-campaign-details.md" class="xref">View Campaign
-  Details</a>
-- <a href="viewing-your-object-limits.md" class="xref">Viewing Your
-  Object Limits</a>
-- <a href="create-a-campaign.md" class="xref">Create a Campaign</a>
-
-
-
-
+- [Explore Campaigns](explore-campaigns.md)<a href="" class="xref"></a>
+- [View Campaign Details](view-campaign-details.md)
+- [Viewing Your Object Limits](viewing-your-object-limits.md)
+- [Create a Campaign](create-a-campaign.md)
