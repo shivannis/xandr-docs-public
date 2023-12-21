@@ -44,9 +44,8 @@ This report's data is retained for 90 days. For more information about how quick
 > [!IMPORTANT]
 >
 > - The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
-> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension
->   has attributes, the name of its attributes will appear below it using the following syntax "Dimension_Name:Attribute_Name".
-> - For all revenue fields, the currency is defined by the Buying Currency field.
+> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: `"Dimension_Name:Attribute_Name"`.
+> - For all revenue fields, the currency is defined by the `Buying Currency` field.
 
 | Column | Type | Filter? | Example | Description |
 |:---|:---|:---|:---|:---|

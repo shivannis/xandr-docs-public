@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Insertion Order Frequency report
 
-The Insertion Order Frequency report can be used to view how frequently users are viewing a specific insertion order's creatives. This report shows data at the insertion order level and is available to members. For instructions on retrieving a report, see the [Examples](#examples) below.
+The Insertion Order Frequency report can be used to view how frequently users are viewing a specific insertion order's creatives. This report shows data at the insertion order level and is available to members. For instructions on retrieving a report, see the [examples](#examples) below.
 
 ## Time frame
 
@@ -26,7 +26,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 Data retention period for this report is 45 days.
 
 > [!NOTE]
-> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [report-service.md](Report Service).
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
@@ -83,7 +83,7 @@ Data retention period for this report is 45 days.
 | `imps` | int | The total number of impressions (served and resold). | `2437` | imps |
 | `clicks` | int | The total number of clicks across all impressions. | `1` | clicks |
 | `booked_revenue` | money | The total revenue booked through direct advertisers (line item). | `25.6788` | booked_revenue |
-| `cpm` | money | The cost per 1000 impressions | `1.6605` | (cost / imps) x 1000 |
+| `cpm` | money | The cost per 1000 impressions. | `1.6605` | (cost / imps) x 1000 |
 | `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
 | `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
 | `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |

@@ -21,7 +21,7 @@ Service, the Instant Audience Service associates' users to segments in close to 
 If you're already using the Batch Segment Service, you can skip this part and proceed to [Authenticate](#authenticate). If you're a brand-new client and wish to start using the Instant Audience Service, you will need to open a ticket with and provide the following information:
 
 1. Are you using external user IDs (i.e., you use mapUID to store the mapping with Xandr)? If you use another member's external user IDs, include their `member_id` as well.
-1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids.`
+1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids`.
 1. When you would like your segments to expire by default (e.g., never expire, expire 60 days from now, etc.)? Note that if you include EXPIRATION in your seg block, your default expiration will not be used.
 1. The following questions are for our internal capacity planning:
     - What is the number of unique user IDs per post?
@@ -74,13 +74,13 @@ The following example demonstrates how to assign a user to two segments. In this
 
 **Example on how to assign a user to two segments**
 
-**API Call**
+**API call**
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -140,7 +140,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 | Field | Type | Description |
 |:---|:---|:---|
 | `seg_id` | int | The Xandr segment ID.<br>**Required:** If not using `seg_code` and `member_id` to identify segment. |
-| seg_code | string | A user-defined name for the segment.<br><br>**Note:** You may either include `SEG_CODE` and `member_id` or `SEG_ID`, but not both.<br><br>**Required:** If not using `seg_ID` to identify segment. |
+| `seg_code` | string | A user-defined name for the segment.<br><br>**Note:** You may either include `SEG_CODE` and `member_id` or `SEG_ID`, but not both.<br><br>**Required:** If not using `seg_ID` to identify segment. |
 | `value` | int | A numeric value you would like to assign to a segment. |
 | `expiration` | int | The lifetime of the user-segment association in minutes, starting from when we read it. A value of `0` means that the segment will never expire; `-1` means that the user will be removed from this segment. |
 | `member_id` | int | The member ID of the segment owner for the seg_block.<br>**Required:** If using `seg_code`. |
@@ -163,7 +163,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -216,7 +216,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -258,11 +258,11 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 > [!NOTE]
 > Service limits may change during alpha and beta testing of this service.
 
-In order to adhere to a maximum of 2 minutes activation time, the Instant Audience Service currently has the following limits:
+In order to adhere to a maximum of two minutes activation time, the Instant Audience Service currently has the following limits:
 
 | Limit Type  | Description |
 |---|---|
-| **Call Rate** | Up to 100 POST calls per second (per member) and up to 1000 GET calls per second (per member). If you exceed this rate limit, the following message will be returned: *"Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, please wait and try again or contact Xandr for higher limits"*. |
+| **Call Rate** | Up to 100 `POST` calls per second (per member) and up to 1000 `GET` calls per second (per member). If you exceed this rate limit, the following message will be returned: *"Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, please wait and try again or contact Xandr for higher limits"*. |
 | **Objects** | - Up to 1000 users per second.<br> - Up to 100 segments per user per call. |
 | **Payload Size** | The JSON payload should not exceed 1MB. |
 
@@ -270,13 +270,13 @@ In order to adhere to a maximum of 2 minutes activation time, the Instant Audien
 
 ### Adding/removing over 1000 users in a request
 
-**API Call**
+**API call**
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_users.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -346,7 +346,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `seg_id` or `seg_code` and `member_id` are not provided
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -420,7 +420,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `seg_block` not provided
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {
@@ -465,7 +465,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `user_id` is empty
 
-**JSON Payload**
+**JSON payload**
 
 ```
 {

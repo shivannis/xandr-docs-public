@@ -15,7 +15,7 @@ Here's how it works:
 1. You create an image or JavaScript tag with the url to the impression tracker and ask the ad server to use it as a piggyback pixel for the creative. The impression tracker url must be formatted as [https://ib.adnxs.com/imptr?id=12345&t=2](https://ib.adnxs.com/imptr?id=12345), where 12345 is the impression tracker ID and "t" represents the pixel type (where t=1 is for javascript and t=2 is for image).
 1. When the ad server serves the creative, the tracker calls [ib.adnxs.com](https://ib.adnxs.com/), and AppNexus records the impression.
 
-**Query String Parameters**
+**Query string parameters**
 
 The following parameters can be passed to AppNexus in the query string of the impression tracker url:
 
@@ -25,7 +25,7 @@ The following parameters can be passed to AppNexus in the query string of the im
 | `ancost` | The media cost you paid for the impression. The parameter can be populated by the third-party ad server. |
 | `redir` | The redirect URL that AppNexus will redirect to once the impression has been recorded. |
 
-**Image Tag Example**
+**Image tag example**
 
 ```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
@@ -33,7 +33,7 @@ The following parameters can be passed to AppNexus in the query string of the im
 <!-- End of Imp Tracker -->
 ```
 
-**JavaScript Tag Example**
+**JavaScript tag example**
 
 ```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
@@ -62,7 +62,7 @@ You can report on your external impressions using the [Network Analytics](networ
 | `id` | int | The ID of the impression tracker.<br>**Default:** Auto-incremented number (i.e., 123).<br>**Required On:** `PUT`/`DELETE`, in query string. |
 | `member_id` | int | The ID of the member to which the advertiser belongs.<br>**Read Only.** |
 | `advertiser_id` | int | The ID of the advertiser that owns the impression tracker.<br>**Required On:** `POST`, in query string. |
-| `name` | string | The name for the impression tracker.<br>**Required On:** POST |
+| `name` | string | The name for the impression tracker.<br>**Required On:** `POST` |
 | `code` | string | The custom code for the impression tracker. |
 | `state` | enum | The state of the impression tracker. <br>Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
 | `publisher` | object | The publisher to which the impression tracker is associated. For more details, see [Publisher](#publisher) below.<br>**Required On:** `POST` |
@@ -161,7 +161,7 @@ $ curl -b cookies -c cookies -X POST -d @imptracker 'https://api.appnexus.com/im
 
 ### Updating an impression tracker
 
-In this example, the PUT request associates a placement to impression tracker 1425.
+In this example, the `PUT` request associates a placement to impression tracker 1425.
 
 ```
 $ cat imptracker_update

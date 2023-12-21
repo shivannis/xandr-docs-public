@@ -46,8 +46,8 @@ This report's data is retained for 90 days. For more information about how quick
 > [!IMPORTANT]
 >
 > - The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
-> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax "Dimension_Name:Attribute_Name".
-> - For all revenue fields, the currency is defined by the Buying Currency field.
+> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: `"Dimension_Name:Attribute_Name"`.
+> - For all revenue fields, the currency is defined by the `Buying Currency` field.
 
 | Column | Type | Filter? | Example | Description |
 |:---|:---|:---|:---|:---|
@@ -92,12 +92,12 @@ This report's data is retained for 90 days. For more information about how quick
 | `UID2-NetID` | Both UID2 and NetID are available on the ad request. |
 | `RampID-NetID` | Both RampID and NetID are available on the ad request. |
 | `UID2-Cookie/Device ID` | Both UID2 and Cookie/Device ID are available on the ad request. |
-| `RampID-Cookie/DeviceID` | Both RampID and Cookie/Device ID are available on the ad request. |
-| `NetID-Cookie/DeviceID` | Both NetID and Cookie/Device ID are available on the ad request. |
+| `RampID-Cookie/Device ID` | Both RampID and Cookie/Device ID are available on the ad request. |
+| `NetID-Cookie/Device ID` | Both NetID and Cookie/Device ID are available on the ad request. |
 | `UID2-RampID-NetID` | UID2, RampID and NetID are available on the ad request. |
-| `UID2-RampID-Cookie/DeviceID` | UID2, RampID and Cookie/Device ID are available on the ad request. |
-| `UID2-NetID-Cookie/DeviceID` | UID2, NetID and Cookie/Device ID are available on the ad request. |
-| `RampID-NetID-Cookie/DeviceID` | RampID, NetID and Cookie/Device ID are available on the ad request. |
+| `UID2-RampID-Cookie/Device ID` | UID2, RampID and Cookie/Device ID are available on the ad request. |
+| `UID2-NetID-Cookie/Device ID` | UID2, NetID and Cookie/Device ID are available on the ad request. |
+| `RampID-NetID-Cookie/Device ID` | RampID, NetID and Cookie/Device ID are available on the ad request. |
 | `Device ID` (or Cookie Only) | Traditional device ID and cookie available on the ad requests. |
 | `UID2-RampID-NetID-Cookie` | UID2, RampID, NetID and Cookie/Device ID are available on the ad request. |
 | `No ID` | No industry ID or ANID at time of auction or opt out. |
@@ -123,7 +123,7 @@ This report's data is retained for 90 days. For more information about how quick
 
 ## Examples
 
-The JSON file should include the report_type of `seller_slot_video_report_network`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON
+The JSON file should include the `report_type` of `seller_slot_video_report_network`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON
 file, see the [Report Service](report-service.md).
 
 ### Create the JSON report request

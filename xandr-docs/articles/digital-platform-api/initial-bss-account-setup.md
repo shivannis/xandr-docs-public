@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Initial BSS Account Setup
-description: In this article, Learn about the Batch Segment Service account setup.
+description: In this article, learn about the Batch Segment Service account setup.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -19,7 +19,7 @@ To start using the Batch Segment Service (BSS), open a ticket with [help.xandr.c
 
 1. Provide a short sample file in your chosen format.
 
-1. Provide external IDs, if applicable. For example, you use mapUID to store the mapping in Xandr. If you use another member's external user IDs, include their `member_id.`
+1. Provide external IDs, if applicable. For example, you use mapUID to store the mapping in Xandr. If you use another member's external user IDs, include their `member_id`.
 
 1. Provide associated `member_id`s, if you need to populate segments belonging to other members.
 

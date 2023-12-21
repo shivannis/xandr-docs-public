@@ -12,10 +12,10 @@ ms.custom: digital-platform-api
 
 The Identity Type service in Identity Management Framework can be used to retrieve, create, update and delete an identifier in the platform. Additionally this service allows owners to manage permissions for their identity solutions. Using this service, identity owners can:
 
-- determine the publisher(s) that are permitted to utilize their identifier within the bidstream,
-- decide the partner(s) on the platform who can incorporate data using their identifier,
-- choose the external bidder(s) who are eligible to access their identifier, and
-- select the partner(s) on the platform who are eligible to receive the identifier's value in their log level data feeds.
+- Determine the publisher(s) that are permitted to utilize their identifier within the bidstream.
+- Decide the partner(s) on the platform who can incorporate data using their identifier.
+- Choose the external bidder(s) who are eligible to access their identifier.
+- Select the partner(s) on the platform who are eligible to receive the identifier's value in their log level data feeds.
 
 > [!IMPORTANT]
 > To register or create a new identifier, contact your Microsoft Account Representative as this functionality is restricted to Microsoft Admin role.
@@ -51,7 +51,7 @@ The Identity Type service in Identity Management Framework can be used to retrie
 | `requires_rti_partner_match` | boolean | The field required for The Trade Desk related identifiers. |
 | `rti_partner` | boolean | The field required for The Trade Desk related identifiers. |
 | `is_experimental` | boolean | The field used for FLoC/ Topics. For more information on FLoC, see [Federated Learning of Cohorts (FLoC)](https://privacysandbox.com/proposals/floc/) |
-| `opt_out_default` | boolean | When `true`, the industry type identifier is opted out by default and vice versa.<br>When the identity type is opted in, there is no need to consult the identity resolver to verify if there is any opt-out. However, when the identity type is initially opted out by default, the identity resolver must determine whether the identifier should be opted in or out. |
+| `opt_out_default` | boolean | When `true`, the industry type identifier is opted out by default and *vice versa*.<br>When the identity type is opted in, there is no need to consult the identity resolver to verify if there is any opt-out. However, when the identity type is initially opted out by default, the identity resolver must determine whether the identifier should be opted in or out. |
 | `enforce_adx_specification` | boolean | The field specifies if the drive validation ID length in Impression Bus is greater than 32. |
 
 ### The master control settings for an identifier owner
