@@ -4,7 +4,6 @@ description : The article outlines the steps to begin Key/Value Targeting.
 ms.date: 10/28/2023
 ---
 
-
 # Getting started with key/Value targeting
 
 You have many different options for targeting users in your line items and campaigns. One quick scan of the topics under [Buy-Side Targeting](buy-side-targeting.md)
@@ -44,7 +43,7 @@ This is typically the simplest way of setting up your key/value targeting. From 
 Creating key/value targeting through the API allows you to programmatically set up profiles to target on your custom keys and values. The API also offers enhanced granularity in your targeting expressions. In the UI you can create expressions that are two levels deep; using the API your expressions can
 go to a depth of up to five levels.
 
-- [Custom Key Value Targeting](xandr-api/custom-key-value-targeting.md)
+- [Custom Key Value Targeting](../digital-platform-api/custom-key-value-targeting.md)
   
   A targeting expression can be something like this:
 
@@ -60,11 +59,11 @@ go to a depth of up to five levels.
 
   This page walks you through designing your expression and building it out using the services listed below. It also explains the "levels of depth" we mentioned earlier.
 
-- [Targeting Key Service](xandr-api/targeting-key-service.md): Use this service to define your keys.
+- [Targeting Key Service](../digital-platform-api/targeting-key-service.md): Use this service to define your keys.
 
-- [Targeting Value Service](xandr-api/targeting-value-service.md): Use this service to define your values.
+- [Targeting Value Service](../digital-platform-api/targeting-value-service.md): Use this service to define your values.
 
-- [Profile Service](xandr-api/profile-service.md): Use this service to add the key/value targeting expressions to the profile associated with the line item or
+- [Profile Service](../digital-platform-api/profile-service.md): Use this service to add the key/value targeting expressions to the profile associated with the line item or
   campaign on which you're targeting.
 
 ## Reporting
@@ -79,11 +78,11 @@ You can run reports to receive a consolidated look at how your line items and ca
 The following reports are available:
 
 - [Key Value Analytics Report](key-value-analytics-report.md)
-- [Key Value Analytics Report](xandr-api/key-value-analytics-report.md)  
+- [Key Value Analytics Report](../digital-platform-api/key-value-analytics-report.md)  
   This is the same report as the preceding, but available from the API.
 
-- [Key Value Auction Feed](log-level-data/key-value-auction-feed.md)  
-  This is the log-level data feed for key/value auctions. (Contact your representative or [vcustomer support](https://help.xandr.com) for access to this feed).
+- [Key Value Auction Feed](../log-level-data/key-value-auction-feed.md)  
+  This is the log-level data feed for key/value auctions. (Contact your representative or [customer support](https://help.xandr.com) for access to this feed).
 
 ## Tagging
 

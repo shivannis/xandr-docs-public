@@ -1,9 +1,8 @@
 ---
 title: Getting Started with Roles
-Description: The article provides guidance on initiating roles.
+description: The article provides guidance on initiating roles.
 ms.date: 10/28/2023
 ---
-
 
 # Getting started with roles
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Geography Targeting
-description: 
+description: The article explains how you can target impressions based on the geographic location of the users viewing them.
 ms.date: 10/28/2023
 ---
 
@@ -23,11 +23,11 @@ Follow the instructions for the relevant geographic targeting option below.
 - Target users by political districts
 
 > [!WARNING]
-> **Accuracy of Geo Targeting**
+> **Accuracy of geo targeting**
 >
 > Although targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of a match.
 > [!NOTE]
-> **Geo Targeting & Third-Party Buying Filters**
+> **Geo targeting & third-party buying filters**
 >
 > For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the networkle vel. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be available for targeting.
 
@@ -118,6 +118,6 @@ Political Geography Targeting allows political buyers to target geographies base
 
 ## Related topics
 
-- [Create a Campaign<](create-a-campaign.md)(Standard Line Item only)
+- [Create a Campaign](create-a-campaign.md)(Standard Line Item only)
 - [How Geography Targeting Works](how-geography-targeting-works.md)
 - [Changes to Geography Objects](changes-to-geography-objects.md)

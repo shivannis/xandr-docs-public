@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Adserver
-description:  The article details how adserver users can access end-to-end setups of advertiser and publisher information.
+description: The article details how adserver users can access end-to-end setups of advertiser and publisher information.
 ms.date: 10/28/2023
 ---
 
@@ -44,7 +44,7 @@ Manage your guaranteed delivery.
 
 **Forecasting and pacing**
 
-- [Guaranteed Delivery Pacing](-guaranteed-delivery-pacing.md)
+- [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md)
 - [Inventory Forecasting](inventory-forecasting.md)
 - [Yieldex Analytics](https://wiki.xandr.com/display/YieldexAnalytics/Home) 
 

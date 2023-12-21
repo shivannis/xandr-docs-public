@@ -15,7 +15,7 @@ In order to be compliant with state legislation in the United States, Xandr will
 
 The GPP works by translating consent signal frameworks into a signal API. It first ingests multiple signals and then creates a single ingestible signal for downstream vendors to interpret. For example, if a page is using both the TCF and the USPAPI, the GPP will convert the signals into a single GPP string, as shown below.
 
-:::image type="content" source="media/gpp_works.png" alt-text="The screenshot that explains how does GRP wprks if a page is using both the TCF and the USPAPI, the GPP will convert the signals into a single GPP string.":::
+  :::image type="content" source="media/gpp-works.png" alt-text="Screenshot that explains how does GRP wprks if a page is using both the TCF and the USPAPI, the GPP will convert the signals into a single GPP string.":::
 
 The GPP string always consists of a 'header' and then the main string, which is divided into 'sections'. Each section relates to a local privacy framework. In the example above, the GPP string consists of TCF and USPAPI (CCPA) sections, as well as a header which provides information on which sections are included in the main string.
 

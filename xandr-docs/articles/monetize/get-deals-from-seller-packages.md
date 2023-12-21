@@ -1,7 +1,6 @@
 ---
 title: Microsft Monetize - Get Deals from Seller Packages
-Description: 
-The article discusses deals associated with seller packages.
+Description: The article discusses deals associated with seller packages.
 ms.date: 10/28/2023
 ---
 
