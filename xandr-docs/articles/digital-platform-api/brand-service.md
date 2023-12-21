@@ -1,234 +1,44 @@
 ---
-Title : Brand Service
-Description : The read-only Brand Service allows you to see what advertiser brands are
+title: Digital Platform API - Brand Service
+description: In this article, find information about the Brand Service and the fields associated with it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-registered in our system, the urls associated to each brand, the number
-of active creatives assigned to each brand, and more. You can also use
 ---
 
+# Digital Platform API - Brand service
 
-# Brand Service
+The read-only Brand Service allows you to see what advertiser brands are registered in our system, the urls associated to each brand, the number of active creatives assigned to each brand, and more. You can also use the Brand Service to obtain the ID assigned to a specific brand. This ID is used in the [Ad Profile Service](ad-profile-service.md) and as an optional input for the [Creative Service](creative-service.md).
 
-
-
-The read-only Brand Service allows you to see what advertiser brands are
-registered in our system, the urls associated to each brand, the number
-of active creatives assigned to each brand, and more. You can also use
-the Brand Service to obtain the ID assigned to a specific brand. This ID
-is used in the <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile Service</a> and as an optional
-input for the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.
-
-Brands are categorized by company and category. See the <a
-href="brand-company-service.md"
-class="xref" target="_blank">Brand Company Service</a> and <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a> for more information.
-
-
+Brands are categorized by company and category. See the [Brand Company Service](brand-company-service.md) and [Category Service](category-service.md) for more information.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000002b4__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000002b4__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000002b4__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__2"><a
-href="https://api.appnexus.com/brand" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/brand</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__3">View
-all brands
+| HTTP Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `https://api.appnexus.com/brand` | View all brands <br><br> **Note**: It can take a while to receive all brands because, by default, the response tells you the number of active creatives assigned to each brand. To remove `num_creatives` from the response, and speed up the call significantly, you can pass `simple=true` in the query string, i.e., `https://api.appnexus.com/brand?simple=true`. |
+| `GET` | `https://api.appnexus.com/brand?search=BRAND_NAME` | View all brands with names containing certain characters |
+| `GET` | `https://api.appnexus.com/brand?url_search=BRAND_URL` | View all brands with URLs containing complete words |
+| `GET` | `https://api.appnexus.com/brand?id=BRAND_ID` | View a particular brand |
 
-<b>Note:</b>
-<p>It can take a while to receive all brands because, by default, the
-response tells you the number of active creatives assigned to each
-brand. To remove <code class="ph codeph">num_creatives</code> from the
-response, and speed up the call significantly, you can pass <code
-class="ph codeph">simple=true</code> in the query string, i.e., <a
-href="https://api.appnexus.com/brand?simple=true" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/brand?simple=true</a>.</p>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__2"><a
-href="https://api.appnexus.com/brand?search=BRAND_NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/brand?search=BRAND_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__3">View
-all brands with names containing certain characters</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__2"><a
-href="https://api.appnexus.com/brand?url_search=BRAND_URL" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/brand?url_search=BRAND_URL</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__3">View
-all brands with URLs containing complete words</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__2"><a
-href="https://api.appnexus.com/brand?id=BRAND_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/brand?id=BRAND_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__3">View
-a particular brand</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000002b4__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000002b4__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000002b4__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">category_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">The
-ID of the category associated with the brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">company_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">The
-ID of the company associated with the brand.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">The
-ID of the brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">parent_brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">The
-<code class="ph codeph">parent_brand_id</code> is the ID of the company
-that owns the child brand.
-<p><strong>Default</strong>: null</p>
-
-<b>Note:</b>  
-<p>The "default_brand_status" setting in <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad quality rules</a> will be overridden
-when a seller sets an explicit trust setting for a brand's parent brand.
-Xandr groups brands entities into parent/child
-relationships.</p>
-<p>If a seller blocks or approves a parent brand, all child brands
-without an explicit approval or block setting, will inherit the seller's
-ad quality settings for that brand's parent brand.</p>
-<p>Reach out to Xandr Account Representative if
-bid error reports include brands you believe are not blocked by your ad
-quality settings. </p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">is_premium</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">If
-<code class="ph codeph">true</code>, the brand is a premium brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__18">When the brand was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000002b4__entry__18">The
-name of the brand.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">num_creatives</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__18">Deprecated. Currently returns 0.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__16"><code
-class="ph codeph">urls</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__17">array of strings</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000002b4__entry__18">URLs associated with the brand. The
-format is ["<a href="http://brandurl.com" class="xref"
-target="_blank">brandurl.com</a>", "<a href="http://brandurl.net"
-class="xref" target="_blank">brandurl.net</a>", ...]</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|---|---|---|
+| `category_id` | int | The ID of the category associated with the brand. |
+| `company_id` | int | The ID of the company associated with the brand. |
+| `id` | int | The ID of the brand. |
+| `is_premium` | boolean | If `true`, the brand is a premium brand. |
+| `last_modified` | string | When the brand was last modified. |
+| `name` | string | The name of the brand. |
+| `num_creatives` | int | Deprecated. Currently returns 0. |
+| `parent_brand_id` | int | The `parent_brand_id` is the ID of the company that owns the child brand. <br> **Default**: null <br><br> **Note**: The "default_brand_status" setting in [Ad quality rules](ad-profile-service.md) will be overridden when a seller sets an explicit trust setting for a brand's parent brand. Xandr groups brands entities into parent/child relationships. <br> If a seller blocks or approves a parent brand, all child brands without an explicit approval or block setting, will inherit the seller's ad quality settings for that brand's parent brand. <br> Reach out to Xandr Account Representative if bid error reports include brands you believe are not blocked by your ad quality settings.  |
+| `urls` | array of strings | URLs associated with the brand. The format is [`"brandurl.com"`, `"brandurl.net"`, ...] |
 
 ## Examples
 
-**View all brands**
+### View all brands
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/brand'
     "response": {
         "status": "OK",
@@ -406,9 +216,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/brand'
 }
 ```
 
-**View brand 10**
+### View brand 10
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/brand?id=10'
 {
     "response": {
@@ -475,9 +285,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/brand?id=10'
     }
 }
 ```
-
-
-
-
-
-

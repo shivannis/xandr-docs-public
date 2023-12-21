@@ -1,37 +1,19 @@
 ---
-Title : Buyer Engagement Report
-Description : The Buyer Engagement Report gives you insight into the viewable duration
+title: Digital Platform API - Buyer Engagement Report
+description: In this article, learn about the Buyer Engagement report and the dimensions and metrics associated with it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-of your display and video creatives.
 ---
 
+# Digital Platform API - Buyer engagement report
 
-# Buyer Engagement Report
+The Buyer Engagement Report gives you insight into the viewable duration of your display and video creatives.
 
+For instructions on retrieving a report, please see [Report Service](report-service.md) or the [example](#example) below.
 
+## Time frame
 
-
-
-The Buyer Engagement Report gives you insight into the viewable duration
-of your display and video creatives.
-
-For instructions on retrieving a report, please see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> or the
-<a href="buyer-engagement-report.md#buyer-engagement-report__example"
-class="xref">example</a> below.
-
-
-
-
-
-## Time Frame
-
-
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - custom
 - yesterday
@@ -40,843 +22,76 @@ following:
 - month_to_yesterday
 - last_30_days
 
+### Data retention period
 
+Data in this report has a daily time granularity and is retained for five weeks. This report also displays data under the UTC/GMT time zone.
 
-**Data Retention Period**
-
-Data in this report has a daily time granularity and is retained for
-five weeks. This report also displays data under the UTC/GMT time zone.
-
-
-
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buyer-engagement-report__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="buyer-engagement-report__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="buyer-engagement-report__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="buyer-engagement-report__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="buyer-engagement-report__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">210</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The member ID of the
-buyer</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">seller_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">765</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The member ID of the seller
-who sold the impression</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">seller_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"AdMeld"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the seller who
-sold the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">3</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the advertiser
-whose creative was served</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Advertiser"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the advertiser
-whose creative was served</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">947764</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the line item that
-served the impression</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"LineItemDEF"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the line item
-that served the impression</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">campaign_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">728</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the campaign
-(doesn't apply to all advertisers)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">campaign_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Test"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the creative
-(doesn't apply to all advertisers)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">size</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The size of the creative
-that was served</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">imp_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"External Impression"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The type of impression that
-served. For possible values, see <code
-class="ph codeph">imp_type_id</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">imp_type_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">3</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The ID for the type of
-impression that served (associated types in parentheses):</p>
-<ul>
-<li><code class="ph codeph">1 ("Blank")</code>: No creative served</li>
-</ul>
-<ul>
-<li><code class="ph codeph">2 ("PSA")</code>: A public service
-announcement served because there were no valid bids and no default
-creative was available</li>
-<li><code class="ph codeph">3 ("Default Error")</code>: A default
-creative served due to a timeout issue</li>
-<li><code class="ph codeph">4 ("Default")</code>: A default creative
-served because there were no valid bids</li>
-<li><code class="ph codeph">5 ("Kept")</code>: Your advertiser's
-creative served on your publisher's site</li>
-<li><code class="ph codeph">6 ("Resold")</code>: Your publisher's
-impression was sold to a third-party buyer</li>
-<li><code class="ph codeph">7 ("RTB")</code>: Your advertiser's creative
-served on third-party inventory</li>
-<li><code class="ph codeph">8 ("PSA Error")</code>: A public service
-announcement served due to a timeout issue or lack of a default
-creative</li>
-<li><code class="ph codeph">9 ("External Impression")</code>: An
-impression from an impression tracker</li>
-<li><code class="ph codeph">10 ("External Click")</code>: A click from a
-click tracker</li>
-<li><code class="ph codeph">11 ("Insertion")</code>: Your creative
-served on third-party inventory, where it persists across page-loads and
-sessions. This impression type is currently only for Facebook News Feed
-creatives.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">648359</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the insertion
-order</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"InsertionOrderABC"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the insertion
-order</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">publisher_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">374967</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the publisher that
-owns the inventory</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">publisher_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Publisher XYZ"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the publisher
-that owns the inventory</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">placement_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">546</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the placement
-where the creative was served</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">placement_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"300x250 Business"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the placement
-where the creative was served</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">creative_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">554</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the creative that
-served.
-<p>For impressions older than 14 months, creatives will be aggregated
-into one row with 0 as the creative ID.</p>
-
-
-<b>Note:</b> For external click or impression
-trackers, <code class="ph codeph">creative_id</code> will be <code
-class="ph codeph">"External Clicks"</code> or <code
-class="ph codeph">"External Imps</code>".
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">creative_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Q1 2010 728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The name of the creative
-that served</p>
-<p>For impressions older than 14 months, creatives will be aggregated
-into one row with "All creative data older than 14 months" as the
-creative name.</p>
-
-
-<b>Note:</b> For external click or impression
-trackers, <code class="ph codeph">creative_name</code> will be <code
-class="ph codeph">"External Clicks"</code> or <code
-class="ph codeph">"External Imps"</code>.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">media_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Banner"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The general display style
-of the creative that served:</p>
-<ul>
-<li><code class="ph codeph">Banner</code></li>
-<li><code class="ph codeph">Interstitial</code></li>
-<li><code class="ph codeph">Video</code></li>
-<li><code class="ph codeph">Text</code></li>
-<li><code class="ph codeph">Expandable</code></li>
-<li><code class="ph codeph">Skin</code></li>
-<li><code class="ph codeph">Facebook</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">mediatype_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the media type
-that served</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">device_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Mobile Phones"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The type of device where
-the impression occurred:</p>
-<ul>
-<li><code class="ph codeph">Desktops &amp; Laptops</code></li>
-<li><code class="ph codeph">Tablets</code></li>
-<li><code class="ph codeph">Mobile Phones</code></li>
-<li><code class="ph codeph">TV</code></li>
-<li><code class="ph codeph">Game Consoles</code></li>
-<li><code class="ph codeph">Set Top Box</code></li>
-<li><code class="ph codeph">Media Players</code></li>
-<li><code class="ph codeph">Other Devices</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">deal_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">2345</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The ID of the deal that
-the served impression is associated with.</p>
-<p>For more information about deals you have negotiated with sellers,
-see <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">deal_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Private deal for buyer 1085 with floor of $2.50"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the deal that
-the served impression is associated with</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"2012-08-23"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The day when the impression
-occurred</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">supply_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"mobile_web"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5"><p>The supply (inventory)
-type on which the impression occurred:</p>
-<ul>
-<li><code class="ph codeph">Web</code></li>
-<li><code class="ph codeph">Mobile Web</code></li>
-<li><code class="ph codeph">Mobile App</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">split_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">342</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_id</code> (if included) will be <code
-class="ph codeph">null</code> .</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">split_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"Mobile Split A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The name of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_name</code> (if included) will be <code
-class="ph codeph">null</code> .</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">domain_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"bestsiteever.com"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The URL of the domain on
-which the impression occurred</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">domain_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">1536</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The ID of the domain on
-which the impression occurred</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__1">domain</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__4"><code
-class="ph codeph">"bestsiteever.com (1536)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__5">The URL and ID of the domain
-on which the impression occurred</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Filter? | Example | Description |
+|---|---|---|---|---|
+| `advertiser_id` | int | Yes | `3` | The ID of the advertiser whose creative was served |
+| `advertiser_name` | string | No | `"Advertiser"` | The name of the advertiser whose creative was served |
+| `buyer_member_id` | int | Yes | `210` | The member ID of the buyer |
+| `campaign_id` | int | Yes | `728` | The ID of the campaign (doesn't apply to all advertisers) |
+| `campaign_name` | string | No | `"Test"` | The name of the creative (doesn't apply to all advertisers) |
+| `creative_id` | int | Yes | 554 | The ID of the creative that served. <br> - For impressions older than 14 months, creatives will be aggregated into one row with 0 as the creative ID. <br> **Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | No | `"Q1 2010 728x90"` | The name of the creative that served <br> - For impressions older than 14 months, creatives will be aggregated into one row with "All creative data older than 14 months" as the creative name. <br> **Note**: For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |
+| `day` | date | Yes | `"2012-08-23"` | The day when the impression occurred |
+| `deal_id` | int | Yes | `2345` | The ID of the deal that the served impression is associated with. <br> - For more information about deals you have negotiated with sellers, see [Deal Buyer Access Service](deal-buyer-access-service.md). |
+| `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal that the served impression is associated with |
+| `device_type` | string | Yes | `"Mobile Phones"` | The type of device where the impression occurred: <br> - `Desktops & Laptops` <br> - `Tablets` <br> - `Mobile Phones` <br> - `TV` <br> - `Game Consoles` <br> - `Set Top Box` <br> - `Media Players` <br> - `Other Devices` |
+| `domain` | string | No | `"bestsiteever.com (1536)"` | The URL and ID of the domain on which the impression occurred |
+| `domain_id` | int | No | `1536` | The ID of the domain on which the impression occurred |
+| `domain_name` | string | No | `"bestsiteever.com"` | The URL of the domain on which the impression occurred |
+| `imp_type` | string | Yes | `"External Impression"` | The type of impression that served. For possible values, see `imp_type_id`. |
+| `imp_type_id` | int | Yes | `3` | The ID for the type of impression that served (associated types in parentheses): <br> - `1 ("Blank")`: No creative served <br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available <br> - `3 ("Default Error")`: A default creative served due to a timeout issue <br> - `4 ("Default")`: A default creative served because there were no valid bids <br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site <br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer <br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory <br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative <br> - `9 ("External Impression")`: An impression from an impression tracker <br> - `10 ("External Click")`: A click from a click tracker <br> - `11 ("Insertion")`: Your creative served on third-party inventory, where it persists across page-loads and sessions. This impression type is currently only for Facebook News Feed creatives. |
+| `insertion_order_id` | int | No | `648359` | The ID of the insertion order |
+| `insertion_order_name` | string | No | `"InsertionOrderABC"` | The name of the insertion order |
+| `line_item_id` | int | Yes | `947764` | The ID of the line item that served the impression |
+| `line_item_name` | string | No | `"LineItemDEF"` | The name of the line item that served the impression |
+| `media_type` | string | No | `"Banner"` | The general display style of the creative that served: <br> - `Banner` <br> - `Interstitial` <br> - `Video` <br> - `Text` <br> - `Expandable` <br> - `Skin` <br> - `Facebook` |
+| `mediatype_id` | int | Yes | `2` | The ID of the media type that served |
+| `placement_id` | int | Yes | `546` | The ID of the placement where the creative was served |
+| `placement_name` | string | No | `"300x250 Business"` | The name of the placement where the creative was served |
+| `publisher_id` | int | Yes | `374967` | The ID of the publisher that owns the inventory |
+| `publisher_name` | string | No | `"Publisher XYZ"` | The name of the publisher that owns the inventory |
+| `seller_member_id` | int | Yes | `765` | The member ID of the seller who sold the impression |
+| `seller_member_name` | string | No | `"AdMeld"` | The name of the seller who sold the impression. |
+| `size` | string | Yes | `"728x90"` | The size of the creative that was served |
+| `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null` . |
+| `split_name` | string | No | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null` . |
+| `supply_type` | string | Yes | `"mobile_web"` | The supply (inventory) type on which the impression occurred: <br> - `Web` <br> - `Mobile Web` <br> - `Mobile App` |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buyer-engagement-report__entry__166"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="buyer-engagement-report__entry__167"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="buyer-engagement-report__entry__168"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="buyer-engagement-report__entry__169"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="buyer-engagement-report__entry__170"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">11080000</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">Your line item's total
-number of impressions</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">132297</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">Your line item's total
-number of clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">ctr</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.00067472306143</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The click-through rate –
-the ratio of clicks to impressions, expressed as a percentage</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">view_measurable_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">11080000</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The total number of
-impressions that were measured for viewability</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">viewed_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">51.47677411571988</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The total number of
-impressions that were deemed viewable as defined by the Interactive
-Advertising Bureau (IAB): For at least one second, 50% of a creative's
-pixels (or 30% for a creative with at least 242,500 pixels) must be
-viewable to a viewer on their screen.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">viewdef_viewed_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">5.678014273984716</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The number of measured
-impressions that were viewable, according to the member-level custom
-definition configuration (for more details, contact your <span
-class="ph">Xandr account representative)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">view_measurable_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.00067472306143</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">Viewability Measurement
-Rate = View Measurable Imps / Imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The percentage of
-impressions measured for viewability out of the total number of
-impressions</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.00067472306143</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">Viewability Rate = Viewed
-Imps / View Measurable Imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170"><p>The percentage of
-impressions that were viewable out of the total number of impressions
-measured for viewability</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">viewdef_view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.00067472306143</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The percentage of
-impressions that were viewable, according to the member-level custom
-definition configuration, out of the total number of impressions
-measured for viewability</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">average_viewable_duration</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">seconds</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">132297</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">Average Viewable Duration
-= Total Viewable Duration / Viewable Imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The average number of
-seconds for which the creative was in view according to IAB viewability
-criteria</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">total_viewable_duration</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">seconds</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">152.4298</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The total number of
-seconds for which the creative was in view according to IAB viewability
-criteria</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">video_completions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">10</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The total number of video
-creatives played for their entire duration</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">video_completion_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.0084979838709677</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">Video Completion Rate =
-Video Completions / Total Impressions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The ratio of video
-completions to total impressions, expressed as a percentage</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__166">viewable_completion_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__167">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__168"><code
-class="ph codeph">0.0084979838709677</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__169">Viewable Completion Rate =
-Viewable and Completed Video Impressions / Measurable Video
-Impressions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="buyer-engagement-report__entry__170">The ratio of in-view video
-completions to total impressions, expressed as a percentage</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Column | Type | Example | Formula | Description |
+|---|---|---|---|---|
+| `average_viewable_duration` | seconds | `132297` | Average Viewable Duration = Total Viewable Duration / Viewable Imps | The average number of seconds for which the creative was in view according to IAB viewability criteria |
+| `clicks` | int | `132297` | N/A | Your line item's total number of clicks |
+| `ctr` | double | `0.00067472306143` | N/A | The click-through rate – the ratio of clicks to impressions, expressed as a percentage |
+| `imps` | int | `11080000` | N/A | Your line item's total number of impressions |
+| `total_viewable_duration` | seconds | `152.4298` | N/A | The total number of seconds for which the creative was in view according to IAB viewability criteria |
+| `video_completion_rate` | double | `0.0084979838709677` | Video Completion Rate = Video Completions / Total Impressions | The ratio of video completions to total impressions, expressed as a percentage |
+| `video_completions` | int | `10` | N/A | The total number of video creatives played for their entire duration |
+| `view_measurable_imps` | int | `11080000` | N/A | The total number of impressions that were measured for viewability |
+| `view_measurable_rate` | double | `0.00067472306143` | Viewability Measurement Rate = View Measurable Imps / Imps | The percentage of impressions measured for viewability out of the total number of impressions |
+| `view_rate` | double | `0.00067472306143` | Viewability Rate = Viewed Imps / View Measurable Imps | The percentage of impressions that were viewable out of the total number of impressions measured for viewability |
+| `viewable_completion_rate` | double | `0.0084979838709677` | Viewable Completion Rate = Viewable and Completed Video Impressions / Measurable Video Impressions | The ratio of in-view video completions to total impressions, expressed as a percentage |
+| `viewdef_view_rate` | double | `0.00067472306143` | N/A | The percentage of impressions that were viewable, according to the member-level custom definition configuration, out of the total number of impressions measured for viewability |
+| `viewdef_viewed_imps` | int | `5.678014273984716` | N/A | The number of measured impressions that were viewable, according to the member-level custom definition configuration (for more details, contact your Xandr account representative) |
+| `viewed_imps` | int | `51.47677411571988` | N/A | The total number of impressions that were deemed viewable as defined by the Interactive Advertising Bureau (IAB): For at least one second, 50% of a creative's pixels (or 30% for a creative with at least 242,500 pixels) must be viewable to a viewer on their screen. |
 
 ## Example
 
-**Create the JSON-formatted report request**
+### Create the JSON-formatted report request
 
-The JSON file should include the `report_type`
-`"engagement_report_for_buyers"`, as well as the columns (dimensions and
-metrics) and `report_interval` that you want to retrieve. You can also
-filter for specific dimensions, define granularity (year, month, day),
-and specify the format in which the data should be returned (csv, excel,
-or html). For a full explanation of fields that can be included in the
-JSON file, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
+The JSON file should include the `report_type` `"engagement_report_for_buyers"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see [Report Service](report-service.md).
 
-
-
-``` pre
+```
 $ cat engagement_report_for_buyers
   {
     "report":
@@ -898,13 +113,9 @@ $ cat engagement_report_for_buyers
 }
 ```
 
+### `POST` the request to the reporting service
 
-
-**`POST` the request to the Reporting Service**
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @engagement_report_for_buyers 'https://api.appnexus.com/report'
 {
    "response":{
@@ -914,18 +125,11 @@ $ curl -b cookies -c cookies -X POST -d @engagement_report_for_buyers 'https://a
 }
 ```
 
+### `GET` the report status from the report service
 
+Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-**`GET` the report status from the Report Service**
-
-Make a `GET` call with the Report ID to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report
-data to a file, as described in the next step.
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69'
 {
    "response":{
@@ -943,31 +147,13 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02
 }
 ```
 
+### `GET` the report data from the report download service
 
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
-**`GET` the report data from the Report Download Service**
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
 
-To download the report data to a file, make another `GET` call with the
-Report ID, but this time to the **report-download** service. You can
-find the service and Report ID in the `url` field of the previous `GET`
-response. When identifying the file that you want to save to, be sure to
-use the file extension of the `"format"` that you specified in your
-initial `POST`.
-
-
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `-i` or `-v` in your call to expose the response header.
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/engagement_report_for_buyers.csv
 ```
-
-
-
-
-
-

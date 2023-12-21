@@ -1,141 +1,64 @@
 ---
-Title : Buy-Side Setup
-Description : Setting up an advertiser with insertion orders, line items, and
+title: Buy-Side Setup
+description: In this article, find step-by-step instructions for setting up an advertiser.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-targeting can seem complicated. This guide is here to walk you through
 ---
 
+# Buy-side setup
 
-# Buy-Side Setup
+Setting up an advertiser with insertion orders, line items, and targeting can seem complicated. This guide is here to walk you through the process. Just follow along and you'll have advertisers and line items up and running in no time.
 
+## Prerequisites
 
+Before you work with the API you should read the [API Getting Started](api-getting-started.md) section of this documentation. This section provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.) and best practices.
 
-Setting up an advertiser with insertion orders, line items, and
-targeting can seem complicated. This guide is here to walk you through
-the process. Just follow along and you'll have advertisers and line
-items up and running in no time.
+## Order of operations
 
+When you set up your buy-side objects, the process will be much simpler if you set those objects up in the correct order. If you don't go in the correct order you'll get partway through something and realize "Oops, I should have created \<abc\> first." You can always go back and update anything you've already set up, but if you follow this order of operations and you'll make things much easier on yourself.
 
-
-##  Prerequisites
-
-Before you work with the API you should read the <a
-href="api-getting-started.md"
-class="xref" target="_blank">API Getting Started</a> section of this
-documentation. This section provides information on testing
-environments, usage constraints, API semantics (running commands,
-filtering, sorting, etc.) and best practices.
-
-
-
-
-
-## Order of Operations
-
-When you set up your buy-side objects, the process will be much simpler
-if you set those objects up in the correct order. If you don't go in the
-correct order you'll get partway through something and realize "Oops, I
-should have created \<abc\> first." You can always go back and update
-anything you've already set up, but if you follow this order of
-operations and you'll make things much easier on yourself.
-
-Also, by following the order we've set out here you're less likely to
-miss important settings along the way. For example, you can create a
-line item and campaign without a profile, but that's rarely, if ever, a
-good idea. The profile determines your targeting, and if you activate a
-campaign without a profile you'll be bidding on any available
-impression, possibly missing everyone in your target audience and
-exhausting your budget very quickly. If you methodically go in order,
-you're much less likely to forget something.
+Also, by following the order we've set out here you're less likely to miss important settings along the way. For example, you can create a line item and campaign without a profile, but that's rarely, if ever, a good idea. The profile determines your targeting, and if you activate a campaign without a profile you'll be bidding on any available impression, possibly missing everyone in your target audience and exhausting your budget very quickly. If you methodically go in order, you're much less likely to forget something.
 
 Here is the order of operations for setting up your buy-side objects:
 
-![Buy side](media/buy-side.png)
-<ol>
-<li><p><strong>Advertiser<br />
-</strong></p>
-<p>At the top of the order is the advertiser. Creating the advertiser is
-always the first step. You can have multiple advertisers within your
-network, and each advertiser can have many insertion orders and line
-items.</p></li>
-<li><p><strong>Non-Spending Objects<br />
-</strong></p>
-<p>The next step encompasses several sub-steps. All the
-sub-steps <em>within</em> this step can be created in any order. If you
-want to create a segment pixel before a creative or a creative before a
-segment pixel, that's entirely up to you. But - and here's the important
-part - you should create all the Step 2 objects before you move on to
-Step 3 because you'll most likely be using some of the Step 2 objects in
-Step 3. (Note that there are more options in this step than are shown
-here. The objects we create in this set are an example of the
-non-spending objects you can create.)</p></li>
-<li><p><strong>Profile<br />
-</strong></p>
-<p>Next comes the profile. Profiles define all the ways you can target
-users and inventory in your line items or campaigns. If you don't create
-your profiles before you move on to the next steps, you'll have to
-update everything later with the profile information.</p></li>
-<li><p><strong>Insertion Order<br />
-</strong></p>
-<p>In this step you create your insertion orders. The insertion order
-contains information such as the total budget an advertiser allocates
-for a period of time, or which third-party verification the advertiser
-utilizes. Insertion orders also allow you to group line items and
-campaigns. You can create multiple insertion orders under an
-advertiser.</p></li>
-<li><p><strong>Line Item<br />
-</strong></p>
-<p>In Step 5 we create the line item. The line item contains information
-such as how much the advertiser has budgeted toward an offering, or
-which targeting the advertiser requires. (This is where you can add the
-profiles created in Step 3.) You can create multiple line items under an
-advertiser or insertion order.</p></li>
-<li><p><strong>Campaign<br />
-</strong></p>
-<p>In the final step we create the campaign. The campaign is where you
-get more granular in defining how you will meet the advertiser's goals.
-You can attach a profile to a campaign.</p></li>
-</ol>
-</figure>
+:::image type="content" source="media/buy-side.png" alt-text="A diagram that shows the order of buy-side objects setup along with explanations for each step.":::
 
+1. **Advertiser**
+  
+      At the top of the order is the advertiser. Creating the advertiser is always the first step. You can have multiple advertisers within your network, and each advertiser can have many insertion orders and line items.
 
+1. **Non-Spending Objects**
 
+    The next step encompasses several sub-steps. All the sub-steps *within* this step can be created in any order. If you want to create a segment pixel before a creative or a creative before a segment pixel, that's entirely up to you. But - and here's the important part - you should create all the Step 2 objects before you move on to Step 3 because you'll most likely be using some of the Step 2 objects in Step 3. (Note that there are more options in this step than are shown here. The objects we create in this set are an example of the non-spending objects you can create.)
 
+1. **Profile**
 
-## Step-by-Step Walkthrough
+    Next comes the profile. Profiles define all the ways you can target users and inventory in your line items or campaigns. If you don't create your profiles before you move on to the next steps, you'll have to update everything later with the profile information.
 
-Now that you understand the pieces of the buy-side puzzle and how to
-place them in order, let's walk through the creation of your buy-side
-implementation. These examples will take you through a very simple
-setup. There are many more fields and settings available for each
-service than what is shown here. See
-the <a href="reference.md"
-class="xref" target="_blank">Reference</a> section for details on each
-service.
+1. **Insertion Order**
 
-**Step 1: Advertiser**
+    In this step you create your insertion orders. The insertion order contains information such as the total budget an advertiser allocates for a period of time, or which third-party verification the advertiser utilizes. Insertion orders also allow you to group line items and campaigns. You can create multiple insertion orders under an advertiser.
 
-We begin, of course, with the advertiser. We create a JSON file
-containing the name of the advertiser and their status. We've left most
-of the advertisers fields as their default values. However, in Step 4
-we're going to create an insertion order. To include insertion orders,
-you need to set **use_insertion_orders** to **true** on your advertiser.
-See <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a> for more
-information.
+1. **Line Item**
 
+    In Step 5 we create the line item. The line item contains information such as how much the advertiser has budgeted toward an offering, or which targeting the advertiser requires. (This is where you can add the profiles created in Step 3.) You can create multiple line items under an advertiser or insertion order.
 
+1. **Campaign**
 
-<b>Note:</b> Note that we've set the
-advertiser state to **active**. You might prefer to initially set the
-state of all objects to **inactive** to ensure you don't begin spending
-before your advertiser is ready.
+    In the final step we create the campaign. The campaign is where you get more granular in defining how you will meet the advertiser's goals. You can attach a profile to a campaign.
 
+## Step-by-step walkthrough
 
+Now that you understand the pieces of the buy-side puzzle and how to place them in order, let's walk through the creation of your buy-side implementation. These examples will take you through a very simple setup. There are many more fields and settings available for each service than what is shown here. See the [Reference](reference.md) section for details on each service.
 
-``` pre
+### Step 1: Advertiser
+
+We begin, of course, with the advertiser. We create a JSON file containing the name of the advertiser and their status. We've left most of the advertisers fields as their default values. However, in Step 4 we're going to create an insertion order. To include insertion orders, you need to set **use_insertion_orders** to **true** on your advertiser. See [Advertiser Service](advertiser-service.md) for more information.
+
+> [!NOTE]
+> We've set the advertiser state to **active**. You might prefer to initially set the state of all objects to **inactive** to ensure you don't begin spending before your advertiser is ready.
+
+```
 $ cat advertiser.json
  
 {
@@ -147,10 +70,9 @@ $ cat advertiser.json
 }
 ```
 
-Now we do a POST call to the **advertiser** service, passing it our JSON
-file.
+Now we do a POST call to the **advertiser** service, passing it our JSON file.
 
-``` pre
+```
 $ curl -b cookies -X POST -d @advertiser.json 'https://api.appnexus.com/advertiser'
 {
    "response":{
@@ -160,47 +82,29 @@ $ curl -b cookies -X POST -d @advertiser.json 'https://api.appnexus.com/advertis
 }
 ```
 
-We've now created an advertiser named Advertiser1. The preceding command
-will return a message showing your new advertiser, including the
-advertiser ID. Make a note of this ID; you'll be using it in subsequent
-commands.
+We've now created an advertiser named Advertiser1. The preceding command will return a message showing your new advertiser, including the advertiser ID. Make a note of this ID; you'll be using it in subsequent commands.
 
-**Step 2: Non-Spending Objects**
+### Step 2: Non-spending objects
 
-The objects you'll create in this step are "non-spending" objects,
-meaning there are no monetary amounts associated with them. They are all
-independent of one another and can be used across different line items
-and campaigns. You can create these objects in any order. Our diagram
-shows four types of objects, but there are many more, including
-third-party pixels, batch segments, and IP range lists. We'll show just
-a few examples here.
+The objects you'll create in this step are "non-spending" objects, meaning there are no monetary amounts associated with them. They are all independent of one another and can be used across different line items and campaigns. You can create these objects in any order. Our diagram shows four types of objects, but there are many more, including third-party pixels, batch segments, and IP range lists. We'll show just a few examples here.
 
-**Creatives**
+#### Creatives
 
 Here is the command that calls the **creative** service:
 
-``` pre
+```
 $ curl -b cookies -X POST -d @creative.json 'https://api.appnexus.com/creative?advertiser_id=10'
 ```
 
-Notice that we've passed the **advertiser_id** in our query string. This
-allows us to associate the creative with the advertiser we just
-created. 
+Notice that we've passed the **advertiser_id** in our query string. This allows us to associate the creative with the advertiser we just created.
 
-The contents of the creative.json file depend on the type of creative.
-There are numerous options; too many to go over here. See the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> to find out more about
-the types of creatives and how to build a JSON file to create them.
+The contents of the creative.json file depend on the type of creative. There are numerous options; too many to go over here. See the [Creative Service](creative-service.md) to find out more about the types of creatives and how to build a JSON file to create them.
 
-**Conversion Pixels**
+#### Conversion pixels
 
-The **pixel** service generates an ID that can be used to
-create conversion pixels. These pixels can be placed on advertiser pages
-to track both view- and click-based conversions. Here is the process for
-creating a conversion pixel:
+The **pixel** service generates an ID that can be used to create conversion pixels. These pixels can be placed on advertiser pages to track both view- and click-based conversions. Here is the process for creating a conversion pixel:
 
-``` pre
+```
 $cat conversionpixel.json
 {
         "pixel": {
@@ -222,18 +126,13 @@ $ curl -b cookies -X POST -d @conversionpixel.json 'https://api.appnexus.com/pix
 }
 ```
 
-Notice that we once again pass the **advertiser_id** in the query string
-to associate this pixel with a particular advertiser. 
+Notice that we once again pass the **advertiser_id** in the query string to associate this pixel with a particular advertiser.
 
-**Segment Pixels**
+#### Segment pixels
 
-Use the **segment** service to generate an ID to create segment pixels,
-which are placed on inventory pages to enable segment targeting. Segment
-targeting gives you the ability to target users based on the segments
-they belong to. Users are generally added to segments based on an
-action, such as clicking on a creative.
+Use the **segment** service to generate an ID to create segment pixels, which are placed on inventory pages to enable segment targeting. Segment targeting gives you the ability to target users based on the segments they belong to. Users are generally added to segments based on an action, such as clicking on a creative.
 
-``` pre
+```
 $cat segmentpixel.json
 {
     "segment": {
@@ -252,27 +151,16 @@ $ curl -b cookies -X POST -d @segmentpixel.json 'https://api.appnexus.com/segmen
 }
 ```
 
-Be sure to make note of the ID that's returned, you'll need to add this
-ID in the next step when you create a profile.
+Be sure to make note of the ID that's returned, you'll need to add this ID in the next step when you create a profile.
 
+> [!NOTE]
+> If you forget to keep track of your ID, you can always make another call to the **segment** service to look it up. Keep in mind, however, that you do have [rate limits](api-best-practices.md), so you'll want to be sure you're being efficient in your API calls.
 
+#### Domain lists
 
-<b>Note:</b> If you forget to keep track of
-your ID, you can always make another call to the **segment** service to
-look it up. Keep in mind, however, that you do have <a
-href="api-best-practices.md"
-class="xref" target="_blank">rate limits</a>, so you'll want to be sure
-you're being efficient in your API calls.
+Domain lists allow you to create allowlists or blocklists. Allowlists contain domains that you want to include in your campaign targeting, and blocklists contain domains that you want to exclude.
 
-
-
-**Domain Lists**
-
-Domain lists allow you to create allowlists or blocklists. Allowlists
-contain domains that you want to include in your campaign targeting, and
-blocklists contain domains that you want to exclude.
-
-``` pre
+```
 $ cat domain-list.json 
 {
     "domain-list":{
@@ -291,13 +179,9 @@ $ curl -b cookies -X POST -d @domain-list.json 'https://api.appnexus.com/domain-
 }
 ```
 
-Notice that the domain list is created by using the **domains** array.
-If you need to update a domain list, remember to use the **append** flag
-with your PUT command. For example, let's say you want to
-add domain-d.com and domain-e.com to the list we just created. You would
-create a new JSON file like this:
+Notice that the domain list is created by using the **domains** array. If you need to update a domain list, remember to use the **append** flag with your PUT command. For example, let's say you want to add domain-d.com and domain-e.com to the list we just created. You would create a new JSON file like this:
 
-``` pre
+```
 $cat updated-domain-list.json
 {
     "domain-list": {
@@ -309,13 +193,13 @@ $cat updated-domain-list.json
 
 To add these fields to the existing list, run this command:
 
-``` pre
+```
 $ curl -b cookies -X PUT -d @update-domain-list.json 'https://api.appnexus.com/domain-list?id=9&append=true'
 ```
 
 This will append the new domains and your list will now look like this:
 
-``` pre
+```
 "domain-list": {
     "id": 9,
     "name": "Domains to Target",
@@ -332,12 +216,9 @@ This will append the new domains and your list will now look like this:
     "num_domains": 5
 ```
 
-If you leave off the **append=true** flag in your query string, your
-current list will be replaced by the list in your update. For example,
-the same PUT command we just ran without **append=true** would produce
-this domain list:
+If you leave off the **append=true** flag in your query string, your current list will be replaced by the list in your update. For example, the same PUT command we just ran without **append=true** would produce this domain list:
 
-``` pre
+```
 "domain-list": {
     "id": 9,
     "name": "Domains to Target",
@@ -351,32 +232,14 @@ this domain list:
     "num_domains": 2
 ```
 
+> [!NOTE]
+> Domains you upload must generally conform to the [URI spec](https://www.ietf.org/rfc/rfc3986.txt) to be accepted by our API. In practical terms, you probably don't need to worry about this requirement unless you're trying to upload Internationalized Domain Names, in which case you should ensure that any domains that include non-ASCII characters are encoded with [Punycode](https://en.wikipedia.org/wiki/Punycode) before upload.
 
+### Step 3: Profile
 
-<b>Note:</b> Domains you upload must generally
-conform to
-the <a href="http://www.ietf.org/rfc/rfc3986.txt" class="xref"
-target="_blank">URI spec</a> to be accepted by our API. In practical
-terms, you probably don't need to worry about this requirement unless
-you're trying to upload Internationalized Domain Names, in which case
-you should ensure that any domains that include non-ASCII characters are
-encoded
-with <a href="https://en.wikipedia.org/wiki/Punycode" class="xref"
-target="_blank">Punycode</a> before upload.
+After creating the non-spending objects, the next step is to create a profile. The profile is also a non-spending object, but this one must be created after the objects in step 2 because you can use some of those objects in your profile. A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be created with several objects in the system, including segment pixels.
 
-
-
-**  
-Step 3: Profile**
-
-After creating the non-spending objects, the next step is to create a
-profile. The profile is also a non-spending object, but this one must be
-created after the objects in step 2 because you can use some of those
-objects in your profile. A profile is a set of targeting parameters,
-such as gender, age, geography, and frequency. It can be created with
-several objects in the system, including segment pixels. 
-
-``` pre
+```
 $cat profile.json
 {
         "profile": {
@@ -415,31 +278,16 @@ $ curl -b cookies -X POST -d @profile.json 'https://api.appnexus.com/profile?adv
 }
 ```
 
-In our example, we've used the segment pixel (Segment Pixel 1) that we
-created in Step 2. This profile will target users based on that segment,
-and also target domains that are not in the list of excluded domains
-specified here (competitorURL.com and badURL.com). We could also have
-used our domain list that we created in Step 2 by using the
-**domain_list_action** and
-domain_list_targets fields.
+In our example, we've used the segment pixel (Segment Pixel 1) that we created in Step 2. This profile will target users based on that segment, and also target domains that are not in the list of excluded domains specified here (competitorURL.com and badURL.com). We could also have used our domain list that we created in Step 2 by using the **domain_list_action** and domain_list_targets fields.
 
-We'll associate this profile with a line item in
-<a href="buy-side-setup.md#ID-00000dea__100" class="xref">Step 5 -
-Line Items</a>. So again, keep track of the returned ID.
+We'll associate this profile with a line item in [Step 5: Line Items](#step-5-line-items). So again, keep track of the returned ID.
 
-**Step 4: Insertion Orders**
+### Step 4: Insertion orders
 
-Now it's time to create an insertion order. This is the first of the
-"spending" objects. These are the objects that determine how much money
-will be spent over what period of time and on which advertising
-campaigns. There are two types of insertion orders: seamless and
-non-seamless. See <a
-href="insertion-order-service.md"
-class="xref" target="_blank">Insertion Order Service</a> for a detailed
-description of the difference. Because seamless insertion orders are the
-preferred model, that's what we're going to create here.
+Now it's time to create an insertion order. This is the first of the "spending" objects. These are the objects that determine how much money will be spent over what period of time and on which advertising campaigns. There are two types of insertion orders: seamless and
+non-seamless. See [Insertion Order Service](insertion-order-service.md) for a detailed description of the difference. Because seamless insertion orders are the preferred model, that's what we're going to create here.
 
-``` pre
+```
 $ cat insertion-order.json
 {
     "insertion-order": {
@@ -533,26 +381,13 @@ $ curl -b cookies -X POST -d @insertion-order.json "https://api.appnexus.com/ins
 }
 ```
 
-In our next step we're going to create a line item that we'll associate
-with this insertion order, so once again, keep track of the ID for the
-insertion order we just created. You'll also need to keep track of the
-budget interval IDs. You'll use these IDs to associate the budget
-interval information with the line item.
+In our next step we're going to create a line item that we'll associate with this insertion order, so once again, keep track of the ID for the insertion order we just created. You'll also need to keep track of the budget interval IDs. You'll use these IDs to associate the budget interval information with the line item.
 
-**Step 5 - Line Items**
+### Step 5: Line items
 
-As with insertion orders, line items can be seamless or non-seamless.
-See <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a> for details. You
-can't mix seamless and non-seamless, so we'll be creating a seamless
-line item to go with our seamless insertion order from Step 4. You can
-create multiple line items under a single insertion order. We'll also be
-attaching the profile we created in step 3 to this line item by
-assigning the profile ID to the
-profile_id field.
+As with insertion orders, line items can be seamless or non-seamless. See [Line Item Service](line-item-service.md) for details. You can't mix seamless and non-seamless, so we'll be creating a seamless line item to go with our seamless insertion order from Step 4. You can create multiple line items under a single insertion order. We'll also be attaching the profile we created in step 3 to this line item by assigning the profile ID to the `profile_id` field.
 
-``` pre
+```
 $ cat line-item.json
 {
     "line-item": {
@@ -706,16 +541,13 @@ $ curl -b cookies -X POST -d @line-item.json "https://api.appnexus.com/line-item
 }
 ```
 
-Note the ID from your new line item and we'll continue on to the next
-step.
+Note the ID from your new line item and we'll continue on to the next step.
 
-**Step 6: Campaigns**
+### Step 6: Campaigns
 
-Last but not least, it's time to create the campaign. You can associated
-a profile to a campaign rather than to a line item. You can create
-multiple campaigns for each line item.
+Last but not least, it's time to create the campaign. You can associated a profile to a campaign rather than to a line item. You can create multiple campaigns for each line item.
 
-``` pre
+```
 $ cat campaign.json
  
 {
@@ -741,65 +573,27 @@ $ curl -b cookies -X POST -d @campaign.json 'https://api.appnexus.com/campaign?a
 
 And that's it.
 
-There are many more options on each of these services. We've shown you a
-very basic setup in this walkthrough; you'll most likely want to add
-much more information as you create your objects. But hopefully this
-walkthrough has given you a good starting point.
-
-
-
-
+There are many more options on each of these services. We've shown you a very basic setup in this walkthrough; you'll most likely want to add much more information as you create your objects. But hopefully this walkthrough has given you a good starting point.
 
 ## Summary
 
-**Follow the Order of Operations**
+### Follow the Order of Operations
 
-- Everything is associated with an advertiser, so if you haven't created
-  the advertiser, do that first.  
-   
-- Create your non-spending objects (creatives, segments, etc.) in any
-  order ...  
-   
-- ... except profiles. A profile is a non-spending object, but it needs
-  to be the last non-spending object created. It may depend on some of
-  the other non-spending objects, such as segments.  
-   
-- Create spending objects *in order*: insertion order, line item,
-  campaign (if necessary).
+- Everything is associated with an advertiser, so if you haven't created the advertiser, do that first.  
+- Create your non-spending objects (creatives, segments, etc.) in any order ...  
+- ... except profiles. A profile is a non-spending object, but it needs to be the last non-spending object created. It may depend on some of the other non-spending objects, such as segments.
+- Create spending objects *in order*: insertion order, line item, campaign (if necessary).
 
-**Follow these General Guidelines**
+### Follow these general guidelines
 
-- Include a budget and flight dates on your spending objects. If an
-  object higher in the the order already has these, lower objects will
-  inherit them unless explicitly changed. Budget and flight dates of
-  lower objects must be within budgets and flight dates for higher
-  objects. (In other words, if your insertion order has a budget
-  interval starting April 2, 2017 and ending April 30, 2017, you can't
-  create a line item under that insertion order with a budget interval
-  of April 20, 2017 - May 5, 2017.)  
-   
-- Attach a profile to your line item (or campaign). You could have
-  serious targeting and spending issues if you don't attach a profile.  
-   
-- Set the state field on all spending
-  objects to **active **when you're ready to start spending on the
-  specified start dates. (If you do not want your objects to start
-  spending on their start dates, set the state to **inactive**.)
+- Include a budget and flight dates on your spending objects. If an object higher in the the order already has these, lower objects will inherit them unless explicitly changed. Budget and flight dates of lower objects must be within budgets and flight dates for higher objects. (In other words, if your insertion order has a budget interval starting April 2, 2017 and ending April 30, 2017, you can't create a line item under that insertion order with a budget interval of April 20, 2017 - May 5, 2017.)  
 
+- Attach a profile to your line item (or campaign). You could have serious targeting and spending issues if you don't attach a profile.  
 
+- Set the **state** field on all spending objects to **active** when you're ready to start spending on the specified start dates. (If you do not want your objects to start spending on their start dates, set the state to **inactive**.)
 
+## Related topics
 
-## Related Topics
-
-- <a href="https://wiki.xandr.com/display/api/Buy-Side%2bServices"
-  class="xref" target="_blank">Buy-Side Services</a>
-- <a href="https://wiki.xandr.com/display/api/Profile%2bService"
-  class="xref" target="_blank">Profile Service</a>
-- <a href="https://wiki.xandr.com/display/api/Audience%2bData%2bServices"
-  class="xref" target="_blank">Audience Data Services</a>
-
-
-
-
-
-
+- [Buy-Side Services](buy-side-services.md)
+- [Profile Service](profile-service.md)
+- [Audience Data Services](audience-data-services.md)

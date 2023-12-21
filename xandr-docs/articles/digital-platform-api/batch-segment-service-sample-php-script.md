@@ -1,38 +1,22 @@
 ---
-Title : Batch Segment Service - Sample PHP Script
-Description : <b>Note:</b>
+title: Batch Segment Service - Sample PHP Script
+description: In this article, find a sample PHP script for the Batch Segment Service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-- This page is visible only to Xandr employees.
 ---
 
+# Batch Segment Service - Sample PHP script
 
-# Batch Segment Service - Sample PHP Script
+> [!IMPORTANT]
+>
+> - This page is visible only to Xandr employees.
+> - The content on this page is provided only as an example; we cannot robustly support PHP script implementations with clients.
 
-
-
-
-
-<b>Note:</b>
-
-
-
-- This page is visible only to Xandr employees.
-- The content on this page is provided only as an example; we cannot
-  robustly support PHP script implementations with clients.
-
-
-
-
-
-The following script will connect to the Batch Segment Service, request
-a job ID and upload URL, `POST` your segment file to the upload URL, and
-return yet another URL where you can check the status of your processing
-job.
+The following script will connect to the Batch Segment Service, request a job ID and upload URL, `POST` your segment file to the upload URL, and return yet another URL where you can check the status of your processing job.
 
 It accepts one argument: the filename of your segment data file.
 
-``` pre
+```
 <?php
 if ($argc < 2) {
   die("No File Name Specified!\n");
@@ -66,7 +50,3 @@ exec("curl -v -H 'Content-Type:application/octet-stream' --data-binary @".$filen
 echo("\ncurl -b cookies -c cookies '".$api_url."/batch-segment?member_id=".$member_id."&job_id=".$job_id."'\n");
 ?>
 ```
-
-
-
-
