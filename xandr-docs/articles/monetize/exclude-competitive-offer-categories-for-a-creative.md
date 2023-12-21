@@ -1,53 +1,19 @@
 ---
-Title : Exclude Competitive Offer Categories for a Creative
-Description : When adding creatives, you can apply competitive exclusions from the
+title: Microsoft Monetize - Exclude Competitive Offer Categories for a Creative
+description: The article instructs users to use the optional Competitive Exclusions section when adding creatives to prevent them from displaying alongside those with competitive offer categories. Each creative can exclude a maximum of five offer categories.
 ms.date: 10/28/2023
-Competitive Exclusions (optional)
-section to prevent creatives with competitive offer categories from
-serving alongside each other. You can exclude a maximum of five offer
 ---
 
+# Microsoft Monetize - Exclude competitive offer categories for a creative
 
-# Exclude Competitive Offer Categories for a Creative
+When adding creatives, you can apply competitive exclusions from the **Competitive Exclusions (optional)** section to prevent creatives with competitive offer categories from
+serving alongside each other. You can exclude a maximum of five offer categories for each creative.
 
+You can also set offer category exclusions at the advertiser level. For additional information about setting competitive exclusions at the advertiser level, see [Competitive Exclusions](competitive-exclusions.md).
 
+1. Click in the **Offer Categories** subsection.
+1. Search for specific offer categories and select the appropriate checkboxes.
 
-When adding creatives, you can apply competitive exclusions from the
-Competitive Exclusions (optional)
-section to prevent creatives with competitive offer categories from
-serving alongside each other. You can exclude a maximum of five offer
-categories for each creative.
+## Related topic
 
-
-
-You can also set offer category exclusions at the advertiser level. For
-additional information about setting competitive exclusions at the
-advertiser level, see <a href="competitive-exclusions.md" class="xref"
-title="You can use competitive exclusions to prevent creatives with competitive brands or offer categories from serving alongside each other.">Competitive
-Exclusions</a>.
-
-
-
-
-
-1.  Click in the
-    Offer Categories
-    subsection.
-2.  Search for specific offer categories and select
-    the appropriate checkboxes.
-
-
-
-
-
-**Related Topics**
-
-- <a href="working-with-creatives.md" class="xref"
-  title="You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.">Working
-  with Creatives</a>
-
-
-
-
-
-
+- [Working with Creatives](working-with-creatives.md)
