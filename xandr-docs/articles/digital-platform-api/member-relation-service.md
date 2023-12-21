@@ -50,14 +50,14 @@ $ curl -b cookies https://api.appnexus.com/member-relation?member_id=100&id=1
     "response": {
         "dbg_info": {
             "member_last_modified_age": 1436,
-            "slave_lag": 0,
+            "s1ave_lag": 0,
             "version": "1.13.8.16",
             "start_microtime": 1358438257.7108,
             "time": 30.287027359009,
             "warnings": [],
             "awesomesauce_cache_used": false,
             "db": "06.mysql.sand-08.nym2",
-            "slave_hit": true,
+            "s1ave_hit": true,
             "instance": "11.hbapi.sand-08.nym1"
         },
         "member_relation": {
@@ -85,14 +85,14 @@ $ curl -b cookies https://api.appnexus.com/member-relation?buyer_member_id=100
 {
     "response": {
         "dbg_info": {
-            "slave_miss": "no_service_index",
+            "s1ave_miss": "no_service_index",
             "version": "1.13.13",
             "start_microtime": 1360770598.1499,
             "time": 22.953033447266,
             "warnings": [],
             "awesomesauce_cache_used": false,
             "db": "master",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "instance": "30.bm-hbapi.prod.nym1"
         },
         "member_relations": [
@@ -145,11 +145,11 @@ $ curl -b cookies -X PUT "https://api.appnexus.com/member-relation?member_id=130
                 "warnings": [],
                 "awesomesauce_cache_used": false,
                 "db": "master",
-                "slave_hit": false,
+                "s1ave_hit": false,
                 "instance": "05.hbapi.sand-08.lax1"
             },
             "db": "master",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "instance": "10.hbapi.sand-08.nym1"
         },
         "member_relation": {
@@ -204,11 +204,11 @@ $ curl -b cookies -X POST -d @new-member-relation.json "https://api.appnexus.com
                 "warnings": [],
                 "awesomesauce_cache_used": false,
                 "db": "master",
-                "slave_hit": false,
+                "s1ave_hit": false,
                 "instance": "05.hbapi.sand-08.lax1"
             },
             "db": "master",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "instance": "11.hbapi.sand-08.nym1"
         },
         "member_relation": {

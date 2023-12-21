@@ -36,7 +36,7 @@ The Member Contract Service allows Xandr Sales Op admins to view, create, update
 | `GET` | https://api.appnexus.com/member-contract?member_id=MEMBER_ID | View all contracts for a specific member |
 | `GET` | https://api.appnexus.com/member-contract<br>(contract JSON) | View a specific contract |
 | `POST` | https://api.appnexus.com/member-contract<br>(contract JSON) | Add a new contract |
-| `PUT` | https://api.appnexus.com/member-contract?id=CONTRACT_ID<br><br>(contract JSON) | Modify a contract |
+| `PUT` | https://api.appnexus.com/member-contract?id=CONTRACT_ID <br>(contract JSON) | Modify a contract |
 | `DELETE` | https://api.appnexus.com/member-contract?id=CONTRACT_ID | Delete a contract |
 | `GET` | https://api.appnexus.com/member-contract/meta | Find out which fields you can filter and sort by |
 
@@ -46,7 +46,7 @@ There is a large intersection between the sets of required fields depending on w
 
 | Field | Type | Description |
 |:---|:---|:---|
-| id | int | The ID of the contract.<br><br>**Requird On**: `PUT`/`DELETE`, in query string. |
+| `id` | int | The ID of the contract.<br><br>**Requird On**: `PUT`/`DELETE`, in query string. |
 | `member_id` | int | The ID of the member to which the contract applies. |
 | `last_activity` | timestamp | The date of the last modification of this contract "object". |
 | `start_date` | datetime | The date and time when the terms of the contract start. New contracts should begin in the future, and typically on the first day of a month.<br><br>**Requird On**: `POST` |

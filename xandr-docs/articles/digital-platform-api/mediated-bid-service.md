@@ -20,8 +20,8 @@ Every bid is associated with a mediated network. For more information about medi
 |:---|:---|:---|
 | `GET` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID | View all of a member's bids. |
 | `GET` | https://api.appnexus.com/mediated-bid?id=BID_ID | View a specific bid. |
-| `POST` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID (+ JSON payload) | Create a new bid. |
-| `PUT` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID (+ JSON payload) | Modify a bid. |
+| `POST` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Create a new bid. |
+| `PUT` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Modify a bid. |
 | `DELETE` | http://api.apnexus.com/mediated-bid?id=BID_ID | Delete a bid. |
 
 ## JSON fields

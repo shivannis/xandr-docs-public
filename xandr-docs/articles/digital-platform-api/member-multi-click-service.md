@@ -58,7 +58,7 @@ $ curl -b cookies -c cookies 'http:api.appnexus.com/member-multi-click'
     ],
     "dbg_info": {
       "instance": "63.bm-hbapi.prod.nym2",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -67,8 +67,8 @@ $ curl -b cookies -c cookies 'http:api.appnexus.com/member-multi-click'
       "time": 41.685104370117,
       "start_microtime": 1421350933.2934,
       "version": "1.15.326",
-      "slave_miss": "no_service_index",
-      "slave_lag": 0,
+      "s1ave_miss": "no_service_index",
+      "s1ave_lag": 0,
       "member_last_modified_age": 1421350933,
       "output_term": "member-multi-clicks"
     }

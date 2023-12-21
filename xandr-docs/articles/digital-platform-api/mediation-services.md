@@ -14,7 +14,6 @@ This section describes the Xandr mediation APIs.
 
 The following diagram provides a high-level overview of how these API services connect with each other and the outside world.
 
-![Mediation](media/mediation-service-fig-a.png)
 :::image type="content" source="media/mediation-service-fig-a.png" alt-text="Diagram providing a high-level overview of how the mediation services connect with each other and the outside world.":::
 
 ## Related topics

@@ -20,8 +20,8 @@ The Member Profile Service allows you to establish a single, global profile to l
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/member-profile (member-profile JSON) | Create your member profile |
-| `PUT`  | https://api.appnexus.com/member-profile (member-profile JSON) | Update your member profile |
+| `POST` | https://api.appnexus.com/member-profile <br>(member-profile JSON) | Create your member profile |
+| `PUT`  | https://api.appnexus.com/member-profile <br>(member-profile JSON) | Update your member profile |
 | `GET`  | https://api.appnexus.com/member-profile | View your member profile |
 | `DELETE`  | https://api.appnexus.com/member-profile | Delete your member profile |
 | `GET`  | https://api.appnexus.com/member-profile/meta | Find out which fields you can filter and sort by |

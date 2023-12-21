@@ -18,8 +18,8 @@ Use this service to define your integration with an external network.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/mediated-network (+ JSON payload) | Add a new mediated network |
-| `PUT` | https://api.appnexus.com/mediated-network?id=ID (+ JSON payload) | Modify a mediated network |
+| `POST` | https://api.appnexus.com/mediated-network <br>(+ JSON payload) | Add a new mediated network |
+| `PUT` | https://api.appnexus.com/mediated-network?id=ID <br>(+ JSON payload) | Modify a mediated network |
 | `GET` | https://api.appnexus.com/mediated-network | View all mediated networks |
 | `GET` | https://api.appnexus.com/mediated-network?id=ID | View a specific mediated network |
 | `DELETE` | https://api.appnexus.com/mediated-network?id=ID | Delete a mediated network |
