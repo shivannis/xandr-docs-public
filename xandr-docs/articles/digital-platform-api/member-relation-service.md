@@ -1,267 +1,50 @@
 ---
-Title : Member Relation Service
-Description : The Member Relation Service is an internal, admin-only API service that
+title: Member Relation Service
+description: The member relation service is an internal API service for monitoring financial arrangements between members, including clients, partners, buyers, and sellers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-is used to view financial arrangements between our members. This
 ---
 
+# Member relation service
 
-# Member Relation Service
+The Member Relation Service is an internal, admin-only API service that is used to view financial arrangements between our members. This includes both clients and partners, as well as individual buyers and sellers. For example, a buyer member may want to set up a direct clearing relationship with a seller member rather than clearing through our platform.
 
+In addition, the `apply_bid_landscape_priority` field allows sellers who are [Bid Landscape Feed](../log-level-data/bid-landscape-feed.md) clients to see all bids from a specific buyer in their bid landscape feed.
 
-
-The Member Relation Service is an internal, admin-only API service that
-is used to view financial arrangements between our members. This
-includes both clients and partners, as well as individual buyers and
-sellers. For example, a buyer member may want to set up a direct
-clearing relationship with a seller member rather than clearing through
-our platform.
-
-In addition, the `apply_bid_landscape_priority` field allows sellers who
-are <a
-href="log-level-data/bid-landscape-feed.md"
-class="xref" target="_blank">Bid Landscape Feed</a> clients to see all
-bids from a specific buyer in their bid landscape feed.
-
-
-
-<b>Note:</b>
-
-- The `member_relation` database table, upon which this API service is
-  based, replaces the functionality of the legacy `member_clearing`
-  table. The `member_clearing` table is no longer used.
-- You must go through Sales Ops to set up or edit a direct clear
-  relationship because there is an impact on client billing and
-  contracts. Setting up and/or editing a direct clear relationship
-  without permission from Sales Ops could cause
-  Xandr to get into financial or legal trouble
-  with clients. If Sales Ops has given the green light, then Justin
-  Pines or an IC will make the update.
-
-
-
-
+> [!NOTE]
+> - The `member_relation` database table, upon which this API service is based, replaces the functionality of the legacy `member_clearing` table. The `member_clearing` table is no longer used.
+> - You must go through Sales Ops to set up or edit a direct clear relationship because there is an impact on client billing and contracts. Setting up and/or editing a direct clear relationship without permission from Sales Ops could cause Xandr to get into financial or legal trouble with clients. If Sales Ops has given the green light, then Justin Pines or an IC will make the update.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/member-relation?buyer_member_id=MEMBER_ID | View all of a member's financial relationships as a buyer with other sellers. |
+| `GET` | https://api.appnexus.com/member-relation?seller_member_id=MEMBER_ID | View all of a member's financial relationships as a seller with other buyers. |
+| `GET` | https://api.appnexus.com/member-relation?id=1,2,3 | View multiple member relationship objects by ID using a comma-separated list. |
+| `GET` | https://api.appnexus.com/member-relation?member_id=100&id=1 | View a specific member financial relationship:. |
+| `PUT` | https://api.appnexus.com/member-relation?member_id=100&id=1 | Update a specific member financial relationship. |
+| `POST` | https://api.appnexus.com/member-relation?member_id=100 | Create a specific member financial relationship. |
+| `GET` | https://api.appnexus.com/member-relation/meta | Find out what fields you can filter and sort by. |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002d8c__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002d8c__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00002d8c__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?buyer_member_id=MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?buyer_member_id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__3">View
-all of a member's financial relationships as a buyer with other
-sellers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?seller_member_id=MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?seller_member_id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__3">View
-all of a member's financial relationships as a seller with other
-buyers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?id=1%2c2%2c3"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?id=1,2,3</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__3">View
-multiple member relationship objects by ID using a comma-separated
-list.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?member_id=100&amp;id=1"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?member_id=100&amp;id=1</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__3">View
-a specific member financial relationship:.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?member_id=100&amp;id=1"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?member_id=100&amp;id=1</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__3">Update a specific member financial
-relationship.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation?member_id=100"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation?member_id=100</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__3"><p>Create a specific member financial
-relationship.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__2"><a
-href="https://api.appnexus.com/member-relation/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member-relation/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__3">Find
-out what fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002d8c__entry__25"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-00002d8c__entry__26"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002d8c__entry__27"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__27">This object's system ID.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code
-class="ph codeph">buyer_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__27">The
-member ID of a buyer member which has a relationship with this member.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code
-class="ph codeph">seller_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002d8c__entry__27">The
-member ID of a seller member which has a relationship with this member.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code
-class="ph codeph">expose_inventory_sources</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__27">This field is not used.
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code
-class="ph codeph">clear_direct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__27">Whether Xandr
-collects cost of media or pays out seller payment for transactions
-between this buyer-seller pair. More precisely:
-<ul>
-<li>If <code class="ph codeph">true</code>, <span
-class="ph">Xandr does not collect cost of media or pay out seller
-payment for transactions between this buyer-seller pair. <span
-class="ph">Xandr collects only a direct clear fee from the buyer
-based on the value of <code
-class="ph codeph">member_contract.direct_clear_fee</code> for all direct
-cleared activity in the month.</li>
-<li>If <code class="ph codeph">false</code>, <span
-class="ph">Xandr collects cost of media and pays out seller
-payment for transactions between this buyer-seller pair. <span
-class="ph">Xandr collects either a buyer auction service
-deduction or fee or a seller deduction on all activity as determined by
-contracts.</li>
-</ul>
-<strong>Default:</strong> <code class="ph codeph">false</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__25"><code
-class="ph codeph">apply_bid_landscape_priority</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__26">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002d8c__entry__27">Whether to include this buyer's bids in
-the bid landscape feed for the seller. More precisely:
-<ul>
-<li>If <code class="ph codeph">true</code>, always include the buyer's
-bids in the bid landscape feed for the seller, even if this buyer's bids
-were neither in the top 15 nor the winning bid in the auction.</li>
-<li>If <code class="ph codeph">false</code>, treat the seller's bid
-landscape as we normally would.</li>
-</ul>
-<strong>Default:</strong> <code class="ph codeph">true</code></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | This object's system ID. |
+| `buyer_member_id` | int | The member ID of a buyer member which has a relationship with this member.<br><br>**Required On**: `POST` |
+| `seller_member_id` | int | The member ID of a seller member which has a relationship with this member.<br><br>**Required On**: `POST` |
+| `expose_inventory_sources` | boolean | This field is not used.<br><br>**Default**: `true` |
+| `clear_direct` | boolean | Whether Xandr collects cost of media or pays out seller payment for transactions between this buyer-seller pair. More precisely:<br><br>If `true`, Xandr does not collect cost of media or pay out seller payment for transactions between this buyer-seller pair. Xandr collects only a direct clear fee from the buyer based on the value of `member_contract.direct_clear_fee` for all direct cleared activity in the month.<br><br>If `false`, Xandr collects cost of media and pays out seller payment for transactions between this buyer-seller pair. Xandr collects either a buyer auction service deduction or fee or a seller deduction on all activity as determined by contracts.<br><br>**Default**: `false` |
+| `apply_bid_landscape_priority` | boolean | Whether to include this buyer's bids in the bid landscape feed for the seller. More precisely:<br><br>If `true`, always include the buyer's bids in the bid landscape feed for the seller, even if this buyer's bids were neither in the top 15 nor the winning bid in the auction.<br><br>If `false`, treat the seller's bid landscape as we normally would.<br><br>**Default**: `true` |
 
 ## Examples
 
-**View a specific financial relationship**
+### View a specific financial relationship
 
 In this example, we view a particular financial relationship by ID.
 
-``` pre
+```
 $ curl -b cookies https://api.appnexus.com/member-relation?member_id=100&id=1
 {
     "response": {
@@ -293,15 +76,11 @@ $ curl -b cookies https://api.appnexus.com/member-relation?member_id=100&id=1
 }
 ```
 
-**View all of a member's financial relationships where it acts as a
-buyer (or seller)**
+### View all of a member's financial relationships where it acts as a buyer (or seller)
 
-In this example, we view all of a member's relationships where it acts
-as the buyer from other sellers; in order to view all of the
-relationships wherein it acts as the seller to other buying members,
-change the parameter to `seller_member_id` instead:
+In this example, we view all of a member's relationships where it acts as the buyer from other sellers; in order to view all of the relationships wherein it acts as the seller to other buying members, change the parameter to `seller_member_id` instead:
 
-``` pre
+```
 $ curl -b cookies https://api.appnexus.com/member-relation?buyer_member_id=100
 {
     "response": {
@@ -334,11 +113,9 @@ $ curl -b cookies https://api.appnexus.com/member-relation?buyer_member_id=100
 }
 ```
 
+### Update a specific member relationship object
 
-
-**Update a specific member relationship object**
-
-``` pre
+```
 $ cat update-member-relation.json
 
 {
@@ -348,9 +125,7 @@ $ cat update-member-relation.json
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -X PUT "https://api.appnexus.com/member-relation?member_id=1309&id=1"
 {
     "response": {
@@ -394,11 +169,9 @@ $ curl -b cookies -X PUT "https://api.appnexus.com/member-relation?member_id=130
 }
 ```
 
+### Create a new member relationship object
 
-
-**Create a new member relationship object**
-
-``` pre
+```
 $ cat new-member-relation.json
 
 {
@@ -411,9 +184,7 @@ $ cat new-member-relation.json
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -X POST -d @new-member-relation.json "https://api.appnexus.com/member-relation?member_id=1309"
 {
     "response": {
@@ -456,9 +227,3 @@ $ curl -b cookies -X POST -d @new-member-relation.json "https://api.appnexus.com
     }
     }
 ```
-
-
-
-
-
-

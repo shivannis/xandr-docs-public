@@ -1,179 +1,38 @@
 ---
-Title : Member Multi Click Service
-Description : The Member Multi Click service is an admin-only service that allows
+title: Member Multi Click Service
+description: Use the member multi click service to update the common.member_multi_click table.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-updates to the `common.member_multi_click` table. This table configures
 ---
 
+# Member multi click service
 
-# Member Multi Click Service
-
-
-
-The Member Multi Click service is an admin-only service that allows
-updates to the `common.member_multi_click` table. This table configures
-members to track multiple clicks for specific cases. Please be careful
-when adding or updating objects when using this service
-
-
+The Member Multi Click service is an admin-only service that allows updates to the `common.member_multi_click` table. This table configures members to track multiple clicks for specific cases. Please be careful when adding or updating objects when using this service
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/member-multi-click <br>(template JSON) | Add a new member-multi-click setting |
+| `PUT` |  https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID*<br><br>**Note**: `MULTI_CLICK_ID` is not the `member_id` but a uniquely generated ID for the setting. It can be retrieved via `GET`. <br>(template JSON) | Modify a member-multi-click setting |
+| `DELETE` | https://api.appnexus.com/member-multi-click?id=MULTI_CLICK_ID | Delete a member-multi-click setting |
+| `GET` |  https://api.appnexus.com/member-multi-click | View all member-multi-click settings |
+| `GET` | https://api.appnexus.com/member-multi-click?member_id=MEMBER_ID | View a specific member's multi click setting |
+| `GET` | https://api.appnexus.com/member-multi-click/meta | Find out which fields you can filter and sort by |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002ce5__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002ce5__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00002ce5__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2">https://api.<span
-class="ph">appnexus.com/member-multi-click <br />
-(template JSON)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002ce5__entry__3">Add
-a new member-multi-click setting</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2"> https://api.<span
-class="ph">appnexus.com/member-multi-click?id=MULTI_CLICK_ID*
-
-<b>Note:</b> <code
-class="ph codeph">MULTI_CLICK_ID</code> is not the member_id but a
-uniquely generated id for the setting. It can be retrieved via <code
-class="ph codeph">GET</code><br />
-(template JSON)
-</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__3">Modify a member-multi-click setting</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2">https://api.<span
-class="ph">appnexus.com/member-multi-click?id=MULTI_CLICK_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__3">Delete a member-multi-click setting</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2"> https://api.<span
-class="ph">appnexus.com/member-multi-click</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002ce5__entry__3">View
-all member-multi-click settings</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2">https://api.<span
-class="ph">appnexus.com/member-multi-click?member_id=MEMBER_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002ce5__entry__3">View
-a specific member's multi click setting</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__2">https://api.<span
-class="ph">appnexus.com/member-multi-click/meta<br />
-</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__3"><p>Find out which fields you can filter
-and sort by</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002ce5__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002ce5__entry__23" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00002ce5__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002ce5__entry__24">The
-ID of the member multi click.
-<p><strong>Default:</strong> Auto-generated number.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT/DELETE</code>, in query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__22"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002ce5__entry__24">The
-<code class="ph codeph">member_id</code> for which to set multiple click
-tracking.
-<p><strong>Default:</strong> None</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__22"><code
-class="ph codeph">flag</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002ce5__entry__24">Boolean flag to enable/disable multiple
-click tracking.
-<p><strong>Default:</strong> True</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the member multi click.<br><br>**Default**: Auto-generated number.<br>**Required On**: `PUT`/`DELETE`, in query string. |
+| `member_id` | int | The `member_id` for which to set multiple click tracking.<br><br>**Default**: `None`<br>**Required On**: `POST` |
+| `flag` | boolean | Boolean flag to enable/disable multiple click tracking.<br>**Default**: `True` |
 
 ## Examples
 
-**View all member-multi-click settings**
+### View all member-multi-click settings
 
-``` pre
+```
 $ curl -b cookies -c cookies 'http:api.appnexus.com/member-multi-click'
 {
   "response": {
@@ -217,11 +76,9 @@ $ curl -b cookies -c cookies 'http:api.appnexus.com/member-multi-click'
 }
 ```
 
+### Add a multi-click-setting for a member
 
-
-**Add a multi-click-setting for a member**
-
-``` pre
+```
 $ cat member-multi-click
 
 {
@@ -232,9 +89,7 @@ $ cat member-multi-click
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @member-multi-click 'https://api.appnexus.com/member-multi-click'
 {
   "response": {
@@ -251,9 +106,3 @@ $ curl -b cookies -c cookies -X POST -d @member-multi-click 'https://api.appnexu
         }
 }
 ```
-
-
-
-
-
-
