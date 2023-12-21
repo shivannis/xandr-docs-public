@@ -1,24 +1,21 @@
 ---
-Title : Direct Inventory Targeting (ALI)
-Description : If your line item is set to buy direct inventory, it will target all of
+title : Microsoft Monetize - Direct Inventory Targeting (ALI)
+description : Learn how to limit your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. 
 ms.date: 10/28/2023
-your direct inventory by default. However, you can narrow your targeting
 ---
 
 
-# Direct Inventory Targeting (ALI)
-
-
+# Microsoft Monetize - Direct inventory targeting (ALI)
 
 If your line item is set to buy direct inventory, it will target all of
 your direct inventory by default. However, you can narrow your targeting
 to include or exclude specific managed publishers, placement groups
 (sites), or placements.
 
-1.  In the Inventory & Brand Safety
-    section, click Edit next to
+1. In the **Inventory & Brand Safety**
+    section, click **Edit** next to
     **Managed Inventory**.
-2.  On the Direct Inventory tab,
+1. On the **Direct Inventory** tab,
     include or exclude direct inventory at the appropriate level:
     - The **Publishers** lists shows all of your managed publishers. You
       can either include or exclude publishers or drill into a publisher
@@ -33,24 +30,14 @@ to include or exclude specific managed publishers, placement groups
       placements. Note that when you exclude a publisher or placement
       group, its placements are not available for further inclusion or
       exclusion.
-3.  Click Add.
+1. Click **Add**.
 
-Related Topic
+## Related topic
 
-- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
-- <a href="inventory-targeting-ali.md" class="xref">Inventory Targeting
-  (ALI)</a>
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
-- <a href="augmented-line-items-ali.md" class="xref">Augmented Line
-  Items (ALI)</a>
-- <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a>
-- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
-- <a href="basic-buy-side-setup-procedures.md" class="xref">Basic
-  Buy-side Setup Procedures</a>
-
-
-
-
+- [Buy-Side Targeting](buy-side-targeting.md)
+- [Inventory Targeting (ALI)](inventory-targeting-ali.md)
+- [Create an Insertion Order](create-an-insertion-order.md)
+- [Augmented Line Items (ALI)](augmented-line-items-ali.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+- [Object Hierarchy](object-hierarchy.md)
+- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)

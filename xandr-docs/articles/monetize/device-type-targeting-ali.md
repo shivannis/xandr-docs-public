@@ -1,25 +1,17 @@
 ---
-Title : Device Type Targeting
-Description : To access device type targeting options, expand the
+title : Microsoft Monetize - Device Type Targeting
+description : Learn how to access Device Type Targeting options in this page.
 ms.date: 10/28/2023
-Targeting section of the line item
-setup. By default, your line items will target the following physical
 ---
 
 
-# Device Type Targeting
-
-
+# Microsoft Monetize - Device type targeting
 
 To access device type targeting options, expand the
-Targeting section of the line item
+**Targeting** section of the line item
 setup. By default, your line items will target the following physical
-device types, which correspond to `device_type_targets` in the <a
-href="xandr-api/profile-service.md#ProfileService-DeviceTypeTargets"
-class="xref" target="_blank">Profile Object</a> associated to the line
-item, as well as to the Device Type dimension in <a
-href="invest_invest-standard/device-analytics-report.md"
-class="xref" target="_blank">Device Analytics Reporting</a>.
+device types, which correspond to `device_type_targets` in the [Profile Object](../digital-platform-api/profile-service.md) associated to the line
+item, as well as to the Device Type dimension in [Device Analytics Reporting](../invest/device-analytics-report.md).
 
 - **Desktops**
   - corresponds to `pc` in the profile api service
@@ -38,43 +30,19 @@ class="xref" target="_blank">Device Analytics Reporting</a>.
   - corresponds to `mediaplayer` in the profile api service
   - corresponds to `media players` in device analytics reporting
 
-  see
-  <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a> to restrict the device types you are
+  see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+to restrict the device types you are
   targeting, uncheck any device types you wish to exclude.
-  >
 
-  
+  > [!NOTE]
+  > - **Connected Audio** is only available in Invest.
+  > - When targeting devices models **Targeting > System > Device Model** with **Make =** **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
 
-  <b>Note:</b>
-  - **Connected Audio** is only available in Invest.
-  - When targeting devices models
-    Targeting
-    \> System \>
-    Device Model with
-    Make = **Apple**, you should
-    include the following device models to avoid under-delivery. For
-    Example: **iPad (300)** and **iPhone (301)**.
+## Related topic
 
-  
-
-  
-
-Related Topic
-
-- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
-- <a href="augmented-line-items-ali.md" class="xref">Augmented Line
-  Items (ALI)</a>
-- <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a>
-- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
-- <a href="basic-buy-side-setup-procedures.md" class="xref">Basic
-  Buy-side Setup Procedures</a>
-
-
-
-
+- [Buy-Side Targeting](buy-side-targeting.md)
+- [Create an Insertion Order](create-an-insertion-order.md)
+- [Augmented Line Items (ALI)](augmented-line-items-ali.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+- [Object Hierarchy](object-hierarchy.md)
+- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)

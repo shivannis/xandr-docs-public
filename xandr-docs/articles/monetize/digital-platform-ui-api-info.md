@@ -1,14 +1,11 @@
 ---
-Title : Monetize API
-Description : Microsoft Monetize is built on a robust API that is
+title : Microsoft Monetize - Monetize API
+description : This page covers links to resources to learn more about API.
 ms.date: 10/28/2023
-available to customers. You can use this API to automate certain tasks
 ---
 
 
-# Monetize API
-
-
+# Microsoft Monetize - Monetize API
 
 Microsoft Monetize is built on a robust API that is
 available to customers. You can use this API to automate certain tasks
@@ -20,18 +17,7 @@ more about the API and the services that are available.
 
 - <a href="xandr-api/welcome.md"
   class="xref" target="_blank">Digital Platform API</a>
-- <a
-  href="xandr-api/api-getting-started.md"
-  class="xref" target="_blank">Getting Started with the API</a>
-- <a
-  href="xandr-api/buy-side-setup-with-the-augmented-line-item.md"
-  class="xref" target="_blank">Buy-Side Setup Guide</a>
-- <a
-  href="xandr-api/sell-side-setup.md"
-  class="xref" target="_blank">Sell-Side Setup Guide</a>
-- <a href="xandr-api/reference.md"
-  class="xref" target="_blank">Reference Guide (Services)</a>
-
-
-
-
+- [Getting Started with the API](../digital-platform-api/api-getting-started.md)
+- [Buy-Side Setup Guide](../digital-platform-api/buy-side-setup-with-the-augmented-line-item.md)
+- [Sell-Side Setup Guide](../digital-platform-api/sell-side-setup.md)
+- [Reference Guide (Services)](../digital-platform-api/reference.md)
