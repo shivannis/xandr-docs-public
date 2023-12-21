@@ -72,7 +72,6 @@ You'll find information on all your reporting needs in our [Reporting Guide](rep
 
 ## General Data Protection Regulation (GDPR)
 
-Information about data protection and privacy on the
-Xandr Platform.
+Information about data protection and privacy on the Xandr Platform.
 
-[GDPR](https://wiki.xandr.com/display/GDPR/GDPR%2band%2bePR%2b-%2bHome)
+    - [GDPR](https://wiki.xandr.com/display/GDPR/GDPR%2band%2bePR%2b-%2bHome)

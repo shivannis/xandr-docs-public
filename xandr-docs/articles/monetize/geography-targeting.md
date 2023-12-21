@@ -109,7 +109,6 @@ Ranges are no longer supported. You will need to add each individual postal code
 
 ## Target users by political districts
 
-
 Political Geography Targeting allows political buyers to target geographies based on legislative district boundaries. The feature is available within the existing geo targeting module in Invest, and it's called "Political District (US Only)". The Political District Targeting allows buyers to target the following political geography levels:
 
 - Congressional District
@@ -118,6 +117,6 @@ Political Geography Targeting allows political buyers to target geographies base
 
 ## Related topics
 
-- [Create a Campaign](create-a-campaign.md)(Standard Line Item only)
+- [Create a Campaign (Standard Line Item only)](create-a-campaign.md)
 - [How Geography Targeting Works](how-geography-targeting-works.md)
 - [Changes to Geography Objects](changes-to-geography-objects.md)

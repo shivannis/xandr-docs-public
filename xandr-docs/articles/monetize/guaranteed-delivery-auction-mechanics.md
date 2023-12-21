@@ -32,7 +32,7 @@ Guaranteed line items have the following behavior during the price reduction and
 - When a guaranteed line item with a pCPM value is ranked second to a winning RTB bid, the RTB bid should price reduce to the pCPM value of the guaranteed line item, even if pCPM is below the guaranteed line item's price.
 - pCPM is used to rank bids, but when a guaranteed line item wins the auction, it still pays the booked line item price, not the pCPM value.
 
-## Roadblocks and Guaranteed Line Items
+## Roadblocks and guaranteed line items
 
 Guaranteed line items' roadblocks serve (or not) based on their priority and distance from goal. In order for a standard roadblock to serve over a guaranteed roadblock, the average CPM from the standard roadblock across all of the tags involved must be higher than the pCPM for the guaranteed roadblock. (See example \#3 below for more information.)
 

@@ -44,9 +44,9 @@ Click **Next**.
 
  1. Enter the following information, separated by commas:
 
-- Latitude
-- Longitude
-- Radius (in meters: 3m to 100000m)
+    - Latitude
+    - Longitude
+    - Radius (in meters: 3m to 100000m)
 
   > [!NOTE]
   > The radius needs to be whole number.
@@ -84,7 +84,7 @@ Click **Next**.
 
 ### Step 4. Review geo radius segment features and create geo radius segment
 
-Review the Related Geo Features of the geo radius segment. Click Create Geo Radius Segment to finish creating the geo radius segment.
+Review the **Related Geo Features** of the geo radius segment. Click **Create Geo Radius Segment** to finish creating the geo radius segment.
 
 ### Step 5. segment ID for use in line item targeting
 
