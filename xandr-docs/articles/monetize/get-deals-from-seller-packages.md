@@ -1,10 +1,10 @@
 ---
 title: Microsft Monetize - Get Deals from Seller Packages
-Description: The article discusses deals associated with seller packages.
+description: The article discusses deals associated with seller packages.
 ms.date: 10/28/2023
 ---
 
-# Microsoft - Monetize - Get deals from seller packages
+# Microsoft Monetize - Get deals from seller packages
 
 As a buyer, the best way to find deals is to browse sellers' packages, which are pre-made combinations of inventory and/or data that can be immediately converted into deals or can be used as a jumping-off point for custom deal negotiations. This page walks you through the process.
 
