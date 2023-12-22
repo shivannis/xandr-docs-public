@@ -22,7 +22,7 @@ phones. Microsoft Casual Games include:
 - Microsoft Ultimate Word Game
 - Microsoft Bingo
 
-**Microsoft solitaire collection**
+**Microsoft Solitaire Collection**
 
 The Microsoft Solitaire Collection remains the most played computer game
 of all time, and has been a part of Windows for more than 24 years. The
@@ -41,7 +41,7 @@ languages.
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft minesweeper**
+**Microsoft Minesweeper**
 
 Minesweeper is the classic puzzle game that has been a part of Windows
 for more than 20 years, now reimagined for Windows 8 and 10. Featuring
@@ -60,7 +60,7 @@ screens
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft jigsaw**
+**Microsoft Jigsaw**
 
 Users can play hundreds of puzzles in three exciting game modes: Classic
 Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make
@@ -79,7 +79,7 @@ entertainment.
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft sudoku**
+**Microsoft Sudoku**
 
 The new Microsoft Sudoku is the popular logic puzzle game that makes the
 most of a Windows device. With five difficulty levels, fresh daily
@@ -96,7 +96,7 @@ hundreds of brain training puzzles for players of all ages.
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft mahjong**
+**Microsoft Mahjong**
 
 Microsoft Mahjong is the classic matching game with beautiful imagery,
 intuitive controls, and all the features that fans of Mahjong come to
@@ -112,7 +112,7 @@ expect.
 
 For more information, see [Formats and Specifications](#formats-and-specifications).
 
-**Microsoft treasure hunt**
+**Microsoft Treasure Hunt**
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure
 Hunt builds on the Microsoft Minesweeper for Windows Adventure mode
@@ -144,18 +144,32 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 | Windows Desktop PCs & Tablets | X | X |  |  |  |
 | Windows Mobile | X |  |  |  | X |
 | Android & iOS | X |  |  |  | X |
-| **Note**: 728x90 only available on Windows 10 |  |  |  |  |  |
-| **Microsoft Minesweeper** |  |  |  |  |  |
+> [!NOTE]
+> 728x90 only available on Windows 10.
+
+| Microsoft Minesweeper |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
-| **Microsoft Jigsaw** |  |  |  |  |  |
+
+
+| Microsoft Jigsaw |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
-| **Microsoft Sudoku** |  |  |  |  |  |
+
+| Microsoft Sudoku |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X |  |  |  |  |
-| **Microsoft Mahjong** |  |  |  |  |  |
+
+| Microsoft Mahjong |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X | X |  |  |  |
-| **Microsoft Treasure Hunt**|  |  |  |  |  |
+
+| Microsoft Treasure Hunt |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X |  | X |  |  |
-| **Microsoft Ultimate Word Game** |  |  |  |  |  |
+
+| Microsoft Ultimate Word Game |  |  |  |  |  |
+|---|---|---|---|---|---|
 | Windows Desktop PCs & Tablets | X | X |  |  |  |
 
 > [!NOTE]
@@ -169,7 +183,7 @@ There are three different ways you can target Microsoft Casual Games:
 - [Target Packages](#target-packages)
 - [Target Microsoft Casual Games through the API](#target-microsoft-casual-games-through-the-api)
 
-For information on general inventory targeting, see [Buying Microsoft Inventory](../invest/buying-microsoft-inventory.md).
+For information on general inventory targeting, see [Buying Microsoft Inventory](../monetize/buying-microsoft-inventory.md).
 
 ### Target Microsoft casual games in campaign setup
 
@@ -186,7 +200,7 @@ line item or campaign or campaign:
 1. On the **3rd Party Inventory** \>
     search **Microsoft Advertising Exchange (280)**.
 1. On the **Search for Publishers**
-    \>**Select Microsoft Casual Games
+    \>Select **Microsoft Casual Games
     (679569)**.
 1. Click **Add**.
 
@@ -213,19 +227,19 @@ Marketplace](get-deals-from-seller-packages.md):
 1. In the **Package Marketplace**, search for the package by ID or
     name.
 
-Available Microsoft Casual Games packages:
+   Available Microsoft Casual Games packages:
 
-| ID | Package |
-|---|---|
-| 6332 | Run of Microsoft Casual Games Package |
-| 6333 | Run of Microsoft Casual Games Apps Package -- Microsoft Solitaire Collection |
-| 6334 | Run of Microsoft Casual Games Apps Package -- Microsoft Jigsaw |
-| 6335 | Run of Microsoft Casual Games Apps Package -- Microsoft Mahjong |
-| 6336 | Run of Microsoft Casual Games Apps Package -- Microsoft Minesweeper |
-| 6337 | Run of Microsoft Casual Games Apps Package -- Microsoft Sudoku |
-| 6338 | Run of Microsoft Casual Games Apps Package -- Microsoft Treasure Hunt |
-| 6341 | Run of Microsoft Casual Games Apps Package -- Microsoft Bingo |
-| 6342 | Run of Microsoft Casual Games Apps Package -- Microsoft Jackpot |
+    | ID | Package |
+    |---|---|
+    | 6332 | Run of Microsoft Casual Games Package |
+    | 6333 | Run of Microsoft Casual Games Apps Package -- Microsoft Solitaire Collection |
+    | 6334 | Run of Microsoft Casual Games Apps Package -- Microsoft Jigsaw |
+    | 6335 | Run of Microsoft Casual Games Apps Package -- Microsoft Mahjong |
+    | 6336 | Run of Microsoft Casual Games Apps Package -- Microsoft Minesweeper |
+    | 6337 | Run of Microsoft Casual Games Apps Package -- Microsoft Sudoku |
+    | 6338 | Run of Microsoft Casual Games Apps Package -- Microsoft Treasure Hunt |
+    | 6341 | Run of Microsoft Casual Games Apps Package -- Microsoft Bingo |
+    | 6342 | Run of Microsoft Casual Games Apps Package -- Microsoft Jackpot |
 
 1. Click **Add to Cart**.
 

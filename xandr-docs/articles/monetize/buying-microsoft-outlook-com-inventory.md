@@ -32,7 +32,7 @@ information about adding Outlook.com creatives, see [Add a Microsoft Outlook Sky
 and add them to Xandr.
 
 > [!NOTE]
-> Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../invest/buying-microsoft-deals.md).
+> Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](../Monetize/buying-microsoft-deals.md).
 
 ## Availability and volume
 
@@ -54,7 +54,7 @@ The recommended minimum creative dimensions are 160px x 600px.
 
 ## Targeting instructions
 
-For information on general inventory targeting, see [Buying Microsoft Inventory](../invest/buying-microsoft-inventory.md) and [Domain Targeting](domain-targeting.md).
+For information on general inventory targeting, see [Buying Microsoft Inventory](../Monetize/buying-microsoft-inventory.md) and [Domain Targeting](domain-targeting.md).
 
 To target Outlook.com inventory,
 
@@ -65,7 +65,7 @@ To target Outlook.com inventory,
     included domains list.
 1. Click **Add**.
 
-For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](../invest/buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
+For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](../Monetize/buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 
 ## More questions?
 

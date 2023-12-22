@@ -86,11 +86,11 @@ MRAID.
 As an Xandr Buyer, you may still access legacy
 SDK inventory by uploading an image creative to
 Xandr and specifying a landing page. For more
-information on uploading a hosted image as a creative, see [Add Banner Creatives](https://staging.console.appnexus.com/login?redir=%2Fdocs%2Fadd-banner-creatives).
+information on uploading a hosted image as a creative, see [Add Banner Creatives](../Monetize/applying-media-types-and-templates-to-banner-creatives.md).
 
 ## Targeting instructions
 
-To target **Windows AppNetwork and/or Windows Phone AppNetwork**
+To target **Windows AppNetwork** and/or **Windows Phone AppNetwork**
 inventory by **PubID** via Standard Line Item - Campaign:
 
 1. In the **Device and Supply Type**
@@ -108,8 +108,8 @@ inventory by **PubID** via Standard Line Item - Campaign:
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** via
 Augmented Line Item - Programmatic Splits:
 
-1. Leave the default device type selected and Inventory Type should be
-    set to Apps & Web
+1. Leave the default device type selected and **Inventory Type** should be
+    set to **Apps & Web**.
 1. On the Programmatic Split – Select Publisher and add **348882** &
     **336212** for desktop and phone apps respectively for inclusion.
 1. Click **Add**.

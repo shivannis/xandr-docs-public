@@ -76,7 +76,7 @@ for reports. However, all intervals are not available for every report.
 | Campaign Code | No | The external ID of the campaign. (Does not apply to all advertisers.) |  |  |  |  |  |  |
 | Clearing Event | Yes | The underlying auction event that was transacted (e.g., impression, viewable impression, completed video). |  |  |  |  |  |  |
 | Deal | Yes | The deal associated with the impression. |  |  |  |  |  |  |
-| Direct Cleared | Yes | Whether or not the buyer pays the seller directly for the cost of media. <br> See [Table 1](#table-1)
+| Direct Cleared | Yes | Whether or not the buyer pays the seller directly for the cost of media. <br> For more details, see [Direct Cleared Table](#direct-cleared-table)
 | Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |  |  |  |  |  |  |
 | Insertion Order | Yes | The Insertion Order under which this impression was purchased. |  |  |  |  |  |  |
 | IO Code | No | The external ID of the insertion order. |  |  |  |  |  |  |
@@ -89,8 +89,8 @@ for reports. However, all intervals are not available for every report.
 | Seller | Yes | The seller of this impression. |  |  |  |  |  |  |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |  |  |  |  |  |  |
  
-### Table 1
-|  |  |  |
+### Direct Cleared Table
+|Value   |Description  |  |
 |---|---|---|
 | 0 | Xandr acts as the clearing house, collecting the cost of media from the buyer and paying the seller |  |
 | 1 | Xandr does not clear cash; the buyer pays the seller directly for the cost of media |  |

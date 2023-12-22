@@ -94,7 +94,7 @@ expand or collapse all sections at once, click the **Expand All** or
 **Collapse All** link in the upper right.
 
 > [!NOTE]
-> changing the campaign type will reset your workflow and available targeting options.
+> Changing the campaign type will reset your workflow and available targeting options.
 
 ## Step 4. Enter basic details and flight dates
 
@@ -170,7 +170,7 @@ about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
       the remainder of the flight. Therefore, this option requires that
       you enter a custom lifetime budget and select an end
       date. For more details, examples, and best
-      practices, see [lifetime-pacing](lifetime-pacing.md). 
+      practices, see [Lifetime Pacing](lifetime-pacing.md). 
   - **Unlimited** - Select this option to leave your daily budget
     undefined.
 
@@ -180,7 +180,7 @@ about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
 ## Step 6. Define the buying strategies
 
-### Buy Third-Party inventory
+### Buy third-party inventory
 
 To run the campaign on inventory from other members of the
 Xandr platform and from external partners and
@@ -213,7 +213,7 @@ information, please see [Using Performance Goals with CPM Booked Revenue](using-
 learn about setting up **Performance Goals** on the line item, see Step
 6 of [Create a Line Item](create-a-standard-line-item.md).
 
-## Pay on a Per-impression (CPM) basis
+### Pay on a Per-impression (CPM) basis
 
 Select this option to pay publishers for every impression. This payment
 type is accepted by all sellers (Xandr sellers
@@ -416,8 +416,8 @@ Xandr account representative.
 In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targeting-template.md)
  or set unique inventory and user targeting for this campaign. Use the links below to learn more about each type of targeting.
 
-- [buy-mobile-inventory-via-rtb.md#ID-00006929__p_eys_hft_1kb](#target-inventory)
-- [buy-mobile-inventory-via-rtb.md#ID-00006929__p_u1x_3ft_1kb](#target-users)
+- [Target Inventory](#target-inventory)
+- [Target Users](#target-users)
 
 When you apply multiple types of targeting (e.g., inventory, segment,
 geography, etc.), keep in mind that your campaign will buy only
@@ -427,7 +427,7 @@ target seller 123, segment ABC, and the United States, your campaign
 will bid only on impressions from that seller being viewed by users in
 that segment and in the United States.
 
-## Target inventory
+### Target inventory
 
 You can target inventory in numerous ways. Use the links below to learn
 more about each type of inventory targeting.
@@ -442,12 +442,12 @@ more about each type of inventory targeting.
 > [!NOTE]
 > The majority of mobile supply is external. Although some supply partners categorize their inventory, note that including categories will exclude all uncategorized mobile supply from your campaign.
 
-## Target users
+### Target users
 
 You can target users in numerous ways. Use the links below to learn more
 about each type of user targeting.
 
-- [device-and-supply-type-targeting](supply-type-targeting.md)
+- [Device and Supply Type Targeting](supply-type-targeting.md)
 - [Geography Targeting](geography-targeting.md)
 - [Segment Targeting](segment-targeting.md)
 - [Frequency and Recency Caps](frequency-and-recency-caps.md)
@@ -528,7 +528,7 @@ To add a new serving fee:
 Confirm that the campaign details are correct and then click the
 **Save** button to finish adding the
 campaign to Xandr. The campaign
-is then added to the list of campaigns on the (explore-campaigns.md)[Explore Campaigns] screen.
+is then added to the list of campaigns on the [Explore Campaigns](explore-campaigns.md) screen.
 
 ## Step 14. Complete peer approval
 
@@ -537,8 +537,7 @@ is then added to the list of campaigns on the (explore-campaigns.md)[Explore Cam
 
 > [!NOTE]
 > This step applies only to clients who have enabled the peer approval feature for their users. To learn more about enabling peer approval for users, see [Create a User](create-a-user.md).
-
-> [!NOTE]
+>
 > The campaign peer approval feature sets requirements for who must obtain peer approval, but not who can approve campaigns. Any other user who is able to create campaigns for your network may provide this approval. There is no way to designate a single approver of others' campaigns.
 
 If your campaigns use the peer approval feature, in order to switch a
@@ -558,7 +557,7 @@ alternate user must check the **Approved By** checkbox. Once this step
 is completed, the campaign can be set to **Active** by any user on your
 team.
 
-## Next Steps
+## Next steps
 
 Once you've created a campaign, you can view all its details on the
 [View Campaign Details](view-campaign-details.md). You can also continue associating creatives to the

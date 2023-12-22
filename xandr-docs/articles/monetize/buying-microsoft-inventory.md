@@ -24,7 +24,7 @@ brand safe environment.
 
 To target Microsoft inventory, you need to create an inventory list that
 includes the **Microsoft Advertising Exchange (280)** advertiser. See
-[Inventory Lists(ALI)](inventory-lists-ali-only.md)for full details.
+[Inventory Lists(ALI)](inventory-lists-ali-only.md) for full details.
 
 > [!NOTE]
 > **For Standard (Legacy) Line Item Targeting**

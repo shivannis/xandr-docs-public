@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Buy Mobile Inventory Directly from a Publisher
+title : Buy Mobile Inventory Directly from a Publisher
 description : Learn steps to go through to buy mobile inventory directly from a publisher. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Buy mobile inventory directly from a publisher
+# Buy mobile inventory directly from a publisher
 
 This document describes the process you have to go through to buy mobile
 inventory directly from a publisher; it involves the following steps:
@@ -37,7 +37,7 @@ on how to set up publishers and placement tags in our system, see [Create a Publ
 and [Create a Placement](create-a-placement.md).
 
 > [!NOTE]
-> When you set up your placement group, you will be prompted to select a **Supply Type** as shown in the screenshot below. The supply type you select here (**Mobile Optimized Website** or **Mobile Application**) must match the supply type you choose in your campaign. See [device-and-supply-type-targeting](supply-type-targeting.md) for more details.
+> When you set up your placement group, you will be prompted to select a **Supply Type** as shown in the screenshot below. The supply type you select here (**Mobile Optimized Website** or **Mobile Application**) must match the supply type you choose in your campaign. See [device and supply type targeting](supply-type-targeting.md) for more details.
 
 We recommend creating your publisher, placement group, and placement
 hierarchy so it reflects your integration with the publisher. For
@@ -92,7 +92,7 @@ Creating a mobile campaign involves defining:
   geography, etc.).
 
 > [!NOTE]
-> For mobile campaigns, **system targeting** is one of the most useful ways to reach users. You can include or exclude users via the types of devices they use (phone, tablet, pc), their device makes and models (i.e., Apple iPhone, HTC Droid Incredible, etc.), their operating systems, the browsers on their devices, and their mobile carriers and connection types (carrier-based or wifi/static). See [system-targeting](system-targeting.md) for details.
+> For mobile campaigns, **system targeting** is one of the most useful ways to reach users. You can include or exclude users via the types of devices they use (phone, tablet, pc), their device makes and models (i.e., Apple iPhone, HTC Droid Incredible, etc.), their operating systems, the browsers on their devices, and their mobile carriers and connection types (carrier-based or wifi/static). See [System Targeting](system-targeting.md) for details.
 
 ## Step 4. Select the advertiser
 
@@ -155,20 +155,15 @@ basic details and flight dates for the campaign.
   campaign from spending before all necessary settings and creatives are
   complete. You can set the state to "Active" at any time.
 - **Flight Dates** - Set the start for the campaign and set an end date
-  or select **Run Indefinitely**. Note
-  that the time format (12-hour or 24-hour) and time zone are inherited
-  from the advertiser. Enter or select the start and end dates and times
-  for the campaign. <b>Note:</b> of flight dates are set for the parent line
-  item, those dates take precedence; regardless of the dates set for the
-  campaign, the campaign will not start before the line item start date
-  and will not continue buying impressions after the line item end date.
-  To further limit serving to specific days and hours of the week, you
-  can use [Daypart Targeting](daypart-targeting.md)
+  or select **Run Indefinitely**. 
+ 
+  > [!NOTE]
+  > The time format (12-hour or 24-hour) and time zone are inherited from the advertiser. Enter or select the start and end dates and times for the campaign. If flight dates are set for the parent line item, those dates take precedence; regardless of the dates set for the campaign, the campaign will not start before the line item start date and will not continue buying impressions after the line item end date. To further limit serving to specific days and hours of the week, you can use [Daypart Targeting](daypart-targeting.md).
 
 ## Step 9. Set the campaign budget
 
 > [!NOTE]
-> you can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
+> You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
 By default, your campaign media **Budget** is unlimited. If you prefer,
 you can define exactly how much you are willing to spend on buying
@@ -334,7 +329,7 @@ more about each type of inventory targeting.
 You can target users in numerous ways. Use the links below to learn more
 about each type of user targeting.
 
-- [device-and-supply-type-targeting](supply-type-targeting.md)
+- [Device and Supply Type Ttargeting](supply-type-targeting.md)
 - [Geography Targeting](geography-targeting.md)
 - [Segment Targeting](segment-targeting.md)
 - [Frequency and Recency Caps](frequency-and-recency-caps.md)
