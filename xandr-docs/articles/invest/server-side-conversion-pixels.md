@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Server-Side Conversion Pixels
 description: This page makes references to an attribution server which is set up to capture the server-side pixel token data, attribute a conversion, and inform about a successful conversion.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Server-side conversion pixels
