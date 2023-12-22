@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Deal Targeting (ALI)
 description: In this article, learn how to target a specific as well as all deals available to you. You can also target deals and deal lists at the Programmable Split level.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Deal targeting (ALI)
