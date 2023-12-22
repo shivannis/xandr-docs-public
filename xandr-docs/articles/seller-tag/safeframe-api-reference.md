@@ -1,7 +1,7 @@
 ---
-title : SafeFrame API Reference
-description : SafeFrame is a managed, API-enabled iframe.
-ms.custom : seller-tag
+title: SafeFrame API Reference
+description: SafeFrame is a managed, API-enabled iframe.
+ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
