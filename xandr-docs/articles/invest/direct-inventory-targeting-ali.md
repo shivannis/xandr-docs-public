@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Direct Inventory Targeting (ALI)
 description: In this article, learn about Direct Inventory targeting (ALI) and ways to include or exclude specific managed publishers, placement groups (sites), or placements.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Direct Inventory targeting (ALI)
