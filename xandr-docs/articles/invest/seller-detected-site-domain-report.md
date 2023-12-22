@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Seller Detected Site Domain Report
 description: This report provides visibility into the actual domains that are being sold, and provides a tag or publisher level health-check.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Seller detected site domain report
