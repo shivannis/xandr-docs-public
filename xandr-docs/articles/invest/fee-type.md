@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Fee Type
 description: In this article, learn the different types of partner fees that you can create to reserve a portion of your budget.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Fee type
