@@ -252,11 +252,7 @@ Xandr currently supports the following native versions:
 > Required if using `1.1` or `1.2`. If no version is submitted, then we will default to `1.0`.
 
 > [!NOTE]
-> For more information on different OpenRTB Native Ad specifications, go to
->
-> - [Specifications for v1.0](https://xandr-be-prod.zoominsoftware.io/bundle/supply-partners/page/supply-partners/attachments/OpenRTB-Native-Ads-Specification-1_0-Final.pdf)
-> - [Specifications for v1.1](https://xandr-be-prod.zoominsoftware.io/bundle/supply-partners/page/supply-partners/attachments/OpenRTB-Native-Ads-Specification-1-1_2016.pdf)
-> - [Specifications for v1.2](https://xandr-be-prod.zoominsoftware.io/bundle/supply-partners/page/supply-partners/attachments/OpenRTB-Native-Ads-Specification-Final-1.2.pdf)
+> For more information on different OpenRTB Native Ad specifications, go to [OpenRTB Dynamic Native Ads](https://iabtechlab.com/standards/openrtb-native/) and refer to specs for v1.0, v1.1 and v1.2.
 >
 > Follow the above specifications and pass the necessary **required** fields in the mentioned objects such as asset ID (`id`) in the [Asset Object](#asset-object) described below.
 
