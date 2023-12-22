@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Switching Between User Accounts
 description: In this article, explore detailed step-by-step instructions on how to use an account switcher to switch between user accounts.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Switching between user accounts
