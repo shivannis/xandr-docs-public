@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Update Splits
-description : Learn to edit, duplicate, Activate/Deactivate, delete and remove all splits.
+title: Microsoft Invest - Update Splits
+description: Learn to edit, duplicate, Activate/Deactivate, delete and remove all splits.
+ms.date: 10/28/2023
 ---
 
 
