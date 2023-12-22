@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Targeting and Attribution Challenges
 description: In this article, explore the key challenges and problems related to mobile targeting and attribution, along with their relevant solutions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile targeting and attribution challenges
