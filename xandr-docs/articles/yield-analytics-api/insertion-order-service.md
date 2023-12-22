@@ -64,7 +64,7 @@ The service API exposes application data in a secure manner. Use of API function
     > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
     > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
 
-  :::image type="content" source="media/postman_header_variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
+  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
