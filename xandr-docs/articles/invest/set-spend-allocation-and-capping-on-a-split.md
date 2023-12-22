@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Spend Allocation and Capping on a Split
 description: This article provides steps to set spend allocation and capping on a split. Uncapped splits prioritize delivery over spend allocation.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set spend allocation and capping on a split
