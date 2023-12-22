@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Line Item Frequency and Recency Caps
 description: You can cap the number of times (*frequency*) and how often (*recency*) creatives can be shown to a given user.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set line item frequency and recency caps
