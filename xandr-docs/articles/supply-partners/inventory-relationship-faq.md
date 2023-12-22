@@ -1,6 +1,7 @@
 ---
 title: FAQ - Supply Partner Inventory relationship
-description: Frequently asked questions about inventory relationship
+description: Frequently asked questions about inventory relationship.
+ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
 
