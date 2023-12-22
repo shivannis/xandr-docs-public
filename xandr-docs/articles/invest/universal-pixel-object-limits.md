@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Universal Pixel Object Limits
-description : Learn about limits on audiences, conversions, custom events, and parameters you can create, as well as a data size limit for information transmitted by the parameters.
+title: Microsoft Invest - Universal Pixel Object Limits
+description: Learn about limits on audiences, conversions, custom events, and parameters you can create, as well as a data size limit for information transmitted by the parameters.
+ms.date: 10/28/2023
 ---
 
 
