@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Segment Targeting
 description: Learn how to target users within segments by using Boolean expressions. Users get added to segments after they've viewed or clicked a particular creative.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Segment targeting
