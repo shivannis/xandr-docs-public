@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Reporting Labels
 description: In this article, learn how to assign and run reports using reporting labels as a filter or a dimension in Member Analytics and Advertiser Analytics.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Reporting labels
