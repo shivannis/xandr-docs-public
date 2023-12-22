@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Member Settings
-description : Learn how to manage network-level settings.
+title: Microsoft Invest - Working with Member Settings
+description: Learn how to manage network-level settings.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with Member Settings
