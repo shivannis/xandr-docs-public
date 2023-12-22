@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Inventory Lists
 description: In this article, learn what inventory lists are and how to create, edit, search for, duplicate, export, and delete an inventory list.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Inventory lists
