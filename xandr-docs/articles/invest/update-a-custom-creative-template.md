@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Update a Custom Creative Template
-description : You cannot modify the standard Xandr creative templates. Learn to modify the rendering code and macros in your own custom templates.
+title: Microsoft Invest - Update a Custom Creative Template
+description: You cannot modify the standard Xandr creative templates. Learn to modify the rendering code and macros in your own custom templates.
+ms.date: 10/28/2023
 ---
 
 
