@@ -1,11 +1,11 @@
 ---
-title: API Semantics
+title: Digital Platform API - API Semantics
 description: Learn about the semantics of REST API. It also provides information on how to ask a service about itself and filter and sort information.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# API semantics
+# Digital Platform API - API semantics
 
 This page explains the semantics of our REST API. It includes information on:
 
@@ -38,7 +38,7 @@ Our API services are RESTful. REST (Representational State Transfer) is a type o
 When making a `POST` or `PUT` request, you must include a [JSON](http://json.org/) file with the data to create or update.
 
 > [!WARNING]
-> PUT overwrites arrays unless `'append=true'` is added to query string
+> `PUT` overwrites arrays unless `'append=true'` is added to query string.
 >
 > For `PUT` requests, only the fields included in the [JSON](http://json.org/) file will be updated, **except in the case of arrays**. When updating an array using `PUT`, all fields in the array are **overwritten with the contents of the new array** you upload, unless you append the following to your request query string: `"append=true"`.
 >
@@ -164,10 +164,10 @@ $ curl -b cookies -c cookies -X POST -d @auth.json 'https://api.appnexus.com/aut
 
 | Chunk of Request | What it Means |
 |:---|:---|
-| `-c cookies` | Creates a text file called "cookies" and stores your session token (assigned by the [Authentication Service](./authentication-service.md)). This is not a required argument to curl after the initial authentication, but it doesn't affect subsequent calls if it is included. |
-| `-b cookies` | Retrieves the authentication token that you previously stored in the "cookies" text file. |
-| `-X` | Indicates that you are going to make a certain type of request, in this case "POST". |
-| `-d` | Indicates that you are going to upload a file, in this case "auth.json". |
+| `-c cookies` | Creates a text file called `"cookies"` and stores your session token (assigned by the [Authentication Service](./authentication-service.md)). This is not a required argument to `curl` after the initial authentication, but it doesn't affect subsequent calls if it is included. |
+| `-b cookies` | Retrieves the authentication token that you previously stored in the `"cookies"` text file. |
+| `-X` | Indicates that you are going to make a certain type of request, in this case `"POST"`. |
+| `-d` | Indicates that you are going to upload a file, in this case `"auth.json"`. |
 | `'https://api.appnexus.com/auth'` | The URL of the service you are making the request to. Use quotes in case you have any special characters in your URL. |
 
 > [!TIP]
@@ -222,7 +222,7 @@ $ curl -b cookies 'https://api.appnexus.com/advertiser?id=3'
 
 **Filter by min and max values**
 
-Fields that are of the type int, double, date, or money can be filtered by `min` and `max`. For example:
+Fields that are of the type `int`, `double`, `date`, or `money` can be filtered by `min` and `max`. For example:
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/campaign?min_id=47'
@@ -427,7 +427,7 @@ Different fields require different types of values. The table of types below ext
 | timestamp | A date and time string in the form YYYY-MM-DD HH:MM:SS. All timezones are in UTC unless otherwise noted. | `"2009-01-14 05:41:04"` |
 | date | See timestamp above. |  |
 | object | A wrapper for any sub-fields under the current field. In the example that follows, the field `"brand"` is a multi-object. | See [example for object type](#example-for-object-type) below. |
-| array | A list containing one or more values. In our API, arrays most often contain lists of objects, integers, or strings. |See [example for array type](#example-for-array- type) below  |
+| array | A list containing one or more values. In our API, arrays most often contain lists of objects, integers, or strings. |See [example for array type](#example-for-array-type) below  |
 
 ### Example for object type
 

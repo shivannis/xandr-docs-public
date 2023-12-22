@@ -1,16 +1,17 @@
 ---
-title: Digital Platform API - API Onboarding Process
+title: API Onboarding Process
 description: Integrate with APIs by following the instructions in the API onboarding process.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
 
-# Digital Platform API - API onboarding process
+# API onboarding process
 
 Customers who plan to integrate with Xandr APIs need to complete the following steps in our API onboarding process.
 
-The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://www.xandr.com/contact-us/).
+> [!NOTE]
+> The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://www.xandr.com/contact-us/).
 
 To know more about Xandr's APi go to, [Reference](./reference.md) page.
 
@@ -23,8 +24,8 @@ The first step you must take to begin using the Xandr API is to [contact the su
 
 When you open your support ticket, use the title "Request for API Access". In the body of the support ticket, include the following information:
 
-- the numeric ID of the *user* that requires API access
-- the billing name and numeric ID of the *member* under which that user exists
+- The numeric ID of the *user* that requires API access.
+- The billing name and numeric ID of the *member* under which that user exists.
 
 The support team cannot grant access to clients who are not platform UI or Invest users. If you are a customer with users who would like access to the API, contact the Platform Integrations team for your business unit.
 

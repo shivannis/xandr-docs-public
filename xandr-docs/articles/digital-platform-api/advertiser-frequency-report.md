@@ -38,7 +38,7 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `advertiser_name` | string | The name of the advertiser.<br>Example: `"Verizon Wireless"`<br><br>**Group**: No<br>**Filter**: No |
 | `advertiser` | string | **Deprecated** (as of October 17, 2016). |
 | `insertion_order_name` | string | The name of the insertion order.<br><br>**Group**: No<br>**Filter**: No |
-| insertion_order_code | string | The custom code for the insertion order.<br>Group: No<br>Filter: No |
+| i`nsertion_order_code` | string | The custom code for the insertion order.<br>**Group**: No<br>**Filter**: No |
 | `line_item_name` | string | The name of the line item.<br>Example: `"Default Line Item"`<br><br>**Group**: No<br>**Filter**: No |
 | `line_item_code` | string | The custom code for the line item.<br><br>**Group**: No<br>**Filter**: No |
 | `insertion_order` | string | **Deprecated** (as of October 17, 2016). |

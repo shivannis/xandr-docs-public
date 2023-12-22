@@ -24,7 +24,7 @@ This service allows app developers to install apps on client systems.
 | Field | Type | Description |
 |:---|:---|:---|
 | `accepted_permissions` | boolean | Indicates whether permission was received to access the areas required by the app for use. |
-| `addendum` | string | This contains the text of the agreement that appears when a user installs the app. This field can be edited using the Markdown markup language. |
+| `addendum` | string | This contains the text of the agreement that appears when a user installs the app. This field can be edited using the **Markdown** markup language. |
 | `has_payment_access` | boolean | Indicates whether payment terms and fees can be applied to this app.<br>**Read-only**.<br>**Default**: `true` |
 | `id` | int | The unique identification number of each installation instance.<br>**Required**: `PUT` and `DELETE` |
 | `installed_on` | timestamp | The date and time that this app was installed by the user.<br>**Read-only** |
@@ -44,10 +44,10 @@ Each object in the `permissions` array contains the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `privileges` | array of objects | The types of calls that the app can make to the API service and the specific fields that can be used. See [Example (priviledges)](#example-priviledges)<br>Within each object, `method` defines the calls that can be made to the service (`"get"`, `"post"`, `"put"`, or `"delete"`), and `fields` restricts the permissions to particular fields in the service. If `fields` is `null`, the permissions apply to all fields in the service. Note that use of the `"delete"` method must be approved by a Xandr representative. |
+| `privileges` | array of objects | The types of calls that the app can make to the API service and the specific fields that can be used. See [Example (privileges)](#example-privileges)<br>Within each object, `method` defines the calls that can be made to the service (`"get"`, `"post"`, `"put"`, or `"delete"`), and `fields` restricts the permissions to particular fields in the service. If `fields` is `null`, the permissions apply to all fields in the service. Note that use of the `"delete"` method must be approved by a Xandr representative. |
 | `service` | enum | The name of the API service that the app is permitted to use. |
 
-#### Example (`priviledges`)
+#### Example (`privileges`)
 
 ```
 {

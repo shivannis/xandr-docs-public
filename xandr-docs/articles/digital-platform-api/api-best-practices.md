@@ -29,7 +29,7 @@ Filtering allows you to specify a subset of objects to be returned. For example,
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?state=active'
 ```
 
-For fields of the type int, double, date, or money, you can append `min_` or `max_` to the filter. For example, the following request would return only line items that have been modified on or after January 1, 2013:.
+For fields of the type int, double, date, or money, you can append `min_` or `max_` to the filter. For example, the following request would return only line items that have been modified on or after January 1, 2013.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?min_last_modified=2019-01-01+00:00:00'
@@ -247,7 +247,7 @@ For authentication instructions, see [Authentication Service](./authentication-
 
 ### Don't pull all reports at the same time
 
-This can cause the reporting backend to be overloaded, resulting in delayed reports, and can even impact reports that are run later in the day. For more information see the **Report Throttling** section of the [Report Service](./report-service.md] page.
+This can cause the reporting backend to be overloaded, resulting in delayed reports, and can even impact reports that are run later in the day. For more information see the **Report Throttling** section of the [Report Service](./report-service.md) page.
 
 ### Don't make bulk requests to the reporting service
 
@@ -257,4 +257,5 @@ For instance, if you are requesting reports once per hour for every advertiser a
 
 For more information on all of the available reports and their fields, see the API documentation on the [Reporting Service](./report-service.md).
 
-If you find that higher level reports do not fulfill your needs, consider making use of the [Bulk Reporting Feeds](./bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md).
+> [!TIP]
+> If you find that higher level reports do not fulfill your needs, consider making use of the [Bulk Reporting Feeds](./bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md).

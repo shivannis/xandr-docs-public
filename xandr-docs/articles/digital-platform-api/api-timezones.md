@@ -12,20 +12,20 @@ The default timezone for members is EST5EDT (U.S. Eastern Time -4/-5 UTC dependi
 Reporting currently defaults to Eastern Time except for Network Billing, which is in UTC, but you can manually choose the timezone on any report.
 
 > [!WARNING]
-> Non-integer timezones are not supported.
-
-Non-integer timezones are not supported by our system. This applies everywhere timezones are used, including reporting. Unsupported timezones include:
-
-- America/Caracas
-- America/St_Johns
-- Asia/Tehran
-- Asia/Kabul
-- Asia/Kolkata
-- Asia/Katmandu
-- Indian/Cocos
-- Australia/Adelaide
-
-For more examples of non-integer timezones, see this [List of UTC time offsets](https://en.wikipedia.org/wiki/List_of_UTC_time_offsets) (search for ":30" for examples).
+> **Non-integer timezones are not supported**
+>
+>Non-integer timezones are not supported by our system. This applies everywhere timezones are used, including reporting. Unsupported timezones include:
+>
+> - America/Caracas
+> - America/St_Johns
+> - Asia/Tehran
+> - Asia/Kabul
+> - Asia/Kolkata
+> - Asia/Katmandu
+> - Indian/Cocos
+> - Australia/Adelaide
+>
+> For more examples of non-integer timezones, see this [List of UTC time offsets](https://en.wikipedia.org/wiki/List_of_UTC_time_offsets) (search for ":30" for examples).
 
 ## Member service
 
