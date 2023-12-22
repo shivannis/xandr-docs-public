@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - April 11, 2023 - GA for Creative Manager
 description: Explore the customizable user interface designed to identify creative error alerts and simplify the troubleshooting process within the Creative Manager.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - April 11, 2023 - GA for Creative Manager
