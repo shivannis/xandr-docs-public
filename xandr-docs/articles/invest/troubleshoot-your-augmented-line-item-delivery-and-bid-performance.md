@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot Your Augmented Line Item Delivery and Bid Performance
 description: In this article, explore detailed steps to troubleshoot and enhance Augmented Line Item (ALI) delivery, bid performance, and impression count.
+ms.date: 10/28/2023
 ---
 
 # Troubleshoot your augmented line item delivery and bid performance
