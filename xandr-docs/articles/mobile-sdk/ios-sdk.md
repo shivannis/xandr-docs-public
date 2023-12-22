@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # iOS SDK
 
-Xandr's Mobile SDK for iOS provides an end-to-end solution for mobile app publishers. Use this library to request and receive bids over RTB. These bids can also compete, through mediation, directly with bids from other ad servers.
+Xandr's Mobile SDK for iOS provides an end-to-end solution for mobile app publishers. Use this solution to request and receive bids over RTB. These bids can also compete, through mediation, directly with bids from other ad servers.
 
 | Sections | Description |
 |:---|:---|
