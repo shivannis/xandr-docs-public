@@ -1,7 +1,7 @@
 ---
-title : Data Science Toolkit - Custom Models
-description : Learn about Custom Models, how Bid Value and Expected Value are derived and lists the different types of Custom Models.
-ms.custom : data-science
+title: Data Science Toolkit - Custom Models
+description: Learn about Custom Models, how Bid Value and Expected Value are derived and lists the different types of Custom Models.
+ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
