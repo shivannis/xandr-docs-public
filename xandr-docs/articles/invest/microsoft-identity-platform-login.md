@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Identity Platform Login
 description: In this article, explore an overview of authenticating users for advertising products using Microsoft Identity Platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Identity Platform login
