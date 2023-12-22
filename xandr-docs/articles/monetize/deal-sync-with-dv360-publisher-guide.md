@@ -1,12 +1,12 @@
 ---
-title : Microsoft Monetize -  Deal Sync with DV360 (Publisher Guide)
+title : Microsoft Monetize -  Publisher Guide for Deal Sync with DV360 
 description : Learn all about Xandr's integration with the Display Video 360
 (DV360) Seller API. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize -  Deal sync with DV360 (Publisher guide)
+# Microsoft Monetize -  Publisher guide for deal sync with DV360 
 
 > [!NOTE]
 > This feature is in **Closed Beta**. It is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test.

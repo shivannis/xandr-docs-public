@@ -15,7 +15,7 @@ Xandr has one API that is shared across all
 digital platform products. Refer to the following resources to learn
 more about the API and the services that are available.
 
-- [Digital Platform API](../digital-platform-api/digital-platform-api-home)
+- [Digital Platform API](../digital-platform-api/digital-platform-api-home.md)
 - [Getting Started with the API](../digital-platform-api/api-getting-started.md)
 - [Buy-Side Setup Guide](../digital-platform-api/buy-side-setup-with-the-augmented-line-item.md)
 - [Sell-Side Setup Guide](../digital-platform-api/sell-side-setup.md)
