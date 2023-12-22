@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up a Combined Segment and Conversion Pixel
 description: Use segment targeting to exclude converters and increase ROI by creating a combined Segment and Conversion pixel for advertisers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up a combined segment and conversion pixel
