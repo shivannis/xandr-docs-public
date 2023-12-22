@@ -1,6 +1,7 @@
 ---
 title: Duplicate an Insertion Order
 description: In this article, follow our step-by-step instructions to duplicate an insertion order with all of its child line items and splits in Microsoft Invest.
+ms.date: 10/28/2023
 ---
 
 # Duplicate an insertion order
