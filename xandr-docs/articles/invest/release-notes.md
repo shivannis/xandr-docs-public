@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Release Notes
 description: In this article, explore the latest updates to Microsoft Invest.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Release notes
