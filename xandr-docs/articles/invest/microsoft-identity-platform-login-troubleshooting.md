@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Identity Platform Login Troubleshooting
 description: In this article, explore the different scenarios where users might have questions while using the Microsoft Identity Platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Identity Platform login troubleshooting
