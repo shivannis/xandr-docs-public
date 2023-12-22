@@ -1,11 +1,11 @@
 ---
-title: Updated Impression Counting Mechanism - Mobile SDK v8.0 and above
+title: Impression Counting Mechanism - Mobile SDK v8.0 and above
 description: This article describes the updated impression counting mechanism for the Mobile SDK. This change will be included in Xandr’s Mobile SDK version 8.0 and above.
 ms.custom: android-sdk, ios-sdk
 ms.date : 10/28/2023
 ---
 
-# Updated impression counting mechanism - mobile SDK v8.0 and above
+# Impression Counting Mechanism - Mobile SDK v8.0 and above
 
 As the advertising industry recognizes the need to move away from “begin to render” to visibility-based impressions, we have updated our mobile SDK in-app impression counting to account for ad container visibility.The move to counting based on ad container visibility strengthens the definition of an impression equating to an ad seen by the user on their device. This change is included in Xandr’s Mobile SDK v8.0 and above.
 
