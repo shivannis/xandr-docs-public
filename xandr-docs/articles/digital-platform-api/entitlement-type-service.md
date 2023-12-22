@@ -1,171 +1,40 @@
 ---
-Title : Entitlement Type Service
-Description : The **entitlement-type** service allows you to define a code that will
+title: Entitlement Type Service
+description: The entitlement-type service enables assigning specific code features to members through the member service, such as keyword targeting or deal discovery.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-be assigned to members through the <a
-href="member-service.md"
 ---
 
+# Entitlement type service
 
-# Entitlement Type Service
-
-
-
-The **entitlement-type** service allows you to define a code that will
-be assigned to members through the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>. This code is used to
-provide certain features for only specific members. For example, we
-might have members who are allowed to do keyword targeting or deal
-discovery. After using this service to create entitlement types, you can
-assign one or more entitlement types to a member.
-
-
+The **entitlement-type** service allows you to define a code that will be assigned to members through the [Member Service](./member-service.md). This code is used to provide certain features for only specific members. For example, we might have members who are allowed to do keyword targeting or deal discovery. After using this service to create entitlement types, you can assign one or more entitlement types to a member.
 
 ## REST API
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002363__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002363__entry__2"
-class="entry colsep-1 rowsep-1">Enpoints</th>
-<th id="ID-00002363__entry__3"
-class="entry colsep-1 rowsep-1">Descriptions</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__2">https://api.<span
-class="ph">appnexus.com/entitlement-type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__3"><p>View all entitlement types</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__2">https://api.<span
-class="ph">appnexus.com/entitlement-type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__3"><br />
-Create an entitlement type</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__2">https://api.<span
-class="ph">appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__3">Modify an entitlement type</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__2">https://api.<span
-class="ph">appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__3">Delete an entitlement type</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Enpoints | Descriptions |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/entitlement-type | View all entitlement types |
+| `POST` | https://api.appnexus.com/entitlement-type | Create an entitlement type |
+| `PUT` | https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID | Modify an entitlement type |
+| `DELETE` | https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID | Delete an entitlement type |
 
-
-
-
-
-## JSON Fields
+## JSON fields
 
 **General**
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002363__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002363__entry__17" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00002363__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002363__entry__18">The
-ID of the entitlement type. This value is auto-generated on <code
-class="ph codeph">POST</code>.
-<p><strong>Default:</strong> Auto-generated number.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__16">code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002363__entry__18">The
-code associated with the entitlement. This value is set by the engineer
-and should be provided by them.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__16"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__17">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002363__entry__18">A
-description of the entitlement. This value is optional and has no effect
-on the actual entitlement. Description is the only field that can be
-modified after the entitlement type has been created.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__16"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__17">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002363__entry__18">The
-date and time the entitlement was created.
-<p><strong>Default:</strong> Auto-generated on creation.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__16"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002363__entry__17">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002363__entry__18">The
-date and time the entitlement was last modified.
-<p><strong>Default:</strong> Auto-generated at each
-modification.</p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the entitlement type. This value is auto-generated on `POST`.<br><br>**Default**: Auto-generated number. |
+| `code` | string | The code associated with the entitlement. This value is set by the engineer and should be provided by them. |
+| `description` | object | A description of the entitlement. This value is optional and has no effect on the actual entitlement. Description is the only field that can be modified after the entitlement type has been created. |
+| `created_on` | timestamp | The date and time the entitlement was created.<br><br>**Default**: Auto-generated on creation. |
+| `last_activity` | timestamp | The date and time the entitlement was last modified.<br><br>**Default**: Auto-generated at each modification. |
 
+## Examples
 
+### View all entitlement types
 
-
-
-##  Examples
-
-**View all entitlement types**
-
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/entitlement-type'
 {
     "response": {
@@ -207,11 +76,9 @@ $ curl -b cookies 'https://api.appnexus.com/entitlement-type'
 }
 ```
 
+### Create an entitlement type
 
-
-**Create an entitlement type**
-
-``` pre
+```
 $cat entitlement_type.json
 {
     "entitlement-type": {
@@ -221,9 +88,7 @@ $cat entitlement_type.json
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -X POST -d @entitlement_type.json 'https://api.appnexus.com/entitlement-type'
 {
     "response": {
@@ -242,11 +107,9 @@ $ curl -b cookies -X POST -d @entitlement_type.json 'https://api.appnexus.com/en
 }
 ```
 
+### Modify an entitlement type
 
-
-**Modify an entitlement type**
-
-``` pre
+```
  $cat entitlement_type_update.json
 
 {
@@ -256,9 +119,7 @@ $ curl -b cookies -X POST -d @entitlement_type.json 'https://api.appnexus.com/en
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies -X POST -d @entitlement_type_update.json 'https://api.appnexus.com/entitlement-type?id=1'
 {
     "response": {
@@ -277,19 +138,6 @@ $ curl -b cookies -X POST -d @entitlement_type_update.json 'https://api.appnexus
 }
 ```
 
+## Related topic
 
-
-
-
-##  Related Topics
-
-- <a
-  href="member-service.md"
-  class="xref" target="_blank">Member Service</a>  
-    
-
-
-
-
-
-
+[Member Service](./member-service.md)
