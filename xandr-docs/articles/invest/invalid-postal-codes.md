@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Invalid Postal and ZIP Codes
 description: In this article, learn why some real ZIP or postal codes can be marked as invalid within the Xandr geography targeting system.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Invalid postal and ZIP codes
