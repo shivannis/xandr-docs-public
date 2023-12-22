@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Role Capabilities
 description: In this article, explore role capabilities, detailing specific permissions, actions, and privileges for custom roles within the system.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Role capabilities
