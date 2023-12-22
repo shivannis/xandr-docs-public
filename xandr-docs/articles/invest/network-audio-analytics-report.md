@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Audio Analytics Report
 description: Use this report to view audio event metrics across multiple buyers and sellers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member audio analytics report
