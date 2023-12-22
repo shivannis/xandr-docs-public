@@ -13,7 +13,7 @@ ms.date: 10/28/2023
 
 Xandr supports the OpenRTB 2.4 specification for receiving all media type impressions. For certain legacy mobile integrations, Xandr is still backwards-compatible with the OpenRTB 2.2 spec. For any new types of integrations, please follow the [OpenRTB 2.4 specification](./openrtb-specs.md).
 
-**What is the mosXat current version of VPAID and MRAID you support?**
+**What is the most current version of VPAID and MRAID you support?**
 
 Xandr video currently supports VPAID versions 1 and 2 and VAST 1, 2, and 3. We currently support MRAID version 2.0. for mobile. We are backwards-compatible with OpenRTB versions 2.2 and 2.3.
 
