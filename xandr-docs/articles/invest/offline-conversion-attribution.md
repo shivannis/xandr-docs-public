@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Offline Conversion Attribution
-description : Learn about Offline Conversion Attribution in this article.
+title: Microsoft Invest - Offline Conversion Attribution
+description: Learn about Offline Conversion Attribution in this article.
+ms.date: 10/28/2023
 ---
 
 
