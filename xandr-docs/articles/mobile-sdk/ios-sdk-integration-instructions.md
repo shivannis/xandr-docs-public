@@ -126,9 +126,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 
 ### XCFramework
 
-1. Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
-
-  **AppNexusSDK.xcframework.zip** contains **AppNexusSDK.xcframework**, **AppNexusNativeSDK.xcframework**, and **OMSDK\_AppNexus.xcframework**.
+1. Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases). **AppNexusSDK.xcframework.zip** contains **AppNexusSDK.xcframework**, **AppNexusNativeSDK.xcframework**, and **OMSDK\_AppNexus.xcframework**.
 2. Open the app’s Xcode project or workspace.
 3. Go to the app target’s **General** configuration page.
 4. To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
