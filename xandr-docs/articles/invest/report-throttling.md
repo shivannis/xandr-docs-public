@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Report Throttling
 description: In this article, explore detailed information about report throttling, the limits, and how they are applied at both the member and user levels.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Report throttling
