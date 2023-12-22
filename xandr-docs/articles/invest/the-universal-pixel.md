@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - The Universal Pixel
 description: Learn about the universal pixel, which offers centralized data collection across multiple web pages for thorough ad campaign analysis and optimization.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - The universal pixel
