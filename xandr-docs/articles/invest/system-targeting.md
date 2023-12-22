@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - System Targeting
 description: In this article, learn how to target users based on their operating systems, browsers, language, device model, or carrier.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - System targeting
