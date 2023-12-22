@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Native Creatives
 description: Publishers can integrate native creatives seamlessly into websites and mobile apps using any of formats such as video, audio, banner, carousel, and app install.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Native creatives
