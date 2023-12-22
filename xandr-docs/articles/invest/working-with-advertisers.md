@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Advertisers
-description : Learn more about working with advertisers
+title: Microsoft Invest - Working with Advertisers
+description: Learn more about working with advertisers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with advertisers
