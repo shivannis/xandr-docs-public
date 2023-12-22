@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - vCPM Payment Type
 description: Viewable CPM is a payment type where buyers pay only for viewable impressions. Impressions don't incur a cost until a post-auction event, after which buyers pay the full value of the vCPM bid.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - vCPM payment type
