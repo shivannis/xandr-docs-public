@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Troubleshooting VAST Creative Display Issues
 description: In this article, learn essential best practices and effective techniques to troubleshoot and resolve VAST creative display issues.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Troubleshooting VAST creative display issues
