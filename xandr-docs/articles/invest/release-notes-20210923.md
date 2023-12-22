@@ -1,6 +1,7 @@
 ---
 title: September 23, 2021 - Demographic Measuring with Nielsen Digital Ad Ratings
 description: Find the release note for the new measurement feature introduced - Nielsen Digital Ad Ratings (DAR). 
+ms.date: 10/28/2023
 ---
 
 # September 23, 2021: Demographic measuring with Nielsen Digital Ad Ratings (DAR)
