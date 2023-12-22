@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Partner Fees
-description : Learn how if you need to reserve a portion of your budget for third-party costs you can define it with partner fees.
+title: Microsoft Invest - Partner Fees
+description: Learn how if you need to reserve a portion of your budget for third-party costs you can define it with partner fees.
+ms.date: 10/28/2023
 ---
 
 
