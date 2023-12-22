@@ -133,7 +133,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 3. Go to the app target’s **General** configuration page.
 4. To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
 Or to use **AppNexusNativeSDK SDK**, add the **AppNexusNativeSDK.xcframework** and **OMSDK\_.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-e.png" alt-text="Screenshot of the General configuration screen.":::
+   [Screenshot of the General configuration screen](media/ios-sdk-integration-instructions-e.png) 
 5. Select **Add Files** from the drop-down and navigate to location where you have the unzipped **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** folders.
    :::image type="content" source="media/ios-sdk-integration-instructions-f.png" alt-text="Screenshot of the Add Files screen.":::
 6. Select the unzipped folders and click **Open**.
