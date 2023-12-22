@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Run Rich Media Creatives on Mobile Inventory
 description: In this article, learn how to configure your rich media creatives for mobile device delivery, including a list of supported media types for major sellers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Run rich media creatives on mobile inventory
