@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Testing Client-Side Impression Tracking
 description: Learn the detailed steps and best practices to ensure accurate and reliable client-side impression tracking in your campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Testing client-side impression tracking
