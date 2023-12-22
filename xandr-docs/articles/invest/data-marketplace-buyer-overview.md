@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Data Marketplace Buyer Overview
 description: In this article, explore the data marketplace, its partners, workflow, various data usage reports, and frequently asked questions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Data Marketplace buyer overview
