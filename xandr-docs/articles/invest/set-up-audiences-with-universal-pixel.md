@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Audiences with Universal Pixel
 description: This article provides instructions to set up audiences with universal pixel by using rules and conditions. You can then target the audience segments of your line item.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up audiences with universal pixel
