@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Foreign Exchange Margin
 description: Foreign exchange margin charges clear media costs in non-USD currencies. This offsets the risk of currency fluctuations during buying or selling activity.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Foreign exchange margin
