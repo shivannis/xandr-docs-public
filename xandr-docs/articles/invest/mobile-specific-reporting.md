@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile-Specific Reporting
 description: In this article, explore mobile-specific reports, such as the Device Analytics report, the Carrier Analytics report, and the Member Site Domain Performance report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile-specific reporting
