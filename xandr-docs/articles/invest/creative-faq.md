@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Creative FAQ
-description : Learn about issues with creatives and how to resolve those issues.
+title: Microsoft Invest - Creative FAQ
+description: Learn about issues with creatives and how to resolve those issues.
 ms.date: 10/28/2023
 ---
 
