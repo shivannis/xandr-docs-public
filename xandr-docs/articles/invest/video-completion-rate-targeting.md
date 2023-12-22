@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Completion Rate Targeting
 description: Use the option to buy only video impressions that are predicted to be viewed to completion. Historical information is collected to predict completion probability.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video completion rate targeting
