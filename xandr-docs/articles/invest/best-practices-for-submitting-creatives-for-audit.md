@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest -  Creative Audit Best Practices
-description :  Learn the best practices for reducing the creative audit turn around time.
+title: Microsoft Invest -  Creative Audit Best Practices
+description:  Learn the best practices for reducing the creative audit turn around time.
 ms.date: 10/28/2023
 ---
 
