@@ -1,7 +1,7 @@
 ---
-title : Set Keywords
-description : Learn about this function that sets the keywords for the specified `targetId`.
-ms.custom : seller-tag
+title: Set Keywords
+description: Learn about this function that sets the keywords for the specified `targetId`.
+ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
