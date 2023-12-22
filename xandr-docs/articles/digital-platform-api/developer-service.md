@@ -1,217 +1,43 @@
 ---
-Title : Developer Service
-Description : This service contains the address and billing information for each
+title: Developer Service
+description: Use the developer service to get the address and billing information for each developer as reference information.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-developer as reference information. While developers can modify or
 ---
 
+# Developer service
 
-# Developer Service
-
-
-
-This service contains the address and billing information for each
-developer as reference information. While developers can modify or
-delete their entries, only administrative users can create a new
-developer with this service. For help creating a developer entry,
-contact your Xandr representative.
-
-
+This service contains the address and billing information for each developer as reference information. While developers can modify or delete their entries, only administrative users can create a new developer with this service. For help creating a developer entry, contact your Xandr representative.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000d90__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00000d90__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00000d90__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__2"><a
-href="https://api.appnexus.com/developer" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/developer</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__3">View
-all developers</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__2"><a
-href="https://api.appnexus.com/developer?id=15" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/developer?id=15</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__3">View
-a specific developer</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__2"><a
-href="https://api.appnexus.com/developer" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/developer</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__3">Add
-a developer: (Xandr admin only)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__2"><a
-href="https://api.appnexus.com/developer?id=19" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/developer?id=19</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__3">Modify a developer</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__2"><a
-href="https://api.appnexus.com/developer?id=19" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/developer?id=19</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__3">Delete an developer</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/developer | View all developers |
+| `GET` | https://api.appnexus.com/developer?id=15 | View a specific developer |
+| `POST` | https://api.appnexus.com/developer | Add a developer: (Xandr admin only) |
+| `PUT` | https://api.appnexus.com/developer?id=19 | Modify a developer |
+| `DELETE` | https://api.appnexus.com/developer?id=19 | Delete an developer |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000d90__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000d90__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000d90__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_address_1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-first line of the developer address.<strong>Required on</strong>: <code
-class="ph codeph">POST</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_address_2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-second line of the developer address.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_city</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-city in which the developer resides.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_country</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-country in which the developer lives.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_region</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-region in which the developer resides.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">billing_postal_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-developer ZIP code.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">email</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-developer email address.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">date</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-date and time on which this information was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__19"><code
-class="ph codeph">phone</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000d90__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000d90__entry__21">The
-developer contact phone number.<strong>Required on</strong>: <code
-class="ph codeph">POST</code></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `billing_address_1` | string | The first line of the developer address.<br>**Required on**: `POST` |
+| `billing_address_2` | string | The second line of the developer address.<br>**Default**: `null` |
+| `billing_city` | string | The city in which the developer resides.<br>**Required on**: `POST` |
+| `billing_country` | string | The country in which the developer lives.<br>**Required on**: `POST` |
+| `billing_region` | string | The region in which the developer resides.<br>**Required on**: `POST` |
+| `billing_postal_code` | string | The developer ZIP code.<br>**Required on**: `POST` |
+| `email` | string | The developer email address.<br>**Required on**: `POST` |
+| `last_modified` | date | The date and time on which this information was last modified. |
+| `phone` | string | The developer contact phone number.<br>**Required on**: `POST` |
 
 ## Examples
 
-**Add a developer**
+### Add a developer
 
-``` pre
+```
 $ cat add-developer.json
 {
     "developer":
@@ -257,9 +83,9 @@ $ curl -b cookies -c cookies -X POST -d @add-developer.json 'https://api.appnexu
 }
 ```
 
-**Modify a developer**
+### Modify a developer
 
-``` pre
+```
 $ cat update-developer.json
 {
     "developer":
@@ -297,9 +123,9 @@ $ curl -b cookies -c cookies -X PUT -d @update-developer.json 'https://api.appne
 }
 ```
 
-**View all developers**
+### View all developers
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/developer'                                             
 {
     "response":{
@@ -345,9 +171,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/developer'
 }
 ```
 
-**View a specific developer**
+### View a specific developer
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/developer?id=15'
 {
     "response":{
@@ -376,9 +202,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/developer?id=15'
 }
 ```
 
-**Delete a developer**
+### Delete a developer
 
-``` pre
+```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/developer?id=19'
 {
     "response":{
@@ -393,17 +219,6 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/developer?id=19
 }
 ```
 
+## Related topic
 
-
-
-
-## Related topics
-
-- <a href="app-installation-service.md" class="xref">App Installation
-  Service</a>
-
-
-
-
-
-
+[App Installation Service](./app-installation-service.md)

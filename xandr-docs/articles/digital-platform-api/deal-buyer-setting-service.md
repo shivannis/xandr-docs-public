@@ -1,345 +1,49 @@
 ---
-Title : Deal Buyer Setting Service
-Description : The Deal Buyer Setting Service lets buyers give deals an internal alias
+title: Deal Buyer Setting Service
+description: Learn about the deal buyer setting service. It allows buyers to give deals an alias and assign a status, giving them more control.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-for clarity in the UI and assign a status to deals so buyers have more
-control over which deals they’re targeting. Note that these deal
 ---
 
+# Deal buyer setting service
 
-# Deal Buyer Setting Service
+The Deal Buyer Setting Service lets buyers give deals an internal alias for clarity in the UI and assign a status to deals so buyers have more control over which deals they’re targeting. Note that these deal settings are only available to the buyers who created them and are not visible to the seller of the deal.
 
-
-
-The Deal Buyer Setting Service lets buyers give deals an internal alias
-for clarity in the UI and assign a status to deals so buyers have more
-control over which deals they’re targeting. Note that these deal
-settings are only available to the buyers who created them and are not
-visible to the seller of the deal.
-
-
-
-<b>Note:</b> Buyers can use the <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a> to view the
-deals available to them and the `deal_targets`field in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a> to target them. Sellers
-can use the
-<a href="deal-service.md"
-class="xref" target="_blank">Deal Service</a> to set up and manage
-deals.
-
-
-
-
+> [!NOTE]
+> Buyers can use the [Deal Buyer Access Saervice](./deal-buyer-access-service.md) to view the deals available to them and the `deal_targets`field in the [Profile Service](./profile-service.md) to target them. Sellers can use the [Deal Service](./deal-service.md) to set up and manage deals.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/deal-buyer-setting | View all of your deal settings. |
+| `GET` | https://api.appnexus.com/deal-buyer-setting?id=ID | View a specific deal setting. |
+| `GET` | https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID | View the settings for a specific deal. |
+| `GET` | https://api.appnexus.com/deal-buyer-setting?id=1,2,3 | View multiple deal settings by ID using a comma-separated list. |
+| `GET` | https://api.appnexus.com/deal-buyer-setting/meta | Find out which fields you can filter and sort by. |
+| `POST` | https://api.appnexus.com/deal-buyer-setting | Add settings for a deal. |
+| `PUT` | https://api.appnexus.com/deal-buyer-setting?id=ID | Modify settings for a deal. |
 
+## JSON fields
 
-<table
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-all of your deal settings.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?id=ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-a specific deal setting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-the settings for a specific deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?id=1,2,3</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-multiple deal settings by ID using a comma-separated list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting/meta" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting/meta</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-settings for a deal.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/deal-buyer-setting?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?id=ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-settings for a deal.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-## JSON Fields
-
-
-
-<table
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">acceptance_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-status of the deal: <code class="ph codeph">active</code>, <code
-class="ph codeph">inactive</code>, <code
-class="ph codeph">declined</code>, and <code
-class="ph codeph">pending</code>.</p>
-
-class="note note_note">
-<b>Note:</b> <code
-class="ph codeph">pending</code> status is not allowed in a PUT request
-
-
-<ul>
-<li><strong>Default:</strong> The default for this field depends on the
-value of the <code class="ph codeph">member.default_accept_deals</code>
-field (see <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>). If <code
-class="ph codeph">member.default_accept_deals</code> is <code
-class="ph codeph">true</code>, the default for <code
-class="ph codeph">acceptance_status</code> is <code
-class="ph codeph">active</code>; if <code
-class="ph codeph">member.default_accept_deals</code> is <code
-class="ph codeph">false</code>, the default for <code
-class="ph codeph">acceptance_status</code> is <code
-class="ph codeph">pending</code>.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">buyer_bidder_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-bidder ID of the member. For buyers, this will always be 2.</p>
-<ul>
-<li><strong>Read Only</strong></li>
-<li><strong>Default:</strong> <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">buyer_member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the member who can buy the deal. A deal will either be set up with
-a buyer member ID or a buyer seat code. This is your Xandr member
-ID.</p>
-<ul>
-<li><strong>Read Only</strong></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">buyer_seat_code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-code of the buyer seat who can buy the deal. A deal will either be set
-up with a buyer member ID or a buyer seat code. This is your Xandr
-member ID.</p>
-<ul>
-<li><strong>Read Only</strong></li>
-<li><strong>Default:</strong> <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">comments</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(65534)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p><strong>Not
-yet being used by the UI.</strong> The custom comments to display in the
-UI for the deal.</p>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">deal_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the deal to which the settings apply.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">deal_alias</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string
-(254)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-alias of the deal, as it will appear in the UI.</p>
-<ul>
-<li><strong>Default:</strong> <code class="ph codeph">null</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the deal settings</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></li>
-<li><strong>Default:</strong> auto-incremented number.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `acceptance_status` | string | The status of the deal: <br> - `active` <br> - `inactive` <br> - `declined` <br> - `pending`<br><br>**Note**: `pending` status is not allowed in a `PUT` request<br><br>**Default**: The default for this field depends on the value of the `member.default_accept_deals` field (see [Member Service](./member-service.md)). If `member.default_accept_deals` is `true`, the default for `acceptance_status` is `active`; if `member.default_accept_deals` is `false`, the default for `acceptance_status` is `pending`. |
+| `buyer_bidder_id` | int | The bidder ID of the member. For buyers, this will always be `2`.<br><br>**Read Only**<br>**Default**: `null` |
+| `buyer_member_id` | int | The ID of the member who can buy the deal. A deal will either be set up with a buyer member ID or a buyer seat code. This is your Xandr member ID.<br><br>**Read Only** |
+| `buyer_seat_code` | string | The code of the buyer seat who can buy the deal. A deal will either be set up with a buyer member ID or a buyer seat code. This is your Xandr member ID.<br><br>**Read Only**<br>**Default**: `null` |
+| `comments` | string (65534) | **Not yet being used by the UI**. The custom comments to display in the UI for the deal.<br><br>**Default**: `null` |
+| `deal_id` | int | The ID of the deal to which the settings apply.<br><br>**Required On**: `POST` |
+| `deal_alias` | string (254) | The alias of the deal, as it will appear in the UI.<br>**Default**: `null` |
+| `id` | int | The ID of the deal settings<br><br>**Required On**: `PUT`<br>**Default**: auto-incremented number. |
 
 ## Examples
 
-**Add deal setting**
+### Add deal setting
 
-If a deal-buyer-setting object has already been created for the deal,
-the POST request will return the following error message:
-"`The buyer_member_id, deal_id combination was not unique.`" To modify
-this deal-buyer-setting, first make a GET
-<a href="https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID</a>
-request to return the deal-buyer-setting ID. Then use the
-deal-buyer-setting ID with a PUT
-<a href="https://api.appnexus.com/deal-buyer-setting?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/deal-buyer-setting?id=ID</a>
-request to modify the deal-buyer-setting.
+If a deal-buyer-setting object has already been created for the deal, the POST request will return the following error message: "`The buyer_member_id, deal_id combination was not unique.`" To modify this deal-buyer-setting, first make a `GET` [https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID](https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID) request to return the deal-buyer-setting ID. Then use the deal-buyer-setting ID with a `PUT` [https://api.appnexus.com/deal-buyer-setting?id=ID](https://api.appnexus.com/deal-buyer-setting?id=ID) request to modify the deal-buyer-setting.
 
->
-
-``` pre
+```
 $ cat deal_settings.json
  
 {
@@ -372,11 +76,9 @@ $ curl -b cookies -c cookies -X POST -d @deal_settings.json 'https://api.appnexu
 }
 ```
 
+### Modify deal settings
 
-
-**Modify deal settings**
-
-``` pre
+```
 $ cat deal_settings_update.json
  
 {
@@ -406,9 +108,9 @@ $ curl -b cookies -c cookies -X PUT -d @deal_settings_update.json 'https://api.a
 }
 ```
 
-**View all of your deal settings**
+### View all of your deal settings
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting'
  
 {
@@ -462,9 +164,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting'
 }
 ```
 
-**View the settings for a specific deal settings ID**
+### View the settings for a specific deal settings ID
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?id=11777'
 
 {
@@ -486,9 +188,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?id=117
 }
 ```
 
-**View the settings for a specific deal ID**
+### View the settings for a specific deal ID
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?deal_id=560402'
 
 {
@@ -510,9 +212,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?deal_i
 }
 ```
 
-**View the settings for multiple deal IDs**
+### View the settings for multiple deal IDs
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?deal_id=560402,559575,558605'
 
 {
@@ -549,9 +251,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/deal-buyer-setting?deal_i
     }
 }
 ```
-
-
-
-
-
-
