@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Ways to Improve Click-Through Rate (CTR) Performance
-description : Learn ways to improve Click-Through Rate (CTR) performance.
+title: Microsoft Invest - Ways to Improve Click-Through Rate (CTR) Performance
+description: Learn ways to improve Click-Through Rate (CTR) performance.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Ways to improve Click-Through Rate (CTR) performance
