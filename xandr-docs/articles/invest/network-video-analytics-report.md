@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Video Analytics Report
 description: Use this report to view video event metrics across multiple buyers and sellers for a network member.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member video analytics report
