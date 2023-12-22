@@ -17,6 +17,6 @@ To buy OTT inventory serving on Hulu:
 - Contact your Xandr representative for
   assistance with the creative upload process.
 
-## Related topics
+## Related topic
 
-- [OTT Video Creative Specifications](ott-video-creative-specifications.md)
+[OTT Video Creative Specifications](ott-video-creative-specifications.md)

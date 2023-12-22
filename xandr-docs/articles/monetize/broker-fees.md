@@ -34,7 +34,7 @@ don't collect money from Networks and pay out to
 third parties. But we want you to be able to run the business side of
 things as easily as possible on the platform.
 
-## Applied at line item or insertion order levels (commissions)
+## Applied at line item or insertion order levels (Commissions)
 
 > [!WARNING]
 > - Broker fees applied to an insertion order do NOT apply to any augmented line items belonging to that insertion order. They apply ONLY to standard line items.
@@ -55,7 +55,7 @@ new "revenue" of $0.90, and a relatively adjusted bid.
 > [!NOTE]
 > The decimal position support for the broker fees is for 1 place after the decimal. For example, if you set 16.67% as a broker fee in the **Commissions** section, after saving, the value would round off to 16.7%. However, there is no restriction on number of places after decimal if the [Insertion Order service API](../digital-platform-api/insertion-order-service.md) is used to create the broker fee.
 
-## Applied at campaign level (serving fees)
+## Applied at campaign level (Serving fees)
 
 When creating or editing a campaign, click the the
 **Add Fee** button under
@@ -68,7 +68,7 @@ In the details screen, click
  \> **Serving Fees** to get
 the Serving Fees panel.
 
-## Third-Party inventory
+### Third-Party inventory
 
 For optimized bids, bids are automatically reduced to account for
 serving fees. For example, a campaign with a CPC goal and a $0.20 CPM
@@ -77,7 +77,7 @@ bids (flat CPM bids and learn bids) serving fees are calculated on top
 of your bid. For example, for a 10% serving fee on a $1 cpm bid, you
 will still bid $1, but your net media cost will be $1.10.
 
-## Direct inventory
+### Direct inventory
 
 You may owe serving fees to third parties for services such as creative
 hosting or user data. Serving fees are applied to your media cost, so,

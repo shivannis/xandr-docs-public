@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Page Caps (Buy-Side)
+title : Buy-Side Page Caps
 description : Learn what is a Page Cap and how it can be used.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Page caps (Buy-Side)
+# Buy-side page caps
 
 When you run multi-tag auctions via [Xandr's seller tag](../seller-tag/seller-tag.md), you get the ability to set page caps. Page caps can be used to
 restrict advertisers, line items, campaigns, or brands from winning more
@@ -18,8 +18,7 @@ show on an AST ad call, no matter the buyer. That use case is covered by [Sell-S
 
 > [!IMPORTANT]
 > This feature is not available to clients by default. If you would like to enable this feature, please speak with your Xandr representative.
-
-> [!IMPORTANT]
+> 
 > Buy-side page caps are also enforced on OpenRTB calls.
 
 ## Enable page caps for an advertiser
@@ -42,11 +41,11 @@ section. Toggle to turn **Caps On**. Select
 > [!IMPORTANT]
 > Note that roadblocks are counted as single creatives when applying per page frequency caps.
 
-## Example Buy-Side scenarios
+## Example buy-side scenarios
 
 The following examples show in more detail how buy-side page caps work.
 
-## Example Buy-side cap in action, enforcing correctly
+### Example buy-side cap in action, enforcing correctly
 
 Let's say you have the following setup:
 
@@ -67,7 +66,7 @@ call, the following will happen:
   bid
 - Coca-Cola wins ad slot 1, Nike wins ad slot 2
 
-## Example Buy-side cap in action, enforcing correctly, but not as expected
+### Example buy-side cap in action, enforcing correctly, but not as expected
 
 Let's say you have the same setup as described above. If you apply page
 caps to the Coca-Cola advertiser and run the AST ad call, the following

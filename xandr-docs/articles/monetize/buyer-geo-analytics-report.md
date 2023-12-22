@@ -22,7 +22,7 @@ boundaries:
 - **Region/State**: The user's [Region](../digital-platform-api/region-service.md), e.g., Baja California or
   California.
 - **Metro Code**: The user's [Metro Code](../digital-platform-api/designated-market-area-service.md).
-- **Political Districts**: The user's [Political District](../digital-platform-api/political-district-service.md) (US Only)
+- **Political Districts**: The user's [Political District](../digital-platform-api/political-district-service.md) (US Only).
 
 For more information on the available data fields and their definitions,
 see [Dimensions](#dimensions) and [Metrics](#metrics) below.
@@ -98,7 +98,7 @@ of Reporting Data](availability-of-reporting-data.md).
 | Country | Yes | The country of the user's location, both name and code, in the format "France (FR)". The string "250" can appear in cases where we don't know the country or if the country doesn't map correctly to a location in our database. |
 | Insertion Order | Yes | The insertion order name and ID, in the format "Midwest Winter Getaways (789)". |
 | Line Item | Yes | The line item name and ID, in the format "Kansas City Winter Commuters (314)". |
-| Metro Code | Yes | The name and ID of the metro code of the user's location, in the format "New York NY (501)". The string "unknown values (-1)" can appear in cases where we don't know the metro code or if the metro code doesn't map correctly to a location in our database.<br>**Note**: Our reporting derives metro codes from the city logged for the auction. However, our geo provider is sometimes unable to determine a city from the IP address associated with the impression, even when the metro code is determined. Therefore, there are cases where a line item or campaign targeting a specific metro code has impressions in reporting showing a metro code of 1. |
+| Metro Code | Yes | The name and ID of the metro code of the user's location, in the format "New York NY (501)". The string "unknown values (-1)" can appear in cases where we don't know the metro code or if the metro code doesn't map correctly to a location in our database.<br>**Note**: Our reporting derives metro codes from the city logged for the auction. However, our geo provider is sometimes unable to determine a city from the IP address associated with the impression, even when the metro code **is** determined. Therefore, there are cases where a line item or campaign targeting a specific metro code has impressions in reporting showing a metro code of 1. |
 | Postal Code | No | The postal (zip) code in which the user is located. |
 | Region | Yes | The region or state name and country code of the user's location, in the format "Baden-Wurttemberg (DE)". The string "4192" can appear in cases where we don't know the region/state or if the region/state doesn't map correctly to a location in our database. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |

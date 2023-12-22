@@ -75,18 +75,20 @@ of Reporting Data](availability-of-reporting-data.md).
 |---|---|---|
 | Ad Profile ID | Yes* | The Ad Profile ID of the Seller Member impacted by the error. |
 | Brand | Yes | The brand registered in the Xandr system and associated with the creative that is impacted by the error. |
-| Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) which was used to bid on the impression |
-| Buyer Seat Name | No | The display name for the buyer seat code |
+| Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) which was used to bid on the impression. |
+| Buyer Seat Name | No | The display name for the buyer seat code. |
 | Creative Category | Yes | A classification assigned to both brands and creatives impacted by the error. |
 | Creative Code | Yes | The Creative Code associated with the Buyer Member that is impacted by the error. |
 | Creative Size | No | The size of the creative impacted by the error. |
 | Deal | Yes | The ID of the deal impacted by the error (if Deal ID = 0 no deal was involved). |
 | Error ID | Yes | The specific error that occurred and was logged in ImpBus (ties to Error Message). |
-| Error Message | Yes | A generic Error Message that describes the error that occurred (ties to Error ID) |
+| Error Message | Yes | A generic Error Message that describes the error that occurred (ties to Error ID). |
 | Language | Yes | The language the creative was tagged with that is impacted by the error. |
 | Publisher ID | Yes | The ID of the Publisher who is affected by the error. |
 | Seller Member | Yes | The Seller Member who is affected by the error. |
 | Technical Attribute | Yes | Feature of the creative such as whether it is an image, flash, video, is expandable, etc. affected by the error. |
+
+*Filter by comma separated IDs only.
 
 ## Metrics
 
@@ -145,7 +147,7 @@ Follow these steps to run your report.
       view or download.
 
        > [!TIP]
-       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md)for that reporting service (The limit here is 10 million rows).
+       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
 
     - **Export, send results via

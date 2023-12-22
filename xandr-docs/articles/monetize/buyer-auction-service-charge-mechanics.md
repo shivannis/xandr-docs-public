@@ -24,7 +24,7 @@ the BASC.
 
 `Buyer Payment = Media Cost + (Media Cost * Buyer Auction Service Charge %)`
 
-## Deduction (or Bid Reduction)
+## Deduction (or Bid reduction)
 
 In this case, the BASC is applied as a component of Media Cost. As a
 result, Xandr deducts its BASC from the Media
@@ -35,7 +35,7 @@ paid to the seller.
 
 `Buyer Payment = Media Cost`
 
-`Media Cost = Winning Price / (``1` `- Buyer Auction Service Charge %)`
+`Media Cost = Winning Price / ( 1- Buyer Auction Service Charge %)`
 
 ## Example
 
@@ -46,20 +46,20 @@ that the next highest net bid is $.80 CPM.
   for the impression is $0.81 CPM. The following illustrates the bids
   and media cost that result from the Fee and Deduction options:
 
-| BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
-|---|---|---|---|---|---|---|---|
-| 10% | Fee | $1.20 CPM | $1.20 CPM | $0.81 CPM | $0.81 CPM | $0.08 CPM | $0.89 CPM |
-| 10% | Deduction | $1.20 CPM | $1.08 CPM | $0.81 CPM | $0.90 CPM | None | $0.90 CPM |
+  | BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
+  |---|---|---|---|---|---|---|---|
+  | 10% | Fee | $1.20 CPM | $1.20 CPM | $0.81 CPM | $0.81 CPM | $0.08 CPM | $0.89 CPM |
+  | 10% | Deduction | $1.20 CPM | $1.08 CPM | $0.81 CPM | $0.90 CPM | None | $0.90 CPM |
 
 - If you are participating in a first price auction (i.e., no bid
   reduction to next highest bid), the winning price for the impression
   is $1.20 CPM. The following illustrates the bids and media cost that
   result from the Fee and Deduction options:
 
-| BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
-|---|---|---|---|---|---|---|---|
-| 10% | Fee | $1.20 CPM | $1.20 CPM | $1.20 CPM | $1.20 CPM | $0.12 CPM | $1.32 CPM |
-| 10% | Deduction | $1.20 CPM | $1.08 CPM | $1.08 CPM | $1.20 CPM | None | $1.20 CPM |
+  | BASC % | BASC Type | Initial Bid | Net Bid compared in Auction | Winning Price | Media Cost | Fees | Total Buyer Payment |
+  |---|---|---|---|---|---|---|---|
+  | 10% | Fee | $1.20 CPM | $1.20 CPM | $1.20 CPM | $1.20 CPM | $0.12 CPM | $1.32 CPM |
+  | 10% | Deduction | $1.20 CPM | $1.08 CPM | $1.08 CPM | $1.20 CPM | None | $1.20 CPM |
 
 ## Inventory discrepancy and bid calculation
 

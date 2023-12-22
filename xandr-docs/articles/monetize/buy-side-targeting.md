@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Targeting (Buy-Side)
+# Microsoft Monetize - Targeting (buy-side)
 
 This page lists the types of user and inventory targeting you can apply
 on your line items or campaigns. If a particular kind of targeting is
@@ -21,8 +21,8 @@ of line items. Augmented line items do not use campaigns.
 - [Device and Supply Type Targeting](supply-type-targeting.md) (Standard Line Item only)
 - [Frequency and Recency Caps](frequency-and-recency-caps.md)
 - Geography Targeting
-  - [For Standard Line Items](create-a-standard-line-item.md)
-  - [For Augmented Line Items](augmented-line-items-ali.md)
+  - [For Standard Line Items](geography-targeting.md)
+  - [For Augmented Line Items](additional-geo-restrictions-ali.md)
 - [Mobile User Segment Targeting](mobile-user-segment-targeting.md) (Standard Line Item only)
 - [Segment Targeting](segment-targeting.md)
 - [System Targeting](system-targeting.md)
@@ -43,11 +43,10 @@ of line items. Augmented line items do not use campaigns.
   - [Domain Targeting](domain-targeting.md)
 - [Content Category Targeting](content-category-targeting.md) (Standard Line Item only)
 - [Inventory Quality Targeting](inventory-quality-targeting.md) (Standard Line Item only)
-- [Third-Party Inventory Targeting](third-party-inventory-targeting.md) (Standard Line Item only)
+- [Third-Party Inventory Targeting](third-party-inventory-targeting.md)  (Standard Line Item only)
 - [Key/Value Targeting](key-value-targeting.md)
-- [Page Properties Targeting](page-properties-targeting.md)(Augmented Line Item only)
-- [Query String Targeting via Placement Tags and Segments](query-string-targeting-via-placement-tags-and-segments.md)
-  (Standard Line Item only)
+- [Page Properties Targeting](page-properties-targeting.md) (Augmented Line Item only)
+- [Query String Targeting via Placement Tags and Segments](query-string-targeting-via-placement-tags-and-segments.md) (Standard Line Item only)
 - [Viewability Targeting](viewability-targeting.md)
 
 ## Other targeting guidance

@@ -121,7 +121,7 @@ Reports automatically group by all selected dimensions.
 | Profit eCPC | money | 123.45 | (Booked Revenue - Total Cost)/Clicks | Profit per click. |
 | Profit eCPM | money | 0.4949 | (Booked Revenue - Total Cost) / Imps * 1000 | Profit per thousand impressions.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Profit Margin | money | 123.45 | (Booked Revenue - Total Cost)/Booked Revenue | Buyer profit margin. |
-| Revenue eCPM | money | 1.234 |  | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the Glossary. |
+| Revenue eCPM | money | 1.234 |  | The total revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
 | Revenue Per Video Complete | money | 25.767257 |  | The revenue per video completion. |
 | Serving Fees | money | 0.025143 | Serving fees for standard line items, $0 for ALIs. | Fees that are added to the media cost. Serving fees for standard line items, $0 for ALIs.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Total conversions | int | 5 | total_convs | The total number of post-view and post-click conversions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |

@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Budgeting and Pacing
+title : Budgeting and Pacing
 description : This page deals with information on Budgeting and Pacing.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Budgeting and pacing
+# Budgeting and pacing
 
 > [!IMPORTANT]
 > All information and recommendations regarding Budgeting and Pacing are provided to the best of our knowledge and are believed to be accurate. However, we cannot control the specific manner in which you apply this information and these recommendations. Therefore, we strongly encourage you to use your own judgment in any given situation.

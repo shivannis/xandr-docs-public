@@ -7,14 +7,14 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Buying GumGum inventory
 
-You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://gumgum.com/image-recognition/in-image-advertising),
+You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://gumgum.com/guides/the-straightforward-guide-to-in-image-advertising),
 which are available programmatically through
 Xandr. GumGum ad campaigns involve a few
 adjustments to the process of uploading standard display campaigns. This
 page will guide you through this process and explain how to display your
 creative via GumGum's inventory.
 
-## Upload a Third - Party creative
+## Upload a third-party creative
 
 Navigate to the **Creative Manager**
 screen. Click on the **Create New** button
@@ -62,7 +62,7 @@ creative.
 Enter the creative ad HTML code into the field in the bottom-half panel
 and select the correct product type.
 
-## Step 3. Preview
+### Step 3. Preview
 
 Click **preview**.
 

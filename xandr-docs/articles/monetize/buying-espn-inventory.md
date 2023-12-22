@@ -26,6 +26,6 @@ Streaming Video (on Desktop, Mobile App and CTV), you need to:
     > [!NOTE]
     > ESPN Live Streaming Video on Desktop, Mobile App and CTV also requires the creative to be non-skippable. For more detailed information, see the creative guidelines on the [ESPN website](https://www.espn.com/adspecs/US/espn/index.html).
 
-## Related topics
+## Related topic
 
-- [OTT Video Creative Specifications](ott-video-creative-specifications.md)
+[OTT Video Creative Specifications](ott-video-creative-specifications.md)

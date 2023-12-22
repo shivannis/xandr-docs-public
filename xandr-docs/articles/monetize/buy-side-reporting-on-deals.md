@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Reporting on deals (Buy-Side)
+# Microsoft Monetize - Reporting on deals (buy-side)
 
 Once you've started buying deals, you can run reports to analyze how
 your deals are performing.

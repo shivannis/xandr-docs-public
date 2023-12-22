@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Block a Brand Using Ad Quality Rules
+title : Block a Brand Using Ad Quality Rules
 description : Learn how to block a Brand using Network and Publisher Ad Quality.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Block a brand using Ad Quality rules
+# Block a brand using Ad Quality rules
 
 You can use Network and Publisher Ad Quality to
 block a brand from serving creatives on placements for an entire
@@ -25,9 +25,9 @@ because it doesn't match your network or publisher's requirements.
 
    | Option | Steps |
    |---|---|
-   | **Network-Level Block (blocks brands for all publishers)**| - Select **Publishers > Ad Quality**.<br> - Edit your **Network Template**. |
-   | **Publisher-Level Block (blocks brands for a single publisher)** | - Select **Publishers > Ad Quality**.<br> - Choose the publisher for which you want a brand blocked. Then, create or edit a base rule. |
-   | **Placement-Level Block (blocks brands for certain ad placements)** | - Select **Publishers > Ad Quality**.<br> - Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> - Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**. <br> For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
+   | **Network-Level Block (blocks brands for all publishers)**| a. Select **Publishers > Ad Quality**.<br> b. Edit your **Network Template**. |
+   | **Publisher-Level Block (blocks brands for a single publisher)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then, create or edit a base rule. |
+   | **Placement-Level Block (blocks brands for certain ad placements)** | a. Select **Publishers > Ad Quality**.<br> b. Choose the publisher for which you want a brand blocked. Then create or edit a conditional rule.<br> c. Navigate to the **Inventory Targeting** tab and select the desired placements or placement groups in the **Inventory Targeting** menu under **Profile Targeting Information**. <br> For more information on conditional rule targeting, see [Base and Conditional Rules](base-and-conditional-rules.md). |
 
 1. Navigate to the
     **Settings** tab and select
@@ -37,9 +37,7 @@ because it doesn't match your network or publisher's requirements.
     brands to block.
 
     If a brand you wish to block does not appear in the search results,
-    submit a support ticket at
-    https://help.xandr.com requesting to add the
-    brand to Xandr's database.
+    submit a support ticket at [Customer Support Portal](https://help.xandr.com) requesting to add the brand to Xandr's database.
 
 1. Select the checkbox for each brand you want to
     block.
@@ -51,7 +49,7 @@ because it doesn't match your network or publisher's requirements.
     **Eligibility** column lists the
     blocked brands as **Banned**.
 1. If you're using Publisher Ad Quality, click
-    **Submit**. to save your
+    **Submit** to save your
     settings.
 
    > [!IMPORTANT]
