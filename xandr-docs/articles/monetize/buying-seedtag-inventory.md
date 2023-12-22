@@ -86,8 +86,8 @@ Navigate to the **Creative Manager** screen. Click on the Create New button and 
 
   If you want to use an external click command, put that command in place of your URL.
 
-Examples
+## Examples
 
-  :::image type="content" source="media/seedtag-a.png" alt-text="A screenshot represents an example of buying Seedtag Inventory.":::
-  :::image type="content" source="media/seedtag-b.png" alt-text="A screenshot represents an example of buying Seedtag Inventory.":::
-  :::image type="content" source="media/seedtag-c.png" alt-text="A screenshot represents an example of buying Seedtag Inventory.":::
+  :::image type="content" source="media/seedtag-a.png" alt-text="Screenshot that represents an example of buying Seedtag Inventory.":::
+  :::image type="content" source="media/seedtag-b.png" alt-text="Screenshot that shows an example of buying Seedtag Inventory.":::
+  :::image type="content" source="media/seedtag-c.png" alt-text="Screenshot that displays an example of buying Seedtag Inventory.":::

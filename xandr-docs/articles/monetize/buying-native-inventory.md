@@ -23,9 +23,9 @@ Some native sellers require you to go through a quick buyer audit before they'll
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
 |--|--|--|
 |  |  |  |
-| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the Partner Center Guide documentation for more information. | Please reach out to [rta@ligatus.com](rta@ligatus.com) for allowlist approval. |
-| Sanoma Finland | If you have not previously bought Sanoma Finland via Xandr, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](programmatic@sanoma.com). |
-| TripleLift | If you have not previously bought TripleLift via Xandr, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](appnexus@triplelift.com). |
+| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the Partner Center Guide documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
+| Sanoma Finland | If you have not previously bought Sanoma Finland via Xandr, you are not yet in an allowlist. | Reach out to [mailto:programmatic@sanoma.com](programmatic@sanoma.com). |
+| TripleLift | If you have not previously bought TripleLift via Xandr, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com). |
 
 The following sellers do not currently have any allowlist requirements:
 
@@ -54,7 +54,7 @@ To maximize reach for your creatives across native inventory sources, here are s
 
 If a parameter is not mentioned in the table above, enter whatever values make sense for your campaign.
 
-For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md). Only secure content is supported."</a> and . You can also review our [Native Buy-Side Best Practices](../attachments/native-best-practices/Buy-Side-Native-Best-Practices.pdf).
+For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).  You can also review our [Native Buy-Side Best Practices](../attachments/native-best-practices/Buy-Side-Native-Best-Practices.pdf).
 
 > [!WARNING]
 > Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.

@@ -2,7 +2,6 @@
 title: Microsoft Monetize - Buying OTT Video Inventory
 description: The article describes buying OTT video inventory where Microsoft Monetize allows you to buy or sell ad inventory on OTT ("over-the-top") video properties.
 ms.date: 10/28/2023
-inventory on OTT ("over-the-top") video properties. As part of our
 ---
 
 # Buying OTT video inventory

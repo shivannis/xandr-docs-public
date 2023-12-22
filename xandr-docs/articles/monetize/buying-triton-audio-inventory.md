@@ -1,8 +1,7 @@
 ---
 title: Microsoft Monetize - Buying Triton Audio Inventory
-Description: This article provides specific information for the Triton Audio Ad Exchange, which includes testing your ads and setting up a line item or campaign to target Triton audio inventory.
+description: This article provides specific information for the Triton Audio Ad Exchange, which includes testing your ads and setting up a line item or campaign to target Triton audio inventory.
 ms.date: 10/28/2023
-
 ---
 
 

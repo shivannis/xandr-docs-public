@@ -87,6 +87,5 @@ You can choose to pay publishers only when users click on your ads or when users
 
 > [!NOTE]
 > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is now deprecated.
-> Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a %
-> Margin of Booked Revenue** as your campaign buying strategy.
-> For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals,** see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.html).
+> Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+> For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals**, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
