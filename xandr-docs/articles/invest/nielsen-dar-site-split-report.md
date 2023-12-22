@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Nielsen Digital Ad Ratings - Site/Split Report
-description : Learn about **Nielsen Digital Ad Ratings (DAR) - Site/Split Report**
+title: Microsoft Invest - Nielsen Digital Ad Ratings - Site/Split Report
+description: Learn about **Nielsen Digital Ad Ratings (DAR) - Site/Split Report**.
+ms.date: 10/28/2023
 ---
 
 
