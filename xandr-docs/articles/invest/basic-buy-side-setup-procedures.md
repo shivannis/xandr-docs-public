@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Basic Buy-side Setup Procedures
-description : Learn the procedure to setup your buying objects quickly on the Xandr platform. 
+title: Microsoft Invest - Basic Buy-side Setup Procedures
+description: Learn the procedure to setup your buying objects quickly on the Xandr platform. 
 ms.date: 10/28/2023
 ---
 
