@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Vertical Video Creatives
 description: Learn about the vertical video formats. These formats are designed for smartphones and use an aspect ratio that can be square or longer than it is wide.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Vertical video creatives
