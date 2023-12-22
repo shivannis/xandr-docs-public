@@ -1,7 +1,7 @@
 ---
-title : Data Science Toolkit - Guide
-description : Learn how Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
-ms.custom : data-science
+title: Data Science Toolkit - Guide
+description: Learn how Data Science Toolkit enables clients with data science capabilities to further their bidding strategy, improve their measurement and testing capabilities, and run in-depth outcome analyses. 
+ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
