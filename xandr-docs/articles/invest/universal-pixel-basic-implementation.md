@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Universal Pixel Basic Implementation
-description : With the most basic implementation of the universal pixel, learn to track page views and identify the URLs driving them. 
+title: Microsoft Invest - Universal Pixel Basic Implementation
+description: With the most basic implementation of the universal pixel, learn to track page views and identify the URLs driving them. 
+ms.date: 10/28/2023
 ---
 
 
