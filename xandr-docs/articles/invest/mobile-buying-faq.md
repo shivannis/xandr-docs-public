@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Buying FAQ
 description: In this article, explore frequently asked questions (FAQ), covering effective mobile ad campaign strategies and advanced mobile reporting techniques.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile buying FAQ
