@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Debug Auction Tips
 description: In this article, explore the various mobile debug auction tips, ad call format, query string parameters, and ways to spoof an operating system.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile debug auction tips
