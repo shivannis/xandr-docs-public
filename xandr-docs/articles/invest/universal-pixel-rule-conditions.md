@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Universal Pixel Rule Conditions
-description : Learn about Universal Pixel Rule Conditions.
+title: Microsoft Invest - Universal Pixel Rule Conditions
+description: Learn about Universal Pixel Rule Conditions.
+ms.date: 10/28/2023
 ---
 
 
