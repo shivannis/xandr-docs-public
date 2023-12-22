@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - What to Check if You Suspect a Discrepancy
-description : Learn about the common potential causes for report discrepancies. 
+title: Microsoft Invest - What to Check if You Suspect a Discrepancy
+description: Learn about the common potential causes for report discrepancies. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - What to check if you suspect a discrepancy
