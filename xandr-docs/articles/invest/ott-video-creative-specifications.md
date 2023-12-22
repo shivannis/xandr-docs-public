@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - OTT Video Creative Specifications
-description : Learn about OTT (Over-the-Top video) creative and how it can be diplayed before, after, or during in-stream video content delivered over the internet.
+title: Microsoft Invest - OTT Video Creative Specifications
+description: Learn about OTT (Over-the-Top video) creative and how it can be diplayed before, after, or during in-stream video content delivered over the internet.
+ms.date: 10/28/2023
 ---
 
 
