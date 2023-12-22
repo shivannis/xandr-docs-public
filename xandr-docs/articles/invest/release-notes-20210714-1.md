@@ -1,6 +1,7 @@
 ---
 title: July 14, 2021 - Introducing Our New Bulk Export and Import Functionality
 description: Find the release note for the new bulk export and import functionality that has been introduced.
+ms.date: 10/28/2023
 ---
 
 # July 14, 2021: Introducing our new bulk export and import functionality
