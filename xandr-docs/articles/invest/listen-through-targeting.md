@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Listen-Through Targeting
 description: In this article, understand what listen-through targeting is, how it is predicted, and the advantages of listen-through targeting.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Listen-through targeting
