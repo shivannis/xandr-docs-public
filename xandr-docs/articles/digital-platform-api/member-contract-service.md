@@ -1,951 +1,114 @@
 ---
-Title : Member Contract Service
-Description : The Member Contract Service allows Xandr Sales
+title: Member Contract Service
+description: Sales op admins can use the member contract service to view, create, update, and delete member contracts.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Op admins to view, create, update, and delete
-Xandr member contracts. There are two types of
 ---
 
+# Member contract service
 
-# Member Contract Service
-
-
-
-The Member Contract Service allows Xandr Sales
-Op admins to view, create, update, and delete
-Xandr member contracts. There are two types of
-pricing terms denoted by the `pricing_version` field.
+The Member Contract Service allows Xandr Sales Op admins to view, create, update, and delete Xandr member contracts. There are two types of pricing terms denoted by the `pricing_version` field.
 
 - `"2007.09.01"`: These are the "legacy" pricing terms.
-- `"2013.01.02"`: These are the newer pricing terms. Most client
-  contracts negotiated post-2013 will use these new pricing terms. The
-  upshot of the new pricing terms are that clients pay a buy-side fee
-  for both partner and platform inventory, and that clients pay a
-  different seller revshare for buyers on the
-  Xandr platform than for bidder buyers.
+- `"2013.01.02"`: These are the newer pricing terms. Most client contracts negotiated post-2013 will use these new pricing terms. The upshot of the new pricing terms are that clients pay a buy-side fee for both partner and platform inventory, and that clients pay a different seller revshare for buyers on the Xandr platform than for bidder buyers.
 
+> [!NOTE]
+> This service is available only to Xandr admin users who have the `is_sales_ops` field set to true. Note that the `is_sales_ops` field can be set to true only via a direct database update. Valid reasons to have your `is_sales_ops` field set in production include:
+> 
+> - You are a member of the Sales Ops team, and it is your regular job to create and update contracts.
+> - You are an engineer, product manager, or test engineer who needs access to create or update contracts for your job.
+> - You want to see Katharine, Jennifer Yang, and Alison cry. (Yes, really.)
+> - If you are in Services and need to create or update contracts in sand, you should request a direct DB write for your sand user but please understand that you won't have the same capability in production.
 
-
-<b>Note:</b> This service is available only to
-Xandr admin users who have the `is_sales_ops`
-field set to true. Note that the `is_sales_ops` field can be set to true
-only via a direct database update. Valid reasons to have your
-`is_sales_ops` field set in production include:
-
-- You are a member of the Sales Ops team, and it is your regular job to
-  create and update contracts.
-- You are an engineer, product manager, or test engineer who needs
-  access to create or update contracts for your job.
-- You want to see Katharine, Jennifer Yang, and Alison cry. (Yes,
-  really.)
-- If you are in Services and need to create or update contracts in sand,
-  you should request a direct DB write for your sand user but please
-  understand that you won't have the same capability in production.
-
-
-
-
-
-<b>Warning:</b> On a `PUT` call, if you
-include only specific contracts, the contracts not included will be
-**deleted**. Therefore it is best to include all contracts on `PUT`.
-
-
-
-
-
-<b>Note:</b> Updating and deleting contracts
-
-- The Sales Op can only update the following fields for contracts in
-  progress: `notes` and `end_date`. For past contracts, she can only
-  update the `notes`. For future contracts she can update all the
-  fields.
-- Note that if you clone a contract whose `pricing_type` is
-  `"2007.09.01"`, update `pricing_type` to `"2013.01.02"`, and then
-  update it once more to `"2007.09.01"`, any minimums will be set to
-  zero.
-- The Sales Op can only delete contracts which are in the future.
-
-
-
-
+> [!WARNING]
+> On a `PUT` call, if you include only specific contracts, the contracts not included will be **deleted**. Therefore it is best to include all contracts on `PUT`.
+> [!NOTE]
+> Updating and deleting contracts
+>
+> - The Sales Op can only update the following fields for contracts in progress: `notes` and `end_date`. For past contracts, she can only update the `notes`. For future contracts she can update all the fields.
+> - Note that if you clone a contract whose `pricing_type` is `"2007.09.01"`, update `pricing_type` to `"2013.01.02"`, and then update it once more to `"2007.09.01"`, any minimums will be set to zero.
+> - The Sales Op can only delete contracts which are in the future.
 
 ## REST API
 
+| HTTP Methods | Enpoints | Descriptions |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/member-contract?member_id=MEMBER_ID | View all contracts for a specific member |
+| `GET` | https://api.appnexus.com/member-contract<br>(contract JSON) | View a specific contract |
+| `POST` | https://api.appnexus.com/member-contract<br>(contract JSON) | Add a new contract |
+| `PUT` | https://api.appnexus.com/member-contract?id=CONTRACT_ID <br>(contract JSON) | Modify a contract |
+| `DELETE` | https://api.appnexus.com/member-contract?id=CONTRACT_ID | Delete a contract |
+| `GET` | https://api.appnexus.com/member-contract/meta | Find out which fields you can filter and sort by |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002666__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Methods</th>
-<th id="ID-00002666__entry__2"
-class="entry colsep-1 rowsep-1">Enpoints</th>
-<th id="ID-00002666__entry__3"
-class="entry colsep-1 rowsep-1">Descriptions</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract?member_id=MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract?member_id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__3">View
-all contracts for a specific member</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract</a><br />
-(contract JSON)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__3">View
-a specific contract</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract</a>
-<p>(contract JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__3">Add
-a new contract</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract?id=CONTRACT_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract?id=CONTRACT_ID</a><br />
-&#10;<p>(contract JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__3">Modify a contract</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract?id=CONTRACT_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract?id=CONTRACT_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__3">Delete a contract</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__2"><a
-href="https://api.appnexus.com/member-contract/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member-contract/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+There is a large intersection between the sets of required fields depending on whether the `pricing_version` is `"2007.09.01"` (marked below as `OLD`) or `"2013.01.02"` (marked below as `NEW`); only those fields that differ between pricing versions are marked as such in the **Old or New?** column.
 
-
-
-
-
-
-
-## JSON Fields
-
-There is a large intersection between the sets of required fields
-depending on whether the `pricing_version` is `"2007.09.01"` (marked
-below as `OLD`) or `"2013.01.02"` (marked below as `NEW`); only those
-fields that differ between pricing versions are marked as such in the
-Old or New? column.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002666__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002666__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002666__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-ID of the contract.
-<p><strong>Requird On:</strong> <code class="ph codeph">PUT</code>/<code
-class="ph codeph">DELETE</code>, in query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-ID of the member to which the contract applies.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">last_activity</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-date of the last modification of this contract "object".</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">start_date</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">datetime</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-date and time when the terms of the contract start. New contracts should
-begin in the future, and typically on the first day of a month.
-<p><strong>Requird On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">end_date</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">datetime</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-date and time when the terms of the contract end. This should always
-come at the end of a month.
-<p><strong>Requird On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_minimum_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used. Formerly, it
-was the minimum amount the buyer agrees to pay for Auction Service Fee,
-Auction Service Deduction, or Direct Clear Fee.
-<p><strong>Old or New:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">ad_serving_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-managed ad serving fee charged on kept impressions (to include: kept,
-default, PSA). This does not represent a seller ad serving fee CPM,
-which is not yet implemented in the system.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auditing_fee_per_creative</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-per-creative auditing fee.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">creative_size_minimum_bytes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-size above which a creative is considered over-sized. The member is
-charged a creative overage fee (based on the value in <code
-class="ph codeph">creative_size_fee_per_gb</code>) for serving an
-oversized creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">creative_size_fee_per_gb</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-fee that is charged per gigabyte for a creative that exceeds the <code
-class="ph codeph">creative_size_minimum_bytes</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_minimum_spend</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is mislabeled. The monthly
-minimum fees the member commits to paying per month.
-<p><strong>Old or New:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">clearing_revshare</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-flat fee taken out of clearing revenues by <span
-class="ph">Xandr. Members may choose to be billed as a percentage
-instead (see <code class="ph codeph">clearing_revshare_pct</code>
-below).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-percentage charged to sellers when they sell their inventory to other
-members.
-
-<b>Warning:</b> This field corresponds to the
-new <code class="ph codeph">auction_revshare_platform_pct</code> field,
-and is used by the data pipeline for calculations involving CPA/CPC
-revenues. PLEASE DO NOT REMOVE THIS FIELD UNLESS YOU KNOW WHAT YOU ARE
-DOING.
-<p><strong>Old or New:</strong> <code class="ph codeph">OLD</code></p>
-<p><strong>Default:</strong> <code class="ph codeph">"0.00"</code></p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">clearing_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-clearing deduction percentage. This is charged when the member buys from
-an external or partner seller.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_maximum_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-maximum amount the buyer agrees to pay on a per-impression basis. For
-this reason, the sum of client's auction service fees and deductions may
-not be equal to their total media cost multiplied by their auction
-revshare at the end of the month.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">apply_min_cpm_to_clearing</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used.
-<p><strong>Default:</strong> <code
-class="ph codeph">False</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-type of buyer auction revenue share. Allowed values:
-<ul>
-<li><code class="ph codeph">"deduction"</code>: The buyer is charged an
-Auction Service Deduction.</li>
-<li><code class="ph codeph">"fee"</code>: The buyer is charged an
-Auction Service Fee.</li>
-</ul>
-
-<b>Warning:</b> This field corresponds to the
-new <code class="ph codeph">auction_revshare_platform_inv_type</code>
-field, and is used by the data pipeline for calculations involving
-CPA/CPC revenues. PLEASE DO NOT REMOVE THIS FIELD UNLESS YOU KNOW WHAT
-YOU ARE DOING.
-<p><strong>Default:</strong> <code class="ph codeph">"fee"</code></p>
-<p><strong>Old or New:</strong> <code class="ph codeph">OLD</code></p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">pricing_version</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-pricing version associated with this contract. With the 2013 pricing
-terms, clients pay a buy-side fee for both partner and platform
-inventory, and clients pay a different seller revshare for <span
-class="ph">Xandr platform buyers than for bidder buyers. Note
-also that it is acceptable to use 2007 pricing terms if so dictated by
-the contract. Allowed values:
-<ul>
-<li><code class="ph codeph">"2007.09.01"</code></li>
-<li><code class="ph codeph">"2013.01.02"</code></li>
-</ul>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-type of seller. Allowed values:
-<ul>
-<li><code class="ph codeph">"platform"</code>: The member has a signed
-contract allowing Xandr to take a Seller
-Deduction from resold impressions.</li>
-<li><code class="ph codeph">"partner"</code>: The member does not have a
-signed contract allowing Xandr to take a Seller
-Deduction from resold impressions, so the buying members are charged an
-Auction Service Fee/Deduction instead.</li>
-</ul>
-<p><strong>Default:</strong> <code
-class="ph codeph">"platform"</code></p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">note</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">An
-optional note.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">data_siphon_fee</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-monthly charge for receiving Xandr <a
-href="log-level-data/log-level-data-feeds.md"
-class="xref" target="_blank">log-level data feeds</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">mapuid_fee</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-monthly charge for using the Xandr user ID
-mapping service.
-<p><strong>Default:</strong> <code
-class="ph codeph">"0.00"</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_minimum_imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-minimum number of impressions that the member commits to transact per
-month.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">waive_ad_serving_fees</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used.
-<p><strong>Old or New:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">adx_auction_service_fee_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used. Formerly, it
-was the auction service fee charged when buyer clients purchase
-inventory from Google Ad Manager. Google Ad Manager is a special case
-since they are a Xandr member (with a bidder_id
-of <code class="ph codeph">2</code>) but buyer clients pay Google Ad
-Manager directly and don't pay Xandr for media
-cost.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">direct_clear_fee_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-direct clear fee percentage. This is used for activity where the member
-clears the cost of media directly with the seller.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">contract_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is no longer used. In the
-past, it was used by the finance team for revenue reporting. The allowed
-values were:
-<ul>
-<li><code class="ph codeph">"NIB"</code>: This acronym refers to a
-former product offering called "Network in a box".</li>
-<li><code class="ph codeph">"XIB"</code>: This acronym refers to a
-former product offering called "Exchange in a box".</li>
-<li><code class="ph codeph">"RTBX"</code>: This acronym refers to a
-former product offering called "RTB Exchange".</li>
-<li><code class="ph codeph">"MSFT"</code>: A Microsoft contract.</li>
-<li><code class="ph codeph">"External"</code>: ...</li>
-<li><code class="ph codeph">"Partner"</code>: ...</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">creative_audit_fee</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used. Use <code
-class="ph codeph">auditing_fee_per_creative</code> instead. Formerly, it
-represented the total creative auditing fees.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">creative_priority_fee_1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This field is not used. It is a
-placeholder for future development.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">creative_priority_fee_2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-priority auditing fee per creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">imptracker_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-fees charged for recording third-party impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">clicktracker_cpc</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-fees charged for recording third-party clicks.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auto_renewal_term</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-auto-renewal term for the member, if such a term exists in the signed
-contract. Currently, this is only a placeholder for the term; no billing
-logic is associated with this field.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_serving_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-CPM-based fee charged for each impression resold. Currently, this is
-only a placeholder for the fee; no billing logic is associated with this
-field.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_spend_based_minimum</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-monthly minimum based on the total buyer spend (i.e., cost of media)
-purchased in any given month. Currently, this is only a placeholder; no
-billing logic is associated with this field.
-<p><strong>New or Old</strong>: <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-seller deduction percentage. This is charged when the member sells an
-impression to another member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_revshare_minimum</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">Seller revshare minimum is calculated
-by taking the greater of (imps seen * seller auction request cpm) or
-(seller revshare).
-<p><strong>Default:</strong> <code class="ph codeph">false</code></p>
-<p><strong>New or Old:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">secure_whitelabel_pixel_fee</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-monthly charge for using the Secure White Label Pixel service.
-Currently, this is only a placeholder for the fee; no billing logic is
-associated with this field.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_minimum_requests</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-minimum number of requests per month based on the total number of
-impressions seen as recorded by Xandr. Currently
-this is only a placeholder for the minimum; no billing logic is
-associated with this field.
-<p><strong>New or Old:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">managed_hosted_video_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This is a placeholder for future
-development.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">cross_net_hosted_video_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This is a placeholder for future
-development.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_auction_request_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-amount that a seller must pay every time they send us a bid request.
-This is charged even if there is no winning bid, or any bids at
-all.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24"><strong>Read Only.</strong> Allowed
-values:
-<ul>
-<li><code class="ph codeph">"in_progress"</code>: The contract is
-currently in force.</li>
-<li><code class="ph codeph">"in_past"</code>: The contract has
-ended.</li>
-<li><code class="ph codeph">"in_future"</code>: The contract is set to
-begin in the future.</li>
-</ul>
-<p><strong>Default:</strong> <code
-class="ph codeph">"in_future"</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-name of the member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">member_is_billable</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">Whether the member is billable.
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">member_note</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This is used by Finance and Sales Ops
-to record custom contract terms or other invoice requirements.
-<p><strong>Default:</strong> <code class="ph codeph">""</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">member_enable_budget_check</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">Whether this member has safety checks
-in place to prevent unintentional overspend.
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_service_fee_minimum_1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-minimum monthly spend the client has committed to. This fee includes
-impression and click tracking.
-<p><strong>Old or New:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">monthly_service_fee_minimum_2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-minimum monthly spend the client has committed to. This fee does not
-include impression and click tracking.
-<p><strong>Old or New:</strong> <code
-class="ph codeph">OLD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">selling_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">Whether this member is enabled to sell
-its inventory. This applies to both managed and cross-network selling.
-<p><strong>Default:</strong> <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_console_buyer_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This percentage is charged to sellers
-when they sell to buyers on the Xandr platform.
-
-<b>Note:</b> The value of this field is copied
-from the legacy field <code
-class="ph codeph">seller_revshare_pct</code>.
-
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>,
-when updating to the new <code
-class="ph codeph">pricing_version</code>.</p>
-<p><strong>Old or New:</strong> <code
-class="ph codeph">New</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">seller_bidder_buyer_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__24">This percentage is charged to sellers
-when they sell to non-Xandr bidders.
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>,
-when updating to the new <code
-class="ph codeph">pricing_version</code>.</p>
-<p><strong>Old or New:</strong> <code
-class="ph codeph">New</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_partner_inv_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-percentage charged to buyers of type <code
-class="ph codeph">"partner"</code> when they buy inventory from other
-members.
-<p><strong>Default:</strong> <code class="ph codeph">"0.00"</code></p>
-<p><strong>Old or New:</strong> <code
-class="ph codeph">New</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_partner_inv_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-way the percentage defined in <code
-class="ph codeph">"auction_revshare_partner_inv_pct"</code> is used to
-charge partner buyers. Allowed values:
-<ul>
-<li><code class="ph codeph">"deduction"</code>: The agreed-upon
-percentage is subtracted directly from the buyer's auction revenue.</li>
-<li><code class="ph codeph">"fee"</code>: The percentage is charged as a
-fee after the auction.</li>
-</ul>
-
-<b>Note:</b> You may not set an <code
-class="ph codeph">auction_revshare_partner_inv_type</code> that is
-different from <code
-class="ph codeph">auction_revshare_platform_inv_type</code>. They should
-both be <code class="ph codeph">"fee"</code> or <code
-class="ph codeph">"deduction"</code>.
-
-<p><strong>Default:</strong> <code class="ph codeph">"fee"</code></p>
-<p><strong>Old or New:</strong> <code
-class="ph codeph">New</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_platform_inv_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">float</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-percentage charged to buyers of type <code
-class="ph codeph">"platform"</code> when they buy inventory from other
-members.
-
-<b>Note:</b> The value of this field is copied
-from the field <code class="ph codeph">auction_revshare_pct</code>.
-
-<p><strong>Default:</strong> <code class="ph codeph">"0.00"</code></p>
-<p><strong>Old or New:</strong> <code
-class="ph codeph">New</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__22"><code
-class="ph codeph">auction_revshare_platform_inv_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002666__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002666__entry__24">The
-way the percentage defined in <code
-class="ph codeph">"auction_revshare_platform_inv_pct"</code> is used to
-charge platform buyers. Allowed values:
-<ul>
-<li><code class="ph codeph">"deduction"</code>: The agreed-upon
-percentage is subtracted directly from the buyer's auction revenue.</li>
-<li><code class="ph codeph">"fee"</code>: The percentage is charged as a
-fee after the auction.
-
-<b>Note:</b>
-<ul>
-<li>The value of this field is copied from the field <code
-class="ph codeph">auction_revshare_type</code>.</li>
-<li>You may not set an <code
-class="ph codeph">auction_revshare_platform_inv_type</code> that is
-different from <code
-class="ph codeph">auction_revshare_partner_inv_type</code>. They should
-both be <code class="ph codeph">"fee"</code> or <code
-class="ph codeph">"deduction"</code>.</li>
-</ul>
-<p><strong>Default:</strong> <code class="ph codeph">"fee"</code></p>
-<p><strong>Old or New:</strong> New</p>
-</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the contract.<br><br>**Requird On**: `PUT`/`DELETE`, in query string. |
+| `member_id` | int | The ID of the member to which the contract applies. |
+| `last_activity` | timestamp | The date of the last modification of this contract "object". |
+| `start_date` | datetime | The date and time when the terms of the contract start. New contracts should begin in the future, and typically on the first day of a month.<br><br>**Requird On**: `POST` |
+| `end_date` | datetime | The date and time when the terms of the contract end. This should always come at the end of a month.<br><br>**Requird On**: `POST` |
+| `auction_revshare` | float | This field is not used. |
+| `auction_minimum_cpm` | float | This field is not used. Formerly, it was the minimum amount the buyer agrees to pay for Auction Service Fee, Auction Service Deduction, or Direct Clear Fee.<br><br>**Old or New**: `OLD` |
+| `ad_serving_cpm` | float | The managed ad serving fee charged on kept impressions (to include: kept, default, PSA). This does not represent a seller ad serving fee CPM, which is not yet implemented in the system. |
+| `auditing_fee_per_creative` | float | The per-creative auditing fee. |
+| `creative_size_minimum_bytes` | int | The size above which a creative is considered over-sized. The member is charged a creative overage fee (based on the value in `creative_size_fee_per_gb`) for serving an oversized creative. |
+| `creative_size_fee_per_gb` | float | The fee that is charged per gigabyte for a creative that exceeds the `creative_size_minimum_bytes`. |
+| `monthly_minimum_spend` | float | This field is mislabeled. The monthly minimum fees the member commits to paying per month.<br><br>**Old or New**: `OLD` |
+| `clearing_revshare` | float | The flat fee taken out of clearing revenues by Xandr. Members may choose to be billed as a percentage instead (see `clearing_revshare_pct` below). |
+| `auction_revshare_pct` | float | The percentage charged to sellers when they sell their inventory to other members.<br><br>**Warning**: This field corresponds to the new `auction_revshare_platform_pct` field, and is used by the data pipeline for calculations involving CPA/CPC revenues. PLEASE DO NOT REMOVE THIS FIELD UNLESS YOU KNOW WHAT YOU ARE DOING.<br><br>**Old or New**: `OLD`<br>**Default**: `"0.00"` |
+| `clearing_revshare_pct` | float | The clearing deduction percentage. This is charged when the member buys from an external or partner seller. |
+| `auction_maximum_cpm` | float | The maximum amount the buyer agrees to pay on a per-impression basis. For this reason, the sum of client's auction service fees and deductions may not be equal to their total media cost multiplied by their auction revshare at the end of the month. |
+| `apply_min_cpm_to_clearing` | boolean | This field is not used.<br><br>**Default**: `False` |
+| `auction_revshare_type` | enum | The type of buyer auction revenue share. Allowed values:<br> - `"deduction"`: The buyer is charged an Auction Service Deduction.<br> - `"fee"`: The buyer is charged an Auction Service Fee.<br><br>**Warning**: This field corresponds to the new `auction_revshare_platform_inv_type` field, and is used by the data pipeline for calculations involving CPA/CPC revenues. PLEASE DO NOT REMOVE THIS FIELD UNLESS YOU KNOW WHAT YOU ARE DOING.<br><br>**Default**: - `"fee"`<br>**Old or New**: `OLD` |
+| `pricing_version` | enum | The pricing version associated with this contract. With the 2013 pricing terms, clients pay a buy-side fee for both partner and platform inventory, and clients pay a different seller revshare for Xandr platform buyers than for bidder buyers. Note also that it is acceptable to use 2007 pricing terms if so dictated by the contract. Allowed values:<br> - `"2007.09.01"`<br> - `"2013.01.02"`<br><br>**Required On**: `POST` |
+| `seller_type` | enum | The type of seller. Allowed values:<br> - `"platform"`: The member has a signed contract allowing Xandr to take a Seller Deduction from resold impressions.<br> - `"partner"`: The member does not have a signed contract allowing Xandr to take a Seller Deduction from resold impressions, so the buying members are charged an Auction Service Fee/Deduction instead.<br><br> **Default**: `"platform"`<br><br>**Required On**: `POST` |
+| `note` | string | An optional note. |
+| `data_siphon_fee` | int | The monthly charge for receiving Xandr [log-level data feeds](../log-level-data/log-level-data-feeds.md). |
+| `mapuid_fee` | float | The monthly charge for using the Xandr user ID mapping service.<br>**Default**: `"0.00"` |
+| `monthly_minimum_imps` | int | The minimum number of impressions that the member commits to transact per month. |
+| `waive_ad_serving_fees` | boolean | This field is not used.<br>**Old or New**: `OLD` |
+| `adx_auction_service_fee_pct` | float | This field is not used. Formerly, it was the auction service fee charged when buyer clients purchase inventory from Google Ad Manager. Google Ad Manager is a special case since they are a Xandr member (with a `bidder_id` of `2`) but buyer clients pay Google Ad Manager directly and don't pay Xandr for media cost. |
+| `direct_clear_fee_pct` | float | The direct clear fee percentage. This is used for activity where the member clears the cost of media directly with the seller. |
+| `contract_type` | enum | This field is no longer used. In the past, it was used by the finance team for revenue reporting. The allowed values were:<br> - `"NIB"`: This acronym refers to a former product offering called "Network in a box".<br> - `"XIB"`: This acronym refers to a former product offering called "Exchange in a box".<br> - `"RTBX"`: This acronym refers to a former product offering called "RTB Exchange".<br> - `"MSFT"`: A Microsoft contract.<br> - `"External"`: ...<br> - `"Partner"`: ... |
+| `creative_audit_fee` | float | This field is not used. Use `auditing_fee_per_creative` instead. Formerly, it represented the total creative auditing fees. |
+| `creative_priority_fee_1` | float | This field is not used. It is a placeholder for future development. |
+| `creative_priority_fee_2` | float | The priority auditing fee per creative. |
+| `imptracker_cpm` | float | The fees charged for recording third-party impressions. |
+| `clicktracker_cpc` | float | The fees charged for recording third-party clicks. |
+| `auto_renewal_term` | int | The auto-renewal term for the member, if such a term exists in the signed contract. Currently, this is only a placeholder for the term; no billing logic is associated with this field. |
+| `seller_serving_cpm` | float | The CPM-based fee charged for each impression resold. Currently, this is only a placeholder for the fee; no billing logic is associated with this field. |
+| `monthly_spend_based_minimum` | float | The monthly minimum based on the total buyer spend (i.e., cost of media) purchased in any given month. Currently, this is only a placeholder; no billing logic is associated with this field.<br><br>**New or Old**: `OLD` |
+| `seller_revshare_pct` | float | The seller deduction percentage. This is charged when the member sells an impression to another member. |
+| `seller_revshare_minimum` | boolean | Seller revshare minimum is calculated by taking the greater of (imps seen * seller auction request cpm) or (seller revshare).<br><br>**Default**: `false`<br>**New or Old**: `OLD` |
+| `secure_whitelabel_pixel_fee` | float | The monthly charge for using the Secure White Label Pixel service. Currently, this is only a placeholder for the fee; no billing logic is associated with this field. |
+| `monthly_minimum_requests` | int | The minimum number of requests per month based on the total number of impressions seen as recorded by Xandr. Currently this is only a placeholder for the minimum; no billing logic is associated with this field.<br><br>**New or Old**: `OLD` |
+| `managed_hosted_video_cpm` | float | This is a placeholder for future development. |
+| `cross_net_hosted_video_cpm` | float | This is a placeholder for future development. |
+| `seller_auction_request_cpm` | float | The amount that a seller must pay every time they send us a bid request. This is charged even if there is no winning bid, or any bids at all. |
+| `status` | enum | **Read Only**. Allowed values:<br> - `"in_progress"`: The contract is currently in force.<br> - `"in_past"`: The contract has ended.<br> - `"in_future"`: The contract is set to begin in the future.<br><br>**Default**: `"in_future"` |
+| `member_name` | string | The name of the member. |
+| `member_is_billable` | boolean | Whether the member is billable.<br><br>**Default**: `true` |
+| `member_note` | string | This is used by Finance and Sales Ops to record custom contract terms or other invoice requirements.<br><br>**Default**: `""` |
+| `member_enable_budget_check` | boolean | Whether this member has safety checks in place to prevent unintentional overspend.<br><br>**Default**: `true` |
+| `monthly_service_fee_minimum_1` | float | The minimum monthly spend the client has committed to. This fee includes impression and click tracking.<br><br>**Old or New**: `OLD` |
+| `monthly_service_fee_minimum_2` | float | The minimum monthly spend the client has committed to. This fee does not include impression and click tracking.<br><br>**Old or New**: `OLD` |
+| `selling_enabled` | boolean | Whether this member is enabled to sell its inventory. This applies to both managed and cross-network selling.<br><br>**Default**: `true` |
+| `seller_console_buyer_revshare_pct` | float | This percentage is charged to sellers when they sell to buyers on the Xandr platform.<br<br>**Note**: The value of this field is copied from the legacy field `seller_revshare_pct`.<br><br>**Required On**: `PUT`, when updating to the new pricing_version.<br>**Old or New**: `New` |
+| `seller_bidder_buyer_revshare_pct` | float | This percentage is charged to sellers when they sell to non-Xandr bidders.<br><br>**Required On**: `PUT`, when updating to the new `pricing_version`.<br>**Old or New**: `New` |
+| `auction_revshare_partner_inv_pct` | float | The percentage charged to buyers of type `"partner"` when they buy inventory from other members.<br><br>**Default**: `"0.00"`<br>**Old or New**: `New` |
+| `auction_revshare_partner_inv_type` | string | The way the percentage defined in `"auction_revshare_partner_inv_pct"` is used to charge partner buyers. Allowed values:<br> - `"deduction"`: The agreed-upon percentage is subtracted directly from the buyer's auction revenue.<br>- `"fee"`: The percentage is charged as a fee after the auction.<br><br>**Note**: You may not set an `auction_revshare_partner_inv_type` that is different from `auction_revshare_platform_inv_type`. They should both be `"fee"` or `"deduction"`.<br><br>**Default**: `"fee"`<br>**Old or New**: `New` |
+| `auction_revshare_platform_inv_pct` | float | The percentage charged to buyers of type `"platform"` when they buy inventory from other members.<br><br>**Note**: The value of this field is copied from the field `auction_revshare_pct`.<br><br>**Default**: `"0.00"`<br>**Old or New**: `New` |
+| `auction_revshare_platform_inv_type` | string | The way the percentage defined in `"auction_revshare_platform_inv_pct"` is used to charge platform buyers. Allowed values:<br> - `"deduction"`: The agreed-upon percentage is subtracted directly from the buyer's auction revenue.<br> - `"fee"`: The percentage is charged as a fee after the auction.<br><br>**Note**:<br> - The value of this field is copied from the field `auction_revshare_type`.<br> - You may not set an `auction_revshare_platform_inv_type` that is different from `auction_revshare_partner_inv_type`. They should both be `"fee"` or `"deduction"`.<br><br>**Default**: `"fee"`<br>**Old or New**: `New` |
 
 ## Examples
 
+### Create and view a legacy contract
 
-
-**Create and view a legacy contract**
-
-``` pre
+```
 $ cat update.json
 {
   "member-contract": {
@@ -957,7 +120,7 @@ $ cat update.json
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -X POST -d @/tmp/legacy.json "http://68.67.148.153:16011/member-contract?member_id=1309"
 
 {
@@ -973,9 +136,7 @@ $ curl -b cookies -X POST -d @/tmp/legacy.json "http://68.67.148.153:16011/membe
 }
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies "http://68.67.148.153:16011/member-contract?id=3794"
 {
     "response": {
@@ -1047,11 +208,9 @@ $ curl -b cookies "http://68.67.148.153:16011/member-contract?id=3794"
 }
 ```
 
+### Create and view a contract with the current `pricing_version`
 
-
-**Create and view a contract with the current** `pricing_version`
-
-``` pre
+```
 $ cat update.json
 {
   "member-contract": {
@@ -1065,15 +224,13 @@ $ cat update.json
 }
 ```
 
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @update.json "https://api.appnexus.com/member-contract?member_id=1309"
 
 {"response":{"status":"OK","count":null,"id":7543,"start_element":null,"num_elements":null,"":null,}}
 ```
 
-
-
-``` pre
+```
 $ curl -b cookies "http://68.67.148.153:16011/member-contract?member_id=4"
 {
   "response": {
@@ -1133,9 +290,3 @@ $ curl -b cookies "http://68.67.148.153:16011/member-contract?member_id=4"
   }
   }
 ```
-
-
-
-
-
-

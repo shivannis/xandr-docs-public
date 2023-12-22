@@ -1,497 +1,74 @@
 ---
-Title : Mediated Bid Service
+title: Mediated Bid Service
+description: Use the mediated bid service to create and view mediated bids.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-<b>Note:</b> Only available to Monetize Ad
-Server customers.
 ---
 
+# Mediated bid service
 
-# Mediated Bid Service
+> [!NOTE]
+> Only available to Microsoft Monetize Ad Server customers.
 
+This service is used to create and view mediated bids. Mediated bids are an abstraction over a particular line item, campaign, and creative combination that we've created to represent demand from mediated networks in our auction.
 
-
-
-
-
-
-<b>Note:</b> Only available to Monetize Ad
-Server customers.
-
-
-
-
-
-This service is used to create and view mediated bids. Mediated bids are
-an abstraction over a particular line item, campaign, and creative
-combination that we've created to represent demand from mediated
-networks in our auction.
-
-Every bid is associated with a mediated network. For more information
-about mediated networks, see the <a
-href="mediated-network-service.md"
-class="xref" target="_blank">Mediated Network Service</a>.
-
->
+Every bid is associated with a mediated network. For more information about mediated networks, see the [Mediated Network Service](./mediated-network-service.md).
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID | View all of a member's bids. |
+| `GET` | https://api.appnexus.com/mediated-bid?id=BID_ID | View a specific bid. |
+| `POST` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Create a new bid. |
+| `PUT` | https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID <br>(+ JSON payload) | Modify a bid. |
+| `DELETE` | http://api.apnexus.com/mediated-bid?id=BID_ID | Delete a bid. |
 
+## JSON fields
 
-<table id="mediate-bid-service__table_pcx_kll_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediate-bid-service__table_pcx_kll_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="mediate-bid-service__table_pcx_kll_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="mediate-bid-service__table_pcx_kll_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__3">View all of a
-member's bids.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-bid?id=BID_ID" class="xref"
-target="_blank">https://api.appnexus.com/mediated-bid?id=BID_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__3">View a
-specific bid.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID</a>
-(+ JSON payload)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__3">Create a new
-bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID</a>
-(+ JSON payload)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__3">Modify a
-bid.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__2"><a
-href="http://api.apnexus.com/mediated-bid?id=BID_ID" class="xref"
-target="_blank">http://api.apnexus.com/mediated-bid?id=BID_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pcx_kll_twb__entry__3">Delete a
-bid.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | A unique ID for this bid. |
+| `type` | string | The type of bid. Always `"mobile"`.<br><br>**Default**: `mobile`<br>**Required On**: `POST` only; not applicable in `PUT` |
+| `name` | string | The user-supplied name of the bid.<br><br>**Required On**: `POST` |
+| `active` | Boolean | Whether this mediated bid is able to participate in auctions.<br><br>**Default**: `true`<br>**Required On**: `PUT` |
+| `member_id` | int | The unique ID number of the member associated with this bid. |
+| `line_item_id` | int | The unique ID of the line item associated with this bid. |
+| `campaign_id` | int | The unique ID of the campaign associated with this bid. |
+| `creative_id` | int | The unique ID of the creative associated with this bid. |
+| `profile_id` | int | The unique ID of the targeting profile associated with this bid. |
+| `auto_bid_adjustments_enabled` | Boolean | If enabled, Xandr will use an algorithm to determine the best estimate of what the network will pay and automatically update the bid as conditions change. |
+| `last_modified` | date time | **Read-only**. The date and time that this bid object was last modified. |
+| `mediated_network` | object | Information about the mediated network to which this bid is associated. For field definitions, see the [Mediated Network Service](./mediated-network-service.md). |
+| `mediated_network_id` | int | The unique ID of the mediated network to which this bid is associated. For field definitions, see the [Mediated Network Service](./mediated-network-service.md).<br><br>**Required On**: `POST` |
+| `campaign` | object | Information about the campaign to which this bid is associated. For field definitions, see the [Campaign Service](./campaign-service.md). |
+| `line-item` | object | Information about the line item to which this bid is associated. For field definitions, see the [Line Item Service](./line-item-service.md).<br><br>**Required On**: `POST` |
+| `profile` | object | Information about the profile to which this bid is associated. For field definitions, see the [Profile Service](./profile-service.md). |
+| `creative` | object | Information about the creative associated with this bid. For field definitions, see the [Creative Service](./creative-service.md).<br><br>**Required On**: `POST` |
+| `reporting_macros` | array of objects | See the [Reporting Macros](#reporting-macros) section below. |
+| `label` | array of objects | The user-supplied label attached to this bid. This is an arbitrary string with no purpose other than sorting in the UI. |
 
+## Reporting macros
 
+| Name | Type | Sort by? | Filter by? |
+|:---|:---|:---|:---|
+| `id` | int | Yes | Yes |
+| `template_id` | int | Yes | Yes |
+| `parameter` | string | No | No |
+| `name` | string | No | No |
+| `last_modified` | date | Yes | Yes |
 
+### Label
 
-
->
-
-## JSON Fields
-
-
-
-<table id="mediate-bid-service__table_jxc_qll_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediate-bid-service__table_jxc_qll_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="mediate-bid-service__table_jxc_qll_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mediate-bid-service__table_jxc_qll_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">A unique ID
-for this bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>The type
-of bid. Always <code class="ph codeph">"mobile"</code>.</p>
-<p><strong>Default:</strong> <code class="ph codeph">mobile </code></p>
-<p><strong>Required On:</strong> <code class="ph codeph">POST</code>
-only; not applicable in <code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>The
-user-supplied name of the bid.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>Whether
-this mediated bid is able to participate in auctions.</p>
-<p><strong>Default:</strong> <code class="ph codeph">true</code></p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The unique ID
-number of the member associated with this bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">line_item_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The unique ID
-of the line item associated with this bid.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">campaign_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The unique ID
-of the campaign associated with this bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">creative_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The unique ID
-of the creative associated with this bid.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The unique ID
-of the targeting profile associated with this bid.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">auto_bid_adjustments_enabled</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">If enabled,
-Xandr will use an algorithm to determine the best estimate of what the
-network will pay and automatically update the bid as conditions
-change.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">date
-time</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><strong>Read-only.</strong>
-The date and time that this bid object was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">mediated_network</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">Information
-about the mediated network to which this bid is associated. For field
-definitions, see the <a
-href="mediated-network-service.md"
-class="xref" target="_blank">Mediated Network Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">mediated_network_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>The unique
-ID of the mediated network to which this bid is associated. For field
-definitions, see the <a
-href="mediated-network-service.md"
-class="xref" target="_blank">Mediated Network Service</a>.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">campaign</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">Information
-about the campaign to which this bid is associated. For field
-definitions, see the <a
-href="campaign-service.md"
-class="xref" target="_blank">Campaign Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">line-item</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>Information
-about the line item to which this bid is associated. For field
-definitions, see the <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a> .</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">profile</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">Information
-about the profile to which this bid is associated. For field
-definitions, see the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">creative</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3"><p>Information
-about the creative associated with this bid. For field definitions, see
-the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">reporting_macros</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">See the <a
-href="mediated-bid-service.md#MediatedBidService-ReportingMacros"
-class="xref" target="_blank">Reporting Macros</a> section below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__1"><code
-class="ph codeph">label</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_jxc_qll_twb__entry__3">The
-user-supplied label attached to this bid. This is an arbitrary string
-with no purpose other than sorting in the UI.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
-
-## Reporting Macros
-
-
-
-<table id="mediate-bid-service__table_zwt_wll_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediate-bid-service__table_zwt_wll_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="mediate-bid-service__table_zwt_wll_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mediate-bid-service__table_zwt_wll_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Sort by?</th>
-<th id="mediate-bid-service__table_zwt_wll_twb__entry__4"
-class="entry align-left colsep-1 rowsep-1">Filter by?</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__3">Yes</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__4">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__1"><code
-class="ph codeph">template_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__3">Yes</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__4">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__1"><code
-class="ph codeph">parameter</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__3">No</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__4">No</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__3">No</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__4">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__3">Yes</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_zwt_wll_twb__entry__4">Yes</td>
-</tr>
-</tbody>
-</table>
-
-**Label**
-
-<table id="mediate-bid-service__table_pnx_zll_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediate-bid-service__table_pnx_zll_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="mediate-bid-service__table_pnx_zll_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mediate-bid-service__table_pnx_zll_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Sort by?</th>
-<th id="mediate-bid-service__table_pnx_zll_twb__entry__4"
-class="entry align-left colsep-1 rowsep-1">Filter by?</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pnx_zll_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pnx_zll_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pnx_zll_twb__entry__3">Yes</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediate-bid-service__table_pnx_zll_twb__entry__4">No</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
+| Name | Type | Sort by? | Filter by? |
+|:---|:---|:---|:---|
+| `name` | string | Yes | No |
 
 ## Examples
 
+### See all of a member's bids
 
-
-**See all of a member's bids**
-
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
 
 {
@@ -1651,13 +1228,9 @@ $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
 }
 ```
 
+### Create a bid
 
-
-
-
-**Create a bid**
-
-``` pre
+```
 $ cat add-mediated-bid.json
 
 {
@@ -2106,13 +1679,9 @@ $ curl -b cookies -X POST -d @add-mediated-bid.json 'https://api.appnexus.com/me
 }
 ```
 
+### Update a bid
 
-
-
-
-**Update a bid**
-
-``` pre
+```
 $ cat edit-mediated-bid.json
 
 {
@@ -2530,13 +2099,9 @@ $ curl -b cookies -X PUT -d @edit-mediated-bid.json 'https://api.appnexus.com/me
 }
 ```
 
+### Delete a bid
 
-
-
-
-**Delete a bid**
-
-``` pre
+```
 $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=4371&advertiser_id=111313&id=891' 
 
 {
@@ -2549,36 +2114,10 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=437
 }
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="line-item-service.md"
-  class="xref" target="_blank">Line Item Service</a>
-- <a
-  href="campaign-service.md"
-  class="xref" target="_blank">Campaign Service</a>
-- <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a>
-- <a
-  href="profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="mediated-network-service.md"
-  class="xref" target="_blank">Mediated Network Service</a>
-
-
-
-
-
-
-
-
+- [Line Item Service](./line-item-service.md)
+- [Campaign Service](./campaign-service.md)
+- [Creative Service](./creative-service.md)
+- [Profile Service](./profile-service.md)
+- [Mediated Network Service](./mediated-network-service.md)

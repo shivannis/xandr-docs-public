@@ -1,47 +1,22 @@
 ---
-Title : Mediation Services
-Description : This section describes the Xandr mediation APIs.
+title: Mediation Services
+description: This article describes the mediation services and how these API services connect with each other and the outside world.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-
-# Mediation Services
-
-
+# Mediation services
 
 This section describes the Xandr mediation APIs.
 
+> [!NOTE]
+> Mediation services are only available to Microsoft Monetize Ad Server customers.
 
+The following diagram provides a high-level overview of how these API services connect with each other and the outside world.
 
-<b>Note:</b> Mediation services are only
-available to Monetize Ad Server customers.
+:::image type="content" source="media/mediation-service-fig-a.png" alt-text="Diagram providing a high-level overview of how the mediation services connect with each other and the outside world.":::
 
+## Related topics
 
-
-The following diagram provides a high-level overview of how these API
-services connect with each other and the outside world.
-
-![Mediation](media/mediation-service-fig-a.png)
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
-
-
+- [API Best Practices](./api-best-practices.md)
+- [API Semantics](./api-semantics.md)

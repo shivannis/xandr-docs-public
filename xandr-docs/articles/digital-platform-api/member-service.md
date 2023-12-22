@@ -1,1822 +1,226 @@
 ---
-Title : Member Service
-Description : A member is any entity that has a financial relationship with
+title: Digital Platform API - Member Service
+description: This article provides information on member service. Each member has multiple users with their own UI and API credentials managed by the User Service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-Xandr, and each client is a single member.
 ---
 
+# Digital Platform API - Member service
 
-# Member Service
+A member is any entity that has a financial relationship with Xandr, and each client is a single member. Members are registered with the Member Service by Xandr personnel, and all API activity must be associated with a member. Note that the Member Service does not grant API or UI access. Each member has multiple users who have their own UI and API credentials, and are managed by the [User Service](./user-service.md).
 
-
-
-A member is any entity that has a financial relationship with
-Xandr, and each client is a single member.
-Members are registered with the Member Service by
-Xandr personnel, and all API activity must be
-associated with a member. Note that the Member Service does not grant
-API or UI access. Each member has multiple users who have their own UI
-and API credentials, and are managed by the
-<a href="user-service.md"
-class="xref" target="_blank">User Service</a> .
-
-Members and Contracts  
-Before they can buy or sell ads, a member needs a contract with
-Xandr. This contract will establish financial
-terms and credit facilities (if applicable), and bind the member to the
-terms and conditions of Xandr, such as content
-quality and use of personally identifiable information.
-
+**Members and Contracts**
+<br>Before they can buy or sell ads, a member needs a contract with Xandr. This contract will establish financial terms and credit facilities (if applicable), and bind the member to the terms and conditions of Xandr, such as content quality and use of personally identifiable information.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__REST_API__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="ID-00000fd3__REST_API__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00000fd3__REST_API__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__2"><a
-href="https://api.appnexus.com/member" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__3">View your member</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__2"><a
-href="https://api.appnexus.com/member?id=MEMBER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member?id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__3">View a particular member, if
-you have multiple</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__2"><a
-href="https://api.appnexus.com/member/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member/meta</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__3">Find out which fields you can
-filter and sort by</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__1"><code
-class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__2"><a
-href="https://api.appnexus.com/member?id=MEMBER_ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member?id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__3">Modify an existing member</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__1"><code
-class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__2"><a
-href="https://api.appnexus.com/member" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/member</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__REST_API__entry__3">Add a new member
-(Admin-only)</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/member | View your member |
+| `GET` | https://api.appnexus.com/member?id=MEMBER_ID | View a particular member, if you have multiple |
+| `GET` | https://api.appnexus.com/member/meta | Find out which fields you can filter and sort by |
+| `PUT` | https://api.appnexus.com/member?id=MEMBER_ID | Modify an existing member |
+| `POST` | https://api.appnexus.com/member | Add a new member (**Admin-only**) |
 
+## JSON fields
 
+| Field | Type | Description |  |  |  |  |  |  |  |  |  |
+|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
+| `allow_ad_profile_override` | Boolean | If `true`, the ad quality restrictions in `default_ad_profile_id` will take precedence over ad quality restrictions defined at the placement level. For example, if you restrict Advertiser X in the default ad quality profile at the network level, but do not restrict Advertiser X at the placement level, Advertiser X will still be restricted. If you set this to `false` , settings at the placement level will take precedence.<br><br>**Note**: If you set this to `true`, you must set the `default_ad_profile_id` as well.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `allow_non_cpm_payment` | Boolean | **Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `app_contract_accepted` | Boolean | **Not yet supported**. Indicates whether the member has agreed to the Xandr terms of service contract for Xandr's exchange. Non-admin users can only change this field from `False` to `True`. In order to set it from `True` to `False`, contact your Xandr representative.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `audit_notify_email` | string | Each time Xandr audits a creative belonging to this member, a detailed response is sent to this email address. The response includes the creative's audit status and any reasons why the creative has not passed audit. This field supports multiple comma-separated email addresses. Could also be used for domain audit notification ( see `domain_blocklist_email` below). |  |  |  |  |  |  |  |  |  |
+| `buyer_clearing_fee_pct` | double | **Admin-only**. The percent of the CPM paid for inventory charged as a fee in certain cases. See your contract for more information. |  |  |  |  |  |  |  |  |  |
+| `buyer_credit_limit` | double | **Admin-only**. The credit limit with Xandr taken into consideration when the member is buying inventory. |  |  |  |  |  |  |  |  |  |
+| `contact_email` | string | The email contact for this member. |  |  |  |  |  |  |  |  |  |
+| `content_categories` | array of objects | A list of available categories that you can apply to publishers, sites, and placements. Can be customized by the member. [The array is of the following format](#content-categories-array-format). |  |  |  |  |  |  |  |  |  |
+| `contract_allows_unaudited` | Boolean | **Admin-only**. See `default_campaign_trust` and `default_campaign_allow_unaudited` for information about Xandr-reviewed inventory. If your contract does not allow you to run on non-Xandr-reviewed inventory for some reason, this will be `false`.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `creative_size_fee_per_gb` | float | **Read-only**. The fee that is charged per GB for a creative that exceeds the `creative_size_minimum_bytes`. |  |  |  |  |  |  |  |  |  |
+| `creative_size_minimum_bytes` | int | **Read-only**. The size above which a creative is considered over-sized. The member is charged a creative overage fee for serving an over-sized creative. |  |  |  |  |  |  |  |  |  |
+| `daily_budget` | money | The safety budget for your member, in U.S. dollars. The safety budget establishes a member-wide cap for your daily CPM media cost on third-party inventory. This helps limit the risk of unintentional overspend due to trafficking and campaign setup errors. Your safety budget always operates on the `timezone` of your member and resets each day at 12am.<br><br>To control who receives email notifications when your safety budget is approached, use the `send_safety_budget_notifications` field on the [User Service](./user-service.md).<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `daily_budget_imps` | int | The safety budget for your member, in impressions. See `daily_budget` above for more details.<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `daily_imps_self_audited` | int |  |  |  |  |  |  |  |  |  |  |
+| `daily_imps_unaudited` | int |  |  |  |  |  |  |  |  |  |  |
+| `daily_imps_verified` | int |  |  |  |  |  |  |  |  |  |  |
+| `deal_types` | array of objects | **Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `default_accept_data_provider_usersync` | Boolean | See `default_accept_supply_partner_usersync`.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_accept_deals` | Boolean | If `true`, the `acceptance_status` field of the [Deal Buyer Setting Service](./deal-buyer-setting-service.md) defaults to `active`, if `false`, the `acceptance_status` defaults to `pending`.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_accept_demand_partner_usersync` | Boolean | See `default_accept_supply_partner_usersync`.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_accept_supply_partner_usersync` | Boolean | We use pixels to sync user IDs between Xandr and our major non-platform supply partners, such as Google, and third party data providers. This increases our ability to apply frequency and recency caps and segment data across the Internet. You can opt not to participate in user syncing; however this reduces our ability to apply the right information to your campaigns.<br><br>**Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_ad_profile_id` | int | The ID of the default [Ad Profile](./ad-profile-service.md) to use. This is required when `allow_ad_profile_override` is `true`. |  |  |  |  |  |  |  |  |  |
+| `default_allow_cpa` | Boolean | **Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_allow_cpc` | Boolean | **Default**: `true` |  |  |  |  |  |  |  |  |  |
+| `default_buyer_group_id` | int | Currently used for an alpha feature. |  |  |  |  |  |  |  |  |  |
+| `default_campaign_allow_unaudited` | Boolean | You can choose to apply Inventory Quality criteria to your campaigns (sensitive attributes, intended audience, etc.). If this field is `false`, then certain inventory quality criteria will be applied by default to each campaign. You can override it at any time in the Campaign Manager or through the campaign's [profile](./profile-service.md). If `true`, no inventory quality criteria will be applied to your campaigns unless you manually apply it.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `default_campaign_trust` | enum | Xandr reviews a significant portion of inventory and applies quality attributes, and also encourages members who sell on our platform to review their inventory in the same manner. If you would like campaigns to by default run only on Xandr-reviewed inventory, then set this field to `"appnexus"`. If you want to default to your seller trust settings, which may include seller-reviewed and unreviewed inventory, set this field to `"seller"`. You can override this with the campaign's [profile](./profile-service.md).<br>Possible values:<br> - `seller`<br> - `appnexus`<br><br>**Default**: `appnexus` |  |  |  |  |  |  |  |  |  |
+| `default_content_retrieval_timeout_ms` | int | The default timeout, specified in milliseconds, for all placements created by this member. The default value of `0` will mean that mediated content will not be served.<br><br>**Note**: This setting can still be overridden by the `content_retrieval_timeout_ms` field on the placement itself.<br><br>**Default**: `0` |  |  |  |  |  |  |  |  |  |
+| `default_country` | array of objects | The objects are:<br> - `"country_id"`<br>- `"country_name"`<br> - `"country_code"`<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `default_currency` | string | The default currency for this member. Can be overridden at more granular levels. For possible currency values, please use the [Currency Service](./currency-service.md).<br><br>**Default**: `USD` |  |  |  |  |  |  |  |  |  |
+| `default_enable_for_mediation` | Boolean | Whether placements created by this member are enabled to serve mediation creatives by default. Even if this field is set to `false`, the `enable_for_mediation` field on the placement itself can still override the behavior defined here.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `default_placement_id` | int | The placement ID to be used as a default when an inactive or nonexistent seller tag is called. |  |  |  |  |  |  |  |  |  |
+| `developer_id` | int | **Read-only**. The ID of the developer, if the member is developing on Xandr's platform (e.g., for the Apps Marketplace). |  |  |  |  |  |  |  |  |  |
+| `domain_blocklist_email` | string | When Xandr finds domains belonging to this member to be in violation of its standards and auditing policies, the domains are put into a blocklist, and an email is sent to this email address. The email identifies the domain URL, average daily impressions, and blocklist reason(s) for each domain that averaged at least 10,000 daily impressions over the last 7 days. Blocked domains that averaged less than 10,000 daily impressions over the last 7 days are not included in the email.<br><br>**Note**: If no email address is provided here, the email address in the `audit_notify_email` is used instead. |  |  |  |  |  |  |  |  |  |
+| `dongle` | string | A code that is used as a password for a member's debug output. |  |  |  |  |  |  |  |  |  |
+| `email_code` | string(50) | Email code is a unique value used when placements are processed via our email tag processing tool. Must be an alphanumeric value. |  |  |  |  |  |  |  |  |  |
+| `enable_click_and_imp_trackers` | Boolean | **Admin-only**. If `true`, external click and impression trackers can be created in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `entity_type` | enum | **Admin-only**. A legacy field that may be used in the future. Possible values: `"reseller"` or `"direct"` (deprecated).<br><br>**Default**: `"reseller"` |  |  |  |  |  |  |  |  |  |
+| `expose_eap_ecp_placement_settings` | Boolean | **Deprecated as of March 2011**. |  |  |  |  |  |  |  |  |  |
+| `expose_optimization_levers` | Boolean | **Admin-only**. If `true`, optimization levers are shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `floor_optimization` | array of objects | **Read-only**. Indicates if floor optimization is enabled for this member and provides the bidder ID of a real-time price provider. See [Floor Optimization](#floor-optimization) below for the definitions of the objects in this array. May also be set to `null` to disable the feature. |  |  |  |  |  |  |  |  |  |
+| `id` | int | The ID of the member.<br><br>**Required on**: `PUT` |  |  |  |  |  |  |  |  |  |
+| `interface_domain` | string(100) | **This field is being deprecated**. |  |  |  |  |  |  |  |  |  |
+| `interface_domain_beta` | string(100) | **This field is being deprecated**. |  |  |  |  |  |  |  |  |  |
+| `inventory_trust` | array of objects | This controls who you buy from and whether Xandr will use their quality and category information for targeting. See [Inventory Trust](#inventory-trust) below for more details. |  |  |  |  |  |  |  |  |  |
+| `is_iash_compliant` | Boolean | **Admin-only**. If a selling member is IASH compliant, a logo will be placed next to the member's name in Partner Center.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `last_modified` | timestamp | The timestamp of last modification to this member. |  |  |  |  |  |  |  |  |  |
+| `max_hosted_video_size` | int | **Admin-only**. The maximum file size for hosted in-stream video creatives. In addition to limiting file size, setting this field enables the member to host videos with Xandr. |  |  |  |  |  |  |  |  |  |
+| `mediation` | array of objects | **Read-only**. Indicates whether automatic bid adjustments and reporting sync are enabled for this member. See [Mediation](#mediation) below for the definitions of the objects in this array. |  |  |  |  |  |  |  |  |  |
+| `member_brand_exceptions` | array of objects | An array of brand IDs. Creatives associated with these brands will be allowed to serve more than once per page load on your publishers' pages (4 on those publishers' pages who have enabled sell-side page caps via the `seller_page_cap_enabled` field of the [Publisher Service](./publisher-service.md)). You can also add per-publisher brand exceptions using the `publisher_brand_exceptions` field of the [Publisher Service](./publisher-service.md). See [Member Brand Exceptions](#member-brand-exceptions) for the definitions of the objects stored in this array.<br><br>**Default**: n/a |  |  |  |  |  |  |  |  |  |
+| `name` | string | The name of the member.<br><br>**Required on**: `POST` |  |  |  |  |  |  |  |  |  |
+| `native_custom_keys` | array of objects | Some sellers of native advertising require buyers to use `"custom keys"` to target their inventory. These keys will vary from member to member. This field allows sellers to define what custom values they'd like buyers to pass in via a native creative. For more information, see [Native Custom Keys](#native-custom-keys) below.<br><br>**Note**: You can obtain a list of native custom keys using the read-only [Native Custom Keys](#native-custom-keys).<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `no_reselling_priority` | int | This value is used to determine whether RTB bids are allowed to compete with your managed campaigns. In order for an RTB bid to be able to compete with a managed bid for an impression, this field's value must be greater than the priority of the managed bid.<br><br>For example, let's say you have the following [auction and settings](#auction-and-settings-for-no_reselling_priority). In this example, the RTB bid will not compete, even though its bid price is higher. In order for RTB to compete on this impression, `no_reselling_priority` would have to be 9 or higher.<br><br>In addition, when reselling is allowed for an impression, the highest priority standard managed demand will be allowed to compete with the highest priority guaranteed demand (as well as with RTB). |
+| `pitbull_segment_id` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
+| `pitbull_segment_value` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
+| `platform_exposure` | enum | This determines whether and how your member appears in the **Buyers** tab of the Ad Quality Manager in and in the [Platform Member](./platform-member-service.md) service. Possible values:<br> - `"public"` = Your member name is shown.<br> - `"private"` = Your member ID is shown.<br> - `"hidden"` = Your member does not appear.<br><br>**Note**:<br> - Setting `platform_exposure` to `"hidden"` will hide your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file and list your member seat as `"is_confidential": 1`. See [example](#setting-platform_exposure-to-hidden). <br>This can limit the monetization of your inventory as some DSPs may not choose to buy impressions from sellers who are not transparent in the `"schain"` object.<br><br> - Setting `platform_exposure` to `"public"` will display your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file. See [example](#setting-platform_exposure-to-public).<br><br> - Note that `primary_type` must be either `"buyer"` or `"network"` in order for it to appear in the **Buyers** tab of the Ad Quality Manager in.<br><br>**Default**: `"public"` |  |  |  |  |  |  |  |  |  |
+| `plugins` | array | The plugins that users see on the Apps tab in. See [Plugins](#plugins) below for more details. |  |  |  |  |  |  |  |  |  |
+| `plugins_enabled` | Boolean | **Admin-only**. If `true`, the **Apps** tab is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `pops_enabled_UI` | Boolean | **Admin-only**. If `true`, pop ad support is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `prioritize_margin` | Boolean | If set to `true` Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings. If set to `false` Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum.<br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `reporting_decimal_type` | enum | The decimal mark used in reporting. This setting can be overridden at the user and report levels (see `"reporting_decimal_type"` in the [User Service](./user-service.md) and [Report Service](./report-service.md)). Possible values:<br> - `"comma"`<br> - `"decimal"` (period)<br><br>**Default**: `"decimal"` |  |  |  |  |  |  |  |  |  |
+| `reselling_description` | string | This description is not currently used in. |  |  |  |  |  |  |  |  |  |
+| `reselling_exposure` | enum | Whether or not to expose the member's inventory to the platform for reselling in the real-time marketplace. Possible values: `"public"` or `"private"`.<br><br>**Default**: `"private"`  |  |  |  |  |  |  |  |  |  |
+| `reselling_exposed_on` | string | The date and time at which `reselling_exposure` was changed to `"public"` |  |  |  |  |  |  |  |  |  |
+| `seller_member_groups` | array of objects | **Admin-only**. Specifies information about the groups of sellers to which this member belongs. See [Seller Member Group](#seller-member-group) below for more information. |  |  |  |  |  |  |  |  |  |
+| `seller_revshare_pct` | int |**Admin-only**. If this member is a seller and has a revenue sharing agreement with Xandr, the Xandr portion of the revenue sharing is indicated here. |  |  |  |  |  |  |  |  |  |
+| `serving_domain` | object | **Admin-only**. The domain through which advertisements are served. The format of the object is `{"cname":"ad.domain.com","type":null}` |  |  |  |  |  |  |  |  |  |
+| `sherlock_notify_email` | string | Each time Sherlock scans a creative belonging to this member, a response is sent to this email address. The response includes the creative's audit status and any reasons why the creative has not passed audit. This email address will also receive [object limit notifications](../bidders/object-limits---faq.md), sent when you reach 85, 95, and 100 percent of your limit for an object. This field supports multiple comma-separated email addresses. |  |  |  |  |  |  |  |  |  |
+| `short_name` | string | URL-friendly name to be used as needed. |  |  |  |  |  |  |  |  |  |
+| `standard_sizes` | array | The list of sizes which are included in the standard sizes dropdown in when creating creatives. The array is of the following format:<br> `[{"width":"120","height":"600","is_standard":true},{"width":"160","height":"600","is_standard":true}, ... ,{"width":"728","height":"90","is_standard":true},{"width":"800","height":"60","is_standard":false}]` |  |  |  |  |  |  |  |  |  |
+| `state` | enum | The state of the member. Possible values: `"active"` or `"inactive"`. |  |  |  |  |  |  |  |  |  |
+| `thirdparty_pixels` | array | **Read-only**. An array of third-party pixels associated with the member. You can automatically attach these pixels to all creatives owned by this member using the [Third-party Pixel service](./third-party-pixel-service.md) or attach them individually at the creative level using the [Creative Service](./creative-service.md).<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `timezone` | enum | The timezone of the member. See [API Timezones](./api-timezones.md) for details and accepted values. To change the default timezone of an individual advertiser, use the [Advertiser Service](./advertiser-service.md). If no timezone is specified in the Advertiser Service, advertisers inherit the member's timezone.<br><br>**Default**: `"EST5EDT"` |  |  |  |  |  |  |  |  |  |
+| `use_insertion_orders` | Boolean | If `true`, use insertion orders (an organizational level above line items) for this member.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
+| `visibility_profile_id` | int | The ID of the optional visibility profile attached to the member. See the [Visibility Profile Service](./visibility-profile-service.md) for more details.<br><br>**Default**: `null` |  |  |  |  |  |  |  |  |  |
+| `website_url` | string | The company website for this member. This is used in a number of areas where contact details are displayed. |  |  |  |  |  |  |  |  |  |
 
+### Content categories array format
 
-## JSON Fields
+```
+[{"id":"2950","name":"Animals"},{"id":"2951","name":"Arts
+& Humanities"}, ...
+,{"id":"2977","name":"Travel"}]
+```
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">allow_ad_profile_override</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>If <code
-class="ph codeph">true</code>, the ad quality restrictions in <code
-class="ph codeph">default_ad_profile_id</code> will take precedence over
-ad quality restrictions defined at the placement level. For example, if
-you restrict Advertiser X in the default ad quality profile at the
-network level, but do not restrict Advertiser X at the placement level,
-Advertiser X will still be restricted. If you set this to <code
-class="ph codeph">false</code> , settings at the placement level will
-take precedence.</p>
+### Auction and settings for `no_reselling_priority`
 
+| Bid Type | Bid Price | Priority |
+|:---|:---|:---|
+| RTB | $5 | 8 (`no_reselling_priority`) |
+| Managed | $3 | 8 ( priority) |
 
-<b>Note:</b> If you set this to <code
-class="ph codeph">true</code>, you must set the <code
-class="ph codeph">default_ad_profile_id</code> as well.
+### Setting `platform_exposure` to `hidden`
 
+```
+{
+"seller_id": "7694",
+"seller_type": "INTERMEDIARY",
+"domain": "groupm.com",
+"name": "Xaxis – Slovakia Marketplace"
+}
+```
 
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">allow_non_cpm_payment</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Default</strong>:
-<code class="ph codeph">true</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">app_contract_accepted</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><strong>Not yet
-supported</strong>. Indicates whether the member has agreed to the <span
-class="ph">Xandr terms of service contract for <span
-class="ph">Xandr's exchange. Non-admin users can only change this
-field from <code class="ph codeph">False</code> to <code
-class="ph codeph">True</code>. In order to set it from <code
-class="ph codeph">True</code> to <code class="ph codeph">False</code>,
-contact your Xandr representative.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">audit_notify_email</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Each time <span
-class="ph">Xandr audits a creative belonging to this member, a
-detailed response is sent to this email address. The response includes
-the creative's audit status and any reasons why the creative has not
-passed audit. This field supports multiple comma-separated email
-addresses. Could also be used for domain audit notification ( see <code
-class="ph codeph">domain_blacklist_email</code> below).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">buyer_clearing_fee_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-The percent of the CPM paid for inventory charged as a fee in certain
-cases. See your contract for more information.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">buyer_credit_limit</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-The credit limit with Xandr taken into
-consideration when the member is buying inventory.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">contact_email</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The email contact for this
-member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">content_categories</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">A list of available
-categories that you can apply to publishers, sites, and placements. Can
-be customized by the member. The array is of the following format:
-<p><code
-class="ph codeph">[{"id":"2950","name":"Animals"},{"id":"2951","name":"Arts &amp; Humanities"}, ... ,{"id":"2977","name":"Travel"}]</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">contract_allows_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><strong>Admin-only</strong>.
-See <code class="ph codeph">default_campaign_trust</code> and <code
-class="ph codeph">default_campaign_allow_unaudited</code> for
-information about Xandr-reviewed inventory. If
-your contract does not allow you to run on non-<span
-class="ph">Xandr-reviewed inventory for some reason, this will be
-<code class="ph codeph">false</code>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">creative_size_fee_per_gb</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Read-only</strong>.
-The fee that is charged per GB for a creative that exceeds the <code
-class="ph codeph">creative_size_minimum_bytes</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">creative_size_minimum_bytes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Read-only</strong>.
-The size above which a creative is considered over-sized. The member is
-charged a creative overage fee for serving an over-sized creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">daily_budget</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">
-The safety budget for your member, in U.S. dollars. The safety budget
-establishes a member-wide cap for your daily CPM media cost on
-third-party inventory. This helps limit the risk of unintentional
-overspend due to trafficking and campaign setup errors. Your safety
-budget always operates on the <code class="ph codeph">timezone</code> of
-your member and resets each day at 12am.
-<ul>
-<li>To control who receives email notifications when your safety budget
-is approached, use the <code
-class="ph codeph">send_safety_budget_notifications</code> field on the
-<a href="user-service.md"
-class="xref" target="_blank">User Service</a>.</li>
-</ul>
+### Setting `platform_exposure` to `public`
 
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">daily_budget_imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>The safety budget for
-your member, in impressions. See <code
-class="ph codeph">daily_budget</code> above for more details.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">daily_imps_self_audited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">daily_imps_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">daily_imps_verified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">deal_types</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Default</strong>:
-<code class="ph codeph">null</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_accept_data_provider_usersync</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">See <code
-class="ph codeph">default_accept_supply_partner_usersync</code>.
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_accept_deals</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>If <code
-class="ph codeph">true</code>, the <code
-class="ph codeph">acceptance_status</code> field of the <a
-href="deal-buyer-setting-service.md"
-class="xref" target="_blank">Deal Buyer Setting Service</a> defaults to
-<code class="ph codeph">active</code>, if <code
-class="ph codeph">false</code>, the <code
-class="ph codeph">acceptance_status</code> defaults to <code
-class="ph codeph">pending</code>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_accept_demand_partner_usersync</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>See <code
-class="ph codeph">default_accept_supply_partner_usersync</code>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_accept_supply_partner_usersync</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">We use pixels to sync user
-IDs between Xandr and our major non-platform
-supply partners, such as Google, and third party data providers. This
-increases our ability to apply frequency and recency caps and segment
-data across the Internet. You can opt not to participate in user
-syncing; however this reduces our ability to apply the right information
-to your campaigns.
-<p><strong>Default</strong>: <code
-class="ph codeph">true</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_ad_profile_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The ID of the default <a
-href="ad-profile-service.md"
-class="xref" target="_blank">Ad Profile</a> to use. This is required
-when <code class="ph codeph">allow_ad_profile_override</code> is <code
-class="ph codeph">true</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_allow_cpa</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Default</strong>:
-<code class="ph codeph">true</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_allow_cpc</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Default</strong>:
-<code class="ph codeph">true</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_buyer_group_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Currently used for an alpha
-feature.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_campaign_allow_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>You can choose to apply
-Inventory Quality criteria to your campaigns (sensitive attributes,
-intended audience, etc.). If this field is <code
-class="ph codeph">false</code>, then certain inventory quality criteria
-will be applied by default to each campaign. You can override it at any
-time in the Campaign Manager or through the campaign's <a
-href="profile-service.md"
-class="xref" target="_blank">profile</a>. If <code
-class="ph codeph">true</code>, no inventory quality criteria will be
-applied to your campaigns unless you manually apply it.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_campaign_trust</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><span
-class="ph">Xandr reviews a significant portion of inventory and
-applies quality attributes, and also encourages members who sell on our
-platform to review their inventory in the same manner. If you would like
-campaigns to by default run only on <span
-class="ph">Xandr-reviewed inventory, then set this field to <code
-class="ph codeph">"</code><code
-class="ph codeph">appnexus</code><code
-class="ph codeph">"</code>. If you want to default to your seller trust
-settings, which may include seller-reviewed and unreviewed inventory,
-set this field to <code class="ph codeph">"seller"</code>. You can
-override this with the campaign's <a
-href="profile-service.md"
-class="xref" target="_blank">profile.</a></p>
-<p>Possible values:</p>
-<ul>
-<li><code class="ph codeph">seller</code></li>
-<li><code class="ph codeph">appnexus</code></li>
-</ul>
-<p><strong>Default</strong>: appnexus</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_content_retrieval_timeout_ms</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">
-The default timeout, specified in milliseconds, for all placements
-created by this member. The default value of <code
-class="ph codeph">0</code> will mean that mediated content will not be
-served.
+```
+{
+"seller_id": "8253",
+"is_confidential": 1,
+"seller_type": "PUBLISHER"
+}
+```
 
-<b>Note:</b> This setting can still be
-overridden by the <code
-class="ph codeph">content_retrieval_timeout_ms</code> field on the
-placement itself.
+### Server of record
 
+> [!NOTE]
+> Server of record applies only to Publisher Ad Server clients.
 
-<p><strong>Default</strong>: <code class="ph codeph">0</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_country</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">
-The objects are:
-<ul>
-<li><code class="ph codeph">"country_id"</code></li>
-<li><code class="ph codeph">"country_name"</code></li>
-<li><code class="ph codeph">"country_code"</code></li>
-</ul>
+| Field | Type | Description |
+|:---|:---|:---|
+| `server_of_record` | object | For some line items, the most important performance indicator is that the line item delivers its budget in full and evenly across its flight dates. This object is used to hold configuration details related to these line items. <br><br>**Default**: `null` |
+| `enforce_true_priority_tiers` | Boolean | **Deprecated**.<br>For more information about Guaranteed Delivery line items, see the `delivery_goal` array on the [Line Item Service](./line-item-service.md).<br><br>**Default**: `false` |
+| `guaranteed_delivery_enabled` | Boolean | If `true`, this member has access to guaranteed delivery features.<br><br>**Default**: `false` |
+| `guaranteed_delivery_version` | int | This temporary flag denotes the version of the Guaranteed Delivery pacing algorithm being used. It can be set at either the member or [line item](./line-item-service.md) level. The flag will be removed when the new version (2) of the algorithm is released platform-wide. Allowed values:<br>`1`<br>`2`<br><br>**Default**: `null` |
 
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_currency</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>The default currency for
-this member. Can be overridden at more granular levels. For possible
-currency values, please use the <a
-href="currency-service.md"
-class="xref" target="_blank">Currency Service</a>.</p>
-<p><strong>Default</strong>: <code class="ph codeph">USD</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_enable_for_mediation</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>Whether placements
-created by this member are enabled to serve mediation creatives by
-default. Even if this field is set to <code
-class="ph codeph">false</code>, the <code
-class="ph codeph">enable_for_mediation</code> field on the placement
-itself can still override the behavior defined here.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">default_placement_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The placement ID to be used
-as a default when an inactive or nonexistent seller tag is called.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">developer_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Read-only</strong>.
-The ID of the developer, if the member is developing on <span
-class="ph">Xandr's platform (e.g., for the Apps
-Marketplace).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">domain_blacklist_email</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">When <span
-class="ph">Xandr finds domains belonging to this member to be in
-violation of its standards and auditing policies, the domains are put
-into a blocklist, and an email is sent to this email address. The email
-identifies the domain URL, average daily impressions, and blocklist
-reason(s) for each domain that averaged at least 10,000 daily
-impressions over the last 7 days. Blocked domains that averaged less
-than 10,000 daily impressions over the last 7 days are not included in
-the email.
+### Native custom keys
 
-<b>Note:</b> If no email address is provided
-here, the email address in the <code
-class="ph codeph">audit_notify_email</code> is used instead.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">dongle</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">A code that is used as a
-password for a member's debug output.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">email_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string(50)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Email code is a unique
-value used when placements are processed via our email tag processing
-tool. Must be an alphanumeric value.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">enable_click_and_imp_trackers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-If <code class="ph codeph">true</code>, external click and impression
-trackers can be created in .
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">entity_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><strong>Admin-only</strong>.
-A legacy field that may be used in the future. Possible values: <code
-class="ph codeph">"reseller"</code> or <code
-class="ph codeph">"direct"</code> (deprecated).</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">"reseller"</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">expose_eap_ecp_placement_settings</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Deprecated as of March
-2011.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">expose_optimization_levers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-If <code class="ph codeph">true</code>, optimization levers are shown in
-.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">floor_optimization</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Read-only</strong>.
-Indicates if floor optimization is enabled for this member and provides
-the bidder ID of a real-time price provider. See <a
-href="member-service.md#ID-00000fd3__floor_optimization"
-class="xref">Floor Optimization</a> below for the definitions of the
-objects in this array. May also be set to <code
-class="ph codeph">null</code> to disable the feature.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>The ID of the
-member.</p>
-<p><strong>Required on</strong>: <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">interface_domain</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string(100)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>This field is being
-deprecated.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">interface_domain_beta</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string(100)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>This field is being
-deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">inventory_trust</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">This controls who you buy
-from and whether Xandr will use their quality
-and category information for targeting. See <a
-href="member-service.md#ID-00000fd3__inventory_trust"
-class="xref">Inventory Trust</a> below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">is_iash_compliant</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-If a selling member is IASH compliant, a logo will be placed next to the
-member's name in  Partner Center.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The timestamp of last
-modification to this member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">max_hosted_video_size</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-The maximum file size for hosted in-stream video creatives. In addition
-to limiting file size, setting this field enables the member to host
-videos with Xandr.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">mediation</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Read-only</strong>.
-Indicates whether automatic bid adjustments and reporting sync are
-enabled for this member. See <a
-href="member-service.md#ID-00000fd3__mediation"
-class="xref">Mediation</a> below for the definitions of the objects in
-this array.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">member_brand_exceptions</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>An array of brand IDs.
-Creatives associated with these brands will be allowed to serve more
-than once per page load on your publishers' pages (<strong>4</strong> on
-those publishers' pages who have enabled sell-side page caps via the
-<code class="ph codeph">seller_page_cap_enabled</code> field of the <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a>). You can also add
-per-publisher brand exceptions using the <code
-class="ph codeph">publisher_brand_exceptions</code> field of the <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a>. See <a
-href="member-service.md#ID-00000fd3__member_brand_exceptions"
-class="xref">Member Brand Exceptions</a> for the definitions of the
-objects stored in this array.</p>
-<p><strong>Default</strong>: <code class="ph codeph">n/a</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The name of the member.
-<p><strong>Required on</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">native_custom_keys</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Some sellers of native
-advertising require buyers to use <code
-class="ph codeph">"custom keys"</code> to target their inventory. These
-keys will vary from member to member. This field allows sellers to
-define what custom values they'd like buyers to pass in via a native
-creative. For more information, see <a
-href="member-service.md#ID-00000fd3__native_custom_keys"
-class="xref">Native Custom Keys</a> below.
+| Field | Type | Description |
+|:---|:---|:---|
+| `custom_key` | string | A seller-defined key that defines what information the seller would like the buyer to pass in via a native creative. |
 
-<b>Note:</b> You can obtain a list of native
-custom keys using the read-only <a
-href="member-service.md#ID-00000fd3__native_custom_keys"
-class="xref">Native Custom Key Service</a>.
+### Third-party pixels
 
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">no_reselling_priority</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">This value is used to
-determine whether RTB bids are allowed to compete with your managed
-campaigns. In order for an RTB bid to be able to compete with a managed
-bid for an impression, this field's value must be greater than the
-priority of the managed bid.
-<p>For example, let's say you have the following auction and
-settings:</p>
-<blockquote>
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__163"
-class="entry colsep-1 rowsep-1">Bid Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__164"
-class="entry colsep-1 rowsep-1">Bid Price</th>
-<th id="ID-00000fd3__JSON_fields__entry__165"
-class="entry colsep-1 rowsep-1">Priority</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__163">RTB</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__164">$5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__165">8 (<code
-class="ph codeph">no_reselling_priority</code>)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__163">Managed</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__164">$3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__165">8 (<span
-class="ph"> priority)</td>
-</tr>
-</tbody>
-</table>
-<p>In this example, the RTB bid will not compete, even though its bid
-price is higher. In order for RTB to compete on this impression, <code
-class="ph codeph">no_reselling_priority</code> would have to be 9 or
-higher.</p>
-<p>In addition, when reselling is allowed for an impression, the highest
-priority standard managed demand will be allowed to compete with the
-highest priority guaranteed demand (as well as with RTB).</p>
-</blockquote></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">pitbull_segment_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><div
-class="note note_note">
-<b>Note:</b> This field has been deprecated.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">pitbull_segment_value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><div
-class="note note_note">
-<b>Note:</b> This field has been deprecated.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">platform_exposure</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">
-This determines whether and how your member appears in the <span
-class="ph uicontrol">Buyers tab of the Ad Quality Manager in
- and in the <a
-href="platform-member-service.md"
-class="xref" target="_blank">Platform Member</a> service. Possible
-values:
-<ul>
-<li><code class="ph codeph">"public"</code> = Your member name is
-shown.</li>
-<li><code class="ph codeph">"private"</code> = Your member ID is
-shown.</li>
-<li><code class="ph codeph">"hidden"</code> = Your member does not
-appear.</li>
-</ul>
+The `thirdparty_pixels` array contains the fields in the table below. These fields are read-only. To update or create third-party pixels and/or attach third-party pixels to all creatives owned by the member, use the [Third-party Pixel service](./third-party-pixel-service.md). To attach third-party pixels to individual creatives, use the [Creative Service](./creative-service.md).
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `active` | Boolean | **Read-only**. The current status of the pixel (`true = active`). |
+| `audit_status` | string | **Read-only**. Audit status of the pixel. |
+| `id` | int | **Read-only**. The pixel's ID. |
+| `name` | string | **Read-only**. The full name of the pixel. |
 
-<b>Note:</b>
-<ul>
-<li><p>Setting <code class="ph codeph">platform_exposure</code> to <code
-class="ph codeph">"hidden"</code> will hide your member <code
-class="ph codeph">"name"</code> and <code
-class="ph codeph">"domain"</code> fields in our <a
-href="https://xandr.com/sellers.json" class="xref"
-target="_blank">sellers.json</a> file and list your member seat as <code
-class="ph codeph">"is_confidential": 1</code>. For example,</p>
-<pre class="pre codeblock"><code>{
-      &quot;seller_id&quot;: &quot;7694&quot;,
-      &quot;seller_type&quot;: &quot;INTERMEDIARY&quot;,
-      &quot;domain&quot;: &quot;groupm.com&quot;,
-      &quot;name&quot;: &quot;Xaxis – Slovakia Marketplace&quot;
- }</code></pre>
-<p>This can limit the monetization of your inventory as some DSPs may
-not choose to buy impressions from sellers who are not transparent in
-the <code class="ph codeph">"schain"</code> object.</p></li>
-<li><p>Setting <code class="ph codeph">platform_exposure</code> to <code
-class="ph codeph">"public"</code> will display your member <code
-class="ph codeph">"name"</code> and <code
-class="ph codeph">"domain"</code> fields in our <a
-href="https://xandr.com/sellers.json" class="xref"
-target="_blank">sellers.json</a> file. For example,</p>
-<pre class="pre codeblock"><code>{ 
-           &quot;seller_id&quot;: &quot;8253&quot;, 
-          &quot;is_confidential&quot;: 1, 
-           &quot;seller_type&quot;: &quot;PUBLISHER&quot; 
-}</code></pre></li>
-<li>Note that <code class="ph codeph">primary_type</code> must be either
-<code class="ph codeph">"buyer"</code> or <code
-class="ph codeph">"network"</code> in order for it to appear in the
-Buyers tab of the Ad Quality Manager
-in .</li>
-</ul>
-<p><strong>Default</strong>: <code class="ph codeph">"public"</code></p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">plugins</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The plugins that users see
-on the Apps tab in . See <a
-href="member-service.md#ID-00000fd3__plugins" class="xref">Plugins</a>
-below for more details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">plugins_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-If <code class="ph codeph">true</code>, the Apps tab is shown in <span
-class="ph">.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">pops_enabled_UI</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><strong>Admin-only</strong>.
-If <code class="ph codeph">true</code>, pop ad support is shown in <span
-class="ph">.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">prioritize_margin</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>If set to <code
-class="ph codeph">true</code> Xandr will perform
-a bid/no bid check for managed campaigns based on line item minimum
-margin settings. If set to <code class="ph codeph">false</code> <span
-class="ph">Xandr will not not perform any bid/no bid check for
-managed campaigns based on the line item minimum.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">reporting_decimal_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">
-The decimal mark used in reporting. This setting can be overridden at
-the user and report levels (see <code
-class="ph codeph">"reporting_decimal_type"</code> in the <a
-href="user-service.md"
-class="xref" target="_blank">User Service</a> and <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>). Possible values:
-<ul>
-<li><code class="ph codeph">"comma"</code></li>
-<li><code class="ph codeph">"decimal"</code> (period)</li>
-</ul>
+### Inventory trust
 
-<p><strong>Default</strong>: <code
-class="ph codeph">"decimal"</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">reselling_description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">This description is not
-currently used in .</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">reselling_exposure</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>Whether or not to expose
-the member's inventory to the platform for reselling in the real-time
-marketplace. Possible values: <code class="ph codeph">"public"</code> or
-<code class="ph codeph">"private"</code>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">"private" </code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">reselling_exposed_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The date and time at which
-<code class="ph codeph">reselling_exposure</code> was changed to <code
-class="ph codeph">"public"</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">seller_member_groups</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-Specifies information about the groups of sellers to which this member
-belongs. See <a
-href="member-service.md#ID-00000fd3__seller_member_group"
-class="xref">Seller Member Group</a> below for more information.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">seller_revshare_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-If this member is a seller and has a revenue sharing agreement with
-Xandr, the Xandr portion
-of the revenue sharing is indicated here.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">serving_domain</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><strong>Admin-only</strong>.
-The domain through which advertisements are served. The format of the
-object is <code class="ph codeph">{"cname":"</code><a
-href="http://ad.domain.com" class="xref" target="_blank"><code
-class="ph codeph">ad.domain.com</code></a><code
-class="ph codeph">","type":null}</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">sherlock_notify_email</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">Each time Sherlock scans a
-creative belonging to this member, a response is sent to this email
-address. The response includes the creative's audit status and any
-reasons why the creative has not passed audit. This email address will
-also receive<a
-href="xandr-bidders/object-limits---faq.md"
-class="xref" target="_blank">object limit notifications</a> , sent when
-you reach 85, 95, and 100 percent of your limit for an object. This
-field supports multiple comma-separated email addresses.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">short_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">URL-friendly name to be
-used as needed.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">standard_sizes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The list of sizes which are
-included in the standard sizes dropdown in  when
-creating creatives. The array is of the following format:
-<pre class="pre codeblock"><code> [{&quot;width&quot;:&quot;120&quot;,&quot;height&quot;:&quot;600&quot;,&quot;is_standard&quot;:true},{&quot;width&quot;:&quot;160&quot;,&quot;height&quot;:&quot;600&quot;,&quot;is_standard&quot;:true}, ... ,{&quot;width&quot;:&quot;728&quot;,&quot;height&quot;:&quot;90&quot;,&quot;is_standard&quot;:true},{&quot;width&quot;:&quot;800&quot;,&quot;height&quot;:&quot;60&quot;,&quot;is_standard&quot;:false}]</code></pre></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The state of the member.
-Possible values: <code class="ph codeph">"active"</code> or <code
-class="ph codeph">"inactive"</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">thirdparty_pixels</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p><strong>Read-only</strong>.
-An array of third-party pixels associated with the member. You can
-automatically attach these pixels to all creatives owned by this member
-using the <a
-href="third-party-pixel-service.md"
-class="xref" target="_blank">Third-party Pixel service</a> or attach
-them individually at the creative level using the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">timezone</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>The timezone of the
-member. See <a
-href="api-timezones.md"
-class="xref" target="_blank">API Timezones</a> for details and accepted
-values. To change the default timezone of an individual advertiser, use
-the <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a> . If no timezone is
-specified in the Advertiser Service, advertisers inherit the member's
-timezone.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">"EST5EDT"</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">use_insertion_orders</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">If <code
-class="ph codeph">true</code>, use insertion orders (an organizational
-level above line items) for this member.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">visibility_profile_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3"><p>The ID of the optional
-visibility profile attached to the member. See the <a
-href="visibility-profile-service.md"
-class="xref" target="_blank">Visibility Profile Service</a> for more
-details.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__1"><code
-class="ph codeph">website_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__3">The company website for
-this member. This is used in a number of areas where contact details are
-displayed.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `default_allow_unaudited` | Boolean | If `true`, campaigns using inventory quality filtering will allow unaudited inventory from sellers unless overridden in the `members` array. |
+| `default_trust` | enum | Possible values:<br> - `appnexus`: Campaigns using inventory quality filtering will only buy Xandr-audited inventory from sellers unless overridden in the members array.<br> - `seller`: Inventory quality filtering will allow inventory that has been audited by the selling member in Xandr. |
+| `members` | array | For each selling member, controls banned/eligible for selling to you, whether you trust their inventory audit, and whether you allow unaudited inventory from them. |
 
+### Seller member group
 
+All fields in the `seller_member_group` object can be written by admins only.
 
-<b>Note:</b> This section applies only to
-Publisher Ad Server clients.
+| Field | Type | Description |
+|:---|:---|:---|
+| `created_on` | date | Timestamp that indicates when this seller member group was created. |
+| `description` | string | Specifies a description of this seller member group. |
+| `display_order` | int | Specifies the order in which this seller member group will be displayed in . Default is `5`. |
+| `id` | int | Specifies the unique ID of this seller member group. |
+| `last_modified` | date | Timestamp that indicates when this seller member group was last modified. |
+| `name` | string | Specifies the name of this seller member group. |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__241"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__242"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__243"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__241"><code
-class="ph codeph">server_of_record</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__242">object</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__243"><p>For some line items,
-the most important performance indicator is that the line item delivers
-its budget in full and evenly across its flight dates. This object is
-used to hold configuration details related to these line items. For more
-information, see the <a
-href="member-service.md#ID-00000fd3__server_of_record"
-class="xref">Server of Record</a> section below.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-</tbody>
-</table>
+### Plugins
 
-**Server of Record**
+| Field | Type | Description | Required On |
+|:---|:---|:---|:---|
+| `id` | int | The ID of the plugin. |  |
+| `status` | enum | The state of the plugin. If `"available"` the user has not yet installed the plugin; if `"installed"`, the user has installed the plugin; if `"accept_permissions"`, the user has installed the plugin, but changes to the plugin require the user to explicitly accept the changes before continuing to use it. Possible values:<br> - `"available"`<br> - `"installed"`<br> - `"accept_permissions"` |  |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__247"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__248"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__249"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__247"><code
-class="ph codeph">enforce_true_priority_tiers</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__248">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__249"><strong>Deprecated</strong>.
-<p>For more information about Guaranteed Delivery line items, see the
-<code class="ph codeph">delivery_goal</code> array on the <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__247"><code
-class="ph codeph">guaranteed_delivery_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__248">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__249"><p>If <code
-class="ph codeph">true</code>, this member has access to guaranteed
-delivery features.</p>
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__247"><code
-class="ph codeph">guaranteed_delivery_version</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__248">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__249">
-This temporary flag denotes the version of the Guaranteed Delivery
-pacing algorithm being used. It can be set at either the member or <a
-href="line-item-service.md"
-class="xref" target="_blank">line item</a> level. The flag will be
-removed when the new version (2) of the algorithm is released
-platform-wide. Allowed values:
-<ul>
-<li><code class="ph codeph">1</code></li>
-<li><code class="ph codeph">2</code></li>
-</ul>
+### Member brand exceptions
 
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description | Required On |
+|:---|:---|:---|:---|
+| `brand_idd` | int | The ID of the brand whose associated creatives you would like to allow to serve more than once per page load on page-cap-enabled publishers' inventory. This setting will only take effect on those publishers which you've enable for page capping by setting the `seller_page_cap_enabled` field to `true` on the [Publisher Service](./publisher-service.md). For more information about brands, see the [Brand Service](./brand-service.md). |  |
 
+### Floor optimization
 
+| Field | Type | Description | Required On |
+|:---|:---|:---|:---|
+| `active` | Boolean | If `true`, this member has floor optimization enabled. |  |
+| `bidder_id` | integer | The ID of an internal real-time price provider that performs the floor optimization. |  |
 
-**Native Custom Keys**
+### Mediation
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__259"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__260"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__261"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__259"><code
-class="ph codeph">custom_key</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__260">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__261">A seller-defined key that
-defines what information the seller would like the buyer to pass in via
-a native creative.</td>
-</tr>
-</tbody>
-</table>
-
-**Third-party Pixels**
-
-The `thirdparty_pixels` array contains the fields in the table below.
-These fields are read-only. To update or create third-party pixels
-and/or attach third-party pixels to all creatives owned by the member,
-use the <a
-href="third-party-pixel-service.md"
-class="xref" target="_blank">Third-party Pixel service</a>. To attach
-third-party pixels to individual creatives, use the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__265"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__266"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__267"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__265"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__266">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__267"><strong>Read-only</strong>.
-The current status of the pixel (true = active).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__265"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__266">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__267"><strong>Read-only</strong>.
-Audit status of the pixel.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__265"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__266">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__267"><strong>Read-only</strong>.
-The pixel's ID.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__265"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__266">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__267"><strong>Read-only</strong>.
-The full name of the pixel.</td>
-</tr>
-</tbody>
-</table>
-
-**Inventory Trust**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__280"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__281"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__282"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__280"><code
-class="ph codeph">default_allow_unaudited</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__281">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__282">If <code
-class="ph codeph">true</code>, campaigns using inventory quality
-filtering will allow unaudited inventory from sellers unless overridden
-in the <code class="ph codeph">members</code> array.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__280"><code
-class="ph codeph">default_trust</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__281">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__282">Possible values:
-<ul>
-<li><code class="ph codeph">appnexus</code>:
-Campaigns using inventory quality filtering will only buy <span
-class="ph">Xandr-audited inventory from sellers unless overridden
-in the members array.</li>
-<li><code class="ph codeph">seller</code>: Inventory quality filtering
-will allow inventory that has been audited by the selling member in
-Xandr.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__280"><code
-class="ph codeph">members</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__281">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__282">For each selling member,
-controls banned/eligible for selling to you, whether you trust their
-inventory audit, and whether you allow unaudited inventory from
-them.</td>
-</tr>
-</tbody>
-</table>
-
-**Seller Member Group**
-
-All fields in the `seller_member_group` object can be written by admins
-only.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__292"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__293"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__294"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Timestamp that indicates
-when this seller member group was created.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Specifies a description
-of this seller member group.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">display_order</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Specifies the order in
-which this seller member group will be displayed in <span
-class="ph">. Default is <code class="ph codeph">5</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Specifies the unique ID
-of this seller member group.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Timestamp that indicates
-when this seller member group was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__292"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__293">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__294">Specifies the name of
-this seller member group.</td>
-</tr>
-</tbody>
-</table>
-
-**Plugins**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__313"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__314"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__315"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000fd3__JSON_fields__entry__316"
-class="entry colsep-1 rowsep-1">Required On</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__313"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__314">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__315">The ID of the
-plugin.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__316"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__313"><code
-class="ph codeph">status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__314">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__315">The state of the plugin.
-If <code class="ph codeph">"available"</code> the user has not yet
-installed the plugin; if <code class="ph codeph">"installed"</code>, the
-user has installed the plugin; if <code
-class="ph codeph">"accept_permissions"</code>, the user has installed
-the plugin, but changes to the plugin require the user to explicitly
-accept the changes before continuing to use it. Possible values:
-<ul>
-<li><code class="ph codeph">"available"</code></li>
-<li><code class="ph codeph">"installed"</code></li>
-<li><code class="ph codeph">"accept_permissions"</code></li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__316"></td>
-</tr>
-</tbody>
-</table>
-
-**Member Brand Exceptions**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__325"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__326"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__327"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000fd3__JSON_fields__entry__328"
-class="entry colsep-1 rowsep-1">Required On</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__325"><code
-class="ph codeph">brand_idd</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__326">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__327">The ID of the brand whose
-associated creatives you would like to allow to serve more than once per
-page load on page-cap-enabled publishers' inventory. This setting will
-only take effect on those publishers which you've enable for page
-capping by setting the <code
-class="ph codeph">seller_page_cap_enabled</code> field to <code
-class="ph codeph">true</code> on the <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a>. For more information
-about brands, see the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a>.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__328"></td>
-</tr>
-</tbody>
-</table>
-
-**Floor Optimization**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__333"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__334"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__335"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000fd3__JSON_fields__entry__336"
-class="entry colsep-1 rowsep-1">Required On</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__333"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__334">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__335">If <code
-class="ph codeph">true</code>, this member has floor optimization
-enabled.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__336"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__333"><code
-class="ph codeph">bidder_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__334">integer</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__335">The ID of an internal
-real-time price provider that performs the floor optimization.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__336"></td>
-</tr>
-</tbody>
-</table>
-
-**Mediation**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000fd3__JSON_fields__entry__345"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000fd3__JSON_fields__entry__346"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000fd3__JSON_fields__entry__347"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="ID-00000fd3__JSON_fields__entry__348"
-class="entry colsep-1 rowsep-1">Required On</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__345"><code
-class="ph codeph">auto_bid_adjustment_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__346">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__347">If <code
-class="ph codeph">true</code> , this member can use the automatic bid
-adjustment feature, in which Xandr suggests a
-bid based on an estimate what the network will pay and automatically
-updates the bid as conditions change.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__348"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__345"><code
-class="ph codeph">reporting_sync_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__346">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__347">If <code
-class="ph codeph">true</code>, this member can use the reporting sync
-feature, in which reporting data from third-party networks can be pulled
-from that network's servers. This data is used to create daily reports
-and monitor trends directly from within <span
-class="ph">Xandr.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000fd3__JSON_fields__entry__348"></td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description | Required On |
+|:---|:---|:---|:---|
+| `auto_bid_adjustment_enabled` | Boolean | If `true`, this member can use the automatic bid adjustment feature, in which Xandr suggests a bid based on an estimate what the network will pay and automatically updates the bid as conditions change. |  |
+| `reporting_sync_enabled` | Boolean | If `true`, this member can use the reporting sync feature, in which reporting data from third-party networks can be pulled from that network's servers. This data is used to create daily reports and monitor trends directly from within Xandr. |  |
 
 ## Examples
 
-**View your member**
+### View your member
 
-``` pre
+```
 $ curl - b cookies 'https://api.appnexus.com/member'
 {
     "response": {
@@ -2077,9 +481,9 @@ $ curl - b cookies 'https://api.appnexus.com/member'
 }
 ```
 
-**Update your member**
+### Update your member
 
-``` pre
+```
 $ cat member_mod
 {
     "member": {
@@ -2095,20 +499,7 @@ $ curl -b cookies -X PUT -d @member_mod 'https://api.appnexus.com/member?id=185'
 }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a href="reference.md"
-  class="xref" target="_blank">Reference</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
+- [Reference](./reference.md)
+- [API Semantics](./api-semantics.md)

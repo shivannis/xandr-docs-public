@@ -1,310 +1,52 @@
 ---
-Title : Mediated Network Service
+title: Mediated Network Service
+description: Use the mediated network service to create and maintain mediated networks.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-<b>Note:</b> Only available to Monetize Ad
-Server customers.
 ---
-
 
 # Mediated Network Service
 
-
-
-
-
-
-
-<b>Note:</b> Only available to Monetize Ad
-Server customers.
-
-
-
-
+> [!NOTE]
+> Only available to Microsoft Monetize Ad Server customers.
 
 This service is used to create and maintain mediated networks.
 
 Use this service to define your integration with an external network.
 
->
-
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/mediated-network <br>(+ JSON payload) | Add a new mediated network |
+| `PUT` | https://api.appnexus.com/mediated-network?id=ID <br>(+ JSON payload) | Modify a mediated network |
+| `GET` | https://api.appnexus.com/mediated-network | View all mediated networks |
+| `GET` | https://api.appnexus.com/mediated-network?id=ID | View a specific mediated network |
+| `DELETE` | https://api.appnexus.com/mediated-network?id=ID | Delete a mediated network |
+| `GET` | https://api.appnexus.com/mediated-network/meta | Find out which fields you can filter and sort by |
 
+## JSON fields
 
-<table id="mediated-network-service__table_vmy_kkl_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediated-network-service__table_vmy_kkl_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="mediated-network-service__table_vmy_kkl_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="mediated-network-service__table_vmy_kkl_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network</a> (+ JSON
-payload)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">Add a
-new mediated network</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network?id=ID</a> (+
-JSON payload)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">Modify a
-mediated network</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">View all
-mediated networks</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network?id=ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">View a
-specific mediated network</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network?id=ID" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network?id=ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">Delete a
-mediated network</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__2"><a
-href="https://api.appnexus.com/mediated-network/meta" class="xref"
-target="_blank">https://api.appnexus.com/mediated-network/meta</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_vmy_kkl_twb__entry__3">Find out
-which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
-
-## JSON Fields
-
-
-
-<table id="mediated-network-service__table_ewr_4kl_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mediated-network-service__table_ewr_4kl_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="mediated-network-service__table_ewr_4kl_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mediated-network-service__table_ewr_4kl_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>The
-system-generated unique ID for this network.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph"> name </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>The
-name of the network, as supplied by the user.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">credentials</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><strong>Read-only.</strong>
-A system-generated unique value that securely identifies the network.
-Credentials are encrypted after a <code class="ph codeph">POST</code> or
-<code class="ph codeph">PUT</code> and cannot be decrypted.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><strong>Read-only.</strong>
-The unique, system-generated ID of the advertiser associated with this
-mediated network.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><strong>Read-only.</strong>
-Every advertiser object in our system is associated with a parent <a
-href="member-service.md"
-class="xref" target="_blank">member</a>. The unique, system-generated ID
-of the member to which the advertiser described by <code
-class="ph codeph">advertiser_id</code> belongs. (And by extension, this
-mediated network as well.)</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">active</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>Active
-mediation networks target and purchase media in auctions.</p>
-<p><strong>Default:</strong> <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">is_data_integration_active</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>Whether
-reporting data is currently being pulled from this network's systems
-into ours.</p>
-<p><strong>Default:</strong> <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph"> creative_custom_request_partner_id </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>The
-<em>Creative Custom Request Partner</em> this mediated network is
-associated with.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">default_bid_currency</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>The
-currency to be used for bids from this network.</p>
-<p><strong>Default:</strong> <code class="ph codeph">USD</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">processed_on</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><strong>Read-only.</strong>
-The date and time at which this mediated network's associated line item
-was updated with metrics (revenue, imps, clicks) pulled from the
-external network's reporting system.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><strong>Read-only.</strong>
-The date and time at which the mediated network object was last
-modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__1"><code
-class="ph codeph">network_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mediated-network-service__table_ewr_4kl_twb__entry__3"><p>The
-type of mediated network this is. Allowed values:</p>
-<ul>
-<li><code class="ph codeph">mobile</code>: This network is focused on
-purchasing mobile (in-app?) inventory.</li>
-<li><code class="ph codeph">banner</code>: This network is focused on
-purchasing web inventory.</li>
-</ul>
-<p><strong>Default:</strong> <code
-class="ph codeph">mobile</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The system-generated unique ID for this network.<br><br>**Required On**: `PUT` |
+| `name` | string | The name of the network, as supplied by the user.<br><br>**Required On**: `POST` |
+| `credentials` | string | **Read-only**. A system-generated unique value that securely identifies the network. Credentials are encrypted after a `POST` or `PUT` and cannot be decrypted. |
+| `advertiser_id` | int | **Read-only**. The unique, system-generated ID of the advertiser associated with this mediated network. |
+| `member_id` | int | **Read-only**. Every advertiser object in our system is associated with a parent [member](./member-service.md). The unique, system-generated ID of the member to which the advertiser described by `advertiser_id` belongs. (And by extension, this mediated network as well.) |
+| `active` | boolean | Active mediation networks target and purchase media in auctions.<br><br>**Default**: `false` |
+| `is_data_integration_active` | boolean | Whether reporting data is currently being pulled from this network's systems into ours.<br><br>**Default**: `false` |
+| `creative_custom_request_partner_id` | int | The *Creative Custom Request Partner* this mediated network is associated with.<br><br>**Required On**: `POST` |
+| `default_bid_currency` | string | The currency to be used for bids from this network.<br><br>**Default**: `USD` |
+| `processed_on` | date | **Read-only**. The date and time at which this mediated network's associated line item was updated with metrics (revenue, imps, clicks) pulled from the external network's reporting system. |
+| `last_modified` | date | **Read-only**. The date and time at which the mediated network object was last modified. |
+| `network_type` | string | The type of mediated network this is. Allowed values:<br>- `mobile`: This network is focused on purchasing mobile (in-app?) inventory.<br> - `banner`: This network is focused on purchasing web inventory.<br><br>**Default**: `mobile` |
 
 ## Examples
 
+### Add a mediated network
 
-
-**Add a mediated network**
-
-``` pre
+```
 $ cat add-network
 {
     "mediated-network": {
@@ -341,13 +83,9 @@ $ curl -b cookies -c cookies -X POST -d @add-network.json 'https://api.appnexus.
 }
 ```
 
+### Update a mediated network
 
-
-
-
-**Update a mediated network**
-
-``` pre
+```
 $ cat add-network
 
 {
@@ -386,13 +124,9 @@ $ curl -b cookies -c cookies -X PUT -d @update-network.json 'https://sand.api.ap
 }
 ```
 
+### View all mediated networks
 
-
-
-
-**View all mediated networks**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network
 
 {
@@ -452,13 +186,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network
 }
 ```
 
+### View a specific mediated network
 
-
-
-
-**View a specific mediated network**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network?id=368' | json-pp
 
 {
@@ -487,13 +217,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network?id=368' 
 }
 ```
 
+### Delete a mediated network
 
-
-
-
-**Delete a mediated network**
-
-``` pre
+```
 $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/mediated-network?id=371
 
 {
@@ -506,30 +232,8 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/mediated-networ
 }
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="mediated-bid-service.md"
-  class="xref" target="_blank">Mediated Bid Service</a>
-
-
-
-
-
-
-
-
+- [API Semantics](./api-semantics.md)
+- [API Best Practices](./api-best-practices.md)
+- [Mediated Bid Service](./mediated-bid-service.md)
