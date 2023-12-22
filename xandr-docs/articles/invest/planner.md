@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Planner
 description: In this article, understand what Planner is and the advantages of using this tool in planning your campaign strategy.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Planner
