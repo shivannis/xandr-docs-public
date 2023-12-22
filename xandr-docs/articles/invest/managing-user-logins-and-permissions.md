@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Managing User Logins and Permissions
 description: In this article, learn how to manage, create, and edit a member user, and explore essential resources for managing and controlling user logins and permissions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Managing user logins and permissions
