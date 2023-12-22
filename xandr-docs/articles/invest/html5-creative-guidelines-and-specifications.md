@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - HTML5 Creative Guidelines and Specifications
 description: This article provides guidelines and specifications that the HTML5 creatives must follow to be served on various platforms.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - HTML5 creative guidelines and specifications
