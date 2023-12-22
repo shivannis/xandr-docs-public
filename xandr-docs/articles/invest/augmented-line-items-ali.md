@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Augmented Line Items (ALI)
-description : Learn about the Augmented Line Item (ALI) that simplifies trader workflows by allowing them to efficiently create buying strategies, optimize budgets, and use customized trading tools to achieve better performance for their clients. 
+title: Microsoft Invest - Augmented Line Items (ALI)
+description: Learn about the Augmented Line Item (ALI) that simplifies trader workflows by allowing them to efficiently create buying strategies, optimize budgets, and use customized trading tools to achieve better performance for their clients. 
 ms.date: 10/28/2023
 ---
 
