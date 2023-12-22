@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - VAST Check
 description: Third-party VAST and VPAID video creatives undergo checks on XML. This article describes the different outputs you may see and corrective action that can be taken.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - VAST check
