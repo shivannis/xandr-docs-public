@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Create an Impression Tracker
-description : Learn how Impression trackers are used to track user impressions on creatives served by off-platform (non-Xandr) ad servers.
+title: Microsoft Invest - Create an Impression Tracker
+description: Learn how Impression trackers are used to track user impressions on creatives served by off-platform (non-Xandr) ad servers.
+ms.date: 10/28/2023
 ---
 
 
