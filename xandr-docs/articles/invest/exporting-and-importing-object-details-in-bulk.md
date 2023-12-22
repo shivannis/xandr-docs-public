@@ -1,6 +1,7 @@
 ---
 title: Exporting and Importing Object Details in Bulk
 description: In this article, learn how to export and import details for multiple line items, creatives, segment groups, splits, and split segment groups simultaneously.
+ms.date: 10/28/2023
 ---
 
 # Exporting and importing object details in bulk
