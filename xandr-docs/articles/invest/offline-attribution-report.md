@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Offline Attribution Report
-description : Learn how The Offline Attribution report lets you track your line item's offline sales performance. 
+title: Microsoft Invest - Offline Attribution Report
+description: Learn how The Offline Attribution report lets you track your line item's offline sales performance. 
+ms.date: 10/28/2023
 ---
 
 
