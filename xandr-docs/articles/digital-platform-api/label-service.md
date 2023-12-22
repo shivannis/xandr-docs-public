@@ -1,286 +1,55 @@
 ---
-Title : Label Service
-Description : This read-only service allows you to view the labels that can be applied
+title: Label Service
+description: Discover the Label service, providing the ability to view and apply labels to your advertisers, insertion orders, line items, campaigns, and publishers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-to your advertisers, insertion orders, line items, campaigns, and
-publishers. It also allows you to view the labels that have already been
 ---
 
+# Label service
 
-# Label Service
+This read-only service allows you to view the labels that can be applied to your advertisers, insertion orders, line items, campaigns, and
+publishers. It also allows you to view the labels that have already been applied.
 
-
-
-This read-only service allows you to view the labels that can be applied
-to your advertisers, insertion orders, line items, campaigns, and
-publishers. It also allows you to view the labels that have already been
-applied. 
-
-An example of an advertiser label is "Salesperson". You might use this
-label to specify the name of the salesperson responsible for each of
-your advertisers. You might then run the Network Analytics report
-filtered by "salesperson_for_advertiser" to focus on the advertisers
-that a particular salesperson is responsible for, or grouped by
-"salesperson_for_advertiser" to rank the performance of your
+An example of an advertiser label is "Salesperson". You might use this label to specify the name of the salesperson responsible for each of your advertisers. You might then run the Network Analytics report filtered by "salesperson_for_advertiser" to focus on the advertisers
+that a particular salesperson is responsible for, or grouped by "salesperson_for_advertiser" to rank the performance of your
 salespeople.
 
-The following reports currently support labels: <a
-href="network-analytics.md"
-class="xref" target="_blank">Network Analytics</a>, <a
-href="network-advertiser-analytics.md"
-class="xref" target="_blank">Network Advertiser Analytics</a>, and <a
-href="advertiser-analytics.md"
-class="xref" target="_blank">Advertiser Analytics</a>. See
-"report_field" below for the full list of report columns associated with
-labels.
-
-
+The following reports currently support labels: [Network Analytics](network-analytics.md), [Network Advertiser Analytics](network-advertiser-analytics.md), and [Advertiser Analytics](advertiser-analytics.md). For the full list of report columns associated with labels, see "report_field" below.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001769__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001769__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001769__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__2">https://api.<span
-class="ph">appnexus.com/label</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__3">View
-all available labels</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__2">https://api.<span
-class="ph">appnexus.com/label?id=LABEL_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__3">View
-a specific label</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__2">https://api.<span
-class="ph">appnexus.com/label?show_values=true&amp;object_type=OBJECT_TYPE</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__3">View
-the labels that are applied to a specific object type
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/label](https://api.appnexus.com/label) | View all available labels. |
+| `GET` | [https://api.appnexus.com/label?id=LABEL_ID](https://api.appnexus.com/label?id=LABEL_ID) | View a specific label. |
+| `GET` | [https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE](https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE) | View the labels that are applied to a specific object type.<br><br>**Note:**<br>The following object types are available: `advertiser`, `publisher`, `line_item`, `campaign`, and `insertion_order`. |
 
-<b>Note:</b>
-<p>The following object types are available: <code
-class="ph codeph">advertiser</code>, <code
-class="ph codeph">publisher</code>, <code
-class="ph codeph">line_item</code>, <code
-class="ph codeph">campaign</code>, and <code
-class="ph codeph">insertion_order</code>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the label.<br>Possible values: `1`, `2`, `3`, `4`, `5`, `7`, `8`, `9`, `11`, `12`, `14`, `15`, `16`. |
+| `is_user_associated` | boolean | This field is specific to. If `true`, the label is associated with a person (i.e. `"Salesperson"` or `"Account Manager"`) and will allow for auto-completion of the label value by the firstname, lastname of a user. |
+| `is_reporting_enabled` | boolean | If `true`, the label is available for use in reporting. |
+| `last_modified` | timestamp | The date and time when the label was last modified. |
+| `member_id` | int | Since all labels are currently available to all members, this field will always be `NULL`. In the future, it may become possible for a member to create unique labels, in which case this field would return the ID of the owning member.  |
+| `name` | string | The name of the label. Possible values: `"Salesperson"`, `"Account Manager"`, `"Trafficker"`, `"Sales Rep"`, `"Test/Control"`, `"Campaign Type"`, or `"Advertiser Type"`. For `id`/`name`/`object_type` mappings, see the first example below. |
+| `object_type` | enum | The type of object to which the label can be applied. <br>Possible values: `"advertiser"`, `"insertion_order"`, `"line_item"`, `"campaign"`, or `"publisher"`. For `id`/`name`/`object_type` mappings, see the first example below. |
+| `report_field` | string  | The report column with which you can report on the label. Possible report columns (with corresponding reports):<br> - `salesperson_for_advertiser` (Network Analytics)<br> - `salesperson_for_publisher` (Network Analytics)<br> - `account_manager_for_advertiser` (Network Analytics)<br> - `account_manager_for_publisher` (Network Analytics)<br> - `trafficker_for_line_item` (Network Analytics, Network Advertiser Analytics)<br> - `salesrep_for_line_item` (Network Analytics, Network Advertiser Analytics)<br> - `user_group_for_campaign` (Network Analytics, Network Advertiser Analytics, Advertiser Analytics)<br> - `advertiser_type` (Network Analytics, Network Advertiser Analytics)<br> - `line_item_type` (Network Analytics, Network Advertiser Analytics)<br> - `insertion_order_type` (Network Analytics, Network Advertiser Analytics) |
+| `values` | array of objects | This field is return when using the request `GET` [https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE](https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE). For more details, see [Values](#values) and the second example below. |
 
+### Values
 
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001769__entry__13"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001769__entry__14"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001769__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">The
-ID of the label. Possible values: 1, 2, 3, 4, 5, 7, 8, 9, 11, 12, 14,
-15, 16.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">is_user_associated</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__15">This field is specific to <span
-class="ph">. If true, the label is associated with a person (i.e.
-"Salesperson" or "Account Manager") and  will
-allow for auto-completion of the label value by the firstname, lastname
-of a user.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">is_reporting_enabled</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">If
-true, the label is available for use in reporting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">The
-date and time when the label was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__15">Since all labels are currently
-available to all members, this field will always be NULL. In the future,
-it may become possible for a member to create unique labels, in which
-case this field would return the ID of the owning member. </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">The
-name of the label. Possible values: "Salesperson", "Account Manager",
-"Trafficker", "Sales Rep", "Test/Control", "Campaign Type", or
-"Advertiser Type". See the first example below for id/name/object_type
-mappings.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">object_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">The
-type of object to which the label can be applied. Possible values:
-"advertiser", "insertion_order", "line_item", "campaign", or
-"publisher". See the first example below for id/name/object_type
-mappings.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">report_field</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__15">The
-report column with which you can report on the label. Possible report
-columns (with corresponding reports):<br />
-&#10;<ul>
-<li>salesperson_for_advertiser (Network Analytics)<br />
-</li>
-<li>salesperson_for_publisher (Network Analytics)</li>
-<li>account_manager_for_advertiser (Network Analytics)</li>
-<li>account_manager_for_publisher (Network Analytics)</li>
-<li>trafficker_for_line_item (Network Analytics, Network Advertiser
-Analytics)</li>
-<li>salesrep_for_line_item (Network Analytics, Network Advertiser
-Analytics)</li>
-<li>user_group_for_campaign (Network Analytics, Network Advertiser
-Analytics, Advertiser Analytics)</li>
-<li>advertiser_type (Network Analytics, Network Advertiser
-Analytics)</li>
-<li>line_item_type (Network Analytics, Network Advertiser
-Analytics)</li>
-<li>insertion_order_type (Network Analytics, Network Advertiser
-Analytics)</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__13"><code
-class="ph codeph">values</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__14">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__15">This field is return when using the
-request GET <a
-href="https://api.appnexus.com/label?show_values=true&amp;object_type=OBJECT_TYPE"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/label?show_values=true&amp;object_type=OBJECT_TYPE</a>.
-See <a href="label-service.md#ID-00001769__values"
-class="xref">Values</a> and the second example below for more
-details.</td>
-</tr>
-</tbody>
-</table>
-
-**Values**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001769__entry__43"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001769__entry__44"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001769__entry__45"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__43"><code
-class="ph codeph">object_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__44">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__45">The
-ID of the object to which the label is applied. For example, if <code
-class="ph codeph">object_type</code> is "advertiser", <code
-class="ph codeph">object_id</code> would be the ID of the
-advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__43"><code
-class="ph codeph">value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001769__entry__44">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001769__entry__45">The
-value assigned to the label. For example, for the publisher
-"Salesperson" label, this would be a name such as "Michael
-Sellers".</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `object_id` | int | The ID of the object to which the label is applied. For example, if `object_type` is `"advertiser"`, `object_id` would be the `ID` of the advertiser. |
+| `value` | string | The value assigned to the label. For example, for the publisher `"Salesperson"` label, this would be a name such as `"Michael Sellers"`. |
 
 ## Examples
 
-**View all available labels**
+### View all available labels
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/label'
 {
     "response": {
@@ -375,9 +144,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/label'
 }
 ```
 
-**View the labels that are applied to your advertisers**
+### View the labels that are applied to your advertisers
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/label?show_values=true&object_type=advertiser'
 {
     "response": {
@@ -470,9 +239,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/label?show_values=true&ob
     }
 }
 ```
-
-
-
-
-
-

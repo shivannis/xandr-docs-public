@@ -1,347 +1,74 @@
 ---
-Title : IP Range List Service
-Description : The IP Range List Service is used to manage lists of IP ranges that can
+title: IP Range List Service
+description: Explore the IP Range List Service, designed for managing lists of IP ranges utilized for targeting by the profile service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-be used for targeting by the <a
-href="profile-service.md"
 ---
 
+# IP Range List service
 
-# IP Range List Service
+The IP Range List Service is used to manage lists of IP ranges that can be used for targeting by the [Profile Service](profile-service.md). The functionality provided by this service is similar to the [Domain List Service](domain-list-service.md).
 
+## Intended use case
 
+The intended use case for this service is for mobile buyers who would like to serve ads to users where direct client billing is enabled, i.e., purchases are charged to the carrier and added to the mobile bill. In this scenario, campaigns target the IP ranges of gateways for cell towers that allow direct carrier billing.
 
-The IP Range List Service is used to manage lists of IP ranges that can
-be used for targeting by the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>. The functionality
-provided by this service is similar to the <a
-href="domain-list-service.md"
-class="xref" target="_blank">Domain List Service</a>.
+To actually target the IP range lists you create and manage here, add them to the `ip_range_list_targets` field in the [Profile Service](profile-service.md).
 
+> [!NOTE]
+> Not Designed for Blocking Inventory (Blocklists)
 >
-
-## Intended Use Case
-
-The intended use case for this service is for mobile buyers who would
-like to serve ads to users where direct client billing is enabled, i.e.,
-purchases are charged to the carrier and added to the mobile bill. In
-this scenario, campaigns target the IP ranges of gateways for cell
-towers that allow direct carrier billing.
-
-To actually target the IP range lists you create and manage here, add
-them to the `ip_range_list_targets` field in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.
-
-
-
-<b>Note:</b> Not Designed for Blocking
-Inventory (Blocklists)
-
-This service isn't designed for blocking IPs (like blocklists). See the
-<a
-href="ip-range-list-service.md#ip-range-list-service__ip-range-list-service-limitations"
-class="xref">Limitations</a> below for more details.
-
-
-
-
-
->
+> This service isn't designed for blocking IPs (like blocklists). For more details, see the [Limitations](#limitations) below.
 
 ## Limitations
 
 The following limitations exist for the IP Range List Service:
 
 - You can create up to 100 IP range lists.
-- A single "include" IP range list (`include` set to `true`) cannot
-  contain more than 3500 ranges.
-- A single "exclude" IP range list (`include` set to `false`) cannot
-  contain more than 10 ranges.
+- A single "include" IP range list (`include` set to `true`) cannot contain more than 3500 ranges.
+- A single "exclude" IP range list (`include` set to `false`) cannot contain more than 10 ranges.
 
-In addition, the following limitations exist on the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a> when targeting IP Range
-Lists:
+In addition, the following limitations exist on the [Profile Service](profile-service.md) when targeting IP Range Lists:
 
-- Per profile, you can target up to 10 "include" IP range lists
-  (`include` set to `true`) and no more than 1 "exclude" IP range list
-  (`include` set to `false`). The excluded IP ranges must be a subset of
-  the included IP ranges.
-
-
-
->
+Per profile, you can target up to 10 "include" IP range lists (`include` set to `true`) and no more than 1 "exclude" IP range list (`include` set to `false`). The excluded IP ranges must be a subset of the included IP ranges.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ip-range-list-service__section_qmt_52z_5wb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="ip-range-list-service__section_qmt_52z_5wb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="ip-range-list-service__section_qmt_52z_5wb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">View all
-of your IP range lists.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list?id=LIST_ID" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list?id=LIST_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">View a
-specific IP range list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list/meta" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list/meta</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">Find out
-which fields you can filter and sort by.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">Add a new
-IP range list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list?id=LIST_ID" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list?id=LIST_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">Modify an
-existing IP range list.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__2"><a
-href="https://api.appnexus.com/ip-range-list?id=LIST_ID" class="xref"
-target="_blank">https://api.appnexus.com/ip-range-list?id=LIST_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_qmt_52z_5wb__entry__3">Delete an
-IP range list.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/ip-range-list](https://api.appnexus.com/ip-range-list) | View all of your IP range lists. |
+| `GET` | [https://api.appnexus.com/ip-range-list?id=LIST_ID](https://api.appnexus.com/ip-range-list?id=LIST_ID) | View a specific IP range list. |
+| `GET` | [https://api.appnexus.com/ip-range-list/meta](https://api.appnexus.com/ip-range-list/meta) | Find out which fields you can filter and sort by. |
+| `POST` | [https://api.appnexus.com/ip-range-list](https://api.appnexus.com/ip-range-list) | Add a new IP range list. |
+| `PUT` | [https://api.appnexus.com/ip-range-list?id=LIST_ID](https://api.appnexus.com/ip-range-list?id=LIST_ID) | Modify an existing IP range list. |
+| `DELETE` | [https://api.appnexus.com/ip-range-list?id=LIST_ID](https://api.appnexus.com/ip-range-list?id=LIST_ID) | Delete an IP range list. |
 
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `description` | string | An optional description of this IP range list.<br>**Default:** `null` |
+| `id` | int | The unique ID of this IP range list.<br>**Required On:** `PUT` |
+| `include` | boolean | Whether to include the IP ranges in this list in campaign targeting using the [Profile Service](profile-service.md).<br>**Default:** `false` |
+| `ip_ranges` | array of objects | This array holds ranges of IP addresses. For details on the object fields, see the [IP Ranges](#ip-ranges) table below.<br>**Required On:** `POST` and `PUT` |
+| `last_modified` | date | When this object was last updated.<br>**Read Only.** |
+| `name` | string | The name of the IP range list.<br>**Required On:** `POST` and `PUT` |
+| `num_ip_ranges` | int | The current number of IP ranges in this list.<br>**Read Only.** |
 
->
-
-## JSON Fields
-
-
-
-<table
-id="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>An
-optional description of this IP range list.</p>
-<strong>Default:</strong> <code class="ph codeph">null</code></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-unique ID of this IP range list.</p>
-<strong>Required On:</strong> <code class="ph codeph">PUT</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">include</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>Whether
-to include the IP ranges in this list in campaign targeting using the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.</p>
-<strong>Default:</strong> <code class="ph codeph">false</code></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">ip_ranges</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>This
-array holds ranges of IP addresses. See the <a
-href="ip-range-list-service.md#IPRangeListService-IPRanges"
-class="xref" target="_blank">IP Ranges</a> table below for details on
-the object fields.</p>
-<strong>Required On:</strong> <code
-class="ph codeph">POST and PUT</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>When
-this object was last updated.</p>
-<strong>Read Only</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-name of the IP range list.</p>
-<strong>Required On:</strong> <code
-class="ph codeph">POST and PUT</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">num_ip_ranges</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-current number of IP ranges in this list.</p>
-<strong>Read Only</strong></td>
-</tr>
-</tbody>
-</table>
-
-**IP Ranges**
-
-
-
-
+### IP ranges
 
 Each object in the `ip_ranges` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ip-range-list-service__section_tll_1fz_5wb__entry__25"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="ip-range-list-service__section_tll_1fz_5wb__entry__26"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="ip-range-list-service__section_tll_1fz_5wb__entry__27"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__25"><code
-class="ph codeph">from_ip</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__26">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__27"><p>The
-starting IP address. If no following <code
-class="ph codeph">to_ip</code> field is included, this is treated as the
-only address to include or exclude. This string must be in valid IPV4
-address format, i.e., "198.2.1.1".</p>
-<p><strong>Required On:</strong> <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__25"><code
-class="ph codeph">to_ip</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__26">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="ip-range-list-service__section_tll_1fz_5wb__entry__27">The
-(optional) ending IP address. If this field is not included, the IP
-address in the <code class="ph codeph">from_ip</code> field will be used
-alone. If this field is included, the addresses between the fields form
-a range. Ranges must be listed in <strong>ascending</strong> order,
-e.g., <code
-class="ph codeph">{"from_ip":"192.168.2.1", "to_ip":"192.168.2.100"}.</code></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `from_ip` | string | The starting IP address. If no following `to_ip` field is included, this is treated as the only address to include or exclude. This string must be in valid IPV4 address format, i.e., `"198.2.1.1"`.<br>**Required On:** `POST`, `PUT` |
+| `to_ip` | string | The (optional) ending IP address. If this field is not included, the IP address in the `from_ip` field will be used alone. If this field is included, the addresses between the fields form a range. Ranges must be listed in **ascending** order, e.g., `{"from_ip":"192.168.2.1", "to_ip":"192.168.2.100"}`. |
 
 ## Examples
 
+### View an IP range list
 
-
-**View an IP range list**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/ip-range-list?id=2'
 
 {
@@ -395,13 +122,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/ip-range-list?id=2'
 }
 ```
 
+### Create an IP range list
 
-
-
-
-**Create an IP range list**
-
-``` pre
+```
 $ cat ip-range-list.json
 
 {
@@ -452,13 +175,9 @@ $ curl -b cookies -X POST -d @ip-range-list.json 'https://api.appnexus.com/ip-ra
 }
 ```
 
+### Update an IP range list
 
-
-
-
-**Update an IP range list**
-
-``` pre
+```
 $ cat update-ip-range-list.json
 
 {
@@ -513,13 +232,9 @@ $ curl -b cookies -X PUT -d @update-ip-range-list.json 'https://api.appnexus.com
 }
 ```
 
+### Add an IP range list to your profile
 
-
-
-
-**Add an IP range list to your profile**
-
-``` pre
+```
 $ cat profile-update.json
  
 {
@@ -651,30 +366,8 @@ $ curl -b cookies -X PUT -d @profile-update.json 'https://api.appnexus.com/profi
 }
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-
-
-
-
-
-
-
-
+- [Profile Service](profile-service.md)
+- [API Semantics](api-semantics.md)
+- [API Best Practices](api-best-practices.md)

@@ -1,485 +1,81 @@
 ---
-Title : Line Item Reporting Service
-Description : <b>Note:</b> This field or feature is part of
+title: Line Item Reporting Service
+description: Explore the Line Item Reporting service, their JSON fields, REST API, and functions with thorough example.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-functionality currently in either Alpha or Beta phase. It is therefore
 ---
 
+# Line Item Reporting service
 
-# Line Item Reporting Service
+> [!NOTE]
+> This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
-
-
-
-
-<b>Note:</b> This field or feature is part of
-functionality currently in either Alpha or Beta phase. It is therefore
-subject to change.
-
-
-
-Xandr admins can use this service to create
-the `standard_v2` line item.  
-
-
+Xandr admins can use this service to create the `standard_v2` line item.  
 
 ## REST API
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Methods</th>
-<th id="ID-0000242f__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000242f__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__2">http://sor-api.<span
-class="ph">adnxs.net/standard_v2
-<p>(standard_v2 JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__3">Add
-a new Augmented Targeting line item and associated profile</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__2">http://sor-api.<span
-class="ph">adnxs.net/standard_v2
-<p>(standard_v2 JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__3">Modify an Augmented Targeting line item
-and associated profile</td>
-</tr>
-</tbody>
-</table>
+| HTTP Methods | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | [https://sor-api.adnxs.net/standard_v2](http://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Add a new Augmented Targeting line item and associated profile. |
+| `PUT` | [https://sor-api.adnxs.net/standard_v2](https://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Modify an Augmented Targeting line item and associated profile. |
 
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `line_item` | array | See [Line Item Array](#line-item-array). |
+| `campaigns` | array | See [Campaigns Array](#campaigns-array). |
 
+### Line item array
 
+The Line Item Array functions like the [Line Item Service](line-item-service.md).
 
-## JSON Fields
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the line item.<br>**Required On:** `PUT`, in query string. |
+| `name` | string | The name of the line item.<br>**Required On:** `POST` |
+| `line_item_type` | enum | For the Line Item Reporting Service to work correctly, select `standard_v2`.<br>**Default:** `standard_v1`<br>**Required On:** `POST` |
+| `revenue_type` | enum | The way the advertiser has agreed to pay you. Possible values for `line_item_type` = `standard_v2` are listed below:<br> - `"cpm"`: A flat payment per 1000 impressions.<br>Requires a `revenue_value`<br> - `"vcpm"`: Expected value for each impression.<br>For a revenue type of `"cpm"` or `"vcpm"`, one of the following is required:<br> - `goal_type`:<br>&nbsp; - `cpa`: Use [Goal Pixels array](../digital-platform-api/line-item-service.md#goal-pixels). <br>&nbsp; - `cpc`: Use [Valuation array](#valuation-array).<br>Each can also include:<br> - `max_avg_cpm` in the [Valuation array](#valuation-array).<br>**Required On:** `POST` |
+| `revenue_value` | double | The amount paid to the network by the advertiser.<br>**Required On:** `POST` |
+| `budget_intervals` | array | See [Budget Intervals](./line-item-service.md#budget-intervals).<br><br>**Note:**<br> - Set `enable_pacing` to `true`.<br>AND<br> - Set `lifetime_budget` or `lifetime_budget_imp` and `lifetime_pacing`.<br>OR<br> - Set `lifetime_budget` or `lifetime_budget_imps` and `daily_budget` or `daily_budget_imps`.<br>**Required On:** `POST` |
+| `creative` | array | The creatives that are associated with the line item. You must first add the creative through the [Creative Service](creative-service.md) if you don't already have a creative to use. See [Creative Array](#creative-array). |
+| `profile` | array | See [Profile Service](profile-service.md). |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000242f__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000242f__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__10"><code
-class="ph codeph">line_item</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__11">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__12">See
-<a href="line-item-reporting-service.md#ID-0000242f__line-item-array"
-class="xref">Line Item Array</a></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__10"><code
-class="ph codeph">campaigns</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__11">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__12">See
-<a href="line-item-reporting-service.md#ID-0000242f__cam_array"
-class="xref">Campaigns Array</a></td>
-</tr>
-</tbody>
-</table>
+### Creative array
 
-**Line Item Array**
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the creative. Either `id` or `code` is required when updating creative association. |
+| `code` | string | The custom code for the creative. Either `id` or `code` is required when updating creative association. |
 
-The Line Item Array functions like the <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a>.
+### Valuation array
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000242f__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000242f__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">The
-ID of the line item.
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>, in
-query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">The
-name of the line item.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">line_item_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">For
-the Line Item Reporting Service to work correctly, select <code
-class="ph codeph">standard_v2</code>.
-<p><strong>Default:</strong> <code
-class="ph codeph">standard_v1</code></p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">revenue_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">The
-way the advertiser has agreed to pay you. Possible values for <code
-class="ph codeph">line_item_type</code> = <code
-class="ph codeph">standard_v2</code> are listed below:
-<ul>
-<li><code class="ph codeph">"cpm"</code> - A flat payment per 1000
-impressions.
-<ul>
-<li>Requires a <code class="ph codeph">revenue_value</code></li>
-</ul></li>
-<li><code class="ph codeph">"vcpm"</code> - Expected value for each
-impression.</li>
-</ul>
-<p>For a revenue type of <code class="ph codeph">"cpm"</code> or <code
-class="ph codeph">"vcpm"</code>, one of the following is required:</p>
-<ul>
-<li><code class="ph codeph">goal_type</code>:
-<ul>
-<li><code class="ph codeph">cpa</code> - Use <a
-href="line-item-service.md#LineItemService-GoalPixels"
-class="xref" target="_blank">Goal Pixels array</a></li>
-<li><code class="ph codeph">cpc</code> - Use <a
-href="line-item-reporting-service.md#ID-0000242f__ID-0000258c"
-class="xref">Valuation array</a></li>
-</ul></li>
-</ul>
-<p>Each can also include:</p>
-<ul>
-<li><code class="ph codeph">max_avg_cpm</code> in the <a
-href="line-item-reporting-service.md#ID-0000242f__ID-0000258c"
-class="xref">Valuation array</a></li>
-</ul>
-<p><strong>Required On:</strong><code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">revenue_value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">double</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">The
-amount paid to the network by the advertiser.
-<p><strong>Required On:</strong><code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">budget_intervals</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">See
-<a
-href="line-item-service.md#LineItemService-BudgetIntervals"
-class="xref" target="_blank">Budget Intervals</a>
+| Field | Type | Description |
+|:---|:---|:---|
+| `goal_threshold` | decimal | For line items with the `goal_type` `"cpc"`, the performance goal threshold, which determines the bid/no bid cutoff on optimized campaigns.<br>**Default:** `null` |
+| `goal_target` | decimal | For line items with the `goal_type` `"cpc"`, the performance goal target, representing the desired clicks or click-through rate.<br>**Default:** `null` |
+| `performance_mkt_managed` | boolean | **Default:** Set to `false`. |
+| `min_margin_pct` | decimal | For line items with `revenue_type` `"cpm"`, `"cpa"`, or `"cpc"` the minimum margin PCT.<br>**Default:** `null` |
+| `min_avg_cpm` | decimal | The line item revenue cannot fall below this minimum average eCPM.<br>**Default:** `null` |
+| `max_avg_cpm` | decimal | The line item revenue cannot exceed this maximum average eCPM.<br>**Default:** `null` |
 
-<b>Note:</b>
-<ul>
-<li>Set <code class="ph codeph">enable_pacing</code> to <code
-class="ph codeph">true</code></li>
-</ul>
-<p>AND</p>
-<ul>
-<li>Set <code class="ph codeph">lifetime_budget</code> or <code
-class="ph codeph">lifetime_budget_imp</code> and <code
-class="ph codeph">lifetime_pacing</code></li>
-</ul>
-<p>OR</p>
-<ul>
-<li>Set <code class="ph codeph">lifetime_budget</code> or <code
-class="ph codeph">lifetime_budget_imps</code> and <code
-class="ph codeph">daily_budget</code> or <code
-class="ph codeph">daily_budget_imps</code></li>
-</ul>
-<p><strong>Required On:</strong><code class="ph codeph">POST</code></p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">creative</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">The
-creatives that are associated with the line item. You must first add the
-creative through the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a> if you don't already
-have a creative to use. See <a
-href="line-item-reporting-service.md#ID-0000242f__CreativeArray"
-class="xref">Creative Array</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__19"><code
-class="ph codeph">profile</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__20">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__21">See
-<a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.</td>
-</tr>
-</tbody>
-</table>
+### Campaigns array
 
-**Creative Array**
+The following is the default campaign that you have to feed the Line Item Reporting Service when you create a new line item. You will always have to construct a campaign with the following fields and values, and the Line Item Reporting Service will create and associate the actual campaign for you. The Line Item Reporting Service expects the campaign in a list, even though you would only put one campaign.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__46"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000242f__entry__47"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000242f__entry__48"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__46"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__47">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__48">The
-ID of the creative. Either <code class="ph codeph">id</code> or <code
-class="ph codeph">code</code> is required when updating creative
-association.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__46"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__47">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__48">The
-custom code for the creative. Either <code
-class="ph codeph">id</code> or <code class="ph codeph">code</code> is
-required when updating creative association.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Value |
+|:---|:---|:---|
+| `name` | string | Line Item's name. |
+| `state` | enum | Line Item's state. |
+| `inventory_type` | enum | `"both"` |
+| `cpm_bid_type` | enum | `"bpp"` |
+| `require_cookie_for_tracking` | enum | `"false"` |
 
-**Valuation Array**
+## Example
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__55"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000242f__entry__56"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000242f__entry__57"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">goal_threshold</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">decimal</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__57">For
-line items with the <code class="ph codeph">goal_type</code> "cpc", the
-performance goal threshold, which determines the bid/no bid cutoff on
-optimized campaigns.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">goal_target</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">decimal</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__57">For
-line items with the <code class="ph codeph">goal_type</code> "cpc", the
-performance goal target, representing the desired clicks or
-click-through rate.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">performance_mkt_managed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__57"><strong>Default:</strong> Set to <code
-class="ph codeph">false</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">min_margin_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">decimal</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__57">For
-line items with <code class="ph codeph">revenue_type</code> "cpm",
-"cpa", or "cpc" the minimum margin PCT.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">min_avg_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">decimal</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__57">The
-line item revenue cannot fall below this minimum average eCPM.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__55"><code
-class="ph codeph">max_avg_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__56">decimal</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000242f__entry__57">The
-line item revenue cannot exceed this maximum average eCPM.
-<p><strong>Default:</strong> <code
-class="ph codeph">null</code></p></td>
-</tr>
-</tbody>
-</table>
+### Create a new Augmented Trading line item
 
-**Campaigns Array**
-
-The following is the default campaign that you have to feed the Line
-Item Reporting Service when you create a new line item. You will always
-have to construct a campaign with the following fields and values, and
-the Line Item Reporting Service will create and associate the actual
-campaign for you. The Line Item Reporting Service expects the campaign
-in a list, even though you would only put one campaign.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000242f__entry__76"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000242f__entry__77"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000242f__entry__78"
-class="entry colsep-1 rowsep-1">Value</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__76"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__77">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__78">Line Item's name</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__76"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__77">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__78">Line Item's state</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__76"><code
-class="ph codeph">inventory_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__77">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__78"><code
-class="ph codeph">"both"</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__76"><code
-class="ph codeph">cpm_bid_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__77">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__78"><code
-class="ph codeph">"bpp"</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__76"><code
-class="ph codeph">require_cookie_for_tracking</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__77">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000242f__entry__78"><code
-class="ph codeph">"false"</code></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## Examples
-
-**Create a new Augmented Trading line item**
-
-``` pre
+```
 $ cat standard_v2.json
 {
   "standard_v2": {
@@ -737,9 +333,3 @@ $ cat standard_v2.json
  
 $ curl -b cookies -c cookies -X POST -d @standard_v2.json "http://sor-api.adnxs.net/standard_v2"
 ```
-
-
-
-
-
-

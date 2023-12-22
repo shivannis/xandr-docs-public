@@ -1,35 +1,17 @@
 ---
-Title : Line Item Frequency Report
-Description : The Line Item Frequency report can be used to view how frequently users
+title: Line Item Frequency Report
+description: Learn about the Line Item Frequency report, providing the ability to view how frequently users are viewing a specific line item's creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-are viewing a specific line item's creatives. This report shows data at
 ---
 
+# Line Item Frequency report
 
-# Line Item Frequency Report
+The Line Item Frequency report can be used to view how frequently users are viewing a specific line item's creatives. This report shows data at the line item and is available to members. For instructions on retrieving a report, see the [examples](#examples) below.
 
+## Time frame
 
-
-
-
-The Line Item Frequency report can be used to view how frequently users
-are viewing a specific line item's creatives. This report shows data at
-the line item and is available to members. For instructions on
-retrieving a report, see the <a
-href="line-item-frequency-report.md#line-item-frequency-report__example"
-class="xref">example</a> below.
-
-
-
->
-
-## Time Frame
-
-
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - last_48_hours
 - today
@@ -39,745 +21,89 @@ following:
 - last_24_hours
 - last_30_days
 
-
-
-**Data Retention Period**
+### Data retention period
 
 Data retention period for this report is 45 days.
 
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
->
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="line-item-frequency-report__dimensions__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="line-item-frequency-report__dimensions__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="line-item-frequency-report__dimensions__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="line-item-frequency-report__dimensions__entry__4"
-class="entry colsep-1 rowsep-1">Group</th>
-<th id="line-item-frequency-report__dimensions__entry__5"
-class="entry colsep-1 rowsep-1">Filter</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The hour
-of the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02-01</code> <code
-class="ph codeph">06:00:00"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The day of
-the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02-01"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The month
-of the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The ID of
-the buying member. If the impression was not purchased, this field shows
-one of the following values: <code class="ph codeph">229</code> = PSA,
-<code class="ph codeph">0</code> = Blank, or <code
-class="ph codeph">319</code> = Default.</p>
-<p>Example: <code class="ph codeph">123</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The ID of the
-insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The ID of
-the advertiser. If the value is <code class="ph codeph">0</code>, either
-the impression was purchased by an external buyer, or a default or PSA
-was shown.</p>
-<p>Example: <code class="ph codeph">789</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The ID of
-the line item.</p>
-<p>Example: <code class="ph codeph">111</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">pixel_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The ID of
-the pixel.</p>
-<p>Example: <code class="ph codeph">123</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The name
-of the advertiser.</p>
-<p>Example: <code class="ph codeph">"Verizon Wireless"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">advertiser</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The name
-of the advertiser followed by the ID (Xandr format).</p>
-<p>Example: <code
-class="ph codeph">"Verizon Wireless (789)"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The name of
-the insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">insertion_order_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The custom
-code for the insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The name
-of the line item.</p>
-<p>Example: <code class="ph codeph">"Default Line Item"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The custom
-code for the line item.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The name of
-the insertion order followed by the ID (Xandr format).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3"><p>The name
-of the line item followed by the ID (Xandr format).</p>
-<p>Example: <code
-class="ph codeph">"Default Line Item (111)"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item_frequency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The bucket
-for how frequently the line item's creatives were displayed. See <a
-href="line-item-frequency-report.md#line-item-frequency-report__Line_Item_Frequency_Buckets"
-class="xref">Line Item Frequency Buckets</a>.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__1">line_item_frequency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__3">The ID of the
-line item frequency bucket. See <a
-href="line-item-frequency-report.md#line-item-frequency-report__Line_Item_Frequency_Buckets"
-class="xref">Line Item Frequency Buckets</a> below for possible
-values</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__dimensions__entry__5">No</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Description | Group | Filter |
+|:---|:---|:---|:---|:---|
+| `hour` | time | The hour of the auction.<br>**Example:** `"2010-02-01 06:00:00"` | Yes | Yes |
+| `day` | time | The day of the auction.<br>**Example:** `"2010-02-01"` | Yes | Yes |
+| `month` | time | The month of the auction.<br>**Example:** `"2010-02"` | Yes | Yes |
+| `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: `22`9 = PSA, `0` = Blank, or `319` = Default.<br>**Example:** `123` | Yes | Yes |
+| `insertion_order_id` | int | The ID of the insertion order. | Yes | Yes |
+| `advertiser_id` | int | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown.<br>**Example:** `789` | Yes | Yes |
+| `line_item_id` | int | The ID of the line item.<br>**Example:** `111` | Yes | Yes |
+| `pixel_id` | int | The ID of the pixel.<br>**Example:** `123` | Yes | Yes |
+| `advertiser_name` | string | The name of the advertiser.<br>**Example:** `"Verizon Wireless"` | No | No |
+| `advertiser` | string | The name of the advertiser followed by the ID (Xandr format).<br>**Example:** `"Verizon Wireless (789)"` | Yes | No |
+| `insertion_order_name` | string | The name of the insertion order. | No | No |
+| `insertion_order_code` | string | The custom code for the insertion order. | No | No |
+| `line_item_name` | string | The name of the line item.<br>**Example:** `"Default Line Item"` | No | No |
+| `line_item_code` | string | The custom code for the line item. | No | No |
+| `insertion_order` | string | The name of the insertion order followed by the ID (Xandr format). | Yes | No |
+| `line_item` | string | The name of the line item followed by the ID (Xandr format).<br>**Example:** `"Default Line Item (111)"` | Yes | No |
+| `line_item_frequency_bucket` | string | The bucket for how frequently the line item's creatives were displayed. See [Line Item Frequency Buckets](#line-item-frequency-buckets) below. | Yes | Yes |
+| `line_item_frequency_bucket_id` | int | The ID of the line item frequency bucket. For possible values, see [Line Item Frequency Buckets](#line-item-frequency-buckets) below.  | No | No |
 
->
+### Line item frequency buckets
 
-**Line Item Frequency Buckets**
-
-<table class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1"
-class="entry colsep-1 rowsep-1">Bucket ID</th>
-<th
-id="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2"
-class="entry colsep-1 rowsep-1">Bucket Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"no-cookie-date"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"no-cookie"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"0"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">1-20</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">Bucket
-name is the number of times the line item's creatives have been
-viewed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">21</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"21-25"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">22</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"26-30"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">23</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"31-35"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">24</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"36-40"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">25</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"41-45"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">26</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"46-50"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">27</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"51-60"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">28</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"61-70"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">29</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"71-80"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">30</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"81-90"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">31</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"91-100"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">32</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"101-200"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">33</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"201-300"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">34</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"301-400"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">35</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"401-500"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__1">36</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__Line_Item_Frequency_Buckets__entry__2">"501+"</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"0"` |
+| `1-20` | Bucket name is the number of times the line item's creatives have been viewed. |
+| `21` | `"21-25"` |
+| `22` | `"26-30"` |
+| `23` | `"31-35"` |
+| `24` | `"36-40"` |
+| `25` | `"41-45"` |
+| `26` | `"46-50"` |
+| `27` | `"51-60"` |
+| `28` | `"61-70"` |
+| `29` | `"71-80"` |
+| `30` | `"81-90"` |
+| `31` | `"91-100"` |
+| `32` | `"101-200"` |
+| `33` | `"201-300"` |
+| `34` | `"301-400"` |
+| `35` | `"401-500"` |
+| `36` | `"501+"` |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="line-item-frequency-report__metrics__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="line-item-frequency-report__metrics__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="line-item-frequency-report__metrics__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="line-item-frequency-report__metrics__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="line-item-frequency-report__metrics__entry__5"
-class="entry colsep-1 rowsep-1">Formula</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total number
-of impressions (served and resold).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">2437</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">imps</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total number
-of clicks across all impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">booked_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total
-revenue booked through direct advertisers (line item).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">25.6788</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">booked_revenue</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">cpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The cost per
-1000 impressions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">1.6605</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">(cost / imps) x
-1000</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total number
-of post-view and post-click conversions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">9</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">post_click_convs
-+ post_view_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The rate of
-conversions to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002218770</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">total_convs /
-imps</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">ctr</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The rate of
-clicks to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002218777</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">clicks /
-imps</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">post_view_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total number
-of recorded post-view converstions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">post_view_convs</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">post_click_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total number
-of recorded post-click conversions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">4</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">post_click_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">post_click_convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The rate of
-post-click conversion to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">post_click_convs
-/ imps</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total amount
-spent.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">100.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">media_cost</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">profit</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">profit_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The profit as a
-percentage of the revenue.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.778</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">((booked_revenue
-- media_cost) / imps) * 100</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">revenue_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total
-revenue per click.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.8256</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">booked_revenue /
-clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">revenue_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The total
-revenue per conversion.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">5.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">booked_revenue /
-total_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">cost_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The cost per
-click.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.1834</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">media_cost /
-clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">cost_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The cost per
-attribution/conversion.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.1834</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">media_cost /
-total_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__1">convs_per_mm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__3">The number of
-conversions per million impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__4"><code
-class="ph codeph">221.87708</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="line-item-frequency-report__metrics__entry__5">(total_convs /
-imps) x 1,000,000</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Description | Example | Formula |
+|:---|:---|:---|:---|:---|
+| `imps` | int | The total number of impressions (served and resold). | `2437` | imps |
+| `clicks` | int | The total number of clicks across all impressions. | `1` | clicks |
+| `booked_revenue` | money | The total revenue booked through direct advertisers (line item). | `25.6788` | booked_revenue |
+| `cpm` | money | The cost per 1000 impressions. | `1.6605` | (cost / imps) x 1000 |
+| `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
+| `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
+| `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
+| `post_view_convs` | int | The total number of recorded post-view converstions. | `5` | post_view_convs |
+| `post_click_convs` | int | The total number of recorded post-click conversions. | `4` | post_click_convs |
+| `post_click_convs_rate` | double | The rate of post-click conversion to impressions. | `0.0002` | post_click_convs / imps |
+| `media_cost` | money | The total amount spent. | `100.00` | media_cost |
+| `profit` |  |  |  |  |
+| `profit_ecpm` | money | The profit as a percentage of the revenue. | `0.778` | ((booked_revenue - media_cost) / imps) * 100 |
+| `revenue_ecpc` | money | The total revenue per click. | `0.8256` | booked_revenue / clicks |
+| `revenue_ecpa` | money | The total revenue per conversion. | `5.00` | booked_revenue / total_convs |
+| `cost_ecpc` | money | The cost per click. | `0.1834` | media_cost / clicks |
+| `cost_ecpa` | money | The cost per attribution/conversion. | `0.1834` | media_cost / total_convs |
+| `convs_per_mm` | double | The number of conversions per million impressions. | `221.87708` | (total_convs / imps) x 1,000,000 |
 
+## Examples
 
+### Create the JSON report request
 
-
-## Example
-
-**Create the JSON report request**
-
-``` pre
+```
 $ cat insertion_order_frequency  {
     "report":{
         "report_type":"insertion_order_frequency",
@@ -796,11 +122,11 @@ $ cat insertion_order_frequency  {
 }
 ```
 
-**`POST` the request to the Report Service**
+### `POST` the request to the Report service
 
 `POST` the JSON request to get back a `report_ID`.
 
-``` pre
+```
 $ curl -b cookies -X post -d @insertion_order_frequency "https://api.appnexus.com/report"
  
 {
@@ -811,21 +137,17 @@ $ curl -b cookies -X post -d @insertion_order_frequency "https://api.appnexus.co
 }
 ```
 
-Alternatively, you can get a `report_id` via a `POST` request using a
-`saved_report_id`.
+Alternatively, you can get a `report_id` via a `POST` request using a `saved_report_id`.
 
-``` pre
-$ curl -b cookies -X POST 'https://api.appnexus.com/report?saved_report_id=30'
+```
+curl -b cookies -X POST 'https://api.appnexus.com/report?saved_report_id=30'
 ```
 
-**`GET` the report status from the Report Service**
+### `GET` the report status from the Report service
 
-Make a `GET` call with the `report_id` to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then, use the **report-download** service to save the report
-data to a file, as described in the next step.
+Make a `GET` call with the `report_id` to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then, use the **report-download** service to save the report data to a file, as described in the next step.
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/report?id=09b6979a6a4c3805bdac8921378d3622'
 
 {
@@ -845,36 +167,16 @@ $ curl -b cookies 'https://api.appnexus.com/report?id=09b6979a6a4c3805bdac892137
 }
 ```
 
-**`GET` the report data from the Report Download Service**
+### `GET` the report data from the Report Download service
 
-To download the report data to a file, make another `GET` call with the
-report ID, but this time to the `report-download` service. You can find
-the service and report ID in the `"url"` field of the response to your
-previous `GET` call. When setting the file to which you want to save the
-report, use the file extension of the `"format"` (e.g., .csv) that you
-specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the report ID, but this time to the `report-download` service. You can find the service and report ID in the `"url"` field of the response to your previous `GET` call. When setting the file to which you want to save the report, use the file extension of the `"format"` (e.g., .csv) that you specified in your initial `POST`.
 
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `\-i` or `\-v` in your call to expose the response header.
 
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `\-i` or `\-v` in your call to expose the response header.
-
-
-
-``` pre
-$ curl -b cookies 'http://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' -o /tmp/insertion_order_frequency.csv
+```
+curl -b cookies 'http://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' -o /tmp/insertion_order_frequency.csv
 ```
 
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
