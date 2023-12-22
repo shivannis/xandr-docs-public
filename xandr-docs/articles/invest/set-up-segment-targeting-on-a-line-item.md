@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Segment Targeting on a Line Item
 description: In this article, follow our step-by-step instructions to set up a line item to target segments.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up segment targeting on a line item
