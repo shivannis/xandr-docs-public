@@ -20,8 +20,8 @@
       href: ios-sdk-release-notes.md
     - name: iOS SDK Integration
       items:
-      - name: Overview
-        href: ios-sdk-integration.md
+     # - name: Overview
+      #  href: ios-sdk-integration.md
       - name: iOS SDK Intialization v8.0
         href: ios-sdk-initialization-v8-0.md
       - name: iOS SDK Integration Instructions
