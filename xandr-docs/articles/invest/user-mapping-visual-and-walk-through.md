@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - User Mapping Visual and Walk-Through
 description: This article explains the mapping process of user IDs in order to pass user data that will be used to buy impressions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - User mapping visual and walk-through
