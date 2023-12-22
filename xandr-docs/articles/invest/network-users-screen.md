@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Users Screen
 description: Use the Members Users screen to view information about your network-level users and to edit or activate/deactivate specific network-level users.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member Users screen
