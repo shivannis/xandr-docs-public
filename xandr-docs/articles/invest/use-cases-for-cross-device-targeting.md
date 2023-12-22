@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Use Cases for Cross-Device Targeting and Measurement
-description : Learn about Use Cases for Cross-device targeting and measurement.
+title: Microsoft Invest - Use Cases for Cross-Device Targeting and Measurement
+description: Learn about Use Cases for Cross-device targeting and measurement.
+ms.date: 10/28/2023
 ---
 
 
