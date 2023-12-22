@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Video Mediation Demand Report
 description: Use this report to view video mediation demand metrics across multiple buyers and publishers. A mediation bid lets you specify the payment amount for a video impression.
+ms.date: 10/28/2023
 ---
 
 
