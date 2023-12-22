@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Supported VAST Features
 description: In this article, find lists of all VAST features supported and their descriptions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Supported VAST features
