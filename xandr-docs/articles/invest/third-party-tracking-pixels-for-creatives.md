@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Third-Party Tracking Pixels for Creatives
 description: In this article, learn about third-party tracking pixels for creatives that serve multiple purposes, including ad verification and data collection for creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Third-party tracking pixels for creatives
