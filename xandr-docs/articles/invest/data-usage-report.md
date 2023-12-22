@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Data Usage Report
 description: In this article, learn about data usage, data usage costs, and the campaigns in which the data was utilized to target users.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Data Usage report
