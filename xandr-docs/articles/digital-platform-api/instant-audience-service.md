@@ -68,7 +68,7 @@ curl -X POST https://streaming-data.appnexus.com/rt-segment?access_token=hbapi:1
 After authenticating, you're now ready to add/remove a user to/from a segment, via a JSON file.
 
 > [!NOTE]
-> Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, re-use existing segments where possible or use segment `values`to further sub-divide users within existing segments. These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see "Segment Pixels: Advanced" and "Segment Targeting" in the UI documentation.
+> Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, re-use existing segments where possible or use segment `values`to further sub-divide users within existing segments. These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see [Segment Pixels: Advanced](../monetize/segment-pixels-advanced.md) and [Segment Targeting](../monetize/segment-targeting.md) in the UI documentation.
 
 The following example demonstrates how to assign a user to two segments. In this example, the member is adding user ID 12345678900987654321 (this is a Xandr user id) to segments 10001 and 10002, setting both associations with value = 1 and expiration within 1440 minutes.
 
@@ -153,7 +153,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 | `users_in_request` | int | The number of users read in the request.<br><br>**Note:** This will simply show the number of users initially detected in the request regardless of whether they are valid. |
 | `segments_in_request` | int | The number of segments read in the request.<br><br>**Note:**<br>This will simply show the number of segments initially detected in the request regardless of whether they are valid in our system, and without regard to what users they are being associated with in the call. |
 
-### Additional POST scenarios
+### Additional `POST` scenarios
 
 **Using device ID (IDFA)**
 
