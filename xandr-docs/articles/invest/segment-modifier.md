@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Segment Modifier
 description: In this article, learn about segment modifiers and explore detailed steps for associating a segment modifier with an audience segment.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Segment modifier
