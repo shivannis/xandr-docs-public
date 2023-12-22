@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Export Conversion Pixels
 description: In this article, follow our step-by-step instructions to export conversion pixel tags after setting up conversion pixels.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Export conversion pixels
