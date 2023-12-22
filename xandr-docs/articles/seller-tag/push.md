@@ -1,7 +1,7 @@
 ---
-title : Push
-description : Learn how this function adds a given function to the `apntag` command queue. 
-ms.custom : seller-tag
+title: Push
+description: Learn how this function adds a given function to the `apntag` command queue. 
+ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
