@@ -1,6 +1,6 @@
 ---
-title : Understanding the Sell-Side Object Hierarchy
-description : learn about sell-side Object hierarchy. 
+title: Understanding the Sell-Side Object Hierarchy
+description: learn about sell-side Object hierarchy. 
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
