@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Seller Segment Performance Report
 description: This report provides insights on how targeted segments contribute to overall performance. It helps sellers with usage, performance, and data clearing.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Seller segment performance report
