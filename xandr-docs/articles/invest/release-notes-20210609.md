@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - June 9, 2021 - Open Beta for Video Inventory Recommendations
 description: Find the release note for new line-item-level video inventory recommendations that have been introduced.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - June 9, 2021: Open beta for video inventory recommendations
