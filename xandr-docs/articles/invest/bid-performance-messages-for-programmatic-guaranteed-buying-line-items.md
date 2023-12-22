@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Bid Performance Messages for Programmatic Guaranteed Buying Line Items
-description : Learn about the bid performance messages that contain reasons and recommendations for improving your programmatic guaranteed buying line item's bid performance.
+title: Microsoft Invest - Bid Performance Messages for Programmatic Guaranteed Buying Line Items
+description: Learn about the bid performance messages that contain reasons and recommendations for improving your programmatic guaranteed buying line item's bid performance.
 ms.date: 10/28/2023
 ---
 
