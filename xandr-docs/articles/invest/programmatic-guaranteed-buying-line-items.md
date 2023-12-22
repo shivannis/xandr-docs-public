@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Programmatic Guaranteed Buying Line Items 
 description: In this article, understand what a PG buying line item and a PG deal are, the advantages of PG line items, and how billing works for a PG deal.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Programmatic guaranteed buying line items
