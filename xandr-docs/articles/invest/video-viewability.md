@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
-description : Learn the technology behind video viewability measurement.
+title: Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
+description: Learn the technology behind video viewability measurement.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
