@@ -1,6 +1,7 @@
 ---
 title: July 14, 2021 - New Targeting Enhancements
 description: Find the release note for postal code lists and deal lists targeting enhancements that have been introduced. 
+ms.date: 10/28/2023
 ---
 
 # July 14, 2021: New targeting enhancements
