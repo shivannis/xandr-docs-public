@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Geography Targeting
 description: This article provides information on the relevant geographic targeting. You can target impressions based on the geographic location of the users viewing them.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Geography targeting
