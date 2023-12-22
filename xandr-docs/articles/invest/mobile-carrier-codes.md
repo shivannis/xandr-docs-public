@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Carrier Codes
 description: In this article, explore an extensive list of mobile carrier codes organized by country, providing a convenient resource for your reference and ease of use.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile carrier codes
