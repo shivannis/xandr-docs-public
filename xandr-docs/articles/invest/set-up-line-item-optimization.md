@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Line Item Optimization
 description: In this article, follow our step-by-step instructions to set a performance goal and goal priority for line item optimization.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up line item optimization
