@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Edit a Member User
 description: In this article, follow our step-by-step instructions to edit a Member user's details like their contact information, the peer approval requirements and so on.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Edit a member user
