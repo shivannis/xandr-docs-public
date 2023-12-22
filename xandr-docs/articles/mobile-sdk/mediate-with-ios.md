@@ -31,9 +31,8 @@ To mediate these networks, you'll need the following:
 - A supported release of our SDK. For instructions on installing our SDK, see [Integrate with iOS](./ios-sdk-integration.md).
 - The SDK of the network you want to mediate.
 - A mediation adaptor that allows our SDK to communicate with the network's SDK. There are two ways to get our mediation adaptors:
-  1. You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
-
-  1. If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list:
+  - You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
+  - If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list:
 
       ```
       platform :ios, '10.0'
