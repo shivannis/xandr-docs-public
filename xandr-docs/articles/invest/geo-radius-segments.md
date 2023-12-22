@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Geo Radius Segments
 description: This article provides instructions on how to create geo radius segments for geographical targeting of multiple user locations.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Geo radius segments
