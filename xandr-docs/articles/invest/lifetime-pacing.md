@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Lifetime Pacing
 description: In this article, learn what lifetime pacing is and the settings that can influence how the line item's lifetime spend is distributed.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Lifetime pacing
