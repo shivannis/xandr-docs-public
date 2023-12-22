@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - API
 description: In this article, learn about the Microsoft Invest API, its important resources, and the services that are currently available.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - API
