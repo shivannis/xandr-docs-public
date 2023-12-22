@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Create Event Code from the UI
-description : Learn to create event code from the UI and send it to web developer.
+title: Microsoft Invest - Create Event Code from the UI
+description: Learn to create event code from the UI and send it to web developer.
 ms.date: 10/28/2023
 ---
 
