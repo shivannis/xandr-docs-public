@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
 description: Use this report to get an insight into your line item's impressions and the demographies they're coming from.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Nielsen Digital Ad Ratings - Audience Profile Report
