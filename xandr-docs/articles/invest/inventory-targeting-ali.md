@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Inventory Targeting (ALI)
 description: In this article, learn the different categories of inventory you can target and how to target or exclude specific categories.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Inventory targeting (ALI)
