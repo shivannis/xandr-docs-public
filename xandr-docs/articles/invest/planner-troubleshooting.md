@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Planner Troubleshooting
-description : Learn about Planner Troubleshooting in this module.
+title: Microsoft Invest - Planner Troubleshooting
+description: Learn about Planner Troubleshooting in this module.
+ms.date: 10/28/2023
 ---
 
 
