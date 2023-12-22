@@ -32,6 +32,8 @@ The table is summarized as follows:
 
 ## Impression Tracking Mechanisms
 
+Following sections explain about various impression counting methodologies:
+
 ### Counting Methodology : Mobile SDK version 7.22.0 and older
 
 The Mobile SDK v7.0 continues to use the old impression counting mechanism for various Ad formats. For more information, see [Impression Counting Methods](impression-counting-methods.md).
@@ -46,8 +48,9 @@ The Mobile SDK v7.0 continues to use the old impression counting mechanism for v
 | Native       | Begin to Render      | Default for Impression Type = Resold                                                           |
 | Interstitial | Count on Render      | Default                                                                                        |
 | Video        | Count on Video Start | Default                                                                                        |
-> [!NOTE]
-> Viewability and impression counting are two different entities. Impression counting measures if an ad is served whereas viewability measures a whole lot of analytics like how long the ad was viewed by the user, what actions the user took, etc. to give better picture for the advertiser to serve better.
->The definition of impression counting definition has evolved over the years. Initially an impression was counted when it was rendered on the page or it was downloaded to the user page. However, it was not necessary that the ad was viewed though it was downloaded. So even if the ad was downloaded in the background the impression count was considered.  
-> This method of impression counting becomes irrelevant as advertisers want accurate counts to understand how many ads are actually served the user which means how many ads are actually downloaded as well as viewed by the user. This is what viewable impression counts. Viewable impression counting applies for all managed demand and for certain bidders like DV 360 who count only viewable impressions.  
-> The logic applies only for mobile app impressions and not for mobile web or web pages as these still count when the ad is rendered or downloaded to the page.
+
+## Viewability and impression counting
+Viewability and impression counting are two different entities. Impression counting measures if an ad is served whereas viewability measures a whole lot of analytics like how long the ad was viewed by the user, what actions the user took, etc. to give better picture for the advertiser to serve better.
+The definition of impression counting definition has evolved over the years. Initially an impression was counted when it was rendered on the page or it was downloaded to the user page. However, it was not necessary that the ad was viewed though it was downloaded. So even if the ad was downloaded in the background the impression count was considered.  
+This method of impression counting becomes irrelevant as advertisers want accurate counts to understand how many ads are actually served the user which means how many ads are actually downloaded as well as viewed by the user. This is what viewable impression counts. Viewable impression counting applies for all managed demand and for certain bidders like DV 360 who count only viewable impressions.  
+The logic applies only for mobile app impressions and not for mobile web or web pages as these still count when the ad is rendered or downloaded to the page.
