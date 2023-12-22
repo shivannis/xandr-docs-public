@@ -1,6 +1,7 @@
 ---
 title : Metrics for Nielsen Digital Ad Ratings
 description : Learn about an exclusive set of metrics for tracking a line item's audience demographic targeting success within Microsoft Invest introduced by Nielsen Digital Ad Ratings (DAR). 
+ms.date: 10/28/2023
 ---
 
 
