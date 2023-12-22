@@ -72,7 +72,7 @@ If you are unfamiliar with CocoaPods review their [installation and user guides
   pod install
   ```
 
-- CocoaPods will download the Xandr SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
+- CocoaPods downloads the Xandr SDK and creates a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
 ### Carthage
 
@@ -98,7 +98,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
   ```
 
   > [!TIP]
-  > You can use editor's other than Xcode to edit the Cartfile but be aware that other editing programs such as TextEdit might automatically include smart quotes instead of straight quotes. Carthage will not recognize content within smart quotes and not perform correctly.
+  > You can use editor's other than Xcode to edit the Cartfile but be aware that other editing programs such as TextEdit might automatically include smart quotes instead of straight quotes. Carthage does not recognize content within smart quotes and not perform correctly.
 
 - Run below command.
 
