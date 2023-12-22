@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Use User Test Groups with a Split
 description: This article provides instructions for performing A/B testing with user test groups, which target distinct groups of users per split. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Use user test groups with a split
