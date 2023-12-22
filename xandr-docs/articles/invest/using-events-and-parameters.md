@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Using Events and Parameters
 description: Add value to the universal pixel by configuring it to identify events, such as adding an item to a shopping cart. Enhance events by adding parameters.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Using events and parameters
