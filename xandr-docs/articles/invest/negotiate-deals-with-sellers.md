@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Negotiate Deals with Sellers
 description: This article explains how to negotiate and set up deals with sellers and external supply partners.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Negotiate deals with sellers
