@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Fee Calculations
 description: In this article, learn the different ways that partner fees can be calculated and how they are deducted.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Fee calculations
