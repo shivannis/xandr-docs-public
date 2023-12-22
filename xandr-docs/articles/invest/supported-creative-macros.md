@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Supported Creative Macros
 description: In this article, find lists of all creative macros for mobile, video, and all impressions, and privacy and function macros that are supported.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Supported creative macros
