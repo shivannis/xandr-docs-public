@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Universal Pixel Reporting
-description : Learn about universal pixel activity from activity reporting available, along with a number of reports and feeds in Universal Pixels page.   
+title: Microsoft Invest - Universal Pixel Reporting
+description: Learn about universal pixel activity from activity reporting available, along with a number of reports and feeds in Universal Pixels page.   
+ms.date: 10/28/2023
 ---
 
 
