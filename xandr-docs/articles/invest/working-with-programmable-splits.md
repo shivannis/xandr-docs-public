@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Programmable Splits
-description : Learn about Programmable splits
+title: Microsoft Invest - Working with Programmable Splits
+description: Learn about Programmable splits.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with programmable splits
