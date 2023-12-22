@@ -1,6 +1,7 @@
 ---
 title: Netflix Programmatic Guaranteed Buying Line Item
 description: This article provides instructions to create a programmatic guaranteed line item. A PG line item offers a specific workflow for buying a guaranteed deal.
+ms.date: 10/28/2023
 ---
 
 # Netflix programmatic guaranteed buying line item
