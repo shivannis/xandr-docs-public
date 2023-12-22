@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Manage Your Username and Password
 description: In this article, learn how to retrieve your username, reset a forgotten or expired password, and update your email address or password.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Manage your username and password
