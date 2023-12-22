@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Manage Your Deals with Sellers
 description: In this article, learn how to view deal metrics, search for deals, and how to switch to seller mode.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Manage your deals with sellers
