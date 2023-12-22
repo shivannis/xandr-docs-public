@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Managing Creative Templates
 description: In this article, find out how to manage creative templates and how to view standard creative templates.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Managing creative templates
