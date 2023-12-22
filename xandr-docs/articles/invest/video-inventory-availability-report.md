@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Inventory Availability Report
 description: Buyers can use this report to determine whether inventory that meets their specific buying requirements is likely to be available for purchase.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video inventory availability report
