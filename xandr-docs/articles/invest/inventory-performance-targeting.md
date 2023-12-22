@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Inventory Performance Targeting
 description: In this article, learn what inventory performance targeting is and the ways in which you can target inventory based on historical performance.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Inventory performance targeting
