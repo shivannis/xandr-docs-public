@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Create an Advertiser
-description : Learn how to create an advertiser object  before you start running ad campaigns and serving creatives on behalf of an advertiser.
+title: Microsoft Invest - Create an Advertiser
+description: Learn how to create an advertiser object  before you start running ad campaigns and serving creatives on behalf of an advertiser.
 ms.date: 10/28/2023
 ---
 
