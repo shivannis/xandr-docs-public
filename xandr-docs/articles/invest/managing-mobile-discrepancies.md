@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Managing Mobile Discrepancies
 description: In this article, understand the factors that might cause discrepancies in mobile advertising and how mobile impressions are counted.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Managing mobile discrepancies
