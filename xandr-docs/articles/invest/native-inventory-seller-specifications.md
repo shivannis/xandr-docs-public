@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Native Inventory Seller Specifications
 description: This page outlines requirements defined by sellers for serving creatives on their native ad inventory. It can also help troubleshoot if the creatives aren't serving.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Native inventory seller specifications
