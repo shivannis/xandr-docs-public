@@ -79,7 +79,7 @@ The `pacing_strategies` object is used to define a customized pacing strategy fo
 
 ### File upload method
 
-You may also read or write pacing strategies using a .csv file. A sample file on `GET` or `PUT` might look like [this](https://xandr-be-prod.zoominsoftware.io/bundle/page/files/pacing_strategy_service_example.csv):
+You may also read or write pacing strategies using a .csv file.
 
 > [!NOTE]
 > Excel automatically formats dates as MM/DD/YYYY. When writing values to the .csv file's **when** column, the Pacing Strategy Service expects dates in the YYYY-MM-DD format.

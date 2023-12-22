@@ -31,6 +31,10 @@ The API recency settings follow the format shown here:
 
 :::image type="content" source="media/api-settings.png" alt-text="Screenshot showing the format of the API recency settings.":::
 
+| Setting | Profile Field | Description |
+|:---|:---|:---|
+| 1 imp per x minutes/hours/days/weeks | `min_minutes_per_imp` | A single creative will not be shown to an individual user more than once every x minutes. (Value is in minutes, so 1 imp every 2 hours would be a value of `120`.) |
+
 Some additional settings related to frequency capping include the following:
 
 :::image type="content" source="media/frequency-capping.png" alt-text="Screenshot showing the additional settings related to frequency capping.":::

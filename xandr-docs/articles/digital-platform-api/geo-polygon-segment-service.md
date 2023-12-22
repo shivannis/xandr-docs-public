@@ -26,9 +26,9 @@ To create a segment with geo polygons, follow below steps:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/geo-polygon-segment(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
-| `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/upload-polygon(add-polygons.csv) | Add polygons to a segment |
-| `POST` | https://api.appnexus.com/geo-polygon-segment(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
+| `POST` | https://api.appnexus.com/geo-polygon-segment<br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
+| `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/upload-polygon <br>(add-polygons.csv) | Add polygons to a segment |
+| `POST` | https://api.appnexus.com/geo-polygon-segment<br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
 | `POST` | https://api.appnexus.com/geo-polygon-segment/select<br><br>`POST -d '{"criteria":{},"ordering": {"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo- polygon-segment/select"` | View all geo polygon segments for a member |
 | `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View a specific geo polygon segment's details |
 | `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View all geo polygon definitions in a segment |

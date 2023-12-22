@@ -44,7 +44,7 @@ Some sellers use their own codes to break out their inventory more granularly th
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| `code` | string (100) | The value that will be passed as ext_inv_code in the query string of tag-based ad calls or the request body of AST/SDK-based ut/v3 ad calls.<br><br>**Required On**: `POST` |
+| `code` | string (100) | The value that will be passed as `ext_inv_code` in the query string of tag-based ad calls or the request body of AST/SDK-based ut/v3 ad calls.<br><br>**Required On**: `POST` |
 | `id` | int | The ID for the external inventory code.<br><br>**Default**: auto-generated number<br>**Required On**: `PUT` and `DELETE` |
 | `name` | string (100) | The name for the external inventory code. This name can be included in the (first four) Network/Publisher Analytics UI/API reports listed above.<br><br>**Required On**: `POST` |
 | `publisher_id` | int | The ID of the publisher for which the external inventory code is used. If `0`, the code is used across multiple publishers.<br><br>**Default**: `0` |

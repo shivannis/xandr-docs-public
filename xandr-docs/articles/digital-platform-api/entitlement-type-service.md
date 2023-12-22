@@ -138,6 +138,6 @@ $ curl -b cookies -X POST -d @entitlement_type_update.json 'https://api.appnexus
 }
 ```
 
-## Related topics
+## Related topic
 
 [Member Service](./member-service.md)

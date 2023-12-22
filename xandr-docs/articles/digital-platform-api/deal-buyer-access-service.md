@@ -19,7 +19,7 @@ Buyers can use the `deal_targets` field in the [Profile Service](./profile-servi
 | `GET` | https://api.appnexus.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID  | View all deals you have with a specific seller |
 | `GET` | https://api.appnexus.com/deal-buyer-access?id=DEAL_ID  | View a specific deal |
 | `GET` | https://api.appnexus.com/deal-buyer-access?id=1,2,3 | View multiple deals by ID using a comma-separated list |
-| `GET` | https://api.appnexus.com/deal-buyer-access?search="Deal ID, name, or code"  | Search for a deal by name, ID, or code |
+| `GET` | https://api.adnxs.com/deal-buyer-access?search="Deal_ID,DEAL_NAME,orCODE"  | Search for a deal by name, ID, or code |
 | `GET` | https://api.appnexus.com/deal-buyer-access/meta  | Find out which fields you can filter and sort by |
 
 ## JSON fields
@@ -28,21 +28,21 @@ Buyers can use the `deal_targets` field in the [Profile Service](./profile-servi
 |:---|:---|:---|
 | `active` | boolean | If `true`, the deal is active. Note that the deal will be available to the buyer only when this field is `true`, `start_date` is in the past (or `null`), and `end_date` is in the future (or `null`). |
 | `ask_price` | int | The  price associated with the deal. This is the minimum amount the seller will accept for this inventory. |
-| `audit_status_option` | string | Specifies how the deal handles creatives.<br> - `none`: Creatives use existing ad quality settings.<br> - `provisional`: Creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br> - `max_trust`: Any creative is allowed to serve for this deal.<br>Creatives specifically listed in the Creatives object will override these settings. |
+| `audit_status_option` | string | Specifies how the deal handles creatives.<br> - `none`: Creatives use existing ad quality settings.<br> - `provisional`: Creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br> - `max_trust`: Any creative is allowed to serve for this deal.<br>Creatives specifically listed in the [Creatives](#creatives) object will override these settings. |
 | `brands` | array of objects | The brands of creatives that are eligible for the deal. For more details, see [Brands](#brands) below. |
 | `brand_restrict` | Boolean | Specifies whether the deal is restricted only to the brands listed in the [Brands](#brands) object.<br> - `true`: Deal is restricted only to the listed brands.<br> - `false`: Other brands are also allowed to serve. |
 | `buyer` | object | The buying member who can target this deal. For more details, see [Buyer](#buyer) below. |
 | `categories` | array of objects | The categories that describe the creatives that are eligible for the deal. For more details, see [Categories](#categories) below. |
 | `category_restrict` | Boolean | Specifies whether the deal is restricted only to the categories listed in the [Categories](#categories) object.<br>- `true`: Deal is restricted only to the listed categories.<br>- `false`: Other categories are also allowed to serve. |
 | `code` | string (100) | The custom code for the deal. For deals with external supply partners, this is generally the string that you will use to identify the deal. |
-| cre``atives | array of objects | A list of creatives that are specifically approved or banned for the deal. This list overrides any other ad quality setting. For more details, see [Creatives](#creatives) below. |
+| `creatives` | array of objects | A list of creatives that are specifically approved or banned for the deal. This list overrides any other ad quality setting. For more details, see [Creatives](#creatives) below. |
 | `currency` | enum | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](./currency-service.md).  |
 | `description` | string (65535) | The description of the deal. For deals with external supply partners, the description may provide additional insight or details about the deal. |
 | `end_date` | timestamp | The day and time when the deal stops being available to the buyer. Null corresponds to "indefinitely". |
-| `floor_price` | double | **Deprecated**. Refer to the ask_price field instead. The minimum CPM value that the buyer must bid to be eligible for the deal.<br><br>**Note**:<br>If `use_deal_floor` is `false`, `floor_price` will be `0`. In this case, note that although 0 is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
+| `floor_price` | double | **Deprecated**. Refer to the `ask_price` field instead. The minimum CPM value that the buyer must bid to be eligible for the deal.<br><br>**Note**:<br>If `use_deal_floor` is `false`, `floor_price` will be `0`. In this case, note that although `0` is shown as the floor price, no deal floor is applied; if the seller has any other floors (in placements or yield management profiles), they will be applied, or if the seller does not have any other floors, the standard second-price auction mechanics will apply. |
 | `id` | int | The ID of the deal. |
 | `languages` | array of objects | The language associated with creatives that are eligible for the deal. For more details, see [Languages](#languages) below. |
-| `language_restrict` | Boolean | Specifies whether the deal is restricted only to the languages listed in the Languages object.<br>- `true`: Deal is restricted only to the listed languages.<br>- `false`: Other languages are also allowed to serve. |
+| `language_restrict` | Boolean | Specifies whether the deal is restricted only to the languages listed in the [Languages](#languages) object.<br>- `true`: Deal is restricted only to the listed languages.<br>- `false`: Other languages are also allowed to serve. |
 | `last_modified` | timestamp | The date and time when the deal was last modified. |
 | `name` | string (255) | The name of the deal. |
 | `payment_type` | string | Specifies the payment type for the deal:<br><br>- `default`: This deal uses the default payment type for the buyer of this deal. Includes CPM and may also include CPA, CPC, or both.<br>- `cpvm`: This deal uses the Viewable CPM payment type. Only viewable impressions result in payment from the buyer. |
@@ -118,7 +118,7 @@ Each `technical_attribute` object contains the following fields:
 |:---|:---|:---|
 | `id` | int | The ID of the technical attribute that is eligible for the deal. You can use the [Technical Attribute Service](./technical-attribute-service.md) to retrieve technical attribute IDs. |
 | `name` | string | The name of the technical attribute that is eligible for the deal. |
-| `override` | Boolean | If set to true, a technical attribute can serve for a deal even if the ad quality profile would have blocked it. |
+| `override` | Boolean | If set to `true`, a technical attribute can serve for a deal even if the ad quality profile would have blocked it. |
 
 ### Creatives
 
@@ -127,7 +127,7 @@ The `creatives` array is limited to 100 creatives. Each `creatives` object conta
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the creative that is approved or banned for the deal. You can use the [Creative Service](./creative-service.md) to retrieve creative IDs. |
-| `status` | string | Specifies how this creative will be handled for this deal.<br> - `approve`d: This creative can always serve in this deal, regardless of any other ad quality settings or overrides.<br> - `banned`: This creative can never serve in this deal, regardless of any other ad quality settings or overrides. |
+| `status` | string | Specifies how this creative will be handled for this deal.<br> - `approved`: This creative can always serve in this deal, regardless of any other ad quality settings or overrides.<br> - `banned`: This creative can never serve in this deal, regardless of any other ad quality settings or overrides. |
 
 ### Sizes
 

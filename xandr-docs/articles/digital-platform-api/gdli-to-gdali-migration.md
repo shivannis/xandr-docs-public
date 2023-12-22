@@ -34,7 +34,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 | Feature | Legacy Setting | New Setting |
 |:---|:---|:---|
 | Budget Type | Budget type was specified on the insertion order object but was not required. See [Example for Budget Type - Legacy setting](#example-for-budget-type---legacy-setting) below.| Budget type is specified on the insertion order object and must be set to `"flexible"` or `"impression"` for the insertion order to be compatible with GDALI and PG line items. See [Example for Budget Type - New setting](#example-for-budget-type---new-setting) below |
-| Flight Dates and Budgeting | Flight dates and budgets were specified on the insertion order object. See [Example for flight dates and budgeting - Legacy setting](#example-for-flight-dates-and-budgeting---legacy-setting)  | Flight dates and budgets are specified within the `budget_intervals` property on the insertion order object. <br><br>**Note**: The insertion order must not contain more than one `budget_intervals` array.<br><br>GDALI and PG line items require an "unlimited" budget set on the insertion order. Budget fields may be omitted or set to `null`<br><br>The `allow_safety_pacing` field is no longer used. See [Example for flight dates and budgeting - New setting](#example-for-flight-dates-and-budgeting---new-setting)|
+| Flight Dates and Budgeting | Flight dates and budgets were specified on the insertion order object. See [Example for flight dates and budgeting - Legacy setting](#example-for-flight-dates-and-budgeting---legacy-setting)  | Flight dates and budgets are specified within the `budget_intervals` property on the insertion order object. <br><br>**Note**: <br> - The insertion order must not contain more than one `budget_intervals` array.<br> - GDALI and PG line items require an "unlimited" budget set on the insertion order. Budget fields may be omitted or set to `null`.<br> - The `allow_safety_pacing` field is no longer used. See [Example for flight dates and budgeting - New setting](#example-for-flight-dates-and-budgeting---new-setting).|
 | `Profile` | Profile was not supported on legacy insertion orders. | Use of the `profile_id` on the insertion order is not recommended, as use may result in unexpected forecasting results or delivery. |
 
 ### Example for budget type - Legacy setting
@@ -279,25 +279,25 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 
 | Feature | Legacy GDLI | GDALI |
 |:---|:---|:---|
-| Line Item Subtype | This is a new field to the line item service. | Line item subtype should be specified as `gd_buying_imp` for impression guaranteed line items, and `gd_buying_exclusive` for exclusive (also known as share of voice/SOV) guaranteed line items.<br><br>By defining `line_item_subtype`, the user may omit the following fields/arrays in the request payload:<br> - `line_item_type`<br> - `bid_object_type`<br>- `delivery_model_type`<br> - `supply_strategies`<br>If the user provides conflicting `line_item_subtype` and fields/arrays outlined above, we'll prefer the line_item_subtype and ignore other fields on the call.<br><br>**Note**: The `line_item_subtype` field cannot be changed after the line item is created.<br><br>More details on the `line_item_subtype` field can be found in [Line Item Service - GDALI](./line-item-service---gdali.md). See [Example for Line Item Subtype - GDALI](#example-for-line-item-subtype---gdali) |
-| Line Item Type | Line Item Type was specified as guaranteed_delivery. See [Example for line item type - Legacy GDLI](#example-for-line-item-type---legacy-gdli)  | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `line_item_type` field may be omitted and will default to `"standard_v2"`. |
-| Bid Object Type | Bid object type was specified on the line item object but was not required. See [Example for bid object type - Legacy GDLI](#example-for-bid-object-type---legacy-gdli)  | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `bid_object_type` field may be omitted and will default to `"creative"`. |
-| Delivery Model Type | Delivery model type was specified on the line item object but was not required. See [Example for delivery model type - Legacy GDLI](#example-for-delivery-model-type---legacy-gdli) | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `delivery_model_type` field may be omitted. |
-| Supply Strategies | Supply Strategies were previously specified using the `inventory_type` field within a campaign object with a value of `real_time`, `direct`, or `both`. See [Example for supply strategies - Legacy GDLI](#example-for-supply-strategies---legacy-gdli) | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `supply_strategies` field may be omitted.<br>Guaranteed delivery line items will always be set to `"managed": true` and all other strategies will be set to `false`.<br><br>See the "Supply Strategies" section in [Line Item Service - GDALI](./line-item-service---gdali.md) for more information. |
+| Line Item Subtype | This is a new field to the line item service. | Line item subtype should be specified as `gd_buying_imp` for impression guaranteed line items, and `gd_buying_exclusive` for exclusive (also known as share of voice/SOV) guaranteed line items.<br><br>By defining `line_item_subtype`, the user may omit the following fields/arrays in the request payload:<br> - `line_item_type`<br> - `bid_object_type`<br>- `delivery_model_type`<br> - `supply_strategies`<br>If the user provides conflicting `line_item_subtype` and fields/arrays outlined above, we'll prefer the line_item_subtype and ignore other fields on the call.<br><br>**Note**: The `line_item_subtype` field cannot be changed after the line item is created.<br><br>More details on the `line_item_subtype` field can be found in [Line Item Service - GDALI](./line-item-service---gdali.md). See [Example for Line Item Subtype - GDALI](#example-for-line_item_subtype---gdali) |
+| Line Item Type | Line Item Type was specified as guaranteed_delivery. See [Example for line item type - Legacy GDLI](#example-for-line_item_type---legacy-gdli)  | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `line_item_type` field may be omitted and will default to `"standard_v2"`. |
+| Bid Object Type | Bid object type was specified on the line item object but was not required. See [Example for bid object type - Legacy GDLI](#example-for-bid_object_type---legacy-gdli)  | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `bid_object_type` field may be omitted and will default to `"creative"`. |
+| Delivery Model Type | Delivery model type was specified on the line item object but was not required. See [Example for delivery model type - Legacy GDLI](#example-for-delivery_model_type---legacy-gdli) | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `delivery_model_type` field may be omitted. |
+| Supply Strategies | Supply Strategies were previously specified using the `inventory_type` field within a campaign object with a value of `real_time`, `direct`, or `both`. See [Example for supply strategies - Legacy GDLI](#example-for-supply_strategies---legacy-gdli) | **Tip**: When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `supply_strategies` field may be omitted.<br>Guaranteed delivery line items will always be set to `"managed": true` and all other strategies will be set to `false`.<br><br>See the "Supply Strategies" section in [Line Item Service - GDALI](./line-item-service---gdali.md) for more information. |
 | Flight Dates and Budgeting | Flight dates and budget details were specified on the line item object. See [Example for flight dates and budgeting - Legacy GDLI](#example-for-flight-dates-and-budgeting---legacy-gdli) | Flight dates and budget details are specified within the `budget_intervals` property on the `line item` object.<br><br>**Note**: <br> - A guaranteed delivery line item must not contain more than one  `budget_intervals` array.<br><br> - Impression line items ( `"line_item_subtype": "gd_buying_imp"`)  require a value be set for `lifetime_budget_imps`, as well as `lifetime_pacing` set to `true`. All revenue budget fields must be set to `null`. Setting `daily_budget_imps` in addition to `lifetime_budget_imps` may impact delivery.<br><br> - Exclusive line items (`"line_item_subtype": "gd_buying_exclusive"`) must omit all budget fields, or set them to `null`. See [Example for exclusive line items - GDALI](#example-for-exclusive-line-items---gdali)|
-| Creative Scheduling | Required campaign shells to target specific creatives to deliver on specific dates within the line item's flight. | Creatives now support defining custom date ranges at which they will serve, see "Custom Date Ranges" in [Line Item Service - GDALI](./gdli-to-gdali-migration.md) for details. |
+| Creative Scheduling | Required campaign shells to target specific creatives to deliver on specific dates within the line item's flight. | Creatives now support defining custom date ranges at which they will serve, see "Custom Date Ranges" in [Line Item Service - GDALI](./line-item-service---gdali.md) for details. |
 | Priority | Priority was previously specified within a campaign object. The default value is 5. See [Example for priority - Legacy GDLI](#example-for-priority---legacy-gdli) | Priority is specified on the line item object. The Monetize UI sets the default value for impression guaranteed line items to 14, and 19 for exclusive. The default value for all line items created via the API is 5. See [Example for priority - GDALI](#example-for-priority---gdali) |
-| Ad Types | Ad types were specified on the line item object but was not required. See [Example for ad types - Legacy GDLI](#example-for-ad-types---legacy-gdli) | One or more ad types are required (accepted inputs are banner, video (includes audio) and native). Among others, this field will be used for forecasting. See [Example for ad types - GDALI](#example-for-ad-types---gdali) |
-| Revenue Type | Viewable CPM was defined as a revenue type. See [Example for revenue type - Legacy GDLI](#example-for-revenue-type---legacy-gdli) | Acceptable values include: `"cpm"` and `"flat_fee"`. See **Auction Event** (in this table) for information on Viewable CPM. |
-| Auction Event | Auction event was specified on the line item object but was not required. See [Example for auction event - Legacy GDLI](#example-for-auction-event---legacy-gdli) | The `Auction Event` object should be used to define a non-impression based transaction, such as booking revenue on a Viewable CPM basis. See [Line Item Service - GDALI](./line-item-service---gdali.md) for details. [For example, the following configuration would enable a $4 Viewable CPM](#example-for-auction-event---gdali). |
-| Roadblocks | Roadblock could be defined on the campaign or line item object. | Roadblock is specified on the line item object.<br><br>**Warning**: Only page-level partial roadblocks are supported by GDALI. The `master_width` and `master_height` fields must be defined for roadblock line items. See [Example for roadblocks - GDALI](#example-for-roadblocks---gdali) |
+| Ad Types | Ad types were specified on the line item object but was not required. See [Example for ad types - Legacy GDLI](#example-for-ad_types---legacy-gdli) | One or more ad types are required (accepted inputs are banner, video (includes audio) and native). Among others, this field will be used for forecasting. See [Example for ad types - GDALI](#example-for-ad_types---gdali) |
+| Revenue Type | Viewable CPM was defined as a revenue type. See [Example for revenue type - Legacy GDLI](#example-for-revenue_type---legacy-gdli) | Acceptable values include: `"cpm"` and `"flat_fee"`. See **Auction Event** (in this table) for information on Viewable CPM. |
+| Auction Event | Auction event was specified on the line item object but was not required. See [Example for auction event - Legacy GDLI](#example-for-auction_event---legacy-gdli) | The `Auction Event` object should be used to define a non-impression based transaction, such as booking revenue on a Viewable CPM basis. See [Line Item Service - GDALI](./line-item-service---gdali.md) for details. [For example, the following configuration would enable a $4 Viewable CPM](#example-for-auction_event---gdali). |
+| Roadblocks | Roadblock could be defined on the campaign or line item object. | Roadblock is specified on the line item object.<br><br>**Warning**: Only page-level partial roadblocks are supported by GDALI. The `master_width` and `master_height` fields must be defined for roadblock line items. See [Example for roadblock - GDALI](#example-for-roadblock---gdali) |
 | Campaigns | Required defining a campaign object and associating to the line item in order for the line to deliver. | GDALI no longer supports campaign objects; this step is no longer required. |
 | Splits | Splits were not supported on legacy GDLIs. | The [Splits Service](./splits-service.md) can be utilized for use cases such as targeting creatives to a subset of inventory. |
 | Broker Fees | The `broker_fees` array was used to define [Broker Fees](./broker-service.md). | GDALI does not support broker fees or [Partner Fees](./partner-fee-service.md). |
 | Alerts | The alerts object returned the conditions that are preventing the line item from serving. | GDALI does not support alerts. |
 | Underspend Catch Up | "Underspend catch up" was not supported in legacy GDLIs | GDALI supports "underspend catch up." For more information, see the "Budget Scheduling Settings" section of [Line Item Service - GDALI](./line-item-service---gdali.md). |
 
-### example for Line Item Subtype - GDALI
+### Example for `line_item_subtype` - GDALI
 
 ```
 {
@@ -306,7 +306,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for line item type - Legacy GDLI
+### Example for `line_item_type` - Legacy GDLI
 
 ```
 {
@@ -315,7 +315,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for bid object type - Legacy GDLI
+### Example for `bid_object_type` - Legacy GDLI
 
 ```
 {
@@ -324,7 +324,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for delivery model type - Legacy GDLI
+### Example for `delivery_model_type` - Legacy GDLI
 
 ```
 {
@@ -333,7 +333,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for supply strategies - Legacy GDLI
+### Example for supply_strategies - Legacy GDLI
 
 ```
 {
@@ -347,7 +347,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for flight dates and budgeting - Legacy GDLI
+### Example for flight dates and budgeting - Legacy GDLI
 
 ```
 {
@@ -368,7 +368,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for exclusive line items - GDALI
+### Example for exclusive line items - GDALI
 
 ```
 {
@@ -390,7 +390,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for priority - Legacy GDLI
+### Example for `priority` - Legacy GDLI
 
 ```
 {
@@ -404,7 +404,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### example for priority - GDALI
+### Example for `priority` - GDALI
 
 ```
 {
@@ -413,7 +413,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for ad types - Legacy GDLI
+### Example for `ad_types` - Legacy GDLI
 
 ```
 {
@@ -422,7 +422,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for ad types - GDALI
+### Example for `ad_types` - GDALI
 
 ```
 {
@@ -433,7 +433,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for revenue type - Legacy GDLI
+### Example for `revenue_type` - Legacy GDLI
 
 ```
 {
@@ -442,7 +442,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for auction event - Legacy GDLI
+### Example for `auction_event` - Legacy GDLI
 
 ```
 {
@@ -451,7 +451,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for auction event - GDALI
+### Example for `auction_event` - GDALI
 
 ```
 {
@@ -469,7 +469,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 }
 ```
-### Example for roadblocks - GDALI
+### Example for `roadblock` - GDALI
 
 ```
 {
@@ -757,41 +757,41 @@ Further examples can be found on [Line Item Service - GDALI](./line-item-service
 
 1. Create GDALI JSON (you'll need an existing insertion order ID and advertiser ID).
 
-```
-$ cat gd_imp_cpm
-{
-"line-item": {
-    "name": "Test-GDALI",
-    "advertiser_id": "3872575",
-    "insertion_orders": [{"id": 4971824}],
-    "line_item_subtype": "gd_buying_imp",
-    "state": "inactive",
-    "priority": 14,
-    "ad_types": [
-      "banner"
-    ],
-    "timezone": "UTC",
-    "budget_intervals": [
-      {
-        "start_date": "2020-10-01 00:00:00",
-        "end_date": "2020-10-31 23:59:59",
+    ```
+    $ cat gd_imp_cpm
+    {
+    "line-item": {
+        "name": "Test-GDALI",
+        "advertiser_id": "3872575",
+        "insertion_orders": [{"id": 4971824}],
+        "line_item_subtype": "gd_buying_imp",
+        "state": "inactive",
+        "priority": 14,
+        "ad_types": [
+          "banner"
+        ],
         "timezone": "UTC",
-        "lifetime_budget_imps": 150000,
-        "lifetime_pacing": true,
-        "lifetime_pacing_pct": 105
+        "budget_intervals": [
+          {
+            "start_date": "2020-10-01 00:00:00",
+            "end_date": "2020-10-31 23:59:59",
+            "timezone": "UTC",
+            "lifetime_budget_imps": 150000,
+            "lifetime_pacing": true,
+            "lifetime_pacing_pct": 105
+          }
+        ],
+        "currency": "USD",
+        "revenue_type": "cpm",
+        "revenue_value": 1,
+        "delivery_goal": {
+          "type": "impressions",
+          "disallow_non_guaranteed": false,
+          "reserved": true
+        }
       }
-    ],
-    "currency": "USD",
-    "revenue_type": "cpm",
-    "revenue_value": 1,
-    "delivery_goal": {
-      "type": "impressions",
-      "disallow_non_guaranteed": false,
-      "reserved": true
     }
-  }
-}
-```
+    ```
 
 1. Make a `POST` request to the [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) endpoint using this JSON and the appropriate `advertiser_id`.
 

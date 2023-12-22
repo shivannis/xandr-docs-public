@@ -9,9 +9,9 @@ ms.custom: digital-platform-api
 
 These are tricks we use when using the APIs.
 
-## jq
+## `jq`
 
-`jq`\` is a lightweight and flexible command line JSON parser. It supports colored terminal output, and filtering for JSON documents.
+`jq` is a lightweight and flexible command line JSON parser. It supports colored terminal output, and filtering for JSON documents.
 
 ```
 # API Call
@@ -34,9 +34,9 @@ $ curb -H 'Authorization: xxx' 'https://api.appnexus.com/segment' | jq '.respons
 
 JQ can be downloaded and installed from: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
-## json_reformat
+## `json_reformat`
 
-\``json_reformat`\` formats your output nicely without reordering the fields, and is easily installed via most standard Linux Distros
+`json_reformat` formats your output nicely without reordering the fields, and is easily installed via most standard Linux Distros
 
 ```
  $ curl -b cookies -c cookies 'https://api.appnexus.com/creative' | json_reformat  
@@ -48,7 +48,7 @@ If it doesn't work for you, try `yum install yajl`. If you are using a mac and d
 
 This is a nice JSON verifier: [https://www.jsonlint.com/](https://www.jsonlint.com/).
 
-## JSONView
+## `JSONView`
 
 From Firefox: Normally when encountering a JSON document (content type "application/json"), Firefox simply prompts you to download the file. With the JSONView extension, JSON documents are shown in the browser similar to how XML documents are shown. The document is formatted, highlighted, and arrays and objects can be collapsed. Even if the JSON document contains errors, JSONView will still show the raw text.
 

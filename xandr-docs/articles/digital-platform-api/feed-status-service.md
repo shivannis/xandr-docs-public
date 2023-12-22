@@ -29,7 +29,7 @@ This service returns only two fields in an array of objects:
 | Field | Type | Description |
 |:---|:---|:---|
 | `hour` | timestamp | The date and hour of reporting data whose status you're interested in. |
-| `last_run` | timestamp | When the reporting data for hour was last updated by our data pipeline. This is usually a few hours later than the value of hour. |
+| `last_run` | timestamp | When the reporting data for hour was last updated by our data pipeline. This is usually a few hours later than the value of `hour`. |
 
 > [!NOTE]
 > Timestamps are reported in the UTC timezone, so you'll need to manually translate the UTC time to your standard timezone.

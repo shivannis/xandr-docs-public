@@ -49,7 +49,7 @@ $ curl -b cookies -X POST -d '@create_targeting_key.json' 'https://api.appnexus.
 },
 ```
 
-In this example we've given the key the name `"fruit"` and specified a type of "string". You can also create keys that will have numeric values. For example, you could define a key named "`age"` with values `21`, `30`, and `45`.
+In this example we've given the key the name `"fruit"` and specified a type of "string". You can also create keys that will have numeric values. For example, you could define a key named `"age"` with values `21`, `30`, and `45`.
 
 After you create your key, you can associate values with that key. In our example, we're going to associate the values `"apple"` and `"orange"` with our `"fruit"` key.
 
@@ -537,7 +537,7 @@ Note some key differences:
 - The `vtp` is now `sta` (string array) rather than `str` (string).
 - The value is specified as `vsa` (string array value) rather than `vst` (string value).
 
-Here's our full expression simplified down to use arrays rather than separate string values. Notice that the `"and"` expressions have remained, only the "or" expression was changed to use an array.
+Here's our full expression simplified down to use arrays rather than separate string values. Notice that the `"and"` expressions have remained, only the `"or"` expression was changed to use an array.
 
 ```
 {

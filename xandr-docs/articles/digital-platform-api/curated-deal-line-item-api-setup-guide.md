@@ -415,7 +415,7 @@ Finally, you'll need to create the curated deal line item to associate the deal 
 | `insertion_orders` | array | Array containing the insertion order ID you want to associate this curated deal line item to |
 | `name` | string | Name of the curated deal line item (Note: the buyer will not see this) |
 | `ad_types` | array | The type of creative used for this curated deal line item. Possible values: <br> - `"banner"`<br> - `"video"` (includes audio types as well)<br> - `"native"` |
-| `line_item_subtype` | enum | The line item subtype. For curated deal line items, the value for this field must be `"standard_curated"`. See [note for this field](#note-for-line_item_subtype-field). <br><br>The `line_item_subtype` field (and associated fields/arrays) cannot be changed after the line item is created. |
+| `line_item_subtype` | enum | The line item subtype. For curated deal line items, the value for this field must be `"standard_curated"`. See [note for this field](#note-for-line_item_subtype-field). |
 | `profile_id` | integer | Profile ID associated with the curated deal line item (see [Step 5 - Create a curated deal line item profile](#step-5---create-a-curated-deal-line-item-profile)) |
 | `budget_intervals` | array of objects | Always include a `start_date`. Leave `end_date` `null` for a no end date deal line item. |
 | `deals` | array of objects | The `id` field within deals must be the ID of the deal you created in [Step 4 - Create a deal](#step-4---create-a-deal)) |
@@ -438,6 +438,8 @@ Setting `line_item_subtype` field to `"standard_curated"` will automatically ass
 "programmatic_guaranteed": false
 }
 ```
+
+The `line_item_subtype` field (and associated fields/arrays) cannot be changed after the line item is created.
 
 #### Useful optional JSON fields
 
