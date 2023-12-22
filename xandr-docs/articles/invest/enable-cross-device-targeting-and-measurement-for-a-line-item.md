@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Enable Cross-Device Targeting and Measurement for a Line Item
 description: In this article, learn how to optionally enable the cross-device targeting and measurement feature on a line item to set up actions for individual users across multiple devices.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Enable cross-device targeting and measurement for a line item
