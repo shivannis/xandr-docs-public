@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Creative Frequency and Recency Report
-description : Learn how the Creative Frequency and Recency report lets you view the frequecy that users are viewing a specific advertiser's creatives.
+title: Microsoft Invest - Creative Frequency and Recency Report
+description: Learn how the Creative Frequency and Recency report lets you view the frequecy that users are viewing a specific advertiser's creatives.
 ms.date: 10/28/2023
 ---
 
