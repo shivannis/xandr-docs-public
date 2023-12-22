@@ -1,6 +1,6 @@
 ---
 title : Data Science Toolkit - Line Item Model Service
-description : The Line Item Model service is used to associate custom models to the custom models array. 
+description: The Line Item Model service is used to associate custom models to the custom models array. 
 ms.custom: data-science
 ms.date: 10/28/2023
 
