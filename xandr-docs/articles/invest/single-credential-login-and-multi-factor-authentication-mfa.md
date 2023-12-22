@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Single Credential Login and Multi-Factor Authentication (MFA)
 description: In this article, find an overview of single credential login and multi-factor authentication.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Single credential login and multi-factor authentication (MFA)
