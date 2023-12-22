@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Multi-Factor Authentication
 description: In this article, follow our step-by-step instructions to set multi-factor authentication.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up multi-factor authentication
