@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Upload a Hosted Video Creative
-description : Learn to upload VAST video creatives and points to consider while doing it. 
+title: Microsoft Invest - Upload a Hosted Video Creative
+description: Learn to upload VAST video creatives and points to consider while doing it. 
+ms.date: 10/28/2023
 ---
 
 
