@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Report Discrepancies
 description: In this article, explore the step-by-step process and essential information necessary to file a report discrepancy effectively.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Report discrepancies
