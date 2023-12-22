@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Prepare to Request a Report Discrepancy Investigation
 description: In this article, get step-by-step instructions on ruling out possible obvious reasons for discrepancy before you request a report discrepancy investigation.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Prepare to request a report discrepancy investigation
