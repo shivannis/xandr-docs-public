@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Moat Video Viewability Measurement
 description: In this article, learn about Moat video viewability measurement and ways to improve it by linking a hosted video creative.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Moat video viewability measurement
