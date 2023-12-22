@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Dates and Times in Reporting
 description: In this article, learn how the reporting system manages time-related factors, including time zones and daylight savings time adjustments.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Dates and times in reporting
