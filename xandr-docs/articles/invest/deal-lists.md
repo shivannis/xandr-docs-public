@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Deal Lists
 description: In this article, learn about the deal lists and explore various methods for their creation, editing, and effective targeting.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Deal lists
