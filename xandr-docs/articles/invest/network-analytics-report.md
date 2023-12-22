@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Analytics Report
 description: Use this report to view both buy and sell-side data for your Member.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member analytics report
