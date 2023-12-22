@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Adding and updating creatives
 
-You can add one creative at a time or multiple creatives in bulk on the Xandr platform. After you've successfully uploaded your creatives, you can update them at any time using the Creative Manager.
+You can add one creative at a time or multiple creatives in bulk on the Xandr platform. After you've successfully uploaded your creatives, you can update them at any time using the **Creative Manager**.
 
 Use these links to get started:
 

@@ -15,7 +15,7 @@ For instructions on how to give advertiser and publisher users access to reporti
 
 ## Advertiser user reporting
 
-> [!NOTE]
+> [!IMPORTANT]
 > The **Metrics** are shown from the advertiser's perspective, so the **Revenue** field displays the advertiser's revenue (not the Network's).
 
 ### Metrics

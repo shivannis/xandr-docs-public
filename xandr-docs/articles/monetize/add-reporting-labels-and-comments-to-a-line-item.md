@@ -13,7 +13,7 @@ It will take new labels about 30 minutes to appear in reporting.
 1. Go to the **Reporting Labels** section of the line item.
 1. Enter a trafficker, sales rep, or line item type.
 
-## Related Topics
+## Related topics
 
 - [Reporting Labels](reporting-labels.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

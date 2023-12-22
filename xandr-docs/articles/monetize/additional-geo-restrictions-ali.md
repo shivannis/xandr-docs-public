@@ -38,7 +38,7 @@ By default, you will target users in all geographic locations. However, on the *
 
 ## Restrict users by metro code
 
-Metro codes are available in 13 countries. Available metro codes range from large cities such as New York City, United States, or Oslo, Norway, to smaller cities such as Rochester, NY, United States. Unless you are excluding an entire "country" in country targeting, you will target all metro codes by default. However, on the Metro Code tab, you can narrow your targeting to include or exclude specific metro codes.
+Metro codes are available in 13 countries. Available metro codes range from large cities such as New York City, United States, or Oslo, Norway, to smaller cities such as Rochester, NY, United States. Unless you are excluding an entire "country" in country targeting, you will target all metro codes by default. However, on the **Metro Code** tab, you can narrow your targeting to include or exclude specific metro codes.
 
 The countries that support metro code targeting are:
 
