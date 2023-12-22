@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Export a Segment Pixel
 description: In this article, follow our step-by-step instructions to export segment pixel tags after creating a segment pixel. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Export a segment pixel
