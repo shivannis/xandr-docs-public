@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - View Insertion Order Details
-description : Learn about the Insertion Order Details screen.
+title: Microsoft Invest - View Insertion Order Details
+description: Learn about the Insertion Order Details screen.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - View insertion order details
