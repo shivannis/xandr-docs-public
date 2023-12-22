@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Understanding the Debug Auction
-description : Learn how to run a debug auction and how to read the output you receive.
+title: Microsoft Invest - Understanding the Debug Auction
+description: Learn how to run a debug auction and how to read the output you receive.
+ms.date: 10/28/2023
 ---
 
 
