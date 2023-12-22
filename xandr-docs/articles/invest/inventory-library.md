@@ -1,6 +1,7 @@
 ---
 title: Inventory Library
 description: In this article, learn what the Inventory Library is and the advantages of using the Inventory Library.
+ms.date: 10/28/2023
 ---
 
 # Inventory library
