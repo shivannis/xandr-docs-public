@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Object Hierarchy
-description : Learn about objects that you work with to buy media.
+title: Microsoft Invest - Object Hierarchy
+description: Learn about objects that you work with to buy media.
+ms.date: 10/28/2023
 ---
 
 
