@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Daypart Targeting
 description: In this article, learn about daypart targeting and how you can target users based on the day and time when they see impressions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Daypart targeting
