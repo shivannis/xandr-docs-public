@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Dynamic Landing Pages
 description: In this article, learn what dynamic landing pages are and how to attach specific landing pages to line items.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Dynamic landing pages
