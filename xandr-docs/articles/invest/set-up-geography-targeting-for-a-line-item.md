@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Geography Targeting for a Line Item
 description: This article provides steps for setting up geography targeting for a line item. You must target users based on at least one geographic element.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up geography targeting for a line item
