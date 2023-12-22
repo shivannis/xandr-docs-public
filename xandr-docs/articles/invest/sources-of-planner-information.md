@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Sources of Planner Information
 description: In this article, learn where Planner gets data from and what data providers are supported by Planner.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Sources of Planner information
