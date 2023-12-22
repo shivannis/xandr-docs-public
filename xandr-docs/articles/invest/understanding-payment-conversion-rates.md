@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Understanding Payment Conversion Rates
 description: In this article, learn about payment conversion rates, auction outcome prediction, market-making fees, and their calculations.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Understanding payment conversion rates
