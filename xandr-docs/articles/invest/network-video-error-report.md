@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Video Error Report
 description: Use the member video error report to get insight into video errors and their cause.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest -  Member video error report
