@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Banner and HTML5 Creatives
-description : Learn about Banner and HTML5 Creatives
+title: Microsoft Invest - Banner and HTML5 Creatives
+description: Learn about Banner and HTML5 Creatives
 ms.date: 10/28/2023
 ---
 
