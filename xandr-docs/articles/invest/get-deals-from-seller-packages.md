@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Get Deals from Seller Packages
 description: This article guides buyers through the process of browsing packages which are pre-made combinations of inventory and/or data.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Get deals from seller packages
