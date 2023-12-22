@@ -15,14 +15,14 @@ This page describes how to integrate Mobile SDK with your project. Follow the i
 - In order to show ads, you must have a valid Xandr placement ID.
 - Configure App Transport Security (ATS).
 
-> [!NOTE]
-> App Transport Security
->
-> iOS 9 introduced a new privacy feature called [App Transport Security (ATS)](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33). ATS blocks non-HTTPS requests by default.
->
-> To show ads using our SDK, you must include the exception in the `info.plist` file of each app which contains our SDK, [see below](#exception-in-the-infoplist-file).
->
-> If you are using v2.13 or greater of our SDK and would like to show only ATS-compliant ads, you can enable HTTPS ads in your app using the instructions in [Request Ads over HTTPS](request-ads-over-https-on-ios.md).
+
+## App Transport Security
+
+iOS 9 introduced a new privacy feature called [App Transport Security (ATS)](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33). ATS blocks non-HTTPS requests by default.
+
+To show ads using our SDK, you must include the exception in the `info.plist` file of each app which contains our SDK, [see below](#exception-in-the-infoplist-file).
+
+If you are using v2.13 or greater of our SDK and would like to show only ATS-compliant ads, you can enable HTTPS ads in your app using the instructions in [Request Ads over HTTPS](request-ads-over-https-on-ios.md).
 
 ### Exception in the `info.plist` file
 
