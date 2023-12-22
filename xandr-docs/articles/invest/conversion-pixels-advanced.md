@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Conversion Pixels Advanced
-description : Learn about options available when creating and exporting conversion pixels.
+title: Microsoft Invest - Conversion Pixels Advanced
+description: Learn about options available when creating and exporting conversion pixels.
 ms.date: 10/28/2023
 ---
 
