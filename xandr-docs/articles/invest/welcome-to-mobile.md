@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Welcome to Mobile
-description : Learn how advertising works on mobile apps. 
+title: Microsoft Invest - Welcome to Mobile
+description: Learn how advertising works on mobile apps. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Welcome to mobile
