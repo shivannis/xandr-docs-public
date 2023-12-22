@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Split FAQ
 description: In this article, find answers for some frequently asked questions regarding splits.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Split FAQ
