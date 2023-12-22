@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Creative Standards
-description : Learn about foundational policies that all creative and inventory content must follow.
+title: Microsoft Invest - Creative Standards
+description: Learn about foundational policies that all creative and inventory content must follow.
 ms.date: 10/28/2023
 ---
 
