@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Viewing Your Object Limits
-description : Xandr limits the number of object (line items, creatives, etc.) that you can have on the platform. Learn about the Object Limits Report that allows you to view these limits and proactively monitor your current usage.
+title: Microsoft Invest - Viewing Your Object Limits
+description: Xandr limits the number of object (line items, creatives, etc.) that you can have on the platform. Learn about the Object Limits Report that allows you to view these limits and proactively monitor your current usage.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Viewing your object limits
