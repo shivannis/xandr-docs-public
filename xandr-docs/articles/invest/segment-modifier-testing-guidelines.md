@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Segment Modifier Testing Guidelines
 description: In this article, learn about the technical requirements, recommendations, and testing best practices to integrate segment modifiers with ad campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Segment modifier testing guidelines
