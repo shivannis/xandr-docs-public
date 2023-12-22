@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Understanding Viewability Rates for Guaranteed Views
-description : Learn viewability rates for guaranteed views
+title: Microsoft Invest - Understanding Viewability Rates for Guaranteed Views
+description: Learn viewability rates for guaranteed views.
+ms.date: 10/28/2023
 ---
 
 
