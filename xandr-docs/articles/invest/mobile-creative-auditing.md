@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Creative Auditing
 description: In this article, learn about mobile creative auditing and ways to adhere to Microsoft Invest's audit processes for mobile creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile creative auditing
