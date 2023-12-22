@@ -1,6 +1,7 @@
 ---
 title: Member Attributed Conversions Report
 description: In this article, learn about the Member Attributed Conversions report, providing insights into conversion pixel IDs, order IDs, and attributed click times.
+ms.date: 10/28/2023
 ---
 
 # Member Attributed Conversions report
