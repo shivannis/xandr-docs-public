@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Underspend Budget Rollover
 description: In this article, learn about the Underspend budget rollover feature that allows buyers to transfer an unspent budget from a completed flight to a new flight.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Underspend budget rollover
