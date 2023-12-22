@@ -1,6 +1,7 @@
 ---
-title : Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
-description : Learn how Nielsen Digital Ad Ratings (DAR) can be used to measure line item's performance, demographic tracking for ads served on connected devices (Roku, Amazon, Samsung, and Hulu) and tracking through CTV partners.
+title: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+description: Learn how Nielsen Digital Ad Ratings (DAR) can be used to measure line item's performance, demographic tracking for ads served on connected devices (Roku, Amazon, Samsung, and Hulu) and tracking through CTV partners.
+ms.date: 10/28/2023
 ---
 
 
