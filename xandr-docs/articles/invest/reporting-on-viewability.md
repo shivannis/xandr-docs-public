@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Reporting on Viewability
 description: In this article, learn about viewability measurement metrics, how to add them, and the best practices for making optimal use of them.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Reporting on viewability
