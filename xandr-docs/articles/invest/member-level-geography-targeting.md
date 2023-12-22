@@ -1,6 +1,7 @@
 ---
 title: Member-Level Geography Targeting
 description: In this article, learn how to globally add, modify, and apply member-level geography targeting settings to all line items for all advertisers under the member.
+ms.date: 10/28/2023
 ---
 
 # Member-level geography targeting
