@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Settings
 description: This article helps you understand the member-level features in your account.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member settings
