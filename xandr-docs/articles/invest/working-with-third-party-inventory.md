@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Third-Party Inventory
-description : This article contains reference material and instructions for researching and discovering third-party inventory.
+title: Microsoft Invest - Working with Third-Party Inventory
+description: This article contains reference material and instructions for researching and discovering third-party inventory.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with third-party inventory
