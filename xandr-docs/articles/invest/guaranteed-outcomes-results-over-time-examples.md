@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Guaranteed Outcomes Results Over Time
 description: This article provides examples to explain guaranteed outcomes. The short-term disconnect created between buyer and seller is averaged out over time. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Guaranteed outcomes results over time (examples)
