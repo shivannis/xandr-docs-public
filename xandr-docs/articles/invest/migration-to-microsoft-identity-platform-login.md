@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Migration to Microsoft Identity Platform Login
 description: In this article, explore detailed step-by-step instructions on how to migrate an existing authentication process to the Microsoft Identity Platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Migration to Microsoft Identity Platform login
