@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Native Creative Asset Specifications
 description: This article provides a list of standard and custom data and image specifications for your native creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Native creative asset specifications
