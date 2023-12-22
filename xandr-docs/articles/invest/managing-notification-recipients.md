@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Managing Notification Recipients
 description: In this article, learn how to manage notification alerts for creative audit, object limit, inventory deactivation, and toolbar flags.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Managing notification recipients
