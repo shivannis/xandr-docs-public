@@ -128,8 +128,7 @@
         href: user-id-s-mapping-on-ios.md
     - name: iOS 14.0 FAQ
       href: ios-14-0-faq.md
-    - name: iOS 14.0 FAQ
-      href: ios-14-0-faq.md
+    
     - name: SDK Privacy for iOS
       href: sdk-privacy-for-ios.md
     - name: Migrating iOS SDK v7 to 8.0
