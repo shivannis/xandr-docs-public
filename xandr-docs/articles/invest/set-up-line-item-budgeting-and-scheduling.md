@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Line Item Budgeting and Scheduling
 description: In this article, follow our step-by-step instructions to add revenue type, payment model, budget, flight, daily pacing allocation, underspend catch-up, and daypart details for the line item.
+ms.date: 10/28/2023
 ---
 # Microsoft Invest - Set up line item budgeting and scheduling
 
