@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Cross-Device Attribution
 description: This article provides steps for setting up cross-device attribution, to track conversions across multiple devices, and view associated metrics.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up cross-device attribution
