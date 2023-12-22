@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Reporting Guide
 description: In this article, explore the reports in Microsoft Invest, gaining insights into delivery methods, data retention, and specific use cases.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Reporting guide
