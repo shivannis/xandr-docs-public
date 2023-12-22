@@ -15,7 +15,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About Invest DSP
+          - text: About Microsoft Invest
             url: about-invest.md     
           - text: Object Hierarchy
             url: object-hierarchy.md
