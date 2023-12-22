@@ -1,6 +1,7 @@
 ---
 title: Political Geography Targeting
 description: In this article, learn what political geography targeting is, its advantages, and how to target political districts.
+ms.date: 10/28/2023
 ---
 
 # Political geography targeting
