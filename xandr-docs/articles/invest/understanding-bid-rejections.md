@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Understanding Bid Rejections
 description: In this article, explore bid rejection causes, understand errors, and learn how buyers and sellers can resolve issues effectively.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Understanding bid rejections
