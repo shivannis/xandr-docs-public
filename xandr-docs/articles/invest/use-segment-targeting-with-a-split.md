@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Use Segment Targeting with a Split
-description : Learn the criterias on the basis of which you can target splits. 
+title: Microsoft Invest - Use Segment Targeting with a Split
+description: Learn the criterias on the basis of which you can target splits. 
+ms.date: 10/28/2023
 ---
 
 
