@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Transactional Reporting Options
 description: In this article, explore Microsoft Invest's transactional reporting options, including features, resource requirements, and links to comprehensive documentation.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Transactional reporting options
