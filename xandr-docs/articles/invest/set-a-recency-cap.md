@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set a Recency Cap
 description: In this article, you'll learn how to set a frequency cap. You can apply only one recency setting. Time frames for recency differ from frequency time frames.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set a recency cap
