@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Single Credential Login
 description: In this article, follow our step-by-step instructions to set up single credential login.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up single credential login
