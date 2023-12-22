@@ -37,8 +37,6 @@ If you are using v2.13 or greater of our SDK and would like to show only ATS-com
 
 ## Installation
 
-### Step 1: Get and install the SDK
-
 There are five ways to get our SDK:
 
 - [CocoaPods](#CocoaPods)
@@ -47,7 +45,7 @@ There are five ways to get our SDK:
 - [XCFramework](#XCFramework)
 - [Swift Package Manager](#Swift-Package-Manager)
 
-#### CocoaPods
+### CocoaPods
 
 If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/). Once you have CocoaPods installed:
 
@@ -76,7 +74,7 @@ If you are unfamiliar with CocoaPods review their [installation and user guides
 
 - CocoaPods will download the Xandr SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
-#### Carthage
+### Carthage
 
 If you are unfamiliar with Carthage review their [installation and user guides](https://github.com/Carthage/Carthage/blob/master/README.md). Once you installed Carthage:
 
@@ -114,7 +112,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 
 - If you are using Carthage for an application, select "Embed & Sign", otherwise "Do Not Embed".
 
-#### Download from source
+### Download from source
 
 - Download and unzip or clone the latest release of our SDK from our [Github Release](https://github.com/appnexus/mobile-sdk-ios/releases/latest) page.
 - Once the source from Github is downloaded, link the **AppNexusSDK.Xcodeproj** in your **Xcode project**.
@@ -127,7 +125,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 
    :::image type="content" source="media/ios-sdk-integration-instructions-d.png" alt-text="Screenshot of the library selected from the drop-down menu.":::
 
-#### XCFramework
+### XCFramework
 
 - Download and unzip the latest version of **AppNexusSDK.xcframework.zip** of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
 
@@ -144,7 +142,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 - The added **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** would be visible under the **Framework, Libraries, and Embedded Content** section.
    :::image type="content" source="media/ios-sdk-integration-instructions-h.png" alt-text="Screenshot shows that the added framework is visible in the Embedded content section.":::
 
-#### Swift Package Manager
+### Swift Package Manager
 
 - Copy the URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) and check the latest
   version of SDK in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
@@ -159,7 +157,7 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 - The added **AppNexusSDK** package would be visible under the **Framework, Libraries, and Embedded Content** section.
    :::image type="content" source="media/ios-sdk-integration-instructions-m.png" alt-text="Screenshot shows that the package is visible in the Embedded Content section.":::
 
-### Step 2: Set up for mediation (optional)
+## Set up for mediation (optional)
 
 For instructions on getting set up for mediation, see [Mediate with iOS](mediate-with-ios.md).
 
