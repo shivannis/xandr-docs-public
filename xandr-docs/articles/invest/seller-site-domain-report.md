@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Seller Site Domain Report
 description: This report provides sellers with information on web and mobile app inventory coming through publishers. It helps in valuing inventory and optimizing campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Seller site domain report
