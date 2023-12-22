@@ -1,7 +1,7 @@
 ---
-title : Data Science Toolkit - Incrementality
-description : Incrementality is the measurement of incremental lift, the percentage of conversions that can be attributed to an advertisement or advertising campaign.
-ms.custom : data-science
+title: Data Science Toolkit - Incrementality
+description: Incrementality is the measurement of incremental lift, the percentage of conversions that can be attributed to an advertisement or advertising campaign.
+ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
