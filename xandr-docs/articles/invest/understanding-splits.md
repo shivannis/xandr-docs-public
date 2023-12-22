@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Understanding Splits
 description: In this article, learn what a split is in advertising, how to create a split, and how to optimize it for highly effective ad campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Understanding splits
