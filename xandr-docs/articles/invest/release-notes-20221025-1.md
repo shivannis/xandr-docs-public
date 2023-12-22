@@ -1,6 +1,7 @@
 ---
 title: October 25, 2022 - New Data Provider in Data Marketplace
 description: Find the release note for the new data provider introduced in the data marketplace - GumGum.
+ms.date: 10/28/2023
 ---
 
 # October 25, 2022: New data provider in data marketplace
