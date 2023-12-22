@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Exchanges and Aggregators
 description: In this article, find information about our inventory partners and resources for working with external partners.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Exchanges and aggregators
