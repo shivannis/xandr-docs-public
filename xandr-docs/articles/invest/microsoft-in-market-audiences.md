@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - In-Market Audiences
 description: In this article, learn about Microsoft Invest's In-Market audiences, which consist of curated groups of users actively thinking about buying in a specific category. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - In-Market audiences
