@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Create a Programmable Split
-description : Learn how to create a programmable split when creating or editing an augmented line item.
+title: Microsoft Invest - Create a Programmable Split
+description: Learn how to create a programmable split when creating or editing an augmented line item.
 ms.date: 10/28/2023
 ---
 
