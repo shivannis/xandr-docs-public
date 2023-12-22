@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Split Targeting
 description: In this article, you'll learn how to set split targeting. You can define a split by specifying the targeting goals you want it to meet.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set split targeting
