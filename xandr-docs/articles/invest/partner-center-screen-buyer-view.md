@@ -1,6 +1,7 @@
 ---
 title : Microsoft Invest - Partner Center Screen
 description : Learn how viewing is made easy on the Partner Center screen. You can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
+ms.date: 10/28/2023
 ---
 
 
