@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Inventory Recommendations
 description: Get detailed recommendations at the line item level to discover new video inventory and maximize scale and performance. Recommendations can be downloaded.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video inventory recommendations
