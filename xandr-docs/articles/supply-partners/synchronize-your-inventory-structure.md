@@ -1,6 +1,6 @@
 ---
-title : Synchronize Your Inventory Structure
-description : Learn the benefits of synchronizing your inventory structure. 
+title: Synchronize Your Inventory Structure
+description: Learn the benefits of synchronizing your inventory structure. 
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
