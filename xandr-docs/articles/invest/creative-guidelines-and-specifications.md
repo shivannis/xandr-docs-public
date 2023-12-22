@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Creative Guidelines and Specifications
-description : Learn about guidelines and specifications required to serve on the Xandr platform and other third-party platforms.
+title: Microsoft Invest - Creative Guidelines and Specifications
+description: Learn about guidelines and specifications required to serve on the Xandr platform and other third-party platforms.
 ms.date: 10/28/2023
 ---
 
