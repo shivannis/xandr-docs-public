@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Impression Counting
 description: In this article, learn how Xandr counts an impression and find a list of media types with their respective look-back windows.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Impression counting
