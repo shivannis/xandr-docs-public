@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Troubleshoot your Programmatic Guaranteed Buying Line Item Bid Performance
 description: In this article, explore detailed steps to troubleshoot and improve programmatic guaranteed buying line item's impression count and bid performance.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Troubleshoot your programmatic guaranteed buying line item bid performance
