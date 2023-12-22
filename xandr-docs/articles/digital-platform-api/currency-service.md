@@ -28,7 +28,7 @@ This is a read-only service that shows you the list of currencies that you can s
 
 | Fields | Type | Description |
 |:---|:---|:---|
-| `as_of` | string | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
+| `as_of` | string | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
 | `code` | string | The code for the currency. |
 | `description` | string | A description of the currency. |
 | `is_exposed` | boolean | If true, the currency is exposed. |
@@ -39,7 +39,7 @@ This is a read-only service that shows you the list of currencies that you can s
 | `symbol` | string | The symbol for the currency, e.g. "$" for USD |
 
 > [!NOTE]
-> - To show conversion rates, pass show_rate=true in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.
+> - To show conversion rates, pass `show_rate=true` in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.
 >
 > - \* When querying the currency API (eg: `rate_per_usd`), the service is currently returning all the correct values, with the exception for `last_modified`. The actual rates are accurate, and the API is returning updated exchange rates.
 >

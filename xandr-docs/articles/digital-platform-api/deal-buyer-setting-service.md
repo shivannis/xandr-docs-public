@@ -32,7 +32,7 @@ The Deal Buyer Setting Service lets buyers give deals an internal alias for clar
 | `buyer_bidder_id` | int | The bidder ID of the member. For buyers, this will always be `2`.<br><br>**Read Only**<br>**Default**: `null` |
 | `buyer_member_id` | int | The ID of the member who can buy the deal. A deal will either be set up with a buyer member ID or a buyer seat code. This is your Xandr member ID.<br><br>**Read Only** |
 | `buyer_seat_code` | string | The code of the buyer seat who can buy the deal. A deal will either be set up with a buyer member ID or a buyer seat code. This is your Xandr member ID.<br><br>**Read Only**<br>**Default**: `null` |
-| `comments` | string (65534) | Not yet being used by the UI. The custom comments to display in the UI for the deal.<br><br>**Default**: `null` |
+| `comments` | string (65534) | **Not yet being used by the UI**. The custom comments to display in the UI for the deal.<br><br>**Default**: `null` |
 | `deal_id` | int | The ID of the deal to which the settings apply.<br><br>**Required On**: `POST` |
 | `deal_alias` | string (254) | The alias of the deal, as it will appear in the UI.<br>**Default**: `null` |
 | `id` | int | The ID of the deal settings<br><br>**Required On**: `PUT`<br>**Default**: auto-incremented number. |

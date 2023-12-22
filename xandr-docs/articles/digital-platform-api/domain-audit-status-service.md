@@ -35,7 +35,7 @@ For domains on the Xandr platform, all of the following fields will be shown in
 | Field | Type | Description |
 |:---|:---|:---|
 | `audit_datetime` | timestamp | The date and time when the domain was audited by Xandr. |
-| `audit_status` | enum | The audit status of the domain. Possible values: <br> - `audited` - The domain has passed the Xandr audit.<br> - `rejected` - The domain app has failed the Xandr audit (due to Xandr policy violations).<br> - `unaudited` - the domain was not audited.<br> - `unauditable` - the domain was not auditable.<br> - `pending` - Xandr audit is still pending for the domain (default value).<br> - `is_adserver` - the domain was not audited and was detected as an ad server domain. |
+| `audit_status` | enum | The audit status of the domain. Possible values: <br> - `audited` - The domain has passed the Xandr audit.<br> - `rejected` - The domain app has failed the Xandr audit (due to Xandr policy violations).<br> - `unaudited` - The domain was not audited.<br> - `unauditable` - The domain was not auditable.<br> - `pending` - Xandr audit is still pending for the domain (default value).<br> - `is_adserver` - The domain was not audited and was detected as an ad server domain. |
 | `content_category_id` | int | The content category of the domain, as determined by Xandr. If `audit_status` is `"rejected"`, this will be `null`. You can use the read-only [Content Category Service](./content-category-service.md) to view more details about specific content categories. |
 | `found` | boolean | If `true`, the domain is on the Xandr platform. |
 | `id` | int | The Xandr ID for the domain. |

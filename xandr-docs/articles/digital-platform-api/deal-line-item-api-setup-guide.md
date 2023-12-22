@@ -69,7 +69,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
     }
     ```
 
-1. Make a POST request to the `/auth` endpoint with this JSON file in the request body (see [Authentication Service](./authentication-service.md) for more information). In the cURL request below, the authorization token returned is stored in the “`cookies`” file.
+1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body (see [Authentication Service](./authentication-service.md) for more information). In the cURL request below, the authorization token returned is stored in the “`cookies`” file.
 
     ```
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
@@ -93,7 +93,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
 
 You'll need to create or access an advertiser from which to create a deal line item. For deal line items, advertisers are set up the same way as augmented line items.
 
-**JSON Fields for Advertiser (Required and Useful Optional Fields)**
+**JSON fields for advertiser (required and useful optional fields)**
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -115,7 +115,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
     }
     ```
 
-1. Make a POST request to the [https://api.appnexus.com/advertiser](https://api.appnexus.com/advertiser) endpoint with this advertiser JSON and an appropriate `member_id`.
+1. Make a `POST` request to the [https://api.appnexus.com/advertiser](https://api.appnexus.com/advertiser) endpoint with this advertiser JSON and an appropriate `member_id`.
 
     ```
     $ curl -b cookies -c cookies -X POST -d @advertiser.json 'https://api.appnexus.com/advertiser?member_id=2378'
@@ -138,8 +138,8 @@ You'll need to create or access an insertion order to create a deal line item. D
 | `name` | string | Required | The name of the advertiser |
 | `budget_intervals` | array of objects | Required | In order for an insertion order created via the API to be seamless, you must use the `budget_intervals` field. |
 | `budget_type` | enum | Optional | Budget type will translate to all deals below the IO. For example, if you set up an Impression Budget Type IO, you can't put deal line items with a Revenue budget below that IO. |
-| `daily_budget` | double | Optional | Field within `budget_intervals` you can use to set daily budgets at the insertion order level for `Revenue budget_type`. |
-| `lifetime_budget` | double | Optional | Field within `budget_intervals` you can use to set lifetime budgets at the insertion order level for `Revenue budget_type`. |
+| `daily_budget` | double | Optional | Field within `budget_intervals` you can use to set daily budgets at the insertion order level for Revenue `budget_type`. |
+| `lifetime_budget` | double | Optional | Field within `budget_intervals` you can use to set lifetime budgets at the insertion order level for Revenue `budget_type`. |
 | `daily_budget_imps` | int | Optional | Field within `budget_intervals` you can use to set daily budgets at the IO level for Impression `budget_type`. |
 | `lifetime_budget_imps` | int | Optional | Field within `budget_intervals` you can use to set lifetime budgets at the IO level for Impression `budget_type`. |
 
@@ -204,7 +204,7 @@ If you don't already have an insertion order to use, create an insertion order b
     }
     ```
 
-1. Make a POST request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.  
+1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.  
 
     **Example request: no end date, no budget**
 
@@ -276,9 +276,9 @@ You'll need to create the deal you want to associate with the deal line item.
 |:---|:---|:---|
 | `language_restrict` | boolean | - `true`: Deal is restricted only to the listed languages<br> - `false`: Other languages are allowed to serve |
 | `languages` | array of objects | Array of eligible languages |
-| `id` | int | Field within languages: ID of the language that is eligible for the deal |
-| `name` | string | Field within languages: Name of the language that is eligible for the deal |
-| `override` | boolean | Field within languages: Set to `true` to allow a specific language to serve for a deal even if the ad quality profile would have blocked it. |
+| `id` | int | Field within `languages`: ID of the language that is eligible for the deal |
+| `name` | string | Field within `languages`: Name of the language that is eligible for the deal |
+| `override` | boolean | Field within `languages`: Set to `true` to allow a specific language to serve for a deal even if the ad quality profile would have blocked it. |
 
 **Language example**
 
@@ -343,7 +343,7 @@ You'll need to create the deal you want to associate with the deal line item.
 | Field | Type | Description |
 |:---|:---|:---|
 | `creatives` | array of objects | A list of creatives that are specifically approved or banned for the deal. This list overrides any other ad quality setting.  |
-| `id` | int | Field within creatives: ID of the creative that is approved or banned for the deal. |
+| `id` | int | Field within `creatives`: ID of the creative that is approved or banned for the deal. |
 | `status` | string | Field within `creatives`: Specifies how this creative will be handled for this deal. <br> - `approved`: This creative can always serve in this deal, regardless of any other ad quality settings or overrides.<br> - `banned`: This creative can never serve in this deal, regardless of any other ad quality settings or overrides. |
 
 **Specific creatives example**  

@@ -1,11 +1,11 @@
 ---
-title: Duration Service
+title: Digital Platform API - Duration Service
 description: Use the duration service to see what video content durations are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Duration service
+# Digital Platform API - Duration service
 
 Use the read-only Duration Service to see what video content durations are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 

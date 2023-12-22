@@ -26,7 +26,7 @@ Mobile devices are categorized by make and model, where make is generally the ma
 | Field | Type | Description |
 |:---|:---|:---|
 | `codes` | array of objects | Third-party representations for the device model. See [Codes](#codes) below for more details. |
-| `device_make_id` | int | The ID of the device make to which the model belongs. For example, the iPhone device model would belong to the Apple device make. |
+| `device_make_id` | int | The ID of the device make to which the model belongs. For example, the `iPhone` device model would belong to the `Apple` device make. |
 | `device_make_name` | string | The name of the device make to which the model belongs. |
 | `device_type` | enum | The type of device. Possible values: <br> - `pc` <br> - `phone` <br> - `tablet` <br> - `tv` <br> - `gameconsole` <br> - `stb` <br> - `mediaplayer` |
 | `id` | int | The ID of the device model. |

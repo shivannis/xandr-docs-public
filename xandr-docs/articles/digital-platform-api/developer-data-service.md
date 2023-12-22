@@ -36,7 +36,7 @@ The Developer Data Service is only available for the following objects:
 |:---|:---|:---|
 | `POST` | https://api.appnexus.com/developer-data | Add new developer data |
 | `PUT` | https://api.appnexus.com/developer-data | Modify existing developer data |
-| `GET` | https://api.appnexus.com/developer-data?id=ID<br><br>https://api.appnexus.com/developer-data?object_id=OBJECT_ID | View specific developer data |
+| `GET` | [https://api.appnexus.com/developer-data?id=ID](https://api.appnexus.com/developer-data?id=ID)<br><br>[https://api.appnexus.com/developer-data?object_id=OBJECT_ID](https://api.appnexus.com/developer-data?object_id=OBJECT_ID) | View specific developer data |
 | `GET` | https://api.appnexus.com/developer-data | View all developer data |
 | `DELETE` | https://api.appnexus.com/developer-data | Delete developer data |
 | `GET` | https://api.appnexus.com/developer-data/meta | Find out which fields you can filter and sort by |

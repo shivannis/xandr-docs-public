@@ -29,9 +29,9 @@ Mobile devices are categorized by make and model, where make is generally the ma
 | `id` | int | The ID of the device make. |
 | `name` | string | The name of the device make, i.e., "Apple". |
 
-### Codes
+### `Codes`
 
-Each object in the codes array contains the following fields.
+Each object in the `codes` array contains the following fields.
 
 | Field | Type | Description |
 |:---|:---|:---|

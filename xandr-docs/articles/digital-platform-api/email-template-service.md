@@ -26,7 +26,7 @@ Administrators use this service to create and manage templates for system-genera
 | `id` | int | The ID of the email template.<br>**Default**: Auto-incremented number.<br>**Required On**: `PUT`, in query string. |
 | `name` | string | The name of the email template.<br>**Default**: NA<br>**Required On**: `POST` |
 | `subject` | string | The text that should appear in the subject line of the email.<br>**Default**: NA<br>**Required On**: `POST` |
-| `body` | string | The text that should appear in the body of the email.<br>**Default**: NA <br>**Required On**: POST |
+| `body` | string | The text that should appear in the body of the email.<br>**Default**: NA <br>**Required On**: `POST` |
 | `last_modified` | string | **Read Only**. The date the email template was last modified.<br>**Default**: NA<br>**Required On**: NA |
 
 ## Examples
@@ -64,7 +64,7 @@ $ curl -b cookies -c cookies -X POST -d @add_template.json "https://api.appnexus
 
 ### Modify an email template
 
-In this example, the PUT request updates the subject line in email template 35.
+In this example, the `PUT` request updates the subject line in email template 35.
 
 ```
 $ cat modify_template

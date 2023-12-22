@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Engagement metrics report
+# Digital Platform API - Engagement Metrics report
 
 The Engagement Metrics report provides information about ad viewability, as well as indicating any problems that might be preventing Xandr from measuring an impression's viewability. This report is only available for Xandr Publisher Adserver customers.
 
