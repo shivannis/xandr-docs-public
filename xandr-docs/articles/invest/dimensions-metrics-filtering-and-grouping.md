@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Dimensions, Metrics, Filtering, and Grouping
 description: In this article, learn about the best ways to design your reports based on Dimensions, Metrics, Filtering, and Grouping.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Dimensions, Metrics, Filtering, and Grouping
