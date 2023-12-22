@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Troubleshooting Multi-Factor Authentication (MFA)
 description: In this article, learn how to troubleshoot and find answers to the most common issues associated with Multi-Factor Authentication (MFA).
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Troubleshooting Multi-Factor Authentication (MFA)
