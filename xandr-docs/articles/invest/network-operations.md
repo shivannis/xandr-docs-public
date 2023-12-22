@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Operations
 description: Manage all of your business operations and billing through our platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member operations
