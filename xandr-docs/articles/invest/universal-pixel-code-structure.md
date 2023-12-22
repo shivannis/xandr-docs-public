@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Universal Pixel Code Structure
-description : Learn about the universal pixel code structure. The general universal pixel code deployed in the `<head>` tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest. 
+title: Microsoft Invest - Universal Pixel Code Structure
+description: Learn about the universal pixel code structure. The general universal pixel code deployed in the `<head>` tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest. 
+ms.date: 10/28/2023
 ---
 
 
