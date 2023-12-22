@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - February 17, 2022 - Enhancements to the ALI Setup Experience
 description: Find the release note for updates made to the augmented line item setup experience.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - February 17, 2022: Enhancements to the ALI setup experience
