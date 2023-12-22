@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Single Credential Login and Multi-Factor Authentication FAQ
 description: In this article, find answers for some frequently asked questions regarding single credential login and MFA.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Single credential login and multi-factor authentication FAQ
