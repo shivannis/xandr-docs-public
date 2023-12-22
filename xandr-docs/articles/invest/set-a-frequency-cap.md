@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set a Frequency Cap
 description: In this article, you’ll learn how to set a frequency cap. It is reset at a region-specific time of the day and during non-peak usage times.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set a frequency cap
