@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Smart Image Adjustments for Native Creatives
 description: In this article, learn what Smart Image Adjustments is, how to access it, and how it works.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Smart Image Adjustments for native creatives
