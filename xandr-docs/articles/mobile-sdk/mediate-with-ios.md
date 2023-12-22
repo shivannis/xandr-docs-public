@@ -76,7 +76,6 @@ Create a native ad view that inherits from GADNativeAdView:
 ```
 > [!NOTE]
 > For SDK v5.3 and higher, you need to specify the GADIsADManagerApp key in the app's info.plist with a boolean YES value.
-
 > ```
 > <key>GADIsAdManagerApp</key>
 >  <true/>
