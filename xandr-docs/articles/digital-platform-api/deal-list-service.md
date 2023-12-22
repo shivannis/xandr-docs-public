@@ -18,8 +18,8 @@ Deal List API facilitates search, add, modify, and fetching a specific or differ
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/deal-list<br>Deal List JSON | Add a new deal list. |
-| `PUT` | https://api.appnexus.com/deal-list<br>Deal List JSON | Modify a deal list. |
+| `POST` | https://api.appnexus.com/deal-list<br>(Deal List JSON) | Add a new deal list. |
+| `PUT` | https://api.appnexus.com/deal-list<br>(Deal List JSON) | Modify a deal list. |
 | `DELETE` | https://api.appnexus.com/deal-list?id=DEAL_LIST_ID | Delete a deal list. |
 | `DELETE` | https://api.appnexus.com/deal-list?id=DEAL_LIST_ID1,DEAL_LIST_ID2,DEAL_LIST_ID3 | Delete different deal lists. |
 | `GET` | https://api.appnexus.com/deal-list | View all deal lists and deals they contain. |

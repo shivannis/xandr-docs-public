@@ -41,7 +41,7 @@ The Deal Buyer Setting Service lets buyers give deals an internal alias for clar
 
 ### Add deal setting
 
-If a deal-buyer-setting object has already been created for the deal, the POST request will return the following error message: "`The buyer_member_id, deal_id combination was not unique.`" To modify this deal-buyer-setting, first make a `GET` [https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID](https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID) request to return the deal-buyer-setting ID. Then use the deal-buyer-setting ID with a `PUT` [https://api.appnexus.com/deal-buyer-setting?id=ID](https://api.appnexus.com deal-buyer-setting?id=ID) request to modify the deal-buyer-setting.
+If a deal-buyer-setting object has already been created for the deal, the POST request will return the following error message: "`The buyer_member_id, deal_id combination was not unique.`" To modify this deal-buyer-setting, first make a `GET` [https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID](https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID) request to return the deal-buyer-setting ID. Then use the deal-buyer-setting ID with a `PUT` [https://api.appnexus.com/deal-buyer-setting?id=ID](https://api.appnexus.com/deal-buyer-setting?id=ID) request to modify the deal-buyer-setting.
 
 ```
 $ cat deal_settings.json

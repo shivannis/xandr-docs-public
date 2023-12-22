@@ -79,7 +79,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/domain-list?id=9'
 }
 ```
 
-### Adding domain lists to profile 35 as a "allowlist"
+### Adding domain lists to profile 35 as a `"allowlist"`
 
 ```
 $ cat domain-list-profile
@@ -102,7 +102,7 @@ $ curl -b cookies -c cookies -X PUT --data-binary @domain-list-profile 'https://
 }
 ```
 
-### Searching for domain lists with names or descriptions containing "test"
+### Searching for domain lists with names or descriptions containing `"test"`
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/domain-list?search=test'

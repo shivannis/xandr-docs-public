@@ -16,7 +16,7 @@ Once you have generated a deal, you can view deal details including description 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | https://api.appnexus.com/deal-from-package/meta | Find out which fields you can filter and sort by. |
-| `POST` | https://api.appnexus.com/deal-from-package | Create a new deal based on a package.<br><br>**Note**:<br>When a member makes a `POST` call to this service, a deal record is generated with the member set as the buyer. |
+| `POST` | https://api.appnexus.com/deal-from-package | Create a new deal based on a package.<br><br>**Note**: When a member makes a `POST` call to this service, a deal record is generated with the member set as the buyer. |
 
 ## JSON fields
 

@@ -23,11 +23,11 @@ Administrators use this service to create and manage templates for system-genera
 
 | Name | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the email template.<br>**Default**: Auto-incremented number.<br>**Required On**: `PUT`, in query string. |
-| `name` | string | The name of the email template.<br>**Default**: NA<br>**Required On**: `POST` |
-| `subject` | string | The text that should appear in the subject line of the email.<br>**Default**: NA<br>**Required On**: `POST` |
-| `body` | string | The text that should appear in the body of the email.<br>**Default**: NA <br>**Required On**: `POST` |
-| `last_modified` | string | **Read Only**. The date the email template was last modified.<br>**Default**: NA<br>**Required On**: NA |
+| `id` | int | The ID of the email template.<br><br>**Default**: Auto-incremented number.<br>**Required On**: `PUT`, in query string. |
+| `name` | string | The name of the email template.<br><br>**Default**: NA<br>**Required On**: `POST` |
+| `subject` | string | The text that should appear in the subject line of the email.<br><br>**Default**: NA<br>**Required On**: `POST` |
+| `body` | string | The text that should appear in the body of the email.<br><br>**Default**: NA <br>**Required On**: `POST` |
+| `last_modified` | string | **Read Only**. The date the email template was last modified.<br><br>**Default**: NA<br>**Required On**: NA |
 
 ## Examples
 
