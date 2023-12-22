@@ -34,11 +34,11 @@ The table is summarized as follows:
 
 Following sections explain about various impression counting methodologies:
 
-### Counting Methodology : Mobile SDK version 7.22.0 and older
+### Counting Methodology: Mobile SDK version 7.22.0 and older
 
 The Mobile SDK v7.0 continues to use the old impression counting mechanism for various Ad formats. For more information, see [Impression Counting Methods](impression-counting-methods.md).
 
-### Counting Methodology : Mobile SDK version v8.0 and above
+### Counting Methodology: Mobile SDK version v8.0 and above
 
 | AdUnits      | Impression Type      | Enablement by Impression Type                                                                  |
 |--------------|----------------------|------------------------------------------------------------------------------------------------|
