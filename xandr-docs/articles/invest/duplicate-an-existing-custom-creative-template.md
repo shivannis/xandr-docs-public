@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Duplicate an Existing Custom Creative Template
 description: In this article, follow our step-by-step instructions to copy an existing standard or custom creative template and then modify it.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Duplicate an existing custom creative template
