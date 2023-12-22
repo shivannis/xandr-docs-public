@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Discovery 
 description: In this article, understand what Discovery is and how it helps in optimization by prioritizing the inventory that is most likely to perform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Discovery
