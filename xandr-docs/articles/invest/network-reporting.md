@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Member Reporting
 description: Use this report to obtain a global view of your business, allowing you to report across multiple advertisers and/or publishers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Member reporting
