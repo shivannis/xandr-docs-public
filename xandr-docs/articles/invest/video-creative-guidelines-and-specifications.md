@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Creative Guidelines and Specifications
 description: This article provides guidelines and specifications for video creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video creative guidelines and specifications
