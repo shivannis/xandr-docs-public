@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Ad Pod Report
 description: This report shows metrics for groups of ads delivered sequentially in between segments of non-commercial video programming.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video ad pod report
