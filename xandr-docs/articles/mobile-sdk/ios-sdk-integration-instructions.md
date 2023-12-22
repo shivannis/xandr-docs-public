@@ -133,28 +133,28 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 3. Go to the app target’s **General** configuration page.
 4. To use **AppNexusSDK SDK**, add the **AppNexusSDK.xcframework** and **OMSDK\_AppNexus.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
 Or to use **AppNexusNativeSDK SDK**, add the **AppNexusNativeSDK.xcframework** and **OMSDK\_.xcframework** to the **Embedded Binaries (Target- \> General- \> Embedded Binaries)** section by clicking the **+ icon**.
-   [Screenshot of the General configuration screen](media/ios-sdk-integration-instructions-e.png) 
+  <!-- [Screenshot of the General configuration screen](media/ios-sdk-integration-instructions-e.png) -->
 5. Select **Add Files** from the drop-down and navigate to location where you have the unzipped **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** folders.
-   :::image type="content" source="media/ios-sdk-integration-instructions-f.png" alt-text="Screenshot of the Add Files screen.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-f.png" alt-text="Screenshot of the Add Files screen.":::-->
 6. Select the unzipped folders and click **Open**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-g.png" alt-text="Screenshot shows that the unzipped folder has been selected and opened.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-g.png" alt-text="Screenshot shows that the unzipped folder has been selected and opened.":::-->
 7. The added **AppNexusSDK.xcframework** and **OMSDK_AppNexus.xcframework** would be visible under the **Framework, Libraries, and Embedded Content** section.
-   :::image type="content" source="media/ios-sdk-integration-instructions-h.png" alt-text="Screenshot shows that the added framework is visible in the Embedded content section.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-h.png" alt-text="Screenshot shows that the added framework is visible in the Embedded content section.":::-->
 
 ### Swift Package Manager
 
 1. Copy the URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) and check the latest
   version of SDK in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
 2. Open the app’s Xcode project or workspace. Select **Project → Swift Package** and click on **+ icon**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::-->
 3. Paste the Github URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) mentioned earlier in search bar of **Choose Package Repository** screen and click **Next**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::-->
 4. Select the appropriate version from the drop-down (checked in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases) as mentioned earlier) and click **Next**.
-   :::image type="content" source="media/ios-sdk-integration-instructions-k.png" alt-text="Screenshot of the Choose Package Options screen.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-k.png" alt-text="Screenshot of the Choose Package Options screen.":::-->
 5. Select the applicable **Package Product** and click **Finish** to complete the setup.
-   :::image type="content" source="media/ios-sdk-integration-instructions-l.png" alt-text="Screenshot of the Finish screen.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-l.png" alt-text="Screenshot of the Finish screen.":::-->
 6. The added **AppNexusSDK** package would be visible under the **Framework, Libraries, and Embedded Content** section.
-   :::image type="content" source="media/ios-sdk-integration-instructions-m.png" alt-text="Screenshot shows that the package is visible in the Embedded Content section.":::
+   <!--:::image type="content" source="media/ios-sdk-integration-instructions-m.png" alt-text="Screenshot shows that the package is visible in the Embedded Content section.":::-->
 
 ## Set up for mediation (optional)
 
