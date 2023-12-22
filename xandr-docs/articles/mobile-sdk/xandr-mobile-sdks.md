@@ -32,8 +32,8 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 
 ## Getting started
 
-- Android: [Xandr's Android SDK Integration](android-sdk-integration-instructions.md)
-- iOS: [Xandr's iOS SDK Integration](ios-sdk-integration-instructions.md)
+- Android: [Android SDK Integration](android-sdk-integration-instructions.md)
+- iOS: [iOS SDK Integration](ios-sdk-integration-instructions.md)
 
 ## Ad types
 
