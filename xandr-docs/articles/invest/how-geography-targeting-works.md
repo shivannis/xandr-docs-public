@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - How Geography Targeting Works
 description: This article explains how geography targeting works. Geography targeting is supported by Digital Envoy's IP lookup service.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - How geography targeting works
