@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Managing Relationships with Sellers
 description: In this article, explore valuable insights on how a buyer can use the Partner Center to manage relationships with specific sellers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Managing relationships with sellers
