@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Segment Pixels - Advanced
 description: Learn how to manually create secure pixels. Secure pixels must be placed on a secure page. Insecure pixels must be placed on an insecure page.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Segment pixels - Advanced
