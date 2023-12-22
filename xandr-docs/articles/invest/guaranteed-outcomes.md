@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Guaranteed Outcomes
 description: Guaranteed Outcomes allows buyers to pay for media with maximum reach and sellers to benefit from increased demand without risk.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Guaranteed Outcomes
