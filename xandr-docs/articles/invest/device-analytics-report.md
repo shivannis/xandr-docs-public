@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Device Analytics Report
 description: In this article, learn about the Device Analytics report to access performance data from both the buy-side and sell-side, where impressions were delivered.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Device Analytics report
