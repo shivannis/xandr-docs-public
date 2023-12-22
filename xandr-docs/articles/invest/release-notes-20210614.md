@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - June 14, 2021 - Introducing a New ALI
 description: Find the release note for the revamped 'Create New Line Item' and 'Edit Line Item' screens.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - June 14, 2021: Introducing a new ALI
