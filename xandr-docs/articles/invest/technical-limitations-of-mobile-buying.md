@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Technical Limitations of Mobile Buying
 description: Explore mobile buying limitations such as, user identification, frequency capping, device and geographic targeting, and more.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Technical limitations of mobile buying
