@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Self-Auditing Creatives
 description: This article explains about the self-auditing creatives. These creatives are only eligible to run on sellers' inventory with set trust levels.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Self-auditing creatives
