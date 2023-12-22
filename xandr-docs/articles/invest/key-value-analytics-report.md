@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Key Value Analytics Report
 description: In this article, understand the information that the Key Value Analytics report shows and learn how to run the report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Key value analytics report
