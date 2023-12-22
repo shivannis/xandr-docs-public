@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Troubleshooting Creatives
 description: In this article, learn how to troubleshoot your creatives, analysing error messages, types, descriptions, and resolutions in detail.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Troubleshooting creatives
