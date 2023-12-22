@@ -1,7 +1,7 @@
 ---
-title : Set Endpoint
-description : This function sets the Impression Bus endpoint to which ad requests are made.
-ms.custom : seller-tag
+title: Set Endpoint
+description: This function sets the Impression Bus endpoint to which ad requests are made.
+ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
