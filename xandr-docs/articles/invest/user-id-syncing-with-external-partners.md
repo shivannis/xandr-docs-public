@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - User ID Syncing with External Partners
 description: This article explains the user ID syncing with external partners. The sync is initiated to have a user ID associated with all users in all ad calls.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - User ID syncing with external partners
