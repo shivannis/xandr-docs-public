@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Create a Programmatic Guaranteed Buying Line Item
-description : Learn about programmatic guaranteed buying line item (PG line item) that provides you with a workflow designed for buying programmatic guaranteed deal (PG deal).
+title: Microsoft Invest - Create a Programmatic Guaranteed Buying Line Item
+description: Learn about programmatic guaranteed buying line item (PG line item) that provides you with a workflow designed for buying programmatic guaranteed deal (PG deal).
 ms.date: 10/28/2023
 ---
 
