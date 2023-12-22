@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Create Custom Events and Parameters
-description : Learn creating custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.
+title: Microsoft Invest - Create Custom Events and Parameters
+description: Learn creating custom events and parameters for the universal pixel using the UI and include them in your generated pixel code.
 ms.date: 10/28/2023
 ---
 
