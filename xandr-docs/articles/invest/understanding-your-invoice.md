@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Understanding Your Invoice
-description : Learn Annotated descriptions of the contents of your Xandr invoices.
+title: Microsoft Invest - Understanding Your Invoice
+description: Learn Annotated descriptions of the contents of your Xandr invoices.
+ms.date: 10/28/2023
 ---
 
 
