@@ -1,11 +1,11 @@
 ---
-title: Impression Counting Methods
+title: Impression counting methods - Mobile SDK v7.0 and below
 description: In this article, learn about the various impression counting methods, types, AdUnits, and how to enable them.
 ms.custom: android-sdk, ios-sdk
 ms.date : 10/28/2023
 ---
 
-# Impression counting methods
+# Impression counting methods - Mobile SDK v7.0 and below
 
 The Mobile SDK uses different impression tracking mechanisms for various Ad formats. These methods apply to Mobile SDK versions 7.0 and earlier.
 
