@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - General Guidelines for Passing Creative Audits
 description: This article provides guidelines to ensure that your creatives successfully pass auditing. Not adhering to the guidelines can lead to suspension or termination. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - General guidelines for passing creative audits
