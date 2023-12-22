@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Engineered Features
 description: In this article, learn what engineered features are and the various features available for market rate estimation and viewability predictions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Engineered features
