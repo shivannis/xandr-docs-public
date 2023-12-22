@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Valuation
 description: Learn about valuation. Valuation algorithms determine the appropriate price for an auction based on the likelihood of an event.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Valuation
