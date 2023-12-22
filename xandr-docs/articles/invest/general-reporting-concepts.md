@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - General Reporting Concepts
 description: This article explains the reporting system's handling of data, efficient report requests, data types, filtering, grouping, and delivery mechanisms.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - General reporting concepts
