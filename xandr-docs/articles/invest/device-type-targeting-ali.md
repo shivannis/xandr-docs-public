@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Device Type Targeting
 description: Learn about device type targeting, that focuses on delivering ads to specific device categories, such as smartphones, tablets, desktop computers, or smart TVs.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Device type targeting
