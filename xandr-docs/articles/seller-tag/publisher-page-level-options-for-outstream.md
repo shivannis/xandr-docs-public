@@ -1,6 +1,6 @@
 ---
 title: Publisher Page-Level Options for Outstream
-description: This topic describes settings available for configuring outstream video in page code. These settings supplement the placement-level outstream
+description: This topic describes settings available for configuring outstream video in page code. These settings supplement the placement-level outstream.
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
