@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Migrating from Broker Fees to Partner Fees
 description: In this article, learn how to migrate from broker fees to partner fees, including reporting changes, transition periods, and affected reports.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Migrating from broker fees to partner fees
