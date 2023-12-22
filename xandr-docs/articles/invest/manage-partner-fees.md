@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Manage Partner Fees
 description: In this article, find instructions to view, modify, or delete a partner fee.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Manage partner fees
