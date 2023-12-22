@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Sherlock - Creative Quality Control
 description: In this article, learn what Sherlock is and how Xandr deals with malware.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Sherlock: Creative quality control
