@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Creative Branding
-description : Learn to maintain and monitor a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
+title: Microsoft Invest - Creative Branding
+description: Learn to maintain and monitor a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
 ms.date: 10/28/2023
 ---
 
