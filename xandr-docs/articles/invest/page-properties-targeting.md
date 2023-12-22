@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Page Properties Targeting
-description : Learn how through page properties targeting, you can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call.
+title: Microsoft Invest - Page Properties Targeting
+description: Learn how through page properties targeting, you can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call.
+ms.date: 10/28/2023
 ---
 
 
