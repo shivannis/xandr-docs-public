@@ -49,13 +49,13 @@ There are five ways to get our SDK:
 
 If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/). Once you have CocoaPods installed:
 
-- Use Terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
+1. Use Terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
 
   ``` 
   pod init
   ```
 
-- Using a text editor, open the newly created podfile. Set the platform version to 10.0 and add pod 'AppNexusSDX' to the target.
+1. Using a text editor, open the newly created podfile. Set the platform version to 10.0 and add pod 'AppNexusSDX' to the target.
 
   ``` 
   # iOS: Podfile config to include our SDK
