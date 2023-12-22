@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Line Items
-description : Learn about working with line items.
+title: Microsoft Invest - Working with Line Items
+description: Learn about working with line items.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with line items
