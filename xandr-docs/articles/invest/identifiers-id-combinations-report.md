@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Identifiers - ID Combinations Report
 description: This report provides insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Identifiers - ID Combinations report
