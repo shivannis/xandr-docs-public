@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Split Priority
 description: Learn how to set split priority. If an impression applies to multiple programmable splits, the impression is assigned to the split with the lowest priority number.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set split priority
