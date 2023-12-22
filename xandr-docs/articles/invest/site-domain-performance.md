@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Site Domain Performance
 description: In this article, understand the data that the site domain performance report displays and learn how to run the report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Site domain performance
