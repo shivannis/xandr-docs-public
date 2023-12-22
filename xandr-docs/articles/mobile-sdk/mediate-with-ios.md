@@ -48,7 +48,7 @@ To mediate these networks, you'll need the following:
 
 If you use the following adaptor, you need to initialize the adaptor's SDK as early as possible in the lifecycle of the application. A perfect place to do this is in the app delegate. The code samples below show how to do this.
 
-**AdMob native mediation**
+### AdMob native mediation
 
 > [!NOTE]
 > The instructions in this section are only needed if you are doing native mediation. Mediating banners and interstitials should not require any initialization code or further work.
@@ -90,7 +90,7 @@ For passing the content URL to the Google SDK, the content url needs to be passe
 [adView addCustomKeywordWithKey:@"content_url" value:@"www.appnexus.com"];
 ```
 
-## AdMob banner mediation  
+### AdMob banner mediation  
 
 > [!NOTE]
 > The instructions in this section are only needed to load AdMob banner ads in iPads for the apps that support multi-window capability.
