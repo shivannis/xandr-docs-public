@@ -26,7 +26,7 @@ To set up custom events and parameters:
     click **Event** or **Parameter** and provide a name for the event or parameter.
 
    > [!NOTE]
-   > Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Invest DSP will modify your parameter names if they don't match this convention.
+   > Event names are typically capitalized like `AddCart`, and parameter names use lowercase characters. Microsoft Invest will modify your parameter names if they don't match this convention.
 
 1. If you’re creating a custom parameter, specify
     whether the expected value is a string or a number.
