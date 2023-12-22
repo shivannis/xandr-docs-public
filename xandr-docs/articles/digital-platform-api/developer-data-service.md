@@ -25,10 +25,10 @@ To write to the Developer Data Service, you must:
 
 The Developer Data Service is only available for the following objects:
 
-- Creative
-- Profile
-- Segment
-- Member
+- `Creative`
+- `Profile`
+- `Segment`
+- `Member`
 
 ## REST API
 

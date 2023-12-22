@@ -17,7 +17,7 @@ Mobile devices are categorized by make and model, where make is generally the ma
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | https://api.appnexus.com/device-model | View all device models |
-| `GET` | https://api.appnexus.com/device-model?device_type=DEVICE_TYPE | View all device models of a specific type (i.e., pc, phone, or tablet) |
+| `GET` | https://api.appnexus.com/device-model?device_type=DEVICE_TYPE | View all device models of a specific type (i.e., `pc`, `phone`, or `tablet`) |
 | `GET` | https://api.appnexus.com/device-model?id=DEVICE_MODEL_ID | View a specific device model |
 | `GET` | https://api.appnexus.com/device-model/meta | Find out which fields you can filter and sort by |
 
