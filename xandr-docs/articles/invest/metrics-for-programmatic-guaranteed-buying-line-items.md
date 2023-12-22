@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Metrics for Programmatic Guaranteed Buying Line Items
 description: In this article, explore Programmatic Guaranteed (PG) buying line item metrics and analyze performance in bidding and delivery for targeted PG deals.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Metrics for Programmatic Guaranteed buying line items
