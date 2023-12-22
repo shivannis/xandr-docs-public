@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Using a Viewability Rate Target for Guaranteed Views
 description: Learn about using a viewability rate target for guaranteed views. Use a lower threshold to manage risk and take advantage of viewable-only payment feature.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Using a viewability rate target for guaranteed views
