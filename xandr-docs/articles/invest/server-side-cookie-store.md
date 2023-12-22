@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Server Side Cookie Store
 description: Server-side cookie store is a server-side user data storage system which maintains consistent and comprehensive data about users across multiple sites and platforms.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Server-side cookie store
