@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Mobile Ad Call Reference
 description: In this article, learn about the Mobile ad call reference, its query string parameters, and examples based on real ad calls.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Mobile ad call reference
