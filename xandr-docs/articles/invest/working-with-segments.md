@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Segments
-description : In this article, learn about segment pixels. 
+title: Microsoft Invest - Working with Segments
+description: In this article, learn about segment pixels. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with Segments
