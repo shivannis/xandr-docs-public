@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Understanding Billing and Costs for Guaranteed Outcomes
 description: Learn about the Guaranteed Outcomes billing and costs, which cover the buyer's media costs per outcome. Additional impression-based CPM fees may apply externally.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Understanding billing and costs for Guaranteed Outcomes
