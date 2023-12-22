@@ -1,6 +1,7 @@
 ---
 title: August 26, 2021 - Cross Device for Europe - Invest Changes
 description: Find the release note for the updates made to cross-device targeting for Europe.
+ms.date: 10/28/2023
 ---
 
 # August 26, 2021: Cross device for Europe - Invest changes
