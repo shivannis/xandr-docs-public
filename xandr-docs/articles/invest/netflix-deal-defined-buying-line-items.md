@@ -1,6 +1,7 @@
 ---
 title: Netflix Deal Defined Buying Line Items
 description: This article explains about the Netflix PMP deals which are seller-defined. It means the seller defines the targeting parameters the buyer is allowed to configure.
+ms.date: 10/28/2023
 ---
 
 # Netflix deal defined buying line items
