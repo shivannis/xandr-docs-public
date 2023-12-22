@@ -1,6 +1,7 @@
 ---
 title: October 25, 2022 - Launch of new Xandr Data Marketplace Resources
 description: In this article, discover the details surrounding the launch of two new resources within the Xandr Data Marketplace for Microsoft Invest buyers.
+ms.date: 10/28/2023
 ---
 
 # October 25, 2022: Launch of new Xandr Data Marketplace resources
