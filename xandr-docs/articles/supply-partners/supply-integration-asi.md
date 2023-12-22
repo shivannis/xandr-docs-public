@@ -1,6 +1,6 @@
 ---
-title : Supply Integration (ASI)
-description : Learn about Supply Integration (ASI).
+title: Supply Integration (ASI)
+description: Learn about Supply Integration (ASI).
 ms.custom: supply-partners
 ms.date: 10/28/2023
 ---
