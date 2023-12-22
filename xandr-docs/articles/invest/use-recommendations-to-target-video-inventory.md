@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Use Recommendations to Target Video Inventory
-description : To act on the new inventory recommendations found under your video line item's Analytics tab, you can download them in a CSV file for analysis by an inventory manager, or select individual recommendations to create a new line item-level allowlist. 
+title: Microsoft Invest - Use Recommendations to Target Video Inventory
+description: To act on the new inventory recommendations found under your video line item's Analytics tab, you can download them in a CSV file for analysis by an inventory manager, or select individual recommendations to create a new line item-level allowlist. 
+ms.date: 10/28/2023
 ---
 
 
