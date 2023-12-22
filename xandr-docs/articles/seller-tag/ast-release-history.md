@@ -12,29 +12,29 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
-| [0.58.0](https://acdn.adnxs.com/ast/static/0.58.0/ast.js) | - Include `invCode` with `apntag.getTag` function <br> - Update `clearRequest` to choose certain tags <br> - Add support for GPP 1.1 <br> - Add MSFT bid fields to AST event object | 20 September 2023 |
-| [0.57.0](https://acdn.adnxs.com/ast/static/0.57.0/ast.js) | - Add native renderer information for AST events <br> - Check value of `gdprApplies` before checking `tcString` <br> - Catch exception when calling `getTag()` in certain cases <br> - Update `attachClickTrackers()` to be compatible inside web component environment <br> - Update AST `usersync` domain and logic | 14 July 2023 |
-| [0.56.0](https://acdn.adnxs.com/ast/static/0.56.0/ast.js) | - Add support for coppa <br> - Add support to specify sandbox attributes for AST iframe <br> - Add support to include extra div container around AST iframe <br> - Update the this context in `xhr` call <br> - Fix function call in `adManager` | 31 May 2023 |
-| [0.55.0](https://acdn.adnxs.com/ast/static/0.55.0/ast.js) | - Add `userSync` feature <br> - Add setting to control when viewability script loads for native ads | 28 Mar 2023 |
-| [0.54.1](https://acdn.adnxs.com/ast/static/0.54.1/ast.js) | - Add param for `setEndpoint` function to optionally lock impbus URL <br> - Update `postMessage` logic for Global Privacy Platform consent feature | 18 Jan 2023 |
-| [0.53.0](https://acdn.adnxs.com/ast/static/0.53.0/ast.js) | Add support for Global Privacy Platform (US) | 19 Dec 2022 |
-| [0.52.0](https://acdn.adnxs.com/ast/static/0.52.0/ast.js) | Update notify function to support a targetId | 30 Nov 2022 |
-| [0.51.0](https://acdn.adnxs.com/ast/static/0.51.0/ast.js) | Update logic around simple domain usage | 18 Oct 2022 |
-| [0.50.0](https://acdn.adnxs.com/ast/static/0.50.0/ast.js) | Fix window reference for AST div when using safeframe | 03 Aug 2022 |
-| [0.49.0](https://acdn.adnxs.com/ast/static/0.49.0/ast.js) | - Add a `globalPlacementId` field to `defineTag` <br> - Add a `pageUrl` override field for certain mobile environments | 21 Jun 2022  |
-| [0.48.1](https://acdn.adnxs.com/ast/static/0.48.1/ast.js) | - Replace unload event with pagehide <br> - Update dependency packages to support Node 14 <br> - Add an optional parameter for `resizeAd` | 01 Jun 2022  |
-| [0.47.0](https://acdn.adnxs.com/ast/static/0.47.0/ast.js) | Update type for publisher first party IDs feature | 04 May 2022  |
-| [0.46.2](https://acdn.adnxs.com/ast/static/0.46.2/ast.js) | Add support for publisher first party IDs | 21 Mar 2022  |
-| [0.45.0](https://acdn.adnxs.com/ast/static/0.45.0/ast.js) | - Resolve issue when SafeFrame is loaded in a scrollable event <br> - Resolve issue with Safari Outstream and SafeFrame where ad was not expanding | 08 Feb 2022  |
-| [0.44.0](https://acdn.adnxs.com/ast/static/0.44.0/ast.js) | Remove usage of localStorage within debugger feature | 08 Dec 2021 |
-| [0.43.0](https://acdn.adnxs.com/ast/static/0.43.0/ast.js) | Add conditional check for some `postMessage` requests | 11 Nov 2021  |
-| [0.42.1](https://acdn.adnxs.com/ast/static/0.42.1/ast.js) | - Add support for new cpm fields available in bid response <br> - Add schain support | 03 Nov 2021  |
-| [0.41.0](https://acdn.adnxs.com/ast/static/0.41.0/ast.js) | - Update `adRequested` event trigger conditions <br> - Additional updates to WebComponent and SafeFrame support <br> - Update logic on when to set the displayed flag | 29 Sep 2021  |
-| [0.40.0](https://acdn.adnxs.com/ast/static/0.40.0/ast.js) | - Add support for UID2 userId <br> - Add support for Google Additional Consent field | 24 Jun 2021  |
-| [0.39.0](https://acdn.adnxs.com/ast/static/0.39.0/ast.js) | Add support for web components to banner ads | 10 Jun 2021  |
-| [0.38.0](https://acdn.adnxs.com/ast/static/0.38.0/ast.js) | - Ignore case on userId field <br> - Address issue in refresh behavior fro video ads | 17 May 2021  |
-| [0.37.1](https://acdn.adnxs.com/ast/static/0.37.1/ast.js) | Fixed issue around `withCredentials` field | 03 May 2021  |
-| [0.37.0](https://acdn.adnxs.com/ast/static/0.37.0/ast.js) | Add support for simple domain/cookieless requests | 28 Apr 2021  |
+| [0.58.0](https://acdn.adnxs.com/ast/static/0.58.0/ast.js) | - Include `invCode` with `apntag.getTag` function <br> - Update `clearRequest` to choose certain tags <br> - Add support for GPP 1.1 <br> - Add MSFT bid fields to AST event object | Sep 20 2023 |
+| [0.57.0](https://acdn.adnxs.com/ast/static/0.57.0/ast.js) | - Add native renderer information for AST events <br> - Check value of `gdprApplies` before checking `tcString` <br> - Catch exception when calling `getTag()` in certain cases <br> - Update `attachClickTrackers()` to be compatible inside web component environment <br> - Update AST `usersync` domain and logic | Jul 14 2023 |
+| [0.56.0](https://acdn.adnxs.com/ast/static/0.56.0/ast.js) | - Add support for coppa <br> - Add support to specify sandbox attributes for AST iframe <br> - Add support to include extra div container around AST iframe <br> - Update the this context in `xhr` call <br> - Fix function call in `adManager` | May 31 2023 |
+| [0.55.0](https://acdn.adnxs.com/ast/static/0.55.0/ast.js) | - Add `userSync` feature <br> - Add setting to control when viewability script loads for native ads | Mar 28 2023 |
+| [0.54.1](https://acdn.adnxs.com/ast/static/0.54.1/ast.js) | - Add param for `setEndpoint` function to optionally lock impbus URL <br> - Update `postMessage` logic for Global Privacy Platform consent feature | Jan 18 2023 |
+| [0.53.0](https://acdn.adnxs.com/ast/static/0.53.0/ast.js) | Add support for Global Privacy Platform (US) | Dec 19 2022 |
+| [0.52.0](https://acdn.adnxs.com/ast/static/0.52.0/ast.js) | Update notify function to support a targetId | Nov 30 2022 |
+| [0.51.0](https://acdn.adnxs.com/ast/static/0.51.0/ast.js) | Update logic around simple domain usage | Oct 18 2022 |
+| [0.50.0](https://acdn.adnxs.com/ast/static/0.50.0/ast.js) | Fix window reference for AST div when using safeframe | Aug 03 2022 |
+| [0.49.0](https://acdn.adnxs.com/ast/static/0.49.0/ast.js) | - Add a `globalPlacementId` field to `defineTag` <br> - Add a `pageUrl` override field for certain mobile environments | Jun 21 2022  |
+| [0.48.1](https://acdn.adnxs.com/ast/static/0.48.1/ast.js) | - Replace unload event with pagehide <br> - Update dependency packages to support Node 14 <br> - Add an optional parameter for `resizeAd` | Jun 01 2022  |
+| [0.47.0](https://acdn.adnxs.com/ast/static/0.47.0/ast.js) | Update type for publisher first party IDs feature | May 04 2022  |
+| [0.46.2](https://acdn.adnxs.com/ast/static/0.46.2/ast.js) | Add support for publisher first party IDs | Mar 21 2022  |
+| [0.45.0](https://acdn.adnxs.com/ast/static/0.45.0/ast.js) | - Resolve issue when SafeFrame is loaded in a scrollable event <br> - Resolve issue with Safari Outstream and SafeFrame where ad was not expanding | Feb 08 2022  |
+| [0.44.0](https://acdn.adnxs.com/ast/static/0.44.0/ast.js) | Remove usage of localStorage within debugger feature | Dec 21 2021 |
+| [0.43.0](https://acdn.adnxs.com/ast/static/0.43.0/ast.js) | Add conditional check for some `postMessage` requests | Nov 11 2021  |
+| [0.42.1](https://acdn.adnxs.com/ast/static/0.42.1/ast.js) | - Add support for new cpm fields available in bid response <br> - Add schain support | Nov 03 2021  |
+| [0.41.0](https://acdn.adnxs.com/ast/static/0.41.0/ast.js) | - Update `adRequested` event trigger conditions <br> - Additional updates to WebComponent and SafeFrame support <br> - Update logic on when to set the displayed flag | Sep 29 2021  |
+| [0.40.0](https://acdn.adnxs.com/ast/static/0.40.0/ast.js) | - Add support for UID2 userId <br> - Add support for Google Additional Consent field | Jun 24 2021  |
+| [0.39.0](https://acdn.adnxs.com/ast/static/0.39.0/ast.js) | Add support for web components to banner ads | Jun 10 2021  |
+| [0.38.0](https://acdn.adnxs.com/ast/static/0.38.0/ast.js) | - Ignore case on userId field <br> - Address issue in refresh behavior fro video ads | May 17 2021  |
+| [0.37.1](https://acdn.adnxs.com/ast/static/0.37.1/ast.js) | Fixed issue around `withCredentials` field | May 03 2021  |
+| [0.37.0](https://acdn.adnxs.com/ast/static/0.37.0/ast.js) | Add support for simple domain/cookieless requests | Apr 28 2021  |
 | [0.36.0](https://acdn.adnxs.com/ast/static/0.36.0/ast.js) | Add support for LiveRamp userId in AST |  |
 | [0.35.0](https://acdn.adnxs.com/ast/static/0.35.0/ast.js) | - Add support for userId netID in AST <br> - Correct the format used to pass segment data in UT request <br> - Resend Criteo data over EIDS for AST <br> - Ensure mediation.js is loaded with correct protocol in iframes |  |
 | [0.34.0](https://acdn.adnxs.com/ast/static/0.34.0/ast.js) | Send native custom fields to universal tag request |  |
