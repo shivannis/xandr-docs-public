@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Vendor Usage Report
 description: This report provides details about data or platform usage powered by third-party vendors, the costs of that data or feature usage, and the line items/campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Vendor usage report
