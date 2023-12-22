@@ -1,35 +1,17 @@
 ---
-Title : Insertion Order Frequency Report
-Description : The Insertion Order Frequency report can be used to view how frequently
+title: Insertion Order Frequency Report
+description: In this article, explore the Insertion Order Frequency report, providing insights into the frequency of users viewing specific insertion order creatives. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-users are viewing a specific insertion order's creatives. This report
 ---
 
+# Insertion Order Frequency report
 
-# Insertion Order Frequency Report
+The Insertion Order Frequency report can be used to view how frequently users are viewing a specific insertion order's creatives. This report shows data at the insertion order level and is available to members. For instructions on retrieving a report, see the [examples](#examples) below.
 
+## Time frame
 
-
-
-
-The Insertion Order Frequency report can be used to view how frequently
-users are viewing a specific insertion order's creatives. This report
-shows data at the insertion order level and is available to members. For
-instructions on retrieving a report, see the <a
-href="insertion-order-frequency-report.md#insertion-order-frequency-report__example"
-class="xref">example</a> below.
-
-
-
->
-
-## Time Frame
-
-
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - last_48_hours
 - today
@@ -39,743 +21,89 @@ following:
 - last_24_hours
 - last_30_days
 
-
-
-**Data Retention Period**
-
-
+### Data retention period
 
 Data retention period for this report is 45 days.
 
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
-
->
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="insertion-order-frequency-report__dimensions__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="insertion-order-frequency-report__dimensions__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="insertion-order-frequency-report__dimensions__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="insertion-order-frequency-report__dimensions__entry__4"
-class="entry colsep-1 rowsep-1">Group?</th>
-<th id="insertion-order-frequency-report__dimensions__entry__5"
-class="entry colsep-1 rowsep-1">Filter?</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-hour of the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02-01</code> <code
-class="ph codeph">06:00:00"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-day of the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02-01</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-month of the auction.</p>
-<p>Example: <code class="ph codeph">"2010-02"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-ID of the buying member. If the impression was not purchased, this field
-shows one of the following values: <code class="ph codeph">229</code> =
-PSA, <code class="ph codeph">0</code> = Blank, or <code
-class="ph codeph">319</code> = Default.</p>
-<p>Example: <code class="ph codeph">123</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The ID
-of the insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-ID of the advertiser. If the value is 0, either the impression was
-purchased by an external buyer, or a default or PSA was shown.</p>
-<p>Example: <code class="ph codeph">789</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-ID of the line item.</p>
-<p>Example: <code class="ph codeph">111</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">pixel_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-ID of the pixel.</p>
-<p>Example: <code class="ph codeph">123</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-name of the advertiser.</p>
-<p>Example: <code class="ph codeph">"Verizon Wireless"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">advertiser</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The
-name of the insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The
-custom code for the insertion order.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><p>The
-name of the line item.</p>
-<p>Example: <code class="ph codeph">"Default Line Item"</code></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The
-custom code for the line item.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5"></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">line_item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5"></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order_frequency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The
-bucket for how frequently the insertion order's creatives were
-displayed. See <a
-href="insertion-order-frequency-report.md#insertion-order-frequency-report__Insertion_Order_Frequency_Buckets"
-class="xref">Insertion Order Frequency Buckets</a>.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">Yes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__1">insertion_order_frequency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__3">The ID
-of the insertion order frequency bucket. See <a
-href="insertion-order-frequency-report.md#insertion-order-frequency-report__Insertion_Order_Frequency_Buckets"
-class="xref">Insertion Order Frequency Buckets</a> below for possible
-values.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__4">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__5">No</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Description | Group? | Filter? |
+|:---|:---|:---|:---|:---|
+| `hour` | time | The hour of the auction.<br>**Example:** `"2010-02-01 06:00:00"` | Yes | Yes |
+| `day` | time | The day of the auction.<br>**Example:** `"2010-02-01"` | Yes | Yes |
+| `month` | time | The month of the auction.<br>**Example:** `"2010-02"` | Yes | Yes |
+| `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: `229` = PSA, `0` = Blank, or `319` = Default.<br>**Example:** `123` | Yes | Yes |
+| `insertion_order_id` | int | The ID of the insertion order. | Yes | Yes |
+| `advertiser_id` | int | The ID of the advertiser. If the value is 0, either the impression was purchased by an external buyer, or a default or PSA was shown.<br>**Example:** `789` | Yes | Yes |
+| `line_item_id` | int | The ID of the line item.<br>**Example:** `111` | Yes | Yes |
+| `pixel_id` | int | The ID of the pixel.<br>**Example:** `123` | Yes | Yes |
+| `advertiser_name` | string | The name of the advertiser.<br>**Example:** `"Verizon Wireless"` | No | No |
+| `advertiser` | string | **Deprecated** (as of October 17, 2016). |  |  |
+| `insertion_order_name` | string | The name of the insertion order. | No | No |
+| `insertion_order_code` | string | The custom code for the insertion order. | No | No |
+| `line_item_name` | string | The name of the line item.<br>**Example:** `"Default Line Item"` | No | No |
+| `line_item_code` | string | The custom code for the line item. | No | No |
+| `insertion_order` | string | **Deprecated** (as of October 17, 2016). |  |  |
+| `line_item` | string | **Deprecated** (as of October 17, 2016). |  |  |
+| `insertion_order_frequency_bucket` | string | The bucket for how frequently the insertion order's creatives were displayed. For more details, see [Insertion Order Frequency Buckets](#insertion-order-frequency-buckets) below. | Yes | Yes |
+| `insertion_order_frequency_bucket_id` | int | The ID of the insertion order frequency bucket. For possible values, see [Insertion Order Frequency Buckets](#insertion-order-frequency-buckets) below. | No | No |
 
-**Insertion Order Frequency Buckets**
+### Insertion order frequency buckets
 
-<table class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="insertion-order-frequency-report__dimensions__entry__96"
-class="entry colsep-1 rowsep-1"><strong>Bucket ID</strong></th>
-<th id="insertion-order-frequency-report__dimensions__entry__97"
-class="entry colsep-1 rowsep-1"><strong>Bucket Name</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"no-cookie-date"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"no-cookie"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"0"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">1-21</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">Bucket
-name is the number of times the insertion order's creatives have been
-viewed.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">21</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"21-25"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">22</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"26-30"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">23</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"31-35"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">24</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"36-40"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">25</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"41-45"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">26</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"46-50"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">27</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"51-60"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">28</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"61-70"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">29</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"71-80"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">30</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"81-90"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">31</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"91-100"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">32</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"101-200"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">33</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"201-300"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">34</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"301-400"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">35</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"401-500"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__96">36</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__dimensions__entry__97">"501+"</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Bucket ID | Bucket Name |
+|---|---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"0"` |
+| `1-21` | Bucket name is the number of times the insertion order's creatives have been viewed. |
+| `21` | `"21-25"` |
+| `22` | `"26-30"` |
+| `23` | `"31-35"` |
+| `24` | `"36-40"` |
+| `25` | `"41-45"` |
+| `26` | `"46-50"` |
+| `27` | `"51-60"` |
+| `28` | `"61-70"` |
+| `29` | `"71-80"` |
+| `30` | `"81-90"` |
+| `31` | `"91-100"` |
+| `32` | `"101-200"` |
+| `33` | `"201-300"` |
+| `34` | `"301-400"` |
+| `35` | `"401-500"` |
+| `36` | `"501+"` |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="insertion-order-frequency-report__metrics__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="insertion-order-frequency-report__metrics__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="insertion-order-frequency-report__metrics__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-<th id="insertion-order-frequency-report__metrics__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="insertion-order-frequency-report__metrics__entry__5"
-class="entry colsep-1 rowsep-1">Formula</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-number of impressions (served and resold).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">2437</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">imps</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-number of clicks across all impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">booked_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-revenue booked through direct advertisers (line item).</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">25.6788</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">booked_revenue</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">cpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The cost
-per 1000 impressions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">1.6605</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">(cost /
-imps) x 1000</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-number of post-view and post-click conversions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">9</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">post_click_convs
-+ post_view_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The rate
-of conversions to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002218770</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">total_convs
-/ imps</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">ctr</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The rate
-of clicks to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002218777</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">clicks /
-imps</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">post_view_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-number of recorded post-view converstions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">post_view_convs</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">post_click_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-number of recorded post-click conversions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">4</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">post_click_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">post_click_convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The rate
-of post-click conversion to impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.0002</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">post_click_convs
-/ imps</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">media_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-amount spent.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">100.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">media_cost</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">profit</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-amount of profit.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">190.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">profit</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">profit_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The profit
-as a percentage of the revenue.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.778</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">((booked_revenue
-- media_cost) / imps) * 100</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">revenue_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-revenue per click.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.8256</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">booked_revenue
-/ clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">revenue_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The total
-revenue per conversion.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">5.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">booked_revenue
-/ total_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">cost_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The cost
-per click.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.1834</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">media_cost
-/ clicks</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">cost_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The cost
-per attribution/conversion.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">0.1834</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">media_cost
-/ total_convs</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__1">convs_per_mm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__3">The number
-of conversions per million impressions.</td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__4"><code
-class="ph codeph">221.87708</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="insertion-order-frequency-report__metrics__entry__5">(total_convs
-/ imps) x 1,000,000</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Description | Example | Formula |
+|:---|:---|:---|:---|:---|
+| `imps` | int | The total number of impressions (served and resold). | `2437` | imps |
+| `clicks` | int | The total number of clicks across all impressions. | `1` | clicks |
+| `booked_revenue` | money | The total revenue booked through direct advertisers (line item). | `25.6788` | booked_revenue |
+| `cpm` | money | The cost per 1000 impressions. | `1.6605` | (cost / imps) x 1000 |
+| `total_convs` | int | The total number of post-view and post-click conversions. | `9` | post_click_convs + post_view_convs |
+| `convs_rate` | double | The rate of conversions to impressions. | `0.0002218770` | total_convs / imps |
+| `ctr` | double | The rate of clicks to impressions. | `0.0002218777` | clicks / imps |
+| `post_view_convs` | int | The total number of recorded post-view converstions. | `5` | post_view_convs |
+| `post_click_convs` | int | The total number of recorded post-click conversions. | `4` | post_click_convs |
+| `post_click_convs_rate` | double | The rate of post-click conversion to impressions. | `0.0002` | post_click_convs / imps |
+| `media_cost` | money | The total amount spent. | `100.00` | media_cost |
+| `profit` | money | The total amount of profit. | `190.00` | profit |
+| `profit_ecpm` | money | The profit as a percentage of the revenue. | `0.778` | ((booked_revenue - media_cost) / imps) * 100 |
+| `revenue_ecpc` | money | The total revenue per click. | `0.8256` | booked_revenue / clicks |
+| `revenue_ecpa` | money | The total revenue per conversion. | `5.00` | booked_revenue / total_convs |
+| `cost_ecpc` | money | The cost per click. | `0.1834` | media_cost / clicks |
+| `cost_ecpa` | money | The cost per attribution/conversion. | `0.1834` | media_cost / total_convs |
+| `convs_per_mm` | double | The number of conversions per million impressions. | `221.87708` | (total_convs / imps) x 1,000,000 |
 
+## Examples
 
+### Create the JSON report request
 
->
-
-## Example
-
-**Create the JSON report request**
-
-``` pre
+```
 $ cat insertion_order_frequency
   {
     "report":{
@@ -795,11 +123,11 @@ $ cat insertion_order_frequency
 }
 ```
 
-**`POST` the request to the Report Service**
+### `POST` the request to the Report service
 
 `POST` the JSON request to get back a `report_ID`.
 
-``` pre
+```
 $ curl -b cookies -X post -d @insertion_order_frequency "https://api.appnexus.com/report"
  
 {
@@ -810,21 +138,17 @@ $ curl -b cookies -X post -d @insertion_order_frequency "https://api.appnexus.co
 }
 ```
 
-Alternatively, you can get a `report_id` via a `POST` request using a
-`saved_report_id`.
+Alternatively, you can get a `report_id` via a `POST` request using a `saved_report_id`.
 
-``` pre
-$ curl -b cookies -X POST 'https://api.appnexus.com/report?saved_report_id=30'
+```
+curl -b cookies -X POST 'https://api.appnexus.com/report?saved_report_id=30'
 ```
 
-**`GET` the report status from the Report Service**
+### `GET` the report status from the Report service
 
-Make a `GET` call with the `report_id` to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then, use the **report-download** service to save the report
-data to a file, as described in the next step.
+Make a `GET` call with the `report_id` to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then, use the **report-download** service to save the report data to a file, as described in the next step.
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/report?id=09b6979a6a4c3805bdac8921378d3622'
 
 {
@@ -844,40 +168,16 @@ $ curl -b cookies 'https://api.appnexus.com/report?id=09b6979a6a4c3805bdac892137
 }
 ```
 
-**`GET` the report data from the Report Download Service**
+### `GET` the report data from the Report Download service
 
-To download the report data to a file, make another `GET` call with the
-report ID, but this time to the **report-download** service. You can
-find the service and report ID in the `"url"` field of the response to
-your previous `GET` call. When setting the file to which you want to
-save the report, use the file extension of the `"format"` (e.g., .csv)
-that you specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the `"url"` field of the response to your previous `GET` call. When setting the file to which you want to save the report, use the file extension of the `"format"` (e.g., .csv) that you specified in your initial `POST`.
 
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `\-i` or `\-v` in your call to expose the response header.
 
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `\-i` or `\-v` in your call to expose the response header.
-
-
-
-``` pre
-$ curl -b cookies 'http://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' -o /tmp/insertion_order_frequency.csv
+```
+curl -b cookies 'http://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' -o /tmp/insertion_order_frequency.csv
 ```
 
-
-
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

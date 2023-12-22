@@ -1,93 +1,41 @@
 ---
-Title : Impression Tracker Service
-Description : The Impression Tracker Service gives you a way to track impressions for
+title: Impression Tracker Service
+description: Learn about the Impression Tracker service, its JSON fields, and methods for tracking impressions with third-party ad servers, along with detailed examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-creatives served by third-party ad servers (rather than by AppNexus).
 ---
 
+# Impression Tracker service
 
-# Impression Tracker Service
-
-
-
-The Impression Tracker Service gives you a way to track impressions for
-creatives served by third-party ad servers (rather than by AppNexus).
+The Impression Tracker Service gives you a way to track impressions for creatives served by third-party ad servers (rather than by AppNexus).
 
 Here's how it works:
 
-1.  You use the Impression Tracker Service to create an impression
-    tracker. The impression tracker specifies the line item and
-    publisher to which it is associated. Optionally, it can include the
-    specific placement or payment rule to which it is associated.
-2.  You create an image or JavaScript tag with the url to the impression
-    tracker and ask the ad server to use it as a piggyback pixel for the
-    creative. The impression tracker url must be formatted as
-    <a href="https://ib.adnxs.com/imptr?id=12345" class="xref"
-    target="_blank">https://ib.adnxs.com/imptr?id=12345</a><u>&t=2</u>,
-    where 12345 is the impression tracker ID and "t" represents the
-    pixel type (where t=1 is for javascript and t=2 is for image).
-3.  When the ad server serves the creative, the tracker calls
-    <a href="https://ib.adnxs.com/" class="xref"
-    target="_blank">ib.adnxs.com</a>, and AppNexus records the
-    impression.
+1. You use the Impression Tracker Service to create an impression tracker. The impression tracker specifies the line item and publisher to which it is associated. Optionally, it can include the specific placement or payment rule to which it is associated.
+1. You create an image or JavaScript tag with the url to the impression tracker and ask the ad server to use it as a piggyback pixel for the creative. The impression tracker url must be formatted as [https://ib.adnxs.com/imptr?id=12345&t=2](https://ib.adnxs.com/imptr?id=12345), where 12345 is the impression tracker ID and "t" represents the pixel type (where t=1 is for javascript and t=2 is for image).
+1. When the ad server serves the creative, the tracker calls [ib.adnxs.com](https://ib.adnxs.com/), and AppNexus records the impression.
 
-**Query String Parameters**
+**Query string parameters**
 
-The following parameters can be passed to AppNexus in the query string
-of the impression tracker url:
+The following parameters can be passed to AppNexus in the query string of the impression tracker url:
 
-<table id="buy-side-service-template__table_lsh_51n_wwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_lsh_51n_wwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Parameter</th>
-<th id="buy-side-service-template__table_lsh_51n_wwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__1"><code
-class="ph codeph">cachebuster</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__2">Prevents
-the user's browser from caching the impression tracker url. This
-parameter can be populated by the third-party ad server.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__1"><code
-class="ph codeph">ancost</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__2">The
-media cost you paid for the impression. The parameter can be populated
-by the third-party ad server.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__1"><code
-class="ph codeph">redir</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_lsh_51n_wwb__entry__2">The
-redirect URL that AppNexus will redirect to once the impression has been
-recorded.</td>
-</tr>
-</tbody>
-</table>
+| Parameter | Description |
+|:---|:---|
+| `cachebuster` | Prevents the user's browser from caching the impression tracker url. This parameter can be populated by the third-party ad server. |
+| `ancost` | The media cost you paid for the impression. The parameter can be populated by the third-party ad server. |
+| `redir` | The redirect URL that AppNexus will redirect to once the impression has been recorded. |
 
-**Image Tag Example**
+**Image tag example**
 
-``` pre
+```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
 <img src="media/imptr?id=531&cachebuster=[CACHEBUSTER]&ancost=[ANCOST]" width="1" height="1" />
 <!-- End of Imp Tracker -->
 ```
 
-**JavaScript Tag Example**
+**JavaScript tag example**
 
-``` pre
+```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
 <script src="https://ib.adnxs.net/imptr?id=531&cachebuster=[CACHEBUSTER]&ancost=[ANCOST]" type="text/javascript"></script>
 <!-- End of Imp Tracker -->
@@ -95,485 +43,76 @@ recorded.</td>
 
 **Reporting**
 
-You can report on your external impressions using the
-<a href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Network Analytics</a>, <a
-href="network-publisher-analytics.md"
-class="xref" target="_blank">Network Publisher Analytics</a>, and
-<a href="https://docs.xandr.com/csh?context" class="xref"
-target="_blank">Publisher Analytics</a> reports.
-
-
+You can report on your external impressions using the [Network Analytics](network-analytics.md), [Network Publisher Analytics](network-publisher-analytics.md), and [Publisher Analytics](publisher-analytics.md) reports.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | [https://api.appnexus.com/imptracker?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/imptracker?advertiser_id=ADVERTISER_ID)<br>(imptracker JSON) | Add an impression tracker. |
+| `PUT` | [https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID](https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID)<br>(imptracker JSON) | Modify an impression tracker. |
+| `GET` | [https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID](https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID) | View an impression tracker. |
+| `GET` | [https://api.appnexus.com/imptracker?id=1,2,3](https://api.appnexus.com/imptracker?id=1,2,3) | View multiple impression trackers by ID using a comma-separated list. |
+| `DELETE` | [https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID](https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID) | Delete an impression tracker. |
 
+## JSON fields
 
-<table
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th
-id="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/imptracker?advertiser_id=ADVERTISER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/imptracker?advertiser_id=ADVERTISER_ID</a>(imptracker
-JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Add
-an impression tracker.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID</a>(imptracker
-JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Modify
-an impression tracker.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-an impression tracker.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/imptracker?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/imptracker?id=1,2,3</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">View
-multiple impression trackers by ID using a comma-separated list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__2"><a
-href="https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/imptracker?id=IMP_TRACKER_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-0c8f77fc-8abc-474f-a141-c80903bb86d8__entry__3">Delete
-an impression tracker.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the impression tracker.<br>**Default:** Auto-incremented number (i.e., 123).<br>**Required On:** `PUT`/`DELETE`, in query string. |
+| `member_id` | int | The ID of the member to which the advertiser belongs.<br>**Read Only.** |
+| `advertiser_id` | int | The ID of the advertiser that owns the impression tracker.<br>**Required On:** `POST`, in query string. |
+| `name` | string | The name for the impression tracker.<br>**Required On:** `POST` |
+| `code` | string | The custom code for the impression tracker. |
+| `state` | enum | The state of the impression tracker. <br>Possible values: `"active"` or `"inactive"`.<br>**Default:** `"active"` |
+| `publisher` | object | The publisher to which the impression tracker is associated. For more details, see [Publisher](#publisher) below.<br>**Required On:** `POST` |
+| `tag` | array | The placement to which the impression tracker is associated. For more details, see [Tag](#tag) below. |
+| `payment_rule` | object | The payment rule to which the impression tracker is associated. For more details, see [Payment Rule](#payment-rule) below. |
+| `line_item` | object | The advertiser line item to which the impression tracker is associated. For more details, see [Line Item](#line-item) below.<br>**Required On:** `POST` |
+| `clicktracker` | object | Not currently in use. |
+| `last_modified` | timestamp | The date and time when the impression tracker was last modified.<br>**Read Only.** |
 
+### Publisher
 
+You can use the [Publisher Service](publisher-service.md) to get information about publishers.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the publisher to which the impression tracker is associated. |
+| `name` | string | The name of the publisher to which the impression tracker is associated.<br>**Read Only.** |
 
+### Tag
 
+You can use the [Placement Service](placement-service.md) to get information about placements.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the placement to which the impression tracker is associated. |
+| `name` | string | The name of the placement to which the impression tracker is associated.<br>**Read Only.** |
 
-## JSON Fields
+### Payment rule
 
+You can use the [Payment Rule Service](payment-rule-service.md) to get information about payment rules.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the payment rule to which the impression tracker is associated. |
+| `name` | string | The name of the payment rule to which the impression tracker is associated.<br>**Read Only.** |
 
-<table
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the impression tracker.</p>
-<ul>
-<li><strong>Default:</strong> Auto-incremented number (i.e., 123).</li>
-<li><strong>Required On:</strong> <code
-class="ph codeph">PUT/DELETE,</code> in query string.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the member to which the advertiser belongs.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the advertiser that owns the impression tracker.</p>
-<ul>
-<li><strong>Required On:</strong> <code class="ph codeph">POST,</code>
-in query string.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-name for the impression tracker.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-custom code for the impression tracker.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-state of the impression tracker. Possible values: "active" or
-"inactive".</p>
-<ul>
-<li><strong>Default</strong> - <code
-class="ph codeph">"active"</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">publisher</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-publisher to which the impression tracker is associated. See <a
-href="impression-tracker-service.md#ImpressionTrackerService-Publisher"
-class="xref" target="_blank">Publisher</a> below for more details.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">tag</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-placement to which the impression tracker is associated. See <a
-href="impression-tracker-service.md#ImpressionTrackerService-Tag"
-class="xref" target="_blank">Tag</a> below for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">payment_rule</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">The
-payment rule to which the impression tracker is associated. See <a
-href="impression-tracker-service.md#ImpressionTrackerService-PaymentRule"
-class="xref" target="_blank">Payment Rule</a> below for more
-details.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">line_item</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-advertiser line item to which the impression tracker is associated. See
-<a
-href="impression-tracker-service.md#ImpressionTrackerService-LineItem"
-class="xref" target="_blank">Line Item</a> below for more details.</p>
-<ul>
-<li><strong>Required On:</strong> <code
-class="ph codeph">POST</code></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">clicktracker</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">Not
-currently in use.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-date and time when the impression tracker was last modified.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
+### Line item
 
+You can use the [Line Item Service](line-item-service.md) to get information about line items.
 
-
-**Publisher**
-
-You can use the <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a> to get information
-about publishers.
-
-<table id="buy-side-service-template__table_vx2_hbn_wwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_vx2_hbn_wwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_vx2_hbn_wwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_vx2_hbn_wwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__3">The ID
-of the publisher to which the impression tracker is associated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_vx2_hbn_wwb__entry__3"><p>The
-name of the publisher to which the impression tracker is associated.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
-
-**Tag**
-
-You can use the <a
-href="placement-service.md"
-class="xref" target="_blank">Placement Service</a> to get information
-about placements.
-
-<table id="buy-side-service-template__table_wx2_hbn_wwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_wx2_hbn_wwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_wx2_hbn_wwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_wx2_hbn_wwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__3">The ID
-of the placement to which the impression tracker is associated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_wx2_hbn_wwb__entry__3"><p>The
-name of the placement to which the impression tracker is associated.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
-
-**Payment Rule**
-
-You can use the <a
-href="payment-rule-service.md"
-class="xref" target="_blank">Payment Rule Service</a> to get information
-about payment rules.
-
-<table id="buy-side-service-template__table_xx2_hbn_wwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_xx2_hbn_wwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_xx2_hbn_wwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_xx2_hbn_wwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__3">The ID
-of the payment rule to which the impression tracker is associated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_xx2_hbn_wwb__entry__3"><p>The
-name of the payment rule to which the impression tracker is
-associated.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
-
-**Line Item**
-
-You can use the <a
-href="line-item-service.md"
-class="xref" target="_blank">Line Item Service</a> to get information
-about line items.
-
-<table id="buy-side-service-template__table_yx2_hbn_wwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="buy-side-service-template__table_yx2_hbn_wwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="buy-side-service-template__table_yx2_hbn_wwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="buy-side-service-template__table_yx2_hbn_wwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__3">The ID
-of the line item to which the impression tracker is associated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="buy-side-service-template__table_yx2_hbn_wwb__entry__3"><p>The
-name of the line item to which the impression tracker is associated.</p>
-<p><strong>Read Only.</strong></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the line item to which the impression tracker is associated. |
+| `name` | string | The name of the line item to which the impression tracker is associated.<br>**Read Only.** |
 
 ## Examples
 
-**Creating a new impression tracker**
+### Creating a new impression tracker
 
->
-
-``` pre
+```
 $ cat imptracker
 
 {
@@ -620,14 +159,11 @@ $ curl -b cookies -c cookies -X POST -d @imptracker 'https://api.appnexus.com/im
 }
 ```
 
+### Updating an impression tracker
 
+In this example, the `PUT` request associates a placement to impression tracker 1425.
 
-**Updating an impression tracker**
-
-In this example, the PUT request associates a placement to impression
-tracker 1425.
-
-``` pre
+```
 $ cat imptracker_update
 {
     "imptracker": {
@@ -672,9 +208,9 @@ $ curl -b cookies -c cookies -X PUT -d @imptracker_update 'https://api.appnexus.
 }
 ```
 
-**Viewing impression tracker 582**
+### Viewing impression tracker 582
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?id=582'
 
 {
@@ -706,9 +242,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?id=582'
 }
 ```
 
-**Viewing all impression trackers for advertiser 35081**
+### Viewing all impression trackers for advertiser 35081
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?advertiser_id=35081'
 
 {
@@ -760,9 +296,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?advertiser_id=
     }
 }
 ```
-
-
-
-
-
-
