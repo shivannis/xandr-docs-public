@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Google Ad Manager
 description: In this article, learn the requirements for running ads on the Google Ad Manager, along with external links for more information.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Google Ad Manager
