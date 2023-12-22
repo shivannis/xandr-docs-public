@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Postal Code Lists
 description: In this article, understand how postal code lists help in hyperlocal targeting, how to manage postal code lists, and how to target postal code lists.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Postal code lists
