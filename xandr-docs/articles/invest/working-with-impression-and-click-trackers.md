@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Impression and Click Trackers
-description : Learn more about working with impression and click trackers.
+title: Microsoft Invest - Working with Impression and Click Trackers
+description: Learn more about working with impression and click trackers.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with impression and click trackers
