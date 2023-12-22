@@ -1,5 +1,5 @@
 ---
-title : Outgoing Bid Response to SSPs
+title: Outgoing Bid Response to SSPs
 description: Learn about Outgoing Bid Response to SSPs.
 ms.custom: supply-partners
 ms.date: 10/28/2023
