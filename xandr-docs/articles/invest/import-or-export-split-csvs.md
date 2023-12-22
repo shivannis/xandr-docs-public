@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Import or Export Split CSVs
 description: In this article, learn how to create or edit splits in bulk by importing a CSV specifying the details of your splits, the CSV rules, and details about the split settings.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Import or export split CSVs
