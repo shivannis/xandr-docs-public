@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Explore Splits
 description: In this article, follow our step-by-step instructions to run a report on a specific split or multiple splits under a specific line item.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Explore splits
