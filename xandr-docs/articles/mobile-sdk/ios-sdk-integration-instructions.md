@@ -44,8 +44,8 @@ There are five ways to get our SDK:
 - [CocoaPods](#CocoaPods)
 - [Carthage](#Carthage)
 - [Download from source](#Download-from-source)
-- XCFramework
-- Swift Package Manager
+- [XCFramework](#XCFramework)
+- [Swift Package Manager](#Swift-Package-Manager)
 
 #### CocoaPods
 
