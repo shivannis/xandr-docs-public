@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Guaranteed Outcomes Auction Mechanics
 description: Learn how an auction works when a buyer submits an outcome-based bid using Guaranteed Outcomes.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Guaranteed Outcomes auction mechanics
