@@ -1,6 +1,6 @@
 ---
 title : Microsoft Invest - Configure a Programmable Split
-description : Learn how to use programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. 
+description: Learn how to use programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. 
 ms.date: 10/28/2023
 ---
 
