@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Requirements for Filing a Support Case for Report Discrepancies
 description: In this article, learn about the requirements to collect reports and file a report discrepancy case with Product Support.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Requirements for filing a support case for report discrepancies
