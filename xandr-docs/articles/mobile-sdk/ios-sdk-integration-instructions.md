@@ -54,7 +54,6 @@ If you are unfamiliar with CocoaPods review their [installation and user guides
   ``` 
   pod init
   ```
-
 1. Using a text editor, open the newly created podfile. Set the platform version to 10.0 and add pod 'AppNexusSDX' to the target.
 
   ``` 
