@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Political Advertising
 description: In this article, learn how to enable political advertising, and the restrictions and requirements for political advertising.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Political advertising
