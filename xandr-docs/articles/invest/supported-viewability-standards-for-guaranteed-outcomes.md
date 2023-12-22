@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Supported Viewability Standards for Guaranteed Outcomes
 description: In this article, learn the viewability standards supported for guaranteed outcomes.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Supported viewability standards for guaranteed outcomes
