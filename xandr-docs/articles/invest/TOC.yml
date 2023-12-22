@@ -2,7 +2,7 @@
   href: index.yml
 - name: Getting Started
   items:
-    - name: About Invest DSP
+    - name: About Microsoft Invest
       href: about-invest.md
     - name: Object Hierarchy
       href: object-hierarchy.md
