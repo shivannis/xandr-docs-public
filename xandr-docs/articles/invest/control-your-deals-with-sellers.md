@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Control Your Deals with Sellers
-description : Learn how to control deals received from sellers on the Deals screen. You can set deal review preferences, accept or decline deals, manage status and assign a deal alias.
+title: Microsoft Invest - Control Your Deals with Sellers
+description: Learn how to control deals received from sellers on the Deals screen. You can set deal review preferences, accept or decline deals, manage status and assign a deal alias.
 ms.date: 10/28/2023
 ---
 
