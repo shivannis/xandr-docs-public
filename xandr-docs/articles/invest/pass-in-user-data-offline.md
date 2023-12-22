@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Pass in User Data Offline
-description : Learn to make data accessible, that lives in your ad server or data warehouse today, to your ad campaigns. 
+title: Microsoft Invest - Pass in User Data Offline
+description: Learn to make data accessible, that lives in your ad server or data warehouse today, to your ad campaigns. 
+ms.date: 10/28/2023
 ---
 
 
