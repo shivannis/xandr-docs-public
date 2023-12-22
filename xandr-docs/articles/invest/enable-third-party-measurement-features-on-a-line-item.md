@@ -1,6 +1,7 @@
 ---
 title: Enable Third-Party Measurement Features on a Line Item 
 description: Find resources for third-party measurement features from vendors that can be integrated into augmented line items.
+ms.date: 10/28/2023
 ---
 
 # Enable third-party measurement features on a line item
