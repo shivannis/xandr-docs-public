@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Introduction to Viewability
 description: In this article, learn why viewability is important, how it works, and current Xandr support for viewability.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Introduction to viewability
