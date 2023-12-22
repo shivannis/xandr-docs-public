@@ -1,15 +1,11 @@
 ---
-Title : Buying Microsoft Inventory
-Description : With **Microsoft Advertising Exchange**, Xandr
+title : Microsoft Monetize -  Buying Microsoft Inventory
+description : This page tells us how to target Microsoft Inventory and documentation links to learn more about buying specific Microsoft inventory.
 ms.date: 10/28/2023
-offers exclusive programmatic access to a quality, engaged audience in a
-brand safe environment.
 ---
 
 
-# Buying Microsoft Inventory
-
-
+# Microsoft Monetize -  Buying Microsoft inventory
 
 With **Microsoft Advertising Exchange**, Xandr
 offers exclusive programmatic access to a quality, engaged audience in a
@@ -21,73 +17,48 @@ brand safe environment.
 - Know where all your ads are running with top level domain transparency
 - Access real users in immersive and engaging environments
 
+> [!NOTE]
+> Microsoft has a Creative Acceptance Policy that applies to all advertisements on all Microsoft platforms and properties. For more details, see [Microsoft Windows Inventory Policies](https://about.ads.microsoft.com/en-us/policies/home).
 
-
-<b>Note:</b> Microsoft has a Creative
-Acceptance Policy that applies to all advertisements on all Microsoft
-platforms and properties. For more details, see <a
-href="https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies"
-class="xref" target="_blank">Microsoft Windows Inventory Policies</a>.
-
-
-
-Targeting Microsoft Inventory
+## Targeting Microsoft inventory
 
 To target Microsoft inventory, you need to create an inventory list that
 includes the **Microsoft Advertising Exchange (280)** advertiser. See
-<a href="inventory-lists-ali-only.md" class="xref">Inventory Lists
-(ALI)</a> for full details.
+[Inventory Lists(ALI)](inventory-lists-ali-only.md) for full details.
 
+> [!NOTE]
+> **For Standard (Legacy) Line Item Targeting**
+> 1. On the **3rd Party Inventory** tab, select **Sellers**.
+> 1. Enter **Microsoft Advertising Exchange (280)**.
+> 1. Select the **Include**.
+> 1. Click **Add**.
 
-
-<b>Note:</b> **For Standard (Legacy) Line Item
-Targeting**
-
-1.  On the 3rd Party Inventory tab,
-    select Sellers.
-2.  Enter **Microsoft Advertising Exchange (280)**.
-3.  Select the **Include**.
-4.  Click Add.
-
-
-
-Buying from Specific Microsoft Publishers
+## Buying from specific Microsoft publishers
 
 Use the following documentation to learn more about buying specific
 Microsoft inventory:
 
-- <a href="buying-microsoft-outlook-com-inventory.md" class="xref"
-  title="You can buy Microsoft Outlook.com inventory on the Xandr platform.">Buying
-  Microsoft Outlook.com Inventory</a>  
+- [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md)
 
   Over 1.4 billion monthly US display impressions, available in 38
   markets.
 
-- <a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
-  class="xref">Buying Microsoft Windows 3rd Party AppNetwork Inventory</a>  
+- [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md) 
 
   Over 300 million monthly global impressions.
 
-- <a href="buying-msn-inventory.md" class="xref">Buying MSN
-  Inventory</a>  
+- [Buying MSN Inventory](buying-msn-inventory.md)
 
   Over 4.8 billion monthly US display impressions, available in 45
   markets.
 
-- <a href="buying-microsoft-deals.md" class="xref"
-  title="You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory using our Package Marketplace.">Buying
-  Microsoft Deals</a>  
+- [Buying Microsoft Deals](buying-microsoft-deals.md)
 
   Browse Microsoft's pre-made combinations of inventory and/or data and
   immediately convert them into deals or use them as a starting point
   for custom deal negotiations.
 
-- <a href="buying-microsoft-casual-games-windows-o-o-apps.md"
-  class="xref">Buying Microsoft Casual Games (Windows O&amp;O Apps)</a>  
+- [Buying Microsoft Casual Games (Windows O&amp;O Apps)](buying-microsoft-casual-games-windows-o-o-apps.md) 
 
   Over 2.63 billion monthly global impressions, available in 169
   markets.
-
-
-
-
