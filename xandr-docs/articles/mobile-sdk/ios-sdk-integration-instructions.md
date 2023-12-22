@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # iOS SDK integration instructions
 
-This page describes how to integrate our SDK with your project. Follow the instructions in this page to set up our SDK to show ads in your app. For instructions on showing different ad types, see our various [ad unit](ios-sdk-ad-units.md) pages.
+This page describes how to integrate Mobile SDK with your project. Follow the instructions in this page to set up Mobile SDK to show ads in your app. For instructions on showing different ad types, see our various [ad unit](ios-sdk-ad-units.md) pages.
 
 ## Requirements
 
