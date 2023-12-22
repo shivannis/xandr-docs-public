@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Update Creatives in bulk
-description : Learn to update a variety of settings for individual or multiple creatives from the Creative Manager.
+title: Microsoft Invest - Update Creatives in bulk
+description: Learn to update a variety of settings for individual or multiple creatives from the Creative Manager.
+ms.date: 10/28/2023
 ---
 
 
