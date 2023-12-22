@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Planner Analytics
-description : Learn about planner visualizations and how it can help your media plan and you understand the capability of specific campaigns.
+title: Microsoft Invest - Planner Analytics
+description: Learn about planner visualizations and how it can help your media plan and you understand the capability of specific campaigns.
+ms.date: 10/28/2023
 ---
 
 
