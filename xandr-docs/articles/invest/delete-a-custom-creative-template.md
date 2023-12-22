@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Delete a Custom Creative Template
 description: In this article, explore the detailed step-by-step instructions on how to delete a custom creative template at any given time.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Delete a custom creative template
