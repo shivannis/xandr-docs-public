@@ -44,7 +44,7 @@ given auction attribute, only one of those fields is required. For
 example, in order for a request to pass the "Tag ID" criterion for "Web
 Banner Criteria", either site.id or imp.tagid needs to be passed.
 
-**Web banner criteria**
+###Web banner criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ Banner Criteria", either site.id or imp.tagid needs to be passed.
 |  Device Data | device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |
 |  Device Data| device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
 
-**Web video criteria**
+###Web video criteria###
 
 | Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ consistent.
 | VPAID1 | imp.video.mimes<br>imp.video.api | If the imp.video.mimes array contains value "1" for VPAID1, then the imp.video.mimes array must contain either contain value "application/x-shockwave-flash" or be empty, in which case all mime types are assumed to be supported | 95% |
 | VPAID2 | imp.video.mimes<br>imp.video.api | If the imp.video.mimes array contains value "2" for VPAID2, then the imp.video.mimes array must contain either contain value "application/x-shockwave-flash", or "application/javascript" or be empty, in which case all mime types are assumed to be supported | 95% |
 
-**Web audio criteria**
+###Web audio criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -122,7 +122,7 @@ consistent.
 | Device Data | device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |
 |  Device Data| device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
 
-**Web native criteria**
+###Web native criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -143,7 +143,7 @@ consistent.
 | Asset ID | native.request.assets.id |  |  |  |
 | Title Asset | native.request.assets.title | object | The Title object is to be used for title element of the Native ad. | 95% |
 
-**App banner criteria**
+###App banner criteria###
 
 |   Auction Attribute | OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -160,7 +160,7 @@ consistent.
 | Device Data | device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the ua field. |  |
 |Device Data  | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
 
-**App video criteria**
+###App video criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -193,7 +193,7 @@ consistent.
 | VPAID1 | imp.video.mimes<br>imp.video.api | If the imp.video.mimes array contains value "1" for VPAID1, then the imp.video.mimes array must contain either contain value "application/x-shockwave-flash" or be empty, in which case all mime types are assumed to be supported | 95% |
 | VPAID2 | imp.video.mimes<br>imp.video.api | If the imp.video.mimes array contains value "2" for VPAID2, then the imp.video.mimes array must contain either contain value "application/x-shockwave-flash", or "application/javascript" or be empty, in which case all mime types are assumed to be supported | 95% |
 
-**App audio criteria**
+###App audio criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -215,7 +215,7 @@ consistent.
 |  Device Data| device.devicetype | string | Specifies the type of device, using IAB values:<br>- `1`: Mobile/Tablet<br>- `2`: Personal Computer<br>- `3`: Connected TV<br>- `4`: Phone<br>- `5`: Tablet<br>- `6`: Connected Device<br>- `7`: Set Top Box<br>Only used if not supported via the `ua` field. |  |
 | Device Data | device.make | string | Specifies the make of the device. Only used if the model is not passed in, is not valid, or is not available via parsing the `ua` field. Use the [Device Make Service](../digital-platform-api/device-make-service.md) to view the makes registered in the Xandr system. |  |
 
-**App native criteria**
+###App native criteria###
 
 |  Auction Attribute | Required OpenRTB Field | Type | Description | Threshold |
 |---|---|---|---|---|
@@ -237,7 +237,7 @@ consistent.
 
 ## Example bid requests
 
-**Web banner request**
+###Web banner request###
 
 ``` pre
 {
@@ -273,7 +273,7 @@ consistent.
 }
 ```
 
-**App banner requests**
+###App banner requests###
 
 ``` pre
 {
@@ -309,7 +309,7 @@ consistent.
 }
 ```
 
-**Web video requests**
+###Web video requests###
 
 ``` pre
  {
@@ -360,7 +360,7 @@ consistent.
 }
 ```
 
-**App video requests**
+###App video requests###
 
 ``` pre
  {
