@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Select an Audit Option for a Creative
 description: This article provides instructions to let you specify if you want to audit your own creatives or whether the platform can audit them.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Select an audit option for a creative
