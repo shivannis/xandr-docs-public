@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Targeting
 description: This article provides instructions for targeting video inventory based on the position, playback method, and player width.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video targeting
