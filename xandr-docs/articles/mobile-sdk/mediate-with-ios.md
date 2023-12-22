@@ -52,7 +52,9 @@ If you use the following adaptor, you need to initialize the adaptor's SDK as ea
 > [!NOTE]
 > The instructions in this section are only needed if you are doing native mediation. Mediating banners and interstitials should not require any initialization code or further work.
 
-**To handle AdMob native ads, you need to create a native ad view that inherits from GADNativeAdView:**
+To handle AdMob native ads, you need to:
+1. Create a native ad view
+Create a native ad view that inherits from GADNativeAdView:
 
 ```
 #pragma mark - ANNativeAdRequestDelegate
@@ -72,15 +74,15 @@ If you use the following adaptor, you need to initialize the adaptor's SDK as ea
    }
 }
 ```
+> [!NOTE]
+> For SDK v5.3 and higher, you need to specify the GADIsADManagerApp key in the app's info.plist with a boolean YES value.
 
-For SDK v5.3 and higher, you need to specify the GADIsADManagerApp key in the app's info.plist with a boolean YES value.
+> ```
+> <key>GADIsAdManagerApp</key>
+>  <true/>
+> ```
 
-```
-<key>GADIsAdManagerApp</key>
- <true/>
-```
-
-**Setting the custom keyword**
+2. Set up the custom keyword
 
 For passing the content URL to the Google SDK, the content url needs to be passed as a custom keyword with the requester ad object (BannerAdView, InterstitialAdView, NativeAdRequest). The key to be used is `content_url`. Here is an example:
 
