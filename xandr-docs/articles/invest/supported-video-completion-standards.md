@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Supported Video Completion Standards
 description: In this article, learn the standards supported for video completion.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Supported video completion standards
