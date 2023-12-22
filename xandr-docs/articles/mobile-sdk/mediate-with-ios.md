@@ -7,13 +7,13 @@ ms.date : 10/28/2023
 
 # Mediate with iOS
 
-Mediation lets you sell ad impressions through multiple networks to generate more revenue. This is initiated by your main (mediating) SDK which calls out to one or more mediated SDKs in a "waterfall"-like process. If your main SDK can't show an ad for some reason, it can iterate over the list of mediated SDKs and contact them in the order you specify. This will continue until the impression is filled or you've run out of mediated SDKs.
+<!--Mediation lets you sell ad impressions through multiple networks to generate more revenue. This is initiated by your main (mediating) SDK which calls out to one or more mediated SDKs in a "waterfall"-like process. If your main SDK can't show an ad for some reason, it can iterate over the list of mediated SDKs and contact them in the order you specify. This will continue until the impression is filled or you've run out of mediated SDKs.
 
 Reasons to mediate to another SDK include the following:
 
 - To provide better monetization under specific circumstances
 - To provide access to information such as a unique user ID or the device's operating system, location, or ID
-- Some networks only accept requests from their own SDKs, forcing you to use their SDK to access their demand
+- Some networks only accept requests from their own SDKs, forcing you to use their SDK to access their demand -->
 
 ## Supported networks and media types
 
