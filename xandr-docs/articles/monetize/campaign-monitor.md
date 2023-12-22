@@ -129,7 +129,7 @@ You can also click through directly to any creatives that may be causing alerts.
 
 There are a few tweaks you can make during line item and campaign set up to improve how helpful the Campaign Monitor is to you.
 
-## Pacing bars
+## Display of pacing bars
 
 Pacing bars can only be displayed if we can decipher how long the line item or campaign will run and how much budget you have for that time (whether an impression budget, a revenue budget, or a media cost budget). Putting in definitive flight dates at the line item level or on all campaigns will allow you to view a pacing bar. Also, setting lifetime budgets, as opposed to choosing "unlimited," will also allow us to display more information in the pacing bar.
 Setting these budgets at the line item level is best, but if that doesn't fit the model of your business, setting a budget on all campaigns associated with a line item allows us to add up the campaign budgets to create a line item level.

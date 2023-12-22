@@ -1,6 +1,6 @@
 ---
 title: Buying Strategies
-Description: The article explains buying strategies that are are required if your campaign is set to buy third-party inventory (inventory not directly managed by you).
+description: The article explains buying strategies that are are required if your campaign is set to buy third-party inventory (inventory not directly managed by you).
 ms.date: 10/28/2023
 ---
 
