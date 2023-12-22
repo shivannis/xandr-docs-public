@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Monthly Prediction Variability Data
 description: This page shares the resulting monthly prediction variability rates for applicable transactions on the platform.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Monthly prediction variability data
