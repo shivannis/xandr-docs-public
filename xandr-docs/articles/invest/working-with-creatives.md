@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Working with Creatives
-description : In this article learn how to work with Creatives. 
+title: Microsoft Invest - Working with Creatives
+description: In this article learn how to work with Creatives. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Working with creatives
