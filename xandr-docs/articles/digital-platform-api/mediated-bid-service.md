@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Mediated bid service
 
 > [!NOTE]
-> Only available to Monetize Ad Server customers.
+> Only available to Microsoft Monetize Ad Server customers.
 
 This service is used to create and view mediated bids. Mediated bids are an abstraction over a particular line item, campaign, and creative combination that we've created to represent demand from mediated networks in our auction.
 
@@ -43,7 +43,7 @@ Every bid is associated with a mediated network. For more information about medi
 | `mediated_network_id` | int | The unique ID of the mediated network to which this bid is associated. For field definitions, see the [Mediated Network Service](./mediated-network-service.md).<br><br>**Required On**: `POST` |
 | `campaign` | object | Information about the campaign to which this bid is associated. For field definitions, see the [Campaign Service](./campaign-service.md). |
 | `line-item` | object | Information about the line item to which this bid is associated. For field definitions, see the [Line Item Service](./line-item-service.md).<br><br>**Required On**: `POST` |
-| profi``le | object | Information about the profile to which this bid is associated. For field definitions, see the [Profile Service](./profile-service.md). |
+| `profile` | object | Information about the profile to which this bid is associated. For field definitions, see the [Profile Service](./profile-service.md). |
 | `creative` | object | Information about the creative associated with this bid. For field definitions, see the [Creative Service](./creative-service.md).<br><br>**Required On**: `POST` |
 | `reporting_macros` | array of objects | See the [Reporting Macros](#reporting-macros) section below. |
 | `label` | array of objects | The user-supplied label attached to this bid. This is an arbitrary string with no purpose other than sorting in the UI. |

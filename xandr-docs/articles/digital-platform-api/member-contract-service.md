@@ -42,7 +42,7 @@ The Member Contract Service allows Xandr Sales Op admins to view, create, update
 
 ## JSON fields
 
-There is a large intersection between the sets of required fields depending on whether the `pricing_version` is `"2007.09.01"` (marked below as `OLD`) or `"2013.01.02"` (marked below as `NEW`); only those fields that differ between pricing versions are marked as such in the Old or New? column.
+There is a large intersection between the sets of required fields depending on whether the `pricing_version` is `"2007.09.01"` (marked below as `OLD`) or `"2013.01.02"` (marked below as `NEW`); only those fields that differ between pricing versions are marked as such in the **Old or New?** column.
 
 | Field | Type | Description |
 |:---|:---|:---|

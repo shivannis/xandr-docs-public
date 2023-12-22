@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Mediated Network Service
 
 > [!NOTE]
-> Only available to Monetize Ad Server customers.
+> Only available to Microsoft Monetize Ad Server customers.
 
 This service is used to create and maintain mediated networks.
 
@@ -30,10 +30,10 @@ Use this service to define your integration with an external network.
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The system-generated unique ID for this network.<br><br>**Required On**: `PUT` |
-| `name` | string | The name of the network, as supplied by the user.<br>u<br>**Required On**: `POST` |
+| `name` | string | The name of the network, as supplied by the user.<br><br>**Required On**: `POST` |
 | `credentials` | string | **Read-only**. A system-generated unique value that securely identifies the network. Credentials are encrypted after a `POST` or `PUT` and cannot be decrypted. |
 | `advertiser_id` | int | **Read-only**. The unique, system-generated ID of the advertiser associated with this mediated network. |
-| `member_id` | int | **Read-only**. Every advertiser object in our system is associated with a parent [member](./member-service.md). The unique, system-generated ID of the member to which the advertiser described by advertiser_id belongs. (And by extension, this mediated network as well.) |
+| `member_id` | int | **Read-only**. Every advertiser object in our system is associated with a parent [member](./member-service.md). The unique, system-generated ID of the member to which the advertiser described by `advertiser_id` belongs. (And by extension, this mediated network as well.) |
 | `active` | boolean | Active mediation networks target and purchase media in auctions.<br><br>**Default**: `false` |
 | `is_data_integration_active` | boolean | Whether reporting data is currently being pulled from this network's systems into ours.<br><br>**Default**: `false` |
 | `creative_custom_request_partner_id` | int | The *Creative Custom Request Partner* this mediated network is associated with.<br><br>**Required On**: `POST` |

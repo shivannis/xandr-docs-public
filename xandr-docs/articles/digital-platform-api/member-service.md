@@ -1,11 +1,11 @@
 ---
-title: Member Service
+title: Digital Platform API - Member Service
 description: This article provides information on member service. Each member has multiple users with their own UI and API credentials managed by the User Service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Member service
+# Digital Platform API - Member service
 
 A member is any entity that has a financial relationship with Xandr, and each client is a single member. Members are registered with the Member Service by Xandr personnel, and all API activity must be associated with a member. Note that the Member Service does not grant API or UI access. Each member has multiple users who have their own UI and API credentials, and are managed by the [User Service](./user-service.md).
 
@@ -20,7 +20,7 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `GET` | https://api.appnexus.com/member?id=MEMBER_ID | View a particular member, if you have multiple |
 | `GET` | https://api.appnexus.com/member/meta | Find out which fields you can filter and sort by |
 | `PUT` | https://api.appnexus.com/member?id=MEMBER_ID | Modify an existing member |
-| `POST` | https://api.appnexus.com/member | Add a new member (Admin-only) |
+| `POST` | https://api.appnexus.com/member | Add a new member (**Admin-only**) |
 
 ## JSON fields
 
@@ -66,7 +66,7 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `entity_type` | enum | **Admin-only**. A legacy field that may be used in the future. Possible values: `"reseller"` or `"direct"` (deprecated).<br><br>**Default**: `"reseller"` |  |  |  |  |  |  |  |  |  |
 | `expose_eap_ecp_placement_settings` | Boolean | **Deprecated as of March 2011**. |  |  |  |  |  |  |  |  |  |
 | `expose_optimization_levers` | Boolean | **Admin-only**. If `true`, optimization levers are shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
-| `floor_optimization` | array of objects | **Read-only**. Indicates if floor optimization is enabled for this member and provides the bidder ID of a real-time price provider. See **Floor Optimization** below for the definitions of the objects in this array. May also be set to `null` to disable the feature. |  |  |  |  |  |  |  |  |  |
+| `floor_optimization` | array of objects | **Read-only**. Indicates if floor optimization is enabled for this member and provides the bidder ID of a real-time price provider. See [Floor Optimization](#floor-optimization) below for the definitions of the objects in this array. May also be set to `null` to disable the feature. |  |  |  |  |  |  |  |  |  |
 | `id` | int | The ID of the member.<br><br>**Required on**: `PUT` |  |  |  |  |  |  |  |  |  |
 | `interface_domain` | string(100) | **This field is being deprecated**. |  |  |  |  |  |  |  |  |  |
 | `interface_domain_beta` | string(100) | **This field is being deprecated**. |  |  |  |  |  |  |  |  |  |
@@ -81,15 +81,15 @@ A member is any entity that has a financial relationship with Xandr, and each cl
 | `no_reselling_priority` | int | This value is used to determine whether RTB bids are allowed to compete with your managed campaigns. In order for an RTB bid to be able to compete with a managed bid for an impression, this field's value must be greater than the priority of the managed bid.<br><br>For example, let's say you have the following [auction and settings](#auction-and-settings-for-no_reselling_priority). In this example, the RTB bid will not compete, even though its bid price is higher. In order for RTB to compete on this impression, `no_reselling_priority` would have to be 9 or higher.<br><br>In addition, when reselling is allowed for an impression, the highest priority standard managed demand will be allowed to compete with the highest priority guaranteed demand (as well as with RTB). |
 | `pitbull_segment_id` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
 | `pitbull_segment_value` | int | **Note**: This field has been deprecated. |  |  |  |  |  |  |  |  |  |
-| `platform_exposure` | enum | This determines whether and how your member appears in the **Buyers** tab of the Ad Quality Manager in and in the [Platform Member](./platform-member-service.md) service. Possible values:<br> - `"public"` = Your member name is shown.<br> - `"private"` = Your member ID is shown.<br> - `"hidden"` = Your member does not appear.<br><br>**Note**:<br>Setting `platform_exposure` to `"hidden"` will hide your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file and list your member seat as `"is_confidential": 1`. See [example](#setting-platform_exposure-to-hidden). <br><br>This can limit the monetization of your inventory as some DSPs may not choose to buy impressions from sellers who are not transparent in the `"schain"` object.<br>Setting `platform_exposure` to `"public"` will display your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file. See [example](#setting-platform_exposure-to-public).<br><br>Note that `primary_type` must be either `"buyer"` or `"network"` in order for it to appear in the **Buyers** tab of the Ad Quality Manager in.<br><br>**Default**: `"public"` |  |  |  |  |  |  |  |  |  |
+| `platform_exposure` | enum | This determines whether and how your member appears in the **Buyers** tab of the Ad Quality Manager in and in the [Platform Member](./platform-member-service.md) service. Possible values:<br> - `"public"` = Your member name is shown.<br> - `"private"` = Your member ID is shown.<br> - `"hidden"` = Your member does not appear.<br><br>**Note**:<br> - Setting `platform_exposure` to `"hidden"` will hide your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file and list your member seat as `"is_confidential": 1`. See [example](#setting-platform_exposure-to-hidden). <br>This can limit the monetization of your inventory as some DSPs may not choose to buy impressions from sellers who are not transparent in the `"schain"` object.<br><br> - Setting `platform_exposure` to `"public"` will display your member `"name"` and `"domain"` fields in our [sellers.json](https://acdn.adnxs.com/sellers/1d/appnexus/sellers.json) file. See [example](#setting-platform_exposure-to-public).<br><br> - Note that `primary_type` must be either `"buyer"` or `"network"` in order for it to appear in the **Buyers** tab of the Ad Quality Manager in.<br><br>**Default**: `"public"` |  |  |  |  |  |  |  |  |  |
 | `plugins` | array | The plugins that users see on the Apps tab in. See [Plugins](#plugins) below for more details. |  |  |  |  |  |  |  |  |  |
 | `plugins_enabled` | Boolean | **Admin-only**. If `true`, the **Apps** tab is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `pops_enabled_UI` | Boolean | **Admin-only**. If `true`, pop ad support is shown in.<br><br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `prioritize_margin` | Boolean | If set to `true` Xandr will perform a bid/no bid check for managed campaigns based on line item minimum margin settings. If set to `false` Xandr will not not perform any bid/no bid check for managed campaigns based on the line item minimum.<br>**Default**: `false` |  |  |  |  |  |  |  |  |  |
 | `reporting_decimal_type` | enum | The decimal mark used in reporting. This setting can be overridden at the user and report levels (see `"reporting_decimal_type"` in the [User Service](./user-service.md) and [Report Service](./report-service.md)). Possible values:<br> - `"comma"`<br> - `"decimal"` (period)<br><br>**Default**: `"decimal"` |  |  |  |  |  |  |  |  |  |
-| `reselling_description` | string | This description is not currently used in . |  |  |  |  |  |  |  |  |  |
+| `reselling_description` | string | This description is not currently used in. |  |  |  |  |  |  |  |  |  |
 | `reselling_exposure` | enum | Whether or not to expose the member's inventory to the platform for reselling in the real-time marketplace. Possible values: `"public"` or `"private"`.<br><br>**Default**: `"private"`  |  |  |  |  |  |  |  |  |  |
-| `reselling_exposed_on` | string | The date and time at which reselling_exposure was changed to `"public"` |  |  |  |  |  |  |  |  |  |
+| `reselling_exposed_on` | string | The date and time at which `reselling_exposure` was changed to `"public"` |  |  |  |  |  |  |  |  |  |
 | `seller_member_groups` | array of objects | **Admin-only**. Specifies information about the groups of sellers to which this member belongs. See [Seller Member Group](#seller-member-group) below for more information. |  |  |  |  |  |  |  |  |  |
 | `seller_revshare_pct` | int |**Admin-only**. If this member is a seller and has a revenue sharing agreement with Xandr, the Xandr portion of the revenue sharing is indicated here. |  |  |  |  |  |  |  |  |  |
 | `serving_domain` | object | **Admin-only**. The domain through which advertisements are served. The format of the object is `{"cname":"ad.domain.com","type":null}` |  |  |  |  |  |  |  |  |  |
