@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Partner Center Guide
-description : Learn how the Partner Center Guide can help you Discover new partners, build relationships in Invest DSP, motivate partners to do business with you and track success of partnerships with metrics.
+title: Microsoft Invest - Partner Center Guide
+description: Learn how the Partner Center Guide can help you Discover new partners, build relationships in Invest DSP, motivate partners to do business with you and track success of partnerships with metrics.
+ms.date: 10/28/2023
 ---
 
 
