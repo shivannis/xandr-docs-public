@@ -1,6 +1,7 @@
 ---
 title: Using the Buyer Monitoring Grids
 description: Use the buyer monitoring grids to monitor delivery and performance for insertion orders and line items across advertisers.
+ms.date: 10/28/2023
 ---
 
 # Using the buyer monitoring grids
