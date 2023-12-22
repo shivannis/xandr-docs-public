@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Resubmit Creatives for Google Ad Manager Auditing
 description: In this article, learn step-by-step process of resubmitting your rejected creative to Google Ad Manager for re-auditing.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Resubmit creatives for Google ad manager auditing
