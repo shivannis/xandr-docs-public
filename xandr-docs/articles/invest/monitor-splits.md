@@ -1,6 +1,7 @@
 ---
 title: Monitor Splits
 description: This article explains how you can monitor delivery and performance for your splits.
+ms.date: 10/28/2023
 ---
 
 # Monitor splits
