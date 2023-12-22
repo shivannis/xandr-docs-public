@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Line Item Inventory and Brand Safety
 description: In this article, follow our step-by-step instructions to specify the type of inventory that you want to buy, create and/or apply blocklists or allowlists, define brand safety settings, and so on.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up line item inventory and brand safety
