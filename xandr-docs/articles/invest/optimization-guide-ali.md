@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Optimization Guide - ALI
-description : Learn how Augmented Line Item (ALI) optimization uses sophisticated algorithms to achieve advertising goals as efficiently as possible, minimizing your time investment and maximizing return on ad spend. 
+title: Microsoft Invest - Optimization Guide - ALI
+description: Learn how Augmented Line Item (ALI) optimization uses sophisticated algorithms to achieve advertising goals as efficiently as possible, minimizing your time investment and maximizing return on ad spend. 
+ms.date: 10/28/2023
 ---
 
 
