@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Traffic Quality
 description: In this article, learn how to investigate and report suspicious traffic, along with answers to frequently asked questions about regulating unusual activity.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Traffic quality
