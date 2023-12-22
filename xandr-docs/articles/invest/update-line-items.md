@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - Update Line Items
-description : From the Line Items screen, learn to update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
+title: Microsoft Invest - Update Line Items
+description: From the Line Items screen, learn to update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
+ms.date: 10/28/2023
 ---
 
 
