@@ -1,6 +1,6 @@
 ---
-title : Microsoft Invest - Audio Creatives
-description : Learn hosting audio creatives with Xandr or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.
+title: Microsoft Invest - Audio Creatives
+description: Learn hosting audio creatives with Xandr or traffic them through third-party ad servers, which may be created for traditional radio, streaming radio (TuneIn), music streaming (Spotify), and podcasts.
 ms.date: 10/28/2023
 ---
 
