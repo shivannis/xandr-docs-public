@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Creatives
 description: You can host or traffic video creatives through third-party ad servers. Video creatives have higher conversion rates and can be configured in various ways. 
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video creatives
