@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Exclude Competitive Offer Categories for a Creative
 description: In this article, learn how to prevent creatives with competitive offer categories from serving alongside each other by applying competitive exclusions.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Exclude competitive offer categories for a creative
