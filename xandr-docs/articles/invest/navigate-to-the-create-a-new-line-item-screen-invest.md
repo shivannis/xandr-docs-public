@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Navigate to the Create New Line Item Screen
 description: This article provides instructions to create new augmented line items from the Create New Line Item screen.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Navigate to Create New Line Item screen
