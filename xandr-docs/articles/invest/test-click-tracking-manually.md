@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Test Click Tracking Manually
 description: In this article, learn how to manually test click tracking when creative behavior or UI issues impact the reliability of the built-in test.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Test click tracking manually
