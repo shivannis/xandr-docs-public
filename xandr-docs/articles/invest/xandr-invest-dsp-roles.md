@@ -1,9 +1,9 @@
 ---
-title : Microsoft Invest DSP Roles
-description : Learn about the Microsoft Invest DSP Roles
+title : Microsoft Invest Roles
+description : Learn about the Microsoft Invest Roles
 ---
 
-# Microsoft Invest DSP Roles
+# Microsoft Invest Roles
 
 - **DSP_Super_Trader** - An administrative user for the account.
 - **DSP_Advertiser_Trader** - A user that manages demand trafficking for the account in Microsoft Invest DSP.
