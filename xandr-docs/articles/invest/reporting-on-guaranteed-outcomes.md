@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Reporting on Guaranteed Outcomes
 description: In this article, learn how to identify Guaranteed Outcomes transaction data through specific Clearing Events associated with the purchased outcomes.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Reporting on Guaranteed Outcomes
