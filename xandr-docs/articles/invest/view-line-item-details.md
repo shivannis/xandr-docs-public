@@ -1,6 +1,7 @@
 ---
-title : Microsoft Invest - View Line Item Details
-description : Learn about the Line Item Details screen.
+title: Microsoft Invest - View Line Item Details
+description: Learn about the Line Item Details screen.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - View line item details
