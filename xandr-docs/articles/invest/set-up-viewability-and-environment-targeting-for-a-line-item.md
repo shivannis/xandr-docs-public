@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Viewability and Environment Targeting for a Line Item
 description: In this article, follow the instructions to set up viewability threshold, device type, system, and page property targeting settings for your line item.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up viewability and environment targeting for a line item
