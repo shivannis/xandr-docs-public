@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - January 18, 2022 - Vendor Usage Report UI
 description: Find the release note for the new report introduced in the UI - Vendor Usage Report.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - January 18, 2022: Vendor usage report UI
