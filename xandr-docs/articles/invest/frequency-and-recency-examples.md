@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Frequency and Recency Examples
 description: You can combine frequency and recency settings or use either of these to provide an ideal user experience and minimize overexposure.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Frequency and recency examples
