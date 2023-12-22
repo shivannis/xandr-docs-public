@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Third-Party Mobile App Install Tracking
 description: In this article, follow our step-by-step instructions to set up third-party mobile app install tracking with an external vendor and understand how the install tracking works.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Set up third-party mobile app install tracking
