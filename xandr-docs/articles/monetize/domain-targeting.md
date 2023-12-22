@@ -41,7 +41,7 @@ To target domains, domain lists, or a combination of both:
     Lists** tab and include or exclude the relevant lists.
 
     > [!NOTE]
-    > It is not possible to include some domain lists and exclude others; all targeted domain lists must be either included or excluded. For instructions on adding domain lists, see [working-with-targeting-lists.md](Working with Targeting Lists).
+    > It is not possible to include some domain lists and exclude others; all targeted domain lists must be either included or excluded. For instructions on adding domain lists, see [Working with Targeting Lists](working-with-targeting-lists.md).
 
 1. For campaigns only: if you want to target a
     specific collection of domains rather than (or as well as) existing
@@ -62,7 +62,7 @@ To target domains, domain lists, or a combination of both:
     > [!NOTE]
     > It is not possible to include some domains and exclude others. All targeted domains must be either included or excluded.
 
-# Related topic
+## Related topic
 
 - [Create a Campaign](create-a-campaign.md)
 - [Working with Targeting Lists](working-with-targeting-lists.md)

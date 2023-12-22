@@ -37,10 +37,10 @@ This process can take two to four weeks to complete.
 
 To begin the enablement process for your Xandr
 member seat, please submit a ticket to our Business Support team via our
-[Customer Support Portal](vhttps://help.xandr.com/s/login/) and copy in your Account Manager (if applicable). If
+[Customer Support Portal](https://help.xandr.com/s/login/) and copy in your Account Manager (if applicable). If
 you have already contacted Google and you do not qualify for an Google
 Ad Manager seat, please reach out to your Account Manager or Business
-Support to discuss alternate options for buying Google Ad Manager
+Support to discuss alternate options for buying Google Ad Manager.
 inventory
 
 ## Use of technology vendors
@@ -77,4 +77,4 @@ Managerbuyer/bin/answer.py?hl=en&amp;answer=186777](https://support.google.com/a
 You can find Google Display Network restrictions on creatives here: [https://adwords.google.com/support/aw/bin/answer.py?hl=en&amp;answer=94230](https://support.google.com/adspolicy/answer/94230?hl=en&visit_id=638387401987618631-2767616372&rd=1).
 
 For a list of reasons why a creative may have been disapproved by Google
-(e.g. `RAW_IP_ADDRESS_IN_SNIPPET`), use this list: [https://developers.google.com/ad-exchange/rtb/downloads/snippet-status-report-proto.txt](https://developers.google.com/ad-exchange/rtb/downloads/snippet-status-report-proto.txt).
+(e.g. `RAW_IP_ADDRESS_IN_SNIPPET`), use this list: [https://developers.google.com/ad-exchange/rtb/downloads/snippet-status-report-proto.txt](https://developers.google.com/authorized-buyers/rtb/relnotes#whats-new-in-snippet-status-report-proto-version-31).

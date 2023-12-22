@@ -86,7 +86,7 @@ and start bidding on it.
 > [!TIP]
 > Learn more about how to manage your non-PG deals in the [DV360 help page](https://support.google.com/displayvideo/answer/6224774?hl=en&ref_topic=6224744).
 
-## Configure Programmatic Guaranteed (PG) Deals
+## Configure programmatic guaranteed (PG) deals
 
 1. To configure your deal, select
     **Inventory**
