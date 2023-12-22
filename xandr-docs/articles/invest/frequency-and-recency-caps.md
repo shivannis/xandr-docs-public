@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Frequency and Recency Caps
 description: Apply frequency and recency caps to your line items to prevent overexposure by limiting how many and how often creatives are shown to a user.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Frequency and recency caps
