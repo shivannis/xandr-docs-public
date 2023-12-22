@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Standard Events and Parameters
 description: In this article, find the standard events and parameters that the universal pixel can be configured to identify.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Standard events and parameters
