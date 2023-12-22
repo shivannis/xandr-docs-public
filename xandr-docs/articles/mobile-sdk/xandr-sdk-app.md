@@ -1,12 +1,12 @@
 ---
-title: Xandr SDK App
+title: Mobile SDK App
 description: This article provides instructions on using Xandr's SDK application and explores various features of the Xandr advertising platform.
 ms.custom: android-sdk, ios-sdk
 ms.date : 10/28/2023
 ---
-# Xandr SDK app
+# Mobile SDK app
 
-Xandr's **SDK App** showcases the features of the Xandr advertising platform and the [Xandr mobile advertising SDK](xandr-mobile-sdks.md).
+Xandr's **Mobile SDK App** showcases the features of the Xandr advertising platform and the [Xandr mobile advertising SDK](xandr-mobile-sdks.md).
 
 Use our SDK application on your mobile device to display and test the behavior of creatives rendered in Xandr's SDK.
 
