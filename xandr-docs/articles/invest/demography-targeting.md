@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Demography Targeting
 description: In this article, learn about targeting ads based on demographics like age, gender, and location, enhancing the creation of highly relevant ad campaigns.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Demography targeting
