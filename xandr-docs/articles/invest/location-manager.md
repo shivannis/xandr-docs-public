@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Location Manager
 description: In this article, understand what features can be managed using the location manager and find links to resources for these features.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Location manager
