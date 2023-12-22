@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - User ID Mapping with getUID and mapUID
 description: This article provides steps for inserting internal user data into the Server-side Cookie Store so that it is available for decisioning.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - User ID mapping with getUID and mapUID
