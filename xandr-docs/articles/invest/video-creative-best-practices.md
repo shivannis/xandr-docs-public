@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Video Creative Best Practices
 description: This page provides a list of best practices in a question-answer format to ensure maximum delivery and success for your VAST creatives.
+ms.date: 10/28/2023
 ---
 
 # Microsoft Invest - Video creative best practices
