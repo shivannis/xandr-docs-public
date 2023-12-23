@@ -14,8 +14,8 @@ This page has instructions and code samples for showing banner ads.To show banne
 3. pass in a frame, placement ID,and size
 4. add it as a subview of the current view
 
-This following example is a simple one and doesn't take advantage of all of the capabilities
-provided by the mobile SDK - for example, you can also pass in the user's age
+The following code samples are simple ones and don't take advantage of all of the capabilities
+provided by the mobile SDK. For example, you can also pass in the user's age
 and gender, as well as whether an ad click should open the device's
 native browser.
 
