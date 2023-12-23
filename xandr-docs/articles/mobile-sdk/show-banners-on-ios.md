@@ -27,7 +27,7 @@ native browser.
 >// iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
 >-(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
 >>-(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode adSize:(CGSize)size;
-```
+
 
 ``` 
 // iOS: ObjC to show a banner ad
