@@ -4,7 +4,7 @@ description : The article outlines the steps to begin Key/Value Targeting.
 ms.date: 10/28/2023
 ---
 
-# Getting started with key/Value targeting
+# Getting started with key/value targeting
 
 You have many different options for targeting users in your line items and campaigns. One quick scan of the topics under [Buy-Side Targeting](buy-side-targeting.md)
 will show you many of those options, including targeting based on geography, domain, and inventory type. You can also target by defining custom keys and values.
@@ -36,7 +36,7 @@ This is typically the simplest way of setting up your key/value targeting. From 
 
 > [!IMPORTANT]
 > To target a placement using Key/Value Targeting and generate accurate reporting on impression delivery, it is mandatory to define a specific Value for each Key in
-> Microsoft Monetize. In Xandr Invest, the line item needs to target the specific pre-defined values in [key/value targeting](key-value-targeting.md).
+> Microsoft Monetize. In Microsoft Invest, the line item needs to target the specific pre-defined values in [key/value targeting](key-value-targeting.md).
 
 ## From the API
 

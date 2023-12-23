@@ -1,13 +1,13 @@
 ---
-title: Microsoft Monetize - Getting Paid by Xandr
+title: Microsoft Monetize - Getting Paid
 description: The article instructs on securing prompt payments from Xandr by providing banking details during contract signing, and it also mentions how to update this information.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Getting paid by Xandr
+# Microsoft Monetize - Getting paid
 
 In order to receive prompt payment from Xandr, you must submit your banking details to your Xandr representative upon signing your contract.
-To update your banking details, contact Client **Finance** at [billing@xandr.com](mailto:billing@xandr.com).
+To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).
 
 Xandr pays you within a fixed period of time (e.g.. Net 60, Net 90) from the last day of the month in which the reselling activity occurs (so long as the total is at least $50 for that month). If reselling activity for a given month is under $50, we'll hold payment until you are able to compound at least $50. Once you have compounded in excess of $50 in resold revenue, we'll transfer the full amount to the bank account that we have on file.
 

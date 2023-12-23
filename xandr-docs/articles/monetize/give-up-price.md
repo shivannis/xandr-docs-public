@@ -6,7 +6,8 @@ ms.date: 10/28/2023
 
 # Give up price
 
-This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide](optimization-guide-ali.md).
+> [!IMPORTANT]
+> This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide](optimization-guide-ali.md).
 
 ## Overview
 
@@ -25,7 +26,8 @@ A publisher needs to allocate bids to both learn auctions and revenue auctions i
 
 Therefore, publishers will always allocate some bids (optimized or learn bids) to learn auctions and some to revenue auctions. However, this raises the problem of accepting bids that either make little to no money for the publisher, or accepting bids that provide no valid data that the networks can use to optimize future bids. For this reason, optimized bids in a revenue auction, or learn bids in a learn auction, will not receive preference if they are below the give up price amount.
 
-The concept of give up price has no bearing on how the bid is calculated or valued; it only affects the bid hierarchy.
+> [!IMPORTANT]
+> The concept of give up price has no bearing on how the bid is calculated or valued; it only affects the bid hierarchy.
 
 ## Bid types
 

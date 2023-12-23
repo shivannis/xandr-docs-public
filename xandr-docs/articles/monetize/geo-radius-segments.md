@@ -10,11 +10,10 @@ ms.date: 10/28/2023
 > Access to the geo radius segment targeting feature requires additional roles and permissions. Contact your Xandr account representative for more information.
 
 A geo radius segment is a list of latitude, longitude, and radius data. You can use geo radius segments for geographical targeting of multiple user locations. When you create a geo radius segment, you add latitude, longitude, and radius data either manually (copy and paste) or by importing a file. Once the geo radius segment is created, these
-locations are easily targetable on your line item using the segment ID [Segment Targeting](segment-targeting.md) for more information.
+locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md)) for more information.
 
 > [!IMPORTANT]
 > Approximately 30% of impressions received contain location data that you can target with geo radius segments.
-
 > [!NOTE]
 > There is a maximum limit of 10k geo radius segments per member.
 
@@ -22,23 +21,23 @@ locations are easily targetable on your line item using the segment ID [Segment 
 
 There are five steps to creating a geo radius segment:
 
-## Step 1. Get started
+### Step 1. Get started
 
-Open the [Location Manager](location-manager.md) page and click New to open the **Create Geo Radius Segment** dialog.
+Open the [Location Manager](location-manager.md) page and click **New** to open the **Create Geo Radius Segment** dialog.
 
-## Step 2. Create a new geo radius segment
+### Step 2. Create a new geo radius segment
 
 Fill in the following fields:
 
 | Name | Description | Required/Optional |
 |--|--|--|
-| Name | Name for geo radius segment | Required |
-| Code | User-defined code for calling the geo radius segment, e.g. GEO123 | Optional |
-| Description | Description of geo radius segment | Optional |
+| **Name** | Name for geo radius segment | Required |
+| **Code** | User-defined code for calling the geo radius segment, e.g. GEO123 | Optional |
+| **Description** | Description of geo radius segment | Optional |
 
 Click **Next**.
 
-## Step 3. Choose the method to add geo radius segment features
+### Step 3. Choose the method to add geo radius segment features
 
 ### Copy and paste
 
@@ -48,21 +47,22 @@ Click **Next**.
     - Longitude
     - Radius (in meters: 3m to 100000m)
 
-  > [!NOTE]
+    > [!NOTE]
+    >
   > The radius needs to be whole number.
 
-- Name (optional name for this feature)
+    - Name (optional name for this feature)
 
-  Separate each group by entering a hard return. For example:
+      Separate each group by entering a hard return. For example:
 
-```
-40.741624,-73.990991,10,Feature One  
-48.376928,-54.986546,8 
-```
+     ```
+     40.741624,-73.990991,10,Feature One  
+     48.376928,-54.986546,8 
+     ```
 
-2. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
+  2. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
 
-3. Click **Nex**t.
+3. Click **Next**.
 
 ### Import from file
 
@@ -86,7 +86,7 @@ Click **Next**.
 
 Review the **Related Geo Features** of the geo radius segment. Click **Create Geo Radius Segment** to finish creating the geo radius segment.
 
-### Step 5. segment ID for use in line item targeting
+### Step 5. Note the segment ID for use in line item targeting
 
 When a new geo radius segment is created, it is automatically assigned a segment ID. Use this segment ID (or the geo radius segment name) to locate the segments when configuring targeting for line items. See [Segment Targeting](segment-targeting.md) for more information on using the segment IDs assigned to geo radius segments for targeting.
 

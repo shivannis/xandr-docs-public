@@ -6,16 +6,16 @@ ms.date: 10/28/2023
 
 # Global privacy platform
 
-The [Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform) (GPP) is a protocol that helps to consolidate the management of different user consent signals from a variety global privacy jurisdictions. It is a communication layer that interacts with frameworks such as the Transparency and Consent Framework [TCF](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/tree/master/TCFv2) and the US Privacy API [USPAPI](https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/USP%20API.md) to convert multiple signals into a single API, thereby making communication between ad tech vendors
+The [Global Privacy Platform](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform) (GPP) is a protocol that helps to consolidate the management of different user consent signals from a variety global privacy jurisdictions. It is a communication layer that interacts with frameworks such as the Transparency and Consent Framework ([TCF](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/tree/master/TCFv2)) and the US Privacy API ([USPAPI](https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/USP%20API.md)) to convert multiple signals into a single API, thereby making communication between ad tech vendors
 more efficient.
 
-In order to be compliant with state legislation in the United States, Xandr will support the [US-States](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/tree/main/Sections/US-States) section of the GPP as of 01.01.23. That means that publishers and advertisers operating in theUnited States will have an industry-accepted method of maintaining legal compliance and respecting the privacy of their users.
+In order to be compliant with state legislation in the United States, Xandr will support the '[US-States](https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/tree/main/Sections/US-States)' section of the GPP as of 01.01.23. That means that publishers and advertisers operating in theUnited States will have an industry-accepted method of maintaining legal compliance and respecting the privacy of their users.
 
 ## How does the GPP work
 
 The GPP works by translating consent signal frameworks into a signal API. It first ingests multiple signals and then creates a single ingestible signal for downstream vendors to interpret. For example, if a page is using both the TCF and the USPAPI, the GPP will convert the signals into a single GPP string, as shown below.
 
-  :::image type="content" source="media/gpp-works.png" alt-text="Screenshot that explains how does GRP wprks if a page is using both the TCF and the USPAPI, the GPP will convert the signals into a single GPP string.":::
+  :::image type="content" source="media/gpp-works.png" alt-text="Screenshot that illustrates GPP's consolidation of signals from both TCF and USPAPI into a unified GPP string.":::
 
 The GPP string always consists of a 'header' and then the main string, which is divided into 'sections'. Each section relates to a local privacy framework. In the example above, the GPP string consists of TCF and USPAPI (CCPA) sections, as well as a header which provides information on which sections are included in the main string.
 
@@ -47,7 +47,7 @@ In order to use the GPP, website owners need to:
 
 1. Update the prebid config, as shown below:
 
-    ``
+    ```
     var pbjs = pbjs || {};
     pbjs.que = pbjs.que || [];
     pbjs.que.push(function() {

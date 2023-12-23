@@ -117,6 +117,6 @@ Political Geography Targeting allows political buyers to target geographies base
 
 ## Related topics
 
-- [Create a Campaign (Standard Line Item only)](create-a-campaign.md)
+- [Create a Campaign](create-a-campaign.md) (Standard Line Item only)
 - [How Geography Targeting Works](how-geography-targeting-works.md)
 - [Changes to Geography Objects](changes-to-geography-objects.md)

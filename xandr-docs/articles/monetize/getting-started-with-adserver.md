@@ -26,14 +26,14 @@ This is where you set up and maintain your advertisers, as well as manage your c
 
 - [Buying Guide](buying-guide.md)
 
-## Global view
+### Global view
 
 View and manage your line items and insertion orders from one place. You can also apply and save filtered views of your data.
 
 - [Explore Global Insertion Orders](explore-global-insertion-orders.md)
 - [Explore Global Line Items](explore-global-line-items.md)
 
-## Guaranteed delivery
+### Guaranteed delivery
 
 Manage your guaranteed delivery.
 
@@ -46,7 +46,7 @@ Manage your guaranteed delivery.
 
 - [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md)
 - [Inventory Forecasting](inventory-forecasting.md)
-- [Yieldex Analytics](https://wiki.xandr.com/display/YieldexAnalytics/Home) 
+- [Yieldex Analytics](https://wiki.xandr.com/display/YieldexAnalytics/Home)
 
 **Priorities**
 
@@ -62,7 +62,7 @@ Manage your guaranteed delivery.
 The following are some of the resources that will help get you started with setting up and managing your publishers.
 
 - [Selling Guide](selling-guide.md)
-- [working-with-publishers.md](working-with-publishers.md)
+- [Working with Publishers](working-with-publishers.md)
 - [Working with Placement Groups](working-with-placement-groups.md)
 - [Working with Placements](working-with-placements.md)
 
