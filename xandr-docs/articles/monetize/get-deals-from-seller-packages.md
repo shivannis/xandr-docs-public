@@ -18,7 +18,8 @@ On the **Package Marketplace** screen (**Partners \>  Package Marketplace**), br
 - **Contents Tags** - The Context, Audience, and Sizes tags display when the package contains selected inventory, segments, and sizes respectively. Hover over the details icon  (eye) on the Sizes tag to view a list of the sizes included in the package.
 - **Description** - The seller's description of the inventory and/or data included in the package.
   
-   Use the filters on the left to hone in on offers that meet your needs:
+7Use the filters on the left to hone in on offers that meet your needs:
+
 - **Filter by Sellers** - Select specific sellers to view the packages they offer.
 - **Search for a Package** - Search package names and descriptions using keywords.
 - **Filter by Package** - Select package contents that meet your needs.
