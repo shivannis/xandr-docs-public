@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # Overview
 
-This section describes how to include various ad units or work with our interfaces within your iOS app. All AdUnits are subclasses of the [ANAdUnit](show-interstitials-ads-on-ios.md) class.
+This section describes how to include various ad units or work with our interfaces within your iOS app. All ad units are subclasses of the [ANAdUnit](show-interstitials-ads-on-ios.md) class.
 
 ## iOS ad units
 
