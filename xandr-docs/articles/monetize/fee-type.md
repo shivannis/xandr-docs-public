@@ -1,12 +1,18 @@
 ---
-title: Microsoft Monetize - Fee Type
-description: The article explains how you can use fee types to categorize fees by purpose.
+Title : Fee Type
+Description : When creating a
 ms.date: 10/28/2023
+<a href="partner-fees.md" class="xref">partner fee</a>, you can use
 ---
 
-# Microsoft Monetize - Fee type
 
-When creating a [partner fee](partner-fees.md), you can use fee types to categorize fees by purpose.
+# Fee Type
+
+
+
+When creating a
+<a href="partner-fees.md" class="xref">partner fee</a>, you can use
+fee types to categorize fees by purpose.
 
 Supported types are:
 
@@ -19,4 +25,9 @@ Supported types are:
 - Viewability
 - Other
 
-We recommend that you include additional details in the fee name or description, especially for fees of type "Other".
+We recommend that you include additional details in the fee name or
+description, especially for fees of type "Other".
+
+
+
+
