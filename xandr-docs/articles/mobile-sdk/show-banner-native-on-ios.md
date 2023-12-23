@@ -11,7 +11,7 @@ ms.date : 10/28/2023
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.
 
-The term *Banner Native* refers to the capability of our Mobile SDK
+The term *Banner Native* refers to the capability of Mobile SDK
 Banner class to return native demand. The banner object (ANBannerAdView)
 is multi-format, returning demand for banner ads and, if enabled via the
 APIs as described in the examples below, video and native ads.  This
@@ -27,6 +27,8 @@ But other than minor, one-time changes to satisfy the compilation
 process, there should be no impact on any existing code that uses the
 Banner class.
 
+## Assumption
+
 The assumption of this document is that you're already familiar with
 both the Banner and Native classes. To use Banner Native there are a
 number of significant changes both structurally and procedurally that
@@ -39,7 +41,7 @@ object.
 
 ## Process changes
 
-As of MobileSDK Version 4.8, there is one breaking change in the
+As of Mobile SDK Version 4.8, there is a change in the
 procedure of handling banner and video ad objects via the Banner class. 
 Before the introduction of Banner Native, it was possible to add the
 Banner class instance view to a view hierarchy, even before the class
@@ -47,7 +49,7 @@ instance returned the ad object.  This made it possible to finalize the
 display setup of the class even before the lifecycle of loading and
 fetching the ad object had completed.  Although this convenient
 short-cut meant potentially ignoring the callback that indicates the ad
-has loaded, it is a common pattern with the MobileSDK.
+has loaded, it is a common pattern with the Mobile SDK.
 
 If the Banner class is used to fetch native ads, the display step MUST
 wait until after the callback has fired.  This is because the callback
