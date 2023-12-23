@@ -4,7 +4,7 @@ description: The article describes buying OTT video inventory where Microsoft Mo
 ms.date: 10/28/2023
 ---
 
-# Buying OTT video inventory
+# Microsoft Monetize - Buying OTT video inventory
 
 Microsoft Monetize allows you to buy or sell ad inventory on OTT ("over-the-top") video properties. As part of our combined offering, OTT inventory provides direct access to OTT video supply from publishers such as ESPN, CNN, Newsy, PlutoTV, TubiTV, and many others. You can also access programmatic CTV supply on major CTV SSPs such as FreeWheel, Telaria, and SpotX. As a key element of optimized media planning, purchasing inventory on OTT content and/or CTV devices maximizes your reach to drive cost efficiencies and ROI.
 

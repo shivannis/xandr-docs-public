@@ -6,23 +6,21 @@ ms.date: 10/28/2023
 
 # Campaign monitor
 
-This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
+> [!IMPORTANT]
+> This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
 We built the Campaign Monitor to help campaign managers and ad operations teams view delivery and performance of line items and campaigns at-a-glance. The Campaign Monitor allows you to quickly view which line items and campaigns are on track for performance and delivery and which may need a little more attention to get back on track. The
 Campaign Monitor also allows you to dig into line item and campaign setup quickly and easily. You can go directly from the Campaign Monitor to the line item or campaign in question to view and edit targeting details and campaign settings.
 
 ## At-a-glance
 
-To open Campaign Monitor, select **Advertiser >  Campaign Monitor**.
-
-> [!NOTE]
-> The above option is not available for all customers.
+To open Campaign Monitor, select **Advertiser >  Campaign Monitor**. Note that this option is not available for all customers.
 
 You can view metrics for the lifetime of a line item or for yesterday. Metrics are based on the local time for your network. Data is current to within approximately one hour.
 
 To view the available metrics, click the **Columns** button to drop down a list of metrics you can choose to display in the Campaign Monitor grid.
 
-  :::image type="content" source="media/display-columns.png" alt-text="Screenshot that explains the Columns button to drop down a list of metrics you can choose to display in the Campaign Monitor grid.":::
+  :::image type="content" source="media/display-columns.png" alt-text="The screenshot illustrates the functionality of the Columns button, which, when clicked, reveals a dropdown menu displaying various metrics that users can select to be displayed in the Campaign Monitor grid.":::
 
 The following metrics are selected by default:
 
@@ -34,8 +32,9 @@ The following metrics are selected by default:
 - **Revenue Type:** How the advertiser is paying the network.
 - **CTR:** If you have a budget and are bidding on a CPC basis, we can  calculate if you are on pace or not.
 - **Days Into Flight:** How many days the line item or campaign has been live and how many days are left.
-- **Estimated End Date:** The estimated end date for the line item or campaign based on past performance. 
-- You can also choose to view these additional metrics:
+- **Estimated End Date:** The estimated end date for the line item or campaign based on past performance.
+
+  You can also choose to view these additional metrics:
 
 - **eCPM:** How much money the network spent per thousand impressions.
 - **eCPC:** How much money the network spent per click.
@@ -75,7 +74,7 @@ don't have flight dates for the line item or the campaign and therefore, cannot 
 |---|---|
 | :::image type="content" source="media/lifetime-pacing.png" alt-text="Screenshot that illustrates the Lifetime Pacing bar for the lifetime data impression budget."::: | :::image type="content" source="media/yesterday-pacing.png" alt-text="Screenshot displaying the Yesterday Pacing bar for yesterday's Data-Revenue budget."::: |
 
-## Personalizing your pacing Bbars
+## Personalizing your pacing bars
 
 You can change the colors and ranges on your pacing bars. Click the pacing bar arrow to open the **Customize pacing target colors and ranges** dropdown. Moving the range sliders and select the colors you want, then click Save Settings.
 

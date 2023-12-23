@@ -43,8 +43,8 @@ The initial data (frequency, recency, and conversion likelihood) which makes up 
 
   Once initial data has been applied, the system can begin to bid on auctions. As impressions are won, the system gains additional information about when users convert impressions and adjusts the individual buckets accordingly. The borders of a bucket can shift based on statistical changes, as can the likelihood factor.
 
-> [!IMPORTANT]
-> The frequency/recency buckets are not of fixed size. The exact borders (e.g., frequency of 3-5, recency of 21-44 seconds) are determined by algorithms to be the most accurate statistically. Therefore, a bucket that started with a frequency of 3-5 and a recency of 21-44 seconds can change to a frequency of 2-4 and a recency of 30-40 seconds.
+  > [!IMPORTANT]
+  > The frequency/recency buckets are not of fixed size. The exact borders (e.g., frequency of 3-5, recency of 21-44 seconds) are determined by algorithms to be the most accurate statistically. Therefore, a bucket that started with a frequency of 3-5 and a recency of 21-44 seconds can change to a frequency of 2-4 and a recency of 30-40 seconds.
 
 ## Applying the chaos factor
 

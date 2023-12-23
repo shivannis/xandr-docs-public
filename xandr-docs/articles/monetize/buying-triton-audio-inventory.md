@@ -4,8 +4,7 @@ description: This article provides specific information for the Triton Audio Ad 
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Monetize - Buying Triton Audio Inventory
+# Microsoft Monetize - Buying Triton audio inventory
 
 This page provides specific information for the **Triton Audio Ad Exchange**, which includes testing your ads and setting up a line item or campaign to target **Triton** audio inventory.
 
@@ -14,7 +13,7 @@ This page provides specific information for the **Triton Audio Ad Exchange**, wh
 
 ## Test your ads
 
-After designing your audio creative and adding your creative to Xandr, you can test it. (See [Buying Audio Inventory](buying-audio-inventory.md).
+After designing your audio creative and adding your creative to Xandr, you can test it. (See [Buying Audio Inventory](buying-audio-inventory.md)).
 
 Triton Digital has created a test station where you can test your a2x/Xandr ads in a replica of a live environment. The test station runs a sequence of one song followed by
 one or more ads. You can test only one ad at a time.
@@ -28,8 +27,8 @@ To set up and listen to a test ad:
 1. Upload your ad using the **Creative Manager** and assign it to the **Alpha Test** brand in the Creative Attributes section, using the **Self-classify** audit option.
 1. Create a new line item or campaign. In the **Buying Strategies** area of the **Basic Setup** section, set the **Bid a base CPM** to $1.00 CPM.
 
-  > [!NOTE]
-> These impressions will not be charged since this is a testing platform.
+   > [!NOTE]
+   > These impressions will not be charged since this is a testing platform.
 
 3. In the **Targeting** section, select **Partners >  3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
 1. Click **Include** and then **Add**.
@@ -51,7 +50,7 @@ Alternatively, you can narrow the inventory to specific formats. Click Triton **
 
 You can narrow the inventory type by excluding categories such as ad type, asset type etc. You can also exclude categories that you don't want instead of including categories that you do.
 
-### Ad Type categories: Preroll or Midroll
+### Ad type categories: Preroll or Midroll
 
 If you want to play only preroll ads, exclude the midroll category.
 

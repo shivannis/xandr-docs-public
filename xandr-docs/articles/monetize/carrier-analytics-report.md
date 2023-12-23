@@ -84,7 +84,7 @@ This report's data is retained for 46 days. For more information about how quick
 | Carrier | Yes | "Sprint - FR (20)" | The name of the carrier followed by the ID (Xandr format). If the carrier is smaller, you may see this value appear as -1 because it is aggregated. |
 
 > [!NOTE]
-> You can also filter on a particular number of impressions using the **Minimum > Impressions** filter.
+> You can also filter on a particular number of impressions using the **Minimum Impressions** filter.
 
 ## Metrics
 
@@ -136,7 +136,7 @@ This report's data is retained for 46 days. For more information about how quick
 | Video Start Rate | 1.12359550561797% |  | The percentage of times the first segment of the video creative was downloaded and started. |
 | Video Skip Rate | 1.12359550561797% |  | The percentage of times the user opted to skip the video. |
 
-## To Run your Report
+## To run your report
 
 Follow these steps to run your report.
 

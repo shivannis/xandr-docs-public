@@ -33,7 +33,7 @@ The amount charged for serving creatives that are over the maximum size specifie
 
 For **example**, let's say the maximum creative size in your contract is (b) 40KB, you have a (a) 60KB creative that served (c) 100,000 times, and your bandwidth fee is (d) $2.50 per GB (which converts to 976,563 KB).
 
-Your creative overage fee is calculated as follows: \[ \[ (a) 60KB - (b) 40KB \] x 100,000 imps \] x \[ (d) $2.50 / 976,563 KB \] = $5.12
+Your creative overage fee is calculated as follows: `\[ \[ (a) 60KB - (b) 40KB \] x 100,000 imps \] x \[ (d) $2.50 / 976,563 KB \] = $5.12`
 
 ## Creative audit
 

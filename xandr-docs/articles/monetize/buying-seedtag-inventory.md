@@ -4,7 +4,7 @@ description: The article explains buying seedtag inventory that enables global r
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Buying seedtag inventory
+# Microsoft Monetize - Buying Seedtag inventory
 
 > [!NOTE]
 > [Buying Native Inventory](buying-native-inventory.md) provides instructions for a a global approach in which you reach all sellers simultaneously with a single line
@@ -43,7 +43,7 @@ Your line item or campaign must be set up according to the guidelines here.
 
 **Buying Strategy:**  
 
-You must select CPM as your **Buying Strategy**. You can select any option under Pay on a Per-impression (CPM) basis, but you cannot use any other basis (such as CPC or CPA).
+You must select CPM as your **Buying Strategy**. You can select any option under **Pay on a Per-impression (CPM) basis**, but you cannot use any other basis (such as CPC or CPA).
 
 **Inventory Quality:**
 
@@ -52,7 +52,7 @@ You must select CPM as your **Buying Strategy**. You can select any option under
 
 ## Upload a third-party creative
 
-Navigate to the **Creative Manager** screen. Click on the Create New button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
+Navigate to the **Creative Manager** screen. Click on the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
 
 - Type: **Third-party creative**
 
@@ -65,8 +65,7 @@ Navigate to the **Creative Manager** screen. Click on the Create New button and 
 
 - Template: **Xandr: Standard**
 
-- Size: Select New from the dropdown
-  list. Enter a **width** of **600** and a **height** of **105**
+- Size: Select **New** from the dropdown list. Enter a **width** of **600** and a **height** of **105**
 
 - Name: Self-classify the creative with the accurate brand.
 

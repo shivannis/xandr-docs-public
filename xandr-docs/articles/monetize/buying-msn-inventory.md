@@ -11,7 +11,8 @@ ms.date: 10/28/2023
 
 MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class premium content from top media providers, with high-value experiences through personalized content synchronized across devices.
 
-Packages bundled with Microsoft user data are available through the packages marketplace. See [Buying Microsoft Deals](buying-microsoft-deals.md).
+> [!TIP]
+> Packages bundled with Microsoft user data are available through the packages marketplace. See [Buying Microsoft Deals](buying-microsoft-deals.md).
 
 ## Availability and volume
 
@@ -21,7 +22,7 @@ Packages bundled with Microsoft user data are available through the packages mar
 - 305 million monthly global mobile impressions, 129 million in US
 - 950 million+ monthly global mobile and desktop app impressions
 
-Verticals
+### Verticals
 
 - News
 - Money

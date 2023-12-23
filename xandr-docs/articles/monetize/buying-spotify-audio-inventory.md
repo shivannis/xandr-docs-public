@@ -20,13 +20,13 @@ information regarding the available supply, what data is available through deals
 
 ## Adding an audio creative
 
-On the **Creative Manager** screen, click the **Create New** button, then select Audio.
+On the **Creative Manager** screen, click the **Create New** button, then select **Audio**.
 
 Follow the steps outlined in [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 ## Spotify supply
 
-The following are the specifications of available Spotify Xandr Member id: **3860** Spotify AB) supply:
+The following are the specifications of available Spotify Xandr Member id: **3860** Spotify AB supply:
 
 - 15 to 30 second Audio spots played instream during ad breaks between songs.
 - Played through Spotify's mobile app on iOS and Android powered phones and tablets.
