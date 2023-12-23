@@ -101,7 +101,7 @@ To handle AdMob banner ads for the apps that support multi-window capability in 
 
 - getter method `getIPadMultiSceneSupport` to fetch the value set for the apps
 
-  **Objective C**
+  **Code Sample (Objective C)**
 
   ```
   /**
@@ -110,13 +110,9 @@ To handle AdMob banner ads for the apps that support multi-window capability in 
   + (void)setIPadMultiSceneSupport:(BOOL)setIPadMultiSceneSupport;
   + (BOOL)getIPadMultiSceneSupport;
   ```
+Additionally, publishers should load the ad from `viewDidAppear` method instead of `viewDidLoad` in the app.
 
-  Additionally, publishers should load the ad from `viewDidAppear`
-  method instead of `viewDidLoad` in the app.
-
-**Example of use**
-
-**Objective C**
+**Example of use (Objective C)**
 
 ```
 /**
