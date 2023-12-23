@@ -33,7 +33,7 @@ Follow the instructions for the relevant geographic targeting option below.
 
 ## Target users by country, region, or city
 
-By default, you will target users in all geographic locations. On the Country/Region/City tab, however, you can narrow your targeting to include or exclude specific countries,
+By default, you will target users in all geographic locations. On the **Country/Region/City** tab, however, you can narrow your targeting to include or exclude specific countries,
 regions/states, or cities.
 
 - The **Countries** lists shows all countries that can be targeted. You can either include or exclude countries or drill into a country to see its regions/states. Note that when you exclude a country, its regions and cities are not available for further inclusion or exclusion.
