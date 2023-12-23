@@ -15,13 +15,8 @@ When creating a floor rule, you can target the rule based on the number of times
 From the **Create New Floor Rule** or **Edit Floor Rule** page, locate **Targeting**.
 
 - Select the **Scope** to indicate whether you would like frequency to be calculated based on views on inventory across the entire platform (**Platform Wide**), or only views on the publisher's inventory (**Publisher Specific**).
-<<<<<<< HEAD
 - Check the **User seen at most \_\__times** checkbox and then type the maximum number of impression views to which the rule will apply.
 - Check the **User seen at least \_\__times** checkbox and then type the minimum number of impression views you want to user to experience before the rule applies.
-=======
-- Check the **User seen at most \_\_times** checkbox and then type the maximum number of impression views to which the rule will apply.
-- Check the **User seen at least \_\_times** checkbox and then type the minimum number of impression views you want to user to experience before the rule applies.
->>>>>>> 2c40435994e3e2762d1498c2776303c9e14255d5
 - If you choose to set a minimum and/or maximum value, you can select the option to **Apply to users without a valid Xandr User ID**. Doing this might violate
   frequency caps.
 
@@ -46,11 +41,7 @@ logic.
 
 When creating or editing a floor rule, you can select specific inventory you would like the rule to apply to. You can target direct inventory placements, universal categories, or custom categories.
 
-<<<<<<< HEAD
-## Getting t    here
-=======
-## Target inventory
->>>>>>> 2c40435994e3e2762d1498c2776303c9e14255d5
+## Getting there
 
 From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeting**. Next to **Inventory**, click **Edit**.
 
@@ -58,17 +49,10 @@ From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeti
 
 By default, the floor rule targets all of your direct inventory. However, you can narrow your targeting to include or exclude specific placement groups or placements.
 
-<<<<<<< HEAD
 To target direct inventory, click the the **Direct Inventory** tab. Click **Placement Groups** to include or exclude groups of placements, and **Placements** to include or exclude specific placements.
 
 > [!IMPORTANT]
 > By default, you are in browse mode, which allows you to browse or search the placements or placement groups. To manage objects by ID, click **text**. In text mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
-=======
-To target direct inventory, click the the **Direct Inventory** tab. Click **Placement Groups** to include or exclude groups of **placements**, and Placements to include or exclude specific placements.
-
-> [!IMPORTANT]
-> By default, you are in browse mode, which allows you to browse or search the placements or placement groups. To manage objects by ID, click text . In text mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
->>>>>>> 2c40435994e3e2762d1498c2776303c9e14255d5
 
 ## Target custom categories
 
@@ -138,11 +122,7 @@ By default, the floor rule targets all of your buyers. However, you can narrow y
 Click the **Buyers** tab to include or exclude specific buyers from a floor rule.
 
 > [!TIP]
-<<<<<<< HEAD
 > By default, you are in browse mode, which allows you to browse or search the buyers. To manage buyers by ID, click **text**. In text mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
-=======
-> By default, you are in browse mode, which allows you to browse or search the buyers. To manage buyers by ID, click text. In text mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
->>>>>>> 2c40435994e3e2762d1498c2776303c9e14255d5
 
 ## Target brands
 
@@ -151,11 +131,7 @@ By default, the floor rule targets all brands. However, you can narrow your targ
 Click the **Brands** tab to include or exclude specific brands in a floor rule.
 
 > [!TIP]
-<<<<<<< HEAD
 > By default, you are in browse mode, which allows you to browse or search the buyers. To manage buyers by ID, click **text**. In **text** mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
-=======
-> By default, you are in browse mode, which allows you to browse or search the buyers. To manage buyers by ID, click text. In **text** mode, type one or more IDs, separated by commas, spaces, or lines, then click **Include** or **Exclude**.
->>>>>>> 2c40435994e3e2762d1498c2776303c9e14255d5
 
 ## Target offer categories
 
