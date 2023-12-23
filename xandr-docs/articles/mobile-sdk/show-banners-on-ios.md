@@ -8,15 +8,14 @@ ms.date : 10/28/2023
 
 # Show banners on iOS
 
-This page has instructions and code samples for showing banner ads.
+This page has instructions and code samples for showing banner ads.To show banner ads:
+1. include banner ad view header file of mobile SDK
+2. create a banner ad view object
+3. pass in a frame, placement ID,and size
+4. add it as a subview of the current view
 
-To show banner ads, include our banner ad view header file. Then, create
-a banner ad view object; you'll need to pass in a frame, placement ID,
-and size. Add it as a subview of the current view, and you should start
-seeing ads.
-
-This simple example doesn't take advantage of all of the capabilities
-provided by the SDK - for example, you can also pass in the user's age
+This following example is a simple one and doesn't take advantage of all of the capabilities
+provided by the mobile SDK - for example, you can also pass in the user's age
 and gender, as well as whether an ad click should open the device's
 native browser.
 
@@ -28,7 +27,7 @@ native browser.
 >-(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
 >>-(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode adSize:(CGSize)size;
 
-
+## Example of use (Objective C)
 ``` 
 // iOS: ObjC to show a banner ad
 #import "ViewController.h"
@@ -59,7 +58,7 @@ native browser.
 @end
 ```
 
-Swift developers will want to use the following code:
+## Example of use (Swift)
 
 ``` 
 // iOS: Swift to show a banner ad
