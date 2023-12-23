@@ -69,7 +69,8 @@ native ad object versus a banner or video ad object.
 - The `ANAdDelegate` protocol includes the new
   method `ad:didReceivNativeAd:`
 
-Please follow below steps to understand how the
+## How multi-format Native Banner Ad View is used
+Following steps explain how the
 multi-format `ANBannerAdView` is used:
 
 - Enable Native demand for
