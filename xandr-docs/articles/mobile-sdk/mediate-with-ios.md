@@ -95,7 +95,7 @@ For passing the content URL to the Google SDK, the content url needs to be passe
 > [!NOTE]
 > The instructions in this section are only needed to load AdMob banner ads in iPads for the apps that support multi-window capability.
 
-To handle AdMob banner ads for the apps that support multi-window capability in iPads, Xandr Mobile SDK provides a public class `ANGoogleMediationSettings`. This class contains
+To handle AdMob banner ads for the apps that support multi-window capability in iPads, Xandr Mobile SDK provides a public class `ANGoogleMediationSettings`. This class contains:
 
 - boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads
 
