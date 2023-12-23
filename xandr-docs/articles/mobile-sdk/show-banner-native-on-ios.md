@@ -76,7 +76,7 @@ multi-format `ANBannerAdView` is used:
 - Enable Native demand for
   your `ANBannerAdView` using `setAllowNativeDemand `method as well
   as `shouldAllowNativeDemand` & `enableNativeRendering` properties. For
-  enabling Video demand, use the property s`houldAllowVideoDemand.`
+  enabling Video demand, use the property `shouldAllowVideoDemand.`
 
   ``` 
   /**
