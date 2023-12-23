@@ -6,11 +6,9 @@ ms.date: 10/28/2023
 
 # Floor prices
 
-A floor price is the minimum net bid price that a seller is willing to accept for a bid in an auction. To win an auction that has a set floor
-price, the buyer's bid must be greater than or equal to the floor price.
+A floor price is the minimum net bid price that a seller is willing to accept for a bid in an auction. To win an auction that has a set floor price, the buyer's bid must be greater than or equal to the floor price.
 
-Bids that are below a seller's established floor price won't be accepted for that auction. It's also possible for a win-less auction to occur in
-which no buyer has made a bid that meets the net floor price.
+Bids that are below a seller's established floor price won't be accepted for that auction. It's also possible for a win-less auction to occur in which no buyer has made a bid that meets the net floor price.
 
 ## Floor types
 
