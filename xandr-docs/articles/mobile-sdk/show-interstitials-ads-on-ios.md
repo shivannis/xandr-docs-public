@@ -11,15 +11,13 @@ ms.date : 10/28/2023
 This page has instructions and code samples for showing interstitial ads
 on iOS.
 
-## iOS - interstitial overview
+## Overview
 
-Showing interstitial ads is a little more work. In addition to
+Showing interstitial ads requires a little bit of more effort. In addition to
 implementing `viewDidLoad` as we did in the banner example, we must
-implement the `adDidReceiveAd` delegate method. See the example below
-for details.
+implement the `adDidReceiveAd` delegate method. Following section explains about it in details with code samples.
 
-Furthermore, actually showing interstitial ads to users is a two-step
-process:
+## Process
 
 1. Call `loadAd` to fetch the ad contents from our server and cache
     them locally. Note that any ad content is rendered in a WebView at
@@ -43,7 +41,7 @@ process:
 
 For more information, see the code sample below.
 
-## iOS - interstitial code sample
+## Code sample
 
 > [!NOTE]
 > The interstitial code sample below shows how to request ads using the placement ID. Beginning with version RC2.8, you can initialize interstitials using a combination of member ID and inventory code instead (placement ID is still supported). Here is the method:
@@ -53,7 +51,7 @@ For more information, see the code sample below.
 -(instancetype)initWithMemberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
 ```
 
-**Objective C**
+**Code sample (Objective C)**
 
 ``` 
 // iOS: ObjC code to show an interstitial ad
@@ -82,7 +80,7 @@ For more information, see the code sample below.
 @end
 ```
 
-**Swift:**
+**Code sample (Swift)**
 
 ``` 
 
