@@ -8,25 +8,28 @@ ms.date : 10/28/2023
 
 # Show Native Ads on iOS
 
+## Overview
 Native ads give you the ability to create ads that are customized to
-match the look and feel of the rest of your application. This page
-describes our Native Ads API at a high level, and includes a usage
-example. For a complete reference, see the inline documentation in the
-code.
+match the look and feel of the rest of your application. This article
+describes Mobile SDK Native Ads API at a high level, and includes an usage
+example. <!--For a complete reference, see the inline documentation in the
+code.-->
 
-Native networks supported through **mediation**:
+Native networks that supported through **mediation** for native ads are:
 
 - Facebook
 - Google AdMob and Google DoubleClick for Publishers (Google DFP)
+
+In order to serve native ads, you will send a "native ad request" and
+receive a "native ad response" as explained in the following section.
 
 > [!NOTE]
 > Maintain references to request and response objects!
 >
 >You must maintain a reference to the `ANNativeAdRequest` and `ANNativeAdResponse` objects you create. Otherwise they will go out of scope and cause unexpected behavior.
 
-In order to serve native ads, you will send a "native ad request" and
-receive a "native ad response". In the example request and response
-below, we:
+
+## Process
 
 - Set up a request object, and set some of its properties such as the
   placement ID and whether to pre-load the ad's icon image.
