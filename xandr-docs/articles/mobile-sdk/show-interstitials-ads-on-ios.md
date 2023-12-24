@@ -45,11 +45,10 @@ For more information, see the code sample below.
 
 > [!NOTE]
 > The interstitial code sample below shows how to request ads using the placement ID. Beginning with version RC2.8, you can initialize interstitials using a combination of member ID and inventory code instead (placement ID is still supported). Here is the method:
-
-``` 
-// iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
--(instancetype)initWithMemberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
-```
+> ``` 
+> // iOS: ObjC code that uses inventory code and member ID instead of placement ID (optional)
+> -(instancetype)initWithMemberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode;
+> ```
 
 **Code sample (Objective C)**
 
