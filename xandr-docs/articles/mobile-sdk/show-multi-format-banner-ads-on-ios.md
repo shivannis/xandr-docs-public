@@ -41,8 +41,7 @@ highest bid.
 
 ## Video orientation
 
-**Video player size:**
-
+### Set video player size
 Publishers have the option to set predetermined player sizes for
 different video orientations (portrait, landscape, and square) before
 loading the video ad using the **loadAd**() function. When the video
@@ -51,7 +50,7 @@ appropriate pre-set player size based on its aspect ratio. If these
 pre-set values are not defined, the SDK will default to using the
 primary AdSize of **ANBannerAdView** as the player size.
 
-**Set video player size for each ANBannerAdView instance:**
+**Code sample to set video player size for each ANBannerAdView instance:**
 
 ``` 
 banner!.landscapeBannerVideoPlayerSize = CGSize(width: 300, height: 250)
@@ -59,14 +58,13 @@ banner!.portraitBannerVideoPlayerSize = CGSize(width: 300, height: 400)
 banner!.squareBannerVideoPlayerSize = CGSize(width: 200, height: 200)
 ```
 
-**Video creative's width and height:**
+### Query video creative's width and height
 
 Publishers can query the size of the video ad using the below API.
-
-> [!NOTE]
->  The values will only be populated after the adDidReceiveAd callback is triggered.
 
 ``` 
 banner?.getVideoWidth()
 banner?.getVideoHeight()
 ```
+> [!NOTE]
+>  The values will only be populated after the adDidReceiveAd callback is triggered.
