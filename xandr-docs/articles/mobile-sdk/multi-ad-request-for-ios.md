@@ -141,7 +141,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
                       precision:(NSInteger)precision;
 ```
 
-**Parameters**
+#### Parameters
 
 | Parameter | Type | Scope | Description |
 |:---|:---|:---|:---|
