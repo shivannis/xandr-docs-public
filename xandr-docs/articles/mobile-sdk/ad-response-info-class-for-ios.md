@@ -31,7 +31,7 @@ To retrieve the adResponseInfo object from the ad response, use the following pr
 | `cpmPublisherCurrency` | NSNumber | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | NSString | The currency code of the publishers' currency. For example, USD |
 
-## Code samples - Objective C
+## Code samples (Objective C)
 
 ```
 - (void)requestBannerAd
@@ -54,7 +54,7 @@ To retrieve the adResponseInfo object from the ad response, use the following pr
 }
 ```
 
-## Code Samples - Swift
+## Code Samples (Swift)
 
 ```
 func requestBannerAd() {
@@ -80,7 +80,7 @@ func requestBannerAd() {
 > [!NOTE]
 > AdResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 >
-> **Objective C**
+> **Code sample (Objective C)**
 >
 > ```
 > // For interstitialAd once adDidReceiveAd is callback
@@ -92,7 +92,7 @@ func requestBannerAd() {
 >    NSString* nativeAdCreativeId = nativeAdResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
 > ```
 >
-> **Swift**
+> **Code sample (Swift)**
 >
 > ```
 > // For interstitialAd once adDidReceiveAd is callback
