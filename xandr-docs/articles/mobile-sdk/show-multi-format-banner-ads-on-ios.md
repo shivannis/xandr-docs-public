@@ -25,9 +25,8 @@ Some constraints:
 
 ## Show a mix of VAST video and HTML banner Ads
 
-Before you begin, you must [integrate the iOS SDK](ios-sdk-integration.md) with your project. 
-
-Next, enable Video Ads in your App for ANBannerAdView.
+1. Before you begin, you must [integrate the iOS SDK](ios-sdk-integration.md) with your project.
+2. Next, enable Video Ads in your App for ANBannerAdView.
 
 ``` 
 banner.shouldAllowVideoDemand = true;
