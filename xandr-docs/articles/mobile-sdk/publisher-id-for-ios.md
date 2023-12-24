@@ -28,27 +28,27 @@ The [AdUnit](./ios-sdk-ad-units.md) class has following two methods for setting
 
 ### 1. Setter Method
 
-   **Code Sample (Swift) for the setter method**
+   **Code Sample (Swift)**
     
    ```
    public func setPublisherId (publisherId:Int)
    ```
     
-   **Code Sample (Objective C) for the setter method**
+   **Code Sample (Objective C)**
     
    ```
    - (void)setPublisherId:(NSInteger)publisherId;
    ```
 
-### 2. Getters
+### 2. Getter Method
 
-**Swift**
+**Code Sample (Swift)**
 
 ```
 publisherId:Int
 ```
 
-**Objective C**
+**Code Sample (Objective C)**
 
 ```
 (NSInteger) publisherId;
@@ -58,7 +58,7 @@ publisherId:Int
 
 Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` be initialized, `publisherId` is an optional setting. The `memberId`, `delegate` and `publisherId` may only be set during initialization. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process.  See [ANMultiAdRequest](./multi-ad-request-for-ios.md) for more details.
 
-**Objective C**
+**Code Sample (Objective C)**
 
 ```
 - (nullable instancetype)
