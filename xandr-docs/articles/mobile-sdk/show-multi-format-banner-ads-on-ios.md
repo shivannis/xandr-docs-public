@@ -37,7 +37,7 @@ is determined automatically by the SDK based on the creative with the
 highest bid.
 
 > [!NOTE]
-> If you have specified Video as a Media Type for your placement in Console, it is still necessary to use the aforementioned commands to activate video ads. Without explicitly enabling video ads through the SDK, only banner ads will be served. On the other hand, if you haven't included Video as a Media Type for your placement in Console, you can still enable video ads to be served by calling the above commands to set **AllowVideoDemand** to true.
+> If you have specified Video as a Media Type for your placement in the application, it is still necessary to use the aforementioned commands to activate video ads. Without explicitly enabling video ads through the SDK, only banner ads will be served. On the other hand, if you haven't included Video as a Media Type for your placement in the application, you can still enable video ads to be served by calling the above commands to set **AllowVideoDemand** to true.
 
 ## Video orientation
 
