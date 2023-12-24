@@ -24,9 +24,8 @@ In order to serve native ads, you will send a "native ad request" and
 receive a "native ad response" as explained in the following section.
 
 > [!NOTE]
-> Maintain references to request and response objects!
->
->You must maintain a reference to the `ANNativeAdRequest` and `ANNativeAdResponse` objects you create. Otherwise they will go out of scope and cause unexpected behavior.
+
+>Keep a reference to the `ANNativeAdRequest` and `ANNativeAdResponse` objects that you create, otherwise they will go out of scope and cause unexpected behavior.
 
 
 ## Process
