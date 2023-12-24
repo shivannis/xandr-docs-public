@@ -30,13 +30,13 @@ The following fields must be set:
 @property (nonatomic, readwrite) BOOL enableNativeRendering;
 ```
 
-Example:
+**Example**:
 
 ```
 bannerAdObject.enableNativeRendering = YES;
 ```
 
-**Response API for native assembly renderer**
+## Response API for native assembly renderer
 
 Banner's Delegate is being used to handle Banner-Native RendererAd
 
@@ -44,7 +44,7 @@ Banner's Delegate is being used to handle Banner-Native RendererAd
 - (void)adDidReceiveAd:(id)ad
 ```
 
-Example:
+**Example**:
 
 ```
 - (void)adDidReceiveAd:(id)ad
