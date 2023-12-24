@@ -1,39 +1,16 @@
 ---
-Title : Analyzing CTR and Conversion Rate for Guaranteed Outcomes
-Description : Instead of using the default metrics, calculate CTR and Conversion Rate
+title: Microsoft Monetize - Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+description: In this article, find information about how to analyze CTR and conversion rate using Clearing Event Units.
 ms.date: 10/28/2023
-for Guaranteed Outcomes using Clearing Event Units.
 ---
 
+# Microsoft Monetize - Analyzing CTR and conversion rate for guaranteed outcomes
 
-# Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+Instead of using the default metrics, calculate CTR and Conversion Rate for Guaranteed Outcomes using Clearing Event Units.
 
+- To calculate CTR, use Clicks / Clearing Event Units.
+- To calculate Conversion Rate use Conversions / Clearing Event Units.
 
+## Related topic
 
-
-
-Instead of using the default metrics, calculate CTR and Conversion Rate
-for Guaranteed Outcomes using Clearing Event Units.
-
-
-
-
-
-- To calculate CTR, use Clicks / Clearing Event
-  Units. 
-- To calculate Conversion Rate use Conversions /
-  Clearing Event Units. 
-
-
-
-
-
-Related Topics
-
-- <a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a>
-
-
-
-
-
-
+[Guaranteed Outcomes](guaranteed-outcomes.md)
