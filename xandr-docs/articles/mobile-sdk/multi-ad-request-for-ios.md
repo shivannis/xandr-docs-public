@@ -255,7 +255,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
   ```
 
 > [!NOTE]
-> `[ANMultiAdRequest load]` can also fail by returning `NO` even prior to sending a `UT Request`. if load returns `YES` that means the `UT Request` was initiated, and all further errors will come through the delegate method.
+> `[ANMultiAdRequest load]` can also fail by returning `NO` even prior to sending a `UT Request`. If load returns `YES` that means the `UT Request` was initiated, and all further errors will come through the delegate method.
 
 ## Related topics
 
