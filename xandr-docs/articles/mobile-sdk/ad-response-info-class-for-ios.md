@@ -7,11 +7,11 @@ ms.date : 10/28/2023
 
 # Ad response info class for iOS
 
-This document describes about the Ad Response Info class in iOS Mobile SDK.
+This article explains about the ad response info class in iOS Mobile SDK.
 
 The [ANAdResponseInfo class](https://github.com/appnexus/mobile-sdk-ios/blob/master/sdk/sourcefiles/public-headers/ANAdResponseInfo.h) is a read-only public convenience class created to hold Universal Tag response properties that are relevant to publishers. When an `AdUnit` is returned from the `loadAd` method without an error, either as a fully defined `adObject` or as a no bid response, an `ANAdResponseInfo` is instantiated as a `adResponseInfo` property of the returned Ad Unit.
 
-To retrieve the adResponseInfo object from the ad response:
+To retrieve the adResponseInfo object from the ad response, use the following properties:
 
 ``` 
 @property (nonatomic, readwrite, strong, nullable) ANAdResponseInfo *adResponseInfo;
