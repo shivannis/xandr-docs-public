@@ -1,18 +1,18 @@
 ---
-title : Show Multi-Format Banner Ads on iOS
+title : Show multi-format banner ads on iOS
 description : The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. 
 ms.custom: ios-sdk
 ms.date : 10/28/2023
 ---
 
 
-# Show Multi-Format banner Ads on iOS
+# Show multi-format banner ads on iOS
 
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.
 
-As of Version 4.6 for Android and Version 4.5 for iOS, the
-AppNexus mobile SDK supports serving multiple
+As of version 4.5 for iOS, the
+mobile SDK supports serving multiple
 creative formats (RTB VAST outstream videos and regular banner ads)
 through a single banner entry point.
 
