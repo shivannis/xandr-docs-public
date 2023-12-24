@@ -28,17 +28,17 @@ The [AdUnit](./ios-sdk-ad-units.md) class has following two methods for setting
 
 ### 1. Setter Method
 
-    **Code Sample (Swift) for the setter method**
+   **Code Sample (Swift) for the setter method**
     
-    ```
-    public func setPublisherId (publisherId:Int)
-    ```
+   ```
+   public func setPublisherId (publisherId:Int)
+   ```
     
-    **Code Sample (Objective C) for the setter method**
+   **Code Sample (Objective C) for the setter method**
     
-    ```
-    - (void)setPublisherId:(NSInteger)publisherId;
-    ```
+   ```
+   - (void)setPublisherId:(NSInteger)publisherId;
+   ```
 
 ### 2. Getters
 
