@@ -120,7 +120,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 ### Location methods
 
-`setLocationWithLatitude` sets the value of the `location` property of a `MultiAdRequest` object. Can be called with an additional `precision` parameter. For example,
+`setLocationWithLatitude` sets the value of the `location` property of a `MultiAdRequest` object. It can be called with an additional `precision` parameter. For example,
 
 **Without precision parameter**
 
