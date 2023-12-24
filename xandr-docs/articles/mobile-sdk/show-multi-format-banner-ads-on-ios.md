@@ -21,7 +21,7 @@ Some constraints:
 - Video mediation is not yet supported.
 - You cannot currently configure video player options, such as starting
   video with audio on/off or the presence of a volume button, for a
-  mobile placement with the Console UI.
+  mobile placement with the application UI.
 
 ## Show a mix of VAST video and HTML banner Ads
 
