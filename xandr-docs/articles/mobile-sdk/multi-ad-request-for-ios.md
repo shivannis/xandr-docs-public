@@ -100,7 +100,7 @@ This basic initialization returns an instance of the class but takes no action. 
 | `adUnits` | List of adUnits | nonnull | Optional | A list of `AdUnits` for initialization of a `ANMultiAdRequest`. |
 
 > [!NOTE]
-> If initialization is successful, returns  `YES`, otherwise returns `NO`. 
+> If initialization is successful, SDK returns  `YES`, otherwise returns `NO`. 
 
 ## Configuration
 
