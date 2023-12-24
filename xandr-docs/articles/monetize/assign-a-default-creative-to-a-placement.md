@@ -69,8 +69,8 @@ Specify a value in the **Serve the default creative if the maximum eCPM bid is l
 - **Template Options** - If the rendering template for the creative requires you to make additional decisions about the creative content, complete the fields in the **Template Options** section.
 - **Size** - If the file dimensions are not automatically detected, select the file width and height. If you don't find the dimensions listed, select "custom" and then enter the width and height. Note that the default creative's dimensions must match the size of the placement.
 
-> [!NOTE]
-> In the event that a placement is sizeless and you have not selected a default creative for all possible sizes, a [Default PSAs](default-psas.md) may serve instead of your default creative.
+    > [!NOTE]
+    > In the event that a placement is sizeless and you have not selected a default creative for all possible sizes, a [Default PSA](default-psas.md) may serve instead of your default creative.
 
 ### Third-Party default creative
 
