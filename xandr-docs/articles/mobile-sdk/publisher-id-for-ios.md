@@ -7,38 +7,40 @@ ms.date : 10/28/2023
 
 # Publisher ID for iOS
 
-This document describes the `publisher_id` parameter of the Universal Tag service.  
+This article explains about the `publisher_id` parameter of the Universal Tag service.  
 
-## What is Publisher ID?
+## Overview
 
-The Publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the Member ID would be used to determine which default creative to return with the request. With the addition of the Publisher ID parameter publishers now have two options for resolving default placements when the request fails, the publisher and the member default placement.
+The publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the member ID was be used to determine which default creative to return with the request. With the addition of the publisher ID parameter, publishers now have two following options to resolve default placements when the request fails:
+1. publisher level default placement
+2. member level default placement
 
-### Publisher ID process
+### How it works
 
 When an invalid placement code is called:
 
 - If a `publisher_id` is present in the JSON request, the request will be rerouted to the publisher level default placement.
 - When there is no `publisher_id` in the JSON request, the request will be rerouted to the member level default placement.
 
-## Ad unit
+## Ad unit methods for publisher ID
 
-The [AdUnit](./ios-sdk-ad-units.md) class has two methods for setting and retrieving `publisherId`.
+The [AdUnit](./ios-sdk-ad-units.md) class has following two methods for setting and retrieving `publisherId`:
 
-### Setters
+### 1. Setter Method
 
-**Swift**
+    **Code Sample (Swift) for the setter method**
+    
+    ```
+    public func setPublisherId (publisherId:Int)
+    ```
+    
+    **Code Sample (Objective C) for the setter method**
+    
+    ```
+    - (void)setPublisherId:(NSInteger)publisherId;
+    ```
 
-```
-public func setPublisherId (publisherId:Int)
-```
-
-**Objective C**
-
-```
-- (void)setPublisherId:(NSInteger)publisherId;
-```
-
-### Getters
+### 2. Getters
 
 **Swift**
 
