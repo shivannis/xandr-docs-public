@@ -19,7 +19,7 @@ the [version 3.0 release](https://github.com/appnexus/mobile-sdk-ios/releases/t
 
 ## Steps to show instream ads
 
-### Step 1: Initialize the video Ad Object
+### Step 1: Initialize the video ad Object
 
 A video ad can be fetched and displayed with as few as three
 methods `initWithPlacementId:`, `loadAdWithDelegate:` and `playAdWithContainer:withDelegate:`.
@@ -32,7 +32,7 @@ In this step, initialize `ANInstreamVideoAd` with the placement ID.
 ANInstreamVideoAd  *videoAd  = [[ANInstreamVideoAd alloc] initWithPlacementId:@"MY-PLACEMENT-ID"];
 ```
 
-### Step 2: Load the Video Ad
+### Step 2: Load the video ad
 
 Load the video ad and (optionally) define
 the `ANInstreamVideoAdLoadDelegate`.
@@ -63,7 +63,7 @@ complete details, see *`ANInstreamVideoAd.h`* .)
 [videoAd loadAdWithDelegate:self];
 ```
 
-## Step 3: Show the video Ad
+## Step 3: Show the video ad
 
 Display the video ad over your content
 container `UIView` and define the `ANInstreamVideoAdPlayDelegate`.
@@ -94,7 +94,7 @@ that further define video ad playback state and lifecycle for both the
 video ad and the landing page. (See *`ANInstreamVideoAd.h`* for complete
 details.)
 
-## Pause and resume the video Ad
+## Pause and resume the video ad
 
 To pause or resume playing the video ad use the following method calls: 
 
@@ -128,7 +128,7 @@ videoAd.landingPageLoadsInBackground = YES;  // DEFAULT is YES.
 When the user returns from the browser, the video ad will resume
 playback.
 
-## Load more than one video Ad per session
+## Load more than one video ad per session
 
 Any number of video ads may be loaded in a single session. Accomplish
 this by calling `initWithPlacementId:` and `loadAdWtihDelegate:` once
@@ -147,7 +147,7 @@ creative:
 -(ANVideoOrientation) getVideoOrientation; //Provide the Orientation of the Video rendered. Possible video orientations can be square, portrait, landscape or none
 ```
 
-## Determine Ad play progress
+## Determine ad play progress
 
 You can determine how far the adPlay has progressed.
 
@@ -155,7 +155,7 @@ You can determine how far the adPlay has progressed.
 -(NSUInteger) getAdPlayElapsedTime;
 ```
 
-## Video Ad fullscreen display
+## Video ad fullscreen display
 
 Mobile SDK provides no functionality
 for displaying video ads or developer designated content in full screen
