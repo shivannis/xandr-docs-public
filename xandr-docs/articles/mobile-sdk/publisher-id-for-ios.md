@@ -11,7 +11,7 @@ This article explains about the `publisher_id` parameter of the Universal Tag se
 
 ## Overview
 
-The publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the member ID was be used to determine which default creative to return with the request. With the addition of the publisher ID parameter, publishers now have two following options to resolve default placements when the request fails:
+The publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. In older versions of mobile SDK, if the request failed, the member ID was be used to determine which default creative to return with the request. With the addition of the publisher ID parameter, publishers now have two following options to resolve default placements when the request fails:
 1. publisher level default placement
 2. member level default placement
 
