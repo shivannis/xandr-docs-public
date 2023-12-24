@@ -236,7 +236,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
   - (void)stop;
   ```
 
-#### ANMultiAdRequestDelegate Methods
+### ANMultiAdRequestDelegate methods
 
 - **`multiAdRequestDidComplete`**
 
