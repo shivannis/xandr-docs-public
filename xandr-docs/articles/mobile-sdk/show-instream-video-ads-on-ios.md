@@ -12,37 +12,39 @@ ms.date : 10/28/2023
 This page describes how to use the SDK to fetch and display instream
 video ads.
 
-## Step 1. Include the SDK in your project
+## Prerequisite 
 
-As of
+Include the SDK in your project. As of
 the [version 3.0 release](https://github.com/appnexus/mobile-sdk-ios/releases/tag/3.0), the SDK has instream video support. For instructions on how to integrate the SDK, see [Integrate the SDK](ios-sdk-integration-instructions.md).
 
-## Step 2. Initialize the video Ad Object
+## Steps to show instream ads
+
+### Step 1: Initialize the video Ad Object
 
 A video ad can be fetched and displayed with as few as three
 methods `initWithPlacementId:`, `loadAdWithDelegate:` and `playAdWithContainer:withDelegate:`.
 Defining the delegates for loading and playback will provide granular
 feedback for the video ad lifecycle.
 
-First, initialize `ANInstreamVideoAd` with the placement ID.
+In this step, initialize `ANInstreamVideoAd` with the placement ID.
 
 ``` 
 ANInstreamVideoAd  *videoAd  = [[ANInstreamVideoAd alloc] initWithPlacementId:@"MY-PLACEMENT-ID"];
 ```
 
-## Step 3. Load the Video Ad
+### Step 2: Load the Video Ad
 
-Second, load the video ad and (optionally) define
+Load the video ad and (optionally) define
 the `ANInstreamVideoAdLoadDelegate`.
 
-Using the `ANInstreamVideoAdLoadDelegate` is highly recommended it
+Using the `ANInstreamVideoAdLoadDelegate` is highly recommended. It
 indicates when the load is complete or, alternatively, whether an error
 occurred during load.
 
 The delegates return the instance of `ANInstreamVideoAd`, expressed as a
-reference to its superclass `ANAdProtocol`which is shared with other
+reference to its superclass `ANAdProtocol`. It is shared with other
 Mobile SDK ad formats. The video ad object retains state that may be
-useful to reference during the lifecycle of the video ad.
+useful to refer during the lifecycle of the video ad.
 
 Video ad state includes the placement ID, whether the video ad was
 clicked or skipped, and error feedback in the case of failure. (For
@@ -61,21 +63,16 @@ complete details, see *`ANInstreamVideoAd.h`* .)
 [videoAd loadAdWithDelegate:self];
 ```
 
-## Step 4. Show the video Ad
+## Step 3: Show the video Ad
 
-Third and finally, display the video ad over your content
+Display the video ad over your content
 container `UIView` and define the `ANInstreamVideoAdPlayDelegate`.
 
 The delegate methods return the instance of `ANInstreamVideoAd`,
-expressed as a reference to its superclass `ANAdProtocol` which is
+expressed as a reference to its superclass `ANAdProtocol`. It is
 shared with other Mobile SDK ad formats. In addition to returning video
 ad state, the required method `adDidComplete:withState:` indicates when
 the video ad has completed.
-
-`ANInstreamVideoAdPlayDelegate` contains many useful optional methods
-that further define video ad playback state and lifecycle for both the
-video ad and the landing page. (See *`ANInstreamVideoAd.h`* for complete
-details.)
 
 ``` 
 @protocol  ANInstreamVideoAdPlayDelegate <NSObject>
@@ -91,6 +88,11 @@ details.)
 @end
 [videoAd playAdWithContainer:MY-VIDEO-CONTENT-UIVIEW withDelegate:self];
 ```
+
+`ANInstreamVideoAdPlayDelegate` contains many useful optional methods
+that further define video ad playback state and lifecycle for both the
+video ad and the landing page. (See *`ANInstreamVideoAd.h`* for complete
+details.)
 
 ## Pause and resume the video Ad
 
@@ -155,7 +157,7 @@ You can determine how far the adPlay has progressed.
 
 ## Video Ad fullscreen display
 
-The Xandr Mobile SDK provides no functionality
+Mobile SDK provides no functionality
 for displaying video ads or developer designated content in full screen
 mode. The video ad container automatically appears over the frame of the
 content container view using the same dimensions and positioning of the
