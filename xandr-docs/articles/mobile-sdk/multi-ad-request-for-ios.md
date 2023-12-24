@@ -9,7 +9,7 @@ ms.date : 10/28/2023
 
 ## Overview
 
-This page has instructions and code samples for initiating and configuring a `ANMultiAdRequest`. `ANMultiAdRequest` enables the user to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
+This article provides instructions and code samples for initiating and configuring a multi ad request (`ANMultiAdRequest`). `ANMultiAdRequest` enables you to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
 
 `ANMultiAdRequest`, like an `AdUnit`, implements a subset of `ANAdProtocol`. This enables a `ANMultiAdRequest` to adopt the type and behavior of different `AdUnits` ([banner](./show-banners-on-ios.md), [native](./show-banner-native-on-ios.md), [video](./show-instream-video-ads-on-ios.md), etc.) using the same specifications of each `AdUnit` type. Custom keywords can be assigned to a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`.
 
