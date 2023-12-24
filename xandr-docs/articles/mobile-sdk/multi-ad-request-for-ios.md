@@ -91,7 +91,7 @@ This basic initialization returns an instance of the class but takes no action. 
          andDelegate:(nullable id<ANMultiAdRequestDelegate>)delegate;
 ```
 
-**Arguments**
+### Arguments
 
 | Variable | Type | Attributes | Scope | Description |
 |:---|:---|:---|:---|:---|
