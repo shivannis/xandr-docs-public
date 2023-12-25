@@ -7,30 +7,30 @@ ms.date : 10/28/2023
 
 # Publisher ID for Android
 
-This page describes the `publisher_id` parameter of the Universal Tag service.  
+This article describes the `publisher_id` parameter of the Universal Tag service.  
 
-## What is Publisher ID?
+## Overview
 
 The Publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the Member ID would be used to determine which default creative to return with the request. With the addition of the Publisher ID parameter publishers now have two options for resolving default placements when the request fails, the publisher and the member default placement.
 
-## Publisher ID process
+## How it works
 
 When an invalid placement code is called:
 
 - If a `publisher_id` is present in the JSON request, the request will be rerouted to the publisher level default  placement.
 - When there is no `publisher_id` in the JSON request, the request will be rerouted to the member level default placement.
 
-## Ad unit
+## Ad unit methods for publisher ID
 
 The [AdUnit](./android-sdk-ad-units.md) class has two methods for setting and retrieving `publisherId`.
 
-**Setter**
+### 1. Setter Method
 
 ```
 public void setPublisherId(int publisherId)
 ```
 
-**Getter**
+### 2. Getter Method
 
 ```
 public int getPublisherId() 
