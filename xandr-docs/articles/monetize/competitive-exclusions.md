@@ -1,51 +1,20 @@
 ---
-Title : Competitive Exclusions
-Description : You can use competitive exclusions to prevent creatives with competitive
+title : Microsoft Monetize - Competitive Exclusions
+description: The article outlines the use of competitive exclusions to prevent creatives featuring competitive brands or offer categories from being displayed together.
 ms.date: 10/28/2023
-brands or offer categories from serving alongside each other.
 ---
 
+# Microsoft Monetize - Competitive exclusions
 
-# Competitive Exclusions
+You can use competitive exclusions to prevent creatives with competitive brands or offer categories from serving alongside each other.
 
-
-
-You can use competitive exclusions to prevent creatives with competitive
-brands or offer categories from serving alongside each other.
-
-Competitive exclusion settings are available at the advertiser and
-creative levels. If you set competitive exclusions at the advertiser
-level, creatives associated with the brands or offer categories that you
-select will not serve alongside that advertiser's creatives. If you edit
-the competitive exclusion settings for an individual creative, the
-brands or offer categories you select will not serve alongside that
-specific creative. For more information, see
-<a href="self-auditing-creatives.md" class="xref"
-title="When adding creatives to Xandr, it&#39;s to your advantage to submit each creative to Xandr for human auditing. The manual audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform.">Self-Auditing
-Creatives</a>.
-
->
+Competitive exclusion settings are available at the advertiser and creative levels. If you set competitive exclusions at the advertiser level, creatives associated with the brands or offer categories that you select will not serve alongside that advertiser's creatives. If you edit the competitive exclusion settings for an individual creative, the
+brands or offer categories you select will not serve alongside that specific creative. For more information, see [Self-Auditing Creatives](self-auditing-creatives.md).
 
 ## Related Topics
 
-- <a href="working-with-creatives.md" class="xref"
-  title="You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.">Working
-  with Creatives</a>
-- <a href="create-an-advertiser.md" class="xref">Create an
-  Advertiser</a>
-- <a href="creative-branding.md" class="xref"
-  title="Xandr maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.">Creative
-  Branding</a>
-- <a href="exclude-competitive-brands-for-a-creative.md" class="xref"
-  title="When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive brands from serving alongside each other. You can exclude a maximum of 25 brands for each creative.">Exclude
-  Competitive Brands for a Creative</a>
-- <a href="exclude-competitive-offer-categories-for-a-creative.md"
-  class="xref"
-  title="When adding creatives, you can apply competitive exclusions from the Competitive Exclusions (optional) section to prevent creatives with competitive offer categories from serving alongside each other. You can exclude a maximum of five offer categories for each creative.">Exclude
-  Competitive Offer Categories for a Creative</a>
-
-
-
-
-
-
+- [Working with Creatives](working-with-creatives.md)
+- [Create an Advertiser](create-an-advertiser.md)
+- [Creative Branding](creative-branding.md)
+- [Exclude Competitive Brands for a Creative](exclude-competitive-brands-for-a-creative.md)
+- [Exclude Competitive Offer Categories for a Creative](exclude-competitive-offer-categories-for-a-creative.md)
