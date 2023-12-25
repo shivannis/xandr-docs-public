@@ -46,6 +46,6 @@ By default, your campaign will target all custom categories. However, you can na
 
 ## Related topics
 
-- [content-categories.md](Content Categories)
+- [Content Categories](content-categories.md)
 - [Manage Custom Content Categories](manage-custom-content-categories.md)
 - [Create a Campaign](create-a-campaign.md)

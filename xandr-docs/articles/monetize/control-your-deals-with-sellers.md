@@ -20,21 +20,21 @@ You can control deals received from sellers on the **Deals** screen. You can:
 
 ## Getting to the deals screen
 
-To reach the **Deals with Sellers** screen, select **Partners** \> **Deals**
+To reach the **Deals with Sellers** screen, select **Partners** \> **Deals**.
 
 ## Setting deal review preferences
 
 Buyers can configure the default manner in which they process new seller deals by selecting one of the following settings:
 
-- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md#ID-000013a8__ID-0000144c)).
+- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md)).
   
 - **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and
   accepted or declined (see [Accepting or Declining Deals]()).
 
-> [!NOTE]
->
-> - **Default Active** is the default setting if no deal review preference is set.
-> - Changing the review preference only affects new deals. It does not change the status of existing deals.
+    > [!NOTE]
+    >
+  > - **Default Active** is the default setting if no deal review preference is set.
+  > - Changing the review preference only affects new deals. It does not change the status of existing deals.
 
 To set the deal review preference for new seller deals, do the following:
 
@@ -51,13 +51,14 @@ If you have set your buyer review preference to **Require Review** (see [Setting
 
 ### Accepted deals
 
-When you select Accept, the deal is:
+When you select **Accept**, the deal is:
 
 - Added to your list of **Active** deals
 - Eligible for targeting
 - Passed to the bidstream
 
-Accepted deals can be set to **Inactive** status (see [Managing Deal Status](control-your-deals-with-sellers.md) if you want to remove them from the list of **Active** deals.
+> [!NOTE]
+> Accepted deals can be set to **Inactive** status (see [Managing Deal Status](control-your-deals-with-sellers.md)) if you want to remove them from the list of **Active** deals.
 
 ### Declined deals
 
@@ -122,7 +123,7 @@ To assign a **Deal Alias** to a deal, do the following:
 > [!NOTE]
 > The **Deal Alias** field is limited to 254 characters.
 
-1. Select **Partners** \> **Deals**
+1. Select **Partners** \> **Deals**.
 1. Click anywhere in the row of the deal you want to assign a **Deal Alias** to (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or Code to find a specific deal).
 1. In the **Deal Controls** section, click the **edit** icon and enter the internal name in the **Deal Alias** field.
 1. Click **Save**.
