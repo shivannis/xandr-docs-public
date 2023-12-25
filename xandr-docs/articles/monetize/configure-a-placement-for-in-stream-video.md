@@ -58,7 +58,7 @@ the query string or on-page code if necessary.
 
     > [!TIP]
     >
-  > If the placement can support VPAID, make sure you select **application/javascript** as a mime type. Otherwise, viewability won't be measured.
+> If the placement can support VPAID, make sure you select **application/javascript** as a mime type. Otherwise, viewability won't be measured.
 
     If your player can handle mixed media, leave the **Handles Mixed Media** checkbox selected. A player that handles mixed media may only accept one kind of creative.
 
