@@ -7,9 +7,11 @@ ms.date : 10/28/2023
 
 # Ad response info class for Android
 
+## Overview
+
 The adResponseInfo class is a convenience class created to hold Universal Tag response properties that are relevant to publishers. When an `AdUnit` is returned from the `loadAd` method without an error, either as a fully defined `adObject` or as a no bid response, an `ANAdResponseInfo` is instantiated as an `adResponseInfo` property of the returned Ad Unit.
 
- To retrieve the adResponseInfo object from the ad response:
+To retrieve the adResponseInfo object from the ad response:
 
 ```
 public ANAdResponseInfo getAdResponseInfo()
@@ -29,7 +31,7 @@ public ANAdResponseInfo getAdResponseInfo()
 | `cpmPublisherCurrency` | Double | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | String | The currency code of the publishers' currency. For example, USD |
 
-## Code samples - Java
+## Code sample (Java)
 
 ```
 // Request Banner Ad
@@ -51,7 +53,7 @@ public void onAdLoaded(AdView bav) {
 }
 ```
 
-## Code samples - Kotlin
+## Code sample (Kotlin)
 
 ```
 // Request Banner Ad
@@ -76,7 +78,7 @@ override fun onAdLoaded(ad: AdView?) {
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
 >
-> **Java**
+> **Code sample (Java)**
 >
 > ```
 > //Video Ad
@@ -87,7 +89,7 @@ override fun onAdLoaded(ad: AdView?) {
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
 > ```
 >
-> **Kotlin**
+> **Code sample (Kotlin)**
 >
 > ```
 > //Video Ad
