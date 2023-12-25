@@ -92,7 +92,7 @@ In this example response, we use several elements of a native ad:
 ## Fields supported in Native
 
 As of version 5.0 of the Mobile SDK, support for native assets is
-aligned with how native creatives are set up on Console.
+aligned with how native creatives are set up in the application.
 
 If you are still using Legacy Native in the application, you will need to move
 to "New" Native for your creatives.
