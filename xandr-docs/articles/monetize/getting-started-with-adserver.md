@@ -46,7 +46,7 @@ Manage your guaranteed delivery.
 
 - [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md)
 - [Inventory Forecasting](inventory-forecasting.md)
-- [Yieldex Analytics](https://wiki.xandr.com/display/YieldexAnalytics/Home)
+- [Yieldex Analytics](../yield-analytics-ui/yield-analytics-overview.md)
 
 **Priorities**
 
@@ -74,4 +74,4 @@ You'll find information on all your reporting needs in our [Reporting Guide](rep
 
 Information about data protection and privacy on the Xandr Platform.
 
-  [GDPR](https://wiki.xandr.com/display/GDPR/GDPR%2band%2bePR%2b-%2bHome)
+  [GDPR](https://microsoftapc.sharepoint.com/teams/PrivacyRegulations)
