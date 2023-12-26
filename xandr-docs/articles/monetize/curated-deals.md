@@ -1,26 +1,16 @@
 ---
-Title : Curated Deals
-Description : <b>Note:</b> Deal curation is not available to
+title : Microsoft Monetize - Curated Deals
+description : This page covers concepts on Curated Deals and addresses common questions associated with it.
 ms.date: 10/28/2023
-all clients. Contact your Xandr representative
 ---
 
 
-# Curated Deals
+# Microsoft Monetize - Curated deals
 
+> [!NOTE]
+> Deal curation is not available to all clients. Contact your Xandr representative for information on how you can be enabled for deal curation.
 
-
-
-
-<b>Note:</b> Deal curation is not available to
-all clients. Contact your Xandr representative
-for information on how you can be enabled for deal curation.
-
-
-
->
-
-## Microsoft Curate Client Overview
+## Microsoft Curate client overview
 
 Microsoft Curate enables curators like retailers,
 data companies, independent trading desks, and other media companies to
@@ -40,11 +30,7 @@ buyers could act as curators to create deals that reflect their
 decisions about segments, supply types, inventory lists, margin
 percentage, optimization, and so on.
 
-
-
->
-
-## Common Questions
+## Common questions
 
 **What fees/charges are associated with curated transactions?**
 
@@ -78,9 +64,7 @@ curators. Generally, curators are identified with “\[CURATOR\]” at the
 end of their member name. Sellers can also pull reporting on each
 curator’s activity with your member through the Network Analytics report
 by adding “is curated” and/or “curator member ID” as a dimension. For
-more information, see
-<a href="partner-center-screen-seller-view.md" class="xref">Partner
-Center Screen - Seller View</a> or reach out to your account management
+more information, see [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) or reach out to your account management
 team.
 
 **How do I know I’m getting a better deal with curation?**
