@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Inventory Availability Report
-description: Explore the Inventory Availability report to get an insight into the types of inventory available on the platform.
+description: Explore the Inventory Availability report to gain insights into the types of inventory available on the platform.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -29,7 +29,7 @@ Data in this report is retained for 30 days.
 | `month` | date | Yes | `"2023-04"` | The month of the impression. |
 | `seller_member_id` | int | Yes | `9876` | Internal ID of the selling member. |
 | `seller_member_name` | string | No | `"CNN"` | Display name of the seller member. |
-| `size` | string | Yes | `"120"x"600"` | The standard size of a creative. To know more about the sizes, see standard_sizes returned from [Member Service](member-service.md). |
+| `size` | string | Yes | `"120"x"600"` | The standard size of a creative. To know more about the sizes, see `standard_sizes` returned from [Member Service](member-service.md). |
 | `geo_country` | string | Yes | `"US"` | The code of the geographical country associated with the impression. |
 | `imp_type_id` | int | Yes | `5` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker. |
 | `media_type_id` | int | Yes | `5` | The ID associated with a certain media type. For example, video. For more details, see [Media Type Service](media-type-service.md). |
@@ -39,7 +39,7 @@ Data in this report is retained for 30 days.
 | `language_id` | int | Yes | `1` | The ID associated with a certain browser. For example, English. For more details, see [Language Service](language-service.md). |
 | `operating_system_family_id` | int | Yes | `5` | The ID associated with a certain operating system family. For example, Microsoft Windows. For more details, see [Operating System Family Service](operating-system-family-service.md). |
 | `datacenter_id` | int | Yes | `001` | The ID of the data center used to route the request to demand partners. |
-| `seller_join_date` | int | Yes | 20220901 | The date when a seller member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**. |
+| `seller_join_date` | int | Yes | `20220901` | The date when a seller member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**. |
 | `mobile_application_id` | string | Yes | `"343200656"` (iOS) or `"com.rovio.angrybirds"` (Android) | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
 | `device_type` | int | Yes | `1` | Device type ID on which the impression was served. Possible values are:<br> - `0` (other devices)<br> - `1` (desktops & laptops)<br> - `2` (mobile phones)<br> - `3` (tablets)<br> - `4` (tv)<br> - `5` (game consoles)<br> - `6` (media players)<br> - `7` (set top box) |
 
@@ -90,7 +90,7 @@ $ curl -b cookies -X POST -d @platform_inventory_avail 'https://api.appnexus.com
 }
 ```
 
-### `GET` the report status from the report Service
+### `GET` the report status from the Report service
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/report?id=6b177543a9411ffa67b09bdf5e76cac1'

@@ -18,7 +18,7 @@ Impressions with key/value targeting will serve and be reported only for those i
 
 Not all impressions from key/value targets will be included in reports. To be included, the targets must meet the following criteria:
 
-- Key must be pre-defined. (For more information, see the [Pre-Defining Targeting Keys and Values](../monetize/pre-defining-targeting-keys-and-values.md) page in the UI.)
+- Key must be pre-defined. For more information, see the [Pre-Defining Targeting Keys and Values](../monetize/pre-defining-targeting-keys-and-values.md) page in the UI.
 - Value must be pre-defined OR Value must be targeted by at least one line item or campaign.
 - Value is not a numeric range (greater than or less than).
 - Value does not include a wildcard.
@@ -67,10 +67,10 @@ Data in this report is retained for 428 days.
 | `seller_member_id` | int | Yes | `456` | The ID of the selling member. |
 | `seller_member_name` | string | No | `"That Seller"` | The name of the selling member. |
 | `seller_member` | string | No | `"That Seller (456)"` | **Deprecated** (as of October 17, 2016). |
-| `placement_id` | int | Yes | 1212 | The ID of the placement.<br><br>**Note:** For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id` . |
+| `placement_id` | int | Yes | `1212` | The ID of the placement.<br><br>**Note:** For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id` . |
 | `placement_name` | string | No | `"lvillage 160x600"` | The name of the placement.<br><br>**Note:** For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
 | `placement` | string | No | `"lvillage 160x600 (1212)"` | **Deprecated** (as of October 17, 2016). |
-| `advertiser_id` | int | Yes | 789 | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown. |
+| `advertiser_id` | int | Yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown. |
 | `advertiser_name` | string | No | `"AdvertiserA"` | The name of the advertiser. |
 | `advertiser` | string | No | `"AdvertiserA (789)"` | **Deprecated** (as of October 17, 2016). |
 | `line_item_id` | int | Yes | `1122` | The ID of the line item. |
@@ -86,9 +86,9 @@ Data in this report is retained for 428 days.
 | `publisher` | string | No | `"PublisherA (555)"` | **Deprecated** (as of October 17, 2016). |
 | `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
 | `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id` . |
-| `imp_type_id` | int | Yes | 1 | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br>- `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker.<br><br>**Note:** RTB auctions are not included in reports. An impression with `imp_type_id` = `7` will not be reported. |
+| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br>- `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker.<br><br>**Note:** RTB auctions are not included in reports. An impression with `imp_type_id` = `7` will not be reported. |
 | `creative_id` | int | Yes | `444` | The ID of the creative.<br><br>**Note:**<br> - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
-| `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative.<br> - For impressions older than 100 days, creatives will be aggregated into one row with "All creative data older than 100 days" as the creative_name.<br> - For external click or impression trackers, creative_name will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative.<br> - For impressions older than 100 days, creatives will be aggregated into one row with `"All creative data older than 100 days"` as the `creative_name`.<br> - For external click or impression trackers, creative_name will be `"External Clicks"` or `"External Imps"`. |
 | `creative` | string | No | `"Q1 2017 728x90 (444)"` | **Deprecated** (as of October 17, 2016). |
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
 | `advertiser_currency` | string | Yes | `"USD"` | The currency used by the advertiser. |
@@ -171,7 +171,7 @@ $ curl -b cookies -X post -d @key_value_analytics "https://api.appnexus.com/repo
 }
 ```
 
-### `GET` the report status from the report Service
+### `GET` the report status from the Report service
 
 Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
 `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.

@@ -10,11 +10,10 @@ ms.custom: digital-platform-api
 This read-only service allows you to view the labels that can be applied to your advertisers, insertion orders, line items, campaigns, and
 publishers. It also allows you to view the labels that have already been applied.
 
-An example of an advertiser label is "Salesperson". You might use this label to specify the name of the salesperson responsible for each of your advertisers. You might then run the Network Analytics report filtered by "salesperson_for_advertiser" to focus on the advertisers
-that a particular salesperson is responsible for, or grouped by "salesperson_for_advertiser" to rank the performance of your
+An example of an advertiser label is `"Salesperson"`. You might use this label to specify the name of the salesperson responsible for each of your advertisers. You might then run the Network Analytics report filtered by `"salesperson_for_advertiser"` to focus on the advertisers that a particular salesperson is responsible for, or grouped by `"salesperson_for_advertiser"` to rank the performance of your
 salespeople.
 
-The following reports currently support labels: [Network Analytics](network-analytics.md), [Network Advertiser Analytics](network-advertiser-analytics.md), and [Advertiser Analytics](advertiser-analytics.md). For the full list of report columns associated with labels, see "report_field" below.
+The following reports currently support labels: [Network Analytics](network-analytics.md), [Network Advertiser Analytics](network-advertiser-analytics.md), and [Advertiser Analytics](advertiser-analytics.md). For the full list of report columns associated with labels, see `"report_field"` below.
 
 ## REST API
 
@@ -33,10 +32,10 @@ The following reports currently support labels: [Network Analytics](network-anal
 | `is_reporting_enabled` | boolean | If `true`, the label is available for use in reporting. |
 | `last_modified` | timestamp | The date and time when the label was last modified. |
 | `member_id` | int | Since all labels are currently available to all members, this field will always be `NULL`. In the future, it may become possible for a member to create unique labels, in which case this field would return the ID of the owning member.  |
-| `name` | string | The name of the label. Possible values: `"Salesperson"`, `"Account Manager"`, `"Trafficker"`, `"Sales Rep"`, `"Test/Control"`, `"Campaign Type"`, or `"Advertiser Type"`. For `id`/`name`/`object_type` mappings, see the first example below. |
-| `object_type` | enum | The type of object to which the label can be applied. <br>Possible values: `"advertiser"`, `"insertion_order"`, `"line_item"`, `"campaign"`, or `"publisher"`. For `id`/`name`/`object_type` mappings, see the first example below. |
+| `name` | string | The name of the label. Possible values: `"Salesperson"`, `"Account Manager"`, `"Trafficker"`, `"Sales Rep"`, `"Test/Control"`, `"Campaign Type"`, or `"Advertiser Type"`. For `id`/`name`/`object_type` mappings, see the [first example](#view-all-available-labels) below. |
+| `object_type` | enum | The type of object to which the label can be applied. <br>Possible values: `"advertiser"`, `"insertion_order"`, `"line_item"`, `"campaign"`, or `"publisher"`. For `id`/`name`/`object_type` mappings, see the [first example](#view-all-available-labels) below. |
 | `report_field` | string  | The report column with which you can report on the label. Possible report columns (with corresponding reports):<br> - `salesperson_for_advertiser` (Network Analytics)<br> - `salesperson_for_publisher` (Network Analytics)<br> - `account_manager_for_advertiser` (Network Analytics)<br> - `account_manager_for_publisher` (Network Analytics)<br> - `trafficker_for_line_item` (Network Analytics, Network Advertiser Analytics)<br> - `salesrep_for_line_item` (Network Analytics, Network Advertiser Analytics)<br> - `user_group_for_campaign` (Network Analytics, Network Advertiser Analytics, Advertiser Analytics)<br> - `advertiser_type` (Network Analytics, Network Advertiser Analytics)<br> - `line_item_type` (Network Analytics, Network Advertiser Analytics)<br> - `insertion_order_type` (Network Analytics, Network Advertiser Analytics) |
-| `values` | array of objects | This field is return when using the request `GET` [https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE](https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE). For more details, see [Values](#values) and the second example below. |
+| `values` | array of objects | This field is return when using the request `GET` [https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE](https://api.appnexus.com/label?show_values=true&object_type=OBJECT_TYPE). For more details, see [Values](#values) and the [second example](#view-the-labels-that-are-applied-to-your-advertisers) below. |
 
 ### Values
 

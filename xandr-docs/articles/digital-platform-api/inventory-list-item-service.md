@@ -1,10 +1,11 @@
 ---
 title: Inventory List Item Service
-description: Learn about the Inventory List Item Service that lets you add an app bundle IDs and raw URLs (domain or app) to an existing inventory list.
+description: Learn about the Inventory List Item service that lets you add app bundle IDs and raw URLs (domain or app) to an existing inventory list.
+ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Inventory List Item Service
+# Inventory List Item service
 
 The Inventory List Item Service lets you add app bundle IDs and raw URLs (domain or app) to an existing inventory list. For example:
 
@@ -20,8 +21,8 @@ The Inventory List Item Service lets you add app bundle IDs and raw URLs (domain
 |:---|:---|:---|
 | `GET` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item) | View all items (domains/apps) in a specific inventory list. |
 | `GET` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item?search=SEARCH_TERM](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item?search=SEARCH_TERM) | Search for domains or apps containing certain characters. |
-| `POST` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item) | Add new domains/apps to an inventory list.<br><br>**Note:** 1000 items (domains/apps) is the maximum number of items you can add to an inventory list for each POST request. |
-| `PUT` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item/%5BINVENTORY_LIST_ITEM_ID%5D](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item/%5BINVENTORY_LIST_ITEM_ID%5D) | Update an inventory list item.<br><br>**Note:** The `include_children` field is the only field in an inventory list item that you can update with a PUT request. |
+| `POST` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item) | Add new domains/apps to an inventory list.<br><br>**Note:** 1000 items (domains/apps) is the maximum number of items you can add to an inventory list for each `POST` request. |
+| `PUT` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item/%5BINVENTORY_LIST_ITEM_ID%5D](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item/%5BINVENTORY_LIST_ITEM_ID%5D) | Update an inventory list item.<br><br>**Note:** The `include_children` field is the only field in an inventory list item that you can update with a `PUT` request. |
 | `DELETE` | [https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item?id=1,2,3](https://api.appnexus.com/inventory-list/%5BLIST_ID%5D/item?id=1,2,3) | Delete items (domains/apps) from an inventory list. |
 
 ## JSON fields

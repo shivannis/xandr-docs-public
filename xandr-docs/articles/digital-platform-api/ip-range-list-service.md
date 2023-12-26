@@ -1,6 +1,6 @@
 ---
 title: IP Range List Service
-description: Explore the IP Range List Service, designed for managing lists of IP ranges utilized for targeting by the profile service.
+description: Explore the IP Range List service, designed for managing lists of IP ranges utilized for targeting by the profile service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,7 +16,7 @@ The intended use case for this service is for mobile buyers who would like to se
 To actually target the IP range lists you create and manage here, add them to the `ip_range_list_targets` field in the [Profile Service](profile-service.md).
 
 > [!NOTE]
-> Not Designed for Blocking Inventory (Blocklists)
+> **Not Designed for Blocking Inventory (Blocklists)**
 >
 > This service isn't designed for blocking IPs (like blocklists). For more details, see the [Limitations](#limitations) below.
 

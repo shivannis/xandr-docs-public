@@ -35,7 +35,7 @@ Data retention period for this report is 45 days.
 | `hour` | time | The hour of the auction.<br>**Example:** `"2010-02-01 06:00:00"` | Yes | Yes |
 | `day` | time | The day of the auction.<br>**Example:** `"2010-02-01"` | Yes | Yes |
 | `month` | time | The month of the auction.<br>**Example:** `"2010-02"` | Yes | Yes |
-| `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: `22`9 = PSA, `0` = Blank, or `319` = Default.<br>**Example:** `123` | Yes | Yes |
+| `buyer_member_id` | int | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: `229` = PSA, `0` = Blank, or `319` = Default.<br>**Example:** `123` | Yes | Yes |
 | `insertion_order_id` | int | The ID of the insertion order. | Yes | Yes |
 | `advertiser_id` | int | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown.<br>**Example:** `789` | Yes | Yes |
 | `line_item_id` | int | The ID of the line item.<br>**Example:** `111` | Yes | Yes |

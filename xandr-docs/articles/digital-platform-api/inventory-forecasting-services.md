@@ -15,17 +15,17 @@ For a publisher to commit to delivering against an advertiser's budget, that pub
 The API services described on this page are designed to help you learn about inventory availability and contention. [Forecast Inventory-Multi Service](#forecast-inventory-multi-service) and [Forecast Contention-Multi Service](#forecast-contention-multi-service) are fully supported services.
 
 > [!NOTE]
-> The Inventory Forecasting Services support both legacy guaranteed delivery line items (GDLI) and guaranteed delivery augmented line items (GDALI). The following will help you make proper forecasting requests for these different line item types:
+> The Inventory Forecasting Services support both legacy Guaranteed Delivery Line Items (GDLI) and Guaranteed Delivery Augmented Line Items (GDALI). The following will help you make proper forecasting requests for these different line item types:
 >
 > - **Legacy GDLIs**
 >   - Legacy GDLIs support campaigns, but do not support splits.
->   - If you do not have multiple child campaigns, pass an empty array (`campaigns: [ ]`)
+>   - If you do not have multiple child campaigns, pass an empty array (`campaigns: [ ]`).
 >   - For more information, see [Using Multiple Campaigns with a Guaranteed Line Item](../monetize/using-multiple-campaigns-with-a-guaranteed-line-item.md).
 > - **GDALIs**
 >   - GDALIs support splits, but do not support campaigns.
 >   - When you include split details in your request, you can use the query string parameter `split_breakout=true` to return a forecast
 >     broken down by individual splits as well as the line item as a whole.
->   - The  GDALI UI uses Inventory Forecasting Services for its **Forecasting Footer** (for more information, see the "Forecasting" section in [Create a Guaranteed Delivery Augmented Line Item](../monetize/create-a-guaranteed-delivery-line-item-gdali.md)).
+>   - The  GDALI UI uses Inventory Forecasting Services for its **Forecasting Footer**. For more information, see the "Forecasting" section in [Create a Guaranteed Delivery Augmented Line Item](../monetize/create-a-guaranteed-delivery-line-item-gdali.md).
 
 ## Forecast inventory-multi service
 
@@ -59,7 +59,7 @@ Use the query string parameters shown in the table below to tune the output. For
 | Field | Type | Description |
 |:---|:---|:---|
 | `line_item` | object | The flight dates and profile information associated with the line item against which you want to forecast.<br>**Required:** Yes |
-| `campaigns` | array of objects | An array of objects containing campaign information for the line item.<br><br>**Note:** Legacy GDLIs support campaigns; GDALIs do not support campaigns. If your Legacy GDLI does not have multiple child campaigns, pass an empty array (`campaigns: []`).<br>**Required:** Yes for Legacy GDLIs, but can be empty. Line items cannot have both campaigns and splits. |
+| `campaigns` | array of objects | An array of objects containing campaign information for the line item.<br><br>**Note:** Legacy GDLIs support campaigns; GDALIs do not support campaigns. If your Legacy GDLI does not have multiple child campaigns, pass an empty array (`campaigns: []`).<br><br>**Required:** Yes for Legacy GDLIs, but can be empty. Line items cannot have both campaigns and splits. |
 | `splits` | array of objects |  An array of objects containing split information for the line item.<br><br>**Note:** GDALIs support splits; Legacy GDLIs do not support splits. If your GDALI does not have splits, pass an empty array (`splits: []`). For more information, see [Splits Service](splits-service.md).<br><br>**Required:** Yes for GDALIs, but can be empty. Line items cannot have both campaigns and splits. |
 
 #### Line item
@@ -68,9 +68,9 @@ Use the query string parameters shown in the table below to tune the output. For
 |:---|:---|:---|
 | `start_date` | string  | The starting flight date.<br>**Required:** Yes |
 | `end_date` | string  | The end date of the flight. <br>**Required:** Yes |
-| `timezone` | enum | The timezone for which the line item is active. See [API Timezones](api-timezones.md) for details and accepted values.<br>**Required:** No, If not specified, member default timezone will be used. |
+| `timezone` | enum | The timezone for which the line item is active. For details and accepted values, see [API Timezones](api-timezones.md).<br>**Required:** No, If not specified, member default timezone will be used. |
 | `profile` | object  | An instance of the profile object. Use this object to define your targeting for the line item. For a list of available fields see, [Profile Service](profile-service.md). For profile settings that are specific to forecasting, see [Forecasting Profiles](#forecasting-profiles) below.<br>This field is required, but you can pass an empty object. However, passing an empty profile means you're forecasting without applying any targeting to your line item.<br>**Required:** Yes |
-| `roadblock` | object | The roadblock settings for the line item.<br>**Required:** Yes, only if `roadblocking_enabled = true` |
+| `roadblock` | object | The roadblock settings for the line item.<br>**Required:** Yes, only if `roadblocking_enabled = true`. |
 | `creatives` | array of objects | The creatives associated with the campaign. If you include creatives you must include at least the creative ID. For a list and descriptions of available fields, see [Creative Service](creative-service.md).<br>**Required:** No |
 
 #### Roadblock
@@ -79,9 +79,9 @@ Roadblocks can be set on either the line item level or the campaign level, but n
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `type` | enum | The type of roadblock. If you include the roadblock object, this field is required. Possible values include:<br> - `null`: There is no roadblocking set at the line item level. (GDALI only)<br>- - `no_roadblock`: There is no roadblocking set at the line item level. (Legacy GDLI only)<br> - `normal_roadblock`: The line item serves if the number of creatives is greater than or equal to the number of ad slots available. (Legacy GDLI only)<br> - `partial_roadblock`: The line item serves when at least one creative of each size fits an eligible ad slot. (GDALI & Legacy GDLI)<br> - `exact_roadblock`: The line item serves when the number of creatives is equal to the number of ad slots available. (Legacy GDLI only)<br><br>**Note:** For GDALIs, this value must be either `null` or `partial_roadblock`. |
-| `master_width` | int | The width of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to 0. (Do not set the value to null.) |
-| `master_height` | int | The height of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to 0. (Do not set the value to null.) |
+| `type` | enum | The type of roadblock. If you include the roadblock object, this field is required. Possible values include:<br> - `null`: There is no roadblocking set at the line item level. (GDALI only)<br> - `no_roadblock`: There is no roadblocking set at the line item level. (Legacy GDLI only)<br> - `normal_roadblock`: The line item serves if the number of creatives is greater than or equal to the number of ad slots available. (Legacy GDLI only)<br> - `partial_roadblock`: The line item serves when at least one creative of each size fits an eligible ad slot. (GDALI & Legacy GDLI)<br> - `exact_roadblock`: The line item serves when the number of creatives is equal to the number of ad slots available. (Legacy GDLI only)<br><br>**Note:** For GDALIs, this value must be either `null` or `partial_roadblock`. |
+| `master_width` | int | The width of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to `0`. (Do not set the value to `null`.) |
+| `master_height` | int | The height of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to `0`. (Do not set the value to `null`.) |
 
 The master creative is the creative with a size matching the `master_height` and `master_width` specified in the roadblock
 object. If more than one creative matches that size, the system will choose one as the master.
@@ -848,7 +848,7 @@ Use the query string parameters shown in the table below to tune the output. For
 | Field | Type | Description |
 |:---|:---|:---|
 | `line_item` | object | The flight dates and profile information associated with the line item against which you want to forecast.<br>**Required:** Yes  |
-| `campaigns` | array of objects | An array of objects containing campaign information for the line item.<br><br>**Note:** Legacy GDLIs support campaigns; GDALIs do not support campaigns. If your Legacy GDLI does not have multiple child campaigns, pass an empty array (`campaigns: []`).<br>**Required:** Yes for Legacy GDLIs, but can be empty. Line items cannot have both campaigns and splits. |
+| `campaigns` | array of objects | An array of objects containing campaign information for the line item.<br><br>**Note:** Legacy GDLIs support campaigns; GDALIs do not support campaigns. If your Legacy GDLI does not have multiple child campaigns, pass an empty array (`campaigns: []`).<br><br>**Required:** Yes for Legacy GDLIs, but can be empty. Line items cannot have both campaigns and splits. |
 | `splits` | array of objects | An array of objects containing split information for the line item.<br><br>**Note:** GDALIs support splits; Legacy GDLIs do not support splits. If your GDALI does not have splits, pass an empty array (`splits: []`). For more information, see [Splits Service](splits-service.md). <br><br>**Required:** Yes for GDALIs, but can be empty. Line items cannot have both campaigns and splits. |
 
 #### Forecast contention-multi service: Line item
