@@ -83,7 +83,7 @@ Additional fields returned for specific object types.
 | `line_item_id` | int | The ID of the line item to which the budget splits belong. |
 | `name` | string | The name of the budget split. |
 | `id` | int | The ID of the budget split. |
-| `state` | string | The state of the budget split.<br>Permitted values are:<br>`active`<br>`inactive` |
+| `state` | string | The state of the budget split.<br>Permitted values are:<br>- `active`<br>- `inactive` |
 | `last_modified` | date | The timestamp when the split was last modified. |
 
 ### Creative

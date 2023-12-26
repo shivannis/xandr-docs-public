@@ -28,10 +28,10 @@ This read-only service allows you to view all of the supported media subtypes an
 |:---|:---|:---|
 | `id` | int | The ID of the media subtype. |
 | `last_modified` | timestamp | The date and time when Xandr last modified the media subtype. |
-| `media_type` | object | The media type to which the subtype belongs. For more details, see Media Type below. |
+| `media_type` | object | The media type to which the subtype belongs. For more details, see [Media Type](#media-type) below. |
 | `name` | string | The name of the media subtype. For example, `"Standard Banner"`, `"In-Banner Video"`, or `"15-Second VAST"`. |
-| `native_assets` | array of objects | An array describing constraints on elements of native ads for this media subtype. Elements of a native ad can include the title, body content, and more. The format's constraints could be whether body content is required or recommended, or how long the text may be. For more details, see Native Assets below. |
-| `permitted_sizes` | array of objects | The permitted sizes for creatives of the media subtype. For more details, see Permitted Sizes below. <br><br>**Note:** Not all media subtypes have permitted size requirements. |
+| `native_assets` | array of objects | An array describing constraints on elements of native ads for this media subtype. Elements of a native ad can include the title, body content, and more. The format's constraints could be whether body content is required or recommended, or how long the text may be. For more details, see [Native Assets](#native-assets) below. |
+| `permitted_sizes` | array of objects | The permitted sizes for creatives of the media subtype. For more details, see [Permitted Sizes](#permitted-sizes) below. <br><br>**Note:** Not all media subtypes have permitted size requirements. |
 
 ### Media type
 

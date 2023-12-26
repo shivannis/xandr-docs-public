@@ -3,7 +3,7 @@ title: Line Item Service - GDALI
 description: Explore the Line Item Service for a Guaranteed Delivery Augmented Line Item (GDALI), which defines your financial relationship with an advertiser.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
----
+---The way the advertiser has agreed to pay you (also called Booked Revenue
 
 # Line Item service - GDALI
 
@@ -59,20 +59,20 @@ A GDALI is typically used for direct-sold business when an arrangement has been 
 | `discrepancy_pct` | double | **Deprecated.**<br>Migration Notes: **UNSUPPORTED** |
 | `publishers_allowed` | string | **Deprecated.** Use the values of the `supply_strategies` array to set the supply types (e.g., RTB/Open Exchange, Deals, Managed).<br>Migration Notes: **UNSUPPORTED** |
 | `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:** Depending on what you set the `revenue_type` field to, this field must be set to the actual value of that revenue type (e.g. `flat_fee`, `cpm`, or the desired viewable CPM).<br><br>**Required On:** `POST`/`PUT`<br>Migration Notes: NO CHANGE |
-| `revenue_type` | enum | The way the advertiser has agreed to pay you (also called Booked Revenue). Possible values are listed below.<br>- `"cpm"`: Select this value if you are being paid flat payment for 1000 impressions (CPM)<br>&nbsp; - For Viewable CPM, set `revenue_type` to "cpm", the `revenue_value` field to the Viewable CPM value, the `revenue_auction_event_type` field to `"view"` the `revenue_auction_event_type_code` field to `"view_display_50pv1s_an"` and `"revenue_auction_type_id"` to `2`. Only measured viewable impressions will be counted, according to the Xandr viewability measurement, using the IAB definition.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable.<br><br>**Note:** The flat fee will not be booked on the allocation date unless the line item has served at least 1 impression. If you define a `revenue_type` of `flat_fee` you must specify a value for `flat_fee_type`.<br>**Required On:** `POST`<br>Migration Notes: ACTION REQUIRED<br>Viewable CPM revenue type has a new API configuration. For details, see [Auction Event](#auction-event) below. |
+| `revenue_type` | enum | The way the advertiser has agreed to pay you (also called Booked Revenue). Possible values are listed below.<br>- `"cpm"`: Select this value if you are being paid flat payment for 1000 impressions (CPM)<br>&nbsp; - For Viewable CPM, set `revenue_type` to `"cpm"`, the `revenue_value` field to the Viewable CPM value, the `revenue_auction_event_type` field to `"view"` the `revenue_auction_event_type_code` field to `"view_display_50pv1s_an"` and `"revenue_auction_type_id"` to `2`. Only measured viewable impressions will be counted, according to the Xandr viewability measurement, using the IAB definition.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable.<br><br>**Note:** The flat fee will not be booked on the allocation date unless the line item has served at least 1 impression. If you define a `revenue_type` of `flat_fee` you must specify a value for `flat_fee_type`.<br>**Required On:** `POST`<br>Migration Notes: ACTION REQUIRED<br>Viewable CPM revenue type has a new API configuration. For details, see [Auction Event](#auction-event) below. |
 | `goal_type` | enum | Not currently supported for guaranteed delivery line items.<br>**Default:** `"none"`<br>Migration Notes: UNSUPPORTED |
-| `goal_value` | double | **Deprecated.** Use `valuation` object instead. For details, see Valuation below.<br>Migration Notes: UNSUPPORTED |
+| `goal_value` | double | **Deprecated.** Use `valuation` object instead.<br>Migration Notes: UNSUPPORTED |
 | `last_modified` | timestamp | **Read-only.** The time of last modification to this line item.<br>Migration Notes: NO CHANGE |
 | `click_url` | string (1000) | The click URL to apply at the line item level.<br>Migration Notes: NO CHANGE |
-| `currency` | string (3) | The currency used for this line item. For a list of supported currencies, see the [Currency Service](currency-service.md).<br><br>**Warning:** Once the line item has been created, the currency cannot be changed.<br><br>**Tip:** As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience.<br>**Default:** Default currency of the advertiser<br>Migration Notes: NO CHANGE |
-| `require_cookie_for_tracking` | boolean | Indicates whether you want to serve only to users who use cookies, in order to do conversion tracking (because Xandr conversion attribution is cookie-based) and frequency capping.<br><br>**Note:** This flag is only enforced when a conversion pixel and/or frequency/recency cap has been applied, so setting `true` will not require cookies for a line item that has no conversion pixels and/or frequency capping.<br>- `true` indicates you will not serve to non-cookie users.<br>- `false` indicates you will serve to non-cookie users and accept no conversion attribution or frequency/recency capping for those users.<br>**Default:** `true`<br>Migration Notes: NO CHANGE |
+| `currency` | string (3) | The currency used for this line item. For a list of supported currencies, see the [Currency Service](currency-service.md).<br><br>**Warning:** Once the line item has been created, the currency cannot be changed.<br><br>**Tip:** As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience.<br><br>**Default:** Default currency of the advertiser<br>Migration Notes: NO CHANGE |
+| `require_cookie_for_tracking` | boolean | Indicates whether you want to serve only to users who use cookies, in order to do conversion tracking (because Xandr conversion attribution is cookie-based) and frequency capping.<br><br>**Note:** This flag is only enforced when a conversion pixel and/or frequency/recency cap has been applied, so setting `true` will not require cookies for a line item that has no conversion pixels and/or frequency capping.<br>- `true` indicates you will not serve to non-cookie users.<br>- `false` indicates you will serve to non-cookie users and accept no conversion attribution or frequency/recency capping for those users.<br><br>**Default:** `true`<br>Migration Notes: NO CHANGE |
 | `profile_id` | int | You may associate an optional `profile_id` with this line item. A profile is a generic set of rules for targeting inventory. For details, see the [Profile Service](profile-service.md).<br>Migration Notes: NO CHANGE |
 | `member_id` | int | ID of the member that owns the line item.<br>Migration Notes: NO CHANGE |
 | `comments` | string | Comments about the line item.<br>Migration Notes: NO CHANGE |
 | `remaining_days` | int | Not currently supported for guaranteed delivery line items.<br>Migration Notes: UNSUPPORTED |
 | `total_days` | int | Not currently supported for guaranteed delivery line items.<br>Migration Notes: UNSUPPORTED |
 | `manage_creative` | boolean | Must be set to `true` (creatives are managed at the line item level).<br>**Default:** `true`<br>Migration Notes: ACTION REQUIRED<br>`"manage_creative": true` |
-| `advertiser` | object | **Read-only.** An object describing the advertiser with which this line item is associated. For details, see Advertiser below.<br>Migration Notes: NO CHANGE |
+| `advertiser` | object | **Read-only.** An object describing the advertiser with which this line item is associated. For details, see [Advertiser](#advertiser) below.<br>Migration Notes: NO CHANGE |
 | `labels` | array | The optional labels applied to the line item. Currently, the labels available are: `"Trafficker"` and `"Sales Rep"`. For details, see [Labels](#labels) below.<br><br>**Note:** You can report on line item labels with the [Network Analytics](network-analytics.md) and [Network Advertiser Analytics](network-advertiser-analytics.md) reports. For example, if you use the `"Trafficker"` label to specify the name of the trafficker responsible for each line item, you could run the Network Analytics report filtered by `"trafficker_for_line_item"` to focus on the line items that a particular trafficker is responsible for, or grouped by `"trafficker_for_line_item"` to rank the performance of your traffickers. <br><br>Migration Notes: NO CHANGE |
 | `broker_fees` | array | **Deprecated.** Broker fees are only eligible with legacy Insertion Order, Line Item, and Campaign objects.<br>Migration Notes: UNSUPPORTED<br>GDALIs do not support Broker Fees. |
 | `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, please speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null`<br>Migration Notes: NO CHANGE |
@@ -148,9 +148,9 @@ A GDALI is typically used for direct-sold business when an arrangement has been 
 The `supply_strategies` object is used to designate which supply source you wish to target when buying inventory.
 
 > [!NOTE]
-> When `"``line_item_subtype`" is set to `gd_buying_imp` or `gd_buying_exclusive`, the `supply_strategies` field may be omitted.
+> When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `supply_strategies` field may be omitted.
 > [!CAUTION]
-> The values of this object's boolean fields supersede the setting of the `inventory_type` field. Once any of these fields are set to `true` on an ALI, the `inventory_type` field will be ignored and unsettable for that line item. If you attempt to make a `PUT` call on the value of the `inventory_type` field after one or more of these fields have been set to `true` , the following error message will be generated: `"inventory_type cannot be updated once supply_strategies has been set"`.
+> The values of this object's boolean fields supersede the setting of the `inventory_type` field. Once any of these fields are set to `true` on an ALI, the `inventory_type` field will be ignored and unsettable for that line item. If you attempt to make a `PUT` call on the value of the `inventory_type` field after one or more of these fields have been set to `true`, the following error message will be generated: `"inventory_type cannot be updated once supply_strategies has been set"`.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -283,7 +283,7 @@ $ cat LI-one-time-flat-fee.json
 
 ### Budget schedule setting
 
-The `budget_scheduling_settings`contains the following field.
+The `budget_scheduling_settings` contains the following field.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -458,7 +458,7 @@ $ cat LI-viewable-cpm.json
 
 ### Creatives
 
-Each object in the `creatives` array includes the following fields. To obtain information for `"id"` or `"code"`fields you can use the [Creative Service](creative-service.md).
+Each object in the `creatives` array includes the following fields. To obtain information for `"id"` or `"code"` fields you can use the [Creative Service](creative-service.md).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -558,7 +558,7 @@ Each object in the `budget_intervals` array contains the following fields.
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
-| id | int | The ID of the budget interval. |
+| `id` | int | The ID of the budget interval. |
 | `start_date` | timestamp | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be hh:00:00). |
 | `end_date` | timestamp | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be set to hh:59:59). Must not be `null` for guaranteed delivery line items. For delivery to work best, your budget intervals should have a duration of at least 4 hours. |
 | `timezone` | string | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). |

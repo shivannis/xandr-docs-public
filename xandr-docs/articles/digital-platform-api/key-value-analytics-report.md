@@ -115,7 +115,7 @@ Data in this report is retained for 428 days.
 | `revenue` | money | `250.00` | booked_revenue + reseller_revenue | The total revenue. |
 | `rpm` | money | `1.25` | revenue / 1000 imps | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see `imp_type_id`. |
 | `booked_revenue_dollars` | money | `500.00` | booked_revenue_dollars | The dollar amount earned by this network on the impression. |
-| `imps_blacklisted` | int | `20` | imps_blacklisted | The number of impressions that didn't serve because a site was in a blocklist. |
+| `imps_blocklisted` | int | `20` | imps_blocklisted | The number of impressions that didn't serve because a site was in a blocklist. |
 | `total_conversions` | int | `5` | total_conversions | The total number of post-view and post-click conversions. |
 | `conversions_rate` | double | `0.000221877080097626` | total_conversions / imps | The rate of conversions to impressions. |
 | `cpm` | money | `1.66051685393258` | (cost / imps) x 1000 | The cost per 1000 impressions. |

@@ -124,7 +124,7 @@ The `content` object supports the following request parameters.
 | `title` | Optional | String | Content title.<br>*Video Examples:* "Search Committee" (television), "A New Hope" (movie), or "Endgame" (made for web).<br>*Non-Video Example:* "Why an Antarctic Glacier is Melting So Quickly" (Time magazine article). |
 | `url` | Optional | String | URL of the content, for buy-side contextualization or review. |
 | `userrating` | Optional | String | User rating of the content (e.g., number of stars, likes, etc.). |
-| `videoquality` | Optional | integer; DEPRECATED | **Note:** **Deprecated** in favor of prodq. Video quality. Refer to [IAB specifications](https://iabtechlab.com/standards/content-taxonomy/). |
+| `videoquality` | Optional | integer; DEPRECATED | **Note:** **Deprecated** in favor of `prodq`. Video quality. Refer to [IAB specifications](https://iabtechlab.com/standards/content-taxonomy/). |
 | `program_type` | Optional | String | Type of program. |
 
 ### Device
