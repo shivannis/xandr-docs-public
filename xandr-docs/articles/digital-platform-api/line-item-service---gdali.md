@@ -3,7 +3,7 @@ title: Line Item Service - GDALI
 description: Explore the Line Item Service for a Guaranteed Delivery Augmented Line Item (GDALI), which defines your financial relationship with an advertiser.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
----The way the advertiser has agreed to pay you (also called Booked Revenue
+---
 
 # Line Item service - GDALI
 
