@@ -1,315 +1,57 @@
 ---
-Title : Network Creative Search
-Description : The Network Creative Search report can be used to view the list of
+title: Network Creative Search
+description: Use the network creative search report to view the list of creatives who have served on inventory within a network. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-creatives that have served on the inventory within your network.
 ---
 
+# Network creative search
 
-# Network Creative Search
+The Network Creative Search report can be used to view the list of creatives that have served on the inventory within your network.
 
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the example below.
 
+## Time frame
 
-The Network Creative Search report can be used to view the list of
-creatives that have served on the inventory within your network.
-
-For instructions on retrieving a report, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> or the example below.
-
-
-
-## Time Frame
-
-The `report_interval` field in the JSON request can be set to one of the
-following: <span class="keyword apiname">"today",
-<span class="keyword apiname">"yesterday",
-<span class="keyword apiname">"last_7_days",
-<span class="keyword apiname">"last_30_days", or
-<span class="keyword apiname">"last_100_days".
-
-
-
-
+The `report_interval` field in the JSON request can be set to one of the following:
+- "today"
+- "yesterday"
+- "last_7_days"
+- "last_30_days"
+- "last_100_days"
 
 ## Dimensions
 
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003818__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-00003818__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00003818__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="ID-00003818__entry__4"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code class="ph codeph">day</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">"2010-02-01"</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-day of the auction.
-<p><strong>Filter:</strong> No</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">month</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">"2010-02"</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-month of the auction.
-<p><strong>Filter:</strong> No</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">buyer_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">123</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the buying member. If the impression was not purchased, this field
-shows one of the following values: <span
-class="keyword apiname">229 = PSA, <span
-class="keyword apiname">0 = Blank, or <span
-class="keyword apiname">319 = Default.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">seller_member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">456</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the selling member.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">321</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the publisher.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">creative_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">654</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the creative.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">site_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><span
-class="keyword apiname">194</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the site.
-
-<b>Note:</b> For RTB impressions older than 30
-days, the <code class="ph codeph">site_id</code> will be <code
-class="ph codeph">0</code>.
-
-<p><strong>Filter:</strong>Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code class="ph codeph">3</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the brand associated with the creative.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code class="ph codeph">250</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-width of the creative.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code class="ph codeph">300</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-height of the creative.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">tag_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code class="ph codeph">491</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the tag.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">media_subtype_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code class="ph codeph">491</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-ID of the media subtype associated with the creative.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code
-class="ph codeph">"audited"</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-creative's audit status. Possible values: <code
-class="ph codeph">"pending"</code>, <code
-class="ph codeph">"audited"</code>, and <code
-class="ph codeph">"unauditable"</code>.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__1"><code
-class="ph codeph">format</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__3"><code
-class="ph codeph">"raw-html"</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__4">The
-creative's format. Possible values: <code
-class="ph codeph">"image"</code>, <code
-class="ph codeph">"raw-js"</code>, <code
-class="ph codeph">"raw-html"</code>, and <code
-class="ph codeph">"iframe-html"</code>.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Column | Type | Example | Description |
+|:---|:---|:---|:---|
+| `day` | time | `"2010-02-01"` | The day of the auction.<br><br> **Filter**: No |
+| `month` | time | `"2010-02"` | The month of the auction.<br><br> **Filter**: No |
+| `buyer_member_id` | int | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br> `229` = PSA <br> `0` = Blank <br> `319` = Default.<br><br>**Filter**: Yes |
+| `seller_member_id` | int | `456` | The ID of the selling member.<br><br>**Filter**: Yes |
+| `publisher_id` | int | `321` | The ID of the publisher.<br><br>**Filter**: Yes |
+| `creative_id` | int | `654` | The ID of the creative.<br><br>**Filter**: Yes |
+| `site_id` | int | `194` | The ID of the site.<br><br>**Note**: For RTB impressions older than 30 days, the `site_id` will be `0`.<br><br>**Filter**:Yes |
+| `brand_id` | int | `3` | The ID of the brand associated with the creative.<br><br>**Filter**: Yes |
+| `width` | int | `250` | The width of the creative.<br><br>**Filter**: Yes |
+| `height` | int | `300` | The height of the creative.<br><br>**Filter**: Yes |
+| `tag_id` | int | `491` | The ID of the tag.<br><br>**Filter**: Yes |
+| `media_subtype_id` | int | `491` | The ID of the media subtype associated with the creative.<br><br>**Filter**: Yes |
+| `audit_status` | string | `"audited"` | The creative's audit status. Possible values: <br> - `"pending"` <br> - `"audited"` <br> - `"unauditable"`.<br><br> **Filter**: Yes |
+| `format` | string | `"raw-html"` | The creative's format. Possible values: <br>  - `"image"` <br> - `"raw-js"` <br> - `"raw-html"` <br> - `"iframe-html"`.<br><br>**Filter**: Yes |
 
 ## Metrics
 
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003818__entry__61"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-00003818__entry__62"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00003818__entry__63"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="ID-00003818__entry__64"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="ID-00003818__entry__65"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__61"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__62">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__63"><code
-class="ph codeph">2340</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003818__entry__64"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003818__entry__65">The
-total number of impressions (served and resold).</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Column | Type | Example | Formula | Description |
+|:---|:---|:---|:---|:---|
+| `imps` | int | `2340` | imps | The total number of impressions (served and resold). |
 
 ## Example
 
-1.  **Create the JSON-formatted report request**
+1. **Create the JSON-formatted report request**
 
-    The JSON file should include the report_type
-    "network_creative_search", as well as the columns (dimensions and
-    metrics) and report_interval that you want to retrieve. You can also
-    filter for specific dimensions, define granularity (month, day), and
-    specify the format in which the data should be returned (csv, excel,
-    or html). For a full explanation of fields that can be included in
-    the JSON file, see the <a
-    href="report-service.md"
-    class="xref" target="_blank">Report Service</a>.
+    The JSON file should include the `report_type` `"network_creative_search"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
-    ``` pre
+    ```
     $ cat network_creative_search
     {
             "report":
@@ -331,9 +73,9 @@ total number of impressions (served and resold).</td>
     }
     ```
 
-2.  **POST the request to the Reporting Service**
+1. **`POST` the request to the reporting service**
 
-    ``` pre
+    ```
     $ curl -b cookies -c cookies -X POST -d @network_creative_search 'https://api.appnexus.com/report'
     {
        "response":{
@@ -343,14 +85,11 @@ total number of impressions (served and resold).</td>
     }
     ```
 
-3.  **GET the report status from the Report Service**
+1. **`GET` the report status from the report service**
 
-    Make a `GET` call with the Report ID to retrieve the status of the
-    report. Continue making this `GET` call until the `execution_status`
-    is "ready". Then use the **report-download** service to save the
-    report data to a file, as described in the next step.
+    Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is "ready". Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-    ``` pre
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=9b52ff138e5f9c822bdd8eee4119acf2'
     {
        "response":{
@@ -367,33 +106,13 @@ total number of impressions (served and resold).</td>
     }
     ```
 
-4.  **GET the report data from the Report Download Service**
+1. **`GET` the report data from the Report Download Service**
 
-    To download the report data to a file, make another `GET` call with
-    the Report ID, but this time to the **report-download** service. You
-    can find the service and Report ID in the `url` field of the
-    previous `GET` response. When identifying the file that you want to
-    save to, be sure to use the file extension of the "format" that you
-    specified in your initial `POST`.
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial `POST`.
 
-    
+    > [!NOTE]
+    > If an error occurs during download, the response header will include an HTTP error code and message. Use -i or -v in your call to expose the response header.
 
-    <b>Note:</b> If an error occurs during
-    download, the response header will include an HTTP error code and
-    message. Use -i or -v in your call to expose the response header.
-
-    
-
-    
-
-    ``` pre
+    ```
     $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=9b52ff138e5f9c822bdd8eee4119acf2' > /tmp/network_creative.csv
     ```
-
-    
-
-
-
-
-
-

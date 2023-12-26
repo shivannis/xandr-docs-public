@@ -1,295 +1,55 @@
 ---
-Title : Mobile App Instance List Service
-Description : The Mobile App Instance List Service is used to define a list of <a
+title: Mobile App Instance List Service
+description: The mobile app instance list service provides a list of mobile app instances for campaigns that can be used to create new mobile apps in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="mobile-app-instance-service.md"
 ---
 
+# Mobile app instance list service
 
-# Mobile App Instance List Service
+The Mobile App Instance List Service is used to define a list of [mobile app instances](./mobile-app-instance-service.md) that you can target with campaigns. Think of it as the mobile app version of the [Domain List Service](./domain-list-service.md).
 
+Remember that a mobile app instance is a concrete representation of the "mobile app" abstraction. For example, there will be multiple "instances" of an application for each platform it targets, such as Android or iOS. For more information about this distinction, see the [Mobile App Service](./mobile-app-service.md).
 
-
-The Mobile App Instance List Service is used to define a list of <a
-href="mobile-app-instance-service.md"
-class="xref" target="_blank">mobile app instances</a> that you can
-target with campaigns. Think of it as the mobile app version of the <a
-href="domain-list-service.md"
-class="xref" target="_blank">Domain List Service</a>.
-
-Remember that a mobile app instance is a concrete representation of the
-"mobile app" abstraction. For example, there will be multiple
-"instances" of an application for each platform it targets, such as
-Android or iOS. For more information about this distinction, see the <a
-href="mobile-app-service.md"
-class="xref" target="_blank">Mobile App Service</a>.
-
-This service also has the side effect of creating mobile apps in the
-system if they don't already exist. These apps can then be viewed using
-the <a
-href="mobile-app-service.md"
-class="xref" target="_blank">Mobile App Service</a>.
-
->
+This service also has the side effect of creating mobile apps in the system if they don't already exist. These apps can then be viewed using the [Mobile App Service](./mobile-app-service.md).
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/mobile-app-instance-list?id=4 | View a single mobile app instance list. |
+| `POST` | https://api.appnexus.com/mobile-app-instance-list <br>(mobile app instance list JSON) | Add a mobile app instance list to the system. |
+| `GET` | https://api.appnexus.com/mobile-app-instance-list | View all of your mobile app instance lists. |
+| `GET` | https://api.appnexus.com/mobile-app-instance-list?search=SEARCH_TERM | Search for mobile app instances with names or descriptions containing certain characters. |
 
+## JSON fields
 
-<table id="mobile-app-instance-list-service__table_zms_bfc_xwb"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__2"><a
-href="https://api.appnexus.com/mobile-app-instance-list?id=4"
-class="xref"
-target="_blank">https://api.appnexus.com/mobile-app-instance-list?id=4</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__3">View
-a single mobile app instance list.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__2"><a
-href="https://api.appnexus.com/mobile-app-instance-list" class="xref"
-target="_blank">https://api.appnexus.com/mobile-app-instance-list</a>(mobile
-app instance list JSON)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__3">Add
-a mobile app instance list to the system.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__2"><a
-href="https://api.appnexus.com/mobile-app-instance-list" class="xref"
-target="_blank">https://api.appnexus.com/mobile-app-instance-list</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__3">View
-all of your mobile app instance lists.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__1">GET</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__2"><a
-href="https://api.appnexus.com/domain-list?search=SEARCH_TERM"
-class="xref" target="_blank">https://api.appnexus.com/</a> <a
-href="https://api.appnexus.com/mobile-app-instance-list" class="xref"
-target="_blank">mobile-app-instance-list</a> <a
-href="https://api.appnexus.com/domain-list?search=SEARCH_TERM"
-class="xref" target="_blank">?search=SEARCH_TERM</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_zms_bfc_xwb__entry__3">Search
-for mobile app instances with names or descriptions containing certain
-characters.</td>
-</tr>
-</tbody>
-</table>
+| Name | Type | Description |
+|:---|:---|:---|
+| `apps` | array of objects | A list of app instances associated with this particular app ID. |
+| `id` | int | The ID of this instance list. |
+| `name` | string | The name of this instance list.<br>**Required On**: `POST` |
+| `description` | string | An optional description of this instance list. |
+| `member_id` | int | The member ID associated with this app instance list. |
+| `last_modified` | date | When this app instance list was last updated. |
+| `created_on` | date | When this app instance list was created. |
 
+### Apps
 
-
-
-
->
-
-## JSON Fields
-
-
-
-<table id="mobile-app-instance-list-service__table_dhl_gfc_xwb"
-class="table">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 21%" />
-<col style="width: 52%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">apps</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">A
-list of app instances associated with this particular app ID.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">The
-ID of this instance list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3"><p>The
-name of this instance list.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">An
-optional description of this instance list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">The
-member ID associated with this app instance list.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">When
-this app instance list was last updated.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__1"><code
-class="ph codeph">created_on</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_dhl_gfc_xwb__entry__3">When
-this app instance list was created.</td>
-</tr>
-</tbody>
-</table>
-
-**Apps**
-
-<table id="mobile-app-instance-list-service__table_x2p_mfc_xwb"
-class="table" style="width:100%;">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 20%" />
-<col style="width: 53%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__1"><code
-class="ph codeph">instance_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__3">The
-instance ID associated with this app instance.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__1"><code
-class="ph codeph">bundle_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__3"><p>The
-bundle ID associated with this app instance.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__1"><code
-class="ph codeph">os_family_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__3">The
-OS family ID associated with this app instance. For a complete listing
-of OS family IDs, see the <a
-href="operating-system-family-service.md"
-class="xref" target="_blank">Operating System Family Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__2">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="mobile-app-instance-list-service__table_x2p_mfc_xwb__entry__3">When
-this app instance was last updated.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
->
+| Name | Type | Description |
+|:---|:---|:---|
+| `instance_id` | int | The instance ID associated with this app instance. |
+| `bundle_id` | string | The bundle ID associated with this app instance.<br>**Required On**: `POST` |
+| `os_family_id` | int | The OS family ID associated with this app instance. For a complete listing of OS family IDs, see the [Operating System Family Service](./operating-system-family-service.md). |
+| `last_modified` | date | When this app instance was last updated. |
 
 ## Examples
 
-**Add a mobile app instance list to the system**
+### Add a mobile app instance list to the system
 
-In this example, we add a small mobile app instance list to the system
-with a `POST` call.
+In this example, we add a small mobile app instance list to the system with a `POST` call.
 
-``` pre
+```
 $ cat the-list.json
  
 {
@@ -345,14 +105,11 @@ $ curl -b cookies -c cookies -X POST -d @the-list.json https://api.appnexus.com/
 }
 ```
 
-**View an existing mobile app instance list**
+### View an existing mobile app instance list
 
+A simple `GET` request with the object ID in the query string fetches the object.
 
-
-A simple `GET` request with the object ID in the query string fetches
-the object.
-
-``` pre
+```
 $ curl -b cookies https://api.appnexus.com/mobile-app-instance-list?id=77
  
 {
@@ -388,20 +145,11 @@ $ curl -b cookies https://api.appnexus.com/mobile-app-instance-list?id=77
 }
 ```
 
+### Add a mobile app instance list to your targeting profile
 
+In this example, we add a fictional mobile app instance list to our targeting profile for use by campaigns. The profile object we get back should reflect the update. For more information about profiles, see the [Profile Service](./profile-service.md).
 
-**Add a mobile app instance list to your targeting profile**
-
-
-
-In this example, we add a fictional mobile app instance list to our
-targeting profile for use by campaigns. The profile object we get back
-should reflect the update. For more information about profiles, see the
-<a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.
-
-``` pre
+```
 $ cat update.json
  
 {
@@ -440,14 +188,9 @@ $ curl -b cookies -X PUT -d @update.json 'https://api.appnexus.com/profile?id=14
 }
 ```
 
+### Searching for mobile app instance lists with names or descriptions containing `"test"`
 
-
-
-
-**Searching for mobile app instance lists with names or descriptions
-containing "test"**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/mobile-app-instance-list?search=test'
  
 {
@@ -516,36 +259,10 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mobile-app-instance-list?
 }
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="mobile-app-instance-service.md"
-  class="xref" target="_blank">Mobile App Instance Service</a>
-- <a
-  href="mobile-app-service.md"
-  class="xref" target="_blank">Mobile App Service</a>
-- <a
-  href="mobile-app-store-service.md"
-  class="xref" target="_blank">Mobile App Store Service</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-
-
-
-
-
-
-
-
+- [Mobile App Instance Service](./mobile-app-instance-service.md)
+- [Mobile App Service](./mobile-app-service.md)
+- [Mobile App Store Service](./mobile-app-store-service.md)
+- [API Semantics](./api-semantics.md)
+- [API Best Practices](./api-best-practices.md)
