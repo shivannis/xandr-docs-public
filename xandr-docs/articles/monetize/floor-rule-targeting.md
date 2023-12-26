@@ -111,7 +111,7 @@ size target** boxes, and then clicking **Add Size** . The size you have added wi
 
 By default, the floor rule targets all of your demand. However, you can narrow your targeting to include or exclude specific buyers, brands, and offer categories.
 
-## Getting there
+## Configure targeting preferences in floor rule interface
 
 From the **Create New Floor Rule** or **Edit floor rule** page, locate **Targeting**. Next to **Demand**, click **Edit**.
 
