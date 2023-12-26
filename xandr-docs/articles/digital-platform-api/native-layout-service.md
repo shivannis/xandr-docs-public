@@ -21,7 +21,7 @@ This service allows the seller to specify the layout for a native creative. Once
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `data_assets` | array of objects | Attributes of the native creative. See [Data Assets](#data-aasets) below for more details. |
+| `data_assets` | array of objects | Attributes of the native creative. See [Data Assets](#data-assets) below for more details. |
 | `image_assets` | array of objects | Specify the required attributes of each individual image. See [Image Assets](#image-assets) for more details. |
 | `renderer` | object | The renderer ID of the seller. Enter the `id` in this array. Example:<br>`"renderer":{"id":1}` |
 

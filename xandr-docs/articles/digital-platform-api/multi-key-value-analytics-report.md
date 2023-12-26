@@ -45,60 +45,60 @@ Data in this report is retained for 428 days.
 
 ## Dimensions
 
-| Column | Type | Filter? | Example | Description |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|:---|:---|:---|:---|:---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `month` | date | Yes | `"2010-02"` | The month of the auction. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `day` | date | Yes | `"2010-02-01"` | The day of the auction. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `hour` | date | Yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `buyer_member_name` | string | No | `"My Network"` | The name of the buying member.<br><br>**Note**: The name might be `"Default"` or `"Default Error"`, which means that there was no buyer for the impression, and a default creative was served. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `seller_member_id` | int | Yes | `456` | The ID of the selling member. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `seller_member_name` | string | No | `"That Seller"` | The name of the selling member. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `seller_member` | string | No | `"That Seller (456)"` | The name and ID of the selling member. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement_id` | int | Yes | `1212` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id` . |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement_name` | string | No | `"lvillage 160x600"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement` | string | No | `"lvillage 160x600 (1212)"` | The name and ID of the placement. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement_group_id` | int | Yes | `765` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement_group_name` | string | No | `"Site 1"` | The name of the site. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `placement_group` | string | No | `"Site 1 (765)"` | The name and ID of the site. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `advertiser_id` | int | Yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a `default` or `PSA` was shown. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `advertiser_name` | string | No | `"AdvertiserA"` | The name of the advertiser. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `advertiser` | string | No | `"AdvertiserA (789)"` | The name and ID of the advertiser. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `line_item_id` | int | Yes | `1122` | The ID of the line item. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `line_item_name` | string | No | `"Line Item 1"` | The name of the line item. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `line_item` | string | No | `"Line Item 1 (1122)"` | The name and ID of the line item. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `publisher_id` | int | Yes | `555` | The ID of the publisher. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `publisher_name` | string | No | `"PublisherA"` | The name of the publisher. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `publisher` | string | No | `"PublisherA (555)"` | The name and ID of the publisher. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id`. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker.<br><br>**Note**: RTB auctions are not included in reports. An impression with `imp_type_id = 7` will not be reported. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `creative_id` | int | Yes | `444` | The ID of the creative.<br><br>**Note**:  - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative.<br> - For impressions older than 100 days, creatives will be aggregated into one row with `"All creative data older than 100 days"` as the `creative_name`.<br> - For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `creative` | string | No | `"Q1 2017 728x90 (444)`" | The name and ID of the creative. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `advertiser_currency` | string | Yes | `"USD"` | The currency used by the advertiser. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `insertion_order_id` | int | Yes | `321` | The ID of the insertion order associated with the campaign that purchased the impression. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `insertion_order_name` | string | No | `"FirstIO"` | The name of the insertion order associated with the campaign that purchased the impression. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `insertion_order` | string | No | `"FirstIO(321)"` | The ID and name of the insertion order associated with the campaign that purchased the impression. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `publisher_currency` | money | Yes | `"EUR"` | The currency used by the publisher. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type for different impression types. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `revenue_type` | string | No | `"CPC"` | [The revenue type as text for a corresponding revenue_type_id](#revenue_type-as-text-for-a-corresponding-revenue_type_id)|
-| `device_type` | string | Yes | `"Desktops and Laptops"` | The type of the device where the impression has occurred. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `deal_id` | int | Yes | `123` | The ID of the deal. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `deal_name` | string | No | `"MyDeal"` | The name of the deal. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `deal` | string | No | `"MyDeal(123)"` | The name and ID of the deal. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_1_name` | string | Yes | `"fruit"` | The name of the first targeting key in the multi key-value report. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_1_value` | string | Yes | `"apple"` | The value associated with the first targeting key. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_1_name_label` | string | Yes | `"fruit eaten by customer"` | The label for the first key. The label can be a more descriptive version of the key name. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_1_value_label` | string | Yes | `"green or red apples"` | The label for the first value. The label can be a more descriptive version of the key value. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_2_name` | string | Yes | `"pet"` | The name of the second targeting key in the multi key-value report. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_2_value` | string | Yes | `"dog"` | The value associated with the second targeting key. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_2_name_label` | string | Yes | `"pet owned by customer"` | The label for the second key. The label can be a more descriptive version of the key name. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_2_value_label` | string | Yes | `"doberman or german shephard"` | The label for the second value. The label can be a more descriptive version of the key value. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_3_name` | string | Yes | `"vehicle"` | The name of the third targeting key in the multi key-value report. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_3_value` | string | Yes | `"car"` | The value associated with the third targeting key. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_3_name_label` | string | Yes | `"vehicle owned by customer"` | The label for the third key. The label can be a more descriptive version of the key name. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| `reporting_key_3_value_label` | string | Yes | `"Ford or GM"` | The label for the third value. The label can be a more descriptive version of the key value. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `month` | date | Yes | `"2010-02"` | The month of the auction. |
+| `day` | date | Yes | `"2010-02-01"` | The day of the auction. |  
+| `hour` | date | Yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |
+| `buyer_member_name` | string | No | `"My Network"` | The name of the buying member.<br><br>**Note**: The name might be `"Default"` or `"Default Error"`, which means that there was no buyer for the impression, and a default creative was served. |  
+| `seller_member_id` | int | Yes | `456` | The ID of the selling member. |  
+| `seller_member_name` | string | No | `"That Seller"` | The name of the selling member. |  
+| `seller_member` | string | No | `"That Seller (456)"` | The name and ID of the selling member. |  
+| `placement_id` | int | Yes | `1212` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id` . |
+| `placement_name` | string | No | `"lvillage 160x600"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
+| `placement` | string | No | `"lvillage 160x600 (1212)"` | The name and ID of the placement. |
+| `placement_group_id` | int | Yes | `765` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
+| `placement_group_name` | string | No | `"Site 1"` | The name of the site. |
+| `placement_group` | string | No | `"Site 1 (765)"` | The name and ID of the site. |
+| `advertiser_id` | int | Yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a `default` or `PSA` was shown. |
+| `advertiser_name` | string | No | `"AdvertiserA"` | The name of the advertiser. |
+| `advertiser` | string | No | `"AdvertiserA (789)"` | The name and ID of the advertiser. |
+| `line_item_id` | int | Yes | `1122` | The ID of the line item. |
+| `line_item_name` | string | No | `"Line Item 1"` | The name of the line item. |
+| `line_item` | string | No | `"Line Item 1 (1122)"` | The name and ID of the line item. |
+| `publisher_id` | int | Yes | `555` | The ID of the publisher. |
+| `publisher_name` | string | No | `"PublisherA"` | The name of the publisher. |
+| `publisher` | string | No | `"PublisherA (555)"` | The name and ID of the publisher. |
+| `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id`. |
+| `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker.<br><br>**Note**: RTB auctions are not included in reports. An impression with `imp_type_id = 7` will not be reported. |
+| `creative_id` | int | Yes | `444` | The ID of the creative.<br><br>**Note**:  - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative.<br> - For impressions older than 100 days, creatives will be aggregated into one row with `"All creative data older than 100 days"` as the `creative_name`.<br> - For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |
+| `creative` | string | No | `"Q1 2017 728x90 (444)`" | The name and ID of the creative. |
+| `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
+| `advertiser_currency` | string | Yes | `"USD"` | The currency used by the advertiser. |
+| `insertion_order_id` | int | Yes | `321` | The ID of the insertion order associated with the campaign that purchased the impression. |
+| `insertion_order_name` | string | No | `"FirstIO"` | The name of the insertion order associated with the campaign that purchased the impression. |
+| `insertion_order` | string | No | `"FirstIO(321)"` | The ID and name of the insertion order associated with the campaign that purchased the impression. |
+| `publisher_currency` | money | Yes | `"EUR"` | The currency used by the publisher. |
+| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type for different impression types. |
+| `revenue_type` | string | No | `"CPC"` | See [Revenue type as text for a corresponding revenue_type_id](#revenue_type-as-text-for-a-corresponding-revenue_type_id)|
+| `device_type` | string | Yes | `"Desktops and Laptops"` | The type of the device where the impression has occurred. |
+| `deal_id` | int | Yes | `123` | The ID of the deal. |
+| `deal_name` | string | No | `"MyDeal"` | The name of the deal. |
+| `deal` | string | No | `"MyDeal(123)"` | The name and ID of the deal. |
+| `reporting_key_1_name` | string | Yes | `"fruit"` | The name of the first targeting key in the multi key-value report. |
+| `reporting_key_1_value` | string | Yes | `"apple"` | The value associated with the first targeting key. |
+| `reporting_key_1_name_label` | string | Yes | `"fruit eaten by customer"` | The label for the first key. The label can be a more descriptive version of the key name. |
+| `reporting_key_1_value_label` | string | Yes | `"green or red apples"` | The label for the first value. The label can be a more descriptive version of the key value. |
+| `reporting_key_2_name` | string | Yes | `"pet"` | The name of the second targeting key in the multi key-value report. |
+| `reporting_key_2_value` | string | Yes | `"dog"` | The value associated with the second targeting key. |
+| `reporting_key_2_name_label` | string | Yes | `"pet owned by customer"` | The label for the second key. The label can be a more descriptive version of the key name. |
+| `reporting_key_2_value_label` | string | Yes | `"doberman or german shephard"` | The label for the second value. The label can be a more descriptive version of the key value. |
+| `reporting_key_3_name` | string | Yes | `"vehicle"` | The name of the third targeting key in the multi key-value report. |
+| `reporting_key_3_value` | string | Yes | `"car"` | The value associated with the third targeting key. |
+| `reporting_key_3_name_label` | string | Yes | `"vehicle owned by customer"` | The label for the third key. The label can be a more descriptive version of the key name. |
+| `reporting_key_3_value_label` | string | Yes | `"Ford or GM"` | The label for the third value. The label can be a more descriptive version of the key value. |
 
 ### `revenue_type` as text for a corresponding `revenue_type_id`
 

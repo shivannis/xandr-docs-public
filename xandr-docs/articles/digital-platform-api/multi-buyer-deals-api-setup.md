@@ -59,7 +59,7 @@ Here's an example of the `buyer` object:
 "buyer_seats": null
 ```
 
-### Buyer bidders
+### Buyer bidders
 
 > [!NOTE]
 > The `buyer_bidders` object is used in multi-buyer deals.

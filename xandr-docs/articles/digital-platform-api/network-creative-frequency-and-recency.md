@@ -78,9 +78,47 @@ Data retention period for this report is 120 days (no data before February 26, 2
 | `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for this impression. Note that the term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". For more information, see [What is a Venue?](../monetize/what-is-a-venue.md) and [Give Up Price](../monetize/give-up-price.md) in the UI documentation.<br>Allowed values:<br> - `"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - `"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - `"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - `"Unknown"`: The node was in an unknown optimization phase.<br> - `"Optimized give up"`<br> - `"Learn give up"`<br> - `"Manual give up"` |
 | `media_type` | string | no | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of a creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | Yes | `1` | The ID of the general display style of a creative. |
-| `trafficker_for_line_item` | string | yes | `"Maurice Truman"` | The trafficker for the line item. See the `"labels"` field in the [Line Item Service](./line--item-service.md) for more details. |
-| `salesrep_for_line_item` | string | yes | `"Beverly Heller"` | The sales rep for the line item. See the `"labels"` field in the [Line Item Service](./line--item-service.md) for more details. |
+| `trafficker_for_line_item` | string | yes | `"Maurice Truman"` | The trafficker for the line item. See the `"labels"` field in the [Line Item Service](./line-item-service.md) for more details. |
+| `salesrep_for_line_item` | string | yes | `"Beverly Heller"` | The sales rep for the line item. See the `"labels"` field in the [Line Item Service](./line-item-service.md) for more details. |
 | `user_group_for_campaign` | string | yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
+
+### Creative frequency buckets
+
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"0"` |
+| `1` | `"1"` |
+| `2` | `"2-5"` |
+| `3` | `"6-10"` |
+| `4` | `"11-20"` |
+| `5` | `"21-40"` |
+| `6` | `"41-60` |
+| `7` | `"61-100"` |
+| `8` | `"101-150"` |
+| `9` | `"151-250"` |
+| `10` | `"251-500"` |
+| `11` | `"500+"` |
+
+### Creative recency buckets
+
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"< 1 minute"` |
+| `1` | `"1-5 minutes"` |
+| `2` | `"5-15 minutes"` |
+| `3` | `"15-30 minutes"` |
+| `4` | `"30-60 minutes"` |
+| `5` | `"1-4 hours"` |
+| `6` | `"4-12 hours"` |
+| `7` | `"12-24 hours"` |
+| `8` | `"1-2 days"` |
+| `9` | `"2-7 days"` |
+| `10` | `"8-14 days"` |
+| `11` | `"14-30 days"` |
 
 ## Metrics
 
