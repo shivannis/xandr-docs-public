@@ -55,10 +55,10 @@ Click **Next**.
 
       Separate each group by entering a hard return. For example:
 
-     ```
-     40.741624,-73.990991,10,Feature One  
-     48.376928,-54.986546,8 
-     ```
+      ```
+      40.741624,-73.990991,10,Feature One  
+      48.376928,-54.986546,8 
+      ```
 
   2. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
 
