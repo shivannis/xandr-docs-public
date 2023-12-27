@@ -1,14 +1,11 @@
 ---
-Title : Daily Pacing
-Description : When you set a daily budget for a campaign, you have the option to
+title : Daily Pacing
+description : Learn when enabled how Daily Pacing helps campaigns spend their budgets fairly evenly over the day.
 ms.date: 10/28/2023
-enable **Daily Pacing**. When it is enabled, Daily Pacing helps
 ---
 
 
-# Daily Pacing
-
-
+# Daily pacing
 
 When you set a daily budget for a campaign, you have the option to
 enable **Daily Pacing**. When it is enabled, Daily Pacing helps
@@ -20,16 +17,8 @@ you can take certain steps to ensure that you get the maximum benefit
 from Daily Pacing, the calculations are done by the system automatically
 during the day without human interaction.
 
-
-
-<b>Note:</b> **In-flight adjustments to
-budgets:** Although most user-initiated in-flight changes to budget
-settings will change how the bidder responds within 5 minutes, due to
-the complexity of the backend systems involved, in isolated cases, it
-can take up to 4 hours for the bidder to modify its behavior in reaction
-to manual in-flight budget setting changes.
-
-
+> [!NOTE]
+> **In-flight adjustments to budgets:** Although most user-initiated in-flight changes to budget settings will change how the bidder responds within 5 minutes, due to the complexity of the backend systems involved, in isolated cases, it can take up to 4 hours for the bidder to modify its behavior in reaction to manual in-flight budget setting changes.
 
 Daily Pacing allows us to calculate a pacing lever which modifies the
 rate at which bids are submitted, slowing the buy rate over time and
@@ -41,7 +30,7 @@ delivery.
 Xandr recommends that you enable pacing for most
 campaigns.
 
-How the System Reduces Over- or Underspend
+## How the system reduces over- or underspend
 
 When a campaign serves too many or too few impressions in a day, it is
 called **overspend** or **underspend** (respectively). In order to avoid
@@ -74,21 +63,13 @@ determine the pacing lever:
 - **The daily budget** This is the amount of the budget that should
   serve on the current day.
 
-
-
-<b>Note:</b> When referring to the budget
-spent, you can use quantity (i.e., 156 ads served) or dollar amounts
-(i.e., $1,850 of ads served). However, you must use the same value for
-all calculations. Budgets set in dollar amounts are set against booked
-revenue at the line item level, and against media cost at the campaign
-level.
-
-
+> [!NOTE]
+> When referring to the budget spent, you can use quantity (i.e., 156 ads served) or dollar amounts (i.e., $1,850 of ads served). However, you must use the same value for all calculations. Budgets set in dollar amounts are set against booked revenue at the line item level, and against media cost at the campaign level.
 
 The system periodically checks this information (approximately every 15
 minutes) and determines if the pacing lever needs to be adjusted.
 
-Example
+## Example
 
 - You have a campaign with a daily budget of **2,000** impressions
   (i.e., must be met by 12 a.m. midnight).
@@ -106,7 +87,7 @@ represent a budget underspend. Therefore, in order to meet the daily
 budget amount, the system increases the bid rate enough so that it will
 win an additional **400** impressions by midnight.
 
-How the System Moderates the Pacing Settings
+## How the system moderates the pacing settings
 
 When the system modifies the daily pacing to account for daily over- or
 underspend, it can be in danger of generating a spend spike. For
@@ -124,7 +105,7 @@ values (which includes the over- or undespend pacing value) to determine
 the pacing value for the coming period. This more-closely aligns the
 bidder to the correct bid rate, and also moderates the pacing value.
 
-How you can Ensure Proper Pacing for your Campaign
+## How you can ensure proper pacing for your Campaign
 
 Due to the complexity of bidding in real time, it is extremely difficult
 to provide exact pacing. Our system must rely on certain assumptions
@@ -168,19 +149,11 @@ smooth delivery.
   Pacing amount** When using optimization, if you set a learn budget
   amount that is less than the daily pacing amount, new campaigns (with
   no optimized inventory) will stop serving when the learn budget amount
-  is reached. For more information, see
-  <a href="learn-budget.md" class="xref">Learn Budget</a>.
+  is reached. For more information, see [learn-budget.md](Learn Budget).
 
-Related Topics
+## Related topics
 
-- <a href="budgeting-and-pacing.md" class="xref">Budgeting and
-  Pacing</a>
-- <a href="why-use-budgeting.md" class="xref">Why Use Budgeting?</a>
-- <a href="difficulties-with-exact-budgeting.md"
-  class="xref">Difficulties with Exact Budgeting</a>
-- <a href="key-budgeting-and-pacing-concepts.md" class="xref">Key
-  Budgeting and Pacing Concepts</a>
-
-
-
-
+- [Budgeting and Pacing](budgeting-and-pacing.md)
+- [Why Use Budgeting?](why-use-budgeting.md)
+- [Difficulties with Exact Budgeting](difficulties-with-exact-budgeting.md)
+- [Key Budgeting and Pacing Concepts](key-budgeting-and-pacing-concepts.md)

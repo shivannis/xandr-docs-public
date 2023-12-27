@@ -1,45 +1,31 @@
 ---
-Title : Curator Billing Report
-Description : The **Curator Billing Report** allows you to manage internal invoicing
+title : Curator Billing Report
+description : Learn how Curator Billing Report allows you to manage internal invoicing for your curation activities.  
 ms.date: 10/28/2023
 for your curation activities. Curators who choose to direct-clear with
 ---
 
 
-# Curator Billing Report
-
-
+# Curator billing report
 
 The **Curator Billing Report** allows you to manage internal invoicing
 for your curation activities. Curators who choose to direct-clear with
 sellers can report on the revenue amounts they need to clear with those
 sellers.
 
->
-
-
-
-<b>Note:</b> This report is only available to
-curators.
-
-
-
-
-
->
+> [!NOTE]
+> This report is only available to curators.
 
 ## Time Frame
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
-
-
 
 - Custom
 - Current Hour
@@ -64,15 +50,11 @@ However, all time ranges are not available for every report.
 - Month to Yesterday
 - Lifetime
 
-
-
 **Intervals**
 
 Intervals determine how your data is grouped together into rows in the
 report response. The following is a complete list of intervals available
 for reports. However, all intervals are not available for every report.
-
-
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
@@ -80,281 +62,75 @@ for reports. However, all intervals are not available for every report.
 - Cumulative: Data is grouped together in one figure, covering the
   entire selected time range.
 
-
-
-
-
-
-
-<b>Note:</b>
-
-Hourly impression data is available and spans 13 full months. For
-impressions that are older than 13 months, hourly data is aggregated
-into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the
-UTC day in which the activity happened). This will make it look as
-though all activity happened at midnight.
-
-All daily data that is older than 13 months will be timestamped based on
-the UTC time zone.
-
-
-
-
-
-
-
+> [!NOTE]
+> Hourly impression data is available and spans 13 full months. For impressions that are older than 13 months, hourly data is aggregated into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the UTC day in which the activity happened). This will make it look as though all activity happened at midnight.
 >
+> All daily data that is older than 13 months will be timestamped based on the UTC time zone.
 
 ## Dimensions
 
+> [!IMPORTANT]
+> The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by. For all revenue fields, the currency is defined by the **Buying Currency** field.
 
-
-<b>Important:</b> The **Filter?** column shows
-whether a dimension can be used as a filter as well as being used to
-group by.
-
-For all revenue fields, the currency is defined by the
-Buying Currency field.
-
-
-
-
-
-
-
-<table
-id="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1"
-class="entry">Column</th>
-<th
-id="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2"
-class="entry">Filter</th>
-<th
-id="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Buyer</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">Yes</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">Member
-ID of the buyer who bought on the transaction</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Seller</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">Yes</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">Member
-ID of the seller where the curated transaction served on</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Publisher</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">Yes</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">Publisher
-ID of the seller where the curated transaction served on</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Curator</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">No</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">Member
-ID of the curator who facilitated the transaction</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Curated
-Deal ID</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">Yes</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">Curated
-deal ID</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Curator
-Cleared</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">Yes</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3"><ul>
-<li>"0" if Xandr clears net seller revenue with
-the seller.</li>
-<li>"1" if the curator direct clears net seller revenue with the
-seller.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Buying
-Currency</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">No</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">The
-transaction currency used by the buyer</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__1">Selling
-Currency</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__2">No</td>
-<td class="entry"
-headers="curator-billing-report__table-bb4893a2-28b3-402c-9305-a921603c9b41__entry__3">The
-transaction currency used by the seller</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Column | Filter | Description |
+|---|---|---|
+| Buyer | Yes | Member ID of the buyer who bought on the transaction |
+| Buying Currency | No | The transaction currency used by the buyer |
+| Curated Deal ID | Yes | Curated deal ID |
+| Curator | No | Member ID of the curator who facilitated the transaction |
+| Curator Cleared | Yes | - "0" if Xandr clears net seller revenue with the seller.<br> - "1" if the curator direct clears net seller revenue with the seller. |
+| Publisher | Yes | Publisher ID of the seller where the curated transaction served on |
+| Seller | Yes | Member ID of the seller where the curated transaction served on |
+| Selling Currency | No | The transaction currency used by the seller |
 
 ## Metrics
 
+> [!NOTE]
+> When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
+| Column | Description |
+|---|---|
+| Billable Imps | The total number of impressions billed to the client. |
+| Curator Auction Fees | The amount Xandr charged to the curator as a fee at auction time |
+| Curator Auction Service Deductions | The amount Xandr charged to the curator as a deduction at auction time |
+| Curator Margin Deduction | The profit a curator makes on a transaction. |
+| Net Seller Revenue | The amount of net revenue a seller earns, exclusive of seller auction service fees (SASC) they owe to Xandr. <br>**Note**: this field is only filled for sellers for which the curator has a direct clear relationship. |
 
-<b>Note:</b> When values of a metric are
-displayed as percentages in the UI, they will be displayed as decimals
-when you export the report.
-
-
-
-<table
-id="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1"
-class="entry">Column</th>
-<th
-id="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2"
-class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1">Billable
-Imps</td>
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2">The
-total number of impressions billed to the client.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1">Net
-Seller Revenue</td>
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2">The
-amount of net revenue a seller earns, exclusive of seller auction
-service fees (SASC) they owe to Xandr.
-<strong>Note</strong>: this field is only filled for sellers for which
-the curator has a direct clear relationship.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1">Curator
-Margin Deduction</td>
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2">The
-profit a curator makes on a transaction.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1">Curator
-Auction Service Deductions</td>
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2">The
-amount Xandr charged to the curator as a
-deduction at auction time</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__1">Curator
-Auction Fees</td>
-<td class="entry"
-headers="curator-billing-report__table-b5fc0bdf-0162-4cfe-b745-e3aa80820c14__entry__2">The
-amount Xandr charged to the curator as a fee at
-auction time</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
-
-## To Run Your Report
+## To run your report
 
 Follow these steps to run your report.
 
-1.  Select Reporting from the
+1. Select **Reporting** from the
     appropriate top menu (depending on how your account has been
     configured).
-    1.  Or, from the Publishers top menu, click on
-        Prebid
-        Server Premium \>
-        Analytics \>
-        Prebid Server Analytics
-2.  Select the relevant report from the list. The
-    Report screen shows the available
+    1. Or, from the Publishers top menu, click on
+        **Prebid Server Premium** \>
+        **Analytics** \>
+        **Prebid Server Analytics**
+1. Select the relevant report from the list. The
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.
-    
 
-    <b>Important:</b> For an explanation of
-    how grouping and filtering work, see
-    <a href="dimensions-metrics-filtering-and-grouping.md"
-    class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
+    > [!IMPORTANT]
+    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-    
-3.  Select the relevant filters to limit the data displayed to just the
+1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that
     shows impressions for all inventory sources, you may want to list
     results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
+    **Edit**), a selection panel appears.
     Select items in the **Available** list (left), then click
-    Add to include them in the
+    **Add** to include them in the
     **Chosen** list (right).
-4.  Group by Dimension. Grouping allows you to display rows of data in
+1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
-    
 
-    <b>Warning:</b> The more dimensions you
-    group by, the larger the data set that is returned. Larger data sets
-    can take substantially longer to process. Be sure to group using
-    only the dimensions you need.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-    
-5.  Choose a delivery option. Once you've selected your filters and
+1. Choose a delivery option. Once you've selected your filters and
     grouped by your chosen dimensions, you need to choose a delivery
     method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data,
@@ -365,38 +141,24 @@ Follow these steps to run your report.
     - **Run in background, notify me when results are ready to view**: A
       popup notification will let you know when the report is ready to
       view or download.
-      
 
-      <b>Tip:</b> The maximum size of the
-      report that can be downloaded from the UI is 100 MB. Also, there
-      is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can
-      try to download it using the <a
-      href="xandr-api/report-service.md"
-      class="xref" target="_blank">API</a> for that reporting service
-      (The limit here is 10 million rows).
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-      
-    - <span id="curator-billing-report__d10e107">**Export, send results
+    - **Export, send results
       via email**: Run the report in the background and email the
       results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so
       that you can run this report again in the future. You can name
       this template using the text entry field under
-      Name this report (its checkbox
+      **Name this report** (its checkbox
       is auto-selected when you choose this option). A saved report can
-      be rerun from the Your Reports
+      be rerun from the **Your Reports**
       screen.
     - **Add to scheduled reports**: Run this report automatically at
       specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a
       name for future reference.
-6.  <span id="curator-billing-report__d10e136">Click
-    Run report to send your report
+1. Click
+    **Run report** to send your report
     request.
-
-
-
-
-
-
