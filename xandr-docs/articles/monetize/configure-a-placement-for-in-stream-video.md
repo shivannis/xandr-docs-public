@@ -17,8 +17,9 @@ the query string or on-page code if necessary.
 1. If you want this placement to define an ad pod (multiple ads within an ad break), select the Enable Ad Podding checkbox.
 
     > [!NOTE]
-    >
-> If you select the **Enable Ad Podding** checkbox, the detailed configuration options for ad pods display at the bottom of the **Video Settings** page.
+    > 
+    > If you select the **Enable Ad Podding** checkbox, the detailed 
+    > configuration options for ad pods display at the bottom of the **Video > Settings** page.
 
 1. From the **Position** menu, select the placement's location within the video content by selecting **Pre-roll**, **Mid-roll**, or **Post-roll**. This setting is also known as the video context.
 
@@ -27,7 +28,9 @@ the query string or on-page code if necessary.
 
    > [!NOTE]
    >
-> Only creatives shorter than or equal to the specified max duration will be served. If you enabled **Ad Podding**, the **Max Duration** value is the total  duration for all the ads in the ad pod.
+   > Only creatives shorter than or equal to the specified max duration will be
+   > served. If you enabled **Ad Podding**, the **Max Duration** value is the 
+   > total  duration for all the ads in the ad pod.
 
 6. Specify whether your player will allow skippable creatives.
 7. If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the
@@ -58,9 +61,11 @@ the query string or on-page code if necessary.
 
     > [!TIP]
     >
-> If the placement can support VPAID, make sure you select **application/javascript** as a mime type. Otherwise, viewability won't be measured.
-
-    If your player can handle mixed media, leave the **Handles Mixed Media** checkbox selected. A player that handles mixed media may only accept one kind of creative.
+    > If the placement can support VPAID, make sure you select **application/
+    > javascript** as a mime type. Otherwise, viewability won't be measured.
+    > If your player can handle mixed media, leave the **Handles Mixed Media**
+    > checkbox selected. A player that handles mixed media may only accept one
+    > kind of creative.
 
     For example, a media player that handles mixed media may only accept mp4, but if a creative contains both mp4 and JavaScript renditions, the player can properly select the mp4 rendition.
 

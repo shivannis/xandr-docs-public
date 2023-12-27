@@ -18,7 +18,7 @@ There are no major changes currently scheduled.
 The table below provides a summary of recent additions, deactivations, and modifications of geography objects that are available for targeting.
 A geography object may be modified if its name has changed or if has been reassigned to another country or region. For a detailed list of
 changes, please review this CSV:
-[Geography Change Log](../attachments/geo-targeting/Geography-Change-Log.csv).
+[Geography Change Log](https://download.microsoft.com/download/1/8/f/18ff1fdc-ac04-48d1-9fa2-e18f3d48e33d/Geography-Change-Log.csv).
 
 **Recent Changes**
 

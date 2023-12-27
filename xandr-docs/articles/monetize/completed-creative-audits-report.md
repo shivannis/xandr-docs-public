@@ -102,7 +102,9 @@ Follow these steps to run your report.
 
    > [!WARNING]
    >
-  > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
+   > The more dimensions you group by, the larger the data set that is
+   > returned. Larger data sets can take substantially longer to process.
+   > Be sure to group using only the dimensions you need.
 
 5. Choose a delivery option. Once you've selected your filters andgrouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
@@ -110,7 +112,12 @@ Follow these steps to run your report.
 
       > [!TIP]
       >
-  > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) (The limit here is 10 million rows).
+      > The maximum size of the report that can be downloaded from the UI is
+      > 100 MB. Also, there is a limit of 100,000 rows per report when 
+      > downloading > as XLSX and Excel file. If the size of the report is more
+      > than that, you can try to download it using the [API](../
+      > digital-platform-api/report-service.md) (The limit here is 10 million 
+      > rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.

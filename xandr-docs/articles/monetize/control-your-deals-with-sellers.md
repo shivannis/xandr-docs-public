@@ -14,9 +14,9 @@ You can control deals received from sellers on the **Deals** screen. You can:
 - Manage the status of deals at any time by accepting, deactivating, or declining them
 - Assign a deal alias (internal name) to any seller deal for easier management within your organization
 
-> [!NOTE]
-> For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see
-> [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
+  > [!NOTE]
+  > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see
+  > [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
 ## Getting to the deals screen
 
@@ -33,8 +33,8 @@ Buyers can configure the default manner in which they process new seller deals b
 
     > [!NOTE]
     >
-  > - **Default Active** is the default setting if no deal review preference is set.
-  > - Changing the review preference only affects new deals. It does not change the status of existing deals.
+    > - **Default Active** is the default setting if no deal review preference is set.
+    > - Changing the review preference only affects new deals. It does not change the status of existing deals.
 
 To set the deal review preference for new seller deals, do the following:
 
@@ -57,8 +57,8 @@ When you select **Accept**, the deal is:
 - Eligible for targeting
 - Passed to the bidstream
 
-> [!NOTE]
-> Accepted deals can be set to **Inactive** status (see [Managing Deal Status](control-your-deals-with-sellers.md)) if you want to remove them from the list of **Active** deals.
+  > [!NOTE]
+  > Accepted deals can be set to **Inactive** status (see [Managing Deal Status](control-your-deals-with-sellers.md)) if you want to remove them from the list of **Active** deals.
 
 ### Declined deals
 
@@ -68,8 +68,8 @@ When you select **Decline**, the deal is:
 - Not eligible for targeting
 - Not passed to the bidstream
 
-> [!NOTE]
-> You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](control-your-deals-with-sellers.md)).
+  > [!NOTE]
+  > You can change **Declined** deals to **Active** at any time (see [Managing Deal Status](control-your-deals-with-sellers.md)).
 
 To accept or decline one or more new deals:
 

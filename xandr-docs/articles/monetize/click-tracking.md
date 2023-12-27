@@ -4,7 +4,7 @@ description: The article defines click tracking that serves many useful purposes
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - click tracking
+# Microsoft Monetize - Click tracking
 
 Click tracking serves many useful purposes within the ad serving industry as a whole. For Xandr, click tracking is necessary for optimizing to CPC and CPA goals, for bidding CPC and CPA, and for measuring a campaign's success.
 
@@ -30,7 +30,7 @@ Templates](creative-templates.md).
 All you have to do is enter the landing page URL in the **Landing Page** field and select the Enable **Click Tracking** checkbox if you're using Console, and a click URL
 with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
 
-## Tracking Third-Party Clicks on URLs for Hosted Creatives
+## Tracking third-party Clicks on URLs for hosted creatives
 
 Most third-party click tracking URLs will automatically redirect to the landing page, so all you have to do is enter the click tracking URL directly in the Landing Page field.
 After clicking the creative, the tracker will load and redirect to the landing page.
