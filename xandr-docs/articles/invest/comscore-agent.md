@@ -14,7 +14,7 @@ comScore's Agents 2.0 is a powerful set of functionality to help you navigate th
 
 Every time you make a selection, we provide instant feedback on available inventory so you can plan your campaign better. Set up multiple Agents for different campaigns and modify them in real-time, along with other campaign criteria, to optimize your campaign's performance.
 
-:::image type="content" source="./media/AMP.png" alt-text="Screenshot that shows the agents for buyers.":::
+:::image type="content" source="./media/amp.png" alt-text="Screenshot that shows the agents for buyers.":::
 
 ## Contact information
 
