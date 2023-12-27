@@ -62,7 +62,7 @@ environments. When the creative and the measurement script are served within an 
 Alternative methods, such as browser optimization, must be developed. Depending on the technologies used by ad-viewability vendors, the
 potential success rate can be very limited.
 
-:::image type="content" source="media/IFrame-measurement.png" alt-text="Diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
+:::image type="content" source="media/iframe-measurement.png" alt-text="Diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
 
 :::image type="content" source="media/viewability-tech-a.png" alt-text="Diagram that shows the success rate of viewability measurement across devices.":::
 
