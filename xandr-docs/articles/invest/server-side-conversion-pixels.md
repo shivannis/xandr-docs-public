@@ -17,7 +17,7 @@ This page makes references to an attribution server. This is a server that is se
 
 ## How server-side pixels work
 
-:::image type="content" source="./media/ssp-kb-article-graphic_revised.png" alt-text="Diagram explaining the server-side pixel conversion.":::
+:::image type="content" source="./media/ssp-kb-article-graphic-revised.png" alt-text="Diagram explaining the server-side pixel conversion.":::
 
 ## Getting the URL for a server-side pixel call
 
