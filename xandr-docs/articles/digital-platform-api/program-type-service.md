@@ -1,118 +1,34 @@
 ---
-Title : Program Type Service
-Description : Use the read-only Program-Type Service to see what video content program
+title: Digital Platform API - Program Type Service
+description: Explore the read-only Program Type service to view video content fields that can be added to line item or deal line item targeting.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-types are registered in the Xandr system. Video
 ---
 
+# Program Type service
 
-# Program Type Service
-
-
-
-Use the read-only Program-Type Service to see what video content program
-types are registered in the Xandr system. Video
-content fields can be added to line item or deal line item targeting. 
-
-
+Use the read-only Program-Type Service to see what video content program types are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003277__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00003277__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00003277__entry__3"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__2">https://api.<span
-class="ph">appnexus.com/video-program-type</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003277__entry__3">To
-view all defined program types</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__2">https://api.<span
-class="ph">appnexus.com/video-program-type?id=&lt;id
-value&gt;</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003277__entry__3">To
-view a defined program type</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description  |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/video-program-type](https://api.appnexus.com/video-program-type) | To view all defined program types. |
+| `GET` | [https://api.appnexus.com/video-program-type?id=id_value](https://api.appnexus.com/video-program-type?id=id_value) | To view a defined program type. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00003277__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00003277__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00003277__entry__12"
-class="entry colsep-1 rowsep-1">Description </th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003277__entry__12">The
-Xandr referential ID associated with the program
-type</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003277__entry__12">The
-video taxonomy referential value
-<p><strong>Required On</strong>: POST/PUT</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00003277__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00003277__entry__12">The
-time of last modification</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description  |
+|:---|:---|:---|
+| `id` | int | The Xandr referential ID associated with the program type. |
+| `name` | string | The video taxonomy referential value.<br>**Required On:** `POST`/`PUT` |
+| `last_modified` | timestamp | The time of last modification. |
 
 ## Example
 
-**To retrieve all defined program types  
-  
-**
+### To retrieve all defined program types
 
-``` pre
+```
 curl -b cookies -c cookies "https://api.appnexus.com/video-program-type"
 {
   "response": {
@@ -161,24 +77,8 @@ curl -b cookies -c cookies "https://api.appnexus.com/video-program-type"
   }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-
-
-
-
-
-
+- [Profile Service](profile-service.md)
+- [API Best Practices](api-best-practices.md)
+- [API Semantics](api-semantics.md)

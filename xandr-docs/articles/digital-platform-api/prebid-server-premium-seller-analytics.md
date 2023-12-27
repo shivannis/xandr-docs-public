@@ -1,50 +1,23 @@
 ---
-Title : Prebid Server Premium Seller Analytics
-Description : The Prebid Server Premium Seller Analytics Report contains performance
+title: Prebid Server Premium Seller Analytics
+description: Explore the Prebid Server Premium Seller Analytics report to access performance information on configured Prebid Server Premium (PSP) demand partners.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-information on configured Prebid Server Premium (PSP) demand partners.
 ---
-
 
 # Prebid Server Premium Seller Analytics
 
+The Prebid Server Premium Seller Analytics Report contains performance information on configured Prebid Server Premium (PSP) demand partners. Using this report, you can:
 
-
-
-
-
-
-The Prebid Server Premium Seller Analytics Report contains performance
-information on configured Prebid Server Premium (PSP) demand partners.
-Using this report, you can:
-
-- Track revenue by heading bidder demand partner, publisher, or
-  geographical region.
+- Track revenue by heading bidder demand partner, publisher, or geographical region.
 - Track lift on inventory you've opened up to header bidding demand.
-- Monitor the health and efficiency of your Prebid Server Premium
-  partners and placements.
+- Monitor the health and efficiency of your Prebid Server Premium partners and placements.
 
-For information on other reports via API, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>. For information on
-accessing data via UI, see <a
-href="monetize_monetize-standard/reporting-guide.md"
-class="xref" target="_blank">Reporting Guide</a> for Monetize and <a
-href="monetize_monetize-standard/prebid-server-premium-seller-analytics.md"
-class="xref" target="_blank">Prebid Server Premium Seller Analytics
-Report</a>.
+For information on other reports via API, see [Report Service](report-service.md). For information on accessing data via UI, see [Reporting Guide](../monetize/reporting-guide.md) for Monetize and [Prebid Server Premium Seller AnalyticsReport](../monetize/prebid-server-premium-seller-analytics.md).
 
+## Time frame
 
-
-
-
->
-
-## Time Frame
-
-The `report_interval` field in the JSON request can be set to one of the
-following:
+The `report_interval` field in the JSON request can be set to one of the following:
 
 - last_hour
 - last_48_hours
@@ -57,510 +30,59 @@ following:
 - lifetime
 - month_to_yesterday
 
-The `time_granularity` of the data is hourly. For instructions on
-retrieving a report, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> or the <a
-href="prebid-server-premium-seller-analytics.md#Prebid-Server-Premium-Seller-Analytics__example"
-class="xref">Example</a> below.
+The `time_granularity` of the data is hourly. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [Examples](#examples) below.
 
-**Data Retention Period**
+### Data retention period
 
 Data retention period for this report is 30 days.
 
-
-
->
-
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"2018-02-01-09:54"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-hour of the auction.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"2018-02"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-month of the auction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"2018-02-01"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-day of the auction.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">seller_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">123</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-ID of the seller member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">seller_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"Cool Seller Inc"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name of the seller member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">tag_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-ID of the placement tag.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">publisher_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">789</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-ID of the publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">publisher_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"Neat Publisher Ltd"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name of the publisher.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">publisher</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"Neat Publisher Ltd (789)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">A
-string consisting of the publisher name and publisher ID.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">size</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">300x250</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-width and height of the placement associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">geo_country</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"US"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-country abbreviation.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">geo_country_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"United States"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name of the geographical country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">site_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">555</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-ID of the site. For more information, see the <a
-href="site-service.md"
-class="xref" target="_blank">Site Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">site_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"My Site"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name of the site. For more information, see the <a
-href="site-service.md"
-class="xref" target="_blank">Site Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">site</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"My Site (555)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">A
-string containing the name and ID of the site. For more information, see
-the <a
-href="site-service.md"
-class="xref" target="_blank">Site Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">tag_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"My Placement"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name of the tag associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">header_bidding_demand_partner_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">9645</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-ID of the demand partner associated with the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">header_bidding_demand_partner_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"PubMatic (PSP)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-demand partner associated with the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">header_bidding_demand_partner</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">"PubMatic (PSP) (9645)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-name and ID of the demand partner associated with the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__1">included_header_bidding_demand</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__4"><code
-class="ph codeph">654</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__dimensions__entry__5">The
-included demand from non-Xandr demand partners.</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `hour` | date | no | `"2018-02-01-09:54"` | The hour of the auction. |
+| `month` | date | no | `"2018-02"` | The month of the auction. |
+| `day` | date | yes | `"2018-02-01"` | The day of the auction. |
+| `seller_member_id` | int | yes | `123` | The ID of the seller member. |
+| `seller_member_name` | string | no | `"Cool Seller Inc"` | The name of the seller member. |
+| `tag_id` | int | yes | `456` | The ID of the placement tag. |
+| `publisher_id` | int | yes | `789` | The ID of the publisher. |
+| `publisher_name` | string | no | `"Neat Publisher Ltd"` | The name of the publisher. |
+| `publisher` | string | no | `"Neat Publisher Ltd (789)"` | A string consisting of the publisher name and publisher ID. |
+| `size` | string | yes | `300x250` | The width and height of the placement associated with the impression. |
+| `geo_country` | string | yes | `"US"` | The country abbreviation. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country. |
+| `site_id` | int | yes | `555` | The ID of the site. For more information, see the [Site Service](site-service.md). |
+| `site_name` | string | no | `"My Site"` | The name of the site. For more information, see the [Site Service](site-service.md). |
+| `site` | string | no | `"My Site (555)"` | A string containing the name and ID of the site. For more information, see the [Site Service](site-service.md). |
+| `tag_name` | string | no | `"My Placement"` | The name of the tag associated with the impression. |
+| `header_bidding_demand_partner_id` | int | no | `9645` | The ID of the demand partner associated with the placement. |
+| `header_bidding_demand_partner_name` | string | no | `"PubMatic (PSP)"` | The demand partner associated with the placement. |
+| `header_bidding_demand_partner` | string | no | `"PubMatic (PSP) (9645)"` | The name and ID of the demand partner associated with the placement. |
+| `included_header_bidding_demand` | int | yes | `654` | The included demand from non-Xandr demand partners. |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">34534</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-total number of impressions (including defaults).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">seller_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">999.99</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">total
-seller revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-seller revenue on the deal, represented as a dollar amount.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">seller_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">1.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">See
-Description</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-seller revenue on the deal, represented in eCPM.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">view_measured_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">1500</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">See
-Description</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-total number of impressions that were measured for viewability.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">87.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">imps_viewed
-/ view_measured_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-percentage of impressions that were viewable out of the total number of
-impressions measured for viewability.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">view_measurement_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">91.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">view_measured_imps
-/ imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-percentage of impressions measured for viewability out of the total
-number of impressions</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">imps_viewed</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">1100</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">See
-Description</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-number of viewable impressions for the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">ad_requests</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">1200</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">See
-Description</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-number of ad requests associated with the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__1">fill_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__3"><code
-class="ph codeph">85.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__4">Kept
-impressions + resold impressions / total number of impressions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="Prebid-Server-Premium-Seller-Analytics__metrics__entry__5">The
-percentage of ad requests that were filled with demand. (Kept
-Impressions and Resold Impressions / total number of impressions).</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Example | Formula | Description |
+|:---|:---|:---|:---|:---|
+| `imps` | int | `34534` | imps | The total number of impressions (including defaults). |
+| `seller_revenue` | money | `999.99` | total seller revenue | The seller revenue on the deal, represented as a dollar amount. |
+| `seller_ecpm` | money | `1.00` | See Description | The seller revenue on the deal, represented in eCPM. |
+| `view_measured_imps` | int | `1500` | See Description | The total number of impressions that were measured for viewability. |
+| `view_rate` | double | `87.00` | imps_viewed / view_measured_imps | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. |
+| `view_measurement_rate` | int | `91.00` | view_measured_imps / imps | The percentage of impressions measured for viewability out of the total number of impressions. |
+| `imps_viewed` | int | `1100` | See Description | The number of viewable impressions for the placement. |
+| `ad_requests` | int | `1200` | See Description | The number of ad requests associated with the placement. |
+| `fill_rate` | double | `85.00` | Kept impressions + resold impressions / total number of impressions | The percentage of ad requests that were filled with demand. (Kept Impressions and Resold Impressions / total number of impressions). |
 
+## Examples
 
+### Create JSON formatted report request
 
->
+The JSON file should include the `report_type` of `"prebid_server_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that
+can be included in the JSON file, see the [Report Service](report-service.md).
 
-## Example
-
-**Create JSON formatted report request**
-
-The JSON file should include the `report_type` of
-`"prebid_server_analytics"`, as well as the columns (dimensions and
-metrics) and `report_interval` that you want to retrieve. You can also
-filter for specific dimensions, define granularity (`year`, `month`,
-`day`), and specify the `"format"` in which the data should be returned
-(`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that
-can be included in the JSON file, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-``` pre
+```
 $ cat prebid_server_analytics
   {"report": 
     {
@@ -572,13 +94,11 @@ $ cat prebid_server_analytics
 }
 ```
 
-**`POST` the request to the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>**
+### `POST` the request to the [Report Service](report-service.md)
 
 `POST` the JSON request to get back a report ID.
 
-``` pre
+```
 $ curl -b cookies -c cookies -X post -d @prebid_server_analytics "https://api.appnexus.com/report"
 {
    "response":{
@@ -588,14 +108,12 @@ $ curl -b cookies -c cookies -X post -d @prebid_server_analytics "https://api.ap
 }
 ```
 
-**`GET` the report status from the Report Service**
+### `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report
-data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
+`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=97a181df6d77a8f3cd5a45eff4ea3dab'
 {
     "response": {
@@ -611,50 +129,21 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=97a181df6d77a8f
 }
 ```
 
-**`GET` the report data from the Report Download Service**
+### `GET` the report data from the Report Download service
 
-To download the report data to a file, make another `GET` call with the
-report ID, but this time to the **report-download** service. You can
-find the service and report ID in the `url` field of the response to
-your previous `GET` call. When identifying the file that you want to
-save to, be sure to use the file extension of the file format that you
-specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the `url` field of the response to your previous `GET` call. When identifying the file that you want to save to, be sure to use the file extension of the file format that you specified in your initial `POST`.
 
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
 
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `-i` or `-v` in your call to expose the response header.
-
-
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=97a181df6d77a8f3cd5a45eff4ea3dab' > /tmp/prebid_server_analytics.csv
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=97a181df6d77a8f3cd5a45eff4ea3dab' > /tmp/prebid_server_analytics.csv
 ```
 
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
 
+## Related topics
 
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-## Related Topics
-
-- <a
-  href="report-service.md"
-  class="xref" target="_blank">Report Service</a>
-- <a
-  href="monetize_monetize-standard/prebid-server-premium-seller-analytics.md"
-  class="xref" target="_blank">Prebid Server Premium Seller Analytics
-  Report (UI)</a>
-
-
-
-
-
-
+- [Report Service](report-service.md)
+- [Prebid Server Premium Seller Analytics Report (UI)](../monetize/prebid-server-premium-seller-analytics.md)

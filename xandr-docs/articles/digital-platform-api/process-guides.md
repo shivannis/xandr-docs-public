@@ -1,62 +1,23 @@
 ---
-Title : Process Guides
-Description : - <a
+title: Process Guides
+description:
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="buy-side-setup.md"
 ---
 
+# Process guides
 
-# Process Guides
-
-
-
-- <a
-  href="buy-side-setup.md"
-  class="xref" target="_blank">Buy-Side Setup</a>
-- <a
-  href="buy-side-setup-with-the-augmented-line-item.md"
-  class="xref" target="_blank">Buy-Side Setup with the Augmented Line
-  Item</a>
-- <a
-  href="buying-microsoft-outlook-com-inventory.md"
-  class="xref" target="_blank">Buying Microsoft Outlook.com Inventory</a>
-- <a
-  href="custom-key-value-targeting.md"
-  class="xref" target="_blank">Custom Key Value Targeting</a>
-- <a
-  href="working-with-roles-using-the-api.md"
-  class="xref" target="_blank">Working with Roles using the API</a>
-- <a
-  href="sell-side-setup.md"
-  class="xref" target="_blank">Sell-Side Setup</a>
-- <a
-  href="deal-line-item-api-setup-guide.md"
-  class="xref" target="_blank">Deal Line Item API Setup Guide</a>
-- <a
-  href="curated-deal-line-item-api-setup-guide.md"
-  class="xref" target="_blank">Curated Deal Line Item API Setup Guide</a>
-- <a
-  href="publisher-gdali-api-setup-guide.md"
-  class="xref" target="_blank">Publisher GDALI API Setup Guide</a>
-- <a
-  href="gdli-to-gdali-migration.md"
-  class="xref" target="_blank">GDLI to GDALI Migration</a>
-- <a
-  href="uploading-segment-data-with-rtss.md"
-  class="xref" target="_blank">Uploading Segment Data with RTSS</a>
-- <a
-  href="programmatic-guaranteed-deal-for-monetize-ssp--third-party-ad-server-pacing--tag-integration--api-setup-guide.md"
-  class="xref" target="_blank">Programmatic Guaranteed Deal for Monetize
-  SSP (Third-Party Ad Server Pacing, Tag Integration) API Setup Guide</a>
-- <a
-  href="programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md"
-  class="xref" target="_blank">Programmatic Guaranteed Deal through
-  Monetize Ad Server API Setup Guide</a>
-- <a
-  href="multi-buyer-deals-api-setup.md"
-  class="xref" target="_blank">Multi-Buyer Deals API Setup</a>
-
-
-
-
+- [Buy-Side Setup](buy-side-setup.md)
+- [Buy-Side Setup with the Augmented Line Item](buy-side-setup-with-the-augmented-line-item.md)
+- [Buying Microsoft Outlook.com Inventory](buying-microsoft-outlook-com-inventory.md)
+- [Custom Key Value Targeting](custom-key-value-targeting.md)
+- [Working with Roles using the API](working-with-roles-using-the-api.md)
+- [Sell-Side Setup](sell-side-setup.md)
+- [Deal Line Item API Setup Guide](deal-line-item-api-setup-guide.md)
+- [Curated Deal Line Item API Setup Guide](curated-deal-line-item-api-setup-guide.md)
+- [Publisher GDALI API Setup Guide](publisher-gdali-api-setup-guide.md)
+- [GDLI to GDALI Migration](gdli-to-gdali-migration.md)
+- [Uploading Segment Data with RTSS](uploading-segment-data-with-rtss.md)
+- [Programmatic Guaranteed Deal for Microsoft Monetize (Third-Party Ad Server Pacing, Tag Integration) API Setup Guide](programmatic-guaranteed-deal-for-monetize-ssp--third-party-ad-server-pacing--tag-integration--api-setup-guide.md)
+- [Programmatic Guaranteed Deal through Microsoft Monetize Ad Server API Setup Guide](programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md)
+- [Multi-Buyer Deals API Setup](multi-buyer-deals-api-setup.md)
