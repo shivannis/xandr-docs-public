@@ -1,177 +1,40 @@
 ---
-Title : Operating System Service
-Description : <b>Note:</b>
+title: Digital Platform API - Operating System Service
+description: This article provides information on the operating system service with examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-To retrieve operating system **versions** (Android 3.x, Apple iOS 6,
 ---
 
+# Digital Platform API - Operating system service
 
-# Operating System Service
-
-
-
-
-
-<b>Note:</b>
-
-To retrieve operating system **versions** (Android 3.x, Apple iOS 6,
-etc.), you should use the <a
-href="operating-system-extended-service.md"
-class="xref" target="_blank">Operating System Extended Service</a>
-instead of this service. To retrieve operating systems as a whole
-(Android, Windows, Linux, etc.), you should use the <a
-href="operating-system-family-service.md"
-class="xref" target="_blank">Operating System Family Service</a>.
-
-
-
-
+> [!NOTE]
+> To retrieve operating system **versions** (Android 3.x, Apple iOS 6, etc.), you should use the [Operating System Extended Service](./operating-system-extended-service.md) instead of this service. To retrieve operating systems as a whole (Android, Windows, Linux, etc.), you should use the [Operating System Family Service](./operating-system-family-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000028a4__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000028a4__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000028a4__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__2">https://api.<span
-class="ph">appnexus.com/operating-system</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__3">View
-all operating systems</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__2">https://api.<span
-class="ph">appnexus.com/operating-system?search=SEARCH_TERM</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__3">Search for operating systems with IDs or
-names containing certain characters</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__2">https://api.<span
-class="ph">appnexus.com/operating-system?id=OPERATING_SYSTEM_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__3">View
-a specific operating system</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__2">https://api.<span
-class="ph">appnexus.com/operating-system/meta</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Example |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/operating-system | View all operating systems. |
+| `GET` | https://api.appnexus.com/operating-system?search=SEARCH_TERM | Search for operating systems with IDs or names containing certain characters. |
+| `GET` | https://api.appnexus.com/operating-system?id=OPERATING_SYSTEM_ID | View a specific operating system. |
+| `GET` | https://api.appnexus.com/operating-system/meta | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000028a4__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000028a4__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000028a4__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-ID of the operating system.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-date and time the operating system version entry was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-name of the operating system version.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code
-class="ph codeph">os_family_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-ID of the operating system family to which the operating system version
-belongs. You can use the <a
-href="operating-system-family-service.md"
-class="xref" target="_blank">Operating System Family Service</a> service
-to get information about operating system families.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code
-class="ph codeph">os_family_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-name of the operating system family to which the operating system
-version belongs, e.g., "Android", "Apple iOS", "Apple Mac/OSX",
-etc.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__16"><code
-class="ph codeph">platform_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000028a4__entry__17">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000028a4__entry__18">The
-type of platform on which the operating system version runs. Possible
-values: "web", "mobile", or "both".</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the operating system. |
+| `last_modified` | string | The date and time the operating system version entry was last modified. |
+| `name` | string | The name of the operating system version. |
+| `os_family_id` | int | The ID of the operating system family to which the operating system version belongs. You can use the [Operating System Family Service](./operating-system-family-service.md) to get information about operating system families. |
+| `os_family_name` | string | The name of the operating system family to which the operating system version belongs, e.g., `"Android"`, `"Apple iOS"`, `"Apple Mac/OSX"`, etc. |
+| `platform_type` | enum | The type of platform on which the operating system version runs. Possible values: <br> - `"web"` <br> - `"mobile"` <br> - `"both"`. |
 
 ## Examples
 
-**View all operating systems**
+### View all operating systems
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/operating-system'
 {
   "response": {
@@ -308,9 +171,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/operating-system'
 }
 ```
 
-**View a specific operating system**
+### View a specific operating system
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/operating-system?id=8'
 {
     "response": {
@@ -329,9 +192,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/operating-system?id=8'
     }
 }
 ```
-
-
-
-
-
-

@@ -1,74 +1,27 @@
 ---
-Title : Operating System-Families Service
-Description : The Operating System-Families Service returns all the operating systems
+title: Operating System-Families Service
+description: Operating system-families service lists all available operating systems for caller's member, not maintained by Prebid Server Premium. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-available for the caller's member.
 ---
 
+# Operating system families service
 
-# Operating System-Families Service
+The Operating System-Families Service returns all the operating systems available for the caller's member.
 
-
-
-The Operating System-Families Service returns all the operating systems
-available for the caller's member.
-
-Operating systems are a Xandr-wide list NOT
-maintained by Prebid Server Premium. This service can be found at <a
-href="operating-system-service.md"
-class="xref" target="_blank">Operating System Service</a>. We offer this
-endpoint in PSP as a convenience to users and also so we can show a list
-of operating systems for targeting purposes in the UI.
-
-
+Operating systems are a Xandr-wide list NOT maintained by Prebid Server Premium. This service can be found at [Operating System Service](./operating-system-service.md). We offer this endpoint in PSP as a convenience to users and also so we can show a list of operating systems for targeting purposes in the UI.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/prebid/operating-system-families | Return all the operating system-families objects. |
 
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="operating-system-families-service__entry__1"
-class="entry align-center colsep-1 rowsep-1">HTTP Method</th>
-<th id="operating-system-families-service__entry__2"
-class="entry align-center colsep-1 rowsep-1">Endpoint</th>
-<th id="operating-system-families-service__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="operating-system-families-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="operating-system-families-service__entry__2"><a
-href="https://api.appnexus.com/prebid/operating-system-families"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/prebid/operating-system-families</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="operating-system-families-service__entry__3">Return all the
-operating system-families objects.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Example Response**
+## Example response
 
 The response is a JSON array of operating system-family objects.
 
-
-
-``` pre
+```
 [
    {
       "id":1,
@@ -145,11 +98,3 @@ The response is a JSON array of operating system-family objects.
 ]                
                 
 ```
-
-
-
-
-
-
-
-
