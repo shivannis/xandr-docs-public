@@ -13,17 +13,18 @@ There are two types of content categories:
 - **Universal:** These categories are maintained by Xandr.
 - **Custom:** Sellers have the ability to define their own categories and apply them to slices of their own inventory.
 
-> [!TIP]
-> We are splitting our "Automotive and Vehicles" category into sub-categories for dealerships, manufacturers, service, and more. For more information, see [Automotive
-> Content Categories](automotive-content-categories.md).
+   > [!TIP]
+   > We are splitting our "Automotive and Vehicles" category into
+   > sub-categories for dealerships, manufacturers, service, and more.
+   > For more information, see [Automotive Content Categories](automotive-content-categories.md).
 
 ## Apply categories to your inventory
 
-You can apply a number of categories to each of your sites and placements at the Network, Site, and Placement levels. For instructions, see [create-a-placement.md](create-a-placement.md).
+You can apply a number of categories to each of your sites and placements at the Network, Site, and Placement levels. For instructions, see [Create a Placement4](create-a-placement.md).
 
 ## Expose categories for targeting by buyers
 
-To expose content categories for targeting by buyers, see the sections on **targeting access** for content categories on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) page.
+To expose content categories for targeting by buyers, see the sections on **targeting access** for content categories on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) and [Partner Controls](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) page.
 
 **Report on Volume by Category**
 

@@ -10,8 +10,7 @@ When adding creatives, you can set a variety of tracking parameters from the Pix
 segment pixels.
 
 - **[Click Tracking](click-tracking.md)**: The system automatically runs a click tracking test when the creative is uploaded. If the system fails to automatically
-  run a click tracking test for your creative when using the single creative workflow to upload one creative, you can manually click the **Run Test** button from the
-  **Pixels (optional)** section.
+  run a click tracking test for your creative when using the single creative workflow to upload one creative, you can manually click the **Run Test** button from the **Pixels (optional)** section.
   
    > [!NOTE]
    > If the click tracking test is unsuccessful, which is indicated by a red **X**, re-upload the file or update the landing page URL and click the **try again** link that displays in the Pixels (optional) section.
