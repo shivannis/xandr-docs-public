@@ -19,7 +19,7 @@ users.
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report.
 The following is a complete list of time ranges available for reports.
@@ -106,7 +106,7 @@ Follow these steps to run your report.
         **Prebid
         Server Premium**\>
         **Analytics** \>
-        **Prebid Server Analytics**
+        **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
     **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
@@ -161,6 +161,6 @@ Follow these steps to run your report.
       name for future reference.
 1. Click **Run report** to send your report request.
 
-## Related Topic
+## Related topic
 
 - [Network Reporting](network-reporting.md)

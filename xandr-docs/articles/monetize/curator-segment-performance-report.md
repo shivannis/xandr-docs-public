@@ -111,7 +111,7 @@ Follow these steps to run your report.
         **Prebid
         Server Premium**\>
         **Analytics** \>
-        **Prebid Server Analytics**
+        **Prebid Server Analytics**.
 2. Select the relevant report from the list. The
     **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The

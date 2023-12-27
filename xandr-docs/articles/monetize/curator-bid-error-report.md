@@ -119,9 +119,9 @@ Follow these steps to run your report.
     1. Or, from the Publishers top menu, click on
         **Prebid Server Premium** \>
         **Analytics** \>
-        **Prebid Server Analytics**
+        **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
-    Report screen shows the available
+    **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The
     selections you make here will determine what report data is
     delivered to you, and how.

@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Cross-Device Reporting
+title : Microsoft Monetize - Reporting (Cross-Device)
 description : This page deals with Cross-Device Reporting that is present in the NetworkAnalytics report, the Device Analytics report, the Data Usage report, as well as on the Analytics tab for the augmented line item. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Cross-Device reporting
+# Microsoft Monetize - Reporting (Cross-Device)
 
 Reporting on cross-device targeting and measurement is available in the
 NetworkAnalytics report, the Device Analytics
@@ -26,7 +26,7 @@ line item.
 | Buyer Reach and Frequency | - Cross Device Incremental Device Reach<br> - Cross Device Incremental Imps | The number of unique devices reached and the number of impressions which are transacted due to cross-device audience extension. |
 | Data Usage | Data Type | Supported values are Segment and Cross Device. |
 | Device Analytics | - Conversion Device Make<br> - Conversion Device Type | Compare these metrics to the standard Device Make and Device Type metrics, which include all devices, not just ones where a conversion occurred. |
-| NetworkAnalytics | - Post View Cross Device Conversions<br> - Post Click Cross Device Conversions | Compare these metrics to the standard Post View Conversions and Post Click Conversions metrics, which include all conversions including cross-device conversions. |
+| Network Analytics | - Post View Cross Device Conversions<br> - Post Click Cross Device Conversions | Compare these metrics to the standard Post View Conversions and Post Click Conversions metrics, which include all conversions including cross-device conversions. |
 
 ## Related topics
 

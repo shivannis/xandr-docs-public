@@ -154,9 +154,9 @@ Follow these steps to run your report.
     information you want. For example, rather than running a report that
     shows impressions for all inventory sources, you may want to list
     results for just a select few. When you select a filter (by clicking
-    Edit), a selection panel appears.
+    **Edit**), a selection panel appears.
     Select items in the **Available** list (left), then click
-    Add to include them in the
+    **Add** to include them in the
     **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.

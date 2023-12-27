@@ -2,7 +2,6 @@
 title : Curator Billing Report
 description : Learn how Curator Billing Report allows you to manage internal invoicing for your curation activities.  
 ms.date: 10/28/2023
-for your curation activities. Curators who choose to direct-clear with
 ---
 
 
@@ -16,7 +15,7 @@ sellers.
 > [!NOTE]
 > This report is only available to curators.
 
-## Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 
@@ -106,7 +105,7 @@ Follow these steps to run your report.
     1. Or, from the Publishers top menu, click on
         **Prebid Server Premium** \>
         **Analytics** \>
-        **Prebid Server Analytics**
+        **Prebid Server Analytics**.
 1. Select the relevant report from the list. The
     **Report** screen shows the available
     filters, dimensions, and delivery options for the report. The

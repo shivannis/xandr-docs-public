@@ -105,7 +105,7 @@ values (which includes the over- or undespend pacing value) to determine
 the pacing value for the coming period. This more-closely aligns the
 bidder to the correct bid rate, and also moderates the pacing value.
 
-## How you can ensure proper pacing for your Campaign
+## How you can ensure proper pacing for your campaign
 
 Due to the complexity of bidding in real time, it is extremely difficult
 to provide exact pacing. Our system must rely on certain assumptions
@@ -149,7 +149,7 @@ smooth delivery.
   Pacing amount** When using optimization, if you set a learn budget
   amount that is less than the daily pacing amount, new campaigns (with
   no optimized inventory) will stop serving when the learn budget amount
-  is reached. For more information, see [learn-budget.md](Learn Budget).
+  is reached. For more information, see [Learn Budget](learn-budget.md).
 
 ## Related topics
 

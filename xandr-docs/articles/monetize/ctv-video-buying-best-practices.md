@@ -28,7 +28,7 @@ a line item. Otherwise, your ads may not serve on some publishers'
 inventory. 
 
 > [!NOTE]
-> Since sdevice IDs and user IDs are not always available, frequency-capped CTV video campaigns can be more challenging to scale than desktop and mobile campaigns.
+> Since device IDs and user IDs are not always available, frequency-capped CTV video campaigns can be more challenging to scale than desktop and mobile campaigns.
 
 ## Device targeting
 
@@ -61,7 +61,7 @@ information on how to generate reports, see the [Reporting Guide](reporting-guid
 
 CTV app IDs can be used for detection, targeting, and reporting.
 
-## Related topic
+## Related topics
 
 - [Buying OTT Video Inventory](buying-ott-video-inventory.md)
 - [OTT Video Creative Specifications](ott-video-creative-specifications.md)

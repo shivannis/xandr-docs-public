@@ -1,6 +1,6 @@
 ---
 title : Microsoft Monetize - Dates and Times in Reporting
-Description : Learn about reporting of time zones and daylight savings time in this page. 
+description : Learn about reporting of time zones and daylight savings time in this page. 
 ms.date: 10/28/2023
 ---
 
