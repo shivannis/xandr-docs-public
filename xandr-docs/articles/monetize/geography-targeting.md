@@ -105,7 +105,8 @@ If your list contains postal codes that do not exist in our database, you will b
 - **Excel-Truncated Zeros:** Excel may truncate leading zeros from postal codes if they are numeric (e.g., 06514 becomes 6514). However, an alphanumeric postal code such as "0AH 135" would not be affected.
 - **Country:** Postal codes can only be added for one country at a time.
 - **US zip codes:** Only 5-digit zip codes are accepted.
-Ranges are no longer supported. You will need to add each individual postal code to the list.
+
+   Ranges are no longer supported. You will need to add each individual postal code to the list.
 
 ## Target users by political districts
 

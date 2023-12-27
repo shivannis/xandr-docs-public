@@ -47,11 +47,11 @@ Click **Next**.
     - Longitude
     - Radius (in meters: 3m to 100000m)
 
-    > [!NOTE]
-    >
+     > [!NOTE]
+     >
   > The radius needs to be whole number.
 
-    - Name (optional name for this feature)
+     - Name (optional name for this feature)
 
       Separate each group by entering a hard return. For example:
 

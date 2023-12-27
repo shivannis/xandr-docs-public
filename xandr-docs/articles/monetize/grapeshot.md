@@ -14,7 +14,7 @@ Oracle’s Contextual Intelligence is the global leader in contextual advertisin
 
 ## Contact info
 
-For support in requesting access to the Segment Builder app, please contact odc-context-help_ww@oracle.com.
+For support in requesting access to the Segment Builder app, please contact [odc-context-help_ww@oracle.com](mailto:odc-context-help_ww@oracle.com).
 
 ## Permissions
 
@@ -22,14 +22,14 @@ This app has permission to access the folllowing Xandr API services and fields f
 
 | Name | Read | Create | Edit | Delete |
 |--|--|--|--|--|
-| Advertiser | All | No | No | No |
-| Campaign | All | No | No | No |
-| Creative | All | No | No | No |
-| Deal | All | All | All | No |
-| Insertion-order | All | No | No | No |
-| Line-item | All | No | No | No |
-| Profile | All | All | All | No |
-| Report | All | All | All | No |
-| Report-download | All | No | No | No |
-| Template | All | No | No | No |
-| User | All | No | No | No |
+| **Advertiser** | All | No | No | No |
+| **Campaign** | All | No | No | No |
+| **Creative** | All | No | No | No |
+| **Deal** | All | All | All | No |
+| **Insertion-order** | All | No | No | No |
+| **Line-item** | All | No | No | No |
+| **Profile** | All | All | All | No |
+| **Report** | All | All | All | No |
+| **Report-download** | All | No | No | No |
+| **Template** | All | No | No | No |
+| **User** | All | No | No | No |
