@@ -34,9 +34,9 @@ This is typically the simplest way of setting up your key/value targeting. From 
 
   After you've defined your keys and, optionally, your values, you can begin to target them from your line items or campaigns. This page will walk you through the process of creating expressions to narrow down your targeting to the specific segment of users you're looking for.
 
-> [!IMPORTANT]
-> To target a placement using Key/Value Targeting and generate accurate reporting on impression delivery, it is mandatory to define a specific Value for each Key in
-> Microsoft Monetize. In Microsoft Invest, the line item needs to target the specific pre-defined values in [key/value targeting](key-value-targeting.md).
+  > [!IMPORTANT]
+  > To target a placement using Key/Value Targeting and generate accurate reporting on impression delivery, it is mandatory to define a specific Value for each Key in
+  > Microsoft Monetize. In Microsoft Invest, the line item needs to target the specific pre-defined values in [key/value targeting](key-value-targeting.md).
 
 ## From the API
 

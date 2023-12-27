@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Geography targeting
 
-## In This Section
+## In this Section
 
 - [How Geography Targeting Works](how-geography-targeting-works.md) - Learn how geography targeting works.
 - [Changes to Geography Objects](changes-to-geography-objects.md) - See recent changes to geolocation data.

@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 > Access to the geo radius segment targeting feature requires additional roles and permissions. Contact your Xandr account representative for more information.
 
 A geo radius segment is a list of latitude, longitude, and radius data. You can use geo radius segments for geographical targeting of multiple user locations. When you create a geo radius segment, you add latitude, longitude, and radius data either manually (copy and paste) or by importing a file. Once the geo radius segment is created, these
-locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md)) for more information.
+locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md) for more information).
 
 > [!IMPORTANT]
 > Approximately 30% of impressions received contain location data that you can target with geo radius segments.
