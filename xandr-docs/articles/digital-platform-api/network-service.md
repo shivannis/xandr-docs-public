@@ -13,8 +13,8 @@ Use the read-only Network Service to see what video content networks are registe
 
 | HTTP Method | Endpoint | Description  |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/video-content-network | To view all defined networks |
-| `GET` | https://api.appnexus.com/video-content-network?id=<id value> | To view a defined network |
+| `GET` | `https://api.appnexus.com/video-content-network` | To view all defined networks |
+| `GET` | `https://api.appnexus.com/video-content-network?id=<id value>` | To view a defined network |
 
 ## JSON fields
 

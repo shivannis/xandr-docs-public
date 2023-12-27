@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Passive Segment Upload Using AWS S3
 
-If your Xandr member account is integrated with AWS S3, you can upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service. To set up this integration, contact your account support or file an issue at [help.xandr.com](http:/help.xandr.com/). Xandr will provide upload credentials on initial setup.
+If your Xandr member account is integrated with AWS S3, you can upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service. To set up this integration, contact your account support or file an issue at [help.xandr.com](http:?/help.xandr.com/). Xandr will provide upload credentials on initial setup.
 
 After your member is integrated, the Batch Segment Service scans the `/submitted` directory every five minutes for new data and creates linkages between users and segments according to the information in your data files. You can track upload success using the AWS CLI tool at [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/), using the following command to display the directory contents:
 

@@ -1,6 +1,6 @@
 ---
 title: Optimization Override Service
-Description: Use optimization override service to override a line item's default settings. The service allows you to turn off discovery and adjust the discovery fail criteria.
+description: Use optimization override service to override a line item's default settings. The service allows you to turn off discovery and adjust the discovery fail criteria.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
