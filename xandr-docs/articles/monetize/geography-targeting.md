@@ -24,12 +24,14 @@ Follow the instructions for the relevant geographic targeting option below.
 
 > [!WARNING]
 > **Accuracy of geo targeting**
->
 > Although targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of a match.
 > [!NOTE]
 > **Geo targeting & third-party buying filters**
->
-> For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the networkle vel. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be available for targeting.
+> For third-party buying, geographic targeting is limited by any existing
+> country settings in your Third-Party Buying Filters at the networkle vel.
+> If countries are included in your Third-Party Buying Filters, only those
+> countries and the regions and cities within them will be available for
+> targeting.
 
 ## Target users by country, region, or city
 
@@ -44,13 +46,21 @@ regions/states, or cities.
   available for further inclusion or exclusion.
 - The **Cities** list shows all of the cities that can be targeted. You can either include or exclude cities.
 
-> [!TIP]
-> Click the column headers to sort countries, regions, or cities by name or ID, or use the search field to find a particular location.
-> [!WARNING]
-> Do not add conflicting geographic targeting at multiple levels. For example, if you are including the United States, Canada, and Mexico, and then you also include US zip codes, your campaign will only serve the US zip codes targeted. In this scenario, zip code targeting will automatically limit the targeting to the US only. Similarly, do not target both the region of Arizona and the metro code of New York, because targeting is an AND relationship.
-> [!IMPORTANT]
-> Country, region/state, and city targeting is supported by an IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/). For more information, see
-> [How Geography Targeting Works](how-geography-targeting-works.md).
+  > [!TIP]
+  > Click the column headers to sort countries, regions, or cities by name or
+  > ID, or use the search field to find a particular location.
+  > [!WARNING]
+  > Do not add conflicting geographic targeting at multiple levels. For
+  > example, if you are including the United States, Canada, and Mexico, and
+  > then you also include US zip codes, your campaign will only serve the US
+  > zip codes targeted. In this scenario, zip code targeting will automatically
+  > limit the targeting to the US only. Similarly, do not target both the
+  > region of Arizona and the metro code of New York, because targeting is an
+  > AND relationship.
+  > [!IMPORTANT]
+  > Country, region/state, and city targeting is supported by an IP lookup
+  > service provided by [Digital Envoy](https://www.digitalelement.com/). For
+  > more information, see [How Geography Targeting Works](how-geography-targeting-works.md).
 
 ## Target users by metro code
 

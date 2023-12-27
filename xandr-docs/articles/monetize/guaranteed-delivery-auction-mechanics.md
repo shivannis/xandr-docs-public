@@ -54,7 +54,7 @@ Sellers can use Deals to provide buyers special access to inventory and/or data.
 
 1. If **Open Deals** are bidding on the impression, then RTB and managed demand can compete. The managed demand includes Guaranteed line items (with the **Impressions** delivery type) and non-guaranteed demand.
 
-:::image type="content" source="media/deals-and-guarantees.png" alt-text= "Screenshot that illustrates the prioritization order of bid types (Deals, Guaranteed line items, RTB) in the auction, focusing on Deals and Guarantees.":::
+   :::image type="content" source="media/deals-and-guarantees.png" alt-text= "Screenshot that illustrates the prioritization order of bid types (Deals, Guaranteed line items, RTB) in the auction, focusing on Deals and Guarantees.":::
 
 For more information about deals, see [Selling Deals](selling-deals.md).
 
