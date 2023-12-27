@@ -9,8 +9,6 @@ ms.custom: digital-platform-api
 
 > [!NOTE]
 > Partner Fees are an enhancement and replacement for broker fees for [augmented line items (ALIs)](./line-item-service---ali.md).
->
-> If you previously used broker fees, please see the [Partner Fees Breaking Change Notice]() for more details.
 
 If you need to reserve a portion of your budget for third-party costs (costs owed to parties other than the publisher), you can define this information with the Partner Fee service. Fees can be tracked on a CPM, cost share, or revenue share basis, and can be applied to multiple advertisers and line items, if desired. A single advertiser or line item can have multiple fees applied.
 
