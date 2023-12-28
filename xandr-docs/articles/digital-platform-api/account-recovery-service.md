@@ -1,11 +1,11 @@
 ---
-title: Account Recovery Service
+title: Digital Platform API - Account Recovery Service
 description: In this article, learn about the Account Recovery service and step-by-step instructions on how to reset your acoount password or retrieve your username.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Account Recovery service
+# Digital Platform API - Account Recovery service
 
 The Account Recovery Service allows you to reset your Xandr password or retrieve your username.
 
@@ -114,7 +114,7 @@ If you cannot log in to the API due to a forgotten username, follow the steps be
 
 Include your email address.
 
-``` pre
+```
 $ cat retrieve_username
 {
     "account-recovery": {
@@ -127,7 +127,7 @@ $ cat retrieve_username
 
 Post the file to the account recovery service.
 
-``` pre
+```
 $ curl -X POST -d @retrieve_username 'https://api.appnexus.com/account-recovery'
 {
     "response": {
