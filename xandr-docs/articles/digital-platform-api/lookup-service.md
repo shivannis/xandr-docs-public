@@ -1,27 +1,13 @@
 ---
-Title : Lookup Service
-Description : This read-only service allows you to retrieve the ID, name, code, state,
+title: Lookup Service
+description: Explore the read-only Lookup service, enabling you to fetch the ID, name, code, state, and, in some cases, descriptions of objects within your account.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-and in some cases, descriptions of the following types of objects in
-your account. It also returns hierarchical information about these
 ---
 
+# Lookup service
 
-# Lookup Service
-
-
-
-This read-only service allows you to retrieve the ID, name, code, state,
-and in some cases, descriptions of the following types of objects in
-your account. It also returns hierarchical information about these
-objects, for example, publisher ID for a placement or advertiser ID for
-a line item. In cases where you have limited information about objects,
-this service gives you an easy way to map to other relevant data. <a
-href="bulk-reporting-feeds.md"
-class="xref" target="_blank">Bulk Reporting Feeds</a>, for example,
-returns data grouped by object IDs. You can use the Lookup Service to
-match these IDs with names, codes, and so on.
+This read-only service allows you to retrieve the ID, name, code, state, and in some cases, descriptions of the following types of objects in your account. It also returns hierarchical information about these objects, for example, publisher ID for a placement or advertiser ID for a line item. In cases where you have limited information about objects, this service gives you an easy way to map to other relevant data. [Bulk Reporting Feeds](bulk-reporting-feeds.md), for example, returns data grouped by object IDs. You can use the Lookup Service to match these IDs with names, codes, and so on.
 
 - Advertisers
 - Insertion Orders
@@ -36,660 +22,133 @@ match these IDs with names, codes, and so on.
 - Placements
 - Labels
 
-
-
-<b>Note:</b>
-
-- The Lookup Service is different from the <a
-  href="search-service.md"
-  class="xref" target="_blank">Search Service</a> because it returns all
-  objects of a certain type in your account. The Search Service allows
-  you to search for objects with a specific name, code, or ID.
-- The Lookup Service can return a maximum of 50,000 objects.
-- The Lookup Service is based on data that is cached and updated once
-  every 8 minutes.
-
-
-
-
+> [!NOTE]
+>
+> - The Lookup Service is different from the [Search Service](search-service.md) because it returns all objects of a certain type in your account. The Search Service allows you to search for objects with a specific name, code, or ID.
+> - The Lookup Service can return a maximum of 50,000 objects.
+> - The Lookup Service is based on data that is cached and updated once every 8 minutes.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001a9e__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001a9e__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__2">https://api.<span
-class="ph">appnexus.com/lookup</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__3">View
-information about all objects in your system</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__2">https://api.<span
-class="ph">appnexus.com/lookup?type=OBJECT_TYPE</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__3">View
-information about all objects of a specific type
+| Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/lookup](https://api.appnexus.com/lookup) | View information about all objects in your system. |
+| `GET` | [https://api.appnexus.com/lookup?type=OBJECT_TYPE](https://api.appnexus.com/lookup?type=OBJECT_TYPE) | View information about all objects of a specific type.<br><br>**Note:**<br>You can get information about the following object types: `advertiser`, `insertion_order`, `line_item`, `campaign`, `budget_splitter`, `creative`, `segment_pixel`, `conversion_pixel`, `publisher`, `payment_rule`, `placement`, `site`, and `label`. |
+| `GET` | [https://api.appnexus.com/lookup?advertiser_id=ADVERTISER_ID](https://api.appnexus.com/lookup?advertiser_id=ADVERTISER_ID) | View information about all objects belonging to a specific advertiser. |
 
-<b>Note:</b>
-<p>You can get information about the following object types: <code
-class="ph codeph">advertiser</code>, <code
-class="ph codeph">insertion_order</code>, <code
-class="ph codeph">line_item</code>, <code
-class="ph codeph">campaign</code>, <code
-class="ph codeph">budget_splitter</code>, <code
-class="ph codeph">creative</code>, <code
-class="ph codeph">segment_pixel</code>, <code
-class="ph codeph">conversion_pixel</code>, <code
-class="ph codeph">publisher</code>, <code
-class="ph codeph">payment_rule</code>, <code
-class="ph codeph">placement</code>, <code class="ph codeph">site</code>,
-and <code class="ph codeph">label</code>.</p>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__2">https://api.<span
-class="ph">appnexus.com/lookup?advertiser_id=ADVERTISER_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__3">View
-information about all objects belonging to a specific advertiser</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## JSON Fields
+## JSON fields
 
 Fields returned for all object types:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__13"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__14"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__13"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__15">The
-custom code for the object (not applicable to all object types).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__13"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__14">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__15">The
-internal ID associated with the object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__13"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__14">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__15">The
-date and time when the object was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__13"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__14">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__15">The
-name of the object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__13"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__14">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__15">The
-state of the object. Possible values: <code
-class="ph codeph">"active"</code> or <code
-class="ph codeph">"inactive"</code>.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `code` | string | The custom code for the object (not applicable to all object types). |
+| `id` | int | The internal ID associated with the object. |
+| `last_modified` | timestamp | The date and time when the object was last modified. |
+| `name` | string | The name of the object. |
+| `state` | enum | The state of the object. <br>Possible values: `"active"` or `"inactive"`. |
 
-
-
-
-
-## Object- Specific JSON fields
+## Object-specific JSON fields
 
 Additional fields returned for specific object types.
 
-**Advertiser**
+### Advertiser
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__31"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__32"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__33"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__31"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__33">The
-ID of the member to which the advertiser belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `member_id` | int | The ID of the member to which the advertiser belongs. |
 
-**Insertion Order**
+### Insertion order
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__37"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__38"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__39"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__37"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__39">The
-ID of the advertiser to which the insertion order belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser to which the insertion order belongs. |
 
-**Line Item**
+### Line item
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__43"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__44"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__45"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__43"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__44">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__45">The
-ID of the advertiser to which the line item belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser to which the line item belongs. |
 
-**Campaign**
+### Campaign
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__49"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__50"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__51"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__49"><code
-class="ph codeph">line_item_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__50">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__51">The
-ID of the line item to which the campaign belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `line_item_id` | int | The ID of the line item to which the campaign belongs. |
 
-**Budget Splitter**
+### Budget splitter
 
-<table id="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"><code
-class="ph codeph">line_item_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3">The
-ID of the line item to which the budget splits belong.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3">The
-name of the budget split.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3">The
-ID of the budget split.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3">The
-state of the budget split. Permitted values are:
-<ul>
-<li>active</li>
-<li>inactive</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__table-0dac4f2d-4bf0-44a8-8d5d-772ed27996e3__entry__3">The
-timestamp when the split was last modified.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `line_item_id` | int | The ID of the line item to which the budget splits belong. |
+| `name` | string | The name of the budget split. |
+| `id` | int | The ID of the budget split. |
+| `state` | string | The state of the budget split.<br>Permitted values are:<br>- `active`<br>- `inactive` |
+| `last_modified` | date | The timestamp when the split was last modified. |
 
-**Creative**
+### Creative
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__73"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__74"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__75"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__73"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__74">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__75">The
-ID of the advertiser to which the creative belongs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__73"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__74">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__75">The
-ID of the brand associated to the creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__73"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__74">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__75">The
-description of the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__73"><code
-class="ph codeph">landing_page_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__74">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__75">The
-URL of the landing page associated with this creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__73"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__74">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__75">The
-ID of the publisher to which the creative is associated.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser to which the creative belongs. |
+| `brand_id` | int | The ID of the brand associated to the creative. |
+| `description` | string | The description of the creative. |
+| `landing_page_url` | string | The URL of the landing page associated with this creative. |
+| `publisher_id` | int | The ID of the publisher to which the creative is associated. |
 
-**Segment Pixel**
+### Segment pixel
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__91"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__92"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__93"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__91"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__92">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__93">The
-ID of the advertiser to which the segment pixel is associated.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__91"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__92">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001a9e__entry__93">The
-ID of the member to which the segment pixel belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser to which the segment pixel is associated. |
+| `member_id` | int | The ID of the member to which the segment pixel belongs. |
 
-**Conversion Pixel**
+### Conversion pixel
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__100"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__101"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__102"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__100"><code
-class="ph codeph">advertiser_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__101">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__102">The ID of the advertiser to which the
-conversion pixel belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `advertiser_id` | int | The ID of the advertiser to which the conversion pixel belongs. |
 
-**Publisher**
+### Publisher
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__106"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__107"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__108"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__106"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__107">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__108">The ID of the member to which the
-publisher belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `member_id` | int | The ID of the member to which the publisher belongs. |
 
-**Payment Rule**
+### Payment rule
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__112"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__113"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__114"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__112"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__113">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__114">The description of the payment
-rule.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__112"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__113">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__114">The ID of the publisher to which the
-payment rule belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `description` | string | The description of the payment rule. |
+| `publisher_id` | int | The ID of the publisher to which the payment rule belongs. |
 
-**Placement**
+### Placement
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__121"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__122"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__123"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__121"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__122">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__123">The ID of the publisher to which the
-placement belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `publisher_id` | int | The ID of the publisher to which the placement belongs. |
 
-**Site**
+### Site
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__127"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__128"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__129"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__127"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__128">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__129">The ID of the publisher to which the
-site belongs.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `publisher_id` | int | The ID of the publisher to which the site belongs. |
 
-**Label**
+### Label
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001a9e__entry__133"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001a9e__entry__134"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001a9e__entry__135"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__133"><code
-class="ph codeph">label_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__134">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__135">The ID of the label.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__133"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__134">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__135">The ID of the member to which the
-label belongs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__133"><code
-class="ph codeph">object_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__134">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__135">The ID of the object to which the
-label can be applied.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__133"><code
-class="ph codeph">object_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__134">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__135">The type of object to which the label
-can be applied. Possible values: <code
-class="ph codeph">"advertiser"</code>, <code
-class="ph codeph">"insertion_order"</code>, <code
-class="ph codeph">"line_item"</code>, <code
-class="ph codeph">"campaign"</code>, or <code
-class="ph codeph">"publisher"</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__133"><code
-class="ph codeph">value</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__134">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001a9e__entry__135">The label text.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `label_id` | int | The ID of the label. |
+| `member_id` | int | The ID of the member to which the label belongs. |
+| `object_id` | int | The ID of the object to which the label can be applied. |
+| `object_type` | enum | The type of object to which the label can be applied. <br>Possible values: `"advertiser"`, `"insertion_order"`, `"line_item"`, `"campaign"`, or `"publisher"`. |
+| `value` | string | The label text. |
 
 ## Examples
 
-**Looking up all of your campaigns**
+### Looking up all of your campaigns
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup?type=campaign'
 {
     "response": {
@@ -723,9 +182,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup?type=campaign'
 }
 ```
 
-**Looking up all objects accessible to this service **
+### Looking up all objects accessible to this service
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup'
 {
     "response": {
@@ -961,9 +420,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup'
     }
 }
 ```
-
-
-
-
-
-

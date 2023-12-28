@@ -1,177 +1,46 @@
 ---
-Title : Media Type Service
-Description : The Xandr platform categorizes creatives by
+title: Media Type Service
+description: Explore the read-only Media Type service and ways to view all of its supported media types.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-format, media type, and media subtype:
-- Format defines the resource type of the creative (flash, image, etc.)
 ---
 
+# Media Type service
 
-# Media Type Service
-
-
-
-The Xandr platform categorizes creatives by
-format, media type, and media subtype:
+The Xandr platform categorizes creatives by format, media type, and media subtype:
 
 - Format defines the resource type of the creative (flash, image, etc.)
-- Media type defines the general display style of the creative (banner,
-  expandable, video, etc.)
-- Media subtype defines the specific display style of the creative
-  (standard banner, MediaMind expandable, Standard VAST, etc.)
+- Media type defines the general display style of the creative (banner, expandable, video, etc.)
+- Media subtype defines the specific display style of the creative (standard banner, MediaMind expandable, Standard VAST, etc.)
 
-This read-only service allows you to view all of the supported media
-types.
+This read-only service allows you to view all of the supported media types.
 
-
-
-<b>Tip:</b>
-
-To view all supported formats and media subtypes, you can use the <a
-href="creative-format-service.md"
-class="xref" target="_blank">Creative Format Service</a> and the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a>.
-
-
-
-
+> [!TIP]
+> To view all supported formats and media subtypes, you can use the [Creative Format Service](creative-format-service.md) and the [Media Subtype Service](media-subtype-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001f53__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001f53__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001f53__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__2">https://api.<span
-class="ph">appnexus.com/media-type</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__3">View
-all media types</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__2">https://api.<span
-class="ph">appnexus.com/media-type?id=MEDIA_TYPE_ID</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__3">View
-a specific media type</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/media-type](https://api.appnexus.com/media-type) | View all media types. |
+| `GET` | [https://api.appnexus.com/media-type?id=MEDIA_TYPE_ID](https://api.appnexus.com/media-type?id=MEDIA_TYPE_ID) | View a specific media type. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001f53__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001f53__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00001f53__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">A
-code-friendly version of the media type's name. For example, "Image and
-Text" becomes <code class="ph codeph">"image_and_text"</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">The
-ID of the media type.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">The
-date and time when Xandr last modified the media
-type.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code
-class="ph codeph">media_type_group_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">The
-group to which a media type belongs. This information is relevant for
-setting allowed media types on placements (see <a
-href="placement-service.md"
-class="xref" target="_blank">Placement Service</a>). Only media types
-that belong to the same group can be allowed on a single placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">string </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">The
-name of the media type, for example, "Banner", "Interstitial", or
-"Video".</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__10"><code
-class="ph codeph">uses_sizes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001f53__entry__11">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001f53__entry__12">The
-size requirement for creatives belonging to the media type. Possible
-values:
-<ul>
-<li>"always" - width and height are required when adding creatives
-(Banner and Expandable)</li>
-<li>"sometimes" - width and height are sometimes required when adding
-creatives (Pop and Text)</li>
-<li>"never" - width and height are not required when adding creatives
-(Interstitial, Video, and Skin)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `code` | string | A code-friendly version of the media type's name. For example, `"Image and Text"` becomes `"image_and_text"`. |
+| `id` | int | The ID of the media type. |
+| `last_modified` | timestamp | The date and time when Xandr last modified the media type. |
+| `media_type_group_id` | int | The group to which a media type belongs. This information is relevant for setting allowed media types on placements (see [Placement Service](placement-service.md)). Only media types that belong to the same group can be allowed on a single placement. |
+| `name` | string  | The name of the media type. For example, `"Banner"`, `"Interstitial"`, or `"Video"`. |
+| `uses_sizes` | enum | The size requirement for creatives belonging to the media type. <br>Possible values:<br>- `"always"`: Width and height are required when adding creatives (Banner and Expandable).<br>- `"sometimes"`: Width and height are sometimes required when adding creatives (Pop and Text).<br>- `"never"`: Width and height are not required when adding creatives (Interstitial, Video, and Skin). |
 
 ## Examples
 
-**View all media types**
+### View all media types
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type'
 {
     "response": {
@@ -241,9 +110,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type'
 }
 ```
 
-**View the "Video" media type (id 4)**
+### View the `"Video"` media type (id 4)
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type?id=4'
 {
     "response": {
@@ -262,10 +131,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type?id=4'
 }
 ```
 
-**View media types that always require creatives to have a width and
-height**
+### View media types that always require creatives to have a width and height
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type?uses_sizes=always'
 {
     "response": {
@@ -311,19 +179,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type?uses_sizes=alw
     }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a href="creative-format-service.md" class="xref">Creative Format
-  Service</a>
-- <a href="media-subtype-service.md" class="xref">Media Subtype
-  Service</a>
-
-
-
-
-
-
+- [Creative Format Service](creative-format-service.md)
+- [Media Subtype Service](media-subtype-service.md)

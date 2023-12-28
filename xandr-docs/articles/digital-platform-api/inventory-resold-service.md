@@ -1,252 +1,54 @@
 ---
-Title : Inventory Resold Service
-Description : This read-only service allows you to view inventory that has been
+title: Inventory Resold Service
+description: Explore the Inventory Resold service, providing visibility into inventory exposed for resale by networks on the platform.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-<u>exposed</u> for resale by networks on the platform. This includes
 ---
 
+# Inventory Resold service
 
-# Inventory Resold Service
+This read-only service allows you to view inventory that has been <u>exposed</u> for resale by networks on the platform. This includes
+inventory exposed by your network and other networks.
 
-
-
-This read-only service allows you to view inventory that has been
-<u>exposed</u> for resale by networks on the platform. This includes
-inventory exposed by your network and other networks. 
-
-- To <u>enable</u> your inventory for resale, use the
-  <a href="site-service.md"
-  class="xref" target="_blank">Site Service</a>.
+- To <u>enable</u> your inventory for resale, use the [Site Service](site-service.md).
 - To <u>expose</u> your inventory for resale:
-  - For inventory categories, use the <a
-    href="visibility-profile-service.md"
-    class="xref" target="_blank">Visibility Profile Service</a>.
-  - For publishers, use the <a
-    href="publisher-service.md"
-    class="xref" target="_blank">Publisher Service</a>.
-  - For whole networks, use the <a
-    href="member-service.md"
-    class="xref" target="_blank">Member Service</a>.
-- To control the inventory data that platform members and external
-  bidders see in your bid requests, use the <a
-  href="visibility-profile-service.md"
-  class="xref" target="_blank">Visibility Profile Service</a>.
-
-
+  - For inventory categories, use the [Visibility Profile Service](visibility-profile-service.md).
+  - For publishers, use the [Publisher Service](publisher-service.md).
+  - For whole networks, use the [Member Service](member-service.md).
+- To control the inventory data that platform members and external bidders see in your bid requests, use the [Visibility Profile Service](visibility-profile-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001644__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00001644__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00001644__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-all publishers, content categories, and members exposed for resale</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=publisher</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-all publishers exposed for resale</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=publisher&amp;id=1,2,3,etc.</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-specific publishers exposed for resale (using a comma-separated list of
-IDs)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=content_category&amp;category_type=standard</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-all content categories exposed for resale</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=content_category&amp;id=1,2,3,etc.</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-specific content categories exposed for resale (using a comma-separated
-list of IDs)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=member</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-all members exposed for resale</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold?type=member&amp;id=1,2,3,etc.</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">View
-specific members exposed for resale (using a comma-separated list of
-IDs)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__2">https://api.<span
-class="ph">appnexus.com/inventory-resold/meta</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/inventory-resold](https://api.appnexus.com/inventory-resold) | View all publishers, content categories, and members exposed for resale. |
+| `GET` | [https://api.appnexus.com/inventory-resold?type=publisher](https://api.appnexus.com/inventory-resold?type=publisher) | View all publishers exposed for resale. |
+| `GET` | [https://api.appnexus.com/inventory-resold?type=publisher&id=1,2,3,etc](https://api.appnexus.com/inventory-resold?type=publisher&id=1,2,3,etc) | View specific publishers exposed for resale (using a comma-separated list of IDs). |
+| `GET` | [https://api.appnexus.com/inventory-resold?type=content_category&category_type=standard](https://api.appnexus.com/inventory-resold?type=content_category&category_type=standard) | View all content categories exposed for resale. |
+| `GET` | [https://api.appnexus.com/inventory-resold?type=content_category&id=1,2,3,etc](https://api.appnexus.com/inventory-resold?type=content_category&id=1,2,3,etc) | View specific content categories exposed for resale (using a comma-separated list of IDs). |
+| `GET` | [https://api.appnexus.com/inventory-resold?type=member](https://api.appnexus.com/inventory-resold?type=member) | View all members exposed for resale.|
+| `GET` | [https://api.appnexus.com/inventory-resold?type=member&id=1,2,3,etc](https://api.appnexus.com/inventory-resold?type=member&id=1,2,3,etc) | View specific members exposed for resale (using a comma-separated list of IDs). |
+| `GET` | [https://api.appnexus.com/inventory-resold/meta](https://api.appnexus.com/inventory-resold/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001644__entry__28"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00001644__entry__29" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00001644__entry__30"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">daily_volume</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-average daily impressions from last 7 days.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">string(255)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-description of the object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-internal ID assigned to the object (publisher, member or
-content_category).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-ID of the owning member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">member_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-name of the owning member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">string(255)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-name of the object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">reselling_exposed_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-date and time when the publisher or member was exposed for reselling.
-Note that, as of version 1.13, this field is not available for content
-categories.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">stats</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">array of objects</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__30">The <code
-class="ph codeph">stats</code> object has been deprecated (as of October
-17, 2016). Use the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> to obtain statistical
-information instead.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__28"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00001644__entry__29">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00001644__entry__30">The
-type of object. Possible values: "publisher", "member", or
-"content_category".</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `daily_volume` | int | The average daily impressions from last 7 days. |
+| `description` | string(255) | The description of the object. |
+| `id` | int | The internal ID assigned to the object (`publisher`, `member` or `content_category`). |
+| `member_id` | int | The ID of the owning member. |
+| `member_name` | string | The name of the owning member. |
+| `name` | string(255) | The name of the object. |
+| `reselling_exposed_on` | timestamp | The date and time when the publisher or member was exposed for reselling. <br><br>**Note:** As of version 1.13, this field is not available for content categories. |
+| `stats` | array of objects | The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead. |
+| `type` | enum | The type of object. Possible values: `"publisher"`, `"member"`, or `"content_category"`. |
 
 ## Examples
 
-**Viewing all publishers, content categories, and members exposed for
-resale**
+### Viewing all publishers, content categories, and members exposed for resale
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-resold'
 {
     "response": {
@@ -463,9 +265,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-resold'
 }
 ```
 
-**Viewing all content categories exposed for resale**
+### Viewing all content categories exposed for resale
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-source?type=content_category&category_type=standard'
 {
     "response": {
@@ -542,9 +344,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-source?type=con
     }
 }
 ```
-
-
-
-
-
-
