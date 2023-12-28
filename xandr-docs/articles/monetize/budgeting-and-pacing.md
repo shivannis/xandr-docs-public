@@ -1,6 +1,6 @@
 ---
-title : Budgeting and Pacing
-description : This page deals with information on Budgeting and Pacing.
+title: Budgeting and Pacing
+description: This page deals with information on Budgeting and Pacing.
 ms.date: 10/28/2023
 ---
 

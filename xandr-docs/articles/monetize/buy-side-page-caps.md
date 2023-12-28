@@ -1,6 +1,6 @@
 ---
-title : Buy-Side Page Caps
-description : Learn what is a Page Cap and how it can be used.
+title: Buy-Side Page Caps
+description: Learn what is a Page Cap and how it can be used.
 ms.date: 10/28/2023
 ---
 

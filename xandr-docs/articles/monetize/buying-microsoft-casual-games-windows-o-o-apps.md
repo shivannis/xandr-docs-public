@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Microsoft Casual Games (Windows O&O Apps)
-description : This page lists Microsoft Casual Games that you can buy.
+title: Microsoft Monetize - Buying Microsoft Casual Games (Windows O&O Apps)
+description: This page lists Microsoft Casual Games that you can buy.
 ms.date: 10/28/2023
 ---
 
