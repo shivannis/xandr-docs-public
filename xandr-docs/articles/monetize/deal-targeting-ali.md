@@ -1,108 +1,66 @@
 ---
-Title : Deal Targeting (ALI)
-Description : By selecting Deals in the
+title : Microsoft Monetize - Deal Targeting (ALI)
+description : Learn what happens when you select Deals in the Create New Line Item or Edit Line Item screen.  
 ms.date: 10/28/2023
-Inventory &
-Brand Safety Targeting \> Supply
-Source subsection of the
-Create New Line Item or
-Edit Line Item screen, you can
-target all deals from sellers or specific deals from one or more
-sellers.
 ---
 
 
-# Deal Targeting (ALI)
+# Microsoft Monetize - Deal targeting (ALI)
 
-
-
-
-
-By selecting Deals in the
-Inventory &
-Brand Safety Targeting \> Supply
-Source subsection of the
-Create New Line Item or
-Edit Line Item screen, you can
+By selecting **Deals** in the
+**Inventory & Brand Safety Targeting** \> **Supply Source** subsection of the
+**Create New Line Item** or
+**Edit Line Item** screen, you can
 target all deals from sellers or specific deals from one or more
 sellers.
 
+## Target deals
 
-
-
-
-## Target Deals
-
-When you select the Deals option in
-the Inventory &
-Brand Safety Targeting \> Supply
-Source subsection of the
-Create New Line Item or
-Edit Line Item screen, you can
+When you select the **Deals** option in
+the **Inventory &
+Brand Safety Targeting** \> **Supply
+Source** subsection of the
+**Create New Line Item** or
+**Edit Line Item** screen, you can
 target either all the available deals for that line item, or specific
 deals from sellers.
 
-**To target all deals available to you:**
+### To target all deals available to you:
 
-1.  In the
-    Inventory &
-    Brand Safety Targeting \> Supply
-    Source subsection, select
-    Deals.
-2.  Select All Deals.
+1. In the
+    **Inventory & Brand Safety Targeting** \> **Supply Source** subsection, select
+    **Deals**.
+1. Select **All Deals**.
 
-**To target specific deals available to you:**
+### To target specific deals available to you:
 
-1.  In the
-    Inventory &
-    Brand Safety Targeting \> Supply
-    Source subsection, select
-    Deals.
+1. In the
+    **Inventory & Brand Safety Targeting** \> **Supply Source** subsection, select
+    **Deals**.
 
-2.  Select Specific Deals.
+1. Select **Specific Deals**.
 
     A pull-down menu displays with
-    Deals selected by default.
+    **Deals** selected by default.
 
-3.  To target specific deals, do the following:
-    1.  Search for available deals by name, alias, ID, or code to
+1. To target specific deals, do the following:
+    1. Search for available deals by name, alias, ID, or code to
         target.
-    2.  Include deals by clicking the green
-        check, or exclude deals by clicking the
-        red dash.
-        
+    1. Include deals by clicking the **green
+        check**, or exclude deals by clicking the
+        **red dash**.
 
-        <b>Tip:</b> You can also click the eye
-        button to view additional details about the deal such as
-        **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**,
-        **Start Date**, and **End Date**.
+        > [!TIP]
+        > You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. 
 
-        
+1. Click **Save**.
 
-4.  Click Save.
+## Related topics
 
-
-
-
-
-## Related Topics
-
-- <a href="inventory-targeting-ali.md" class="xref">Inventory Targeting
-  (ALI)</a>
-- <a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>
-- <a href="create-an-insertion-order.md" class="xref">Create an
-  Insertion Order</a>
-- <a href="augmented-line-items-ali.md" class="xref">Augmented Line
-  Items (ALI)</a>
-- <a href="create-an-augmented-line-item-ali.md" class="xref"
-  title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">Create
-  an Augmented Line Item</a>
-- <a href="object-hierarchy.md" class="xref">Object Hierarchy</a>
-- <a href="basic-buy-side-setup-procedures.md" class="xref">Basic
-  Buy-side Setup Procedures</a>
-
-
-
-
-
-
+- [Inventory Targeting (ALI)](inventory-targeting-ali.md)
+- [Buy-Side Targeting](buy-side-targeting.md)
+- [Create an Insertion Order](create-an-insertion-order.md)
+- [Augmented Line Items (ALI)](augmented-line-items-ali.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+- [Object Hierarchy](object-hierarchy.md)
+- [Basic Buy-side Setup Procedures](basic-buy-side-setup-procedures.md)

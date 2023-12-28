@@ -1,26 +1,18 @@
 ---
-Title : Discovery
-Description : Discovery is an optimization component that helps line items meet their
+title : Microsoft Monetize - Discovery
+description : Discovery is an optimization component that helps line items meet their goals as quickly as possible.
 ms.date: 10/28/2023
-goals as quickly as possible by spending on inventory that performs well
-and quickly cutting inventory that doesn't meet the goal.
 ---
 
 
-# Discovery
-
-
+# Microsoft Monetize - Discovery
 
 Discovery is an optimization component that helps line items meet their
 goals as quickly as possible by spending on inventory that performs well
 and quickly cutting inventory that doesn't meet the goal.
 
-
-
-<b>Tip:</b> Discovery does not apply to line
-items with CPA retargeting or with vCPM, CPCV, or VCR goals.
-
-
+> [!TIP]
+> Discovery does not apply to line items with CPA retargeting or with vCPM, CPCV, or VCR goals.
 
 Because the pool of inventory that a line item can serve on is huge -
 even oceanic - even moderately targeted line items run the risk of
@@ -45,30 +37,25 @@ As a result:
   that is working well.
 - Line items achieve their goals faster with less human effort.
 
-How Discovery Works
+## How discovery works
 
 This is how Discovery works:
 
-1.  When we see that an impression is eligible for a line item's
+1. When we see that an impression is eligible for a line item's
     targeting, we sort it into a ranked testing list - kind of like an
     allowlist, but dynamically generated and custom to each line item.
     Inventory that's most likely to achieve the line item's goal rises
     to the top of the list, while inventory that's least likely to
     achieve the goal falls to the bottom, or isn't added at all.
-2.  Discovery starts testing at the top of the list, passing and failing
+1. Discovery starts testing at the top of the list, passing and failing
     inventory as the line item spends money, a process we call "axing".
-3.  When inventory is failed for not meeting the goal, Discovery
+1. When inventory is failed for not meeting the goal, Discovery
     dynamically adds what's next up on the list.
 
+> [!NOTE]
+> If you change your line item goals, Discovery uses the line item's existing data to re-evaluate inventory against the new goal.
 
-
-<b>Note:</b> If you change your line item
-goals, Discovery uses the line item's existing data to re-evaluate
-inventory against the new goal.
-
-
-
-Ranking
+## Ranking
 
 The sections of inventory that Discovery tests are called "Discovery
 nodes". A node is defined by a combination of tag + inventory URL,
@@ -108,7 +95,7 @@ performant inventory sources and to feed our eligibility list. We will
 increase that percentage if the line item is not meeting its delivery
 goal.
 
-Axing
+## Axing
 
 "Axing" is the term we use to describe the process of eliminating
 Discovery nodes as nonperformant. Axing decisions are based on a
@@ -119,7 +106,7 @@ combination of:
 - Interaction with goal priorities
 - A false positives check
 
-Fail Criterion
+### Fail criterion
 
 In order to cut inventory that's not working, we first need to determine
 the line item's fail criterion, or the threshold at which we consider
@@ -133,39 +120,17 @@ criterion ($1.00), the node will be immediately failed. For managed
 nodes, the fail criterion is higher because the inventory is known and
 therefore presents less risk.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00009401__entry__1" class="entry"></th>
-<th id="ID-00009401__entry__2" class="entry">Click-based Goals (CPC,
-CTR, Post-Click CPA)</th>
-<th id="ID-00009401__entry__3" class="entry">CPA Prospecting</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00009401__entry__1">RTB Nodes</td>
-<td class="entry" headers="ID-00009401__entry__2">1x line item's CPC
-goal</td>
-<td class="entry" headers="ID-00009401__entry__3">1x line item's CPA
-goal</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00009401__entry__1">Managed Nodes</td>
-<td class="entry" headers="ID-00009401__entry__2">1.8x line item's CPC
-goal</td>
-<td class="entry" headers="ID-00009401__entry__3">1x line item's CPA
-goal</td>
-</tr>
-</tbody>
-</table>
+|  | Click-based Goals (CPC, CTR, Post-Click CPA) | CPA Prospecting |
+|---|---|---|
+| RTB Nodes | 1x line item's CPC goal | 1x line item's CPA goal |
+| Managed Nodes | 1.8x line item's CPC goal | 1x line item's CPA goal |
 
 For CPM, Cost Plus, dynamic CPM, and viewable CPM booked revenue types,
 we axe based on booked revenue dollars. For the CPC revenue type,
 because booked revenue is less predictable, we axe based on media cost
 dollars.
 
-Pass Criterion
+### Pass criterion
 
 As mentioned above, if a line item has a $1.00 CPC goal, spends $1.00 on
 a slice of inventory, and achieves 0 clicks, then failing the inventory
@@ -189,47 +154,26 @@ spend, the node passes, unless the line item's CPC goal changes. (In
 that case, as with any changes to the goal, Discovery will automatically
 reevaluate nodes against the new criteria.)
 
-How Axing Interacts with Goal Priorities
+### How Axing interacts with goal priorities
 
 On the line item, you choose a goal priority: delivery, performance, or
-margin. When you choose Performance
+margin. When you choose **Performance**
 (the default), axing uses the default pass and fail criteria described
-above. When you choose Delivery, we
+above. When you choose **Delivery**, we
 implement a dynamic fail criterion calculation and also modify the
-criterion with an
-<a href="adaptive-pacing.md" class="xref">Adaptive Pacing</a>
+criterion with an [Adaptive Pacing](adaptive-pacing.md)
 modifier, which can go up to 2.0. In other words, if a line item is not
 meeting its delivery goal, then Discovery will keep incrementally
 increasing the fail criterion threshold until it does.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00009401__entry__10" class="entry">Goal Priority</th>
-<th id="ID-00009401__entry__11" class="entry">Fail Criterion</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00009401__entry__10">Performance (the
-default)</td>
-<td class="entry" headers="ID-00009401__entry__11">1x the line item's
-goal</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00009401__entry__10">Delivery</td>
-<td class="entry" headers="ID-00009401__entry__11">Up to 10x the line
-item's goal (x Adaptive Pacing modifier)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00009401__entry__10">Margin</td>
-<td class="entry" headers="ID-00009401__entry__11">1x the line item's
-goal</td>
-</tr>
-</tbody>
-</table>
+| Goal Priority | Fail Criterion |
+|---|---|
+| Delivery | Up to 10x the line item's goal (x Adaptive Pacing modifier) |
+| Margin | 1x the line item's goal |
+| Performance (the default) | 1x the line item's goal |
 
-False Positives Check
+
+### False positives check
 
 False positives are Discovery nodes that have passed (achieved three or
 more clicks at or below the line item's CPC goal), but now have a
@@ -247,14 +191,9 @@ following formula:
 
 Booked revenue on the node \> 2 (fail criterion) \* (conversions + 1)
 
-Optimization Override Service
+## Optimization override service
 
 Clients with sophisticated optimization needs can disable discovery or
 adjust the Discovery fail criterion on line items with CPC or post-click
-CPA goals by using the <a
-href="xandr-api/optimization-override-service.md"
-class="xref" target="_blank">Optimization Override Service</a>.
-
-
-
+CPA goals by using the [Optimization Override Service](../digital-platform-api/optimization-override-service.md).
 

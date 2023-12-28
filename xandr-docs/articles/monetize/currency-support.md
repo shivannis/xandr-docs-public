@@ -1,16 +1,11 @@
 ---
-Title : Currency Support
-Description : Support for multiple currencies allows buyers and sellers to transact
+title : Microsoft Monetize - Currency Support
+description : Support for multiple currencies allows buyers and sellers to transact
 ms.date: 10/28/2023
-with one another globally on the Xandr platform.
 ---
 
 
-# Currency Support
-
-
-
-
+# Microsoft Monetize - Currency support
 
 Support for multiple currencies allows buyers and sellers to transact
 with one another globally on the Xandr platform.
@@ -26,16 +21,12 @@ reporting and invoicing and what customization options you have. If you
 have questions about currency support please contact your Account
 Manager.
 
-
-
-
-
-## Prerequisite Concepts
+## Prerequisite concepts
 
 Ensure you understand these basics before proceeding (each of these
 concepts is discussed in greater detail in dedicated sections below):
 
-1.  **Base Currency:** Xandr' default currency
+1. **Base Currency:** Xandr' default currency
     is USD.
     - Although USD is the default currency,
       Xandr supports the **buying and selling
@@ -43,17 +34,13 @@ concepts is discussed in greater detail in dedicated sections below):
       number of different non-USD currencies.
     - Xandr performs all calculations in USD. To
       support non-USD use cases, we convert in and out of USD (as
-      needed) using the latest exchange rates from our <a
-      href="xandr-api/currency-service.md"
-      class="xref" target="_blank">API Currency Service</a>.
-2.  **Supported Local Currencies and Exchange Rates:** Our <a
-    href="xandr-api/currency-service.md"
-    class="xref" target="_blank">API Currency Service</a> updates
+      needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
+1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates
     exchange rates platform-wide on a daily basis based on the most
     current
-    <a href="https://www.oanda.com/" class="xref" target="_blank">Oanda</a>
+    [Oanda](https://www.oanda.com/sg-en/trading/)
     rates.
-3.  **Transaction and Billing Currency and Account Setup:**
+1. **Transaction and Billing Currency and Account Setup:**
     Xandr distinguishes between the currencies
     you transact in (currencies you select in the Digital Platform
     UI/API for buying/selling) and the currency you are billed in
