@@ -363,7 +363,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-subtype'
 }
 ```
 
-### View the "Standard VAST" media subtype (id 64)
+### View the `"Standard VAST"` media subtype (id 64)
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-subtype?id=64'
@@ -390,7 +390,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-subtype?id=64'
 }
 ```
 
-### View the media subtypes that belong to the "Banner" media type
+### View the media subtypes that belong to the `"Banner"` media type
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-subtype?media_type.id=1'

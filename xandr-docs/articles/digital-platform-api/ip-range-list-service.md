@@ -62,7 +62,7 @@ Each object in the `ip_ranges` array contains the following fields.
 | Field | Type | Description |
 |:---|:---|:---|
 | `from_ip` | string | The starting IP address. If no following `to_ip` field is included, this is treated as the only address to include or exclude. This string must be in valid IPV4 address format, i.e., `"198.2.1.1"`.<br>**Required On:** `POST`, `PUT` |
-| `to_ip` | string | The (optional) ending IP address. If this field is not included, the IP address in the `from_ip` field will be used alone. If this field is included, the addresses between the fields form a range. Ranges must be listed in **ascending** order, e.g., `{"from_ip":"192.168.2.1", "to_ip":"192.168.2.100"}`. |
+| `to_ip` | string | The (optional) ending IP address. If this field is not included, the IP address in the `from_ip` field will be used alone. If this field is included, the addresses between the fields form a range. Ranges must be listed in **ascending** order, e.g., `{"from_ip":"192.168.2.1",`<br> `"to_ip":"192.168.2.100"}`. |
 
 ## Examples
 

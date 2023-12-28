@@ -209,7 +209,7 @@ You can use the read-only [Label Service](label-service.md) to view all possible
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the label. <br>Possible values: `7`, `8`, `11`. |
-| `name` | enum | Read-only. The name of the label.<br>Possible values: `"Trafficker"` or `"Sales Rep"`. |
+| `name` | enum | **Read-only.** The name of the label.<br>Possible values: `"Trafficker"` or `"Sales Rep"`. |
 | `value` | string (100) | The value assigned to the label. For example, for the `"Sales Rep"` label, this could be a name such as `"Michael Sellers"`. |
 
 ### Broker fees
@@ -545,7 +545,7 @@ Each object in the `creatives` array includes the following fields. To obtain in
 |:---|:---|:---|
 | `is_expired` | boolean | If `true`, the creative is expired. If `false`, the creative is active.<br>**Read Only.** |
 | `is_prohibited` | boolean | If `true`, the creative falls into a prohibited category on the Xandr platform.<br>**Read Only.** |
-| width | int | The width of the creative.<br>**Read Only.** |
+| `width` | int | The width of the creative.<br>**Read Only.** |
 | `audit_status` | enum | The audit status of the creative. <br>Possible values: `"no_audit"`, `"pending"`, `"rejected"`, `"audited"`, or `"unauditable"`.<br>**Read Only.** |
 | `name` | string | The name of the creative.<br>**Read Only.** |
 | `pop_window_maximize` | boolean | If `true`, the publisher's tag will maximize the window. Only relevant for creatives with format `"url-html"` and `"url-js"`. If `pop_window_maximize` is set to `true`, then neither `height` nor `width` should be set on the creative.<br>**Read Only.** |

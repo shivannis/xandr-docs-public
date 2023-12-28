@@ -849,20 +849,20 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 
 | ID | Description |
 |:---|:---|
-| 1 | State is set to inactive. |
-| 2 | Flight start is in the future. |
-| 4 | Flight end is in the past. |
-| 128 | All campaigns under this line item are inactive. |
+| `1` | State is set to inactive. |
+| `2` | Flight start is in the future. |
+| `4` | Flight end is in the past. |
+| `128` | All campaigns under this line item are inactive. |
 
-### Flat Fee
+### Flat fee
 
 The `flat_fee` object contains the following fields.
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `flat_fee_status` | enum | The status of the flat fee disbursement. Possible values: `"pending"`, `"processing"`, `"allocated"`, or `"error"`.<br>**Read Only.** |
-| `flat_fee_allocation_date` | timestamp | The date when the flat fee revenue is scheduled to be allocated to publishers. <br>**Example:** `"2012-06-08 00:00:00"`. This value will be null if the `flat_fee_type` is daily. |
-| flat_fee_adjustment_id | int | The ID for any adjustments required to this flat fee. |
+| `flat_fee_allocation_date` | timestamp | The date when the flat fee revenue is scheduled to be allocated to publishers. <br>**Example:** `"2012-06-08 00:00:00"`. This value will be `null` if the `flat_fee_type` is daily. |
+| `flat_fee_adjustment_id` | int | The ID for any adjustments required to this flat fee. |
 
 ### Roadblock
 

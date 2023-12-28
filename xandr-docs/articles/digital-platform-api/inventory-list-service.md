@@ -49,7 +49,7 @@ can then be associated with line items for targeting. Use the Inventory List Ser
 | `created_on` | string | Timestamp when inventory list was created. |
 | `description` | string | Description of the inventory list. |
 | `id` | int | ID of the inventory list (auto-generated on `POST`).<br>**Read Only.**<br>**Required On:** `PUT` |
-| name | string | **Required On:** `POST`<br>Name of the inventory list. |
+| `name` | string | **Required On:** `POST`<br>Name of the inventory list. |
 | `insertion_order_id` | int | The ID of the insertion order under which the inventory list was created. |
 | `inventory_list_type` | enum | **Required On:** `POST`<br><br>**Note:** Going forward, "allowlist" and "blocklist" terminology will be followed for our APIs. This is a part of an ongoing effort to evaluate our current terminology usage and usher in more inclusive terminology for Xandr platforms.<br>Type of inventory list. Possible values:<br> - `allowlist`<br> - `blocklist`<br><br>**Note:** The value of this field cannot be edited on `PUT` calls. |
 | `inventory_url_list_id` | int | ID of the inventory list as it appears in the UI. |

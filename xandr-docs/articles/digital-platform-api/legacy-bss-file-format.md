@@ -136,7 +136,7 @@ A client is adding user `12345678900987654321` to segments with codes `"auto_int
 
 | Field | Value |
 |:---|:---|
-| `UID` | Xandr user Id |
+| `UID` | Xandr user ID |
 | `SEPARATOR1` | `","` |
 | `SEPARATOR2` | `";"` |
 | `SEPARATOR4` | `"\t"` |
@@ -215,8 +215,8 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 
 ### Example 6
 
-A client is adding mobile user IDFA (ID for Advertisers) AEBE52E7-03EE-455A-B3C4-E57283966239 to segments 10000, 10001, 10002,
-10003 for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform. Note, separator 5 appended which designates the use of mobile identifiers. The value "3", designates Apple's IDFA value—other values can be found above in the [Mobile Device ID Data Fields](#separator5) table.
+A client is adding mobile user IDFA (ID for Advertisers) `AEBE52E7-03EE-455A-B3C4-E57283966239` to segments `10000`, `10001`, `10002`,
+`10003` for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform. Note, separator5 appended which designates the use of mobile identifiers. The value `"3"`, designates Apple's IDFA value—other values can be found above in the [Mobile Device ID Data Fields](#separator5) table.
 
 | Field | Value |
 |:---|:---|

@@ -48,8 +48,8 @@ Use the query string parameters shown in the table below to tune the output. For
 | `creative_id` | When `competitive_exclusions_enabled=true` is passed, you should also pass in this field with a creative ID that has competing brands or offer categories, and therefore should not be included in the resulting forecast. For more information about competitive exclusions, see [Competitive Exclusions](../monetize/competitive-exclusions.md).<br>**Required:** No, unless `competitive_exclusions_enabled` is also passed in the query string. |
 | `line_item_exclusions` | A comma-separated list of line item IDs to exclude from the forecast.<br>**Required:** No |
 | `viewability` | When set to true, the forecast will include only viewable impressions. Viewable impressions are calculated based on historic data. Applies to guaranteed delivery line items with a vCPM revenue type.<br>**Required:** No |
-| `dynamic_timeout` | The number of tries (defaults to 1).<br>**Required:** No |
-| `dynamic_attempts` | The amount of time to wait for each trial (default is 2 minutes, minimum in prod is 10 seconds).<br>**Required:** No |
+| `dynamic_timeout` | The number of tries (defaults to `1`).<br>**Required:** No |
+| `dynamic_attempts` | The amount of time to wait for each trial (default is `2` minutes, minimum in prod is `10` seconds).<br>**Required:** No |
 | `split_breakout` | When `split_breakout=true` is passed you should also pass split level details. This will return a forecast broken down by individual splits as well as the line item as a whole.<br><br>**Note:** GDALIs support splits; Legacy GDLIs do not support splits. <br><br>**Required:** No |
 
 ### JSON fields
@@ -110,7 +110,7 @@ For more on roadblocking, see [Target Your Inventory with Roadblocking](../mone
 
 You can define the targeting requirements for your forecast by using the [Profile Service](profile-service.md) on the line item and the campaign. However, there are some differences in how you need to define some of the fields for forecasting as opposed to other types of targeting specifications.
 
-**postal_code_targets**
+**`postal_code_targets`**
 
 The fields for the `postal_code_targets` object in the `profile` service are defined in the [Postal Code Service](postal-code-service.md). If you want to forecast based on postal codes, you *must* provide the following information:
 
