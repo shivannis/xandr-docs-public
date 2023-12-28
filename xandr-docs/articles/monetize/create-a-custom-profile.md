@@ -51,7 +51,7 @@ The bidders and their seats are mapped to the existing buyer IDs, and all trust 
 > Updating the trust level for Bidders will apply the same trust level to all Seats. However, Bidder trust can be overridden by updating Seat-level trust settings from
 > Use Bidder to another trust level.
 
-The default trust setting for Bidders is inherited from the Buyers section and any adjustments to the trust settings should be made in the Buyer’s section. To know more about Buyer Seat IDs, see: [Understanding Buyer Seat IDs](monetize_monetize-standard/understanding-buyer-seat-ids.md).
+The default trust setting for Bidders is inherited from the Buyers section and any adjustments to the trust settings should be made in the Buyer’s section. To know more about Buyer Seat IDs, see: [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
 ### Buyers
 
@@ -126,4 +126,4 @@ For more information on frequency caps, see [Frequency and Recency Caps](frequen
 - [Network Ad Quality Screen](network-ad-quality-screen.md)
 - [Update Your Network Profile](update-your-network-profile.md)
 - [Create a Publisher Template](create-a-publisher-template.md)
-- [ad-quality-order-of-operations.md](Ad Quality Order of Operations)
+- [Ad Quality Order of Operations](ad-quality-order-of-operations.md)

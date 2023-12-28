@@ -68,14 +68,14 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   
   > [!NOTE]
   >
-> Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**). This is not the setting that filters out any
-> impressions and does not impact auction logic. To filter out deal impressions by media type, use **Deal Creative Criteria \>  Media Type** (see [Deal Creative Criteria](create-a-deal-line-item.md).
+  > Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**). This is not the setting that filters out any
+  > impressions and does not impact auction logic. To filter out deal impressions by media type, use **Deal Creative Criteria \>  Media Type** (see [Deal Creative Criteria](create-a-deal-line-item.md).
 
 - **Roadblocking** - Optionally, you can enable programmatic roadblocks for the deal line item. If you choose to do so, you need to specify the dimensions for the **Master Creative** (that the buyer passes through in their bids) and its **Companion Creative**(s).
   
   > [!NOTE]
   >
-> Programmatic roadblocking is a **Beta** feature that isn't available to all clients. If you'd like to gain access to this feature, contact your account manager for more details.
+  > Programmatic roadblocking is a **Beta** feature that isn't available to all clients. If you'd like to gain access to this feature, contact your account manager for more details.
 
 - **Name** - Enter the name for the deal line item. You will later be able to search for and report on the line item using this name. This name is not exposed to the buyer.
 - **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Xandr assigns automatically), enter the code
@@ -97,7 +97,7 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
 
     > [!NOTE]
     >
-> For multi-buyer deals, see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md).
+    > For multi-buyer deals, see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md).
 
 1. On the **Select Buyer** screen, select an available buyer (you can search by Name and ID). You cannot change the selected buyer after the deal line item is created and saved.
 1. Click **Add**.
@@ -183,8 +183,7 @@ You can specify the following inventory and brand safety settings for the deal l
 - **Ads.txt**: Do not use (not supported for deal line items).
 
 > [!NOTE]
-> The use of Inventory Lists (e.g., allowlists, blocklists) will constrain whatever **Inventory Type** selections you make. For example, if you target an allowlist,
-> the **Inventory Type** option you select will be limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory
+> The use of Inventory Lists (e.g., allowlists, blocklists) will constrain whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select will be limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory
 > Type** option you select will serve on everything but the domains/apps in that blocklist.
 
 ## Frequency & recency
@@ -243,8 +242,10 @@ See [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a
   
   > [!NOTE]
   >
->     Limiting the media types of creatives allowed on the deal will also limit the media types of requests sent through the deal. For example, if you select to only
-> allow Banner creatives, the deal will only send banner requests to the buyer.
+  > Limiting the media types of creatives allowed on the deal will also limit
+  > the media types of requests sent through the deal. For example, if you
+  > select to only allow Banner creatives, the deal will only send banner
+  > requests to the buyer.
 
 - **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select Ignore, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes will default to Follow so they comply with ad quality settings.
 

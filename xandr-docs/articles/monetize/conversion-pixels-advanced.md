@@ -2,7 +2,6 @@
 title: Microsoft Monetize - Conversion Pixels Advanced
 description: The article defines advanced options in conversion pixels.
 ms.date: 10/28/2023
-options available.
 ---
 
 # Microsoft Monetize - Conversion pixels advanced
@@ -36,10 +35,10 @@ This pixel adds the user to two segments, and removes them from one:
 
 > [!NOTE]
 > There are two ways to add a user to a segment after a conversion:
-> 
+>
 > 1. Add a user at the same time the conversion pixel is fired.
 > 1. Add a Segment pixel as a piggyback to the conversion pixel. 
-> 
+>
 > It is preferable to use the first scenario, keeping the conversion and segment pixel as one call, over having the segment be a piggy back. There are several reasons for this. First only one call, rather then two, is made as the page loads reducing latency. Second if the user clicks away from the page before it fully loads it is possible for the conversion pixel to fire but not the piggybacked segment causing a mismatch. If you use the first scenario, you will not have a mismatch
 > assuming you are not adding users to the segment some place else.
 
@@ -50,7 +49,7 @@ This pixel adds the user to two segments, and removes them from one:
 You can pass in an order ID or SKU in your pixel and then see this data in conversion reporting. For example, the user sees a ProStarr Sportswear ad, clicks on it, and orders a t-shirt with SKU 124252334. The advertiser populates the pixel with order_id=124252334, which then flows into the reporting tables. You can put letters and numbers in an
 order ID and there is a 36 character limit.
 
-You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [Log-Level Data Feeds](log-level-data/log-level-data-feeds.md) if you subscribe to our Log-Level Data.
+You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) if you subscribe to our Log-Level Data.
 
 ```
 <img src="media/px?id=1&order_id=[ORDER_ID]&t=2" width="1" height="1" /> 
@@ -88,7 +87,7 @@ you can input the URL of your pixel and mark it as image or JavaScript. Please n
 
 You can include an extra field to pass into your pixel and then see this data in conversion reporting. This cannot be done using the "Export Pixels" pane, so you need to manually include this parameter in your pixel tag. You can include letters and numbers in this additional field and there is a 20 character limit.
 
-You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) as well as the [Log-Level Data Feeds](log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data Feeds.
+You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) as well as the [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data Feeds.
 
 ```
 <img src="media/px?id=1&other=[EXTERNAL_DATA]&t=2" width="1" height="1" /> 

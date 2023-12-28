@@ -29,7 +29,7 @@ Create a base rule to affect specific buyer's or buyer group's bids on all of th
 
 **All other clients:** Select **Publishers \>  Floor Rules** in the menu bar, and then select a publisher if you are prompted.
 
-## Step 1. Get started
+## Step 1. Get started with Bias Rule Manager
 
 Select a publisher when you are prompted. This opens the **Bias Rule Manager**.
 

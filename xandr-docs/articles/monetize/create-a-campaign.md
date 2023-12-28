@@ -15,10 +15,8 @@ Creating campaign involves defining:
 - **Buying Strategies** - Whether you want to run the campaign on your own managed publishers (direct), on inventory from other networks and external supply sources (third-party), or on both. For third-party buys, you define exactly how you want to pay publishers and value bids.
 - **Targeting** - What specific inventory you want to run on, and how precisely you want to target users (via frequency, segments, geography, OS, etc.).
 
-> [!IMPORTANT]
-> **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external
-> reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order \> Line Item \> Campaign**) will also be archived
-> and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
+  > [!IMPORTANT]
+  > **Automatic archiving of objects:** Campaigns that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If a campaign is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., **Insertion Order \> Line Item \> Campaign**) will also be archived and no additional child objects may be created beneath the archived parent object. For details, see [Automatic Archiving of Buy-Side Objects](automatic-archiving-of-buy-side-objects.md).
 
 ## Before you begin
 
@@ -38,8 +36,7 @@ engaging or clicking an ad, and drive more traffic to your advertiser's offer or
 The procedures outlined on this page do not describe the different methods for collecting data and assume that the buyer already has access to the data when the campaign is being setup. Audience buying campaigns feature a very simple setup and should have few restrictions on delivery outside of the segment target.
 
 > [!IMPORTANT]
-> One of the main reasons that Audience Buying campaigns fail to deliver is because the targeted segments contain too small a pool of users. Therefore, if this occurs,
-> check segment loads. For third-party segments, traffickers will need to reach out to the third-party as Xandr does not have access to this segment load information. Also, if your daily budget is less than $100, pacing may be affecting campaign delivery.
+> One of the main reasons that Audience Buying campaigns fail to deliver is because the targeted segments contain too small a pool of users. Therefore, if this occurs, check segment loads. For third-party segments, traffickers will need to reach out to the third-party as Xandr does not have access to this segment load information. Also, if your daily budget is less than $100, pacing may be affecting campaign delivery.
 
 **Retargeting**
 
@@ -89,10 +86,10 @@ In the **Basic Setup** section, enter the basic details and flight dates for the
 - **State** - The state is set to "Inactive" by default to prevent the campaign from spending before all necessary settings and creatives are complete. You can set the state to "Active" at any time.
 - **Flight Dates** - Set the start for the campaign and set an end date or select **Run Indefinitely**. Note that the time format (12-hour or 24-hour) and time zone are inherited from the advertiser. Enter or select the start and end dates and times for the campaign.
 
-> [!IMPORTANT]
-> If flight dates are set for the parent line item, those dates take precedence; regardless of the dates set for the campaign, the campaign will not start before the line item start date and will not continue buying impressions after the line item end date.
-
-To further limit serving to specific days and hours of the week, you can use [Daypart Targeting](daypart-targeting.md).
+   > [!IMPORTANT]
+   > If flight dates are set for the parent line item, those dates take precedence; regardless of the dates set for the campaign, the campaign will not start before the line item start date and will not continue buying impressions after the line item end date.
+  > [!TIP]
+  > To further limit serving to specific days and hours of the week, you can use [Daypart Targeting](daypart-targeting.md).
 
 ### Step 6. Set the campaign budget
 
@@ -111,18 +108,17 @@ campaign will stop buying impressions, whether or not it has reached its own bud
 - **Daily** - This is the budget that you are willing to spend on any single day. There are three options:  
   - **Custom** - Select this option to enter a specific amount of impressions or dollars. When you enter a custom daily budget, you must select one of the following options:
   - **Pace evenly throughout the day** - Select this option, otherwise known as "daily pacing", if you want to prevent your daily budget from being spent all at once by distributing your spend evenly by hour throughout the day. Note that if you use Daypart Targeting to restrict the hours during which the campaign can serve, daily pacing
-    will adjust to distribute your spend evenly across only the targeted hours. For more details, see [Daypart Targeting](-daypart-targeting.md) or [Daily Pacing](daily-pacing.md).
+    will adjust to distribute your spend evenly across only the targeted hours. For more details, see [Daypart Targeting](daypart-targeting.md) or [Daily Pacing](daily-pacing.md).
   - **Spend as fast as possible** - Select this option if you do not want to pace your daily budget at all. Note that this option could lead to your entire daily budget being spent in a very short amount of time.
 - **Pace Lifetime Budget** - Select this option to spread your lifetime budget evenly across your flight dates. As each day passes, the system spreads the remaining impression or media cost budget across the remaining days of the flight.
   - The system is not able to pace its spending if it does not have a budget amount, and the system must know the number of days in the campaign in order to apply the remaining budget amount equally for the remainder of the flight. Therefore, this option requires that you enter a **custom lifetime budget** and **select an end date**.
     For more details, examples, and best practices, see [Lifetime Pacing](lifetime-pacing.md).
 - **Unlimited** - Select this option to leave your daily budget undefined.
 
-> [!NOTE]
-> If you have enabled the unlimited budget warning feature, you will not be able to set the budget for your campaign to unlimited if the line item and (if applicable) insertion
-> order budgets are also set to unlimited. This feature prevents mistaken overspend that can result when budgets are set to unlimited at all levels. When the feature is enabled, to set your campaign budget to unlimited, you must first limit the budget for either the insertion order or line item associated with the campaign.
-
-To enable this feature, speak to your Xandr representative.
+  > [!NOTE]
+  > If you have enabled the unlimited budget warning feature, you will not be able to set the budget for your campaign to unlimited if the line item and (if applicable) insertion order budgets are also set to unlimited. This feature prevents mistaken overspend that can result when budgets are set to unlimited at all levels. When the feature is enabled, to set your campaign budget to unlimited, you must first limit the budget for either the insertion order or line item associated with the campaign.
+  >
+  > To enable this feature, speak to your Xandr representative.
 
 ### Step 7. Define the buying strategies
 
@@ -326,8 +322,8 @@ To add a new serving fee:
 1. Select the **Fee Type** (CPM or Cost Share) and enter the relevant **Fee Value** (dollar amount for CPM, percentage for Revenue Share). 
 1. Click **Add**.
 
-> [!IMPORTANT]
-> Per broker, you can add no more than one CPM serving fee and one Cost Share serving fee.
+   > [!IMPORTANT]
+   > Per broker, you can add no more than one CPM serving fee and one Cost Share serving fee.
 
 ### Step 14. Review and save your campaign
 
@@ -356,7 +352,7 @@ Creatives to Campaigns](associate-creatives-to-campaigns.md).
 
 ### Related topics
 
-- [working-with-campaigns.md](Working with Campaigns)
+- [Working with Campaigns](working-with-campaigns.md)
 - [Explore Campaigns](explore-campaigns.md)
 - [View Campaign Details](view-campaign-details.md)
 - [Buy-Side Targeting](buy-side-targeting.md)
