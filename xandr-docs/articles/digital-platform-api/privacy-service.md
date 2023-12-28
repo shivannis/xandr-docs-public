@@ -19,7 +19,7 @@ There are two capabilities exposed by this API: Access and Delete. In both cases
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/privacy/consumer-request](https://api.appnexus.com/privacy/consumer-request) | Create a new "delete" or "access" request. |
+| `POST` | [https://api.appnexus.com/privacy/consumer-request](https://api.appnexus.com/privacy/consumer-request) | Create a new `"delete"` or `"access"` request. |
 
 ## JSON fields
 
@@ -27,14 +27,14 @@ There are two capabilities exposed by this API: Access and Delete. In both cases
 |:---|:---|:---|
 | `identifier` | string | The identifier for the end user.<br>For example, `"123e4567-e89b-12d3-a456-426655440000"` or `"7738918429796999062"`.<br>**Required On:** `POST` |
 | `identifier_type` | string enum | The identifier type for the end user. May be either the Mobile Advertising ID or the Xandr user ID for the user.<br>**Required On:** `POST`<br>Accepted values: `"maid"` or `"uuid2"`. |
-| `request_type` | string | The type of privacy request. Currently, Xandr only supports "delete" and "access" requests.<br>**Required On:** `POST` |
+| `request_type` | string | The type of privacy request. Currently, Xandr only supports `"delete"` and `"access"` requests.<br>**Required On:** `POST` |
 
 ## Examples
 
 > [!NOTE]
 > A 200 status code response indicates success. A 422 status code response indicates a problem with the input.
 
-### Create a "delete" request using a Xandr UUID
+### Create a `"delete"` request using a Xandr UUID
 
 ```
 $ cat privacy.json
@@ -46,7 +46,7 @@ $ cat privacy.json
 $ curl -X POST -d @privacy.json 'https://api.appnexus.com/privacy/consumer-request'
 ```
 
-### Create a "delete" request using an external Mobile Advertising ID
+### Create a `"delete"` request using an external Mobile Advertising ID
 
 ```
 $ cat privacy.json
@@ -58,7 +58,7 @@ $ cat privacy.json
 $ curl -X POST -d @privacy.json 'https://api.appnexus.com/privacy/consumer-request'
 ```
 
-### Create an "access" request using a Xandr UUID
+### Create an `"access"` request using a Xandr UUID
 
 ```
 $ cat privacy.json
@@ -85,7 +85,7 @@ $ curl -X POST -d @privacy.json 'https://api.appnexus.com/privacy/consumer-reque
 } 
 ```
 
-### Create an "access" request using an external Mobile Advertising ID
+### Create an `"access"` request using an external Mobile Advertising ID
 
 ```
 $ cat privacy.json

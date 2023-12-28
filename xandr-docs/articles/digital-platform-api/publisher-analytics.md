@@ -77,15 +77,15 @@ In some cases Analytics reports can show delivery that does not match Lifetime Q
 | `brand_name` | string | no | `"Ace Hardware"` | The name of the brand associated with a creative served on the publisher's inventory. For imp_type_id = 6, no information is available in the brand_name field for this report. See the [Publisher Brand Review Report](publisher-brand-review-report.md) instead. |
 | `brand` | string | no | `"Ace Hardware (3)"` | **Deprecated** (as of October 17, 2016). |
 | `supply_type` | string | no |  | The type of inventory. Possible values:<br>- `"web"`<br>- `"mobile_web"`<br>- `"mobile_app"` |
-| `imp_type_id` | int | yes | 1 | The ID for the type of impression. Possible values (associated types in parentheses):<br>- `1 ("Blank")`: No creative served.<br>- `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br>- `3 ("Default Error")`: A default creative served due to a timeout issue.<br>- `4 ("Default")`: A default creative served because there were no valid bids.<br>- `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br>- `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br>- `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br>- `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br>- `9 ("External Impression")`: An impression from an impression tracker. |
+| `imp_type_id` | int | yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br>- `1 ("Blank")`: No creative served.<br>- `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br>- `3 ("Default Error")`: A default creative served due to a timeout issue.<br>- `4 ("Default")`: A default creative served because there were no valid bids.<br>- `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br>- `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br>- `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br>- `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br>- `9 ("External Impression")`: An impression from an impression tracker. |
 | `imp_type` | name | yes | `"Kept"` | The type of impressions. For possible values see `imp_type_id`. |
 | `media_type` | string | no | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of a creative served on the publisher's inventory. You can use the [Media Type Service](media-type-service.md) to view the complete list of media types. |
-| `adjustment_id` | int | yes | 22 | The ID of an adjustment you have set using the [Adjustment Service](adjustment-service.md). Networks use adjustments to help display their actual revenue in Xandr reporting. |
-| `site_id` | int | yes | 555 | The ID of the site. For more information, see the [Site Service](site-service.md). |
-| `site_name` | string | yes | "My Site" | The name of the site. For more information, see the [Site Service](site-service.md). |
-| `site` | string | yes | "My Site (555)" | **Deprecated** (as of October 17, 2016). |
-| `venue` | string | yes | "Venue 55" | The word Venue followed by the ID of the inventory's associated venue. |
-| `mediatype_id` | int | yes | 444 | The ID of the media type associated with the creative that was served. For more information, see the [Media Type Service](media-type-service.md). |
+| `adjustment_id` | int | yes | `22` | The ID of an adjustment you have set using the [Adjustment Service](adjustment-service.md). Networks use adjustments to help display their actual revenue in Xandr reporting. |
+| `site_id` | int | yes | `555` | The ID of the site. For more information, see the [Site Service](site-service.md). |
+| `site_name` | string | yes | `"My Site"` | The name of the site. For more information, see the [Site Service](site-service.md). |
+| `site` | string | yes | `"My Site (555)"` | **Deprecated** (as of October 17, 2016). |
+| `venue` | string | yes | `"Venue 55"` | The word Venue followed by the ID of the inventory's associated venue. |
+| `mediatype_id` | int | yes | `444` | The ID of the media type associated with the creative that was served. For more information, see the [Media Type Service](media-type-service.md). |
 
 ## Metrics
 

@@ -34,7 +34,7 @@ Before beginning this setup, be sure to read [API Getting Started](api-getting-s
 
 API objects often have dependencies on other API objects and there is an order you must follow in creating or accessing objects when you create a PG deal. For example, you must provide the IDs of the following API objects: `advertiser`, `insertion-order`, `deal`, and `profile`. To obtain the IDs for these objects, you'll need to either create them or already have access to them. The steps in this guide follow the typical order of operations required to create a PG deal.
 
-## Best Practices
+## Best practices
 
 For a general list of best practices to follow when working with the API, see [API Best Practices](api-best-practices.md). The following are some best practices that are specific to a deal line item setup:
 
@@ -138,7 +138,7 @@ You'll need to create or access an insertion order to create a PG deal. Deal lin
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the insertion order |
 | `state` | enum | Required | The state of the insertion order: `active` or `inactive` |
-| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br><br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
+| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
 | `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
 
 If you don't already have an insertion order to use, create an insertion order by doing the following (For more
@@ -274,7 +274,7 @@ Language (see [Language Service](language-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `audit_status_option` | string | Specifies how the deal handles creatives.<br>- `max_trust`: Maximum - no ad profile restrictions will be applied to this deal.<br>`provisional`: Allow pending creatives - creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br>`none`: Default - creatives use existing ad quality settings. |
+| `audit_status_option` | string | Specifies how the deal handles creatives.<br>- `max_trust`: Maximum - no ad profile restrictions will be applied to this deal.<br>- `provisional`: Allow pending creatives - creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br>- `none`: Default - creatives use existing ad quality settings. |
 
 **Trust level example**
 

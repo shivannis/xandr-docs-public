@@ -1,6 +1,6 @@
 ---
 title: Publisher GDALI API Setup Guide
-description: Explore the API setup guide to understand the process of creating and configuring a Guaranteed Delivery Augmented Line Item GDALI using our API.
+description: Explore the API setup guide to understand the process of creating and configuring a Guaranteed Delivery Augmented Line Item (GDALI) using our API.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -55,10 +55,10 @@ For a general list of best practices to follow when working with the API, see 
 The following steps will guide you through the process of setting up a
 GDALI with typical configurations:
 
-- Step 1 - Obtain an authorization token
-- Step 2 - Create a seamless insertion order (if an appropriate one is not available under the advertiser)
-- Step 3 - Create a profile
-- Step 4 - Create a GDALI
+- [Step 1 - Obtain an authorization token](#step-1-obtain-an-authorization-token)
+- [Step 2 - Create a seamless insertion order](#step-2-create-a-seamless-insertion-order) (if an appropriate one is not available under the advertiser)
+- [Step 3 - Create a profile](#step-3-create-a-profile)
+- [Step 4 - Create a GDALI](#step-4-create-a-gdali)
 
 ## Authentication
 
@@ -86,7 +86,8 @@ information, see [Authentication Service](authentication-service.md)). In the c
     ```
 
 1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and the "`token`" field will be populated with the authentication token value.
-      **Example Response**
+
+    **Example Response**
 
     ```
     {
@@ -125,7 +126,7 @@ information, see [Insertion Order Service](insertion-order-service.md).
 | `state` | enum | The state of the insertion order. Possible values: `"active"` or `"inactive"`. |
 | `currency` | string | The currency assigned to the insertion order. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). <br><br>**Note:** Once the insertion order has been created, the currency cannot be changed. |
 | `budget_type` | enum | The budget type of the insertion order. For GDALI, the value must be set to `"flexible"` or `"impression"`. |
-| `budget_intervals` | array | Budget intervals enable date intervals to be attached to an insertion order.<br><br>**Note:**<br>- The insertion order must not contain more than one budget_intervals array.<br>- The insertion order must have unlimited budget (all budget fields in the `budget_intervals` array must be omitted or set to `null`). |
+| `budget_intervals` | array | Budget intervals enable date intervals to be attached to an insertion order.<br><br>**Note:**<br>- The insertion order must not contain more than one `budget_intervals` array.<br>- The insertion order must have unlimited budget (all budget fields in the `budget_intervals` array must be omitted or set to `null`). |
 | `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (**Note:** `hh:mm:ss` must be set to `00`). Typically this would be the current date. |
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. This value is optional. |
 | `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
@@ -232,13 +233,13 @@ information, see [Insertion Order Service](insertion-order-service.md).
     }
     ```
 
-1. Note the insertion order ID in the response body so you can use it when you create the GDALI in Step 4 - Create a GDALI.
+1. Note the insertion order ID in the response body so you can use it when you create the GDALI in [Step 4 - Create a GDALI](#step-4-create-a-gdali).
 
 ## Profile
 
 ### Step 3: Create a profile
 
-Next, create a GDALI profile for targeting. This step is optional, but leaving the `"profile_id"` as null will result in "run of network"
+Next, create a GDALI profile for targeting. This step is optional, but leaving the `"profile_id"` as `null` will result in "run of network"
 targeting, which could have implications on forecasting and reservations. Be sure to note the ID for this profile for later use.
 
 #### JSON fields for GDALI profile
@@ -354,7 +355,7 @@ For a full list of fields and more information, see [Profile Service](profile-s
                 "ads_txt_authorized_only": false,
                 "require_transparency_and_consent_framework_string": false,
                 "postal_code_action_include": true,
-                "inventory_url_whitelist_settings": {
+                "inventory_url_allowlist_settings": {
                     "apply_to_rtb": true,
                     "apply_to_managed": true
                 },
@@ -455,7 +456,7 @@ For a full list of fields and more information, see [Profile Service](profile-s
     }
     ```
 
-1. Note the profile ID in the response body so you can use it when you create the GDALI in Step 4 - Create a GDALI.
+1. Note the profile ID in the response body so you can use it when you create the GDALI in [Step 4 - Create a GDALI](#step-4-create-a-gdali).
 
 ## Line item
 
@@ -477,7 +478,7 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 | `ad_types` | array of strings | The type of creative used for this line item. <br>Possible values: <br>- `"banner"`<br>- `"video"`  (includes audio types as well)<br>- `"native"`<br><br>One or more values are supported. This value determines how auction items are tracked for the line item's buying strategy, paying strategy, forecasting, creative association, and targeting options.<br><br>**Note:** All creatives associated to a line item must have the same ad type, which should match the `ad_types` selected here. |
 | `timezone` | enum | The timezone by which budget and spend are counted. For details and accepted values, see [API Timezones](api-timezones.md). |
 | `currency` | string (3) | The currency used for this line item. For a list of supported currencies, see the [Currency Service](currency-service.md).<br><br>**Note:** Once the line item has been created, the currency cannot be changed. |
-| `revenue_type` | enum | The way the advertiser has agreed to pay you (also called Booked Revenue). Possible values are:<br>- `"cpm"`: Select this value if you are being paid flat payment for 1000 impressions (CPM).<br>&nbsp; - For Viewable CPM, set `revenue_type` to `"cpm"`, the `revenue_value` field to the Viewable CPM value, the `revenue_auction_event_type` field to `"view"`  the `revenue_auction_event_type_code` field to `"view_display_50pv1s_an"` and `"revenue_auction_type_id"` to `2`. Only measured viewable impressions will be counted, according to the Xandr viewability measurement, using the IAB definition.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable.<br><br>The flat fee will not be booked on the allocation date unless the line item has served at least one impression. If you define a revenue_type of `flat_fee` you must specify a value for `flat_fee_type`. |
+| `revenue_type` | enum | The way the advertiser has agreed to pay you (also called Booked Revenue). Possible values are:<br>- `"cpm"`: Select this value if you are being paid flat payment for 1000 impressions (CPM).<br>&nbsp; - For Viewable CPM, set `revenue_type` to `"cpm"`, the `revenue_value` field to the Viewable CPM value, the `revenue_auction_event_type` field to `"view"`  the `revenue_auction_event_type_code` field to `"view_display_50pv1s_an"` and `"revenue_auction_type_id"` to `2`. Only measured viewable impressions will be counted, according to the Xandr viewability measurement, using the IAB definition.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable.<br><br>**Note:** The flat fee will not be booked on the allocation date unless the line item has served at least one impression. If you define a `revenue_type` of `flat_fee` you must specify a value for `flat_fee_type`. |
 | `flat_fee_type` | array | Flat fees can be paid out daily or on the flight end date. Available values are:<br>- `one_time`: The fee will be paid on the final allocation date. The associated `revenue_value` is the value to be paid on that date. The flight cannot be longer than one month.<br>- `daily`: The fee will be paid daily. The associated `revenue_value` is the daily fee, not the fee for the entire flight. |
 | `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:** Depending on what you set the `revenue_type` field to, this field must be set to the actual value of that revenue type (e.g. `flat_fee` or `cpm`). |
 | `budget_intervals` | array | Budget intervals enable date intervals and budgets to be attached to a line items.<br><br>**Note:** The GDALI must not contain more than one `budget_intervals` array. |
@@ -486,9 +487,9 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (`hh:mm:ss` should be set to `hh:59:59`). Must not be `null` for GDALIs. For delivery to work best, your budget intervals should have a duration of at least 4 hours. |
 | `budget_intervals.lifetime_budget_imps` | double (obj in array) | The lifetime budget in impressions for the budget interval.<br><br>**Note:** When a line item is enabled for roadblocks, only master creative imps will count against `lifetime_budget_imps`. |
 | `budget_intervals.lifetime_pacing` | boolean (obj in array) | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. GDALIs must be defined as `true`. |
-| `budget_intervals.lifetime_pacing_pct` | double (obj in array) | A double integer between (and including) 50 and 150, used to set pacing throughout a budget interval. Possible values can be any double between (and including) 50 and 150 on the following scale:<br>- - `50`: Pace behind schedule.<br>- `100`: Pace evenly.<br>- `150`: Pace ahead of schedule.<br><br>**Note:** It's recommended to set this field to `105`. By default, the value will be set to `100`. |
+| `budget_intervals.lifetime_pacing_pct` | double (obj in array) | A double integer between (and including) 50 and 150, used to set pacing throughout a budget interval. Possible values can be any double between (and including) 50 and 150 on the following scale:<br>- `50`: Pace behind schedule.<br>- `100`: Pace evenly.<br>- `150`: Pace ahead of schedule.<br><br>**Note:** It's recommended to set this field to `105`. By default, the value will be set to `100`. |
 | `delivery_goals` | array | The `delivery_goals` array contains information about the delivery goal attached to the GDALI. GDALIs will attempt to deliver against impression or percentage goals. |
-| `delivery_goals.type` | string (obj in array) | The type of delivery goal. Allowed values are:<br>- `"impressions"`: GDALIs with impression goals will attempt to serve the specified number of impressions evenly across their flight dates. If the delivery goal type is `"impressions"`, lifetime budget must be set at the line item level.<br>- `"percentage"`: Currently, the percentage goal is only available for "exclusive" GDALIs. <br><br>**Note:** If the delivery goal `type` is `"percentage"`, the line item cannot have a budget. |
+| `delivery_goals.type` | string (obj in array) | The type of delivery goal. Allowed values are:<br>- `"impressions"`: GDALIs with impression goals will attempt to serve the specified number of impressions evenly across their flight dates. If the delivery goal `type` is `"impressions"`, lifetime budget must be set at the line item level.<br>- `"percentage"`: Currently, the percentage goal is only available for "exclusive" GDALIs. <br><br>**Note:** If the delivery goal `type` is `"percentage"`, the line item cannot have a budget. |
 | `delivery_goals.percentage` | int (obj in array) | If the type of delivery goal is `"percentage"`, this is the actual percentage at which the GDALI will serve. Allowed values are integers 0 <= n <= 100. If the delivery goal `type` is `"impressions"`, this field must be `null`. |
 | `delivery_goals.disallow_non_guaranteed` | boolean (obj in array) | When `true`, this line item will always serve over non-guaranteed line items participating in the same (managed) auction.<br><br>**Note:** Setting `disallow_non_guaranteed` to `true` may impact competition in the auction, which could impact yield. |
 | `delivery_goals.reserved` | boolean (obj in array) | When `true`, this line item has inventory "reserved" for it; in other words, the line item is set to purchase a guaranteed number or percentage of impressions on a seller's inventory during its flight. Note that you will not be able to set a GDALI's `state` to `"active"` unless this field is set to `true`. |
@@ -498,7 +499,7 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 | `roadblock.master_height` | int | The height of the master creative. This value is required when roadblock type equals `partial_roadblock`. |
 | `profile_id` | int | You may associate an optional `profile_id` with this line item. A profile is a generic set of rules for targeting inventory. For details, see the [Profile Service](profile-service.md). |
 
-1. Create a GDALI JSON (you'll need an existing advertiser ID and insertion order ID from Step 2 - Create a seamless insertion order).
+1. Create a GDALI JSON (you'll need an existing advertiser ID and insertion order ID from [Step 2 - Create a seamless insertion order](#step-2-create-a-seamless-insertion-order)).
 
     ```
     $ cat gdali_imp_cpm

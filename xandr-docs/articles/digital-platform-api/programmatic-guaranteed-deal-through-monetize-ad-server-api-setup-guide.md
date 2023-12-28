@@ -137,7 +137,7 @@ You'll need to create or access an insertion order to create a PG deal. Deal lin
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the insertion order |
 | `state` | enum | Required | The state of the insertion order: `active` or `inactive` |
-| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br><br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
+| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
 | `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
 | `pacing` |  | Required |  |
 
@@ -260,11 +260,11 @@ Language (see [Language Service](language-service.md))
             ]
 ```
 
-**Trust Level**
+**Trust level**
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `audit_status_option` | string | Specifies how the deal handles creatives.<br>- `max_trust`: Maximum - no ad profile restrictions will be applied to this deal.<br>`provisional`: Allow pending creatives - creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br>`none`: Default - creatives use existing ad quality settings. |
+| `audit_status_option` | string | Specifies how the deal handles creatives.<br>- `max_trust`: Maximum - no ad profile restrictions will be applied to this deal.<br>- `provisional`: Allow pending creatives - creatives in `"pending"` audit status will serve. Once these creatives are audited, the existing ad quality settings are used.<br>- `none`: Default - creatives use existing ad quality settings. |
 
 **Trust level example**
 

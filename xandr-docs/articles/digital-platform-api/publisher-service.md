@@ -22,7 +22,7 @@ The Publisher Service is used to create and update your managed publishers.
 | `DELETE` | [https://api.appnexus.com/publisher?id=PUBLISHER_ID](https://api.appnexus.com/publisher?id=PUBLISHER_ID) | Delete a publisher.<br><br>**Caution:** Deleting a publisher deletes all of its child objects as well, including sites, placements, payment rules, and publisher-level ad quality profiles. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings. |
 | `GET` | https://api.appnexus.com/publisher/meta | Find out which fields you can filter and sort by. |
 
-If your API call returns an error with "**Request failed due to timeout or memory issue**", you can append **add_mappings=false** to your query parameters. Adding this parameter will only return the top-level API objects, but not their nested children.
+If your API call returns an error with "**Request failed due to timeout or memory issue**", you can append `add_mappings=false` to your query parameters. Adding this parameter will only return the top-level API objects, but not their nested children.
 
 For example:
 
@@ -38,21 +38,21 @@ curl -b cookies -c cookies "https://api.appnexus.com/publisher?id=2,3,5,8,13,21&
 | `code` | string (100) | The custom code for the publisher. |
 | `name` | string (255) | The name of the publisher.<br>**Required On:** `POST`/`PUT` |
 | `state` | enum | The state of the publisher. Possible values: `"active"` or `"inactive"`.<br>**Default:** `"inactive"` |
-| `expose_domains` | boolean | If `true`, domains associated with the publisher are exposed to other members of the platform.<br>**Default:** true |
-| `enable_cookie_tracking_default` | boolean | If true, users visiting this publisher's inventory will be tracked via our cookies.<br>**Default:** true |
+| `expose_domains` | boolean | If `true`, domains associated with the publisher are exposed to other members of the platform.<br>**Default:** `true` |
+| `enable_cookie_tracking_default` | boolean | If `true`, users visiting this publisher's inventory will be tracked via our cookies.<br>**Default:** `true` |
 | `reselling_exposure` | enum | The publisher's exposure for reselling to other members of the platform. Possible values: `"public"` or `"private"`.<br>**Default:** `"private"` |
 | `reselling_exposed_on` | timestamp | The date and time when the publisher was exposed for reselling.<br>**Default:** `"0000-00-00 00:00:00"` |
 | `reselling_name` | string (255) | The name that appears in the inventory manager to other members of the platform, if `reselling_exposure` is `true`. If this field is empty, the value in the name field is used. |
 | `description` | string (255) | The description that appears in the inventory manager to other members of the platform, if `reselling_exposure` is `true`. If this field is empty, no description is shown. |
 | `is_rtb` | boolean | All networks have one publisher object that serves as a so-called "plumbing link" to real-time inventory. This mock publisher has no ad profile, no ad quality rules, no visibility profiles, or any of the other trappings of an actual publisher. All other publishers have `is_rtb` set to `false` by default.<br>**Default:** `false` |
-| `timezone` | enum | The timezone for this publisher. For details and accepted values, see [API Timezones](api-timezones.md).<br>**Default:** **"EST5EDT"**<br>or the member's timezone. |
+| `timezone` | enum | The timezone for this publisher. For details and accepted values, see [API Timezones](api-timezones.md).<br>**Default:** `"EST5EDT"` or the member's timezone. |
 | `last_modified` | timestamp | **Read-only.** The date and time when the publisher was last updated in the our system. |
-| `stats` | array | The stats object has been **deprecated** (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead. |
-| `max_learn_pct` | int | The maximum % of the publisher's daily volume that can be used for learn.<br><br>**Tip:** If you want us to automatically allocate an optimal percent of impressions to learn to keep introducing new offers as older offers become less profitable, set this field to `null`.<br>**Default:** `0` |
+| `stats` | array | The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead. |
+| `max_learn_pct` | int | The maximum % of the publisher's daily volume that can be used for learn.<br><br>**Tip:** If you want us to automatically allocate an optimal percent of impressions to learn to keep introducing new offers as older offers become less profitable, set this field to `null`.<br><br>**Default:** `0` |
 | `learn_bypass_cpm` | int | If an impression selected for learn receives a bid higher than this value from an external buyer, the bid will be accepted and the impression will not be used for learn.<br>**Default:** `5` |
 | `ad_quality_advanced_mode_enabled` | boolean | If `true`, multiple ad quality rules can be created for the publisher in the UI.<br>**Default:** `true` |
 | `allow_report_on_default_imps` | boolean | If `true`, publisher users can report on detailed impression and revenue metrics in the UI, such as imps filled, imps defaulted, total revenue, total revenue eCPM, filled revenue, filled revenue eCPM, defaulted revenue, and defaulted revenue eCPM.<br>**Default:** `false` |
-| `default_site_id` | int | The ID of the publisher's default site. The site is created automatically when the publisher is added.<br><br>**Caution:** When adding a publisher, you can prevent a default site from being created by passing `"create_default_placement=false"` in the query string of the `POST` request.<br>**Default:** Auto-incremented number (i.e. 123). |
+| `default_site_id` | int | The ID of the publisher's default site. The site is created automatically when the publisher is added.<br><br>**Caution:** When adding a publisher, you can prevent a default site from being created by passing `"create_default_placement=false"` in the query string of the `POST` request.<br><br>**Default:** Auto-incremented number (i.e. 123). |
 | `default_ad_profile_id` | int | Most publishers should use the base ad quality rule associated with the `base_ad_quality_rule_id`. Ad quality rules provide more control over what is allowed to serve on a publisher's inventory. If there is no base ad quality rule, the system will use the ad profile associated with the `default_ad_profile_id`. For more information, see the [Ad Profile Service](ad-profile-service.md).<br>**Default:** The member's default ad profile ID. |
 | `billing_dba` | string (100) | The "Doing Business As" name to use for billing purposes.<br>**Required On:** `POST`/`PUT` |
 | `billing_address1` | string (100) | The street information of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
@@ -78,20 +78,20 @@ curl -b cookies -c cookies "https://api.appnexus.com/publisher?id=2,3,5,8,13,21&
 | `is_oo` | boolean | If `true`, the publisher is owned and operated by the network, meaning the network gets 100% of the revenue.<br>**Default:** false |
 | `base_payment_rule_id` | int | The unique identifier for the publisher's catch-all payment rule. Use the [Payment Rule Service](./payment-rule-service.md) to find the ID for the publisher's payment rule you desire.<br>**Default:** Auto-incremented number (i.e. 123). |
 | `base_ad_quality_rule_id` | int | The unique identifier for the publisher's base ad quality rule. This acts as a "catch-all" ad quality rule in two cases:<br>- There are no conditional ad quality rules that match the current impression.<br>There are no conditional ad quality rules defined.<br>- If the `base_ad_quality_rule_id` is not defined, the system will use the ad profile associated with the `default_ad_profile_id` (defined above). For more information, see the [Ad Quality Rule Service](ad-quality-rule-service.md). |
-| `currency` | enum | The publisher's currency.<br><br>**Warning:** This field can be set on `POST`, but it cannot be updated on `PUT`.<br><br>**Tip:** As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience.<br>**Default:** Member's default currency or USD. |
+| `currency` | enum | The publisher's currency.<br><br>**Warning:** This field can be set on `POST`, but it cannot be updated on `PUT`.<br><br>**Tip:** As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience.<br><br>**Default:** Member's default currency or USD. |
 | `visibility_profile_id` | int | The ID of the visibility profile assigned directly to the publisher. For more details about visibility profiles, see the [Visibility Profile Service](visibility-profile-service.md). |
 | `billing_internal_user` | int |  |
-| `labels` | array of objects | The optional labels assigned to the publisher. Currently, two labels are available: "Salesperson" and "Account Manager". See Labels below for more details.<br><br>**Note:**<br>You can report on publisher labels with the [Network Analytics](network-analytics.md) report. For example, if you use the `"Salesperson"` label to specify the name of the salesperson responsible for each publisher, you could run the Network Analytics report filtered by `"salesperson_for_publisher"` to focus on the publishers that a particular salesperson is responsible for, or grouped by `"salesperson_for_publisher"` to rank the performance of your salespeople. |
-| `placements` | array of objects | The placements associated with the publisher, including the default placement that is created with the publisher. When you create additional placements, or publisher tags, with the [Placement Service](placement-service.md), you associate them with a publisher. For more details, see Placements below. |
+| `labels` | array of objects | The optional labels assigned to the publisher. Currently, two labels are available: `"Salesperson"` and `"Account Manager"`. For more details, see [Labels](#labels) below.<br><br>**Note:**<br>You can report on publisher labels with the [Network Analytics](network-analytics.md) report. For example, if you use the `"Salesperson"` label to specify the name of the salesperson responsible for each publisher, you could run the Network Analytics report filtered by `"salesperson_for_publisher"` to focus on the publishers that a particular salesperson is responsible for, or grouped by `"salesperson_for_publisher"` to rank the performance of your salespeople. |
+| `placements` | array of objects | The placements associated with the publisher, including the default placement that is created with the publisher. When you create additional placements, or publisher tags, with the [Placement Service](placement-service.md), you associate them with a publisher. For more details, see [Placements](#placements) below. |
 | `external_inv_codes` | array of objects | Some sellers use their own codes to break out their inventory more granularly than by Publisher > Site > Placement. This is done via the External Inventory Code Service. This field shows the external inventory codes associated with the publisher. |
 | `cpm_reselling_disabled` | boolean | **Read-only.** If `true`, we have detected impression issues on this publisher's inventory and has therefore set `"allow_cpm_external"` to `false`, preventing the reselling of the publisher's inventory on a CPM basis.<br>**Default:** `false` |
 | `cpc_reselling_disabled` | boolean | **Read-only.** If `true`, we have detected click issues on this publisher's inventory and has therefore set `"allow_cpc_external"` to `false`, preventing the reselling of the publisher's inventory on a CPC basis.<br>**Default:** `false` |
 | `platform_ops_notes` | string | **Read-only.** Notes about the disabling of CPM/CPC reselling. |
-| `pitbull_segment_id` | int | **Warning:** This field has been deprecated. |
-| `pitbull_segment_value` | int | **Warning:** This field has been deprecated. |
-| `publisher_brand_exceptions` | array of objects | An array of brand IDs. Creatives associated with these brand IDs will be allowed to serve on this publisher's page more than once per `/mtj` call. The brands that you add to this array will be appended to the array of brands in the `member_brand_exceptions` field of the [Member Service](member-service.md). For internal field definitions, see Publisher Brand Exceptions below.<br>**Required On:** `n/a` |
+| `pitbull_segment_id` | int | **Warning:** This field has been **deprecated**. |
+| `pitbull_segment_value` | int | **Warning:** This field has been **deprecated**. |
+| `publisher_brand_exceptions` | array of objects | An array of brand IDs. Creatives associated with these brand IDs will be allowed to serve on this publisher's page more than once per `/mtj` call. The brands that you add to this array will be appended to the array of brands in the `member_brand_exceptions` field of the [Member Service](member-service.md). For internal field definitions, see [Publisher Brand Exceptions](#publisher-brand-exceptions) below.<br>**Required On:** `n/a` |
 | `seller_page_cap_enabled` | boolean | This field **must** be set in order to be able to enable page caps for this publisher. Page caps keep creatives associated with a given brand from serving more than once per page load, except for those brand IDs added to the `publisher_brand_exceptions` array on this service or the `member_brand_exceptions` array on the [Member Service](member-service.md).<br><br>**Note:** This setting activates the function but does not make the setting on the UI visible. To see this setting in the UI, contact your representative.<br><br>**Required On:** `n/a` |
-| `inventory_relationship` | enum | The relationship of the inventory to the publisher. Possible values:<br>- `unknown`<br>- `owned_operated`<br>- `direct`<br>- `indirect_single_publisher`<br>- `indirect_multiple_publishers`<br><br>**Note:**<br>If both `is_oo` and `inventory_relationship` are specified, `inventory_relationship` will overwrite `is_oo` with the appropriate value based on the relationship.<br>**Required On:** `POST`/`PUT` |
+| `inventory_relationship` | enum | The relationship of the inventory to the publisher. Possible values:<br>- `unknown`<br>- `owned_operated`<br>- `direct`<br>- `indirect_single_publisher`<br>- `indirect_multiple_publishers`<br><br>**Note:**<br>If both `is_oo` and `inventory_relationship` are specified, `inventory_relationship` will overwrite `is_oo` with the appropriate value based on the relationship.<br><br>**Required On:** `POST`/`PUT` |
 | `inventory_source` | enum | The source of the inventory. Possible values:<br>- `other`<br>- `rubicon`<br>- `openx`<br>- `pubmatic`<br>- `aol`<br><br>If `inventory_source` is set to `other`, then `inventory_source_name` must be completed. |
 | `inventory_source_name` | string | Publisher (source) name for `indirect_single_publisher`.<br>**Required On:** `POST`/`PUT` for publishers whose `inventory_relationship` is set to `indirect_single_publisher`. |
 | `contact` | object | An array of objects containing contact information for this publisher.<br>**Required On:** `POST`/`PUT` |
@@ -126,13 +126,13 @@ curl -b cookies -c cookies "https://api.appnexus.com/publisher?id=2,3,5,8,13,21&
 
 ### Stats
 
-The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead.
+The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Report Service](report-service.md) to obtain statistical information instead.
 
 ## Examples
 
 ### Add a new publisher
 
-1. Create a JSON file with the required fields for a publisher.
+Create a JSON file with the required fields for a publisher.
 
 > [!NOTE]
 >

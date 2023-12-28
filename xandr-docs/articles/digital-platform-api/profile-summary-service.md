@@ -13,7 +13,7 @@ The Profile Summary service is a **read-only** service. Given a line item ID an
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/profile-summary?entity_type=line_item&entity_id=12345&summary_fields=postal_code,city,region](https://api.appnexus.com/profile-summary?entity_type=line_item&entity_id=12345&summary_fields=postal_code,city,region) | For a specific line item, view the IDs of campaigns that are targeting specific target types.<br><br>**Note:**<br>In the example above, the `entity_id` is the ID of the line item for which you want to view this summary and `summary_fields` is the types of targeting that you want to include in the summary. Possible values for `summary_fields`: `postal code`, `city`, `region`, `dma`, `country`, `domain`, `domain_list`, `segment`, `age`, `gender`, da`ypart. You can combine up to 10 of these values in a comma-separated list.  |
+| `GET` | [https://api.appnexus.com/profile-summary?entity_type=line_item&entity_id=12345&summary_fields=postal_code,city,region](https://api.appnexus.com/profile-summary?entity_type=line_item&entity_id=12345&summary_fields=postal_code,city,region) | For a specific line item, view the IDs of campaigns that are targeting specific target types.<br><br>**Note:**<br>In the example above, the `entity_id` is the ID of the line item for which you want to view this summary and `summary_fields` is the types of targeting that you want to include in the summary. Possible values for `summary_fields`: `postal code`, `city`, `region`, `dma`, `country`, `domain`, `domain_list`, `segment`, `age`, `gender`, `daypart`. You can combine up to 10 of these values in a comma-separated list.  |
 
 ## JSON fields
 

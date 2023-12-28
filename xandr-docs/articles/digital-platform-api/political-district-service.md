@@ -55,7 +55,7 @@ The `postal_codes` object contains the following fields:
 | `id` | int | The ID of the postal code. |
 | `code` | string | The postal code, which can be an alphanumeric string containing 5 characters. |
 | `country_id` | int | The ID associated with the country. |
-| `active` | string | The status of the postal code, which highlights if the postal code is active/inactive. |
+| `active` | string | The status of the postal code, which highlights if the postal code is `active`/`inactive`. |
 | `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. To retrieve a complete list of country codes, see [Country Service](country-service.md). |
 | `country_name` | string | The name of the country to which the city belongs. To retrieve a complete list of country names, see [Country Service](country-service.md). |
 
@@ -68,12 +68,12 @@ The `political_district` object contains the following fields:
 | `id` | int | The ID of the political district. |
 | `district_name` | string | The name of the political district. |
 | `district_type_id` | int | The type of district. Possible values are:<br>- `Congress`<br>- `State House`<br>- `State Senate` |
-| `region_id` | int | The `region_id` is obtained by the API, from the region_code which is passed in the request header. |
+| `region_id` | int | The `region_id` is obtained by the API, from the `region_code` which is passed in the request header. |
 | `postal_code_list_id` | int | The ID of postal code list. |
 | `created_on` | timestamp | **Read Only.**<br>The time of creation of the political district list. |
 | `last_modified` | timestamp | **Read Only.**<br>The time of last modification made to the political district list. |
 | `country_id` | int | The ID associated with the country. |
-| `region_code` | string | The region_code is present in the request header which is used by the API to find the `region_id`. |
+| `region_code` | string | The `region_code` is present in the request header which is used by the API to find the `region_id`. |
 
 ## Examples
 

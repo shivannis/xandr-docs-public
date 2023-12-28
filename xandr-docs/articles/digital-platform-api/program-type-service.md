@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Program Type service
+# Digital Platform API - Program Type service
 
 Use the read-only Program-Type Service to see what video content program types are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 

@@ -1,6 +1,6 @@
 ---
 title: Primary Ad Server Service
-description: Explore the Primary Ad Server service, allowing the creation, updating and deleting of primary ad servers.
+description: Explore the Primary Ad Server service, enabling the creation, updating, and deletion of primary ad servers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -25,7 +25,7 @@ partners, usually supply-side platforms (SSPs) like, create adapters for Prebid 
 
 Returns the primary ad servers.
 
-Example call using cURL.
+Example call using cURL:
 
 ```
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/primary-adserver
@@ -72,7 +72,7 @@ curl -d @adserver.json -X POST --header "Content-Type: application/json" 'https:
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the configuration. |
 
-Example JSON file
+Example JSON file:
 
 ```
 {
@@ -85,7 +85,7 @@ Example JSON file
 
 On success, the created ad server object will be returned.
 
-## PUT
+## `PUT`
 
 Enables updating of an existing ad server object. Append the ad server id as the last path component of the URL.
 
@@ -95,7 +95,7 @@ Example call using cURL:
 curl -d @adserver-update.json -X PUT --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/adserver/{id}'
 ```
 
-### PUT: Parameters
+### `PUT`: Parameters
 
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -110,26 +110,26 @@ Example JSON file:
             
 ```
 
-### PUT: Response
+### `PUT`: Response
 
 On successful response, the updated ad server object will be returned.
 
-## DELETE
+## `DELETE`
 
 Enables deletion of all or an existing ad server object. Append the ad server id as the last path component of the URL.
 
-Example call using curl to delete all ad server objects:
+Example call using cURL to delete all ad server objects:
 
 ```
 curl  -X DELETE --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/adserver'
 ```
 
-Example call using curl to delete an existing ad server object:
+Example call using cURL to delete an existing ad server object:
 
 ```
 curl  -X DELETE --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/adserver/{id}'
 ```
 
-### DELETE: Response
+### `DELETE`: Response
 
 A successful deletion notification object.

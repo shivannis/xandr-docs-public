@@ -38,7 +38,7 @@ The Postal Code List Service enables user:
 |:---|:---|:---|
 | `id` | int | The ID of a postal code list.<br>**Required On:** `PUT` |
 | `name` | string | The name of the postal code list.<br>**Required On:** `POST` |
-| `postal_codes` | array of objects | The postal codes that are to be included in the postal code list. The postal code IDs of the postal codes are included here. For example, any of the below [formats](#postal_codes-formats) can be used.<br><br>**Note:**<br>For USA, you can target the full 9 digit postal code (also known as zip +4). For example, see [below](#postal_codes-example).<br><br> **Required On:** `POST` and `PUT`. |
+| `postal_codes` | array of objects | The postal codes that are to be included in the postal code list. The postal code IDs of the postal codes are included here. For example, see the [formats](#postal_codes-formats) that can be used.<br><br>**Note:**<br>For USA, you can target the full 9 digit postal code (also known as zip +4). For example, see [below](#postal_codes-example).<br><br> **Required On:** `POST` and `PUT`. |
 | `last_modified` | timestamp | Time of last modification made to the postal code list.<br>It's a **Read Only** field. |
 | `created_on` | timestamp | Time of creation of the postal code list.<br>It's a **Read Only** field. |
 | `line_items` | array of objects | The line items that are targeting the postal code list (line items that have a profile attached to them and that profile is targeting the postal code list).<br>It's a **Read Only** field.<br>For example, see [below](#line_items-example). |

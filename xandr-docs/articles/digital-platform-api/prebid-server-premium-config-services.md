@@ -1,6 +1,6 @@
 ---
 title: Prebid Server Premium Config Services
-description: In this article, discover pages providing guidance on utilizing different API Services related to Prebid Server Premium (PSP).
+description: In this article, discover pages providing guidance on utilizing different API services related to Prebid Server Premium (PSP).
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

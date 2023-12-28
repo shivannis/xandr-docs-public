@@ -13,7 +13,7 @@ The Prebid Server Premium Seller Analytics Report contains performance informati
 - Track lift on inventory you've opened up to header bidding demand.
 - Monitor the health and efficiency of your Prebid Server Premium partners and placements.
 
-For information on other reports via API, see [Report Service](report-service.md). For information on accessing data via UI, see [Reporting Guide](../monetize/reporting-guide.md) for Monetize and [Prebid Server Premium Seller AnalyticsReport](../monetize/prebid-server-premium-seller-analytics.md).
+For information on other reports via API, see [Report Service](report-service.md). For information on accessing data via UI, see [Reporting Guide](../monetize/reporting-guide.md) for Microsoft Monetize and [Prebid Server Premium Seller AnalyticsReport](../monetize/prebid-server-premium-seller-analytics.md).
 
 ## Time frame
 

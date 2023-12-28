@@ -23,7 +23,7 @@ the database since the last call that you made to the service, make sure to use 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/postal-code](https://api.appnexus.com/postal-code) | View all postal codes using pagination. |
+| `GET` | [https://api.appnexus.com/postal-code](https://api.appnexus.com/postal-code) | View all postal codes using [pagination](05---throttling-pagination-and-filtering.md). |
 | `GET`  | - [https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED)<br>- [https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED) | View all postal codes since last modified. |
 | `GET` | [https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE](https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE) | View postal codes in a specific country. |
 | `GET` | [https://api.appnexus.com/postal-code/meta](https://api.appnexus.com/postal-code/meta) | Find out which fields you can filter and sort by. |

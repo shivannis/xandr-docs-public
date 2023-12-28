@@ -11,7 +11,7 @@ The Prebid Server Premium (PSP) Health Analytics Report allows users to analyze 
 configured Demand Partners. This is most useful in troubleshooting known issues and proactively identifying optimization opportunities.
 
 > [!NOTE]
-> The dashboard is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Prebid Server Premium Seller Analytics Report](../monetize/prebid-server-premium-seller-analytics.md) and other [Monetize reports](../monetize/reporting-guide.md) should be used for those purposes.
+> The dashboard is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Prebid Server Premium Seller Analytics Report](../monetize/prebid-server-premium-seller-analytics.md) and other [Microsoft Monetize reports](../monetize/reporting-guide.md) should be used for those purposes.
 
 ## Time frame
 
@@ -79,8 +79,8 @@ Data retention period for this report is 99 days.
 | `demand_partner_id` | int | yes | `9645` | The ID of the partner to which the request was sent and from which the response (if any) was received. |
 | `demand_partner_name` | string | no | `"PubMatic (PSP)"` | The name of the partner to which the request was sent and from which the response (if any) was received. |
 | `demand_partner` | string | no | `"PubMatic (PSP) (9645)"` | A string consisting of the demand partner name and ID. |
-| `bid_error_type` | int | yes | `21` | The ID of the category of error related to the bid response. For more detail, see the Error Types table below. |
-| `bid_error_type_name` | string | no | `"NO_BID_PRICE"` | The category of error related to the bid response. For more detail, see the Error Types table below. |
+| `bid_error_type` | int | yes | `21` | The ID of the category of error related to the bid response. For more detail, see the [Error Types](#error-types) table below. |
+| `bid_error_type_name` | string | no | `"NO_BID_PRICE"` | The category of error related to the bid response. For more detail, see the [Error Types](#error-types) table below. |
 | `external_creative_id` | string | yes | `987654` | The external ID associated with the creative served. |
 | `inventory_url` | string | no | `"myurl.com/(1234)"` | The mapped URL from the detected domain on the ad call and the ID in parentheses. |
 | `inventory_url_id` | string | yes | `1234` | The mapped URL ID from the detected domain on the ad call. |
@@ -124,7 +124,7 @@ Data retention period for this report is 99 days.
 | 23 | NEC_ERROR | The bid was rejected during the Xandr auction process. | The bid was successfully received from the Demand Partner, but the bid was rejected within the Xandr auction. The Seller can use the Seller Bid Error report to diagnose specific rejections occurring on their supply. |
 | 24 | CREATIVE_WRONG_SIZE | The Demand Partner is bidding with a creative size that doesn't match the tag size. | The Seller should review the creative size and notify the Demand Partner regarding the mismatch. |
 | 70 | MEMBER_NOT_ELIGIBLE | The Seller's settings are blocking the Buyer's member from participating in the auction. | The Seller should notify the Buyer that they are currently blocked from bidding. |
-| 84 | CATEGORY_REQ_WHITELIST | The category of the creative is sensitive and requires addition to the allowlist. | The Seller should work with the Buyer to determine if the creative warrants addition to the allowlist. |
+| 84 | CATEGORY_REQ_ALLOWLIST | The category of the creative is sensitive and requires addition to the allowlist. | The Seller should work with the Buyer to determine if the creative warrants addition to the allowlist. |
 | 132 | DYN_CREATIVE_INCOMPATIBLE_TYPE | Dynamic ad-markup bidding is not supported for certain PSP Demand Partners that require client-side rendering when a Seller doesn't support it. | The Seller should correct their setup to align with client-side rendering requirements, on both supply and PSP sides. |
 | 150 | SELLER_MEMBER_NO_CONTRACT | The Seller's contract isn't set up properly. | The Seller should work with Xandr to remedy the contract issue. |
 

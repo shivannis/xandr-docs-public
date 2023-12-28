@@ -19,7 +19,7 @@ This report requires that a publisher ID be specified as part of the URL as foll
 https://api.appnexus.com/report?publisher_id=PUBLISHER_ID
 ```
 
-The `time_granularity` of the data is `daily`. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [example](#example) below.
+The `time_granularity` of the data is `daily`. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [example](#examples) below.
 
 ## Time frame
 
