@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Availability of Reporting Data
-description : Learn how and when Reporting Data is accessible.
+title: Microsoft Monetize - Availability of Reporting Data
+description: Learn how and when Reporting Data is accessible.
 ms.date: 10/28/2023
 ---
 

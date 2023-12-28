@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Bidding Priority
-description : This page covers descriptions of methods to control the Bidding Priority.
+title: Bidding Priority
+description: This page covers descriptions of methods to control the Bidding Priority.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Bidding priority
+# Bidding priority
 
 When managing inventory on the Xandr platform,
 you have several methods of controlling bidding priority.

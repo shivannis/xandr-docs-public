@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Automatic Archiving of Buy-Side Objects
-description : Learn the benefits of archiving campaigns.
+title: Automatic Archiving of Buy-Side Objects
+description: Learn the benefits of archiving campaigns.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Automatic archiving of Buy-Side objects
+# Automatic archiving of Buy-Side objects
 
 Xandr automatically archives campaigns that have
 been identified as "stale" or unused. Archiving reduces the overhead of

@@ -1,6 +1,6 @@
 ---
-title :  Microsoft Monetize - Auditing Creatives
-description : Learn how Xandr does auditing of creatives before its run on real-time inventory.
+title:  Microsoft Monetize - Auditing Creatives
+description: Learn how Xandr does auditing of creatives before its run on real-time inventory.
 ms.date: 10/28/2023
 ---
 

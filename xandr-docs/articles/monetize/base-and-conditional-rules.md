@@ -1,6 +1,6 @@
 ---
-title :  Microsoft Monetize - Base and Conditional Rules
-description : Learn about Conditional and Base rules in this page. 
+title:  Microsoft Monetize - Base and Conditional Rules
+description: Learn about Conditional and Base rules in this page. 
 ms.date: 10/28/2023
 ---
 
