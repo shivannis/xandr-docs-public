@@ -1,23 +1,11 @@
 ---
-Title : Reporting Services
-Description : - <a
+title: Reporting Services
+description: In this article, explore the two API reporting services.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="report-service.md"
 ---
 
+# Reporting services
 
-# Reporting Services
-
-
-
-- <a
-  href="report-service.md"
-  class="xref" target="_blank">Report Service</a>
-- <a
-  href="saved-report-service.md"
-  class="xref" target="_blank">Saved Report Service</a>
-
-
-
-
+- [Report Service](report-service.md)
+- [Saved Report Service](saved-report-service.md)

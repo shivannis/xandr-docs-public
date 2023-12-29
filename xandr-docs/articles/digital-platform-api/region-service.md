@@ -1,219 +1,43 @@
 ---
-Title : Region Service
-Description : The read-only Region Service allows you to see information about the
+title: Region Service
+description: Explore the read-only Region service to view information about the regions and states registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-regions and states registered in the
-Xandr system, including the country to which
-each region/state belongs. You can use this service to retrieve region
 ---
 
+# Region service
 
-# Region Service
-
-
-
-The read-only Region Service allows you to see information about the
-regions and states registered in the
-Xandr system, including the country to which
-each region/state belongs. You can use this service to retrieve region
-IDs for targeting in campaigns (see `region_targets` in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>).
-
-
+The read-only Region Service allows you to see information about the regions and states registered in the Xandr system, including the country to which each region/state belongs. You can use this service to retrieve region IDs for targeting in campaigns (see `region_targets` in the [Profile Service](profile-service.md)).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000033b5__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000033b5__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000033b5__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__2"><a
-href="https://api.appnexus.com/region" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/region</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__3">View
-all regions</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__2"><a
-href="https://api.appnexus.com/region?id=ID" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/region?id=ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__3">View
-a specific region by ID</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__2"><a
-href="https://api.appnexus.com/region?name=NAME" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/region?name=NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__3">View
-a specific region by NAME</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__2"><a
-href="https://api.appnexus.com/region?code=CODE" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/region?code=CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__3">View
-a specific region by CODE</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__2"><a
-href="https://api.appnexus.com/region/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/region/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/region](https://api.appnexus.com/region) | View all regions. |
+| `GET` | [https://api.appnexus.com/region?id=ID](https://api.appnexus.com/region?id=ID) | View a specific region by ID. |
+| `GET` | [https://api.appnexus.com/region?name=NAME](https://api.appnexus.com/region?name=NAME) | View a specific region by NAME. |
+| `GET` | [https://api.appnexus.com/region?code=CODE](https://api.appnexus.com/region?code=CODE) | View a specific region by CODE. |
+| `GET` | [https://api.appnexus.com/region/meta](https://api.appnexus.com/region/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000033b5__entry__19"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000033b5__entry__20"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000033b5__entry__21"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">If
-true, the region is available for targeting. If false, there is no
-geolocation data for the region and so delivery is not possible. Note
-that regions may occasionally become active or inactive based on changes
-to IP addressing or changes in geolocation technologies, as well as
-based on changes to geographical borders.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__21"><strong>Deprecated</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-<a href="https://www.maxmind.com/en/iso3166" class="xref"
-target="_blank">ISO code</a> for the country to which the region
-belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country codes.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-ID of the country to which the region belongs.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-name of the country to which the region belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country names.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-ID of the region.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">iso_3166_2</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-<a href="https://en.wikipedia.org/wiki/ISO_3166-2" class="xref"
-target="_blank">ISO 3166-2</a> code for the region.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000033b5__entry__21">The
-name of the region.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__19"><code
-class="ph codeph">sales_tax_rate_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__20">float</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000033b5__entry__21">Sales tax for member in region acting
-as buyer.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `active` | Boolean | If `true`, the region is available for targeting. If `false`, there is no geolocation data for the region and so delivery is not possible. <br><br>**Note:** Regions may occasionally become `active` or `inactive` based on changes to IP addressing or changes in geolocation technologies, as well as based on changes to geographical borders. |
+| `code` | string | **Deprecated.** |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_id` | int | The ID of the country to which the region belongs. |
+| `country_name` | string | The name of the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `id` | int | The ID of the region. |
+| `iso_3166_2` | string | The [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) code for the region. |
+| `name` | string | The name of the region. |
+| `sales_tax_rate_pct` | float | Sales tax for member in region acting as buyer. |
 
 ## Examples
 
-**View all regions in Germany**
+### View all regions in Germany
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/region?country_code=DE'
 {
     "response": {
@@ -387,9 +211,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/region?country_code=DE'
 }
 ```
 
-**View all regions in Germany and France**
+### View all regions in Germany and France
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/region?country_code=DE,FR'
 {
     "response": {
@@ -475,9 +299,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/region?country_code=DE,FR
 }
 ```
 
-**View all regions that contain "California" in their names**
+### View all regions that contain `"California"` in their names
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/region?like_name=California'
 {
     "response": {
@@ -520,9 +344,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/region?like_name=Californ
     }
 }
 ```
-
-
-
-
-
-
