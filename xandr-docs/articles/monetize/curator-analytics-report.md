@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Curator Analytics Report
-description : Learn how Curator Analytics Report provides insight to curators into how money is flowing from demand to supply within their curated marketplace. 
+title: Microsoft Monetize - Curator Analytics Report
+description: Learn how Curator Analytics Report provides insight to curators into how money is flowing from demand to supply within their curated marketplace. 
 ms.date: 10/28/2023
 ---
 

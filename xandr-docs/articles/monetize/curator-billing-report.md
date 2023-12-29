@@ -1,6 +1,6 @@
 ---
-title : Curator Billing Report
-description : Learn how Curator Billing Report allows you to manage internal invoicing for your curation activities.  
+title: Curator Billing Report
+description: Learn how Curator Billing Report allows you to manage internal invoicing for your curation activities.  
 ms.date: 10/28/2023
 ---
 

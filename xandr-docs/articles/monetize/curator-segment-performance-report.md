@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Curator Segment Performance Report
-description : Learn how the Curator Segment Performance Report is useful to curators.  
+title: Microsoft Monetize - Curator Segment Performance Report
+description: Learn how the Curator Segment Performance Report is useful to curators.  
 ms.date: 10/28/2023
 ---
 

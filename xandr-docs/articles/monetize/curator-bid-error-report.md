@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Curator Bid Error Report
-description : Learn how Curator Bid Error Report helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform.  
+title: Microsoft Monetize - Curator Bid Error Report
+description: Learn how Curator Bid Error Report helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform.  
 ms.date: 10/28/2023
 ---
 

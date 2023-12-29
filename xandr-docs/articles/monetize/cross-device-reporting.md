@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Reporting (Cross-Device)
-description : This page deals with Cross-Device Reporting that is present in the NetworkAnalytics report, the Device Analytics report, the Data Usage report, as well as on the Analytics tab for the augmented line item. 
+title: Microsoft Monetize - Reporting (Cross-Device)
+description: This page deals with Cross-Device Reporting that is present in the NetworkAnalytics report, the Device Analytics report, the Data Usage report, as well as on the Analytics tab for the augmented line item. 
 ms.date: 10/28/2023
 ---
 

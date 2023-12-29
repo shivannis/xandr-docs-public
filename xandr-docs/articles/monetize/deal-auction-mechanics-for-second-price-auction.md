@@ -1,6 +1,6 @@
 ---
-title : Deal Auction Mechanics for Second-Price Auction
-description : This page deals with different types of auctions with examples.
+title: Deal Auction Mechanics for Second-Price Auction
+description: This page deals with different types of auctions with examples.
 ms.date: 10/28/2023
 ---
 
@@ -150,10 +150,9 @@ price (minus relevant fees).
 Yield management biases will still be applied to deal bids, even if you
 have set a price for your deal.
 
-## Related topic
+## Related topics
 
 - [Buying Deals](buying-deals.md)
 - [Selling Deals](selling-deals.md)
 - [Create a Floor Rule](create-a-floor-rule.md)
-
 

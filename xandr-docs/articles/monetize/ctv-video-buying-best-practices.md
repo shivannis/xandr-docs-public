@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - CTV Video Buying Best Practices
-description : This topic describes some key best practices for buying ad inventory on connected TV (CTV) devices.
+title: Microsoft Monetize - CTV Video Buying Best Practices
+description: This topic describes some key best practices for buying ad inventory on connected TV (CTV) devices.
 ms.date: 10/28/2023
 ---
 

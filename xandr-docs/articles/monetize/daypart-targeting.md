@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Daypart Targeting
-description : Learn how you can target users based on the day and time when they see impressions.
+title: Microsoft Monetize - Daypart Targeting
+description: Learn how you can target users based on the day and time when they see impressions.
 ms.date: 10/28/2023
 ---
 

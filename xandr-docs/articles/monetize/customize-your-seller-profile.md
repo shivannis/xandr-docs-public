@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Customize Your Seller Profile
-description : Learn how you can Customize your seller profile on the Partner Center screen. 
+title: Microsoft Monetize - Customize Your Seller Profile
+description: Learn how you can Customize your seller profile on the Partner Center screen. 
 ms.date: 10/28/2023
 ---
 

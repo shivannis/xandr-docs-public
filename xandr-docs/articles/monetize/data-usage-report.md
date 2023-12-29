@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Data Usage Report
-description : Learn what is a Data Usage Report and what information it provides.
+title: Microsoft Monetize - Data Usage Report
+description: Learn what is a Data Usage Report and what information it provides.
 ms.date: 10/28/2023
 ---
 
@@ -163,4 +163,4 @@ Follow these steps to run your report.
 
 ## Related topic
 
-- [Network Reporting](network-reporting.md)
+   [Network Reporting](network-reporting.md)

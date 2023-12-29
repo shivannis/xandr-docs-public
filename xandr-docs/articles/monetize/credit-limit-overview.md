@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Credit Limit Overview
-description : This page deals with Credit Limit Overview. Credit Limit is defined as the maximum allowed exposure on your account. 
+title: Microsoft Monetize - Credit Limit Overview
+description: This page deals with Credit Limit Overview. Credit Limit is defined as the maximum allowed exposure on your account. 
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
-title : Daily Pacing
-description : Learn when enabled how Daily Pacing helps campaigns spend their budgets fairly evenly over the day.
+title: Daily Pacing
+description: Learn when enabled how Daily Pacing helps campaigns spend their budgets fairly evenly over the day.
 ms.date: 10/28/2023
 ---
 

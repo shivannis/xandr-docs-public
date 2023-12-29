@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - FAQs on Deal Sync with DV360 
-description : Learn FAQs on Deal Synchronization with DV360. 
+title: Microsoft Monetize - FAQs on Deal Sync with DV360 
+description: Learn FAQs on Deal Synchronization with DV360. 
 ms.date: 10/28/2023
 ---
 

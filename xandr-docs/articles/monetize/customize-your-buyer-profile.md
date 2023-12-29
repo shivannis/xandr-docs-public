@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Customize Your Buyer Profile
-description : Learn how to customize your Buyer Profile on the Partner Center screen. 
+title: Microsoft Monetize - Customize Your Buyer Profile
+description: Learn how to customize your Buyer Profile on the Partner Center screen. 
 ms.date: 10/28/2023
 ---
 
@@ -62,7 +62,7 @@ When all changes have been made, click
 changes are recorded and you are returned to the
 **Partner Center** screen.
 
-## Related Topic
+## Related topics
 
 - [Managing Relationships with Sellers](managing-relationships-with-sellers.md)
 - [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md)

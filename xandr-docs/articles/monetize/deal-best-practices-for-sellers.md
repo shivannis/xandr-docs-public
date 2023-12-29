@@ -1,6 +1,6 @@
 ---
-title : Deal Best Practices for Sellers
-description : Learn about best practices for sellers using the deal functionality.
+title: Deal Best Practices for Sellers
+description: Learn about best practices for sellers using the deal functionality.
 ms.date: 10/28/2023
 ---
 

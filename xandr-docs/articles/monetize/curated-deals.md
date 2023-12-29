@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Curated Deals
-description : This page covers concepts on Curated Deals and addresses common questions associated with it.
+title: Microsoft Monetize - Curated Deals
+description: This page covers concepts on Curated Deals and addresses common questions associated with it.
 ms.date: 10/28/2023
 ---
 
@@ -85,9 +85,3 @@ account management team.
 
 Please reach out to your Xandr account manager
 to learn more about Microsoft Curate.
-
-
-
-
-
-

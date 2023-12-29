@@ -1,6 +1,6 @@
 ---
-title : Deal Best Practices for Buyers
-description : Learn about some best practices for buyers using the new deal functionality. 
+title: Deal Best Practices for Buyers
+description: Learn about some best practices for buyers using the new deal functionality. 
 ms.date: 10/28/2023
 ---
 
