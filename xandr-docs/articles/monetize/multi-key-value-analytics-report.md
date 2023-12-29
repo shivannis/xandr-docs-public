@@ -76,7 +76,7 @@ report may, due to the amount of data being requested, fail before being complet
 - alter the way you structure your reports (if possible) so they do not
   include dates greater than 45 days ago.
 
-If you are frequently requesting Multi-Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](log-level-data/log-level-data-feeds.md) (LLD). See
+If you are frequently requesting Multi-Key Value Analytics reports which include dates longer than 45 days ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)(LLD). See
 [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md) for more details on how to alter your reports to avoid these issues.
 
 ## Data retention period

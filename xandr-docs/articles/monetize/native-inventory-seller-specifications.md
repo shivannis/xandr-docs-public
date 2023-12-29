@@ -35,7 +35,7 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 | AdYouLike |  |
 |---|---|
 | Member ID | 7664 |
-| Landing Page | https://support.adyoulike.com/ |
+| Landing Page | [https://support.adyoulike.com/](https://support.adyoulike.com/) |
 | Title | 60 character maximum |
 | Description | 200 character maximum |
 | Icon (sizes in pixels) | 300 pixels |

@@ -32,4 +32,4 @@ Third-party ad server publishers can use Native Assembly on the server side. Sin
 
 - [Configuring a Native Assembly](configuring-a-native-assembly.md)
 - [Working with Xandr's Seller Tag (AST)](working-with-seller-tag.md)
-- [Xandr Mobile SDKs](mobile-sdk/xandr-mobile-sdks.md)
+- [Xandr Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md)

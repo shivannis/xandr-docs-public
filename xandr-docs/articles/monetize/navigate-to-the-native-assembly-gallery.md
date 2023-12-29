@@ -1,8 +1,7 @@
 ---
-title : Navigate to the Native Assembly Gallery
-description : You can select from a variety of pre-configured native assemblies or
+title: Navigate to the Native Assembly Gallery
+description: You can select from a variety of pre-configured native assemblies or
 ms.date: 10/28/2023
-create your own directly from the Native Assembly Gallery.
 ---
 
 # Navigate to the native assembly gallery

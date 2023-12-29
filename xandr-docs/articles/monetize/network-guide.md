@@ -10,7 +10,7 @@ Microsoft Monetize is a sophisticated ad management technology platform with bot
 Network-level features that apply across all advertisers and publishers in your account. For details about the features for individual advertisers
 and publishers, see the [Buying Guide](buying-guide.md) and [Selling Guide](selling-guide.md)
 
-New to Microsoft Monetize? Check out our [Training: Microsoft Advertising's Learning Lab](training-resources/training-microsoft-advertising-learning-lab.md).
+New to Microsoft Monetize? Check out our [Training: Microsoft Advertising's Learning Lab](../training-resources/training-microsoft-advertising-learning-lab.md).
 
 ## In this guide - for buyers
 
