@@ -1,32 +1,30 @@
 ---
-Title : Deal Best Practices for Sellers
-Description : This page provides some basic best practices for sellers using deals.
+title: Deal Best Practices for Sellers
+description: Learn about best practices for sellers using the deal functionality.
 ms.date: 10/28/2023
 ---
 
 
-# Deal Best Practices for Sellers
-
-
+# Deal best practices for sellers
 
 This page provides some basic best practices for sellers using deals.
 
-Getting Started with Deals
+## Getting started with deals
 
-Start Slowly
+### Start slowly
 
 For sellers that are new to our deals feature, we recommend creating a
 few test deals with buyers you trust. Use and refine these test deals to
 learn what works best for you and your buyers before putting a lot of
 deals out in the market.
 
-When to Create a Deal
+### When to create a deal
 
 - Create a deal to provide a buyer with special privileges.
 - Create a deal to sell special access to premium inventory.
 - Create a deal to sell inventory in bulk for discounted rates.
 
-When NOT to Create a Deal
+### When NOT to create a deal
 
 Sometimes, your goal can be achieved with other tools in
 Monetize rather than a deal.
@@ -52,9 +50,9 @@ Monetize rather than a deal.
   for an equal or better price without targeting the deal you provided.
   This will lead the buyer to no longer trust your deals.
 
-Deal Setup
+## Deal setup
 
-Efficient Deal Management
+### Efficient deal management
 
 - We recommend assigning one person to oversee all deals. This will help
   you to:
@@ -66,7 +64,7 @@ Efficient Deal Management
   end date). End dates can be used for seasonal or time-sensitive type
   deals such as a Cyber Monday special.
 
-Setting Deal Pricing
+### Setting deal pricing
 
 Consider the right pricing for each deal to ensure maximum revenue while
 providing value to your buyers.
@@ -81,10 +79,8 @@ providing value to your buyers.
   where the buyer agrees to a spend goal or a deal created for strategic
   relationship purposes to reward or entice the buyer.
   
-
-  <b>Note:</b> For deals where the buyer
-  agrees to a spend goal in exchange for lower pricing, you can run
-  reports to check the buyer's pace toward the goal.
+  > [!NOTE]
+  > For deals where the buyer agrees to a spend goal in exchange for lower pricing, you can run reports to check the buyer's pace toward the goal.
 
   
 - Create a deal with no ask price when you are using a deal strictly to
@@ -95,25 +91,21 @@ providing value to your buyers.
   good way to allow external buyers to target a specific pool of your
   inventory.
 
-Selecting an Open or Private Auction
+### Selecting an open or private auction
 
 - We recommend creating open auction deals as often as possible to
   maintain market competition. An open auction is part of the regular
   RTB auction where the buyer competes with the larger pool of RTB
   buyers. Open auctions are used to easily allow the buyer to target the
   deal inventory without interfering with the pricing. For examples of
-  how an open auction works, see
-  <a href="deal-auction-mechanics.md" class="xref">Deal Auction
-  Mechanics</a>.
+  how an open auction works, see [Deal Auction Mechanics](deal-auction-mechanics.md).
 - We recommend using private auctions conservatively to maintain market
   competition and avoid overlapping private auction deals. In a private
   auction, the buyer will only compete with other buyers who have a
   private auction deal for the impression. If used conservatively,
   private auctions can command higher prices from buyers who will view
   the privilege as preferred treatment. For examples of how a private
-  auction works, see
-  <a href="deal-auction-mechanics.md" class="xref">Deal Auction
-  Mechanics</a>.
+  auction works, see [Deal Auction Mechanics](deal-auction-mechanics.md).
 - Buyers will not have any competition in a private auction deal if you
   can definitively confirm that no overlapping private auction deal
   exists for other buyers. If this is not the case, then set the buyer's
@@ -126,7 +118,7 @@ Selecting an Open or Private Auction
   you have private deals with 20 buyers for the same inventory, those 20
   buyers will compete for the inventory.
 
-Creating Deals that Deliver
+### Creating deals that deliver
 
 - High-volume deals are recommended. Similar to campaigns targeting
   small segments, deals that only apply to small segments will have low
@@ -140,12 +132,11 @@ Creating Deals that Deliver
 - Advise buyers against adding advanced targeting to deals campaigns, as
   this will narrow their campaign's reach.
 
-Creating Off-platform Deals
+### Creating off-platform deals
 
 - Work with off-platform buyers to identify the correct Partner Center
-  member with which to set up deals. Consider
-  <a href="partner-center-screen-seller-view.md" class="xref">Partner
-  Center Screen - Seller View</a> for easy retrieval in the future.
+  member with which to set up deals. Consider [Partner Center Screen - Seller View](partner-center-screen-seller-view.md)
+  for easy retrieval in the future.
 - If a buyer represented by a DSP doesn't have a member in
   Monetize, create your deal with the DSP's
   member instead. Restricting DSP deals by brand is recommended in order

@@ -1,22 +1,17 @@
 ---
-Title : Dates and Times in Reporting
-Description : This page explains how our reporting system handles time and date
+title: Microsoft Monetize - Dates and Times in Reporting
+description: Learn about reporting of time zones and daylight savings time in this page. 
 ms.date: 10/28/2023
-considerations such as time zones and daylight savings time. It also
 ---
 
 
-# Dates and Times in Reporting
-
-
-
-
+# Microsoft Monetize - Dates and times in reporting
 
 This page explains how our reporting system handles time and date
 considerations such as time zones and daylight savings time. It also
 describes how to change your member or advertiser's default time zone.
 
-Time Zones
+## Time zones
 
 Currently, most time zones for Monetize objects
 are set to Eastern U.S. time by default (UTC - 4 hours or UTC - 5 hours,
@@ -27,16 +22,13 @@ entire network/member, or for individual advertisers.
   **Timezone** menu (under
   **Basic**)
 - Billing data is always in
-  <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time"
-  class="xref" target="_blank">UTC</a>. However, you can always select
+  [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). However, you can always select
   the desired time zone when running a report.
 
-Member Time Zones
+## Member time zones
 
 To change your network member time zone, you must contact
-Xandr support or use the <a
-href="xandr-api/member-service.md"
-class="xref" target="_blank">Member Service API</a>. Please note that
+Xandr support or use the [Member Service API](../digital-platform-api/member-service.md). Please note that
 changing your member's time zone will **not** change the time zone for
 existing objects (e.g., line items). However, newly created objects will
 automatically inherit the member time zone (unless the advertiser has a
@@ -45,42 +37,30 @@ different time zone specified).
 To change the time zone for all existing objects in your account, change
 the time zone of each advertiser. This can be used to propagate a change
 to the member time zone to all of that advertiser's child objects. For
-instructions on how to change an advertiser's time zone, see
-<a href="create-an-advertiser.md" class="xref">Create an
-Advertiser</a>.
+instructions on how to change an advertiser's time zone, see [Create an Advertiser](create-an-advertiser.md).
 
-Advertiser Time Zones
+## Advertiser time zones
 
 Advertisers inherit the time zone of the member when they are first
 created, unless a different time zone is selected when they are created.
-For instructions on how to set an advertiser's time zone, see
-<a href="create-an-advertiser.md" class="xref">Create an
-Advertiser</a>.
+For instructions on how to set an advertiser's time zone, see [Create an Advertiser](create-an-advertiser.md).
 
 When you change an advertiser's time zone, you can choose to apply the
 change to existing child objects. New objects that are created after the
 change (line items, creatives) will inherit the parent advertiser's time
 zone.
 
-A Note on Eastern Daylight Time and Eastern Standard Time
+## A note on eastern daylight time and eastern standard time
 
 In our reporting system, ET (Eastern Time) will automatically take
-Daylight Saving Time into account. Eastern Daylight Time
-(<a href="http://en.wikipedia.org/wiki/Eastern_Daylight_Time"
-class="xref" target="_blank">EDT</a>) will always mean UTC - 4 hours.
+Daylight Saving Time into account. Eastern Daylight Time ([EDT](https://en.wikipedia.org/wiki/Eastern_Time_Zone#Eastern_Daylight_Time)) will always mean UTC - 4 hours.
 Eastern Standard Time
-(<a href="http://en.wikipedia.org/wiki/Eastern_Time_Zone" class="xref"
-target="_blank">EST</a>) will always mean UTC - 5 hours.
+([EST](https://en.wikipedia.org/wiki/Eastern_Time_Zone)) will always mean UTC - 5 hours.
 
-Daylight Savings and Reporting
+## Daylight savings and reporting
 
-
-
-<b>Important:</b> Certain regions have
-different naming conventions for annual time changes. For simplicity, we
-will refer to any such changes as Daylight Saving Time.
-
-
+> [!IMPORTANT]
+> Certain regions have different naming conventions for annual time changes. For simplicity, we will refer to any such changes as Daylight Saving Time.
 
 Daylight Saving Time (DST) changes can cause confusion around reporting
 results. This stems from the fact that these changes cause two days each
@@ -100,16 +80,10 @@ starting date/hour of the report, instead of grouping metrics for two
 separate hours into a single row (i.e., combining two time zone offsets
 in a single report).
 
+> [!NOTE]
+> Stats will switch to EST at the time of the change (November 4, 02:00 EDT), but changes may take up to a few hours to propagate. The required processing time is likely to result in a temporary discrepancy between Stats and ET reporting.
 
-
-<b>Note:</b> Stats will switch to EST at the
-time of the change (November 4, 02:00 EDT), but changes may take up to a
-few hours to propagate. The required processing time is likely to result
-in a temporary discrepancy between Stats and ET reporting.
-
-
-
-Example: Beginning of DST
+## Example: Beginning of DST
 
 Let's imagine that I took a trip in March, 2018 to visit an
 Xandr datacenter in Europe for a month. On March
@@ -120,7 +94,7 @@ that begins at 00:00 CET, I would see a "missing" hour at the end of the
 report, corresponding with 2018-03-25 23:00 CET (now 2018-03-26 00:00
 CEST).
 
-Example: End of DST
+## Example: End of DST
 
 Let's look at an example from New York City. On Sunday, November 4, 2018
 at 06:00 UTC, 02:00 EDT reverts to 01:00 EST. Therefore, November 4,
@@ -128,7 +102,7 @@ at 06:00 UTC, 02:00 EDT reverts to 01:00 EST. Therefore, November 4,
 change (2018-11-04) that begins at 00:00 EDT, I would see an extra hour
 (2018-11-05 00:00 EDT) at the end of the report.
 
-Further Complications of DST
+## Further complications of DST
 
 Different regions observe DST changes at different times each year.
 Additionally, certain sub-regions may not adhere to the policies of
@@ -145,27 +119,11 @@ Xandr reporting operates in hourly granularity.
 Therefore, a single day 05:30 UTC - 05:29 UTC will actually appear in
 reports as 05:00 UTC - 04:59 UTC.
 
+> [!NOTE]
+> To learn more about Daylight Saving Time and its impact on your region, you can read more on the [Time and Date site](https://www.timeanddate.com/time/dst/).
 
+## Related topics
 
-<b>Note:</b> To learn more about Daylight
-Saving Time and its impact on your region, you can read more on the
-<a href="http://www.timeanddate.com/time/dst/" class="xref"
-target="_blank">Time and Date site</a>.
-
-
-
-Related Topics
-
-- <a href="availability-of-reporting-data.md" class="xref">Availability
-  of Reporting Data</a>
-- <a href="dimensions-metrics-filtering-and-grouping.md"
-  class="xref">Dimensions, Metrics, Filtering, and Grouping</a>
-- <a
-  href="xandr-api/api-timezones.md"
-  class="xref" target="_blank">API Timezones</a>
-
-
-
-
-
-
+- [Availability of Reporting Data](availability-of-reporting-data.md)
+- [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
+- [API Timezones](../digital-platform-api/api-timezones.md)

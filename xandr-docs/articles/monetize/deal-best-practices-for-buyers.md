@@ -1,21 +1,18 @@
 ---
-Title : Deal Best Practices for Buyers
-Description : This page provides some basic best practices for buyers using the new
+title: Deal Best Practices for Buyers
+description: Learn about some best practices for buyers using the new deal functionality. 
 ms.date: 10/28/2023
-deal functionality.
 ---
 
 
-# Deal Best Practices for Buyers
-
-
+# Deal best practices for buyers
 
 This page provides some basic best practices for buyers using the new
 deal functionality.
 
-Getting Started with Deals
+## Getting started with deals
 
-Start slow
+### Start slow
 
 For buyers that are new to our deals feature,
 Xandr recommends working with sellers you trust
@@ -23,9 +20,9 @@ to develop a few test deals. Use and refine these test deals to learn
 what works best for you and your sellers before targeting a creating a
 lot of ad campaigns that target deals.
 
-Deal Delivery
+## Deal delivery
 
-Deal delivery expectations
+### Deal delivery expectations
 
 - A deal does not guarantee delivery. Be prepared for low-reach deals.
 - Avoid setting your end client's expectations about delivery on any
@@ -39,7 +36,7 @@ Deal delivery expectations
   deals to multiple buyers. Therefore, as with all other RTB, there are
   other buyers competing for the deal inventory.
 
-Targeting deals so that they deliver
+### Targeting deals so that they deliver
 
 - If you are not winning as much of the deal inventory as you would
   like, bid higher to beat the other buyers. Or include more deals in
@@ -61,7 +58,8 @@ Targeting deals so that they deliver
   auction. However, bidding this amount does not mean that you will win
   the
   auction.
-  ![Min Bid](media/sugg-min-bid.png)
+
+:::image type="content" source="media/sugg-min-bid.png" alt-text="Screenshot of Min Bid .":::
  
 - Deal impressions face competition from other buyers. In order to win
   the impression, your bid needs to be both higher than the deal ask
@@ -71,18 +69,16 @@ Targeting deals so that they deliver
   budgeting, pacing, or other issues that are not related to the fact
   that you are targeting a deal.
 
-Identifying High Performance Deals
+### Identifying high performance deals
 
 Target multiple deals within a single line item or
-campaign and then use
-<a href="buy-side-reporting-on-deals.md" class="xref">Buy-Side
-Reporting on Deals</a> to see which deals perform best. Then create a
+campaign and then use [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md) to see which deals perform best. Then create a
 new line item or campaign to target the deals
 that work best.
 
-Deals with External Sellers
+## Deals with external sellers
 
-Rubicon REVV Connect
+### Rubicon REVV connect
 
 - Each deal ID can only be associated with a single deal price. Enter
   one price when setting up a deal in REVV Connect. If multiple prices
@@ -99,13 +95,9 @@ Rubicon REVV Connect
   updated daily exchange rates. It will remain static and may drift from
   the agreed-upon price in the foreign currency.
 
-PubMatic
+### PubMatic
 
 - Each deal ID can only be associated with a single buyer. Enter one
   buyer member when setting up a deal in PubMatic. If multiple members
   are entered, Xandr will only map the deal to
   the first buyer member.
-
-
-
-

@@ -1,30 +1,20 @@
 ---
-Title : Deal Auction Mechanics for Second-Price Auction
-Description : A deal auction can be **open** or **private**, depending on how the
+title: Deal Auction Mechanics for Second-Price Auction
+description: This page deals with different types of auctions with examples.
 ms.date: 10/28/2023
-seller defined the deal. This page explains how these different types of
 ---
 
 
-# Deal Auction Mechanics for Second-Price Auction
-
-
+# Deal auction mechanics for second-price auction
 
 A deal auction can be **open** or **private**, depending on how the
 seller defined the deal. This page explains how these different types of
 auctions work and provides examples.
 
+> [!NOTE]
+> The explanations on this page apply only to deals with Microsoft Monetize sellers, not to deals with external supply partners. For information about an external supply partner's deal types or auction mechanics, contact the external supply partner directly.
 
-
-<b>Note:</b> The explanations on this page
-apply only to deals with Microsoft Monetize sellers,
-not to deals with external supply partners. For information about an
-external supply partner's deal types or auction mechanics, contact the
-external supply partner directly.
-
-
-
-Open Auctions
+## Open auctions
 
 When a piece of inventory included in an "open auction" deal comes up
 for auction, buyers targeting the deal, and buyers targeting the
@@ -40,62 +30,39 @@ inventory via other means, compete for the impression.
   the auction, paying either the second-highest bid (plus one cent) or
   ECP, whichever is higher.
 
+> [!IMPORTANT]
+> **ECP** stands for Estimated Clear Price, which is an estimate of the bid price that is likely to win the impression from a given publisher based on observing historical bids. 
 
+> [!NOTE]
+> Deal Ask Prices vs. Reserve Prices
+> - If the seller has set a reserve price on their RTB inventory, the deal ask price will take priority over the reserve price.
+> - A default creative reserve price will always take priority over the placement reserve price.
+> - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-<b>Important:</b> **ECP** stands for Estimated
-Clear Price, which is an estimate of the bid price that is likely to win
-the impression from a given publisher based on observing historical
-bids.
+## Examples for open auctions
 
+### Deal bid wins
 
+:::image type="content" source="media/open-auction-deal-bid-wins.png" alt-text="Screenshot of open auction .":::
 
+### Non-Deal bid wins
 
+:::image type="content" source="media/open-auction-non-deal-bid-wins.png" alt-text="Screenshot of open auction non deal .":::
 
-<b>Note:</b> Deal Ask Prices vs. Reserve
-Prices
+### Non-Deal bid wins
 
-- If the seller has set a reserve price on their RTB inventory, the deal
-  ask price will take priority over the reserve price.
-- A default creative reserve price will always take priority over the
-  placement reserve price.
-- A dynamic floor will always take priority over the placement and
-  default creative reserve price.
+:::image type="content" source="media/open-auction-non-deal-bid-wins-b.png" alt-text="Diagram of open auction non deal .":::
 
+> [!IMPORTANT]
+> **Why does this example have two floors? And why does the non-deal bid win?**
+> 
+> In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
+> 
+> The highest non-deal bid wins because:
+> - The deal does not have a deal ask price, and
+> - Neither of the deal bids met the floor targeted to their bids
 
-
-Examples
-
-Deal Bid Wins
-
-![open auction](media/open-auction-deal-bid-wins.png)
-
-Non-Deal Bid Wins
-
-![open auction non deal](media/open-auction-non-deal-bid-wins.png)
-
-
-Non-Deal Bid Wins
-
-![open auction non deal](media/open-auction-non-deal-bid-wins-b.png)
-
-
-
-<b>Important:</b> **Why does this example have
-two floors? And why does the non-deal bid win?**
-
-In the example above, each of the deal bids has a different floor
-applied to it. This can happen when the seller uses floor rule demand
-filtering to target the floor to a specific buyer, brand, or offer
-category.
-
-The highest non-deal bid wins because:
-
-- The deal does not have a deal ask price, and
-- Neither of the deal bids met the floor targeted to their bids
-
-
-
-Private Auctions
+## Private auctions
 
 When a piece of inventory included in a "private auction" deal comes up
 for auction, buyers targeting the private deal compete for the
@@ -116,30 +83,27 @@ targeting the inventory via other means.
   the open auction wins, paying either the second-highest bid (plus one
   cent) from the open auction or ECP, whichever is higher.
 
-Examples
+## Examples for private auctions
 
-Deal Bid Wins in Private Auction (No Open Auction Held)
+### Deal bid wins in private auction (no open auction held)
 
-![Private Auction](media/private-auction-deal-bid-wins.png)
+:::image type="content" source="media/private-auction-deal-bid-wins.png" alt-text="Screenshot of Private Auction .":::
 
+### Higher priority deal bid wins in private auction (no open auction held)
 
-Higher Priority Deal Bid Wins in Private Auction (No Open Auction Held)
+:::image type="content" source="media/private-auction-higher-priority-wins.png" alt-text="Diagram of Private Auction .":::
 
-![Private Auction](media/private-auction-higher-priority-winds-wins.png)
+### Non-Deal bid wins in open auction (no private auction winner)
 
+:::image type="content" source="media/private-auction-non-deal-bid-wins.png" alt-text="Screenshot of Private Auction non deal bid wins .":::
 
-Non-Deal Bid Wins in Open Auction (No Private Auction Winner)
-
-![Private Auction](media/private-auction-non-deal-bid-wins.png)
-
-
-Deal Prices and Yield Management Rules
+## Deal prices and yield management rules
 
 Both a deal and a YM rule can apply to the same piece of inventory. This
 section explains which rules are considered when that piece of inventory
 comes up for auction.
 
-Deal Pricing and Floors
+### Deal pricing and floors
 
 If you have set a price for your deal, it will override other pricing
 mechanisms including floor rules. In other words, deal prices take
@@ -166,13 +130,13 @@ priority over floor prices.
   floor is greater than the YM floor, then the dynamic floor will take
   priority over a YM floor.
 
-Deal Bid Meets Deal Floor and Wins
+### Deal Bid Meets Deal Floor and Wins
 
-![deal flors](media/deal_floorvsymfloor.png)
+:::image type="content" source="media/deal-floor-vs-ymfloor.png" alt-text="Scrteenshot of deal floors .":::
 
-Fixed Price Deals
+## Fixed price deals
 
-If you select a Fixed Price auction,
+If you select a **Fixed Price** auction,
 you will need to enter an ask price. Any buyer who bids above this value
 (plus relevant fees) will be eligible to bid on the deal. The winning
 buyer is responsible for the fixed price plus fees. A bid is only
@@ -181,17 +145,14 @@ below the ask price will be considered ineligible for the deal and the
 auction. IDs on fixed price deals are ranked according to the deal's ask
 price (minus relevant fees).
 
-Deal Pricing and Biases
+### Deal pricing and biases
 
 Yield management biases will still be applied to deal bids, even if you
 have set a price for your deal.
 
-Related Topic
+## Related topics
 
-- <a href="buying-deals.md" class="xref">Buying Deals</a>
-- <a href="selling-deals.md" class="xref">Selling Deals</a>
-- <a href="create-a-floor-rule.md" class="xref">Create a Floor Rule</a>
-
-
-
+- [Buying Deals](buying-deals.md)
+- [Selling Deals](selling-deals.md)
+- [Create a Floor Rule](create-a-floor-rule.md)
 
