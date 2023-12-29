@@ -1,6 +1,6 @@
 ---
 title: RTSS Limitations
-description: Explore the Real-Time Signals service (RTSS) limitations and use cases that don't work well with RTSS.
+description: Explore the Real-Time Signals Service (RTSS) limitations and use cases that don't work well with RTSS.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

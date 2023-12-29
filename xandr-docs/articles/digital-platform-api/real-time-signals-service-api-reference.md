@@ -1,6 +1,6 @@
 ---
 title: Real-Time Signals Service API Reference
-description: Explore the Real-Time Signals Service (RTSS) for uploading ID-to-segment data or other key:value data, facilitating the addition of segments to bid requests.
+description: Explore the Real-Time Signals Service (RTSS) for uploading ID-to-segment data or other key-value data, facilitating the addition of segments to bid requests.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
