@@ -344,12 +344,12 @@ criteria.
   Xandr will use the lowest priced segment to
   bid on the auction.
 
-![advanced OR](media/advanced-or-c.png)
+:::image type="content" source="media/advanced-or-c.png" alt-text="Diagram of advanced OR 3 .":::
 
 - If the ad request is NOT relevant to any targeted segment, then no bid
   will be made.
 
-![advanced OR](media/advanced-or-d.png)
+:::image type="content" source="media/advanced-or-d.png" alt-text="Diagram of advanced OR 4 .":::
 
 ### Multiple groups of segments targeted
 
