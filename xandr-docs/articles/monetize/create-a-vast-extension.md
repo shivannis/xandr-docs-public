@@ -1,102 +1,40 @@
 ---
-Title : Create a VAST Extension
-Description : To avoid having to create VAST extensions for each video creative, you
+title: Create a VAST Extension
+description: In this article, find step-by-step instructions on how to create and set up VAST extensions.
 ms.date: 10/28/2023
-can create one VAST extension that can be associated with multiple video
-creatives.
 ---
 
+# Create a VAST extension
 
-# Create a VAST Extension
-
-
-
-To avoid having to create VAST extensions for each video creative, you
-can create one VAST extension that can be associated with multiple video
-creatives.
-
-
+To avoid having to create VAST extensions for each video creative, you can create one VAST extension that can be associated with multiple video creatives.
 
 VAST extensions are custom XML snippets that video players render.
 
+1. From the **Network** menu, select **Tools** > **VAST Extensions**.
 
+    The **Template Manager: VAST Extensions** screen displays.
 
+1. Click the **New Extension** button.
 
+1. Enter a new and unique **Name** for your custom extension.
 
-1.  From the
-    Network menu, select
-    Tools
-    \> VAST Extensions.
-    
+1. Enter the XML for the extension in the **Content** text field using creative or custom macro elements.
 
-    The Template Manager: VAST
-    Extensions screen displays.
+    > [!NOTE]
+    > Custom and impbus macros are supported. You must define all the custom macros that are listed in the **Content** text field.
 
-    
-2.  Click the New
-    Extension button.
-3.  Enter a new and unique
-    Name for your custom
-    extension.
-4.  Enter the XML for the extension in the
-    Content text field using creative
-    or custom macro elements.
-    
+1. Click the **Add macro** button and do the following:
+    1. Enter the **Macro name** using the XML code provided in the **Content** text field.
+    1. Enter the **Code** for the macro.
+    1. Click the **Required** toggle if this macro is required.
+    1. Select a macro **Type**.
 
-    
+1. Click **Save**.
 
-    <b>Note:</b> Custom and impbus macros are
-    supported. You must define all the custom macros that are listed in
-    the Content text field.
+    The extension now displays on the **Template Manager: VAST Extensions** screen. You can associate the extension with your video creatives using the **VAST Features** section of the **Create New** or **Edit** screens.
+    For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
-    
+## Related topics
 
-    
-5.  Click the Add
-    macro button and do the following:
-    1.  Enter the Macro
-        name using the XML code provided in the
-        Content text field.
-    2.  Enter the
-        Code for the macro.
-    3.  Click the
-        Required toggle if this macro
-        is required.
-    4.  Select a macro
-        Type.
-6.  Click
-    Save.
-    
-
-    The extension now displays on the
-    Template Manager: VAST
-    Extensions screen. You can associate the extension with your
-    video creatives using the VAST
-    Features section of the Create
-    New or Edit screens.
-    For more information, see <a href="add-a-creative.md" class="xref"
-    title="You can add a creative by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-    a Creative</a> and <a href="add-creatives-in-bulk.md" class="xref"
-    title="You can add multiple third-party, hosted, and native creatives to the Creative Manager simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.">Add
-    Creatives in Bulk</a>.
-
-    
-
-
-
->
-
-**Related Topics**
-
-- <a href="working-with-creatives.md" class="xref"
-  title="You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Xandr platform. Only secure content is supported.">Working
-  with Creatives</a>
-- <a href="video-creatives.md" class="xref"
-  title="You can host video creatives with Xandr or traffic them through third-party ad servers. Non-linear creatives, such as a non-video overlay creative that is served on top of the player, are not supported.">Video
-  Creatives</a>
-
-
-
-
-
-
+- [Working with Creatives](working-with-creatives.md)
+- [Video Creatives](video-creatives.md)
