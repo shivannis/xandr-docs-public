@@ -128,7 +128,7 @@ To access a particular data provider's segment offering:
     Xandr) will appear checked and highlighted.
 
 > [!NOTE]
-> If you ever choose to deactivate a data provider, you must first remove all active targeting of their segments. Once you have removed any targeting that is using these segments, log in to the [Customer Support Portal](https://help.xandr.com/s/login/)9 and create a ticket to complete the deactivation.
+> If you ever choose to deactivate a data provider, you must first remove all active targeting of their segments. Once you have removed any targeting that is using these segments, log in to the [Customer Support Portal](https://help.xandr.com/s/login/) and create a ticket to complete the deactivation.
 
 ### Determining if a segment will be cleared within the data marketplace
 
@@ -300,7 +300,7 @@ the demographic segment is relevant. For line item or
 campaign targeting one segment if a segment is relevant, then the
 segment will be used to bid in the auction.
 
-:::image type="content" source="media/basic.png" alt-text="Screenshot of basic .":::
+:::image type="content" source="media/basic.png" alt-text="Screenshot of Single Segment Targeted .":::
 
 ### Multiple segments targeted
 

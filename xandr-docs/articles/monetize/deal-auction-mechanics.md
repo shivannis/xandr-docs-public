@@ -143,7 +143,7 @@ price (minus relevant fees).
 Yield management biases will still be applied to deal bids, even if you
 have set a price for your deal.
 
-## Related topic
+## Related topics
 
 - [Buying Deals](buying-deals.md)
 - [Selling Deals](selling-deals.md)

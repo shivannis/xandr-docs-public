@@ -48,7 +48,7 @@ concepts is discussed in greater detail in dedicated sections below):
     Xandr bills clients for fees/charges based
     on the daily conversion rate logged at the time the relevant auction
     took place. However, in the following scenarios, we use the
-    month-end rate to bill (for a full list, see [When are media cost and related fees converted for use in billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing)
+    month-end rate to bill (for a full list, see [When media cost and related fees are converted for use in billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing)
      below):
     - The transaction currency differs from the billing currency
     - We can't easily associate a fee back to an auction (e.g., Ad
