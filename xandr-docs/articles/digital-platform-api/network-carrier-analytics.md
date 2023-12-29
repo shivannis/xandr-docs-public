@@ -41,7 +41,7 @@ Data retention period for the report is 46 days.
 | `device_type` | string | Yes | `"tablets"` | The type of device on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> - `"set top box"`<br> - `"media players"`<br> - `"other devices"` |
 | `connection_type` | string | Yes | `"Carrier-based"` | The type of internet connection at the time of the impression. Possible values: `"Carrier-based"` or `"Wifi or Static"`. |
 | `entity_member_id` | int | Yes | `123` | If `imp_type` is `1` (Blank), `2` (PSA), `3` (Default Error), `4` (Default), `6` (Resold), or `8` (PSA Resulting from Default Error), the ID of the buying member; otherwise, the ID of the selling member. |
-| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default |
 | `buyer_member_name` | string | No | `"My Network"` | The name of the buying member. |
 | `buyer_member` | string | No | `"My Network (123)"` | **Deprecated**. |
 | `seller_member_id` | int | Yes | `456` | The ID of the selling member. |
@@ -148,7 +148,7 @@ Data retention period for the report is 46 days.
 
 ### Create JSON formatted report request
 
-The JSON file should include the report_type `"network_carrier_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md). In this example, we want to see how campaigns are performing on mobile phones and tablets across three specific carriers. Specifically, for each combination of carrier and device type, we want the number of impressions, the number of clicks, the total money spent, the money spent per 1000 impressions, the money paid to us by the advertiser, and the total profit (money earned - money spent).
+The JSON file should include the `report_type` of `"network_carrier_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md). In this example, we want to see how campaigns are performing on mobile phones and tablets across three specific carriers. Specifically, for each combination of carrier and device type, we want the number of impressions, the number of clicks, the total money spent, the money spent per 1000 impressions, the money paid to us by the advertiser, and the total profit (money earned - money spent).
 
 ```
 $ cat network_carrier_analytics

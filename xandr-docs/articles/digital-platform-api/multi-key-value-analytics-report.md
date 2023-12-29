@@ -72,7 +72,7 @@ Data in this report is retained for 428 days.
 | `publisher` | string | No | `"PublisherA (555)"` | The name and ID of the publisher. |
 | `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id`. |
 | `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1 ("Blank")`: No creative served.<br> - `2 ("PSA")`: A public service announcement served because there were no valid bids and no default creative was available.<br> - `3 ("Default Error")`: A default creative served due to a timeout issue.<br> - `4 ("Default")`: A default creative served because there were no valid bids.<br> - `5 ("Kept")`: Your advertiser's creative served on your publisher's site.<br> - `6 ("Resold")`: Your publisher's impression was sold to a third-party buyer.<br> - `7 ("RTB")`: Your advertiser's creative served on third-party inventory.<br> - `8 ("PSA Error")`: A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9 ("External Impression")`: An impression from an impression tracker.<br> - `10 ("External Click")`: A click from a click tracker.<br><br>**Note**: RTB auctions are not included in reports. An impression with `imp_type_id = 7` will not be reported. |
-| `creative_id` | int | Yes | `444` | The ID of the creative.<br><br>**Note**:  - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative_id` | int | Yes | `444` | The ID of the creative.<br><br>**Note**:<br>- For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
 | `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative.<br> - For impressions older than 100 days, creatives will be aggregated into one row with `"All creative data older than 100 days"` as the `creative_name`.<br> - For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |
 | `creative` | string | No | `"Q1 2017 728x90 (444)`" | The name and ID of the creative. |
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
@@ -82,7 +82,7 @@ Data in this report is retained for 428 days.
 | `insertion_order` | string | No | `"FirstIO(321)"` | The ID and name of the insertion order associated with the campaign that purchased the impression. |
 | `publisher_currency` | money | Yes | `"EUR"` | The currency used by the publisher. |
 | `revenue_type_id` | int | Yes | `4` | The ID of the revenue type for different impression types. |
-| `revenue_type` | string | No | `"CPC"` | See [Revenue type as text for a corresponding revenue_type_id](#revenue_type-as-text-for-a-corresponding-revenue_type_id)|
+| `revenue_type` | string | No | `"CPC"` | See [revenue_type as text for a corresponding revenue_type_id](#revenue_type-as-text-for-a-corresponding-revenue_type_id)|
 | `device_type` | string | Yes | `"Desktops and Laptops"` | The type of the device where the impression has occurred. |
 | `deal_id` | int | Yes | `123` | The ID of the deal. |
 | `deal_name` | string | No | `"MyDeal"` | The name of the deal. |
@@ -102,7 +102,7 @@ Data in this report is retained for 428 days.
 
 ### `revenue_type` as text for a corresponding `revenue_type_id`
 
-| `revenue_tye_id` | `revenue_type` |
+| `revenue_type_id` | `revenue_type` |
 |:---|:---|
 | `-1` | No Payment |
 | `0` | Flat CPM |
@@ -124,19 +124,19 @@ Data in this report is retained for 428 days.
 | `imps` | int | `234123` | imps | The total number of impressions. |
 | `clicks` | int | `545` | clicks | The total number of clicks. |
 | `booked_revenue` | money | `150.00` | booked_revenue | The total revenue booked through direct advertisers. |
-| `reseller_revenue` | money | `100.00` | `reseller_revenue` | The total revenue on resold impressions through direct publishers. |
+| `reseller_revenue` | money | `100.00` | reseller_revenue | The total revenue on resold impressions through direct publishers. |
 | `revenue` | money | `250.00` | booked_revenue + reseller_revenue | The total revenue. |
 | `rpm` | money | `1.25` | revenue / 1000 imps | The revenue per 1000 impressions, including defaults, PSAs, and errors. |
 | `total_convs` | int | `5` | total_conversions | The total number of post-view and post-click conversions. |
 | `convs_rate` | double | `0.000221877080097626` | total_conversions / imps | The rate of conversions to impressions. |
-| `imps_master_creative` | int | `1276` | `imps_master_creative` | The total number of impressions from the master creative in page-level roadblocking.<br><br>**Note**: This metric is in alpha testing and not available to all customers. |
+| `imps_master_creative` | int | `1276` | imps_master_creative | The total number of impressions from the master creative in page-level roadblocking.<br><br>**Note**: This metric is in alpha testing and not available to all customers. |
 | `imps_viewed` | int | `1122` | imps_viewed | The total number of viewed impressions. |
-| `view_measured_imps` | int | `1121` | `view_measured_imps` | The total number of impressions that were measured for viewability. |
+| `view_measured_imps` | int | `1121` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
-| `view_measurement_rate` | double | `45%` | `view_measurement_rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-| `reseller_revenue_pub_curr` | money | `200.00` | `reseller_revenue_pub_curr` | The total revenue on resold impressions through direct publishers in publishers' currency. |
+| `view_measurement_rate` | double | `45%` | view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| `reseller_revenue_pub_curr` | money | `200.00` | reseller_revenue_pub_curr | The total revenue on resold impressions through direct publishers in publishers' currency. |
 | `rpm_pub_curr` | money | `1.23` | revenue / 1000 imps | The revenue per 1000 impressions, including defaults, PSAs, and errors in publishers' currency. |
-| `booked_revenue_pub_curr` | money | `150.00` | `booked_revenue_pub_curr` | The total revenue booked through direct advertisers in publishers' currency. |
+| `booked_revenue_pub_curr` | money | `150.00` | booked_revenue_pub_curr | The total revenue booked through direct advertisers in publishers' currency. |
 | `revenue_pub_curr` | money | `250.00` | booked_revenue + reseller_revenue | The total revenue in publishers' currency. |
 
 ## Example

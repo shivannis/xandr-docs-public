@@ -26,18 +26,18 @@ The `report_interval` field in the JSON request can be set to one of the followi
 |:---|:---|:---|:---|
 | `day` | time | `"2010-02-01"` | The day of the auction.<br><br> **Filter**: No |
 | `month` | time | `"2010-02"` | The month of the auction.<br><br> **Filter**: No |
-| `buyer_member_id` | int | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br> `229` = PSA <br> `0` = Blank <br> `319` = Default.<br><br>**Filter**: Yes |
+| `buyer_member_id` | int | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br> `229` = PSA <br> `0` = Blank <br> `319` = Default<br><br>**Filter**: Yes |
 | `seller_member_id` | int | `456` | The ID of the selling member.<br><br>**Filter**: Yes |
 | `publisher_id` | int | `321` | The ID of the publisher.<br><br>**Filter**: Yes |
 | `creative_id` | int | `654` | The ID of the creative.<br><br>**Filter**: Yes |
-| `site_id` | int | `194` | The ID of the site.<br><br>**Note**: For RTB impressions older than 30 days, the `site_id` will be `0`.<br><br>**Filter**:Yes |
+| `site_id` | int | `194` | The ID of the site.<br><br>**Note**: For RTB impressions older than 30 days, the `site_id` will be `0`.<br><br>**Filter**: Yes |
 | `brand_id` | int | `3` | The ID of the brand associated with the creative.<br><br>**Filter**: Yes |
 | `width` | int | `250` | The width of the creative.<br><br>**Filter**: Yes |
 | `height` | int | `300` | The height of the creative.<br><br>**Filter**: Yes |
 | `tag_id` | int | `491` | The ID of the tag.<br><br>**Filter**: Yes |
 | `media_subtype_id` | int | `491` | The ID of the media subtype associated with the creative.<br><br>**Filter**: Yes |
-| `audit_status` | string | `"audited"` | The creative's audit status. Possible values: <br> - `"pending"` <br> - `"audited"` <br> - `"unauditable"`.<br><br> **Filter**: Yes |
-| `format` | string | `"raw-html"` | The creative's format. Possible values: <br>  - `"image"` <br> - `"raw-js"` <br> - `"raw-html"` <br> - `"iframe-html"`.<br><br>**Filter**: Yes |
+| `audit_status` | string | `"audited"` | The creative's audit status. Possible values: <br> - `"pending"` <br> - `"audited"` <br> - `"unauditable"`<br><br> **Filter**: Yes |
+| `format` | string | `"raw-html"` | The creative's format. Possible values: <br>  - `"image"` <br> - `"raw-js"` <br> - `"raw-html"` <br> - `"iframe-html"`<br><br>**Filter**: Yes |
 
 ## Metrics
 
@@ -108,7 +108,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 1. **`GET` the report data from the Report Download Service**
 
-    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial `POST`.
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
     > [!NOTE]
     > If an error occurs during download, the response header will include an HTTP error code and message. Use -i or -v in your call to expose the response header.

@@ -63,7 +63,7 @@ Data in this report is retained for 420 days.
 | `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
 | `split_name` | string | Yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 | `creative_id` | int | Yes | `554` | The ID of the creative.<br><br>**Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"`or `"External Imps"`. |
-| `creative_name` | string | No | `"Q1 2010 728x90"` | The name of the creative.<br><br>**Note**: For external click or impression trackers, creative_name will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | No | `"Q1 2010 728x90"` | The name of the creative.<br><br>**Note**: For external click or impression trackers, `creative_name` will be `"External Clicks"` or `"External Imps"`. |
 | `creative` | string | No | `"Q1 2010 728x90 (554)"` | **Deprecated**. |
 | `placement_id` | int | Yes | `567` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | No | `"Photos 728x90"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
@@ -152,7 +152,7 @@ Data in this report is retained for 420 days.
 | `completion_rate` | double | `85.4`5 | completions / imps | The number of video completions divided by the number of impressions. |
 | `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
 | `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
-| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An Imp refers to when the video player loads the video and starts the first frame. Videos Served refers to the VAST document being served in response to a request from the video player. |
+| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An **Imp** refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. |
 | `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
 | `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |

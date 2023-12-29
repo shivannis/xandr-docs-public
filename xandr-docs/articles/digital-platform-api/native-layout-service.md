@@ -66,7 +66,7 @@ The `data_assets` object includes the following fields:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `data_type` | string | The asset type for the native creative. Possible values:<br>`sponsored_by`<br>`title`<br>`description`<br>`rating`<br>`call_to_action`<br>`display_url`<br>`likes`<br>`downloads`<br>`price`<br>`sale_price`<br>`phone`<br>`address`<br>`additional_description` |
+| `data_type` | string | The asset type for the native creative. Possible values:<br> - `sponsored_by`<br> - `title`<br> - `description`<br> - `rating`<br> - `call_to_action`<br> - `display_url`<br> - `likes`<br> - `downloads`<br> - `price`<br> - `sale_price`<br> - `phone`<br> - `address`<br> - `additional_description` |
 | `required` | int | If required then the value should be `1`. |
 | `maximum_length` | int | The maximum length of the data asset. |
 

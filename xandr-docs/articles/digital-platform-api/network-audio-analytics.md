@@ -46,7 +46,7 @@ Data retention period for the report is 420 days.
 | `hour` | time | Yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `day` | time | Yes | `"2010-02-01"` | The day of the auction. |
 | `month` | time | No | `"2010-02"` | The month of the auction. |
-| `buyer_member_id` | int | Yes | `123` | The ID of the buying member of the impression. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member of the impression. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default |
 | `buyer_member_name` | string | No | `"My Network"` | The name of the buying member of the impression. |
 | `buyer_member` | string | No | `"My Network (123)"` | The name and ID of the buying member of the impression. |
 | `creative_id` | int | Yes | `554` | The ID of the creative associated with the impression.<br><br>**Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
@@ -97,7 +97,7 @@ Data retention period for the report is 420 days.
 | `creative_frequency_bucket` | string | yes | `"11-20"` | The bucket for how frequently the creative was displayed. See [Creative Frequency Bucket](#creative-frequency-bucket) to see possible values. |
 | `creative_frequency_bucket_id` | string | no | `"3"` | The ID of the creative frequency bucket.<br>See [Creative Frequency Bucket](#creative-frequency-bucket) to see possible values. |
 | `site_domain` | string | no | `bestsiteever.com` | The site domain associated with an impression. |
-| `supply_type_filterable` | string | yes | `"web"` | Whether to filter by supply type. The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"`. |
+| `supply_type_filterable` | string | yes | `"web"` | Whether to filter by supply type. The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"` |
 | `media_subtype` | int | yes | `3` | The media subtype for the creative which signifies the specific display style of creatives. |
 | `creative_duration` | int | yes | `15` | The length of the ad in seconds. |
 | `split_id` | int | yes | `889` | The ID of the split of the line item under which this impression was purchased. |
@@ -109,9 +109,9 @@ Data retention period for the report is 420 days.
 | `content_program_type_id` | int | yes | `987` | The ID of higher level categorization of the program on which the ad will be played. For example, `Movie`, `Series`, `Special`, `Show`, `Event`, `Clip` |
 | `content_rating_id` | int | yes | `322` | The ID of type of rating of the content. For example, `All`, `Children (7+)`, `Teens (13+)`, `Young Adults (14+)`, `Adults (18+)` |
 | `deal_alias` | string | No | `"Deal1"` | The alias of the deal, as it will appear in the UI. |
-| `mobile_application_id` | int | Yes | 777``75 | The ID of the mobile app on the device where the impression occurred. |
+| `mobile_application_id` | int | Yes | `77775` | The ID of the mobile app on the device where the impression occurred. |
 | `buying_currency` | string | Yes | `"USD"` | The transaction currency that the buyer used to purchase this impression. |
-| `audio_context` | string | Yes | `"pre-roll"` | The type of the audio creative. See Audio Context below for possible values. |
+| `audio_context` | string | Yes | `"pre-roll"` | The type of the audio creative. See [Audio Context](#audio-context) below for possible values. |
 
 ## Metrics
 
@@ -163,7 +163,7 @@ Data retention period for the report is 420 days.
 | `10` | `"8-14 days"` |
 | `11` | `"14-30 days"` |
 
-### Creative frequency bucket**
+### Creative frequency bucket
 
 | Bucket ID | Bucket Name |
 |:---|:---|
@@ -182,7 +182,7 @@ Data retention period for the report is 420 days.
 | `10` | `"251-500"` |
 | `11` | `"500+"` |
 
-**Audio context**
+### Audio context
 
 | Method ID | Method |
 |:---|:---|

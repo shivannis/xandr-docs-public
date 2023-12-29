@@ -192,7 +192,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485ad
 
 See [Lookup Service](./lookup-service.md) for more details.
 
-### `GET` the report data from the report download service**
+### `GET` the report data from the report download service
 
 To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 

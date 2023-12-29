@@ -27,7 +27,8 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 Data retention period for this report is 30 days.
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
@@ -38,8 +39,8 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `bidder_name` | No | Name of the bidder (DSP) for the impression. |
 | `buyer_member_name` | Yes | The specific buyer that purchased the impression. |
 | `buyer_member_id` | Yes | The ID of the buyer that purchased the impression. |
-| `deal_auction_type_name` | Yes | The auction type for the deal. A deal can have the following auction types: <br> - `first price` <br> - `second price` <br> - `fixed price`. |
-| `deal_buyer_type` | Yes | Select to filter by the type of buyer the impression served through. Possible values: <br> - `"Entire Deal"` <br> - `"Bidder"` <br> - `"Buyer Member"` <br> - `"Buyer Seat"`.<br><br>**Note**: This dimension is mandatory on the Multi-Buyer Deal Metrics Report. To not see data broken out by deal buyer type, filter by Entire Deal. |
+| `deal_auction_type_name` | Yes | The auction type for the deal. A deal can have the following auction types: <br> - `first price` <br> - `second price` <br> - `fixed price` |
+| `deal_buyer_type` | Yes | Select to filter by the type of buyer the impression served through. Possible values: <br> - `"Entire Deal"` <br> - `"Bidder"` <br> - `"Buyer Member"` <br> - `"Buyer Seat"`<br><br>**Note**: This dimension is mandatory on the Multi-Buyer Deal Metrics Report. To not see data broken out by deal buyer type, filter by Entire Deal. |
 | `deal_name` | Yes | The deal associated with the transaction for the impression. |
 | `deal_type_name` | Yes | Whether the deal is a public deal, private deal, or programmatic guaranteed deal. |
 | `end_date` | Yes | The day and time when the deal stops being available to the buyer. |

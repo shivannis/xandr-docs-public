@@ -53,7 +53,7 @@ Data retention period for this report is 120 days (no data before February 26, 2
 | `creative_recency_bucket_id` | string | no | `"4"` | The ID of the creative recency bucket. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
 | `creative_frequency_bucket` | string | yes | `"11-20"` | The bucket for how frequently the creative was displayed. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
 | `creative_frequency_bucket_id` | string | no | `"3"` | The ID of the creative frequency bucket. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
-| `buyer_member_id` | int | yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br> `0` = Blank <br>`319` = Default. |
+| `buyer_member_id` | int | yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br> `0` = Blank <br>`319` = Default |
 | `advertiser_id` | int | yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a `default` or `PSA` was shown. |
 | `advertiser_name` | string | no | `"Verizon Wireless"` | The name of the advertiser. |
 | `advertiser` | string | no | `"Verizon Wireless (789)"` | **Deprecated**. |
@@ -81,44 +81,6 @@ Data retention period for this report is 120 days (no data before February 26, 2
 | `trafficker_for_line_item` | string | yes | `"Maurice Truman"` | The trafficker for the line item. See the `"labels"` field in the [Line Item Service](./line-item-service.md) for more details. |
 | `salesrep_for_line_item` | string | yes | `"Beverly Heller"` | The sales rep for the line item. See the `"labels"` field in the [Line Item Service](./line-item-service.md) for more details. |
 | `user_group_for_campaign` | string | yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
-
-### Creative frequency buckets
-
-| Bucket ID | Bucket Name |
-|:---|:---|
-| `-2` | `"no-cookie-date"` |
-| `-1` | `"no-cookie"` |
-| `0` | `"0"` |
-| `1` | `"1"` |
-| `2` | `"2-5"` |
-| `3` | `"6-10"` |
-| `4` | `"11-20"` |
-| `5` | `"21-40"` |
-| `6` | `"41-60` |
-| `7` | `"61-100"` |
-| `8` | `"101-150"` |
-| `9` | `"151-250"` |
-| `10` | `"251-500"` |
-| `11` | `"500+"` |
-
-### Creative recency buckets
-
-| Bucket ID | Bucket Name |
-|:---|:---|
-| `-2` | `"no-cookie-date"` |
-| `-1` | `"no-cookie"` |
-| `0` | `"< 1 minute"` |
-| `1` | `"1-5 minutes"` |
-| `2` | `"5-15 minutes"` |
-| `3` | `"15-30 minutes"` |
-| `4` | `"30-60 minutes"` |
-| `5` | `"1-4 hours"` |
-| `6` | `"4-12 hours"` |
-| `7` | `"12-24 hours"` |
-| `8` | `"1-2 days"` |
-| `9` | `"2-7 days"` |
-| `10` | `"8-14 days"` |
-| `11` | `"14-30 days"` |
 
 ## Metrics
 
@@ -165,6 +127,44 @@ Data retention period for this report is 120 days (no data before February 26, 2
 | `video_completion_rate` | double | `1.12359550561797%` | (video completions/total impressions) x 100 | The ratio of video completions to impressions, expressed as a percentage. |
 | `video_start_rate` | double | `1.12359550561797%` |  | The percentage of times the first segment of the video creative was downloaded and started. |
 | `video_skip_rate` | double | `1.12359550561797%` |  | The percentage of times the user opted to skip the video. |
+
+### Creative frequency buckets
+
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"0"` |
+| `1` | `"1"` |
+| `2` | `"2-5"` |
+| `3` | `"6-10"` |
+| `4` | `"11-20"` |
+| `5` | `"21-40"` |
+| `6` | `"41-60` |
+| `7` | `"61-100"` |
+| `8` | `"101-150"` |
+| `9` | `"151-250"` |
+| `10` | `"251-500"` |
+| `11` | `"500+"` |
+
+### Creative recency buckets
+
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"< 1 minute"` |
+| `1` | `"1-5 minutes"` |
+| `2` | `"5-15 minutes"` |
+| `3` | `"15-30 minutes"` |
+| `4` | `"30-60 minutes"` |
+| `5` | `"1-4 hours"` |
+| `6` | `"4-12 hours"` |
+| `7` | `"12-24 hours"` |
+| `8` | `"1-2 days"` |
+| `9` | `"2-7 days"` |
+| `10` | `"8-14 days"` |
+| `11` | `"14-30 days"` |
 
 ## Example
 

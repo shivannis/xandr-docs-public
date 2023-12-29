@@ -45,7 +45,8 @@ The `report_interval` field can be set to one of the following:
 
 Data retention period for this report is 30 days.
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
@@ -75,7 +76,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `imp_type_id` | int | Yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br> - `1` ("Blank"): No creative served.<br> - `2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br> - `3` ("Default Error"): A default creative served due to a timeout issue.<br> - `4` ("Default"): A default creative served because there were no valid bids.<br> - `5` ("Kept"): Your advertiser's creative served on your publisher's site.<br> - `6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br> - `7` ("RTB"): Your advertiser's creative served on third-party inventory.<br> - `8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br> - `9` ("External Impression"): An impression from an impression tracker.<br> - `10` ("External Click"): A click from a click tracker. |
 | `imp_type` | string | Yes | `"Blank"` | The type of impression. For possible values, see `imp_type_id`. |
 | `revenue_type` | string | Yes | `"CPA"` | The basis on which the member gets paid. |
-| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br> `0` = Flat CPM <br> `1` = Cost Plus CPM <br> `2` = Cost Plus Margin <br> `3` = CPC <br> `4` = CPA <br> `5` = Revshare <br> `6` = Flat Fee <br> `7` = Variable CPM <br>`8` = Estimated CPM. |
+| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br> `0` = Flat CPM <br> `1` = Cost Plus CPM <br> `2` = Cost Plus Margin <br> `3` = CPC <br> `4` = CPA <br> `5` = Revshare <br> `6` = Flat Fee <br> `7` = Variable CPM <br>`8` = Estimated CPM |
 | `payment_type` | string | Yes | `"com"`, `"revshare"` | The type of payment to a broker. |
 | `cleared_direct` | int | Yes | `0`, `1` | Whether or not the buyer pays the seller directly for the cost of media. If `0`, Xandr collects the cost of media from the buyer and pays the seller. If `1`, the buyer pays the seller directly for the cost of media. <br><br>**Tip**: Buyers can match the cost of media on their invoice by filtering out "cleared direct" transactions. |
 | `hour` | time | No | `"2010-02-01 06:00:00"` | The hour of the impression.<br><br>**Note**: For impressions older than 100 days, hourly data is aggregated into one row with 'YYYY-MM-DD 00:00:00' as the hour ('YYYY-MM-DD' is the UTC day in which the activity happened). This will make it look as though all activity happened at midnight. All daily data older than 100 days is returned in the UTC time zone. |

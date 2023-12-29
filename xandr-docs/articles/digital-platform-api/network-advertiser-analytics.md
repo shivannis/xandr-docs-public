@@ -188,7 +188,7 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `revenue_ecpm` | money | `1.9221` | booked_revenue / clicks | The total revenue per 1000 impressions. |
 | `revenue_ecpm_adv_curr` | money | `1.50` | revenue_ecpm_adv_curr | The total revenue per 1000 impressions in the advertiser's currency. |
 | `cost_ecpm` | money | `0.4271259` | media_cost / imps * 1000 | The cost per 1000 impressions. |
-| `profit_ecpm` | money | `0.4949` | profit / imps * 1,000 | The profit per 1000 impressions. `"Profit"` is defined as booked revenue minus total cost. |
+| `profit_ecpm` | money | `0.4949` | profit / imps * 1,000 | The profit per 1000 impressions. "Profit" is defined as booked revenue minus total cost. |
 | `revenue_ecpc` | money | `0.8256` | booked_revenue / clicks | The total revenue per click. |
 | `revenue_ecpc_adv_curr` | money | `0.50` | revenue_ecpc_adv_curr | The total revenue per click in the advertiser's currency. |
 | `revenue_ecpa` | money | `5.00` | booked_revenue / total_convs | The total revenue per conversion. |
@@ -217,7 +217,7 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `profit_net_including_fees` | money | `200.00` | booked_revenue_dollars - commissions - media_cost_dollars - serving fees | **To be deprecated**. Net profit after commissions and serving fees. |
 | `profit_ecpm_including_fees` | money | `0.4141` | If imps > 0, then (booked_revenue_dollars - commissions - media_cost_dollars - serving_fees) / imps * 1000<br><br>If imps = 0, then (booked_revenue_dollars - commissions - media_cost_dollars - serving_fees) / 1000 | **To be deprecated**. Profit per thousand impressions after commissions and serving fees. |
 | `profit_margin_including_fees` | money | `0.7778` | If (booked_revenue_dollars - commissions) > 0, then (booked_revenue_dollars - commissions - media_cost_dollars - serving_fees) / (booked_revenue_dollars - commissions)<br>If (booked_revenue_dollars - commissions) = 0, then (booked_revenue_dollars - commissions - media_cost_dollars - serving_fees) / 1 | **To be deprecated**. Profit margin after commissions and serving fees. |
-| `post_view_convs_pixel` | int | `23` |  | Post view conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see Conversion Attribution (Monetize) or Conversion Attribution (Invest). |
+| `post_view_convs_pixel` | int | `23` |  | Post view conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
 | `post_clicks_convs_pixel` | int | `15` |  | Post click conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see Conversion Attribution (Monetize) or Conversion Attribution (Invest). |
 | `total_revenue_pixel` | money | `118.50` |  | Total revenue for the pixel. |
 | `total_revenue_including_fees_pixel` | money | `94.80` |  | **To be deprecated**. Total revenue for the pixel after commissions |
@@ -227,19 +227,19 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `view_measurement_rate` | double | `45%` | view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 | `cost_ecpvm` | money | `2.25` | (media_cost / imps_viewed) * 1000 | The cost per 1000 viewable impressions. |
 | `avg_bid_reduction` | double | `18%` |  | The average bid reduction you gained on the line item or campaign. This value represents the difference (as a percentage) between your bid and the actual media cost you paid for the impression you won (e.g., due to bid reduction). This value is only valid for RTB bidding (i.e., not Managed). Currently, this value is not accurately calculated for line items for which the `payment_auction_event_type` field has been set to `2`. |
-| `partner_fees` | money | `123.45` |  | Forthcoming. The total amount of third-party costs, budgeted using the Partner Fee Service, that have accrued on an augmented line item over the reported period of time. |
+| `partner_fees` | money | `123.45` |  | **Forthcoming**. The total amount of third-party costs, budgeted using the Partner Fee Service, that have accrued on an augmented line item over the reported period of time. |
 | `total_cost` | money | `123.45` | total_cost = media_cost + data_costs + partner_fees + commissions + serving_fees + publisher_revenue | Forthcoming. The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform.<br><br>**Note**: We have added logic to prevent double counting third-party fees during the breaking change period (July 17-After the breaking change period ). |
-| `total_cost_ecpm` | money | `123.45` | (total_cost/imps) * 1,000 | Forthcoming. The total cost per 1,000 imps. |
-| `total_cost_ecpc` | money | `123.45` | total_cost/clicks | Forthcoming. The total cost per click. |
-| `total_cost_ecpa` | money | `123.45` | total_cost/conversions | Forthcoming. The total cost per conversion. |
-| `profit_ecpc` | money | `123.45` | (booked_revenue - total_cost)/clicks | Forthcoming. Profit per click. |
-| `profit_ecpa` | money | `123.45` | ( booked_revenue - total_cost)/conversions | Forthcoming. Profit per conversion. |
+| `total_cost_ecpm` | money | `123.45` | (total_cost/imps) * 1,000 | **Forthcoming**. The total cost per 1,000 imps. |
+| `total_cost_ecpc` | money | `123.45` | total_cost/clicks | **Forthcoming**. The total cost per click. |
+| `total_cost_ecpa` | money | `123.45` | total_cost/conversions | **Forthcoming**. The total cost per conversion. |
+| `profit_ecpc` | money | `123.45` | (booked_revenue - total_cost)/clicks | **Forthcoming**. Profit per click. |
+| `profit_ecpa` | money | `123.45` | ( booked_revenue - total_cost)/conversions | **Forthcoming**. Profit per conversion. |
 
 ## Example
 
 ### Create JSON report request
 
-The JSON file should include the report_type of `"network_advertiser_analytics"`, as well as the columns (dimensions and metrics) and report_interval that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` of `"network_advertiser_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 ```
 $ cat network_advertiser_analytics
@@ -318,4 +318,4 @@ $ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34
 
 ## Related topic
 
-- [Report Service](./report-service.md)
+[Report Service](./report-service.md)
