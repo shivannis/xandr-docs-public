@@ -1,320 +1,80 @@
 ---
-Title : Native Layout Service
-Description : This service allows the seller to specify the layout for a native
+title: Native Layout Service
+description: The native layout service allows sellers to specify and retrieve layouts for native creatives from a database using renderer and layout IDs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-creative. Once the layout is in our database, it can be retrieved using
 ---
 
+# Native layout service
 
-# Native Layout Service
-
-
-
-This service allows the seller to specify the layout for a native
-creative. Once the layout is in our database, it can be retrieved using
-the `renderer_id`, and subsequently the layout_id.
-
->
+This service allows the seller to specify the layout for a native creative. Once the layout is in our database, it can be retrieved using the `renderer_id`, and subsequently the `layout_id`.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/native-layout?member_id=456 | Create a new layout. |
+| `PUT` | https://api.appnexus.com/native-layout?id=16&member_id=456 | Edit an existing layout. |
+| `DELETE` | https://api.appnexus.com/native-layout?id=123&member_id=456 | Delete a layout. |
 
+## JSON fields
 
-<table id="native-layout-service__table_f1k_y3l_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="native-layout-service__table_f1k_y3l_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="native-layout-service__table_f1k_y3l_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="native-layout-service__table_f1k_y3l_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__1">POST</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__2"><a
-href="https://api.appnexus.com/native-layout?member_id=456" class="xref"
-target="_blank">https://api.appnexus.com/native-layout?member_id=456</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__3">Create a
-new layout.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__1">PUT</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__2"><a
-href="https://api.appnexus.com/native-layout?id=16&amp;member_id=456"
-class="xref"
-target="_blank">https://api.appnexus.com/native-layout?id=16&amp;member_id=456</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__3">Edit an
-existing layout.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__1">DELETE</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__2"><a
-href="https://api.appnexus.com/native-layout?id=123&amp;member_id=456"
-class="xref"
-target="_blank">https://api.appnexus.com/native-layout?id=123&amp;member_id=456</a></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_f1k_y3l_twb__entry__3">Delete a
-layout.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `data_assets` | array of objects | Attributes of the native creative. See [Data Assets](#data-assets) below for more details. |
+| `image_assets` | array of objects | Specify the required attributes of each individual image. See [Image Assets](#image-assets) for more details. |
+| `renderer` | object | The renderer ID of the seller. Enter the `id` in this array. Example:<br>`"renderer":{"id":1}` |
 
-
-
-
-
->
-
-## JSON Fields
-
-
-
-<table id="native-layout-service__table_nwd_bjl_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="native-layout-service__table_nwd_bjl_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="native-layout-service__table_nwd_bjl_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="native-layout-service__table_nwd_bjl_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__1"><code
-class="ph codeph">data_assets</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__3">Attributes
-of the native creative. See <a
-href="native-layout-service.md#NativeLayoutService-DataAssets"
-class="xref" target="_blank">Data Assets</a> below for more
-details.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__1"><code
-class="ph codeph">image_assets</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__3">Specify the
-required attributes of each individual image. See <a
-href="native-layout-service.md#NativeLayoutService-ImageAssets"
-class="xref" target="_blank">Image Assets</a> for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__1"><code
-class="ph codeph">renderer</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_nwd_bjl_twb__entry__3"><div
->
-The renderer id of the seller. Enter the <strong><code
-class="ph codeph">id</code></strong> <code
-class="ph codeph">in this array. Example:</code>
-<pre
-id="native-layout-service__codeblock-5043615b-944d-47bd-a03d-a3ad6276e7cc"
-class="pre codeblock"><code>&quot;renderer&quot;:{&quot;id&quot;:1}</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Image Assets**
-
-
+### Image assets
 
 The `image_assets` object includes the following fields:
 
-<table id="native-layout-service__table_ujc_hjl_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="native-layout-service__table_ujc_hjl_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="native-layout-service__table_ujc_hjl_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="native-layout-service__table_ujc_hjl_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__1"><code
-class="ph codeph">aspect_ratios</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__3"><p>Define
-the aspect ratios required for the <code class="ph codeph">icon</code>
-image type. Required values are <strong><code
-class="ph codeph">min_width,</code></strong><code
-class="ph codeph"> </code><strong><code
-class="ph codeph">ratio_width</code></strong><code
-class="ph codeph"> and </code><strong><code
-class="ph codeph">ratio_height</code></strong><code
-class="ph codeph">.</code></p>
+| Field | Type | Description |
+|:---|:---|:---|
+| `aspect_ratios` | array of objects | Define the aspect ratios required for the `icon` image type. Required values are `min_width`, `ratio_width` and `ratio_height`. See [Example](#example-for-aspect_ratios).|
+| `image_type` | string | The format of the image. Possible values include:<br> - `main_image`<br> - `icon_image` |
+| `required` | int | Specify if the image is required.<br>Possible values: `1` - Required |
+| `sizes` | array of objects | The size of the image. Specify both `width` and `height`. See [Example](#example-for-sizes). |
 
+#### Example for `aspect_ratios`
+
+```
+"aspect_ratios": [
+{
+"min_width" : 100,
+"ratio_width": 1,
+"ratio_height": 2
+}
+]
+```
+
+#### Example for `sizes`
+
+```
 Example:
-<pre id="native-layout-service__codeblock_ydm_njl_twb"
-class="pre codeblock"><code>&quot;aspect_ratios&quot;: [
-                    {
-                        &quot;min_width&quot; : 100,
-                        &quot;ratio_width&quot;: 1,
-                        &quot;ratio_height&quot;: 2
-                    }
-                ]</code></pre>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__1"><code
-class="ph codeph">image_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__3"><p>The
-format of the image. Possible values include:</p>
-<ul>
-<li>main_image</li>
-<li>icon_image</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__1"><code
-class="ph codeph">required</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__3"><p>Specify
-if the image is required.</p>
-<p>Possible values:</p>
-<ul>
-<li><strong>1</strong> - Required</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__1"><code
-class="ph codeph">sizes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="native-layout-service__table_ujc_hjl_twb__entry__3"><p>The size
-of the image. Specify both <strong>width</strong> and
-<strong>height.</strong></p>
+"sizes": [
+{
+"width": 300,
+"height": 500
+}
+]
+```
 
-Example:
-<pre id="native-layout-service__codeblock_b2q_ljl_twb"
-class="pre codeblock"><code>&quot;sizes&quot;: [
-             {
-                  &quot;width&quot;: 300,
-                  &quot;height&quot;: 500
-              }
-          ]</code></pre>
-</td>
-</tr>
-</tbody>
-</table>
-
-**Data Assets**
+### Data assets
 
 The `data_assets` object includes the following fields:
 
-<table id="native-layout-service__table_rzk_rjl_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="native-layout-service__table_rzk_rjl_twb__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="native-layout-service__table_rzk_rjl_twb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="native-layout-service__table_rzk_rjl_twb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__1"><code
-class="ph codeph">data_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__3"><p>The
-asset type for the native creative. Possible values:</p>
-<ul>
-<li>sponsored_by</li>
-<li>title</li>
-<li>description</li>
-<li>rating</li>
-<li>call_to_action</li>
-<li>display_url</li>
-<li><p>likes</p></li>
-<li><p>downloads</p></li>
-<li><p>price</p></li>
-<li><p>sale_price</p></li>
-<li><p>phone</p></li>
-<li><p>address</p></li>
-<li><p>additional_description</p></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__1"><code
-class="ph codeph">required</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__3">If required
-then the value should be <strong>1</strong>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__1"><code
-class="ph codeph">maximum_length</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="native-layout-service__table_rzk_rjl_twb__entry__3">The maximum
-length of the data asset</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `data_type` | string | The asset type for the native creative. Possible values:<br> - `sponsored_by`<br> - `title`<br> - `description`<br> - `rating`<br> - `call_to_action`<br> - `display_url`<br> - `likes`<br> - `downloads`<br> - `price`<br> - `sale_price`<br> - `phone`<br> - `address`<br> - `additional_description` |
+| `required` | int | If required then the value should be `1`. |
+| `maximum_length` | int | The maximum length of the data asset. |
 
 ## Examples
 
+### Create a new native layout protocol
 
-
-**Create a new native layout protocol**
-
-``` pre
+```
 $ cat native_layout
 
 {
@@ -404,11 +164,3 @@ $ curl -b cookies -c cookies -X POST -d @native_layout 'https://api.appnexus.com
     }
 }
 ```
-
-
-
-
-
-
-
-
