@@ -1,27 +1,14 @@
 ---
-Title : Dynamic Learn Percentage
-Description : <b>Tip:</b> This guide only applies to the
+title: Dynamic Learn Percentage
+description: Learn about Dynamic Learn and how it can used to accelerate the learning process and improve publisher revenue eCPM.  
 ms.date: 10/28/2023
-legacy line item. If you are using the augmented line item (ALI), see
 ---
 
 
-# Dynamic Learn Percentage
+# Dynamic learn percentage
 
-
-
-
-
-
-
-<b>Tip:</b> This guide only applies to the
-legacy line item. If you are using the augmented line item (ALI), see
-<a href="optimization-guide-ali.md" class="xref">Optimization Guide -
-ALI</a>.
-
-
-
-
+> [!TIP]
+> This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
 
 Dynamic learn is a sell-side optimization algorithm designed to
 accelerate the learning process and improve publisher revenue eCPM by
@@ -33,18 +20,8 @@ Since dynamic learn is only applied when optimizing to a performance
 goal (e.g., CPC, CPA), this content does not apply to campaigns/line
 items that do not use optimization.
 
-
-
-
-
-<b>Tip:</b> The **RPM** (Revenue Per Thousand)
-of a node is inverse to volume; low volume means that we will allocate a
-greater portion of our impressions to the highest performing nodes to
-optimize return.
-
-
-
-
+> [!TIP]
+> The **RPM** (Revenue Per Thousand) of a node is inverse to volume; low volume means that we will allocate a greater portion of our impressions to the highest performing nodes to optimize return.
 
 On the Xandr platform, there are two types of
 auctions that occur: **Learn Auctions**, which give preference to bids
@@ -53,12 +30,10 @@ preference to bids from nodes in an optimized state. The percentage of
 auctions that will actively search for learn bids is automatically
 determined by the system. However, you can determine the maximum learn
 percentage at the publisher level. This setting is called **Override
-dynamic learn**. For more details, see
-<a href="create-a-publisher.md" class="xref">Create a Publisher</a>.
+dynamic learn**. For more details, see [Create a Publisher](create-a-publisher.md).
 
 For more information about how this setting affects the learn and
-optimized phase, see the
-<a href="learn-budget.md" class="xref">Learn Budget</a> section.
+optimized phase, see the [Learn Budget](learn-budget.md) section.
 
 As a general rule:
 
@@ -78,18 +53,8 @@ auctions run as dynamic learn. After that, the dynamic learn algorithm
 runs twice a day, adjusting learn allocation up or down by at most 20%
 per algorithm execution.
 
-
-
-
-
-<b>Tip:</b> If a publisher sets the dynamic
-learn percentage manually, the algorithm still executes and updates the
-learn allocation, but our system ignores the calculated amount. If the
-user removes the manual override, the calculated amount is again used.
-
-
-
-
+> [!TIP]
+> If a publisher sets the dynamic learn percentage manually, the algorithm still executes and updates the learn allocation, but our system ignores the calculated amount. If the user removes the manual override, the calculated amount is again used.
 
 The system does not remember the starting point for existing publishers
 that were previously using a manual learn allocation. Therefore, we
@@ -101,21 +66,21 @@ Dynamic learn is able to adjust learning rates at a very granular level,
 allocating as needed to ensure that allocation and targeting adjustments
 are made to follow high-performing auctions.
 
-How Dynamic Learn is Used
+## How dynamic learn is used
 
 The following steps illustrate the mechanics of the dynamic learn
 algorithm at a high level:
 
-1.  Each new venue starts at a default max learn percent; either 80% for
+1. Each new venue starts at a default max learn percent; either 80% for
     a new publisher, or the most recent max learn percent of the venue
     from which it diverged. Existing publishers/venues will use their
     current max learn percent as a starting value.
 
-2.  Twice daily, when updating max learn percent, we will aggregate the
+1. Twice daily, when updating max learn percent, we will aggregate the
     data for each venue since the last update, separated into learn and
     optimized impressions. One of the items we aggregate is the **RPM**.
 
-3.  If the **Optimized RPM** is higher than **Learn RPM**, we reduce the
+1. If the **Optimized RPM** is higher than **Learn RPM**, we reduce the
     max learn percent. If **Learn RPM** is higher than **Optimized
     RPM**, we will increase max learn percent. The max learn percent
     cannot increase nor decrease by more than 20% at one time.
@@ -130,18 +95,11 @@ algorithm at a high level:
     learn algorithm increases the max learn percent, allowing this new
     campaign to become optimized faster.
 
-Related Topics
+## Related topics
 
-- <a href="optimization-buying-strategies.md" class="xref">Optimization
-  Buying Strategies</a>
-- <a href="what-is-an-optimization-node.md" class="xref">What is an
-  Optimization Node?</a>
-- <a href="targeted-learn.md" class="xref">Targeted Learn</a>
-- <a href="learn-budget.md" class="xref">Learn Budget</a>
-- <a href="optimization-levers.md" class="xref">Optimization Levers</a>
-- <a href="sell-side-optimization.md" class="xref">Sell-Side
-  Optimization</a>
-
-
-
-
+- [Optimization Buying Strategies](optimization-buying-strategies.md)
+- [What is an Optimization Node?](what-is-an-optimization-node.md)
+- [Targeted Learn](targeted-learn.md)
+- [Learn Budget](learn-budget.md)
+- [Optimization Levers](optimization-levers.md)
+- [Sell-Side Optimization](sell-side-optimization.md)

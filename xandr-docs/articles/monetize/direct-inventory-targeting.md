@@ -1,32 +1,23 @@
 ---
-Title : Direct Inventory Targeting
-Description : <b>Note:</b> This form of targeting is only
+title: Direct Inventory Targeting
+description: In this page learn what is Direct Inventory Targeting and steps you need to perform to include or exclude specific managed publishers, sites, or placements. 
 ms.date: 10/28/2023
-available to Standard Line Items. For an overview of which targeting
 ---
 
 
-# Direct Inventory Targeting
+# Direct inventory targeting
 
-
-
-
-
-<b>Note:</b> This form of targeting is only
-available to Standard Line Items. For an overview of which targeting
-options are available to Standard versus Augmented Line items, see
-<a href="buy-side-targeting.md" class="xref">Buy-Side Targeting</a>.
-
-
+> [!NOTE]
+> This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 If your campaign is set to buy direct inventory, your campaign will
 target all of your direct inventory by default. However, you can narrow
 your targeting to include or exclude specific managed publishers, sites,
 or placements.
 
-1.  In the Targeting section, click
-    Edit next to **Inventory**.
-2.  On the Direct Inventory tab,
+1. In the **Targeting** section, click
+    **Edit** next to **Inventory**.
+1. On the **Direct Inventory** tab,
     include or exclude direct inventory at the appropriate level:
     - The **Publishers** lists shows all of your managed publishers. You
       can either include or exclude publishers or drill into a publisher
@@ -43,14 +34,10 @@ or placements.
     - **Text Mode** lets you target managed objects by ID. To do so,
       switch into **text** mode, select the type of ID, enter the IDs
       separated by commas, space, or lines, and then select
-      Include or
-      Exclude.
-3.  Click Add.
+      **Include** or
+      **Exclude**.
+1. Click **Add**.
 
-Related Topic
+## Related topic
 
-- <a href="create-a-campaign.md" class="xref">Create a Campaign</a>
-
-
-
-
+ [Create a Campaign](create-a-campaign.md)

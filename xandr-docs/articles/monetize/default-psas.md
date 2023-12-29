@@ -1,55 +1,34 @@
 ---
-Title : Default PSAs
-Description : Default public service announcement creatives (PSAs or PSA creatives)
+title: Default PSAs
+description: Learn how Xandr serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks.
 ms.date: 10/28/2023
-are actual PSAs that Xandr serves in order to
-prevent serving blanks under certain circumstances.
 ---
 
 
 # Default PSAs
 
-
-
 Default public service announcement creatives (PSAs or PSA creatives)
 are actual PSAs that Xandr serves in order to
 prevent serving blanks under certain circumstances.
 
+> [!TIP]
+> It is a best practice to set up a default creative for each placement so that a PSA does not serve. For more information, see [Assign a Default Creative to a Placement](assign-a-default-creative-to-a-placement.md).
 
-
-<b>Tip:</b> It is a best practice to set up a
-default creative for each placement so that a PSA does not serve. For
-more information, see
-<a href="assign-a-default-creative-to-a-placement.md"
-class="xref">Assign a Default Creative to a Placement</a>.
-
-
-
-
-
-<b>Note:</b>
-
-**About Flagged Impressions**
-
-In the past, filtered impressions on inventory flagged as violating
-platform standards would serve blanks. Now, these impressions follow
-seller preferences for impressions with no demand. As with all
-impressions that follow this workflow, sellers will be charged the
-applicable fee.
-
-
+> [!NOTE]
+> **About Flagged Impressions**
+>
+>In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
 
 Default PSAs are ads intended for general audiences that
 Xandr serves for various causes and nonprofit
 organizations at no cost in order to prevent serving a blank when there
 is no other creative to serve.
 
-Example PSAs
+## Example PSAs
 
 Below are a few examples of default PSAs served for managed inventory.
 
-![Default](media/default-psas.png)
-
+:::image type="content" source="media/default-psas.png" alt-text="Screenshot of Default .":::
 
 A PSA creative provided by Xandr will be served
 for your managed inventory in the following circumstances:
@@ -63,14 +42,14 @@ for your managed inventory in the following circumstances:
   We have PSAs for all standard placement sizes. If the placement tag is
   an unusual size for which we don't have a PSA, a blank will be served.
 
-Report on PSAs
+## Report on PSAs
 
 In network reporting, PSAs will show up as a buyer in a report grouped
 by buyer. The buyer member associated with Xandr
 default PSAs is ID 229, Public Service Announcements, but the report
 will show a row for Buyer: PSA, and will not include Buyer 229.
 
-Avoid Showing PSAs
+## Avoid showing PSAs
 
 To avoid showing PSAs, you can do the following:
 
@@ -78,17 +57,10 @@ To avoid showing PSAs, you can do the following:
   more campaigns. You may wish to review frequency caps, budget, and
   category/placement group/placement targeting to make sure they are not
   limiting the purchase of your direct inventory.
-- <a href="assign-a-default-creative-to-a-placement.md" class="xref">Add
-  a default creative to the placement</a>. This will serve in case the
+- [Add a default creative to the placement](assign-a-default-creative-to-a-placement.md). This will serve in case the
   impression is not purchased.
 
-Related Topics
+## Related topics
 
-- <a href="working-with-placements.md" class="xref">Working with
-  Placements</a>
-- <a href="assign-a-default-creative-to-a-placement.md"
-  class="xref">Assign a Default Creative to a Placement</a>
-
-
-
-
+- [Working with Placements](working-with-placements.md)
+- [Assign a Default Creative to a Placement](assign-a-default-creative-to-a-placement.md)
