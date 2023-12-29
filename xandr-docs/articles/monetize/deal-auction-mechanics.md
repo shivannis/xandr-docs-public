@@ -35,7 +35,7 @@ inventory via other means, compete for the impression.
 > - A default creative reserve price will always take priority over th placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
-## Examples
+## Examples (open auction)
 
 ### Deal bid wins
 
@@ -74,7 +74,7 @@ targeting the inventory via other means.
 - If no private auction bids clear their ask prices, the highest bid in
   the open auction wins, paying the bid price.
 
-## Examples
+## Examples (private auction)
 
 ### Deal bid wins in private auction (no open auction held)
 

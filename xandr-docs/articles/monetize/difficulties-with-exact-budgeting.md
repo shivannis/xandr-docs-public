@@ -1,7 +1,6 @@
 ---
 title: Difficulties with Exact Budgeting
-description: Learn why it can be difficult to spend exactly as much as
-you budgeted, so you can make allowances for such variations, in this page.
+description: Learn why it can be difficult to spend exactly as much as you budgeted, so you can make allowances for such variations, in this page.
 ms.date: 10/28/2023
 ---
 

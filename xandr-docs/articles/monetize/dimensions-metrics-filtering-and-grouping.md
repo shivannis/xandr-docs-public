@@ -85,7 +85,7 @@ metrics: **Impressions** and **Clicks**. Here it is in its entirety:
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28Dec2023/tiny-db.csv) the example in CSV format
+You can also [Download](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/tiny-db.csv) the example in CSV format
 
 ## Filtering examples
 

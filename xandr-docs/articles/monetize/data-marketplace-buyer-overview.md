@@ -53,7 +53,7 @@ representative for the latest rates.
 | Crossix | Audience | [crossix_digitalconnect@veeva.com](mailto:crossix_digitalconnect@veeva.com) |  |
 | Datmean | Deterministic Audience | [data@datmean.com](mailto:data@datmean.com) |  |
 | Datonics | Audience | [data@datonics.com](mailto:data@datonics.com) |  |
-| DoubleVerify | Audience (Fraud/IVT) and Contextual | [programmaticsales@doubleverify.com](programmaticsales@doubleverify.com) | Yes |
+| DoubleVerify | Audience (Fraud/IVT) and Contextual | [programmaticsales@doubleverify.com](mailto:programmaticsales@doubleverify.com) | Yes |
 | Dstillery | Audience | [Data@dstillery.com](mailto:Data@dstillery.com) |  |
 | Epsilon | Audience | [OnlineDataHotline@epsilon.com](mailto:OnlineDataHotline@epsilon.com) |  |
 | Equifax | Audience | No contact provided. |  |
@@ -338,7 +338,7 @@ criteria.
 
 :::image type="content" source="media/advanced-or-a.png" alt-text="Screenshot of advanced OR 1 .":::
 
-:::image type="content" source="media/advanced-or-b.png" alt-text="Screenshot of advanced OR 2 .":::
+:::image type="content" source="media/advanced-or-b.png" alt-text="Diagram of advanced OR 2 .":::
 
  - If the ad request is relevant to more than one segment (overlaps),
   Xandr will use the lowest priced segment to
