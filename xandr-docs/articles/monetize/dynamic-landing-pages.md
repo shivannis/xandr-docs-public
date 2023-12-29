@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Dynamic Landing Pages
-description : Learn about Landing pages in this page.
+title: Microsoft Monetize - Dynamic Landing Pages
+description: Learn about Landing pages in this page.
 ms.date: 10/28/2023
 ---
 

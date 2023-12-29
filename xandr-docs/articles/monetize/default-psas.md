@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Default PSAs
-description : Learn how Xandr serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks.
+title: Default PSAs
+description: Learn how Xandr serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Default PSAs
+# Default PSAs
 
 Default public service announcement creatives (PSAs or PSA creatives)
 are actual PSAs that Xandr serves in order to

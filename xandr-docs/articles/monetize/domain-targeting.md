@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Domain Targeting
-description : Learn what is Domain Targeting, where it is available and how it can be applied. 
+title: Domain Targeting
+description: Learn what is Domain Targeting, where it is available and how it can be applied. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Domain targeting
+# Domain targeting
 
 > [!NOTE]
 > This form of targeting is only available for Standard Line Items and the campaigns associated with them. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).

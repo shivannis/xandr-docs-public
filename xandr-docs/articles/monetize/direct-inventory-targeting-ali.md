@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Direct Inventory Targeting (ALI)
-description : Learn how to limit your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. 
+title: Microsoft Monetize - Direct Inventory Targeting (ALI)
+description: Learn how to limit your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. 
 ms.date: 10/28/2023
 ---
 

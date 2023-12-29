@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Edit a Network User
-description : Learn editing Network user, including contact information, and peer approval requirements. 
+title: Edit a Network User
+description: Learn editing Network user, including contact information, and peer approval requirements. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Edit a network user
+# Edit a network user
 
 This page walks you through the steps required to edit a
 Network user, including contact information,

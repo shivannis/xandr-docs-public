@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
-description : Learn how a seamless deal transaction between Xandr Monetize publishers and Trade Desk buyers is possible.  
+title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
+description: Learn how a seamless deal transaction between Xandr Monetize publishers and Trade Desk buyers is possible.  
 ms.date: 10/28/2023
 ---
 

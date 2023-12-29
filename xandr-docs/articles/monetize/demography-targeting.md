@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Demography Targeting
-description : Learn how to target users on the basis of demographic information.
+title: Microsoft Monetize - Demography Targeting
+description: Learn how to target users on the basis of demographic information.
 ms.date: 10/28/2023
 ---
 

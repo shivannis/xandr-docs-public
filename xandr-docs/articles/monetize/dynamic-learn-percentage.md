@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Dynamic Learn Percentage
-description : Learn about Dynamic Learn and how it can used to accelerate the learning process and improve publisher revenue eCPM.  
+title: Dynamic Learn Percentage
+description: Learn about Dynamic Learn and how it can used to accelerate the learning process and improve publisher revenue eCPM.  
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Dynamic learn percentage
+# Dynamic learn percentage
 
 > [!TIP]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).

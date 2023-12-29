@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Device Type Targeting
-description : Learn how to access Device Type Targeting options in this page.
+title: Microsoft Monetize - Device Type Targeting
+description: Learn how to access Device Type Targeting options in this page.
 ms.date: 10/28/2023
 ---
 
@@ -38,7 +38,7 @@ to restrict the device types you are
   > - **Connected Audio** is only available in Invest.
   > - When targeting devices models **Targeting > System > Device Model** with **Make =** **Apple**, you should include the following device models to avoid under-delivery. For Example: **iPad (300)** and **iPhone (301)**.
 
-## Related topic
+## Related topics
 
 - [Buy-Side Targeting](buy-side-targeting.md)
 - [Create an Insertion Order](create-an-insertion-order.md)

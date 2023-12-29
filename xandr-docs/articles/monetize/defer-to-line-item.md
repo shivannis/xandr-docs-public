@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Defer to Line Item
-description : Learn how Defer to Line Item works and how to turn it on.
+title: Defer to Line Item
+description: Learn how Defer to Line Item works and how to turn it on.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Defer to line item
+# Defer to line item
 
 If you have a Line Item with a **CPA booked Revenue** it may take some
 time to collect enough data to optimize to conversions. You may wish to
@@ -39,4 +39,4 @@ your Line Item Booked Revenue.
 
 ## Related topic
 
-- [Optimization Levers](optimization-levers.md)
+[Optimization Levers](optimization-levers.md)

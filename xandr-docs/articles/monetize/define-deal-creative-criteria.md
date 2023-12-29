@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Define Deal Creative Criteria
-description : Learn about Setting deal creative criteria for your Programmatic Guaranteed selling line item.  
+title: Define Deal Creative Criteria
+description: Learn about Setting deal creative criteria for your Programmatic Guaranteed selling line item.  
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Define deal creative criteria
+# Define deal creative criteria
 
 Setting deal creative criteria for your Programmatic Guaranteed selling
 line item (PG selling line item) allows you to override you network and

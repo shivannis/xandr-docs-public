@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Delete a Custom Creative Template
-description : Learn deleting Custom Templates from the Creative Templates screen.  
+title: Microsoft Monetize - Delete a Custom Creative Template
+description: Learn deleting Custom Templates from the Creative Templates screen.  
 ms.date: 10/28/2023
 ---
 

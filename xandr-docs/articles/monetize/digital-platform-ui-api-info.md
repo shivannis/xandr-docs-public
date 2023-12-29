@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Monetize API
-description : Learn about API and the services that are available using the links given in this page. 
+title: Monetize API
+description: Learn about API and the services that are available using the links given in this page. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Monetize API
+# Monetize API
 
 Microsoft Monetize is built on a robust API that is
 available to customers. You can use this API to automate certain tasks

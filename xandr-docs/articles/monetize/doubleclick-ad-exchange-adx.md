@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Google Ad Manager
-description : Xandr has brandsafe creative policies, but in
+title: Google Ad Manager
+description: Learn about requirements to run ads through Google Ad Manager. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Google Ad manager
+# Google Ad manager
 
 Xandr has brandsafe creative policies, but in
 order to run ads through the Google Ad Manager, you must also follow the

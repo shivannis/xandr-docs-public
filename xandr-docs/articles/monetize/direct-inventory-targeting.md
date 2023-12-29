@@ -1,11 +1,11 @@
 ---
-title : Microsoft Monetize - Direct Inventory Targeting
-description : In this page learn what is Direct Inventory Targeting and steps you need to perform to include or exclude specific managed publishers, sites, or placements. 
+title: Direct Inventory Targeting
+description: In this page learn what is Direct Inventory Targeting and steps you need to perform to include or exclude specific managed publishers, sites, or placements. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Direct inventory targeting
+# Direct inventory targeting
 
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
@@ -40,4 +40,4 @@ or placements.
 
 ## Related topic
 
-- [Create a Campaign](create-a-campaign.md)
+ [Create a Campaign](create-a-campaign.md)

@@ -1,13 +1,13 @@
 ---
-title : Microsoft Monetize - Deal Sync with Trade Desk (FAQ)
-description : This page deals with FAQs on Deal Synchronization with Trade Desk.
+title: Microsoft Monetize - Deal Sync with Trade Desk (FAQ)
+description: This page deals with FAQs on Deal Synchronization with Trade Desk.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Deal sync with trade desk (FAQ)
 
-Frequently Asked Questions About Deal Synchronization with Trade Desk
+Frequently Asked Questions About Deal Synchronization with Trade Desk:
 
 > [!NOTE]
 > This feature is in **Beta**. It is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test.
