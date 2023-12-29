@@ -27,8 +27,8 @@ data stored in `bidder.rpt_report_member_access`.
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the report member access setting.<br>**Default:** Auto-generated number.<br>**Required On:** `PUT`/`DELETE`, in query string. |
-| `member` | object | An object with an id of the member for which you're adding access.<br>**Default:** None<br>**Required On:** `POST` |
-| `report` | object | An object with an id of the report for which you're adding access.<br>**Default:** None<br>**Required On:** `POST` |
+| `member` | object | An object with an id of the member for which you're adding access.<br>**Default:** `None`<br>**Required On:** `POST` |
+| `report` | object | An object with an id of the report for which you're adding access.<br>**Default:** `None`<br>**Required On:** `POST` |
 
 ## Examples
 

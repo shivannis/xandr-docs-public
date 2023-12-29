@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Real-time signals service (formerly APD)
+# Real-time Signals Service (formerly APD)
 
 > [!WARNING]
 >

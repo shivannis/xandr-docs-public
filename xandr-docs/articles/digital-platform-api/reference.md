@@ -35,7 +35,7 @@ For more details, see [Authentication Service](authentication-service.md).
 
 ## Buy-side services
 
-Below are examples of a few buy-side services. For details of all the services for buy-side, go to [Buy-Side Services](buy-side-services.md).
+Below are examples of a few buy-side services. For details of all the services for buy-side, see [Buy-Side Services](buy-side-services.md).
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
@@ -47,7 +47,7 @@ Below are examples of a few buy-side services. For details of all the services f
 
 | Service Name | Endpoint | Context | Read-only? |
 |:---|:---|:---|:---|
-| [Change Log Services](change-log-services.md) | [https://api.appnexus.com/change-log](https://api.appnexus.com/change-log)<br>[https://api.appnexus.com/change-log-detail](https://api.appnexus.com/change-log-detail) | Buying | Yes |
+| [Change Log Services](change-log-services.md) | - [https://api.appnexus.com/change-log](https://api.appnexus.com/change-log)<br>- [https://api.appnexus.com/change-log-detail](https://api.appnexus.com/change-log-detail) | Buying | Yes |
 
 For more details, see [Change Log Services](change-log-services.md).
 

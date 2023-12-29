@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Read-only services
+# Digital Platform API - Read-only services
 
 These are reference services that provide IDs for things such as [language](language-service.md) and [cities](city-service.md). Once you have the ID you can use them elsewhere, as in the [Profile Service](profile-service.md).
 

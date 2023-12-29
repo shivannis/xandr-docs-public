@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Report pagination
 
 Report Pagination is a feature that allows API users to retrieve long-running reports that would otherwise time out before they complete
-processing. For more information about reporting API usage limits, see the Report Throttling section of the [Report Service](report-service.md) page.
+processing. For more information about reporting API usage limits, see the **Report Throttling** section of the [Report Service](report-service.md) page.
 
 Crafting a more granular report with fewer dimensions and metrics or pulling a report on a shorter timeframe is usually the best option for ensuring that a report does not time out. For tips on keeping your reports lean and focused, see the [API Best Practices](api-best-practices.md) page.
 
@@ -17,7 +17,7 @@ allow you to retrieve a long-running report in smaller chunks.
 
 ## Report pagination required fields
 
-The feature requires that you include three fields in the body of your JSON request (for details, see the [Example](#example)):
+The feature requires that you include three fields in the body of your JSON request (for details, see the [Examples](#examples)):
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -27,7 +27,7 @@ The feature requires that you include three fields in the body of your JSON requ
 
 ## Implementing report pagination
 
-If you have used the API's paging system for retrieving configuration bjects from the API (as described in the Paging section of [API Semantics](api-semantics.md)), this feature should feel familiar.
+If you have used the API's paging system for retrieving configuration bjects from the API (as described in the **Paging** section of [API Semantics](api-semantics.md)), this feature should feel familiar.
 
 The `"num_elements"` field is used to specify how many rows are in each "page" of the report, and has no maximum value but should be tuned to a number that allows the report to process without timing out.
 
@@ -40,11 +40,14 @@ The `"offset"` field should start at 0 and should increment in multiples of `"
 There is no maximum value on the `"num_elements"` field, so you will want to tune this number against the time it takes to run a report in
 the specific member seat that you are retrieving. Most large reports can safely be retrieved with the `"num_elements"` field set to a value between 1MM rows and 2MM rows, but you should test that value for your own report.
 
-## Example
+## Examples
 
 ### Step 1: Create the paginated report JSON
 
-This particular report will consist of two report requests: `report_page_1.json` and `report_page_2.json`. Note that the requests are identical except for the `"offset"` field, and that the `"orders"` field is required.
+This particular report will consist of two report requests: `report_page_1.json` and `report_page_2.json`.
+
+> [!NOTE]
+> The requests are identical except for the `"offset"` field, and that the `"orders"` field is required.
 
 ```
 $ cat report_page_1.json    

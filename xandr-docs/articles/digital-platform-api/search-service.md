@@ -16,7 +16,7 @@ The universal search service makes it easier to search for objects without speci
 
 ## Using search with no parameters
 
-If you would like to search for objects across all object types that have the term "hairspray" in them, you can do so by posting `'api.``appnexus``.com/search?q=hairspray'`. This will return objects that have hairspray in the name, ID, or code.
+If you would like to search for objects across all object types that have the term "hairspray" in them, you can do so by posting `'api.appnexus.com/search?q=hairspray'`. This will return objects that have hairspray in the name, ID, or code.
 
 The API will automatically return results for the following object types:
 

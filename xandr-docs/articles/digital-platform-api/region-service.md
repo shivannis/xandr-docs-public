@@ -1,11 +1,11 @@
 ---
-title: Region Service
+title: Digital Platform API - Region Service
 description: Explore the read-only Region service to view information about the regions and states registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Region service
+# Digital Platform API - Region service
 
 The read-only Region Service allows you to see information about the regions and states registered in the Xandr system, including the country to which each region/state belongs. You can use this service to retrieve region IDs for targeting in campaigns (see `region_targets` in the [Profile Service](profile-service.md)).
 

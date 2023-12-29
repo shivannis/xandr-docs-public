@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Segment Loads report
+# Digital Platform API - Segment Loads report
 
 The Segment Loads report allows you to view metrics about your segments, including the total number of segment pixel loads and the number of unique user IDs included at specific points in time.
 
@@ -52,178 +52,178 @@ The `report_interval` field in the JSON request can be set to:
 
 1. Create the JSON request for the report.
 
-```
-$ cat segment_load
-{
-    "report":
+    ```
+    $ cat segment_load
     {
-        "report_type": "segment_load",
-        "columns": [
-            "segment_id",
-            "segment_name",
-            "month",
-            "total_loads",
-            "monthly_uniques",
-            "avg_daily_uniques"
-        ],
-        "groups": [
-            "segment_id",
-            "month"
-        ],
-        "orders": [
-            "month"
-        ],
-        "emails": ["js@email.com"],
-        "format": "csv"
+        "report":
+        {
+            "report_type": "segment_load",
+            "columns": [
+                "segment_id",
+                "segment_name",
+                "month",
+                "total_loads",
+                "monthly_uniques",
+                "avg_daily_uniques"
+            ],
+            "groups": [
+                "segment_id",
+                "month"
+            ],
+            "orders": [
+                "month"
+            ],
+            "emails": ["js@email.com"],
+            "format": "csv"
+        }
     }
-}
-```
+    ```
 
 1. `POST` the request to the Report Service.
 
-```
-$ curl -b cookies -c cookies -X POST -d @segments_monthly 'https://api.appnexus.com/report'
-
-{
-    "response":{
-        "status":"OK",
-        "report_id":"07af1282c9485adcef49c95fa5d7496b"
+    ```
+    $ curl -b cookies -c cookies -X POST -d @segments_monthly 'https://api.appnexus.com/report'
+    
+    {
+        "response":{
+            "status":"OK",
+            "report_id":"07af1282c9485adcef49c95fa5d7496b"
+        }
     }
-}
-```
+    ```
 
 1. `GET` the report status from the Report service.
 
-Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+    Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
+    `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-```
-$ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485adcef49c95fa5d7496b'
-
-{
-    "response": {
-        "status": "OK",
-        "report": {
-            "name": null,
-            "created_on": "2012-02-10 16:41:39",
-            "cache_hit": false,
-            "fact_cache_hit": false,
-            "fact_cache_error": null,
-            "json_request": "{\"report\":{\"report_type\":\"segment_load\",\"columns\":
-             [\"segment_id\",\"segment_name\",\"month\",\"total_loads\",\"monthly_uniques\",
-             \"avg_daily_uniques\"],\"groups\":[\"segment_id\",\"month\"],\"orders\":
-             [\"month\"],\"emails\":[\"js@email.com\"],\"row_per\":[\"segment_id\",
-             \"month\"]}}",
-            "header_info": "Report type:,segment_load\u000d\u000a,\u000d\u000aRun at:,
-             2012-02-10 16:41:39\u000d\u000aStart date:,\u000d\u000aEnd date:,\u000d\u000aTimezone:,
-             \u000d\u000aUser:,John Smith (10055)\u000d\u000a",
-            "url": "report-download?id=07af1282c9485adcef49c95fa5d7496b"
-        },
-        "execution_status": "ready"
+    ```
+    $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=07af1282c9485adcef49c95fa5d7496b'
+    
+    {
+        "response": {
+            "status": "OK",
+            "report": {
+                "name": null,
+                "created_on": "2012-02-10 16:41:39",
+                "cache_hit": false,
+                "fact_cache_hit": false,
+                "fact_cache_error": null,
+                "json_request": "{\"report\":{\"report_type\":\"segment_load\",\"columns\":
+                 [\"segment_id\",\"segment_name\",\"month\",\"total_loads\",\"monthly_uniques\",
+                 \"avg_daily_uniques\"],\"groups\":[\"segment_id\",\"month\"],\"orders\":
+                 [\"month\"],\"emails\":[\"js@email.com\"],\"row_per\":[\"segment_id\",
+                 \"month\"]}}",
+                "header_info": "Report type:,segment_load\u000d\u000a,\u000d\u000aRun at:,
+                 2012-02-10 16:41:39\u000d\u000aStart date:,\u000d\u000aEnd date:,\u000d\u000aTimezone:,
+                 \u000d\u000aUser:,John Smith (10055)\u000d\u000a",
+                "url": "report-download?id=07af1282c9485adcef49c95fa5d7496b"
+            },
+            "execution_status": "ready"
+        }
     }
-}
-```
+    ```
 
 1. `GET` the report data from the Report Download service.
 
-To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
-```
-curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=07af1282c9485adcef49c95fa5d7496b' > /temp/segement_load.csv
-```
+    ```
+    curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=07af1282c9485adcef49c95fa5d7496b' > /temp/segement_load.csv
+    ```
 
 ### Viewing daily metrics for segment `184531`
 
 1. Create the JSON request for the report.
 
-> [!NOTE]
-> To get metrics for a specific segment, you must filter the report by `segment_id`.
+    > [!NOTE]
+    > To get metrics for a specific segment, you must filter the report by `segment_id`.
 
-```
-$ cat segment_daily
-
-{
-    "report":
+    ```
+    $ cat segment_daily
+    
     {
-        "report_type": "segment_load",
-        "columns": [
-            "segment_id",
-            "segment_name",
-            "day",
-            "total_loads",
-            "daily_uniques"
-        ],
-        "filters": [
-            {
-                "segment_id": 184531
-            }
-        ],
-        "groups": [
-            "segment_id",
-            "day"
-        ],
-        "orders": [
-            "day"
-        ],
-        "emails": ["js@email.com"],
-        "format": "csv"
+        "report":
+        {
+            "report_type": "segment_load",
+            "columns": [
+                "segment_id",
+                "segment_name",
+                "day",
+                "total_loads",
+                "daily_uniques"
+            ],
+            "filters": [
+                {
+                    "segment_id": 184531
+                }
+            ],
+            "groups": [
+                "segment_id",
+                "day"
+            ],
+            "orders": [
+                "day"
+            ],
+            "emails": ["js@email.com"],
+            "format": "csv"
+        }
+    } 
+    ```
+
+1. `POST` the request to the Report service
+
+    ```
+    $ curl -b cookies -c cookies -X POST -d segment_load 'https://api.appnexus.com/report'
+    
+    {
+        "response":{
+            "status":"OK",
+            "report_id":"c5975474b00c68f3cd1db49b8fe758da"
+        }
     }
-} 
-```
-
-### `POST` the request to the Report service
-
-```
-$ curl -b cookies -c cookies -X POST -d segment_load 'https://api.appnexus.com/report'
-
-{
-    "response":{
-        "status":"OK",
-        "report_id":"c5975474b00c68f3cd1db49b8fe758da"
-    }
-}
-```
+    ```
 
 1. `GET` the report status from the Report service.
 
-Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+    Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
+    `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-```
-$ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=c5975474b00c68f3cd1db49b8fe758da'
-
-{
-    "response": {
-        "status": "OK",
-        "report": {
-            "name": null,
-            "created_on": "2012-02-10 15:52:16",
-            "cache_hit": false,
-            "fact_cache_hit": false,
-            "fact_cache_error": null,
-            "json_request": "{\"report\":{\"report_type\":\"segment_load\",\"columns\":
-             [\"segment_id\",\"segment_name\",\"day\",\"total_loads\",\"daily_uniques\"],
-             \"filters\":[{\"segment_id\":184531}],\"groups\":[\"segment_id\",\"day\"],
-             \"orders\":[\"day\"],\"emails\":[\"js@email.com\"],\"row_per\":
-             [\"segment_id\",\"day\"]}}",
-            "header_info": "Report type:,segment_load\u000d\u000a,\u000d\u000aRun at:,
-             2012-02-10 15:52:16\u000d\u000aStart date:,\u000d\u000aEnd date:,
-             \u000d\u000aTimezone:,\u000d\u000aUser:,John Smith (10356)\u000d\u000a",
-            "url": "report-download?id=c5975474b00c68f3cd1db49b8fe758da"
-        },
-        "execution_status": "ready"
+    ```
+    $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=c5975474b00c68f3cd1db49b8fe758da'
+    
+    {
+        "response": {
+            "status": "OK",
+            "report": {
+                "name": null,
+                "created_on": "2012-02-10 15:52:16",
+                "cache_hit": false,
+                "fact_cache_hit": false,
+                "fact_cache_error": null,
+                "json_request": "{\"report\":{\"report_type\":\"segment_load\",\"columns\":
+                 [\"segment_id\",\"segment_name\",\"day\",\"total_loads\",\"daily_uniques\"],
+                 \"filters\":[{\"segment_id\":184531}],\"groups\":[\"segment_id\",\"day\"],
+                 \"orders\":[\"day\"],\"emails\":[\"js@email.com\"],\"row_per\":
+                 [\"segment_id\",\"day\"]}}",
+                "header_info": "Report type:,segment_load\u000d\u000a,\u000d\u000aRun at:,
+                 2012-02-10 15:52:16\u000d\u000aStart date:,\u000d\u000aEnd date:,
+                 \u000d\u000aTimezone:,\u000d\u000aUser:,John Smith (10356)\u000d\u000a",
+                "url": "report-download?id=c5975474b00c68f3cd1db49b8fe758da"
+            },
+            "execution_status": "ready"
+        }
     }
-}
-```
+    ```
 
 1. `GET` the report data from the Report Download service.
 
-To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your
-initial `POST`.
+    To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the url field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your
+    initial `POST`.
 
-```
-curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=c5975474b00c68f3cd1db49b8fe758da' > /temp/segment_load.csv
-```
+    ```
+    curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=c5975474b00c68f3cd1db49b8fe758da' > /temp/segment_load.csv
+    ```
 
-> [!NOTE]
-> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
+    > [!NOTE]
+    > There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

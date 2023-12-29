@@ -18,11 +18,11 @@ The Registration Form Service allows you to upload the registration forms requir
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| `POST` | [https://api.appnexus.com/registration-form/upload-F uploadFile=@<local_path/local_file_name.pdf](https://api.appnexus.com/registration-form/upload)<br>where `local_path`/`local_file_name.pdf` is the path and name of the file to be uploaded.<br>If you do not have access to your local file path because you are calling the API from a browser, you will need to create a FormData object with the variable name `uploadFile` and upload that.<br>If you're using JavaScript to create a FormData object, for example, the code should look something like [this](#post-endpoint-example). | Upload a new registration form. |
+| `POST` | [https://api.appnexus.com/registration-form/upload-F uploadFile=@<local_path/local_file_name.pdf](https://api.appnexus.com/registration-form/upload)<br>where `local_path/local_file_name.pdf` is the path and name of the file to be uploaded.<br>If you do not have access to your local file path because you are calling the API from a browser, you will need to create a `FormData` object with the variable name `uploadFile` and upload that.<br>If you're using JavaScript to create a FormData object, for example, the code should look something like [this](#formdata-object). | Upload a new registration form. |
 | `GET` | [https://api.appnexus.com/registration-form?member_id=MEMBER_ID](https://api.appnexus.com/registration-form?member_id=MEMBER_ID) | View all registration forms for a member. |
 | `GET` | [https://api.appnexus.com/registration-form?file_path=FILE_PATH/FILE_NAME.PDF](https://api.appnexus.com/registration-form?file_path=FILE_PATH/FILE_NAME.PDF) | View a registration form.<br>To view a registration form, you must know the location to which the file was uploaded. Simply enter the URL in a browser or perform a `GET` on the URL. |
 
-### `POST` endpoint example
+### `FormData` object
 
 ```
 savePoliticalFormFile: async (uploadFile) => {

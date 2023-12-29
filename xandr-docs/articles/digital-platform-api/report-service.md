@@ -1,11 +1,11 @@
 ---
-title: Report Service
+title: Digital Platform API - Report Service
 description: Use the Report service to access different types of reports.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Report service
+# Digital Platform API - Report service
 
 The Report Service is used to provide access to many different types of reports. It also ensures that each user types can only access the
 reports that are appropriate for that type. For example, network users have access to all report types, while advertiser and publisher users only have access to a few.
@@ -41,13 +41,13 @@ The available metrics vary depending on the report type, but can include how muc
 | [Site Domain Performance Report](./site-domain-performance-report.md)<br>`site_domain_performance` | Network, Advertiser | Reporting on domain performance for a single advertiser. | 45 days |
 | [Seller Site Domain](./seller-site-domain-report.md)<br>`seller_site_domain` | Network | Reporting on what inventory is coming through a publisher. | 60 days |
 | [Segment Loads Report](./segment-loads-report.md)<br>`segment_load` | Network | Network reporting on segments. | 30 days |
-| Advertiser Attributed Conversions<br>`attributed_conversions` | Network | Network reporting on advertisers' attributed conversions. | 90 days |
+| [Advertiser Attributed Conversions](./advertiser-attributed-conversions.md)<br>`attributed_conversions` | Network | Network reporting on advertisers' attributed conversions. | 90 days |
 | [Geo Analytics Report](./geo-analytics-report.md)<br>`geo_analytics` | Network | Break down campaign delivery and performance by geographic area. | 45 days |
 | [Network Carrier Analytics](./network-carrier-analytics.md)<br>`network_carrier_analytics` | Network | Report on buy-side and sell-side performance data based on mobile device carriers. | 46 days |
 | [Network Device Analytics](./network-device-analytics.md)<br>`network_device_analytics` | Network | Report on buy-side and sell-side performance data based on devices where impressions were served. | 428 days |
 | [Conversion Pixel Last Fire](./conversion-pixel-last-fire.md)<br>`pixel_fired` | Network | Network reporting on the last fire date and time of advertisers' conversion pixels. | Lifetime |
 | [Completed Creative Audits Report](./completed-creative-audits-report.md)<br>`completed_creative_audits` | Network | Network report designed to give you insight into how your creatives are moving through the audit process | 365 days |
-| [Bulk Reporting Feeds](./bulk-reporting-feeds.md)<br>`network_analytics_feed`<br>clicktrackers | Network | The ability to sync our aggregated reports to your reporting database. | 30 days |
+| [Bulk Reporting Feeds](./bulk-reporting-feeds.md)<br>`network_analytics_feed`<br>`clicktrackers` | Network | The ability to sync our aggregated reports to your reporting database. | 30 days |
 | [Data Usage Report](./data-usage-report.md)<br>`buyer_data_usage_analytics` | Network | Network report that gives details on your usage of data provided by third parties (e.g., user segment providers), the costs of that data usage and line items/campaigns in which that data was used to target users. | 60 days |
 | [Vendor Usage Report](./vendor-usage-report.md)<br>`buyer_vendor_usage_analytics` | Network | Network report that provides the details on your usage of data or platform powered by third party vendors (e.g., user segment providers), the costs of that data or feature usage , and the line items/campaigns where vendor costs were applicable. | 60 days |
 | [Buyer Engagement Report](./buyer-engagement-report.md) <br>`buyer_engagement_report` | Advertiser | Provides insight into the viewable duration of your display and video creatives. | Last five weeks |
@@ -77,7 +77,7 @@ The meta array includes the following fields:
 
 | Field | Description |
 |:---|:---|
-| `time_granularity` | The granularity of time for which the report can provide data. Possible values: `"hourly"`, `"daily"`, `"monthly"`, `"yearly"`, or `"lifetime"`. <br>If `"hourly"` or `"lifetime"`, data is available for year, month, day, and hour. <br>If `"daily"`, `"monthly"`, or `"yearly"`, data is available for only year, month, and day. |
+| `time_granularity` | The granularity of time for which the report can provide data. <br>Possible values: <br>- `"hourly"` <br>- `"daily"` <br>- `"monthly"` <br>- `"yearly"` <br>- `"lifetime"`<br><br>If `"hourly"` or `"lifetime"`, data is available for year, month, day, and hour. <br>If `"daily"`, `"monthly"`, or `"yearly"`, data is available for only year, month, and day. |
 | `columns` | The columns that can be requested. For each column, the name and type are listed in the JSON response. |
 | `filters` | The columns that can be used as filters. For each column, the name and type are listed in the JSON response. |
 | `time_intervals` | The time ranges for which the report can be run. |
@@ -212,14 +212,14 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?meta=network_analy
 |:---|:---|:---|:---|
 | `report_type` | yes | enum | This determines which information will be returned.<br>Possible values:<br>- `"network_analytics"`<br>- `"network_billing"`<br>- `"buyer_invoice_report"`<br>- `"seller_invoice_report"`<br>- `"network_advertiser_analytics"`<br>- `"network_publisher_analytics"`<br>- `"network_site_domain_performance"`<br>- `"advertiser_analytics"`<br>- `"video_analytics_network"`<br>- `"video_analytics_network_advertiser"`<br>- `"video_analytics_network_publisher"`<br>- `"buyer_segment_performance"`<br>- `"seller_brand_review"`<br>- `"publisher_brand_review"`<br>- `"publisher_analytics"`<br>- `"network_creative_search"`<br>- `"publisher_creative_search"`<br>- `"network_advertiser_frequency_recency"`<br>- `"advertiser_frequency_recency"`<br>- `"site_domain_performance"`<br>- `"seller_site_domain"`<br>- `"inventory_domain_analytics"`<br>- `"inventory_source_analytics"`<br>- `"inventory_daily_uniques"`<br>- `"segment_load"`<br>- `"attributed_conversions"`<br>- `"pixel_fired"`<br>- `"network_analytics_feed"`<br>- `"clicktrackers"`<br>- `"key_value_analytics"`<br>- `"prebid_server_analytics"`<br>- `"psp_health_analytics"` |
 | `timezone` | No | string (50) | This determines which timezone the data will be reported in. For a list of possible timezone values, see [API Timezones](./api-timezones.md).<br><br>**Note:** For the `network_billing`, `network_analytics`, `network_advertiser_analytics`, `network_publisher_analytics`, `advertiser_analytics`, and `publisher_analytics` report types, data older than 100 days will be reported in UTC. Also, report types that do not offer hourly data, such as `network_site_domain_performance`, `site_domain_performance`, and `seller_site_domain` will be reported in UTC. |
-| `filters` | No | array | The list of filter objects to apply to the report. See step 1 of "How to run a report" section below. |
+| `filters` | No | array | The list of filter objects to apply to the report. See [step 1](#step-1-create-a-json-formatted-report-request) of "How to run a report" section below. |
 | `group_filters` | No | array of objects | Allows you to specify an operation to perform on one or more filters. For [example](#group_filters-example), if you're selecting total impressions grouped by campaign, you can use this field to filter out campaigns that don't have at least 10,000 impressions. |
-| `columns` | yes | array of strings | The list of columns to include in the report. See Create a JSON-formatted report request below. At least one column must be specified. |
-| `row_per` OR `groups` | No | array | **Note:** **Deprecated.** By default, reporting results are automatically grouped by the dimensions in columns. Passing these fields has no effect.<br><br>For most reports, selected dimensions are grouped automatically. For example, if you include the columns `"advertiser_id"`, `"campaign_id"`, `"creative_id"`, and `"imps"`, each row of report data would show the impressions per advertiser, campaign, and creative combination. |
-| `start_date` | No | string | The start date for the report.<br>- For report types that offer hourly data, this must be formatted as `"YYYY-MM-DD HH:MM:SS"`.<br><br>**Note:** `MM:SS` must be `00:00`, as data is not available for minutes and seconds.<br>- For report types that do not offer hourly data, this must be formatted as `"YYYY-MM-DD"`. |
+| `columns` | yes | array of strings | The list of columns to include in the report. See [Create a JSON-formatted report request](#step-1-create-a-json-formatted-report-request) below. At least one column must be specified. |
+| `row_per` OR `groups` | No | array | **Note:** **Deprecated.** By default, reporting results are automatically grouped by the dimensions in `columns`. Passing these fields has no effect.<br><br>For most reports, selected dimensions are grouped automatically. For example, if you include the columns `"advertiser_id"`, `"campaign_id"`, `"creative_id"`, and `"imps"`, each row of report data would show the impressions per advertiser, campaign, and creative combination. |
+| `start_date` | No | string | The start date for the report.<br>- For report types that offer hourly data, this must be formatted as `"YYYY-MM-DD HH:MM:SS"`.<br><br>**Note:** `MM:SS` must be `00:00`, as data is not available for minutes and seconds.<br><br>- For report types that do not offer hourly data, this must be formatted as `"YYYY-MM-DD"`. |
 | `end_date` | No | string | The end date for the report.<br><br>**Note:** The `end_date` is non-inclusive. For example, if you start a report at `"2017-07-01 00:00:00"` and end the report at `"2017-07-01 23:00:00"`, your report will not include data from the last hour of the day. The correct way to retrieve this data would be to end the report at `"2017-07-02 00:00:00"`.<br><br>- For report types that offer hourly data, this must be formatted as `"YYYY-MM-DD HH:MM:SS"`. However, `MM:SS` must be `00:00`, as data is not available for minutes and seconds. For example, `"2017-07-01 00:00:00"` to `"2017-07-02 00:00:00"` would retrieve an entire day's data.<br>- For reports aggregated across intervals longer than hourly (e.g., daily, weekly, etc.), the format must be `"YYYY-MM-DD"`. For example, `"2017-07-01"` to `"2017-07-02"` would retrieve an entire day's data. |
 | `report_interval` | No | enum | The time range for the report. Not all reports accept all intervals. See each report's documentation and metadata for details. <br>Possible values:<br>- `current_hour`<br>- `last_hour`<br>- `today`<br>- `yesterday`<br>- `last_48_hours`<br>- `last_2_days`<br>- `last_7_days`<br>- `last_14_days`<br>- `month_to_yesterday`<br>- `month_to_date`<br>- `quarter_to_date`<br>- `last_month`<br>- `lifetime`<br>- `30_days` |
-| `orders` | No | array of objects | The list of columns to sort by. See How to run a report below. |
+| `orders` | No | array of objects | The list of columns to sort by. See [How to run a report](#how-to-run-a-report) below. |
 | `format` | No | enum | The format in which the report data will be returned. If this field is not specified, it will default to `"csv"`.<br>Possible values:<br>- `"csv"`: Comma-separated values<br>- `"excel"`: Tab-separated values<br>- `"html"` |
 | `reporting_decimal_type` | No | enum | The decimal mark used in the report. <br>Possible values:<br>- `"comma"`<br>- `"decimal"` (period)<br>If this field is passed, it overrides any reporting decimal preferences set at the user and member levels. |
 | `emails` | No | array | The list of email addresses to which the reporting data will be sent. The reporting data is sent as an attachment, and the body of the email contains the information below.<br>- Report type<br>- Member, Advertiser, or Publisher name and ID<br>- Run date<br>- Start date<br>- End date<br>- Timezone<br>- User who generated the report.<br><br>**Note:** Report results larger than 15 MB will not be emailed. For ways to prevent results from being too large, see [Reporting Best Practices](./report-service.md#reporting-best-practices). |
@@ -242,20 +242,20 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?meta=network_analy
 
 ## How to run a report?
 
-- Step 1. Create a JSON-formatted report request
-- Step 2. POST the request to the Report Service
-- Step 3. GET the report status from the Report Service
-- Step 4. GET the report data from the Report Download Service
+- [Step 1. Create a JSON-formatted report request](#step-1-create-a-json-formatted-report-request)
+- [Step 2. `POST` the request to the Report Service](#step-2-post-the-request-to-the-report-service)
+- [Step 3. `GET` the report status from the Report Service](#step-3-get-the-report-status-from-the-report-service)
+- [Step 4. `GET` the report data from the Report Download Service](#step-4-get-the-report-data-from-the-report-download-service)
 
 ### Step 1: Create a JSON-formatted report request
 
 The JSON file should include the specific `report_type` that you want to run, as well as the `columns` (dimensions and metrics) and
 `report_interval` (`"today"`, `"yesterday"`, `"month_to_date"`, etc.) that you want to retrieve. You can also include `filters` for
-dimensions, define granularity (year, month, day), and specify the `format` in which the data should be returned. The `format` options are:
+dimensions, define granularity (`year`, `month`, `day`), and specify the `format` in which the data should be returned. The `format` options are:
 
 - `"csv"` - Comma-separated file
-- `"excel"` - tab-separated file
-- `"xlsx"` - modern XML-compatible Excel format (zipped)
+- `"excel"` - Tab-separated file
+- `"xlsx"` - Modern XML-compatible Excel format (zipped)
 
 > [!NOTE]
 > To filter a dimension by more than one value, use an array. For example:
@@ -396,7 +396,7 @@ Report request \# 6 is placed in the queue, since there are already 5 report req
 ## Conversion data
 
 Conversions (and related data) in reports are processed asynchronously. As a result, reports are available more quickly, while some
-conversion-related data is still being processed in the background. For more information, see "Asynchronous Conversion Attribution" in the UI documentation.
+conversion-related data is still being processed in the background. For more information, see "Asynchronous Conversion Attribution" on the [Availability of Reporting Data](../invest/availability-of-reporting-data.md) page.
 
 ## Reporting best practices
 

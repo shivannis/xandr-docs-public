@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Real-time signals service API reference
+# Real-time Signals Service API reference
 
 > [!WARNING]
 > The resources listed on this page are in Beta status, and are subject to change in the future.
@@ -43,7 +43,7 @@ The following segment fields are common to the services listed on this page, and
 |:---|:---|:---|
 | `seg_id` | int | The ID of the segment object. |
 | `seg_val` | int | The value associated with the segment for the specified targeting. Segment values have a number of uses, from targetable features in campaigns and [Custom Models](../data-science-toolkit/custom-models.md) to computation inputs for [Bonsai Smart Leaves](../data-science-toolkit/bonsai-smart-leaves.md). The default value for targets uploaded without a `seg_val` is `0`.<br><br>**Note:** When you specify a `seg_val`, use the format `seg_id:seg_val:ttl`. Failure to do so may result in an incorrectly set value. |
-| `seg_ttl` | int | The `"time to live"` for the segment association with the specified targeting. After the TTL duration has passed from the time of upload, the segment will no longer be associated with the specified targeting. Knowing when targets will expire can help you avoid uploading unnecessarily large files. If you need to frequently refresh segments or create new ones, for example when using OLC movement data derived from mobile app, you can also use `seg_ttl` to specify an expiration time period and ensure "old" items are deleted after a specific duration.<br>The default TTL for segments uploaded without a `seg_ttl` value or an `expiry` value is `30` days.<br>The maximum supported `seg_ttl` value is `365` days.<br><br>**Note:**<br>**`seg_ttl` versus expiry**<br>The TTL you set does not account for any processing delays. In other words, your effective TTL is calculated as TTL minus processing delay. For example, if the file is submitted on `3/1/2022 00:00:00` and processing starts the day after, then the effective TTL is `29` days and the segment expires on `3/31 00:00:00`. If you need to set segment expiration with very specific granularity, you should set it using `expiry`. <br><br> `expiry` is set for the entire uploaded file, not at the segment level.<br>For the bulk upload format, a `seg_ttl` must be specified as an integer in seconds. For example, `1` day is represented as `86400`.<br><br>For individual uploads, use the following syntax to specify segment TTL durations:<br>- `"ns", "nano"`<br>- `"us", "µs", "micro"`<br>- `"ms", "milli"`<br>- `"s", "sec"`<br>- `"m", "min"`<br>- `"h", "hr", "hour"`<br>- `"d", "day"`<br>- `"w", "wk", "week"`<br><br>**Note:** Where the segment has a known `expiry` value (inherited from the file-level `expiry` setting) as well as a `seg_ttl` value, RTSS uses whichever value results in a shorter TTL. In other words, if the explicit TTL value would result in an earlier expiration, `seg_ttl` will determine the effective TTL. Otherwise, the `expiry` value will take priority.<br>For more information about using this parameter, see "Target Expiry" in [RTSS Best Practices](rtss-best-practices.md). |
+| `seg_ttl` | int | The `"time to live"` for the segment association with the specified targeting. After the TTL duration has passed from the time of upload, the segment will no longer be associated with the specified targeting. Knowing when targets will expire can help you avoid uploading unnecessarily large files. If you need to frequently refresh segments or create new ones, for example when using OLC movement data derived from mobile app, you can also use `seg_ttl` to specify an expiration time period and ensure "old" items are deleted after a specific duration.<br><br>- The default TTL for segments uploaded without a `seg_ttl` value or an `expiry` value is `30` days.<br>- The maximum supported `seg_ttl` value is `365` days.<br><br>**Note:**<br>**`seg_ttl` versus expiry**<br>The TTL you set does not account for any processing delays. In other words, your effective TTL is calculated as TTL minus processing delay. For example, if the file is submitted on `3/1/2022 00:00:00` and processing starts the day after, then the effective TTL is `29` days and the segment expires on `3/31 00:00:00`. If you need to set segment expiration with very specific granularity, you should set it using `expiry`. `expiry` is set for the entire uploaded file, not at the segment level.<br>For the bulk upload format, a `seg_ttl` must be specified as an integer in seconds. For example, `1` day is represented as `86400`.<br><br>For individual uploads, use the following syntax to specify segment TTL durations:<br>- `"ns", "nano"`<br>- `"us", "µs", "micro"`<br>- `"ms", "milli"`<br>- `"s", "sec"`<br>- `"m", "min"`<br>- `"h", "hr", "hour"`<br>- `"d", "day"`<br>- `"w", "wk", "week"`<br><br>**Note:** Where the segment has a known `expiry` value (inherited from the file-level `expiry` setting) as well as a `seg_ttl` value, RTSS uses whichever value results in a shorter TTL. In other words, if the explicit TTL value would result in an earlier expiration, `seg_ttl` will determine the effective TTL. Otherwise, the `expiry` value will take priority.<br>For more information about using this parameter, see "Target Expiry" in [RTSS Best Practices](rtss-best-practices.md). |
 
 ## Geo targeting
 
@@ -61,14 +61,14 @@ The following segment fields are common to the services listed on this page, and
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL path | All Methods | `123` |
 | `olc` | string | OLC code | URL path | All Methods | `58GR22WM+PW` |
-| `segment_list` | array of ints | A list of segment IDs | JSON body | `DELETE` | `[123,456]` |
+| `segment_list` | array of ints | A list of segment IDs | JSON body | `DELETE` | `[123, 456]` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[{"seg_id":123,"seg_ttl":"25s","seg_val":345}]` |
 
 ### Response fields
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-example). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-example). |
 
 #### `segments` example
 
@@ -113,13 +113,13 @@ The following segment fields are common to the services listed on this page, and
 | `country` | string | Unique country code | URL path | All Methods | `US` |
 | `region` | string | Region name/code | URL path | All Methods | `NJ` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | List of segment IDs | JSON Body | `DELETE` | `[ 123, 456 ]` |
+| `segment_list` | Array of Segment IDs | List of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example).  |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example).  |
 
 #### `segments` response example
 
@@ -165,13 +165,13 @@ The following segment fields are common to the services listed on this page, and
 | `member_id` | long | Member ID | URL path | All Methods | `123` |
 | `pcode` | string | Postal Code | URL path | All Methods | `07302` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[ 123, 456 ]` |
+| `segment_list` | Array of segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response (postal codes)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-postal-codes).  |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-postal-codes).  |
 
 #### `segments` response example (postal codes)
 
@@ -218,13 +218,13 @@ The following segment fields are common to the services listed on this page, and
 | `ip_begin` | string | The first IP in a range | URL Path | All Methods | `192.168.6.235` |
 | `ip_end` | string | The last IP in a range | URL Path | All Methods | `192.168.6.255` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of segment IDs | A list of Segment IDs | JSON Body | `DELETE` | `[ 123, 456 ]` |
+| `segment_list` | Array of segment IDs | A list of Segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response (IP ranges)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-ip-ranges). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-ip-ranges). |
 
 #### `segments` response example (IP ranges)
 
@@ -271,13 +271,13 @@ The following segment fields are common to the services listed on this page, and
 | `member_id` | long | Member ID | URL Path | All Methods | `123` |
 | `ip` | string | An individual IP address | URL Path | All Methods | `192.168.0.20` |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[ 123, 456 ]` |
+| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response (IP address)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-ip-address). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-ip-address). |
 
 #### `segments` response example (IP address)
 
@@ -310,7 +310,7 @@ The following segment fields are common to the services listed on this page, and
 
 ### REST API (URL components)
 
-Target URL components with "OR" logic, with up to 3 paths.
+Target URL components with `"OR"` logic, with up to 3 paths.
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
@@ -323,9 +323,9 @@ Target URL components with "OR" logic, with up to 3 paths.
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | `POST`, `DELETE`, `GET` | `123` |
-| `path` | string | Partial URL<br>- A partial URL should contain only secondary and top level domains of the host section of the authority URL part, and up to 3 segments of the path URL part.<br>- A partial URL may only contain path components.<br>- Partial URLs support "OR" matching on paths. | Query string | `POST`, `DELETE`, `GET` | See [example](#path-example).<br>[mysampledomain.com/en](https://mysampledomain.com/en) will match both:<br>- [mysampledomain.com/en](https://mysampledomain.com/en)<br>- [mysampledomain.com/en/buyers](https://mysampledomain.com/en/buyers) |
+| `path` | string | Partial URL<br>- A partial URL should contain only secondary and top level domains of the host section of the authority URL part, and up to 3 segments of the path URL part.<br>- A partial URL may only contain path components.<br>- Partial URLs support `"OR"` matching on paths. | Query string | `POST`, `DELETE`, `GET` | See [example](#path-example).<br>[mysampledomain.com/en](https://mysampledomain.com/en) will match both:<br>- [mysampledomain.com/en](https://mysampledomain.com/en)<br>- [mysampledomain.com/en/buyers](https://mysampledomain.com/en/buyers) |
 | `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST`, `DELETE` | See [example](#segval_list-example). |
-| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[ 123, 456 ]` |
+| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
 
 #### `path` example
 
@@ -356,7 +356,7 @@ mysampledomain.com/en/buyers/mysampledomain-test
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-url-components). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-url-components). |
 
 #### `segments` response example (URL components)
 
@@ -400,15 +400,15 @@ Target Full URL with exact matching.
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | `POST`, `DELETE`, `GET` | `123` |
-| `path` | string | Full URL<br>URL should contain only secondary and top level domains of the host section of the authority URL part, and full path that will be matched exactly | Query Parameter | `POST`, `DELETE`, `GET` | <br>`mysampledomain.com/as/many/paths/as/i/want`<br>URLs will be matched exactly as they have been uploaded. |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST`, `DELETE` | `[{"seg_id":123,"seg_ttl":"30m","seg_val":345}]` |
-| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123,456]` |
+| `path` | string | Full URL<br>URL should contain only secondary and top level domains of the host section of the authority URL part, and full path that will be matched exactly. | Query Parameter | `POST`, `DELETE`, `GET` | `mysampledomain.com/as/many/paths/as/i/want`<br>URLs will be matched exactly as they have been uploaded. |
+| `segval_list` | array of objects | A list of segments with associated values. | JSON body | `POST`, `DELETE` | `[{"seg_id":123,"seg_ttl":"30m","seg_val":345}]` |
+| `segment_list` | Array of Segment IDs | A list of segment IDs. | JSON Body | `DELETE` | `[123, 456]` |
 
 ### Response (URL reference)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-url-reference). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-url-reference). |
 
 #### `segments` response example (URL reference)
 
@@ -448,7 +448,7 @@ Target Full URL with exact matching.
 > [!NOTE]
 > Uploaded IDs are converted to lower-case values when stored. Matching is not case-sensitive.
 
-## Events - Instantly Activated Segments
+## Events - Instantly activated segments
 
 > [!NOTE]
 > This RTSS functionality is no longer actively supported and is slated to be **deprecated**. You may be able to get the same results from other Xandr products. Please contact your account manager for assistance.
@@ -456,7 +456,7 @@ Target Full URL with exact matching.
 Events are segments which could become active instantly across all data centers, and expire within a specified period. **Events are not associated with any targeting.**
 
 > [!NOTE]
-> Given the resources required to enable Events, the following limitations on the service are in place
+> Given the resources required to enable Events, the following limitations on the service are in place:
 >
 > 1. The Number of simultaneously active events per member is: **200**.
 > 1. Events cannot be bulk loaded, though multiple can be activated per single API call.
@@ -483,7 +483,7 @@ Events are segments which could become active instantly across all data centers,
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id:value pairs) | `GET` | See [example](#segments-response-example-events). |
+| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-events). |
 
 #### `segments` response example (Events)
 
@@ -530,7 +530,7 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 | `member_id` | long | Member ID | URL Path | All Methods | `123` |
 | `id` | string | UUID of Accepted File Job | Query string |  | `102951` |
 | `Content-Type` | string | The Content-Type HTTP Header | HTTP Header | `POST` | `'Content-Type: multipart/form-data'` |
-| `file` | file | The data file to be processed. Max file size of 256 MB | Form Data | `POST` | See File Format and Examples section below. |
+| `file` | file | The data file to be processed. Max file size of 256 MB | Form Data | `POST` | See [File Format and Examples](#file-format-and-upload-examples) section below. |
 | `expiry` | date | The fixed time and date when the segments in the file should expire, taking into account any processing time required to meet the deadline. For more information about using this parameter, see "Target Expiry" in [RTSS Best Practices](rtss-best-practices.md). | [RFC 339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) |  | `expiry=2022-03-01T17:32:28Z` |
 
 ### Response (Bulk upload)
@@ -581,16 +581,16 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 | **`keytype`** | separator | **`key`** | separator | **`action`** | separator | **`segment`** | separator | **`segment`** |
 
 - **Columns**: `keytype`, `key`, `action`, `segment`
-- **Separators**: comma \``,` or tab `0x09` \``\t`\` (csv or tsv files)
-- **Line separator**: `0x0A` \``\n`\`
-- Representation of each column must be less or equal to **`32,767` byt`` `keytype ``\` and \``key`\` Columns**
+- **Separators**: comma `,` or tab `0x09` `\t` (csv or tsv files)
+- **Line separator**: `0x0A` `\n`
+- Representation of each column must be less or equal to **`32,767` byt `keytype` and `key` Columns**
 
 | `keytype` ID | Type | `key` Examples |
 |:---|:---|:---|
 | `0` | string | - IP range: `"127.0.0.1,127.0.0.10"`<br>- Single IP address: `"127.0.0.1"`<br>*Should be quoted.* |
 | `1` | string | Country: Region<br>- `"US"`<br>- `"US:KY"` |
-| `2` | string | Geo hashcode in OLC format:<br>[OLC spec](https://openlocationcode.com/). |
-| `3` | string | Postal code<br><br>**Note:** Postal codes targets will be **deprecated** soon.<br>`"11235"` |
+| `2` | string | Geo hashcode in OLC format:<br>[OLC spec](https://openlocationcode.com/) |
+| `3` | string | Postal code<br>**Note:** Postal codes targets will be **deprecated** soon.<br>`"11235"` |
 | `4` | string | Partial URL (up to 3 paths)<br>- [mysampledomain.com](https://mysampledomain.com/)<br>- [mysampledomain.com/en/buyers](https://mysampledomain.com/en/buyers)<br>- [mysampledomain.com/en/buyers/page](https://mysampledomain.com/en/buyers/page) |
 | `6` | string | Full URL<br>[mysampledomain.com/many/paths/are/supported](https://mysampledomain.com/many/paths/are/supported) |
 
@@ -630,7 +630,7 @@ keytype,key,action,segment
 6,"mysampledomain.com/many/paths/exact/match",0,1009
 ```
 
-#### Example `POST` method**
+#### Example `POST` method
 
 **`POST` request using cURL**
 
@@ -641,7 +641,7 @@ curl -X POST --header 'Content-Type: multipart/form-data' \
 
 **JSON response**
 
-Server responds with the job ID
+Server responds with the job ID.
 
 ```
 { "id": "a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2" }
@@ -657,7 +657,7 @@ curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-86
 
 **JSON response**
 
-Server responds with information about the job ID specified in the Query Parameters
+Server responds with information about the job ID specified in the Query Parameters.
 
 ```
 {
@@ -682,8 +682,8 @@ Server responds with information about the job ID specified in the Query Paramet
 
 > [!NOTE]
 >
-> - The \``rows_failed`\` field indicates how many lines failed to process.
-> - The \``message`\` field is an error description for failed lines. It returns a maximum of 100 errors.
+> - The `rows_failed` field indicates how many lines failed to process.
+> - The `message` field is an error description for failed lines. It returns a maximum of 100 errors.
 
 ## Best upload practices
 

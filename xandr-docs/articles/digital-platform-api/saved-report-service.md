@@ -58,7 +58,7 @@ A few facts to keep in mind about saved reports:
 
 ### Adding a new saved report for a publisher
 
-1. Construct a report JSON (as described in [Report Service - Step1](./report-service.md#step-1-create-a-json-formatted-report-request)).
+1. Construct a report JSON (as described in [Report Service - Step 1](./report-service.md#step-1-create-a-json-formatted-report-request)).
 1. `POST` the JSON to the saved-report service.
 1. Store the id that is returned.
 
@@ -121,8 +121,8 @@ $ curl -b cookies -c cookies -X post --data-binary @saved-report 'https://api.ap
 ### Executing and retrieving a saved report (you must perform this step every time you wish to retrieve an updated report)
 
 1. `POST` to the report service with the id from above, and store the returned `report_id`.
-1. Check the report's status with a `GET` to the report service with the `report_id` (as described in [Report Service - Step3](./report-service.md#step-3-get-the-report-status-from-the-report-service)).
-1. `GET` the report from the `report-download` service (as described in [Report Service - Step4](./report-service.md#step-4-get-the-report-data-from-the-report-download-service)).
+1. Check the report's status with a `GET` to the report service with the `report_id` (as described in [Report Service - Step 3](./report-service.md#step-3-get-the-report-status-from-the-report-service)).
+1. `GET` the report from the `report-download` service (as described in [Report Service - Step 4](./report-service.md#step-4-get-the-report-data-from-the-report-download-service)).
 
 ```
 $ curl -b cookies -c cookies -X post "https://api.appnexus.com/report?saved_report_id=39&publisher_id=35"
