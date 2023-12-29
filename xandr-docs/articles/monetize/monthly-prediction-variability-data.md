@@ -2,7 +2,6 @@
 title: Microsoft Monetize - Monthly Prediction Variability Data
 description : <b>Tip:</b> This page relates to the
 ms.date: 10/28/2023
-<a href="guaranteed-outcomes.md" class="xref">Guaranteed Outcomes</a>
 ---
 
 # Microsoft Monetize - Monthly prediction variability data

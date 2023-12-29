@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Move a Placement to a Different Placement Group
-Description: This article explains how to organize and manage placements, open slots on a publisher's website, using placement groups. 
+description: This article explains how to organize and manage placements, open slots on a publisher's website, using placement groups. 
 ms.date: 10/28/2023
 ---
 

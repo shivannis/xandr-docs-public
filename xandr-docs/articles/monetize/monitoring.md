@@ -2,7 +2,6 @@
 title: Microsoft Monetize - Monitoring
 description: The article helps you to monitor and troubleshoot the line items all in one place. You can create, edit, monitor, and troubleshoot line items from a single view.
 ms.date: 10/28/2023
-your line items all in one place. You can create, edit, monitor, and
 ---
 
 # Microsoft Monetize - Monitoring

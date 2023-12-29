@@ -4,7 +4,6 @@ description: The article explains how to use Native Inventory Seller Specificati
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Native Inventory Seller Specifications
 
 [Buying Native Inventory](buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single campaign. Scaling is the approach we recommend over using any of the seller-specific settings shown here.
@@ -32,7 +31,7 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 
 ### AdYouLike
 
-| AdYouLike |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 7664 |
 | Landing Page | [https://support.adyoulike.com/](https://support.adyoulike.com/) |
@@ -54,7 +53,7 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 
 ### Axelspringer
 
-| Axelspringer |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 7823 |
 | Title | 25 characters recommended |
@@ -64,7 +63,7 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 
 ### Figaro medias
 
-| Figaro Medias |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 3273 |
 | Title | 25 character maximum |
@@ -75,7 +74,7 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 
 ### Kargo
 
-| Kargo |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 8173 |
 | Title | - Length: 25 characters maximum<br> - is_required: yes |
@@ -88,8 +87,9 @@ Do not use JavaScript piggyback pixels on native creatives. Only image pixels ca
 
 ### L'Agora
 
-| Member ID | 7037 |
+| Attribute | Value |
 |---|---|
+| Member ID | 7037 |
 | Title | - 25 character maximum<br> - Advertiser/brand name preferred<br> - Could be used to resume the offer or service or as a Call to Action |
 | Description | 90 character maximum |
 | Icon (sizes in pixels) | Not supported |
@@ -103,7 +103,9 @@ advertising. As a buyer, when you set up a line item or
 campaign to buy L'Agora, you will be bidding on a slot within the
 widget.
 
-| Creative Guidelines and Best Practices |  |
+**Creative guidelines and best practices**
+
+| Attribute | Value |
 |---|---|
 | Text | - We highly recommend short text that is easy to understand with attractive offers.<br> - May not contain contact details as telephone number.<br> - Do not overuse capital letters or exclamation marks. |
 | Images | - Images must be clearly relevant to the product or service being advertised.<br> - There should be a clear, simple, attractive, and logical link between the image and the copy.<br> - Avoid images with text embedded directly in the image. The text could easily be distorted depending on the adjustments made when the image is rendered.<br> - Images that represent your target (images of people) generate high engagement.<br> - Images that represent your product perform well. Please do not mislead users by showing products that are not available or are not the ones that you are selling.<br> - Sexually suggestive images are not allowed. Images should be appropriate for a general audience.<br> - Opt for bright, eye-catching images. Avoid black and white images, as they will tend to blend in with the other elements of the galleries around them.<br> - The resolution of the image is important. Low quality images will appear blurry and adversely affect the impact of the ad.<br> - Images must not contain your logo.<br> - Images must not have borders.<br> - Images must be static (no movement). |
@@ -128,7 +130,7 @@ Generally speaking, L'Agora does not allow you to promote any products or servic
 
 ### Leboncoin
 
-| Leboncoin |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 3296 |
 | Title | 50 character maximum (mobile) |
@@ -148,7 +150,7 @@ When you set up your Inventory Targeting, include the following:
 
 ### LiveIntent
 
-| LiveIntent |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 8171 |
 | Title | - 50 characters maximum; 25 characters minimum |
@@ -164,7 +166,7 @@ For additional information about LiveIntent API, see [LiveIntent Landing Page](h
 
 ### Mittmedia
 
-| Mittmedia |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 9234 |
 | Title | 60 character maximum |
@@ -177,7 +179,7 @@ For additional information about LiveIntent API, see [LiveIntent Landing Page](h
 
 ### Mopub
 
-| MoPub |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 1813 |
 | Title | 25 character maximum |
@@ -199,9 +201,9 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 - Host on stable CDNs and ensure you don't return broken links.
 - Always test creatives with the sample app and proofread content.
 
-## MSN
+### MSN
 
-| MSN |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 280 |
 | Title | 25 character maximum |
@@ -210,16 +212,16 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 | Image (sizes in pixels) | 1200x627 |
 | Sponsored By | 25 character maximum |
 
-**Best Practices**
+**Best practices**
 
 - Turbo-charge your call-to-action: Immediately highlight your main point with eye-catching wording to create urgency and drive engagement.
 - Choose compelling images: People, particularly shown experiencing an emotion associated with your headline, increase impact. Also, avoid text overlays on image assets.
 - Center main content: Avoid clutter and ensure important visual elements, particularly people, are centered in your image asset.
 - Be bold with color: Use vibrant colors to create focus and interest in your native ads.
 
-## Nativo
+### Nativo
 
-| Nativo |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 8035 |
 | Title | - 60 characters recommended<br> - 80 character maximum |
@@ -237,16 +239,18 @@ For example, content must not be false, misleading, or deceptive, and an adverti
 This is not an exhaustive list of prohibited or restricted content on the Nativo platform. This list does not constitute, and should not be used as a replacement for, legal advice. Each brand is solely responsible for determining the legality of its ad content. If you have any questions about legal issues related to your Content, including with
 respect to clearance obligations or Nativo truth-in-advertising requirements, you must consult your own legal counsel.
 
-| Prohibited and Restricted Content |  |
+**Prohibited and restricted content**
+
+| Attribute | Value |
 |---|---|
-| Prohibited Content | The following types of Content are NOT permitted on the Nativo platform:<br> - Adult Content, Products, or Services<br> - Children under 13<br> - Dangerous Items<br> - Defamation and Libel<br> - “False News”<br> - Fear or Scare Tactics<br> - Free Streaming Sites<br> - “Get Rich Quick” Pyramid Schemes<br> - Hateful Content<br> - Herbal or Homeopathic Remedies<br> - Illegal Activity<br> - Illicit Drugs<br> - Illicit Drug Paraphernalia<br> - Name or Likeness of an Individual<br> - Online Poker/Gambling<br> - Pay Per Call (900 numbers)<br> - Politics & Religion<br> - Pregnancy and Fertility Related Products<br> - Psychics<br> - Replicas<br> - Sensitive Health Topics<br> - Spam and Mail Fraud<br> - Surveillance Equipment<br> - Tobacco<br> - Third-Party Rights Violation |
-| Restricted Content | The following types of Content will be flagged for further review by Nativo:<br> - Alcohol<br> - Brick and Mortar Gambling & Gaming<br> - Claim Substantiation<br> - Contraceptives<br> - Cryptocurrencies<br> - Dating Services<br> - Diamonds and Jewelry<br> - Endorsement and Testimonials<br> - Financial Services<br> - Green Products<br> - Loan companies<br> - Made in USA Products<br> - Online Pharmacies<br> - Pharmaceutical and Medical Procedures<br> - Political<br> - Profanity<br> - Rehab Providers<br> - State Lotteries<br> - Supplements<br> - Weight Loss Claims |
+| **Prohibited Content** | The following types of Content are NOT permitted on the Nativo platform:<br> - Adult Content, Products, or Services<br> - Children under 13<br> - Dangerous Items<br> - Defamation and Libel<br> - “False News”<br> - Fear or Scare Tactics<br> - Free Streaming Sites<br> - “Get Rich Quick” Pyramid Schemes<br> - Hateful Content<br> - Herbal or Homeopathic Remedies<br> - Illegal Activity<br> - Illicit Drugs<br> - Illicit Drug Paraphernalia<br> - Name or Likeness of an Individual<br> - Online Poker/Gambling<br> - Pay Per Call (900 numbers)<br> - Politics & Religion<br> - Pregnancy and Fertility Related Products<br> - Psychics<br> - Replicas<br> - Sensitive Health Topics<br> - Spam and Mail Fraud<br> - Surveillance Equipment<br> - Tobacco<br> - Third-Party Rights Violation |
+| **Restricted Content** | The following types of Content will be flagged for further review by Nativo:<br> - Alcohol<br> - Brick and Mortar Gambling & Gaming<br> - Claim Substantiation<br> - Contraceptives<br> - Cryptocurrencies<br> - Dating Services<br> - Diamonds and Jewelry<br> - Endorsement and Testimonials<br> - Financial Services<br> - Green Products<br> - Loan companies<br> - Made in USA Products<br> - Online Pharmacies<br> - Pharmaceutical and Medical Procedures<br> - Political<br> - Profanity<br> - Rehab Providers<br> - State Lotteries<br> - Supplements<br> - Weight Loss Claims |
 
 Find more information on Nativo’s content guidelines, visit [Nativo Content Guidelines](https://www.nativo1.app.box.com/s/5nwqmw8tcwg86b8dc95c2yf1ssm59g5g).
 
-## Outbrain
+### Outbrain
 
-| Outbrain |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 7597 |
 | Title | - 40 characters or less recommended<br> - 60 character maximum |
@@ -262,20 +266,22 @@ Outbrain's network exposes all-direct-code-on-page widgets that are customized p
 - Accessing via a deal is recommended to achieve better network
   accessibility
 
-| Guidelines and Best Practices |  |
+### Guidelines and best practices
+
+| Attribute | Value |
 |---|---|
 | **Best Practices** | - Properly label your content<br> - Draw from social media when determining what types of headlines to use<br> - Use copy to smoothly lead the reader to your intended next step<br> - Do Not use inaccurate, misleading, or overly sensational headlines or ad copy<br> - Do Not write headlines that are "too good to be true"<br> - Do Not create articles with duplicate content based on another affiliate offer<br> - Do Not encourage accidental clicks by implementing ads (or images) that appear to be organic content |
-| **Content Guidelines** - Prohibited Categories | - Adult<br> - Controlled or Illegal Substances<br> - Hate, Violence, or Discrimination<br> - Gambling<br> - Fake News<br> - Malware<br> - Religion (Cannot promote one religion over another)<br> - Unsafe Products or Supplements |
-| Landing Page Guidelines | - No excessive overlays/pop-ups<br> - No misleading advertising methods<br> - Must be authentic<br> - Must be updated/current |
-| Headline | - No inaccurate, misleading, or overly-sensational headlines<br> - No offensive headlines<br> - No excessive use of capitalization<br> - Attention to grammar and punctuation<br> - No excessive use of symbols |
-| Image Guidelines | - Relevant to the linked content<br> - Good quality<br> - Cannot employ deception to entice a click<br> - No nudity or sexual imagery<br> - Not designed to provoke, offend, or shock<br> - No circles or arrows placed<br> - No violence, gore, or dead bodies<br> - No zoomed-in body parts<br> - No before/after photos |
+| **Content Guidelines** - **Prohibited Categories** | - Adult<br> - Controlled or Illegal Substances<br> - Hate, Violence, or Discrimination<br> - Gambling<br> - Fake News<br> - Malware<br> - Religion (Cannot promote one religion over another)<br> - Unsafe Products or Supplements |
+| **Landing Page Guidelines** | - No excessive overlays/pop-ups<br> - No misleading advertising methods<br> - Must be authentic<br> - Must be updated/current |
+| **Headline** | - No inaccurate, misleading, or overly-sensational headlines<br> - No offensive headlines<br> - No excessive use of capitalization<br> - Attention to grammar and punctuation<br> - No excessive use of symbols |
+|**Image Guidelines** | - Relevant to the linked content<br> - Good quality<br> - Cannot employ deception to entice a click<br> - No nudity or sexual imagery<br> - Not designed to provoke, offend, or shock<br> - No circles or arrows placed<br> - No violence, gore, or dead bodies<br> - No zoomed-in body parts<br> - No before/after photos |
 
 > [!NOTE]
 > You can find Outbrain's full content guidelines [here](https://www.outbrain.com/amplify/guidelines/).
 
 ### Plista
 
-| Plista |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 7790 |
 | Title | - 25 characters recommended<br> - 50 character maximum |
@@ -300,7 +306,7 @@ on Plista:
 
 ### Ringier
 
-| Ringier |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 9178 |
 | Title | 25 characters maximum |
@@ -310,7 +316,7 @@ on Plista:
 
 ### Sanoma Finland
 
-| Sanoma Finland |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 7459 |
 | Landing Page | Required |
@@ -329,8 +335,9 @@ on Plista:
 
 ### Schibsted Norway
 
-| Member ID | 1860 |
+| Attribute | Value |
 |---|---|
+| Member ID | 1860 |
 | Title | 50 character maximum |
 | Icon (sizes in pixels) | - Logo<br> - 1x1 ratio<br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio<br> - 1200x628 |
@@ -349,7 +356,7 @@ table.
 
 ### Sharethrough
 
-| Sharethrough |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 3425 |
 | Title | - 90 character maximum<br> - The Title is where the bulk of storyline gets told and should be as long as possible to engage the user |
@@ -368,7 +375,7 @@ will be bidding on the in-feed space where your native ad will display.
 
 ### Taboola
 
-| Taboola |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 3364 |
 | Landing Page | Landing URL character maximum is 2048 |
@@ -417,10 +424,10 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
   content.
 - Taboola maintains partnerships and integration with IAS, supporting MOAT and DoubleVerify.
 
-| Native Creative Best Practices |  |
+| Attribute | Value |
 |---|---|
-| Image Best Practices | - People are always preferable - Even better if they're at medium zoom from the shoulders-up, or even closer.<br> - Avoid image clutter. Clean images with a single center of focus will help you stand out.<br> - Utilize eye-catching colors to attract the user's attention. |
-| Title Best Practices | - Taboola recommends running titles that are 35 - 45 characters, 60 maximum<br> - Your title can be a powerful targeting tool.<br> - Call out your audience or your product when possible.<br> - Front-load titles with an eye-catching main point.<br> - Numbered lists can be a good way to entice a user to click.<br> - Intrigue and mystery can help draw in users.<br> - Don't forget that titles should be capitalized, just as you would an article headline. |
+| **Image Best Practices** | - People are always preferable - Even better if they're at medium zoom from the shoulders-up, or even closer.<br> - Avoid image clutter. Clean images with a single center of focus will help you stand out.<br> - Utilize eye-catching colors to attract the user's attention. |
+| **Title Best Practices** | - Taboola recommends running titles that are 35 - 45 characters, 60 maximum<br> - Your title can be a powerful targeting tool.<br> - Call out your audience or your product when possible.<br> - Front-load titles with an eye-catching main point.<br> - Numbered lists can be a good way to entice a user to click.<br> - Intrigue and mystery can help draw in users.<br> - Don't forget that titles should be capitalized, just as you would an article headline. |
 
 To know more, you can visit [Taboola's Native and Video Creative Best Practices](https://help.taboola.com/hc/en-us/articles/360026664414-Programmatic-Creative-Best-Practices).
 
@@ -433,9 +440,9 @@ Refer to Taboola's [Help Center](https://help.taboola.com/hc/en-us/categories/11
 Reach out to your Taboola representative if you have any questions. If you do not have a Taboola rep, or would like to request more information - please send an email to
 [programmatic@taboola.com](mailto:programmatic@taboola.com).
 
-## Tamedia
+### Tamedia
 
-| Tamedia |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 3646 |
 | Title | 25 character maximum |
@@ -447,9 +454,9 @@ Reach out to your Taboola representative if you have any questions. If you do no
 
 [Tamedia](https://www.tamedia.ch/) provides over 700 million native impressions per month, mainly in the Swiss market. Across its News and Classified websites, with a reach over 85% of Swiss users, buyers have the opportunity to operate their native campaigns at scale. Target buyer Tamedia AG (3646).
 
-## TripleLift
+### TripleLift
 
-| TripleLift |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 1314 |
 | Title | 30 character maximum |
@@ -457,15 +464,17 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Icon (sizes in pixels) | - Logo<br> - 300 pixel minimum<br> - jpg or transparent png recommended<br> - Recommend two versions (light and dark) |
 | Image (sizes in pixels) | - Recommended 320x180<br> - Aspect ratio 16:9<br> - Maximum 30 KB<br> - No text, logos, or animations |
 
-| General Guidelines |  |
+### General guidelines 
+
+| Attribute | Value |
 |---|---|
-| Third-Party Trackers | All 3rd party trackers are accepted as long as they are 1x1 image tag. All trackers must be secure (https://). |
-| Creative technical attributes | The creative has to be self-audited or platform-audited with the technical attributes Image (Technical attribute ID 1) and Native: In-Feed Standard (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Xandr platform. |
-| Suggested Do's and Don't's | Do choose engaging photos.<br>Do use products set in real environments. Historically, these have tended to perform better than products in isolation.<br>Do pick a click-through URL that is somewhat associated with the creative.<br>Do explore all the image options at your fingertips. From blogs to product pages, you likely have a treasure trove of impactful images.<br>Don't use images with too much text.<br>Don't crop the image. TripleLift will ensure the image fits perfectly across every placement.<br>Don't use an image with a logo overlaid on top.<br>Don't use banner ad creative. |
+| **Third-Party Trackers** | All 3rd party trackers are accepted as long as they are 1x1 image tag. All trackers must be secure (https://). |
+| **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes Image (Technical attribute ID 1) and Native: In-Feed Standard (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Xandr platform. |
+| **Suggested Do's and Don't's** | Do choose engaging photos.<br>Do use products set in real environments. Historically, these have tended to perform better than products in isolation.<br>Do pick a click-through URL that is somewhat associated with the creative.<br>Do explore all the image options at your fingertips. From blogs to product pages, you likely have a treasure trove of impactful images.<br>Don't use images with too much text.<br>Don't crop the image. TripleLift will ensure the image fits perfectly across every placement.<br>Don't use an image with a logo overlaid on top.<br>Don't use banner ad creative. |
 
-## UIM
+### UIM
 
-| UIM |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 1578 |
 | Landing Page | www.web.de/www.gmx.de/www.1und1.de |
@@ -475,7 +484,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Image (sizes in pixels) | 500x500 minimum<br>1200x1200 recommended<br>Valid file types: jpg, png<br>File size must be less than 2 MB<br>300x250 display/scale down to 1:1 mobile |
 | Call to Action Text | Not supported |
 
-| UIM |  |
+| Attribute | Value |
 |---|---|
 | Member ID | 1578 |
 | Landing Page | [www.web.de/www.gmx.de/www.1und1.de](https://web.de/www.gmx.de/www.1und1.de) |
@@ -485,7 +494,9 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Image (sizes in pixels) | - 500x500 minimum<br> - 1200x1200 recommended<br>- Valid file types: jpg, png<br> - File size must be less than 2 MB<br> - 300x250 display/scale down to 1:1 mobile |
 | Call to Action Text | Not supported |
 
-| Recommendations and Guidelines |  |
+**Recommendations and Guidelines**
+
+| Attribute | Value |
 |---|---|
 | **General Recommendations** | - Please note that a semi-transparent overlay with your text is placed over the image. It occupies approximately 300x100 pixels in the lower image area.<br> - Our headline 1 line and the description = 2 lines<br> - Only German language |
 | **Teaser Text Guidelines** | - No special characters in your text<br> - No exclamation marks |
