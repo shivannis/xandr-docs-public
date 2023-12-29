@@ -1,6 +1,6 @@
 ---
-title : Deals FAQ
-description : Learn Deals FAQs on Buyers and Sellers.
+title: Deals FAQ
+description: Learn Deals FAQs on Buyers and Sellers.
 ms.date: 10/28/2023
 ---
 

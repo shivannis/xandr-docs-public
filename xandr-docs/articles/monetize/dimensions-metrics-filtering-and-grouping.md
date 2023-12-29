@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping
-description : Learn what are Dimensions, Metrics, Filtering, and Grouping and how they are helpful in sorting data.
+title: Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping
+description: Learn what are Dimensions, Metrics, Filtering, and Grouping and how they are helpful in sorting data.
 ms.date: 10/28/2023
 ---
 
@@ -61,7 +61,7 @@ smaller data sets.
 ## A tiny example database
 
 All of the examples below will use the same underlying "database", which
-contains two dimensions,:**Advertiser** and **Line Item**; and two
+contains two dimensions: **Advertiser** and **Line Item**; and two
 metrics: **Impressions** and **Clicks**. Here it is in its entirety:
 
 | ID | Advertiser | Line Item | Impressions | Clicks |
@@ -85,8 +85,7 @@ metrics: **Impressions** and **Clicks**. Here it is in its entirety:
 | 17 | H | Hap's Go-Kart Track and Petting Zoo | 1108 | 87 |
 | 18 | H | Hap's Go-Kart Track and Petting Zoo | 1872 | 116 |
 
-You can also [download](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28
-Dec 2023/tiny-db.csv) the example in CSV format
+You can also [download](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28Dec2023/tiny-db.csv) the example in CSV format
 
 ## Filtering examples
 

@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Device Analytics Report
-description : Learn how the Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served.
+title: Microsoft Monetize - Device Analytics Report
+description: Learn how the Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served.
 ms.date: 10/28/2023
 ---
 
@@ -84,9 +84,7 @@ and cumulative intervals are still available).
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling Currency 2.0, you can select a currency for each individual report if you prefer not to use USD as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select Advertiser, click the
-Currency 2.0 toggle to enable it, and select Japanese Yen (JPY) from the
-Currency menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
@@ -195,7 +193,7 @@ Follow these steps to run your report.
     delivered to you, and how.
 
     > [!IMPORTANT]
-    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)."
+    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the
     information you want. For example, rather than running a report that

@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Data Marketplace (Buyer Overview)
-description : Learn all about Data Marketplace in this page.
+title: Microsoft Monetize - Data Marketplace (Buyer Overview)
+description: Learn all about Data Marketplace in this page.
 ms.date: 10/28/2023
 ---
 
@@ -36,62 +36,62 @@ representative for the latest rates.
 
 | Data Provider | Type | Sales Contact | Supports CTV Activation |
 |---|---|---|---|
-| 4C Insights | TV Audience | [info@4Cinsights.com](info@4Cinsights.com) |  |
-| Acxiom | Audience | [DataGuru@acxiom.com](DataGuru@acxiom.com) |  |
-| adsquare Data Alliance | Audience and Contextual | [platforms@adsquare.com](platforms@adsquare.com) |  |
-| Adstra | Audience | [Xandrsupport@adstradata.com](Xandrsupport@adstradata.com) |  |
-| AlikeAudience | Audience | [advertise@alikeaudience.com](advertise@alikeaudience.com) |  |
-| Analytics IQ | Audience | [audiences@analytics-iq.com](audiences@analytics-iq.com) |  |
+| 4C Insights | TV Audience | [info@4Cinsights.com](mailto:info@4Cinsights.com) |  |
+| Acxiom | Audience | [DataGuru@acxiom.com](mailto:DataGuru@acxiom.com) |  |
+| adsquare Data Alliance | Audience and Contextual | [platforms@adsquare.com](mailto:platforms@adsquare.com) |  |
+| Adstra | Audience | [Xandrsupport@adstradata.com](mailto:Xandrsupport@adstradata.com) |  |
+| AlikeAudience | Audience | [advertise@alikeaudience.com](mailto:advertise@alikeaudience.com) |  |
+| Analytics IQ | Audience | [audiences@analytics-iq.com](mailto:audiences@analytics-iq.com) |  |
 | Audience Project | Audience | No contact provided. |  |
-| Audiens | Audience | [sales@audiens.com](sales@audiens.com) |  |
+| Audiens | Audience | [sales@audiens.com](mailto:sales@audiens.com) |  |
 | BeemRay | Audience | No contact provided. |  |
 | Bell Media | Audience | No contact provided. |  |
-| Bombora | Audience | [audiencedesk@bombora.com](audiencedesk@bombora.com) |  |
+| Bombora | Audience | [audiencedesk@bombora.com](mailto:audiencedesk@bombora.com) |  |
 | Choreograph | Audience | No contact provided. |  |
-| ComScore | Audience and Contextual | [ActivationSpecialists@comscore.com](ActivationSpecialists@comscore.com) | Yes |
-| Cross Pixel | Audience (Search & Keyword Retargeting) | [info@crosspixel.net](info@crosspixel.net) |  |
-| Crossix | Audience | [crossix_digitalconnect@veeva.com](crossix_digitalconnect@veeva.com) |  |
-| Datmean | Deterministic Audience | [data@datmean.com](data@datmean.com) |  |
-| Datonics | Audience | [data@datonics.com](data@datonics.com) |  |
+| ComScore | Audience and Contextual | [ActivationSpecialists@comscore.com](mailto:ActivationSpecialists@comscore.com) | Yes |
+| Cross Pixel | Audience (Search & Keyword Retargeting) | [info@crosspixel.net](mailto:info@crosspixel.net) |  |
+| Crossix | Audience | [crossix_digitalconnect@veeva.com](mailto:crossix_digitalconnect@veeva.com) |  |
+| Datmean | Deterministic Audience | [data@datmean.com](mailto:data@datmean.com) |  |
+| Datonics | Audience | [data@datonics.com](mailto:data@datonics.com) |  |
 | DoubleVerify | Audience (Fraud/IVT) and Contextual | [programmaticsales@doubleverify.com](programmaticsales@doubleverify.com) | Yes |
-| Dstillery | Audience | [Data@dstillery.com](Data@dstillery.com) |  |
-| Epsilon | Audience | [OnlineDataHotline@epsilon.com](OnlineDataHotline@epsilon.com) |  |
+| Dstillery | Audience | [Data@dstillery.com](mailto:Data@dstillery.com) |  |
+| Epsilon | Audience | [OnlineDataHotline@epsilon.com](mailto:OnlineDataHotline@epsilon.com) |  |
 | Equifax | Audience | No contact provided. |  |
-| Eyeota | Audience | [DataDesk@Eyeota.com](DataDesk@Eyeota.com) |  |
-| Foursquare | Audience | [location@foursquare.com](location@foursquare.com) | Yes |
-| Gourmet Ads & Healthy Ads | Audience and Contextual | [rtb@gourmetads.com](rtb@gourmetads.com) |  |
+| Eyeota | Audience | [DataDesk@Eyeota.com](mailto:DataDesk@Eyeota.com) |  |
+| Foursquare | Audience | [location@foursquare.com](mailto:location@foursquare.com) | Yes |
+| Gourmet Ads & Healthy Ads | Audience and Contextual | [rtb@gourmetads.com](mailto:rtb@gourmetads.com) |  |
 | Grapeshot | Contextual | See Oracle row in this table |  |
 | IgnitionOne | Audience | No contact provided. |  |
-| IHS Polk | Audience | [polktvmedia@ihsmarkit.com](polktvmedia@ihsmarkit.com) |  |
-| Illuma | Contextual | [xandr@weareilluma.com](xandr@weareilluma.com) |  |
+| IHS Polk | Audience | [polktvmedia@ihsmarkit.com](mailto:polktvmedia@ihsmarkit.com) |  |
+| Illuma | Contextual | [xandr@weareilluma.com](mailto:xandr@weareilluma.com) |  |
 | InMarket | Audience | No contact provided. |  |
-| Integral AdScience | Contextual | [XandrSupport@integralads.com](XandrSupport@integralads.com) |  |
+| Integral AdScience | Contextual | [XandrSupport@integralads.com](mailto:XandrSupport@integralads.com) |  |
 | Kochava | Mobile Audience | No contact provided. |  |
-| LiveRamp Data Store | Audience | [appnexus@liveramp.com](appnexus@liveramp.com) |  |
-| Lotame | Audience | [NaDataRFP@lotame.com](NaDataRFP@lotame.com) |  |
+| LiveRamp Data Store | Audience | [appnexus@liveramp.com](mailto:appnexus@liveramp.com) |  |
+| Lotame | Audience | [NaDataRFP@lotame.com](mailto:cvanhemert@lotame.com) |  |
 | MasterCard | Audience | No contact provided. |  |
 | Merkle | Audience | No contact provided. |  |
-| Navegg | Audience | [support@navegg.com](support@navegg.com) |  |
+| Navegg | Audience | [support@navegg.com](mailto:support@navegg.com) |  |
 | Netsprint | Audience | No contact provided. |  |
-| Neustar | Audience | [adadvisorsupport@team.neustar](adadvisorsupport@team.neustar) |  |
-| Nielsen Marketing Cloud (eXelate) | Audience | [nielsendatahotline@nielsen.com](nielsendatahotline@nielsen.com) | Yes |
-| Oracle Data Cloud (BlueKai, Datalogix, AddThis, Crosswise, MOAT, & Grapeshot) | Audiences by Oracle (BlueKai, Datalogix, AddThis)<br>Oracle Customs (1st, BlueKai, Datalogix, AddThis)<br>Contextual Data- Grapeshot | [thedatahotline@oracle.com](thedatahotline@oracle.com) | Yes |
-| owner IQ | Audience and Contextual | [AppNexus@ownerIQ.com](AppNexus@ownerIQ.com) |  |
-| Peer39 | Contextual | [peer39am@peer39.com](peer39am@peer39.com) | Yes |
+| Neustar | Audience | [adadvisorsupport@team.neustar](mailto:adadvisorsupport@team.neustar) |  |
+| Nielsen Marketing Cloud (eXelate) | Audience | [nielsendatahotline@nielsen.com](mailto:nielsendatahotline@nielsen.com) | Yes |
+| Oracle Data Cloud (BlueKai, Datalogix, AddThis, Crosswise, MOAT, & Grapeshot) | Audiences by Oracle (BlueKai, Datalogix, AddThis)<br>Oracle Customs (1st, BlueKai, Datalogix, AddThis)<br>Contextual Data- Grapeshot | [thedatahotline@oracle.com](mailto:thedatahotline@oracle.com) | Yes |
+| owner IQ | Audience and Contextual | [AppNexus@ownerIQ.com](mailto:AppNexus@ownerIQ.com) |  |
+| Peer39 | Contextual | [peer39am@peer39.com](mailto:peer39am@peer39.com) | Yes |
 | Placed | Audience | No contact provided. |  |
 | PlaceIQ | Audience | No contact provided. |  |
-| Retargetly | Audience | [xandr-cs@retargetly.com](xandr-cs@retargetly.com) |  |
-| SambaTV | TV Audience | [sales@samba.tv](sales@samba.tv) | Yes |
-| Semasio | Audience and Contextual | [targeting@semasio.com](targeting@semasio.com) |  |
+| Retargetly | Audience | [xandr-cs@retargetly.com](mailto:xandr-cs@retargetly.com) |  |
+| SambaTV | TV Audience | [sales@samba.tv](mailto:sales@samba.tv) | Yes |
+| Semasio | Audience and Contextual | [targeting@semasio.com](mailto:targeting@semasio.com) |  |
 | Semcasting | Audience | No contact provided. |  |
-| ShareThis | Audience | [Appnexus@sharethis.com](Appnexus@sharethis.com) |  |
-| Sirdata | Audience | [commercial@sirdata.com](commercial@sirdata.com) |  |
-| Skimlinks | Audience | [Audiences@skimlinks.com](udiences@skimlinks.com) |  |
-| Skydeo | Audience | [xandr@skydeo.com](xandr@skydeo.com) |  |
+| ShareThis | Audience | [Appnexus@sharethis.com](mailto:Appnexus@sharethis.com) |  |
+| Sirdata | Audience | [commercial@sirdata.com](mailto:commercial@sirdata.com) |  |
+| Skimlinks | Audience | [Audiences@skimlinks.com](mailto:Audiences@skimlinks.com) |  |
+| Skydeo | Audience | [xandr@skydeo.com](mailto:xandr@skydeo.com) |  |
 | Statiq | Audience | No contact provided. |  |
-| The ADEX | Audience and Contextual | [help@theadex.com](help@theadex.com) |  |
-| The Weather Channel (an IBM Watson Company) | Audience | [WAdatasales@wwpdl.vnet.ibm.com](WAdatasales@wwpdl.vnet.ibm.com) |  |
-| Tru Optik | TV Audience | [appnexus@truoptik.com](appnexus@truoptik.com) | Yes |
+| The ADEX | Audience and Contextual | [help@theadex.com](mailto:help@theadex.com) |  |
+| The Weather Channel (an IBM Watson Company) | Audience | [WAdatasales@wwpdl.vnet.ibm.com](mailto:WAdatasales@wwpdl.vnet.ibm.com) |  |
+| Tru Optik | TV Audience | [appnexus@truoptik.com](mailto:appnexus@truoptik.com) | Yes |
 | Visa | Audience | No contact provided. |  |
 | VisualDNA | Audience | See Nielsen row in this table |  |
 | Wunderman Data | Audience | No contact provided. |  |
@@ -222,8 +222,8 @@ more details on invoices, see [Understanding Your Invoice](understanding-your-in
 
 To set your Insertion Order or Line Item grid views to display your
 third-party data costs, click on the column settings button (for each
-object) and select Third-party Costs
-on the Configure Columns screen that
+object) and select **Third-party Costs**
+on the **Configure Columns** screen that
 appears.
 
 As a result of selecting this option, the aggregated totals of all
@@ -431,8 +431,7 @@ your custom segments to your Xandr account. You
 will know everything is properly set up when the segment is available
 for targeting and there is a price associated with the segment.
 
-**What if I have better rates than what Xandr
-provides?**
+**What if I have better rates than what Xandr provides?**
 
 We support custom rate cards that are CPM or % of media cost based. We
 currently do not support tiered, or flat rate models.
@@ -456,8 +455,7 @@ will be invoiced in the same currency as your cost of media. The invoice
 will not be broken out by data provider. However, we provide a data
 usage report for that level of granularity.
 
-**Do I have to change anything about my line item or
-campaign to make this work?**
+**Do I have to change anything about my line item or campaign to make this work?**
 
 If your in-flight line item or campaign is
 targeting a segment supported by the data marketplace, then there is
@@ -466,15 +464,12 @@ have to change. Once the data provider is activated for clearing,
 Xandr will immediately start clearing the cost
 of data on your behalf.
 
-**The data provider I need isn't supported by the Data Marketplace. What
-should I do?**
+**The data provider I need isn't supported by the Data Marketplace. What should I do?**
 
 Data provider requests can be submitted to
-[appnexus.com](data-marketplace-request@appnexus.com)<span
-class="ph">.
+[data-marketplace-request@appnexus.com](mailto:data-marketplace-request@appnexus.com)
 
-**I am having issues with the data marketplace features. How can I get
-support?**
+**I am having issues with the data marketplace features. How can I get support?**
 
 Submit a support ticket via our
 [Customer Support Portal](https://help.xandr.com/s/login/) and our team will provide assistance shortly.

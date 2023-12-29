@@ -26,7 +26,7 @@ Manager.
 Ensure you understand these basics before proceeding (each of these
 concepts is discussed in greater detail in dedicated sections below):
 
-1. **Base Currency:** Xandr' default currency
+1. **Base currency:** Xandr' default currency
     is USD.
     - Although USD is the default currency,
       Xandr supports the **buying and selling
@@ -35,12 +35,12 @@ concepts is discussed in greater detail in dedicated sections below):
     - Xandr performs all calculations in USD. To
       support non-USD use cases, we convert in and out of USD (as
       needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
-1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates
+1. **Supported local currencies and exchange rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates
     exchange rates platform-wide on a daily basis based on the most
     current
     [Oanda](https://www.oanda.com/sg-en/trading/)
     rates.
-1. **Transaction and Billing Currency and Account Setup:**
+1. **Transaction and billing currency and account setup:**
     Xandr distinguishes between the currencies
     you transact in (currencies you select in the Digital Platform
     UI/API for buying/selling) and the currency you are billed in
@@ -203,14 +203,14 @@ those settings.
 | BUY/SELL SIDE |  |  |
 | **Campaign** | **Default**: Inherits the value of the Line Item level currency setting.<br>**Settable?**: User can't update. |  |
 | **Insertion Order (IO)** | **Default**: Inherits the currency setting of the IO's Advertiser.<br>**Settable?**: User can set up IOs with any of the supported transaction currencies when creating a new IO.<br>**Note**: Once an IO is saved, the currency cannot be changed as any changes will have budget implications. This includes both active and inactive IOs. If you need to change the currency of an existing IO, clone it and set the second IO to your desired currency. Then set the original IO to inactive. However, the new IO will not have any of the cloned IO's buying history.<br>**Where set**:<br> - API: via the `currency` field in the [Insertion Order Service](../digital-platform-api/insertion-order-service.md)<br> - UI: via the **Currency** field of the **Insertion Order** screen | The IO's currency setting is only used to manage its budget, not to actually buy inventory.<br> - Only used for buying or selling inventory if you don't set a different currency on the line item.<br> - This is not logged for reporting. |
-| **Line Item** | **Default**: Inherits the currency setting of the Line Item's Advertiser.<br>**Note**: If you are using IOs, the Line Item's currency must match that of its parent IO.<br>**Settable?**: Can be set to any supported transaction currencies (unless you are using IOs). Once a Line Item is saved, the currency cannot be changed as any changes will have budget implications. This includes active and inactive Line Items.<br>**Where set**:<br> - API: via the currency field in the [Line Item Service](../digital-platform-api/line-item-service.md)<br> - UI: via the **Currency** field of the **Line Item** screen | - **This is the Transaction Currency if you are buying inventory**<br> - This currency and its USD exchange rate at the time of the auction are logged when the auction occurs. |
+| **Line Item** | **Default**: Inherits the currency setting of the Line Item's Advertiser.<br>**Note**: If you are using IOs, the Line Item's currency must match that of its parent IO.<br>**Settable?**: Can be set to any supported transaction currencies (unless you are using IOs). Once a Line Item is saved, the currency cannot be changed as any changes will have budget implications. This includes active and inactive Line Items.<br>**Where set**:<br> - API: via the `currency` field in the [Line Item Service](../digital-platform-api/line-item-service.md)<br> - UI: via the **Currency** field of the **Line Item** screen | - **This is the Transaction Currency if you are buying inventory**<br> - This currency and its USD exchange rate at the time of the auction are logged when the auction occurs. |
 | **Member/Network**|**Default**: USD<br>**Settable?**: User can’t update (contact Account Manager to change). Since there is no budget set at this level, your account manager can always change the member currency at your request. | This setting controls the default currency for child objects you create. This is only used for buying or selling inventory (and reporting) if you don't set a (different) currency on the Advertiser, Insertion Order or Line Item. |
 | **Placement Groups** | **Default**: Inherits the value from the Network or Publisher setting.<br>**Settable?**: User can't update the currency for Placement Groups (refer to the Publisher to view the currency). |  |
 | **Placements** | **Default**: Inherits the value from the Network or Publisher setting.<br>**Settable?**: User can't update the currency for placements (refer to the Publisher to view the currency). |  |
 | **Publisher** | **Default**: Inherits the currency setting of the Publisher's Network.<br>**Settable?**: User can set any of the supported transaction currencies when creating a Publisher. Once a Publisher is saved (including inactive publishers), the currency cannot be changed.<br>The exception to this rule is that clients can change the publisher currency using the Publisher API service.<br>**Note**: Changing the currency can result in issues with reporting. It is recommended to change the currency on the **first day of the month**. This will minimize these issues.<br>**Where set**:<br> - API: via the `currency` field in the [Publisher Service](../digital-platform-api/publisher-service.md) | - This is the **Transaction Currency** if you are selling inventory.<br> - This currency and its USD exchange rate at the time of the auction are logged when the auction occurs. |
 | **SELL SIDE** |  |  |
 
-## Start Transacting using Multiple Currencies
+## Start transacting using multiple currencies
 
 Once you've set the currency for your member and any objects (e.g.,
 Insertion Orders, Line Items, Campaigns) for which you want to have a

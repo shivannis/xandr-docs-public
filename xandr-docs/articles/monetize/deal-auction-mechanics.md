@@ -1,7 +1,7 @@
 ---
-title : Microsoft Monetize - Deal Auction Mechanics
-description : Learn how different types of auctions work with examples.
- ms.date: 10/28/2023
+title: Microsoft Monetize - Deal Auction Mechanics
+description: Learn how different types of auctions work with examples.
+ms.date: 10/28/2023
 ---
 
 

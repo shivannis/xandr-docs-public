@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Duplicate an Existing Custom Creative Template
-description : Learn how to duplicate existing standard or custom creative templates.
+title: Microsoft Monetize - Duplicate an Existing Custom Creative Template
+description: Learn how to duplicate existing standard or custom creative templates.
 ms.date: 10/28/2023
 ---
 
@@ -76,10 +76,9 @@ rendering code and macros as necessary.
         > [!NOTE]
         > If you include custom macros in the template code, they must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded [adnxs.com](http://adnxs.com/)references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain ([adnxs.com](http://adnxs.com/) or [adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
 
-1. Expand the **Custom
-    macros** section if necessary.
-1.If no custom macros exist in the
-    Custom macros section, or if
+1. Expand the **Custom macros** section if necessary.
+1. If no custom macros exist in the
+    **Custom macros** section, or if
     you want to add more custom macros, click
     **Add Macros** and do the
     following:

@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Deal Targeting (ALI)
-description : Learn what happens when you select Deals in the Create New Line Item or Edit Line Item screen.  
+title: Microsoft Monetize - Deal Targeting (ALI)
+description: Learn what happens when you select Deals in the Create New Line Item or Edit Line Item screen.  
 ms.date: 10/28/2023
 ---
 
@@ -25,14 +25,14 @@ Source** subsection of the
 target either all the available deals for that line item, or specific
 deals from sellers.
 
-### To target all deals available to you:
+**To target all deals available to you:**
 
 1. In the
     **Inventory & Brand Safety Targeting** \> **Supply Source** subsection, select
     **Deals**.
 1. Select **All Deals**.
 
-### To target specific deals available to you:
+**To target specific deals available to you:**
 
 1. In the
     **Inventory & Brand Safety Targeting** \> **Supply Source** subsection, select
