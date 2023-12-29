@@ -12,7 +12,7 @@ The **Network Video Error Report** gives insight into video errors and their cau
 You can use this report to troubleshoot video settings and eliminate errors related to buy-side and sell-side video advertising. [VAST 3 error codes](https://wiki.iabtechlab.com/index.php?title=VAST_Error_Code_Troubleshooting_Matrix) provide further insight into the source of errors.
 
 > [!NOTE]
-> For instructions on retrieving a report, please see [Report Service](.report-service.md) or the [example](#example) below.
+> For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
 
 ## Time frame
 
@@ -54,8 +54,8 @@ Data in this report is retained for 420 days.
 | `advertiser_name` | string | No | `"Verizon Wireless"` | The name of the advertiser. |
 | `advertiser` | string | No | `"Verizon Wireless (789)"` | The name and ID of the advertiser. |
 | `bidder_name` | string | No | `"ABC Plc"` | The name of a would-be buyer that submitted a bid on the impression. |
-| `brand_id` | int | Yes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report) instead. |
-| `brand_name` | string | No | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report) instead. |
+| `brand_id` | int | Yes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
+| `brand_name` | string | No | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand` | string | No | `"Ace Hardware (3)"` | The brand associated with the creative. Xandr keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type `"Resold"`, no information is available in the `Brand` field for this report. |
 | `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. This dimension also has an attribute, called bidder, that identifies the ID of the bidder for the impression. The attribute's data type is int. |
 | `buyer_member_name` | string | No | `"My Network"` | The name of the buying member. |
