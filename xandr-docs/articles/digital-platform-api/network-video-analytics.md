@@ -119,6 +119,16 @@ Data in this report is retained for 420 days.
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 
+> [!NOTE]
+> The data for the following dimensions is only available if the publisher has implemented video taxonomy.
+> - `video_delivery_type`
+> - `video_content_genre`
+> - `video_program_type`
+> - `video_content_rating`
+> - `video_content_duration`
+> - `video_content_language`
+> - `video_content_network`
+
 ## Metrics
 
 | Column | Type | Example | Formula | Description |
