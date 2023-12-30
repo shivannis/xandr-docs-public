@@ -92,36 +92,37 @@ You can also choose to select the **Only include results where a Deal is present
 
 ## Metrics
 
-When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
+> [!NOTE]
+> When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-| Column | Description |  |
-|---|---|---|
-| Imps | The total number of impressions. |  |
-| Clicks | The total number of clicks. |  |
-| CTR | The click-through rate; the ratio of clicks to impressions, expressed as a percentage. |  |
-| Total Conversions | The total number of post-view and post-click conversions. |  |
-| Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |  |
-| Revenue | The total revenue; the sum of booked and resold revenue. |  |
-| Revenue Per Audio Complete | The revenue per audio completion |  |
-| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. |  |
-| Cost | The total media cost across direct publishers and RTB inventory. |  |
-| Cost Per Audio Complete | The cost per audio completion |  |
-| CPM | The total media cost per 1000 impressions. |  |
-| Profit | The total Network revenue minus the total Network media cost. |  |
-| PPM | The total profit per 1000 impressions. |  |
-| Completion Rate | The ratio of audio completions to impressions, expressed as a percentage. |  |
-| Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |  |
-| Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |  |
-| Starts | The total number of times the first segment of the video creative was downloaded and started. |  |
-| Skip Rate | The percentage of times the user opted to skip the video. |  |
-| 25% Complete | The total number of times the video creatives completed 25% of the entire duration. |  |
-| 50% Complete | The total number of times the video completed 50% of the entire duration of time. |  |
-| 75% Complete | The total number of times the video completed 75% of the entire duration of time. |  |
-| 100% Complete | The total number of times the video played for the entire duration of time. |  |
-| Ad Responses | The total number of responses served to the audio player.<br>**Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |  |
-| Errors | The total number of times an error occurred. |  |
-| Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |  |
-| Device Type | The type of device on which the impression was served. Possible values are:<br> - desktops & laptops<br> - tablets<br> - mobile phones<br> - tv<br> - game consoles<br> - set top box<br> - media players<br> - other devices |  |
+| Column | Description |
+|---|---|
+| Imps | The total number of impressions. |
+| Clicks | The total number of clicks. |
+| CTR | The click-through rate; the ratio of clicks to impressions, expressed as a percentage. |  
+| Total Conversions | The total number of post-view and post-click conversions. |  
+| Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |  
+| Revenue | The total revenue; the sum of booked and resold revenue. |  
+| Revenue Per Audio Complete | The revenue per audio completion |  
+| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. |  
+| Cost | The total media cost across direct publishers and RTB inventory. |  
+| Cost Per Audio Complete | The cost per audio completion |  
+| CPM | The total media cost per 1000 impressions. |  
+| Profit | The total Network revenue minus the total Network media cost. |  
+| PPM | The total profit per 1000 impressions. |  
+| Completion Rate | The ratio of audio completions to impressions, expressed as a percentage. |  
+| Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |  
+| Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |  
+| Starts | The total number of times the first segment of the video creative was downloaded and started. |  
+| Skip Rate | The percentage of times the user opted to skip the video. |  
+| 25% Complete | The total number of times the video creatives completed 25% of the entire duration. |  
+| 50% Complete | The total number of times the video completed 50% of the entire duration of time. |  
+| 75% Complete | The total number of times the video completed 75% of the entire duration of time. |  
+| 100% Complete | The total number of times the video played for the entire duration of time. |  
+| Ad Responses | The total number of responses served to the audio player.<br>**Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |  
+| Errors | The total number of times an error occurred. |  
+| Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |  a
+| Device Type | The type of device on which the impression was served. Possible values are:<br> - desktops & laptops<br> - tablets<br> - mobile phones<br> - tv<br> - game consoles<br> - set top box<br> - media players<br> - other devices |  
 
 ## To run your report
 

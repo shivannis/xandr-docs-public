@@ -344,7 +344,7 @@ on Plista:
 
 You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing `Xandr``_creative_id` with your creative ID.
 
-| Website | Category | Desktop? | Tablet? |  | Smartphone? |  | Preview URL |
+| Website | Category | Desktop | Tablet | Smartphone | Smartphone | Smartphone  | Preview URL |
 |---|---|---|---|---|---|---|---|
 |  |  |  | Web | App | Web | App |  |
 | [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id <br> **Mobile web** -  https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID |

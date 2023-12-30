@@ -188,7 +188,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-| Column | Description | 
+| Column | Description |
 |---|---|
 | Include Adjustments in Reported Data | Check to include adjustments in the report should be included in the report. |
 | Imps | The total number of impressions. |  |
