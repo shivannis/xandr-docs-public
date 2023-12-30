@@ -121,7 +121,7 @@ You can also choose to select the **Only include results where a Deal is present
 | 100% Complete | The total number of times the video played for the entire duration of time. |  
 | Ad Responses | The total number of responses served to the audio player.<br>**Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |  
 | Errors | The total number of times an error occurred. |  
-| Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |  a
+| Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |
 | Device Type | The type of device on which the impression was served. Possible values are:<br> - desktops & laptops<br> - tablets<br> - mobile phones<br> - tv<br> - game consoles<br> - set top box<br> - media players<br> - other devices |  
 
 ## To run your report
