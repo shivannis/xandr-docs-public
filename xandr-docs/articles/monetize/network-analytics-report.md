@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Network analytics report
 
-This report lets you view both buy- and sell-side data for your Network. For more granular analytics on a specific advertiser or publisher, use the **Advertiser Analytics** and
+This report lets you view both buy and sell-side data for your Network. For more granular analytics on a specific advertiser or publisher, use the **Advertiser Analytics** and
 **Publisher Analytics** reports.
 
 **Time frame**
@@ -191,22 +191,22 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Column | Description |
 |---|---|
 | Include Adjustments in Reported Data | Check to include adjustments in the report should be included in the report. |
-| Imps | The total number of impressions. |  
-| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps | The total number of impressions. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Imps (blank) | The total number of impressions in which a blank creative served. |
 | Imps (default) | The total number of impressions in which a default creative served. |
 | Imps (default error) | The total number of impressions in which a default creative served due to timeout issue. |
 | Imps (kept) | The total number of impressions in which one of your managed advertisers served a creative. |
-| Imps (PSA) | The total number of impressions in which a public service announcement served because no other creative was eligible. |  
-| Imps (PSA error) | The total number of impressions in which a public service announcement served due to timeout issue. |  
-| Imps (resold) | The total number of impressions sold to a third-party buyer. |  
-| Imps (RTB) | The total number of impressions in which your creative served on third-party inventory. |  
-| Impression Requests | The total number of ad calls (impression requests).<br>**Warning**: This metric is typically inaccurate for video inventory due to occasional delays in receiving video events, which can lead to inflated request totals based on the assumption that the video has expired. For a better video request metric, you should use Ad Requests in the Seller Fill and Delivery Network Report or Network Video Analytics Report. |
+| Imps (PSA) | The total number of impressions in which a public service announcement served because no other creative was eligible. |
+| Imps (PSA error) | The total number of impressions in which a public service announcement served due to timeout issue. |
+| Imps (resold) | The total number of impressions sold to a third-party buyer. |
+| Imps (RTB) | The total number of impressions in which your creative served on third-party inventory. |
+| Impression Requests | The total number of ad calls (impression requests).<br>**Warning**: This metric is typically inaccurate for video inventory due to occasional delays in receiving video events, which can lead to inflated request totals based on the assumption that the video has expired. For a better video request metric, you should use Ad Requests in the [Seller Fill and Delivery Network Report](seller-fill-and-delivery-network-report.md) or [Network Video Analytics Report](network-video-analytics-report.md). |
 | Clicks | The total number of clicks across all impressions. For Invest DSP, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | Total Conversions | The total number of post-view and post-click conversions. |
-| Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see Conversion Attribution. |
-| Post-View Conversions: Cross Device | The number of post-view cross-device conversions. For more information about how we attribute post-view (and other) conversions, see Conversion Attribution. |  
-| Post View Conversions: IP | The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see Conversion Attribution. |
+| Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post-View Conversions: Cross Device | The number of post-view cross-device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post View Conversions: IP | The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post Click Conversions | The number of post-click conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
 | Post Click Conversions: Cross Device | The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
 | Post Click Conversions: IP | The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
@@ -216,62 +216,62 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Revenue | The total revenue; the sum of booked and resold revenue. |
 | RPM Including fees | **Deprecated**. Revenue minus fees per thousand impressions. |
 | Booked Revnue eCPC | Booked revenue per click. |
-| Booked Revnue eCPA | Booked revenue per acquisition. |  
-| Cost | The total media cost across direct publishers and RTB inventory. |  
-| Profit | Booked revenue minus total cost. |  |
-| Profit (net commissions/gross serving fees) |**Deprecated**. The profit after subtracting serving fees and commissions (does not include data costs). |  
-| PPM Including Fees | **Deprecated**. Profit per thousand impressions (includes commissions and serving fees). |  
-| Buyer Media Cost eCPM | The effective cost per thousand impressions (eCPM) based on media cost. |  
-| Buyer Media Cost eCPC | The effective cost per click (eCPC) based on media cost. |  
-| Buyer Media Cost eCPA | The effective cost per acquisition (eCPA) based on media cost. |  
-| vCPM | Media Cost per thousand viewable impressions. |  
-| Commissions | Commissions for standard line items, $0 for ALIs. |  
-| Serving Fees | Serving fees for standard line items, $0 for ALIs. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |  
-| Total Network RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |  
-| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |  
-| CPM | The total media cost per 1000 impressions. |  
-| CPM Including Fees | **Deprecated**. The cost per 1000 impressions including serving fees (does not include commissions or data costs). |  
-| PPM | **Deprecated**. The total profit per 1000 impressions. |  
-| Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |  
-| View-Measured Imps | The total number of impressions that were measured for viewability. |  
-| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |  |
-| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |  |
-| CPVM | The cost per 1000 viewable impressions.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |  
-| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |  
-| Feature Costs | Costs incurred when using a platform feature such as cross-device. |  
-| Segment Data Costs | All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |  
-| Filtered Requests | The total number of bid requests for which Xandr did not hold an auction due to inventory quality concerns. See **Filtered Request Reason** (under **Dimensions**) for a list of the possible reasons. |  
-| Avg. Bid Reduction | The average bid reduction you gained on the line item. This value represents the difference (as a percentage) between your bid and the actual media cost you paid for the impression you won (e.g., due to bid reduction). This value is only valid for RTB bidding (i.e., not Managed). Currently, this value is not accurately calculated for line items which have the **Pay Per** field set to "View" and **Buying Strategy** set to "RTB". |  
-| Clearing Event Units | The total number of events purchased (for the associated Clearing Event). When buying a Clearing Event other than impression (e.g., viewable impressions), the number of billed events will be less than the number of impressions. |  
-| Clearing Event Buyer Media Cost eCPM | The total media cost per 1000 events (for the associated Clearing Event). |  
-| Pub: Salesperson (reporting label) | The sales person providing for reporting on the publisher. |  
-| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. |  
-| Total Cost | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, feature cost, data segment cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |  
-| Total Cost eCPM | The total cost per 1,000 imps. |  
-| Total Cost eCPC | The total cost per click. |  
-| Total Cost eCPA | The total cost per conversion. |  
-| Profit eCPM | Profit per thousand impressions.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |  
-| Profit eCPC | Profit per click.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |  
-| Profit eCPA | Profit per conversion.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |  
-| Profit Margin | Profit divided by Booked Revenue. |  
-| Network Profit | The sum of booked revenue and reseller revenue minus total cost. |  
-| Network Profit eCPM | Network profit per thousand impressions. |  
-| Network Profit eCPC | Network profit per click. |  
-| Network Profit eCPA | Network profit per conversion. |  
-| Network Profit Margin | Network profit margin. |  
-| Video Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |  
-| Video Starts | The total number of times the first segment of the video creative was downloaded and started. |  
-| 25% Video Complete | The total number of times the video creatives completed 25% of the entire duration. |  
-| 50% Video Complete | The total number of times the video creatives completed 50% of the entire duration. |  
-| 75% Video Complete | The total number of times the video creatives completed 75% of the entire duration. |  
-| Video Completions | The total number of times the video creatives played for the entire duration. |  
-| Videos Served | The total number of video responses served to the player. An ad response occurs when the VAST document (XML) is served in response to a request. An ad response doesn't necessarily indicate a successful impression. For an impression, the first frame of the video must be served. |  
-| Video Errors | The total number of times a video error occurred. |  
-| Revenue Per Video Complete | The revenue per video completion. |  
-| Cost Per Video Complete | The cost per video completion. |  
-| Video Completion Rate | The ratio of video completions to impressions, expressed as a percentage (video completions/total impressions). |  
-| Video Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |  
-| Video Skip Rate | The percentage of times the user opted to skip the video. |  
+| Booked Revnue eCPA | Booked revenue per acquisition. |
+| Cost | The total media cost across direct publishers and RTB inventory. |
+| Profit | Booked revenue minus total cost. |
+| Profit (net commissions/gross serving fees) | **Deprecated**. The profit after subtracting serving fees and commissions (does not include data costs). |
+| PPM Including Fees | **Deprecated**. Profit per thousand impressions (includes commissions and serving fees). |
+| Buyer Media Cost eCPM | The effective cost per thousand impressions (eCPM) based on media cost. |
+| Buyer Media Cost eCPC | The effective cost per click (eCPC) based on media cost. |
+| Buyer Media Cost eCPA | The effective cost per acquisition (eCPA) based on media cost. |
+| vCPM | Media Cost per thousand viewable impressions. |
+| Commissions | Commissions for standard line items, $0 for ALIs. |
+| Serving Fees | Serving fees for standard line items, $0 for ALIs. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
+| Total Network RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |
+| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |
+| CPM | The total media cost per 1000 impressions. |
+| CPM Including Fees | **Deprecated**. The cost per 1000 impressions including serving fees (does not include commissions or data costs). |
+| PPM | **Deprecated**. The total profit per 1000 impressions. |
+| Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
+| View-Measured Imps | The total number of impressions that were measured for viewability. |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| CPVM | The cost per 1000 viewable impressions.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Feature Costs | Costs incurred when using a platform feature such as cross-device. |
+| Segment Data Costs | All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |
+| Filtered Requests | The total number of bid requests for which Xandr did not hold an auction due to inventory quality concerns. See **Filtered Request Reason** (under **Dimensions**) for a list of the possible reasons. |
+| Avg. Bid Reduction | The average bid reduction you gained on the line item. This value represents the difference (as a percentage) between your bid and the actual media cost you paid for the impression you won (e.g., due to bid reduction). This value is only valid for RTB bidding (i.e., not Managed). Currently, this value is not accurately calculated for line items which have the **Pay Per** field set to "View" and **Buying Strategy** set to "RTB". |
+| Clearing Event Units | The total number of events purchased (for the associated Clearing Event). When buying a Clearing Event other than impression (e.g., viewable impressions), the number of billed events will be less than the number of impressions. |
+| Clearing Event Buyer Media Cost eCPM | The total media cost per 1000 events (for the associated Clearing Event). |
+| Pub: Salesperson (reporting label) | The sales person providing for reporting on the publisher. |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. |
+| Total Cost | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, feature cost, data segment cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform. |
+| Total Cost eCPM | The total cost per 1,000 imps. |
+| Total Cost eCPC | The total cost per click. |
+| Total Cost eCPA | The total cost per conversion. |
+| Profit eCPM | Profit per thousand impressions.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |
+| Profit eCPC | Profit per click.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |
+| Profit eCPA | Profit per conversion.<br>**Note**: This new field defines "profit" as booked revenue minus total cost. |
+| Profit Margin | Profit divided by Booked Revenue. |
+| Network Profit | The sum of booked revenue and reseller revenue minus total cost. |
+| Network Profit eCPM | Network profit per thousand impressions. |
+| Network Profit eCPC | Network profit per click. |
+| Network Profit eCPA | Network profit per conversion. |
+| Network Profit Margin | Network profit margin. |
+| Video Skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
+| Video Starts | The total number of times the first segment of the video creative was downloaded and started. |
+| 25% Video Complete | The total number of times the video creatives completed 25% of the entire duration. |
+| 50% Video Complete | The total number of times the video creatives completed 50% of the entire duration. |
+| 75% Video Complete | The total number of times the video creatives completed 75% of the entire duration. |
+| Video Completions | The total number of times the video creatives played for the entire duration. |
+| Videos Served | The total number of video responses served to the player. An ad response occurs when the VAST document (XML) is served in response to a request. An ad response doesn't necessarily indicate a successful impression. For an impression, the first frame of the video must be served. |
+| Video Errors | The total number of times a video error occurred. |
+| Revenue Per Video Complete | The revenue per video completion. |
+| Cost Per Video Complete | The cost per video completion. |
+| Video Completion Rate | The ratio of video completions to impressions, expressed as a percentage (video completions/total impressions). |
+| Video Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |
+| Video Skip Rate | The percentage of times the user opted to skip the video. |
 
 **Seller types**
 
