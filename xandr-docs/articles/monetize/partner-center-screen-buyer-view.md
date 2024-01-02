@@ -1,6 +1,6 @@
 ---
-title : Partner Center Screen - Buyer View
-description : On the Partner Center screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
+title: Partner Center Screen - Buyer View
+description: On the Partner Center screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 ms.date: 10/28/2023
 ---
 
@@ -53,7 +53,7 @@ Avails.** columns will display statistics on all of the seller's transactions ac
 - **Imps** - The number of impressions that you have purchased from the seller.
 - **Media Costs** - The cost of all of the impressions that you have purchased from the seller.
 - **Clicks** - The number of clicks that were generated from inventory that you purchased from the seller.
-- **CTR** - Your click-through rate on the seller's inventory. For more information on click-through rates see the [Glossary](industry-reference/online-advertising-and-ad-tech-glossary.md).
+- **CTR** - Your click-through rate on the seller's inventory. For more information on click-through rates see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md).
 - **Convs** - The number of conversions that were attributed to inventory that you purchased from the seller.
 - **Revenue** - The amount of revenue that the seller earned from you.
 - **Profit** - The amount of profit that the seller earned from you, calculated by subtracting media cost from revenue.
