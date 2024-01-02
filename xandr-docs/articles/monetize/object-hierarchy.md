@@ -14,11 +14,11 @@ This page introduces the main objects that you work with to buy and sell media.
 
 ## Overview and diagram (Augmented Line Item)
 
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines Augmented Line Item in buy-side hierarchy":::
+:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="The diagram that defines augmented line item in buy-side hierarchy":::
 
 Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Items:
 
-- ALIs require Insertion Orders (not optional). 
+- ALIs require Insertion Orders (not optional).
 - Targeting, budgeting, bidding strategies, and optimization strategies that were associated with campaigns are set on the line item level.
 - ALIs do not use campaigns.
 
@@ -28,7 +28,7 @@ The [Network](network-guide.md) represents your account as a whole. At this leve
 The [seller settings](set-seller-defaults.md), you create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns
 [targeting lists](working-with-targeting-lists.md), you put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
 
-Advertiser
+## Advertiser
 
 An [advertiser](working-with-advertisers.md) represents a single client or brand on whose behalf you want to serve ads on web and/or mobile inventory. At this level, you set the defaults to use in some of the objects under the advertiser (e.g., default currency, time format, time zone), a brand and offer category to apply to all creatives under the advertiser, and more.
 
@@ -104,7 +104,7 @@ You can have many click trackers under a single advertiser.
 
 :::image type="content" source="media/sell-side-object-hierarchy.png" alt-text="The diagram that defines sell-side hierarchy":::
 
-## Network
+## Account control and customization in the network
 
 The [network](network-guide.md) represents your account as a whole. At this level, you decide who's eligible to buy from you and what type of payment and targeting access you allow for those eligible  ([buyer settings](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md)), you decide which publishers will be [exposed for targeting by third-party resellers](managing-your-inventory-reselling-exposure.md), and more.
 

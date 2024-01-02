@@ -1,7 +1,6 @@
 ---
 title: Outstream Video Player Options
 description: This topic describes the settings available for configuring outstream video which can be configured in page code.
-Monetize. 
 ms.date: 10/28/2023
 ---
 
@@ -122,13 +121,13 @@ The following settings are configured using the `sidestream` node, and determine
 | Option | Values | Default | Description |
 |---|---|---|---|
 | enabled | `true` / `false` | `false` | If `true`, sidestream behavior is enabled. |
-| startInSideStream | `true` / `false` | false | When sidestream is enabled, setting this option to `true` specifies that the creative will begin playing in sidestream mode, instead of in the outstream player.<br>`startInSidestream=true` is not recommended for mediated placements.<br>**Warning**: Setting both startInSidestream and returnToPage to the same value can result in ad display problems and is not recommended. |
-| returnToPage | `true` / `false` | `true` | When sidestream is enabled, setting this option to `true` specifies that when the user scrolls down after sidestream is initiated, the sidestream player closes and the ad pauses until the user scrolls up again, then resumes playing in the outstream player. Setting this option to "false" ensures that the video plays to completion in sidestream mode, and collapses the original outstream player.<br>**Warning**: Setting both startInSidestream and returnToPage to the same value can result in ad display problems and is not recommended. |
+| startInSideStream | `true` / `false` | false | When sidestream is enabled, setting this option to `true` specifies that the creative will begin playing in sidestream mode, instead of in the outstream player.<br>`startInSidestream=true` is not recommended for mediated placements.<br>**Warning**: Setting both `startInSidestream` and `returnToPage` to the same value can result in ad display problems and is not recommended. |
+| `returnToPage` | `true` / `false` | `true` | When sidestream is enabled, setting this option to `true` specifies that when the user scrolls down after sidestream is initiated, the sidestream player closes and the ad pauses until the user scrolls up again, then resumes playing in the outstream player. Setting this option to "false" ensures that the video plays to completion in sidestream mode, and collapses the original outstream player.<br>**Warning**: Setting both startInSidestream and `returnToPage` to the same value can result in ad display problems and is not recommended. |
 | position | "top-left"<br>"top-right"<br>"bottom-left"<br>"bottom-right" | "bottom-right" | Specifies corner of the publisher page which the player will move to when side-stream functionality is activated. |
 | xOffset | integer | 0 | Specifies the distance from the page edge on the x-axis, in pixels which the player will be shown when side-stream functionality is activated. |
 | yOffset | integer | 0 | Specifies the distance from the page edge on the y-axis, in pixels which the player will be shown when side-stream functionality is activated. |
-| width | integer | <blank> | Specifies the width of the player in sidestream mode, if not set, the player will the the same width as it is in the non-sidestream mode. |
-| height | integer | <blank> | Specifies the height of the player in sidestream mode, if not set, the player will the the same height as it is in the non-sidestream mode. |
+| width | integer | `<blank>` | Specifies the width of the player in sidestream mode, if not set, the player will the the same width as it is in the non-sidestream mode. |
+| height | integer | `<blank>` | Specifies the height of the player in sidestream mode, if not set, the player will the the same height as it is in the non-sidestream mode. |
 | maxPageOverlay | integer |  | Specifies the maximum percentage of the browser window that sidestream will cover. If the size of the player will be larger than this percentage, the player will not go into sidestream mode, and will behave as described in the "nonViewablePlayer" option. |
 
 ## End card settings

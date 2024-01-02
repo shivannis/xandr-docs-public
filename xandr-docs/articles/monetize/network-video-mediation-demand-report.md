@@ -12,7 +12,7 @@ A mediation bid allows you to specify how much you expect the mediated network w
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -80,23 +80,23 @@ Data in this report is retained for 45 days.
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-| Column | Description |  |
-|---|---|---|
-| Imps | The total number of impressions. For video ads, an impression takes place when the first frame of the video is loaded. |  |
-| Waterfall Depth | The maximum number of waterfall attempts that are allowed to try and display the ad. |  |
-| Waterfall Latency | The average latency of the waterfall. |  |
-| Waterfall Position | The position of the creative in the waterfall. |  |
-| Waterfall Ad Attempts | The number of video waterfall ad load attempts to show an ad. |  |
-| Waterfall Ad Loads | The number of succesful video waterfall ad loads after attempts to show an ad. |  |
-| Waterfall Ad Timeouts | Maximum amount of time in milliseconds that waterfall processing of mediated ad sources is allowed to run before it stops attempting to deliver a viable ad. |  |
-| Waterfall Ad Errors | The number of failed video waterfall ad loads (VAST errors) after attempts to show an ad. |  |
-| Waterfall Inclusions | The total number of video waterfall inclusions. |  |
-| Mediation Latency | The average video latency of the mediation. |  |
-| Mediation Requests | The total number of mediation requests for a video creative to display. |  |
-| Mediation Errors | The number of video mediation error responses received. |  |
-| Mediation No Bid | The number of video mediation no bid responses received. |  |
-| Mediation Timeouts | The maximum time in milliseconds that the mediation script will load mediated bids on the page. |  |
-| Mediation Responses | The number of successful video mediation responses where a valid video creative was returned and unwrapped. |  |
+| Column | Description |
+|---|---|
+| Imps | The total number of impressions. For video ads, an impression takes place when the first frame of the video is loaded. |
+| Waterfall Depth | The maximum number of waterfall attempts that are allowed to try and display the ad. |
+| Waterfall Latency | The average latency of the waterfall. |
+| Waterfall Position | The position of the creative in the waterfall. |
+| Waterfall Ad Attempts | The number of video waterfall ad load attempts to show an ad. |
+| Waterfall Ad Loads | The number of succesful video waterfall ad loads after attempts to show an ad. |
+| Waterfall Ad Timeouts | Maximum amount of time in milliseconds that waterfall processing of mediated ad sources is allowed to run before it stops attempting to deliver a viable ad. |
+| Waterfall Ad Errors | The number of failed video waterfall ad loads (VAST errors) after attempts to show an ad. |
+| Waterfall Inclusions | The total number of video waterfall inclusions. |
+| Mediation Latency | The average video latency of the mediation. |
+| Mediation Requests | The total number of mediation requests for a video creative to display. |
+| Mediation Errors | The number of video mediation error responses received. |
+| Mediation No Bid | The number of video mediation no bid responses received. |
+| Mediation Timeouts | The maximum time in milliseconds that the mediation script will load mediated bids on the page. |
+| Mediation Responses | The number of successful video mediation responses where a valid video creative was returned and unwrapped. |
 
 ## To run your report
 
@@ -106,7 +106,8 @@ Follow these steps to run your report.
     1. Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \> Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The seletions you make here will determine what report data is delivered to you, and how.
 
-    For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+    > [!IMPORTANT]
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears.  Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
@@ -121,11 +122,11 @@ Follow these steps to run your report.
 
      > [!TIP]
      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-     > Excel file. If the size of the report is more than that, you can try to download it using the [](../digital-platform-api/report-service.md) for that reporting service
-   > (The limit here is 10 million rows).
+     > Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
+     > (The limit here is 10 million rows).
 
-    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
-    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a name for future reference.
-    - Click **Run report** to send your report request.
+     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+     - **Name this report**: Give this report with its current settings a name for future reference.
+     - Click **Run report** to send your report request.

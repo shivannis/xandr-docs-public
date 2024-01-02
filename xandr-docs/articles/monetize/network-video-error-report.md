@@ -4,7 +4,7 @@ description: The article shows the Network Video Error Reports which you can use
 ms.date: 10/28/2023
 ---
 
-# Network Video Error Report
+# Network video error report
 
 The Network Video Error Report gives insight into video errors and their cause.
 
@@ -15,7 +15,7 @@ insight into the source of errors.
 
 All dates and times are given in UTC.
 
-**Time Ranges**
+**Time ranges**
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
@@ -158,8 +158,8 @@ Follow these steps to run your report.
     a.  Or, from the Publishers top menu, click on Prebid Server **Premium \> Analytics \> Prebid Server Analytics**.
 1. Select the relevant report from the list. The  **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
-    a. > [!IMPORTANT]
-    b. > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+    > [!IMPORTANT]
+    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that
     a. shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking
@@ -175,10 +175,10 @@ Follow these steps to run your report.
     a. **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and a limit of 100,000 rows per report  when downloading as XLSX and Excel file.
     b. **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
-    a. > [!TIP]
-    b. > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-    c. > Excel file. If the size of the report is more than that, you can try to download it using the [](../digital-platform-api/report-service.md) for that reporting service
-    d. > (The limit here is 10 million rows).
+   > [!TIP]
+   > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
+   > Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
+   > (The limit here is 10 million rows).
 
     a. **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     b. **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.

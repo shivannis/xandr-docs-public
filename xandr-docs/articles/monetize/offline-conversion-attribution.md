@@ -18,20 +18,20 @@ Offline attribution provides:
 
 The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [Conversion Attribution](conversion-attribution.md).
 
-## Conversion attribution, "Online" vs. "Offline"
+## Conversion attribution, "online" vs. "offline"
 
 The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram
 shows the current "offline" process.
 
-:::image type="content" source="media/oca.png" alt-text= "The diagram that defines the previous "online" conversion attribution process on your left side and the current "offline" process is on your right.":::
+:::image type="content" source="media/oca.png" alt-text= "The diagram that defines the previous online conversion attribution process on your left side and the current offline process is on your right.":::
 
-## Previous method ("Online")
+## Previous method ("online")
 
 ### Step 1. Conversion pixel loads
 
 The user's browser loads the conversion landing page, which fires the conversion pixel hosted by the **Impression Bus**.
 
-### Step 2. User data is requested by the Impression Bus
+### Step 2. User data is requested by the impression bus
 
 The **Impression Bus** asks the **User Data** store for information on the user.
 
@@ -41,11 +41,11 @@ The **User Data** store responds to the **Impression Bus** with information abou
 
 Because of the nature of the design of the data store, and the speed with which it must respond to requests, the information about the user it can pass to the **Impression Bus** in this step is limited. It is also unable to receive information about views or clicks as quickly as it must respond to requests for the latest view and click information. As a result, the information can be slightly out of date - where "slightly" is measured in seconds - leading to less accuracy in attributing conversions.
 
-### Step 4. User data is passed to Xandr's Bidder
+### Step 4. User data is passed to Xandr's bidder
 
 The **Impression Bus** passes along the information about the user it received from the **User Data** store to **Xandr's Bidder** for attribution.
 
-### Step 5. Attribution is performed by **Xandr's Bidder**
+### Step 5. Attribution is performed by **Xandr's bidder**
 
 **Xandr's Bidder** performs the actual [conversion attribution](conversion-attribution.md), searching the user's data for the most recent view or click associated with the advertiser's creative.
 
@@ -55,7 +55,7 @@ The **Impression Bus** passes along the information about the user it received f
 
 As noted in Step 3, the user information the **User Data** store can provide is limited. That limited set of data on the user must now go through a lengthy post-processing step, whereby it is combined with the more comprehensive user data stored in the **Data Warehouse**.
 
-### Step 7. Conversion-related data is made available for reporting,optimization, and budget
+### Step 7. Conversion-related data is made available for reporting, optimization, and budget
 
 The **Data Warehouse** has finished post-processing the limited amount of information on the converted user passed along from the **User Data** storage and integrating it with its own, more comprehensive data. At this point, the conversion-related data is made available to the Xandr Platform for reporting, optimization, and budget purposes.
 

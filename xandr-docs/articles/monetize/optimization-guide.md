@@ -2,7 +2,6 @@
 title: Optimization Guide
 description: The article helps you to understand the Xandr optimization engine.
 ms.date: 10/28/2023
-
 ---
 
 # Optimization guide
@@ -20,5 +19,5 @@ process of optimization, explains and demonstrates the detailed concepts and com
 - [Prerequisite Knowledge](prerequisite-knowledge.md) - This section explains foundational concepts that you should be familiar with before diving into optimization, such as
   booked revenue, media cost, bidding strategies, and campaign setup. These concepts are not specific to optimization but understanding them
   will help you use optimization effectively.
-- [Optimization In-Depth]("optimization-in-depth.md) - This section explains and demonstrates the detailed concepts and components involved in optimization, such as venues and
+- [Optimization In-Depth](optimization-in-depth.md) - This section explains and demonstrates the detailed concepts and components involved in optimization, such as venues and
   nodes, and shows you how to influence the optimization engine.

@@ -1,8 +1,7 @@
 ---
 title: Onboarding Mobile Supply
-description: 
+description: The article describes several ways of onboarding mobile supply.
 ms.date: 10/28/2023
-
 ---
 
 # Onboarding mobile supply
@@ -34,8 +33,6 @@ type of integration.
 This diagram shows the difference between how server-side and client-side mobile ad calls are made:
 
 :::image type="content" source="media/server-vs-client.png" alt-text= "The diagram illustrates the distinctions between server-side and client-side mobile ad call processes.":::
-
-![server vs client]()
 
 ## Server-side integrations
 
@@ -102,7 +99,7 @@ where `PLACEMENT_ID` is your placement ID ("123459"), and `WIDTHxHEIGHT` is the 
 
 Even though this call will fetch an ad, it doesn't provide enough information to make the impression attractive to buyers; see the next section for a list of recommended parameters.
 
-### Recommended parameters
+### Recommended parameters for server-side ad calls
 
 We recommend that you include the following parameters on server-side ad calls from mobile websites:
 
@@ -117,7 +114,7 @@ We recommend that you include the following parameters on server-side ad calls f
 
 Follow the instructions in this section to set up a client-side integration with a mobile publisher. Refer to Mobile App or Mobile Web as needed.
 
-## Mobile app
+## Mobile app in client-side integration
 
 ### Supply type
 
@@ -125,7 +122,7 @@ Ensure that you have marked your site's supply type as **Mobile Application**. F
 
 ### Required parameters
 
-To do a client-side mobile app integration, use one of our [Mobile SDKs](mobile-sdk/xandr-mobile-sdks.md). We have SDKs for Android and iOS, and they are designed so that you don't have to build the correct mobile ad calls yourself. The SDK will generate calls with the required parameters for you.
+To do a client-side mobile app integration, use one of our [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md). We have SDKs for Android and iOS, and they are designed so that you don't have to build the correct mobile ad calls yourself. The SDK will generate calls with the required parameters for you.
 
 For a complete list of our mobile ad call parameters, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
@@ -162,7 +159,7 @@ We recommend that you include the following parameters on client-side ad calls f
 
 | Name | Parameter | Description |
 |---|---|---|
-| Location | loc | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |k
+| Location | loc | This is the user's location expressed in latitude and longitude, to allow geo-targeting. |
 
 For a complete list of the query string parameters you can pass on our `/tt` and `/ttj` calls, see [Placement Tag Parameters](placement-tag-parameters.md).
 

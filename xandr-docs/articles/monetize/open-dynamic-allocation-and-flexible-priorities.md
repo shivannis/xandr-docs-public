@@ -22,7 +22,7 @@ Historically, standard line items have been restricted to lower priority setting
 
 For more information on setting priorities, see [Create a Standard Line Item](create-a-standard-line-item.md) and [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
-## The Impact of Flexible Priorities on Open Dynamic Allocation
+## The impact of flexible priorities on open dynamic allocation
 
 The ability to set line items of any type to any priority (1-20) changes the dynamics of bid submissions. There are three factors relating to priority that determine how demand will compete:
 
@@ -35,7 +35,7 @@ The ability to set line items of any type to any priority (1-20) changes the dyn
 
 The following scenarios illustrate how the three settings above interact to determine how demand is allowed to compete in the auction.
 
-## Example Scenarios Demonstrating Flexible Priorities
+## Example scenarios demonstrating flexible priorities
 
 These scenarios assume targeting is met for all line items in question. Other settings, such as targeting, also impact which line items are
 submitted.
@@ -74,11 +74,11 @@ following examples demonstrate different possibilities in this scenario:
 
 *Example 2:* One guaranteed delivery line item at priority 10 and all priority 12 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-d.png" alt-text= "The diagram showcases the inclusion of a guaranteed delivery line item set at priority 10, alongside the submission of all priority 12 standard line items to an auction for competition with (RTB).":::
+:::image type="content" source="media/priority-scenario-d.png" alt-text= "The diagram showcases the inclusion of a guaranteed delivery line item set at priority 10, alongside the submission of all priority 12 standard line items to an auction for competition with RTB.":::
 
 *Example 3:* One guaranteed delivery line item at priority 12 and all priority 10 standard line items are submitted to auction to compete with RTB.
 
-:::image type="content" source="media/priority-scenario-e.png" alt-text= The diagram demonstrates a guaranteed delivery line item at priority 12, with the additional submission of all priority 10 standard line items to an auction for competition with (RTB).":::
+:::image type="content" source="media/priority-scenario-e.png" alt-text= "The diagram demonstrates a guaranteed delivery line item at priority 12, with the additional submission of all priority 10 standard line items to an auction for competition with RTB.":::
 
 ## Implementation recommendations
 
