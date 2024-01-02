@@ -15,8 +15,7 @@ There are several ways to onboard mobile supply. The type of mobile supply you a
 This page lists the exact mobile ad calls you must make for each type of mobile supply integration we support. For each call, we describe the required supply type for that inventory, and the required and recommended query string parameters.
 
 > [!WARNING]
-> Sellers using the `/mob` or `/ssmob` calls must ensure that this traffic is **mobile app traffic only**. Any non-app traffic coming through these handlers will be
-> rejected.
+> Sellers using the `/mob` or `/ssmob` calls must ensure that this traffic is **mobile app traffic only**. Any non-app traffic coming through these handlers will be rejected.
 > [!IMPORTANT]
 > Currently, Monetize does not export mobile ad tags directly. You must [Export Placement Tags](export-placement-tags.md) and then edit them to include the parameters described below.
 
@@ -126,7 +125,7 @@ To do a client-side mobile app integration, use one of our [Mobile SDKs](../mobi
 
 For a complete list of our mobile ad call parameters, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
-## Recommended parameters
+## Recommended parameters 
 
 In order to get the SDK to send the device's location and carrier info, and thus make the impression more valuable to buyers, you will need to do the following:
 
@@ -153,7 +152,7 @@ A client-side ad call coming from a mobile website only requires a couple of par
 https://ib.adnxs.com/ttj?id=PLACEMENT_ID&size=WIDTHxHEIGHT 
 ```
 
-### Recommended parameters
+### Recommended parameters on client-side ad calls
 
 We recommend that you include the following parameters on client-side ad calls from mobile websites:
 

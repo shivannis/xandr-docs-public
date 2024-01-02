@@ -1,6 +1,6 @@
 ---
 title: Optimization Buying Strategies
-Description: The articles explains Optimization of Buying Strategies in case of legacy line items.
+description: The articles explains Optimization of Buying Strategies in case of legacy line items.
 ms.date: 10/28/2023
 ---
 
@@ -47,43 +47,22 @@ The following buying strategies work for buying third party inventory that utili
    >  The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item  \>  Basic Settings \>  Performance Goals**
    >  or **Edit Line Item  \>  Basic Settings  \>  Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
 
-  For more information, see
-  <a href="using-performance-goals-with-cpm-booked-revenue.md"
-  class="xref">Using Performance Goals with CPM Booked Revenue</a>
-
-  To learn about setting up **Performance Goals,** see Step 6 of
-  <a href="create-a-standard-line-item.md" class="xref">Create a
-  Standard Line Item</a>.
-
+  For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
   
+  To learn about setting up **Performance Goals,** see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
 
-For all RTB pay-per-impression optimization buying strategies, you have
-the option of specifying a **min CPM** and a **max CPM**.
+For all RTB pay-per-impression optimization buying strategies, you have the option of specifying a **min CPM** and a **max CPM**.
 
-- If you set a **min CPM** for a campaign using optimization and the
-  algorithm determines your bid is below this amount, the campaign will
-  not bid on that impression.
-- If you set a **max CPM** for a campaign using optimization and the
-  algorithm determines your bid is above this amount, the campaign will
-  bid on the impression at the max CPM price (not at the price
-  calculated by the algorithm).
+- If you set a **min CPM** for a campaign using optimization and the algorithm determines your bid is below this amount, the campaign will not bid on that impression.
+- If you set a **max CPM** for a campaign using optimization and the algorithm determines your bid is above this amount, the campaign will
+  bid on the impression at the max CPM price (not at the price calculated by the algorithm).
 
-The <a href="cadence-modifier-and-the-chaos-factor.md"
-class="xref">Cadence Modifier and the Chaos Factor</a> is automatically
-enabled for buying strategies that do use optimization, as cadence is an
+The [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md) is automatically enabled for buying strategies that do use optimization, as cadence is an
 important feature of the optimization algorithm.
 
 ## Performance goals
 
-When creating a Line Item, you can track how well the campaigns that
-belong to that line item are doing against the performance goals give to
-you by your advertiser. If you elect to set a bidding limit with your
-**Performance Goal**, all campaigns buying underneath that line item
-will go through a bid decisioning logic. The bid decisioning applies to
-all buying strategies, regardless if they are an optimization buying
-strategy or not. For more information, see Step 6 of
-<a href="create-a-standard-line-item.md" class="xref">Create a
-Standard Line Item</a>.
+When creating a Line Item, you can track how well the campaigns that belong to that line item are doing against the performance goals give to you by your advertiser. If you elect to set a bidding limit with your **Performance Goal**, all campaigns buying underneath that line item will go through a bid decisioning logic. The bid decisioning applies to all buying strategies, regardless if they are an optimization buying strategy or not. For more information, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
 
 ## Related topic
 

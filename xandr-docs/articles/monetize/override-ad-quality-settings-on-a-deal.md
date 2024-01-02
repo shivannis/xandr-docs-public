@@ -4,7 +4,6 @@ description: The article explains the process of overriding ad quality settings 
 ms.date: 10/28/2023
 ---
 
-
 # Override ad quality settings on a deal
 
 By default, when you create a deal, the deal inherits any ad quality settings you have already established for a given network and publisher.
@@ -80,19 +79,14 @@ You can also specifically approve or block specific creatives from deals by typi
 
 Consider a more complex example: you are creating a deal for toy manufacturers in Scandinavian countries.
 
-| Requirement | Ad Quality Setting |  |  |
-|---|---|---|---|
-| You trust your buyer and do not want them to have to wait for their new ads to be approved. | In **Trust Level** , check **Allow Pending Creatives**. |  |  |
-| You want your deal only to serve relevant categories, and for sporting goods, you want any ads to serve for that category, regardless of network ad quality settings. | Click **Edit** under **Creative Category**. In **Categories**, include Sporting Goods and Toys and Games. On the **Ad Quality Settings** tab, click **Ignore for Sporting Goods**.<br>Now we have restricted creatives so that only the listed categories can serve. Further, Sporting Goods ads can ignore any other restriction. |  |  |
-| You want your deal only to serve in Scandinavian languages. For Swedish only, you want to ignore network ad quality settings to permit any ad in that language to serve. | Click **Edit** under **Language**. In **Languages**, include Danish, Norwegian, and Swedish. On the **Ad Quality Settings** tab, click **Ignore** for Swedish.<br>We have restricted further: now, only creatives in the allowed categories and which are in the selected languages can serve. Swedish language ads can ignore any other restriction that might be set for those ads. |  |  |
-| You want your deal to include any types of technical attributes, but you want to make sure audio ads will always serve. | Click **Edit** under **Technical Attributes**. Click **Ignore** for the two types of audio ads. (You cannot restrict technical attributes on a deal.)<br>Creatives in the allowed categories and languages, and which are audio, in Swedish, and in the Sporting Goods category will be allowed to serve despite any other network or publisher level ad quality setting. |  |  |
-| There are two particular creatives that you know you always want to serve and three creatives you always want to block. | Click Edit under Specific Creatives. In Creatives, type the creative IDs you want to allow in the Allow box, and the IDs you want to block in the **Block** box.<br>Any creative in the Allow list will serve, regardless of any other setting.<br>Any creative in the **Block** box will not serve, regardless of any other setting. |  |  |
+| Requirement | Ad Quality Setting |
+|---|---|
+| You trust your buyer and do not want them to have to wait for their new ads to be approved. | In **Trust Level** , check **Allow Pending Creatives**. |
+| You want your deal only to serve relevant categories, and for sporting goods, you want any ads to serve for that category, regardless of network ad quality settings. | Click **Edit** under **Creative Category**. In **Categories**, include Sporting Goods and Toys and Games. On the **Ad Quality Settings** tab, click **Ignore for Sporting Goods**.<br>Now we have restricted creatives so that only the listed categories can serve. Further, Sporting Goods ads can ignore any other restriction. |
+| You want your deal only to serve in Scandinavian languages. For Swedish only, you want to ignore network ad quality settings to permit any ad in that language to serve. | Click **Edit** under **Language**. In **Languages**, include Danish, Norwegian, and Swedish. On the **Ad Quality Settings** tab, click **Ignore** for Swedish.<br>We have restricted further: now, only creatives in the allowed categories and which are in the selected languages can serve. Swedish language ads can ignore any other restriction that might be set for those ads. |
+| You want your deal to include any types of technical attributes, but you want to make sure audio ads will always serve. | Click **Edit** under **Technical Attributes**. Click **Ignore** for the two types of audio ads. (You cannot restrict technical attributes on a deal.)<br>Creatives in the allowed categories and languages, and which are audio, in Swedish, and in the Sporting Goods category will be allowed to serve despite any other network or publisher level ad quality setting. |
+| There are two particular creatives that you know you always want to serve and three creatives you always want to block. | Click **Edit** under **Specific Creatives**. In Creatives, type the creative IDs you want to allow in the **Allow** box, and the IDs you want to block in the **Block** box.<br>Any creative in the Allow list will serve, regardless of any other setting.<br>Any creative in the **Block** box will not serve, regardless of any other setting. |
 
-Related Topics
+## Related topic
 
-- <a href="create-a-custom-deal.md" class="xref">Create a Custom
-  Deal</a>
-
-
-
-
+[Create a Custom Deal](create-a-custom-deal.md)
