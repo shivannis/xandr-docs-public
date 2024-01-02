@@ -28,9 +28,9 @@ Trust Level is used to indicate what level of audit status you want to permit fo
 - Allow pending creatives: if checked, the default setting is used but creatives submitted for Xandr audit in the "pending" state are allowed to serve. Once the audit is complete, the creative uses the default ad quality setting.
 - Maximum: If selected, all creatives are allowed to serve for this deal (except for creatives specifically banned; see below). With Maximum trust level set on a deal, a buyer can serve on that deal even if the buyer has been blocked in network or publisher ad quality rules.
 
-> [!NOTE]
-> If set to anything other than Default, this setting overrides both network and publisher ad quality settings and allows deals to serve creatives that would normally be
-> blocked.
+  > [!NOTE]
+  > If set to anything other than Default, this setting overrides both network and publisher ad quality settings and allows deals to serve creatives that would normally be
+  > blocked.
 
 ## Attribute overrides
 

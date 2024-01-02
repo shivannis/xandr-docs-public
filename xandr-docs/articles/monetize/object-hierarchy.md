@@ -54,7 +54,7 @@ There are several types of line items you may use depending on your business mod
 - [Augmented Line Item](create-an-augmented-line-item-ali.md) (under an Insertion Order) **Recommended**. Augmented line items do not use campaigns. For an overview, see
   [Augmented Line Items](augmented-line-items-ali.md).
 
-## Campaign (Standard Line Items only)
+## Campaign (standard line items only)
 
 The [campaign](working-with-campaigns.md) dictates your tactics for driving performance to meet your advertisers' goals dictated on the line item. Campaigns house the settings you dictate such as optimized targeting strategies and bidding.
 You can have many campaigns under a single line item.

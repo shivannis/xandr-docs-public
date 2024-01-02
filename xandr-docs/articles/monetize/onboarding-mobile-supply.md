@@ -19,7 +19,7 @@ This page lists the exact mobile ad calls you must make for each type of mobile 
 > [!IMPORTANT]
 > Currently, Monetize does not export mobile ad tags directly. You must [Export Placement Tags](export-placement-tags.md) and then edit them to include the parameters described below.
 
-## Differences between server and client-Side
+## Differences between server and client-side
 
 For both app and mobile web inventory, there are two types of ad calls that can be generated: one that comes directly from the device (the client-side), and one that comes from the server.
 
@@ -48,7 +48,7 @@ In Monetize, ensure that you have marked your placement group with a supply type
 > Only traffic matching the placement group's supply type can serve within that placement group. For example, if a seller labels their placement group as **Standard
 > Website** but the traffic coming through that placement group is both **standard website** as well as mobile optimized, any campaign targeting **Mobile Application** placement groups will not be able to serve on this inventory.
 
-## Required parameters
+### Required parameters
 
 Server-side mobile app traffic should only use the `/ssmob` endpoint. Server-side traffic coming through `/mob` calls runs the risk of being rejected.
 
@@ -63,7 +63,7 @@ The `format` parameter is required to ensure that the server requesting the ad i
 
 Even though this call will fetch an ad, it doesn't provide as much information as it could to make the impression attractive to buyers; see the next section for a list of recommended parameters.
 
-## Recommended parameters
+### Recommended parameters for server-side ad calls
 
 We recommend that you include the following parameters (in the table below) on server-side ad calls from mobile apps. For more information about how to properly format mobile ad calls, see the [obile Ad Call Reference](mobile-ad-call-reference.md).
 
@@ -86,7 +86,7 @@ We recommend that you include the following parameters (in the table below) on s
 In Monetize, ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type, see [Create a Placement
 Group](create-a-placement-group.md).
 
-### Required parameters
+### Required parameters for a server-side ad call
 
 Technically, the minimum required URL for a server-side ad call coming from a mobile website looks like
 
@@ -98,7 +98,7 @@ where `PLACEMENT_ID` is your placement ID ("123459"), and `WIDTHxHEIGHT` is the 
 
 Even though this call will fetch an ad, it doesn't provide enough information to make the impression attractive to buyers; see the next section for a list of recommended parameters.
 
-### Recommended parameters for server-side ad calls
+### Recommended parameters for a server-side ad calls
 
 We recommend that you include the following parameters on server-side ad calls from mobile websites:
 
@@ -119,13 +119,13 @@ Follow the instructions in this section to set up a client-side integration with
 
 Ensure that you have marked your site's supply type as **Mobile Application**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
 
-### Required parameters
+### Required parameters for client-side mobile app integration
 
 To do a client-side mobile app integration, use one of our [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md). We have SDKs for Android and iOS, and they are designed so that you don't have to build the correct mobile ad calls yourself. The SDK will generate calls with the required parameters for you.
 
 For a complete list of our mobile ad call parameters, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
-## Recommended parameters 
+## Recommended parameters
 
 In order to get the SDK to send the device's location and carrier info, and thus make the impression more valuable to buyers, you will need to do the following:
 
@@ -134,7 +134,7 @@ In order to get the SDK to send the device's location and carrier info, and thus
 
 For instructions on enabling location permissions and sending user data, see [Android SDK Integration](../mobile-sdk/android-sdk-integration.mdmobile-sdk) and [iOS SDK Integration](../mobile-sdk/ios-sdk-integration.md).
 
-### Mobile web
+## Mobile web
 
 Client-side mobile web integrations should use the `/ttj` placement tag that is exported by Monetize. This is the same ad tag used for display impressions. Our ad server will retrieve the browser's User Agent and the device's IP address using the same methods used for display. For instructions on exporting a placement tag, see [Export Placement
 Tags](export-placement-tags.md).
@@ -144,7 +144,7 @@ Tags](export-placement-tags.md).
 Ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type,
 see [Create a Placement Group](create-a-placement-group.md).
 
-### Required parameters
+### Required parameters for a client-side ad calls
 
 A client-side ad call coming from a mobile website only requires a couple of parameters:
 
@@ -152,7 +152,7 @@ A client-side ad call coming from a mobile website only requires a couple of par
 https://ib.adnxs.com/ttj?id=PLACEMENT_ID&size=WIDTHxHEIGHT 
 ```
 
-### Recommended parameters on client-side ad calls
+### Recommended parameters for client-side ad calls
 
 We recommend that you include the following parameters on client-side ad calls from mobile websites:
 
@@ -162,7 +162,7 @@ We recommend that you include the following parameters on client-side ad calls f
 
 For a complete list of the query string parameters you can pass on our `/tt` and `/ttj` calls, see [Placement Tag Parameters](placement-tag-parameters.md).
 
-### Related topics
+## Related topics
 
 - [Placement Tag Parameters](placement-tag-parameters.md)
 - [Mobile Ad Call Reference](mobile-ad-call-reference.md)

@@ -16,7 +16,7 @@ Complete the attached [Excel Worksheet](https://view.officeapps.live.com/op/view
 
 If you don't want to permit gambling ads to serve on any of your publishers, follow these steps:
 
-### Step 1. Navigate to the network Ad Quality Manager
+### Step 1. Navigate to the network ad quality manager
 
 Open the network Ad Quality Manager by navigating to **Network \>  Ad Quality**.
 
@@ -35,7 +35,7 @@ Search for the **Gambling** category and click the **Edit** link. Then change th
 
 If you don't want to permit gambling ads to serve on specific publishers' inventory, follow these steps for each publisher:
 
-### Step 1. Navigate to the publisher Ad Quality Manager
+### Step 1. Navigate to the publisher ad quality manager
 
 Open the publisher Ad Quality Manager by navigating to **Publishers \> Ad Quality**.
 

@@ -78,12 +78,7 @@ There are three settings in the Buy Third Party Inventory section which can limi
 - **Bid CPM: max $ \_ CPM in Optimized Phase**
 - **Bid CPM: min $ \_ CPM in Optimized Phase**
 
-If you apply these settings, you establish hard limits for those bids.
-Therefore, if you have selected one or more of these options, even if
-you apply the **Bid Multiplier** in a way that generates an extremely
-high bid (e.g., a bid of **$35** for inventory normally costing **$1**),
-and your maximum bid is set to **$3**, your bid will be reduced to
-**$3**.
+If you apply these settings, you establish hard limits for those bids. Therefore, if you have selected one or more of these options, even if you apply the **Bid Multiplier** in a way that generates an extremely high bid (e.g., a bid of **$35** for inventory normally costing **$1**), and your maximum bid is set to **$3**, your bid will be reduced to **$3**.
 
 ## Segment price and modifier
 
@@ -101,19 +96,14 @@ campaign, see [Segment Modifier](segment-modifier.md).
 
 ## Phase thresholds
 
-The **Phase Thresholds** slider allows you to choose how many successful
-learn events are required to move a node from the learn phase to the
-optimized phase. You can set the value by moving the pointer as needed;
-the minimum number of events is **1**, while the maximum number is
-**15**.
+The **Phase Thresholds** slider allows you to choose how many successful learn events are required to move a node from the learn phase to the optimized phase. You can set the value by moving the pointer as needed; the minimum number of events is **1**, while the maximum number is **15**.
 
 For more information about the learn and optimized phases, see
 [What is an Optimization Node?](what-is-an-optimization-node.md).
 
 ## Restore defaults
 
-Select this option on the dialog to erase any alterations that have been
-made to these levers and return them to a default or neutral status.
+Select this option on the dialog to erase any alterations that have been made to these levers and return them to a default or neutral status.
 
 ## Cadence modifier
 
@@ -124,7 +114,7 @@ This setting determines if the cadence modifier is applied to the advertiser as 
 
 If an advertiser has a limited number of creatives and they have a similar appearance, you should probably set this value to **Advertiser**. If an advertiser's creatives are highly differentiated from each other, you can set this to **Creative**.
 
-When you are set to **Bid a Base CPM**, you can limit the upper and lower limits of the bid by completing the **Pay CPM: Max $** and **Min $**settings. These values serve as absolute limits; bids outside of this range are not used.
+When you are set to **Bid a Base CPM**, you can limit the upper and lower limits of the bid by completing the **Pay CPM: Max $** and **Min $** settings. These values serve as absolute limits; bids outside of this range are not used.
 
 > [!IMPORTANT]
 > The default setting is **Advertiser**.

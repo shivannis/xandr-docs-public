@@ -54,8 +54,8 @@ Intervals determine how your data is grouped together into rows in the report re
 - Cumulative: Data is grouped together in one figure, covering the
   entire selected time range.
 
-> [!NOTE]
-> For impressions older than 100 days, the day will be returned rather than the hour.
+  > [!NOTE]
+  > For impressions older than 100 days, the day will be returned rather than the hour.
 
 This report's data is retained for 420 days.
 
