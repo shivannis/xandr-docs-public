@@ -1,5 +1,5 @@
 ---
-title: Quickstart Guide: Set Up Outstream Video
+title: Quickstart Guide - Set Up Outstream Video
 description: The article provides a quickstart guide for setting up outstream video.
 ms.date: 10/28/2023
 ---

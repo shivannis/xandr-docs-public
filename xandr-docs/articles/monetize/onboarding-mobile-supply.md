@@ -115,7 +115,7 @@ Follow the instructions in this section to set up a client-side integration with
 
 ## Mobile app in client-side integration
 
-### Supply type
+### Supply type as mobile application
 
 Ensure that you have marked your site's supply type as **Mobile Application**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
 
@@ -132,9 +132,9 @@ In order to get the SDK to send the device's location and carrier info, and thus
 - Configure the SDK during installation to enable the permissions that will allow it to send location-based data to advertisers.
 - Use the SDK to get the user's location and send it on the ad call.
 
-For instructions on enabling location permissions and sending user data, see [Android SDK Integration](../mobile-sdk/android-sdk-integration.mdmobile-sdk) and [iOS SDK Integration](../mobile-sdk/ios-sdk-integration.md).
+For instructions on enabling location permissions and sending user data, see [Android SDK Integration](../mobile-sdk/android-sdk-integration.md) and [iOS SDK Integration](../mobile-sdk/ios-sdk-integration.md).
 
-## Mobile web
+## Mobile web in client -side mobile web integration
 
 Client-side mobile web integrations should use the `/ttj` placement tag that is exported by Monetize. This is the same ad tag used for display impressions. Our ad server will retrieve the browser's User Agent and the device's IP address using the same methods used for display. For instructions on exporting a placement tag, see [Export Placement
 Tags](export-placement-tags.md).
