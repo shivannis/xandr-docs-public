@@ -68,7 +68,7 @@ You can export Campaign Monitor results to a CSV file if you want to do more in-
 The Campaign Monitor gives you a visual of line item and campaign delivery by using pacing bars. Pacing bars are displayed any place you've set a budget. The pacing bar is used to gauge how far along you are in your budget compared to where you should be. It also tells you what % you are pacing to.
 
 The color of the pacing bar is also based on how close you are to pacing so you can quickly view a line item or campaign's health. If your pacing bar is grey it's because we
-don't have flight dates for the line item or the campaign and therefore, cannot determine how far along the line item or campaign should be. **If you'd like to see the line item or campaign pacing compared to expected pacing, please read [Getting the Most out of Campaign Monitor](campaign-monitor.md) below**.
+don't have flight dates for the line item or the campaign and therefore, cannot determine how far along the line item or campaign should be. **If you'd like to see the line item or campaign pacing compared to expected pacing, please read** [Getting the Most out of Campaign Monitor](campaign-monitor.md#getting-the-most-out-of-campaign-monitor), **below**.
 
 | Lifetime Pacing Bar | Yesterday Pacing Bar |
 |---|---|
@@ -76,11 +76,11 @@ don't have flight dates for the line item or the campaign and therefore, cannot 
 
 ## Personalizing your pacing bars
 
-You can change the colors and ranges on your pacing bars. Click the pacing bar arrow to open the **Customize pacing target colors and ranges** dropdown. Moving the range sliders and select the colors you want, then click Save Settings.
+You can change the colors and ranges on your pacing bars. Click the pacing bar arrow to open the **Customize pacing target colors and ranges** dropdown. Moving the range sliders and select the colors you want, then click **Save Settings**.
 
 ## Filtering
 
-Click the +Filter button to select which line items to display in the grid. You can filter on Advertiser, Insertion Order, Name/ID, Sales Rep, and Trafficker. The filter allows you to easily find line items that are relevant to you. Filters will not be applied until you select the type of filter (such as Advertiser) and the individual advertisers, insertion orders, etc. that you want to filter on.
+Click the **+Filter** button to select which line items to display in the grid. You can filter on Advertiser, Insertion Order, Name/ID, Sales Rep, and Trafficker. The filter allows you to easily find line items that are relevant to you. Filters will not be applied until you select the type of filter (such as Advertiser) and the individual advertisers, insertion orders, etc. that you want to filter on.
 
 You can also filter which line items display in the grid by their "last served date."
 
@@ -95,7 +95,7 @@ Alerts allow you to quickly see which line items are not serving. By default, th
 - The start date is in the future or end date is in the past.
 - Lifetime or daily impression budget is met.
 
-  **Alerts:**
+**Alerts:**
 
 - Lifetime or daily budget is set to "0."
 - No creatives associated with this campaign or if no creative is eligible.
@@ -106,7 +106,7 @@ You can view metrics for all campaigns associated with a line item by clicking o
 
 ## Details pane
 
-By clicking the Details button for any line item or campaign, the Campaign Monitor allows you to dig deeper into line item and campaign performance with graphs and setup details. You can also click through directly to the line item or campaign from the details pane, which allows you to review settings that may be hindering delivery or
+By clicking the **Details** button for any line item or campaign, the Campaign Monitor allows you to dig deeper into line item and campaign performance with graphs and setup details. You can also click through directly to the line item or campaign from the details pane, which allows you to review settings that may be hindering delivery or
 performance.
 
 ## Graphs
@@ -124,7 +124,7 @@ clicking the **Edit settings for this line item** (or campaign) option at the bo
 
 You can also click through directly to any creatives that may be causing alerts. Click the Status button to see alert details.
 
-## Getting the most out of campaign monitor
+## Getting the Most out of Campaign Monitor
 
 There are a few tweaks you can make during line item and campaign set up to improve how helpful the Campaign Monitor is to you.
 
@@ -133,6 +133,6 @@ There are a few tweaks you can make during line item and campaign set up to impr
 Pacing bars can only be displayed if we can decipher how long the line item or campaign will run and how much budget you have for that time (whether an impression budget, a revenue budget, or a media cost budget). Putting in definitive flight dates at the line item level or on all campaigns will allow you to view a pacing bar. Also, setting lifetime budgets, as opposed to choosing "unlimited," will also allow us to display more information in the pacing bar.
 Setting these budgets at the line item level is best, but if that doesn't fit the model of your business, setting a budget on all campaigns associated with a line item allows us to add up the campaign budgets to create a line item level.
 
-## Days into Flight
+## Days into flight
 
 You must set flight dates on the line item level or on all campaigns to be able to view days into flight information. Flight dates are also necessary to view pacing bars.

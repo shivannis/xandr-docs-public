@@ -22,7 +22,7 @@ Some native sellers require you to go through a quick buyer audit before they'll
 
 | Native Seller | Are you in an allowlist? | How to be put in an allowlist |
 |--|--|--|
-| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the Partner Center Guide documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
+| Ligatus | You must be in an allowlist to buy Ligatus inventory. You can determine whether you're eligible to serve on Ligatus by checking your settings in Partner Center. See the [Partner Center Guide](partner-center-guide.md) documentation for more information. | Please reach out to [rta@ligatus.com](mailto:rta@ligatus.com) for allowlist approval. |
 | Sanoma Finland | If you have not previously bought Sanoma Finland via Xandr, you are not yet in an allowlist. | Reach out to [programmatic@sanoma.com](mailto:programmatic@sanoma.com). |
 | TripleLift | If you have not previously bought TripleLift via Xandr, you are not yet in an allowlist. | Reach out to [appnexus@triplelift.com](mailto:appnexus@triplelift.com).|
 

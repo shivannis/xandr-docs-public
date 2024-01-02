@@ -26,24 +26,16 @@ If you choose to optimize to a % margin of your booked revenue, you also have th
 > Error Message: **cpm_bid_type "margin" is not compatible with "cost_plus_cpm" or "cost_plus_margin"**
 >
 > If you see this error message, there are three possible causes:
->
-> 1. Your campaign buying strategy is "Optimize to a % margin" and your line item booked revenue is Cost Plus.
->
-> Reason: This buying strategy requires the line item booked revenue to be a known value.
->
-> Solution: Choose a different buying strategy or a different booked revenue type.
->
-> 2. Your campaign buying strategy is "Optimize to a % margin" and you have not entered any booked revenue on the line item.
->
-> Reason: This buying strategy requires the line item booked revenue to be a known value.
->
-> Solution: Enter $0 CPM as the line item booked revenue if you don't wish to track revenue.
->
-> 3. You have a direct campaign and you have not entered any booked revenue on the line item.
->
-> Reason: Our direct decisioning system uses both priority levels as well as booked revenue to determine which bid should win. Thus, booked revenue must be a known value.
->
-> Solution: Enter $0 CPM as the line item booked revenue if you don't wish to track revenue.
+   >
+   > 1. Your campaign buying strategy is "Optimize to a % margin" and your line item booked revenue is Cost Plus.
+   > Reason: This buying strategy requires the line item booked revenue to be a known value.
+   > Solution: Choose a different buying strategy or a different booked revenue type.
+   > 2. Your campaign buying strategy is "Optimize to a % margin" and you have not entered any booked revenue on the line item.
+   > Reason: This buying strategy requires the line item booked revenue to be a known value.
+   > Solution: Enter $0 CPM as the line item booked revenue if you don't wish to track revenue.
+   > 3. You have a direct campaign and you have not entered any booked revenue on the line item.
+   > Reason: Our direct decisioning system uses both priority levels as well as booked revenue to determine which bid should win. Thus, booked revenue must be a known value.
+   > Solution: Enter $0 CPM as the line item booked revenue if you don't wish to track revenue.
 
 ## Optimize to a predicted CPA or CPC goal
 
@@ -53,9 +45,9 @@ You may wish to vary bids based on the likelihood of some conversion event, eith
 whether you define it as a click or an acquisition (registration, purchase, etc.).
 
 > [!NOTE]
-> When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see
+> When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, use the **Performance Goals** section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see
 > [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md)
-> To learn about setting up performance goals, see [Add a Performance Goal to a Line Item].
+> To learn about setting up performance goals, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
 
 ## Bid a media cost CPM
 
@@ -85,7 +77,11 @@ You can choose to pay publishers only when users click on your ads or when users
 - If you set a min CPM for a CPA or CPC Goal campaign, and the optimization system determines that your ideal bid is below it, the campaign will not bid. For example, if the optimized bid is 20 cents, and your min bid is $1, Monetize **will not bid** for this campaign.
 - If you set a min CPM, your bid will not be price reduced below this amount before being passed into any third-party system.
 
-> [!NOTE]
-> The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is now deprecated.
-> Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
-> For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals**, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
+   > [!NOTE]
+   > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is now
+   > deprecated. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate
+   > existing campaigns that use it. For best results, use the Performance Goals section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a %
+   > Margin of Booked Revenue** as your campaign buying strategy.
+   > For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue]
+   > (using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals**, see [Add a Performance Goal to a Line Item]
+   > (add-a-performance-goal-to-a-line-item.md).

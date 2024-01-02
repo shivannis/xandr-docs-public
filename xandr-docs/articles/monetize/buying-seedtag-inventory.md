@@ -24,16 +24,16 @@ This page will guide you through the process required to display your creative v
 
 There are several steps you need to take to get started.
 
-## Set up seedtag as an eligible partner
+## Set up Seedtag as an eligible partner
 
 Before you can sell through Seedtag you need to set them up as an eligible partner. For instructions on setting up a relationship with Seedtag, see [Managing Relationships with Sellers](managing-relationships-with-sellers.md).
 
-## Send your creative to seedtag
+## Send your creative to Seedtag
 
 Seedtag's in-image format is a non-IAB Standard ad format which requires them to adapt your creative and provide you with the ad tag to be implemented. You must send your creative (preferably as a PSD file) to [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to receive a tag that you will apply when adding your creative in Xandr
 Monetize.
 
-## Request the creation of a deal ID to deedtag
+## Request the creation of a deal ID to Deedtag
 
 Contact Seedtag at [programmatic@seedtag.com](mailto:programmatic@seedtag.com) to request a deal ID. Please specify your buyer ID and the type of audience you're looking for.
 
@@ -47,8 +47,8 @@ You must select CPM as your **Buying Strategy**. You can select any option under
 
 **Inventory Quality:**
 
-- Select Serve only on Xandr-reviewed inventory.
-- Select Also serve on trusted seller-reviewed/unreviewed inventory.
+- Select **Serve only on** Xandr-reviewed inventory.
+- Select **Also serve on trusted seller-reviewed/unreviewed inventory**.
 
 ## Upload a third-party creative
 

@@ -4,7 +4,6 @@ description: Inventory Overview
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Buying MSN inventory
 
 ## Inventory overview
@@ -16,7 +15,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 
 ## Availability and volume
 
-- 45 total desktop display markets globally 
+- 45 total desktop display markets globally
 - 42 total mobile display and mobile app markets globally
 - 12 billion monthly global display impressions, 4.8 billion in US
 - 305 million monthly global mobile impressions, 129 million in US
@@ -50,7 +49,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 For information on general inventory targeting, review the following documentation:
 
 - [Buying Microsoft Inventory](buying-microsoft-inventory.md)
-- [domain-targeting.md](Domain Targeting)
+- [Domain Targeting](domain-targeting.md)
 
 To target MSN.com inventory:
 

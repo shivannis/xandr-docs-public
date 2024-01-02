@@ -24,7 +24,7 @@ one or more ads. You can test only one ad at a time.
 
 To set up and listen to a test ad:
 
-1. Upload your ad using the **Creative Manager** and assign it to the **Alpha Test** brand in the Creative Attributes section, using the **Self-classify** audit option.
+1. Upload your ad using the **Creative Manager** and assign it to the **Alpha Test** brand in the **Creative Attributes** section, using the **Self-classify** audit option.
 1. Create a new line item or campaign. In the **Buying Strategies** area of the **Basic Setup** section, set the **Bid a base CPM** to $1.00 CPM.
 
    > [!NOTE]
@@ -32,21 +32,21 @@ To set up and listen to a test ad:
 
 3. In the **Targeting** section, select **Partners >  3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
 1. Click **Include** and then **Add**.
-1. Go to the following URL: [https://player.listenlive.co/xxxx](https://player.listenlive.co/xxxx), where xxxx is the site ID provided by Triton Digital.
+1. Go to the following URL: `https://player.listenlive.co/xxxx`, where `xxxx` is the site ID provided by Triton Digital.
 
 ## Target Triton inventory
 
 After setting up your line item or campaign, you can target all Triton nventory or specific categories of Triton inventory.
 
-In the Targeting section under Inventory, click **Edit**. This opens the **Inventory Targeting** dialog.
+In the Targeting section under **Inventory**, click **Edit**. This opens the **Inventory Targeting** dialog.
 
 ## Target all Triton inventory
 
-In the **Inventory Targeting** dialog, under **3rd Party Inventory  >  Sellers**, search for "Triton". Include the seller called **Triton Digital** by clicking on the green checkmark icon.
+In the **Inventory Targeting** dialog, under **3rd Party Inventory > Sellers**, search for "Triton". Include the seller called **Triton Digital** by clicking on the green checkmark icon.
 
 ## Target specific categories of Triton audio inventory
 
-Alternatively, you can narrow the inventory to specific formats. Click Triton **Digital** in the **Sellers** view to see a list of all the categories.You are now in the **Publishers and Categories** view. Select the format categories you want to include.
+Alternatively, you can narrow the inventory to specific formats. Click **Triton Digital** in the **Sellers** view to see a list of all the categories.You are now in the **Publishers and Categories** view. Select the format categories you want to include.
 
 You can narrow the inventory type by excluding categories such as ad type, asset type etc. You can also exclude categories that you don't want instead of including categories that you do.
 
@@ -69,7 +69,7 @@ Using inventory targeting, you can narrow the scope of your line item or campaig
 | Device: Computer Browsers (23875) | Players rendered in PC-based web browsers. Uses cookies. |
 | Device: Mobile Apps (23878) | Players in mobile device player apps. Does not use cookies. |
 | Device: Mobile Browser (23877) | Players in device-optimized mobile web browsers, such as iOS Safari and Android Chrome. Uses cookies. |
-| Device: Uncategorized (23879) | Inventory that is not categorized. The vast majority of this inventory is intended for mobile apps, but it also includes consoles such as Roku. Does not use cookies.<br>Tip: It is recommended not to exclude the uncategorized category if you want access to the full scale of inventory for mobile devices. |
+| Device: Uncategorized (23879) | Inventory that is not categorized. The vast majority of this inventory is intended for mobile apps, but it also includes consoles such as Roku. Does not use cookies.<br>**Tip**: It is recommended not to exclude the uncategorized category if you want access to the full scale of inventory for mobile devices. |
 
 ### Cookie categories
 

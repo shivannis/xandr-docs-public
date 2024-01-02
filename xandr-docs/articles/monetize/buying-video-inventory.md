@@ -4,14 +4,13 @@ description: This page provides you with a suggested workflow to optimize the ne
 ms.date: 10/28/2023
 ---
 
-# Buying video inventory
+# Microsoft Monetize - Buying video inventory
 
 This page provides you with a suggested workflow to optimize the new enhancements around our buy-side video offering.
 
 ## Step 1. Add VAST video creatives
 
-You can either opt to have Xandr host your VAST creatives, or add creatives hosted by a third-party provider. For more [Add a Creative](add-a-creative.md)
-information, see [Add Creatives in Bulk](add-creatives-in-bulk.md).
+You can either opt to have Xandr host your VAST creatives, or add creatives hosted by a third-party provider. For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 > [!NOTE]
 > A contract addendum must be signed prior to hosting with Xandr. Contact your Xandr representative for more information.
@@ -22,7 +21,7 @@ Create your ad campaign by following the [Basic Buy-side Setup Procedures](basic
 
 ## Step 3a. Target inventory
 
-Target your own managed video inventory or third-party inventory. (See [Third-Party Inventory Targeting](third-party-inventory-targeting.md).
+Target your own managed video inventory or third-party inventory. (See [Third-Party Inventory Targeting](third-party-inventory-targeting.md)).
 
 ## Step 3b. Target video (optional)
 

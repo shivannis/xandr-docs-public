@@ -1,5 +1,5 @@
 ---
-title: Microsoft Mometize - Charges for Buyers
+title: Microsoft Monetize - Charges for Buyers
 description: The article outlines charges for buyers, encompassing the Buyer Auction Service Charge (BASC), BASC as a Deduction (Bid Reduction), and other related fees.
 ms.date: 10/28/2023
 ---
@@ -10,10 +10,11 @@ ms.date: 10/28/2023
 
 The charge for purchases of third-party inventory. Quoted as a percentage of media cost, this charge can be either a fee or a deduction, and may differ in amount when buying from Xandr's platform sellers (Platform Inventory) and supply partners (Partner Inventory).
 
-You can view the BASC deduction or fee amount for a specific invoice period using one of the billing reports in the UI. For more details about how this charge is calculated,
-see [Buyer Auction Service Charge Mechanics](buyer-auction-service-charge-mechanics.md).
+> [!NOTE]
+> You can view the BASC deduction or fee amount for a specific invoice period using one of the billing reports in the UI. For more details about how this charge is calculated,
+> see [Buyer Auction Service Charge Mechanics](buyer-auction-service-charge-mechanics.md).
 
-## BASC as a deduction (Bid Reduction)
+## BASC as a deduction (Bid reduction)
 
 When specified as a bid reduction in your contract, the BASC is set to be a component of media cost by default and is therefore not itemized separately on your invoice. Applied as a bid reduction, BASC is accounted for within your budget (e.g., insertion order or line item). Alternately, you can contact your Xandr Account Representative to have your BASC set to be a disclosed deduction. This will cause it to appear as a separate line item on your invoice.
 
@@ -38,10 +39,4 @@ Your creative overage fee is calculated as follows: `\[ \[ (a) 60KB - (b) 40KB \
 ## Creative audit
 
 The charge for each creative audit performed by Xandr, both initial audits and re-audits. The creative audit fee is the standard audit rate with standard turnaround
-time. Priority audit is a higher fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the Completed Creative Audits Report in the UI.
-
-
-
-
-
-
+time. Priority audit is a higher fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the **Completed Creative Audits Report** in the UI.
