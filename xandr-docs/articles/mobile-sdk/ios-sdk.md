@@ -1,11 +1,11 @@
 ---
-title: iOS SDK
+title: iOS SDK Overview
 description: Explore the iOS Mobile SDK, which offers an end-to-end solution for mobile app publishers.
 ms.custom: ios-sdk
 ms.date : 10/28/2023
 ---
 
-# iOS SDK
+# iOS SDK Overview
 
 Xandr's Mobile SDK for iOS provides an end-to-end solution for mobile app publishers. Use this solution to request and receive bids over RTB. These bids can also compete, through mediation, directly with bids from other ad servers.
 
