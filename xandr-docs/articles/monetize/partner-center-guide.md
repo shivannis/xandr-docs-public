@@ -1,20 +1,12 @@
 ---
-Title : Partner Center Guide
-Description : The Partner
+title: Microsoft Monetize - Partner Center Guide
+description : The Partner Center enables you to realize your full potential with other buyers and sellers. 
 ms.date: 10/28/2023
-Center enables you to realize your full potential with other
-buyers and sellers. Using the
 ---
 
+# Microsoft Monetize - Partner center guide
 
-# Partner Center Guide
-
-
-
-The Partner
-Center enables you to realize your full potential with other
-buyers and sellers. Using the
-Partner Center, you can:
+The Partner Center enables you to realize your full potential with other buyers and sellers. Using the Partner Center, you can:
 
 - Discover new partners
 - Cultivate relationships by communicating directly in
@@ -22,45 +14,17 @@ Partner Center, you can:
 - Motivate partners to do business with you
 - Track success of partnerships with metrics
 
-This guide is designed to help both sellers and buyers understand and
-use the Partner Center. Find the
-section below that represents your perspective.
-
->
+This guide is designed to help both sellers and buyers understand and use the Partner Center. Find the section below that represents your perspective.
 
 In This Guide - For Sellers
 
-- <a href="managing-relationships-with-buyers.md" class="xref">Managing
-  Relationships with Buyers</a>: As a seller, learn how to use Partner
-  Center to foster and manage relationships with specific buyers. You
-  can review statistics for each buyer, communicate with buyers directly
-  in Monetize, and more.
-- <a href="selling-deals.md" class="xref">Selling Deals</a>: As a
-  seller, you can use deals to provide buyers with special access to
-  premium inventory, inventory in bulk for discounted rates, inventory
+- [Managing Relationships with Buyers](managing-relationships-with-buyers.md): As a seller, learn how to use Partner Center to foster and manage relationships with specific buyers. You can review statistics for each buyer, communicate with buyers directly in Monetize, and more.
+- [Selling Deals](selling-deals.md): As a seller, you can use deals to provide buyers with special access to premium inventory, inventory in bulk for discounted rates, inventory
   that will help them meet their campaign goals, or other opportunities.
-- <a href="selling-curated-deals.md" class="xref">Selling Curated
-  Deals</a>: As a seller, you can create
-  <a href="curated-deals.md" class="xref">curated deals</a> to provide
-  buyers special access to inventory and/or data.
+- [Selling Curated Deals](selling-curated-deals.md): As a seller, you can create [curated deals](curated-deals.md) to provide buyers special access to inventory and/or data.
 
+## In this guide - For buyers
 
-
-In This Guide - For Buyers
-
-- <a href="managing-relationships-with-sellers.md" class="xref">Managing
-  Relationships with Sellers</a>: As a buyer, learn how to use Partner
-  Center to foster and manage relationships with specific sellers. You
-  can review statistics for each seller, communicate with sellers
-  directly in Monetize, and more.
-- <a href="buying-deals.md" class="xref">Buying Deals</a>: As a buyer,
-  you can negotiate deals to obtain preferential pricing on inventory,
-  access to exclusive inventory, reduced competition on inventory, or
-  other opportunities.
-- <a href="understanding-bid-rejections.md" class="xref">Understanding
-  Bid Rejections</a>: Error codes and explanations as to why a bid might
-  have been rejected.
-
-
-
-
+- [Managing Relationships with Sellers](managing-relationships-with-sellers.md): As a buyer, learn how to use Partner Center to foster and manage relationships with specific sellers. You can review statistics for each seller, communicate with sellers directly in Monetize, and more.
+- [Buying Deals](buying-deals.md): As a buyer, you can negotiate deals to obtain preferential pricing on inventory, access to exclusive inventory, reduced competition on inventory, or other opportunities.
+- [Understanding Bid Rejections](understanding-bid-rejections.md): Error codes and explanations as to why a bid might have been rejected.
