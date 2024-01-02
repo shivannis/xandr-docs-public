@@ -21,7 +21,7 @@ on Android.
 >
 > Likewise, creatives that serve into interstitial views in the SDK should usually be created with the Banner media type (keeping in mind the exceptions listed above).
 
-## Interstitial overview
+## Overview
 
 Showing interstitial ads is a little more work. In addition to setting
 up an `InterstitialAdView` with your placement ID, you must implement
@@ -51,7 +51,7 @@ process:
 
 For more information, see the code sample below.
 
-## Interstitial code sample
+## Code sample
 
 > [!NOTE]
 > Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
