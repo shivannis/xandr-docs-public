@@ -4,7 +4,7 @@ description: The article defines content category targeting where the argeting i
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Content Category Targeting
+# Microsoft Monetize - Content category targeting
 
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see
@@ -28,10 +28,8 @@ By default, your campaign will target all universal categories. However, you can
     c. The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. Note that when you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
 
       > [!IMPORTANT]
-      >  When targeting more than one universal category, the categories have
-      > an OR relationship. For example, if you target the "News" and "Finance"
-      > categories, you will bid on inventory that is in either category. The
-      > inventory does not need to be in both categories.
+      >  When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance"
+      > categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
 3.  Click **Add**.
 
@@ -39,11 +37,11 @@ By default, your campaign will target all universal categories. However, you can
 
 By default, your campaign will target all custom categories. However, you can narrow targeting to include or exclude specific custom categories that you have applied to your own placement groups and/or placements for direct buying as well as custom categories that other sellers have exposed to you for third-party buying.
 
-1.  In the Targeting section, click **Edit** next to **Inventory**.
+1.  In the **Targeting** section, click **Edit** next to **Inventory**.
 
 1.  On the **Custom Categories** tab, include or exclude custom categories.
 
-    a. When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
+    When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
 1. Click **Add**.
 

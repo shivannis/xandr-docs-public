@@ -27,13 +27,12 @@ In order for Xandr to track a click to the corresponding impression, a click tra
 Xandr will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative
 Templates](creative-templates.md).
 
-All you have to do is enter the landing page URL in the **Landing Page** field and select the Enable **Click Tracking** checkbox if you're using Console, and a click URL
+All you have to do is enter the landing page URL in the **Landing Page** field and select the **Enable Click Tracking** checkbox if you're using Console, and a click URL
 with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
 
-## Tracking third-party Clicks on URLs for hosted creatives
+## Tracking third-party clicks on URLs for hosted creatives
 
-Most third-party click tracking URLs will automatically redirect to the landing page, so all you have to do is enter the click tracking URL directly in the Landing Page field.
-After clicking the creative, the tracker will load and redirect to the landing page.
+Most third-party click tracking URLs will automatically redirect to the landing page, so all you have to do is enter the click tracking URL directly in the **Landing Page** field. After clicking the creative, the tracker will load and redirect to the landing page.
 
 ## Tracking clicks on third-party tags
 
@@ -73,8 +72,8 @@ appropriate place in your URL/tag:
 |--|--|
 | `${CLICK_URL}` | The click tracking url. |
 | `${CLICK_URL_ENC}` | The encoded click tracking url (only necessary for some third-party ad servers) |
-| Although an encoded version is available for certain ad servers, you'll |
-| most likely want to include the `${CLICK_URL}` macro. For example: |
+
+Although an encoded version is available for certain ad servers, you'll most likely want to include the `${CLICK_URL}` macro. For example:
 
 ```
 https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${CLICK_URL};ord=${CACHEBUSTER}?

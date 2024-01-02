@@ -18,7 +18,7 @@ Every time you make a selection, we provide instant feedback on available invent
 
 ## Contact info
 
-For support, please contact [BidRatingsSupport@comscore.com]().
+For support, please contact `BidRatingsSupport@comscore.com`.
 
 ## Permissions
 

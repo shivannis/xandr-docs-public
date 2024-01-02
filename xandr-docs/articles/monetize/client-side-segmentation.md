@@ -19,6 +19,6 @@ use.
 
 Workflow:
 
-- [Create a Segment Pixel](create-a-segment-pixel.md)
-- [Export a Segment Pixel](export-a-segment-pixel.md)
-- Step 3: Place pixel on page
+- Step 1: [Create a Segment Pixel](create-a-segment-pixel.md)
+- Step 2: [Export a Segment Pixel](export-a-segment-pixel.md)
+- Step 3: [Place pixel on page]()

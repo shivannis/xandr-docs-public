@@ -8,12 +8,12 @@ ms.date: 10/28/2023
 
 In order to set up your outstream inventory, you must configure a placement with the following settings:
 
-- **Media Types**: Click Other and select the Video media type which will automatically include the **Standard VAST** media subtype.
+- **Media Types**: Click **Other** and select the **Video** media type which will automatically include the **Standard VAST** media subtype.
 - **Size**: Should be set to 1x1 (the video player size is declared on the **Video Settings** tab).
 
 If you have [outstream video player options](outstream-video-player-options.md), you may fine-tune your outstream video player options to enable waterfall processing and further increase your ability to find viable ads within your specified timeout period.
 
-A new Video Settings tab appears when the **Video** media type is selected. On the **Video Settings** tab, you must configure the following:
+A new **Video Settings** tab appears when the **Video** media type is selected. On the **Video Settings** tab, you must configure the following:
 
 - **Position** (also known as context): Select **outstream**.
 - **Duration**: Enter maximum duration of returned content you will accept (in seconds).

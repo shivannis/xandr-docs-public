@@ -14,19 +14,17 @@ There are two types of content categories:
 - **Custom:** Sellers have the ability to define their own categories and apply them to slices of their own inventory.
 
    > [!TIP]
-   > We are splitting our "Automotive and Vehicles" category into
-   > sub-categories for dealerships, manufacturers, service, and more.
-   > For more information, see [Automotive Content Categories](automotive-content-categories.md).
+   > We are splitting our "Automotive and Vehicles" category into sub-categories for dealerships, manufacturers, service, and more. For more information, see [Automotive Content Categories](automotive-content-categories.md).
 
 ## Apply categories to your inventory
 
-You can apply a number of categories to each of your sites and placements at the Network, Site, and Placement levels. For instructions, see [Create a Placement4](create-a-placement.md).
+You can apply a number of categories to each of your sites and placements at the Network, Site, and Placement levels. For instructions, see [Create a Placement](create-a-placement.md).
 
 ## Expose categories for targeting by buyers
 
 To expose content categories for targeting by buyers, see the sections on **targeting access** for content categories on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) and [Partner Controls](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) page.
 
-**Report on Volume by Category**
+**Report on volume by Category**
 
 You can report on inventory volumes broken down by universal content category using the [Universal Content Categories Report](universal-content-categories-report.md).
 
@@ -45,7 +43,7 @@ For more details, see [Content Category Targeting](content-category-targeting.md
 ## Universal content categories list
 
 Below is a list of universal content categories and subcategories we maintain. The most up-to-date list will always be available in the **Campaign Manager** under the
-Inventory tab. For more information, see [Create a Campaign](create-a-campaign.md).
+**Inventory** tab. For more information, see [Create a Campaign](create-a-campaign.md).
 
 | Top-level category | Second-level category |
 |--|--|

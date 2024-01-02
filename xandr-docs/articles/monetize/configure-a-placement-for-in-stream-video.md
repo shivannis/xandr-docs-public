@@ -4,7 +4,7 @@ description : The article shows how to set up an in-stream video placement.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Configure a placement for in-Stream video
+# Microsoft Monetize - Configure a placement for in-stream video
 
 To set up an in-stream video placement, use the [Create a Placement](create-a-placement.md) workflow, select **Allowed Media \> Media Types \> Video**, and provide the required
 information about video context, player width and height, and skippability, as well as whether the ad will be part of a group of sequential ads (ad pod). You can also use the placement to define information about duration, playback method, and mime types.
@@ -14,10 +14,10 @@ the query string or on-page code if necessary.
 
 1. On the **Details** tab of the placement, select **Allowed Media \> Media Types \> Video**.
 1. Click the **Video Settings** tab.
-1. If you want this placement to define an ad pod (multiple ads within an ad break), select the Enable Ad Podding checkbox.
+1. If you want this placement to define an ad pod (multiple ads within an ad break), select the **Enable Ad Podding** checkbox.
 
     > [!NOTE]
-    > 
+    >
     > If you select the **Enable Ad Podding** checkbox, the detailed 
     > configuration options for ad pods display at the bottom of the **Video > Settings** page.
 
@@ -61,13 +61,9 @@ the query string or on-page code if necessary.
 
     > [!TIP]
     >
-    > If the placement can support VPAID, make sure you select **application/
-    > javascript** as a mime type. Otherwise, viewability won't be measured.
-    > If your player can handle mixed media, leave the **Handles Mixed Media**
-    > checkbox selected. A player that handles mixed media may only accept one
-    > kind of creative.
+    > If the placement can support VPAID, make sure you select **application/ javascript** as a mime type. Otherwise, viewability won't be measured.
 
-    For example, a media player that handles mixed media may only accept mp4, but if a creative contains both mp4 and JavaScript renditions, the player can properly select the mp4 rendition.
+   If your player can handle mixed media, leave the **Handles Mixed Media** checkbox selected. A player that handles mixed media may only accept one kind of creative. For example, a media player that handles mixed media may only accept mp4, but if a creative contains both mp4 and JavaScript renditions, the player can properly select the mp4 rendition.
 
 14. **Optional:** If you selected the **Enable Ad Podding** checkbox, provide the following information under the **Ad Podding** Options section:
     1. In the **Max Number of Ads in Pod** field, specify how many ads the ad  break can contain.

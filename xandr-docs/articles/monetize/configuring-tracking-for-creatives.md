@@ -6,14 +6,14 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Configuring tracking for creatives
 
-When adding creatives, you can set a variety of tracking parameters from the Pixels (optional) section, such as frequency and recency caps, third-party tracking pixels, and
+When adding creatives, you can set a variety of tracking parameters from the **Pixels (optional)** section, such as frequency and recency caps, third-party tracking pixels, and
 segment pixels.
 
 - **[Click Tracking](click-tracking.md)**: The system automatically runs a click tracking test when the creative is uploaded. If the system fails to automatically
   run a click tracking test for your creative when using the single creative workflow to upload one creative, you can manually click the **Run Test** button from the **Pixels (optional)** section.
   
    > [!NOTE]
-   > If the click tracking test is unsuccessful, which is indicated by a red **X**, re-upload the file or update the landing page URL and click the **try again** link that displays in the Pixels (optional) section.
+   > If the click tracking test is unsuccessful, which is indicated by a red **X**, re-upload the file or update the landing page URL and click the **try again** link that displays in the **Pixels (optional)** section.
 
 - **[Frequency and Recency Caps](frequency-and-recency-caps.md)**: You can specify the number of times and pace in which a creative can be shown to a given user. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 - **[Third-Party Tracking Pixels for Creatives](third-party-tracking-pixels-for-creatives.md)**: You can create third-party
@@ -37,17 +37,17 @@ The following tracking events are supported:
 
   Here's a list of pixel formats that are supported per creative type:
 
-  | Creative Type | Supported Format |
+| Creative Type | Supported Format |
 |---|---|
 | Video and Audio | Image URL |
-| Native | Image URL<br>JavaScript URL |
-| Banner | Image URL<br>HTML URL<br>JavaScript URL<br>Raw JavaScript |
+| Native | - Image URL<br> - JavaScript URL |
+| Banner | - Image URL<br> - HTML URL<br> - JavaScript URL<br> - Raw JavaScript |
 
 - **[Associate Segment Pixels with Creatives](associate-segment-pixels-with-creatives.md)**: You can associate specific
   segment pixels with your creatives.
   
   > [!NOTE]
- > The more segment pixels that you add to a creative will result in more latency for end users.
+  > The more segment pixels that you add to a creative will result in more latency for end users.
 
 - **[Moat Video Viewability Measurement](moat-video-viewability-measurement.md)**: You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**).
 - **AdChoices**: You can append the AdChoices icon to your creatives,
