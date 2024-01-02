@@ -68,7 +68,7 @@
         href: add-a-transition-animation-on-ios.md
       - name: Add Targeting Parameters
         href: add-targeting-parameters-on-ios.md
-      - name: Allow Multiple Ad Sizes to Serve into a Banner Ad View
+      - name: Allow Multiple Ad Sizes for Banner Ad View
         href: allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-ios.md
       - name: Click-Thrrough URL
         href: click-through-url-on-ios.md
@@ -194,7 +194,7 @@
         href: add-a-transition-animation-on-android.md
       - name: Add Targeting Parameters
         href: add-targeting-parameters-on-android.md
-      - name: Allow Multiple Ad Sizes to Serve into a Banner Ad View
+      - name: Allow Multiple Ad Sizes for Banner Ad View
         href: allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md
       - name: API for Exiting Banner Video from Fullscreen
         href: api-for-exiting-banner-video-from-fullscreen.md
