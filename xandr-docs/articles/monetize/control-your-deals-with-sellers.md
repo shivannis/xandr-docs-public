@@ -4,7 +4,7 @@ description: The article helps you to control deals received from sellers.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Control Your deals with sellers
+# Microsoft Monetize - Control your deals with sellers
 
 You can control deals received from sellers on the **Deals** screen. You can:
 
@@ -25,10 +25,10 @@ To reach the **Deals with Sellers** screen, select **Partners** \> **Deals**.
 
 Buyers can configure the default manner in which they process new seller deals by selecting one of the following settings:
 
-- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md)).
+- **Default Active**: new seller deals will be set to **Active** status by default when received. Deals can be declined or changed to **Inactive** status later if necessary (see [Managing Deal Status](control-your-deals-with-sellers.md#managing-deal-status)).
   
 - **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and
-  accepted or declined (see [Accepting or Declining Deals]()).
+  accepted or declined (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).
 
   > [!NOTE]
   > - **Default Active** is the default setting if no deal review preference is set.
@@ -37,7 +37,7 @@ Buyers can configure the default manner in which they process new seller deals b
   >  To set the deal review preference for new seller deals, do the following:
 
 1.  Select **Partners \> Deals**.
-1.  On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or New Deals Require Approval if it’s been changed previously) to open **Review Preferences**.
+1.  On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or **New Deals Require Approval** if it’s been changed previously) to open **Review Preferences**.
 1.  On the **Review Preferences** page, select either:
     - **Default Active** – to accept all new deals and set their status to **Active**
     - **Require Review** – to require review of all new deals before accepting or declining them
@@ -95,11 +95,11 @@ To change the status of deals you receive from sellers to **Active**, **Inactive
 - You cannot change the status of a deal to **Pending**. This status is only set if a new deal is received when **Review Preferences** is set to **Require Review**.
 
 1. Select **Partners** \> **Deals**.
-1. Click anywhere in the row of the deal you want to change the status of (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or Code to find a specific deal).
+1. Click anywhere in the row of the deal you want to change the status of (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code** to find a specific deal).
 1. In the **Deal Controls** section, click the edit icon and select a status from the **Acceptance Status** drop-down.
 1. Click **Save**.
 
-### Setting Groups of deals to active or declined status
+### Setting groups of deals to active or declined status
 
 While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you
 have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the **Select** drop-down to set them to **Active** status, or **Decline** to set them to **Declined** status (see [Accepting or Declining Deals](control-your-deals-with-sellers.md#accepting-or-declining-deals)).

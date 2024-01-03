@@ -24,7 +24,7 @@ You can apply a number of categories to each of your sites and placements at the
 
 To expose content categories for targeting by buyers, see the sections on **targeting access** for content categories on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) and [Partner Controls](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) page.
 
-**Report on volume by Category**
+**Report on volume by category**
 
 You can report on inventory volumes broken down by universal content category using the [Universal Content Categories Report](universal-content-categories-report.md).
 
