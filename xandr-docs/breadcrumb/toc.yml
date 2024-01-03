@@ -1,6 +1,7 @@
 - name: Xandr Platform
-  topicHref: /xandr/index
+t  ocHref: /xandr-docs/
+  topicHref: /xandr-docs/articles/index
   items:
-    - name: Microsoft Invest
-      tocHref: /azure/invest/
-      topicHref: /azure/invest/index
+    - name: Bidder
+      tocHref: /xandr-docs/articles/bidder
+      topicHref: /xandr-docs/articles/bidder/index
