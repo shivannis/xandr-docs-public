@@ -14,7 +14,6 @@ publishers input contracted revenue as their rate, or input SOV as the impressio
 **High Level Path**:
 
 1. Use reporting to pull a view on the products you are looking to price, and set the baseline context for comparison. Do you want to look at pricing in the context of a particular timeframe, industry, agency, advertiser, or contract type?
-
 1. Compare your proposal to the historical or future baseline you’ve set. From this point, it’s up to you and your own internal business rules on when you choose to intervene and adjust the pricing.
 
 **Detailed Path**:
