@@ -42,7 +42,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "breadcrumb/toc.yml",
-      "extendBreadcrumb": true,
+      "extendBreadcrumb": false,
       "feedback_system": "None",
       "permissioned-type": "public"
     },
