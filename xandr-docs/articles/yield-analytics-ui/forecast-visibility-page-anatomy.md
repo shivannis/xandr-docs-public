@@ -1,11 +1,11 @@
 ---
-title: Anatomy of the Forecast Visibility Page
+title: Forecast Visibility Page Anatomy
 description: In this article, learn the layout of the Forecast Visibility page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the forecast visibility page
+# Forecast visibility page anatomy
 
 The Forecast Visibility page on the **Capacity** tab shows a forecast of how a product's impressions will be consumed. It's displayed when you click a product in the **Impression Capacity** widget, or when you select a product on the **Forecast Management** page and select **View** > **Forecast Visibility**.
 
