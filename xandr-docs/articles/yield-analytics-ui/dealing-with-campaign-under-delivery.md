@@ -36,20 +36,23 @@ Diagnosing and solving under-delivery concerns can be a complex task. This is be
   - If capacity has recently fallen. This could represent organic traffic trends, or in extreme cases a technical problem. (Tags being removed from the page or otherwise corrupted by a publisher’s technical teams). If it has fallen, by how much and when?
   - What percentage of the product is contained to that inventory? (It must deliver to that inventory pool).  
   - What percentage is indirectly reliant on the inventory?
-1. Regardless of supply or demand, it should now be identified as to why the order line is under-delivering. There is more competition for the inventory (and we should know exactly what that competition is), and/or, there is less traffic to fulfill the demand (and we should know when the shift in traffic occurred and have an inclination if it was organic or not).
-1. The root cause of the problem determines what action should be taken.
-  - If the traffic has evaporated, the solution could be to promote that area of the site with paid traffic or editorial attention.
-  - If the demand has increased, it can be determined if you want to increase the priority of the order line or not based on the specific campaigns that are competing, and if it is paying more or less than that competition.
-  - Strategic factors may plan in as well: Is a struggling order line to a high revenue client even if they aren't a high yield client?  The answer may be that we would rather under-deliver the focus order line than its competition, depending on the circumstance.
-1. An alternative solution would be to stagger the priority of the competing order lines, based on their end-date. This is so that you prioritize full delivery on campaigns ending soonest.  In this case, we could pull a report from Analyzer.
-1. The report we pull should have:
-  - Order line as it’s primary dimension.
-  - Consumed impressions as it’s primary metric
-  - include priority and consumption date as an additional dimension.
-  - In addition: Other helpful elements such as order, order ID, advertiser, salesperson, etc.
-  - You also want to filter this report to the trafficked - as product our order line is running against.
-1. If you pull this report and then pivot it with priority as a row label, consumption date as a column label, with consumed impressions as the values - you can see the demand against our product by priority. Also, how much inventory is available in each tier. This gives a sense of how much inventory can be taken (and from which order lines) with a priority increase.
 
-  For example: There are **3.1MM** impressions available to a particular product on a specific day, and **1**.5MM are running to order lines booked at priority 15 or higher. That means if you move the problem order line (which needs **150K imps**) from priority 16 to priority 14, we can guarantee full delivery - potentially at the expense of the order lines at priority **15** and up. If most of those are indirectly consuming the inventory, the net impact of the change cannot be realized of the without running a scenario. A smart contact at the publisher that has a feel for the inventory will likely know if the net impact is positive or negative. This is by knowing what the indirect targets are, and if those targets tend to be sold out or not. (Example: If most of the indirect demand is ROS, and ROS is never more than **50%** sold, those order lines will be fine).
+1. Regardless of supply or demand, it should now be identified as to why the order line is under-delivering. There is more competition for the inventory (and we should know exactly what that competition is), and/or, there is less traffic to fulfill the demand (and we should know when the shift in traffic occurred and have an inclination if it was organic or not).
+
+1. The root cause of the problem determines what action should be taken.
+   - If the traffic has evaporated, the solution could be to promote that area of the site with paid traffic or editorial attention.
+   - If the demand has increased, it can be determined if you want to increase the priority of the order line or not based on the specific campaigns that are competing, and if it is paying more or less than that competition.
+   - Strategic factors may plan in as well: Is a struggling order line to a high revenue client even if they aren't a high yield client?  The answer may be that we would rather under-deliver the focus order line than its competition, depending on the circumstance.
+
+1. An alternative solution would be to stagger the priority of the competing order lines, based on their end-date. This is so that you prioritize full delivery on campaigns ending soonest.  In this case, we could pull a report from Analyzer.
+
+1. The report we pull should have:
+   - Order line as it’s primary dimension.
+   - Consumed impressions as it’s primary metric
+   - include priority and consumption date as an additional dimension.
+   - In addition: Other helpful elements such as order, order ID, advertiser, salesperson, etc.
+   - You also want to filter this report to the trafficked - as product our order line is running against.
+
+1. If you pull this report and then pivot it with priority as a row label, consumption date as a column label, with consumed impressions as the values - you can see the demand against our product by priority. Also, how much inventory is available in each tier. This gives a sense of how much inventory can be taken (and from which order lines) with a priority increase. For example: There are **3.1MM** impressions available to a particular product on a specific day, and **1**.5MM are running to order lines booked at priority 15 or higher. That means if you move the problem order line (which needs **150K imps**) from priority 16 to priority 14, we can guarantee full delivery - potentially at the expense of the order lines at priority **15** and up. If most of those are indirectly consuming the inventory, the net impact of the change cannot be realized of the without running a scenario. A smart contact at the publisher that has a feel for the inventory will likely know if the net impact is positive or negative. This is by knowing what the indirect targets are, and if those targets tend to be sold out or not. (Example: If most of the indirect demand is ROS, and ROS is never more than **50%** sold, those order lines will be fine).
 
 1. As a publisher, you have to determine if this makes sense or not. Extracting this data from **YX** gives you full transparency into what will happen.
