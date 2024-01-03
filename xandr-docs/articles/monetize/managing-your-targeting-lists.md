@@ -28,8 +28,8 @@ campaign, see [App Targeting](app-targeting.md).
     Lists** tabs. Select either tab to display its corresponding
     lists.
 
-> [!NOTE]
-> Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied **App List** targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to **OFF**.
+   > [!NOTE]
+   > Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied **App List** targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to **OFF**.
 
 ## Actions on lists
 

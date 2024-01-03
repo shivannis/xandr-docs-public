@@ -45,7 +45,7 @@ inventory. The notification will include information about the kind of
 invalid traffic or what non ad-supported or Owned & Operated domains
 your tag served on.
 
-## Related topics
+## Related topic
 
 [Capping Daily Spend on Third-Party Inventory (Safety
   Budget)](capping-daily-spend-on-third-party-inventory-safety-budget.md)

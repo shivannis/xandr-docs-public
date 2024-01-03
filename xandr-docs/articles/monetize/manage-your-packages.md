@@ -1,6 +1,6 @@
 ---
 title: Manage Your Packages
-description: Learn exploring, viewing, searching for packages, creating packages, editing packages on the Package screen,  
+description: Learn exploring, viewing, searching, creating and editing packages on the Package screen.  
 ms.date: 10/28/2023
 ---
 

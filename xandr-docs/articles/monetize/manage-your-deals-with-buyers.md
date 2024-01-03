@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Manage Your Deals with Buyers
-Description: Learn how to manage all deals with buyers on the Deals screen. 
+description: Learn how to manage all deals with buyers on the Deals screen. 
 ms.date: 10/28/2023
 ---
 
@@ -160,7 +160,7 @@ deal you would like to update in order to display the edit icon, and
 then click on the edit icon to make the deal editable.
 
 > [!WARNING]
-> Campaigns targeting the deal will be immediately affected by the changes you make. Use the Activity Stream on the [Partnership Details Screen - Buyer View<](partnership-details-screen-buyer-view.md) to communicate with the buyer before making changes to the deal dates, auction type, inventory, segment, creative size, or brand.
+> Campaigns targeting the deal will be immediately affected by the changes you make. Use the Activity Stream on the [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md) to communicate with the buyer before making changes to the deal dates, auction type, inventory, segment, creative size, or brand.
 
 After you have made the necessary updates, click
 **Save** to save your changes. To exit

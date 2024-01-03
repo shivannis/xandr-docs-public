@@ -31,7 +31,7 @@ forgotten username, follow these steps:
 1. Go to the login page of Microsoft Monetize and
     click **Reset Password**.
 
-1. On the**Reset Password** screen,
+1. On the **Reset Password** screen,
     click **Forgot Username**?
 
 1. Enter your email address and click **Send

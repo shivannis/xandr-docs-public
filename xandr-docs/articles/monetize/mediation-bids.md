@@ -122,7 +122,7 @@ this bid. Select the tabs for the types of inventory you want to target:
   the **Summary** tab. To continue
   editing, return to any of the other tabs, or click
   **Add** to close the
-  Inventory targeting dialog and
+  **Inventory** targeting dialog and
   save all inventory targeting.
 
 **Set geography targeting**
@@ -150,7 +150,7 @@ create one or more bids. Every bid has a few settings that are unique to
 that bid's network, such as **Ad ID** or
 similar. These network-specific fields must be filled in with the
 information required by that network. If you want to create more bids,
-click **Add Anosther Bid**.
+click **Add Another Bid**.
 
 The following information is required for every bid:
 
@@ -159,8 +159,8 @@ The following information is required for every bid:
   new fields may appear to provide the unique information about the
   creatives you are providing for that network.
   
- > [!NOTE]
- > For some networks, the **Generate Passback** button allows you to generate a web passback that can be pasted into the ad network to allow impressions to be passed to the next system in line for bidding. The format of the passback depends on the type of network: it may be raw JavaScript, a URL, HTML, or a script that writes JavaScript. See [Integrating for Mediation](mediation-integrating-for-mediation.md) for more information.
+   > [!NOTE]
+   > For some networks, the **Generate Passback** button allows you to generate a web passback that can be pasted into the ad network to allow impressions to be passed to the next system in line for bidding. The format of the passback depends on the type of network: it may be raw JavaScript, a URL, HTML, or a script that writes JavaScript. See [Integrating for Mediation](mediation-integrating-for-mediation.md) for more information.
   
 - **Bid Name**: You can name the bid
   whatever you want (we recommend something descriptive).
@@ -236,14 +236,14 @@ current session.
   **ON** by default.
 
 - **Estimated revenue tracking**: Set this
-  to ON to allow the system to track
+  to **ON** to allow the system to track
   the estimated revenue recorded against this bid. The estimated revenue
   value is the bid price divided by the number of impressions served as
   counted by your ad server. Note that if you choose to set this to
-  OFF, the
-  Revenue option in the
-  Daily Budget Cap section becomes
-  unavailable. This is set to ON by
+  **OFF**, the
+  **Revenue** option in the
+  **Daily Budget Cap** section becomes
+  unavailable. This is set to **ON** by
   default.
 
 - **Waterfall label**: If you are using

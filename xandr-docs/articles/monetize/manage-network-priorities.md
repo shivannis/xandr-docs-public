@@ -41,8 +41,8 @@ strategies.
 ## Next steps
 
 Now you can set minimum margin during [creation of a
-standard line item](create-a-standard-line-item.md), under Tracking
-Revenue Type. This effectively sets a bid cap on your campaigns.
+standard line item](create-a-standard-line-item.md), under **Tracking
+Revenue Type**. This effectively sets a bid cap on your campaigns.
 For your campaigns targeting direct inventory, you can also choose to do
 a minimum margin check as part of the [campaign creation](create-a-campaign.md) process to ensure they do not serve on publishers that are not
 profitable for your line items.

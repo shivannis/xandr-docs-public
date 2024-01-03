@@ -1,6 +1,6 @@
 ---
 title: Mediation Networks
-Ddescription: Learn how to add a network in this page.
+description: Learn how to add a network in this page.
 ms.date: 10/28/2023
 ---
 

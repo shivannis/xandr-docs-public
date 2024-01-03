@@ -46,7 +46,7 @@ For each network you'd like to mediate, do the following:
     > [!NOTE]
     > In some cases, you may need to change the format slightly depending on the requirements of the mediation network's UI. For example:
     > - HTML: You may need to wrap the JS in `<script>` tags to upload it as HTML.
-    > - URL: You may need to provide a URL. Use [http://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html) (or the secure version: [https://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html).
+    > - URL: You may need to provide a URL. Use [http://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html) or the secure version: [https://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html).
 
 1. Log in to the UI.
 1. In the UI, [Mediation Networks](mediation-networks.md)
@@ -119,7 +119,7 @@ Follow these steps to set up SDK mediation integration:
     mediation adaptor, the mediation should occur automatically once
     you're set up. Follow the instructions in these pages to get
     started:
-    1. [mediation-networks.md](mediation-networks.md)
+    1. [mediation-networks](mediation-networks.md)
     1. [Mediation Bids](mediation-bids.md)
 1. If the mobile ad network you need to mediate does not have a
     supported mediation adaptor, you will have to have your engineers
@@ -134,7 +134,7 @@ Follow these steps to set up SDK mediation integration:
     1. [Mediation Bids](mediation-bids.md)
 1. Activate your bids to start selling to those networks.
 
-## How it works
+## Learn how SDK mediation integration works
 
 > [!TIP]
 > See the diagram below for more details.
@@ -180,7 +180,7 @@ Follow these steps to set up a server side mediation integration:
     represent the demand coming from that network.
 1. Activate your bids to start selling to those ad networks.
 
-## How it works
+## Learn how server side mediation integration works
 
 Assuming you've set up your integration as described, the ad call flow
 looks like this:

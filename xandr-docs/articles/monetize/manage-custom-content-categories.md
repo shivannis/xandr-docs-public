@@ -1,7 +1,6 @@
 ---
 title: Manage Custom Content Categories
-description: Learn how this area of Monetize displays a working list of your custom content categories, allowing you to create buckets in which you can group your
-inventory. 
+description: Learn how this area of Monetize displays a working list of your custom content categories, allowing you to create buckets in which you can group your inventory. 
 ms.date: 10/28/2023
 ---
 
@@ -56,7 +55,7 @@ intended purpose of the custom category.
 
 The following buttons are available on the main screen.
 
-- **New Content Category**: Use this
+- **New content category**: Use this
   button to create a new custom content category. See [Create a Custom Content Category](#create-a-custom-content-category) below for further
   step-by-step instructions.
 - **Delete a custom content category**:
@@ -70,7 +69,7 @@ needs.
 
 ### Create a Custom Content Category
 
-**Step 1. Open the Category Details dialog**
+**Step 1. Open the category details dialog**
 
 Click the **New Content Category** button
 at the top of the screen. The **Category
@@ -96,7 +95,7 @@ When you have entered all of the details, click the
 
 ### Edit a custom content category
 
-**Step 1. Open the Category Details dialog**
+**Step 1. Open the category details dialog**
 
 Click on the name of the category that you would like to edit. The
 **Category Details** dialog appears.

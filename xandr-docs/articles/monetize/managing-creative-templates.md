@@ -1,7 +1,6 @@
 ---
 title: Microsoft Monetize - Managing Creative Templates
-description: Learn to view details for each standard and custom
-creative template in this page. 
+description: Learn to view details for each standard and custom creative template in this page. 
 ms.date: 10/28/2023
 ---
 
@@ -44,7 +43,7 @@ displays:
 - **Template Code**: Specifies how the
   creative should be rendered.
 
-## Related topics
+## Related topic
 
 [Creative Templates](creative-templates.md)
 
