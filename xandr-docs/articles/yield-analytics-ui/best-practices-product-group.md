@@ -28,16 +28,16 @@ Example: Create a few groups for your finance team that help them pull site leve
 - Use groups in the context of your business - This is typically for publishers that package their inventory differently by sales channel. It can be helpful to have product groups that are aligned to each channel. Example: You have a local, national, and a video sales team. Products and inventory are packaged differently for each team. It is advantageous to create groups that help you distinguish, so you can quickly respond to availability requests or reporting needs that are specific to a certain group.
 - Use groups to keep track of temporary or experimental products - You may want to create a new product in yield analytics to start tracking a pool of inventory. Perhaps you want to combine two audience values, or see how volatile the inventory to a specific combination of zip codes is that a client has requested to buy. These non-standard products typically fill a temporary need. Unless you make them accessible so you can archive them, they simply accumulate. As a best practice, assign every product to at least one group.
 
-## FAQ about product groups
+## Product group FAQs
 
-How do I create a product group?
+### How do I create a product group?
 
 1. Navigate to the **Products** tab.
 2. Select **Organize Products**.
 3. In the **Filter** window, click **New**.
 4. Name and save your new group.
 
-## How do I remove a product group?
+### How do I remove a product group?
 
 1. Navigate to the **Products** tab.
 2. Select **Organize Products**.
@@ -45,45 +45,41 @@ How do I create a product group?
 4. Change status to **Inactive**. This removes it from the product group search results in the system, including in Analyzer and Availability.
 5. You can re-activate a group at any time.
 
-## How do I assign a product to a group?
+### How do I assign a product to a group?
 
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to assign a product to. This accesses the **Edit Product** screen.
 1. Click **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the  group screen rather than product by product.
 
-   An alternative way to assign a product to a group is from the **Product Visibility** screen:
+An alternative way to assign a product to a group is from the **Product Visibility** screen:
 1. Select **Edit Product** under the Product Details section.
 1. Click **Select** under the **Associated Product Groups** on the **Product Details** screen.
-
 1. A screen where you can add a new group, or remove the product from a group is accessed.
 
-## How do I remove a product from a group?
+### How do I remove a product from a group?
 
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to remove a product from. This accesses the **Edit Product** screen.
 1. Click **Remove**. This accesses a screen where you can search and remove the products. It is recommended to add or remove products from the group screen rather than product by product. An alternative way to remove a product from a group is from the **Product Visibility** screen.
-
 1. Select **Edit Product** under the Product Details section.
-
 1. Click **Select** under the **Associated Product Groups** on the Product Details screen.
-
 1. A screen where you remove the product from a group is accessed.
 
-## Can I assign a product to more than one group?
+### Can I assign a product to more than one group?
 
 Yes, you can assign a product to as many groups as you like.
 
-## Is there a limit to how many products I can assign to a single group?
+### Is there a limit to how many products I can assign to a single group?
 
 No, but at a certain point it makes sense to divide the products into more relevant groups. However, if you are grouping all products for a specific site, there could be thousands of products in a single group.
 
-## Is there a minimum number of products to a group?
+### Is there a minimum number of products to a group?
 
 No. You do not have to assign any products at the time you create a group. You are free to set up what groups you think make sense, and name them according to a naming convention. You can then work on the more time-consuming task of product assignment at a later time.
 
-## Can I pull the product group name as a dimension in Analyzer?
+### Can I pull the product group name as a dimension in Analyzer?
 
 No. Product group is not an available dimension at this time. It is only available as a dimension filter.
 
