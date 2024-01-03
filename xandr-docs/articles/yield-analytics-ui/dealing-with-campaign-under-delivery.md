@@ -6,29 +6,28 @@ ms.custom: yield-analytics-ui
 ---
 # Dealing with campaign under-delivery
 
-Diagnosing and solving under-delivery concerns can be a complex task. This is because there are often a number of possible root causes and political barriers that make it difficult to make decisions strictly based on revenue. Unlike ad server reports, Yield Analytics can provide a tremendous amount of transparency into all the competing campaigns. Depending on the business concerns a publisher must satisfy in order to make a decision, it can sometimes be a lengthy path to gather all the necessary intel.
+Diagnosing and solving under-delivery concerns can be a complex task. This is because there are often a number of possible root causes and barriers that make it difficult to make decisions strictly based on revenue. Unlike ad server reports, Yield Analytics can provide a tremendous amount of transparency into all the competing campaigns. Depending on the business concerns a publisher must satisfy in order to make a decision, it can sometimes be a lengthy path to gather all the necessary intel.
 
 **High level path**:
 
-Diagnose the problem by using Order Line Visibility. This to look at competing order lines, and the projected delivery trends for the order line.
+1 Diagnose the problem by using Order Line Visibility. This to look at competing order lines, and the projected delivery trends for the order line.
 
-Use Product Visibility to look at capacity trends. Understand if there is an organic or technical issue in play.
+1 Use Product Visibility to look at capacity trends. Understand if there is an organic or technical issue in play.
 
-Pull reporting by order line. Specify the priority to a product with Analyzer, to understand the impact of priority changes.
+1 Pull reporting by order line. Specify the priority to a product with Analyzer, to understand the impact of priority changes.
 
 **Detailed path**:
 
-- To understand why a campaign is under-­delivering, we have to understand if the problem is on the supply side (has there been a sudden drop in capacity?), demand side (has there been a sudden increase in demand?), or both.
+1 To understand why a campaign is under-­delivering, we have to understand if the problem is on the supply side (has there been a sudden drop in capacity?), demand side (has there been a sudden increase in demand?), or both.
 
-- Since there are a few causes to the problem, there are a few ways to start to diagnose it. If we assume the problem is on the demand side, the recommended starting point is by looking up the order line in question. We do this by going to the Orders tab, and searching for the Order Line ID.
+1 Since there are a few causes to the problem, there are a few ways to start to diagnose it. If we assume the problem is on the demand side, the recommended starting point is by looking up the order line in question. We do this by going to the Orders tab, and searching for the Order Line ID.
 
-- Click on the desired order line, and use the performance details screen to understand when the delivery issue surfaced,
+1 Click on the desired order line, and use the performance details screen to understand when the delivery issue surfaced,
   and if it is expected to get better or worse.
 
-- If it is determined the problem will persist through the life of the order line, then look at the competing order lines in the bottom section, and which order lines are competing most. Yield Analytics will complete a number of useful metrics.
-- To show how many impressions any one order line is demanding from the same product
-
-- What percentage of the competition it represents.
+1 If it is determined the problem will persist through the life of the order line, then look at the competing order lines in the bottom section, and which order lines are competing most. Yield Analytics will complete a number of useful metrics.
+  1 To show how many impressions any one order line is demanding from the same product
+  1 What percentage of the competition it represents.
 
 - If that order line is on schedule or not.
 
