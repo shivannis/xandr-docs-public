@@ -32,10 +32,11 @@ Diagnosing and solving under-delivery concerns can be a complex task. This is be
    - By looking at the start/end dates of the highest competing order lines, you can identify if a large order line in competition with the focus order line matches - when the focus order line delivery started to fall below quota. If there are order lines that have a high degree of competition and are delivering to their quota at the same rate as the focus product, the product itself is likely oversold.
 
 1. Even though it may have been identified why something is under-­delivering, if it is suspected the product itself is oversold, click on the **Trafficked As** product in the Order Line details. (You could have also started from here to diagnose the problem).
+
 1. Look at the Allocated Inventory section on the Product Visibility screen to identify how the product capacity and demand is trending in aggregate. You can see:
-  - If capacity has recently fallen. This could represent organic traffic trends, or in extreme cases a technical problem. (Tags being removed from the page or otherwise corrupted by a publisher’s technical teams). If it has fallen, by how much and when?
-  - What percentage of the product is contained to that inventory? (It must deliver to that inventory pool).  
-  - What percentage is indirectly reliant on the inventory?
+   - If capacity has recently fallen. This could represent organic traffic trends, or in extreme cases a technical problem. (Tags being removed from the page or otherwise corrupted by a publisher’s technical teams). If it has fallen, by how much and when?
+   - What percentage of the product is contained to that inventory? (It must deliver to that inventory pool).
+   - What percentage is indirectly reliant on the inventory?
 
 1. Regardless of supply or demand, it should now be identified as to why the order line is under-delivering. There is more competition for the inventory (and we should know exactly what that competition is), and/or, there is less traffic to fulfill the demand (and we should know when the shift in traffic occurred and have an inclination if it was organic or not).
 
