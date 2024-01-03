@@ -91,14 +91,13 @@ In the **Deals Selection** section, click the **Edit** button and then include t
 
 ## Step 4. Enter campaign details
 
-Enter campaign details, flight dates, and set the campaign budget as you normally would. In the Basic Setup section, enter the basic details and flight dates for the campaign in
-the fields provided. Then, in the Budget section, set the campaign budget. By default, your campaign media budget is unlimited. If you prefer, you can define exactly how much you are willing to spend by setting a specific budget. The budget can be set in impressions or in media cost (dollars).
+Enter campaign details, flight dates, and set the campaign budget as you normally would. In the **Basic Setup** section, enter the basic details and flight dates for the campaign in the fields provided. Then, in the **Budget** section, set the campaign budget. By default, your campaign media budget is unlimited. If you prefer, you can define exactly how much you are willing to spend by setting a specific budget. The budget can be set in impressions or in media cost (dollars).
 
 For more detailed information on **Basic Setup** and Budget sections, see the generic campaign setup workflow, [Create a Campaign](create-a-campaign.md).
 
 ## Step 5. Set the buying strategy
 
-In the Buying Strategies section, we recommend using the **Bid a base CPM** option to bid on your deals. Enter the fixed dollar amount to bid per thousand impressions in the **Base CPM $\_** field.
+In the **Buying Strategies** section, we recommend using the **Bid a base CPM** option to bid on your deals. Enter the fixed dollar amount to bid per thousand impressions in the **Base CPM $\_** field.
 
 **Highest Targeted Floor**
 

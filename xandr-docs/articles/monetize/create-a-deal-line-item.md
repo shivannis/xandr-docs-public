@@ -74,7 +74,8 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   
   > [!NOTE]
   >
-  > Programmatic roadblocking is a **Beta** feature that isn't available to all clients. If you'd like to gain access to this feature, contact your account manager for more details.
+  > Programmatic roadblocking is a **Beta** feature that isn't available to all clients. If you'd like to gain access to this feature, contact your account manager for more
+  > details.
 
 - **Name** - Enter the name for the deal line item. You will later be able to search for and report on the line item using this name. This name is not exposed to the buyer.
 - **External Code** - If you want to report on the line item using an external code (rather than the internal ID that Xandr assigns automatically), enter the code

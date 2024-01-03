@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Create a campaign
 
-This page describes how to create a campaign to run on web inventory and on mobile apps. For instructions on creating a campaign to run on deals, see [Create a Deal Campaign](create-a-deal-campaign.html).
+This page describes how to create a campaign to run on web inventory and on mobile apps. For instructions on creating a campaign to run on deals, see [Create a Deal Campaign](create-a-deal-campaign.md).
 
 Creating campaign involves defining:
 
@@ -94,8 +94,9 @@ In the **Basic Setup** section, enter the basic details and flight dates for the
 
 By default, your campaign media Budget is unlimited. If you prefer, you can define exactly how much you are willing to spend on buying inventory for the campaign. The budget can be in impressions or in media cost (dollars). Note that media cost is in USD rather than the advertiser's currency because USD is the currency in which Xandr transacts.
 
-You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the
-campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting and best practices, see [Budgeting and Pacing](budgeting-and-pacing.md).
+> [!IMPORTANT]
+> You can set budgets at the insertion order and line item levels as well. Budgets at these levels take precedence over a child campaign's budget; if they run out, the
+> campaign will stop buying impressions, whether or not it has reached its own budget. For more details about budgeting and best practices, see [Budgeting and Pacing](budgeting-and-pacing.md).
 
 - **Lifetime** - This is the budget that you are willing to spend over the entire lifetime of the campaign. There are two options:
   - **Custom** - Select this option to enter a specific amount of impressions or dollars.
@@ -183,26 +184,26 @@ you want to pay for third-party inventory (per impression, per click, and/or per
       >
       > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
 
-  - **Bid CPM**: **max $\_ CPM min $_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
-  - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
+    - **Bid CPM**: **max $\_ CPM min $_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
+    - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-- **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Xandr optimization engine.
-  - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
-    - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
-    - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
+  - **Optimize to a predicted CPC goal** - Use this strategy to vary bids based on the likelihood of a click for each piece of inventory. This strategy uses the Xandr optimization engine.
+      - **Optimize to $\_ per click** - Enter the dollar amount per click that you want the optimization engine to aim for when calculating bids.
+      - **Learn Budget** - The learn budget is the portion of your campaign budget that you want to commit to optimizing your campaign, which helps you quickly find slices of third-party inventory that provide a positive ROI. The first phase of this process is called Learn. You can set a lifetime learn budget of up to 100% of the campaign budget as well as a daily cap for learning. For more information about optimization and learning, see [Targeted Learn](targeted-learn.md).
+      - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
 
       > [!NOTE]
       > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
 
-  - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
-    - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids
+  - **Bid CPM**: **max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
+  - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids
       will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is
       more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-  - **Bid a base $\_ CPM** - Use this strategy to bid a fixed dollar amount.
+- **Bid a base $\_ CPM** - Use this strategy to bid a fixed dollar amount.
     - **Base CPM $\_\_** - Enter the fixed dollar amount to bid per thousand impressions.
     - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
       it before or hasn't seen it many times or seen it recently. For more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
-    - **Bid CPM: max $\_ CPM min $\_ CPM** - This option is available under OTHER OPTIONS only once you enable Cadence Modifier. Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
+    - **Bid CPM: max $\_CPM min $\_ CPM** - This option is available under OTHER OPTIONS only once you enable Cadence Modifier. Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Target reach and delivery** - Use this strategy to bid the going platform rate for each piece of inventory.
     - **Auto-bid to win most platform impressions (ECP)** - Select this option to bid an estimate of the price that is likely to win most impressions from Xandr platform sellers
       based on historical bids and their success or failure. Since off-platform sellers (e.g., Google Ad Manager, Rubicon, etc.)

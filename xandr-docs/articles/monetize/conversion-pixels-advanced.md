@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 When creating and exporting conversion pixels, there are some advanced options available.
 
 > [!TIP]
-> Most of the below options can be performed during pixel export in Monetize. For details on pixel export, see [Export Conversion](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
+> Most of the below options can be performed during pixel export in Monetize. For details on pixel export, see [Export Conversion Pixels](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
 
 ## Use secure pixels
 
@@ -20,7 +20,7 @@ you can convert a pixel manually by making two changes:
 1. The sub-domain should be "ib.adnxs.com".
 
 > [!WARNING]
-> On a secure page, only **secure** pixels can be used**. In addition, non-secure pixels can only be placed on an **non-secure** page.
+> On a secure page, only **secure** pixels can be used. In addition, non-secure pixels can only be placed on an **non-secure** page.
 
 ## Segment users once they have converted
 

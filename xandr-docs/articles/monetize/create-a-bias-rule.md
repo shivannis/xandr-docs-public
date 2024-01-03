@@ -103,7 +103,7 @@ Create a conditional rule to affect buyer's or buyer group's bids on specific im
 
 **All other clients:** Select **Publishers \>  Floor Rules** in the menu bar, and then select a publisher if you are prompted.
 
-## Step 1. Get started
+### Step 1. Get started
 
 Select a publisher when you are prompted. This opens the **Bias Rule Manager**.
 
@@ -170,8 +170,8 @@ Metro codes are smaller than regions and are only available for US inventory. Av
 
 **Target cities:**
 
-Click the **Edit** link for **City**, and then select one of the two options: **Include all cities** or Include/Exclude specific list of cities.... If you select
-Include/Exclude a specific list of cities..., click Add near cities in the **Available List** area to add them to the **Chosen ist**. The rule will apply to impressions in any of the cities within the **Targeted Cities** area.
+Click the **Edit** link for **City**, and then select one of the two options: **Include all cities** or **Include/Exclude specific list of cities**.... If you select
+**Include/Exclude a specific list of cities**..., click **Add** near cities in the **Available List** area to add them to the **Chosen ist**. The rule will apply to impressions in any of the cities within the **Targeted Cities** area.
 
 A City is different than a Metro Code. It may be larger or smaller, depending upon your selection. Unlike metro codes, cities are not limited to US inventory. Cities from all around the world are represented, ranging from Tel Aviv, Israel to Kuala Lumpur, Malaysia.
 
