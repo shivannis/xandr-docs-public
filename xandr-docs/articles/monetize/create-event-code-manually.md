@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Create Event Code Manually
-Description : In this article, find instructions on how to manually generate an event code.
+description: In this article, find instructions on how to manually generate an event code.
 ms.date: 10/28/2023
 ---
 
