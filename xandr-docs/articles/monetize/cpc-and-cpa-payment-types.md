@@ -1,21 +1,22 @@
 ---
-title: Microsoft Monetize - CPC and CPA Payment Types
+title: CPC and CPA Payment Types
 description: The article explains the concepts of CPC (Cost Per Click) and CPA (Cost Per Action) payment types.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - CPC and CPA payment types
+# CPC and CPA payment types
 
 Networks are often paid on a CPC and CPA basis by their advertisers and would like to buy from publishers in the same manner. The Cross-Network CPC and CPA Payment Types allow networks to buy and sell from each other on a CPC or CPA basis, instead of conducting all business on a CPM basis. CPC and CPA Payment Types allow buyers to pay sellers only when the user clicks or converts. Because sellers are taking on more risk by accepting these payment types, we have built in a risk premium feature to allow publishers to demand more revenue for taking on this risk.
 
 ## Buying inventory on a CPC/CPA basis
 
-The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated
-soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+> [!NOTE]
+> The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated
+> soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the **Performance Goals** section on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+> For more information, please see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
 
-For more information, please see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+In the **Buying Strategies** section of a campaign, you can choose to bid on inventory outside of your network on a CPC or CPA basis. You can continue to bid on a CPM basis as well.
 
-In the Buying Strategies section of a campaign, you can choose to bid on inventory outside of your network on a CPC or CPA basis. You can continue to bid on a CPM basis as well.
 You can choose multiple payment types in one campaign. The campaign will submit a bid for each buying strategy you use. We do this for two reasons:
 
 1. Sellers choose which type of deals they accept on their inventory, and some sellers do not accept CPC or CPA deals. **For this reason, you may want to submit a flat CPM bid along side a CPC or CPA payment type** to ensure that you have the option to win the impression. Currently all non-network supply partners only accept CPM deals.
@@ -71,5 +72,5 @@ We are very excited about the ability to report on payment types for Buyers and 
 
    > [!IMPORTANT]
    >
- > Please note that if you have reserve prices set at the placement level, and you enable CPA / CPC payment types at the publisher level, your net CPM for the publisher may
-> fall below your reserve price (depending on the number of clicks /conversions your placement is generating).
+   > Please note that if you have reserve prices set at the placement level, and you enable CPA / CPC payment types at the publisher level, your net CPM for the publisher may
+   > fall below your reserve price (depending on the number of clicks /conversions your placement is generating).

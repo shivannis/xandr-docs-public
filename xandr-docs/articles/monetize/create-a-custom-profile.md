@@ -31,7 +31,7 @@ You can determine which creatives will be eligible to serve on your inventory ba
 - [Technical Attributes](create-a-custom-profile.md#technical-attributes)
 - [Brands](create-a-custom-profile.md#brands)
 - [Languages](create-a-custom-profile.md#languages)
-- [Ad Servers](create-a-custom-profile.md#ad-servers)(Not available to all customers)
+- [Ad Servers](create-a-custom-profile.md#ad-servers) (Not available to all customers)
 
 ### Bidders
 

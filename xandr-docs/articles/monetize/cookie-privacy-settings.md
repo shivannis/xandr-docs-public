@@ -4,7 +4,7 @@ description: The article explains cookie settings that are available on the Xand
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Cookie privacy settings
+# Cookie privacy settings
 
 This document acts as an overview of the various cookie privacy-related settings that are available on the Xandr platform. Below, you will find information about how to control use of cookie data on a given impression. For the purposes of this document, cookie data refers to information Xandr stores on a user that is used for segment targeting, frequency capping, and conversion attribution.
 

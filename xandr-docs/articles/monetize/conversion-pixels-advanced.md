@@ -20,7 +20,7 @@ you can convert a pixel manually by making two changes:
 1. The sub-domain should be "ib.adnxs.com".
 
 > [!WARNING]
-> On a secure page, only **secure** pixels can be used**.** In addition, non-secure pixels can only be placed on an **non-secure** page.
+> On a secure page, only **secure** pixels can be used**. In addition, non-secure pixels can only be placed on an **non-secure** page.
 
 ## Segment users once they have converted
 

@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Create a campaign
 
-This page describes how to create a campaign to run on web inventory and on mobile apps. For instructions on creating a campaign to run on deals, see [Create a Deal
-Campaign](create-a-deal-campaign.md).
+This page describes how to create a campaign to run on web inventory and on mobile apps. For instructions on creating a campaign to run on deals, see [Create a Deal Campaign](create-a-deal-campaign.html).
 
 Creating campaign involves defining:
 
@@ -122,14 +121,13 @@ campaign will stop buying impressions, whether or not it has reached its own bud
 
 ### Step 7. Define the buying strategies
 
-In the Buying Strategies section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your
-network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and
-Google Ad Manager).
+In the **Buying Strategies** section, choose whether you want to buy direct inventory, third-party inventory, or both. Direct inventory includes only inventory managed by your
+network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
 
-- [Buy Direct Inventory](create-a-campaign.md)
-- [Buy Third-Party Inventory](create-a-campaign.md)
+- [Buy Direct Inventory](create-a-campaign.md#buy-direct-inventory)
+- [Buy Third-Party Inventory](create-a-campaign.md#buy-third-party-inventory)
 
-**Buy Direct Inventory**
+#### Buy Direct Inventory
 
 To run the campaign on your own managed publishers or direct buys, check the **Buy Direct Inventory** box. Then weight the campaign against other direct campaigns and, if applicable, enable roadblocking.
 
@@ -153,7 +151,7 @@ To run the campaign on your own managed publishers or direct buys, check the **B
   > [!NOTE]
   > If roadblocking has been set at the line item level, it's not available on the campaign.
 
-**Buy Third-Party Inventory**
+#### Buy Third-Party Inventory
 
 To run the campaign on inventory from other members of the Xandr platform and from external partners and exchanges, check the **Buy Third-Party Inventory** box. Then decide how
 you want to pay for third-party inventory (per impression, per click, and/or per conversion) and define exactly how you want to calculate your bids. Note that the revenue type of the parent line item determines which buying strategy options are available and, of those available, which are recommended. For a detailed explanation of your options, see
@@ -183,7 +181,7 @@ you want to pay for third-party inventory (per impression, per click, and/or per
 
       > [!NOTE]
       >
-  > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
+      > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
 
   - **Bid CPM**: **max $\_ CPM min $_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
   - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids will always vary based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen
@@ -194,7 +192,7 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Bid at most $\_ CPM in Learn Phase** - When your campaign starts to spend on new inventory, the optimization engine submits "learn" bids. It is recommended to enter a max CPM dollar about for these bids. In doing so, you will avoid learning on inventory that is too expensive while not limiting yourself from optimized inventory sources that are worth higher prices. For more details and suggestion for using this feature, see Max Learn CPM.
 
       > [!NOTE]
-   > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
+      > When you set both a cap for learn bids and a max CPM for non-learn bids (next option), the lower of the two will be used for learn.
 
   - **Bid CPM: max $\_ CPM min $\_ CPM** - Enter the highest and lowest CPM dollar amount that you are willing to spend on an impression.
     - **Enable Cadence Modifier** - This option appears under OTHER OPTIONS and cannot be deselected. When optimizing to a predicted CPA goal, your bids
@@ -215,24 +213,24 @@ you want to pay for third-party inventory (per impression, per click, and/or per
     - **Enable Cadence Modifier** - Under OTHER OPTIONS, check this box to vary your bid based on how often and recently users have seen your creatives. This feature is based on the idea that an ad is more effective (and therefore worth more) when a user hasn't seen it before or hasn't seen it many times or seen it recently. For
       more details, see [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-factor.md).
 
-> [!NOTE]
-> If minimum margin is set on the line item, this will ensure campaigns will bid at or below the minimum margin %. This setting effectively sets a bid cap on your third-party campaigns.
->
-> - To learn how to enable minimum margin for campaigns targeting direct inventory, see [Manage Network Priorities](manage-network-priorities.md).
-> - To learn about how to balance margin and delivery, see our [Using Minimum Margin to Balance Margin and Delivery](using-minimum-margin-to-balance-margin-and-delivery.md).
-> - To learn how to set minimum margin on the line item, see [Create a Standard Line Item](create-a-standard-line-item.md).
-> [!NOTE]
-> The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategies is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, set a **Performance Goal** on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
->
-> - For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md)
-> - To learn about setting up Performance Goals on the line item, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+     > [!NOTE]
+     > If minimum margin is set on the line item, this will ensure campaigns will bid at or below the minimum margin %. This setting effectively sets a bid cap on your third-party campaigns.
+     >
+     > - To learn how to enable minimum margin for campaigns targeting direct inventory, see [Manage Network Priorities](manage-network-priorities.md).
+     > - To learn about how to balance margin and delivery, see our [Using Minimum Margin to Balance Margin and Delivery](using-minimum-margin-to-balance-margin-and-delivery.md).
+     > - To learn how to set minimum margin on the line item, see [Create a Standard Line Item](create-a-standard-line-item.md).
+     >
+     > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategies is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, set a **Performance Goal** on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+    >
+    > - For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+    > - To learn about setting up Performance Goals on the line item, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
 
 ### Step 8. Show to users without cookies
 
 To target users that you have not seen before and users who have cleared their cookies, check the **Show to users without cookies** box under **Buying Strategies \> OTHER OPTIONS**.
 
 > [!TIP]
-> If using frequency targeting for this campaign, you must also check the **Show to users without cookies** box in the Frequency section of the **Targeting** area. For more details, see Frequency Targeting.
+> If using frequency targeting for this campaign, you must also check the **Show to users without cookies** box in the **Frequency** section of the **Targeting** area. For more details, see Frequency Targeting.
 
 Your campaign will show ads to users without cookies by default except when conversion tracking is enabled at the line item level (one or more conversion pixels are attached to the line item). In this case, targeting users without cookies is not the default because we cannot attribute conversions back to an impression view or click when users do
 not have cookies.
@@ -247,7 +245,7 @@ not have cookies.
 
 If your buying strategy uses the Xandr optimization engine, you can adjust **Optimization Levers** to influence how optimization works for your campaign, for example, how much you bid during the Learn phase, how many success events (clicks or conversions) it takes to move from the Learn phase to the Optimized phase, as well as whether you want to optimize to the campaign bidding strategy before optimizing to the line item booked revenue.
 
-To access optimization levers, click the **Edit** button under **Buying Strategies**  \>  **OTHER OPTIONS**. For detailed explanations of each lever, see Optimization Levers.
+To access optimization levers, click the **Edit** button under **Buying Strategies** \> **OTHER OPTIONS**. For detailed explanations of each lever, see Optimization Levers.
 
 > [!IMPORTANT]
 > If you do not have access to optimization levers and are interested in learning more about about them, please contact your Xandr account representative.
@@ -256,9 +254,9 @@ To access optimization levers, click the **Edit** button under **Buying Strategi
 
 In the **Targeting** section, you can [Apply a Targeting Template](apply-a-targeting-template.md) or set unique inventory and user targeting for this campaign. Use the links below to learn more about each type of targeting.
 
-**Boolean Logic**
-
 > [!NOTE]
+> **Boolean Logic**
+>
 > When you apply multiple types of targeting (e.g., inventory, segment, geography, etc.), keep in mind that your campaign will buy only impressions that match all targeting. In other words, there is an AND relationship between the main types of targeting. For example, if you target seller 123, segment ABC, and the United States, your campaign
 > will bid only on impressions from that seller being viewed by users in that segment and in the United States.
 
@@ -289,37 +287,39 @@ You can target users in numerous ways. Use the links below to learn more about e
 
 ### Step 11. Associate creatives and define a dynamic landing page
 
-In the Associated Creatives section, you can select a **Creative Rotation** to determine how you want to rotate and weight multiple creatives. Select one of three options: -
+In the **Associated Creatives** section, you can select a **Creative Rotation** to determine how you want to rotate and weight multiple creatives. Select one of three options: -
 **Evenly weight creatives (default):** Even rotation is handled automatically by our system. - **Auto-optimize creative weight:** When this option is chosen, 75% of delivery is allocated to the creative with the highest click-through rate; all remaining creatives of the same size receive equal allocations of the remaining 25% of overall delivery. -
 **Manually weight creatives:** By selecting this option, you will be able to manually set a weight (between 0 and 1000).
 
 See [Creative Rotation](creative-rotation-standard-line-item-and-guaranteed-delivery-line-item.md) for more information.
 
-Click Edit and select the creatives that you want to run for the campaign. Also, if you want to define a dynamic landing page to be used by multiple creatives associated to the
-campaign, enter the **Landing Page URL** and then make sure the creatives are set up to use a dynamic landing page. Note that you can set a dynamic landing page at the line item level as well. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
+Click **Edit** and select the creatives that you want to run for the campaign. Also, if you want to define a dynamic landing page to be used by multiple creatives associated to the campaign, enter the **Landing Page URL** and then make sure the creatives are set up to use a dynamic landing page. Note that you can set a dynamic landing page at the line item level as well. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
 
-If you prefer, you can associate creatives to the campaign at a later time. For more details, see [Associate Creatives to Campaigns](associate-creatives-to-campaigns.md).
+> [!TIP]
+> If you prefer, you can associate creatives to the campaign at a later time. For more details, see [Associate Creatives to Campaigns](associate-creatives-to-campaigns.md).
 
 ### Step 12. Enter comments
 
-In the Comments section, enter any comments that you would like to record with the campaign. Comments are for your reference only and will not affect campaign delivery.
+In the **Comments** section, enter any comments that you would like to record with the campaign. Comments are for your reference only and will not affect campaign delivery.
 
 ### Step 13. Add serving fees
 
-If you owe serving fees to third parties for services such as creative hosting or user data, you can add these fees in the Serving Fees section. Serving fees can
-be either a percentage of costs or a flat CPM. Please note the following:
+If you owe serving fees to third parties for services such as creative hosting or user data, you can add these fees in the **Serving Fees** section. Serving fees can
+be either a percentage of costs or a flat CPM.
+
+Please note the following:
 
 - Serving fees are added to your media cost.
 - When you use a third-party buying strategy that involves optimization ("Optimize to a predicted CPA/CPC goal" or "Optimize to a % margin of booked revenue"),
 bids are automatically reduced to account for serving fees.
 - When you buy direct inventory or use a third-party buying strategy that does not involve optimization, bids are not reduced to account for serving fees.
 
-To add a new serving fee: 
+To add a new serving fee:
 
 1. Click the **Add Fee** button.
 1. In the **Broker** field, select the relevant broker or create a new broker.
 1. In the **Description** field, enter details about the serving fee.
-1. Select the **Fee Type** (CPM or Cost Share) and enter the relevant **Fee Value** (dollar amount for CPM, percentage for Revenue Share). 
+1. Select the **Fee Type** (CPM or Cost Share) and enter the relevant **Fee Value** (dollar amount for CPM, percentage for Revenue Share).
 1. Click **Add**.
 
    > [!IMPORTANT]
@@ -327,7 +327,7 @@ To add a new serving fee:
 
 ### Step 14. Review and save your campaign
 
-Confirm that the campaign details are correct and then click the Save button to finish adding the campaign to Xandr. The campaign is then added to
+Confirm that the campaign details are correct and then click the **Save** button to finish adding the campaign to Xandr. The campaign is then added to 
 the list of campaigns on the [Explore Campaigns](explore-campaigns.md).
 
 ### Step 15. Complete peer approval
@@ -336,21 +336,20 @@ the list of campaigns on the [Explore Campaigns](explore-campaigns.md).
 > When activated for a user at the network level, the campaign peer approval feature requires a user to get approval from a second user before campaigns can be set to **Active**. This feature minimizes the risk of user-side errors in campaign activation and can help users identify and change settings to improve campaign performance.
 > [!NOTE]
 > This step applies only to clients who have enabled the peer approval feature for their users. To learn more about enabling peer approval for users, see Create a Network User.
-> [!NOTE]
+>
 > The campaign peer approval feature sets requirements for who must obtain peer approval, but not who can approve campaigns. Any other user who is able to create campaigns
 > for your network may provide this approval. There is no way to designate a single approver of others' campaigns.
 
-If your campaigns use the peer approval feature, in order to switch a campaign's status from **Inactive** to **Active**, you will need peer approval from another user. In the **Create New Campaign** screen in the Approved By field, you will see a message alerting you to the need for peer approval and will be unable to save the campaign in an active
-state.
+If your campaigns use the peer approval feature, in order to switch a campaign's status from **Inactive** to **Active**, you will need peer approval from another user. In the **Create New Campaign** screen in the **Approved By** field, you will see a message alerting you to the need for peer approval and will be unable to save the campaign in an active state.
 
-To approve the campaign, another user from your team must log in, go to the **Campaigns** screen, select the desired campaign and click **Edit**. This will open the **Edit Campaign** screen. On the Edit Campaign screen, the alternate user must check the **Approved By** checkbox. Once this step is completed, the campaign can be set to **Active** by any user on your team.
+To approve the campaign, another user from your team must log in, go to the **Campaigns** screen, select the desired campaign and click **Edit**. This will open the **Edit Campaign** screen. On the **Edit Campaign** screen, the alternate user must check the **Approved By** checkbox. Once this step is completed, the campaign can be set to **Active** by any user on your team.
 
-Next Steps
+## Next steps
 
 Once you've created a campaign, you can [View Campaign Details](view-campaign-details.md). You can also continue [Associate
 Creatives to Campaigns](associate-creatives-to-campaigns.md).
 
-### Related topics
+## Related topics
 
 - [Working with Campaigns](working-with-campaigns.md)
 - [Explore Campaigns](explore-campaigns.md)

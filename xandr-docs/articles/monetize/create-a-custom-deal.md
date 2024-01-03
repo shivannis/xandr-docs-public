@@ -9,8 +9,8 @@ ms.date: 10/28/2023
 As a seller, you can create a custom deal for a specific buyer that applies to specific inventory, geography, segments, impression sizes, or creative attributes. Once a deal is created, the buyer creates a line item or campaign to target the deal. For more information on how buyers target deals, see [Deal Targeting (ALI)](deal-targeting-ali.md) and [Create a Deal Campaign](create-a-deal-campaign.md).
 
 > [!NOTE]
-> Before you create a custom deal, you should communicate with the buyer to ensure you're using the correct buyer ID. If you plan to use a buyer seat ID from an external DSP, you
-> should also check the Buyer Seat Migration Status reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
+> Before you create a custom deal, you should communicate with the buyer to ensure you're using the correct buyer ID. If you plan to use a buyer seat ID from an external DSP, 
+> you should also check the Buyer Seat Migration Status reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
 
 If you would like to create a package for buyers to browse and generate their own deals, see [Create a Package](create-a-package.md).
 
@@ -18,8 +18,7 @@ This page describes the properties you can define when creating a deal.
 
  > [!NOTE]
 > Clients of different types may see different options when creating a deal. This page covers all options in the create a deal workflow. If you do not have access to certain settings or options or have any other questions, please reach out to your Xandr representative.
-
-> [!NOTE]
+>
 > If you are assigning a deal to a curator account, you must [create a deal line item](create-a-deal-line-item.md). Custom deals are not supported with curator members. See
 > [Curated Deals](curated-deals.md) for more information.
 
@@ -30,11 +29,11 @@ You can start a new deal from two locations:
 - From the Deals Screen
 - From the Partnership Details Screen
 
-From the Deals Screen
+### From the deals screen
 
-On the Deals screen (**Partners** \> **Deals**), select the Buyers tab and click **New**.
+On the **Deals** screen (**Partners** \> **Deals**), select the Buyers tab and click **New**.
 
-From the Partnership Details Screen
+### From the partnership details screen
 
 On the **Partner Center** screen (**Partners** \> **Partner Center**), select the **Buyers** tab and click on the buyer for whom you'd like to create a deal. Then on the buyer's **Partnership Details** screen, click the number under **Deals** to display any current deals with the buyer and click **New**.
 
@@ -44,7 +43,7 @@ Enter basic details for the new deal:
 
 - **Name** - Enter the name for the deal.
 - **Buyer** - If you are creating a deal from the **Deals** screen, select the buyer for whom you are creating the deal. Buyers can be listed using a
-  Xandr member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check[External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
+  Xandr member ID or (for external DSPs) using a buyer seat ID. For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md). Note that some seat IDs are visible but aren't yet eligible for bidding: check [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md) for the latest information.
 - **Code -** If you want to report on the deal using an external code (rather than the internal ID that Xandr assigns automatically), enter the code here.
 - **Start Date -** Enter the start date for the deal.
 - **End Date -** Enter the end date for the deal. This information is not required. A deal with no end date will be active until you cancel it.
@@ -54,9 +53,9 @@ Enter basic details for the new deal:
 
 - **Currency** - Select the currency that will be used for the buyer's bid and the transaction of the deal.
 - **Deal Type** - Select the auction type for the deal.
-  - **Open Auction** - An open auction is similar to a regular RTB auction. The buyer will be competing with the larger pool of RTB buyers. Select Open Auction to
+  - **Open Auction** - An open auction is similar to a regular RTB auction. The buyer will be competing with the larger pool of RTB buyers. Select **Open Auction** to
     allow the buyer to more easily target the deal inventory without giving the buyer's bid any preference over other RTB bids.
-  - **Private Auction** - In a private auction, the buyer will only compete with other buyers who have a private auction deal for the impression. Select Private Auction
+  - **Private Auction** - In a private auction, the buyer will only compete with other buyers who have a private auction deal for the impression. Select **Private Auction**
     to give the buyer preference over other RTB bids.
 - **Auction Type** - Select the auction type for the deal.
   - **Standard Auction** - This is the standard auction type.
@@ -67,8 +66,7 @@ Enter basic details for the new deal:
 
 - **Payment Type** - Select the payment type to be used for this deal:
   - **CPM** - every impression will result in payment.
-  - **vCPM** (viewable impressions) - only impressions that are viewable will result in payment. An impression is determined to be viewable according to the viewability definition supported by the buyer. The viewability definition for this buyer will appear when this option is selected. You must select an **Ask Price** when the vCPM payment
-    type is selected.
+  - **vCPM** (viewable impressions) - only impressions that are viewable will result in payment. An impression is determined to be viewable according to the viewability definition supported by the buyer. The viewability definition for this buyer will appear when this option is selected. You must select an **Ask Price** when the vCPM payment type is selected.
 
    > [!NOTE]
    > **vCPM** will soon be deprecated.
@@ -78,7 +76,7 @@ Enter basic details for the new deal:
 
   - **Specify an ask price** - Select this if you would like to enter a price for the deal. You must enter an ask price for private auction deals.
 
-    Enter the price you would like the buyer to see in the Ask Price field. The system automatically deducts the revenue fee specified in your Xandr contract to determine the amount you will receive (**Min. Revenue**).
+    Enter the price you would like the buyer to see in the **Ask Price** field. The system automatically deducts the revenue fee specified in your Xandr contract to determine the amount you will receive (**Min. Revenue**).
 
     - **Ask Price** - This is the **Min. Revenue** plus any fees. This amount, which is visible to the buyer, is the minimum amount the buyer must bid in order to compete for this inventory.
     - **Fees** - The revenue share fees specified in your Xandr contract.
@@ -92,11 +90,11 @@ Enter basic details for the new deal:
 Use the **Inventory**, **Geography**, **Segment**, **Size**, and **Device Type** sections to define the contents of the deal and where it will serve.
 
 > [!TIP]
-> Buyers cannot see the inventory or segments included. Use the Description field to give buyers insight into the contents.
+> Buyers cannot see the inventory or segments included. Use the **Description** field to give buyers insight into the contents.
 
 ## Select all of a seller's inventory
 
-By default, **Run of Seller** is selected in the Inventory section. All of the seller's inventory will be included.
+By default, **Run of Seller** is selected in the **Inventory** section. All of the seller's inventory will be included.
 
 ## Select specific categories of inventory
 
@@ -233,9 +231,9 @@ To create an override, click **Edit** in the Creative Category section, then use
 
 | Type of override | How to configure it |
 |--|--|
-| Restrict the deal to specific categories | On the Category tab, click the categories you want to serve in the deal and click Add. |
-| Include all categories, and ignore the ad quality settings | Do not click any categories on the Category tab. On the Ad Quality Settings tab, click Ignore for the categories you want to serve, regardless of ad quality settings. |
-| Restrict the deal to specify categories and ignore ad quality settings | On the Category tab, click the categories you want to serve in the deal and click Add. On the Ad Quality Settings tab, click Ignore for the categories you want to serve, regardless of ad quality settings. |
+| Restrict the deal to specific categories | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. |
+| Include all categories, and ignore the ad quality settings | Do not click any categories on the **Category** tab. On the **Ad Quality Settings** tab, click **Ignore** for the categories you want to serve, regardless of ad quality settings. |
+| Restrict the deal to specify categories and ignore ad quality settings | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignor**e for the categories you want to serve, regardless of ad quality settings. |
 
 > [!TIP]
 > Remember, by default, your network and publisher ad quality settings are used to determine the categories that serve for a deal. Overrides are only needed if you want deals to
@@ -254,9 +252,9 @@ To create an override, click **Edit** in the Language section, then use the **La
 
 | Type of override | How to configure it |
 |--|--|
-| Restrict the deal to specific languages | On the Languages tab, click the languages you want to serve in the deal and click Add. |
-| Include all languages, and ignore the ad quality settings | Do not click any languages on the Languages tab. On the Ad Quality Settings tab, click Ignore for the languages you want to serve, regardless of ad quality settings. |
-| Restrict the deal to specify languages and ignore ad quality settings | On the Languages tab, click the languages you want to serve in the deal and click Add. On the Ad Quality Settings tab, click Ignore for the languages you want to serve, regardless of ad quality settings. |
+| Restrict the deal to specific languages | On the **Languages** tab, click the languages you want to serve in the deal and click **Add**. |
+| Include all languages, and ignore the ad quality settings | Do not click any languages on the **Languages** tab. On the **Ad Quality Settings** tab, click **Ignore** for the languages you want to serve, regardless of ad quality settings. |
+| Restrict the deal to specify languages and ignore ad quality settings | On the **Languages** tab, click the languages you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignore** for the languages you want to serve, regardless of ad quality settings. |
 
 > [!TIP]
 > Remember, by default, your network and publisher ad quality settings are used to determine the languages that serve for a deal. Overrides are only needed if you want deals to
@@ -268,10 +266,11 @@ By default, deals follow network and publisher ad quality settings to determine 
 
 A maximum of 100 creative IDs can be approved or blocked.
 
-Use the [Creative Service](../digital-platform-api/creative-service.md) to locate individual creative IDs.
-
-- To always allow a specific creative, list the creative IDs, separated by commas, in the **Approve** box.
-- To always block a specific creative, list the creative IDs, separated by commas, in the **Block** box.
+> [!TIP]
+> Use the [Creative Service](../digital-platform-api/creative-service.md) to locate individual creative IDs.
+>
+> - To always allow a specific creative, list the creative IDs, separated by commas, in the **Approve** box.
+> - To always block a specific creative, list the creative IDs, separated by commas, in the **Block** box.
 
 ## Override trust level
 
@@ -287,17 +286,17 @@ To allow deals to serve more creatives, click **Edit** in the Trust Level sectio
 ## Set media types
 
 By default, deals follow network ad quality settings to determine media types. To limit deals to a specific set of media types, click **Edit** in the
-Media Types section.
+**Media Types** section.
 
-- On the Media Types tab, click the media types you want to allow for this deal. Selected media types appear in the right side of the dialog. You can deselect specific
+- On the **Media Types** tab, click the media types you want to allow for this deal. Selected media types appear in the right side of the dialog. You can deselect specific
   media subtypes for each of the main media types.
-- Click the Media Subtypes tab to select specific media subjects (sorted by ID).
-- Click Set to save your selections.
+- Click the **Media Subtypes** tab to select specific media subjects (sorted by ID).
+- Click **Set** to save your selections.
 
 Check **Allow deal to include private media types** to allow impressions from this deal to serve on the additional media types that you have specified in the Placement Manager.
 
 > [!TIP]
-> If you allow private media types, buyers won't see the additional media types. Include the private media types in the Description field.
+> If you allow private media types, buyers won't see the additional media types. Include the private media types in the **Description** field.
 
 ## Override technical attributes ad quality settings
 
@@ -310,7 +309,7 @@ To create an override, click **Edit** in the **Technical Attributes** section. B
 
 ## Description
 
-Enter a description for the deal. The buyer cannot see the **Inventory** or Segment columns, so it is important for you to be descriptive about the type of inventory the deal includes.
+Enter a description for the deal. The buyer cannot see the **Inventory** or **Segment** columns, so it is important for you to be descriptive about the type of inventory the deal includes.
 
 ## Data protection
 
@@ -344,7 +343,7 @@ will see in your bid requests, and also what data the buyer will see in reportin
 
 ## Add to segment
 
-Use the settings in the Add to Segment section of **Data Protection** to determine whether segment data can be gathered by this buyer.
+Use the settings in the **Add to Segment** section of **Data Protection** to determine whether segment data can be gathered by this buyer.
 
 - **On View** - Determines whether to allow any creative to serve that adds users to a segment on view. Possible values are **Allowed** and **Not Allowed**.
 - **On Click** - Determines whether to allow any creative to serve that adds users to a segment on click. Possible values are **Allowed** and **Not Allowed**.
@@ -355,8 +354,8 @@ The **Allow Specific Ad Servers on Deal** option lets you identify specific sets
 
 To place ad server list protections on this deal, follow these steps:
 
-1.  Select the **Allow Specific Ad Servers on Deal** checkbox. This will display the **Select Ad Server List** drop-down.
-2.  Select an ad server list from the drop-down.
+1. Select the **Allow Specific Ad Servers on Deal** checkbox. This will display the **Select Ad Server List** drop-down.
+1. Select an ad server list from the drop-down.
 
 ## Save the deal
 

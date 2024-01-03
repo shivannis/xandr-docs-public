@@ -13,21 +13,21 @@ You can also duplicate an existing template and then modify it. For more informa
 1. Navigate to the **Creative Templates** screen by clicking **Network \> Tools \> Creative Templates**.
 2. Click **New**.
 3. Provide the following information:
-    1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
+
+   1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
 
        > [!TIP]
        > Be sure to use a name that buyers will easily recognize.
 
-    2.  **Media Type**: Defines the display style of the creatives that can use the template, such as banner.
-    3.  **Creative Format**: Defines the creative resource type that can use this template such as Flash, iframe, or External File.
-    4.  **Template Code**: Specifies how the creative should be rendered.
+   1. **Media Type**: Defines the display style of the creatives that can use the template, such as banner.
+   1. **Creative Format**: Defines the creative resource type that can use this template such as Flash, iframe, or External File.
+   1. **Template Code**: Specifies how the creative should be rendered.
 
       > [!NOTE]
-      > If you include custom macros in the template code, they must begin with
-      > the `#` symbol. If you include standard macros in the template code,
+      > If you include custom macros in the template code, they must begin with the `#` symbol. If you include standard macros in the template code,
       > they must begin with the `$` symbol. Be sure to replace any hard-coded [adnxs.com](http://adnxs.com/) references within the Template Code field
-      > with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain
-      > [adnxs.com](http://adnxs.com/) on or [adnxs-simple.com](http://adnxs-simple.com/) will be used when the auction takes place.
+      > with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain [adnxs.com](http://adnxs.com/) on or [adnxs-simple.com](http://adnxs-simple.com/) will be used 
+      > when the auction takes place.
 
 4. To add custom macros, expand the **Custom macros** section if necessary, click **Add Macros**, and do the following.
 

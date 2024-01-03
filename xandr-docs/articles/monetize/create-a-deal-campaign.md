@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Create a deal campaign
 
-Creating a campaign that targets deals you have with Monetize sellers and/or external supply partners is similar to setting up a standard [Create a Campaign](create-a-campaign.md).
-There are a few settings, however, that you must pay particularly close attention to:
+Creating a campaign that targets deals you have with Monetize sellers and/or external supply partners is similar to setting up a standard [Create a Campaign](create-a-campaign.md). There are a few settings, however, that you must pay particularly close attention to:
 
 - You must select the deal campaign type. See **Step 2. Select the deal campaign type** for details.
 - You must select the deals you want to target. See **Step 3. Target deals** for details.
@@ -28,7 +27,7 @@ On the **Advertisers** screen (**Advertisers** \> **All Advertisers**), click th
 > [!TIP]
 > You can find **Create New** \> **Campaign** on the insertion orders and line items under the advertiser, as well.
 > [!IMPORTANT]
-> For more detailed information on initial campaign setup, see the generic campaign setup workflow, [create-a-campaign.md](Create a Campaign).
+> For more detailed information on initial campaign setup, see the generic campaign setup workflow, [Create a Campaign](create-a-campaign.md).
 
 ## Step 2. Select the deal campaign type
 
@@ -95,7 +94,7 @@ In the **Deals Selection** section, click the **Edit** button and then include t
 Enter campaign details, flight dates, and set the campaign budget as you normally would. In the Basic Setup section, enter the basic details and flight dates for the campaign in
 the fields provided. Then, in the Budget section, set the campaign budget. By default, your campaign media budget is unlimited. If you prefer, you can define exactly how much you are willing to spend by setting a specific budget. The budget can be set in impressions or in media cost (dollars).
 
-For more detailed information on **Basic Setup** and Budget sections, see the genericcampaign setup workflow, [Create a Campaign](create-a-campaign.md).
+For more detailed information on **Basic Setup** and Budget sections, see the generic campaign setup workflow, [Create a Campaign](create-a-campaign.md).
 
 ## Step 5. Set the buying strategy
 
@@ -159,7 +158,9 @@ In the Advanced Targeting section, you can [apply a predefined targeting templat
 
 > [!WARNING]
 > Layering advanced targeting over your deals will limit your campaign's reach. Be sure to use targeting that is not in direct conflict with the terms of your deal.
-> For example, if your deals cover inventory in the US and you then use Geography targeting to target just users in Canada, your campaign will serve only to Canadian users who happen to be looking at the US inventory in your deals. If you [Apply a Targeting Template](apply-a-targeting-template.md), be sure to apply one designed for deal campaigns. If you apply a template designed for a non-deal campaign, your campaign type will be changed and your workflow and available targeting options will be reset.
+> For example, if your deals cover inventory in the US and you then use Geography targeting to target just users in Canada, your campaign will serve only to Canadian users who
+> happen to be looking at the US inventory in your deals. If you [Apply a Targeting Template](apply-a-targeting-template.md), be sure to apply one designed for deal campaigns.
+> If you apply a template designed for a non-deal campaign, your campaign type will be changed and your workflow and available targeting options will be reset.
 
 ### Target inventory
 

@@ -18,14 +18,15 @@ The **Create new Click Tracker** dialog will appear. In the **Click Tracker Deta
 
 ## Step 2. Associate with a line item (required)
 
-Click trackers are associated with line items. In the Line Item Association section, click Edit to choose the line item you'd like to associate this click tracker with. You can also search for a line item by name.
+Click trackers are associated with line items. In the **Line Item Association** section, click **Edit** to choose the line item you'd like to associate this click tracker with. You can also search for a line item by name.
 
-Once a line item is associated with a click tracker, you can report on the clicks coming through that tracker at the line item level. You can separate impression
-and click trackers by grouping by **Impression Type** in [Network Reporting](network-reporting.md).
+> [!IMPORTANT]
+> Once a line item is associated with a click tracker, you can report on the clicks coming through that tracker at the line item level. You can separate impression
+> and click trackers by grouping by **Impression Type** in [Network Reporting](network-reporting.md).
 
 ## Step 3. Associate with a publisher (required)
 
-Under **Publisher Settings**, click Edit and choose the publisher you'd like to associate this click tracker with. 
+Under **Publisher Settings**, click **Edit** and choose the publisher you'd like to associate this click tracker with. 
 
 ## Step 4. Associate with a placement (optional)
 
@@ -39,8 +40,8 @@ For more information about payment rules, see [Create Payment Rules](create-paym
 
 ## Step 6. Export the click tracker
 
-Finally, export the click tracker by clicking the checkbox to its left, and selecting More Actions  \>  Export Tags from the menu to the right of the Create Click
-Tracker button.
+Finally, export the click tracker by clicking the checkbox to its left, and selecting **More Actions \> Export Tags** from the menu to the right of the **Create Click
+Tracker** button.
 
 The **Export Trackers** dialog will appear. Under **Basic Options**, you can choose to export a JavaScript tag or a secure pixel.
 

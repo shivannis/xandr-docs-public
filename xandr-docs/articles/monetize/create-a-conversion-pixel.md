@@ -39,7 +39,7 @@ Event categories are:
 
 ## Step 4. Set the attribution window
 
-In the Expiration section, specify how far into the past you will look to attribute a conversion to a creative viewed or clicked.
+In the **Expiration** section, specify how far into the past you will look to attribute a conversion to a creative viewed or clicked.
 
 - **Post View Interval**: default is 1 day; maximum is 30 days
 - **Post Click Interval**: default is 14 days; maximum is 90 days
@@ -48,12 +48,11 @@ If you deselect expiration for your conversion pixel, the maximum attribution wi
 
 ## Step 5. Select how many conversions you want to count
 
-Depending on what kind of conversion you are tracking, you may be dealing with multiple conversions. In the Repeat Conversions section, you can choose whether you want to count more than one conversion per user, all conversions, or how often you want to count conversions. When using the "Count one conversion per user every ..." option, the maximum window is 32,767 minutes (about 22 days).
+Depending on what kind of conversion you are tracking, you may be dealing with multiple conversions. In the **Repeat Conversions** section, you can choose whether you want to count more than one conversion per user, all conversions, or how often you want to count conversions. When using the "Count one conversion per user every ..." option, the maximum window is 32,767 minutes (about 22 days).
 
 ## Step 6. Add a piggyback pixel (optional)
 
-On the Piggyback Pixels tab, you can
-input the URL of an image or JavaScript pixel to piggyback off the conversion pixel. You might do this to notify external servers about conversion events.
+On the **Piggyback Pixels** tab, you can input the URL of an image or JavaScript pixel to piggyback off the conversion pixel. You might do this to notify external servers about conversion events.
 
 Add **piggyback pixels** with the following in mind:
 

@@ -34,14 +34,13 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 - In **Users** field, click **Edit Associated Users**.
   A new dialog **Users** opens to specify the users for the role.
 
-  - Select the user(s) to link to the custom role who will have the permissions specified by the capabilities you assign in this role.
-    Alternatively, you can click on **Roles** under **Network \> User Management** to go to **Roles** screen. There, you can click the pencil icon to open the
-    Edit Role dialog and assign users. You can also assign an existing role when you create a new user. See [Create a User](create-a-user.md) for more information on user settings. After you assign a role to a user, it could take up to 10 minutes for the new permissions to take effect.
+- Select the user(s) to link to the custom role who will have the permissions specified by the capabilities you assign in this role.
+  Alternatively, you can click on **Roles** under **Network \> User Management** to go to **Roles** screen. There, you can click the **pencil** icon to open the **Edit Role** dialog and assign users. You can also assign an existing role when you create a new user. See [Create a User](create-a-user.md) for more information on user settings. After you assign a role to a user, it could take up to 10 minutes for the new permissions to take effect.
 
-## Capabilities
+## Capabilities9
 
-- Check the box next to each capability you want users who are assigned to this new role to have permission to access. Please refer to [Role Capabilities](role-capabilities.md) for more details.
+Check the box next to each capability you want users who are assigned to this new role to have permission to access. Please refer to [Role Capabilities](role-capabilities.md) for more details.
 
 ## Landing page
 
-- Select a landing page from the dropdown list for the custom role. The capabilities for this role will determine where a user can begin their session in the application when they first log on. All users assigned to this custom role will log in directly to the selected landing page. This field is mandatory.
+Select a landing page from the dropdown list for the custom role. The capabilities for this role will determine where a user can begin their session in the application when they first log on. All users assigned to this custom role will log in directly to the selected landing page. This field is mandatory.

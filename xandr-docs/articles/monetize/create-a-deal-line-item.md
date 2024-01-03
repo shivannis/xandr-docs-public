@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Create a deal line item
 
-Deal Line Items let publishers using Xandr Monetize as an ad server or SSP set up advanced deals with their buyers and provide all the newest features the
-Monetize deals platform has to offer.
+Deal Line Items let publishers using Xandr Monetize as an ad server or SSP set up advanced deals with their buyers and provide all the newest features the Monetize deals platform has to offer.
 
 ## About deal line items
 
@@ -49,14 +48,14 @@ On the **Advertisers** screen, click to edit the advertiser under which you want
 
 On the **Advertiser Details** screen of the advertiser under which you want to create a deal line item:
 
-1.  On the **Create New** drop-down, select **Line Item**.
-2.  In the **Line Item Type** section of the **Create New Line Item** screen, select **Attach a Deal**. The **Deal Type** will default to **Traffic a Deal**.
+1. On the **Create New** drop-down, select **Line Item**.
+1. In the **Line Item Type** section of the **Create New Line Item** screen, select **Attach a Deal**. The **Deal Type** will default to **Traffic a Deal**.
 
 **From the insertion orders screen**
 
-1.  On the **Advertisers** screen, click the **Insertion Order** for the advertiser under which you want to create a line item.
-2.  On the **Insertion Orders** screen, click the insertion order under which you want to create the line item.
-3.  Click **New Deal Line Item** in the **Line Items** section. This opens the **Create New Line Item** screen. The **Deal Type** will default to **Traffic a Deal**.
+1. On the **Advertisers** screen, click the **Insertion Order** for the advertiser under which you want to create a line item.
+1. On the **Insertion Orders** screen, click the insertion order under which you want to create the line item.
+1. Click **New Deal Line Item** in the **Line Items** section. This opens the **Create New Line Item** screen. The **Deal Type** will default to **Traffic a Deal**.
 
 ## Basic setup
 
@@ -69,7 +68,7 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   > [!NOTE]
   >
   > Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**). This is not the setting that filters out any
-  > impressions and does not impact auction logic. To filter out deal impressions by media type, use **Deal Creative Criteria \>  Media Type** (see [Deal Creative Criteria](create-a-deal-line-item.md).
+  > impressions and does not impact auction logic. To filter out deal impressions by media type, use **Deal Creative Criteria \>  Media Type** (see [Deal Creative Criteria](create-a-deal-line-item.md#deal-creative-criteria)).
 
 - **Roadblocking** - Optionally, you can enable programmatic roadblocks for the deal line item. If you choose to do so, you need to specify the dimensions for the **Master Creative** (that the buyer passes through in their bids) and its **Companion Creative**(s).
   
@@ -86,8 +85,8 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
   
   > [!NOTE]
   >
-> When you create a deal line item, the line item will inherit its budget type from the parent insertion order, and this will impact the revenue types available on
-> the line item. For example, if the budget type of an insertion order is **Impressions**, the child deal line item can only set up budgets using impressions.
+  > When you create a deal line item, the line item will inherit its budget type from the parent insertion order, and this will impact the revenue types available on
+  > the line item. For example, if the budget type of an insertion order is **Impressions**, the child deal line item can only set up budgets using impressions.
 
 ## Deal details
 
@@ -106,7 +105,7 @@ In the **Basic Setup** section, enter the basic details for the deal line item.
 
     > [!NOTE]
     >
-> This description is visible to buyers.
+    > This description is visible to buyers.
 
 Details for the newly created or existing deal display in **Deal Details** including:
 
@@ -131,7 +130,7 @@ Use the **Revenue Type** to define how the advertiser has agreed to pay you. You
 
 ## Budget
 
-Set the line item's Budget. Select **Unlimited Budget**, **Lifetime Budget**, or **Daily Budget**. The unit of the budget is determined by the **Budget Type**:
+Set the line item's **Budget**. Select **Unlimited Budget**, **Lifetime Budget**, or **Daily Budget**. The unit of the budget is determined by the **Budget Type**:
 
 > [!NOTE]
 > All budget types are optional.
@@ -147,15 +146,15 @@ Set the line item's Budget. Select **Unlimited Budget**, **Lifetime Budget**
 
 Flights let you set up limited deals with start and end dates as well as “evergreen deals” with no end date. To create one or more flights:
 
-1.  Select either **Set Dates** or **No End Date** (not available if **Lifetime Budget** is set).
+1. Select either **Set Dates** or **No End Date** (not available if **Lifetime Budget** is set).
 
-     1. **Set Dates**: Enter a **Start Date** and **End Date** for each of the line item's flights. The hour settings for **Start Date** and **End Date** will default to **12:00 AM** and **11:59 PM** respectively (you can override the defaults). Flights may not overlap one another. All flight dates must fall within the billing period dates of the parent insertion order and be a minimum of one day in duration. In addition, if you selected Lifetime **Budget \>  Set Per Flight** in the **Budget** section, you must enter a value for the **Budget** of each flight.
-     1. **No End Date**: Enter the **Start Date** for the line item. You may not create additional flights for this line item because it has no end date.
-1. Click **Add Another Flight** if you want additional flights (this option is not available if you select No End Date.)
+    - **Set Dates**: Enter a **Start Date** and **End Date** for each of the line item's flights. The hour settings for **Start Date** and **End Date** will default to **12:00 AM** and **11:59 PM** respectively (you can override the defaults). Flights may not overlap one another. All flight dates must fall within the billing period dates of the parent insertion order and be a minimum of one day in duration. In addition, if you selected **Lifetime Budget \>  Set Per Flight** in the **Budget** section, you must enter a value for the **Budget** of each flight.
+    - **No End Date**: Enter the **Start Date** for the line item. You may not create additional flights for this line item because it has no end date.
+1. Click **Add Another Flight** if you want additional flights (this option is not available if you select **No End Date**.)
 
      > [!NOTE]
      >
-  > You cannot change the **Start Date** of a flight once that date has passed. You can add multiple flights to any deal line item.
+     > You cannot change the **Start Date** of a flight once that date has passed. You can add multiple flights to any deal line item.
 
 ## Supply strategy
 
@@ -183,12 +182,13 @@ You can specify the following inventory and brand safety settings for the deal l
 - **Ads.txt**: Do not use (not supported for deal line items).
 
 > [!NOTE]
-> The use of Inventory Lists (e.g., allowlists, blocklists) will constrain whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select will be limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory
-> Type** option you select will serve on everything but the domains/apps in that blocklist.
+> The use of Inventory Lists (e.g., allowlists, blocklists) will constrain whatever **Inventory Type** selections you make. For example, if you target an allowlist,
+> the **Inventory Type** option you select will be limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory Type** option you select
+> will serve on everything but the domains/apps in that blocklist.
 
-## Frequency & recency
+## Frequency & Recency
 
-A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the Frequency & Recency toggle to **Caps on** and enter the appropriate
+A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the Frequency & Recency toggle to **Caps on** and enter the appropriate
 **Frequency** and **Recency** settings (see [Frequency and Recency Caps](frequency-and-recency-caps.md) for detailed setup information).
 
 ## Targeting
@@ -215,16 +215,17 @@ Note the following for deal line item targeting:
 
   > [!NOTE]
   >
-> Key/Values are reportable; Query String Segments are not reportable.
+  > Key/Values are reportable; Query String Segments are not reportable.
 
 - Thresholds (**Viewability Threshold** or **Completion Rate Threshold**) create a minimum predicted rate which impressions must surpass in order to be eligible for the deal. The rate set here is compared to our predicted rate based on historical data for the inventory, and is a lower limit - because of this, you should expect a real view/completion rate somewhat higher than the threshold you configure.
 - See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
 ## Deal creative criteria
 
-You can edit the following creative attributes for a deal by clicking **Edit** under each attribute, selecting the appropriate values, and clicking Set:
+You can edit the following creative attributes for a deal by clicking **Edit** under each attribute, selecting the appropriate values, and clicking **Set**:
 
-See [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md) for detailed setup information.
+> [!NOTE]
+> See [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md) for detailed setup information.
 
 - **Brand**
   - **Brand** tab: Only selected brands will be allowed to serve; any brands not selected will not be allowed. If no brands are selected, all brands that follow ad quality rules are allowed.
@@ -237,17 +238,15 @@ See [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a
   - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative
     categories are selected, all creative categories that follow ad quality rules are allowed.
   - **Ad Quality Settings** tab: Select the creative categories on which you want to override ad quality settings. When you select **Ignore**,the creative category will be allowed on the deal despite ad quality settings. All creative categories will default to **Follow** so they comply with ad quality settings.
-- **Specific Creatives**: Include specific creatives to either Approve (always allow) or Block (always block) on the deal.
+- **Specific Creatives**: Include specific creatives to either **Approve** (always allow) or **Block** (always block) on the deal.
 - **Media Type**: Select the media types you want to include on the deal.
   
   > [!NOTE]
   >
-  > Limiting the media types of creatives allowed on the deal will also limit
-  > the media types of requests sent through the deal. For example, if you
-  > select to only allow Banner creatives, the deal will only send banner
-  > requests to the buyer.
+  > Limiting the media types of creatives allowed on the deal will also limit the media types of requests sent through the deal. For example, if you select to only allow
+  > **Banner** creatives, the deal will only send banner requests to the buyer.
 
-- **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select Ignore, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes will default to Follow so they comply with ad quality settings.
+- **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select **Ignore**, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes will default to **Follow** so they comply with ad quality settings.
 
 **Reporting labels**
 
