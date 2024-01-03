@@ -4,14 +4,15 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/docfx.json"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**",
-          "**/docfx.json",
+          
           "_repo.en-us/**",
           "README.md",
           "LICENSE",
@@ -43,7 +44,6 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/xandr-docs/breadcrumb/toc.json",
-      "ms.locale": "en-us",
       "extendBreadcrumb": false,
       "feedback_system": "None",
       "permissioned-type": "public"
