@@ -4,7 +4,7 @@ description: The article defines a safety budget that enables you to set a netwo
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Capping daily spend on third-party inventory (safety budget)
+# Microsoft Monetize - Capping daily spend on third-party inventory (Safety budget)
 
 > [!WARNING]
 > Safety budgets are meant for CPM bidding and do not take CPA and CPC spending into account.

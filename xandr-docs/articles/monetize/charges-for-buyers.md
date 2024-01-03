@@ -4,7 +4,7 @@ description: The article outlines charges for buyers, encompassing the Buyer Auc
 ms.date: 10/28/2023
 ---
 
-# Microsoft Mometize - Charges for buyers
+# Microsoft Monetize - Charges for buyers
 
 ## Buyer Auction Service Charge (BASC)
 

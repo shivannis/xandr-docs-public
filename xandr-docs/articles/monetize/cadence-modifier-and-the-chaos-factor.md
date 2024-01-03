@@ -53,7 +53,7 @@ Bidding is not an exact science. While Xandr has tools that strive to determine 
 ## Other considerations
 
 - Optimization automatically applies the cadence modifier.
-- When you are bidding a base amount (e.g., you set a fixed bid for all auctions), the cadence modifier is not applied unless the setting **Enable Variable Pricing** is checked in Xandr Monetize.
+- When you are bidding a base amount (e.g., you set a fixed bid for all auctions), the cadence modifier is not applied unless the setting **Enable Variable Pricing** is checked in Microsoft Monetize.
 - If you restrict frequency and/or recency, you may be reducing the effectiveness of cadence modifier. If you set the frequency value to zero (0), the cadence modifier has no impact on the bid amount.
 
 ## Related topics
