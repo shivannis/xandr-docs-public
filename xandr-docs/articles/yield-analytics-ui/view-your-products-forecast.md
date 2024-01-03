@@ -1,11 +1,11 @@
 ---
-title: View the Forecast for your Products
+title: View your Products Forecast
 description: Use the Forecast Management page to view a snapshot of your products' impressions forecast for the month specified by the time period filter.
 ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
 
-# View the forecast for your products
+# View your products forecast
 
 The **Forecast Management** page displays a snapshot of your products' impressions forecast for the month specified by the **Time Period** filter.
 
