@@ -1,5 +1,5 @@
 - name: Xandr Platform
-t  ocHref: /xandr-docs/
+  tocHref: /xandr-docs/
   topicHref: /xandr-docs/articles/index
   items:
     - name: Bidder
