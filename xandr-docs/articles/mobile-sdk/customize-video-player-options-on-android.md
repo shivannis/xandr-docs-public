@@ -66,4 +66,4 @@ To start with video sound on or off:
 private ANInitialAudioSetting initalAudio;
 ```
 
-By default, sound will be on for InstreamVideo and off for Banner Video.
+By default, sound is on for Instream Video and off for Banner Video.
