@@ -33,7 +33,7 @@ public static void enableBackgroundThreading(boolean enable)
 
 ### init()
 
-Method that initializes the MobileSDK early in the apps lifecycle and executes the tasks that require UI thread during an AdRequest ahead of time. This method ensures that the MobileSDK will use background threading only during the execution of the actual AdRequest. To know about completion of the init method, a listener can be passed along with the method.
+Method that initializes the Mobile SDK early in the apps lifecycle and executes the tasks that require UI thread during an AdRequest ahead of time. This method ensures that the Mobile SDK will use background threading only during the execution of the actual AdRequest. To know about completion of the init method, a listener can be passed along with the method.
 
 ```
 /**
