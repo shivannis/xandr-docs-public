@@ -1,240 +1,50 @@
 ---
-Title : Seller Member Group Service
-Description : A seller member group consists of one or more members that sell
+title: Seller Member Group Service
+description: Buyers can target seller member groups for access to a wider variety of inventory from newer and smaller publishers. Sellers sell inventory with one or more members.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-inventory. Buyers can target seller member groups in addition to
 ---
 
+# Seller member group service
 
-# Seller Member Group Service
-
-
-
-A seller member group consists of one or more members that sell
-inventory. Buyers can target seller member groups in addition to
-individual members to have to access a greater variety of inventory,
-such as that from newer and smaller publishers.
+A seller member group consists of one or more members that sell inventory. Buyers can target seller member groups in addition to individual members to have to access a greater variety of inventory, such as that from newer and smaller publishers.
 
 Only admins can write to this service.  
 
-
-
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/seller-member-group | View a list of all seller member groups |
+| `GET` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID | View a specific seller member group |
+| `GET` | https://api.appnexus.com/seller-member-group?id=1,2,3 | View multiple seller member groups by ID using a comma-separated list |
 
+### Admin-only functions
 
-<table id="ID-0000399b__table_jym_chs_qwb" class="table frame-all"
-style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000399b__table_jym_chs_qwb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="ID-0000399b__table_jym_chs_qwb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000399b__table_jym_chs_qwb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__2">https://api.<span
-class="ph">appnexus.com/seller-member-group</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__3">View a list of all
-seller member groups</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__2">https://api.<span
-class="ph">appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__3">View a specific
-seller member group</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__2">https://api.<span
-class="ph">appnexus.com/seller-member-group?id=1,2,3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__table_jym_chs_qwb__entry__3">View multiple seller
-member groups by ID using a comma-separated list</td>
-</tr>
-</tbody>
-</table>
+Only Xandr employees can create, modify, or delete a seller member group.
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/seller-member-group <br>(seller member group JSON) | Add a new seller member group (admin only) |
+| `PUT` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID <br>(seller member group JSON) | Modify an existing seller member group (admin only) |
+| `DELETE` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID | Delete a seller member group (admin only) |
 
+## JSON fields
 
-**Admin-Only Functions**
-
-Only Xandr employees can create, modify, or
-delete a seller member group.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000399b__entry__13" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000399b__entry__14"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000399b__entry__15"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__13"><code
-class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__14">https://api.<span
-class="ph">appnexus.com/seller-member-group
-<p>(seller member group JSON)</p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000399b__entry__15">Add
-a new seller member group (admin only)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__13"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__14">https://api.<span
-class="ph">appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID
-<p>(seller member group JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__15">Modify an existing seller member group
-(admin only)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__13"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__14">https://api.<span
-class="ph">appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__15">Delete a seller member group (admin
-only)</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## JSON Fields
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000399b__entry__25"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000399b__entry__26"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000399b__entry__27"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Specifies the internal ID associated
-with the seller member group.
-<p><strong>Required On:</strong> <code class="ph codeph">PUT</code>, in
-query string.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Specifies the name of this seller
-member group.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Specifies a description for this seller
-member group.
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code
-class="ph codeph">display_order</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Specifies the order in which this
-seller member group should appear in . Default
-is <code class="ph codeph">5</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code
-class="ph codeph">member_count</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Specifies the number of members
-currently in this seller member group.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__25"><code
-class="ph codeph">hidden</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000399b__entry__27">Indicates whether or not this seller
-member group should be hidden in .
-<ul>
-<li><code class="ph codeph">0</code>: (Default) Seller member group will
-not be hidden in .</li>
-<li><code class="ph codeph">1</code>: Seller member group will be hidden
-in .</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | Specifies the internal ID associated with the seller member group.<br><br>**Required On**: `PUT`, in query string. |
+| `name` | string | Specifies the name of this seller member group.<br><br>**Required On**: `POST` |
+| `description` | string | Specifies a description for this seller member group.<br>**Required On**: `POST` |
+| `display_order` | int | Specifies the order in which this seller member group should appear in. Default is `5`. |
+| `member_count` | int | Specifies the number of members currently in this seller member group. |
+| `hidden` | Boolean | Indicates whether or not this seller member group should be hidden in.<br>`0`: (Default) Seller member group will not be hidden in.<br>`1`: Seller member group will be hidden in. |
 
 ## Examples
 
-**View all seller member groups**
+### View all seller member groups
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/seller-member-group'
 {
     "response": {
@@ -284,9 +94,9 @@ $ curl -b cookies 'https://api.appnexus.com/seller-member-group'
 }
 ```
 
-**Add a seller member group (admins only)**
+### Add a seller member group (admins only)
 
-``` pre
+```
 $ cat seller-member-group
 {
     "seller-member-group": {
@@ -315,9 +125,3 @@ $ curl -b cookies -X POST -d @seller-member-group 'https://api.appnexus.com/sell
     }
 }
 ```
-
-
-
-
-
-

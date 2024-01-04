@@ -1,355 +1,65 @@
 ---
-Title : Seller Creative Review Service
+title: Seller Creative Review Service
+description: Use the seller creative review service report to get an insight into how seller members audit the creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-<b>Note:</b> This service currently is in
-**Beta**. It is still under development and may be subject to change
 ---
 
+# Seller creative review service
 
-# Seller Creative Review Service
+> [!NOTE]
+> This service currently is in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
 
+The Seller Creative Review Service is designed to give you an insight into how seller members audit the creatives.
 
-
-
-
-
-
-<b>Note:</b> This service currently is in
-**Beta**. It is still under development and may be subject to change
-without notice. Contact your Xandr Account Representative to get
-enabled.
-
-
-
-
-
-The Seller Creative Review Service is designed to give you an insight
-into how seller members audit the creatives.
-
-Xandr works with members who care deeply about brand and reputation. For
-this reason, we are careful to ensure that the advertisements
-(creatives) that pass through our system are acceptable to all parties.
-Buyers must submit creatives to Xandr so that they can be audited before
-running on Xandr real-time inventory. Creatives that fail the Xandr
-platform audit will not run. For more information, see <a
-href="monetize_monetize-standard/auditing-creatives.md"
-class="xref" target="_blank">Auditing Creatives</a>.
-
->
+Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements (creatives) that pass through our system are acceptable to all parties. Buyers must submit creatives to Xandr so that they can be audited before running on Xandr real-time inventory. Creatives that fail the Xandr platform audit will not run. For more information, see [Auditing Creatives](../monetize/auditing-creatives.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="seller-creative-review-service__section_w5w_fst_swb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="seller-creative-review-service__section_w5w_fst_swb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="seller-creative-review-service__section_w5w_fst_swb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__2"><a
-href="https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__3">Create
-a seller-creative review</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__2"><a
-href="https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__3">View
-the details of a seller-creative review</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__2"><a
-href="https://api.appnexus.comseller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID"
-class="xref"
-target="_blank">https://api.appnexus.comseller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__3">Update
-a seller-creative review</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__2"><a
-href="https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&amp;creative_id=CREATIVE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="seller-creative-review-service__section_w5w_fst_swb__entry__3">Delete
-a seller-creative review</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Create a seller-creative review |
+| `GET` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | View the details of a seller-creative review |
+| `PUT` | https://api.appnexus.comseller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Update a seller-creative review |
+| `DELETE` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Delete a seller-creative review |
 
-
-
->
-
-## JSON Fields
+## JSON fields
 
 The seller-creative-review object includes the following JSON fields:
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `audit_feedback` | string | Consists of a brief description of the `audit_status` field. |
+| `audit_status` | enum | The audit status could consist of one of the following parameters:<br> - `no_audit`<br> - `rejected`<br> - `approved`<br> - `pending`<br><br>**Required on**: `PUT` and `POST` |
+| `brand_id` | integer | ID of an undeleted brand. This field cannot be `null`.<br>It is recommended to use the existing values for this field, instead of setting the values to default (i.e. `brand_id=1` or `language_id=0`).<br><br>**Required on**: `PUT` and `POST` |
+| `created_on` | string | **Read-only**. The date and time at which the object was created. |
+| `creative_id` | integer | If (`creative_id`, `member_id`) record is deleted, it can be recreated using the `POST` method. There can be multiple entries for one `creative_id` from different members. |
+| `deleted` | boolean | **Read-only**. An indicator that refers if the object was deleted or not. |
+| `id` | integer | **Read-only**. The ID of the object. |
+| `language_id` | integer | The language ID of the creative. For more information, see [Language Service](#language-service.md).<br>It is recommended to use the existing values for this field, instead of setting the values to default (i.e. `brand_id=1` or `language_id=0`).<br><br>**Required on**: `PUT` and `POST` |
+| `last_modified` | string | **Read-only**. The date and time at which the object was last modified. |
+| `member_id` | integer | The ID of the member that is creating or modifying the object.<br><br>**Required on**: `PUT` and `POST` |
+| `deal_audit_statuses` | array of objects | Deal specific audit statuses indicate a creative’s approval/rejection status for a specific deal. |
 
+### Deal audit statuses
 
-
-
-
-
-<table
-id="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc"
-class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th
-id="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th
-id="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_feedback</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">Consists
-of a brief description of the audit_status field.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-audit status could consist of one of the following parameters:</p>
-<ul>
-<li>no_audit</li>
-<li>rejected</li>
-<li>approved</li>
-<li><p>pending</p></li>
-</ul>
-<p><strong>Required on</strong>: PUT and POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">brand_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>ID
-of an undeleted brand. This field cannot be null.</p>
-<p>It is recommended to use the existing values for this field, instead
-of setting the values to default (i.e. brand_id=1 or language_id=0).</p>
-<p><strong>Required on</strong>: PUT and POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">created_on</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Read-only</strong>.
-The date and time at which the object was created.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">creative_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">If
-(creative_id, member_id) record is deleted, it can be recreated using
-the POST method. There can be multiple entries for one creative_id from
-different members.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">deleted</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Read-only</strong>.
-An indicator that refers if the object was deleted or not.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Read-only.</strong>
-The ID of the object.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">language_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-language ID of the creative. For more information, see <a
-href="language-service.md"
-class="xref" target="_blank">Language Service</a>.</p>
-<p>It is recommended to use the existing values for this field, instead
-of setting the values to default (i.e. brand_id=1 or language_id=0).</p>
-<p><strong>Required on</strong>: PUT and POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><strong>Read-only</strong>.
-The date and time at which the object was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3"><p>The
-ID of the member that is creating or modifying the object.</p>
-<p><strong>Required on</strong>: PUT and POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__1"><code
-class="ph codeph">deal_audit_statuses</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__2">array
-of objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__table-e90721c3-a6f1-4920-a65e-2583a1f3a2dc__entry__3">Deal
-specific audit statuses indicate a creative’s approval/rejection status
-for a specific deal.</td>
-</tr>
-</tbody>
-</table>
-
-**Deal Audit Statuses**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="seller-creative-review-service__entry__52"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="seller-creative-review-service__entry__53"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="seller-creative-review-service__entry__54"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__52"><code
-class="ph codeph">deal_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__53">integer</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__54">The ID of an
-existing deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__52"><code
-class="ph codeph">audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__53">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__54"><p>The audit status
-could consist of one of the following parameters:</p>
-<ul>
-<li>no_audit</li>
-<li>rejected</li>
-<li>approved</li>
-<li>pending</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__52"><code
-class="ph codeph">audit_feedback</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__53">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="seller-creative-review-service__entry__54">Consists of a brief
-description of the audit_status field.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `deal_id` | integer | The ID of an existing deal. |
+| `audit_status` | enum | The audit status could consist of one of the following parameters:<br> - `no_audit`<br> - `rejected`<br>- `approved`<br> - `pending` |
+| `audit_feedback` | string | Consists of a brief description of the audit_status field. |
 
 ## Examples
 
-**Create a seller creative review**
+### Create a seller creative review
 
-
-
-Step1: Create a seller creative review:
-
-``` pre
+```
 curl -X POST 'https://api.appnexus.com/seller-creative-review?member_id=2715&creative_id=55' -H 'Authorization: authn:3190:10e35ec51ee63:nym2' -d '{"seller-creative-review": {"audit_status": "rejected", "audit_feedback": "Does not meet standards", "language_id": 23,"brand_id": 306}}'
 ```
 
-
-
-
-
 The payload returned:
 
-``` pre
+```
 { 
  "response": {
     "status": "OK",
@@ -378,25 +88,15 @@ The payload returned:
 }
 ```
 
+### Create a seller creative review with deal audit statuses
 
-
-**Create a seller creative review with deal audit statuses**
-
-
-
-Step1: Create a seller creative review with deal audit statuses:
-
-``` pre
+```
 curl -X POST 'https://api.appnexus.com/seller-creative-review?member_id=2715&creative_id=55' -H 'Authorization: authn:3190:10e35ec51ee63:nym2' -d '{"seller-creative-review": {"audit_status": "approved", "audit_feedback": "Meets standards", "language_id": 23,"brand_id": 306,"deal_audit_statuses": [{"deal_id": 1,"audit_status": "rejected","audit_feedback": "Deal audit feedback"}]}}'
 ```
 
-
-
-
-
 The payload returned:
 
-``` pre
+```
 {
   "response": {
     "status": "OK",
@@ -431,19 +131,15 @@ The payload returned:
 }
 ```
 
+### View the details of a seller creative review
 
-
-**View the details of a seller creative review**
-
-Step1: View the details of a seller creative review:
-
-``` pre
+```
 curl -X GET 'https://api.appnexus.com/seller-creative-review?member_id=2715&creative_id=55' -H 'Authorization: authn:3190:10e35ec51ee63:nym2'
 ```
 
 The payload returned:
 
-``` pre
+```
 {
   "response": {
     "status": "OK",
@@ -474,17 +170,15 @@ The payload returned:
 }
 ```
 
-**Update a seller creative review**
+### Update a seller creative review
 
-Step1: Update a seller creative review:
-
-``` pre
+```
 curl -X PUT 'https://api.appnexus.comseller-creative-review?member_id=2715&creative_id=55' -H 'Authorization: authn:3190:10e35ec51ee63:nym2' -d '{"seller-creative-review": {"audit_status": "approved", "audit_feedback": "Meets standards", "language_id": 23,"brand_id": 306}}' 
 ```
 
 The payload returned:
 
-``` pre
+```
 {
   "response": {
     "status": "OK",
@@ -513,19 +207,15 @@ The payload returned:
 }
 ```
 
-**Delete a seller creative review**
+### Delete a seller creative review
 
-Step1: Delete a seller creative review:
-
-``` pre
+```
 curl -X DELETE 'https://api.appnexus.com/seller-creative-review?member_id=2715&creative_id=55' -H 'Authorization: authn:3190:10e35ec51ee63:nym2'
 ```
 
-
-
 The payload returned:
 
-``` pre
+```
 {
   "response": {
     "status": "OK",
@@ -540,7 +230,3 @@ The payload returned:
   }
 }    
 ```
-
-
-
-
