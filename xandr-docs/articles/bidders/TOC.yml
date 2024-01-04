@@ -220,11 +220,10 @@
   items:
   - name: Overview
     href: user-id-mapping.md
-  
   - name: Synchronize Your User IDs
     href: synchronize-your-user-ids.md
 - name: Batch Server-Side Segmentation
-    items:
+  items:
     - name: Overview
       href: batch-server-side-segmentation.md
     - name: Batch Segment Service
