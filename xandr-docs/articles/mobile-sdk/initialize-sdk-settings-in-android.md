@@ -9,14 +9,14 @@ ms.date : 10/28/2023
 
 ## Overview
 
-SDKSettings in Xandr Mobile SDK is a API that can be called to activate OMID, fetch User Agent and AAID (Google Advertising ID) for devices. The initialization `init()` method passes these parameters as arguments in the SDK. However, fetching of User Agent involves instantiating a WebView to get the User Agent string on the UI thread which contributes mainly for a delayed app start up apart
+SDKSettings in Xandr Mobile SDK is a API that can be called to activate OMID, fetch User Agent and AAID (Google Advertising ID) for devices. The initialization `init()` method passes these parameters as arguments in the SDK. However, fetching of User Agent involves instantiating a WebView to get the User Agent string on the UI thread. However this contributes for a delayed app start up apart
 from retrieving and setting the AAID on a worker thread. To mitigate this situation and to improve the app launch performance, an additional flexible `init()`method is provided using which you can disable fetching of User Agent and AAID for devices optionally.
 
 ## Method
 
-### SDKSettings.init
+### init()
 
-An `init()` method that activates OMID, fetch User Agent, AAID (Google Advertising ID), enables `WarmUpAdCall` and prefetch WebView for devices.
+The `init()` method activates OMID, fetch User Agent, AAID (Google Advertising ID), enables `WarmUpAdCall` and prefetch WebView for devices.
 
 ``` 
 public static void init(activateOmid, fetchUserAgent, fetchAAID, enableWarmUpAdCall, preFetchWebView)
