@@ -50,7 +50,7 @@
     },
     "fileMetadata": {
       "breadcrumb_path": {
-        "xandr/articles/invest/*.md": "xandr/articles/invest/bread/toc.json"
+        "articles/invest/*.md": "/xandr/articles/invest/bread/toc.json"
       },
       "ms.service": {
         "articles/invest/*.md": "microsoft-invest",
