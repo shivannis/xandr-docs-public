@@ -2,7 +2,7 @@
   #tocHref: /xandr-docs/
   topicHref: /xandr/articles/index
   items:
-    - name: Bidder Documentation
+    - name: Bidder Reference Documentation
       tocHref: /xandr/articles/bidders
       topicHref: /xandr/articles/bidders/index
       items:  
