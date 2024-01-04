@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Microsoft Advertising Exchange Inventory
-description: The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
+description: TLearn how to reach your audiences across Microsoft properties using Microsoft Advertising Exchange (MAX).  
 ms.date: 10/28/2023
 ---
 
@@ -104,317 +104,53 @@ The following creative sizes can be served on the MSN inventory:
 - 234x60
 - 768x90
 
-How to Target MSN Inventory
+## How to target MSN inventory
 
-For step-by-step instructions on how to target MSN inventory, see
-<a href="target-inventory-on-the-microsoft-advertising-exchange.md"
-class="xref">Target Inventory on the Microsoft Advertising Exchange</a>.
+For step-by-step instructions on how to target MSN inventory, see [Target Inventory on the Microsoft Advertising Exchange](target-inventory-on-the-microsoft-advertising-exchange.md).
 
 Use the targeting parameters below for your specific requirements.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000050bd__entry__11" class="entry">Region</th>
-<th id="ID-000050bd__entry__12" class="entry">Country</th>
-<th id="ID-000050bd__entry__13" class="entry">Content Category</th>
-<th id="ID-000050bd__entry__14" class="entry">Xandr
-Monetize Targeting</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11">Americas</td>
-<td class="entry" headers="ID-000050bd__entry__12">Argentina and
-Uruguay</td>
-<td class="entry" headers="ID-000050bd__entry__13">AR-001 (25668),
-ar.msn.com (25669)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Brazil</td>
-<td class="entry" headers="ID-000050bd__entry__13">BR-001 (20353),
-br.msn.com (25624)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Canada</td>
-<td class="entry" headers="ID-000050bd__entry__13">CA-001 (20356),
-ca.msn.com (25608)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Chile</td>
-<td class="entry" headers="ID-000050bd__entry__13">cl-001 (25697),
-cl.msn.com (25698)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Columbia</td>
-<td class="entry" headers="ID-000050bd__entry__13">CO-001 (25699),
-co.msn.com (25700)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Mexico</td>
-<td class="entry" headers="ID-000050bd__entry__13">mx-001 (25534),
-prodigy.msn.com (25535)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Peru</td>
-<td class="entry" headers="ID-000050bd__entry__13">PE-001 (25695),
-pe.msn.com (25696)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">US</td>
-<td class="entry" headers="ID-000050bd__entry__13">US-001 (20395),
-us.msn.com (25625)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11">EMEA</td>
-<td class="entry" headers="ID-000050bd__entry__12">Austria</td>
-<td class="entry" headers="ID-000050bd__entry__13">AT-001 (24941),
-at.msn.com (25636)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (AT)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Belgium</td>
-<td class="entry" headers="ID-000050bd__entry__13">BE-001-Dutch (20348),
-be.msn.com (25633), BE-004-French (20350)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Denmark</td>
-<td class="entry" headers="ID-000050bd__entry__13">DK-001 (20362)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (DK)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Finland</td>
-<td class="entry" headers="ID-000050bd__entry__13">fi.msn.com (26154),
-FI-001 (26155)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (FI)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">France</td>
-<td class="entry" headers="ID-000050bd__entry__13">FR-001 (20368),
-fr.msn.com (25629)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (FR)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Germany</td>
-<td class="entry" headers="ID-000050bd__entry__13">DE-001 (20359),
-de.msn.com (25628)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Ireland</td>
-<td class="entry" headers="ID-000050bd__entry__13">IE-001 (27607),
-ie.msn.com (27608)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Italy</td>
-<td class="entry" headers="ID-000050bd__entry__13">IT-001 (20371),
-it.msn.com (25627)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Netherlands</td>
-<td class="entry" headers="ID-000050bd__entry__13">NL-001 (20373),
-nl.msn.com (25786)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (NL)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Norway</td>
-<td class="entry" headers="ID-000050bd__entry__13">NO-001 (20375)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (NO)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Portugal</td>
-<td class="entry" headers="ID-000050bd__entry__13">PT-001 (25538),
-pt.msn.com (25539)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Russia</td>
-<td class="entry" headers="ID-000050bd__entry__13">RU-001 (26239),
-ru.msn.com (26272)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Spain</td>
-<td class="entry" headers="ID-000050bd__entry__13">ES-001 (20365),
-es.msn.com (27206)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (ES)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Sweden</td>
-<td class="entry" headers="ID-000050bd__entry__13">SE-001 (20380),
-se.msn.com (26245)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (SE)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Switzerland</td>
-<td class="entry" headers="ID-000050bd__entry__13">ch.msn.com (25637),
-CH-001 (24939),</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (CH)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Turkey</td>
-<td class="entry" headers="ID-000050bd__entry__13">TR-001 (25438),
-tr.msn.com (25439)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">UK</td>
-<td class="entry" headers="ID-000050bd__entry__13">UK-001 (20383),
-uk.msn.com (25630)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (UK)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11">APAC</td>
-<td class="entry" headers="ID-000050bd__entry__12">Australia</td>
-<td class="entry" headers="ID-000050bd__entry__13">AU-001 (20276)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">China * Launch
-Q2</td>
-<td class="entry" headers="ID-000050bd__entry__13">CN-001 (27305),
-cn.msn.com (27306)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (CN)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Hong Kong</td>
-<td class="entry" headers="ID-000050bd__entry__13">HK-001 (25532),
-hk.msn.com (25533)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">India</td>
-<td class="entry" headers="ID-000050bd__entry__13">in.msn.com (25639),
-IN-001 (27044)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (IN)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Indonesia</td>
-<td class="entry" headers="ID-000050bd__entry__13">ID-001 (28093),
-ID.msn.com (28094)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (ID)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Japan</td>
-<td class="entry" headers="ID-000050bd__entry__13">JP-001 (22822),
-jp.msn.com (25626)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (JP)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Korea</td>
-<td class="entry" headers="ID-000050bd__entry__13">kr.msn.com (32267),
-KR-001 (32269)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (KR)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Malaysia</td>
-<td class="entry" headers="ID-000050bd__entry__13">malaysia.msn.com
-(25640), MY-001 (26210)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (MY)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">New Zealand</td>
-<td class="entry" headers="ID-000050bd__entry__13">NZ-001 (20378),
-nz.msn.com (25631)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Philippines</td>
-<td class="entry" headers="ID-000050bd__entry__13">PH-001 (25110),
-ph.msn.com (25641)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (PH)</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Singapore</td>
-<td class="entry" headers="ID-000050bd__entry__13">xin.msn.com (25642),
-SG-001 (29208)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (SG)</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Taiwan</td>
-<td class="entry" headers="ID-000050bd__entry__13">tw.msn.com (25536),
-TW-001 (25537)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-000050bd__entry__11"></td>
-<td class="entry" headers="ID-000050bd__entry__12">Thailand</td>
-<td class="entry" headers="ID-000050bd__entry__13">th.msn.com (25643),
-TH-001 (26050)</td>
-<td class="entry" headers="ID-000050bd__entry__14">Content Category
-&amp; Domain (MSN.COM) + Country Geo (TH)</td>
-</tr>
-</tbody>
-</table>
-
-Related Topic
-
-- <a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
-  class="xref">Buying Microsoft Windows 3rd Party AppNetwork Inventory</a>
+| Americas | Argentina and Uruguay | AR-001 (25668), ar.msn.com (25669) | Content Category |
+|---|---|---|---|
+| APAC | Australia | AU-001 (20276) | Content Category |
+| EMEA | Austria | AT-001 (24941), at.msn.com (25636) | Content Category & Domain (MSN.COM) + Country Geo (AT) |
+|  | Belgium | BE-001-Dutch (20348), be.msn.com (25633), BE-004-French (20350) | Content Category |
+|  | Brazil | BR-001 (20353), br.msn.com (25624) | Content Category |
+|  | Canada | CA-001 (20356), ca.msn.com (25608) | Content Category |
+|  | Chile | cl-001 (25697), cl.msn.com (25698) | Content Category |
+|  | China * Launch Q2 | CN-001 (27305), cn.msn.com (27306) | Content Category & Domain (MSN.COM) + Country Geo (CN) |
+|  | Columbia | CO-001 (25699), co.msn.com (25700) | Content Category |
+|  | Denmark | DK-001 (20362) | Content Category & Domain (MSN.COM) + Country Geo (DK) |
+|  | Finland | fi.msn.com (26154), FI-001 (26155) | Content Category & Domain (MSN.COM) + Country Geo (FI) |
+|  | France | FR-001 (20368), fr.msn.com (25629) | Content Category & Domain (MSN.COM) + Country Geo (FR) |
+|  | Germany | DE-001 (20359), de.msn.com (25628) | Content Category |
+|  | Hong Kong | HK-001 (25532), hk.msn.com (25533) | Content Category |
+|  | India | in.msn.com (25639), IN-001 (27044) | Content Category & Domain (MSN.COM) + Country Geo (IN) |
+|  | Indonesia | ID-001 (28093), ID.msn.com (28094) | Content Category & Domain (MSN.COM) + Country Geo (ID) |
+|  | Ireland | IE-001 (27607), ie.msn.com (27608) | Content Category |
+|  | Italy | IT-001 (20371), it.msn.com (25627) | Content Category |
+|  | Japan | JP-001 (22822), jp.msn.com (25626) | Content Category & Domain (MSN.COM) + Country Geo (JP) |
+|  | Korea | kr.msn.com (32267), KR-001 (32269) | Content Category & Domain (MSN.COM) + Country Geo (KR) |
+|  | Malaysia | malaysia.msn.com (25640), MY-001 (26210) | Content Category & Domain (MSN.COM) + Country Geo (MY) |
+|  | Mexico | mx-001 (25534), prodigy.msn.com (25535) | Content Category |
+|  | Netherlands | NL-001 (20373), nl.msn.com (25786) | Content Category & Domain (MSN.COM) + Country Geo (NL) |
+|  | New Zealand | NZ-001 (20378), nz.msn.com (25631) | Content Category |
+|  | Norway | NO-001 (20375) | Content Category & Domain (MSN.COM) + Country Geo (NO) |
+|  | Peru | PE-001 (25695), pe.msn.com (25696) | Content Category |
+|  | Philippines | PH-001 (25110), ph.msn.com (25641) | Content Category & Domain (MSN.COM) + Country Geo (PH) |
+|  | Portugal | PT-001 (25538), pt.msn.com (25539) | Content Category |
+|  | Russia | RU-001 (26239), ru.msn.com (26272) | Content Category |
+|  | Singapore | xin.msn.com (25642), SG-001 (29208) | Content Category & Domain (MSN.COM) + Country Geo (SG) |
+|  | Spain | ES-001 (20365), es.msn.com (27206) | Content Category & Domain (MSN.COM) + Country Geo (ES) |
+|  | Sweden | SE-001 (20380), se.msn.com (26245) | Content Category & Domain (MSN.COM) + Country Geo (SE) |
+|  | Switzerland | ch.msn.com (25637), CH-001 (24939), | Content Category & Domain (MSN.COM) + Country Geo (CH) |
+|  | Taiwan | tw.msn.com (25536), TW-001 (25537) | Content Category |
+|  | Thailand | th.msn.com (25643), TH-001 (26050) | Content Category & Domain (MSN.COM) + Country Geo (TH) |
+|  | Turkey | TR-001 (25438), tr.msn.com (25439) | Content Category |
+|  | UK | UK-001 (20383), uk.msn.com (25630) | Content Category & Domain (MSN.COM) + Country Geo (UK) |
+|  | US | US-001 (20395), us.msn.com (25625) | Content Category |
 
 
+## Related topic
 
-
+[Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
