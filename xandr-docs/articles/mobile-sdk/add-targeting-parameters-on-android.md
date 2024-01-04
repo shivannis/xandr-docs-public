@@ -7,6 +7,8 @@ ms.date : 10/28/2023
 
 # Add targeting parameters on Android
 
+This article explains about how to target user location, age and gender for delivery of Ads.
+
 ## User location
 
 In this example, we get the user's location from Android and pass it along in the ad call:
