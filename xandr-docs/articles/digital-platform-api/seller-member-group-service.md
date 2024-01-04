@@ -65,7 +65,7 @@ $ curl -b cookies 'https://api.appnexus.com/seller-member-group'
         ],
         "dbg_info": {
             "instance": "56.bm-hbapi.prod.lax1",
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "user::reads": 3,
             "user::read_limit": 10000,
@@ -85,8 +85,8 @@ $ curl -b cookies 'https://api.appnexus.com/seller-member-group'
             "time": 702.83794403076,
             "start_microtime": 1457486117.8624,
             "version": "1.16.479",
-            "slave_miss": "no_slaves_found",
-            "slave_lag": 7,
+            "s1ave_miss": "no_s1aves_found",
+            "s1ave_lag": 7,
             "member_last_modified_age": 1457486117,
             "output_term": "seller-member-groups"
         }

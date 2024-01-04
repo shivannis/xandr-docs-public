@@ -36,7 +36,7 @@ The seller-creative-review object includes the following JSON fields:
 | `creative_id` | integer | If (`creative_id`, `member_id`) record is deleted, it can be recreated using the `POST` method. There can be multiple entries for one `creative_id` from different members. |
 | `deleted` | boolean | **Read-only**. An indicator that refers if the object was deleted or not. |
 | `id` | integer | **Read-only**. The ID of the object. |
-| `language_id` | integer | The language ID of the creative. For more information, see [Language Service](#language-service.md).<br>It is recommended to use the existing values for this field, instead of setting the values to default (i.e. `brand_id=1` or `language_id=0`).<br><br>**Required on**: `PUT` and `POST` |
+| `language_id` | integer | The language ID of the creative. For more information, see [Language Service](./language-service.md).<br>It is recommended to use the existing values for this field, instead of setting the values to default (i.e. `brand_id=1` or `language_id=0`).<br><br>**Required on**: `PUT` and `POST` |
 | `last_modified` | string | **Read-only**. The date and time at which the object was last modified. |
 | `member_id` | integer | The ID of the member that is creating or modifying the object.<br><br>**Required on**: `PUT` and `POST` |
 | `deal_audit_statuses` | array of objects | Deal specific audit statuses indicate a creative’s approval/rejection status for a specific deal. |

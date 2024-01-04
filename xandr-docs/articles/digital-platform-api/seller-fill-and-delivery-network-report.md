@@ -72,7 +72,7 @@ The `time_granularity` of the data is `hourly`. For instructions on retrieving a
 | `site_id` | int | Yes | `223936` | The ID of the site containing this placement. |
 | `site_name` | string | No | `"Total-Web Email"` | The name of the site where the impression occurred. |
 | `site` | string | No | `"Total-Web Email (223936)"` | A full description of the sitewhere the impression occurred, including the `site_name` and `site_id`. |
-| `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](#deal-service.md) and [Deal Buyer Access Service](#deal-buyer-access-service.md). |
+| `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | The name of the deal followed by the ID (Xandr format). |
 | `mobile_application_id` | string | No | `'343200656' (iOS) or 'com.rovio.angrybirds' (Android)` | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |

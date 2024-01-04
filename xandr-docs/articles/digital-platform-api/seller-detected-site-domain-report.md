@@ -50,12 +50,12 @@ Data retention period for this report is 7 days.
 | `site` | string | No | `"Total-Web Email (223936)`" | The name and ID of the site. |
 | `site_domain` | string | Yes | `"gwar-rules-forever.org"` | The domain where the impression occurred.<br><br>There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br><br>**Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across IFrames](#passing-domains-across-iframes) below. |
 | `auction_site_domain` | string | Yes | `"gwar-rules-forever.org"` | The domain of the auctioned site. |
-| `site_domain_audit_status` | string | No | `"Audited"` | Specifies the audit status of the auctioned site domain. Permissible values are <br> - `Audited`<br> - `Blacklisted`<br> - `AdServer`<br> - `Unauditable`<br> - `Pending`<br> - `Unaudited`|
+| `site_domain_audit_status` | string | No | `"Audited"` | Specifies the audit status of the auctioned site domain. Permissible values are <br> - `Audited`<br> - `Blocklisted`<br> - `AdServer`<br> - `Unauditable`<br> - `Pending`<br> - `Unaudited`|
 | `site_domain_audit_status_id` | int | Yes | `8` | The identifier for the audit status of the auctioned site domain. |
 | `detected_site_domain` | string | Yes | `"cnn.com"` | The actual domains that are being sold and where the impression actually occurred. |
-| `detected_site_domain_audit_status` | string | No | `"AdServer"` | Specifies the audit status of the detected site domain. Permissible values are <br> - `Audited`<br> - `Blacklisted`<br> - `AdServer`<br> - `Unauditable`<br> - `Pending`<br> - `Unaudited`|
+| `detected_site_domain_audit_status` | string | No | `"AdServer"` | Specifies the audit status of the detected site domain. Permissible values are <br> - `Audited`<br> - `Blocklisted`<br> - `AdServer`<br> - `Unauditable`<br> - `Pending`<br> - `Unaudited`|
 | `detected_site_domain_audit_status_id` | int | Yes | `4` | The identifier for the audit status of the detected site domain. |
-| `is_blacklisted` | boolean | Yes | `No` | Specifies if the impression is in a block-list. |
+| `is_blocklisted` | boolean | Yes | `No` | Specifies if the impression is in a block-list. |
 | `detected_top_domain` | boolean | Yes | Yes | Specifies if detected site domain is the highest level within the hierarchy of a domain name. |
 | `placement_id` | int | Yes | `737099` | The ID of the placement where the impression occurred.<br><br>**Note**: `placement_id` of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see the [Impression Tracker Service](./impression-tracker-service.md). |
 | `placement_name` | string | No | `"Webmail.com ROS 728x90"` | The name of the placement where the impression occurred. |
@@ -140,7 +140,7 @@ $ cat report-request.json
       "detected_top_domain",
       "auction_site_domain",
       "placement_id",
-      "is_blacklisted"
+      "is_blocklisted"
     ],
     "filters": [
       "seller_member_id",

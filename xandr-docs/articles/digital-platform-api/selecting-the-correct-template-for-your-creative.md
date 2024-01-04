@@ -16,7 +16,7 @@ Please use the guide below in determining which template to use for your creativ
 >
 > For more information about creative templates (and template IDs), see the [Creative Template Service](./creative-template-service.md).
 
-## ID:1
+## ID: 1
 
 This template is used if your creative is a single URL that points to a piece of html code.
 
@@ -29,7 +29,7 @@ You will need to pass the URL in the `media_url` field and set an `id` of `1` in
             
 ```
 
-## Example
+### ID: 1 Example
 
 **Creative**
 
@@ -65,7 +65,7 @@ You will need to pass the URL in the `media_url` field and set an `id` of `2` in
       
 ```
 
-## Example
+## ID: 2 Example
 
 **Creative**
 
@@ -101,7 +101,7 @@ You will need to pass the Javascript code in the `content` field and set an `id`
       
 ```
 
-## Example
+## ID: 5 Example
 
 **Creative**
 
@@ -137,7 +137,7 @@ You will need to pass the html code in the `content` field and set an `id` of `6
       
 ```
 
-## Example
+## id: 6 Example
 
 **Creative**
 

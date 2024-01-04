@@ -151,7 +151,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
     },
     "dbg_info": {
       "instance": "17.bm-hbapi.prod.nym1",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "warnings": [
       ],
@@ -197,7 +197,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
       "warnings": [
       ],
       "db": "master",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "instance": "28.bm-hbapi.prod.nym1"
     },
     "sync-report": {
@@ -400,7 +400,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
       "warnings": [
       ],
       "db": "master",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "instance": "28.bm-hbapi.prod.nym1"
     },
     "sync-report": {
@@ -530,7 +530,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
       "warnings": [
       ],
       "db": "master",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "instance": "18.bm-hbapi.prod.nym1"
     },
     "sync-report": {
@@ -590,7 +590,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
       "warnings": [
       ],
       "db": "master",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "instance": "19.bm-hbapi.prod.nym1"
     },
     "sync-report": {
@@ -735,7 +735,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
       "warnings": [
       ],
       "db": "master",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "instance": "29.bm-hbapi.prod.nym1"
     },
     "sync-report": {

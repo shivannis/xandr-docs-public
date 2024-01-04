@@ -71,8 +71,8 @@ Data retention period for this report is 60 days.
 | `mobile_application` | string | No | `Angry Birds (com.rovio.angrybirds)` | Deprecated (as of October 17, 2016). |
 | `fold_position_id` | int | Yes | `0` | The ID of the fold position, i.e. where on the page the placement is located.<br>Possible values for impressions:<br> - `0` = "unknown"<br> - `1` = "above"<br> - `2` = "below" |
 | `fold_position` | string | Yes | `"Unknown"` | The fold position, i.e. where on the page the placement is located. For allowed values, see `fold_position_id`. |
-| `age_bucket` | string | Yes | `"25-34"` | The bucket for the age of the user. See [Age Buckets](#age-buckets) below for possible values.<br><br>**Note**: For impressions older than 100 days, the `age_bucket` will be `"unknown"`. |
-| `age_bucket_id` | string | No | `"3"` | The ID of the age bucket. See [Age Buckets](#age-buckets) below for possible values.<br><br>**Note**: For impressions older than than 100 days, the `age_bucket_id` will be `0`. |
+| `age_bucket` | string | Yes | `"25-34"` | The bucket for the age of the user. See [Age Buckets](#age-bucket) below for possible values.<br><br>**Note**: For impressions older than 100 days, the `age_bucket` will be `"unknown"`. |
+| `age_bucket_id` | string | No | `"3"` | The ID of the age bucket. See [Age Buckets](#age-bucket) below for possible values.<br><br>**Note**: For impressions older than than 100 days, the `age_bucket_id` will be `0`. |
 | `gender` | string | Yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note**: For impressions older than 100 days, gender will be `"u"`. |
 | `is_remarketing` | int | Yes | `0`, `1` | If `1`, the campaign is remarketing. If `0`, the campaign is not remarketing.<br><br>**Note**: For impressions older than 100 days, `is_remarketing` will be `-1`. |
 | `imps_filtered_reason_id` | int | Yes | `"3"` | The numeric ID associated with the reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. See imps_filtered_reason below for more information. |
