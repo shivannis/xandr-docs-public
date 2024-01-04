@@ -3,7 +3,7 @@
   topicHref: /xandr/articles/index
   items:
     - name: Bidder
-      tocHref: /xandr/articles/bidders
+      tocHref: /xandr/articles/bidders/
       topicHref: /xandr/articles/bidders/index
       items:  
       - name: Getting Started
@@ -12,7 +12,7 @@
       - name: Bidder Platform UI
         tocHref: /xandr/articles/bidders/
         topicHref: /xandr/articles/bidders/bidder-platform-user-interface
-    - name: Microsoft Invest Product Documentation
+    - name: Microsoft Invest
       tocHref: /xandr/articles/invest/
       topicHref: /xandr/articles/invest/index
       items:  
