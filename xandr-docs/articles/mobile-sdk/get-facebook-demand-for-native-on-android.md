@@ -7,16 +7,7 @@ ms.date : 10/28/2023
 
 # Get Facebook demand for native on Android
 
-This document describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK.
-
-The following steps are required for retrieving and displaying native ads for Facebook's Audience Network SDK:
-
-1. [Ensure that the proper SDKs are installed.](#ensure-that-the-proper-sdks-are-installed) 
-1. Initialize Facebook's Audience Network SDK.
-1. Create a native banner ad layout.
-1. Create a native ad request and load the ad.
-1. Inflate and register the native ad.
-1. Unregister the views.
+This article describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK in following steps:
 
 ## Ensure that the proper SDKs are installed
 
