@@ -9,9 +9,9 @@ ms.date : 10/28/2023
 
 This article describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK in following steps:
 
-## Ensure that the proper SDKs are installed
+## Ensure proper SDKs installed
 
-The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
+The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
 go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
 
 ``` 
@@ -39,7 +39,7 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 
 ## Create a native banner ad layout
 
-In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Xandr SDK to render a native `Ad Reporting Flow` on top of the ad.
+In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
 
 ``` 
 <?xml version="1.0" encoding="utf-8"?>
