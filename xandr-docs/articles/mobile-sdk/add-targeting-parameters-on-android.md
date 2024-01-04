@@ -11,7 +11,7 @@ This article explains about how to target user location, age and gender for deli
 
 ## User location
 
-In this example, we get the user's location from Android and pass it along in the ad call:
+To get the user's location from Android and pass it along in the ad call, implement the following code sample:
 
 ```
 import android.location.LocationManager;
@@ -45,7 +45,7 @@ com.appnexus.opensdk.utils.SDKSettings.setLocationEnabled(false);
 
 ## Age and gender
 
-Advertisers may want to target ads by age and gender. In this example, we add the age and gender to an `AdView `.
+Advertisers may want to target ads by age and gender. You can add the age and gender to an `AdView` implementing the following code:
 
 ```
 // Set the user's age.  This can be a number, a year, or a
