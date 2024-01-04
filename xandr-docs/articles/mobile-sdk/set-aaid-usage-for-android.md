@@ -23,6 +23,7 @@ as **false** for including the AAID field in the AdRequests.
 | `isAAIDUsageDisabled` | boolean | read | To get current status of disableAAIDUsage. |
 | `disableAAIDUsage` | boolean | write | To enable/disable the disableAAIDUsage. Default value is **false**. |
 
+## Code sample
 ```
    /**
     *  An AppNexus disableAAIDUsage is a boolean value, which exclude the AAID field in ad request.
