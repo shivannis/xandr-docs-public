@@ -107,7 +107,7 @@ $ curl -b cookies -c cookies -X POST -d @sld-use-subdomain 'https://api.appnexus
     },
     "dbg_info": {
       "instance": "10.hbapi.sand-08.nym2",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -116,7 +116,7 @@ $ curl -b cookies -c cookies -X POST -d @sld-use-subdomain 'https://api.appnexus
       "time": 2493.2899475098,
       "start_microtime": 1421273101.3622,
       "version": "1.15.327",
-      "slave_lag": 0,
+      "s1ave_lag": 0,
       "member_last_modified_age": 1421273101,
       "output_term": "sld-use-subdomain"
     }
@@ -154,7 +154,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.appnexus.co
     },
     "dbg_info": {
       "instance": "10.hbapi.sand-08.nym2",
-      "slave_hit": false,
+      "s1ave_hit": false,
       "db": "master",
       "awesomesauce_cache_used": false,
       "count_cache_used": false,
@@ -163,7 +163,7 @@ $ curl -b cookies -c cookies -X PUT -d @template_update 'https://api.appnexus.co
       "time": 2493.2899475098,
       "start_microtime": 1421273101.3622,
       "version": "1.15.327",
-      "slave_lag": 0,
+      "s1ave_lag": 0,
       "member_last_modified_age": 1421273101,
       "output_term": "sld-use-subdomain"
     }

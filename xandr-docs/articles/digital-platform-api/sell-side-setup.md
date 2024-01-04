@@ -948,11 +948,11 @@ To create an ad quality rule, do the following:
 1. Make a `POST` request to the `/ad-quality-rule` endpoint with this JSON file in the request body. You’ll need to indicate the `publisher_id` in the query string of the request.
 
    > [!NOTE]
-> If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use this.
->
->     ```
->      curl -b cookies -X POST -d @AdQualityRule.json 'https://api.appnexus.com/ad-quality-rule?publisher_id=PUBLISHER_ID'
->     ```
+   > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use this.
+   >
+   > ```
+   > curl -b cookies -X POST -d @AdQualityRule.json 'https://api.appnexus.com/ad-quality-rule?publisher_id=PUBLISHER_ID'
+   > ```
 
 1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the fields of the ad quality rule you created. Copy the ad quality rule ID so you'll have it when you update the base ad quality rule ID of the publisher in next step.
 
