@@ -1,8 +1,8 @@
-- name: Xandr Platform Documentation
+- name: Xandr Platform
   #tocHref: /xandr-docs/
   topicHref: /xandr/articles/index
   items:
-    - name: Bidder Reference Documentation
+    - name: Bidder
       tocHref: /xandr/articles/bidders
       topicHref: /xandr/articles/bidders/index
       items:  
