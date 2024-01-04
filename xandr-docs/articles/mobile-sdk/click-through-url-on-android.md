@@ -32,7 +32,7 @@ In the case of a native ad request:
 ## Mobile SDK structure
 
 - For Banner, Interstitial and Video: `AdListener` defines the method `onAdClicked(adView, clickUrl)`.
-- For Native, `AdListener` defines the method `onAdWasClicked(clickUrl, fallbackURL)`.
+- For Native: `AdListener` defines the method `onAdWasClicked(clickUrl, fallbackURL)`.
 
 ## Examples
 
