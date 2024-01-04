@@ -15,7 +15,7 @@ Use the `BannerView.setAdAlignment(enum AdAlignment)` method to override the a
 bav.setAdAlignment(BOTTOM_CENTER);
 ```
 
-However. this works only in the cases where the banner ad view's frame is larger than the ad. The default alignment is `CENTER`. The ad can be aligned in one of the following ways:
+However, this works only in the cases where the banner ad view's frame is larger than the ad. The default alignment is `CENTER`. The ad can be aligned in one of the following ways:
 - center
 - top left
 - top center
