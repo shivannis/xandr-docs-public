@@ -27,7 +27,7 @@ When you develop an app for the Apps Marketplace, you build an umbrella app and 
 | `GET` | https://api.appnexus.com/plugin | View all apps.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see apps to which they are associated).<br><br>**Note**: To view all apps that a member has installed, execute a `GET` call against the **Member** service. Locate the `id` field under **plugins**. All plugins that this member has installed (regardless of whether they are associated) are listed by plugin number. |
 | `GET` | https://api.appnexus.com/plugin?id=PLUGIN_ID | View a specific app.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see app if they are associated to it). |
 | `GET` | https://api.appnexus.com/plugin?developer_id=DEVELOPER_ID | View all apps created by a specific subscriber, developer, or non-member developer.<br> - App Subscribers.<br> - App Providers.<br> - Non-member Developers.<br><br>**Note**: If you cannot see apps that you have created, contact your Xandr representative. |
-| DELETE | https://api.appnexus.com/plugin | Delete an app.<br> - App Providers |
+| `DELETE` | https://api.appnexus.com/plugin | Delete an app.<br> - App Providers |
 
 ## JSON fields
 
@@ -49,12 +49,12 @@ When you develop an app for the Apps Marketplace, you build an umbrella app and 
 | `id` | int | The ID of the app.<br><br>**Default**: Auto-generated number<br>**Required On**: `PUT`/`DELETE`, in query string |
 | `is_available` | boolean | If `true`, the app is exposed to members in the Apps Marketplace by default. You can use the `member_availabilities` field to override this setting for specific members. For example, if you wanted to expose the app only to specific clients, you would set `is_available` to `false` and then use `member_availabilities` to expose the app to those specific clients. For more details, see [Member Availabilities](#member-availabilities) below.<br><br>**Default**: `false` |
 | `log_level_data_fee` | int | **Read-only**. The dollar amount charged to the member consuming log-level data.<br><br>**Default**: `null`<br>**Required On**: This field can only be updated through the [App Contract Service](./app-contract-service.md). |
-| `member_availabilities` | array of objects | This setting indicates if this app is available to certain members or restricted from certain members. This value will override the setting is_available. For more information, see [Member Availabilities](#member-availabilities) below. |
+| `member_availabilities` | array of objects | This setting indicates if this app is available to certain members or restricted from certain members. This value will override the setting `is_available`. For more information, see [Member Availabilities](#member-availabilities) below. |
 | `moreinfo_url` | string | The URL of the app used for demo purposes.<br><br>**Default**: `null` |
 | `name` | string | The name of the app that is displayed on the main **Apps Marketplace** page and in the **More Info** dialog.<br><br>**Required On**: `POST` |
 | `permissions` | array of objects | The operations that the app can perform on behalf of the currently logged in user. For more information, see [Permissions](#permissions) below.<br><br>**Default**: `null` |
 | `plugin_category_id` | int | The identification number of the category to which this app will be assigned. Note that if you select a number that is a sub-level category, this app will automatically be assigned to both this category and the associate parent category. If you enter a parent category, however, the app belongs only to that one and not to any sub-level category.<br><br>**Default**: `null` |
-| `plugin-instances` | array of objects | **Read-only**. The specific instances associated to the app. For more information about app instances, see the [Plugin Instance Service](./plugin-instance-service.md).<br<br>**Default**: `null` |
+| `plugin-instances` | array of objects | **Read-only**. The specific instances associated to the app. For more information about app instances, see the [Plugin Instance Service](./plugin-instance-service.md).<br><br>**Default**: `null` |
 | `public_key` | string | The public key of the public/private key pair for authenticating the app. |
 | `recommended` | boolean | **Read-only**. Indicates whether the app is listed in the **Recommended Apps** row of the **Apps Marketplace** screen.<br><br>**Default**: `false` |
 | `summary` | string | The description of the app that is displayed on the main **Apps Marketplace** page.<br><br>**Default**: `null` |

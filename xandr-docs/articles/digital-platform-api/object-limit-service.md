@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Object Limit Service
-description: Xandr has limits on various categories of content on its platform, including line items, campaigns, creatives, and domains.
+description: Learn about the object limit service. Limits are set for various categories of content on the platform, including line items, campaigns, creatives, and domains.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -27,7 +27,7 @@ The Object Limit Service allows you to view these limits and proactively monitor
 | `count_total` | int | The current total number of active and inactive objects. For creatives, this count does not include expired objects. |
 | `limit` | int | The maximum number of objects that the member is allowed. For all object types except `"creative"`, both active and inactive objects are counted agains the limit. For creatives, only non-expired objects are counted against the limit. |
 | `mapping_limits` | object | This field is populated only for the `"profile"`, `"domain_list"`, and `"placement"` object types. It lists the limits for objects within each profile and domain list, for example, the maximum number of segment targets you can use in a single profile or the maximum number of domains you can use in a single domain list. For placements, it lists the maximum number of content categories that can be applied to a placement See [Mapping Limits](#mapping-limits) below for more details. |
-| `object_type` | enum | The type of object. Possible values: <br> - `"line_item"` <br> - `"campaign"` <br> - `"profile"` <br> - `"domain_list"` <br> - `"creative"` <br> - `"publisher"` <br> - `"site"` <br> - `"placement"` <br> - `"package"` <br> - `"deal"` <br> -`"mediated_network"` <br> -`"mediated bid"`.<br><br>**Note**:<br>For `"profile"` and `"domain_list"`, the `limit`, `count_active`, `count_inactive`, `count_total` fields will show a value of `null`, as Xandr does not limit the number of profiles and domain lists that you can have. Xandr does limit the number of objects within each profile or domain list, however. These limits will be shown in the `mapping_limits` field. |
+| `object_type` | enum | The type of object. Possible values: <br> - `"line_item"` <br> - `"campaign"` <br> - `"profile"` <br> - `"domain_list"` <br> - `"creative"` <br> - `"publisher"` <br> - `"site"` <br> - `"placement"` <br> - `"package"` <br> - `"deal"` <br> - `"mediated_network"` <br> - `"mediated bid"`.<br><br>**Note**:<br>For `"profile"` and `"domain_list"`, the `limit`, `count_active`, `count_inactive`, `count_total` fields will show a value of `null`, as Xandr does not limit the number of profiles and domain lists that you can have. Xandr does limit the number of objects within each profile or domain list, however. These limits will be shown in the `mapping_limits` field. |
 
 ## Mapping limits
 

@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Pixel Template Service
+# Digital Platform API - Pixel template service
 
 This read-only service allows you to view information about AppNexus-approved creative pixels from trusted, commonly-used providers, such as Evidon and Brilig. Most AppNexus-approved creative pixels can be added to creatives without causing re-audit.
 
@@ -13,13 +13,29 @@ Here's how it works:
 
 1. You use the Pixel Template Service to find the AppNexus-approved pixel that you want to add to your creative.
 1. You note the ID of the pixel as well as its required parameters.
-1. You use the pixels array in [Creative Service](https://docs.xandr.com/csh?context) to add the pixel to your creative and define values for the required parameters.
+1. You use the pixels array in [Creative Service](./creative-service.md) to add the pixel to your creative and define values for the required parameters.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/pixel-template | View all AppNexus-approved creative pixels. |
+| `GET` | https://api.appnexus.com/pixel-template?id=PIXEL_TEMPLATE_ID | View a specific AppNexus-approved creative pixel. |
+| `GET` | https://api.appnexus.com/pixel-template?id=1,2,3 | View multiple creative pixels by ID using a comma-separated list. |
 
 ## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the AppNexus-approved creative pixel. |
+| `name` | string | The name of the AppNexus-approved creative pixel. |
+| `format` | enum | The format of the AppNexus-approved creative pixel. Possible values: <br> - `"raw-js"`<br> - `"url-html"` <br> - `"url-js"` <br> - `"url-image"` |
+| `content` | string | The HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
+| `secure_content` | string | The secure HTML or JavaScript content of the creative pixel. This field is included if format is `"raw-js"`. |
+| `url` | string | The URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"` or `"url-image"`. |
+| `secure_url` | string | The secure URL of the html, JavaScript, or image creative pixel. This field is included if format is `"url-html"`, `"url-js"` or `"url-image"`. |
+| `num_required_params` | int | The number of parameters that must be defined when adding the pixel to a creative. |
+| `require_reaudit` | boolean | If `true`, adding the pixel to a creative causes the creative to be resubmitted for audit. |
 
 ## Examples
 

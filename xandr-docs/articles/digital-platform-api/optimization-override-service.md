@@ -36,7 +36,7 @@ Optimization override can be useful if:
 | `GET` | https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID | Retrieve custom Discovery settings for a single line item. <br><br>**Note**: Information is returned only when the Discovery settings have been customized. If the Discovery settings are the default settings, no details are returned. |
 | `PUT` | https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID | Update custom Discovery settings. |
 
-## JSON Fields
+## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|

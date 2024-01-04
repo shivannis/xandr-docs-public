@@ -44,11 +44,11 @@ Common fees you might need to budget for are:
 | `id` | int | Unique identifier for the fee.<br><br>**Required On**: `PUT` and `DELETE`<br>**Default**: auto-generated number. |
 | `name` | varchar(255) | The fee name.<br><br>**Required On**: `POST` |
 | `partner_fee_payment_type_id` | int | Determines the payment type for this fee:<br> - `"1"` for cpm. If cpm is selected, you must specify the currency with currency.<br> - `"2"` for revenue sharing.<br><br>**Required On**: `POST` |
-| `partner_fee_basis_id` | int | Determines the basis from which a percentage fee is derived.<br> - `"1"` for net media cost.<br> - `"2"` for gross media cost (media cost including BASC).<br> - `"3"` for net media cost (media cost without BASC) + data costs.<br> - `"4"` for gross media cost (media cost including BASC) + data costs.<br> - `"5"` for revenue.<br>CPM fees can only be set to `"5"` (revenue).<br><br>**Required On**: `POST` |
+| `partner_fee_basis_id` | int | Determines the basis from which a percentage fee is derived.<br> - `"1"` for net media cost.<br> - `"2"` for gross media cost (media cost including [BASC](../invest/buyer-auction-service-charge-mechanics.md).<br> - `"3"` for net media cost (media cost without BASC) + data costs.<br> - `"4"` for gross media cost (media cost including BASC) + data costs.<br> - `"5"` for revenue.<br>CPM fees can only be set to `"5"` (revenue).<br><br>**Required On**: `POST` |
 | `partner_fee_type_id` | int | Defines the type of fee. Supported values are:<br> - `"1"` for ad serving<br> - `"2"` for algorithm<br> - `"3"` for data<br> - `"4"` for reporting<br> - `"5"` for service<br> - `"6"` for technology<br> - `"7"` for viewability<br> - `"8"` for other<br><br>**Required On**: `POST` |
 | `partner_fee_vendor_id` | int | The ID of vendor charging the fee. Supported values are:<br> - `"1"` for Adloox<br> - `"2"` for ComScore<br> - `"3"` for DoubleClick<br> - `"4"` for DoubleVerify<br> - `"5"` for Evidon<br> - `"6"` for Flashtalking<br> - `"7"` for Ghostery<br> - `"8"` for GroovinAds<br> - `"9"` for Integral Ad Science (IAS)<br> - `"10"` for MOAT<br> - `"11"` for Ninth Decimal<br> - `"12"` for Sizmek<br> - `"13"` for TrustArc<br> - `"14"` for Custom Vendor 1<br> - `"15"` for Custom Vendor 2<br> - `"16"` for Custom Vendor 3<br> - `"17"` for Custom Vendor 4<br> - `"18"` for Custom Vendor 5<br>Custom vendors will appear as Custom Vendor 1, Custom Vendor 2, etc. in reporting. We recommend that you include the partner name in the fee's name field for easy identification.<br><br>**Required On**: `POST` |
-| `required` | bool | When `true`, this fee will be required for and applied to all new line items for eligible advertisers. It will not be automatically applied retroactively to existing line items.<br><br>**Note**: You cannot remove a fee from a line item if required is `true`. You must first set required to `false` and then remove the fee from the line item.<br><br>**Default**: `false` |
-| `value` | decimal(15,5) | The fee being charged.<br> - If the payment type is cpm, this value will be in the defined currency.<br> - If the payment type is revenue sharing, the value should be a fraction between `0` and `1`. For example, a 10% revshare fee is specified by 0.1.<br><br>**Required On**: `POST` |
+| `required` | bool | When `true`, this fee will be required for and applied to all new line items for eligible advertisers. It will not be automatically applied retroactively to existing line items.<br><br>**Note**: You cannot remove a fee from a line item if `required` is `true`. You must first set `required` to `false` and then remove the fee from the line item.<br><br>**Default**: `false` |
+| `value` | decimal(15,5) | The fee being charged.<br> - If the payment type is `cpm`, this value will be in the defined `currency`.<br> - If the payment type is revenue sharing, the value should be a fraction between `0` and `1`. For example, a 10% revshare fee is specified by 0.1.<br><br>**Required On**: `POST` |
 
 ## Examples
 
@@ -293,7 +293,7 @@ $ curl -b cookie -x GET "https://api.appnexus.com/line-item?id=1234"
 ```
 
 > [!NOTE]
-> You cannot remove a fee from a line item if `required` is true. You must first set `required` to false and then remove the fee from the line item.
+> You cannot remove a fee from a line item if `required` is `true`. You must first set `required` to `false` and then remove the fee from the line item.
 
 ### Remove a fee from an advertiser
 

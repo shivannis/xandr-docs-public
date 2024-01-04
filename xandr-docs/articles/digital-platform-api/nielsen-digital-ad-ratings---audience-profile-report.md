@@ -29,7 +29,8 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 Data retention period for this report is 365 days. Data in this report has a daily time granularity and lifetime retention. This report also displays data under the U.S. Eastern time zone.
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
@@ -132,7 +133,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02
 
 ### `GET` the report data from the report download service
 
-To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the "format" that you specified in your initial `POST`.
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
 > [!NOTE]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.

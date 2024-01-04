@@ -28,7 +28,7 @@ ms.custom: digital-platform-api
 | `name` | string | The name of the operating system version. |
 | `os_family_id` | int | The ID of the operating system family to which the operating system version belongs. You can use the [Operating System Family Service](./operating-system-family-service.md) to get information about operating system families. |
 | `os_family_name` | string | The name of the operating system family to which the operating system version belongs, e.g., `"Android"`, `"Apple iOS"`, `"Apple Mac/OSX"`, etc. |
-| `platform_type` | enum | The type of platform on which the operating system version runs. Possible values: <br> - `"web"` <br> - `"mobile"` <br> - `"both"`. |
+| `platform_type` | enum | The type of platform on which the operating system version runs. Possible values: <br> - `"web"` <br> - `"mobile"` <br> - `"both"` |
 
 ## Examples
 
