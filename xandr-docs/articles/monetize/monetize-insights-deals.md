@@ -19,7 +19,7 @@ significant bid rejections by a deal. The
 - shows the inventory the blocks are occurring on, and the overall
   rejection history.
 
-## Bid rejections
+## Bid rejections in UI dashboard
 
 **What is it?**
 
