@@ -45,7 +45,7 @@ com.appnexus.opensdk.utils.SDKSettings.setLocationEnabled(false);
 
 ## Age and gender
 
-Advertisers may want to target ads by age and gender. You can add the age and gender to an `AdView` implementing the following code:
+You may want to target ads by age and gender. To do that, add the age and gender to an `AdView` implementing the following code:
 
 ```
 // Set the user's age.  This can be a number, a year, or a
