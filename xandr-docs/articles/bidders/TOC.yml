@@ -201,7 +201,7 @@
   - name: IAB Content Taxonomy Support
     href: iab-content-taxonomy-support.md
 - name: AppNexus Bidding Protocol
-    items:
+  items:
     - name: Overview
       href: appnexus-bidding-protocol.md
     - name: Bid Request
