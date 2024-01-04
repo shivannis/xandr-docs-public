@@ -1,7 +1,57 @@
-- name: Xandr Platform
+- name: Xandr Platform Documentation
   #tocHref: /xandr-docs/
   topicHref: /xandr/articles/index
   items:
-    - name: Bidder
+    - name: Bidder Documentation
       tocHref: /xandr/articles/bidders
       topicHref: /xandr/articles/bidders/index
+      items:  
+      - name: Getting Started
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/the-big-picture
+      - name: Bidder Platform UI
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/bidder-platform-user-interface
+      - name: Inventory Quality
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/inventory-quality
+      - name: Creative Standards and Auditing
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/creative-standards-and-auditing
+      - name: Microsoft Monetize Supply for External Demand Partners
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/xandr-monetize-supply-for-external-demand-partners
+      - name: Bidder Integration
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/integrate-a-bidder
+      - name: Bidding Protocol
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/bidding-protocol
+      - name: AppNexus Bidding Protocol
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/appnexus-bidding-protocol
+      - name: User ID Mapping
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/user-id-mapping
+      - name: Batch Server Side Segmentation
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/batch-server-side-segmentation
+      - name: Guaranteed Outcomes
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/guaranteed-outcomes
+      - name: Batch Server Side Segmentation
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/batch-server-side-segmentation
+      - name: Release Notes
+        tocHref: /xandr/articles/bidders/
+        topicHref: /xandr/articles/bidders/xandr-bidder-release-notes
+  - name: Microsoft Invest Product Documentation
+    tocHref: /xandr/articles/invest/
+    topicHref: /xandr/articles/invest/index
+    items:  
+    - name: Getting Started
+      tocHref: /xandr/articles/invest/
+      topicHref: /xandr/articles/invest/about-invest
+    - name: Working with Member Settings
+      tocHref: /xandr/articles/invest/
+      topicHref: /xandr/articles/invest/managing-notification-recipients
