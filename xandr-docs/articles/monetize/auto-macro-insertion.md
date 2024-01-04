@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Auto Macro Insertion
-description : Learn when and why Xandr inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags. 
+title: Microsoft Monetize - Auto Macro Insertion
+description: Learn when and why Xandr inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags. 
 ms.date: 10/28/2023
 ---
 

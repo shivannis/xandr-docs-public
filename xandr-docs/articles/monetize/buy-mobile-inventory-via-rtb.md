@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buy Mobile Inventory via RTB
-description : This page describes how to set up a campaign to run on third-party mobile inventory (also known as "RTB" inventory). 
+title: Microsoft Monetize - Buy Mobile Inventory via RTB
+description: This page describes how to set up a campaign to run on third-party mobile inventory (also known as "RTB" inventory). 
 ms.date: 10/28/2023
 ---
 

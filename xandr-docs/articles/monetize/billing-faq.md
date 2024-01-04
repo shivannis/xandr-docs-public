@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Billing and Settlement FAQ
-description : This page deals with FAQs on Billing and Settlement.
+title: Microsoft Monetize - Billing and Settlement FAQ
+description: This page deals with FAQs on Billing and Settlement.
 ms.date: 10/28/2023
 ---
 

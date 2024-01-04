@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Untargeted Segment Performance Report
-description : Learn how Buyer Untargeted Segment Performance Report is useful to Buyers.
+title: Microsoft Monetize - Buyer Untargeted Segment Performance Report
+description: Learn how Buyer Untargeted Segment Performance Report is useful to Buyers.
 ms.date: 10/28/2023
 ---
 

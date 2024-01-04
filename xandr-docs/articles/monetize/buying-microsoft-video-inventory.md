@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Microsoft Video Inventory
-description : Learn advantages of buying video on Microsoft in this page. 
+title: Microsoft Monetize - Buying Microsoft Video Inventory
+description: Learn advantages of buying video on Microsoft in this page. 
 ms.date: 10/28/2023
 ---
 

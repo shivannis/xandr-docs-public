@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Audience Analytics
-description : Learn to analyze Audience in this page. 
+title: Microsoft Monetize - Audience Analytics
+description: Learn to analyze Audience in this page. 
 ms.date: 10/28/2023
 ---
 

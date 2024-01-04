@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Microsoft Windows 3rd Party AppNetwork Inventory
-description : Learn how  Windows AppNetwork and Windows Phone AppNetwork allow brands to access millions of engaged users through hundreds of thousands of 3rd party apps. 
+title: Microsoft Monetize - Buying Microsoft Windows 3rd Party AppNetwork Inventory
+description: Learn how  Windows AppNetwork and Windows Phone AppNetwork allow brands to access millions of engaged users through hundreds of thousands of 3rd party apps. 
 ms.date: 10/28/2023
 ---
 

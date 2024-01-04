@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Segment Performance Report
-description : Learn how a Buyer Segment Performance Report is helpful to a Buyer.   
+title: Microsoft Monetize - Buyer Segment Performance Report
+description: Learn how a Buyer Segment Performance Report is helpful to a Buyer.   
 ms.date: 10/28/2023
 ---
 

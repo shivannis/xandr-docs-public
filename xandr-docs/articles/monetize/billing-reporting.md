@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Billing Reporting
-description : Learn about descriptions of the metrics and dimensions you can include and apply to several billing-specific reports. 
+title: Microsoft Monetize - Billing Reporting
+description: Learn about descriptions of the metrics and dimensions you can include and apply to several billing-specific reports. 
 ms.date: 10/28/2023
 ---
 

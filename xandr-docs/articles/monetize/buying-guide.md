@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Guide
-description : This page provides information on the Buying Guide which helps you understand the buy-side capabilities of Microsoft Monetize.  
+title: Microsoft Monetize - Buying Guide
+description: This page provides information on the Buying Guide which helps you understand the buy-side capabilities of Microsoft Monetize.  
 ms.date: 10/28/2023
 ---
 
