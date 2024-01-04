@@ -1,25 +1,20 @@
 ---
-Title : Microsoft Advertising Exchange Inventory
-Description : The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
+title: Microsoft Monetize - Microsoft Advertising Exchange Inventory
+description: The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
 ms.date: 10/28/2023
-high-quality inventory to help you reach your audiences across Microsoft
-properties. The Microsoft Advertising Exchange contains Microsoft's
 ---
 
 
-# Microsoft Advertising Exchange Inventory
-
-
+# Microsoft Monetize - Microsoft Advertising Exchange Inventory
 
 The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
 high-quality inventory to help you reach your audiences across Microsoft
 properties. The Microsoft Advertising Exchange contains Microsoft's
-premium owned and operated (O&O) inventory like MSN and
-<a href="http://Outlook.com" class="xref"
-target="_blank">Outlook.com</a> in addition to select third-party
+premium owned and operated (O&O) inventory like MSN and [Outlook.com](https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fowa%2f&sdf=0)
+ in addition to select third-party
 publishers including 24/7.
 
-Outlook
+## Outlook
 
 **Outlook** is a free, web-based mail service provided by Microsoft. It
 has replaced Hotmail starting March 2013 and currently sees 15BB
@@ -27,20 +22,18 @@ imps/month. Outlook provides modern email with a clean user interface
 and smart, powerful tools with fully integrated ads, audience targeting,
 and advertiser exclusivity.
 
-Sample Outlook Inventory
+## Sample outlook inventory
 
 **Standard banner skyscraper (160x600)** creatives. These creatives also
-appear on the right-hand sidebar of the
-<a href="http://www.outlook.com/" class="xref"
-target="_blank">outlook.com</a> webmail service.
+appear on the right-hand sidebar of the 
+[Outlook.com](https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fowa%2f&sdf=0) webmail service.
 
-How to Target Outlook Inventory
+## How to target outlook inventory
 
 Target Outlook inventory through member **280** in the
-<a href="http://outlook.com" class="xref"
-target="_blank">outlook.com</a> domain.
+[Outlook.com](https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2fowa%2f&sdf=0) domain.
 
-Windows Apps
+## Windows apps
 
 You can advertise in apps across multiple devices on **Windows 8 PCs,
 tablets** and **Windows Phone 8**. Dynamic, MRAID-enabled ads can be
@@ -51,86 +44,37 @@ featured applications from across the Windows App Store.
 
 Windows App inventory includes:
 
-![windows app](media/windowsappinven.png)
+:::image type="content" source="media/windowsappinven.png" alt-text="Screenshot of windows app .":::
 
-Sample Windows Apps Inventory
+## Sample windows Apps inventory
 
 Provided below are some Windows Apps inventory samples:
 
 - Inventory on **tablets**
 
- ![inventory on tablets](media/inventory-on-tablets.png)
+ :::image type="content" source="media/inventory-on-tablets.png" alt-text="Screenshot of inventory on tablets .":::
 
 - Inventory on **Windows phone**
+:::image type="content" source="media/inventory-on-phone.png" alt-text="Screenshot of inventory on phone .":::
+  
 
-  ![inventory on phone](media/inventory-on-phone.png)
+## Windows Apps creative details
 
-Windows Apps Creative Details
+|  | Windows 8 | Windows Phone |
+|---|---|---|
+| **Sizes** | - 160x600<br> - 300x250<br> - 300x600<br> - 728x90 |  - 300x50<br> - 320x50<br> - 480x80<br> - 640x100 |
+| **Technical**<br>**Attributes** | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (in web view)**<br> - Image (Third-Party Ad Served)<br> - Flash with Backup Image only |  |
+| **Ad**<br>**Quality** | - [Microsoft CAP](https://about.ads.microsoft.com/policies)<br> - Animation Length up to 30 sec |  |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000050bd__entry__1" class="entry"></th>
-<th id="ID-000050bd__entry__2" class="entry">Windows 8</th>
-<th id="ID-000050bd__entry__3" class="entry">Windows Phone</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-000050bd__entry__1"><strong>Sizes</strong></td>
-<td class="entry" headers="ID-000050bd__entry__2"><ul>
-<li>160x600</li>
-<li>300x250</li>
-<li>300x600</li>
-<li>728x90</li>
-</ul></td>
-<td class="entry" headers="ID-000050bd__entry__3"><ul>
-<li>300x50</li>
-<li>320x50</li>
-<li>480x80</li>
-<li>640x100</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-000050bd__entry__1"><strong>Technical<br />
-Attributes</strong></td>
-<td colspan="2" class="entry"
-headers="ID-000050bd__entry__2 ID-000050bd__entry__3"><ul>
-<li>MRAID 1.0 and 2.0</li>
-<li>Hosted Images</li>
-<li>HTML</li>
-<li>HTML- iframe</li>
-<li>Javascript (in web view)**</li>
-<li>Image (Third-Party Ad Served)</li>
-<li>Flash with Backup Image only</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-000050bd__entry__1"><strong>Ad<br />
-Quality</strong></td>
-<td colspan="2" class="entry"
-headers="ID-000050bd__entry__2 ID-000050bd__entry__3"><ul>
-<li><a href="http://advertising.microsoft.com/en/policies" class="xref"
-target="_blank">Microsoft CAP</a></li>
-<li>Animation Length up to 30 sec</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-How to Target Windows App Inventory and Additional Information
+## How to target Windows App Inventory and additional information
 
 For more information regarding how to target Windows App inventory,
-formats, specifications and legacy SDK ads for Windows apps, see
-<a href="buying-microsoft-windows-3rd-party-appnetwork-inventory.md"
-class="xref">Buying Microsoft Windows 3rd Party AppNetwork Inventory</a>.
+formats, specifications and legacy SDK ads for Windows apps, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 
-MSN
+## MSN
 
 MSN is Microsoft's portal for best in news, sport, entertainment and
-lifestyle.
+lifestyle. [MSN](http://www.msn.com)
 <a href="http://www.msn.com" class="xref" target="_blank">MSN</a>
 inspires consumers through trusted, best in class content, with
 high-value experiences through personalized content synchronized across
