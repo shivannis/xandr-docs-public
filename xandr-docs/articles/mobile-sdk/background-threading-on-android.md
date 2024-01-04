@@ -10,8 +10,7 @@ ms.date : 10/28/2023
 > [!IMPORTANT]
 > This offering is currently in Alpha and is subject to change.
 
-> [!TIP]
-> The Background Threading feature enables MobileSDK to execute the ad requests for different AdUnits like banner, interstitial, native, and videos as a background thread instead of a UI thread. This feature can be turned on or off by a method (`enableBackgroundThreading`). By default, Background Threading feature is disabled in MobileSDK which can be enabled by using this method.
+The Background Threading feature enables Mobile SDK to execute the ad requests for different AdUnits like banner, interstitial, native, and videos as a background thread instead of a UI thread. This feature can be turned on or off by a method (`enableBackgroundThreading`). By default, this feature is disabled in Mobile SDK.
 
 ## Methods
 
