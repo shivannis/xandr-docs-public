@@ -5,14 +5,6 @@
     - name: Bidder
       tocHref: /xandr/articles/bidders/
       topicHref: /xandr/articles/bidders/index
-      items:  
-      - name: Getting Started
-        tocHref: /xandr/articles/bidders/
-        topicHref: /xandr/articles/bidders/the-big-picture
     - name: Microsoft Invest
       tocHref: /xandr/articles/invest/
       topicHref: /xandr/articles/invest/index
-      items:  
-      - name: Getting Started
-        tocHref: /xandr/articles/invest/
-        topicHref: /xandr/articles/invest/about-invest
