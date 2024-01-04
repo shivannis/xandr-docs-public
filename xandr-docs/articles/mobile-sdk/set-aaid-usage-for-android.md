@@ -8,8 +8,6 @@ ms.date : 10/28/2023
 
 # Set AAID usage for Android
 
-Here is an overview on Google Advertising ID (AAID).
-
 ## Overview
 
 The Google Advertising ID (AAID) for devices is an Android provided id
