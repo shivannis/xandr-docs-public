@@ -1,323 +1,80 @@
 ---
-Title : Content Categories
-Description : Content categories are metadata attached to a slice of inventory that
+title: Content Categories
+description: The article discusses content categories as metadata linked to a specific inventory slice, providing descriptive information about the contents of that inventory.
 ms.date: 10/28/2023
-describe the contents of that inventory. This makes it easier for buyers
 ---
 
+# Content categories
 
-# Content Categories
-
-
-
-Content categories are metadata attached to a slice of inventory that
-describe the contents of that inventory. This makes it easier for buyers
-to research and to buy. Content categories can also make selling to your
-potential customers easier as they can buy across a whole category
-instead of targeting individual chunks of it.
+Content categories are metadata attached to a slice of inventory that describe the contents of that inventory. This makes it easier for buyers to research and to buy. Content categories can also make selling to your potential customers easier as they can buy across a whole category instead of targeting individual chunks of it.
 
 There are two types of content categories:
 
-- **Universal:** These categories are maintained by
-  Xandr.
-- **Custom:** Sellers have the ability to define their own categories
-  and apply them to slices of their own inventory.
+- **Universal:** These categories are maintained by Xandr.
+- **Custom:** Sellers have the ability to define their own categories and apply them to slices of their own inventory.
 
+   > [!TIP]
+   > We are splitting our "Automotive and Vehicles" category into sub-categories for dealerships, manufacturers, service, and more. For more information, see [Automotive Content Categories](automotive-content-categories.md).
 
+## Apply categories to your inventory
 
-<b>Tip:</b> We are splitting our "Automotive
-and Vehicles" category into sub-categories for dealerships,
-manufacturers, service, and more. For more information, see
-<a href="automotive-content-categories.md" class="xref">Automotive
-Content Categories</a>.
+You can apply a number of categories to each of your sites and placements at the Network, Site, and Placement levels. For instructions, see [Create a Placement](create-a-placement.md).
 
+## Expose categories for targeting by buyers
 
+To expose content categories for targeting by buyers, see the sections on **targeting access** for content categories on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) and [Partner Controls](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) page.
 
-Apply Categories to Your Inventory
+**Report on volume by category**
 
-You can apply a number of categories to each of your sites and
-placements at the Network, Site, and Placement
-levels. For instructions, see
-<a href="create-a-placement.md" class="xref">Create a Placement</a>.
+You can report on inventory volumes broken down by universal content category using the [Universal Content Categories Report](universal-content-categories-report.md).
 
-Expose Categories for Targeting by Buyers
+> [!NOTE]
+> There is currently no way to report on inventory volumes broken down by **custom** categories.
 
-To expose content categories for targeting by buyers, see the sections
-on **targeting access** for content categories on the
-<a href="partner-center-screen-seller-view.md" class="xref">Partner
-Center Screen - Seller View</a> and <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-class="xref">Partner Controls</a> page.
-
-**Report on Volume by Category**
-
-
-You can report on inventory volumes broken down by universal content
-category using the <a href="universal-content-categories-report.md"
-class="xref">Universal Content Categories Report</a>.
-
-
-
-<b>Note:</b> There is currently no way to
-report on inventory volumes broken down by **custom** categories.
-
-
-
-
-
-Target Categories with Your Campaigns
+## Target categories with your campaigns
 
 Here are the campaign targeting rules as applied to content categories:
 
-- When you target more than one category, the categories have an **OR**
-  relationship. This means that if a slice of inventory is in either
-  category, it will match your campaign's targeting.
-- Content categories have an **AND** relationship with other inventory
-  targeting options. For example, if you are targeting a universal
-  content category of News coming from the Microsoft inventory source,
-  your campaign will only bid on placements coming from Microsoft that
-  have been categorized as News. This is an example of a set of
-  targeting parameters that are unlikely to match. Be careful when you
-  set up campaign targeting parameters with **AND** relationships since
-  it's possible to seriously reduce your campaign's reach (or even keep
-  from serving altogether).
+- When you target more than one category, the categories have an **OR** relationship. This means that if a slice of inventory is in either category, it will match your campaign's targeting.
+- Content categories have an **AND** relationship with other inventory targeting options. For example, if you are targeting a universal content category of News coming from the Microsoft inventory source, your campaign will only bid on placements coming from Microsoft that have been categorized as News. This is an example of a set of targeting parameters that are unlikely to match. Be careful when you set up campaign targeting parameters with **AND** relationships since it's possible to seriously reduce your campaign's reach (or even keep from serving altogether).
 
-For more details, see
-<a href="content-category-targeting.md" class="xref">Content Category
-Targeting</a>.
+For more details, see [Content Category Targeting](content-category-targeting.md).
 
-Universal Content Categories List
+## Universal content categories list
 
-Below is a list of universal content categories and subcategories we
-maintain. The most up-to-date list will always be available in the
-**Campaign Manager** under the
-Inventory tab. For more information,
-see <a href="create-a-campaign.md" class="xref">Create a Campaign</a>.
+Below is a list of universal content categories and subcategories we maintain. The most up-to-date list will always be available in the **Campaign Manager** under the
+**Inventory** tab. For more information, see [Create a Campaign](create-a-campaign.md).
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00004907__entry__1" class="entry">Top-level category</th>
-<th id="ID-00004907__entry__2" class="entry">Second-level category</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Arts &amp;
-Entertainment</td>
-<td class="entry" headers="ID-00004907__entry__2">Entertainment
-Industry, Offbeat, Fun &amp; Trivia, Comics &amp; Animation, Music,
-Visual Art &amp; Design, Celebrity News, Movies, TV &amp; Video, Humor,
-Radio, Nightlife Events, Performing Arts</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Autos &amp;
-Vehicles</td>
-<td class="entry" headers="ID-00004907__entry__2">Boats &amp;
-Watercraft, Locomotives and Trains, Hybrid &amp; Alternative Vehicles,
-Trucks &amp; SUVs, Bicycles, Automotive Technology, Performance
-Vehicles, Scooters &amp; Mopeds, Vehicle Parts &amp; Accessories,
-Commercial Vehicles, Personal Aircraft, Vehicle Maintenance, Classic
-Vehicles, Off-Road Vehicles, Concept Vehicles, Campers &amp; RVs,
-Motorcycles, Vehicle Brands</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Beauty &amp; Personal
-Care</td>
-<td class="entry" headers="ID-00004907__entry__2">Skin Care, Weight
-Loss, Cosmetology, Spas &amp; Beauty Services, Cosmetic Procedures, Hair
-Care, Body Art &amp; Tattoos, Fitness, Beauty Pageants, Fashion &amp;
-Style</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Books &amp;
-Literature</td>
-<td class="entry" headers="ID-00004907__entry__2">Magazines, Classic
-Literature, Fan Fiction, E-Books, Writers Resources, Children's
-Literature, Poetry, Book Retailers</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Business &amp;
-Industry</td>
-<td class="entry" headers="ID-00004907__entry__2">Jobs, Agriculture
-&amp; Forestry, Small Business, Directories, International Business,
-Aerospace &amp; Defense, Retail Trade, Business Services, Opportunities,
-Advertising &amp; Marketing, Professional &amp; Trade Associations,
-Business Operations, Hospitality Industry, Printing &amp; Publishing,
-Business Education, Energy &amp; Utilities, Pharmaceuticals &amp;
-Biotech, Automotive Industry, Transportation &amp; Logistics,
-Intellectual Property</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Computers &amp;
-Electronics</td>
-<td class="entry" headers="ID-00004907__entry__2">Networking, Computer
-Security, Hardware, Cell Phones, PDAs, Home Theater, TV, Audio Players
-and Systems, Game Systems, Software, Consumer Electronics, Cameras and
-Camcorders, Enterprise Technology, Programming, Electronics &amp;
-Electrical</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Education</td>
-<td class="entry" headers="ID-00004907__entry__2">Childhood Education,
-Instructional Technology, Continuing Education, College and
-University</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Finance</td>
-<td class="entry" headers="ID-00004907__entry__2">Credit &amp; Lending,
-Investing, Banking, Insurance, Accounting &amp; Auditing, Grants &amp;
-Financial Assistance, Taxes, Financial Planning, Retirement &amp;
-Pension, Currencies &amp; Foreign Exchange, Mortgages and Loans</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Food &amp; Drink</td>
-<td class="entry" headers="ID-00004907__entry__2">Cooking &amp; Recipes,
-Candy &amp; Sweets, Vegetarian, Vegan, Alcoholic Beverages, Restaurants,
-Non-Alcoholic Beverages, Grocery &amp; Food Retailers</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Games</td>
-<td class="entry" headers="ID-00004907__entry__2">Arcade &amp; Coin-Op
-Games, Gambling, Table Games, Computer &amp; Video Games, Cheats &amp;
-Walkthroughs, Roleplaying Games, Children's Games &amp; Activities,
-Puzzles &amp; Brainteasers, Card Games, Party Games, Board Games, Online
-Games</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Health</td>
-<td class="entry" headers="ID-00004907__entry__2">Aging &amp;
-Geriatrics, Reproductive Health, Medical Devices &amp; Equipment,
-Nursing, Public Health, Health Foundations &amp; Medical Research,
-Mental Health, Pharmacy, Health Education &amp; Medical Training,
-Women's Health, Men's Health, Pediatrics, Health Conditions, Vision
-Care, Medical Literature &amp; Resources, Oral &amp; Dental Care,
-Alternative &amp; Natural Medicine, Substance Abuse, Medical Facilities
-&amp; Services, Nutrition</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Home &amp; Garden</td>
-<td class="entry" headers="ID-00004907__entry__2">Home Furnishings, Yard
-&amp; Patio, Home Appliances, Swimming Pools &amp; Spas, Gardening &amp;
-Landscaping, Pest Control, Domestic Services, Kitchen &amp; Dining, Bed
-&amp; Bath, Home Improvement</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Internet &amp;
-Telecom</td>
-<td class="entry" headers="ID-00004907__entry__2">Service Providers, Web
-Design, Search Engines, Web Portals, Mobile &amp; Wireless, Web Apps
-&amp; Online Tools, Email &amp; Messaging, VOIP &amp; Internet
-Telephony, Culture, Teleconferencing</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Law &amp;
-Government</td>
-<td class="entry" headers="ID-00004907__entry__2">Military, Legal,
-Social Services, Public Safety</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Lifestyles</td>
-<td class="entry" headers="ID-00004907__entry__2">Seniors &amp;
-Retirement, Ethnic &amp; Identity Groups, Religion &amp; Belief, Women's
-Interests, Disabled &amp; Special Needs, Men's Interests, Subcultures
-&amp; Niche Interests, Kids &amp; Teens, Social Sciences, Genealogy,
-Social Issues &amp; Advocacy, Family &amp; Relationships</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">News</td>
-<td class="entry" headers="ID-00004907__entry__2">World News, Local
-News, Health News, Weather, Business News, Technology News, Broadcast
-&amp; Network News, Sports News, Politics, Journalism &amp; News
-Industry</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Online
-Communities</td>
-<td class="entry" headers="ID-00004907__entry__2">Online Goodies, Forum
-&amp; Chat Providers, File Sharing &amp; Hosting, Virtual Worlds, Dating
-&amp; Personals, Social Networks, Blogging Resources &amp; Services,
-Photo &amp; Video Sharing, Online Journals &amp; Personal Sites</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Pets &amp;
-Animals</td>
-<td class="entry" headers="ID-00004907__entry__2">Animal Products &amp;
-Services, Wildlife, Pets</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Real Estate</td>
-<td class="entry" headers="ID-00004907__entry__2">Property Development,
-Timeshares &amp; Vacation Properties, Commercial &amp; Investment Real
-Estate, Real Estate Listings, Apartments &amp; Residential Rentals, Real
-Estate Agencies, Property Management, Property Inspections &amp;
-Appraisals</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Recreation</td>
-<td class="entry" headers="ID-00004907__entry__2">Crafts, Special
-Occasions, Clubs &amp; Organizations, Recreational Aviation, Radio
-Control &amp; Modeling, Paintball, Outdoors, Water Activities</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Reference &amp;
-Language</td>
-<td class="entry" headers="ID-00004907__entry__2">General Reference,
-Technical Reference, Libraries &amp; Museums, Language Resources,
-Humanities, Geographic Reference</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Science</td>
-<td class="entry" headers="ID-00004907__entry__2">Scientific
-Institutions, Earth Sciences, Physics, Computer Science, Medical
-Science, Chemistry, Mathematics, Biological Sciences, Engineering &amp;
-Technology, Space Science, Astronomy, Ecology &amp; Environment</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Shopping</td>
-<td class="entry" headers="ID-00004907__entry__2">Free Stuff, Auctions,
-Retail Stores, Gifts &amp; Special Event Items, Wholesalers &amp;
-Liquidators, Footwear, Apparel, Office Supplies, Customer Services, Car
-Shopping, Swap Meets &amp; Outdoor Markets, Antiques &amp; Collectibles,
-Music, Books, Videos, Games, Coupons &amp; Discount Offers, Toys,
-Shopping Portals &amp; Search Engines, Accessories, Home and Garden,
-Consumer Affairs &amp; Product Reviews, Tobacco Products, Photo &amp;
-Video Services, Health and Beauty, Classifieds, Sporting Goods, Luxury
-Goods</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">Sports</td>
-<td class="entry" headers="ID-00004907__entry__2">College, Table Sports,
-Football, Olympics, Boxing, Strength Sports, Extreme Sports, Wrestling,
-Motor Sports, Bowling, Soccer, Equestrian, Winter Sports, Martial Arts,
-Boating, Racquet Sports, Cycling, Weight Lifting, Hockey, Basketball,
-Precision Sports, Cricket, Water Sports, Golf, Baseball, Outdoors</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00004907__entry__1">Travel</td>
-<td class="entry" headers="ID-00004907__entry__2">Travel Guides &amp;
-Travelogues, Air Travel, Hotels &amp; Accommodations, Travel Agencies
-&amp; Services, Cruises &amp; Charters, Tourist Destinations, Car Rental
-&amp; Taxi Services, Transportation, Bus &amp; Rail, Museums and
-Galleries, Amusement and Theme Parks, Luggage &amp; Travel
-Accessories</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00004907__entry__1">World Localities</td>
-<td class="entry" headers="ID-00004907__entry__2">Middle East, Latin
-America, Europe, Polar Regions, Asia, Oceania, Africa, North
-America</td>
-</tr>
-</tbody>
-</table>
+| Top-level category | Second-level category |
+|--|--|
+| Arts & Entertainment | Entertainment Industry, Offbeat, Fun & Trivia, Comics & Animation, Music, Visual Art & Design, Celebrity News, Movies, TV & Video, Humor, Radio, Nightlife Events, Performing Arts |
+| Autos & Vehicles | Boats & Watercraft, Locomotives and Trains, Hybrid & Alternative Vehicles, Trucks & SUVs, Bicycles, Automotive Technology, Performance Vehicles, Scooters & Mopeds, Vehicle Parts & Accessories, Commercial Vehicles, Personal Aircraft, Vehicle Maintenance, Classic Vehicles, Off-Road Vehicles, Concept Vehicles, Campers & RVs, Motorcycles, Vehicle Brands |
+| Beauty & Personal Care | Skin Care, Weight Loss, Cosmetology, Spas & Beauty Services, Cosmetic Procedures, Hair Care, Body Art & Tattoos, Fitness, Beauty Pageants, Fashion & Style |
+| Books & Literature | Magazines, Classic Literature, Fan Fiction, E-Books, Writers Resources, Children's Literature, Poetry, Book Retailers |
+| Business & Industry | Jobs, Agriculture & Forestry, Small Business, Directories, International Business, Aerospace & Defense, Retail Trade, Business Services, Opportunities, Advertising & Marketing, Professional & Trade Associations, Business Operations, Hospitality Industry, Printing & Publishing, Business Education, Energy & Utilities, Pharmaceuticals & Biotech, Automotive Industry, Transportation & Logistics, Intellectual Property |
+| Computers & Electronics | Networking, Computer Security, Hardware, Cell Phones, PDAs, Home Theater, TV, Audio Players and Systems, Game Systems, Software, Consumer Electronics, Cameras and Camcorders, Enterprise Technology, Programming, Electronics & Electrical |
+| Education | Childhood Education, Instructional Technology, Continuing Education, College and University |
+| Finance | Credit & Lending, Investing, Banking, Insurance, Accounting & Auditing, Grants & Financial Assistance, Taxes, Financial Planning, Retirement & Pension, Currencies & Foreign Exchange, Mortgages and Loans |
+| Food & Drink | Cooking & Recipes, Candy & Sweets, Vegetarian, Vegan, Alcoholic Beverages, Restaurants, Non-Alcoholic Beverages, Grocery & Food Retailers |
+| Games | Arcade & Coin-Op Games, Gambling, Table Games, Computer & Video Games, Cheats & Walkthroughs, Roleplaying Games, Children's Games & Activities, Puzzles & Brainteasers, Card Games, Party Games, Board Games, Online Games |
+| Health | Aging & Geriatrics, Reproductive Health, Medical Devices & Equipment, Nursing, Public Health, Health Foundations & Medical Research, Mental Health, Pharmacy, Health Education & Medical Training, Women's Health, Men's Health, Pediatrics, Health Conditions, Vision Care, Medical Literature & Resources, Oral & Dental Care, Alternative & Natural Medicine, Substance Abuse, Medical Facilities & Services, Nutrition |
+| Home & Garden | Home Furnishings, Yard & Patio, Home Appliances, Swimming Pools & Spas, Gardening & Landscaping, Pest Control, Domestic Services, Kitchen & Dining, Bed & Bath, Home Improvement |
+| Internet & Telecom | Service Providers, Web Design, Search Engines, Web Portals, Mobile & Wireless, Web Apps & Online Tools, Email & Messaging, VOIP & Internet Telephony, Culture, Teleconferencing |
+| Law & Government | Military, Legal, Social Services, Public Safety |
+| Lifestyles | Seniors & Retirement, Ethnic & Identity Groups, Religion & Belief, Women's Interests, Disabled & Special Needs, Men's Interests, Subcultures & Niche Interests, Kids & Teens, Social Sciences, Genealogy, Social Issues & Advocacy, Family & Relationships |
+| News | World News, Local News, Health News, Weather, Business News, Technology News, Broadcast & Network News, Sports News, Politics, Journalism & News Industry |
+| Online Communities | Online Goodies, Forum & Chat Providers, File Sharing & Hosting, Virtual Worlds, Dating & Personals, Social Networks, Blogging Resources & Services, Photo & Video Sharing, Online Journals & Personal Sites |
+| Pets & Animals | Animal Products & Services, Wildlife, Pets |
+| Real Estate | Property Development, Timeshares & Vacation Properties, Commercial & Investment Real Estate, Real Estate Listings, Apartments & Residential Rentals, Real Estate Agencies, Property Management, Property Inspections & Appraisals |
+| Recreation | Crafts, Special Occasions, Clubs & Organizations, Recreational Aviation, Radio Control & Modeling, Paintball, Outdoors, Water Activities |
+| Reference & Language | General Reference, Technical Reference, Libraries & Museums, Language Resources, Humanities, Geographic Reference |
+| Science | Scientific Institutions, Earth Sciences, Physics, Computer Science, Medical Science, Chemistry, Mathematics, Biological Sciences, Engineering & Technology, Space Science, Astronomy, Ecology & Environment |
+| Shopping | Free Stuff, Auctions, Retail Stores, Gifts & Special Event Items, Wholesalers & Liquidators, Footwear, Apparel, Office Supplies, Customer Services, Car Shopping, Swap Meets & Outdoor Markets, Antiques & Collectibles, Music, Books, Videos, Games, Coupons & Discount Offers, Toys, Shopping Portals & Search Engines, Accessories, Home and Garden, Consumer Affairs & Product Reviews, Tobacco Products, Photo & Video Services, Health and Beauty, Classifieds, Sporting Goods, Luxury Goods |
+| Sports | College, Table Sports, Football, Olympics, Boxing, Strength Sports, Extreme Sports, Wrestling, Motor Sports, Bowling, Soccer, Equestrian, Winter Sports, Martial Arts, Boating, Racquet Sports, Cycling, Weight Lifting, Hockey, Basketball, Precision Sports, Cricket, Water Sports, Golf, Baseball, Outdoors |
+| Travel | Travel Guides & Travelogues, Air Travel, Hotels & Accommodations, Travel Agencies & Services, Cruises & Charters, Tourist Destinations, Car Rental & Taxi Services, Transportation, Bus & Rail, Museums and Galleries, Amusement and Theme Parks, Luggage & Travel Accessories |
+| World Localities | Middle East, Latin America, Europe, Polar Regions, Asia, Oceania, Africa, North America |
 
-Related Topics
+## Related topics
 
-- <a href="content-category-targeting.md" class="xref">Content Category
-  Targeting</a>
-- <a href="manage-custom-content-categories.md" class="xref">Manage
-  Custom Content Categories</a>
-
-
-
-
+- [Content Category Targeting](content-category-targeting.md)
+- [Manage Custom Content Categories](manage-custom-content-categories.md)
