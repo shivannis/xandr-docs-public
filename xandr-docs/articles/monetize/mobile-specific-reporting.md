@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Mobile-Specific Reporting
+title: Microsoft Monetize - Reporting (Mobile-Specific)
 description: This page lists reports created by Xandr that helps you focus on mobile-specific data. 
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Mobile-Specific reporting
+# Microsoft Monetize - Reporting (Mobile-Specific)
 
 Xandr has created several reports that let you
 focus on mobile-specific data. For more information, see the reports
@@ -32,6 +32,6 @@ below.
   all of your advertisers. This report helps buyers identify
   high-performing mobile inventory and optimize their targeting.
 
-## Related Topic
+## Related topic
 
 [Welcome to Mobile](welcome-to-mobile.md)

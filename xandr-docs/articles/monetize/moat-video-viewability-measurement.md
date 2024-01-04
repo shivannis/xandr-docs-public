@@ -55,8 +55,8 @@ uploading a new creative. Follow the below steps to do the needful:
   the **Moat Attention Metrics** checkbox
   to include metrics about this creative in your Moat dashboard.
   
- > [!NOTE]
- > You will find Xandr - Viewability checkbox is disabled, because Xandr video viewability measurement runs automatically.
+  > [!NOTE]
+  > You will find **Xandr - Viewability** checkbox is disabled, because Xandr video viewability measurement runs automatically.
 
 - After this initial setup, all data associated with your
   Xandr creatives will automatically flow into

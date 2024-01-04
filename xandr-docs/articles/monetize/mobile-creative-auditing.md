@@ -29,7 +29,7 @@ must provide an alternative landing page URL in the
 **Creative Quality** pane.
 
 > [!NOTE]
-> This URL should be a closely related landing page that is visible from a desktop browser. We strongly recommend that you verify if the landing page is visible from a desktop browser before submitting the creative for audit. You can add this in the Creative Quality pane of the creative trafficking workflow.
+> This URL should be a closely related landing page that is visible from a desktop browser. We strongly recommend that you verify if the landing page is visible from a desktop browser before submitting the creative for audit. You can add this in the **Creative Quality** pane of the creative trafficking workflow.
 
 ## MRAID creatives
 

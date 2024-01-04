@@ -101,6 +101,6 @@ details about this process, click [here](https://account.microsoft.com/account/A
       email IDs of the Microsoft Account or Azure Active Directory
       integration
 
-## Related topics
+## Related topic
 
 [Microsoft Identity Platform Login Troubleshooting](microsoft-identity-platform-login-troubleshooting.md)

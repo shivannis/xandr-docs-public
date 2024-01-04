@@ -52,7 +52,7 @@ determine geography (zip code, metro code, country) targeting.
 
 In the [Batch Segment Service](../digital-platform-api/batch-segment-service.md) there is the
 ability to upload device identifiers and create an audience segment that
-can be targeted. See example 6 on the [Batch Segment File Format](xandr-api/batch-segment-service---file-format.md) page for an
+can be targeted. See example 6 on the [Batch Segment File Format](../digital-platform-api/bss-avro-file-format.md) page for an
 IDFA batch segment upload example. Note that the flag to indicate which
 type of device identifier you are uploading is through use of separator
 5 in the batch segment file format.

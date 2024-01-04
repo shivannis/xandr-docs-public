@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Migration to Microsoft Identity Platform Login
-description : This page provides step by step guide on how to migrate existing authentication process in Xandr products to Microsoft Identity
+title: Microsoft Monetize - Migration to Microsoft Identity Platform Login
+description: This page provides step by step guide on how to migrate existing authentication process in Xandr products to Microsoft Identity
 Platform.
 ms.date: 10/28/2023
 ---

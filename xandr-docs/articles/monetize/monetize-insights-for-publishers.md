@@ -54,8 +54,7 @@ The date has been fixed to 7 days view and 7 days prior to that.
 
 **Ad Quality** shows revenue-impacting
 blocks to help in identifying and evaluating opportunities to adjust ad
-quality settings. Ad Quality
-contains controls for brand safety, technical attributes and other
+quality settings. **Ad Quality** contains controls for brand safety, technical attributes and other
 parameters that can act to block a bid in the auction.
 
 > [!NOTE]
@@ -75,7 +74,7 @@ Quality**, go to [Ad Quality](monetize-insights-ad-quality.md).
 
 ## Deals
 
-Deals tab specifies the most
+**Deals** tab specifies the most
 significant bid rejections by a deal. This tab helps to:
 
 - sort by total bid value, absolute and percentage changes easily.

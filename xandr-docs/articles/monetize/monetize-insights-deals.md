@@ -84,7 +84,7 @@ appearance of the chart.
 | How you want the data grouped | Focusing on how you want the data to be grouped. Grouping can be done on the basis of the Publisher, Media type, Placement group, Buyer, Bid rejection or Bidder. |
 | Which metric is of interest | To get the metric of interest, choose between Blocked bid value, Error count and Avg CPM. |
 
-## Bid Rejections
+## Bid rejections
 
 **Bid Rejections** shows the issues
 with the biggest impacting blocks and how much this is changing week

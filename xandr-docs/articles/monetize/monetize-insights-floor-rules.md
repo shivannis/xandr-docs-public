@@ -1,8 +1,6 @@
 ---
 title: Floor Rule
-description: Learn what are Floor Rules and how they enables you to view
-the floors with the biggest impacting blocks and how much this is
-changing week over week.
+description: Learn what are Floor Rules and how they enables you to view the floors with the biggest impacting blocks and how much this is changing week over week.
 ms.date: 10/28/2023
 ---
 
@@ -76,7 +74,7 @@ Rules** table have columns listed in the table below:
 | Field | Description |
 |---|---|
 | % Δ Blocked Bid Value | The percentage change in the total value of blocked bids over the selected time range. |
-| Avg CPM | The average CPM of the bid rejections. |
+| Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
 | Blocked Bid Value | The total value of blocked bids within the selected time range. |
 | Buyer | The Xandr member seat that submitted the bid. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |

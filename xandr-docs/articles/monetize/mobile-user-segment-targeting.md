@@ -44,10 +44,7 @@ Xandr:
 - If you have a list of device IDs gathered from your advertisers or
   external attribution tracking system, you can also add these to
   segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
-- Be sure to use <a
-  href="xandr-api/batch-segment-service---file-format.md"
-  class="xref" target="_blank"><code
-  class="ph codeph">SEPARATOR5</code></a> to designate that you will be
+- Be sure to use [SEPARATOR5](../digital-platform-api/bss-avro-file-format.md) to designate that you will be
   uploading device IDs and instead of the standard
   Xandr user IDs.
 

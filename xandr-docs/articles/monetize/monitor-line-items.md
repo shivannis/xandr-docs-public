@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Monitor Line Items
-Description: Learn all about the Line Item Screen displays in this page.
+description: Learn all about the Line Item Screen displays in this page.
 ms.date: 10/28/2023
 ---
 
@@ -65,7 +65,7 @@ without requiring you to run a report. The metrics are updated
 regularly.
 
 > [!NOTE]
-> There might be discrepancies between the metrics displayed in the Line Items monitoring view and reporting data due to slight variations in data syncing. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
+> There might be discrepancies between the metrics displayed in the **Line Items** monitoring view and reporting data due to slight variations in data syncing. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ## Search for line items
 
@@ -74,7 +74,7 @@ There are several ways to search for line items from the
 for line items by line item name, line item ID, deal name, or deal ID.
 Inactive line items are listed in gray italic text.
 
-## Use Pagination
+## Use pagination
 
 If you don't have a line item name, line item ID, deal name, or deal ID
 to search with, you can use the pagination feature at the bottom of the
@@ -114,7 +114,7 @@ create and save a new filter:
     to apply the filter to the rows by default.
 
     > [!NOTE]
-    > The default filter will apply each time you access the Line Items window.
+    > The default filter will apply each time you access the **Line Items** window.
 
 1. Click **Apply** and
     **Save As** to save the filter.
