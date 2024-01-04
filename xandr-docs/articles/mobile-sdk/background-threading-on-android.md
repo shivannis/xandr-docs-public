@@ -14,7 +14,7 @@ The Background Threading feature enables Mobile SDK to execute the ad requests f
 
 ## Methods
 
-The following methods are supported.
+The following methods are supported in this feature:
 
 ### enableBackgroundThreading(boolean)
 
