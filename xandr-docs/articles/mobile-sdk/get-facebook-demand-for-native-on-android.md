@@ -11,7 +11,7 @@ This document describes the process for retrieving native ad assets to display i
 
 The following steps are required for retrieving and displaying native ads for Facebook's Audience Network SDK:
 
-1. Ensure that the proper SDKs are installed.
+1. [Ensure that the proper SDKs are installed.](## Ensure that the proper SDKs are installed) 
 1. Initialize Facebook's Audience Network SDK.
 1. Create a native banner ad layout.
 1. Create a native ad request and load the ad.
