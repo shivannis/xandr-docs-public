@@ -198,7 +198,9 @@
     href: click-request.md
   - name: Audit Notify Request
     href: audit-notify-request.md
-  - name: AppNexus Bidding Protocol
+  - name: IAB Content Taxonomy Support
+    href: iab-content-taxonomy-support.md
+- name: AppNexus Bidding Protocol
     items:
     - name: Overview
       href: appnexus-bidding-protocol.md
@@ -214,13 +216,14 @@
       href: responding-to-a-megatag-bid-request.md
     - name: MegaTag Technical Overview
       href: megatag-technical-overview.md
-  - name: IAB Content Taxonomy Support
-    href: iab-content-taxonomy-support.md
 - name: User ID Mapping
   items:
   - name: Overview
     href: user-id-mapping.md
-  - name: Batch Server-Side Segmentation
+  
+  - name: Synchronize Your User IDs
+    href: synchronize-your-user-ids.md
+- name: Batch Server-Side Segmentation
     items:
     - name: Overview
       href: batch-server-side-segmentation.md
@@ -246,8 +249,6 @@
       href: verifying-segment-uploads.md
     - name: Troubleshooting Invalid Users
       href: troubleshooting-invalid-users.md
-  - name: Synchronize Your User IDs
-    href: synchronize-your-user-ids.md
 - name: Guaranteed Outcomes
   items:
   - name: Overview
