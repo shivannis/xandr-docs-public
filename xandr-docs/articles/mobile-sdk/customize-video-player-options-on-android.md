@@ -14,6 +14,8 @@ You can customize the following video player controls:
 - The fullscreen button for outstream video
 - Volume control
 
+## Customization samples
+
 To show or hide the ClickThrough control on the video player:
 
 ``` 
