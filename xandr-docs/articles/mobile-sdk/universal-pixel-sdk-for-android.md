@@ -11,7 +11,7 @@ ms.date : 10/28/2023
 This document provides instructions on how publishers can integrate and
 install the Universal Pixel SDK (Pixie SDK) for Android.
 
-## Integration
+## Integration instructions
 
 **Requirements**
 
@@ -34,7 +34,7 @@ ID that represents a pixel in your app.
 > 
 > These instructions assume you are using Android Studio and Gradle. All of the required AndroidManifest.xml entries and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
 
-## Installation
+## Installation guide
 
 Install via Maven from your `build.gradle` file as shown below. Note
 that the `[1,2)` notation means that when your app is compiled, the
@@ -58,7 +58,7 @@ dependencies {
 }
 ```
 
-## Implementation
+## Implementation guide
 
 **Initialization**
 
