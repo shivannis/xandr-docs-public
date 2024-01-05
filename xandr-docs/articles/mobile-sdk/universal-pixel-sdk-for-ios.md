@@ -71,17 +71,17 @@ There are two ways to install the SDK:
 
   :::image type="content" source="media/universal-pixel-sdk-for-ios-b.png" alt-text="The screenshot that entails locating the PixieSDK.xcframework file on the Finder or file system and how to drag the PixieSDK.xcframework file from its location and drop it into the Frameworks folder within the project navigator.":::
   
-  Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
+3. Make sure the options **Copy items if needed** and **Create groups** are checked and selected for adding files.
   Click **Finish**.
 
   :::image type="content" source="media/universal-pixel-sdk-for-ios-c.png" alt-text="The screenshot that shows how to choose and check various copy options while adding the files":::
   
-  Once this step is completed, the result appears as below:
+4. Once this step is completed, the result appears as below:
 
   :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="The  screenshot that displays the results after copying the files.":::
   
 <!-- -->
-3. **Embedded PixieSDK.xcframework in project’s target**
+5. **Embedded PixieSDK.xcframework in project’s target**
 
   1. Navigate to your project settings by clicking on it in the project navigator.
   1. Make sure that your target is selected and **General** tab is open.
