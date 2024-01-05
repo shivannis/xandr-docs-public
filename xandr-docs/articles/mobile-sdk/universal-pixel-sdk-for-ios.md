@@ -9,7 +9,7 @@ ms.date : 10/28/2023
 
 This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
 
-## Integration
+## Integration instructions
 
 ### Requirements
 
@@ -22,11 +22,11 @@ The SDK requires the following components:
 
 In order to use the Pixie SDK, you must have a valid Xandr Unified Pixel ID. This is an alphanumeric ID that represents a pixel in your app.
 
-### Installation
+### Installation guide
 
 There are two ways to install the SDK:
 
-1. **Use** [CocoaPods](https://cocoapods.org/).
+1. **Using [CocoaPods](https://cocoapods.org/)**
 
     CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).
     Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
@@ -54,7 +54,7 @@ There are two ways to install the SDK:
   
     CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
-1. **Use Xandr Unified Pixel SDK XCFramework**.
+2. **Using Xandr Unified Pixel SDK XCFramework**
 
 > [!NOTE]
 > We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
@@ -89,7 +89,7 @@ There are two ways to install the SDK:
 
    :::image type="content" source="media/universal-pixel-sdk-for-ios-e.png" alt-text="The screenshot that shows how to configure the integration of the Framework within the project, access the project settings, and select the correct option for the proper embedding and code signing of the framework.":::
 
-## Implementation
+## Implementation guide
 
 ### Initializing the SDK
 
@@ -136,9 +136,7 @@ Standard Event strings are defined within the Event class. See the [Standard Ev
 
 ### Code samples
 
-**Initializing the SDK**
-
-**Code sample:**
+**Initialization code sample:**
 
 **Swift**
 
@@ -160,15 +158,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 } 
 ```
 
-### Track standard event
-
-## Page view
+## Track standard event - page view
 
 ```
 Event.PAGE_VIEW`
 ```
 
-**The specific page that was visited.**
+The specific page that was visited.
 
 ### Code samples:
 
@@ -184,15 +180,14 @@ Pixie.fireEvent(Event.PAGE_VIEW)
 [Pixie fireEvent:Event.PAGE_VIEW eventParams:nil];
 ```
 
-## Landing page
+## Track landing page views
 
 ```
 Event.LANDING_PAGE`
 ```
 
 Track landing pages views.
-
- **Code sample:**
+### Code samples:
 
 **Swift**
 
@@ -207,7 +202,7 @@ Pixie.fireEvent(Event.LANDING_PAGE, eventParams:landingPageParams)
 PixieParams *landingPageParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"]; [Pixie fireEvent:Event.LANDING_PAGE eventParams:landingPageParams];
 ```
 
-## Item view
+## Track item view
 
 ```
 Event.ITEM_VIEW`
@@ -215,7 +210,7 @@ Event.ITEM_VIEW`
 
 Track key page views (For example: product page, landing page, article).
 
-**Code sample:**
+### Code samples:
 
 **Swift**
 
@@ -231,7 +226,7 @@ PixieParams *itemViewParams = [[PixieParams alloc] initWithValue:@"5.99" currenc
 [Pixie fireEvent:Event.ITEM_VIEW eventParams:itemViewParams];
 ```
 
-## Add to cart
+## Track add to cart event
 
 ```
 Event.ADD_TO_CART`
@@ -239,7 +234,7 @@ Event.ADD_TO_CART`
 
 Track when items are added to a shopping cart (For example: **click**, landing page on **Add to Cart** button).
 
-**Code sample:**
+### Code sample:
 
 **Swift**
 
@@ -255,15 +250,15 @@ PixieParams *addToCartParams = [[PixieParams alloc] initWithValue:@"5.99" curren
 [Pixie fireEvent:Event.ADD_TO_CART eventParams:addToCartParams];
 ```
 
-## Initiate checkout
+## Track checkout initiation
 
 ```
 Event.INITIATE_CHECKOUT
 ```
 
-**Track when people enter the checkout flow (For example: click, landing page on checkout button).**
+Track when people enter the checkout flow (For example: click, landing page on checkout button).
 
-**Code sample:**
+### Code sample:
 
 **Swift**
 
@@ -279,7 +274,7 @@ PixieParams *initiateCheckOutParams = [[PixieParams alloc] initWithValue:@"5.99"
 [Pixie fireEvent:Event.INITIATE_CHECKOUT eventParams:initiateCheckOutParams];
 ```
 
-## Add payment info
+## Track add payment info event
 
 ```
 Event.ADD_PAYMENT_INFO`
@@ -287,7 +282,7 @@ Event.ADD_PAYMENT_INFO`
 
 Track when payment information is added in the checkout flow (For example: click, landing page on billing information).
 
-**Code sample:**
+### Code sample:
 
 **Swift**
 
@@ -303,7 +298,7 @@ PixieParams *addPaymentInfo = [[PixieParams alloc] initWithValue:@"5.99" currenc
 [Pixie fireEvent:Event.ADD_PAYMENT_INFO eventParams:addPaymentInfo];
 ```
 
-## Purchase
+## Track purchase
 
 ```
 Event.PURCHASE`
@@ -311,7 +306,7 @@ Event.PURCHASE`
 
 Track purchases or checkout flow completions (For example: Landing on **Thank You** or confirmation page).
 
-**Code sample:**
+### Code sample:
 
 **Swift**
 
@@ -327,7 +322,7 @@ PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currenc
 [Pixie fireEvent:Event.PURCHASE eventParams:purchaseParams]; 
 ```
 
-## Lead
+## Track leads
 
 ```
 Event.LEAD
@@ -335,7 +330,7 @@ Event.LEAD
 
 Track when someone expresses interest in your offering (For example: form submission, sign up for trial, and registration).
 
-**Code sample:**
+### Code sample:
 
 **Swift**
 
@@ -353,11 +348,11 @@ leadParams.currency = @"USD";
 [Pixie fireEvent:Event.LEAD eventParams:leadParams];
 ```
 
-### Track custom event
+## Track custom events
 
 Custom Events enable publishers to create their own events to track and submit. To create a custom event, initiate a PixelParams object with the data to be submitted and pass that object, along with a string identifier to the Pixie SDK fireEvent method. Custom event data can also be sent in key-value pairs by using the put method of the PixelParams object.
 
-**Code samples:**
+### Code samples:
 
 **Swift**
 
@@ -385,7 +380,7 @@ customPixieParams.itemName = @"shirt,belt";
 [Pixie fireEvent:@"TestCustomEvent" eventParams:customPixieParams];
 ```
 
-### Enable logging
+## Enable logging
 
 Pixie SDK comes with a debug mode feature that enables logging during development. This can be turned on by setting the debugMode variable to true. All logging will be disabled in the release build.
 
