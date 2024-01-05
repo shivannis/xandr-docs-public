@@ -14,8 +14,7 @@ ms.date: 10/28/2023
 blocks to help identify and evaluate opportunities to adjust ad quality
 settings. They are settings that the publisher has for brand safety. It
 gets configured when the client joins our platform and then may not be
-re-evaluated frequently. In the Ad
-**Quality tab**:
+re-evaluated frequently. In the **Ad Quality** tab:
 
 - **Creative Preview** lives directly
   in the side panel for quick review.

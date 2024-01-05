@@ -91,7 +91,7 @@ the rows of line items. The pagination feature lets you:
 
 You can create and save filters to search for line items. Once created
 and saved, you can apply a filter using the
-Select a Filter drop-down list. To
+**Select a Filter** drop-down list. To
 create and save a new filter:
 
 1. In the **Line Items** window,

@@ -39,18 +39,18 @@ window with the following fields:
 
 Steps to make changes in the graph and the table that follows it:
 
-- the filter has features specific to Demand Issues.
-- clicking on **Apply** updates the graph
+- The filter has features specific to Demand Issues.
+- Clicking on **Apply** updates the graph
   and the table that appears after that.
-- the graph is configurable so you can choose what you want to plot on
+- The graph is configurable so you can choose what you want to plot on
   the graph, whether it is blocked bid value, Error count or Avg CPM.
-- you can group the data on the basis of Publisher, Buyer, Issue, Media
+- You can group the data on the basis of Publisher, Buyer, Issue, Media
   type or Placement group.
-- you can also select how you want the graph to be displayed whether as
+- You can also select how you want the graph to be displayed whether as
   a Bar chart or a time series Area chart.
-- hovering on the chart will give you information on the chart at that
+- Hovering on the chart will give you information on the chart at that
   position.
-- the chart helps you quickly examine issues in aggregate to decide
+- The chart helps you quickly examine issues in aggregate to decide
   where to focus.
 
 ## Overview

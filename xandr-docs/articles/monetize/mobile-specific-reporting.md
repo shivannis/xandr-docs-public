@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Reporting (Mobile-Specific)
+# Microsoft Monetize - Reporting (mobile-specific)
 
 Xandr has created several reports that let you
 focus on mobile-specific data. For more information, see the reports

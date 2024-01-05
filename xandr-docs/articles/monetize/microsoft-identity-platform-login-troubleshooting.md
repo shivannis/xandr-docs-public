@@ -6,12 +6,12 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Microsoft Identity Platform Login troubleshooting
+# Microsoft Monetize - Microsoft identity platform login troubleshooting
 
 This document outlines some scenarios where questions may arise in the
 minds of users while using Microsoft Identity Platform.
 
-## I don't have a Microsoft Account.
+## I don't have a Microsoft account.
 
 You can register for a free Microsoft Personal Account with any existing
 email you have access to. Go to [this link](https://account.microsoft.com/account) to register or manage your Microsoft

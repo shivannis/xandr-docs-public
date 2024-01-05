@@ -77,8 +77,8 @@ Quality**, go to [Ad Quality](monetize-insights-ad-quality.md).
 **Deals** tab specifies the most
 significant bid rejections by a deal. This tab helps to:
 
-- sort by total bid value, absolute and percentage changes easily.
-- show the inventory the blocks are occurring on, and the overall
+- Sort by total bid value, absolute and percentage changes easily.
+- Show the inventory the blocks are occurring on, and the overall
   rejection history.
 
 For more information on **Deals**, go [Deals](monetize-insights-deals.md)
@@ -90,8 +90,8 @@ to.
 rejections that are generally caused by buyer behavior. This tab helps
 to:
 
-- show issues for a buyer on specific publishers.
-- include issue resolution help, time-series chart, and creative
+- Show issues for a buyer on specific publishers.
+- Include issue resolution help, time-series chart, and creative
   preview.
 
 For more information on **Demand
@@ -102,9 +102,9 @@ Issues**, go to [Demand Issues](monetize-insights-demand-issues.md).
 **Floor Rules** tab displays blocks
 created due to your Yield Management settings. This tab helps to:
 
-- display the value of bids being blocked by each floor along with the
+- Display the value of bids being blocked by each floor along with the
   change between the current and comparison period.
-- see the trends for blocks and how specific buyers are impacted.
+- See the trends for blocks and how specific buyers are impacted.
 
 For more information on **Floor
 Rules**, go to [Floor Rule](monetize-insights-floor-rules.md).
