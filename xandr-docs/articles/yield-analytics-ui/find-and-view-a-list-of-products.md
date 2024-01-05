@@ -9,6 +9,8 @@ ms.custom: yield-analytics-ui
 
 You can search across a list of products and drill down to see details.
 
+## Process flow
+
 1. On the Products Dashboard page, in the Products Tasks panel, click **Find Products**. The Find Products page is displayed. By default, the product list is filtered to show active rate card products.
 1. In the Filter panel on the left side of the page, narrow the product list by selecting options in the fields provided. As you make your filter selections, the product list is redisplayed accordingly.
     - Under Configuration, select the time period for the product metrics you want to see.
