@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Ad ops - Set up static image full screen interstitials
+# Ad Ops - Set up static image full screen interstitials
 
 This page has Ad Ops setup instructions for serving static image "full-screen" interstitials on our Xandr [Mobile SDKs](xandr-mobile-sdks.md). By "full-screen", we mean that the static image will be resized to fit the device's screen by JavaScript running in the creative template used in the instructions below.
 
@@ -15,16 +15,18 @@ For developer-focused interstitial documentation, see [Show Interstitials](show-
 
 To set up your creative, first create a creative and then configure the settings listed below:
 
-- Under **Creative Content**, choose to **Upload a file**.
-- Choose a **Media Type** of **Interstitial: Interstitial**.
-- In the **Template** field, choose **Xandr: Mobile SDK Static Images** (ID 38934).
-- If you have a landscape image you want to traffic when the user changes the orientation of their device, you can add it in the **Template** tab.
+1. Under **Creative Content**, choose to **Upload a file**.
+2. Choose a **Media Type** of **Interstitial: Interstitial**.
+3. In the **Template** field, choose **Xandr: Mobile SDK Static Images** (ID 38934).
+4. If you have a landscape image you want to traffic when the user changes the orientation of their device, you can add it in the **Template** tab.
 
 :::image type="content" source="media/ad-ops-set-up-static-image.png" alt-text="A screenshot of the Template tab with the Template Option Details settings.":::
 
 ## Placement settings
 
-To set up your placement, first create a placement and then configure the settings listed below:
+To set up your placement, 
+1. create a placement
+2. configure the settings listed below:
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 
