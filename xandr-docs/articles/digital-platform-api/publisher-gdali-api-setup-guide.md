@@ -85,9 +85,9 @@ information, see [Authentication Service](authentication-service.md). In the `c
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
     ```
 
-1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and the "`token`" field will be populated with the authentication token value.
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and the "`token`" field will be populated with the authentication token value.
 
-    **Example Response**
+    **Example response**
 
     ```
     {
@@ -159,8 +159,9 @@ information, see [Insertion Order Service](insertion-order-service.md).
     curl -b cookies -X POST -d @seamless_io_gdali.json 'https://api.appnexus.com/insertion-order?advertiser_id=3872575'
     ```
 
-1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
-      **Example Response**
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
+
+    **Example response**
 
     ```
     {
@@ -545,8 +546,9 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
     curl -b cookies -X POST -d @gdali_imp_cpm 'https://api.appnexus.com/line-item?advertiser_id=3872575'
     ```
 
-1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
-      **Example Response**
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a "`status`" of “`OK`” and you’ll see the updates you made.
+
+    **Example response**
 
     ```
     {
