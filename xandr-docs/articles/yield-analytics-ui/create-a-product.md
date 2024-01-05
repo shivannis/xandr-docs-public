@@ -8,17 +8,19 @@ ms.custom: yield-analytics-ui
 
 Use the following steps to create a product:
 
-- Click the down arrow next to the **Products** tab.
-- Click **Create a Product** from the drop-down menu. The **Create Product** screen is accessed.
-- Enter the **Product Name**. This is the name that you decide to give the product. It is a required field.
-- Enter the **Product External Id**. This is a identifier that you may want to include to track the product on your system.
-- Enter the **Target Expression**. This is accomplished by clicking the **Builder** tab.
-- Once the target expression is created, it will be displayed on the **Create Product** screen.
+1. Click the down arrow next to the **Products** tab.
+2. Click **Create a Product** from the drop-down menu. The **Create Product** screen is accessed.
+3. Enter the **Product Name**. This is the name that you decide to give the product. It is a required field.
+4. Enter the **Product External Id**. This is a identifier that you may want to include to track the product on your system.
+5. Enter the **Target Expression**. This is accomplished by clicking the **Builder** tab.
+6. Once the target expression is created, it will be displayed on the **Create Product** screen.
 
 > [!TIP]
 > After the target expression is created, it creates an actual link that you can click on from the Create Product screen. Clicking that link will access a read-only screen.
 
-Choose the **Product Type**. There are two radio buttons that identify which type of product you are creating:
+## Product type selection
+
+While choosing the **Product Type**, here are two options with radio buttons that identify which type of product you are creating:
 
 - Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., ROS 728x90).
 - Reporting – Product that is used for reporting purposes, but is not generally not sold (e.g., Top three ad sizes in the Sports section).
