@@ -46,7 +46,7 @@ Data in this report is retained for 428 days.
 | `device_model_id` | int | Yes | `15` | The ID of the device model on which the impression was served. The model is generally the specific product (i.e., iPhone). To retrieve a complete list of device model IDs and names, use the [Device Make Service](./device-make-service.md). |
 | `device_model_name` | string | No | `"DX650"` | The name of the device model on which the impression was served. The model is generally the specific product (i.e., IPhone). |
 | `device_model` | string | No | `"DX650 (15)"` | **Deprecated**. |
-| `device_type` | string | Yes | `"tablets"` | The type of device on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> -`"set top box"`<br> - `"media players"`<br> - `"other devices"` |
+| `device_type` | string | Yes | `"tablets"` | The type of device on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> - `"set top box"`<br> - `"media players"`<br> - `"other devices"` |
 | `connection_type` | string | Yes | `"Carrier-based"` | The type of internet connection at the time of the impression. Possible values:<br> - `"Carrier-based"`<br> - `"Wifi or Static"` |
 | `operating_system_id` | int | Yes | `24` | The ID of the operating system of the device.<br> - Use [Operating System Family service](./operating-system-family-service.md) to obtain a list of operating system families.<br> - Use the [Operating System Extended service](./operating-system-extended-service.md) to look up which operating system versions are within a given operating system family. |
 | `operating_system_name` | string | Yes | `"Android 2.3.5 Gingerbread"` | The name of the operating system of the device.<br> - Use [Operating System Family service](./operating-system-family-service.md) to obtain a list of operating system families.<br> - Use the [Operating System Extended service](./operating-system-extended-service.md) to look up which operating system versions are within a given operating system family. |
@@ -56,7 +56,7 @@ Data in this report is retained for 428 days.
 | `browser_name` | string | Yes |  | The ID of the browser in which the impression was served. |
 | `browser` | string | Yes |  | **Deprecated**. |
 | `entity_member_id` | int | Yes | `123` | If `imp_type` is: <br> `1` (Blank) <br>`2` (PSA) <br> `3` (Default Error) <br> `4` (Default) <br> `6` (Resold) <br> `8` (PSA Resulting from Default Error), the ID of the buying member; otherwise, the ID of the selling member. |
-| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default |
 | `buyer_member_name` | string | No | `"My Network"` | The name of the buying member. |
 | `buyer_member` | string | No | `"My Network (123)"` | **Deprecated**. |
 | `seller_member_id` | int | Yes | `456` | The ID of the selling member. |
@@ -85,21 +85,21 @@ Data in this report is retained for 428 days.
 | `split_name` | string | Yes | `"Mobile split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 | `deal_id` | int | Yes | `123` | The ID of the deal associated with the transaction for the impression. |
 | `pixel_id` | int | Yes | `3849` | The ID of the conversion pixel. |
-| `media_type` | string | Yes | `"Banner"` | The media type of the creative. Possible values: <br> - `"Banner"` <br> - `"Pop"` <br> - `"Interstitial"` <br> - `"Video"` <br> - `"Text"` <br> - `"Expandable"` <br> - `"Skin"`. To retrieve a complete list of media types, use the [Media Type Service](./media-type-service.md). |
+| `media_type` | string | Yes | `"Banner"` | The media type of the creative. Possible values: <br> - `"Banner"` <br> - `"Pop"` <br> - `"Interstitial"` <br> - `"Video"` <br> - `"Text"` <br> - `"Expandable"` <br> - `"Skin"` <br> To retrieve a complete list of media types, use the [Media Type Service](./media-type-service.md). |
 | `mediatype_id` | int | Yes | `1` | The ID of the media type of the creative. |
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
 | `geo_country` | string | Yes | `"US"` | The code for the country. |
 | `geo_country_name` | string | No | `"United States"` | The name of the country. |
 | `payment_type` | string | Yes | `"cpm"`, `"revshare"` | The type of payment to a broker. |
 | `revenue_type` | string | No | `"CPA"` | The basis on which the advertiser pays the member. |
-| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br> `0` = Flat CPM <br> `1` = Cost Plus CPM <br> `2` = Cost Plus Margin <br> `3` = CPC <br> `4` = CPA <br> `5` = Revshare <br> `6` = Flat Fee <br> `7` = Variable CPM <br> `8` = Estimated CPM. |
+| `revenue_type_id` | int | Yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br> `0` = Flat CPM <br> `1` = Cost Plus CPM <br> `2` = Cost Plus Margin <br> `3` = CPC <br> `4` = CPA <br> `5` = Revshare <br> `6` = Flat Fee <br> `7` = Variable CPM <br> `8` = Estimated CPM |
 | `publisher_name` | string | No | `"AppSite"` | The name of the publisher. |
 | `publisher` | string | Yes | `"AppSite (123)"` | The name of the publisher followed by the ID (Xandr format). |
 | `publisher_code` | string | No | `"AS123"` | The custom code for the publisher. |
 | `pub_rule_name` | string | No | `"Publisher Rule Name"` | The name of the publisher rule. |
 | `pub_rule` | string | No | `"Publisher Rule Name (555)"` | The name of the publisher rule followed by the ID (Xandr format). |
 | `pub_rule_code` | string | No | `"AppSitePR123"` | The custom code for the publisher rule. |
-| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for the impression. <br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - `"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP..<br> - `"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - `"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - `"Unknown"`: The node was in an unknown optimization phase.<br> - `"Optimized give up"`<br> - `"Learn give up"`<br> - `"Manual give up"` |
+| `bid_type` | string | Yes | `"Manual"` | The optimization phase the node was in when it bid for the impression. <br><br>**Note**: The term "give up" is appended to the bid types below if the valuation for that impression falls below the venue's "give up price". Allowed values:<br> - `"Manual"`: Applies when you are bidding with a CPM goal, whether it's Base, EAP, or ECP.<br> - `"Learn"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we do not yet have enough data to bid optimized.<br> - `"Optimized"`: Applies when you are bidding with optimization (CPA, CPC, or margin) and we have enough data to bid optimized.<br> - `"Unknown"`: The node was in an unknown optimization phase.<br> - `"Optimized give up"`<br> - `"Learn give up"`<br> - `"Manual give up"` |
 | `imp_type_id` | int | Yes | `6` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1` ("Blank"): No creative served.<br>`2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br>`3` ("Default Error"): A default creative served due to a timeout issue.<br>`4` ("Default"): A default creative served because there were no valid bids.<br>`5` ("Kept"): Your advertiser's creative served on your publisher's site.<br>`6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br>`7` ("RTB"): Your advertiser's creative served on third-party inventory.<br>`8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br>`9` ("External Impression"): An impression from an impression tracker.<br>`10` ("External Click"): A click from a click tracker. |
 | `imp_type` | string | Yes | `"Resold"` | The type of impression. For possible values, see `imp_type_id`. |
 | `venue` | string | Yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country that our optimization system uses to determine bid valuations. A campaign cannot target a venue explicitly. |
@@ -241,7 +241,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02
 }
 ```
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the report-download service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69'

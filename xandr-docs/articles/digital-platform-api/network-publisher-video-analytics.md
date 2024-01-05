@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 The **Network Publisher Video Analytics** report can be used to view video event metrics for specific publisher within your network that is more granular than the data provided in the [Network Video Analytics](network-video-analytics.md) report. This report is available to network users only.
 
 > [!NOTE]
-> `video_content_genreVideo` metrics are recorded for VAST creatives only.
+> `video_content_genre` video metrics are recorded for VAST creatives only.
 
 For usage instructions, see the [Example](#example) below. Note that this report requires that a publisher ID be specified as part of the URL, for example:
 
@@ -42,7 +42,8 @@ The `report_interval` field can be set to one of the following:
 
 Data in this report is retained for 420 days.
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
@@ -60,7 +61,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `brand_name` | string | no | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `publisher_id` | int | yes | `6787` | The number to identify the publisher. |
 | `publisher_currency` | string | yes | `"USD"` | The currency of the publisher. |
-| `site_id` | int | yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the site_id will be 0. |
+| `site_id` | int | yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
 | `site_name` | string | no | `"Site Name"` | The name of the site. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
@@ -71,7 +72,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `placement_code` | string | no | `"300x250 Business Code"` | The custom code for the placement. |
 | `site_domain` | string | no | `bestsiteever.com` | The site domain of an impression. |
 | `application_id` | string | Yes | `'343200656' (iOS)` or <br> `'com.rovio.angrybirds'(Android)` | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
-| `supply_type` | string | Yes | `mobile_web` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"`. |
+| `supply_type` | string | Yes | `mobile_web` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"` |
 | `video_playback_method` | string | Yes | `"1"` | The playback method for the creative. See [Video Playback Method](#video-playback-method) below for possible values. |
 | `video_context` | string | Yes | `"3"` | When and where the video creative plays. See [Video Context](#video-context) below for possible values. |
 | `video_player_size_id` | string | Yes | `"2"` | The ID of the video player width. See [Player Size](#player-size) below for possible values. |

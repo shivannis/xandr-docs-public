@@ -50,8 +50,8 @@ Data retention period for this report is 45 days.
 | `line_item_id` | int | yes | `323` | The ID of the line item. |
 | `line_item_name` | string | no | `ExampleLineItem` | The name of the line item. |
 | `campaign_group` | string | no | `ExampleGroupName(123)` | **Deprecated**. |
-| `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null` . |
-| `split_name` | string | yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null` . |
+| `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
+| `split_name` | string | yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 | `top_level_category_id` | int | yes | `19821` | The ID of the top content category assigned to the domain. |
 | `top_level_category_name` | string | yes | `"Shopping"` | The name of the top content category assigned to the domain. |
 | `top_level_category` | string | yes | `"Shopping (19821)"` | **Deprecated**. |
@@ -90,7 +90,7 @@ Data retention period for this report is 45 days.
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `booked_revenue` | money | `450.00` | booked_revenue | The revenue received from the advertiser. For more information, see Network Revenue and Billing Your Clients in the UI documentation. |
+| `booked_revenue` | money | `450.00` | booked_revenue | The revenue received from the advertiser. For more information, see [Network Revenue and Billing Your Clients](../monetize/network-revenue-and-billing-your-clients.md) in the UI documentation. |
 | `clicks` | int | `2067` | clicks | The total number of clicks. |
 | `click_thru_pct` | double | `2.756%` | (clicks / imps) * 100 | The rate of clicks to impressions as a percentage. |
 | `convs_per_mm` | double | `384.4` | (post_click_convs + post_view_convs / imps) * 1,000,000 | The number of conversions per million impressions. |

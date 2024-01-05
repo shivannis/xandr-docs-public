@@ -37,7 +37,8 @@ The `report_interval` field can be set to one of the following:
 
 Data retention period for the report is 428 days.
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
 ## Dimensions
 
@@ -66,8 +67,8 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
 | `split_name` | string | Yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 | `creative_id` | int | yes | `554` | The ID of the creative.<br><br>**Note**:<br> - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
-| `brand_id` | int | yes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the brand_id field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
-| `brand_name` | string | no | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the brand_name field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
+| `brand_id` | int | yes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
+| `brand_name` | string | no | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand` | string | no | `"Ace Hardware (3)"` | **Deprecated**. |
 | `publisher_id` | int | yes | `6787` | The number to identify the publisher. |
 | `publisher_code` | string | no | `"Publisher Code"` | The custom code to the identify the publisher. |
@@ -94,10 +95,10 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `imp_type_id` | int | yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1` ("Blank"): No creative served.<br>`2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br>`3` ("Default Error"): A default creative served due to a timeout issue.<br>`4` ("Default"): A default creative served because there were no valid bids.<br>`5` ("Kept"): Your advertiser's creative served on your publisher's site.<br>`6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br>`7` ("RTB"): Your advertiser's creative served on third-party inventory.<br>`8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br>`9` ("External Impression"): An impression from an impression tracker.<br>`10` ("External Click"): A click from a click tracker. |
 | `imp_type` | string | yes | `"Kept"` | The type of impression. For possible values, see `imp_type_id`. |
 | `buyer_type` | string | yes | `"Reseller"` | The type of buyer, set by Xandr. |
-| `supply_type` | string | no | `"web"` | The type of inventory. Possible values: `"web"`, `"mobile_web"`, or `"mobile_app"`. |
+| `supply_type` | string | no | `"web"` | The type of inventory. Possible values: <br> - `"web"` <br> - `"mobile_web"`<br> - `"mobile_app"` |
 | `payment_type` | string | yes | `"cpm"`, `"revshare"` | The type of payment to a broker. |
 | `revenue_type` | string | yes | `"CPA"` | The basis on which the member gets paid. |
-| `revenue_type_id` | int | yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br>`0` = Flat CPM <br>`1` = Cost Plus CPM <br>`2` = Cost Plus Margin <br>`3` = CPC <br>`4` = CPA <br>`5` = Revshare <br> `6` = Flat Fee <br>`7` = Variable CPM <br>`8` = Estimated CPM. |
+| `revenue_type_id` | int | yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br>`0` = Flat CPM <br>`1` = Cost Plus CPM <br>`2` = Cost Plus Margin <br>`3` = CPC <br>`4` = CPA <br>`5` = Revshare <br> `6` = Flat Fee <br>`7` = Variable CPM <br>`8` = Estimated CPM |
 | `external_inv_id` | int | Yes | `4921` | The ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](./external-inventory-code-service.md).<br> For impressions older than 100 days, the `external_inv_id` will be `0`. |
 | `external_inv_name`  | string | No | `"External Inv Name"` | The name of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](./external-inventory-code-service.md). |
 | `external_inv` | string | No | `"External Inv Name (4921)"` | **Deprecated**. |
@@ -127,7 +128,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `clicks` | int | `545` | clicks | The total number of clicks across all impressions. |
 | `click_thru_pct` | double | `1.12359550561797` | (clicks / imps) * 100 | The rate of clicks to impressions as a percentage. |
 | `total_convs` | int | `90` | post_click_convs + post_view_convs | The total number of post-view and post-click conversions. |
-| `post_view_convs_pixel` | int | `23` |  | Post view conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
+| `post_view_convs_pixel` | int | `23` |  | Post view conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Microsoft Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Microsoft Invest)](../invest/conversion-attribution.md). |
 | `post_clicks_convs_pixel` | int | `15` |  | Post click conversions for the pixel. Post view conversions for the pixel. For more information on how we attribute post-view (and other) conversions, see [Conversion Attribution (Monetize)](../monetize/conversion-attribution.md) or [Conversion Attribution (Invest)](../invest/conversion-attribution.md). |
 | `ctr` | double | `0.2327836` | clicks / imps * 100 | The rate of clicks to impressions. |
 | `convs_rate` | double | `0.0384413` | total_convs / imps * 100 | The rate of conversions to impressions. |

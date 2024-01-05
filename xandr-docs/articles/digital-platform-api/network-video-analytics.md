@@ -9,8 +9,9 @@ ms.custom: digital-platform-api
 
 The **Network Video Analytics** report can be used to view video event metrics for a network member. To drill down into more granular analytics for a specific advertiser or publisher, see the [Network Video Advertiser Analytics](./network-advertiser-video-analytics.md) and [Network Video Publisher Analytics](./network-publisher-video-analytics.md) reports.
 
-- Video metrics are recorded for VAST creatives only.
-- For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
+> [!NOTE]
+> - Video metrics are recorded for VAST creatives only.
+> - For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
 
 ## Time frame
 
@@ -46,7 +47,7 @@ Data in this report is retained for 420 days.
 | `hour` | time | Yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `day` | time | Yes | `"2010-02-01"` | The day of the auction. |
 | `month` | time | No | `"2010-02"` | The month of the auction. |
-| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default |
 | `buyer_member_name` | string | No | `"My Network"` | The name of the buying member. |
 | `buyer_member` | string | No | `"My Network (123)"` | **Deprecated** (as of October 17, 2016). |
 | `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
@@ -99,7 +100,7 @@ Data in this report is retained for 420 days.
 | `creative_frequency_bucket_id` | string | no | `"3"` | The ID of the creative frequency bucket. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
 | `site_domain` | string | no | `bestsiteever.com` | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store.<br>There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
 | `mobile_application_id` | int | Yes | `343200656` | A targetable Apple App Store ID, Android application ID, or Windows application ID. |
-| `supply_type` | string | Yes | `"mobile_web"` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"`. |
+| `supply_type` | string | Yes | `"mobile_web"` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"` |
 | `video_playback_method` | string | Yes | `"1"` | The playback method for the creative. See [Video Playback Method](#video-playback-method) below for possible values. |
 | `video_context` | string | Yes | `"3"` | The type of the video creative. See [Video Context](#video-context) below for possible values. |
 | `video_player_size_id` | string | Yes | `"2"` | The ID of the video player width. See [Player Size](#player-size) below for possible values. |
@@ -111,7 +112,7 @@ Data in this report is retained for 420 days.
 | `video_program_type` | string | No | `"series"` | The higher level categorization of the video program's format on which the ad will be played. For example, `Movie`, `Series`, `Special`, `Show`, `Event`, `Clip`, etc. |
 | `video_content_rating` | string | No | `"teens"` | The publisher-identified audience group for which the content is rated. For example, `All`, `Children (7+)` , `Teens (13+)`, `Young Adults (14+)`, or `Adults (18+)`. |
 | `content_duration_secs` | int | Yes | `480` | The length of the video content in seconds. |
-| `device_type` | string | Yes | `Desktops & Laptops`<br>`Mobile Phones`<br>`Tablets`<br>`TV`<br>`Game Consoles`<br>`Media Players`<br>`Set Top Box`<br>`Other Devices` | The type of device where the creative was set to play. |
+| `device_type` | string | Yes | <br> - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
 | `video_content_duration` | int | Yes | `100` | The length of the video content in seconds. |
 | `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
 | `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
@@ -162,13 +163,13 @@ Data in this report is retained for 420 days.
 | `completion_rate` | double | `85.45` | completions / imps | The number of video completions divided by the number of impressions. |
 | `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
 | `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
-| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An Imp refers to when the video player loads the video and starts the first frame. Videos Served refers to the VAST document being served in response to a request from the video player. |
+| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. |
 | `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
 | `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | `view_measurement_rate` | double | `45%` | view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 | `started_video_completion_rate` | double | `85.45` | completions / video_starts | The number of video completions divided by the number of video starts. |
-| `total_cost` | money | `123.45` | total_cost = media_cost + data_costs + partner_fees + commissions + serving_fees + publisher_revenue | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform.<br>Note: We have added logic to prevent double counting third-party fees during the breaking change period. |
+| `total_cost` | money | `123.45` | total_cost = media_cost + data_costs + partner_fees + commissions + serving_fees + publisher_revenue | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform.<br><br>**Note**: We have added logic to prevent double counting third-party fees during the breaking change period. |
 | `total_cost_ecpm` | money | `123.45` | (total_cost/imps) * 1,000 | The total cost per 1,000 imps. |
 | `total_cost_ecpc` | money | `123.45` | total_cost/clicks | The total cost per click. |
 | `total_cost_ecpa` | money | `123.45` | total_cost/conversions | The total cost per conversion. |
@@ -177,10 +178,10 @@ Data in this report is retained for 420 days.
 | `network_profit_ecpc` | money | `123.45` | network_profit/clicks | Network profit per click. |
 | `network_profit_ecpa` | money | `123.45` | network_profit/conversions | Network profit per conversion. |
 | `network_profit_margin` | money | `123.45` | network_profit/(booked_revenue + reseller_revenue) | Network profit margin. |
-| `profit_ecpm` | money | 123.45 | ((booked_revenue - total_cost)/imps) * 1,000 | Profit per 1,000 imps. |
-| `profit_ecpc` | money | 123.45 | (booked_revenue - total_cost)/clicks | Profit per click. |
-| `profit_ecpa` | money | 123.45 | (booked_revenue - total_cost)/conversions | Profit per conversion. |
-| `profit_margin` | money | 123.45 | (booked_revenue - total_cost)/booked_revenue | Buyer profit margin. |
+| `profit_ecpm` | money | `123.45` | ((booked_revenue - total_cost)/imps) * 1,000 | Profit per 1,000 imps. |
+| `profit_ecpc` | money | `123.45` | (booked_revenue - total_cost)/clicks | Profit per click. |
+| `profit_ecpa` | money | `123.45` | (booked_revenue - total_cost)/conversions | Profit per conversion. |
+| `profit_margin` | money | `123.45` | (booked_revenue - total_cost)/booked_revenue | Buyer profit margin. |
 | `Average View Time` | int | `28` | sum (creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions)) / sum (starts)) | An estimate for the average duration in seconds (rounded to 0 decimal places) of the creative that was viewed. This is calculated by approximating the duration watched as the mid-point between the video events (for example, a start event would estimate that 12.5% of the creative is viewed). |
 | `Average View Time Percent` | percentage | `89%` | sum (((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions))∕starts) | The average view time expressed as a percentage of the total possible view time. |
 
@@ -255,7 +256,7 @@ Data in this report is retained for 420 days.
 
 ### Create JSON formatted report request
 
-The JSON file should include the report_type `"video_analytics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` of `"video_analytics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 ```
 $ cat video_analytics_network

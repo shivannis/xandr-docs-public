@@ -92,7 +92,7 @@ Once you have the placement ID, you format the placement tag as follows and hand
 | `default_creatives` | array | The default creatives that will be displayed instead of a PSA when there is no auction winner. For each default creative, the reserve price is set with the `"price"` field in the array. See [Default Creatives](#default-creatives) below for more details.<br><br>**Note**: The placement will not pop if the reserve price is not met, except in the case of a prepop. |
 | `reserve_price` | double | The reserve price for each of the placement's default creatives is set in the `default_creatives` array (see [Default Creatives](#default-creatives) below). If the placement does not have default creatives, a reserve price can be set here for the placement; this is not best practice, however, as the reserve price may cause the display of a PSA. <br><br>**Important**: A Yield Management Profile will supersede any reserve price settings at the Placement level. If you have such a profile, you must set your desired reserve price via a hard floor. |
 | `hide_referer` | Boolean | If `true`, the referrer will not be reported. |
-| default_referrer_url | string | If a [Visibility Profile](./visibility-profile-service.md) is set to hide inventory URLs in your bid requests, you can set this field to pass a vanity URL instead. This is particularly useful in cases where publishers do not want to share actual domains but nonetheless want buyers to be able to identify them by domain. |
+| `default_referrer_url` | string | If a [Visibility Profile](./visibility-profile-service.md) is set to hide inventory URLs in your bid requests, you can set this field to pass a vanity URL instead. This is particularly useful in cases where publishers do not want to share actual domains but nonetheless want buyers to be able to identify them by domain. |
 | `visibility_profile_id` | int | The ID of the visibility profile assigned directly to the placement. For more details about visibility profiles, see the [Visibility Profile](./visibility-profile-service.md). |
 | `exclusive` | Boolean | **Read-only**.<br>To designate whether a placement's inventory is to be made available for resale, use the `rtb` field in the `marketplace_map` object of the placement's site. See [Site Service](./site-service.md) for a description of this field. All inventory made available for resale is part of the RTB Marketplace.<br><br>**Default**: `False` |
 | `pixel_url` | string | Piggyback call upon user loading placement.<br><br>**Default**: `null` |
@@ -120,15 +120,15 @@ Once you have the placement ID, you format the placement tag as follows and hand
 | `cost_cpm` | double | If a value exists, it will be used as the payment information for the placement. This will override any payment rules associated with the publisher.<br><br>**Default**: `null` |
 | `is_prohibited` | Boolean | **Read-only**. If `true`, the placement has been prohibited due to violation of Xandr content policies. Direct and third-party auctions will not be run for a prohibited placement.<br><br>**Default**: `false` |
 | `last_modified` | timestamp | **Read-only**. The date and time when the placement was last modified. |
-| `stats` | object | The stats object has been **deprecated** (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead. |
-| `content_retrieval_timeout_ms` | int | The timeout this placement will set on content retrieved from "mediated" creatives, i.e., creatives whose `content_source` is set to `"mediation"`. For more information, see the [Creative Service](./creative-service.md). If set to `0`, the ad server will use the value from the [Member Service](./member-service.md)<br><br>Defaults to `0` if not provided to the API on `PUT` or `POST` calls.<br><br>If ad server reads a `0` in this field, it will perform a member lookup and use the default timeout defined by the [Member Service](./member-service.md) (assuming it's also non-zero).<br><br>When creating a placement, no values will be copied into this field from the member's default settings. You must explicitly specify them in your calls to `POST`. For more information, see the `default_content_retrieval_timeout_ms` field of the [Member Service](./member-service.md).<br><br>**Default**: `0` |
+| `stats` | object | The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead. |
+| `content_retrieval_timeout_ms` | int | The timeout this placement will set on content retrieved from "mediated" creatives, i.e., creatives whose `content_source` is set to `"mediation"`. For more information, see the [Creative Service](./creative-service.md). <br> - If set to `0`, the ad server will use the value from the [Member Service](./member-service.md)<br>- Defaults to `0` if not provided to the API on `PUT` or `POST` calls.<br>- If ad server reads a `0` in this field, it will perform a member lookup and use the default timeout defined by the [Member Service](./member-service.md) (assuming it's also non-zero).<br> - When creating a placement, no values will be copied into this field from the member's default settings. You must explicitly specify them in your calls to `POST`. For more information, see the `default_content_retrieval_timeout_ms` field of the [Member Service](./member-service.md).<br><br>**Default**: `0` |
 | `enable_for_mediation` | Boolean | This will be the source of truth for whether a placement should accept mediated content. Unless set on `PUT` or `POST`, this field will inherit its default value from the member. If the default value is changed on the [Member Service](./member-service.md), that action will not retroactively impact placements created previously; they will continue to be set to the old default value. In other words, the value of this field cannot be updated retroactively by setting the member default. For more information, see the `default_enable_for_mediation` field of the [Member Service](./member-service.md).<br><br>**Default**: Inherited from `default_enable_for_mediation` field of the [Member Service](./member-service.md). |
 | `private_sizes` | array of objects | The list of placement sizes that may be allowed to serve in deals and packages. See [Private Sizes](#private-sizes) below for more details. |
 | `video` | object | The media subtype allowed to serve on the placement. See [Video Settings](#video-settings) below for more details.<br><br>**Default**: `null` |
 | `ad_types` | array of objects | Contains information relating to placement types, including the ad type ID and information about the renderer. For more information, see [Ad Types](#ad-types) below.<br><br>**Default**: `null`<br>**Required On**: `PUT` |
 | `use_detected_domain` | boolean | **Read-only**. Whether to use the detected domain versus the reported domain. Defaults to `true` for all clients.<br><br>**Default**: `true` |
 | `mime_types` | array of strings | The list of mime types to include or exclude on the placement. `supported_mime_types_action_include` below is used to specify whether to include or exclude those mime types. For a list of the strings used to identify each mime types, see [Supported Mime Types](#supported-mime-types).<br><br>**Default**: `empty` |
-| `supported_mime_types_action_include` | boolean | If `true`, the mime types listed in the mime_types array will be included.<br><br>**Default**: `false` |
+| `supported_mime_types_action_include` | boolean | If `true`, the mime types listed in the `mime_types` array will be included.<br><br>**Default**: `false` |
 | `handles_mixed_media` | boolean | This tells our platform whether the video player can support a VAST file with different mime types.<br><br>**Default**: `true` |
 | `tinytag_renderer_asset_floor_prices` | array of objects | Associates floor prices to native creatives that have been assigned to the placement. For additional information, see [Tinytag Renderer Asset Floor Prices](#tinytag-renderer-asset-floor-prices).<br><br>**Required On**: `PUT` |
 | `is_ss_native_assembly_enabled` | boolean | When enabled, although the original request will be a banner request, the requests that are sent to bidders will have native info set in order to receive native assets back in the responses. The final response will be set back to a banner ad type with a native assembled ad markup attached. If `true` then yes. |
@@ -149,7 +149,7 @@ Creatives are categorized by media type and media subtype. Media type defines th
 
 ### Supported media subtypes
 
-Creatives are categorized by media type and media subtype. Media type defines the general display style of the creative, for example, `"Banner"`, and media subtype defines the specific display style of creatives, for example, `"Standard Banner"` or `"In-Banner Video"`. You can use this array to limit the media subtype, the specific display style of creatives, that can serve on a placement. To limit the media type, the general display style of creatives, use the supported_media_types array (see [Supported Media Types](#supported-media-types) above).
+Creatives are categorized by media type and media subtype. Media type defines the general display style of the creative, for example, `"Banner"`, and media subtype defines the specific display style of creatives, for example, `"Standard Banner"` or `"In-Banner Video"`. You can use this array to limit the media subtype, the specific display style of creatives, that can serve on a placement. To limit the media type, the general display style of creatives, use the `supported_media_types` array (see [Supported Media Types](#supported-media-types) above).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -200,7 +200,10 @@ The `mime_types` array of objects supports the mime types shown in the following
 
 ### Video settings
 
-If the `supported_media_type` is "video" or the `supported_media_subtypes` is `"Standard VAST"`, these fields should be included in the `video` object. Please see [Examples] below.
+If the `supported_media_type` is `"video"` or the `supported_media_subtypes` is `"Standard VAST"`, these fields should be included in the `video` object. Please see [Examples](#examples) below.
+
+> [!NOTE]
+> The following settings affect auction outcomes: for Outstream player settings, which determine the ultimate behavior of the Outstream video player, see "Outstream Video Player Settings" in our UI documentation.
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -213,7 +216,7 @@ If the `supported_media_type` is "video" or the `supported_media_subtypes` is `"
 | `skipoffset_seconds` | int | The number of seconds that is allowed for the video to play, before it can be skipped.<br>The default value is `null`. <br><br>**CAUTION**: If you set this value to anything but `null`, the `supports_skippable` field must be set to `true`. (See below). |
 | `supports_skippable` | boolean | The ad slot is skippable.<br>Possible values: `"true"` or `"false"` |
 | `context` | string | Roll position of the video creative.<br>Possible Values: `"pre-roll"`, `"mid-roll"`, `"post-roll"`.<br><br>**Important**: This field must be set in order to enable ad pods. |
-| `layback_method` | string | The different playback methods are:<br> - `Auto-play, sound-on`<br>`Auto-play, sound-off`<br>`Click-to-play`<br>`Mouse-over`<br>`Auto-play, sound unknown`<br>Possible values: <br> - `"auto_play_sound_on"` <br> - `"auto_play_sound_off"` <br> - `"click_to_play"` <br> - `"mouse_over"` <br> - `"auto_play_sound_unknown"` <br> - `null` |
+| `layback_method` | string | The different playback methods are:<br> - `Auto-play, sound-on`<br> - `Auto-play, sound-off`<br> - `Click-to-play`<br> - `Mouse-over`<br>- `Auto-play, sound unknown`<br><br>Possible values: <br> - `"auto_play_sound_on"` <br> - `"auto_play_sound_off"` <br> - `"click_to_play"` <br> - `"mouse_over"` <br> - `"auto_play_sound_unknown"` <br> - `null` |
 | `frameworks` | array of strings | The framework of the placement. Options include:<br> - `VPAID 1.0`<br> - `VPAID 2.0`<br> - `MRAID-1`<br> - `ORMMA`<br> - `MRAID-2`<br>Possible values: <br> - `"vpaid_1_0"` <br> - `"vpaid_2_0"` <br> - `"mraid_1"` <br> - `"ormma"` <br> - `"mraid_2"` |
 | `video_bumpers` | array of objects | The bumpers that can be associated with the ad pod. Bumper duration is not included in the overall duration of the ad pod. See [video bumpers](#video-bumpers) object. |
 | `player_vast_version` | string | This field specifies the highest vast version the placement supports, and should be set to highest value that your player supports. Creatives that require a vast version higher than your player version will not be eligible to serve in your placement.<br>Possible values:<br> - `2.0`<br> - `3.0`<br> - `4.0`<br><br> **CAUTION**: Specifying a value higher than your player supports may cause errors when unsupported creatives are rendered. |
@@ -221,10 +224,7 @@ If the `supported_media_type` is "video" or the `supported_media_subtypes` is `"
 | `minbitrate` | int | The minimum bitrate in kbps. |
 | `mf_min_width` | int | The minimum width of the video creative. |
 | `mf_min_height` | int | The minimum height of the video creative. |
-| aspect `ratios` | array of objects | The creative aspect ratio that can serve for a video placement. The array contains `ratio_width` and `ratio_height`. |
-
-> [!NOTE]
-> The following settings affect auction outcomes: for Outstream player settings, which determine the ultimate behavior of the Outstream video player, see "Outstream Video Player Settings" in our UI documentation.
+| `aspect ratios` | array of objects | The creative aspect ratio that can serve for a video placement. The array contains `ratio_width` and `ratio_height`. |
 
 ### Video bumpers
 
@@ -252,9 +252,9 @@ This array of objects contains information relating to placement types, includin
 |:---|:---|:---|
 | `id` | int | The ID of the `ad_type`.<br>Possible values:<br>`1` = Banner<br>`2` = Video<br>`3` = Native<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
 | `renderer_id` | int | The ID of the renderer.<br>Possible values:<br>`1` = outstream banner<br>`2` = outstream video<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
-| `name` | string | The name of the ad_type in all lowercase letters for example video or banner |
+| `name` | string | The name of the `ad_type` in all lowercase letters for example `video` or `banner`. |
 | `display_name` | string | The display name of the `ad_type`, shown as the ad type with initial caps, for example `Video` or `Banner`. |
-| `renderer` | multi object | An object consisting of the id and `display_name` of the renderer.<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
+| `renderer` | multi object | An object consisting of the `id` and `display_name` of the renderer.<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
 
 ### Tinytag renderer asset floor prices
 
@@ -271,9 +271,8 @@ This array of objects is used to associate floor prices to native creatives that
 
 You use this array to assign default creatives to the placement. Please note the following requirements:
 
-- A default creative must not be expired. See the is_expired field in the [Creative Service](./creative-service.md) for more information.
-
-- A default creative must be assigned to a creative template that matches the `supported_media_types` and `supported_media_subtypes` of the placement. For example, if the placement allows creatives of the `"Banner"` media type, you would not be able to associate default creatives that use a creative template for the `"Interstitial"` media type. See the template field in the [Creative Service](./creative-service.md) for more information.
+- A default creative must not be expired. See the `is_expired` field in the [Creative Service](./creative-service.md) for more information.
+- A default creative must be assigned to a creative template that matches the `supported_media_types` and `supported_media_subtypes` of the placement. For example, if the placement allows creatives of the `"Banner"` media type, you would not be able to associate default creatives that use a creative template for the `"Interstitial"` media type. See the `template` field in the [Creative Service](./creative-service.md) for more information.
 
 - If the placement is sized (the `"width"` and `"height"` fields are defined for the placement), this array should contain only one creative with the matching dimensions.
 
@@ -321,12 +320,11 @@ This array determines the specific placement sizes that are allowed to serve for
 
 The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead.
 
-Toolbar & Browser Plug-in Declaration
+**Toolbar & browser plug-in declaration**
 
 According to [platform policy](./placement-service.md), sellers must identify all toolbar/browser plug-in inventory and segregate it from other inventory on its own placements. To identify toolbar inventory, sellers must:
 
-- Set the inventory_attribute appropriately
-
+- Set the `inventory_attribute` appropriately.
 - Send the required information in the toolbar array, described here:
 
 | Parameter | Type | Description |
