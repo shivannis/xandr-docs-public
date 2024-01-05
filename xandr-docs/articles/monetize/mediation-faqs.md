@@ -145,17 +145,17 @@ mediation.
 | Network | Optimized for display on... |Optimized for display on...  | Optimized for display on... | Reporting? | Integration Type | Contact | Downloads (SDK only) |
 |---|---|---|---|---|---|---|---|
 |  | **Mobile App** | **Mobile Web** | **Desktop Web** |  |  |  |  |
-| AdColony | X |  |  | No | SDK | -[AdColony Support](https://www.digitalturbine.com/app-developers/#monetizationsolutions) | -[AdColony SDK](https://www.digitalturbine.com/app-developers/#monetizationsolutions) |
+| AdColony | X |  |  | No | SDK | [AdColony Support](https://www.digitalturbine.com/app-developers/#monetizationsolutions) | - [AdColony SDK](https://www.digitalturbine.com/app-developers/#monetizationsolutions) |
 | AdMob | X |  |  | Yes | SDK | [AdMob Support](https://support.google.com/admob/#topic=7383088) | - [AdMob iOS SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadios)<br> - [AdMob Android SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadandroid) |
-| [AdSense](https://support.google.com/adsense/#topic=3373519) |  | X | X | Yes | Client | [AdSense Support](https://support.google.com/adsense/#topic=3373519) | N/A |
+| AdSense |  | X | X | Yes | Client | [AdSense Support](https://support.google.com/adsense/#topic=3373519) | N/A |
 | Amazon (mobile) | X |  |  | No | SDK | [Amazon Support](https://developer.amazon.com/public/support/contact/contact-us) | - [Amazon iOS SDK](https://developer.amazon.com/public/apis/earn/mobile-ads/ios)<br> - [Amazon Android SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadandroid) |
 | Amazon (web) |  | X | X | No | Client | [Amazon Support](https://developer.amazon.com/public/support/contact/contact-us) | N/A |
 | Claymotion | X |  |  | No | Server | [Claymotion Support](mailto:adops@claymotion.in) | N/A |
 | Doubleclick for Publishers | X |  |  | No | SDK | [DFP Support](https://support.google.com/admanager/?hl=en#topic=7505988) | - [DFP SDK](https://developers.google.com/ad-manager/mobile-ads-sdk) |
-| Hunt | X | X |  | No | Server | [Hunt Support](http://www.huntmads.com/contacto) | N/A |
+| Hunt | X | X |  | No | Server | Hunt Support | N/A |
 | iAd | X |  |  | No | SDK | [Apple Developer Support](https://developer.apple.com/support/) | - [iAd SDK](https://developer.apple.com/iad/) |
 | InMobi | X | X |  | Yes | Server | [InMobi Support](https://support.inmobi.com/) | N/A |
-| [Jumptap](https://support.jumptap.com/index.php/Main_Page) | X | X |  | Yes | Server | [JumpTap Support](https://support.jumptap.com/index.php/Main_Page) | N/A |
+| Jumptap | X | X |  | Yes | Server | [JumpTap Support](https://support.jumptap.com/index.php/Main_Page) | N/A |
 | Millennial Media (mobile web) |  | X |  | Yes | Client | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | N/A |
 | Millennial Media (mobile app) | X |  |  | Yes | SDK | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) | [Millennial Media SDK](mmedia.com/resources/sdk-api) |
 | MobFox | X | X |  | Yes | Server | [MobFox Support](https://www.mobfox.com/publishers/integration/) | - [MobFox SDK](https://www.mobfox.com/publishers/integration/) |

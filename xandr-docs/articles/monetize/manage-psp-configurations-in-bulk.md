@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Manage PSP Configurations in Bulk
+# Manage PSP configurations in Bulk
 
 Bulk upload allows a user to manage multiple configurations via bulk
 template rather than creating configurations individually in the UI.
@@ -22,7 +22,7 @@ Follow these steps to create new PSP configurations in bulk:
 1. In the left navigation pane, click **Bulk
     Upload New Configurations**.
 
-**Configuration Filters**
+**Configuration filters**
 
 You can also include these optional configuration settings:
 
@@ -130,7 +130,7 @@ If these optional settings are left blank, then any auction for the selected Pla
     > Follow these tips if you do not see the Demand Partner you wish to add in the drop down list.
     > - Ensure you have the proper media type selected above.
     > - If the media type is set properly, ensure you have added the Demand Partner in the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
-    > - Check that the partner shows up as `Enabled` in that list. You can view a full list of available Demand Partners at [Prebid](iew.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F6%2Ff%2F7%2F6f755603-e9af-4148-9e52-02e1fb7262b0%2FXandr%2Fxandr-generic-template-third-party.xlsx&wdOrigin=BROWSELINK).
+    > - Check that the partner shows up as `Enabled` in that list. You can view a full list of available Demand Partners at [Prebid][Prebid](prebid-server-premium-demand-partner-integrations.md).
 
 1. Once you select a **Demand Partner** from the dropdown, new input fields
     will appear representing the parameters, both required and optional,
@@ -175,9 +175,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 Submit the completed template to your Xandr account team for processing
 unless otherwise instructed.
 
-  - Select the **Actions** menu > **Bulk Add Demand Partner to Configurations**.
-
-> [!NOTE]
+ > [!NOTE]
 > The bulk template cannot yet be used to edit configuration-level details (i.e. media type, size(s), OS family(ies)) or demand partner details (which parameters to utilize or their values). Those capabilities will be added in the future, as well as self-service processing and upload of the templates.
 
 ## Related topics
