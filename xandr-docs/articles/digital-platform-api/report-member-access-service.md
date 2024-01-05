@@ -18,7 +18,7 @@ data stored in `bidder.rpt_report_member_access`.
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `POST` | [https://api.appnexus.com/rpt-report-member-access](https://api.appnexus.com/rpt-report-member-access)<br>(template JSON) | Add a new report-member-access setting. |
-| `DELETE` | [https://api.appnexus.com/object?id=REPORT_MEMBER_ACCESS_ID](https://api.appnexus.com/object?id=REPORT_MEMBER_ACCESS_ID)<br><br>**Note:** `REPORT_MEMBER_ACCESS_ID` is a uniquely generated id for the given setting and can be retrieved via `GET`. | Delete a custom template. |
+| `DELETE` | [https://api.appnexus.com/object?id=REPORT_MEMBER_ACCESS_ID](https://api.appnexus.com/object?id=REPORT_MEMBER_ACCESS_ID)<br><br>**Note:** `REPORT_MEMBER_ACCESS_ID` is a uniquely generated ID for the given setting and can be retrieved via `GET`. | Delete a custom template. |
 | `GET` | [https://api.appnexus.com/rpt-report-member-access](https://api.appnexus.com/rpt-report-member-access) | View all report-member-access settings. |
 | `GET` | [https://api.appnexus.com/rpt-report-member-access?report_id=REPORT_ID](https://api.appnexus.com/rpt-report-member-access?report_id=REPORT_ID) | View report-member-access settings for a specific report. |
 
