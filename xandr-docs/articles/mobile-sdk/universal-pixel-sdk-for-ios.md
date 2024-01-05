@@ -26,7 +26,7 @@ In order to use the Pixie SDK, you must have a valid Xandr Unified Pixel ID. Th
 
 There are two ways to install the SDK:
 
-1. **Using [CocoaPods](https://cocoapods.org/)**
+- **Using [CocoaPods](https://cocoapods.org/)**
 
     CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).
     Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
@@ -54,7 +54,7 @@ There are two ways to install the SDK:
   
     CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
-2. **Using Xandr Unified Pixel SDK XCFramework**
+- **Using Xandr Unified Pixel SDK XCFramework**
 
 > [!NOTE]
 > We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
