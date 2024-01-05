@@ -1,17 +1,18 @@
 ---
-title: About Forecasts and Adjustments
+title: Forecasts and Adjustments
 description: In this article, learn what forecasts are, the types of adjustments you can make, and their use cases.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# About forecasts and adjustments
+# Forecasts and adjustments
 
+## Forecasts
 Yield Analytics works with your company to create the forecasts for each product in yield analytics. This also automatically detects spikes in traffic and mitigates them when forecasting. Use forecasting to predict how a product's impressions will be consumed. When viewed on the **Capacity** tab, the Capacity Forecast displays the same information as running a Capacity Forecast report on the **Reports** tab. However, when accessed from the **Capacity** tab, yield analytics specifies the metrics for you. In addition, on the **Capacity** tab you can add or edit adjustments to a forecast and view adjustments for overlapping products. You can also view how adjustments made to them impact the forecasted product.
 
 You can only forecast capacity for the future (i.e., you can't create a forecast for a time period in the past).
 
-## About adjustments
+## Adjustments
 
 To ensure a more standard delivery curve, you may need to have the system ignore occasional spikes, holidays, and other discrepancies in forecasts, which are called adjustments. There are two types of adjustments:
 
