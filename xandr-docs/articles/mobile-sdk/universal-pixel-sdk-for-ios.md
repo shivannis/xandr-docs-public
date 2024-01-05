@@ -52,20 +52,20 @@ There are two ways to install the SDK:
     pod install
     ```
   
-    CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
+    4. CocoaPods will download the Pixie SDK and create a workspace in the project directory. If your project is currently open, close it and open the workspace.
 
 - **Using Xandr Unified Pixel SDK XCFramework**
 
 > [!NOTE]
 > We are distributing PixieSDK.xcframework, which you can download [here](https://acdn.adnxs.com/mobile/pixiesdk/ios/1.1/PixieXCFramework.zip). Download the file and add it to the **Frameworks** folder.
 
-- Create **Frameworks** folder.
+1. Create **Frameworks** folder.
   
   Right click on your project in the project navigator (top-most entry), and select **New Group**. Name the new group as **Frameworks**.
 
    :::image type="content" source="media/universal-pixel-sdk-for-ios-a.png" alt-text="The screenshot that displays how to create a Framework group within the poject structure using the project navigator.":::
   
-- **Add `PixieSDK.xcframework` to Frameworks folder**.
+2. **Add `PixieSDK.xcframework` to Frameworks folder**.
 
   Drag and drop `PixieSDK.xcframework` from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the **Frameworks**.
 
@@ -81,7 +81,7 @@ There are two ways to install the SDK:
   :::image type="content" source="media/universal-pixel-sdk-for-ios-d.png" alt-text="The  screenshot that displays the results after copying the files.":::
   
 <!-- -->
-- **Embedded PixieSDK.xcframework in project’s target**
+3. **Embedded PixieSDK.xcframework in project’s target**
 
   1. Navigate to your project settings by clicking on it in the project navigator.
   1. Make sure that your target is selected and **General** tab is open.
