@@ -26,7 +26,7 @@ There are two capabilities exposed by this API: Access and Delete. In both cases
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `identifier` | string | The identifier for the end user.<br>For example, `"123e4567-e89b-12d3-a456-426655440000"` or `"7738918429796999062"`.<br>**Required On:** `POST` |
-| `identifier_type` | string enum | The identifier type for the end user. May be either the Mobile Advertising ID or the Xandr user ID for the user.<br>**Required On:** `POST`<br>Accepted values: `"maid"` or `"uuid2"`. |
+| `identifier_type` | string enum | The identifier type for the end user. May be either the Mobile Advertising ID or the Xandr user ID for the user.<br>**Required On:** `POST`<br>**Accepted values:** `"maid"` or `"uuid2"`. |
 | `request_type` | string | The type of privacy request. Currently, Xandr only supports `"delete"` and `"access"` requests.<br>**Required On:** `POST` |
 
 ## Examples

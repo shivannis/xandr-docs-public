@@ -25,7 +25,7 @@ Setting up a GDALI typically involves making requests to the following API servi
 | [https://api.appnexus.com/profile](https://api.appnexus.com/profile) | profile | [Profile Service](profile-service.md) |
 | [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) | line-item (ALI) | [Line Item - ALI Service](line-item-service---gdali.md) |
 
-This guide uses cURL examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
+This guide uses `cURL` examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
 
 ## Prerequisites
 
@@ -64,8 +64,8 @@ GDALI with typical configurations:
 
 ### Step 1: Obtain an authorization token
 
-First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests (For more
-information, see [Authentication Service](authentication-service.md)). To obtain an authorization token, do the following:
+First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests. For more
+information, see [Authentication Service](authentication-service.md). To obtain an authorization token, do the following:
 
 1. Create a JSON file containing your username and password.
 
@@ -78,8 +78,8 @@ information, see [Authentication Service](authentication-service.md)). To obtai
     }
     ```
 
-1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body (For more
-information, see [Authentication Service](authentication-service.md)). In the cURL request below, the authorization token returned is stored in the “`cookies`” file.
+1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body. For more
+information, see [Authentication Service](authentication-service.md). In the `cURL` request below, the authorization token returned is stored in the “`cookies`” file.
 
     ```
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
@@ -118,7 +118,7 @@ information, see [Insertion Order Service](insertion-order-service.md).
 > Associating a `profile_id` (e.g., frequency capping or setting additional targeting) on the insertion order object may result in
 > unexpected forecasting or delivery for PGLIs and GDALIs. It is recommended not to use `profile_id` for insertion orders intended for the use with GDALIs.
 
-**JSON fields for publisher insertion order**
+#### JSON fields for publisher insertion order
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -127,7 +127,7 @@ information, see [Insertion Order Service](insertion-order-service.md).
 | `currency` | string | The currency assigned to the insertion order. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). <br><br>**Note:** Once the insertion order has been created, the currency cannot be changed. |
 | `budget_type` | enum | The budget type of the insertion order. For GDALI, the value must be set to `"flexible"` or `"impression"`. |
 | `budget_intervals` | array | Budget intervals enable date intervals to be attached to an insertion order.<br><br>**Note:**<br>- The insertion order must not contain more than one `budget_intervals` array.<br>- The insertion order must have unlimited budget (all budget fields in the `budget_intervals` array must be omitted or set to `null`). |
-| `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (**Note:** `hh:mm:ss` must be set to `00`). Typically this would be the current date. |
+| `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` <br>**Note:** `hh:mm:ss` must be set to `00`. Typically this would be the current date. |
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. This value is optional. |
 | `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
 | `profile_id` | int | A profile is a generic set of rules for targeting inventory.<br><br>**Warning:** Associating a profile_id (e.g., frequency capping or setting additional targeting) on the insertion order object may result in unexpected forecasting or delivery for programmatic guaranteed (PGLI) and guaranteed delivery (GDALI) line items. It is recommended not to use profile_id for insertion orders intended for use with GDALIs. |
@@ -281,8 +281,9 @@ For a full list of fields and more information, see [Profile Service](profile-s
     curl -b cookies -c cookies -X POST -d @gdali_profile 'https://api.appnexus.com/profile?advertiser_id=3872575'
     ```
 
-1. Check the response body of your request (see **Example Response** below). If your request was successful, you’ll get a "`status`" of  “`OK`” and you’ll see the updates you made.
-       **Example Response**
+1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a "`status`" of  “`OK`” and you’ll see the updates you made.
+
+    **Example response**
 
     ```
     {
@@ -464,7 +465,7 @@ For a full list of fields and more information, see [Profile Service](profile-s
 
 Finally, you'll need to create the GDALI. In the example below, we will be defining a GDALI with impression delivery goal booking revenue on a CPM basis.  
   
-JSON Fields for GDALI Line Item
+#### JSON fields for GDALI line item
 
 For more information, see [Line Item Service - GDALI](line-item-service---gdali.md).
 
@@ -483,7 +484,7 @@ For more information, see [Line Item Service - GDALI](line-item-service---gdali.
 | `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:** Depending on what you set the `revenue_type` field to, this field must be set to the actual value of that revenue type (e.g. `flat_fee` or `cpm`). |
 | `budget_intervals` | array | Budget intervals enable date intervals and budgets to be attached to a line items.<br><br>**Note:** The GDALI must not contain more than one `budget_intervals` array. |
 | `budget_intervals.timezone` | string<br>(obj in array) | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is `"EST5EDT"` or the advertiser's timezone. |
-| `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (**Note:** `hh:mm:ss` must be set to `00`). Typically, this would be the current date. |
+| `budget_intervals.start_date` | timestamp<br>(obj in array) | The start date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` <br>**Note:** `hh:mm:ss` must be set to `00`. Typically, this would be the current date. |
 | `budget_intervals.end_date` | timestamp<br>(obj in array) | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (`hh:mm:ss` should be set to `hh:59:59`). Must not be `null` for GDALIs. For delivery to work best, your budget intervals should have a duration of at least 4 hours. |
 | `budget_intervals.lifetime_budget_imps` | double (obj in array) | The lifetime budget in impressions for the budget interval.<br><br>**Note:** When a line item is enabled for roadblocks, only master creative imps will count against `lifetime_budget_imps`. |
 | `budget_intervals.lifetime_pacing` | boolean (obj in array) | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. GDALIs must be defined as `true`. |

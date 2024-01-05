@@ -17,7 +17,7 @@ ms.custom: digital-platform-api
 - [Curated Deal Line Item API Setup Guide](curated-deal-line-item-api-setup-guide.md)
 - [Publisher GDALI API Setup Guide](publisher-gdali-api-setup-guide.md)
 - [GDLI to GDALI Migration](gdli-to-gdali-migration.md)
-- Uploading Segment Data with RTSS
+- [Uploading Segment Data with RTSS](uploading-segment-data-using-bss.md)
 - [Programmatic Guaranteed Deal for Microsoft Monetize (Third-Party Ad Server Pacing, Tag Integration) API Setup Guide](programmatic-guaranteed-deal-for-monetize-ssp--third-party-ad-server-pacing--tag-integration--api-setup-guide.md)
 - [Programmatic Guaranteed Deal through Microsoft Monetize Ad Server API Setup Guide](programmatic-guaranteed-deal-through-monetize-ad-server-api-setup-guide.md)
 - [Multi-Buyer Deals API Setup](multi-buyer-deals-api-setup.md)

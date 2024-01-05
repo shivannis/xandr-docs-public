@@ -55,7 +55,7 @@ The following steps will guide you through the process of setting up a deal line
 
 ### Step 1: Obtain an authorization token
 
-First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests (For more information, see [Authentication Service](authentication-service.md)). To obtain an authorization token, do the following:
+First, you’ll need to obtain an authorization token. You must then include this authorization token in all subsequent requests. For more information, see [Authentication Service](authentication-service.md). To obtain an authorization token, do the following:
 
 1. Create a JSON file containing your username and password.
 
@@ -68,7 +68,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
     }
     ```
 
-1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body (For more information, see [Authentication Service](authentication-service.md)). In the cURL request below, the authorization token returned is stored in the “`cookies`” file.
+1. Make a `POST` request to the `/auth` endpoint with this JSON file in the request body. For more information, see [Authentication Service](authentication-service.md). In the cURL request below, the authorization token returned is stored in the “`cookies`” file.
 
     ```
     curl -c cookies -X POST -d @authentication.json 'https://api.appnexus.com/auth'
@@ -100,7 +100,7 @@ You'll need to create or access an advertiser from which to create a deal line i
 | `timezone` | enum | Optional | The timezone of the advertiser. For details and accepted values, see [API Timezones](api-timezones.md). |
 | `use_insertion_orders` | boolean | Required | This field must be set to `true` in order to create deal line items. |
 
-If you don't already have an advertiser to use, create an advertiser by doing the following (For more
+If you don't already have an advertiser to use, create an advertiser by doing the following (for more
 information, see [Advertiser Service](advertiser-service.md)):
 
 1. Create an advertiser JSON:
@@ -137,11 +137,11 @@ You'll need to create or access an insertion order to create a PG deal. Deal lin
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the insertion order |
 | `state` | enum | Required | The state of the insertion order: `active` or `inactive` |
-| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date"`: `null`<br>- `"lifetime_budget"`: `null`<br>- `"lifetime_budget_imps"`: `null`<br>- `"daily_budget"`: `null`<br>- `"daily_budget_imps"`: `null`<br>- `"enable_pacing"`: `false`<br>- `"lifetime_pacing"`: `false`<br>- `"lifetime_pacing_pct"`: `null` |
+| `budget_intervals`<br>(Billing Periods) | array of objects | Required | To create an insertion order for a PG deal through the API, to be seamless, you must use the `budget_intervals` field. The following array objects must be set to to the following values:<br>- `"end_date":` `null`<br>- `"lifetime_budget":` `null`<br>- `"lifetime_budget_imps":` `null`<br>- `"daily_budget":` `null`<br>- `"daily_budget_imps":` `null`<br>- `"enable_pacing":` `false`<br>- `"lifetime_pacing":` `false`<br>- `"lifetime_pacing_pct":` `null` |
 | `budget_type` | enum | Required | Budget type will translate to all deals below the insertion order. For PG deals, the `budget_type` field can be set to either of the following values: `"impression"` or `"flexible"`. If you select an impression budget type for your insertion order, then you can't have deal line items with a revenue budget associated to that insertion order. However, insertion orders with `"flexible"` budget types can have deal line items with either impression or revenue budget types. |
 | `pacing` |  | Required |  |
 
-If you don't already have an insertion order to use, create an insertion order by doing the following (For more
+If you don't already have an insertion order to use, create an insertion order by doing the following (for more
 information, see [Insertion Order Service](insertion-order-service.md)):
 
 1. Create an insertion order JSON (two examples are shown below):  
@@ -169,7 +169,7 @@ information, see [Insertion Order Service](insertion-order-service.md)):
 
 1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.  
 
-    **Example Request: No end date, unlimited budget**
+    **Example request: No end date, unlimited budget**
 
     ```
     curl -b cookies -c cookies -X POST -d @insertion-order-noenddate.json 'https://api.appnexus.com/insertion-order?advertiser_id=2605036&member_id=2378'
@@ -194,17 +194,17 @@ You'll need to create the deal you want to associate with the PG deal line item.
 | `buyer` | object | Required, if not using the `buyer_seats` field | The buying bidder and member who can target this deal. A deal will only ever use the `buyer` field or the `buyer_seats` field, not both. For more details, see the "Buyer" section in the [Deal Service](deal-service.md).<br><br>**Note:** PG deals can only have one buyer.<br><br>**Warning:** We are planning to deprecate the `buyer` field. Please be prepared to use either `"buyer_seats"` or `"buyer_members"` fields in the future. |
 | `buyer_seats` | object | Required, if not using the `buyer` field | The buying bidder and seat who can target this deal. A deal will only ever use the buyer field or the `buyer_seats` field, not both. For more details, see the "Buyer Seats" section in the [Deal Service](deal-service.md). |
 | `version` | int | Required | This field must be set to `"2"`. |
-| `auction_type` | object | Required | This object's fields must be set accordingly for a PG deal:<br>- `"id"`: `3`<br>- `"name"`: `"Fixed Price"`<br><br>**Note:** This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
-| `type` | object | Required | This object's fields must be set accordingly for a PG deal:<br>- `"id"`: `4`<br>- `"name"`: `"Programmatic Guaranteed"` |
+| `auction_type` | object | Required | This object's fields must be set accordingly for a PG deal:<br>- `"id":` `3`<br>- `"name":` `"Fixed Price"`<br><br>**Note:** This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
+| `type` | object | Required | This object's fields must be set accordingly for a PG deal:<br>- `"id":` `4`<br>- `"name":` `"Programmatic Guaranteed"` |
 | `ask_price` | double | Required | This is the price shown to the buyer. It is the minimum they must bid in order to compete for the inventory. |
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
 
 #### Useful optional JSON fields
 
-JSON Fields for Allowed Creatives
+**JSON fields for allowed creatives**
 
-Brand (see [Brand Service](brand-service.md))
+**Brand (see [Brand Service](brand-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -232,7 +232,7 @@ Brand (see [Brand Service](brand-service.md))
             ] 
 ```
 
-Language (see [Language Service](language-service.md))
+**Language (see [Language Service](language-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -323,7 +323,7 @@ Language (see [Language Service](language-service.md))
             ]
 ```
 
-Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
+**Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -368,7 +368,7 @@ Media Type (see [Media Subtype Service](media-subtype-service.md) and [Media Typ
              ]
 ```
 
-Technical Attributes (see [Technical Attribute Service](technical-attribute-service.md))
+**Technical Attributes (see [Technical Attribute Service](technical-attribute-service.md))**
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -390,7 +390,7 @@ Technical Attributes (see [Technical Attribute Service](technical-attribute-serv
              ]
 ```
 
-JSON Fields for Deal Data Protection (see [Visibility Profile Service](visibility-profile-service.md))
+**JSON fields for deal data protection (see [Visibility Profile Service](visibility-profile-service.md))**
 
 > [!WARNING]
 > This beta feature isn't available for all clients. Please reach out to your account manager to discuss if you have a use case.
@@ -537,7 +537,7 @@ Add to Segment (see [Deal Service](deal-service.md))
 > curl -b cookies -c cookies -X PUT -d @add_segment.json 'https://api.appnexus.com/deal?id=123456'
 ```
 
-To create a deal, do the following (For more information, see [Deal Service](deal-service.md)):
+To create a deal, do the following (for more information, see [Deal Service](deal-service.md)):
 
 1. Create a deal JSON:
 
@@ -576,7 +576,7 @@ There are many optional fields available in the deal line item profile for targe
 properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. For more information on
 available fields, see the [Profile Service](profile-service.md).
 
-To create a PG deal line item profile, do the following (For more information, see [Profile Service](profile-service.md)):
+To create a PG deal line item profile, do the following (for more information, see [Profile Service](profile-service.md)):
 
 1. Create a PG deal line item profile JSON:
 
@@ -721,7 +721,7 @@ Finally, you'll need to create the deal line item to associate the deal ID and t
 |:---|:---|:---|
 | `budget_intervals` | array of objects | Set a budget on the deal using fields within `budget_intervals` including: `daily_budget`, `daily_budget_imps`, `lifetime_budget`, or `lifetime_budget_imps`. Use the fields with no imp if the deal line item has revenue budget type or the fields with `_imp` at the end if the deal line item has revenue type impression. You can either have a daily or lifetime budget, not both. A lifetime budget that sits across flights ends up being broken out across each flight via the API. Remember that if your deal has no end date, it can't have a budget. |
 
-To create a PG deal line item, do the following (For more information, see [Line Item Service](line-item-service---ali.md)):
+To create a PG deal line item, do the following (for more information, see [Line Item Service](line-item-service---ali.md)):
 
 1. Create a deal line item JSON (you'll need an existing advertiser ID, insertion order ID, deal ID, and profile ID).
 
@@ -822,7 +822,7 @@ To create a PG deal line item, do the following (For more information, see [Line
     > curl -b cookies -c cookies -X POST -d @deal_line_item_lifetime.json 'https://api.appnexus.com/line-item?member_id=2378&advertiser_id=3410892'
     ```
 
-    **Example Request: Deal line item daily revenue budget**
+    **Example request: Deal line item daily revenue budget**
 
     ```
     > curl -b cookies -c cookies -X POST -d @deal_line_item_daily.json 'https://api.appnexus.com/line-item?member_id=2378&advertiser_id=3410892'
