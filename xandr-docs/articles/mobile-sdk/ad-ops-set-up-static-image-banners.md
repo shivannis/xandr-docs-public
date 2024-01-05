@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Ad ops - Set up static image banners
+# Ad Ops - Set up static image banners
 
 This page has Ad Ops setup instructions for serving banners on our Xandr [Mobile SDKs](xandr-mobile-sdks.md). The configuration matches the placement in our SDK's demo app.
 
