@@ -286,7 +286,7 @@
     href: availability-overview-old-workflow.md
 - name: Check Availability
   items:
-  - name: Check Availability for a Combination of Targeting Attributes
+  - name: Overview
     href: check-availability-for-a-combination-of-targeting-attributes.md
   - name: Save an Availability Lookup
     href: save-an-availability-lookup.md
