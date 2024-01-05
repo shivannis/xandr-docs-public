@@ -1,778 +1,98 @@
 ---
-Title : Yield Management Floor Service
-Description : The Yield Management Floor Service is used to create and update floors
+title: Yield Management Floor Service
+description: Explore the Yield Management Floor service to create and update floors within an existing Yield Management Profile.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-within an existing
-<a href="yield-management-profile-service.md" class="xref">Yield
 ---
 
+# Yield Management Floor service
 
-# Yield Management Floor Service
+The Yield Management Floor Service is used to create and update floors within an existing [Yield Management Profile](yield-management-profile-service.md).
 
+A floor can be thought of as the minimum price a network or publisher would like to receive for a creative. There are subtleties, however.
 
-
-The Yield Management Floor Service is used to create and update floors
-within an existing
-<a href="yield-management-profile-service.md" class="xref">Yield
-Management Profile</a>.
-
-A floor can be thought of as the minimum price a network or publisher
-would like to receive for a creative. There are subtleties, however.
-
-
-
-<b>Warning:</b> Floor settings supersede any
-reserve prices set via the <a
-href="placement-service.md"
-class="xref" target="_blank">Placement Service</a>.
-
-Example: You have a soft floor setting, but no hard floor, and you've
-set a reserve price at the <a
-href="placement-service.md"
-class="xref" target="_blank">Placement</a> level. Since you're using
-<a href="yield-management-profile-service.md" class="xref">Yield
-Management</a> tools, however, your reserve price setting will be
-ignored. You must set it here via a hard floor.
-
-
-
-
+> [!WARNING]
+> Floor settings supersede any reserve prices set via the [Placement Service](placement-service.md).
+>
+> Example: You have a soft floor setting, but no hard floor, and you've set a reserve price at the [Placement](placement-service.md) level. Since you're using [Yield Management](yield-management-profile-service.md) tools, however, your reserve price setting will be ignored. You must set it here via a hard floor.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/ym-floor?member_id=MEMBER_ID](https://api.appnexus.com/ym-floor?member_id=MEMBER_ID) | View all floors associated with a given member. |
+| `GET` | - [https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE) | View all floors associated with a given [Yield Management Profile](yield-management-profile-service.md). |
+| `GET` | - [https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID](https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID)<br>- [https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE](https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE) | View a specific floor. |
+| `GET` | [https://api.appnexus.com/ym-floor?id=1,2,3](https://api.appnexus.com/ym-floor?id=1,2,3) | View multiple yield management floors by ID using a comma-separated list. |
+| `POST` | - [https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE)<br>(ym-floor JSON) | Add a new floor. |
+| `PUT` | - [https://api.appnexus.com/ym-floor?member_id=MEMBER_ID](https://api.appnexus.com/ym-floor?member_id=MEMBER_ID)<br>- [https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE](https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE)<br>(ym-floor JSON) | Modify an existing floor. |
+| `DELETE` | - [https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID](https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID)<br>- [https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE](https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE) | Delete an existing floor.<br><br>**Note:** You cannot delete a floor that is used as the base floor for one or more Yield Management Profiles. |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="yield-management-floor-service__entry__1"
-class="entry align-left colsep-1 rowsep-1">HTTP Method</th>
-<th id="yield-management-floor-service__entry__2"
-class="entry align-left colsep-1 rowsep-1">Endpoint</th>
-<th id="yield-management-floor-service__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?member_id=MEMBER_ID</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">View all floors
-associated with a given member.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><p><a
-href="https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID</a></p>
-<p><a
-href="https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">View all floors
-associated with a given <a href="yield-management-profile-service.md"
-class="xref">Yield Management Profile</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID" class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID</a>
-<p><a href="https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">View a specific
-floor.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?id=1,2,3</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">View multiple yield
-management floors by ID using a comma-separated list.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">POST</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?ym_profile_id=YM_PROFILE_ID</a>
-<p><a
-href="https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?ym_profile_code=YM_PROFILE_CODE</a></p>
-<p>(ym-floor JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">Add a new floor.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">PUT</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?member_id=MEMBER_ID</a>
-<p><a href="https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE</a></p>
-<p>(ym-floor JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">Modify an existing
-floor.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__2"><a
-href="https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID" class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?id=YM_FLOOR_ID</a>
-<p><a href="https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-floor?code=YM_FLOOR_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__entry__3">Delete an existing
-floor.
+| Field | Type | Description |
+|:---|:---|:---|
+| `member_id` | int | The unique identifier for the member with which the floor is associated.<br>**Default:** `NULL`<br>**Required On:** `PUT`, in query string. |
+| `id` | int | The unique identifier for a yield management floor.<br>**Default:** Auto-incremented Number (i.e. 123)<br>**Required On:** `PUT` |
+| `name` | string | The name used to describe a yield management floor.<br>**Default:** `None`<br>**Required On:** `POST` |
+| `code` | string | The optional custom code used to reference a yield management floor.<br>**Default:** `NULL` |
+| `description` | string | The optional description of how the yield management floor is being used.<br>**Default:** `NULL` |
+| `hard_floor` | double | The CPM floor used as the hard reserve price to be applied.<br>`Default:` `None`<br>**Required On:** `POST` |
+| `soft_floor` | double | The CPM floor used as the soft reserve, defined as the lowest price at which price reduction will occur. This must be greater than or equal to the hard floor if set. This value is ignored if `floor_optimization_enabled` is `true`.<br>**Default:** `NULL` |
+| `default_calculation_type` | enum | Whether the floor should be applied to the `gross` or `net` bid. <br>Possible values: `gross` or `net`. A `default_calculation_type` of `net` is a floor applied to the media cost paid out to the publisher.<br>**Default:** `gross` |
+| `profile_id` | int | An optional `profile_id` is used to determine when to apply a floor. A profile is a generic set of rules for targeting inventory, and certain floors may only apply to certain slices of inventory. For details, see the [Profile Service](profile-service.md).<br>**Default:** `NULL` |
+| `priority` | int | The priority field (optional) is used to create a hierarchy of how the floor should to be applied. Value may be between `1`-`10`, where priority `10` is treated as the highest priority value.<br>**Default:** `5` |
+| `ym_profile_id` | int | The ID of the yield management profile that the yield management floor is associated with. For details, see the [Yield Management Profile Service](yield-management-profile-service.md).<br><br>**Note:** This ID cannot be changed once it is set.<br>**Default:** `NULL`<br>**Required On:** `POST` |
+| `floor_application_target` | enum | The type of bids to which the price floor is applied. <br>Possible values:<br>- `external_only`: The price floor is applied only to external bids (buying member and selling member are different). Use this option if you would rather serve an available managed learn impression than serve a default, even if this means exceeding the maximum % of daily volume for learn (`max_learn_pct` field in [Publisher Service](publisher-service.md)).<br>- `external_non_preferred`: The price floor is applied to external bids (buying member and selling member are different) or when the impression is an available managed learn impression that exceeds the maximum % of daily volume for learn. Use this option if you would rather serve a default than serve an available managed learn impression that would exceed the maximum % of daily volume for learn.<br>- `all`: The price floor is applied to all bids except managed learn impressions within the maximum % of daily volume for learn.<br>**Default:** `all` |
+| `apply_floor_to_direct` | Boolean | **Removed.** Use `floor_application_target` instead. |
+| `allow_tag_reserve_override` | Boolean | If `true`, allow a reserve price sent in via the ad tag query string to override the existing hard floor. The floor will only be overridden if the tag-supplied reserve price is greater than the floor price.<br>**Default:** `false` |
+| `floor_optimization_enabled` | Boolean | If `true`, soft floors are ignored and floors to move up and and down depending on market conditions, but never allow the amount to go below the hard floor.<br>**Default:** `false` |
+| `members` | array | The members to which the yield management floor should be applied. If left set to `NULL`, the floor will apply to all members. For more details, see [Members](#members) below.<br>**Default:** `NULL` |
+| `brands` | array | The brands to which the yield management floor should be applied. For more details, see [Brands](#brands) below.<br>**Default:** `NULL` |
+| `categories` | array | The brands or creative categories to which this yield management floor should be applied. For more details, see [Categories](#categories) below.<br>**Default:** `NULL` |
+| `allowed_media_types` | array | The media types to which this yield management floor should be applied. For more details, see [Media Types](#media-types) below.<br>**Default:** `NULL` |
+| `allowed_media_subtypes` | array | The media subtypes to which this yield management floor should be applied. For more details, see [Media Subtypes](#media-subtypes) below.<br>**Default:** `NULL` |
 
-<b>Note:</b> You cannot delete a floor that is
-used as the base floor for one or more Yield Management Profiles.
-</td>
-</tr>
-</tbody>
-</table>
+### Members
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The id of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the floor should be applied.<br>**Required On:** `POST`/`PUT` |
+| `name` | string | The name of the buyer member.This field is **read-only**. |
 
+### Brands
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the brand of the creative (as found in the [Brand Service](brand-service.md)) for which the floor should be applied.<br>**Required On:** `POST`/`PUT` |
+| `name` | string | The name of the brand. This field is **read-only**. |
 
+### Categories
 
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the brand or creative category (as described in the [Category Service](category-service.md)) to which this floor should be applied.<br>**Required On:** `POST`/`PUT` |
+| `name` | string | The name of the brand or creative category. This field is **read-only**. |
 
-## JSON Fields
+### Media types
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the media type (as described in the [Media Type Service](media-type-service.md)) to which this floor should be applied.<br>**Required On:** `POST`/`PUT` |
+| `name` | string | The name of the media type. This field is **read-only**. |
 
+### Media subtypes
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"
-class="entry align-center colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2"
-class="entry align-center colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-unique identifier for the member with which the floor is associated.
-<p><strong>Default</strong>: <code class="ph codeph">NULL</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">PUT</code>, in
-querystring</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-unique identifier for a yield management floor.
-<p><strong>Default</strong>: Auto-incremented Number (i.e. 123)</p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-name used to describe a yield management floor.
-<p><strong>Default</strong>: <code class="ph codeph">None</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-optional custom code used to reference a yield management floor.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-optional description of how the yield management floor is being used.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">hard_floor</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-CPM floor used as the hard reserve price to be applied.
-<p><strong>Default</strong>: <code class="ph codeph">None</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">soft_floor</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-CPM floor used as the soft reserve, defined as the lowest price at which
-price reduction will occur. This must be greater than or equal to the
-hard floor if set. This value is ignored if <code
-class="ph codeph"> floor_optimization_enabled</code> is <code
-class="ph codeph">true</code>.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">default_calculation_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">Whether
-the floor should be applied to the gross or net bid. Possible values:
-<code class="ph codeph">gross</code> or <code
-class="ph codeph">net</code>. A <code
-class="ph codeph">default_calculation_type</code> of <code
-class="ph codeph">net</code> is a floor applied to the media cost paid
-out to the publisher.
-<p><strong>Default</strong>: <code
-class="ph codeph">gross</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">An
-optional <code class="ph codeph">profile_id</code> is used to determine
-when to apply a floor. A profile is a generic set of rules for targeting
-inventory, and certain floors may only apply to certain slices of
-inventory. See the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a> for details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">priority</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-priority field (optional) is used to create a hierarchy of how the floor
-should to be applied. Value may be between 1-10, where priority 10 is
-treated as the highest priority value.
-<p><strong>Default</strong>: <code class="ph codeph">5</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">ym_profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-ID of the yield management profile that the yield management floor is
-associated with. See the <a href="yield-management-profile-service.md"
-class="xref">Yield Management Profile Service</a> for details.
-
-<b>Note:</b> This ID cannot be changed once it
-is set.
-
-<p><strong>Default</strong>: <code class="ph codeph">NULL</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">floor_application_target</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-type of bids to which the price floor is applied. Possible values:
-<ul>
-<li><code class="ph codeph">external_only</code>: The price floor is
-applied only to external bids (buying member and selling member are
-different). Use this option if you would rather serve an available
-managed learn impression than serve a default, even if this means
-exceeding the maximum % of daily volume for learn (<code
-class="ph codeph">max_learn_pct</code> field in <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a>).</li>
-<li><code class="ph codeph">external_non_preferred</code>: The price
-floor is applied to external bids (buying member and selling member are
-different) or when the impression is an available managed learn
-impression that exceeds the maximum % of daily volume for learn. Use
-this option if you would rather serve a default than serve an available
-managed learn impression that would exceed the maximum % of daily volume
-for learn.</li>
-<li><code class="ph codeph">all</code>: The price floor is applied to
-all bids except managed learn impressions within the maximum % of daily
-volume for learn.</li>
-</ul>
-<p><strong>Default</strong>: <code class="ph codeph">all</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">apply_floor_to_direct</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3"><strong>Removed.</strong>
-Please use <code class="ph codeph">floor_application_target</code>
-instead.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">allow_tag_reserve_override</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">If
-<code class="ph codeph">true</code>, allow a reserve price sent in via
-the ad tag query string to override the existing hard floor. The floor
-will only be overridden if the tag-supplied reserve price is greater
-than the floor price.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">floor_optimization_enabled</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">If
-<code class="ph codeph">true</code>, soft floors are ignored and floors
-to move up and and down depending on market conditions, but never allow
-the amount to go below the hard floor.
-<p><strong>Default</strong>: <code
-class="ph codeph">false</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">members</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-members to which the yield management floor should be applied. If left
-set to NULL, the floor will apply to all members. See <a
-href="yield-management-floor-service.md#yield-management-floor-service__members_yield_management_floor_service"
-class="xref">Members</a> below for more details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">brands</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-brands to which the yield management floor should be applied. See <a
-href="yield-management-floor-service.md#yield-management-floor-service__brands_yield_management_floor_service"
-class="xref">Brands</a> below for more details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">categories</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-brands or creative categories to which this yield management floor
-should be applied. See <a
-href="yield-management-floor-service.md#yield-management-floor-service__categories_yield_management_floor_service"
-class="xref">Categories</a> below for more details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">allowed_media_types</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-media types to which this yield management floor should be applied. See
-<a
-href="yield-management-floor-service.md#yield-management-floor-service__media_types_yield_management_floor_service"
-class="xref">Media Types</a> below for more details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__1"><code
-class="ph codeph">allowed_media_subtypes</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__3">The
-media subtypes to which this yield management floor should be applied.
-See See <a
-href="yield-management-floor-service.md#yield-management-floor-service__media_subtypes_yield_management_floor_service"
-class="xref">Media Subtypes</a> below for more details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Members**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__64"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__65"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__66"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__64"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__65">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__66">The
-id of the buyer member (as found in the <a
-href="platform-member-service.md"
-class="xref" target="_blank">Platform Member Service</a>) for which the
-floor should be applied.
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code> /
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__64"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__65">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__66">The
-name of the buyer member.This field is read-only.</td>
-</tr>
-</tbody>
-</table>
-
-**Brands**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__73"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__74"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__75"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__73"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__74">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__75">The
-ID of the brand of the creative (as found in the <a
-href="brand-service.md"
-class="xref" target="_blank">Brand Service</a>) for which the floor
-should be applied.
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code> /
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__73"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__74">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__75">The
-name of the brand. This field is read-only.</td>
-</tr>
-</tbody>
-</table>
-
-**Categories**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__82"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__83"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__84"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__82"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__83">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__84">The
-ID of the brand or creative category (as described in the <a
-href="category-service.md"
-class="xref" target="_blank">Category Service</a>) to which this floor
-should be applied.
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code> /
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__82"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__83">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__84">The
-name of the brand or creative category. This field is read-only.</td>
-</tr>
-</tbody>
-</table>
-
-**Media Types**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__91"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__92"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__93"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__91"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__92">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__93">The
-ID of the media type (as described in the <a
-href="media-type-service.md"
-class="xref" target="_blank">Media Type Service</a>) to which this floor
-should be applied.
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code> /
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__91"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__92">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__93">The
-name of the media type. This field is read-only.</td>
-</tr>
-</tbody>
-</table>
-
-**Media Subtypes**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__100"
-class="entry colsep-1 rowsep-1">Field</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__101"
-class="entry colsep-1 rowsep-1">Type</th>
-<th
-id="yield-management-floor-service__json_fields_yield_management_floor_service__entry__102"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__100"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__101">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__102">The
-ID of the media subtype (as described in the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a>) to which this
-floor should be applied.
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code> /
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__100"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__101">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-floor-service__json_fields_yield_management_floor_service__entry__102">The
-name of the media subtype. This field is read-only.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the media subtype (as described in the [Media Subtype Service](media-subtype-service.md)) to which this floor should be applied.<br>**Required On:** `POST`/`PUT` |
+| `name` | string | The name of the media subtype. This field is **read-only**. |
 
 ## Examples
 
-**View a specific floor**
+### View a specific floor
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies  "https://api.appnexus.com/ym-floor?id=1234"
 {
     "ym-floor": {
@@ -827,18 +147,11 @@ $ curl -b cookies -c cookies  "https://api.appnexus.com/ym-floor?id=1234"
 }
 ```
 
+### View all floors associated with a [Yield Management Profile](yield-management-profile-service.md)
 
+Notice that the following floors target by optional `{{profile_id}}` rather than via the `{{members}}` array. For details, see [JSON fields](#json-fields) above.
 
-**See all floors associated with a
-<a href="yield-management-profile-service.md" class="xref">Yield
-Management Profile</a>**
-
-Notice that the following floors target by optional `{{profile_id}}`
-rather than via the `{{members}}` array. (See <a
-href="yield-management-floor-service.md#yield-management-floor-service__json_fields_yield_management_floor_service"
-class="xref">JSON Fields</a> above for details.)
-
-``` pre
+```
 $ curl -b cookies "https://api.appnexus.com/ym-floor?ym_profile_id=9999"
 {
     "response": {
@@ -888,9 +201,3 @@ $ curl -b cookies "https://api.appnexus.com/ym-floor?ym_profile_id=9999"
     }
 }
 ```
-
-
-
-
-
-

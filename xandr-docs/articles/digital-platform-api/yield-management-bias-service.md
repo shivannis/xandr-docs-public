@@ -1,488 +1,63 @@
 ---
-Title : Yield Management Bias Service
-Description : The Yield Management Bias Service is used to create and update biases
+title: Yield Management Bias Service
+description: Explore the Yield Management Bias service to create and update biases within an existing Yield Management Profile.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-within an existing
-<a href="yield-management-profile-service.md" class="xref">Yield
 ---
 
+# Yield Management Bias service
 
-# Yield Management Bias Service
-
-
-
-The Yield Management Bias Service is used to create and update biases
-within an existing
-<a href="yield-management-profile-service.md" class="xref">Yield
-Management Profile</a>. Biases are a way of modifying bids from certain
-buyers or groups of buyers so that they appear higher or lower than they
-actually are for the purposes of running an auction.
-
-
+The Yield Management Bias Service is used to create and update biases within an existing [Yield Management Profile](yield-management-profile-service.md). Biases are a way of modifying bids from certain buyers or groups of buyers so that they appear higher or lower than they actually are for the purposes of running an auction.
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | - [https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE)<br>(ym-bias JSON) | Add a bias. |
+| `PUT` | - [https://api.appnexus.com/ym-bias?id=YM_BIAS_ID](https://api.appnexus.com/ym-bias?id=YM_BIAS_ID)<br>- [https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE](https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE)<br>(ym-bias JSON) | Modify an existing bias. |
+| `GET` | - [https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE) | View all biases associated with a particular Yield Management Profile. |
+| `GET` | - [https://api.appnexus.com/ym-bias?id=YM_BIAS_ID](https://api.appnexus.com/ym-bias?id=YM_BIAS_ID)<br>- [https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE](https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE) | View a specific bias. |
+| `GET` | [https://api.appnexus.com/ym-bias?id=1,2,3](https://api.appnexus.com/ym-bias?id=1,2,3) | View multiple biases by ID using a comma-separated list. |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="yield-management-bias-service__entry__1"
-class="entry align-center colsep-1 rowsep-1">HTTP Method</th>
-<th id="yield-management-bias-service__entry__2"
-class="entry align-center colsep-1 rowsep-1">Endpoint</th>
-<th id="yield-management-bias-service__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__1"><code
-class="ph codeph">POST</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__2"><a
-href="https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID</a>
-<p><a
-href="https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE</a></p>
-<p>(ym-bias JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__3">Add a bias.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__1"><code
-class="ph codeph">PUT</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__2"><a
-href="https://api.appnexus.com/ym-bias?id=YM_BIAS_ID" class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?id=YM_BIAS_ID</a>
-<p><a href="https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE</a></p>
-<p>(ym-bias JSON)</p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__3">Modify an existing
-bias.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__2"><a
-href="https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID</a>
-<p><a
-href="https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__3">View all biases
-associated with a particular <a
-href="yield-management-profile-service.md"
-class="xref" target="_blank">Yield Management Profile</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__2"><a
-href="https://api.appnexus.com/ym-bias?id=YM_BIAS_ID" class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?id=YM_BIAS_ID</a>
-<p><a href="https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE</a></p></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__3">View a specific
-bias.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__1"><code
-class="ph codeph">GET</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__2"><a
-href="https://api.appnexus.com/ym-bias?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/ym-bias?id=1,2,3</a></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__entry__3">View multiple biases
-by ID using a comma-separated list.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The unique identifier for a yield management bias.<br>**Default:** Auto-incremented Number (i.e. 123)<br>**Required On:** `PUT` |
+| `code` | string | A optional custom code used to reference a yield management bias.<br>**Default:** `NULL` |
+| `name` | string | A name used to describe a yield management bias.<br>**Default:** `None`<br>**Required On:** `POST` |
+| `description` | string | An optional description how the yield management bias is being used.<br>**Default:** `NULL` |
+| `ym_profile_id` | int | The ID of the yield management profile that the yield management bias is associated with. For details, see the [Yield Management Profile Service](yield-management-profile-service.md).<br><br>**Note:** This ID cannot be changed once it is set.<br><br>**Default:** `NULL`<br>**Required On:** `POST` |
+| `profile_id` | int | An optional `profile_id` is used to determine when to apply a bias. A profile is a generic set of rules for targeting inventory, and certain biases may only apply to certain slices of inventory. For details, see the [Profile Service](profile-service.md).<br>**Default:** `NULL` |
+| `priority` | int | The priority field (optional) is used to create a hierarchy of how the bias should to be applied. Value may be between `1`-`10` where priority `10` is treated as the highest priority value.<br>**Default:** `5` |
+| `members` | array of objects | This is an array specifying the member(s) the yield management bias should be applied to. For details, see the [Members Array](#the-members-array) below.<br>**Default:** `NULL` |
+| `buyer_groups` | array of objects | This is an array specifying the buyer group(s) the yield management bias should be applied to. For details, see the [Buyer Groups Array](#the-buyer-groups-array) below.<br>**Default:** `NULL` |
 
+### The members array
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | This is the ID of the buyer member (as found in the Platform Member Service) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
+| `name` | array | This is the name of the buyer member.<br>**Default:** N/A |
+| `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
+| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
+| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`). |
 
+### The buyer groups array
 
-
->
-
-## JSON Fields
-
-
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="yield-management-bias-service__json_fields__entry__1"
-class="entry align-center colsep-1 rowsep-1">Field</th>
-<th id="yield-management-bias-service__json_fields__entry__2"
-class="entry align-center colsep-1 rowsep-1">Type</th>
-<th id="yield-management-bias-service__json_fields__entry__3"
-class="entry align-center colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">The
-unique identifier for a yield management bias.
-<p><strong>Default</strong>: Auto-incremented Number (i.e. 123)</p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">A
-optional custom code used to reference a yield management bias.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">A name
-used to describe a yield management bias.
-<p><strong>Default</strong>: <code class="ph codeph">None</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">description</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">An
-optional description how the yield management bias is being used.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">ym_profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">The ID of
-the yield management profile that the yield management bias is
-associated with. See the <a href="yield-management-profile-service.md"
-class="xref">Yield Management Profile Service</a> for details.
-
-class="note note_note">
-<b>Note:</b> This ID cannot be changed once it
-is set.
-
-
-<p><strong>Default</strong>: <code class="ph codeph">NULL</code></p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">An
-optional <code class="ph codeph">profile_id</code> is used to determine
-when to apply a bias. A profile is a generic set of rules for targeting
-inventory, and certain biases may only apply to certain slices of
-inventory. See the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a> for details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">priority</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">The
-priority field (optional) is used to create a hierarchy of how the bias
-should to be applied. Value may be between <code
-class="ph codeph">1</code>-<code class="ph codeph">10</code> where
-priority <code class="ph codeph">10</code> is treated as the highest
-priority value.
-<p><strong>Default</strong>: <code class="ph codeph">5</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">members</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">This is
-an array specifying the member(s) the yield management bias should be
-applied to. See <a
-href="yield-management-bias-service.md#yield-management-bias-service__the_members_array"
-class="xref">The Members Array</a> below for details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__1"><code
-class="ph codeph">buyer_groups</code></td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1 valign-top"
-headers="yield-management-bias-service__json_fields__entry__3">This is
-an array specifying the buyer group(s) the yield management bias should
-be applied to. See <a
-href="yield-management-bias-service.md#yield-management-bias-service__the_buyer_group_array"
-class="xref">The Buyer Groups Array</a> below for details.
-<p><strong>Default</strong>: <code
-class="ph codeph">NULL</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**The Members Array**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="yield-management-bias-service__json_fields__entry__31"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="yield-management-bias-service__json_fields__entry__32"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="yield-management-bias-service__json_fields__entry__33"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__31"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__32">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__33">This is
-the id of the buyer member (as found in the Platform Member Service) for
-which the bias should be applied.
-<p><strong>Default</strong>: <code class="ph codeph">None</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__31"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__32">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__33">This is
-the name of the buyer member.
-<p><strong>Default</strong>: N/A</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__31"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__32">enum('percent','cpm')</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__33">This
-determines which value to use for the bias, represented as a percentage
-or a flat CPM.
-<p><strong>Default</strong>: <code
-class="ph codeph">"percent"</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__31"><code
-class="ph codeph">bias_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__32">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__33">This is
-the % amount the buyer member should be adjusted by. If bias_pct = 5,
-then the net bid will be increased 5%.
-<p><strong>Default</strong>: <code class="ph codeph">0.00</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code> (if <code
-class="ph codeph">type</code> is 'percent')</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__31"><code
-class="ph codeph">bias_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__32">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__33">This is
-the CPM increase/decrease the buyer member should be adjusted by.
-<p><strong>Default</strong>: <code class="ph codeph">NULL</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code> (if <code
-class="ph codeph">type</code> is 'cpm')</p></td>
-</tr>
-</tbody>
-</table>
-
-**The Buyer Groups Array**
-
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="yield-management-bias-service__json_fields__entry__49"
-class="entry colsep-1 rowsep-1">Parameter</th>
-<th id="yield-management-bias-service__json_fields__entry__50"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="yield-management-bias-service__json_fields__entry__51"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__49"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__50">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__51">This is
-the id of the buyer group for which the bias should be applied.
-<p><strong>Default</strong>: <code class="ph codeph">None</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__49"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__50">array</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__51">This is
-the name of the buyer group.
-<p><strong>Default</strong>: N/A</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__49"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__50">enum('percent','cpm')</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__51">This
-determines which value to use for the bias, represented as a percentage
-or a flat CPM.
-<p><strong>Default</strong>: <code
-class="ph codeph">"percent"</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__49"><code
-class="ph codeph">bias_pct</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__50">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__51">This is
-the % amount the buyer member should be adjusted by. If bias_pct = 5,
-then the net bid will be increased 5%.
-<p><strong>Default</strong>: <code class="ph codeph">0.00</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code> (if <code
-class="ph codeph">type</code> is 'percent')</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__49"><code
-class="ph codeph">bias_cpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__50">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="yield-management-bias-service__json_fields__entry__51">This is
-the CPM increase/decrease the buyer member should be adjusted by.
-<p><strong>Default</strong>: <code class="ph codeph">NULL</code></p>
-<p><strong>Required On</strong>: <code class="ph codeph">POST</code>,
-<code class="ph codeph">PUT</code> (if <code
-class="ph codeph">type</code> is 'cpm')</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Parameter | Type | Description |
+|:---|:---|:---|
+| `id` | int | This is the ID of the buyer group for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
+| `name` | array | This is the name of the buyer group.<br>**Default:** N/A |
+| `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
+| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
+| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`). |
 
 ## Examples
 
-**View a specific bias**
+### View a specific bias
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies  "https://api.appnexus.com/ym-bias?id=1234"
 {
     "ym-bias": {
@@ -525,23 +100,12 @@ $ curl -b cookies -c cookies  "https://api.appnexus.com/ym-bias?id=1234"
 }
 ```
 
+### View all biases associated with a given [Yield Management Profile](yield-management-profile-service.md)
 
+> [!NOTE]
+> The first bias in the array below is not associated with `{{members}}` or `{{buyer_groups}}`, but with a `{{profile_id}}` (for details, see [JSON fields](#json-fields) above).
 
-**View all biases associated with a given**
-<a href="yield-management-profile-service.md"
-class="xref"><strong>Yield Management Profile</strong></a>
-
-
-
-<b>Note:</b> The first bias in the array below
-is not associated with `{{members}}` or `{{buyer_groups}}`, but with a
-`{{profile_id}}` (see <a
-href="yield-management-bias-service.md#yield-management-bias-service__json_fields"
-class="xref">JSON Fields</a> above for details).
-
-
-
-``` pre
+```
 $ curl -b cookies "https://api.appnexus.com/ym-bias?ym_profile_id=123"
 {
  "response": {
@@ -587,9 +151,3 @@ $ curl -b cookies "https://api.appnexus.com/ym-bias?ym_profile_id=123"
  }
 }
 ```
-
-
-
-
-
-

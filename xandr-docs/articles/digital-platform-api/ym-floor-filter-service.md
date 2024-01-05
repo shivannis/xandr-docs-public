@@ -1,149 +1,39 @@
 ---
-Title : YM Floor Filter Service
-Description : This read-only service allows you to view a list of yield management
+title: YM Floor Filter Service
+description: Explore the YM Floor Filter service to view a list of yield management (YM) floor rules that apply to a specific member.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-(YM) floor rules that apply to a specific member. The response will
 ---
 
+# YM Floor Filter service
 
-# YM Floor Filter Service
-
-
-
-This read-only service allows you to view a list of yield management
-(YM) floor rules that apply to a specific member. The response will
-include a list of YM floor rule IDs. You can use the ID to get more
-information on the YM floor rule settings using the <a
-href="yield-management-floor-service.md"
-class="xref" target="_blank">Yield Management Floor Service</a>.
-
-
+This read-only service allows you to view a list of yield management (YM) floor rules that apply to a specific member. The response will
+include a list of YM floor rule IDs. You can use the ID to get more information on the YM floor rule settings using the [Yield Management Floor Service](yield-management-floor-service.md).
 
 ## REST API
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/ym-floor-filter?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ym-floor-filter?publisher_id=PUBLISHER_ID) | View all yield management floor rules that apply to a specific publisher. |
+| `GET` | [https://api.appnexus.com/ym-floor-filter?buyer_member_id=BUYER_MEMBER_ID](https://api.appnexus.com/ym-floor-filter?buyer_member_id=BUYER_MEMBER_ID) | View all yield management floor rules that apply to a specific buyer. |
 
+## JSON fields
 
-<table class="table frame-all" style="width:100%;">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000045a5__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000045a5__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000045a5__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__2"><a
-href="https://api.appnexus.com/ym-floor-filter?publisher_id=PUBLISHER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/ym-floor-filter?publisher_id=PUBLISHER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__3">View
-all yield management floor rules that apply to a specific
-publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__2"><a
-href="https://api.appnexus.com/ym-floor-filter?buyer_member_id=BUYER_MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/ym-floor-filter?buyer_member_id=BUYER_MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__3">View
-all yield management floor rules that apply to a specific buyer.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `ym-floor-filter` | array | The list of yield management floor rule IDs for rules that apply to the member. For more information, see YM Floor Filter below. |
 
+## YM floor filter
 
-
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000045a5__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000045a5__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000045a5__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__10"><code
-class="ph codeph">ym-floor-filter</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__11">array</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__12">The
-list of yield management floor rule IDs for rules that apply to the
-member. See <a
-href="ym-floor-filter-service.md#ID-000045a5__YM_Floor_Filter"
-class="xref">YM Floor Filter</a> below for more information.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-## YM Floor Filter
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000045a5__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000045a5__entry__17"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000045a5__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000045a5__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000045a5__entry__18">The
-ID of the yield management floor rule.
-
-<b>Tip:</b> You can use the ID to get more
-information on the YM floor rule settings using the <a
-href="yield-management-floor-service.md"
-class="xref" target="_blank">Yield Management Floor Service</a>.
-</td>
-</tr>
-</tbody>
-</table>
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the yield management floor rule.<br><br>**Tip:** You can use the ID to get more information on the YM floor rule settings using the [Yield Management Floor Service](yield-management-floor-service.md). |
 
 ## Examples
 
-**View all yield management floor rules that apply to a specific
-publisher**
+### View all yield management floor rules that apply to a specific publisher
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/ym-floor-filter?publisher_id=1"
   
 {
@@ -157,9 +47,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/ym-floor-filter?publisher
 }
 ```
 
-**View all yield management floor rules that apply to a specific buyer**
+### View all yield management floor rules that apply to a specific buyer
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/ym-floor-filter?buyer_member_id=7"
   
 {
@@ -173,10 +63,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/ym-floor-filter?buyer_mem
 }
 ```
 
-**View all yield management floor rules that apply to any of a series of
-buyers**
+### View all yield management floor rules that apply to any of a series of buyers
 
-``` pre
+```
 $ curl -b cookies -c cookies "http://sand.api.appnexus.com/ym-floor-filter?buyer_member_id=35,39,183"
   
 {
@@ -247,9 +136,3 @@ $ curl -b cookies -c cookies "http://sand.api.appnexus.com/ym-floor-filter?buyer
   }
   }
 ```
-
-
-
-
-
-
