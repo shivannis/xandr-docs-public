@@ -7,14 +7,16 @@ ms.custom: yield-analytics-ui
 
 # Adding and editing adjustments
 
+## Overview
 New Seasonality Adjustments can be added to the system by working with your Client Services Manager. Existing Seasonality Adjustments can be modified through the **Adjust Seasonal Forecast** tab.
 
+## Manual adjustments
 Manual Adjustments can be added/modified within the **Adjust Manual Forecast** tab. The following types of manual adjustments can be made:
 
-- Absolute: Adds/subtracts a specific number of impressions to the yield analytics generated forecast.
-- Relative: Adds/subtracts a percentage of impressions to the yield analytics generated forecast.
-- Replace: Replaces the yield analytics forecast with a manually supplied forecast value.
-- Ceiling: Caps the yield analytics forecast at a supplied forecast value.
+- **Absolute**: Adds/subtracts a specific number of impressions to the yield analytics generated forecast.
+- **Relative**: Adds/subtracts a percentage of impressions to the yield analytics generated forecast.
+- **Replace**: Replaces the yield analytics forecast with a manually supplied forecast value.
+- **Ceiling**: Caps the yield analytics forecast at a supplied forecast value.
 
 ## Related topics
 
