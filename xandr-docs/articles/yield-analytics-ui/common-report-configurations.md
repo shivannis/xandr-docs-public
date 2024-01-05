@@ -30,7 +30,7 @@ Customers use this report to track KPIs for their top advertiser accounts, su
 
 **Configuration**:
 
-:::image type="content" source="media/kk.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
+:::image type="content" source="media/advertiser-scorecard.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
 
 ## Sales scorecard
 
