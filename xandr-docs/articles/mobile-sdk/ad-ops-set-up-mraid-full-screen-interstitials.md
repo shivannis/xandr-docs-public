@@ -37,7 +37,9 @@ Then, in the **Template** tab:
 
 ## Placement settings
 
-To set up your placement, first create a placement and then configure the settings listed below:
+To set up your placement, 
+1. create a placement
+2. configure the settings listed below:
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 
