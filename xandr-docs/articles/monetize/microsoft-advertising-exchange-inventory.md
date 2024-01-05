@@ -55,7 +55,8 @@ Provided below are some Windows Apps inventory samples:
  :::image type="content" source="media/inventory-on-tablets.png" alt-text="Screenshot of inventory on tablets .":::
 
 - Inventory on **Windows phone**
-:::image type="content" source="media/inventory-on-phone.png" alt-text="Screenshot of inventory on phone .":::
+
+ :::image type="content" source="media/inventory-on-phone.png" alt-text="Screenshot of inventory on phone .":::
   
 
 ## Windows Apps creative details
@@ -74,8 +75,7 @@ formats, specifications and legacy SDK ads for Windows apps, see [Buying Microso
 ## MSN
 
 MSN is Microsoft's portal for best in news, sport, entertainment and
-lifestyle. [MSN](http://www.msn.com)
-<a href="http://www.msn.com" class="xref" target="_blank">MSN</a>
+lifestyle. [MSN](https://www.msn.com)
 inspires consumers through trusted, best in class content, with
 high-value experiences through personalized content synchronized across
 devices.

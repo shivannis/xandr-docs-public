@@ -76,7 +76,7 @@ in the header when you hover over them are sortable.
   price-reduction.
   
   > [!TIP]
-  > The difference between Winning eCPM and Cost eCPM indicates the amount of price reduction occurring and may reveal information about price floors and bid density that can inform bidding strategy.
+  > The difference between **Winning eCPM** and **Cost eCPM** indicates the amount of price reduction occurring and may reveal information about price floors and bid density that can inform bidding strategy.
 
 - **Media Cost** - Your total cost on this
   deal during the selected time interval. This value will be

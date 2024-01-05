@@ -1,27 +1,17 @@
 ---
-Title : Mediation FAQs
-<b>Note:</b> Mediation is available only to
-Microsoft Monetize Ad Server customers.
+title: Mediation FAQs
+description: Learn FAQs on selling inventory through mediation. 
+ms.date: 10/28/2023
 ---
 
 
 # Mediation FAQs
 
-
-
-
-
-
-<b>Note:</b> Mediation is available only to
-Microsoft Monetize Ad Server customers.
-
-
+> [!NOTE]
+> Mediation is available only to Microsoft Monetize Ad Server customers.
 
 This page has answers frequently asked questions about selling inventory
 through mediation.
-
-
-
 
 ## What is a network?
 
@@ -31,9 +21,6 @@ name as one of the mediated networks we support, you will get an error
 when trying to add the network. You will need to rename any managed
 advertiser to a different name as mediated networks cannot be renamed.
 
-
-
-
 ## How is mediation different from RTB?
 
 In a mediation auction, no bids are placed upfront. Selling inventory
@@ -41,12 +28,7 @@ through mediation requires running the auction using an estimated bid
 that represents what we think the buyer will eventually pay. We later
 pull reporting data that shows the buyer's actual bid.
 
-For more information about mediated auctions, see the examples in
-<a href="mediation-how-auctions-work-for-sellers.md" class="xref">How
-Auctions Work for Sellers</a>.
-
-
-
+For more information about mediated auctions, see the examples in [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md).
 
 ## Why do I get an error when I try to add a network?
 
@@ -56,9 +38,6 @@ mediated networks we support, you will get an error when trying to add
 the network. You will need to rename any managed advertiser to a
 different name as mediated networks cannot be renamed.
 
-
-
-
 ## What happens if the highest bid is a mediated network, and they don't want the impression?
 
 If they return a "no bid" or they timeout, our system automatically
@@ -66,21 +45,13 @@ redirects to the next highest bid, whether that be another network, your
 own managed campaigns, or the highest RTB bid.
 
 For more information about how auctions work for sellers using
-mediation, see the examples in
-<a href="mediation-how-auctions-work-for-sellers.md" class="xref">How
-Auctions Work for Sellers</a>.
-
-
-
+mediation, see the examples in [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md).
 
 ## Why doesn't every network give me the option to enter my credentials?
 
 We limit automated reporting to networks where we have significant
 demand from clients. We will only ask for credentials for networks where
 reporting can be automated.
-
-
-
 
 ## What are the APIDS, SPOT IDS, and other fields I am asked to fill in when creating a bid? Why is it different for each network?
 
@@ -93,17 +64,11 @@ proper setup.
 It's very important to fill in these IDs correctly. We use these IDs to
 ensure that reporting data is correct.
 
-
-
-
 ## How often is reporting from mediated networks updated?
 
 We update reporting once per day for all supported networks. Typically
 you can expect to see third-party data updated in your account by 8 am
 EST.
-
-
-
 
 ## Which time zone is mediation data reported in?
 
@@ -119,36 +84,20 @@ In the Network Analytics report, we only adjust revenue from third-party
 networks and not impressions. Revenue is adjusted in the default time
 zone of the member.
 
-
-
-
 ## Where can I find mediated networks and bids in reporting?
-
-
 
 - Mediated networks can be found under the Advertiser filter and
   dimension in the Network Analytics Report.
 - Bids can be found under the Line Item filter and dimension in the
   Network Analytics Report.
 
-
-
-
-
-
 ## Do you support passbacks for mobile web and desktop impressions?
 
 Yes.
 
-
-
-
 ## Can I add multiple logins for the same network?
 
 This is not supported at this time.
-
-
-
 
 ## Which mediation browsers are supported?
 
@@ -160,8 +109,6 @@ response. The response can be to proceed to RTB, or serve a PSA, default
 creative, or blank, based on default action settings for the seller and
 placement.
 
-
-
 **Desktop**
 
 - Chrome
@@ -170,28 +117,17 @@ placement.
 - Opera
 - Safari
 
-
-
-
-
 **Mobile**
 
 - Safari
 - Android
 - Chrome
 
-
-
-
-
-
 ## Which mediation networks are supported?
 
 The table below lists the external mediation networks we support. It
 includes information about the type of integration we have with each
 network, and whether we pull reporting data from that network.
-
-
 
 The Integration Type column describes how the network is integrated for
 mediation.
@@ -203,625 +139,35 @@ mediation.
 - SDK indicates that the network's SDK must be downloaded and
   implemented. Works only on mobile apps.
 
-class="note warning note_warning">
+> [!WARNING]
+> We will make our best effort to keep this information up to date. However, more current information may be available directly from the networks.
 
-<b>Warning:</b> We will make our best effort
-to keep this information up to date. However, more current information
-may be available directly from the networks.
-
-
-
-<table id="mediation-faqs__table_v4v_1rw_bwb" class="table frame-all">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th rowspan="2" id="mediation-faqs__table_v4v_1rw_bwb__entry__1"
-class="entry colsep-1 rowsep-1">Network</th>
-<th colspan="3" id="mediation-faqs__table_v4v_1rw_bwb__entry__2"
-class="entry colsep-1 rowsep-1">Optimized for display on...</th>
-<th rowspan="2" id="mediation-faqs__table_v4v_1rw_bwb__entry__3"
-class="entry colsep-1 rowsep-1">Reporting?</th>
-<th rowspan="2" id="mediation-faqs__table_v4v_1rw_bwb__entry__4"
-class="entry colsep-1 rowsep-1">Integration Type</th>
-<th rowspan="2" id="mediation-faqs__table_v4v_1rw_bwb__entry__5"
-class="entry colsep-1 rowsep-1">Contact</th>
-<th rowspan="2" id="mediation-faqs__table_v4v_1rw_bwb__entry__6"
-class="entry colsep-1 rowsep-1">Downloads (SDK only)</th>
-</tr>
-<tr class="odd row">
-<th id="mediation-faqs__table_v4v_1rw_bwb__entry__7"
-class="entry colsep-1 rowsep-1">Mobile App</th>
-<th id="mediation-faqs__table_v4v_1rw_bwb__entry__8"
-class="entry colsep-1 rowsep-1">Mobile Web</th>
-<th id="mediation-faqs__table_v4v_1rw_bwb__entry__9"
-class="entry colsep-1 rowsep-1">Desktop Web</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">AdColony</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://support.adcolony.com/customer/portal/articles/692646-getting-started-with-sdk-integration"
-class="xref" target="_blank">AdColony Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">
-<ul>
-<li><a
-href="http://support.adcolony.com/customer/portal/articles/692646-getting-started-with-sdk-integration"
-class="xref" target="_blank">AdColony SDK</a></li>
-</ul>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">AdMob</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://support.google.com/admob/" class="xref"
-target="_blank">AdMob Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">
-<ul>
-<li><a
-href="https://developers.google.com/mobile-ads-sdk/download#downloadios"
-class="xref" target="_blank">AdMob iOS SDK</a></li>
-<li><a
-href="https://developers.google.com/mobile-ads-sdk/download#downloadandroid"
-class="xref" target="_blank">AdMob Android SDK</a></li>
-</ul>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">AdSense</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://support.google.com/adsense/" class="xref"
-target="_blank">AdSense Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Amazon
-(mobile)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://developer.amazon.com/public/support/contact/contact-us"
-class="xref" target="_blank">Amazon Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">
-<ul>
-<li><a
-href="https://developer.amazon.com/public/apis/earn/mobile-ads/ios"
-class="xref" target="_blank">Amazon iOS SDK</a></li>
-<li><a
-href="https://developer.amazon.com/public/apis/earn/mobile-ads/android"
-class="xref" target="_blank">Amazon Android SDK</a></li>
-</ul>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Amazon
-(web)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://developer.amazon.com/public/support/contact/contact-us"
-class="xref" target="_blank">Amazon Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Claymotion</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="mailto:adops@claymotion.in" class="xref"
-target="_blank">Claymotion Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Doubleclick
-for Publishers</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://support.google.com/dfp_premium/?hl=en#topic=28132"
-class="xref" target="_blank">DFP Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6"><ul>
-<li><a href="https://developers.google.com/mobile-ads-sdk/" class="xref"
-target="_blank">DFP SDK</a></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Hunt</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.huntmads.com/contacto" class="xref"
-target="_blank">Hunt Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">iAd</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://developer.apple.com/support/" class="xref"
-target="_blank">Apple Developer Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6"><ul>
-<li><a href="https://developer.apple.com/iad/" class="xref"
-target="_blank">iAd SDK</a></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">InMobi</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://www.inmobi.com/support/" class="xref"
-target="_blank">InMobi Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Jumptap</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://support.jumptap.com/index.php/Main_Page" class="xref"
-target="_blank">JumpTap Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Millennial
-Media (mobile web)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://tools.mmedia.com/user/supportDevPortal" class="xref"
-target="_blank">Millennial Media Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Millennial
-Media (mobile app)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://tools.mmedia.com/user/supportDevPortal" class="xref"
-target="_blank">Millennial Media Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6"><ul>
-<li><a href="http://mmedia.com/resources/sdk-api" class="xref"
-target="_blank">Millennial Media SDK</a></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">MobFox</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.mobfox.com/contact/" class="xref"
-target="_blank">MobFox Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6"><ul>
-<li><a href="http://www.mobfox.com/publishers/integration/" class="xref"
-target="_blank">MobFox SDK</a></li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">MobileFuse</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://aws.mobilefuse.com/contact.md" class="xref"
-target="_blank">MobileFuse Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Mojiva</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.mojiva.com/support" class="xref" target="_blank">Mojiva
-Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">MoPub</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="https://dev.twitter.com/mopub/overview" class="xref"
-target="_blank">MoPub Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6"><ul>
-<li><a href="https://github.com/mopub/mopub-ios-sdk" class="xref"
-target="_blank">MoPub iOS SDK</a></li>
-<li><a href="https://github.com/mopub/mopub-android-sdk" class="xref"
-target="_blank">MoPub Android SDK</a></li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">OpenX</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://openx.com/support/" class="xref" target="_blank">OpenX
-Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">OpenX
-Ad Exchange</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://openx.com/support/" class="xref" target="_blank">OpenX
-Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">PubMatic</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="mailto:info@PubMatic.com" class="xref" target="_blank">PubMatic
-Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Rubicon
-Project</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.rubiconproject.com/contact-us/" class="xref"
-target="_blank">Rubicon Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Smaato</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.smaato.com/support/" class="xref"
-target="_blank">Smaato Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Smaato
-(mobile web)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Client</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.smaato.com/support/" class="xref"
-target="_blank">Smaato Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Verve</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.vervemobile.com/contact/" class="xref"
-target="_blank">Verve Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Vserv</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">Server</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5"><a
-href="http://www.vserv.com/support-query/" class="xref"
-target="_blank">Vserv Support</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__1 mediation-faqs__table_v4v_1rw_bwb__entry__7">Custom
-Mobile Network</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__8">X</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2 mediation-faqs__table_v4v_1rw_bwb__entry__9"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__2"></td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__4">SDK</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__5">N/A</td>
-<td class="entry colsep-1 rowsep-1"
-headers="mediation-faqs__table_v4v_1rw_bwb__entry__6">N/A</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-
-
+| Network | Optimized for display on... |Optimized for display on...  | Optimized for display on... | Reporting? | Integration Type | Contact | Downloads (SDK only) |
+|---|---|---|---|---|---|---|---|
+|  | **Mobile App** | **Mobile Web** | **Desktop Web** |  |  |  |  |
+| AdColony | X |  |  | No | SDK | -[AdColony Support](https://www.digitalturbine.com/app-developers/#monetizationsolutions) | -[AdColony SDK](https://www.digitalturbine.com/app-developers/#monetizationsolutions) |
+| AdMob | X |  |  | Yes | SDK | [AdMob Support](https://support.google.com/admob/#topic=7383088) | - [AdMob iOS SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadios)<br> - [AdMob Android SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadandroid) |
+| [AdSense](https://support.google.com/adsense/#topic=3373519) |  | X | X | Yes | Client | [AdSense Support](https://support.google.com/adsense/#topic=3373519) | N/A |
+| Amazon (mobile) | X |  |  | No | SDK | [Amazon Support](https://developer.amazon.com/public/support/contact/contact-us) | - [Amazon iOS SDK](https://developer.amazon.com/public/apis/earn/mobile-ads/ios)<br> - [Amazon Android SDK](https://developers.google.com/ad-manager/mobile-ads-sdk#downloadandroid) |
+| Amazon (web) |  | X | X | No | Client | [Amazon Support](https://developer.amazon.com/public/support/contact/contact-us) | N/A |
+| Claymotion | X |  |  | No | Server | [Claymotion Support](mailto:adops@claymotion.in) | N/A |
+| Doubleclick for Publishers | X |  |  | No | SDK | [DFP Support](https://support.google.com/admanager/?hl=en#topic=7505988) | - [DFP SDK](https://developers.google.com/ad-manager/mobile-ads-sdk) |
+| Hunt | X | X |  | No | Server | [Hunt Support](http://www.huntmads.com/contacto) | N/A |
+| iAd | X |  |  | No | SDK | [Apple Developer Support](https://developer.apple.com/support/) | - [iAd SDK](https://developer.apple.com/iad/) |
+| InMobi | X | X |  | Yes | Server | [InMobi Support](https://support.inmobi.com/) | N/A |
+| [Jumptap](https://support.jumptap.com/index.php/Main_Page) | X | X |  | Yes | Server | [JumpTap Support](https://support.jumptap.com/index.php/Main_Page) | N/A |
+| Millennial Media (mobile web) |  | X |  | Yes | Client | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | N/A |
+| Millennial Media (mobile app) | X |  |  | Yes | SDK | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) | [Millennial Media SDK](mmedia.com/resources/sdk-api) |
+| MobFox | X | X |  | Yes | Server | [MobFox Support](https://www.mobfox.com/publishers/integration/) | - [MobFox SDK](https://www.mobfox.com/publishers/integration/) |
+| MobileFuse | X | X |  | Yes | Server | [MobileFuse Support](http://aws.mobilefuse.com/contact.html) | N/A |
+| Mojiva | X | X |  | Yes | Server | [Mojiva Support](http://www.mojiva.com/support) | N/A |
+| MoPub | X |  |  | No | SDK | [MoPub Support](https://dev.twitter.com/mopub/overview) | -[MoPub iOS SDK](https://github.com/mopub/mopub-ios-sdk)<br>-[MoPub Android SDK](https://github.com/mopub/mopub-android-sdk) |
+| OpenX | X | X |  | No | Server | [OpenX Support](http://openx.com/support/) | N/A |
+| OpenX Ad Exchange |  | X | X | Yes | Client | [OpenX Support](http://openx.com/support/) | N/A |
+| PubMatic |  | X | X | Yes | Client | [PubMatic Support](mailto:info@PubMatic.com) | N/A |
+| Rubicon Project |  | X | X | Yes | Client | [Rubicon Support](http://www.rubiconproject.com/contact-us/) | N/A |
+| Smaato | X | X |  | Yes | Server | [Smaato Support](http://www.smaato.com/support/) | N/A |
+| Smaato (mobile web) |  | X |  | Yes | Client | [Smaato Support](http://www.smaato.com/support/) | N/A |
+| Verve | X | X |  | No | Server | [Verve Support](http://www.vervemobile.com/contact/) | N/A |
+| Vserv | X | X |  | Yes | Server | [Vserv Support](https://www.vserv.com/support-query/) | N/A |
+| Custom Mobile Network | X |  |  | No | SDK | N/A | N/A |

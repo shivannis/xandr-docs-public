@@ -1,7 +1,6 @@
 ---
 title: Set Up Mobile In-App Video Mediation
-description: Learn how to setup a video mediation network for mobile
-in-app inventory.
+description: Learn how to setup a video mediation network for mobile in-app inventory.
 ms.date: 10/28/2023
 ---
 
@@ -52,7 +51,7 @@ these steps.
    > [!WARNING]
    > **Report Sync Not Supported** 
    > 
-   > The Report Sync feature is not supported for Mobile In-App Video Mediation.
+   > The **Report Sync** feature is not supported for Mobile In-App Video Mediation.
 
 ## Step 2: Configure mediation bids
 
@@ -69,6 +68,8 @@ number and make each URL call unique.
 
 > [!TIP]
 > The Mediated URL Field accepts Creative Macros
+>
+> The mediated URL field will accept any Xandr creative macro.
 
 To create a bid navigate to
 **Mediation**

@@ -57,15 +57,15 @@ then select the **Custom Sizes** tab.
     which are used less-frequently and are available at the bottom of
     the list.
 
-> [!IMPORTANT]
-> The sizes defined here are available on the following pages:
-> - **Network** >  **Reporting** ([Network Reporting](network-reporting.md))
-> - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Third-Party Creative)
-- **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Hosted Creative)
-> - **Advertisers** > **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
-> - **Publishers** > **Create New Placement** > **Placement Details** tab
-> ([Create a Placement](create-a-placement.md))
-> - **Publishers** >  **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
+   > [!IMPORTANT]
+   > The sizes defined here are available on the following pages:
+   > - **Network** >  **Reporting** ([Network Reporting](network-reporting.md))
+   > - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Third-Party Creative)
+   > - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Hosted Creative)
+   > - **Advertisers** > **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
+   > - **Publishers** > **Create New Placement** > **Placement Details** tab
+   > ([Create a Placement](create-a-placement.md))
+   > - **Publishers** >  **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
 
 ## Edit an existing size
 
@@ -93,10 +93,9 @@ then select the **Custom Sizes** tab.
 > [!IMPORTANT]
 > - **Network** > **Reporting** ([Network Reporting](network-reporting.md))
 > - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Third-Party Creative)
-> - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Hosted Creative)
+> - **Advertisers** > **Creative Manager** > **Single Creative** > **Creative Content** (Add a Hosted Creative) 
 > - **Advertisers** > **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
-> - **Publishers** > **Create New Placement** > **Placement Details tab**
-> ([Create a Placement](create-a-placement.md))
+> - **Publishers** > **Create New Placement** > **Placement Details tab**([Create a Placement](create-a-placement.md))
 > - **Publishers** > **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
 
 ## Delete an existing size

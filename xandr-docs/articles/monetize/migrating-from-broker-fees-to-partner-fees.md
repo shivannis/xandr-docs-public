@@ -169,7 +169,7 @@ The changes for each report are summarized in the tables below.
 | Network Profit eCPC | network profit / clicks | Same |
 | Network Profit eCPM | (network profit / imps) * 1,000 | Same |
 | Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
-| Partner Fees | The total amount of third-party costs, budgeted using Partner Fees, that have accrued on an augmented line item over the reported period of time. | Same |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
 | PPM | (profit / imps) * 1,000 | Deprecated.<br>Returns error. |
 | PPM including Fees | (profit / imps) * 1,000 | Deprecated.<br>Returns error. |
 | Profit | network revenue - network media cost | booked revenue - total cost |
@@ -196,7 +196,7 @@ The changes for each report are summarized in the tables below.
 | Network Profit eCPM | (network profit / imps) * 1,000 | Same |
 | Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
 | Network ROI | network ROI | Deprecated.<br>Returns error. |
-| Partner Fees | The total amount of third-party costs, budgeted using Partner Fees, that have accrued on an augmented line item over the reported period of time. | Same |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
 | Profit | booked revenue - total cost | Same |
 | Profit eCPA | (booked revenue - total cost) / conversions | Same |
 | Profit eCPC | (booked revenue - total cost) / clicks | Same |
@@ -291,6 +291,20 @@ The changes for each report are summarized in the tables below.
 | Profit eCPA | (booked revenue - total cost) / conversions | Same |
 | Profit eCPC | (booked revenue - total cost) / clicks | Same |
 | Profit eCPM | ((booked revenue - media cost) / imps) * 1,000 | ((booked revenue - total cost) / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
+
+[Site Domain Performance](site-domain-performance.md)
+
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - media cost) / imps) * 1,000 | (( booked revenue - total cost) / imps) * 1,000 |
 | Profit Margin | (booked revenue - total cost) / booked revenue | Same |
 | Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
 | Total Cost eCPA | total cost / conversions | Same |
