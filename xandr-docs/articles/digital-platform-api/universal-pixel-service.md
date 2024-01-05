@@ -13,9 +13,9 @@ The Universal Pixel Service is a set of REST API services that give you access t
 
 The Universal Pixel provides insights into the interactions that users have with your website so you can easily segment these users, measure actions they take, and better target your ads. The Universal Pixel Service has three sets of endpoints:
 
-- Universal-Pixel REST API - To create, delete, view, and update a Universal Pixel.
-- Audience REST API - To create, delete, view, and update an audience.
-- Conversion REST API - To create, delete, view, and update a conversion.
+- [Universal-Pixel REST API](#universal-pixel-rest-api) - To create, delete, view, and update a Universal Pixel.
+- [Audience REST API](#audience-rest-api) - To create, delete, view, and update an audience.
+- [Conversion REST API](#conversion-rest-api) - To create, delete, view, and update a conversion.
 
 See below for [examples](#examples) of each Universal Pixel endpoint.
 
@@ -75,7 +75,7 @@ You create a Universal Pixel conversion using **`/universal-pixel/conversion`** 
 |:---|:---|:---|
 | `member_id` | integer | ID of a member associated with Universal Pixel for operation. |
 
-#### JSON fields (request body)
+#### JSON fields (request body) for creating a new Universal Pixel
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -220,8 +220,8 @@ Any field which needs to be changed from existing value to new one. For example:
 |:---|:---|:---|
 | `name` | string | Name of the Audience. It is a **required** field. |
 | `universal_pixel_id` | integer | ID for the Universal Pixel to associate audience with. It is a **required** field. |
-| `user_ttl_minutes` | integer | TTL (Time To Live) in minutes for a user in this audience; maximum = 259200, minimum = 0, default = 43200. |
-| `rule` | object | Rule set for the audience. This field is a **required** field and an object. It should contain an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-creating-a-new-audience) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
+| `user_ttl_minutes` | integer | TTL (Time To Live) in minutes for a user in this audience; **maximum** = `259200`, **minimum** = `0`, **default** = `43200`. |
+| `rule` | object | Rule set for the audience. This field is a **required** field and an object. It should contain an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-creating-a-new-audience-request-body) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
 
 ##### `rule` for creating a new audience (request body)
 
@@ -241,7 +241,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `name` | string | Name of the Audience. |
 | `segment_id` | integer | Segment ID to use to target this audience. |
 | `user_ttl_minutes` | integer | TTL (Time To Live) in minutes for a user in this audience; **maximum** = `259200`, **minimum** = `0`, **default** = `43200`. |
-| `rule` | object | Rule set for the audience. This field is an object and contains an array of the rules that is met to consider a fire of the Universal Pixel to be a conversion. For example, below rule means the Universal Pixel fire is on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
+| `rule` | object | Rule set for the audience. This field is an object and contains an array of the rules that is met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-creating-a-new-audience-response-body) means the Universal Pixel fire is on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
 | `created_on` | string | Timestamp when audience was created. <br>**Format:** `YYYY-MM-DD HH:MM:SS` e.g., `2019-03-08 15:34:18`. |
 | `published_on` | string | Timestamp when audience was published. <br>**Format:** `YYYY-MM-DD HH:MM:SS` e.g., `2019-03-08 15:34:18`. |
 
@@ -253,7 +253,7 @@ Any field which needs to be changed from existing value to new one. For example:
 "pixel_uuid":"0b3758f1-cf0f-46c1-9957-00bd36f19ad0"},
 ```
 
-### View an Audience by ID
+### View an audience by ID
 
 #### Query fields for viewing an audience by ID
 
@@ -270,7 +270,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `universal_pixel_id` | integer | ID for the Universal Pixel to associate audience with. |
 | `advertiser_id` | integer | ID of advertiser associated with the Audience. |
 | `name` | string | Name of the Audience. |
-| `user_ttl_minutes` | integer | TTL (Time To Live) in minutes for a user in this audience; maximum = 259200, minimum = 0, default = 43200. |
+| `user_ttl_minutes` | integer | TTL (Time To Live) in minutes for a user in this audience; **maximum** = `259200`, **minimum** = `0`, **default** = `43200`. |
 | `segment_id` | integer | Segment ID to use to target this audience. |
 | `rule` | object | Rule set for the audience. This field is an object and contains an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-viewing-an-audience-by-id-response-body) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
 | `created_on` | string | Timestamp when audience was created. <br>**Format:** `YYYY-MM-DD HH:MM:SS` e.g., `2019-03-08 15:34:18`. |
@@ -284,7 +284,7 @@ Any field which needs to be changed from existing value to new one. For example:
 "pixel_uuid":"0b3758f1-cf0f-46c1-9957-00bd36f19ad0"},
 ```
 
-### Update an Audience by ID
+### Update an audience by ID
 
 #### Query fields for updating an audience by ID
 
@@ -310,7 +310,7 @@ Any field which needs to be changed from existing value to new one. For example:
 "pixel_uuid":"0b3758f1-cf0f-46c1-9957-00bd36f19ad0"},
 ```
 
-#### JSON Fields (response body) for updating an audience by ID
+#### JSON fields (response body) for updating an audience by ID
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -378,7 +378,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `conversion_category_id` | integer | ID of the conversion event category. See the [values](#conversion_category_id-values) of `conversion_category_id`. |
 | `conversion_category_custom` | string | Label of the custom conversion event category. This field is set to the string value of what category to include the conversion in.<br>**Note:**<br>This field is only set if `conversion_category_id` is `null`. |
 | `count_type` | enum | Type of conversion count - `view`, `click`, or `hybrid`. |
-| `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is 32767(22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
+| `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
 | `post_click_value` | number | The value you attribute to a conversion after a click. |
 | `post_click_expire_minutes` | number | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
 | `post_view_value` | number | The value you attribute to a conversion after a view. |
@@ -437,17 +437,17 @@ Any field which needs to be changed from existing value to new one. For example:
 |:---|:---|:---|
 | `universal_pixel_id` | integer | ID for the universal pixel with which this conversion is associated with. This is a **required** field. |
 | `name` | string | Name of the conversion. This is a **required** field. |
-| `conversion_category_id` | integer | ID of the conversion event category. See the [values](#conversion_category_id-values-request-body-for-creating-a-new-conversion) of `conversion_category_id`. |
+| `conversion_category_id` | integer | ID of the conversion event category. See the [values](#conversion_category_id-values-for-creating-a-new-conversion-request-body) of `conversion_category_id`. |
 | `conversion_category_custom` | string | Label of the custom conversion event category. This field is set to the string value of what category to include the conversion in.<br><br>**Note:** This field is only set if `conversion_category_id` is `null`. |
 | `count_type` | enum | Type of conversion count - `view`, `click`, or `hybrid`. This is a **required** field. |
-| `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767`(22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
+| `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
 | `post_click_value` | number | The value you attribute to a conversion after a click. |
 | `post_click_expire_minutes` | number | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
 | `post_view_value` | number | The value you attribute to a conversion after a view. |
 | `post_view_expire_minutes` | number | The value you attribute to a conversion after a view. |
 | `rule` | object | Rule set for the audience. This is a **required** field and an object. It should contain an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-creating-a-new-conversion-request-body) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
 
-##### `conversion_category_id` values (request body) for creating a new conversion
+##### `conversion_category_id` values for creating a new conversion (request body)
 
 ```
 { id: 1, title: ' Page view', event: 'PageView' },
@@ -560,7 +560,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `name` | string | Name of the conversion. |
 | `conversion_pixel_id` | integer | ID of legacy conversion pixel. |
 | `conversion_category_id` | integer | ID of the conversion event category. See the [values](#conversion_category_id-values-for-viewing-a-conversion-by-id) of `conversion_category_id`. |
-| `conversion_category_custom` | string | Label of the custom conversion event category. This field is set to the string value of what category to include the conversion in.<br>Important<br>This field is only set if `conversion_category_id` is `null`. |
+| `conversion_category_custom` | string | Label of the custom conversion event category. This field is set to the string value of what category to include the conversion in.<br><br>**Important:**<br>This field is only set if `conversion_category_id` is `null`. |
 | `count_type` | enum | Type of conversion count - `view`, `click` or `hybrid`. |
 | `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
 | `post_click_value` | number | The value you attribute to a conversion after a click. |

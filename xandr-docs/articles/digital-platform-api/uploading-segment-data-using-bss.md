@@ -1,11 +1,11 @@
 ---
-title: Uploading Segment Data Using BSS
+title: Digital Platform API - Uploading Segment Data Using BSS
 description: Explore the multi-step process on how to add your segment file to the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Uploading segment data using BSS
+# Digital Platform API - Uploading segment data using BSS
 
 As described in this document, adding your segment file to the system is a multi-step process.
 
@@ -57,12 +57,12 @@ $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
   }
 ```
 
-## Post the file to the upload URL
+## `POST` the file to the upload URL
 
-The file upload URL is given in the JSON response in Step 1 by the field upload_url: you will `POST` your segment file to this URL for
+The file upload URL is given in the JSON response in Step 1 by the field `upload_url`: You will `POST` your segment file to this URL for
 processing. Keep the following guidelines in mind:
 
-- Do not hard-code the upload URL in your application. Make sure to dynamically grab it from the upload_url field.
+- Do not hard-code the upload URL in your application. Make sure to dynamically grab it from the `upload_url` field.
 - You must begin your upload to the given Upload URL within five (5) minutes, and only one URL is valid at any given time. If you wait longer than 5 minutes to start your upload, you must request a new URL.
 - We recommend, you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will be prohibited from uploading additional jobs.
 
@@ -108,8 +108,8 @@ curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segmen
 
 ## Check the job status
 
-Finally, check the processing status by sending a GET request with the `job_id` returned from step 2 or 3. The JSON response contains
-information such as how long the file took to process and the number of errors, if any. Note that you should wait until phase="completed" before looking at the results fields such as `num_valid`. For more detailed information, see [Troubleshooting BSS Uploads](troubleshooting-bss-uploads.md).
+Finally, check the processing status by sending a `GET` request with the `job_id` returned from step 2 or 3. The JSON response contains
+information such as how long the file took to process and the number of errors, if any. Note that you should wait until `phase="completed"` before looking at the results fields such as `num_valid`. For more detailed information, see [Troubleshooting BSS Uploads](troubleshooting-bss-uploads.md).
 
 Per Xandr SLA, allow up to 24 hours for the file to process.
 

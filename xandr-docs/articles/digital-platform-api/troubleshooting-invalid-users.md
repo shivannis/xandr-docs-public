@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Troubleshooting Invalid Users
+# Digital Platform API - Troubleshooting invalid users
 
 To minimize the incidence of invalid users, drop the user sync pixel more frequently and expire old users out of your database after a period of inactivity.
 

@@ -17,7 +17,7 @@ Here's the general process:
 
 1. You create a JSON file that defines your pattern.
 1. You make the `POST` request shown below.
-1. The response includes `usergroup_target` values for your pattern. You update the relevant profiles with these values (see `user_group_targets` in the [Profile Service](profile-service.md) for more details).
+1. The response includes `usergroup_target` values for your pattern. You update the relevant profiles with these values. For more details, see `user_group_targets` in the [Profile Service](profile-service.md).
 
 ## REST API
 
@@ -32,7 +32,7 @@ Here's the general process:
 | Field | Type (Length) | Description |
 |:---|:---|:---|
 | `cookieless` | boolean | If `true`, the first user group in the `groups` array will be set to include cookieless users. By default, this is set to `false` because you cannot track clicks or conversions for cookieless users and, therefore, cannot test performance on them.<br>**Required On:** `POST` <br>**Default:** `false` |
-| `groups` | array of objects | The user groups in the pattern. No more than five groups can be included. See Groups below for more details.<br>**Required On:** `POST` |
+| `groups` | array of objects | The user groups in the pattern. No more than five groups can be included. For more details, see [Groups](#groups) below.<br>**Required On:** `POST` |
 | `id` | int | The ID of the user group pattern. |
 | `last_modified` | timestamp | The date on which the user group pattern was last modified. |
 | `member_id` | in | The member to which the user group pattern belongs.<br>**Required On:** `POST` |

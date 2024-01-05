@@ -13,7 +13,7 @@ In addition, custom and impbus macros are supported in the extension templates.
 
 Once you have created an extension, you must then associate it with a creative.
 
-**Example Extension XML**
+**Example extension XML**
 
 ```
 <Ad>
@@ -35,7 +35,7 @@ Once you have created an extension, you must then associate it with a creative.
 | `GET` | [https://api.appnexus.com/vast-extension-template](https://api.appnexus.com/vast-extension-template) | View VAST Extension Templates. |
 | `POST` | [https://api.appnexus.com/vast-extension-template](https://api.appnexus.com/vast-extension-template) | Add a VAST extension template and custom macros. |
 
-## JSON Fields
+## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -44,7 +44,7 @@ Once you have created an extension, you must then associate it with a creative.
 | `content` | string | The XML content to output when rendering the creative's VAST document.<br>**Required On:** `POST` |
 | `created_on` | timestamp | The date and time the VAST extension template was created.<br>**Read Only.** |
 | `last_activity` | timestamp | The date and time the template was last modified.<br>**Read Only.** |
-| `macros` | array of objects | The custom macros used in the content field. For more details, see [Custom Macros](#custom-macros) below. |
+| `macros` | array of objects | The custom macros used in the `content` field. For more details, see [Custom Macros](#custom-macros) below. |
 
 ### Custom macros
 
@@ -55,15 +55,15 @@ You must define each custom macro used in the `content` field.
 | `code` | string (30) | The macro name exactly as it is used in the `content` field. For example, if `#{BORDER_SIZE}` is the macro in the `content` field, you would pass `"BORDER_SIZE"` here.<br>**Required On:** `POST` |
 | `name` | string (50) | The user-friendly name for this macro that traffickers will see when they add creatives that use this template via the UI.<br>**Required On:** `POST` |
 | `is_required` | boolean | If true, traffickers will be required to provide a value for the macro when using this template.<br>**Required On:** `POST` |
-| `type` | enum | The type of value that traffickers will provide for this macro when they add creatives that use this template. Possible values: - `"true/false"`<br> - `"string"`<br> - `"url"`<br> - `"integer"`<br> - `"decimal"`<br> - `"string_list"`<br> - `"select_from_list"` <br> - `"file"`<br>For example, on the UI, if you set this to `"true/false"`, traffickers will see the macro name followed by a check box.<br>**Required On:** `POST` |
-| `default_value` | string | If `is_required` is false, this is the default value that will be used when traffickers do not provide a value for the macro when using this template.<br>**Required On:** `POST`, if `is_required` is `false`. |
+| `type` | enum | The type of value that traffickers will provide for this macro when they add creatives that use this template. <br>Possible values:<br> - `"true/false"`<br> - `"string"`<br> - `"url"`<br> - `"integer"`<br> - `"decimal"`<br> - `"string_list"`<br> - `"select_from_list"` <br> - `"file"`<br>For example, on the UI, if you set this to `"true/false"`, traffickers will see the macro name followed by a check box.<br><br>**Required On:** `POST` |
+| `default_value` | string | If `is_required` is `false`, this is the default value that will be used when traffickers do not provide a value for the macro when using this template.<br>**Required On:** `POST`, if `is_required` is `false`. |
 | `other_data` | string | The accepted values for the macro, if `type` is `"string_list"` or `"select_from_list"`. |
 
 ## Examples
 
 ### Add a custom VAST extension and associate with a creative
 
-**Step 1:** **Add a custom VAST extension**
+#### Step 1: Add a custom VAST extension
 
 ```
 $ cat vast-extension-template
@@ -136,9 +136,9 @@ $ curl -b cookies -c cookies -X POST -d @vast-extension-template 'https://api.ap
   }
 ```
 
-In the **`video_attribute`** object for the creative, assign the template id in the **`vast_extension_template_id`** field and ensure that you define the macros in the **`custom_macros`** object
+In the **`video_attribute`** object for the creative, assign the template ID in the **`vast_extension_template_id`** field and ensure that you define the macros in the **`custom_macros`** object.
 
-**Step 2:** **Associate it with a creative**
+#### Step 2: Associate it with a creative
 
 ```
 {

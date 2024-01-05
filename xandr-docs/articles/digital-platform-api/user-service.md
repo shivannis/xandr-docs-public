@@ -1,11 +1,11 @@
 ---
-title: User Service
+title: Digital Platform API - User Service
 description: Explore the User service, enabling member-level users to create, modify, and retrieve information about existing users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# User service
+# Digital Platform API - User service
 
 "User" refers to people or groups able to log in to  or API. Users are classified by a `user_type`, which determines what type of information they have access to. This service allows member-level users to create other users, as well as modify and retrieve information about existing users.
 
@@ -26,14 +26,14 @@ ms.custom: digital-platform-api
 
 For more information on UI terms, see documentation for your application.
 
-| UI user role | API user_type | Read_only |
+| UI user role | API `user_type` | Read_only |
 |:---|:---|:---|
-| Network | member | false |
-| Network Observer | member | true |
-| Network Advertiser Manager | member_advertiser | false |
-| Network Publisher Manager | member_publisher | false |
-| Advertiser | advertiser | false |
-| Publisher | publisher | false |
+| Network | `member` | false |
+| Network Observer | `member` | true |
+| Network Advertiser Manager | `member_advertiser` | false |
+| Network Publisher Manager | `member_publisher` | false |
+| Advertiser | `advertiser` | false |
+| Publisher | `publisher` | false |
 
 ## REST API
 
@@ -60,18 +60,18 @@ For more information on UI terms, see documentation for your application.
 | `last_name` | string | The user's last name.<br>**Required On:** `POST` |
 | `custom` data | string | Any information relevant to the user can be entered here. |
 | `phone` | string | The user's contact phone number. |
-| `user_type` | enum | The type of user. Possible values:<br>- `"member"`<br>- `"bidder"`<br>- `"publisher"`<br>- `"advertiser"`<br>- `"member_advertiser"`<br>- `"member_publisher"`<br><br>For more details on each user type, see User Types table above.<br>**Required On:** `POST`<br><br>**Note:** This field cannot be modified on `PUT`. To change a user's `user_type`, you must add a new user. |
+| `user_type` | enum | The type of user. Possible values:<br>- `"member"`<br>- `"bidder"`<br>- `"publisher"`<br>- `"advertiser"`<br>- `"member_advertiser"`<br>- `"member_publisher"`<br><br>For more details on each user type, see [User Types](#user-types) table above.<br>**Required On:** `POST`<br><br>**Note:** This field cannot be modified on `PUT`. To change a user's `user_type`, you must add a new user. |
 | `read_only` | boolean | If `true`, the user is not allowed to make changes via the API.<br>**Default:** `false` |
 | `api_login` | boolean | **Admin-only.** If `true`, the user can access and use the API.<br>**Default:** `false` |
-| `entity_id` | int | The ID of the entity (member or bidder) to which the user belongs. <br><br>**Note:** The `entity_id` is the same as the `member_id`, which is used in other services.<br>**Required On:** `POST` (if `user_type` is `"member"`) |
+| `entity_id` | int | The ID of the entity (member or bidder) to which the user belongs. <br><br>**Note:** The `entity_id` is the same as the `member_id`, which is used in other services.<br>**Required On:** `POST` (if `user_type` is `"member"`). |
 | `entity_name` | string | The name of the entity (member or bidder) to which the user belongs. |
-| `publisher_id` | int | The ID of the publisher with which the user is associated, if `user_type` is `"publisher"`.<br>**Required On:** `POST` (if `user_type` is `"publisher"`) |
-| `advertiser_id` | int | The ID of the advertiser with which the user is associated, if `user_type` is `"advertiser"`.<br>**Required On:** `POST` (if `user_type` is `"advertiser"`) |
-| `advertiser_access` | array | The advertiser(s) that the user can access, if `user_type` is `"member_advertiser"`.<br>**Required On:** `POST` (if `user_type` is `"member_advertiser"`) |
-| `publisher_access` | array | The publisher(s) that the user can access, if `user_type` is `"member_publisher"`.<br>**Required On:** `POST` (if `user_type` is `"member_advertiser"`) |
+| `publisher_id` | int | The ID of the publisher with which the user is associated, if `user_type` is `"publisher"`.<br>**Required On:** `POST` (if `user_type` is `"publisher"`). |
+| `advertiser_id` | int | The ID of the advertiser with which the user is associated, if `user_type` is `"advertiser"`.<br>**Required On:** `POST` (if `user_type` is `"advertiser"`). |
+| `advertiser_access` | array | The advertiser(s) that the user can access, if `user_type` is `"member_advertiser"`.<br>**Required On:** `POST` (if `user_type` is `"member_advertiser"`). |
+| `publisher_access` | array | The publisher(s) that the user can access, if `user_type` is `"member_publisher"`.<br>**Required On:** `POST` (if `user_type` is `"member_advertiser"`). |
 | `reporting_decimal_type` | enum | The character used for decimals in reporting. <br>Possible values:<br>- `"comma"`<br>- `"decimal"` (period)<br>This setting can be overridden at the report level (see `reporting_decimal_type` in the [Report Service](report-service.md)).<br>**Default:** `reporting_decimal_type` from [member](member-service.md). |
-| `decimal_mark` | enum | The character separating the integer part from the fractional part of a number. <br>Possible values:<br>- `"period"`<br>- `"comma"`<br>This character must be different than the character used for `thousand_separator`.<br>**Default**: `"period"`<br><br>**Note:** This field controls how the user enters and views numbers in only. It does not affect numbers in the API. |
-| `thousand_separator` | enum | The character separating digit groups in a number. Possible values:<br>- `"comma"`<br>- `"space"`<br>- `"period"`<br>This character must be different than the character used for `decimal_mark`.<br>**Default:** `"comma"` <br>**Note:** This setting controls how the user enters and views digit groups in only. It does not affect digit groups in the API. |
+| `decimal_mark` | enum | The character separating the integer part from the fractional part of a number. <br>Possible values:<br>- `"period"`<br>- `"comma"`<br>This character must be different than the character used for `thousand_separator`.<br><br>**Default**: `"period"`<br><br>**Note:** This field controls how the user enters and views numbers in only. It does not affect numbers in the API. |
+| `thousand_separator` | enum | The character separating digit groups in a number. Possible values:<br>- `"comma"`<br>- `"space"`<br>- `"period"`<br>This character must be different than the character used for `decimal_mark`.<br><br>**Default:** `"comma"` <br><br>**Note:** This setting controls how the user enters and views digit groups in only. It does not affect digit groups in the API. |
 | `send_safety_budget_notifications` | boolean | If `true`, the user will receive email notifications when the daily safety budget threshold is approached. For more details, see the `daily_budget` field on the [Member Service](member-service.md).<br>**Default:** `"false"`  |
 | `is_developer` | boolean | **Read-only.** This flag gives a user rights to access certain developer-focused services such as the Plugin and Plugin Instance services, which are used by apps. It is set to `true` by a Xandr admin on a case-by-case basis.<br>**Default:** `"false"`  |
 | `last_modified` | timestamp | The date and time when the user was last modified. |

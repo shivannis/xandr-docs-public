@@ -197,7 +197,7 @@ $ curl -b cookies -c cookies -X DELETE 'https://api.appnexus.com/user-DRT?id=11'
          "count_cache_used" : false,
          "instance" : "localhost",
          "output_term" : "not_found",
-         "slave_hit" : false
+         "s1ave_hit" : false
       }
    }
 }
