@@ -46,7 +46,7 @@ For each network you'd like to mediate, do the following:
     > [!NOTE]
     > In some cases, you may need to change the format slightly depending on the requirements of the mediation network's UI. For example:
     > - HTML: You may need to wrap the JS in `<script>` tags to upload it as HTML.
-    > - URL: You may need to provide a URL. Use [http://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html) or the secure version: [https://cdn.adnxs.com/mediation/noad.md](https://cdn.adnxs.com/mediation/noad.html).
+    > - URL: You may need to provide a URL. Use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: `https://cdn.adnxs.com/mediation/noad.md`.
 
 1. Log in to the UI.
 1. In the UI, [Mediation Networks](mediation-networks.md)

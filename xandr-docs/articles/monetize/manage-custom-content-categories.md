@@ -16,8 +16,7 @@ inventory. After you have created custom categories, publishers can
 assign placements to them. At that point, buyers can then choose these
 categories when defining the targeting settings of a campaign.
 
-In the Content Categories area of Xandr
-Monetize, you can perform the following tasks:
+In the Content Categories area of Microsoft Monetize, you can perform the following tasks:
 
 - Create a new custom content category
 - Edit the name and description of an existing custom content category
@@ -41,7 +40,7 @@ To reach this screen, select
 
 The following columns exist for each custom category on the main screen.
 
-**(Checkbox)**: Use this column to select
+**Checkbox**: Use this column to select
 multiple categories for deletion.
 
 **Category**: The name you have entered

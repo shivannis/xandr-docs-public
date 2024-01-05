@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 You must have [network level access](getting-started-with-roles.md) to perform this task.
 
-The Partner Fees page allows you to create, view, modify, and delete
+The **Partner Fees** page allows you to create, view, modify, and delete
 fees. You can see which advertisers a fee is eligible for and which line
 items it has been applied to.
 

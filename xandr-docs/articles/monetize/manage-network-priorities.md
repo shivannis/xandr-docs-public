@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Manage Network Priorities
+# Manage network priorities
 
 The **Network Priorities** screen
 (**Network** 
@@ -21,7 +21,7 @@ strategies.
 >
 > To learn about how to set up minimum margin on the line item, see [Create a Standard Line Item](create-a-standard-line-item.md).
 
-## To make changes to your Network Priorities settings
+## To make changes to your network priorities settings
 
 1. In the **Network** tab, in the
     **Tools** menu, select

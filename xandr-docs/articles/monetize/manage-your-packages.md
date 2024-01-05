@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Manage Your Packages
+# Manage your packages
 
 As a seller, you can use the **Packages**
 screen to manage all of your packages. You can search your packages,

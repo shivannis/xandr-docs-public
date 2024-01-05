@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Managing Targeting Templates
+# Managing targeting templates
 
 Targeting templates allow users to apply pre-established inventory and
 user targeting settings to campaigns. These templates can be saved and

@@ -28,7 +28,7 @@ targetable. Enabling individual placements for resale makes them
 buyable. For more information about this distinction, see
 [Reselling Managed Inventory](reselling-managed-inventory.md).
 
-## Getting there
+### Getting there
 
 To get to the **Reselling Exposure**
 screen, select
@@ -36,7 +36,7 @@ screen, select
 navigation menu. The **Reselling
 Exposure** tab will be displayed by default.
 
-## Reselling priority
+### Reselling priority
 
 For each impression on a managed publisher, if there is a campaign from
 a managed advertiser with a priority at or above this number, do not
@@ -47,7 +47,7 @@ preference over campaigns run by external buyers.
 > [!NOTE]
 > You can ignore this setting if you don't have both managed supply and demand.
 
-## Publisher reselling exposure
+### Publisher reselling exposure
 
 In this section, you can expose one or more of your publishers'
 inventory for targeting by other platform members' campaigns.

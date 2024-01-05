@@ -29,4 +29,4 @@ Center** to:
   seller statistics, and send messages directly to the seller in
   Monetize.
 - [Customize Your Buyer Profile](customize-your-buyer-profile.md) - Step-by-step instructions for editing the profile
-  information that displays to sellers on your Partner Details page.
+  information that displays to sellers on your **Partner Details** page.
