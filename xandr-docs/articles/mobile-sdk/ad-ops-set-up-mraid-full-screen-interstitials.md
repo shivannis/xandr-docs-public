@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Ad ops - Set up MRAID full screen interstitials
+# Ad Ops - Set up MRAID full screen interstitials
 
 This page has Ad Ops setup instructions for serving MRAID full screen interstitials on our Xandr [Mobile SDKs](xandr-mobile-sdks.md).
 
@@ -15,19 +15,15 @@ For developer-focused interstitial documentation, see [Show Interstitials](show-
 
 To set up your MRAID creative, first create a creative and then configure the settings listed below:
 
-- Under **Creative Content**, choose the **Third-party** creative type.
-
-- Choose a **Creative format** of **Third-party tag**. Make sure to uncheck **Serve in iFrame**.
-
-- When entering the MRAID creative text in the **Tag** field, make sure to reference the `mraid.js` file in the first line of your creative:
+1. Under **Creative Content**, choose the **Third-party** creative type.
+2. Choose a **Creative format** of **Third-party tag**. Make sure to uncheck **Serve in iFrame**.
+3. When entering the MRAID creative text in the **Tag** field, make sure to reference the `mraid.js` file in the first line of your creative:
 
   ```
   <script src="mraid.js"></script>
   ```
-
-- Choose a **Media Type** of **Interstitial: Interstitial**.
-
-- In the **Template** field, choose **Xandr: Mobile SDK** (ID 38896).
+4. Choose a **Media Type** of **Interstitial: Interstitial**.
+5. In the **Template** field, choose **Xandr: Mobile SDK** (ID 38896).
 
 Then, in the **Template** tab:
 
