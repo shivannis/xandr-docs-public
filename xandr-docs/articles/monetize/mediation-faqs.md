@@ -157,7 +157,7 @@ mediation.
 | InMobi | X | X |  | Yes | Server | [InMobi Support](https://support.inmobi.com/) | N/A |
 | Jumptap | X | X |  | Yes | Server | [JumpTap Support](https://support.jumptap.com/index.php/Main_Page) | N/A |
 | Millennial Media (mobile web) |  | X |  | Yes | Client | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | N/A |
-| Millennial Media (mobile app) | X |  |  | Yes | SDK | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) | [Millennial Media SDK](mmedia.com/resources/sdk-api) |
+| Millennial Media (mobile app) | X |  |  | Yes | SDK | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) |
 | MobFox | X | X |  | Yes | Server | [MobFox Support](https://www.mobfox.com/publishers/integration/) | - [MobFox SDK](https://www.mobfox.com/publishers/integration/) |
 | MobileFuse | X | X |  | Yes | Server | [MobileFuse Support](http://aws.mobilefuse.com/contact.html) | N/A |
 | Mojiva | X | X |  | Yes | Server | [Mojiva Support](http://www.mojiva.com/support) | N/A |
