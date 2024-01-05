@@ -1,12 +1,12 @@
 ---
 title: Common Report Configurations
-description: The article explains the most common report configurations in yield analytics.
+description: The article explains the most common report configurations in Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Common report configurations
 
-Below are the most common report configurations in yield analytics:
+Below are the most common report configurations in Yield Analytics:
 
 ## At risk report
 
