@@ -24,8 +24,10 @@ While choosing the **Product Type**, here are two options with radio buttons tha
 
 - Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., ROS 728x90).
 - Reporting – Product that is used for reporting purposes, but is not generally not sold (e.g., Top three ad sizes in the Sports section).
-- Specify the Default **Rate Card CPM**. This is the default **Rate Card CPM** that is binded to this product.
-- You can associate this product to product groups. In the
+Specify the Default **Rate Card CPM**. This is the default **Rate Card CPM** that is binded to this product.
+
+## Product groups
+You can associate any product to product groups. In the
   **Associated Product Groups** section, click the **Add to Product Groups** button. This accesses the **Product
   Group** screen.
   - There is a filter that assists searching for a specific product group(s). You can filter by the following parameters: **Contains**, **Starts with**, **Ends with**, **Equals**.
@@ -40,8 +42,8 @@ While choosing the **Product Type**, here are two options with radio buttons tha
   - Once you have made your entries and selection,
     click **Update** to accept the selections.
   - Click **Cancel** to cancel your selection at any time during the process.
-- Once the associated product groups are created, they are displayed on the **Create Product** screen.
-- There is filter capability to locate the product group you would like to edit. Clicking the down arrow next to each column identifier allows you to drill down into that section.
+Once the associated product groups are created, they are displayed on the **Create Product** screen.
+There is filter capability to locate the product group you would like to edit. Clicking the down arrow next to each column identifier allows you to drill down into that section.
 
 | Column | Filters | Reaction Button |
 |---|---|---|
@@ -49,7 +51,9 @@ While choosing the **Product Type**, here are two options with radio buttons tha
 | Description | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
 | Status | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 
-- You can assign a **Seasonal Rate Card** to products. To add a new seasonal rate card, click the **Add new** button
+## Seasonal rate card assignment
+
+You can assign a **Seasonal Rate Card** to products. To add a new seasonal rate card, click the **Add new** button
   in the Seasonal Rate Card section of the Create Product screen. This accesses the **Create a new Seasonal Rate
   Card** screen.
   - Enter the desired date range. This is accomplished by clicking the actual displayed Date Range entry, to access a calendar. Click **Update** to make your selection.
