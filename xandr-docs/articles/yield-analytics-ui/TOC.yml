@@ -262,10 +262,10 @@
       href: schedule-a-saved-report.md
 - name: Integrations
   items:
-  - name: Ad-Juster Frequently Asked Questions (FAQs)
-    href: frequently-asked-questions-faqs.md
   - name: Working with the Yield Analytics Extension for DFP Sales Manager
     href: working-with-the-yield-analytics-extension-for-dfp-sales-manager.md
+  - name: Ad-Juster Discrepancy
+    href: frequently-asked-questions-faqs.md
 - name: Channel Management
   items:
   - name: Overview
