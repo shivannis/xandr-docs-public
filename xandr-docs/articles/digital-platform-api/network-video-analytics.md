@@ -1,47 +1,19 @@
 ---
-Title : Network Video Analytics
+title: Network Video Analytics
+description: Use the network video analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
->
-The **Network Video Analytics** report can be used to view video event
-metrics for a network member. To drill down into more granular analytics
 ---
 
+# Network video analytics
 
-# Network Video Analytics
+The **Network Video Analytics** report can be used to view video event metrics for a network member. To drill down into more granular analytics for a specific advertiser or publisher, see the [Network Video Advertiser Analytics](./network-advertiser-video-analytics.md) and [Network Video Publisher Analytics](./network-publisher-video-analytics.md) reports.
 
+> [!NOTE]
+> - Video metrics are recorded for VAST creatives only.
+> - For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
 
-
->
-
-The **Network Video Analytics** report can be used to view video event
-metrics for a network member. To drill down into more granular analytics
-for a specific advertiser or publisher, see the <a
-href="network-advertiser-video-analytics.md"
-class="xref" target="_blank">Network Video Advertiser Analytics</a> and
-<a
-href="network-publisher-video-analytics.md"
-class="xref" target="_blank">Network Video Publisher Analytics</a>
-reports.
-
-
-
-<b>Note:</b>
-
-- Video metrics are recorded for VAST creatives only.
-- For instructions on retrieving a report, please see <a
-  href="report-service.md"
-  class="xref" target="_blank">Report Service</a> or the
-  <a href="network-video-analytics.md#report_api_template__example"
-  class="xref">example</a> below.
-
-
-
-
-
-
-
-## Time Frame
+## Time frame
 
 The `report_interval` field can be set to one of the following:
 
@@ -61,2479 +33,232 @@ The `report_interval` field can be set to one of the following:
 - last_30_available_days
 - last_365_days
 
-**Data Retention Period**
+**Data retention period**
 
 Data in this report is retained for 420 days.
 
-
-
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
-
->
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Dimensions
 
-<table id="report_api_template__table_jpn_vzj_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_jpn_vzj_xwb__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="report_api_template__table_jpn_vzj_xwb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="report_api_template__table_jpn_vzj_xwb__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="report_api_template__table_jpn_vzj_xwb__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="report_api_template__table_jpn_vzj_xwb__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"2010-02-01 06:00:00"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The hour of
-the auction.
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `hour` | time | Yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
+| `day` | time | Yes | `"2010-02-01"` | The day of the auction. |
+| `month` | time | No | `"2010-02"` | The month of the auction. |
+| `buyer_member_id` | int | Yes | `123` | The ID of the buying member. If the impression was not purchased, this field shows one of the following values: <br>`229` = PSA <br>`0` = Blank <br>`319` = Default |
+| `buyer_member_name` | string | No | `"My Network"` | The name of the buying member. |
+| `buyer_member` | string | No | `"My Network (123)"` | **Deprecated** (as of October 17, 2016). |
+| `split_id` | int | Yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
+| `split_name` | string | Yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
+| `creative_id` | int | Yes | `554` | The ID of the creative.<br><br>**Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative_name` | string | No | `"Q1 2010 728x90"` | The name of the creative.<br><br>**Note**: For external click or impression trackers, `creative_id` will be `"External Clicks"` or `"External Imps"`. |
+| `creative` | string | No | `"Q1 2010 728x90 (554)"` | **Deprecated** (as of October 17, 2016). |
+| `member_id` | int | Yes | `767` | The ID of the member. |
+| `seller_member_id` | int | Yes | `456` | The ID of the selling member. |
+| `seller_member_name` | string | No | `"That Seller"` | The name of the selling member. |
+| `seller_member` | string | No | `"That Seller (456)"` | **Deprecated** (as of October 17, 2016). |
+| `advertiser_id` | int | Yes | `789` | The ID of the advertiser. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown. |
+| `advertiser_name` | string | No | `"Verizon Wireless"` | The name of the advertiser. |
+| `advertiser` | string | No | `"Verizon Wireless (789)"` | **Deprecated** (as of October 17, 2016). |
+| `advertiser_currency` | string | Yes | `"USD"` | The currency of the advertiser. |
+| `publisher_id` | int | Yes | `321` | The ID of the publisher. |
+| `publisher_name` | string | No | `"Test"` | The name of the publisher. |
+| `publisher` | string | No | `"Test (123)"` | **Deprecated** (as of October 17, 2016). |
+| `publisher_currency` | string | Yes | `"USD"` | The currency of the publisher. |
+| `site_id` | int | Yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
+| `site_name` | string | No | `"Site Name"` | The name of the site. |
+| `site` | string | No | `"Site Name (194)"` | Deprecated (as of October 17, 2016). |
+| `placement_id` | int | Yes | `456` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
+| `placement_name` | string | No | `"Ivillage 160x600"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
+| `placement_code` | string | No | `"Ivillage Code"` | The custom code for the placement. |
+| `insertion_order_id` | int | Yes | `321` | The ID of the insertion order. |
+| `insertion_order_name` | string | No | `"Insertion Order"` | The name of the insertion order. |
+| `insertion_order` | string | No | `"Insertion Order (321)"` | **Deprecated** (as of October 17, 2016). |
+| `line_item_id` | int | Yes | `111` | The ID of the line item. |
+| `line_item_name` | string | No | `"Default Line Item"` | The name of the line item. |
+| `line_item` | string | No | `"Default Line Item (111)"` | **Deprecated** (as of October 17, 2016). |
+| `line_item_code` | string | No | `"Default Line Item Code"` | The custom code for the line item. |
+| `campaign_id` | int | Yes | `222` | The ID of the campaign. |
+| `campaign_name` | string | No | `"Default Campaign"` | The name of the campaign. |
+| `campaign` | string | No | `"Default Campaign (222)"` | **Deprecated** (as of October 17, 2016). |
+| `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
+| `brand_id` | int | Tes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
+| `brand_name` | string | No | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
+| `brand` | string | No | `"Ace Hardware (3)"` | **Deprecated** (as of October 17, 2016). |
+| `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
+| `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
+| `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
+| `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated** (as of October 17, 2016). |
+| `trafficker_for_insertion_order` | string | Yes | `"Maurice Truman"` | The trafficker for the insertion order. See the `"labels"` field in the [Insertion Order Service](./insertion-order-service.md) for more details. |
+| `salesrep_for_insertion_order` | string | Yes | `"Beverly Heller"` | The sales rep for the insertion order. See the `"labels"` field in the [Insertion Order Service](./insertion-order-service.md) for more details. |
+| `creative_recency_bucket_id` | string | no | `"4"` | The ID of the creative recency bucket. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
+| `creative_recency_bucket` | string | yes | `"15-30 minutes"` | The bucket for how recently the creative was displayed. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
+| `creative_frequency_bucket` | string | yes | `"11-20"` | The bucket for how frequently the creative was displayed. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
+| `creative_frequency_bucket_id` | string | no | `"3"` | The ID of the creative frequency bucket. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |
+| `site_domain` | string | no | `bestsiteever.com` | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store.<br>There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
+| `mobile_application_id` | int | Yes | `343200656` | A targetable Apple App Store ID, Android application ID, or Windows application ID. |
+| `supply_type` | string | Yes | `"mobile_web"` | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are <br> - `"web"` <br> - `"mobile_app"` <br> - `"mobile_web"` |
+| `video_playback_method` | string | Yes | `"1"` | The playback method for the creative. See [Video Playback Method](#video-playback-method) below for possible values. |
+| `video_context` | string | Yes | `"3"` | The type of the video creative. See [Video Context](#video-context) below for possible values. |
+| `video_player_size_id` | string | Yes | `"2"` | The ID of the video player width. See [Player Size](#player-size) below for possible values. |
+| `imp_type_id` | int | Yes | `3` | The ID of the associated impression type. Possible values: An integer value which translates as follows:<br>`0` = Video Event Error<br>`1` = Blank: "200 OK" response (blank) served.<br>`2` = PSA : A public service announcement served because no other creative was eligible.<br>`3` = Default Error: A default creative served due to timeout issue.<br>`4` = Default: A default creative served because no campaigns bid or no other creative was eligible.<br>`5` = Kept: One of your managed advertisers served a creative.<br>`6` = Resold: The impression was sold to a third-party buyer.<br>`7` = RTB: Your creative served on third-party inventory.<br>`8` = PSA Error: A public service announcement served due to timeout issue.<br>`9` = External Impression: An impression from an impression tracker.<br>`10` = External Click: A click from a click tracker. |
+| `bidder_id` | int | Yes | `45` | The ID of the associated bidder. |
+| `creative_duration` | int | Yes | `30` | The duration of the video creative in seconds. |
+| `video_delivery_type` | string | No | `"vod"` | The type of streaming content delivery. For example, `Video On Demand (VOD)` and `Live`. |
+| `video_content_genre` | string | No | `"action"` | The main genre of the program in which the ad will be played. For example, `Action`, `Adventure`, `Biography`, `Business`, `Comedy`, etc. |
+| `video_program_type` | string | No | `"series"` | The higher level categorization of the video program's format on which the ad will be played. For example, `Movie`, `Series`, `Special`, `Show`, `Event`, `Clip`, etc. |
+| `video_content_rating` | string | No | `"teens"` | The publisher-identified audience group for which the content is rated. For example, `All`, `Children (7+)` , `Teens (13+)`, `Young Adults (14+)`, or `Adults (18+)`. |
+| `content_duration_secs` | int | Yes | `480` | The length of the video content in seconds. |
+| `device_type` | string | Yes | <br> - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
+| `video_content_duration` | int | Yes | `100` | The length of the video content in seconds. |
+| `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
+| `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
+| `code_1` | string | No | `"Code A"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
+| `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
+| `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 
-<b>Note:</b> For impressions older than 100
-days, the day will be returned rather than the hour.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"2010-02-01"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The day of
-the auction.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"2010-02"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The month of
-the auction.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">123</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-buying member. If the impression was not purchased, this field shows one
-of the following values: <code class="ph codeph">229</code> = PSA, <code
-class="ph codeph">0</code> = Blank, or <code
-class="ph codeph">319</code> = Default.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">buyer_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"My Network"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the buying member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">buyer_member</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"My Network (123)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">split_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">342</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-split that purchased the impressions in this data set. Splits are only
-applicable to augmented line items. For any reports that contain
-campaigns, the <code class="ph codeph">split_id</code> (if included)
-will be <code class="ph codeph">null</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">split_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Mobile Split A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the split that purchased the impressions in this data set. Splits are
-only applicable to augmented line items. For any reports that contain
-campaigns, the <code class="ph codeph">split_name</code> (if included)
-will be <code class="ph codeph">null</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">554</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><div
->
-The ID of the creative.
-
-<b>Note:</b> For external click or impression
-trackers, creative_id will be <code
-class="ph codeph">"External Clicks"</code> or <code
-class="ph codeph">"External Imps"</code>.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Q1 2010 728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><p>The name
-of the creative.</p>
-
-
-<b>Note:</b> For external click or impression
-trackers, creative_id will be <code
-class="ph codeph">"External Clicks" </code>or <code
-class="ph codeph">"External Imps"</code>.
-
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Q1 2010 728x90 (554)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">767</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">seller_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-selling member.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">seller_member_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"That Seller"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the selling member.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">seller_member</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"That Seller (456)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">789</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-advertiser. If the value is <code class="ph codeph">0</code>, either the
-impression was purchased by an external buyer, or a default or PSA was
-shown.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Verizon Wireless"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">advertiser</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Verizon Wireless (789)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">advertiser_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"USD"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The currency
-of the advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">publisher_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">321</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-publisher.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">publisher_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Test"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">publisher</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Test (123)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">publisher_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"USD"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The currency
-of the publisher.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">site_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">194</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-site.
-
-<b>Note:</b> For impressions older than 100
-days, the <code class="ph codeph">site_id</code> will be 0.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">site_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Site Name"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the site.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">site</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Site Name (194)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">placement_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">456</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-placement.
-
-<b>Note:</b> For impressions older than 100
-days, placements will be aggregated into one row with <code
-class="ph codeph">-1</code> as the <code
-class="ph codeph">placement_id</code>.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">placement_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Ivillage 160x600"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the placement.
-
-<b>Note:</b> For impressions older than 100
-days, placements will be aggregated into one row with <code
-class="ph codeph">"All placement data older than 100 days"</code> as the
-<code class="ph codeph">placement_name</code>.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">placement_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Ivillage Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The custom
-code for the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">321</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-insertion order.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Insertion Order"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the insertion order.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Insertion Order (321)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">111</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-line item.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Default Line Item"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">line_item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Default Line Item (111)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Default Line Item Code"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The custom
-code for the line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">campaign_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">222</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-campaign.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">campaign_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Default Campaign"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the campaign.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">campaign</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Default Campaign (222)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">size</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"728x90"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The size of
-the placement/creative served.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">brand_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Tes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">3</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-brand associated with a creative. For <code
-class="ph codeph">imp_type_id</code> = 6, no information is available in
-the <code class="ph codeph">brand_id</code> field for this report. See
-the <a
-href="seller-brand-review-report.md"
-class="xref" target="_blank">Seller Brand Review Report</a>
-instead.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">brand_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Ace Hardware"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the brand associated with a creative. For <code
-class="ph codeph">imp_type_id</code> = 6, no information is available in
-the <code class="ph codeph">brand_name</code> field for this report. See
-the <a
-href="seller-brand-review-report.md"
-class="xref" target="_blank">Seller Brand Review Report</a>
-instead.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">brand</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Ace Hardware (3)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">geo_country</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"US"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The code for
-the geographic country.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">geo_country_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"United States"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the geographic country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">deal_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">2345</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-deal. For more information about negotiated deals between buyers and
-sellers, see <a
-href="deal-service.md"
-class="xref" target="_blank">Deal Service</a> and <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">deal_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Private deal for buyer 1085 with floor of $2.50"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The name of
-the deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">deal</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Private deal for buyer 1085 with floor of $2.50 (45)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><strong>Deprecated</strong>
-(as of October 17, 2016).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">trafficker_for_insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Maurice Truman"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The
-trafficker for the insertion order. See the "labels" field in the <a
-href="insertion-order-service.md"
-class="xref" target="_blank">Insertion Order Service</a> for more
-details.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">salesrep_for_insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Beverly Heller"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The sales rep
-for the insertion order. See the "labels" field in the <a
-href="insertion-order-service.md"
-class="xref" target="_blank">Insertion Order Service</a> for more
-details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_recency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"4"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-creative recency bucket. See <a
-href="network-video-analytics.md#report_api_template__crb"
-class="xref">Creative Recency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_recency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"15-30 minutes"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The bucket
-for how recently the creative was displayed. See <a
-href="network-video-analytics.md#report_api_template__crb"
-class="xref">Creative Recency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_frequency_bucket</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"11-20"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The bucket
-for how frequently the creative was displayed. See <a
-href="network-video-analytics.md#report_api_template__cfb"
-class="xref">Creative Frequency Buckets</a> below for possible
-values.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_frequency_bucket_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"3"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-creative frequency bucket. See <a
-href="network-video-analytics.md#report_api_template__cfb"
-class="xref">Creative Frequency Buckets</a>below for possible
-values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">site_domain</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><a
-href="http://bestsiteever.com/" class="xref" target="_blank"><code
-class="ph codeph">bestsiteever.com</code></a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5"><p>The domain
-where the impression occurred. For mobile applications, this can be the
-URL of the app's location in the app store.</p>
-<p>There are two additional values that may appear in place of a domain,
-specifically: <code class="ph codeph">"deals.unknown"</code> or <code
-class="ph codeph">"managed.unknown"</code>. These mean that we didn't
-receive a valid domain as the referrer. For example, the domain may be
-blank or otherwise malformed.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">mobile_application_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">343200656</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">A targetable
-Apple App Store ID, Android application ID, or Windows application
-ID.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">supply_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"mobile_web"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The
-seller-classified channel to denominate supply in terms of web,
-mobile-optimized web, and mobile app impressions. Possible values are
-<code class="ph codeph">web</code>, <code
-class="ph codeph">mobile_app</code>, and <code
-class="ph codeph">mobile_web.</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_playback_method</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"1"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The playback
-method for the creative. See <a
-href="network-video-analytics.md#report_api_template__vpm"
-class="xref">Video Playback Method</a> below for possible values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_context</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"3"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The type of
-the video creative. See <a
-href="network-video-analytics.md#report_api_template__vc"
-class="xref">Video Context</a> below for possible values.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_player_size_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"2"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-video player width. See <a
-href="network-video-analytics.md#report_api_template__ps"
-class="xref">Player Size</a> below for possible values.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">imp_type_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">3</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-associated impression type. Possible values:An integer value which
-translates as follows:
-<ul>
-<li><code class="ph codeph">0</code> = Video Event Error</li>
-<li><code class="ph codeph">1</code> = Blank: "200 OK" response (blank)
-served.</li>
-<li><code class="ph codeph">2</code> = PSA : A public service
-announcement served because no other creative was eligible.</li>
-<li><code class="ph codeph">3</code> = Default Error: A default creative
-served due to timeout issue.</li>
-<li><code class="ph codeph">4</code> = Default: A default creative
-served because no campaigns bid or no other creative was eligible.</li>
-<li><code class="ph codeph">5</code> = Kept: One of your managed
-advertisers served a creative.</li>
-<li><code class="ph codeph">6</code> = Resold: The impression was sold
-to a third-party buyer.</li>
-<li><code class="ph codeph">7</code> = RTB: Your creative served on
-third-party inventory.</li>
-<li><code class="ph codeph">8</code> = PSA Error: A public service
-announcement served due to timeout issue.</li>
-<li><code class="ph codeph">9</code> = External Impression: An
-impression from an impression tracker.</li>
-<li><code class="ph codeph">10</code> = External Click: A click from a
-click tracker.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">bidder_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The ID of the
-associated bidder.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">creative_duration</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">30</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The duration
-of the video creative in seconds.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_delivery_type<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"vod"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The type of
-streaming content delivery. For example, <code
-class="ph codeph">Video On Demand (VOD)</code> and <code
-class="ph codeph">Live</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_content_genre<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"action"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The main
-genre of the program in which the ad will be played. For example, <code
-class="ph codeph">Action</code>, <code
-class="ph codeph">Adventure</code>, <code
-class="ph codeph">Biography</code>, <code
-class="ph codeph">Business</code>, <code
-class="ph codeph">Comedy</code>, etc.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_program_type<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"series"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The higher
-level categorization of the video program's format on which the ad will
-be played. For example, <code class="ph codeph">Movie</code>, <code
-class="ph codeph">Series</code>, <code class="ph codeph">Special</code>,
-<code class="ph codeph">Show</code>, <code
-class="ph codeph">Event</code>, <code class="ph codeph">Clip</code>,
-etc.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_content_rating<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"teens"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The
-publisher-identified audience group for which the content is rated. For
-example, <code class="ph codeph">All</code>, <code
-class="ph codeph">Children (7+)</code> , <code
-class="ph codeph">Teens (13+)</code>, <code
-class="ph codeph">Young Adults (14+)</code>, or <code
-class="ph codeph">Adults (18+)</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">content_duration_secs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">480</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The length of
-the video content in seconds.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">device_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><ul>
-<li><code class="ph codeph">Desktops &amp; Laptops</code></li>
-<li><code class="ph codeph">Mobile Phones</code></li>
-<li><code class="ph codeph">Tablets</code></li>
-<li><code class="ph codeph">TV</code></li>
-<li><code class="ph codeph">Game Consoles</code></li>
-<li><code class="ph codeph">Media Players</code></li>
-<li><code class="ph codeph">Set Top Box</code></li>
-<li><code class="ph codeph">Other Devices</code></li>
-</ul></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The type of
-device where the creative was set to play.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_content_duration<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">Yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">100</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The length of
-the video content in seconds.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_content_language<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Spanish"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The language
-of the video program in which ad will be played. For example,
-Spanish.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">video_content_network<sup>1</sup></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"AMC"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">The network
-delivering the video content. For example, <code
-class="ph codeph">9 Story</code>, <code class="ph codeph">CBC</code>,
-<code class="ph codeph">Disney</code>, <code
-class="ph codeph">AMC</code>, <code class="ph codeph">Fox</code>,
-etc.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">code_1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Code A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">An alias
-added to the placement object that is reportable as a sub-dimension of
-Placement. The report shows the current value of the alias and does not
-reflect historical values. This information is only reportable to
-Sellers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">code_2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Code B"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">An alias
-added to the placement object that is reportable as a sub-dimension of
-Placement. The report shows the current value of the alias and does not
-reflect historical values. This information is only reportable to
-Sellers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1">code_3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__3">No</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__4"><code
-class="ph codeph">"Code C"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__5">An alias
-added to the placement object that is reportable as a sub-dimension of
-Placement. The report shows the current value of the alias and does not
-reflect historical values. This information is only reportable to
-Sellers.</td>
-</tr>
-<tr class="even row">
-<td colspan="5" class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_jpn_vzj_xwb__entry__1 report_api_template__table_jpn_vzj_xwb__entry__2 report_api_template__table_jpn_vzj_xwb__entry__3 report_api_template__table_jpn_vzj_xwb__entry__4 report_api_template__table_jpn_vzj_xwb__entry__5"><sup>1</sup>The
-data for this dimension is only available if the publisher has
-implemented video taxonomy.</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+> [!NOTE]
+> The data for the following dimensions is only available if the publisher has implemented video taxonomy.
+> - `video_delivery_type`
+> - `video_content_genre`
+> - `video_program_type`
+> - `video_content_rating`
+> - `video_content_duration`
+> - `video_content_language`
+> - `video_content_network`
 
 ## Metrics
 
-<table id="report_api_template__table_lpn_vzj_xwb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_lpn_vzj_xwb__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="report_api_template__table_lpn_vzj_xwb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="report_api_template__table_lpn_vzj_xwb__entry__3"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="report_api_template__table_lpn_vzj_xwb__entry__4"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="report_api_template__table_lpn_vzj_xwb__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2340</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of impressions (served and resold).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">ad_requests</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">1234</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">ad_requests</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-ad requests associated with the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">ad_responses</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2340</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">ad_responses</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><p>The number
-of responses delivered to the user's browser (or mediating server). A
-response can result in an impression, an error in player, or an auction
-with no impression event.</p>
+| Column | Type | Example | Formula | Description |
+|:---|:---|:---|:---|:---|
+| `imps` | int | `2340` | imps | The total number of impressions (served and resold). |
+| `ad_requests` | int | `1234` | ad_requests | The number of ad requests associated with the placement. |
+| `ad_responses` | int | `2340` | ad_responses | The number of responses delivered to the user's browser (or mediating server). A response can result in an impression, an error in player, or an auction with no impression event.<br><br>**Note**: An imp refers to when the video player loads the video and starts the first frame. Videos Served refers to the VAST document being served in response to a request from the video player. |
+| `clicks` | int | `1` | clicks | The total number of clicks across all impressions. |
+| `cost` | money | `16.833378` | cost | The total amount of media cost for direct publisher and purchased real-time inventory. |
+| `revenue` | money | `25.767257` | booked_revenue + reseller_revenue | The sum of booked revenue and reseller revenue. |
+| `profit` | money | `0.084102` | booked_revenue - total_cost | Booked revenue minus total cost. |
+| `cpm` | money | `1.66051685393258` | (cost / imps) x 1000 | The cost per 1000 impressions. |
+| `total_convs` | int | `5` | total_convs | The total number of post-view and post-click conversions. |
+| `convs_rate` | double | `0.000221877080097626` | total_convs / imps | The rate of conversions to impressions. |
+| `ctr` | double | `0.000221877080097626` | clicks / imps | The rate of clicks to impressions. |
+| `rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
+| `rpm_including_fees` | money | `2.60548314606741` | (revenue_including_fees / imps) x 1000 | **To be deprecated**. The revenue minus commissions per 1000 impressions. |
+| `total_network_rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
+| `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | To be deprecated. The profit per 1000 impressions. |
+| `ppm_including_fees` | money | `0.662460674157303` | (profit_including_fees / imps) x 1000 | **To be deprecated**. The profit including additional fees per 1000 impressions. |
+| `cpm_including_fees` | money | `2.60548314606741` | (cost_including_fees / imps) x 1000 | **To be deprecated**. The cost including additional fees per 1000 impressions. |
+| `errors` | int | `5` | errors | The total number of times an error occurred. |
+| `starts` | int | `360` | starts | The total number of times the first segment of the video creative was downloaded and started. |
+| `start_rate` | double | `25.85` | starts / imps | The number of video starts divided by the number of impressions. |
+| `skips` | int | `20` | skips | The total number of times a user skipped the video. |
+| `skip_rate` | double | `20.5` | skips / imps | The number of video skips divided by the number of impressions. |
+| `25_pcts` | int | `780` | 25% complete | The total number of times the video creatives completed 25% of the entire duration. |
+| `50_pcts` | int | `654` | 50% complete | The total number of times the video completed 50% of the entire duration of time. |
+| `75_pcts` | int | `567` | 75% complete | The total number of times the video completed 75% of the entire duration of time. |
+| `completions` | int | `989` | 100% complete | The total number of times the video played for the entire duration of time. |
+| `completion_rate` | double | `85.45` | completions / imps | The number of video completions divided by the number of impressions. |
+| `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
+| `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
+| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. |
+| `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
+| `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
+| `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| `view_measurement_rate` | double | `45%` | view_measurement_rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| `started_video_completion_rate` | double | `85.45` | completions / video_starts | The number of video completions divided by the number of video starts. |
+| `total_cost` | money | `123.45` | total_cost = media_cost + data_costs + partner_fees + commissions + serving_fees + publisher_revenue | The total amount of costs accrued over the reported period of time. This generally includes two types of costs, budgeted costs (media cost, data cost, partner fees, serving fees, commissions) and publisher revenue if you track publisher payouts on the platform.<br><br>**Note**: We have added logic to prevent double counting third-party fees during the breaking change period. |
+| `total_cost_ecpm` | money | `123.45` | (total_cost/imps) * 1,000 | The total cost per 1,000 imps. |
+| `total_cost_ecpc` | money | `123.45` | total_cost/clicks | The total cost per click. |
+| `total_cost_ecpa` | money | `123.45` | total_cost/conversions | The total cost per conversion. |
+| `network_profit` | money | `123.45` | (booked_revenue + reseller_revenue) - total_cost | The sum of booked revenue and reseller revenue minus total cost. |
+| `network_profit_ecpm` | money | `123.45` | (network_profit/imps) * 1,000 | Network profit per 1,000 imps. |
+| `network_profit_ecpc` | money | `123.45` | network_profit/clicks | Network profit per click. |
+| `network_profit_ecpa` | money | `123.45` | network_profit/conversions | Network profit per conversion. |
+| `network_profit_margin` | money | `123.45` | network_profit/(booked_revenue + reseller_revenue) | Network profit margin. |
+| `profit_ecpm` | money | `123.45` | ((booked_revenue - total_cost)/imps) * 1,000 | Profit per 1,000 imps. |
+| `profit_ecpc` | money | `123.45` | (booked_revenue - total_cost)/clicks | Profit per click. |
+| `profit_ecpa` | money | `123.45` | (booked_revenue - total_cost)/conversions | Profit per conversion. |
+| `profit_margin` | money | `123.45` | (booked_revenue - total_cost)/booked_revenue | Buyer profit margin. |
+| `Average View Time` | int | `28` | sum (creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions)) / sum (starts)) | An estimate for the average duration in seconds (rounded to 0 decimal places) of the creative that was viewed. This is calculated by approximating the duration watched as the mid-point between the video events (for example, a start event would estimate that 12.5% of the creative is viewed). |
+| `Average View Time Percent` | percentage | `89%` | sum (((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions))∕starts) | The average view time expressed as a percentage of the total possible view time. |
 
+### Creative frequency buckets
 
-<b>Note:</b>
-<p>An imp refers to when the video player loads the video and starts the
-first frame. Videos Served refers to the VAST document being served in
-response to a request from the video player.</p>
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"0"` |
+| `1` | `"1"` |
+| `2` | `"2-5"` |
+| `3` | `"6-10"` |
+| `4` | `"11-20"` |
+| `5` | `"21-40"` |
+| `6` | `"41-60"` |
+| `7` | `"61-100"` |
+| `8` | `"101-150"` |
+| `9` | `"151-250"` |
+| `10` | `"251-500"` |
+| `11` | `"500+"` |
 
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">1</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of clicks across all impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">16.833378</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-amount of media cost for direct publisher and purchased real-time
-inventory.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">25.767257</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">booked_revenue
-+ reseller_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The sum of
-booked revenue and reseller revenue.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">profit</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">0.084102</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">booked_revenue
-- total_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Booked
-revenue minus total cost.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">cpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">1.66051685393258</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(cost / imps)
-x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The cost per
-1000 impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">total_convs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of post-view and post-click conversions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">convs_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">0.000221877080097626</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">total_convs /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The rate of
-conversions to impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">ctr</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">0.000221877080097626</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">clicks /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The rate of
-clicks to impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">rpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2.60548314606741</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(revenue /
-imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The revenue
-per 1000 impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">rpm_including_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2.60548314606741</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(revenue_including_fees
-/ imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><strong>To be
-deprecated.</strong> The revenue minus commissions per 1000
-impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_network_rpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2.60548314606741</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(revenue /
-imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The revenue
-per 1000 impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">ppm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">0.944966292134831</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(profit /
-imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><strong>To be
-deprecated.</strong> The profit per 1000 impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">ppm_including_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">0.662460674157303</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(profit_including_fees
-/ imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><strong>To be
-deprecated.</strong> The profit including additional fees per 1000
-impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">cpm_including_fees</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2.60548314606741</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(cost_including_fees
-/ imps) x 1000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><strong>To be
-deprecated.</strong> The cost including additional fees per 1000
-impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">errors</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">errors</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times an error occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">starts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">360</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">starts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times the first segment of the video creative was downloaded
-and started.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">start_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">25.85</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">starts /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-video starts divided by the number of impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">skips</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">20</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">skips</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times a user skipped the video.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">skip_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">20.5</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">skips /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-video skips divided by the number of impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">25_pcts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">780</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">25%
-complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times the video creatives completed 25% of the entire
-duration.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">50_pcts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">654</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">50%
-complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times the video completed 50% of the entire duration of
-time.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">75_pcts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">567</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">75%
-complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times the video completed 75% of the entire duration of
-time.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">completions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">989</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">100%
-complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of times the video played for the entire duration of time.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">completion_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">85.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">completions /
-imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-video completions divided by the number of impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">revenue_per_video_complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">15.869</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">revenue /
-completions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The revenue
-per video completion.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">cost_per_video_complete</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">2.056</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">cost /
-completions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The cost per
-video completion.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">served</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">87649</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">video
-impressions served</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><p>The total
-number of video impressions served.</p>
+### Creative recency buckets
 
+| Bucket ID | Bucket Name |
+|:---|:---|
+| `-2` | `"no-cookie-date"` |
+| `-1` | `"no-cookie"` |
+| `0` | `"< 1 minute"` |
+| `1` | `"1-5 minutes"` |
+| `2` | `"5-15 minutes"` |
+| `3` | `"15-30 minutes"` |
+| `4` | `"30-60 minutes"` |
+| `5` | `"1-4 hours"` |
+| `6` | `"4-12 hours"` |
+| `7` | `"12-24 hours"` |
+| `8` | `"1-2 days"` |
+| `9` | `"2-7 days"` |
+| `10` | `"8-14 days"` |
+| `11` | `"14-30 days"` |
 
-<b>Note:</b>
-<p>An <strong>Imp</strong> refers to when the video player loads the
-video and starts the first frame. <strong>Videos Served</strong> refers
-to the VAST document being served in response to a request from the
-video player.</p>
+### Video playback method
 
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">imps_viewed</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">30,450</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">imps_viewed</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-measured impressions that were viewable, per the IAB Viewability
-definition, which states that an impression is viewable if 50% of the
-pixels are in-view during 2 consecutive seconds.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">view_measured_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">10,120</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">view_measured_imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-number of impressions that were measured for viewability.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">58%</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">view_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The
-percentage of impressions that were viewable out of the total number of
-impressions measured for viewability. (Viewed Imps / View Measured
-Imps)</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">view_measurement_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">45%</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">view_measurement_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The
-percentage of impressions measured for viewability out of the total
-number of impressions. (View Measured Imps / Imps)</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">started_video_completion_rate</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">85.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">completions /
-video_starts</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The number of
-video completions divided by the number of video starts.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">total_cost =
-media_cost + data_costs + partner_fees + commissions + serving_fees +
-publisher_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5"><p>The total
-amount of costs accrued over the reported period of time. This generally
-includes two types of costs, budgeted costs (media cost, data cost,
-partner fees, serving fees, commissions) and publisher revenue if you
-track publisher payouts on the platform.</p>
+| Method ID | Method |
+|:---|:---|
+| `0` | Unknown |
+| `1` | Auto-play, sound on |
+| `2` | Auto-play, sound off |
+| `3` | Click-to-play |
+| `4` | Mouse-over |
+| `5` | Auto-play, sound unknown |
 
+### Video context
 
-<b>Note:</b> We have added logic to prevent
-double counting third-party fees during the breaking change period.
+| Method ID | Method |
+|:---|:---|
+| `0` | Unknown |
+| `1` | Pre-roll |
+| `2` | Mid-roll |
+| `3` | Post-roll |
+| `4` | Outstream |
 
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_cost_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(total_cost/imps)
-* 1,000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-cost per 1,000 imps.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_cost_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">total_cost/clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-cost per click.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">total_cost_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">total_cost/conversions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The total
-cost per conversion.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">network_profit</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(booked_revenue
-+ reseller_revenue) - total_cost</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The sum of
-booked revenue and reseller revenue minus total cost.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">network_profit_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(network_profit/imps)
-* 1,000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Network
-profit per 1,000 imps.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">network_profit_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">network_profit/clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Network
-profit per click.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">network_profit_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">network_profit/conversions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Network
-profit per conversion.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">network_profit_margin</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">network_profit/(booked_revenue
-+ reseller_revenue)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Network
-profit margin.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">profit_ecpm</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">((booked_revenue
-- total_cost)/imps) * 1,000</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Profit per
-1,000 imps.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">profit_ecpc</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(booked_revenue
-- total_cost)/clicks</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Profit per
-click.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">profit_ecpa</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(booked_revenue
-- total_cost)/conversions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Profit per
-conversion.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">profit_margin</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">123.45</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">(booked_revenue
-- total_cost)/booked_revenue</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">Buyer profit
-margin.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">Average View
-Time</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">28</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">sum
-(creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) +
-(0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 ×
-completions)) / sum (starts))</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">An estimate
-for the average duration in seconds (rounded to 0 decimal places) of the
-creative that was viewed. This is calculated by approximating the
-duration watched as the mid-point between the video events (for example,
-a start event would estimate that 12.5% of the creative is viewed).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__1">Average View
-Time Percent</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__2">percentage</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__3"><code
-class="ph codeph">89%</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__4">sum (((0.125
-× starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25
-× third_quartiles) + (0.125 × completions))∕starts)</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_lpn_vzj_xwb__entry__5">The average
-view time expressed as a percentage of the total possible view
-time.</td>
-</tr>
-</tbody>
-</table>
+### Player size
 
-
-**Creative Frequency Buckets**
-
-<table id="report_api_template__table_f2b_lc2_vwb"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_f2b_lc2_vwb__entry__1"
-class="entry colsep-1 rowsep-1">Bucket ID</th>
-<th id="report_api_template__table_f2b_lc2_vwb__entry__2"
-class="entry colsep-1 rowsep-1">Bucket Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"no-cookie-date"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"no-cookie"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"0"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">1"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"2-5"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"6-10"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"11-20"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"21-40"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">6</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"41-60</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">7</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"61-100"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">8</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"101-150"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">9</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"151-250"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">10</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"251-500"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__1">11</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_f2b_lc2_vwb__entry__2">"500+"</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-**Creative Recency Buckets**
-
-<table id="report_api_template__table_tyg_vc2_vwb"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_tyg_vc2_vwb__entry__1"
-class="entry colsep-1 rowsep-1">Bucket ID</th>
-<th id="report_api_template__table_tyg_vc2_vwb__entry__2"
-class="entry colsep-1 rowsep-1">Bucket Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">-2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"no-cookie-date"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">-1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"no-cookie"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"&lt; 1
-minute"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"1-5
-minutes"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"5-15
-minutes"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"15-30
-minutes"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"30-60
-minutes"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"1-4
-hours"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">6</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"4-12
-hours"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">7</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"12-24
-hours"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">8</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"1-2
-days"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">9</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"2-7
-days"</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">10</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"8-14
-days"</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__1">11</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_tyg_vc2_vwb__entry__2">"14-30
-days"</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-**Video Playback Method**
-
-<table id="report_api_template__table_ydy_1px_5wb"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_ydy_1px_5wb__entry__1"
-class="entry colsep-1 rowsep-1"><strong>Method ID</strong></th>
-<th id="report_api_template__table_ydy_1px_5wb__entry__2"
-class="entry colsep-1 rowsep-1"><strong>Method</strong></th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Unknown</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Auto-play,
-sound on</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Auto-play,
-sound off</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Click-to-play</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Mouse-over</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__1">5</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ydy_1px_5wb__entry__2">Auto-play,
-sound unknown</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-**Video Context**
-
-<table id="report_api_template__table_ek2_4qx_5wb"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_ek2_4qx_5wb__entry__1"
-class="entry colsep-1 rowsep-1">Method ID</th>
-<th id="report_api_template__table_ek2_4qx_5wb__entry__2"
-class="entry colsep-1 rowsep-1">Method</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__2">Unknown</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__2">Pre-roll</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__2">Mid-roll</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__1">3</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__2">Post-roll</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__1">4</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_ek2_4qx_5wb__entry__2">Outstream</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-**Player Size**
-
-<table id="report_api_template__table_zxt_crx_5wb"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th id="report_api_template__table_zxt_crx_5wb__entry__1"
-class="entry colsep-1 rowsep-1">ID</th>
-<th id="report_api_template__table_zxt_crx_5wb__entry__2"
-class="entry colsep-1 rowsep-1">Name</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__1">0</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__2">small</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__1">1</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__2">medium</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__1">2</td>
-<td class="entry colsep-1 rowsep-1"
-headers="report_api_template__table_zxt_crx_5wb__entry__2">large</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
+| ID | Name |
+|:---|:---|
+| `0` | small |
+| `1` | medium |
+| `2` | large |
 
 ## Example
 
-**Create JSON formatted report request**
+### Create JSON formatted report request
 
-The JSON file should include the report_type
-`"video_analytics_network"`, as well as the columns (dimensions and
-metrics) and `report_interval` that you want to retrieve. You can also
-filter for specific dimensions, define granularity (year, month, day),
-and specify the format in which the data should be returned (csv, excel,
-or html). For a full explanation of fields that can be included in the
-JSON file, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
+The JSON file should include the `report_type` of `"video_analytics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
->
-
-``` pre
+```
 $ cat video_analytics_network
 
 {
@@ -2560,13 +285,9 @@ $ cat video_analytics_network
 }
 ```
 
+### `POST` the request to the reporting service
 
-
-**`POST` the request to the Reporting Service**
-
->
-
-``` pre
+```
 $ curl -b cookies -c cookies -X POST -d @video_analytics_network 'https://api.appnexus.com/report'
 {
    "response":{
@@ -2576,18 +297,11 @@ $ curl -b cookies -c cookies -X POST -d @video_analytics_network 'https://api.ap
 }
 ```
 
+### `GET` the report status from the report service
 
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the reporting data to a file (described in the next step).
 
-**`GET` the report status from the Report Service**
-
-Make a `GET` call with the report ID to retrieve the status of the
-report. Continue making this call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the
-reporting data to a file (described in the next step).
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69'
 {
    "response":{
@@ -2606,50 +320,16 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02
 }
 ```
 
+### `GET` the report data from the report download service
 
+To download the report data to a file, make another `GET` call with the Report ID, but this time to the **report-download** service. You can find the service and Report ID in the `url` field of the previous `GET` response. When identifying the file that you want to save to, be sure to use the file extension of the `"format"` that you specified in your initial `POST`.
 
-**`GET` the report data from the Report Download Service**
+> [!NOTE]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `-i` or `-v` in your call to expose the response header.
 
-To download the report data to a file, make another `GET` call with the
-Report ID, but this time to the **report-download** service. You can
-find the service and Report ID in the `url` field of the previous `GET`
-response. When identifying the file that you want to save to, be sure to
-use the file extension of the `"format"` that you specified in your
-initial `POST`.
-
-
-
-
-
-<b>Note:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `-i` or `-v` in your call to expose the response header.
-
-
-
-
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/video_analytics_network.csv
 ```
 
-
-
-
-
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
