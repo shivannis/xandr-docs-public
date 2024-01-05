@@ -29,13 +29,13 @@ There are two ways to install the SDK:
 - **Using [CocoaPods](https://cocoapods.org/)**
 
     CocoaPods is a dependency manager for Cocoa projects. If you are unfamiliar with CocoaPods review their [installation and user guides](https://cocoapods.org/).
-    Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
+    1. Once you have CocoaPods installed, using terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
 
     ```
     pod init
     ```
 
-    Using a text editor, open the newly created podfile. Set the platform version to 9.0 and add pod `PixieSDK` to the target.
+    2. Using a text editor, open the newly created podfile. Set the platform version to 9.0 and add pod `PixieSDK` to the target.
 
     ```
     # iOS: Podfile config to include our SDK
@@ -46,7 +46,7 @@ There are two ways to install the SDK:
     end
     ```
 
-    Save your changes and return to **Terminal** and enter:  
+    3. Save your changes and return to **Terminal** and enter:  
 
     ```
     pod install
