@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety
+title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety PGLI Monetized (PGLI Monetized)
 description: This article helps you to target universal or custom content categories by specifying your inventory types.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Set up line item inventory and brand safety
+# Microsoft Monetize - Set up line item inventory and brand safety (PGLI monetized)
 
 You can use the line item **Inventory and Brand Safety** section to target universal or custom content categories, specify your inventory types.
 

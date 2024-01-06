@@ -4,7 +4,7 @@ description: The article discusses the concept of selling inventory using both C
 ms.date: 10/28/2023
 ---
 
-# Selling inventory on a CPC and CPA Basis
+# Selling inventory on a CPC and CPA basis
 
 In order to foster a stronger ecosystem on Xandr, we pioneered the ability to resell your inventory on a CPC or CPA basis in real time. Since many networks negotiate financial terms with publishers based on a revenue share per conversion or click, it makes sense that networks should be able to resell inventory in this fashion to other networks.
 
@@ -38,4 +38,4 @@ Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-acc
 ## Related topics
 
 - [CPC and CPA Payment Types](cpc-and-cpa-payment-types.md)
-- [](../industry-reference/online-advertising-and-ad-tech-glossary.md)
+- [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md)

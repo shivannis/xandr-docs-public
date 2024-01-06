@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety
-description: The article  facilitates the setup of line item inventory by allowing users to specify the desired supply source, content categories, web or app inventory preference, blocklists or allowlists, brand safety settings, and ads.txt targeting. 
+description: The article facilitates the setup of line item inventory by allowing users to specify the desired supply source, content categories, web or app inventory preference, blocklists or allowlists, brand safety settings, and ads.txt targeting. 
 ms.date: 10/28/2023
 ---
 
@@ -85,5 +85,5 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 - [Managing Your Inventory Reselling Exposure](managing-your-inventory-reselling-exposure.md)
 - [Inventory Targeting (ALI)](inventory-targeting-ali.md)
 - [Inventory Lists (ALI)](inventory-lists-ali-only.md)
-- [Ads.txt/App-Ads.txt FAQ for Buyers](ads.txt---app-ads.txt-faq-for-buyers.md)
+- [Ads.txt/App-Ads.txt FAQ for Buyers](../industry-reference/ads-txt---app-ads-txt-faq-for-buyers.md)
 - [Key/Value Targeting](key-value-targeting.md)

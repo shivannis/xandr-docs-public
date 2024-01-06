@@ -4,7 +4,6 @@ description: The article explains how to turn on or off Xandr optimization for a
 ms.date: 10/28/2023
 ---
 
-
 # Set up line item optimization
 
 You can enable or disable Xandr optimization for a line item. If you enable Xandr optimization,you must first set a performance goal and goal priority, then associate
@@ -75,8 +74,8 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
     c. Enter a CPC amount in the text field. (If your Revenue Type is **CPC**, the CPC goal is inherited automatically.)
     d. Attach a conversion pixel.
 
-        > [!NOTE]
-        > A CPC goal is required for [inventory discovery](discovery.md) and [bid valuation](valuation.md).
+    > [!NOTE]
+    > A CPC goal is required for [inventory discovery](discovery.md) and [bid valuation](valuation.md).
 
 3. Set the goal priority.
 

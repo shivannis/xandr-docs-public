@@ -1,6 +1,6 @@
 ---
 title: Set Split Priority
-Description: The article shows how to prioritize programmable splits, assign a priority number to each split in the Split Details grid, where impressions are allocated to the split with the lowest priority number, ensuring unique priority assignments for each split within a line item.
+description: The article shows how to prioritize programmable splits, assign a priority number to each split in the Split Details grid, where impressions are allocated to the split with the lowest priority number, ensuring unique priority assignments for each split within a line item.
 ms.date: 10/28/2023
 ---
 
