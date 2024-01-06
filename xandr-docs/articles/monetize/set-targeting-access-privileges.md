@@ -1,6 +1,6 @@
 ---
 title: Set Targeting Access Privileges
-Description: The article discusses how to set targeting access privileges for a specific buyer within the Partner Controls tab. It emphasizes that exposing more information to buyers makes it easier for them to target inventory. 
+description: The article discusses how to set targeting access privileges for a specific buyer. It emphasizes that exposing more information to buyers makes it easier for them to target inventory. 
 ms.date: 10/28/2023
 ---
 
@@ -14,7 +14,7 @@ can only view the buyer's current settings here on the **Partner Privileges** ta
 
 ## Getting there
 
-Select **Partners \>  Partner Center** from the top navigation menu.
+Select **Partners** \> **Partner Center** from the top navigation menu.
 
 ## Step 1. get started
 

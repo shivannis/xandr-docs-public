@@ -23,7 +23,7 @@ This page makes references to an attribution server. This is a server that is se
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the Explore Advanced Options section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel
 will look something like this:
 
-:::image type="content" source="media/serverside_conversion_revised.png" alt-text="The screenshot shows how to use server side conversion pixels by generating a tracking URL instead of using an HTML pixel on a publishers page.":::
+:::image type="content" source="media/serverside-conversion-revised.png" alt-text="The screenshot shows how to use server side conversion pixels by generating a tracking URL instead of using an HTML pixel on a publishers page.":::
 
 ## Adding parameters to an server-side pixel call
 
