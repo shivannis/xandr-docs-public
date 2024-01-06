@@ -1,108 +1,50 @@
 ---
-Title : Set Targeting Access Privileges
-Description : You can set targeting access privileges for a specific buyer within the
+title: Set Targeting Access Privileges
+Description: The article discusses how to set targeting access privileges for a specific buyer within the Partner Controls tab. It emphasizes that exposing more information to buyers makes it easier for them to target inventory. 
 ms.date: 10/28/2023
-Partner Controls tab. The more
 ---
 
+# Set targeting access privileges
 
-# Set Targeting Access Privileges
+You can set targeting access privileges for a specific buyer within the **Partner Control**s tab. The more information you expose to buyers, the more easily they can target your
+inventory. If you do not set targeting access for the buyer, your default targeting access settings will apply.
 
+You can also [manage a buyer's targeting access settings](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) in the **Partner Center** screen. However, you
+can only view the buyer's current settings here on the **Partner Privileges** tab.
 
+## Getting there
 
-You can set targeting access privileges for a specific buyer within the
-Partner Controls tab. The more
-information you expose to buyers, the more easily they can target your
-inventory. If you do not set targeting access for the buyer, your
-default targeting access settings will apply.
+Select **Partners \>  Partner Center** from the top navigation menu.
 
-You can also <a
-href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-class="xref">manage a buyer's targeting access settings</a> in the
-Partner Center screen. However, you
-can only view the buyer's current settings here on the
-Partner Privileges tab.
+## Step 1. get started
 
-Getting There
+Once in the **Partner Center**, click on the **Partner Controls** tab.
 
-Select
-Partners
-\>  Partner Center from the top
-navigation menu.
+## Step 2. Switch to edit mode
 
-Step 1. Get started
+Click **Edit** to make the targeting access settings editable.
 
-Once in the Partner Center, click
-on the Partner Controls tab.
+## Step 3. Update settings
 
-Step 2. Switch to edit mode
+Select the desired radio button for each targeting access option, **Hide** (hide information from the buyer) or Expose (show information to the buyer).
 
-Click Edit to make the targeting
-access settings editable.
+For more information on the different targeting access options, see the Setting default targeting access section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-Step 3. Update settings
+> [!NOTE]
+> Age and gender targeting information can only be shared if you include the Xandr age and gender macro when exporting your placement tag. For more information, see
+> [Placement Tag Parameters](placement-tag-parameters.md).
+> [!IMPORTANT]
+> You will have the option to expose domains or full URLs to external buyers.
 
-Select the desired radio button for each targeting access option,
-Hide (hide information from the buyer)
-or Expose (show information to the
-buyer).
+For **Categories (Custom)**, there is the additional option to expose specific categories. To select specific custom categories, click the **Edit** button near the **Expose Custom** option to open the **Categories** dialog. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the Selected Items area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
 
-For more information on the different targeting access options, see the
-Setting default targeting access
-section within
-<a href="partner-center-screen-seller-view.md" class="xref">Setting
-Buyer Defaults</a>.
+## Step 4. Save your changes
 
+When all changes have been made, click the **Apply** button.
 
+## Related topics
 
-<b>Note:</b> Age and gender targeting
-information can only be shared if you include the
-Xandr age and gender macro when exporting your
-placement tag. For more information, see
-<a href="placement-tag-parameters.md" class="xref">Placement Tag
-Parameters</a>.
-
-
-
-
-
-<b>Important:</b> You will have the option to
-expose domains or full URLs to external buyers.
-
-
-
-For **Categories (Custom)**, there is the additional option to expose
-specific categories. To select specific custom categories, click the
-Edit button near the **Expose Custom**
-option to open the Categories
-dialog. Click on a category in the
-Available Items area to add it to
-the Selected Items area. To remove
-a category from the Selected Items
-area, click on the X next to the
-category name. When you have finished selecting custom categories, click
-Add to save your changes.
-
-Step 4. Save your changes
-
-When all changes have been made, click the
-Apply button.
-
-Related Topics
-
-- <a href="partner-center-screen-seller-view.md" class="xref">Partner
-  Center Screen - Seller View</a>
-- <a href="managing-relationships-with-buyers.md" class="xref">Managing
-  Relationships with Buyers</a>
-- <a
-  href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-  class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
-  Targeting Access</a>
-- <a
-  href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-  class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
-  Targeting Access</a>
-
-
-
-
+- [Partner Center Screen - Seller View](partner-center-screen-seller-view.md)
+- [Managing Relationships with Buyers](managing-relationships-with-buyers.md)
+- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
+- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md)

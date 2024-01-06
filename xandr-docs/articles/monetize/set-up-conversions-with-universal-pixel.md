@@ -1,88 +1,26 @@
 ---
-Title : Set Up Conversions with Universal Pixel
-Description : You can set up conversions for your universal pixel using rules and
+title: Microsoft Monetize - Set Up Conversions with Universal Pixel
+description: The article demonstrates the process of establishing conversions for your universal pixel by implementing rules and conditions, and it explains how to track conversion activity using Monetize reporting.
 ms.date: 10/28/2023
-conditions, then track conversion activity using
-Monetize reporting.
 ---
 
+# Microsoft Monetize - Set up conversions with universal pixel
 
-# Set Up Conversions with Universal Pixel
+You can set up conversions for your universal pixel using rules and conditions, then track conversion activity using Monetize reporting.
 
-
-
-You can set up conversions for your universal pixel using rules and
-conditions, then track conversion activity using
-Monetize reporting.
-
-
-
-
-
-
-
-1.  From the top menu bar, click
-    Advertisers
-    \> Universal Pixel 
-2.  Select a pixel from the
-    Universal Pixels page.
-    
-
-    If no pixels are defined, use the setup instructions in
-    <a href="universal-pixel-basic-implementation.md" class="xref"
-    title="With the most basic implementation of the universal pixel, you can track page views and identify the URLs driving them. Setting up the basic implementation requires you to set up the Universal Pixel object in Monetize, deploy the script code containing the pixel ID on your website, and check your pixel activity on the Activity tab in the Universal Pixels page.">Universal
-    Pixel Basic Implementation</a> to create one.
-
-    
-3.  Click
-    +New.
-4.  Provide a name for the conversion. 
-    
-
+1.  From the top menu bar, click **Advertisers \> Universal Pixel**.
+1.  Select a pixel from the **Universal Pixels** page.
+    If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md) to create one.
+1.  Click **+New**.
+1.  Provide a name for the conversion.
     This name will identify the conversion in conversion reporting.
+1.  Categorize your conversion as a lead, landing page, or another event category.
 
-    
-5.  Categorize your conversion as a lead, landing
-    page, or another event category. 
-    
-
-    
-
-    <b>Note:</b> If you have already used a
-    standard event as a condition for the conversion, then the
-    conversion will be categorized with that standard event by default.
-
-    
-
-    
-6.  Under
-    Lookback, specify the time between
-    an ad view or click and the conversion event during which you will
-    attribute conversions to the ad view or click. 
-    <div class="itemgroup stepxmp">
-
-    For example, if you want to attribute any shopping cart adds that
-    occurred in the month after viewing an ad to the ad view event, set
-    the post view lookback to 31 days.
-
-    
-7.  Under Count,
-    determine if you will limit the number of attributed conversions per
-    user. You can also limit the number of conversions counted within a
-    period of time. 
-    <div class="itemgroup stepxmp">
-
-    For example, you probably want to attribute multiple purchases per
-    user within a time window to the ad, but if your conversion event is
-    a page view for an informational site, counting multiple views might
-    not be meaningful.
-
-    
-8.  Click
-    Save.
-
-
-
-
-
-
+    > [!NOTE]
+    > If you have already used a standard event as a condition for the conversion, then the conversion will be categorized with that standard event by default.
+1.  Under **Lookback**, specify the time between an ad view or click and the conversion event during which you will attribute conversions to the ad view or click.
+    a. For example, if you want to attribute any shopping cart adds that occurred in the month after viewing an ad to the ad view event, set the post view lookback to 31 days.
+1.  Under **Count**, determine if you will limit the number of attributed conversions per user. You can also limit the number of conversions counted within a
+    a. period of time.
+    b. For example, you probably want to attribute multiple purchases per user within a time window to the ad, but if your conversion event is a page view for an informational site, counting multiple views might not be meaningful.
+1.  Click **Save**.
