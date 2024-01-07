@@ -1,6 +1,6 @@
 ---
 title: Supported Creative Macros
-description: 
+description: The article explains the creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
 ms.date: 10/28/2023
 ---
 
@@ -75,7 +75,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${TAG_CODE2}` | The additional integration code set on the placement. |
 | `${TAG_ID}` | The Xandr placement ID that initiated the bid request. |
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
-| `${USE_COOKIES}` | This is used for third-party creatives to indicate whether cookies should be set for the user viewing the impression. Allowed values include:<br> - `0` for no<br> - `1` for yes<br>For more information about cookie-related settings, see [Cookie Privacy Settings](cookie-privacy-settings.md) and the [Publisher Service](publisher-service.md). |
+| `${USE_COOKIES}` | This is used for third-party creatives to indicate whether cookies should be set for the user viewing the impression. Allowed values include:<br> - `0` for no<br> - `1` for yes<br>For more information about cookie-related settings, see [Cookie Privacy Settings](cookie-privacy-settings.md) and the [Publisher Service](../digital-platform-api/publisher-service.md). |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. The user agent often identifies information such as the application, operating system, and software vendor acting on behalf of the user. For example: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4. |
 | `${USER_CITY} `| The character string of the user's city. |
