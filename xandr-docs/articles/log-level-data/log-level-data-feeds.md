@@ -1,6 +1,6 @@
 ---
 title: Log Level Data Feeds
-description: In this article, learn about what Log-level data feeds are, their use cases, and a list of all the log-level feeds available.
+description: In this article, learn about what Log level data feeds are, their use cases, and a list of all the log level feeds available.
 ms.custom: log-level-data
 ms.date: 10/28/2023
 ---
@@ -10,14 +10,14 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > Log Level Data (LLD) feeds are not available via the API.
 
-Log Level Data (LLD) feeds contain event-level data that enables you to build custom reporting and conduct in-depth analysis. Typically, log-level data is used for reporting on dimensions not available in the Xandr UI/API reports. It can also be used for any analysis which requires event-level granularity, such as custom conversion attribution or identifying pools of high-value users.
+Log Level Data (LLD) feeds contain event-level data that enables you to build custom reporting and conduct in-depth analysis. Typically, log level data is used for reporting on dimensions not available in the Xandr UI/API reports. It can also be used for any analysis which requires event-level granularity, such as custom conversion attribution or identifying pools of high-value users.
 
-**To subscribe to Log-Level Data and learn about changes:**
-If you are interested in receiving log-level data feeds, talk to your Xandr representative about the data your use case will need, technical setup, and pricing.
+**To subscribe to Log Level Data and learn about changes:**
+If you are interested in receiving log level data feeds, talk to your Xandr representative about the data your use case will need, technical setup, and pricing.
 
 ## Overview
 
-Log-level data feeds include information about the following:
+Log level data feeds include information about the following:
 
 - Your managed publishers' transacted impressions. This includes:
   - Information about the impression sold (e.g., publisher ID, tag ID, and domain)
@@ -29,14 +29,14 @@ Log-level data feeds include information about the following:
   - Information about the inventory where the impression served (e.g., Publisher ID or domain, if exposed by the seller)
 - Segment pixel fires for all of your network's owned segments (including network- and advertiser-level segments)
 
-For a complete list of fields available to buyers and sellers, see the [List of log-level Feeds](#list-of-log-level-feeds) section below.
+For a complete list of fields available to buyers and sellers, see the [List of log level Feeds](#list-of-log-level-feeds) section below.
 
 > [!NOTE]
-> **Timestamps**: If your log-level data is provided in the *avro* format or one of the *protobuf* formats, the timestamp field values will be supplied in UNIX Epoch time.
+> **Timestamps**: If your log level data is provided in the *avro* format or one of the *protobuf* formats, the timestamp field values will be supplied in UNIX Epoch time.
 
 ## Use cases
 
-Typical uses for log-level data include:
+Typical uses for log level data include:
 
 - **Enhanced reporting** - report on additional dimensions such as geographic regions.
 - **Segment management** -  build segments based on user actions and report on first-party data if your user IDs can be mapped to Xandr user IDs.
@@ -44,11 +44,11 @@ Typical uses for log-level data include:
 
 ## Data retrieval
 
-Log-level data may be obtained via batch files.
+Log level data may be obtained via batch files.
 
-Use this method if data accuracy is paramount. Since batch files are relatively large, they cannot be consumed in the same way ordinary reports are. Clients who receive log-level data will typically have their own engineering resources or a third-party vendor build an ETL process to load the data into their own database. Once in the database, the log-level data can be used by their own reporting systems or data analysts.
+Use this method if data accuracy is paramount. Since batch files are relatively large, they cannot be consumed in the same way ordinary reports are. Clients who receive log level data will typically have their own engineering resources or a third-party vendor build an ETL process to load the data into their own database. Once in the database, the log- evel data can be used by their own reporting systems or data analysts.
 
-See [Batch Log-Level Data](batch-log-level-data.md) for more information on how to intake your data.
+See [Batch Log Level Data](batch-log-level-data.md) for more information on how to intake your data.
 
 ### Batch
 
