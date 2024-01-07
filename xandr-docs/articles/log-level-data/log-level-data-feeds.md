@@ -24,6 +24,7 @@ This includes:
   - Information about the impression sold (e.g., publisher ID, tag ID, and domain)
   - Information about the user to whom the ad was served (e.g., user ID, geographic region, and user timezone)
   - ID of the creative that served
+  
 **Your managed advertisers' transacted impressions, and any resulting clicks and conversions**
 This includes:
   - Information about the impression purchased such as advertiser ID, campaign ID, and creative ID
