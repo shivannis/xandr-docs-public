@@ -90,15 +90,15 @@ The table below lists which feeds are available via LLD, the feed handle for eac
 | Bid Landscape Feed | `bid_landscape_feed` | [View](bid-landscape-feed.md) |
 | Buyer Transparency Feed | `brand_transparency_feed` | [View](buyer-transparency-feed.md) |
 | Conversion Pixel Feed | `pixel_feed` | [View](conversion-pixel-feed.md) |
-| Curator Feed* | `curator_feed` | [View](curator-feed.md) |
-| Incrementality Feed | `incrementality_feed` | [View](https://docs.xandr.com/bundle/data-science-toolkit/page/log-level-incrementality-feed.html) |
+| Curator Feed | `curator_feed` | [View](curator-feed.md) |
+| Incrementality Feed | `incrementality_feed` | [View](../data-science-toolkit/log-level-incrementality-feed.md) |
 | Key Value Auction Feed | `auction_kv_labels_feed` | [View](key-value-auction-feed.md) |
 | Segment Feed | `segment_feed` | [View](segment-feed.md) |
 | Standard Feed | `standard_feed` | [View](standard-feed.md) |
 | Universal Pixel Feed | `universal_pixel_feed` | [View](universal-pixel-feed.md) |
 | Video Event Feed | `video_events_feed` | [View](video-events-feed.md) |
 
-*Currently only available to Beta clients. Contact your Xandr representative for more information.
+Currently only available to Beta clients. Contact your Xandr representative for more information.
 
 > [!NOTE]
 > For **sample** files, see available downloads under the **Format and Schemas** section in [Batch Log Level Data](batch-log-level-data.md).
