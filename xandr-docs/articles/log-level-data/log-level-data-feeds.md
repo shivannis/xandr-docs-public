@@ -30,6 +30,7 @@ This includes:
   - Information about the impression purchased such as advertiser ID, campaign ID, and creative ID
   - Information about the user to whom the ad was served (e.g., user ID, geographic region, user timezone, and number of times the user has seen creatives from your advertiser)
   - Information about the inventory where the impression served (e.g., Publisher ID or domain, if exposed by the seller)
+    
 **Segment pixel fires for all of your network's owned segments**
 This includes network and advertiser level segments.
 
