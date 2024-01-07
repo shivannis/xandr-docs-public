@@ -20,6 +20,7 @@ If you are interested in receiving log level data feeds, talk to your Xandr rep
 Log level data feeds include information about the following:
 
 **Your managed publishers' transacted impressions**
+
 This includes:
   - Information about the impression sold (e.g., publisher ID, tag ID, and domain)
   - Information about the user to whom the ad was served (e.g., user ID, geographic region, and user timezone)
