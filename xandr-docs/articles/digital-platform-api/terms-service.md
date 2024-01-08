@@ -1,9 +1,8 @@
 ---
 Title : Terms Service
-Description : This service is used to record Tango member's acceptance of the Tango
+Description: This service is used to record Tango member's acceptance of the Tango usage terms of service. Although this service was created to support a
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-usage terms of service. Although this service was created to support a
 ---
 
 
