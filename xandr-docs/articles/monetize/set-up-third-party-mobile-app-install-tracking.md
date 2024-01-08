@@ -23,7 +23,7 @@ These are examples of partners that have integrated with Xandr for app install t
 - TapSense
 - [Tune (formerly HasOffers)](https://www.tune.com/)
 - [Adjust](https://www.adjust.com/)
-  - [Adjust Network Integrations Page](https://docs.adjust.com/en/network-integration/)
+  - Adjust Network Integrations Page
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
 ## Set up third-party mobile app install tracking
