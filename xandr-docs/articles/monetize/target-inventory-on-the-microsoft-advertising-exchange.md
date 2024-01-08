@@ -91,4 +91,4 @@ Once you have finished adjusting your campaign targeting, confirm that the detai
 ## Related topics
 
 - [Microsoft Advertising Exchange Inventory](microsoft-advertising-exchange-inventory.md)
-- [Setting Up 24/7 Media Inventory Through the Microsoft Ad Exchange](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.m)
+- [Setting Up 24/7 Media Inventory Through the Microsoft Ad Exchange](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md)

@@ -1,11 +1,8 @@
 ---
-Title : Target Video Attributes via Query String Parameters
-Description : If you use a tag solution for in-stream video, effectively targeting
+title: Target Video Attributes via Query String Parameters
+description: The article delineates target video attributes through query string parameters.
 ms.date: 10/28/2023
-demand requires knowledge and careful implementation of the range of
-possible tag parameters.
 ---
-
 
 # Target video attributes via query string parameters
 
