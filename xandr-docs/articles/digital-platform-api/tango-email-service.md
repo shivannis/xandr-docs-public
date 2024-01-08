@@ -1,9 +1,8 @@
 ---
 Title : Tango Email Service
-Description : This service, used in combination with the <a
+Description : This service, used in combination with the <a href="xandr-api-internal/email-template-service.md"
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="xandr-api-internal/email-template-service.md"
 ---
 
 
