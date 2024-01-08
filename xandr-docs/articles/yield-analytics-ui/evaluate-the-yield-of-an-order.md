@@ -64,7 +64,7 @@ In the Product Details panel, click the **Alternate Products** tab.
 1. Click **Update**.
 
 To remove the order line, click **Edit** and clear the **Included** checkbox.
-## About flags in evaluate orders
+## Flags in evaluate orders
 
 Use the flags in Evaluate Orders to find and resolve potential availability and pricing issues related to the line items on each proposal.
 
