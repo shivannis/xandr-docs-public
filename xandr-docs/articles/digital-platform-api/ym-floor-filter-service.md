@@ -9,7 +9,8 @@ ms.custom: digital-platform-api
 
 # YM Floor Filter Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This read-only service allows you to view a list of yield management
 (YM) floor rules that apply to a specific member. The response will
