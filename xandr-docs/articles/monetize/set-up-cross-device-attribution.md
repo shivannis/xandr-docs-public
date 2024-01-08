@@ -4,7 +4,6 @@ description: The article helps you to know about attribute conversions across a 
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Set up cross-device attribution
 
 To attribute conversions across a multi-device consumer journey, you need to ensure your line item is correctly set up, including conversion pixels and segment targeting.

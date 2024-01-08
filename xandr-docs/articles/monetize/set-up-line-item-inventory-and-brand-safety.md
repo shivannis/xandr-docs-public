@@ -59,8 +59,8 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
     1. Click the pencil icon.
     1. Select the desired third-party verification vendor such as comScore or DoubleVerify. If you have selected **Open Exchange** as one of your supply sources and have not already applied an allowlist, you should select at least one brand safety segment. Once selected, the segments are automatically included or excluded based on their intended use.
 
-      > [!TIP]
-      > To view all of your brand safety segment selections, click **Summary**.
+       > [!TIP]
+       > To view all of your brand safety segment selections, click **Summary**.
 
       c. Select the checkbox for each segment that you want to apply (charges will apply).
 

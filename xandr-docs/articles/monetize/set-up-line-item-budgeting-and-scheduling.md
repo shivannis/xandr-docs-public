@@ -65,7 +65,7 @@ To set up line item budgeting and scheduling:
     - Flights must occur in the future.
     - Flight dates must fall inside the billing period dates of the parent insertion order(s).
 
-    You can add a new flight by copying the billing period dates from the parent insertion order or by manually setting the start and end dates.
+     You can add a new flight by copying the billing period dates from the parent insertion order or by manually setting the start and end dates.
 
     a. To copy the flight dates from the parent insertion order, click **Copy from insertion order**.
        You can still edit the copied dates and add more flights.
@@ -98,18 +98,19 @@ To set up line item budgeting and scheduling:
     >  Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like
     >  to gain access to them, please contact your Xandr account representative.
 
-    a. Enter a name for your subflight.
-    b. Select a start and end date for your subflight.
+     1. Enter a name for your subflight.
+     1. Select a start and end date for your subflight.
 
-       Alternatively, you can click **Copy from flight** to copy the start and end dates of the parent
+      Alternatively, you can click **Copy from flight** to copy the start and end dates of the parent
         flight.
 
        > [!NOTE]
        > Line items can use no more than one subflight for any given date.
 
-    c. Toggle **Recurring** to select certain days of the week for which your subflight will take effect. 
+     c. Toggle **Recurring** to select certain days of the week for which your subflight will take effect.
 
-    d. Set subflight pacing.
+     d. Set subflight pacing.
+        
        Pacing determines how much of your subflight budget is spent per day. You can set the pacing by using a subflight pacing percentage or a daily budget. For more information on flight pacing, see [Lifetime Pacing](lifetime-pacing.md) and [Adaptive Pacing](adaptive-pacing.md).
 
     | Option | Description |

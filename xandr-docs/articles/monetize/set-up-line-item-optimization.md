@@ -1,15 +1,15 @@
 ---
-title: Set Up Line Item Optimization
+title: Microsoft Monetize - Set Up Line Item Optimization
 description: The article explains how to turn on or off Xandr optimization for a line item. If enabled, users should set performance goals, priorities, and associate the line item with relevant conversion pixels.
 ms.date: 10/28/2023
 ---
 
-# Set up line item optimization
+# Microsoft Monetize - Set up line item optimization
 
 You can enable or disable Xandr optimization for a line item. If you enable Xandr optimization,you must first set a performance goal and goal priority, then associate
 the line item with conversion pixels for those goals.
 
-The Optimization section provides several settings related to optimization, goals, goal priority, and conversion tracking and viewability (if enabled). For more information,
+The **Optimization** section provides several settings related to optimization, goals, goal priority, and conversion tracking and viewability (if enabled). For more information,
 see the [Optimization Guide ALI](optimization-guide-ali.md).
 
 1. Turn on optimization.
@@ -42,7 +42,7 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
       > [!NOTE]
       > VCR optimization is not available if you selected **Managed** as the **Supply Strategy** for the line item.
 
-      - **CTR**
+    - **CTR**
 
       Select this type if your advertiser wants to optimize to a clickthrough rate percentage. Enter the desired percentage in the text field.
 
@@ -100,6 +100,6 @@ see the [Optimization Guide ALI](optimization-guide-ali.md).
    > [!NOTE]
    > The **IP Attribution** feature is in **Alpha**. It is subject to change without notice and is only available to select clients. Please consult your Account Manager if you'd like to be added to the alpha test.
 
-## Related topics
+## Related topic
 
-- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
+[Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

@@ -18,7 +18,7 @@ This page makes references to an attribution server. This is a server that is se
 
 :::image type="content" source="media/ssp-kb-article-graphic_revised.png" alt-text="Screenshot that describes how server side conversion pixels work.":::
 
-## Getting the URL for a server-Side pixel call
+## Getting the URL for a server-side pixel call
 
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the Explore Advanced Options section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel
 will look something like this:

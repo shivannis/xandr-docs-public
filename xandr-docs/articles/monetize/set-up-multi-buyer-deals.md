@@ -25,7 +25,7 @@ From the **Deal** section of the **Basic Setup** section see [Create a Deal Line
      - Click the **Buyers** tab to display available buyers and click the green check mark to include any.
      - Click the **DSP**s tab to display available DSPs, click the “\>” after the DSP to display the list of buyers on that DSP, and click the green check mark to include any.
 
-    > [!NOTE]
-    > Not all DSPs or buyers will be selectable; DSPs need to be enabled by Xandr for multi-buyer deals on an individual basis based on their support for the feature. For any DSP that does not support multi-buyer deals, you can still include one buyer from that DSP on a broader multi-buyer deal. If you think a DSP you’re setting up a deal with should support multi-buyer deals, please contact your account representative.
+       > [!NOTE]
+       > Not all DSPs or buyers will be selectable; DSPs need to be enabled by Xandr for multi-buyer deals on an individual basis based on their support for the feature. For any DSP that does not support multi-buyer deals, you can still include one buyer from that DSP on a broader multi-buyer deal. If you think a DSP you’re setting up a deal with should support multi-buyer deals, please contact your account representative.
 
 3. Click **Save**.
