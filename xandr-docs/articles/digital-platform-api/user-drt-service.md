@@ -9,7 +9,8 @@ store owned & maintained by Corp-IT ) to control access for users.
 
 # User DRT Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The User DRT service was created to allow the DRT (the central user
 store owned & maintained by Corp-IT ) to control access for users.
