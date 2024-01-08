@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Site Domain Performance
-description: 
+description: The article explains how the Site Domain Performance Report allows you to view performance and optimization data by domain or mobile app for a specific advertiser.
 ms.date: 10/28/2023
 ---
 
@@ -142,7 +142,7 @@ Follow these steps to run your report.
    >  The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
    >  only the dimensions you need.
 
-5. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
@@ -154,7 +154,7 @@ Follow these steps to run your report.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the Your **Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-6.  Click **Run report** to send your report request.
+1. Click **Run report** to send your report request.
 
 ## Related topic
 
