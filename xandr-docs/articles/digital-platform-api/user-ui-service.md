@@ -3,7 +3,6 @@ title: User UI Service
 description: The user UI service allows you to change whether campaign peer approval is required for users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-
 ---
 
 
