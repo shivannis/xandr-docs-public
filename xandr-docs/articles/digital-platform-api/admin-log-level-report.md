@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Admin log-level report
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Admin Log-Level Report (aka Honeycomb) gives Xandr admins an easy and safe way to run **select** queries for log-level data. This page walks you through the process.
 
 > [!NOTE]
