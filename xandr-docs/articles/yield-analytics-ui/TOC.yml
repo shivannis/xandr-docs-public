@@ -128,8 +128,8 @@
     href: anatomy-of-the-order-line-visibility-page.md
   - name: View the Full Details of an Order or Order Line
     href: view-the-full-details-of-an-order-or-order-line.md
-  - name: Solving Delivery Issues with Order Line Visibility
-    href: solving-delivery-issues-with-order-line-visibility.md
+  - name: Solve Delivery Issues with Order Line Visibility
+    href: solve-delivery-issues-with-order-line-visibility.md
   - name: Evaluate Orders
     items:
     - name: Anatomy of the Evaluate Orders Page
