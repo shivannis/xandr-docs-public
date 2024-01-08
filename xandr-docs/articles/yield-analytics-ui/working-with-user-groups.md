@@ -1,8 +1,8 @@
 ---
-title : Working With User Groups
-description : Learn about Permissions within yield analytics. 
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Working With User Groups
+description: Learn about Permissions within yield analytics. 
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
 
