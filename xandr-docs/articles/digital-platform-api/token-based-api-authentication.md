@@ -14,7 +14,7 @@ To increase the security of your interactions with the Digital Platform API, we'
 
 ## What is JWT?
 
-From the [JWT website](./https://jwt.io/introduction/):
+From the [JWT website](https://jwt.io/introduction/):
 
 "JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object."
 
@@ -24,7 +24,7 @@ In addition, tokens enable better management of user logins. When your password 
 
 ## JWT library
 
-In order to use JWT tokens, you'll need to have a token generator. You can generate JWT tokens by utilizing one of the many libraries available on the [JWT website](./https://jwt.io/).
+In order to use JWT tokens, you'll need to have a token generator. You can generate JWT tokens by utilizing one of the many libraries available on the [JWT website](https://jwt.io/).
 
 ## Preparing to use tokens
 

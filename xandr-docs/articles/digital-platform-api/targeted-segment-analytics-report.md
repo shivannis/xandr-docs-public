@@ -123,7 +123,7 @@ $ curl -bc -cc -X POST -d @the_request.json 'https://api.appnexus.com/report'
         "execution_status": "pending",
         "dbg_info": {
             "instance": "29.bm-hbapi.prod.nym1",m
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
