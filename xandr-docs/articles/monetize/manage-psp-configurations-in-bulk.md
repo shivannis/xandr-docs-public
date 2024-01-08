@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Manage PSP configurations in Bulk
+# Manage PSP configurations in bulk
 
 Bulk upload allows a user to manage multiple configurations via bulk
 template rather than creating configurations individually in the UI.
@@ -45,7 +45,8 @@ to call the associated Demand Partners.
     > Follow below tips if you do not see the Demand Partner you wish to add in the drop down list:
     > - Ensure that you have the proper media type selected above.
     > - If the media type is set properly, ensure you have added the Demand Partner in the **Global Settings** page under **Demand Partners,** as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
-    > - Check that the partner shows up as `Enabled` in that list. You can view a full list of available Demand Partners at [Prebid](https://docs.prebid.org/dev-docs/pbs-bidders.html).
+    > - Check that the partner shows up as `Enabled` in that list. 
+    > You can view a full list of available Demand Partners at [Prebid](https://docs.prebid.org/dev-docs/pbs-bidders.html).
 
 1. Once you select a **Demand Partner**
     from the dropdown, new input fields will appear representing the
@@ -85,7 +86,7 @@ to call the associated Demand Partners.
     class="note warning note_warning">
 
     > [!WARNING]
-    > Dangerous certain consequences of an action<b>Warning:</b> Do not edit any of the pre-populated cells except for the "data.demand_partner_config_params\[X\].enabled, which toggles the partner as active or inactive within that configuration (row).
+    > Do not edit any of the pre-populated cells except for the "data.demand_partner_config_params\[X\].enabled", which toggles the partner as active or inactive within that configuration (row).
 
 1. Save changes to the template.
 

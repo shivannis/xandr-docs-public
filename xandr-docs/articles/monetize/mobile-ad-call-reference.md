@@ -5,10 +5,10 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Mobile Ad call reference
+# Microsoft Monetize - Mobile ad call reference
 
 > [!NOTE]
-> Xandr now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
+> Xandr now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Reinforcing Privacy Controls Through a Cookie-Free Domain](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Reinforcing-Privacy-Controls-Through-a-Cookie-Free-Domain.aspx) (login required).
 
 This document describes our mobile ad calls, the `/ssmob` and `/mob`
 calls, which are used to request ads for mobile apps. These calls

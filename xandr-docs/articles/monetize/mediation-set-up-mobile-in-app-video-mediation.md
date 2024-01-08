@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Set up mobile In-App video mediation
+# Set up mobile in-app video mediation
 
 > [!NOTE]
 > Mediation is available only to Microsoft Monetize Ad Server customers.
@@ -76,7 +76,7 @@ To create a bid navigate to
 \> **Bids** and follow these steps:
 
 1. Click **Create Bid**.
-2. Click the **Edit** button next to
+1. Click the **Edit** button next to
     **Inventory** to target your bid
     to specific publisher(s), placement group(s) or placement(s). The
     targeting you choose depends highly on your object hierarchy. For
@@ -88,13 +88,13 @@ To create a bid navigate to
     **System** to further refine when
     this mediated bid will compete for an impression.
 1. Under the **Bids** section select
-    the network you created previously.
-. Once selected you will be able to add the network's VAST
+    the network you created previously. 
+1. Once selected you will be able to add the network's VAST
     **URL**. Replace any dynamic values in
     the VAST tag with the appropriate creative macro.
 1. **Bid Name** is displayed in the
-    **mediation** dashboard (accessed from the
-    Mediation tab) so use a
+    mediation dashboard (accessed from the
+    **Mediation** tab) so use a
     descriptive name. As an example, a good format would be
     "\<network\> - \<inventory\> - \<geography\> - video" like
     "MyVideoNetwork - Story Page - US - video".

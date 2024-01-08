@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Microsoft Advertising Exchange Inventory
+# Microsoft Monetize - Microsoft advertising exchange inventory
 
 The **Microsoft Advertising Exchange** (MAX) is a premium exchange with
 high-quality inventory to help you reach your audiences across Microsoft
@@ -44,9 +44,9 @@ featured applications from across the Windows App Store.
 
 Windows App inventory includes:
 
-:::image type="content" source="media/windowsappinven.png" alt-text="Screenshot of windows app .":::
+:::image type="content" source="media/windowsappinven.png" alt-text="Screenshot that represents app inventory .":::
 
-## Sample windows Apps inventory
+## Sample windows apps inventory
 
 Provided below are some Windows Apps inventory samples:
 
@@ -59,7 +59,7 @@ Provided below are some Windows Apps inventory samples:
  :::image type="content" source="media/inventory-on-phone.png" alt-text="Screenshot of inventory on phone .":::
   
 
-## Windows Apps creative details
+## Windows apps creative details
 
 |  | Windows 8 | Windows Phone |
 |---|---|---|
@@ -67,7 +67,7 @@ Provided below are some Windows Apps inventory samples:
 | **Technical**<br>**Attributes** | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (in web view)**<br> - Image (Third-Party Ad Served)<br> - Flash with Backup Image only |  |
 | **Ad**<br>**Quality** | - [Microsoft CAP](https://about.ads.microsoft.com/policies)<br> - Animation Length up to 30 sec |  |
 
-## How to target Windows App Inventory and additional information
+## How to target windows app inventory and additional information
 
 For more information regarding how to target Windows App inventory,
 formats, specifications and legacy SDK ads for Windows apps, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).

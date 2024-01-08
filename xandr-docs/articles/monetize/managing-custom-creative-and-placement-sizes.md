@@ -32,7 +32,7 @@ screen by selecting
 **Network**  \> **Tools** \> **General** from the menu bar and
 then select the **Custom Sizes** tab.
 
-## Define a new size
+### Define a new size
 
 1. Open the **Custom Size Details**
     dialog. Select the **New Custom Size**
@@ -67,13 +67,13 @@ then select the **Custom Sizes** tab.
    > ([Create a Placement](create-a-placement.md))
    > - **Publishers** >  **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
 
-## Edit an existing size
+### Edit an existing size
 
 1. Choose the size to be edited. Click any dimension in the list. The
     **Custom Size Details** dialog appears
     with the **Width** and
     **Height** fields already filled out.
-1. Change the width and height. Update one or both of the values (in
+1. Change the **width** and **height**. Update one or both of the values (in
     pixels) in the Width and
     Height fields.
 1. Indicate whether these dimensions are a standard size. Change the
@@ -98,12 +98,12 @@ then select the **Custom Sizes** tab.
 > - **Publishers** > **Create New Placement** > **Placement Details tab**([Create a Placement](create-a-placement.md))
 > - **Publishers** > **Reporting** ([Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md))
 
-## Delete an existing size
+### Delete an existing size
 
 1. Choose the size or sizes to delete. Click the check box to the left
     of each size to be deleted. You can select more than one box. Click
     the check box to the left of the header
-    Size (at the top of the list of
+    **Size** (at the top of the list of
     sizes) to select all sizes.
 1. Click the **More Actions Button** to
     expose the drop-down list and select the
