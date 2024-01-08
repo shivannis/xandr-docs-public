@@ -1,9 +1,8 @@
 ---
 Title : Segment Overlap Report
-Description : <b>Note:</b> This reporting API is currently
+Description : <b>Note:</b> This reporting API is currently for internal use only. It is therefore only visible to AppNexus employees.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-for internal use only. It is therefore only visible to
 ---
 
 
