@@ -155,9 +155,9 @@
       href: yield-analytics-seasonality-faqs.md
     
   - name: Anatomy of the Forecast Visibility Page
-    href: anatomy-of-the-forecast-visibility-page.md
-  - name: View the Forecast for Your Products
-    href: view-the-forecast-for-your-products.md
+    href: forecast-visibility-page-anatomy.md
+  - name: View Your Products Forecast
+    href: view-your-products-forecast.md
   - name: Anatomy of the Forecast Management Page
     href: anatomy-of-the-forecast-management-page.md
   - name: Adjustments
