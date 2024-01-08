@@ -132,20 +132,12 @@
     href: solving-delivery-issues-with-order-line-visibility.md
   - name: Evaluate Orders
     items:
+    - name: Anatomy of the Evaluate Orders Page
+      href: anatomy-of-the-evaluate-orders-page.md
     - name: Evaluate the Yield of an Order
       href: evaluate-the-yield-of-an-order.md
-    - name: Evaluate Orders Page
-      items:
-      - name: Anatomy of the Evaluate Orders Page
-        href: anatomy-of-the-evaluate-orders-page.md
-      - name: Add a Proposal to a Scenario
-        href: add-a-proposal-to-a-scenario.md
-      - name: Using Alternative Products to Solve Pricing/Availability Issues
-        href: using-alternative-products-to-solve-pricing-availability-issues.md
     - name: Anatomy of the Evaluate Orders Search Page
       href: anatomy-of-the-evaluate-orders-search-page.md
-    - name: About Flags in Evaluate Orders
-      href: about-flags-in-evaluate-orders.md
   - name: Import Order Template
     href: import-order-template.md
 - name: Capacity 
