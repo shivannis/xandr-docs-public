@@ -9,7 +9,8 @@ late June 2014, as part of the API 1.15 release. Because 1.15 is a
 
 # User UI Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 
 
