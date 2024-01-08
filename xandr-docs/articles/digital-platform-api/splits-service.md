@@ -534,7 +534,7 @@ The number of ads seen by a user for an advertiser, line item, or split on the c
 
 The number of ads seen by a user over the lifetime of an advertiser, line item, or split.
 
-| Field | `OBJECT[ID].lifetime_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertsier-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs.<br><br>**CAUTION**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
+| Field | `OBJECT[ID].lifetime_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs.<br><br>**CAUTION**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
 |---|---|
 | `Operator` | `>`, `=>`, `<`, `=<`, `=` |
 | `Value` | Positive integer. `0` indicates no frequency information is available (the user has never seen this object). |
@@ -543,7 +543,7 @@ The number of ads seen by a user over the lifetime of an advertiser, line item, 
 
 The number of minutes since a user has seen an ad. This can be determined for a user for all ads under an advertiser, line item, or split.
 
-| Field | `OBJECT[ID].recency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertsier-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. |
+| Field | `OBJECT[ID].recency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. |
 |---|---|
 | `Operator` | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
 | `Value` | A positive integer indicating the number of minutes since a user has seen an impression, rounded down. 59 seconds will evaluate to `0`, 61 seconds will evaluate to `1`. `0` means the impression was seen very recently. `Null` means no recency data is available (the user has not seen this impression before). |
