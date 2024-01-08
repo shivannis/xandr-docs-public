@@ -9,7 +9,8 @@ for internal use only. This page is therefore visible only to
 
 # Seller Report
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 
 
