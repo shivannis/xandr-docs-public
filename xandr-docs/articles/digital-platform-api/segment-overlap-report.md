@@ -9,7 +9,8 @@ for internal use only. It is therefore only visible to
 
 # Segment Overlap Report
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 
 
