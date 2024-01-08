@@ -1,15 +1,15 @@
 ---
 Title : Sync Report Service
-Description : This page is a placeholder, as this service is currently under
+Description : This page is a placeholder, as this service is currently under development.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-development.
 ---
 
 
 # Sync Report Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This page is a placeholder, as this service is currently under
 development.
