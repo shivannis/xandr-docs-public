@@ -1,9 +1,8 @@
 ---
 Title : Seller Report
-Description : <b>Note:</b> This reporting API is currently
+Description : <b>Note:</b> This reporting API is currently for internal use only. This page is therefore visible only to
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-for internal use only. This page is therefore visible only to
 ---
 
 
