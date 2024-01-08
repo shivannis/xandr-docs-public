@@ -9,6 +9,9 @@ inventory. Buyers can target seller member groups in addition to
 
 # Seller Member Group Service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 
 
 A seller member group consists of one or more members that sell
