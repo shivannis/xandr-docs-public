@@ -1,6 +1,6 @@
 ---
-Title : Seller Report
-Description : <b>Note:</b> This reporting API is currently for internal use only. This page is therefore visible only to
+title: Seller Report
+description: The Seller Report allows you to estimate the amount of available inventory given a set of possible targeting criteria that you specify.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
