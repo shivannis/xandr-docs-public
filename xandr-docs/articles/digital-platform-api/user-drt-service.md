@@ -1,9 +1,8 @@
 ---
-Title : User DRT Service
-Description : The User DRT service was created to allow the DRT (the central user
+title: User DRT Service
+description: The User DRT service was created to allow the DRT (the central user store owned & maintained by Corp-IT ) to control access for users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-store owned & maintained by Corp-IT ) to control access for users.
 ---
 
 
