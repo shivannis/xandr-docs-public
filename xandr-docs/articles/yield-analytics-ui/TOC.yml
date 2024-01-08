@@ -148,16 +148,12 @@
     href: about-forecasts-and-adjustments.md
   - name: Capacity Dashboard
     items:
-    - name: Anatomy of the Capacity Dashboard Page
+    - name: Anatomy of the Capacity Dashboard
       href: anatomy-of-the-capacity-dashboard-page.md
-    - name: Check Impression Capacity for a Product Group
-      href: check-impression-capacity-for-a-product-group.md
+    
     - name: Yield Analytics Seasonality FAQs
       href: yield-analytics-seasonality-faqs.md
-    - name: Check Manual Adjustments and Holidays
-      href: check-manual-adjustments-and-holidays.md
-    - name: Check Capacity Trended for a Product Group
-      href: check-capacity-trended-for-a-product-group.md
+    
   - name: Anatomy of the Forecast Visibility Page
     href: anatomy-of-the-forecast-visibility-page.md
   - name: View the Forecast for Your Products
