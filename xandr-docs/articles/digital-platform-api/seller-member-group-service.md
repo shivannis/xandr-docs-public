@@ -1,7 +1,7 @@
 ---
 Title : Seller Member Group Service
 Description : A seller member group consists of one or more members that sell inventory.
-ms.custom: digital-platform-api
+ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
