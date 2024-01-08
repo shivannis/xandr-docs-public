@@ -1,6 +1,6 @@
 ---
-Title : Sync Report Service
-Description : This page is a placeholder, as this service is currently under development.
+title: Sync Report Service
+description: This page is a placeholder, as this service is currently under development.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
