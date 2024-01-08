@@ -1,16 +1,11 @@
 ---
-Title : Reporting on Viewability
-Description : This page defines viewability metrics that are available and best
+title: Microsoft Monetize - Reporting on viewability
+Description: Learn about viewability metrics that are available and best practices for making optimal use of them.
 ms.date: 10/28/2023
-practices for making optimal use of them.
 ---
 
 
-# Reporting on Viewability
-
-
-
-
+# Microsoft Monetize - Reporting on viewability
 
 This page defines viewability metrics that are available and best
 practices for making optimal use of them.
@@ -20,9 +15,9 @@ Xandr provides **always-on**, **free**,
 participants of the internet advertising industry. Viewability improves
 the performance and quality of internet advertising.
 
-Viewability Definitions
+## Viewability definitions
 
-Viewability Measurement Metrics
+### Viewability measurement metrics
 
 Not all impressions are successfully measured, because of one, or more
 of the following:
@@ -35,152 +30,53 @@ of the following:
 - Technical limitation - the script successfully loaded in the browser,
   but still couldn't be measured.
 
+> [!NOTE]
+> Viewability metrics in reporting will be available at the same time that impression level metrics become available.
 
+| Viewability Metric | Definition |
+|---|---|
+| View-Measured Imps | The total number of impressions that were measured for viewability. |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
-<b>Note:</b> Viewability metrics in reporting
-will be available at the same time that impression level metrics become
-available.
+> [!NOTE]
+> The Xandr measured viewability rate should not be directly compared to other measurement vendors, due to differences in what, where and how impressions were served.
 
+### Viewability metrics
 
+| Viewability Metric | Definition |
+|---|---|
+| View-Measured Imps | The total number of impressions that were measured for viewability. |
+| Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
+> [!NOTE]
+> An impression that could not be measured will not have a viewability status.
 
+## Viewability reporting
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001480__entry__1" class="entry">Viewability Metric</th>
-<th id="ID-00001480__entry__2" class="entry">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001480__entry__1">View-Measured
-Imps</td>
-<td class="entry" headers="ID-00001480__entry__2">The total number of
-impressions that were measured for viewability.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001480__entry__1">Viewability
-Measurement Rate</td>
-<td class="entry" headers="ID-00001480__entry__2">The percentage of
-impressions measured for viewability out of the total number of
-impressions. (View Measured Imps / Imps)</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-<b>Note:</b> The Xandr
-measured viewability rate should not be directly compared to other
-measurement vendors, due to differences in what, where and how
-impressions were served.
-
-
-
-Viewability Metrics
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001480__entry__7" class="entry">Viewability Metric</th>
-<th id="ID-00001480__entry__8" class="entry">Definition</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001480__entry__7">Viewable Imps</td>
-<td class="entry" headers="ID-00001480__entry__8">The number of measured
-impressions that were viewable, per the IAB Viewability definition,
-which states that 50% of the pixels of a creative are in-view during 1
-consecutive second.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00001480__entry__7">Viewability Rate</td>
-<td class="entry" headers="ID-00001480__entry__8">The percentage of
-impressions that were viewable out of the total number of impressions
-measured for viewability. (Viewed Imps / View Measured Imps)</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-<b>Note:</b> An impression that could not be
-measured will not have a viewability status.
-
-
-
-Viewability Reporting
-
-Reports With Viewability Metrics
+## Reports with viewability metrics
 
 Viewability metrics are included in several reports in the reporting
 system:
 
+| Network | Advertisers | Publishers |
+|---|---|---|
+| - [Network Analytics Report](network-analytics-report.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) | - [Advertiser Analytics Report](advertiser-analytics-report.md)<br> - [Site Domain Performance](site-domain-performance.html) | - [Publisher Analytics](publisher-analytics.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) |
 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001480__entry__13" class="entry"><span
-class="ph">Network</th>
-<th id="ID-00001480__entry__14" class="entry">Advertisers</th>
-<th id="ID-00001480__entry__15" class="entry">Publishers</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001480__entry__13"><ul>
-<li><a href="network-analytics-report.md" class="xref">Network
-Analytics Report</a></li>
-<li><a href="seller-site-domain-report.md" class="xref">Seller Site
-Domain Report</a></li>
-</ul></td>
-<td class="entry" headers="ID-00001480__entry__14"><ul>
-<li><a href="advertiser-analytics-report.md" class="xref">Advertiser
-Analytics Report</a></li>
-<li><a href="site-domain-performance.md" class="xref">Site Domain
-Performance</a></li>
-</ul></td>
-<td class="entry" headers="ID-00001480__entry__15"><ul>
-<li><a href="publisher-analytics.md" class="xref">Publisher
-Analytics</a></li>
-<li><a href="seller-site-domain-report.md" class="xref">Seller Site
-Domain Report</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
-
-How to Add Viewability Metrics
+## How to add viewability metrics
 
 Go to the appropriate tab and select
-Reporting from the navigation menu.
+**Reporting** from the navigation menu.
 Select the type of report from the drop-down menu.
 
 Viewability indicators are located in the
-Metrics section. Click the
-Edit button to select the desired
+**Metrics** section. Click the
+**Edit** button to select the desired
 indicators.
 
+> [!NOTE]
+> For an explanation of how metrics work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-
-<b>Tip:</b> For an explanation of how metrics
-work, see <a href="dimensions-metrics-filtering-and-grouping.md"
-class="xref">Dimensions, Metrics, Filtering, and Grouping</a>.
-
-
-
-Impression-Level Viewability
+### Impression-Level viewability
 
 A column in the Log Level Data Standard Feed enables impression-level
 viewability analytics. You can determine the result of the
@@ -188,52 +84,23 @@ Xandr viewability measurement for each
 individual impression and use the data to perform enhanced reporting and
 in-depth analysis.
 
+| Column | Description |
+|---|---|
+| VIEW_RESULT_TYPE | The possible values are:<br> - Measured Viewable<br> - Measured Non-Viewable<br> - Non-Measured |
 
+For more information, see [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) and [Standard Feed](../log-level-data/standard-feed.md).
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00001480__entry__19" class="entry">Column</th>
-<th id="ID-00001480__entry__20" class="entry">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00001480__entry__19">VIEW_RESULT_TYPE</td>
-<td class="entry" headers="ID-00001480__entry__20">The possible values
-are:
-<ul>
-<li>Measured Viewable</li>
-<li>Measured Non-Viewable</li>
-<li>Non-Measured</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+## Best practices
 
+### Viewable Imps and Viewability rate
 
-
-For more information, see <a
-href="log-level-data/log-level-data-feeds.md"
-class="xref" target="_blank">Log-Level Data Feeds</a> and <a
-href="log-level-data/standard-feed.md"
-class="xref" target="_blank">Standard Feed</a>.
-
-Best Practices
-
-Viewable Imps and Viewability rate
-
-If you select Viewable Imps and
-Viewability Rate, it is recommended
-that you add View-Measured Imps as
+If you select **Viewable Imps** and
+**Viewability Rate**, it is recommended
+that you add **View-Measured Imps** as
 well.
 
-
-
-<b>Important:</b> Viewability Rate = Viewable
-Imps / View-Measured Imps
-
-
+> [!IMPORTANT]
+> Viewability Rate = Viewable Imps / View-Measured Imps
 
 **Viewability Rate** is NOT **Viewable Imps / All Imps.**
 
@@ -254,13 +121,6 @@ of successfully measured imps = 900,000.
 **Viewability Rate = Viewable Imps / View-Measured Imps** = 450,000 /
 900,000 = **50%**
 
-Sample Report
+### Sample report
 
-![Viewability sample](media/viewability-sample-report.png)
-
-
-
-
-
-
-
+:::image type="content" source="media/viewability-sample-report.png" alt-text="Screenshot of Viewability sample page":::
