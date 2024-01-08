@@ -25,11 +25,11 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/ym-profile?id=YMP_ID](https://api.appnexus.com/ym-profile?id=YMP_ID)<br>[https://api.appnexus.com/ym-profile?id=YMP_CODE](https://api.appnexus.com/ym-profile?id=YMP_CODE) | View a specific profile. |
-| `GET` | [https://api.appnexus.com/ym-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ym-profile?publisher_id=PUBLISHER_ID)<br>[https://api.appnexus.com/ym-profile?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/ym-profile?publisher_code=PUBLISHER_CODE) | View all profiles associated with a particular publisher. |
+| `GET` | - [https://api.appnexus.com/ym-profile?id=YMP_ID](https://api.appnexus.com/ym-profile?id=YMP_ID)<br>- [https://api.appnexus.com/ym-profile?id=YMP_CODE](https://api.appnexus.com/ym-profile?id=YMP_CODE) | View a specific profile. |
+| `GET` | - [https://api.appnexus.com/ym-profile?publisher_id=PUBLISHER_ID](https://api.appnexus.com/ym-profile?publisher_id=PUBLISHER_ID)<br>- [https://api.appnexus.com/ym-profile?publisher_code=PUBLISHER_CODE](https://api.appnexus.com/ym-profile?publisher_code=PUBLISHER_CODE) | View all profiles associated with a particular publisher. |
 | `GET` | [https://api.appnexus.com/ym-profile?id=1,2,3](https://api.appnexus.com/ym-profile?id=1,2,3) | View multiple profiles by ID using a comma-separated list. |
-| `POST` | [https://api.appnexus.com/ym-profile](https://api.appnexus.com/ym-profile)<br>(ym-profile JSON) | Add a profile.<br><br>**Note:** After adding a profile, you can use the Publisher Service to assign the profile to a particular publisher. |
-| `PUT` | [https://api.appnexus.com/ym-profile?id=YMP_ID](https://api.appnexus.com/ym-profile?id=YMP_ID)<br>[https://api.appnexus.com/ym-profile?id=YMP_CODE](https://api.appnexus.com/ym-profile?id=YMP_CODE)<br>(ym profile JSON) | Modify an existing profile. |
+| `POST` | [https://api.appnexus.com/ym-profile](https://api.appnexus.com/ym-profile)<br>(ym-profile JSON) | Add a profile.<br><br>**Note:** After adding a profile, you can use the [Publisher Service](publisher-service.md) to assign the profile to a particular publisher. |
+| `PUT` | - [https://api.appnexus.com/ym-profile?id=YMP_ID](https://api.appnexus.com/ym-profile?id=YMP_ID)<br>- [https://api.appnexus.com/ym-profile?id=YMP_CODE](https://api.appnexus.com/ym-profile?id=YMP_CODE)<br>(ym profile JSON) | Modify an existing profile. |
 | `DELETE` | [https://api.appnexus.com/ym-profile?id=YMP_ID](https://api.appnexus.com/ym-profile?id=YMP_ID) | Delete an existing profile. |
 
 ## JSON fields
@@ -42,11 +42,11 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 | `description` | string | An optional description of the yield management profile.<br>**Default:** `NULL` |
 | `base_ym_bias_id` | int | The ID of the YM bias that should be applied if no other YM biases should be used. Typically, this YM bias has a priority 1 (lowest priority) and no profile.<br>**Default:** `NULL` |
 | `base_ym_floor_id` | int | The ID of the YM floor that should be applied if no other YM floors should be used. Typically, this YM floor has a priority 1 (lowest priority) and no profile.<br>**Default:** `NULL` |
-| `publisher_id` | int | Read-only. The ID of the publisher to which the yield management profile is associated. You use the [Publisher Service](publisher-service.md) to make the association between the yield management profile and the publisher. |
-| `modifiers` | array | The modifiers applied to the technical attribute of the creative. For more details, see Modifiers below.<br>**Default:** `NULL` |
-| `biases` | array | The biases applied to demand side objects: Buyer Groups, Buyer Members. For more details, see Biases below.<br>**Default:** `NULL` |
-| `floors` | array | The floor prices applied based on inventory and user targeting. For more details, see Floors below.<br>**Default:** `NULL` |
-| `last_modified` | timestamp | Time of last modification to this yield management profile.<br>**Default:** N/A |
+| `publisher_id` | int | **Read-only.** The ID of the publisher to which the yield management profile is associated. You use the [Publisher Service](publisher-service.md) to make the association between the yield management profile and the publisher. |
+| `modifiers` | array | The modifiers applied to the technical attribute of the creative. For more details, see [Modifiers](#modifiers) below.<br>**Default:** `NULL` |
+| `biases` | array | The biases applied to demand side objects: Buyer Groups, Buyer Members. For more details, see [Biases](#biases) below.<br>**Default:** `NULL` |
+| `floors` | array | The floor prices applied based on inventory and user targeting. For more details, see [Floors](#floors) below.<br>**Default:** `NULL` |
+| `last_modified` | timestamp | Time of last modification to this yield management profile.<br>**Default:** `N/A` |
 
 ### Modifiers
 
@@ -59,16 +59,16 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | This is the id of the technical attribute (as found in the [Technical Attribute Service](technical-attribute-service.md)) for which the modifier should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
-| `name` | name | This is the name of the technical attribute.<br>**Default:** N/A |
+| `name` | name | This is the name of the technical attribute.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'bias-pct'`,<br>`'bias-cpm'`,<br>`'floor-pct'`,<br>`'floor-cpm'`) | This determines which value to use for the modifier, represented as a percentage or a flat CPM, and what the modifier should be applied to -- the bid or the floor.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` |
-| `amount_pct` | double | This is the % amount the bid or floor should be modified by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'bias-pct'` or `'floor-pct'`) |
-| `amount_cpm` | double | This is the CPM increase/decrease that the bid or floor should be modified by.<br>Default: NULL<br>**Required On:** `POST`, `PUT` (if `type` is `'bias-cpm'` or `'floor-cpm'`) |
+| `amount_pct` | double | This is the % amount the bid or floor should be modified by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'bias-pct'` or `'floor-pct'`). |
+| `amount_cpm` | double | This is the CPM increase/decrease that the bid or floor should be modified by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'bias-cpm'` or `'floor-cpm'`). |
 
 ### Biases
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The unique identifier for a yield management bias.<br>**Default:** Auto-incremented Number (i.e. 123)<br>**Required On:** `PUT` |
+| `id` | int | The unique identifier for a yield management bias.<br>**Default:** Auto-incremented Number (i.e. 123).<br>**Required On:** `PUT` |
 | `code` | string | A optional custom code used to reference a yield management bias.<br>**Default:** `NULL` |
 | `name` | string | A name used to describe a yield management bias.<br>**Default:** `None`<br>**Required On:** `POST` |
 | `description` | string | An optional description how the yield management bias is being used.<br>**Default:** `NULL` |
@@ -82,26 +82,26 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | This is the id of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
-| `name` | string | This is the name of the buyer member.<br>**Default:** N/A |
+| `name` | string | This is the name of the buyer member.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
-| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`) |
-| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`) |
+| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
+| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`). |
 
 ### Biases - Buyer groups
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | This is the id of the buyer group for which the bias should be applied.<br>**Default:** None<br>**Required On:** `POST`, `PUT` |
-| `name` | string | This is the name of the buyer group.<br>**Default:** N/A |
+| `name` | string | This is the name of the buyer group.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
-| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`) |
-| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`) |
+| `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
+| `bias_cpm` | double | This is the CPM increase/decrease the buyer member should be adjusted by.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` (if `type` is `'cpm'`). |
 
 ### Floors
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The unique identifier for a yield management floor.<br>**Default:** Auto-incremented Number (i.e. 123)<br>**Required On:** `PUT` |
+| `id` | int | The unique identifier for a yield management floor.<br>**Default:** Auto-incremented Number (i.e. 123).<br>**Required On:** `PUT` |
 | `code` | string | A optional custom code used to reference a yield management floor.<br>**Default:** `NULL` |
 | `name` | string | A name used to describe a yield management floor.<br>**Default:** `None`<br>**Required On:** `POST` |
 | `description` | string | An optional description how the yield management floor is being used.<br>**Default:** `NULL` |

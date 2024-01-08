@@ -15,7 +15,7 @@ The Yield Management Bias Service is used to create and update biases within an 
 |:---|:---|:---|
 | `POST` | - [https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE)<br>(ym-bias JSON) | Add a bias. |
 | `PUT` | - [https://api.appnexus.com/ym-bias?id=YM_BIAS_ID](https://api.appnexus.com/ym-bias?id=YM_BIAS_ID)<br>- [https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE](https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE)<br>(ym-bias JSON) | Modify an existing bias. |
-| `GET` | - [https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE) | View all biases associated with a particular Yield Management Profile. |
+| `GET` | - [https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID](https://api.appnexus.com/ym-bias?ym_profile_id=YM_PROFILE_ID)<br>- [https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE](https://api.appnexus.com/ym-bias?ym_profile_code=YM_PROFILE_CODE) | View all biases associated with a particular [Yield Management Profile](yield-management-profile-service.md). |
 | `GET` | - [https://api.appnexus.com/ym-bias?id=YM_BIAS_ID](https://api.appnexus.com/ym-bias?id=YM_BIAS_ID)<br>- [https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE](https://api.appnexus.com/ym-bias?code=YM_BIAS_CODE) | View a specific bias. |
 | `GET` | [https://api.appnexus.com/ym-bias?id=1,2,3](https://api.appnexus.com/ym-bias?id=1,2,3) | View multiple biases by ID using a comma-separated list. |
 
@@ -23,7 +23,7 @@ The Yield Management Bias Service is used to create and update biases within an 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The unique identifier for a yield management bias.<br>**Default:** Auto-incremented Number (i.e. 123)<br>**Required On:** `PUT` |
+| `id` | int | The unique identifier for a yield management bias.<br>**Default:** Auto-incremented Number (i.e. 123).<br>**Required On:** `PUT` |
 | `code` | string | A optional custom code used to reference a yield management bias.<br>**Default:** `NULL` |
 | `name` | string | A name used to describe a yield management bias.<br>**Default:** `None`<br>**Required On:** `POST` |
 | `description` | string | An optional description how the yield management bias is being used.<br>**Default:** `NULL` |
@@ -37,7 +37,7 @@ The Yield Management Bias Service is used to create and update biases within an 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the ID of the buyer member (as found in the Platform Member Service) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
 | `name` | array | This is the name of the buyer member.<br>**Default:** N/A |
 | `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
 | `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |

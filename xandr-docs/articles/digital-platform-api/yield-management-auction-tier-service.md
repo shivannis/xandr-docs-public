@@ -120,7 +120,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/ym-auction-tier'
 }
 ```
 
-### Add an auction tier - exclude a member
+### Add an auction tier - Exclude a member
 
 We must include our `{{member_id}}` and the `{{ym_profile_id}}` we'd like to associate this tier with.
 
@@ -169,7 +169,7 @@ $ curl -b cookies -X POST -d @update.json "https://api.appnexus.com/ym-auction-t
 }
 ```
 
-### Add an auction tier - include a member
+### Add an auction tier - Include a member
 
 Notice that this member must meet an extremely high `{{min_price}}` in order for this tier to apply. Since we haven't specified a `{{priority}}`, it defaults to `5`.
 

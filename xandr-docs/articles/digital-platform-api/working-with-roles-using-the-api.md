@@ -35,7 +35,7 @@ The relationship of users, roles, and resources is shown in the diagram below:
 - A **Role** can have access to one or more **Resources**
 - A **Resource** may depend on other **Resources**
 
-:::image type="content" source="media/role-object-hierarchy.png" alt-text="Diagram of a role object hierarchy.":::
+:::image type="content" source="media/role-object-hierarchy.png" alt-text="Diagram that illustrates a role object hierarchy.":::
 
 ## Related topics
 

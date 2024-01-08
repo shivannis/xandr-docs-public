@@ -33,7 +33,7 @@ In addition to affecting the data that buyers see in your bid requests, visibili
 
 | Field | Type | Description |
 |---|---|---|
-| `id` | int | **Read-only.** The ID of the visibility profile.<br>**Default:** Auto-generated number (i.e., 123)<br>**Required On:** `PUT`, in query string |
+| `id` | int | **Read-only.** The ID of the visibility profile.<br>**Default:** Auto-generated number (i.e., 123).<br>**Required On:** `PUT`, in query string. |
 | `member_id` | int | **Read-only.** The ID of the member that owns the visibility profile. |
 | `name` | string | The name of the visibility profile.<br>**Required On:** `POST` |
 | `notes` | string | Additional information about the visibility profile. |
@@ -66,7 +66,7 @@ In addition to affecting the data that buyers see in your bid requests, visibili
 | `expose_datetime_default` | Boolean | **Do Not Use.** This field is ignored. |
 | `buyer_members` | array of objects | The visibility rules for specific Xandr platform members. For more details, see [Buyer Members](#buyer-members) below.<br>**Default:** `true` |
 | `bidders` | array of objects | The visibility rules for specific external bidders and/or contextual data providers. For more details, see [Bidders](#bidders) below. |
-| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests. For more details, see [Custom Categories](#custom-categories) below.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list` |
+| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests. For more details, see [Custom Categories](#custom-categories) below.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list`. |
 | `last_modified` | timestamp | **Read-only.** The date and time when the visibility profile was last modified. |
 | `expose_device_type_targets` | Boolean | If `true` and this visibility profile is associated with a deal using [Seller Restricted Targeting](./deal-service.md#seller-restricted-targeting), Microsoft Invest buyers targeting the deal will be unable to target device types. For more details, see the [Deal Service](deal-service.md). |
 | `expose_segment_groups_default` | Boolean | If `true` and this visibility profile is associated with a deal using [Seller Restricted Targeting](./deal-service.md#seller-restricted-targeting), Microsoft Invest buyers targeting the deal will be unable to target segments. For more details, see the [Deal Service](deal-service.md). |
@@ -173,7 +173,7 @@ represents a single bidder and contains the following fields. For formatting, se
 
 ## Examples
 
-### Add a visibility profile - show inventory data to all buyers except member 9
+### Add a visibility profile - Show inventory data to all buyers except member 9
 
 In this example, the `POST` request creates a visibility profile that allows all Xandr platform members and external bidders except member 9 to see publisher, placement, age, gender, category, and URL information in your bid requests.
 
@@ -266,9 +266,9 @@ $ curl -b cookies -X POST -d @visibility_profile 'https://api.appnexus.com/visib
 }
 ```
 
-### Add a visibility profile - hide inventory data from all buyers except member 9
+### Add a visibility profile - Hide inventory data from all buyers except member 9
 
-In this example, the POST request creates a visibility profile that prevents all Xandr platform members and external bidders except member 9 from seeing publisher, placement, age, gender, category, and URL information in your bid requests.
+In this example, the `POST` request creates a visibility profile that prevents all Xandr platform members and external bidders except member 9 from seeing publisher, placement, age, gender, category, and URL information in your bid requests.
 
 ```
 $ cat visibility_profile

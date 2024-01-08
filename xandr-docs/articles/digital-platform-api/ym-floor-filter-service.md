@@ -21,7 +21,7 @@ include a list of YM floor rule IDs. You can use the ID to get more information 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `ym-floor-filter` | array | The list of yield management floor rule IDs for rules that apply to the member. For more information, see YM Floor Filter below. |
+| `ym-floor-filter` | array | The list of yield management floor rule IDs for rules that apply to the member. For more information, see [YM Floor Filter](#ym-floor-filter) below. |
 
 ## YM floor filter
 
