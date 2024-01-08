@@ -210,44 +210,12 @@
   items:
   - name: Overview
     href: administration-overview.md
-  - name: Users
-    items:
-    - name: Working With Users
-      href: working-with-users.md
-    - name: Reset a User's Password
-      href: reset-a-user-s-password.md
-    - name: Disable a User
-      href: disable-a-user.md
-    - name: Delete a User
-      href: delete-a-user.md
-    - name: Add a New User
-      href: add-a-new-user.md
-    - name: Import Users
-      href: import-users.md
-  - name: User Groups
-    items:
-    - name: Working With User Groups
-      href: working-with-user-groups.md
-    - name: Add a User Group
-      href: add-a-user-group.md
-    - name: Edit a User Group
-      href: edit-a-user-group.md
-    - name: Duplicate a User Group
-      href: duplicate-a-user-group.md
-    - name: Delete a User Group
-      href: delete-a-user-group.md
-    - name: Search User Groups
-      href: search-user-groups.md
-  - name: Saved Reports
-    items:
-    - name: Add a Report Category
-      href: add-a-report-category.md
-    - name: Edit Report Categories
-      href: edit-report-categories.md
-    - name: Filter the List of Saved Reports
-      href: filter-the-list-of-saved-reports.md
-    - name: Schedule a Saved Report
-      href: schedule-a-saved-report.md
+  - name: Working With Users
+    href: working-with-users.md
+  - name: Working With User Groups
+    href: working-with-user-groups.md
+  - name: Working with Saved Reports
+    href: add-a-report-category.md
 - name: Integrations
   items:
   - name: Working with the Yield Analytics Extension for DFP Sales Manager
