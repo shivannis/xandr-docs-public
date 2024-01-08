@@ -10,7 +10,8 @@ affecting the performance of your in-flight campaigns. Use cases for
 
 # Targeted Segment Analytics Report
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **Targeted Segment Analytics** report is an admin-only report
 designed to give you insight into how your segment targeting is
