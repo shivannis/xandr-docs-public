@@ -9,7 +9,8 @@ href="xandr-api-internal/email-template-service.md"
 
 # Tango Email Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This service, used in combination with the <a
 href="xandr-api-internal/email-template-service.md"
