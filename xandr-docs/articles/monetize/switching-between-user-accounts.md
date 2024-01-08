@@ -4,7 +4,7 @@ description: The article provides instructions on using the account switcher to 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Switching Between User Accounts
+# Microsoft Monetize - Switching between user accounts
 
 This will instruct you how use the account switcher to switch between user accounts.
 

@@ -25,8 +25,8 @@ Targeting is set to **ON** by default for all device and supply types. When conf
   - To target PC-based web placements exclusively, set **Web Placements** to **ON** and **Mobile Web Placements** and **Apps Placements** to **OFF**.
   - To target mobile-based web placements exclusively, set **Mobile Web Placements** to **ON** and **Web Placements** and **App Placements** to **OFF**.
 
-> [!NOTE]
-> The choices you make here affect the targeting options configured further in the procedure. If mobile options are not listed, contact your Xandr representative.
+   > [!NOTE]
+   > The choices you make here affect the targeting options configured further in the procedure. If mobile options are not listed, contact your Xandr representative.
 
 ## Related topics
 

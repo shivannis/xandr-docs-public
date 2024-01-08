@@ -13,8 +13,8 @@ The following table provides feature descriptions and indicates the VAST version
 | VAST Feature | Description | VAST 2.0 | VAST 3.0 | VAST 4.0 | VAST 4.1 | VAST 4.2 |
 |---|---|---|---|---|---|---|
 | Ad Verification | Enables the video player to provide requested details about ad interaction and playback using JavaScript and Flash resources. At least one JavaScript resource or executable resource must be provided. | Not Supported | Not Supported | Not Supported | Supported | Supported |
-| SkipOffset | Sets the number of seconds that a video or audio creative is allowed to play before it can be skipped. The default value is null. | Not Supported<br>**Note**: VPAID can be used as a workaround. | Supported | Supported | Supported | Supported |
-| Universal Ad ID | Unique creative identifiers registered with AD-ID®, Clearcast, or a similar program. | Not Supported | Not Supported | Not Supported | Supported<br>**Note**: Only one universal ad ID is supported. | Supported<br>**Note**: Multiple universal ad IDs are supported. |
+| SkipOffset | Sets the number of seconds that a video or audio creative is allowed to play before it can be skipped. The default value is null. | Not Supported<br><br>**Note**: VPAID can be used as a workaround. | Supported | Supported | Supported | Supported |
+| Universal Ad ID | Unique creative identifiers registered with AD-ID®, Clearcast, or a similar program. | Not Supported | Not Supported | Not Supported | Supported<br><br>**Note**: Only one universal ad ID is supported. | Supported<br><br>**Note**: Multiple universal ad IDs are supported. |
 | Viewable Impression Tracker | Tracks viewable impressions. | Not Supported | Not Supported | Not Supported | Supported | Supported |
 
 ## Related topics

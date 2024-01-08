@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Set up viewability and environment targeting for a line item
 
-To narrow your ad campaign's reach to the most valuable inventory, you can set up viewability threshold, device type, system, and page property targeting settings from the Viewability & Environment Targeting section for your line item.
+To narrow your ad campaign's reach to the most valuable inventory, you can set up viewability threshold, device type, system, and page property targeting settings from the **Viewability & Environment Targeting** section for your line item.
 
 To find more detailed instructions for each type of targeting, see the individual topics under [Targeting](../invest/buy-side-targeting.md).
 

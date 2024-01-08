@@ -24,10 +24,10 @@ The following table shows the standard query parameters you can pass as part of 
 
 | Parameter | Query String Key in Image Tag Implementation | Variable Type | Supports Arrays/Lists | Description |
 |---|---|---|---|---|
-| item_id | ii | String | True | The item id associated with the event, for example, the product or catalog id |
-| item_name | in | String | True | The name of the page or product |
-| item_type | itp | String | True | The category of the page or product |
-| value | va | Float | False | The numerical value associated with the event, for example, the price or cart value. |
+| `item_id` | `ii` | String | True | The item id associated with the event, for example, the product or catalog id |
+| `item_name` | `in` | String | True | The name of the page or product |
+| `item_type` | `itp` | String | True | The category of the page or product |
+| `value` | va | `Float` | False | The numerical value associated with the event, for example, the price or cart value. |
 
 ## Related topic
 

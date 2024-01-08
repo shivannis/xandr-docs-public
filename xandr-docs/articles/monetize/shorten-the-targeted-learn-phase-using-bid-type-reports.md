@@ -1,10 +1,10 @@
 ---
 title: Microsoft Monetize - Shorten the Targeted Learn Phase Using Bid Type Reports
-description: The guide advises on expediting the learning phase for a new campaign's goals by using Bid Type Reports, emphasizing the need for budget allocation to let Xandr's optimization engine identify optimal inventory groupings.  
+description: The guide advises on expediting the learning phase for a new campaign's goals by using Bid Type reports, emphasizing the need for budget allocation to let Xandr's optimization engine identify optimal inventory groupings.  
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Shorten the targeted learn phase using bid type qreports
+# Microsoft Monetize - Shorten the targeted learn phase using bid type reports
 
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide - ALI](optimization-guide-ali.md).
@@ -46,7 +46,7 @@ The end goal of this step is to create a list of placements to remove from your 
 
 In some instances, you may want to aggregate reporting at the Publisher or even Seller level to assess performance in a more general way. This aggregation would allow you to be more aggressive with your exclusions (e.g., instead of using individual placements, you could exclude an entire publisher).
 
-## Step 3: Exclude Inventory by Publisher or Placement ID
+## Step 3: Exclude inventory by publisher or placement ID
 
 Now that you have that list of placements (or perhaps even publishers) you would like to exclude, select **Campaign Manager**. In your campaign under **Targeting \>  Inventory**, click **Edit**. Select **3rd Party Inventory**, switch to **text** mode, and choose to target **placement**. Enter the IDs of the placements you wish to exclude. To exclude entire **publishers** instead of just placements, select publishers from the menu.
 

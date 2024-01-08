@@ -4,7 +4,7 @@ description: The article provides guidance on targeting inventory within the Mic
 ms.date: 10/28/2023
 ---
 
-# Target inventory on the Microsoft advertising exchange
+# Target inventory on the Microsoft Advertising Exchange
 
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see
@@ -33,7 +33,7 @@ Microsoft Advertising is an external supply partner. Therefore, in the **Basic S
 
 Under **Inventory Quality**, the default settings allow only platform-reviewed inventory. Since some Microsoft Advertising inventory might not be platform-reviewed, the surest way to reach all the Microsoft Advertising inventory that you want to target is to allow your campaign to service on any inventory.
 
-To do this, under Inventory Quality, select the **Serve on any inventory** radio button.
+To do this, under **Inventory Quality**, select the **Serve on any inventory** radio button.
 
 ## Step 4. Confirm that universal categories and custom categories are not targeted
 
@@ -41,7 +41,7 @@ To do this, under Inventory Quality, select the **Serve on any inventory** radio
 
 Microsoft Advertising inventory cannot be targeted based on content category by most buyers. If you target any particular category, you will be excluding Microsoft Advertising inventory. Therefore, you should make sure that your campaign allows all categories.
 
-Under Inventory, click the Edit button to open the **Inventory Targeting** dialog, then click Universal Categories and make sure it is set to **Any Universal Category** and **Custom Categories** is set to **Any Custom Category**.
+Under Inventory, click the **Edit** button to open the **Inventory Targeting** dialog, then click **Universal Categories** and make sure it is set to **Any Universal Category** and **Custom Categories** is set to **Any Custom Category**.
 
 ## Step 5. Target Microsoft Advertising inventory
 
@@ -53,7 +53,7 @@ If you target all third-party inventory, your targeting will include all Microso
   
 ## Option 1. Target all Microsoft Advertising web inventory
 
-In the **Inventory Targeting** dialog, under 3rd Party Inventory \> **Sellers**, search for "Microsoft Advertising Exchange" seller. Include the seller **"Microsoft Advertising Exchange (280)"** by clicking on the green checkmark icon.
+In the **Inventory Targeting** dialog, under **3rd Party Inventory** \> **Sellers**, search for "Microsoft Advertising Exchange" seller. Include the seller **"Microsoft Advertising Exchange (280)"** by clicking on the green checkmark icon.
 
 ## Option 2. Target specific Microsoft Advertising MSN "bins"
 
@@ -73,8 +73,7 @@ To target these domains, under **Targeting** in the **Inventory Targeting** sect
 
 ## Step 6. Set additional targeting options
 
-In the Targeting section, you can
-target users based on geography, segment, frequency, daypart, system, page properties, and demographics. In general, demographic and tag targeting are not recommended when targeting Microsoft Advertising, as they could inadvertently restrict your reach. For more information, see [Buy-Side Targeting](buy-side-targeting.md).
+In the **Targeting** section, you can target users based on geography, segment, frequency, daypart, system, page properties, and demographics. In general, demographic and tag targeting are not recommended when targeting Microsoft Advertising, as they could inadvertently restrict your reach. For more information, see [Buy-Side Targeting](buy-side-targeting.md).
 
 > [!IMPORTANT]
 > **Combining Inventory Bin Targeting and Geography Targeting**

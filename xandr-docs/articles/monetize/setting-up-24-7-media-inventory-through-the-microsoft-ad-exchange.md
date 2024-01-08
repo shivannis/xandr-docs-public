@@ -51,8 +51,8 @@ In addition to the settings listed above, you must determine the exact targeting
 - [Target all Microsoft Advertising Exchange inventory but exclude 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-all-microsoft-advertising-exchange-inventory-but-exclude-247-media-inventory)
 - [Target specific Microsoft Ad Exchange inventory only](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-inventory-only)
 - [Target only 24/7 Media inventory](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-only-247-media-inventory)
-- [Target specific Microsoft Ad Exchange](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-inventory-only)
-- [Targeting specific Microsoft Ad Exchange domains where visible (select sites and countries)](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-including-247-media)
+- [Target specific Microsoft Ad Exchange (including 24/7 Media](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#target-specific-microsoft-ad-exchange-including-247-media)
+- [Targeting specific Microsoft Ad Exchange domains where visible](setting-up-24-7-media-inventory-through-the-microsoft-ad-exchange.md#targeting-specific-microsoft-ad-exchange-domains-where-visible-select-sites-and-countries) (select sites and countries)
 
 ## Target all Microsoft advertising exchange inventory including 24/7 media
 
@@ -63,7 +63,7 @@ In addition to the settings listed above, you must determine the exact targeting
 
    > [!NOTE]
    > **Microsoft Advertsing Exchange (Seller 280)** is included by default in any non-targeted campaign, so it is not necessary to specify this targeting unless you wish to
-> dedicate budgets specifically to this source.
+   > dedicate budgets specifically to this source.
 
 ## Target all Microsoft advertising exchange inventory but exclude 24/7 media inventory
 

@@ -59,18 +59,18 @@ The following macros can be used in creative third-party tags and landing page U
 | `${PRICE_PAID}` | The price paid for this impression after price reduction. This is the second price. |
 | `${PT1}`, `${PT2}`, `${PT3}`, `${PT4}`, `${PT5}`, `${PT6}`, `${PT7}`, `${PT8}`, `${PT9}` | These macros can be populated with arbitrary custom data that you send when using the following placement tag query string parameters:<br> - pt1<br> - pt2<br> - pt3<br> - pt4<br> - pt5<br> - pt6<br> - pt7<br> - pt8<br> - pt9<br>For more information, see [Create a Placement Tag Macro](create-a-placement-tag-macro.md). |
 | `${PUBLISHER_CODE}` | The code of the publisher selling the impression.<br><br>**Note**: This ID is available only if the publisher uses a code and has exposed it for reporting. |
-| `${PUBLISHER_ID}` | The ID of the publisher selling the impression.<br>Note: This ID is available only if the publisher is exposed for reporting. |
+| `${PUBLISHER_ID}` | The ID of the publisher selling the impression.<br>**Note**: This ID is available only if the publisher is exposed for reporting. |
 | `${REFERER_URL_ENC}` | The encoded referring URL if available.<br>For mobile app impressions, this macro returns the app store URL if available. |
 | `${REFERER_URL}` | **Deprecated**<br><br>**Note**: Use `${REFERER_URL_ENC}` instead. |
 | `${REM_USER}` | A boolean value that indicates if the user is being remarketed. |
-| `${RESERVE_PRICE}` | The reserve price set by the publisher. When there isn't a reserve price, this macro will return 0. |
+| `${RESERVE_PRICE}` | The reserve price set by the publisher. When there isn't a reserve price, this macro will return `0`. |
 | `${SCHEME}` | Populates the appropriate application protocol (HTTP or HTTPS) depending on the inventory type. |
 | `${SECOND_PRICE}` | The price that represent the second highest bid in auction. |
 | `${SEG_CODES}` | The codes for the segments that the winning buyer owns or has access to within this user's cookie (in order of last seen time). If the user is in more than 15 of your accessible segments, this macro will only return the first 15 (ordered by most recently seen segment to oldest segment). |
-| ${SEG_IDS} | The IDs of the segments that the winning buyer owns or has access to within this user's cookie (in order of last seen time). If the user is in more than 15 of your accessible segments, this macro will only return the first 15 (ordered by most recently seen segment to oldest segment). |
+| `${SEG_IDS}` | The IDs of the segments that the winning buyer owns or has access to within this user's cookie (in order of last seen time). If the user is in more than 15 of your accessible segments, this macro will only return the first 15 (ordered by most recently seen segment to oldest segment). |
 | `${SELLER_MEMBER_ID}` | The member ID of the member that is selling the impression. |
 | `${SITE_ID}` | The ID of the site that the impression is being served on. |
-| `${SSP_DATA}` | Required for server-side conversion pixels. For more information, see Server-Side Conversion Pixels. |
+| `${SSP_DATA}` | Required for server-side conversion pixels. For more information, see [Server-Side Conversion Pixels](server-side-conversion-pixels.md). |
 | `${TAG_CODE1}` | The integration code set on the placement. |
 | `${TAG_CODE2}` | The additional integration code set on the placement. |
 | `${TAG_ID}` | The Xandr placement ID that initiated the bid request. |

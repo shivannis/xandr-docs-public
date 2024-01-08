@@ -104,9 +104,9 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Imps | The total number of impressions served. |
 | Media Cost | The cost to the buying member for this inventory. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Post Click Conversion Rate | The ratio of post-click conversions to impressions. |
-| Post Click Conversions | The total number of post-click conversions recorded. For more information about how we record post-click conversions, see Conversion Attribution. |
+| Post Click Conversions | The total number of post-click conversions recorded. For more information about how we record post-click conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post View Conversion Rate | The ratio of post-view conversions to impressions. |
-| Post View Conversions | The total number of post-view conversions recorded. For more information about how we record post-view conversions, see Conversion Attribution. |
+| Post View Conversions | The total number of post-view conversions recorded. For more information about how we record post-view conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Profit | Booked revenue minus total cost.<br>This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Profit eCPA | Profit per conversion. |
 | Profit eCPC | Profit per click. |
@@ -129,7 +129,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \>  Prebid Server Analytics**
+    Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \>  **Prebid Server Analytics**
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
@@ -146,9 +146,9 @@ Follow these steps to run your report.
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
-     > [!TIP]
-     > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
-     > (The limit here is 10 million rows).
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
+      > (The limit here is 10 million rows).
 
       **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under Name this report (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the Your **Reports** screen.
