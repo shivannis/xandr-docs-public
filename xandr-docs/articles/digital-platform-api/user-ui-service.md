@@ -1,9 +1,9 @@
 ---
-Title : User UI Service
-Description : <b>Note:</b> This service is deprecated as of
+title: User UI Service
+description: The user UI service allows you to change whether campaign peer approval is required for users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-late June 2014, as part of the API 1.15 release. Because 1.15 is a
+
 ---
 
 
