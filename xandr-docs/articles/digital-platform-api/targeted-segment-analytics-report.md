@@ -1,10 +1,8 @@
 ---
 Title : Targeted Segment Analytics Report
-Description : The **Targeted Segment Analytics** report is an admin-only report
+Description : The **Targeted Segment Analytics** report is an admin-only report designed to give you insight into how your segment targeting is affecting the performance of your in-flight campaigns. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-designed to give you insight into how your segment targeting is
-affecting the performance of your in-flight campaigns. Use cases for
 ---
 
 
