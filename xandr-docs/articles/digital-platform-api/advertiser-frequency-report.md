@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Advertiser frequency report
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Advertiser Frequency report can be used to view how frequently users are viewing a specific advertiser's creatives. This report shows data at the advertiser level and is available to members.
 
 For instructions on retrieving a report, see the [example](#example) below.

@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Content Search service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 Xandr admins can use this read-only service to search for creative IDs that have not been deleted and have not expired, based on the `content` and `media_url` attributes of a creative.
 
 > [!NOTE]

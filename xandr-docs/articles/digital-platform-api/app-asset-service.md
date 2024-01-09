@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # App asset service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This is an admin-only service that allows Xandr personnel to add app-related images to Akamai. This service is not available to any Apps Marketplace subscribers or developers.
 
 ## REST API

@@ -6,8 +6,7 @@ ms.custom: digital-platform-api
 ---
 
 # Bulk campaign profile service
-
-> [!IMPORTANT]
-> **For Xandr employees**:
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 >
 > This service is no longer available due to bugs and other reasons. Likewise, this page is no longer visible to clients.

@@ -1,12 +1,12 @@
 ---
 title: Common Report Configurations
-description: The article explains the most common report configurations in yield analytics.
+description: The article explains the most common report configurations in Yield Analytics.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 # Common report configurations
 
-Below are the most common report configurations in yield analytics:
+Below are the most common report configurations in Yield Analytics:
 
 ## At risk report
 
@@ -30,7 +30,7 @@ Customers use this report to track KPIs for their top advertiser accounts, su
 
 **Configuration**:
 
-:::image type="content" source="media/kk.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
+:::image type="content" source="media/advertiser-scorecard.png" alt-text="The screenshot that explains the Advertiser scorecard report used by the customers to track KPIs for their top advertiser accounts, such as revenue, yield, and consumption.":::
 
 ## Sales scorecard
 

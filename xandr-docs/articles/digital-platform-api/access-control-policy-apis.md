@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Access control policy APIs
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 - [Access Platform User Role Service](access-platform-user-role-service.md)
 - [Access Policy Group Service](access-policy-group-service.md)
 - [Access Policy Member Config Service](access-policy-member-config-service.md)

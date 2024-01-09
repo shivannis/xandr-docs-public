@@ -7,8 +7,10 @@ ms.custom: digital-platform-api
 
 # Report Member Access service
 
-Report Member Access is an admin-only service that allows users to update which members have access to restricted reports. It updates the
-data stored in `bidder.rpt_report_member_access`.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
+It updates the data stored in `bidder.rpt_report_member_access`.
 
 > [!NOTE]
 > Only `GET`, `POST` and `DELETE` is supported for this service.

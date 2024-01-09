@@ -1,27 +1,16 @@
 ---
-Title : Migrating from Broker Fees to Partner Fees
-Description : <b>Important:</b> Partner Fees are an
+title: Microsoft Monetize - Migrating from Broker Fees to Partner Fees
+description: Learn the different ways Partner Fees works while migrating from Broker Fees.
 ms.date: 10/28/2023
-enhancement and replacement for
-<a href="broker-fees.md" class="xref">Broker Fees</a> for augmented
 ---
 
 
-# Migrating from Broker Fees to Partner Fees
+# Microsoft Monetize - Migrating from broker fees to partner fees
 
+> [!IMPORTANT]
+> Partner Fees are an enhancement and replacement for [Broker Fees](broker-fees.md) for augmented line items (ALIs) and programmatic guaranteed line items (PGLIs).
 
-
-
-
-<b>Important:</b> Partner Fees are an
-enhancement and replacement for
-<a href="broker-fees.md" class="xref">Broker Fees</a> for augmented
-line items (ALIs) and programmatic guaranteed line items (PGLIs).
-
-
-
-If you're migrating from
-<a href="broker-fees.md" class="xref">Broker Fees</a>, you'll find
+If you're migrating from [Broker Fees](broker-fees.md), you'll find
 partner fees work differently in a few ways:
 
 - Partner fees apply only to augmented line items (ALIs) and guaranteed
@@ -34,13 +23,13 @@ partner fees work differently in a few ways:
 
 All serving fees on existing augmented line items have already been
 converted to partner fees. You can view them in the
-Fees section of the line item. If you
+**Fees** section of the line item. If you
 have Network-level access, hover over your
 member name in the upper-right corner of the menu bar and click
-Fees to access the
-Fees screen.
+**Fees** to access the
+**Fees** screen.
 
-Reporting Changes
+## Reporting changes
 
 With partner fees, several new metrics have been added to reports and
 there has been a standardization of how metrics are named and calculated
@@ -78,7 +67,7 @@ Fields are now defined as follows for every report in which they appear:
   of profit based on total cost. You will still be able to determine
   separate media and data costs.
 
-Transition Period
+## Transition period
 
 The transition to partner fees was completed **November 12, 2019**. For
 reports and metrics related to ALIs prior to that date, some things to
@@ -89,1821 +78,274 @@ keep in mind:
 - Logic was added to prevent double-counting third party costs (partner
   fees vs commissions & serving fees) in total cost metrics for ALIs.
 - Commissions are no longer populated for augmented line items. These
-  fees appear in the partner fees
+  fees appear in the **partner fees**
   field.
 
-Affected Reports
+## Affected reports
 
 The changes for each report are summarized in the tables below.
 
-<a href="buyer-segment-performance-report.md" class="xref">Buyer
-Segment Performance Report</a>
+[Buyer Segment Performance Report](buyer-segment-performance-report.md)
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__1" class="entry">Metric</th>
-<th id="ID-00000579__entry__2" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__3" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Partner Fees</td>
-<td class="entry" headers="ID-00000579__entry__2">The total amount of
-third-party costs, budgeted using <a href="partner-fees.md"
-class="xref">Partner Fees</a>, that have accrued on an augmented line
-item over the reported period of time.</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Commissions</td>
-<td class="entry" headers="ID-00000579__entry__2">Commissions +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted
-</td>
-<td class="entry" headers="ID-00000579__entry__3">$0
-for ALI, commissions for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Serving Fees</td>
-<td class="entry" headers="ID-00000579__entry__2">Serving fees +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__3">$0 for ALI, serving
-fees for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__2">Media cost + data
-costs + partner fees + commissions + serving fees + publisher revenue
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__2">(total cost / imps) *
-1,000</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__2">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__2">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Profit</td>
-<td class="entry" headers="ID-00000579__entry__2">booked revenue - media
-cost</td>
-<td class="entry" headers="ID-00000579__entry__3">booked revenue - total
-cost</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__2">(booked revenue -
-media cost) / imps * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__3">(booked revenue -
-total cost / imps) * 1,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__2">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__1">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__2">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__1">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__2">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__3">Same</td>
-</tr>
-</tbody>
-</table>
-
-<a href="buyer-geo-analytics-report.md" class="xref">Buyer Geo
-Analytics Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__40" class="entry">Metric</th>
-<th id="ID-00000579__entry__41" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__42" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__40">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__41">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__40">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__41">(total cost / imps) *
-1,000</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__40">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__41">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__40">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__41">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__40">Profit</td>
-<td class="entry" headers="ID-00000579__entry__41">booked revenue -
-media cost</td>
-<td class="entry" headers="ID-00000579__entry__42">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__40">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__41">(booked revenue -
-total cost) / imps * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__40">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__41">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__40">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__41">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__40">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__41">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__42">Same</td>
-</tr>
-</tbody>
-</table>
-
-<a href="advertiser-analytics-report.md" class="xref">Advertiser
-Analytics Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__70" class="entry">Metric</th>
-<th id="ID-00000579__entry__71" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__72" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Partner Fees</td>
-<td class="entry" headers="ID-00000579__entry__71">The total amount of
-third-party costs, budgeted using <a href="partner-fees.md"
-class="xref">Partner Fees</a> , that have accrued on an augmented line
-item over the reported period of time.</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Commissions</td>
-<td class="entry" headers="ID-00000579__entry__71">Commissions +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__72">$0
-for ALI, commissions for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Serving Fees</td>
-<td class="entry" headers="ID-00000579__entry__71">Serving fees +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__72">$0 for ALI, serving
-fees for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__71">Media cost + data
-costs + partner fees + commissions + serving fees + publisher revenue
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__71">(total cost / imps) *
-1,000</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__71">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__71">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Profit</td>
-<td class="entry" headers="ID-00000579__entry__71">network revenue -
-network cost</td>
-<td class="entry" headers="ID-00000579__entry__72">booked revenue -
-total cost</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__71">(booked revenue -
-media cost / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__72">(booked revenue -
-total cost / imps) * 1,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__71">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__71">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__72">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__71">(network revenue -
-media cost) / network revenue</td>
-<td class="entry" headers="ID-00000579__entry__72">(booked revenue -
-total cost) / booked revenue</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Total Revenue (net
-commissions)</td>
-<td class="entry" headers="ID-00000579__entry__71">total revenue -
-commissions</td>
-<td class="entry" headers="ID-00000579__entry__72">Deprecated. Returns
-error.</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__70">Revenue eCPM (net
-commissions)</td>
-<td class="entry" headers="ID-00000579__entry__71">((cost / clicks) *
-1,000) - commissions</td>
-<td class="entry" headers="ID-00000579__entry__72">Deprecated. Returns
-error.</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__70">Revenue eCPA (net
-commissions)</td>
-<td class="entry" headers="ID-00000579__entry__71">(cost / conversions)
-- commissions</td>
-<td class="entry" headers="ID-00000579__entry__72">Deprecated. Returns
-error.</td>
-</tr>
-</tbody>
-</table>
-
-<a href="advertiser-video-analytics-report.md" class="xref">Advertiser
-Video Analytics Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__118" class="entry">Metric</th>
-<th id="ID-00000579__entry__119" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__120" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Commissions</td>
-<td class="entry" headers="ID-00000579__entry__119">Commissions +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__120">$0
-for ALI, commissions for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Serving Fees</td>
-<td class="entry" headers="ID-00000579__entry__119">Serving fees +
-equivalent partner fees
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__120">$0 for ALI, serving
-fees for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__119">Media cost + data
-costs + partner fees + commissions + serving fees + publisher revenue
-
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__119">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__119">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__119">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Profit</td>
-<td class="entry" headers="ID-00000579__entry__119">network revenue -
-network media cost</td>
-<td class="entry" headers="ID-00000579__entry__120">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__119">((booked revenue -
-media cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__120">((booked revenue -
-total cost) / imps) * 1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__119">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__119">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__119">(booked revenue -
-media cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__120">(booked revenue -
-total cost) / booked revenue</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Network Profit</td>
-<td class="entry" headers="ID-00000579__entry__119">(booked revenue +
-reseller revenue) - total cost</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Network Profit
-eCPM</td>
-<td class="entry" headers="ID-00000579__entry__119">(network profit /
-imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Network Profit
-eCPC</td>
-<td class="entry" headers="ID-00000579__entry__119">network profit /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__118">Network Profit
-eCPA</td>
-<td class="entry" headers="ID-00000579__entry__119">network profit /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__118">Network Profit
-Margin</td>
-<td class="entry" headers="ID-00000579__entry__119">network profit /
-booked revenue + reseller revenue</td>
-<td class="entry" headers="ID-00000579__entry__120">Same</td>
-</tr>
-</tbody>
-</table>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Commissions | Commissions + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted | $0 for ALI, commissions for standard line item.<br>Previous data will not be impacted. |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | (booked revenue - media cost) / imps * 1,000 | (booked revenue - total cost / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Serving Fees | Serving fees + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, serving fees for standard line item.<br>Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
 
+[Buyer Geo Analytics Report](buyer-geo-analytics-report.md)
 
-<a href="network-analytics-report.md" class="xref">Network Analytics
-Report</a>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | (booked revenue - total cost) / imps * 1,000 | Same |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<table id="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1"
-class="entry">Metric</th>
-<th
-id="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2"
-class="entry">During the Transition Period</th>
-<th
-id="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3"
-class="entry">After the Transition Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Partner
-Fees</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">The
-total amount of third-party costs, budgeted using <a
-href="partner-fees.md" class="xref">Partner Fees</a>, that have
-accrued on an augmented line item over the reported period of time.</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Commissions</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">Commissions
-+ equivalent partner fees
+[Advertiser Analytics Report](advertiser-analytics-report.md)
 
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">$0<span
-class="ph"> for ALI, commissions for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Serving
-Fees</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">Serving
-fees + equivalent partner fees
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Commissions | Commissions + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, commissions for standard line item.<br>Previous data will not be impacted. |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md) , that have accrued on an augmented line item over the reported period of time. | Same |
+| Profit | network revenue - network cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | (booked revenue - media cost / imps) * 1,000 | (booked revenue - total cost / imps) * 1,000 |
+| Profit Margin | (network revenue - media cost) / network revenue | (booked revenue - total cost) / booked revenue |
+| Revenue eCPA (net commissions) | (cost / conversions) - commissions | Deprecated. Returns error. |
+| Revenue eCPM (net commissions) | ((cost / clicks) * 1,000) - commissions | Deprecated. Returns error. |
+| Serving Fees | Serving fees + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, serving fees for standard line item.<br>Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
+| Total Revenue (net commissions) | total revenue - commissions | Deprecated. Returns error. |
 
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">$0
-for ALI, serving fees for standard line item.
-<p>Previous data will not be impacted.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Total
-Cost</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">Media
-cost + data costs + partner fees + commissions + serving fees +
-publisher revenue
+[Advertiser Video Analytics Report](advertiser-video-analytics-report.md)
 
-<b>Note:</b> Third-party fees will not be
-double-counted in the partner fees field.
-</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Total
-Cost eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(total
-cost / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Total
-Cost eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">total
-cost / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Total
-Cost eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">total
-cost / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">network
-revenue - network media cost</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">booked
-revenue - total cost</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit
-eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">((booked
-revenue - total cost) / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit
-eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(booked
-revenue - total cost) / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit
-eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(booked
-revenue - total cost) / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit
-Margin</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(booked
-revenue - total cost) / booked revenue</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Network
-Profit</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(booked
-revenue + reseller revenue) - total cost</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Network
-Profit eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(network
-profit / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Network
-Profit eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">network
-profit / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Network
-Profit eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">network
-profit / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Network
-Profit Margin</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">network
-profit / booked revenue + reseller revenue</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">RPM
-including Fees</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">((revenue
-- fees) / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">Profit
-(net commissions/gross serving fees)</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">profit
-- (serving fees + commissions)</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">PPM
-including Fees</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(profit
-/ imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">CPM
-including Fees</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(cost
-/ imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__1">PPM</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__2">(profit
-/ imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-e0273d8c-73ee-4a72-8cc1-56e7e78ad924__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Commissions | Commissions + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, commissions for standard line item.<br>Previous data will not be impacted. |
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| Profit | network revenue - network media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - media cost) / imps) * 1,000 | ((booked revenue - total cost) / imps) * 1,000 |
+| Profit Margin | (booked revenue - media cost) / booked revenue | (booked revenue - total cost) / booked revenue |
+| Serving Fees | Serving fees + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, serving fees for standard line item.<br>Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
+[Network Analytics Report](network-analytics-report.md)
 
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Commissions | Commissions + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, commissions for standard line item.<br>Previous data will not be impacted. |
+| CPM including Fees | (cost / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
+| PPM | (profit / imps) * 1,000 | Deprecated.<br>Returns error. |
+| PPM including Fees | (profit / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Profit | network revenue - network media cost | booked revenue - total cost |
+| Profit (net commissions/gross serving fees) | profit - (serving fees + commissions) | Deprecated.<br>Returns error. |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | Same |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| RPM including Fees | ((revenue - fees) / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Serving Fees | Serving fees + equivalent partner fees<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | $0 for ALI, serving fees for standard line item.<br>Previous data will not be impacted. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue<br>**Note**: Third-party fees will not be double-counted in the partner fees field. | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
->
+[Publisher Analytics](publisher-analytics.md)
 
-<a href="publisher-analytics.md" class="xref">Publisher Analytics</a>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network PPM | (total network RPM - total publisher RPM) | Deprecated.<br>Returns error. |
+| Network Profit | network revenue - publisher revenue | (booked revenue + reseller revenue) - total cost |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| Network ROI | network ROI | Deprecated.<br>Returns error. |
+| Partner Fees | The total amount of third-party costs, budgeted using [Partner Fees](partner-fees.md), that have accrued on an augmented line item over the reported period of time. | Same |
+| Profit | booked revenue - total cost | Same |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | Same |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<table id="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1"
-class="entry">Metric</th>
-<th
-id="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2"
-class="entry">During the Transition Period</th>
-<th
-id="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3"
-class="entry">After the Transition Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Partner
-Fees</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">The
-total amount of third-party costs, budgeted using <a
-href="partner-fees.md" class="xref">Partner Fees</a>, that have
-accrued on an augmented line item over the reported period of time.</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Total
-Cost</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">Media
-cost + data costs + partner fees + commissions + serving fees +
-publisher revenue</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Total
-Cost eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(total
-cost / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Total
-Cost eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">total
-cost / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Total
-Cost eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">total
-cost / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Profit</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">booked
-revenue - total cost</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Profit
-eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">((booked
-revenue - total cost) / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Profit
-eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(booked
-revenue - total cost) / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Profit
-eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(booked
-revenue - total cost) / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Profit
-Margin</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(booked
-revenue - total cost) / booked revenue</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-Profit</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">network
-revenue - publisher revenue</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">(booked
-revenue + reseller revenue) - total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-Profit eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(network
-profit / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-Profit eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">network
-profit / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-Profit eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">network
-profit / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-Profit Margin</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">network
-profit / booked revenue + reseller revenue</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-PPM</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">(total
-network RPM - total publisher RPM)</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__1">Network
-ROI</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__2">network
-ROI</td>
-<td class="entry"
-headers="ID-00000579__table-1661852d-8b7f-4846-ac34-64b8a8d197ee__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
+[Network Video Analytics Report](network-video-analytics-report.md)
 
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| PPM | network profit per 1,000 impressions | Deprecated.<br>Returns error. |
+| Profit | total network revenue - network cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | (profit / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
+[Publisher Video Analytics Report](publisher-video-analytics-report.md)
 
-<a href="network-video-analytics-report.md" class="xref">Network Video
-Analytics Report</a>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network PPM | network RPM - publisher RPM | Deprecated.<br>Returns error. |
+| Network Profit | network revenue - network media cost | (booked revenue + reseller revenue) - total cost |
+| Network Profit eCPA | (booked revenue + reseller revenue) - total cost / conversions | Same |
+| Network Profit eCPC | (booked revenue + reseller revenue) - total cost / clicks | Same |
+| Network Profit eCPM | ((booked revenue + reseller revenue) - total cost imps) * 1,000 | Same |
+| Network Profit Margin | (booked revenue + reseller revenue) - total cost/ booked revenue + reseller revenue | Same |
+| Network ROI | network ROI | Deprecated.<br>Returns error. |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__292" class="entry">Metric</th>
-<th id="ID-00000579__entry__293" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__294" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__293">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__293">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__293">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__293">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Profit</td>
-<td class="entry" headers="ID-00000579__entry__293">total network
-revenue - network cost</td>
-<td class="entry" headers="ID-00000579__entry__294">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__293">((booked revenue -
-total cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__294">(profit / imps) *
-1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__293">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__293">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__293">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Network Profit</td>
-<td class="entry" headers="ID-00000579__entry__293">(booked revenue +
-reseller revenue) - total cost</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Network Profit
-eCPM</td>
-<td class="entry" headers="ID-00000579__entry__293">(network profit /
-imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Network Profit
-eCPC</td>
-<td class="entry" headers="ID-00000579__entry__293">network profit /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">Network Profit
-eCPA</td>
-<td class="entry" headers="ID-00000579__entry__293">network profit /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__292">Network Profit
-Margin</td>
-<td class="entry" headers="ID-00000579__entry__293">network profit /
-booked revenue + reseller revenue</td>
-<td class="entry" headers="ID-00000579__entry__294">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__292">PPM</td>
-<td class="entry" headers="ID-00000579__entry__293">network profit per
-1,000 impressions</td>
-<td class="entry" headers="ID-00000579__entry__294">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
+[Seller Brand Review Report](seller-brand-review-report.md)
 
->
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| PPM | ((network revenue - network media cost) / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Profit | network revenue - network media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | (profit / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<a href="publisher-video-analytics-report.md" class="xref">Publisher
-Video Analytics Report</a>
+[Creative Frequency and Recency Report](creative-frequency-and-recency-report.md)
 
-<table id="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1"
-class="entry">Metric</th>
-<th
-id="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2"
-class="entry">During the Transition Period</th>
-<th
-id="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3"
-class="entry">After the Transition Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Total
-Cost</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">Media
-cost + data costs + partner fees + commissions + serving fees +
-publisher revenue</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Total
-Cost eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">(total
-cost / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Total
-Cost eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">total
-cost / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Total
-Cost eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">total
-cost / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-Profit</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">network
-revenue - network media cost</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">(booked
-revenue + reseller revenue) - total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-Profit eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">((booked
-revenue + reseller revenue) - total cost imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-Profit eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">(booked
-revenue + reseller revenue) - total cost / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-Profit eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">(booked
-revenue + reseller revenue) - total cost / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-Profit Margin</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">(booked
-revenue + reseller revenue) - total cost/ booked revenue + reseller
-revenue</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-PPM</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">network
-RPM - publisher RPM</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__1">Network
-ROI</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__2">network
-ROI</td>
-<td class="entry"
-headers="ID-00000579__table-29aa4988-5176-4f59-80e1-cc5a04127737__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| PPM | ((booked revenue - media cost) / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | (profit / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
+[Network Site Domain Performance Report](network-site-domain-performance-report.md)
 
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - media cost) / imps) * 1,000 | ((booked revenue - total cost) / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
->
+[Site Domain Performance](site-domain-performance.md)
 
-<a href="seller-brand-review-report.md" class="xref">Seller Brand
-Review Report</a>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Profit | booked revenue - media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - media cost) / imps) * 1,000 | (( booked revenue - total cost) / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<table id="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152"
-class="table">
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1"
-class="entry">Metric</th>
-<th
-id="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2"
-class="entry">During the Transition Period</th>
-<th
-id="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3"
-class="entry">After the Transition Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Total
-Cost</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">Media
-cost + data costs + partner fees + commissions + serving fees +
-publisher revenue</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Total
-Cost eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(total
-cost / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Total
-Cost eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">total
-cost / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Total
-Cost eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">total
-cost / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Profit</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">network
-revenue - network media cost</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">booked
-revenue - total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Profit
-eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">((booked
-revenue - total cost) / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">(profit
-/ imps) * 1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Profit
-eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(booked
-revenue - total cost) / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Profit
-eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(booked
-revenue - total cost) / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Profit
-Margin</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(booked
-revenue - total cost) / booked revenue</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Network
-Profit</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(booked
-revenue + reseller revenue) - total cost</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Network
-Profit eCPM</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">(network
-profit / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Network
-Profit eCPC</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">network
-profit / clicks</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Network
-Profit eCPA</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">network
-profit / conversions</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">Network
-Profit Margin</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">network
-profit / booked revenue + reseller revenue</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__1">PPM</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__2">((network
-revenue - network media cost) / imps) * 1,000</td>
-<td class="entry"
-headers="ID-00000579__table-16bcda36-9fbd-42c0-969e-86ecc1512152__entry__3">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
+[Carrier Analytics Report](carrier-analytics-report.md)
 
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Profit | network revenue - network media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | Same |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
+[Device Analytics Report](device-analytics-report.md)
 
-<a href="creative-frequency-and-recency-report.md"
-class="xref">Creative Frequency and Recency Report</a>
+| Metric | During the Transition Period | After the Transition Period |
+|---|---|---|
+| Network Profit | (booked revenue + reseller revenue) - total cost | Same |
+| Network Profit eCPA | network profit / conversions | Same |
+| Network Profit eCPC | network profit / clicks | Same |
+| Network Profit eCPM | (network profit / imps) * 1,000 | Same |
+| Network Profit Margin | network profit / booked revenue + reseller revenue | Same |
+| PPM | ((network revenue - network media cost) / imps) * 1,000 | Deprecated.<br>Returns error. |
+| Profit | network revenue - network media cost | booked revenue - total cost |
+| Profit eCPA | (booked revenue - total cost) / conversions | Same |
+| Profit eCPC | (booked revenue - total cost) / clicks | Same |
+| Profit eCPM | ((booked revenue - total cost) / imps) * 1,000 | (profit / imps) * 1,000 |
+| Profit Margin | (booked revenue - total cost) / booked revenue | Same |
+| Total Cost | Media cost + data costs + partner fees + commissions + serving fees + publisher revenue | Same |
+| Total Cost eCPA | total cost / conversions | Same |
+| Total Cost eCPC | total cost / clicks | Same |
+| Total Cost eCPM | (total cost / imps) * 1,000 | Same |
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__424" class="entry">Metric</th>
-<th id="ID-00000579__entry__425" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__426" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__425">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__425">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__425">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__425">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Profit</td>
-<td class="entry" headers="ID-00000579__entry__425">booked revenue -
-media cost</td>
-<td class="entry" headers="ID-00000579__entry__426">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__425">((booked revenue -
-total cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__426">(profit / imps) *
-1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__425">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__425">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__425">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Network Profit</td>
-<td class="entry" headers="ID-00000579__entry__425">(booked revenue +
-reseller revenue) - total cost</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Network Profit
-eCPM</td>
-<td class="entry" headers="ID-00000579__entry__425">(network profit /
-imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Network Profit
-eCPC</td>
-<td class="entry" headers="ID-00000579__entry__425">network profit /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">Network Profit
-eCPA</td>
-<td class="entry" headers="ID-00000579__entry__425">network profit /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__424">Network Profit
-Margin</td>
-<td class="entry" headers="ID-00000579__entry__425">network profit /
-booked revenue + reseller revenue</td>
-<td class="entry" headers="ID-00000579__entry__426">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__424">PPM</td>
-<td class="entry" headers="ID-00000579__entry__425">((booked revenue -
-media cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__426">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
-
-<a href="network-site-domain-performance-report.md"
-class="xref">Network Site Domain Performance Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__472" class="entry">Metric</th>
-<th id="ID-00000579__entry__473" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__474" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__472">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__473">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__472">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__473">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__472">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__473">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__472">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__473">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__472">Profit</td>
-<td class="entry" headers="ID-00000579__entry__473">booked revenue -
-media cost</td>
-<td class="entry" headers="ID-00000579__entry__474">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__472">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__473">((booked revenue -
-media cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__474">((booked revenue -
-total cost) / imps) * 1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__472">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__473">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__472">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__473">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__472">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__473">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__474">Same</td>
-</tr>
-</tbody>
-</table>
-
-<a href="site-domain-performance.md" class="xref">Site Domain
-Performance</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__502" class="entry">Metric</th>
-<th id="ID-00000579__entry__503" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__504" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__502">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__503">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__502">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__503">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__502">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__503">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__502">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__503">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__502">Profit</td>
-<td class="entry" headers="ID-00000579__entry__503">booked revenue -
-media cost</td>
-<td class="entry" headers="ID-00000579__entry__504">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__502">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__503">((booked revenue -
-media cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__504">(( booked revenue -
-total cost) / imps) * 1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__502">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__503">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__502">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__503">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__502">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__503">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__504">Same</td>
-</tr>
-</tbody>
-</table>
-
-<a href="carrier-analytics-report.md" class="xref">Carrier Analytics
-Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__532" class="entry">Metric</th>
-<th id="ID-00000579__entry__533" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__534" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__532">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__533">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__532">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__533">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__532">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__533">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__532">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__533">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__532">Profit</td>
-<td class="entry" headers="ID-00000579__entry__533">network revenue -
-network media cost</td>
-<td class="entry" headers="ID-00000579__entry__534">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__532">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__533">((booked revenue -
-total cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__532">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__533">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__532">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__533">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__532">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__533">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__534">Same</td>
-</tr>
-</tbody>
-</table>
-
-<a href="device-analytics-report.md" class="xref">Device Analytics
-Report</a>
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000579__entry__562" class="entry">Metric</th>
-<th id="ID-00000579__entry__563" class="entry">During the Transition
-Period</th>
-<th id="ID-00000579__entry__564" class="entry">After the Transition
-Period</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Total Cost</td>
-<td class="entry" headers="ID-00000579__entry__563">Media cost + data
-costs + partner fees + commissions + serving fees + publisher
-revenue</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Total Cost eCPM</td>
-<td class="entry" headers="ID-00000579__entry__563">(total cost / imps)
-* 1,000</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Total Cost eCPC</td>
-<td class="entry" headers="ID-00000579__entry__563">total cost /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Total Cost eCPA</td>
-<td class="entry" headers="ID-00000579__entry__563">total cost /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Profit</td>
-<td class="entry" headers="ID-00000579__entry__563">network revenue -
-network media cost</td>
-<td class="entry" headers="ID-00000579__entry__564">booked revenue -
-total cost</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Profit eCPM</td>
-<td class="entry" headers="ID-00000579__entry__563">((booked revenue -
-total cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__564">(profit / imps) *
-1,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Profit eCPC</td>
-<td class="entry" headers="ID-00000579__entry__563">(booked revenue -
-total cost) / clicks</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Profit eCPA</td>
-<td class="entry" headers="ID-00000579__entry__563">(booked revenue -
-total cost) / conversions</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Profit Margin</td>
-<td class="entry" headers="ID-00000579__entry__563">(booked revenue -
-total cost) / booked revenue</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Network Profit</td>
-<td class="entry" headers="ID-00000579__entry__563">(booked revenue +
-reseller revenue) - total cost</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Network Profit
-eCPM</td>
-<td class="entry" headers="ID-00000579__entry__563">(network profit /
-imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Network Profit
-eCPC</td>
-<td class="entry" headers="ID-00000579__entry__563">network profit /
-clicks</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">Network Profit
-eCPA</td>
-<td class="entry" headers="ID-00000579__entry__563">network profit /
-conversions</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-00000579__entry__562">Network Profit
-Margin</td>
-<td class="entry" headers="ID-00000579__entry__563">network profit /
-booked revenue + reseller revenue</td>
-<td class="entry" headers="ID-00000579__entry__564">Same</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-00000579__entry__562">PPM</td>
-<td class="entry" headers="ID-00000579__entry__563">((network revenue -
-network media cost) / imps) * 1,000</td>
-<td class="entry" headers="ID-00000579__entry__564">Deprecated.<br />
-Returns error.</td>
-</tr>
-</tbody>
-</table>
-
->
-
-Standard Line Items
+## Standard line items
 
 If you still use standard line items, you must use
 <a href="broker-fees.md" class="xref">Broker Fees</a> to administer
@@ -1914,14 +356,7 @@ apply to the standard line items**. You must create partner fees for
 augmented line items even if the parent insertion order has a broker fee
 applied.
 
+## Log-Level data
 
-
-Log-Level Data
-
-Partner fees are reported in the field `partner_fees` in the <a
-href="log-level-data/standard-feed.md"
-class="xref" target="_blank">Standard Feed</a>.
-
-
-
+Partner fees are reported in the field `partner_fees` in the [Standard Feed](../log-level-data/standard-feed.md).
 

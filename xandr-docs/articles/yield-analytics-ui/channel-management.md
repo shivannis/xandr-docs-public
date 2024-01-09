@@ -43,7 +43,7 @@ Channel performance uses data from:
 - Channel Advertiser - The advertisers yield analytics receives through your SSP integrations (if applicable).
 
 > [!TIP]
-> We do not always receive the advertiser information. (Just adding this as a caveat).
+> We do not always receive the advertiser information. (Just adding this as a reminder).
 
 Channel - The SSP that the channel is associated with.
 

@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Member multi click service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Member Multi Click service is an admin-only service that allows updates to the `common.member_multi_click` table. This table configures members to track multiple clicks for specific cases. Please be careful when adding or updating objects when using this service
 
 ## REST API

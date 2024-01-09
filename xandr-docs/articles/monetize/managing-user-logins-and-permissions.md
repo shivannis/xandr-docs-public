@@ -1,14 +1,11 @@
 ---
-Title : Managing User Logins and Permissions
-Description : The pages mentioned in this section describe how to create and manage
+title: Microsoft Monetize - Managing User Logins and Permissions
+description: Learn managing users, setting up passwords and permissions in this page.
 ms.date: 10/28/2023
-your users, set up their passwords and permissions.
 ---
 
 
-# Managing User Logins and Permissions
-
-
+# Microsoft Monetize - Managing user logins and permissions
 
 The pages mentioned in this section describe how to create and manage
 your users, set up their passwords and permissions.
@@ -21,74 +18,39 @@ using the same sign-on methods to access other Microsoft products.
 Additionally, the integration to the Microsoft Identity Platform enables
 new and more secure methods of authentication, powered by Microsoft.
 
-For more details, visit
-<a href="microsoft-identity-platform-login.md" class="xref"
-title="This document outlines an overview of authenticating users for Xandr Advertising Products using Microsoft Identity Platform.">Microsoft
-Identity Platform Login</a>.
+For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
+## How tos
 
-
-## How Tos
-
-
-
-- <a href="manage-your-username-and-password.md" class="xref">Manage
-  Your Username and Password</a>
+- [Manage Your Username and Password](manage-your-username-and-password.md)
 
   Reset or update your password, retrieve your username, or reset your
   email address.
 
-- <a href="create-a-user.md" class="xref">Create a User</a>
+- [Create a User](create-a-user.md)
 
   Learn about the different types of user roles and how to create the
   one you need.
 
+## Access control
 
-
-
-
-
-
-## Access Control
-
-
-
-- <a href="getting-started-with-roles.md" class="xref">Getting Started
-  with Roles</a>
+- [Getting Started with Roles](getting-started-with-roles.md)
 
   Read an introduction to using Roles for user access control.
 
-
-
-
-
-
-
 ## References
 
-
-
-- <a href="network-users-screen.md" class="xref">Network Users
-  Screen</a>
+- [Network Users Screen](network-users-screen.md)
 
   View basic information about your network-level users, access
   additional details about specific users, and edit or
   activate/deactivate specific network-level users.
 
-- <a href="reporting-guide.md" class="xref">Reporting Guide</a>
+- [Reporting Guide](reporting-guide.md)
 
   Learn about reports that network-level users can run across multiple
   advertisers and/or publishers.
 
-- <a href="advertiser-and-publisher-user-reporting.md"
-  class="xref">Advertiser and Publisher User Reporting</a>
+- [Advertiser and Publisher User Reporting](advertiser-and-publisher-user-reporting.md)
 
   Learn about reports that advertiser and publisher users can run.
-
-
-
-
-
-
-
-

@@ -1,13 +1,15 @@
 ---
 Title : Seller Member Group Service
-Description : A seller member group consists of one or more members that sell
+Description: A seller member group consists of one or more members that sell inventory.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-inventory. Buyers can target seller member groups in addition to
 ---
 
 
 # Seller Member Group Service
+
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 
 
