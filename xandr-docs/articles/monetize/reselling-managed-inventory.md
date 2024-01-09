@@ -45,4 +45,4 @@ inventory, you must take the following actions:
 
 ## Related topic
 
- [Partner Center Guide](partner-center-guide.md)
+  [Partner Center Guide](partner-center-guide.md)

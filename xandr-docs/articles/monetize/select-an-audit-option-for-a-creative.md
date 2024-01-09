@@ -16,7 +16,7 @@ specifically allows it.
 Select one of the following audit options from the
 **Creative Quality** section:
 
-- Platform Audit: Select this option
+- **Platform Audit**: Select this option
   to submit the creative for auditing by the
   Xandr Audit team and perform the following:
   - Select a priority.

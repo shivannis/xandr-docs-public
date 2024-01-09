@@ -1,6 +1,6 @@
 ---
 title: Role Capabilities
-Description: The Role capabilities define the accesses and privileges to different functions for a custom role. This page lists different Role Types and gives their description.
+description: The Role capabilities define the accesses and privileges to different functions for a custom role. This page lists different Role Types and gives their description.
 ms.date: 10/28/2023
 ---
 

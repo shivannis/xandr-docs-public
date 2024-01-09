@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Sample bid requests
 
-The Bid Request Sampler provides
+The **Bid Request Sampler** provides
 sample bid request data under certain time frames and conditions. You
 can download results as a text file.
 

@@ -53,7 +53,7 @@ of the following:
 
 ## Viewability reporting
 
-## Reports with viewability metrics
+### Reports with viewability metrics
 
 Viewability metrics are included in several reports in the reporting
 system:
@@ -62,7 +62,7 @@ system:
 |---|---|---|
 | - [Network Analytics Report](network-analytics-report.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) | - [Advertiser Analytics Report](advertiser-analytics-report.md)<br> - [Site Domain Performance](site-domain-performance.md) | - [Publisher Analytics](publisher-analytics.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) |
 
-## How to add viewability metrics
+### How to add viewability metrics
 
 Go to the appropriate tab and select
 **Reporting** from the navigation menu.
@@ -92,7 +92,7 @@ For more information, see [Log-Level Data Feeds](../log-level-data/log-level-dat
 
 ## Best practices
 
-### Viewable Imps and Viewability rate
+### Viewable imps and viewability rate
 
 If you select **Viewable Imps** and
 **Viewability Rate**, it is recommended

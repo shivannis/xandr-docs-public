@@ -1,7 +1,6 @@
 ---
 title: Microsoft Monetize - Run Rich Media Creatives on Mobile Inventory
-description: Learn how to set rich media creatives to serve
-on mobile devices in this page. 
+description: Learn how to set rich media creatives to serve on mobile devices in this page. 
 ms.date: 10/28/2023
 ---
 

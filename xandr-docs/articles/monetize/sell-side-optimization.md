@@ -1,6 +1,6 @@
 ---
 title: Sell-Side Optimization
-Description: learn how optimization gives sellers several controls that can be used to minimize risk and maximize return.   
+description: learn how optimization gives sellers several controls that can be used to minimize risk and maximize return.   
 ms.date: 10/28/2023
 ---
 
@@ -19,7 +19,7 @@ leveraged to minimize risk and maximize return.
 Publishers consider buyer auction bids to be either **Uncertain
 Revenue** or **Certain Revenue**.
 
-- **Uncertain Revenue**
+- **Uncertain revenue**
 
   When a campaign begins serving impressions on inventory in the RTB
   marketplace, it is unclear how much revenue nearly all non-managed CPC
@@ -30,7 +30,7 @@ Revenue** or **Certain Revenue**.
   significant number of success events have occurred to give a
   statistically valid sample (by determining the net revenue from each).
 
-- **Certain Revenue**
+- **Certain revenue**
 
   While evaluating the value of uncertain bids, sellers can also choose
   to hold auctions that maximize bids from sources designated as certain

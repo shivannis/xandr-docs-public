@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Running Cost per Install Offers
-Description: This page covers procedures for integrating with an external app install tracker, Setting up the right creative click URLs and Reporting on your installs.   
+description: This page covers procedures for integrating with an external app install tracker, Setting up the right creative click URLs and Reporting on your installs.   
 ms.date: 10/28/2023
 ---
 

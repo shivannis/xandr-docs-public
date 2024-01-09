@@ -1,7 +1,6 @@
 ---
 title: Rich Media and High Impact Formats
-description: Learn about some basic Rich Media formats that you can transact on Xandr and also offers information on app
-providers that specialize in Rich Media and High Impact formats.
+description: Learn about some basic Rich Media formats that you can transact on Xandr and also offers information on app providers that specialize in Rich Media and High Impact formats.
 ms.date: 10/28/2023
 ---
 
@@ -57,4 +56,4 @@ external DSPs can listen to `promo_sizes` before expecting their demand.
 
 ## Related topic
 
-- [Using Promo Sizes](using-promo-sizes.md)
+[Using Promo Sizes](using-promo-sizes.md)
