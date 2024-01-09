@@ -24,7 +24,7 @@ The JSON-formatted file can contain one of more arrays of the following fields. 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `type` | enum | The ad server that provided the file. Possible values: <br> - `"atlas"` <br> - `"mediamind"` <br> -`"doubleclick"` <br> - `"doubleclick_txt"` <br> - `"appnexus_excel"`.<br><br>**Required On**: `POST` |
+| `type` | enum | The ad server that provided the file. Possible values: <br> - `"atlas"` <br> - `"mediamind"` <br> - `"doubleclick"` <br> - `"doubleclick_txt"` <br> - `"appnexus_excel"`<br><br>**Required On**: `POST` |
 | `file` | string | The base64-encoded Atlas, Mediamind, or DoubleClick file.<br>**Required On**: `POST` |
 
 The response will include the name, width, height, and content of each tag in the file.
@@ -33,7 +33,7 @@ The response will include the name, width, height, and content of each tag in th
 
 ### Parse a file of tags from `DoubleClick`
 
-The data in this example is for demonstration only. It does not represent an actual file of tags from DoubleClick.
+The data in this example is for demonstration only. It does not represent an actual file of tags from `DoubleClick`.
 
 ```
 $ cat tags

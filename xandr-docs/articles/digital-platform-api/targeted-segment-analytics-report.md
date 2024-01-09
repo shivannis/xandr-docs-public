@@ -16,7 +16,8 @@ The **Targeted Segment Analytics** report is an admin-only report designed to gi
 - Indexing the performance of targeted segments during the campaign to identify which segments are over or underperforming.
 - Understanding whether segments purchased from third parties are producing the desired performance.
 
-This feature is intended to address campaign level performance; it does not include information such as a segment's aggregate performance at the [advertiser](./advertiser-service.md), [insertion order](./insertion-order-service.md), or [line item](./line-item-service.md) levels.
+> [!NOTE]
+> This feature is intended to address campaign level performance; it does not include information such as a segment's aggregate performance at the [advertiser](./advertiser-service.md), [insertion order](./insertion-order-service.md), or [line item](./line-item-service.md) levels.
 
 ## Time frame
 
@@ -38,13 +39,13 @@ The `time_intervals` field in the request can be set to one of the following:
 | `campaign_code` | string | The (optional) custom code associated with the campaign that purchased the impression.<br><br>**Filter**: Yes |
 | `segment_id` | int | The segment ID of the user segment present for this impression.<br><br>**Filter**: Yes |
 | `segment_name` | string | The name of the user segment present for this impression.<br><br>**Filter**: Yes |
-| `segment` | string | The concatenated name and ID of the user segment present for this impression, e.g., `"Valuable Segment (314)"`<br>Filter: Yes |
+| `segment` | string | The concatenated name and ID of the user segment present for this impression, e.g., `"Valuable Segment (314)"`<br>**Filter**: Yes |
 | `segment_code` | string | The (optional) custom code associated with the user segment present for this impression.<br><br>**Filter**: Yes |
 
 ## Metrics
 
 > [!NOTE]
-> The definition of each metric listed below should read: "that took place during the selected [Time Frame](#time-frame).
+> The definition of each metric listed below should read: "that took place during the selected [Time Frame](#time-frame)".
 
 | Column | Type | Formula | Description |
 |:---|:---|:---|:---|

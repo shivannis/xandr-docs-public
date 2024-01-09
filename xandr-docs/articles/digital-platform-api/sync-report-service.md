@@ -24,5 +24,5 @@ The following reports use this service. See the pages below for example usage.
 | Column | Type | Example | Description |
 |:---|:---|:---|:---|
 | `offset` | int | `24` | The starting position of the pointer into the array of results.<br><br>**Default**: `0`<br>**Filter by**: No<br>**Sort by**: No |
-| `count` | int | `5` | How many results to return, starting at the value of offset.<br><br>**Default**: `20`<br>**Filter by**: No<br>**Sort by**: No |
+| `count` | int | `5` | How many results to return, starting at the value of `offset`.<br><br>**Default**: `20`<br>**Filter by**: No<br>**Sort by**: No |
 | `orders` | array of objects | `[{"direction": "DESC", "order_by": "avg_imps"}]` | You may sort the results, e.g. to see the highest-volume sellers, sort in descending order by `avg_imps`.<br><br>**Default**: `20`<br>**Filter by**: No<br>**Sort by**: No |

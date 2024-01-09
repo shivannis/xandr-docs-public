@@ -130,7 +130,7 @@ Unlike other Xandr API services, the JSON for the `budget-splitters` array does 
 | `expected_value` | float | The expected value of the impression for this split. An expected value must be included for each split when the line item's booked revenue type is cost plus or dCPM and optimization is not enabled. The expected value serves as the maximum CPM that the split can bid.<br>**Example**: `"expected_value":10.50`<br><br>**Note**: The `expected_value` field is not used by GDALI. |
 | `creatives` | array | Optional. The IDs of the creatives to be served on this split.<br>**Example**:<br>`"creatives":[{"creative_id":123},{"creative_id":456}]` |
 | `creative_macros` | array of strings | Optional. Any creative macros that are added to the served creative.<br>For more information, see [Creative Macro Check Service](./creative-macro-check-service.md).<br><br>**Note**: The `creative_macros` field is not used by GDALI. |
-| `user_test_group_percent` | int | Optional. Targets distinct groups of users per split for A/B testing.<br><br>**Note**:<br>When the Line Item Remainder split is set to `"active"` or has a budget allocation greater than 0%, the line item remainder will always include the remaining pool of users not targeted by the other splits. Additionally, the Line Item Remainder split will always include cookieless users.<br><br>If you do not want to serve cookieless users:<br> - If you're using allocations, on the default split, set allocation_percent to `"0"`.<br> - If you're not using allocations, on the default split, set active to `"false"`. |
+| `user_test_group_percent` | int | **Optional**. Targets distinct groups of users per split for A/B testing.<br><br>**Note**:<br>When the Line Item Remainder split is set to `"active"` or has a budget allocation greater than 0%, the line item remainder will always include the remaining pool of users not targeted by the other splits. Additionally, the Line Item Remainder split will always include cookieless users.<br><br>If you do not want to serve cookieless users:<br> - If you're using allocations, on the default split, set `allocation_percent` to `"0"`.<br> - If you're not using allocations, on the default split, set `active` to `"false"`. |
 
 ### Conditions
 
@@ -152,19 +152,17 @@ A condition is specified by an array containing a field, an operator, and a valu
 
 Evaluate impressions based on specific custom categories present.
 
-| Field | `content_category` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Custom category ID. Use the [Content Category Service](content-category-service.md) to retrieve custom category IDs.<br><br>**Warning**: Custom categories should only be targeted to managed inventory. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `content_category` | `=`, `in`, `not_in` | Custom category ID. Use the [Content Category Service](content-category-service.md) to retrieve custom category IDs. <br><br>**Warning**: Custom categories should only be targeted to managed inventory. |
 
 ### Key-value
 
 Evaluate impressions based on specific key-values present.
 
-| Field | `key_group` |
-|:---|:---|
-| Operator | and, or |
-| Value | A nested conditions array that specifies key groups. Each key group array includes key ID(s), action(s) (`"include"` or `"exclude"`), and value(s):<br><br>**Warning**: Key-values should only be targeted to managed inventory.<br> - `key_id` - the ID of the key. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve key IDs.<br> - `action` - can be `"include"` or `"exclude"`.<br> - `value_equals` is an array of value IDs that must be matched in the auction for the split to be eligible to serve. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve value IDs. When one value is passed, that key-value combination must be present on the request for the split to be eligible to serve. When multiple values are defined in the array, one of the key-value combinations must be present.<br> - `value_less` is the high end of the range of permitted values, exclusive.<br> - `value_greater` is the low end of the range of permitted values, exclusive.<br><br>Key-values may be passed on the impression request. See Xandr’s [Seller Tag (AST)](../seller-tag/seller-tag.md) for more information. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `key_group` | `and`, `or` | A nested conditions array that specifies key groups. Each key group array includes key ID(s), action(s) (`"include"` or `"exclude"`), and value(s):<br><br>**Warning**: Key-values should only be targeted to managed inventory. <br><br>- `key_id` - the ID of the key. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve key IDs. <br>- `action` - can be `"include"` or `"exclude"`. <br> - `value_equals` is an array of value IDs that must be matched in the auction for the split to be eligible to serve. Use the [Targeting Key Service](./targeting-key-service.md) to retrieve value IDs. When one value is passed, that key-value combination must be present on the request for the split to be eligible to serve. When multiple values are defined in the array, one of the key-value combinations must be present. <br>- `value_less` is the high end of the range of permitted values, exclusive. <br> - `value_greater` is the low end of the range of permitted values, exclusive.Key-values may be passed on the impression request. See Xandr’s [Seller Tag (AST)](../seller-tag/seller-tag.md) for more information. |
 
 The following Key-Value example (see JSON below) evaluates to
 
@@ -201,64 +199,57 @@ The following Key-Value example (see JSON below) evaluates to
 
 Evaluate impressions based on the user's country.
 
-| Field | `country` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Country ID or code, such as `233` or `"US"`.<br>Use the [Country Service](./country-service.md) to retrieve these IDs or codes. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `country` |  `=`, `in`, `not_in` | Country ID or code, such as `233` or `"US"`.Use the [Country Service](./country-service.md) to retrieve these IDs or codes. |
 
 ### Region
 
 Evaluate impressions based on the user's geographic region.
 
-| Field | `region` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Region ID or country/region code combination, such as `"US:NY"`.<br>Use the [Region Service](./region-service.md) to retrieve these IDs and codes. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `region` |  `=`, `in`, `not_in` | Region ID or country/region code combination, such as `"US:NY"`.<br>Use the [Region Service](./region-service.md) to retrieve these IDs and codes. |
 
 ### City
 
 Evaluate impressions based on the user's city.
 
-| Field | `city` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | City ID or country/region/city code combination, such as `"US:NY:New York"`.<br>Use the [City Service](./city-service.md) to retrieve these IDs and codes. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `city` |  `=`, `in`, `not_in` |  City ID or country/region/city code combination, such as `"US:NY:New York"`.<br>Use the [City Service](./city-service.md) to retrieve these IDs and codes. |
 
 ### DMA
 
 Evaluate impressions based on the user's DMA (designated market area).
 
-| Field | `dma` |
-|:---|:---|
-| `Operator` | `=,` `in`, `not_in` |
-| `Value` | DMA ID, such as `602` (for Chicago metro area).<br>Use the [City Service](./city-service.md) to retrieve DMA IDs. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `dma` |  `=`, `in`, `not_in` |  DMA ID, such as `602` (for Chicago metro area).<br>Use the [City Service](./city-service.md) to retrieve DMA IDs. |
 
 ### Postal code
 
 Evaluate impressions based on the user's postal code. Postal code is available only for some mobile impressions and impressions from external supply partners.
 
-| Field | `postal_code` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Postal code ID (an integer) or country/postal code combination (a string such as `"CA:J0K 1B0"` or `"US:10010"`). Includes US zip codes.<br><br>Use the Postal Code Service (documented in the [Profile Service](./profile-service.md)) to retrieve postal code IDs. |
-    
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `postal_code` |  `=`, `in`, `not_in` |  Postal code ID (an integer) or country/postal code combination (a string such as `"CA:J0K 1B0"` or `"US:10010"`). Includes US zip codes.<br><br>Use the Postal Code Service (documented in the [Profile Service](./profile-service.md)) to retrieve postal code IDs. |
+
 ### Postal code list
 
 Evaluate impressions based on the user's post codes in the postal code list.
 
-| Field | `postal_code_list` |
-|:---|:---|
-| `Operator` | `in`, `not_in` |
-| `Value` | Postal code list ID (an integer).<br>Use the Postal Code List Service (documented in [Postal Code List Service](./postal-code-list-service.md)) to retrieve postal code list IDs. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `postal_code_list` |  `in`, `not_in` |  Postal code list ID (an integer).<br><br>Use the Postal Code List Service (documented in [Postal Code List Service](./postal-code-list-service.md)) to retrieve postal code list IDs. |
 
 ### Size
 
 Evaluate impressions based on placement size. Please note that in case `promo_sizes` are passed in the ad call, the evaluation will be performed using the primary size only.
 
-| Field | `size` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | String representing placement dimensions, formatted as `"WIDTHxHEIGHT"`. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `size` |  `=`, `in`, `not_in` |  String representing placement dimensions, formatted as `"WIDTHxHEIGHT"`. |
 
 ### Inventory URL ID
 
@@ -267,10 +258,9 @@ Evaluate impressions based on specific inventory url IDs.
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `inventory_url_id` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Inventory URL ID.<br>Use [Validate Inventory Item Service](./validate-inventory-item-service.md) to retrieve these IDs. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_url_id` |  `=`, `in`, `not_in` |  Inventory URL ID.<br>Use [Validate Inventory Item Service](./validate-inventory-item-service.md) to retrieve these IDs. |
 
 ### Domain
 
@@ -280,6 +270,10 @@ Evaluate impressions based on domain.
 > - Not supported by GDALI.
 > - This feature is not supported in the Microsoft Invest. If you will also be using the UI to manage your splits, use the Inventory URL ID feature (within this service) instead.
 
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `domain` | `=`, `in`, `not_in` | String representing a top-level domain name, such as `"food.com"` or `"books"`. |
+
 ### Mobile app
 
 Evaluate impressions based on specific mobile apps.
@@ -287,28 +281,25 @@ Evaluate impressions based on specific mobile apps.
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `mobile_app_bundle` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Mobile app ID or names.<br>Use [Mobile App Service](./mobile-app-service.md) to retrieve these IDs or names. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `mobile_app_bundle` | `=`, `in`, `not_in` | Mobile app ID or names.<br><br>Use [Mobile App Service](./mobile-app-service.md) to retrieve these IDs or names. |
 
 ### Placement
 
 Evaluate impressions based on specific placements.
 
-| Field | `placement` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Placement ID.<br>Placement ID is listed as `tag_id` in log-level data. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `placement` | `=`, `in`, `not_in` | Placement ID.<br><br>Placement ID is listed as `tag_id` in log-level data. |
 
 ### Publisher
 
 Evaluate impressions based on specific publishers.
 
-| Field | `publisher` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Publisher ID.<br><br>**Tip**:<br>Publisher ID is listed as `publisher_id` in log-level data. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `publisher` | `=`, `in`, `not_in` | Publisher ID.<br><br>**Tip**:<br>Publisher ID is listed as `publisher_id` in log-level data. |
 
 ### Seller member
 
@@ -317,10 +308,9 @@ Evaluate impressions based on specific seller members.
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `seller_member_id` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Member ID of the seller. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `seller_member_id` | `=`, `in`, `not_in` | Member ID of the seller. |
 
 ### Deal ID
 
@@ -329,10 +319,9 @@ Target deal inventory.
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `deal_id` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Deal ID. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `deal_id` | `=`, `in`, `not_in` | Deal ID. |
 
 ### Deal list ID
 
@@ -341,73 +330,65 @@ Target deal list inventory.
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `deal_list` |
-|:---|:---|
-| `Operator` | `in`, `not_in` |
-| `Value` | Deal List ID. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `deal_list` | `in`, `not_in` | Deal List ID. |
 
 ### Operating system family
 
 Evaluate impressions based on the user's operating system.
 
-| Field | `os_family` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Operating System Family ID or name, such as `2` or `"Android"`.<br>Use the [Operating System Family Service](./operating-system-family-service.md) to retrieve these IDs and names. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `os_family` | `=`, `in`, `not_in` | Operating System Family ID or name, such as `2` or `"Android"`.<br><br>Use the [Operating System Family Service](./operating-system-family-service.md) to retrieve these IDs and names. |
 
 ### Operating system version
 
 Evaluate impressions based on the specific **version** of the user's operating system.
 
-| Field | `os_extended` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Operating System Extended ID, such as `81` for `"10.8 Mountain Lion"`.<br>Use the [Operating System Extended Service](./operating-system-extended-service.md) to retrieve these IDs.<br><br>**Note**:<br>Operating system ID is listed as `operating_system` in log-level data. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `os_extended` | `=`, `in`, `not_in` | Operating System Extended ID, such as `81` for `"10.8 Mountain Lion"`.<br>Use the [Operating System Extended Service](./operating-system-extended-service.md) to retrieve these IDs.<br><br>**Note**:<br>Operating system ID is listed as `operating_system` in log-level data. |
 
 ### Browser
 
 Evaluate impressions based on the user's browser.
 
-| Field | `browser` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Browser ID or name, such as `8` or `"Chrome (all versions)"`.<br>Use the [Browser Service](./browser-service.md) to retrieve these IDs and names. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `browser` | `=`, `in`, `not_in` | Browser ID or name, such as `8` or `"Chrome (all versions)"`.<br><br>Use the [Browser Service](./browser-service.md) to retrieve these IDs and names. |
 
 ### Browser language
 
 Evaluate impressions based on the browser language.
 
-| Field | `language` |
-|:---|:---|
-| `Operator` | `=,` `in`, not_in |
-| `Value` | Language ID.<br>Use the [Language Service](./language-service.md) to retrieve these IDs. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `language` | `=`, `in`, `not_in` | Language ID.<br><br>Use the [Language Service](./language-service.md) to retrieve these IDs. |
 
 ### Device type
 
 Evaluate impressions based on specific types of physical devices.
 
-| Field | `device_type` |
-|:---|:---|
-| `Operator` | =, in, not_in |
-| `Value` | Device type name. Possible values:<br> - `"pc & other devices"` - Use this value to target desktops and laptops.<br> - `"phone"` - Use this value to target mobile phones.<br> - `"tablet"` - Use this value to target mobile tablets. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `device_type` | `=`, `in`, `not_in` | Device type name. Possible values:<br> - `"pc & other devices"` - Use this value to target desktops and laptops.<br> - `"phone"` - Use this value to target mobile phones.<br> - `"tablet"` - Use this value to target mobile tablets. |
 
 ### Device model
 
 Evaluate impressions based on specific models of physical devices.
 
-| Field | `device_model` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Device model ID.<br>Use the [Device Model Service](./device-model-service.md) to retrieve these IDs.<br>Device model ID is listed as `device_id` in log-level data. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `device_model` | `=`, `in`, `not_in` | Device model ID.<br>Use the [Device Model Service](./device-model-service.md) to retrieve these IDs.<br><br>Device model ID is listed as `device_id` in log-level data. |
 
 ### Carrier
 
 Evaluate impressions based on specific mobile carriers.
 
-| Field | `carrier` |
-|:---|:---|
-| `Operator` | `=`, `in`, `not_in` |
-| `Value` | Mobile carrier ID or name, such as `14` or "`Verizon"`.<br>Use the [Carrier Service](./carrier-service.md) to retrieve these IDs and names. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `carrier` | `=`, `in`, `not_in` | Mobile carrier ID or name, such as `14` or "`Verizon"`.<br><br>Use the [Carrier Service](./carrier-service.md) to retrieve these IDs and names. |
 
 ### Predicted IAB viewability rate
 
@@ -416,10 +397,9 @@ Previously known as "Estimated IAB Viewability Rate". Evaluate web display impre
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `predicted_iab_view_rate` |
-|:---|:---|
-| `Operator` | `<`, `<=`, `=`, `>`, `>=` |
-| `Value` | Decimal number between `0` and `1`, representing a percentage. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `predicted_iab_view_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. |
 
 ### Predicted IAB video viewability rate
 
@@ -428,10 +408,9 @@ Evaluate web video impressions by how likely they are to be measured as viewable
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `predicted_iab_video_view_rate` |
-|:---|:---|
-| `Operator` | `<`, `<=`, `=`, `>`, `>=` |
-| `Value` | Decimal number between `0` and `1`, representing a percentage. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `predicted_iab_video_view_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. |
 
 ### Predicted video completion rate
 
@@ -440,26 +419,23 @@ Evaluate web video impressions by how likely they are to be completed, as determ
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `estimated_video_completion_rate` |
-|:---|:---|
-| `Operator` | `<`, `<=`, `=`, `>`, `>=` |
-| `Value` | Decimal number between `0` and `1`, representing a percentage. `0` represents non-video inventory. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `estimated_video_completion_rate` | `<`, `<=`, `=`, `>`, `>=` | Decimal number between `0` and `1`, representing a percentage. `0` represents non-video inventory. |
 
 ### Creative
 
 The creatives to serve on this split.
 
-| Field | `creative` |
-|:---|:---|
-| `Operator` | in |
-| `Value` | List of creative IDs.<br>Use the [Creative Service](./creative-service.md) to retrieve these IDs. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `creative` | `in` | List of creative IDs.<br><br>Use the [Creative Service](./creative-service.md) to retrieve these IDs. |
 
 ### Segment group
 
-| Field | `segment_group`<br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. |
-|:---|:---|
-| `Operator` | `and`, `or` |
-| `Value` | A nested conditions array that specifies segment groups. Each `segment_group` array includes `segment_ID`, `age`, `value`, and `action` (`"include"` or `"exclude"`).<br> - `action` may be `"include"` or `"exclude"`.<br> - `start_minutes` is the lower bound of minutes since the user has been added to this segment, inclusive. `"start_minutes": 5` includes users who have been added to the segment from the five-minute mark, including 5:00.<br> - `expire_minutes` is the upper bound of minutes since the user has been added to this segment, inclusive. `"expire_minutes": 10` includes users who have been added to the segment until the ten-minute mark, including 10:00.<br> - `value_less` is the low end of the range of permitted values, exclusive. `"value_less" : 5` includes only values greater than, but not including, 5.<br> - `value_greater` is the high end of the range of permitted values, exclusive. `"value_greater" : 10` includes only values up to, but not including, `10`.<br> - `value_equals` is the exact match to the permitted value. `“value_equals” : 5` includes only values equal to `5`.<br>Unlike the [Profile Service](./profile-service.md), the Splits service allows you to target segment values of zero (0). See [example](#example-for-the-value_equals-field) for `value_equals` below. <br>Segment values may be passed in a number of ways, for example, through the Batch Segment Service or a first-party or third-party segment query string. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `segment_group`<br><br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. | `and`, `or` | A nested conditions array that specifies segment groups. Each `segment_group` array includes `segment_ID`, `age`, `value`, and `action` (`"include"` or `"exclude"`).<br> - `action` may be `"include"` or `"exclude"`.<br> - `start_minutes` is the lower bound of minutes since the user has been added to this segment, inclusive. `"start_minutes": 5` includes users who have been added to the segment from the five-minute mark, including 5:00.<br> - `expire_minutes` is the upper bound of minutes since the user has been added to this segment, inclusive. `"expire_minutes": 10` includes users who have been added to the segment until the ten-minute mark, including 10:00.<br> - `value_less` is the low end of the range of permitted values, exclusive. `"value_less" : 5` includes only values greater than, but not including, 5.<br> - `value_greater` is the high end of the range of permitted values, exclusive. `"value_greater" : 10` includes only values up to, but not including, `10`.<br> - `value_equals` is the exact match to the permitted value. `“value_equals” : 5` includes only values equal to `5`.<br> - Unlike the [Profile Service](./profile-service.md), the Splits service allows you to target segment values of zero (0). See [example](#example-for-the-value_equals-field) for `value_equals` below. <br>Segment values may be passed in a number of ways, for example, through the Batch Segment Service or a first-party or third-party segment query string. |
 
 #### Example for the `value_equals` field
 
@@ -491,10 +467,9 @@ The creatives to serve on this split.
 > [!WARNING]
 > The `segment[]`condition is no longer used and has been deprecated on August 21, 2022. When setting up targeting for new line items, use [Segment Group](#segment-group) (`segment_group`) instead.
 
-| Field | `segment[SEGMENTID,...]`<br>where `SEGMENTID` is an optional list of segment IDs.<br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. |
-|:---|:---|
-| `Operator` | `<`, `<=`, `=`, `>`, `>=`, `present`, `absent` |
-| `Value` | A nested conditions array that specifies segment age, value, or presence.<br> - Segment presence is `"present"` or `"absent"`.<br> - Segment age is measured in minutes and must be a positive integer.<br> - Segment value is a non-zero, positive integer representing a user-defined value. See [example](#example-for-the-value-field) for `value` below.<br>Segment values may be passed in a number of ways, for example, through the [Batch Segment Service](./batch-segment-service.md) or a first-party or third-party segment query string. |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `segment[SEGMENTID,...]`<br>where `SEGMENTID` is an optional list of segment IDs.<br>Use [Segment Service](./segment-service.md) to retrieve segment IDs. | `<`, `<=`, `=`, `>`, `>=`, `present`, `absent` | A nested conditions array that specifies segment age, value, or presence.<br> - Segment presence is `"present"` or `"absent"`.<br> - Segment age is measured in minutes and must be a positive integer.<br> - Segment value is a non-zero, positive integer representing a user-defined value. See [example](#example-for-the-value-field) for `value` below.<br>Segment values may be passed in a number of ways, for example, through the [Batch Segment Service](./batch-segment-service.md) or a first-party or third-party segment query string. |
 
 #### Example for the `value` field
 
@@ -525,37 +500,33 @@ Evaluate impressions based on the presence, absence, value, or segment age of th
 
 The number of ads seen by a user for an advertiser, line item, or split on the current day.
 
-| Field | `OBJECT[ID].day_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. |
-|:---|:---|
-| `Operator` | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
-| `Value` | Positive integer. `0` indicates no frequency information is available (the user has not seen this object on the current day). |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].day_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we **strongly recommend** that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | Positive integer. `0` indicates no frequency information is available (the user has not seen this object on the current day). |
 
 ### Lifetime frequency
 
 The number of ads seen by a user over the lifetime of an advertiser, line item, or split.
 
-| Field | `OBJECT[ID].lifetime_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs.<br><br>**CAUTION**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
-|---|---|
-| `Operator` | `>`, `=>`, `<`, `=<`, `=` |
-| `Value` | Positive integer. `0` indicates no frequency information is available (the user has never seen this object). |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].lifetime_frequency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs.<br><br>**CAUTION**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | `>`, `=>`, `<`, `=<`, `=` | Positive integer. `0` indicates no frequency information is available (the user has never seen this object). |
 
 ### Recency
 
 The number of minutes since a user has seen an ad. This can be determined for a user for all ads under an advertiser, line item, or split.
 
-| Field | `OBJECT[ID].recency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. |
-|---|---|
-| `Operator` | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. |
-| `Value` | A positive integer indicating the number of minutes since a user has seen an impression, rounded down. 59 seconds will evaluate to `0`, 61 seconds will evaluate to `1`. `0` means the impression was seen very recently. `Null` means no recency data is available (the user has not seen this impression before). |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `OBJECT[ID].recency`<br>where the object is `advertiser`, `line_item`, or `campaign` (representing split), and ID is the object ID. Use the [Advertiser Service](./advertiser-service.md), [Line Item Service](./line-item-service.md), or Splits Service to retrieve IDs. | `>`, `=>`, `<`, `=<`, `=`<br><br>**Important**: Although the operator `=` is supported for frequency and recency, we strongly recommend that you do not use it, as it tends to cause underdelivery. This is because when you target an impression with `frequency=5`, you exclude impressions with frequencies equal to `0`, `1`, `2`, `3`, or `4`. | A positive integer indicating the number of minutes since a user has seen an impression, rounded down. 59 seconds will evaluate to `0`, 61 seconds will evaluate to `1`. `0` means the impression was seen very recently. `Null` means no recency data is available (the user has not seen this impression before). |
 
 ### Inventory type
 
 The type of inventory ("app" or "web") targeted by the split. "App" targets mobile app inventory and "web" targets web inventory (including pages shown in mobile web browsers).
 
-| Field | `inventory_type` |
-|---|---|
-| `Operator` | `=`, `in`, `not in` |
-| `Value` | `"web"`, `"app"`<br>See [Example](#example-for-the-inventory_type-field). |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_type` | `=`, `in`, `not_in` | `"web"`, `"app"`<br>See [Example](#example-for-the-inventory_type-field). |
 
 #### Example for the `inventory_type` field
 
@@ -579,10 +550,9 @@ Target an allowlist or blocklist established at the Network level. You can only 
 > [!NOTE]
 > Not supported by GDALI.
 
-| Field | `inventory_url_list` |
-|:---|:---|
-| `Operator` | `all`, `not in` |
-| `Value` | Inventory list ID.<br><br>`"conditions":[{"field":"inventory_url_list","operator":"not in","value":[12345]}]`<br><br>To create an inventory list, or retrieve the list IDs for use in split targeting, use the [Inventory List Service](./inventory-list-service.md). |
+| Field  | Operator | Value |
+|:---|:---|:---|
+| `inventory_url_list` | `all`, `not in` | Inventory list ID.<br><br>`"conditions":[{"field":"inventory_url_list","operator":"not in","value":[12345]}]`<br><br>To create an inventory list, or retrieve the list IDs for use in split targeting, use the [Inventory List Service](./inventory-list-service.md). |
 
 ## Examples
 

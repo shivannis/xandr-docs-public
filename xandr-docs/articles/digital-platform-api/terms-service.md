@@ -1,6 +1,6 @@
 ---
 title: Terms Service
-description: Use the term sservice to record Tango member's acceptance of the Tango usage terms of service.
+description: Use the term service to record Tango member's acceptance of the Tango usage terms of service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -162,7 +162,6 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/terms-of-service?id=19"
 }
 ```
 
-> [!NOTE]
 > [!NOTE]
 > The examples below are visible to Xandr employees only. These calls can only be made my administrators.
 > 

@@ -207,14 +207,15 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 }
 ```
 
-Our API limits responses to 100 objects via pagination. You can view additional objects by appending one of these to the API call:
-
-- `&start_element=101`
-- `&sort=last_modified.desc`
-
-You can read more about pagination on our Documentation Portal [here](./05---throttling-pagination-and-filtering.md).
-
-If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://help.xandr.com/). Don't forget to include the job ID in your support request.
+> [!NOTE]
+> Our API limits responses to 100 objects via pagination. You can view additional objects by appending one of these to the API call:
+>
+> - `&start_element=101`
+> - `&sort=last_modified.desc`
+>
+> You can read more about pagination on our Documentation Portal [here](./05---throttling-pagination-and-filtering.md).
+>
+> If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://help.xandr.com/). Don't forget to include the job ID in your support request.
 
 ## JSON fields
 

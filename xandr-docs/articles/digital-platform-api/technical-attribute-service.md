@@ -25,7 +25,7 @@ This is a read-only service that shows you the list of technical attributes that
 | `name` | string | The name of the technical attribute. |
 
 ## Examples
-a
+
 ### To see all technical attributes available for targeting
 
 ```

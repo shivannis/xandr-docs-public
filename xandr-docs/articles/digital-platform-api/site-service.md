@@ -16,11 +16,11 @@ When you create a publisher, a site is automatically created. You can then modif
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `POST` | https://api.appnexus.com/site?publisher_id=PUBLISHER_ID<br>(site JSON) | Add a site. |
-| `PUT` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>https://api.appnexus.com/site?id=SITE_ID<br>(site JSON) | Modify an existing site. |
-| `DELETE` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE | Delete a site. |
+| `PUT` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?id=SITE_ID](https://api.appnexus.com/site?id=SITE_ID)<br>(site JSON) | Modify an existing site. |
+| `DELETE` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE](https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE) | Delete a site. |
 | `GET` | https://api.appnexus.com/site | View all sites for your publishers. |
 | `GET` | https://api.appnexus.com/site?publisher_id=PUBLISHER_ID | View all of the sites for one of your publishers. |
-| `GET` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>https://api.appnexus.com/site?id=SITE_ID | View a specific site for one of your publishers. |
+| `GET` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?id=SITE_ID](https://api.appnexus.com/site?id=SITE_ID) | View a specific site for one of your publishers. |
 | `GET` | https://api.appnexus.com/site?id=1,2,3 | View multiple sites by ID using a comma-separated list. |
 
 > [!NOTE]
@@ -33,7 +33,7 @@ When you create a publisher, a site is automatically created. You can then modif
 | `id` | int | Xandr ID assigned by the API to reference this site.<br><br>**Required On**: `PUT`, in query string |
 | `code` | string (100) | Optional code for this site. |
 | `name` | string (100) | Name associated with the site.<br><br>**Required On**: `PUT`, `POST` |
-| `state` | enum | State of this site. Possible values: active or inactive.<br><br>**Default**: `active` |
+| `state` | enum | State of this site. Possible values: `active` or `inactive`.<br><br>**Default**: `active` |
 | `url` | string (255) | URL of this site. |
 | `publisher_id` | int | ID of the publisher that this site belongs to.<br><br>**Required On**: `POST`/`PUT`, in query string |
 | `primary_content_category_id` | int | Users can optionally specify a primary [content category](./content-category-service.md) for a placement (see [examples](#examples) below). This category can be used for targeting and will appear in reports. Content categories can be set either at the Site level or the Placement level, but not both. |
@@ -45,10 +45,10 @@ When you create a publisher, a site is automatically created. You can then modif
 | `audited` | boolean | Whether the site has been audited. |
 | `publisher_join` | array |  |
 | `publisher_name` | string (100) | Name of the publisher the site is under |
-| `supply_type` | string | Specifies whether this is a site viewed on a desktop browser (`web`), a site viewed on a mobile browser (`mobile_web`), or an app run on a mobile device (`mobile_app`). This distinction allows the buyer to target campaigns to the particular supply type where they want to advertise, for example, an advertiser may upload creatives optimized for mobile browsers with mobile landing pages.<br><br>**Note**: As of February 13th, 2018, the supply type configured in each auction is detected automatically by Xandr. As a result, the selection you make here will be overridden by the supply type detected. This selection will eventually be removed from the UI.<br><br>**Default**: `web`<br><br>**Note**: **This note is visible to Xandr employees only**: Admins can set this to `facebook_sidebar` as well. |
-| `creative_format_action` | string | `exclude`: Allow all creative formats to serve on this site except those specified in the `creative_formats` array<br>`include`: Only all creatives to serve whose format is included in the list specified in `creative_formats`<br><br>**Default**: `exclude`. <br>Some mobile application supply sources do not support all creative formats available on Xandr. |
+| `supply_type` | string | Specifies whether this is a site viewed on a desktop browser (`web`), a site viewed on a mobile browser (`mobile_web`), or an app run on a mobile device (`mobile_app`). This distinction allows the buyer to target campaigns to the particular supply type where they want to advertise, for example, an advertiser may upload creatives optimized for mobile browsers with mobile landing pages.<br><br>**Note**: As of **February 13th, 2018**, the supply type configured in each auction is detected automatically by Xandr. As a result, the selection you make here will be overridden by the supply type detected. This selection will eventually be removed from the UI.<br><br>**Default**: `web`<br><br>**Note**: **This note is visible to Xandr employees only**: Admins can set this to `facebook_sidebar` as well. |
+| `creative_format_action` | string | - `exclude`: Allow all creative formats to serve on this site except those specified in the `creative_formats` array<br> - `include`: Only all creatives to serve whose format is included in the list specified in `creative_formats`<br><br>**Default**: `exclude`. <br>Some mobile application supply sources do not support all creative formats available on Xandr. |
 | `creative_formats` | array of strings | The creative formats to be excluded or included in this site.<br><br>**Default**: `text` |
-| `allowed_click_actions` | array of strings | Tells the buyer what types of click actions on creatives are supported. Mobile web and apps often allow additional click actions beyond click to a website, such as click-to-call, click-to-sms, click-to-email, and click-to-map.<br><br>**Default**: click-to-web only |
+| `allowed_click_actions` | array of strings | Tells the buyer what types of click actions on creatives are supported. Mobile web and apps often allow additional click actions beyond click to a website, such as click-to-call, click-to-sms, click-to-email, and click-to-map.<br><br>**Default**: `click-to-web only` |
 | `marketplace_map` | object | Informs the buyer which types of marketplaces are accessible (performance, RTB, deals). See [Marketplace Map](#marketplace-map) below for internal field definitions. |
 | `mobile_app_instance` | multi-object | The [Mobile App Instance](./mobile-app-instance-service.md) associated with this site. This field can only be set when `supply_type` is `mobile_app`. See [Mobile App Instance](#mobile-app-instance) below for the internal field definitions.<br><br>**Required On**: `POST`, for sites with a `supply_type` of `mobile_app`. |
 | `mobile_app_instance_id` | int | The ID of the mobile app instance associated with this site. This field is only associated with sites with a `supply_type` of `mobile_app`. |
