@@ -8,6 +8,9 @@ ms.custom: digital-platform-api
 # Line Item Reporting service
 
 > [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
+> [!NOTE]
 > This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
 Xandr admins can use this service to create the `standard_v2` line item.  

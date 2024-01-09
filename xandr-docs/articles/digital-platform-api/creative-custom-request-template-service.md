@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Creative Custom Request Template service
 
 > [!NOTE]
-> Mediation is available only to Microsoft Monetize Ad Server customers.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 To support mobile ad server mediation, Xandr uses a mediated creative type. Unlike standard creatives, which reside as static content on a server, mediated creatives are configurable containers that fetch server side content. The Creative Custom Request Template Service is used to build the requests that populate these mediated creatives. It does this by managing a set of custom templates, each of which will correspond to a different ad server, and which is associated with a template "type" defined by the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md).
 

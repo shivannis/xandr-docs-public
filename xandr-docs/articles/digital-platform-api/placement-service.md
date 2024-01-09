@@ -1,69 +1,34 @@
 ---
-Title : Placement Service
-Description : The Placement Service enables you to create placement ad tags as well as
+title: Placement Service
+description: Use the placement service to create and modify ad tags for managed publishers or direct media buys with customizable IDs stored server-side.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-modify and view them. You will use placements for managed publishers or
 ---
 
+# Placement service
 
-# Placement Service
+The Placement Service enables you to create placement ad tags as well as modify and view them. You will use placements for managed publishers or for direct media buys.
 
+- Placement IDs and their associated information are stored server-side with Xandr and are easy to modify.
+- When you create a placement, you specify the types of creatives that are allowed to serve on it (see `supported_media_types` and `supported_media_subtypes` below).
 
+> [!NOTE]
+> Targeting of advertisers, line items, or campaigns via this service will override any targeting defined by the [Payment Rule Service](./payment-rule-service.md).
 
-The Placement Service enables you to create placement ad tags as well as
-modify and view them. You will use placements for managed publishers or
-for direct media buys.
+## Tag format
 
-- Placement IDs and their associated information are stored server-side
-  with Xandr and are easy to modify.
-- When you create a placement, you specify the types of creatives that
-  are allowed to serve on it (see `supported_media_types` and
-  `supported_media_subtypes` below).
+Once you have the placement ID, you format the placement tag as follows and hand it to the publisher you represent or with whom you have a guaranteed buy.
 
+> [!NOTE]
+> `"id"` is the placement ID.
+> [!TIP]
+> You can include placeholders to pass in additional query string parameters to our platform during the ad call.
+> [!IMPORTANT]
+> When serving your placement tags on secure inventory (SSL), you should alter the below tags to use the host: "https://secure.adnxs.com/..."
 
+### IFRAME
 
-<b>Note:</b> Targeting of advertisers, line
-items, or campaigns via this service will override any targeting defined
-by the <a
-href="payment-rule-service.md"
-class="xref" target="_blank">Payment Rule Service</a>.
-
-
-
->
-
-## Tag Format
-
-Once you have the placement ID, you format the placement tag as follows
-and hand it to the publisher you represent or with whom you have a
-guaranteed buy.
-
-
-
-<b>Note:</b> "id" is the placement ID.
-
-
-
-class="note tip note_tip">
-
-<b>Tip:</b> You can include placeholders to
-pass in additional query string parameters to our platform during the ad
-call.
-
-
-
-class="note important note_important">
-
-<b>Important:</b> When serving your placement
-tags on secure inventory (SSL), you should alter the below tags to use
-the host: "https://secure.adnxs.com/..."
-
-
-
-**IFRAME**
-
-``` pre
+```
 <!-- BEGIN IFRAME TAG < - DO NOT MODIFY -->
 <IFRAME SRC="https://ib.adnxs.com/tt?id=2704"
     FRAMEBORDER="0"
@@ -78,2390 +43,302 @@ the host: "https://secure.adnxs.com/..."
 <!-- END TAG -->
 ```
 
-**JavaScript**
+### JavaScript
 
-``` pre
+```
 <!-- BEGIN JS TAG < - DO NOT MODIFY -->
 <SCRIPT SRC="https://ib.adnxs.com/ttj?id=2704" TYPE="text/javascript"></SCRIPT>
 <!-- END TAG -->
 ```
 
-
-
->
-
 ## REST API
 
+> [!NOTE]
+> The `code`, `placement_code`, `site_code`, and `publisher_code` can be used in place of the corresponding IDs in the calls below.
+
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?site_id=SITE_ID<br>(placement JSON) | Add a placement (NETWORK). |
+| `PUT` | https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?code=PLACEMENT_ID&site_id=SITE_ID<br>(placement JSON) | Modify an existing placement (NETWORK). |
+| `DELETE` | https://api.appnexus.com/placement?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID<br>https://api.appnexus.com/placement?code=PLACEMENT_CODE&publisher_code=PUBLISHER_CODE | Delete an existing placement. |
+| `GET` | https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID | View all of the placements for one of your publishers. |
+| `GET` | https://api.appnexus.com/placement?id=PLACEMENT_ID | View a specific placement for one of your publishers. |
+| `GET` | https://api.appnexus.com/placement?id=1,2,3 | View all placements for a site. |
+
+## JSON fields
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the placement.<br><br>**Default**: Auto-incremented number (i.e. 123)<br>**Required On**: `PUT`, in query string |
+| `name` | string (100) | The name of the placement.<br><br>**Required On**: `POST` |
+| `code` | string (100) | The custom code for the placement.<br><br>**Note**: Codes must be alphanumeric and cannot contain spaces. The following characters are also permitted:<br> - period (".")<br> - underscore ("_")<br> - hyphen ("-")<br> - percent ("%") |
+| `code2` | string (100) | The second custom code for the placement.<br><br>**Note**: Codes must be alphanumeric and cannot contain spaces. The following characters are also permitted:<br> - period (".")<br> - underscore ("_")<br> - hyphen ("-")<br> - percent ("%") |
+| `code3` | string (100) | The third custom code for the placement.<br><br>**Note**: Codes must be alphanumeric and cannot contain spaces. The following characters are also permitted:<br> - period (".")<br> - underscore ("_")<br> - hyphen ("-")<br> - percent ("%") |
+| `state` | enum | The state of the placement. Possible values: `"active"` or `"inactive"`.<br><br>**Default**: `"active"` |
+| `width` | int | The width of the placement. |
+| `height` | int | The height of the placement. |
+| `is_resizable` | Boolean | If the placement uses a friendly iFrame and you want the placement to resize to fit smaller or larger creatives, set this field to `true`.<br><br>**Default**: `false` |
+| `default_position` | enum | The default position of the placement on the page. Possible values:  - `"above"` (above the fold) <br> `"below"` (below the fold) <br>`"unknown"`<br><br>**Default**: `"unknown"` |
+| `publisher_id` | int | The ID of the publisher associated with the placement.<br><br>**Required On**: `POST` |
+| `publisher_name` | string (100) | The name of the publisher associated with the placement. |
+| `site_id` | int | The ID of this placement's parent site. Each placement must belong to a site.<br><br>**Default**: Site of publisher |
+| `site_name` | string (100) | The name of the site on which the placement is used. |
+| `inventory_source_id` | int | **Deprecated**. |
+| `ad_profile_id` | int | The ID of the ad profile associated with the placement.<br><br>**Note**: The preferred way to "assign" an ad profile to a placement is as follows: Create an Ad Quality Rule with a targeting profile (the profile "targets" the placement). Link the Ad Profile to the Ad Quality Rule. Assign the Ad Quality Rule to the publisher. That way you can enjoy a greater flexibility using the targeting profile. |
+| `supported_media_types` | array of objects | The media types that are allowed to serve on the placement. See [Supported Media Types](#supported-media-types) below for more details. <br><br>**Attention**: If you do not specify either `supported_media_types` or `supported_media_subtypes`, the `"Banner"` media type and all of its subtypes will be allowed by default. |
+| `supported_media_subtypes` | array of objects | The media subtypes that are allowed to serve on the placement. See [Supported Media Subtypes](#supported-media-subtypes) below for more details. |
+| `pop_values` | array | **Deprecated**. |
+| `default_creative_id` | int | **Deprecated**. Please use `default_creatives` instead. |
+| `default_creatives` | array | The default creatives that will be displayed instead of a PSA when there is no auction winner. For each default creative, the reserve price is set with the `"price"` field in the array. See [Default Creatives](#default-creatives) below for more details.<br><br>**Note**: The placement will not pop if the reserve price is not met, except in the case of a prepop. |
+| `reserve_price` | double | The reserve price for each of the placement's default creatives is set in the `default_creatives` array (see [Default Creatives](#default-creatives) below). If the placement does not have default creatives, a reserve price can be set here for the placement; this is not best practice, however, as the reserve price may cause the display of a PSA. <br><br>**Important**: A Yield Management Profile will supersede any reserve price settings at the Placement level. If you have such a profile, you must set your desired reserve price via a hard floor. |
+| `hide_referer` | Boolean | If `true`, the referrer will not be reported. |
+| `default_referrer_url` | string | If a [Visibility Profile](./visibility-profile-service.md) is set to hide inventory URLs in your bid requests, you can set this field to pass a vanity URL instead. This is particularly useful in cases where publishers do not want to share actual domains but nonetheless want buyers to be able to identify them by domain. |
+| `visibility_profile_id` | int | The ID of the visibility profile assigned directly to the placement. For more details about visibility profiles, see the [Visibility Profile](./visibility-profile-service.md). |
+| `exclusive` | Boolean | **Read-only**.<br>To designate whether a placement's inventory is to be made available for resale, use the `rtb` field in the `marketplace_map` object of the placement's site. See [Site Service](./site-service.md) for a description of this field. All inventory made available for resale is part of the RTB Marketplace.<br><br>**Default**: `False` |
+| `pixel_url` | string | Piggyback call upon user loading placement.<br><br>**Default**: `null` |
+| `pixel_type` | enum | Identifies the type of pixel. Possible values are `"javascript"` or `"image"`.<br><br>**Default**: `image` |
+| `content_categories` | array | A list of Content Categories associated with this placement. At most 20 categories can be specified for a placement. |
+| `filtered_advertisers` | array | A list of advertisers that are allowed to target the placement. |
+| `filtered_line_items` | array | A list of line items that are allowed to target the placement. |
+| `filtered_campaigns` | array | A list of campaigns that are allowed to target the placement. |
+| `segments` | array | A list of segments that users will be added to upon viewing this placement. |
+| `estimated_clear_prices` | array of objects | The bid amount that has historically won the majority (95%) of the 3rd party auctions in which it participates. See [Estimated Clear Prices](#estimated-clear-prices) below for more details. |
+| `media_subtypes` | array | **Deprecated**. Please use `supported_media_types` and `supported_media_subtypes` instead. |
+| `intended_audience` | enum | Values for self-auditing only. Possible values: <br> - `"general"` <br> - `"children"` <br> - `"young_adult"` <br> - `"mature"` |
+| `inventory_attributes` | array | The sensitive attributes contained by the placement.<br><br>**Tip**: The `inventory_attributes` can also be applied at the site level, and in this case will influence objects at the placement level, as well. This is an array of objects with IDs. Please see the [Inventory Attribute Service](./inventory-attribute-service.md) for a list of IDs. |
+| `audited` | Boolean | If `true`, the placement has been self-audited by the owner.<br><br>**Default**: `false` |
+| `audit_level` | enum | Values for self-auditing only.<br><br>**Note**: The self-audits at the site level can be overridden at the placement level. Possible values:<br> - `"site"` - Use this value if the `audited` field is set to `false` in the placement but `true` in the site.<br> - `"placement"` - Use this value if the `audited` field is set to `true` in the placement.<br><br>**Default**: `"site"` |
+| `default_calculation_type` | enum | This determines the bid price threshold below which a default creative will be served. You can choose whether this threshold is the network's gross revenue or the publisher's net revenue. If there are no additional eligible campaigns, nor any default creatives available, a PSA is served. Possible values: `"gross"` or `"net"`.<br><br>**Default**: `"gross"` |
+| `apply_floor_to_direct` | Boolean | **Removed**. Please use `floor_application_target` instead. |
+| `demand_filter_action` | string | Indicates demand sources which can be included or excluded.<br><br>**Default**: `default` |
+| `floor_application_target` | enum | The type of bids to which the reserve price is applied. Possible values:<br> - `"external_only"` - The reserve price is applied only to external bids (buying member and selling member are different). Use this option if you would rather serve an available managed learn impression than serve a default, even if this means exceeding the maximum % of daily volume for learn (`max_learn_pct` field in [Publisher Service](./publisher-service.md)).<br> - `"external_non_preferred"` - The reserve price is applied to external bids (buying member and selling member are different) or when the impression is an available managed learn impression that exceeds the maximum % of daily volume for learn. Use this option if you would rather serve a default than serve an available managed learn impression that would exceed the maximum % of daily volume for learn.<br> - `"all"` - The reserve price is applied to all bids except managed learn impressions within the maximum % of daily volume for learn.<br><br>**Default**: `"all"` |
+| `pixel_url_secure` | string | Secure piggyback call upon user loading placement.<br><br>**Default**: `null` |
+| `site_audit_status` | enum | Indicates how the site has decided to perform creative audits. Possible values are `"self"` or `"unaudited"`.<br><br>**Default**: `unaudited` |
+| `toolbar` | object | Sellers must declare all toolbar and browser-plugin inventory. If a seller assigns the "toolbar" inventory attribute, this additional meta data must also be included. |
+| `acb_code` | string (32) | **Deprecated**. |
+| `tag_data` | string | **Deprecated**. |
+| `cost_cpm` | double | If a value exists, it will be used as the payment information for the placement. This will override any payment rules associated with the publisher.<br><br>**Default**: `null` |
+| `is_prohibited` | Boolean | **Read-only**. If `true`, the placement has been prohibited due to violation of Xandr content policies. Direct and third-party auctions will not be run for a prohibited placement.<br><br>**Default**: `false` |
+| `last_modified` | timestamp | **Read-only**. The date and time when the placement was last modified. |
+| `stats` | object | The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead. |
+| `content_retrieval_timeout_ms` | int | The timeout this placement will set on content retrieved from "mediated" creatives, i.e., creatives whose `content_source` is set to `"mediation"`. For more information, see the [Creative Service](./creative-service.md). <br> - If set to `0`, the ad server will use the value from the [Member Service](./member-service.md)<br>- Defaults to `0` if not provided to the API on `PUT` or `POST` calls.<br>- If ad server reads a `0` in this field, it will perform a member lookup and use the default timeout defined by the [Member Service](./member-service.md) (assuming it's also non-zero).<br> - When creating a placement, no values will be copied into this field from the member's default settings. You must explicitly specify them in your calls to `POST`. For more information, see the `default_content_retrieval_timeout_ms` field of the [Member Service](./member-service.md).<br><br>**Default**: `0` |
+| `enable_for_mediation` | Boolean | This will be the source of truth for whether a placement should accept mediated content. Unless set on `PUT` or `POST`, this field will inherit its default value from the member. If the default value is changed on the [Member Service](./member-service.md), that action will not retroactively impact placements created previously; they will continue to be set to the old default value. In other words, the value of this field cannot be updated retroactively by setting the member default. For more information, see the `default_enable_for_mediation` field of the [Member Service](./member-service.md).<br><br>**Default**: Inherited from `default_enable_for_mediation` field of the [Member Service](./member-service.md). |
+| `private_sizes` | array of objects | The list of placement sizes that may be allowed to serve in deals and packages. See [Private Sizes](#private-sizes) below for more details. |
+| `video` | object | The media subtype allowed to serve on the placement. See [Video Settings](#video-settings) below for more details.<br><br>**Default**: `null` |
+| `ad_types` | array of objects | Contains information relating to placement types, including the ad type ID and information about the renderer. For more information, see [Ad Types](#ad-types) below.<br><br>**Default**: `null`<br>**Required On**: `PUT` |
+| `use_detected_domain` | boolean | **Read-only**. Whether to use the detected domain versus the reported domain. Defaults to `true` for all clients.<br><br>**Default**: `true` |
+| `mime_types` | array of strings | The list of mime types to include or exclude on the placement. `supported_mime_types_action_include` below is used to specify whether to include or exclude those mime types. For a list of the strings used to identify each mime types, see [Supported Mime Types](#supported-mime-types).<br><br>**Default**: `empty` |
+| `supported_mime_types_action_include` | boolean | If `true`, the mime types listed in the `mime_types` array will be included.<br><br>**Default**: `false` |
+| `handles_mixed_media` | boolean | This tells our platform whether the video player can support a VAST file with different mime types.<br><br>**Default**: `true` |
+| `tinytag_renderer_asset_floor_prices` | array of objects | Associates floor prices to native creatives that have been assigned to the placement. For additional information, see [Tinytag Renderer Asset Floor Prices](#tinytag-renderer-asset-floor-prices).<br><br>**Required On**: `PUT` |
+| `is_ss_native_assembly_enabled` | boolean | When enabled, although the original request will be a banner request, the requests that are sent to bidders will have native info set in order to receive native assets back in the responses. The final response will be set back to a banner ad type with a native assembled ad markup attached. If `true` then yes. |
+
+### Supported media types
+
+Creatives are categorized by media type and media subtype. Media type defines the general display style of the creative, for example,
+`"Banner"`, and media subtype defines the specific display style of creatives, for example, `"Standard Banner"` or `"In-Banner Video"`. You can use this array to limit the media type, the general display style of creatives, that can serve on a placement. To limit the media subtype, the specific display style of creatives, use the `supported_media_subtypes` array (see [Supported Media Subtypes](#supported-media-types) below).
 
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the allowed media type. You can use the [Media Type Service](./media-type-service.md) to view all media types.<br><br>**Default**: `1` |
+| `name` | string | The name of the allowed media type.<br><br>**Default**: `"Banner"` |
+| `media_type_group_id` | int | The group ID for the media type. |
+| `uses_sizes` | enum | Whether the media type has size specifications. Possible values: <br> - `"always"` <br> - `"sometimes"` <br> - `"never"` |
+| `last_modified` | date | When the `allowed_media_type` object was last updated. |
 
+### Supported media subtypes
 
-<b>Note:</b> The code, placement_code,
-site_code, and publisher_code can be used in place of the corresponding
-IDs in the calls below.
+Creatives are categorized by media type and media subtype. Media type defines the general display style of the creative, for example, `"Banner"`, and media subtype defines the specific display style of creatives, for example, `"Standard Banner"` or `"In-Banner Video"`. You can use this array to limit the media subtype, the specific display style of creatives, that can serve on a placement. To limit the media type, the general display style of creatives, use the `supported_media_types` array (see [Supported Media Types](#supported-media-types) above).
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the allowed media subtype. You can use the [Media Subtype Service](./media-subtype-service.md) to view all media subtypes.<br><br>**Default**: `null` |
+| `name` | string | The name of the allowed media subtype. |
+| `is_private` | boolean | Whether the media subtype is set to private. If `true` then yes. |
+| `media_type_group_id` | int | The group ID for the media type. |
 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_mh5_41g_twb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="placement-service__section_mh5_41g_twb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="placement-service__section_mh5_41g_twb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><p><a
-href="https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID</a></p>
-<p><a href="https://api.appnexus.com/placement?site_id=SITE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?site_id=SITE_ID</a></p>
-<p>(placement JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">Add a
-placement (NETWORK).</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><p><a
-href="https://api.appnexus.com/placement?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/placement?code=PLACEMENT_ID&amp;site_id=SITE_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?code=PLACEMENT_ID&amp;site_id=SITE_ID</a></p>
-<p>(placement JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">Modify an
-existing placement (NETWORK).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><p><a
-href="https://api.appnexus.com/placement?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID</a></p>
-<p><a
-href="https://api.appnexus.com/placement?code=PLACEMENT_CODE&amp;publisher_code=PUBLISHER_CODE"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?code=PLACEMENT_CODE&amp;publisher_code=PUBLISHER_CODE</a></p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">Delete an
-existing placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><a
-href="https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement?publisher_id=PUBLISHER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">View all of
-the placements for one of your publishers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><a
-href="https://api.appnexus.com/placement?id=PLACEMENT_ID" class="xref"
-target="_blank">https://api.appnexus.com/placement?id=PLACEMENT_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">View a
-specific placement for one of your publishers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__2"><a
-href="https://api.appnexus.com/placement?id=1,2,3" class="xref"
-target="_blank">https://api.appnexus.com/placement?id=1,2,3</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-service__section_mh5_41g_twb__entry__3">View all
-placements for a site.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
+> [!NOTE]
+> **Notes on Supported Media Types and Media Subtypes**
 >
+> - If you do not specify either supported media types or supported media subtypes, the `"Banner"` media type and all of its subtypes will be allowed by default.
+> - You can combine the `"Banner"` and `"Text"` media types, and any combination of their media subtypes, on a single placement, but you cannot combine any of the other media types and media subtypes. This limitation ensures that only appropriate creatives are served on a placement. For example, a placement that allows creatives of the media type `"Video"` is intended to be fed to a video player; it would not make sense to allow creatives of any other media type, such as `"Interstitial"`, to serve on the placement.
+> - You can set a placement to allow the `"Expandable"` media type or any of its subtypes for direct inventory. If you want to support expandable creatives for placements that are available for reselling to other platform members, please provide the placement's ID to [support](https://help.xandr.com/) for verification.
+
+### Supported mime types
+
+The `mime_types` array of objects supports the mime types shown in the following table. If no mime types are specified, all mime types will be accepted. The Placement API uses the string in the **Name** column. If you need to pass this information in a tag, use the ID.
+
+| Name | Id |
+|:---|:---|
+| `application/x-shockwave-flash` | 1 |
+| `video/x-flv` | 2 |
+| `video/mp4` | 3 |
+| `video/webm` | 4 |
+| `application/javascript` | 5 |
+| `application/octet-stream` | 6 |
+| `image/jpeg` | 7 |
+| `image/gif` | 8 |
+| `image/png` | 9 |
+| `application/zip` | 10 |
+| `application/vnd.ms-asf`  | 11 |
+| `video/x-ms-wmv` | 12 |
+| `video/ogg` | 13 |
+| `video/x-msvideo` | 14 |
+| `video/mpeg` | 15 |
+| `video/quicktime` | 16 |
+| `video/3gpp` | 17 |
+| `video/3gpp2` | 18 |
+| `video/x-m4v` | 19 |
+| `audio/ogg` | 20 |
+| `audio/x-pn-realaudio` | 21 |
+| `audio/mpeg` | 22 |
+| `text/css` | 23 |
+| `text/html` | 24 |
+| `text/plain` | 25 |
+| `audio/mp4` | 26 |
+
+### Video settings
+
+If the `supported_media_type` is `"video"` or the `supported_media_subtypes` is `"Standard VAST"`, these fields should be included in the `video` object. Please see [Examples](#examples) below.
+
+> [!NOTE]
+> The following settings affect auction outcomes: for Outstream player settings, which determine the ultimate behavior of the Outstream video player, see "Outstream Video Player Settings" in our UI documentation.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the video creative. |
+| `width` | int | The width of the video creative. |
+| `max_duration_secs` | int | The maximum duration of a video ad that is allowed to be played on the placement.<br> - If `maximum_number_ads` is > `1`, then the max duration applies to the entire length of an ad pod (a linear grouping of more than one ad designed to fill a single placement).<br><br>**Note**: This field must be set in order to enable ad pods. |
+| `maximum_ad_duration_secs` | int | The maximum video ad duration in seconds of any single ad that can be played on the placement. This only applies to ad pods. |
+| `maximum_number_ads` | int | The maximum number of ads that are allowed to be played on the placement. If `maximum_number_ads` is > `1`, then the placement can be an ad pod (a linear grouping of more than one ad designed to fill a single placement). |
+| `start_delay_secs` | int | The start delay in seconds for the placement. If the start delay value is > `0`, then the position of the placement is `"mid-roll"`.<br><br>**Note**: This field must be set if the context is `"mid-roll"`. |
+| `skipoffset_seconds` | int | The number of seconds that is allowed for the video to play, before it can be skipped.<br>The default value is `null`. <br><br>**CAUTION**: If you set this value to anything but `null`, the `supports_skippable` field must be set to `true`. (See below). |
+| `supports_skippable` | boolean | The ad slot is skippable.<br>Possible values: `"true"` or `"false"` |
+| `context` | string | Roll position of the video creative.<br>Possible Values: `"pre-roll"`, `"mid-roll"`, `"post-roll"`.<br><br>**Important**: This field must be set in order to enable ad pods. |
+| `layback_method` | string | The different playback methods are:<br> - `Auto-play, sound-on`<br> - `Auto-play, sound-off`<br> - `Click-to-play`<br> - `Mouse-over`<br>- `Auto-play, sound unknown`<br><br>Possible values: <br> - `"auto_play_sound_on"` <br> - `"auto_play_sound_off"` <br> - `"click_to_play"` <br> - `"mouse_over"` <br> - `"auto_play_sound_unknown"` <br> - `null` |
+| `frameworks` | array of strings | The framework of the placement. Options include:<br> - `VPAID 1.0`<br> - `VPAID 2.0`<br> - `MRAID-1`<br> - `ORMMA`<br> - `MRAID-2`<br>Possible values: <br> - `"vpaid_1_0"` <br> - `"vpaid_2_0"` <br> - `"mraid_1"` <br> - `"ormma"` <br> - `"mraid_2"` |
+| `video_bumpers` | array of objects | The bumpers that can be associated with the ad pod. Bumper duration is not included in the overall duration of the ad pod. See [video bumpers](#video-bumpers) object. |
+| `player_vast_version` | string | This field specifies the highest vast version the placement supports, and should be set to highest value that your player supports. Creatives that require a vast version higher than your player version will not be eligible to serve in your placement.<br>Possible values:<br> - `2.0`<br> - `3.0`<br> - `4.0`<br><br> **CAUTION**: Specifying a value higher than your player supports may cause errors when unsupported creatives are rendered. |
+| `vmin_ad_duration` | int | The minimum creative duration allowed, in seconds. |
+| `minbitrate` | int | The minimum bitrate in kbps. |
+| `mf_min_width` | int | The minimum width of the video creative. |
+| `mf_min_height` | int | The minimum height of the video creative. |
+| `aspect ratios` | array of objects | The creative aspect ratio that can serve for a video placement. The array contains `ratio_width` and `ratio_height`. |
+
+### Video bumpers
+
+This array of objects contains information relating to the bumpers on an ad pod.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `video_bumper_type` | string | The type of bumper. Options include:<br> - `intro`<br> - `outro`<br>**Default**: `null` |
+| `max_duration_secs` | int | The max duration of the bumper.<br><br>**Default**: `null` |
+
+### Aspect ratios
+
+This array of objects contains information about creative aspect ratio that can serve for a video placement.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `ratio_width` | int | The width of the aspect ratio |
+| `ratio_height` | int | The height of the aspect ratio |
+
+### Ad types
+
+This array of objects contains information relating to placement types, including the ad type ID and information about the renderer.
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the `ad_type`.<br>Possible values:<br>`1` = Banner<br>`2` = Video<br>`3` = Native<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
+| `renderer_id` | int | The ID of the renderer.<br>Possible values:<br>`1` = outstream banner<br>`2` = outstream video<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
+| `name` | string | The name of the `ad_type` in all lowercase letters for example `video` or `banner`. |
+| `display_name` | string | The display name of the `ad_type`, shown as the ad type with initial caps, for example `Video` or `Banner`. |
+| `renderer` | multi object | An object consisting of the `id` and `display_name` of the renderer.<br><br>**Default**: `null`<br>**Required On**: `POST`/`PUT` |
+
+### Tinytag renderer asset floor prices
+
+This array of objects is used to associate floor prices to native creatives that have been assigned to the placement.
+
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `renderer_id` | int | The ID of the renderer.<br><br>**Required On**: `POST`/`PUT` |
+| `ad_type_id` | int | The ID of the `ad_type`. This will always be 3 since you can only associate floor prices with native creatives.<br><br>**Default**: `3`<br>**Required On**: `POST`/`PUT` |
+| `asset_type` | string | The asset type.<br>Possible values include:<br> - `main_image`<br> - `video`<br>**Required On**: `POST`/`PUT` |
+| `floor_price` | double | The preferred bid amount in exchange for the native asset's impressions.<br><br>**Required On**: `POST`/`PUT` |
 
-## JSON Fields
+### Default creatives
 
+You use this array to assign default creatives to the placement. Please note the following requirements:
 
+- A default creative must not be expired. See the `is_expired` field in the [Creative Service](./creative-service.md) for more information.
+- A default creative must be assigned to a creative template that matches the `supported_media_types` and `supported_media_subtypes` of the placement. For example, if the placement allows creatives of the `"Banner"` media type, you would not be able to associate default creatives that use a creative template for the `"Interstitial"` media type. See the `template` field in the [Creative Service](./creative-service.md) for more information.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The ID of
-the placement.</p>
-<p><strong>Default:</strong> Auto-incremented number (i.e. 123)</p>
-<p><strong>Required On:</strong> <code class="ph codeph">PUT,</code> in
-query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The name
-of the placement.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The custom
-code for the placement.
+- If the placement is sized (the `"width"` and `"height"` fields are defined for the placement), this array should contain only one creative with the matching dimensions.
 
-<b>Note:</b>
-<p>Codes must be alphanumeric and cannot contain spaces. The following
-characters are also permitted:</p>
-<ul>
-<li>period (".")</li>
-<li>underscore ("_")</li>
-<li>hyphen ("-")</li>
-<li>percent ("%")</li>
-</ul>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">code2</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The second
-custom code for the placement.
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the default creative. |
+| `width` | int | The width of the default creative. |
+| `height` | int | The height of the default creative. |
+| `price` | double | The reserve price for the default creative. A winning bid must be above this price. |
+| `name` | string | **Read-only**. The name of the default creative. |
 
-<b>Note:</b>
-<p>Codes must be alphanumeric and cannot contain spaces. The following
-characters are also permitted:</p>
-<ul>
-<li>period (".")</li>
-<li>underscore ("_")</li>
-<li>hyphen ("-")</li>
-<li>percent ("%")</li>
-</ul>
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">code3</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The third
-custom code for the placement.
+### Pop values
 
-<b>Note:</b>
-<p>Codes must be alphanumeric and cannot contain spaces. The following
-characters are also permitted:</p>
-<ul>
-<li>period (".")</li>
-<li>underscore ("_")</li>
-<li>hyphen ("-")</li>
-<li>percent ("%")</li>
-</ul>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The state
-of the placement. Possible values: "active" or "inactive".</p>
-<p><strong>Default:</strong> "active"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The width of
-the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The height of
-the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">is_resizable</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>If the
-placement uses a friendly iFrame and you want the placement to resize to
-fit smaller or larger creatives, set this field to true.</p>
-<p><strong>Default:</strong> false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">default_position</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The
-default position of the placement on the page. Possible values: "above"
-(above the fold), "below" (below the fold), or "unknown".</p>
-<p><strong>Default:</strong> "unknown"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The ID of
-the publisher associated with the placement.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">publisher_name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The name of
-the publisher associated with the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">site_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The ID of
-this placement's parent site. Each placement must belong to a site.</p>
-<p><strong>Default:</strong> Site of publisher</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">site_name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(100)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The name of
-the site on which the placement is used.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">inventory_source_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">Deprecated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">ad_profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The ID of the
-ad profile associated with the placement.
+If the `supported_media_type` is `"Pop"`, or the `supported_media_subtypes` is `"Popup"` or `"Popunder"`, these fields should be included in the `pop_values` array. Please see below for an example.
 
-<b>Note:</b> The preferred way to "assign" an
-ad profile to a placement is as follows: Create an Ad Quality Rule with
-a targeting profile (the profile "targets" the placement). Link the Ad
-Profile to the Ad Quality Rule. Assign the Ad Quality Rule to the
-publisher. That way you can enjoy a greater flexibility using the
-targeting profile.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">supported_media_types</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The media
-types that are allowed to serve on the placement. See <a
-href="placement-service.md#PlacementService-SupportedMediaTypes"
-class="xref" target="_blank">Supported Media Types</a> below for more
-details.
-class="note attention note_attention">
-Attention: If you do not specify either
-<code class="ph codeph">supported_media_types</code> or <code
-class="ph codeph">supported_media_subtypes</code>, the "Banner" media
-type and all of its subtypes will be allowed by default.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">supported_media_subtypes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The media
-subtypes that are allowed to serve on the placement. See <a
-href="placement-service.md#PlacementService-SupportedMediaSubtypes"
-class="xref" target="_blank">Supported Media Subtypes</a> below for more
-details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">pop_values</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">Deprecated.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">default_creative_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Deprecated.</strong>
-Please use default_creatives instead.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">default_creatives</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The default
-creatives that will be displayed instead of a PSA when there is no
-auction winner. For each default creative, the reserve price is set with
-the "price" field in the array. See <a
-href="placement-service.md#PlacementService-DefaultCreatives"
-class="xref" target="_blank">Default Creatives</a> below for more
-details.
+| Field | Type | Description |
+|:---|:---|:---|
+| `pop_freq_times` | int | Number of times that the tag can be popped to a unique user ID in `pop_frequency_duration` seconds. Has no effect when `pop_is_prepop` is set to `true`.<br><br>**Default**: `No frequency cap` |
+| `pop_freq_duration` | int | See `pop_freq_times`.<br><br>**Default**: `No frequency cap` |
+| `pop_is_prepop` | Boolean | If `true`, the tag is a prepop tag and will serve into a window that the publisher page has already popped.<br><br>**Default**: `false` |
+| `pop_max_width` | int | If `pop_max_width` is specified, any creative shown by the tag must have a width equal to or smaller than `pop_max_width`<br><br>**Default**: `no max width`. |
+| `pop_max_height` | int | The max height of the creative. If `pop_max_height` is specified, any creative shown by the tag must have a height equal to or smaller than `pop_max_height`.<br><br>**Default**: `no max height` |
 
-<b>Note:</b> The placement will not pop if the
-reserve price is not met, except in the case of a prepop.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">reserve_price</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The reserve
-price for each of the placement's default creatives is set in the
-default_creatives array (see <a
-href="placement-service.md#PlacementService-DefaultCreatives"
-class="xref" target="_blank">Default Creatives</a> below). If the
-placement does not have default creatives, a reserve price can be set
-here for the placement; this is not best practice, however, as the
-reserve price may cause the display of a PSA.
-class="note important note_important">
-<b>Important:</b> A Yield Management Profile
-will supersede any reserve price settings at the Placement level. If you
-have such a profile, you must set your desired reserve price via a hard
-floor.
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">hide_referer</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">If true, the
-referrer will not be reported.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">default_referrer_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">If a <a
-href="visibility-profile-service.md"
-class="xref" target="_blank">Visibility Profile</a> is set to hide
-inventory URLs in your bid requests, you can set this field to pass a
-vanity URL instead. This is particularly useful in cases where
-publishers do not want to share actual domains but nonetheless want
-buyers to be able to identify them by domain.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">visibility_profile_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The ID of the
-visibility profile assigned directly to the placement. For more details
-about visibility profiles, see the <a
-href="visibility-profile-service.md"
-class="xref" target="_blank">Visibility Profile Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">exclusive</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p><strong>Read-only.</strong></p>
-<p>To designate whether a placement's inventory is to be made available
-for resale, use the <code class="ph codeph">rtb</code> field in the
-<code class="ph codeph">marketplace_map</code> object of the placement's
-site. See <a
-href="site-service.md"
-class="xref" target="_blank">Site Service</a> for a description of this
-field. All inventory made available for resale is part of the RTB
-Marketplace.</p>
-<p><strong>Default:</strong> False</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">pixel_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Piggyback
-call upon user loading placement.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">pixel_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Identifies
-the type of pixel. Possible values are "javascript" or "image".</p>
-<p><strong>Default:</strong> image</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">content_categories</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">A list of
-Content Categories associated with this placement. At most 20 categories
-can be specified for a placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">filtered_advertisers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">A list of
-advertisers that are allowed to target the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">filtered_line_items</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">A list of
-line items that are allowed to target the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">filtered_campaigns</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">A list of
-campaigns that are allowed to target the placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">segments</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">A list of
-segments that users will be added to upon viewing this placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">estimated_clear_prices</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The bid
-amount that has historically won the majority (95%) of the 3rd party
-auctions in which it participates. See <a
-href="placement-service.md#PlacementService-EstimatedClearPrices"
-class="xref" target="_blank">Estimated Clear Prices</a> below for more
-details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">media_subtypes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Deprecated.</strong>
-Please use <code class="ph codeph">supported_media_types</code> and
-<code class="ph codeph">supported_media_subtypes</code> instead.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">intended_audience</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">Values for
-self-auditing only. Possible values: "general", "children",
-"young_adult", or "mature".</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">inventory_attributes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The
-sensitive attributes contained by the placement.</p>
+### Estimated clear prices
 
-<b>Tip:</b> The inventory_attributes can also
-be applied at the site level, and in this case will influence objects at
-the placement level, as well. This is an array of objects with IDs.
-Please see the <a
-href="inventory-attribute-service.md"
-class="xref" target="_blank">Inventory Attribute Service</a> for a list
-of IDs.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">audited</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>If true,
-the placement has been self-audited by the owner.</p>
-<p><strong>Default:</strong> false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">audit_level</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Values for
-self-auditing only.</p>
+| Field | Type | Description |
+|:---|:---|:---|
+| `clear_price` | int | The bid amount that has historically won the majority (95%) of the 3rd party auctions in which it participates for this placement. |
+| `average_price` | double | This is the average of all bids submitted for this placement. |
+| `width` | int | When exporting sizeless placement tags to be served, this determines the width of the placement. |
+| `height` | int | When exporting sizeless placement tags to be served, this determines the height of the placement. |
+| `verified` | Boolean | Indicates whether the creative has been verified. |
+| `geo_country` | string | The country code for the geographical location associated with the impression. |
 
-<b>Note:</b> The self-audits at the site level
-can be overridden at the placement level. Possible values:
-<ul>
-<li>"site" - Use this value if the audited field is set to false in the
-placement but true in the site.</li>
-<li>"placement" - Use this value if the audited field is set to true in
-the placement.</li>
-</ul>
+### Private sizes
 
-<p><strong>Default:</strong> "site"</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">default_calculation_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>This
-determines the bid price threshold below which a default creative will
-be served. You can choose whether this threshold is the network's gross
-revenue or the publisher's net revenue. If there are no additional
-eligible campaigns, nor any default creatives available, a PSA is
-served. Possible values: "gross" or "net".</p>
-<p><strong>Default:</strong> "gross"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">apply_floor_to_direct</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Removed.</strong>
-Please use <code class="ph codeph">floor_application_target</code>
-instead.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">demand_filter_action</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Indicates
-demand sources which can be included or excluded.</p>
-<p><strong>Default:</strong> default</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">floor_application_target</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The type
-of bids to which the reserve price is applied. Possible values:</p>
-<ul>
-<li>"external_only" - The reserve price is applied only to external bids
-(buying member and selling member are different). Use this option if you
-would rather serve an available managed learn impression than serve a
-default, even if this means exceeding the maximum % of daily volume for
-learn (max_learn_pct field in <a
-href="publisher-service.md"
-class="xref" target="_blank">Publisher Service</a>).</li>
-<li>"external_non_preferred" - The reserve price is applied to external
-bids (buying member and selling member are different) or when the
-impression is an available managed learn impression that exceeds the
-maximum % of daily volume for learn. Use this option if you would rather
-serve a default than serve an available managed learn impression that
-would exceed the maximum % of daily volume for learn.</li>
-<li>"all" - The reserve price is applied to all bids except managed
-learn impressions within the maximum % of daily volume for learn.</li>
-</ul>
-<p><strong>Default:</strong> "all"</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">pixel_url_secure</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Secure
-piggyback call upon user loading placement.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">site_audit_status</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Indicates
-how the site has decided to perform creative audits. Possible values are
-"self" or "unaudited".</p>
-<p><strong>Default:</strong> unaudited</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">toolbar</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">Sellers must
-declare all toolbar and browser-plugin inventory. If a seller assigns
-the "toolbar" inventory attribute, this additional meta data must also
-be included.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">acb_code</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string
-(32)</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Deprecated</strong>.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">tag_data</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Deprecated.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">cost_cpm</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>If a value
-exists, it will be used as the payment information for the placement.
-This will override any payment rules associated with the publisher.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">is_prohibited</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p><strong>Read-only.</strong>
-If true, the placement has been prohibited due to violation of Xandr
-content policies. Direct and third-party auctions will not be run for a
-prohibited placement.</p>
-<p><strong>Default:</strong> false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">timestamp</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><strong>Read-only.</strong>
-The date and time when the placement was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">stats</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The <code
-class="ph codeph">stats</code> object has been deprecated (as of October
-17, 2016). Use the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> to obtain statistical
-information instead.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">content_retrieval_timeout_ms</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The
-timeout this placement will set on content retrieved from "mediated"
-creatives, i.e., creatives whose <code
-class="ph codeph">content_source</code> is set to <code
-class="ph codeph">"mediation"</code>. For more information, see the <a
-href="creative-service.md"
-class="xref" target="_blank">Creative Service</a>.</p>
-<ul>
-<li>If set to <code class="ph codeph">0</code>, the ad server will use
-the value from the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a></li>
-<li>Defaults to <code class="ph codeph">0</code> if not provided to the
-API on <code class="ph codeph">PUT</code> or <code
-class="ph codeph">POST</code> calls</li>
-<li>If ad server reads a <code class="ph codeph">0</code> in this field,
-it will perform a member lookup and use the default timeout defined by
-the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a> (assuming it's also
-non-zero).</li>
-<li>When creating a placement, no values will be copied into this field
-from the member's default settings. You must explicitly specify them in
-your calls to <code class="ph codeph">POST</code>. For more information,
-see the <code
-class="ph codeph">default_content_retrieval_timeout_ms</code> field of
-the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.</li>
-</ul>
-<p><strong>Default:</strong> <code class="ph codeph">0</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">enable_for_mediation</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>This will
-be the source of truth for whether a placement should accept mediated
-content. Unless set on <code class="ph codeph">PUT</code> or <code
-class="ph codeph">POST</code>, this field will inherit its default value
-from the member. If the default value is changed on the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>, that action will not
-retroactively impact placements created previously; they will continue
-to be set to the old default value. In other words, the value of this
-field cannot be updated retroactively by setting the member default. For
-more information, see the <code
-class="ph codeph">default_enable_for_mediation</code> field of the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.</p>
-<p><strong>Default:</strong> Inherited from <code
-class="ph codeph">default_enable_for_mediation</code> field of the <a
-href="member-service.md"
-class="xref" target="_blank">Member Service</a>.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">private_sizes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">The list of
-placement sizes that may be allowed to serve in deals and packages. See
-<a
-href="placement-service.md#PlacementService-PrivateSizes"
-class="xref" target="_blank">Private Sizes</a> below for more
-details.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">video</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The media
-subtype allowed to serve on the placement. See <a
-href="placement-service.md#PlacementService-VideoSettings"
-class="xref" target="_blank">Video Settings</a> below for more
-details.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">ad_types</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Contains
-information relating to placement types, including the ad type ID and
-information about the renderer. For more information, see <a
-href="placement-service.md#PlacementService-AdTypes"
-class="xref" target="_blank">Ad Types</a> below.</p>
-<p><strong>Default:</strong> null</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">use_detected_domain</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p><strong>Read-only.</strong>
-Whether to use the detected domain versus the reported domain. Defaults
-to true for all clients.</p>
-<p><strong>Default:</strong> true</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">mime_types</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-strings</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>The list
-of mime types to include or exclude on the placement. <code
-class="ph codeph">supported_mime_types_action_include</code> below is
-used to specify whether to include or exclude those mime types. For a
-list of the strings used to identify each mime types, see <a
-href="placement-service.md#PlacementService-SupportedMimeTypes"
-class="xref" target="_blank">Supported Mime Types</a>.</p>
-<p><strong>Default:</strong> empty</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">supported_mime_types_action_include</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>If true,
-the mime types listed in the <code class="ph codeph">mime_types</code>
-array will be included.</p>
-<p><strong>Default:</strong> false</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">handles_mixed_media</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>This tells
-our platform whether the video player can support a VAST file with
-different mime types.</p>
-<p><strong>Default:</strong> true</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">tinytag_renderer_asset_floor_prices</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3"><p>Associates
-floor prices to native creatives that have been assigned to the
-placement. For additional information, see <a
-href="placement-service.md#PlacementService-TinytagRendererAssetFloorPrices"
-class="xref" target="_blank">Tinytag Renderer Asset Floor
-Prices</a>.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__1"><code
-class="ph codeph">is_ss_native_assembly_enabled</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__2">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__3">When enabled,
-although the original request will be a banner request, the requests
-that are sent to bidders will have native info set in order to receive
-native assets back in the responses. The final response will be set back
-to a banner ad type with a native assembled ad markup attached. If <code
-class="ph codeph">true</code> then yes.</td>
-</tr>
-</tbody>
-</table>
+This array determines the specific placement sizes that are allowed to serve for a custom deal or in a package. The `override_size_preference` in the [Deal Service](./deal-service.md) or [Package Service](./package-service.md) must be set to `append` for these private sizes to serve along with the standard placement sizes.
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `width` | int | The width of the placement. |
+| `height` | int | The height of the placement. |
 
+### Stats
 
-**Supported Media Types**
+The `stats` object has been deprecated (as of October 17, 2016). Use the [Report Service](./report-service.md) to obtain statistical information instead.
 
+**Toolbar & browser plug-in declaration**
 
+According to [platform policy](./placement-service.md), sellers must identify all toolbar/browser plug-in inventory and segregate it from other inventory on its own placements. To identify toolbar inventory, sellers must:
 
-Creatives are categorized by media type and media subtype. Media type
-defines the general display style of the creative, for example,
-"Banner", and media subtype defines the specific display style of
-creatives, for example, "Standard Banner" or "In-Banner Video". You can
-use this array to limit the media type, the general display style of
-creatives, that can serve on a placement. To limit the media subtype,
-the specific display style of creatives, use the
-supported_media_subtypes array (see <a
-href="placement-service.md#PlacementService-SupportedMediaSubtypes"
-class="xref" target="_blank">Supported Media Subtypes</a> below).
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__193"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__194"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__195"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__193"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__194">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__195"><p>The ID
-of the allowed media type. You can use the <a
-href="media-type-service.md"
-class="xref" target="_blank">Media Type Service</a> to view all media
-types.</p>
-<p><strong>Default:</strong> 1</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__193"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__194">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__195"><p>The name
-of the allowed media type.</p>
-<p><strong>Default:</strong> "Banner"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__193"><code
-class="ph codeph">media_type_group_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__194">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__195">The group
-ID for the media type.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__193"><code
-class="ph codeph">uses_sizes</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__194">enum</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__195">Whether the
-media type has size specifications. Possible values: "always",
-"sometimes", "never".</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__193"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__194">date</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__195">When the
-<code class="ph codeph">allowed_media_type</code> object was last
-updated.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Supported Media Subtypes**
-
-Creatives are categorized by media type and media subtype. Media type
-defines the general display style of the creative, for example,
-"Banner", and media subtype defines the specific display style of
-creatives, for example, "Standard Banner" or "In-Banner Video". You can
-use this array to limit the media subtype, the specific display style of
-creatives, that can serve on a placement. To limit the media type, the
-general display style of creatives, use the supported_media_types array
-(see <a
-href="placement-service.md#PlacementService-SupportedMediaTypes"
-class="xref" target="_blank">Supported Media Types</a> above).
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__211"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__212"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__213"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__211"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__212">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__213"><p>The ID
-of the allowed media subtype. You can use the <a
-href="media-subtype-service.md"
-class="xref" target="_blank">Media Subtype Service</a> to view all media
-subtypes.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__211"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__212">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__213">The name of
-the allowed media subtype.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__211"><code
-class="ph codeph">is_private</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__212">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__213">Whether the
-media subtype is set to private. If <code class="ph codeph">true</code>
-then yes.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__211"><code
-class="ph codeph">media_type_group_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__212">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__213">The group
-ID for the media type.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-<b>Note:</b> **Notes on Supported Media Types
-and Media Subtypes**
-
-- If you do not specify either supported media types or supported media
-  subtypes, the "Banner" media type and all of its subtypes will be
-  allowed by default.
-- You can combine the "Banner" and "Text" media types, and any
-  combination of their media subtypes, on a single placement, but you
-  cannot combine any of the other media types and media subtypes. This
-  limitation ensures that only appropriate creatives are served on a
-  placement. For example, a placement that allows creatives of the media
-  type "Video" is intended to be fed to a video player; it would not
-  make sense to allow creatives of any other media type, such as
-  "Interstitial", to serve on the placement.
-- You can set a placement to allow the "Expandable" media type or any of
-  its subtypes for direct inventory. If you want to support expandable
-  creatives for placements that are available for reselling to other
-  platform members, please provide the placement's ID to
-  <a href="https://help.xandr.com/" class="xref"
-  target="_blank">support</a> for verification.
-
-
-
-**Supported Mime Types**
-
-
-
-The `mime_types` array of objects supports the mime types shown in the
-following table. If no mime types are specified, all mime types will be
-accepted. The Placement API uses the string in the **Name** column. If
-you need to pass this information in a tag, use the ID.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__226"
-class="entry align-left colsep-1 rowsep-1">Name</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__227"
-class="entry align-left colsep-1 rowsep-1">Id</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph">application/x-shockwave-flash </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">1</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/x-flv </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">2</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/mp4 </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">3</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/webm </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">4</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> application/javascript </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">5</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> application/octet-stream </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">6</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> image/jpeg </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">7</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> image/gif </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">8</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> image/png </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">9</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> application/zip </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">10</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> application/</code><a href="http://vnd.ms/"
-class="xref" target="_blank"><code
-class="ph codeph">vnd.ms</code></a><code
-class="ph codeph">-asf </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">11</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/x-ms-wmv </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">12</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/ogg </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">13</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/x-msvideo </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">14</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/mpeg </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">15</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/quicktime </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">16</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/3gpp </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">17</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/3gpp2 </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">18</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> video/x-m4v </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">19</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> audio/ogg </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">20</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> audio/x-pn-realaudio </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">21</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> audio/mpeg </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">22</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> text/css </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">23</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> text/html </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">24</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> text/plain </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">25</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__226"><code
-class="ph codeph"> audio/mp4 </code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__227">26</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Video Settings**
-
-If the `supported_media_type` is "video" or the
-`supported_media_subtypes` is "Standard VAST", these fields should be
-included in the `video` object. Please see <a
-href="placement-service.md#PlacementService-Examples"
-class="xref" target="_blank">Examples</a> below.
-
-
-
-<b>Note:</b> The following settings affect
-auction outcomes: for Outstream player settings, which determine the
-ultimate behavior of the Outstream video player, see "Outstream Video
-Player Settings" in our UI documentation.
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__280"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__281"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__282"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The ID of
-the video creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The width
-of the video creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">max_duration_secs</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The
-maximum duration of a video ad that is allowed to be played on the
-placement.</p>
-<p>If maximum_number_ads is &gt; 1, then the max duration applies to the
-entire length of an ad pod (a linear grouping of more than one ad
-designed to fill a single placement).</p>
-
-<b>Note:</b> This field must be set in order
-to enable ad pods.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">maximum_ad_duration_secs</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The maximum
-video ad duration in seconds of any single ad that can be played on the
-placement. This only applies to ad pods.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">maximum_number_ads</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The maximum
-number of ads that are allowed to be played on the placement. If
-maximum_number_ads is &gt; 1, then the placement can be an ad pod (a
-linear grouping of more than one ad designed to fill a single
-placement).</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">start_delay_secs</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The
-start delay in seconds for the placement. If the start delay value is
-&gt; 0, then the position of the placement is "mid-roll".</p>
-
-<b>Note:</b> This field must be set if the
-context is "mid-roll".
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">skipoffset_seconds</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The
-number of seconds that is allowed for the video to play, before it can
-be skipped.</p>
-<p>The default value is <code class="ph codeph">null</code>.</p>
-class="note caution note_caution">
-CAUTION: If you set this value to
-anything but <code class="ph codeph">null</code>, the <code
-class="ph codeph">supports_skippable</code> field must be set to <code
-class="ph codeph">true</code>. (See below).
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">supports_skippable</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The ad
-slot is skippable.</p>
-<p>Possible values: "true" or "false"</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">context</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>Roll
-position of the video creative.</p>
-<p>Possible Values: "pre-roll", "mid-roll", "post-roll".</p>
-
-class="note important note_important">
-<b>Important:</b> This field must be set in
-order to enable ad pods.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">layback_method</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The
-different playback methods are:</p>
-<ul>
-<li>Auto-play, sound-on</li>
-<li>Auto-play, sound-off</li>
-<li>Click-to-play</li>
-<li>Mouse-over</li>
-<li>Auto-play, sound unknown</li>
-</ul>
-<p>Possible values: "auto_play_sound_on", "auto_play_sound_off",
-"click_to_play", "mouse_over", "auto_play_sound_unknown", null</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">frameworks</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">array of
-strings</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>The
-framework of the placement. Options include:</p>
-<ul>
-<li>VPAID 1.0</li>
-<li>VPAID 2.0</li>
-<li>MRAID-1</li>
-<li>ORMMA</li>
-<li>MRAID-2</li>
-</ul>
-<p>Possible values: "vpaid_1_0", "vpaid_2_0", "mraid_1", "ormma" and
-"mraid_2"</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">video_bumpers</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The bumpers
-that can be associated with the ad pod. Bumper duration is not included
-in the overall duration of the ad pod. See video bumpers object.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">player_vast_version</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282"><p>This
-field specifies the highest vast version the placement supports, and
-should be set to highest value that your player supports. Creatives that
-require a vast version higher than your player version will not be
-eligible to serve in your placement.</p>
-<p>Possible values:</p>
-<ul>
-<li>2.0</li>
-<li>3.0</li>
-<li>4.0</li>
-</ul>
-
-class="note caution note_caution">
-CAUTION: Specifying a value higher than
-your player supports may cause errors when unsupported creatives are
-rendered.
-
-</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">vmin_ad_duration</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The minimum
-creative duration allowed, in seconds.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">minbitrate</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The minimum
-bitrate in kbps.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">mf_min_width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The minimum
-width of the video creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">mf_min_height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The minimum
-height of the video creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__280"><code
-class="ph codeph">aspect ratios</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__281">array of
-objects</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__282">The
-creative aspect ratio that can serve for a video placement. The array
-contains ratio_width and ratio_height.</td>
-</tr>
-</tbody>
-</table>
-
-**Video Bumpers**
-
-
-
-This array of objects contains information relating to the bumpers on an
-ad pod.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__337"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__338"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__339"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__337"><code
-class="ph codeph">video_bumper_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__338">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__339"><p>The type
-of bumper. Options include:</p>
-<ul>
-<li>intro</li>
-<li>outro</li>
-</ul>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__337"><code
-class="ph codeph">max_duration_secs</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__338">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__339"><p>The max
-duration of the bumper.</p>
-<p><strong>Default:</strong> null</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Aspect Ratios**
-
-
-
-This array of objects contains information about creative aspect ratio
-that can serve for a video placement.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__346"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__347"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__348"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__346"><code
-class="ph codeph">ratio_width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__347">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__348">The width
-of the aspect ratio</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__346"><code
-class="ph codeph">ratio_height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__347">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__348">The height
-of the aspect ratio</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Ad Types**
-
-
-
-This array of objects contains information relating to placement types,
-including the ad type ID and information about the renderer.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__355"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__356"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__357"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__355"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__356">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__357"><p>The ID
-of the <code class="ph codeph">ad_type</code>.</p>
-<p>Possible values:</p>
-<ul>
-<li>1 = Banner</li>
-<li>2 = Video</li>
-<li>3 = Native</li>
-</ul>
-<p><strong>Default:</strong> null</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__355"><code
-class="ph codeph">renderer_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__356">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__357"><p>The ID
-of the renderer.</p>
-<p>Possible values:</p>
-<ul>
-<li>1 = outstream banner</li>
-<li>2 = outstream video</li>
-</ul>
-<p><strong>Default:</strong> null</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__355"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__356">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__357">The name of
-the ad_type in all lowercase letters for example <code
-class="ph codeph">video</code> or <code
-class="ph codeph">banner</code></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__355"><code
-class="ph codeph">display_name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__356">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__357">The display
-name of the ad_type, shown as the ad type with initial caps, for example
-<code class="ph codeph">Video</code> or <code
-class="ph codeph">Banner.</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__355"><code
-class="ph codeph">renderer</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__356">multi
-object</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__357"><p>An
-object consisting of the <code class="ph codeph">id</code> and <code
-class="ph codeph">display_name</code> of the renderer.</p>
-<p><strong>Default:</strong> null</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Tinytag Renderer Asset Floor Prices**
-
-
-
-This array of objects is used to associate floor prices to native
-creatives that have been assigned to the placement.
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__section_zgc_lbg_twb__entry__373"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__374"
-class="entry align-left colsep-1 rowsep-1">Type (Length)</th>
-<th id="placement-service__section_zgc_lbg_twb__entry__375"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__373"><code
-class="ph codeph">renderer_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__374">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__375"><p>The ID
-of the renderer.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__373"><code
-class="ph codeph">ad_type_id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__374">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__375"><p>The ID
-of the <code class="ph codeph">ad_type</code>. This will always be <code
-class="ph codeph">3</code> since you can only associate floor prices
-with native creatives.</p>
-<p><strong>Default:</strong> 3</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__373"><code
-class="ph codeph">asset_type</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__374">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__375"><p>The
-asset type.</p>
-<p>Possible values include:</p>
-<ul>
-<li>main_image</li>
-<li>video</li>
-</ul>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__373"><code
-class="ph codeph">floor_price</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__374">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__section_zgc_lbg_twb__entry__375"><p>The
-preferred bid amount in exchange for the native asset's impressions.</p>
-<p><strong>Required On:</strong> <code
-class="ph codeph">POST/PUT</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Default Creatives**
-
-You use this array to assign default creatives to the placement. Please
-note the following requirements:
-
-- A default creative must not be expired. See the is_expired field in
-  the <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a> for more
-  information.
-
-- A default creative must be assigned to a creative template that
-  matches the supported_media_types and supported_media_subtypes of the
-  placement. For example, if the placement allows creatives of the
-  "Banner" media type, you would not be able to associate default
-  creatives that use a creative template for the "Interstitial" media
-  type. See the template field in the <a
-  href="creative-service.md"
-  class="xref" target="_blank">Creative Service</a> for more
-  information.
-
-- If the placement is sized (the "width" and "height" fields are defined
-  for the placement), this array should contain only one creative with
-  the matching dimensions.
-
-<table id="placement-service__table_w2f_vzk_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__table_w2f_vzk_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__table_w2f_vzk_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__table_w2f_vzk_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__3">The ID of the
-default creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__3">The width of
-the default creative.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__3">The height of
-the default creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__1"><code
-class="ph codeph">price</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__3">The reserve
-price for the default creative. A winning bid must be above this
-price.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_w2f_vzk_twb__entry__3"><strong>Read-only.</strong>
-The name of the default creative.</td>
-</tr>
-</tbody>
-</table>
-
-**Pop Values**
-
-If the `supported_media_type` is "Pop", or the
-`supported_media_subtypes` is "Popup" or "Popunder", these fields should
-be included in the `pop_values` array. Please see below for an example.
-
-<table id="placement-service__table_x2f_vzk_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__table_x2f_vzk_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__table_x2f_vzk_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__table_x2f_vzk_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__1"><code
-class="ph codeph">pop_freq_times</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__3"><p>Number of
-times that the tag can be popped to a unique user ID in <code
-class="ph codeph">pop_frequency_duration</code> seconds. Has no effect
-when pop_is_prepop is set to true.</p>
-<p><strong>Default:</strong> No frequency cap</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__1"><code
-class="ph codeph">pop_freq_duration</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__3"><p>See
-pop_freq_times.</p>
-<p><strong>Default:</strong> No frequency cap</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__1"><code
-class="ph codeph">pop_is_prepop</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__3"><p>If true, the
-tag is a prepop tag and will serve into a window that the publisher page
-has already popped.</p>
-<p><strong>Default:</strong> false</p></td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__1"><code
-class="ph codeph">pop_max_width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__3"><p>If
-pop_max_width is specified, any creative shown by the tag must have a
-width equal to or smaller than pop_max_width</p>
-<p><strong>Default:</strong> no max width</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__1"><code
-class="ph codeph">pop_max_height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_x2f_vzk_twb__entry__3"><p>The max
-height of the creative. If pop_max_height is specified, any creative
-shown by the tag must have a height equal to or smaller than
-pop_max_height</p>
-<p><strong>Default:</strong> no max height</p></td>
-</tr>
-</tbody>
-</table>
-
-**Estimated Clear Prices**
-
-<table id="placement-service__table_y2f_vzk_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__table_y2f_vzk_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__table_y2f_vzk_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__table_y2f_vzk_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">clear_price</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">The bid amount
-that has historically won the majority (95%) of the 3rd party auctions
-in which it participates for this placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">average_price</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">double</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">This is the
-average of all bids submitted for this placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">When exporting
-sizeless placement tags to be served, this determines the width of the
-placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">When exporting
-sizeless placement tags to be served, this determines the height of the
-placement.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">verified</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">Boolean</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">Indicates
-whether the creative has been verified.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__1"><code
-class="ph codeph">geo_country</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_y2f_vzk_twb__entry__3">The country
-code for the geographical location associated with the impression.</td>
-</tr>
-</tbody>
-</table>
-
-**Private Sizes**
-
-This array determines the specific placement sizes that are allowed to
-serve for a custom deal or in a package. The `override_size_preference`
-in the
-<a href="deal-service.md"
-class="xref" target="_blank">Deal Service</a> or <a
-href="package-service.md"
-class="xref" target="_blank">Package Service</a> must be set to `append`
-for these private sizes to serve along with the standard placement
-sizes.
-
-<table id="placement-service__table_z2f_vzk_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__table_z2f_vzk_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Field</th>
-<th id="placement-service__table_z2f_vzk_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__table_z2f_vzk_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__1"><code
-class="ph codeph">width</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__3">The width of
-the placement.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__1"><code
-class="ph codeph">height</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__2">int</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_z2f_vzk_twb__entry__3">The height of
-the placement.</td>
-</tr>
-</tbody>
-</table>
-
-**Stats**
-
-The `stats` object has been deprecated (as of October 17, 2016). Use the
-<a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> to obtain statistical
-information instead.
-
-Toolbar & Browser Plug-in Declaration
-
-According to <a
-href="placement-service.md#"
-class="xref" target="_blank">platform policy</a>, sellers must identify
-all toolbar/browser plug-in inventory and segregate it from other
-inventory on its own placements. To identify toolbar inventory, sellers
-must:
-
-- Set the inventory_attribute appropriately
-
+- Set the `inventory_attribute` appropriately.
 - Send the required information in the toolbar array, described here:
 
-<table id="placement-service__table_bff_vzk_twb" class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-service__table_bff_vzk_twb__entry__1"
-class="entry align-left colsep-1 rowsep-1">Parameter</th>
-<th id="placement-service__table_bff_vzk_twb__entry__2"
-class="entry align-left colsep-1 rowsep-1">Type</th>
-<th id="placement-service__table_bff_vzk_twb__entry__3"
-class="entry align-left colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__3">The common
-trade name of the toolbar.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__1"><code
-class="ph codeph">company</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__3">The developer
-of the toolbar. Please identify the legal business entity, not a trade
-name.</td>
-</tr>
-<tr class="odd row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__1"><code
-class="ph codeph">tos_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__3">A link to a web
-page where our auditors can find complete terms of service.</td>
-</tr>
-<tr class="even row">
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__1"><code
-class="ph codeph">install_url</code></td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__2">string</td>
-<td class="entry align-left colsep-1 rowsep-1"
-headers="placement-service__table_bff_vzk_twb__entry__3">A link to a web
-page where our auditors can install the toolbar.</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Parameter | Type | Description |
+|:---|:---|:---|
+| `name` | string | The common trade name of the toolbar. |
+| `company` | string | The developer of the toolbar. Please identify the legal business entity, not a trade name. |
+| `tos_url` | string | A link to a web page where our auditors can find complete terms of service. |
+| `install_url` | string | A link to a web page where our auditors can install the toolbar. |
 
 ## Examples
 
+### Viewing all placements for one of your publishers
 
-
-**Viewing all placements for one of your publishers**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/placement?publisher_id=88888'
 
 {
@@ -2760,13 +637,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/placement?publisher_id=88
 }
 ```
 
+### Viewing a specific placement
 
-
-
-
-**Viewing a specific placement**
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/placement?id=605057'
 
 {
@@ -2839,14 +712,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/placement?id=605057'
 }
 ```
 
+### Adding a placement that allows only creatives with the `"Interstitial"` media type
 
-
-
-
-**Adding a placement that allows only creatives with the "Interstitial"
-media type**
-
-``` pre
+```
 $ cat placement
 
 {
@@ -2938,14 +806,9 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
 }
 ```
 
+### Adding a placement that allows only creatives with the `"In-Banner Video"` media subtype
 
-
-
-
-**Adding a placement that allows only creatives with the "In-Banner
-Video" media subtype**
-
-``` pre
+```
 $ cat placement
 
 {
@@ -3040,14 +903,9 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
 }
 ```
 
+### Adding a placement that allows only creatives with the `"Popup"` media subtype
 
-
-
-
-**Adding a placement that allows only creatives with the "Popup" media
-subtype**
-
-``` pre
+```
 $ cat placement
 
 {
@@ -3151,14 +1009,9 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
 }
 ```
 
+### Adding a placement that allows only creatives with the `"Video Standard VAST"` media subtype
 
-
-
-
-**Adding a placement that allows only creatives with the "Video Standard
-VAST" media subtype**
-
-``` pre
+```
 $ cat placement
 {
     "placement": {
@@ -3289,13 +1142,9 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
 }
 ```
 
+### Adding an ad pod placement that allows an intro bumper
 
-
-
-
-**Adding an ad pod placement that allows an intro bumper**
-
-``` pre
+```
 $ cat placement
 {
     "placement": {
@@ -3430,13 +1279,9 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
 }
 ```
 
+### Adding a placement with the skipoffset feature enabled
 
-
-
-
-**Adding a placement with the skipoffset feature enabled**
-
-``` pre
+```
 {
         "placement": {
             "id": 11633087,
@@ -3465,11 +1310,3 @@ $ curl -b cookies -c cookies -X POST -d @placement 'https://api.appnexus.com/pla
         }
 }
 ```
-
-
-
-
-
-
-
-

@@ -10,16 +10,15 @@ ms.date : 10/28/2023
 > [!IMPORTANT]
 > This offering is currently in Alpha and is subject to change.
 
-> [!TIP]
-> The Background Threading feature enables MobileSDK to execute the ad requests for different AdUnits like banner, interstitial, native, and videos as a background thread instead of a UI thread. This feature can be turned on or off by a method (`enableBackgroundThreading`). By default, Background Threading feature is disabled in MobileSDK which can be enabled by using this method.
+The background threading feature enables Mobile SDK to execute the ad requests for different AdUnits like banner, interstitial, native, and videos as a background thread instead of a UI thread. This feature can be turned on or off by a method (`enableBackgroundThreading`). By default, this feature is disabled in Mobile SDK.
 
 ## Methods
 
-The following methods are supported.
+The following methods are supported in this feature:
 
 ### enableBackgroundThreading(boolean)
 
-Method used to enable or disable the Background Threading feature flag, based on which the AdRequests will be executed on or off the background thread. By default, the boolean value for the method is set to false (which uses AsyncTask of Android). To enable the feature of background threading, the value needs to be set as true in the method.  
+You can use this method to enable or disable the background threading feature flag, based on which the AdRequests will be executed on or off the background thread. By default, the boolean value for the method is set to false (which uses AsyncTask of Android). To enable the feature of background threading, set the value to true.  
   
 ```
 /**
@@ -34,7 +33,7 @@ public static void enableBackgroundThreading(boolean enable)
 
 ### init()
 
-Method that initializes the MobileSDK early in the apps lifecycle and executes the tasks that require UI thread during an AdRequest ahead of time. This method ensures that the MobileSDK will use background threading only during the execution of the actual AdRequest. To know about completion of the init method, a listener can be passed along with the method.
+Method that initializes the Mobile SDK early in the apps lifecycle and executes the tasks that require UI thread during an AdRequest ahead of time. This method ensures that the Mobile SDK will use background threading only during the execution of the actual AdRequest. To know about completion of the init method, a listener can be passed along with the method.
 
 ```
 /**

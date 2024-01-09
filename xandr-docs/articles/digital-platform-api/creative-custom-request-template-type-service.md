@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Creative Custom Request Template Type service
 
 > [!NOTE]
-> Mediation is available only to Microsoft Monetize Ad Server customers.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The Creative Custom Request Template Type Service is a read-only service that lists the specific types of creative custom request templates needed to integrate with various ad servers. When you create a new custom request template using the [Creative Custom Request Template Service](creative-custom-request-template-service.md), you must specify that your template is one of the types listed by this service. Together they describe how to make requests to that ad server that use the correct query string parameters and are populated with the correct creative macros.
 

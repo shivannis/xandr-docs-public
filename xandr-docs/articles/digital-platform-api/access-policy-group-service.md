@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Access Policy Group service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **access-policy-group** service allows you to retrieve the elements that make up a role or a team. For a role this service returns a list of tokens that define user permissions. For teams, this service returns the IDs of the advertisers, insertion orders, publishers, sites, and placements that make up the team.
 

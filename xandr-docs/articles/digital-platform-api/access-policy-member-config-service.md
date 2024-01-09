@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Access Policy Member Config service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **access-policy-member-config** service is available only to Xandr administrators. This service allows you to identify whether a member account has been enabled for access control.
 

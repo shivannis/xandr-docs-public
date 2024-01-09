@@ -7,8 +7,8 @@ ms.custom: digital-platform-api
 
 # Buy-side forecasting service
 
-> [!IMPORTANT]
-> This page can only be viewed by Xandr employees.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 A successful campaign requires, among other things, accurate delivery. Delivery can sometimes be difficult to predict. For example, a trader may not know whether lowering a bid will result in under delivery. To help traders better understand the dynamics behind available impressions for a particular campaign, you can create a forecast. These forecasts provide buyers with insight into the number of impressions that could be delivered, given their campaign's targeting choices at various CPM bids. Access to this type of data before the actual campaign runs, helps buyers better plan budgets with their clients.
 

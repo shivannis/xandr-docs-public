@@ -6,8 +6,7 @@ ms.custom: yield-analytics-ui
 ---
 
 # Import order template
-
-Download and complete this [Excel template](https://yieldex.atlassian.net/wiki/download/attachments/1081369/Deal%20Planner%20Expected%20Order%20Import%20Format.xls?version=1&amp;modificationDate=1382985797864&amp;api=v2) to import an order.
+Create an XLS file with following fields for an import order template:
 
 ## Template fields
 

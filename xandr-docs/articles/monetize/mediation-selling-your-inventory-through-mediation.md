@@ -1,23 +1,14 @@
 ---
-Title : Selling Your Inventory Through Mediation
-Description : <b>Note:</b> Mediation is available only to
+title: Selling Your Inventory Through Mediation
+description: This page explains how mediation works and walks you through the process of using our system to set up mediation with external ad networks. 
 ms.date: 10/28/2023
-Microsoft Monetize Ad Server customers.
 ---
 
 
-# Selling Your Inventory Through Mediation
+# Selling your inventory through mediation
 
-
-
-
-
-
-
-<b>Note:</b> Mediation is available only to
-Microsoft Monetize Ad Server customers.
-
-
+> [!NOTE]
+> Mediation is available only to Microsoft Monetize Ad Server customers. 
 
 Mediation is a process by which you allocate inventory to buyers that
 are not directly integrated with our exchange. This is necessary in
@@ -34,44 +25,32 @@ of using our system to set up mediation with external ad networks. The
 focus is on networks we support, but you can create custom networks to
 perform any kind of integration you want.
 
-
-
->
-
-## Getting Started
+## Getting started
 
 To start selling your inventory through mediation, you must:
 
-1.  Have the **Mediation** tab enabled for your Xandr
+1. Have the **Mediation** tab enabled for your Xandr
     Monetize Ad Server account. You'll need to contact your
     Xandr representative.
-2.  From the list of supported networks in the **Mediation** tab, add
-    the networks for which you have accounts. For instructions, see
-    <a href="mediation-networks.md" class="xref">Mediation Networks</a>.
-3.  Once you've created your networks, switch to the bids page and begin
-    creating bids. For instructions, see
-    <a href="mediation-bids.md" class="xref">Mediation Bids</a>.
-4.  Activate your bids to start selling.
+1. From the list of supported networks in the **Mediation** tab, add
+    the networks for which you have accounts. For instructions, see [Mediation Networks](mediation-networks.md).
+1. Once you've created your networks, switch to the bids page and begin
+    creating bids. For instructions, see [Mediation Bids](mediation-bids.md).
+1. Activate your bids to start selling.
 
-
-
-
-
-## How Mediation Works
+## How mediation works
 
 At a high level, here's how mediation works:
 
-1.  You
-    <a href="mediation-networks.md" class="xref">Mediation Networks</a>
-    to our system that represents a mediated ad network.
-2.  You <a href="mediation-bids.md" class="xref">Mediation Bids</a>
+1. You [Mediation Networks](mediation-networks.md) to our system that represents a mediated ad network.
+1. You [Mediation Bids](mediation-bids.md)
     which is used to rank that network in auctions for your inventory.
     The bid should represent the amount you think the network is likely
     to pay for your inventory.
-3.  The auction is run, with the bid price you set used to rank the
+1. The auction is run, with the bid price you set used to rank the
     mediated bid against other bids coming in from the exchange in
     real-time.
-4.  The mediated network either returns an ad or not. If no ad is
+1. The mediated network either returns an ad or not. If no ad is
     returned or the network does not respond in time, we move on to the
     next highest bid in the auction.
 
@@ -88,44 +67,13 @@ the other bids coming in, it wins the auction. However, CoolAds may not
 actually be paying you $2.00, and you won't find out until well after
 the auction when you check the daily totals from the CoolAds servers.
 
+> [!NOTE]
+> For more information about how mediated bids interact with the other demand types in auctions, see [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md).
 
+:::image type="content" source="media/ssp-auction-example-a.png" alt-text="Screenshot of SSP - A .":::
 
-<b>Note:</b> For more information about how
-mediated bids interact with the other demand types in auctions, see
-<a href="mediation-how-auctions-work-for-sellers.md" class="xref">How
-Auctions Work for Sellers</a>.
+## Related topics
 
-
-
-
-
-![SSP - A](media/ssp-auction-example-a.png)
-
-
-
-
-  
-
-
-
-
-
-
-
-## Related Topics
-
-
-
-- <a href="mediation-how-auctions-work-for-sellers.md" class="xref">How
-  Auctions Work for Sellers</a>
-- <a href="mediation-integrating-for-mediation.md"
-  class="xref">Integrating for Mediation</a>
-- <a href="mediation-faqs.md" class="xref">Mediation FAQs</a>
-
-
-
-
-
-
-
-
+- [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md)
+- [Integrating for Mediation](mediation-integrating-for-mediation.md)
+- [Mediation FAQs](mediation-faqs.md)

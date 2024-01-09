@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Freewheel priority values in Yield Analytics
 
-To appropriately rank competing FreeWheel placements, yield analytics maps numerical values to FreeWheel priority values.
+To appropriately rank competing FreeWheel placements, Yield Analytics maps numerical values to FreeWheel priority values.
 
 ## Freewheel summary
 
@@ -20,7 +20,7 @@ Yield Analytics assigns priority values for FreeWheel order lines as follows:
 
 ## Priority mapping table
 
-The following mappings are based on FreeWheel's values for Contract type and Override, and are displayed in decreasing order of rank. These values will be available across the yield analytics UI, including availability lookups and reports.
+The following mappings are based on FreeWheel's values for Contract type and Override, and are displayed in decreasing order of rank. These values are available across the Yield Analytics UI, including availability lookups and reports.
 
 | FreeWheel value | Yield Analytics priority label | Yield Analytics priority value | Notes |
 |:---|:---|:---|:---|
@@ -55,7 +55,7 @@ The following mappings are based on FreeWheel's values for Contract type and 
 | Preemptible Impressions | Below paying ads -10 | -10 | Lowest value |
 
 > [!NOTE]
-> The yield analytics priority labels for FreeWheel can be customized per client. For more information, please contact your services representative.
+> The Yield Analytics priority labels for FreeWheel can be customized per client. For more information, please contact your services representative.
 
 ## Related topic
 

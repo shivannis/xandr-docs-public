@@ -1,147 +1,55 @@
 ---
-Title : Report Pagination
-Description : Report Pagination is a feature that allows API users to retrieve
+title: Report Pagination
+description: Explore the Report Pagination feature, which permits API users to fetch lengthy reports, preventing timeouts during processing.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-long-running reports that would otherwise time out before they complete
-processing. For more information about reporting API usage limits, see
 ---
 
+# Report pagination
 
-# Report Pagination
+Report Pagination is a feature that allows API users to retrieve long-running reports that would otherwise time out before they complete
+processing. For more information about reporting API usage limits, see the **Report Throttling** section of the [Report Service](report-service.md) page.
 
+Crafting a more granular report with fewer dimensions and metrics or pulling a report on a shorter timeframe is usually the best option for ensuring that a report does not time out. For tips on keeping your reports lean and focused, see the [API Best Practices](api-best-practices.md) page.
 
-
-Report Pagination is a feature that allows API users to retrieve
-long-running reports that would otherwise time out before they complete
-processing. For more information about reporting API usage limits, see
-the Report Throttling section of the
-<a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> page.
-
-Crafting a more granular report with fewer dimensions and metrics or
-pulling a report on a shorter timeframe is usually the best option for
-ensuring that a report does not time out. For tips on keeping your
-reports lean and focused, see the <a
-href="api-best-practices.md"
-class="xref" target="_blank">API Best Practices page</a>.
-
-In some cases, however, it is not practical to change the dimensions,
-metrics or timeframe. Report pagination can help bridge the gap and
+In some cases, however, it is not practical to change the dimensions, metrics or timeframe. Report pagination can help bridge the gap and
 allow you to retrieve a long-running report in smaller chunks.
 
+## Report pagination required fields
 
+The feature requires that you include three fields in the body of your JSON request (for details, see the [Examples](#examples)):
 
-## Report Pagination Required Fields
+| Field | Type | Description |
+|:---|:---|:---|
+| `"offset"` | int | The row number that this report should start from. |
+| `"num_elements"` | int | The number of rows this report should return in total. |
+| `"orders"` | array of strings | The order of the dimensions in the report. |
 
-The feature requires that you include three fields in the body of your
-JSON request (for details, see the
-<a href="report-pagination.md#ID-00000bc3__23"
-class="xref">Example</a>):
+## Implementing report pagination
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00000bc3__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00000bc3__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00000bc3__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__1"><code
-class="ph codeph">"offset"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bc3__entry__3">The
-row number that this report should start from.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__1"><code
-class="ph codeph">"num_elements"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bc3__entry__3">The
-number of rows this report should return in total.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__1"><code
-class="ph codeph">"orders"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00000bc3__entry__2">array of strings</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00000bc3__entry__3">The
-order of the dimensions in the report.</td>
-</tr>
-</tbody>
-</table>
+If you have used the API's paging system for retrieving configuration bjects from the API (as described in the **Paging** section of [API Semantics](api-semantics.md)), this feature should feel familiar.
 
+The `"num_elements"` field is used to specify how many rows are in each "page" of the report, and has no maximum value but should be tuned to a number that allows the report to process without timing out.
 
+The `"offset"` field should start at 0 and should increment in multiples of `"num_elements"` until all rows of the report have been retrieved. When the report is retrieved, if there are `n-1` or fewer rows in the report (where `n` equals the value in `"num_elements"`), then you have requested all of the available rows in the report. If there are `n` rows, then you should request another paginated report.  
+> [!WARNING]
+> The `"orders"` field should include an ordering for all dimensions included in your report. If you submit a request for a paginated report without the `"orders"` field or without all dimensions in the report, you may be missing rows of data or duplicating rows of data between the paged requests of your report.
 
+## How many rows should you retrieve at once?
 
+There is no maximum value on the `"num_elements"` field, so you will want to tune this number against the time it takes to run a report in
+the specific member seat that you are retrieving. Most large reports can safely be retrieved with the `"num_elements"` field set to a value between 1MM rows and 2MM rows, but you should test that value for your own report.
 
-## Implementing Report Pagination
+## Examples
 
-If you have used the API's paging system for retrieving configuration
-objects from the API (as described in the
-Paging section of <a
-href="api-semantics.md"
-class="xref" target="_blank">API Semantics</a>), this feature should
-feel familiar. 
+### Step 1: Create the paginated report JSON
 
-The `"num_elements"` field is used to specify how many rows are in each
-"page" of the report, and has no maximum value but should be tuned to a
-number that allows the report to process without timing out.
+This particular report will consist of two report requests: `report_page_1.json` and `report_page_2.json`.
 
-The `"offset"` field should start at 0 and should increment in multiples
-of `"num_elements"` until all rows of the report have been retrieved.
-When the report is retrieved, if there are `n-1` or fewer rows in the
-report (where `n` equals the value in `"num_elements"`), then you have
-requested all of the available rows in the report. If there are `n`
-rows, then you should request another paginated report.  
+> [!NOTE]
+> The requests are identical except for the `"offset"` field, and that the `"orders"` field is required.
 
-
-
-<b>Warning:</b> The `"orders"` field should
-include an ordering for all dimensions included in your report. If you
-submit a request for a paginated report without the `"orders"` field or
-without all dimensions in the report, you may be missing rows of data or
-duplicating rows of data between the paged requests of your report.
-
-
-
-
-
-
-
-## How Many Rows Should You Retrieve at Once?
-
-There is no maximum value on the `"num_elements"` field, so you will
-want to tune this number against the time it takes to run a report in
-the specific member seat that you are retrieving. Most large reports can
-safely be retrieved with the `"num_elements"` field set to a value
-between 1MM rows and 2MM rows, but you should test that value for your
-own report. 
-
-
-
-
-
-## Example
-
-**Step 1. Create the paginated report JSON **
-
-This particular report will consist of two report requests:
-`report_page_1.json` and `report_page_2.json`. Note that the requests
-are identical except for the `"offset"` field, and that the `"orders"`
-field is required.
-
-``` pre
+```
 $ cat report_page_1.json    
                                                     
 {
@@ -260,9 +168,9 @@ $ cat report_page_2.json
 }
 ```
 
-**Step 2. Submit the requests**
+### Step 2: Submit the requests
 
-``` pre
+```
 $ curl -b cookie -c cookie -X POST -s -d @report_page_1.json "https://api.appnexus.com/report"
 {
   "response": {
@@ -287,9 +195,9 @@ $ curl -b cookie -c cookie -X POST -s -d @report_page_2.json "https://api.appnex
 }
 ```
 
-**Step 3. Check that both reports process**
+### Step 3: Check that both reports process
 
-``` pre
+```
 $ curl -b cookie -c cookie -s "https://api.appnexus.com/report?id=6b7a44dc1b3f8bc47cd4d8sd32e4f841c" 
  
 {
@@ -338,39 +246,24 @@ $ curl -b cookie -c cookie -s "https://api.appnexus.com/report?id=700367274ae2c8
 }
 ```
 
-**Step 4. Download the finished reports**
+### Step 4: Download the finished reports
 
-``` pre
-$ curl -b cookie -c cookie -s "https://api.appnexus.com/report-download?id=6b7a44dc1b3f8bc47cd4d8sd32e4f841c' > report_page_1.csv
-$ curl -b cookie -c cookie -s "https://api.appnexus.com/report-download?id=700367274ae2c84b337436a4absdd835' > report_page_2.csv
+```
+curl -b cookie -c cookie -s "https://api.appnexus.com/report-download?id=6b7a44dc1b3f8bc47cd4d8sd32e4f841c' > report_page_1.csv
+curl -b cookie -c cookie -s "https://api.appnexus.com/report-download?id=700367274ae2c84b337436a4absdd835' > report_page_2.csv
 ```
 
-**Step 5. Check that row count matches total row count**
+### Step 5: Check that row count matches total row count
 
-``` pre
+```
 $ wc -l report_page_1.csv 
 2000000 report_page_1.csv
 $ wc -l report_page_2.csv 
 1834708 report_page_2.csv
 ```
 
+## Related topics
 
-
-
-## Related Topics
-
-- <a
-  href="report-service.md"
-  class="xref" target="_blank">Report Service</a>
-- <a
-  href="api-best-practices.md"
-  class="xref" target="_blank">API Best Practices</a>
-- <a
-  href="api-usage-constraints.md"
-  class="xref" target="_blank">API Usage Constraints</a>
-
-
-
-
-
-
+- [Report Service](report-service.md)
+- [API Best Practices](api-best-practices.md)
+- [API Usage Constraints](api-usage-constraints.md)

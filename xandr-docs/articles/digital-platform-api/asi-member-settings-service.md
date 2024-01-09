@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # ASI Member Settings service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The ASI Member Setting is an admin-only service that allows users to add entries to the `api.asi_member_settings` table. This table is consumed by adserver and contains configuration settings for ASI members. Please be careful when modifying objects using this service.
 
 ## REST API

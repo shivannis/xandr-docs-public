@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Seller member group service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 A seller member group consists of one or more members that sell inventory. Buyers can target seller member groups in addition to individual members to have to access a greater variety of inventory, such as that from newer and smaller publishers.
 
 Only admins can write to this service.  

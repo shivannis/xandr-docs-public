@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Augmented Line Items (ALI)
-description : Learn how Augmented line items (ALI) streamline a trader's workflow on the Xandr platform and advantages of using it.  
+title: Microsoft Monetize - Augmented Line Items (ALI)
+description: Learn how Augmented line items (ALI) streamline a trader's workflow on the Xandr platform and advantages of using it.  
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Reporting on Deals (Buy-Side)
-description : Learn running reports to assess the performance of deals.   
+title: Microsoft Monetize - Reporting on Deals (Buy-Side)
+description: Learn running reports to assess the performance of deals.   
 ms.date: 10/28/2023
 ---
 

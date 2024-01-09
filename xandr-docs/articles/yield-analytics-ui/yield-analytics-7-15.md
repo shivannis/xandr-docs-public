@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 7.15
-description : Learn about Support Period to Log Date. 
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 7.15
+description: Learn about Support Period to Log Date. 
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

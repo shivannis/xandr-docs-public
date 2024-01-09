@@ -8,7 +8,9 @@ ms.custom: digital-platform-api
 # Segment overlap report
 
 > [!NOTE]
-> This reporting API is currently for internal use only. It is therefore only visible to AppNexus employees. It supersedes the existing **Inventory Segment Daily Uniques** report, which was deprecated on 11/15/12.
+>  - This service is currently available to a limited set of clients and Microsoft employees only.
+>
+>  - This reporting API is currently for internal use only. It is therefore only visible to AppNexus employees. It supersedes the existing **Inventory Segment Daily Uniques** report, which was deprecated on 11/15/12.
 
 The **Segment Overlap Report** allows buyers to view data about the intersection of available inventory with a particular segment, filtered by geographic area, seller, or audit status. It offers answers to questions such as:
 

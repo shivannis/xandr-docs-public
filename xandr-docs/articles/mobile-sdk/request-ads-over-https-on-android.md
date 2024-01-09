@@ -10,7 +10,4 @@ ms.date : 10/28/2023
 > [!NOTE]
 > This property is scheduled to be deprecated in a future release.
 
-Starting with v2.15 of our SDKs, we support requesting ads over HTTPS.
-
-> [!NOTE]
-> This is a global setting for the AppNexus SDK. You only need to set this once, and all future ad requests will be sent over HTTPS.
+Starting with v2.15 of our SDKs, we support requesting ads over HTTPS. This is a global setting for the Mobile SDK. You only need to set this once, and all future ad requests will be sent over HTTPS.

@@ -1,25 +1,14 @@
 ---
-Title : How Auctions Work for Sellers
-Description : <b>Note:</b> This topic relates to Mediation,
+title: How Auctions Work for Sellers
+description: Learn how auctions run when there are different types of demand involved.  
 ms.date: 10/28/2023
-which is available only to Microsoft Monetize Ad
-Server customers.
 ---
 
 
-# How Auctions Work for Sellers
+# How auctions work for sellers
 
-
-
-
-
-
-
-<b>Note:</b> This topic relates to Mediation,
-which is available only to Microsoft Monetize Ad
-Server customers.
-
-
+> [!NOTE]
+> This topic relates to Mediation, which is available only to Microsoft Monetize Ad Server customers.
 
 In Microsoft Monetize Ad Server, you can run
 auctions for your inventory across different demand sources. In order to
@@ -31,19 +20,10 @@ This page will walk through a few examples. Our goal is to give you a
 feel for how auctions run when there are different types of demand
 involved.
 
+> [!NOTE]
+> Keep in mind that these examples are simplified for learning purposes. Real auctions have more complex interactions and edge cases than we can easily describe here.
 
-
-<b>Note:</b> Keep in mind that these examples
-are simplified for learning purposes. Real auctions have more complex
-interactions and edge cases than we can easily describe here.
-
-
-
-
-
-
-
-## Example One - Mediated Bid Wins With Highest Bid
+## Example one - Mediated bid wins with highest bid
 
 In this example, we will run an auction with three bids: a mediated bid,
 a direct bid, and a third-party bid.
@@ -61,27 +41,10 @@ system for the day's aggregate stats. For example, we may query the
 CoolAds server and discover that they only paid $1.00 CPM on average.
 The $2.00 CPM bid you set is only used for the auction ranking.
 
+> [!NOTE]
+> **Keep mediated bids up to date**: It's **very important** to keep mediated bids up to date to reflect the actual bids you're seeing from a mediated ad network. Up-to-date bids are the only way that we can run an effective auction. Out-of-date bids can have a **big** negative impact on monetization.
 
-
-<b>Note:</b> **Keep mediated bids up to
-date**: It's **very important** to keep mediated bids up to date to
-reflect the actual bids you're seeing from a mediated ad network.
-Up-to-date bids are the only way that we can run an effective auction.
-Out-of-date bids can have a **big** negative impact on monetization.
-
-
-
-
-![SSP](media/ssp-auction-example-b.png)
-  
-
-
-
-
-
-  
-
-
+:::image type="content" source="media/ssp-auction-example-a.png" alt-text="Screenshot of SSP .":::
 
 Because CoolAds "won" the first place in the initial ranking of the
 auction based on your $2.00 bid setting, and then returned a creative,
@@ -89,14 +52,9 @@ they are the winners of this auction (marked in green in the diagram).
 Their creative is served, and you will eventually get paid whatever they
 really bid.
 
-For instructions on creating a mediated bid, see
-<a href="mediation-bids.md" class="xref">Mediation Bids</a>.
+For instructions on creating a mediated bid, see [Mediation Bids](mediation-bids.md).
 
-
-
-
-
-## Example Two - Direct Buyer Wins With Second Highest Bid
+## Example Two - Direct buyer wins with second highest bid
 
 Now let's run that same auction again. This time the mediation call to
 CoolAds does not return an ad. Therefore, we simply accept the next
@@ -104,25 +62,9 @@ highest bid in the auction: the $1.75 CPM bid from our direct advertiser
 deal. The auction ends and the direct advertiser is declared the winner
 (shown in green). We receive $1.75 CPM and show the ad.
 
+:::image type="content" source="media/ssp-auction-example-b.png" alt-text="Diagram of SSP .":::
 
-
-  
-
-
-
-![SSP](media/ssp-auction-example-b.png)
-
-
-
-  
-
-
-
-
-
-
-
-## Example Three - Direct Buyer Wins With Third Highest Bid
+## Example Three - Direct buyer wins with third highest bid
 
 In the third example, we run an auction that's a lot like the first two.
 Like before, we have created a $2.00 bid for CoolAds, and they get the
@@ -135,33 +77,9 @@ is banned in your ad quality settings. Therefore, the auction goes to
 the third-highest bidder, a direct advertiser. The direct advertiser
 wins the auction with a bid of $1.25. We receive $1.25 and show the ad.
 
->
+:::image type="content" source="media/ssp-auction-example-c.png" alt-text="Diagram of SSP 3 .":::
 
-  
+## Related topics
 
-
-![SSP](media/ssp-auction-example-c.png)
-
-
-  
-
-
-
-
-
-
-
-## Related Topics
-
-
-
-- <a href="mediation-bids.md" class="xref">Mediation Bids</a>
-- <a href="mediation-networks.md" class="xref">Mediation Networks</a>
-
-
-
-
-
-
-
-
+- [Mediation Bids](mediation-bids.md)
+- [Mediation Networks](mediation-networks.md)

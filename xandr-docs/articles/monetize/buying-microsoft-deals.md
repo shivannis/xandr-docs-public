@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Microsoft Deals
-description : Learn how you can buy deals from the Microsoft Advertising Exchange using our Package Marketplace. 
+title: Microsoft Monetize - Buying Microsoft Deals
+description: Learn how you can buy deals from the Microsoft Advertising Exchange using our Package Marketplace. 
 ms.date: 10/28/2023
 ---
 

@@ -1,633 +1,106 @@
 ---
-Title : Package Buyer Access Service
-Description : This read-only service lets buyers view information about sellers'
+title: Digital Platform API - Package Buyer Access Service
+description: Buyers can view and generate deals for sellers' packages through package buyer access service. Packages are deals sellers are prepared to offer to buyers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-packages. A package is a deal that a seller is prepared to offer to any
 ---
 
+# Digital Platform API - Package buyer access service
 
-# Package Buyer Access Service
-
-
-
-This read-only service lets buyers view information about sellers'
-packages. A package is a deal that a seller is prepared to offer to any
-buyer. Buyers browse through available packages and then use the <a
-href="deal-from-package-service.md"
-class="xref" target="_blank">Deal From Package Service</a> to generate
-deals for themselves.
-
-
+This read-only service lets buyers view information about sellers' packages. A package is a deal that a seller is prepared to offer to any buyer. Buyers browse through available packages and then use the [Deal From Package Service](./deal-from-package-service.md) to generate deals for themselves.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000296a__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000296a__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__3">View
-all available packages</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access?member_id=SELLER_MEMBER_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access?member_id=SELLER_MEMBER_ID</a> </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__3">View
-all packages offered by a specific seller</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access?id=PACKAGE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access?id=PACKAGE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__3">View
-a specific package</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access?id=1%2c2%2c3"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access?id=1,2,3</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__3"> View multiple packages by ID using a
-comma-separated list</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access?sizes=WIDTHxHEIGHT%2cWIDTHxHEIGHT"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT</a> </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__3">View
-all packages including specific sizes</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/package-buyer-access?search=PACKAGE_ID</a>
-or NAME</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__3">Search for a package by name or ID</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__2"><a
-href="https://api.appnexus.com/package/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/package/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET`  | https://api.appnexus.com/package-buyer-access | View all available packages. |
+| `GET` | https://api.appnexus.com/package-buyer-access?member_id=SELLER_MEMBER_ID  | View all packages offered by a specific seller. |
+| `GET`  | https://api.appnexus.com/package-buyer-access?id=PACKAGE_ID | View a specific package. |
+| `GET`  | https://api.appnexus.com/package-buyer-access?id=1,2,3 |  View multiple packages by ID using a comma-separated list. |
+| `GET` | https://api.appnexus.com/package-buyer-access?sizes=WIDTHxHEIGHT,WIDTHxHEIGHT  | View all packages including specific sizes. |
+| `GET`  | [https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID or NAME](https://api.appnexus.com/package-buyer-access?search=PACKAGE_ID%20or%20NAME) | Search for a package by name or ID. |
+| `GET` | https://api.appnexus.com/package/meta | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
+| Name | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the package. |
+| `name` | string | The name of the package. |
+| `description` | string | The description of the package. Sellers generally use this to provide buyers greater insight into the deal. |
+| `active` | Boolean | If `true`, the package is active. If `false`, you cannot generate deals from the package and all associated deals will stop serving.   |
+| `default_ask_price` | double | The ask price that will be applied to all deals generated from the package. When you generate a deal, the [Deal Buyer Access Service](./deal-buyer-access-service.md) will automatically calculate the `suggested_min_bid_price` by adding the auction service charge specified in your Xandr contract to the value in this field. For more information on the `suggested_min_bid_price`, see the [Deal Buyer Access Service](./deal-buyer-access-service.md).<br><br>**Note**: This field is relevant only if `default_use_deal_floor` is `true`. |
+| `default_currency` | string | The ask price currency that will be applied to all deals generated from the package. |
+| `default_use_deal_floor` | Boolean | If `true`, the `default_ask_price`  will be applied to deals generated from the package.<br><br>**Note**: When  `default_use_deal_floor` is `true`, the deal's ask price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
+| `last_modified` | timestamp | The day and time when the package was last modified. |
+| `data_protected` | Boolean | **Not yet supported**. |
+| `allow_creative_add_on_view` | Boolean | **Not yet supported**. |
+| `allow_creative_add_on_click` | true | **Not yet supported**. |
+| `visibility_profile_id` | int | **Not yet supported**. |
+| `seller_rank` | int | The seller's ranking for the package. This controls where the package will appear in the seller's full list of packages in. Allowed range: `1` - `65355`, where `1` is the highest ranking. |
+| `size_preference` | string | Specifies how this package handles private sizes. Private sizes are placement sizes that the seller can allow to serve in a package. There are two options:<br> - `standard`: Private sizes are not available for this package.<br> - `append`: Private sizes can be used in addition to the specified placement size. |
+| `technical_attribute_restrict` | Boolean | Specifies whether the package is restricted only to the technical attributes listed in the [Technical Attributes](#technical-attributes) object.<br> - `true`: Package is restricted only to the listed technical attributes.<br> - `false`: Other technical attributes are also allowed to serve. |
+| `seller` | object | The name and ID of the seller who is offering the package. For more details, see [Seller](#seller) below. |
+| `default_deal_type` | object | The deal type that will be applied to all deals generated from the package. For more details, see [Default Deal Type](#default-deal-type) below. |
+| `setting` | object | The type of content included in the package. For more details, see [Setting](#setting) below. |
+| `technical_attributes` | array of objects | The technical attributes of creatives that are eligible for the package. For more details, see [Technical Attributes](#technical-attributes) below. |
+| `sizes` | array of objects | The creative sizes included in the package. For more details, see [Sizes](#sizes) below. |
 
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__25"
-class="entry colsep-1 rowsep-1">Name</th>
-<th id="ID-0000296a__entry__26"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__27"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-ID of the package.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-name of the package.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-description of the package. Sellers generally use this to provide buyers
-greater insight into the deal.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">If
-<code class="ph codeph">true</code>, the package is active. If <code
-class="ph codeph">false</code>, you cannot generate deals from the
-package and all associated deals will stop serving.  </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">default_ask_price</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">double</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-ask price that will be applied to all deals generated from the package.
-When you generate a deal, the <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a> will
-automatically calculate the <code
-class="ph codeph">suggested_min_bid_price</code> by adding the auction
-service charge specified in your Xandr contract
-to the value in this field. For more information on the <code
-class="ph codeph">suggested_min_bid_price</code>, see the <a
-href="deal-buyer-access-service.md"
-class="xref" target="_blank">Deal Buyer Access Service</a>.
-
-<b>Note:</b>
-<p>This field is relevant only if <code
-class="ph codeph">default_use_deal_floor</code> is <code
-class="ph codeph">true</code>.</p>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">default_currency</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-ask price currency that will be applied to all deals generated from the
-package.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">default_use_deal_floor</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">If
-<code class="ph codeph">true</code>, the <code
-class="ph codeph">default_ask_price</code>  will be applied to deals
-generated from the package.
-
-<b>Note:</b>
-<p>When  <code class="ph codeph">default_use_deal_floor</code> is <code
-class="ph codeph">true</code>, the deal's ask price overrides any other
-floors the seller may have, i.e., in placements or yield management
-profiles.</p>
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-day and time when the package was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">data_protected</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27"><strong>Not yet
-supported.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">allow_creative_add_on_view</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27"><strong>Not yet
-supported.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">allow_creative_add_on_click</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">true</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27"><strong>Not yet
-supported.</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">visibility_profile_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27"><strong>Not yet
-supported.</strong></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">seller_rank</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-seller's ranking for the package. This controls where the package will
-appear in the seller's full list of packages in <span
-class="ph">. Allowed range: 1 - 65355, where 1 is the highest
-ranking.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">size_preference</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27">Specifies how this package handles
-private sizes. Private sizes are placement sizes that the seller can
-allow to serve in a package. There are two options:
-<ul>
-<li><code class="ph codeph">standard</code>: Private sizes are not
-available for this package.</li>
-<li><code class="ph codeph">append</code>: Private sizes can be used in
-addition to the specified placement size.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">technical_attribute_restrict</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__27">Specifies whether the package is
-restricted only to the technical attributes listed in the <a
-href="package-buyer-access-service.md#ID-0000296a__ta"
-class="xref">Technical Attributes</a> object.
-<ul>
-<li><code class="ph codeph">true</code>: Package is restricted only to
-the listed technical attributes.</li>
-<li><code class="ph codeph">false</code>: Other technical attributes are
-also allowed to serve.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">seller</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-name and ID of the seller who is offering the package. For more details,
-see <a href="package-buyer-access-service.md#ID-0000296a__sell"
-class="xref">Seller</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">default_deal_type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-deal type that will be applied to all deals generated from the package.
-For more details, see <a
-href="package-buyer-access-service.md#ID-0000296a__ddt"
-class="xref">Default Deal Type</a> below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">setting</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-type of content included in the package. For more details, see <a
-href="package-buyer-access-service.md#ID-0000296a__setting"
-class="xref">Setting</a> below.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">technical_attributes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-technical attributes of creatives that are eligible for the package. For
-more details, see <a
-href="package-buyer-access-service.md#ID-0000296a__ta"
-class="xref">Technical Attributes</a>below.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__25"><code
-class="ph codeph">sizes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__26">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__27">The
-creative sizes included in the package. For more details, see <a
-href="package-buyer-access-service.md#ID-0000296a__sizes"
-class="xref">Sizes</a> below.</td>
-</tr>
-</tbody>
-</table>
-
-**Seller**
+### Seller
 
 The `seller` object contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__88"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000296a__entry__89"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__90"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__88"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__89">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__90">The
-member ID of the seller.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__88"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__89">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__90">The
-member name of the seller.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The member ID of the seller. |
+| `name` | string | The member name of the seller. |
 
-**Default Deal Type**
+### Default deal type
 
-The `default_deal_type` object contains the following fields. By
-default, all packages will generate deals with an open auction deal
-type.
+The `default_deal_type` object contains the following fields. By default, all packages will generate deals with an open auction deal type.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__97"
-class="entry h3 colsep-1 rowsep-1">Field</th>
-<th id="ID-0000296a__entry__98"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__99"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__97"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__98">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__99">The
-ID representing the type of deal. Possible values: <code
-class="ph codeph">1</code> (Open Auction) or <code
-class="ph codeph">2</code> (Private Auction). For more information about
-open and private auctions, see the <a
-href="deal-service.md"
-class="xref" target="_blank">Deal Service</a>.  </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__97"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__98">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__99">Read-only. The name of the type of
-deal. Possible values: <code class="ph codeph">"Open Auction"</code> or
-<code class="ph codeph">"Private Auction"</code>.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID representing the type of deal. Possible values: `1` (Open Auction) or `2` (Private Auction). For more information about open and private auctions, see the [Deal Service](./deal-service.md).   |
+| `name` | string | **Read-only**. The name of the type of deal. Possible values: `"Open Auction`" or `"Private Auction"`. |
 
-**Setting**
+### Setting
 
-This information is used to give buyers a general understanding of the
-inventory included in the package. The `setting` object contains the
-following fields. 
+This information is used to give buyers a general understanding of the inventory included in the package. The `setting` object contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__106"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000296a__entry__107"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__108"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__106"><code
-class="ph codeph">has_inventory</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__107">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__108">If
-<code class="ph codeph">true</code>, the package includes publisher,
-placement, site, or content category targets.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__106"><code
-class="ph codeph">inventory_description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__107">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__108">If
-<code class="ph codeph">has_inventory</code> is set to <code
-class="ph codeph">true</code>, this field provides a description of the
-inventory included in the package.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__106"><code
-class="ph codeph">has_segments</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__107">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__108">If
-<code class="ph codeph">true</code>, the package includes segment
-targets.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__106"><code
-class="ph codeph">segments_description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__107">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__108">If
-<code class="ph codeph">has_segments</code> is set to <code
-class="ph codeph">true</code>, this field provides a description of the
-segments included in the package.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__106"><code
-class="ph codeph">has_sizes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__107">Boolean</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000296a__entry__108">If
-<code class="ph codeph">true</code>, the package includes size targets.
-For the specific sizes included, see the <code
-class="ph codeph">sizes</code> array.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `has_inventory` | Boolean | If `true`, the package includes publisher, placement, site, or content category targets. |
+| `inventory_description` | string | If `has_inventory` is set to `true`, this field provides a description of the inventory included in the package. |
+| `has_segments` | Boolean | If `true`, the package includes segment targets. |
+| `segments_description` | string | If `has_segments` is set to `true`, this field provides a description of the segments included in the package. |
+| `has_sizes` | Boolean | If `true`, the package includes size targets. For the specific sizes included, see the [sizes array](#sizes). |
 
-**Technical Attributes**
+### Technical attributes
 
 Each `technical_attribute` object contains the following fields:
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__124"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000296a__entry__125"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__126"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__124"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__125">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__126">The ID of the technical attribute that
-is eligible for the package. You can use the <a
-href="technical-attribute-service.md"
-class="xref" target="_blank">Technical Attribute Service</a> to retrieve
-technical attribute IDs.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__124"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__125">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__126">The name of the technical attribute
-that is eligible for the package.<br />
-</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__124"><code
-class="ph codeph">override</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__125">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__126"> If set to <code
-class="ph codeph">true</code>, a technical attribute can serve for a
-package even if the ad quality profile would have blocked it.</td>
-</tr>
-</tbody>
-</table>
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the technical attribute that is eligible for the package. You can use the [Technical Attribute Service](./technical-attribute-service.md) to retrieve technical attribute IDs. |
+| `name` | string | The name of the technical attribute that is eligible for the package. |
+| `override` | Boolean |  If set to `true`, a technical attribute can serve for a package even if the ad quality profile would have blocked it. |
 
-**Sizes**
+### Sizes
 
 Each object in the `sizes` array contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000296a__entry__136"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000296a__entry__137"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-0000296a__entry__138"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__136"><code
-class="ph codeph">width</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__137">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__138">The width of the creative.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__136"><code
-class="ph codeph">height</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__137">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000296a__entry__138">The height of the creative.</td>
-</tr>
-</tbody>
-</table>
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `width` | string | The width of the creative. |
+| `height` | string | The height of the creative. |
 
 
 ## Examples
 
-**View all available packages**
+### View all available packages
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/package-buyer-access"
 {
   "response": {
@@ -720,9 +193,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/package-buyer-access"
 }
 ```
 
-**View all packages offered by a specific seller**
+### View all packages offered by a specific seller
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://sand.api.appnexus.com/package-buyer-access?member_id=55586"
 {
   "response": {
@@ -798,9 +271,9 @@ $ curl -b cookies -c cookies "https://sand.api.appnexus.com/package-buyer-access
 }
 ```
 
-**View a specific package**
+### View a specific package
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/package?id=109"
 {
   "response": {
@@ -837,9 +310,3 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/package?id=109"
   }
 }
 ```
-
-
-
-
-
-

@@ -8,7 +8,10 @@ ms.custom: digital-platform-api
 # Seller report
 
 > [!NOTE]
-> This reporting API is currently for internal use only. This page is therefore visible only to AppNexus employees.
+>
+> - This service is currently available to a limited set of clients and Microsoft employees only.
+>
+> - This reporting API is currently for internal use only. This page is therefore visible only to AppNexus employees.
 
 The Seller Report allows you to estimate the amount of available inventory given a set of possible targeting criteria that you specify. You can compare the overall volume of inventory available through a seller with what's available after you filter by geography, creative size, or audit status.
 

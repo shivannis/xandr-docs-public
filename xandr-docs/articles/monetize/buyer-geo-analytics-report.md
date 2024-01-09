@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Geo Analytics Report
-description : Learn how the Buyer Geo Analytics report allows you to break down delivery and performance by geographic area.
+title: Microsoft Monetize - Buyer Geo Analytics Report
+description: Learn how the Buyer Geo Analytics report allows you to break down delivery and performance by geographic area.
 ms.date: 10/28/2023
 ---
 

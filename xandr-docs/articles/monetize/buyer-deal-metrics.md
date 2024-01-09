@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Deal Metrics
-description : Buyer Deal Metrics provides key information about deal metrics, performance, and rejection reasons relevant to Buyers. 
+title: Microsoft Monetize - Buyer Deal Metrics
+description: Buyer Deal Metrics provides key information about deal metrics, performance, and rejection reasons relevant to Buyers. 
 ms.date: 10/28/2023
 ---
 

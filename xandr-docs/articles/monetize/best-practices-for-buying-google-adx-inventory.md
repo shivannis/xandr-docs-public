@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Best Practices for Buying Google Ad Manager Inventory
-description : This page provides recommendations for maximum ad campaign success when
+title: Microsoft Monetize - Best Practices for Buying Google Ad Manager Inventory
+description: Learn about guidelines to target inventory in this page.
 ms.date: 10/28/2023
 ---
 

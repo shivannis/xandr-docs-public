@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Basic Buy-side Setup Procedures
-description : Learn how to setup your buying objects on the Xandr platform.
+title: Microsoft Monetize - Basic Buy-side Setup Procedures
+description: Learn how to setup your buying objects on the Xandr platform.
 ms.date: 10/28/2023
 ---
 

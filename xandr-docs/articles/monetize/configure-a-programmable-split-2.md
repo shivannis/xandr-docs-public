@@ -1,142 +1,57 @@
 ---
-Title : Configure a Programmable Split
-Description : You can use programmable splits to refine line item targeting and
+title: Microsoft Monetize - Configure a Programmable Split
+description: The article demonstrates the utilization of programmable splits for enhancing line item targeting and dynamically adjusting bids.
 ms.date: 10/28/2023
-dynamically adjust bids, budget allocation, and creative allocation
-across a line item's targeted inventory. Splits are recommended if you
 ---
 
+# Microsoft Monetize - Configure a programmable split
 
-# Configure a Programmable Split
+You can use programmable splits to refine line item targeting and dynamically adjust bids, budget allocation, and creative allocation across a line item's targeted inventory. Splits are recommended if you have sophisticated targeting requirements.
 
+When you create an [augmented line item (ALI)](create-an-augmented-line-item-ali.md), you also have the option to split up its inventory using **programmable splits**. Splits allow you to:
 
-
-You can use programmable splits to refine line item targeting and
-dynamically adjust bids, budget allocation, and creative allocation
-across a line item's targeted inventory. Splits are recommended if you
-have sophisticated targeting requirements.
-
-class="section section context">
-
-When you create an
-<a href="topics/create-an-augmented-line-item-ali.md" class="xref"
-title="You create augmented line items (ALIs) to define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.">augmented
-line item (ALI)</a>, you also have the option to split up its inventory
-using **programmable splits**. Splits allow you to:
-
-- Target different subsections of inventory that match the line item's
-  more general criteria
+- Target different subsections of inventory that match the line item's more general criteria
 - Dynamically adjust bids based on targeting
 - Allocate the line item budget to different targets
 - Distribute creatives across the line item's targeted inventory
 
-You define a split by specifying the inventory you want available for
-it, using any combination of split settings. These include geography,
-inventory performance, and segment information. If you choose, you can
-also specify bidding or valuation rules, budget allocations, bidding
-priority, and/or creative selection for each split. For more background
-information on how splits work, see
-<a href="topics/understanding-splits.md" class="xref">Understanding
-Splits</a>.
+You define a split by specifying the inventory you want available for it, using any combination of split settings. These include geography, inventory performance, and segment information. If you choose, you can also specify bidding or valuation rules, budget allocations, bidding priority, and/or creative selection for each split. For more background
+information on how splits work, see [Understanding Splits](understanding-splits.md).
 
+> [!NOTE]
+> Split changes are only applied when you click **Review and Save** on the line item.
 
+1. [Create a Programmable Split](create-a-programmable-split.md)
 
->
+    You can create a new programmable split when creating or editing an augmented line item.
 
-<div class="li stepsection">
+2. [Set Split Targeting](set-split-targeting.md)
 
+    You can define targeting parameters for programmable splits that expand upon or differ from your line item's targeting parameters.
 
+3. [Set Split Priority](set-split-priority.md)
 
-<b>Note:</b> Split changes are only applied
-when you click Review and Save on the
-line item.
-
-
-
-
-
-1.  <a href="topics/create-a-programmable-split.md" class="xref"
-    title="You can create a programmable split when creating or editing an augmented line item.">Create
-    a Programmable Split</a>
-    
-
-    You can create a new programmable split when creating or editing an
-    augmented line item.
-
-    
-2.  <a href="topics/set-split-targeting.md" class="xref"
-    title="You can define a split by specifying the targeting goals you want it to meet.">Set
-    Split Targeting</a>
-    
-
-    You can define targeting parameters for programmable splits that
-    expand upon or differ from your line item's targeting parameters.
-
-    
-3.  <a href="topics/set-split-priority.md" class="xref"
-    title="If an impression applies to multiple programmable splits, the impression is assigned to the split with the lowest priority number.">Set
-    Split Priority</a>
-    
-
-    When using multiple programmable splits on a line item, you can
-    prioritize your splits so that impressions applicable to multiple
+    When using multiple programmable splits on a line item, you can    prioritize your splits so that impressions applicable to multiple
     splits get assigned to one split over another.
 
-    
-4.  **Optional:**
-    <a href="topics/set-spend-allocation-and-capping-on-a-split.md"
-    class="xref"
-    title="Spend allocation is the percentage of the line item daily budget assigned to a split, and capping determines how a split handles conflicts between the spend allocation and line item delivery goals.">Set
-    Spend Allocation and Capping on a Split</a>
-    
+4. **Optional:** [Set Spend Allocation and Capping on a Split](set-spend-allocation-and-capping-on-a-split.md)
 
     You can set percentages to designate portions of line item's daily
     budget to your split and determine how conflicts are handled between
     spend allocation and line item delivery goals.
 
-    
-5.  **Optional:**
-    <a href="topics/use-segment-targeting-with-a-split.md" class="xref"
-    title="You can target splits based on segment presence/absence, age, or value.">Use
-    Segment Targeting with a Split</a>
-    
+5. **Optional:** [Use Segment Targeting with a Split](use-segment-targeting-with-a-split.md)
 
-    You can target splits based on segment presence or absence, age, or
-    value.
+   You can target splits based on segment presence or absence, age, or value.
 
-    
-6.  **Optional:**
-    <a href="topics/assign-creatives-to-a-split.md" class="xref"
-    title="You can assign specific creatives for a split to deliver.">Assign
-    Creatives to a Split</a>
-    
+6. **Optional:** [Assign Creatives to a Split](assign-creatives-to-a-split.md)
 
     You can assign specific creatives for a split to deliver.
 
-    
-7.  **Optional:**
-    <a href="topics/pass-custom-macros-to-a-split.md" class="xref"
-    title="The split custom macro is used to pass any value to a creative landing page URL where the split will serve.">Pass
-    Custom Macros to a Split</a>
-    
+7. **Optional:** [Pass Custom Macros to a Split](pass-custom-macros-to-a-split.md)
 
-    You can use split custom macros to pass values through splits'
-    creative landing page URLs.
+    You can use split custom macros to pass values through splits' creative landing page URLs.
 
-    
-8.  **Optional:**
-    <a href="topics/use-user-test-groups-with-a-split.md" class="xref"
-    title="You can perform A/B testing with user test groups, which target distinct groups of users per split.">Use
-    User Test Groups with a Split</a>
-    
+8. **Optional:** [Use User Test Groups with a Split](use-user-test-groups-with-a-split.md)
 
-    You can perform A/B testing with user test groups, targeting
-    distinct groups of users per split.
-
-    
-
-
-
-
-
-
+    You can perform A/B testing with user test groups, targeting distinct groups of users per split.

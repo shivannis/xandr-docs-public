@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Auction Service Charge Mechanics
-description : Learn what is a Buyer Auction Service Charge (BASC) in this page. 
+title: Microsoft Monetize - Buyer Auction Service Charge Mechanics
+description: Learn what is a Buyer Auction Service Charge (BASC) in this page. 
 ms.date: 10/28/2023
 ---
 

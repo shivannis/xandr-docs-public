@@ -128,24 +128,16 @@
     href: anatomy-of-the-order-line-visibility-page.md
   - name: View the Full Details of an Order or Order Line
     href: view-the-full-details-of-an-order-or-order-line.md
-  - name: Solving Delivery Issues with Order Line Visibility
-    href: solving-delivery-issues-with-order-line-visibility.md
+  - name: Solve Delivery Issues with Order Line Visibility
+    href: solve-delivery-issues-with-order-line-visibility.md
   - name: Evaluate Orders
     items:
+    - name: Anatomy of the Evaluate Orders Page
+      href: anatomy-of-the-evaluate-orders-page.md
     - name: Evaluate the Yield of an Order
       href: evaluate-the-yield-of-an-order.md
-    - name: Evaluate Orders Page
-      items:
-      - name: Anatomy of the Evaluate Orders Page
-        href: anatomy-of-the-evaluate-orders-page.md
-      - name: Add a Proposal to a Scenario
-        href: add-a-proposal-to-a-scenario.md
-      - name: Using Alternative Products to Solve Pricing/Availability Issues
-        href: using-alternative-products-to-solve-pricing-availability-issues.md
     - name: Anatomy of the Evaluate Orders Search Page
       href: anatomy-of-the-evaluate-orders-search-page.md
-    - name: About Flags in Evaluate Orders
-      href: about-flags-in-evaluate-orders.md
   - name: Import Order Template
     href: import-order-template.md
 - name: Capacity 
@@ -156,20 +148,16 @@
     href: about-forecasts-and-adjustments.md
   - name: Capacity Dashboard
     items:
-    - name: Anatomy of the Capacity Dashboard Page
+    - name: Anatomy of the Capacity Dashboard
       href: anatomy-of-the-capacity-dashboard-page.md
-    - name: Check Impression Capacity for a Product Group
-      href: check-impression-capacity-for-a-product-group.md
-    - name: Yield Analytics Seasonality Overview
-      href: yield-analytics-seasonality-overview.md
-    - name: Check Manual Adjustments and Holidays
-      href: check-manual-adjustments-and-holidays.md
-    - name: Check Capacity Trended for a Product Group
-      href: check-capacity-trended-for-a-product-group.md
+    
+    - name: Yield Analytics Seasonality FAQs
+      href: yield-analytics-seasonality-faqs.md
+    
   - name: Anatomy of the Forecast Visibility Page
-    href: anatomy-of-the-forecast-visibility-page.md
-  - name: View the Forecast for Your Products
-    href: view-the-forecast-for-your-products.md
+    href: forecast-visibility-page-anatomy.md
+  - name: View Your Products Forecast
+    href: view-your-products-forecast.md
   - name: Anatomy of the Forecast Management Page
     href: anatomy-of-the-forecast-management-page.md
   - name: Adjustments
@@ -222,50 +210,18 @@
   items:
   - name: Overview
     href: administration-overview.md
-  - name: Users
-    items:
-    - name: Working With Users
-      href: working-with-users.md
-    - name: Reset a User's Password
-      href: reset-a-user-s-password.md
-    - name: Disable a User
-      href: disable-a-user.md
-    - name: Delete a User
-      href: delete-a-user.md
-    - name: Add a New User
-      href: add-a-new-user.md
-    - name: Import Users
-      href: import-users.md
-  - name: User Groups
-    items:
-    - name: Working With User Groups
-      href: working-with-user-groups.md
-    - name: Add a User Group
-      href: add-a-user-group.md
-    - name: Edit a User Group
-      href: edit-a-user-group.md
-    - name: Duplicate a User Group
-      href: duplicate-a-user-group.md
-    - name: Delete a User Group
-      href: delete-a-user-group.md
-    - name: Search User Groups
-      href: search-user-groups.md
-  - name: Saved Reports
-    items:
-    - name: Add a Report Category
-      href: add-a-report-category.md
-    - name: Edit Report Categories
-      href: edit-report-categories.md
-    - name: Filter the List of Saved Reports
-      href: filter-the-list-of-saved-reports.md
-    - name: Schedule a Saved Report
-      href: schedule-a-saved-report.md
+  - name: Working With Users
+    href: working-with-users.md
+  - name: Working With User Groups
+    href: working-with-user-groups.md
+  - name: Working with Saved Reports
+    href: add-a-report-category.md
 - name: Integrations
   items:
-  - name: Ad-Juster Frequently Asked Questions (FAQs)
-    href: frequently-asked-questions-faqs.md
   - name: Working with the Yield Analytics Extension for DFP Sales Manager
     href: working-with-the-yield-analytics-extension-for-dfp-sales-manager.md
+  - name: Ad-Juster Discrepancy
+    href: frequently-asked-questions-faqs.md
 - name: Channel Management
   items:
   - name: Overview
@@ -286,7 +242,7 @@
     href: availability-overview-old-workflow.md
 - name: Check Availability
   items:
-  - name: Check Availability for a Combination of Targeting Attributes
+  - name: Overview
     href: check-availability-for-a-combination-of-targeting-attributes.md
   - name: Save an Availability Lookup
     href: save-an-availability-lookup.md

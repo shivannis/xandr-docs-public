@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Network creative search
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Network Creative Search report can be used to view the list of creatives that have served on the inventory within your network.
 
 For instructions on retrieving a report, see [Report Service](./report-service.md) or the example below.

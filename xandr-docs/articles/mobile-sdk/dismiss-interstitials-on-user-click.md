@@ -7,9 +7,7 @@ ms.date : 10/28/2023
 
 # Dismiss interstitials on user click
 
-By default, when a user clicks an interstitial ad and is taken to the landing page in the device's native browser, when they return to the app the interstitial ad is still displayed.
-
-This page has instructions for dismissing the interstitial ad when the user clicks.
+By default, when a user clicks an interstitial ad and is taken to the landing page in the device's native browser, when they return to the app the interstitial ad is still displayed. This article has instructions for dismissing the interstitial ad when the user clicks.
 
 To change this behavior so that the interstitial ad view is dismissed when the user clicks on the ad, the following methods are available on the `InterstitialAdView`:
 

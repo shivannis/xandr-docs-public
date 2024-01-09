@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Sld use subdomain service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Second Level Domain (SLD) Use Subdomain service is an admin-only service that allows users to add rows to the `api.sld_use_subdomain` table. This table is consumed by adserver to let them know for which second level domains they should track subdomains.  Please be careful when adding or updating objects using this service.
 
 > [!WARNING]

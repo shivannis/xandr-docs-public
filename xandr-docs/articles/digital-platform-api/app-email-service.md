@@ -8,6 +8,9 @@ ms.custom: digital-platform-api
 
 # App email service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The app email service is an admin-only service that manages automatic email notifications sent to admin users when apps are installed, modified, or deleted. This is also the service used to change the content of email notifications on app install, modification, or deletion.
 
 ## REST API

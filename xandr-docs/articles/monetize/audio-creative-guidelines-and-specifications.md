@@ -1,11 +1,11 @@
 ---
-title : Monetize SSP - Audio Creative Guidelines and Specifications
-description : Learn about the guidelines and specifications that every Audio Creative must adhere to in this page.
+title: Microsoft Monetize - Audio Creative Guidelines and Specifications
+description: Learn about the guidelines and specifications that every Audio Creative must adhere to in this page.
 ms.date: 10/28/2023
 ---
 
 
-# Monetize SSP - Audio creative guidelines and specifications
+# Microsoft Monetize - Audio creative guidelines and specifications
 
 To serve on the Xandr platform and other
 third-party platforms, all audio creatives must adhere to the guidelines

@@ -1,6 +1,6 @@
 ---
-title :  Microsoft Monetize - Creative Audit Best Practices
-description : Learn best practices in Creative Auditing.
+title:  Microsoft Monetize - Creative Audit Best Practices
+description: Learn best practices in Creative Auditing.
 ms.date: 10/28/2023
 ---
 

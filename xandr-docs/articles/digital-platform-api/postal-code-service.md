@@ -1,220 +1,50 @@
 ---
-Title : Postal Code Service
-Description : The Postal Code Service is a read-only service. This service can be used
+title: Digital Platform API - Postal Code Service
+description: Explore the read-only Postal Code service to retrieve postal code IDs registered for geography targeting and configuring dimension-supported reports.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
+# Digital Platform API - Postal Code service
 
-# Postal Code Service
+The Postal Code Service is a read-only service. This service can be used to retrieve postal code IDs, that are registered with
+Xandr for geography targeting purposes when setting up a or for configuring reports that support that dimension. The main use case for the Postal Code Service is to keep your postal code database up-to-date with Xandr's. To access the changes that were made to
+the database since the last call that you made to the service, make sure to use the `min_last_modified` field in your call.
 
-
-
-The Postal Code Service is a read-only service. This service can be used
-to retrieve postal code IDs, that are registered with
-Xandr for geography targeting purposes when
-setting up a  or for configuring reports that
-support that dimension. The main use case for the Postal Code Service is
-to keep your postal code database up-to-date with
-Xandr's. To access the changes that were made to
-the database since the last call that you made to the service, make sure
-to use the `min_last_modified` field in your call. 
-
-
-
-<b>Warning:</b>
-
-Due to the large number of GET calls you would need to make to obtain a
-complete list of postal codes (as a result of pagination), we recommend
-the following:
-
-- Create a cache and populate it with a GET call for all objects on the
-  service
-- Then, for subsequent GET calls, use the `min_last_modified` filter to
-  obtain updates (once per hour or once per day, since postal codes are
-  updated infrequently)
-
-You should only omit the `min_last_modified` filter if you are querying
-this service for the first time.
-
-
-
-
+> [!WARNING]
+> Due to the large number of `GET` calls you would need to make to obtain a complete list of postal codes (as a result of pagination), we recommend the following:
+>
+> - Create a cache and populate it with a `GET` call for all objects on the service.
+> - Then, for subsequent `GET` calls, use the `min_last_modified` filter to obtain updates (once per hour or once per day, since postal codes are updated infrequently).
+>
+> You should only omit the `min_last_modified` filter if you are querying this service for the first time.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000302e__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-0000302e__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-0000302e__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__2"><a
-href="https://api.appnexus.com/postal-code" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/postal-code</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__3">View
-all postal codes using <a
-href="05---throttling-pagination-and-filtering.md"
-class="xref" target="_blank">pagination</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__1">GET </td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__2"><a
-href="https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/postal-code?min_last_modified=LAST_MODIFIED</a>
-<p><a
-href="https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/postal-code?max_last_modified=LAST_MODIFIED</a></p></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__3">View
-all postal codes since last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__2"><a
-href="https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/postal-code?country_code=COUNTRY_CODE</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__3">View
-postal codes in a specific country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__2"><a
-href="https://api.appnexus.com/postal-code/meta" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/postal-code/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__3">Find
-out which fields you can filter and sort by.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/postal-code](https://api.appnexus.com/postal-code) | View all postal codes using [pagination](05---throttling-pagination-and-filtering.md). |
+| `GET`  | - [https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED)<br>- [https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED) | View all postal codes since last modified. |
+| `GET` | [https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE](https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE) | View postal codes in a specific country. |
+| `GET` | [https://api.appnexus.com/postal-code/meta](https://api.appnexus.com/postal-code/meta) | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000302e__entry__16"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-0000302e__entry__17" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-0000302e__entry__18"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-ID of the postal code.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-postal code can be an alphanumeric string of up to 14 characters and can
-contain a space or hyphen.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-ID of the country.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-<a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" class="xref"
-target="_blank">ISO Alpha-2 code</a> for the country to which the city
-belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country codes.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-name of the country to which the city belongs. You can use the <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a> to retrieve a complete
-list of country names.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-0000302e__entry__18">The
-date and time when the postal code was last modified.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__16"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__17">Boolean</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-0000302e__entry__18">Designates whether the postal code is
-active. If <code class="ph codeph">true</code>, the postal code is
-active and available for targeting. If <code
-class="ph codeph">false</code>, there is no geo-location data for the
-postal code and so targeting is not possible.
-
-<b>Note:</b>
-<p>The postal codes may occasionally become active or inactive based on
-changes to IP addressing or changes in geolocation technologies, as well
-as changes to geographical borders.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the postal code. |
+| `code` | string | The postal code can be an alphanumeric string of up to 14 characters and can contain a space or hyphen. |
+| `country_id` | string | The ID of the country. |
+| `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `last_modified` | timestamp | The date and time when the postal code was last modified. |
+| `active` | Boolean | Designates whether the postal code is active. If `true`, the postal code is active and available for targeting. If `false`, there is no geo-location data for the postal code and so targeting is not possible.<br><br>**Note:**<br>The postal codes may occasionally become active or inactive based on changes to IP addressing or changes in geolocation technologies, as well as changes to geographical borders. |
 
 ## Examples
 
-**View all postal codes**
+### View all postal codes
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code'
       
 {
@@ -293,9 +123,9 @@ $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code'
 }
 ```
 
-**View all postal codes since last modified**
+### View all postal codes since last modified
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code?min_last_modified=2016-05-18+15:29:37'
       
 {
@@ -374,9 +204,9 @@ $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code?min_l
 }
 ```
 
-**View all postal codes in Canada**
+### View all postal codes in Canada
 
-``` pre
+```
 $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code?country_code=CA'
       
 {
@@ -434,9 +264,9 @@ $ curl -b cookies -c cookies -X GET  'https://api.appnexus.com/postal-code?count
 }
 ```
 
-**View postal code by postal code ID**
+### View postal code by postal code ID
 
-``` pre
+```
 $ curl -b cookies -c cookies  'https://api.appnexus.com/postal-code?id=10'
       
 {
@@ -457,26 +287,9 @@ $ curl -b cookies -c cookies  'https://api.appnexus.com/postal-code?id=10'
     }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="05---throttling-pagination-and-filtering.md"
-  class="xref" target="_blank">Throttling, Paging, and Filtering</a>
-- <a
-  href="api-semantics.md"
-  class="xref" target="_blank">API Semantics</a>
-- <a href="city-service.md"
-  class="xref" target="_blank">City Service</a>
-- <a
-  href="country-service.md"
-  class="xref" target="_blank">Country Service</a>
-
-
-
-
-
-
+- [Throttling, Paging, and Filtering](05---throttling-pagination-and-filtering.md)
+- [API Semantics](api-semantics.md)
+- [City Service](city-service.md)
+- [Country Service](country-service.md)

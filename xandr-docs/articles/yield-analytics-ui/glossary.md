@@ -1,16 +1,15 @@
 ---
-title: Glossary
+title: Yield Analytics UI Glossary
 description: In this article, explore the glossary containing definitions of frequently used terms throughout the application.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Glossary
+# Yield Analytics UI Glossary
 
 The following glossary provides definitions of commonly used terms across the application. Click a letter to skip to its section.
 
-\[ Glossary \] \[ A \] \[ C \] \[ D \] \[ E \] \[ I \] \[ M \] \[ N \]
-\[ O \] \[ P \] \[ R \] \[ S \] \[ T \] \[ U \] \[ V \] \[ Y \]
+
 
 ## A
 
@@ -176,7 +175,7 @@ Then the consumption types for the order lines can be represented as follows:
 - Contained – The Champion order line is "contained" to the Sports product, since it is directly targeted to the Football section which is entirely contained within the Sports section.
 - Indirect – The Times order line is "indirect" to the Sports product, since it is directly targeted to Geo=New York. This partially overlaps with the Sports section.
 
-### Consumption-to-schedule %
+### Consumption-to-schedule Percentage
 
 A measure of pacing per schedule. For future time periods, this number takes into account the expected consumption based on the allocation
 forecast. Guaranteed order lines with pricing types CPM, CPD, and CPC are subject to this calculation.
@@ -193,9 +192,9 @@ This metric is also calculated for cost-per-click (CPC) order lines:
 
 Formula: (Delivered clicks / Scheduled clicks) x 100
 
-### Consumption-to-schedule % (lifetime)
+### Consumption-to-schedule Percentage (lifetime)
 
-This is the same as the Consumption-to-schedule % metric, except that this metric aggregates over the lifetime of all order lines and is not bound by the time period. When the lifetime metric is used, the time period filter is only used to filter to order lines delivering in the selected time period.
+This is the same as the Consumption-to-schedule percentage metric, except that this metric aggregates over the lifetime of all order lines and is not bound by the time period. When the lifetime metric is used, the time period filter is only used to filter to order lines delivering in the selected time period.
 
 This metric is only available for order line dimensions.
 
@@ -481,7 +480,7 @@ Formula: Scheduled impressions − Capacity
 
 This is the hierarchical relationship between products that determines how order lines overlap.
 
-### Oversold metric
+### Oversold
 
 A measure of the amount of delivery available for a specific product, when displacement and indirect order line distribution is taken into
 consideration.

@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Campaign UI service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Campaign UI service includes campaign meta information relating to campaign peer approval settings, including campaign creator and approver information. You can use it to determine whether peer approval is required for campaigns created by a specific user.
 
 > [!NOTE]

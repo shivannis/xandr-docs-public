@@ -1,201 +1,40 @@
 ---
-Title : Placement Set Service
-Description : The Placement Set Service supports the creation and management of ad
+title: Placement Set Service
+description: Use the placement set service to support the creation and management of ad pods, linear groupings of ads designed to fit within a single video placement.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-pods, linear groupings of ads designed to fit within a single video
-placement.
 ---
 
+# Placement set service
 
-# Placement Set Service
-
-
-
-The Placement Set Service supports the creation and management of ad
-pods, linear groupings of ads designed to fit within a single video
-placement.
-
->
+The Placement Set Service supports the creation and management of ad pods, linear groupings of ads designed to fit within a single video placement.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-set-service__section_k4z_n42_twb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="placement-set-service__section_k4z_n42_twb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="placement-set-service__section_k4z_n42_twb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__2"><a
-href="https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__3">View all
-of the placement sets for one of your publishers.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__2"><a
-href="https://api.appnexus.com/placement-set?id=PLACEMENT_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement-set?id=PLACEMENT_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__3">View a
-specific placement set for one of your publishers.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__2"><a
-href="https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID&amp;member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID&amp;member_id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__3">Add a
-placement set (NETWORK).
-class="note note_note">
-<b>Note:</b> All ad pod placements associated
-with a placement group must belong to placement group's publisher.
-</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__2"><a
-href="https://api.appnexus.com/placement-set?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID&amp;member_id=MEMBER_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/placement-set?id=PLACEMENT_ID&amp;publisher_id=PUBLISHER_ID&amp;member_id=MEMBER_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_k4z_n42_twb__entry__3">Modify an
-existing placement set (NETWORK).</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID | View all of the placement sets for one of your publishers. |
+| `GET` | https://api.appnexus.com/placement-set?id=PLACEMENT_ID | View a specific placement set for one of your publishers. |
+| `POST` | https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID&member_id=MEMBER_ID | Add a placement set (NETWORK). <br><br>**Note**: All ad pod placements associated with a placement group must belong to placement group's publisher. |
+| `PUT` | https://api.appnexus.com/placement-set?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID&member_id=MEMBER_ID | Modify an existing placement set (NETWORK). |
 
+## JSON fields
 
-
->
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="placement-set-service__section_wq4_dp2_twb__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="placement-set-service__section_wq4_dp2_twb__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="placement-set-service__section_wq4_dp2_twb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The
-code associated with the placement set.</p>
-<strong>Default</strong>: <code class="ph codeph">null</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The ID
-of the placement set.</p>
-<strong>Required On</strong>: PUT</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The
-time stamp when activity was last performed on the placement set.</p>
-<strong>Default</strong>: <code class="ph codeph">null</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The ID
-of the member associated with the publisher.</p>
-<strong>Required On:</strong> POST</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The
-name for the placement set. The user would use this to identify their
-placement set.</p>
-<strong>Default</strong>: <code class="ph codeph">null</code></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">placement_ids</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">array of
-ints</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The
-placements that are associated with the placement set.</p>
-<strong>Default</strong>: <code class="ph codeph">null</code></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__1"><code
-class="ph codeph">publisher_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="placement-set-service__section_wq4_dp2_twb__entry__3"><p>The ID
-of the publisher associated with the placement set.</p>
-<strong>Required On:</strong> POST</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Field | Type | Description |
+|:---|:---|:---|
+| `code` | string | The code associated with the placement set. <br><br>**Default**: `null` |
+| `id` | int | The ID of the placement set. <br><br>**Required On**: `PUT` |
+| `last_modified` | timestamp | The time stamp when activity was last performed on the placement set. <br><br>**Default**: `null` |
+| `member_id` | int | The ID of the member associated with the publisher. <br><br>**Required On**: `POST` |
+| `name` | string | The name for the placement set. The user would use this to identify their placement set. <br><br>**Default**: `null` |
+| `placement_ids` | array of ints | The placements that are associated with the placement set. <br><br>**Default**: `null` |
+| `publisher_id` | int | The ID of the publisher associated with the placement set. <br><br>**Required On**: `POST` |
 
 ## Examples
 
-**Create a new placement set**
+### Create a new placement set
 
-``` pre
+```
 $ cat ps_create
 
 {
@@ -210,9 +49,9 @@ $ cat ps_create
 $ curl -b cookies -c cookies -X POST -d @ps_create 'https://api.appnexus.com/placement-set?member_id=958&publisher_id=123456' 
 ```
 
-**Update an existing placement set**
+### Update an existing placement set
 
-``` pre
+```
 $ cat ps_change
 {
     "placement_set":{
@@ -246,9 +85,9 @@ $ curl -b cookies -c cookies -X PUT -d @ps_change 'https://api.appnexus.com/plac
 }
 ```
 
-**View an existing placement set**
+### View an existing placement set
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/placement-set?publisher_id=123456'
 {
     "response": {
@@ -284,9 +123,3 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/placement-set?publisher_i
     }
 }
 ```
-
-
-
-
-
-

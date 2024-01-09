@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Reach and Frequency Report
-description : Learn how by using Buyer Reach and Frequency Report buyers get insight on how cross device impacts the number of times a single person sees their ads across all their devices using this report.
+title: Microsoft Monetize - Buyer Reach and Frequency Report
+description: Learn how by using Buyer Reach and Frequency Report buyers get insight on how cross device impacts the number of times a single person sees their ads across all their devices using this report.
 ms.date: 10/28/2023
 ---
 

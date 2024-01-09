@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 8.44
-description : This page deals with table on Fixes/Improvements/Additions and Integrations affected (Version 8.44).
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 8.44
+description: This page deals with table on Fixes/Improvements/Additions and Integrations affected (Version 8.44).
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 
