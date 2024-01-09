@@ -71,6 +71,6 @@ To view child object details:
 
 ## Related topics
 
-- [Using the Buyer Monitoring Grids](using-the-buyer-monitoring-grids.md)
+- [Using the Buyer Monitoring Grids](../invest/using-the-buyer-monitoring-grids.md)
 - [Explore and Manage Advertisers](explore-and-manage-advertisers.md)
 - [Create an Advertiser](create-an-advertiser.md)

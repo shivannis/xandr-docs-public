@@ -4,7 +4,6 @@ description: The article helps us to know about targeting video inventory based 
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Video targeting
 
 You can target video inventory based on the playback method, player size, and position.

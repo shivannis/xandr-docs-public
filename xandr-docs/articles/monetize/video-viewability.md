@@ -73,10 +73,10 @@ The following metrics are now available in the Advertiser Video Analytics Report
 
 **Viewability measurement metrics**
 
-| Viewability Metrics | Definition |  |
-|---|---|---|
-| `View-Measured Imps` | The total number of impressions that were measured for viewability. |  |
-| `Viewability Measurement Rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |  |
+| Viewability Metrics | Definition |
+|---|---|
+| `View-Measured Imps` | The total number of impressions that were measured for viewability. |
+| `Viewability Measurement Rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) | 
 
 > [!NOTE]
 > Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of
@@ -91,8 +91,7 @@ The following metrics are now available in the Advertiser Video Analytics Report
 
 ## Reporting - API
 
-The following Video viewability metrics are available via the API in the [Network Video Analytics](../digital-platform-api/network-video-analytics.md), [Network Publisher Video Analytics](../digital-platform-api/network-publisher-analytics.md), and [Network Advertiser Video Analytics](../digital-platform-api/network-advertiser-video-analytics.md)
-reports:
+The following Video viewability metrics are available via the API in the [Network Video Analytics](../digital-platform-api/network-video-analytics.md), [Network Publisher Video Analytics](../digital-platform-api/network-publisher-analytics.md), and [Network Advertiser Video Analytics](../digital-platform-api/network-advertiser-video-analytics.md) reports:
 
 | Column | Description |
 |---|---|
