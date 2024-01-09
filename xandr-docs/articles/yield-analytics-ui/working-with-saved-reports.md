@@ -1,8 +1,8 @@
 ---
-title : Working With Saved Reports
+title: Working With Saved Reports
 description: This page tells about various links dealing with saved reports.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 ---
 
 

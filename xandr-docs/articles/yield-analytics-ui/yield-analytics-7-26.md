@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 7.26
-description : Direct Channel, considered it's own channel, compares direct sold inventory by filtering on guaranteed inventory that is mapped to SSP inventory.   
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 7.26
+description: Direct Channel, considered it's own channel, compares direct sold inventory by filtering on guaranteed inventory that is mapped to SSP inventory.   
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

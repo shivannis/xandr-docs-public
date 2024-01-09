@@ -1,8 +1,8 @@
 ---
-title : Working With Users
-description : Learn how yield analytics can be used to set usernames, passwords, permissions, add, edit, disable and delete user accounts.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Working With Users
+description: Learn how yield analytics can be used to set usernames, passwords, permissions, add, edit, disable and delete user accounts.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 7.16
-description : Learn about Product Permission Enhancements in this page.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 7.16
+description: Learn about Product Permission Enhancements in this page.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 
