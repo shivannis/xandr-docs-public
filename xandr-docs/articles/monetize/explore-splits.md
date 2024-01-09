@@ -1,10 +1,10 @@
 ---
-title: Monetize - Explore Splits
+title: Microsoft Monetize - Explore Splits
 description: The article demonstrates reporting on splits and highlights the option to include or exclude selected splits under "Selected Campaigns" in your report.
 ms.date: 10/28/2023
 ---
 
-# Monetize - Explore splits
+# Microsoft Monetize - Explore splits
 
 ## Report on splits
 
