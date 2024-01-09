@@ -11,7 +11,7 @@ The **Seller Bid** **Error Report** helps you gain insight into rejected demand 
 
 Use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
-For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example] below.
+For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below.
 
 ## Time frame
 
@@ -105,9 +105,7 @@ $ curl -b cookies -c cookies -X POST -d @seller_bid_error 'https://api.appnexus.
 
 ### `GET` the report status from the report service
 
-```
-Make a GET call with the Report ID to retrieve the status of the report. Continue making this GET call until the {{execution_status}} is "ready". Then use the *report-download* service to save the report data to a file, as described in the next step.
-```
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `{{execution_status}}` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69'

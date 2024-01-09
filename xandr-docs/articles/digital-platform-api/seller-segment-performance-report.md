@@ -56,7 +56,7 @@ Data retention period for this report is 100 days.
 | `curator_member_name` | string | No | `"My Account"` | Member name of the curator account. |
 | `day` | date | Yes | `"2020-02-01"` | The day of the auction |
 | `device_type` | string | Yes | `"desktops & laptops"` | Device type on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> - `"set top box"`<br> - `"media players"`<br> - `"other devices"` |
-| `device_type_id` | int | Yes | `1` | Device type ID on which the impression was served. Possible values are:<br>`0`(other devices)<br>`1` (desktops & laptops)<br>`2` (mobile phones)<br>`3` (tablets)<br>`4` (tv)<br>`5` (game consoles)<br>`6` (media players)<br>`7` (set top box) |
+| `device_type_id` | int | Yes | `1` | Device type ID on which the impression was served. Possible values are:<br>`0` (other devices)<br>`1` (desktops & laptops)<br>`2` (mobile phones)<br>`3` (tablets)<br>`4` (tv)<br>`5` (game consoles)<br>`6` (media players)<br>`7` (set top box) |
 | `device_type_name` | string | Yes | `"desktops & laptops"` | Device type name on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> - `"set top box"`<br> - `"media players"`<br> - `"other devices"` |
 | `geo_country_code` | string | Yes | `"US"` | The country code in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
 | `geo_country_name` | string | No | `"United States"` | The country name in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
@@ -88,9 +88,9 @@ Data retention period for this report is 100 days.
 | Column | Type | Example | Description |
 |:---|:---|:---|:---|
 | `targeted_revenue` | money | `48.4185` | Targeted revenue of the segment which is sum of booked revenue and seller revenue. |
-| `targeted_revenue_ecpm` | money | `2.5588` | The targeted revenue, expressed as eCPM. For definitions of eCPM and other terms, see the Glossary. |
-| `targeted_revenue_ecpc` | money | `2.5588` | The targeted revenue, expressed as eCPC. For definitions of eCPC and other terms, see the Glossary. |
-| `targeted_revenue_ecpa` | money | `2.5588` | The targeted revenue, expressed as eCPA. For definitions of eCPA and other terms, see the Glossary. |
+| `targeted_revenue_ecpm` | money | `2.5588` | The targeted revenue, expressed as eCPM. For definitions of eCPM and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| `targeted_revenue_ecpc` | money | `2.5588` | The targeted revenue, expressed as eCPC. For definitions of eCPC and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
+| `targeted_revenue_ecpa` | money | `2.5588` | The targeted revenue, expressed as eCPA. For definitions of eCPA and other terms, see the [Glossary](../industry-reference/online-advertising-and-ad-tech-glossary.md). |
 | `targeted_impressions` | int | `18922` | The number of transacted impressions that the segment targeted. |
 | `targeted_clicks` | int | `17000` | The number of transacted clicks that the segment targeted. |
 | `targeted_view_measured_impressions` | int | `17867` | The number of transacted impressions that Xandr measured viewability on that the segment targeted. |

@@ -47,7 +47,7 @@ The seller-creative-review object includes the following JSON fields:
 |:---|:---|:---|
 | `deal_id` | integer | The ID of an existing deal. |
 | `audit_status` | enum | The audit status could consist of one of the following parameters:<br> - `no_audit`<br> - `rejected`<br>- `approved`<br> - `pending` |
-| `audit_feedback` | string | Consists of a brief description of the audit_status field. |
+| `audit_feedback` | string | Consists of a brief description of the `audit_status` field. |
 
 ## Examples
 

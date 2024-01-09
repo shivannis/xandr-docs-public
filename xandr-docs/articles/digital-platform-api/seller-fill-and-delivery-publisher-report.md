@@ -66,7 +66,7 @@ Data retention period for this report is 99 days.
 | `geo_country` | string | Yes | `"US"` | The code of the geographical country. |
 | `geo_country_name` | string | No | `"United States"` | The name of the geographical country. |
 | `site_id` | int | Yes | `223936` | The ID of the site containing this placement. |
-| `site_name` | string | No | `"Total-Web Email"` | The name of the site where the impression occurred. |
+| `site_name` | string | No | `"Total-Web Email"` | The name of the [site](./site-service.md) where the impression occurred. |
 | `site` | string | No | `"Total-Web Email (223936)"` | **Deprecated** (as of October 17, 2016). |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |

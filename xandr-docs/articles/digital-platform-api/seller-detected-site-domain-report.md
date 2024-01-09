@@ -45,8 +45,8 @@ Data retention period for this report is 7 days.
 | `content_category_id` | int | Yes | `23` | The ID of the universal content category associated with this site or placement. |
 | `content_category_name` | string | No | `"Entertainment"` | The name of the universal content category associated with this site or placement. |
 | `content_category` | string | No | `"Entertainment (23)"` | The name and ID of the universal content category. |
-| `site_id` | int | Yes | `223936` | The ID of the site containing this placement. |
-| `site_name` | string | No | `"Total-Web Email"` | The name of the site where the impression occurred. |
+| `site_id` | int | Yes | `223936` | The ID of the [site](./site-service.md) containing this placement. |
+| `site_name` | string | No | `"Total-Web Email"` | The name of the [site](./site-service.md) where the impression occurred. |
 | `site` | string | No | `"Total-Web Email (223936)`" | The name and ID of the site. |
 | `site_domain` | string | Yes | `"gwar-rules-forever.org"` | The domain where the impression occurred.<br><br>There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br><br>**Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across IFrames](#passing-domains-across-iframes) below. |
 | `auction_site_domain` | string | Yes | `"gwar-rules-forever.org"` | The domain of the auctioned site. |
@@ -56,7 +56,7 @@ Data retention period for this report is 7 days.
 | `detected_site_domain_audit_status` | string | No | `"AdServer"` | Specifies the audit status of the detected site domain. Permissible values are <br> - `Audited`<br> - `Blocklisted`<br> - `AdServer`<br> - `Unauditable`<br> - `Pending`<br> - `Unaudited`|
 | `detected_site_domain_audit_status_id` | int | Yes | `4` | The identifier for the audit status of the detected site domain. |
 | `is_blocklisted` | boolean | Yes | `No` | Specifies if the impression is in a block-list. |
-| `detected_top_domain` | boolean | Yes | Yes | Specifies if detected site domain is the highest level within the hierarchy of a domain name. |
+| `detected_top_domain` | boolean | Yes | `Yes` | Specifies if detected site domain is the highest level within the hierarchy of a domain name. |
 | `placement_id` | int | Yes | `737099` | The ID of the placement where the impression occurred.<br><br>**Note**: `placement_id` of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see the [Impression Tracker Service](./impression-tracker-service.md). |
 | `placement_name` | string | No | `"Webmail.com ROS 728x90"` | The name of the placement where the impression occurred. |
 | `placement` | string | No | `"Webmail.com ROS 728x90 (737099)"` | The name and ID of the placement where the impression occurred. |
@@ -73,7 +73,7 @@ Data retention period for this report is 7 days.
 | `exposed_for_resale` | string | No | `"Not Exposed"` | Whether this inventory is exposed for resale. Allowed values:<br> - `Exposed`<br> - `Not Exposed` |
 | `age_bucket` | string | Yes | `"25-34"` | The bucket for the age of the user. See [Age Buckets](#age-buckets) below for possible values.<br><br>**Note**: For impressions older than 100 days, the `age_bucket` will be `"unknown"`. |
 | `age_bucket_id` | string | Yes | `"3"` | The ID of the age bucket. See [Age Buckets](#age-buckets) below for possible values.<br><br>**Note**: For impressions older than than 100 days, the `age_bucket_id` will be `0`. |
-| `gender` | string | Yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note**: For impressions older than than 100 days, the gender will be `"u"`. |
+| `gender` | string | Yes | `"m"`, `"f"`, `"u"` | The gender of the user.<br><br>**Note**: For impressions older than than 100 days, the `gender` will be `"u"`. |
 | `is_remarketing` | int | No | `0`, `1` | If `1`, the campaign is re-marketing. If `0`, the campaign is not re-marketing.<br><br>**Note**: For impressions older than 100 days, `is_remarketing` will be `-1`. |
 
 ## Passing domains across IFrames
@@ -168,7 +168,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/repo
 
 ### Download the report data directly to a file
 
-The most common way to download reporting data involves using the `report_id` in a call the **report-download** service, which returns reporting data directly in the file format you specify. In the `curl` call below, we use the `-o` option to specify that the report be saved in a file named `huge-report.csv`. For more details, see the [curl](./api-semantics.md) documentation.
+The most common way to download reporting data involves using the `report_id` in a call the **report-download** service, which returns reporting data directly in the file format you specify. In the `curl` call below, we use the `-o` option to specify that the report be saved in a file named `huge-report.csv`. For more details, see the **Using cURL** section in [API Semantics](./api-semantics.md).
 
 ```
 $ curl -b cookies -o huge-report.csv "https://api.appnexus.com/report-download?id=8d3697d23c87e5bebd44370630162990"

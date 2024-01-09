@@ -69,9 +69,9 @@ The `time_granularity` of the data is `hourly`. For instructions on retrieving a
 | `publisher` | string | Yes | `"LOL - US (44389)"` | A full description of the publisher on whose site the impression occurred, including the `publisher_name` and `publisher_id`. |
 | `geo_country` | string | Yes | `"US"` | The code of the geographical country. |
 | `geo_country_name` | string | No | `"United States"` | The name of the geographical country. |
-| `site_id` | int | Yes | `223936` | The ID of the site containing this placement. |
-| `site_name` | string | No | `"Total-Web Email"` | The name of the site where the impression occurred. |
-| `site` | string | No | `"Total-Web Email (223936)"` | A full description of the sitewhere the impression occurred, including the `site_name` and `site_id`. |
+| `site_id` | int | Yes | `223936` | The ID of the [site](./site-service.md) containing this placement. |
+| `site_name` | string | No | `"Total-Web Email"` | The name of the [site](./site-service.md) where the impression occurred. |
+| `site` | string | No | `"Total-Web Email (223936)"` | A full description of the [site](./site-service.md) where the impression occurred, including the `site_name` and `site_id`. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | The name of the deal followed by the ID (Xandr format). |

@@ -278,11 +278,11 @@ A default site was created when you created the publisher in [Creating a Publish
 1. Make a `PUT` request to the `/site` endpoint with this JSON file in the request body. You’ll need to indicate the site ID of the default site you’re updating in the query string of the request.
 
    > [!TIP]
-> If you copied the default site ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default site ID by making a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher that has the default site you want to update (see [Publisher Service](./publisher-service.md) for more information).
->
-> ```
-> curl -b cookies -X PUT -d @DefaultSiteUpdate.json 'https://api.appnexus.com/site?id=DEFAULT_SITE_ID'
->```
+   > If you copied the default site ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default site ID by making a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher that has the default site you want to update (see [Publisher Service](./publisher-service.md) for more information).
+   >
+   > ```
+   > curl -b cookies -X PUT -d @DefaultSiteUpdate.json 'https://api.appnexus.com/site?id=DEFAULT_SITE_ID'
+   >```
 
 1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.  
     
@@ -370,7 +370,7 @@ A default placement was created when you created the publisher in [Creating a Pu
 1. Make a `PUT` request to the `/placement` endpoint with this JSON file in the request body. You’ll need to indicate the placement ID of the default placement you’re updating in the query string of the request.
     
     > [!NOTE]
-    > If you copied the default placement ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default placement ID by making a GET request to the `/publisher` endpoint using the publisher ID of the publisher that has the default placement you want to update (see [Publisher Service](./publisher-service.md) for more information).
+    > If you copied the default placement ID in [Creating a Publisher](#step-1-creating-a-publisher) above, you can use that. Otherwise, you can obtain the default placement ID by making a `GET` request to the `/publisher` endpoint using the publisher ID of the publisher that has the default placement you want to update (see [Publisher Service](./publisher-service.md) for more information).
     >
     > ```
     > curl -b cookies -X PUT -d @DefaultPlacementUpdate.json 'https://api.appnexus.com/placement?id=DEFAULT_PLACEMENT_ID'
@@ -602,7 +602,8 @@ While a default placement was created when you created the publisher in [Creati
 
 1. Make a `POST` request to the `/placement` endpoint with this JSON file in the request body. You'll need to add the `site_id` of the site you're adding the placement to in the query string of the request (see [Placement Service](./placement-service.md) for more information).
 
-    If you copied the site ID in [Creating a New Site](#step-4-creating-a-new-site) above, you can use this when adding a placement. To obtain the site IDs for a publisher, make a GET request to the `/site` endpoint using the publisher ID of the publisher that has the sites (see [Site Service](./site-service.md) for more information).
+    > [!TIP]
+    > If you copied the site ID in [Creating a New Site](#step-4-creating-a-new-site) above, you can use this when adding a placement. To obtain the site IDs for a publisher, make a GET request to the `/site` endpoint using the publisher ID of the publisher that has the sites (see [Site Service](./site-service.md) for more information).
 
     ```
      curl -b cookies -X POST -d @NewPlacement.json 'https://api.appnexus.com/placement?site_id=SITE_ID'
@@ -1003,13 +1004,13 @@ To assign a base ad quality rule to a publisher, do the following:
    >     ```
 
 1. Make a `PUT` request to the `/publisher` endpoint with this JSON file in the request body (see [Publisher Service](./publisher-service.md) for more information). You’ll need to indicate the publisher ID in the query string of the request.
-    
 
-    If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above you can use this.
-
-    ```
-    curl -b cookies -X PUT -d @PublisherBaseAdQualityRuleUpdate.json 'https://api.appnexus.com/publisher?id=PUBLISHER_ID'
-    ```
+    > [!TIP]
+    > If you copied the publisher ID in [Creating a Publisher](#step-1-creating-a-publisher) above you can use this.
+   >
+   > ```
+   > curl -b cookies -X PUT -d @PublisherBaseAdQualityRuleUpdate.json 'https://api.appnexus.com/publisher?id=PUBLISHER_ID'
+   >     ```
 
 1. Check the response body of your request (see **Example response** below). If your request was successful, you’ll get a `"status"` of `"OK"` and you’ll see the updates you made.
 

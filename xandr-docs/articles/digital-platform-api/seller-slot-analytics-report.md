@@ -60,7 +60,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `buyer_member` | string | no | `"My Network (123)"` | The name of the buying member followed by the ID (AppNexus format). |
 | `brand_name` | string | no | `"The Best Wedding Music"` | Brand name associated with the creative. |
 | `billing_currency` | string | yes | `"USD"` | The transaction currency that the buyer used to purchase this impression. This dimension is available only when Currency 2.0 is disabled. |
-| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from Oanda at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
+| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from [Oanda] at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
 | `browser_id` | int | Yes | `8` | The ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service. |
 | `brand` | int | yes | `1234` | The ID of the brand associated with a creative. |
 | `buyer_seat_id` | double | yes |  | The ID of the buyer seat. |
@@ -99,7 +99,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `hour` | int | yes | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>For impressions older than 100 days, the day will be returned rather than the hour. |
 | `inventory_url_id` | int | yes | `99999` | The ID of the URL of the domain or app on which the request originated. |
 | `insertion_order` | string | yes | `"Insertion Order (321)"` | The name of the Insertion Order. |
-| `impression_type` | string | yes | `Resold (6)` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1`("Blank"): No creative served.<br>`2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br>`3` ("Default Error"): A default creative served due to a timeout issue.<br>`4` ("Default"): A default creative served because there were no valid bids.<br>`5` ("Kept"): Your advertiser's creative served on your publisher's site.<br>`6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br>`7` ("RTB"): Your advertiser's creative served on third-party inventory.<br>`8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br>`9` ("External Impression"): An impression from an impression tracker.<br>`10` ("External Click"): A click from a click tracker. |
+| `impression_type` | string | yes | `Resold (6)` | The ID for the type of impression. Possible values (associated types in parentheses):<br> `1`("Blank"): No creative served.<br>`2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br>`3` ("Default Error"): A default creative served due to a timeout issue.<br>`4` ("Default"): A default creative served because there were no valid bids.<br>`5` ("Kept"): Your advertiser's creative served on your publisher's site.<br>`6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br>`7` ("RTB"): Your advertiser's creative served on third-party inventory.<br>`8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br>`9` ("External Impression"): An impression from an impression tracker.<br>`10` ("External Click"): A click from a click tracker. |
 | `inventory_url` | string | no |  | The URL of the inventory or application package. |
 | `insertion_order_id` | int | yes | `1234` | The ID of the Insertion Order |
 | `insertion_order_name` | string | no | `"Insertion Order Name"` | The name of the insertion order. |
@@ -138,7 +138,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `player_width` | int | yes |  | The default width of the player. This field is mandatory. If the width is zero, the `autoInitialSize` option will not automatically set the width of the player on the page. |
 | `player_height` | int | yes |  | Parameter recommended to ensure video bidders receive height on bid requests. |
 | `placement_set_id` | int | yes |  | The placements that are associated with the placement set. |
-| `slot_type` | string | yes | `Standard Slot, 1` | The ID of the type of position (ad or bumper) within an ad pod.<br> - `0` - normal slot <br> `1` - intro bumper <br>`2` - outro bumper |
+| `slot_type` | string | yes | `Standard Slot, 1` | The ID of the type of position (ad or bumper) within an ad pod.<br> `0` - normal slot <br> `1` - intro bumper <br>`2` - outro bumper |
 | `slot_position` | int | yes | `3` | The position of the ad in the sequence of the pod. |
 | `support_vpaid` | string | yes | `Boolean` |  |
 | `site_name` | string | no | `"Site Name"` | The name of the site on which the placement is used. |

@@ -137,7 +137,7 @@ You will need to pass the html code in the `content` field and set an `id` of `6
       
 ```
 
-## id: 6 Example
+## ID: 6 Example
 
 **Creative**
 

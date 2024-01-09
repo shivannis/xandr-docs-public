@@ -54,7 +54,7 @@ Data retention period for this report is 30 days.
 | `deal_auction_type_name` | Yes | The auction type for the deal. A deal can have the following auction types: first price, second price, and fixed price. |
 | `deal_type_name` | Yes | Whether the deal is a public deal, private deal, or programmatic guaranteed deal. |
 | `deal_alias` | No | The alias of the deal. |
-| `package_id` | Yes | The ID of the Package that the deal was created from. This value will be 0 if the deal was not created from a package. |
+| `package_id` | Yes | The ID of the Package that the deal was created from. This value will be `0` if the deal was not created from a package. |
 | `priority` | Yes | For a private auction only, the priority the seller assigned to the deal. |
 
 ## Metrics
@@ -88,7 +88,7 @@ Data retention period for this report is 30 days.
 | `reject_blocked_by_ad_profile_tech_attribute_count` | int | Yes | The number of bids rejected because a technical attribute of the ad was blocked by the ad profile. |
 | `reject_blocked_by_ad_profile_category_count` | int | Yes | The number of bids rejected because the ad profile does not allow the category of the creative. |
 | `reject_blocked_by_ad_profile_brand_count` | int | Yes | The number of bids blocked by the ad profile due to brand exclusions. |
-| reject_blocked_by_ad_profile_adserver_count | int | Yes | The number of bids rejected because an ad server associated to the creative that the buyer bid with is blocked. |
+| `reject_blocked_by_ad_profile_adserver_count` | int | Yes | The number of bids rejected because an ad server associated to the creative that the buyer bid with is blocked. |
 | `reject_blocked_by_ad_profile_member_count` | int | Yes | The number of bids rejected because the member was blocked by the ad profile. |
 | `reject_blocked_by_ad_profile_audit_status_count` | int | Yes | The number of bids blocked by the Ad Profile due to their audit status. This typically happens when the buyer is bidding with an unaudited creative and the seller has blocked unaudited creatives in ad quality. |
 | `reject_below_floor_ym_count` | int | Yes | The number of bids rejected because they are below the yield management floor applicable for the auction. |
