@@ -1,134 +1,33 @@
 ---
-Title : View Advertiser Details
-Description : The Advertiser Details screen
+title: Microsoft Monetize - View advertiser details
+description: The article explains the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 ms.date: 10/28/2023
-shows you the settings and essential metrics for a specific advertiser,
-provides visualizations of the advertiser's performance, and offers
-quick access to the advertiser's child objects.
 ---
 
+# Microsoft Monetize - View advertiser details
 
-# View Advertiser Details
-
-
-
-The Advertiser Details screen
-shows you the settings and essential metrics for a specific advertiser,
-provides visualizations of the advertiser's performance, and offers
+The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers
 quick access to the advertiser's child objects.
 
->
+## Getting to the advertiser details Screen
 
-## Getting to the Advertiser Details Screen
+On the **Advertisers** screen, click the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
 
-On the Advertisers screen, click
-the name of the advertiser for which you want to view advanced details.
-This takes you to the Advertiser
-Details screen.
+## Viewing advertiser settings
 
-
-
->
-
-## Viewing Advertiser Settings
-
-The settings that display here can be edited by clicking
-Edit at the top of the
-Advertisers screen. For more
-information, see
-<a href="create-an-advertiser.md" class="xref">Create an
-Advertiser</a>.
-
-
-
->
+The settings that display here can be edited by clicking **Edit** at the top of the **Advertisers** screen. For more information, see [Create an Advertiser](create-an-advertiser.md).
 
 ## Basic Setup
 
-<table id="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66"
-class="table frame-all">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead class="thead">
-<tr class="header row">
-<th
-id="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"
-class="entry colsep-1 rowsep-1">Setting</th>
-<th
-id="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Time Zone</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-the advertiser's time zone.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Time Format</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-the advertiser's time format (12-hour or 24-hour).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-the currency for the advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Brand</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-the default brand that is assigned to all creatives added for this
-advertiser.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Offer Category</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-the default offer category that is assigned to all creatives added for
-this advertiser.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Exclusions</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-competitive exclusions to prevent creatives with competitive brands or
-offer categories from serving alongside each other.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__1"><span
-class="ph uicontrol">Political Advertising</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000016f1__table_ca71c1fc-8ccd-4690-9795-eedd1242cc66__entry__2">Specifies
-whether this advertiser is releasing advertisements related to an
-election, ballot initiative, or political candidate in the United
-States.</td>
-</tr>
-</tbody>
-</table>
-
-
-
->
+| Setting | Description |
+|---|---|
+| **Time Zone** | Specifies the advertiser's time zone. |
+| **Time Format** | Specifies the advertiser's time format (12-hour or 24-hour). |
+| **Currency** | Specifies the currency for the advertiser. |
+| **Brand** | Specifies the default brand that is assigned to all creatives added for this advertiser. |
+| **Offer Category** | Specifies the default offer category that is assigned to all creatives added for this advertiser. |
+| **Exclusions** | Specifies competitive exclusions to prevent creatives with competitive brands or offer categories from serving alongside each other. |
+| **Political Advertising** | Specifies whether this advertiser is releasing advertisements related to an election, ballot initiative, or political candidate in the United States. |
 
 ## Associated Fees
 
