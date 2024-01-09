@@ -1,447 +1,77 @@
 ---
 title: Targeted Segment Analytics Report
-description: The **Targeted Segment Analytics** report is an admin-only report designed to give you insight into how your segment targeting is affecting the performance of your in-flight campaigns. 
+description: Use the targeted segment analytics report to identify the segments that are driving impressions, clicks, and conversions in in-flight campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-
-# Targeted Segment Analytics Report
+# Targeted segment analytics report
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The **Targeted Segment Analytics** report is an admin-only report
-designed to give you insight into how your segment targeting is
-affecting the performance of your in-flight campaigns. Use cases for
-this report include:
+The **Targeted Segment Analytics** report is an admin-only report designed to give you insight into how your segment targeting is affecting the performance of your in-flight campaigns. Use cases for this report include:
 
+- Understanding which targeted segments (both behavioral and contextual) are driving impressions, clicks and conversions within a running campaign.
+- Indexing the performance of targeted segments during the campaign to identify which segments are over or underperforming.
+- Understanding whether segments purchased from third parties are producing the desired performance.
 
+> [!NOTE]
+> This feature is intended to address campaign level performance; it does not include information such as a segment's aggregate performance at the [advertiser](./advertiser-service.md), [insertion order](./insertion-order-service.md), or [line item](./line-item-service.md) levels.
 
-- Understanding which targeted segments (both behavioral and contextual)
-  are driving impressions, clicks and conversions within a running
-  campaign.
-- Indexing the performance of targeted segments during the campaign to
-  identify which segments are over- or underperforming.
-- Understanding whether segments purchased from third parties are
-  producing the desired performance.
+## Time frame
 
+This report's data is retained for 14 days, and is available in one day intervals. All dates and times are given in UTC.
 
-
-
-
-<b>Note:</b> This feature is intended to
-address campaign level performance; it does not include information such
-as a segment's aggregate performance at the <a
-href="advertiser-service.md"
-class="xref" target="_blank">advertiser</a>, <a
-href="insertion-order-service.md"
-class="xref" target="_blank">insertion order</a>, or <a
-href="line-item-service.md"
-class="xref" target="_blank">line item</a> levels.
-
-
-
->
-
-## Time Frame
-
-This report's data is retained for 14 days, and is available in one day
-intervals. All dates and times are given in UTC.
-
-The `time_intervals` field in the request can be set to one of the
-following:
-
+The `time_intervals` field in the request can be set to one of the following:
 - `last_14_days`
-
-
-
-
 
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000040cf__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-000040cf__entry__2" class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000040cf__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">month</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">time</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-month during which the impression took place.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code class="ph codeph">day</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-day on which the impression took place.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">member_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-member ID of the buyer.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">campaign_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-campaign ID of the campaign that purchased the impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">campaign_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-name of the campaign that purchased the impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">campaign</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-concatenated name and ID of the campaign that purchased the impression,
-e.g., <code class="ph codeph">"Amazing Campaign (31)"</code>
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">campaign_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-(optional) custom code associated with the campaign that purchased the
-impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">segment_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-segment ID of the user segment present for this impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">segment_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-name of the user segment present for this impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">segment</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-concatenated name and ID of the user segment present for this
-impression, e.g., <code
-class="ph codeph">"Valuable Segment (314)"</code>
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__1"><code
-class="ph codeph">segment_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__3">The
-(optional) custom code associated with the user segment present for this
-impression.
-<p><strong>Filter:</strong> Yes</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Description |
+|:---|:---|:---|
+| `month` | time | The month during which the impression took place.<br><br>**Filter**: Yes |
+| `day` | date | The day on which the impression took place.<br><br>**Filter**: Yes |
+| `member_id` | int | The member ID of the buyer.<br><br>**Filter**: Yes |
+| `campaign_id` | int | The campaign ID of the campaign that purchased the impression.<br><br>**Filter**: Yes |
+| `campaign_name` | string | The name of the campaign that purchased the impression.<br><br>**Filter**: Yes |
+| `campaign` | string | The concatenated name and ID of the campaign that purchased the impression, e.g., `"Amazing Campaign (31)"`<br><br>**Filter**: Yes |
+| `campaign_code` | string | The (optional) custom code associated with the campaign that purchased the impression.<br><br>**Filter**: Yes |
+| `segment_id` | int | The segment ID of the user segment present for this impression.<br><br>**Filter**: Yes |
+| `segment_name` | string | The name of the user segment present for this impression.<br><br>**Filter**: Yes |
+| `segment` | string | The concatenated name and ID of the user segment present for this impression, e.g., `"Valuable Segment (314)"`<br>**Filter**: Yes |
+| `segment_code` | string | The (optional) custom code associated with the user segment present for this impression.<br><br>**Filter**: Yes |
 
 ## Metrics
 
+> [!NOTE]
+> The definition of each metric listed below should read: "that took place during the selected [Time Frame](#time-frame)".
 
-
-<b>Note:</b> The definition of each metric
-listed below should read: "that took place during the selected <a
-href="targeted-segment-analytics-report.md#ID-000040cf__TimeFrame_Targeted_Segment_Analysis_report"
-class="xref">Time Frame.</a>"
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000040cf__entry__37"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="ID-000040cf__entry__38"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000040cf__entry__39"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="ID-000040cf__entry__40"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-number of impressions that occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-number of clicks that took place.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">total_convs</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_view_convs + post_click_convs</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total number of conversions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">convs_rate</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">total_convs</code> / <code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-ratio of conversions to impressions that occurred.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code class="ph codeph">ctr</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code class="ph codeph">imps</code> /
-<code class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-click-through-rate.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">total_revenue</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_view_revenue + post_click_revenue</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total revenue booked through direct advertisers (at the line item
-level).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_view_convs</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_view_convs</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-number of post-view conversions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_view_revenue</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_view_revenue</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-amount of revenue generated by post-view conversions through direct
-advertisers (at the line item level).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_click_convs</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_click_convs</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-number of post-click conversions that occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_click_revenue</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_click_revenue</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-amount of revenue generated by post-click conversions through direct
-advertisers (at the line item level).</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_view_convs_rate</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_view_convs</code> / <code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-rate of post-view conversions to impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">post_click_convs_rate</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">double</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">post_click_convs</code> / <code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-rate of post-click conversions to impressions.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">spend</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">spend</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total marketer spend across both direct and real time media buys for
-this segment.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">media_cost</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">media_cost</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total cost of the inventory purchased.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">revenue_ecpm</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">total_revenue</code> / <code
-class="ph codeph">clicks</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total revenue per 1000 impressions.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">revenue_ecpc</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">total_revenue</code> / <code
-class="ph codeph">click</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-revenue per click.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__37"><code
-class="ph codeph">revenue_ecpa</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__38">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000040cf__entry__39"><code
-class="ph codeph">total_revenue</code> / <code
-class="ph codeph">total_convs</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000040cf__entry__40">The
-total revenue per conversion.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Formula | Description |
+|:---|:---|:---|:---|
+| `imps` | int | imps | The number of impressions that occurred. |
+| `clicks` | int | clicks | The number of clicks that took place. |
+| `total_convs` | int | post_view_convs + post_click_convs | The total number of conversions. |
+| `convs_rate` | double | total_convs / imps | The ratio of conversions to impressions that occurred. |
+| `ctr` | double | imps / clicks | The click-through-rate. |
+| `total_revenue` | money | post_view_revenue + post_click_revenue | The total revenue booked through direct advertisers (at the line item level). |
+| `post_view_convs` | int | post_view_convs | The number of post-view conversions. |
+| `post_view_revenue` | money | post_view_revenue | The amount of revenue generated by post-view conversions through direct advertisers (at the line item level). |
+| `post_click_convs` | int | post_click_convs | The number of post-click conversions that occurred. |
+| `post_click_revenue` | money | post_click_revenue | The amount of revenue generated by post-click conversions through direct advertisers (at the line item level). |
+| `post_view_convs_rate` | double | post_view_convs / imps | The rate of post-view conversions to impressions. |
+| `post_click_convs_rate` | double | post_click_convs / imps | The rate of post-click conversions to impressions. |
+| `spend` | money | spend | The total marketer spend across both direct and real time media buys for this segment. |
+| `media_cost` | money | media_cost | The total cost of the inventory purchased. |
+| `revenue_ecpm` | money | total_revenue / clicks | The total revenue per 1000 impressions. |
+| `revenue_ecpc` | money | total_revenue / click | The revenue per click. |
+| `revenue_ecpa` | money | total_revenue / total_convs | The total revenue per conversion. |
 
 ## Example
 
-**Request the report**
+### Request the report
 
-``` pre
+```
 $ cat the_request.json
  
 {
@@ -497,7 +127,7 @@ $ curl -bc -cc -X POST -d @the_request.json 'https://api.appnexus.com/report'
         "execution_status": "pending",
         "dbg_info": {
             "instance": "29.bm-hbapi.prod.nym1",m
-            "slave_hit": false,
+            "s1ave_hit": false,
             "db": "master",
             "awesomesauce_cache_used": false,
             "count_cache_used": false,
@@ -509,9 +139,3 @@ $ curl -bc -cc -X POST -d @the_request.json 'https://api.appnexus.com/report'
     }
 }
 ```
-
-
-
-
-
-

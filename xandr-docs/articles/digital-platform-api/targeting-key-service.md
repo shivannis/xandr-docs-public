@@ -1,230 +1,40 @@
 ---
-Title : Targeting Key Service
-Description : The **targeting-key** service works in conjunction with the
+title: Targeting Key Service
+description: Use the targeting-key and targeting-value services to define your own key/value combinations for use in targeting on line items and campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-**targeting-value** service to allow you to define your own key/value
-combinations for use in targeting on line items, campaigns, and so on.
 ---
 
+# Targeting key service
 
-# Targeting Key Service
-
-
-
-The **targeting-key** service works in conjunction with the
-**targeting-value** service to allow you to define your own key/value
-combinations for use in targeting on line items, campaigns, and so on.
-(See <a
-href="custom-key-value-targeting.md"
-class="xref" target="_blank">Custom Key Value Targeting</a> for more
-information.).
-
->
+The **targeting-key** service works in conjunction with the **targeting-value** service to allow you to define your own key/value combinations for use in targeting on line items, campaigns, and so on. See [Custom Key Value Targeting](./custom-key-value-targeting.md) for more information.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="targeting-key-service__section_w2n_n5q_swb__entry__1"
-class="entry colsep-1 rowsep-1">HTTP Method</th>
-<th id="targeting-key-service__section_w2n_n5q_swb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="targeting-key-service__section_w2n_n5q_swb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">POST</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><p><a
-href="https://api.appnexus.com/targeting-key" class="xref"
-target="_blank">https://api.appnexus.com/targeting-key</a></p>
-<p>(create_target_key JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">Add a new
-targeting key.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">PUT</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><p><a
-href="https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID</a></p>
-<p>(update_targeting_key JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">Modify a
-targeting key.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><a
-href="https://api.appnexus.com/targeting-key" class="xref"
-target="_blank">https://api.appnexus.com/targeting-key</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">View all
-targeting keys.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><a
-href="https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">View a
-specific targeting key.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><a
-href="https://api.appnexus.com/targeting-key?name=TARGETING_KEY_NAME1,TARGETING_KEY_NAME2,TARGETING_KEY_NAME3"
-class="xref"
-target="_blank">https://api.appnexus.com/targeting-key?name=TARGETING_KEY_NAME1,TARGETING_KEY_NAME2,TARGETING_KEY_NAME3</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">View a
-set of targeting keys by name.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__1">DELETE</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__2"><a
-href="https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID"
-class="xref"
-target="_blank">https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_w2n_n5q_swb__entry__3">Delete a
-targeting key.</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/targeting-key<br>(`create_target_key` JSON) | Add a new targeting key. |
+| `PUT` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID<br>(`update_targeting_key` JSON) | Modify a targeting key. |
+| `GET` | https://api.appnexus.com/targeting-key | View all targeting keys. |
+| `GET` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID | View a specific targeting key. |
+| `GET` | https://api.appnexus.com/targeting-key?name=TARGETING_KEY_NAME1,TARGETING_KEY_NAME2,TARGETING_KEY_NAME3 | View a set of targeting keys by name. |
+| `DELETE` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID | Delete a targeting key. |
 
+## JSON fields
 
+### General
 
->
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the targeting key.<br><br>**Default**: Auto-generated number<br>**Required On**: `PUT`/ `DELETE`, in query string |
+| `type` | enum | The data type of the key and its associated values. Must be one of the following values:<br> - `string`<br> - `numeric`<br>**Required On**: `POST` |
+| `name` | string | The name of the targeting key.<br>The value must be one word, with no spaces. This name must be unique within your member.<br><br>**Required On**: `POST` |
+| `label` | string | A label for the key, to be used for reporting. This value is not required, but if you do include a value, it must be unique within your member. Label can be a maximum of 190 characters. |
+| `state` | enum | The state of the targeting key. Possible values are `active` and `inactive`.<br><br>**Default**: `active` |
+| `created_on` | date | **Read-only**. The date and time the targeting key was created. |
+| `last_modified` | date | **Read-only**. The date and time the targeting key was last modified. |
 
-## JSON Fields
-
-
-
-**General**
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="targeting-key-service__section_ddr_dvq_swb__entry__1"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="targeting-key-service__section_ddr_dvq_swb__entry__2"
-class="entry colsep-1 rowsep-1">Type (Length)</th>
-<th id="targeting-key-service__section_ddr_dvq_swb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><p>The ID
-of the targeting key.</p>
-<p><strong>Default</strong>: Auto-generated number</p>
-<p><strong>Required On</strong>: <code class="ph codeph">PUT/</code>
-<code class="ph codeph">DELETE</code>, in query string</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">type</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><p>The
-data type of the key and its associated values. Must be one of the
-following values:</p>
-<ul>
-<li>string</li>
-<li>numeric</li>
-</ul>
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><p>The
-name of the targeting key.</p>
-<p>The value must be one word, with no spaces. This name must be unique
-within your member.</p>
-<p><strong>Required On</strong>: POST</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">label</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3">A label
-for the key, to be used for reporting. This value is not required, but
-if you do include a value, it must be unique within your member. Label
-can be a maximum of 190 characters.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">state</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">enum</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><p>The
-state of the targeting key. Possible values are <strong>active</strong>
-and <strong>inactive</strong>.</p>
-<p><strong>Default</strong>: active</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><strong>Read-only.</strong>
-The date and time the targeting key was created.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__1"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="targeting-key-service__section_ddr_dvq_swb__entry__3"><strong>Read-only.</strong>
-The date and time the targeting key was last modified.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-**Key Requirements**
+### Key requirements
 
 Number of keys:
 
@@ -259,15 +69,11 @@ Key naming:
   - % (percent sign)
   - / (forward slash)
 
-
-
->
-
 ## Examples
 
-**View all targeting keys**
+### View all targeting keys
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/targeting-key'
 
 {
@@ -303,9 +109,9 @@ $ curl -b cookies 'https://api.appnexus.com/targeting-key'
 }
 ```
 
-**View a specific targeting key**
+### View a specific targeting key
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/targeting-key?id=12'
  
 {
@@ -321,9 +127,9 @@ $ curl -b cookies 'https://api.appnexus.com/targeting-key?id=12'
 }
 ```
 
-**Add a targeting key**
+### Add a targeting key
 
-``` pre
+```
 $ cat create_targeting_key.json
 {
     "targeting-key": {
@@ -335,9 +141,9 @@ $ cat create_targeting_key.json
 $ curl -b cookies -H "Content-Type:application/json" -X POST -d '@create_targeting_key.json' 'https://api.appnexus.com/targeting-key'
 ```
 
-**Modify a targeting key**
+### Modify a targeting key
 
-``` pre
+```
 $ cat update_targeting_key.json
 {
     "targeting-key": {
@@ -349,9 +155,9 @@ $ cat update_targeting_key.json
 $ curl -b cookies -H "Content-Type:application/json" -X PUT -d @update_target_key.json 'https://api.appnexus.com/targeting-key?id=12'
 ```
 
-**Filter targeting keys by name**
+### Filter targeting keys by name
 
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/targeting-key?name=key1,key2'
 
 {
@@ -378,14 +184,11 @@ $ curl -b cookies 'https://api.appnexus.com/targeting-key?name=key1,key2'
 } 
 ```
 
-**Search within a name or label**
+### Search within a name or label
 
+This example searches for the string `"car"` anywhere within the `name` or `label` fields.
 
-
-This example searches for the string "car" anywhere within the **name**
-or **label** fields.
-
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/targeting-key?search=car'
 
 {
@@ -421,17 +224,11 @@ $ curl -b cookies 'https://api.appnexus.com/targeting-key?search=car'
 } 
 ```
 
-**Sort by last modified date**
+### Sort by last modified date
 
+You can sort your results by `id`, `name`, `label`, `created_on`, or `last_modified`. You can sort in ascending (`asc`) or descending (`desc`) order.
 
-
-
-
-You can sort your results by **id**, **name**, **label**,
-**created_on**, or **last_modified**. You can sort in ascending
-(**asc**) or descending (**desc**) order.
-
-``` pre
+```
 $ curl -b cookies 'https://api.appnexus.com/targeting-key?sort=last_modified.asc'
 
 {
@@ -467,40 +264,15 @@ $ curl -b cookies 'https://api.appnexus.com/targeting-key?sort=last_modified.asc
 } 
 ```
 
-**Delete a targeting key**
+### Delete a targeting key
 
+Deleting a targeting key will automatically delete all values under that key.
 
-
-
-
-Deleting a targeting key will automatically delete all values under that
-key.
-
-``` pre
+```
 $ curl -b cookies -X DELETE 'https://api.appnexus.com/targeting-key?id=12'
 ```
 
+## Related topics
 
-
-
-
->
-
-## Related Topics
-
-
-
-- <a
-  href="targeting-value-service.md"
-  class="xref" target="_blank">Targeting Value Service</a>
-- <a
-  href="custom-key-value-targeting.md"
-  class="xref" target="_blank">Custom Key Value Targeting</a>
-
-
-
-
-
-
-
-
+- [Targeting Value Service](./targeting-value-service.md)
+- [Custom Key Value Targeting](./custom-key-value-targeting.md)
