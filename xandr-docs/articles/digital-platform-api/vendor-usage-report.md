@@ -1,753 +1,92 @@
 ---
-Title : Vendor Usage Report
-Description : This network report provides the details on your usage of data or
+title: Digital Platform API - Vendor Usage Report
+description: Explore the Vendor Usage report, offering details on your data usage or platform powered by third-party vendors.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-platform powered by third-party vendors (e.g., user segment providers),
 ---
 
+# Digital Platform API - Vendor Usage report
 
-# Vendor Usage Report
+This network report provides the details on your usage of data or platform powered by third-party vendors (e.g., user segment providers), the costs of that data or feature usage, and the line items/campaigns where vendor costs were applicable.
 
+## Time frame
 
-
-
-
-This network report provides the details on your usage of data or
-platform powered by third-party vendors (e.g., user segment providers),
-the costs of that data or feature usage, and the line items/campaigns
-where vendor costs were applicable.
-
-
-
-
-
-## Time Frame
-
-
-
-The `report_interval` field in the JSON request must be set to one of
-the following:
+The `report_interval` field in the JSON request must be set to one of the following:
 
 - today
-
 - yesterday
-
 - last_7_days
-
 - last_30_days
-
 - month_to_date
-
 - quarter_to_date
-
 - last_month
-
 - lifetime
 
+The `time_granularity` of the data is `hourly`. For instructions on retrieving a report, see the [Report Service](report-service.md) or the [Examples](#examples) below.
 
+> [!NOTE]
+> To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
-The `time_granularity` of the data is `hourly`. For instructions on
-retrieving a report, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a> or the <a
-href="vendor-usage-report.md#vendor-usage-report__vendor_usage_report_example"
-class="xref">Example</a> below.
-
-
-
-
-
-<b>Note:</b> To run a report for a custom time
-frame, set the `start_date` and `end_date` fields in your report
-request. For more details about these fields, see <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-
-
-
-
-
-
-**Data Retention Period**
+### Data retention period
 
 Data retention period for this report is 60 days.
 
-
-
-
-
 ## Dimensions
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="vendor-usage-report__entry__1"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="vendor-usage-report__entry__2"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="vendor-usage-report__entry__3"
-class="entry colsep-1 rowsep-1">Filter?</th>
-<th id="vendor-usage-report__entry__4"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="vendor-usage-report__entry__5"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">month</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"2010-02"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The month at which the auction
-associated with the impression occurred</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">day</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"2010-02-01"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The day at which the auction
-associated with the impression occurred</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">hour</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">date</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"2010-02-01 05:00:00"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The hour at which the auction
-associated with the impression occurred.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">buyer_member_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">643</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the member that used
-the data provided by the third-party vendor (e.g., user segment
-providers) .</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">geo_country</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"US"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The code of the geographical
-country associated with the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">geo_country_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"United States"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the geographical
-country associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">geo_country_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"CA"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">A two-character string denoting
-the country associated with the impression. For a complete listing of
-allowed values, see <a href="https://en.wikipedia.org/wiki/ISO_3166-1"
-class="xref" target="_blank">ISO 3166-1 country codes</a> .</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">campaign_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">31</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the campaign
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">campaign_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Prospect Campaign"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the campaign
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">campaign</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Prospect Campaign (31)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the campaign
-associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">campaign_group_type_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">154</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the campaign group
-type which purchased this impression. Used in split reporting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">split_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">342</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_id</code> (if included) will be <code
-class="ph codeph">null</code>.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">split_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Mobile Split A"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the split that
-purchased the impressions in this data set. Splits are only applicable
-to augmented line items. For any reports that contain campaigns, the
-<code class="ph codeph">split_name</code> (if included) will be <code
-class="ph codeph">null</code>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">split</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Mobile Split A (342)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the
-split.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">line_item_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Fall Apparel"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the line item
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">targeted_segment_ids</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"935035, 935146"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The comma-separated list of IDs
-for each of the segments used when targeting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">advertiser_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"USD"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The advertiser's preferred
-currency. This preference can be set using the <a
-href="advertiser-service.md"
-class="xref" target="_blank">Advertiser Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">insertion_order_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">1243</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the insertion order
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">insertion_order_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"IO001"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the insertion order
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">insertion_order_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"IOABC-1243"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The user-defined code associated
-with the insertion-order.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">insertion_order</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"IO001 (1243)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the insertion
-order associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">advertiser_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">9843</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The advertiser ID associated
-with the impression. If the value is <code class="ph codeph">0</code>,
-either the impression was purchased by an external buyer, or a default
-or PSA was shown.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">advertiser_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"ADVUS"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the advertiser
-associated with the impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">advertiser</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"ADVUS (9843)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the
-advertiser associated with the impression.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">line_item_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">9865</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the line item
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">line_item_code</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"LI001"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The user-defined code associated
-with the line item.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">line_item</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Fall Apparel (9865)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the line item
-associated with the impression that used third-party data
-targeting.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">vendor_id</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">76</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The ID of the third party vendor
-(e.g., user segment providers) whose data usage and cost comes in this
-report.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">vendor_name</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"AXM"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name of the third party
-vendor.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">vendor</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"AXM (76)"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The name and ID of the third
-party vendor.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">vendor_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Segment Marketplace"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The type of the vendor depending
-on the third party data it provides. Allowed values are Segment
-Marketplace, Cross Device Graph, Measurement, Offline Attribution, or
-Unknown Vendor Type.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">cost_type</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"Segment Data Costs"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The type of cost incurred
-towards the data usage provided by the third party vendors. Allowed
-values are Segment Data Costs, Feature Costs, or Unknown Vendor
-Type.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">"USD"</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">The transaction currency that
-the buyer used to purchase this impression.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__1">cpm_usd</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__2">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__3">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__4"><code
-class="ph codeph">7.8</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__5">Cost per mille, or thousand
-(mille = thousand in Latin) expressed in USD. A pricing model in which
-advertisers pay for every 1000 impressions of their advertisement
-served.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Column | Type | Filter? | Example | Description |
+|:---|:---|:---|:---|:---|
+| `month` | date | yes | `"2010-02"` | The month at which the auction associated with the impression occurred. |
+| `day` | date | yes | `"2010-02-01"` | The day at which the auction associated with the impression occurred. |
+| `hour` | date | yes | `"2010-02-01 05:00:00"` | The hour at which the auction associated with the impression occurred. |
+| `buyer_member_id` | int | yes | `643` | The ID of the member that used the data provided by the third-party vendor (e.g., user segment providers). |
+| `geo_country` | string | yes | `"US"` | The code of the geographical country associated with the impression. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country associated with the impression. |
+| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see [ISO 3166-1 country codes](https://en.wikipedia.org/wiki/ISO_3166-1). |
+| `campaign_id` | int | yes | `31` | The ID of the campaign associated with the impression that used third-party data targeting. |
+| `campaign_name` | string | no | `"Prospect Campaign"` | The name of the campaign associated with the impression that used third-party data targeting. |
+| `campaign` | string | no | `"Prospect Campaign (31)"` | The name and ID of the campaign associated with the impression. |
+| `campaign_group_type_id` | int | yes | `154` | The ID of the campaign group type which purchased this impression. Used in split reporting. |
+| `split_id` | int | yes | `342` | The ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be `null`. |
+| `split_name` | string | no | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
+| `split` | string | no | `"Mobile Split A (342)"` | The name and ID of the split. |
+| `line_item_name` | string | no | `"Fall Apparel"` | The name of the line item associated with the impression that used third-party data targeting. |
+| `targeted_segment_ids` | string | no | `"935035, 935146"` | The comma-separated list of IDs for each of the segments used when targeting. |
+| `advertiser_currency` | string | yes | `"USD"` | The advertiser's preferred currency. This preference can be set using the [Advertiser Service](advertiser-service.md). |
+| `insertion_order_id` | int | yes | `1243` | The ID of the insertion order associated with the impression that used third-party data targeting. |
+| `insertion_order_name` | string | no | `"IO001"` | The name of the insertion order associated with the impression that used third-party data targeting. |
+| `insertion_order_code` | string | no | `"IOABC-1243"` | The user-defined code associated with the insertion-order. |
+| `insertion_order` | string | no | `"IO001 (1243)"` | The name and ID of the insertion order associated with the impression that used third-party data targeting. |
+| `advertiser_id` | int | yes | `9843` | The advertiser ID associated with the impression. If the value is `0`, either the impression was purchased by an external buyer, or a default or PSA was shown. |
+| `advertiser_name` | string | no | `"ADVUS"` | The name of the advertiser associated with the impression. |
+| `advertiser` | string | no | `"ADVUS (9843)"` | The name and ID of the advertiser associated with the impression. |
+| `line_item_id` | int | yes | `9865` | The ID of the line item associated with the impression that used third-party data targeting. |
+| `line_item_code` | string | no | `"LI001"` | The user-defined code associated with the line item. |
+| `line_item` | string | no | `"Fall Apparel (9865)"` | The name and ID of the line item associated with the impression that used third-party data targeting. |
+| `vendor_id` | int | yes | `76` | The ID of the third party vendor (e.g., user segment providers) whose data usage and cost comes in this report. |
+| `vendor_name` | string | no | `"AXM"` | The name of the third party vendor. |
+| `vendor` | string | no | `"AXM (76)"` | The name and ID of the third party vendor. |
+| `vendor_type` | string | no | `"Segment Marketplace"` | The type of the vendor depending on the third party data it provides. <br>Allowed values are: <br> - `Segment Marketplace`<br> - `Cross Device Graph`<br> - `Measurement`<br> - `Offline Attribution` <br> -  `Unknown Vendor Type` |
+| `cost_type` | string | no | `"Segment Data Costs"` | The type of cost incurred towards the data usage provided by the third party vendors. Allowed values are: <br> - `Segment Data Costs`<br> - `Feature Costs`<br> - `Unknown Vendor Type` |
+| `buying_currency` | string | yes | `"USD"` | The transaction currency that the buyer used to purchase this impression. |
+| `cpm_usd` | money | yes | `7.8` | Cost per mille, or thousand (mille = thousand in Latin) expressed in USD. A pricing model in which advertisers pay for every 1000 impressions of their advertisement served. |
 
 ## Metrics
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="vendor-usage-report__entry__176"
-class="entry colsep-1 rowsep-1">Column</th>
-<th id="vendor-usage-report__entry__177"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="vendor-usage-report__entry__178"
-class="entry colsep-1 rowsep-1">Filter</th>
-<th id="vendor-usage-report__entry__179"
-class="entry colsep-1 rowsep-1">Example</th>
-<th id="vendor-usage-report__entry__180"
-class="entry colsep-1 rowsep-1">Formula</th>
-<th id="vendor-usage-report__entry__181"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__176">imps</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__177">int</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__178">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__179"><code
-class="ph codeph">34534</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__180"><code
-class="ph codeph">imps</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__181">The total number of
-impressions that used third-party data to serve the ad.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__176">third_party_costs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__177">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__178">yes</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__179"><code
-class="ph codeph">5.20</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__180"><code
-class="ph codeph">third_party_costs</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__181">Total monetary value of data
-segment costs, feature costs or others.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__176">sales_tax</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__177">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__178">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__179"><code
-class="ph codeph">.43</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__180"><code
-class="ph codeph">sales_tax</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__181">The amount of sales tax
-collected in USD. This field is only populated when the Buyer's billing
-address is located in one of the following U.S. states: NY, TX or NJ.
-Xandr is required (by the relevant local state
-regulator) to collect this tax.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__176">vendor_costs</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__177">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__178">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__179"><code
-class="ph codeph">5.00</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__180"><code
-class="ph codeph">vendor_costs</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__181">The total costs, including but
-not limited to segment data costs, and feature costs.
-<p><strong>Feature Costs</strong>: Costs incurred when using a platform
-feature such as Nielsen Digital Ad Ratings (DAR), Nielsen Catalina
-Solutions (NCS) and Cross Device​.</p>
-<p><strong>Segment Data Costs</strong>: All costs related to using
-segments in the data marketplace. Applicable when specific segments are
-applied in line items and associated pricing is displayed in the
-platform.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__176">vendor_costs_buying_currency</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__177">money</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__178">no</td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__179"><code
-class="ph codeph">1.50</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__180"><code
-class="ph codeph">vendor_costs_buying_currency</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="vendor-usage-report__entry__181">The vendor costs expressed in
-the transaction currency used by the buyer.</td>
-</tr>
-</tbody>
-</table>
+| Column | Type | Filter | Example | Formula | Description |
+|:---|:---|:---|:---|:---|:---|
+| `imps` | int | yes | `34534` | imps | The total number of impressions that used third-party data to serve the ad. |
+| `third_party_costs` | money | yes | `5.20` | third_party_costs | Total monetary value of data segment costs, feature costs or others. |
+| `sales_tax` | money | no | `.43` | sales_tax | The amount of sales tax collected in USD. This field is only populated when the Buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Xandr is required (by the relevant local state regulator) to collect this tax. |
+| `vendor_costs` | money | no | `5.00` | vendor_costs | The total costs, including but not limited to segment data costs, and feature costs.<br>**Feature Costs:** Costs incurred when using a platform feature such as Nielsen Digital Ad Ratings (DAR), Nielsen Catalina Solutions (NCS) and Cross Device.<br>**Segment Data Costs:** All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |
+| `vendor_costs_buying_currency` | money | no | `1.50` | vendor_costs_buying_currency | The vendor costs expressed in the transaction currency used by the buyer. |
 
+## Examples
 
+### Create JSON formatted report request
 
+The JSON file should include the `report_type` of `"buyer_vendor_usage_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`, `hour`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
-
-## Example
-
-**Create JSON formatted report request**
-
-The JSON file should include the `report_type` of
-`"buyer_vendor_usage_analytics"`, as well as the columns (dimensions and
-metrics) and `report_interval` that you want to retrieve. You can also
-filter for specific dimensions, define granularity (month, day, hour),
-and specify the format in which the data should be returned (csv, excel,
-or html). For a full explanation of fields that can be included in the
-JSON file, see the <a
-href="report-service.md"
-class="xref" target="_blank">Report Service</a>.
-
-
-
-``` pre
+```
 $ cat buyer_vendor_usage_analytics  
 {
     "report": {
@@ -771,15 +110,11 @@ $ cat buyer_vendor_usage_analytics
 }
 ```
 
-
-
-**`POST` the request to the Report Service**
+### `POST` the request to the Report service
 
 `POST` the JSON request to get back a report ID.
 
-
-
-``` pre
+```
 $ curl -b cookies -c cookies -X post -d @buyer_vendor_usage_analytics "https://api.appnexus.com/report"
 {
     "response": {
@@ -826,18 +161,12 @@ $ curl -b cookies -c cookies -X post -d @buyer_vendor_usage_analytics "https://a
 }
 ```
 
+### `GET` the report status from the Report service
 
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
+`ready`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
-**`GET` the report status from the Report Service**
-
-Make a `GET` call with the report ID to retrieve the status of the
-report. Continue making this `GET` call until the `execution_status` is
-`ready`. Then use the **report-download** service to save the report
-data to a file, as described in the next step.
-
-
-
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=d89151942729f768dcac4586288ff7eb'
 {
     "response": {
@@ -902,38 +231,16 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=d89151942729f76
 }
 ```
 
+### `GET` the report data from the Report Download service
 
+To download the report data to a file, make another `GET` call with the report ID, but this time to the **report-download** service. You can find the service and report ID in the `url` field of the response to your previous `GET` call. When identifying the file that you want to save, be sure to use the file extension of the file `"format"` that you specified in your initial `POST` call, for example, CSV.
 
-**`GET` the report data from the Report Download Service**
-
-To download the report data to a file, make another `GET` call with the
-report ID, but this time to the **report-download** service. You can
-find the service and report ID in the `url` field of the response to
-your previous `GET` call. When identifying the file that you want to
-save, be sure to use the file extension of the file `"format"` that you
-specified in your initial `POST` call, for example, CSV.
-
-``` pre
-$ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=d89151942729f768dcac4586288ff7eb' > /tmp/buyer_vendor_usage_analytics.csv
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=d89151942729f768dcac4586288ff7eb' > /tmp/buyer_vendor_usage_analytics.csv
 ```
 
+> [!TIP]
+> If an error occurs during download, the response header will include an HTTP error code and message. Use `\-i` or `\-v` in your call to expose the response header.
 
-
-<b>Tip:</b> If an error occurs during
-download, the response header will include an HTTP error code and
-message. Use `\-i` or `\-v` in your call to expose the response header
-
-
-
-
-
-<b>Note:</b> There is a limit of 100,000 rows
-per report when you download them as XLSX and Excel file.
-
-
-
-
-
-
-
-
+> [!NOTE]
+> There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.
