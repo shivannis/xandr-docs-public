@@ -1,11 +1,11 @@
 ---
-title: Programmatic Guaranteed Deal through Microsoft Monetize Ad Server API Setup Guide
+title: Programmatic Guaranteed Deal through Microsoft Monetize Ad Server
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal through Microsoft Monetize Ad Server.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Programmatic Guaranteed deal through Microsoft Monetize ad server API setup guide
+# Programmatic Guaranteed deal through Microsoft Monetize ad server
 
 Setting up an API implementation for a programmatic guaranteed (PG) deal through Microsoft Monetize Ad Server requires configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a PG deal using our API.
 
