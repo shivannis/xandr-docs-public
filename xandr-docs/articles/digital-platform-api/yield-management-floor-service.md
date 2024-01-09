@@ -14,7 +14,7 @@ A floor can be thought of as the minimum price a network or publisher would like
 > [!WARNING]
 > Floor settings supersede any reserve prices set via the [Placement Service](placement-service.md).
 >
-> Example: You have a soft floor setting, but no hard floor, and you've set a reserve price at the [Placement](placement-service.md) level. Since you're using [Yield Management](yield-management-profile-service.md) tools, however, your reserve price setting will be ignored. You must set it here via a hard floor.
+> **Example:** You have a soft floor setting, but no hard floor, and you've set a reserve price at the [Placement](placement-service.md) level. Since you're using [Yield Management](yield-management-profile-service.md) tools, however, your reserve price setting will be ignored. You must set it here via a hard floor.
 
 ## REST API
 
