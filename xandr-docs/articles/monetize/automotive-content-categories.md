@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Automotive Content Categories
-description : This page contains a list of automotive content categories and auto manufacturer brands.
+title: Microsoft Monetize - Automotive Content Categories
+description: This page contains a list of automotive content categories and auto manufacturer brands.
 ms.date: 10/28/2023  
 ---
 

@@ -1,6 +1,6 @@
 ---
-title : Buy Mobile Inventory Directly from a Publisher
-description : Learn steps to go through to buy mobile inventory directly from a publisher. 
+title: Buy Mobile Inventory Directly from a Publisher
+description: Learn steps to go through to buy mobile inventory directly from a publisher. 
 ms.date: 10/28/2023
 ---
 

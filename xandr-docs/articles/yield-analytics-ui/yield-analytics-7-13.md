@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 7.13
-description : Learn how addition of Pre-Bid has changed the basing of Channel Management from order lines to explicit product mappings. 
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics 7.13
+description: Learn how addition of Pre-Bid has changed the basing of Channel Management from order lines to explicit product mappings. 
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

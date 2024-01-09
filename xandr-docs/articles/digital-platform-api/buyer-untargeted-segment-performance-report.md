@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Digital Platform API Internal Services - Buyer Untargeted Segment Performance report
 
 > [!NOTE]
-> Xandr UI users may only access this report via the API. However, this documentation page is only exposed to Xandr employees.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 >
 > In addition, due to the cost of running this report, it is limited to strategic/large clients only. Contact Steve Truxal to request access for your client and provide details on the revenue opportunity, expected hourly biddable impressions for 1 day, and how you expect the member's seat to scale over the next 6-12 months.
 

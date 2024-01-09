@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize -  Buying Microsoft Inventory
-description : This page tells us how to target Microsoft Inventory and documentation links to learn more about buying specific Microsoft inventory.
+title: Microsoft Monetize -  Buying Microsoft Inventory
+description: This page tells us how to target Microsoft Inventory and documentation links to learn more about buying specific Microsoft inventory.
 ms.date: 10/28/2023
 ---
 

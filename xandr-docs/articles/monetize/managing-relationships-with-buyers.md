@@ -1,20 +1,17 @@
 ---
-Title : Managing Relationships with Buyers
-Description : Sellers use the Partner Center to
+title: Microsoft Monetize - Managing Relationships with Buyers
+description: Learn how you can use the Partner Center in this page.
 ms.date: 10/28/2023
-foster and manage relationships with specific buyers.
 ---
 
 
-# Managing Relationships with Buyers
+# Microsoft Monetize - Managing relationships with buyers
 
-
-
-Sellers use the Partner Center to
+Sellers use the **Partner Center** to
 foster and manage relationships with specific buyers.
 
-As a seller, you can use the Partner
-Center to:
+As a seller, you can use the **Partner
+Center** to:
 
 - Communicate with buyers directly in Monetize
   using the Activity Stream
@@ -23,41 +20,27 @@ Center to:
 - More easily manage your buyer controls
 - Track revenue from a specific buyer to gain insight into the
   partnership and trends
-- <a href="partner-center-screen-seller-view.md" class="xref">Partner
-  Center Screen - Seller View</a> -  
+- [Partner Center Screen - Seller View](partner-center-screen-seller-view.md) -  
   View your preferred partners, search all buyers, manage your profile,
   manage your default buyer controls, edit a specific buyer's controls,
   set preferred buyers, and review impression and click statistics for
   each buyer.
-- <a href="partnership-details-screen-buyer-view.md"
-  class="xref">Partnership Details Screen - Buyer View</a> -  
+- [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md) -  
   Review and manage your relationship with a specific buyer by tracking
   overall revenue trends, view the buyer's top brands on your inventory,
   view your top publishers for the buyer, view buyer statistics, and
   send messages directly to the buyer in
-  Monetize.
-- <a href="customize-your-seller-profile.md" class="xref">Customize Your
-  Seller Profile</a> -  
+  Monetize
+- [Customize Your Seller Profile](customize-your-seller-profile.md) -  
   Step-by-step instructions for editing the profile information that
   displays to buyers on your Partner Details page.
-- <a
-  href="set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-  class="xref">Set Default Buyer Eligibility, Allowed Payment Types, and
-  Targeting Access</a> -  
+- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md) -  
   Step-by-step instructions for establishing default buyer eligibility,
   allowed payment types, and targeting access for all buyers.
-- <a
-  href="edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md"
-  class="xref">Edit Buyer Eligibility, Allowed Payment Types, and
-  Targeting Access</a> -  
+- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md) -  
   Step-by-step instructions for setting the buyer eligibility, allowed
   payment types, and targeting access settings for one or more specific
   buyers.
-- <a href="set-targeting-access-privileges.md" class="xref">Set
-  Targeting Access Privileges</a> -  
+- [Set Targeting Access Privileges](set-targeting-access-privileges.md) -  
   Step-by-step instructions for setting targeting access privileges for
   a specific buyer within the Partner Privileges tab.
-
-
-
-

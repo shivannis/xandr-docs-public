@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buyer Bid Error Report
-description : Learn how Buyer Bid Error Report can be used.
+title: Microsoft Monetize - Buyer Bid Error Report
+description: Learn how Buyer Bid Error Report can be used.
 ms.date: 10/28/2023
 ---
 

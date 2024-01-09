@@ -1,71 +1,21 @@
 ### YamlMime:Landing
 
 title: Policies and Regulations
-summary: Xandr service policies, privacy regulations, terms of service and disclosures
+summary: Xandr Platform services are subject to various terms and conditions that govern the relationship between Xandr and its customers. The Xandr Service Policies, Privacy Regulations, Platform Terms of Service and Online Terms are confidential and tied to specific contracts between Xandr and its customers. For access, customers need to make a request through the Customer Support Portal or through their Account Manager.
 metadata:
   title: Policies and Regulations
   description: Xandr policies and general industry regulations
   ms.topic: landing-page
   ms.author: rupambaruah
-  ms.service: app-service
+  ms.service: microsoft-monetize
   ms.date: 09/12/2023
 
 landingContent:
-  - title: Service Policies (Password Protected)
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Overview
-            url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies
-          - text: Policies for Buying
-            url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Buying.aspx
-          - text: Policies for Selling
-            url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Selling.aspx
-          - text: Policies for Curating
-            url: https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Policies-for-Curating.aspx
-  - title: Privacy Regulations (Password Protected)
-    linkLists:
-      - linkListType: reference
-        links:            
-          - text: Overview
-            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations
-          - text: Xandr Privacy Agreements
-            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Privacy-Agreements.aspx
-          - text: Xandr Platform Data Processing Addendum - Terms and Conditions
-            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Xandr-Platform-Data-Processing-Addendum---Terms-and-Conditions.aspx
-          - text: U.S. Privacy Laws, GDPR, and ePrivacy (ePR)
-            url: https://microsoftapc.sharepoint.com/teams/PrivacyRegulations/SitePages/Privacy-Documentation--including-U.S.-Privacy-Laws,-General-Data-Protection-Regulation-(GDPR),-and-ePrivacy-(e.aspx
-  - title: Online Terms (Password Protected)
-    linkLists:
-      - linkListType: reference
-        links:            
-          - text: Overview
-            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms
-          - text: Xandr Platform Terms of Service
-            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Xandr-Platform-Terms-of-Service.aspx
-          - text: Seller Additional Terms
-            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Seller-Additional-Terms.aspx
-          - text: Buyer Additional Terms
-            url: https://microsoftapc.sharepoint.com/teams/OnlineTerms/SitePages/Buyer-Additional-Terms.aspx
-  - title: Xandr Platform Terms of Service (Password Protected)
-    linkLists:
-      - linkListType: reference
-        links:            
-          - text: Overview
-            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService
-          - text: Xandr Platform Terms of Service
-            url: https://microsoftapc.sharepoint.com/teams/XandrPlatformTermsofService/SitePages/Xandr-Platform-Terms-of-Service.aspx
-  #- title: Regulation Information
-    #linkLists:
-      #- linkListType: reference
-        #links:            
-          #- text: Industry Initiatives and Xandr
-           # url: ../ad-tech-references/industry-initiatives-and-xandr.md
-          #- text: Online Advertising Self-Regulatory Organizations
-            #url: ../ad-tech-references/online-advertising-self-regulatory-organizations.md
-  - title: Disclosures
+  - title: Disclosure and Regulation
     linkLists:
       - linkListType: reference
         links:            
           - text: Third Party Providers
             url: third-party-providers.md
+          - text: Online Advertising Self-Regulatory Organizations
+            url: online-advertising-self-regulatory-organizations.md

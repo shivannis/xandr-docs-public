@@ -8,8 +8,8 @@ ms.custom: digital-platform-api
 # Adjustment service
 
 > [!NOTE]
-> **Visible to Xandr employees only**: These docs (and the related feature) are visible to select clients only. Please do not send links to these docs or mention this feature to clients unless you've confirmed they should have access.
->
+> **This service is currently available to a limited set of clients and Microsoft employees only.**: These docs (and the related feature) are visible to select clients only. Please do not send links to these docs or mention this feature to clients unless you've confirmed they should have access.
+
 > The Adjustment Service is used to make changes to booked revenue and media cost values in reporting.
 
 ## Adjustment types

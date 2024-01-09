@@ -1,15 +1,15 @@
 ---
-Title : YM Floor Filter Service
-Description : This read-only service allows you to view a list of yield management
+title: YM Floor Filter Service
+description: This read-only service allows you to view a list of yield management (YM) floor rules that apply to a specific member.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-(YM) floor rules that apply to a specific member. The response will
 ---
 
 
 # YM Floor Filter Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This read-only service allows you to view a list of yield management
 (YM) floor rules that apply to a specific member. The response will

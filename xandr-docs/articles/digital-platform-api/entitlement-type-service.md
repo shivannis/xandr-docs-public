@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Entitlement type service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The **entitlement-type** service allows you to define a code that will be assigned to members through the [Member Service](./member-service.md). This code is used to provide certain features for only specific members. For example, we might have members who are allowed to do keyword targeting or deal discovery. After using this service to create entitlement types, you can assign one or more entitlement types to a member.
 
 ## REST API

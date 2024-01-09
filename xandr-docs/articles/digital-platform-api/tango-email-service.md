@@ -1,20 +1,20 @@
 ---
-Title : Tango Email Service
-Description : This service, used in combination with the <a
+title: Tango Email Service
+description: This service, used in combination with the <a href="xandr-api-internal/email-template-service.md" enables team to manage the sending of system emails for Tango.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-href="xandr-api-internal/email-template-service.md"
 ---
 
 
 # Tango Email Service
 
-
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This service, used in combination with the <a
 href="xandr-api-internal/email-template-service.md"
 class="xref" target="_blank">Email Template Service</a>, enables
- team to manage the sending of system emails for
+team to manage the sending of system emails for
 Tango. Allowing  team to manage system emails
 rather than the API team provides the Tango team the ability to more
 quickly iterate and deploy system email changes.

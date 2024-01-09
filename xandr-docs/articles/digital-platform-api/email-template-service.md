@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Email template service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 Administrators use this service to create and manage templates for system-generated emails. A template will define an email's content and styling. This service was developed to more easily manage Tango emails. However, the service can be used to manage a template for system emails of any kind.
 
 ## REST API

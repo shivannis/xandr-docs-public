@@ -1,368 +1,85 @@
 ---
-Title : Political District Service
-Description : The Political District Service allows political buyers to target
+title: Political District Service
+description: Explore the Political District service, enabling political buyers to target geographies based on legislative district boundaries.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-geographies based on legislative district boundaries.
 ---
 
+# Political District service
 
-# Political District Service
+The Political District Service allows political buyers to target geographies based on legislative district boundaries.
 
-
-
-The Political District Service allows political buyers to target
-geographies based on legislative district boundaries.
-
-The feature is available within the existing geo targeting module in
-Invest, and it's called "Political District (US Only)". It allows
-political buyers to target the following political geography levels:
+The feature is available within the existing geo targeting module in Microsoft Invest, and it's called "Political District (US Only)". It allows political buyers to target the following political geography levels:
 
 - Congressional District
 - State Senate District
 - State House District  
-    
-
-
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002e31__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002e31__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint </th>
-<th id="ID-00002e31__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__2"><a
-href="https://api.appnexus.com/political-district?id=DISTRICT_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/political-district?id=DISTRICT_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__3">View
-an existing political district</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__2"><a
-href="https://api.appnexus.com/political-district?search=SEARCH_TERM"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/political-district?search=SEARCH_TERM</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__3">Search a political district (only
-available for <code class="ph codeph">district_id, </code><code
-class="ph codeph">district_name, district_type_id, region_id</code>)</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint  | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/political-district?id=DISTRICT_ID](https://api.appnexus.com/political-district?id=DISTRICT_ID) | View an existing political district. |
+| `GET` | [https://api.appnexus.com/political-district?search=SEARCH_TERM](https://api.appnexus.com/political-district?search=SEARCH_TERM) | Search a political district (only available for `district_id`, `district_name`, `district_type_id`, `region_id`). |
 
+## JSON fields
 
+### General
 
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the political district.  |
+| `name` | string | The name of the political district.  |
+| `description` | string  | (Optional) The detailed description of political district information. |
+| `postal_codes_count` | int | The total number of post codes belonging to a particular district. |
+| `postal_code_list_id` | int | The ID of the postal code list associated with political district. |
+| `postal_codes` | array of objects | The postal codes that are to be included in the postal code list. <br> See [example](#postal_codes-example).<br>**Required On:** `POST` and `PUT`. |
+| `political_district` | array of objects | The list details the complete information for political district. |
 
+#### `postal_codes` example
 
-## JSON Fields
+```
+"postal_codes":[
+{"id": 1},
+{"id": 2},
+{"id": 3}
+]
+```
 
-**General**
+#### Postal code object
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002e31__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002e31__entry__11" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00002e31__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-ID of the political district </td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-name of the political district </td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">string </td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__12">(Optional) The detailed description of
-political district information</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">postal_codes_count</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-total number of post codes belonging to a particular district</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">postal_code_list_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-ID of the postal code list associated with political district</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">postal_codes</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-postal codes that are to be included in the postal code list. For
-example,
-<pre class="pre codeblock"><code>&quot;postal_codes&quot;:[
-            {&quot;id&quot;: 1},
-            {&quot;id&quot;: 2},
-            {&quot;id&quot;: 3}
-         ]</code></pre>
-<p><strong>Required On</strong>: POST and PUT</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__10"><code
-class="ph codeph">political_district</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__11">array of objects</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__12">The
-list details the complete information for political district</td>
-</tr>
-</tbody>
-</table>
+The `postal_codes` object contains the following fields:
 
-**Postal Code Object**
+| Field | Type (length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the postal code. |
+| `code` | string | The postal code, which can be an alphanumeric string containing 5 characters. |
+| `country_id` | int | The ID associated with the country. |
+| `active` | string | The status of the postal code, which highlights if the postal code is `active`/`inactive`. |
+| `country_code` | string | The [ISO Alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the country to which the city belongs. To retrieve a complete list of country codes, see [Country Service](country-service.md). |
+| `country_name` | string | The name of the country to which the city belongs. To retrieve a complete list of country names, see [Country Service](country-service.md). |
 
-The postal_codes object contains the following fields: 
+#### Political district object
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002e31__entry__34"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002e31__entry__35"
-class="entry colsep-1 rowsep-1">Type(length)</th>
-<th id="ID-00002e31__entry__36"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__36">The
-ID of the postal code.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code
-class="ph codeph">code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__36">The
-postal code, which can be an alphanumeric string containing 5
-characters.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__36">The
-ID associated with the country</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code
-class="ph codeph">active</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__36">The
-status of the postal code, which highlights if the postal code is
-active/inactive</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code
-class="ph codeph">country_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__36">The <a
-href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" class="xref"
-target="_blank">ISO Alpha-2 code</a> for the country to which the city
-belongs. To retrieve a complete list of country codes, see <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a>.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__34"><code
-class="ph codeph">country_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__35">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__36">The
-name of the country to which the city belongs. To retrieve a complete
-list of country names, see <a
-href="country-service.md"
-class="xref" target="_blank">Country Service</a>.</td>
-</tr>
-</tbody>
-</table>
+The `political_district` object contains the following fields:
 
-**Political District Object**
-
-The political_district object contains the following fields: 
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002e31__entry__55"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002e31__entry__56" class="entry colsep-1 rowsep-1">Type
-(Length)</th>
-<th id="ID-00002e31__entry__57"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-ID of the political district</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">district_name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-name of the political district</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">district_type_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-type of district. Possible values are:
-<ol>
-<li>Congress<br />
-</li>
-<li>State House<br />
-</li>
-<li>State Senate</li>
-</ol></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">region_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-region_id is obtained by the API, from the region_code which is passed
-in the request header</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">postal_code_list_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-ID of postal code list</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">created_on</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__57"><ul>
-<li><strong>Read Only</strong></li>
-</ul>
-<p>The time of creation of the political district list.</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__57"><ul>
-<li><strong>Read Only</strong></li>
-</ul>
-<p>The time of last modification made to the political district
-list.</p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">country_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-ID associated with the country</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__55"><code
-class="ph codeph">region_code</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002e31__entry__56">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002e31__entry__57">The
-region_code is present in the request header which is used by the API to
-find the region_id.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the political district. |
+| `district_name` | string | The name of the political district. |
+| `district_type_id` | int | The type of district. Possible values are:<br>- `Congress`<br>- `State House`<br>- `State Senate` |
+| `region_id` | int | The `region_id` is obtained by the API, from the `region_code` which is passed in the request header. |
+| `postal_code_list_id` | int | The ID of postal code list. |
+| `created_on` | timestamp | **Read Only.**<br>The time of creation of the political district list. |
+| `last_modified` | timestamp | **Read Only.**<br>The time of last modification made to the political district list. |
+| `country_id` | int | The ID associated with the country. |
+| `region_code` | string | The `region_code` is present in the request header which is used by the API to find the `region_id`. |
 
 ## Examples
 
-**View an existing political district by ID**
+### View an existing political district by ID
 
-``` pre
+```
 curl -b cookies -c cookies -s "https://api.appnexus.com/political-district?id=145125" {
     "response": {
         "status": "OK",
@@ -455,9 +172,9 @@ curl -b cookies -c cookies -s "https://api.appnexus.com/political-district?id=14
 }
 ```
 
-**View an existing political district by district name**
+### View an existing political district by district name
 
-``` pre
+```
 curl -b cookies -c cookies -s "https://api.appnexus.com/political-district?district_name=NY+State+House+001" {    
     "response": {
         "status": "OK",
@@ -632,9 +349,9 @@ curl -b cookies -c cookies -s "https://api.appnexus.com/political-district?distr
 }    
 ```
 
-**View an existing political district by postal_code_list_id**
+### View an existing political district by `postal_code_list_id`
 
-``` pre
+```
 $ curl -b cookies -X GET --url 'https://api.appnexus.com/political-district?postal_code_list_id=139897' {
     "response": {
         "status": "OK",
@@ -666,18 +383,6 @@ $ curl -b cookies -X GET --url 'https://api.appnexus.com/political-district?post
                         },
 ```
 
+## Related topic
 
-
-
-
-## Related Topics
-
-- <a
-  href="profile-service.md"
-  class="xref" target="_blank">Profile Service</a>
-
-
-
-
-
-
+[Profile Service](profile-service.md)

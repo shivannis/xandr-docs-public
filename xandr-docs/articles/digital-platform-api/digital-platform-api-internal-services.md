@@ -7,7 +7,8 @@ ms.custom: digital-platform-api
 
 # Digital Platform API internal services
 
-These services are for internal use by Xandr employees. Clients do not have access to these services.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 - [Access Control Policy APIs](./access-control-policy-apis.md)
 - [Access Member Config Service](./access-member-config-service.md)

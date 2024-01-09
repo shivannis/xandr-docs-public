@@ -1,36 +1,25 @@
 ---
-Title : Mobile Targeting and Attribution Challenges
-Description : In <a href="technical-limitations-of-mobile-buying.md"
+title: Microsoft Monetize - Mobile Targeting and Attribution Challenges
+description: Learn how to overcome challenges in performing cross-device targeting and conversion attribution on mobile inventory in this page. 
 ms.date: 10/28/2023
 ---
 
 
-# Mobile Targeting and Attribution Challenges
+# Microsoft Monetize - Mobile targeting and attribution challenges
 
-
-
-In <a href="technical-limitations-of-mobile-buying.md"
-class="xref">Technical Limitations of Mobile Buying</a> , we discussed
+In [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md), we discussed
 the technical realities that are keeping mobile buying features from
 reaching full parity with display (for now). The most difficult problem
 is to reliably perform cross-device targeting and conversion attribution
 on mobile inventory. On this page, we provide an overview of the key
 challenges that must be overcome.
 
+> [!TIP]
+> Each of the sections below corresponds to a numbered section of the diagram for easier reference.
 
+:::image type="content" source="media/mobile-attribution-and-targeting-challenges.png" alt-text="Screenshot of mobile attribution .":::
 
-
-
-<b>Tip:</b> Each of the sections below
-corresponds to a numbered section of the diagram for easier reference.
-
-
-
-
-![mobile attribution](media/mobile-attribution-and-targeting-challenges.png)
-
-
-1\. Cross-Screen Targeting and Attribution
+## 1. Cross-Screen targeting and attribution
 
 Also known as: **Desktops vs. Mobile Devices**
 
@@ -42,7 +31,7 @@ devices.
 with data providers will eventually provide the best solution. For now,
 watch this space.
 
-2\. App-to-Browser Targeting and Attribution
+## 2. App-to-Browser targeting and attribution
 
 Also known as: **Mobile Browsers vs. Apps**
 
@@ -58,7 +47,7 @@ users. This creates several issues:
 **Solution**: Possible solutions include integration with one or more
 device recognition vendors, partnerships with major carriers, or both.
 
-3\. Inter-App Targeting and Attribution
+## 3. Inter-App targeting and attribution
 
 Also known as: **Apps vs. Apps**
 
@@ -81,11 +70,9 @@ methods for identifying a user across apps. This creates several issues:
   Xandr cookie IDs. This allows us to do
   frequency capping using the mechanisms we already have in place. For
   more information about `idfa`, `sha1`, and the other mobile device IDs
-  we support, see the
-  <a href="mobile-ad-call-reference.md" class="xref">Mobile Ad Call
-  Reference</a>.
+  we support, see the [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
-4\. Mobile Safari Cookies
+## 4. Mobile safari cookies
 
 Also known as: **Safari vs. The World**
 
@@ -97,13 +84,8 @@ re-target, and apply frequency caps.
 possible solutions include integration with one or more device
 recognition vendors, partnerships with major carriers, or both.
 
-Related Topics
+## Related topics
 
-- <a href="technical-limitations-of-mobile-buying.md"
-  class="xref">Technical Limitations of Mobile Buying</a>
-- <a href="welcome-to-mobile.md" class="xref">Welcome to Mobile</a>
-- <a href="mobile-buying-faq.md" class="xref">Mobile Buying FAQ</a>
-
-
-
-
+- [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md)
+- [Welcome to Mobile](welcome-to-mobile.md)
+- [Mobile Buying FAQ](mobile-buying-faq.md)

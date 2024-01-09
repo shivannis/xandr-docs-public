@@ -7,7 +7,10 @@ ms.custom: digital-platform-api
 
 # Member contract service
 
-The Member Contract Service allows Xandr Sales Op admins to view, create, update, and delete Xandr member contracts. There are two types of pricing terms denoted by the `pricing_version` field.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
+There are two types of pricing terms denoted by the `pricing_version` field.
 
 - `"2007.09.01"`: These are the "legacy" pricing terms.
 - `"2013.01.02"`: These are the newer pricing terms. Most client contracts negotiated post-2013 will use these new pricing terms. The upshot of the new pricing terms are that clients pay a buy-side fee for both partner and platform inventory, and that clients pay a different seller revshare for buyers on the Xandr platform than for bidder buyers.

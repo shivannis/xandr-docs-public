@@ -198,44 +198,46 @@
     href: click-request.md
   - name: Audit Notify Request
     href: audit-notify-request.md
-  - name: AppNexus Bidding Protocol
-    items:
-    - name: Overview
-      href: appnexus-bidding-protocol.md
-    - name: Bid Request
-      href: bid-request.md
-    - name: Bid Response
-      href: bid-response.md
-    - name: Submitting a No-Bid Response
-      href: submitting-a-no-bid-response.md
-    - name: Click Response
-      href: click-response.md
-    - name: Responding to a MegaTag Bid Request
-      href: responding-to-a-megatag-bid-request.md
-    - name: MegaTag Technical Overview
-      href: megatag-technical-overview.md
   - name: IAB Content Taxonomy Support
     href: iab-content-taxonomy-support.md
+- name: AppNexus Bidding Protocol
+  items:
+  - name: Overview
+    href: appnexus-bidding-protocol.md
+  - name: Bid Request
+    href: bid-request.md
+  - name: Bid Response
+    href: bid-response.md
+  - name: Submitting a No-Bid Response
+    href: submitting-a-no-bid-response.md
+  - name: Click Response
+    href: click-response.md
+  - name: Responding to a MegaTag Bid Request
+    href: responding-to-a-megatag-bid-request.md
+  - name: MegaTag Technical Overview
+    href: megatag-technical-overview.md
 - name: User ID Mapping
   items:
   - name: Overview
     href: user-id-mapping.md
-  - name: Batch Server-Side Segmentation
-    items:
+  - name: Synchronize Your User IDs
+    href: synchronize-your-user-ids.md
+- name: Batch Server-Side Segmentation
+  items:
+  - name: Overview
+    href: batch-server-side-segmentation.md
+  - name: Batch Segment Service
+    href: batch-segment-service.md
+  - name: Initial BSS Account Setup
+    href: initial-bss-account-setup.md
+  - name: Uploading Segment Data Using BSS
+    items: 
     - name: Overview
-      href: batch-server-side-segmentation.md
-    - name: Batch Segment Service
-      href: batch-segment-service.md
-    - name: Initial BSS Account Setup
-      href: initial-bss-account-setup.md
-    - name: Uploading Segment Data Using BSS
-      items: 
-      - name: Overview
-        href: uploading-segment-data-using-bss.md
-      - name: BSS Avro File Format
-        href: bss-avro-file-format.md
-      - name: Legacy BSS File Format
-        href: legacy-bss-file-format.md
+      href: uploading-segment-data-using-bss.md
+    - name: BSS Avro File Format
+      href: bss-avro-file-format.md
+    - name: Legacy BSS File Format
+      href: legacy-bss-file-format.md
     - name: Batch Segment Service Best Practices 
       href: batch-segment-service-best-practices.md
     - name: Troubleshooting BSS Uploads
@@ -246,8 +248,6 @@
       href: verifying-segment-uploads.md
     - name: Troubleshooting Invalid Users
       href: troubleshooting-invalid-users.md
-  - name: Synchronize Your User IDs
-    href: synchronize-your-user-ids.md
 - name: Guaranteed Outcomes
   items:
   - name: Overview

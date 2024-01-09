@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Billing
-description : This page gives you information on understanding and accessing your Billing information.
+title: Microsoft Monetize - Billing
+description: This page gives you information on understanding and accessing your Billing information.
 ms.date: 10/28/2023
 ---
 

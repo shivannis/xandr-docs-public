@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Audio Inventory
-description : Learn how you can buy Audio Inventory on Xandr.
+title: Microsoft Monetize - Buying Audio Inventory
+description: Learn how you can buy Audio Inventory on Xandr.
 ms.date: 10/28/2023
 ---
 

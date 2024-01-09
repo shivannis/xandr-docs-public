@@ -7,13 +7,13 @@ ms.date : 10/28/2023
 
 # Add a transition animation on Android
 
-By default this feature is disabled. Enable banner ad transition animations with the following code:
+The transition animation feature is disabled by default. To enable banner ad transition animations, implement the following code:
 
 ```
 bav.setTransitionType(TransitionType.PUSH);
 ```
 
-Disable banner transitions by calling:
+You can disable banner transitions by calling:
 
 ```
 bav.setTransitionType(TransitionType.NONE);

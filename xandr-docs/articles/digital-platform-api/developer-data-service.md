@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Developer data service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The Developer Data Service is used to add data about API objects. The Developer Data Service is flexible, allowing developers to store anything that might be useful when the user accesses the object again. Some examples of how this service can be used:
 
 - Xandr uses it to store data on users not used by ad serving (e.g., if the user has seen or dismissed certain notifications within).

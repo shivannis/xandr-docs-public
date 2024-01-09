@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Creative Custom Request Partner service
 
 > [!NOTE]
-> Mediation is available only to Microsoft Monetize Ad Server customers.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 This service is used to define custom request partners that sellers on our platform can send ad requests to via mediation. Custom request
 partners are usually ad networks that are not connected to our exchange, but that sellers on our platform would like to sell to nonetheless.

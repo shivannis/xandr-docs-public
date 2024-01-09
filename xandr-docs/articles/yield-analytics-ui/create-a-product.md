@@ -8,22 +8,26 @@ ms.custom: yield-analytics-ui
 
 Use the following steps to create a product:
 
-- Click the down arrow next to the **Products** tab.
-- Click **Create a Product** from the drop-down menu. The **Create Product** screen is accessed.
-- Enter the **Product Name**. This is the name that you decide to give the product. It is a required field.
-- Enter the **Product External Id**. This is a identifier that you may want to include to track the product on your system.
-- Enter the **Target Expression**. This is accomplished by clicking the **Builder** tab.
-- Once the target expression is created, it will be displayed on the **Create Product** screen.
+1. Click the down arrow next to the **Products** tab.
+2. Click **Create a Product** from the drop-down menu. The **Create Product** screen is accessed.
+3. Enter the **Product Name**. This is the name that you decide to give the product. It is a required field.
+4. Enter the **Product External Id**. This is a identifier that you may want to include to track the product on your system.
+5. Enter the **Target Expression**. This is accomplished by clicking the **Builder** tab.
+6. Once the target expression is created, it will be displayed on the **Create Product** screen.
 
 > [!TIP]
 > After the target expression is created, it creates an actual link that you can click on from the Create Product screen. Clicking that link will access a read-only screen.
 
-Choose the **Product Type**. There are two radio buttons that identify which type of product you are creating:
+## Product type selection
+
+While choosing the **Product Type**, here are two options with radio buttons that identify which type of product you are creating:
 
 - Rate Card –  Product that is sold frequently by the sales team and represents the product catalog (e.g., ROS 728x90).
 - Reporting – Product that is used for reporting purposes, but is not generally not sold (e.g., Top three ad sizes in the Sports section).
-- Specify the Default **Rate Card CPM**. This is the default **Rate Card CPM** that is binded to this product.
-- You can associate this product to product groups. In the
+Specify the Default **Rate Card CPM**. This is the default **Rate Card CPM** that is binded to this product.
+
+## Product groups
+You can associate any product to product groups. In the
   **Associated Product Groups** section, click the **Add to Product Groups** button. This accesses the **Product
   Group** screen.
   - There is a filter that assists searching for a specific product group(s). You can filter by the following parameters: **Contains**, **Starts with**, **Ends with**, **Equals**.
@@ -38,8 +42,8 @@ Choose the **Product Type**. There are two radio buttons that identify which typ
   - Once you have made your entries and selection,
     click **Update** to accept the selections.
   - Click **Cancel** to cancel your selection at any time during the process.
-- Once the associated product groups are created, they are displayed on the **Create Product** screen.
-- There is filter capability to locate the product group you would like to edit. Clicking the down arrow next to each column identifier allows you to drill down into that section.
+Once the associated product groups are created, they are displayed on the **Create Product** screen.
+There is filter capability to locate the product group you would like to edit. Clicking the down arrow next to each column identifier allows you to drill down into that section.
 
 | Column | Filters | Reaction Button |
 |---|---|---|
@@ -47,7 +51,9 @@ Choose the **Product Type**. There are two radio buttons that identify which typ
 | Description | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br> Clear - This clears all information and allows you to begin again. |
 | Status | - Is equal to<br> - Is not equal to<br> - Starts with<br> - Contains<br> - Does not contain<br> - Ends with | Filter - This filters as per your selection.<br>Clear - This clears all information and allows you to begin again. |
 
-- You can assign a **Seasonal Rate Card** to products. To add a new seasonal rate card, click the **Add new** button
+## Seasonal rate card assignment
+
+You can assign a **Seasonal Rate Card** to products. To add a new seasonal rate card, click the **Add new** button
   in the Seasonal Rate Card section of the Create Product screen. This accesses the **Create a new Seasonal Rate
   Card** screen.
   - Enter the desired date range. This is accomplished by clicking the actual displayed Date Range entry, to access a calendar. Click **Update** to make your selection.

@@ -1,219 +1,51 @@
 ---
-Title : Operating System Extended Service
-Description : This read-only service shows you the list of specific operating system
+title: Operating System Extended Service
+description: The operating system extended service provides a list of specific operating system versions to target in the profile service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-versions that you can target in the <a
-href="profile-service.md"
 ---
 
+# Operating system extended service
 
-# Operating System Extended Service
+This read-only service shows you the list of specific operating system versions that you can target in the [Profile Service](./profile-service.md).
 
-
-
-This read-only service shows you the list of specific operating system
-versions that you can target in the <a
-href="profile-service.md"
-class="xref" target="_blank">Profile Service</a>.
-
-
-
-<b>Tip:</b>
-
-You can also target operating systems as a whole (all versions). To see
-the operating systems (Android, Apple iOS, Windows 7, etc.) registered
-in the system, use the <a
-href="operating-system-family-service.md"
-class="xref" target="_blank">Operating System Family Service</a>.
-
-
-
-
+> [!TIP]
+> You can also target operating systems as a whole (all versions). To see the operating systems (Android, Apple iOS, Windows 7, etc.) registered in the system, use the [Operating System Family Service](./operating-system-family-service.md).
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002700__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-00002700__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-00002700__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">View
-all operating systems</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended?search=SEARCH_TERM"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended?search=SEARCH_TERM</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">View
-all operating systems with IDs or names containing certain
-characters</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended?family_id=OS_FAMILY_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended?family_id=OS_FAMILY_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">View
-all operating systems within a specific family</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended?family_name=OS_FAMILY_NAME"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended?family_name=OS_FAMILY_NAME</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">View
-all operating systems within a specific family</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended?id=OPERATING_SYSTEM_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended?id=OPERATING_SYSTEM_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">View
-a specific operating system</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__2"><a
-href="https://api.appnexus.com/operating-system-extended/meta"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/operating-system-extended/meta</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__3">Find
-out which fields you can filter and sort by</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | https://api.appnexus.com/operating-system-extended | View all operating systems. |
+| `GET` | https://api.appnexus.com/operating-system-extended?search=SEARCH_TERM | View all operating systems with IDs or names containing certain characters. |
+| `GET` | https://api.appnexus.com/operating-system-extended?family_id=OS_FAMILY_ID | View all operating systems within a specific family. |
+| `GET` | https://api.appnexus.com/operating-system-extended?family_name=OS_FAMILY_NAME | View all operating systems within a specific family. |
+| `GET` | https://api.appnexus.com/operating-system-extended?id=OPERATING_SYSTEM_ID | View a specific operating system. |
+| `GET` | https://api.appnexus.com/operating-system-extended/meta | Find out which fields you can filter and sort by. |
 
+## JSON fields
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The Xandr ID of the operating system. |
+| `family` | object | The operating system family, e.g., `"Android"`, `"Apple iOS"`, `"Apple Mac/OSX"`, etc. See [Family](#family) below, for more details. |
+| `last_modified` | date | The date and time when the operating system entry was last modified. |
+| `name` | string | The name of the specific operating system version. |
 
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002700__entry__22"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002700__entry__23"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002700__entry__24"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__22"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__23">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__24">The
-Xandr ID of the operating system.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__22"><code
-class="ph codeph">family</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__23">object</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__24">The
-operating system family, e.g., "Android", "Apple iOS", "Apple Mac/OSX",
-etc. See <a
-href="operating-system-extended-service.md#ID-00002700__fam"
-class="xref">Family</a> below, for more details.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__22"><code
-class="ph codeph">last_modified</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__23">date</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__24">The
-date and time when the operating system entry was last modified.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__22"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__23">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__24">The
-name of the specific operating system version.</td>
-</tr>
-</tbody>
-</table>
-
-**Family**
+### Family
 
 The `family` object contains the following fields.
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-00002700__entry__37"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-00002700__entry__38"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-00002700__entry__39"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__37"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__38">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__39">The
-Xandr ID of the operating system family.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__37"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-00002700__entry__38">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-00002700__entry__39">The
-name of the operating system family, e.g., "Android", "Apple iOS",
-"Apple Mac/OSX", etc.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The Xandr ID of the operating system family. |
+| `name` | string | The name of the operating system family, e.g., `"Android"`, `"Apple iOS"`, `"Apple Mac/OSX"`, etc. |
 
 ## Examples
 
-**View all operating systems**
+### View all operating systems
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended"
 {
   "response": {
@@ -390,9 +222,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended
 }
 ```
 
-**View all operating systems with names containing certain characters**
+### View all operating systems with names containing certain characters
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended?search=and"
 {
   "response": {
@@ -506,9 +338,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended
 }
 ```
 
-**View all operating systems within a specific family**
+### View all operating systems within a specific family
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended?family_id=8"
 {
   "response": {
@@ -549,9 +381,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended
 }
 ```
 
-**View a specific operating system**
+### View a specific operating system
 
-``` pre
+```
 $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended?id=46"
 {
   "response": {
@@ -571,9 +403,3 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/operating-system-extended
   }
 }
 ```
-
-
-
-
-
-

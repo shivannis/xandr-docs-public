@@ -11,7 +11,7 @@ ms.date : 10/28/2023
 This document provides instructions on how publishers can integrate and
 install the Universal Pixel SDK (Pixie SDK) for Android.
 
-## Integration
+## Integration instructions
 
 **Requirements**
 
@@ -34,7 +34,7 @@ ID that represents a pixel in your app.
 > 
 > These instructions assume you are using Android Studio and Gradle. All of the required AndroidManifest.xml entries and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
 
-## Installation
+## Installation guide
 
 Install via Maven from your `build.gradle` file as shown below. Note
 that the `[1,2)` notation means that when your app is compiled, the
@@ -58,9 +58,9 @@ dependencies {
 }
 ```
 
-## Implementation
+## Implementation guide
 
-**Initialization**
+### Initialization
 
 Initialize the sdk as early as possible in the App's life cycle using
 the initialize() method, passing the pixel id and context as
@@ -70,7 +70,7 @@ parameters. 
 Pixie.initialize(pixel_id: String, context: Context); 
 ```
 
-## Track event
+### Track event
 
 Once the SDK is initialized events can be tracked and submitted
 using **fireEvent()** method.  
@@ -114,11 +114,7 @@ is represented by the PixieParams class. All parameters are optional.
 
 An application context
 
-## Code Samples
-
-**Initialization**
-
-Code sample: 
+**Initialization code sample:**
 
 **Kotlin**
 
@@ -132,9 +128,7 @@ Pixie.initialize("2dad9dcd-de80-4dd1-b900-f4349082ab57",context)
 Pixie.initialize("2dad9dcd-de80-4dd1-b900-f4349082ab57",context);
 ```
 
-## Track standard event
-
-**Page View**
+### Track standard event - page view
 
 ``` 
 Event.PAGE_VIEW
@@ -142,7 +136,7 @@ Event.PAGE_VIEW
 
 The specific page that was visited. 
 
-Code sample: 
+**Code sample:** 
 
 **Kotlin**
 
@@ -156,7 +150,7 @@ Pixie.fireEvent(Event.PAGE_VIEW,context)
 Pixie.fireEvent(Event.PAGE_VIEW,context);
 ```
 
-## Landing page
+### Track landing page views
 
 ``` 
 Event.LANDING_PAGE
@@ -164,7 +158,7 @@ Event.LANDING_PAGE
 
 Track landing pages' views.
 
- Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -180,7 +174,7 @@ PixieParams landingPageParams = new PixieParams("5.99","USD","product_5,product_
 Pixie.fireEvent(Event.LANDING_PAGE,landingPageParams,context);
 ```
 
-## Item view
+### Track key page views
 
 ``` 
 Event.ITEM_VIEW
@@ -188,7 +182,7 @@ Event.ITEM_VIEW
 
 Track key page views (ex: product page, landing page, article).
 
- Code sample:
+**Code sample:**
 
 **Kotlin**
 
@@ -204,7 +198,7 @@ PixieParams itemViewParams = new PixieParams("5.99","USD","product_5,product_6",
 Pixie.fireEvent(Event.ITEM_VIEW,itemViewParams,context);
 ```
 
-## Add to cart
+## Track add to cart event
 
 ``` 
 Event.ADD_TO_CART
@@ -213,7 +207,7 @@ Event.ADD_TO_CART
 Track when items are added to a shopping cart (ex: click, landing page
 on Add to Cart button).
 
- Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -229,7 +223,7 @@ PixieParams addToCartParams = new PixieParams("5.99","USD","product_5,product_6"
 Pixie.fireEvent(Event.ADD_TO_CART,addToCartParams,context); 
 ```
 
-## Initiate checkout
+### Track checkout event
 
 ``` 
 Event.INITIATE_CHECKOUT
@@ -238,7 +232,7 @@ Event.INITIATE_CHECKOUT
 Track when people enter the checkout flow (ex: click, landing page on
 checkout button).
 
- Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -254,14 +248,14 @@ PixieParams initiateCheckOutParams = new PixieParams("5.99","USD","product_5,pro
 Pixie.fireEvent(Event.INITIATE_CHECKOUT,initiateCheckOutParams,context);
 ```
 
-**Add Payment Info**
+### Track add payment info
 
 Event.ADD_PAYMENT_INFO
 
-**Track when payment information is added in the checkout flow (ex:
-click, landing page on billing info)**
+Track when payment information is added in the checkout flow (ex:
+click, landing page on billing info)
 
-Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -277,7 +271,7 @@ PixieParams addPaymentInfoParams = new PixieParams("5.99","USD","product_5,produ
 Pixie.fireEvent(Event.ADD_PAYMENT_INFO,addPaymentInfoParams,context);
 ```
 
-## Purchase
+### Track purchase event
 
 ``` 
 Event.PURCHASE
@@ -286,7 +280,7 @@ Event.PURCHASE
 Track purchases or checkout flow completions (ex: Landing on "Thank You"
 or confirmation page).
 
-Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -302,7 +296,7 @@ PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currenc
 [Pixie fireEvent:Event.PURCHASE eventParams:purchaseParams]; 
 ```
 
-## Lead 
+### Track leads 
 
 ``` 
 Event.LEAD
@@ -311,7 +305,7 @@ Event.LEAD
 Track when someone expresses interest in your offering (ex: form
 submission, sign up for trial, registration).
 
-Code sample: 
+**Code sample:**
 
 **Kotlin**
 
@@ -329,7 +323,7 @@ leadParams.setCurrency("USD");
 Pixie.fireEvent(Event.LEAD,leadParams,context);
 ```
 
-## Track custom event
+### Track custom event
 
 Custom Events enable publishers to create their own events to track and
 submit. To create a custom event, initiate a PixelParams object with the
@@ -338,7 +332,7 @@ identifier to the Pixie SDK fireEvent method. Custom event data can also
 be sent in key-value pairs by using the put method of the PixelParams
 object. 
 
-Code samples: 
+**Code samples:**
 
 **Kotlin**
 

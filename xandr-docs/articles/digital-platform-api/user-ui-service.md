@@ -8,12 +8,14 @@ ms.custom: digital-platform-api
 # User UI service
 
 > [!NOTE]
+> User UI service is currently available to a limited set of clients and Microsoft employees only.
+>
 > This service is **deprecated** as of late June 2014, as part of the API 1.15 release. Because 1.15 is a breaking change release, this service will not actually go away until 60 days after the release of 1.15 (likely late August 2014).
 
 The user UI service allows you to change whether campaign peer approval is required for users.
 
 > [!NOTE]
-> The User UI settings are not enforced in the service layer for campaign activation. This API service does not interact with API logic. The service cannot actually change user peer approval settings and cannot prevent unapproved campaign creation by a user in the API. Rather, the User UI service's purpose is exclusively to maintain the permissions for GUI use cases around campaign activation, and to assist with workflow management in.
+> The User UI settings are not enforced in the service layer for campaign activation. This API service does not interact with API logic. The service cannot actually change user peer approval settings and cannot prevent unapproved campaign creation by a user in the API.  Rather, the User UI service's purpose is exclusively to maintain the permissions for GUI use cases around campaign activation, and to assist with workflow management in.
 >
 > This service is accessible only to the following user types:
 >

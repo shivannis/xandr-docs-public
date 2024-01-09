@@ -7,11 +7,11 @@ ms.date : 10/28/2023
 
 # Configure SDK logging on Android
 
-This page has instructions for turning logging on and off, and for setting logging levels.
+This article has instructions for turning logging on and off, and for setting logging levels.
 
-How you configure logging changes depending on whether your SDK version is RC 1.21 or newer. In RC 1.21, we changed the SDK to use the native Android logging system properties. For more information, see the section below that corresponds to your SDK version.
+Depending on your Mobile SDK version (whether it is RC 1.21 or newer), the configuration of logging mechnism changes. In RC 1.21, the SDK uses the native Android logging system properties. For more information, see the section below that corresponds to your SDK version.
 
-## RC 1.21 and up
+## RC 1.21 and above
 
 As of RC 1.21, Android's logging system properties are used instead of the SDK's built-in `Clog.clogged`.
 

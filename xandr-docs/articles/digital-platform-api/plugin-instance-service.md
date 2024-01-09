@@ -1,291 +1,53 @@
 ---
-Title : Plugin Instance Service
-Description : When you develop an app for the Apps Marketplace, you build an umbrella
+title: Plugin Instance Service
+description: Use the plugin instance service to create and manage umbrella and specific app instances for apps marketplace.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-app and then one or more specific app instances that plug into the
-workflow in different places. The Plugin Instance Service allows you to
 ---
 
+# Plugin instance service
 
-# Plugin Instance Service
-
-
-
-When you develop an app for the Apps Marketplace, you build an umbrella
-app and then one or more specific app instances that plug into the
-workflow in different places. The Plugin Instance Service allows you to
-create and control these instances. For information about creating and
-managing an umbrella app, see the
-<a href="plugin-service.md" class="xref">Plugin Service</a>.
-
-
+When you develop an app for the Apps Marketplace, you build an umbrella app and then one or more specific app instances that plug into the workflow in different places. The Plugin Instance Service allows you to create and control these instances. For information about creating and managing an umbrella app, see the [Plugin Service](./plugin-service.md).
 
 ## REST API
 
+> [!NOTE]
+> There are three different user roles, two of which that can make calls to this service:
+>
+> - **App Providers** - Members who develop apps in the Apps Marketplace.
+> - **App Subscribers** - Members who subscribe to and use apps.
+> - **Non-member Developers** - These app developers are not associated to members and cannot make calls to this service.
+>
+> Certain roles are restricted from making one or more calls. The roles that can make the calls are specified in the **Description** column in the table below.
 
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `POST` | https://api.appnexus.com/plugin-instance<br>(plugin-instance JSON) | Add an app.<br> - App Providers.<br> - App Subscribers. |
+| `PUT` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID<br>(plugin-instance JSON) | Modify an app.<br> - App Providers. |
+| `GET` | https://api.appnexus.com/plugin-instance | View all apps instances.<br> - App Providers.<br> - App Subscribers (will only see instances to which they are associated). |
+| `GET` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | View a specific app instance.<br> - App Providers.<br> - App Subscribers (will only see an instance if they are associated to it). |
+| `DELETE` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | Delete an app instance.<br> - App Providers |
+| `DELETE` | https://api.appnexus.com/plugin?id=PLUGIN_INSTANCE_ID | Delete all apps installed by a subscriber. |
+| `DELETE` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | Delete all apps created by a developer. |
 
-<b>Note:</b> There are three different user
-roles, two of which that can make calls to this service:
+## JSON fields
 
-- **App Providers** - Members who develop apps in the Apps Marketplace
-- **App Subscribers** - Members who subscribe to and use apps
-- **Non-member Developers** - These app developers are not associated to
-  members and cannot make calls to this service
-
-Certain roles are restricted from making one or more calls. The roles
-that can make the calls are specified in the **Description** column in
-the table below.
-
-
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000005cb__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000005cb__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000005cb__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code class="ph codeph">POST</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance</a><br />
-(plugin-instance JSON)</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__3">Add
-an app.
-<ul>
-<li>App Providers.</li>
-<li>App Subscribers.</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code class="ph codeph">PUT</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID</a>
-<p>(plugin-instance JSON)</p></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__3">Modify an app.
-<ul>
-<li>App Providers.</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__3">View
-all apps instances.
-<ul>
-<li>App Providers.</li>
-<li>App Subscribers (will only see instances to which they are
-associated).</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code class="ph codeph">GET</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__3">View
-a specific app instance.
-<ul>
-<li>App Providers.</li>
-<li>App Subscribers (will only see an instance if they are associated to
-it).</li>
-</ul></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__3">Delete an app instance.
-<ul>
-<li>App Providers</li>
-</ul></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin?id=PLUGIN_INSTANCE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/plugin?id=PLUGIN_INSTANCE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__3">Delete all apps installed by a
-subscriber.</td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__1"><code
-class="ph codeph">DELETE</code></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__2"><a
-href="https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID</a></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__3">Delete all apps created by a
-developer.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000005cb__entry__25"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000005cb__entry__26"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000005cb__entry__27"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">description</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-tooltip that displays when you hover over the app instance.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">flavor</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">enum</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-location where the app is integrated into the  workflow. Possible
-values:
-<ul>
-<li><code class="ph codeph">"standalone"</code> - The app is available
-to network users in the main Apps tab.</li>
-<li><code class="ph codeph">"creative_action"</code> - The app is
-available to network users directly from the Creative Manager
-screen.</li>
-<li><code class="ph codeph">"advertiser_menu"</code> - The app is
-available to advertiser users in the Advertisers tab.</li>
-<li><code class="ph codeph">"publisher_menu"</code> - The app is
-available to publisher users in the Publishers tab.</li>
-<li><code class="ph codeph">"conversion_pixel"</code> - The app uses a
-tracking pixel to count the number of downloads of this app.</li>
-</ul>
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">icon_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-URL of the icon that is displayed with the app instance.
-<p><strong>Default</strong>: <code
-class="ph codeph">null</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code class="ph codeph">id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-ID of the app instance.
-<p><strong>Default</strong>: Auto-generated number</p>
-<p><strong>Required On</strong>: <code
-class="ph codeph">PUT</code>/<code class="ph codeph">DELETE</code>, in
-query string</p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">iframe_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-URL pointing to the content of the app.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">name</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-name that is displayed with the app instances.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">plugin_id</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">int</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-ID of the app that the instance belongs to.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__25"><code
-class="ph codeph">proxy_url</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000005cb__entry__26">string</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000005cb__entry__27">The
-URL of the proxy.md file. This proxy file allows for cross-frame
-communication between  and your app. It must be
-uploaded to a URL on the same domain as your app.
-<p><strong>Required On</strong>: <code
-class="ph codeph">POST</code></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `description` | string | The tooltip that displays when you hover over the app instance.<br><br>**Default**: `null` |
+| `flavor` | enum | The location where the app is integrated into the  workflow. Possible values:<br> - `"standalone"` - The app is available to network users in the main **Apps** tab.<br> - `"creative_action"` - The app is available to network users directly from the **Creative Manager** screen.<br> - `"advertiser_menu"` - The app is available to advertiser users in the **Advertisers** tab.<br> - `"publisher_menu"` - The app is available to publisher users in the **Publishers** tab.<br> - `"conversion_pixel"` - The app uses a tracking pixel to count the number of downloads of this app.<br><br>**Required On**: `POST` |
+| `icon_url` | string | The URL of the icon that is displayed with the app instance.<br><br>**Default**: `null` |
+| `id` | int | The ID of the app instance.<br><br>**Default**: Auto-generated number<br>**Required On**: `PUT`/`DELETE`, in query string |
+| `iframe_url` | string | The URL pointing to the content of the app.<br><br>**Required On**: `POST` |
+| `name` | string | The name that is displayed with the app instances.<br><br>**Required On**: `POST` |
+| `plugin_id` | int | The ID of the app that the instance belongs to.<br><br>**Required On**: `POST` |
+| `proxy_url` | string | The URL of the `proxy.md` file. This proxy file allows for cross-frame communication between and your app. It must be uploaded to a URL on the same domain as your app.<br><br>**Required On**: `POST` |
 
 ## Examples
 
-**Add an app**
+### Add an app
 
-``` pre
+```
 $ cat plugin_instance.json
 {
    "plugin-instance": {
@@ -325,9 +87,9 @@ $ curl -b cookies -c cookies -X POST -d @plugin_instance 'https://api.appnexus.c
 }
 ```
 
-**Modify an app**
+### Modify an app
 
-``` pre
+```
 $ cat modify-plugin.json
 {
     "plugin-instance": {
@@ -360,9 +122,9 @@ $ curl -b cookies -c cookies -X PUT -d @modify-plugin.json 'https://sand.api.app
 }
 ```
 
-**View all apps**
+### View all apps
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/plugin-instance'
 {
     "response": {
@@ -446,9 +208,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/plugin-instance'
 }
 ```
 
-**View a specific app**
+### View a specific app
 
-``` pre
+```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/plugin-instance?id=32'
 {
     "response": {
@@ -474,9 +236,9 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/plugin-instance?id=32'
 }
 ```
 
-**Delete an app**
+### Delete an app
 
-``` pre
+```
 $ curl -b cookies -c cookies -X DELETE 'https://sand.api.appnexus.com/plugin-instance?id=20' | json-pp
 {
     "response":{
@@ -487,9 +249,3 @@ $ curl -b cookies -c cookies -X DELETE 'https://sand.api.appnexus.com/plugin-ins
     }
 }
 ```
-
-
-
-
-
-

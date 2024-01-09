@@ -7,20 +7,11 @@ ms.date : 10/28/2023
 
 # Get Facebook demand for native on Android
 
-This document describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK.
+This article describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK in following steps:
 
-The following steps are required for retrieving and displaying native ads for Facebook's Audience Network SDK:
+## Ensure proper SDKs installed
 
-1. Ensure that the proper SDKs are installed.
-1. Initialize Facebook's Audience Network SDK.
-1. Create a native banner ad layout.
-1. Create a native ad request and load the ad.
-1. Inflate and register the native ad.
-1. Unregister the views.
-
-## Ensure that the proper SDKs are installed
-
-The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
+The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, please
 go to [our page](https://github.com/appnexus/mobile-sdk-android/releases) on Github repo. In the dependencies section of the `build.gradle` of your project add these two lines:
 
 ``` 
@@ -48,7 +39,7 @@ AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkA
 
 ## Create a native banner ad layout
 
-In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Xandr SDK to render a native `Ad Reporting Flow` on top of the ad.
+In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout,` which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
 
 ``` 
 <?xml version="1.0" encoding="utf-8"?>

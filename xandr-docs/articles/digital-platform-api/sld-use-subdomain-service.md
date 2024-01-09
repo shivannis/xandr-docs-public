@@ -1,14 +1,15 @@
 ---
-Title : Sld Use Subdomain Service
-Description : The Second Level Domain (SLD) Use Subdomain service is an admin-only
+title: Sld Use Subdomain Service
+description: The Second Level Domain (SLD) Use Subdomain service is an admin-only service that allows users to add rows to the `api.sld_use_subdomain` table.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-service that allows users to add rows to the `api.sld_use_subdomain`
 ---
 
 
 # Sld Use Subdomain Service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 
 The Second Level Domain (SLD) Use Subdomain service is an admin-only

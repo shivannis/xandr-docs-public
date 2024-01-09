@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying Deals
-description : A deal is an agreement between a buyer and a seller that provides
+title: Microsoft Monetize - Buying Deals
+description: Learn what is a Deal and how you can strike deals with sellers.
 ms.date: 10/28/2023
 ---
 

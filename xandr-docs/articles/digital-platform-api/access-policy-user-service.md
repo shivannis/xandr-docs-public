@@ -8,7 +8,7 @@ ms.custom: digital-platform-api
 # Access Policy User service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The **access-policy-user** service allows you to identify which roles and teams a user is on.
 

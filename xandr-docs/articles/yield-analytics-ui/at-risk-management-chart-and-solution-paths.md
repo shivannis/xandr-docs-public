@@ -8,7 +8,7 @@ ms.custom: yield-analytics-ui
 # At-risk management chart and solution paths
  :::image type="content" source="media/oo.png" alt-text="The  screenshot that displays the At-risk management flow chart.":::
 
-## The root cause has been determined. Here are the next steps:
+## Overview
 
 Once you have determined the root cause of your under-delivery issue, you have a choice of how to determine the best solution. For any of the root causes below, the best path is to use **Availability Lookup** to try out different scenarios.
 

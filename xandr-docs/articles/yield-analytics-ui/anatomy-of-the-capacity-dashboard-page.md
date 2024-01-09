@@ -5,11 +5,11 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the capacity dashboard page
+# Anatomy of the Capacity Dashboard Page
 
 The Capacity Dashboard page is the primary view for the **Capacity** tab. It provides a snapshot of your capacity for products and product groups, as well as a tasks panel to navigate to forecasts and add adjustments. It is displayed automatically when you click the **Capacity** tab.
 
-## About the capacity dashboard interface
+## The dashboard interface
 
 The Capacity Dashboard is comprised of three widgets:
 
@@ -28,6 +28,42 @@ To the left of the widgets is the **Capacity Tasks** panel. This is where you 
 - **Adjust Seasonal Forecast** – Make a seasonal adjustment to your network's seasonal products.
 
 Below the Capacity Tasks panel is the Processing Summary panel. This indicates when the capacity forecast was last updated.
+
+## Check impression capacity for a product group
+
+You can use the Impression Capacity widget to quickly check a snapshot of your network's capacity, or click on a specific product to view its full
+capacity forecast.
+
+1. On the **Capacity Dashboard** page, in the Impression Capacity widget, select the product group from the drop-down list. You can filter the product groups by typing in the box.
+1. (Optional) Adjust the date range by clicking the Next x Month(s) filter, specifying a new standard or custom date range, and clicking **Update**. The top-performing products' impression capacity appears.
+1. Click a specific product to view its Capacity Forecast. This displays impressions capacity by consumption date for the product. You can view the full product details by clicking **Show Product Details**.
+1. (Optional) Make any changes to the report:
+    - Click a forecast line key under the chart to hide it.
+    - Adjust the consumption date range or time period metrics by clicking on them.
+    - Click **Export** to export the report to CSV or Excel.
+    - Change the display of the report from a chart to tabular data.
+
+If necessary, you can add or edit a manual or seasonal adjustment to the forecast report.
+
+## Check Manual Adjustments and Holidays
+The Manual Adjustments & Holidays widget displays any upcoming holidays forecast adjustments.
+
+1. On the Capacity Dashboard page, in the Manual Adjustments & Holidays widget, click **Next x Day(s)**.
+1. (Optional) Specify a standard or custom date range and click **Update**. The list of adjustments appears.
+1. Click an adjustment to view its details. View the full product details by clicking **Show Product Details**.
+1. Make any changes to the adjustment's options (e.g., Start date, Status) by clicking on them and specifying the new value.
+1. (Optional) In the Capacity Forecast panel, make any additional changes to the report:
+    - Click a forecast line key under the chart to hide it.
+    - Adjust the consumption date range or time period metrics by clicking on them.
+    - Click **Export** to export the report to CSV or Excel.
+    - Change the display of the report from a chart to tabular data.
+## Check capacity trended for a product group
+
+Use the **Capacity Trended** widget to quickly view how your whole network, or a specific product is trending.
+
+1. On the **Capacity Dashboard** page, view the **Capacity Trended** widget for your entire network. The exact capacity figure is displayed when you mouse over a specific time period's green bar.
+1. To view the trended capacity for a specific product, select it from the drop-down menu. You can filter the available products by typing in the box.
+1. (Optional) Click **View All** to open the Consumed Impressions report on the **Reports** tab.
 
 ## Related topics
 

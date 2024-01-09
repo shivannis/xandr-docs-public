@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # Receive ad view status events on Android
 
-This page has instructions on how to receive ad view status events from our SDK. You can use these events to determine from your app when an ad has been clicked, whether it's in an expanded state, and more.
+This article has instructions on how to receive ad view status events from our SDK. You can use these events to determine when an ad has been clicked, whether it's in an expanded state, and more.
 
 In order to receive status events during the life cycle of the ad view, you must implement the `AdListener` interface and attach it to the ad view. Its methods are:
 

@@ -1,6 +1,6 @@
 ---
-title : Block a Brand Using Ad Quality Rules
-description : Learn how to block a Brand using Network and Publisher Ad Quality.
+title: Block a Brand Using Ad Quality Rules
+description: Learn how to block a Brand using Network and Publisher Ad Quality.
 ms.date: 10/28/2023
 ---
 

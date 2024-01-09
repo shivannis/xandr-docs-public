@@ -7,8 +7,10 @@ ms.custom: digital-platform-api
 
 # User DRT service
 
-The User DRT service was created to allow the DRT (the central user store owned & maintained by Corp-IT ) to control access for users.
-Eventually, roles and permissions will be governed via the DRT service.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
+The User DRT service was created to allow the DRT (the central user store owned & maintained by Corp-IT) to control access for users. Eventually, roles and permissions will be governed via the DRT service.
 
 The central id used by DRT is the `account_id`, which stores mapping data between the user ID and the account ID.
 

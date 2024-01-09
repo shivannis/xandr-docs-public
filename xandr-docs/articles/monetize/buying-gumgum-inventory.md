@@ -1,6 +1,6 @@
 ---
-title : Microsoft Monetize - Buying GumGum Inventory
-description : Learn what is GumGum Inventory and how it can be used to enhance user engagement.  
+title: Microsoft Monetize - Buying GumGum Inventory
+description: Learn what is GumGum Inventory and how it can be used to enhance user engagement.  
 ms.date: 10/28/2023
 ---
 
