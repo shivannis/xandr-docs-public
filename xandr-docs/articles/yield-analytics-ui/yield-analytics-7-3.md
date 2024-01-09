@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics 7.3
-description : Learn about the New Reports screen for all of your old reports.  
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui 
+title: Yield Analytics 7.3
+description: Learn about the New Reports screen that you can use for all of your old reports.  
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui 
 ---
 
 

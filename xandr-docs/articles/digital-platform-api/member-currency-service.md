@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Member currency service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This is a read-only service that shows you the list of currencies used by a member's publishers. For more details about a currency, see [Currency Service](./currency-service.md).
 
 ## REST API

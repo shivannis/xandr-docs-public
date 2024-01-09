@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Targeted segment analytics report
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 The **Targeted Segment Analytics** report is an admin-only report designed to give you insight into how your segment targeting is affecting the performance of your in-flight campaigns. Use cases for this report include:
 
 - Understanding which targeted segments (both behavioral and contextual) are driving impressions, clicks and conversions within a running campaign.

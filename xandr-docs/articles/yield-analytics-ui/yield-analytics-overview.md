@@ -1,8 +1,8 @@
 ---
-title : Yield Analytics Overview
-description : Learn about Yield Analytics in this page.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Yield Analytics Overview
+description: Learn about Yield Analytics in this page.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

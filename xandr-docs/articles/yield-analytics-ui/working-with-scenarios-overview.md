@@ -1,8 +1,8 @@
 ---
-title : Working With Scenarios Overview
-description : Learn how Scenario Manager can be used to run simulations, troubleshoot order line delivery, solve order line pacing issues and analyze a proposal.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+title: Working With Scenarios Overview
+description: Learn how Scenario Manager can be used to run simulations, troubleshoot order line delivery, solve order line pacing issues and analyze a proposal.
+ms.date: 10/28/2023
+ms.custom: yield-analytics-ui
 
 ---
 

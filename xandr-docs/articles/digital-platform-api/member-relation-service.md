@@ -7,7 +7,8 @@ ms.custom: digital-platform-api
 
 # Member relation service
 
-The Member Relation Service is an internal, admin-only API service that is used to view financial arrangements between our members. This includes both clients and partners, as well as individual buyers and sellers. For example, a buyer member may want to set up a direct clearing relationship with a seller member rather than clearing through our platform.
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only. This includes both clients and partners, as well as individual buyers and sellers. For example, a buyer member may want to set up a direct clearing relationship with a seller member rather than clearing through our platform.
 
 In addition, the `apply_bid_landscape_priority` field allows sellers who are [Bid Landscape Feed](../log-level-data/bid-landscape-feed.md) clients to see all bids from a specific buyer in their bid landscape feed.
 

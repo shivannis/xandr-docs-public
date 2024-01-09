@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Tango email service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This service, used in combination with the [Email Template Service](./email-template-service.md), enables team to manage the sending of system emails for Tango. Allowing  team to manage system emails rather than the API team provides the Tango team the ability to more quickly iterate and deploy system email changes.
 
 > [!NOTE]

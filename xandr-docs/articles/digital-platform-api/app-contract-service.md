@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # App contract service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This is an admin-only service that allows Xandr personnel to record or update client contracts. It can only be accessed by sales ops.
 
 ## REST API

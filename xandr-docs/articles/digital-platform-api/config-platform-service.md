@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Config Platform service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 Config Platform is an admin-only service to update very specific multi-bid settings for bidder members (stored in the `common.config_platform` table). Please be very careful when adding or updating objects using this service.
 
 ## REST API

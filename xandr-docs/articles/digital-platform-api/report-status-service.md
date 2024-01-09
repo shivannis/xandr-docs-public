@@ -1,109 +1,33 @@
 ---
-Title : Report Status Service
-Description : The Report Status Service is used to determine whether a report has been
+title: Report Status Service
+description: Explore the Report Status service to determine whether a report has been run and is ready for download.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-run and is ready for download.
 ---
 
+# Report Status service
 
-# Report Status Service
-
-
-
-The Report Status Service is used to determine whether a report has been
-run and is ready for download.
-
-
+The Report Status Service is used to determine whether a report has been run and is ready for download.
 
 ## REST API
 
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000034b8__entry__1" class="entry colsep-1 rowsep-1">HTTP
-Method</th>
-<th id="ID-000034b8__entry__2"
-class="entry colsep-1 rowsep-1">Endpoint</th>
-<th id="ID-000034b8__entry__3"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000034b8__entry__2"><a
-href="https://api.appnexus.com/report-status" class="xref"
-target="_blank">https://api.<span
-class="ph">appnexus.com/report-status</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000034b8__entry__3">View
-the status of all reports</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__1">GET</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000034b8__entry__2"> <a
-href="https://api.appnexus.com/report-status?report_type=network_analytics%2cadvertiser_analytics"
-class="xref" target="_blank">https://api.<span
-class="ph">appnexus.com/report-status?report_type=network_analytics,advertiser_analytics</a></td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000034b8__entry__3">View
-the status of specific reports using a filter</td>
-</tr>
-</tbody>
-</table>
+| HTTP Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | [https://api.appnexus.com/report-status](https://api.appnexus.com/report-status) | View the status of all reports. |
+| `GET` | [https://api.appnexus.com/report-status?report_type=network_analytics,advertiser_analytics](https://api.appnexus.com/report-status?report_type=network_analytics,advertiser_analytics) | View the status of specific reports using a filter. |
 
+## JSON fields
 
-
-
-
-## JSON Fields
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-000034b8__entry__10"
-class="entry colsep-1 rowsep-1">Field</th>
-<th id="ID-000034b8__entry__11"
-class="entry colsep-1 rowsep-1">Type</th>
-<th id="ID-000034b8__entry__12"
-class="entry colsep-1 rowsep-1">Description</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__10"><code
-class="ph codeph">max_hour_closed</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__11">Timestamp</td>
-<td class="entry colsep-1 rowsep-1" headers="ID-000034b8__entry__12">The
-time (in UTC) at which the data pipeline finished processing this
-report's data.</td>
-</tr>
-<tr class="even row">
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__10"><code
-class="ph codeph">max_hour_closed_conversion</code></td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__11">Timestamp</td>
-<td class="entry colsep-1 rowsep-1"
-headers="ID-000034b8__entry__12"><strong>Deprecated</strong>. Conversion
-data is now processed with other report data, instead of being
-delayed.</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+| Field | Type | Description |
+|:---|:---|:---|
+| `max_hour_closed` | Timestamp | The time (in UTC) at which the data pipeline finished processing this report's data. |
+| `max_hour_closed_conversion` | Timestamp | **Deprecated.** Conversion data is now processed with other report data, instead of being delayed. |
 
 ## Example
 
-**An example call to the report**
+### An example call to the report
 
-``` pre
+```
 $ curl -b cookies "https://api.appnexus.com/report-status"
 {
     "response": {
@@ -221,21 +145,7 @@ $ curl -b cookies "https://api.appnexus.com/report-status"
     }
 ```
 
+## Related topics
 
-
-
-
-## Related Topics
-
-- <a
-  href="reporting-services.md"
-  class="xref" target="_blank">Reporting Services</a>
-- <a
-  href="read-only-services.md"
-  class="xref" target="_blank">Read-Only Services</a>
-
-
-
-
-
-
+- [Reporting Services](reporting-services.md)
+- [Read-Only Services](read-only-services.md)

@@ -7,6 +7,9 @@ ms.custom: digital-platform-api
 
 # Sync report service
 
+> [!NOTE]
+> This service is currently available to a limited set of clients and Microsoft employees only.
+
 This page is a placeholder, as this service is currently under development.
 
 ## Reports using this service

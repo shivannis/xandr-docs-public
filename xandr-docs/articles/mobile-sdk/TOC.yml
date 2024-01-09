@@ -272,8 +272,8 @@
 
 - name: Ad Ops for Mobile SDK
   items:
-    - name: Overview
-      href: ad-ops-for-mobile-sdk.md
+    #- name: Overview
+      #href: ad-ops-for-mobile-sdk.md
     - name: Set Up HTML Responsive Interstitials (non-MRAID)
       href: ad-ops-set-up-html-responsive-interstitials-non-mraid.md
     - name: Set Up MRAID Full Screen Interstitials

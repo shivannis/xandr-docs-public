@@ -7,6 +7,9 @@ ms.custom: yield-analytics-ui
 
 # Evaluate the yield of an order
 
+The following article explais about evaluation and other processes to measure the yield of an order.
+
+## Process flow
 Use the **Orders** tab and Evaluate Orders to see how a proposal is expected to deliver and be consumed.
 
 1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
@@ -27,6 +30,51 @@ Use the **Orders** tab and Evaluate Orders to see how a proposal is expected
     - The Contracted Revenue by Pricing Type chart shows how much of the order's revenue is associated with CPM vs. CPD placements.
     - The Contracted Revenue by Contract Type pie chart shows how much of the order's revenue is associated with standard placements vs. sponsorships.
 1. Click the **Order Lines** tab to evaluate order lines in the focus order. This uses filters to find specific order lines, and flags to highlight pricing or availability issues.
+
+## Add a proposal to a scenario
+
+You can add a proposal or an order to Scenario Manager to better understand how it impacts other orders.
+
+1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
+1. In the **Evaluate Orders Search** page, in the Orders panel, click on the order.
+1. In the Order preview panel, click the order's name to open it in Evaluate Orders.
+1. Click **Add to Scenario** at the top of the page. The order is added to a scenario.
+1. Go to Scenario Manager to run the scenario.
+
+## Using alternative products to solve pricing/availability issues
+
+Alternative products are available in Evaluate Orders to help resolve ! Price and ! Avails flags.
+
+### About alternate products
+
+The Score for an alternate product indicates how closely it's related to the order line's product, based on the following criteria:
+
+- Alternate sizes – Products with the same targeting as the order line's product, but with a different value for Size.
+- Audience affinity – Products that heavily overlap the same set of other products.
+- Purchase behavior – Products that frequently appear together on the same orders.
+
+### View alternate products
+
+In the Product Details panel, click the **Alternate Products** tab.
+
+### Add an alternate product to a proposal
+
+1. Click the **Add** button to the left of the product's name. A new order line with the selected product is created at the top of the **Order Line Listing** above the **Product Details**.
+1. Enter or change the order line parameters (e.g., Start date, End date, Imps) as needed.
+1. Click **Update**.
+
+To remove the order line, click **Edit** and clear the **Included** checkbox.
+## Flags in evaluate orders
+
+Use the flags in Evaluate Orders to find and resolve potential availability and pricing issues related to the line items on each proposal.
+
+### Types of flags
+
+There are three types of flags in Evaluate Orders:
+
+- ! Price flags (CPM order lines only) indicate when the sold CPM value is either below the floor price or below the configured discount threshold.
+- ! Avails flags indicate that a line item is targeting a product that does not have enough available impressions to accommodate the order line.
+- ! Sellthru flags indicate that an order line is targeting a product that is more than 50% sold through, though the percentage is configurable for your agency.
 
 ## Related topics
 
