@@ -1,6 +1,6 @@
 ---
 title: Required Tag Parameters for Android and iOS Inventory
-Description: This page gives a list of parameters required by Android and iOS tags.
+description: This page gives a list of parameters required by Android and iOS tags.
 ms.date: 10/28/2023
 ---
 

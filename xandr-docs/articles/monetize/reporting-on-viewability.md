@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Reporting on viewability
-Description: Learn about viewability metrics that are available and best practices for making optimal use of them.
+description: Learn about viewability metrics that are available and best practices for making optimal use of them.
 ms.date: 10/28/2023
 ---
 
@@ -60,7 +60,7 @@ system:
 
 | Network | Advertisers | Publishers |
 |---|---|---|
-| - [Network Analytics Report](network-analytics-report.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) | - [Advertiser Analytics Report](advertiser-analytics-report.md)<br> - [Site Domain Performance](site-domain-performance.html) | - [Publisher Analytics](publisher-analytics.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) |
+| - [Network Analytics Report](network-analytics-report.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) | - [Advertiser Analytics Report](advertiser-analytics-report.md)<br> - [Site Domain Performance](site-domain-performance.md) | - [Publisher Analytics](publisher-analytics.md)<br> - [Seller Site Domain Report](seller-site-domain-report.md) |
 
 ## How to add viewability metrics
 

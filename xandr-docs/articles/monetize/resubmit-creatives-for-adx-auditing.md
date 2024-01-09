@@ -1,11 +1,11 @@
 ---
 title: Microsoft Monetize - Resubmit Creatives for Google Ad Manager Auditing
-description: Learn how You can easily resubmit your rejected creative to Google Ad Manager so that it can be re-audited in this page.
+description: Learn how You can easily resubmit your rejected creative to Google Ad Manager so that it can be re-audited.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Resubmit creatives for Google ad manager auditing
+# Microsoft Monetize - Resubmit creatives for Google Ad Manager auditing
 
 You may receive a rejection reason directly from Google's API if your
 creative is rejected by Google Ad Manager. You can easily resubmit your
@@ -25,7 +25,7 @@ settings to confirm the validity of Google's rejection reason.
     changing settings associated with your creative. For API users, it
     could also involve using the [Creative Service](../digital-platform-api/creative-service.md). For more
     information, see the
-    Recommendation column in the table
+    **Recommendation** column in the table
     within [Google Ad Manager Disapproval Reasons](adx-disapproval-reasons.md).
 
 1. Resubmit your creative for audit.

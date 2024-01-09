@@ -1,7 +1,6 @@
 ---
 title: Microsoft Monetize - Reporting Labels
-description: Learn how to assign and Report Labels in this page in order to
-better assess performance of your business.  
+description: In this page learn how to assign and report labels in order to better assess performance of your business.  
 ms.date: 10/28/2023
 ---
 

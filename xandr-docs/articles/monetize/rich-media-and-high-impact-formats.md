@@ -1,29 +1,24 @@
 ---
-Title : Rich Media and High Impact Formats
-Description : At times, Xandr clients want to transact larger
+title: Rich Media and High Impact Formats
+description: Learn about some basic Rich Media formats that you can transact on Xandr and also offers information on app
+providers that specialize in Rich Media and High Impact formats.
 ms.date: 10/28/2023
-ad formats in addition to standard
-<a href="http://www.iab.net/guidelines/508676/508767/displayguidelines"
 ---
 
 
-# Rich Media and High Impact Formats
-
-
+# Rich media and high impact formats
 
 At times, Xandr clients want to transact larger
-ad formats in addition to standard
-<a href="http://www.iab.net/guidelines/508676/508767/displayguidelines"
-class="xref" target="_blank">IAB ad formats</a>. These are usually sold
+ad formats in addition to standard [IAB ad formats](https://www.iab.com/). These are usually sold
 at higher CPM rates and have higher CTRs. This article gives an overview
 of some basic Rich Media formats that you can transact on
 Xandr and also offers further information on app
 providers that specialize in Rich Media and High Impact formats, some of
 which are also known as "rising stars".
 
-Different Formats
+## Different formats
 
-Billboard / Masthead / Bellyband
+### Billboard / Masthead / Bellyband
 
 If you plan to sell billboard placements (typical size combinations
 include 800x250, 970x250 or 900x250), it is important to consider buyer
@@ -43,29 +38,23 @@ you want to monetize the placement by offering a smaller size, such as a
 contains a few lines of JavaScript in order to reduce the size of the
 placement or a default placement that only contains the smaller size.
 
-![Billboard](media/billboard-masthead-bellyband.png)
+:::image type="content" source="media/billboard-masthead-bellyband.png" alt-text="Screenshot of Billboard":::
 
-
-Halfpage Ad / Large Skyscraper
+### Halfpage Ad / Large Skyscraper
 
 The Halfpage ad, typically 300x600 pixels, can be implemented in a
 similar fashion as described above. Depending on the setup of the
 website, the size of the placement may not need to be adjusted in order
 to improve visual appearance of the website.
 
-![halfpage](halfpage-skyscraper.png)
+:::image type="content" source="media/halfpage-skyscraper.png" alt-text="Screenshot of halfpage":::
 
-
-Who Can Buy Rich Media Available on promo_sizes?
+### Who can buy rich media available on promo_sizes?
 
 All buyers can buy `promo_sizes`, but the highest price determines which
 size wins the auction and is being served. Please confirm whether
 external DSPs can listen to `promo_sizes` before expecting their demand.
 
-Related Topic
+## Related topic
 
-- <a href="using-promo-sizes.md" class="xref">Using Promo Sizes</a>
-
-
-
-
+- [Using Promo Sizes](using-promo-sizes.md)
