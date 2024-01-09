@@ -240,8 +240,8 @@ Frequency & Recency** report. For further information about these reports, see [
 
 To create a new campaign, click **Create New** \> **Campaign**. For step-by-step instructions, see [Create a Campaign](create-a-campaign.md).
 
-Related Topics
+## Related topics
 
 - [Working with Campaigns](working-with-campaigns.md)
 - [Explore Campaigns](explore-campaigns.md)
-- [create-a-campaign.md](Create a Campaign)
+- [Create a Campaign](create-a-campaign.md)

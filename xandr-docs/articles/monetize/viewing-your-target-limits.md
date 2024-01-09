@@ -1,130 +1,40 @@
 ---
-Title : Viewing Your Target Limits
-Description : Xandr limits the number of domains that can be
+title: Viewing Your Target Limits 
+description: The article outlines Xandr's restrictions on the number of domains in a single domain list and specific targets in a profile, defining the concept of viewing target limits.
 ms.date: 10/28/2023
-used in a single domain list and the number of certain targets that can
-be used in a single profile.
 ---
 
+# Viewing your target limits
 
-# Viewing Your Target Limits
+Xandr limits the number of domains that can be used in a single domain list and the number of certain targets that can be used in a single profile.
 
+## Target limits report
 
+The Target Limits Report section lists the types of targets that are limited and, for each, the maximum number you are allowed.
 
-Xandr limits the number of domains that can be
-used in a single domain list and the number of certain targets that can
-be used in a single profile.
+## Default limits
 
-Target Limits Report
+For quick reference, the default limits for affected objects and targets are shown below:
 
-The Target Limits Report section lists
-the types of targets that are limited and, for each, the maximum number
-you are allowed.
+| Object | Limit |
+|---|---|
+| Line items per member | 3,000 |
+| Campaigns per member | 10,000 |
+| Creatives per member<br>Only non-expired creatives are counted against this limit. A creative expires when it has neither served nor been modified in 45 days. | 10,000 |
+| Publishers per member | 3,000 |
+| Placement Groups per member | 10,000 |
+| Placements per member | 20,000 |
+| Domains per domain list | 30,000 |
+| Segments targeted per campaign | 400 |
+| Segment groups targeted per campaign | 400 |
+| Universal content categories targeted per campaign | 300 |
+| Content categories targeted per campaign | 300 |
+| Zip codes targeted per campaign | 4,000 |
+| Inventory sources targeted per campaign | **Deprecated** |
+| Publishers targeted per campaign | 300 |
+| Placement Groups targeted per campaign | 100 |
+| Placements targeted per campaign (for managed placements) | 250 |
 
-Default Limits
+## Related topic
 
-For quick reference, the default limits for affected objects and targets
-are shown below:
-
-<table class="table">
-<thead class="thead">
-<tr class="header row">
-<th id="ID-0000008c__entry__1" class="entry">Object</th>
-<th id="ID-0000008c__entry__2" class="entry">Limit</th>
-</tr>
-</thead>
-<tbody class="tbody">
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Line items per
-member</td>
-<td class="entry" headers="ID-0000008c__entry__2">3,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Campaigns per
-member</td>
-<td class="entry" headers="ID-0000008c__entry__2">10,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Creatives per member
-<p>Only non-expired creatives are counted against this limit. A creative
-expires when it has neither served nor been modified in 45
-days.</p></td>
-<td class="entry" headers="ID-0000008c__entry__2">10,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Publishers per
-member</td>
-<td class="entry" headers="ID-0000008c__entry__2">3,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Placement Groups per
-member</td>
-<td class="entry" headers="ID-0000008c__entry__2">10,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Placements per
-member</td>
-<td class="entry" headers="ID-0000008c__entry__2">20,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Domains per domain
-list</td>
-<td class="entry" headers="ID-0000008c__entry__2">30,000</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Segments targeted per
-campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">400</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Segment groups
-targeted per campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">400</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Universal content
-categories targeted per campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">300</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Content categories
-targeted per campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">300</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Zip codes targeted per
-campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">4,000</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Inventory sources
-targeted per campaign</td>
-<td class="entry"
-headers="ID-0000008c__entry__2"><strong>Deprecated</strong></td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Publishers targeted
-per campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">300</td>
-</tr>
-<tr class="odd row">
-<td class="entry" headers="ID-0000008c__entry__1">Placement Groups
-targeted per campaign</td>
-<td class="entry" headers="ID-0000008c__entry__2">100</td>
-</tr>
-<tr class="even row">
-<td class="entry" headers="ID-0000008c__entry__1">Placements targeted
-per campaign (for managed placements)</td>
-<td class="entry" headers="ID-0000008c__entry__2">250</td>
-</tr>
-</tbody>
-</table>
-
-Related Topic
-
-- <a href="viewing-your-object-limits.md" class="xref">Viewing Your
-  Object Limits</a>
-
-
-
-
+[Viewing Your Object Limits](viewing-your-object-limits.md)

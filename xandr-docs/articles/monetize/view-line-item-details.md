@@ -1,43 +1,25 @@
 ---
-Title : View Line Item Details
-Description : The Line Item Details screen shows
+title: View Line Item Details
+description: The Line Item Details screen shows you the settings and essential metrics for a specific line item, informs
+you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, and more.
 ms.date: 10/28/2023
-you the settings and essential metrics for a specific line item, informs
-you of conditions preventing the line item from serving, provides
-visualizations of the line item's performance and delivery, offers quick
-access to the line item's child campaigns, and more.
 ---
 
+# View line item details
 
-# View Line Item Details
+The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
 
+## Getting to the line item details pane
 
+On the **Line Items** screen, hover over the line item for which you want to view advanced details and click the **graph** button.
 
-The Line Item Details screen shows
-you the settings and essential metrics for a specific line item, informs
-you of conditions preventing the line item from serving, provides
-visualizations of the line item's performance and delivery, offers quick
-access to the line item's child campaigns, and more.
+This takes you to the **Line Item Details** screen.
 
-Getting to the Line Item Details Pane
+## Viewing visual success data
 
-On the Line Items screen, hover
-over the line item for which you want to view advanced details and click
-the graph button.
-
-This takes you to the Line Item
-Details screen.
-
-<div class="bodydiv">
-
-Viewing Visual Success Data
-
-Visual Success is a tool designed to help campaign managers achieve
-better overall performance. It provides easy access to performance,
-delivery, and other metrics for your line item. You can use these
-metrics to see how the campaigns under your line item are performing as
-a group, and assess for possible trouble spots at the campaign and line
-item levels.
+Visual Success is a tool designed to help campaign managers achieve better overall performance. It provides easy access to performance,
+delivery, and other metrics for your line item. You can use these metrics to see how the campaigns under your line item are performing as
+a group, and assess for possible trouble spots at the campaign and line item levels.
 
 With Visual Success, you can:
 
@@ -46,220 +28,103 @@ With Visual Success, you can:
 - Keep track of how well line items are pacing to goals
 - Hover over the visuals to see specific data for a single day
 
+Visual Success features appear at the top of the **Line Item Details** screen. The metrics sections and graphs show important information about the line item's flight, delivery, performance and margin.
 
+For more information, see [Improve Performance with Visual Success](improve-performance-with-visual-success.md).
 
-Visual Success features appear at the top of the
-Line Item Details screen. The
-metrics sections and graphs show important information about the line
-item's flight, delivery, performance and margin.
+## Viewing line item settings
 
-For more information, see
-<a href="improve-performance-with-visual-success.md"
-class="xref">Improve Performance with Visual Success</a>.
+The **Line Item Settings** section shows the basic details, frequency caps, reporting labels, commissions, associated insertion orders (when relevant), and dynamic landing page URL, as well as inventory, geography, and system targeting (if set).
 
-Viewing Line Item Settings
+The Basic Settings button shows the **Basic Setup**, **Frequency Cap**, **Geography Targeting**, **System Targeting**, **Inventory Targeting**, **Key Value Targeting**, and **Insertion Order** Settings (if applicable).
 
-The Line Item Settings section
-shows the basic details, frequency caps, reporting labels, commissions,
-associated insertion orders (when relevant), and dynamic landing page
-URL, as well as inventory, geography, and system targeting (if set).
+The All Settings button shows these settings as well as **Commissions**, **Comments**, **Dynamic Landing Page**, and parent **Insertion Orders** (if applicable).
 
-The Basic Settings button shows the
-Basic Setup,
-Frequency Cap,
-Geography Targeting,
-System Targeting,
-Inventory Targeting,
-Key Value Targeting,
-and Insertion Order Settings (if
-applicable).
+## Basic Setup
 
-The All Settings button shows these
-settings as well as Commissions,
-Comments,
-Dynamic Landing Page, and parent
-Insertion Orders (if applicable).
+- State: The state of the line item (active or inactive).
+- Lifetime Budget: The lifetime budget for the line item (in impressions or revenue).
+- Daily Budget: The daily budget for the line item, in impressions or revenue.
+- Revenue Type: The basis on which the advertiser has agreed to pay you. For example, CPM (per thousand impressions) or CPA (per conversion). For more information about each revenue type, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- Revenue Value: The amount that the advertiser will pay you for the specified revenue type.
+- Conversion Tracking: The name and ID of each conversion pixel associated to this line item.
+- Performance Goal Type: The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you. For example, the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal. For more information about performance goals, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- Performance Goal Tracking: The amount for the performance goal.
 
-<div class="bodydiv">
+## Frequency caps
 
-Basic Setup
-
-- State: The state of the line item
-  (active or inactive).
-- Lifetime Budget: The lifetime budget
-  for the line item (in impressions or revenue).
-- Daily Budget: The daily budget for
-  the line item, in impressions or revenue.
-- Revenue Type: The basis on which the
-  advertiser has agreed to pay you. For example, CPM (per thousand
-  impressions) or CPA (per conversion). For more information about each
-  revenue type, see
-  <a href="create-a-standard-line-item.md" class="xref">Create a
-  Standard Line Item</a>.
-- Revenue Value: The amount that the
-  advertiser will pay you for the specified revenue type.
-- Conversion Tracking: The name and ID
-  of each conversion pixel associated to this line item.
-- Performance Goal Type: The type of
-  goal that the advertiser wants you to achieve (CPC, CPA, CTR). A
-  performance goal is used to achieve a goal that is different from how
-  the advertiser has agreed to pay you. For example, the advertiser
-  wants to pay a CPM but expects you to meet a $50 CPA goal. For more
-  information about performance goals, see
-  <a href="create-a-standard-line-item.md" class="xref">Create a
-  Standard Line Item</a>.
-- Performance Goal Tracking: The
-  amount for the performance goal.
-
-Frequency Caps
-
-- **Frequency Caps**: How frequently the creatives associated to
-  campaigns under this line item can be shown. This can be:
-  - Number of creatives shown to a given user over the lifetime of the
-    line item
+- **Frequency Caps**: How frequently the creatives associated to campaigns under this line item can be shown. This can be:
+  - Number of creatives shown to a given user over the lifetime of the line item
   - Number of creatives shown to a given user per day
-  - Number of minutes/hours/days that must pass before a given user can
-    be shown another creative
-- **Cookies**: Whether or not the creatives associated to campaigns
-  under this line item can be shown to users without cookies. Be aware
+  - Number of minutes/hours/days that must pass before a given user can be shown another creative
+- **Cookies**: Whether or not the creatives associated to campaigns under this line item can be shown to users without cookies. Be aware
   that frequency caps do not apply to such users.
 
+Frequency caps and whether to show to cookieless users can also be set at the advertiser, insertion order, campaign, and creative levels, or any combination of the five levels. The most restrictive setting always takes precedence. For more information, see [Frequency
+Targeting](frequency-and-recency-caps.md).
 
+## Reporting labels
 
-<b>Note:</b> Frequency caps and whether to
-show to cookieless users can also be set at the advertiser, insertion
-order, campaign, and creative levels, or any combination of the five
-levels. The most restrictive setting always takes precedence. For more
-information, see <a href="frequency-and-recency-caps.md" class="xref"
-title="From the Audience &amp; Location Targeting section, you can apply frequency and recency caps to your line item to prevent overexposure by limiting how many (frequency) and how often (recency) creatives are shown to a user. You can use the Creative Frequency and Recency Report to view how often and how frequently users are viewing a specific advertiser&#39;s creatives.">Frequency
-Targeting</a>.
+This section shows if a **Trafficker**, **Salesperson**, or **Campaign Type** has been associated with the line item. If so, you can run reports by these labels. For example, you might associate a salesperson with each of your line items and then run a report grouped by salesperson to compare line item performance across salespersons.
 
+## Commissions
 
+This section shows any commissions that have been associated with the line item. Commissions let you attribute revenue to third-parties. They are deducted from the booked revenue (the amount the advertiser pays you) of the line item and can be defined either as a percentage of booked revenue or a flat CPM. For more information about commissions, see [Broker Fees](broker-fees.md).
 
-Reporting Labels
+## Associated insertion orders
 
-This section shows if a Trafficker,
-Salesperson, or
-Campaign Type has been associated with
-the line item. If so, you can run reports by these labels. For example,
-you might associate a salesperson with each of your line items and then
-run a report grouped by salesperson to compare line item performance
-across salespersons.
+This section shows the names and IDs of all insertion orders to which the line item is associated.
 
-Commissions
+## Dynamic landing page
 
-This section shows any commissions that have been associated with the
-line item. Commissions let you attribute revenue to third-parties. They
-are deducted from the booked revenue (the amount the advertiser pays
-you) of the line item and can be defined either as a percentage of
-booked revenue or a flat CPM. For more information about commissions,
-see <a href="broker-fees.md" class="xref">Broker Fees</a>.
+If you have associated multiple creatives to a single landing page, this section shows the landing page URL to use for the creatives. Note that you can set a dynamic landing page at the campaign level as well. For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md).
 
-Associated Insertion Orders
+## Comments
 
-This section shows the names and IDs of all insertion orders to which
-the line item is associated.
-
-Dynamic Landing Page
-
-If you have associated multiple creatives to a single landing page, this
-section shows the landing page URL to use for the creatives. Note that
-you can set a dynamic landing page at the campaign level as well. For
-more information, see <a href="dynamic-landing-pages.md" class="xref"
-title="As an advertiser, you may wish to send users to different landing pages or compare the performance of different landing pages. To accomplish this, you can associate a landing page URL with a line item or campaign. This landing page will then be available for association with any creatives that are attached to that line item or campaign.">Dynamic
-Landing Pages</a>.
-
-Comments
-
-This section shows any comments that have been recorded with the line
-item. Comments are for reference only and do not affect line item
+This section shows any comments that have been recorded with the line item. Comments are for reference only and do not affect line item
 delivery.
 
-Viewing Sibling Line Items
+## Viewing sibling line items
 
-You can view the other line items under the same advertiser or insertion
-order in the sibling line item list at the side of the screen. You can
-click on any line item in the list to go to the
-Line Item Details screen for that
-line item. The slider at the side of the screen allows you to expand and
-adjust the view.
+You can view the other line items under the same advertiser or insertion order in the sibling line item list at the side of the screen. You can click on any line item in the list to go to the **Line Item Details** screen for that line item. The slider at the side of the screen allows you to expand and adjust the view.
 
-Viewing Associated Campaigns and Campaign Details Summaries
+## Viewing associated campaigns and campaign details summaries
 
-Viewing Associated Campaigns
+## Viewing associated campaigns
 
-You can view the campaigns that belong to the line item on the
-Line Item Details screen. To do
-so, click to expand the Campaigns
+You can view the campaigns that belong to the line item on the **Line Item Details** screen. To do so, click to expand the **Campaigns**
 section to view the campaign list.
 
-Viewing Campaign Details
+## Viewing campaign details
 
-From the line item campaign list, you can also view specific campaigns
-and their settings. To do so, select the desired campaign from the line
-item campaign list by clicking anywhere on the row. A details summary
-will appear below the campaign you have selected.
+From the line item campaign list, you can also view specific campaigns and their settings. To do so, select the desired campaign from the line item campaign list by clicking anywhere on the row. A details summary will appear below the campaign you have selected.
 
-Editing the Line Item
+## Editing the line item
 
-To change any of the line item's settings, click the
-Edit icon at the top of the screen or
-the Edit link in the
-Details section.
+To change any of the line item's settings, click the **Edit** icon at the top of the screen or the **Edit** link in the **Details** section.
 
-Editing Campaign Settings
+## Editing Campaign Settings
 
-You can also edit campaign settings directly from the
-Line Item Details screen in the
-Campaign Details pane. Wherever a
+You can also edit campaign settings directly from the **Line Item Details** screen in the **Campaign Details** pane. Wherever a
 pencil icon appears, you can click the icon to edit that setting.
 
-Clicking the pencil icon next to the campaign name at the top of the
-pane will take you to the full Edit
-Campaign screen. Clicking the pencil icon in the
-Inventory,
-Geography, or
-System Targeting or
-Associated Creatives sections will
-open an editing dialog for that setting/feature.
+Clicking the pencil icon next to the campaign name at the top of the pane will take you to the full **Edit Campaign** screen. Clicking the pencil icon in the **Inventory**, **Geography**, or **System Targeting** or **Associated Creatives** sections will open an editing dialog for that setting/feature.
 
 Reporting on the Line Item
 
-To run a report for the line item, click
-Advertisers and select
-Reporting from the menu that appears.
+To run a report for the line item, click **Advertisers** and select **Reporting** from the menu that appears.
 
-This takes you to the Advertiser
-Reporting screen, where you can select to run an
-Analytics,
-Site Domain Performance,
-Attributed Conversions, or
-Creative Frequency & Recency report.
-For more information about these reports, see
-<a href="advertiser-reporting.md" class="xref">Advertiser
-Reporting</a>.
+This takes you to the **Advertiser Reporting** screen, where you can select to run an **Analytics**, **Site Domain Performance**, **Attributed Conversions**, or **Creative Frequency & Recency** report. For more information about these reports, see [Advertiser
+Reporting](advertiser-reporting.md).
 
-
-
-Viewing Child Object Details
-
+## Viewing child object details
 
 To view child object details:
 
-1.  Click the Associated Objects menu
-    on the right of the Details
-    pane.
-2.  Select the appropriate object category such as
-    Creatives.
+1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the appropriate object category such as **Creatives**.
 
+## Related topics
 
-
-Related Topics
-
-- <a href="explore-line-items.md" class="xref">Explore Line Items</a>
-- <a href="create-a-standard-line-item.md" class="xref">Create a
-  Standard Line Item</a>
-
-
-
-
+- [Explore Line Items](explore-line-items.md)
+- [Create a Standard Line Item](create-a-standard-line-item.md)
