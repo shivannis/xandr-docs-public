@@ -49,9 +49,6 @@
       "permissioned-type": "public"
     },
     "fileMetadata": {
-      "breadcrumb_path": {
-        "articles/invest/*.md": "/xandr/articles/invest/bread/toc.json"
-      },
       "ms.service": {
         "articles/invest/*.md": "microsoft-invest",
         "articles/ja-jp/*.md": "microsoft-invest",
