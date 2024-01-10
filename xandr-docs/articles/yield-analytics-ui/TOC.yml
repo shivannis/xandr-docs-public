@@ -252,12 +252,8 @@
     href: create-an-availability-batch-lookup.md
   - name: View Availability Batch Lookups
     href: view-availability-batch-lookups.md
-- name: View Availability
-  items:
   - name: View Availability in a Calendar
     href: view-availability-in-a-calendar.md
-  - name: Switch Between the Calendar and List Views
-    href: switch-between-the-calendar-and-list-views.md
 - name: Saved Availability Lookups
   items:
   - name: Working With Saved Availability Lookups
