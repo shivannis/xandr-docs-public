@@ -232,16 +232,12 @@
   href: at-risk-management-chart-and-solution-paths.md
 - name: Availability Dashboard
   items:
-  - name: Anatomy of the Availability Dashboard Page
+  - name: Anatomy of the Availability Pages
     href: anatomy-of-the-availability-dashboard-page.md
-  - name: Anatomy of the Availability Lookup Page
-    href: anatomy-of-the-availability-lookup-page.md
-  - name: Anatomy of the View Calendar Page
-    href: anatomy-of-the-view-calendar-page.md
-  - name: Availability Overview (Old Workflow)
-    href: availability-overview-old-workflow.md
   - name: Check Availability
     href: check-availability-for-a-combination-of-targeting-attributes.md
+  - name: Availability Overview (Old Workflow)
+    href: availability-overview-old-workflow.md
 - name: Saved Availability Lookups
   items:
   - name: Working With Saved Availability Lookups
