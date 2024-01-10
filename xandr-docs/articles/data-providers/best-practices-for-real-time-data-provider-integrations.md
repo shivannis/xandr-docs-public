@@ -1,8 +1,8 @@
 ---
-title : Best Practices for Real Time Data Provider Integrations
-description : Learn best practices in real time data provider integrations. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Best Practices for Real Time Data Provider Integrations
+description: Learn best practices in real time data provider integrations. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 
 ---
 

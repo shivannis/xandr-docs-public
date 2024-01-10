@@ -1,8 +1,8 @@
 ---
-title : Data Buyer Workflow Changes
-description : Learn about Data buyer workflow changes like Adding data providers, Campaign changes and Line item changes in this page.   
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Buyer Workflow Changes
+description: Learn about Data buyer workflow changes like Adding data providers, Campaign changes and Line item changes in this page.   
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

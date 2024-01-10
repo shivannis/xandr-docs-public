@@ -1,8 +1,8 @@
 ---
-title : Data Cost Calculation Mechanics
-description : Learn about key steps in assessing data cost. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Cost Calculation Mechanics
+description: Learn about key steps in assessing data cost. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

@@ -1,8 +1,8 @@
 ---
-title : Managing Public and Private (Custom) Segments
-description : Learn creating and managing public and private (custom) segments. 
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Managing Public and Private (Custom) Segments
+description: Learn creating and managing public and private (custom) segments. 
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 

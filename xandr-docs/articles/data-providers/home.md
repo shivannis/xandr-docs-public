@@ -1,8 +1,8 @@
 ---
-title : Data Providers - Home
-description : This page gives information to data providers on processes to integrate data, share data with buyer and maintain data.
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Data Providers - Home
+description: This page gives information to data providers on processes to integrate data, share data with buyer and maintain data.
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 
