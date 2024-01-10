@@ -1,5 +1,5 @@
 ---
-title: Working with the Yield Analytics Extension for DFP Sales Manager
+title: DFP sales managers Yield Analytics extension
 description: Learn background information, Installation and update instructions for Yield Analytics Extension for DFP Sales Manager.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 ---
 
 
-# Working with the Yield Analytics Extension for DFP Sales Manager
+# DFP sales managers Yield Analytics extension
 
 ## Background
 
