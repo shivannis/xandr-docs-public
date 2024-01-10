@@ -1,14 +1,11 @@
 ---
-Title : Selling In-Stream Video
-Description : To monetize video inventory, you need to successfully describe the
+title: Selling In-Stream Video
+description: This page covers advantages of trafficking in-stream video placements via the Xandr platform.
 ms.date: 10/28/2023
-player and its specifications using the placement object. These
 ---
 
 
-# Selling In-Stream Video
-
-
+# Selling in-stream video
 
 To monetize video inventory, you need to successfully describe the
 player and its specifications using the placement object. These
@@ -48,9 +45,4 @@ Xandr platform include:
 Setting up in-stream video requires familiarity with
 Xandr objects such as publishers, placement
 groups and placements. You can find additional useful information about
-these topics in the
-<a href="selling-guide.md" class="xref">Selling Guide</a>.
-
-
-
-
+these topics in the [Selling Guide](selling-guide.md).

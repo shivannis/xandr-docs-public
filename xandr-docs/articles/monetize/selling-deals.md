@@ -1,14 +1,11 @@
 ---
-Title : Selling Deals
-Description : As a seller, you can use deals to provide buyers special access to your
+title: Selling Deals
+description: In this page learn about ways to offer deals to buyers and links to get started. 
 ms.date: 10/28/2023
-inventory and/or data. For example, a deal might provide preferential
 ---
 
 
-# Selling Deals
-
-
+# Selling deals
 
 As a seller, you can use deals to provide buyers special access to your
 inventory and/or data. For example, a deal might provide preferential
@@ -26,66 +23,53 @@ There are two ways to offer deals to buyers:
 
 Use the links below to get started.
 
-- **<a href="create-a-package.md" class="xref">Create a Package</a>**
+- **[Create a Package](create-a-package.md)**
 
   Follow step-by-step instructions to create a new package.
 
-- **<a href="share-your-packages-with-buyers.md" class="xref">Share Your
-  Packages with Buyers</a>**
+- **[Share Your Packages with Buyers](share-your-packages-with-buyers.md)**
 
   Proactively commercialize your packages by sending links to both
   Xandr and external buyers.
 
-- **<a href="manage-your-packages.md" class="xref">Manage Your
-  Packages</a>**
+- **[Manage Your Packages](manage-your-packages.md)**
 
   Use the Packages screen to search your packages, view details about
   specific packages, edit package settings, create new packages, preview
   how your packages look to buyers, and more.
 
-- **<a href="negotiate-deals-with-buyers.md" class="xref">Negotiate Deals
-  with Buyers</a>**
+- **[Negotiate Deals with Buyers](negotiate-deals-with-buyers.md)**
 
   Negotiate custom deals with both Xandr buyers
   and external demand partners.
 
-- **<a href="create-a-custom-deal.md" class="xref">Create a Custom
-  Deal</a>**
+- **[Create a Custom Deal](create-a-custom-deal.md)**
 
   Follow step-by-step instructions to create a custom deal.
 
-- **<a href="override-ad-quality-settings-on-a-deal.md"
-  class="xref">Override Ad Quality Settings on a Deal</a>**
+- **[Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md)**
 
   Configure your deal to ignore the usual ad quality settings for one or
   more creative attributes.
 
-- **<a href="deal-best-practices-for-sellers.md" class="xref">Deal Best
-  Practices for Sellers</a>**
+- **[Deal Best Practices for Sellers](deal-best-practices-for-sellers.md)**
 
   Learn best practices for using deal features.
 
-- **<a href="manage-your-deals-with-buyers.md" class="xref">Manage Your
-  Deals with Buyers</a>**
+- **[Manage Your Deals with Buyers](manage-your-deals-with-buyers.md)**
 
   Use the Deals screen to view the details of all your existing deals,
   monitor each deal's health, trigger detailed reports, edit or cancel
   deals, and create new deals.
 
-- **<a href="sell-side-reporting-on-deals.md" class="xref">Sell-Side
-  Reporting on Deals</a>**
+- **[Sell-Side Reporting on Deals](sell-side-reporting-on-deals.md)**
 
   Run various reports to analyze how your deals are performing.
 
-- **<a href="deal-auction-mechanics.md" class="xref">Deal Auction
-  Mechanics</a>**
+- **[Deal Auction Mechanics](deal-auction-mechanics.md)**
 
   Learn how the different types of deal auctions (open or private) work.
 
-- **<a href="deals-faq.md" class="xref">Deals FAQ</a>**
+- **[Deals FAQ](deals-faq.md)**
 
   Review common questions about deals.
-
-
-
-

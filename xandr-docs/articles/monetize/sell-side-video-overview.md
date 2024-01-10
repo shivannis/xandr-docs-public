@@ -1,15 +1,12 @@
 ---
-Title : Sell-Side Video Overview
-Description : Sellers who want to work with video inventory generally face three key
+title: Sell-Side Video Overview
+description: In this page learn what our sell-side video products are,
+how they work, and how they help clients to succeed. 
 ms.date: 10/28/2023
-challenges when attempting to succeed in this fast-evolving area of
-Internet advertising: monetization, latency, and cross-device adserving.
 ---
 
 
-# Sell-Side Video Overview
-
-
+# Sell-Side video overview
 
 Sellers who want to work with video inventory generally face three key
 challenges when attempting to succeed in this fast-evolving area of
@@ -22,14 +19,14 @@ of client types.
 This page provides an overview of what our sell-side video products are,
 how they work, and how they help clients to succeed.
 
-Maximized Monetization and Fill
+## Maximized monetization and fill
 
 In order to succeed in video trafficking, sellers must be able to
 reliably and predictably monetize their video inventory and ensure
 optimal video fill. Xandr video products help to
 ensure that video inventory is sold efficiently and seamlessly.
 
-Monetization
+## Monetization
 
 Monetization involves optimizing video CPM in order to get the best
 possible price for inventory.
@@ -44,7 +41,7 @@ possible price for inventory.
 - With outstream video, sellers can include video and display demand in
   the same auction allowing them to maximize bid density and revenue.
 
-Fill
+## Fill
 
 Fill means optimizing the sale of inventory so that you sell as much of
 it as possible.
@@ -63,7 +60,7 @@ it as possible.
   Xandr and setup any passbacks as required
   allowing them to easily manage their own demand on our platform.
 
-Breaking the Speed Barrier
+## Breaking the speed barrier
 
 When video auction and load times involve high latency, ads fail to
 display properly, impression volume is low, and inventory loses
@@ -87,7 +84,7 @@ Soon, we will also add VPAID initialization as a way to estimate if
 VPAID can provide demand within a specified timeout period with higher
 priority assigned to VPAID which responds more quickly.
 
-Cross-Device Support
+## Cross-Device support
 
 If video ads are to succeed, they must be able to play across devices.
 Xandr Video is designed to render and monetize
@@ -96,51 +93,30 @@ video for desktop web, mobile web, and mobile app contexts.
 Our focus with video clients is on mobile web and desktop web. Through
 our Mobile SDK, you can also integrate interstitials and instream video:
 
-- <a
-  href="mobile-sdk/show-interstitials-on-android.md"
-  class="xref" target="_blank">show interstitials on Android</a>
-- <a
-  href="mobile-sdk/show-interstitials-on-ios.md"
-  class="xref" target="_blank">show interstitials on iOS</a>
-- <a
-  href="mobile-sdk/show-instream-video-ads-on-android.md"
-  class="xref" target="_blank">show instream video ads on Android</a>
-- <a
-  href="mobile-sdk/show-instream-video-ads-on-ios.md"
-  class="xref" target="_blank">show instream video ads on iOS</a>
+- [show interstitials on Android](../mobile-sdk/show-interstitials-on-android.md)
+- [show interstitials on iOS](../mobile-sdk/show-interstitials-ads-on-ios.md)
+- [show instream video ads on Android](../mobile-sdk/show-instream-video-ads-on-android.md)
+- [show instream video ads on iOS](../mobile-sdk/show-instream-video-ads-on-ios.md)
 
-Video Reporting Insights
+## Video reporting insights
 
 Xandr gives sellers access to
 impression-by-impression reporting data about their video inventory via
-the Log Level Data service's <a
-href="log-level-data/video-events-feed.md"
-class="xref" target="_blank">Video Events feed</a>. This allows sellers
+the Log Level Data service's [Video Events feed](../log-level-data/video-events-feed.md). This allows sellers
 to gain valuable insights into their inventory and audience. Our video
 reporting tab for publishers also provides access to important reporting
 data for video inventory.
 
 A Range of Products Suits a Range of Needs
 
-
-
-<b>Tip:</b> Please explore the rest of the
-<a href="working-with-video-inventory.md" class="xref">Working with
-Video Inventory</a> for the latest in quickstart guides, overviews,
-workflows, and other helpful documentation.
-
-
-
-
+> [!TIP]
+> Please explore the rest of the [Working with Video Inventory](working-with-video-inventory.md) for the latest in quickstart guides, overviews, workflows, and other helpful documentation.
 
 We offer a range of video products designed to suit the unique needs of
 individual clients.
 
-- <a href="outstream-video-quickstart-guide.md" class="xref">Quickstart
-  Guide: Set Up Outstream Video</a>
-- <a href="selling-in-stream-video.md" class="xref"
-  title="To monetize video inventory, you need to successfully describe the player and its specifications using the placement object. These capabilities are fully supported by Monetize and the Xandr API.">Selling
-  In-Stream Video</a>
+- [Quickstart Guide: Set Up Outstream Video](outstream-video-quickstart-guide.md)
+- [Selling In-Stream Video](selling-in-stream-video.md)
 
 
 
