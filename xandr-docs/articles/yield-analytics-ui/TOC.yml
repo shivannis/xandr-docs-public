@@ -240,20 +240,8 @@
     href: anatomy-of-the-view-calendar-page.md
   - name: Availability Overview (Old Workflow)
     href: availability-overview-old-workflow.md
-- name: Check Availability
-  items:
-  - name: Overview
+  - name: Check Availability
     href: check-availability-for-a-combination-of-targeting-attributes.md
-  - name: Save an Availability Lookup
-    href: save-an-availability-lookup.md
-  - name: Open a Saved Availability Lookup
-    href: open-a-saved-availability-lookup.md
-  - name: Create an Availability Batch Lookup
-    href: create-an-availability-batch-lookup.md
-  - name: View Availability Batch Lookups
-    href: view-availability-batch-lookups.md
-  - name: View Availability in a Calendar
-    href: view-availability-in-a-calendar.md
 - name: Saved Availability Lookups
   items:
   - name: Working With Saved Availability Lookups
