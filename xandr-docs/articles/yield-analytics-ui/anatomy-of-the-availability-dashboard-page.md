@@ -61,17 +61,17 @@ x% or y = (For example, 100% or 15,000,000) Percentage of impressions availab
 
 The colors in each date represent the following based on your selections in the Color slider in the Filter panel:
 
- = Date is available for booking  
- = Date has some inventory available for booking but should be booked with caution.  
- = Date is unavailable for booking
+- Date is available for booking
+- Date has some inventory available for booking but should be booked with caution
+- Date is unavailable for booking
 
 ### List view details
 
 The colors in each row represent the following based on your selections in the Color slider in the Filter panel:
 
- = Date is available for booking
- = Date has some inventory available for booking but should be booked with caution.
- = Date is unavailable for booking
+- Date is available for booking
+- Date has some inventory available for booking but should be booked with caution
+- Date is unavailable for booking
 
 
 ## Related topics
