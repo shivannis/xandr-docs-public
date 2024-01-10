@@ -94,7 +94,7 @@ Data in this report is retained for 428 days.
 | Insertion Order | Yes | The name of the insertion order associated with the line item or campaign that purchased the impression. |
 | Line Item | Yes | The line item associated with this impression. |
 | Deal | Yes | The name and ID of a deal if associated with the line item. |
-| Creative | Yes | The creative served for the impression.<br>**Note**:<br> - For impressions older than 100 days, creatives will be aggregated into one row with 0 as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be "`External Clicks`" or "`External Imps`". |
+| Creative | Yes | The creative served for the impression.<br>**Note**:<br> - For impressions older than 100 days, creatives will be aggregated into one row with `0` as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be "`External Clicks`" or "`External Imps`". |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be `0`. |

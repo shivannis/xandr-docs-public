@@ -30,7 +30,7 @@ To create a new programmatic guaranteed (PG) deal, start by pre-selecting a paci
 
 1. Click **Next**.
 
-    Depending on your **Pacing** selection, you'll see the **Create New Line** Item screen (if you chose **Pacing in Xandr**) or the **Create New Programmatic Guaranteed Deal** screen (if you chose Pacing in Ad Server of Record).
+    Depending on your **Pacing** selection, you'll see the **Create New Line** Item screen (if you chose **Pacing in Xandr**) or the **Create New Programmatic Guaranteed Deal** screen (if you chose **Pacing in Ad Server of Record**).
 
 For instructions on creating a programmatic guaranteed deal with your pacing selection, see
 

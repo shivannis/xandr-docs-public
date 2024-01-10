@@ -25,7 +25,7 @@ You can use any unique ID (newly created or already existing on the page) that's
 
 The native ad renderer injects the script in the page, so that the Xandr viewability script can retrieve the HTML element using `document.getElementById`.
 
-## Pass a reference to DOM element (Compatible with Shadow DOM)
+## Pass a reference to DOM element (Compatible with shadow DOM)
 
 In order to integrate using access to the creative HTML Element (the element that wraps the creative content), pass a reference of the DOM Element to the given variable `dom_elt_var`. This approach is particularly helpful when the creative HTML is housed within a Shadow DOM or nested Shadow DOMs.
 

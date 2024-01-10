@@ -79,7 +79,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 - use a report type other than Network Analytics.
 - alter the way you structure your reports (if possible) so they do not include dates greater than 45 days ago.
 
-If you are frequently requesting Network analytics reports which include dates longer than 45 day ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)(LLD).
+If you are frequently requesting Network analytics reports which include dates longer than 45 day ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md) (LLD).
 
 **Currency 2.0**
 
@@ -341,7 +341,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Learn give up | The bid was "Learn", but was below the venue's "give up" price. |  
 | Manual give up | The bid was "Manual", but was below the venue's "give up" price. |  
 
-## To run Your report
+## To run your report
 
 Follow these steps to run your report.
 
@@ -378,7 +378,7 @@ Follow these steps to run your report.
 - [Working with Line Items](working-with-line-items.md)
 - [Reporting Labels](reporting-labels.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
-- [Bidding Priority](bidding-priority.html)
+- [Bidding Priority](bidding-priority.md)
 - [Give Up Price](bidding-priority.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Analytics Reporting](analytics-reporting.md)

@@ -490,7 +490,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Image (sizes in pixels) | 500x500 minimum<br>1200x1200 recommended<br>Valid file types: jpg, png<br>File size must be less than 2 MB<br>300x250 display/scale down to 1:1 mobile |
 | Call to Action Text | Not supported |
 
-|**Recommendations and guidelines**
+**Recommendations and guidelines**
 
 | Attribute | Value |
 |---|---|

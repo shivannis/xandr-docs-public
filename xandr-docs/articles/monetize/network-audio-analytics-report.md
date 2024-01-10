@@ -1,6 +1,6 @@
 ---
 title: Network Audio Analytics Report
-description: The article highlights Network Audio Analytics, a tool analyzing audio metrics among buyers and sellers in a network, emphasizing its ability to monitor and assess audio-related activities.
+description: The article focuses on Network Audio Analytics, a tool that monitors and evaluates audio metrics between network buyers and sellers.
 ms.date: 10/28/2023
 ---
 
@@ -133,7 +133,7 @@ Follow these steps to run your report.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
    > [!IMPORTANT]
-  > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+   > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.

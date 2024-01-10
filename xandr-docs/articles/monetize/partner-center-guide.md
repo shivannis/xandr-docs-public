@@ -1,10 +1,10 @@
 ---
 title: Microsoft Monetize - Partner Center Guide
-description : The Partner Center enables you to realize your full potential with other buyers and sellers. 
+description: The Partner Center enables you to realize your full potential with other buyers and sellers. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Partner center guide
+# Microsoft Monetize - Partner Center guide
 
 The **Partner Center** enables you to realize your full potential with other buyers and sellers. Using the **Partner Center**, you can:
 
@@ -15,7 +15,7 @@ The **Partner Center** enables you to realize your full potential with other buy
 
 This guide is designed to help both sellers and buyers understand and use the **Partner Center**. Find the section below that represents your perspective.
 
-## In This Guide - For sellers
+## In this guide - For sellers
 
 - [Managing Relationships with Buyers](managing-relationships-with-buyers.md): As a seller, learn how to use **Partner Center** to foster and manage relationships with specific buyers. You can review statistics for each buyer, communicate with buyers directly in Microsoft Monetize, and more.
 - [Selling Deals](selling-deals.md): As a seller, you can use deals to provide buyers with special access to premium inventory, inventory in bulk for discounted rates, inventory that will help them meet their campaign goals, or other opportunities.
