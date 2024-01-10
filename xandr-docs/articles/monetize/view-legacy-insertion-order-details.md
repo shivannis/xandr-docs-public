@@ -1,6 +1,6 @@
 ---
 title: View Legacy Insertion Order Details
-description: 
+description: The article provides guidance on accessing and reviewing information about legacy insertion orders.
 ms.date: 10/28/2023
 ---
 
