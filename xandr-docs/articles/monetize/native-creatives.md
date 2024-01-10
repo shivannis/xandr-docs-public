@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Native Creatives
-description: The article guides users on hosting various types of native creatives, including video, audio, banner, carousel, and app install, using Xandr.
+description: The article guides users on hosting various types of native creatives, including video, audio, banner, carousel, and app install.
 ms.date: 10/28/2023
 ---
 

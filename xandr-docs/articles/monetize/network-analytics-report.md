@@ -1,13 +1,12 @@
 ---
 title: Network Analytics Report
-description: The article shows network analytics report.
+description: The article presents a network analytics report that provides comprehensive insights into both buy and sell-side data for your network.
 ms.date: 10/28/2023
 ---
 
 # Network analytics report
 
-This report lets you view both buy and sell-side data for your Network. For more granular analytics on a specific advertiser or publisher, use the **Advertiser Analytics** and
-**Publisher Analytics** reports.
+This report lets you view both buy and sell-side data for your Network. For more granular analytics on a specific advertiser or publisher, use the **Advertiser Analytics** and **Publisher Analytics** reports.
 
 **Time frame**
 
@@ -68,27 +67,31 @@ In some cases Analytics reports can show delivery that does not match [Dates and
 
 Real Time Data is a new feature being offered within this report (not all users have access yet). Traditionally, reports have had a 2 hour built-in delay to allow for a fuller reconciliation with conversions, impressions and other metrics associated with transactions. However, in some cases, it is important to have up-to-the-minute information even if it has not been fully reconciled yet. Dimensions which support the real-time option are marked with the clock icon.
 
-:::image type="content" source="media/real-time-data-reporting.png" alt-text="Screenshot that explains real time data.":::
+:::image type="content" source="media/real-time-data-reporting.png" alt-text="Diagram that explains real time data.":::
 
-- To use this new feature, set the Real Time Data field to **Included**. This will cause the data in your report to contain both real-time and the more fully reconciled batch
-  file data. If you want the report to break out the real-time data from batch file data, select the **Real-Time status** checkbox.
+- To use this new feature, set the **Real Time Data** field to **Included**. This will cause the data in your report to contain both real-time and the more fully reconciled batch file data. If you want the report to break out the real-time data from batch file data, select the **Real-Time status** checkbox.
 - Do not use information in the real-time data portion of your report to bill your clients as that data may change slightly once fully
   reconciled within 2 to 4 hours. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
-**Time ranges including dates occurring greater than 45 days ago:** If you create a Network analytics report with the Range field set to "Lifetime", "Quarter to Date" or "Custom" (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being
-requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can: - rerun the report at a later time. - use a report type other than Network Analytics. - alter the way you structure your reports (if possible) so they do not include dates greater than 45 days ago.
+**Time ranges including dates occurring greater than 45 days ago:** If you create a Network analytics report with the **Range** field set to "Lifetime", "Quarter to Date" or "Custom" (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
+
+- rerun the report at a later time.
+- use a report type other than Network Analytics.
+- alter the way you structure your reports (if possible) so they do not include dates greater than 45 days ago.
 
 If you are frequently requesting Network analytics reports which include dates longer than 45 day ago, you may need to consider running these reports via the API, caching the data and using [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) or [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md)(LLD).
 
 **Currency 2.0**
 
-By enabling Currency 2.0, you can select a currency for each individual report if you prefer not to use USD as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the Currency 2.0 toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> [!NOTE]
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
 > [!IMPORTANT]
+>
 > - The **Filter?** column shows whether a dimension can be used as a filter as well as being used to group by.
-> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax "Dimension_Name:Attribute_Name".
+> - Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax "`Dimension_Name:Attribute_Name`".
 > - For all revenue fields, the currency is defined by the **Buying Currency** field.
 
 | Column | Filter? | Description |
@@ -100,7 +103,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>For impressions older than 100 days, the ID will be 0. |
-| Placement | Yes | The name and ID of the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
+| Placement | Yes | The name and ID of the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Insertion Order | Yes | The insertion order under which this impression was purchased. |
 | Insertion Order: Type | No | The insertion order type (e.g., Legacy IO, Seamless IO). |
 | Insertion Order: State | No | The state of the insertion order (e.g., active, inactive). |
@@ -113,7 +116,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Insertion Order (lifetime) Pacing | No | The lifetime pacing budget for the insertion order.<br>**Note**: This dimension is applicable to legacy insertion orders, but not for seamless insertion orders. |
 | Insertion Order: Billing Code | No | The billing code associated with the insertion order (if there is one). |
 | Insertion Order: Comments | No | The comments associated with the insertion order (if there are any). |
-| IO: Type (reporting label) | Yes | A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the Type attribute described above. You may only select one reporting label per report. |
+| IO: Type (reporting label) | Yes | A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the **Type** attribute described above. You may only select one reporting label per report. |
 | IO: Sales Rep (reporting label) | Yes | A customer reporting label field used to list the sales representative associated with the insertion order. You may only select one reporting label per report. |
 | IO: Trafficker (reporting label) | Yes | A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report. |
 | Line Item | Yes | The line item under which this impression was purchased. |
@@ -172,7 +175,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Creative Code | No | The optional code applied to the creative used. |
 | External Code | No | The name and ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). |
 | Deal Type | Yes | The type of deal. Options are **Open Auction**, **Private Auction**, **First Look**, or **Programmatic Guaranteed**. |
-| Filtered Request Reason | Yes | The reason why the impression request was filtered out by Xandr inventory quality controls and the auction was not held. Possible reasons are:<br>Invalid Domain<br>Invalid IP<br>Suspected Domain Detection Tampering<br>Unknown<br>**Valid Impression** is also a possible **Filtered Request Reason**, but in that case, an auction was held and it was not filtered. |
+| Filtered Request Reason | Yes | The reason why the impression request was filtered out by Xandr inventory quality controls and the auction was not held. Possible reasons are:<br> - Invalid Domain<br> - Invalid IP<br> - Suspected Domain Detection Tampering<br> - Unknown<br><br>**Valid Impression** is also a possible **Filtered Request Reason**, but in that case, an auction was held and it was not filtered. |
 | Clearing Event | Yes | The underlying auction event that was transacted (e.g., impression, viewable impression, completed video). |
 | Buyer Seat Code | No | The Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression |
 | Buyer Seat Name | No | The display name for the buyer seat code |
@@ -192,7 +195,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 |---|---|
 | Include Adjustments in Reported Data | Check to include adjustments in the report should be included in the report. |
 | Imps | The total number of impressions. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Imps (blank) | The total number of impressions in which a blank creative served. |
 | Imps (default) | The total number of impressions in which a default creative served. |
 | Imps (default error) | The total number of impressions in which a default creative served due to timeout issue. |
@@ -207,9 +210,9 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Post View Conversions | The number of post-view conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post-View Conversions: Cross Device | The number of post-view cross-device conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | Post View Conversions: IP | The number of post-view IP conversions. For more information about how we attribute post-view (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
-| Post Click Conversions | The number of post-click conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
-| Post Click Conversions: Cross Device | The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
-| Post Click Conversions: IP | The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see Conversion Attribution. |
+| Post Click Conversions | The number of post-click conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post Click Conversions: Cross Device | The number of post-click cross-device conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
+| Post Click Conversions: IP | The number of post-click IP conversions. For more information about how we attribute post-click (and other) conversions, see [Conversion Attribution](conversion-attribution.md). |
 | CTR | The click-through rate – the ratio of clicks to impressions, expressed as a percentage. |
 | Conversion Rate | The ratio of conversions to impressions, expressed as a percentage. |
 | Booked Revenue | The total booked revenue (does not include resold revenue). |
@@ -236,8 +239,8 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | View-Measured Imps | The total number of impressions that were measured for viewability. |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-| CPVM | The cost per 1000 viewable impressions.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
-| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>Note: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| CPVM | The cost per 1000 viewable impressions.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
+| Imps (master creative) | The number of page-level roadblocks that served the master creative.<br>**Note**: Alpha-Beta Notice:<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | Feature Costs | Costs incurred when using a platform feature such as cross-device. |
 | Segment Data Costs | All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |
 | Filtered Requests | The total number of bid requests for which Xandr did not hold an auction due to inventory quality concerns. See **Filtered Request Reason** (under **Dimensions**) for a list of the possible reasons. |
@@ -279,7 +282,7 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 |---|---|
 | direct | When you purchased inventory from a seller with whom you have a managed relationship. |  
 | real time | When you purchase inventory from a seller on the open exchange. |  
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact Xandr support |  
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact [Xandr support](https://help.xandr.com/) |  
 
 **Revenue types**
 
@@ -337,25 +340,26 @@ By enabling Currency 2.0, you can select a currency for each individual report i
 | Optimized give up | The bid was "Optimized", but was below the venue's "give up" price. |  
 | Learn give up | The bid was "Learn", but was below the venue's "give up" price. |  
 | Manual give up | The bid was "Manual", but was below the venue's "give up" price. |  
-## To Run Your Report
+
+## To run Your report
 
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium \>  Analytics \>  Prebid Server Analytics**.
-2. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+    1. Or, from the Publishers top menu, click on **Prebid Server Premium** \>  **Analytics** \>  **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-3.  Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
-4. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
     > only the dimensions you need.
 
-5. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
@@ -366,14 +370,15 @@ Follow these steps to run your report.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under  **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-6. Click **Run report** to send your report request.
+1. Click **Run report** to send your report request.
 
 ## Related topics
 
 - [Working with Insertion Orders](working-with-insertion-orders.md)
-- [working-with-line-items.md](Working with Line Items)
+- [Working with Line Items](working-with-line-items.md)
 - [Reporting Labels](reporting-labels.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
+- [Bidding Priority](bidding-priority.html)
 - [Give Up Price](bidding-priority.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Analytics Reporting](analytics-reporting.md)

@@ -8,8 +8,8 @@ ms.date: 10/28/2023
 
 The Multi-Key Value Analytics report shows you the information associated with your network's defined multiple targeting keys and values.
 
-Impressions with key/value targeting will serve and be reported only for those impressions that were logged by a placement tag containing the **kw\_** prefix on the key name. For example, a placement tag containing`keyname=value1` will not serve and therefore not be logged, whereas a placement tag containing **kw\_**`keyname=value1` will serve
-and be logged. This applies to ad calls with the following tag types: /tt, /ttj, /fpt, /jpt, /pt, /ptv, /ssptv, /mtj, /map, and /mob.
+Impressions with key/value targeting will serve and be reported only for those impressions that were logged by a placement tag containing the **kw\_** prefix on the key name. For example, a placement tag containing `keyname=value1` will not serve and therefore not be logged, whereas a placement tag containing **kw\_**`keyname=value1` will serve
+and be logged. This applies to ad calls with the following tag types: `/tt`, `/ttj`, `/fpt`, `/jpt`, `/pt`, `/ptv`, `/ssptv`, `/mtj`, `/map`, and `/mob`.
 
 > [!NOTE]
 > **Xandr Seller Tags:** When using [Xandr's seller tag](../seller-tag/seller-tag.md) (AST), omit the **kw\_** prefix. AST has the keyword object in the body of the request, so the prefix is not needed.
@@ -68,8 +68,7 @@ For more information about how quickly reporting data is processed, see [Availab
 
 ## Time ranges including dates occurring greater than 45 days ago
 
-If you create a Multi-Key Value Analytics report with the Range field set to Custom (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, this resource-intensive
-report may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
+If you create a Multi-Key Value Analytics report with the Range field set to Custom (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, this resource-intensive report may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
 
 - rerun the report at a later time.
 - use a report type other than Key Value Analytics.
@@ -95,10 +94,10 @@ Data in this report is retained for 428 days.
 | Insertion Order | Yes | The name of the insertion order associated with the line item or campaign that purchased the impression. |
 | Line Item | Yes | The line item associated with this impression. |
 | Deal | Yes | The name and ID of a deal if associated with the line item. |
-| Creative | Yes | The creative served for the impression.<br>**Note**:<br> - For impressions older than 100 days, creatives will be aggregated into one row with 0 as the creative_id.<br> - For external click or impression trackers, creative_id will be "External Clicks" or "External Imps". |
+| Creative | Yes | The creative served for the impression.<br>**Note**:<br> - For impressions older than 100 days, creatives will be aggregated into one row with 0 as the `creative_id`.<br> - For external click or impression trackers, `creative_id` will be "`External Clicks`" or "`External Imps`". |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
-| Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
-| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be 0. |
+| Placement | Yes | The placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
+| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be `0`. |
 | Publisher Currency | Yes | The transaction currency used by the seller to sell this impression. Including this dimension will cause most monetary metrics to be displayed in the selling currency. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
 | Advertiser Currency | Yes | The transaction currency that the buyer used to purchase the impression. Including this dimension will cause most monetary metrics to be displayed in the buying currency. |
@@ -166,31 +165,28 @@ You may also choose to display currency values in the Advertiser/Buying and/or P
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1.  Or, from the Publishers top menu, click on **Prebid Server Premium \> Analytics \> Prebid Server Analytics**.
-2. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
+   1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-3. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
-4. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears.
+    a. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
-    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using
-    > only the dimensions you need.
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-5. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
     - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
     - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
-    > [!TIP]
-    >  The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-    >  Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
-    >  (The limit here is 10 million rows).
+      > [!TIP]
+      >  The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-6.  Click **Run report** to send your report request.
+1. Click **Run report** to send your report request.

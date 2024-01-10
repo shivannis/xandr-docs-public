@@ -4,13 +4,13 @@ description: On the Partner Center screen you can view your preferred partners, 
 ms.date: 10/28/2023
 ---
 
-# Partner center screen - Buyer View
+# Partner Center screen - Buyer view
 
 On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 
-## Getting to the partner center screen
+## Getting to the Partner Center screen
 
-Go to **Partners \>  Partner Center** to reach the **Partner Center** screen.
+Go to **Partners** \>  **Partner Center** to reach the **Partner Center** screen.
 
 ## Switching to seller mode
 
@@ -40,7 +40,7 @@ You can define which portion of an eligible seller's inventory you trust. There 
 
 ## Viewing sellers
 
-The Sellers tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide
+The **Sellers** tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide
 Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
 
 ## Platform-wide avails
@@ -60,14 +60,12 @@ Avails.** columns will display statistics on all of the seller's transactions ac
 
 ## Seller eligibility, history, and deals
 
-**Get to Know Xandr Direct**
-
-> [!TIP]
-> Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive
-> relationships with publishers.
-
-For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com)
-or your Xandr account manager.
+  > [!TIP]
+  > **Get to Know Xandr Direct**
+  >
+  > Xandr Direct is a group of 100+ Xandr sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+  >
+  > For more information, please see [Xandr Direct](appnexus-direct-for-buyers.md) or contact [appnexusdirect@appnexus.com](mailto:appnexusdirect@appnexus.com) or your Xandr account manager.
 
 - **Seller Group** - Shows if the seller is labeled as Xandr Direct.
 - **Eligibility** - Shows the transaction eligibility between members. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other.
@@ -93,7 +91,7 @@ Click the Hide Search Filters "**\<**" icon to collapse the section and provide 
 
 Click on a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals. See [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md), for more information.
 
-Related Topics
+## Related topics
 
 - [Set Seller Defaults](set-seller-defaults.md)
 - [Edit Seller Defaults](edit-seller-defaults.md)

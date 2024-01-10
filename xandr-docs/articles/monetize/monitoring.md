@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 Microsoft Monetize lets you monitor and troubleshoot your line items all in one place. You can create, edit, monitor, and troubleshoot line items from a single view.
 
 > [!NOTE]
-> The Xandr Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients.
+> The Microsoft Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients.
 
 The following topics provide more details about line item monitoring and troubleshooting:
 

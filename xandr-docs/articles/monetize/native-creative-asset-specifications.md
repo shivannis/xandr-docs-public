@@ -1,6 +1,7 @@
 ---
 title: Microsoft Monetize - Native Creative Asset Specifications
-description: You can configure a variety of standard and custom data and image
+description: The article helps you to configure a variety of standard and custom data and image specifications for your native creatives and assemblies.
+
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +11,7 @@ You can configure a variety of standard and custom data and image specifications
 
 Here's a list of standard and custom data and image specifications that can be configured directly from our UI:
 
-## Standard Data Specifications
+## Standard data specifications
 
 | Specification | Description |
 |--|--|

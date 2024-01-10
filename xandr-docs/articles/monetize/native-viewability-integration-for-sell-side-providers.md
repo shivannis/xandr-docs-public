@@ -18,10 +18,12 @@ To integrate using direct access to the DOM ID, populate `%native_dom_id%` with 
 You can use any unique ID (newly created or already existing on the page) that's compliant with the HTML standard. For example, the following snippet shows the ID attribute applied to a `<div>` element.
 
 ```
+  <div id="1234abcd">
   <!—native content-->
-
+  </div>
 ```
-The native ad renderer injects the script in the page, so that the Xandr viewability script can retrieve the HTML element using document.`getElementById`.
+
+The native ad renderer injects the script in the page, so that the Xandr viewability script can retrieve the HTML element using `document.getElementById`.
 
 ## Pass a reference to DOM element (Compatible with Shadow DOM)
 
@@ -49,12 +51,11 @@ This method instructs the viewability script which element to measure, using a D
 
 To integrate by using access to a classname, add `anx_cr_loc` as an attribute on an HTML element that wraps the creative content to be rendered. The native ad renderer will then overwrite the `%native_dom_id%` in the viewability script payload.
 
-For example, the following snippet shows the attribute applied to a`<div>` element.
+For example, the following snippet shows the attribute applied to a `<div>` element.
 
 ```
 <div class="anx_cr_loc">  
-  <!—native content -->
-
+<!—native content -->
 ```
 
 The native ad renderer removes `%native_dom_id%` from the payload using
@@ -67,10 +68,9 @@ and injects the viewability script element in the ad wrapping element directly a
 
 ```
 <div class="anx_cr_loc">
-  <!—native content -->
-  <script src="//cdn.adnxs.com/appnexusviewabilityscriptpayload_url...">
-    </script>
-
+<!—native content -->
+<script src="//cdn.adnxs.com/appnexusviewabilityscriptpayload_url...">
+</script>
 ```
 
 ## Use a CSS selector
@@ -78,23 +78,22 @@ and injects the viewability script element in the ad wrapping element directly a
 To integrate using a CSS selector, find a stable selector that selects only your ad, and URL-encode it. For example, suppose you're using the following code:
 
 ```
-<div class="right">
-  <div class="ad1">
-    <!—native content -->
-    
-
+ <div class="right">
+ <div class="ad1">
+ <!—native content -->
+ </div>
+ </div>  
 ```
+
 You could use the selector `.right > .ad1` and encode it as `.right%20%3E%20.ad1`.
 
-The native renderer then replaces the`%native_dom_id% ` with ` ;css_selector=``url encoded css selector` as shown in the following example:
+The native renderer then replaces the `%native_dom_id%` with `;css_selector=url encoded css selector` as shown in the following example:
 
 ```
 newViewJsPayload = viewJsPayload.replace("%native_dom_id%", ";css_selector=.right%20%3E%20.ad1");
 ```
 
 The viewability script then retrieves the HTML element using `document.querySelector`.
-
->
 
 ## Related topics
 

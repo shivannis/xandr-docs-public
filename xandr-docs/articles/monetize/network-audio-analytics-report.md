@@ -1,6 +1,6 @@
 ---
 title: Network Audio Analytics Report
-description: The article explores Network Audio Analytics, a tool for analyzing audio event metrics among diverse buyers and sellers. It highlights the technology's ability to monitor and assess audio-related activities in a network with multiple participants.
+description: The article highlights Network Audio Analytics, a tool analyzing audio metrics among buyers and sellers in a network, emphasizing its ability to monitor and assess audio-related activities.
 ms.date: 10/28/2023
 ---
 
@@ -67,8 +67,8 @@ Intervals determine how your data is grouped together into rows in the report re
 | Seller | Yes | The seller of this impression. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
-| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>**Note**: For impressions older than 100 days, the ID will be 0. |
-| Placement | Yes | The placement through which this impression occurred. **Note**: For impressions older than 100 days, placements will be aggregated into one row with -1 as the ID and a generic name. |
+| Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br><br>**Note**: For impressions older than 100 days, the ID will be 0. |
+| Placement | Yes | The placement through which this impression occurred. <br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the ID and a generic name. |
 | Insertion Order | Yes | The insertion order under which this impression was purchased. |
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
@@ -119,7 +119,7 @@ You can also choose to select the **Only include results where a Deal is present
 | 50% Complete | The total number of times the video completed 50% of the entire duration of time. |  
 | 75% Complete | The total number of times the video completed 75% of the entire duration of time. |  
 | 100% Complete | The total number of times the video played for the entire duration of time. |  
-| Ad Responses | The total number of responses served to the audio player.<br>**Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |  
+| Ad Responses | The total number of responses served to the audio player.<br><br>**Note**: An **Impression** is recorded when the audio player loads the creative, displays the first frame, and the impression tracker is fired from the audio player. **Ad Responses** refers to the VAST document (XML) being served in response to a request from the audio player, but does not mean that a successful impression event occurred. |  
 | Errors | The total number of times an error occurred. |  
 | Audio Fill | The percentage of audio impressions delivered out of the total number of audio ad responses received. (Imps / Ad Responses) |
 | Device Type | The type of device on which the impression was served. Possible values are:<br> - desktops & laptops<br> - tablets<br> - mobile phones<br> - tv<br> - game consoles<br> - set top box<br> - media players<br> - other devices |  
@@ -132,7 +132,8 @@ Follow these steps to run your report.
    1. Or, from the Publishers top menu, click on Prebid  Server **Premium \> Analytics \> Prebid Server Analytics**.
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
-    For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
+   > [!IMPORTANT]
+  > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
@@ -142,12 +143,11 @@ Follow these steps to run your report.
     > only the dimensions you need.
 
 1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
-    a. **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
-    b. **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
-      The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and
-      Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service
-      (The limit here is 10 million rows).
+      > [!TIP]
+      > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.

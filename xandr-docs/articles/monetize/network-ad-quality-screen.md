@@ -4,17 +4,16 @@ description: The article details the Network Ad Quality screen, which displays N
 ms.date: 10/28/2023
 ---
 
-# Network ad quality screen
+# Network Ad quality screen
 
-The Network Ad Quality screen performs several functions:
+The **Network Ad Quality** screen performs several functions:
 
 - Displays Network Profile settings
 - Displays Publisher Templates. For each template, the screen displays how many publishers are using it
 - Allows you to update network-level ad quality settings such as the Network Profile or any Publisher Templates
 - Informs you of new brands as they are added to the platform
 
-This document describes the various sections of the **Network Ad Quality** screen and their functions. For more information on how to create or update these
-settings, see [Update Your Network Profile](update-your-network-profile.md) or [Create a Publisher Template](create-a-publisher-template.md).
+This document describes the various sections of the **Network Ad Quality** screen and their functions. For more information on how to create or update these settings, see [Update Your Network Profile](update-your-network-profile.md) or [Create a Publisher Template](create-a-publisher-template.md).
 
 ## Navigation
 
@@ -50,7 +49,7 @@ Include or exclude creatives based on the language of the creative.
 
 ### Ad servers
 
-Choose to serve only those creatives that are hosted on a specific set of ad server domains. See [Ad Server Settings](ad-server-settings.md).
+Choose to serve only those creatives that are hosted on a specific set of ad server domains. See [Ad Server Settings](ad-server-settings.md) for more information on creating collections of eligible or banned ad servers.
 
 ### Frequency caps
 

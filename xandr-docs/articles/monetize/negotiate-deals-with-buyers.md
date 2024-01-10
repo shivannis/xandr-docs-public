@@ -14,9 +14,9 @@ These include:
 - Inventory in bulk for discounted rates
 - Other opportunities
 
-This page explains how to negotiate and set up deals with both Monetize buyers as well as buyers using external bidders.
+This page explains how to negotiate and set up deals with both Microsoft Monetize buyers as well as buyers using external bidders.
 
-## Deals with monetize buyers
+## Deals with Microsoft Monetize buyers
 
 You can negotiate deals with buyers on the Xandr platform from the Partner Center.
 
@@ -31,13 +31,11 @@ Once you've negotiated deal terms with a buyer, you can create the deal in the P
 Negotiate a deal with the buyer offline. Then ask the buyer for their Xandr member ID so you can set up the deal in Monetize.
 
 > [!NOTE]
-> **If you have not seen delivery from this bidder previously**, be sure to ask the buyer to make sure that the bidder has you (the seller) in an allowlist in their bidder
-> profile. This is an important step: if the bidder does not receive traffic from you, the buyer will not be able to buy through the negotiated deal.
+> **If you have not seen delivery from this bidder previously**, be sure to ask the buyer to make sure that the bidder has you (the seller) in an allowlist in their bidder profile. This is an important step: if the bidder does not receive traffic from you, the buyer will not be able to buy through the negotiated deal.
 
-### Step 2. Create a deal in Monetize
+### Step 2. Create a deal in Microsoft Monetize
 
-Select the buyer on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md), and then follow the step-by-step instructions on the [Create a Custom
-Deal](create-a-custom-deal.md) page. Once the deal has been set up in Monetize, contact the buyer and give them the deal ID.
+Select the buyer on the [Partner Center Screen - Seller View](partner-center-screen-seller-view.md), and then follow the step-by-step instructions on the [Create a Custom Deal](create-a-custom-deal.md) page. Once the deal has been set up in Monetize, contact the buyer and give them the deal ID.
 
 ### Step 3. Buyers enter the deal into the bidder's UI
 

@@ -19,7 +19,7 @@ This page explains how to negotiate and set up deals with sellers and external s
 
 As a buyer, the best way to find deals is to browse seller packages, which are pre-made combinations of inventory and/or data that can be immediately converted into deals or can be used as a jumping-off point for custom deal negotiations. For more details, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
 
-## Deals with External Supply Partners
+## Deals with external supply partners
 
 At this time, Xandr supports deals with the following external supply partners:
 
@@ -36,8 +36,7 @@ At this time, Xandr supports deals with the following external supply partners:
 You must negotiate deals with these supply partners offline and save them in the partner's deal portal. Xandr will then automatically synchronize the deals with our system; they should be available for purchase within a few hours of creation. Please note that Xandr employees cannot explain these external supply partner's auction mechanics or deal types. To learn about auction mechanics for deals with sellers, see [Deal Auction Mechanics](deal-auction-mechanics.md).
 
 > [!NOTE]
-> Each deal ID can be associated only with a single buyer. Enter one buyer member when setting up a deal in the external supply partner's system. If multiple members are
-> entered, Xandr will map the deal only to the first buyer member.
+> Each deal ID can be associated only with a single buyer. Enter one buyer member when setting up a deal in the external supply partner's system. If multiple members are entered, Xandr will map the deal only to the first buyer member.
 
 ## Related topics
 

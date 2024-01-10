@@ -29,7 +29,7 @@ Here's a list of available standard and custom data and image object placeholder
 | [%address%] | Address that will be visible to the user when the native creative is rendered. |
 | [%desc2%] | Detailed version of the native creative's body text. |
 
-### Example HTML - title \[%title%\]
+### Example HTML - title `[%title%]`
 
 ```
 <p class='native-title'>[%title%]</p>
@@ -43,7 +43,7 @@ Here's a list of available standard and custom data and image object placeholder
 
 A placeholder has been added (**`[%title%]`** on the first line). You can add **`[%title%]`** to represent where you want to add the Native view, which is located on the left side of the **Setup** and **Renderer** tabs. In the Native view, you can replace **`[%title%]`** with the default "10 Breakfast Foods That Everyone Needs In Their Diet" title or the title from the winning creative.
 
-### Example HTML - Call-to-action \[%cta%\]
+### Example HTML - Call-to-action `[%cta%]`
 
 ```
 <p class='native-title'>[%title%]</p>
@@ -59,14 +59,14 @@ A placeholder has been added (**`[%cta%]`** on the third line). You can add **`[
 
 ## Standard image object placeholders
 
-All of the standard image object placeholders have a URL, width, and height property, so please add the appropriate property after "image.". For example, **`[%image.url%]`**, **`[%image.width%]`**, and **`[%image.height%]`**.
+All of the standard image object placeholders have a URL, width, and height property, so please add the appropriate property after "image". For example, **`[%image.url%]`**, **`[%image.width%]`**, and **`[%image.height%]`**.
 
 | Placeholder | Description |
 |---|---|
 | [%image%] | Primary image that will appear when the native creative is rendered. |
 | [%icon%] | Primary icon that will appear when the native creative is rendered. |
 
-### Example CSS - Image URL \[%image.url%\]
+### Example CSS - Image URL `[%image.url%]`
 
 ```
 .native-title {
@@ -93,7 +93,7 @@ Please note that there are five placeholders for each of these custom data objec
 
 ## Custom image object placeholders
 
-Please note that there are five placeholders for each of these custom image object placeholders. All of the custom image object placeholders have a URL, width, and height property, so please add the appropriate property after "customImage#.". For example, **`[%customImage1.url%]`**, **`[%customImage1.width%]`**, and **`[%customImage1.height%]`**.
+Please note that there are five placeholders for each of these custom image object placeholders. All of the custom image object placeholders have a URL, width, and height property, so please add the appropriate property after "`customImage`#.". For example, **`[%customImage1.url%]`**, **`[%customImage1.width%]`**, and **`[%customImage1.height%]`**.
 
 | Placeholder | Description |
 |--|--|
@@ -110,8 +110,7 @@ Please note that there are five placeholders for each of these custom image obje
 | [%clickTrackers%] | Adding this to the HTML code will make all tags in the renderer fire click trackers when clicked |
 
 > [!NOTE]
-> The trackers won't be fired in the Native Preview. If you are looking to make every element of the native assembly (e.g., title, image, and call-to-action button) a link
-> to the landing page, please add the following to your Javascript:
+> The trackers won't be fired in the Native Preview. If you are looking to make every element of the native assembly (e.g., title, image, and call-to-action button) a link to the landing page, please add the following to your Javascript:
 
 ```
 const container = document.getElementById(targetId);
@@ -120,7 +119,7 @@ const container = document.getElementById(targetId);
                });
 ```
 
-### Example HTML \[%click_trackers%\]
+### Example HTML `[%click_trackers%]`
 
 ```
 <a href='[%clickUrl%]' target='_blank'>

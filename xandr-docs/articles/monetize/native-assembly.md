@@ -8,15 +8,14 @@ ms.date: 10/28/2023
 
 By using Native Assembly, publishers can take the guesswork and manual development out of building flawless native experiences. Publishers don't have to worry about whether or not they're keeping to industry standards since Native Assembly validates all native creative assets against IAB's standards. Monetize Ad Server and third-party ad server publishers can both use Native Assembly.
 
- This feature is in **Open Beta**. It is still under development and may be subject to change without notice.
+ > [!NOTE]
+ > This feature is in **Open Beta**. It is still under development and may be subject to change without notice.
 
-## Native assembly for Monetize ad server publishers
+## Native assembly for Microsoft Monetize ad server publishers
 
+Microsoft Monetize Ad Server publishers can use Native Assembly on the client side whereXandr's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With Native Assembly, Microsoft Monetize Ad Server publishers can:
 
-Monetize Ad Server publishers can use Native Assembly on the client side whereXandr's seller tag (AST) and mobile SDKs for Android and iOS can be leveraged. With
-Native Assembly, Monetize Ad Server publishers can:
-
-- Aaccess a gallery of high impact templates and personalize them using HTML, CSS, and/or Javascript.
+- Access a gallery of high impact templates and personalize them using HTML, CSS, and/or Javascript.
 - use custom native assets to enhance their users' experience.
 - set custom price floors for their main image and video assets.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Monthly Prediction Variability Data
-description : <b>Tip:</b> This page relates to the
+description: The article focuses on presenting data related to monthly prediction variability.
 ms.date: 10/28/2023
 ---
 

@@ -4,17 +4,17 @@ description: The article explains how to use Native Inventory Seller Specificati
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Native Inventory Seller Specifications
+# Microsoft Monetize - Native inventory seller specifications
 
-[Buying Native Inventory](buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single campaign. Scaling is the approach we recommend over using any of the seller-specific settings shown here.
+> [!NOTE]
+> [Buying Native Inventory](buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single campaign. Scaling is the approach we recommend over using any of the seller-specific settings shown here.
 
 Sellers of native ad inventory define requirements you must meet to serve creatives on their inventory. The specifications on this page outline the requirements for individual sellers and allow you to compare requirements across the various sellers if you want to target only specific sellers. This page might also help troubleshoot if your
 creatives aren't serving on the sellers you're expecting.
 
 ## Creative settings
 
-Creatives that will serve on native inventory require specific settings when the creative is added. To add a creative, navigate to the **Creative Manager** screen. Click
-**Create New** and create a single creative.
+Creatives that will serve on native inventory require specific settings when the creative is added. To add a creative, navigate to the **Creative Manager** screen. Click **Create New** and create a single creative.
 
 ## Inventory targeting
 
@@ -27,7 +27,8 @@ Shown below are seller-specific guidelines and requirements that you must follow
 If a parameter is not mentioned in the tables below, enter whatever values make sense for your line item or campaign. Any value entered in a field listed as "Not supported"
 will be ignored. For detailed information on additional fields and uploading a native creative see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md). You can also review our [Native Sell-Side Best Practices](https://download.microsoft.com/download/e/e/5/ee544211-092a-45c4-8076-57b5c5aaceb3/28%20Dec%202023/Sell-Side-Native-Best-Practices.pdf).
 
-Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
+> [!WARNING]
+> Do not use JavaScript piggyback pixels on native creatives. Only image pixels can be used on native creatives.
 
 ### AdYouLike
 
@@ -342,11 +343,11 @@ on Plista:
 | Icon (sizes in pixels) | - Logo<br> - 1x1 ratio<br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio<br> - 1200x628 |
 
-You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing `Xandr``_creative_id` with your creative ID.
+You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing `Xandr_creative_id` with your creative ID.
 
-| Website | Category | Desktop | Tablet | Smartphone | Smartphone | Smartphone  | Preview URL |
+| Website | Category | Desktop? | Tablet? | Smartphone? | Smartphone? | Smartphone?  | Preview URL |
 |---|---|---|---|---|---|---|---|
-|  |  |  | Web | App | Web | App |  |
+|  |  |  | **Web** | **App** | **Web** | **App** |  |
 | [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop** - https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id <br> **Mobile web** -  https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID |
 | [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop** -  https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id<br>**Mobile web** - https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id |
 
@@ -371,7 +372,9 @@ inventory, known as "widgets," are tailored to each partner on the Sharethrough 
 will be bidding on the in-feed space where your native ad will display.
 
 > [!NOTE]
-> Buyers can only buy on a CPM basis. You can preview your creative in the [Sharethrough Native Ad Generator](https://generator.sharethrough.com/dsp).
+> Buyers can only buy on a CPM basis. 
+
+You can preview your creative in the [Sharethrough Native Ad Generator](https://generator.sharethrough.com/dsp).
 
 ### Taboola
 
@@ -424,12 +427,15 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
   content.
 - Taboola maintains partnerships and integration with IAS, supporting MOAT and DoubleVerify.
 
+**Native creative best practices**
+
 | Attribute | Value |
 |---|---|
 | **Image Best Practices** | - People are always preferable - Even better if they're at medium zoom from the shoulders-up, or even closer.<br> - Avoid image clutter. Clean images with a single center of focus will help you stand out.<br> - Utilize eye-catching colors to attract the user's attention. |
 | **Title Best Practices** | - Taboola recommends running titles that are 35 - 45 characters, 60 maximum<br> - Your title can be a powerful targeting tool.<br> - Call out your audience or your product when possible.<br> - Front-load titles with an eye-catching main point.<br> - Numbered lists can be a good way to entice a user to click.<br> - Intrigue and mystery can help draw in users.<br> - Don't forget that titles should be capitalized, just as you would an article headline. |
 
-To know more, you can visit [Taboola's Native and Video Creative Best Practices](https://help.taboola.com/hc/en-us/articles/360026664414-Programmatic-Creative-Best-Practices).
+> [!NOTE]
+> To know more, you can visit [Taboola's Native and Video Creative Best Practices](https://help.taboola.com/hc/en-us/articles/360026664414-Programmatic-Creative-Best-Practices).
 
 **Advertising policies**
 
@@ -464,13 +470,13 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Icon (sizes in pixels) | - Logo<br> - 300 pixel minimum<br> - jpg or transparent png recommended<br> - Recommend two versions (light and dark) |
 | Image (sizes in pixels) | - Recommended 320x180<br> - Aspect ratio 16:9<br> - Maximum 30 KB<br> - No text, logos, or animations |
 
-### General guidelines 
+### General guidelines
 
 | Attribute | Value |
 |---|---|
 | **Third-Party Trackers** | All 3rd party trackers are accepted as long as they are 1x1 image tag. All trackers must be secure (https://). |
-| **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes Image (Technical attribute ID 1) and Native: In-Feed Standard (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Xandr platform. |
-| **Suggested Do's and Don't's** | Do choose engaging photos.<br>Do use products set in real environments. Historically, these have tended to perform better than products in isolation.<br>Do pick a click-through URL that is somewhat associated with the creative.<br>Do explore all the image options at your fingertips. From blogs to product pages, you likely have a treasure trove of impactful images.<br>Don't use images with too much text.<br>Don't crop the image. TripleLift will ensure the image fits perfectly across every placement.<br>Don't use an image with a logo overlaid on top.<br>Don't use banner ad creative. |
+| **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes **Image** (Technical attribute ID 1) and **Native: In-Feed Standard** (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Xandr platform. |
+| **Suggested Do's and Don't's** |  - Do choose engaging photos.<br> - Do use products set in real environments. Historically, these have tended to perform better than products in isolation.<br> - Do pick a click-through URL that is somewhat associated with the creative.<br> - Do explore all the image options at your fingertips. From blogs to product pages, you likely have a treasure trove of impactful images.<br> - Don't use images with too much text.<br> - Don't crop the image. TripleLift will ensure the image fits perfectly across every placement.<br> - Don't use an image with a logo overlaid on top.<br> - Don't use banner ad creative. |
 
 ### UIM
 
@@ -484,17 +490,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Image (sizes in pixels) | 500x500 minimum<br>1200x1200 recommended<br>Valid file types: jpg, png<br>File size must be less than 2 MB<br>300x250 display/scale down to 1:1 mobile |
 | Call to Action Text | Not supported |
 
-| Attribute | Value |
-|---|---|
-| Member ID | 1578 |
-| Landing Page | [www.web.de/www.gmx.de/www.1und1.de](https://web.de/www.gmx.de/www.1und1.de) |
-| Title | 25 character maximum (including spaces) |
-| Description | 45 character maximum (including spaces) |
-| Icon (sizes in pixels) | Not supported |
-| Image (sizes in pixels) | - 500x500 minimum<br> - 1200x1200 recommended<br>- Valid file types: jpg, png<br> - File size must be less than 2 MB<br> - 300x250 display/scale down to 1:1 mobile |
-| Call to Action Text | Not supported |
-
-**Recommendations and Guidelines**
+|**Recommendations and guidelines**
 
 | Attribute | Value |
 |---|---|
@@ -502,4 +498,5 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | **Teaser Text Guidelines** | - No special characters in your text<br> - No exclamation marks |
 | **Image Guidelines** | - No purely text-based graphics<br> - No plain text as image<br> - No frame around your image<br> - No pure logo as image<br> - No important image component in the margin, as image can be scaled on smaller screens. Position important parts centrally.<br> - Image has to be static, not animated = GIF/JPEG 40KB maximum. |
 
-For further information and examples, visit [Native Teaser (Multi Screen)](https://www.united-internet-media.de/en/products-and-solutions/nativeadvertising/native-teaser/).
+> [!NOTE]
+> For further information and examples, visit [Native Teaser (Multi Screen)](https://www.united-internet-media.de/en/products-and-solutions/nativeadvertising/native-teaser/).

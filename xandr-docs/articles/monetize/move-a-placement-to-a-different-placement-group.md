@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Move a Placement to a Different Placement Group
+title: Move a Placement to a Different Placement Group
 description: This article explains how to organize and manage placements, open slots on a publisher's website, using placement groups. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize -  Move a placement to a different placement group
+# Move a placement to a different placement group
 
 A placement is an open slot on a publisher website where an advertiser creative with matching specifications can serve. Placement groups provide a way for you to organize and manage placements apply default inventory categorization and self-auditing criteria to child placements. This page explains how to move a placement to a new placement group.
 
@@ -12,12 +12,11 @@ A placement is an open slot on a publisher website where an advertiser creative 
 
 **Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the **Select a Publisher** dialog.
 
-**All other clients:** Go to **Publishers  \>  Placement** Manager. This takes you to the Placement Manager screen, which shows both the **Placement Group List** and
-the **Placement List** under each placement group for the publisher.
+**All other clients:** Go to **Publishers** \> **Placement Manager**. This takes you to the **Placement Manager** screen, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
 ## 2. Move the desired placements to a different placement group
 
-Check the checkbox for the placement under which you want to move to another new placement group, then click **More Actions \>  Move**. This will open the **Select a destination placement group** dialog. Click Select to complete the action. If you want to move more than one placement to the same group, you can move them all at once by checking multiple boxes.
+Check the checkbox for the placement under which you want to move to another new placement group, then click **More Actions** \>  **Move**. This will open the **Select a destination placement group** dialog. Click **Select** to complete the action. If you want to move more than one placement to the same group, you can move them all at once by checking multiple boxes.
 
 ## 3. Review the placement list
 
