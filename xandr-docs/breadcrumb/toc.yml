@@ -5,6 +5,9 @@
     - name: Bidder
       tocHref: /xandr/articles/bidders/
       topicHref: /xandr/articles/bidders/index
+    - name: Microsoft Invest
+      tocHref: /xandr/articles/invest/
+      topicHref: /xandr/articles/invest/index
     - name: Microsoft Curate
       tocHref: /xandr/articles/curate/
       topicHref: /xandr/articles/curate/index
