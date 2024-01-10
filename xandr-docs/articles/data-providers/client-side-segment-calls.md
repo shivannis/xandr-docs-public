@@ -1,8 +1,8 @@
 ---
-title : Client Side Segment Calls
-description : Learn about Client Side Segment Calls. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Client Side Segment Calls
+description: Learn about Client Side Segment Calls. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 

@@ -1,8 +1,8 @@
 ---
-title : Audience Data Integrations
-description : Learn steps involved in integrating user-based data.
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Audience Data Integrations
+description: Learn steps involved in integrating user-based data.
+ms.custom: data-providers
+ms.date: 11/29/2023
 
 ---
 

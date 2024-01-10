@@ -1,8 +1,8 @@
 ---
-title : Data Providers - Check Usage Statistics
-description : Learn about Usage Statistics in this page. 
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Data Providers - Check Usage Statistics
+description: Learn about Usage Statistics in this page. 
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 

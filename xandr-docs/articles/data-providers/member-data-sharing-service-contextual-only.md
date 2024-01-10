@@ -1,8 +1,8 @@
 ---
-title : Member Data Sharing Service (Contextual Only)
-description : Learn how Member Data Sharing Service allows you to share your segments with other platform members. 
-ms.custom : data-providers
-ms.date : 11/30/2023
+title: Member Data Sharing Service (Contextual Only)
+description: Learn how Member Data Sharing Service allows you to share your segments with other platform members. 
+ms.custom: data-providers
+ms.date: 11/30/2023
 ---
 
 

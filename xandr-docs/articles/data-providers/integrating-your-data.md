@@ -1,8 +1,8 @@
 ---
-title : Integrating Your Data
-description : Learn the process in Data Provider Integration that helps in integrating your data. 
-ms.custom : data-providers
-ms.date : 11/29/2023
+title: Integrating Your Data
+description: Learn the process in Data Provider Integration that helps in integrating your data. 
+ms.custom: data-providers
+ms.date: 11/29/2023
 ---
 
 
