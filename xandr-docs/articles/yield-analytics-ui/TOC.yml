@@ -192,20 +192,12 @@
     href: interpreting-scenario-manager-results.md
 - name: Ad Servers
   items:
-  - name: Overview
-    href: ad-servers-overview.md
   - name: Freewheel Priority Values in Yield Analytics
     href: freewheel-priority-values-in-yield-analytics.md
   - name: Working With Multiple Ad Servers
     href: working-with-multiple-ad-servers.md
 - name: User Preferences
-  items:
-  - name: Overview
-    href: user-preferences.md
-  - name: Change Your Password
-    href: change-your-password.md
-  - name: Change Your Default Home Page
-    href: change-your-default-home-page.md
+  href: user-preferences.md
 - name: Administration 
   items:
   - name: Overview
