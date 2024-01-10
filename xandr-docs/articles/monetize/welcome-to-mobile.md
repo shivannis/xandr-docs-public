@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Welcome to Mobile
-description: 
+description: The article provides comprehensive guidance on the intricacies of purchasing mobile devices.
 ms.date: 10/28/2023
 ---
 
@@ -55,7 +55,7 @@ Topics we'll cover include:
 - **[Network Device Analytics](../digital-platform-api/network-device-analytics.md)**
   Learn how to use the API to retrieve performance data based on mobile device.
 
-- **[Network Carrier Analytics](xandr-api/network-carrier-analytics.md")**
+- **[Network Carrier Analytics](../digital-platform-api/network-carrier-analytics.md)**
   Learn how to use the API to retrieve performance data based on mobile carrier and connection type.
 
 - **[Device Make Service](../digital-platform-api/device-make-service.md)**

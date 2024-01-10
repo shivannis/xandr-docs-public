@@ -6,7 +6,8 @@ ms.date: 10/28/2023
 
 # Video player targeting
 
-This topic applies to Deals. For non-Deals line items, see [Video Targeting](video-targeting.md).
+> [!NOTE]
+> This topic applies to Deals. For non-Deals line items, see [Video Targeting](video-targeting.md).
 
 You can target video inventory based on the playback method, player size, position, creative duration, and framework.
 
