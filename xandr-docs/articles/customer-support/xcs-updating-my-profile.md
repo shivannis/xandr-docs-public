@@ -1,6 +1,6 @@
 ---
-title: Updating My Profile
-description: In this article, learn step-by-step instructions on how to update My Profile in Customer Support Portal.
+title: Update profile, settings and password
+description: In this article, learn step-by-step instructions on how to update My Profile, Settings and Password in Customer Support Portal.
 ms.custom: customer-support
 ms.date: 10/28/2023
 ---
@@ -27,7 +27,7 @@ You can update your contact information, password, set email preferences, custom
 
 :::image type="content" source="media/xcs-o.png" alt-text="A screenshot that shows how to navigate to My Settings.":::
 
-## Contact information
+### Contact information
 
 Under **My Settings**, click the **Email Address** to edit your contact information and **Save**.
 
@@ -39,13 +39,13 @@ Under **Location**, set the language, locale, and time zone and click **Save**.
 
 :::image type="content" source="media/xcs-q.png" alt-text="A screenshot that shows how to update Location settings.":::
 
-## Receive email notifications
+### Receive email notifications
 
 The **Receive email notifications** checkbox enables email notifications for various features that are not currently enabled. It has no effect on whether you receive comments for your cases or your cc cases, which will always occur.
 
 Although a number of settings are visible, these features are not currently in use.
 
-## Changing my password
+## Change password
 
 Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base
 articles, or request support.
